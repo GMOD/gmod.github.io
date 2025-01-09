@@ -1,14 +1,7 @@
 
-
-
-
 <span id="top"></span>
 
-
-
-
-# <span dir="auto">JBrowse2 Tutorial PAG 2024</span>
-
+# <span dir="auto">JBrowse2 Tutorial PAG 2025</span>
 
 
 
@@ -18,7 +11,7 @@
 
 
 This tutorial will be/was presented at the Plant and Animal Genomes
-conference on January 14, 2024. After the tutorial is over, a public
+conference on January 11, 2025. After the tutorial is over, a public
 Ubuntu AMI that was used for the tutorial will be available for anyone
 who would like to work through the tutorial afterwards.
 
@@ -119,13 +112,13 @@ There are several things to know about this instance:
   if you want to use the jbrowse admin server, open port 9090.
 - To make life easier on you, you can add an entry in your client
   machine's /etc/hosts file for the IP address of the EC2 machine that
-  resolves for tutorialpag31.jbrowse.org. If you don't do this, you'll
+  resolves for tutorialpag.jbrowse.org. If you don't do this, you'll
   have to use the IP address of your EC2 machine in the URLs in this
-  tutorial instead of "tutorialpag31.jbrowse.org".
+  tutorial instead of "tutorialpag.jbrowse.org".
 - The easiest way to do the tutorial is with the **ubuntu** user, and
   your instance of JBrowse would then be at
-  <a href="http://tutorialpag31.jbrowse.org/~ubuntu" class="external free"
-  rel="nofollow">http://tutorialpag31.jbrowse.org/~ubuntu</a>
+  <a href="http://tutorialpag.jbrowse.org/~ubuntu" class="external free"
+  rel="nofollow">http://tutorialpag.jbrowse.org/~ubuntu</a>
 
 ## <span id="Prerequisites_.28already_installed.29" class="mw-headline">Prerequisites (already installed)</span>
 
@@ -168,18 +161,18 @@ class="external text" rel="nofollow">Nodejs.org</a>:
 - Created a "Genes only" *C. elegans* GFF file
   (`gzip -dc c_elegans.PRJNA13758.WS286.annotations.gff3.gz | grep "\tWormBase\t" > c_elegans.genes.gff3`
   )
-- Created a [bash script](PAG2024_bash_script "PAG2024 bash script")
+- Created a [bash script](PAG2025_bash_script "PAG2025 bash script")
   that will do all of the commands in this tutorial "all at once".
 
 ## <span id="Initializing_JBrowse" class="mw-headline">Initializing JBrowse</span>
 
 First, use ssh or putty to connect to the instance we have set up for
-this tutorial, tutorialpag31.jbrowse.org. Do this with the user name and
+this tutorial, tutorialpag.jbrowse.org. Do this with the user name and
 password you got from one of us (we have 50 users configured--hopefully
 that will be enough!):
 
      
-     ssh username@tutorialpag31.jbrowse.org
+     ssh username@tutorialpag.jbrowse.org
      
 
 and supply the password. When you log in, you'll be in your user's home
@@ -207,8 +200,8 @@ files we are going to use in the tutorial. If we now navigate to the
 tutorial machine's website with the username on the slip provided at the
 beginning, you should see a page indicating that JBrowse was installed
 but not configured:
-<a href="http://tutorialpag31.jbrowse.org/~userXX" class="external free"
-rel="nofollow">http://tutorialpag31.jbrowse.org/~userXX</a>. (Of course,
+<a href="http://tutorialpag.jbrowse.org/~userXX" class="external free"
+rel="nofollow">http://tutorialpag.jbrowse.org/~userXX</a>. (Of course,
 substitute in your username in the URL)
 
   
@@ -1016,9 +1009,9 @@ width="1000" height="220" alt="Admin-server.png" />
 
 The part we need is the adminKey. In a browser window, enter a URL that
 looks like this:
-<a href="http://tutorialpag31.jbrowse.org:9090?adminKey=yourkey"
+<a href="http://tutorialpag.jbrowse.org:9090?adminKey=yourkey"
 class="external free"
-rel="nofollow">http://tutorialpag31.jbrowse.org:9090?adminKey=yourkey</a>
+rel="nofollow">http://tutorialpag.jbrowse.org:9090?adminKey=yourkey</a>
 
   
 
@@ -1027,9 +1020,9 @@ rel="nofollow">http://tutorialpag31.jbrowse.org:9090?adminKey=yourkey</a>
 The first thing we need to do is add a reference sequence. There is
 already one prepared and on the web server for *C. elegans* and it is at
 
-     http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz
-     http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.fai
-     http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.gzi
+     http://tutorialpag.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz
+     http://tutorialpag.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.fai
+     http://tutorialpag.jbrowse.org/~ubuntu/data/c_elegans.PRJNA13758.WS286.genomic.fa.gz.gzi
 
   
 
@@ -1064,8 +1057,8 @@ Copy and paste those URLs in to the appropriate fields and then click
 
 ## <span id="Using_the_admin-server_to_add_a_GFF_track" class="mw-headline">Using the admin-server to add a GFF track</span>
 
-     http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz
-     http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz.tbi
+     http://tutorialpag.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz
+     http://tutorialpag.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz.tbi
 
   
 <img
@@ -1081,7 +1074,7 @@ width="800" height="224" alt="Genes track.png" />
 
 ## <span id="Using_the_admin-server_to_add_a_synteny_track" class="mw-headline">Using the admin-server to add a synteny track</span>
 
-     http://tutorialpag31.jbrowse.org/c_elegans.c_brenneri.paf
+     http://tutorialpag.jbrowse.org/c_elegans.c_brenneri.paf
 
   
 
@@ -1153,13 +1146,13 @@ width="800" height="460" alt="Dotplot config.png" />
 
 ### Tools
 
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse2_Tutorial_PAG_2024"
+- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse2_Tutorial_PAG_2025"
   rel="smw-browse">Browse properties</a></span>
 
 
 
-- <span id="footer-info-lastmod">Last updated at 03:36 on 18 January
-  2024.</span>
+- <span id="footer-info-lastmod">Last updated at 03:36 on 8 January
+  2025.</span>
 <!-- - <span id="footer-info-viewcount">5,325 page views.</span> -->
 - <span id="footer-info-copyright">Content is available under
   <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
