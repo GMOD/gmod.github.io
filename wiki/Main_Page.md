@@ -1,5 +1,11 @@
 # The Generic Model Organism Database Project
 
+## PAG JBrowse Tutorial
+
+Go here for [the tutorial for PAG 32 (January 11, 2025)](/wiki/JBrowse2_Tutorial_PAG_2025).
+
+### Welcome
+
 Welcome to the new home of the **Generic Model Organism Database** project, a collection
 of open source software tools for managing, visualising, storing, and
 disseminating genetic and genomic data.
@@ -236,7 +242,7 @@ Canto: literature annotation tool
 - <span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/Main_Page" rel="smw-browse">Browse
   properties</a></span>
 
-- <span id="footer-info-lastmod">Last updated at 18:39 on 1 June 2024.</span>
+- <span id="footer-info-lastmod">Last updated at 18:39 on 10 January 2025.</span>
 <!-- - <span id="footer-info-viewcount">9,978,319 page views.</span> -->
 - <span id="footer-info-copyright">Content is available under
   <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
