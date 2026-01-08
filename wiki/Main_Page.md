@@ -2,7 +2,7 @@
 
 ## PAG JBrowse Tutorial
 
-Go here for [the tutorial for PAG 32 (January 11, 2025)](/wiki/JBrowse2_Tutorial_PAG_2025).
+Go here for [the tutorial for PAG 33 (January 10, 2026)](/wiki/JBrowse2_Tutorial_PAG_2026).
 
 ### Welcome
 
