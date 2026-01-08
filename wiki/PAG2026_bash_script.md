@@ -48,7 +48,7 @@
            --name "CeNDR BAM" \
            --config '{ "metadata": { "source":"Used by permission from http://elegansvariation.org/" } }'
 
-    jbrowse add-track https://storage.googleapis.com/elegansvariation.org/releases/current/WI.current.soft-filtered.vcf.gz \
+    jbrowse add-track https://caendr-open-access-data-bucket.s3.us-east-2.amazonaws.com/dataset_release/c_elegans/20250625/variation/WI.20250625.soft-filter.vcf.gz \
              --name Variants \
              --config '{ "metadata": { "source":"Used by permission from http://elegansvariation.org/" } }'
 
