@@ -16,6 +16,8 @@ Ubuntu AMI that was used for the tutorial will be available for anyone
 who would like to work through the tutorial afterwards.
 
 
+See also the [JBrowse setup and exploration tutorial](https://jbrowse.org/jb2/docs/archive/pag2026_setup_and_exploration/) also presented at PAG 2026.
+
 ## Contents
 
 
