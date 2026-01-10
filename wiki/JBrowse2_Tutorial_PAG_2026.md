@@ -856,8 +856,8 @@ width="900" alt="SV BAM view.png" />
 
 This view is a little messy because there are lots of curves showing
 pairs of reads that aren't where we "expect" them to be. We can limit
-the view to only inter-chromosomal read pairs by clicking on the "two
-arc sets" button in the upper left of the frame.
+the view to only inter-chromosomal read pairs by deselecting the 
+"Show intra-view links" option in the window's menu.
 
 ## <span id="Using_JEXL_to_modify_the_display" class="mw-headline">Using JEXL to modify the display</span>
 
