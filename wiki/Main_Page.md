@@ -1,8 +1,8 @@
 # The Generic Model Organism Database Project
 
-## PAG JBrowse Tutorial
+## PAG JBrowse Tutorials
 
-Go here for [the tutorial for PAG 33 (January 10, 2026)](/wiki/JBrowse2_Tutorial_PAG_2026).
+Go here for [JBrowse setup and exploration tutorial](https://jbrowse.org/jb2/docs/archive/pag2026_setup_and_exploration/) and here for [the hands on admin tutorial for PAG 33 (January 10, 2026)](/wiki/JBrowse2_Tutorial_PAG_2026).
 
 ### Welcome
 
