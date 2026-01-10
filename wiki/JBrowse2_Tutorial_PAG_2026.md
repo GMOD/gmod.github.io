@@ -167,7 +167,9 @@ class="external text" rel="nofollow">Nodejs.org</a>:
 ## <span id="Initializing_JBrowse" class="mw-headline">Initializing JBrowse</span>
 
 First, use ssh or putty to connect to the instance we have set up for
-this tutorial, tutorialpag.jbrowse.org. Do this with the user name and
+this tutorial, tutorialpag.jbrowse.org. If you don't have an ssh client, 
+you can also use a web-based ssh client. [SSHEasy.com](https://ssheasy.com)
+should do the trick. Do this with the user name and
 password you got from one of us (we have 50 users configured--hopefully
 that will be enough!):
 
@@ -827,21 +829,16 @@ reference, since we have two now. After running these commands, reload
 the JBrowse page to make sure the new configuration is available.
 
 Now we'd like to find a set of regions to inspect. We can click on any
-of the arcs to get a set, but lets pick one region so we're all looking
+of the arcs to get a set, but let's pick one region so we're all looking
 at the same thing. The authors mention a rearrangement in the unc-36
-gene, and we can filter the locations by region. To do that, click on
-hover dropdown triangle in the Location column header (that is, put your
-mouse over the Location header to get the triange to appear, then click
-on it) to get a menu, and select the "Create filter" option. Then paste
-in this location (the coordinates of the unc-36 gene to find overlapping
-predictions):
+gene, so I found that rearrangement to look at. To find it, copy and paste
 
-     III:8,193,845..8,201,219
+    III 8200764
 
-Which will give us just two rows. To select one of them (since they
-overlap in the circular view), we can highlight one row in the
-spreadsheet view and then that will be other only arc in the circular
-view. Finally, clicking on that arc gives us two stacked linear genome
+into the search bar at the top of the spreadsheet window. 
+This will find the rearrangement in unc-36 on chromosome III and it's
+mate on chromosome V. Now we have just one arc on the circular view. 
+Clicking on that arc gives us two stacked linear genome
 views of the two regions with the predicted rearrangement:
 
 <img
@@ -854,9 +851,8 @@ linear genome views, and open the BAM and VCF tracks for each, resulting
 in a view like this:
 
 <img
-src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/SV_BAM_view.png/900px-SV_BAM_view.png"
-srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/SV_BAM_view.png/1350px-SV_BAM_view.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/SV_BAM_view.png/1800px-SV_BAM_view.png 2x"
-width="900" height="744" alt="SV BAM view.png" />
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/SV_BAM_View2.png"
+width="900" alt="SV BAM view.png" />
 
 This view is a little messy because there are lots of curves showing
 pairs of reads that aren't where we "expect" them to be. We can limit
