@@ -3,14 +3,11 @@ title: "Category%253AAnnotation"
 ---
 # Category%253AAnnotation
 
-
 This category links to pages about doing annotation in GMOD.
-
 
 ## Subcategories
 
 This category has the following 5 subcategories, out of 5 total.
-
 
 ### A
 
@@ -33,11 +30,9 @@ This category has the following 5 subcategories, out of 5 total.
 
 - [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
 
-
 ## Pages in category "Annotation"
 
 The following 22 pages are in this category, out of 22 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -111,7 +106,6 @@ title="WebApollo/tool data">WebApollo/tool data</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Annotation"
 
@@ -366,13 +360,4 @@ The following 11 files are in this category, out of 11 total.
   
 
   [Jan2010ErgatisForBiolo...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf "File:Jan2010ErgatisForBiologists.pdf")  
-  3.31 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Biology](Category%253ABiology "Category%253ABiology")
+  3.31 MB

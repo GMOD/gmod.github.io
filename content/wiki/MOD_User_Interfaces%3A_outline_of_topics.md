@@ -3,7 +3,6 @@ title: "MOD User Interfaces: outline of topics"
 ---
 # MOD User Interfaces: outline of topics
 
-
 An outline of user interface aspects for  
 answering common genome questions in model organism/genome databases.
 
@@ -103,9 +102,3 @@ sequence (blast, blat, ...)
 seq. pattern searches  
 phylogenetic?  
 gene, genome feature predictions?
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")

@@ -3,7 +3,6 @@ title: "About the GMOD Working Group"
 ---
 # About the GMOD Working Group
 
-
 **About the GMOD Architecture Working Group**
 
 **Goal**
@@ -62,8 +61,3 @@ One conference call per month can be expected and we will work out a
 time among the group that will be our standard time for a conference
 call. We will try to limit conference calls to one hour per month per
 active recommendation.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")

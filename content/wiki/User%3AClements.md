@@ -3,15 +3,12 @@ title: "User%253AClements"
 ---
 # User%253AClements
 
-
 # Dave Clements
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/11/Clements.jpg/175px-Clements.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/Clements.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/Clements.jpg 2x"
 width="175" height="131" alt="Dave Clements looking cheeky" />
-
 
   
 
@@ -41,11 +38,8 @@ also at Oregon.
 
 ## Contact Details
 
-|        |                                                                   |
-|--------|-------------------------------------------------------------------|
-| E-mail | <a href="mailto:clements@galaxyproject.org" class="external text" 
-          rel="nofollow">clements@galaxyprojet.org</a>                       |
-| URL    | <a href="https://galaxyproject.org/people/dave-clements/"         
+|--------|-------------------------------------------------------------------| E-mail | <a href="mailto:clements@galaxyproject.org" class="external text" 
+          rel="nofollow">clements@galaxyprojet.org</a>                       | URL    | <a href="https://galaxyproject.org/people/dave-clements/"         
           class="external text" rel="nofollow">My home page</a>              |
 
 ## Background
@@ -282,8 +276,3 @@ presentations.
   rel="nofollow">NESCent</a> in April 2007. Describes common issues with
   gene expression databases focusing on anatomy ontology issues. Uses 4
   websites to demonstrate different ways to deal with these issues.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")

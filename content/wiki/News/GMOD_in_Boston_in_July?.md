@@ -3,20 +3,16 @@ title: "News/GMOD in Boston in July?"
 ---
 # News/GMOD in Boston in July?
 
-
 From Scott on 2010/05/25:
-
 
 Due to the short notice, I've decided not to have a GMOD meeting before
 BOSC/ISMB in July. I am hoping to plan an informal "GMOD lunch" sometime
 during BOSC or ISMB for people who are going to the meetings and would
 like to get together to chat.
 
-
 Scott Cain sent this question about the next [GMOD
 meeting](../Meetings "Meetings") out to several [mailing
 lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") on May 17:
-
 
 Since the last GMOD meeting in January, I had been hoping to have a
 [GMOD meeting](../Meetings "Meetings") around the ISMB and BOSC meetings
@@ -33,7 +29,6 @@ Thanks,
 
 [Scott](../User%253AScott "User%253AScott")
 
-
 Scott hasn't heard back, yea or nay, from very many people so far and we
 need to make a decision as soon as possible. **If you have any thoughts
 on this, please
@@ -49,11 +44,9 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/21,
 updated 2010/05/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

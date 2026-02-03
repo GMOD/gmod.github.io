@@ -3,7 +3,6 @@ title: "Visualization"
 ---
 # Visualization
 
-
   Visualization</span>](#Genome_Visualization)
 - [Comparative
   Genomics Visualization](#Comparative_Genomics_Visualization)
@@ -13,7 +12,6 @@ title: "Visualization"
   Visualization](#Pathway_Visualization)
 - [Ontology
   Visualization](#Ontology_Visualization)
-
 
 One of GMOD's strength is visualization of different types of biological
 data.

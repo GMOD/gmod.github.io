@@ -348,7 +348,7 @@ which is used to load gff files into a mysql database is located in
 but this doesn't exist on the Mac. Edit line 347 of bp_bulk_load_gff.pl
 to look like this:
 
-     my $tmpdir = $ENV{TMPDIR} || $ENV{TMP} || '/tmp';
+     my $tmpdir = $ENV{TMPDIR} | $ENV{TMP} | '/tmp';
 
 # AUTHORS
 

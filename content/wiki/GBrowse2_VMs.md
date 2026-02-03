@@ -3,7 +3,6 @@ title: "GBrowse2 VMs"
 ---
 # GBrowse2 VMs
 
-
   Virtual Machines</span>](#GBrowse2_Virtual_Machines)
   - [Getting
     Started with the VirtualBox
@@ -38,12 +37,9 @@ title: "GBrowse2 VMs"
     - [Admin
       mode](#Admin_mode)
 
-
 # GBrowse2 Virtual Machines
 
-
 Port Forwarding Settings
-
 
 By default, the NAT interface will take network requests targeted to the
 host machine's port 8081 to the guest VM's port 80. This allows the host

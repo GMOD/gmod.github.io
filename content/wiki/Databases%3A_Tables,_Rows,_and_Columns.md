@@ -3,7 +3,6 @@ title: "Databases: Tables, Rows, and Columns"
 ---
 # Databases: Tables, Rows, and Columns
 
-
 Introduces some basic relational database terminology.
 
 ## Tables
@@ -25,9 +24,7 @@ that type of object. A column is also called an *attribute*.
 
 The Instructors table.
 
-
 Instructors Table
-
 
 <table data-cellpadding="10" data-cellspacing="0">
 <colgroup>

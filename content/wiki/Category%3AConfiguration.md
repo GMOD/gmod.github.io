@@ -3,14 +3,11 @@ title: "Category%253AConfiguration"
 ---
 # Category%253AConfiguration
 
-
 Pages describing configuration settings.
-
 
 ## Pages in category "Configuration"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -65,8 +62,3 @@ schema</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")

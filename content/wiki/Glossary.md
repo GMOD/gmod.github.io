@@ -3,7 +3,6 @@ title: "Glossary"
 ---
 # Glossary
 
-
   AJAX](#AJAX)
 - [API](#API)
 - [BAM](#BAM)
@@ -60,14 +59,12 @@ title: "Glossary"
 - [Unix](#Unix)
 - [XML](#XML)
 
-
 This glossary explains terms that
 
 - are specific to the GMOD project, or
 - are computing terms that are used in the GMOD project.
 
 This glossary does **not** define biology terms.
-
 
   
 

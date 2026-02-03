@@ -3,13 +3,11 @@ title: "News/CMap Paper in Bioinformatics"
 ---
 # News/CMap Paper in Bioinformatics
 
-
 <a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/full/25/22/3040"
 rel="nofollow" title="Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/BionformaticsCover.gif" width="134"
 height="175" alt="Bioinformatics" /></a>
-
 
 A <a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/full/25/22/3040"
@@ -43,10 +41,8 @@ poster at [PAG 2010](../PAG_2010 "PAG 2010").
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/14*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

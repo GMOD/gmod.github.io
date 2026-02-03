@@ -3,7 +3,6 @@ title: "Restriction Graphic Viewer"
 ---
 # Restriction Graphic Viewer
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
@@ -14,12 +13,10 @@ Database project.
 
   
 
-
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Demo & Screenshots
 
@@ -50,8 +47,3 @@ rel="nofollow">Shuai Weng</a>.
 
 <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
 class="external text" rel="nofollow">From SourceForge</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")

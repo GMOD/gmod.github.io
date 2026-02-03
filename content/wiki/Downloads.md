@@ -3,7 +3,6 @@ title: "Downloads"
 ---
 # Downloads
 
-
 Many GMOD project file releases are available from
 <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
 class="external text" rel="nofollow">Sourceforge GMOD</a>. Individual

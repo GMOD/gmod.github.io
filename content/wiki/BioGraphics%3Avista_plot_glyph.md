@@ -3,14 +3,11 @@ title: "BioGraphics:vista plot glyph"
 ---
 # BioGraphics:vista plot glyph
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/71/Vista_plot.png" class="thumbimage"
 width="980" height="248" />
 
-
 The "vista_plot" glyph
-
 
 ------------------------------------------------------------------------
 

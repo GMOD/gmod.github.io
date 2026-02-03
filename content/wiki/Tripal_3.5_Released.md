@@ -3,7 +3,6 @@ title: "Tripal 3.5 Released"
 ---
 # Tripal 3.5 Released
 
-
 This <a href="http://tripal.info" class="external text"
 rel="nofollow">Tripal</a> release includes major performance
 improvements including an improved and blazing fast GFF3 loader. Follow
@@ -23,10 +22,4 @@ standard Drupal updating procedures to update. Changes in this version:
 
   
 
-
 *Posted to the [GMOD News](GMOD_News "GMOD News") on 2021/02/08*
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [News Items](Category%253ANews_Items "Category%253ANews Items")

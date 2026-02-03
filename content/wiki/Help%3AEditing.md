@@ -3,7 +3,6 @@ title: "Help%253AEditing"
 ---
 # Help%253AEditing
 
-
 For documentation specific to this wiki, please see [the GMOD wiki
 guidelines](Site_Guidelines "Site Guidelines"). This includes help on
 such topics as writing code, including references (e.g. from PubMed),
@@ -14,8 +13,3 @@ This web site uses MediaWiki. Please see
 <a href="http://meta.wikimedia.org/wiki/Help%253AEditing"
 class="external text" rel="nofollow">MediaWiki Help%253AEditing</a> for
 extensive documentation and hints.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

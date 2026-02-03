@@ -3,7 +3,6 @@ title: "GMOD Malaysia 2014/JBrowse Tutorial"
 ---
 # GMOD Malaysia 2014/JBrowse Tutorial
 
-
 This [JBrowse](../JBrowse.1 "JBrowse") tutorial was presented by [Scott
 Cain](../User%253AScott "User%253AScott") at [GMOD Malaysia
 2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February 2014. This
@@ -16,7 +15,6 @@ title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 This tutorial uses the AWS AMI ' ***named '*** in the '
 
 .
-
 
   Prerequisites](#Prerequisites)
 - [JBrowse
@@ -69,7 +67,6 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 - [Other
   links](#Other_links)
 
-
 ## Prerequisites
 
 These have **already been set up** on the VM image.
@@ -89,13 +86,11 @@ the JBrowse directory):
 
 Other prerequisites are installed by JBrowse automatically.
 
-
 This is how they were installed: **(don't do this yourself)**
 
 ``` dont
   sudo apt-get install libpng12-0 libpng12-dev build-essential libncurses5-dev
 ```
-
 
 Make sure you can copy/paste from the wiki.
 
@@ -203,7 +198,6 @@ the web browser can use.
 In this case, we have specified all of our track configurations in
 `pythium-1.conf`.
 
-
 ``` de1
 ...
  
@@ -226,7 +220,6 @@ In this case, we have specified all of our track configurations in
    ...
 ]
 ```
-
 
 `track` specifies the track identifier (a unique name for the track, for
 the software to use). This should be just letters and numbers and - and
@@ -302,7 +295,6 @@ server. Simply place the BAM file in a directory accessible to your web
 server, and add a snippet of configuration to JBrowse to add the track,
 similar to:
 
-
 ``` de1
      {
         "label" : "bam_alignments",
@@ -312,7 +304,6 @@ similar to:
         "type" : "Alignments2"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -328,7 +319,6 @@ inject the track configuration:
 
 ### BAM coverage
 
-
 ``` de1
      {
         "label" : "bam_coverage",
@@ -339,7 +329,6 @@ inject the track configuration:
       }
 ```
 
-
 ### Quantitative data
 
 #### BigWig
@@ -348,7 +337,6 @@ JBrowse can display quantitative data directly from a BigWig file on
 your web server. Simply place the BigWig file in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
-
 
 ``` de1
      {
@@ -360,7 +348,6 @@ the track, similar to:
         "variance_band" : true
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -385,7 +372,6 @@ Simply place the .vcf.gz and .vcf.gz.tbi files in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
-
 ``` de1
       {
         "label" : "bam_variation",
@@ -395,7 +381,6 @@ the track, similar to:
         "type" : "HTMLVariants"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -427,7 +412,6 @@ be copied into the `data` directory for use with this configuration.
 
 Then a simple faceted track selection configuration might look like:
 
-
 ``` de1
    trackSelector: {
        type: 'Faceted',
@@ -438,7 +422,6 @@ Then a simple faceted track selection configuration might look like:
        ]
    }
 ```
-
 
 The `jbrowse_conf.json` file in the `jbrowse` directory already
 conveniently contains this stanza, commented out. Uncomment it, refresh
@@ -506,18 +489,13 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD Malaysia 2014/JBrowse
-Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FJBrowse-20Tutorial "Special%253ABrowse/GMOD-20Malaysia-202014-2FJBrowse-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [JBrowse](../JBrowse.1 "JBrowse") <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
+|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [JBrowse](../JBrowse.1 "JBrowse")  |

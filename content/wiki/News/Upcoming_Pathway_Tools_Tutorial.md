@@ -3,7 +3,6 @@ title: "News/Upcoming Pathway Tools Tutorial"
 ---
 # News/Upcoming Pathway Tools Tutorial
 
-
 SRI's Bioinformatics Research Group will hold a
 <a href="http://bioinformatics.ai.sri.com/ptools/tutorial/"
 class="external text" rel="nofollow">Pathway Tools tutorial session</a>
@@ -26,10 +25,8 @@ Peter Karp
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

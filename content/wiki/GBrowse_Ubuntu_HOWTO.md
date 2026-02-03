@@ -3,18 +3,15 @@ title: "GBrowse Ubuntu HOWTO"
 ---
 # GBrowse Ubuntu HOWTO
 
-
 NOTE: As of the 11.10 release of Ubuntu, there is a .deb package for
 GBrowse (it's usable on Debian machines as well, but I don't know the
 details of what repository needs to be activated to get GBrowse via
 apt-get on Debian).
 
-
 ANOTHER NOTE: the current version of GBrowse in that deb package is
 fairly old (2.38 versus the current 2.55); below I'll outline using
 apt-get to get all of the prerequisites for GBrowse but use cpan to
 install GBrowse.
-
 
 To install GBrowse on a recent Ubuntu distribution, just do this:
 
@@ -37,7 +34,6 @@ The content below will be left in place for older distributions.
 
 ------------------------------------------------------------------------
 
-
   just to get the
   prereqs</span>](#Using_apt-get_just_to_get_the_prereqs)
 - [Prerequisites](#Prerequisites)
@@ -45,7 +41,6 @@ The content below will be left in place for older distributions.
   GBrowse with the Net
   Installer](#Installing_GBrowse_with_the_Net_Installer)
 - [Author](#Author)
-
 
 ## Using apt-get just to get the prereqs
 
@@ -100,9 +95,7 @@ This will still install a few perl modules, but it should go smoothly
 and quickly since most of the prerequisites will have been installed by
 the above apt-get command.
 
-
 The information below is deprecated.
-
 
 [GBrowse](GBrowse.1 "GBrowse") does not have a .deb package, but many of
 its prerequisites are distributed in this way. This document describes

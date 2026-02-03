@@ -3,7 +3,6 @@ title: "News/Last Chance To Be Surveyed"
 ---
 # News/Last Chance To Be Surveyed
 
-
 The **GMOD community survey will close on March 8th**, so please make
 sure that you have
 <a href="../../survey.html" class="external text" rel="nofollow">given

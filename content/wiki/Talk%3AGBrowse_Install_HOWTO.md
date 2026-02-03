@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Install HOWTO"
 ---
 # Talk%253AGBrowse Install HOWTO
 
-
   Layout](#Layout)
 - [Question about
   gbrowse_netinstall.pl](#Question_about_gbrowse_netinstall.pl)
@@ -14,7 +13,6 @@ title: "Talk%253AGBrowse Install HOWTO"
   modules**](#Question_about_Optional_Perl_modules)
 - [GBrowse Quick
   Install](#GBrowse_Quick_Install)
-
 
 ## Layout
 

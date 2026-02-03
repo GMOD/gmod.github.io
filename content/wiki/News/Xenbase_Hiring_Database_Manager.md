@@ -3,12 +3,10 @@ title: "News/Xenbase Hiring Database Manager"
 ---
 # News/Xenbase Hiring Database Manager
 
-
 <a href="../File:XenbaseLogo.png" class="image"
 title="Xenbase logo"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/XenbaseLogo.png" width="256"
 height="48" alt="Xenbase logo" /></a>
-
 
 **<a href="http://www.xenbase.org" class="external text"
 rel="nofollow">Xenbase</a> is looking for a new database manager.** We
@@ -84,10 +82,8 @@ through the selection process will be contacted.*
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

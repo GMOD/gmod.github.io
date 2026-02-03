@@ -3,10 +3,8 @@ title: "GMOD Mailing Lists"
 ---
 # GMOD Mailing Lists
 
-
 (Redirected from [Mailing
 Lists](/wiki/Mailing_Lists)
-
 
   Email Lists</span>](#Searching_Email_Lists)
 - [Posting to and
@@ -26,7 +24,6 @@ Lists](/wiki/Mailing_Lists)
     August 2008](#As_of_August_2008)
 - [A Few Non GMOD
   Lists](#A_Few_Non_GMOD_Lists)
-
 
 This page lists most of the mailing lists relevant to GMOD. The default
 location for GMOD related lists is
@@ -64,7 +61,6 @@ title="GMOD Archive at Nabble"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/NAbbleNLogo.jpg" width="50" height="50"
 alt="GMOD Archive at Nabble" /></a>
 
-
 <span class="plainlinks"><a href="http://gmod.827538.n3.nabble.com/"
 class="external text" rel="nofollow">Search<br />
 Archive</a></span></td>
@@ -92,15 +88,12 @@ strongly suggest that join a list before posting to it.*
 
 ## Overview Lists
 
-| Topic | List Link | Comment | Archive(s) |
-|----|----|----|----|
-| Announcements | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-announce"
+| Topic | List Link | Comment | Archive(s) |----|----|----|----| Announcements | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-announce"
 class="external text" rel="nofollow">gmod-announce</a> | Low volume GMOD announcements. Moderated. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.announce"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Announcements-f815515.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-announce"
-class="external text" rel="nofollow">Sourceforge</a> |
-| GMOD Developers List | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
+class="external text" rel="nofollow">Sourceforge</a> | GMOD Developers List | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
 class="external text" rel="nofollow">gmod-devel</a> | General GMOD developer list. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.devel"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Developers-f815538.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
@@ -348,14 +341,11 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 These mailing lists are about general topics of interest, rather than
 about specific software components.
 
-| Name | List Link | Topics | Archive(s) |
-|----|----|----|----|
-| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy"
+| Name | List Link | Topics | Archive(s) |----|----|----|----| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy"
 class="external text" rel="nofollow">gmod-cogephy</a> | Discussion of **co**mparative **ge**nomics, **phy**logeny, and related topics. | <a href="http://gmod.827538.n3.nabble.com/CoGePhy-f2036734.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cogephy"
-class="external text" rel="nofollow">SourceForge</a> |
-| PhenDiver | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-phendiver"
+class="external text" rel="nofollow">SourceForge</a> | PhenDiver | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-phendiver"
 class="external text" rel="nofollow">gmod-phendiver</a> | Discussion of **phen**otype, natural **diver**sity, population genetics and related topics. | <a href="http://gmod.827538.n3.nabble.com/PhenDiver-f2036309.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-phendiver"
@@ -367,54 +357,42 @@ class="external text" rel="nofollow">SourceForge</a> |
 
 As of May 2016, these lists have not had postings in the past 12 months.
 
-| Component | Subscribe Link | Comment | Archive(s) |
-|----|----|----|----|
-| <a href="http://search.cpan.org/perldoc?Bio::Graphics"
+| Component | Subscribe Link | Comment | Archive(s) |----|----|----|----| <a href="http://search.cpan.org/perldoc?Bio::Graphics"
 class="external text" rel="nofollow">Bio::Graphics</a> | <a
 href="https://lists.sourceforge.net/lists/listinfo/gmod-biographics-commits"
 class="external text" rel="nofollow">gmod-biographics-commits</a> | <a href="http://search.cpan.org/perldoc?Bio::Graphics"
 class="external text" rel="nofollow">Bio::Graphics</a> code updates. | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-biographics-commits"
-class="external text" rel="nofollow">Sourceforge</a> |
-| [CMap](CMap.1 "CMap") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
+class="external text" rel="nofollow">Sourceforge</a> | [CMap](CMap.1 "CMap") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
 class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](CMap.1 "CMap") development, installation problems, *etc.* | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
-class="external text" rel="nofollow">Sourceforge</a> |
-|  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
+class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
 class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](CMap.1 "CMap"). | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits"
-class="external text" rel="nofollow">Sourceforge</a> |
-| [DIYA](DIYA "DIYA") | <a href="https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l"
+class="external text" rel="nofollow">Sourceforge</a> | [DIYA](DIYA "DIYA") | <a href="https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l"
 class="external text" rel="nofollow">diyg-pub-l</a> | [DIYA](DIYA "DIYA") general discussion and support. | <a href="http://gmod.827538.n3.nabble.com/DIYA-f835548.html"
-class="external text" rel="nofollow">Nabble</a> (2010/05+) |
-|  | <a href="https://lists.sourceforge.net/mailman/listinfo/diyg-dev-l"
-class="external text" rel="nofollow">diyg-dev-l</a> | [DIYA](DIYA "DIYA") developer discussion. |  |
-| <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-users"
+class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/mailman/listinfo/diyg-dev-l"
+class="external text" rel="nofollow">diyg-dev-l</a> | [DIYA](DIYA "DIYA") developer discussion. | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-users"
 class="external text" rel="nofollow">ergatis-users</a> | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> users mailing list. | <a href="http://gmod.827538.n3.nabble.com/Ergatis-Users-f815632.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-users"
-class="external text" rel="nofollow">Sourceforge</a> |
-|  | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-announce"
+class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-announce"
 class="external text" rel="nofollow">announcement</a> | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> announcements. | <a
 href="http://gmod.827538.n3.nabble.com/Ergatis-Announcements-f815639.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-announce"
-class="external text" rel="nofollow">Sourceforge</a> |
-|  | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-devel"
+class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-devel"
 class="external text" rel="nofollow">ergatis-devel</a> | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developers. | <a
 href="http://gmod.827538.n3.nabble.com/Ergatis-Development-f815854.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-devel"
-class="external text" rel="nofollow">Sourceforge</a> |
-| [ISGA](ISGA "ISGA") | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
+class="external text" rel="nofollow">Sourceforge</a> | [ISGA](ISGA "ISGA") | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
 class="external text" rel="nofollow">isga-users</a> | [ISGA](ISGA "ISGA") support, development, and announcements mailing list | <a href="http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html"
-class="external text" rel="nofollow">Nabble</a> |
-| [Modware](Modware "Modware") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users"
+class="external text" rel="nofollow">Nabble</a> | [Modware](Modware "Modware") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users"
 class="external text" rel="nofollow">gmod-ware-users</a> | [Modware](Modware "Modware") support and developer mailing list. | <a href="http://gmod.827538.n3.nabble.com/Modware-f887754.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"
-class="external text" rel="nofollow">Sourceforge</a> |
-| [WebGBrowse](WebGBrowse.1 "WebGBrowse") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse"
+class="external text" rel="nofollow">Sourceforge</a> | [WebGBrowse](WebGBrowse.1 "WebGBrowse") | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse"
 class="external text" rel="nofollow">gmod-webgbrowse</a> | Questions, announcements, and development postings about the [WebGBrowse](WebGBrowse.1 "WebGBrowse") front end to [GBrowse](GBrowse.1 "GBrowse") configuration. | <a href="http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse"
@@ -425,34 +403,20 @@ class="external text" rel="nofollow">Sourceforge</a> |
 As of August 2008, these lists have not had postings in the past 12
 months.
 
-| List | Comment |
-|----|----|
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture"
-class="external text" rel="nofollow">gmod-architecture</a> | GMOD architecture working group list. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-chado-seq-ad"
-class="external text" rel="nofollow">gmod-chado-seq-ad</a> | Last post November 2006. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-citrina"
-class="external text" rel="nofollow">gmod-citrina</a> | [Citrina](Citrina "Citrina") mailing list. Last post June 2006. Citrina is [no longer supported](Category%253AUnsupported "Category%253AUnsupported") by GMOD. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmae"
-class="external text" rel="nofollow">gmod-cmae</a> | [CMAE](CMAE "CMAE") mailing list. Last post July 2007. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-das2-cmts"
-class="external text" rel="nofollow">gmod-das2-cmts</a> | [Distributed Annotation System](Distributed_Annotation_System "Distributed Annotation System") mailing list. Last commit June 2007. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-gene-page"
+| List | Comment |----|----| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture"
+class="external text" rel="nofollow">gmod-architecture</a> | GMOD architecture working group list. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-chado-seq-ad"
+class="external text" rel="nofollow">gmod-chado-seq-ad</a> | Last post November 2006. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-citrina"
+class="external text" rel="nofollow">gmod-citrina</a> | [Citrina](Citrina "Citrina") mailing list. Last post June 2006. Citrina is [no longer supported](Category%253AUnsupported "Category%253AUnsupported") by GMOD. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmae"
+class="external text" rel="nofollow">gmod-cmae</a> | [CMAE](CMAE "CMAE") mailing list. Last post July 2007. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-das2-cmts"
+class="external text" rel="nofollow">gmod-das2-cmts</a> | [Distributed Annotation System](Distributed_Annotation_System "Distributed Annotation System") mailing list. Last commit June 2007. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-gene-page"
 class="external text" rel="nofollow">gmod-gene-page</a> | Last post December 2005. *This topic was restarted at the [July 2008 GMOD Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting") and the discussion is now happening on the <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
-class="external text" rel="nofollow">gmod-devel</a> list.* So, the list is dead, but not the topic. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ontol-sw-dev"
-class="external text" rel="nofollow">gmod-ontol-sw-dev</a> | Coordination of software and architecture for ontologies. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-pubsearch-dv"
-class="external text" rel="nofollow">gmod-pubsearch-dv</a> | [PubSearch](PubSearch "PubSearch") mailing list. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-resources"
-class="external text" rel="nofollow">gmod-resources</a> | Last post July 2005. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-web-cmts"
-class="external text" rel="nofollow">gmod-web-cmts</a> | Last post December 2004. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-users"
-class="external text" rel="nofollow">turnkey-users</a> | [Turnkey](Turnkey "Turnkey") user list. Last post 2008. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-devel"
-class="external text" rel="nofollow">turnkey-devel</a> | [Turnkey](Turnkey "Turnkey") development list. Last post 2008. |
-| <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-cmts"
+class="external text" rel="nofollow">gmod-devel</a> list.* So, the list is dead, but not the topic. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ontol-sw-dev"
+class="external text" rel="nofollow">gmod-ontol-sw-dev</a> | Coordination of software and architecture for ontologies. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-pubsearch-dv"
+class="external text" rel="nofollow">gmod-pubsearch-dv</a> | [PubSearch](PubSearch "PubSearch") mailing list. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-resources"
+class="external text" rel="nofollow">gmod-resources</a> | Last post July 2005. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-web-cmts"
+class="external text" rel="nofollow">gmod-web-cmts</a> | Last post December 2004. | <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-users"
+class="external text" rel="nofollow">turnkey-users</a> | [Turnkey](Turnkey "Turnkey") user list. Last post 2008. | <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-devel"
+class="external text" rel="nofollow">turnkey-devel</a> | [Turnkey](Turnkey "Turnkey") development list. Last post 2008. | <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-cmts"
 class="external text" rel="nofollow">turnkey-cmts</a> | [Turnkey](Turnkey "Turnkey") code updates. |
 
 ## A Few Non GMOD Lists
@@ -460,14 +424,10 @@ class="external text" rel="nofollow">turnkey-cmts</a> | [Turnkey](Turnkey "Turnk
 There are a couple of mailing lists that, while not affiliated with
 GMOD, often have content of interest to the GMOD community.
 
-| List Link(s) | Comment | Archive(s) |
-|----|----|----|
-| <a href="http://www.biocurator.org/emaillist.shtml"
+| List Link(s) | Comment | Archive(s) |----|----|----| <a href="http://www.biocurator.org/emaillist.shtml"
 class="external text" rel="nofollow">ISB</a> (formerly <a href="http://mailman.tairgroup.org/mailman/listinfo/biocurator"
 class="external text" rel="nofollow">Biocurator</a>) | List for biological data curators and informatics people who support them. If you are interested in how biological databases are created, maintained and used, then subscribe to this list. | <a href="http://mailman.tairgroup.org/pipermail/biocurator/"
-class="external text" rel="nofollow">TAIR</a> (2009/12-) |
-| <a href="http://lists.open-bio.org/mailman/listinfo/bioperl-l"
-class="external text" rel="nofollow">Bioperl-l</a> | Primary [BioPerl](BioPerl "BioPerl") mailing list and is meant both for developers as well as people who are interested in project issues and internals. The place where usage, code modifications, bugs & feature requests are discussed. If you do development with any of GMOD's [Perl based](Category%253APerl "Category%253APerl") components then this is a useful list. |  |
-| <a href="http://lists.open-bio.org/mailman/listinfo/open-bio-l"
+class="external text" rel="nofollow">TAIR</a> (2009/12-) | <a href="http://lists.open-bio.org/mailman/listinfo/bioperl-l"
+class="external text" rel="nofollow">Bioperl-l</a> | Primary [BioPerl](BioPerl "BioPerl") mailing list and is meant both for developers as well as people who are interested in project issues and internals. The place where usage, code modifications, bugs & feature requests are discussed. If you do development with any of GMOD's [Perl based](Category%253APerl "Category%253APerl") components then this is a useful list. | <a href="http://lists.open-bio.org/mailman/listinfo/open-bio-l"
 class="external text" rel="nofollow">OBF cross-project</a> | This list is for <a href="http://open-bio.org" class="external text" rel="nofollow">Open
-Bioinformatics Foundation (OBF)</a> projects to cross talk such as for OBDA and BioSQL issues. |  |
+Bioinformatics Foundation (OBF)</a> projects to cross talk such as for OBDA and BioSQL issues.

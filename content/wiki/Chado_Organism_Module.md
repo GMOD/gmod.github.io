@@ -3,7 +3,6 @@ title: "Chado Organism Module"
 ---
 # Chado Organism Module
 
-
   Introduction](#Introduction)
 - [More
   Information](#More_Information)
@@ -14,7 +13,6 @@ title: "Chado Organism Module"
     organism_dbxref](#Table:_organism_dbxref)
   - [Table:
     organismprop](#Table:_organismprop)
-
 
 # Introduction
 
@@ -119,11 +117,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: organism_dbxref
 
-| FK | Name | Type | Description |
-|----|----|----|----|
-|  | organism_dbxref_id | serial | *PRIMARY KEY* |
-| [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |----|----|----|----|  | organism_dbxref_id | serial | *PRIMARY KEY* | [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 organism_dbxref Structure
 
@@ -135,13 +129,7 @@ organism_dbxref Structure
 
 Tag-value properties - follows standard chado model.
 
-| FK | Name | Type | Description |
-|----|----|----|----|
-|  | organismprop_id | serial | *PRIMARY KEY* |
-| [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text |  |
-|  | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |----|----|----|----|  | organismprop_id | serial | *PRIMARY KEY* | [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
 
 organismprop Structure
 

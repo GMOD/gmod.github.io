@@ -3,10 +3,8 @@ title: "News/GMOD at ParameciumDB"
 ---
 # News/GMOD at ParameciumDB
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/ParameciumDBIcon133x42.png"
 width="133" height="42" alt="ParameciumDB" />](../ParameciumDB "ParameciumDB")
-
 
 Curious to know what is involved in becoming a GMOD user and creating a
 GMOD based web site? You can now read the GMOD User Story, an article
@@ -42,10 +40,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

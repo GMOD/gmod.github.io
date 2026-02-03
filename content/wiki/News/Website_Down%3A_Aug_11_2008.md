@@ -3,11 +3,9 @@ title: "News/Website Down: Aug 11 2008"
 ---
 # News/Website Down: Aug 11 2008
 
-
 <a href="../File:WorkInProgressTools.gif" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="WorkInProgressTools.gif" /></a>
-
 
 The [GMOD website](../Main_Page "Main Page") will be down for
 maintenance on Monday, August 11, 2008 starting at 8pm Eastern / 5pm
@@ -21,10 +19,8 @@ Please let us know if you have any questions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

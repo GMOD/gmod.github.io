@@ -3,14 +3,12 @@ title: "News/GCC2012 Registration Ends July 18"
 ---
 # News/GCC2012 Registration Ends July 18
 
-
 <a href="http://galaxyproject.org/wiki/Events/GCC2012" rel="nofollow"
 title="2012 Galaxy Community Conference (GCC2012) Registration closes July 18"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cc/GCC2012Logo.png/170px-GCC2012Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cc/GCC2012Logo.png/255px-GCC2012Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cc/GCC2012Logo.png/340px-GCC2012Logo.png 2x"
 width="170" height="134"
 alt="2012 Galaxy Community Conference (GCC2012) Registration closes July 18" /></a>
-
 
 Registration for the
 <a href="http://galaxyproject.org/wiki/Events/GCC2012"
@@ -37,7 +35,6 @@ rel="nofollow">open web-based platform for data intensive biomedical
 research</a> that is widely used and deployed at research organizations
 of all sizes and around the world.
 
-
 <a href="http://galaxyproject.org/wiki/Events/GCC2012/TrainingDay"
 rel="nofollow"
 title="2012 Galaxy Community Conference Training Day"><img
@@ -45,7 +42,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png 2x"
 width="170" height="95"
 alt="2012 Galaxy Community Conference Training Day" /></a>
-
 
 The <a href="http://galaxyproject.org/wiki/Events/GCC2012/TrainingDay"
 class="external text" rel="nofollow">GCC2012 Training Day</a> agenda has
@@ -66,10 +62,8 @@ class="external text" rel="nofollow">GCC2012 Organizing Committee</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/07/10*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,12 +3,10 @@ title: "News/Tripal v0.2 Released"
 ---
 # News/Tripal v0.2 Released
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/120px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/180px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/240px-TripalLogo.jpg 2x"
 width="120" height="36" alt="Triapl" />](../Tripal.1 "Triapl")
-
 
 I’d like to announce the release of the second version of
 [Tripal](../Tripal.1 "Tripal"), v0.2. This version provides new support
@@ -58,10 +56,8 @@ rel="nofollow">Clemson University Genomics Institute</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

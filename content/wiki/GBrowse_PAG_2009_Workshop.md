@@ -3,7 +3,6 @@ title: "GBrowse PAG 2009 Workshop"
 ---
 # GBrowse PAG 2009 Workshop
 
-
 <table
 style="font-size: 140%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -39,7 +38,6 @@ rel="nofollow">Plant and Animal Genome XVII Conference</a> ([PAG
 2009](PAG_2009 "PAG 2009")) held in San Diego on January 10-14, 2009.
 This workshop was attended by over 60 people.
 
-
   Installation</span>](#Note_on_Installation)
 - [Overview](#Overview)
 - [Tutorial
@@ -53,7 +51,6 @@ This workshop was attended by over 60 people.
 - [Other GMOD
   Presentations and
   Meetings](#Other_GMOD_Presentations_and_Meetings)
-
 
 ## Note on Installation
 
@@ -132,9 +129,3 @@ GBrowse. See the [list of GMOD related PAG 2009
 presentations](PAG_2009 "PAG 2009") for more. The [January 2009 GMOD
 Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting") was held
 in San Diego, immediately after PAG 2009.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")

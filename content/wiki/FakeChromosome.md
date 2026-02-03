@@ -3,7 +3,6 @@ title: "FakeChromosome"
 ---
 # FakeChromosome
 
-
     >fake_chromosome Used for gmod middleware bakeoff.
     nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
     nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
@@ -256,8 +255,3 @@ title: "FakeChromosome"
     accatggattttttaaaaaaaatttaaatattttttgggggggcgaaaaaaattccaaaa
     aaaaaaaaaaaaaaaaaaattttgggatttttttttaaacacaaaaaaaaaaaaaaaatt
     gggaaattttttttttt
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")

@@ -3,7 +3,6 @@ title: "WebApollo/tool data"
 ---
 # WebApollo/tool data
 
-
 \| name = WebApollo \| full_name = \| status = mature
 \| dev = active \| support = active \| type = Community annotation \|
 platform = web \| logo = WebApolloLogo.png \| home = \| about =
@@ -54,7 +53,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/releases/</a> \|
 dl_src =
 <a href="https://github.com/berkeleybop/jbrowse" class="external text"
 rel="nofollow">JBrowse client source on github</a>
-
 
 - [GMOD in the
   Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")

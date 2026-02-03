@@ -3,7 +3,6 @@ title: "News/JBrowse 1.10.0 released"
 ---
 # News/JBrowse 1.10.0 released
 
-
 I am very pleased to announce the release of JBrowse 1.10.0, a major new
 JBrowse release with some big new features, and a \*huge\* number of
 smaller improvements!
@@ -21,10 +20,8 @@ documentation on how to use the new features.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

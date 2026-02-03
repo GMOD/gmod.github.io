@@ -3,7 +3,6 @@ title: "January 2009 GMOD Meeting"
 ---
 # January 2009 GMOD Meeting
 
-
 <table
 style="font-size: 160%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -41,14 +40,11 @@ This [GMOD community meeting](Meetings "Meetings") was held January
 Genome (PAG 2009)](PAG_2009 "PAG 2009"). There were over [50
 participants](#Meeting_Participants) at the meeting.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2009Meeting.JPG" width="319"
 height="100" alt="Jan 2009 Meeting" />
 
-
   
-
 
   Agenda](#Agenda)
   - [Thursday,
@@ -112,43 +108,26 @@ height="100" alt="Jan 2009 Meeting" />
 - [Next Meeting:
   August 2009 at Oxford](#Next_Meeting:_August_2009_at_Oxford)
 
-
   
 
 ## Agenda
 
 ### Thursday, January 15
 
-| Time | Topic | Presenter(s) | Links |
-|----|----|----|----|
-| 10:00 AM | Registration |  |  |
-| 10:30 AM | Introductions | [Scott Cain](User%253AScott "User%253AScott") |  |
-| 11:00 AM | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt"
-class="internal" title="Jan2009StateOfGMOD.ppt">PPT</a>, [Summary](#The_State_of_GMOD) |
-| 11:30 AM | A variety of [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") stuff | [Dave Clements](User%253AClements "User%253AClements") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf" class="internal"
-title="Jan2009HelpDesk.pdf">PDF</a>, [Summary](#GMOD_Help_Desk) |
-| 12:00 PM | Lunch | *one hour 30 minutes* |  |
-| 1:30 PM | <a href="http://drupal.org" class="external text"
+| Time | Topic | Presenter(s) | Links |----|----|----|----| 10:00 AM | Registration | 10:30 AM | Introductions | [Scott Cain](User%253AScott "User%253AScott") | 11:00 AM | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt"
+class="internal" title="Jan2009StateOfGMOD.ppt">PPT</a>, [Summary](#The_State_of_GMOD) | 11:30 AM | A variety of [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") stuff | [Dave Clements](User%253AClements "User%253AClements") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf" class="internal"
+title="Jan2009HelpDesk.pdf">PDF</a>, [Summary](#GMOD_Help_Desk) | 12:00 PM | Lunch | *one hour 30 minutes* | 1:30 PM | <a href="http://drupal.org" class="external text"
 rel="nofollow">Drupal</a> and <a href="http://www.marinegenomics.org" class="external text"
 rel="nofollow">MarineGenomics.org</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0f/Jan2009MarineGenomics.pdf"
-class="internal" title="Jan2009MarineGenomics.pdf">PDF</a>, [Summary](#Drupal_and_MarineGenomics.org) |
-| 2:00 PM | <a href="http://www.sanger.ac.uk/Software/Artemis/"
+class="internal" title="Jan2009MarineGenomics.pdf">PDF</a>, [Summary](#Drupal_and_MarineGenomics.org) | 2:00 PM | <a href="http://www.sanger.ac.uk/Software/Artemis/"
 class="external text" rel="nofollow">Artemis</a> and <a href="Chado" class="mw-redirect" title="Chado">Chado</a> at <a href="http://www.genedb.org/" class="external text"
 rel="nofollow">GeneDB</a> | Robin Houston | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Jan2009ArtemisChadoGeneDB.ppt"
 class="internal" title="Jan2009ArtemisChadoGeneDB.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/Jan2009ArtemisChadoGeneDB.pdf"
-class="internal" title="Jan2009ArtemisChadoGeneDB.pdf">PDF</a>, [Summary](#Artemis_and_Chado_at_GeneDB) |
-| 2:30 PM | modENCODE: extending <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, BIR-TAB, & GBrowse for automating data validation & display | [Nicole Washington](User%253ANLWashington "User%253ANLWashington") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/Jan2009modENCODE.pdf" class="internal"
-title="Jan2009modENCODE.pdf">PDF</a>, [Summary](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display) |
-| 3:00 PM | Break |  |  |
-| 3:30 PM | A RESTful interface for [MODs](MOD "MOD")? | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2009RESTfulMODs.ppt"
+class="internal" title="Jan2009ArtemisChadoGeneDB.pdf">PDF</a>, [Summary](#Artemis_and_Chado_at_GeneDB) | 2:30 PM | modENCODE: extending <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, BIR-TAB, & GBrowse for automating data validation & display | [Nicole Washington](User%253ANLWashington "User%253ANLWashington") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/Jan2009modENCODE.pdf" class="internal"
+title="Jan2009modENCODE.pdf">PDF</a>, [Summary](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display) | 3:00 PM | Break | 3:30 PM | A RESTful interface for [MODs](MOD "MOD")? | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2009RESTfulMODs.ppt"
 class="internal" title="Jan2009RESTfulMODs.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/66/Jan2009RESTfulMODs.pdf"
-class="internal" title="Jan2009RESTfulMODs.pdf">PDF</a>, [Summary](#A_RESTful_Interface_for_MODs.3F), [Discussion](#Data_Sharing) |
-| 4:00 PM | Metadata Input and Submission Tool and GIS linked metagenomic database | Iddo Friedberg and Christopher Condit | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/Jan2009MIST.pdf" class="internal"
-title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database) |
-| 4:30 PM | Data Representation in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Best Practices | [Joshua Orvis](User%253AJorvis "User%253AJorvis") and/or Scott Cain | [Summary](#Data_Representation_in_Chado:_Best_Practices), [Discussion](#Data_Sharing) |
-| 5:00 PM | Dinner (on your own) |  |  |
-
-### Friday, January 16
+class="internal" title="Jan2009RESTfulMODs.pdf">PDF</a>, [Summary](#A_RESTful_Interface_for_MODs.3F), [Discussion](#Data_Sharing) | 4:00 PM | Metadata Input and Submission Tool and GIS linked metagenomic database | Iddo Friedberg and Christopher Condit | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/Jan2009MIST.pdf" class="internal"
+title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database) | 4:30 PM | Data Representation in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Best Practices | [Joshua Orvis](User%253AJorvis "User%253AJorvis") and/or Scott Cain | [Summary](#Data_Representation_in_Chado:_Best_Practices), [Discussion](#Data_Sharing) | 5:00 PM | Dinner (on your own) |  ### Friday, January 16
 
 <table class="wikitable">
 <colgroup>
@@ -374,7 +353,6 @@ The presentations are listed here in a very approximate order:
 - GMOD User Experiences
 
 ### The State of GMOD
-
 
 - [Middleware](Category%253AMiddleware "Category%253AMiddleware")
 

@@ -3,7 +3,6 @@ title: "Pathway Tools/tool data"
 ---
 # Pathway Tools/tool data
 
-
 This page contains the data that populates the [Pathway
 Tools](../Pathway_Tools.1 "Pathway Tools") page.
 
@@ -103,10 +102,7 @@ rel="nofollow">E. coli PGDB</a>, as well as
 <a href="http://biocyc.org/otherpgdbs.shtml" class="external text"
 rel="nofollow">a list of PGDBs hosted elsewhere</a>. \| mail =
 
-|                                                     |                         |                                                                                                                                         |            |
-| --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-|                                                     | Mailing List Link       | Description                                                                                                                             | Archive(s) |
-| [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") | ptools-users@ai.sri.com | [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") users list. To subscribe to this list, send a request to ptools-support@ai.sri.com. | _None_     |
+|                         | --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- |                                                     | Mailing List Link       | Description                                                                                                                             | Archive(s) | [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") | ptools-users@ai.sri.com | [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") users list. To subscribe to this list, send a request to ptools-support@ai.sri.com. | _None_     |
 
 \| logo_info = \| dev_ppl = Pathway Tools was developed by
 <a href="http://www.ai.sri.com/pkarp/" class="external text"

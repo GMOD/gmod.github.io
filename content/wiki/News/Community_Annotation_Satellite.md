@@ -3,13 +3,11 @@ title: "News/Community Annotation Satellite"
 ---
 # News/Community Annotation Satellite
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/180px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/270px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
 width="180" height="154"
 alt="Community Annotation Satellite Meeting Report" />](../Community_Annotation_-_September_2010_Satellite "Community Annotation Satellite Meeting Report")
-
 
 The report from the [GMOD Europe 2010 Community Annotation Satellite
 Meeting](../Community_Annotation_-_September_2010_Satellite "Community Annotation - September 2010 Satellite")
@@ -31,10 +29,8 @@ compile the report.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

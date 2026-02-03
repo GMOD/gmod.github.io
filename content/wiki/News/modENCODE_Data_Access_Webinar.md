@@ -3,7 +3,6 @@ title: "News/modENCODE Data Access Webinar"
 ---
 # News/modENCODE Data Access Webinar
 
-
 <a href="http://modencode.org" class="external text"
 rel="nofollow">modENCODE</a> project aims to provide the biological
 research community with a comprehensive encyclopedia of genomic
@@ -27,10 +26,8 @@ Peter Ruzanov
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

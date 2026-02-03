@@ -3,12 +3,10 @@ title: "News/GMOD @ ISMB 2010"
 ---
 # News/GMOD @ ISMB 2010
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/46/ISMB2010_logo.jpg/150px-ISMB2010_logo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/ISMB2010_logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/ISMB2010_logo.jpg 2x"
 width="150" height="90" alt="GMOD @ ISMB 2010" />](../ISMB_2010 "GMOD @ ISMB 2010")
-
 
 ISMB runs July 9-13 this year and [GMOD has a strong presence on the
 program](../ISMB_2010 "ISMB 2010"):
@@ -33,10 +31,8 @@ rel="nofollow">ISMB 2010 web site</a> for more on the conference.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

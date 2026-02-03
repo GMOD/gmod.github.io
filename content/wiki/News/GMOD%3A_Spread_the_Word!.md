@@ -3,10 +3,8 @@ title: "News/GMOD: Spread the Word!"
 ---
 # News/GMOD: Spread the Word!
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/PoweredByGMOD200.png" width="200"
 height="95" alt="Help spread the word about GMOD" />](../GMOD_Promotion "Help spread the word about GMOD")
-
 
 Do you use GMOD tools in your research? If so, then you can help others
 and GMOD by [getting the word out about GMOD and its
@@ -47,10 +45,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/26*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

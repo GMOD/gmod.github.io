@@ -3,7 +3,6 @@ title: "News/BioCyc 16.5 Released"
 ---
 # News/BioCyc 16.5 Released
 
-
 <a href="http://biocyc.org" class="external text"
 rel="nofollow">BioCyc</a> version 16.5 has been released! 16.5 is a
 major new version that includes updates to the [Pathway

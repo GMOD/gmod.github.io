@@ -3,7 +3,6 @@ title: "GBrowse Configuration/BioMOBY"
 ---
 # GBrowse Configuration/BioMOBY
 
-
 This article describes **BioMOBY and Bio::MOBY Browse** and how to
 configure it for use in GBrowse.
 

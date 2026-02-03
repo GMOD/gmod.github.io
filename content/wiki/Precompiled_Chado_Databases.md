@@ -3,7 +3,6 @@ title: "Precompiled Chado Databases"
 ---
 # Precompiled Chado Databases
 
-
 <a href="https://cpt.tamu.edu/chado-prebuilt-schema/"
 class="external text" rel="nofollow">Chado database dumps of precompiled
 ontologies are publicly available</a> to save Chado users the time and
@@ -45,8 +44,3 @@ interested in having:
 - other builds with different (sub)sets of ontologies
 
 All of these features can be added on request.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")

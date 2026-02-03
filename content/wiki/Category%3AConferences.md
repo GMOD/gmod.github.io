@@ -3,11 +3,9 @@ title: "Category%253AConferences"
 ---
 # Category%253AConferences
 
-
 ## Pages in category "Conferences"
 
 The following 17 pages are in this category, out of 17 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -68,7 +66,6 @@ Automated Function Prediction</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Conferences"
 
@@ -300,13 +297,4 @@ The following 10 files are in this category, out of 10 total.
 
   [JBrowse PAG
   2018.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/JBrowse_PAG_2018.pdf "File:JBrowse PAG 2018.pdf")  
-  725 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Events](Category%253AEvents "Category%253AEvents")
+  725 KB

@@ -3,10 +3,8 @@ title: "VMware 2011 Spring Training"
 ---
 # VMware 2011 Spring Training
 
-
 In this session, we'll get the VMware image up and running on your
 laptop.
-
 
   Course Images</span>](#Download_Course_Images)
 - [System
@@ -33,7 +31,6 @@ laptop.
   Display](#Resizing_the_Display)
 - [Linux Text
   Editors](#Linux_Text_Editors)
-
 
 ## Download Course Images
 
@@ -373,12 +370,9 @@ should automatically launch VMware.
 
 ## Did you move or copy the image?
 
-
 You Moved It!
 
-
 Yes you did.
-
 
 VMware then asks you if you moved or copied this image. Tell it you
 **moved it**. Doing anything else is bad.
@@ -406,11 +400,9 @@ address. To get it, open a terminal and type:
 
 which will give you output like this:
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Ifconfig.png" width="666" height="461"
 alt="Ifconfig.png" />
-
 
 See that `inet addr:172.16.108.130`? Those four numbers are the IP
 address. You can now (from you host operating system) ssh into the

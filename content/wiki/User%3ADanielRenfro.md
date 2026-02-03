@@ -3,7 +3,6 @@ title: "User%253ADanielRenfro"
 ---
 # User%253ADanielRenfro
 
-
 People
 <a href="http://en.wikipedia.org/wiki/Punt_(boat)" class="external text"
 rel="nofollow">punting</a> on the
@@ -11,7 +10,6 @@ rel="nofollow">punting</a> on the
 rel="nofollow">River Cam</a>.  
 Taken at the [2010 GMOD meeting in
 Cambridge.](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
-
 
 About
 

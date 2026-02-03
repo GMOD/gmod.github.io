@@ -3,7 +3,6 @@ title: "Chado Full Text Search"
 ---
 # Chado Full Text Search
 
-
 Starting with the 0.30 release of the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> [GBrowse
 adaptor](GBrowse_Adaptors "GBrowse Adaptors")
@@ -87,7 +86,6 @@ updating the materialized_view table, and changing the value in
 refresh_time, which is an integer number of seconds. The default value
 is 86400 (24 hours \* 60 minutes \* 60 seconds), but can be changed to
 weekly (604800) or any other value desired:
-
 
 ``` de1
   UPDATE materialized_view SET refresh_time = 604800 WHERE name = 'all_feature_names';

@@ -3,10 +3,8 @@ title: "News/GMOD Summer School Update"
 ---
 # News/GMOD Summer School Update
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/SummerSchoolSmall.png" width="200"
 height="182" alt="2008 GMOD Summer School" />](../2008_GMOD_Summer_School "2008 GMOD Summer School")
-
 
 <span style="font-size: 120%; font-weight: bold">July 11-13, 2008  
 National Evolutionary Synthesis Center (NESCent)  
@@ -34,11 +32,9 @@ admission status.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/24, last
 updated 2008/05/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

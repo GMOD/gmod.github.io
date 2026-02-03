@@ -3,7 +3,6 @@ title: "WebApollo-relevant-meetings"
 ---
 # WebApollo-relevant-meetings
 
-
 Here are some upcoming meeting possibilities for the WebApollo team.
 
 <table data-border="1" data-cellspacing="0" data-cellpadding="10">
@@ -136,8 +135,3 @@ submission deadline is November 1, 2012</td>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Webapollo](Category%253AWebapollo "Category%253AWebapollo")

@@ -3,7 +3,6 @@ title: "Reproducing gbrowse img functionality with JBrowse"
 ---
 # Reproducing gbrowse img functionality with JBrowse
 
-
 That is, "Reproducing gbrowse_img functionality with JBrowse"
 (underscores don't survive the Mediawiki page naming process). A current
 implementation of this can be seen at the WormBase staging site for the
@@ -11,7 +10,6 @@ implementation of this can be seen at the WormBase staging site for the
 href="https://staging.wormbase.org/species/c_elegans/gene/WBGene00001340#09--10#09--10"
 class="external text" rel="nofollow">etr-1 gene</a>, which has quite a
 few transcripts and so needs a "tall" JBrowse image.
-
 
   needed</span>](#Why_this_is_needed)
 - [What this
@@ -26,7 +24,6 @@ few transcripts and so needs a "tall" JBrowse image.
     overlay" to allow
     clicking](#.22Div_overlay.22_to_allow_clicking)
 - [Acknowledgments](#Acknowledgments)
-
 
 ## Why this is needed
 
@@ -153,7 +150,7 @@ which drives the WormBase website.
 
                         function updateHeight() {
                             var heightComputed = 0;
-                            var jbrowseDocument = document.getElementById('innerJBrowse').contentDocument || document.getElementById('innerJBrowse').contentWindow.document;
+                            var jbrowseDocument = document.getElementById('innerJBrowse').contentDocument | document.getElementById('innerJBrowse').contentWindow.document;
                             var tracks = jbrowseDocument.getElementsByClassName('track');
                             for (var i=0; i < tracks.length; i++) {
                               var id = tracks[i].id;
@@ -171,7 +168,7 @@ which drives the WormBase website.
                           var previousHeights = [0];
                           return {
                             isProgressComplete: function() {
-                              return previousHeights.length > max_num_retries || (
+                              return previousHeights.length > max_num_retries | (
                                 previousHeights.length > num_stabilization_step &&
                                 previousHeights[0] !== 0 &&
                                 previousHeights.slice(1, num_stabilization_step).every(
@@ -186,7 +183,6 @@ which drives the WormBase website.
                             },
                           };
                         }
-
 
                         var progress = progressInit(30, 3);
                         var interval = setInterval(function() {
@@ -232,8 +228,3 @@ outline.
 Special thanks to Sibyl Gao at WormBase for taking the prototype I
 created and turning it into something that would actually work well in
 the context of a full website.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")

@@ -3,7 +3,6 @@ title: "Gbrowse clean.pl"
 ---
 # Gbrowse clean.pl
 
-
 ------------------------------------------------------------------------
 
 **NAME**
@@ -117,8 +116,3 @@ code distribution for details.
 **SEE ALSO**
 
 [GBrowse 2.0 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")

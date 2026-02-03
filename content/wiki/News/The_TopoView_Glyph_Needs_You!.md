@@ -3,10 +3,8 @@ title: "News/The TopoView Glyph Needs You!"
 ---
 # News/The TopoView Glyph Needs You!
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/71/TopoViewThumb.png" width="190"
 height="123" alt="TopoView from FlyBase" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf "TopoView from FlyBase")
-
 
 [TopoView](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf "File:Flybase topoview.pdf") is
 a [GBrowse](../GBrowse.1 "GBrowse") glyph created by Victor Strelets at
@@ -43,10 +41,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,14 +3,11 @@ title: "Category%253AGBrowse"
 ---
 # Category%253AGBrowse
 
-
 Pages related to [GBrowse](GBrowse.1 "GBrowse").
-
 
 ## Subcategories
 
 This category has the following 3 subcategories, out of 3 total.
-
 
 ### G
 
@@ -19,11 +16,9 @@ This category has the following 3 subcategories, out of 3 total.
   Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")
 - [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
 
-
 ## Pages in category "GBrowse"
 
 The following 80 pages are in this category, out of 80 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -251,7 +246,6 @@ title="WebGBrowse/tool data">WebGBrowse/tool data</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "GBrowse"
 
@@ -835,13 +829,4 @@ The following 25 files are in this category, out of 25 total.
   
 
   [ZFNGenomeGBrowseISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/ZFNGenomeGBrowseISMB2010.pdf "File:ZFNGenomeGBrowseISMB2010.pdf")  
-  324 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  324 KB

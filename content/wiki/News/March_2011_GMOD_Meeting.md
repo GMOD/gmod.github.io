@@ -3,16 +3,13 @@ title: "News/March 2011 GMOD Meeting"
 ---
 # News/March 2011 GMOD Meeting
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/150px-GMODAmericas2011Logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/225px-GMODAmericas2011Logo.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/300px-GMODAmericas2011Logo.jpg.png 2x"
 width="150" height="150" alt="March 2011 GMOD Meeting" />](../March_2011_GMOD_Meeting "March 2011 GMOD Meeting")
 
-
 [Register for the March 2011 GMOD
 Meeting](../March_2011_GMOD_Meeting#Registration "March 2011 GMOD Meeting")
-
 
   
 [Registration](../March_2011_GMOD_Meeting "March 2011 GMOD Meeting") is
@@ -67,10 +64,8 @@ sponsored by NESCent and the [Galaxy](../Galaxy.1 "Galaxy") Project.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/31*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

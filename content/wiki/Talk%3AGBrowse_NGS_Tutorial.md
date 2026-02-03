@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse NGS Tutorial"
 ---
 # Talk%253AGBrowse NGS Tutorial
 
-
 # SamTools compilation
 
 (CENTOS 5.4) I had to change the Makefile for samtools to have -fPIC

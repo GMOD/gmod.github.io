@@ -3,7 +3,6 @@ title: "Comparison of XORT and Hibernate for Chado reporting"
 ---
 # Comparison of XORT and Hibernate for Chado reporting
 
-
 <span style="color: red;">Please note: The age of this document means
 that it is no longer relevant given the technological changes that have
 occurred with the databases and ORM technologies discussed herein. It is

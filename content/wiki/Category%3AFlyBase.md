@@ -3,26 +3,21 @@ title: "Category%253AFlyBase"
 ---
 # Category%253AFlyBase
 
-
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a> is one of the original members of GMOD and
 remains very active in the project.
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### C
 
 - [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")
 
-
 ## Pages in category "FlyBase"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -71,7 +66,6 @@ Presentation</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "FlyBase"
 
@@ -256,13 +250,4 @@ The following 8 files are in this category, out of 8 total.
   
 
   [Zhang-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt "File:Zhang-050517.ppt")  
-  745 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  745 KB

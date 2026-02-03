@@ -3,16 +3,13 @@ title: "News/Openings at Galaxy"
 ---
 # News/Openings at Galaxy
 
-
 <a href="http://galaxyproject.org/wiki/GalaxyIsHiring" rel="nofollow"
 title="Galaxy wants YOU, damnit"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/83/PointingFinger.png/170px-PointingFinger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/83/PointingFinger.png/255px-PointingFinger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/PointingFinger.png 2x"
 width="170" height="175" alt="Galaxy wants YOU, damnit" /></a>
 
-
   
-
 
 <a href="http://galaxyproject.org/wiki/GalaxyIsHiring" rel="nofollow"
 title="The Galaxy Project is hiring"><img
@@ -20,13 +17,10 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/255px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/340px-GalaxyLogoBigger.png 2x"
 width="170" height="60" alt="The Galaxy Project is hiring" /></a>
 
-
   
-
 
 <a href="http://galaxyproject.org/wiki/GalaxyIsHiring"
 class="external text" rel="nofollow">Wants You!</a>
-
 
 Want to work on one of the fastest growing open source bioinformatics
 projects around? The
@@ -93,6 +87,5 @@ worldwide, is hiring.
 Please send your CV to jobs@galaxyproject.org.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/02*

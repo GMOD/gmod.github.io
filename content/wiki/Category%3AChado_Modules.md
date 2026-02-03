@@ -3,11 +3,9 @@ title: "Category%253AChado Modules"
 ---
 # Category%253AChado Modules
 
-
 ## Pages in category "Chado Modules"
 
 The following 30 pages are in this category, out of 30 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -97,7 +95,6 @@ title="Introduction to Chado">Introduction to Chado</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Chado Modules"
 
@@ -212,13 +209,4 @@ The following 5 files are in this category, out of 5 total.
   
 
   [Emmert 040526.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Emmert_040526.pdf "File:Emmert 040526.pdf")  
-  213 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
+  213 KB

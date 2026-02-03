@@ -3,7 +3,6 @@ title: "GMOD Evo Hackathon"
 ---
 # GMOD Evo Hackathon
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -49,7 +48,6 @@ Participation](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call")
 went out on August 1, 2010, and remained open until August 25.
 Participants have been selected and notified of their status.
 
-
   Synopsis](#Synopsis)
   - [Subgroups](#Subgroups)
   - [PAG
@@ -81,7 +79,6 @@ Participants have been selected and notified of their status.
 - [Sponsorship](#Sponsorship)
 - [Organizing
   Committee](#Organizing_Committee)
-
 
 # Synopsis
 
@@ -116,12 +113,10 @@ MediaWiki export is available at Zenodo. To view the content of that
 wiki, one first needs to reinstantiate a MediaWiki instance from the
 export.*
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/200px-EvoHackLaptops2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/300px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x"
 width="200" height="119" alt="EvoHackLaptops2010.jpg" />
-
 
 The <a href="https://www.nescent.org/wg_gmodevohackathon/Participants"
 class="external text" rel="nofollow">30 participants</a> self-organized
@@ -391,20 +386,17 @@ available to defray costs for qualified participants.
 
 # March 2011 Satellite
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/300px-2011GMODAmericasSatellitesLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/450px-2011GMODAmericasSatellitesLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/600px-2011GMODAmericasSatellitesLogo.png 2x"
 width="300" height="119"
 alt="Satellite Meetings at GMOD Americas 2011" />](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings at GMOD Americas 2011")
 
-
 We are planning a followup gathering as a [Satellite
 Meeting](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
 at [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"), in
 March at NESCent. If you are interested in participating, please add
 your name below.
-
 
 *You do not need to have attended the original hackathon or plan on
 attending any other [GMOD Americas
@@ -413,40 +405,19 @@ this satellite (or any other satellite). If you have an interest in
 extending GMOD and will be in the area or at GMOD Americas 2011, then
 you are strongly encouraged to participate.*
 
-
   
 
-| Name | Email | Particular Interest? |
-|----|----|----|
-| Duke Leto (Organizer) | jonathan at leto net |  |
-| Hilmar Lapp | hlapp at nescent.org | Large trees in BioPerl cleanup |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| ↑ Add your name and details above |  |  |
+| Name | Email | Particular Interest? |----|----|----| Duke Leto (Organizer) | jonathan at leto net | Hilmar Lapp | hlapp at nescent.org | Large trees in BioPerl cleanup |  |  |  | ↑ Add your name and details above |  # Timeline
 
-# Timeline
-
-|  |  |
-|---:|----|
-| **June 3, 2010** | [Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal") submitted to <a href="http://nesscent.org/" class="external text"
-rel="nofollow">NESCent</a> |
-| **June 10, 2010** | Funding approved |
-| **August 1, 2010** | [Open call for participants](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call"), applications open |
-| **August 25, 2010** | [Open call application](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call") deadline |
-| **September 16, 2010** | Applicants notified |
-| **September 24, 2010** | Deadline for participant attendance commitment |
-| **November 8-12, 2010** | Hackathon at NESCent |
-| **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"). |
+|---:|----| **June 3, 2010** | [Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal") submitted to <a href="http://nesscent.org/" class="external text"
+rel="nofollow">NESCent</a> | **June 10, 2010** | Funding approved | **August 1, 2010** | [Open call for participants](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call"), applications open | **August 25, 2010** | [Open call application](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call") deadline | **September 16, 2010** | Applicants notified | **September 24, 2010** | Deadline for participant attendance commitment | **November 8-12, 2010** | Hackathon at NESCent | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"). |
 
 # Sponsorship
-
 
 <a href="http://nescent.org/" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/120px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="120" height="111" alt="NESCent" /></a>
-
 
 This event is sponsored by the
 <a href="http://www.nescent.org/" class="external text"

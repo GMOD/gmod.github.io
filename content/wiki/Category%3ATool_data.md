@@ -3,7 +3,6 @@ title: "Category%253ATool data"
 ---
 # Category%253ATool data
 
-
 Tool data pages are a way of organising the information about GMOD tools
 in a standardized manner.
 
@@ -29,21 +28,17 @@ Sample of data arrangement:
 
     | doc = [http://nonsense.com/mat.html MAT documentation]
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "Tool data"
 
 The following 22 pages are in this category, out of 22 total.
-
 
 <table style="width: 100%;">
 <colgroup>

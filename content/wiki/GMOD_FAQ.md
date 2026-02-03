@@ -3,7 +3,6 @@ title: "GMOD FAQ"
 ---
 # GMOD FAQ
 
-
 A list of **F**requently **A**sked **Q**questions about the GMOD project.
 See [FAQ](Category%253AFAQ "Category%253AFAQ") for a list of FAQ pages on
 specific [GMOD Components](GMOD_Components "GMOD Components"). See the
@@ -11,7 +10,6 @@ specific [GMOD Components](GMOD_Components "GMOD Components"). See the
 in GMOD.
 
   
-
 
   FAQ</span>](#About_this_FAQ)
   - [What is
@@ -26,7 +24,6 @@ in GMOD.
     GMOD?](#What_is_GMOD.3F)
   - [How do I
     learn more about GMOD?](#How_do_I_learn_more_about_GMOD.3F)
-
 
 ## About this FAQ
 
@@ -70,8 +67,3 @@ comparative map viewer [CMap](CMap.1 "CMap").
 
 See the [Overview](Overview "Overview") and [GMOD Getting
 Started](GMOD_-_Getting_Started "GMOD - Getting Started") pages.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [FAQ](Category%253AFAQ "Category%253AFAQ")

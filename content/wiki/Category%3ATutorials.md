@@ -3,7 +3,6 @@ title: "Category%253ATutorials"
 ---
 # Category%253ATutorials
 
-
 This lists all online GMOD tutorials. See [Training and
 Outreach](Training_and_Outreach "Training and Outreach") for other types
 of GMOD-related training.
@@ -369,21 +368,17 @@ title="2013 GMOD Summer School">2013 GMOD Summer School</a>
 </tbody>
 </table>
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "Tutorials"
 
 The following 87 pages are in this category, out of 87 total.
-
 
 <table style="width: 100%;">
 <colgroup>

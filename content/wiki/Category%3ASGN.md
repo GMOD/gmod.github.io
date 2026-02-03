@@ -3,7 +3,6 @@ title: "Category%253ASGN"
 ---
 # Category%253ASGN
 
-
 The <a href="http://www.sgn.cornell.edu/" class="external text"
 rel="nofollow">Sol Genomics Network (SGN)</a> is a Clade Oriented
 Database (COD) containing genomic, genetic and taxonomic information for
@@ -12,11 +11,9 @@ tomato, potato, eggplant, pepper, petunia) and Rubiaceae (coffee).
 Genomic information is presented in a comparative format and tied to the
 fully-sequenced Arabidopsis genome. SGN uses GMOD components.
 
-
 ## Pages in category "SGN"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -64,7 +61,6 @@ title="User%253ARobertBuels">User%253ARobertBuels</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "SGN"
 
 The following 2 files are in this category, out of 2 total.
@@ -109,13 +105,4 @@ The following 2 files are in this category, out of 2 total.
   
 
   [Sgn small tag.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Sgn_small_tag.png "File:Sgn small tag.png")  
-  5 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  5 KB

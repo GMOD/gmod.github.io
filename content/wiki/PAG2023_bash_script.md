@@ -3,7 +3,6 @@ title: "PAG2023 bash script"
 ---
 # PAG2023 bash script
 
-
     #!/bin/bash
 
     jbrowse create public_html --force

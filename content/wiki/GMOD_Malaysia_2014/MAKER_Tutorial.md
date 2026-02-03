@@ -3,7 +3,6 @@ title: "GMOD Malaysia 2014/MAKER Tutorial"
 ---
 # GMOD Malaysia 2014/MAKER Tutorial
 
-
 This [MAKER](../MAKER.1 "MAKER") tutorial was presented by [Michael
 Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") at [GMOD
 Malaysia 2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February
@@ -21,7 +20,6 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
   
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -126,7 +124,6 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
     Support](#MPI_Support)
   - [MAKER
     Accessory Scripts](#MAKER_Accessory_Scripts)
-
 
 ## About MAKER
 
@@ -409,18 +406,13 @@ Scripts:
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
 
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
 - [MAKER](../Category%253AMAKER "Category%253AMAKER")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD Malaysia 2014/MAKER
-Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FMAKER-20Tutorial "Special%253ABrowse/GMOD-20Malaysia-202014-2FMAKER-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [MAKER](../MAKER.1 "MAKER") <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/MAKER "Special%253ASearchByProperty/Has-20topic/MAKER")</span> |
+|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [MAKER](../MAKER.1 "MAKER")  |

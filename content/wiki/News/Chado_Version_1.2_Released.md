@@ -3,7 +3,6 @@ title: "News/Chado Version 1.2 Released"
 ---
 # News/Chado Version 1.2 Released
 
-
 I am pleased to announce the release of Chado version 1.2. It is
 available at:
 
@@ -56,10 +55,8 @@ Changes in Chado 1.2:
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

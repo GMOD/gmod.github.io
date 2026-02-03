@@ -3,12 +3,10 @@ title: "News/News/Prospecting for Proposals for GSoC 2015"
 ---
 # News/News/Prospecting for Proposals for GSoC 2015
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1e/GoogleSummer_2015logo.jpg/200px-GoogleSummer_2015logo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1e/GoogleSummer_2015logo.jpg/300px-GoogleSummer_2015logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1e/GoogleSummer_2015logo.jpg/400px-GoogleSummer_2015logo.jpg 2x"
 width="200" height="180" alt="GoogleSummer 2015logo.jpg" />](../../GSoC "GSoC")
-
 
 The Genome Informatics group and GMOD will be submitting an application
 for <a href="http://google-melange.com" class="external text"
@@ -38,7 +36,6 @@ rel="nofollow">robin.haw@oicr.on.ca</a> and
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a> for advice!
 
-
-[Category](../../Special%253ACategories "Special%253ACategories"):
+:
 
 - [GSoC](../../Category%253AGSoC "Category%253AGSoC")

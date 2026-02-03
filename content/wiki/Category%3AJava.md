@@ -3,16 +3,13 @@ title: "Category%253AJava"
 ---
 # Category%253AJava
 
-
 Pages that discuss parts of GMOD that are either written using the Java
 programming language, or that discuss using GMOD components with the
 Java programming language.
 
-
 ## Pages in category "Java"
 
 The following 15 pages are in this category, out of 15 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -75,7 +72,6 @@ title="Java Testing - by Jon Slenk">Java Testing - by Jon Slenk</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Java"
 
@@ -144,13 +140,4 @@ The following 3 files are in this category, out of 3 total.
   
 
   [IBatis.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf "File:IBatis.pdf")  
-  6.59 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  6.59 MB

@@ -3,9 +3,7 @@ title: "News/Positions @ JCVI"
 ---
 # News/Positions @ JCVI
 
-
 From the Galaxy mailing list:
-
 
 We have a few open <a
 href="https://careers.jcvi.org/careers/Careers.aspx?adata=Q%2fhMgU9ioOU2Q2IBMeDlPzojZaM309CBtHV%2b%2bLtKWW0PRb6H39%2fWK4hiwgS3QLR6dvwqIVTrFzs%3d"
@@ -14,14 +12,12 @@ positions</a> at the
 <a href="http://www.jcvi.org/" class="external text"
 rel="nofollow">J.Craig Venter Institute</a>,
 
-
 <a
 href="https://careers.jcvi.org/careers/Careers.aspx?adata=Q%2fhMgU9ioOU2Q2IBMeDlPzojZaM309CBtHV%2b%2bLtKWW0PRb6H39%2fWK4hiwgS3QLR6dvwqIVTrFzs%3d"
 rel="nofollow"
 title="Galaxy/Python and Bioinformatics Engineers positions at the J.Craig Venter Institute"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/JCVILogo.jpg" width="152" height="65"
 alt="Galaxy/Python and Bioinformatics Engineers positions at the J.Craig Venter Institute" /></a>
-
 
 one of which involves largely developing further the
 [Galaxy](../Galaxy.1 "Galaxy") platform for use in-house (writing
@@ -49,13 +45,10 @@ Bioinformatics Engineer
 <a href="http://www/jcvi.org" class="external text"
 rel="nofollow">J.Craig Venter Institute</a>
 
-
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

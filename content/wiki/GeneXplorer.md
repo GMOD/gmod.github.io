@@ -3,13 +3,11 @@ title: "GeneXplorer"
 ---
 # GeneXplorer
 
-
 GeneXplorer is a web application that allows clustered
 [microarray](Category%253AMicroarrays "Category%253AMicroarrays") data to be
 browsed interactively via the web, and can be used either for research
 purposes, or for providing web supplements to accompany microarray
 publication.
-
 
   Status](#Status)
 - [Demo &
@@ -18,7 +16,6 @@ publication.
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Status
 

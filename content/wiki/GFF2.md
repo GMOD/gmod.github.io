@@ -3,7 +3,6 @@ title: "GFF2"
 ---
 # GFF2
 
-
 <a href="http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml"
 class="external text" rel="nofollow">GFF2</a> is a supported format in
 GMOD, **but it is now deprecated and if you have a choice you should use
@@ -15,7 +14,6 @@ type, be part of the sequence ontology. It can be any string. This often
 led to quality control and data exchange problems.
 
   
-
 
   Deprecated!</span>](#GFF2_is_Deprecated.21)
   - [Why GFF2
@@ -54,13 +52,11 @@ led to quality control and data exchange problems.
   - [Column 9:
     Group / Attributes](#Column_9:_Group_.2F_Attributes)
 
-
 ## GFF2 is Deprecated!
 
 The GFF file format stands for "Gene Finding Format" or or "General
 Feature Format" and was invented at the Sanger Centre. It is easy to
 use, but it suffers from two main limitations (see the box).
-
 
 ### Why GFF2 is harmful to your health
 
@@ -77,7 +73,6 @@ subfeature of the transcript, or vice-versa. This means you have to use
 "aggregators" to sort out the relationships. This is a major pain in the
 neck. For this reason, GFF2 format has been deprecated in favor of
 [GFF3](GFF3 "GFF3") format databases.
-
 
 See [GFF3](GFF3 "GFF3") for more on the current version of GFF.
 
@@ -333,13 +328,11 @@ care.
 
 ### Aggregators
 
-
 It is not necessary to use aggregators with the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
 [BioSQL](BioSQL "BioSQL"), or Bio::DB::SeqFeature::Store [GBrowse
 Adaptors](GBrowse_Adaptors "GBrowse Adaptors"), or any other adaptor
 that is based on [GFF3](GFF3 "GFF3").
-
 
 The Bio::DB::GFF adaptor (and only Bio::DB::GFF!) has a feature known as
 "aggregators". These are small software packages that recognize certain

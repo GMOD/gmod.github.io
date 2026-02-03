@@ -23,11 +23,7 @@ evolutionary science</a> presentation discusses the Phenotype module.
 
 ## Table: feature_phenotype
 
-| F-Key                                                     | Name                 | Type    | Description         |
-| --------------------------------------------------------- | -------------------- | ------- | ------------------- |
-|                                                           | feature_phenotype_id | serial  | _PRIMARY KEY_       |
-| [feature](Chado_Tables#Table:_feature "Chado Tables")     | feature_id           | integer | _UNIQUE#1 NOT NULL_ |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                     | Name                 | Type    | Description         | --------------------------------------------------------- | -------------------- | ------- | ------------------- |                                                           | feature_phenotype_id | serial  | _PRIMARY KEY_       | [feature](Chado_Tables#Table:_feature "Chado Tables")     | feature_id           | integer | _UNIQUE#1 NOT NULL_ | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_phenotype Structure
 
@@ -131,11 +127,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: phenotype_cvterm
 
-| F-Key                                                     | Name                | Type    | Description         |
-| --------------------------------------------------------- | ------------------- | ------- | ------------------- |
-|                                                           | phenotype_cvterm_id | serial  | _PRIMARY KEY_       |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id        | integer | _UNIQUE#1 NOT NULL_ |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | cvterm_id           | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                     | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phenotype_cvterm_id | serial  | _PRIMARY KEY_       | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | cvterm_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phenotype_cvterm Structure
 

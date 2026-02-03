@@ -3,12 +3,10 @@ title: "GMOD Online Training 2014/MAKER Tutorial"
 ---
 # GMOD Online Training 2014/MAKER Tutorial
 
-
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
   
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -107,7 +105,6 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
     Installation](#User_Interface_for_Local_MAKER_Installation)
   - [MAKER
     Accessory Scripts](#MAKER_Accessory_Scripts)
-
 
 ## About MAKER
 
@@ -262,7 +259,6 @@ how to start a MAKER job via MPI.
 
 ## User Interface for Local MAKER Installation
 
-
 This example did not work during class because a conflict with the
 version of Apache that was installed. The issue has since been fixed.
 Before beginning the example, open a terminal and remove the following
@@ -278,7 +274,6 @@ Then update maker via subversion.
 ``` enter
  svn update ~/Documents/Software/maker/
 ```
-
 
 The MWAS interface provides a very convenient method for running MAKER
 and viewing results; however, because compute resources are limited

@@ -3,14 +3,11 @@ title: "Category%253AEducation and Outreach"
 ---
 # Category%253AEducation and Outreach
 
-
 Pages related to GMOD Education and Outreach.
-
 
 ## Pages in category "Education and Outreach"
 
 The following 24 pages are in this category, out of 24 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -99,7 +96,6 @@ title="Training and Outreach">Training and Outreach</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Education and Outreach"
 

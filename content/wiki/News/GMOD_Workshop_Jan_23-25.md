@@ -3,12 +3,10 @@ title: "News/GMOD Workshop Jan 23-25"
 ---
 # News/GMOD Workshop Jan 23-25
 
-
 <a href="http://evomics.org/workshops/advanced-topics/gmod/"
 rel="nofollow" title="GMOD Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/CeskyKrumlov.jpg" width="170"
 height="133" alt="GMOD Workshop" /></a>
-
 
 A <a href="http://evomics.org/workshops/advanced-topics/gmod/"
 class="external text" rel="nofollow">GMOD Workshop</a> is being held
@@ -48,10 +46,8 @@ application as well.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

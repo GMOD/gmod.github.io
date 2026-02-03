@@ -3,12 +3,10 @@ title: "News/Openings at Syngenta"
 ---
 # News/Openings at Syngenta
 
-
 <a href="http://www.syngentacareers.com/listing/" rel="nofollow"
 title="Openings at Syngenta"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e5/SyngentaLogo.png" width="129"
 height="43" alt="Openings at Syngenta" /></a>
-
 
 There are two openings at
 <a href="http://www.syngentacareers.com/listing/" class="external text"
@@ -49,10 +47,8 @@ of additional GMOD tools. See the links for more details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

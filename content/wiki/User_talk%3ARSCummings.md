@@ -3,7 +3,6 @@ title: "User talk:RSCummings"
 ---
 # User talk:RSCummings
 
-
 I may or may not want to add this as a guideline to JBrowseDev/Upcoming
 at some point:
 

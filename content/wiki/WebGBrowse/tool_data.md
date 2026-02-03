@@ -3,7 +3,6 @@ title: "WebGBrowse/tool data"
 ---
 # WebGBrowse/tool data
 
-
 This page stores the data that populates the
 [WebGBrowse](../WebGBrowse.1 "WebGBrowse") wiki page.
 
@@ -50,12 +49,9 @@ rel="nofollow">WebGBrowse at CGB</a>.
 
 \| screenshot =
 
-
 <a href="../File:WebGBrowseAddTrack.jpg" class="image"></a>
 
-
 _Add new track_ dialog in WebGBrowse
-
 
 \| public_server =
 <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
@@ -73,7 +69,6 @@ dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req = \|
 install = \| config = \| doc = Information on
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> is available in several places:
-
 
 - [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
 - [GMOD

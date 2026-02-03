@@ -3,15 +3,12 @@ title: "Category%253ANatural Diversity"
 ---
 # Category%253ANatural Diversity
 
-
 This category covers any development related to Natural Diversity a.k.a.
 Population Biology/Genetics/Genomics.
-
 
 ## Pages in category "Natural Diversity"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### C
 

@@ -3,7 +3,6 @@ title: "Category%253A2011 Spring Training"
 ---
 # Category%253A2011 Spring Training
 
-
 Courses that were taught at the [2011 GMOD Spring
 Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
 
@@ -13,11 +12,9 @@ Spring
 Training](VMware_2011_Spring_Training "VMware 2011 Spring Training")
 page.
 
-
 ## Pages in category "2011 Spring Training"
 
 The following 14 pages are in this category, out of 14 total.
-
 
 <table style="width: 100%;">
 <colgroup>

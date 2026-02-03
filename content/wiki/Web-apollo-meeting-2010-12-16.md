@@ -3,7 +3,6 @@ title: "Web-apollo-meeting-2010-12-16"
 ---
 # Web-apollo-meeting-2010-12-16
 
-
 ## Agenda items
 
 ## Minutes

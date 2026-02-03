@@ -3,26 +3,21 @@ title: "Category%253ACMap"
 ---
 # Category%253ACMap
 
-
 [CMap](CMap.1 "CMap") is a web-based tool that allows users to view
 comparisons of genetic and physical maps. The package also includes
 tools for curating map data.
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "CMap"
 
 The following 14 pages are in this category, out of 14 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -79,7 +74,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "CMap"
 
@@ -408,13 +402,4 @@ The following 14 files are in this category, out of 14 total.
 
   [PeanutBase PAG2015
   Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")  
-  3.35 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  3.35 MB

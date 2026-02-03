@@ -3,7 +3,6 @@ title: "Category%253AGMOD virtual server"
 ---
 # Category%253AGMOD virtual server
 
-
 GMOD virtual servers are ready-to-go software toolkits that allow a user
 to get up and running with a minimum of time and trouble. They feature a
 range of GMOD components installed on a virtual machine; the user just
@@ -19,11 +18,9 @@ Poster from [PAG 2014](PAG_2014 "PAG 2014"):
 title="Gitc-giab-poster.pdf">GMOD in the Cloud and GMOD in a Box:
 Instant Virtual Servers for Genomics Data</a>
 
-
 ## Pages in category "GMOD virtual server"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### C
 

@@ -3,7 +3,6 @@ title: "News/GMOD-JBrowse 2016 Survey"
 ---
 # News/GMOD-JBrowse 2016 Survey
 
-
 Hello Genome Informaticians,
 
 The following survey is aimed at users (and potential users) of GMOD
@@ -21,10 +20,8 @@ Thanks & best wishes, The JBrowse team
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/09/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

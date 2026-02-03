@@ -3,7 +3,6 @@ title: "User%253ABilardi"
 ---
 # User%253ABilardi
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />

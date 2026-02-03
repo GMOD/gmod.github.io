@@ -3,7 +3,6 @@ title: "News/Chado 1.23 released"
 ---
 # News/Chado 1.23 released
 
-
 From [Scott Cain](../User%253AScott "User%253AScott"):
 
 I've just released Chado 1.23. This is a bug fix release with no changes
@@ -40,6 +39,5 @@ Here are the changes from the last release:
   except what goes in GMOD_ROOT).
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/12/13*

@@ -3,7 +3,6 @@ title: "Migrating from GBrowse to JBrowse"
 ---
 # Migrating from GBrowse to JBrowse
 
-
   consider</span>](#Things_to_consider)
   - [New or
     Existing Server](#New_or_Existing_Server)
@@ -21,13 +20,11 @@ title: "Migrating from GBrowse to JBrowse"
   - [Mapping
     out GBrowse to JBrowse
     configuration](#Mapping_out_GBrowse_to_JBrowse_configuration)
-    - [Special note about
-      callbacks](#Special_note_about_callbacks)
+    - 
 - [Dealing with
   binary data](#Dealing_with_binary_data)
 - [Where to get
   help](#Where_to_get_help)
-
 
 ## Things to consider
 

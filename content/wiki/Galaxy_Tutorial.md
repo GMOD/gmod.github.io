@@ -3,16 +3,13 @@ title: "Galaxy Tutorial 2013"
 ---
 # Galaxy Tutorial 2013
 
-
 (Redirected from [Galaxy
 Tutorial](/wiki/Galaxy_Tutorial)
-
 
 This walks you through setting up and running a
 [Galaxy](Galaxy.1 "Galaxy") server. This tutorial will be taught by
 [Dave Clements](User%253AClements "User%253AClements") at the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School").
-
 
   20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
 - [Starting
@@ -69,7 +66,6 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School").
 - [Running Galaxy
   on the Cloud](#Running_Galaxy_on_the_Cloud)
 
-
 <a href="http://galaxyproject.org/" class="external text"
 rel="nofollow">Galaxy</a> is a data integration and analysis framework
 for biomedical research. Galaxy allows nearly any tool that can be run
@@ -88,12 +84,7 @@ this tutorial, but is used in Galaxy to upload large files, is on ports
 **Security Groups**, *select* the group you are using, and then *click*
 the **Inbound** tab and then add
 
-
-| Create a new rule | Port range | Source    |
-|-------------------|------------|-----------|
-| Custom TCP Rule   | 8081       | 0.0.0.0/0 |
-| Custom TCP Rule   | 20-21      | 0.0.0.0/0 |
-
+| Create a new rule | Port range | Source    |-------------------|------------|-----------| Custom TCP Rule   | 8081       | 0.0.0.0/0 | Custom TCP Rule   | 20-21      | 0.0.0.0/0 |
 
 *Click* **+ Add rule** after each, and then **Apply Rule Changes** after
 all have been added.
@@ -148,7 +139,6 @@ class="external text" rel="nofollow">Galaxy Admin and Development
 Search</a>  
 Search online resources related to *deploying and developing* Galaxy
 
-
 Results from searches are often further broken down into categories
 
 - **All**: give me everything
@@ -162,7 +152,6 @@ Results from searches are often further broken down into categories
 - **Requests**: Should feature requests related to my search.
 
 This is all implemented using Google Custom Search.
-
 
 <a href="https://wiki.galaxyproject.org/Mailing%20Lists"
 class="external text" rel="nofollow">Mailing Lists</a> and <a href="http://galaxyproject.org/search/mailinglists"
@@ -182,10 +171,8 @@ publications*
 
 ## Create a Galaxy instance
 
-
 See <a href="http://getgalaxy.org" class="external free"
 rel="nofollow">http://getgalaxy.org</a>.
-
 
 ### Prerequisites
 
@@ -218,7 +205,6 @@ bedtools package, and install
 <a href="https://code.google.com/p/bedtools/downloads/list"
 class="external text" rel="nofollow">a newer one</a>.
 
-
 **DO NOT DO THIS NOW** as it has already been done on your image:
 
 Remove the old version, get the new version, unpack and compile it, and
@@ -234,13 +220,11 @@ then put it where it can be found.
  $ sudo cp -i bin/* /usr/bin
 ```
 
-
 ### Clone the Galaxy repository
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
 rel="nofollow">bitbucket hosting service</a>.
-
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
 
@@ -252,7 +236,6 @@ To create a local clone of the release repository run the following:
  $ cd galaxy-dist
  $ hg update stable
 ```
-
 
 ### Update Galaxy Configuration File
 
@@ -307,11 +290,9 @@ Actually use something shorter.
 
 ### Use a more robust database
 
-
 See <a
 href="https://wiki.galaxyproject.org/Admin/Config/Performance/Production%20Server"
 class="external text" rel="nofollow">Production Server</a>
-
 
 Out of the box Galaxy includes the embedded
 <a href="http://sqlite.org/" class="external text" rel="nofollow">SQLite
@@ -381,10 +362,8 @@ your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 
 ## Running analyses with Galaxy
 
-
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>
-
 
 Without any additional configuration, there is already a lot we can do
 with our first Galaxy instance. As an example, let's work through an
@@ -421,7 +400,6 @@ of it, users need to register.
 
 Now that Galaxy is up and running, let's use it to answer a question
 
-
 We scooped up an unknown beast out of the slime and sent it off to the
 sequencing core to get it sequenced and an assembly so we can study it.
 Turns out it's an archaea, and it's new. We have subsequently run the
@@ -430,7 +408,6 @@ potential transcription binding sites (TFBSs) using another pipeline.
 
 What we now want to know is: which exons/genes have the most overlapping
 / embedded TFBSs?
-
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GMOD2013Galaxy101.pdf"
 class="internal" title="GMOD2013Galaxy101.pdf">Slides</a>
@@ -512,9 +489,7 @@ that have that gene name.
 If we were to now to run **Tools → Filter and Sort → Sort** on this
 dataset, we would have the answer to our original question:
 
-
 Which genes have the most overlapping TFBS?
-
 
 We have the list of genes, and the counts in them. We could use this
 dataset in further analysis, email it someone, etc..
@@ -567,9 +542,7 @@ We can now visualize our results in Galaxy. Click on the **visualize
 
 You may have noticed that In the preview of each dataset it shows
 
-
 database: ?
-
 
 The *database* (also referred to as a *build*) specifies which *genome
 assembly* this dataset is associated with. A genome assembly is usually
@@ -678,12 +651,10 @@ an **Admin** link in the top menu bar. Click on it, and then **Tool
 sheds → Search and browse tool sheds → Galaxy Main Tool Shed**. Search
 for "venn".
 
-
 An error occurred with this dataset: Traceback (most recent call last):
 File
 "/home/ubuntu/Galaxy/shed_tools/toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/c96bef0643dc/venn_list/tools/plotting/venn_list.py",
 line 13, in import rpy ImportError: No module named rpy
-
 
 Do a web search for rpy debian package
 

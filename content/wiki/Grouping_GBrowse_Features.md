@@ -3,7 +3,6 @@ title: "Grouping GBrowse Features"
 ---
 # Grouping GBrowse Features
 
-
 [GBrowse](GBrowse.1 "GBrowse") recognizes the concept of a "group" of
 related features that are connected by dotted lines. The canonical
 example is a pair of ESTs that are related by being from the two ends of
@@ -69,8 +68,3 @@ class="external text" rel="nofollow">wiggle format</a>. Please see
 [GBrowse/Uploading Wiggle
 Tracks](GBrowse/Uploading_Wiggle_Tracks "GBrowse/Uploading Wiggle Tracks")
 for instructions.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")

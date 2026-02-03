@@ -3,7 +3,6 @@ title: "News/Job Openings with GnpAnnot"
 ---
 # News/Job Openings with GnpAnnot
 
-
 <a href="http://urgi.versailles.inra.fr/projects/GnpAnnot/"
 class="external text" rel="nofollow">GnpAnnot</a>, an
 <a href="http://www.inra.fr/" class="external text"
@@ -14,15 +13,12 @@ databases.
 
   
 
-
 1st Position: IRISA
-
 
 <a href="http://www.irisa.fr/home_html-en?set_language=en"
 rel="nofollow" title="IRISA"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/29/IRISALogo.jpg" width="143" height="25"
 alt="IRISA" /></a>
-
 
 18 month position for a Java programmer
 
@@ -55,16 +51,13 @@ rel="nofollow">fabrice.legeai@rennes.inra.fr</a>
 
   
 
-
 2nd Position: INRA-URGI
-
 
 <a href="http://urgi.versailles.inra.fr/" rel="nofollow"
 title="URGI"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Urgi.png/170px-Urgi.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Urgi.png/255px-Urgi.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/Urgi.png 2x"
 width="170" height="116" alt="URGI" /></a>
-
 
 One year object-oriented programmer (Java, Perl Object)
 
@@ -110,10 +103,8 @@ yourself when you see her.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

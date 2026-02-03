@@ -3,15 +3,12 @@ title: "Category%253AGMOD Web Site"
 ---
 # Category%253AGMOD Web Site
 
-
 These pages are about the GMOD web site itself, rather than about the
 GMOD project *per se*.
-
 
 ## Subcategories
 
 This category has the following 4 subcategories, out of 4 total.
-
 
 ### N
 
@@ -27,11 +24,9 @@ This category has the following 4 subcategories, out of 4 total.
 
 - [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")
 
-
 ## Pages in category "GMOD Web Site"
 
 The following 9 pages are in this category, out of 9 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -82,8 +77,3 @@ title="Wiki linking style guide">Wiki linking style guide</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")

@@ -3,10 +3,8 @@ title: "Version Control System Access"
 ---
 # Version Control System Access
 
-
 (Redirected from
 [Subversion](/wiki/Subversion)
-
 
 *Subversion* (often abbreviated *SVN* is the *source code control*
 system used by most of GMOD. Source code control systems, also known as
@@ -30,7 +28,6 @@ wait for the next official release. Please note, however, that
 components pulled from SVN are **development** versions, and may not
 always work as expected.
 
-
   Repositories</span>](#Browsing_SVN_Repositories)
 - [SVN Read-only
   Access](#SVN_Read-only_Access)
@@ -38,7 +35,6 @@ always work as expected.
   Access](#SVN_Developer_Access)
 - [Legacy CVS
   Read-only Access](#Legacy_CVS_Read-only_Access)
-
 
 ## Browsing SVN Repositories
 
@@ -69,14 +65,12 @@ administrator must have granted you write access to the repository.
 
 ## Legacy CVS Read-only Access
 
-
 GMOD has migrated all projects from CVS to
 <a href="http://subversion.tigris.org/" class="external text"
 rel="nofollow">Subversion</a> as of September 15, 2009. See the [CVS to
 Subversion
 Conversion](CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
 page.
-
 
 The old GMOD [CVS](Glossary#CVS "Glossary") repositories can be checked
 out through anonymous (pserver) CVS with the following instruction set.
@@ -105,8 +99,3 @@ repository since the last update).
 GMOD CVS repositories can also be browsed on the web:
 <a href="http://gmod.cvs.sourceforge.net/gmod/" class="external free"
 rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/</a>.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")

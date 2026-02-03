@@ -3,7 +3,6 @@ title: "GBrowse karyotype ideogram.pl"
 ---
 # GBrowse karyotype ideogram.pl
 
-
 # How to get cytoband data for the ideogram glyph of [GBrowse_karyotype](GBrowse_karyotype "GBrowse karyotype")
 
 ## perl script
@@ -13,7 +12,6 @@ title: "GBrowse karyotype ideogram.pl"
 - Below is a perl script that can be used to grab the cytoband data from
   ensembl's public ftp server at ensembldb.ensembl.org.
 - It is included with the GBrowse_karyotype distribution
-
 
 ``` de1
 #!/usr/bin/perl -w
@@ -114,7 +112,6 @@ print "##gff-version 3\n";
 print "#Source ENSEMBL database: $database\n";
 print $segments,$chroms,$gff;
 ```
-
 
 ## Other information
 

@@ -3,11 +3,9 @@ title: "User%253ANLWashington"
 ---
 # User%253ANLWashington
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b0/NLW_pic.jpg" width="136" height="145"
 alt="This is Nicole" />
-
 
 I am a Research Scientist working with the
 <a href="http://berkeleybop.org" class="external text"

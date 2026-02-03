@@ -3,7 +3,6 @@ title: "GMOD RPC API"
 ---
 # GMOD RPC API
 
-
   Status</span>](#Document_Status)
 - [Background](#Background)
 - [Members](#Members)
@@ -129,7 +128,6 @@ title: "GMOD RPC API"
       - [FASTA Result:](#FASTA_Result:)
 - [TODO](#TODO)
 
-
 ## Document Status
 
 In progress.
@@ -196,7 +194,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -219,7 +216,6 @@ XML
     </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -293,7 +289,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -322,7 +317,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -408,7 +402,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -428,7 +421,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -497,7 +489,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -526,7 +517,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -614,7 +604,6 @@ XML
 
 ##### XML Result:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -640,7 +629,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -714,7 +702,6 @@ XML
 
 ##### XML Result:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -749,7 +736,6 @@ XML
 ...
 </resultset>
 ```
-
 
 ##### JSON Result
 

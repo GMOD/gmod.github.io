@@ -3,7 +3,6 @@ title: "Talk%253ALuceGene"
 ---
 # Talk%253ALuceGene
 
-
 But can anyone else use EB-eye to run their own engine? I sent the
 following inquiry to the EBI team on 2007-08-22 and have received no
 response so far.

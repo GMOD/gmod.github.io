@@ -3,7 +3,6 @@ title: "News/2009 GMOD Survey Results"
 ---
 # News/2009 GMOD Survey Results
 
-
 The [results of the 2009 GMOD Community
 Survey](../2009_GMOD_Community_Survey "2009 GMOD Community Survey") are
 now available online. This year's survey focused on genomic and
@@ -53,10 +52,8 @@ Thanks to everyone who took the time to participate in the survey.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

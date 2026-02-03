@@ -3,12 +3,10 @@ title: "News/Modware Status Update"
 ---
 # News/Modware Status Update
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e3/ModwareLogo.png/200px-ModwareLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e3/ModwareLogo.png/300px-ModwareLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/ModwareLogo.png 2x"
 width="200" height="106" alt="Modware Middleware" />](../Modware "Modware Middleware")
-
 
 Good news and update on the current status of
 [Modware](../Modware "Modware") development. Modware is getting back on
@@ -45,10 +43,8 @@ rel="nofollow">dictyBase</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

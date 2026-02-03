@@ -3,11 +3,9 @@ title: "News/Openings @ Xenbase"
 ---
 # News/Openings @ Xenbase
 
-
 <a href="http://xenbase.org" rel="nofollow" title="Xenbase"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/XenbaseLogo.png" width="256"
 height="48" alt="Xenbase" /></a>
-
 
 We have two openings (ID <a
 href="http://careers.peopleclick.com/careerscp/client_uofc/external/gateway.do?functionName=viewFromLink&amp;jobPostId=10725&amp;localeCode=en-us"
@@ -36,10 +34,8 @@ rel="nofollow">Xenbase</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/10*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

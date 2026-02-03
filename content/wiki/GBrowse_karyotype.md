@@ -3,7 +3,6 @@ title: "GBrowse karyotype"
 ---
 # GBrowse karyotype
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Gbrowse_karyotype_labels.png" width="537"
 height="200" alt="Gbrowse karyotype labels.png" />
@@ -36,8 +35,3 @@ demo installation</a>
 link](GBrowse_karyotype_ideogram.pl "GBrowse karyotype ideogram.pl") for
 an example of a Perl script that will download and format cytband data
 from EnsEMBL
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")

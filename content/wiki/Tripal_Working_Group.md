@@ -3,7 +3,6 @@ title: "Tripal Working Group"
 ---
 # Tripal Working Group
 
-
 <table
 style="font-size: 160%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -36,12 +35,10 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 
   
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
 width="200" height="60" alt="Tripal" />](Tripal.1 "Tripal")
-
 
 There will be a [Satellite
 Meeting](January_2010_GMOD_Meeting#Satellite_Meetings "January 2010 GMOD Meeting")
@@ -57,10 +54,7 @@ is encouraged to attend.
 
 The working group will meet:
 
-|        |                                                     |
-|--------|-----------------------------------------------------|
-| Time:  | **4-6pm, Wednesday, January 13.**                   |
-| Venue: | **Lobby of the Town and Country Convention Center** |
+|--------|-----------------------------------------------------| Time:  | **4-6pm, Wednesday, January 13.**                   | Venue: | **Lobby of the Town and Country Convention Center** |
 
 This is between the end of content at [PAG 2010](PAG_2010 "PAG 2010")
 and the PAG conference dinner. We may lose wireless halfway through the
@@ -71,15 +65,9 @@ meeting.
 If you are interested, please add your name below. You may also want to
 subscribe to the Tripal mailing list.
 
-| Name | Email | Affiliation | Comments |
-|----|----|----|----|
-| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">CUGI</a> |  |
-| Meg Staton | mestato\<\*\>yahoo.com | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">CUGI</a> |  |
-| Sook Jung | sook\<\*\>bioinfo.wsu.edu | Washington State University, <a href="http://www.bioinfo.wsu.edu/gdr/" class="external text"
-rel="nofollow">GDR</a> |  |
-| [Michael Caudy](User%253AMcaudy "User%253AMcaudy") | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"
-rel="nofollow">Reactome</a> |  |
-| [Dave Clements](User%253AClements "User%253AClements") | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a> |  |
+| Name | Email | Affiliation | Comments |----|----|----|----| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text"
+rel="nofollow">CUGI</a> | Meg Staton | mestato\<\*\>yahoo.com | <a href="http://www.genome.clemson.edu/" class="external text"
+rel="nofollow">CUGI</a> | Sook Jung | sook\<\*\>bioinfo.wsu.edu | Washington State University, <a href="http://www.bioinfo.wsu.edu/gdr/" class="external text"
+rel="nofollow">GDR</a> | [Michael Caudy](User%253AMcaudy "User%253AMcaudy") | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"
+rel="nofollow">Reactome</a> | [Dave Clements](User%253AClements "User%253AClements") | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
+rel="nofollow">NESCent</a>

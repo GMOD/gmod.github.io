@@ -3,13 +3,11 @@ title: "News/Ergatis Update"
 ---
 # News/Ergatis Update
 
-
 <a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btq167v1"
 rel="nofollow" title="Ergatis Paper in Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/BionformaticsCover.gif" width="134"
 height="175" alt="Ergatis Paper in Bioinformatics" /></a>
-
 
 The paper "<a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btq167v1"
@@ -45,10 +43,8 @@ biologists with specific pipeline needs.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

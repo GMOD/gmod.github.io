@@ -3,10 +3,8 @@ title: "JBrowseDev/The ClientConfig Option"
 ---
 # JBrowseDev/The ClientConfig Option
 
-
 The `--clientConfig` option can be used to customize the appearance of a
 non-quantitative feature tracks.
-
 
   Representations of Non-Quantitative Tracks in
   JBrowse](#Representations_of_Non-Quantitative_Tracks_in_JBrowse)
@@ -20,7 +18,6 @@ non-quantitative feature tracks.
 - [Examples](#Examples)
 - [See
   also](#See_also)
-
 
 # Representations of Non-Quantitative Tracks in JBrowse
 
@@ -61,28 +58,14 @@ You can think of clientConfig as being "an option with sub-options." Any
 (or all) of these options can be omitted. Here is a list of them, along
 with descriptions:
 
-| Option | Description |
-|----|----|
-| featureCss | CSS configuration edits for the features. Overrides any configuration in genome.css. |
-| histCss | CSS configuration edits for the histogram. Overrides any configuration in genome.css. |
-| histScale | A number that defines the zoom levels at which the individual features are replaced with the histogram (or vice versa). For higher histScale values, the histogram representation will be used at more zoom levels (it will be necessary to zoom in more in order to view the feature representation). The default value is 4. |
-| labelScale | A number that defines the zoom level at which the labels begin to be visible. Decreasing this value causes the feature label visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 50. |
-| subfeatureScale | A number that defines the zoom level at which the subfeatures begin to be visible. Decreasing this value causes the subfeature visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 80. |
+| Option | Description |----|----| featureCss | CSS configuration edits for the features. Overrides any configuration in genome.css. | histCss | CSS configuration edits for the histogram. Overrides any configuration in genome.css. | histScale | A number that defines the zoom levels at which the individual features are replaced with the histogram (or vice versa). For higher histScale values, the histogram representation will be used at more zoom levels (it will be necessary to zoom in more in order to view the feature representation). The default value is 4. | labelScale | A number that defines the zoom level at which the labels begin to be visible. Decreasing this value causes the feature label visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 50. | subfeatureScale | A number that defines the zoom level at which the subfeatures begin to be visible. Decreasing this value causes the subfeature visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 80. |
 
 # Relevant CSS Attributes to be used with featureCss and histCss
 
 With the exception of the height attribute, all of these can be used
 with both featureCss and histCss:
 
-| Option | Description | Input |
-|----|----|----|
-| height | The top to bottom height of each feature. | Some number of pixels (e.g., 5px). Do not edit the height property for histCss. Changing it will cause each of the histogram bars to be set to the same height. |
-| background-color | the background color of each feature or each bar of the histogram. | A RGB hexadecimal color code (e.g. \#A4C or \#8FA366). |
-| background-image | An image to use as the background for the features or histogram bars. | A path to an image file, with the syntax: url(\<path/to/image\>). |
-| background-repeat | Describes how repetition of a background image will occur, if at all. | One of these: repeat, repeat-x, repeat-y, no-repeat. |
-| border-style | The type of border each feature or histogram bar has. | One of these: solid, dotted, dashed, double, groove, ridge, inset, outset. |
-| border-color | The border color of a feature or histogram bar. | A RGB hexadecimal color code (e.g. \#A4C or \#8FA366). |
-| border-width | The thickness of the border for a feature or histogram bar. | Some number of pixels (e.g., 1px). |
+| Option | Description | Input |----|----|----| height | The top to bottom height of each feature. | Some number of pixels (e.g., 5px). Do not edit the height property for histCss. Changing it will cause each of the histogram bars to be set to the same height. | background-color | the background color of each feature or each bar of the histogram. | A RGB hexadecimal color code (e.g. \#A4C or \#8FA366). | background-image | An image to use as the background for the features or histogram bars. | A path to an image file, with the syntax: url(\<path/to/image\>). | background-repeat | Describes how repetition of a background image will occur, if at all. | One of these: repeat, repeat-x, repeat-y, no-repeat. | border-style | The type of border each feature or histogram bar has. | One of these: solid, dotted, dashed, double, groove, ridge, inset, outset. | border-color | The border color of a feature or histogram bar. | A RGB hexadecimal color code (e.g. \#A4C or \#8FA366). | border-width | The thickness of the border for a feature or histogram bar. | Some number of pixels (e.g., 1px). |
 
 # Examples
 
@@ -147,7 +130,6 @@ subfeatureScale and histScale.
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

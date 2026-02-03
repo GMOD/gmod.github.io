@@ -3,7 +3,6 @@ title: "Interface test"
 ---
 # Interface test
 
-
 Meeting Report [Model Organism Database User Interface
 Caucus](MOD_User_Interface_Caucus "MOD User Interface Caucus") January
 18, 2007 Town and Country Hotel, San Diego, CA, USA
@@ -74,7 +73,6 @@ Ideas for future development
 
 *more here ..*
 
-
   Summary</span>](#Executive_Summary)
 - [In
   attendance](#In_attendance)
@@ -110,7 +108,6 @@ Ideas for future development
     Discussion](#General_Discussion)
   - [Implementation
     Techniques](#Implementation_Techniques)
-
 
 #  In attendance
 

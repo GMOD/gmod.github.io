@@ -3,7 +3,6 @@ title: "Face Caucus SGN: Associating Solanaceae loci with phenotype"
 ---
 # Face Caucus SGN: Associating Solanaceae loci with phenotype
 
-
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f4/Mod-face-07jan-SGN.pdf"
 class="internal" title="Mod-face-07jan-SGN.pdf">SGN: Associating
 Solanaceae loci with phenotypes</a>

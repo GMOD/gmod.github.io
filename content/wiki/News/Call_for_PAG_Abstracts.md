@@ -3,7 +3,6 @@ title: "News/Call for PAG Abstracts"
 ---
 # News/Call for PAG Abstracts
 
-
 ## Call for PAG Abstracts
 
 Time is short!
@@ -24,10 +23,8 @@ Please consider giving a talk and sharing your experience and ideas!
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/11/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

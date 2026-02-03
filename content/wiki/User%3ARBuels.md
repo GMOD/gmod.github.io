@@ -3,10 +3,8 @@ title: "User%253ARobertBuels"
 ---
 # User%253ARobertBuels
 
-
 (Redirected from
 [User%253ARBuels](/wiki/User%253ARBuels)
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fa/Rbuels_and_pretty_flowers.jpg/300px-Rbuels_and_pretty_flowers.jpg"

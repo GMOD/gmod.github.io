@@ -10,8 +10,7 @@ alternative way to navigate the web site, and editors are
 add tags when they create or modify pages. We strive for each page have
 at least one category tag.
 
-There is also a list of [pages without any category
-tags](Special%253AUncategorizedPages "Special%253AUncategorizedPages").
+There is also a list of .
 
 ## Category <a href="http://en.wikipedia.org/wiki/Tag_Cloud" class="extiw"
 

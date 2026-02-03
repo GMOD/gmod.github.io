@@ -3,7 +3,6 @@ title: "News/Bio%253A%253AChado%253A%253ASchema 0.05 Released"
 ---
 # News/Bio%253A%253AChado%253A%253ASchema 0.05 Released
 
-
 I'd like to announce a new
 [Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema")
 release, version 0.05. Changes in this release:
@@ -31,10 +30,8 @@ what it's for.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

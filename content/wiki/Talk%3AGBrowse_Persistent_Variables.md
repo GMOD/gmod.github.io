@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Persistent Variables"
 ---
 # Talk%253AGBrowse Persistent Variables
 
-
 How about making the list into a table?
 --[DanBolser](User%253ADanBolser "User%253ADanBolser") 08:19, 13 August 2010
 (UTC)

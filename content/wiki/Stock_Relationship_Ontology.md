@@ -3,10 +3,8 @@ title: "Stock Relationship Ontology"
 ---
 # Stock Relationship Ontology
 
-
 This page serves as an initial draft of the nascent Stock Relationship
 Ontology.
-
 
   page</span>](#Talk_page)
 - [stock
@@ -28,7 +26,6 @@ Ontology.
   types](#nd_assay_stock_types)
 - [nd_assay
   types](#nd_assay_types)
-
 
 ## Talk page
 

@@ -3,10 +3,8 @@ title: "Chado Django HOWTO"
 ---
 # Chado Django HOWTO
 
-
 --Vdejager
 11:07, 1 September 2008 (UTC)
-
 
   with Django HOWTO</span>](#Chado_access_with_Django_HOWTO)
   - [Abstract](#Abstract)
@@ -57,7 +55,6 @@ title: "Chado Django HOWTO"
     interaction](#BioPython_interaction)
   - [Example
     website](#Example_website)
-
 
 # Chado access with Django HOWTO
 
@@ -332,7 +329,6 @@ The resulting files, `models.py` and `admin.py` should be copied to the
 \<app\> directory. Have a look at these files. A model in Django
 representing a database table looks like this:
 
-
 ``` de1
     class Feature(models.Model):
         feature_id = models.IntegerField(primary_key=True)
@@ -349,7 +345,6 @@ representing a database table looks like this:
         timeaccessioned = models.DateTimeField()
         timelastmodified = models.DateTimeField()
 ```
-
 
 ### Creating Model Specific Functions
 
@@ -372,7 +367,6 @@ class="external text" rel="nofollow">package</a> in Python
 
 `modeldefs.py`:
 
-
 ``` de1
     #this file contains all the model methods we will attach to the specific models in the __init__.py file
     # one method may be attached to different model adhering to the DRY principle
@@ -391,11 +385,9 @@ class="external text" rel="nofollow">package</a> in Python
         return self.common_name
 ```
 
-
 ### Attaching the Model Method Definitions to Specific Models
 
 `__init__.py`:
-
 
 ``` de1
     # this file attaches defined methods to specific models
@@ -413,7 +405,6 @@ class="external text" rel="nofollow">package</a> in Python
     setattr(Featureloc, '__unicode__', location)
 ```
 
-
 ### Link Everything Together
 
 Go to your project directory to change the files below:
@@ -423,12 +414,10 @@ Go to your project directory to change the files below:
 The `INSTALLED_APPS` section should contain besides the standard
 settings.
 
-
 ``` de1
     'django.contrib.admin',
     '<project>.<app>.',
 ```
-
 
 *Note the comma at the last item. This is a Python requisite.*
 

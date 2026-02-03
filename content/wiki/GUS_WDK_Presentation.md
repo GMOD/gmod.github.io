@@ -3,13 +3,11 @@ title: "GUS WDK Presentation"
 ---
 # GUS WDK Presentation
 
-
   Overview](#Overview)
 - [The GUS Perl
   Object Layer](#The_GUS_Perl_Object_Layer)
 - [The GUS
   WDK](#The_GUS_WDK)
-
 
   
 
@@ -78,7 +76,6 @@ The WDK's Model is configured in XML. The model author specifies
 
 Here is a sample specification of an ArrayElement entity:
 
-
 ``` de1
 <wdkModel>
 <recordClass idPrefix="" name="ArrayElementRecordClass" type="Array Element">
@@ -133,8 +130,8 @@ Here is a sample specification of an ArrayElement entity:
       <![CDATA[
             SELECT ens.source_id, ed.name as provider, ens.sequence,
                    tn.name as genus_species,
-                   SUBSTR(tn.name, 1, 1) || '. '
-                   || SUBSTR(tn.name, INSTR(tn.name, ' ', 1, 1) +1) as organism
+                   SUBSTR(tn.name, 1, 1) | '. '
+                   | SUBSTR(tn.name, INSTR(tn.name, ' ', 1, 1) +1) as organism
             FROM sres.ExternalDatabase ed, sres.ExternalDatabaseRelease edr,
                  dots.ExternalNASequence ens, sres.TaxonName tn
             WHERE ens.source_id = '$$primaryKey$$'
@@ -145,7 +142,6 @@ Here is a sample specification of an ArrayElement entity:
              ]]>
 ```
 
-
      </sqlQuery>
 
 \</querySet\>
@@ -155,7 +151,6 @@ Here is a sample specification of an ArrayElement entity:
      <sqlQuery name="Genes" isCacheable="false">
        <paramRef ref="params.primaryKey"/>
        <column name="source_id" />
-
 
 ``` de1
     <![CDATA[
@@ -173,7 +168,6 @@ Here is a sample specification of an ArrayElement entity:
              ]]>
 ```
 
-
      </sqlQuery>
 
      <sqlQuery name="GenomicLocations" isCacheable="false">
@@ -184,7 +178,6 @@ Here is a sample specification of an ArrayElement entity:
        <column name="gbrowse_start" />
        <column name="gbrowse_end" />
        <column name="is_reversed" />
-
 
 ``` de1
      <![CDATA[
@@ -213,14 +206,8 @@ Here is a sample specification of an ArrayElement entity:
              ]]>
 ```
 
-
      </sqlQuery>
 
 \</querySet\> \</wdkModel\>
 
 \</syntaxhighlight\>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [ApiDB](Category%253AApiDB "Category%253AApiDB")

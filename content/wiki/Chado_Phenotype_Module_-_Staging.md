@@ -3,11 +3,9 @@ title: "Chado Phenotype Module - Staging"
 ---
 # Chado Phenotype Module - Staging
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="Under Construction" />
-
 
 <span style="font-size: 140%">This page or section is under
 construction.</span>  
@@ -17,7 +15,6 @@ that came out of the [GMOD Evo
 Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"). Please edit the
 table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
-
 
   Introduction](#Introduction)
   - [Phenotypes
@@ -31,7 +28,6 @@ PostgreSQL comments before the next Chado release.
     phenotype_cvterm](#Table:_phenotype_cvterm)
   - [Table:
     phenotypeprop](#Table:_phenotypeprop)
-
 
 # Introduction
 
@@ -66,11 +62,7 @@ page.
 
 ## Table: feature_phenotype
 
-| FK | Name | Type | Description |
-|----|----|----|----|
-|  | feature_phenotype_id | serial | *PRIMARY KEY* |
-| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |----|----|----|----|  | feature_phenotype_id | serial | *PRIMARY KEY* | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.feature_phenotype Structure
 
@@ -190,12 +182,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Deprecated and superseded by phenotypeprop.
 
-| FK | Name | Type | Description |
-|----|----|----|----|
-|  | phenotype_cvterm_id | serial | *PRIMARY KEY* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
-|  | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |----|----|----|----|  | phenotype_cvterm_id | serial | *PRIMARY KEY* | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 public.phenotype_cvterm Structure
 
@@ -275,9 +262,3 @@ Property value is a cvterm.</td>
 public.phenotypeprop Structure
 
 ------------------------------------------------------------------------
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Under
-  Construction](Category%253AUnder_Construction "Category%253AUnder Construction")

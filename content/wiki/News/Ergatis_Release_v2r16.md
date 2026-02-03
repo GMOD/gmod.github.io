@@ -3,7 +3,6 @@ title: "News/Ergatis Release v2r16"
 ---
 # News/Ergatis Release v2r16
 
-
 There has been a new release of
 <a href="../Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
 dependent software packages. The
@@ -35,10 +34,8 @@ class="external text" rel="nofollow">Sourceforge site</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

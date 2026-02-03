@@ -3,17 +3,14 @@ title: "Category%253AExternal"
 ---
 # Category%253AExternal
 
-
 This category is used to tag projects that are described in the GMOD web
 site (and may be used by [GMOD
 Components](GMOD_Components "GMOD Components")), but that are not part
 of the GMOD project.
 
-
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### M
 
@@ -23,11 +20,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
 
-
 ## Pages in category "External"
 
 The following 16 pages are in this category, out of 16 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -90,8 +85,3 @@ bench</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")

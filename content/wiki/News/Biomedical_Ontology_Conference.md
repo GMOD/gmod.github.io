@@ -3,7 +3,6 @@ title: "News/Biomedical Ontology Conference"
 ---
 # News/Biomedical Ontology Conference
 
-
 The <a href="http://icbo.buffalo.edu/" class="external text"
 rel="nofollow">International Conference on Biomedical Ontologies
 (ICBO)</a>, will be held in Buffalo, New York from July 23-26, 2009.
@@ -28,10 +27,8 @@ rel="nofollow">ICBO conference web site</a> for details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

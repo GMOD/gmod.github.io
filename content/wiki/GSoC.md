@@ -3,10 +3,8 @@ title: "GSoC"
 ---
 # GSoC
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg"
 width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](GSoC "GSoC")
-
 
   of Code 2026 @ Open Genome
   Informatics</span>](#Google_Summer_of_Code_2026_.40_Open_Genome_Informatics)
@@ -21,7 +19,6 @@ width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](GSoC "GSoC")
   - [Mentors](#Mentors)
   - [Source
     Code](#Source_Code)
-
 
 ## Google Summer of Code 2026 @ Open Genome Informatics
 

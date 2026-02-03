@@ -3,15 +3,12 @@ title: "Caryoscope"
 ---
 # Caryoscope
 
-
 <a href="http://caryoscope.stanford.edu" rel="nofollow"
 title="Caryoscope"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/CaryoscopeLogo.jpg" width="122"
 height="139" alt="Caryoscope" /></a>
 
-
 Status
-
 
 - **Mature** release
 - **Inactive** development
@@ -24,7 +21,6 @@ expression data in a whole-genome context.
 <a href="http://caryoscope.stanford.edu" class="external text"
 rel="nofollow">Caryoscope Homepage</a>
 
-
   Status](#Status)
 - [Demo &
   Screenshots](#Demo_.26_Screenshots)
@@ -33,7 +29,6 @@ rel="nofollow">Caryoscope Homepage</a>
 - [Publications](#Publications)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Status
 

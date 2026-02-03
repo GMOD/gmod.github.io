@@ -3,7 +3,6 @@ title: "Chaos XML"
 ---
 # Chaos XML
 
-
   Chado</span>](#Chaos-XML_and_Chado)
 - [The Chaos
   Model](#The_Chaos_Model)
@@ -32,7 +31,6 @@ title: "Chaos XML"
     Flattening](#Type_Flattening)
   - [Organism
     Flattening](#Organism_Flattening)
-
 
 ## Chaos-XML and Chado
 

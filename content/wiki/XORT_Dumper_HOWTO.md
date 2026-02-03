@@ -3,7 +3,6 @@ title: "XORT Dumper HOWTO"
 ---
 # XORT Dumper HOWTO
 
-
   Introduction](#Introduction)
 - [Author](#Author)
 - [Prerequisites](#Prerequisites)
@@ -21,7 +20,6 @@ title: "XORT Dumper HOWTO"
   - [CDS](#CDS)
 - [More
   Information](#More_Information)
-
 
 ## Introduction
 
@@ -126,7 +124,6 @@ this HOWTO we are going to dump a simple listing (in ChadoXML format) of
 all the genes in the database. First create an XML dumpspec file called
 genes.xml in your home directory that looks like this:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado dumpspec="genes.xml">
@@ -145,7 +142,6 @@ genes.xml in your home directory that looks like this:
 </chado>
 ```
 
-
 This dumpspec selects all features of type 'gene', that have is_obsolete
 set to false, and also have is_analysis set to false. It then dumps the
 uniquename, name, and seqlen fields from the feature table for these
@@ -158,14 +154,12 @@ use 'like' or regular expression comparison operators. Please refer to
 the [XORT](XORT.1 "XORT") documentation for a full list of supported
 search operators. The SQL version of this dumpspec looks like this:
 
-
 ``` de1
 SELECT f.uniquename, f.name, f.seqlen
        FROM feature f, cvterm cvt
        WHERE f.is_obsolete=FALSE AND f.is_analysis=FALSE AND
              cvterm.name='gene' AND f.type_id=cvt.cvterm_id;
 ```
-
 
 You can execute this dumpspec by running the xort_dump.pl program like
 this:
@@ -187,7 +181,6 @@ want all columns of the featureloc table we will use dump="cols" to tell
 XORT to do this for us. We also want to know which chromosome the gene
 is localized to; this information is obtained by following srcfeature_id
 back to the feature table.
-
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
@@ -214,11 +207,9 @@ back to the feature table.
 </chado>
 ```
 
-
 After running this dumpspec our list of genes should now contain
 information about the fmin, fmax, strand, and chromosome that it is
 localized on. The equivalent SQL for this dumpspec would be this:
-
 
 ``` de1
 SELECT f1.uniquename, f1.name, f1.seqlen, fl.*, f2.uniquename
@@ -228,7 +219,6 @@ SELECT f1.uniquename, f1.name, f1.seqlen, fl.*, f2.uniquename
              f1.feature_id=fl.feature_id AND fl.srcfeature_id=f2.feature_id;
 ```
 
-
 ### CDS
 
 For the last dumpspec we will add CDS information. In the YFGdb Chado
@@ -236,7 +226,6 @@ database, CDS information is associated with gene features via the
 feature_relationship table. The gene is the object, the CDS is the
 subject, and the relationship type is set to 'part_of'. Here is what the
 dumpspec would look like for dumping CDS features:
-
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
@@ -295,7 +284,6 @@ dumpspec would look like for dumping CDS features:
     </feature>
 </chado>
 ```
-
 
 In this dumpspec you can see that feature_relationship is directly
 nested under the gene feature and because subject_id is used directly

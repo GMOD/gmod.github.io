@@ -3,7 +3,6 @@ title: "Bugs"
 ---
 # Bugs
 
-
 The more bugs, the better the project! <a
 href="http://producingoss.com/en/getting-started.html#vc-and-bug-tracker-access#vc-and-bug-tracker-access"
 class="external autonumber" rel="nofollow">[1]</a>
@@ -40,8 +39,3 @@ database.*
 rel="nofollow">Karl Fogel</a>,
 <a href="http://producingoss.com/" class="external text"
 rel="nofollow">How to Run a Successful Free Software Project</a>.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")

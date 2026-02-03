@@ -3,7 +3,6 @@ title: "News/GMOD Europe 2010"
 ---
 # News/GMOD Europe 2010
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/160px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/240px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
@@ -23,7 +22,6 @@ width="170" height="67" alt="BioMart Workshop" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/150px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/225px-Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
 width="150" height="128" alt="September 2010 GMOD Meeting" />](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
-
 
 We are pleased to announce *[GMOD Europe
 2010](../GMOD_Europe_2010 "GMOD Europe 2010")*, four days of GMOD events
@@ -122,10 +120,8 @@ for the meeting.*
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

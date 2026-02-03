@@ -3,7 +3,6 @@ title: "News/GMOD Community Survey Results"
 ---
 # News/GMOD Community Survey Results
 
-
 The [results of the 2008 GMOD Community
 Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey") are
 now available online. The survey was taken by 89 respondents. The survey
@@ -45,10 +44,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/11/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

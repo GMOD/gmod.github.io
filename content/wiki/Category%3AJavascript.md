@@ -3,14 +3,11 @@ title: "Category%253AJavascript"
 ---
 # Category%253AJavascript
 
-
 See also the [AJAX Category](Category%253AAJAX "Category%253AAJAX").
-
 
 ## Pages in category "Javascript"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### G
 
@@ -30,8 +27,3 @@ The following 5 pages are in this category, out of 5 total.
 ### R
 
 - [RubberBandSelection](RubberBandSelection "RubberBandSelection")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")

@@ -3,7 +3,6 @@ title: "GMOD Malaysia 2014/Schedule"
 ---
 # GMOD Malaysia 2014/Schedule
 
-
 GMOD Malaysia 2014 is taking place from February 26th to 28th in Kuala
 Lumpur, Malaysia.
 
@@ -16,17 +15,7 @@ mid-afternoon.
 The following schedule is still tentative and may be changed before the
 course begins.
 
-|  |  |  |
-|----|----|----|
-| Day 1, AM | [GMOD in the Cloud](../Cloud.1 "Cloud"), AWS walkthrough | [Scott Cain](../User%253AScott "User%253AScott") |
-| Day 1, AM | [GFF3](GFF3_Tutorial "GMOD Malaysia 2014/GFF3 Tutorial") | [Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") |
-| Day 1, AM/PM | [MAKER](MAKER_Tutorial "GMOD Malaysia 2014/MAKER Tutorial") | [Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") |
-| Day 1, PM/Day 2 AM | [Tripal](Tripal_Tutorial "GMOD Malaysia 2014/Tripal Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") |
-| Day 2, AM | [Chado](Chado_Tutorial "GMOD Malaysia 2014/Chado Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") |
-| Day 2, AM/PM | [Galaxy](Galaxy_Tutorial "GMOD Malaysia 2014/Galaxy Tutorial") | [Dave Clements](../User%253AClements "User%253AClements") |
-| Day 2, PM | Genome Browsers: [JBrowse](JBrowse_Tutorial "GMOD Malaysia 2014/JBrowse Tutorial") and [GBrowse](GBrowse_Tutorial "GMOD Malaysia 2014/GBrowse Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") |
-| Day 3, AM | [InterMine](Intermine_Tutorial "GMOD Malaysia 2014/Intermine Tutorial") | [Alex Kalderimis](../User%253AAlexkalderimis "User%253AAlexkalderimis") |
-| Day 3, PM | [WebApollo](WebApollo_Tutorial "GMOD Malaysia 2014/WebApollo Tutorial") | [Scott Cain](../User%253AScott "User%253AScott")/[Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") |
+|  |----|----|----| Day 1, AM | [GMOD in the Cloud](../Cloud.1 "Cloud"), AWS walkthrough | [Scott Cain](../User%253AScott "User%253AScott") | Day 1, AM | [GFF3](GFF3_Tutorial "GMOD Malaysia 2014/GFF3 Tutorial") | [Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") | Day 1, AM/PM | [MAKER](MAKER_Tutorial "GMOD Malaysia 2014/MAKER Tutorial") | [Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") | Day 1, PM/Day 2 AM | [Tripal](Tripal_Tutorial "GMOD Malaysia 2014/Tripal Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") | Day 2, AM | [Chado](Chado_Tutorial "GMOD Malaysia 2014/Chado Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") | Day 2, AM/PM | [Galaxy](Galaxy_Tutorial "GMOD Malaysia 2014/Galaxy Tutorial") | [Dave Clements](../User%253AClements "User%253AClements") | Day 2, PM | Genome Browsers: [JBrowse](JBrowse_Tutorial "GMOD Malaysia 2014/JBrowse Tutorial") and [GBrowse](GBrowse_Tutorial "GMOD Malaysia 2014/GBrowse Tutorial") | [Scott Cain](../User%253AScott "User%253AScott") | Day 3, AM | [InterMine](Intermine_Tutorial "GMOD Malaysia 2014/Intermine Tutorial") | [Alex Kalderimis](../User%253AAlexkalderimis "User%253AAlexkalderimis") | Day 3, PM | [WebApollo](WebApollo_Tutorial "GMOD Malaysia 2014/WebApollo Tutorial") | [Scott Cain](../User%253AScott "User%253AScott")/[Michael Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") |
 
 **Please fill out the <a
 href="https://docs.google.com/forms/d/1BB1PUjlEH7NGcUVIWbDC2FBfu1DGMBILARzVNJdzw_4/viewform"
@@ -73,7 +62,6 @@ meetings. I am personally responsible for much of the core query
 features, interface design and the web-services layers. I enjoy working
 with a diverse range of technologies and tools.
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")

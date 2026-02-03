@@ -3,13 +3,11 @@ title: "Modware"
 ---
 # Modware
 
-
 <a href="http://gmod-ware.sourceforge.net/" rel="nofollow"
 title="Modware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e3/ModwareLogo.png/300px-ModwareLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/ModwareLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/ModwareLogo.png 2x"
 width="300" height="158" alt="Modware" /></a>
-
 
   Status](#Status)
 - [Getting
@@ -18,7 +16,6 @@ width="300" height="158" alt="Modware" /></a>
   Wanted](#Feedback_Wanted)
 - [Acknowledgments](#Acknowledgments)
 - [Support](#Support)
-
 
 <a href="http://gmod-ware.sourceforge.net/" class="external text"
 rel="nofollow">Modware</a> is an object-oriented Perl API for
@@ -126,10 +123,7 @@ GM64426 and HG0022.
 
 ## Support
 
-|  |  |  |  |
-|----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users"
+|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users"
 class="external text" rel="nofollow">gmod-ware-users</a> | **Modware** support and developer mailing list. | <a href="http://gmod.827538.n3.nabble.com/Modware-f887754.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"

@@ -350,26 +350,7 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name                                             | URL                                                                |
-| ----------------------------------------------------- | ------------------------------------------------------------------ |
-| Banana Genome Hub                                     | <a href="http://banana-genome.cirad.fr/" class="external free"     |
-| rel="nofollow">http://banana-genome.cirad.fr/</a>     |
-| Pulse Crops Genomics & Breeding                       | <a href="http://knowpulse2.usask.ca/portal/" class="external free" |
-| rel="nofollow">http://knowpulse2.usask.ca/portal/</a> |
-| Genome Database for Vaccinium                         | <a href="http://www.vaccinium.org" class="external free"           |
-| rel="nofollow">http://www.vaccinium.org</a>           |
-| Genome Database for Rosacaee                          | <a href="http://www.rosaceae.org" class="external free"            |
-| rel="nofollow">http://www.rosaceae.org</a>            |
-| Cool Season Food Legume Database                      | <a href="http://www.gabcsfl.org" class="external free"             |
-| rel="nofollow">http://www.gabcsfl.org</a>             |
-| Cacao Genome Database                                 | <a href="http://www.cacaogenomedb.org" class="external free"       |
-| rel="nofollow">http://www.cacaogenomedb.org</a>       |
-| Fagaceae Genome Web                                   | <a href="http://www.fagaceae.org" class="external free"            |
-| rel="nofollow">http://www.fagaceae.org</a>            |
-| Citrus Genome Database                                | <a href="http://www.citrusgenomedb.org" class="external free"      |
-| rel="nofollow">http://www.citrusgenomedb.org</a>      |
-| Marine Genomics Project                               | <a href="http://www.marinegenomics.org" class="external free"      |
-| rel="nofollow">http://www.marinegenomics.org</a>      |
+| Site Name                                             | URL                                                                | ----------------------------------------------------- | ------------------------------------------------------------------ | Banana Genome Hub                                     | <a href="http://banana-genome.cirad.fr/" class="external free"     | rel="nofollow">http://banana-genome.cirad.fr/</a>     | Pulse Crops Genomics & Breeding                       | <a href="http://knowpulse2.usask.ca/portal/" class="external free" | rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium                         | <a href="http://www.vaccinium.org" class="external free"           | rel="nofollow">http://www.vaccinium.org</a>           | Genome Database for Rosacaee                          | <a href="http://www.rosaceae.org" class="external free"            | rel="nofollow">http://www.rosaceae.org</a>            | Cool Season Food Legume Database                      | <a href="http://www.gabcsfl.org" class="external free"             | rel="nofollow">http://www.gabcsfl.org</a>             | Cacao Genome Database                                 | <a href="http://www.cacaogenomedb.org" class="external free"       | rel="nofollow">http://www.cacaogenomedb.org</a>       | Fagaceae Genome Web                                   | <a href="http://www.fagaceae.org" class="external free"            | rel="nofollow">http://www.fagaceae.org</a>            | Citrus Genome Database                                | <a href="http://www.citrusgenomedb.org" class="external free"      | rel="nofollow">http://www.citrusgenomedb.org</a>      | Marine Genomics Project                               | <a href="http://www.marinegenomics.org" class="external free"      | rel="nofollow">http://www.marinegenomics.org</a>      |
 
 ### Resources
 
@@ -3986,16 +3967,13 @@ rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel</a
 and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
 
-[Categories](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [Tripal](../Category%253ATripal "Category%253ATripal")
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
 
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD Malaysia 2014/Tripal
-Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FTripal-20Tutorial "Special%253ABrowse/GMOD-20Malaysia-202014-2FTripal-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|                                                             |                                                                                                                                                                         |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [Tripal](../Tripal.1 "Tripal") <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic "Property:Has topic") | [Tripal](../Tripal.1 "Tripal")  |

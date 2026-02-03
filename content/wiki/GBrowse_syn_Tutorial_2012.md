@@ -3,11 +3,9 @@ title: "GBrowse syn Tutorial 2012"
 ---
 # GBrowse syn Tutorial 2012
 
-
 If you are 2013 GMOD Summer School, you are on the wrong tutorial.  
 Use
 [GBrowse_syn_Tutorial_2013](GBrowse_syn_Tutorial_2013 "GBrowse syn Tutorial 2013").
-
 
   
 This tutorial on [GBrowse syn](GBrowse_syn.1 "GBrowse syn") was taught
@@ -31,7 +29,6 @@ how to get this AMI.
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species. It is included with
 the standard GBrowse package (version 1.69 and later).
-
 
 ## Further Reading
 

@@ -3,7 +3,6 @@ title: "GBrowse syn Tutorial 2011"
 ---
 # GBrowse syn Tutorial 2011
 
-
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
 [GBrowse](GBrowse.1 "GBrowse")-based
 <a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
@@ -19,7 +18,6 @@ the standard GBrowse package (version 1.69 and later).
   class="external text" rel="nofollow">WormBase</a></span>.
 
   
-
 
   GBrowse_syn</span>](#Installing_GBrowse_syn)
 - [Setting up the
@@ -40,28 +38,22 @@ the standard GBrowse package (version 1.69 and later).
     Whole Genome Alignments](#A_Note_on_Whole_Genome_Alignments)
   - [Documentation](#Documentation)
 
-
 # Installing GBrowse_syn
 
 GBrowse_syn is part of the GBrowse 2.0 package and was pre-installed
 when you went through the [GBrowse 2.0
 installation](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
 
-
 **Update:** We will need to update the GBrowse source to include
 features and bug patches not included in the CPAN distribution:
-
 
 - First, update <a href="http://search.cpan.org/perldoc?Bio::Graphics"
   class="external text" rel="nofollow">Bio::Graphics</a>
 
-
     $ sudo cpan -i Bio::Graphics
-
 
 - Then check out a fresh copy of the current GBrowse 2 source code via
   <a href="SVN" class="mw-redirect" title="SVN">subversion (svn)</a>.
-
 
     $ cd /home/gmod/Downloads/sources
     $ svn co https://gmod.svn.sourceforge.net/svnroot/gmod/Generic-Genome-Browser/trunk Generic-Genome-Browser
@@ -71,11 +63,9 @@ features and bug patches not included in the CPAN distribution:
 
 NOTE: use the default options when prompted.
 
-
 Now point your browser to
 <a href="http://localhost/cgi-bin/gb2/gbrowse_syn" class="external free"
 rel="nofollow">http://localhost/cgi-bin/gb2/gbrowse_syn</a>
-
 
   
 

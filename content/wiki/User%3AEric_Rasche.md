@@ -3,12 +3,10 @@ title: "User%253AEric Rasche"
 ---
 # User%253AEric Rasche
 
-
   Contact](#Contact)
 - [Work](#Work)
 - [Education](#Education)
 - [Experience](#Experience)
-
 
 ## Contact
 

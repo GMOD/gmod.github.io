@@ -3,7 +3,6 @@ title: "Sybil Chado Comparative Genomics Data"
 ---
 # Sybil Chado Comparative Genomics Data
 
-
 ## Sybil Chado Comparative Genomics Data storage
 
 This page will detail the TIGR/JCVI/IGS Sybil way of storing comparative

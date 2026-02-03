@@ -3,7 +3,6 @@ title: "InterMine Workshop - GMOD Europe 2010"
 ---
 # InterMine Workshop - GMOD Europe 2010
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -25,7 +24,6 @@ width="300" height="38" alt="InterMine" /></a><br />
 <br />
 <a href="InterMine" title="InterMine">InterMine</a> Workshop
 <hr />
-
 
 15 September 2010<br />
 Cambridge UK<br />

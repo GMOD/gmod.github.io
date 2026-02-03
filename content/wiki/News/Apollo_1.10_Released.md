@@ -3,7 +3,6 @@ title: "News/Apollo 1.10 Released"
 ---
 # News/Apollo 1.10 Released
 
-
 A new version of [Apollo](../Apollo.1 "Apollo") has been released.
 Highlights for this release include:
 
@@ -36,10 +35,8 @@ rel="nofollow">http://apollo.berkeleybop.org/current/install.html</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/03/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,9 +3,7 @@ title: "April 2004 GMOD Meeting"
 ---
 # April 2004 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
-
 
   4</span>](#Meeting_4)
 - [Presentations](#Presentations)
@@ -30,7 +28,6 @@ Generic Model Organism Database Construction Set
     section](#April_28.2C_Combined_Developer_and_Curator_section)
 - [Progress
   reports](#Progress_reports)
-
 
 ## Meeting 4
 
@@ -185,9 +182,7 @@ Medicine)
 
 Mount Vernon Room
 
-|      |                             |
-|------|-----------------------------|
-| 9:00 | GMOD Alpha release, Part II |
+|------|-----------------------------| 9:00 | GMOD Alpha release, Part II |
 
 The goal here is to try to get the gmod alpha installed on computers to
 test the installation and working issues with the release. It is almost
@@ -338,7 +333,6 @@ Scott Cain</td>
     to the database without using an XML intermidary, which will simplify the
     process of sequence annotation considerably.
 
-
     Apollo Progress Report (11/2003 - 4/2004)
 
     Major improvements in release 1.3.6 (11/3/03):
@@ -362,7 +356,6 @@ Scott Cain</td>
     any modifications.
 
     Synteny (see Synteny section at end)
-
 
     Major improvements in release 1.4.0 (internal release) (2/9/2004):
 
@@ -406,7 +399,6 @@ Scott Cain</td>
 
     Fixed updating of peptide sequences.
 
-
     Improvements in releases 1.4.1 (3/12/04) and 1.4.2 (3/18/04):
 
     Red/green markers at axis show where sequence/region ends.
@@ -417,11 +409,9 @@ Scott Cain</td>
     Can now load D. melanogaster data from r3.1 (gadfly) and r3.2 (chado)
     (both via cgi).
 
-
     1.4.3 (4/19/04):
     Let users get the sequence of the entire segment you're looking at, not
     just a rubberbanded section.  [File -> Save sequence]
-
 
     Synteny progress, 11/03-4/04:
 
@@ -450,7 +440,6 @@ Scott Cain</td>
     type in the tiers file. This works with game, in theory could be made to
     work with other adapters that have linked data embedded in the species
     data.
-
 
     Textpresso: A progress report
 
@@ -495,7 +484,6 @@ Scott Cain</td>
     Textpresso paper ... under review
 
     A Textpresso publication is currently under revision.
-
 
     PubFetch/PubTrack Progress Report (April 2004)
 
@@ -605,7 +593,6 @@ Scott Cain</td>
     the GMOD CVS.
     http://cvs.sourceforge.net/viewcvs.py/gmod/pubtrack/
 
-
     PubSearch update
 
     We've migrated our database schema over to one that should be more
@@ -626,7 +613,6 @@ Scott Cain</td>
     generation now works directly from the Java codebase, rather than from an
     external Python script.  We've continued work on a keyword term browser to
     replaced the highly munged version of AmiGO that we are running locally.
-
 
     GBrowse Project
 
@@ -903,7 +889,6 @@ Scott Cain</td>
             WormBase
                     deVGen, Belgium
 
-
     CMAP
     Main developer:     Ken Clark
 
@@ -926,7 +911,6 @@ Scott Cain</td>
     Michelle Bobo: Oregon Health & Science University
     Victor Ulat, Richard Bruskiewich: IRRI
     Matthew Hobbs: University of Sydney (Australia)
-
 
                               Pathway Tools Status Report
                                       Peter Karp
@@ -1006,7 +990,6 @@ Scott Cain</td>
        o Methanococcus janaschii, EBI
          Maine.ebi.ac.uk:1555   (availability intermittent)
 
-
                               Pathway Tools Status Report
                                       Peter Karp
                                     April 20, 2004
@@ -1053,7 +1036,6 @@ Scott Cain</td>
     10. Lisa Herron-Olson     University of Minnesota
     11. Devaki Bhaya      Carnegie Institution
 
-
     Tutorial on April 19-22, 2004
 
     1   Dr. Matthew Berriman    The Wellcome Trust Sanger Institute
@@ -1086,7 +1068,6 @@ Scott Cain</td>
     15  Haluk Resat     Pacific Northwest National Laboratory
     16  Jian Song       Los Alamos National Laboratory
         Pseudomonas aeruginosa
-
 
     GMOD Project Status     April 2004        D. Gilbert (gilbertd@indiana.edu)
 
@@ -1136,7 +1117,6 @@ Scott Cain</td>
     XORT, Chado::DBI, GBrowse, etc. tools for FlyBase and wFleaBase, where
     they now form the basis of data management.
 
-
     GMOD Update from the Saccharomyces Genome Database (SGD)
 
         Before the last GMOD meeting at Berkeley, SGD released several GMOD
@@ -1156,7 +1136,6 @@ Scott Cain</td>
 
         http://seq.yeastgenome.org/cgi-bin/SGD/nph-blast-fungal.pl
 
-
     2. GBrowse at SGD
         GBrowse has been set up at SGD. SGD is still testing the software
     before making a general announcement about the availability of the
@@ -1175,7 +1154,6 @@ Scott Cain</td>
     file is available for download from this URL.
 
         ftp://genome-ftp.stanford.edu/pub/yeast/data_download/chromosomal_feature/SGDGFF3.gff
-
 
     4. SGD Lite and CHADO
         The SGD colony at Princeton has been working on installing GMOD

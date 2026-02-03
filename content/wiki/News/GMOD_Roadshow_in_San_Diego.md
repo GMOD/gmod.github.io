@@ -3,12 +3,10 @@ title: "News/GMOD Roadshow in San Diego"
 ---
 # News/GMOD Roadshow in San Diego
 
-
 <a href="../PAG_2011#Roadshow" rel="nofollow"
 title="GMOD San Diego Roadshow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/Jan2009MtgLogoNoText.png" width="170"
 height="121" alt="GMOD San Diego Roadshow" /></a>
-
 
 GMOD will have a large number of representatives at [Plant and Animal
 Genome (PAG)](../PAG_2011 "PAG 2011") in San Diego this month. Three of
@@ -39,10 +37,8 @@ rel="nofollow">Scott</a> directly.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

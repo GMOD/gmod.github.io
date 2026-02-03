@@ -3,7 +3,6 @@ title: "News/FlyBase jobs"
 ---
 # News/FlyBase jobs
 
-
 **FlyBase jobs**
 
 FlyBase is hiring a
@@ -21,10 +20,8 @@ rel="nofollow">FlyBase</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/24*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

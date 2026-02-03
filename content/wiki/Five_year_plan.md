@@ -3,7 +3,6 @@ title: "Five year plan"
 ---
 # Five year plan
 
-
 This page will serve as the starting place for developing a GMOD grant
 application, starting with items to work on in a five year plan.
 
@@ -70,8 +69,3 @@ Three development aims, one support aim:
 - analysis
 
 (missed part of this conversation)
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")

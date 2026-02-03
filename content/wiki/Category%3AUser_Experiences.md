@@ -3,11 +3,9 @@ title: "Category%253AUser Experiences"
 ---
 # Category%253AUser Experiences
 
-
 ## Pages in category "User Experiences"
 
 The following 8 pages are in this category, out of 8 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -60,7 +58,6 @@ wormbase migration</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "User Experiences"
 

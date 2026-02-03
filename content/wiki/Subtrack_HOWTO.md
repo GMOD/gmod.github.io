@@ -3,7 +3,6 @@ title: "Subtrack HOWTO"
 ---
 # Subtrack HOWTO
 
-
   the UCSC-style subtracks in
   GBrowse</span>](#How_to_emulate_the_UCSC-style_subtracks_in_GBrowse)
   - [Browser
@@ -19,7 +18,6 @@ title: "Subtrack HOWTO"
       features](#GFF-based.2C_individual_features)
     - [GFF-based, multi-level
       features](#GFF-based.2C_multi-level_features)
-
 
 ## How to emulate the UCSC-style subtracks in GBrowse
 

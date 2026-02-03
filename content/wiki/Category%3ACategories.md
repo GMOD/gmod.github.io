@@ -3,14 +3,11 @@ title: "Category%253ACategories"
 ---
 # Category%253ACategories
 
-
 Root category of all top-level categories.
-
 
 ## Subcategories
 
 This category has the following 6 subcategories, out of 6 total.
-
 
 ### B
 

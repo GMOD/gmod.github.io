@@ -3,17 +3,14 @@ title: "News/Canto Workshop at Biocuration 2014"
 ---
 # News/Canto Workshop at Biocuration 2014
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/240px-CantoTextLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/360px-CantoTextLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/480px-CantoTextLogo.png 2x"
 width="240" height="59" alt="CantoTextLogo.png" />](../Canto "Canto")
 
-
 <a href="http://biocuration2014.events.oicr.on.ca/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/ISBLogo.jpg" width="240" height="71"
 alt="ISBLogo.jpg" /></a>
-
 
 GMOD will be running a workshop at
 <a href="http://biocuration2014.events.oicr.on.ca/"
@@ -31,6 +28,5 @@ curation.
 We will have more information closer to the time.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/03/25*

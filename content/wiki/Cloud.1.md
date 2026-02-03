@@ -3,12 +3,10 @@ title: "Cloud"
 ---
 # Cloud
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/400px-GitcLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/600px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/800px-GitcLogo.png 2x"
 width="400" height="229" alt="GMOD in the Cloud" />
-
 
 GMOD in the Cloud is a [GMOD virtual
 server](Category%253AGMOD_virtual_server "Category%253AGMOD virtual server")
@@ -23,7 +21,6 @@ running as long as required, and data can easily be moved when new
 versions of GMOD in the Cloud are released.
 
   
-
 
   in the Cloud</span>](#What.27s_in_GMOD_in_the_Cloud)
 - [Where to find
@@ -50,15 +47,12 @@ versions of GMOD in the Cloud are released.
   - [JBrowse](#JBrowse)
   - [WebApollo](#WebApollo)
 
-
 ## What's in GMOD in the Cloud
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/300px-Gitc-poster-alt.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/450px-Gitc-poster-alt.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/600px-Gitc-poster-alt.jpg 2x"
 width="300" height="424" alt="GMOD in the Cloud poster" />
-
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/200px-ChadoLogo.png"
@@ -164,20 +158,7 @@ other files moved to the `data` partition, please
 rel="nofollow">email the GMOD developers list</a> so that we can
 incorporate the changes into future iterations of GMOD in the Cloud.
 
-|  |  |
-|----|----|
-| /data/etc/gbrowse | The config directory for GBrowse. |
-| /data/etc/postgresql | The config directory for PostgreSQL |
-| /data/opt | A good place to install any other software you want to use |
-| /data/var/lib/gbrowse2 | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. |
-| /data/var/lib/postgresql | Files for the PostgreSQL database |
-| /data/var/www/.htaccess | The htaccess file for the main Drupal site |
-| /data/var/www/jbrowse/jbrowse_conf.json | Config file for JBrowse |
-| /data/var/www/jbrowse/data | All of the data files needed for running JBrowse |
-| /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) |
-| /data/webapollo | WebApollo data |
-| /data/var/lib/tomcat7/webapps/WebApollo/config | Config options for WebApollo |
-| /data/usr/share/tomcat7/bin | setenv.sh for tomcat; used to increase allocated memory for tomcat |
+|----|----| /data/etc/gbrowse | The config directory for GBrowse. | /data/etc/postgresql | The config directory for PostgreSQL | /data/opt | A good place to install any other software you want to use | /data/var/lib/gbrowse2 | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. | /data/var/lib/postgresql | Files for the PostgreSQL database | /data/var/www/.htaccess | The htaccess file for the main Drupal site | /data/var/www/jbrowse/jbrowse_conf.json | Config file for JBrowse | /data/var/www/jbrowse/data | All of the data files needed for running JBrowse | /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) | /data/webapollo | WebApollo data | /data/var/lib/tomcat7/webapps/WebApollo/config | Config options for WebApollo | /data/usr/share/tomcat7/bin | setenv.sh for tomcat; used to increase allocated memory for tomcat |
 
 Note that changes made to files in any other locations will be lost.
 

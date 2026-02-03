@@ -3,7 +3,6 @@ title: "Public Chado Databases"
 ---
 # Public Chado Databases
 
-
   Genome Database
   Releases</span>](#Public_Chado_Genome_Database_Releases)
   - [Chado
@@ -12,7 +11,6 @@ title: "Public Chado Databases"
     Chado Access](#Direct_Chado_Access)
     - [FlyBase](#FlyBase)
     - [GeneDB](#GeneDB)
-
 
 # Public <a href="Chado" class="mw-redirect" title="Chado">Chado</a> <a href="Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases
 

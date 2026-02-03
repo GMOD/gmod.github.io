@@ -3,7 +3,6 @@ title: "Chado Post-Composed Phenotypes"
 ---
 # Chado Post-Composed Phenotypes
 
-
   Overview](#Overview)
 - [Proposal](#Proposal)
 - [New and
@@ -15,7 +14,6 @@ title: "Chado Post-Composed Phenotypes"
   Vocabularies](#Controlled_Vocabularies)
 - [Older
   proposals](#Older_proposals)
-
 
 ## Overview
 

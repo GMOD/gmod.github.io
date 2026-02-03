@@ -3,14 +3,12 @@ title: "News/Opening @ Phytozome (JGI)"
 ---
 # News/Opening @ Phytozome (JGI)
 
-
 <a
 href="http://careers.crijob.com/lbnlcareers/detailsRedirect.asp?jid=24813&amp;p=1"
 rel="nofollow" title="Opening at Phytozome"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7c/PhytozomeLogo.jpg/180px-PhytozomeLogo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7c/PhytozomeLogo.jpg/270px-PhytozomeLogo.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/PhytozomeLogo.jpg 2x"
 width="180" height="44" alt="Opening at Phytozome" /></a>
-
 
 <a
 href="http://careers.crijob.com/lbnlcareers/detailsRedirect.asp?jid=24813&amp;p=1"
@@ -42,10 +40,8 @@ information on this position.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/19*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

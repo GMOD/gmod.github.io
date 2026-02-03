@@ -3,11 +3,9 @@ title: "Category%253AGBrowse Developer"
 ---
 # Category%253AGBrowse Developer
 
-
 ## Pages in category "GBrowse Developer"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### G
 
@@ -22,8 +20,3 @@ The following 5 pages are in this category, out of 5 total.
 
 - [Using the topoview
   Glyph](Using_the_topoview_Glyph "Using the topoview Glyph")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")

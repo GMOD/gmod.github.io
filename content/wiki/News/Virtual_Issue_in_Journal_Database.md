@@ -3,14 +3,12 @@ title: "News/Virtual Issue in Journal Database"
 ---
 # News/Virtual Issue in Journal Database
 
-
 <a href="http://database.oxfordjournals.org/" rel="nofollow"
 title="Database: The Journal of Biological Databases and Curation"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/300px-DatabaseJournal.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/450px-DatabaseJournal.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/600px-DatabaseJournal.jpg.png 2x"
 width="300" height="37"
 alt="Database: The Journal of Biological Databases and Curation" /></a>
-
 
 I recently had a chat with one of the editors of the journal
 <a href="http://database.oxfordjournals.org/" class="external text"
@@ -48,10 +46,8 @@ GMOD Project Coordinator
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

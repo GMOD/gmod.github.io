@@ -3,10 +3,8 @@ title: "Chado for Prokaryotes"
 ---
 # Chado for Prokaryotes
 
-
 This page was started as a stub for producing a set of best practices
 for using Chado for prokaryotes.
-
 
   adapting Chado for
   prokaryotes</span>](#Problems_in_adapting_Chado_for_prokaryotes)
@@ -21,7 +19,6 @@ for using Chado for prokaryotes.
   Chado](#Bacterial_MODs_using_or_planning_to_use_Chado)
 - [See
   also](#See_also)
-
 
 ## Problems in adapting Chado for prokaryotes
 

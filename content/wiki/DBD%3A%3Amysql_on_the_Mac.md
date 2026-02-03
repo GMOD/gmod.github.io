@@ -3,7 +3,6 @@ title: "DBD::mysql on the Mac"
 ---
 # DBD::mysql on the Mac
 
-
 ## Problems in the CPAN installer
 
 This may have been fixed, but as of August 1, 2007: The CPAN installer

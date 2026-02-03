@@ -3,7 +3,6 @@ title: "Chado on Rails"
 ---
 # Chado on Rails
 
-
   Intro](#Intro)
 - [Download](#Download)
 - [Features](#Features)
@@ -44,7 +43,6 @@ title: "Chado on Rails"
 - [Notes from the
   GMOD evo hackathon
   2010](#Notes_from_the_GMOD_evo_hackathon_2010)
-
 
 ## Intro
 

@@ -3,7 +3,6 @@ title: "Web services working group"
 ---
 # Web services working group
 
-
   Us</span>](#About_Us)
 - [Members](#Members)
 - [Initiatives](#Initiatives)
@@ -14,7 +13,6 @@ title: "Web services working group"
 - [Discussions](#Discussions)
 - [Links of
   interest](#Links_of_interest)
-
 
 ## About Us
 
@@ -44,6 +42,5 @@ Please direct discussions about this group to the
 class="external text" rel="nofollow">GMOD-devel</a> mailing list.
 
 ## Links of interest
-
 
 - [Semantic web](Category%253ASemantic_web "Category%253ASemantic web")

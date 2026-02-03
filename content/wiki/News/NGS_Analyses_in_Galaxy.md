@@ -3,12 +3,10 @@ title: "News/NGS Analyses in Galaxy"
 ---
 # News/NGS Analyses in Galaxy
 
-
 <a href="http://main.g2.bx.psu.edu/u/aun1/p/ngs-analysis-service"
 rel="nofollow" title="NGS Analyses in Galaxy"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png" width="26"
 height="25" alt="NGS Analyses in Galaxy" /></a>
-
 
 The Galaxy team is
 <a href="http://main.g2.bx.psu.edu/u/aun1/p/ngs-analysis-service"
@@ -49,10 +47,8 @@ Anton Nekrutenko
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "MySQL"
 ---
 # MySQL
 
-
 <a href="http://mysql.com" class="external text"
 rel="nofollow">MySQL</a> is a popular open source [database management
 system](Glossary#Database_Management_System "Glossary") (DBMS). It's

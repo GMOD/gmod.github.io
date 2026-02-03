@@ -3,7 +3,6 @@ title: "JBrowse Desktop"
 ---
 # JBrowse Desktop
 
-
 This page provides a reference guide for "Desktop JBrowse" or "JBrowse
 Desktop", which is a
 <a href="https://electron.atom.io" class="external text"
@@ -18,7 +17,6 @@ that can easily be run locally on Windows, Mac OS, or Linux.
 
   
 
-
   Installation](#Installation)
 - [Overview of
   JBrowse Desktop](#Overview_of_JBrowse_Desktop)
@@ -31,7 +29,6 @@ that can easily be run locally on Windows, Mac OS, or Linux.
   platforms](#Tested_platforms)
 - [External
   Links](#External_Links)
-
 
 ## Installation
 

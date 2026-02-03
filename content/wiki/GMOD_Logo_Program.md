@@ -3,7 +3,6 @@ title: "GMOD Logo Program"
 ---
 # GMOD Logo Program
 
-
 The [GMOD](Main_Page "Main Page") Logo Program connects graphic design
 programs at colleges and universities with GMOD users that would like a
 new logo. This is usually done as part of a course, with each student or
@@ -15,7 +14,6 @@ Different design programs will be involved at different times during the
 life of this program, and the specific details of the program will vary
 depending on the design program that is currently involved. However,
 there are some general guidelines that apply to all programs.
-
 
   Participation
   Requirements</span>](#GMOD_User_Participation_Requirements)
@@ -29,12 +27,9 @@ there are some general guidelines that apply to all programs.
     2010: Linn-Benton Community
     College](#Spring_2010:_Linn-Benton_Community_College)
 
-
 ## GMOD User Participation Requirements
 
-
 </a>
-
 
 We collaborated with the
 <a href="http://www.linnbenton.edu/go/graphic-arts"

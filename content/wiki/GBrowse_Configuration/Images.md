@@ -3,7 +3,6 @@ title: "GBrowse Configuration/Images"
 ---
 # GBrowse Configuration/Images
 
-
 This article describes **static images** and how to create them in
 [GBrowse](../GBrowse.1 "GBrowse").
 

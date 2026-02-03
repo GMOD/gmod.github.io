@@ -3,11 +3,9 @@ title: "PSU Presentation"
 ---
 # PSU Presentation
 
-
 This Wiki page is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/PSU.pdf" class="internal"
 title="PSU.pdf">Chinmay's presentation</a>.
-
 
   Pathogen Sequencing Unit
   (PSU)</span>](#Sanger_Pathogen_Sequencing_Unit_.28PSU.29)
@@ -21,7 +19,6 @@ title="PSU.pdf">Chinmay's presentation</a>.
   & 3](#Problems_1.2C_2.2C_.26_3)
 - [Demo – Sample
   Problem](#Demo_.E2.80.93_Sample_Problem)
-
 
 ##### Sanger Pathogen Sequencing Unit (PSU)
 
@@ -38,7 +35,6 @@ title="PSU.pdf">Chinmay's presentation</a>.
 Connections for the **Hibernate** engine are configured in the Spring
 configuration file
 
-
 ``` de1
 <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
                <property name="driverClassName" value="org.postgresql.Driver" />
@@ -48,11 +44,9 @@ configuration file
 </bean>
 ```
 
-
 - Uses a connection pool
 - Connection to the database is specified graphically, so the **iBatis**
   configuration file has variables for the location:
-
 
 ``` de1
 <property name="JDBC.Driver" value="org.postgresql.Driver"/>
@@ -63,7 +57,6 @@ configuration file
  
 <property name="JDBC.Password" value="${password}"/>
 ```
-
 
 - provide database location, username & password
 - select from scrollable list of feature with residues (organisms in
@@ -84,7 +77,6 @@ configuration file
 
 Creating a gene
 
-
 ``` de1
 genes[0] = new Feature(ORG, GENE, "xfile", false, false, now, now);
  
@@ -104,18 +96,14 @@ createExon("exon1", genes[0], 13691, 13767, now, 0);
 createExon("exon2", genes[0], 14687, 14720, now, 1);
 ```
 
-
 Retrieve a gene
-
 
 ``` de1
 Feature f = sequenceDao.getFeatureByUniqueName("xfile");
 displayGene(f);
 ```
 
-
 Update a gene
-
 
 ``` de1
 genes[0].setUniqueName("x-file");
@@ -123,9 +111,7 @@ genes[0].setUniqueName("x-file");
 sequenceDao.merge(genes[0]);
 ```
 
-
   
-
 
 ``` de1
 private Feature createExon(String name, Feature gene, int min, int max, Timestamp now, int rank) {
@@ -143,11 +129,9 @@ private Feature createExon(String name, Feature gene, int min, int max, Timestam
 }
 ```
 
-
 ##### Demo – Sample Problem
 
 Simple web page to demonstrate displaying a basic feature
-
 
 ``` de1
 <st:section name="Naming" id="gene_naming" collapsed="false" collapsible="false"
@@ -175,9 +159,3 @@ cellpadding="4">
             <b>${feature.residues}</b>
 </st:section>
 ```
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Middleware
-  Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")

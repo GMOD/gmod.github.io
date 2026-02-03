@@ -3,7 +3,6 @@ title: "Talk:GMOD Project Page"
 ---
 # Talk:GMOD Project Page
 
-
 How to create a new project in GMOD? --Mohpur 11:58,
 30 June 2007 (EDT)
 

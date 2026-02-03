@@ -3,7 +3,6 @@ title: "FlyBase Field Mapping Tables"
 ---
 # FlyBase Field Mapping Tables
 
-
   Introduction](#Introduction)
 - [FlyBase Gene
   Report](#FlyBase_Gene_Report)
@@ -32,7 +31,6 @@ title: "FlyBase Field Mapping Tables"
   Report](#FlyBase_Transgenic_Construct_Report)
 - [FlyBase
   Natural Transposon Report](#FlyBase_Natural_Transposon_Report)
-
 
 ## Introduction
 
@@ -1554,7 +1552,7 @@ SELECT g.uniquename, g.name, a.uniquename, a.name, cvt4.name, fp.VALUE
 <td> </td>
 <td>
 
-<pre class="de1"><code>SELECT f.uniquename, f.name, cv.name || accession AS SO_accession, cvt.name, p.uniquename
+<pre class="de1"><code>SELECT f.uniquename, f.name, cv.name | accession AS SO_accession, cvt.name, p.uniquename
   FROM feature f, feature_cvterm fc, cvterm cvt, cv, dbxref d,
      db, pub p, cvterm gft
   WHERE f.feature_id = fc.feature_id AND fc.cvterm_id = cvt.cvterm_id AND
@@ -7651,7 +7649,7 @@ rel="nofollow">http://flybase.org/reports/FBrf0126983.html</a>
 <td>
 
 <pre class="de1"><code>SELECT p.uniquename, p.pyear, p.title, array_to_string( array(
-SELECT pa.surname || &#39;, &#39; || pa.givennames
+SELECT pa.surname | &#39;, &#39; | pa.givennames
   FROM pubauthor pa
   WHERE pa.pub_id=p.pub_id), &#39;, &#39; ) AS authors, (SELECT pp.VALUE
   FROM pubprop pp, cvterm pp_type
@@ -7988,7 +7986,7 @@ of abstract</td>
 <td>
 
 <pre class="de1"><code>SELECT array_to_string( array(
-SELECT pa.surname || &#39;, &#39; || pa.givennames
+SELECT pa.surname | &#39;, &#39; | pa.givennames
   FROM pubauthor pa
   WHERE pa.pub_id=pub_in.pub_id), &#39;, &#39; ) AS authors
   FROM pub p, pub pub_in, pub_relationship pr, cvterm rel_type
@@ -9556,8 +9554,3 @@ SELECT fo.name, pub.uniquename
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")

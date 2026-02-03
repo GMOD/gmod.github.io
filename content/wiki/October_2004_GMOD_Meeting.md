@@ -3,7 +3,6 @@ title: "October 2004 GMOD Meeting"
 ---
 # October 2004 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
 
 ## Meeting 5
@@ -138,8 +137,3 @@ Scott Cain</td>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

@@ -3,7 +3,6 @@ title: "GBrowse Configuration/Feature frequency histograms"
 ---
 # GBrowse Configuration/Feature frequency histograms
 
-
 This article describes **feature frequency histograms** and how to
 configure them in GBrowse.
 

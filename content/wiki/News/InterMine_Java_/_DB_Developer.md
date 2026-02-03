@@ -3,13 +3,11 @@ title: "News/InterMine Java / DB Developer"
 ---
 # News/InterMine Java / DB Developer
 
-
 <a href="http://www.intermine.org/wiki/NowHiring" rel="nofollow"
 title="InterMine Java Developer"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/180px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/270px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/InterMineLogo.png 2x"
 width="180" height="23" alt="InterMine Java Developer" /></a>
-
 
 We are
 <a href="http://www.intermine.org/wiki/NowHiring" class="external text"
@@ -39,10 +37,8 @@ date for applications is 24 September 2010.
 
   
 
-
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2010/09/16*
 
-
-[Category](../../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

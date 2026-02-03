@@ -3,7 +3,6 @@ title: "Chado Naural Diversity Module/natdiv props call notes"
 ---
 # Chado Naural Diversity Module/natdiv props call notes
 
-
 ## Date
 
 June 1st 2011, 12PM EST

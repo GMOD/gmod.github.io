@@ -3,7 +3,6 @@ title: "News/Job Openings at Georgetown"
 ---
 # News/Job Openings at Georgetown
 
-
 Two Positions Immediately Available at Georgetown University in
 Washington, DC
 
@@ -40,10 +39,8 @@ rel="nofollow">chris.elsik@gmail.com</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/01/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

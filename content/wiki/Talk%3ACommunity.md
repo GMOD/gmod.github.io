@@ -3,7 +3,6 @@ title: "Talk%253ACommunity"
 ---
 # Talk%253ACommunity
 
-
 Hello,
 
 Great idea. Unfortunately demo gives an error: The requested URL

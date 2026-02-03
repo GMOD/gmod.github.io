@@ -3,11 +3,9 @@ title: "Category%253AWeb services"
 ---
 # Category%253AWeb services
 
-
 ## Pages in category "Web services"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### B
 
@@ -23,8 +21,3 @@ The following 5 pages are in this category, out of 5 total.
 
 - [Web services working
   group](Web_services_working_group "Web services working group")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")

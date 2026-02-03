@@ -3,10 +3,8 @@ title: "Presentations"
 ---
 # Presentations
 
-
 An assorted collection of recent presentations given by GMOD
 participants.
-
 
   improved* Chado genetics
   module</span>](#The_new_and_improved_Chado_genetics_module)
@@ -35,7 +33,6 @@ participants.
   Bioperl](#Comparative_Genomics_with_GMOD_and_Bioperl)
 - [The GMOD
   Project: Order from Chaos](#The_GMOD_Project:_Order_from_Chaos)
-
 
 ### The *new and improved* Chado genetics module
 
@@ -98,8 +95,3 @@ title="04-Stajich NESCENT GMOD.pdf">04-Stajich_NESCENT_GMOD.pdf</a>
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/01-NESC_January_2006-LINCOLN.pdf"
 class="internal"
 title="01-NESC January 2006-LINCOLN.pdf">01-NESC_January_2006-LINCOLN.pdf</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

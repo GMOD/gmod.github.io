@@ -3,7 +3,6 @@ title: "GFF3"
 ---
 # GFF3
 
-
 <table class="tutorialheader">
 <colgroup>
 <col style="width: 50%" />
@@ -34,7 +33,6 @@ use a [schema](Glossary#Schema "Glossary") custom built to represent GFF
 data. GFF is [frequently used in GMOD](#GFF_in_GMOD) for data exchange
 and representation of genomic data.
 
-
   Versions](#Versions)
 - [GFF3](#GFF3)
   - [GFF3
@@ -63,7 +61,6 @@ and representation of genomic data.
   - [GBrowse](#GBrowse)
 - [See
   Also](#See_Also)
-
 
 # Versions
 
@@ -219,7 +216,6 @@ or values containing the following characters: ",=;". Spaces are allowed
 in this field, but tabs must be replaced with the %09 URL escape. This
 field is not required.
 
-
 **Column 9 Tags**
 
 Column 9 tags have predefined meanings:
@@ -289,7 +285,6 @@ All attributes that begin with an uppercase letter are reserved for
 later use. Attributes that begin with a lowercase letter can be used
 freely by applications. You can stash any semi-structured data into the
 database by using one or more unreserved (lowercase) tags.
-
 
 ### Nesting Features
 
@@ -546,6 +541,5 @@ your sequences in a separate file containing only FASTA entries.
 ## GFF3 Validation
 
 You can validate reasonably large GFF3 files at the following sites:
-
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")

@@ -3,7 +3,6 @@ title: "GMOD in a Box/Resizing a VirtualBox Disk"
 ---
 # GMOD in a Box/Resizing a VirtualBox Disk
 
-
 **Important Note: The actions below could potentially result in the data
 partition getting corrupted. Always do these activities on a copy of the
 data drive file.**

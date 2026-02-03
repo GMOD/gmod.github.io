@@ -3,7 +3,6 @@ title: "User%253ABuggy"
 ---
 # User%253ABuggy
 
-
 Senior software developer at the Welcome Trust Sanger Institute.
 
 Giles was one of the instructors for the [Artemis - Chado

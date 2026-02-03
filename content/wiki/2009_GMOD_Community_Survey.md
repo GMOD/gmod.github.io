@@ -3,7 +3,6 @@ title: "2009 GMOD Community Survey"
 ---
 # 2009 GMOD Community Survey
 
-
   components have you used?</span>](#Which_components_have_you_used.3F)
 - [Documentation](#Documentation)
 - [Use
@@ -22,7 +21,6 @@ title: "2009 GMOD Community Survey"
 - [Other
   Feedback](#Other_Feedback)
 
-
 The 2009 GMOD Community Survey focused on genome and comparative
 genomics [visualization](Visualization "Visualization"). The survey was
 open for 10 days in September 2009 and received 45 responses.
@@ -36,10 +34,8 @@ Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey").*
 
 ## Which components have you used?
 
-
 GMOD has a wealth of genome and comparative genomics browsers. Which of
 the following have you used?
-
 
 <table class="wikitable">
 <colgroup>
@@ -143,9 +139,7 @@ karyotype</a></td>
 
 ## Documentation
 
-
 How satisfied are you with the documentation for these components?
-
 
 **Administration Documentation** - e.g.
 <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
@@ -604,17 +598,14 @@ showing similarity to a well-annotated sequence</td>
 
 This section asked participants to prioritize features in browsers.
 
-
 For each feature, please indicate that feature's importance to you.
 Please try to classify no more than 1/3 of the features as high
 importance.
 
-
 Features are listed in the order they appeared in the survey. *You can
 resort the table by clicking on a column header.*
 
-| Key: | High | Medium | Low | Not at all | No opinion |
-|------|------|--------|-----|------------|------------|
+| Key: | High | Medium | Low | Not at all | No opinion |------|------|--------|-----|------------|------------|
 
 <table class="wikitable sortable" style="width:100%;">
 <colgroup>
@@ -1366,15 +1357,12 @@ how things like genotype and allele frequencies phenotypes, environment,
 </tbody>
 </table>
 
-| Key: | High | Medium | Low | Not at all | No opinion |
-|------|------|--------|-----|------------|------------|
+| Key: | High | Medium | Low | Not at all | No opinion |------|------|--------|-----|------------|------------|
 
 ### Expansion / Clarification
 
-
 If you want to explain/expand any of your answers above, please do so
 here.
-
 
 - Geolocation within genomic space would be interesting but not so
   interested in ecological applications quite yet.
@@ -1412,10 +1400,8 @@ here.
 
 ### Other High Priority Features
 
-
 Are there other high priority features you would like to see that are
 not in the list above?
-
 
 - Ability to curate features that are not genes. The majority of genomes
   are not composed of genes, and the weakness of most browsers is their
@@ -1444,10 +1430,8 @@ not in the list above?
 
 ### Other Medium Priority Features
 
-
 Are there other medium priority features you would like to see that are
 not in the list above?
-
 
 - Ability to generate heatmap color bin from a set of different
   algorithms (equal interval, quantiles ..).
@@ -1460,22 +1444,18 @@ not in the list above?
 
 ### Other Low Priority Features
 
-
 Are there other Low priority features you would like to see that are not
 in the list above?
-
 
 - Conquer the world, but with very low priority, first science.
 - not really
 
 ## Other Feedback on Visualization Tools
 
-
 Do you have any other feedback on any of these tools?
 
 Of the tools you have used, were they useful and why (or why not)? Did
 you try to use any of them, but couldn't get them to work?
-
 
 - I have always enjoyed working with the GMOD tools
 - <a href="Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>
@@ -1513,10 +1493,8 @@ you try to use any of them, but couldn't get them to work?
 
 ## Other Feedback
 
-
 If you have any additional feedback, questions, or information you would
 like to provide, please tell us here.
-
 
 - Please better documentation and support for additional glyphs in
   [Apollo](Apollo.1 "Apollo").

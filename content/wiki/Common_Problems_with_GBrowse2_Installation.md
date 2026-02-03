@@ -3,7 +3,6 @@ title: "Common Problems with GBrowse2 Installation"
 ---
 # Common Problems with GBrowse2 Installation
 
-
 Here are some common problems.
 
 GBrowse loads, but the fonts and colors are wrong, and none of the click or drag options works.  

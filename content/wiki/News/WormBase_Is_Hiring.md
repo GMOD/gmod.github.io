@@ -3,7 +3,6 @@ title: "News/WormBase Is Hiring"
 ---
 # News/WormBase Is Hiring
 
-
 ### Position closed
 
 WormBase is <a
@@ -73,10 +72,8 @@ Please send resumes and vitaes to **Todd Harris (todd@wormbase.org)**.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/10/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

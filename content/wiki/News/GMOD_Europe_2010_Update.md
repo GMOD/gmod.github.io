@@ -3,12 +3,10 @@ title: "News/GMOD Europe 2010 Update"
 ---
 # News/GMOD Europe 2010 Update
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/200px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
 width="200" height="171" alt="GMOD Europe 2010" />](../GMOD_Europe_2010 "GMOD Europe 2010")
-
 
 [GMOD Europe 2010](../GMOD_Europe_2010 "GMOD Europe 2010") starts in
 less than two weeks. If you are planning on attending and haven't yet
@@ -49,10 +47,8 @@ Clements](../User%253AClements "User%253AClements")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

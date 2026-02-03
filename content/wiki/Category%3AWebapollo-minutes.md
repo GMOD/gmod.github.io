@@ -3,7 +3,6 @@ title: "Category%253AWebapollo-minutes"
 ---
 # Category%253AWebapollo-minutes
 
-
 #### Web-Apollo Meeting Agenda & Minutes
 
 2010-11-17
@@ -12,11 +11,9 @@ title: "Category%253AWebapollo-minutes"
 2010-12-02 agenda
 [minutes](Web-apollo-meeting-minutes-2010-12-02 "Web-apollo-meeting-minutes-2010-12-02")  
 
-
 ## Pages in category "Webapollo-minutes"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### D
 

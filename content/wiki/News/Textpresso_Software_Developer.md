@@ -3,16 +3,13 @@ title: "News/Textpresso Software Developer"
 ---
 # News/Textpresso Software Developer
 
-
 ### This position has now been filled
-
 
 <a
 href="https://jobs.caltech.edu/applicants/Central?delegateParameter=applicantPostingSearchDelegate&amp;actionParameter=getJobDetail&amp;rowId=154643&amp;functionalityTableName=8192"
 rel="nofollow" title="Textpresso is hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/TextpressoLogo.jpg" width="197"
 height="62" alt="Textpresso is hiring" /></a>
-
 
 [Textpresso](../Textpresso "Textpresso")
 (<a href="http://www.textpresso.org" class="external free"
@@ -43,10 +40,8 @@ Hans-Michael Muller
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/12/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

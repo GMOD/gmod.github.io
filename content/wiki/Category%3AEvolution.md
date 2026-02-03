@@ -3,16 +3,13 @@ title: "Category%253AEvolution"
 ---
 # Category%253AEvolution
 
-
 See also the [Comparative
 Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
 category.
 
-
 ## Pages in category "Evolution"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### B
 
@@ -26,7 +23,6 @@ The following 3 pages are in this category, out of 3 total.
 ### G
 
 - [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon")
-
 
 ## Media in category "Evolution"
 
@@ -215,13 +211,4 @@ The following 8 files are in this category, out of 8 total.
   
 
   [Vision.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bc/Vision.pdf "File:Vision.pdf")  
-  4.7 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Biology](Category%253ABiology "Category%253ABiology")
+  4.7 MB

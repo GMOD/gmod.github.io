@@ -3,11 +3,9 @@ title: "Category%253ADocumentation"
 ---
 # Category%253ADocumentation
 
-
 ## Pages in category "Documentation"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -59,8 +57,3 @@ title="Using the topoview Glyph">Using the topoview Glyph</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Categories](Category%253ACategories "Category%253ACategories")

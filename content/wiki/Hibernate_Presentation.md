@@ -3,12 +3,10 @@ title: "Hibernate Presentation"
 ---
 # Hibernate Presentation
 
-
 Chado API via Java & Hibernate, Robert Bruggner, VectorBase.org. This
 Wiki page is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf"
 class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
-
 
   Overview](#Overview)
 - [Background](#Background)
@@ -38,7 +36,6 @@ class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
 - [What
   Hibernate Does Well](#What_Hibernate_Does_Well)
 - [Acknowledgements](#Acknowledgements)
-
 
 ##### Overview
 
@@ -102,7 +99,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 
 ##### POJO and HBM Example ﬁle - CV
 
-
 ``` de1
  public class CV {
  
@@ -122,7 +118,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
     }
  }
 ```
-
 
 ``` de1
  <hibernate-mapping>
@@ -147,9 +142,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
  </hibernate-mapping>
 ```
 
-
 ##### HBM Example CVTerm
-
 
 ``` de1
  public class CVTerm {
@@ -172,7 +165,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
  
 }
 ```
-
 
 ``` de1
  <hibernate-mapping>
@@ -206,12 +198,10 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
   </hibernate-mapping>
 ```
 
-
 ##### Hibernate Object Retrieve
 
 One can use Java, Hibernate Query Language, or SQL, this example uses
 HQL
-
 
 ``` de1
  import org.hibernate.Session;
@@ -243,9 +233,7 @@ HQL
  System.out.println(cv.getName());
 ```
 
-
 ##### Hibernate Object Update
-
 
 ``` de1
  import org.hibernate.Session;
@@ -273,9 +261,7 @@ HQL
  session.commit();
 ```
 
-
 ##### Hibernate Save
-
 
 ``` de1
  import org.hibernate.Session;
@@ -309,9 +295,7 @@ HQL
  System.out.println(new_cvterm.getCvterm_id());
 ```
 
-
 ##### Inheritance
-
 
 ``` de1
  <hibernate-mapping>
@@ -349,7 +333,6 @@ HQL
  </hibernate-mapping>
 ```
 
-
 Write custom methods for speciﬁc sub-classes
 
 ##### ChadoAPI
@@ -366,7 +349,6 @@ Write custom methods for speciﬁc sub-classes
   - ChadoAdapter
 
 ##### Problem 1 - GMOD Example
-
 
 ``` de1
  // Set up our session and begin transaction
@@ -400,9 +382,7 @@ Write custom methods for speciﬁc sub-classes
  xfile.createNewFeatureSynonym("scully", null_pub, CVTerms.EXACT_SYNONYM);
 ```
 
-
 ##### Problem 2 - GMOD Example
-
 
 ``` de1
  // Create a new transcript for our gene.
@@ -439,9 +419,7 @@ Write custom methods for speciﬁc sub-classes
  }
 ```
 
-
 ##### Problems 3, 4, & 5 - GMOD Update & Delete
-
 
 ``` de1
  // Lets update our name...
@@ -467,7 +445,6 @@ Write custom methods for speciﬁc sub-classes
  // All Finished
  session.getTransaction().commit();
 ```
-
 
   
 

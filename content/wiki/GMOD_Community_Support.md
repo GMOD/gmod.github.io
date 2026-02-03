@@ -3,7 +3,6 @@ title: "GMOD Community Support"
 ---
 # GMOD Community Support
 
-
   GMOD's Community Support</span>](#Roles_of_GMOD.27s_Community_Support)
   - [Help
     Desk](#Help_Desk)
@@ -17,7 +16,6 @@ title: "GMOD Community Support"
   your feedback](#Please_share_your_feedback)
 - [Acknowledgements and
   History](#Acknowledgements_and_History)
-
 
 ## Roles of GMOD's Community Support
 
@@ -61,7 +59,6 @@ extending GMOD components. Consultancy on grant proposals focuses on
 
 ### Training and Outreach
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/120px-GMODAmericas2011Logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/180px-GMODAmericas2011Logo.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/240px-GMODAmericas2011Logo.jpg.png 2x"
@@ -72,7 +69,6 @@ width="150" height="109" alt="2010 GMOD Summer School - Americas" />](http://gmo
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/140px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/210px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/280px-GMOD2010Europe300.png 2x"
 width="140" height="119" alt="GMOD Europe 2010" />](GMOD_Europe_2010 "GMOD Europe 2010")
-
 
 The Community Support organizes and provides GMOD [training events and
 outreach activities](Training_and_Outreach "Training and Outreach").
@@ -166,8 +162,3 @@ rel="nofollow">Institute of Ecology and Evolution (IE<sup>2</sup>)</a>
 at the <a href="http://uoregon.edu" class="external text"
 rel="nofollow">University of Oregon</a> for hosting Dave Clements during
 his 3 years.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

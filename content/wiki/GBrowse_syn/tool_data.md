@@ -3,7 +3,6 @@ title: "GBrowse syn/tool data"
 ---
 # GBrowse syn/tool data
 
-
 \| name = GBrowse_syn \| full_name = Generic Synteny
 Browser \| status = beta release \| dev = active \| support = active \|
 type = Comparative genome visualization \| platform = web \| logo =
@@ -19,12 +18,9 @@ and later).
 
 \| screenshot =
 
-
 <a href="../File:GBrowse_syn.png" class="image"></a>
 
-
 GBrowse_syn, as implemented at WormBase
-
 
 \| public_server = \| dl = \| dl_url =
 <a href="https://github.com/GMOD/GBrowse" class="external free"
@@ -89,7 +85,6 @@ The focus of this documentation is the GBrowse_syn application. However,
 the generation of whole genome alignments and identification of
 orthologous regions are the subject of considerable interest, so some
 background reading is listed below:
-
 
 - [GMOD in the
   Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")

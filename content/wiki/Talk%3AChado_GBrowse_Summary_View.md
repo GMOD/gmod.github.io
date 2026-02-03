@@ -3,7 +3,6 @@ title: "Talk:Chado GBrowse Summary View"
 ---
 # Talk:Chado GBrowse Summary View
 
-
 What glyphs? Mine don't look like example (heatmap not histogram). Is
 example wrong? is settings missing? What?
 --[DanBolser](User%253ADanBolser "User%253ADanBolser") 10:34, 4 May 2011 (UTC)

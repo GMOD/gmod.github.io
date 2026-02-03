@@ -3,11 +3,9 @@ title: "GMOD virtual machine project"
 ---
 # GMOD virtual machine project
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
-
 
 The people who created and maintained these VMware images have moved on
 to other things, and ***the VMware images described here are no longer
@@ -19,7 +17,6 @@ VMware images still exist in GMOD in several places. See:
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [Community Annotation
   System](Community_Annotation_System "Community Annotation System")
-
 
 Initial versions of GMOD virtual machines have been uploaded/documented
 at the
@@ -90,8 +87,3 @@ Thanks for your time, Scott
 
 Also see [Community Annotation
 System](Community_Annotation_System "Community Annotation System").
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")

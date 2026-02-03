@@ -3,14 +3,11 @@ title: "Category%253ADrupal"
 ---
 # Category%253ADrupal
 
-
 About [Drupal](Drupal "Drupal"), the Content Management System.
-
 
 ## Pages in category "Drupal"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### B
 

@@ -3,7 +3,6 @@ title: "MOD Face Summary"
 ---
 # MOD Face Summary
 
-
 ### Meeting Report 
 
 Model Organism Database User Interface Caucus  
@@ -45,7 +44,6 @@ feedback. Google can be harnessed to aid, but is not solely sufficient
 for, searching MOD data. Providing "server snapshots" is a useful
 mechanism for keeping older database versions available.  
   
-
 
   Model Organism Database User Interface Caucus GMOD Meeting, January
   18, 2007, San Diego, CA,
@@ -90,7 +88,6 @@ mechanism for keeping older database versions available.
   - [Implementation
     Techniques](#Implementation_Techniques)
 - [References](#References)
-
 
 # Participants and [Presentations](MOD_Face_Talks "MOD Face Talks")
 

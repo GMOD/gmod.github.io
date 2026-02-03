@@ -3,11 +3,9 @@ title: "XORT Presentation"
 ---
 # XORT Presentation
 
-
 This Wiki section is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf" class="internal"
 title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
-
 
   Introduction](#Introduction)
 - [Chado
@@ -34,7 +32,6 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
   Application)](#CHIA_.28Chado_Interface_Application.29)
 - [Documentation](#Documentation)
 - [Acknowledgements](#Acknowledgements)
-
 
 ##### Introduction
 
@@ -153,7 +150,6 @@ For example:
 
 Step 1. Dump all data use simple dumpspec
 
-
 ``` de1
  <chado>
   <feature dump=“all”>
@@ -161,7 +157,6 @@ Step 1. Dump all data use simple dumpspec
   </feature>
  </chado>
 ```
-
 
 Step 2 Delete feature x from DB, with triggers to clean orphan records,
 if necessary

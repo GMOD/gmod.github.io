@@ -3,7 +3,6 @@ title: "Gbrowse Benchmarking"
 ---
 # Gbrowse Benchmarking
 
-
 # Using Javascript to Benchmark Gbrowse Image Generation and Loading
 
 The following recipe shows how to use existing options, such as
@@ -12,14 +11,11 @@ The following recipe shows how to use existing options, such as
 is used for benchmarking page loading and image generation.  
   
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7a/BenchMark.png" width="946" height="503"
 alt="BenchMark.png" />
 
-
   
-
 
 - **Note:** When coding Javascript in GBrowse config files, there are a
   few caveats:
@@ -31,7 +27,6 @@ alt="BenchMark.png" />
   - You can add comments to your javascript, or anywhere else in the
     configuration file, by starting a new line with '#', which will be
     ignored by the parser and not added to the final javascript.
-
 
 ### First Step: Adding a simple script to the page header
 

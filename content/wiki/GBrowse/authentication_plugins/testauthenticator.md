@@ -3,10 +3,8 @@ title: "Gbrowse/authentication plugins/testauthenticator"
 ---
 # Gbrowse/authentication plugins/testauthenticator
 
-
 The TestAuthenticator plugin is used for testing the GBrowse
 authentication system. The entire module's code looks like this:
-
 
 ``` de1
  package Bio::Graphics::Browser2::Plugin::TestAuthenticator;
@@ -22,7 +20,6 @@ authentication system. The entire module's code looks like this:
  
  1;
 ```
-
 
 The idea is very simple. The module inherits from
 Bio::Graphics::Browser2::Plugin::AuthPlugin, a "template" module that

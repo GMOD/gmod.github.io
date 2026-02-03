@@ -3,7 +3,6 @@ title: "News/JBrowse 1.3.0 released"
 ---
 # News/JBrowse 1.3.0 released
 
-
 JBrowse version 1.3.0 has arrived!
 
 We have a long list of improvements in this release, some of which have
@@ -36,10 +35,8 @@ rel="nofollow">http://jbrowse.org</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "BioMart Workshop - GMOD Europe 2010"
 ---
 # BioMart Workshop - GMOD Europe 2010
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -22,7 +21,6 @@ alt="BioMart" /></a>
 <hr />
 <a href="BioMart" title="BioMart">BioMart</a> Workshop
 
-
 16 September 2010<br />
 Cambridge UK
 <hr />
@@ -33,9 +31,7 @@ Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-
   
-
 
   Mining genomic data</span>](#BioMart:_Mining_genomic_data)
 - [Instructors](#Instructors)
@@ -44,7 +40,6 @@ Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 - [Sponsor](#Sponsor)
 - [Lodging and
   Other Logistics](#Lodging_and_Other_Logistics)
-
 
 ## [BioMart](BioMart "BioMart"): Mining genomic data
 
@@ -110,19 +105,9 @@ href="http://www.cam.ac.uk/map/v4/drawmap.cgi?mp=down;xx=183;yy=216;mt=c"
 class="external text" rel="nofollow">Department of Genetics, room
 G12-G13</a>, at the University of Cambridge.
 
-|  |  |
-|----|----|
-| 9:00 - 9:20 | Coffee/Tea |
-| 9:20 - 9:45 | Introduction to [BioMart](BioMart "BioMart") and status update (by Arek Kasprzyk) |
-| 9:45 - 12:30 | Hands-on training (Perl and Java) |
-| 12:30 - 13:30 | Lunch break (on your own) |
-| 13:30 - 15:00 | Hands-on training (Perl and Java) |
-| 15:00 - 15:15 | Coffee/Tea break |
-| 15:15 - 15:30 | Mouse informatics resources in BioMart (by Damian Smedley) |
-| 15:30 - 17:00 | Hands-on training and open session for user feedback. |
+|----|----| 9:00 - 9:20 | Coffee/Tea | 9:20 - 9:45 | Introduction to [BioMart](BioMart "BioMart") and status update (by Arek Kasprzyk) | 9:45 - 12:30 | Hands-on training (Perl and Java) | 12:30 - 13:30 | Lunch break (on your own) | 13:30 - 15:00 | Hands-on training (Perl and Java) | 15:00 - 15:15 | Coffee/Tea break | 15:15 - 15:30 | Mouse informatics resources in BioMart (by Damian Smedley) | 15:30 - 17:00 | Hands-on training and open session for user feedback. |
 
 ## Sponsor
-
 
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
@@ -132,7 +117,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/285px-CambridgeWide.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/380px-CambridgeWide.gif 2x"
 width="190" height="55"
 alt="School of Biological Sciences Bioinformatics Training Facility" /></a>
-
 
 This event was sponsored and hosted by the <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"

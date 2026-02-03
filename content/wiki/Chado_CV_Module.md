@@ -214,19 +214,12 @@ in a graph. This graph is typically acyclic (a
 [DAG](Glossary#DAG "Glossary")), though it is not guaranteed to be as
 certain relationship types are allowed to form cycles.
 
-| SO Term | SO id |
-| ------- | ----- |
-| exon    | <a    |
+| SO Term | SO id | ------- | ----- | exon    | <a    |
 
 href="http://www.sequenceontology.org/miso/current_release/term/SO:0000147"
-class="external text" rel="nofollow">SO:0000147</a> |
-| intron | <a
+class="external text" rel="nofollow">SO:0000147</a> | intron | <a
 href="http://www.sequenceontology.org/miso/current_release/term/SO:0000188"
-class="external text" rel="nofollow">SO:0000188</a> |
-| mRNA | ... |
-| miRNA | ... |
-| regulatory_element | ... |
-| transcription_factor_binding_site | ... |
+class="external text" rel="nofollow">SO:0000188</a> | mRNA | ... | miRNA | ... | regulatory_element | ... | transcription_factor_binding_site | ... |
 
 Sequence Ontology Examples
 
@@ -620,11 +613,7 @@ class="external text" rel="nofollow">go-perl</a> package), like this:
 
 Then the *intersection_of*s get stored using the basic DAG tables as:
 
-| Subject  | Relation          | Object               |
-| -------- | ----------------- | -------------------- |
-| LLB      | _intersection_of_ | Locomotory Behaviour |
-| LLB      | _intersection_of_ | anon:xxx             |
-| anon:xxx | during            | FBv:00005336         |
+| Subject  | Relation          | Object               | -------- | ----------------- | -------------------- | LLB      | _intersection_of_ | Locomotory Behaviour | LLB      | _intersection_of_ | anon:xxx             | anon:xxx | during            | FBv:00005336         |
 
 Definition stored in [cvterm_relationship](#Table:_cvterm_relationship)
 table
@@ -1337,13 +1326,7 @@ Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
 analogous to cvtermprop.
 
-| F-Key                                               | Name          | Type    | Description                 |
-| --------------------------------------------------- | ------------- | ------- | --------------------------- |
-|                                                     | dbxrefprop_id | serial  | _PRIMARY KEY_               |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id     | integer | _UNIQUE#1 NOT NULL_         |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id       | integer | _UNIQUE#1 NOT NULL_         |
-|                                                     | value         | text    | _NOT NULL DEFAULT ''::text_ |
-|                                                     | rank          | integer | _UNIQUE#1 NOT NULL_         |
+| F-Key                                               | Name          | Type    | Description                 | --------------------------------------------------- | ------------- | ------- | --------------------------- |                                                     | dbxrefprop_id | serial  | _PRIMARY KEY_               | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id     | integer | _UNIQUE#1 NOT NULL_         | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id       | integer | _UNIQUE#1 NOT NULL_         |                                                     | value         | text    | _NOT NULL DEFAULT ''::text_ |                                                     | rank          | integer | _UNIQUE#1 NOT NULL_         |
 
 dbxrefprop Structure
 

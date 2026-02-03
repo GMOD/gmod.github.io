@@ -3,12 +3,10 @@ title: "News/GBrowse User Tutorial"
 ---
 # News/GBrowse User Tutorial
 
-
 <a href="http://www.openhelix.com/gbrowse" rel="nofollow"
 title="OpenHelix"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/OpenHelixLogosmaller.jpg" width="180"
 height="79" alt="OpenHelix" /></a>
-
 
 A comprehensive
 <a href="http://www.openhelix.com/gbrowse" class="external text"
@@ -65,10 +63,8 @@ use GBrowse better.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

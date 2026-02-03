@@ -3,7 +3,6 @@ title: "News/GBrowse Version 2.40 Released"
 ---
 # News/GBrowse Version 2.40 Released
 
-
 GBrowse version 2.40 is now available for downloading from <a
 href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/GBrowse-2.40/GBrowse-2.40.tar.gz/download"
 class="external text" rel="nofollow">SourceForge</a> and CPAN.
@@ -35,10 +34,8 @@ of complex track definitions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

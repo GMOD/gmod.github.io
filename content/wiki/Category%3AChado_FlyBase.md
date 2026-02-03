@@ -3,18 +3,15 @@ title: "Category%253AChado FlyBase"
 ---
 # Category%253AChado FlyBase
 
-
 ## Pages in category "Chado FlyBase"
 
 The following 2 pages are in this category, out of 2 total.
-
 
 ### F
 
 - [FlyBase Chado](FlyBase_Chado "FlyBase Chado")
 - [FlyBase Field Mapping
   Tables](FlyBase_Field_Mapping_Tables "FlyBase Field Mapping Tables")
-
 
 ## Media in category "Chado FlyBase"
 

@@ -3,7 +3,6 @@ title: "News/Chado 1.11 Release"
 ---
 # News/Chado 1.11 Release
 
-
 I am pleased to announce the <a
 href="https://sourceforge.net/projects/gmod/files/gmod/chado-1.11/chado-1.11.tar.gz/download"
 class="external text" rel="nofollow">1.11 release of Chado</a>, the GMOD
@@ -46,10 +45,8 @@ class="external text" rel="nofollow">schema mailing list</a>,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/06*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "Wiki linking style guide"
 ---
 # Wiki linking style guide
 
-
 NOTE: This style guide was written for gmod.org when it was hosted in a
 MediaWiki server and may not make a lot of sense in the markdown context.
 

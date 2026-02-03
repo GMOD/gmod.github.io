@@ -3,10 +3,8 @@ title: "GBrowse 2.0 HOWTO"
 ---
 # GBrowse 2.0 HOWTO
 
-
 (Redirected from [GBrowse 2 Configuration
 HOWTO](/wiki/GBrowse_2_Configuration_HOWTO)
-
 
 GBrowse 2.0 is a complete rewrite of the original GBrowse version. In
 addition to making the code base more maintainable, GBrowse 2.0 adds the
@@ -38,7 +36,6 @@ system. Readers familiar with GBrowse 1.70 or earlier should start with
 the next section, which is a quick summary of what is different. Readers
 who have not installed or configured GBrowse before should skip to
 [GBrowse Installation](#GBrowse_Installation).
-
 
   Installation</span>](#GBrowse_Installation)
   - [GBrowse
@@ -162,7 +159,6 @@ who have not installed or configured GBrowse before should skip to
     Advanced Topics](#Other_Advanced_Topics)
 - [The GBrowse2
   REST API](#The_GBrowse2_REST_API)
-
 
 # GBrowse Installation
 
@@ -410,7 +406,6 @@ Here is the default **GBrowse.conf**:
     # keyword search maxima
     max keyword results    = 1000
 
-
     ###############################################################################################
     #
     # One stanza for each configured data source
@@ -515,7 +510,6 @@ The default is to place them in subdirectories of **config_base**.
 
 session driver, session args
 
-
 These two options pass settings to the
 <a href="http://search.cpan.org/perldoc?CGI::Session"
 class="external text" rel="nofollow">CGI::Session</a> module, which is
@@ -531,9 +525,7 @@ available) DB_File driver, the options might look like this:
      session driver = driver:db_file;serializer:default
      session args   = FileName /var/tmp/gbrowse2/sessions.db
 
-
 session lock type
-
 
 Since GBrowse runs several processes in parallel, it needs to flag when
 another instance of it is working on session data in order to avoid
@@ -561,14 +553,12 @@ for simplicity, you can leave off the initial "mysql:".
 A value of **default** will choose the File::NFSLock module if it is
 available, and otherwise fall back onto standard flock.
 
-
 #### Performance Settings
 
 This section contains a variety of performance-related settings that you
 may want to change in order to tune GBrowse for your needs.
 
 renderfarm
-
 
 This configuration directive turns on and off GBrowse's support for a
 rendering farm (see [Running a GBrowse2 Render
@@ -578,7 +568,6 @@ penalty if you choose not to take advantage of it. If you plan never to
 use the feature, set it to a false (zero) value:
 
      renderfarm = 0
-
 
 slave_timeout  
 When [running a GBrowse2 render
@@ -603,7 +592,6 @@ Safe::World does not currently work with Perl 5.10 and higher.*
 
 max_render_processes
 
-
 GBrowse launches a subprocess for each track it renders. This option
 will limit the number of simultaneous subprocesses that can be launched
 in order to avoid overloading the system. The default is four; you may
@@ -612,7 +600,6 @@ choice is between one and two times the number of CPUs/cores on the
 server system:
 
     max_render_processes = 8
-
 
 #### Appearance Settings
 
@@ -648,7 +635,6 @@ balloons to appear at all.
 
 stylesheet
 
-
 This option sets the path to the GBrowse cascading stylesheet (CSS)
 file. This sets such options as the page background color, font size,
 background image, and so forth. Edit this option here to change the
@@ -664,7 +650,6 @@ stylesheet, as in the following example:
      stylesheet = css/gbrowse.css(screen)
                   http://www.example.com/hires.css(paper,projection)
                   http://www.example.com/audio.css(audio)
-
 
 truecolor  
 If set to a true value, then the tracks will be rendered as full-color
@@ -694,7 +679,6 @@ for deselecting the overview and region grids.
 
 image widths, default width
 
-
 These two options control the width of the panels displayed to the user.
 **image widths** is a space-delimited list of numeric widths to be made
 available to the user to select from. **default width** is a single
@@ -705,7 +689,6 @@ pixels, but offers the user a menu of five widths ranging from 450 to
 
     image widths    = 450 640 800 1024 1280
     default width   = 1024
-
 
 pad_left, pad_right  
 These options control how much additional whitespace (in pixels) to
@@ -768,7 +751,6 @@ convenience, you may use the integer value 0 for "closed" or 1 for
 
 category state
 
-
 This option controls whether a category or subcategory is open or closed
 when the user first visits the page, or resets his state with the
 "Reset" menu choice. The format is as shown in this example:
@@ -782,7 +764,6 @@ sub-subcategories are indicated by dividing the subcategories by ":"
 characters. You may use "open" to indicate that a category is open at
 first, or "closed" to collapse it on the first page load. "1" and "0"
 can be used instead of "open" and "closed".
-
 
 #### Fast Track Panning (new in version 2.20)
 
@@ -892,16 +873,7 @@ Several options allow you to configure the behaviour of genomic regions,
 such as the levels of zoom you wish to offer and the largest segment of
 genome that it is safe to display in the detail panel.
 
-| option | default value | description |
-|----|----|----|
-| region segment | 50000 (?) | NOT DESCRIBED HERE PREVIOUSLY! DOES IT APPLY TO 2.0?? DESCRIBED ELSEWHERE (*If this configuration option is set, a new "region panel" will appear that is intermediate in size between the overview and the detail panel. The value of this option becomes the size of the region panel in base pairs.*) |
-| max segment | 5000000 (?) | The maximum size (in base pairs) that the detail panel can display. If the user tries to display a region that is too large, he will be given a message to select a smaller region. GBrowse performance degrades as the number of features per track increases, so you can use this setting to avoid making the user wait unreasonable lengths of time for the region to display. |
-| zoom levels | 100 500 1000 5000 50000 100000 (?) | A space-delimited list of region sizes (in base pair) that the user can zoom through. Each zoom level will be listed in a popup menu in the navigation bar. |
-| fine zoom | 10% | This option controls the increment that the user will zoom in or out when pressing the "+" and "-" buttons in the navigation bar. |
-| default segment | 5000 (?) | If the user has selected a region that is too large to display, then single-clicks on one of the scale bars, he will be centered on a region this many base pairs in length. |
-| region sizes | 1000 5000 10000 20000 (?) | This option is similar to **zoom levels** except that the list of zoom levels applies to the region panel. |
-| default region | 5000 (?) | This option specifies the default length of the region panel, in bp. |
-| max keyword results | (?) | If the user does a wildcard or keyword search, this option limits the maximum number of results that can be displayed. |
+| option | default value | description |----|----|----| region segment | 50000 (?) | NOT DESCRIBED HERE PREVIOUSLY! DOES IT APPLY TO 2.0?? DESCRIBED ELSEWHERE (*If this configuration option is set, a new "region panel" will appear that is intermediate in size between the overview and the detail panel. The value of this option becomes the size of the region panel in base pairs.*) | max segment | 5000000 (?) | The maximum size (in base pairs) that the detail panel can display. If the user tries to display a region that is too large, he will be given a message to select a smaller region. GBrowse performance degrades as the number of features per track increases, so you can use this setting to avoid making the user wait unreasonable lengths of time for the region to display. | zoom levels | 100 500 1000 5000 50000 100000 (?) | A space-delimited list of region sizes (in base pair) that the user can zoom through. Each zoom level will be listed in a popup menu in the navigation bar. | fine zoom | 10% | This option controls the increment that the user will zoom in or out when pressing the "+" and "-" buttons in the navigation bar. | default segment | 5000 (?) | If the user has selected a region that is too large to display, then single-clicks on one of the scale bars, he will be centered on a region this many base pairs in length. | region sizes | 1000 5000 10000 20000 (?) | This option is similar to **zoom levels** except that the list of zoom levels applies to the region panel. | default region | 5000 (?) | This option specifies the default length of the region panel, in bp. | max keyword results | (?) | If the user does a wildcard or keyword search, this option limits the maximum number of results that can be displayed. |
 
 #### HTML Customization Settings
 
@@ -912,11 +884,9 @@ other pages on your site.
 
 header, footer
 
-
 These two options place HTML at the top or bottom of the page. Example:
 
      header = 
-
 
 You can create an unlimited number of subtracks within a single major
 track in order to group a series of datasets that are logically linked,
@@ -946,7 +916,6 @@ callbacks.
 You need to know the Perl programming language to take advantage of this
 feature. The general format of this type of option is:
 
-
 ``` de1
   option name = sub {
               some perl code;
@@ -954,7 +923,6 @@ feature. The general format of this type of option is:
               even more perl code;
               }
 ```
-
 
 The value must begin with the sequence "sub {" in order to be recognized
 as a subroutine declaration. After this, you can have one or more lines
@@ -980,7 +948,6 @@ value is treated as the value of the corresponding option. For example,
 this bgcolor subroutine will call the feature's primary_tag() method,
 and return "blue" if it is an exon, "orange" otherwise:
 
-
 ``` de1
   bgcolor = sub {
           my $feature = shift;
@@ -988,7 +955,6 @@ and return "blue" if it is an exon, "orange" otherwise:
           return "orange";
           }
 ```
-
 
 See the manual page for
 <a href="http://search.cpan.org/perldoc?Bio::Graphics::Feature"
@@ -1002,7 +968,6 @@ differently, you may need access to all five arguments. Here is an
 example that draws the first and last parts of a feature in blue and the
 rest in red:
 
-
 ``` de1
    sub {
          my($feature,$option_name,$part_no,$total_parts,$glyph) = @_;
@@ -1012,10 +977,8 @@ rest in red:
          }
 ```
 
-
 If you need access to information in the parent of the feature (e.g. in
 a multipart feature), you can call the glyph's parent_feature() method:
-
 
 ``` de1
   sub {
@@ -1025,7 +988,6 @@ a multipart feature), you can call the glyph's parent_feature() method:
          return 'red';
          }
 ```
-
 
 The parent_feature() method was added to Bioperl on 17 April 2008. If
 you are using an earlier version, parent_feature() will not be
@@ -1039,7 +1001,6 @@ consisting of the feature, the Bio::Graphics::Panel object, and the
 Bio::Graphics::Glyph object corresponding to the current track within
 the panel:
 
-
 ``` de1
   link = sub {
              my ($feature, $panel, $track) = @_;
@@ -1047,11 +1008,9 @@ the panel:
              }
 ```
 
-
 Ordinarily you will only need to use the feature object. The other
 arguments are useful to look up panel-specific settings such as the
 pixel width of the panel or the state of the "flip" setting:
-
 
 ``` de1
   title = sub {
@@ -1061,7 +1020,6 @@ pixel width of the panel or the state of the "flip" setting:
        }
 ```
 
-
 ### Named Subroutine References
 
 If you use a version of BioPerl after April 15, 2003, you can also use
@@ -1069,7 +1027,6 @@ references to named subroutines as option arguments. To use named
 subroutines, add an init_code section to the \[GENERAL\] section of the
 configuration file. init_code should contain nothing but subroutine
 definitions and other initialization routines. For example:
-
 
 ``` de1
   init_code = sub score_color {
@@ -1090,7 +1047,6 @@ definitions and other initialization routines. For example:
               }
 ```
 
-
 Then simply refer to these subroutines using the \\name syntax:
 
        [EST_ALIGNMENTS]
@@ -1100,7 +1056,6 @@ Then simply refer to these subroutines using the \\name syntax:
 
 You can declare global variables in the init_code subroutine if you use
 "no strict 'vars';" at the top of the section:
-
 
 ``` de1
     init_code = no strict 'vars';
@@ -1115,7 +1070,6 @@ You can declare global variables in the init_code subroutine if you use
                   }
                 }
 ```
-
 
 Due to the way the configuration file is parsed, there must be no empty
 lines in the init_code section. Either use comments to introduce white

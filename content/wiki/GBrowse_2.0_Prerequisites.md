@@ -3,14 +3,12 @@ title: "GBrowse 2.0 Prerequisites"
 ---
 # GBrowse 2.0 Prerequisites
 
-
 Before [installing GBrowse
 2.0](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO"), you will
 need to install some prerequisites on your system. Most prerequisites
 come as prepackaged binaries which can be installed from the command
 line or via GUI tools. This document describes the prerequisites for
 Linux, Mac OSX, and Microsoft Windows systems.
-
 
   systems</span>](#Linux_systems)
   - [Applications and
@@ -32,7 +30,6 @@ Linux, Mac OSX, and Microsoft Windows systems.
     Way](#Mac_Ports_Way)
   - [Perl
     Modules](#Perl_Modules)
-
 
 # Linux systems
 
@@ -122,7 +119,6 @@ source code this way:
      ./Build test
      sudo ./Build install
 
-
 #### Ubuntu 10.04/11.04 Issue
 
 The binary version of the GD Perl module that is packaged for Ubuntu
@@ -137,7 +133,6 @@ fix:
 Then proceed to install Bio::Graphics::Browser2 from the CPAN shell as
 described in [GBrowse 2.0 Install
 HOWTO](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO").
-
 
 ### RPM Systems (yum)
 
@@ -300,8 +295,3 @@ In addition, the following optional Perl libraries are recommended:
     Math::BigInt::GMP or Math::BigInt::Pari libraries. It is suggested
     that you install these libraries before trying to install
     Math::BigInt and Net::OpenId::Consumer.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")

@@ -3,7 +3,6 @@ title: "News/CMap 1.01 Released"
 ---
 # News/CMap 1.01 Released
 
-
 Version 1.01 of [CMap](../CMap.1 "CMap") has been released.
 
 I'm quite excited about using [GFF3](../GFF3 "GFF3") for data
@@ -42,10 +41,8 @@ If you are updating from an older version, see the documentation in the
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

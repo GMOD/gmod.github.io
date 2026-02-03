@@ -3,15 +3,12 @@ title: "Galaxy Tutorial 2010"
 ---
 # Galaxy Tutorial 2010
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/250px-GalaxyLogoBigger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/375px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/500px-GalaxyLogoBigger.png 2x"
 width="250" height="89" alt="Galaxy" />
-
 
 This [Galaxy](Galaxy.1 "Galaxy") tutorial was presented by [James
 Taylor](User%253AJamesTaylor "User%253AJamesTaylor") at the [2010 GMOD Summer
@@ -23,7 +20,6 @@ title="Galaxy Tutorial">Galaxy Tutorial</a> page.
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through setting up and running a [Galaxy](Galaxy.1 "Galaxy") server.
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -113,7 +109,6 @@ through setting up and running a [Galaxy](Galaxy.1 "Galaxy") server.
 - [Where to go
   next](#Where_to_go_next)
 
-
 ## VMware
 
 This tutorial was taught using a VMware system image
@@ -130,13 +125,9 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |
-|---------|----------|------------------|
-| Shell   | gmod     | gmodamericas2010 |
-| MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
 
 ## Caveats
-
 
 **Important Note**
 
@@ -146,7 +137,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
 ## About Galaxy
 
@@ -292,9 +282,7 @@ Enter
 
     ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/Galaxy/TAF1_ChIP.txt
 
-
 Note: This file was located at galaxy.psu.edu at course time.
-
 
 in the box and click **Execute**.
 
@@ -416,13 +404,13 @@ the SQLite command line interface:
 For example, let's look at the first dataset we created:
 
     sqlite> select * from history_dataset_association limit 1;
-    1|1|1|2010-05-02 18:19:35.635527|2010-05-02 18:19:42.365634||1|http://galaxy.psu.edu/CPMB/TAF1_ChIP.txt%7Cuploaded tabular file|200 lines, 1 comments|#bin   chrom   chromStart  chromEnd    name    score   floatScore
+    1|1|1|2010-05-02 18:19:35.635527|2010-05-02 18:19:42.365634|1|http://galaxy.psu.edu/CPMB/TAF1_ChIP.txt%7Cuploaded tabular file|200 lines, 1 comments|#bin   chrom   chromStart  chromEnd    name    score   floatScore
     1470    chr7    116099071   116100373   26384   720 2.183
     1589    chr5    131622266   131623568   26442   679 2.06
     1590    chr5    131854028   131855330   26415   693 2.102
     1591    chr5    131859918   131861220   26451   675 2.048
     1592    chr5    132109996   132111298   26337   764 2.317
-    |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}|||0|1|
+    |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}||0|1|
 
 We see that this table tracks all the information the Galaxy interface
 needs to work with this dataset, include user defined fields such as
@@ -467,7 +455,6 @@ instance:
 
     gmod@ubuntu:~/work/galaxy-dist$ head tool_conf.xml
 
-
 ``` de1
  <?xml version="1.0"?>
  <toolbox>
@@ -481,11 +468,9 @@ instance:
      <tool file="data_source/biomart.xml" />
 ```
 
-
 Each referenced file contains the description of a particular tool.
 Let's examine the **Get Flanks** tool we used earlier, contained in the
 file `tools/new_operations/get_flanks.xml`:
-
 
 ``` de1
  <tool id="get_flanks1" name="Get flanks">
@@ -512,7 +497,6 @@ file `tools/new_operations/get_flanks.xml`:
   ...
  </tool>
 ```
-
 
 (Tests and help have been removed from this listing).
 
@@ -638,9 +622,7 @@ Galaxy. You can enter multiple URLs into the **URL / Text** box. Enter:
     ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/Galaxy/phiX174_genome.fa
     ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/Galaxy/phiX174_reads.fastqsanger
 
-
 Note: These files were located at Emory at course time.
-
 
 and click **Execute**:
 
@@ -696,7 +678,6 @@ Let's first create a directory for our new tool:
 And then using a text editor, create `tools/gmod_2010/sam_filter.py`
 containing:
 
-
 ``` de1
 #!/usr/bin/env python
  
@@ -722,12 +703,10 @@ for line in open( sys.argv[1] ):
         out.write( line )
 ```
 
-
 ### The tool wrapper
 
 Next, we need to create the tool configuration. Edit the file
 `tools/gmod_2010/sam_filter.xml` and start the following skeleton:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -743,10 +722,8 @@ Next, we need to create the tool configuration. Edit the file
 </tool>
 ```
 
-
 First, let's define the output. This tool has a single output, of type
 `sam`, so we modify the configuration to contain:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -762,7 +739,6 @@ First, let's define the output. This tool has a single output, of type
 </tool>
 ```
 
-
 The name can be anything, but it will be used later to identify the
 output file in the command line. Second, let's define the following
 inputs
@@ -772,7 +748,6 @@ inputs
 - An input value, which can be any text
 
 The resulting configuration:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -794,12 +769,10 @@ The resulting configuration:
 </tool>
 ```
 
-
 Finally, we define how to construct our command line based on values for
 the inputs. The command line is a template, where we can substitute in
 the value of each input (filenames in the case of datasets). Thus our
 final tool configuration is:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -821,10 +794,8 @@ final tool configuration is:
 </tool>
 ```
 
-
 We now need to modify `tool_conf.xml` to register our new tool and run
 Galaxy. Modify the top of `tool_conf.xml` to look like:
-
 
 ``` de1
 <?xml version="1.0"?>
@@ -834,7 +805,6 @@ Galaxy. Modify the top of `tool_conf.xml` to look like:
   </section>
   ...
 ```
-
 
 and run Galaxy using `run.sh`
 
@@ -923,9 +893,7 @@ Now, we will download the datasets for our example genome:
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/Galaxy/a_example_1.maf
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/Galaxy/a_example_1.2bit
 
-
 Note: These files were at Emory at course time.
-
 
 Next, we will use the script `maf_build_index.py` to create a binary
 index that allows fast selection of alignments from a MAF file:
@@ -1078,17 +1046,7 @@ are some pointers for learning more:
   class="external text" rel="nofollow">You can find even more at the
   Galaxy wiki</a>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Galaxy Tutorial
-2010](Special%253ABrowse/Galaxy-20Tutorial-202010 "Special%253ABrowse/Galaxy-20Tutorial-202010")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Galaxy](Galaxy.1 "Galaxy") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Galaxy "Special%253ASearchByProperty/Has-20topic/Galaxy")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Galaxy](Galaxy.1 "Galaxy")  |

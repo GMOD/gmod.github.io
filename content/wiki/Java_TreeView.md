@@ -3,7 +3,6 @@ title: "Java TreeView"
 ---
 # Java TreeView
 
-
 Java TreeView, a portable Java application that has been tested on
 Linux, Windows, MacOS9 and MacOSX. Java TreeView is a
 [visualization](Visualization "Visualization") for various clustering
@@ -15,13 +14,11 @@ used to display the results of clustering sequence motifs.
 
   
 
-
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Demo & Screenshots
 

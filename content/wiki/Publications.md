@@ -3,7 +3,6 @@ title: "Publications"
 ---
 # Publications
 
-
   
 The following is a partial listing of publications/references describing
 GMOD components or databases and applications built using GMOD

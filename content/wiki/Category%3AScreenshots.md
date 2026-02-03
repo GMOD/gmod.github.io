@@ -3,20 +3,16 @@ title: "Category%253AScreenshots"
 ---
 # Category%253AScreenshots
 
-
 Screenshots of [GMOD Components](GMOD_Components "GMOD Components"),
 GMOD user web sites, and anything else.
-
 
 ## Pages in category "Screenshots"
 
 This category contains only the following page.
 
-
 ### A
 
 - [AWS walkthrough](AWS_walkthrough "AWS walkthrough")
-
 
 ## Media in category "Screenshots"
 

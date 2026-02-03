@@ -3,7 +3,6 @@ title: "Mage FAQ"
 ---
 # Mage FAQ
 
-
   FAQ</span>](#About_this_FAQ)
   - [What is
     this FAQ?](#What_is_this_FAQ.3F)
@@ -30,7 +29,6 @@ title: "Mage FAQ"
     create a reference from the results of a microarray experiment to
     the source of the data stored in the pub
     table?](#How_do_you_create_a_reference_from_the_results_of_a_microarray_experiment_to_the_source_of_the_data_stored_in_the_pub_table.3F)
-
 
   
 

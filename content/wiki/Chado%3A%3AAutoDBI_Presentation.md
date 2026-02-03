@@ -3,11 +3,9 @@ title: "Chado%253A%253AAutoDBI Presentation"
 ---
 # Chado%253A%253AAutoDBI Presentation
 
-
 This Wiki section is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/AutoDBI.pdf" class="internal"
 title="AutoDBI.pdf">Brian O'Connor's presentation</a>.
-
 
   Turnkey</span>](#Relation_to_Turnkey)
 - [Technical
@@ -37,7 +35,6 @@ title="AutoDBI.pdf">Brian O'Connor's presentation</a>.
 - [For More
   Information](#For_More_Information)
 
-
 ##### Relation to Turnkey
 
 Turnkey is a package that auto-generates Web sites given a relational
@@ -54,15 +51,12 @@ schema, based on SQL::Translator
 
 Convert SQL Queries/Inserts/Deletes -\> Object Calls
 
-
 ``` de1
   INSERT INTO feature (organism_id, name)
                                   VALUES (1, 'foo');
 ```
 
-
 To:
-
 
 ``` de1
     my $feature = Turnkey::Model::Feature->find_or_create({
@@ -73,7 +67,6 @@ To:
                    });
 ```
 
-
 ##### Technical Overview
 
 - Database connection: use a base class
@@ -81,7 +74,6 @@ To:
   primary key.
 - Class::DBI can find and insert records into other table, based on
   foreign key.
-
 
 ``` de1
 use base qw(Class::DBI::Pg);
@@ -94,11 +86,9 @@ $pass = "";
 Turnkey::Model::DBI->set_db('Main', $dsn, $name, $pass, {AutoCommit => 1});
 ```
 
-
 ##### Technical Overview
 
 - Basic [ORM](Glossary#ORM "Glossary") Object: Feature
-
 
 ``` de1
 package Turnkey::Model::Feature;
@@ -114,14 +104,12 @@ sub id { shift->feature_id }
 sub feature { shift->feature_id }
 ```
 
-
 - data field accessors by Class::Accessor
 
 ##### Technical Overview
 
 - Basic ORM Object: Feature
   - has_a
-
 
 ``` de1
 #
@@ -131,10 +119,8 @@ Turnkey::Model::Feature->has_a( type_id => "Turnkey::Model::Cvterm" );
 sub cvterm { return shift->type_id; }
 ```
 
-
 - Basic ORM Object: Feature
   - has_many
-
 
 ``` de1
 #
@@ -149,7 +135,6 @@ Turnkey::Model::Feature->has_many('featureprop_feature_id',
 sub featureprops { return shift->featureprop_feature_id; }
 ```
 
-
 - Can traverse tables, such as going from FEATURE to FEATUREPROP
   - Tell base object that the *table object* has_a() or has_many() keys
     corresponding to some key in other *table object*
@@ -158,7 +143,6 @@ sub featureprops { return shift->featureprop_feature_id; }
 
 - Basic ORM Object: Feature
   - skipping linker tables for has_many
-
 
 ``` de1
 # skip over feature_synonym table
@@ -173,13 +157,11 @@ Turnkey::Model::Feature->has_many( synonyms2 =>
                       ['Turnkey::Model::Feature_Synonym' => 'synonym_id']);
 ```
 
-
 ##### Technical Overview
 
 - Transactions
   - Chado%253A%253AAutoDBI supports transactions, and one can wrap the
     transaction in an eval()
-
 
 ``` de1
   sub do_transaction {
@@ -200,13 +182,11 @@ Turnkey::Model::Feature->has_many( synonyms2 =>
   }
 ```
 
-
 ##### Technical Overview
 
 - Lazy Loading
   - One can either do automated creation of objects or explicitly
     dictate which fields are incorporated into object
-
 
 ``` de1
 Turnkey::Model::Feature->columns( Primary => qw/feature_id/ );
@@ -214,19 +194,15 @@ Turnkey::Model::Feature->columns( Essential => qw/name organism_id type_id/ );
 Turnkey::Model::Feature->columns( Others => qw/residues .../ );
 ```
 
-
 Typically:
-
 
 ``` de1
 Turnkey::Model::Feature->set_up_table('feature');
 ```
 
-
 ##### Problem 1
 
 - Create Feature & Add Description
-
 
 ``` de1
 # now create mRNA feature
@@ -247,13 +223,11 @@ my $featureprop = Turnkey::Model::Featureprop->find_or_create({
                    });
 ```
 
-
 ##### Problem 2
 
 - Retrieve a Feature via Searching
   - Search using strings or identifiers, a search will return an
     iterator object
-
 
 ``` de1
 # objects for global use
@@ -269,11 +243,9 @@ my $note_cvterm = Turnkey::Model::Cvterm->retrieve(2);
 my @results = Turnkey::Model::Feature->search_like(name => 'x-%');
 ```
 
-
 ##### Problems 3, 4, & 5
 
 - Update a Feature
-
 
 ``` de1
 # update the xfile gene name
@@ -282,16 +254,13 @@ $feature->name("x-file");
 $feature->update();
 ```
 
-
 - Delete a Feature
-
 
 ``` de1
 # now delete the x-file feature
  
 $feature->delete();
 ```
-
 
 ##### Things Chado%253A%253AAutoDBI does well
 

@@ -3,7 +3,6 @@ title: "GMOD Online Training 2014/Schedule"
 ---
 # GMOD Online Training 2014/Schedule
 
-
 ## Schedule
 
 Classes start at 9am Eastern Daylight Time (UTC-4).

@@ -3,7 +3,6 @@ title: "February 2003 GMOD Meeting"
 ---
 # February 2003 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
 
 ## Meeting 1
@@ -35,8 +34,3 @@ rel="nofollow">Scott Cain</a>.
 - [Chado XML](Chado_XML "Chado XML") uses
 - [SGD](Category%253ASGD "Category%253ASGD")
 - [Textpresso](Textpresso "Textpresso")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

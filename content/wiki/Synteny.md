@@ -3,16 +3,13 @@ title: "Comparative Genomics"
 ---
 # Comparative Genomics
 
-
 (Redirected from
 [Synteny](/wiki/Synteny)
-
 
 GMOD includes several components for managing and visualizing
 [comparative genomics and
 synteny](Category%253AComparative_Genomics "Category%253AComparative Genomics")
 data.
-
 
   Introduction](#Introduction)
 - [Presentations
@@ -23,7 +20,6 @@ data.
   - [GBrowse_syn](#GBrowse_syn)
   - [Sybil](#Sybil)
   - [SynView](#SynView)
-
 
 ## Introduction
 
@@ -76,9 +72,7 @@ See [CMap](CMap.1 "CMap") for more.
 
 ### GBrowse_syn
 
-
 GBrowse_syn, as implemented at WormBase
-
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), or the Generic Synteny
 Browser, is a [GBrowse](GBrowse.1 "GBrowse")-based
@@ -122,9 +116,3 @@ on [GBrowse](GBrowse.1 "GBrowse"). It can be layered on top of an
 existing GBrowse instance and uses the full range of GBrowse's display
 and configuration options. SynView is included in the GBrowse
 distribution.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Comparative
-  Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")

@@ -3,17 +3,14 @@ title: "Chado Phenotype Module at FlyBase"
 ---
 # Chado Phenotype Module at FlyBase
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="Under Construction" />
-
 
 <span style="font-size: 140%">This page or section is under
 construction.</span>  
   
 Should be done before Jan 1, 2011
-
 
 The [Chado Phenotype
 module](Chado_Phenotype_Module "Chado Phenotype Module") was developed
@@ -33,7 +30,6 @@ tables.
 
 **These notes reflect the state of the FlyBase Chado database during the
 first two weeks on November 2010.**
-
 
   Tables](#Tables)
   - [Important
@@ -94,17 +90,9 @@ first two weeks on November 2010.**
       - [chromosome_id](#chromosome_id)
       - [rank](#rank_2)
 
-
 # Tables
 
-| Table | rows at FlyBase |
-|----|----|
-| [**`feature_phenotype`**](Chado_Phenotype_Module#Table:_feature_phenotype "Chado Phenotype Module") | 0 |
-| [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") | 10,925 |
-| [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") | 100,235 |
-| [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") | 7,714 |
-| [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") | 20,673 |
-| [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") | 112,390 |
+| Table | rows at FlyBase |----|----| [**`feature_phenotype`**](Chado_Phenotype_Module#Table:_feature_phenotype "Chado Phenotype Module") | 0 | [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") | 10,925 | [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") | 100,235 | [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") | 7,714 | [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") | 20,673 | [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") | 112,390 |
 
 And those are the only tables that have "phen" in their name.
 
@@ -118,13 +106,9 @@ And that's it?
 
 ## [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module")
 
-
 \<protect\>
 
-|  |  |
-|----|----|
-| **Table:** | **`phenotype`** |
-| **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
+|----|----| **Table:** | **`phenotype`** | **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
 
 A phenotypic statement, or a single atomic phenotypic observation, is a
 controlled sentence describing observable effects of non-wild type
@@ -214,7 +198,6 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 \</protect\>
 
-
 ### What is a Phenotype?
 
 From conversation with Jim Balhoff and Matt Yoder:
@@ -241,14 +224,7 @@ No
 
 ### [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") @ Flybase
 
-|                       | Counts |
-|-----------------------|--------|
-| Table Rows            | 10925  |
-| observable_id is null | 1      |
-| attr_id is null       | 1      |
-| cvalue_id is null     | 1      |
-| assay_id is null      | 1      |
-| value is null         | 10925  |
+| Counts |-----------------------|--------| Table Rows            | 10925  | observable_id is null | 1      | attr_id is null       | 1      | cvalue_id is null     | 1      | assay_id is null      | 1      | value is null         | 10925  |
 
 All the CVterm FKs that are null have the uniquename of "unspecified"
 
@@ -268,7 +244,6 @@ There are 1473 of these (every one of them unspecified).
 
   
 
-
 ``` de1
 SELECT COUNT(*), c.name
   FROM phenotype p, cvterm t, cv c
@@ -278,7 +253,6 @@ SELECT COUNT(*), c.name
  ORDER BY 1 DESC
  LIMIT 50;
 ```
-
 
     count |           name
     ------+--------------------------
@@ -328,13 +302,9 @@ value is null in every row in FlyBase.
 
 ## [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`phenotype_comparison`**                                 |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`phenotype_comparison`**                                 | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
 Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 "non-suppressible" with respect to genotype2/environment2/phenotype2.
@@ -446,18 +416,11 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 \</protect\>
 
-
 This table is good for binary comparisons. How broadly useful is that?
 
 ### [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") @ Flybase
 
-|                                   | Counts  |
-|-----------------------------------|---------|
-| Table Rows                        | 100,235 |
-| phenotype2_id is null             | 0       |
-| phenotype1_id = phenotype2_id     | 42,510  |
-| genotype1_id = genotype2_id       | 0       |
-| environment1_id = environment2_id | 99,293  |
+| Counts  |-----------------------------------|---------| Table Rows                        | 100,235 | phenotype2_id is null             | 0       | phenotype1_id = phenotype2_id     | 42,510  | genotype1_id = genotype2_id       | 0       | environment1_id = environment2_id | 99,293  |
 
 Every column but phenotype2_id is not nullable, and that column has no
 nulls in it either.
@@ -486,13 +449,9 @@ What makes two G/E/P pairs comparable?
 
 ## [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
 
-
 \<protect\>
 
-|  |  |
-|----|----|
-| **Table:** | **`phenotype_cvterm`** |
-| **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
+|----|----| **Table:** | **`phenotype_cvterm`** | **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
 
   
 
@@ -564,9 +523,7 @@ no semantics on how the terms relate to each other or to the phenotype.
 
 ### [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") @ Flybase
 
-|            | Counts |
-|------------|--------|
-| Table Rows | 7714   |
+| Counts |------------|--------| Table Rows | 7714   |
 
 #### rank
 
@@ -590,7 +547,6 @@ Links to terms in 5 different CVs
 
 Find rows that use rank in the unique constraint.
 
-
 ``` de1
 SELECT * FROM phenotype_cvterm pcv1
  WHERE EXISTS (
@@ -599,7 +555,6 @@ SELECT * FROM phenotype_cvterm pcv1
        AND pcv1.phenotype_id = pcv2.phenotype_id
        AND pcv1.cvterm_id = pcv2.cvterm_id) LIMIT 10;
 ```
-
 
     phenotype_cvterm_id | phenotype_id | cvterm_id | rank
     --------------------+--------------+-----------+------
@@ -615,13 +570,9 @@ Rank is used for some sort of code that is not stored in the database?
 
 ## [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`phenstatement`**                                        |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`phenstatement`**                                        | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
 Phenotypes are things like "larval lethal". Phenstatements are things
 like "dpp-1 is recessive larval lethal". So essentially phenstatement is
@@ -711,9 +662,7 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 ### [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") @ Flybase
 
-|            | Counts |
-|------------|--------|
-| Table Rows | 203673 |
+| Counts |------------|--------| Table Rows | 203673 |
 
 All columns are not null; all except PK are FKs. Therefore
 phenstatements require
@@ -735,13 +684,9 @@ uniquename.
 
 ## [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`phendesc`**                                             |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`phendesc`**                                             | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
 A summary of a \_set\_ of phenotypic statements for any one gcontext
 made in any one publication.
@@ -848,10 +793,7 @@ don't join with any phenstatements.
 
 ### [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") @ Flybase
 
-|                     | Counts  |
-|---------------------|---------|
-| Table Rows          | 112,390 |
-| description is null | 0       |
+| Counts  |---------------------|---------| Table Rows          | 112,390 | description is null | 0       |
 
 No columns are nullable. There is description, 4 FKs (genotype_id,
 environment_id, type_id, pub_id), and the PK.
@@ -860,7 +802,6 @@ Description is not unique with "Homozygous lethal." and "homozygous
 lethal" making up ~1% of records.
 
 #### type_id
-
 
 ``` de1
 SELECT COUNT(*), t.name, c.name
@@ -871,7 +812,6 @@ SELECT COUNT(*), t.name, c.name
  ORDER BY 1 DESC
  LIMIT 50;
 ```
-
 
     count |           name            |     name
     ------+---------------------------+---------------
@@ -904,13 +844,9 @@ and none are null.
 
 Definition:
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`environment`**                                          |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`environment`**                                          | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
 The environmental component of a phenotype description.
 
@@ -967,12 +903,9 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 \</protect\>
 
-
 ### [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module") @ Flybase
 
-|            | Counts |
-|------------|--------|
-| Table Rows | 15     |
+| Counts |------------|--------| Table Rows | 15     |
 
 description is null in all rows.
 
@@ -998,13 +931,9 @@ Uniquename choice are:
 
 Definition:
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`environment_cvterm`**                                   |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`environment_cvterm`**                                   | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
   
 
@@ -1068,21 +997,15 @@ environment.
 
 ### [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module") @ Flybase
 
-|            | Counts |
-|------------|--------|
-| Table Rows |  ?     |
+| Counts |------------|--------| Table Rows |  ?     |
 
 ## [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module")
 
 Definition:
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`genotype`**                                             |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`genotype`**                                             | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
 Genetic context. A genotype is defined by a collection of features,
 mutations, balancers, deficiencies, haplotype blocks, or engineered
@@ -1151,15 +1074,9 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 \</protect\>
 
-
 ### [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module") @ Flybase
 
-|                               | Counts  |
-|-------------------------------|---------|
-| Table Rows                    | 263,153 |
-| description is null           | 263,153 |
-| name is null                  | 165,210 |
-| description and name are null | 165,210 |
+| Counts  |-------------------------------|---------| Table Rows                    | 263,153 | description is null           | 263,153 | name is null                  | 165,210 | description and name are null | 165,210 |
 
 There is no **`genotype_cvterm`** table.
 
@@ -1177,13 +1094,9 @@ nomenclature that often includes one or more FlyBase IDs.
 
 Definition:
 
-
 \<protect\>
 
-|             |                                                            |
-|-------------|------------------------------------------------------------|
-| **Table:**  | **`feature_genotype`**                                     |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+|-------------|------------------------------------------------------------| **Table:**  | **`feature_genotype`**                                     | **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
 
   
 
@@ -1283,10 +1196,7 @@ group have some semantics.
 
 ### [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module") @ Flybase
 
-|                       | Counts  |
-|-----------------------|---------|
-| Table Rows            | 551,551 |
-| chromosome_id is null | 0       |
+| Counts  |-----------------------|---------| Table Rows            | 551,551 | chromosome_id is null | 0       |
 
 #### cvterm_id
 

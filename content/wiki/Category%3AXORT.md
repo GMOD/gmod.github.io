@@ -3,11 +3,9 @@ title: "Category%253AXORT"
 ---
 # Category%253AXORT
 
-
 ## Pages in category "XORT"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -48,7 +46,6 @@ data</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "XORT"
 

@@ -3,7 +3,6 @@ title: "News/New NGDx Group at Novartis"
 ---
 # News/New NGDx Group at Novartis
 
-
 From Pamela Bailey at Novartis Institutes for BioMedical Research:
 
 Novartis Institutes for BioMedical Research (NIBR) is building a new
@@ -22,10 +21,8 @@ rel="nofollow">http://novartis.avature.net/NGDX</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

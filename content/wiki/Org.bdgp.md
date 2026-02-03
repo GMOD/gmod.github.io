@@ -3,7 +3,6 @@ title: "Org.bdgp"
 ---
 # Org.bdgp
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
@@ -30,8 +29,3 @@ rel="nofollow">http://www.fruitfly.org</a>
 
 <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
 class="external text" rel="nofollow">From SourceForge.</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")

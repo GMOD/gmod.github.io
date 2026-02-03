@@ -3,7 +3,6 @@ title: "News/Account Creation Temporarily Disabled"
 ---
 # News/Account Creation Temporarily Disabled
 
-
 Due to overwhelming wiki-spam over the last few weeks, new account
 creation has been disabled temporarily while we assess methods of
 controlling the spam. In the meantime, new accounts can still be created
@@ -14,10 +13,8 @@ Cain](../User%253AScott "User%253AScott"). Sorry for any inconvenience.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/03/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

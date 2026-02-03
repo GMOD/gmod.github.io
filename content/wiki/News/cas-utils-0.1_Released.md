@@ -3,7 +3,6 @@ title: "News/cas-utils-0.1 Released"
 ---
 # News/cas-utils-0.1 Released
 
-
 In the wake of the <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> a little over a week
 ago, I decided that I should create a release that has the tools that I
@@ -69,10 +68,8 @@ Thanks and happy curating! [Scott Cain](../User%253AScott "User%253AScott")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

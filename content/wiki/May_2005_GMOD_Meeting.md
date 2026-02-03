@@ -3,9 +3,7 @@ title: "May 2005 GMOD Meeting"
 ---
 # May 2005 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
-
 
   6</span>](#Meeting_6)
 - [Presentations](#Presentations)
@@ -19,7 +17,6 @@ Generic Model Organism Database Construction Set
     - [Timeline of a
       recommendation](#Timeline_of_a_recommendation)
   - [Communication](#Communication)
-
 
 ## Meeting 6
 
@@ -271,8 +268,3 @@ One conference call per month can be expected and we will work out a
 time among the group that will be our standard time for a conference
 call. We will try to limit conference calls to one hour per month per
 active recommendation.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

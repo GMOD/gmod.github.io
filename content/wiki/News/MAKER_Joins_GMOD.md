@@ -3,7 +3,6 @@ title: "News/MAKER Joins GMOD"
 ---
 # News/MAKER Joins GMOD
 
-
 [MAKER](../MAKER.1 "MAKER") is a portable and easy to configure genome
 [annotation](../Category%253AAnnotation "Category%253AAnnotation") pipeline that
 has just become a part of GMOD. It's purpose is to allow smaller
@@ -30,10 +29,8 @@ automatically annotate your genomic data.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/05/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,11 +3,9 @@ title: "GBrowse (DasI) Presentation"
 ---
 # GBrowse (DasI) Presentation
 
-
 This Wiki page is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/DasI_middleware.pdf" class="internal"
 title="DasI middleware.pdf">Scott's presentation</a>.
-
 
   database</span>](#Create_the_database)
 - [Problem 1 -
@@ -22,7 +20,6 @@ title="DasI middleware.pdf">Scott's presentation</a>.
   Output](#Bulk_Output)
 - [Advantages](#Advantages)
 - [Conclusion](#Conclusion)
-
 
 ##### Create the database
 
@@ -60,23 +57,20 @@ Gene inserted as GFF3 using a standard bulk loader:
 
 ##### Use Bio::DB::Das::Chado
 
-
 ``` de1
 use Bio::DB::Das::Chado;
  
 my $chado = Bio::DB::Das::Chado->new(
       -dsn => "dbi:Pg:dbname=test",
       -user=> "scott",
-      -pass=> "" ) || die "no new chado";
+      -pass=> "" ) | die "no new chado";
  
 my $gene_name = 'xfile';
  
 my ($gene_fo) = $chado->get_features_by_name($gene_name);
 ```
 
-
 ##### Problem 2 - Use Some Accessors
-
 
 ``` de1
 print "symbol: "      .  $gene_fo->display_name."\n";
@@ -96,9 +90,7 @@ for my $exon (@exons) {
 }
 ```
 
-
 ##### Bulk Output
-
 
 ``` de1
  my $gene_name = 'x-*';
@@ -114,7 +106,6 @@ for my $exon (@exons) {
                 $gene->organism),"\n";
  }
 ```
-
 
 Or see your report in [GBrowse](GBrowse.1 "GBrowse")
 

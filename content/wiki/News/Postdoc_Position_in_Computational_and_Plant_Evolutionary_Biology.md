@@ -3,7 +3,6 @@ title: "News/Postdoc Position in Computational and Plant Evolutionary Biology"
 ---
 # News/Postdoc Position in Computational and Plant Evolutionary Biology
 
-
 The project involves construction and analysis of plant gene families
 and phylogenies, particularly focusing on the large legume family, and
 development of a corresponding database and on-line tools for accessing
@@ -30,6 +29,5 @@ If interested, please contact
 rel="nofollow">Steven Cannon</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/1/24*

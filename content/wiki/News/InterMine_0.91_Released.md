@@ -3,12 +3,10 @@ title: "News/InterMine 0.91 Released"
 ---
 # News/InterMine 0.91 Released
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/00/InterMine.png/200px-InterMine.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 2x"
 width="200" height="55" alt="InterMine" />](../InterMine "InterMine")
-
 
 We've released [InterMine](../InterMine "InterMine") 0.91 and there is a
 new subversion branch and tar.gz for download. The main changes are
@@ -34,10 +32,8 @@ The [InterMine](../InterMine "InterMine") team
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

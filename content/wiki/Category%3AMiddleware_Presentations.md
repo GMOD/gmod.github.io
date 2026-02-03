@@ -3,11 +3,9 @@ title: "Category%253AMiddleware Presentations"
 ---
 # Category%253AMiddleware Presentations
 
-
 ## Pages in category "Middleware Presentations"
 
 The following 4 pages are in this category, out of 4 total.
-
 
 ### B
 
@@ -25,7 +23,6 @@ The following 4 pages are in this category, out of 4 total.
 ### P
 
 - [PSU Presentation](PSU_Presentation "PSU Presentation")
-
 
 ## Media in category "Middleware Presentations"
 

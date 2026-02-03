@@ -3,11 +3,9 @@ title: "SynBrowse"
 ---
 # SynBrowse
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/SynBrowse_logo.png" width="460"
 height="104" alt="SynBrowse logo.png" />
-
 
   
 
@@ -17,14 +15,12 @@ height="104" alt="SynBrowse logo.png" />
 
   
 
-
   Status](#Status)
 - [Demo](#Demo)
 - [Requirements](#Requirements)
 - [Downloads](#Downloads)
 - [Citation](#Citation)
 - [Contact](#Contact)
-
 
 SynBrowse (Synteny Browser) is a generic sequence comparison tool for
 visualizing genome alignments both within and between species. It is

@@ -3,14 +3,12 @@ title: "November 2007 GMOD Meeting"
 ---
 # November 2007 GMOD Meeting
 
-
 GMOD's November 2007 meeting was held November 5, 1:30PM to November 7,
 12:00PM at
 <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
 Spring Harbor Laboratory</a> following the
 <a href="http://meetings.cshl.edu/meetings/info07.shtml"
 class="external text" rel="nofollow">Genome Informatics</a> meeting.
-
 
   Information</span>](#Pre-Meeting_Information)
   - [Possible
@@ -101,7 +99,6 @@ class="external text" rel="nofollow">Genome Informatics</a> meeting.
       Center](#University_of_Maryland_Medical_Center)
     - [WormBase / CSHL](#WormBase_.2F_CSHL)
       - [GBrowse_Syn](#GBrowse_Syn)
-
 
 ## Pre-Meeting Information
 

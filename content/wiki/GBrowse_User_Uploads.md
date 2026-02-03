@@ -3,7 +3,6 @@ title: "GBrowse User Uploads"
 ---
 # GBrowse User Uploads
 
-
 [GBrowse](GBrowse.1 "GBrowse") allows users to supplement the database
 with their own data as Custom Tracks in a variety of file formats
 including BAM, SAM, GFF, GFF3, BedLoader, and more. Users can upload
@@ -21,7 +20,6 @@ rel="nofollow">SQLite</a> and
 <a href="http://www.mysql.com/" class="external text"
 rel="nofollow">MySQL</a> as databases, though it should be possible to
 use others.
-
 
   Display](#Display)
 - [Basic Custom
@@ -51,7 +49,6 @@ use others.
   - [Uploads](#Uploads)
   - [Sharing](#Sharing)
   - [DBInfo](#DBInfo)
-
 
 ## Display
 
@@ -278,19 +275,7 @@ database. Its schema is as follows:
 
 This table holds all the metadata for every custom or community track.
 
-| Field | Type | Description |
-|----|----|----|
-| trackid | varchar(32) not null PRIMARY key" | A unique 32-character hexadecimal ID that refers to this specific track. |
-| userid | integer not null" | The user ID of the user that uploaded this file. |
-| path | text | The file path or URL to the file. |
-| title | text | The human-readable title of the file. |
-| description | text | A description of the file. |
-| imported | boolean not null | Whether the file was imported from an external source, or uploaded. |
-| creation_date | datetime not null | The time the track was created. |
-| modification_date | datetime | The last time the track was modified. |
-| sharing_policy | ENUM('private', 'public', 'group', 'casual') not null | The sharing policy of the track. |
-| public_count | int | The number of public users. |
-| data_source | text | The GBrowse data source that the track belongs to. |
+| Field | Type | Description |----|----|----| trackid | varchar(32) not null PRIMARY key" | A unique 32-character hexadecimal ID that refers to this specific track. | userid | integer not null" | The user ID of the user that uploaded this file. | path | text | The file path or URL to the file. | title | text | The human-readable title of the file. | description | text | A description of the file. | imported | boolean not null | Whether the file was imported from an external source, or uploaded. | creation_date | datetime not null | The time the track was created. | modification_date | datetime | The last time the track was modified. | sharing_policy | ENUM('private', 'public', 'group', 'casual') not null | The sharing policy of the track. | public_count | int | The number of public users. | data_source | text | The GBrowse data source that the track belongs to. |
 
 ### Sharing
 
@@ -300,11 +285,7 @@ public file to their session, a new record is kept in this table to
 store that relationship. Not the public flag - public and shared files
 are kept separate, to avoid contamination between the two share types.
 
-| Field   | Type                 | Description                                |
-|---------|----------------------|--------------------------------------------|
-| trackid | varchar(32) not null | The unique ID of the track to be shared.   |
-| userid  | integer not null     | The unique ID of the user to be shared to. |
-| public  | boolean              | Whether the relationship is                |
+| Field   | Type                 | Description                                |---------|----------------------|--------------------------------------------| trackid | varchar(32) not null | The unique ID of the track to be shared.   | userid  | integer not null     | The unique ID of the user to be shared to. | public  | boolean              | Whether the relationship is                |
 
 ### DBInfo
 
@@ -312,11 +293,4 @@ In addition to the uploads tables, this table stores the version number
 of the current schema. It is used for upgrading and keeping track of the
 schema version.
 
-| Field | Type | Description |
-|----|----|----|
-| schema_version | int(10) not null UNIQUE | The version number of the current database schema. |
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
+| Field | Type | Description |----|----|----| schema_version | int(10) not null UNIQUE | The version number of the current database schema. |

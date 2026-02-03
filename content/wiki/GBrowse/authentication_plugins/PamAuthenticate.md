@@ -3,7 +3,6 @@ title: "Gbrowse/authentication plugins/PamAuthenticate"
 ---
 # Gbrowse/authentication plugins/PamAuthenticate
 
-
 The PamAuthenticate plugin is one of a very small number of [GBrowse
 Plugins](../../GBrowse_Plugins "GBrowse Plugins") that can be used to
 gather user credentials and authenticate them. This associates a user
@@ -16,7 +15,6 @@ with a stable username and can be used to:
 3.  [Authorize](../../GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
     certain users to access tracks and/or datasources.
 
-
   Introduction](#Introduction)
 - [Setting Up
   Username/Password
@@ -27,7 +25,6 @@ with a stable username and can be used to:
   the Plugin](#Customizing_the_Plugin)
 - [Further
   Information](#Further_Information)
-
 
 # Introduction
 
@@ -67,11 +64,9 @@ for more information).
 
 # Setting up Group Definitions
 
-
 <a href="../../File:Pam_authenticate.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/Pam_authenticate.png" width="426"
 height="330" alt="Pam authenticate.png" /></a>
-
 
 The PAM authentication plugin uses **/etc/nsswitch.conf** system
 configuration file to map users onto groups for group-based
@@ -135,8 +130,7 @@ to create your own customized authentication plugin, please see
 [Creating GBrowse
 Plugins](../../Creating_GBrowse_Plugins "Creating GBrowse Plugins").
 
-
-[Category](../../Special%253ACategories "Special%253ACategories"):
+:
 
 - [GBrowse
   Plugins](../../Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")

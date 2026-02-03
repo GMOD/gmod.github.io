@@ -3,7 +3,6 @@ title: "User%253ADukeleto"
 ---
 # User%253ADukeleto
 
-
 Jonathan "Duke" Leto
 
   

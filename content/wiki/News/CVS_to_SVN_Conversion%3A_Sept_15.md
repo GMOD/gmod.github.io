@@ -3,15 +3,11 @@ title: "News/CVS to SVN Conversion: Sept 15"
 ---
 # News/CVS to SVN Conversion: Sept 15
 
-
-|  |  |  |
-|----|----|----|
-| [<img
+|  |----|----|----| [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/0e/Cvs_logo.gif/70px-Cvs_logo.gif"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/Cvs_logo.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/Cvs_logo.gif 2x"
 width="70" height="54" alt="CVS" />](../CVS_to_Subversion_Conversion "CVS") | <span style="font-size: 200%; font-weight: bold">⇒</span> | [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Subversion_logo.jpg" width="73"
 height="52" alt="Subversion" />](../CVS_to_Subversion_Conversion "Subversion") |
-
 
 GMOD's CVS source code repository will be [converted to Subversion
 (SVN)](../CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
@@ -29,12 +25,10 @@ you get pre-release copies of GMOD components.** In the future you will
 do SVN checkouts instead of CVS checkouts. The doc on this web site will
 be updated to describe how to do this.
 
-
 **If you are a GMOD developer and your project is in GMOD's
 <a href="http://gmod.cvs.sourceforge.net/gmod/" class="external text"
 rel="nofollow">CVS repository</a> then this move will significantly
 affect you.**
-
 
 See
 <a href="http://gmod.cvs.sourceforge.net/gmod/" class="external text"
@@ -72,10 +66,8 @@ Buels](../User%253ARobertBuels "User%253ARobertBuels")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/26*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

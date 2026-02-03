@@ -3,7 +3,6 @@ title: "CMapDumper.pm"
 ---
 # CMapDumper.pm
 
-
 **CMapDumper.pm** is a [GBrowse](GBrowse.1 "GBrowse")
 <a href="Plugin" class="mw-redirect" title="Plugin">plugin</a>. The most
 extensive and up to date documentation is available from
@@ -11,8 +10,3 @@ extensive and up to date documentation is available from
 rel="nofollow">CPAN</a>,
 <a href="http://search.cpan.org/search?mode=all&amp;query=CMapDumper.pm"
 class="external text" rel="nofollow">here</a>.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse Plugins](Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")

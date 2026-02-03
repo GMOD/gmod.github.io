@@ -3,12 +3,10 @@ title: "IBatis Presentation"
 ---
 # IBatis Presentation
 
-
 Jeff Bowes, Xenbase, University of Calgary. This Wiki section is an
 edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf" class="internal"
 title="IBatis.pdf">Jeff's presentation</a>.
-
 
   ibatis](#ibatis)
 - [Abator](#Abator)
@@ -51,7 +49,6 @@ title="IBatis.pdf">Jeff's presentation</a>.
   Does Well](#What_iBatis_Does_Well)
 - [Acknowledgements](#Acknowledgements)
 
-
 ##### ibatis
 
 - iBatis
@@ -81,6 +78,29 @@ title="IBatis.pdf">Jeff's presentation</a>.
 
 ##### Abator Example
 
+``` de1
+ <abatorConfiguration>
+  <abatorContext>    <!-- TODO: Add Database Connection Information -->
+    <jdbcConnection driverClass="COM.ibm.db2.jdbc.app.DB2Driver"
+        connectionURL="jdbc:db2:XBDV05"
+        userId="db2inst1"
+        password=“*******">
+      <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
+    </jdbcConnection>
+ 
+    <javaModelGenerator
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
+   targetProject="gene" />
+    <sqlMapGenerator
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.sql"
+   targetProject="gene" />
+    <daoGenerator type="IBATIS"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.dao"
+   targetProject="gene" />
+ <abatorConfiguration>
+```
+
+##### Abator Example
 
 ``` de1
  <abatorConfiguration>
@@ -104,35 +124,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
  <abatorConfiguration>
 ```
 
-
 ##### Abator Example
-
-
-``` de1
- <abatorConfiguration>
-  <abatorContext>    <!-- TODO: Add Database Connection Information -->
-    <jdbcConnection driverClass="COM.ibm.db2.jdbc.app.DB2Driver"
-        connectionURL="jdbc:db2:XBDV05"
-        userId="db2inst1"
-        password=“*******">
-      <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
-    </jdbcConnection>
- 
-    <javaModelGenerator
-   targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
-   targetProject="gene" />
-    <sqlMapGenerator
-   targetPackage="org.gmod.architecture.framework.bakeoff.abator.sql"
-   targetProject="gene" />
-    <daoGenerator type="IBATIS"
-   targetPackage="org.gmod.architecture.framework.bakeoff.abator.dao"
-   targetProject="gene" />
- <abatorConfiguration>
-```
-
-
-##### Abator Example
-
 
 ``` de1
  <table schema="db2inst1" tableName="synonym"></nowiki> 
@@ -142,7 +134,6 @@ title="IBatis.pdf">Jeff's presentation</a>.
       <columnOverride column="MODIFIED_BY" jdbcType="INTEGER" />
  </table>
 ```
-
 
   
 
@@ -165,7 +156,6 @@ Works as:
 
 ##### Insert
 
-
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
   "org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs">
@@ -185,9 +175,7 @@ Works as:
   </insert>
 ```
 
-
 ##### Insert
-
 
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
@@ -208,9 +196,7 @@ Works as:
   </insert>
 ```
 
-
 ##### Insert
-
 
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
@@ -231,9 +217,7 @@ Works as:
   </insert>
 ```
 
-
 ##### Insert
-
 
 ``` de1
  <selectKey resultClass="java.lang.Integer"
@@ -242,9 +226,7 @@ Works as:
  </selectKey>
 ```
 
-
 ##### Insert
-
 
 ``` de1
  <selectKey resultClass="java.lang.Integer"
@@ -252,10 +234,8 @@ Works as:
         VALUES PREVVAL FOR feature_seq
  </selectKey>
 ```
-
 
 ##### Problem 1 - Insert
-
 
 ``` de1
  try {
@@ -275,9 +255,7 @@ Works as:
  }
 ```
 
-
 ##### Problem 1 - Insert
-
 
 ``` de1
  try {
@@ -296,7 +274,6 @@ Works as:
        sqlMap.endTransaction();
  }
 ```
-
 
 ##### Transactions
 
@@ -323,7 +300,6 @@ Works as:
 
 Account for cycles or recursion in Master Detail Report.
 
-
 ``` de1
  <resultMap id="SelectGeneResults"
    class="org.gmod.architecture.framework.bakeoff.Gene" groupBy="id">
@@ -347,11 +323,9 @@ Account for cycles or recursion in Master Detail Report.
    jdbcType="INTEGER" />
  </resultMap>
 ```
-
 
 ##### Problem 2 - Master Detail Report
 
-
 ``` de1
  <resultMap id="SelectGeneResults"
    class="org.gmod.architecture.framework.bakeoff.Gene" groupBy="id">
@@ -375,7 +349,6 @@ Account for cycles or recursion in Master Detail Report.
    jdbcType="INTEGER" />
  </resultMap>
 ```
-
 
 ##### Master Detail Report
 

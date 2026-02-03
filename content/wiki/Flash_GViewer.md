@@ -3,11 +3,9 @@ title: "Flash GViewer"
 ---
 # Flash GViewer
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Flash_gviewer_title.jpg" width="650"
 height="100" alt="Flash GViewer Logo" />
-
 
   
 Flash GViewer is a **customizable Flash movie** that can be easily
@@ -23,13 +21,11 @@ URL and new region selection sliders can be used to select a specific
 chromosome region and then link out to a genome browser for higher
 resolution information.
 
-
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Demo & Screenshots
 

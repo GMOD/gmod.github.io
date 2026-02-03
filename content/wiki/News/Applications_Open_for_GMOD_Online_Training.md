@@ -3,7 +3,6 @@ title: "News/Applications Open for GMOD Online Training"
 ---
 # News/Applications Open for GMOD Online Training
 
-
 GMOD will be holding its first online training course for those
 interested in the set up and use of GMOD components.
 
@@ -20,6 +19,5 @@ If you are interested in attending, please see [GMOD Online Training
 more information and to submit your application.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014-03-31*

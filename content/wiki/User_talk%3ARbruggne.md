@@ -3,10 +3,8 @@ title: "User talk:Rbruggne"
 ---
 # User talk:Rbruggne
 
-
 This is a scratch page for thoughts on development of the GMOD Bio
 Object Layer (GBOL).
-
 
   Random](#Random)
 - [Object Layer
@@ -21,7 +19,6 @@ Object Layer (GBOL).
 - [Analyses](#Analyses)
 - [Annotation
   Properties](#Annotation_Properties)
-
 
 ## Random
 

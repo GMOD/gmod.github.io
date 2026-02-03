@@ -3,12 +3,10 @@ title: "News/Get the Full ImpactStory"
 ---
 # News/Get the Full ImpactStory
 
-
 <a href="http://impactstory.org" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7a/ImpactstoryLogo.png/250px-ImpactstoryLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7a/ImpactstoryLogo.png/375px-ImpactstoryLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7a/ImpactstoryLogo.png 2x"
 width="250" height="46" alt="ImpactstoryLogo.png" /></a>
-
 
 The GMOD wiki now includes
 <a href="http://impactstory.org" class="external text"
@@ -44,7 +42,6 @@ rel="nofollow">ImpactStory</a> website.
   
 We hope to add impact metrics for GMOD software soon.
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

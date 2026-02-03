@@ -3,7 +3,6 @@ title: "GBrowse Cygwin HOWTO"
 ---
 # GBrowse Cygwin HOWTO
 
-
   Abstract](#Abstract)
 - [Installing
   Cygwin](#Installing_Cygwin)
@@ -19,7 +18,6 @@ title: "GBrowse Cygwin HOWTO"
     services](#Setting_up_Windows_environment_and_services)
   - [Start
     Apache](#Start_Apache)
-
 
 ## Abstract
 

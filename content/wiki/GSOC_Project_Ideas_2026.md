@@ -3,7 +3,6 @@ title: "GSOC Project Ideas 2026"
 ---
 # GSOC Project Ideas 2026
 
-
 *Got an idea for [GSOC 2026](GSoC "GSoC")?'*
 
 Then please post it. You can either
@@ -22,7 +21,6 @@ to propose your own project idea: some of the best applications we see
 are by students who go this route. As long as it is relevant to one of
 our projects, we will give it serious consideration. Creativity and
 self-motivation are great traits for open-source programmers.
-
 
 # Proposed project ideas for 2026
 
@@ -74,7 +72,6 @@ self-motivation are great traits for open-source programmers.
 - *Skill level:* Medium
 - *Project Time:* 175-hour approximately 8 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
-
 
 ## Reactome MCP / Stein Lab
 

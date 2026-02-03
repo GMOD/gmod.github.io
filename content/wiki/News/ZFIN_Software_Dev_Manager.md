@@ -3,16 +3,13 @@ title: "News/ZFIN Software Dev Manager"
 ---
 # News/ZFIN Software Dev Manager
 
-
 ### Position no longer available (9 July 2012)
-
 
 <a
 href="https://wiki.zfin.org/display/jobs/2012/02/27/Software+Development+Manager+position+-+ZFIN%2C+University+of+Oregon"
 rel="nofollow" title="ZFIN is hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/ZFINLogo.png" width="115" height="146"
 alt="ZFIN is hiring" /></a>
-
 
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN, the
 zebrafish model organism database</a>, is an international
@@ -43,10 +40,8 @@ apply.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/14*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

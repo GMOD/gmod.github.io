@@ -3,7 +3,6 @@ title: "JBrowse Tutorial 2011"
 ---
 # JBrowse Tutorial 2011
 
-
   Prerequisites](#Prerequisites)
 - [JBrowse
   Introduction](#JBrowse_Introduction)
@@ -38,7 +37,6 @@ title: "JBrowse Tutorial 2011"
   Problems](#Common_Problems)
 - [Other
   links](#Other_links)
-
 
 ## Prerequisites
 

@@ -3,10 +3,8 @@ title: "News/January 2009 Meeting Report"
 ---
 # News/January 2009 Meeting Report
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2009Meeting.JPG" width="319"
 height="100" alt="January 2009 GMOD Meeting" />](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting")
-
 
 The [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting") was
@@ -48,10 +46,8 @@ Oxford UK (and our first meeting in Europe).
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

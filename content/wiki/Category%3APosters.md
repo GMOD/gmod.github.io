@@ -3,7 +3,6 @@ title: "Category%253APosters"
 ---
 # Category%253APosters
 
-
 ## Media in category "Posters"
 
 The following 35 files are in this category, out of 35 total.
@@ -839,13 +838,4 @@ The following 35 files are in this category, out of 35 total.
   
 
   [ZFNGenomeGBrowseISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/ZFNGenomeGBrowseISMB2010.pdf "File:ZFNGenomeGBrowseISMB2010.pdf")  
-  324 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Presentations](Category%253APresentations "Category%253APresentations")
+  324 KB

@@ -3,21 +3,17 @@ title: "Category%253AMAKER"
 ---
 # Category%253AMAKER
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "MAKER"
 
 The following 15 pages are in this category, out of 15 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -87,7 +83,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "MAKER"
 

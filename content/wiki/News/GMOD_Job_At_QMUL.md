@@ -3,7 +3,6 @@ title: "News/GMOD Job At QMUL"
 ---
 # News/GMOD Job At QMUL
 
-
 There is a
 <a href="http://www.jobs.qmul.ac.uk/4313" class="external text"
 rel="nofollow">position as a sysadmin/computing officer</a> open at the
@@ -18,10 +17,8 @@ rel="nofollow">job description</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/12*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

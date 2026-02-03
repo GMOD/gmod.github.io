@@ -3,7 +3,6 @@ title: "Sample Chado SQL"
 ---
 # Sample Chado SQL
 
-
   Abstract](#Abstract)
 - [PostgreSQL
   queries](#PostgreSQL_queries)
@@ -21,7 +20,6 @@ title: "Sample Chado SQL"
 - [More
   Information](#More_Information)
 - [Authors](#Authors)
-
 
 # Abstract
 
@@ -88,7 +86,7 @@ This lists number of features and sequences by species and type.
        ROUND( AVG(f.seqlen), 0 ) as Ave_len,
        MIN(f.seqlen) as Min_len,
        MAX(f.seqlen) as Max_len,
-       (select genus || '_' || species from organism where organism_id = f.organism_id) as Species
+       (select genus | '_' | species from organism where organism_id = f.organism_id) as Species
      FROM feature f, cvterm t
      WHERE f.type_id = t.cvterm_id
      GROUP BY f.organism_id, f.type_id, t.name
@@ -128,7 +126,7 @@ contain others.
        sum(f.seqlen) as Tot_len,
        sum(CASE WHEN fl.srcfeature_id = f.feature_id THEN 1 ELSE 0 END) as N_issource,
        sum(CASE WHEN fl.feature_id = f.feature_id THEN 1 ELSE 0 END) as N_istarget,
-       (select genus || '_' || species from organism where organism_id = f.organism_id) as Species
+       (select genus | '_' | species from organism where organism_id = f.organism_id) as Species
      FROM cvterm t, feature f 
        left join featureloc fl on (fl.srcfeature_id = f.feature_id or fl.feature_id = f.feature_id)
      WHERE f.type_id = t.cvterm_id
@@ -155,13 +153,13 @@ This lists analyses and number of features per analysis.
 
      SELECT 
        an.analysis_id,
-       CASE WHEN (an.sourcename IS NULL OR an.sourcename = 'dummy') THEN 'match:' || an.program
-         ELSE 'match:' || an.program || ':' || an.sourcename
+       CASE WHEN (an.sourcename IS NULL OR an.sourcename = 'dummy') THEN 'match:' | an.program
+         ELSE 'match:' | an.program | ':' | an.sourcename
        END AS Analysis_type, 
        count(f.feature_id) as N_features,
        ROUND( (AVG(af.rawscore)::numeric), 2 ) as Ave_score,
        ROUND( (AVG(af.significance)::numeric),  2 ) as Ave_sig,
-       (select genus || '_' || species from organism where organism_id = f.organism_id) as Species
+       (select genus | '_' | species from organism where organism_id = f.organism_id) as Species
      FROM feature f, analysisfeature af, analysis an
      WHERE an.analysis_id = af.analysis_id and af.feature_id = f.feature_id
      GROUP BY f.organism_id, an.analysis_id, Analysis_type  
@@ -199,7 +197,7 @@ This lists properties and number of features per analysis.
        count(fp.featureprop_id) as N_properties,
        count(distinct f.feature_id) as N_features,
        count(distinct fp.value) as N_values,
-       (select genus || '_' || species from organism where organism_id = f.organism_id) as Species
+       (select genus | '_' | species from organism where organism_id = f.organism_id) as Species
      FROM feature f, featureprop fp, cvterm t
      WHERE fp.type_id = t.cvterm_id and fp.feature_id = f.feature_id
      GROUP BY f.organism_id, fp.type_id, t.name
@@ -251,20 +249,20 @@ using (feature_id) where f.name = 'PAU1';
          WHERE fs.synonym_id = s.synonym_id  
        
        UNION ALL
-         SELECT f.feature_id AS feature_id, 'Dbxref' as field, gd.name||':'||gx.accession as value
+         SELECT f.feature_id AS feature_id, 'Dbxref' as field, gd.name|':'|gx.accession as value
          FROM   feature f, db gd, dbxref gx
          WHERE  f.dbxref_id = gx.dbxref_id and gx.db_id = gd.db_id  
        
        UNION ALL
          SELECT fs.feature_id AS feature_id,  
            CASE WHEN fs.is_current IS FALSE THEN 'Dbxref obsolete' ELSE 'Dbxref 2' END AS field, 
-           (d.name || ':' || s.accession)::text AS value
+           (d.name | ':' | s.accession)::text AS value
          FROM  feature_dbxref fs, dbxref s, db d
          WHERE fs.dbxref_id = s.dbxref_id and s.db_id = d.db_id
        
        UNION ALL
          SELECT fc.feature_id AS feature_id, c.name AS field, 
-               substr(cv.name,1,40) || '; '|| dx.accession AS value
+               substr(cv.name,1,40) | '; '| dx.accession AS value
          FROM  feature_cvterm fc, cvterm cv, cv c, dbxref dx
          WHERE fc.cvterm_id = cv.cvterm_id and cv.cv_id = c.cv_id  
                and cv.dbxref_id = dx.dbxref_id
@@ -276,8 +274,8 @@ using (feature_id) where f.name = 'PAU1';
        
        UNION ALL
          SELECT fl.feature_id AS feature_id, 'location' as field, 
-             chr.uniquename ||':'|| cast( fl.fmin+1 as text) ||'..'|| cast( fl.fmax as text)
-             || CASE 
+             chr.uniquename |':'| cast( fl.fmin+1 as text) |'..'| cast( fl.fmax as text)
+             | CASE 
                WHEN fl.strand IS NULL THEN ' '
                WHEN fl.strand < 0 THEN ' [-]'
                ELSE ' [+]'
@@ -287,10 +285,9 @@ using (feature_id) where f.name = 'PAU1';
        
        UNION ALL
          SELECT af.feature_id AS feature_id,   
-          'an:' ||  
-          CASE 
+          'an:'           CASE 
              WHEN a.name IS NOT NULL THEN a.name
-             WHEN a.sourcename IS NOT NULL THEN (a.program || '.' || a.sourcename)::text
+             WHEN a.sourcename IS NOT NULL THEN (a.program | '.' | a.sourcename)::text
              ELSE a.program
            END  AS field,
            CASE  

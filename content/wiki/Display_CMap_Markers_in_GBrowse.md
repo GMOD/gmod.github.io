@@ -3,7 +3,6 @@ title: "Display CMap Markers in GBrowse"
 ---
 # Display CMap Markers in GBrowse
 
-
 This proposal came out of a presentation by Erick Antezana and Frederic
 Potier at the [August 2009 GMOD
 Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting") titled:
@@ -14,12 +13,10 @@ Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting") titled:
   
 From Frederic and Erick:
 
-
 We were thinking about having [CMap](CMap.1 "CMap") features displayed
 in [GBrowse](GBrowse.1 "GBrowse") in one or more dedicated tracks. Using
 now the fact that GBrowse can be connected to multiple datasources, the
 GBrowse config file could be for example:
-
 
 ``` de1
 #################################
@@ -84,7 +81,6 @@ key = CMAP SSR markers.
 category = Molecular Mapping
 ....
 ```
-
 
 As you can see, both AFLP_RICE and SSR_Rice are pulled out from the CMap
 database and displayed in dedicated tracks.

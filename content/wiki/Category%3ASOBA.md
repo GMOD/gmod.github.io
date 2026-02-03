@@ -3,7 +3,6 @@ title: "Category%253ASOBA"
 ---
 # Category%253ASOBA
 
-
 [SOBA](SOBA.1 "SOBA"), Sequence Ontology Bioinformatics Analysis, is a
 command line tool and web application for analyzing [GFF3](GFF3 "GFF3")
 annotations. [GFF3](GFF3 "GFF3") is a standard file format for genomic
@@ -15,21 +14,17 @@ href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bi
 class="external text" rel="nofollow">SOBA website</a> for more
 information.
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "SOBA"
 
 The following 10 pages are in this category, out of 10 total.
-
 
 <table style="width: 100%;">
 <colgroup>

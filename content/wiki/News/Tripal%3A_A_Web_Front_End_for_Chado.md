@@ -3,12 +3,10 @@ title: "News/Tripal: A Web Front End for Chado"
 ---
 # News/Tripal: A Web Front End for Chado
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
 width="200" height="60" alt="Tripal" />](../Tripal.1 "Tripal")
-
 
 [Tripal](../Tripal.1 "Tripal") is a new web front end for
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> databases
@@ -45,10 +43,8 @@ take a look at [Tripal](../Tripal.1 "Tripal").
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "User%253AEric.ganko"
 ---
 # User%253AEric.ganko
 
-
 # Eric Ganko
 
 I'm a computational biologist with

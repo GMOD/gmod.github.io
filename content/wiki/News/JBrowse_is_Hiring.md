@@ -3,7 +3,6 @@ title: "News/JBrowse is Hiring"
 ---
 # News/JBrowse is Hiring
 
-
 The lead developer on the JBrowse team is moving on to pastures new:
 Mitch Skinner has accepted an offer to work at an exciting new medical
 genomics startup (which will, for the moment, remain nameless, but keep
@@ -18,10 +17,8 @@ rel="nofollow">http://biowiki.org/JBrowseJob</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

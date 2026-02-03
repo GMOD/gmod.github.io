@@ -3,14 +3,11 @@ title: "Category%253ALogos and Icons"
 ---
 # Category%253ALogos and Icons
 
-
 Logos and icons for use in this web site.
-
 
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### G
 
@@ -21,11 +18,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Member Logos](Category%253AMember_Logos "Category%253AMember Logos")
 
-
 ## Pages in category "Logos and Icons"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### G
 
@@ -36,7 +31,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [Spring 2010 Logo
   Program](Spring_2010_Logo_Program "Spring 2010 Logo Program")
-
 
 ## Media in category "Logos and Icons"
 

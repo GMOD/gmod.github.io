@@ -3,7 +3,6 @@ title: "News/GMOD Summer School - Americas"
 ---
 # News/GMOD Summer School - Americas
 
-
 We are now [accepting
 applications](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
 for the [2010 GMOD Summer School -
@@ -34,7 +33,6 @@ Components](../GMOD_Components "GMOD Components") will be covered:
 title="GMOD Summer School"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/2010SummerSchoolAmericas170.png"
 width="170" height="124" alt="GMOD Summer School" /></a>
-
 
 <br />
 &#10;
@@ -75,16 +73,12 @@ Thanks,
 [Dave Clements](../User%253AClements "User%253AClements")  
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-|  |  |
-|----|----|
-| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") and the [GMOD News](../GMOD_News "GMOD News") for updates. |
+|----|----| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") and the [GMOD News](../GMOD_News "GMOD News") for updates. |
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

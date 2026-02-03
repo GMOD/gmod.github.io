@@ -3,17 +3,14 @@ title: "News/Pathway Tools Workshop, August"
 ---
 # News/Pathway Tools Workshop, August
 
-
 *<a href="http://brg.ai.sri.com/ptools09/reg.html" class="external text"
 rel="nofollow">Registration</a> is now open for this workshop.
 2009/04/24*
-
 
 <a href="http://brg.ai.sri.com/ptools09/" rel="nofollow"
 title="Pathway Tools Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/60/SRILogo.png" width="128" height="91"
 alt="Pathway Tools Workshop" /></a>
-
 
 There will be a
 <a href="http://brg.ai.sri.com/ptools09/" class="external text"
@@ -64,11 +61,9 @@ rel="nofollow">website</a> for updates.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/07,
 updated 2009/04/24*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

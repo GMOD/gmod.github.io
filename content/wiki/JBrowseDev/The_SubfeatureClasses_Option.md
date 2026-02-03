@@ -3,7 +3,6 @@ title: "JBrowseDev/The SubfeatureClasses Option"
 ---
 # JBrowseDev/The SubfeatureClasses Option
 
-
 In order to make subfeatures appear in
 [JBrowse](../JBrowse.1 "JBrowse"), it is necessary to assign a
 genome.css class to them. This is done in with an association list in
@@ -28,7 +27,6 @@ format is easier to use as a command line argument.
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

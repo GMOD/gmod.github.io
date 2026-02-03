@@ -3,7 +3,6 @@ title: "Gbol"
 ---
 # Gbol
 
-
 This is a scratch page for thoughts on development of the GMOD Bio
 Object Layer (GBOL).
 
@@ -11,7 +10,6 @@ Object Layer (GBOL).
 **== Note: This project is no longer active. ==**
 
   
-
 
   Design Goals</span>](#Object_Layer_Design_Goals)
 - [Diagrams](#Diagrams)
@@ -24,7 +22,6 @@ Object Layer (GBOL).
 - [Analyses](#Analyses)
 - [Annotation
   Properties](#Annotation_Properties)
-
 
 ## Object Layer Design Goals
 

@@ -3,10 +3,8 @@ title: "GMOD RPC API"
 ---
 # GMOD RPC API
 
-
 (Redirected from [GMOD REST
 API](/wiki/GMOD_REST_API)
-
 
   Status</span>](#Document_Status)
 - [Background](#Background)
@@ -133,7 +131,6 @@ API](/wiki/GMOD_REST_API)
       - [FASTA Result:](#FASTA_Result:)
 - [TODO](#TODO)
 
-
 ## Document Status
 
 In progress.
@@ -199,7 +196,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -222,7 +218,6 @@ XML
     </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -296,7 +291,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -325,7 +319,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -411,7 +404,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -431,7 +423,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -500,7 +491,6 @@ XML
 
 ##### XML Result
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -529,7 +519,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -617,7 +606,6 @@ XML
 
 ##### XML Result:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -643,7 +631,6 @@ XML
    </result>
 </resultset>
 ```
-
 
 ##### JSON Result
 
@@ -717,7 +704,6 @@ XML
 
 ##### XML Result:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <resultset>
@@ -752,7 +738,6 @@ XML
 ...
 </resultset>
 ```
-
 
 ##### JSON Result
 

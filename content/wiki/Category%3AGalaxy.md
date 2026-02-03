@@ -3,21 +3,17 @@ title: "Category%253AGalaxy"
 ---
 # Category%253AGalaxy
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "Galaxy"
 
 The following 25 pages are in this category, out of 25 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -113,7 +109,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Galaxy"
 
@@ -937,13 +932,4 @@ The following 35 files are in this category, out of 35 total.
 
   [PAG2014
   GalaxyCloudMan...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/PAG2014_GalaxyCloudMan.pdf "File:PAG2014 GalaxyCloudMan.pdf")  
-  4.03 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  4.03 MB

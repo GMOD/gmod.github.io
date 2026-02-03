@@ -3,14 +3,12 @@ title: "Chado Comparative Schema"
 ---
 # Chado Comparative Schema
 
-
   Overview](#Overview)
 - [Goal](#Goal)
 - [Strategies](#Strategies)
   - [Sybil/IGS](#Sybil.2FIGS)
   - [FlyBase](#FlyBase)
   - [ParameciumDB](#ParameciumDB)
-
 
 # Overview
 
@@ -53,9 +51,3 @@ heavily inspired by the [FlyBase comparative implementation
 standard](FlyBase_Comparative_Genomics_Data "FlyBase Comparative Genomics Data").
 This document describes how ParameciumDB models paralogy and synteny
 within a genome that has undergone whole genome duplications.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Comparative
-  Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")

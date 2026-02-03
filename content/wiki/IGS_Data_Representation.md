@@ -3,7 +3,6 @@ title: "IGS Data Representation"
 ---
 # IGS Data Representation
 
-
 Chado is an elegant schema that can hold nearly anything from gene
 annotations to an MP3 collection. This fabulous flexibility comes with a
 price - different MODs arrive at different ways of storing the same
@@ -16,7 +15,6 @@ converge on a single community-defined standard.
 The reference document is currently the [Chado Best
 Practices](Chado_Best_Practices "Chado Best Practices") page, into which
 much of this information may become merged at some point.
-
 
   (scope)</span>](#What_we_store_.28scope.29)
 - [Feature naming
@@ -61,7 +59,6 @@ much of this information may become merged at some point.
     marts)](#Materialized_views_.28chado_marts.29)
   - [Disk
     Caching](#Disk_Caching)
-
 
 ## What we store (scope)
 
@@ -110,7 +107,6 @@ The following query shows all the features in our gene graph as well as
 their relationships. The example query is for a transcript feature
 'hsn.transcript.39176.1'
 
-
 ``` de1
     SELECT f1.name AS subject, c.name AS relationship, f2.name AS object
       FROM feature f1
@@ -123,13 +119,9 @@ their relationships. The example query is for a transcript feature
     +-------------------------+--------------+------------------------+
     | subject                 | relationship | object                 |
     +-------------------------+--------------+------------------------+
-    | hsn.transcript.39176.1  | derives_from | hsn.gene.39416.1       |
-    | hsn.polypeptide.39176.1 | part_of      | hsn.transcript.39176.1 |
-    | hsn.CDS.39416.1         | derives_from | hsn.transcript.39176.1 |
-    | hsn.exon.39416.1        | part_of      | hsn.transcript.39176.1 |
+    | hsn.transcript.39176.1  | derives_from | hsn.gene.39416.1       | hsn.polypeptide.39176.1 | part_of      | hsn.transcript.39176.1 | hsn.CDS.39416.1         | derives_from | hsn.transcript.39176.1 | hsn.exon.39416.1        | part_of      | hsn.transcript.39176.1 |
     +-------------------------+--------------+------------------------+
 ```
-
 
 ## Functional annotation
 
@@ -151,7 +143,6 @@ graph.
 Both gene product name and their evidence are stored as feature
 properties of the transcript. To query both:
 
-
 ``` de1
 SELECT f.uniquename, product.VALUE AS product, sym.VALUE AS symbol
   FROM feature f
@@ -169,7 +160,6 @@ SELECT f.uniquename, product.VALUE AS product, sym.VALUE AS symbol
     | hsn.transcript.39176.1 | cytidine deaminase | TIGR01354 |
     +------------------------+--------------------+-----------+
 ```
-
 
 This means that the name of this product was assigned because of a hit
 to the HMM with ID TIGR01354. Ideally, this would be a dbxref and not
@@ -208,7 +198,6 @@ be entered. Should there be a single entry for 'GO' as a whole or three
 different ones, since it contains three separate namespaces (process,
 function, component)? For this example I'll use the single 'GO' entry:
 
-
 ``` de1
     SELECT *
       FROM cv
@@ -221,14 +210,12 @@ function, component)? For this example I'll use the single 'GO' entry:
     +-------+------+------------+
 ```
 
-
 Whether to respect the namespaces within GO and create three distinct
 ontology entries is configurable within the initdb Ergatis component,
 which instantiates our Chado instances.
 
 Next, there's a entry in 'cvterm' for this term but not by the
 GO:NNNNNNNN value. Instead, we can look it up by the name:
-
 
 ``` de1
     SELECT cvterm_id, name, SUBSTRING(definition,1,20), dbxref_id, is_obsolete
@@ -243,10 +230,8 @@ GO:NNNNNNNN value. Instead, we can look it up by the name:
     +-----------+-----------------------------+----------------------------+-----------+-------------+
 ```
 
-
 The actual GO:NNNNNNN value is a database reference (dbxref_id returned
 in last query):
-
 
 ``` de1
     SELECT *
@@ -260,9 +245,7 @@ in last query):
     +-----------+-------+------------+---------+-------------+
 ```
 
-
 Which, of course, means there's a GO entry in the 'db' table too:
-
 
 ``` de1
     SELECT *
@@ -276,9 +259,7 @@ Which, of course, means there's a GO entry in the 'db' table too:
     +-------+------+-------------+-----------+------+
 ```
 
-
 So, reviewing, to get the basic annotation for a GO term:
-
 
 ``` de1
     SELECT dbx.accession, cvt.name, cvt.definition
@@ -293,7 +274,6 @@ So, reviewing, to get the basic annotation for a GO term:
     +------------+-----------------------------+---------------------------------------------------------------------------+
 ```
 
-
 What about the xref_analog entries we saw in the OBO definition? The
 additional entries are stored using the cvterm_dxref table.
 
@@ -301,7 +281,6 @@ additional entries are stored using the cvterm_dxref table.
 
 A more narrative description has yet to be written, but here's a query
 to get all assigned GO terms for a given transcript, with evidence.
-
 
 ``` de1
     SELECT f.uniquename, d.accession, c2.name "evidence type",
@@ -320,12 +299,9 @@ to get all assigned GO terms for a given transcript, with evidence.
     +------------------------+-------------+-------------------------------------+---------------+-----------+
     | uniquename             | ROLE id     | evidence TYPE                       | evidence code | VALUE     |
     +------------------------+-------------+-------------------------------------+---------------+-----------+
-    | hsn.transcript.39176.1 | GO:0008655  | inferred FROM electronic annotation | IEA           | TIGR01354 |
-    | hsn.transcript.39176.1 | GO:0005737  | inferred FROM electronic annotation | IEA           | TIGR01354 |
-    | hsn.transcript.39176.1 | GO:0004126  | inferred FROM electronic annotation | IEA           | TIGR01354 |
+    | hsn.transcript.39176.1 | GO:0008655  | inferred FROM electronic annotation | IEA           | TIGR01354 | hsn.transcript.39176.1 | GO:0005737  | inferred FROM electronic annotation | IEA           | TIGR01354 | hsn.transcript.39176.1 | GO:0004126  | inferred FROM electronic annotation | IEA           | TIGR01354 |
     +------------------------+-------------+-------------------------------------+---------------+-----------+
 ```
-
 
 ### Enzyme Commission (EC) number
 
@@ -410,7 +386,6 @@ an eternity and you'll lose users. This isn't necessarily a Chado
 limitation, but rather one on highly normalized schemas in general. To
 query all the BLAST results for a given polypeptide you might do this:
 
-
 ``` de1
 SELECT q.uniquename AS query, s.uniquename AS subject, af.rawscore, af.pidentity,
        af.significance, flq.fmin AS qstart, flq.fmax AS qstop, flq.strand AS qstrand
@@ -430,7 +405,6 @@ SELECT q.uniquename AS query, s.uniquename AS subject, af.rawscore, af.pidentity
    AND q.uniquename = 'nfa1.polypeptide.9292';
 ```
 
-
 That's just nasty isn't it? Not only do developers not want to write
 these but the sheer number of JOINs involved makes the query intolerably
 slow.
@@ -448,7 +422,6 @@ user displays. The first is the creation of materialized views within
 the database. We call our collection of these 'chado marts'. The table
 definition for one of these to support BLAST results is:
 
-
 ``` de1
 CREATE TABLE cm_blast (
   cm_blast_id         INT NOT NULL,
@@ -462,7 +435,6 @@ CREATE TABLE cm_blast (
   mfeature_id         INT NOT NULL
 );
 ```
-
 
 For those database engines that support it, such as Oracle, these
 materialized views can be defined once and are maintained by the

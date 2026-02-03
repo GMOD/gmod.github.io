@@ -3,15 +3,12 @@ title: "Satellite Meetings - GMOD Americas 2011"
 ---
 # Satellite Meetings - GMOD Americas 2011
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/600px-2011GMODAmericasSatellitesLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/900px-2011GMODAmericasSatellitesLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/2011GMODAmericasSatellitesLogo.png 2x"
 width="600" height="238" alt="GMOD Americas 2011" />
-
 
   
 The [March 2011 GMOD
@@ -23,7 +20,6 @@ common interests gather for part or all of a day to discuss and work on
 a topic of interest to them. This is the third event that will have
 satellite meetings.
 
-
   Topics](#Topics)
 - [Previous
   Topics](#Previous_Topics)
@@ -31,7 +27,6 @@ satellite meetings.
   GMOD](#About_GMOD)
 - [Help Get the
   Word Out](#Help_Get_the_Word_Out)
-
 
 ## Topics
 
@@ -41,12 +36,7 @@ the list below. This list will become more solid the week before the
 event, but topics will also likely be added during the [March 2011 GMOD
 Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting").
 
-| Topic | Proposers and/or Organizers | Time | Comments |
-|----|----|----|----|
-| [GMOD Evo Hackathon Followup](GMOD_Evo_Hackathon#March_2011_Satellite "GMOD Evo Hackathon") | [Duke Leto](User%253ADukeleto "User%253ADukeleto") | TBD | [Followup meeting](GMOD_Evo_Hackathon#March_2011_Satellite "GMOD Evo Hackathon") to the [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon") held at NESCent in November 2011. |
-| [Extending Embedding and Customizing JBrowse](Extending_Embedding_and_Customizing_JBrowse "Extending Embedding and Customizing JBrowse") | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | TBD | [JBrowse](JBrowse.1 "JBrowse") has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](Glossary#API "Glossary"), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. |
-| [GMOD Web services toolkit](GMOD_RPC_API "GMOD RPC API") | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](GMOD_RPC_API "GMOD RPC API").~~ |
-| [GMOD in the Sequencing Center](GMOD_in_the_Sequencing_Center "GMOD in the Sequencing Center") | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri"), [Dave Clements](User%253AClements "User%253AClements") | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
+| Topic | Proposers and/or Organizers | Time | Comments |----|----|----|----| [GMOD Evo Hackathon Followup](GMOD_Evo_Hackathon#March_2011_Satellite "GMOD Evo Hackathon") | [Duke Leto](User%253ADukeleto "User%253ADukeleto") | TBD | [Followup meeting](GMOD_Evo_Hackathon#March_2011_Satellite "GMOD Evo Hackathon") to the [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon") held at NESCent in November 2011. | [Extending Embedding and Customizing JBrowse](Extending_Embedding_and_Customizing_JBrowse "Extending Embedding and Customizing JBrowse") | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | TBD | [JBrowse](JBrowse.1 "JBrowse") has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](Glossary#API "Glossary"), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. | [GMOD Web services toolkit](GMOD_RPC_API "GMOD RPC API") | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](GMOD_RPC_API "GMOD RPC API").~~ | [GMOD in the Sequencing Center](GMOD_in_the_Sequencing_Center "GMOD in the Sequencing Center") | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri"), [Dave Clements](User%253AClements "User%253AClements") | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
 
 ## Previous Topics
 

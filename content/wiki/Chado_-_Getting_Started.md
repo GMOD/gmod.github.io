@@ -3,17 +3,13 @@ title: "Chado - Getting Started"
 ---
 # Chado - Getting Started
 
-
 Status
-
 
 - **Mature** release
 - **Active** development
 - **Active** support
 
-
 Resources
-
 
 - [Introduction](Introduction_to_Chado "Introduction to Chado")
 - [Manual](Chado_Manual "Chado Manual")
@@ -26,7 +22,6 @@ Resources
 - <a href="../extras/2008GMODCommunitySurvey.html#Chado"
   class="external text" rel="nofollow">2008 Survey</a>
 
-
 Chado is a [relational database
 schema](Glossary#Database_Schema "Glossary") that underlies [many GMOD
 installations](GMOD_Users "GMOD Users"). It is capable of representing
@@ -37,7 +32,6 @@ complex representations of biological knowledge and should be considered
 one of the most sophisticated relational schemas currently available in
 molecular biology. The price of this capability is that the new user
 must spend some time becoming familiar with its fundamentals.
-
 
   Documentation](#Documentation)
 - [Modules](#Modules)
@@ -51,7 +45,6 @@ must spend some time becoming familiar with its fundamentals.
 - [Mailing
   Lists](#Mailing_Lists)
 - [Pronunciation](#Pronunciation)
-
 
 ## Documentation
 
@@ -166,16 +159,12 @@ data in Chado.
 
 ## Mailing Lists
 
-|  |  |  |  |
-|----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| <a href="Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
+|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
 class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI"), and [Bio%253A%253AChado%253A%253ASchema](Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"
-class="external text" rel="nofollow">Sourceforge</a> |
-|  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts"
+class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts"
 class="external text" rel="nofollow">gmod-schema-cmts</a> | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> code updates. | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts"
 class="external text" rel="nofollow">Sourceforge</a> |

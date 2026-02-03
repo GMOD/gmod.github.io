@@ -3,7 +3,6 @@ title: "Category%253ABioMart"
 ---
 # Category%253ABioMart
 
-
 BioMart is a robust, query-oriented data integration system, based on
 distributed data warehousing ideas. The system can be applied to a
 single or multiple databases. It supports scalable large scale querying
@@ -14,11 +13,9 @@ specification, administration tools for deploying and configuring
 mart-spec databases and data access software, which includes web and
 standalone interfaces.
 
-
 ## Pages in category "BioMart"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -61,7 +58,6 @@ title="User%253ASyedHaider">User%253ASyedHaider</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "BioMart"
 
@@ -155,13 +151,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [Kasprzyk-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt "File:Kasprzyk-050516.ppt")  
-  1.48 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
+  1.48 MB

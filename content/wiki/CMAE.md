@@ -3,14 +3,11 @@ title: "CMAE"
 ---
 # CMAE
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
 
-
 Work on CMAE was started, but never completed.
-
 
 The [CMap](CMap.1 "CMap") Assembly Editor (CMAE) is a desktop
 application that is being developed to assist in visualizing and editing
@@ -26,7 +23,6 @@ highlight possible mis-assemblies. The editor will then allow
 mis-assembled contigs to be split, merged or moved, or the troubled
 contigs can be exported to a more specialized program. (L. Stein)
 
-
   Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Screenshots](#Screenshots)
@@ -34,7 +30,6 @@ contigs can be exported to a more specialized program. (L. Stein)
 - [Mailing
   List](#Mailing_List)
 - [Contact](#Contact)
-
 
 ## Requirements
 

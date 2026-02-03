@@ -3,7 +3,6 @@ title: "WebApollo Tutorial 2012"
 ---
 # WebApollo Tutorial 2012
 
-
 This [WebApollo](WebApollo.1 "WebApollo") tutorial was presented by [Ed
 Lee](User%253AElee "User%253AElee") at the [2012 GMOD Summer
 School](2012_GMOD_Summer_School "2012 GMOD Summer School").
@@ -17,7 +16,6 @@ how to get this AMI.
 **Please note that WebApollo was not officially released when this
 session was taught, and this tutorial was run using a beta version of
 the tool.**
-
 
   Introduction](#Introduction)
 - [Using
@@ -44,7 +42,6 @@ the tool.**
   generation](#Data_generation)
   - [Static
     data generation](#Static_data_generation)
-
 
 ## Introduction
 
@@ -88,30 +85,24 @@ Point your browser to
 (e.g.,
 `http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApolloDemo`).
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Web_apollo_demo_login_page_with_credentials.jpg"
 class="thumbborder" width="310" height="83"
 alt="WebApollo login page" />
 
-
 The user name and password are both `demo`.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/Web_apollo_main_options.jpg"
 class="thumbborder" width="214" height="33"
 alt="WebApollo main options" />
 
-
 Click on the `Edit annotations` button.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Web_apollo_select_refseq.jpg"
 class="thumbborder" width="451" height="33"
 alt="WebApollo reference sequence selection" />
-
 
 We only have one contig to work with. Click on the `Edit` button.
 
@@ -311,7 +302,6 @@ The main configuration is stored in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/config/config.xml`. Let’s
 take a look at the file.
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <server_configuration>
@@ -398,59 +388,48 @@ take a look at the file.
 </server_configuration>
 ```
 
-
 Let’s look through each element in more detail with values filled in.
-
 
 ``` de1
     <!-- mapping configuration for GBOL data structures -->
     <gbol_mapping>/config/mapping.xml</gbol_mapping>
 ```
 
-
 File that contains type mappings used by the underlying data model. It’s
 best not to change the default option.
-
 
 ``` de1
     <!-- directory where JE database will be created -->
     <datastore_directory>/data/dataHome/web_apollo/annotations</datastore_directory>
 ```
 
-
 Directory where user generated annotations will be stored. The data is
 stored using Berkeley DB. We’ll use
 `/data/dataHome/web_apollo/annotations`.
-
 
 ``` de1
     <!-- minimum size for introns created -->
     <default_minimum_intron_size>1</default_minimum_intron_size>
 ```
 
-
 Minimum length of intron to be created when using the “Make intron”
 operation. The operation will try to make the shortest intron that’s at
 least as long as this parameter. So if you set it to a value of “40”,
 then all calculated introns will be at least of length 40.
-
 
 ``` de1
     <!-- size of history for each feature - setting to 0 means unlimited history -->
     <history_size>0</history_size>
 ```
 
-
 The size of your history stack, meaning how many “Undo/Redo” steps you
 can do. The larger the number, the larger the storage space needed.
 Setting it to “0” makes it to that there’s no limit.
-
 
 ``` de1
     <!-- overlapping strategy for adding transcripts to genes -->
     <overlapper_class>org.bbop.apollo.web.overlap.OrfOverlapper</overlapper_class>
 ```
-
 
 Defines the strategy to be used for deciding whether overlapping
 transcripts should be considered splice variants to the same gene. This
@@ -469,12 +448,10 @@ Currently available options are:
   - Only transcripts that overlap within the coding region and within
     frame are considered part of the same gene
 
-
 ``` de1
     <!-- class for comparing track names (used for sorting in lists) -->
     <track_name_comparator_class>org.bbop.apollo.web.track.DefaultTrackNameComparator</track_name_comparator_class>
 ```
-
 
 Defines how to compare genomic sequence names for sorting purposes in
 the genomic region selection list. Points to a class implementing the
@@ -489,7 +466,6 @@ implementation is:
 
 Let’s take look at the “user” element, which handles configuration for
 user authentication and permission handling.
-
 
 ``` de1
     <!-- user authentication/permission configuration -->
@@ -518,61 +494,50 @@ user authentication and permission handling.
     </user>
 ```
 
-
 Let’s first look at the `database` element that defines the database
 that will handle user permissions (which we created previously).
-
 
 ``` de1
             <!-- driver for user database -->
             <driver>org.postgresql.Driver</driver>
 ```
 
-
 This should point the JDBC driver for communicating with the database.
 We’re using a PostgreSQL driver since that’s the database we’re using
 for user permission management.
-
 
 ``` de1
             <!-- JDBC URL for user database -->
             <url>jdbc:postgresql://localhost/web_apollo_users</url>
 ```
 
-
 JDBC URL to the user permission database. We'll use
 `jdbc:postgresql://localhost/web_apollo_users` since the database is
 running in the same server as the annotation editing engine and we named
 the database `web_apollo_users`.
-
 
 ``` de1
             <!-- username for user database -->
             <username>web_apollo_users_admin</username>
 ```
 
-
 User name that has read/write access to the user database. The user with
 access to the user database has the user name `web_apollo_users_admin`.
-
 
 ``` de1
             <!-- password for user database -->
             <password>web_apollo_users_admin</password>
 ```
 
-
 Password to access user database. The user with access to the user
 database has the password \</tt\>web_apollo_users_admin\</tt\>.
 
 Now let’s look at the other elements in the `user` element.
 
-
 ``` de1
             <!-- class for generating user authentication page (login page) -->
             <authentication_class>org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication</authentication_class>
 ```
-
 
 Defines how user authentication is handled. This points to a class
 implementing the `org.bbop.apollo.web.user.UserAuthentication`
@@ -592,7 +557,6 @@ like (e.g., LDAP). Currently available options are:
 
 Now let’s look at the configuration for accessing the annotation tracks
 for the genomic sequences.
-
 
 ``` de1
     <tracks>
@@ -617,15 +581,12 @@ for the genomic sequences.
     </tracks>
 ```
 
-
 Let’s look at each element individually.
-
 
 ``` de1
         <!-- path to JBrowse refSeqs.json file -->
         <refseqs>/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data/refSeqs.json</refseqs>
 ```
-
 
 Location where the `refSeqs.json` file resides, which is created from
 the data generation pipeline (see the [data
@@ -635,25 +596,20 @@ needs to reside in
 the data to reside elsewhere, you’ll need to do configure your servlet
 container to handle the appropriate alias to `jbrowse/data`.
 
-
 ``` de1
         <annotation_track_name>Annotations</annotation_track_name>
 ```
 
-
 Name of the annotation track. Leave it as the default value of
 `Annotations`.
-
 
 ``` de1
         <!-- organism being annotated -->
         <organism>Pythium ultimum</organism>
 ```
 
-
 Scientific name of the organism being annotated (genus and species).
 We're annotating `Pythium ultimum`.
-
 
 ``` de1
         <!-- CV term for the genomic sequences - should be in the form
@@ -661,23 +617,19 @@ We're annotating `Pythium ultimum`.
         <sequence_type>sequence:contig</sequence_type>
 ```
 
-
 The type for the genomic sequences. Should be in the form of `CV:term`.
 Our genomic sequences are of the type `sequence:contig`.
-
 
 ``` de1
     <!-- path to file containing canned comments XML -->
     <canned_comments>/config/canned_comments.xml</canned_comments>
 ```
 
-
 File that contains canned comments (predefined comments that will be
 available from a pull-down menu when creating comments). It’s best not
 to change the default option. See the [canned
 comments](#Canned_comments) section for details on configuring canned
 comments.
-
 
 ``` de1
     <!-- tool to be used for sequence searching.  This is optional.
@@ -693,7 +645,6 @@ comments.
     </sequence_search_tool>
 ```
 
-
 Here’s the configuration for sequence search tools (allows searching
 your genomic sequences). WebApollo does not implement any search
 algorithms, but instead relies on different tools and resources to
@@ -701,12 +652,10 @@ handle searching (this provides much more flexible search options). This
 is optional. If it’s not configured, WebApollo will not have sequence
 search support. There are two elements that need to be configured.
 
-
 ``` de1
         <!-- class for handling search -->
         <class>org.bbop.apollo.tools.seq.search.blat.BlatCommandLine</class>
 ```
-
 
 Should point to the class that will handle the search request. Searching
 is handled by classes that implement the
@@ -714,12 +663,10 @@ is handled by classes that implement the
 allows you to add support for your own favorite search tools (or
 resources). We currently only have support for command line Blat.
 
-
 ``` de1
         <!-- configuration for search tool -->
         <config>/config/blat_config.xml</config>
 ```
-
 
 File that contains the configuration for the searching plugin chosen. If
 you’re using Blat, you should not change this. If you’re using your own
@@ -735,7 +682,6 @@ configuration is stored in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/config/canned_comments.xml`.
 Let’s take a look at the configuration file.
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
  
@@ -750,19 +696,16 @@ Let’s take a look at the configuration file.
 </canned_comments>
 ```
 
-
 You’ll need one `<comment>` element for each predefined comment. The
 element needs to have a `feature_type` attribute in the form of
 `cv:cvterm` that this comment applies to. Let’s make a few comments for
 feature of type `sequence:gene` and `sequence:transcript`:
-
 
 ``` de1
     <comment feature_type="sequence:gene">This is a comment for a gene</comment>
     <comment feature_type="sequence:gene">This is another comment for a gene</comment>
     <comment feature_type="sequence:transcript">This is a comment for a transcript</comment>
 ```
-
 
 ### Search tools
 
@@ -777,7 +720,6 @@ genomic sequences available to make use of this feature. The
 configuration is stored in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/config/blat_config.xml`.
 Let’s take a look at the configuration file:
-
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
@@ -801,36 +743,29 @@ Let’s take a look at the configuration file:
 </blat_config>
 ```
 
-
 Let’s look at each element with values filled in.
-
 
 ``` de1
     <!-- path to Blat binary -->
     <blat_bin>/home/ubuntu/Software/blat/blat</blat_bin>
 ```
 
-
 We need to point to the location where the Blat binary resides. We it
 installed in `/usr/local/bin/blat`.
-
 
 ``` de1
     <!-- path to where to put temporary data -->
     <tmp_dir>/data/dataHome/web_apollo/blat/tmp</tmp_dir>
 ```
 
-
 We need to point to the location where to store temporary files to be
 used in the Blat search. It can be set to whatever location you’d like.
 We’ll store the temporary data to `/data/dataHome/web_apollo/tmp`.
-
 
 ``` de1
     <!-- path to Blat database -->
     <database>/data/dataHome/web_apollo/blat/db/pyu.2bit</database>
 ```
-
 
 We need to point to the location of the search database to be used by
 Blat. We need point it to `/data/dataHome/web_apollo/blat/db/pyu.2bit`.
@@ -838,12 +773,10 @@ We're using a `2bit` database in this case, but you have options on how
 to generate your Blat database. See the Blat documentation for more
 information.
 
-
 ``` de1
     <!-- any Blat options (directly passed to Blat) e.g., -minMatch -->
     <blat_options>-minScore=100 -minIdentity=60</blat_options>
 ```
-
 
 Here we can configure any extra options to used by Blat. These options
 are passed verbatim to the program. In this example, we’re passing the
@@ -1255,50 +1188,32 @@ Let's test out our installation. Point your browser to
 (e.g.,
 `http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApollo`).
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Web_apollo_login_page_with_credentials.jpg"
 class="thumbborder" width="320" height="85"
 alt="WebApollo login page" />
 
-
 The user name and password are both `web_apollo_admin` as we configured
 earlier.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/Web_apollo_main_options.jpg"
 class="thumbborder" width="214" height="33"
 alt="WebApollo main options" />
 
-
 Click on the `Edit annotations` button.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Web_apollo_select_refseq.jpg"
 class="thumbborder" width="451" height="33"
 alt="WebApollo reference sequence selection" />
 
-
 We only see one reference sequence to annotate since we're only working
 with one contig. Click on the `Edit` button.
 
 Now have fun annotating!!!
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[WebApollo Tutorial
-2012](Special%253ABrowse/WebApollo-20Tutorial-202012 "Special%253ABrowse/WebApollo-20Tutorial-202012")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/WebApollo "Special%253ASearchByProperty/Has-20topic/WebApollo")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo")  |

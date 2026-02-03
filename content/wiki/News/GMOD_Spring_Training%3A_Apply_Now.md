@@ -3,7 +3,6 @@ title: "News/GMOD Spring Training: Apply Now"
 ---
 # News/GMOD Spring Training: Apply Now
 
-
 [Applications are now being
 accepted](../2011_GMOD_Spring_Training#Applications "2011 GMOD Spring Training")
 for the [2011 GMOD Spring
@@ -82,10 +81,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

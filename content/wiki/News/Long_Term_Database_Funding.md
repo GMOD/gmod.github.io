@@ -3,7 +3,6 @@ title: "News/Long Term Database Funding"
 ---
 # News/Long Term Database Funding
 
-
 You may have heard about
 <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
 class="external text" rel="nofollow">TAIR's funding situation</a>.
@@ -30,12 +29,10 @@ rel="nofollow">International Society for Biocuration</a>'s (ISB)
 <a href="http://biocurator.proboards.com/" class="external text"
 rel="nofollow">forum site</a>.
 
-
 <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
 rel="nofollow" title="TAIR Funding Update and Discussion Forum"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/TAIR_logo.gif" width="100" height="35"
 alt="TAIR Funding Update and Discussion Forum" /></a>
-
 
 <a href="http://www.arabidopsis.org/" class="external text"
 rel="nofollow">TAIR</a> asked people to do a couple things:
@@ -75,10 +72,8 @@ resource" link on your site.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/06*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

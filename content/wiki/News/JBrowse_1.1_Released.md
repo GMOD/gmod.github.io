@@ -3,13 +3,11 @@ title: "News/JBrowse 1.1 Released"
 ---
 # News/JBrowse 1.1 Released
 
-
 <a href="http://jbrowse.org/?p=56" rel="nofollow"
 title="JBrowse 1.1 Released"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/25/JBrowse-announce-screenshot.png/200px-JBrowse-announce-screenshot.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/25/JBrowse-announce-screenshot.png/300px-JBrowse-announce-screenshot.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/25/JBrowse-announce-screenshot.png/400px-JBrowse-announce-screenshot.png 2x"
 width="200" height="134" alt="JBrowse 1.1 Released" /></a>
-
 
 <a href="http://jbrowse.org/?p=56" class="external text"
 rel="nofollow">JBrowse version 1.1 is released!</a> You can
@@ -44,10 +42,8 @@ rel="nofollow">release notes</a> for full details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/12*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,11 +3,9 @@ title: "Category%253APresentations"
 ---
 # Category%253APresentations
 
-
 ## Subcategories
 
 This category has the following 5 subcategories, out of 5 total.
-
 
 ### C
 
@@ -30,11 +28,9 @@ This category has the following 5 subcategories, out of 5 total.
 
 - [Posters](Category%253APosters "Category%253APosters")
 
-
 ## Pages in category "Presentations"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### A
 
@@ -45,7 +41,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [Chado Tutorial 2012](Chado_Tutorial_2012 "Chado Tutorial 2012")
 - [Common Gene Page](Common_Gene_Page "Common Gene Page")
-
 
 ## Media in category "Presentations"
 
@@ -3197,13 +3192,4 @@ The following 135 files are in this category, out of 135 total.
   
 
   [PathwayToolsTalkISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/PathwayToolsTalkISMB2010.pdf "File:PathwayToolsTalkISMB2010.pdf")  
-  3.64 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")
+  3.64 MB

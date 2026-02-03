@@ -3,12 +3,10 @@ title: "News/Registration Open for GMOD 2012 Meeting"
 ---
 # News/Registration Open for GMOD 2012 Meeting
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/170px-April2012MeetingLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/255px-April2012MeetingLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/340px-April2012MeetingLogo.png 2x"
 width="170" height="134" alt="April 2012 GMOD Meeting" />](../April_2012_GMOD_Meeting "April 2012 GMOD Meeting")
-
 
 Registration for the [April 2012 GMOD
 Meeting](../April_2012_GMOD_Meeting "April 2012 GMOD Meeting") is now
@@ -35,6 +33,5 @@ add your suggested topic.
 [Scott Cain](../User%253AScott "User%253AScott")
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/02/08*

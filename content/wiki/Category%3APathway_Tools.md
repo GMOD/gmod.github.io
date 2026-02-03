@@ -3,26 +3,21 @@ title: "Category%253APathway Tools"
 ---
 # Category%253APathway Tools
 
-
 [Pathway Tools](Pathway_Tools.1 "Pathway Tools") is a bioinformatics
 software system for predicting the metabolic pathways of an organism
 from its genome, and for creating Pathway/Genome Databases (PGDBs).
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "Pathway Tools"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -81,7 +76,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Pathway Tools"
 
@@ -242,13 +236,4 @@ The following 7 files are in this category, out of 7 total.
   
 
   [PathwayToolsTalkISMB20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/PathwayToolsTalkISMB2010.pdf "File:PathwayToolsTalkISMB2010.pdf")  
-  3.64 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  3.64 MB

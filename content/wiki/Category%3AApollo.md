@@ -3,15 +3,12 @@ title: "Category%253AApollo"
 ---
 # Category%253AApollo
 
-
 The Apollo genome editor is a Java-based application for browsing and
 annotating genomic sequences.
-
 
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### T
 
@@ -21,11 +18,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
 
-
 ## Pages in category "Apollo"
 
 The following 22 pages are in this category, out of 22 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -110,7 +105,6 @@ title="Web-apollo-meeting-2011-3-21">Web-apollo-meeting-2011-3-21</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Apollo"
 

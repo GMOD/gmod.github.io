@@ -3,12 +3,10 @@ title: "Distributed Annotation System"
 ---
 # Distributed Annotation System
 
-
 <a href="http://www.biodas.org/" rel="nofollow"
 title="Distributed Annotation System"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Das_logo_64x64.jpg" width="64" height="64"
 alt="Distributed Annotation System" /></a>
-
 
 The Distributed Annotation System, or DAS, is a protocol for exchanging
 and retrieving sequence annotations, possibly from multiple sources.
@@ -20,7 +18,6 @@ rel="nofollow">BioDas web site</a> for a full explanation of DAS
 
   
 
-
   DAS/2</span>](#DAS.2F1_and_DAS.2F2)
   - [Preserving
     DAS/1 Strengths in
@@ -28,7 +25,6 @@ rel="nofollow">BioDas web site</a> for a full explanation of DAS
 - [DAS in
   GMOD](#DAS_in_GMOD)
 - [Presentations](#Presentations)
-
 
 ## DAS/1 and DAS/2
 
@@ -75,8 +71,3 @@ These components work with DAS servers:
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt" class="internal"
   title="Das.ppt">DAS2</a>, [May 2005 GMOD
   Meeting](May_2005_GMOD_Meeting "May 2005 GMOD Meeting")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [DAS](Category%253ADAS "Category%253ADAS")

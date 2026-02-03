@@ -3,7 +3,6 @@ title: "GSOC Applications Guide"
 ---
 # GSOC Applications Guide
 
-
 **We would like to know who you are and how you think.**
 
   

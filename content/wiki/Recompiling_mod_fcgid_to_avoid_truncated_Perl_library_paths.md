@@ -3,7 +3,6 @@ title: "Recompiling mod fcgid to avoid truncated Perl library paths"
 ---
 # Recompiling mod fcgid to avoid truncated Perl library paths
 
-
 Apache's
 <a href="http://httpd.apache.org/mod_fcgid/" class="external text"
 rel="nofollow">mod_fcgid</a> has many feature and performance advantages

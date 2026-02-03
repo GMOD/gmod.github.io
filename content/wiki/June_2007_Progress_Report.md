@@ -3,7 +3,6 @@ title: "June 2007 Progress Report"
 ---
 # June 2007 Progress Report
 
-
   Overview](#Overview)
   - [Meetings](#Meetings)
   - [New GMOD
@@ -46,7 +45,6 @@ title: "June 2007 Progress Report"
   - [Publications and
     outreach](#Publications_and_outreach)
 - [TAIR](#TAIR)
-
 
 ## Overview
 

@@ -3,7 +3,6 @@ title: "News/GBrowse Tutorial at PAG XVI"
 ---
 # News/GBrowse Tutorial at PAG XVI
 
-
 Scott Cain will present a
 <a href="http://www.intl-pag.org/16/16-gbrowse.html"
 class="external text" rel="nofollow">GBrowse tutorial</a> at the
@@ -20,10 +19,8 @@ additional information.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/12/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

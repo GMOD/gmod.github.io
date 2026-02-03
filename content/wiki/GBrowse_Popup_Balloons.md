@@ -276,7 +276,7 @@ alt="Sample2b.png" />
       my $key = shift; # the key for the text or code-ref in the gbrowse config file
       my $feat = shift;
       my $contents = $CONFIG->config->code_setting('TOOLTIPS',$key) or die "$key is empty";
-      my $coderef = (ref $contents||'') eq 'CODE';
+      my $coderef = (ref $contents|'') eq 'CODE';
       return $contents unless $coderef;
       # paranoia?
       die "Error: $key is not a CODE-REF" if ref $contents && !$coderef;

@@ -3,17 +3,13 @@ title: "News/August 2009 GMOD Meeting"
 ---
 # News/August 2009 GMOD Meeting
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/GMOD2009Europe170.png" width="170"
 height="145" alt="August 2009 GMOD Meeting" />](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
 
-
   
-
 
 [Register for the August 2009 GMOD
 Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
-
 
   
 The [next GMOD
@@ -49,10 +45,8 @@ Please join us in Oxford this August,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/07/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

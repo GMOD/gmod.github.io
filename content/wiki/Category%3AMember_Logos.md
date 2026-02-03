@@ -3,9 +3,7 @@ title: "Category%253AMember Logos"
 ---
 # Category%253AMember Logos
 
-
 Logos of organizations that participate in GMOD.
-
 
 ## Media in category "Member Logos"
 
@@ -1598,13 +1596,4 @@ The following 69 files are in this category, out of 69 total.
   
 
   [ZFINLogo.png](File:ZFINLogo.png "File:ZFINLogo.png")  
-  20 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons")
+  20 KB

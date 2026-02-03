@@ -3,11 +3,9 @@ title: "VMware HOWTO"
 ---
 # VMware HOWTO
 
-
 <a href="http://vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a>
-
 
 <a href="http://vmware.com" class="external text"
 rel="nofollow">VMware</a> images containing GMOD software let you try
@@ -24,7 +22,6 @@ VMware images are used in several places in GMOD:
 
   
 
-
   Players</span>](#VMware_Players)
 - [Getting the
   VMware Image](#Getting_the_VMware_Image)
@@ -34,7 +31,6 @@ VMware images are used in several places in GMOD:
   VMWare Image](#Using_the_VMWare_Image)
 - [Fluxbox](#Fluxbox)
 
-
 # VMware Players
 
 Which software to use to run **VMware** images depends on the operating
@@ -43,16 +39,13 @@ operating system inside the VMware image.)
 
 VMware on Windows and Linux
 
-
 <a href="http://www.microsoft.com/" rel="nofollow" title="Windoze"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windoze" /></a>
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 A free VMware player is available for [Microsoft
 Windows](Category%253AWindows "Category%253AWindows") and
@@ -67,11 +60,9 @@ on your laptop.
 
 VMware on Mac OS X
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
@@ -83,11 +74,9 @@ other options, **all of which require an Intel Mac**:
 
 VMware Fusion
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a>
-
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
 rel="nofollow">VMware Fusion</a>
@@ -103,11 +92,9 @@ free trial version of VMware Fusion available for download.**
 
 VirtualBox
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox" />
-
 
 <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
 rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel
@@ -133,12 +120,9 @@ your system.
 If you are running a player from VMware (VMware Player or Fusion), the
 software will ask you if you moved or copied the image.
 
-
 You Moved It!
 
-
 Yes you did.
-
 
 If you say you copied it, you will have to do additional network
 configuration once it is up and running.
@@ -195,8 +179,3 @@ by typing:
 on the command line, and the GUI will start up. After it starts up, you
 can right click (or control-click) to get a menu that will start
 applications like Firefox and terminal.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")

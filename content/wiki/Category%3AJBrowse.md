@@ -3,21 +3,17 @@ title: "Category%253AJBrowse"
 ---
 # Category%253AJBrowse
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "JBrowse"
 
 The following 44 pages are in this category, out of 44 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -174,7 +170,6 @@ title="Web-apollo-meeting-2011-3-21">Web-apollo-meeting-2011-3-21</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "JBrowse"
 
@@ -451,13 +446,4 @@ The following 12 files are in this category, out of 12 total.
   
 
   [Wiggle-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Wiggle-options.png "File:Wiggle-options.png")  
-  37 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  37 KB

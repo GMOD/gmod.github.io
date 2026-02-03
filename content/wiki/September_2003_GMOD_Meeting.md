@@ -3,9 +3,7 @@ title: "September 2003 GMOD Meeting"
 ---
 # September 2003 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
-
 
   3</span>](#Meeting_3)
 - [Progress
@@ -14,7 +12,6 @@ Generic Model Organism Database Construction Set
     Status Update](#PubSearch_Status_Update)
   - [Pathway
     Tools Status Report](#Pathway_Tools_Status_Report)
-
 
 ## Meeting 3
 
@@ -211,7 +208,6 @@ follows.
        * The converter  is working well for D.melanogaster data, and work is in
          progress to make it able to handle other genome data sets.
 
-
     Textpresso: A progress report
 
     Eimear Kenny, Hans-Michael Mueller and Paul Sternberg
@@ -257,7 +253,6 @@ follows.
     First foray into Fact Extraction using Textpresso
     We have automatically extracted ~14,000 unique locus<->allele<->reference
     relationships from the full text of ~2000 C. elegans journal articles.
-
 
     Mouse Genome Informatics
 
@@ -361,7 +356,6 @@ follows.
     them to refine and edit annotations, and also to look at comparisons
     between multiple genomes rather than just two.
 
-
     BOP progress:
 
     BOP has been merged into the Apollo codebase, so you can now run BOP
@@ -373,7 +367,6 @@ follows.
     BOP can now generate cigar strings to represent gapped alignments in a
     compact format.  This allows the alignments to be viewed in Apollo's
     alignment viewer.
-
 
     GBrowse
 
@@ -432,7 +425,6 @@ follows.
     that will illustrate the difficulties we face in taking GMOD from a
     collection of useful tools to a working integrated architecture.
 
-
     PubFetch/PubTrack Progress Report (September 2003)
 
     PubFetch
@@ -462,7 +454,6 @@ follows.
     Our next step is to connect the PubFetch service with PubSearch via BioMOBY to
     enable PubSearch to use PubFetch as its literature data source.
 
-
     Implementation of PubSearch at RGD
 
     We have been working with the TAIR developers to install and populate at
@@ -479,7 +470,6 @@ follows.
     anticipated this will lead to a variety of suggested modifications that will
     further the flexibility of the PubSearch tool for use by other MODs.
 
-
     PubTrack
 
     We have continued to collect use cases for PubTrack and discuss the utility
@@ -490,7 +480,6 @@ follows.
     problem of tracking information (data) within an organization (MOD). It is
     anticipated that significant progress will be made towards an initial
     prototype for PubTrack in the next quarter.
-
 
     GMOD project update, Sept 2003, Don Gilbert
     ------------------------------------------

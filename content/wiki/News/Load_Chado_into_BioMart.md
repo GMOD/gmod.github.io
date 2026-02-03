@@ -3,7 +3,6 @@ title: "News/Load Chado into BioMart"
 ---
 # News/Load Chado into BioMart
 
-
 <a href="../BioMart#How_to_Load_a_Chado_Database_into_BioMart"
 rel="nofollow" title="Load Chado into BioMart"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/125px-Biomart250.png"
@@ -14,7 +13,6 @@ title="INRA URG"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Urgi.png/105px-Urgi.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Urgi.png/158px-Urgi.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Urgi.png/210px-Urgi.png 2x"
 width="105" height="71" alt="INRA URG" /></a>
-
 
 A group at INRA URGI have documented "[How to load a Chado database into
 BioMart](../BioMart#How_to_Load_a_Chado_Database_into_BioMart "BioMart")".
@@ -38,10 +36,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

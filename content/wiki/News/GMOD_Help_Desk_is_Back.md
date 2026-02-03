@@ -3,7 +3,6 @@ title: "News/GMOD Help Desk is Back"
 ---
 # News/GMOD Help Desk is Back
 
-
 After a several month hiatus, the [GMOD Help
 Desk](../GMOD_Help_Desk "GMOD Help Desk") is back. Dave Clements has
 taken the role created by Brian Osborne earlier this year. Dave will
@@ -14,10 +13,8 @@ for more.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/10/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

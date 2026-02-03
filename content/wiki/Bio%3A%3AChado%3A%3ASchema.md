@@ -3,7 +3,6 @@ title: "Bio%253A%253AChado%253A%253ASchema"
 ---
 # Bio%253A%253AChado%253A%253ASchema
 
-
 Bio%253A%253AChado%253A%253ASchema is a standard
 <a href="http://search.cpan.org/perldoc?DBIx::Class"
 class="external text" rel="nofollow">DBIx::Class</a> layer for Chado, in
@@ -19,14 +18,12 @@ with any database supported by DBIx::Class. So far, it has been used
 successfully with Chado schemas running on both PostgreSQL and Oracle.
 Please try it out and report back to the mailing list!
 
-
   Development](#Development)
   - [To-Do](#To-Do)
   - [Contributors](#Contributors)
 - [Documentation](#Documentation)
 - [Download](#Download)
 - [Support](#Support)
-
 
 ## Development
 
@@ -75,10 +72,7 @@ is often sufficient.
 
 ## Support
 
-|  |  |  |  |
-|----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
+|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
 class="external text" rel="nofollow">gmod-schema</a> | Use the <a href="Chado" class="mw-redirect" title="Chado">Chado</a> list (gmod-schema) for all **Bio%253A%253AChado%253A%253ASchema** questions. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://old.nabble.com/gmod-schema-f3506.html"
 class="external text" rel="nofollow">Nabble (old)</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
@@ -86,20 +80,8 @@ class="external text" rel="nofollow">Nabble (new, 2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"
 class="external text" rel="nofollow">Sourceforge</a> |
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Middleware
-  Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse">Schema</span>"</span><span class="smwrdflink"><span class="rdflink">RDF
 feed</span></span>
 
-|  |  |
-|----|----|
-| Chado | Schema <span class="smwsearch">[+](Special%253ASearchByProperty/Chado/Schema "Special%253ASearchByProperty/Chado/Schema")</span> |
-| Talk:Bio | Schema <span class="smwsearch">[+](Special%253ASearchByProperty/Talk%253ABio/Schema "Special%253ASearchByProperty/Talk%253ABio/Schema")</span> |
+|----|----| Chado | Schema  | Talk:Bio | Schema  |

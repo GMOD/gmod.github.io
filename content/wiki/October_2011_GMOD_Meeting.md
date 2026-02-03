@@ -294,32 +294,17 @@ title="Matahari.pdf">PDF</a></td>
 
 ### Day 2: Thursday
 
-| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          |
-| ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                |
-| 10:00                              | [Galaxy](Galaxy.1 "Galaxy")                                                  | [Dan Blankenberg](User%253ADanB "User%253ADanB") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" |
-| title="2011 10 Galaxy.pdf">PDF</a> |
-| 10:30                              | [Coffee](GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_... "GMOD Promotion") |                                                  |                                                                                                                                |
-| 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
+| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](Galaxy.1 "Galaxy")                                                  | [Dan Blankenberg](User%253ADanB "User%253ADanB") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_... "GMOD Promotion") | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
 
 class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
 to GMOD Data</a> | Ben Vandervalk | <a
 href="http://prezi.com/sc0jnrbdqu3n/sadi-for-gmod-an-rdfowl-interface-for-gmod/"
 class="external text" rel="nofollow">Prezi</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/SADIforGMOD.pdf" class="internal"
-title="SADIforGMOD.pdf">PDF</a> |
-| 11:30 | [The Comprehensive Antibiotic Resistance Database](News/CARD "News/CARD") | Andrew McArthur | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/Andrew_mcarthur.pdf" class="internal"
+title="SADIforGMOD.pdf">PDF</a> | 11:30 | [The Comprehensive Antibiotic Resistance Database](News/CARD "News/CARD") | Andrew McArthur | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/Andrew_mcarthur.pdf" class="internal"
 title="Andrew mcarthur.pdf">PDF</a>,<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Andrew_mcarthur.ppt" class="internal"
-title="Andrew mcarthur.ppt">PPT</a> |
-| 12:00 | Lunch | | |
-| 1:30 | Lightning talks <span class="small">(Please feel free to give a 5-10 minute talk on whatever; if you are interested enough to put together a talk, others will likely be interested in the content! :-)</span> | | |
+title="Andrew mcarthur.ppt">PPT</a> | 12:00 | Lunch | 1:30 | Lightning talks <span class="small">(Please feel free to give a 5-10 minute talk on whatever; if you are interested enough to put together a talk, others will likely be interested in the content! :-)</span> | ### Day 3: Friday
 
-### Day 3: Friday
-
-| Time | Workshop                     | Location                  |
-| ---- | ---------------------------- | ------------------------- |
-| 9:00 | [BioMart](#BioMart_Workshop) | OICR, 8th floor Boardroom |
-| 9:00 | [Galaxy](#Galaxy_Workshop)   | OICR room HL-31           |
-| 2:30 | [MAKER](#MAKER_Workshop)     | OICR, 8th floor Boardroom |
+| Time | Workshop                     | Location                  | ---- | ---------------------------- | ------------------------- | 9:00 | [BioMart](#BioMart_Workshop) | OICR, 8th floor Boardroom | 9:00 | [Galaxy](#Galaxy_Workshop)   | OICR room HL-31           | 2:30 | [MAKER](#MAKER_Workshop)     | OICR, 8th floor Boardroom |
 
 ## Suggested agenda items
 
@@ -348,10 +333,7 @@ Please feel free to add suggested talks or topics for the meeting.
 
 ## Scheduled Satellite Meetings
 
-|     |     |     |     |
-| --- | --- | --- | --- |
-
-| <img
+|     | --- | --- | --- | --- | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/110px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/165px-Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/220px-Biomart250.png 2x"
 width="110" height="44" alt="BioMart" /> | <img
@@ -408,12 +390,7 @@ participants, so please
 <a href="http://gmod.eventbrite.com/" class="external text"
 rel="nofollow">register</a> and arrive early.
 
-| Workshop Slides                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [An Introduction to Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf "File:GalaxyWorkshop0 2011 10.pdf")                                                    |
-| [Using Galaxy for High-throughput Sequencing (HTS) Analysis and Visualization](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf "File:GalaxyWorkshop1 2011 10.pdf") |
-| [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf "File:GalaxyWorkshop2 2011 10.pdf")                                        |
-| [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf "File:GalaxyWorkshop3 2011 10.pdf")                                       |
+| Workshop Slides                                                                                                                                                                                                                 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [An Introduction to Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf "File:GalaxyWorkshop0 2011 10.pdf")                                                    | [Using Galaxy for High-throughput Sequencing (HTS) Analysis and Visualization](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf "File:GalaxyWorkshop1 2011 10.pdf") | [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf "File:GalaxyWorkshop2 2011 10.pdf")                                        | [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf "File:GalaxyWorkshop3 2011 10.pdf")                                       |
 
 ### [InterMine](InterMine "InterMine") Development Meeting
 

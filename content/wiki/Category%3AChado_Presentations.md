@@ -3,17 +3,14 @@ title: "Category%253AChado Presentations"
 ---
 # Category%253AChado Presentations
 
-
 ## Pages in category "Chado Presentations"
 
 This category contains only the following page.
-
 
 ### A
 
 - [August 2009 GMOD
   Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
-
 
 ## Media in category "Chado Presentations"
 

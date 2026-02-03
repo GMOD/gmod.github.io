@@ -3,7 +3,6 @@ title: "Category%253APerl"
 ---
 # Category%253APerl
 
-
 *Perl* is the programming language most often used in the bioinformatics
 realm, and it is the language most often used by GMOD developers. It is
 well-suited to text and data processing and is also characterized by an
@@ -22,11 +21,9 @@ See also:
 - <a href="http://cpan.perl.org/" class="external text"
   rel="nofollow">CPAN - Perl's open source library repository.</a>
 
-
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### B
 
@@ -36,11 +33,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Modware](Category%253AModware "Category%253AModware")
 
-
 ## Pages in category "Perl"
 
 The following 12 pages are in this category, out of 12 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -103,7 +98,6 @@ Sherlock</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "Perl"
 
 The following 2 files are in this category, out of 2 total.
@@ -149,13 +143,4 @@ The following 2 files are in this category, out of 2 total.
 
   [DasI
   middleware.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/DasI_middleware.pdf "File:DasI middleware.pdf")  
-  740 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  740 KB

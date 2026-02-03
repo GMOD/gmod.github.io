@@ -3,7 +3,6 @@ title: "SequenceDumper.pm"
 ---
 # SequenceDumper.pm
 
-
 **SequenceDumper.pm** is a [GBrowse](GBrowse.1 "GBrowse")
 <a href="Plugin" class="mw-redirect" title="Plugin">plugin</a>. The most
 extensive and up to date documentation is available from

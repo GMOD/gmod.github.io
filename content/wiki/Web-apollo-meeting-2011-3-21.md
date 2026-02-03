@@ -3,7 +3,6 @@ title: "Web-apollo-meeting-2011-3-21"
 ---
 # Web-apollo-meeting-2011-3-21
 
-
 - Jay
   - Has a report on connecting Apollo to Trellis. Test will tell us
     where things stand.

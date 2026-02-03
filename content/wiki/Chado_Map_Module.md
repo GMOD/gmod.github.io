@@ -25,7 +25,7 @@ the left or right of a feature (but not within it):
 
                         |---------|  feature-to-map
            ------------------------------------------------- map
-                   |------|         |----------|   features to map wrt
+                   |------|----------|   features to map wrt
 
 ### To Do
 
@@ -40,14 +40,7 @@ the left or right of a feature (but not within it):
 
 ## Table: featuremap
 
-| F-Key                                               | Name          | Type                   | Description   |
-| --------------------------------------------------- | ------------- | ---------------------- | ------------- |
-|                                                     | featuremap_id | serial                 | _PRIMARY KEY_ |
-|                                                     | name          | character varying(255) | _UNIQUE_      |
-|                                                     | description   | text                   |               |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id   | integer                |               |
-
-featuremap Structure
+| F-Key                                               | Name          | Type                   | Description   | --------------------------------------------------- | ------------- | ---------------------- | ------------- |                                                     | featuremap_id | serial                 | _PRIMARY KEY_ |                                                     | name          | character varying(255) | _UNIQUE_      |                                                     | description   | text                   | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id   | integer                featuremap Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -59,11 +52,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: featuremap_pub
 
-| F-Key                                                       | Name              | Type    | Description   |
-| ----------------------------------------------------------- | ----------------- | ------- | ------------- |
-|                                                             | featuremap_pub_id | serial  | _PRIMARY KEY_ |
-| [featuremap](Chado_Tables#Table:_featuremap "Chado Tables") | featuremap_id     | integer | _NOT NULL_    |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _NOT NULL_    |
+| F-Key                                                       | Name              | Type    | Description   | ----------------------------------------------------------- | ----------------- | ------- | ------------- |                                                             | featuremap_pub_id | serial  | _PRIMARY KEY_ | [featuremap](Chado_Tables#Table:_featuremap "Chado Tables") | featuremap_id     | integer | _NOT NULL_    | [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _NOT NULL_    |
 
 featuremap_pub Structure
 

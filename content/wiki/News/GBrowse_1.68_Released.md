@@ -3,7 +3,6 @@ title: "News/GBrowse 1.68 Released"
 ---
 # News/GBrowse 1.68 Released
 
-
 Version 1.68 of [GBrowse](../GBrowse.1 "GBrowse") is a stability release
 which improves the documentation and installation process. It includes a
 new script called `gbrowse_netinstall.pl`, which will semi-automatically
@@ -15,10 +14,8 @@ title="GBrowse Linux HOWTO">Linux</a> platforms.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/04/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

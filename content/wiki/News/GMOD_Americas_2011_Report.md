@@ -3,12 +3,10 @@ title: "News/GMOD Americas 2011 Report"
 ---
 # News/GMOD Americas 2011 Report
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/170px-GMODAmericas2011Logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/255px-GMODAmericas2011Logo.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/340px-GMODAmericas2011Logo.jpg.png 2x"
 width="170" height="170" alt="GMOD Americas 2011" />](../GMOD_Americas_2011 "GMOD Americas 2011")
-
 
 [GMOD Americas 2011](../GMOD_Americas_2011 "GMOD Americas 2011") is now
 over. Almost 60 people participated in one or more events during the
@@ -54,10 +52,8 @@ Clements](../User%253AClements "User%253AClements")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/03/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

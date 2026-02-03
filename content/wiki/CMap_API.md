@@ -3,13 +3,11 @@ title: "CMap API"
 ---
 # CMap API
 
-
 Note: This document was generated from a POD formatted document checked
 in at <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/CMAP_API.pod"
 class="external text" rel="nofollow">SourceForge</a>. Editing will not
 result in long term changes.
-
 
   API</span>](#CMap_API)
 - [VERSION](#VERSION)
@@ -125,7 +123,6 @@ result in long term changes.
 - [Questions or
   Comments](#Questions_or_Comments)
 - [AUTHOR](#AUTHOR)
-
 
 ## CMap API
 
@@ -1085,8 +1082,3 @@ rel="nofollow">http://sourceforge.net/projects/gmod/</a>.
 Ben Faga, faga@cshl.edu
 
 Copyright (c) 2007 Cold Spring Harbor Laboratory
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [CMap](Category%253ACMap "Category%253ACMap")

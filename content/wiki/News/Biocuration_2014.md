@@ -3,7 +3,6 @@ title: "News/Biocuration 2014"
 ---
 # News/Biocuration 2014
 
-
 <a href="http://biocuration2014.events.oicr.on.ca/"
 class="external text" rel="nofollow">7th International Biocuration
 Conference</a>
@@ -67,6 +66,5 @@ class="external text" rel="nofollow">Submit your abstract for
 presentation (poster or talks only)</a>
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/17*

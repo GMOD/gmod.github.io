@@ -3,7 +3,6 @@ title: "IGB"
 ---
 # IGB
 
-
 <a href="http://genoviz.sourceforge.net/" class="external text"
 rel="nofollow">Integrated Genome Browser</a> (IGB, pronounced "ig-bee")
 is an application built upon the GenoViz SDK and Genometry for

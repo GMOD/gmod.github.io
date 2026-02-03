@@ -3,14 +3,12 @@ title: "GMOD in a Box/WebApollo"
 ---
 # GMOD in a Box/WebApollo
 
-
 GMOD in a Box has WebApollo and all its prerequisites installed and
 configured. You'll only need to process your data to start using
 WebApollo.
 
 For this guide, we'll be using the included sample data located in:
 ~/sample_data/pyu_data
-
 
   management</span>](#User_management)
 - [Data
@@ -49,7 +47,6 @@ For this guide, we'll be using the included sample data located in:
     searching](#Sequence_searching)
 - [Accessing
   WebApollo](#Accessing_WebApollo)
-
 
 # User management
 

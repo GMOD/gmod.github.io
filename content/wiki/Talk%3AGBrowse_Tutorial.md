@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Tutorial"
 ---
 # Talk%253AGBrowse Tutorial
 
-
 The links to the Administration Tutorials above are broken!
 
 - *Fixed now; thanks for pointing that out.*

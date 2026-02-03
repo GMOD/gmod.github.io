@@ -3,11 +3,9 @@ title: "Category%253AWormBase"
 ---
 # Category%253AWormBase
 
-
 ## Pages in category "WormBase"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### G
 
@@ -31,7 +29,6 @@ The following 6 pages are in this category, out of 6 total.
 
 - [Zheng's notes on wormbase
   migration](Zheng's_notes_on_wormbase_migration "Zheng's notes on wormbase migration")
-
 
 ## Media in category "WormBase"
 
@@ -77,13 +74,4 @@ The following 2 files are in this category, out of 2 total.
   
 
   [Wdb small.gif](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9d/Wdb_small.gif "File:Wdb small.gif")  
-  8 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  8 KB

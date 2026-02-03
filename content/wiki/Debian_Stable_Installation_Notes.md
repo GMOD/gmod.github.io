@@ -3,7 +3,6 @@ title: "Debian Stable Installation Notes"
 ---
 # Debian Stable Installation Notes
 
-
   (Etch 4.0) installation
   notes</span>](#Debian_Stable_.28Etch_4.0.29_installation_notes)
   - [Apache](#Apache)
@@ -23,7 +22,6 @@ title: "Debian Stable Installation Notes"
       works](#What_works)
   - [Gbrowse
     configuration](#Gbrowse_configuration)
-
 
 ## Debian Stable (Etch 4.0) installation notes
 
@@ -308,8 +306,3 @@ in /etc/apache2/
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Gbrowse.png" width="1438" height="932"
 alt="Gbrowse.png" />
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Linux](Category%253ALinux "Category%253ALinux")

@@ -3,7 +3,6 @@ title: "Introduction to Chado"
 ---
 # Introduction to Chado
 
-
   chado?</span>](#What.27s_a_chado.3F)
 - [Chado - the
   way of tea](#Chado_-_the_way_of_tea)
@@ -70,7 +69,6 @@ title: "Introduction to Chado"
     feedback](#Chado_beta_testers_and_other_feedback)
 - [About this
   Page](#About_this_Page)
-
 
 ## What's a chado?
 
@@ -361,7 +359,6 @@ The following view uses the
 [cvpath](Chado_Tables#Table:_cvpath "Chado Tables") table, which
 includes the closure of the *is_a* relationship.
 
-
 ``` de1
  CREATE VIEW fgene AS
    SELECT
@@ -372,7 +369,6 @@ includes the closure of the *is_a* relationship.
    WHERE cvterm.termname = 'gene';
 ```
 
-
 At Flybase we will mostly be using chado in *data-mining* mode - i.e. we
 will be querying, not updating. This means we can *materialize* views
 for speed.
@@ -382,15 +378,7 @@ for speed.
 The chado relational model defines a fixed set of attributes for a
 [feature](Chado_Tables#Table:_feature "Chado Tables"):
 
-| Field | Required | Description |
-|----|----|----|
-| dbxref_id | no | namespaced identifier (foreign key) |
-| name | no | A not-guaranteed-unique identifier that is useful to a human |
-| uniquename | yes | name or identifier that is unique in the database |
-| residues | no | DNA, RNA or protein sequence |
-| md5checksum | no | signature of sequence |
-| seqlen | no | length of sequence (may be present even if residues is absent) |
-| type_id | yes | <a href="http://sequenceontology.org" class="external text"
+| Field | Required | Description |----|----|----| dbxref_id | no | namespaced identifier (foreign key) | name | no | A not-guaranteed-unique identifier that is useful to a human | uniquename | yes | name or identifier that is unique in the database | residues | no | DNA, RNA or protein sequence | md5checksum | no | signature of sequence | seqlen | no | length of sequence (may be present even if residues is absent) | type_id | yes | <a href="http://sequenceontology.org" class="external text"
 rel="nofollow">Sequence Ontology</a> feature type (foreign key) |
 
   

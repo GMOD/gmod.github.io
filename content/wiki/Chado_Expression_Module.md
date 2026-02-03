@@ -3,7 +3,6 @@ title: "Chado Expression Module"
 ---
 # Chado Expression Module
 
-
   Introduction](#Introduction)
   - [Mage and
     Expression](#Mage_and_Expression)
@@ -20,7 +19,6 @@ title: "Chado Expression Module"
     expression_pub](#Table:_expression_pub)
   - [Table:
     feature_expression](#Table:_feature_expression)
-
 
 # Introduction
 
@@ -143,14 +141,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 The expression table is essentially a bridge table.
 
-| F-Key | Name          | Type          | Description       |
-|-------|---------------|---------------|-------------------|
-|       | expression_id | serial        | *PRIMARY KEY*     |
-|       | uniquename    | text          | *UNIQUE NOT NULL* |
-|       | md5checksum   | character(32) |                   |
-|       | description   | text          |                   |
-
-expression Structure
+| F-Key | Name          | Type          | Description       |-------|---------------|---------------|-------------------|       | expression_id | serial        | *PRIMARY KEY*     |       | uniquename    | text          | *UNIQUE NOT NULL* |       | md5checksum   | character(32) | description   | text          expression Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -167,13 +158,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: expression_cvterm
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | expression_cvterm_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
-|  | rank | integer | *NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |----|----|----|----|  | expression_cvterm_id | serial | *PRIMARY KEY* | [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |  | rank | integer | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_cvterm Structure
 
@@ -187,11 +172,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: expression_image
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | expression_image_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [eimage](Chado_Tables#Table:_eimage "Chado Tables") | eimage_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |----|----|----|----|  | expression_image_id | serial | *PRIMARY KEY* | [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* | [eimage](Chado_Tables#Table:_eimage "Chado Tables") | eimage_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_image Structure
 
@@ -201,11 +182,7 @@ expression_image Structure
 
 ## Table: expression_pub
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | expression_pub_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |----|----|----|----|  | expression_pub_id | serial | *PRIMARY KEY* | [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_pub Structure
 
@@ -215,12 +192,7 @@ expression_pub Structure
 
 ## Table: feature_expression
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | feature_expression_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |----|----|----|----|  | feature_expression_id | serial | *PRIMARY KEY* | [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_expression Structure
 

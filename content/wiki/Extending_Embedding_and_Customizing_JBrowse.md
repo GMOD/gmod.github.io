@@ -3,7 +3,6 @@ title: "Extending Embedding and Customizing JBrowse"
 ---
 # Extending Embedding and Customizing JBrowse
 
-
 Result of discussions at GMOD satellite meeting, March 2011
 
 Potential upcoming changes to JSON format:

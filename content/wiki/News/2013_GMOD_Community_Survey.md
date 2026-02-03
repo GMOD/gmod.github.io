@@ -3,11 +3,9 @@ title: "News/2013 GMOD Community Survey"
 ---
 # News/2013 GMOD Community Survey
 
-
 <a href="http://23andme.com" rel="nofollow" title="23andMe"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/23andme-logo.jpg" width="287"
 height="162" alt="23andMe" /></a>
-
 
 ### Give us your thoughts on the GMOD project and win a <a href="http://23andme.com" class="external text"
 rel="nofollow">personal DNA test from 23andMe</a>!

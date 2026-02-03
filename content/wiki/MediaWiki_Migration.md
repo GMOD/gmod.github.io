@@ -60,7 +60,7 @@ There were multiple sources of "extra" files:
   of MediaWiki. Conveniently, these files were either named in such a way that it was
   obvious what they were or were in subdirectories that I could wholesale delete.
   Some of those files still exist, like this "Special:Browse" page for
-  [Apollo](Special%253ABrowse/Apollo), which lists what categories Apollo is tagged with.
+  , which lists what categories Apollo is tagged with.
 - Special MediaWiki pages: there are lots of pages that MediaWiki will generate
   including history, talk and Template pages. Again these are pretty easy to identify and remove.
 - Uploads: There are nearly 5000 files in the MediaWiki `images` directory

@@ -3,14 +3,12 @@ title: "News/Galaxy Australasia Workshop 2014"
 ---
 # News/Galaxy Australasia Workshop 2014
 
-
 <a href="http://wiki.galaxyproject.org/Events/GAW2014" rel="nofollow"
 title="1st Galaxy Australasia Workshop 2014 (GAW 2014)"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/16/GAW2014Logo.png/200px-GAW2014Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/16/GAW2014Logo.png/300px-GAW2014Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/16/GAW2014Logo.png/400px-GAW2014Logo.png 2x"
 width="200" height="96"
 alt="1st Galaxy Australasia Workshop 2014 (GAW 2014)" /></a>
-
 
 **The <a href="https://wiki.galaxyproject.org/Events/GAW2014"
 class="external text" rel="nofollow">1st Galaxy Australasia Workshop
@@ -81,6 +79,5 @@ class="external text" rel="nofollow">Committee GAW 2014 Organising
 Committee</a>
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on yyyy/mm/dd*

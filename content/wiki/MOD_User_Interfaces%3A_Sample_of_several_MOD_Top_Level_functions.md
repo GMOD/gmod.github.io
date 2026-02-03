@@ -3,7 +3,6 @@ title: "MOD User Interfaces: Sample of several MOD Top Level functions"
 ---
 # MOD User Interfaces: Sample of several MOD Top Level functions
 
-
 Sample of several MOD Top-Level functions
 
 Top and side bar navigation menus from Ensembl, SGD/Yeastgenome,

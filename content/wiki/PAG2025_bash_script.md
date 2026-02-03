@@ -3,7 +3,6 @@ title: "PAG2025 bash script"
 ---
 # PAG2025 bash script
 
-
     #!/bin/bash
 
     jbrowse create public_html --force 
@@ -29,7 +28,6 @@ title: "PAG2025 bash script"
        --name "Protein coding genes" \
        --description "Only protein coding genes from WormBase" \
        --config '{ "metadata": { "source":"Directly from WormBases JBrowse 1 instance at https://wormbase.org/tools/genome/jbrowse" } }'
-
 
     jbrowse add-track https://s3.amazonaws.com/agrjbrowse/MOD-jbrowses/WormBase/static_tracks/modencode-bucket/test/CeNDR/CB4854.bam \
            --name "CeNDR BAM" \
@@ -59,7 +57,6 @@ title: "PAG2025 bash script"
          --load inPlace \
          --name "C. elegans/C. briggsae Synteny" \
          --config '{ "metadata": { "source":"Comparative analysis using this command: minimap2 -c data/c_elegans.PRJNA13758.WS286.genomic.fa.gz data/c_briggsae.PRJNA10731.WS287.genomic.fa.gz > c_elegans.c_briggsae.paf" } }'
-
 
     jbrowse add-track https://s3.amazonaws.com/agrjbrowse/MOD-jbrowses/WormBase/WS287/c_briggsae_PRJNA10731/tracks/Curated_Genes/{refseq}/trackData.jsonz \
          --assemblyNames c_briggsae_PRJNA10731 \

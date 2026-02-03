@@ -3,11 +3,9 @@ title: "MAKER Tutorial 2011"
 ---
 # MAKER Tutorial 2011
 
-
 This [MAKER](MAKER.1 "MAKER") tutorial was taught by [Barry
 Moore](User%253ABmoore "User%253ABmoore") as part of the [2011 GMOD Spring
 Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
-
 
   Overview, Installation, and Basic Configuration for Annotating Genomic
   Sequence</span>](#Maker_Overview.2C_Installation.2C_and_Basic_Configuration_for_Annotating_Genomic_Sequence)
@@ -94,7 +92,6 @@ Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
   - [MAKER
     Accessory Scripts](#MAKER_Accessory_Scripts)
 
-
 # Maker Overview, Installation, and Basic Configuration for Annotating Genomic Sequence
 
 The first half of this page describes the basics of
@@ -149,7 +146,6 @@ Examples:
 
 - Structural Annotations: exons, introns, UTRs, splice forms
   etc.
-
 
   
 To use this feature, you must have MPICH2 installed with the the
@@ -229,7 +225,6 @@ know how to start a MAKER job via MPI.
 
 ## User Interface for Local MAKER Installation
 
-
 This example did not work during class because a conflict with the
 version of Apache that was installed. The issue has since been fixed.
 Before beginning the example, open a terminal and remove the following
@@ -245,7 +240,6 @@ Then update maker via subversion.
 ``` enter
  svn update ~/Documents/Software/maker/
 ```
-
 
 The MWAS interface provides a very convenient method for running MAKER
 and viewing results; however, because compute resources are limited
@@ -391,9 +385,7 @@ Scripts:
   redirect output into a file.
      genemark_gtf2gff3 <filename><pre>
 
-
     ''gff3_2_gtf'' - Converts MAKER GFF3 files to GTF format (run add_utr_start_stop_gff first to get UTR features)
-
 
     <pre> gff3_2_gtf <gff3_file>
 
@@ -490,19 +482,7 @@ Scripts:
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[MAKER Tutorial
-2011](Special%253ABrowse/MAKER-20Tutorial-202011 "Special%253ABrowse/MAKER-20Tutorial-202011")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/MAKER "Special%253ASearchByProperty/Has-20topic/MAKER")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER")  |

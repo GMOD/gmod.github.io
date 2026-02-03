@@ -3,13 +3,11 @@ title: "News/BioPerl Podcast"
 ---
 # News/BioPerl Podcast
 
-
 <a href="http://twit.tv/floss96" rel="nofollow"
 title="BioPerl Podcast"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/BioPerl_logo.jpg/70px-BioPerl_logo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/BioPerl_logo.jpg/105px-BioPerl_logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg 2x"
 width="70" height="94" alt="BioPerl Podcast" /></a>
-
 
 A <a href="http://twit.tv/floss96" class="external text"
 rel="nofollow">podcast on the BioPerl project</a> is available at
@@ -25,10 +23,8 @@ Stajich](../User%253AStajich "User%253AStajich").
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

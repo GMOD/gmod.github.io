@@ -3,7 +3,6 @@ title: "JBrowseDev/The UrlTemplate Option"
 ---
 # JBrowseDev/The UrlTemplate Option
 
-
 In [JBrowse](../JBrowse.1 "JBrowse"), the urlTemplate option is used to
 link features to an external website.
 
@@ -74,7 +73,6 @@ any of the other columns, e.g.:
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")

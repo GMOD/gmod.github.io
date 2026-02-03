@@ -3,7 +3,6 @@ title: "News/Don Gilbert Nominated for BFA"
 ---
 # News/Don Gilbert Nominated for BFA
 
-
 <a href="http://www.bioinformatics.org/franklin/" rel="nofollow"
 title="Don Gilbert Nominated for Benjamin Franklin Award"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/62/BioinformaticsOrganization.png/140px-BioinformaticsOrganization.png"
@@ -11,17 +10,14 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="140" height="36"
 alt="Don Gilbert Nominated for Benjamin Franklin Award" /></a>
 
-
 The Bioinformatics Organization has announced its nominees for the the
 <a href="http://www.bioinformatics.org/forums/forum.php?forum_id=7956"
 class="external text" rel="nofollow">2010 Benjamin Franklin Award</a>.
-
 
 The Benjamin Franklin Award for Open Access in the Life Sciences is a
 humanitarian/bioethics award presented annually by this organization to
 an individual who has, in his or her practice, promoted free and open
 access to the materials and methods used in the life sciences.
-
 
 This year's nominees include longtime GMOD contributor [Don
 Gilbert](../User%253ADongilbert "User%253ADongilbert"), of Indiana University.
@@ -46,10 +42,8 @@ free.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

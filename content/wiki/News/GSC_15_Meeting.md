@@ -3,7 +3,6 @@ title: "News/GSC 15 Meeting"
 ---
 # News/GSC 15 Meeting
 
-
 The <a href="http://gensc.org/gc_wiki/index.php/GSC_15"
 class="external text" rel="nofollow">15th Genomic Standards Council
 meeting</a> will be held in Bethesda, Maryland, USA, April 22-24 2013,
@@ -22,12 +21,10 @@ with a hackathon on April 24 and 25. From the meeting website:
 > of GSC15 will include concurrent GSC working groups open to GSC15
 > participants.
 
-
 <a href="http://gensc.org/gc_wiki/index.php/GSC_15" rel="nofollow"
 title="Genomic Standards Council"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/Gsc-standard.png" width="309"
 height="72" alt="Genomic Standards Council" /></a>
-
 
 The GSC is soliciting abstracts for 15 minute talks or posters; the
 topics are implementing standards in genomic and metagenomic research

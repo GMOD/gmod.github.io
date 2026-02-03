@@ -3,7 +3,6 @@ title: "GBrowse Tutorial 2012"
 ---
 # GBrowse Tutorial 2012
 
-
 This [GBrowse](GBrowse.1 "GBrowse") tutorial was taught at the [2012
 GMOD Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School")
 by [Scott Cain](User%253AScott "User%253AScott").
@@ -13,7 +12,6 @@ ami-5bab1c32, name: GMOD 2012 day 4 start**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
 Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
 how to get this AMI.
-
 
   Prerequisites](#Prerequisites)
 - [Install
@@ -41,7 +39,6 @@ how to get this AMI.
     functionality](#Add_.22show_summary.22_functionality)
   - [Enabling
     full text searching](#Enabling_full_text_searching)
-
 
 ## Prerequisites
 
@@ -323,20 +320,7 @@ text searching, by adding this to the Chado database stanza:
 Now we can search for "`gene 0.27`" and we'll find our gene (plus its
 mRNA and exons) and we can click on the gene to see it in GBrowse.
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GBrowse Tutorial
-2012](Special%253ABrowse/GBrowse-20Tutorial-202012 "Special%253ABrowse/GBrowse-20Tutorial-202012")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/GBrowse "Special%253ASearchByProperty/Has-20topic/GBrowse")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse")  |

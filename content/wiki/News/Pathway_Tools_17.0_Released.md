@@ -3,7 +3,6 @@ title: "News/Pathway Tools 17.0 Released"
 ---
 # News/Pathway Tools 17.0 Released
 
-
 Version 17.0 of [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") has
 been released, and can be downloaded from the
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external text"
@@ -14,7 +13,6 @@ site, downloadable data files, and downloadable [Pathway
 Tools](../Pathway_Tools.1 "Pathway Tools") software/database bundle.
 Version 17.0 of BioCyc contains 2,920 Pathway/Genome Databases.
 
-
   Changes</span>](#General_Changes)
 - [Navigator --
   Web](#Navigator_--_Web)
@@ -23,7 +21,6 @@ Version 17.0 of BioCyc contains 2,920 Pathway/Genome Databases.
 - [RouteSearch --
   Metabolic Route Search](#RouteSearch_--_Metabolic_Route_Search)
 - [PathoLogic](#PathoLogic)
-
 
 ### General Changes
 
@@ -92,6 +89,5 @@ Full details in the
 class="external text" rel="nofollow">Pathway Tools release notes</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/03*

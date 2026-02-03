@@ -3,7 +3,6 @@ title: "News/GMOD 1.0 Released"
 ---
 # News/GMOD 1.0 Released
 
-
 I am very pleased to announce the release of GMOD 1.0. The file can be
 downloaded from SourceForge at:
 
@@ -55,10 +54,8 @@ rel="nofollow">gmod-schema@lists.sourceforge.net</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/31*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

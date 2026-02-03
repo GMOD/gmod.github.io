@@ -3,7 +3,6 @@ title: "Genome grid"
 ---
 # Genome grid
 
-
   Aims</span>](#Genome_Grid_Aims)
 - [Genome
   analysis and annotation via Grid
@@ -15,7 +14,6 @@ title: "Genome grid"
 - [Downloads](#Downloads)
 - [References](#References)
 - [Contact](#Contact)
-
 
 # Genome Grid Aims
 

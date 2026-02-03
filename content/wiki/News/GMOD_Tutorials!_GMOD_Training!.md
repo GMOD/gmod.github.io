@@ -3,20 +3,17 @@ title: "News/GMOD Tutorials! GMOD Training!"
 ---
 # News/GMOD Tutorials! GMOD Training!
 
-
 <a href="../Training_and_Outreach#Online_Tutorials" rel="nofollow"
 title="Summer School - Europe"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b5/GMOD2009Europe170.png/120px-GMOD2009Europe170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/GMOD2009Europe170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/GMOD2009Europe170.png 2x"
 width="120" height="102" alt="Summer School - Europe" /></a>
 
-
 <a href="../Training_and_Outreach#Online_Tutorials" rel="nofollow"
 title="Summer School - Americas"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2d/2009SummerSchoolAmericas170.png/120px-2009SummerSchoolAmericas170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2d/2009SummerSchoolAmericas170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2d/2009SummerSchoolAmericas170.png 2x"
 width="120" height="97" alt="Summer School - Americas" /></a>
-
 
 Detailed and hands-on [online
 tutorials](../Training_and_Outreach#Online_Tutorials "Training and Outreach")
@@ -177,10 +174,8 @@ pipeline</a></strong></td>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,12 +3,10 @@ title: "News/Visualizing Biological Data Workshop"
 ---
 # News/Visualizing Biological Data Workshop
 
-
 <a href="http://www.vizbi.org" rel="nofollow"
 title="Visualizing Biological Data (VizBi)"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/EMBO_Logo.png" width="110" height="69"
 alt="Visualizing Biological Data (VizBi)" /></a>
-
 
 The first <a href="http://www.vizbi.org/" class="external text"
 rel="nofollow">EMBO Workshop on Visualizing Biological Data (VizBi)</a>
@@ -34,10 +32,8 @@ November 2009.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

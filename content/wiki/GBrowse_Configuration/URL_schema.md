@@ -3,7 +3,6 @@ title: "GBrowse Configuration/URL schema"
 ---
 # GBrowse Configuration/URL schema
 
-
 This article describes **the public CGI parameters recognized by
 GBrowse**.
 

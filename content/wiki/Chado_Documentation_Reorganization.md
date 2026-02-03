@@ -3,7 +3,6 @@ title: "Chado Documentation Reorganization"
 ---
 # Chado Documentation Reorganization
 
-
 We are going to reorganize the [Chado related
 documentation](Category%253AChado "Category%253AChado") in this web site.
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> is the
@@ -17,13 +16,11 @@ going.
 
   
 
-
   Exists</span>](#What_Exists)
 - [Plan](#Plan)
   - [Feedback](#Feedback)
     - [Comments](#Comments)
 - [Mechanics](#Mechanics)
-
 
 ## What Exists
 

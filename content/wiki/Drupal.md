@@ -3,7 +3,6 @@ title: "Drupal"
 ---
 # Drupal
 
-
 # Overview
 
 <a href="http://drupal.org" class="external text"

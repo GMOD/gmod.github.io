@@ -3,7 +3,6 @@ title: "BLAST Graphic Viewer/tool data"
 ---
 # BLAST Graphic Viewer/tool data
 
-
 \| name = BLAST Graphic Viewer \| full_name = \|
 status = mature \| dev = inactive \| support = active \| type = Sequence
 Alignment \| platform = web \| logo = \| home =

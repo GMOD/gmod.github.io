@@ -3,15 +3,12 @@ title: "Category%253AHOWTO"
 ---
 # Category%253AHOWTO
 
-
 How To documents are narrative descriptions of tasks that can be
 accomplished using GMOD tools.
-
 
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### C
 
@@ -21,11 +18,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "HOWTO"
 
 The following 50 pages are in this category, out of 50 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -198,8 +193,3 @@ HOWTO</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

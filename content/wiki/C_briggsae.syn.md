@@ -3,7 +3,6 @@ title: "C briggsae.syn"
 ---
 # C briggsae.syn
 
-
 This is the species database for *C. briggsae*. This is one of the three
 species currently represented in the instance of
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") that is installed at
@@ -29,7 +28,6 @@ simplified version as shown here.
     # Web site configuration info
     buttons     = images/buttons
     tmpimages   = tmp
-
 
     # max and default segment sizes for detailed view
     max segment     = 400000
@@ -62,8 +60,3 @@ simplified version as shown here.
     [CG:150000]
     glyph   = generic
     feature = CDS
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")

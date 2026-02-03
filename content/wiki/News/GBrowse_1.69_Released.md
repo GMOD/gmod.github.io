@@ -3,7 +3,6 @@ title: "News/GBrowse 1.69 Released"
 ---
 # News/GBrowse 1.69 Released
 
-
 I am very happy to announce that [GBrowse](../GBrowse.1 "GBrowse") 1.69
 was released today. This release of GBrowse comes with a variety of user
 interface enhancements, performance improvements, bug fixes and a
@@ -56,10 +55,8 @@ GMOD Project Coordinator
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

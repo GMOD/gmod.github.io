@@ -3,15 +3,12 @@ title: "Category%253AComputing"
 ---
 # Category%253AComputing
 
-
 This category describes pages or categories where the computing
 technology itself is the central theme of the page or category.
-
 
 ## Subcategories
 
 This category has the following 14 subcategories, out of 14 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -79,11 +76,9 @@ services</a></li>
 </tbody>
 </table>
 
-
 ## Pages in category "Computing"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### C
 
@@ -97,7 +92,6 @@ The following 5 pages are in this category, out of 5 total.
 - [GFF](GFF "GFF")
 - [GFF2](GFF2 "GFF2")
 - [Glossary](Glossary "Glossary")
-
 
 ## Media in category "Computing"
 
@@ -120,13 +114,4 @@ This category contains only the following file.
   
 
   [Aug2009Sam.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Aug2009Sam.pdf "File:Aug2009Sam.pdf")  
-  582 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Categories](Category%253ACategories "Category%253ACategories")
+  582 KB

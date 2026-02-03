@@ -3,7 +3,6 @@ title: "News/GMOD Helpdesk Position Open"
 ---
 # News/GMOD Helpdesk Position Open
 
-
 Opening for a <a
 href="https://itsapps.unc.edu/RAMS4/details.do?reqId=1102082&amp;type=S%7CGMOD"
 class="external text" rel="nofollow">USER SUPPORT SPECIALIST</a>
@@ -57,10 +56,8 @@ may be addressed to H. Lapp at by email or by phone at 919.668.5288.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/02/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

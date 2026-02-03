@@ -3,7 +3,6 @@ title: "PostgreSQL Performance Tips"
 ---
 # PostgreSQL Performance Tips
 
-
   Background](#Background)
 - [General
   Tips](#General_Tips)
@@ -19,7 +18,6 @@ title: "PostgreSQL Performance Tips"
 - [Installing
   Schema](#Installing_Schema)
 
-
 ## Background
 
 This page is for collecting tips on tuning
@@ -30,6 +28,5 @@ otherwise indicated the tips on this page refer to PostgreSQL servers in
 the 8.x series.
 
 ## General Tips
-
 
 - [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")

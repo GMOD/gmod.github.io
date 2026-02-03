@@ -3,7 +3,6 @@ title: "News/New InterMine and MOD funding"
 ---
 # News/New InterMine and MOD funding
 
-
 An NHGRI grant that funded a collaboration between
 <a href="http://intermine.org" class="external text"
 rel="nofollow">InterMine</a> and three of the major Model Organism
@@ -29,10 +28,8 @@ available to bioinformaticians.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

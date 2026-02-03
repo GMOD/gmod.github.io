@@ -3,17 +3,14 @@ title: "GBrowse 1 Configuration HOWTO"
 ---
 # GBrowse 1 Configuration HOWTO
 
-
 (Redirected from [GBrowse Configuration
 HOWTO/bullets2h3](GBrowse_Configuration_HOWTO/bullets2h3)
-
 
 This document provides information on configuring version 1 of the
 [Generic Genome Browser (GBrowse)](../GBrowse.1 "GBrowse"), part of the
 [GMOD Project](../Main_Page "Main Page"). For version 2, see
 <a href="../GBrowse_2_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
-
 
   Databases From Scratch</span>](#Creating_Databases_From_Scratch)
 - [Adding and
@@ -83,7 +80,6 @@ title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
   Maintenance](#Important_Maintenance)
 - [Further
   Information](#Further_Information)
-
 
 # Creating Databases From Scratch
 
@@ -246,7 +242,6 @@ Adaptors](../GBrowse_Adaptors "GBrowse Adaptors") page.
 
 db_args
 
-
 Arguments to pass to the adaptor for it to use when making a database
 connection. The exact format will depend on the adaptor you're using.
 For Bio::DB::GFF running on top of a [MySQL](../MySQL "MySQL") database
@@ -293,7 +288,6 @@ The indicated directory should contain one or more [GFF](../GFF "GFF")
 and [FASTA](../Glossary#FASTA "Glossary") files, distinguished by the
 filename extensions `.gff` and `.fa` respectively.
 
-
 user  
 The user name for the gbrowse script to log in under if you are not
 using `nobody`. This is exactly the same as providing the `-user` option
@@ -332,7 +326,6 @@ invokes the browser for the first time. The default is 800.
 
 default features
 
-
 The default features option is a space-delimited list of tracks to turn
 on by default. You will probably need to change this. For example:
 
@@ -345,9 +338,7 @@ annotation plugin track by default, preface the plugin's name with
         default features = Genes ORFs Centromeres:overview
                            plugin:RestrictionAnnotator
 
-
 initial landmark
-
 
 This option controls what feature to show when the user first visits a
 GBrowse database and has not yet performed a search. If not present,
@@ -357,7 +348,6 @@ overview or panel.
 Example:
 
           initial landmark = Chr1
-
 
 truecolor  
 If this option is present and true, then GBrowse will create 24-bit
@@ -377,12 +367,10 @@ will all be interpreted in terms of the specified units.
 
 zoom levels
 
-
 GBrowse allows unlimited zoom levels. This option selects the width of
 each level, in bp. For example:
 
          zoom levels = 1000 2000 5000 10000 20000 40000 100000 200000
-
 
 region segment  
 If this configuration option is set, a new "region panel" will appear
@@ -392,15 +380,12 @@ pairs. The default value is 50000.
 
 region sizes
 
-
 This contains a space-delimited list of region panel sizes to present to
 the user in a popup menu:
 
         region sizes   = 5000 10000 20000
 
-
 show sources
-
 
 A `0` (false) or `1` (true) value which controls whether or not to show
 the popup menu displaying the defined data sources. Set this to `0` if
@@ -409,7 +394,6 @@ this option defaults to `1` (true).
 
 Note that all data sources will need to have this option defined in
 order for it to take effect across all databases.
-
 
 default varying  
 The track selection table will be sorted alphabetically, by default;
@@ -427,7 +411,6 @@ This is the color for the background of the detailed view.
 
 header
 
-
 This is a header to print at the top of the browser page. It is any
 valid HTML, and can span multiple lines provided that the continuation
 lines begin with white space.
@@ -441,9 +424,7 @@ Example:
 
        header = <h1>Welcome to the Volvox Sequence Page</h1>
 
-
 footer
-
 
 This is a footer to print at the bottom of the browser page. It is any
 valid HTML, and can span multiple lines provided that the continuation
@@ -467,9 +448,7 @@ Example:
             </TR>
             </table>
 
-
 examples
-
 
 You can provide GBrowse with some canned examples of "interesting
 regions" for the user to click on. The examples option, if present,
@@ -477,9 +456,7 @@ provides a space-delimited list of interesting regions. For example:
 
           examples = II  NPY1 NAB2 Orf:YGL123W
 
-
 instructions, search_instructions, navigation_instructions
-
 
 You may override the default instructions (as defined in the
 language-specific configuration files in conf/lang) by setting these
@@ -487,9 +464,7 @@ options. For example:
 
             instructions = "Type in the name of a contig or clone."
 
-
 category tables
-
 
 This option allows you to group the on/off checkboxes for set of tracks
 into a rectangular M x N table. It can be used to highlight the
@@ -524,20 +499,14 @@ See the <a href="http://cloud.gmod.org/gbrowse2/tutorial/tutorial.html"
 class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
 more details.
 
-
 instructions section, search section, overview section, region section,
 details section, tracks section, display_settings section, upload_tracks
 section
 
-
 These options control which sections are displayed and whether they are
 initially open or collapsed. Their values are one of:
 
-|        |                                      |
-|--------|--------------------------------------|
-| open   | Show the section initially open      |
-| closed | Show the section initially collapsed |
-| off    | Do not show the section at all       |
+|--------|--------------------------------------| open   | Show the section initially open      | closed | Show the section initially collapsed | off    | Do not show the section at all       |
 
 For example
 
@@ -553,24 +522,13 @@ section only. Turning off the search section will also disable the
 navigation buttons. If you want to disable searching selectively, you
 should use the "no search" option instead.
 
-
 html1, html2, html3, html4, html5, html6
-
 
 These options allow you to insert HTML into the GBrowse page at
 strategic places. Eventually this will be replaced with an HTML template
 system, but for now, this is the best we have.
 
-| Option | Where it goes                                     |
-|--------|---------------------------------------------------|
-| header | between the top and the instructions              |
-| html1  | between the instructions and the navigation bar   |
-| html2  | between the navigation bar and the overview       |
-| html3  | between the overview and the detail view          |
-| html4  | between the detail view and the data source panel |
-| html5  | between the data source panel and the track list  |
-| html6  | between the track list and the annotation upload  |
-| footer | between the annotation upload and the bottom      |
+| Option | Where it goes                                     |--------|---------------------------------------------------| header | between the top and the instructions              | html1  | between the instructions and the navigation bar   | html2  | between the navigation bar and the overview       | html3  | between the overview and the detail view          | html4  | between the detail view and the data source panel | html5  | between the data source panel and the track list  | html6  | between the track list and the annotation upload  | footer | between the annotation upload and the bottom      |
 
 These can be code references. One useful thing to do is to use the
 language translator to insert language-specific HTML. Here's an example
@@ -601,35 +559,23 @@ class="external text" rel="nofollow">Bio::DB::GFF::RelSegment</a> for
 details). The second argument is a hashref containing the user's
 settings for the current page.
 
-
 keystyle, empty_tracks
-
 
 These two general options control the appearance of the keys printed on
 the detailed view.
 
 `keystyle` takes one of two values:
 
-|           |                                                            |
-|-----------|------------------------------------------------------------|
-| `between` | Print the track labels between the tracks themselves.      |
-| `beneath` | Print the track labels at the bottom of the detailed view. |
+|-----------|------------------------------------------------------------| `between` | Print the track labels between the tracks themselves.      | `beneath` | Print the track labels at the bottom of the detailed view. |
 
 The `empty_tracks` option controls what to do when a track has no
 features in it. Possible values are:
 
-|            |                                       |
-|------------|---------------------------------------|
-| `key`      | Print just the key (the track label). |
-| `suppress` | Suppress the track completely.        |
-| `line`     | Draw a solid line across the track.   |
-| `dashed`   | Draw a dashed line across the track.  |
+|------------|---------------------------------------| `key`      | Print just the key (the track label). | `suppress` | Suppress the track completely.        | `line`     | Draw a solid line across the track.   | `dashed`   | Draw a dashed line across the track.  |
 
 The default value is `key`.
 
-
 background, postgrid
-
 
 These two options can be used to place custom background images in the
 details panel and are useful for advanced operations such as colorizing
@@ -662,9 +608,7 @@ looks, see <a
 href="http://plasmodb.org/cgi-bin/gbrowse/plasmodb/?name=Pf3D7_11:1278854..1310722;label=AnnotatedGenes-SyntenySpansVivaxMC-SyntenyGenesVivaxMC-SyntenySpansYoeliiMC-SyntenyGenesYoeliiMC-SyntenySpansChabaudiMC-SyntenyGenesChabaudiMC-SyntenySpansKnowlesiMC-SyntenyGenesKnowlesiMC-SyntenySpansBergheiMC-SyntenyGenesBergheiMC;h_feat=PF11_0344@yellow"
 class="external text" rel="nofollow">PlasmoDB</a>.
 
-
 image_padding = 25, pad_left = 50, pad_right = 30
-
 
 The `image_padding` option will add the indicated amount of whitespace
 (in pixels) to the right and left of the detail panel. The default is 25
@@ -675,9 +619,7 @@ being cut off.
 You can individually adjust the left and right padding using `pad_left`
 and `pad_right`, which, if present, will supersede `image_padding`.
 
-
 show track categories
-
 
 If this option is set to a true value, then tracks that have been
 assigned to categories (using the "category" option described later),
@@ -686,7 +628,6 @@ track of key "Protein matches" and category "vertebrate" will be
 displayed in a track labeled "Protein match (vertebrate)".
 
 The default is false.
-
 
 ### Behavior Options
 
@@ -698,7 +639,6 @@ Options](#Appearance_Options) sections for options that don't fall
 cleanly into one category or the other.
 
 aggregators
-
 
 This option is only valid when used with Bio::DB::GFF adaptors, and
 lists one or more aggregators to use for complex features. It is
@@ -719,9 +659,7 @@ Do not use aggregators with the
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>,
 BioSQL, or Chado [adaptors](../GBrowse_Adaptors "GBrowse Adaptors").
 
-
 reference class
-
 
 **Note:** This option is used only with the
 <a href="http://bioperl.org/wiki/Module:Bio::DB::GFF"
@@ -733,9 +671,7 @@ features are placed on. The default is Sequence. If you want to use
 another class, such as Contig, please indicate the class here (if you
 don't, certain features such as the keyword search will fail):
 
-
 drag and drop
-
 
 If this is set to true, then code will be activated that lets the user
 pick up and drag individual tracks in order to change their vertical
@@ -744,7 +680,6 @@ browser (IE 5 or higher, Firefox 1.5 or higher) and must have JavaScript
 activated.
 
 It is off by default for compatibility with older browsers.
-
 
 disable wildcards  
 Ordinarily a user can type in "YAL\*" to find all features with names
@@ -759,7 +694,6 @@ searches are returning too few. (This option was added in version 1.70).
 
 max segment, min segment
 
-
 These options control the size of segments that will be shown in the
 detailed view.
 
@@ -772,7 +706,6 @@ pairs.
 If the user tries to view a segment smaller than the `min segment`
 option, then the segment will be resized to be this size. The default is
 20 bp.
-
 
 default segment  
 The default segment option sets the width of the segment (bp) that will
@@ -789,7 +722,6 @@ value.
 
 cache time
 
-
 The server will cache track images for a period of time in order to
 speed up performance. After the time has expired, the cached version of
 the image will not be used. This option specifies the time, in hours,
@@ -799,9 +731,7 @@ If you are debugging your config file and want to see uncached images,
 call GBrowse with the CGI option `nocache=1`. There is no equivalent
 configuration option.
 
-
 version
-
 
 An optional numeric version for this configuration file. Every time
 GBrowse runs a user's request, it checks the value of the config file
@@ -815,7 +745,6 @@ Example:
 
       version = 1.1
 
-
 request timeout  
 This is the timeout value for requests. If a user requests a large
 region and the request takes more than the indicated number of seconds,
@@ -828,7 +757,6 @@ the appropriate place to stick JavaScript code, etc. It can be a code
 reference if you wish.
 
 onload
-
 
 This is the name of JavaScript function(s) to be called via the page
 body's onload event handler. Any text included here will be used to
@@ -845,9 +773,7 @@ will result in
 
      <body onload="alert('I am about to do something');doSomething('arg1','arg2')">
 
-
 automatic classes
-
 
 When the user types in a search string that is not qualified by a class
 (as in `EST:yk1234.5`), GBrowse will automatically search for a matching
@@ -864,7 +790,6 @@ Symbol, Gene and Clone. The search stops when the first match is found.
 Otherwise, the browser will proceed to a full text search of all the
 comment fields.
 
-
 search attributes (<a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](../GBrowse_Adaptors "GBrowse Adaptors") only)  
 When the browser has searched the name and alias of features without
@@ -879,13 +804,11 @@ list of attribute names to the `search attributes` option.
 
 no search
 
-
 If you don't want the "Landmark or Region" textbox to appear, set this
 to true. The user will still be able to search the database by appending
 `q=<search term>` to the URL.
 
              no search = 1
-
 
 no autosearch  
 If this option is set to a true value, then users' previous search will
@@ -894,7 +817,6 @@ Instead, the previous search will be pasted into the "Landmark or
 Region" box and the user will have to press "Search" to reexecute it.
 
 das mapmaster
-
 
 This option, which should appear somewhere in the `[GENERAL]` section,
 indicates that the database should be made available as a
@@ -908,9 +830,7 @@ reference servers are.)
 Please see DAS_HOWTO for more information on using
 <a href="../DAS" class="mw-redirect" title="DAS">DAS</a> with GBrowse.
 
-
 proxy, http proxy, ftp proxy
-
 
 If your web server is behind a firewall and needs to use a proxy in
 order to access remote HTTP or FTP sites, then one or more of these
@@ -924,9 +844,7 @@ proxy:
 
       proxy = http://myproxy.myorg.com:9000
 
-
 session driver, session args
-
 
 These options fine-tune how GBrowse manages its state-maintaining
 sessions. GBrowse uses
@@ -970,9 +888,7 @@ to work well. If you change these defaults, be sure to change them in
 **all** configuration files; otherwise weird stuff will happen when
 moving from one data source to another.
 
-
 remember settings time
-
 
 The length of time to remember page-specific settings in the format
 `+NNNu`, where `NNN` is a number and `u` is a unit (`w` = weeks, `d` =
@@ -988,7 +904,6 @@ The default value is 1 month.
 
 See the CGI manual page for more information on the time format.
 
-
 remember cookie time  
 This is the length of time before the user's session cookie will stay on
 disk before it expires. It should be significantly longer than
@@ -997,7 +912,6 @@ remember source time
 **Deprecated.** Use `remember cookie time` instead.
 
 msie hack
-
 
 GBrowse uses HTTP POST to transfer the current page settings to the web
 server. Because of the way that Microsoft Internet Explorer caches
@@ -1008,7 +922,6 @@ When you set `msie hack` to a true value, GBrowse will use the GET
 request when it detects MSIE in use. This will fix the "Back" button
 issue, but will put very long URLs in the Location box. It is your
 choice which of these is more annoying to your users.
-
 
 suppress_menu  
 This option will cause the browser to ignore your configuration file
@@ -1332,7 +1245,6 @@ Valid options are as follows:
 
 feature
 
-
 This relates the track to one or more feature types as they appear in
 the database. Recall that each feature has a method and source. This is
 represented in the form method:source. So, for example, a feature of
@@ -1351,9 +1263,7 @@ same track and display them in a similar fashion.
 
 It isn't possible to use wild-cards or pattern matching.
 
-
 remote feature
-
 
 This relates the track to a remote feature track somewhere on the
 Internet. The value is a http: or ftp: URL, and may correspond to a
@@ -1363,7 +1273,6 @@ option and most of the glyph control options described below are
 ignored, but the "citation" and "key" options are honored. Example:
 
     remote feature = http://www.wormbase.org/cgi-bin/das/wormbase?type=mRNA
-
 
 glyph
 
@@ -1485,7 +1394,6 @@ for details.
 
 group_on
 
-
 For Bio::DB::SeqFeature::Store databases *only*, the group_on field
 allows you to group features together by display_name, target or any
 other method. This is mostly useful for XY-plot data, where you may want
@@ -1496,14 +1404,12 @@ same vertical scaling. Example:
 
 (this feature is under refinement and may change in the future)
 
-
 restrict  
 This option allows you to restrict who is allowed to view the current
 track by host name, IP address or username/password. See [Authentication
 & Authorization](#Authentication_.26_Authorization) for details.
 
 category
-
 
 This option allows you to group tracks into different groups on the
 GBrowse display in addition to the default group called 'General'. For
@@ -1540,7 +1446,6 @@ column 1, then all rows of column 2, etc.
 See the <a href="http://cloud.gmod.org/gbrowse2/tutorial/tutorial.html"
 class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
 more details.
-
 
 das category, das landmark, das flatten, das subparts, das superparts, das glyph, das type  
 All these options pertain to exporting the GBrowse database as a DAS

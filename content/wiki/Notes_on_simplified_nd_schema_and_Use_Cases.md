@@ -3,7 +3,6 @@ title: "Notes on simplified nd schema and Use Cases"
 ---
 # Notes on simplified nd schema and Use Cases
 
-
   SQL](#SQL)
 - [Schema
   Drawing](#Schema_Drawing)
@@ -35,7 +34,6 @@ title: "Notes on simplified nd schema and Use Cases"
         performed](#genotyping_performed)
     - [Insecticide Resistance
       Assay](#Insecticide_Resistance_Assay)
-
 
 ## SQL
 
@@ -454,9 +452,3 @@ class="external text" rel="nofollow">VB wiki</a>
 - Results -\> nd_assayprop
 - Observed phenotype -\> nd_assay_phenotype, phenotype module
 - Genotype -\> nd_assay_genotype, genotype module
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Natural
-  Diversity](Category%253ANatural_Diversity "Category%253ANatural Diversity")

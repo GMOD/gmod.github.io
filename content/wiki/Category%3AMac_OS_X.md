@@ -3,17 +3,14 @@ title: "Category%253AMac OS X"
 ---
 # Category%253AMac OS X
 
-
 Pages that are particularly relevant to using GMOD on the Mac OS X
 [operating system](Glossary#Operating_System "Glossary").
 <a href="http://www.mac-how.net" class="external text"
 rel="nofollow">how to recover deleted files on mac</a>
 
-
 ## Pages in category "Mac OS X"
 
 The following 4 pages are in this category, out of 4 total.
-
 
 ### C
 
@@ -31,7 +28,6 @@ The following 4 pages are in this category, out of 4 total.
 ### G
 
 - [GBrowse MacOSX HOWTO](GBrowse_MacOSX_HOWTO "GBrowse MacOSX HOWTO")
-
 
 ## Media in category "Mac OS X"
 
@@ -100,13 +96,4 @@ The following 3 files are in this category, out of 3 total.
   
 
   [ParallelsDesktopLogo.gif](File:ParallelsDesktopLogo.gif "File:ParallelsDesktopLogo.gif")  
-  2 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  2 KB

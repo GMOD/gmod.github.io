@@ -3,7 +3,6 @@ title: "BioDIG/tool data"
 ---
 # BioDIG/tool data
 
-
 \| name = BioDIG \| full_name = Biological Database of
 Images and Genomes \| status = alpha release \| dev = active \| support
 = active \| type = Community Annotation, Database schema, Database

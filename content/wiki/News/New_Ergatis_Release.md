@@ -3,7 +3,6 @@ title: "News/New Ergatis Release"
 ---
 # News/New Ergatis Release
 
-
 A new version of
 <a href="../Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>, a
 web-based utility for creating, running and reusing computational
@@ -38,10 +37,8 @@ class="external text" rel="nofollow">web form</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/01/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

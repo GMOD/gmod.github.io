@@ -3,7 +3,6 @@ title: "Talk%253AGFF"
 ---
 # Talk%253AGFF
 
-
 The gene examples are not a valid GFF3 files
 
     ctg123 example mRNA            1050 9000 . + . ID=EDEN.1;Parent=EDEN;Name=EDEN.1;Index=1

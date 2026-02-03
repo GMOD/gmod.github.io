@@ -3,9 +3,7 @@ title: "Using the vista plot Glyph"
 ---
 # Using the vista plot Glyph
 
-
 A vista_plot Track
-
 
 The vista_plot glyph (left) draws an xyplot of a quantitative signature
 (typically sequencing coverage after a ChIP or other pulldown

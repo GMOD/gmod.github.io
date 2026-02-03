@@ -3,7 +3,6 @@ title: "May 2003 GMOD Meeting"
 ---
 # May 2003 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
 
 ## Meeting 2
@@ -38,8 +37,3 @@ are the presentations given by the groups represented.
   title="System architecture may 2003.ppt">System_architecture_may_2003.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/CSH_Chado.ppt" class="internal"
   title="CSH Chado.ppt">CSH_Chado.ppt</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

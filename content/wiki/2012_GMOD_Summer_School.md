@@ -3,11 +3,9 @@ title: "2012 GMOD Summer School"
 ---
 # 2012 GMOD Summer School
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Summer-school-splash.jpg" width="779"
 height="395" alt="2012 Summer School splash screen" />
-
 
   
 The GMOD Summer School is a five day course that covers the use of
@@ -20,13 +18,11 @@ receive many more applications that we have slots.
 class="external text" rel="nofollow">GMOD 2012 Summer School wiki</a>
 (contents available to course participants only)
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/51/GMOD-Summer-School-2012-group.jpg/800px-GMOD-Summer-School-2012-group.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/GMOD-Summer-School-2012-group.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/GMOD-Summer-School-2012-group.jpg 2x"
 width="800" height="445"
 alt="Students and tutors from the 2012 GMOD Summer School" />
-
 
 ## The Course
 
@@ -182,12 +178,10 @@ through.
 
 ## Sponsors
 
-
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 GMOD thanks the <a href="http://nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> for

@@ -3,7 +3,6 @@ title: "GBrowse syn Database"
 ---
 # GBrowse syn Database
 
-
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
 [GBrowse](GBrowse.1 "GBrowse") based
 <a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
@@ -16,7 +15,6 @@ to get syntenic data into that database.
   data are for two rice species (courtesy of Bonnie Hurwitz)
 
   
-
 
   Alignment Data</span>](#Example_Alignment_Data)
   - [Note on
@@ -37,7 +35,6 @@ to get syntenic data into that database.
 - [GBrowse_syn
   Database Schema](#GBrowse_syn_Database_Schema)
 
-
 # Example Alignment Data
 
 The sample below is in CLUSTALW format. Other formats are also supported
@@ -49,9 +46,7 @@ shown in the example below contains meta-data about the alignment that
 is essential for the data to be loaded correctly with strand and
 coordinate information
 
-
     CLUSTAL W(1.81) multiple sequence alignment
-
 
     c_briggsae-chrII(+)/43862-46313           ATGAGCTTCCACAAAAGCATGAGCTTTCTCAGCTTCTGCCACATCAGCATTCAAATGATC
     c_remanei-Crem_Contig172(-)/123228-124941 ATGAGCCTCTACAACCGCATGATTCTTTTCAGCCTCTGCCACGTCCGCATTCAAATGCTC

@@ -3,7 +3,6 @@ title: "Creating and Managing Subtracks with GBrowse2"
 ---
 # Creating and Managing Subtracks with GBrowse2
 
-
 *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
 
@@ -28,7 +27,6 @@ per subtrack. In this scheme, each subtrack is defined by a set of
 feature filters. The filters are applied to each filter in turn, sorting
 them into the appropriate subtrack.
 
-
   Metadata</span>](#Using_Metadata)
   - [Full
     Example](#Full_Example)
@@ -44,7 +42,6 @@ them into the appropriate subtrack.
     Subtracks](#Labeling_Subtracks)
   - [Hiding
     Subtracks with no Data](#Hiding_Subtracks_with_no_Data)
-
 
 ## Using Metadata
 
@@ -116,9 +113,7 @@ that shows a number of ChIP-seq experiments with the attributes
 "factor", "stage" and "algorithm". The subtrack selection dialog that
 this generates is shown on the right.
 
-
 modENCODE ChIP-seq subtrack selector
-
 
 ### Multidimensional Subtracks
 

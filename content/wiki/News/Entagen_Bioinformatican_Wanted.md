@@ -3,7 +3,6 @@ title: "News/Entagen Bioinformatican Wanted"
 ---
 # News/Entagen Bioinformatican Wanted
 
-
 **Genomics Computational Biologist/Software Engineer**
 
 Email info@entagen.com with CV if interested.
@@ -49,11 +48,9 @@ address. This address wasn't routing correctly.**
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/22,
 updated 2011/05/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

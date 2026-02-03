@@ -3,7 +3,6 @@ title: "Jun 2016 GMOD Meeting"
 ---
 # Jun 2016 GMOD Meeting
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
 <colgroup>
@@ -64,7 +63,6 @@ the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a>.
 
-
   GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
 - [Draft
@@ -78,7 +76,6 @@ help desk</a>.
 - [Logistics](#Logistics)
   - [Shared
     Rides](#Shared_Rides)
-
 
 ## About GMOD
 
@@ -116,49 +113,24 @@ The registration fee includes lunch on June 30th.
 
 ### Walnut room, Thursday, June 30
 
-| Time | Topic | Presenter(s) | Presentation |
-|----|----|----|----|
-| 08:50 | Pre-meeting continental breakfast |  |  |
-| 09:15 | Introductions |  |  |
-| 09:40 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal"
+| Time | Topic | Presenter(s) | Presentation |----|----|----|----| 08:50 | Pre-meeting continental breakfast | 09:15 | Introductions | 09:40 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal"
 title="GMOD2016 GMOD.pdf">Intro</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/GMOD2016_InterMine.pdf"
 class="internal" title="GMOD2016 InterMine.pdf">InterMine</a>, <a
 href="https://www.dropbox.com/s/7i39svwlegfr4rq/MAKER_GMOD_2016.pdf?dl=0"
-class="external text" rel="nofollow">MAKER</a> |
-| 10:10 | Introduction to uMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/GMOD2016_uMOD.pdf" class="internal"
-title="GMOD2016 uMOD.pdf">Slides</a> |
-| 10:35 | Coffee |  |  |
-| 10:50 | GMOD in Action: The Legume Federation Project | Ethalinda Cannon | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/LegFed_GMOD2016.pdf" class="internal"
-title="LegFed GMOD2016.pdf">Slides</a> |
-| 11:20 | [JBrowse](JBrowse.1 "JBrowse") Update | Eric Yao | <a
+class="external text" rel="nofollow">MAKER</a> | 10:10 | Introduction to uMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/GMOD2016_uMOD.pdf" class="internal"
+title="GMOD2016 uMOD.pdf">Slides</a> | 10:35 | Coffee | 10:50 | GMOD in Action: The Legume Federation Project | Ethalinda Cannon | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/LegFed_GMOD2016.pdf" class="internal"
+title="LegFed GMOD2016.pdf">Slides</a> | 11:20 | [JBrowse](JBrowse.1 "JBrowse") Update | Eric Yao | <a
 href="https://drive.google.com/a/berkeley.edu/file/d/0BzJAAJpIcu9hVFloS2R6ZUxhcUE/view?usp=sharing"
-class="external text" rel="nofollow">Slides</a> |
-| 11:50 | Lunch |  |  |
-| 1:00 | [Apollo](Apollo.1 "Apollo"): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
+class="external text" rel="nofollow">Slides</a> | 11:50 | Lunch | 1:00 | [Apollo](Apollo.1 "Apollo"): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
 rel="nofollow">Nathan Dunn</a> | <a href="http://f1000research.com/slides/5-1389" class="external text"
-rel="nofollow">Slides</a> |
-| 1:30 | [Tripal](Tripal.1 "Tripal") Update | Lacey-Anne Sanderson |  |
-| 2:30 | Coffee |  |  |
-| 2:45 | [Galaxy](Galaxy.1 "Galaxy") Update | [Dave Clements](User%253AClements "User%253AClements"), <a href="https://github.com/bgruening" class="external text"
-rel="nofollow">Bjöern Grüning</a> | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf "File:GMOD2016 Galaxy.pdf") |
-| 3:15 | EvidentialGene project at <a href="http://eugenes.org/EvidentialGene/" class="external free"
+rel="nofollow">Slides</a> | 1:30 | [Tripal](Tripal.1 "Tripal") Update | Lacey-Anne Sanderson | 2:30 | Coffee | 2:45 | [Galaxy](Galaxy.1 "Galaxy") Update | [Dave Clements](User%253AClements "User%253AClements"), <a href="https://github.com/bgruening" class="external text"
+rel="nofollow">Bjöern Grüning</a> | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf "File:GMOD2016 Galaxy.pdf") | 3:15 | EvidentialGene project at <a href="http://eugenes.org/EvidentialGene/" class="external free"
 rel="nofollow">http://eugenes.org/EvidentialGene/</a> | Don Gilbert | <a
 href="http://arthropods.eugenes.org/EvidentialGene/about/evigenegmod1606iu.pdf"
-class="external text" rel="nofollow">Slides</a> |
-| 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") |  |
+class="external text" rel="nofollow">Slides</a> | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") ### Friday, July 1
 
-### Friday, July 1
-
-| Time | Topic | Presenter(s) | Presentation |
-|----|----|----|----|
-| 08:50 | Pre-meeting continental breakfast |  |  |
-| 09:15 | Tripal Expression module and search | Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf "File:GMOD Staton.pdf") |
-| 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose |  | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/GMOD_Asela.pdf" class="internal"
-title="GMOD Asela.pdf">Asela/LanzaTech</a> |
-| 11:30 | Lunch (on your own) |  |  |
-| 1:00 | Tripal workshop |  |  |
-
-## Agenda items
+| Time | Topic | Presenter(s) | Presentation |----|----|----|----| 08:50 | Pre-meeting continental breakfast | 09:15 | Tripal Expression module and search | Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf "File:GMOD Staton.pdf") | 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/GMOD_Asela.pdf" class="internal"
+title="GMOD Asela.pdf">Asela/LanzaTech</a> | 11:30 | Lunch (on your own) | 1:00 | Tripal workshop |  ## Agenda items
 
 More to be added as we confirm more speakers. If you are interested in
 giving a talk please contact the
@@ -200,16 +172,13 @@ class="external text" rel="nofollow">here</a>.
 
   
 
-
 "It's tempting to see bioinformatics as a collection of potential
 problems. Being at a GMOD meeting helps us see bioinformatics as a
 collection of potential solutions."
 
-
 Isabelle Phan,
 <a href="http://www.seattlebiomed.org" class="external text"
 rel="nofollow">SBRI</a>, and past GMOD meeting participant
-
 
 (Thanks to [Dave Clements](User%253AClements "User%253AClements") for the nice
 logo)

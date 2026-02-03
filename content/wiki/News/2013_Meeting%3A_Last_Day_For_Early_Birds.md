@@ -3,12 +3,10 @@ title: "News/2013 Meeting: Last Day For Early Birds"
 ---
 # News/2013 Meeting: Last Day For Early Birds
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/0b/Gmod-2013-mtg-alt.png/120px-Gmod-2013-mtg-alt.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/0b/Gmod-2013-mtg-alt.png/180px-Gmod-2013-mtg-alt.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Gmod-2013-mtg-alt.png 2x"
 width="120" height="120" alt="Gmod-2013-mtg-alt.png" />](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting")
-
 
 Early bird registration for the [April 2013 GMOD
 Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") closes
@@ -45,6 +43,5 @@ list or email
 help desk</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/21*

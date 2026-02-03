@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse syn"
 ---
 # Talk%253AGBrowse syn
 
-
   Hackathon (7/11/2010)</span>](#Upcoming_Hackathon_.287.2F11.2F2010.29)
   - [User
     interface](#User_interface)
@@ -16,7 +15,6 @@ title: "Talk%253AGBrowse syn"
 - [Report on the
   hackathon failure (and lessons to be
   learned)](#Report_on_the_hackathon_failure_.28and_lessons_to_be_learned.29)
-
 
 ## Upcoming Hackathon (7/11/2010)
 

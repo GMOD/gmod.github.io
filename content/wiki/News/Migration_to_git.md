@@ -3,7 +3,6 @@ title: "News/Migration to git"
 ---
 # News/Migration to git
 
-
 Today we will start the process of migrating several of the source code
 repositories for GMOD projects from SourceForge svn to
 <a href="http://github.com/" class="external text"
@@ -19,9 +18,7 @@ Scott
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/12*
-
 
   
 OK, GBrowse and Bio-Graphics are done. For each, I replaced their master
@@ -40,7 +37,6 @@ to have come though fine. Please let me know if you find any problems!
 
 Rob
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

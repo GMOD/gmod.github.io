@@ -3,7 +3,6 @@ title: "News/Insect Pest Workshop, 16-17 Nov"
 ---
 # News/Insect Pest Workshop, 16-17 Nov
 
-
 <a href="http://colloque.inra.fr/isyip" rel="nofollow"
 title="Information Systems for Insect Pests"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/86/InformationSystemsForInsectPests.gif/400px-InformationSystemsForInsectPests.gif"
@@ -11,14 +10,11 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="43"
 alt="Information Systems for Insect Pests" /></a>
 
-
 <a href="http://colloque.inra.fr/isyip" class="external text"
 rel="nofollow">1st International Workshop</a>
 
-
 16-17th November 2009  
 INRIA Rennes-Bretagne-Atlantique
-
 
 Given the development of cheaper high throughput sequencing
 technologies, it is easy to predict that in the very near future, new
@@ -59,10 +55,8 @@ minute presentation may be asked.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/07/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

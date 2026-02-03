@@ -3,12 +3,10 @@ title: "News/Feedback Wanted: JBrowse UI Redesign"
 ---
 # News/Feedback Wanted: JBrowse UI Redesign
 
-
 <a href="../File:JBrowseLogo.png" class="image" title="JBrowse"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/200px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/300px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/400px-JBrowseLogo.png 2x"
 width="200" height="44" alt="JBrowse" /></a>
-
 
 From Erik Derohanian:
 
@@ -27,6 +25,5 @@ rel="nofollow">Erik</a> or to the
 class="external text" rel="nofollow">JBrowse mailing list</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/11/24*

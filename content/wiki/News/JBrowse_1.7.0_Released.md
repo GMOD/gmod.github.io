@@ -3,7 +3,6 @@ title: "News/JBrowse 1.7.0 Released"
 ---
 # News/JBrowse 1.7.0 Released
 
-
 *from Rob Buels, JBrowse developer*
 
 I am pleased to announce the release of JBrowse 1.7.0, which includes a
@@ -54,6 +53,5 @@ rel="nofollow">1.7.0 release information</a> on the
 rel="nofollow">JBrowse website</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/11/05*

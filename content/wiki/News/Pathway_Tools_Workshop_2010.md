@@ -3,12 +3,10 @@ title: "News/Pathway Tools Workshop 2010"
 ---
 # News/Pathway Tools Workshop 2010
 
-
 <a href="http://bioinformatics.ai.sri.com/ptools10/" rel="nofollow"
 title="Pathway Tools Workshop 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/60/SRILogo.png" width="128" height="91"
 alt="Pathway Tools Workshop 2010" /></a>
-
 
 Registration is now open for the
 <a href="http://bioinformatics.ai.sri.com/ptools10/"
@@ -51,10 +49,8 @@ rel="nofollow">Tomer Altman</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

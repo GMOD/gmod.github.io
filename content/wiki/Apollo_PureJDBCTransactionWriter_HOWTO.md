@@ -3,7 +3,6 @@ title: "Apollo PureJDBCTransactionWriter HOWTO"
 ---
 # Apollo PureJDBCTransactionWriter HOWTO
 
-
 This HOWTO contains instructions for using the
 [Apollo](Apollo.1 "Apollo") PureJDBCTransactionWriter, a component of
 the chado/JDBC adapter that allows Apollo to save changes directly to a
@@ -12,7 +11,6 @@ JDBC, without having to install any stored procedures or triggers in the
 target database.
 
   
-
 
   Background](#Background)
 - [Prerequisites](#Prerequisites)
@@ -39,7 +37,6 @@ target database.
     PureJDBCTransactionWriter in the same Apollo
     install?](#Is_it_possible_to_use_both_JDBCTransactionWriter_and_PureJDBCTransactionWriter_in_the_same_Apollo_install.3F)
 - [Authors](#Authors)
-
 
 # Background
 

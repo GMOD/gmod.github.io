@@ -247,7 +247,6 @@ via HTML:
      <script type="text/javascript" src="js/prototype.js"></script>
      </head>
 
-
 NOTE: you can also add this code to the \<body\> section instead of the
 page header.
 
@@ -470,10 +469,7 @@ alt="The actual script is at http://mckay.cshl.edu/balloon" />
 Sample output. The program will draw either a sample of what the final
 product will look like or all of the necessary image components.
 
-|     |
-| :-: |
-
-| <img 
+| :-: | <img 
     src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Balloon_sample.png" width="411"    
                              height="402"                            
  alt="The actual script is at http://mckay.cshl.edu/balloon" /> |
@@ -1223,7 +1219,6 @@ package installed on local desktop computers
     distributed under the MIT-style license:
 
      http://opensource.org/licenses/mit-license.php
-
 
      Copyright (c) 2007-2012 Sheldon McKay, Cold Spring Harbor Laboratory
 

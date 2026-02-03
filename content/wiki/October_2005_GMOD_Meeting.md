@@ -3,11 +3,9 @@ title: "October 2005 GMOD Meeting"
 ---
 # October 2005 GMOD Meeting
 
-
 Generic Model Organism Database Construction Set
 
   
-
 
   7</span>](#Meeting_7)
 - [Agenda](#Agenda)
@@ -18,7 +16,6 @@ Generic Model Organism Database Construction Set
 - [Meeting
   Report](#Meeting_Report)
 
-
 ## Meeting 7
 
 Thursday, October 27, 2005 Gerry Conference Room, Marks Building, CSHL
@@ -28,7 +25,6 @@ Thursday, October 27, 2005 Gerry Conference Room, Marks Building, CSHL
 ## Agenda
 
 9:10am
-
 
 Introductions  
 Scott Cain, GMOD coordinator

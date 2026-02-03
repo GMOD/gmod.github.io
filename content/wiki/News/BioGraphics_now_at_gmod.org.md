@@ -3,7 +3,6 @@ title: "News/BioGraphics now at gmod.org"
 ---
 # News/BioGraphics now at gmod.org
 
-
 The Bio::Graphics modules which have long been a core part of
 [BioPerl](../BioPerl "BioPerl") have been separated out and the code
 base is now housed in the
@@ -19,10 +18,8 @@ Bio::Graphics before installing GBrowse.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/01/06*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

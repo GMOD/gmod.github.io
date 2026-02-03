@@ -3,7 +3,6 @@ title: "GSOC Project Ideas 2017"
 ---
 # GSOC Project Ideas 2017
 
-
 There are plenty of challenging and interesting project ideas this year.
 These projects include a broad set of skills, technologies, and domains,
 such as GUIs, database integration and algorithms.

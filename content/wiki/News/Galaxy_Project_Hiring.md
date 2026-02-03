@@ -3,12 +3,10 @@ title: "News/Galaxy Project Hiring"
 ---
 # News/Galaxy Project Hiring
 
-
 <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/job_rc2"
 rel="nofollow" title="Galaxy Project Hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png" width="26"
 height="25" alt="Galaxy Project Hiring" /></a>
-
 
 There are several open
 <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/job_rc2"
@@ -32,10 +30,8 @@ details and contact information.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

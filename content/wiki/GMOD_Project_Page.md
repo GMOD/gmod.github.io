@@ -3,7 +3,6 @@ title: "GMOD Project Page"
 ---
 # GMOD Project Page
 
-
   Description](#Description)
 - [Projects](#Projects)
   - [GMOD needs
@@ -11,7 +10,6 @@ title: "GMOD Project Page"
   - [Chado
     Documentation
     Reorganization](#Chado_Documentation_Reorganization)
-
 
 # Description
 

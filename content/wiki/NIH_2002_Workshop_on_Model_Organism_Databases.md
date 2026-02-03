@@ -3,7 +3,6 @@ title: "NIH 2002 Workshop on Model Organism Databases"
 ---
 # NIH 2002 Workshop on Model Organism Databases
 
-
 **<a href="http://www.genome.gov/10006356" class="external text"
 rel="nofollow"><br />
 NIH/NIAID/Wellcome Trust Workshop on Model Organism Databases, April
@@ -19,7 +18,6 @@ Databases**
 National Human Genome Research Institute Bethesda, Md. April 29-30, 2002
 
   
-
 
   Participants](#Participants)
 - [Executive
@@ -90,7 +88,6 @@ National Human Genome Research Institute Bethesda, Md. April 29-30, 2002
     - [Appendix B: Minority opinion on IP from
       Peter
       Karp](#Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp)
-
 
 ## Participants
 

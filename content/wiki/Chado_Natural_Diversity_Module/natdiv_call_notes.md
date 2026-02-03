@@ -3,7 +3,6 @@ title: "Chado Natural Diversity Module/natdiv call notes"
 ---
 # Chado Natural Diversity Module/natdiv call notes
 
-
 ## Notes from the [Chado_Natural_Diversity_Module/natdiv_schema_changes_call](natdiv_schema_changes_call "Chado Natural Diversity Module/natdiv schema changes call") (May 26th 2011)
 
 **ND paper** Sook and Naama will send a note when the working draft is

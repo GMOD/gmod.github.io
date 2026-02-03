@@ -3,11 +3,9 @@ title: "Category%253AProposals"
 ---
 # Category%253AProposals
 
-
 ## Pages in category "Proposals"
 
 The following 9 pages are in this category, out of 9 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -62,7 +60,6 @@ title="Stock Relationship Ontology">Stock Relationship Ontology</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "Proposals"
 
 This category contains only the following file.
@@ -84,13 +81,4 @@ This category contains only the following file.
   
 
   [Day-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Day-050517.ppt "File:Day-050517.ppt")  
-  253 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
+  253 KB

@@ -3,7 +3,6 @@ title: "MAKER/tool data"
 ---
 # MAKER/tool data
 
-
 This page stores the data that populates the [MAKER](../MAKER.1 "MAKER")
 wiki page.
 
@@ -51,6 +50,5 @@ Additional MAKER options/capabilities include:
 
 MAKER comes with sample data for testing purposes. See the `/data`
 directory in the download. \| screenshot =
-
 
 <a href="../File:MAKER_Apollo_view.jpg" class="image">` tag was found**

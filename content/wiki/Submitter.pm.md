@@ -3,7 +3,6 @@ title: "Submitter.pm"
 ---
 # Submitter.pm
 
-
 Submitter.pm is a [GBrowse](GBrowse.1 "GBrowse") plugin designed to
 submit the selected sequence to external websites such as NCBI BLAST,
 etc. It is an invisible plugin, in the sense that it is not displayed in

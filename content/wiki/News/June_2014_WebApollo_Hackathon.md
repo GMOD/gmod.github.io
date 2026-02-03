@@ -3,7 +3,6 @@ title: "News/June 2014 WebApollo Hackathon"
 ---
 # News/June 2014 WebApollo Hackathon
 
-
 Berkeley Bioinformatics Open-Source Projects (BBOP) invites you to join
 us this summer for a
 **<a href="http://genomearchitect.org/developers_hackathon_2014"
@@ -49,6 +48,5 @@ class="external text" rel="nofollow">WebApollo Hackathon information</a>
 *via Monica Munoz-Torres*
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014-04-22*

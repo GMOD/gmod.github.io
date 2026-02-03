@@ -3,12 +3,10 @@ title: "News/GMOD Project Statistics Page"
 ---
 # News/GMOD Project Statistics Page
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/dc/GMOD.orgMonthlyVisitorsChart.png/350px-GMOD.orgMonthlyVisitorsChart.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/dc/GMOD.orgMonthlyVisitorsChart.png/525px-GMOD.orgMonthlyVisitorsChart.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/dc/GMOD.orgMonthlyVisitorsChart.png/700px-GMOD.orgMonthlyVisitorsChart.png 2x"
 width="350" height="169" alt="GMOD Project Statistics Page" />](../Project_Statistics "GMOD Project Statistics Page")
-
 
 A GMOD [Project Statistics](../Project_Statistics "Project Statistics")
 page has been created as a place to find and record information about
@@ -29,10 +27,8 @@ Statistics](../Project_Statistics "Project Statistics") page.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,13 +3,11 @@ title: "GMOD Americas 2011"
 ---
 # GMOD Americas 2011
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/94/GMODAmericas2011WithText.jpg/600px-GMODAmericas2011WithText.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/94/GMODAmericas2011WithText.jpg/900px-GMODAmericas2011WithText.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/94/GMODAmericas2011WithText.jpg 2x"
 width="600" height="239"
 alt="GMOD Americas 2011, Community and Satellite Meetings, GMOD Course, March 5-12" />
-
 
   GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
@@ -23,7 +21,6 @@ alt="GMOD Americas 2011, Community and Satellite Meetings, GMOD Course, March 5-
   Word Out](#Help_Get_the_Word_Out)
 - [See
   Also](#See_Also)
-
 
 ***GMOD Americas 2011*** was an 8 day event held at the
 <a href="http://www.nescent.org/" class="external text"
@@ -63,7 +60,6 @@ title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></li>
 </tr>
 </tbody>
 </table>
-
 
   
 
@@ -350,12 +346,10 @@ class="external text" rel="nofollow">Whole Foods</a> nearby.
 
 # Sponsors
 
-
 <a href="http://nescent.org/" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 **GMOD Americas 2011** is sponsored by the
 <a href="http://www.nescent.org/" class="external text"
@@ -368,12 +362,10 @@ applications. NESCent achieves this by supporting research and education
 across disciplinary, institutional, geographic, and demographic
 boundaries.
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />](Galaxy.1 "Galaxy")
-
 
 The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring **GMOD
 Americas 2011** events. Galaxy is a data integration framework that
@@ -383,10 +375,8 @@ reference. Galaxy is developed at Penn State and Emory University.
 
 # Help Get the Word Out
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
 width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
-
 
 Help spread the word about GMOD Americas 2011 events by posting and
 distributing [this
@@ -412,8 +402,3 @@ exploit their data.
 - [October 2011 GMOD
   Meeting](October_2011_GMOD_Meeting "October 2011 GMOD Meeting") - the
   next [GMOD meeting](Meetings "Meetings")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Events](Category%253AEvents "Category%253AEvents")

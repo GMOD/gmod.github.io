@@ -3,7 +3,6 @@ title: "Sample Chado gene report"
 ---
 # Sample Chado gene report
 
-
 This is a sample Chado gene page output for the Drosophila gene *toy*.
 
 chado_dmel_r5_1=# select field,value from v_genepage2 where feature_id =
@@ -859,9 +858,4 @@ toy[hdl]/sv[spa-Cat]@</td>
 </tbody>
 </table>
 
-(173 rows)  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
+(173 rows)

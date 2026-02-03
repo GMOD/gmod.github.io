@@ -3,13 +3,11 @@ title: "News/Ant Genomics Bioinformatician"
 ---
 # News/Ant Genomics Bioinformatician
 
-
 <a
 href="http://www.isb-sib.ch/about-sib/jobs/details/91-sib-bioinformatician-at-sib--unil.html"
 rel="nofollow" title="Fourmidable opening"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/Sib_logo.gif" width="199" height="106"
 alt="Fourmidable opening" /></a>
-
 
 *The deadline for this position has now passed.*
 
@@ -33,11 +31,9 @@ Informal enquiries to yannick.wurm \at\\ until.ch or laurent.falquet
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/15,
 updated 2009/09/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

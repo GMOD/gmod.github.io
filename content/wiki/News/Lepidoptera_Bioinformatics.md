@@ -3,13 +3,11 @@ title: "News/Lepidoptera Bioinformatics"
 ---
 # News/Lepidoptera Bioinformatics
 
-
 <a href="http://bio.demokritos.gr/leps/leps.htm" rel="nofollow"
 title="International Workshop on Molecular Biology and Genetics of Lepidoptera"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Butterfly1.jpg" width="120"
 height="103"
 alt="International Workshop on Molecular Biology and Genetics of Lepidoptera" /></a>
-
 
 A session on data analysis, mining, general bioinformatics support, and
 related topics will be held on Friday, August 28th 2009, at the
@@ -49,10 +47,8 @@ rel="nofollow">Fabrice Legeai</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

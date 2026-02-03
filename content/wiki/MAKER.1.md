@@ -3,26 +3,20 @@ title: "MAKER"
 ---
 # MAKER
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/400px-MAKERLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/600px-MAKERLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/800px-MAKERLogo.png 2x"
 width="400" height="136" alt="MAKER logo" />
 
-
 Status
-
 
 - Mature release
 - Development: active
 - Support: active
 
-
 Licence
-
 
   
 <a href="http://opensource.org/licenses/gpl-license"
@@ -31,17 +25,14 @@ class="external text" rel="nofollow">GNU GPL (for academics)</a>,
 class="external text" rel="nofollow">Artistic License 2.0 (for
 academics)</a>, custom license for commercial usage
 
-
 Resources
-
 
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
 - [Annotation](Category%253AAnnotation "Category%253AAnnotation")
 - [MAKER](Category%253AMAKER "Category%253AMAKER")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[MAKER](Special%253ABrowse/MAKER "Special%253ABrowse/MAKER")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
 <table class="smwfacttable">
 <colgroup>
@@ -52,15 +43,9 @@ Resources
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AAvailable_on_platform"
 title="Property:Available on platform">Available on platform</a></td>
-<td class="smwprops">linux <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Available-20on-20platform/linux"
-title="Special%253ASearchByProperty/Available-20on-20platform/linux">+</a></span>,
-os x <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Available-20on-20platform/os-20x"
-title="Special%253ASearchByProperty/Available-20on-20platform/os-20x">+</a></span>
-and unix <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Available-20on-20platform/unix"
-title="Special%253ASearchByProperty/Available-20on-20platform/unix">+</a></span></td>
+<td class="smwprops">linux ,
+os x 
+and unix </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_URL"
@@ -68,41 +53,26 @@ title="Property:Has URL">Has URL</a></td>
 <td class="smwprops"><a
 href="http://www.yandell-lab.org/software/maker.html"
 class="external free"
-rel="nofollow">http://www.yandell-lab.org/software/maker.html</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker.html"
-title="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker.html">+</a></span>,
+rel="nofollow">http://www.yandell-lab.org/software/maker.html</a> ,
 <a
 href="http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi"
 class="external free"
 rel="nofollow">http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fyandell.topaz.genetics.utah.edu-2Fcgi-2Dbin-2Fmaker_license.cgi"
-title="Special%253ASearchByProperty/Has-20URL/http:-2F-2Fyandell.topaz.genetics.utah.edu-2Fcgi-2Dbin-2Fmaker license.cgi">+</a></span>,
+,
 <a href="https://www.e-biogenouest.org/resources/48"
 class="external free"
-rel="nofollow">https://www.e-biogenouest.org/resources/48</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/https%253A-2F-2Fwww.e-2Dbiogenouest.org-2Fresources-2F48"
-title="Special%253ASearchByProperty/Has-20URL/https%253A-2F-2Fwww.e-2Dbiogenouest.org-2Fresources-2F48">+</a></span>,
+rel="nofollow">https://www.e-biogenouest.org/resources/48</a> ,
 <a href="http://www.yandell-lab.org/software/maker-p.html"
 class="external free"
 rel="nofollow">http://www.yandell-lab.org/software/maker-p.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker-2Dp.html"
-title="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker-2Dp.html">+</a></span>,
+,
 <a href="http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi"
 class="external free"
 rel="nofollow">http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fderringer.genetics.utah.edu-2Fcgi-2Dbin-2FMWAS-2Fmaker.cgi"
-title="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fderringer.genetics.utah.edu-2Fcgi-2Dbin-2FMWAS-2Fmaker.cgi">+</a></span>
+
 and <a href="http://hymenopteragenome.org/ant_genomes/"
 class="external free"
-rel="nofollow">http://hymenopteragenome.org/ant_genomes/</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fhymenopteragenome.org-2Fant_genomes-2F"
-title="Special%253ASearchByProperty/Has-20URL/http:-2F-2Fhymenopteragenome.org-2Fant genomes-2F">+</a></span></td>
+rel="nofollow">http://hymenopteragenome.org/ant_genomes/</a> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_description"
@@ -174,148 +144,92 @@ and The ant genomes were annotated using MAKER. </td>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_development_status"
 title="Property:Has development status">Has development status</a></td>
-<td class="smwprops">active <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20development-20status/active"
-title="Special%253ASearchByProperty/Has-20development-20status/active">+</a></span></td>
+<td class="smwprops">active </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGFF3-5D-5D"
-title="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGFF3-5D-5D">+</a></span>
-and <a href="Glossary#FASTA" title="Glossary">FASTA</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D"
-title="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D">+</a></span></td>
+<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> 
+and <a href="Glossary#FASTA" title="Glossary">FASTA</a> </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_licence"
 title="Property:Has licence">Has licence</a></td>
 <td class="smwprops"><a
 href="http://opensource.org/licenses/gpl-license" class="external text"
-rel="nofollow">GNU GPL (for academics)</a> <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20licence/-5Bhttp:-2F-2Fopensource.org-2Flicenses-2Fgpl-2Dlicense-20GNU-20GPL-20(for-20academics)-5D"
-title="Special%253ASearchByProperty/Has-20licence/-5Bhttp:-2F-2Fopensource.org-2Flicenses-2Fgpl-2Dlicense-20GNU-20GPL-20(for-20academics)-5D">+</a></span>,
+rel="nofollow">GNU GPL (for academics)</a> ,
 <a href="http://opensource.org/licenses/artistic-license-2.0"
 class="external text" rel="nofollow">Artistic License 2.0 (for
-academics)</a> <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20licence/-5Bhttp:-2F-2Fopensource.org-2Flicenses-2Fartistic-2Dlicense-2D2.0-20Artistic-20License-202.0-20(for-20academics)-5D"
-title="Special%253ASearchByProperty/Has-20licence/-5Bhttp:-2F-2Fopensource.org-2Flicenses-2Fartistic-2Dlicense-2D2.0-20Artistic-20License-202.0-20(for-20academics)-5D">+</a></span>
-and custom license for commercial usage <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20licence/custom-20license-20for-20commercial-20usage"
-title="Special%253ASearchByProperty/Has-20licence/custom-20license-20for-20commercial-20usage">+</a></span></td>
+academics)</a> 
+and custom license for commercial usage </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_logo"
 title="Property:Has logo">Has logo</a></td>
-<td class="smwprops">MAKERLogo.png <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20logo/MAKERLogo.png"
-title="Special%253ASearchByProperty/Has-20logo/MAKERLogo.png">+</a></span></td>
+<td class="smwprops">MAKERLogo.png </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_output_format"
 title="Property:Has output format">Has output format</a></td>
-<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGFF3-5D-5D"
-title="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGFF3-5D-5D">+</a></span>
-and <a href="Glossary#FASTA" title="Glossary">FASTA</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D"
-title="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D">+</a></span></td>
+<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> 
+and <a href="Glossary#FASTA" title="Glossary">FASTA</a> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_software_maturity_status"
 title="Property:Has software maturity status">Has software maturity
 status</a></td>
-<td class="smwprops">mature <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20software-20maturity-20status/mature"
-title="Special%253ASearchByProperty/Has-20software-20maturity-20status/mature">+</a></span></td>
+<td class="smwprops">mature </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_support_status"
 title="Property:Has support status">Has support status</a></td>
-<td class="smwprops">active <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20support-20status/active"
-title="Special%253ASearchByProperty/Has-20support-20status/active">+</a></span></td>
+<td class="smwprops">active </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_title"
 title="Property:Has title">Has title</a></td>
 <td class="smwprops">A beginner's guide to eukaryotic genome annotation
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20title/A-20beginner&#39;s-20guide-20to-20eukaryotic-20genome-20annotation"
-title="Special%253ASearchByProperty/Has-20title/A-20beginner&#39;s-20guide-20to-20eukaryotic-20genome-20annotation">+</a></span>,
-MAKER-P <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20title/MAKER-2DP"
-title="Special%253ASearchByProperty/Has-20title/MAKER-2DP">+</a></span>,
-MAKER Web Annotation Server <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20title/MAKER-20Web-20Annotation-20Server"
-title="Special%253ASearchByProperty/Has-20title/MAKER-20Web-20Annotation-20Server">+</a></span>
-and Ant Genomes Portal <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20title/Ant-20Genomes-20Portal"
-title="Special%253ASearchByProperty/Has-20title/Ant-20Genomes-20Portal">+</a></span></td>
+,
+MAKER-P ,
+MAKER Web Annotation Server 
+and Ant Genomes Portal </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_topic"
 title="Property:Has topic">Has topic</a></td>
-<td class="smwprops"><strong>MAKER</strong> <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20topic/MAKER"
-title="Special%253ASearchByProperty/Has-20topic/MAKER">+</a></span></td>
+<td class="smwprops"><strong>MAKER</strong> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
-<td class="smwprops">Caveats apply <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Is-20open-20source/Caveats-20apply"
-title="Special%253ASearchByProperty/Is-20open-20source/Caveats-20apply">+</a></span></td>
+<td class="smwprops">Caveats apply </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
-<td class="smwprops">download <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/download"
-title="Special%253ASearchByProperty/Link-20type/download">+</a></span>,
-source code <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/source-20code"
-title="Special%253ASearchByProperty/Link-20type/source-20code">+</a></span>,
-website <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/website"
-title="Special%253ASearchByProperty/Link-20type/website">+</a></span>,
-publication <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/publication"
-title="Special%253ASearchByProperty/Link-20type/publication">+</a></span>,
-other <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/other"
-title="Special%253ASearchByProperty/Link-20type/other">+</a></span> and
-public server <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/public-20server"
-title="Special%253ASearchByProperty/Link-20type/public-20server">+</a></span></td>
+<td class="smwprops">download ,
+source code ,
+website ,
+publication ,
+other  and
+public server </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
-<td class="smwprops">2008 <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Release-20date/2008"
-title="Special%253ASearchByProperty/Release-20date/2008">+</a></span></td>
+<td class="smwprops">2008 </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Genome Annotation <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Annotation"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Annotation">+</a></span></td>
+<td class="smwprops">Genome Annotation </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Perl <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Written-20in-20language/Perl"
-title="Special%253ASearchByProperty/Written-20in-20language/Perl">+</a></span></td>
+<td class="smwprops">Perl </td>
 </tr>
 <tr class="even row-even">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
@@ -326,37 +240,23 @@ special property in this wiki.</span></span></td>
 <td class="smwspecs"><a
 href="MAKER.1#http:.2F.2Fwww.yandell-lab.org.2Fsoftware.2Fmaker.html"
 title="MAKER">MAKER#http://www.yandell-lab.org/software/maker.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker.html"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker.html">+</a></span>,
+,
 <a
 href="MAKER.1#http:.2F.2Fyandell.topaz.genetics.utah.edu.2Fcgi-bin.2Fmaker_license.cgi"
 title="MAKER">MAKER#http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fyandell.topaz.genetics.utah.edu-2Fcgi-2Dbin-2Fmaker_license.cgi"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23http:-2F-2Fyandell.topaz.genetics.utah.edu-2Fcgi-2Dbin-2Fmaker license.cgi">+</a></span>,
+,
 <a href="MAKER.1#https:.2F.2Fwww.e-biogenouest.org.2Fresources.2F48"
-title="MAKER">MAKER#https://www.e-biogenouest.org/resources/48</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23https%253A-2F-2Fwww.e-2Dbiogenouest.org-2Fresources-2F48"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23https%253A-2F-2Fwww.e-2Dbiogenouest.org-2Fresources-2F48">+</a></span>,
+title="MAKER">MAKER#https://www.e-biogenouest.org/resources/48</a> ,
 <a
 href="MAKER.1#http:.2F.2Fwww.yandell-lab.org.2Fsoftware.2Fmaker-p.html"
 title="MAKER">MAKER#http://www.yandell-lab.org/software/maker-p.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker-2Dp.html"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fwww.yandell-2Dlab.org-2Fsoftware-2Fmaker-2Dp.html">+</a></span>,
+,
 <a
 href="MAKER.1#http:.2F.2Fderringer.genetics.utah.edu.2Fcgi-bin.2FMWAS.2Fmaker.cgi"
 title="MAKER">MAKER#http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fderringer.genetics.utah.edu-2Fcgi-2Dbin-2FMWAS-2Fmaker.cgi"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fderringer.genetics.utah.edu-2Fcgi-2Dbin-2FMWAS-2Fmaker.cgi">+</a></span>
+
 and <a href="MAKER.1#http:.2F.2Fhymenopteragenome.org.2Fant_genomes.2F"
-title="MAKER">MAKER#http://hymenopteragenome.org/ant_genomes/</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/MAKER-23http%253A-2F-2Fhymenopteragenome.org-2Fant_genomes-2F"
-title="Special%253ASearchByProperty/Has-20subobject/MAKER-23http:-2F-2Fhymenopteragenome.org-2Fant genomes-2F">+</a></span></td>
+title="MAKER">MAKER#http://hymenopteragenome.org/ant_genomes/</a> </td>
 </tr>
 </tbody>
 </table>

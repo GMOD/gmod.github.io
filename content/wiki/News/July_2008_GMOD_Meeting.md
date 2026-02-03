@@ -3,10 +3,8 @@ title: "News/July 2008 GMOD Meeting"
 ---
 # News/July 2008 GMOD Meeting
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/July2008LogoSmaller.png"
 width="200" height="180" alt="July 2008 GMOD Meeting" />](../July_2008_GMOD_Meeting "July 2008 GMOD Meeting")
-
 
 The next [GMOD community
 meeting](../July_2008_GMOD_Meeting "July 2008 GMOD Meeting") has been
@@ -32,10 +30,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

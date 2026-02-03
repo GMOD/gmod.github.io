@@ -3,10 +3,8 @@ title: "GMOD Utility Scripts"
 ---
 # GMOD Utility Scripts
 
-
 This page describes several of the tools that come with the GMOD
 distribution for performing various useful tasks
-
 
   gmod_extract_dbxref_from_gff.pl](#gmod_extract_dbxref_from_gff.pl)
 - [gmod_fasta2gff3.pl](#gmod_fasta2gff3.pl)
@@ -14,7 +12,6 @@ distribution for performing various useful tasks
 - [gmod_make_gff_from_dbxref.pl](#gmod_make_gff_from_dbxref.pl)
 - [gmod_materialized_view_tool.pl](#gmod_materialized_view_tool.pl)
 - [gmod_sort_gff3.pl](#gmod_sort_gff3.pl)
-
 
 ## gmod_extract_dbxref_from_gff.pl
 

@@ -3,14 +3,11 @@ title: "Category%253ADatabase Tools"
 ---
 # Category%253ADatabase Tools
 
-
 This broad category includes high level and low level database topics.
-
 
 ## Subcategories
 
 This category has the following 5 subcategories, out of 5 total.
-
 
 ### B
 
@@ -32,11 +29,9 @@ This category has the following 5 subcategories, out of 5 total.
 
 - [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
 
-
 ## Pages in category "Database Tools"
 
 The following 13 pages are in this category, out of 13 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -93,7 +88,6 @@ views</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "Database Tools"
 
 This category contains only the following file.
@@ -115,13 +109,4 @@ This category contains only the following file.
   
 
   [Gmod-argos-sep03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Gmod-argos-sep03.pdf "File:Gmod-argos-sep03.pdf")  
-  5.22 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  5.22 MB

@@ -3,11 +3,9 @@ title: "Category%253AMGI"
 ---
 # Category%253AMGI
 
-
 ## Pages in category "MGI"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### G
 
@@ -22,7 +20,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [September 2003 GMOD
   Meeting](September_2003_GMOD_Meeting "September 2003 GMOD Meeting")
-
 
 ## Media in category "MGI"
 
@@ -114,13 +111,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [Mod-face-07jan-MGI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Mod-face-07jan-MGI.pdf "File:Mod-face-07jan-MGI.pdf")  
-  3.12 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  3.12 MB

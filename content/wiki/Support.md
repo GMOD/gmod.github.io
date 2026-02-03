@@ -3,7 +3,6 @@ title: "Support"
 ---
 # Support
 
-
   Site</span>](#GMOD_Web_Site)
 - [GMOD Mailing
   Lists](#GMOD_Mailing_Lists)
@@ -14,7 +13,6 @@ title: "Support"
 - [Meetings and
   Training and Outreach](#Meetings_and_Training_and_Outreach)
 
-
 Because GMOD is a large and diverse collection of projects, it can be
 difficult to find the right place to ask a question. GMOD support is
 available from several different sources. This page introduces each
@@ -23,8 +21,7 @@ for your question.
 
 ## GMOD Web Site
 
-Many questions about GMOD can be answered by [searching this
-website](Special:Search "Special:Search") or exploring it through
+Many questions about GMOD can be answered by  or exploring it through
 [category tags](Categories "Categories"). Some pages that are
 particularly useful places to start for support questions:
 
@@ -94,8 +91,3 @@ list](GMOD_Mailing_Lists "GMOD Mailing Lists").
 [GMOD Schools](GMOD_Schools "GMOD Schools") are held about once a year
 and offer hands-on training on installing, configuring and integrating
 GMOD components.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

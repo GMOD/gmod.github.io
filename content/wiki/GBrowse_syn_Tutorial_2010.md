@@ -3,7 +3,6 @@ title: "GBrowse syn Tutorial 2010"
 ---
 # GBrowse syn Tutorial 2010
 
-
 ## Further Reading
 
 ### A Note on Whole Genome Alignments

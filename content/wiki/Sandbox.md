@@ -3,7 +3,6 @@ title: "Sandbox"
 ---
 # Sandbox
 
-
 TThis is a test edit after logging in with openid.
 
 This page is a sandbox for anyone to experiment with MediaWiki syntax
@@ -28,12 +27,10 @@ Apollo<sup>[\[5\]](#cite_note-PMID:12537571-5)</sup>
 
 unrelated perl test:
 
-
 ``` de1
   use strict;
   print "ack!";
 ```
-
 
 Compare to
 <a href="http://ecoliwiki.net/colipedia/index.php/Help:References"
@@ -55,8 +52,3 @@ class="external text" rel="nofollow">Behavior on EcoliWiki</a>
 5.  <span id="cite_note-PMID:12537571"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:12537571_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `PMID:12537571`**</span>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")

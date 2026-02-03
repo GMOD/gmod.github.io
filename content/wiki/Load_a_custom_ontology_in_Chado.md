@@ -3,7 +3,6 @@ title: "Load a custom ontology in Chado"
 ---
 # Load a custom ontology in Chado
 
-
   custom ontology in
   Chado</span>](#Howto_load_a_custom_ontology_in_Chado)
   - [The
@@ -12,7 +11,6 @@ title: "Load a custom ontology in Chado"
     xml](#Chado_xml)
   - [Loading
     into Chado](#Loading_into_Chado)
-
 
 # Howto load a custom ontology in Chado
 

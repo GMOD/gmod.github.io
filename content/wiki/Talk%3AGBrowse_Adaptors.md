@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Adaptors"
 ---
 # Talk%253AGBrowse Adaptors
 
-
 Where can I read about how to use these adaptors in GBrowse?
 --[DanBolser](User%253ADanBolser "User%253ADanBolser") 11:15, 4 March 2011 (UTC)
 

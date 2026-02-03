@@ -3,7 +3,6 @@ title: "User%253ADanBolser"
 ---
 # User%253ADanBolser
 
-
 Hi,
 
 - I'm happy to be

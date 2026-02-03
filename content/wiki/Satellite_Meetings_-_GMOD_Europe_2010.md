@@ -3,7 +3,6 @@ title: "Satellite Meetings - GMOD Europe 2010"
 ---
 # Satellite Meetings - GMOD Europe 2010
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
 <colgroup>
@@ -60,14 +59,12 @@ so popular that we decided to hold them again.
 
   
 
-
   Topics</span>](#Satellite_Topics)
 - [Participants](#Participants)
 - [Sponsors](#Sponsors)
 - [Lodging and
   Other Logistics](#Lodging_and_Other_Logistics)
 - [Registration](#Registration)
-
 
 ## Satellite Topics
 
@@ -88,26 +85,14 @@ rel="nofollow">OpenHelix blog</a>.
 
 ## Participants
 
-| Participant | Affilliation(s) | URL |
-|----|----|----|
-| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free"
+| Participant | Affilliation(s) | URL |----|----|----| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free"
 rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
-rel="nofollow">http://gmod.org</a> |
-| Fengyuan Hu | Department of Genetics, University of Cambridge |  |
-| Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> |
-| seth redmond | Imperial College / Vectorbase |  |
-| [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") |  | <a href="http://cgb.indiana.edu" class="external free"
-rel="nofollow">http://cgb.indiana.edu</a> |
-| Jerven Bolleman | UniProt Swiss-Prot |  |
-| Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne |  |
-| Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
-rel="nofollow">http://www.pombase.org/</a> |
-| Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> |
-| [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
-rel="nofollow">http://gmod.org/</a> |
-| Gerd Anders | Public research institute: Max-Delbrueck-Centrum Berlin (MDC), Researcher and database developer | <a
+rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
+rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | <a href="http://cgb.indiana.edu" class="external free"
+rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
+rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
+rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
+rel="nofollow">http://gmod.org/</a> | Gerd Anders | Public research institute: Max-Delbrueck-Centrum Berlin (MDC), Researcher and database developer | <a
 href="http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html"
 class="external free"
 rel="nofollow">http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html</a> <a
@@ -117,14 +102,12 @@ rel="nofollow">http://www.mdc-berlin.de/en/research/core_facilities/cf_bioinform
 
 ## Sponsors
 
-
 <a href="http://www.ccbi.cam.ac.uk/" rel="nofollow"
 title="Cambridge Computational Biology Institute"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ae/CCBILogo.png/150px-CCBILogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ae/CCBILogo.png/225px-CCBILogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/CCBILogo.png 2x"
 width="150" height="64"
 alt="Cambridge Computational Biology Institute" /></a>
-
 
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
@@ -134,7 +117,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/285px-CambridgeWide.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/380px-CambridgeWide.gif 2x"
 width="190" height="55"
 alt="School of Biological Sciences Bioinformatics Training Facility" /></a>
-
 
 This event was sponsored by the
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
@@ -171,8 +153,3 @@ Europe 2010 page for information.
 ## Registration
 
 Registration was free, but required, as space was limited.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

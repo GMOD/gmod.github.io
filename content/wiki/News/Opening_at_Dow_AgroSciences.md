@@ -3,12 +3,10 @@ title: "News/Opening at Dow AgroSciences"
 ---
 # News/Opening at Dow AgroSciences
 
-
 <a href="http://www.dowagro.com/" rel="nofollow"
 title="Dow AgroSciences"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/Dow_AgroSciences_logo.gif" width="290"
 height="91" alt="Dow AgroSciences" /></a>
-
 
 <a href="http://www.dowagro.com/" class="external text"
 rel="nofollow">Dow AgroSciences</a> has a short term contract position
@@ -39,10 +37,8 @@ rel="nofollow">mdippold@dow.com</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

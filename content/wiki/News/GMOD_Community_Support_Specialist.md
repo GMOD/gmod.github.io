@@ -3,7 +3,6 @@ title: "News/GMOD Community Support Specialist"
 ---
 # News/GMOD Community Support Specialist
 
-
 **[GMOD Community
 Support](../GMOD_Community_Support "GMOD Community Support") Specialist
 hired**
@@ -54,10 +53,8 @@ to H. Lapp by email or by phone at 919.668.5288.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/02/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

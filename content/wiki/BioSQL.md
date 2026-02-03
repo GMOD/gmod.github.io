@@ -3,7 +3,6 @@ title: "BioSQL"
 ---
 # BioSQL
 
-
 ## Description
 
 <a href="http://www.biosql.org" class="external free"
@@ -31,8 +30,3 @@ Biojava.
 There are currently three different RDBMSs supported:
 [MySQL](MySQL "MySQL"), [PostgreSQL](PostgreSQL "PostgreSQL"), and
 Oracle.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [External](Category%253AExternal "Category%253AExternal")

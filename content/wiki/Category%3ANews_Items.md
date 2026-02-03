@@ -3,7 +3,6 @@ title: "Category%253ANews Items"
 ---
 # Category%253ANews Items
 
-
 After the move of gmod.org ot OICR, all [GMOD
 News](GMOD_News "GMOD News") items will be tagged with the "News Item"
 category. Each news item exists on its own page.
@@ -13,14 +12,12 @@ The "News Item" tag should be added to news item pages only by using the
 of the page for the news item. See [Adding a News
 Item](GMOD_News#Adding_a_News_Item "GMOD News") for details.
 
-
 ## Pages in category "News Items"
 
 The following 200 pages are in this category, out of 332 total.
 
 (previous 200) ([next
 200](/wiki/Category%253ANews_Items)
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -157,9 +154,7 @@ title="News/BioMart Openings @ OICR">News/BioMart Openings @
 OICR</a></li>
 <li><a href="News/BioMart_Ruby_API"
 title="News/BioMart Ruby API">News/BioMart Ruby API</a></li>
-<li><a href="News/BioMart_Special_Issue_in_Database"
-title="News/BioMart Special Issue in Database">News/BioMart Special
-Issue in Database</a></li>
+<li></li>
 <li><a href="News/Biomedical_Ontology_Conference"
 title="News/Biomedical Ontology Conference">News/Biomedical Ontology
 Conference</a></li>
@@ -375,9 +370,7 @@ title="News/GMOD At PAG 2014">News/GMOD At PAG 2014</a></li>
 title="News/GMOD at PAG XXI">News/GMOD at PAG XXI</a></li>
 <li><a href="News/GMOD_at_ParameciumDB"
 title="News/GMOD at ParameciumDB">News/GMOD at ParameciumDB</a></li>
-<li><a href="News/GMOD_Community_Support_Specialist"
-title="News/GMOD Community Support Specialist">News/GMOD Community
-Support Specialist</a></li>
+<li></li>
 <li><a href="News/GMOD_Community_Survey_Results"
 title="News/GMOD Community Survey Results">News/GMOD Community Survey
 Results</a></li>
@@ -571,7 +564,6 @@ title="News/JBrowse 1.1 Released">News/JBrowse 1.1 Released</a></li>
 </tr>
 </tbody>
 </table>
-
 
 (previous 200) ([next
 200](/wiki/Category%253ANews_Items)

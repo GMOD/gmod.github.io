@@ -3,13 +3,11 @@ title: "News/Tripal 1.1 Publication"
 ---
 # News/Tripal 1.1 Publication
 
-
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24163125"
 rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="TripalLogo.png" /></a>
-
 
 The [Tripal](../Tripal.1 "Tripal") team have put out a publication on
 the 1.1 version of the software. **Tripal v1.1: a standards-based
@@ -54,6 +52,5 @@ Here is the abstract:
 > rel="nofollow">http://tripal.info</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/10/31*

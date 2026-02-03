@@ -3,7 +3,6 @@ title: "Talk:Spring 2010 Logo Program"
 ---
 # Talk:Spring 2010 Logo Program
 
-
 ## Good job!
 
 This is awesome! We here at EcoliWiki are duly impressed with all the

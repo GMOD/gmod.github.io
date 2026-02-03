@@ -3,7 +3,6 @@ title: "GMOD Malaysia 2014/WebApollo Tutorial"
 ---
 # GMOD Malaysia 2014/WebApollo Tutorial
 
-
 This [WebApollo](../WebApollo.1 "WebApollo") tutorial was presented by
 [Scott Cain](../User%253AScott "User%253AScott") and [User%253AMichael
 Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") at [GMOD
@@ -35,7 +34,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 
   
 
-
   Prerequisites](#Prerequisites)
 - [Database
   Setup](#Database_Setup)
@@ -56,7 +54,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   WebApollo instance](#View_your_WebApollo_instance)
 - [Note on track
   styling](#Note_on_track_styling)
-
 
 ## Prerequisites
 
@@ -413,16 +410,11 @@ styles are located in
 
     jbrowse/data/trackList.json
 
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD Malaysia 2014/WebApollo
-Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FWebApollo-20Tutorial "Special%253ABrowse/GMOD-20Malaysia-202014-2FWebApollo-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [WebApollo](../WebApollo.1 "WebApollo") <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/WebApollo "Special%253ASearchByProperty/Has-20topic/WebApollo")</span> |
+|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [WebApollo](../WebApollo.1 "WebApollo")  |

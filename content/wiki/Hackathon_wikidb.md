@@ -3,7 +3,6 @@ title: "Hackathon wikidb"
 ---
 # Hackathon wikidb
 
-
   wikidb components</span>](#Hackathon_wikidb_components)
   - [genome
     wiki templates](#genome_wiki_templates)
@@ -21,7 +20,6 @@ title: "Hackathon wikidb"
   outcome](#Planned_outcome)
 - [Genome wiki
   from chado notes](#Genome_wiki_from_chado_notes)
-
 
 # Hackathon wikidb components
 
@@ -75,11 +73,11 @@ Synonyms\|\|synonyms \</headings\> \<type\>1\</type\>
 input file (one line, for wiki table with '\|\|' delimiters for wiki
 table columns)
 
-     sadA    sadA||EGF repeat-containing 9 transmembrane molecule involved in substrate adhesion.||Jim, Don
+     sadA    sadA|EGF repeat-containing 9 transmembrane molecule involved in substrate adhesion.|Jim, Don
 
 or
 
-     $gene_name."\t".$gene_name.'||'.$description.'||'.$synonym_string."\n";
+     $gene_name."\t".$gene_name.'|'.$description.'|'.$synonym_string."\n";
 
 We plan to extend the above to work with a fuller gene 'page' of output
 from chado. This will use one common wiki Template:gene_page. This page
@@ -92,10 +90,10 @@ Extending the above format to handle many table templates, and page
 template, per row of data information.
 
     pagename [tab] page_template [tab] table_template [tab] row_data (wiki-string) [tab] metadata [return]
-    sadA \t  gene \t gene_basics \t sadA||EGF repeat-containing 9 transmembrane molecule involved in substrate adhesion.||sadA-like,sadA-by-another-name \t metastring \n
+    sadA \t  gene \t gene_basics \t sadA|EGF repeat-containing 9 transmembrane molecule involved in substrate adhesion.|sadA-like,sadA-by-another-name \t metastring \n
     sadA \t gene \t gene_location \t gene-location-wiki-string \t metastring \n
     sadA \t gene \t gene_function \t gene-function-value-string \t metastring \n
-    notA \t gene \t gene_basics \t notA||Another gene ...
+    notA \t gene \t gene_basics \t notA|Another gene ...
 
 ### format notes
 
@@ -138,8 +136,3 @@ into Chado with transaction update checks, via XORT (script 3).
 - options:
   - use chado sql view/procedure to dump tables suited to wikibox_db ?
   - easier
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")

@@ -3,10 +3,8 @@ title: "News/GMOD Meeting: Sept. 13-14"
 ---
 # News/GMOD Meeting: Sept. 13-14
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/Cambridge.jpg" width="134"
 height="130" alt="September 2010 GMOD Meeting" />](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
-
 
 Thanks to the prep work by Gos Micklem at Cambridge, I am pleased to
 announce that there will be a two day [GMOD community
@@ -31,10 +29,8 @@ I look forward to seeing you in England this Fall.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

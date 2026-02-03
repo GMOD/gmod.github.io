@@ -3,18 +3,15 @@ title: "Category%253AEvents"
 ---
 # Category%253AEvents
 
-
 Pages about GMOD related events, such as Hackathons,
 [Meetings](Meetings "Meetings"),
 [Conferences](Category%253AConferences "Category%253AConferences") and
 <a href="GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">Summer Schools</a>.
 
-
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### C
 
@@ -24,11 +21,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
 
-
 ## Pages in category "Events"
 
 The following 17 pages are in this category, out of 17 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -98,7 +93,6 @@ title="Training and Outreach">Training and Outreach</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Events"
 

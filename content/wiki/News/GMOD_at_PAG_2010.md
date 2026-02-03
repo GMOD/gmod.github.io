@@ -3,7 +3,6 @@ title: "News/GMOD at PAG 2010"
 ---
 # News/GMOD at PAG 2010
 
-
 GMOD will once again have a strong presence at the [Plant and Animal
 Genome Conference (PAG 2010)](../PAG_2010 "PAG 2010"), being held
 January 9-13 in San Diego. There will be [**over 45 talks, workshops,
@@ -13,10 +12,8 @@ them. See the [PAG 2010](../PAG_2010 "PAG 2010") page for a full listing
 and a flier showing highlights. Highlights at [PAG
 2010](../PAG_2010 "PAG 2010") include:
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Paglogo.gif" width="114"
 height="107" alt="GMOD @ PAG" />](../PAG_2010 "GMOD @ PAG")
-
 
 - <a href="http://www.intl-pag.org/18/abstracts/C01_PAGXVIII_913.html"
   class="external text" rel="nofollow">Animal Genomics with Galaxy</a>,
@@ -80,10 +77,8 @@ See you in San Diego,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

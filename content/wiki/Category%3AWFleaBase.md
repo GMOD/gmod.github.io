@@ -3,16 +3,13 @@ title: "Category%253AWFleaBase"
 ---
 # Category%253AWFleaBase
 
-
 The Daphnia genome database,
 <a href="http://wFleaBase.org/" class="external free"
 rel="nofollow">http://wFleaBase.org/</a>
 
-
 ## Pages in category "WFleaBase"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -67,7 +64,6 @@ title="September 2003 GMOD Meeting">September 2003 GMOD Meeting</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "WFleaBase"
 
 The following 2 files are in this category, out of 2 total.
@@ -112,13 +108,4 @@ The following 2 files are in this category, out of 2 total.
   
 
   [WFleaBaseMainPageIcon.png](File:WFleaBaseMainPageIcon.png "File:WFleaBaseMainPageIcon.png")  
-  24 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  24 KB

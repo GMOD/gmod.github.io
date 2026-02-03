@@ -3,10 +3,8 @@ title: "Category%253AGMOD Project Presentations"
 ---
 # Category%253AGMOD Project Presentations
 
-
 Presentations that are about the GMOD project in general, rather than
 about specific parts of it.
-
 
 ## Media in category "GMOD Project Presentations"
 

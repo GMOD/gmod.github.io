@@ -3,7 +3,6 @@ title: "Talk:GMOD Evo Hackathon Proposal"
 ---
 # Talk:GMOD Evo Hackathon Proposal
 
-
   Meetings](#Meetings)
   - [2010/02/12
     Conference Call, February 12, 2010 2pm
@@ -39,7 +38,6 @@ title: "Talk:GMOD Evo Hackathon Proposal"
     - [Discussion](#Discussion_3)
     - [Action
       Items](#Action_Items_2)
-
 
 # Meetings
 

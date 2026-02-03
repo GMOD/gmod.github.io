@@ -3,7 +3,6 @@ title: "JBrowse Tutorial PAG 2015"
 ---
 # JBrowse Tutorial PAG 2015
 
-
 This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Scott
 Cain](User%253AScott "User%253AScott") at the
 <a href="PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
@@ -13,7 +12,6 @@ This tutorial assumes an Ubuntu 14.04.1 <a
 href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+PAG+tutorial.ova.bz2"
 class="external text" rel="nofollow">VirtualBox appliance</a> (2.3 GB)
 that was distributed before the course.
-
 
   this tutorial</span>](#New_things_in_this_tutorial)
 - [Prerequisites](#Prerequisites)
@@ -72,7 +70,6 @@ that was distributed before the course.
   Plans](#Future_JBrowse_Plans)
 - [Other
   links](#Other_links)
-
 
 ## New things in this tutorial
 
@@ -198,7 +195,6 @@ web browser can use.
 In this case, we have specified all of our track configurations in
 `pythium-1.conf`.
 
-
 ``` de1
 ...
  
@@ -221,7 +217,6 @@ In this case, we have specified all of our track configurations in
    ...
 ]
 ```
-
 
 `track` specifies the track identifier (a unique name for the track, for
 the software to use). This should be just letters and numbers and - and
@@ -299,7 +294,6 @@ server. Simply place the BAM file in a directory accessible to your web
 server, and add a snippet of configuration to JBrowse to add the track,
 similar to:
 
-
 ``` de1
      {
         "label" : "bam_alignments",
@@ -309,7 +303,6 @@ similar to:
         "type" : "Alignments2"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -328,7 +321,6 @@ inject the track configuration:
 We can have JBrowse calculate the coverage of the reads in the BAM file
 automatically:
 
-
 ``` de1
      {
         "label" : "bam_coverage",
@@ -338,7 +330,6 @@ automatically:
         "type" : "SNPCoverage"
       }
 ```
-
 
 or
 
@@ -364,7 +355,6 @@ your web server. Simply place the BigWig file in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
-
 ``` de1
      {
         "label" : "bigwig_bam_coverage",
@@ -375,7 +365,6 @@ the track, similar to:
         "variance_band" : true
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -400,7 +389,6 @@ Simply place the .vcf.gz and .vcf.gz.tbi files in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
-
 ``` de1
       {
         "label" : "bam_variation",
@@ -410,7 +398,6 @@ the track, similar to:
         "type" : "HTMLVariants"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -442,7 +429,6 @@ be copied into the `data` directory for use with this configuration.
 
 Then a simple faceted track selection configuration might look like:
 
-
 ``` de1
    "trackSelector": {
        "type": 'Faceted',
@@ -453,7 +439,6 @@ Then a simple faceted track selection configuration might look like:
        ]
    }
 ```
-
 
 Then all we have to do is add this bit of json to the
 `jbrowse_conf.json` file in the `jbrowse` directory:
@@ -475,7 +460,6 @@ tracks created above).
 
 The configuration for the RepeatMasker track looks like this:
 
-
 ``` de1
       {
          "type" : "CanvasFeatures",
@@ -494,7 +478,6 @@ The configuration for the RepeatMasker track looks like this:
       },
 ```
 
-
 Open the `trackList.json` file and locate this section of code:
 
      gedit data/trackList.json
@@ -503,11 +486,9 @@ Control-F will open a "find" window in gedit; search for "repeatmasker".
 A simple change we can make is to the color; in the line starting with
 "style", add:
 
-
 ``` de1
   "color" : "black",
 ```
-
 
 save the changes and select the RepeatMasker track or reload the browser
 to see the change. Many attributes of the display can be modified in
@@ -526,11 +507,9 @@ name). In this example, we leave the glyph black, unless it is a low
 complexity repeat, where we'll color it red. A function to do that would
 look like this:
 
-
 ``` de1
   "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black';  }",
 ```
-
 
 When editing the trackList.json file directly in this way, the function
 has to go all on one line, but if we create an "include file" (not
@@ -552,7 +531,6 @@ that will Google the repeat's name and open the result in a new window.
 In the RepeatMasker section of the JBrowse configuration, we'll add a
 section that looks like this after the style section:
 
-
 ``` de1
         "onClick" : {
            "iconClass" : "dijitIconDatabase",
@@ -563,10 +541,8 @@ section that looks like this after the style section:
         }
 ```
 
-
 If you're having difficulties, the RepeatMasker section of the
 configuration file should now look something like this:
-
 
 ``` de1
       {
@@ -593,7 +569,6 @@ configuration file should now look something like this:
          "key" : "RepeatMasker"
       },
 ```
-
 
 ## JBrowse Features
 
@@ -656,17 +631,7 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[JBrowse Tutorial PAG
-2015](Special%253ABrowse/JBrowse-20Tutorial-20PAG-202015 "Special%253ABrowse/JBrowse-20Tutorial-20PAG-202015")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse")  |

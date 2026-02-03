@@ -3,17 +3,13 @@ title: "News/2009 GMOD Community Survey"
 ---
 # News/2009 GMOD Community Survey
 
-
-|  |  |
-|----|----|
-| <a href="../File:GMODMug150x150.jpg" class="image" title="GMOD Mug"><img
+|----|----| <a href="../File:GMODMug150x150.jpg" class="image" title="GMOD Mug"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b3/GMODMug150x150.jpg/100px-GMODMug150x150.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/GMODMug150x150.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/GMODMug150x150.jpg 2x"
 width="100" height="100" alt="GMOD Mug" /></a> | <a href="../File:TShirtThumb.jpg" class="image"
 title="GMOD T Shirt"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/TShirtThumb.jpg" width="150"
 height="150" alt="GMOD T Shirt" /></a> |
-
 
 Please take a few minutes to fill out the <a
 href="http://survey.oit.duke.edu/ViewsFlash/servlet/viewsflash?cmd=page&amp;pollid=NESCent!GMODUserSurvey2009"
@@ -41,10 +37,8 @@ Thank you,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,13 +3,11 @@ title: "News/Openings @ SGD"
 ---
 # News/Openings @ SGD
 
-
 <a
 href="http://recruit.trovix.com/jobhostmaster/jobhost/ListJobPosts.do?action=search&amp;searchSectionActive=false&amp;accountId=de85ad313f8598db1c42b567a3df24a00497ba22&amp;searchCategory=1424&amp;searchStatus=226&amp;searchKeywords=Scientific+Application+Programmer"
 rel="nofollow" title="Scientific Application Programmers at SGD"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/SGD-t.gif" width="91" height="60"
 alt="Scientific Application Programmers at SGD" /></a>
-
 
 There are <a
 href="http://recruit.trovix.com/jobhostmaster/jobhost/ListJobPosts.do?action=search&amp;searchSectionActive=false&amp;accountId=de85ad313f8598db1c42b567a3df24a00497ba22&amp;searchCategory=1424&amp;searchStatus=226&amp;searchKeywords=Scientific+Application+Programmer"
@@ -31,10 +29,8 @@ user.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

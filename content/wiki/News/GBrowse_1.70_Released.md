@@ -3,7 +3,6 @@ title: "News/GBrowse 1.70 Released"
 ---
 # News/GBrowse 1.70 Released
 
-
 Hello,
 
 I am pleased to announce the official release of
@@ -63,10 +62,8 @@ Changes from 1.69 to 1.70:
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/24*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

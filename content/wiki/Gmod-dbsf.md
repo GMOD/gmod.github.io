@@ -3,7 +3,6 @@ title: "Gmod-dbsf"
 ---
 # Gmod-dbsf
 
-
   Overview](#Overview)
 - [Dependencies](#Dependencies)
 - [Features](#Features)
@@ -17,7 +16,6 @@ title: "Gmod-dbsf"
 - [Demos and
   Screenshots](#Demos_and_Screenshots)
 - [License](#License)
-
 
 # Overview
 

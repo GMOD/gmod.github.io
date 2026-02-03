@@ -3,11 +3,9 @@ title: "Category%253ATAIR"
 ---
 # Category%253ATAIR
 
-
 ## Pages in category "TAIR"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### J
 
@@ -22,7 +20,6 @@ The following 3 pages are in this category, out of 3 total.
 ### P
 
 - [PubFetch](PubFetch "PubFetch")
-
 
 ## Media in category "TAIR"
 
@@ -68,13 +65,4 @@ The following 2 files are in this category, out of 2 total.
   
 
   [TAIR logo.gif](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/TAIR_logo.gif "File:TAIR logo.gif")  
-  2 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  2 KB

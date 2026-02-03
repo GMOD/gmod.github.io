@@ -3,7 +3,6 @@ title: "News/BioMart Special Issue in Database"
 ---
 # News/BioMart Special Issue in Database
 
-
 I am very pleased to announce the publication of the DATABASE special
 issue dedicated to the
 <a href="http://www.biomart.org/" class="external text"
@@ -31,10 +30,8 @@ their dedication, expertise, passion and enthusiasm.
   
 Arek Kasprzyk
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

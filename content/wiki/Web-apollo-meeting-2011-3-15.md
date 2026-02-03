@@ -3,7 +3,6 @@ title: "Web-apollo-meeting-2011-3-15"
 ---
 # Web-apollo-meeting-2011-3-15
 
-
   Suzi, Gregg, Ed, and
   Nomi</span>](#3.2F15.2F2011:_Suzi.2C_Gregg.2C_Ed.2C_and_Nomi)
   - [Progress
@@ -18,7 +17,6 @@ title: "Web-apollo-meeting-2011-3-15"
     commonality between editing
     operations](#Discussed_commonality_between_editing_operations)
   - [Undo/Redo](#Undo.2FRedo)
-
 
 ## 3/15/2011: Suzi, Gregg, Ed, and Nomi
 
@@ -147,8 +145,3 @@ title: "Web-apollo-meeting-2011-3-15"
 - Handling splits and merges -- implies multiple ancestors, multiple
   descendants
 - UI for undo/redo -- back/forward, select from version list, or both
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Webapollo](Category%253AWebapollo "Category%253AWebapollo")

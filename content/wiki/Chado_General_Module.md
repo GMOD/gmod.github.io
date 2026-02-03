@@ -172,15 +172,7 @@ URIs, URNs (e.g. LSIDs). We can do this by treating the URL as a URI -
 however, some applications may expect this to be resolvable - to be
 decided.
 
-| F-Key | Name        | Type                   | Description       |
-| ----- | ----------- | ---------------------- | ----------------- |
-|       | db_id       | serial                 | _PRIMARY KEY_     |
-|       | name        | character varying(255) | _UNIQUE NOT NULL_ |
-|       | description | character varying(255) |                   |
-|       | urlprefix   | character varying(255) |                   |
-|       | url         | character varying(255) |                   |
-
-db Structure
+| F-Key | Name        | Type                   | Description       | ----- | ----------- | ---------------------- | ----------------- |       | db_id       | serial                 | _PRIMARY KEY_     |       | name        | character varying(255) | _UNIQUE NOT NULL_ |       | description | character varying(255) | urlprefix   | character varying(255) | url         | character varying(255) db Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -282,11 +274,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: project
 
-| F-Key | Name        | Type                   | Description       |
-| ----- | ----------- | ---------------------- | ----------------- |
-|       | project_id  | serial                 | _PRIMARY KEY_     |
-|       | name        | character varying(255) | _UNIQUE NOT NULL_ |
-|       | description | character varying(255) | _NOT NULL_        |
+| F-Key | Name        | Type                   | Description       | ----- | ----------- | ---------------------- | ----------------- |       | project_id  | serial                 | _PRIMARY KEY_     |       | name        | character varying(255) | _UNIQUE NOT NULL_ |       | description | character varying(255) | _NOT NULL_        |
 
 project Structure
 
@@ -299,16 +287,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: tableinfo
 
-| F-Key | Name                | Type                  | Description              |
-| ----- | ------------------- | --------------------- | ------------------------ |
-|       | tableinfo_id        | serial                | _PRIMARY KEY_            |
-|       | name                | character varying(30) | _UNIQUE NOT NULL_        |
-|       | primary_key_column  | character varying(30) |                          |
-|       | is_view             | integer               | _NOT NULL_               |
-|       | view_on_table_id    | integer               |                          |
-|       | superclass_table_id | integer               |                          |
-|       | is_updateable       | integer               | _NOT NULL DEFAULT 1_     |
-|       | modification_date   | date                  | _NOT NULL DEFAULT now()_ |
+| F-Key | Name                | Type                  | Description              | ----- | ------------------- | --------------------- | ------------------------ |       | tableinfo_id        | serial                | _PRIMARY KEY_            |       | name                | character varying(30) | _UNIQUE NOT NULL_        |       | primary_key_column  | character varying(30) | is_view             | integer               | _NOT NULL_               |       | view_on_table_id    | integer               | superclass_table_id | integer               | is_updateable       | integer               | _NOT NULL DEFAULT 1_     |       | modification_date   | date                  | _NOT NULL DEFAULT now()_ |
 
 tableinfo Structure
 

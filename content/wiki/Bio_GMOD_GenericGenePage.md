@@ -3,7 +3,6 @@ title: "Bio GMOD GenericGenePage"
 ---
 # Bio GMOD GenericGenePage
 
-
 Bio%253A%253AGMOD::GenericGenePage is an abstract
 [Perl](Glossary#Perl "Glossary") class that provides a render_xml method
 to crete [Common Gene Page](Common_Gene_Page "Common Gene Page")

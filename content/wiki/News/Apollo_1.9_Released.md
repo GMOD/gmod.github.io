@@ -3,7 +3,6 @@ title: "News/Apollo 1.9 Released"
 ---
 # News/Apollo 1.9 Released
 
-
 [Apollo](../Apollo.1 "Apollo") 1.9.0 has been released. This release
 includes a number of bug fixes and some additions. The biggest new
 feature for this release is the Preferences Editor, which gives a
@@ -24,10 +23,8 @@ Ed Lee
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/05/12*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

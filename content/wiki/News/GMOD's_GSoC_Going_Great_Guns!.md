@@ -3,7 +3,6 @@ title: "News/GMOD's GSoC Going Great Guns!"
 ---
 # News/GMOD's GSoC Going Great Guns!
 
-
 GMOD is lucky enough to have a
 <a href="http://www.google-melange.com/" class="external text"
 rel="nofollow">Google Summer of Code</a> student working with us through
@@ -31,6 +30,5 @@ them along to
 GMOD helpdesk</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/09*

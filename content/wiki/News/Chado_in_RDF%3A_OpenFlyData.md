@@ -3,12 +3,10 @@ title: "News/Chado in RDF: OpenFlyData"
 ---
 # News/Chado in RDF: OpenFlyData
 
-
 <a href="../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases"
 rel="nofollow" title="RDF"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/RDF_icon_96.gif" width="88" height="96"
 alt="RDF" /></a>
-
 
 The [OpenFlyData project has ported the FlyBase Chado
 database](../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases "August 2009 GMOD Meeting")
@@ -54,10 +52,8 @@ Clements](../User%253AClements "User%253AClements")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

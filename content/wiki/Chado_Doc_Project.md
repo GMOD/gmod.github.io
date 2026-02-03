@@ -3,7 +3,6 @@ title: "Chado Doc Project"
 ---
 # Chado Doc Project
 
-
 One remaining significant task in this effort to organized GMOD’s
 documentation is to further document Chado. You’ve noticed that there is
 some good documentation on Chado in the Wiki now, this is material that
@@ -26,7 +25,6 @@ This topics and pages have been divided into 8 work packages, whenever
 possible related topics and pages have been gathered into one work
 package.
 
-
   Important</span>](#Why_This_is_Important)
 - [Work
   Packages](#Work_Packages)
@@ -46,7 +44,6 @@ package.
     7](#Package_7)
   - [Package
     8](#Package_8)
-
 
 ## Why This is Important
 

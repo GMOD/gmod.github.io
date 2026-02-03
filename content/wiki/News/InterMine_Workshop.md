@@ -3,13 +3,11 @@ title: "News/InterMine Workshop"
 ---
 # News/InterMine Workshop
 
-
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/current/courses/intermine.html"
 rel="nofollow" title="InterMine"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png" width="262" height="72"
 alt="InterMine" /></a>
-
 
 An <a
 href="http://www.biomed.cam.ac.uk/gradschool/current/courses/intermine.html"
@@ -44,10 +42,8 @@ Richard Smith
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/09/11*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

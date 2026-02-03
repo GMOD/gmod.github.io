@@ -3,15 +3,12 @@ title: "Category%253A!Lacking ERD"
 ---
 # Category%253A!Lacking ERD
 
-
 [Chado modules](Category%253AChado_Modules "Category%253AChado Modules") lacking
 an ERD diagram.
-
 
 ## Pages in category "!Lacking ERD"
 
 The following 14 pages are in this category, out of 14 total.
-
 
 <table style="width: 100%;">
 <colgroup>

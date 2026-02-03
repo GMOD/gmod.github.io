@@ -3,12 +3,10 @@ title: "News/DIYA: Do It Yourself Annotator"
 ---
 # News/DIYA: Do It Yourself Annotator
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/57/DIYALogo.png/100px-DIYALogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/57/DIYALogo.png/150px-DIYALogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/57/DIYALogo.png/200px-DIYALogo.png 2x"
 width="100" height="100" alt="DIYA" />](../DIYA "DIYA")
-
 
 [DIYA](../DIYA "DIYA"), the *Do It Yourself Annotator* is now officially
 a part of GMOD. DIYA is a modular and configurable open source pipeline
@@ -47,10 +45,8 @@ looking for interested developers to contribute to DIYA. See the
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

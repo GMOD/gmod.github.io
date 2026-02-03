@@ -3,7 +3,6 @@ title: "Talk%253AOverview"
 ---
 # Talk%253AOverview
 
-
 The section **GFF Databases** -\> has the phrase "GFF is described
 below, it's a compact format for describing sequence and sequence
 annotations", however, AFAICT, GFF is not described below. Also the link
@@ -42,8 +41,3 @@ class="external free"
 rel="nofollow">http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=citmed&amp;part=A61024#A61262</a>
 . However, what would the values for 'Publication place', 'Publisher',
 and 'Beginning Date' would be?
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")

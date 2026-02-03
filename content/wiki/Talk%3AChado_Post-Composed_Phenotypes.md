@@ -3,7 +3,6 @@ title: "Talk:Chado Post-Composed Phenotypes"
 ---
 # Talk:Chado Post-Composed Phenotypes
 
-
   proposals</span>](#Older_proposals)
   - [Option 1:
     Group Module is an intrinsic part of the phenotype_cvterm
@@ -13,7 +12,6 @@ title: "Talk:Chado Post-Composed Phenotypes"
     table](#Option_2:_Group_Module_is_decoupled_from_the_phenotype_cvterm_table)
   - [Alternative: Represented directly in Group
     Module](#Alternative:_Represented_directly_in_Group_Module)
-
 
 ## Older proposals
 
@@ -47,8 +45,3 @@ be attached to different types of data objects.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/Chado_phenotype_proposal.v4.png"
 width="1500" height="1367" alt="Chado phenotype proposal.v4.png" />
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")

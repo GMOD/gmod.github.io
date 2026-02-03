@@ -3,11 +3,9 @@ title: "BioPerl"
 ---
 # BioPerl
 
-
 <a href="http://www.bioperl.org" rel="nofollow" title="BioPerl"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg" width="128" height="171"
 alt="BioPerl" /></a>
-
 
 <a href="http://www.bioperl.org/" class="external text"
 rel="nofollow">BioPerl</a> is a set of modules that support
@@ -20,7 +18,6 @@ concepts and some points that are specifically important for GMOD. If
 you have a detailed question about BioPerl, see the
 <a href="http://www.bioperl.org/" class="external text"
 rel="nofollow">BioPerl web site</a> for more.
-
 
   Frequently Given Answer in
   GMOD</span>](#The_Most_Frequently_Given_Answer_in_GMOD)
@@ -44,7 +41,6 @@ rel="nofollow">BioPerl web site</a> for more.
       Install](#Answering_Questions_During_the_Install)
     - [Errors](#Errors)
 
-
 ## The Most Frequently Given Answer in GMOD
 
 By at least an order or magnitude, the most frequently given answer on
@@ -62,13 +58,11 @@ this is and for how to get it.
 
 ### BioPerl Podcast
 
-
 <a href="http://twit.tv/floss96" rel="nofollow"
 title="FLOSS Weekly BioPerl Podcast"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/48/FLOSSWeekly.jpg/60px-FLOSSWeekly.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/48/FLOSSWeekly.jpg/90px-FLOSSWeekly.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/48/FLOSSWeekly.jpg/120px-FLOSSWeekly.jpg 2x"
 width="60" height="60" alt="FLOSS Weekly BioPerl Podcast" /></a>
-
 
 A <a href="http://twit.tv/floss96" class="external text"
 rel="nofollow">podcast on the BioPerl project</a> is available at
@@ -98,12 +92,8 @@ At any point in time there will be 2 or 3 BioPerl
 <a href="http://www.bioperl.org/wiki/Getting_BioPerl" class="extiw"
 title="bp:Getting BioPerl">releases</a>.
 
-| Release | Description | Use in GMOD? |
-|----|----|----|
-| **Stable (<a href="http://search.cpan.org/~cjfields/BioPerl-1.6.1/"
-class="external text" rel="nofollow">1.6.1</a>)** | *Stable* releases have gone through more testing than the other types of releases. The most recent stable release was 1.6.1 in September 2009. | Yes |
-| **Developer** | There hasn't been a developer release since the 1.6.x releases started coming out. | N/A |
-| **BioPerl-live** | *BioPerl-live* (and its cousins) is not a release *per se*, but is rather a copy of what is in BioPerl's Git repository for the **core** module on the day you get the files. This is the most up to date version of BioPerl you can get. You may need to use *BioPerl-live* if it has functionality you need that is not in the stable release. See BioPerl's <a href="http://www.bioperl.org/wiki/Using_Git" class="extiw"
+| Release | Description | Use in GMOD? |----|----|----| **Stable (<a href="http://search.cpan.org/~cjfields/BioPerl-1.6.1/"
+class="external text" rel="nofollow">1.6.1</a>)** | *Stable* releases have gone through more testing than the other types of releases. The most recent stable release was 1.6.1 in September 2009. | Yes | **Developer** | There hasn't been a developer release since the 1.6.x releases started coming out. | N/A | **BioPerl-live** | *BioPerl-live* (and its cousins) is not a release *per se*, but is rather a copy of what is in BioPerl's Git repository for the **core** module on the day you get the files. This is the most up to date version of BioPerl you can get. You may need to use *BioPerl-live* if it has functionality you need that is not in the stable release. See BioPerl's <a href="http://www.bioperl.org/wiki/Using_Git" class="extiw"
 title="bp:Using Git">Using Git</a> and <a href="http://www.bioperl.org/wiki/Getting_BioPerl" class="extiw"
 title="bp:Getting BioPerl">Getting BioPerl</a> pages for how to get the latest copy of *BioPerl-live*. | Yes<sup>[\[1\]](#cite_note-1)</sup> |
 
@@ -133,12 +123,7 @@ If you are on Linux, then these will be available as packages and should
 be installed using the appropriate package manager for your Linux
 distribution. These may also already be installed on your system.
 
-| Library(ies)      | Description                                  |
-|-------------------|----------------------------------------------|
-| perl-devel        | Perl development library.                    |
-| perl-DB_File      | Berkeley DB support in Perl.                 |
-| libgd, lbgd-devel | Libraries for creating PNG, JPG, etc images. |
-| expat, libexpat   | An XML parser.                               |
+| Library(ies)      | Description                                  |-------------------|----------------------------------------------| perl-devel        | Perl development library.                    | perl-DB_File      | Berkeley DB support in Perl.                 | libgd, lbgd-devel | Libraries for creating PNG, JPG, etc images. | expat, libexpat   | An XML parser.                               |
 
 #### Inside Perl
 

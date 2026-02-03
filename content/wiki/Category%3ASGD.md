@@ -3,11 +3,9 @@ title: "Category%253ASGD"
 ---
 # Category%253ASGD
 
-
 ## Pages in category "SGD"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### A
 
@@ -31,7 +29,6 @@ The following 5 pages are in this category, out of 5 total.
 
 - [Public Chado
   Databases](Public_Chado_Databases "Public Chado Databases")
-
 
 ## Media in category "SGD"
 
@@ -123,13 +120,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [SGD-t.gif](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/SGD-t.gif "File:SGD-t.gif")  
-  3 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  3 KB

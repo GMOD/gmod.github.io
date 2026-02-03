@@ -3,7 +3,6 @@ title: "GBrowse 2.0 Install HOWTO"
 ---
 # GBrowse 2.0 Install HOWTO
 
-
 This article describes **how to install GBrowse 2.0** on either Linux or
 Mac OSX systems. Before you begin, please make sure that your system has
 all the [GBrowse 2.0
@@ -29,7 +28,6 @@ how that process works.
   HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
 - *See also: [GBrowse Install
   HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
-
 
   the CPAN Shell</span>](#Installing_via_the_CPAN_Shell)
   - [Ubuntu
@@ -58,7 +56,6 @@ how that process works.
 - [Advanced
   Installation Topics](#Advanced_Installation_Topics)
 
-
 ## Installing via the CPAN Shell
 
 For a smooth experience, please install all [GBrowse 2.0
@@ -82,7 +79,6 @@ correct.
 If any perl modules are missing from the prerequisites, the CPAN shell
 will install them for you.
 
-
 ### Ubuntu 11.04 Issue
 
 The binary version of the GD Perl module that is packaged for Ubuntu
@@ -94,7 +90,6 @@ of its tests, blocking GBrowse installation. To fix:
     sudo perl -MCPAN -e 'install GD'
 
 Then proceed to install Bio::Graphics::Browser2 as described above.
-
 
 ## Installing Manually
 

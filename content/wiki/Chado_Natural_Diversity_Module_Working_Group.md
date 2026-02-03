@@ -3,7 +3,6 @@ title: "Chado Natural Diversity Module Working Group"
 ---
 # Chado Natural Diversity Module Working Group
 
-
 The **[Chado Natural Diversity
 Module](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
 Working Group** was established with the aim of getting the Chado
@@ -11,7 +10,6 @@ Natural Diversity Module into the production version of
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
   
-
 
   Discussion](#Discussion)
 - [History](#History)
@@ -22,7 +20,6 @@ Natural Diversity Module into the production version of
 - [Participation](#Participation)
 - [Stock
   Relationship Ontology](#Stock_Relationship_Ontology)
-
 
 # Discussion
 

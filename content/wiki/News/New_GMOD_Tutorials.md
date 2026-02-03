@@ -3,12 +3,10 @@ title: "News/New GMOD Tutorials"
 ---
 # News/New GMOD Tutorials
 
-
 <a href="../Training_and_Outreach#Online_Tutorials" rel="nofollow"
 title="Summer School - Americas"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/2010SummerSchoolAmericas170.png"
 width="170" height="124" alt="Summer School - Americas" /></a>
-
 
 Detailed and hands-on [online
 tutorials](../Training_and_Outreach#Online_Tutorials "Training and Outreach")
@@ -66,10 +64,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/14*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

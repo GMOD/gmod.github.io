@@ -3,7 +3,6 @@ title: "2008 GMOD Community Survey"
 ---
 # 2008 GMOD Community Survey
 
-
   Links</span>](#Survey_Links)
 - [GMOD
   Components](#GMOD_Components)
@@ -39,7 +38,6 @@ title: "2008 GMOD Community Survey"
   - [User or
     Developer](#User_or_Developer)
   - [Interests](#Interests)
-
 
 The first ever GMOD Community Survey was conducted in the last half of
 October 2008. Almost 100 people participated in the survey, providing
@@ -158,23 +156,14 @@ The survey asked participants which
 class="external text" rel="nofollow">GMOD Components</a> they used. Here
 were the most popular responses:
 
-|  % Using | Component                                                      |
-|---------:|----------------------------------------------------------------|
-|    70.8% | <a href="../extras/2008GMODCommunitySurvey.html#GBrowse"       
-            class="external text" rel="nofollow">GBrowse</a>                |
-|    36.0% | <a href="../extras/2008GMODCommunitySurvey.html#Chado"         
-            class="external text" rel="nofollow">Chado</a>                  |
-|    30.3% | <a href="../extras/2008GMODCommunitySurvey.html#Apollo"        
-            class="external text" rel="nofollow">Apollo</a>                 |
-|    21.3% | <a href="../extras/2008GMODCommunitySurvey.html#BioMart"       
-            class="external text" rel="nofollow">BioMart</a>                |
-|    13.5% | <a href="../extras/2008GMODCommunitySurvey.html#Pathway_Tools" 
-            class="external text" rel="nofollow">Pathway Tools</a>          |
-|    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#CMap"          
-            class="external text" rel="nofollow">CMap</a>                   |
-|    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#GMODTools"     
-            class="external text" rel="nofollow">GMODTools</a>              |
-|    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#InterMine"     
+|  % Using | Component                                                      |---------:|----------------------------------------------------------------|    70.8% | <a href="../extras/2008GMODCommunitySurvey.html#GBrowse"       
+            class="external text" rel="nofollow">GBrowse</a>                |    36.0% | <a href="../extras/2008GMODCommunitySurvey.html#Chado"         
+            class="external text" rel="nofollow">Chado</a>                  |    30.3% | <a href="../extras/2008GMODCommunitySurvey.html#Apollo"        
+            class="external text" rel="nofollow">Apollo</a>                 |    21.3% | <a href="../extras/2008GMODCommunitySurvey.html#BioMart"       
+            class="external text" rel="nofollow">BioMart</a>                |    13.5% | <a href="../extras/2008GMODCommunitySurvey.html#Pathway_Tools" 
+            class="external text" rel="nofollow">Pathway Tools</a>          |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#CMap"          
+            class="external text" rel="nofollow">CMap</a>                   |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#GMODTools"     
+            class="external text" rel="nofollow">GMODTools</a>              |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#InterMine"     
             class="external text" rel="nofollow">InterMine</a>              |
 
   
@@ -185,22 +174,7 @@ From the 89 responses we received, how often are the 5 most popular
 components used at the same site? The cutoff for inclusion in the table
 was 9 responses.
 
-| Components and Combinations |  |  |  |  | \# Responses |
-|----|----|----|----|----|----|
-|  |  |  | [GBrowse](GBrowse.1 "GBrowse") |  | 63 |
-|  |  | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |  |  | 32 |
-| [Apollo](Apollo.1 "Apollo") |  |  |  |  | 27 |
-|  |  | Chado | GBrowse |  | 25 |
-| Apollo |  |  | GBrowse |  | 22 |
-| Apollo |  | Chado |  |  | 21 |
-|  | [BioMart](BioMart "BioMart") |  |  |  | 19 |
-| Apollo |  | Chado | GBrowse |  | 18 |
-|  | BioMart |  | GBrowse |  | 18 |
-|  |  |  |  | [Pathway Tools](Pathway_Tools.1 "Pathway Tools") | 12 |
-|  |  |  | GBrowse | Pathway Tools | 11 |
-| Apollo | BioMart |  |  |  | 10 |
-| Apollo | BioMart |  | GBrowse |  | 9 |
-|  | BioMart | Chado |  |  | 9 |
+| Components and Combinations |  |  | \# Responses |----|----|----|----|----|----|  |  | [GBrowse](GBrowse.1 "GBrowse") | 63 |  | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |  | 32 | [Apollo](Apollo.1 "Apollo") |  |  | 27 |  | Chado | GBrowse | 25 | Apollo |  | GBrowse | 22 | Apollo | Chado |  | 21 |  | [BioMart](BioMart "BioMart") |  | 19 | Apollo | Chado | GBrowse | 18 |  | BioMart | GBrowse | 18 |  |  | [Pathway Tools](Pathway_Tools.1 "Pathway Tools") | 12 |  |  | GBrowse | Pathway Tools | 11 | Apollo | BioMart |  | 10 | Apollo | BioMart | GBrowse | 9 |  | BioMart | Chado |  | 9 |
 
 ## GMOD Servers
 
@@ -217,13 +191,7 @@ recommendations.
 
 Operating systems in use had a definite skew towards Unix based systems:
 
-| \# Responses | Operating System                                  |
-|-------------:|---------------------------------------------------|
-|           55 | [Linux](Category%253ALinux "Category%253ALinux")          |
-|            8 | [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X") |
-|            6 | Solaris                                           |
-|            2 | [Windows](Category%253AWindows "Category%253AWindows")    |
-|            1 | Unspecified Unix                                  |
+| \# Responses | Operating System                                  |-------------:|---------------------------------------------------|           55 | [Linux](Category%253ALinux "Category%253ALinux")          |            8 | [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X") |            6 | Solaris                                           |            2 | [Windows](Category%253AWindows "Category%253AWindows")    |            1 | Unspecified Unix                                  |
 
 ### Current Server Sufficient?
 
@@ -234,12 +202,7 @@ class="external text" rel="nofollow">available in the survey</a>), and
 whether or not their servers were sufficient to meet their current
 needs. Responses to the latter question are summarized here.
 
-| \# Responses | Answer                        |
-|-------------:|-------------------------------|
-|          ~30 | Sufficient (at least for now) |
-|            8 | Need more memory              |
-|            8 | Faster/More CPUs/Servers      |
-|            5 | Faster/More disk              |
+| \# Responses | Answer                        |-------------:|-------------------------------|          ~30 | Sufficient (at least for now) |            8 | Need more memory              |            8 | Faster/More CPUs/Servers      |            5 | Faster/More disk              |
 
 ## GMOD Meetings
 
@@ -272,14 +235,7 @@ There were 59 responses to the question:
 
 Popular responses were:
 
-| \# Responses | Aspect / Component |
-|---:|----|
-| 23 | [GBrowse](GBrowse.1 "GBrowse") |
-| 17 | Support and active community |
-| 8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
-| 8 | Software tools quality, maintenance, breadth and functionality |
-| 6 | Open Source |
-| 6 | [Apollo](Apollo.1 "Apollo") |
+| \# Responses | Aspect / Component |---:|----| 23 | [GBrowse](GBrowse.1 "GBrowse") | 17 | Support and active community | 8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> | 8 | Software tools quality, maintenance, breadth and functionality | 6 | Open Source | 6 | [Apollo](Apollo.1 "Apollo") |
 
 ### Least Satisfied With
 
@@ -289,13 +245,7 @@ There were 44 responses to the question:
 
 Recurring responses were:
 
-| \# Responses | Aspect / Component                                          |
-|-------------:|-------------------------------------------------------------|
-|           14 | Documentation                                               |
-|            8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
-|            7 | Difficult configuration and installation                    |
-|            5 | Integration and coordination                                |
-|            3 | None                                                        |
+| \# Responses | Aspect / Component                                          |-------------:|-------------------------------------------------------------|           14 | Documentation                                               |            8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |            7 | Difficult configuration and installation                    |            5 | Integration and coordination                                |            3 | None                                                        |
 
 ### Next 12 to 18 Months
 
@@ -305,14 +255,7 @@ There were 47 responses to the question:
 
 Recurring responses were:
 
-| \# Responses | Task |
-|---:|----|
-| 18 | Documentation |
-| 14 | Integration |
-| 11 | GBrowse: testing, speed, Web 2.0, glyph documentation, features |
-| 5 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](Apollo.1 "Apollo"), functional annotation |
-| 3 | Training |
-| 3 | Improve what we already have. |
+| \# Responses | Task |---:|----| 18 | Documentation | 14 | Integration | 11 | GBrowse: testing, speed, Web 2.0, glyph documentation, features | 5 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](Apollo.1 "Apollo"), functional annotation | 3 | Training | 3 | Improve what we already have. |
 
   
 
@@ -371,13 +314,7 @@ title="GMOD Summer School">GMOD course</a> in Asia/Pacific in 2009.
 When asked what locations respondents could make it to, these locations
 had more than one response:
 
-| \# Responses | Location   |
-|--------------|------------|
-| 5            | Australia |
-| 5            | China      |
-| 3            | Japan      |
-| 3            | Singapore  |
-| 2            | India      |
+| \# Responses | Location   |--------------|------------| 5            | Australia | 5            | China      | 3            | Japan      | 3            | Singapore  | 2            | India      |
 
 *Note: We will investigate possible locations and interest in a GMOD
 Course in Asia/Pacific during the last half of 2009 and during 2010.*
@@ -412,12 +349,7 @@ Questions included:
 
 **Do you consider yourself to be a GMOD user, GMOD Developer, or both?**
 
-| \# Responses | Response  |
-|--------------|-----------|
-| 35           | User      |
-| 6            | Developer |
-| 34           | Both      |
-| 5            | Other     |
+| \# Responses | Response  |--------------|-----------| 35           | User      | 6            | Developer | 34           | Both      | 5            | Other     |
 
 ### Interests
 
@@ -430,28 +362,7 @@ annotate.**
 
 Respondents were given a list of choices along with *Other*
 
-| \# Responses | Interest |
-|---:|----|
-| 51 | Assembled sequence |
-| 48 | [Comparative Genomics](Comparative_Genomics "Comparative Genomics") |
-| 43 | Manual genome [annotation](Annotation "Annotation") |
-| 39 | [Next generation sequence](Next_Generation_Sequencing "Next Generation Sequencing") |
-| 38 | [Annotation](Annotation "Annotation") pipelines |
-| 32 | Community [annotation](Annotation "Annotation") |
-| 29 | [Microarrays](Category%253AMicroarrays "Category%253AMicroarrays") |
-| 29 | [Ontologies](Category%253AOntologies "Category%253AOntologies") |
-| 24 | [Mapping](CMap.1 "CMap") (genetic, physical, QTL, ...) |
-| 22 | [Phenotypes](Category%253APhenotypes "Category%253APhenotypes") |
-| 20 | Pathways |
-| 19 | Literature curation |
-| 18 | Other expression (besides microarrays) |
-| 18 | Workflow / Integration |
-| 13 | Lines / Stocks |
-| 13 | Population genomics |
-| 10 | Phylogeny |
-| 6 | Community directory |
-| 6 | Other |
-| 4 | Anatomy |
+| \# Responses | Interest |---:|----| 51 | Assembled sequence | 48 | [Comparative Genomics](Comparative_Genomics "Comparative Genomics") | 43 | Manual genome [annotation](Annotation "Annotation") | 39 | [Next generation sequence](Next_Generation_Sequencing "Next Generation Sequencing") | 38 | [Annotation](Annotation "Annotation") pipelines | 32 | Community [annotation](Annotation "Annotation") | 29 | [Microarrays](Category%253AMicroarrays "Category%253AMicroarrays") | 29 | [Ontologies](Category%253AOntologies "Category%253AOntologies") | 24 | [Mapping](CMap.1 "CMap") (genetic, physical, QTL, ...) | 22 | [Phenotypes](Category%253APhenotypes "Category%253APhenotypes") | 20 | Pathways | 19 | Literature curation | 18 | Other expression (besides microarrays) | 18 | Workflow / Integration | 13 | Lines / Stocks | 13 | Population genomics | 10 | Phylogeny | 6 | Community directory | 6 | Other | 4 | Anatomy |
 
 Responses under *Other* included:
 

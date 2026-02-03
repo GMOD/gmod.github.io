@@ -3,7 +3,6 @@ title: "User%253AMara Kim"
 ---
 # User%253AMara Kim
 
-
 I am a Ph.D. student studying Computational Genomics in the Rokas Lab at
 Vanderbilt University. As the lead developer of RokasDB, our comparative
 database, I have deployed and extended the Chado schema for our research

@@ -80,21 +80,14 @@ optional workshop, but registration is requested.
 This lists talks that we know about. If you have an additional one,
 please add it here.
 
-| Date           | Time | Title                                                                       | Presenter                                                        |
-| -------------- | ---- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Friday June 10 | 9:30 | _A community-centric bioinformatic infrastructure for new genome consortia_ | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") |
+| Date           | Time | Title                                                                       | Presenter                                                        | -------------- | ---- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- | Friday June 10 | 9:30 | _A community-centric bioinformatic infrastructure for new genome consortia_ | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") |
 
 ## Posters
 
 This lists posters that we know about. If you have an additional one,
 please add it here.
 
-| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER "MAKER")                                                                                                                                        |
-| 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools "Pathway Tools")                                                                                                                |
-| 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly "Est2assembly"), <a href="/wiki/Gmod_dbsf" class="mw-redirect" |
-| title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all "Genes4all") |
+| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER "MAKER")                                                                                                                                        | 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools "Pathway Tools")                                                                                                                | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly "Est2assembly"), <a href="/wiki/Gmod_dbsf" class="mw-redirect" | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all "Genes4all") |
 
 ## Brochure
 
@@ -102,6 +95,6 @@ Download
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf" class="internal"
 title="AGS2011Brochure.pdf">conference brochure</a>.
 
-[Category](/wiki/Special%253ACategories "Special%253ACategories"):
+:
 
 - [Conferences](/wiki/Category%253AConferences "Category%253AConferences")

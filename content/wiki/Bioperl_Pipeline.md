@@ -3,7 +3,6 @@ title: "Bioperl Pipeline"
 ---
 # Bioperl Pipeline
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
@@ -13,7 +12,6 @@ See <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
 [DIYA](DIYA "DIYA") and [MAKER](MAKER.1 "MAKER") for currently supported
 workflow and analysis packages.
 
-
   Description](#Description)
 - [Requirements](#Requirements)
 - [Getting the
@@ -22,7 +20,6 @@ workflow and analysis packages.
   List](#Mailing_List)
 - [Affiliated
   projects](#Affiliated_projects)
-
 
 ## Description
 

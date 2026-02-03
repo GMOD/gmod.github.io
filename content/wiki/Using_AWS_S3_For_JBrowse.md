@@ -3,7 +3,6 @@ title: "Using AWS S3 For JBrowse"
 ---
 # Using AWS S3 For JBrowse
 
-
   JBbrowse?</span>](#Why_use_S3_for_JBbrowse.3F)
 - [Setting it up
   with management
@@ -16,7 +15,6 @@ title: "Using AWS S3 For JBrowse"
     pattern](#Build_pattern)
 - [Storing just
   track data on S3](#Storing_just_track_data_on_S3)
-
 
 ## Why use S3 for JBbrowse?
 
@@ -247,6 +245,3 @@ points at our new S3 bucket:
 
 After making this change to your trackList.json file, a reload of
 JBrowse will have it pulling track data from S3.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):

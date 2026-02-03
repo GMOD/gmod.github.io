@@ -3,7 +3,6 @@ title: "News/SGD and ENCODE DCC Jobs"
 ---
 # News/SGD and ENCODE DCC Jobs
 
-
 From Mike Cherry at
 <a href="http://cherrylab.stanford.edu" class="external text"
 rel="nofollow">the Cherry Lab, Stanford</a>, CA:
@@ -17,10 +16,8 @@ job advertisement (PDF)</a> for more information.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/3/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

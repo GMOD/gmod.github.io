@@ -3,15 +3,12 @@ title: "Category%253ADAS"
 ---
 # Category%253ADAS
 
-
 DAS is an acronym for the [Distributed Annotation
 System](Distributed_Annotation_System "Distributed Annotation System").
-
 
 ## Pages in category "DAS"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -59,7 +56,6 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "DAS"
 
@@ -128,13 +124,4 @@ The following 3 files are in this category, out of 3 total.
   
 
   [Das.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt "File:Das.ppt")  
-  132 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  132 KB

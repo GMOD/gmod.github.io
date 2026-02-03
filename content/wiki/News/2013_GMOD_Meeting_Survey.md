@@ -3,7 +3,6 @@ title: "News/2013 GMOD Meeting Survey"
 ---
 # News/2013 GMOD Meeting Survey
 
-
 As we are trying to plan for next years GMOD meeting, we would like to
 decide between two venues as soon as possible. To help us decide, we've
 put together a simple
@@ -26,10 +25,8 @@ rel="nofollow">survey</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/05/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

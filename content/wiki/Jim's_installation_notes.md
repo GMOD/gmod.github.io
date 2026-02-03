@@ -3,9 +3,7 @@ title: "Jim's installation notes"
 ---
 # Jim's installation notes
 
-
 Back to [Chado New Users](Chado_New_Users "Chado New Users")
-
 
   on PPC mac</span>](#Installation_on_PPC_mac)
   - [Prerequisites](#Prerequisites)
@@ -39,7 +37,6 @@ Back to [Chado New Users](Chado_New_Users "Chado New Users")
       www user](#Set_up_www_user)
     - [Make a
       gbrowse conf file](#Make_a_gbrowse_conf_file)
-
 
 ## Installation on PPC mac
 
@@ -486,14 +483,6 @@ fix with:
 
     GRANT SELECT ON analysisfeature                  TO www;
 
-
 Features from yeast sample GFF imported to Chado
 
-
 It works!!!
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [User
-  Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")

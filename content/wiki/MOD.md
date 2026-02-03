@@ -3,7 +3,6 @@ title: "MOD"
 ---
 # MOD
 
-
 **M**odel **O**rganism **D**atabases are repositories for information on
 those organisms with a wealth of biological data that make them
 attractive to study as models of other species (including humans) that

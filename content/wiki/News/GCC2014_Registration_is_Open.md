@@ -3,7 +3,6 @@ title: "News/GCC2014 Registration is Open"
 ---
 # News/GCC2014 Registration is Open
 
-
 <a href="http://wiki.galaxyproject.org/Events/GCC2014" rel="nofollow"
 title="2014  Galaxy Community Conference (GCC2014)"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/300px-GCC2014Logo.png"
@@ -11,13 +10,11 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="300" height="126"
 alt="2014 Galaxy Community Conference (GCC2014)" /></a>
 
-
 <a href="http://wiki.galaxyproject.org/Events/GCC2014/TrainingDay"
 rel="nofollow" title="GCC2014 Training Day"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/43/GCC2014TDLogo.png/80px-GCC2014TDLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/43/GCC2014TDLogo.png/120px-GCC2014TDLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/43/GCC2014TDLogo.png/160px-GCC2014TDLogo.png 2x"
 width="80" height="120" alt="GCC2014 Training Day" /></a>
-
 
 **We are pleased to announce that
 <a href="https://wiki.galaxyproject.org/Events/GCC2014/Register"
@@ -76,13 +73,11 @@ later than May2.  *Please consider presenting your work. If you are
 dealing with big biological data, then this meeting wants to hear about
 your work.*
 
-
 <a href="http://www.gigasciencejournal.com/" rel="nofollow"
 title="GigaScience Journal"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/GigaScienceLogo250.png/120px-GigaScienceLogo250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/GigaScienceLogo250.png/180px-GigaScienceLogo250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/GigaScienceLogo250.png/240px-GigaScienceLogo250.png 2x"
 width="120" height="39" alt="GigaScience Journal" /></a>
-
 
 The *<a href="http://www.gigasciencejournal.com/" class="external text"
 rel="nofollow">GigaScience</a>* "Galaxy: Data Intensive and Reproducible
@@ -102,6 +97,5 @@ http:<a href="https://wiki.galaxyproject.org/Events/GCC2014/Organizers"
 class="external text" rel="nofollow">GCC2014 Organizing Committee</a>
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/14*

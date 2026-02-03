@@ -3,7 +3,6 @@ title: "News/Apollo 1.11.2 Released"
 ---
 # News/Apollo 1.11.2 Released
 
-
 I've just cut a new [Apollo](../Apollo.1 "Apollo") release that fixes
 some [GFF3](../GFF3 "GFF3") and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> writeback
@@ -18,10 +17,8 @@ Cheers,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

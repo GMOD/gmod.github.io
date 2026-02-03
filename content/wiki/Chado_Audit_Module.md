@@ -3,7 +3,6 @@ title: "Chado Audit Module"
 ---
 # Chado Audit Module
 
-
   Introduction](#Introduction)
   - [Audit
     Policy](#Audit_Policy)
@@ -20,7 +19,6 @@ title: "Chado Audit Module"
   - [Listing of
     MODs' Implemented Audit Tracking
     Systems](#Listing_of_MODs.27_Implemented_Audit_Tracking_Systems)
-
 
 ## Introduction
 
@@ -54,12 +52,10 @@ chado, with each chado table having a corresponding shadow audit table
 which will include all of the columns of the chado table, plus these
 additional columns:
 
-
 ``` de1
     transaction_date TIMESTAMP NOT NULL
     transaction_type CHAR NOT NULL
 ```
-
 
 Where *transaction_type* value is one of:
 
@@ -70,7 +66,6 @@ Where *transaction_type* value is one of:
   
 Thus an chado db instance chado.1 containing a table *gene*, for
 example:
-
 
 ``` de1
     CREATE TABLE gene (
@@ -84,10 +79,8 @@ example:
     );
 ```
 
-
 Would have a corresponding audit database, chado.1_audit, containing a
 shadow audit table, *gene_audit*:
-
 
 ``` de1
     CREATE TABLE gene_audit (
@@ -102,7 +95,6 @@ shadow audit table, *gene_audit*:
                transaction_type CHAR NOT NULL
     );
 ```
-
 
   
 

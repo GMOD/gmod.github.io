@@ -3,14 +3,11 @@ title: "Category%253AGMOD Developers"
 ---
 # Category%253AGMOD Developers
 
-
 Documentation for GMOD Developers
-
 
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### G
 
@@ -21,11 +18,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Proposals](Category%253AProposals "Category%253AProposals")
 
-
 ## Pages in category "GMOD Developers"
 
 The following 20 pages are in this category, out of 20 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -123,8 +118,3 @@ Access</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")

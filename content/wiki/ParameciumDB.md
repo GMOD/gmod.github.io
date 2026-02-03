@@ -3,11 +3,9 @@ title: "ParameciumDB"
 ---
 # ParameciumDB
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/60/ParameciumDBLogo.png" width="221"
 height="70" alt="ParameciumDBLogo.png" />
-
 
   
 ParameciumDB
@@ -39,7 +37,6 @@ uses GMOD, and what challenges they faced.
 
   
 
-
   Biology</span>](#Paramecium_Biology)
   - [*Paramecium tetraurelia*
     Genome](#Paramecium_tetraurelia_Genome)
@@ -70,7 +67,6 @@ uses GMOD, and what challenges they faced.
     - [Feedback](#Feedback)
 - [Related
   Reading](#Related_Reading)
-
 
   
 
@@ -249,11 +245,9 @@ Collections into ParameciumDB.
 
 ## Web Site
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/ParameciumDBHomePage.png" width="449"
 height="193" alt="ParameciumDBHomePage.png" />
-
 
 ### Turnkey / GMODWeb
 

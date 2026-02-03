@@ -3,7 +3,6 @@ title: "GSOC Project Ideas 2022"
 ---
 # GSOC Project Ideas 2022
 
-
 **Got an idea for [GSOC 2022](GSoC "GSoC")?**
 
 Then please post it. You can either
@@ -24,7 +23,6 @@ our projects, we will give it serious consideration. Creativity and
 self-motivation are great traits for open-source programmers.
 
   
-
 
   project ideas for 2022</span>](#Proposed_project_ideas_for_2022)
   - [JBrowse 2
@@ -60,7 +58,6 @@ self-motivation are great traits for open-source programmers.
   - [Template:
     Project Idea Name (Project Name/Lab
     Name)](#Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29)
-
 
 # Proposed project ideas for 2022
 

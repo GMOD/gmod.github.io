@@ -3,13 +3,11 @@ title: "News/GSoC 2013 Mentors Wanted!"
 ---
 # News/GSoC 2013 Mentors Wanted!
 
-
 <a href="http://google-melange.com" rel="nofollow"
 title="Google Summer of Code"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/300px-Soc-logo-google-blue.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/450px-Soc-logo-google-blue.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/600px-Soc-logo-google-blue.jpg 2x"
 width="300" height="160" alt="Google Summer of Code" /></a>
-
 
 GMOD's participation in
 <a href="http://google-melange.com" class="external text"
@@ -42,6 +40,5 @@ More information is also available on the
 class="external text" rel="nofollow">Genome Informatics mailing list</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/15*

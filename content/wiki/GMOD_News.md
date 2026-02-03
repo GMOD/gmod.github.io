@@ -1500,7 +1500,3 @@ Please follow these guidelines when adding a news item.
 
     
         NewsItem|yyyy/mm/dd, updated yyyy/mm/dd
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")

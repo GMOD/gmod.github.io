@@ -3,7 +3,6 @@ title: "GBrowse DAS HOWTO"
 ---
 # GBrowse DAS HOWTO
 
-
 The Distributed Annotation System protocol (DAS;
 <a href="http://www.biodas.org" class="external free"
 rel="nofollow">http://www.biodas.org</a>) is a system for exchanging
@@ -80,15 +79,7 @@ category" to each of them. DAS uses the idea of the "category" of a
 feature in order to filter sets of features by their purpose. Categories
 include:
 
-|  |  |
-|----|----|
-| transcription | features that have to do with RNA transcription |
-| translation | features that have to do with protein translation and function |
-| variation | mutations, deletions, polymorphisms |
-| structural | contigs, clones, reads, PCR primers |
-| repeat | repetitive elements |
-| experimental | a catch-all for experimental data |
-| miscellaneous | anything that doesn't fit in one fo the other categories |
+|----|----| transcription | features that have to do with RNA transcription | translation | features that have to do with protein translation and function | variation | mutations, deletions, polymorphisms | structural | contigs, clones, reads, PCR primers | repeat | repetitive elements | experimental | a catch-all for experimental data | miscellaneous | anything that doesn't fit in one fo the other categories |
 
 Find the \[Genes\] stanza and modify it to to have a das category of
 "transcription" as shown here:
@@ -118,22 +109,18 @@ that you have configured.
     <DASDSN>
       <DSN>
 
-
 ``` de1
 elegans_core|Genes
 ```
-
 
          <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
          <DESCRIPTION>Core C. elegans annotations; Genes track; Protein-coding genes</DESCRIPTION>
       </DSN>
       <DSN>
 
-
 ``` de1
 elegans_core|Alignments
 ```
-
 
          <MAPMASTER>http://localhost/cgi-bin/gb2/das/elegans_core</MAPMASTER>
          <DESCRIPTION>elegans_core; Alignments track; ESTs</DESCRIPTION>
@@ -164,9 +151,3 @@ class="external free"
 rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CAlignments</a>
 in order to view the alignments. These tracks are not coming directly
 from the local database, but from the database via the DAS protocol.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")

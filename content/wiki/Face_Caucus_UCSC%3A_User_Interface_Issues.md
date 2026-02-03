@@ -3,7 +3,6 @@ title: "Face Caucus UCSC: User Interface Issues"
 ---
 # Face Caucus UCSC: User Interface Issues
 
-
 Kate Rosenbloom, UCSC Genome Bioinformatics
 
 1.  Introduction
@@ -40,9 +39,3 @@ Kate Rosenbloom, UCSC Genome Bioinformatics
     - Data overload (track groups, multiple similar datasets)
     - Data ordering
 7.  Acknowledgements
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")

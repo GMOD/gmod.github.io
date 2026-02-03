@@ -3,7 +3,6 @@ title: "News/GMOD Paper Cuts, Nov 8th, 2013"
 ---
 # News/GMOD Paper Cuts, Nov 8th, 2013
 
-
   
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
@@ -69,6 +68,5 @@ fit the needs of the project.
     named `DOI:10.1186.2F1471-2105-14-180`**</span>
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/08*

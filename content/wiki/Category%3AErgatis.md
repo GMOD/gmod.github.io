@@ -3,11 +3,9 @@ title: "Category%253AErgatis"
 ---
 # Category%253AErgatis
 
-
 ## Pages in category "Ergatis"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### I
 
@@ -22,7 +20,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [TIGR-Workflow /
   Ergatis](TIGR-Workflow_/_Ergatis "TIGR-Workflow / Ergatis")
-
 
 ## Media in category "Ergatis"
 
@@ -114,13 +111,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [NGSTranscriptomeISGAEr...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf "File:NGSTranscriptomeISGAErgatis.pdf")  
-  2.8 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  2.8 MB

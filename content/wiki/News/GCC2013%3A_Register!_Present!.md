@@ -3,13 +3,11 @@ title: "News/GCC2013: Register! Present!"
 ---
 # News/GCC2013: Register! Present!
 
-
 <a href="http://wiki.galaxyproject.org/events/GCC2013" rel="nofollow"
 title="2013 Galaxy Community Conference"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/300px-GCC2013Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/450px-GCC2013Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/600px-GCC2013Logo.png 2x"
 width="300" height="200" alt="2013 Galaxy Community Conference" /></a>
-
 
 **We are pleased to announce that
 <a href="http://galaxyproject.org/events/GCC2013/Register"
@@ -37,7 +35,6 @@ If you are a biologist or bioinformatician performing or enabling
 high-throughput biological research, then please consider attending.
  GCC2013 is aimed at:
 
-
 <a href="http://galaxyproject.org/events/GCC2013/TrainingDay"
 rel="nofollow"
 title="2013 Galaxy Community Conference (GCC2013) Training Day"><img
@@ -45,7 +42,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/300px-GCC2013TrainingDayLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/400px-GCC2013TrainingDayLogo.png 2x"
 width="200" height="102"
 alt="2013 Galaxy Community Conference (GCC2013) Training Day" /></a>
-
 
 - Bioinformatics tool developers and data providers
 - Workflow developers and power bioinformatics users
@@ -79,6 +75,5 @@ PS: And please help
 class="external text" rel="nofollow">get the word out</a>!
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/02/24*

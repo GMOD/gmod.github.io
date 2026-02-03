@@ -3,7 +3,6 @@ title: "User%253ANaamaMenda"
 ---
 # User%253ANaamaMenda
 
-
 **Naama Menda** is a postdoc and a curator at
 <a href="http://solgenomics.net" class="external text"
 rel="nofollow">Sol Genomics Network</a>.
@@ -21,8 +20,3 @@ rel="nofollow">Sol Genomics Network</a>.
 - <a href="http://solgenomics.net" class="external text"
   rel="nofollow">SGN</a> Solanaceae Phenotype Ontology development and
   implementation
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [SGN](Category%253ASGN "Category%253ASGN")

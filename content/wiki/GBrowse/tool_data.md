@@ -3,7 +3,6 @@ title: "GBrowse/tool data"
 ---
 # GBrowse/tool data
 
-
 This page stores the data that populates the
 [GBrowse](../GBrowse.1 "GBrowse") wiki page.
 
@@ -48,9 +47,7 @@ required and a single database is used.
 
 \| screenshot =
 
-
 <a href="../File:GBrowse_screenshot1.png" class="image"></a>
-
 
 GBrowse running on
 <a href="http://hapmap.ncbi.nlm.nih.gov/downloads/index.html"
@@ -58,7 +55,6 @@ class="external text" rel="nofollow">HapMap.org</a>
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/GBrowse_screenshot1.png"
 class="internal" title="GBrowse screenshot1.png">Click to view at full
 resolution</a>
-
 
 \| public_server = \| dl = \| dl_url = <a
 href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/"
@@ -86,7 +82,6 @@ Perl 5.8.6 or higher and the Apache web server installed. \| install =
   Paths](../GBrowse_2.0_Install_Paths "GBrowse 2.0 Install Paths")
 
 \| config =
-
 
 - [GMOD in the
   Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")

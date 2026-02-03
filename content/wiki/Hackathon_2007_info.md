@@ -3,7 +3,6 @@ title: "Hackathon 2007 info"
 ---
 # Hackathon 2007 info
 
-
   Accomplishments](#Accomplishments)
   - [Apollo](#Apollo)
   - [Core](#Core)
@@ -24,7 +23,6 @@ title: "Hackathon 2007 info"
     Goals considered](#Possible_Goals_considered)
 - [Preparation](#Preparation)
 - [Attendees](#Attendees)
-
 
 # Accomplishments
 

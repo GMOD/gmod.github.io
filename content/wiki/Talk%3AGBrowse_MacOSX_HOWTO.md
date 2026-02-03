@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse MacOSX HOWTO"
 ---
 # Talk%253AGBrowse MacOSX HOWTO
 
-
 ## Defaults in the net installer
 
 The net installer claims that going with the defaults should be just

@@ -3,11 +3,9 @@ title: "Category%253ABioPerl"
 ---
 # Category%253ABioPerl
 
-
 ## Pages in category "BioPerl"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -59,7 +57,6 @@ title="Wiki linking style guide">Wiki linking style guide</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "BioPerl"
 
@@ -130,13 +127,4 @@ The following 3 files are in this category, out of 3 total.
 
   [Stajich GMOD
   2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")  
-  2.36 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Perl](Category%253APerl "Category%253APerl")
+  2.36 MB

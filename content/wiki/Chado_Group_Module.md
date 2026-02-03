@@ -3,10 +3,8 @@ title: "Chado Group Module"
 ---
 # Chado Group Module
 
-
 This module will facilitate comparative methods and analyses in Chado.
 It mainly consists of the *grp* (group) table and supporting tables.
-
 
   Discussion](#Discussion)
   - [Use
@@ -18,7 +16,6 @@ It mainly consists of the *grp* (group) table and supporting tables.
 - [SQL
   Implementation](#SQL_Implementation)
 - [Resources](#Resources)
-
 
 ## Discussion
 

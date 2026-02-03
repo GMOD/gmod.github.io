@@ -3,7 +3,6 @@ title: "User%253ARichard Hayes"
 ---
 # User%253ARichard Hayes
 
-
 A placeholder until I get around to filling this with truly useful
 information...
 

@@ -3,7 +3,6 @@ title: "News/New GMOD Server"
 ---
 # News/New GMOD Server
 
-
 ## GMOD.org has a new home
 
 Due to a old server being retired, gmod.org has a new home. In the
@@ -14,10 +13,8 @@ what's going on.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/09/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

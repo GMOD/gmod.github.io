@@ -3,7 +3,6 @@ title: "CMap/tool data"
 ---
 # CMap/tool data
 
-
 This page stores the data that populates the [CMap](../CMap.1 "CMap")
 wiki page.
 
@@ -233,15 +232,10 @@ class="external text" rel="nofollow">Tutorial @ Gramene</a>
 
 \| mail =
 
-|                                                    |                                                                                   |                                                              |            |
-| -------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
-|                                                    | Mailing List Link                                                                 | Description                                                  | Archive(s) |
-| [CMap](../CMap.1 "CMap")                           | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"                  |
-| class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](../CMap.1 "CMap") development, installation problems, _etc._ | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html" |
+|                                                                                   | -------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |                                                    | Mailing List Link                                                                 | Description                                                  | Archive(s) | [CMap](../CMap.1 "CMap")                           | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"                  | class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](../CMap.1 "CMap") development, installation problems, _etc._ | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html" |
 
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
-class="external text" rel="nofollow">Sourceforge</a> |
-| | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
+class="external text" rel="nofollow">Sourceforge</a> | | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
 class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="../SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](../CMap.1 "CMap"). | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits"
 class="external text" rel="nofollow">Sourceforge</a> |

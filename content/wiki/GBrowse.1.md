@@ -29,39 +29,27 @@ Resources
 <table>
 <tbody>
 <tr>
-<td class="smwprops">Generic Genome Browser <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20full-20name/Ghttp://gmod.org/wiki/eneric-20Genome-20Browser"
-title="Special%253ASearchByProperty/Has-20full-20name/Generic-20Genome-20Browser">+</a></span></td>
+<td class="smwprops">Generic Genome Browser </td>
 <td></td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops">GFF3 <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20input-20format/GFF3"
-title="Special%253ASearchByProperty/Has-20input-20format/GFF3">+</a></span>
-and GFF2 <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20input-20format/GFF2"
-title="Special%253ASearchByProperty/Has-20input-20format/GFF2">+</a></span></td>
+<td class="smwprops">GFF3 
+and GFF2 </td>
 <td></td>
 </tr>
 <tr class="odd rowhttp://gmod.org/wiki/-odd">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_licence"
 title="Property:Has licence">Has licence</a></td>
-<td class="smwprops">GPL2 <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20licence/GPL2"
-title="Special%253ASearchByProperty/Has-20licence/GPL2">+</a></span> and
-Artistic License <span class="smwsearch"><a
-href="/wiki/Special:SearchByProphttp://gmod.org/wiki/erty/Has-20licence/Artistic-20License"
-title="Special%253ASearchByProperty/Has-20licence/Artistic-20License">+</a></span></td>
+<td class="smwprops">GPL2  and
+Artistic License </td>
 <td></td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_logo"
 title="Property:Has logo">Has logo</a></td>
-<td class="smwprops">GBrowseLogo.png <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20logo/GBrowseLogo.png"
-title="Special%253ASearchByProperty/Has-20logo/GBrowseLogo.png">+</a></span></td>
+<td class="smwprops">GBrowseLogo.png </td>
 <td></td>
 </tr>
 <tr class="odd row-odd">
@@ -69,72 +57,48 @@ title="Special%253ASearchByProperty/Has-20logo/GBrowseLogo.png">+</a></span></td
 href="/wiki/Property%253AHas_software_maturity_status"
 title="Property:Has software maturity status">Has software maturity
 status</a></td>
-<td class="smwprops">mature <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20softwarhttp://gmod.org/wiki/e-20maturity-20status/mature"
-title="Special%253ASearchByProperty/Has-20software-20maturity-20status/mature">+</a></span></td>
+<td class="smwprops">mature </td>
 <td></td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_support_status"
 title="Property:Has support status">Has support status</a></td>
-<td class="smwprops">inactive <span class="smwsearch"><a
-href="/wiki/Special:SearchByPhttp://gmod.org/wiki/roperty/Has-20support-20status/inactive"
-title="Special%253ASearchByProperty/Has-20support-20status/inactive">+</a></span></td>
+<td class="smwprops">inactive </td>
 <td></td>
 </tr>
 <tr class="odd rhttp://gmod.org/wiki/ow-odd">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_title"
 title="Property:Has title">Has title</a></td>
-<td class="smwprops">WormBase <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20title/WormBase"
-title="Special%253ASearchByProperty/Has-20title/WormBase">+</a></span>,
-FlyBase <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20title/FlyBase"
-title="Special%253ASearchByProperty/Has-20title/FlyBase">+</a></span> and
-HapMap <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20title/HapMap"
-title="Special%253ASearchByProperty/Has-20title/HapMap">+</a></span></td>
+<td class="smwprops">WormBase ,
+FlyBase  and
+HapMap </td>
 <td></td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="/wiki/Property%253AHas_topic"
 title="Property:Has topic">Has topic</a></td>
-<td class="smwprops"><strong>GBrowse</strong> <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20topic/GBrowse"
-title="Special%253ASearchByProperty/Has-20topic/GBrowse">+</a></span></td>
+<td class="smwprops"><strong>GBrowse</strong> </td>
 <td></td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="/wiki/Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
-<td class="smwprops">Yes <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Is-20open-20source/Yes"
-title="Special%253ASearchByProperty/Is-20open-20source/Yes">+</a></span></td>
+<td class="smwprops">Yes </td>
 <td></td>
 </tr>
 <tr class="even rohttp://gmod.org/wiki/w-even">
 <td class="smwpropname"><a href="/wiki/Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
-<td class="smwprops">download <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Link-20type/download"
-title="Special%253ASearchByProperty/Link-20type/download">+</a></span>,
-source code <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Link-20type/source-20code"
-title="Special%253ASearchByProperty/Link-20type/source-20code">+</a></span>,
-website <span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Link-20type/website"
-title="Special%253ASearchByProperty/Link-20type/website">+</a></span> and
-wild URL <span class="smwsearch"><a
-href="/wikihttp://gmod.org/Special%253ASearchByProperty/Link-20type/wild-20URL"
-title="Special%253ASearchByProperty/Link-20type/wild-20URL">+</a></span></td>
+<td class="smwprops">download ,
+source code ,
+website  and
+wild URL </td>
 <td></td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="/wiki/Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
-<td class="smwprops">1 January 2001 <span class="smwsearch"><a
-href="/wiki/Special:SearchByProperhttp://gmod.org/wiki/ty/Release-20date/1-20January-202001"
-title="Special%253ASearchByProperty/Release-20date/1-20January-202001">+</a></span></td>
+<td class="smwprops">1 January 2001 </td>
 <td></td>
 </tr>
 <tr class="even row-even">
@@ -143,17 +107,13 @@ href="/wiki/Property%253ATool_functionality_or_classification"
 title="Property:Tohttp://gmod.org/wiki/ol functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">#160;functionality or classification</td>
-<td class="smwprops">Genome Visualization &amp; Editing <span
-class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Visualization-20-26-20Editing"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Visualization-20-26-20Editing">+</a></span></td>
+<td class="smwprops">Genome Visualization &amp; Editing </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="/wiki/Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
 <td class="smwprops">Perl
-<a href="/wiki/Special%253ASearchByProperty/Written-20in-20language/Perl"
-title="Special%253ASearchByProperty/Written-20in-20language/Perl">+</a></td>
+</td>
 <td></td>
 </tr>
 <tr class="even row-even">
@@ -168,33 +128,22 @@ title="GBrowse">GBrowse#http://sourceforge.net/projects/gmod/files/Generic%20Gen
 <span class="smwsearch"><span>+</span></span>,</a> <a
 href="/wiki/GBrowse#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse"
 title="GB#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse">GBrowse#https://github.com/GMOD/GBrowse</a>
-<span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20subobject/GBrowse-23https%253A-2F-2Fgithub.com-2FGMOD-2FGBrowse"
-title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23https%253A-2F-2Fgithub.com-2FGMOD-2FGBrowse">+</a></span>,
+,
 <a href="/wiki/GBrowse#http:.2F.2Fgbrowse.org"
-title="GBrowse">GBrowse#http://gbrowse.org</a> <span
-class="smwsearch"><a
-href="/wikihttp://gmod.org/Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fgbrowse.org"
-title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fgbrowse.org">+</a></span>,
+title="GBrowse">GBrowse#http://gbrowse.org</a> ,
 <a
 href="/wiki/GBrowse#http:.2F.2Fwww.wormbase.org.2Ftools.2Fgenome.2Fgbrowse.2Fc_elegans.2F"
 title="GBrowse">GBrowse#http://www.wormbase.org/tools/genome/gb#http://www.wormbase.org/tools/genome/gbrowse/c_elegans/</a>
-<span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fwww.wormbase.org-2Ftools-2Fgenome-2Fgbrowse-2Fc_elegans-2F"
-title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http:-2F-2Fwww.wormbase.org-2Ftools-2Fgenome-2Fgbrowse-2Fc elegans-2F">+</a></span>,
+,
 <a
 href="/wiki/GBrowse#http:.2F.2Fflybase.org.2Fcgi-bin.2Fgbrowse.2Fdmel"
 title="GBrowse">GBrowse#http:#http:.2F.2Fflybase.org.2Fcgi-bin.2Fgbrowse.2Fdmel"
 title="GBrowse"&gt;GBrowse#http://flybase.org/cgi-bin/gbrowse/dmel</a>
-<span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fflybase.org-2Fcgi-2Dbin-2Fgbrowse-2Fdmel"
-title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fflybase.org-2Fcgi-2Dbin-2Fgbrowse-2Fdmel">+</a></span>
+
 and <a
 href="/wiki/GBrowse#http:.2F.2Fhapmap.ncbi.nlm.nih.gov.2Fcgi-perl.2Fgbrowse.2Fgbrowse"
 title="GBrowse">GBrowse#http://hapmap.ncbi.nlm.nih.gov/cgi-pe#http://hapmap.ncbi.nlm.nih.gov/cgi-perl/gbrowse/gbrowse</a>
-<span class="smwsearch"><a
-href="/wiki/Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fhapmap.ncbi.nlm.nih.gov-2Fcgi-2Dperl-2Fgbrowse-2Fgbrowse"
-title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fhapmap.ncbi.nlm.nih.gov-2Fcgi-2Dperl-2Fgbrowse-2Fgbrowse">+</a></span></td>
+</td>
 <td></td>
 </tr>
 </tbody>

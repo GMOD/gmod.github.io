@@ -3,7 +3,6 @@ title: "Calendar"
 ---
 # Calendar
 
-
   Galaxy Calendars</span>](#GMOD_and_Galaxy_Calendars)
 - [Other
   Calendars](#Other_Calendars)
@@ -17,7 +16,6 @@ title: "Calendar"
     Events](#2011_Events)
   - [2002
     through 2010 Events](#2002_through_2010_Events)
-
 
 ## GMOD and Galaxy Calendars
 

@@ -3,7 +3,6 @@ title: "User%253ASficklin"
 ---
 # User%253ASficklin
 
-
 # Stephen Ficklin
 
 Bioinformatics Research Associate for the
@@ -17,12 +16,10 @@ end for <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ## Tripal
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/150px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/225px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 2x"
 width="150" height="45" alt="Tripal" />](Tripal.1 "Tripal")
-
 
 [Tripal](Tripal.1 "Tripal") is a collection of Drupal modules under
 development at WSU, the University of Saskatchewan and CUGI that serve

@@ -3,14 +3,12 @@ title: "SOBA Tutorial 2012"
 ---
 # SOBA Tutorial 2012
 
-
 This [SOBA](SOBA.1 "SOBA") tutorial was taught as part of the [2012 GMOD
 Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School") and
 the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School").
 
   
-
 
   SOBA</span>](#About_SOBA)
 - [SOBA Web
@@ -20,7 +18,6 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School").
   - [Tables](#Tables)
 - [Charts](#Charts)
   - [Reports](#Reports)
-
 
 ## About SOBA
 
@@ -80,9 +77,7 @@ Navigate to the
 class="external text" rel="nofollow">SOBA Web Application</a> with any
 modern browser that has JavaScript enabled.
 
-
 SOBA feature lengths by chromosome
-
 
 We can constrain the features reported in other ways as well.
 
@@ -118,19 +113,7 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
     ncRNA            72 24089.3611111111
     three_prime_UTR  1385   569.969675090253
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [SOBA](Category%253ASOBA "Category%253ASOBA")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[SOBA Tutorial
-2012](Special%253ABrowse/SOBA-20Tutorial-202012 "Special%253ABrowse/SOBA-20Tutorial-202012")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/SOBA "Special%253ASearchByProperty/Has-20topic/SOBA")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA")  |

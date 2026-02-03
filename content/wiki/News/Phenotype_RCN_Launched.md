@@ -3,9 +3,7 @@ title: "News/Phenotype RCN Launched"
 ---
 # News/Phenotype RCN Launched
 
-
 ![begonia2h.jpg](http://www.nescent.org/images/rotate/begonia2h.jpg)
-
 
 We are pleased to inform you that NSF has recently funded the
 <a href="http://phenotypercn.org/" class="external text"
@@ -45,10 +43,8 @@ Paula, Andy, Eva, and Suzanna
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

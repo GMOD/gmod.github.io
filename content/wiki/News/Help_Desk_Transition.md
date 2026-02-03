@@ -3,12 +3,10 @@ title: "News/Help Desk Transition"
 ---
 # News/Help Desk Transition
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/170px-GMODHelpDeskLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/255px-GMODHelpDeskLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/340px-GMODHelpDeskLogo.jpg 2x"
 width="170" height="83" alt="Help Desk Transition" />](../GMOD_Help_Desk#Transition "Help Desk Transition")
-
 
 After three years at the [GMOD Help
 Desk](../GMOD_Help_Desk "GMOD Help Desk") I have decided to take a
@@ -51,10 +49,8 @@ month)
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

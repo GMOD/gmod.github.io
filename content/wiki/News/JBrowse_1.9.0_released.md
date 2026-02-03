@@ -3,7 +3,6 @@ title: "News/JBrowse 1.9.0 released"
 ---
 # News/JBrowse 1.9.0 released
 
-
 <a href="http://jbrowse.org/jbrowse-1-9-0" class="external text"
 rel="nofollow">JBrowse 1.9.0</a> is out today, with some great new
 features, and **lots** of smaller improvements and bug fixes.
@@ -43,10 +42,8 @@ April 2013 (EDT)
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

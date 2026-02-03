@@ -3,7 +3,6 @@ title: "News/Galaxy Workshops @ USC, June 23-24"
 ---
 # News/Galaxy Workshops @ USC, June 23-24
 
-
 <a href="../File:USC_logo.png" class="image"
 title="Galaxy Workshops at University of Southern California"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/USC_logo.png/100px-USC_logo.png"
@@ -17,7 +16,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/150px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/200px-GalaxyLogoBigger.png 2x"
 width="100" height="35"
 alt="Galaxy Workshops at University of Southern California" /></a>
-
 
 There will be two [Galaxy](../Galaxy.1 "Galaxy") workshops at the
 University of Southern California (USC) later this month. Both are
@@ -36,10 +34,7 @@ Health Science Campus, 1450 Biggy Street
 class="external text" rel="nofollow">Registration is free, but
 required.</a>
 
-|  |  |
-|----|----|
-| 9:15am-Noon | *Introduction to Galaxy including 30 min. Q&A Session* |
-| 2:00pm-5:00pm | *High‐throughput sequencing data analysis including 45 min. Q&A Session* |
+|----|----| 9:15am-Noon | *Introduction to Galaxy including 30 min. Q&A Session* | 2:00pm-5:00pm | *High‐throughput sequencing data analysis including 45 min. Q&A Session* |
 
 **Progress and Challenges in Developing a Web-based Platform for
 Computational Biomedical Research, Friday, June 24, 2011**
@@ -66,10 +61,8 @@ might be addressed using artificial intelligence methods and techniques.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/17*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

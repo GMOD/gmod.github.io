@@ -3,7 +3,6 @@ title: "News/2013 Meeting: Keynote Announcement"
 ---
 # News/2013 Meeting: Keynote Announcement
 
-
 We are extremely pleased to announce that the keynote speaker at the
 \[April 2013 GMOD Meeting\] will be Dr. Kentaro Yoshida of
 <a href="http://www.tsl.ac.uk/" class="external text" rel="nofollow">The
@@ -36,6 +35,5 @@ More information and media coverage of OADB:
   class="external text" rel="nofollow">Open Science versus Ash Dieback</a>
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/25*

@@ -3,7 +3,6 @@ title: "News/Announcing GMOD Malaysia 2014"
 ---
 # News/Announcing GMOD Malaysia 2014
 
-
 We are pleased to announce that GMOD will be running a three day
 training course in Kuala Lumpur, Malaysia, on 26-28 February 2014. The
 course will be run by experienced GMOD developers and tutors, and will
@@ -30,6 +29,5 @@ updates, or email the
 help desk</a> for more information.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/28*

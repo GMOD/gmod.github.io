@@ -3,7 +3,6 @@ title: "Cloud/Updating"
 ---
 # Cloud/Updating
 
-
 To update from one version of GMOD in the Cloud to another, follow these
 steps:
 

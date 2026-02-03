@@ -3,7 +3,6 @@ title: "User talk:Alexkalderimis"
 ---
 # User talk:Alexkalderimis
 
-
 # Mashing-up InterMine
 
 Alex' talk covered the following topics:

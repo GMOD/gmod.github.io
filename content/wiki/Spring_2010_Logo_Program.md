@@ -3,11 +3,9 @@ title: "Spring 2010 Logo Program"
 ---
 # Spring 2010 Logo Program
 
-
 <a href="http://www.linnbenton.edu/go/graphic-arts" rel="nofollow"
 title="Linn-Benton Community College">
 jess.hodgson@gmail.com
-
 
 </td>
 </tr>

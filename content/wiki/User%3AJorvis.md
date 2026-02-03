@@ -3,18 +3,15 @@ title: "User%253AJorvis"
 ---
 # User%253AJorvis
 
-
 **Joshua Orvis**
 
     Bioinformatics software engineer
     Institute for Genome Sciences
     Baltimore, MD
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/Jorvis.jpg" width="309" height="359"
 alt="Jorvis.jpg" />
-
 
 Joshua's undergraduate work was in microbiology at the University of
 Oklahoma and he's currently wrapping up a graduate degree in

@@ -3,14 +3,11 @@ title: "Category%253AHelp"
 ---
 # Category%253AHelp
 
-
 Pages that provide general help in the GMOD web site.
-
 
 ## Subcategories
 
 This category has the following 6 subcategories, out of 6 total.
-
 
 ### F
 
@@ -34,11 +31,9 @@ This category has the following 6 subcategories, out of 6 total.
 - [User
   Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
 
-
 ## Pages in category "Help"
 
 The following 17 pages are in this category, out of 17 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -113,8 +108,3 @@ title="Wiki linking style guide">Wiki linking style guide</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Categories](Category%253ACategories "Category%253ACategories")

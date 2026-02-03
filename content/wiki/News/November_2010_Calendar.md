@@ -3,10 +3,8 @@ title: "News/November 2010 Calendar"
 ---
 # News/November 2010 Calendar
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
 height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
-
 
 November has a number of deadlines and meetings:
 
@@ -48,10 +46,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "GMOD Components"
 ---
 # GMOD Components
 
-
 ## By Function
 
 GMOD is a collection of software applications (components) aimed at
@@ -115,8 +114,3 @@ Graphic</a></p>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")

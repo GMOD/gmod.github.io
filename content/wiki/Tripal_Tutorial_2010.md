@@ -3,15 +3,12 @@ title: "Tripal Tutorial 2010"
 ---
 # Tripal Tutorial 2010
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
-
 
 This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
 Ficklin](User%253ASficklin "User%253ASficklin") at the [2010 GMOD Summer
@@ -28,7 +25,6 @@ databases. This tutorial references (and complements) the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf"
 class="internal" title="TripalUsersGuideJan2010.pdf">Tripal User's
 Guide, January 2010 edition</a>.
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -143,7 +139,6 @@ Guide, January 2010 edition</a>.
     - [Create the tripal_pubs.module
       file](#Create_the_tripal_pubs.module_file)
 
-
 ## VMware
 
 This tutorial was taught using a VMware system image
@@ -160,13 +155,9 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |
-|---------|----------|------------------|
-| Shell   | gmod     | gmodamericas2010 |
-| MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
 
 ## Caveats
-
 
 **Important Note**
 
@@ -176,7 +167,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
   
 
@@ -710,10 +700,8 @@ Drupal requires an entry in the crontab to function:
    crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 Add this line to the crontab
 
@@ -916,10 +904,8 @@ Tripal also require an entry in the crontab to function:
    crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 Add this line to the crontab
 
@@ -1038,7 +1024,6 @@ with Tripal "extensions".
 
 Alter the blocks accordingly:
 
-
 Powered by Drupal → \<none\>
 
 Libraries → Sidebar left
@@ -1046,7 +1031,6 @@ Libraries → Sidebar left
 Organisms → Sidebar left
 
 Search form → Sidebar left
-
 
 Now, move the **Search form *and the*** *Organism'* block to the top of
 the list of the **Sidebar left** group by clicking and dragging the
@@ -1246,12 +1230,7 @@ Scroll down to the **Blast Parser Settings**.
 Select the **Uniprot/SwissProt** database and then set the regular
 expressions accordingly:
 
-|                  |                      |
-|------------------|----------------------|
-| Title:           | `ExPASy Swissprot`   |
-| Hit Name:        | .\*?\\(.\*?)\s.\*?\$ |
-| Hit Description: | .\*?\\.\*?\s(.\*)\$  |
-| Hit Accession:   | (.\*?)\\.\*?\s.\*?\$ |
+|------------------|----------------------| Title:           | `ExPASy Swissprot`   | Hit Name:        | .\*?\\(.\*?)\s.\*?\$ | Hit Description: | .\*?\\.\*?\s(.\*)\$  | Hit Accession:   | (.\*?)\\.\*?\s.\*?\$ |
 
 Now return to the feature page and view the blast results. They look
 better. But we want to make the results link out. Navigate to
@@ -1665,7 +1644,6 @@ finalized analysis API coming soon.
 Step 1  
 Add a publication to Chado
 
-
 Let's create a very simple module that will place publications on a
 feature page if an association exists in chado. We won't be creating a
 data entry method so we'll have to manually add an example publication.
@@ -1679,7 +1657,6 @@ Alternatively, log on using the command-line:
 ```
 
 Now execute the following SQL statements
-
 
 ``` de1
    INSERT INTO cv (NAME) VALUES ('pub_demo');
@@ -1709,7 +1686,6 @@ Now execute the following SQL statements
            (SELECT pub_id FROM pub WHERE uniquename = 'demo_pub'));
 ```
 
-
 These statements do the following:
 
 1.  Adds a db and cv. It's not real, but suits our purposes for the
@@ -1717,10 +1693,8 @@ These statements do the following:
 2.  Adds a publication and author
 3.  Associates the publication with the feature YAL061W.
 
-
 Step 2  
 create the module directory
-
 
 Change directories to our Drupal install directory where we installed
 the Tripal modules:
@@ -1736,7 +1710,6 @@ identical to our module name.
    mkdir tripal_pubs
    cd tripal_pubs
 ```
-
 
 #### Create tripal_pubs.info file
 
@@ -1769,7 +1742,6 @@ We do not have any functionality that needs to be performed when the
 module is installed, but we'll create a shell with proper drupal hooks
 so that in the future if we do want to add code to these modules we can.
 
-
 ``` de1
 <?php
    //$Id:
@@ -1796,7 +1768,6 @@ so that in the future if we do want to add code to these modules we can.
    }
 ```
 
-
 #### Create the tripal_pubs.module file
 
 Our module will be simple. It will add content to a feature page if
@@ -1805,7 +1776,6 @@ many important hooks for demonstration purposes.
 
 Cut and paste the following code into a new `tripal_pubs.module` file.
 We'll discuss each function...
-
 
 ``` de1
 <?php
@@ -2081,22 +2051,11 @@ We'll discuss each function...
    }
 ```
 
-
 **Note**... fix the \< div\> and \< h3\>tags in the function immediately
 above and remove the spaces. Mediawiki was giving problems with these so
 they should be fixed.
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Tripal](Category%253ATripal "Category%253ATripal")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Tripal Tutorial
-2010](Special%253ABrowse/Tripal-20Tutorial-202010 "Special%253ABrowse/Tripal-20Tutorial-202010")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |

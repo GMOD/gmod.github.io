@@ -3,10 +3,8 @@ title: "News/September 2010 Calendar"
 ---
 # News/September 2010 Calendar
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
 height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
-
 
 There's a lot going on in the next 5 weeks that is of interest to the
 GMOD community. September will be one of our busier months. Upcoming
@@ -57,10 +55,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

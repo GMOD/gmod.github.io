@@ -3,12 +3,10 @@ title: "GBrowse syn Configuration"
 ---
 # GBrowse syn Configuration
 
-
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
 <a href="Synteny" class="mw-redirect" title="Synteny">synteny</a> viewer
 based on [GBrowse](GBrowse.1 "GBrowse"). This page describes how to
 configure GBrowse_syn.
-
 
   Configuration File</span>](#Main_Configuration_File)
   - [Purpose](#Purpose)
@@ -19,7 +17,6 @@ configure GBrowse_syn.
   - [The
     species' configuration
     stanzas](#The_species.27_configuration_stanzas)
-
 
 # Main Configuration File
 
@@ -59,7 +56,6 @@ details of each setting, see below.
     examples = c_elegans X:1050000..1150000
                c_briggsae chrX:620000..670000
                c_elegans R193.2
-
 
     zoom levels = 5000 10000 25000 50000 100000 200000 400000
 
@@ -285,8 +281,3 @@ web colors or RGB hex codes (eg: '#FFFFFF').</td>
     [remanei_synteny]
     tracks    = CG
     color     = black
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")

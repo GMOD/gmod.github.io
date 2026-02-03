@@ -3,7 +3,6 @@ title: "Common Gene Page"
 ---
 # Common Gene Page
 
-
   Page Rationale</span>](#Common_Gene_Page_Rationale)
   - [Gene Page
     Sections](#Gene_Page_Sections)
@@ -23,7 +22,6 @@ title: "Common Gene Page"
     genome database use case](#Daphnia_genome_database_use_case)
   - [Pea aphid
     genome annotation case](#Pea_aphid_genome_annotation_case)
-
 
 # Common Gene Page Rationale
 

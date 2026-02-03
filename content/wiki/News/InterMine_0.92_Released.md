@@ -3,13 +3,11 @@ title: "News/InterMine 0.92 Released"
 ---
 # News/InterMine 0.92 Released
 
-
 <a href="http://www.intermine.org/wiki/ReleaseNotes" rel="nofollow"
 title="InterMine Release Notes"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/00/InterMine.png/180px-InterMine.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 2x"
 width="180" height="49" alt="InterMine Release Notes" /></a>
-
 
 We have released version 0.92 of [InterMine](../InterMine "InterMine").
 
@@ -34,10 +32,8 @@ The InterMine team.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

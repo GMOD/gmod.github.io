@@ -3,14 +3,12 @@ title: "News/InterMine Workshop 15-16 Nov"
 ---
 # News/InterMine Workshop 15-16 Nov
 
-
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine-developers.html"
 rel="nofollow" title="InterMine Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/170px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/255px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/340px-InterMineLogo.png 2x"
 width="170" height="21" alt="InterMine Workshop" /></a>
-
 
 There will be an <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine-developers.html"
@@ -55,10 +53,8 @@ accounts for saving user data.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

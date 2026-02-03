@@ -3,7 +3,6 @@ title: "FlyBase Chado"
 ---
 # FlyBase Chado
 
-
   Introduction](#Introduction)
 - [Public Chado
   Access](#Public_Chado_Access)
@@ -11,7 +10,6 @@ title: "FlyBase Chado"
   Implementation Documents](#Data_Implementation_Documents)
 - [Questions or
   comments](#Questions_or_comments)
-
 
   
 
@@ -47,8 +45,3 @@ Databases](Public_Chado_Databases "Public Chado Databases").
 Please <a href="http://flybase.org/cgi-bin/mailto-fbhelp.html"
 class="external text" rel="nofollow">Contact FlyBase</a> with your
 questions.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")

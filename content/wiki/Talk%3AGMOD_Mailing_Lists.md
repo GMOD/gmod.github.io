@@ -3,7 +3,6 @@ title: "Talk:GMOD Mailing Lists"
 ---
 # Talk:GMOD Mailing Lists
 
-
 Any 'users' list? Where is the 'general discussion' at? The question I
 would like to ask is, does the GMOD wiki site belong in the following
 list of 'BioWikis'?
@@ -38,8 +37,3 @@ Please send me an
 rel="nofollow">e-mail</a>.
 
 [Dave Clements](User%253AClements "User%253AClements"), 7 May 2008
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")

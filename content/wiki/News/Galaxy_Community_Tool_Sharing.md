@@ -3,12 +3,10 @@ title: "News/Galaxy Community Tool Sharing"
 ---
 # News/Galaxy Community Tool Sharing
 
-
 <a href="http://usegalaxy.org/community" rel="nofollow"
 title="Galaxy Community Tool Sharing"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png" width="26"
 height="25" alt="Galaxy Community Tool Sharing" /></a>
-
 
 We have introduced a new
 <a href="http://usegalaxy.org/community" class="external text"
@@ -27,10 +25,8 @@ Greg Von Kuster
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

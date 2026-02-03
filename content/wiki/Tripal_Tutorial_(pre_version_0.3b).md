@@ -3,15 +3,12 @@ title: "Tripal Tutorial (pre version 0.3b)"
 ---
 # Tripal Tutorial (pre version 0.3b)
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
-
 
 This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
 Ficklin](User%253ASficklin "User%253ASficklin") at the [2011 GMOD Spring
@@ -29,7 +26,6 @@ how to get this AMI.
 **The most recent version of this tutorial is available at the
 <a href="Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.**
-
 
   to Tripal</span>](#Introduction_to_Tripal)
   - [What is
@@ -178,7 +174,6 @@ title="Tripal Tutorial">Tripal Tutorial</a> page.**
   Data Views](#Creating_new_Data_Views)
 - [Misc](#Misc)
 
-
 ## Introduction to Tripal
 
 **Note:** This tutorial was given using a pre-release version of Tripal
@@ -261,7 +256,6 @@ The session for Chado was presented yesterday
 for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
-
 - Audit - for database audits
 - Companalysis - for data from computational analysis
 - Contact - for people, groups, and organizations
@@ -280,7 +274,6 @@ modular structure:
 - Sequence - for sequences and sequence features
 - Stock - for specimens and biological collections
 - WWW -
-
 
 Tripal is also modular along these same designations.
 
@@ -347,21 +340,13 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL | Tripal Version |
-|----|----|----|
-| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
-rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | SVN version |
-| Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
-rel="nofollow">http://www.vaccinium.org</a> | v0.2 |
-| Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
-rel="nofollow">http://www.gabcsfl.org</a> | v0.2 |
-| Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
-rel="nofollow">http://www.cacaogenomedb.org</a> | v0.2 |
-| Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
-rel="nofollow">http://www.fagaceae.org</a> | v0.2 |
-| Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
-rel="nofollow">http://www.citrusgenomedb.org</a> | v0.2 |
-| Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
+| Site Name | URL | Tripal Version |----|----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | SVN version | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
+rel="nofollow">http://www.vaccinium.org</a> | v0.2 | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
+rel="nofollow">http://www.gabcsfl.org</a> | v0.2 | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
+rel="nofollow">http://www.cacaogenomedb.org</a> | v0.2 | Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
+rel="nofollow">http://www.fagaceae.org</a> | v0.2 | Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
+rel="nofollow">http://www.citrusgenomedb.org</a> | v0.2 | Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
 rel="nofollow">http://www.marinegenomics.org</a> | pre v0.1 |
 
 ### Resources
@@ -517,7 +502,6 @@ reference.
 
 ### Software Used
 
-
 database. It is not required for successful operation of Tripal but is
 very useful.
 
@@ -590,13 +574,7 @@ sudo /etc/init.d/apache2 restart
 For reference, these are the file system directories where important
 components of this tutorial are located
 
-|                         |                                     |
-|-------------------------|-------------------------------------|
-| Web configuration files | /etc/apache2                        |
-| PHP configuration files | /etc/php5/apache2 and /etc/php5/cli |
-| Web document root       | /var/www                            |
-| Home directory          | /home/gmod                          |
-| Tutorial files          | /home/gmod/Tripal                   |
+|-------------------------|-------------------------------------| Web configuration files | /etc/apache2                        | PHP configuration files | /etc/php5/apache2 and /etc/php5/cli | Web document root       | /var/www                            | Home directory          | /home/gmod                          | Tutorial files          | /home/gmod/Tripal                   |
 
   
 
@@ -866,10 +844,8 @@ cron launch the crontab editor:
   sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -1590,10 +1566,8 @@ need to add a second cron entry:
    sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -2349,7 +2323,6 @@ We will need to use the advanced options to associate relationships and
 a database reference with these peptides. Here is an example of a
 definition line in the FASTA file:
 
-
 ` `
 
 \>FBpp0112427 type=protein;
@@ -2358,7 +2331,6 @@ ID=FBpp0112427; name=CG12567-PA; parent=FBgn0039958,FBtr0113704;
 dbxref=FlyBase_Annotation_IDs:CG12567-PA,FlyBase:FBpp0112427,REFSEQ:NP_001015384,GB_protein:EAA46065,FlyMine:FBpp0112427,modMine:FBpp0112427;
 MD5=246ea191b614901ccb7ba87d545d6308; length=349; release=r5.34;
 species=Dmel;
-
 
   
 We will use regular expressions to pull out the necessary information.
@@ -2856,19 +2828,7 @@ height="495" alt="800px-TripalGBrowseImg.png" />
 - how to remove the organism menu
 - permissions
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [Tripal](Category%253ATripal "Category%253ATripal")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Tripal Tutorial (pre version
-0.3b)](Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b) "Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b)")</span>"</span>
+"<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b)")</span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |

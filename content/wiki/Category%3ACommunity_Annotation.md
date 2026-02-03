@@ -3,11 +3,9 @@ title: "Category%253ACommunity Annotation"
 ---
 # Category%253ACommunity Annotation
 
-
 ## Pages in category "Community Annotation"
 
 The following 9 pages are in this category, out of 9 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -60,7 +58,6 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "Community Annotation"
 
 This category contains only the following file.
@@ -82,13 +79,4 @@ This category contains only the following file.
   
 
   [CommunityAnnotationNov...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf "File:CommunityAnnotationNov2007.pdf")  
-  2.86 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
+  2.86 MB

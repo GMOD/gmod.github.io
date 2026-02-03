@@ -3,7 +3,6 @@ title: "GMOD REST Hackathon"
 ---
 # GMOD REST Hackathon
 
-
 <table
 style="font-size: 160%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -36,13 +35,11 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 
   
 
-
   Committee</span>](#Organizing_Committee)
 - [Attendees](#Attendees)
 - [Topics](#Topics)
 - [Dates](#Dates)
 - [Schedule](#Schedule)
-
 
 The goal of this hackathon is to produce a working prototype of the
 <a href="GMOD_REST_API" class="mw-redirect" title="GMOD REST API">GMOD

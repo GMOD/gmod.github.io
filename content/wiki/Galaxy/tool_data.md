@@ -3,7 +3,6 @@ title: "Galaxy/tool data"
 ---
 # Galaxy/tool data
 
-
 \| name = Galaxy \| full_name = \| status = mature \|
 dev = active \| support = active \| type = Genome Visualization and
 Editing, Workflow Management, Tool Integration, Analysis \| platform =
@@ -34,7 +33,6 @@ rel="nofollow">downloading the Galaxy application</a> and customizing it
 to meet particular needs.
 
 ### 2014 Galaxy Community Conference
-
 
 <a href="http://wiki.galaxyproject.org/Events/GCC2014" rel="nofollow"
 title="2014 Galaxy Community Conference">

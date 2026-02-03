@@ -3,14 +3,11 @@ title: "Category%253APhenotypes"
 ---
 # Category%253APhenotypes
 
-
 Articles related to phenotypes.
-
 
 ## Pages in category "Phenotypes"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### C
 
@@ -28,7 +25,6 @@ The following 5 pages are in this category, out of 5 total.
 ### P
 
 - [Phenote](Phenote "Phenote")
-
 
 ## Media in category "Phenotypes"
 
@@ -144,13 +140,4 @@ The following 5 files are in this category, out of 5 total.
   
 
   [Mod-face-07jan-SGN.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f4/Mod-face-07jan-SGN.pdf "File:Mod-face-07jan-SGN.pdf")  
-  2.17 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Biology](Category%253ABiology "Category%253ABiology")
+  2.17 MB

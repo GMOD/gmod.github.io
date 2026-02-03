@@ -3,16 +3,13 @@ title: "Category%253AMiddleware"
 ---
 # Category%253AMiddleware
 
-
 Middleware is about connecting different components so they can talk
 together. You can think of it as project plumbing. Like plumbing, it is
 hard to do well, and people take it for granted until it does not work.
 
-
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### M
 
@@ -20,11 +17,9 @@ This category has the following 2 subcategories, out of 2 total.
   Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")
 - [Modware](Category%253AModware "Category%253AModware")
 
-
 ## Pages in category "Middleware"
 
 The following 11 pages are in this category, out of 11 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -86,8 +81,3 @@ title="January 2009 GMOD Meeting">January 2009 GMOD Meeting</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")

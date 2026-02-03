@@ -3,7 +3,6 @@ title: "News/JBrowse2 v1.1.0 Released"
 ---
 # News/JBrowse2 v1.1.0 Released
 
-
   to announce a new release of JBrowse
   Web!</span>](#We.27re_pleased_to_announce_a_new_release_of_JBrowse_Web.21)
   - [Changed
@@ -29,7 +28,6 @@ title: "News/JBrowse2 v1.1.0 Released"
     - [🏠
       Internal](#.F0.9F.8F.A0_Internal)
     - [Committers: 6](#Committers:_6)
-
 
 ## We're pleased to announce a new release of JBrowse Web!
 
@@ -171,10 +169,8 @@ core
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2021/03/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

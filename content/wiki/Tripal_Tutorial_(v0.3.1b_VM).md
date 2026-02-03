@@ -3,7 +3,6 @@ title: "Tripal Tutorial (v0.3.1b VM)"
 ---
 # Tripal Tutorial (v0.3.1b VM)
 
-
 This tutorial is intended to be used with the Virtual Machine Image that
 comes pre-installed with Drupal, Chado and Tripal, as well as several
 dependencies and Drupal modules.

@@ -3,12 +3,10 @@ title: "News/MaizeGDB: Choosing GBrowse"
 ---
 # News/MaizeGDB: Choosing GBrowse
 
-
 <a href="http://database.oxfordjournals.org/cgi/content/abstract/baq007"
 rel="nofollow" title="Database Paper"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/MaizeGDB.gif" width="265" height="60"
 alt="Database Paper" /></a>
-
 
 A paper,
 "<a href="http://database.oxfordjournals.org/cgi/content/abstract/baq007"
@@ -29,13 +27,11 @@ extension that uses maize's extensive physical and genetic mapping data
 to localize genomic regions in GBrowse. This is a great paper for anyone
 considering which genome browser to use.
 
-
 <a href="http://database.oxfordjournals.org/" rel="nofollow"
 title="Database Journal"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/265px-DatabaseJournal.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/398px-DatabaseJournal.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3d/DatabaseJournal.jpg/530px-DatabaseJournal.jpg.png 2x"
 width="265" height="32" alt="Database Journal" /></a>
-
 
 I'd also like to highlight the journal the paper appears in:
 *<a href="http://database.oxfordjournals.org/" class="external text"
@@ -64,10 +60,8 @@ making it an even better match for GMOD.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/19*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "Web-apollo-meeting-2011-1-13"
 ---
 # Web-apollo-meeting-2011-1-13
 
-
 Attendees: Gregg, Nomi, Chris C., Ed, Jay
 
 ## Agenda items
@@ -22,8 +21,3 @@ Attendees: Gregg, Nomi, Chris C., Ed, Jay
   
 
 ## Status reports
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Webapollo-minutes](Category%253AWebapollo-minutes "Category%253AWebapollo-minutes")

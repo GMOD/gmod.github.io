@@ -3,7 +3,6 @@ title: "Java Testing - by Jon Slenk"
 ---
 # Java Testing - by Jon Slenk
 
-
 ### Abstract
 
 Good software cannot be written in the absence of testing. A range of

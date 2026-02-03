@@ -3,11 +3,9 @@ title: "CMap Version 2 Design"
 ---
 # CMap Version 2 Design
 
-
 The hopes and dreams for a new generation....
 
 Up to [CMap](CMap.1 "CMap").
-
 
   Interface</span>](#User_Interface)
 - [Schema](#Schema)
@@ -15,7 +13,6 @@ Up to [CMap](CMap.1 "CMap").
 - [Data
   Loading](#Data_Loading)
 - [DAS](#DAS)
-
 
 # User Interface
 

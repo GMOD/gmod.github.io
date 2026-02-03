@@ -3,13 +3,11 @@ title: "News/Mediawiki Software Update"
 ---
 # News/Mediawiki Software Update
 
-
 <a href="../File:320px-OpenID_logo.svg.png" class="image"
 title="OpenID"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/96/320px-OpenID_logo.svg.png/200px-320px-OpenID_logo.svg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/96/320px-OpenID_logo.svg.png/300px-320px-OpenID_logo.svg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/320px-OpenID_logo.svg.png 2x"
 width="200" height="75" alt="OpenID" /></a>
-
 
 On Tuesday, May 10, the software that powers gmod.org, MediaWiki, will
 be undergoing a software upgrade and enhancement. We will be moving away
@@ -35,10 +33,8 @@ and hopefully will not last very long at all (less than an hour).
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "CMap FAQ"
 ---
 # CMap FAQ
 
-
   FAQ</span>](#About_this_FAQ)
   - [What is
     this FAQ?](#What_is_this_FAQ.3F)
@@ -28,7 +27,6 @@ title: "CMap FAQ"
     password protect some data sources while leaving other data sources
     open in the same CMap
     installation?](#How_can_I_password_protect_some_data_sources_while_leaving_other_data_sources_open_in_the_same_CMap_installation.3F)
-
 
 ## About this FAQ
 
@@ -132,7 +130,7 @@ Here is an example of how to do this:
 
          # Cycle through all available attributes.
          # get_attributes returns an arrayref.
-         foreach my $conf_attr ( @{ $conf_attributes || [] } ) {
+         foreach my $conf_attr ( @{ $conf_attributes | [] } ) {
 
              # Look for the attribute that we are interested in
              if ( $conf_attr->{'attribute_name'} eq 'Description' ) {

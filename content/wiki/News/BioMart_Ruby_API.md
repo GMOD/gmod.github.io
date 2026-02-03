@@ -3,13 +3,11 @@ title: "News/BioMart Ruby API"
 ---
 # News/BioMart Ruby API
 
-
 <a href="http://github.com/dazoakley/biomart/" rel="nofollow"
 title="BioMart Ruby API"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/200px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
 width="200" height="79" alt="BioMart Ruby API" /></a>
-
 
 Daz Oakley of the Wellcome Trust Sanger Institute has released a
 <a href="http://github.com/dazoakley/biomart/" class="external text"
@@ -42,10 +40,8 @@ rel="nofollow">WebLab</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

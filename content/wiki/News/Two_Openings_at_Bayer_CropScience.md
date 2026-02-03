@@ -3,12 +3,10 @@ title: "News/Two Openings at Bayer CropScience"
 ---
 # News/Two Openings at Bayer CropScience
 
-
 <a href="http://www.mybayerjob.com/en" rel="nofollow"
 title="Open positions at Bayer CropScience"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/Logo_BayerCropScience.gif" width="241"
 height="43" alt="Open positions at Bayer CropScience" /></a>
-
 
 **1. BioAnalyst Scientist:**
 
@@ -56,10 +54,8 @@ rel="nofollow">Laurent Viau</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/06*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

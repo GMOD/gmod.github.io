@@ -3,7 +3,6 @@ title: "News/GMODTools 1.1 Released"
 ---
 # News/GMODTools 1.1 Released
 
-
 Version 1.1 of [GMODTools](../GMODTools "GMODTools") has been released.
 Version 1.1 adds these features and corrections:
 
@@ -25,10 +24,8 @@ from Chado databases.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/10/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

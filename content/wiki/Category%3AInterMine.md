@@ -3,14 +3,11 @@ title: "Category%253AInterMine"
 ---
 # Category%253AInterMine
 
-
 Pages related to [InterMine](InterMine "InterMine"), a database tool.
-
 
 ## Pages in category "InterMine"
 
 The following 10 pages are in this category, out of 10 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -68,7 +65,6 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "InterMine"
 
@@ -280,13 +276,4 @@ The following 9 files are in this category, out of 9 total.
 
   [Wheat3bMinePoster
   PAG2...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/Wheat3bMinePoster_PAG2015.pdf "File:Wheat3bMinePoster PAG2015.pdf")  
-  894 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
+  894 KB

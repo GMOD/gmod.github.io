@@ -3,13 +3,11 @@ title: "News/GMOD Evo Hackathon Open Call"
 ---
 # News/GMOD Evo Hackathon Open Call
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/150px-EvoHackathonLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/225px-EvoHackathonLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/300px-EvoHackathonLogo.png 2x"
 width="150" height="150"
 alt="GMOD Evo Hackathon Open Call for Participation" />](../GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call for Participation")
-
 
 We are [seeking
 participants](../GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call")
@@ -48,10 +46,8 @@ McKay](../User%253AMckays "User%253AMckays")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

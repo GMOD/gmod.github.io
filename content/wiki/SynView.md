@@ -3,20 +3,16 @@ title: "SynView"
 ---
 # SynView
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/SynView_Icon.gif" width="173" height="66"
 alt="SynView Icon.gif" />
 
-
   
-
 
   Documentation](#Documentation)
   - [Publications](#Publications)
   - [Presentations](#Presentations)
   - [README](#README)
-
 
 Jessica Kissinger's group at University of Georgia have contributed a
 very sophisticated [GBrowse](GBrowse.1 "GBrowse") configuration file

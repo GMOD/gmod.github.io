@@ -3,20 +3,17 @@ title: "News/GCC2013 Training Day Topics Vote"
 ---
 # News/GCC2013 Training Day Topics Vote
 
-
 <a href="http://wiki.galaxyproject.org/Events/GCC2013/TrainingDay"
 rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/180px-GCC2013TrainingDayLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/270px-GCC2013TrainingDayLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/db/GCC2013TrainingDayLogo.png/360px-GCC2013TrainingDayLogo.png 2x"
 width="180" height="92" alt="GCC2013TrainingDayLogo.png" /></a>
 
-
 <a href="http://wiki.galaxyproject.org/Events/GCC2013"
 rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/170px-GCC2013Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/255px-GCC2013Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/GCC2013Logo.png/340px-GCC2013Logo.png 2x"
 width="170" height="113" alt="GCC2013Logo.png" /></a>
-
 
 The <a href="http://galaxyproject.org/GCC2013" class="external text"
 rel="nofollow">2013 Galaxy Community Conference (GCC2013)</a> will start
@@ -61,19 +58,14 @@ Thanks,
 
 [Dave Clements](../User%253AClements "User%253AClements")
 
-|  |
-|----|
-| \* You don't have to vote for exactly three topics. You can vote for fewer topics and have each vote count for more, or you can vote for more topics and have each vote count for less. |
+|----| \* You don't have to vote for exactly three topics. You can vote for fewer topics and have each vote count for more, or you can vote for more topics and have each vote count for less. |
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/28*
-
 
 Category%253AGalaxy
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

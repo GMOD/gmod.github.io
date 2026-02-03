@@ -3,7 +3,6 @@ title: "News/MAKER 2.0, AGS Workshop"
 ---
 # News/MAKER 2.0, AGS Workshop
 
-
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -30,7 +29,6 @@ width="100" height="108" alt="Arthropod Genomics Symposium" /></a>
 </tr>
 </tbody>
 </table>
-
 
 [MAKER](../MAKER.1 "MAKER"), the easy to use genome annotation pipeline,
 is now version 2.0.
@@ -71,10 +69,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

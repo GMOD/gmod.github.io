@@ -3,10 +3,8 @@ title: "Talk%253AGBrowse 1 Configuration HOWTO"
 ---
 # Talk%253AGBrowse 1 Configuration HOWTO
 
-
 (Redirected from [Talk%253AGBrowse Configuration
 HOWTO](/wiki/Talk%253AGBrowse_Configuration_HOWTO)
-
 
 Hello Reg. GFF file format: I was wondering if the group/region field
 has to be (now or in the future) of the format

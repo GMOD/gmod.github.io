@@ -3,9 +3,7 @@ title: "Zheng's installation notes"
 ---
 # Zheng's installation notes
 
-
 Back to [Chado New Users](Chado_New_Users "Chado New Users")
-
 
   information</span>](#general_information)
 - [before you
@@ -30,7 +28,6 @@ Back to [Chado New Users](Chado_New_Users "Chado New Users")
 - [install
   gbrowse to work with
   chado](#install_gbrowse_to_work_with_chado)
-
 
 ## general information
 
@@ -293,9 +290,3 @@ it is a little bit surprise to me that I need
     grant select on analysisfeature to apache;
 
 since no analysisfeature exists in dataset (?)
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [User
-  Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")

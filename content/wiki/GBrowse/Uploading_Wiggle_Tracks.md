@@ -3,7 +3,6 @@ title: "GBrowse/Uploading Wiggle Tracks"
 ---
 # GBrowse/Uploading Wiggle Tracks
 
-
   and Quantitative Data</span>](#Dense_Feature_and_Quantitative_Data)
 - [Wiggle
   tracks](#Wiggle_tracks)
@@ -42,9 +41,7 @@ title: "GBrowse/Uploading Wiggle Tracks"
 - [Email
   Threads](#Email_Threads)
 
-
 ## Dense Feature and Quantitative Data
-
 
 <a href="../File:Fly_12pt_spen.png" class="image"></a>
 

@@ -3,7 +3,6 @@ title: "Mimosa"
 ---
 # Mimosa
 
-
   Miniature Model Organism Sequence
   Aligner</span>](#Mimosa_-_Miniature_Model_Organism_Sequence_Aligner)
   - [Integration With GMOD
@@ -14,7 +13,6 @@ title: "Mimosa"
     List](#Mailing_List)
   - [Bug
     Tracker](#Bug_Tracker)
-
 
 ## Mimosa - Miniature Model Organism Sequence Aligner
 

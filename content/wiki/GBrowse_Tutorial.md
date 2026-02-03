@@ -3,7 +3,6 @@ title: "GBrowse Tutorial"
 ---
 # GBrowse Tutorial
 
-
 There are several [GBrowse](GBrowse.1 "GBrowse") tutorials:
 
 [GBrowse tutorial from 2013 GMOD Summer School](GBrowse_Tutorial_2012 "GBrowse Tutorial 2012")  

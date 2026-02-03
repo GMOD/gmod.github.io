@@ -3,10 +3,8 @@ title: "Drupal2wiki"
 ---
 # Drupal2wiki
 
-
 Perl script written by Eric Just to
 copy Drupal nodes to a MediaWiki:
-
 
 ``` de1
 #!/usr/bin/perl -w
@@ -113,8 +111,3 @@ foreach my $url_to_convert (@urls) {
     }
 }
 ```
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")

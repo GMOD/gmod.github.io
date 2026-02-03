@@ -3,7 +3,6 @@ title: "GBrowse 1.x"
 ---
 # GBrowse 1.x
 
-
 This page contains documentation specific to GBrowse 1.x. We recommend
 all users upgrade to [GBrowse 2.x](GBrowse.1 "GBrowse") to take
 advantage of all the features GBrowse offers.
@@ -18,14 +17,12 @@ database only and which must support legacy browsers.
 
   
 
-
   Downloads](#Downloads)
   - [GitHub](#GitHub)
   - [Net-based
     Installer Script](#Net-based_Installer_Script)
 - [Installation](#Installation)
 - [Configuration](#Configuration)
-
 
 ## Downloads
 

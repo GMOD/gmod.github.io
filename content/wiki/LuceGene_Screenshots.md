@@ -3,7 +3,6 @@ title: "LuceGene Screenshots"
 ---
 # LuceGene Screenshots
 
-
   Screenshots](#Screenshots)
   - [Index](#Index)
   - [Basic
@@ -16,7 +15,6 @@ title: "LuceGene Screenshots"
     Sequences](#Results:_Sequences)
   - [Data
     Library](#Data_Library)
-
 
 ## Screenshots
 
@@ -55,8 +53,3 @@ height="461" alt="LuceGeneDemo Fasta.png" />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/LuceGeneDemo_library.png" width="516"
 height="343" alt="LuceGeneDemo library.png" />
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [LuceGene](Category%253ALuceGene "Category%253ALuceGene")

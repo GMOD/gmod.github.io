@@ -3,10 +3,8 @@ title: "News/SynBrowse Developers Needed"
 ---
 # News/SynBrowse Developers Needed
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/SynBrowse_logoNoText.png"
 width="200" height="43" alt="SynBrowse" />](../SynBrowse "SynBrowse")
-
 
 The [SynBrowse](../SynBrowse "SynBrowse")
 <a href="../Synteny" class="mw-redirect" title="Synteny">synteny</a>
@@ -36,10 +34,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

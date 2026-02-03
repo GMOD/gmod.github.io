@@ -3,15 +3,12 @@ title: "Category%253AWindows"
 ---
 # Category%253AWindows
 
-
 Pages related to running GMOD components on Microsoft Windows [operating
 systems](Glossary#Operating_System "Glossary").
-
 
 ## Pages in category "Windows"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### C
 
@@ -22,7 +19,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [GBrowse Cygwin HOWTO](GBrowse_Cygwin_HOWTO "GBrowse Cygwin HOWTO")
 - [GBrowse Windows HOWTO](GBrowse_Windows_HOWTO "GBrowse Windows HOWTO")
-
 
 ## Media in category "Windows"
 
@@ -45,13 +41,4 @@ This category contains only the following file.
   
 
   [WindowsLogoSmall.jpg](File:WindowsLogoSmall.jpg "File:WindowsLogoSmall.jpg")  
-  1 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  1 KB

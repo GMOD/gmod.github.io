@@ -3,7 +3,6 @@ title: "News/5 October 2012 Wiki Upgrade"
 ---
 # News/5 October 2012 Wiki Upgrade
 
-
 The GMOD wiki will be going offline on October 5th at 5 PM PST to update
 the software to the most recent release of Mediawiki. Any wiki edits
 performed during the upgrade will be lost, so please finish your wiki
@@ -15,10 +14,8 @@ Thanks!
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/09/26*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,11 +3,9 @@ title: "Category%253AGFF3"
 ---
 # Category%253AGFF3
 
-
 ## Pages in category "GFF3"
 
 The following 8 pages are in this category, out of 8 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -45,6 +43,5 @@ title="GMOD Online Training 2014/GFF3 Tutorial">GMOD Online Training
 </tr>
 </tbody>
 </table>
-
 
 Retrieved from "[http://gmod.org/wiki/Category%253AGFF3](/wiki/Category%253AGFF3)"

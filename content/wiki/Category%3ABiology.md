@@ -3,7 +3,6 @@ title: "Category%253ABiology"
 ---
 # Category%253ABiology
 
-
 Categories and pages that are mainly about how to use GMOD to address
 questions in biology. This category complements the
 [Computing](Category%253AComputing "Category%253AComputing") category. In some
@@ -11,11 +10,9 @@ sense every page in this web site is about biology and computing.
 However, these two categories identify pages that are clearly about one
 or the other.
 
-
 ## Subcategories
 
 This category has the following 7 subcategories, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -58,17 +55,10 @@ title="Category%253APhenotypes">Phenotypes</a></li>
 </tbody>
 </table>
 
-
 ## Pages in category "Biology"
 
 This category contains only the following page.
 
-
 ### O
 
 - [Overview](Overview "Overview")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Categories](Category%253ACategories "Category%253ACategories")

@@ -3,7 +3,6 @@ title: "News/Biocuration Conference, April"
 ---
 # News/Biocuration Conference, April
 
-
 <a
 href="http://projects.eml.org/sdbv/events/BiocurationMeeting/index.html"
 rel="nofollow" title="3rd International Biocuration Conference"><img
@@ -11,7 +10,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/28/2009BiocurationLogo.jpg/600px-2009BiocurationLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/28/2009BiocurationLogo.jpg/800px-2009BiocurationLogo.jpg 2x"
 width="400" height="87"
 alt="3rd International Biocuration Conference" /></a>
-
 
 The <a
 href="http://projects.eml.org/sdbv/events/BiocurationMeeting/index.html"
@@ -35,10 +33,8 @@ days** (on 20 February, 2009).
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "News/Bioinformaticians @ FDA"
 ---
 # News/Bioinformaticians @ FDA
 
-
 A conceptually new computational cloud paradigm of High performance
 Integrated Virtual Environment (HIVE) is being developed at Food and
 Drug Administration (FDA) Center for Biologics Evaluation and Research
@@ -62,10 +61,8 @@ rel="nofollow">Vahan Simonyan</a> to apply, or if you have questions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

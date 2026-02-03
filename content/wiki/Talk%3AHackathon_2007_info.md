@@ -3,7 +3,6 @@ title: "Talk:Hackathon 2007 info"
 ---
 # Talk:Hackathon 2007 info
 
-
   TableEdit/Wiki hackathon
   projects</span>](#Possible_TableEdit.2FWiki_hackathon_projects)
   - [TableEdit
@@ -15,7 +14,6 @@ title: "Talk:Hackathon 2007 info"
       pages](#Improving_Category_pages)
     - [Wiki
       for GMOD installer?](#Wiki_for_GMOD_installer.3F)
-
 
 ## Possible [TableEdit](TableEdit.1 "TableEdit")/Wiki hackathon projects
 
@@ -67,8 +65,3 @@ appliance that already has MW installed._
 [Scott](User%253AScott "User%253AScott") 10:11, 27 July 2007 (EDT)
 
 - Could this include an update installer?
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")

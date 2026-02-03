@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Configuration/DAS"
 ---
 # Talk%253AGBrowse Configuration/DAS
 
-
 Test transclusion
 
   
@@ -47,7 +46,6 @@ described earlier. The following short script will return a list of the
 feature types known to the remote DAS server. You can use the output of
 this script as the basis for the tracks to configure.
 
-
 ``` de1
  #!/usr/bin/perl
  
@@ -57,7 +55,6 @@ this script as the basis for the tracks to configure.
  my $db = Bio::Das->new('http://localhost/cgi-bin/das'=>'dicty');
  print join "\n",$db->types;
 ```
-
 
 Limitations:
 

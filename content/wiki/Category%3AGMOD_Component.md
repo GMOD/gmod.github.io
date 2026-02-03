@@ -3,14 +3,11 @@ title: "Category%253AGMOD Component"
 ---
 # Category%253AGMOD Component
 
-
 [Tool data](Form%253ATool_data "Form:Tool data")
-
 
 ## Pages in category "GMOD Component"
 
 The following 30 pages are in this category, out of 30 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -110,11 +107,7 @@ title="Using the topoview Glyph">Using the topoview Glyph</a></li>
 </tbody>
 </table>
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD
-Component](Special%253ABrowse/Category%253AGMOD-20Component "Special%253ABrowse/Category%253AGMOD-20Component")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has default form](Property%253AHas_default_form "Property:Has default form")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [Tool data](Form%253ATool_data "Form:Tool data") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20default-20form/Tool-20data "Special%253ASearchByProperty/Has-20default-20form/Tool-20data")</span> |
+|----|----| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has default form](Property%253AHas_default_form "Property:Has default form")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [Tool data](Form%253ATool_data "Form:Tool data")  |

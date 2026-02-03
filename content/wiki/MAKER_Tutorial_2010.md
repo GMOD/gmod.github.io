@@ -3,9 +3,7 @@ title: "MAKER Tutorial 2010"
 ---
 # MAKER Tutorial 2010
 
-
   
-
 
   
 To use this feature, you must have MPICH2 installed with the the
@@ -292,17 +290,7 @@ Scripts:
   specified by the user. Useful for breaking up MAKER jobs.
     split_fasta [count] <input_fasta>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[MAKER Tutorial
-2010](Special%253ABrowse/MAKER-20Tutorial-202010 "Special%253ABrowse/MAKER-20Tutorial-202010")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/MAKER "Special%253ASearchByProperty/Has-20topic/MAKER")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER")  |

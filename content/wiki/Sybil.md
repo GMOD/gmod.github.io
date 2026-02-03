@@ -3,17 +3,13 @@ title: "Sybil"
 ---
 # Sybil
 
-
 Status
-
 
 - **Mature** release
 - **Active** development
 - **Active** support
 
-
 Resources
-
 
 - <a href="http://sybil.sourceforge.net/" class="external text"
   rel="nofollow">Home Page</a>
@@ -27,7 +23,6 @@ Resources
   class="external text" rel="nofollow">Mailing List</a>
 - <a href="../extras/2008GMODCommunitySurvey.html#Sybil"
   class="external text" rel="nofollow">2008 Survey</a>
-
 
 Sybil is a web-based system for comparative genomics visualizations. It
 is currently developed by engineers at

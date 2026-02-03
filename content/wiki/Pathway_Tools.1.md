@@ -3,61 +3,51 @@ title: "Pathway Tools"
 ---
 # Pathway Tools
 
-
   
 
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/PathwayTools.png" width="400" height="88"
 alt="Pathway Tools logo" />
 
-
 Status
-
 
 - Mature release
 - Development: active
 - Support: active
 
-
 Resources
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Pathway
-Tools](Special%253ABrowse/Pathway-20Tools "Special%253ABrowse/Pathway-20Tools")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
 [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform")
 
-
 web
-<span class="smwsearch">[+](Special%253ASearchByProperty/Available-20on-20platform/web "Special%253ASearchByProperty/Available-20on-20platform/web")</span>,
+,
 linux
-<span class="smwsearch">[+](Special%253ASearchByProperty/Available-20on-20platform/linux "Special%253ASearchByProperty/Available-20on-20platform/linux")</span>,
+,
 os x
-<span class="smwsearch">[+](Special%253ASearchByProperty/Available-20on-20platform/os-20x "Special%253ASearchByProperty/Available-20on-20platform/os-20x")</span>
+
 and windows
-<span class="smwsearch">[+](Special%253ASearchByProperty/Available-20on-20platform/windows "Special%253ASearchByProperty/Available-20on-20platform/windows")</span>
 
 [Has URL](Property%253AHas_URL "Property:Has URL")
 
 <a href="http://biocyc.org/download.shtml" class="external free"
 rel="nofollow">http://biocyc.org/download.shtml</a>
-<span class="smwsearch">[+](Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2Fdownload.shtml "Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2Fdownload.shtml")</span>,
+,
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external free"
 rel="nofollow">http://bioinformatics.ai.sri.com/ptools/</a>
-<span class="smwsearch">[+](Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbioinformatics.ai.sri.com-2Fptools-2F "Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbioinformatics.ai.sri.com-2Fptools-2F")</span>,
+,
 <a href="http://biocyc.org/" class="external free"
 rel="nofollow">http://biocyc.org/</a>
-<span class="smwsearch">[+](Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2F "Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2F")</span>,
+,
 <a href="http://biocyc.org/ECOLI/" class="external free"
 rel="nofollow">http://biocyc.org/ECOLI/</a>
-<span class="smwsearch">[+](Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2FECOLI-2F "Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2FECOLI-2F")</span>
+
 and <a href="http://biocyc.org/otherpgdbs.shtml" class="external free"
 rel="nofollow">http://biocyc.org/otherpgdbs.shtml</a>
-<span class="smwsearch">[+](Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2Fotherpgdbs.shtml "Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fbiocyc.org-2Fotherpgdbs.shtml")</span>
 
 [Has description](Property%253AHas_description "Property:Has description")
 
@@ -107,4 +97,3 @@ Pathway Tools has four components:
   PGDBs.nteractive editing capabilities for PGDBs.
    and list of PGDBs
   hosted elsewhere
-  <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20description/list-20of-20PGDBs-20hosted-20elsewhere "Special%253ASearchByProperty/Has-20description/list-20of-20PGDBs-20hosted-20elsewhere")</span>

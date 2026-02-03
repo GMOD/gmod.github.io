@@ -3,12 +3,9 @@ title: "News/Searchable GMOD Mail Archive"
 ---
 # News/Searchable GMOD Mail Archive
 
-
 [</a>
 
-
 Search Archive
-
 
 I am pleased to announce that a
 <a href="http://gmod.827538.n3.nabble.com/" class="external text"
@@ -29,10 +26,8 @@ Happy searching,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

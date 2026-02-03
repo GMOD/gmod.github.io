@@ -3,7 +3,6 @@ title: "Annotation"
 ---
 # Annotation
 
-
 Supporting annotation of biological data is a central goal of GMOD.
 Annotation can be done computationally or manually using [community
 annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
@@ -13,7 +12,6 @@ rel="nofollow">dedicated curatorial staff</a>.
 This page is about *creating* annotations. GMOD also has a number of
 solutions for *[visualizing](Visualization "Visualization")*
 annotations.
-
 
   Annotation</span>](#Genome_Annotation)
   - [Manual
@@ -25,7 +23,6 @@ annotations.
 - [Community
   Annotation](#Community_Annotation)
 
-
 ## Genome Annotation
 
 ### Manual Genome Annotation
@@ -35,13 +32,10 @@ annotations.
 
 ### Computational Genome Annotation
 
-
 "Genome annotation, not genome sequencing, is becoming the bottleneck in
 genomics today."
 
-
 First line of the [MAKER](MAKER.1 "MAKER") paper.
-
 
 - [MAKER](MAKER.1 "MAKER") is a pipeline for annotating eukayotic
   genomic data.

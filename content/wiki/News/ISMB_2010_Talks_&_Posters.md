@@ -3,12 +3,10 @@ title: "News/ISMB 2010 Talks & Posters"
 ---
 # News/ISMB 2010 Talks & Posters
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/46/ISMB2010_logo.jpg/150px-ISMB2010_logo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/ISMB2010_logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/46/ISMB2010_logo.jpg 2x"
 width="150" height="90" alt="GMOD @ ISMB 2010" />](../ISMB_2010 "GMOD @ ISMB 2010")
-
 
 You can now view most of the [GMOD-related presentations and posters
 from ISMB 2010](../ISMB_2010 "ISMB 2010"). This includes
@@ -39,10 +37,8 @@ Tools](../Pathway_Tools.1 "Pathway Tools"), and
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/19*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "Proposed schema extensions related to Sybil/IGS needs"
 ---
 # Proposed schema extensions related to Sybil/IGS needs
 
-
 ## Representation of feature graphs
 
 The feature_relationship table allows us to store feature graphs. In

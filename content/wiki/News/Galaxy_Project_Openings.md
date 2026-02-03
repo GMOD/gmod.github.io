@@ -3,12 +3,10 @@ title: "News/Galaxy Project Openings"
 ---
 # News/Galaxy Project Openings
 
-
 <a href="http://wiki.galaxyproject.org/GalaxyIsHiring"
 rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GalaxyIsHiringWordCloud.png"
 width="300" height="200" alt="GalaxyIsHiringWordCloud.png" /></a>
-
 
 The <a href="http://galaxyproject.org/" class="external text"
 rel="nofollow">Galaxy Project</a> is once again
@@ -43,6 +41,5 @@ Thanks,
 [Galaxy](../Galaxy.1 "Galaxy") Training and Outreach
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/25*

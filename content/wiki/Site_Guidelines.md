@@ -3,10 +3,8 @@ title: "Site Guidelines"
 ---
 # Site Guidelines
 
-
 This page discusses editorial policies and best practices to follow when
 updating or creating content in the GMOD web site.
-
 
   Introduction](#Introduction)
 - [Meta-Guidelines](#Meta-Guidelines)
@@ -44,7 +42,6 @@ updating or creating content in the GMOD web site.
 - [Component
   Information Pages](#Component_Information_Pages)
 
-
 ## Introduction
 
 The GMOD web site editorial policies and best practices are defined
@@ -66,10 +63,8 @@ Or, **Guidelines on Guidelines**.
 
 **A:** Yes.
 
-
 We would much rather have a contribution that completely ignores these
 guidelines than not have the contribution at all.
-
 
 This is for pragmatic and philosophical reasons. The whole goal of a
 wiki is to encourage people to contribute and maintain content. Site
@@ -110,9 +105,7 @@ when somebody notices.
 This is a list of guidelines for creating content in the GMOD web site.
 Some guidelines are accompanied by discussion that explains them.
 
-
 Guidelines are shown like this.
-
 
 Discussion is shown as regular text.
 
@@ -120,9 +113,7 @@ Discussion is shown as regular text.
 
 #### Capitalization
 
-
 Use _Generous Capitalization_ instead of _Parsimonious capitalization_.
-
 
 For example, use "Site Guidelines" instead of "Site guidelines".
 
@@ -130,9 +121,7 @@ It looks better.
 
 #### Redirects
 
-
 Use of MediaWiki redirects for page name synonyms is encouraged.
-
 
 This means that if a user types
 "<a href="Generic_Genome_Browser" class="mw-redirect"
@@ -156,17 +145,15 @@ In our example this would be:
 and then save the page.
 
 A slight downside of this is that the
-[Special:Allpages](Special:AllPages "Special:AllPages") view now
+ view now
 displays lots of pages that are only redirects to other pages. This
 turns into more of an index than a listing of all pages.
 
 ### Minor vs Major Edits
 
-
 If you do not want the page you are editing to be listed in the _New &
 Revised Pages_ list on the GMOD home page, then mark your edit as
 _minor_.
-
 
 When you update a page in this web site you can flag it as a _minor
 edit_. As of December 2007, the minor/major edit distinction is used in
@@ -180,16 +167,14 @@ mark it as a minor edit.
 
 ### Tags / Categories
 
-
 Tag any pages you edit with appropriate categories for that page.
-
 
 Be generous in your tagging. If a particular category gets too many
 pages in it then the [help desk](GMOD_Help_Desk "GMOD Help Desk") will
 subdivide that category.
 
 This web site makes extensive use of tags, called
-[categories](Special%253ACategories "Special%253ACategories") in MediaWiki, to
+in MediaWiki, to
 flag pages as being related to different topics. To encourage the use of
 categories, an input field and _tag cloud_ listing existing categories
 is shown at the bottom of every edit page. You can either type in the
@@ -202,9 +187,7 @@ in site navigation.
 
 #### New Categories
 
-
 If you think we need a new category then create it.
-
 
 You can create a new category by typing the new category name in the
 **Categories** form on an edit page.
@@ -229,10 +212,8 @@ Desk](GMOD_Help_Desk "GMOD Help Desk") and we will add it.
 
 #### Destination Filenames
 
-
 When uploading a file, please give the file a meaningful **Destination
 filename**.
-
 
 The **Destination filename** is the name the file will have in the GMOD
 web site. Why does this matter? Filenames are displayed in
@@ -250,24 +231,20 @@ about.
 
 #### File Categories
 
-
 When uploading a presentation or a paper, please add it to the
 [Presentations](Category%253APresentations "Category%253APresentations") or
 [Publications](Category%253APublications "Category%253APublications")
 categories. Also add the file to any other appropriate categories.
-
 
 If the file is an image that is being linked to from a page then you
 don't need to categorize it.
 
 #### Diagrams and Cartoons
 
-
 When uploading a diagram or cartoon that was created in a drawing
 program upload the exported image file (png, jpg, gif) and the original
 source file. Load both files with the same name, but different
 extensions.
-
 
 This will allow others (and yourself) to modify the diagrams in the
 future rather than recreate them from scratch.
@@ -438,7 +415,6 @@ this wiki.
 ...&lt;/syntaxhighlight&gt;</code></pre>
 <hr />
 
-
 <pre class="de1"><code>&lt;tool id=&quot;get_flanks1&quot; name=&quot;Get flanks&quot;&gt;
   &lt;description&gt;
     returns flanking region/s for genes
@@ -527,13 +503,11 @@ highlighting. For coloured code, use the ` <syntaxhighlight>` tag:
     die("Goodbye, cruel world!");
     </syntaxhighlight>
 
-
 ```de1
  #!/usr/bin/perl
  my $life = "over";
  die("Goodbye, cruel world!");
 ```
-
 
 Languages supported include Javascript, Java, Perl, PHP, XML, CSS, and
 more. Full documentation can be found on the
@@ -547,11 +521,9 @@ identifier (DOI), the full information can be automatically retrieved
 from PubMed or the CrossRef server for you. To create the reference, use
 the `<ref />` tag:
 
-
 ```de1
 <ref name=PMID:15752432 />
 ```
-
 
 The `name` attribute can contain either a PubMed ID in the form
 PMID:00000000 or a DOI in the form DOI:10.1186/1471-2164-14-741.

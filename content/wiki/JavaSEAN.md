@@ -3,7 +3,6 @@ title: "JavaSEAN"
 ---
 # JavaSEAN
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
@@ -19,13 +18,11 @@ regulatory elements, and rescue fragments.
 
   
 
-
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Demo & Screenshots
 
@@ -58,8 +55,3 @@ class="external text" rel="nofollow">mapfile-sample.rpt</a>
 class="external text" rel="nofollow">Requirements.txt</a>
 <a href="http://www.gmod.org/files/Setup.txt" class="external text"
 rel="nofollow">Setup.txt</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")

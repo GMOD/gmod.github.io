@@ -3,7 +3,6 @@ title: "GSOC Groups"
 ---
 # GSOC Groups
 
-
 These bioinformatics groups belong to the Genome Informatics 'umbrella'
 organization:
 
@@ -85,6 +84,3 @@ Harbor Laboratory, and The European Bioinformatics Institute. Links:
 rel="nofollow">Website</a>,
 <a href="http://wiki.reactome.org" class="external text"
 rel="nofollow">ReactomeWiki</a> .
-
-
-[Category](Special%253ACategories "Special%253ACategories"):

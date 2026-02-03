@@ -3,7 +3,6 @@ title: "News/Apollo 1.8 Released"
 ---
 # News/Apollo 1.8 Released
 
-
 I'm excited to let everyone know that we're releasing a new version of
 [Apollo](../Apollo.1 "Apollo") (1.8.0) today. There are many
 additions/bug fixes with this release. Most notably, due to popular
@@ -29,10 +28,8 @@ Ed Lee
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/10*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

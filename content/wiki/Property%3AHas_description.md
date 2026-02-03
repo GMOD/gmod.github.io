@@ -3,13 +3,11 @@ title: "Property:Has description"
 ---
 # Property:Has description
 
-
 This is a property of type
-[Text](Special%253ATypes/Text "Special%253ATypes/Text").
+.
 
   
 <span id="SMWResults"></span>
-
 
 ## Pages using the property "Has description"
 
@@ -30,17 +28,14 @@ Showing 21 pages using this property.
 <tr class="odd">
 <td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/BLAST-20Graphic-20Viewer"
-title="Special%253ABrowse/BLAST-20Graphic-20Viewer">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">BLAST Graphic Viewer provides a graphical
 visualization of the regions contained within HSPs relative to the query
 sequence. BLAST Graphic Viewer is also known as blastGraphic.  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="BioMart"
-title="BioMart">BioMart</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/BioMart"
-title="Special%253ABrowse/BioMart">+</a></span></td>
+title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Links to BioMart installations in the wild  ,
 BioMart is a freely available, open source, federated database system
 that provides unified access to disparate, geographically distributed
@@ -54,21 +49,18 @@ into the BioMart framework.  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/CMap"
-title="Special%253ABrowse/CMap">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">Comparative mapping resource for grasses
 (plant)  ,
 A publicly accessible legume resource that will integrate genetic and
 molecular data from multiple legume species and enable cross-species
 comparisons  ,
 The Honey Bee genome database  ,
-<a href="Special%253APageProperty/CMap%253A%253AHas_description"
-title="Special:PageProperty/CMap::Has description">…</a></td>
+</td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/Canto"
-title="Special%253ABrowse/Canto">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">Curate GO annotations for proteins using UniProtKB
 identifiers  ,
 Canto is an online tool that supports functional gene annotation by
@@ -91,8 +83,7 @@ S. pombe  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/DIYA"
-title="Special%253ABrowse/DIYA">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">DIYA (Do-It-Yourself Annotator) is a modular and
 configurable open source pipeline framework, written in Perl, used for
 the rapid annotation of microbial genome sequences. The software is
@@ -110,9 +101,7 @@ modules.  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="GBrowse.1"
-title="GBrowse">GBrowse</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/GBrowse"
-title="Special%253ABrowse/GBrowse">+</a></span></td>
+title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GBrowse is a combination of database and
 interactive web pages for manipulating and displaying annotations on
 genomes. Features include: * Simultaneous bird's eye and detailed views
@@ -134,9 +123,7 @@ used.  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="GBrowse_syn.1"
-title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/GBrowse-20syn"
-title="Special%253ABrowse/GBrowse-20syn">+</a></span></td>
+title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GBrowse_syn, or the Generic Synteny Browser, is a
 [[GBrowse]]-based [[synteny]] browser designed to display multiple
 genomes, with a central reference species compared to two or more
@@ -148,8 +135,7 @@ standard GBrowse package (version 1.69 and later).  </td>
 <tr class="odd">
 <td class="smwpropname"><a href="GO_Graphic_Viewer.1"
 title="GO Graphic Viewer">GO Graphic Viewer</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/GO-20Graphic-20Viewer"
-title="Special%253ABrowse/GO-20Graphic-20Viewer">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">The GO Graphic Viewer module (Bio%253A%253AGMOD::GO::View)
 generates a graphic that displays the parent and child relationships of
 a selected GO term. It also provides the visualization for the result
@@ -162,9 +148,7 @@ goTermFinder.pl).  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
-title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/GO%253A%253ATermFinder"
-title="Special%253ABrowse/GO%253A%253ATermFinder">+</a></span></td>
+title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GO TermFinder takes a list of genes as input, and
 determines whether there are enriched GO terms for that list. These
 modules provide an object oriented set of libraries for dealing with
@@ -181,9 +165,7 @@ the examples directory of the download.  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Galaxy.1"
-title="Galaxy">Galaxy</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Galaxy"
-title="Special%253ABrowse/Galaxy">+</a></span></td>
+title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Fully supported, publicly accessible platforms for
 using Galaxy  ,
 [https://galaxyproject.org/ Galaxy] is an open, web-based platform for
@@ -219,9 +201,7 @@ sessions, and a CollaborationFest.  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="InterMine"
-title="InterMine">InterMine</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/InterMine"
-title="Special%253ABrowse/InterMine">+</a></span></td>
+title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">InterMine should always be checked out in source
 code form  ,
 InterMine makes it easy to integrate multiple data sources into a single
@@ -246,9 +226,7 @@ can be configured and branded.  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="JBrowse.1"
-title="JBrowse">JBrowse</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/JBrowse"
-title="Special%253ABrowse/JBrowse">+</a></span></td>
+title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Browse the genome of Ötzi the ice man  ,
 JBrowse is a genome browser with a fully dynamic AJAX interface, being
 developed as the eventual successor to GBrowse. It is very fast and
@@ -266,9 +244,7 @@ datasets from a single low-cost cloud instance.  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="JBrowse2"
-title="JBrowse2">JBrowse2</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/JBrowse2"
-title="Special%253ABrowse/JBrowse2">+</a></span></td>
+title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">JBrowse 2 is a multi-modal genome browser that can
 view data in linear, circular, dotplot, and syntenic modes, in order to
 better serve the needs of structural variant visualization and
@@ -283,8 +259,7 @@ new view types. See https://jbrowse.org/jb2/ for more info  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/MAKER"
-title="Special%253ABrowse/MAKER">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">online version of the MAKER tool  ,
 The ant genomes were annotated using MAKER.  ,
 MAKER is an easy-to-configure, portable genome
@@ -324,9 +299,7 @@ gene functions to genome annotations. This data then becomes accessible
 as part of the GFF3 output and can be loaded into a [[Chado]] database,
 [[JBrowse]], [[GBrowse]], [[WebApollo]] or [[Apollo]]. MAKER comes with
 sample data for testing purposes. See the &lt;tt&gt;/data&lt;/tt&gt;
-directory in the download.  , <a
-href="Special%253APageProperty/MAKER%253A%253AHas_description"
-title="Special:PageProperty/MAKER::Has description">…</a></td>
+directory in the download.  , </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><h3 id="p">P</h3></td>
@@ -334,9 +307,7 @@ title="Special:PageProperty/MAKER::Has description">…</a></td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="Pathway_Tools.1"
-title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Pathway-20Tools"
-title="Special%253ABrowse/Pathway-20Tools">+</a></span></td>
+title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">list of PGDBs hosted elsewhere  ,
 Pathway Tools is a comprehensive symbolic systems biology software
 system that supports several use cases in bioinformatics and systems
@@ -374,9 +345,7 @@ Provide interactive editing capabilities for PGDBs.  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="Textpresso"
-title="Textpresso">Textpresso</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Textpresso"
-title="Special%253ABrowse/Textpresso">+</a></span></td>
+title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Textpresso is an information extracting and
 processing (text mining) package for biological literature whose
 capabilities go far beyond that of a simple keyword search engine. The
@@ -394,9 +363,7 @@ Human Genome Research Institute at the US National Institutes of Health
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Tripal.1"
-title="Tripal">Tripal</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Tripal"
-title="Special%253ABrowse/Tripal">+</a></span></td>
+title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Tripal is a web front end for [[Chado]] databases,
 based on the [http://www.drupal.org Drupal] content management system.
 Tripal leverages many of the features of Drupal--ability to search and
@@ -430,9 +397,7 @@ Homepage ==== Get the most up-to-date information about Tripal
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="WebApollo.1"
-title="WebApollo">WebApollo</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebApollo"
-title="Special%253ABrowse/WebApollo">+</a></span></td>
+title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">WebApollo is a browser-based tool for visualization
 and editing of sequence annotations. It is designed for distributed
 community annotation efforts, where numerous people may be working on
@@ -463,9 +428,7 @@ genome).  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="WebApollo2"
-title="WebApollo2">WebApollo2</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebApollo2"
-title="Special%253ABrowse/WebApollo2">+</a></span></td>
+title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">WebApollo2 is a browser-based tool for
 visualization and editing of sequence annotations. It is designed for
 distributed community annotation efforts, where numerous people may be
@@ -497,9 +460,7 @@ Password: demo  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="WebGBrowse.1"
-title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebGBrowse"
-title="Special%253ABrowse/WebGBrowse">+</a></span></td>
+title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The [[GBrowse|Generic Genome Browser (GBrowse)]] is
 one of the most widely used visualization tools for sequence display
 characterized by a rich set of utilities helpful in presenting a variety
@@ -536,8 +497,7 @@ CGB].  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/XORT"
-title="Special%253ABrowse/XORT">+</a></span></td>
+class="smwbrowse"></span></td>
 <td class="smwprops">XORT is a utility written in Perl that can be used
 to read to and write from a [[Glossary#Relational|relational]]
 [[Glossary#Schema|schema]] using [[Glossary#XML|XML]] as an interchange
@@ -556,9 +516,6 @@ XML."  </td>
 </tbody>
 </table>
 
-
 </span>
 
-|  |  |
-|----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [Text](Special%253ATypes/Text "Special%253ATypes/Text") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20type/Text "Special%253ASearchByProperty/Has-20type/Text")</span> |
+|----|----| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span>

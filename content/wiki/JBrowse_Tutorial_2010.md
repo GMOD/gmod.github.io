@@ -3,12 +3,10 @@ title: "JBrowse Tutorial 2010"
 ---
 # JBrowse Tutorial 2010
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/250px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/375px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/500px-JBrowseLogo.png 2x"
 width="250" height="55" alt="JBrowse" />
-
 
 This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Mitch
 Skinner](User%253AMitchSkinner "User%253AMitchSkinner") at the [2010 GMOD Summer
@@ -20,7 +18,6 @@ title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through setting up and running a [JBrowse](JBrowse.1 "JBrowse") server.
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -59,7 +56,6 @@ through setting up and running a [JBrowse](JBrowse.1 "JBrowse") server.
 - [Other
   links](#Other_links)
 
-
 ## VMware
 
 This tutorial was taught using a VMware system image
@@ -76,13 +72,9 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |
-| ------- | -------- | ---------------- |
-| Shell   | gmod     | gmodamericas2010 |
-| MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password         | ------- | -------- | ---------------- | Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
 
 ## Caveats
-
 
 **Important Note**
 
@@ -92,7 +84,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
 ## Prerequisites
 
@@ -117,7 +108,6 @@ Optional, for BAM files:
 - perl module: <a href="http://search.cpan.org/perldoc?Bio::DB::SAM"
   class="external text" rel="nofollow">Bio::DB::SAM</a>
 
-
 And this is how they were installed: **(don't do this, this has already
 been done in the VM)**
 
@@ -131,7 +121,6 @@ $ make
 $ sudo cpan
 cpan[1]> install Bio::DB::Das::Chado Bio::DB::Sam JSON JSON::XS
 ```
-
 
 Also: make sure you can Copy/paste from wiki.
 
@@ -164,7 +153,6 @@ width="600" height="776" alt="Jbrowse arch.png" />
 
 ### Getting JBrowse
 
-
 **This has already been done in the VMware image.**
 
 - Git
@@ -179,7 +167,6 @@ $ cd jbrowse
 $ git branch --track lazyfeatures origin/lazyfeatures
 $ git checkout lazyfeatures
 ```
-
 
 ### Starting Point
 
@@ -414,17 +401,7 @@ Visit in web browser
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[JBrowse Tutorial
-2010](Special%253ABrowse/JBrowse-20Tutorial-202010 "Special%253ABrowse/JBrowse-20Tutorial-202010")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|                                                        |                                                                                                                                                                    |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse")  |

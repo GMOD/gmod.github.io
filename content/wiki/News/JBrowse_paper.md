@@ -3,7 +3,6 @@ title: "News/JBrowse paper"
 ---
 # News/JBrowse paper
 
-
 A <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a> on the
 [JBrowse](../JBrowse.1 "JBrowse") genome browser is in
@@ -38,10 +37,8 @@ selection and sets a new standard for the genome browser interface.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

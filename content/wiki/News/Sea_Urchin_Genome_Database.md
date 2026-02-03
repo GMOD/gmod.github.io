@@ -3,12 +3,10 @@ title: "News/Sea Urchin Genome Database"
 ---
 # News/Sea Urchin Genome Database
 
-
 <a href="http://spbase.org/" rel="nofollow"
 title="Sea Urchin Genome Database"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/SpBaseLogo.png" width="185"
 height="104" alt="Sea Urchin Genome Database" /></a>
-
 
 Today, Tuesday April 4th, the
 <a href="http://spbase.org" class="external text" rel="nofollow">Sea
@@ -32,10 +30,8 @@ Andy Cameron
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

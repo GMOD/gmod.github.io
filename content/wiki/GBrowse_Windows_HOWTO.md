@@ -3,7 +3,6 @@ title: "GBrowse Windows HOWTO"
 ---
 # GBrowse Windows HOWTO
 
-
   WARNING](#WARNING)
 - [Abstract](#Abstract)
 - [Windows
@@ -19,7 +18,6 @@ title: "GBrowse Windows HOWTO"
     GBrowse and its Perl
     Dependencies](#Install_GBrowse_and_its_Perl_Dependencies)
 - [Authors](#Authors)
-
 
 ## WARNING
 

@@ -3,12 +3,10 @@ title: "News/ISB Leadership Nominations Open"
 ---
 # News/ISB Leadership Nominations Open
 
-
 <a href="http://biocurator.org/" rel="nofollow"
 title="International Society for Biocuration"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/ISBLogo.png" width="113" height="106"
 alt="International Society for Biocuration" /></a>
-
 
 The <a href="http://biocurator.org/" class="external text"
 rel="nofollow">International Society for Biocuration (ISB)</a> is a
@@ -49,10 +47,8 @@ Magrane
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/26*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

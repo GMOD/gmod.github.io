@@ -3,7 +3,6 @@ title: "News/MAKER-P: an annotation pipeline for plants"
 ---
 # News/MAKER-P: an annotation pipeline for plants
 
-
 The popular [MAKER](../MAKER.1 "MAKER") annotation pipeline has been
 extended and optimised to allow the annotation of plant species:
 
@@ -26,6 +25,5 @@ extended and optimised to allow the annotation of plant species:
 - Download and install [MAKER and MAKER-P](../MAKER.1 "MAKER").
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/16*

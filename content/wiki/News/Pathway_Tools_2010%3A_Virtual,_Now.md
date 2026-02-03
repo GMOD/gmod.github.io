@@ -3,7 +3,6 @@ title: "News/Pathway Tools 2010: Virtual, Now"
 ---
 # News/Pathway Tools 2010: Virtual, Now
 
-
 <a
 href="http://bioinformatics.ai.sri.com/ptools10/teleconferencing.html"
 rel="nofollow" title="Attend the Pathway Tools Workshop Remotely"><img
@@ -11,7 +10,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/PathwayToolsGraph.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/PathwayToolsGraph.png 2x"
 width="180" height="114"
 alt="Attend the Pathway Tools Workshop Remotely" /></a>
-
 
 We are offering individuals the ability to <a
 href="http://bioinformatics.ai.sri.com/ptools10/teleconferencing.html"
@@ -40,10 +38,8 @@ Pathway Tools Workshop Coordinator
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/24*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

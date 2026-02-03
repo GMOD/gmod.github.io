@@ -3,7 +3,6 @@ title: "News/Pathway Tools Flux Balance Tutorial"
 ---
 # News/Pathway Tools Flux Balance Tutorial
 
-
 A <a href="http://ptools-fba.eventbrite.com/" class="external text"
 rel="nofollow">workshop</a> on the new [Pathway
 Tools](../Pathway_Tools.1 "Pathway Tools") module for generating and
@@ -35,10 +34,8 @@ Pathway Tools Training Coordinator
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

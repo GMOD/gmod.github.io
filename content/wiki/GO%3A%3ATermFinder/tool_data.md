@@ -3,7 +3,6 @@ title: "GO::TermFinder/tool data"
 ---
 # GO::TermFinder/tool data
 
-
 \| name = GO::TermFinder \| full_name = \| status =
 mature \| dev = maintenance \| support = active \| type = Ontology
 Visualization, Gene list analysis \| platform = linux, os x, unix,

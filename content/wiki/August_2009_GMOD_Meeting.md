@@ -3,7 +3,6 @@ title: "August 2009 GMOD Meeting"
 ---
 # August 2009 GMOD Meeting
 
-
 <table
 style="vertical-align: middle; border: 2px solid #A6A6BC; text-align: center"
 data-cellpadding="10">
@@ -50,7 +49,6 @@ meetings are an excellent way to meet GMOD developers and users, and to
 learn (and affect) what's coming in the project.
 
   
-
 
   Schedule](#Schedule)
 - [Presentations](#Presentations)
@@ -171,16 +169,12 @@ learn (and affect) what's coming in the project.
   January 2010 in San Diego
   California](#Next_Meeting:_January_2010_in_San_Diego_California)
 
-
 # Schedule
-
 
 Heng Li
 
-
 <a href="http://www.sanger.ac.uk" class="external text"
 rel="nofollow">Wellcome Trust Sanger Institute</a>
-
 
   
 
@@ -198,7 +192,6 @@ including
 rel="nofollow">SAMtools</a>, BWA, and
 <a href="http://maq.sourceforge.net" class="external text"
 rel="nofollow">MAQ</a>.
-
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
 data-cellspacing="0">

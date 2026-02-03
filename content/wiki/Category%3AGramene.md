@@ -3,15 +3,12 @@ title: "Category%253AGramene"
 ---
 # Category%253AGramene
 
-
 <a href="http://www.gramene.org/" class="external text"
 rel="nofollow">Gramene</a> is a member of the GMOD Community.
-
 
 ## Pages in category "Gramene"
 
 The following 2 pages are in this category, out of 2 total.
-
 
 ### C
 
@@ -21,7 +18,6 @@ The following 2 pages are in this category, out of 2 total.
 
 - [MOD User Interfaces: Sample of several MOD Top Level
   functions](MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions "MOD User Interfaces: Sample of several MOD Top Level functions")
-
 
 ## Media in category "Gramene"
 
@@ -91,13 +87,4 @@ The following 3 files are in this category, out of 3 total.
   
 
   [GrameneMainPageIcon.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/GrameneMainPageIcon.jpg "File:GrameneMainPageIcon.jpg")  
-  2 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  2 KB

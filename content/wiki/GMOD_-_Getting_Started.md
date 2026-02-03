@@ -3,7 +3,6 @@ title: "GMOD - Getting Started"
 ---
 # GMOD - Getting Started
 
-
 GMOD is a large project with many components and this page aims to give
 you some pointers on where you can start.
 
@@ -42,8 +41,3 @@ questions on any type, they are tasked with providing support to
 newcomers and experts alike.
 
 See [Support](Support "Support") for more information.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

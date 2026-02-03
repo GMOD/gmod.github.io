@@ -3,7 +3,6 @@ title: "News/GMOD Workshops at SMBE, AGS"
 ---
 # News/GMOD Workshops at SMBE, AGS
 
-
 There will be GMOD workshops at two major conferences in June 2009:
 
 <table>
@@ -86,10 +85,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

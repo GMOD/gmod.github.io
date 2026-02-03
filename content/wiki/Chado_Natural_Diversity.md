@@ -3,10 +3,8 @@ title: "Chado Natural Diversity Module Working Group"
 ---
 # Chado Natural Diversity Module Working Group
 
-
 (Redirected from [Chado Natural
 Diversity](/wiki/Chado_Natural_Diversity)
-
 
 The **[Chado Natural Diversity
 Module](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
@@ -15,7 +13,6 @@ Natural Diversity Module into the production version of
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
   
-
 
   Discussion](#Discussion)
 - [History](#History)
@@ -26,7 +23,6 @@ Natural Diversity Module into the production version of
 - [Participation](#Participation)
 - [Stock
   Relationship Ontology](#Stock_Relationship_Ontology)
-
 
 # Discussion
 

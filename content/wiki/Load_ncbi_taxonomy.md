@@ -3,7 +3,6 @@ title: "Load ncbi taxonomy"
 ---
 # Load ncbi taxonomy
 
-
 `load_ncbi_taxonomy.pl` is a perl script for loading NCBI taxonomy trees
 in the
 [**`phylotree`**](Chado_Phylogeny_Module#Table:_phylotree "Chado Phylogeny Module")[phylotree

@@ -3,7 +3,6 @@ title: "News/Precompiled Ontologies in Chado"
 ---
 # News/Precompiled Ontologies in Chado
 
-
 Eric Rasche and the
 <a href="https://cpt.tamu.edu/" class="external text"
 rel="nofollow">Center for Phage Technology at Texas A&amp;M
@@ -44,6 +43,5 @@ Artemis), and tools that do not make use of GMOD_ROOT locally, this is
 not a problem.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/20*

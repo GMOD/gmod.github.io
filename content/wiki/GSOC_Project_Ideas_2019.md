@@ -3,7 +3,6 @@ title: "GSOC Project Ideas 2019"
 ---
 # GSOC Project Ideas 2019
 
-
 **Got an idea for [GSOC 2019](GSoC "GSoC")?**
 
 Then please post it. You can either
@@ -29,7 +28,6 @@ self-motivation are great traits for open source programmers.
 
   
 
-
   project ideas for 2019</span>](#Proposed_project_ideas_for_2019)
   - [Template](#Template)
   - [Automated
@@ -44,7 +42,6 @@ self-motivation are great traits for open source programmers.
   - [Revision
     tracking curation and tools usage
     (Reactome)](#Revision_tracking_curation_and_tools_usage_.28Reactome.29)
-
 
 # Proposed project ideas for 2019
 
@@ -185,8 +182,3 @@ self-motivation are great traits for open source programmers.
   - *Knowledge prerequisites:* Java, Neo4J, Java, web services.
   - *Skill level:* Easy.
   - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca).
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GSoC](Category%253AGSoC "Category%253AGSoC")

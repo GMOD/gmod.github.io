@@ -3,7 +3,6 @@ title: "Chado Modules"
 ---
 # Chado Modules
 
-
 - [Audit](Chado_Audit_Module "Chado Audit Module") - for database audit
   trails
 - [Companalysis](Chado_Companalysis_Module "Chado Companalysis Module") -
@@ -39,8 +38,3 @@ title: "Chado Modules"
 - [Stock](Chado_Stock_Module "Chado Stock Module") - for specimens and
   biological collections
 - [WWW](Chado_WWW_Module "Chado WWW Module") -
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")

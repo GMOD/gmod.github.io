@@ -3,7 +3,6 @@ title: "News/November 2007 GMOD Meeting"
 ---
 # News/November 2007 GMOD Meeting
 
-
 The [November 2007 GMOD
 Meeting](../November_2007_GMOD_Meeting "November 2007 GMOD Meeting") was
 attended by nearly 40 people from across the GMOD community. Community
@@ -14,10 +13,8 @@ a list of presentations and a summary of the meeting.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/11/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

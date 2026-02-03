@@ -3,7 +3,6 @@ title: "MediaWiki%253ACommon.css"
 ---
 # MediaWiki%253ACommon.css
 
-
 **Note:** After saving, you may have to bypass your browser's cache to
 see the changes.
 
@@ -13,7 +12,6 @@ see the changes.
 - **Internet Explorer:** Hold *Ctrl* while clicking *Refresh*, or press
   *Ctrl-F5*
 - **Opera:** Clear the cache in *Tools → Preferences*
-
 
 ``` css
 /** CSS placed here will be applied to all skins */

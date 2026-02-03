@@ -3,15 +3,12 @@ title: "Category%253AGMOD Schools"
 ---
 # Category%253AGMOD Schools
 
-
 GMOD Schools are online and offline training courses provided by the
 GMOD project.
-
 
 ## Pages in category "GMOD Schools"
 
 The following 27 pages are in this category, out of 27 total.
-
 
 <table style="width: 100%;">
 <colgroup>

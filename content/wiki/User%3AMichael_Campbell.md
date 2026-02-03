@@ -3,7 +3,6 @@ title: "User%253AMichael Campbell"
 ---
 # User%253AMichael Campbell
 
-
 ## Mike Campbell
 
 <img

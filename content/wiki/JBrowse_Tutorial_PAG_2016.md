@@ -3,7 +3,6 @@ title: "JBrowse Tutorial PAG 2016"
 ---
 # JBrowse Tutorial PAG 2016
 
-
 This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Scott
 Cain](User%253AScott "User%253AScott") at the
 <a href="PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
@@ -13,7 +12,6 @@ This tutorial assumes an Ubuntu 15.04 <a
 href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+2016+tutorial.ova.bz2"
 class="external text" rel="nofollow">VirtualBox appliance</a> (2.7 GB)
 that was distributed before the course.
-
 
   Prerequisites](#Prerequisites)
 - [JBrowse
@@ -73,7 +71,6 @@ that was distributed before the course.
   Problems](#Common_Problems)
 - [Other
   links](#Other_links)
-
 
 ## Prerequisites
 
@@ -190,7 +187,6 @@ web browser can use.
 In this case, we have specified all of our track configurations in
 `pythium-1.conf`.
 
-
 ``` de1
 ...
  
@@ -213,7 +209,6 @@ In this case, we have specified all of our track configurations in
    ...
 ]
 ```
-
 
 `track` specifies the track identifier (a unique name for the track, for
 the software to use). This should be just letters and numbers and - and
@@ -291,7 +286,6 @@ server. Simply place the BAM file in a directory accessible to your web
 server, and add a snippet of configuration to JBrowse to add the track,
 similar to:
 
-
 ``` de1
      {
         "label" : "bam_alignments",
@@ -301,7 +295,6 @@ similar to:
         "type" : "Alignments2"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -326,7 +319,6 @@ open it in gedit and add the following bit of JSON after the
 Be sure to get the comma after the brace or JBrowse won't be able to
 understand the config file:
 
-
 ``` de1
      {
         "label" : "bam_coverage",
@@ -337,7 +329,6 @@ understand the config file:
       },
 ```
 
-
 ### Quantitative data
 
 #### BigWig
@@ -346,7 +337,6 @@ JBrowse can display quantitative data directly from a BigWig file on
 your web server. Simply place the BigWig file in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
-
 
 ``` de1
      {
@@ -358,7 +348,6 @@ the track, similar to:
         "variance_band" : true
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -383,7 +372,6 @@ Simply place the .vcf.gz and .vcf.gz.tbi files in a directory accessible
 to your web server, and add a snippet of configuration to JBrowse to add
 the track, similar to:
 
-
 ``` de1
       {
         "label" : "bam_variation",
@@ -393,7 +381,6 @@ the track, similar to:
         "type" : "HTMLVariants"
       }
 ```
-
 
 This can be added by either editing the `data/trackList.json` file with
 a text editor, or by running something like this at the command line to
@@ -425,7 +412,6 @@ be copied into the `data` directory for use with this configuration.
 
 Then a simple faceted track selection configuration might look like:
 
-
 ``` de1
    "trackSelector": {
        "type": 'Faceted',
@@ -436,7 +422,6 @@ Then a simple faceted track selection configuration might look like:
        ]
    }
 ```
-
 
 Edit `jbrowse_conf.json` with gedit in the `jbrowse` directory add this
 bit of code between the empty curly braces ({}), save it, refresh your
@@ -450,7 +435,6 @@ tracks, this tutorial will focus on Canvas tracks only (the repeat
 tracks created above).
 
 The configuration for the RepeatMasker track looks like this:
-
 
 ``` de1
       {
@@ -470,17 +454,14 @@ The configuration for the RepeatMasker track looks like this:
       }
 ```
 
-
 Open the `data/trackList.json` file in your favorite editor and
 Command-F will open a "find" window; search for "repeatmasker". A simple
 change we can make is to the color; in the line starting with "style",
 add:
 
-
 ``` de1
   "color" : "black",
 ```
-
 
 save the changes and select the RepeatMasker track or reload the browser
 to see the change. Many attributes of the display can be modified in
@@ -499,11 +480,9 @@ name). In this example, we leave the glyph black, unless it is a low
 complexity repeat, where we'll color it red. A function to do that would
 look like this:
 
-
 ``` de1
   "color" : "function(feature) { var name = feature.get('Name'); if (name.match('Low_complexity') ) { return 'red'; } return 'black';  }",
 ```
-
 
 When editing the trackList.json file directly in this way, the function
 has to go all on one line, but if we create an "include file" (not
@@ -525,7 +504,6 @@ that will Google the repeat's name and open the result in a new window.
 In the RepeatMasker section of the JBrowse configuration, we'll add a
 section that looks like this after the style section:
 
-
 ``` de1
         "onClick" : {
            "iconClass" : "dijitIconDatabase",
@@ -536,10 +514,8 @@ section that looks like this after the style section:
         },
 ```
 
-
 If you're having difficulties, the RepeatMasker section of the
 configuration file should now look something like this:
-
 
 ``` de1
       {
@@ -566,7 +542,6 @@ configuration file should now look something like this:
          "key" : "RepeatMasker"
       },
 ```
-
 
 ### Using Plugins
 
@@ -642,11 +617,7 @@ from the old JBrowse directory into the new JBrowse directory.
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[JBrowse Tutorial PAG
-2016](Special%253ABrowse/JBrowse-20Tutorial-20PAG-202016 "Special%253ABrowse/JBrowse-20Tutorial-20PAG-202016")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse")  |

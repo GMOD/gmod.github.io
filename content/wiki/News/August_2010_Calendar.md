@@ -3,10 +3,8 @@ title: "News/August 2010 Calendar"
 ---
 # News/August 2010 Calendar
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
 height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
-
 
 There's not a lot going on in [August](../Calendar "Calendar") but what
 is going on is significant. First there are submission deadlines for the
@@ -39,10 +37,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

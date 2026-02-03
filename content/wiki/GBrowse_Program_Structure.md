@@ -3,7 +3,6 @@ title: "GBrowse Program Structure"
 ---
 # GBrowse Program Structure
 
-
 This page gives a basic overview of how [GBrowse](GBrowse.1 "GBrowse")
 has been organized and programmed, and is intended for developers to get
 a feel for the structure of the program so they can become more
@@ -11,7 +10,6 @@ comfortable adding features to it or modifying it for their own needs.
 Help is always available via the
 <a href="GMOD_Mailing_Lists#GMOD_Components" class="external text"
 rel="nofollow">mailing list</a>, or on other sections of the GMOD wiki.
-
 
   Structure</span>](#Program_Structure)
   - [The AJAX
@@ -24,7 +22,6 @@ rel="nofollow">mailing list</a>, or on other sections of the GMOD wiki.
   - [Globals](#Globals)
   - [Session](#Session)
   - [State](#State)
-
 
 ## Program Structure
 

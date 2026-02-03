@@ -3,15 +3,12 @@ title: "News/ZFIN Project Manager Wanted"
 ---
 # News/ZFIN Project Manager Wanted
 
-
 ### Position closed
-
 
 <a href="http://hr.uoregon.edu/jobs/unclassified.php?id=3656"
 rel="nofollow" title="ZFIN is hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/ZFINLogo.png" width="115" height="146"
 alt="ZFIN is hiring" /></a>
-
 
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN, the
 zebrafish model organism database</a>, located at the
@@ -53,13 +50,11 @@ Minimum qualifications:
 
 Send resume with names and phone numbers of 3 references to
 
-
 Eva Quinby  
 Institute of Neuroscience  
 1254 University of Oregon  
 Eugene, OR  
 97403-1254
-
 
 Or FAX to 541-346-4548. The UO is an AA/EO/ADA institution committed to
 cultural diversity. Candidates who promote and enhance diversity are
@@ -68,10 +63,8 @@ first consideration. The position will remain open until filled.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/10/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

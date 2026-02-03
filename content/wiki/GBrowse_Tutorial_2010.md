@@ -3,13 +3,11 @@ title: "GBrowse Tutorial 2010"
 ---
 # GBrowse Tutorial 2010
 
-
 TutorialHeader \| what = GBrowse \| where = [2010 GMOD Summer
 School -
 Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
 \| who = [Scott Cain](User%253AScott "User%253AScott") \| when = May 2010 \|
 logo = GBrowseLogo.png
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -22,7 +20,6 @@ logo = GBrowseLogo.png
   time)](#Basic_Chado_Configuration_.28if_we_have_time.29)
   - [Materialized views for
     searching](#Materialized_views_for_searching)
-
 
 ## VMware
 
@@ -40,13 +37,9 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |
-| ------- | -------- | ---------------- |
-| Shell   | gmod     | gmodamericas2010 |
-| MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password         | ------- | -------- | ---------------- | Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
 
 ## Caveats
-
 
 **Important Note**
 
@@ -56,7 +49,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
 ## Prerequisites
 

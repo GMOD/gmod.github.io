@@ -3,12 +3,10 @@ title: "News/DAS Workshop 7-9 April 2010"
 ---
 # News/DAS Workshop 7-9 April 2010
 
-
 <a href="http://www.ebi.ac.uk/training/handson/DAS_070410.html"
 rel="nofollow" title="DAS Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Das_logo_64x64.jpg" width="64"
 height="64" alt="DAS Workshop" /></a>
-
 
 There will be a
 <a href="http://www.ebi.ac.uk/training/handson/DAS_070410.html"
@@ -42,10 +40,8 @@ information and registration details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

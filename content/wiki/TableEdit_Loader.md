@@ -3,7 +3,6 @@ title: "TableEdit Loader"
 ---
 # TableEdit Loader
 
-
   Objective](#Objective)
 - [Location](#Location)
 - [Execution
@@ -29,7 +28,6 @@ title: "TableEdit Loader"
   - [appendRow](#appendRow)
   - [mergeRows](#mergeRows)
   - [clearOldRows](#clearOldRows)
-
 
 **Author** : *Daniel Renfro*
 
@@ -59,22 +57,12 @@ The loader has a few options that can be set in the instantiation code.
 
 #### Options
 
-| option | input value | explanation |
-|----|----|----|
-| *setVerbose()* | none | Will force the loader to tell you more about what is going on behind the scenes. It's not very pretty output because it is activating print statements throughout the code, but it *will* tell you more than normal. |
-| *setUser()* | A valid Username from the wiki | This will use the given user's id as the owner of the loaded rows. It defaults to the `WikiEntryBot` user (which makes the rows public). |
-| *debug()* | none | Tells the loader to go through all the steps of loading, but not actually do anything permanent. This has the effect of making things run much faster because the wiki isn't accessing the database to do writes. |
-| *printInfo()* | true/false | Will print a few lines at the beginning of execution to tell you about what wiki and what user you're working with. |
+| option | input value | explanation |----|----|----| *setVerbose()* | none | Will force the loader to tell you more about what is going on behind the scenes. It's not very pretty output because it is activating print statements throughout the code, but it *will* tell you more than normal. | *setUser()* | A valid Username from the wiki | This will use the given user's id as the owner of the loaded rows. It defaults to the `WikiEntryBot` user (which makes the rows public). | *debug()* | none | Tells the loader to go through all the steps of loading, but not actually do anything permanent. This has the effect of making things run much faster because the wiki isn't accessing the database to do writes. | *printInfo()* | true/false | Will print a few lines at the beginning of execution to tell you about what wiki and what user you're working with. |
 
 #### Public Methods/Properties
 
-| Name | Info | Code / Usage Ex. |
-|----|----|----|
-| `do_misc_features()` | This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function `http_build_query()`. This string then gets cut up into an array by `parse_str()`. | code |
-| `appendRow()` | This method takes care of when the incoming row gets appended to the box. | code |
-| `mergeRows()` | This method gets called when a new row is trying to be merged into an existing box. It can be <a href="http://en.wikipedia.org/wiki/Overriding" class="external text"
-rel="nofollow">overridden</a> to behave differently. | code |
-| `clearOldRows()` | This method gets called with the flag "clear" gets put in the update_type field of IFALT (col 6.) It will delete all the rows in a box. Useful for emptying tables for reloads. | code |
+| Name | Info | Code / Usage Ex. |----|----|----| `do_misc_features()` | This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function `http_build_query()`. This string then gets cut up into an array by `parse_str()`. | code | `appendRow()` | This method takes care of when the incoming row gets appended to the box. | code | `mergeRows()` | This method gets called when a new row is trying to be merged into an existing box. It can be <a href="http://en.wikipedia.org/wiki/Overriding" class="external text"
+rel="nofollow">overridden</a> to behave differently. | code | `clearOldRows()` | This method gets called with the flag "clear" gets put in the update_type field of IFALT (col 6.) It will delete all the rows in a box. Useful for emptying tables for reloads. | code |
 
 ### Example
 
@@ -88,7 +76,6 @@ a basic script which will:
 4.  set up some options for the object (verbosity, etc)
 5.  load info into the tables in the wiki ( by calling the method
     `loadFromFile()`)
-
 
 ``` de1
 <?php
@@ -122,7 +109,6 @@ if(isset($options['w'])){
  
 ?>
 ```
-
 
 ### running the script (loading information into the wiki)
 
@@ -178,7 +164,6 @@ are four return values:
 
 Below is a table that explains these cases in more depth:
 
-
 <table class="sortable" data-border="2" data-cellpadding="4"
 data-cellspacing="0"
 style="margin: 1em 1em 1em 0; background: #ffffff; border: 2px #aaa solid; border-collapse: collapse;">
@@ -206,7 +191,7 @@ new = a | b | c | d | e</code></pre></td>
 <td><p>The <em>new row</em> is a <a
 href="http://en.wikipedia.org/wiki/Subset" class="external text"
 rel="nofollow">superset</a> of the <em>old row</em>.</p></td>
-<td><pre><code>old = a | b |   |   | e
+<td><pre><code>old = a | b |   | e
 new = a | b | c | d | e</code></pre></td>
 <td><ol>
 <li>replace entire <em>old row</em> with <em>new row</em></li>
@@ -233,8 +218,8 @@ They are mutually exclusive.</p></td>
 <tr class="even">
 <td><p>The <em>new row</em> only matches part of the <em>old
 row</em>.</p></td>
-<td><pre><code>new = a | b |   | k | e
-old = a | g | h |   | e</code></pre></td>
+<td><pre><code>new = a | b | k | e
+old = a | g | h | e</code></pre></td>
 <td><ol>
 <li>do nothing
 <ul>
@@ -253,7 +238,6 @@ They are disjoint.</p></td>
 </tr>
 </tbody>
 </table>
-
 
 #### How it works
 
@@ -289,7 +273,6 @@ They are disjoint.</p></td>
 
 #### do_misc_features
 
-
 ``` de1
 public function do_misc_features( $array ){
     foreach ($array as $name => $feature) {
@@ -303,11 +286,9 @@ public function do_misc_features( $array ){
 }
 ```
 
-
   
 
 #### appendRow
-
 
 ``` de1
 public function appendRow($new_row_obj){
@@ -317,11 +298,9 @@ public function appendRow($new_row_obj){
 }
 ```
 
-
   
 
 #### mergeRows
-
 
 ``` de1
 public function mergeRows($new_row_obj){ 
@@ -350,11 +329,9 @@ public function mergeRows($new_row_obj){
 }
 ```
 
-
   
 
 #### clearOldRows
-
 
 ``` de1
 function clearOldRows($box, $time){
@@ -369,8 +346,3 @@ function clearOldRows($box, $time){
     return;
 }
 ```
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")

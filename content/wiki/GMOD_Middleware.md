@@ -3,7 +3,6 @@ title: "GMOD Middleware"
 ---
 # GMOD Middleware
 
-
 This is a summary and detailed notes from the *Chado Middleware Bake
 Off* held at the [January 2007 GMOD
 Meeting](January_2007_GMOD_Meeting "January 2007 GMOD Meeting").
@@ -44,7 +43,6 @@ Java-based tools collaborate to create a Java API that parallels
 Modwares.
 
   
-
 
   Summary</span>](#Executive_Summary)
 - [Middleware for
@@ -122,7 +120,7 @@ Modwares.
     - [Background](#Background)
     - [Technical
       Overview](#Technical_Overview)
-    - [Special topics](#Special_topics)
+    - 
       - [Comparing Hibernate &
         XORT](#Comparing_Hibernate_.26_XORT)
     - [Limitations](#Limitations)
@@ -132,7 +130,7 @@ Modwares.
     - [Background](#Background_2)
     - [Technical
       Overview](#Technical_Overview_2)
-    - [Special topics](#Special_topics_2)
+    - 
     - [Limitations](#Limitations_2)
     - [Presentation by Brian
       O'Connor](#Presentation_by_Brian_O.27Connor)
@@ -140,7 +138,7 @@ Modwares.
     - [Background](#Background_3)
     - [Technical
       Overview](#Technical_Overview_3)
-    - [Special topics](#Special_topics_3)
+    - 
     - [Limitations](#Limitations_3)
     - [Presentation by Eric
       Just](#Presentation_by_Eric_Just)
@@ -149,7 +147,7 @@ Modwares.
     - [Background](#Background_4)
     - [Technical
       Overview](#Technical_Overview_4)
-    - [Special topics](#Special_topics_4)
+    - 
     - [Limitations](#Limitations_4)
     - [Presentation by Scott
       Cain](#Presentation_by_Scott_Cain)
@@ -158,7 +156,7 @@ Modwares.
     - [Background](#Background_5)
     - [Technical
       Overview](#Technical_Overview_5)
-    - [Special topics](#Special_topics_5)
+    - 
     - [Limitations](#Limitations_5)
     - [Presentation by Jeff
       Bowes](#Presentation_by_Jeff_Bowes)
@@ -203,7 +201,6 @@ Modwares.
       Micklem](#Presentation_by_Gos_Micklem)
 - [Wiki
   Authors](#Wiki_Authors)
-
 
 ## Middleware for Chado databases
 
@@ -918,16 +915,13 @@ table:
 
 Corresponding code:
 
-
 ``` de1
 package Chado::Cvterm;
 use base 'Chado::DBI';
 Chado::Cvterm->set_up_table('Cvterm');
 ```
 
-
 ##### Class::DBI - CRUD
-
 
 ``` de1
 ## Create
@@ -946,7 +940,6 @@ $term_dbobj->definition( $term->definition );
 ## Delete
 $term_dbobj->delete();
 ```
-
 
 ##### Java - Hibernate
 
@@ -1066,7 +1059,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
     it's not suited to bulk operations
 - Joins & complex queries
 
-
 ``` de1
 # Add the add_constructor for looking for name lengths
  
@@ -1079,7 +1071,6 @@ __PACKAGE__->set_sql(xfiles => qq{
        FROM FEATURE
        WHERE NAME = 'xfiles' });
 ```
-
 
 #### Presentation by Brian O'Connor
 
@@ -1273,12 +1264,10 @@ Presentation](Hibernate_Presentation "Hibernate Presentation")
 
 ### PSU Chado Interface
 
-
 *I think this eventually became what is described in the [Artemis-Chado
 Integration
 Tutorial](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial").
 [Dave C.](User%253AClements "User%253AClements")*
-
 
 #### Background
 

@@ -3,7 +3,6 @@ title: "Perl Testing - by Gavin Sherlock"
 ---
 # Perl Testing - by Gavin Sherlock
 
-
   Writing Tests for Perl
   Code</span>](#Guideline_for_Writing_Tests_for_Perl_Code)
   - [Philosophy](#Philosophy)
@@ -20,7 +19,6 @@ title: "Perl Testing - by Gavin Sherlock"
     Test-Suite](#Testing_Coverage_of_your_Test-Suite)
   - [Testing
     Performance](#Testing_Performance)
-
 
 ## Guideline for Writing Tests for Perl Code
 
@@ -125,7 +123,6 @@ function in one of your modules that should always return a number
 between 1 and 100. A test script to test that functionality is as simple
 as:
 
-
 ``` de1
 #!/usr/bin/perl -w
 use Test::Simple tests => 2;
@@ -134,7 +131,6 @@ use Mylib qw (function1);
 ok (function1() >= 1); 
 ok (function1() <= 100);
 ```
-
 
 when you run this, you should get something like:
 
@@ -156,7 +152,6 @@ It's now pretty easy to track down your regression. At some point, you
 will hopefully have hundreds of tests, so `ok()` allows you to provide
 some useful descriptive text for them too:
 
-
 ``` de1
 #!/usr/bin/perl -w
 use Test::Simple tests => 2; 
@@ -165,7 +160,6 @@ use Mylib qw (function1);
 ok (function1() >= 1, "function1()'s return value is greater than or equal to 1");
 ok (function1() >= 100, "and it's less than or equal to 100");
 ```
-
 
 which will now give:
 
@@ -189,7 +183,6 @@ rel="nofollow">http://search.cpan.org/dist/Test-Pod-Coverage/</a>)
 checks for pod coverage in your distribution, and is trivial to use.
 Just create a .t file with the following content:
 
-
 ``` de1
 use Test::More; 
 eval "use Test::Pod::Coverage 1.00"; 
@@ -202,13 +195,11 @@ for my $module (@modules) {
 }
 ```
 
-
 This will test all of your modules for pod coverage. To test that the
 pod documentation is syntactically correct, use Test::Pod
 (<a href="http://search.cpan.org/dist/Test-Pod/" class="external free"
 rel="nofollow">http://search.cpan.org/dist/Test-Pod/</a>), which again
 can be easily used, with a .t file containing:
-
 
 ``` de1
 use Test::More; 
@@ -216,7 +207,6 @@ eval "use Test::Pod 1.00";
 plan skip_all => "This is not an error, Test::Pod 1.00 is required for testing POD" if $@; 
 all_pod_files_ok();
 ```
-
 
 This test file will test that all of the pod in any files with a .pm or
 a .pl extension in the distribution have syntactically correct pod. if

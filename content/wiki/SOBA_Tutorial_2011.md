@@ -3,7 +3,6 @@ title: "SOBA Tutorial 2011"
 ---
 # SOBA Tutorial 2011
 
-
 **<a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
 class="external text" rel="nofollow">SOBA</a>** is a command line tool
 and web application for analyzing [GFF3](GFF3 "GFF3") annotations.
@@ -48,14 +47,12 @@ makes extensibility very easy, at least for someone who's willing to
 learn the fairly simple template language of TT (you don't need to know
 Perl or any other programming to use TT).
 
-
   Application</span>](#SOBA_Web_Application)
 - [SOBAcl](#SOBAcl)
   - [Help](#Help)
   - [Tables](#Tables)
   - [Charts](#Charts)
   - [Reports](#Reports)
-
 
 # SOBA Web Application
 
@@ -78,9 +75,7 @@ modern browser that has JavaScript enabled.
 <tr class="odd">
 <td>
 
-
 <strong>Figure:8</strong> SOBA feature lengths by chromosome
-
 
 </td>
 <td></td>

@@ -3,7 +3,6 @@ title: "GMOD in a Box/Updating"
 ---
 # GMOD in a Box/Updating
 
-
 To update from one version of GMOD in a Box to another, follow these
 steps:
 

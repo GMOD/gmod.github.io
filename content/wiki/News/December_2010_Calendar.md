@@ -3,10 +3,8 @@ title: "News/December 2010 Calendar"
 ---
 # News/December 2010 Calendar
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
 height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
-
 
 There are almost no submission deadlines in December. (However, to buck
 the trend, the deadline for applying to the [2011 GMOD Spring
@@ -33,10 +31,8 @@ Happy holidays,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

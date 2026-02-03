@@ -3,7 +3,6 @@ title: "Post Reference Genome Tools"
 ---
 # Post Reference Genome Tools
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
 <colgroup>
@@ -49,14 +48,12 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 
   
 
-
 How are we going to visualize and exploit (or even cope with) the world
 three years from now, when small labs may be able to fully sequence 500
 individuals or species (or more) in a month? How can we visualize and
 link together 500, 1000, or 10,000 genomes? Many existing tools assume a
 reference genome. Will a reference make sense in the future, or will it
 hold us back?
-
 
 This was a [Satellite
 Meeting](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
@@ -65,7 +62,6 @@ Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting") and
 was a part of [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010").
 See [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") for
 information on other events.
-
 
   Participants](#Participants)
 - [Summary](#Summary)
@@ -81,32 +77,18 @@ information on other events.
 - [See
   Also](#See_Also)
 
-
 ## Participants
 
-| Participant | Affilliation(s) | URL |
-|----|----|----|
-| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free"
+| Participant | Affilliation(s) | URL |----|----|----| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free"
 rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
-rel="nofollow">http://gmod.org</a> |
-| Fengyuan Hu | Department of Genetics, University of Cambridge |  |
-| Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> |
-| seth redmond | Imperial College / Vectorbase |  |
-| [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") |  | <a href="http://cgb.indiana.edu" class="external free"
-rel="nofollow">http://cgb.indiana.edu</a> |
-| Jerven Bolleman | UniProt Swiss-Prot |  |
-| Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne |  |
-| Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
-rel="nofollow">http://www.pombase.org/</a> |
-| Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> |
-| [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
-rel="nofollow">http://gmod.org/</a> |
-| joan pontius | SAIC-NCI-FREDERICK Laboratory of Genomic Diversity | <a href="http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/"
+rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
+rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | <a href="http://cgb.indiana.edu" class="external free"
+rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
+rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
+rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
+rel="nofollow">http://gmod.org/</a> | joan pontius | SAIC-NCI-FREDERICK Laboratory of Genomic Diversity | <a href="http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/"
 class="external free"
-rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> |
-| [Don Gilbert](User%253ADongilbert "User%253ADongilbert") | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
+rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> | [Don Gilbert](User%253ADongilbert "User%253ADongilbert") | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
 rel="nofollow">http://arthropods.eugenes.org/</a> |
 
 ## Summary
@@ -276,7 +258,6 @@ Key ideas here are network representation and navigation.
 Clade databases can also provide some insights here. An excerpt from and
 email from [Don Gilbert](User%253ADongilbert "User%253ADongilbert"):
 
-
 Part of the answer likely involves clade genomics, i.e. don't peg your
 new genome to one reference, but to a consensus of several related. We
 do that to some effect w/ the insects / arthropods.
@@ -300,7 +281,6 @@ go with many related genomes, drawing on them all instead of just
 *Arabidopsis* as a reference. USDA seems to be shepherding the plant
 databases to work in sync. Gramene and other plant databases may be good
 examples for post-reference genome informatics.
-
 
 ## See Also
 

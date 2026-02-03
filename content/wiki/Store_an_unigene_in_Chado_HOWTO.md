@@ -3,7 +3,6 @@ title: "Store an unigene in Chado HOWTO"
 ---
 # Store an unigene in Chado HOWTO
 
-
   an unigene in a Chado
   database</span>](#How_to_store_an_unigene_in_a_Chado_database)
   - [Chado
@@ -14,7 +13,6 @@ title: "Store an unigene in Chado HOWTO"
       - [Note](#Note)
     - [ESTs
       and assembly alignments](#ESTs_and_assembly_alignments)
-
 
 # How to store an unigene in a Chado database
 
@@ -94,10 +92,7 @@ table](Chado_Tables#Table:_feature "Chado Tables").
 - **type_id**: 345
 - **is_analysis**: False
 
-| dbxref_id  | organism    | name   | uniquename | type_id   | is_analysis |
-|------------|-------------|--------|------------|-----------|-------------|
-| CMV:EST001 | organism id | EST001 | CMV:EST001 | SO:345 id | False       |
-| CMV:EST002 | organism id | EST002 | CMV:EST002 | SO:345 id | False       |
+| dbxref_id  | organism    | name   | uniquename | type_id   | is_analysis |------------|-------------|--------|------------|-----------|-------------| CMV:EST001 | organism id | EST001 | CMV:EST001 | SO:345 id | False       | CMV:EST002 | organism id | EST002 | CMV:EST002 | SO:345 id | False       |
 
 ### Unigene
 
@@ -111,16 +106,11 @@ residues.
 
 The feature entry for the unigene.
 
-| dbxref_id  | organism | name   | uniquename | type_id    | is_analysis |
-|------------|----------|--------|------------|------------|-------------|
-| CMV:UNI001 | ?        | UNI001 | CMV:UNI001 | SO:1457 id | True        |
+| dbxref_id  | organism | name   | uniquename | type_id    | is_analysis |------------|----------|--------|------------|------------|-------------| CMV:UNI001 | ?        | UNI001 | CMV:UNI001 | SO:1457 id | True        |
 
 The feature relationships (feature graph).
 
-| subject_id | object_id | type_id    | rank |
-|------------|-----------|------------|------|
-| EST001 id  | UNI001 id | part_of id | 0    |
-| EST002 id  | UNI000 id | part_of id | 0    |
+| subject_id | object_id | type_id    | rank |------------|-----------|------------|------| EST001 id  | UNI001 id | part_of id | 0    | EST002 id  | UNI000 id | part_of id | 0    |
 
 #### Note
 
@@ -145,26 +135,15 @@ is an alignment. For each alignment there is:
 
 Additional features for the alignments.
 
-| organism | uniquename      | type_id   | is_analysis |
-|----------|-----------------|-----------|-------------|
-| ?        | CMV:UNI001_EST1 | SO:668 id | True        |
-| ?        | CMV:UNI001_EST2 | SO:668 id | True        |
+| organism | uniquename      | type_id   | is_analysis |----------|-----------------|-----------|-------------| ?        | CMV:UNI001_EST1 | SO:668 id | True        | ?        | CMV:UNI001_EST2 | SO:668 id | True        |
 
 An [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
 for each of the previous features with the alignment scores. If we don't
 need to store these scores, maybe be this table could be optional.
 
-| feature_id         | analysis_id                | identity       |
-|--------------------|----------------------------|----------------|
-| CMV:UNI001_EST1 id | EST clustering analysis id | The identity % |
-| CMV:UNI001_EST2 id | EST clustering analysis id | The identity % |
+| feature_id         | analysis_id                | identity       |--------------------|----------------------------|----------------| CMV:UNI001_EST1 id | EST clustering analysis id | The identity % | CMV:UNI001_EST2 id | EST clustering analysis id | The identity % |
 
 The alignment coordinates are stored in two featurelocs in the
 [featureloc table](Chado_Tables#Table:_featureloc "Chado Tables").
 
-| feature_id | srcfeature_id | fmin | fmax | strand | residue_info | rank |
-|----|----|----|----|----|----|----|
-| CMV:UNI001_EST1 id | UNI001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 0 |
-| CMV:UNI001_EST1 id | EST001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 |
-| CMV:UNI001_EST2 id | UNI001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 0 |
-| CMV:UNI001_EST2 id | EST002 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 |
+| feature_id | srcfeature_id | fmin | fmax | strand | residue_info | rank |----|----|----|----|----|----|----| CMV:UNI001_EST1 id | UNI001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 0 | CMV:UNI001_EST1 id | EST001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 | CMV:UNI001_EST2 id | UNI001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 0 | CMV:UNI001_EST2 id | EST002 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 |

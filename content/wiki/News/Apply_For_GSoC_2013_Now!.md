@@ -3,12 +3,10 @@ title: "News/Apply For GSoC 2013 Now!"
 ---
 # News/Apply For GSoC 2013 Now!
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/250px-Soc-logo-google-blue.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/375px-Soc-logo-google-blue.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/500px-Soc-logo-google-blue.jpg 2x"
 width="250" height="133" alt="Soc-logo-google-blue.jpg" />](../GSoC "GSoC")
-
 
 The Genome Informatics group is now accepting applications from students
 to participate in [Google Summer of Code 2013](../GSoC "GSoC").
@@ -34,6 +32,5 @@ class="external text" rel="nofollow">Genome Informatics GSoC mailing
 list</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/24*

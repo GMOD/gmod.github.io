@@ -3,12 +3,10 @@ title: "Talk:Chado New Users"
 ---
 # Talk:Chado New Users
 
-
   Notes</span>](#Meeting_Notes)
   - [20070405](#20070405)
   - [20070329](#20070329)
   - [20070322](#20070322)
-
 
 ## Meeting Notes
 
@@ -39,16 +37,16 @@ Gives:
 
     name  | dbxref_id | db_id | accession | version | description | feature_dbxref_id | feature_id | dbxref_id | is_current 
     -------+-----------+-------+-----------+---------+-------------+-------------------+------------+-----------+------------
-    COX2  |     42435 |     2 | landmark  | 1       |             |             16241 |      16241 |     42435 | t
-    COB   |     42435 |     2 | landmark  | 1       |             |             16176 |      16176 |     42435 | t
-    COX1  |     42435 |     2 | landmark  | 1       |             |             16129 |      16129 |     42435 | t
-    RPC40 |     42435 |     2 | landmark  | 1       |             |             15800 |      15800 |     42435 | t
-    HTS1  |     42435 |     2 | landmark  | 1       |             |             15623 |      15623 |     42435 | t
-    ERG10 |     42435 |     2 | landmark  | 1       |             |             15474 |      15474 |     42435 | t
-    PEP4  |     42435 |     2 | landmark  | 1       |             |             15173 |      15173 |     42435 | t
-    TPK2  |     42435 |     2 | landmark  | 1       |             |             15058 |      15058 |     42435 | t
-    GAL4  |     42435 |     2 | landmark  | 1       |             |             14960 |      14960 |     42435 | t
-    RAD17 |     42435 |     2 | landmark  | 1       |             |             14775 |      14775 |     42435 | t
+    COX2  |     42435 |     2 | landmark  | 1       |             16241 |      16241 |     42435 | t
+    COB   |     42435 |     2 | landmark  | 1       |             16176 |      16176 |     42435 | t
+    COX1  |     42435 |     2 | landmark  | 1       |             16129 |      16129 |     42435 | t
+    RPC40 |     42435 |     2 | landmark  | 1       |             15800 |      15800 |     42435 | t
+    HTS1  |     42435 |     2 | landmark  | 1       |             15623 |      15623 |     42435 | t
+    ERG10 |     42435 |     2 | landmark  | 1       |             15474 |      15474 |     42435 | t
+    PEP4  |     42435 |     2 | landmark  | 1       |             15173 |      15173 |     42435 | t
+    TPK2  |     42435 |     2 | landmark  | 1       |             15058 |      15058 |     42435 | t
+    GAL4  |     42435 |     2 | landmark  | 1       |             14960 |      14960 |     42435 | t
+    RAD17 |     42435 |     2 | landmark  | 1       |             14775 |      14775 |     42435 | t
 
 Note that all have the same dbxref_id.
 

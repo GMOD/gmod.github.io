@@ -3,7 +3,6 @@ title: "Talk:GMOD Promotion"
 ---
 # Talk:GMOD Promotion
 
-
 ## citing GMOD
 
 NCBI published some guidelines to cite a wiki: <a

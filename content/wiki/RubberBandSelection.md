@@ -3,7 +3,6 @@ title: "RubberBandSelection"
 ---
 # RubberBandSelection
 
-
 "Rubber-band", or drag-selection is a user-interface feature of GBrowse
 1.69 and later. It a javascript/DHTML-based feature that works in all
 major web browsers and is turned on by default. The purpose of this page
@@ -118,7 +117,6 @@ or hex code is accepted.</p></td>
                </td>
              </tr>
             </table>
-
 
     [DETAIL SELECT MENU]
     width = 250

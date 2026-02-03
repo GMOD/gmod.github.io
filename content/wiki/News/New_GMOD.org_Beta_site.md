@@ -3,12 +3,10 @@ title: "News/New GMOD.org Beta site"
 ---
 # News/New GMOD.org Beta site
 
-
 <a href="http://gmod-dev.oicr.on.ca/" rel="nofollow"
 title="GMOD Beta site"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/Gmod_cogTransparentBeta155.png"
 width="155" height="114" alt="GMOD Beta site" /></a>
-
 
 We have begun the process of migrating the
 [gmod.org](../Main_Page "Main Page") wiki from it server in
@@ -29,10 +27,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

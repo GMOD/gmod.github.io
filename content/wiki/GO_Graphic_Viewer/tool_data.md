@@ -3,7 +3,6 @@ title: "GO Graphic Viewer/tool data"
 ---
 # GO Graphic Viewer/tool data
 
-
 \| name = GO Graphic Viewer \| full_name = \| status =
 mature \| dev = inactive \| support = active \| type = Ontology
 Visualization \| platform = linux, os x, unix, win\|platform = linux, os

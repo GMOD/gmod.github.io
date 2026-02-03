@@ -3,15 +3,12 @@ title: "Category%253AGBrowse Plugins"
 ---
 # Category%253AGBrowse Plugins
 
-
 For an overview, see [GBrowse
 Plugins](GBrowse_Plugins "GBrowse Plugins").
-
 
 ## Pages in category "GBrowse Plugins"
 
 The following 25 pages are in this category, out of 25 total.
-
 
 <table style="width: 100%;">
 <colgroup>

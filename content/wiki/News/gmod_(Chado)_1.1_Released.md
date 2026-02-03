@@ -3,7 +3,6 @@ title: "News/gmod (Chado) 1.1 Released"
 ---
 # News/gmod (Chado) 1.1 Released
 
-
 I am pleased to announce that we released
 <a href="https://sourceforge.net/projects/gmod/" class="external text"
 rel="nofollow">gmod-1.1</a> today. This release has the GMOD database
@@ -54,10 +53,8 @@ Thanks for your continued support of the GMOD project,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/24*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

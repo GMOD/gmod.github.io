@@ -3,7 +3,6 @@ title: "Chado FAQ"
 ---
 # Chado FAQ
 
-
   FAQ</span>](#About_this_FAQ)
   - [What is
     this FAQ?](#What_is_this_FAQ.3F)
@@ -37,7 +36,6 @@ title: "Chado FAQ"
   - [Loading
     Ontologies takes forever! There has to be a better
     way?](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
-
 
   
 
@@ -110,13 +108,11 @@ do about it.
 
 Instead, you must run a SQL command to repair the database:
 
-
 ``` de1
  UPDATE cvterm SET cv_id = (SELECT cv_id FROM cv WHERE name = 'relationship')
   WHERE name = 'part_of'
    AND cv_id IN (SELECT cv_id FROM cv WHERE name='gene_ontology');
 ```
-
 
 Then, rerunning the loader with the --recreate_cache option should allow
 the database to load. Sorry for the hassle.

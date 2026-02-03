@@ -3,14 +3,12 @@ title: "Databases and GMOD"
 ---
 # Databases and GMOD
 
-
 This introduces the broad topic of databases in GMOD. It introduces some
 [database terminology](#Database_Terminology) for those that are new to
 databases. It also covers how databases are implemented and used in
 GMOD, and what database management system choices are available.
 
   
-
 
   Terminology</span>](#Database_Terminology)
   - [What's a
@@ -49,7 +47,6 @@ GMOD, and what database management system choices are available.
     - [Sybase](#Sybase)
 - [See
   Also](#See_Also)
-
 
 ## Database Terminology
 

@@ -3,14 +3,11 @@ title: "Category%253AGMOD in the Cloud"
 ---
 # Category%253AGMOD in the Cloud
 
-
 Pages pertaining to using cloud computing for GMOD data and software.
-
 
 ## Pages in category "GMOD in the Cloud"
 
 The following 12 pages are in this category, out of 12 total.
-
 
 <table style="width: 100%;">
 <colgroup>

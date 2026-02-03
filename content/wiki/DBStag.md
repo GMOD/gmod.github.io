@@ -3,17 +3,14 @@ title: "DBStag"
 ---
 # DBStag
 
-
 DBStag is a generic [SQL](Glossary#SQL "Glossary") to
 [XML](Glossary#XML "Glossary") mapping tool
-
 
   Download](#Download)
 - [Use](#Use)
   - [Loading
     data](#Loading_data)
   - [Querying](#Querying)
-
 
 ## Download
 

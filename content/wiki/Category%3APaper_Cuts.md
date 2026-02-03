@@ -3,14 +3,11 @@ title: "Category%253APaper Cuts"
 ---
 # Category%253APaper Cuts
 
-
 Literature selections of interest to GMOD users and developers.
-
 
 ## Pages in category "Paper Cuts"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### N
 

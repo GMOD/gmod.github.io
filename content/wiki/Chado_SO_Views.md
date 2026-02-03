@@ -3,7 +3,6 @@ title: "Chado SO Views"
 ---
 # Chado SO Views
 
-
 Starting with the GMOD 1.1 release, Chado has a set of views to make
 querying the feature table for specific SO types (eg, gene, transcript,
 region) easier. These views are a schema called "so"; as a result, to
@@ -20,7 +19,6 @@ identified as having a feature.type_id of the name of the view, or a
 type_id that IS_A type child of the name of the view, it is found.
 
 For example, the following view is for all exons in the feature table:
-
 
 ``` de1
 CREATE VIEW exon AS
@@ -40,7 +38,6 @@ CREATE VIEW exon AS
         cvterm.name = 'five_prime_noncoding_exon' OR
         cvterm.name = 'exon';
 ```
-
 
 Essentially, it is a way of taking advantage of the structure of the
 ontology without calculating the

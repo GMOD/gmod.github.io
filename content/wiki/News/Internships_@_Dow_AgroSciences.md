@@ -3,13 +3,11 @@ title: "News/Internships @ Dow AgroSciences"
 ---
 # News/Internships @ Dow AgroSciences
 
-
 <a href="../File:Das_header_logo.gif" class="image"
 title="Dow AgroSciences"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d7/Das_header_logo.gif/200px-Das_header_logo.gif"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d7/Das_header_logo.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d7/Das_header_logo.gif 2x"
 width="200" height="63" alt="Dow AgroSciences" /></a>
-
 
 <a href="http://www.bioinformatics.org/forums/forum.php?forum_id=7919"
 class="external text" rel="nofollow">Dow AgroSciences has 7
@@ -30,10 +28,8 @@ Navin Elango
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

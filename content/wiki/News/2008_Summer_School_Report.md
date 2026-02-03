@@ -3,10 +3,8 @@ title: "News/2008 Summer School Report"
 ---
 # News/2008 Summer School Report
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/SummerSchoolSmall.png" width="200"
 height="182" alt="2008 GMOD Summer School" />](../2008_GMOD_Summer_School "2008 GMOD Summer School")
-
 
 Or, *what 29 people did with their summer vacation.*
 
@@ -45,10 +43,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

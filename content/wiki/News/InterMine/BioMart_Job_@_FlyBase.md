@@ -3,7 +3,6 @@ title: "News/InterMine/BioMart Job @ FlyBase"
 ---
 # News/InterMine/BioMart Job @ FlyBase
 
-
 <a href="http://www.bioinformatics.org/forums/forum.php?forum_id=8313"
 rel="nofollow" title="Open position at FlyBase"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e0/Fly_logo.png/220px-Fly_logo.png"
@@ -16,7 +15,6 @@ width="100" height="13" alt="InterMine" />](../../InterMine "InterMine")
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/100px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/150px-Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/200px-Biomart250.png 2x"
 width="100" height="40" alt="BioMart" />](../../BioMart "BioMart")
-
 
 <a href="http://www.bioinformatics.org/forums/forum.php?forum_id=8313"
 class="external text" rel="nofollow">FlyBase is looking for a qualified
@@ -41,10 +39,8 @@ details.
 
   
 
-
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2010/09/03*
 
-
-[Category](../../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

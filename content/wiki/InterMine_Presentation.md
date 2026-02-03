@@ -3,11 +3,9 @@ title: "InterMine Presentation"
 ---
 # InterMine Presentation
 
-
 This Wiki page is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/InterMine_middleware.pdf"
 class="internal" title="InterMine middleware.pdf">Gos's presentation</a>
-
 
   Background](#Background)
 - [Technical
@@ -37,7 +35,6 @@ class="internal" title="InterMine middleware.pdf">Gos's presentation</a>
 - [Implications
   of Query Optimisation](#Implications_of_Query_Optimisation)
 - [Acknowledgements](#Acknowledgements)
-
 
 #### Background
 
@@ -87,7 +84,6 @@ rel="nofollow">FlyMine Project</a>
 
 ##### Example InterMine XML for Problem 1: load genes + annotation
 
-
 ``` de1
 <items>
    <item id="0_3" class=”” implements="http://www.flymine.org/model/genomic#Gene">
@@ -104,7 +100,6 @@ rel="nofollow">FlyMine Project</a>
    ...
 ```
 
-
 ##### Resulting webapp object page
 
 <img
@@ -112,7 +107,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="xfile Gene details page" />
 
 #### Code for Problem 2: Print gene annotation report
-
 
 ``` de1
 public class BakeOff {
@@ -173,11 +167,9 @@ public class BakeOff {
 }
 ```
 
-
 #### Quicksearch - Problem 4: find genes starting with x
 
 ##### Java API
-
 
 ``` de1
   Query q = new Query();
@@ -191,23 +183,18 @@ public class BakeOff {
   q.setConstraint(sc);
 ```
 
-
 ##### IQL
-
 
 ``` de1
   SELECT DISTINCT a1_.identifier AS a2_ FROM org.flymine.model.genomic.Gene AS a1_ WHERE a1_.identifier LIKE 'x-%'
 ```
 
-
 ##### Perl API
-
 
 ``` de1
   my $genes = InterMine::Gene::Manager->get_genes(query => [
                              identifier => { like => 'x-%' },],);
 ```
-
 
 #### Larger Query
 
@@ -256,8 +243,3 @@ Within FlyMine: For one or more genes report:
 InterMine/FlyMine are funded by the Wellcome Trust (grant no. 067205),
 awarded to M. Ashburner, G. Micklem, S. Russell, K. Lilley and K.
 Mizuguchi.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [InterMine](Category%253AInterMine "Category%253AInterMine")

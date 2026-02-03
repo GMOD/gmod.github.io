@@ -3,7 +3,6 @@ title: "Updating Chado"
 ---
 # Updating Chado
 
-
 As of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 version 1.2, the Chado software distribution comes with a tool to
 upgrade the Chado schema from an old version (1.0 or newer) to a new
@@ -44,8 +43,3 @@ database's configuration file in \$GMOD_ROOT/conf.
 If you experience problems with this updating protocol, please send
 comments, questions and issue reports to
 gmod-schema@lists.sourceforge.net.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")

@@ -3,10 +3,8 @@ title: "ASPB 2012 GBrowse Tutorial"
 ---
 # ASPB 2012 GBrowse Tutorial
 
-
 Registration for the GBrowse tutorial at ASPB is now closed, with 97
 registered attendees.
-
 
   Interest</span>](#Other_Items_of_Interest)
 - [VirtualBox
@@ -17,7 +15,6 @@ registered attendees.
     Sequence](#Next_Gen_Sequence)
 - [Thoughts after
   the workshop](#Thoughts_after_the_workshop)
-
 
 ## Other Items of Interest
 

@@ -3,11 +3,9 @@ title: "News/GMOD Meeting Registration Open"
 ---
 # News/GMOD Meeting Registration Open
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/Jan2009MtgLogoNoText.png"
 width="170" height="121"
 alt="January in San Diego - think about that" />](../January_2009_GMOD_Meeting "January in San Diego - think about that")
-
 
 Registration is now open for the [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting"). The
@@ -43,10 +41,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/11/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

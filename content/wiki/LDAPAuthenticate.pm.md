@@ -3,7 +3,6 @@ title: "LDAPAuthenticate.pm"
 ---
 # LDAPAuthenticate.pm
 
-
   NAME](#NAME)
   - [SYNOPSIS](#SYNOPSIS)
   - [DESCRIPTION](#DESCRIPTION)
@@ -11,7 +10,6 @@ title: "LDAPAuthenticate.pm"
   - [SEE
     ALSO](#SEE_ALSO)
   - [AUTHOR](#AUTHOR)
-
 
 # NAME
 

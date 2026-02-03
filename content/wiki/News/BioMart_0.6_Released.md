@@ -3,7 +3,6 @@ title: "News/BioMart 0.6 Released"
 ---
 # News/BioMart 0.6 Released
 
-
 Version 0.6 of the BioMart has been
 <a href="http://www.biomart.org/news.html" class="external text"
 rel="nofollow">released</a>. Version 0.6 includes support for a 1.5
@@ -17,10 +16,8 @@ system for biological data.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/06/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,20 +3,17 @@ title: "2011 GMOD Spring Training"
 ---
 # 2011 GMOD Spring Training
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f2/2011GMODSpringTrainingLogo.png/600px-2011GMODSpringTrainingLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f2/2011GMODSpringTrainingLogo.png/900px-2011GMODSpringTrainingLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f2/2011GMODSpringTrainingLogo.png 2x"
 width="600" height="238"
 alt="2011 GMOD Spring Training March 8-12, 2011" />
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/600px-2011GMODSpringTraining.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/900px-2011GMODSpringTraining.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/1200px-2011GMODSpringTraining.jpg 2x"
 width="600" height="177"
 alt="March 2011 GMOD Spring Training Participants, minus a few" />
-
 
   Sessions → Online
   Tutorials</span>](#Course_Sessions_.E2.86.92_Online_Tutorials)
@@ -38,7 +35,6 @@ alt="March 2011 GMOD Spring Training Participants, minus a few" />
   Lodging and Meals](#Travel.2C_Lodging_and_Meals)
 - [Feedback](#Feedback)
 
-
 The ***2011 GMOD Spring Training*** was held March 8-12 at the
 <a href="http://www.nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
@@ -54,7 +50,6 @@ participants and admission was competitive.
 
 The course sessions will become online tutorials on this wiki following
 the course.
-
 
 <table>
 <colgroup>
@@ -94,7 +89,6 @@ Tutorial</a></li>
 </tr>
 </tbody>
 </table>
-
 
 # Schedule
 
@@ -191,27 +185,17 @@ questions and help participants use the tools with their data.
 Sessions were taught by experienced component developers and GMOD
 project staff:
 
-| Instructor | GMOD Affiliation | Affiliation |
-|----|----|----|
-| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a> |
-| [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> |
-| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.wsu.edu" class="external text"
-rel="nofollow">Washington State University</a> |
-| Alex Kalderimis | [InterMine](InterMine "InterMine") | <a href="http://flymine.org" class="external text"
-rel="nofollow">FlyMine</a> |
-| [Barry Moore](User%253ABmoore "User%253ABmoore") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> |
-| [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> |
-| [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), [GBrowse](GBrowse.1 "GBrowse") | <a href="http://iplantcollaborarive" class="external text"
-rel="nofollow">iPlant Collaborative</a> |
-| [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
+rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.wsu.edu" class="external text"
+rel="nofollow">Washington State University</a> | Alex Kalderimis | [InterMine](InterMine "InterMine") | <a href="http://flymine.org" class="external text"
+rel="nofollow">FlyMine</a> | [Barry Moore](User%253ABmoore "User%253ABmoore") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"
+rel="nofollow">University of Utah</a> | [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), [GBrowse](GBrowse.1 "GBrowse") | <a href="http://iplantcollaborarive" class="external text"
+rel="nofollow">iPlant Collaborative</a> | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
 rel="nofollow">University of California, Berkeley</a> |
 
 # Prerequisites
-
 
 *The course requires a minimal level of Linux systems administration
 knowledge* (see [Computing
@@ -229,14 +213,11 @@ GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
 GBrowse data.* This also requires installing Apache, and
 [BioPerl](BioPerl "BioPerl") and all its dependencies.
 
-
 # System Requirements
-
 
 <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a>
-
 
 <span style="font-size: 110%">**Participants are required to bring their
 own laptops, already capable of running a virtual system (e.g. VMware)
@@ -250,9 +231,7 @@ course:
 
 ### VMware on Windows and Linux
 
-|  |  |  |
-|----|----|----|
-| <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img
+|  |----|----|----| <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a> | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
@@ -263,17 +242,13 @@ rel="nofollow">VMware</a>. You will need to register to download it. There are m
 
 ### VMware on Mac OS X
 
-|  |  |
-|----|----|
-| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
+|----|----| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several other options, **all of which require an Intel Mac**: |
 
 VMware Fusion
 
-|  |  |
-|----|----|
-| <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
+|----|----| <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a> | <a href="http://www.vmware.com/products/fusion/" class="external text"
 rel="nofollow">VMware Fusion</a> (<a href="http://www.vmware.com/a/buylink/10" class="external text"
@@ -282,9 +257,7 @@ class="external text" rel="nofollow">$40/Academic</a>) allows you to run VMware 
 
 VirtualBox
 
-|  |  |
-|----|----|
-| <img
+|----|----| <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" /> | <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
 rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel Macs (and Windows, Linux and Solaris too). It claims to be capable of running VMware images, *but we have not tested this with our images.* |
@@ -308,12 +281,10 @@ instructor costs and incidentals.
 
 # Sponsors
 
-
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 The <a href="http://nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> is
@@ -324,12 +295,10 @@ evolutionary biology and improving evolution education, and offers
 resources for scientists, educators, and the general public that meet
 these goals.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />
-
 
 The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring this course
 and all other [GMOD Americas
@@ -346,10 +315,8 @@ participation in this event.
 
 # Get the Word Out!
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
 width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
-
 
 Help spread the word about GMOD Spring Training and other [GMOD Americas
 2011](GMOD_Americas_2011 "GMOD Americas 2011") events by posting and

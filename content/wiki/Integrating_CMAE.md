@@ -3,13 +3,11 @@ title: "Integrating CMAE"
 ---
 # Integrating CMAE
 
-
 Note: This document was generated from a POD formatted document checked
 in at <a
 href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view=markup"
 class="external text" rel="nofollow">sourceforge</a>. Editing will not
 result in long term changes.
-
 
   the CMap Assembly Editor (CMAE) with In-House
   Systems</span>](#Integrating_the_CMap_Assembly_Editor_.28CMAE.29_with_In-House_Systems)
@@ -37,7 +35,6 @@ result in long term changes.
   Data](#Modifying_Data)
 - [Conclusion](#Conclusion)
 - [AUTHOR](#AUTHOR)
-
 
 ## Integrating the CMap Assembly Editor (CMAE) with In-House Systems
 
@@ -237,8 +234,3 @@ gmod-cmap@lists.sourceforge.net.
 Ben Faga, faga@cshl.edu
 
 Copyright (c) 2007 Cold Spring Harbor Laboratory
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [CMap](Category%253ACMap "Category%253ACMap")

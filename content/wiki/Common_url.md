@@ -3,17 +3,14 @@ title: "Standard URL"
 ---
 # Standard URL
 
-
 (Redirected from [Common
 url](/wiki/Common_url)
-
 
 In order to simplify the retrieval of common datasets, the Generic Model
 Organisms Database (GMOD) community has recommended a series of standard
 URLs, or a common download URL. Each participating MOD has an index page
 like the ones below, describing the species and datasets that are
 available.
-
 
   URL</span>](#MOD_Standard_URL)
 - [About GMOD
@@ -25,18 +22,13 @@ available.
 - [See
   also](#See_also)
 
-
 # MOD Standard URL
 
-| MOD | Standard URL | Description |
-|----|----|----|
-| <a href="http://www.wormbase.org/" class="external text"
+| MOD | Standard URL | Description |----|----|----| <a href="http://www.wormbase.org/" class="external text"
 rel="nofollow">WormBase</a> | <a href="http://www.wormbase.org/genome/" class="external free"
-rel="nofollow">http://www.wormbase.org/genome/</a> | *Caenorhabditis elegans* and related nematodes |
-| <a href="http://wfleabase.org/" class="external text"
+rel="nofollow">http://www.wormbase.org/genome/</a> | *Caenorhabditis elegans* and related nematodes | <a href="http://wfleabase.org/" class="external text"
 rel="nofollow">wFleaBase</a> | <a href="http://wfleabase.org/genome/" class="external free"
-rel="nofollow">http://wfleabase.org/genome/</a> | *Daphnia pulex* and related crustaceans |
-| <a href="http://insects.eugenes.org/DroSpeGe/" class="external text"
+rel="nofollow">http://wfleabase.org/genome/</a> | *Daphnia pulex* and related crustaceans | <a href="http://insects.eugenes.org/DroSpeGe/" class="external text"
 rel="nofollow">DroSpeGe</a> | <a href="http://insects.eugenes.org/genome/" class="external free"
 rel="nofollow">http://insects.eugenes.org/genome/</a> | Twelve *Drosophila* insect species genomes |
 
@@ -62,16 +54,7 @@ these common URLs are two-fold:
 
   
 
-| Standard URL | Description |
-|----|----|
-| /genome/Binomial_name | An index page for species "Binomial_name". This will be an HTML-format page containing links to each of the genome releases. |
-| /genome/Binomial_name/release | Leads to index for the named release. It should be an HTML-format page containing links to each of the data sets described below. |
-| /genome/Binomial_name/current | Leads to an index of the most current release, symbolic link style. |
-| /genome/Binomial_name/current/dna | Returns a FASTA file containing big DNA fragments (e.g. chromosomes). MIME type is application/x-fasta. |
-| /genome/Binomial_name/current/mrna | Returns a FASTA file containing spliced mRNA transcript sequences. MIME type is application/x-fasta. |
-| /genome/Binomial_name/current/ncrna | Returns a FASTA file containing non-coding RNA sequences. MIME type is application/x-fasta. |
-| /genome/Binomial_name/current/protein | Returns a FASTA file containing all the protein sequences known to be encoded by the genome. MIME type is application/x-fasta |
-| /genome/Binomial_name/current/feature | Returns a GFF3 file describing genome annotations. MIME type is application/x-gff3. |
+| Standard URL | Description |----|----| /genome/Binomial_name | An index page for species "Binomial_name". This will be an HTML-format page containing links to each of the genome releases. | /genome/Binomial_name/release | Leads to index for the named release. It should be an HTML-format page containing links to each of the data sets described below. | /genome/Binomial_name/current | Leads to an index of the most current release, symbolic link style. | /genome/Binomial_name/current/dna | Returns a FASTA file containing big DNA fragments (e.g. chromosomes). MIME type is application/x-fasta. | /genome/Binomial_name/current/mrna | Returns a FASTA file containing spliced mRNA transcript sequences. MIME type is application/x-fasta. | /genome/Binomial_name/current/ncrna | Returns a FASTA file containing non-coding RNA sequences. MIME type is application/x-fasta. | /genome/Binomial_name/current/protein | Returns a FASTA file containing all the protein sequences known to be encoded by the genome. MIME type is application/x-fasta | /genome/Binomial_name/current/feature | Returns a GFF3 file describing genome annotations. MIME type is application/x-gff3. |
 
 Other names for this: Common download URL, Common URL, Standard URL
 

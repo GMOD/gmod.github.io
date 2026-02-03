@@ -3,7 +3,6 @@ title: "News/WebApollo released"
 ---
 # News/WebApollo released
 
-
 From the [WebApollo](../WebApollo.1 "WebApollo") development team:
 
 We're very excited to announce that we've just released the first

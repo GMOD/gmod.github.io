@@ -3,7 +3,6 @@ title: "MAKER PAG 2010 Workshop"
 ---
 # MAKER PAG 2010 Workshop
 
-
 <table
 style="font-size: 140%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -16,12 +15,10 @@ data-cellpadding="10">
 <td><a href="http://www.intl-pag.org/" rel="nofollow"
 title="PAG 2009">
 
-
 View of [MAKER](MAKER.1 "MAKER") annotations in the
 [Apollo](Apollo.1 "Apollo") genome annotation curation tool. Supporting
 evidence is shown in the upper dark panel. Gene annotations are shown in
 the blue panel.
-
 
 [MAKER](MAKER.1 "MAKER") is a portable and easily configurable genome
 annotation pipeline. It's purpose is to allow smaller eukaryotic and

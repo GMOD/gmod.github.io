@@ -3,12 +3,10 @@ title: "Chado Natural Diversity Module/natdiv schema changes call"
 ---
 # Chado Natural Diversity Module/natdiv schema changes call
 
-
 Conference call to resolve the latest proposed changes to [natdiv
 module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
 
   
-
 
   notes</span>](#Meeting_notes)
 - [Participants](#Participants)
@@ -23,7 +21,6 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
     proposals](#Yuri.27s_proposals)
   - [Bob's
     proposals](#Bob.27s_proposals)
-
 
 ## Meeting notes
 

@@ -3,11 +3,9 @@ title: "Category%253ALuceGene"
 ---
 # Category%253ALuceGene
 
-
 ## Pages in category "LuceGene"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### D
 
@@ -23,7 +21,6 @@ The following 5 pages are in this category, out of 5 total.
 - [LuceGene for Daphnia
   genome](LuceGene_for_Daphnia_genome "LuceGene for Daphnia genome")
 - [LuceGene Screenshots](LuceGene_Screenshots "LuceGene Screenshots")
-
 
 ## Media in category "LuceGene"
 
@@ -115,13 +112,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [README-lucegene.txt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/README-lucegene.txt "File:README-lucegene.txt")  
-  5 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  5 KB

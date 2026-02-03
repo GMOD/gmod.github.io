@@ -3,7 +3,6 @@ title: "GMOD Users"
 ---
 # GMOD Users
 
-
 The following is a selection of the websites (including organism
 databases, research groups, and software) using
 [GBrowse](GBrowse.1 "GBrowse"), [JBrowse](JBrowse.1 "JBrowse"),
@@ -1950,6 +1949,3 @@ rel="nofollow">http://gbrowse.csbio.unc.edu/cgi-bin/gb2/gbrowse/seeqtl/</a></td>
 7.  <span id="cite_note-doi:10.1186.2F1471-2164-15-308"><span class="mw-cite-backlink">[↑](#cite_ref-doi:10.1186.2F1471-2164-15-308_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `doi:10.1186.2F1471-2164-15-308`**</span>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):

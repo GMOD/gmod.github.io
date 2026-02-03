@@ -3,7 +3,6 @@ title: "News/2009 GMOD Summer Schools"
 ---
 # News/2009 GMOD Summer Schools
 
-
 We are now accepting applications for the
 <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">2009 GMOD Summer Schools</a>. GMOD Summer
@@ -94,11 +93,9 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/03/15,
 updated 2009/04/06, 2008/04/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

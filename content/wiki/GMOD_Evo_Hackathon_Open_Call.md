@@ -3,7 +3,6 @@ title: "GMOD Evo Hackathon Open Call"
 ---
 # GMOD Evo Hackathon Open Call
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -32,7 +31,6 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
 
   
 
-
   Apply</span>](#How_To_Apply)
 - [About
   GMOD](#About_GMOD)
@@ -48,7 +46,6 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
   - [Deliverables / Event
     Results](#Deliverables_.2F_Event_Results)
 - [Links](#Links)
-
 
 We are seeking participants for the [GMOD Tools for Evolutionary Biology
 Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), held November 8-12,

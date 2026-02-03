@@ -3,7 +3,6 @@ title: "GBrowse Configuration/Balloons"
 ---
 # GBrowse Configuration/Balloons
 
-
 This article describes **popup balloons** and how to configure them in
 [GBrowse](../GBrowse.1 "GBrowse").
 

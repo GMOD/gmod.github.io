@@ -3,7 +3,6 @@ title: "SOBA/tool data"
 ---
 # SOBA/tool data
 
-
 \| name = SOBA \| full*name = Sequence Ontology
 Bioinformatics Analysis \| status = mature \| dev = maintenance \|
 support = active \| type = \| platform = linux, os x, unix,

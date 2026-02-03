@@ -3,7 +3,6 @@ title: "Talk:Chado Documentation Reorganization"
 ---
 # Talk:Chado Documentation Reorganization
 
-
 ## Alternative Formats
 
 I would recommend adopting something like -

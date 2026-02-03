@@ -3,7 +3,6 @@ title: "News/JBrowse 1.8.0 released"
 ---
 # News/JBrowse 1.8.0 released
 
-
 I am pleased to announce the release of JBrowse 1.8.0, a major new
 JBrowse release with some great new features, and lots of smaller
 improvements.
@@ -38,11 +37,9 @@ each SNP. Many thanks to Julien Smith-Roberge, a co-op student at the
 Ontario Institute for Cancer Research for the initial implementation of
 this!
 
-
 ### SNPCoverage track
 
 ![snpcoverage.png](http://jbrowse.org/wordpress/wp-content/uploads/2013/01/snpcoverage.png)
-
 
 The last headline feature, which will be of interest primarily for
 developers, is the introduction of a **new plugin system for JBrowse**.
@@ -61,10 +58,8 @@ rel="nofollow">http://jbrowse.org</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/31*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

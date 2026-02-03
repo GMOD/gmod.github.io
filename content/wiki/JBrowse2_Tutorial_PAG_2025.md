@@ -3,12 +3,10 @@ title: "JBrowse2 Tutorial PAG 2025"
 ---
 # JBrowse2 Tutorial PAG 2025
 
-
 This tutorial will be/was presented at the Plant and Animal Genomes
 conference on January 11, 2025. After the tutorial is over, a public
 Ubuntu AMI that was used for the tutorial will be available for anyone
 who would like to work through the tutorial afterwards.
-
 
   instance of the tutorial
   AMI</span>](#Running_an_instance_of_the_tutorial_AMI)
@@ -78,7 +76,6 @@ who would like to work through the tutorial afterwards.
   - [Using the
     admin-server to add a synteny
     track](#Using_the_admin-server_to_add_a_synteny_track)
-
 
 ### Running an instance of the tutorial AMI
 
@@ -1062,6 +1059,3 @@ width="800" height="224" alt="Genes track.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/79/Dotplot_config.png/800px-Dotplot_config.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/79/Dotplot_config.png/1200px-Dotplot_config.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/79/Dotplot_config.png/1600px-Dotplot_config.png 2x"
 width="800" height="460" alt="Dotplot config.png" />
-
-
-[Category](Special%253ACategories "Special%253ACategories"):

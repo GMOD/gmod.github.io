@@ -3,17 +3,14 @@ title: "News/Tripal v1.0 Released"
 ---
 # News/Tripal v1.0 Released
 
-
 From Stephen Ficklin on the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal"
 class="external text" rel="nofollow">Tripal mailing list</a>:
-
 
 <a href="http://tripal.info" rel="nofollow" title="Tripal website"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
 width="300" height="90" alt="Tripal website" /></a>
-
 
 Dear Tripal Community,
 
@@ -46,6 +43,5 @@ class="external text" rel="nofollow">Tripal mailing list</a>! Thank you
 to those who have done so already and have helped make Tripal better.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/08*

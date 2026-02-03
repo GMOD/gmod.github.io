@@ -3,7 +3,6 @@ title: "News/Tripal 2.0a released"
 ---
 # News/Tripal 2.0a released
 
-
 The Tripal Development Team is pleased to announce an alpha release of
 Tripal 2.0 for Drupal 7. This release is expected to have bugs and there
 is some functionality still under development. However, this release is
@@ -24,10 +23,8 @@ loading of organisms and features.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

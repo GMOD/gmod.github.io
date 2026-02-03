@@ -3,10 +3,8 @@ title: "AWS walkthrough"
 ---
 # AWS walkthrough
 
-
 This is a click-by-click walkthrough of how to get a GMOD machine image
 up and running using Amazon's cloud services.
-
 
   Amazon</span>](#Registering_on_Amazon)
 - [Amazon Web
@@ -29,7 +27,6 @@ up and running using Amazon's cloud services.
     Down](#Shutting_Down)
   - [Volume
     Deletion](#Volume_Deletion)
-
 
 ## Registering on Amazon
 

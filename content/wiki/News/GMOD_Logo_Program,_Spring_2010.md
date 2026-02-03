@@ -3,17 +3,13 @@ title: "News/GMOD Logo Program, Spring 2010"
 ---
 # News/GMOD Logo Program, Spring 2010
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9d/Gmod_cog170.png" width="170"
 height="125" alt="The GMOD Logo" />](../GMOD_Logo_Program "The GMOD Logo")
 
-
   
-
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fe/Lbcclogo.jpg" width="180"
 height="75" alt="GMOD Logo Program" />](../GMOD_Logo_Program "GMOD Logo Program")
-
 
 I am pleased to announce the first call for participation in the [GMOD
 Logo Program](../GMOD_Logo_Program "GMOD Logo Program"). This program is
@@ -38,10 +34,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/02/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

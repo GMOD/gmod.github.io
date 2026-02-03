@@ -3,12 +3,10 @@ title: "News/October 2011 GMOD Meeting"
 ---
 # News/October 2011 GMOD Meeting
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/170px-October2011Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/255px-October2011Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/340px-October2011Logo.png 2x"
 width="170" height="153" alt="October 2011 GMOD Meeting" />](../October_2011_GMOD_Meeting "October 2011 GMOD Meeting")
-
 
 I am pleased to formally announce pre-registration for the [upcoming
 GMOD community
@@ -33,10 +31,8 @@ Thanks and I look forward to seeing you in Toronto,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/05*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

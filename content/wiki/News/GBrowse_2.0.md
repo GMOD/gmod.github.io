@@ -3,10 +3,8 @@ title: "News/GBrowse 2.0"
 ---
 # News/GBrowse 2.0
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/GBrowse2Thumb.png" width="200"
 height="135" alt="GBrowse" />](../GBrowse_2.0_HOWTO "GBrowse")
-
 
 With thanks to the many people who have worked long and hard on this
 project, as well as the people who found and reported bugs during the
@@ -71,10 +69,8 @@ On behalf of the GMOD team,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

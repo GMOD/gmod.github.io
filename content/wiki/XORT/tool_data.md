@@ -3,7 +3,6 @@ title: "XORT/tool data"
 ---
 # XORT/tool data
 
-
 \| name = XORT \| full_name = \| status = mature \|
 dev = maintenance \| support = active \| type = Database tools,
 Middleware \| os = linux, unix \| logo = \| home =
@@ -70,7 +69,6 @@ zhou@morgan.harvard.edu \| formats = \| see_also =
 Note that [GMODTools](../GMODTools "GMODTools") offers an alternative
 approach to bulk uploads and downloads from a Chado database.
 
-
   DBStag](#DBStag)
 - [Chado-XML](#Chado-XML)
 - [Tools that
@@ -79,7 +77,6 @@ approach to bulk uploads and downloads from a Chado database.
   - [BioPerl](#BioPerl)
   - [Bio-Chaos](#Bio-Chaos)
 - [Macros](#Macros)
-
 
 ### DBStag
 

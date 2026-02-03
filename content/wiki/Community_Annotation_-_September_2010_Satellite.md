@@ -3,7 +3,6 @@ title: "Community Annotation - September 2010 Satellite"
 ---
 # Community Annotation - September 2010 Satellite
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
 <colgroup>
@@ -46,7 +45,6 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
 
   
 
-
   Participants](#Participants)
 - [Some
   Experiences](#Some_Experiences)
@@ -76,7 +74,6 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
   - [Lessons](#Lessons)
 - [See
   Also](#See_Also)
-
 
 This [satellite
 meeting](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")

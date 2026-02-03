@@ -3,7 +3,6 @@ title: "News/iPlant Collaborative Job Openings"
 ---
 # News/iPlant Collaborative Job Openings
 
-
 Cold Spring Harbor Laboratory is seeking experienced software
 developers/bioinformaticians to join the
 <a href="http://www.iplantcollaborative.org/" class="external text"
@@ -18,10 +17,8 @@ descriptions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

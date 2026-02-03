@@ -3,15 +3,12 @@ title: "GBrowse NGS Tutorial"
 ---
 # GBrowse NGS Tutorial
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/375px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/500px-GBrowseLogo.png 2x"
 width="250" height="59" alt="GBrowse" />
-
 
 This [GBrowse Next Generation Sequencing](GBrowse.1 "GBrowse") tutorial
 was presented by [Dave Clements](User%253AClements "User%253AClements") at the
@@ -29,7 +26,6 @@ Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
 rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
 
   
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -95,7 +91,6 @@ rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
     - [Showing Paired End
       Reads](#Showing_Paired_End_Reads)
 
-
   
 
 ## VMware
@@ -134,7 +129,6 @@ Password: gmod</p></td>
 
 ## Caveats
 
-
 **Important Note**
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
@@ -143,7 +137,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
   
 
@@ -334,7 +327,6 @@ SAMtools.
 
 The INSTALL file says:
 
-
 System Requirements
 
 SAMtools depends on the zlib library
@@ -364,7 +356,6 @@ Installation
 Simply copy \`samtools' and other executables/scripts in \`misc' to a
 location you want (e.g. a directory in your \$PATH). No further
 configurations are required.
-
 
 So
 
@@ -400,7 +391,6 @@ home/gmod/BA2009/SAMtools/samtools-0.1.6 directory.
 
 From the README file:
 
-
 Then set the environment variable SAMTOOLS to point to this directory
 and run:
 
@@ -408,7 +398,6 @@ and run:
      ./Build
      ./Build test
      (sudo) ./Build install
-
 
 Where is SAMTOOLS?
 
@@ -583,11 +572,9 @@ the GFF3 for human chromosomes 2 and 3 available, and he did:
     wget http://www.compbio.ox.ac.uk/data/HUMAN_HG18/ensembl/chr2_ens_annots.gff
     wget http://www.compbio.ox.ac.uk/data/HUMAN_HG18/ensembl/chr20_ens_annots.gff
 
-
 - Everything up to here has already been done in the starting VMware
   image.
 - Now we start doing things.
-
 
   
 Past experience has taught that whenever you get a GFF3 file from
@@ -698,7 +685,6 @@ initial contents of the file:
                       [balloon500]
                   maxWidth  = 500
                       delayTime = 50
-
 
     # Advanced feature: an example of callbacks to be run remotely
     # by gbrowse_details for AJAX/iframe balloons
@@ -996,12 +982,10 @@ rel="nofollow">http://172.16.108.129/gb2/gbrowse/human</a>
 
 You should see something like this:
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6b/GBrowseSAMtools1.png/600px-GBrowseSAMtools1.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6b/GBrowseSAMtools1.png/900px-GBrowseSAMtools1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/GBrowseSAMtools1.png 2x"
 width="600" height="553" alt="GBrowseSAMtools1.png" />
-
 
 Play around with it a little. Enable different tracks, scroll and zoom
 in and out.
@@ -1018,7 +1002,6 @@ be found in
     /home/gmod/BA2009/SAMtools/samtools-0.1.6/examples/
 
 The `00README.txt` says:
-
 
 File `ex1.fa` contains two sequences cut from the human genome build36.
 They were extracted with command:
@@ -1042,7 +1025,6 @@ To try samtools, you may run the following commands:
      samtools tview ex1.bam ex1.fa         # view alignment
      samtools pileup -cf ex1.fa ex1.bam    # pileup and consensus
      samtools pileup -cf ex1.fa -t ex1.fa.fai ex1.sam.gz
-
 
 Well, **crap!**
 
@@ -1069,7 +1051,6 @@ So, we write a quick and dirty script to fix the file:
     cd ~/BA2009/HumanData/
 
 Create a file called `relocate.py` and populate it with this code:
-
 
 ``` de1
 #!/usr/bin/env /usr/bin/python
@@ -1132,7 +1113,6 @@ while (line):
 sys.exit(0)
 ```
 
-
 And run it:
 
     chmod 755 relocate.py
@@ -1140,11 +1120,9 @@ And run it:
 
 ### Convert Munged SAM to a BAM
 
-
 - SAM is a human readable text format.
 - GBrowse expects to find SAM data in BAM format, a binary, indexed and
   highly compressed format.
-
 
 Now we invoke some SAMtools magic.
 
@@ -1223,12 +1201,10 @@ experimenting with the configuration file.
 
 You should see something like:
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/ff/GBrowseSAMtoolsCoverageXY.png/600px-GBrowseSAMtoolsCoverageXY.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/ff/GBrowseSAMtoolsCoverageXY.png/900px-GBrowseSAMtoolsCoverageXY.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/GBrowseSAMtoolsCoverageXY.png 2x"
 width="600" height="647" alt="GBrowseSAMtoolsCoverageXY.png" />
-
 
 This shows the read coverage. We told GBrowse to flag any read depth
 below 20 as red.
@@ -1275,12 +1251,10 @@ You can also show the individual reads. Add this clause at the end of
 Save your changes, hit the "**\[Reset\]**" link, and turn on the "Reads"
 track. It should look like:
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/GBrowseSAMtoolsReads1.png/600px-GBrowseSAMtoolsReads1.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4b/GBrowseSAMtoolsReads1.png/900px-GBrowseSAMtoolsReads1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4b/GBrowseSAMtoolsReads1.png 2x"
 width="600" height="900" alt="GBrowseSAMtoolsReads1.png" />
-
 
 Zoom in. When you get close to about 100bp resolution, you'll see the
 individual base pairs, and mismatches will be highlighted in red.
@@ -1349,17 +1323,7 @@ pairings add this stanza at the end of the config file:
 
 Reset GBrowse and test this.
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GBrowse NGS
-Tutorial](Special%253ABrowse/GBrowse-20NGS-20Tutorial "Special%253ABrowse/GBrowse-20NGS-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/GBrowse "Special%253ASearchByProperty/Has-20topic/GBrowse")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse")  |

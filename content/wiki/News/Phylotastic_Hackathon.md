@@ -3,7 +3,6 @@ title: "News/Phylotastic Hackathon"
 ---
 # News/Phylotastic Hackathon
 
-
 **Phylogenies! Hacking! Tucson in January!**
 
 An implicit promise of the Tree of Life project is that, ultimately,
@@ -104,10 +103,8 @@ rel="nofollow">complete the online form</a>. Note that:
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/10/30*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

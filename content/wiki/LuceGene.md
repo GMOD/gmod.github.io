@@ -3,7 +3,6 @@ title: "LuceGene"
 ---
 # LuceGene
 
-
   Description](#Description)
   - [EBI's
     EB-eye](#EBI.27s_EB-eye)
@@ -15,7 +14,6 @@ title: "LuceGene"
 - [Documentation](#Documentation)
 - [Downloads](#Downloads)
 - [Contact](#Contact)
-
 
 ## Description
 

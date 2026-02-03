@@ -3,7 +3,6 @@ title: "LuceGene for Daphnia genome"
 ---
 # LuceGene for Daphnia genome
 
-
 Daphnia's genome now has lots of gene annotations, wanting both search
 and reporting for these. I've dusted off
 **[LuceGene](LuceGene "LuceGene")** which is designed for this, and

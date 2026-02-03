@@ -3,7 +3,6 @@ title: "Talk:Stock Relationship Ontology"
 ---
 # Talk:Stock Relationship Ontology
 
-
 Probably a good idea to keep a history of all suggestions and discussion
 here, while maintaining the "latest" version on the [main
 page](Stock_Relationship_Ontology "Stock Relationship Ontology").

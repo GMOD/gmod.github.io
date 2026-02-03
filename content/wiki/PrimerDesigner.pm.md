@@ -3,11 +3,9 @@ title: "PrimerDesigner.pm"
 ---
 # PrimerDesigner.pm
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/PrimerDesigner.png" width="406"
 height="161" alt="PrimerDesigner.png" />
-
 
 PrimerDesigner is a [GBrowse](GBrowse.1 "GBrowse") plugin, written by
 [Sheldon McKay](User%253AMckays "User%253AMckays"), that uses use the
@@ -22,7 +20,6 @@ help or more information.
 
 The video below demonstrates designing PCR primers using the
 PrimerDesigner plugin.
-
 
   PrimerDesigner plugin</span>](#How_to_use_the_PrimerDesigner_plugin)
   - [Accessing
@@ -55,7 +52,6 @@ PrimerDesigner plugin.
         Options](#Configurable_Options)
 - [PrimerDesigner
   and GBrowse 2](#PrimerDesigner_and_GBrowse_2)
-
 
 ## How to use the PrimerDesigner plugin
 
@@ -221,7 +217,6 @@ To activate the Primer Designer plugin, simple add its name to the list
 of available plugins in the configuration file for you data source.
 
 For example:
-
 
     # Installed plugins
     plugins = Spectrogram SequenceDumper PrimerDesigner

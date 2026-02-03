@@ -3,10 +3,8 @@ title: "News/Aug 2009 GMOD Meeting Report"
 ---
 # News/Aug 2009 GMOD Meeting Report
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Aug2009MeetingPhoto.JPG"
 width="300" height="85" alt="August 2009 GMOD Meeting" />](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
-
 
 The [August 2009 GMOD
 Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting") was
@@ -68,10 +66,8 @@ done this without you.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,12 +3,10 @@ title: "News/Prospecting for Proposals for GSoC 2014"
 ---
 # News/Prospecting for Proposals for GSoC 2014
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6c/Landing-page-gsoc2014.png/200px-Landing-page-gsoc2014.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6c/Landing-page-gsoc2014.png/300px-Landing-page-gsoc2014.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/Landing-page-gsoc2014.png 2x"
 width="200" height="180" alt="Landing-page-gsoc2014.png" />](../GSoC "GSoC")
-
 
 GMOD is participating in
 <a href="http://google-melange.com" class="external text"
@@ -35,6 +33,5 @@ email <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a> for advice!
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/22*

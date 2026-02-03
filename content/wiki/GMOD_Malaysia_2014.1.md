@@ -3,22 +3,18 @@ title: "GMOD Malaysia 2014"
 ---
 # GMOD Malaysia 2014
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/300px-GMOD-malaysia.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/450px-GMOD-malaysia.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/600px-GMOD-malaysia.png 2x"
 width="300" height="190" alt="GMOD-malaysia.png" />
 
-
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg" width="152"
 height="141" alt="NESCent" /></a>
 
-
 Enabled by a generous grant from the
 <a href="http://ambassadors.nescent.org/" class="external text"
 rel="nofollow">NESCent Ambassador Program</a>
-
 
 **February 26-28, 2014, Kuala Lumpur, Malaysia.**
 
@@ -51,14 +47,12 @@ yet to be confirmed. Please subscribe to the
 class="external text" rel="nofollow">GMOD announce mailing list</a> to
 be kept apprised on updates on the summer school.
 
-
   Feedback](#Feedback)
 - [Schedule](#Schedule)
 - [Details](#Details)
 - [Participants](#Participants)
 - [Course
   Sponsor](#Course_Sponsor)
-
 
 ## Feedback
 
@@ -117,8 +111,3 @@ disciplinary, institutional, geographic, and demographic boundaries. The
 NESCent Ambassador Program is NESCent’s primary international outreach
 program, and is supported by a three-year grant from the NSF. GMOD is
 very grateful to be a beneficiary of this generous program.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")

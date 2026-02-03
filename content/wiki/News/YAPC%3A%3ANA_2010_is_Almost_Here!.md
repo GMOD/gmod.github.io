@@ -3,13 +3,11 @@ title: "News/YAPC::NA 2010 is Almost Here!"
 ---
 # News/YAPC::NA 2010 is Almost Here!
 
-
 <a href="http://conferences.mongueurs.net/yn2010/" rel="nofollow"
 title="YAPC: NA 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/72/Yapc2010Logo.png/220px-Yapc2010Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/72/Yapc2010Logo.png/330px-Yapc2010Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/72/Yapc2010Logo.png/440px-Yapc2010Logo.png 2x"
 width="220" height="39" alt="YAPC: NA 2010" /></a>
-
 
 June 21st – 23rd 2010 is quickly approaching and Columbus.PM is getting
 very excited. Hotel reservation information is available, dorm
@@ -42,10 +40,8 @@ rel="nofollow">YAPC: NA 2010</a> Conference Chairman
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

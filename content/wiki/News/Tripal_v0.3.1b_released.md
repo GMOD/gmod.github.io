@@ -3,12 +3,10 @@ title: "News/Tripal v0.3.1b released"
 ---
 # News/Tripal v0.3.1b released
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/170px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/255px-TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/340px-TripalLogo.png 2x"
 width="170" height="51" alt="Tripal v0.3.1b released" />](../Tripal.1 "Tripal v0.3.1b released")
-
 
 The Tripal development group has released an updated version of Tripal,
 version 0.3.1b. The new release provides the following:
@@ -37,10 +35,8 @@ Thanks to everyone who indicated problems and provided suggestions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

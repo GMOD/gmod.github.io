@@ -3,7 +3,6 @@ title: "Modware Presentation"
 ---
 # Modware Presentation
 
-
 Eric Just, Senior Bioinformatics Scientist,
 [dictyBase](Category%253ADictyBase "Category%253ADictyBase"):
 <a href="http://dictybase.org" class="external free"
@@ -11,7 +10,6 @@ rel="nofollow">http://dictybase.org</a> Center for Genetic Medicine,
 Northwestern University. This is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Modware.pdf" class="internal"
 title="Modware.pdf">Eric's presentation</a>.
-
 
   Was Developed</span>](#Why_Modware_Was_Developed)
 - [What is in the
@@ -61,7 +59,6 @@ title="Modware.pdf">Eric's presentation</a>.
   Attractions](#Coming_Attractions)
 - [Discussion](#Discussion)
 - [Acknowledgments](#Acknowledgments)
-
 
 ##### Why Modware Was Developed
 
@@ -120,7 +117,6 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 
 ##### Create and Insert Chromosome
 
-
 ``` de1
    my $seq_io = new Bio::SeqIO(
       -file       => "../data/fake_chromosome.txt",
@@ -142,7 +138,6 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
    # Inserts chromosome into database
    $reference_feature->insert();
 ```
-
 
   
 
@@ -208,7 +203,6 @@ assigned feature_id for each inserted gene.
                  description: A test gene for GMOD meeting
          …
 
-
 ``` de1
 my $gene_feature = new Modware::Feature(
     -type             => 'gene',
@@ -225,7 +219,6 @@ $gene_feature->insert();
 print 'Inserted gene with feature_id:'.$gene_feature->feature_id()."\n";
 ```
 
-
 ##### Problem 1 - Create mRNA BioPerl Object
 
               exon_1:
@@ -239,7 +232,6 @@ print 'Inserted gene with feature_id:'.$gene_feature->feature_id()."\n";
               end: 14720
               strand: 1
               srcFeature_id: Id of genomic sample
-
 
 ``` de1
 # First, create exon features (using Bioperl)
@@ -265,13 +257,11 @@ $bioperl_mrna->add_exon( $exon_1 );
 $bioperl_mrna->add_exon( $exon_2 );
 ```
 
-
 ##### Problem 1 - Create and Insert mRNA
 
 The BioPerl object holds the location information, but now we want to
 create a Modware object and link it to the gene as well as locate it on
 the chromosome.
-
 
 ``` de1
      # Now create Modware Feature to 'hold' bioperl object
@@ -288,7 +278,6 @@ the chromosome.
     # inserts object into database
      $mrna_feature->insert();
 ```
-
 
 ##### Problem 2 - Writing the Report
 
@@ -309,7 +298,6 @@ the chromosome.
 Create new package, GMODWriter, to write the report, this package uses
 Modware and Bioperl methods.
 
-
 ``` de1
 use Modware::Gene;
 use GMODWriter;
@@ -317,7 +305,6 @@ use GMODWriter;
 my $xfile_gene = new Modware::Gene( -name => 'xfile' );
 GMODWriter->Write_gene_report( $xfile_gene );
 ```
-
 
 - What's the difference between Modware::Gene and Modware::Feature? Gene
   is-a Feature.
@@ -328,7 +315,6 @@ GMODWriter->Write_gene_report( $xfile_gene );
 
 - The mRNA object contains the Bioperl object
   - Why not just subclass? More flexibility the way shown here
-
 
 ``` de1
 package GMODWriter;
@@ -365,12 +351,10 @@ foreach my $exon (@exons ) {
  . . .
 ```
 
-
 ##### Problem 3 - Updating a Gene Name
 
 3\) Update the gene xfile: change the name symbol to x-file and retrieve
 the changed record. Regenerate gene report
-
 
 ``` de1
  use Modware::Gene;
@@ -400,7 +384,6 @@ the changed record. Regenerate gene report
  }
 ```
 
-
   
 
 ##### Problem 4 - Search and Display Results
@@ -411,7 +394,6 @@ results produce the following simple result list (organism will vary):
        1323    x-file  Xenopus laevis
        1324    x-men   Xenopus laevis
        1325    x-ray   Xenopus laevis
-
 
 ``` de1
      use Modware::Gene;
@@ -425,7 +407,6 @@ results produce the following simple result list (organism will vary):
      GMODWriter->Write_search_results( $results )
 ```
 
-
   
 
 ##### Problem 4 - Search and Display Results
@@ -439,7 +420,6 @@ results produce the following simple result list (organism will vary):
 
   
 
-
 ``` de1
 sub Write_search_results {
   my ($self, $itr) = @_;
@@ -452,14 +432,12 @@ sub Write_search_results {
 }
 ```
 
-
 ##### Problem 5 - Delete a Gene
 
 5\) Delete the gene x-ray. Run the search and report again.
 
        1323    x-file  Xenopus laevis
        1324    x-men   Xenopus laevis
-
 
 ``` de1
  # get the xray gene
@@ -480,7 +458,6 @@ sub Write_search_results {
  # write the search results
  GMODWriter->Write_search_results( $results )
 ```
-
 
   
 

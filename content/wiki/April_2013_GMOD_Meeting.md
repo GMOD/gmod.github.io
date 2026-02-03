@@ -3,11 +3,9 @@ title: "April 2013 GMOD Meeting"
 ---
 # April 2013 GMOD Meeting
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Gmod-2013-mtg-alt.png" width="240"
 height="240" alt="Gmod-2013-mtg-alt.png" />
-
 
 Friday 5 April, 9:00-17:00
 
@@ -24,7 +22,6 @@ meeting</a>
 
   
 
-
   Agenda](#Agenda)
   - [Friday 5th
     April](#Friday_5th_April)
@@ -34,7 +31,6 @@ meeting</a>
   Attendance](#Remote_Attendance)
 - [Meeting
   Assessment](#Meeting_Assessment)
-
 
 ## Agenda
 
@@ -195,8 +191,3 @@ Please fill out
 <a href="../meeting.html" class="external text" rel="nofollow">the
 meeting assessment</a> so that we know what worked well and what needs
 improvement for next time.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

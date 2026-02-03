@@ -3,27 +3,22 @@ title: "Category%253AMeetings"
 ---
 # Category%253AMeetings
 
-
 GMOD meeting related pages. See [Meetings](Meetings "Meetings") for
 more. See [Events](Category%253AEvents "Category%253AEvents") for other types of
 events.
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### M
 
 - [MOD User
   Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
 
-
 ## Pages in category "Meetings"
 
 The following 51 pages are in this category, out of 51 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -199,7 +194,6 @@ Working Group</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Meetings"
 

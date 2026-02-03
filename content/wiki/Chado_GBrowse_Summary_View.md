@@ -3,7 +3,6 @@ title: "Chado GBrowse Summary View"
 ---
 # Chado GBrowse Summary View
 
-
 Starting in [GBrowse](GBrowse.1 "GBrowse") version 2.13, administrators
 have the option of configuring a *summary view* (feature density) for
 tracks when zoomed out too far to effectively show individual features,

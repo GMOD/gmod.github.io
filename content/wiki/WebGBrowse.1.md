@@ -3,30 +3,24 @@ title: "WebGBrowse"
 ---
 # WebGBrowse
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/400px-WebGBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/600px-WebGBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/800px-WebGBrowseLogo.png 2x"
 width="400" height="78" alt="WebGBrowse logo" />
 
-
 Status
-
 
 - Mature release
 - Development: inactive
 - Support: active
 
-
 Resources
-
 
 - [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[WebGBrowse](Special%253ABrowse/WebGBrowse "Special%253ABrowse/WebGBrowse")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
 <table class="smwfacttable">
 <colgroup>
@@ -37,9 +31,7 @@ Resources
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AAvailable_on_platform"
 title="Property:Available on platform">Available on platform</a></td>
-<td class="smwprops">web <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Available-20on-20platform/web"
-title="Special%253ASearchByProperty/Available-20on-20platform/web">+</a></span></td>
+<td class="smwprops">web </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_URL"
@@ -48,14 +40,9 @@ title="Property:Has URL">Has URL</a></td>
 href="http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html"
 class="external free"
 rel="nofollow">http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html"
-title="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html">+</a></span>
+
 and <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu"
-title="Special%253ASearchByProperty/Has-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu">+</a></span></td>
+rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_description"
@@ -100,9 +87,7 @@ CGB</a>.ana.edu/ public WebGBrowse server at CGB]. </td>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_development_status"
 title="Property:Has development status">Has development status</a></td>
-<td class="smwprops">inactive <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20development-20status/inactive"
-title="Special%253ASearchByProperty/Has-20development-20status/inactive">+</a></span></td>
+<td class="smwprops">inactive </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_download_URL"
@@ -111,111 +96,72 @@ title="Property:Has download URL">Has download URL</a></td>
 href="http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html"
 class="external free"
 rel="nofollow">http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20download-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html"
-title="Special%253ASearchByProperty/Has-20download-20URL/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html">+</a></span></td>
+</td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_input_format"
 title="Property:Has input format">Has input format</a></td>
-<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGFF3-5D-5D"
-title="Special%253ASearchByProperty/Has-20input-20format/-5B-5BGFF3-5D-5D">+</a></span></td>
+<td class="smwprops"><a href="GFF3" title="GFF3">GFF3</a> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_logo"
 title="Property:Has logo">Has logo</a></td>
-<td class="smwprops">WebGBrowseLogo.png <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20logo/WebGBrowseLogo.png"
-title="Special%253ASearchByProperty/Has-20logo/WebGBrowseLogo.png">+</a></span></td>
+<td class="smwprops">WebGBrowseLogo.png </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_output_format"
 title="Property:Has output format">Has output format</a></td>
-<td class="smwprops">GBrowse configuration file <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GBrowse-20configuration-20file"
-title="Special%253ASearchByProperty/Has-20output-20format/GBrowse-20configuration-20file">+</a></span></td>
+<td class="smwprops">GBrowse configuration file </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_software_maturity_status"
 title="Property:Has software maturity status">Has software maturity
 status</a></td>
-<td class="smwprops">mature <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20software-20maturity-20status/mature"
-title="Special%253ASearchByProperty/Has-20software-20maturity-20status/mature">+</a></span></td>
+<td class="smwprops">mature </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_support_status"
 title="Property:Has support status">Has support status</a></td>
-<td class="smwprops">active <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20support-20status/active"
-title="Special%253ASearchByProperty/Has-20support-20status/active">+</a></span></td>
+<td class="smwprops">active </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253AHas_topic"
 title="Property:Has topic">Has topic</a></td>
-<td class="smwprops"><strong>WebGBrowse</strong> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20topic/WebGBrowse"
-title="Special%253ASearchByProperty/Has-20topic/WebGBrowse">+</a></span></td>
+<td class="smwprops"><strong>WebGBrowse</strong> </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AHas_website"
 title="Property:Has website">Has website</a></td>
 <td class="smwprops"><a href="http://webgbrowse.cgb.indiana.edu"
 class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20website/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu"
-title="Special%253ASearchByProperty/Has-20website/http%253A-2F-2Fwebgbrowse.cgb.indiana.edu">+</a></span></td>
+rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
-<td class="smwprops">download <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/download"
-title="Special%253ASearchByProperty/Link-20type/download">+</a></span>,
-source code <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/source-20code"
-title="Special%253ASearchByProperty/Link-20type/source-20code">+</a></span>,
-website <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/website"
-title="Special%253ASearchByProperty/Link-20type/website">+</a></span> and
-public server <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/public-20server"
-title="Special%253ASearchByProperty/Link-20type/public-20server">+</a></span></td>
+<td class="smwprops">download ,
+source code ,
+website  and
+public server </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
-<td class="smwprops">1 January 2009 <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Release-20date/1-20January-202009"
-title="Special%253ASearchByProperty/Release-20date/1-20January-202009">+</a></span></td>
+<td class="smwprops">1 January 2009 </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Genome Visualization and Editing <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Visualization-20and-20Editing"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Visualization-20and-20Editing">+</a></span>
-and Tool Integration <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20Integration"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20Integration">+</a></span></td>
+<td class="smwprops">Genome Visualization and Editing 
+and Tool Integration </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Perl <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Written-20in-20language/Perl"
-title="Special%253ASearchByProperty/Written-20in-20language/Perl">+</a></span>
-and GBrowse config file <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Written-20in-20language/GBrowse-20config-20file"
-title="Special%253ASearchByProperty/Written-20in-20language/GBrowse-20config-20file">+</a></span></td>
+<td class="smwprops">Perl 
+and GBrowse config file </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
@@ -226,14 +172,10 @@ special property in this wiki.</span></span></td>
 <td class="smwspecs"><a
 href="WebGBrowse.1#http:.2F.2Fwebgbrowse.cgb.indiana.edu.2Fwebgbrowse.2Fsoftware.html"
 title="WebGBrowse">WebGBrowse#http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/WebGBrowse-23http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html"
-title="Special%253ASearchByProperty/Has-20subobject/WebGBrowse-23http%253A-2F-2Fwebgbrowse.cgb.indiana.edu-2Fwebgbrowse-2Fsoftware.html">+</a></span>
+
 and <a href="WebGBrowse.1#http:.2F.2Fwebgbrowse.cgb.indiana.edu"
 title="WebGBrowse">WebGBrowse#http://webgbrowse.cgb.indiana.edu</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/WebGBrowse-23http%253A-2F-2Fwebgbrowse.cgb.indiana.edu"
-title="Special%253ASearchByProperty/Has-20subobject/WebGBrowse-23http%253A-2F-2Fwebgbrowse.cgb.indiana.edu">+</a></span></td>
+</td>
 </tr>
 </tbody>
 </table>

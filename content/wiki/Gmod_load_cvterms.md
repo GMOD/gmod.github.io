@@ -3,7 +3,6 @@ title: "Gmod load cvterms"
 ---
 # Gmod load cvterms
 
-
 gmod_load_cvterms.pl is a perl script for loading and more importantly,
 updating controlled vocabulary and
 [ontology](Category%253AOntologies "Category%253AOntologies") terms in the
@@ -13,7 +12,6 @@ Menda](User%253ANaamaMenda "User%253ANaamaMenda") and the developers at the
 <a href="http://www.sgn.cornell.edu/" class="external text"
 rel="nofollow">Sol Genomics Network (SGN)</a> lead by Lukas Mueller.
 
-
   it</span>](#Where_to_find_it)
   - [gmod
     1.0](#gmod_1.0)
@@ -21,7 +19,6 @@ rel="nofollow">Sol Genomics Network (SGN)</a> lead by Lukas Mueller.
     1.1](#gmod_1.1)
 - [Command line
   options](#Command_line_options)
-
 
 ## Where to find it
 

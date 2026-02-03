@@ -3,7 +3,6 @@ title: "Talk:Bio%253A%253AChado%253A%253ASchema"
 ---
 # Talk:Bio%253A%253AChado%253A%253ASchema
 
-
 # Boundaries between BCS and Modware
 
 Where is the boundary between this and [modware](Modware "Modware")

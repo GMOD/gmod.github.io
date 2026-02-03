@@ -3,17 +3,14 @@ title: "News/WebGBrowse Has Arrived"
 ---
 # News/WebGBrowse Has Arrived
 
-
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> - A Web Server for
 [GBrowse](../GBrowse.1 "GBrowse") Configuration Made Easy
-
 
 <a href="http://webgbrowse.cgb.indiana.edu/" rel="nofollow"
 title="WebGBrowse at the Center for Genomics and Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/Cgb_logo.png" width="164" height="83"
 alt="WebGBrowse at the Center for Genomics and Bioinformatics" /></a>
-
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> is a web site that guides users through
@@ -59,10 +56,8 @@ rel="nofollow">contact the CGB</a> if you have any questions.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/22*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

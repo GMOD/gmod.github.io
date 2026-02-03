@@ -3,11 +3,9 @@ title: "Load RefSeq Into Chado"
 ---
 # Load RefSeq Into Chado
 
-
 This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes a method for
 loading the sequence data in Genbank RefSeq files into the [Chado
 database](Chado_-_Getting_Started "Chado - Getting Started").
-
 
   Sequence Files</span>](#Download_the_Sequence_Files)
 - [Convert RefSeq
@@ -19,7 +17,6 @@ database](Chado_-_Getting_Started "Chado - Getting Started").
 - [More
   Information](#More_Information)
 - [Authors](#Authors)
-
 
 ## Download the Sequence Files
 
@@ -58,21 +55,17 @@ table](Chado_Tables#Table:_organism "Chado Tables"). If you are unsure
 if this entry exists log into your database and execute this
 [SQL](Glossary#SQL "Glossary") command:
 
-
 ``` de1
 SELECT genus,species,common_name FROM organism;
 ```
 
-
 If you do not see your organism listed, execute a command equivalent to
 this:
-
 
 ``` de1
   INSERT INTO organism (abbreviation, genus, species, common_name)
                 VALUES ('H.sapiens', 'Homo', 'sapiens', 'Human');
 ```
-
 
 Substitute in the appropriate values for your own organism.
 

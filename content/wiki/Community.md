@@ -3,7 +3,6 @@ title: "Community"
 ---
 # Community
 
-
   Description](#Description)
 - [Technology](#Technology)
 - [Demo &
@@ -11,7 +10,6 @@ title: "Community"
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
-
 
 ## Description
 

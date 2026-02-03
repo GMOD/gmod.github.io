@@ -3,7 +3,6 @@ title: "Summary of Fall 2005 CHSL Meeting"
 ---
 # Summary of Fall 2005 CHSL Meeting
 
-
 ## GMOD Architecture Work Group Discussion (Fall 2005 meeting)
 
 **During the meeting it was suggested that we have a common database
@@ -47,8 +46,3 @@ some one who will take the responsibility on doing Hibernate use case.
 Adrian from GeneDB is mentioned (volunteered). If these two volunteers
 can agree on some common use cases and implement, the rest of the group
 can then evaluate the technologies better.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

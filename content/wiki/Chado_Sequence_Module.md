@@ -150,20 +150,12 @@ and so on refers to features of that Sequence Ontology type.
 
 A selection of Chado-relevant types from SO are shown below:
 
-| SO Term | SO id |
-| ------- | ----- |
-
-| <a href="http://www.sequenceontology.org/miSO/SO_CVS/exon.html"
-class="external text" rel="nofollow">Exon</a> | SL:0000025 |
-| <a href="http://www.sequenceontology.org/miSO/SO_CVS/intron.html"
-class="external text" rel="nofollow">Intron</a> | SL:0000027 |
-| <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html"
-class="external text" rel="nofollow">mRNA</a> | SL:0000037 |
-| <a href="http://www.sequenceontology.org/miSO/SO_CVS/miRNA"
-class="external text" rel="nofollow">miRNA</a> | SL:0000044 |
-| <a href="http://www.sequenceontology.org/miSO/SO_CVS/regulatory_element"
-class="external text" rel="nofollow">regulatory_element</a> | SL:0000052 |
-| <a
+| SO Term | SO id | ------- | ----- | <a href="http://www.sequenceontology.org/miSO/SO_CVS/exon.html"
+class="external text" rel="nofollow">Exon</a> | SL:0000025 | <a href="http://www.sequenceontology.org/miSO/SO_CVS/intron.html"
+class="external text" rel="nofollow">Intron</a> | SL:0000027 | <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html"
+class="external text" rel="nofollow">mRNA</a> | SL:0000037 | <a href="http://www.sequenceontology.org/miSO/SO_CVS/miRNA"
+class="external text" rel="nofollow">miRNA</a> | SL:0000044 | <a href="http://www.sequenceontology.org/miSO/SO_CVS/regulatory_element"
+class="external text" rel="nofollow">regulatory_element</a> | SL:0000052 | <a
 href="http://www.sequenceontology.org/miSO/SO_CVS/transcription_factor_binding_site.html"
 class="external text"
 rel="nofollow">transcription_factor_binding_site</a> | SL:0000054 |
@@ -1160,11 +1152,7 @@ class="external free"
 rel="nofollow">http://www.geneontology.org/doc/GO.annotation.shtml#file</a>
 for more details.
 
-| F-Key                                                               | Name                     | Type    | Description         |
-| ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |
-|                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       |
-| [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                               | Name                     | Type    | Description         | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       | [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_dbxref Structure
 
@@ -1178,11 +1166,7 @@ be added using this linking table (in a GO gene association file, these
 corresponding to any IDs after the pipe symbol in the publications
 column.
 
-| F-Key                                                               | Name                  | Type    | Description         |
-| ------------------------------------------------------------------- | --------------------- | ------- | ------------------- |
-|                                                                     | feature_cvterm_pub_id | serial  | _PRIMARY KEY_       |
-| [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")                       | pub_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                               | Name                  | Type    | Description         | ------------------------------------------------------------------- | --------------------- | ------- | ------------------- |                                                                     | feature_cvterm_pub_id | serial  | _PRIMARY KEY_       | [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                       | pub_id                | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_pub Structure
 
@@ -1328,11 +1312,7 @@ feature_dbxref Structure
 Provenance. Linking table between features and publications that mention
 them.
 
-| F-Key                                                 | Name           | Type    | Description         |
-| ----------------------------------------------------- | -------------- | ------- | ------------------- |
-|                                                       | feature_pub_id | serial  | _PRIMARY KEY_       |
-| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | feature_pub_id | serial  | _PRIMARY KEY_       | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pub Structure
 
@@ -1346,13 +1326,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Property or attribute of a feature_pub link.
 
-| F-Key                                                         | Name               | Type    | Description         |
-| ------------------------------------------------------------- | ------------------ | ------- | ------------------- |
-|                                                               | feature_pubprop_id | serial  | _PRIMARY KEY_       |
-| [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables") | feature_pub_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")           | type_id            | integer | _UNIQUE#1 NOT NULL_ |
-|                                                               | value              | text    |                     |
-|                                                               | rank               | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | feature_pubprop_id | serial  | _PRIMARY KEY_       | [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables") | feature_pub_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")           | type_id            | integer | _UNIQUE#1 NOT NULL_ |                                                               | value              | text    | rank               | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pubprop Structure
 
@@ -1462,11 +1436,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
 
-| F-Key                                                                           | Name                        | Type    | Description         |
-| ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- |
-|                                                                                 | feature_relationship_pub_id | serial  | _PRIMARY KEY_       |
-| [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables") | feature_relationship_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")                                   | pub_id                      | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                                           | Name                        | Type    | Description         | ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- |                                                                                 | feature_relationship_pub_id | serial  | _PRIMARY KEY_       | [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables") | feature_relationship_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                                   | pub_id                      | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationship_pub Structure
 
@@ -1557,11 +1527,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Provenance for feature_relationshipprop.
 
-| F-Key                                                                                   | Name                            | Type    | Description         |
-| --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- |
-|                                                                                         | feature_relationshipprop_pub_id | serial  | _PRIMARY KEY_       |
-| [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables") | feature_relationshipprop_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")                                           | pub_id                          | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                                                   | Name                            | Type    | Description         | --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- |                                                                                         | feature_relationshipprop_pub_id | serial  | _PRIMARY KEY_       | [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables") | feature_relationshipprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                                           | pub_id                          | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationshipprop_pub Structure
 
@@ -1845,9 +1811,7 @@ compared) feature.</td>
 
 featureloc Structure
 
-| Name          | Constraint              |
-| ------------- | ----------------------- |
-| featureloc_c2 | CHECK ((fmin \<= fmax)) |
+| Name          | Constraint              | ------------- | ----------------------- | featureloc_c2 | CHECK ((fmin \<= fmax)) |
 
 featureloc Constraints
 
@@ -1862,11 +1826,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
 
-| F-Key                                                       | Name              | Type    | Description         |
-| ----------------------------------------------------------- | ----------------- | ------- | ------------------- |
-|                                                             | featureloc_pub_id | serial  | _PRIMARY KEY_       |
-| [featureloc](Chado_Tables#Table:_featureloc "Chado Tables") | featureloc_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                       | Name              | Type    | Description         | ----------------------------------------------------------- | ----------------- | ------- | ------------------- |                                                             | featureloc_pub_id | serial  | _PRIMARY KEY_       | [featureloc](Chado_Tables#Table:_featureloc "Chado Tables") | featureloc_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
 
 featureloc_pub Structure
 
@@ -1958,11 +1918,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
 
-| F-Key                                                         | Name               | Type    | Description         |
-| ------------------------------------------------------------- | ------------------ | ------- | ------------------- |
-|                                                               | featureprop_pub_id | serial  | _PRIMARY KEY_       |
-| [featureprop](Chado_Tables#Table:_featureprop "Chado Tables") | featureprop_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")                 | pub_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | featureprop_pub_id | serial  | _PRIMARY KEY_       | [featureprop](Chado_Tables#Table:_featureprop "Chado Tables") | featureprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                 | pub_id             | integer | _UNIQUE#1 NOT NULL_ |
 
 featureprop_pub Structure
 

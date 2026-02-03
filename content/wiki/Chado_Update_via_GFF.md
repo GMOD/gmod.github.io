@@ -3,7 +3,6 @@ title: "Chado Update via GFF"
 ---
 # Chado Update via GFF
 
-
 There has frequently been interest in updating a
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
 using a [GFF](GFF "GFF") file, and I've finally gotten around to trying
@@ -19,7 +18,6 @@ to work on the [GFF3](GFF3 "GFF3") bulk loader `gmod_bulk_load_gff3.pl`
 to have it do updates and deletes as well. Accordingly, I've identified
 these cases that should be addressed:
 
-
   properties</span>](#Updating_properties)
 - [Updating
   feature locations](#Updating_feature_locations)
@@ -28,7 +26,6 @@ these cases that should be addressed:
 - [Deleting
   features](#Deleting_features)
 - [Comments](#Comments)
-
 
 # Updating properties
 
@@ -89,8 +86,3 @@ Again, if name, type and srcfeature are the same, allow the delete?
 
 [Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:48, 30 March 2007
 (EDT)
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")

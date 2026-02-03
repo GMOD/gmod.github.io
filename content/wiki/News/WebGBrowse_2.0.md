@@ -3,12 +3,10 @@ title: "News/WebGBrowse 2.0"
 ---
 # News/WebGBrowse 2.0
 
-
 <a href="http://webgbrowse.cgb.indiana.edu/" rel="nofollow"
 title="WebGBrowse at the Center for Genomics and Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/Cgb_logo.png" width="164" height="83"
 alt="WebGBrowse at the Center for Genomics and Bioinformatics" /></a>
-
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse 2.0</a> is now available at
@@ -42,10 +40,8 @@ Indiana University</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

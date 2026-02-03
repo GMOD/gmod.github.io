@@ -3,13 +3,11 @@ title: "News/ISGA Pipeline Service"
 ---
 # News/ISGA Pipeline Service
 
-
 <a href="http://isga.cgb.indiana.edu/" rel="nofollow"
 title="ISGA at the Center for Genomics and Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/ISGAHomePageThumb.png" width="202"
 height="143"
 alt="ISGA at the Center for Genomics and Bioinformatics" /></a>
-
 
 <a href="http://isga.cgb.indiana.edu/" class="external text"
 rel="nofollow">Integrated Services for Genomic Analysis (ISGA)</a> is an
@@ -51,10 +49,8 @@ class="external text" rel="nofollow">isga-users mailing list</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

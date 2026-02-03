@@ -3,10 +3,8 @@ title: "News/GMOD Meeting Registration"
 ---
 # News/GMOD Meeting Registration
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/July2008LogoSmaller.png"
 width="200" height="180" alt="July 2008 GMOD Meeting" />](../July_2008_GMOD_Meeting "July 2008 GMOD Meeting")
-
 
 <a href="../July_2008_GMOD_Meeting_Registration" class="mw-redirect"
 title="July 2008 GMOD Meeting Registration">Registration</a> is now open
@@ -31,10 +29,8 @@ is discussed at GMOD meetings.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/06/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,10 +3,7 @@ title: "News/2008 GMOD Community Survey"
 ---
 # News/2008 GMOD Community Survey
 
-
-|  |
-|----|
-| *Thanks to everyone who participated in the [2008 GMOD Community Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). Survey results are [now available](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). The winners are Randall Svancara of <a href="http://www.bioinfo.wsu.edu" class="external text"
+|----| *Thanks to everyone who participated in the [2008 GMOD Community Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). Survey results are [now available](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). The winners are Randall Svancara of <a href="http://www.bioinfo.wsu.edu" class="external text"
 rel="nofollow">Washington State University</a>, Victor Jun M. Ulat of the <a href="http://www.irri.org" class="external text"
 rel="nofollow">International Rice Research Institute</a> and Pinglei Zhou of <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>. 2008/11/20* |
@@ -38,11 +35,9 @@ Thank you,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/10/17,
 updated 2008/11/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -311,22 +311,7 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name                                             | URL                                                                | Tripal Version |
-| ----------------------------------------------------- | ------------------------------------------------------------------ | -------------- |
-| Pulse Crops Genomics & Breeding                       | <a href="http://knowpulse2.usask.ca/portal/" class="external free" |
-| rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | SVN version                                                        |
-| Genome Database for Vaccinium                         | <a href="http://www.vaccinium.org" class="external free"           |
-| rel="nofollow">http://www.vaccinium.org</a>           | v0.2                                                               |
-| Cool Season Food Legume Database                      | <a href="http://www.gabcsfl.org" class="external free"             |
-| rel="nofollow">http://www.gabcsfl.org</a>             | v0.2                                                               |
-| Cacao Genome Database                                 | <a href="http://www.cacaogenomedb.org" class="external free"       |
-| rel="nofollow">http://www.cacaogenomedb.org</a>       | v0.2                                                               |
-| Fagaceae Genome Web                                   | <a href="http://www.fagaceae.org" class="external free"            |
-| rel="nofollow">http://www.fagaceae.org</a>            | v0.2                                                               |
-| Citrus Genome Database                                | <a href="http://www.citrusgenomedb.org" class="external free"      |
-| rel="nofollow">http://www.citrusgenomedb.org</a>      | v0.2                                                               |
-| Marine Genomics Project                               | <a href="http://www.marinegenomics.org" class="external free"      |
-| rel="nofollow">http://www.marinegenomics.org</a>      | pre v0.1                                                           |
+| Site Name                                             | URL                                                                | Tripal Version | ----------------------------------------------------- | ------------------------------------------------------------------ | -------------- | Pulse Crops Genomics & Breeding                       | <a href="http://knowpulse2.usask.ca/portal/" class="external free" | rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | SVN version                                                        | Genome Database for Vaccinium                         | <a href="http://www.vaccinium.org" class="external free"           | rel="nofollow">http://www.vaccinium.org</a>           | v0.2                                                               | Cool Season Food Legume Database                      | <a href="http://www.gabcsfl.org" class="external free"             | rel="nofollow">http://www.gabcsfl.org</a>             | v0.2                                                               | Cacao Genome Database                                 | <a href="http://www.cacaogenomedb.org" class="external free"       | rel="nofollow">http://www.cacaogenomedb.org</a>       | v0.2                                                               | Fagaceae Genome Web                                   | <a href="http://www.fagaceae.org" class="external free"            | rel="nofollow">http://www.fagaceae.org</a>            | v0.2                                                               | Citrus Genome Database                                | <a href="http://www.citrusgenomedb.org" class="external free"      | rel="nofollow">http://www.citrusgenomedb.org</a>      | v0.2                                                               | Marine Genomics Project                               | <a href="http://www.marinegenomics.org" class="external free"      | rel="nofollow">http://www.marinegenomics.org</a>      | pre v0.1                                                           |
 
 ### Resources
 
@@ -573,13 +558,7 @@ sudo /etc/init.d/apache2 restart
 For reference, these are the file system directories where important
 components of this tutorial are located
 
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| Web configuration files | /etc/apache2                        |
-| PHP configuration files | /etc/php5/apache2 and /etc/php5/cli |
-| Web document root       | /var/www                            |
-| Home directory          | /home/gmod                          |
-| Tutorial files          | /home/gmod/Tripal                   |
+| ----------------------- | ----------------------------------- | Web configuration files | /etc/apache2                        | PHP configuration files | /etc/php5/apache2 and /etc/php5/cli | Web document root       | /var/www                            | Home directory          | /home/gmod                          | Tutorial files          | /home/gmod/Tripal                   |
 
 ## Database Setup
 
@@ -1890,9 +1869,6 @@ these links:
 - [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
 
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Tripal Tutorial
-2011](Special%253ABrowse/Tripal-20Tutorial-202011 "Special%253ABrowse/Tripal-20Tutorial-202011")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|                                                          |                                                                                                                                                                   |
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |

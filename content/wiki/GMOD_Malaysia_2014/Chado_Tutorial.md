@@ -359,9 +359,7 @@ relationships with other features.
 Features are stored in the [feature
 table](../Chado_Sequence_Module#Table:_feature "Chado Sequence Module").
 
-| Table: feature |      |            |         |             |     |
-| -------------- | ---- | ---------- | ------- | ----------- | --- |
-| feature_id     | name | uniquename | type_id | is_analysis | ... |
+| Table: feature |            |             | -------------- | ---- | ---------- | ------- | ----------- | --- | feature_id     | name | uniquename | type_id | is_analysis | ... |
 
 Within this feature table we can store all types of features and keep
 track of their type with the type_id field. It's conceivable to store
@@ -387,10 +385,7 @@ must come. CVs are widely used in all databases, not just biological
 ones. Pull down menus are often used to present CVs to users in query or
 annotation interfaces.
 
-|     |     |
-| --- | --- |
-
-| <a href="http://zfin.org" class="external text"
+| --- | --- | <a href="http://zfin.org" class="external text"
 rel="nofollow">ZFIN's</a> Assay Type CV | <a href="../File:ZfinAssayTypePullDown.png" class="image"
 title="ZFIN&#39;s Assay Type CV"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/ZfinAssayTypePullDown.png" width="231"
@@ -410,9 +405,7 @@ terms. Representing them and reasoning with them is non-trivial, but the
 CV module helps with both.
 
 | <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" |
-|----|
-| <a href="../File:FlyBaseCVTermViewer.png" class="image"><img
+rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" |----| <a href="../File:FlyBaseCVTermViewer.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png" width="1067"
 height="604" alt="FlyBaseCVTermViewer.png" /></a> |
 
@@ -549,10 +542,7 @@ usually different things.
 These are shown on web pages and in publications. These are also known
 as _accession numbers_.
 
-| GO + 0043565 = GO:0043565                 |
-| ----------------------------------------- |
-| InterPro + IPR001356 = InterPro:IPR001356 |
-| YourDB + whatever = YourDB:whatever       |
+| GO + 0043565 = GO:0043565                 | ----------------------------------------- | InterPro + IPR001356 = InterPro:IPR001356 | YourDB + whatever = YourDB:whatever       |
 
 Public IDs tend to be _alternate keys_ inside the database: they do
 uniquely identify objects in the database.
@@ -597,9 +587,7 @@ in Chado. They are stored in a table called <a
 href="Chado_Sequence_Module#Table:_featureprop"
 class="external text" rel="nofollow">featureprop</a>.
 
-| Table: featureprop |            |         |       |      |
-| ------------------ | ---------- | ------- | ----- | ---- |
-| featureprop_id     | feature_id | type_id | value | rank |
+| Table: featureprop |         | ------------------ | ---------- | ------- | ----- | ---- | featureprop_id     | feature_id | type_id | value | rank |
 
 You may have noticed that the featureprop table shares a 'type_id'
 column with the feature table. Properties of features are typed
@@ -619,9 +607,7 @@ Relationships between features are stored in the <a
 href="Chado_Sequence_Module#Table:_feature_relationship"
 class="external text" rel="nofollow">feature_relationship table</a>.
 
-| Table: feature_relationship |            |           |         |      |     |
-| --------------------------- | ---------- | --------- | ------- | ---- | --- |
-| feature_relationship_id     | subject_id | object_id | type_id | rank | ... |
+| Table: feature_relationship |           |      | --------------------------- | ---------- | --------- | ------- | ---- | --- | feature_relationship_id     | subject_id | object_id | type_id | rank | ... |
 
 Features can be arranged in graphs, e.g. "exon _part_of_ transcript
 _part_of_ gene"; If type is thought of as a verb, then each arc or edge
@@ -708,9 +694,7 @@ Feature location information is stored in the <a
 href="Chado_Sequence_Module#Table:_featureloc"
 class="external text" rel="nofollow">featureloc table</a>.
 
-| Table: featureloc |            |               |      |      |     |
-| ----------------- | ---------- | ------------- | ---- | ---- | --- |
-| featureloc_id     | feature_id | srcfeature_id | fmin | rank | ... |
+| Table: featureloc |               |      | ----------------- | ---------- | ------------- | ---- | ---- | --- | featureloc_id     | feature_id | srcfeature_id | fmin | rank | ... |
 
 ##### Example: Gene
 
@@ -1381,21 +1365,10 @@ cell movements. PLoS One 3(10):e3439</a></p></td>
 
 Into this:
 
-| Gene | Fish                                    | Stage | Anatomy          | Assay |
-| ---- | --------------------------------------- | ----- | ---------------- | ----- |
-| gsc  | wild type (unspecified), MO:diaph2,pfn1 | Bud   | prechordal plate | ISH   |
-| gsc  | wild type (unspecified), MO:diaph2      | Bud   | prechordal plate | ISH   |
-| ntla | wild type (unspecified), MO:diaph2,pfn1 | Bud   | notochord        | ISH   |
-| ntla | wild type (unspecified), MO:diaph2,pfn1 | Bud   | tail bud         | ISH   |
-| ntla | wild type (unspecified), MO:diaph2      | Bud   | notochord        | ISH   |
-| ntla | wild type (unspecified), MO:diaph2      | Bud   | tail bud         | ISH   |
-
-| From <a
+| Gene | Fish                                    | Stage | Anatomy          | Assay | ---- | --------------------------------------- | ----- | ---------------- | ----- | gsc  | wild type (unspecified), MO:diaph2,pfn1 | Bud   | prechordal plate | ISH   | gsc  | wild type (unspecified), MO:diaph2      | Bud   | prechordal plate | ISH   | ntla | wild type (unspecified), MO:diaph2,pfn1 | Bud   | notochord        | ISH   | ntla | wild type (unspecified), MO:diaph2,pfn1 | Bud   | tail bud         | ISH   | ntla | wild type (unspecified), MO:diaph2      | Bud   | notochord        | ISH   | ntla | wild type (unspecified), MO:diaph2      | Bud   | tail bud         | ISH   | From <a
 href="http://zfin.org/cgi-bin/webdriver?MIval=aa-fxfigureview.apg&amp;OID=ZDB-FIG-081103-25"
 class="external text" rel="nofollow">ZFIN: Figure: <em>Lai et al.</em>,
-2008, Fig. S5</a> | | | | |
-
-#### What defines an expression pattern?
+2008, Fig. S5</a> | | #### What defines an expression pattern?
 
 Expression could include a lot of different things, and what it includes
 depends on the community:
@@ -1533,14 +1506,7 @@ then you will have to write a script to check that.
 
 #### Table: expression
 
-| F-Key | Name          | Type          | Description       |
-| ----- | ------------- | ------------- | ----------------- |
-|       | expression_id | serial        | _PRIMARY KEY_     |
-|       | uniquename    | text          | _UNIQUE NOT NULL_ |
-|       | md5checksum   | character(32) |                   |
-|       | description   | text          |                   |
-
-expression Structure
+| F-Key | Name          | Type          | Description       | ----- | ------------- | ------------- | ----------------- |       | expression_id | serial        | _PRIMARY KEY_     |       | uniquename    | text          | _UNIQUE NOT NULL_ |       | md5checksum   | character(32) | description   | text          expression Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -1553,13 +1519,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 #### Table: expression_cvterm
 
-| F-Key                                                  | Name                 | Type    | Description         |
-| ------------------------------------------------------ | -------------------- | ------- | ------------------- |
-|                                                        | expression_cvterm_id | serial  | _PRIMARY KEY_       |
-| [expression](#Table:_expression)                       | expression_id        | integer | _UNIQUE#1 NOT NULL_ |
-| [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id            | integer | _UNIQUE#1 NOT NULL_ |
-|                                                        | rank                 | integer | _NOT NULL_          |
-| [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id       | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                  | Name                 | Type    | Description         | ------------------------------------------------------ | -------------------- | ------- | ------------------- |                                                        | expression_cvterm_id | serial  | _PRIMARY KEY_       | [expression](#Table:_expression)                       | expression_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id            | integer | _UNIQUE#1 NOT NULL_ |                                                        | rank                 | integer | _NOT NULL_          | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id       | integer | _UNIQUE#1 NOT NULL_ |
 
 expression_cvterm Structure
 
@@ -1735,13 +1695,7 @@ Module](../Chado_Genetic_Module "Chado Genetic Module").
 
 The environmental component of a phenotype description.
 
-| F-Key | Name           | Type   | Description       |
-| ----- | -------------- | ------ | ----------------- |
-|       | environment_id | serial | _PRIMARY KEY_     |
-|       | uniquename     | text   | _UNIQUE NOT NULL_ |
-|       | description    | text   |                   |
-
-environment Structure
+| F-Key | Name           | Type   | Description       | ----- | -------------- | ------ | ----------------- |       | environment_id | serial | _PRIMARY KEY_     |       | uniquename     | text   | _UNIQUE NOT NULL_ |       | description    | text   environment Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -1752,11 +1706,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 #### Table: environment_cvterm
 
-| F-Key                                                  | Name                  | Type    | Description         |
-| ------------------------------------------------------ | --------------------- | ------- | ------------------- |
-|                                                        | environment_cvterm_id | serial  | _PRIMARY KEY_       |
-| [environment](#Table:_environment)                     | environment_id        | integer | _UNIQUE#1 NOT NULL_ |
-| [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                  | Name                  | Type    | Description         | ------------------------------------------------------ | --------------------- | ------- | ------------------- |                                                        | environment_cvterm_id | serial  | _PRIMARY KEY_       | [environment](#Table:_environment)                     | environment_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id             | integer | _UNIQUE#1 NOT NULL_ |
 
 environment_cvterm Structure
 
@@ -1786,16 +1736,13 @@ Chado module based on the
 rel="nofollow">GDPDM</a>, that will added robust support for natural
 diversity data.
 
-[Categories](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [Tutorials](../Category%253ATutorials "Category%253ATutorials")
 - [Chado](../Category%253AChado "Category%253AChado")
 - [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
 
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[GMOD Malaysia 2014/Chado
-Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FChado-20Tutorial "Special%253ABrowse/GMOD-20Malaysia-202014-2FChado-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|                                                             |                                                                                                                                                                                                       |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/Chado "Special%253ASearchByProperty/Has-20topic/Chado")</span> |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic "Property:Has topic") | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>  |

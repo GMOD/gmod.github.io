@@ -3,7 +3,6 @@ title: "News/San Diego 2014 Registration Open"
 ---
 # News/San Diego 2014 Registration Open
 
-
 Registration is now open for the [upcoming GMOD community
 meeting](../Jan_2014_GMOD_Meeting "Jan 2014 GMOD Meeting"), to be held
 at the <a href="http://www.bw7seas.com/" class="external text"
@@ -29,6 +28,5 @@ If you have any questions or comments, please feel free to contact the
 GMOD helpdesk on help@gmod.org!
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/10/25*

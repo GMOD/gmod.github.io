@@ -3,14 +3,11 @@ title: "Artemis-Chado Integration Tutorial"
 ---
 # Artemis-Chado Integration Tutorial
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Artemis_logo.gif" width="250" height="159"
 alt="Artemis" />
-
 
 This [Artemis-Chado Integration](Artemis "Artemis") tutorial was
 presented by [Robin Houston](User%253ARobinHouston "User%253ARobinHouston"),
@@ -120,17 +117,7 @@ class="external text" rel="nofollow">artemis-user</a>.
   href="http://www.sanger.ac.uk/Software/Artemis/v11/database/chado.practical.guide.pdf"
   class="external text" rel="nofollow">User Practical Guide</a>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Artemis-Chado Integration
-Tutorial](Special%253ABrowse/Artemis-2DChado-20Integration-20Tutorial "Special%253ABrowse/Artemis-2DChado-20Integration-20Tutorial")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Artemis "Special%253ASearchByProperty/Has-20topic/Artemis")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis")  |

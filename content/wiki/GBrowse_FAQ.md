@@ -3,7 +3,6 @@ title: "GBrowse FAQ"
 ---
 # GBrowse FAQ
 
-
   FAQ</span>](#About_this_FAQ)
   - [What is
     this FAQ?](#What_is_this_FAQ.3F)
@@ -72,7 +71,6 @@ title: "GBrowse FAQ"
   - [How many
     tracks can be displayed in
     GBrowse?](#How_many_tracks_can_be_displayed_in_GBrowse.3F)
-
 
 ## About this FAQ
 
@@ -208,11 +206,9 @@ hide the track when the display exceeds a certain size:
 
 Add a line to the appropriate \*.conf file using *link*. For example:
 
-
 ``` de1
  link = http://www.ncbi.nih.gov/SNP/snp_ref.cgi?rs=$name
 ```
-
 
   
 
@@ -399,7 +395,6 @@ GBrowse works with more than 1,000 tracks. From this <a
 href="http://gmod.827538.n3.nabble.com/http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-tp946842p946842.html"
 class="external text" rel="nofollow">email thread (Kai Xia, 2010/07</a>,
 [Lincoln Stein](User%253ALstein "User%253ALstein") said:
-
 
 I think you'll find that 20,000 track definitions are going to slow
 GBrowse down to the point of unusability. I have made some fixes to

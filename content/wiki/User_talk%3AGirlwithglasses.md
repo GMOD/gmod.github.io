@@ -3,14 +3,12 @@ title: "User talk:Girlwithglasses"
 ---
 # User talk:Girlwithglasses
 
-
   feedback extension</span>](#GMOD_website_feedback_extension)
   - [In
     brief](#In_brief)
   - [Possible
     plug in uses](#Possible_plug_in_uses)
   - [Details](#Details)
-
 
 ## GMOD website feedback extension
 

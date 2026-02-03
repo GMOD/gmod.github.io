@@ -3,21 +3,17 @@ title: "Category%253AGBrowse syn"
 ---
 # Category%253AGBrowse syn
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "GBrowse syn"
 
 The following 19 pages are in this category, out of 19 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -91,7 +87,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "GBrowse syn"
 

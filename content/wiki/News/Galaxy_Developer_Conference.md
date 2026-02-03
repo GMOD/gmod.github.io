@@ -3,20 +3,17 @@ title: "News/Galaxy Developer Conference"
 ---
 # News/Galaxy Developer Conference
 
-
 <a
 href="http://meetings.cshl.edu/meetings/meetingsregistration_galaxy10.asp"
 rel="nofollow" title="Galaxy Developer Conference"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyLogoSmall.png" width="26"
 height="25" alt="Galaxy Developer Conference" /></a>
 
-
 <a
 href="http://meetings.cshl.edu/meetings/meetingsregistration_galaxy10.asp"
 rel="nofollow" title="Galaxy Developer Conference"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/CSHL_Logo75x75.gif" width="75"
 height="75" alt="Galaxy Developer Conference" /></a>
-
 
 The <a
 href="http://meetings.cshl.edu/meetings/meetingsregistration_galaxy10.asp"
@@ -52,10 +49,8 @@ interested in using and extending [Galaxy](../Galaxy.1 "Galaxy").
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/12/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

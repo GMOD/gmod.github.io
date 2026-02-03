@@ -3,12 +3,10 @@ title: "News/Software Requirements V2.0"
 ---
 # News/Software Requirements V2.0
 
-
 <a href="../GMOD_Membership#Software" rel="nofollow"
 title="Software Requirements, Ver 2 Proposal"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/48/Gmod-gears.png" width="140"
 height="100" alt="Software Requirements, Ver 2 Proposal" /></a>
-
 
 The [proposed revisions](#Software_Requirements_V2.0.3F) to GMOD's
 [software membership
@@ -41,10 +39,8 @@ Thanks for your help and input,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

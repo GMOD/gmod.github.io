@@ -3,12 +3,10 @@ title: "News/GBrowse 2.13 Release"
 ---
 # News/GBrowse 2.13 Release
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/200px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png 2x"
 width="200" height="47" alt="GBrowse 2.13 Released" />](../GBrowse.1 "GBrowse 2.13 Released")
-
 
 [GBrowse](../GBrowse.1 "GBrowse") version 2.13 has been released. 2.13
 is a maintenance update to 2.12. GBrowse 2.13 and 2.12 include these
@@ -72,10 +70,8 @@ class="external text" rel="nofollow">feature requests</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

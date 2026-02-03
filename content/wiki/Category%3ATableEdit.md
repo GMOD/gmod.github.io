@@ -3,11 +3,9 @@ title: "Category%253ATableEdit"
 ---
 # Category%253ATableEdit
 
-
 ## Pages in category "TableEdit"
 
 The following 9 pages are in this category, out of 9 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -49,7 +47,6 @@ title="TableEdit/IFALT">TableEdit/IFALT</a></span></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "TableEdit"
 
@@ -118,13 +115,4 @@ The following 3 files are in this category, out of 3 total.
   
 
   [SteinWareRetreat.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/SteinWareRetreat.ppt "File:SteinWareRetreat.ppt")  
-  492 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  492 KB

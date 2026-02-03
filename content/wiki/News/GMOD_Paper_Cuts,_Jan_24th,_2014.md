@@ -3,7 +3,6 @@ title: "News/GMOD Paper Cuts, Jan 24th, 2014"
 ---
 # News/GMOD Paper Cuts, Jan 24th, 2014
 
-
 After a break for the festive season,
 <a href="../PAG" class="mw-redirect" title="PAG">PAG XXII</a>, and the
 [GMOD community meeting in San
@@ -158,14 +157,11 @@ Happy reading!
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `DOI:10.1038.2Fng.2875`**</span>
 
-
 Disclaimer: the papers included in this feature are for your
 entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/24*

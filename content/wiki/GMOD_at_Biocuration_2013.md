@@ -3,7 +3,6 @@ title: "GMOD at Biocuration 2013"
 ---
 # GMOD at Biocuration 2013
 
-
 More information coming soon!
 
 GMOD-related content at Biocuration 2013:
@@ -21,8 +20,3 @@ GMOD-related content at Biocuration 2013:
 href="http://www.flickr.com/photos/92269893@N04/sets/72157633207647327/"
 class="external text" rel="nofollow">Flickr set of GMOD and GMOD-related
 posters at Biocuration</a>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

@@ -3,12 +3,10 @@ title: "InsectaCentral"
 ---
 # InsectaCentral
 
-
 <a href="http://insectacentral.org" rel="nofollow"
 title="InsectaCentral"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png" width="93"
 height="75" alt="InsectaCentral" /></a>
-
 
   Overview](#Overview)
 - [Aim](#Aim)
@@ -22,7 +20,6 @@ height="75" alt="InsectaCentral" /></a>
   - [Roadmap](#Roadmap_2)
 - [Wishlist](#Wishlist_2)
 - [License](#License)
-
 
 # Overview
 

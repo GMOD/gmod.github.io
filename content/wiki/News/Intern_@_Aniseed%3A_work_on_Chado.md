@@ -3,14 +3,12 @@ title: "News/Intern @ Aniseed: work on Chado"
 ---
 # News/Intern @ Aniseed: work on Chado
 
-
 <a href="http://www.aniseed.cnrs.fr/" rel="nofollow"
 title="ANISEED seeking interns to work on Chado"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/27/ANISEEDImage.jpg/150px-ANISEEDImage.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/27/ANISEEDImage.jpg/225px-ANISEEDImage.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/27/ANISEEDImage.jpg/300px-ANISEEDImage.jpg 2x"
 width="150" height="175"
 alt="ANISEED seeking interns to work on Chado" /></a>
-
 
 *<a href="http://www.aniseed.cnrs.fr/" class="external text"
 rel="nofollow">Develop modules for a <strong>Chado</strong>-based Model
@@ -89,10 +87,8 @@ rel="nofollow">cyril.martin@crbm.cnrs.fr</a>\>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/19*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

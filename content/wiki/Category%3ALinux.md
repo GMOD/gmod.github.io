@@ -3,15 +3,12 @@ title: "Category%253ALinux"
 ---
 # Category%253ALinux
 
-
 Pages that are specifically about running GMOD components on the Linux
 [operating system](Glossary#Operating_System "Glossary").
-
 
 ## Pages in category "Linux"
 
 The following 9 pages are in this category, out of 9 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -66,7 +63,6 @@ Editors</a></li>
 </tbody>
 </table>
 
-
 ## Media in category "Linux"
 
 This category contains only the following file.
@@ -88,13 +84,4 @@ This category contains only the following file.
   
 
   [LinuxLogoSmall.jpg](File:LinuxLogoSmall.jpg "File:LinuxLogoSmall.jpg")  
-  28 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  28 KB

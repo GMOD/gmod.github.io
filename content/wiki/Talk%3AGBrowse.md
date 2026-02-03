@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse"
 ---
 # Talk%253AGBrowse
 
-
 I'm going to work intermittently on a
 [draft](User%253AJimHu/Gbrowse "User%253AJimHu/Gbrowse") for reorganizing the
 Gbrowse documentation. My plan is to build it in my user namespace and

@@ -3,7 +3,6 @@ title: "GMOD Online Training 2014/GFF3 Tutorial"
 ---
 # GMOD Online Training 2014/GFF3 Tutorial
 
-
 **GFF** is a standard file format for storing genomic features in a text
 file. GFF stands for *Generic Feature Format*. GFF files are plain text,
 9 column, tab-delimited files. GFF
@@ -11,7 +10,6 @@ file. GFF stands for *Generic Feature Format*. GFF files are plain text,
 They use a [schema](../Glossary#Schema "Glossary") custom built to
 represent GFF data. GFF is [frequently used in GMOD](#GFF_in_GMOD) for
 data exchange and representation of genomic data.
-
 
   Versions](#Versions)
 - [GFF3](#GFF3)
@@ -41,7 +39,6 @@ data exchange and representation of genomic data.
   - [GBrowse](#GBrowse)
 - [See
   Also](#See_Also)
-
 
 # Versions
 
@@ -196,7 +193,6 @@ or values containing the following characters: ",=;". Spaces are allowed
 in this field, but tabs must be replaced with the %09 URL escape. This
 field is not required.
 
-
 **Column 9 Tags**
 
 Column 9 tags have predefined meanings:
@@ -266,7 +262,6 @@ All attributes that begin with an uppercase letter are reserved for
 later use. Attributes that begin with a lowercase letter can be used
 freely by applications. You can stash any semi-structured data into the
 database by using one or more unreserved (lowercase) tags.
-
 
 ### Nesting Features
 

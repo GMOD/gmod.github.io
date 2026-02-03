@@ -3,7 +3,6 @@ title: "News/Chado Doc Reorganization"
 ---
 # News/Chado Doc Reorganization
 
-
 Chado is the database schema of GMOD and it has quite a bit of
 documentation in this web site. However, this documentation could be
 better organized and integrated. We are launching the [Chado
@@ -30,10 +29,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

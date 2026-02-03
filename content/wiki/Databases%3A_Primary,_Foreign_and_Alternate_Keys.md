@@ -3,7 +3,6 @@ title: "Databases: Primary, Foreign and Alternate Keys"
 ---
 # Databases: Primary, Foreign and Alternate Keys
 
-
 This introduces some terminology frequently used in relations databases.
 
 In a database table, certain columns are *keys*. Keys help identify rows
@@ -31,9 +30,7 @@ then the* Institution** column in the **Instructors** table would be a
 
 The Instructors table, again.
 
-
 Instructor Table
-
 
 <table data-cellpadding="10" data-cellspacing="0">
 <colgroup>
@@ -134,7 +131,6 @@ Instructor Table
 </tr>
 </tbody>
 </table>
-
 
 ## Note
 

@@ -3,7 +3,6 @@ title: "News/GMOD at Arthropod Genomics"
 ---
 # News/GMOD at Arthropod Genomics
 
-
 There will be two <a href="http://www.k-state.edu/agc/Workshop.shtml"
 class="external text" rel="nofollow">GMOD related workshops</a> at the
 <a href="http://www.k-state.edu/agc/symposium.shtml"
@@ -45,10 +44,8 @@ both open until February 29.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/01/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,19 +3,15 @@ title: "GMODviews"
 ---
 # GMODviews
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="Under Construction" />
-
 
 <span style="font-size: 140%">This page or section is under
 construction.</span>  
   
 
-
 GMODviews will be presented at [PAG 2011](PAG_2011 "PAG 2011").
-
 
 GMODviews is built on
 <a href="http://drupal.org" class="external text" rel="nofollow">Drupal

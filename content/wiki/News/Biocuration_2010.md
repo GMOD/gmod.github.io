@@ -3,12 +3,10 @@ title: "News/Biocuration 2010"
 ---
 # News/Biocuration 2010
 
-
 <a href="http://hinv.jp/biocuration2010/" rel="nofollow"
 title="Biocuration 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/ISBLogo.png" width="113" height="106"
 alt="Biocuration 2010" /></a>
-
 
 I would like to encourage the GMOD community to consider attending
 <a href="http://hinv.jp/biocuration2010/" class="external text"
@@ -40,20 +38,16 @@ rel="nofollow">sign up here</a>. *Early bird
 class="external text" rel="nofollow">registration</a> also closes
 September 6*.
 
-
 The abstract submission deadline has been extended to August 31.
-
 
 [Dave Clements](../User%253AClements "User%253AClements")  
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/24,
 updated 2010/08/25*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

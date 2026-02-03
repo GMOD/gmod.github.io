@@ -3,16 +3,13 @@ title: "MAKER Tutorial 2013"
 ---
 # MAKER Tutorial 2013
 
-
 (Redirected from [MAKER
 Tutorial](/wiki/MAKER_Tutorial)
-
 
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
   
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -112,7 +109,6 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
   - [MAKER
     Accessory Scripts](#MAKER_Accessory_Scripts)
 
-
 ## About MAKER
 
 MAKER is an easy-to-use genome annotation pipeline designed for small
@@ -198,10 +194,8 @@ Examples:
   (<a href="http://www.sequenceontology.org/" class="external text"
   rel="nofollow">Sequence Onotology</a>)
 
-
 Genome project from sequencing to experimental application of
 annotations
-
 
   
 Genome sequence itself is not very useful. The first question that
@@ -212,7 +206,6 @@ use them everyday.
 
   
 Examples of Annotation Databases:
-
 
 - [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")

@@ -3,12 +3,10 @@ title: "News/GMOD @ Arthropod Genomics 2011"
 ---
 # News/GMOD @ Arthropod Genomics 2011
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c1/AGSBug170.png/80px-AGSBug170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c1/AGSBug170.png/120px-AGSBug170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c1/AGSBug170.png/160px-AGSBug170.png 2x"
 width="80" height="86" alt="Arthropod Genomics 2011" />](../Arthropod_Genomics_2011 "Arthropod Genomics 2011")
-
 
 For the fourth year in a row, there will be [GMOD related
 workshops](../Arthropod_Genomics_2011 "Arthropod Genomics 2011") at the
@@ -41,10 +39,8 @@ McKay](../User%253AMckays "User%253AMckays")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

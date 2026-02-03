@@ -3,12 +3,10 @@ title: "News/October GMOD Registration Open"
 ---
 # News/October GMOD Registration Open
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/170px-October2011Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/255px-October2011Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e2/October2011Logo.png/340px-October2011Logo.png 2x"
 width="170" height="153" alt="October 2011 GMOD Meeting" />](../October_2011_GMOD_Meeting "October 2011 GMOD Meeting")
-
 
 Registration for the [October 2011 GMOD
 Meeting](../October_2011_GMOD_Meeting "October 2011 GMOD Meeting") is
@@ -23,10 +21,8 @@ the meeting is limited to 40 people.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/12*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

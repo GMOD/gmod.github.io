@@ -3,7 +3,6 @@ title: "GBrowse Annotation File Management Proposal"
 ---
 # GBrowse Annotation File Management Proposal
 
-
 Lincoln and I talked about a possible GBrowse enhancement this morning.
 This page is to discuss the design and progress of that potential
 enhancement. --[Jhannah](User%253AJhannah "User%253AJhannah") 10:57, 1 June 2007

@@ -3,10 +3,8 @@ title: "WebApollo Tutorial 2013"
 ---
 # WebApollo Tutorial 2013
 
-
 (Redirected from [WebApollo
 Tutorial](/wiki/WebApollo_Tutorial)
-
 
 These are the steps I took to install WebApollo on the prebuilt AWS
 image. Some steps need only be performed once, such as installing the
@@ -22,7 +20,6 @@ located here: <a
 href="http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf"
 class="external free"
 rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf</a>
-
 
   Prerequisites](#Prerequisites)
 - [Database
@@ -44,7 +41,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   WebApollo instance](#View_your_WebApollo_instance)
 - [Note on track
   styling](#Note_on_track_styling)
-
 
 ## Prerequisites
 

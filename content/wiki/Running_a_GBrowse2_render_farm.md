@@ -3,7 +3,6 @@ title: "Running a GBrowse2 render farm"
 ---
 # Running a GBrowse2 render farm
 
-
 [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2") can be configured
 to use one or more "render slave" daemons. A render slave is a small
 Perl process that runs in the background, processing requests to render
@@ -13,7 +12,6 @@ thereby achieving improved performance. A slave can be attached to a
 particular track, a particular set of tracks, or to all tracks. In
 addition, you may assign multiple slaves to tracks, in which case the
 load will be distributed across each slave in a round-robin fashion.
-
 
   Introduction](#Introduction)
 - [Common
@@ -32,7 +30,6 @@ load will be distributed across each slave in a round-robin fashion.
   - [The
     slave_preload.conf file](#The_slave_preload.conf_file)
 - [Troubleshooting](#Troubleshooting)
-
 
 ## Introduction
 
@@ -55,7 +52,6 @@ offloaded to render slaves.
 
 ## Common Configurations
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -65,15 +61,12 @@ offloaded to render slaves.
 <tr class="odd">
 <td>
 
-
 Figure 4:Multiple servers with private databases
-
 
 </td>
 </tr>
 </tbody>
 </table>
-
 
 Figures 1 through 4 illustrate common render slave configurations. In
 each of these configurations, we assume that your data source has three
@@ -386,8 +379,3 @@ Slaves write diagnostic messages to a log file usually located in
 /var/log/gbrowse/gbrowse_slave. Error messages will be written to this
 location. During troubleshooting you may wish to increase VERBOSITY
 option in the /etc/default/gbrowse-slave file to its maximum level of 3.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")

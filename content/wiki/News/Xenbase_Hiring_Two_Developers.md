@@ -3,7 +3,6 @@ title: "News/Xenbase Hiring Two Developers"
 ---
 # News/Xenbase Hiring Two Developers
 
-
 ### These positions have now been filled
 
 <a href="http://xenbase.org" rel="nofollow" title="Xenbase"><img
@@ -53,10 +52,8 @@ the database director, Jeff Bowes bowes \[at\] ucalgary.ca
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

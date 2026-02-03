@@ -3,7 +3,6 @@ title: "GMOD Evo Hackathon Proposal Supplemental Information"
 ---
 # GMOD Evo Hackathon Proposal Supplemental Information
 
-
   
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -37,7 +36,6 @@ On this page you will find additional information related to the [GMOD
 Evo Hackathon
 Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal").
 
-
   of Secondary Importance</span>](#Other_topics_of_Secondary_Importance)
   - [Natural
     Diversity / Population Genetics / Multidimensional Data
@@ -67,7 +65,6 @@ Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal").
     Support](#Evo-Devo_Support)
   - [Tree /
     Graph Visualization](#Tree_.2F_Graph_Visualization)
-
 
 ### Other topics of Secondary Importance
 
@@ -241,9 +238,3 @@ breeding), ontologies, and breeding data. Several GMOD users have
 developed their own visualization tools for this type of data. We could
 integrate one of those solutions, or an outside solution, for
 visualization.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Evo
-  Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")

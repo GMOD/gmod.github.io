@@ -3,15 +3,12 @@ title: "Tripal Tutorial (v1.0)"
 ---
 # Tripal Tutorial (v1.0)
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
-
 
 This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
 Ficklin](User%253ASficklin "User%253ASficklin") at the [2012 GMOD Summer
@@ -34,7 +31,6 @@ ami-b7fa4dde, name: GMOD 2012 day 2 start**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
 Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
 how to get this AMI.
-
 
   Tripal</span>](#What_is_Tripal)
 - [Content
@@ -175,7 +171,6 @@ how to get this AMI.
     - [Creating Custom
       Modules](#Creating_Custom_Modules)
 
-
 ### What is Tripal
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
@@ -249,7 +244,6 @@ rel="nofollow">http://gmod.org/wiki/Chado_-_Getting_Started</a>.
 However, one thing to remember in regards to Tripal organization is that
 Chado has a modular structure:
 
-
 - Audit - for database audits
 - Companalysis - for data from computational analysis
 - Contact - for people, groups, and organizations
@@ -268,7 +262,6 @@ Chado has a modular structure:
 - Sequence - for sequences and sequence features
 - Stock - for specimens and biological collections
 - WWW -
-
 
 Tripal is also modular along these same designations.
 
@@ -336,23 +329,14 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL | Tripal Version |
-|----|----|----|
-| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
-rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | development version |
-| Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
-rel="nofollow">http://www.vaccinium.org</a> | v0.3.1b |
-| Genome Database for Rosacaee | <a href="http://www.rosaceae.org" class="external free"
-rel="nofollow">http://www.rosaceae.org</a> | v1.0 (under construction) |
-| Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
-rel="nofollow">http://www.gabcsfl.org</a> | v0.3.1b |
-| Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
-rel="nofollow">http://www.cacaogenomedb.org</a> | pre v1.0 |
-| Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
-rel="nofollow">http://www.fagaceae.org</a> | v0.2 |
-| Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
-rel="nofollow">http://www.citrusgenomedb.org</a> | v0.2 |
-| Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
+| Site Name | URL | Tripal Version |----|----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | development version | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
+rel="nofollow">http://www.vaccinium.org</a> | v0.3.1b | Genome Database for Rosacaee | <a href="http://www.rosaceae.org" class="external free"
+rel="nofollow">http://www.rosaceae.org</a> | v1.0 (under construction) | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
+rel="nofollow">http://www.gabcsfl.org</a> | v0.3.1b | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
+rel="nofollow">http://www.cacaogenomedb.org</a> | pre v1.0 | Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
+rel="nofollow">http://www.fagaceae.org</a> | v0.2 | Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
+rel="nofollow">http://www.citrusgenomedb.org</a> | v0.2 | Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
 rel="nofollow">http://www.marinegenomics.org</a> | pre v0.1 |
 
 ### Resources
@@ -967,10 +951,8 @@ cron launch the crontab editor:
   sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -1652,10 +1634,8 @@ need to add a second cron entry:
    sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -3294,19 +3274,7 @@ rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel</a
 and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [Tripal](Category%253ATripal "Category%253ATripal")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Tripal Tutorial
-(v1.0)](Special%253ABrowse/Tripal-20Tutorial-20(v1.0) "Special%253ABrowse/Tripal-20Tutorial-20(v1.0)")</span>"</span>
+"<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(v1.0)")</span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |

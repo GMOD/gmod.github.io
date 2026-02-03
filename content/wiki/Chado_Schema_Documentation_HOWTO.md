@@ -3,7 +3,6 @@ title: "Chado Schema Documentation HOWTO"
 ---
 # Chado Schema Documentation HOWTO
 
-
 The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> schema
 documentation on this wiki is a mixture of generated content and
 material directly entered by GMOD users into this wiki. The generated
@@ -19,7 +18,6 @@ Tables](Chado_Tables "Chado Tables") page are generated every time there
 is a new release of Chado. The column and table details, including
 comments, come from the [PostgreSQL](PostgreSQL "PostgreSQL") data
 dictionary.
-
 
   and Table Documentation</span>](#Using_Module_and_Table_Documentation)
   - [Showing a
@@ -51,7 +49,6 @@ dictionary.
   complicated?](#Why_is_this_complicated.3F)
 - [Internals](#Internals)
   - [wiki.tmpl](#wiki.tmpl)
-
 
 ## Using Module and Table Documentation
 
@@ -142,7 +139,6 @@ source tree:
 Edit `generateChadoWikiTables.py` and update any of these variables that
 you need to:
 
-
 ```de1
 # UPDATE THESE 4 BEFORE RUNNING THE PROGRAM.
 DB_NAME           = "testdb"
@@ -150,7 +146,6 @@ DB_USER           = "gmodhack"
 MODULE_TABLE_PATH = "../../modules/module-tables.json"
 WIKI_DIR          = "/tmp/ChadoWikiFiles"
 ```
-
 
 Before you can run this script, make sure that the `postgresql_autodoc`
 package is installed. The script won't run without it. Now run:
@@ -165,14 +160,7 @@ on my laptop.
 This script places generated wiki content in the `WIKI_DIR` directory,
 which by default is `/tmp/ChadoWikiFiles/`:
 
-
-|                        |                                                                                                                                             |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/tmp/ChadoWikiFiles/` | Determined by what `WIKI_DIR` is set to.                                                                                                    |
-| ` Modules/`            | Contains one file per module. These become the "Tables" sections of the [Chado module pages](Template:ChadoModules "Template:ChadoModules") |
-| ` Tables/`             | Contains one file per table; these will become Table Templates.                                                                             |
-| ` allTables.wiki`      | List of all tables; will become the module/table list on [Chado Tables](Chado_Tables "Chado Tables").                                       |
-
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | `/tmp/ChadoWikiFiles/` | Determined by what `WIKI_DIR` is set to.                                                                                                    | ` Modules/`            | Contains one file per module. These become the "Tables" sections of the [Chado module pages](Template:ChadoModules "Template:ChadoModules") | ` Tables/`             | Contains one file per table; these will become Table Templates.                                                                             | ` allTables.wiki`      | List of all tables; will become the module/table list on [Chado Tables](Chado_Tables "Chado Tables").                                       |
 
 ### Push Regenerated Wiki Text to GMOD.org
 
@@ -188,7 +176,6 @@ do this. Then update the three types of pages:
 #### Update Table Templates
 
 On the GMOD web server create this script:
-
 
 ```de1
 #!/usr/bin/python
@@ -215,7 +202,6 @@ for tablePath in glob.glob(TABLES_DIR + "/*.wiki"):
     print(command)
     os.system(command)
 ```
-
 
 Set `MW_USERNAME` and `COMMENT` appropriately. Also set `TABLES_DIR` to
 be the relative path from the script to directory containing the Table

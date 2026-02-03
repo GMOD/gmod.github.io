@@ -3,7 +3,6 @@ title: "Talk:Chado Publication Module"
 ---
 # Talk:Chado Publication Module
 
-
 anybody know how to find those cvterms related to pub module?
 
 For publication types, see this FBcv ontology:

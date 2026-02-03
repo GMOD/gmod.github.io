@@ -3,11 +3,9 @@ title: "Category%253A2013 Summer School"
 ---
 # Category%253A2013 Summer School
 
-
 ## Pages in category "2013 Summer School"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -53,7 +51,6 @@ Tutorial 2012</a></li>
 </tr>
 </tbody>
 </table>
-
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253A2013_Summer_School](/wiki/Category%253A2013_Summer_School)"

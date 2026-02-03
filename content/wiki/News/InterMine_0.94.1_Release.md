@@ -3,12 +3,10 @@ title: "News/InterMine 0.94.1 Release"
 ---
 # News/InterMine 0.94.1 Release
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/170px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/255px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/340px-InterMineLogo.png 2x"
 width="170" height="21" alt="InterMine 0.94.1 release" />](../InterMine "InterMine 0.94.1 release")
-
 
 [InterMine](../InterMine "InterMine") 0.94.1 is now released, and
 available as a subversion branch and zip file.
@@ -43,10 +41,8 @@ The [InterMine](../InterMine "InterMine") developers
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

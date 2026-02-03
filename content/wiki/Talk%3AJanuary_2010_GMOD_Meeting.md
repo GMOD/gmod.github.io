@@ -3,7 +3,6 @@ title: "Talk:January 2010 GMOD Meeting"
 ---
 # Talk:January 2010 GMOD Meeting
 
-
 ## Add to the Agenda Suggestions
 
 Um, so to sign up for talks/timeslots, do we just add things to the

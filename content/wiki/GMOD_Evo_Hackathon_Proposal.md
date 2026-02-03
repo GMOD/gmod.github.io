@@ -3,7 +3,6 @@ title: "GMOD Evo Hackathon Proposal"
 ---
 # GMOD Evo Hackathon Proposal
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -32,7 +31,6 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
 
   
 
-
 This proposal was submitted to, and then approved and
 [funded](GMOD_Evo_Hackathon#Sponsorship "GMOD Evo Hackathon") by
 <a href="http://nescent.org" class="external text"
@@ -40,12 +38,10 @@ rel="nofollow">NESCent</a> in June 2010. **For up-to-date information on
 the hackathon, see the [hackathon's home
 page](GMOD_Evo_Hackathon "GMOD Evo Hackathon").**
 
-
 The [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon") aims
 to bring together key developers of GMOD components with developers from
 the evolutionary biology community to fill critical gaps in GMOD for
 evolutionary research.
-
 
   Synopsis](#Synopsis)
 - [Background](#Background)
@@ -63,7 +59,6 @@ evolutionary research.
   Participation](#Logistics_and_Participation)
 - [Organization
   and Agenda](#Organization_and_Agenda)
-
 
 ## Synopsis
 
@@ -317,9 +312,3 @@ After the hackathon organizers and GMOD staff will followup with
 participants to help with seeing unfinished tasks through to completion,
 similar as has been done in GMOD following the [GMOD
 Meetings](Meetings "Meetings").
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Evo
-  Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")

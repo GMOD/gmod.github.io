@@ -3,7 +3,6 @@ title: "GBrowse Gentoo HOWTO"
 ---
 # GBrowse Gentoo HOWTO
 
-
   Prerequisites](#Prerequisites)
 - [Installing
   GBrowse using net
@@ -13,7 +12,6 @@ title: "GBrowse Gentoo HOWTO"
 - [Starting
   GBrowse](#Starting_GBrowse)
 - [AUTHORS](#AUTHORS)
-
 
 # Prerequisites
 

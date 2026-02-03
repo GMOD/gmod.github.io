@@ -3,21 +3,17 @@ title: "News/Get GMOD Gear!"
 ---
 # News/Get GMOD Gear!
 
-
 <a href="http://www.cafepress.com/GenericMOD/" rel="nofollow"
 title="GMOD Mug"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/GMODMug150x150.jpg" width="150"
 height="150" alt="GMOD Mug" /></a>
-
 
 <a href="http://www.cafepress.com/GenericMOD/" rel="nofollow"
 title="GMOD T Shirt"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/TShirtThumb.jpg" width="150"
 height="150" alt="GMOD T Shirt" /></a>
 
-
   
-
 
 Tired of not having a cool T-shirt to wear at meetings?  
   
@@ -30,7 +26,6 @@ time?
 rel="nofollow"><strong>Be the first person in your lab, community,
 organization, building, campus or country to be seen with some GMOD
 gear!</strong></a>
-
 
   
 **Note:** Want to win a shirt of mug for free? Then participate in the
@@ -58,10 +53,8 @@ Please note:
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/10/09*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

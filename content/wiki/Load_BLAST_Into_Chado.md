@@ -3,7 +3,6 @@ title: "Load BLAST Into Chado"
 ---
 # Load BLAST Into Chado
 
-
   Abstract](#Abstract)
 - [Have an
   existing Chado genome
@@ -24,7 +23,6 @@ title: "Load BLAST Into Chado"
 - [More
   Information](#More_Information)
 - [Authors](#Authors)
-
 
 # Abstract
 
@@ -121,45 +119,23 @@ Then you should see these database updates:
 Analysis table entry of the
 [Chado_Companalysis_Module](Chado_Companalysis_Module "Chado Companalysis Module"):
 
-| analysis_id | name | description | program | programversion | algorithm | sourcename |
-|----|----|----|----|----|----|----|
-| 10 | tBLASTn.MOD_Scer |  | tBLASTn | null |  | MOD_Scer |
+| analysis_id | name | description | program | programversion | algorithm | sourcename |----|----|----|----|----|----|----| 10 | tBLASTn.MOD_Scer | tBLASTn | null | MOD_Scer |
 
 Analysisfeature table entries (1/hsp)
 
-|  |  |  |  |  |  |  |  |
-|----|----|----|----|----|----|----|----|
-| analysisfeature_id | feature_id | analysis_id | rawscore | normscore | significance | identity |  |
-| 21 | 88148 | 10 | 117 |  |  |  | ← 1st HSP |
-| 22 | 88150 | 10 | 91.7 |  |  |  |  |
-| ... |  |  |  |  |  |  |  |
-
-Feature table entry for Hit feature_id 88148 :
-
+|  |  |  |----|----|----|----|----|----|----|----| analysisfeature_id | feature_id | analysis_id | rawscore | normscore | significance | identity | 21 | 88148 | 10 | 117 |  | ← 1st HSP | 22 | 88150 | 10 | 91.7 |  | ... |  |  |  Feature table entry for Hit feature_id 88148 :
 
 ``` de1
  SELECT * FROM feature WHERE feature_id = 88148;
 ```
 
+| feature_id | dbxref_id | organism_id | name | uniquename | residues | seqlen | md5checksum | type_id | is_analysis | is_obsolete |----|----|----|----|----|----|----|----|----|----|----| 88148 | 76797 | 10 | protein_match-auto88148 | auto88148 |  | 423 | t | f | ... |  |  |  |  |  Featureloc entries for Hit feature_id 88148:
 
-| feature_id | dbxref_id | organism_id | name | uniquename | residues | seqlen | md5checksum | type_id | is_analysis | is_obsolete |
-|----|----|----|----|----|----|----|----|----|----|----|
-| 88148 | 76797 | 10 | protein_match-auto88148 | auto88148 |  |  |  | 423 | t | f |
-| ... |  |  |  |  |  |  |  |  |  |  |
-
-Featureloc entries for Hit feature_id 88148:
-
-| featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |  |
-|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 88149 | 88148 | 88149 | 69 | f | 858 | f |  |  |  | 0 | 1 | ← Target protein |
-| 88148 | 88148 | 31118 | 24052 | f | 24448 | f | 1 |  |  | 0 | 0 | ← Source genome |
+| featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |----|----|----|----|----|----|----|----|----|----|----|----|----| 88149 | 88148 | 88149 | 69 | f | 858 | f |  | 0 | 1 | ← Target protein | 88148 | 88148 | 31118 | 24052 | f | 24448 | f | 1 |  | 0 | 0 | ← Source genome |
 
 Featureloc entries for Target feature_id 88149:
 
-| featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |  |
-|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 88149 | 88148 | 88149 | 69 | f | 858 | f |  |  |  | 0 | 1 | ← first HSP |
-| 88151 | 88150 | 88149 | 69 | f | 858 | f |  |  |  | 0 | 1 | ← second HSP |
+| featureloc_id | feature_id | srcfeature_id | fmin | is_fmin_partial | fmax | is_fmax_partial | strand | phase | residue_info | locgroup | rank |----|----|----|----|----|----|----|----|----|----|----|----|----| 88149 | 88148 | 88149 | 69 | f | 858 | f |  | 0 | 1 | ← first HSP | 88151 | 88150 | 88149 | 69 | f | 858 | f |  | 0 | 1 | ← second HSP |
 
 *I believe the ranks shown in the featureloc example above may not be
 correct or at least are misleading; see the [Chado Best Practices

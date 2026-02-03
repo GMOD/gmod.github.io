@@ -3,7 +3,6 @@ title: "Learn XMLXORT"
 ---
 # Learn XMLXORT
 
-
 ok, first question is why xmlxort. because many information are not in
 gff3.
 
@@ -24,7 +23,6 @@ data. Which strategy to use?
 
 steps: I will first try on the rudimental table, such as cv(?), biblio,
 db(?).
-
 
   classes</span>](#wormbase_acedb_classes)
 - [chado database
@@ -58,7 +56,6 @@ db(?).
   chado](#transgene_from_wormbase_to_feature_from_chado)
 - [variation
   from wormbase](#variation_from_wormbase)
-
 
 ## wormbase acedb classes
 

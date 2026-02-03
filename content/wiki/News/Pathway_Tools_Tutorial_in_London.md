@@ -3,7 +3,6 @@ title: "News/Pathway Tools Tutorial in London"
 ---
 # News/Pathway Tools Tutorial in London
 
-
 A [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") and BioCyc
 <a href="http://brg.ai.sri.com/ptools/tutorial/2008-09-London.html"
 class="external text" rel="nofollow">tutorial</a> well be held September
@@ -44,10 +43,8 @@ Peter Karp
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

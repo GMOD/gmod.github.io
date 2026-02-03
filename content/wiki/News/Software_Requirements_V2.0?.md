@@ -3,12 +3,10 @@ title: "News/Software Requirements V2.0?"
 ---
 # News/Software Requirements V2.0?
 
-
 <a href="../GMOD_Membership#Software" rel="nofollow"
 title="Software Requirements, Ver 2 Proposal"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/48/Gmod-gears.png" width="140"
 height="100" alt="Software Requirements, Ver 2 Proposal" /></a>
-
 
 GMOD's [procedures and requirements for software to become a part of
 GMOD](../GMOD_Membership#Software "GMOD Membership") were codified in
@@ -50,10 +48,8 @@ the requirements.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/07*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

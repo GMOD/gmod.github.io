@@ -3,7 +3,6 @@ title: "Web-apollo-meeting-minutes-2010-11-18"
 ---
 # Web-apollo-meeting-minutes-2010-11-18
 
-
 **date:** 4:49 PM 11/18/2010  
 **participants:** Nomi, Gregg, Jay, Ed, Suzie, Mitch  
 **topic:** meeting minutes  

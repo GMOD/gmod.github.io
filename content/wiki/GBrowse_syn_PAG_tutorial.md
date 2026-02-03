@@ -3,7 +3,6 @@ title: "GBrowse syn PAG tutorial"
 ---
 # GBrowse syn PAG tutorial
 
-
   
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
@@ -19,7 +18,6 @@ The notes and [VMware image](#VMware) used on this page are from the
 Europe course.
 
   
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -70,7 +68,6 @@ Europe course.
 - [Optional
   Advanced Section](#Optional_Advanced_Section)
 
-
   
 
 # VMware
@@ -102,7 +99,6 @@ machine.</strong></em></p></td>
 
 # Caveats
 
-
 **Important Note**
 
 This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
@@ -112,9 +108,7 @@ over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
 
-
 # The Generic Synteny Browser
-
 
 # Optional Advanced Section
 

@@ -3,17 +3,14 @@ title: "Category%253AAJAX"
 ---
 # Category%253AAJAX
 
-
 AJAX is a web user interface technology used in some [GMOD
 Components](GMOD_Components "GMOD Components"). It is used to provide a
 richer user experience than was typically available during the first 10
 years of the web. AJAX stands for Asynchronous Javascript and XML.
 
-
 ## Pages in category "AJAX"
 
 The following 7 pages are in this category, out of 7 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -56,8 +53,3 @@ title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")

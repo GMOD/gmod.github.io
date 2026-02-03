@@ -3,7 +3,6 @@ title: "User%253ABrianfoley"
 ---
 # User%253ABrianfoley
 
-
 I am Brian Foley, PhD.
 
 The organism I work on, the primate immunodeficiency viruses which
@@ -15,8 +14,3 @@ a lot about the epidemiology and geographic spread of HIV. It evolves
 very fast, and we have data covering over 25 years of evolution.
 
 You can contact me at btf(at)lanl(dot)gov
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Evolution](Category%253AEvolution "Category%253AEvolution")

@@ -3,7 +3,6 @@ title: "Chado Publication Module"
 ---
 # Chado Publication Module
 
-
   Introduction](#Introduction)
 - [Tables](#Tables)
   - [Table:
@@ -16,7 +15,6 @@ title: "Chado Publication Module"
     pubauthor](#Table:_pubauthor)
   - [Table:
     pubprop](#Table:_pubprop)
-
 
 # Introduction
 
@@ -194,12 +192,7 @@ Tables referencing this one via Foreign Key Constraints:
 Handle links to repositories, e.g. Pubmed, Biosis, zoorec, OCLC,
 Medline, ISSN, coden...
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | pub_dbxref_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
-|  | is_current | boolean | *NOT NULL DEFAULT true* |
+| F-Key | Name | Type | Description |----|----|----|----|  | pub_dbxref_id | serial | *PRIMARY KEY* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |  | is_current | boolean | *NOT NULL DEFAULT true* |
 
 pub_dbxref Structure
 
@@ -214,12 +207,7 @@ makes others obsolete, when one publication contains errata with respect
 to other publication(s), or when one publication also appears in another
 pub.
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | pub_relationship_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |----|----|----|----|  | pub_relationship_id | serial | *PRIMARY KEY* | [pub](Chado_Tables#Table:_pub "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
 
 pub_relationship Structure
 
@@ -316,13 +304,7 @@ pubauthor Structure
 
 Property-value pairs for a pub. Follows standard chado pattern.
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | pubprop_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | *NOT NULL* |
-|  | rank | integer | *UNIQUE#1* |
+| F-Key | Name | Type | Description |----|----|----|----|  | pubprop_id | serial | *PRIMARY KEY* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | *NOT NULL* |  | rank | integer | *UNIQUE#1* |
 
 pubprop Structure
 

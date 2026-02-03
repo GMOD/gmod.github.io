@@ -3,14 +3,12 @@ title: "Genes4all"
 ---
 # Genes4all
 
-
   Overview](#Overview)
 - [Dependencies](#Dependencies)
 - [Features](#Features)
 - [Demos and
   Screenshots](#Demos_and_Screenshots)
 - [License](#License)
-
 
 # Overview
 

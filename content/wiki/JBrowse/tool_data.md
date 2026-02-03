@@ -3,7 +3,6 @@ title: "JBrowse/tool data"
 ---
 # JBrowse/tool data
 
-
 This page stores the data that populates the
 [JBrowse](../JBrowse.1 "JBrowse") wiki page.
 
@@ -38,12 +37,10 @@ for the server.
 
 \| screenshot =
 
-
 <a href="../File:JBrowse_alignment_and_coverage.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/JBrowse_alignment_and_coverage.png/600px-JBrowse_alignment_and_coverage.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/JBrowse_alignment_and_coverage.png/900px-JBrowse_alignment_and_coverage.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/JBrowse_alignment_and_coverage.png 2x"
 width="600" height="373" alt="JBrowse alignment and coverage.png" /></a>
-
 
 \| public_server = \| dl = \| dl_url =
 <a href="http://jbrowse.org/install/" class="external free"
@@ -123,7 +120,6 @@ information on:
   statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics "JBrowse Configuration Guide")
 
 Additional topics:
-
 
 - [GMOD in the
   Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")

@@ -3,7 +3,6 @@ title: "June 2006 GMOD Meeting"
 ---
 # June 2006 GMOD Meeting
 
-
 GMOD Generic Model Organism Database
 
   
@@ -123,8 +122,3 @@ avoid duplication and encourage cooperation
 12:00 Lunch
 
 1:15 (Presentations, show and tell, depends on what suggestions we get).
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

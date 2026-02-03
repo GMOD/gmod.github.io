@@ -3,7 +3,6 @@ title: "Apollo/tool data"
 ---
 # Apollo/tool data
 
-
   
 This page stores the data that populates the
 [Apollo](../Apollo.1 "Apollo") wiki page.
@@ -112,17 +111,11 @@ installation and usage of Apollo.
 
 \| wild_urls = \| mail =
 
-|  |  |  |  |
-|----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text"
+|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text"
 rel="nofollow">apollo</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") mailing list | <a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
-class="external text" rel="nofollow">Nabble</a> (2010/05+) |
-|  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
-class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") code updates. |  |
-
-Please submit bug reports to the <a
+class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
+class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") code updates. Please submit bug reports to the <a
 href="http://sourceforge.net/tracker/?atid=462763&amp;group_id=27707&amp;func=browse"
 class="external text" rel="nofollow">Apollo bug tracker at
 Sourceforge</a>. \| logo_info = The [Apollo

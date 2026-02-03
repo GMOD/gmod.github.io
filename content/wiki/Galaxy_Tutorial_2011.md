@@ -3,7 +3,6 @@ title: "Galaxy Tutorial 2011"
 ---
 # Galaxy Tutorial 2011
 
-
 <a href="http://galaxyproject.org" class="external text"
 rel="nofollow">Galaxy</a> is a framework for integrating computational
 tools. It allows nearly any tool that can be run from the command line
@@ -13,7 +12,6 @@ On top of these tools, Galaxy provides an accessible environment for
 interactive analysis that transparently tracks the details of analyses,
 a workflow system for convenient reuse, data management, sharing,
 publishing, and more.
-
 
   Galaxy instance</span>](#Creating_a_Galaxy_instance)
   - [Getting
@@ -98,7 +96,6 @@ publishing, and more.
 - [Where to go
   next](#Where_to_go_next)
 
-
 # Creating a Galaxy instance
 
 ## Getting Galaxy
@@ -129,7 +126,6 @@ The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
 rel="nofollow">bitbucket hosting service</a>.
 
-
 **DO NOT DO THIS NOW**: To create a local clone of the release
 repository run the following:
 
@@ -137,7 +133,6 @@ repository run the following:
  gmod@ubuntu:~$ cd ~/work
  gmod@ubuntu:~/work$ hg clone http://bitbucket.org/galaxy/galaxy-dist
 ```
-
 
 **DO THIS INSTEAD**: To ensure we are all using the exact same revision
 of Galaxy, instead clone from a repository that is already on the VM
@@ -255,10 +250,8 @@ either upload a file, or enter one or more URLs in the **URL/Text** box.
 
     ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt
 
-
 (**Note:** You can also upload this from the filesystem at
 `~/Documents/Data/galaxy/)`
-
 
 in the **URL/Text** box and *click* **Execute**.
 
@@ -388,13 +381,13 @@ interface:
 For example, let's look at the first dataset we created:
 
     sqlite> select * from history_dataset_association limit 1;
-    1|1|1|2011-02-25 23:10:08.399957|2011-02-25 23:33:22.081694||1|ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt%7Cuploaded tabular file|200 regions|#bin chrom   chromStart  chromEnd    name    score   floatScore
+    1|1|1|2011-02-25 23:10:08.399957|2011-02-25 23:33:22.081694|1|ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/TAF1_ChIP.txt%7Cuploaded tabular file|200 regions|#bin chrom   chromStart  chromEnd    name    score   floatScore
     1470    chr7    116099071   116100373   26384   720 2.183
     1589    chr5    131622266   131623568   26442   679 2.06
     1590    chr5    131854028   131855330   26415   693 2.102
     1591    chr5    131859918   131861220   26451   675 2.048
     1592    chr5    132109996   132111298   26337   764 2.317
-    |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}|||0|1|
+    |tabular|{"column_types": ["int", "str", "int", "int", "int", "int", "float"], "columns": 7, "comment_lines": 1, "data_lines": 200, "dbkey": "hg18"}||0|1|
 
 We see that this table tracks all the information the Galaxy interface
 needs to work with this dataset, include user defined fields such as
@@ -439,7 +432,6 @@ which tools are loaded by a given instance:
 
     gmod@ubuntu:~/work/galaxy-dist$ head tool_conf.xml
 
-
 ``` de1
 <?xml version="1.0"?>
  <toolbox>
@@ -453,10 +445,8 @@ which tools are loaded by a given instance:
      <tool file="data_source/biomart.xml" />
 ```
 
-
 Each referenced file contains the description of a particular tool. The
 **Get Flanks** tool we used earlier is described farther down:
-
 
 ``` de1
   <section name="Operate on Genomic Intervals" id="bxops">
@@ -469,10 +459,8 @@ Each referenced file contains the description of a particular tool. The
   </section>
 ```
 
-
 Let's examine the **Get Flanks** tool by looking at the file
 `tools/new_operations/get_flanks.xml`:
-
 
 ``` de1
  <tool id="get_flanks1" name="Get flanks">
@@ -507,7 +495,6 @@ Let's examine the **Get Flanks** tool by looking at the file
  </tool>
 ```
 
-
 This syntax is defined at <a
 href="https://bitbucket.org/galaxy/galaxy-central/wiki/ToolConfigSyntax"
 class="external text" rel="nofollow">Tool Config Syntax</a> on the
@@ -523,7 +510,6 @@ supported data type. In this case, the input is defined as format
 `lib/galaxy/datatypes/interval.py`, which defines interval formats. To
 find each type's metadata elements, search for `MetadataElement`:
 
-
 ``` de1
 class Interval( Tabular ):
     """Tab delimited data containing interval information"""
@@ -537,7 +523,6 @@ class Interval( Tabular ):
     MetadataElement( name="nameCol", desc="Name/Identifier column (click box & select)", param=metadata.ColumnParameter, optional=True, no_value=0 )
     MetadataElement( name="columns", default=3, desc="Number of columns", readonly=True, visible=False )
 ```
-
 
 Test and help details have been removed from the listing here. The
 `<help>` section describes the tool. This text is displayed on the tool
@@ -735,7 +720,6 @@ Let's first create a directory for our new tool:
 And then using a [text editor](Linux_Text_Editors "Linux Text Editors"),
 create `tools/gmod_2011/sam_filter.py` containing:
 
-
 ``` de1
 #!/usr/bin/env python
  
@@ -761,12 +745,10 @@ for line in open( sys.argv[1] ):
         out.write( line )
 ```
 
-
 ## The tool wrapper
 
 Next, we need to create the tool configuration. Edit the file
 `tools/gmod_2011/sam_filter.xml` and start with the following skeleton:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -782,10 +764,8 @@ Next, we need to create the tool configuration. Edit the file
 </tool>
 ```
 
-
 First, let's define the output. This tool has a single output, of type
 `sam`, so we modify the configuration to contain:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -801,7 +781,6 @@ First, let's define the output. This tool has a single output, of type
 </tool>
 ```
 
-
 The name can be anything, but it will be used later to identify the
 output file in the command line. Second, let's define the following
 inputs
@@ -811,7 +790,6 @@ inputs
 - An input value, which can be any text
 
 The resulting configuration:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -833,12 +811,10 @@ The resulting configuration:
 </tool>
 ```
 
-
 Finally, we define how to construct our command line based on values for
 the inputs. The command line is a template, where we can substitute in
 the value of each input (filenames in the case of datasets). Thus our
 final tool configuration is:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -860,10 +836,8 @@ final tool configuration is:
 </tool>
 ```
 
-
 We now need to modify `tool_conf.xml` to register our new tool and run
 Galaxy. Modify the top of `tool_conf.xml` to look like:
-
 
 ``` de1
 <?xml version="1.0"?>
@@ -873,7 +847,6 @@ Galaxy. Modify the top of `tool_conf.xml` to look like:
   </section>
   ...
 ```
-
 
 and run Galaxy using `run.sh`
 
@@ -947,7 +920,6 @@ build identifier or dbkey). For our example, the identifier will be
 
 ## Python package management tools
 
-
 **DO NOT DO THIS NOW**: This has already been done on the VMware image.
 
 First, install a few packages that will allow us to index our data. At
@@ -955,9 +927,7 @@ the terminal, enter:
 
 `  $ `<span class="enter">`sudo apt-get install python-dev python-setuptools python-pip`</span>
 
-
 ## bx-python
-
 
 **Do not do this now either.** This has already been done on your image.
 
@@ -968,7 +938,6 @@ This *would* install some support files needed by Python. Next type
 This would install the `bx-python` package, a collection of scripts and
 Python libraries for working with genomic and comparative genomic data.
 
-
 ## Get datasets for our genome
 
 Now, we will download the datasets for our example genome:
@@ -978,10 +947,8 @@ Now, we will download the datasets for our example genome:
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.maf
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2011/SpringTraining/Galaxy/a_example_1.2bit
 
-
 Note: These files are also available on the image in
 `~/Documents/Data/galaxy/`.
-
 
 Next, we will use the script `maf_build_index.py` (put in
 `/usr/local/bin/` when `bx-python` was installed) to create a binary
@@ -1081,10 +1048,8 @@ the section `[app:main]` add two lines:
 
 Restart Galaxy with `run.sh`
 
-
 Note: if you are running this tutorial after the course, pages may be
 enabled by default in the most current Galaxy distribution.
-
 
 ## Galaxy Pages
 

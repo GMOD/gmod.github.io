@@ -3,7 +3,6 @@ title: "GMODTools TestCase"
 ---
 # GMODTools TestCase
 
-
 This is an example test case for GMOD, loading a GenBank format genome
 (chromosome) to Chado database, then dumping it out, including GenBank
 submission format with GenBank output to test round-trip agreement.

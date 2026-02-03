@@ -3,7 +3,6 @@ title: "FlyBase Comparative Genomics Data"
 ---
 # FlyBase Comparative Genomics Data
 
-
   Genomics Data Implementation in
   Chado</span>](#Comparative_Genomics_Data_Implementation_in_Chado)
   - [Background](#Background)
@@ -13,7 +12,6 @@ title: "FlyBase Comparative Genomics Data"
     - [b)
       orthologous genes](#b.29_orthologous_genes)
   - [Synteny](#Synteny)
-
 
 # Comparative Genomics Data Implementation in Chado
 
@@ -43,7 +41,6 @@ standards are illustrated separately below.
 ## Orthology
 
 ### a) orthologous regions
-
 
 Figure 3: Chado representation of syntenic relationship between a pair
 of genomes, based on orthologous_regions shown in Figure 1. Dmel:

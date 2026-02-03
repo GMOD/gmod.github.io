@@ -3,7 +3,6 @@ title: "News/Friedberg Lab Hiring"
 ---
 # News/Friedberg Lab Hiring
 
-
 ### Position closed
 
 **Department of Microbiology, Miami University Oxford, Ohio:**
@@ -51,10 +50,8 @@ class="external autonumber" rel="nofollow">[1]</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/27*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

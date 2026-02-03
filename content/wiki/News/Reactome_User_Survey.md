@@ -3,7 +3,6 @@ title: "News/Reactome User Survey"
 ---
 # News/Reactome User Survey
 
-
 Reactome is committed to providing access to high-quality pathway
 information and helpful data analysis tools. With this in mind, we are
 actively soliciting comments from the research community in order to
@@ -26,10 +25,8 @@ Posted by [Scott Cain](../User%253AScott "User%253AScott")
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

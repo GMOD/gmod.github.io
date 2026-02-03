@@ -3,12 +3,10 @@ title: "News/Canto, a GMOD tool for functional annotation"
 ---
 # News/Canto, a GMOD tool for functional annotation
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/300px-CantoTextLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/450px-CantoTextLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/600px-CantoTextLogo.png 2x"
 width="300" height="74" alt="CantoTextLogo.png" />](../Canto "Canto")
-
 
 We are pleased to announce that [Canto](../Canto "Canto"), the
 <a href="http://pombase.org" class="external text"

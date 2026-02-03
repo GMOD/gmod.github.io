@@ -3,13 +3,11 @@ title: "News/GMOD @ February NextGenBUG"
 ---
 # News/GMOD @ February NextGenBUG
 
-
 <a href="http://genepool.bio.ed.ac.uk:16080/nextgenbug/meeting/20100209"
 rel="nofollow" title="NextGenBUG 9 Feb Dundee"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7b/SBForumLogo.png/140px-SBForumLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7b/SBForumLogo.png/210px-SBForumLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7b/SBForumLogo.png/280px-SBForumLogo.png 2x"
 width="140" height="70" alt="NextGenBUG 9 Feb Dundee" /></a>
-
 
 If you are anywhere close to Dundee, Scotland on 9 February, consider
 attending the
@@ -49,10 +47,8 @@ list</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -153,15 +153,7 @@ appropriate assembly unit.
 
 This scenario involves rows in the following tables:
 
-| Table                                                                      | type_id                                                         | Number                                                                                                                             | Comments                                                                                                                                                                                                                                                                                                                                                                           |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/gene.html" |
-| class="external text" rel="nofollow">SO:Gene</a>                           | 1                                                               | The gene must always be provided                                                                                                   |
-| feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" |
-| class="external text" rel="nofollow">SO:mRNA</a>                           | 1 or more                                                       | One or more transcripts are required, and these are always of type <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" |
-| class="external text" rel="nofollow">SO:mRNA</a> for protein-coding genes. |
-| feature                                                                    | exon                                                            | 1 or more                                                                                                                          | Exons are always required, even if the genome under consideration has no introns.                                                                                                                                                                                                                                                                                                  |
-| feature                                                                    | polypeptide                                                     | At least 1                                                                                                                         | A protein-coding gene always produces a polypeptide, by definition. The polypeptide is located relative to the same genomic feature as the exons, mRNAs and gene. A single featureloc is used, with _fmin_ and _fmax_ indicating the start and stop codon positions (location is inclusive of stop codon). The polypeptide sequence should be specified as an amino acid sequence. |
+| Table                                                                      | type_id                                                         | Number                                                                                                                             | Comments                                                                                                                                                                                                                                                                                                                                                                           | -------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/gene.html" | class="external text" rel="nofollow">SO:Gene</a>                           | 1                                                               | The gene must always be provided                                                                                                   | feature                                                                    | <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a>                           | 1 or more                                                       | One or more transcripts are required, and these are always of type <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html" | class="external text" rel="nofollow">SO:mRNA</a> for protein-coding genes. | feature                                                                    | exon                                                            | 1 or more                                                                                                                          | Exons are always required, even if the genome under consideration has no introns.                                                                                                                                                                                                                                                                                                  | feature                                                                    | polypeptide                                                     | At least 1                                                                                                                         | A protein-coding gene always produces a polypeptide, by definition. The polypeptide is located relative to the same genomic feature as the exons, mRNAs and gene. A single featureloc is used, with _fmin_ and _fmax_ indicating the start and stop codon positions (location is inclusive of stop codon). The polypeptide sequence should be specified as an amino acid sequence. |
 
 ##### Querying for Canonical Genes
 
@@ -712,10 +704,7 @@ Here we have 6 locations for one SNP. The 6 locations can be imagined to
 be in a 2-D matrix. The purpose of _rank_ and _locgroup_ is to specify
 the column and row in the matrix.
 
-| Allele    | Genome | Transcript | Protein |
-| --------- | ------ | ---------- | ------- |
-| Wild-type | A      | T          | I       |
-| Mutant    | G      | C          | T       |
+| Allele    | Genome | Transcript | Protein | --------- | ------ | ---------- | ------- | Wild-type | A      | T          | I       | Mutant    | G      | C          | T       |
 
 _rank_ is used to group the strain and _locgroup_ is used for the
 grouping within that strain. rank=0 should be used for the wildtype, but
@@ -730,10 +719,7 @@ different frames).
 
 Here we would want to add another locgroup, for the second protein.
 
-| Allele    | Genome | Transcript | Protein1 | Protein2 |
-| --------- | ------ | ---------- | -------- | -------- |
-| Wild-type | A      | T          | I        | Y        |
-| Mutant    | G      | C          | T        | H        |
+| Allele    | Genome | Transcript | Protein1 | Protein2 | --------- | ------ | ---------- | -------- | -------- | Wild-type | A      | T          | I        | Y        | Mutant    | G      | C          | T        | H        |
 
 Again, if we don't need to instantiate the 2 mutant proteins, but their
 sequence can be reconstructed from the wild type proteins plus the
@@ -755,9 +741,7 @@ SELECT
  wildfeat.name,
  substr(wildfeat.residues,
         1,
-        wildloc.nbeg) ||
- mutloc.residue_info  ||
- substr(wildfeat.residues,
+        wildloc.nbeg)  mutloc.residue_info   substr(wildfeat.residues,
         wildloc.nend+1)
 FROM
   featureloc AS wildloc,

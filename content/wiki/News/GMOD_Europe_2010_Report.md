@@ -3,7 +3,6 @@ title: "News/GMOD Europe 2010 Report"
 ---
 # News/GMOD Europe 2010 Report
 
-
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -35,7 +34,6 @@ width="160" height="137" alt="GMOD Europe 2010" /></a></p>
 </tr>
 </tbody>
 </table>
-
 
 GMOD Europe 2010 was held 13-16 September, 2010 in Cambridge, UK. More
 than 60 people attended one or more of the events during the week. The
@@ -107,10 +105,8 @@ happen.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

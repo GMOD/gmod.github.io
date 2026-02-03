@@ -3,10 +3,8 @@ title: "Chado New Users"
 ---
 # Chado New Users
 
-
 This page, and it's associated discussion page follow the learning curve
 for new Chado users learning the system at CSHL.
-
 
   empty Chado PostgreSQL on our
   machines</span>](#Getting_an_empty_Chado_PostgreSQL_on_our_machines)
@@ -35,7 +33,6 @@ for new Chado users learning the system at CSHL.
     - [Proteins](#Proteins)
 - [See
   also](#See_also)
-
 
 ## Getting an empty Chado PostgreSQL on our machines
 

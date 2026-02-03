@@ -3,11 +3,9 @@ title: "Category%253AApiDB"
 ---
 # Category%253AApiDB
 
-
 ## Pages in category "ApiDB"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### F
 
@@ -22,7 +20,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [November 2007 GMOD
   Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
-
 
 ## Media in category "ApiDB"
 
@@ -45,13 +42,4 @@ This category contains only the following file.
   
 
   [Mod-face-07jan-ApiDB.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/Mod-face-07jan-ApiDB.pdf "File:Mod-face-07jan-ApiDB.pdf")  
-  1.4 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  1.4 MB

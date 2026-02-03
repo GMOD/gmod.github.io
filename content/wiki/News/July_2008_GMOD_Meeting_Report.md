@@ -3,10 +3,8 @@ title: "News/July 2008 GMOD Meeting Report"
 ---
 # News/July 2008 GMOD Meeting Report
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GMOD2008Discussion.JPG"
 width="245" height="148" alt="July 2008 GMOD Meeting" />](../July_2008_GMOD_Meeting "July 2008 GMOD Meeting")
-
 
 The [July 2008 GMOD
 Meeting](../July_2008_GMOD_Meeting "July 2008 GMOD Meeting") was held on
@@ -34,10 +32,8 @@ and
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

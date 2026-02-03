@@ -3,25 +3,21 @@ title: "News/Galaxy is Hiring"
 ---
 # News/Galaxy is Hiring
 
-
 <a href="http://galaxyproject.org/wiki/News/Galaxy%20is%20Hiring"
 rel="nofollow" title="Galaxy Project is hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/170px-GalaxyLogoBigger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/255px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/340px-GalaxyLogoBigger.png 2x"
 width="170" height="60" alt="Galaxy Project is hiring" /></a>
 
-
 The Galaxy project currently has
 <a href="http://galaxyproject.org/wiki/News/Galaxy%20is%20Hiring"
 class="external text" rel="nofollow">open positions</a> in both the Penn
 State and Emory University groups.
 
-
 <a href="../File:PennState.gif" class="image"
 title="Galaxy is hiring"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/PennState.gif" width="121" height="70"
 alt="Galaxy is hiring" /></a>
-
 
 **Penn State: System administrators/analysts**
 
@@ -48,12 +44,10 @@ required. Applicants should submit a CV and list of references to
 <a href="mailto:jobs@galaxyproject.org" class="external text"
 rel="nofollow">jobs@galaxyproject.org</a>.
 
-
 <a href="http://bx.mathcs.emory.edu/joining/" rel="nofollow"
 title="Openings at Emory University"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7a/EmoryLogoSmall.gif" width="70"
 height="70" alt="Openings at Emory University" /></a>
-
 
 **Emory University: Software Engineers and Post-Docs**
 
@@ -97,10 +91,8 @@ class="external text" rel="nofollow">announcement</a> for full details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

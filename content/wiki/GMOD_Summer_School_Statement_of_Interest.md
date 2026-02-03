@@ -3,10 +3,8 @@ title: "2008 GMOD Summer School"
 ---
 # 2008 GMOD Summer School
 
-
 (Redirected from [GMOD Summer School Statement of
 Interest](/wiki/GMOD_Summer_School_Statement_of_Interest)
-
 
 <table
 style="font-size: 180%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
@@ -56,7 +54,6 @@ It was held at the <a href="http://nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
 Durham, North Carolina, USA, July 11-13, 2008.
 
-
   Program](#Program)
   - [Instructors](#Instructors)
 - [Who
@@ -73,12 +70,9 @@ Durham, North Carolina, USA, July 11-13, 2008.
 - [Acknowledgments and
   Feedback](#Acknowledgments_and_Feedback)
 
-
 # Program
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                               |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse"), [CMap](CMap.1 "CMap"), [Apollo](Apollo.1 "Apollo"), and the [Community Annotation System](Community_Annotation_System "Community Annotation System"). | <img |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse"), [CMap](CMap.1 "CMap"), [Apollo](Apollo.1 "Apollo"), and the [Community Annotation System](Community_Annotation_System "Community Annotation System"). | <img |
 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/SummerSchool2008GBrowse.jpg" width="311"
 height="120" alt="SummerSchool2008GBrowse.jpg" /> |
@@ -270,11 +264,9 @@ Sessions were taught by experienced GMOD personnel, including:
 
 # Who Attended?
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/SummerSchool2008Class.jpg" width="411"
 height="120" alt="SummerSchool2008Class.jpg" />
-
 
 The GMOD Summer School was attended by people implementing GMOD at their
 organizations, and by Principal Investigators whose organizations have
@@ -285,37 +277,7 @@ people who actually implement and manage a GMOD installation on a day to
 day basis. This course was for organizations either planning to use GMOD
 components, or in the early phases of implementing GMOD.
 
-| Participant                                        | Affiliation                                |
-| -------------------------------------------------- | ------------------------------------------ |
-| Feseha Abebe-Akele                                 | University of New Hampshire                |
-| Parker Antin                                       | University of Arizona                      |
-| Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          |
-| [Scott Cain](User%253AScott "User%253AScott")          | CSHL                                       |
-| [Dave Clements](User%253AClements "User%253AClements") | NESCent                                    |
-| Matthew Conte                                      | Howard Hughes Medical Institute            |
-| Sean Davey                                         | University of Arizona, BirdBase            |
-| Victor de Jager                                    | Radboud University Nijmegen Medical Centre |
-| Jason Dzurisin                                     | University of Notre Dame                   |
-| [Ben Faga](User%253AFaga "User%253AFaga")              | CSHL                                       |
-| Bob Freeman                                        | Harvard University Medical School          |
-| Jean-Pierre Gauthier                               | INRA                                       |
-| Glenn Harris                                       | Virgina State University                   |
-| Erik Hom                                           | Harvard University                         |
-| Zhiliang Hu                                        | Iowa State University                      |
-| Li Jin                                             | University of Delaware                     |
-| Ed Johnson                                         | University of Georgia                      |
-| Ed Lee                                             | BBOP                                       |
-| Fabrice Legeai                                     | INRA                                       |
-| Xianhua Liu                                        | NESCent                                    |
-| Prashanti Manda                                    | Mississippi State University               |
-| Tom McNeill                                        | Syngenta Biotechnology                     |
-| Christos Noutsos                                   | University of Chicago                      |
-| Jason Phillips                                     | University of North Carolina               |
-| Joan Pontius                                       | National Cancer Institute                  |
-| Sarah Richardson                                   | Johns Hopkins University                   |
-| Stéphanie Sidibe-Bocs                              | CIRAD                                      |
-| Brett Whitty                                       | Michigan State University                  |
-| Andy Wu                                            | Washington State University                |
+| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](User%253AScott "User%253AScott")          | CSHL                                       | [Dave Clements](User%253AClements "User%253AClements") | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](User%253AFaga "User%253AFaga")              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
 
 # Prerequisites
 
@@ -335,16 +297,13 @@ GBrowse data._ This also requires installing Apache, and
 
 VMware on Windows and Linux
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windoze" />
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 A free VMware player is available for [Microsoft
 Windows](Category%253AWindows "Category%253AWindows") and
@@ -358,11 +317,9 @@ VMware on Mac OS X
 Participants can also bring _newer Macs with Intel processors_. The
 Intel processor is a requirement for all the packages discussed below.
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 There is no free VMware player that runs _directly_ under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
@@ -370,11 +327,9 @@ other options, _all of which require an Intel Mac_:
 
 VMware Fusion
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg" width="48"
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
-
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
 rel="nofollow">VMware Fusion</a> allows you to run VMware
@@ -384,12 +339,10 @@ VMware Fusion available for download.**
 
 Mac OS 10.5 (Leopard) and Boot Camp
 
-
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 rel="nofollow" title="Boot Camp"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/AppleBootCampLogo.jpg" width="48"
 height="60" alt="Boot Camp" /></a>
-
 
 The <a href="http://www.apple.com/macosx/" class="external text"
 rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
@@ -470,9 +423,7 @@ class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a> under
 <a href="http://biowiki.org/IanHolmes" class="external text"
 rel="nofollow">Ian Holmes</a>.
 
-
 \*Comments on the **2008 GMOD Summer School\***
-
 
 <table data-cellspacing="2"
 style="border: 2px solid #A6A6BC; margin: 1em; padding: 1em">

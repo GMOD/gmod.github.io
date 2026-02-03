@@ -3,7 +3,6 @@ title: "News/ISMB/Bioinformatics Chado Paper"
 ---
 # News/ISMB/Bioinformatics Chado Paper
 
-
 The paper '<a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/full/23/13/i337"
 class="external text" rel="nofollow">A Chado case study: an
@@ -23,10 +22,8 @@ philosophy and the 5 core Chado modules.
 
   
 
-
 *Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2007/07/13*
 
-
-[Category](../../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "Load Balancing GBrowse2 with AWS Spot Instances"
 ---
 # Load Balancing GBrowse2 with AWS Spot Instances
 
-
 As of GBrowse version 2.54, you may offload some of the work involved in
 rendering tracks to a farm of render slaves running under Amazon Web
 Services. The render slaves use Amazon's
@@ -11,7 +10,6 @@ Services. The render slaves use Amazon's
 class="external text" rel="nofollow">Spot Instance facility</a>, which
 provides servers for just pennies per hour, and the number of slaves is
 automatically adjusted up and down in response to load.
-
 
   SYNOPSIS](#SYNOPSIS)
 - [DESCRIPTION](#DESCRIPTION)
@@ -34,7 +32,6 @@ automatically adjusted up and down in response to load.
 - [DEBUGGING
   SLAVE PROBLEMS](#DEBUGGING_SLAVE_PROBLEMS)
 - [AUTHOR](#AUTHOR)
-
 
 ## SYNOPSIS
 
@@ -534,9 +531,3 @@ redistribute it and/or modify it under the terms of the GPL (either
 version 1, or at your option, any later version) or the Artistic License
 2.0. Refer to LICENSE for the full license text. In addition, please see
 DISCLAIMER.txt for disclaimers of warranty.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")

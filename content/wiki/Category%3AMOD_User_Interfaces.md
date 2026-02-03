@@ -3,7 +3,6 @@ title: "Category%253AMOD User Interfaces"
 ---
 # Category%253AMOD User Interfaces
 
-
 The user interface (UI) is the most visible aspect of a model organism
 database (MOD), and arguably has the most direct impact on the
 satisfaction of its users. On the first day of the [January 2007 GMOD
@@ -12,22 +11,18 @@ shared experiences, discussed lessons learned, and identified unsolved
 problems in the field of MOD user interface design [\[ ..
 more\]](MOD_Face_Summary "MOD Face Summary")
 
-
 ## Subcategories
 
 This category has only the following subcategory.
-
 
 ### M
 
 - [MOD UI
   Presentations](Category%253AMOD_UI_Presentations "Category%253AMOD UI Presentations")
 
-
 ## Pages in category "MOD User Interfaces"
 
 The following 15 pages are in this category, out of 15 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -99,8 +94,3 @@ User Interfaces: Sample of several MOD Top Level functions</a></li>
 </tr>
 </tbody>
 </table>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")

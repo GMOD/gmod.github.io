@@ -3,12 +3,10 @@ title: "News/2016 GMOD Meeting"
 ---
 # News/2016 GMOD Meeting
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e1/GMOD2016ColorsBigLetters_300px.png/260px-GMOD2016ColorsBigLetters_300px.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/GMOD2016ColorsBigLetters_300px.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/GMOD2016ColorsBigLetters_300px.png 2x"
 width="260" height="218" alt="GMOD2016ColorsBigLetters 300px.png" />](../Jun_2016_GMOD_Meeting "Jun 2016 GMOD Meeting")
-
 
 **The [next GMOD Community
 Meeting](../Jun_2016_GMOD_Meeting "Jun 2016 GMOD Meeting") will be held
@@ -38,10 +36,8 @@ help desk</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/04/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

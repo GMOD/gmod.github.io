@@ -3,7 +3,6 @@ title: "MotifFinder.pm"
 ---
 # MotifFinder.pm
 
-
 MotifFinder.pm is a [GBrowse](GBrowse.1 "GBrowse") plugin written by
 [Xiaoqi Shi](User%253AXshi "User%253AXshi"). It finds sequence specific motifs
 using Position Weight Matrix and display results graphically as tracks
@@ -16,7 +15,6 @@ more information. Follow this link for
 <span class="pops"><a href="http://en.wikipedia.org/wiki/Position-specific_scoring_matrix"
 class="external text" rel="nofollow">background reading of Position
 Weight Matrix</a></span>
-
 
   plugin</span>](#download_the_plugin)
 - [How to use
@@ -36,7 +34,6 @@ Weight Matrix</a></span>
   - [Calculate
     Weight Score](#Calculate_Weight_Score)
   - [Algorithms](#Algorithms)
-
 
 # download the plugin
 
@@ -125,11 +122,9 @@ improvement.
 - move mouse on glyph will show you the computed similarity score and
   start/stop position of the motif
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/29/Display.png" width="1035" height="293"
 alt="Display.png" />
-
 
 # How is the motif predicted?
 
@@ -172,8 +167,3 @@ one usually defaults to 0.25 (i.e. one nucleotide out of four)
 This program uses a combined strategy by choosing between above two
 methods(depending length of the motif and cutoff score) to achieve
 faster computational speed .
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse Plugins](Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")

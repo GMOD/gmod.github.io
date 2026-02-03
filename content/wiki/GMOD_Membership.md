@@ -3,10 +3,8 @@ title: "GMOD Membership"
 ---
 # GMOD Membership
 
-
 This page describes how [users](#Users), [developers](#Developers), and
 [software](#Software) become a part of GMOD.
-
 
   Users](#Users)
 - [Developers](#Developers)
@@ -17,7 +15,6 @@ This page describes how [users](#Users), [developers](#Developers), and
   - [Non-GMOD
     Software](#Non-GMOD_Software)
   - [Versions](#Versions)
-
 
 ## Users
 
@@ -199,10 +196,6 @@ page.
 
 These [Software Membership Requirements](#Software) change over time.
 
-| Version | Start | End | Comments |
-|----|----|----|----|
-| 2.0 | December 2010 | \- | Added publicly archived mailing list, and publicly accessible source code archive requirements. These revisions were [discussed at the September 2010 GMOD Meeting](September_2010_GMOD_Meeting#GMOD_Membership_Requirements "September 2010 GMOD Meeting"), and on the [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") in December 2010. The proposed changes were favorably received at the meeting and on the mailing lists. The Version 2.0 membership standard became official on 2010/12/21. |
-| <a
+| Version | Start | End | Comments |----|----|----|----| 2.0 | December 2010 | \- | Added publicly archived mailing list, and publicly accessible source code archive requirements. These revisions were [discussed at the September 2010 GMOD Meeting](September_2010_GMOD_Meeting#GMOD_Membership_Requirements "September 2010 GMOD Meeting"), and on the [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") in December 2010. The proposed changes were favorably received at the meeting and on the mailing lists. The Version 2.0 membership standard became official on 2010/12/21. | <a
 href="http://gmod.org/w/index.php?title=GMOD_Membership&amp;oldid=15465"
-class="external text" rel="nofollow">1.0</a> | February 2010 | December 2010 | Formalized the nomination process and the previously informal membership requirements. |
-| Informal | Conception | February 2010 | The list of requirements evolved and grew over time, eventually resulting in Version 1. |
+class="external text" rel="nofollow">1.0</a> | February 2010 | December 2010 | Formalized the nomination process and the previously informal membership requirements. | Informal | Conception | February 2010 | The list of requirements evolved and grew over time, eventually resulting in Version 1. |

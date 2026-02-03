@@ -3,7 +3,6 @@ title: "Citrina"
 ---
 # Citrina
 
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
@@ -11,7 +10,6 @@ title: "Citrina"
 See [Status](#Status) below for more information.
 
   
-
 
   Status](#Status)
 - [Description](#Description)
@@ -21,7 +19,6 @@ See [Status](#Status) below for more information.
 - [Mailing
   List](#Mailing_List)
 - [Contact](#Contact)
-
 
 ## Status
 
@@ -116,8 +113,3 @@ class="external text" rel="nofollow">Citrina discussion list</a>
 
 [Josh Goodman](User%253AJogoodma "User%253AJogoodma") (jogoodma A\*T indiana
 D\*O\*T edu )
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")

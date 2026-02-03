@@ -3,13 +3,11 @@ title: "Chado Tables to Wiki"
 ---
 # Chado Tables to Wiki
 
-
 The process described on this page is obsolete. The process described on
 [Chado Schema Documentation
 HOWTO](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 is the the current one. This page should be deleted once the new process
 has been fully adopted.
-
 
 ## Description
 
@@ -66,8 +64,3 @@ If you have added new tables then you will need to modify the
 that uses *module name* as key and *table names* as values. The reason
 that this is necessary is that Postgres has no internal definition of a
 related subset of tables like Chado modules.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")

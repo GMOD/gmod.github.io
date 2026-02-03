@@ -3,13 +3,11 @@ title: "News/Statistical Genomics PostDoc at PSU"
 ---
 # News/Statistical Genomics PostDoc at PSU
 
-
 <a href="http://www.huck.psu.edu/center/medical-genomics/"
 rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/35/HuckInstitutes.png/250px-HuckInstitutes.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/35/HuckInstitutes.png/375px-HuckInstitutes.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/35/HuckInstitutes.png 2x"
 width="250" height="48" alt="HuckInstitutes.png" /></a>
-
 
 Are you interested in genomics and do you have skills in Bioinformatics,
 Computational Biology and Statistics? The Makova lab in the Department
@@ -56,6 +54,5 @@ to affirmative action, equal opportunity, and the diversity of its
 workforce.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/09/09*

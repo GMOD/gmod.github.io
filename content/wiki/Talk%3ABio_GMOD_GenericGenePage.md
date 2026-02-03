@@ -3,7 +3,6 @@ title: "Talk:Bio GMOD GenericGenePage"
 ---
 # Talk:Bio GMOD GenericGenePage
 
-
 ## Stuff Jim made up while implementing this for EcoliWiki after the Jan 2009 GMOD meeting
 
 In the absence of a schema to check against, I developed this by example

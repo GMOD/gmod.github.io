@@ -310,24 +310,7 @@ module. Many modules require the [sequence
 module](Chado_Sequence_Module "Chado Sequence Module") or the [cv
 module](Chado_CV_Module "Chado CV Module"), or both.
 
-| Module       | Depends on                                                    |
-| ------------ | ------------------------------------------------------------- |
-| general      | _none_                                                        |
-| organism     | general cv                                                    |
-| pub          | general cv                                                    |
-| cv           | general                                                       |
-| sequence     | cv general pub organism                                       |
-| genetic      | sequence cv general pub phenotype                             |
-| expression   | sequence cv pub                                               |
-| map          | sequence cv pub                                               |
-| rad          | sequence cv pub organism contact general companalysis         |
-| companalysis | sequence cv                                                   |
-| contact      | cv                                                            |
-| library      | sequence cv pub organism                                      |
-| phenotype    | cv sequence                                                   |
-| phylogeny    | sequence cv pub organism general                              |
-| stock        | cv pub general organism genetic                               |
-| www          | sequence cv pub phenotype organism expression general genetic |
+| Module       | Depends on                                                    | ------------ | ------------------------------------------------------------- | general      | _none_                                                        | organism     | general cv                                                    | pub          | general cv                                                    | cv           | general                                                       | sequence     | cv general pub organism                                       | genetic      | sequence cv general pub phenotype                             | expression   | sequence cv pub                                               | map          | sequence cv pub                                               | rad          | sequence cv pub organism contact general companalysis         | companalysis | sequence cv                                                   | contact      | cv                                                            | library      | sequence cv pub organism                                      | phenotype    | cv sequence                                                   | phylogeny    | sequence cv pub organism general                              | stock        | cv pub general organism genetic                               | www          | sequence cv pub phenotype organism expression general genetic |
 
 ### Inter-module Linking Tables
 
@@ -335,55 +318,7 @@ These can be thought of as floating outside of the respective modules
 they bridge, although they are generally bundled with one or the other
 module.
 
-| Linking Table                | Module    | Module     |
-| ---------------------------- | --------- | ---------- |
-| biomaterial_dbxref           | rad       | general    |
-| cvterm_dbxref                | cv        | general    |
-| environment_cvterm           | phenotype | cv         |
-| expression_cvterm            | cv        | expression |
-| expression_pub               | pub       | expression |
-| feature_cvterm               | cv        | sequence   |
-| feature_cvterm_dbxref        | sequence  | general    |
-| feature_cvterm_pub           | sequence  | pub        |
-| feature_dbxref               | general   | sequence   |
-| feature_expression           | sequence  | expression |
-| feature_genotype             | sequence  | genetic    |
-| feature_organism             | organism  | sequence   |
-| feature_phenotype            | sequence  | phenotype  |
-| feature_pub                  | sequence  | pub        |
-| feature_relationship_pub     | sequence  | pub        |
-| feature_relationshipprop_pub | sequence  | pub        |
-| feature_synonym              | general   | sequence   |
-| featureloc_pub               | sequence  | pub        |
-| featuremap_pub               | sequence  | pub        |
-| featureprop_pub              | pub       | sequence   |
-| gene_synonym                 | general   | sequence   |
-| journal_dbxref               | general   | pub        |
-| library_cvterm               | library   | cv         |
-| library_feature              | library   | sequence   |
-| library_pub                  | library   | pub        |
-| organism_dbxref              | general   | organism   |
-| phenotype_cvterm             | cv        | genetic    |
-| phylonode_dbxref             | phylogeny | general    |
-| phylonode_organism           | phylogeny | organism   |
-| phylonode_pub                | phylogeny | pub        |
-| phylotree_pub                | phylogeny | pub        |
-| pub_dbxref                   | general   | pub        |
-| stock_cvterm                 | stock     | cv         |
-| stock_dbxref                 | stock     | general    |
-| stock_genotype               | stock     | genetic    |
-| stock_pub                    | stock     | pub        |
-| stock_relationship_pub       | stock     | pub        |
-| stockprop_pub                | stock     | pub        |
-| wwwuser_author               | www       | pub        |
-| wwwuser_cvterm               | www       | cv         |
-| wwwuser_expression           | www       | expression |
-| wwwuser_feature              | www       | sequence   |
-| wwwuser_genotype             | www       | genetic    |
-| wwwuser_organism             | www       | organism   |
-| wwwuser_phenotype            | www       | phenotype  |
-| wwwuser_project              | www       | general    |
-| wwwuser_pub                  | www       | pub        |
+| Linking Table                | Module    | Module     | ---------------------------- | --------- | ---------- | biomaterial_dbxref           | rad       | general    | cvterm_dbxref                | cv        | general    | environment_cvterm           | phenotype | cv         | expression_cvterm            | cv        | expression | expression_pub               | pub       | expression | feature_cvterm               | cv        | sequence   | feature_cvterm_dbxref        | sequence  | general    | feature_cvterm_pub           | sequence  | pub        | feature_dbxref               | general   | sequence   | feature_expression           | sequence  | expression | feature_genotype             | sequence  | genetic    | feature_organism             | organism  | sequence   | feature_phenotype            | sequence  | phenotype  | feature_pub                  | sequence  | pub        | feature_relationship_pub     | sequence  | pub        | feature_relationshipprop_pub | sequence  | pub        | feature_synonym              | general   | sequence   | featureloc_pub               | sequence  | pub        | featuremap_pub               | sequence  | pub        | featureprop_pub              | pub       | sequence   | gene_synonym                 | general   | sequence   | journal_dbxref               | general   | pub        | library_cvterm               | library   | cv         | library_feature              | library   | sequence   | library_pub                  | library   | pub        | organism_dbxref              | general   | organism   | phenotype_cvterm             | cv        | genetic    | phylonode_dbxref             | phylogeny | general    | phylonode_organism           | phylogeny | organism   | phylonode_pub                | phylogeny | pub        | phylotree_pub                | phylogeny | pub        | pub_dbxref                   | general   | pub        | stock_cvterm                 | stock     | cv         | stock_dbxref                 | stock     | general    | stock_genotype               | stock     | genetic    | stock_pub                    | stock     | pub        | stock_relationship_pub       | stock     | pub        | stockprop_pub                | stock     | pub        | wwwuser_author               | www       | pub        | wwwuser_cvterm               | www       | cv         | wwwuser_expression           | www       | expression | wwwuser_feature              | www       | sequence   | wwwuser_genotype             | www       | genetic    | wwwuser_organism             | www       | organism   | wwwuser_phenotype            | www       | phenotype  | wwwuser_project              | www       | general    | wwwuser_pub                  | www       | pub        |
 
 ## Chado Naming Conventions
 

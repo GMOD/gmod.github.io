@@ -3,7 +3,6 @@ title: "Apollo-Chado Integration at BovineBase: Bugs and Suggestions"
 ---
 # Apollo-Chado Integration at BovineBase: Bugs and Suggestions
 
-
 This was written by Justin Reese in preparation for [Hackathon
 2007](Hackathon_2007_info "Hackathon 2007 info").
 

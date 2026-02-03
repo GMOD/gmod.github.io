@@ -3,11 +3,9 @@ title: "Category%253ASybil"
 ---
 # Category%253ASybil
 
-
 ## Pages in category "Sybil"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### P
 
@@ -19,7 +17,6 @@ The following 3 pages are in this category, out of 3 total.
 - [Sybil](Sybil "Sybil")
 - [Sybil Chado Comparative Genomics
   Data](Sybil_Chado_Comparative_Genomics_Data "Sybil Chado Comparative Genomics Data")
-
 
 ## Media in category "Sybil"
 

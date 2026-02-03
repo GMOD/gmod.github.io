@@ -3,12 +3,10 @@ title: "News/Galaxy Development Workshop Jan 23"
 ---
 # News/Galaxy Development Workshop Jan 23
 
-
 <a href="http://evomics.org/workshops/galaxy-developer-workshop/"
 rel="nofollow" title="Galaxy Development Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/CeskyKrumlov.jpg" width="170"
 height="133" alt="Galaxy Development Workshop" /></a>
-
 
 *Update: This workshop has been **canceled.***
 
@@ -61,11 +59,9 @@ Illinois.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/11,
 updated 2011/12/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

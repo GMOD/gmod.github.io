@@ -3,9 +3,7 @@ title: "GMOD RPC API/PHP"
 ---
 # GMOD RPC API/PHP
 
-
 Plans/Architecture for the PHP tools for implementing gmod-rpc
-
 
   Components](#Components)
   - [index.php](#index.php)
@@ -16,7 +14,6 @@ Plans/Architecture for the PHP tools for implementing gmod-rpc
     - [gmod-rpc/v1/sources/](#gmod-rpc.2Fv1.2Fsources.2F)
     - [gmod-rpc/v1/services/](#gmod-rpc.2Fv1.2Fservices.2F)
     - [gmod-rpc/v1/class.View.php](#gmod-rpc.2Fv1.2Fclass.View.php)
-
 
 ## Components
 
@@ -61,12 +58,10 @@ This directory holds a file defining a base class
 implement additional services by adding object classes that extend this
 base class e.g. class.Organisms.php:
 
-
 ``` de1
 class Organisms extends Service{
 ...
 ```
-
 
 Service class names should be ucfirst.
 

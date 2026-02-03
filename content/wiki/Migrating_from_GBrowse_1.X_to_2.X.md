@@ -3,7 +3,6 @@ title: "Migrating from GBrowse 1.X to 2.X"
 ---
 # Migrating from GBrowse 1.X to 2.X
 
-
 This is a guide for existing users of the GBrowse 1.X series to help
 them migrate to version 2.0 and higher. For first-time users, please see
 [GBrowse 2.0 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
@@ -13,7 +12,6 @@ have been some changes to the layout of configuration files that make
 the system easier to configure and maintain. A small amount of work is
 needed to make your existing system work with the 2.0 series.
 
-
   Environment Variables</span>](#Apache_Environment_Variables)
 - [GBrowse.conf
   and Data Source Config
@@ -22,7 +20,6 @@ needed to make your existing system work with the 2.0 series.
   Databases](#Specifying_Databases)
   - [Specifying
     Rendering Slaves](#Specifying_Rendering_Slaves)
-
 
 # Apache Environment Variables
 

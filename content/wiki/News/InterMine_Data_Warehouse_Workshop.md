@@ -3,13 +3,11 @@ title: "News/InterMine Data Warehouse Workshop"
 ---
 # News/InterMine Data Warehouse Workshop
 
-
 <a href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine.html"
 rel="nofollow" title="InterMine Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/00/InterMine.png/180px-InterMine.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 2x"
 width="180" height="49" alt="InterMine Workshop" /></a>
-
 
 We are running another
 <a href="http://www.biomed.cam.ac.uk/gradschool/skills/intermine.html"
@@ -35,10 +33,8 @@ rel="nofollow">Richard Smith</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/29*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

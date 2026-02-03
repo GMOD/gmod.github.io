@@ -3,7 +3,6 @@ title: "GBrowse UCSC Plugin Install HOWTO"
 ---
 # GBrowse UCSC Plugin Install HOWTO
 
-
 This page contains detailed installation instructions for setting up
 <a href="http://genome.ucsc.edu" class="external text"
 rel="nofollow">UCSC Genome Browser</a> comparative genomics track data
@@ -15,7 +14,6 @@ display them. It assumes that you already have a working installation of
 rel="nofollow">MySQL</a>.
 
   
-
 
   Prerequisites](#Prerequisites)
 - [UCSC naming
@@ -66,7 +64,6 @@ rel="nofollow">MySQL</a>.
   and Support Requests](#Bug_Reports_and_Support_Requests)
 - [AUTHORS](#AUTHORS)
 
-
 ## Prerequisites
 
 - A working installation of [GBrowse](GBrowse.1 "GBrowse") (see also
@@ -91,14 +88,7 @@ Here are some example approximate sizes for various tracks and organisms
 (note that each genome assembly usually has many Chain and Net tracks,
 and one Conservation track):
 
-| Track Description | MySQL dump files | MySQL table Data_length | External files |
-|----|----|----|----|
-| Worm-Worm Chain | 170M | 120M | n/a |
-| Worm-Worm Net | 25M | 20M | n/a |
-| Worm 5-way Conservation | 75M | 65M | 465M |
-| Human-Mammal Chain | 3,000M | 2,000M | n/a |
-| Human-Mammal Net | 510M | 400M | n/a |
-| Human 28-way Conservation | 2,530M | 2,000M | 79,300M |
+| Track Description | MySQL dump files | MySQL table Data_length | External files |----|----|----|----| Worm-Worm Chain | 170M | 120M | n/a | Worm-Worm Net | 25M | 20M | n/a | Worm 5-way Conservation | 75M | 65M | 465M | Human-Mammal Chain | 3,000M | 2,000M | n/a | Human-Mammal Net | 510M | 400M | n/a | Human 28-way Conservation | 2,530M | 2,000M | 79,300M |
 
 ## UCSC naming conventions and other relevant subtleties
 
@@ -452,27 +442,12 @@ These are the supported `[UcscPlugin:plugin]` settings, shared by all
 Ucsc plugins (but can be overridden in the section for each plugin if
 necessary):
 
-| setting | required? | description |
-|----|----|----|
-| <span style="font-family: Courier New;">db</span> | **Yes** | The name of the MySQL database where UCSC tables have been loaded. |
-| <span style="font-family: Courier New;">user</span> | **Yes** | The name of a MySQL user that has permission to read <span style="font-family: Courier New;">db</span>. |
-| <span style="font-family: Courier New;">pass</span> | **Yes** | The password for <span style="font-family: Courier New;">user</span>. |
-| <span style="font-family: Courier New;">seq_prefix</span> | **probably** | If the datasource has sequence names like I, II, III or 2L, 2R, 3L, set this to <span style="font-family: Courier New;">chr</span> so that they can be translated into UCSC's names: chrI, chrII, chrIII or chr2L, chr2R, chr3L etc. This is usually the case. |
-| <span style="font-family: Courier New;">split_prefix</span> | **probably** | If all of the sequences in the datasource are chromosome names (not separate scaffolds, contigs etc), set this to <span style="font-family: Courier New;">chr</span> if <span style="font-family: Courier New;">seq_prefix</span> is chr. |
-| <span style="font-family: Courier New;">host</span> | prob. not | The machine on which the MySQL server, if not the same machine on which GBrowse runs. |
-| <span style="font-family: Courier New;">port</span> | prob. not | The port number used by the MySQL server, if not the same as MySQL's default. |
-| <span style="font-family: Courier New;">central_db</span> | prob. not | The name of the MySQL database in which the dbDb table is stored, if not hgcentral. |
-| <span style="font-family: Courier New;">central_user</span> | prob. not | The MySQL user for <span style="font-family: Courier New;">central_db</span>, if not the same as <span style="font-family: Courier New;">user</span>. Must be able to read and write to <span style="font-family: Courier New;">central_db</span>. |
-| <span style="font-family: Courier New;">central_pass</span> | prob. not | The password for <span style="font-family: Courier New;">central_user</span>, if not the same as <span style="font-family: Courier New;">pass</span>. |
-| <span style="font-family: Courier New;">central_host</span> | prob. not | The machine on which the MySQL server that serves up <span style="font-family: Courier New;">central_db</span>, if not the same as <span style="font-family: Courier New;">host</span>. |
-| <span style="font-family: Courier New;">central_port</span> | prob. not | The port number used by <span style="font-family: Courier New;">central_host</span>, if not the same as <span style="font-family: Courier New;">port</span>. |
+| setting | required? | description |----|----|----| <span style="font-family: Courier New;">db</span> | **Yes** | The name of the MySQL database where UCSC tables have been loaded. | <span style="font-family: Courier New;">user</span> | **Yes** | The name of a MySQL user that has permission to read <span style="font-family: Courier New;">db</span>. | <span style="font-family: Courier New;">pass</span> | **Yes** | The password for <span style="font-family: Courier New;">user</span>. | <span style="font-family: Courier New;">seq_prefix</span> | **probably** | If the datasource has sequence names like I, II, III or 2L, 2R, 3L, set this to <span style="font-family: Courier New;">chr</span> so that they can be translated into UCSC's names: chrI, chrII, chrIII or chr2L, chr2R, chr3L etc. This is usually the case. | <span style="font-family: Courier New;">split_prefix</span> | **probably** | If all of the sequences in the datasource are chromosome names (not separate scaffolds, contigs etc), set this to <span style="font-family: Courier New;">chr</span> if <span style="font-family: Courier New;">seq_prefix</span> is chr. | <span style="font-family: Courier New;">host</span> | prob. not | The machine on which the MySQL server, if not the same machine on which GBrowse runs. | <span style="font-family: Courier New;">port</span> | prob. not | The port number used by the MySQL server, if not the same as MySQL's default. | <span style="font-family: Courier New;">central_db</span> | prob. not | The name of the MySQL database in which the dbDb table is stored, if not hgcentral. | <span style="font-family: Courier New;">central_user</span> | prob. not | The MySQL user for <span style="font-family: Courier New;">central_db</span>, if not the same as <span style="font-family: Courier New;">user</span>. Must be able to read and write to <span style="font-family: Courier New;">central_db</span>. | <span style="font-family: Courier New;">central_pass</span> | prob. not | The password for <span style="font-family: Courier New;">central_user</span>, if not the same as <span style="font-family: Courier New;">pass</span>. | <span style="font-family: Courier New;">central_host</span> | prob. not | The machine on which the MySQL server that serves up <span style="font-family: Courier New;">central_db</span>, if not the same as <span style="font-family: Courier New;">host</span>. | <span style="font-family: Courier New;">central_port</span> | prob. not | The port number used by <span style="font-family: Courier New;">central_host</span>, if not the same as <span style="font-family: Courier New;">port</span>. |
 
 This setting is only for actual track plugins (e.g.
 `[UcscChain:plugin]`), not for the base class `[UcscPlugin:plugin]`:
 
-| setting | required? | description |
-|----|----|----|
-| <span style="font-family: Courier New;">default_enable</span> | **should be** | A whitespace-separated list of chain or net tracks to display by default. E.g., <span style="font-family: Courier New;">chain*OtherDb1* chain*OtherDb2*</span> in the UcscChain:plugin section, <span style="font-family: Courier New;">net*OtherDb1* net*OtherDb2*</span> in the UcscNet:plugin section. If not specified, all tracks will be displayed by default which could overwhelm the display. |
+| setting | required? | description |----|----|----| <span style="font-family: Courier New;">default_enable</span> | **should be** | A whitespace-separated list of chain or net tracks to display by default. E.g., <span style="font-family: Courier New;">chain*OtherDb1* chain*OtherDb2*</span> in the UcscChain:plugin section, <span style="font-family: Courier New;">net*OtherDb1* net*OtherDb2*</span> in the UcscNet:plugin section. If not specified, all tracks will be displayed by default which could overwhelm the display. |
 
 ### Conservation track only: conf/UcscTrackImage.cfg file
 

@@ -3,7 +3,6 @@ title: "User%253ATjvision"
 ---
 # User%253ATjvision
 
-
 <a href="http://genomics.unc.edu/faculty/webpages/vision.html"
 class="external text" rel="nofollow">Todd Vision</a>
 

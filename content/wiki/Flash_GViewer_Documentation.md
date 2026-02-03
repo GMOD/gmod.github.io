@@ -3,7 +3,6 @@ title: "Flash GViewer Documentation"
 ---
 # Flash GViewer Documentation
 
-
   GViewer</span>](#Flash_GViewer)
 - [Current
   Features (v0.5)](#Current_Features_.28v0.5.29)
@@ -31,7 +30,6 @@ title: "Flash GViewer Documentation"
   Flash Connectivity](#Javascript_-_Flash_Connectivity)
 - [Known
   Issues](#Known_Issues)
-
 
 ### Flash GViewer
 
@@ -201,7 +199,6 @@ phenotype of *blood pressure*. Some of the longer lines have been broken
 to keep the page width down, the sample.html page provided with the
 download has a correctly formatted set of tags for you to copy.
 
-
 ``` de1
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="300" height="250" id="GViewer2" align="middle">
@@ -220,7 +217,6 @@ annotationURL=http://server.mcw.edu/cgi-bin/getDiseaseQTLAnnotation.cgi?disease=
 &browserURL=http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr&" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 </object>
 ```
-
 
 The critical sections are `FlashVars` and the name of the Flash
 application (e.g. **GViewer2.swf**). The other parts are standard and
@@ -359,7 +355,6 @@ Flash plugin's zoom feature.
 
 The baseMap XML format looks like this:
 
-
 ``` de1
  <?xml version="1.0" standalone="yes"?>
    <genome>
@@ -401,74 +396,34 @@ The baseMap XML format looks like this:
  </genome>
 ```
 
-
   
 The XML elements in this file are as follows, I've used @xxxx to
 indicate attributes of elements
 
   
 
-| XML Element | description |
-|----|----|
-| chromosome | Each chromosome's data is contained within a chromosome element |
-| @index | the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc). |
-| @number | the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer |
-| @length | the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML. |
-| band | each band's data on the chromosome is contained within a band element |
-| @index | index number for the band, used to sort the bands in an appropriate order |
-| @name | name of band, eg q11, p12. Currently not used but could be used to display the band info when the mouse was placed over it |
-| start | band start location in appropriate Units (probably basepairs) |
-| end | band end location in appropriate Units (probably basepairs) |
-| color | Flash hex representation of the band color (begins with 0x rather than a \#), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap. |
-| stain | Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below. |
+| XML Element | description |----|----| chromosome | Each chromosome's data is contained within a chromosome element | @index | the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc). | @number | the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer | @length | the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML. | band | each band's data on the chromosome is contained within a band element | @index | index number for the band, used to sort the bands in an appropriate order | @name | name of band, eg q11, p12. Currently not used but could be used to display the band info when the mouse was placed over it | start | band start location in appropriate Units (probably basepairs) | end | band end location in appropriate Units (probably basepairs) | color | Flash hex representation of the band color (begins with 0x rather than a \#), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap. | stain | Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below. |
 
   
 **Stain abbreviations and colors**
 
-| Stain Abbreviation | Hex Color | Swatch |
-|--------------------|-----------|--------|
-| gpos & gpos100     | \#000000  |        |
-| gpos75             | \#444444  |        |
-| gpos66             | \#666666  |        |
-| gpos50             | \#888888  |        |
-| gpos33             | \#AAAAAA  |        |
-| gpos25             | \#CCCCCC  |        |
-| gneg               | \#FFFFFF  |        |
-| gvar               | \#CCCCCC  |        |
-| \[default\]        | \#CCCCCC  |        |
-
-  
-
-#### The Base Maps
+| Stain Abbreviation | Hex Color | Swatch |--------------------|-----------|--------| gpos & gpos100     | \#000000  | gpos75             | \#444444  | gpos66             | \#666666  | gpos50             | \#888888  | gpos33             | \#AAAAAA  | gpos25             | \#CCCCCC  | gneg               | \#FFFFFF  | gvar               | \#CCCCCC  | \[default\]        | \#CCCCCC  #### The Base Maps
 
 The following base maps are provided in the standard distribution.
 
   
 **Basic Genome Maps**
 
-| Base Map File | Map Description | External Links |
-|----|----|----|
-| rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
-rel="nofollow">UCSC Genome Browser</a> |
-| rgd_rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://rgd.mcw.edu" class="external text" rel="nofollow">RGD
-Genome Browser</a> |
-| mouse_ideo.xml | Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
-rel="nofollow">UCSC Genome Browser</a> |
-| human_ideo.xml | Human genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
-rel="nofollow">UCSC Genome Browser</a> |
-| celegans_ideo.xml | C. elegans genome, no bands. | No |
+| Base Map File | Map Description | External Links |----|----|----| rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
+rel="nofollow">UCSC Genome Browser</a> | rgd_rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://rgd.mcw.edu" class="external text" rel="nofollow">RGD
+Genome Browser</a> | mouse_ideo.xml | Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
+rel="nofollow">UCSC Genome Browser</a> | human_ideo.xml | Human genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
+rel="nofollow">UCSC Genome Browser</a> | celegans_ideo.xml | C. elegans genome, no bands. | No |
 
   
 **Comparative Maps (Synteny data from RGD VCMap SEQBASD v1.0)**
 
-| Base Map File | Map Description | External Links |
-|----|----|----|
-| human-rat_synteny.xml | Human genome with bands corresponding to syntenic regions in Rat | No |
-| human-mouse_synteny.xml | Human genome with bands corresponding to syntenic regions in Mouse | No |
-| rat-human_synteny.xml | Rat genome with bands corresponding to syntenic regions in Human | No |
-| rat-mouse_synteny.xml | Rat genome with bands corresponding to syntenic regions in Mouse | No |
-| mouse-rat_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Rat | No |
-| mouse-human_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Human | No |
+| Base Map File | Map Description | External Links |----|----|----| human-rat_synteny.xml | Human genome with bands corresponding to syntenic regions in Rat | No | human-mouse_synteny.xml | Human genome with bands corresponding to syntenic regions in Mouse | No | rat-human_synteny.xml | Rat genome with bands corresponding to syntenic regions in Human | No | rat-mouse_synteny.xml | Rat genome with bands corresponding to syntenic regions in Mouse | No | mouse-rat_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Rat | No | mouse-human_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Human | No |
 
   
 
@@ -613,7 +568,6 @@ correct at the top of the script and that CGI.pm is available. The perl
 script has a couple of variables that may need to be modified to suit
 the location of the GViewer files on your server.
 
-
 ``` de1
 # absolute URL pointing to GViewer directory holding movie and data
  
@@ -622,7 +576,6 @@ my $pathToGViewerWebDir = "/Gviewer";
 # absolute URL pointing to GViewer style sheet, probably the same as the webdir, above.
 my $pathToStyleSheet = "/Gviewer";
 ```
-
 
 3\. Text Annotation file format. The format of the annotation data that
 can be uploaded is very simple and is designed to be easy to create from
@@ -659,11 +612,7 @@ via Javascript.
 
   
 
-| Flash function | Function description |
-|----|----|
-| setHighlight(featureName) | Turns on the highlight and label for the feature with the label 'featureName' |
-| unsetHighlight(featureName) | Turns off the highlight and label for the feature with the label 'featureName' |
-| getAnnotationData(format) | Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc. |
+| Flash function | Function description |----|----| setHighlight(featureName) | Turns on the highlight and label for the feature with the label 'featureName' | unsetHighlight(featureName) | Turns off the highlight and label for the feature with the label 'featureName' | getAnnotationData(format) | Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc. |
 
   
 To call these functions using Javascript, a few changes are required in
@@ -744,8 +693,3 @@ should make the highlight go away.
   what's going wrong, you just wont get past the 'Loading' stage, not
   too friendly I agree. It will tell you if no annotation file was
   provided or if it has no baseFile.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [RGD](Category%253ARGD "Category%253ARGD")

@@ -3,7 +3,6 @@ title: "Tripal/tool data"
 ---
 # Tripal/tool data
 
-
 This page stores the data that populates the
 [Tripal](../Tripal.1 "Tripal") wiki page.
 
@@ -90,7 +89,6 @@ Tripal provides an API to help developers who wish to create new Tripal
 extension modules. The API provides common functions for interacting
 with Chado, Tripal, and for constructing or editing custom templates for
 a custom look-and-feel. For more information, see the following links:
-
 
 - [GMOD in the
   Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")

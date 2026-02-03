@@ -3,12 +3,10 @@ title: "Chado Companalysis Module"
 ---
 # Chado Companalysis Module
 
-
 The companalysis module is designed for the storage of computational
 sequence analysis. The key concept is that the results of a
 computational analysis can be interpreted or described as a sequence
 feature.
-
 
   companalysis module</span>](#Using_the_companalysis_module)
   - [Alignment
@@ -32,7 +30,6 @@ feature.
     analysisprop](#Table:_analysisprop)
   - [UML
     diagram](#UML_diagram)
-
 
 # Using the companalysis module
 
@@ -69,10 +66,8 @@ featureloc to the genome and not to a second type of feature.
                  ^                   ^
                  |   _______A______  |          alignment feature type = match
             floc |    ^          ^   | floc (rank = 0)
-                 |    | f_r  f_r |   |
-                --B----        ---C---        hsp feature type = match
-                      |        |
-                 floc |        | floc (rank = 1)
+                 | f_r  f_r                 --B----        ---C---        hsp feature type = match
+                                       floc | floc (rank = 1)
                       V        V
                       ----D-----              aligned feature type = EST, cDNA, protein etc.
 
@@ -82,8 +77,7 @@ featureloc to the genome and not to a second type of feature.
                  ^                   ^
                  |   _______A______  |          alignment feature type = match
             floc |    ^          ^   | floc (rank = 0)
-                 |    | f_r  f_r |   |
-                --B----        ---C---        hsp feature type = match
+                 | f_r  f_r                 --B----        ---C---        hsp feature type = match
 
 ### Examples
 
@@ -439,12 +433,7 @@ analysisfeature Structure
 
 ## Table: analysisprop
 
-| F-Key | Name | Type | Description |
-|----|----|----|----|
-|  | analysisprop_id | serial | *PRIMARY KEY* |
-| [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
-|  | value | text | *UNIQUE#1* |
+| F-Key | Name | Type | Description |----|----|----|----|  | analysisprop_id | serial | *PRIMARY KEY* | [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | *UNIQUE#1* |
 
 analysisprop Structure
 

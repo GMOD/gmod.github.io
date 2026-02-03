@@ -3,7 +3,6 @@ title: "Materialized views"
 ---
 # Materialized views
 
-
 Materializing a view is the process of taking a view (which is a sort of
 virtual table) and turning it into a real table that can be indexed for
 better performance. While [PostgreSQL](PostgreSQL "PostgreSQL") doesn't
@@ -11,7 +10,6 @@ support maintenance of materialized views, we have written a command
 line tool that will handle the creation and maintenance of materialized
 views in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 running on PostgreSQL.
-
 
   gmod_materialized_view_tool.pl](#gmod_materialized_view_tool.pl)
   - [Creating a
@@ -21,7 +19,6 @@ running on PostgreSQL.
     crontab entry to maintain materialized
     views](#Example_crontab_entry_to_maintain_materialized_views)
   - [Authors](#Authors)
-
 
 # gmod_materialized_view_tool.pl
 
@@ -85,11 +82,9 @@ materialized views:
     Viewing 'chado' database on host localhost
     ==========================================
 
-
     =================================
     Creating a new materialized view!
     =================================
-
 
     Give your materialized view a name (word characters only):all_feature_names
 
@@ -113,7 +108,6 @@ materialized views:
     Enter the SQL queries for special indexes,
     or a file containing only the query (or return for none):create index all_feature_names_lower_name on all_feature_names (lower(name))
 
-
     Confirm that the following is correct:
     Name: all_feature_names
     Location: public.all_feature_names
@@ -122,7 +116,6 @@ materialized views:
     Query: SELECT feature_id,uniquename FROM feature UNION SELECT feature_id, name FROM feature UNION SELECT fs.feature_id,s.name FROM feature_synonym fs, synonym s WHERE fs.synonym_id = s.synonym_id
     Indexes on: feature_id,name
     Special index query: create index all_feature_names_lower_name on all_feature_names (lower(name))
-
 
     Enter 'y' to confirm, 'n' to re-enter data: y
 

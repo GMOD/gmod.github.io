@@ -3,7 +3,6 @@ title: "December 2 2010"
 ---
 # December 2 2010
 
-
 ## Minutes for December 9 (Suzi)
 
 **participants**: Nomi, Gregg, Ed, Suzie, Mitch, Chris and Chris

@@ -3,7 +3,6 @@ title: "Galaxy Tutorial 2012"
 ---
 # Galaxy Tutorial 2012
 
-
 This walks you through setting up and running a
 [Galaxy](Galaxy.1 "Galaxy") server. This tutorial was originally taught
 by [Dave Clements](User%253AClements "User%253AClements") at the [2012 GMOD
@@ -14,7 +13,6 @@ ami-a1de69c8, name: GMOD 2012 start day 3**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
 Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
 how to get this AMI.
-
 
   Galaxy Resources</span>](#Some_General_Galaxy_Resources)
 - [Create a
@@ -54,7 +52,6 @@ how to get this AMI.
     and Count](#5._Group_and_Count)
   - [6. Get
     Exon Info back](#6._Get_Exon_Info_back)
-
 
 <a href="http://galaxyproject.org/" class="external text"
 rel="nofollow">Galaxy</a> is a data integration and analysis framework
@@ -97,7 +94,6 @@ class="external text" rel="nofollow">Galaxy Admin and Development
 Search</a>  
 Search online resources related to *deploying and developing* Galaxy
 
-
 Results from searches are often further broken down into categories
 
 - **All**: give me everything
@@ -111,7 +107,6 @@ Results from searches are often further broken down into categories
 - **Requests**: Should feature requests related to my search.
 
 This is all implemented using Google Custom Search.
-
 
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
 class="external text" rel="nofollow">Public Galaxy Servers</a>  
@@ -136,10 +131,8 @@ class="external text" rel="nofollow">tags/categories</a>.
 
 ## Create a Galaxy instance
 
-
 See <a href="http://getgalaxy.org" class="external free"
 rel="nofollow">http://getgalaxy.org</a>.
-
 
 ### Prerequisites
 
@@ -168,7 +161,6 @@ The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
 rel="nofollow">bitbucket hosting service</a>.
 
-
 **DO NOT DO THIS NOW** as it has already been done on your image:
 
 To create a local clone of the release repository run the following:
@@ -177,7 +169,6 @@ To create a local clone of the release repository run the following:
  $ cd ~/Galaxy
  $ hg clone http://bitbucket.org/galaxy/galaxy-dist
 ```
-
 
 ### Take Advantage of the GMOD in the Cloud Directory Structure
 
@@ -240,11 +231,9 @@ to this:
 
 ### Use a more robust database
 
-
 See <a
 href="https://wiki.galaxyproject.org/Admin/Config/Performance/Production%20Server"
 class="external text" rel="nofollow">Production Server</a>
-
 
 Out of the box Galaxy includes the embedded SQLite database. This allows
 Galaxy to run with zero-configuration and provides an excellent solution
@@ -337,10 +326,8 @@ your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 
 ## Running analyses with Galaxy
 
-
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>
-
 
 Without any additional configuration, there is already a lot we can do
 with our first Galaxy instance. As an example, let's work through an
@@ -360,10 +347,8 @@ width="900" height="678" alt="Galaxy FirstAnalysis 1.png" />
 
 Now that Galaxy is up and running, let's use it to answer the question:
 
-
 Which coding exons have the highest number of embedded/overlapping
 repeats?
-
 
 We will ask this question about pig chromosome 18 in our example.
 
@@ -435,13 +420,7 @@ width="281" height="399" alt="Galaxy NoLinkToUCSCForPigs.png" />
 
 Galaxy-dist has several important subdirectories
 
-| Path | Description |
-|----|----|
-| `tools/` | Defines tools in Galaxy. |
-| `tool-data/` | Home of `.loc` files for sets of tools. `.loc` files tell where reference genomes, indexes, and the like can be found for particular tools. |
-| ` • shared/` | Contains subdirectories for `ensembl, `**`gbrowse`**`, genetrack, igv, jars, ncbi, rviewer, `**`ucsc`** |
-| ` • • ucsc/` |  |
-| ` • • • ucsc_build_sites.txt` | Defines which genomes can be viewed at the various UCSC sites. |
+| Path | Description |----|----| `tools/` | Defines tools in Galaxy. | `tool-data/` | Home of `.loc` files for sets of tools. `.loc` files tell where reference genomes, indexes, and the like can be found for particular tools. | ` • shared/` | Contains subdirectories for `ensembl, `**`gbrowse`**`, genetrack, igv, jars, ncbi, rviewer, `**`ucsc`** | ` • • ucsc/` | ` • • • ucsc_build_sites.txt` | Defines which genomes can be viewed at the various UCSC sites. |
 
 `susScr2` is not in the list for the main UCSC site. *Edit*
 `tool-data/shared/ucsc/ucsc_build_sites.txt` and *add it*.
@@ -562,9 +541,7 @@ the number of records in the dataset that have that exon name.
 If we were to now to run **Tools → Filter and Sort → Sort** on this
 dataset, we would have the answer to our original question:
 
-
 Which exons have the most repeats?
-
 
 We have the list of exons, and the counts in them. We could use this
 dataset in further analysis, email it someone, etc..

@@ -3,7 +3,6 @@ title: "Argos"
 ---
 # Argos
 
-
   Status](#Status)
 - [Contact](#Contact)
 - [Description](#Description)
@@ -23,7 +22,6 @@ title: "Argos"
     steps to installation of an Argos server
     system](#Summary_of_steps_to_installation_of_an_Argos_server_system)
 - [Downloads](#Downloads)
-
 
 ## Status
 

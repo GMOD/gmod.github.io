@@ -3,7 +3,6 @@ title: "News/modENCODE & Gramene Openings"
 ---
 # News/modENCODE & Gramene Openings
 
-
 The <a href="http://www.modencode.org" class="external text"
 rel="nofollow">modENCODE</a> and
 <a href="http://www.gramene.org" class="external text"
@@ -11,12 +10,10 @@ rel="nofollow">Gramene</a> projects are both hiring.
 
 <span style="font-size:120%">**modENCODE**</span>
 
-
 <a href="http://blog.modencode.org/" rel="nofollow"
 title="modENCODE Project Openings"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/35/ModENCODE_logo.png" width="151"
 height="148" alt="modENCODE Project Openings" /></a>
-
 
 <a href="http://www.modencode.org" class="external text"
 rel="nofollow">modENCODE</a> is
@@ -54,12 +51,10 @@ some details on how they are used.)
   
 <span style="font-size: 120%">**Gramene**</span>
 
-
 <a href="http://news.gramene.org/" rel="nofollow"
 title="Grameene Project Opening"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/Gramene_logo180.jpg" width="180"
 height="58" alt="Grameene Project Opening" /></a>
-
 
 <a href="http://www.gramene.org" class="external text"
 rel="nofollow">Gramene</a> has
@@ -82,10 +77,8 @@ rel="nofollow">the position announcement</a> for full details.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

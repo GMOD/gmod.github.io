@@ -3,10 +3,8 @@ title: "TableEdit"
 ---
 # TableEdit
 
-
 (Redirected from [Table
 Editor](/wiki/Table_Editor)
-
 
   community annotation with a MediaWiki
   wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
@@ -37,7 +35,6 @@ Editor](/wiki/Table_Editor)
   - [Other
     TableEdit enhancements](#Other_TableEdit_enhancements)
 
-
 ## Genome community annotation with a MediaWiki wiki
 
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
@@ -58,8 +55,7 @@ System](Community_Annotation_System "Community Annotation System").
 ## Table Edit
 
 Ecoliwiki's
-<a href="http://ecoliwiki.net/colipedia/index.php/Special:TableEdit"
-class="external text" rel="nofollow">Table Edit</a> is the core for this
+ is the core for this
 gene-oriented [community
 annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
 database. TableEdit provides a somewhat more friendly way to edit simple
@@ -125,7 +121,6 @@ class="external text">MediaWiki's command line utilities</a>.
 
 Here is a code snippet from a wrapper script
 
-
 ``` de1
 foreach ($genes as $gene){
         $gene_count++;
@@ -142,7 +137,6 @@ foreach ($genes as $gene){
  }
 ```
 
-
 `test_modify.php` corrected a typo introduced by an earlier load, where
 a double \|\| was needed instead of a single \| after a PMID. The
 metadata is data associated with a row that is not displayed on the
@@ -150,7 +144,6 @@ page. I use this to identify rows that have been used to store a
 particular kind of content. In this case, it's rows in an allele table
 that describe the availability of knockouts from a strain collection
 from Hirotada Mori's lab.
-
 
 ``` de1
 <?php
@@ -168,12 +161,11 @@ $metadata = 'keio';
 $uid = 0;
 $rows = get_wikibox_rows($box, $uid, $metadata);
 foreach ($rows as $index=>$row){
-       $box->rows[$index]->row_data = preg_replace("/16738554\|\[/","16738554||[", $box->rows[$index]->row_data);
+       $box->rows[$index]->row_data = preg_replace("/16738554\|\[/","16738554|[", $box->rows[$index]->row_data);
         $box->rows[$index]->db_save_row();
 }
 ?>
 ```
-
 
 ## Table Edit at Hackathon 2007
 

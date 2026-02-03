@@ -3,7 +3,6 @@ title: "Software Testing Recommendations"
 ---
 # Software Testing Recommendations
 
-
 This wiki is to provide an interaction space for generating a set of
 recommendations on software testing for the GMOD group. The documents
 should contain enough information so that after reading it, someone new

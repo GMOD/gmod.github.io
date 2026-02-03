@@ -3,17 +3,14 @@ title: "News/GMOD @ ISMB and BOSC"
 ---
 # News/GMOD @ ISMB and BOSC
 
-
 <a href="http://www.iscb.org/ismb2008/" rel="nofollow"
 title="ISMB 2008"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0f/ISMB2008Skyline.png" width="167"
 height="136" alt="ISMB 2008" /></a>
 
-
 <a href="http://open-bio.org/wiki/BOSC_2008" rel="nofollow"
 title="BOSC 2008"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/BoscPear.png"
 width="161" height="115" alt="BOSC 2008" /></a>
-
 
 GMOD has a [strong presence](../ISMB_2008 "ISMB 2008") at the
 <a href="http://www.iscb.org/ismb2008/" class="external text"
@@ -34,10 +31,8 @@ at the conference</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

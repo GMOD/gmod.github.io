@@ -3,7 +3,6 @@ title: "Modifying the mediawiki footer"
 ---
 # Modifying the mediawiki footer
 
-
 To modify the footer in MediaWiki pages, I had to edit
 skins/MonoBook.php. I added this line:
 
@@ -35,8 +34,3 @@ Here is what the surrounding code looked like:
                     foreach( $footerlinks as $aLink ) {
                             if( isset( $this->data[$aLink] ) && $this->data[$aLink] ) {
     ?>                              <li id="<?php echo$aLink?>"><?php $this->html($aLink) ?></li>
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")

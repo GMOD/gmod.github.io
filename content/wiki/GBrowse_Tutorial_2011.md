@@ -3,7 +3,6 @@ title: "GBrowse Tutorial 2011"
 ---
 # GBrowse Tutorial 2011
 
-
   Prerequisites](#Prerequisites)
 - [Install
   GBrowse](#Install_GBrowse)
@@ -32,7 +31,6 @@ title: "GBrowse Tutorial 2011"
     functionality](#Add_.22show_summary.22_functionality)
   - [Enabling
     full text searching](#Enabling_full_text_searching)
-
 
 # Prerequisites
 

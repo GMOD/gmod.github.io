@@ -3,13 +3,11 @@ title: "News/Arthropod Genomics Consortium"
 ---
 # News/Arthropod Genomics Consortium
 
-
 <a href="http://arthropodgenomes.org" rel="nofollow"
 title="Arthropod Genomics Consortium"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c1/AGSBug170.png/100px-AGSBug170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c1/AGSBug170.png/150px-AGSBug170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c1/AGSBug170.png 2x"
 width="100" height="108" alt="Arthropod Genomics Consortium" /></a>
-
 
 The <a href="http://arthropodgenomes.org" class="external text"
 rel="nofollow">Arthropod Genomics Consortium</a> encourages
@@ -42,10 +40,8 @@ class="external text" rel="nofollow">joining this growing consortium</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/12/18*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

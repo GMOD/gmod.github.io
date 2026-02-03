@@ -3,7 +3,6 @@ title: "News/GMOD Summer School 2012: Apply Now"
 ---
 # News/GMOD Summer School 2012: Apply Now
 
-
 [Applications are now being
 accepted](../2012_GMOD_Summer_School#Application "2012 GMOD Summer School")
 for the [2012 GMOD Summer
@@ -50,10 +49,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/6/14*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

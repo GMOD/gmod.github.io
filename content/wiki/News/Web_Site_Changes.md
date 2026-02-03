@@ -3,7 +3,6 @@ title: "News/Web Site Changes"
 ---
 # News/Web Site Changes
 
-
 The [GMOD web site](../Main_Page "Main Page") doesn't look very
 different, but it was updated on Monday, August 11,2008. Here's what
 changed:
@@ -29,10 +28,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/11*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

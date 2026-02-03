@@ -3,7 +3,6 @@ title: "Category%253AGMOD Project Logos"
 ---
 # Category%253AGMOD Project Logos
 
-
 The official GMOD logo looks like this:
 
 <img
@@ -32,11 +31,9 @@ and web sites. See [GMOD Promotion](GMOD_Promotion "GMOD Promotion") and
 [Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons")
 for more.
 
-
 ## Pages in category "GMOD Project Logos"
 
 The following 2 pages are in this category, out of 2 total.
-
 
 ### G
 
@@ -45,7 +42,6 @@ The following 2 pages are in this category, out of 2 total.
 ### P
 
 - [Powered by GMOD](Powered_by_GMOD "Powered by GMOD")
-
 
 ## Media in category "GMOD Project Logos"
 
@@ -1040,13 +1036,4 @@ The following 43 files are in this category, out of 43 total.
   
 
   [October2011Logo.png](File:October2011Logo.png "File:October2011Logo.png")  
-  220 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons")
+  220 KB

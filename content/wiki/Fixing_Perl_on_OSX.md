@@ -3,7 +3,6 @@ title: "Fixing Perl on OSX"
 ---
 # Fixing Perl on OSX
 
-
 One of the Security Updates to Mac OSX 10.5 caused problems for Perl.
 See
 

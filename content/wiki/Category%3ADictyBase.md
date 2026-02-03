@@ -3,18 +3,15 @@ title: "Category%253ADictyBase"
 ---
 # Category%253ADictyBase
 
-
 <a href="http://dictybase.org/" class="external text"
 rel="nofollow">dictyBase</a> is an online database on the biology and
 genomics of the social amoeba *Dictyostelium discoideum*. dictyBase is
 an active GMOD project participant. The [Modware](Modware "Modware")
 component was contributed and is maintained by dictyBase.
 
-
 ## Pages in category "DictyBase"
 
 The following 4 pages are in this category, out of 4 total.
-
 
 ### D
 
@@ -34,7 +31,6 @@ The following 4 pages are in this category, out of 4 total.
 
 - [News/Open Position At
   dictyBase](News/Open_Position_At_dictyBase "News/Open Position At dictyBase")
-
 
 ## Media in category "DictyBase"
 
@@ -126,13 +122,4 @@ The following 4 files are in this category, out of 4 total.
   
 
   [Just-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt")  
-  218 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
+  218 KB

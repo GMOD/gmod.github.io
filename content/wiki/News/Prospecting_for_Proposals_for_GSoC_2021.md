@@ -3,12 +3,10 @@ title: "News/Prospecting for Proposals for GSoC 2021"
 ---
 # News/Prospecting for Proposals for GSoC 2021
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/GoogleSummer_2016logo.jpg/272px-GoogleSummer_2016logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg 2x"
 width="272" height="272" alt="GoogleSummer 2016logo.jpg" />](../GSoC "GSoC")
-
 
 The Genome Informatics group and GMOD will be submitting an application
 for <a href="https://summerofcode.withgoogle.com/" class="external text"
@@ -40,10 +38,8 @@ rel="nofollow">help@gmod.org</a> for advice!
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2021/02/16*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

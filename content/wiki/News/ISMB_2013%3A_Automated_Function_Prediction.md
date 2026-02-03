@@ -3,7 +3,6 @@ title: "News/ISMB 2013: Automated Function Prediction"
 ---
 # News/ISMB 2013: Automated Function Prediction
 
-
 Those of you attending ISMB may be interested in the Automated Function
 Prediction special interest group. The following comes from Iddo
 Friedberg, co-chair, on behalf of the AFP 2013 organizing committee:
@@ -71,6 +70,5 @@ Contact: <a href="mailto:afp.cafa.2013@gmail.com" class="external text"
 rel="nofollow">afp.cafa.2013@gmail.com</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/18*

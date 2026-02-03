@@ -3,7 +3,6 @@ title: "Talk:GMOD REST Hackathon"
 ---
 # Talk:GMOD REST Hackathon
 
-
   language groups</span>](#Programming_language_groups)
   - [PHP](#PHP)
   - [Perl](#Perl)
@@ -19,7 +18,6 @@ title: "Talk:GMOD REST Hackathon"
     By](#Other_Backend_APIs_to_Compare.2FBe_Inspired_By)
   - [Info from
     Adrian](#Info_from_Adrian)
-
 
 # Programming language groups
 

@@ -3,13 +3,11 @@ title: "Property:Has output format"
 ---
 # Property:Has output format
 
-
 This is a property of type
-[Text](Special%253ATypes/Text "Special%253ATypes/Text").
+.
 
   
 <span id="SMWResults"></span>
-
 
 ## Pages using the property "Has output format"
 
@@ -30,29 +28,16 @@ Showing 13 pages using this property.
 <tr class="odd">
 <td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/BLAST-20Graphic-20Viewer"
-title="Special%253ABrowse/BLAST-20Graphic-20Viewer">+</a></span></td>
-<td class="smwprops">gapped alignments  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/gapped-20alignments"
-title="Special%253ASearchByProperty/Has-20output-20format/gapped-20alignments">+</a></span>,
-nongapped alignments  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/nongapped-20alignments"
-title="Special%253ASearchByProperty/Has-20output-20format/nongapped-20alignments">+</a></span></td>
+class="smwbrowse"></span></td>
+<td class="smwprops">gapped alignments  ,
+nongapped alignments  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="BioMart"
-title="BioMart">BioMart</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/BioMart"
-title="Special%253ABrowse/BioMart">+</a></span></td>
-<td class="smwprops">APIs: REST/SOAP  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/APIs%253A-20REST-2FSOAP"
-title="Special%253ASearchByProperty/Has-20output-20format/APIs%253A-20REST-2FSOAP">+</a></span>,
-JAVA  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/JAVA"
-title="Special%253ASearchByProperty/Has-20output-20format/JAVA">+</a></span>,
-SPARQL  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/SPARQL"
-title="Special%253ASearchByProperty/Has-20output-20format/SPARQL">+</a></span></td>
+title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">APIs: REST/SOAP  ,
+JAVA  ,
+SPARQL  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><h3 id="c">C</h3></td>
@@ -60,22 +45,14 @@ title="Special%253ASearchByProperty/Has-20output-20format/SPARQL">+</a></span></
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/CMap"
-title="Special%253ABrowse/CMap">+</a></span></td>
-<td class="smwprops">tab-delimited  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/tab-2Ddelimited"
-title="Special%253ASearchByProperty/Has-20output-20format/tab-2Ddelimited">+</a></span></td>
+class="smwbrowse"></span></td>
+<td class="smwprops">tab-delimited  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/Canto"
-title="Special%253ABrowse/Canto">+</a></span></td>
-<td class="smwprops">JSON  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/JSON"
-title="Special%253ASearchByProperty/Has-20output-20format/JSON">+</a></span>,
-GAF  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GAF"
-title="Special%253ASearchByProperty/Has-20output-20format/GAF">+</a></span></td>
+class="smwbrowse"></span></td>
+<td class="smwprops">JSON  ,
+GAF  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="d">D</h3></td>
@@ -83,17 +60,10 @@ title="Special%253ASearchByProperty/Has-20output-20format/GAF">+</a></span></td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/DIYA"
-title="Special%253ABrowse/DIYA">+</a></span></td>
-<td class="smwprops">FASTA  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/FASTA"
-title="Special%253ASearchByProperty/Has-20output-20format/FASTA">+</a></span>,
-GFF  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GFF"
-title="Special%253ASearchByProperty/Has-20output-20format/GFF">+</a></span>,
-Genbank  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/Genbank"
-title="Special%253ASearchByProperty/Has-20output-20format/Genbank">+</a></span></td>
+class="smwbrowse"></span></td>
+<td class="smwprops">FASTA  ,
+GFF  ,
+Genbank  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="g">G</h3></td>
@@ -101,12 +71,8 @@ title="Special%253ASearchByProperty/Has-20output-20format/Genbank">+</a></span><
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Galaxy.1"
-title="Galaxy">Galaxy</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Galaxy"
-title="Special%253ABrowse/Galaxy">+</a></span></td>
-<td class="smwprops">zillions!  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/zillions!"
-title="Special%253ASearchByProperty/Has-20output-20format/zillions!">+</a></span></td>
+title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">zillions!  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="i">I</h3></td>
@@ -114,20 +80,11 @@ title="Special%253ASearchByProperty/Has-20output-20format/zillions!">+</a></span
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="InterMine"
-title="InterMine">InterMine</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/InterMine"
-title="Special%253ABrowse/InterMine">+</a></span></td>
-<td class="smwprops">Flat files (tsv  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/Flat-20files-20(tsv"
-title="Special%253ASearchByProperty/Has-20output-20format/Flat-20files-20(tsv">+</a></span>,
-csv)  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/csv)"
-title="Special%253ASearchByProperty/Has-20output-20format/csv)">+</a></span>,
-JSON  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/JSON"
-title="Special%253ASearchByProperty/Has-20output-20format/JSON">+</a></span>,
-<a href="Special%253APageProperty/InterMine%253A%253AHas_output_format"
-title="Special:PageProperty/InterMine::Has output format">…</a></td>
+title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">Flat files (tsv  ,
+csv)  ,
+JSON  ,
+</td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="m">M</h3></td>
@@ -135,14 +92,9 @@ title="Special:PageProperty/InterMine::Has output format">…</a></td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
-class="smwbrowse"><a href="Special%253ABrowse/MAKER"
-title="Special%253ABrowse/MAKER">+</a></span></td>
-<td class="smwprops">[[GFF3]]  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGFF3-5D-5D"
-title="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGFF3-5D-5D">+</a></span>,
-[[Glossary#FASTA|FASTA]]  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D"
-title="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGlossary-23FASTA-7CFASTA-5D-5D">+</a></span></td>
+class="smwbrowse"></span></td>
+<td class="smwprops">[[GFF3]]  ,
+[[Glossary#FASTA|FASTA]]  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="p">P</h3></td>
@@ -150,18 +102,10 @@ title="Special%253ASearchByProperty/Has-20output-20format/-5B-5BGlossary-23FASTA
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Pathway_Tools.1"
-title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Pathway-20Tools"
-title="Special%253ABrowse/Pathway-20Tools">+</a></span></td>
-<td class="smwprops">Genbank format  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/Genbank-20format"
-title="Special%253ASearchByProperty/Has-20output-20format/Genbank-20format">+</a></span>,
-SBML  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/SBML"
-title="Special%253ASearchByProperty/Has-20output-20format/SBML">+</a></span>,
-BioPAX  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/BioPAX"
-title="Special%253ASearchByProperty/Has-20output-20format/BioPAX">+</a></span></td>
+title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">Genbank format  ,
+SBML  ,
+BioPAX  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="t">T</h3></td>
@@ -169,15 +113,9 @@ title="Special%253ASearchByProperty/Has-20output-20format/BioPAX">+</a></span></
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="Textpresso"
-title="Textpresso">Textpresso</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/Textpresso"
-title="Special%253ABrowse/Textpresso">+</a></span></td>
-<td class="smwprops">XML  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/XML"
-title="Special%253ASearchByProperty/Has-20output-20format/XML">+</a></span>,
-text  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/text"
-title="Special%253ASearchByProperty/Has-20output-20format/text">+</a></span></td>
+title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">XML  ,
+text  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><h3 id="w">W</h3></td>
@@ -185,47 +123,25 @@ title="Special%253ASearchByProperty/Has-20output-20format/text">+</a></span></td
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="WebApollo.1"
-title="WebApollo">WebApollo</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebApollo"
-title="Special%253ABrowse/WebApollo">+</a></span></td>
-<td class="smwprops">GFF3  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GFF3"
-title="Special%253ASearchByProperty/Has-20output-20format/GFF3">+</a></span>,
-others  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/others"
-title="Special%253ASearchByProperty/Has-20output-20format/others">+</a></span></td>
+title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">GFF3  ,
+others  </td>
 </tr>
 <tr class="even">
 <td class="smwpropname"><a href="WebApollo2"
-title="WebApollo2">WebApollo2</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebApollo2"
-title="Special%253ABrowse/WebApollo2">+</a></span></td>
-<td class="smwprops">GFF3  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GFF3"
-title="Special%253ASearchByProperty/Has-20output-20format/GFF3">+</a></span>,
-Fasta  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/Fasta"
-title="Special%253ASearchByProperty/Has-20output-20format/Fasta">+</a></span>,
-others  <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/others"
-title="Special%253ASearchByProperty/Has-20output-20format/others">+</a></span></td>
+title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">GFF3  ,
+Fasta  ,
+others  </td>
 </tr>
 <tr class="odd">
 <td class="smwpropname"><a href="WebGBrowse.1"
-title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"><a
-href="Special%253ABrowse/WebGBrowse"
-title="Special%253ABrowse/WebGBrowse">+</a></span></td>
-<td class="smwprops">GBrowse configuration file  <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20output-20format/GBrowse-20configuration-20file"
-title="Special%253ASearchByProperty/Has-20output-20format/GBrowse-20configuration-20file">+</a></span></td>
+title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
+<td class="smwprops">GBrowse configuration file  </td>
 </tr>
 </tbody>
 </table>
 
-
 </span>
 
-|  |  |
-|----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [Text](Special%253ATypes/Text "Special%253ATypes/Text") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20type/Text "Special%253ASearchByProperty/Has-20type/Text")</span> |
+|----|----| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span>

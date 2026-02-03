@@ -3,7 +3,6 @@ title: "JBrowse FAQ"
 ---
 # JBrowse FAQ
 
-
 Some frequently asked questions, and some hypothetical ones for fun
 
 See the
@@ -11,7 +10,6 @@ See the
 for more details
 
   
-
 
   Setup](#Setup)
   - [How do I
@@ -285,7 +283,6 @@ for more details
   - [How do I
     change the color of bigwig
     dynamically](#How_do_I_change_the_color_of_bigwig_dynamically)
-
 
 # Setup
 

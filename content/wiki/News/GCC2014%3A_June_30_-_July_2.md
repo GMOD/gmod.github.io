@@ -3,13 +3,11 @@ title: "News/GCC2014: June 30 - July 2"
 ---
 # News/GCC2014: June 30 - July 2
 
-
 <a href="http://wiki.galaxyproject.org/Events/GCC2014" rel="nofollow"
 title="2014 Galaxy Community Conference"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/250px-GCC2014Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/375px-GCC2014Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/500px-GCC2014Logo.png 2x"
 width="250" height="105" alt="2014 Galaxy Community Conference" /></a>
-
 
 The <a href="http://wiki.galaxyproject.org/Events/GCC2014"
 class="external text" rel="nofollow">2014 Galaxy Community Conference
@@ -33,10 +31,8 @@ includes links to slides and videos for all accepted talks.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/10/02*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "GBrowse 2.0 Install HOWTO/Advanced"
 ---
 # GBrowse 2.0 Install HOWTO/Advanced
 
-
 This article describes **advanced installation topics** for GBrowse 2.0,
 such as accelerating GBrowse performance by running it under a
 persistent environment, configuring the user login and custom track
@@ -18,7 +17,6 @@ via user authentication.
   HOWTO](../GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
 
   
-
 
   GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
 - [Running
@@ -44,7 +42,6 @@ via user authentication.
     DBI::mysql backend](#Using_the_DBI::mysql_backend)
 - [Authentication
   and Authorization](#Authentication_and_Authorization)
-
 
 ## Running GBrowse under FastCGI
 
@@ -89,7 +86,6 @@ file by running **./Build apache_conf** from within the GBrowse
 distribution directory. The FastCGI portion of the configuration file
 that is generated will look something like this:
 
-
 ``` de1
  <IfModule mod_fastcgi.c>
    Alias /fgb2 "/usr/lib/cgi-bin/gb2"
@@ -99,7 +95,6 @@ that is generated will look something like this:
    FastCgiConfig -initial-env GBROWSE_CONF=/etc/gbrowse2
  </IfModule>
 ```
-
 
 Copy this stanza into your main Apache configuration file, or, better,
 into the site configuration file directory, /etc/apache/conf.d (or
@@ -373,15 +368,12 @@ see. It is suggested that you first upload a file, and then use the
 inline editing interface to customize the track configuration file as
 shown in the illustration below.
 
-
 <a href="../File:Editing_track_config2.png" class="image"></a>
-
 
 editing_track_config2.png\]
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/Editing_track_config2.png"
 class="internal" title="Editing track config2.png">View at full
 resolution</a>
-
 
 The format of the track configuration files is identical to that
 described above. The only difference is that the *database* option is
@@ -506,7 +498,6 @@ rel="nofollow">http://your.host/cgi-bin/gb2/gbrowse/yeast</a>.
 To control access to the entire database, create a \<Location\> section
 in httpd.conf. The \<Location\> section should look like this:
 
-
 ``` de1
    <Location /cgi-bin/gb2/gbrowse/your_database>
         Order deny,allow
@@ -514,7 +505,6 @@ in httpd.conf. The \<Location\> section should look like this:
         allow from localhost .cshl.edu .ebi.ac.uk
    </Location>
 ```
-
 
 This denies access to everybody except for "localhost" and browsers from
 the domains .cshl.edu and .ebi.ac.uk. You can also limit by IP address,
@@ -556,7 +546,6 @@ Here is an example that uses the Text::GenderFromName to allow access if
 the user's name sounds female and forbids access if the name sounds
 male. (It might be useful for an X-chromosome annotation site.)
 
-
 ``` de1
     restrict = sub {
                my ($host,$ip,$user) = @_;
@@ -565,7 +554,6 @@ male. (It might be useful for an X-chromosome annotation site.)
                return gender($user) eq 'f';
              }
 ```
-
 
 You should be aware that the username will only be defined if username
 authentication is turned on and the user has successfully authenticated

@@ -3,7 +3,6 @@ title: "News/GMOD Paper Cuts, Dec 6th, 2013"
 ---
 # News/GMOD Paper Cuts, Dec 6th, 2013
 
-
   
 
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
@@ -142,14 +141,11 @@ Happy reading!
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `DOI:10.1371.2Fjournal.pone.0081072`**</span>
 
-
 Disclaimer: the papers included in this feature are for your
 entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
 
-
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/06*

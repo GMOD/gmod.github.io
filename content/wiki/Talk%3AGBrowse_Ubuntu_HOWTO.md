@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse Ubuntu HOWTO"
 ---
 # Talk%253AGBrowse Ubuntu HOWTO
 
-
 I don't want to add this to the official doc, but I think somebody who
 understands the pre-req's better could cull my list of packages down to
 the correct set.

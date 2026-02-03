@@ -3,11 +3,9 @@ title: "News/Google Summer of Code & OBF"
 ---
 # News/Google Summer of Code & OBF
 
-
 <a href="http://open-bio.org/wiki/Google_Summer_of_Code" rel="nofollow"
 title="OBF in GSoC"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/OBF_logo.png"
 width="105" height="67" alt="OBF in GSoC" /></a>
-
 
 Great news: the <a href="http://open-bio.org/wiki/Google_Summer_of_Code"
 class="external text" rel="nofollow">Open Bioinformatics Foundation
@@ -42,10 +40,8 @@ class="external text" rel="nofollow">OBF GSoC 2010 Administrator</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "User%253AJhannah"
 ---
 # User%253AJhannah
 
-
 Jay Hannah, University of Nebraska
 
 - <a href="http://clab.ist.unomaha.edu/CLAB/index.php/User%253AJhannah"

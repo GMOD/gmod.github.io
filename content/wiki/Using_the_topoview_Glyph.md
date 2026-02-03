@@ -3,7 +3,6 @@ title: "Using the topoview Glyph"
 ---
 # Using the topoview Glyph
 
-
 This glyph is derived from the FlyBase
 <a href="http://flybase.org/static_pages/docs/software/topoview.html"
 class="external text" rel="nofollow">fb_shmiggle Glyph</a>, 2009-2010
@@ -13,20 +12,17 @@ It is maintained by
 <a href="mailto:sheldon.mckay@gmail.com" class="external text"
 rel="nofollow">Sheldon McKay &lt;sheldon.mckay@gmail.com&gt;</a>
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/82/Topoview_sample.png/550px-Topoview_sample.png"
 class="thumbborder"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 2x"
 width="550" height="194" alt="Sample topoview track" />
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/550px-Topoview_sample2.png"
 class="thumbborder"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/825px-Topoview_sample2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/98/Topoview_sample2.png 2x"
 width="550" height="163" alt="Sample topoview track" />
-
 
 The TopoView glyph was developed for fast 3D-like demonstration of
 RNA-seq data consisting of multiple individual subsets. The main
@@ -35,7 +31,6 @@ reasonably sized track) and to allow easy visual detection of
 coordinated behavior of the expression profiles of different subsets.
 See the note below about normalizing the expression profiles across the
 whole experiment.
-
 
   Demonstration](#Demonstration)
 - [Data
@@ -71,7 +66,6 @@ whole experiment.
     kind of error](#Some_other_kind_of_error)
   - [Ask for
     help](#Ask_for_help)
-
 
 ## Demonstration
 

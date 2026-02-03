@@ -3,7 +3,6 @@ title: "Talk%253AGBrowse 1 Configuration HOWTO"
 ---
 # Talk%253AGBrowse 1 Configuration HOWTO
 
-
 Hello Reg. GFF file format: I was wondering if the group/region field
 has to be (now or in the future) of the format
 

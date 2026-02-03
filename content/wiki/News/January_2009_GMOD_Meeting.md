@@ -3,12 +3,10 @@ title: "News/January 2009 GMOD Meeting"
 ---
 # News/January 2009 GMOD Meeting
 
-
 <a href="../File:SanDiegoConvention.gif" class="image"
 title="January in San Diego - think about that"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/SanDiegoConvention.gif" width="145"
 height="97" alt="January in San Diego - think about that" /></a>
-
 
 *Note: Registration is now open for the [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting").
@@ -44,11 +42,9 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/10/23,
 updated 2008/11/20*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

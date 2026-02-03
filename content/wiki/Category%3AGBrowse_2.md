@@ -3,25 +3,20 @@ title: "Category%253AGBrowse 2"
 ---
 # Category%253AGBrowse 2
 
-
 GBrowse 2 is the next major release of [GBrowse](GBrowse.1 "GBrowse").
 It is currently in development.
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "GBrowse 2"
 
 The following 24 pages are in this category, out of 24 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -118,7 +113,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "GBrowse 2"
 

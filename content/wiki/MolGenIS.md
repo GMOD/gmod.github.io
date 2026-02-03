@@ -3,22 +3,17 @@ title: "MolGenIS"
 ---
 # MolGenIS
 
-
 <a href="http://www.molgenis.org/" rel="nofollow" title="MOLGENIS"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/Molgenis_logo.jpg" width="500" height="88"
 alt="MOLGENIS" /></a>
 
-
 Status
-
 
 - **Mature** release
 - **Active** development
 - **Active** support
 
-
 Resources
-
 
 - <a href="http://www.molgenis.org" class="external text"
   rel="nofollow">Home Page</a>
@@ -28,7 +23,6 @@ Resources
   class="external text" rel="nofollow">Documentation</a>
 - <a href="http://groups.google.com/group/molgenis-hackers"
   class="external text" rel="nofollow">Mailing List</a>
-
 
 <a href="http://www.molgenis.org/" class="external text"
 rel="nofollow">MOLGENIS</a> is a platform for rapid prototyping of

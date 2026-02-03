@@ -3,7 +3,6 @@ title: "Tripal Tutorial (v0.3.1b)"
 ---
 # Tripal Tutorial (v0.3.1b)
 
-
   to Tripal</span>](#Introduction_to_Tripal)
   - [What is
     Tripal](#What_is_Tripal)
@@ -167,7 +166,6 @@ title: "Tripal Tutorial (v0.3.1b)"
     - [Adding a GBrowse
       Image](#Adding_a_GBrowse_Image_2)
 
-
 ## Introduction to Tripal
 
 This tutorial is for Tripal version v0.3.1b. This tutorial is designed
@@ -251,7 +249,6 @@ The session for Chado was presented yesterday
 for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
-
 - Audit - for database audits
 - Companalysis - for data from computational analysis
 - Contact - for people, groups, and organizations
@@ -270,7 +267,6 @@ modular structure:
 - Sequence - for sequences and sequence features
 - Stock - for specimens and biological collections
 - WWW -
-
 
 Tripal is also modular along these same designations.
 
@@ -337,21 +333,13 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL |
-|----|----|
-| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
-rel="nofollow">http://knowpulse2.usask.ca/portal/</a> |
-| Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
-rel="nofollow">http://www.vaccinium.org</a> |
-| Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
-rel="nofollow">http://www.gabcsfl.org</a> |
-| Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
-rel="nofollow">http://www.cacaogenomedb.org</a> |
-| Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
-rel="nofollow">http://www.fagaceae.org</a> |
-| Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
-rel="nofollow">http://www.citrusgenomedb.org</a> |
-| Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
+| Site Name | URL |----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
+rel="nofollow">http://www.vaccinium.org</a> | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
+rel="nofollow">http://www.gabcsfl.org</a> | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
+rel="nofollow">http://www.cacaogenomedb.org</a> | Fagaceae Genome Web | <a href="http://www.fagaceae.org" class="external free"
+rel="nofollow">http://www.fagaceae.org</a> | Citrus Genome Database | <a href="http://www.citrusgenomedb.org" class="external free"
+rel="nofollow">http://www.citrusgenomedb.org</a> | Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
 rel="nofollow">http://www.marinegenomics.org</a> |
 
 ### Resources
@@ -511,7 +499,6 @@ specifically identified, all commands are for Ubuntu linux.
 
 The following software packages are needed before installing Drupal or
 Tripal:
-
 
 database. It is not required for successful operation of Tripal but is
 very useful.
@@ -880,10 +867,8 @@ cron launch the crontab editor:
   sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -1585,10 +1570,8 @@ need to add a second cron entry:
    sudo crontab -e
 ```
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
   
 Add this line to the crontab
@@ -2309,7 +2292,6 @@ We will need to use the advanced options to associate relationships and
 a database reference with these peptides. Here is an example of a
 definition line in the FASTA file:
 
-
 ` `
 
 \>FBpp0112427 type=protein;
@@ -2318,7 +2300,6 @@ ID=FBpp0112427; name=CG12567-PA; parent=FBgn0039958,FBtr0113704;
 dbxref=FlyBase_Annotation_IDs:CG12567-PA,FlyBase:FBpp0112427,REFSEQ:NP_001015384,GB_protein:EAA46065,FlyMine:FBpp0112427,modMine:FBpp0112427;
 MD5=246ea191b614901ccb7ba87d545d6308; length=349; release=r5.34;
 species=Dmel;
-
 
   
 We will use regular expressions to pull out the necessary information.

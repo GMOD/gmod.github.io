@@ -3200,9 +3200,7 @@ Fixed</a></h3>
 <p>Update on July 11:</p>
 <p>Account creation using OpenID is currently disabled due to problems
 with the OpenID plugin. New wiki users wishing to create accounts should
-use the 'Log in / create account' link and <a
-href="Special%253ARequestAccount"
-title="Special%253ARequestAccount">request an account</a>; your request
+use the 'Log in / create account' link and ; your request
 should be dealt with within 24-48 hours. Unfortunately, due to spammers
 and others creating bogus accounts, we have to had to put protective
 measures in place.</p>

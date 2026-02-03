@@ -3,7 +3,6 @@ title: "Spectrogram.pm"
 ---
 # Spectrogram.pm
 
-
 Spectrogram.pm is a [GBrowse](GBrowse.1 "GBrowse") plugin written by
 [Sheldon McKay](User%253AMckays "User%253AMckays"). It draws DNA spectrograms of
 DNA of digitized DNA sequences using techniques borrowed from the

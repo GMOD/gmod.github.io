@@ -3,15 +3,12 @@ title: "Category%253AGMOD Project"
 ---
 # Category%253AGMOD Project
 
-
 Pages about the GMOD project itself. These can be overviews, or about
 project architecture and direction, or project status.
-
 
 ## Subcategories
 
 This category has the following 5 subcategories, out of 5 total.
-
 
 ### G
 
@@ -25,11 +22,9 @@ This category has the following 5 subcategories, out of 5 total.
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
 
-
 ## Pages in category "GMOD Project"
 
 The following 8 pages are in this category, out of 8 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -75,7 +70,6 @@ Statistics</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "GMOD Project"
 
@@ -284,13 +278,4 @@ The following 9 files are in this category, out of 9 total.
   
 
   [TShirtThumb.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/TShirtThumb.jpg "File:TShirtThumb.jpg")  
-  5 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Categories](Category%253ACategories "Category%253ACategories")
+  5 KB

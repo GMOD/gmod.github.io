@@ -3,7 +3,6 @@ title: "NBrowse"
 ---
 # NBrowse
 
-
   Description](#Description)
 - [Internet
   Resources](#Internet_Resources)
@@ -36,7 +35,6 @@ title: "NBrowse"
     and populating the N-Browse generic
     database](#Installing_and_populating_the_N-Browse_generic_database)
 - [Contacts](#Contacts)
-
 
 ## Description
 
@@ -220,8 +218,3 @@ rel="nofollow">N-Browse_admin</a>. This is the product of Kris Gunsalus'
 (kcg1@nyu.edu) lab at NYU. Huey-Ling Kao developed N-Browse Version 1.
 N-Browse Version 2 was initially developed by Victor Chest and by Mark
 Gibson. It is currently being developed by Monty Schulman.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [External](Category%253AExternal "Category%253AExternal")

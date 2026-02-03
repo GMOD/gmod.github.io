@@ -3,7 +3,6 @@ title: "News/Ten Recent Web Site Changes"
 ---
 # News/Ten Recent Web Site Changes
 
-
 This entry summarizes several recent changes in the [GMOD web
 site](../Main_Page "Main Page"). These changes are designed to make the
 site more useful, and hopefully will make your GMOD web site experience
@@ -61,10 +60,8 @@ rel="nofollow">help@gmod.org</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/02/13*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

@@ -3,7 +3,6 @@ title: "MAKER Tutorial 2012"
 ---
 # MAKER Tutorial 2012
 
-
 This [MAKER](MAKER.1 "MAKER") tutorial was taught by [Barry
 Moore](User%253ABmoore "User%253ABmoore") as part of the [2012 GMOD Summer
 School](2012_GMOD_Summer_School "2012 GMOD Summer School").
@@ -18,7 +17,6 @@ how to get this AMI.
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
   
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -119,7 +117,6 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
   - [MAKER
     Accessory Scripts](#MAKER_Accessory_Scripts)
 
-
 ## About MAKER
 
 MAKER is an easy-to-use genome annotation pipeline designed for small
@@ -201,7 +198,6 @@ Examples:
   (<a href="http://www.sequenceontology.org/" class="external text"
   rel="nofollow">Sequence Onotology</a>)
 
-
   
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
@@ -280,7 +276,6 @@ know how to start a MAKER job via MPI.
 
 ## User Interface for Local MAKER Installation
 
-
 This example did not work during class because a conflict with the
 version of Apache that was installed. The issue has since been fixed.
 Before beginning the example, open a terminal and remove the following
@@ -296,7 +291,6 @@ Then update maker via subversion.
 ``` enter
  svn update ~/Documents/Software/maker/
 ```
-
 
 The MWAS interface provides a very convenient method for running MAKER
 and viewing results; however, because compute resources are limited
@@ -538,19 +532,7 @@ Scripts:
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[MAKER Tutorial
-2012](Special%253ABrowse/MAKER-20Tutorial-202012 "Special%253ABrowse/MAKER-20Tutorial-202012")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/MAKER "Special%253ASearchByProperty/Has-20topic/MAKER")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER")  |

@@ -3,12 +3,10 @@ title: "News/CMap3D"
 ---
 # News/CMap3D
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a6/CMap3DScreenshot.png/220px-CMap3DScreenshot.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a6/CMap3DScreenshot.png/330px-CMap3DScreenshot.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a6/CMap3DScreenshot.png/440px-CMap3DScreenshot.png 2x"
 width="220" height="137" alt="CMap3D" />](../CMap3D "CMap3D")
-
 
 <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
 rel="nofollow">CMap3D</a> is a 3D visualisation tool for comparative
@@ -42,10 +40,8 @@ Chris Duran
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

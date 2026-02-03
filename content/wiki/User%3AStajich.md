@@ -3,7 +3,6 @@ title: "User%253AStajich"
 ---
 # User%253AStajich
 
-
 I am an Assistant Professor at University of California, Riverside
 working on fungal evolutionary genomics. I work on
 [BioPerl](BioPerl "BioPerl") and

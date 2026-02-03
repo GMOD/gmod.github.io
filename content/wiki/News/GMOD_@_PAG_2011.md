@@ -3,10 +3,8 @@ title: "News/GMOD @ PAG 2011"
 ---
 # News/GMOD @ PAG 2011
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Paglogo.gif" width="114"
 height="107" alt="GMOD @ PAG 2011" />](../PAG_2011 "GMOD @ PAG 2011")
-
 
 GMOD will have a stronger presence then ever at the [Plant and Animal
 Genome Conference (PAG 2011)](../PAG_2011 "PAG 2011"), being held
@@ -101,10 +99,8 @@ area](#GMOD_Roadshow_in_San_Diego) during the meeting.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/01/08*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

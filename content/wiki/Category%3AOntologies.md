@@ -3,17 +3,14 @@ title: "Category%253AOntologies"
 ---
 # Category%253AOntologies
 
-
 An *ontology* is a controlled vocabulary plus semantics about how the
 terms in the controlled vocabulary relate to each other.
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> makes heavy
 use of ontologies.
 
-
 ## Pages in category "Ontologies"
 
 The following 4 pages are in this category, out of 4 total.
-
 
 ### C
 
@@ -27,7 +24,6 @@ The following 4 pages are in this category, out of 4 total.
 ### V
 
 - [Visualization](Visualization "Visualization")
-
 
 ## Media in category "Ontologies"
 
@@ -144,13 +140,4 @@ The following 5 files are in this category, out of 5 total.
   
 
   [Lapp.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/Lapp.pdf "File:Lapp.pdf")  
-  1.2 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Biology](Category%253ABiology "Category%253ABiology")
+  1.2 MB

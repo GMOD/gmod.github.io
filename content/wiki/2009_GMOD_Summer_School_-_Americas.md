@@ -3,7 +3,6 @@ title: "2009 GMOD Summer School - Americas"
 ---
 # 2009 GMOD Summer School - Americas
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -47,7 +46,6 @@ title="GMOD Summer School">GMOD Summer School</a> was offered in
 2009](2009_GMOD_Summer_School_-_Europe "2009 GMOD Summer School - Europe"),
 as part of [GMOD Europe 2009](GMOD_Europe_2009 "GMOD Europe 2009").
 
-
   Program](#Program)
 - [Instructors](#Instructors)
 - [Prerequisites](#Prerequisites)
@@ -56,14 +54,12 @@ as part of [GMOD Europe 2009](GMOD_Europe_2009 "GMOD Europe 2009").
 - [Cost](#Cost)
 - [Feedback](#Feedback)
 
-
 ## Program
 
 The program featured 4 full days of hands-on training starting with an
 overview of GMOD, and then covering the installation, configuration, and
 administration of several popular [GMOD
 Components](GMOD_Components "GMOD Components").
-
 
 The summer school GMOD component sessions are available as [online
 tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").
@@ -82,7 +78,6 @@ title="Apollo Tutorial">Apollo</a>,
 title="GBrowse syn Tutorial">GBrowse_syn</a>, and
 <a href="Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal</a>
-
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
 data-cellspacing="0">
@@ -358,25 +353,15 @@ Ends</td>
 
 ## Instructors
 
-| Instructor | GMOD Affiliation | Affiliation |
-|----|----|----|
-| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a> |
-| [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> |
-| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") developer | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a> |
-| [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") developer | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> |
-| [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") developer | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> |
-| [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") developer, [GBrowse](GBrowse.1 "GBrowse") developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> |
-| [Joshua Orvis](User%253AJorvis "User%253AJorvis") | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
-rel="nofollow">Institute for Genome Sciences</a> |
-| [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") developer | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> |
-| [Junjun Zhang](User%253AJunjun "User%253AJunjun") | [BioMart](BioMart "BioMart") developer | <a href="http://www.oicr.on.ca/" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text"
+rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") developer | <a href="http://www.genome.clemson.edu/" class="external text"
+rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") developer | <a href="http://www.utah.edu" class="external text"
+rel="nofollow">University of Utah</a> | [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") developer | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") developer, [GBrowse](GBrowse.1 "GBrowse") developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a> | [Joshua Orvis](User%253AJorvis "User%253AJorvis") | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
+rel="nofollow">Institute for Genome Sciences</a> | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") developer | <a href="http://berkeley.edu" class="external text"
+rel="nofollow">University of California, Berkeley</a> | [Junjun Zhang](User%253AJunjun "User%253AJunjun") | [BioMart](BioMart "BioMart") developer | <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">Ontario Institute for Cancer Research</a> |
 
 ## Prerequisites
@@ -398,9 +383,7 @@ as homework to be done prior to the course's start.**
 
 ### System Requirements
 
-|  |  |
-|----|----|
-| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
+|----|----| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a> | *Participants are required to bring their own laptops, already capable of running a VMware system image.* |
 
@@ -412,16 +395,13 @@ image in each succeeding session.
 
 VMware on Windows and Linux
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windoze" />
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 A free VMware player is available for [Microsoft
 Windows](Category%253AWindows "Category%253AWindows") and
@@ -437,11 +417,9 @@ VMware on Mac OS X
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 There is no free VMware player that runs *directly* under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
@@ -451,11 +429,9 @@ other options, *all of which require an Intel Mac*:
 
 VMware Fusion
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg" width="48"
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
-
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
 rel="nofollow">VMware Fusion</a> (\$80) allows you to run VMware images,
@@ -467,12 +443,10 @@ Fusion available for download.**
 
 Mac OS 10.5 (Leopard) and Boot Camp
 
-
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 rel="nofollow" title="Boot Camp"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/AppleBootCampLogo.jpg" width="48"
 height="60" alt="Boot Camp" /></a>
-
 
 The <a href="http://www.apple.com/macosx/" class="external text"
 rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
@@ -504,9 +478,7 @@ instructors.
 <a href="GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
-| No  | Yes, with reservations | Yes | No opinion |
-|-----|------------------------|-----|------------|
-| 0%  | 12%                    | 88% | 0%         |
+| No  | Yes, with reservations | Yes | No opinion |-----|------------------------|-----|------------| 0%  | 12%                    | 88% | 0%         |
 
   
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)

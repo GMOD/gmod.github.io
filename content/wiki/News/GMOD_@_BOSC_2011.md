@@ -3,13 +3,11 @@ title: "News/GMOD @ BOSC 2011"
 ---
 # News/GMOD @ BOSC 2011
 
-
 <a href="http://www.open-bio.org/wiki/BOSC_2011" rel="nofollow"
 title="GMOD @ BOSC 2011"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ad/BoscPear.png/100px-BoscPear.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ad/BoscPear.png/150px-BoscPear.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/BoscPear.png 2x"
 width="100" height="71" alt="GMOD @ BOSC 2011" /></a>
-
 
 A tentative schedule for the
 <a href="http://www.open-bio.org/wiki/BOSC_2011" class="external text"
@@ -32,10 +30,8 @@ Thanks,
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/21*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

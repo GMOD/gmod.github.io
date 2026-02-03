@@ -3,11 +3,9 @@ title: "Category%253ATurnkey"
 ---
 # Category%253ATurnkey
 
-
 ## Pages in category "Turnkey"
 
 The following 5 pages are in this category, out of 5 total.
-
 
 ### C
 
@@ -31,7 +29,6 @@ The following 5 pages are in this category, out of 5 total.
 ### T
 
 - [Turnkey](Turnkey "Turnkey")
-
 
 ## Media in category "Turnkey"
 
@@ -78,13 +75,4 @@ The following 2 files are in this category, out of 2 total.
 
   [Turnkey sept
   2003.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Turnkey_sept_2003.ppt "File:Turnkey sept 2003.ppt")  
-  155 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  155 KB

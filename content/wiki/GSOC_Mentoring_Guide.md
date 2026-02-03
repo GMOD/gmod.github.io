@@ -3,7 +3,6 @@ title: "GSOC Mentoring Guide"
 ---
 # GSOC Mentoring Guide
 
-
 For potential mentors: students work remotely and will typically
 communicate with you electronically. Students are expected to be
 self-motivated and responsible for getting work done. Your average time
@@ -21,7 +20,6 @@ project. Here's some questions you might want to answer:
 Include any instructions or information about communicating, e.g. your
 time zone.
 
-
   Guides</span>](#Resources_and_Guides)
 - [What makes a
   good GSoC Project?](#What_makes_a_good_GSoC_Project.3F)
@@ -29,7 +27,6 @@ time zone.
   format](#Project_idea_format)
 - [Name of the
   Project](#Name_of_the_Project)
-
 
 ### Resources and Guides
 

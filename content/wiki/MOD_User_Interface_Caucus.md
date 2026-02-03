@@ -3,7 +3,6 @@ title: "MOD User Interface Caucus"
 ---
 # MOD User Interface Caucus
 
-
 The user interface (UI) of a MOD is very important to usability. At the
 upcoming GMOD meeting (January 18-19 in San Diego at the Town and
 Country hotel), a day will be devoted to discussing the UIs implemented

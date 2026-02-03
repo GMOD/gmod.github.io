@@ -3,10 +3,8 @@ title: "News/GMOD @ Bioinformatics Australia"
 ---
 # News/GMOD @ Bioinformatics Australia
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/BA2009Logo.png" width="126"
 height="120" alt="GMOD workshop at Bioinformatics Australia" />](../BA2009 "GMOD workshop at Bioinformatics Australia")
-
 
 There will be a half-day [pre-conference GMOD
 workshop](../BA2009 "BA2009") on 28 October, 2009, at
@@ -36,10 +34,8 @@ rel="nofollow">contact the GMOD Help Desk</a> for more information.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

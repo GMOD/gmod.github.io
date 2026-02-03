@@ -3,7 +3,6 @@ title: "Chado Tutorial 2012"
 ---
 # Chado Tutorial 2012
 
-
 This <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 tutorial was presented by [Scott Cain](User%253AScott "User%253AScott") as part
 of the [2012 GMOD Summer
@@ -19,7 +18,6 @@ Chado is the database schema of the GMOD project. This session
 introduces database concepts, and then provides an overview of Chado's
 design and architecture, and then goes into detail about how to use a
 Chado database.
-
 
   Theory](#Theory)
   - [Introduction](#Introduction)
@@ -143,7 +141,6 @@ Chado database.
     Natural Diversity and Atlas
     Support](#Phenotype.2C_Natural_Diversity_and_Atlas_Support)
 
-
 ## Theory
 
 ### Introduction
@@ -204,11 +201,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
     large diverse dataset and organization
   
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Chado Tutorial
-2012](Special%253ABrowse/Chado-20Tutorial-202012 "Special%253ABrowse/Chado-20Tutorial-202012")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Chado "Special%253ASearchByProperty/Has-20topic/Chado")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | <a href="Chado" class="mw-redirect" title="Chado">Chado</a>  |

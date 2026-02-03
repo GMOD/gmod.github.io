@@ -3,25 +3,20 @@ title: "Category%253ATripal"
 ---
 # Category%253ATripal
 
-
 Pages related to [Tripal](Tripal.1 "Tripal"), a web front end to
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases.
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### T
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
-
 ## Pages in category "Tripal"
 
 The following 16 pages are in this category, out of 16 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -86,7 +81,6 @@ title="Template:TutorialList">Template:TutorialList</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Tripal"
 
@@ -271,13 +265,4 @@ The following 8 files are in this category, out of 8 total.
 
   [PeanutBase PAG2015
   Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")  
-  3.35 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  3.35 MB

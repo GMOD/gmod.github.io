@@ -3,7 +3,6 @@ title: "Talk:Chado Natural Diversity Module/natdiv schema changes call"
 ---
 # Talk:Chado Natural Diversity Module/natdiv schema changes call
 
-
 This is the place to discuss the issues we have with the phenotype
 module. We would like to revise it since currently the phenotype table
 does not address well post-composing terms.

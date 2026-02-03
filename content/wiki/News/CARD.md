@@ -3,7 +3,6 @@ title: "News/CARD"
 ---
 # News/CARD
 
-
 ## New Database Announcement
 
 The Michael G. DeGroote Institute for Infectious Disease Research and
@@ -20,10 +19,8 @@ annotation of new genomic and metagenomic DNA sequence information.
 
 Andrew McArthur
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/15*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

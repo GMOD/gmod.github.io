@@ -3,11 +3,9 @@ title: "News/Please Support EcoCyc"
 ---
 # News/Please Support EcoCyc
 
-
 <a href="http://ecocyc.org" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/BioCyc.gif" width="216" height="60"
 alt="EcoCyc website" /></a>
-
 
 <a href="http://ecocyc.org" class="external text" rel="nofollow">EcoCyc,
 the <em>E. coli</em> information resource</a> and one of the resources
@@ -61,6 +59,5 @@ available at
 class="external text" rel="nofollow">the Pathway Tools website</a>.
 
   
-
 
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/05/21*

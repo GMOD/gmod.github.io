@@ -3,11 +3,9 @@ title: "Category%253AGMODWeb"
 ---
 # Category%253AGMODWeb
 
-
 ## Pages in category "GMODWeb"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 ### G
 
@@ -22,7 +20,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [November 2007 GMOD
   Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
-
 
 ## Media in category "GMODWeb"
 
@@ -46,13 +43,4 @@ This category contains only the following file.
 
   [GMOD Web
   Update.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/GMOD_Web_Update.ppt "File:GMOD Web Update.ppt")  
-  288 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  288 KB

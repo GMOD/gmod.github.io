@@ -3,18 +3,15 @@ title: "GBrowse Persistent Variables"
 ---
 # GBrowse Persistent Variables
 
-
 [GBrowse](GBrowse.1 "GBrowse") uses a few persistent variables to store
 data for a user. The following is an explanation of the structure of the
 commonly-used ones:
-
 
   Session](#Session)
 - [State](#State)
 - [Querying the
   State Variable](#Querying_the_State_Variable)
 - [Globals](#Globals)
-
 
 # Session
 
@@ -108,7 +105,6 @@ To query the value of your state variables, copy and paste the [Named
 Subroutines](GBrowse_2.0_HOWTO#Named_Subroutine_References "GBrowse 2.0 HOWTO")
 below to a file called init_code.conf.
 
-
 ``` de1
 init_code=
     my $t = -1;
@@ -150,7 +146,6 @@ init_code=
     }
 ```
 
-
   
 In your GBrowse.conf file, use the include directive to import the named
 subroutines, by including the init_code.conf file in the \[GENERAL\]
@@ -158,9 +153,7 @@ section of the configuration file. Add a reference to the named
 subroutine queryStateVariables, assigning the return value to one of the
 html variables.
 
-
 Displaying the values of the \$state variable
-
 
     #include "path/to/init_code.conf"
 
@@ -185,9 +178,3 @@ subroutine so that the main GBrowse page appears normally.
 **\$globals** is essentially an object containing the
 <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse.conf</a> file.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse
-  Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")

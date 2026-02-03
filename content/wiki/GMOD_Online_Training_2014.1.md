@@ -3,42 +3,35 @@ title: "GMOD Online Training 2014"
 ---
 # GMOD Online Training 2014
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/300px-Gmod-online-training.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/450px-Gmod-online-training.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6f/Gmod-online-training.png 2x"
 width="300" height="235" alt="Gmod-online-training.png" />
-
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/150px-GitcLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/225px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/300px-GitcLogo.png 2x"
 width="150" height="86" alt="GMOD in the Cloud toolset" />](Cloud.1 "GMOD in the Cloud toolset")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/150px-ChadoLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/225px-ChadoLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/300px-ChadoLogo.png 2x"
 width="150" height="33" alt="Chado: Biological database schema" />](Chado "Chado: Biological database schema")
-
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/150px-GalaxyLogoBigger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/225px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/300px-GalaxyLogoBigger.png 2x"
 width="150" height="53" alt="Galaxy: Data analysis &amp; integration" />](Galaxy.1 "Galaxy: Data analysis & integration")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/150px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/225px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 2x"
 width="150" height="35" alt="GBrowse: Genome annotation viewer" />](GBrowse.1 "GBrowse: Genome annotation viewer")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/150px-GBrowse_syn_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/225px-GBrowse_syn_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/300px-GBrowse_syn_logo.png 2x"
 width="150" height="48" alt="GBrowse_syn: Synteny viewer" />](GBrowse_syn.1 "GBrowse_syn: Synteny viewer")
-
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/150px-JBrowseLogo.png"
@@ -46,26 +39,22 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="150" height="33"
 alt="JBrowse: Super-fast genome annotation viewer" />](JBrowse.1 "JBrowse: Super-fast genome annotation viewer")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/150px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/225px-TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/300px-TripalLogo.png 2x"
 width="150" height="45"
 alt="Tripal: website creation software and Chado interface" />](Tripal.1 "Tripal: website creation software and Chado interface")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/150px-MAKERLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/225px-MAKERLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/300px-MAKERLogo.png 2x"
 width="150" height="51" alt="MAKER: Genome annotation pipeline" />](MAKER.1 "MAKER: Genome annotation pipeline")
-
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/150px-WebApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/225px-WebApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png 2x"
 width="150" height="41"
 alt="WebApollo: browser-based annotation editor" />](WebApollo.1 "WebApollo: browser-based annotation editor")
-
 
 **Monday 19th May - Friday 23rd May 2014**
 
@@ -127,8 +116,3 @@ up for free.
 
 Attendees do not require any previous programming experience to attend
 the course.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")

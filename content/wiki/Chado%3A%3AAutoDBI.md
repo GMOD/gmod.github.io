@@ -3,13 +3,11 @@ title: "Chado%253A%253AAutoDBI"
 ---
 # Chado%253A%253AAutoDBI
 
-
   Description](#Description)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
 - [Contact](#Contact)
 - [Downloads](#Downloads)
-
 
 ## Description
 

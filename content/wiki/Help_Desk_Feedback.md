@@ -3,7 +3,6 @@ title: "Help Desk Feedback"
 ---
 # Help Desk Feedback
 
-
 If you have had a recent interaction with the [GMOD Help
 Desk](GMOD_Help_Desk "GMOD Help Desk"), please give us your feedback. We
 also welcome any general suggestions you have on how the Help Desk can
@@ -49,8 +48,3 @@ contact information</td>
 Thank you for your feedback. Your input will be used to improve the
 service offered by the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
 in the future.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

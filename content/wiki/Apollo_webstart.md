@@ -3,7 +3,6 @@ title: "Apollo webstart"
 ---
 # Apollo webstart
 
-
   Introduction](#Introduction)
 - [Building from
   source](#Building_from_source)
@@ -17,7 +16,6 @@ title: "Apollo webstart"
     the jar files](#Placing_the_jar_files)
   - [Creating
     jnlp files](#Creating_jnlp_files)
-
 
 ## Introduction
 

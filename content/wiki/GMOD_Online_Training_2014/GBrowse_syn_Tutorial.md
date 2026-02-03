@@ -3,7 +3,6 @@ title: "GMOD Online Training 2014/GBrowse syn Tutorial"
 ---
 # GMOD Online Training 2014/GBrowse syn Tutorial
 
-
 This tutorial on [GBrowse syn](../GBrowse_syn.1 "GBrowse syn") was
 taught by [Sheldon McKay](../User%253AMckays "User%253AMckays") as part of the
 [GMOD_Online_Training_2014](../GMOD_Online_Training_2014.1 "GMOD Online Training 2014").
@@ -23,9 +22,7 @@ browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species. It is included with
 the standard GBrowse package (version 1.69 and later).
 
-
 <a href="../File:Gbrowse_syn.png" class="image"></a>
-
 
 ## Further Reading
 

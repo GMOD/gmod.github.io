@@ -3,11 +3,9 @@ title: "Codefest 2020"
 ---
 # Codefest 2020
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/df/Palms.jpg" width="1052" height="218"
 alt="Palms.jpg" />
-
 
   
 
@@ -35,12 +33,10 @@ class="external text" rel="nofollow">Google Doc</a>. The codefest is
 open to anyone who'd like to work on any GMOD project (or, better yet,
 any combination of GMOD projects), including but not limited to
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/200px-EvoHackLaptops2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/300px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x"
 width="200" height="119" alt="GMOD Hackathon" />
-
 
 - [Tripal](Tripal.1 "Tripal")
 - <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
@@ -56,32 +52,15 @@ developers present.
 
 Thursday:
 
-|             |                                             |
-|-------------|---------------------------------------------|
-| 9:00-10:00  | Introduction and working group organization |
-| 10:00-12:00 | Working groups                              |
-| 12:00-1:30  | Lunch (on your own)                         |
-| 1:30-4:00   | Working groups                              |
-| 4:00-5:00   | Report on progress                          |
+|-------------|---------------------------------------------| 9:00-10:00  | Introduction and working group organization | 10:00-12:00 | Working groups                              | 12:00-1:30  | Lunch (on your own)                         | 1:30-4:00   | Working groups                              | 4:00-5:00   | Report on progress                          |
 
 Friday:
 
-|            |                     |
-|------------|---------------------|
-| 9:00-12:00 | Working groups      |
-| 12:00-1:30 | Lunch (on your own) |
-| 1:30-3:00  | Working groups      |
-| 3:00-3:45  | Report on progress  |
+|------------|---------------------| 9:00-12:00 | Working groups      | 12:00-1:30 | Lunch (on your own) | 1:30-3:00  | Working groups      | 3:00-3:45  | Report on progress  |
 
 - Note: the Tripal steering committee will meet on Friday from 12:00 -
   3:00 pm at the Postcard Bistro in the Handlery.
 
   
 
-
 *Posted to the [GMOD News](GMOD_News "GMOD News") on 2020/01/08*
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [News Items](Category%253ANews_Items "Category%253ANews Items")

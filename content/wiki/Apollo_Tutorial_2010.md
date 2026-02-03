@@ -3,15 +3,12 @@ title: "Apollo Tutorial 2010"
 ---
 # Apollo Tutorial 2010
 
-
   
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
 width="250" height="91" alt="Apollo" />
-
 
 This [Apollo](Apollo.1 "Apollo") tutorial was presented by [Ed
 Lee](User%253AElee "User%253AElee") at the [2010 GMOD Summer School -
@@ -21,7 +18,6 @@ May 2010. The most recent Apollo tutorial can be found at the
 title="Apollo Tutorial">Apollo Tutorial</a> page.
 
   
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -61,7 +57,6 @@ title="Apollo Tutorial">Apollo Tutorial</a> page.
 - [Writing Custom
   Data Adapters](#Writing_Custom_Data_Adapters)
 
-
 ## VMware
 
 This tutorial was taught using a VMware system image
@@ -78,13 +73,9 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |
-|---------|----------|------------------|
-| Shell   | gmod     | gmodamericas2010 |
-| MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
 
 ## Caveats
-
 
 **Important Note**
 
@@ -94,7 +85,6 @@ that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
 
 ## Introduction
 
@@ -110,11 +100,9 @@ and the results often require manual updating from expert biologists.
 That is where Apollo comes in. Apollo is a sequence annotation editor
 and will allow you to create and edit annotations.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/Annotation-workflow.jpg" width="585"
 height="196" alt="Annotation workflow" />
-
 
 ### Architecture
 
@@ -123,11 +111,9 @@ Apollo is setup in a 3-tier architecture, with a presentation
 configurable, with most users configuring the presentation and data
 layers.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/Architecture.jpg" width="290" height="296"
 alt="Apollo architecture" />
-
 
 #### Presentation Layer
 
@@ -163,13 +149,7 @@ You can download OS-specific pre-built installer packages from the
 class="external text" rel="nofollow">Apollo installer page</a>. We
 provide the following installers:
 
-| Platform | Optionally bundled [JRE](Glossary#JRE "Glossary") |
-|----------|---------------------------------------------------|
-| Windows  | Yes                                               |
-| Mac OS X | No                                                |
-| Linux    | Yes                                               |
-| Solaris  | Yes (x86 version)                                 |
-| Unix     | No                                                |
+| Platform | Optionally bundled [JRE](Glossary#JRE "Glossary") |----------|---------------------------------------------------| Windows  | Yes                                               | Mac OS X | No                                                | Linux    | Yes                                               | Solaris  | Yes (x86 version)                                 | Unix     | No                                                |
 
 Since we're installing it on our Linux virtual machine, we'll use the
 Linux version. Java has already been setup in these machines, so we'll
@@ -232,11 +212,9 @@ our data, we can't use the **gene** option. Select **contig** in
 **Select a region to display**. Let's look at **scf1117875582023** in
 the region between **523000** and **532000**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d4/Chado-adapter.jpg" width="519"
 height="406" alt="Chado adapter" />
-
 
 Tip: If you want to load the whole genomic region from
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> into Apollo,
@@ -245,14 +223,11 @@ useful so that you don't need to know the exact length of the sequence
 being loaded. Keep in mind that Apollo has a large memory footprint, so
 you probably want to keep the loaded regions to less than 500kb.
 
-
 Once loading is complete, we'll see the main Apollo window.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/Apollo-main-window.jpg" width="810"
 height="585" alt="Apollo main window" />
-
 
 The panels with the aqua background are for annotations and those with
 the black background are for computational results. The white box in the
@@ -269,43 +244,35 @@ with all of the exons. So to select all of the exons, we just need to
 **double left-click on one**. You'll notice that all the exons have a
 red border around them.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/Apollo-no-genes.jpg" width="810"
 height="585" alt="Apollo with evidence model selected" />
-
 
 Now that they're all selected, to create a new gene it's as easy as just
 dragging and dropping into the annotation panel. Voila! We have a new
 gene, `GMOD:temp1`, with transcript `GMOD:temp1-transcript1`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/Apollo-with-genes.jpg" width="810"
 height="585" alt="Apollo with a single gene model" />
-
 
 OK, let's try this again with another model. Let's do the same with
 `snap_masked-scf1117875582023-abinit-gene-5.17-mRNA-1_4016` (man, that's
 a long name!). We can see that the transcript belongs to a new gene,
 `GMOD:temp2`. Makes sense, it's a obviously a separate gene.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Apollo-with-two-genes.jpg" width="810"
 height="585" alt="Apollo with two gene models" />
-
 
 But what if we were create a new feature from
 `genemark_masked-scf1117875582023-abinit-gene-5.70-mRNA-1_4284`? Let's
 find out. Whoa! We can see that this new transcript was created as part
 of `GMOD:temp2`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Apollo-with-two-genes-splice-variants.jpg"
 width="810" height="585" alt="Apollo with splice variants" />
-
 
 That's great, as it looks as it's a splice variant, rather than a whole
 new gene. So is this always the case? After all, there are overlapping
@@ -331,20 +298,16 @@ Let's make sure that our
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> connectivity
 is working. Let's save our work using **File → Save as...**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f8/File-save-as.jpg" width="217" height="198"
 alt="File → Save as..." />
 
-
 Make sure that `Chado database` is selected at the data source (should
 already be).
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/14/Chado-save-dialog.jpg" width="519"
 height="406" alt="Chado save dialog" />
-
 
 You'll notice that the IDs have changed. This is because the GMOD naming
 adapter follows the convention that all newly created features should
@@ -354,11 +317,9 @@ and save that, this ID replacement will not take place.
 
 Let's reload the data with **File → Open new...**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/File-open-new.jpg" width="215"
 height="198" alt="File → Open new..." />
-
 
 Again, make sure that `Chado database` is the selected data source
 (should already be). You'll notice that all the information we put in
@@ -370,20 +331,16 @@ Let's say that we want to change the gene ID to something more
 interesting. We can do so by selecting an exon in our feature, and then
 **right click → Annotation Info Editor...**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/Annotation-editor-popup-menu.jpg"
 width="233" height="162" alt="Annotation editor popup menu" />
 
-
 We can see that we can add lots of interesting information for our gene
 and transcript.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/Annotation-editor.jpg" width="497"
 height="339" alt="Annotation editor" />
-
 
 Let's go ahead and change the gene symbol to something else. We can see
 that this change affects all the transcripts. Just as we'd expect.
@@ -395,11 +352,9 @@ Let's take a look at merging exons. Select the 2 exons that you want to
 merge (hold down `shift` to allow you select multiple items), right
 click, and choose `Merge exons`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Merge-exons-popup-menu.jpg" width="516"
 height="225" alt="Merge exons popup menu" />
-
 
 Alright, it does what we'd expect it to do.
 
@@ -411,11 +366,9 @@ But let's say that upon closer inspection, this is not what we wanted.
 We can `undo` any changes we've made! We can undo our merge with **Edit
 → Undo**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/Edit-undo.jpg" width="100" height="147"
 alt="Edit → Undo" />
-
 
 Wow, lookie here, it split the exons again. Although this looks to be a
 trivial operation, it's actually very complex, as one single change can
@@ -432,29 +385,23 @@ guide - the ID in your data might be different). Double-click on an exon
 to select the whole model. Right-click on the selected feature and
 choose `Analyze region`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Analyze-region-popup-menu.jpg" width="298"
 height="387" alt="Analyze region popup menu" />
 
-
 The `Run analysis` window will show up.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Run-analysis.jpg" width="710" height="565"
 alt="Run analysis" />
 
-
 We see there is a tab for `NCBI-BLAST` and `NCBI Primer-BLAST`. We'll
 just run `BLAST` for now. We have a pull-down menu for `BLAST type` and
 can select `blastn`, `blastx`, and `tblastx`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Blast-types.jpg" width="454" height="57"
 alt="BLAST types" />
-
 
 Let's run a `blastx` search. There are a number of options for running
 `BLAST` and post processing options. The post processing options are
@@ -473,11 +420,9 @@ following options:
 We can leave the default values for those options. Click **Run** to run
 the analysis. After a few seconds, a popup window will appear.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/Analysis-expected-time.jpg" width="462"
 height="185" alt="Analysis expected submission time" />
-
 
 This gives us the estimated time before our analysis starts running (as
 estimated by the NCBI servers). Note that this is the estimated time for
@@ -486,21 +431,17 @@ completed. Checking for analysis completion all take place in the
 background, so you can feel free to continue working as usual. You will
 be notified when the analysis is complete.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/Analysis-complete.jpg" width="287"
 height="185" alt="Analysis complete" />
-
 
 The new analysis will appear in the results panel and since we ran
 `blastn` against the nr database, the type for the result is
 `blastx:nr`.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Blastx-results.jpg" width="177"
 height="40" alt="blastn results" />
-
 
 One last thing worth mentioning is the `Exon Detail Editor`. It allows
 you to make edits to your models at the base level. The
@@ -563,19 +504,15 @@ the parameter. `//` is also used for comments and everything following
 it (up to the new line) will be ignored. There's a GUI for setting up
 the most common options. You can access it from **Edit → Preferences**.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c5/Edit-preferences.jpg" width="147"
 height="160" alt="Edit -&gt; Preference" />
 
-
 Make sure that the `Style` tab is selected.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Style-wizard.jpg" width="546" height="516"
 alt="Style wizard" />
-
 
 Be aware that the GUI only supports a subset of all the options
 supported. This was done as to not overwhelm users with overly complex
@@ -634,11 +571,9 @@ long! Craziness. Luckily we've also recently added a GUI for setting the
 most useful options. You can access it by clicking **Edit →
 Preferences** and selecting the **Types** tab.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/Types-wizard.jpg" width="576" height="546"
 alt="Types wizard" />
-
 
 If you need to change something not supported by the GUI, you'll have to
 edit the file by hand. You can learn more about the configuration
@@ -665,7 +600,6 @@ contains a `<chado-adapter>` root element, with at least one
 `chadoInstance` child element and at least one `chadodb` element. The
 skeleton for the XML file will look something like this:
 
-
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
 <chado-adapter>
@@ -679,12 +613,10 @@ skeleton for the XML file will look something like this:
 </chado-adapter>
 ```
 
-
 #### chadoInstance Element
 
 You'll need at least one `chadoInstance` element. It will look something
 like this:
-
 
 ``` de1
 <chadoInstance id="gmodSummerSchoolInstance" default="true">
@@ -759,7 +691,6 @@ like this:
 </chadoInstance>
 ```
 
-
 #### chadodb Element
 
 You'll need at least one `<chadodb>` element. It contains information to
@@ -767,7 +698,6 @@ connect to the database. Each `<chadodb>` element will have a
 `<chadoInstance>` associated with it. You'll need one `<chadodb>`
 element for each database you want to connect to (you can have multiple
 ones). The XML will look something like this:
-
 
 ``` de1
 <chadodb>
@@ -798,7 +728,6 @@ ones). The XML will look something like this:
  
 </chadodb>
 ```
-
 
 ## Setting Up a Custom WebStart Instance
 
@@ -840,7 +769,6 @@ So traditionally, setting up a WebStart instance is quite a bit of work.
 Luckily, we have a very nice Perl script that does a lot of the magic
 for us! Before we can use this script, we'll need to look at the
 template XML file that is used for this script.
-
 
 ``` de1
 <?xml version="1.0" encoding="UTF-8"?>
@@ -913,7 +841,6 @@ template XML file that is used for this script.
   </webserver>
 </webstart>
 ```
-
 
 The nice thing about this template is that you only need to set it up
 once (assuming you're not changing the URL or any other option).
@@ -1008,18 +935,7 @@ can also view the
 <a href="http://apollo.berkeleybop.org/current/javadoc"
 class="external text" rel="nofollow">Apollo Javadoc API</a>.
 
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Apollo](Category%253AApollo "Category%253AApollo")
-
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[Apollo Tutorial
-2010](Special%253ABrowse/Apollo-20Tutorial-202010 "Special%253ABrowse/Apollo-20Tutorial-202010")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
-|  |  |
-|----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Apollo "Special%253ASearchByProperty/Has-20topic/Apollo")</span> |
+|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo")  |

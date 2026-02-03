@@ -3,17 +3,13 @@ title: "ISGA"
 ---
 # ISGA
 
-
 Status
-
 
 - **Mature** release
 - **Active** development
 - **Active** support
 
-
 Resources
-
 
 - <a href="http://isga.cgb.indiana.edu/" class="external text"
   rel="nofollow">Home Page</a>
@@ -31,13 +27,11 @@ Resources
 - <a href="http://sourceforge.net/projects/isga/develop"
   class="external text" rel="nofollow">Source</a>
 
-
 <a href="http://isga.cgb.indiana.edu/" rel="nofollow"
 title="ISGA at the Center for Genomics and Bioinformatics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/ISGAHomePageThumb.png" width="202"
 height="143"
 alt="ISGA at the Center for Genomics and Bioinformatics" /></a>
-
 
 <a href="http://isga.cgb.indiana.edu/" class="external text"
 rel="nofollow">Integrated Services for Genomic Analysis (ISGA)</a> is a
@@ -99,9 +93,6 @@ used for prokarytic annotation and assembly.
 
 ## Mailing List
 
-|  |  |  |  |
-|----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
+|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
 class="external text" rel="nofollow">isga-users</a> | **ISGA** support, development, and announcements mailing list | <a href="http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html"
 class="external text" rel="nofollow">Nabble</a> |

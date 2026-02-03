@@ -3,14 +3,11 @@ title: "Category%253AChado"
 ---
 # Category%253AChado
 
-
 About Chado, installing Chado, and all related Chado documentation.
-
 
 ## Subcategories
 
 This category has the following 3 subcategories, out of 3 total.
-
 
 ### C
 
@@ -19,11 +16,9 @@ This category has the following 3 subcategories, out of 3 total.
 - [Chado
   Presentations](Category%253AChado_Presentations "Category%253AChado Presentations")
 
-
 ## Pages in category "Chado"
 
 The following 77 pages are in this category, out of 77 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -249,7 +244,6 @@ HOWTO</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Chado"
 

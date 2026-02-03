@@ -203,11 +203,7 @@ For example, for orthology, paralogy group identifiers; could also be
 used for NCBI taxonomy; for sequences, refer to phylonode_feature,
 feature associated dbxrefs.
 
-| FK                                                        | Name                | Type    | Description         |
-| --------------------------------------------------------- | ------------------- | ------- | ------------------- |
-|                                                           | phylonode_dbxref_id | serial  | _PRIMARY KEY_       |
-| [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id        | integer | _UNIQUE#1 NOT NULL_ |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")       | dbxref_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phylonode_dbxref_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")       | dbxref_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylonode_dbxref Structure
 
@@ -269,11 +265,7 @@ phylonode_organism Structure
 
 ## Table: phylonode_pub
 
-| FK                                                        | Name             | Type    | Description         |
-| --------------------------------------------------------- | ---------------- | ------- | ------------------- |
-|                                                           | phylonode_pub_id | serial  | _PRIMARY KEY_       |
-| [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylonode_pub_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylonode_pub Structure
 
@@ -285,14 +277,7 @@ This is for relationships that are not strictly hierarchical; for
 example, horizontal gene transfer. Most phylogenetic trees are strictly
 hierarchical, nevertheless it is here for completeness.
 
-| FK                                                        | Name                      | Type    | Description         |
-| --------------------------------------------------------- | ------------------------- | ------- | ------------------- |
-|                                                           | phylonode_relationship_id | serial  | _PRIMARY KEY_       |
-| [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | subject_id                | integer | _UNIQUE#1 NOT NULL_ |
-| [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | object_id                 | integer | _UNIQUE#1 NOT NULL_ |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | type_id                   | integer | _UNIQUE#1 NOT NULL_ |
-|                                                           | rank                      | integer |                     |
-| [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id              | integer | _NOT NULL_          |
+| FK                                                        | Name                      | Type    | Description         | --------------------------------------------------------- | ------------------------- | ------- | ------------------- |                                                           | phylonode_relationship_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | subject_id                | integer | _UNIQUE#1 NOT NULL_ | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | object_id                 | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | type_id                   | integer | _UNIQUE#1 NOT NULL_ |                                                           | rank                      | integer | [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id              | integer | _NOT NULL_          |
 
 phylonode_relationship Structure
 
@@ -441,11 +426,7 @@ Tables referencing this one via Foreign Key Constraints:
 Tracks citations global to the tree e.g. multiple sequence alignment
 supporting tree construction.
 
-| FK                                                        | Name             | Type    | Description         |
-| --------------------------------------------------------- | ---------------- | ------- | ------------------- |
-|                                                           | phylotree_pub_id | serial  | _PRIMARY KEY_       |
-| [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id     | integer | _UNIQUE#1 NOT NULL_ |
-| [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylotree_pub_id | serial  | _PRIMARY KEY_       | [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylotree_pub Structure
 

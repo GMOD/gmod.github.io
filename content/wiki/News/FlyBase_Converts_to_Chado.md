@@ -3,7 +3,6 @@ title: "News/FlyBase Converts to Chado"
 ---
 # News/FlyBase Converts to Chado
 
-
 This summer, FlyBase [finished its
 reimplementation](../June_2007_Progress_Report#Chado.2FFlyBase "June 2007 Progress Report")
 using <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
@@ -26,10 +25,8 @@ rel="nofollow">ftp://ftp.flybase.net/releases/current/psql/</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/09/01*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

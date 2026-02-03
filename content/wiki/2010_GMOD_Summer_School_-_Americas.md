@@ -3,7 +3,6 @@ title: "2010 GMOD Summer School - Americas"
 ---
 # 2010 GMOD Summer School - Americas
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -32,13 +31,11 @@ Durham, NC, USA</span><br />
 
   
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6e/2010GMODSummerSchoolAmParticipants.jpg/500px-2010GMODSummerSchoolAmParticipants.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6e/2010GMODSummerSchoolAmParticipants.jpg/750px-2010GMODSummerSchoolAmParticipants.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/2010GMODSummerSchoolAmParticipants.jpg 2x"
 width="500" height="149"
 alt="2010GMODSummerSchoolAmParticipants.jpg" />
-
 
   
 The ***2010 GMOD Summer School - Americas*** was held 6-9 May at the
@@ -58,7 +55,6 @@ Tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").**
 
   
 
-
   Applications](#Applications)
 - [Program](#Program)
 - [Instructors](#Instructors)
@@ -74,7 +70,6 @@ Tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").**
 - [Travel,
   Lodging and Food](#Travel.2C_Lodging_and_Food)
 - [Feedback](#Feedback)
-
 
 ## Applications
 
@@ -322,27 +317,17 @@ Ends</td>
 
 ## Instructors
 
-| Instructor | GMOD Affiliation | Affiliation |
-|----|----|----|
-| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a> |
-| [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> |
-| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a> |
-| [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> |
-| [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> |
-| [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), [GBrowse](GBrowse.1 "GBrowse") | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> |
-| [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> |
-| [James Taylor](User%253AJamesTaylor "User%253AJamesTaylor") | [Galaxy](Galaxy.1 "Galaxy") | <a href="http://www.emory.edu" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
+rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.genome.clemson.edu/" class="external text"
+rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"
+rel="nofollow">University of Utah</a> | [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), [GBrowse](GBrowse.1 "GBrowse") | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a> | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
+rel="nofollow">University of California, Berkeley</a> | [James Taylor](User%253AJamesTaylor "User%253AJamesTaylor") | [Galaxy](Galaxy.1 "Galaxy") | <a href="http://www.emory.edu" class="external text"
 rel="nofollow">Emory University</a> |
 
 ## Prerequisites
-
 
 *The course requires a minimal level of Linux systems administration
 knowledge* (see [Computing
@@ -360,14 +345,11 @@ GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
 GBrowse data.* This also requires installing Apache, and
 [BioPerl](BioPerl "BioPerl") and all its dependencies.
 
-
 ## System Requirements
-
 
 <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a>
-
 
 <span style="font-size: 110%">**Participants are required to bring their
 own laptops, already capable of running a VMware system
@@ -379,16 +361,13 @@ image in each succeeding session.
 
 ### VMware on Windows and Linux
 
-
 <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a>
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 A free VMware player is available for [Microsoft
 Windows](Category%253AWindows "Category%253AWindows") and
@@ -403,11 +382,9 @@ on your laptop.
 
 ### VMware on Mac OS X
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
@@ -415,11 +392,9 @@ There is no free VMware player that runs *directly* under [Mac OS
 X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
 other options, **all of which require an Intel Mac**:
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a>
-
 
 VMware Fusion
 
@@ -433,11 +408,9 @@ VMware images (as well as Windows and Linux) under Mac OS. **We
 recommend this option for Mac users. There is a fully functional, 30 day
 free trial version of VMware Fusion available for download.**
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" />
-
 
 VirtualBox
 
@@ -462,12 +435,10 @@ This course is *free* thanks to
 
 ## Sponsor
 
-
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/140px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="140" height="130" alt="NESCent" /></a>
-
 
 We would like to thank the
 <a href="http://nescent.org" class="external text"
@@ -615,9 +586,7 @@ overall.</strong></td>
 </tbody>
 </table>
 
-
 *Comments on the 2010 GMOD Summer School - Americas*
-
 
 <table data-cellspacing="2"
 style="text-align: center; line-height: 130%">
@@ -632,21 +601,16 @@ style="text-align: center; line-height: 130%">
 <em>“I would whole-heartedly recommend this course to others! It was
 extremely informative.”</em>
 
-
 <em>“Overall it was exceptional.”</em>
 
-
 “Great job!”
-
 
 <em>“Overall this course was essential for me to be able to go forward
 and implement the GMOD tools.”</em>
 
-
 “Instructors and participants were all bright, articulate, and
 interesting. The days were long but the pace was reasonable. Overall,
 this was one of the best ongoing education experiences I have ever had.”
-
 
 “The speakers were really good.”
 </td>
@@ -654,20 +618,15 @@ this was one of the best ongoing education experiences I have ever had.”
 <td>
 <em><strong>“It was an amazing course.”</strong></em>
 
-
 “The amount of information presented was terrific and the online course
 material was very well done. I learned a lot!”
 
-
 <em>“It was definitely a very informative course.”</em>
-
 
 <strong>“This class held me riveted for 4 days straight.”</strong>
 
-
 “Really good organization and atmosphere. I loved the use of the wiki
 and the idea of building up a community. You are doing a great job!”
-
 
 “Having the wiki ROCKS.”
 </td>

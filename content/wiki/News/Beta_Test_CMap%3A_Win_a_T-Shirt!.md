@@ -3,19 +3,16 @@ title: "News/Beta Test CMap: Win a T-Shirt!"
 ---
 # News/Beta Test CMap: Win a T-Shirt!
 
-
 UPDATE: We have our winners. Even still, please feel free to give the
 release candidate a try and let us know how it goes.
 
 We need beta testers for the [CMap](../CMap.1 "CMap") 1.0 release
 candidate.
 
-
 <a href="http://www.cafepress.com/genericmod.238973590" rel="nofollow"
 title="GMOD T Shirt"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/TShirtThumb.jpg" width="150"
 height="150" alt="GMOD T Shirt" /></a>
-
 
   
 
@@ -55,10 +52,8 @@ rel="nofollow">faga.cshl@gmail.com</a>
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/11*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

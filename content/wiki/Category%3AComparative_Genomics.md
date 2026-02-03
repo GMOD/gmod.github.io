@@ -3,14 +3,11 @@ title: "Category%253AComparative Genomics"
 ---
 # Category%253AComparative Genomics
 
-
 GMOD pages related to comparative genomics / synteny.
-
 
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 ### G
 
@@ -20,11 +17,9 @@ This category has the following 2 subcategories, out of 2 total.
 
 - [Sybil](Category%253ASybil "Category%253ASybil")
 
-
 ## Pages in category "Comparative Genomics"
 
 The following 14 pages are in this category, out of 14 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -84,7 +79,6 @@ Genomics Data</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "Comparative Genomics"
 
@@ -462,13 +456,4 @@ The following 16 files are in this category, out of 16 total.
   
 
   [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")  
-  14.44 MB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Biology](Category%253ABiology "Category%253ABiology")
+  14.44 MB

@@ -3,12 +3,10 @@ title: "News/Comparative Genomics Workshop"
 ---
 # News/Comparative Genomics Workshop
 
-
 <a href="http://www.molecularevolution.org/workshops/WCG" rel="nofollow"
 title="Workshop on Comparative Genomics"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/CeskyKrumlov.jpg" width="170"
 height="133" alt="Workshop on Comparative Genomics" /></a>
-
 
 The <a href="http://www.molecularevolution.org/workshops/WCG"
 class="external text" rel="nofollow">Workshop on Comparative
@@ -38,10 +36,8 @@ being held immediately after.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/03*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

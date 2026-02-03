@@ -3,7 +3,6 @@ title: "GBrowse PAG 2010 Workshop"
 ---
 # GBrowse PAG 2010 Workshop
 
-
 <table
 style="font-size: 140%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
 data-cellpadding="10">
@@ -39,7 +38,6 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
 
   
 
-
   Overview](#Overview)
 - [Tutorial
   Level](#Tutorial_Level)
@@ -54,7 +52,6 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
 - [Other GMOD
   Presentations and
   Meetings](#Other_GMOD_Presentations_and_Meetings)
-
 
   
 

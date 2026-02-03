@@ -3,7 +3,6 @@ title: "Community Annotation System"
 ---
 # Community Annotation System
 
-
 This is placeholder page for the community annotation system information
 page. The live version of the CAS is running at
 <a href="http://cas.gmod.org/" class="external free"

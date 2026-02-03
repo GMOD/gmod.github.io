@@ -3,7 +3,6 @@ title: "Category%253AFAQ"
 ---
 # Category%253AFAQ
 
-
 Frequently Asked Questions and Definitions.
 
 See also:
@@ -11,11 +10,9 @@ See also:
 - [Glossary](Glossary "Glossary")
 - [Category%253AHOWTO](Category%253AHOWTO "Category%253AHOWTO")
 
-
 ## Pages in category "FAQ"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### C
 
@@ -31,8 +28,3 @@ The following 6 pages are in this category, out of 6 total.
 
 - [Mage FAQ](Mage_FAQ "Mage FAQ")
 - [MOD](MOD "MOD")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

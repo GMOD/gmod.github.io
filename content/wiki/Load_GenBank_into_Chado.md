@@ -3,7 +3,6 @@ title: "Load GenBank into Chado"
 ---
 # Load GenBank into Chado
 
-
   Abstract](#Abstract)
 - [Summary](#Summary)
 - [Fetch Genbank
@@ -15,7 +14,6 @@ title: "Load GenBank into Chado"
 - [Possible
   Errors](#Possible_Errors)
 - [Authors](#Authors)
-
 
 ## Abstract
 

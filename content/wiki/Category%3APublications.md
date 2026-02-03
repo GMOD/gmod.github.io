@@ -3,14 +3,11 @@ title: "Category%253APublications"
 ---
 # Category%253APublications
 
-
 Publications related to GMOD.
-
 
 ## Pages in category "Publications"
 
 The following 2 pages are in this category, out of 2 total.
-
 
 ### N
 
@@ -20,7 +17,6 @@ The following 2 pages are in this category, out of 2 total.
 ### P
 
 - [Publications](Publications "Publications")
-
 
 ## Media in category "Publications"
 
@@ -251,13 +247,4 @@ The following 10 files are in this category, out of 10 total.
   
 
   [Gkl777.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/Gkl777.pdf "File:Gkl777.pdf")  
-  401 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")
+  401 KB

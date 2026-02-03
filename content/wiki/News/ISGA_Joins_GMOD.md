@@ -3,10 +3,8 @@ title: "News/ISGA Joins GMOD"
 ---
 # News/ISGA Joins GMOD
 
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/ISGAHomePageThumb.png" width="202"
 height="143" alt="ISGA" />](../ISGA "ISGA")
-
 
 [ISGA](../ISGA "ISGA"), Integrative Services for Genomic Analysis, is
 now a part of GMOD. ISGA is a biologist-friendly web interface for
@@ -43,10 +41,8 @@ class="external text" rel="nofollow">mailing list</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/23*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

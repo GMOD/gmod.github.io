@@ -3,7 +3,6 @@ title: "News/CMap 1.0 Released"
 ---
 # News/CMap 1.0 Released
 
-
 Version 1.0 of CMap has been released.
 
 You can get the new version from SourceForge, <a
@@ -29,10 +28,8 @@ Ben
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/28*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

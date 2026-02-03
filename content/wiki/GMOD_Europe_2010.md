@@ -3,7 +3,6 @@ title: "GMOD Europe 2010"
 ---
 # GMOD Europe 2010
 
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -112,7 +111,6 @@ and <a href="BioMart_Workshop_-_GMOD_Europe_2010"
 title="BioMart Workshop - GMOD Europe 2010">BioMart Workshop</a> were
 free.</p></td>
 <td>
-
 
 <h2 id="contents">Contents</h2>
 
@@ -282,12 +280,10 @@ Informatics</span></td>
 </tbody>
 </table>
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/200px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
 width="200" height="171" alt="September 2010 GMOD Meeting" />](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
-
 
 ### 13-14 September: [September 2010 GMOD Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
 
@@ -324,12 +320,10 @@ page for more.
 
 ### 15 September: [InterMine Workshop](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 2010")
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/200px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/300px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/InterMineLogo.png 2x"
 width="200" height="25" alt="InterMine Workshop" />](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop")
-
 
 There was a one day [InterMine
 Workshop](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 2010")
@@ -352,12 +346,10 @@ See the [InterMine Workshop
 Page](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 2010")
 for details.
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/200px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
 width="200" height="79" alt="BioMart Workshop" />](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop")
-
 
 ### 16 September: [BioMart Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010")
 

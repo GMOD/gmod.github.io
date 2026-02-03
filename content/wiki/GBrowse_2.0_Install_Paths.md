@@ -3,7 +3,6 @@ title: "GBrowse 2.0 Install Paths"
 ---
 # GBrowse 2.0 Install Paths
 
-
 Gbrowse 2.0 typically installs in several different locations. If, for
 whatever reason, you need to do a manual clean uninstall of all Gbrowse
 files, you need to clear the following directories. Note that depending
@@ -23,8 +22,3 @@ for instance), the paths may be different.
   (anything in the source /cgi-bin/ directory).
 - **/var/tmp/gbrowse2/**: Temporary files like sessions, user data,
   images, etc.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")

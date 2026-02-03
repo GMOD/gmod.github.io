@@ -3,7 +3,6 @@ title: "User%253AColin Diesh"
 ---
 # User%253AColin Diesh
 
-
 Computer Science MS student interested in bioinformatics
 
 Attendee of the GMOD summer school 2013 (Duke University)

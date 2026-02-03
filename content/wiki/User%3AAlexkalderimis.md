@@ -3,7 +3,6 @@ title: "User%253AAlexkalderimis"
 ---
 # User%253AAlexkalderimis
 
-
 # Alex Kalderimis
 
 Alex is a software developer in the InterMine group at the University of

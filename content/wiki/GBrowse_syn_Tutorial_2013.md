@@ -3,7 +3,6 @@ title: "GBrowse syn Tutorial 2013"
 ---
 # GBrowse syn Tutorial 2013
 
-
 This tutorial on [GBrowse syn](GBrowse_syn.1 "GBrowse syn") was taught
 by [Sheldon McKay](User%253AMckays "User%253AMckays") as part of the [2013 GMOD
 Summer School](2013_GMOD_Summer_School "2013 GMOD Summer School").
@@ -22,7 +21,6 @@ The starting image for this tutorial is **2013 GMOD start day 4
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species. It is included with
 the standard GBrowse package (version 1.69 and later).
-
 
 ## Further Reading
 

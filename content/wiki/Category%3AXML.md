@@ -3,26 +3,21 @@ title: "Category%253AXML"
 ---
 # Category%253AXML
 
-
 Pages that deal significantly with [XML](Glossary#XML "Glossary"). XML
 is commonly used in
 [Middleware](Category%253AMiddleware "Category%253AMiddleware").
-
 
 ## Subcategories
 
 This category has only the following subcategory.
 
-
 ### X
 
 - [XORT](Category%253AXORT "Category%253AXORT")
 
-
 ## Pages in category "XML"
 
 The following 8 pages are in this category, out of 8 total.
-
 
 <table style="width: 100%;">
 <colgroup>
@@ -64,7 +59,6 @@ data</a></li>
 </tr>
 </tbody>
 </table>
-
 
 ## Media in category "XML"
 
@@ -110,13 +104,4 @@ The following 2 files are in this category, out of 2 total.
   
 
   [Chado-XML-overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Chado-XML-overview.pdf "File:Chado-XML-overview.pdf")  
-  19 KB  
-
-  
-
-  
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Computing](Category%253AComputing "Category%253AComputing")
+  19 KB

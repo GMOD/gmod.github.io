@@ -3,12 +3,10 @@ title: "News/FlyBase Bioinformatics Engineer"
 ---
 # News/FlyBase Bioinformatics Engineer
 
-
 <a href="../File:Fly_logo.png" class="image" title="FlyBase"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e0/Fly_logo.png/200px-Fly_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png 2x"
 width="200" height="49" alt="FlyBase" /></a>
-
 
 Please see the
 <a href="http://flybase.org/static_pages/news/positions.html"
@@ -41,10 +39,8 @@ coordination with developers there will also be required.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/14*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

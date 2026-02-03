@@ -3,13 +3,11 @@ title: "Print-wiki-tables"
 ---
 # Print-wiki-tables
 
-
 The process described on this page is obsolete. The process described on
 [Chado Schema Documentation
 HOWTO](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 is the the current one. This page should be deleted once the new process
 has been fully adopted.
-
 
 ``` de1
 #!/usr/bin/perl -w
@@ -231,7 +229,7 @@ GetOptions( "m=s" => \@modules,
 @modules = split(/,/,join(',',@modules));
 @modules = keys %$tables if ($all);
  
-usage() if ($help || !@modules);
+usage() if ($help | !@modules);
  
 my $file = "chado.html";
  
@@ -267,8 +265,3 @@ sub usage {
  
 __END__
 ```
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")

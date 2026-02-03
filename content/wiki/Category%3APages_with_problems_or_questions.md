@@ -3,14 +3,11 @@ title: "Category%253APages with problems or questions"
 ---
 # Category%253APages with problems or questions
 
-
 Pages with problems or questions.
-
 
 ## Pages in category "Pages with problems or questions"
 
 The following 6 pages are in this category, out of 6 total.
-
 
 ### C
 
@@ -28,8 +25,3 @@ The following 6 pages are in this category, out of 6 total.
 ### S
 
 - [Spectrogram.pm](Spectrogram.pm "Spectrogram.pm")
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Web Site](Category%253AGMOD_Web_Site "Category%253AGMOD Web Site")

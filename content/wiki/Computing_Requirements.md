@@ -3,14 +3,12 @@ title: "Computing Requirements"
 ---
 # Computing Requirements
 
-
 This page discusses high-level computing requirements and prerequisites
 for implementing GMOD components at your organization. Requirements for
 specific components can be found on [each component's
 page](GMOD_Components "GMOD Components").
 
   
-
 
   Administrator</span>](#GMOD_Systems_Administrator)
   - [Qualifications and
@@ -25,7 +23,6 @@ page](GMOD_Components "GMOD Components").
     - [Windows](#Windows)
   - [Other
     Software](#Other_Software)
-
 
 ## GMOD Systems Administrator
 

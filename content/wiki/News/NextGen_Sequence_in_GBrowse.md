@@ -3,12 +3,10 @@ title: "News/NextGen Sequence in GBrowse"
 ---
 # News/NextGen Sequence in GBrowse
 
-
 <a href="http://www.regonline.com/Nextgeneration" rel="nofollow"
 title="Next Generation Genome Analysis in Non-Model Organisms--An American Genetic Association Special Event"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Aga_logo.png" width="155" height="50"
 alt="Next Generation Genome Analysis in Non-Model Organisms--An American Genetic Association Special Event" /></a>
-
 
 There will be a
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf" class="internal"
@@ -37,10 +35,8 @@ class="external text" rel="nofollow">Arthropod Genomics Symposium</a>.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/05/19*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

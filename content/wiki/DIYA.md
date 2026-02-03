@@ -3,42 +3,33 @@ title: "DIYA"
 ---
 # DIYA
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/DIYALogo.png" width="400" height="400"
 alt="DIYA logo" />
 
-
 Status
-
 
 - Beta release
 - Development: inactive
 - Support: inactive
 
-
 Licence
-
 
 <a href="http://opensource.org/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/66/Osi_symbol.png/40px-Osi_symbol.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/66/Osi_symbol.png/60px-Osi_symbol.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/66/Osi_symbol.png/80px-Osi_symbol.png 2x"
 width="40" height="39" alt=" is open source" /></a>
 
-
 <a href="http://opensource.org/licenses/gpl-license"
 class="external text" rel="nofollow">Gnu GPL</a>
 
-
 Resources
-
 
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
 - [Annotation](Category%253AAnnotation "Category%253AAnnotation")
 
-
 <span class="smwfactboxhead">Facts about
-"<span class="swmfactboxheadbrowse">[DIYA](Special%253ABrowse/DIYA "Special%253ABrowse/DIYA")</span>"</span>
+"<span class="swmfactboxheadbrowse"></span>"</span>
 
 <table class="smwfacttable">
 <colgroup>
@@ -51,55 +42,37 @@ Resources
 <td class="smwpropname"><a href="Property%253AInteracts_with"
 title="Property:Interacts with">Interacts with</a></td>
 <td class="smwprops"><a href="GBrowse.1" title="GBrowse">GBrowse</a>
-<span class="smwsearch"><a
-href="Special%253ASearchByProperty/Interacts-20with/GBrowse"
-title="Special%253ASearchByProperty/Interacts-20with/GBrowse">+</a></span></td>
+</td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
-<td class="smwprops">Yes <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Is-20open-20source/Yes"
-title="Special%253ASearchByProperty/Is-20open-20source/Yes">+</a></span></td>
+<td class="smwprops">Yes </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a href="Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
-<td class="smwprops">download <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/download"
-title="Special%253ASearchByProperty/Link-20type/download">+</a></span> and
-website <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Link-20type/website"
-title="Special%253ASearchByProperty/Link-20type/website">+</a></span></td>
+<td class="smwprops">download  and
+website </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
-<td class="smwprops">2008 <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Release-20date/2008"
-title="Special%253ASearchByProperty/Release-20date/2008">+</a></span></td>
+<td class="smwprops">2008 </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwpropname"><a
 href="Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
-<td class="smwprops">Genome annotation <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20annotation"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20annotation">+</a></span>,
-Workflow management <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Workflow-20management"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Workflow-20management">+</a></span>
-and Tool integration <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20integration"
-title="Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20integration">+</a></span></td>
+<td class="smwprops">Genome annotation ,
+Workflow management 
+and Tool integration </td>
 </tr>
 <tr class="even row-even">
 <td class="smwpropname"><a href="Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
-<td class="smwprops">Perl <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Written-20in-20language/Perl"
-title="Special%253ASearchByProperty/Written-20in-20language/Perl">+</a></span></td>
+<td class="smwprops">Perl </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
@@ -109,14 +82,9 @@ subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
 <td class="smwspecs"><a
 href="DIYA#https:.2F.2Fgithub.com.2Fbioteam.2FDIYA"
-title="DIYA">DIYA#https://github.com/bioteam/DIYA</a> <span
-class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/DIYA-23https%253A-2F-2Fgithub.com-2Fbioteam-2FDIYA"
-title="Special%253ASearchByProperty/Has-20subobject/DIYA-23https%253A-2F-2Fgithub.com-2Fbioteam-2FDIYA">+</a></span>
+title="DIYA">DIYA#https://github.com/bioteam/DIYA</a> 
 and <a href="DIYA#_b8d8e90ce8e883d5ee6b571c9f48e1bb"
-title="DIYA">DIYA</a> <span class="smwsearch"><a
-href="Special%253ASearchByProperty/Has-20subobject/DIYA-23_b8d8e90ce8e883d5ee6b571c9f48e1bb"
-title="Special%253ASearchByProperty/Has-20subobject/DIYA-23 b8d8e90ce8e883d5ee6b571c9f48e1bb">+</a></span></td>
+title="DIYA">DIYA</a> </td>
 </tr>
 </tbody>
 </table>

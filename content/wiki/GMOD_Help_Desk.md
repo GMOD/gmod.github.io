@@ -3,12 +3,10 @@ title: "GMOD Help Desk"
 ---
 # GMOD Help Desk
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/400px-GMODHelpDeskLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/600px-GMODHelpDeskLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/GMODHelpDeskLogo.jpg/800px-GMODHelpDeskLogo.jpg 2x"
 width="400" height="196" alt="GMOD Help Desk" />
-
 
   Desk</span>](#GMOD_Help_Desk)
   - [Help Desk
@@ -21,7 +19,6 @@ width="400" height="196" alt="GMOD Help Desk" />
     - [Developer
       Support](#Developer_Support)
   - [Acknowledgements](#Acknowledgements)
-
 
 # GMOD Help Desk
 
@@ -76,8 +73,3 @@ collaboration between GMOD and the
 <a href="http://www.nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a>, and
 is managed by NESCent.
-
-
-[Category](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")

@@ -3,13 +3,11 @@ title: "GBrowse Configuration/Authentication"
 ---
 # GBrowse Configuration/Authentication
 
-
 This article describes **user authentication** and how to configure it
 to work with GBrowse.
 
 *For the main GBrowse2 configuration article, see [GBrowse 2.0
 HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
-
 
   & Authorization,
   Introduction</span>](#Authentication_.26_Authorization.2C_Introduction)
@@ -32,7 +30,6 @@ HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
     Plugins](#GBrowse_Authentication_via_Authentication_Plugins)
     - [Group-based
       Authorization](#Group-based_Authorization)
-
 
 ## Authentication & Authorization, Introduction
 
@@ -109,7 +106,6 @@ Apache's access control mechanism is based on URLs. To control access to
 an entire datasource, create a \<Location\> section in httpd.conf. The
 \<Location\> section should look like this:
 
-
 ``` de1
  
  <Location /cgi-bin/gb2/gbrowse/your_datasource>
@@ -118,7 +114,6 @@ an entire datasource, create a \<Location\> section in httpd.conf. The
         allow from localhost .oicr.on.ca .cshl.edu .ebi.ac.uk
   </Location>
 ```
-
 
 This denies access to everybody except for "localhost" and browsers from
 the domains .oirc.on.ca, .cshl.edu and .ebi.ac.uk. You can also limit by
@@ -134,7 +129,6 @@ Unless the stated requirements are met, the track will not appear on the
 main screen or any of the configuration screens. To set this up, add a
 "restrict" option to the track you wish to make off-limits:
 
-
 ``` de1
  
        [PROPRIETARY]
@@ -144,7 +138,6 @@ main screen or any of the configuration screens. To set this up, add a
                    deny from all
                    allow from localhost .oicr.on.ca .cshl.edu .ebi.ac.uk
 ```
-
 
 The value of the restrict option is identical to the Apache
 authorization directives and can include any of the directives "Order,"
@@ -163,7 +156,6 @@ Here is an example that uses the Text::GenderFromName to allow access if
 the user's name sounds female and forbids access if the name sounds
 male. (It might be useful for an X-chromosome annotation site.)
 
-
 ``` de1
     restrict = sub {
         my ($host,$ip,$user) = @_;
@@ -173,7 +165,6 @@ male. (It might be useful for an X-chromosome annotation site.)
     }
 ```
 
-
 You should be aware that the username will only be defined if username
 authentication is turned on and the user has successfully authenticated
 himself against Apache's user database using the correct password. In
@@ -181,12 +172,10 @@ addition, the hostname will only be defined if HostnameLookups have been
 turned on in httpd.conf. In the latter case, you can convert the IP
 address into a hostname using this piece of code:
 
-
 ``` de1
     use Socket;
     $host = gethostbyaddr(inet_aton($addr),AF_INET);
 ```
-
 
 Note that this may slow down the response time of gbrowse noticeably if
 you have a slow DNS name server.
@@ -204,7 +193,6 @@ suppress this display:
     the datasource. In this way, only users who meet the requirements
     will be able to see and select the datasource. For example:
 
-
 ``` de1
  
  [yeast]
@@ -213,13 +201,11 @@ suppress this display:
  restrict    = require valid-user
 ```
 
-
 Finally, you may place a "restrict" option in the \[GENERAL\] section of
 an individual datasource conf file, in which case the restrictions are
 applied on top of those defined by Apache. This might be useful if you
 prefer to modify the GBrowse conf file rather than Apache's conf file.
 For example, if Apache's config file contains this section:
-
 
 ``` de1
  
@@ -232,12 +218,10 @@ For example, if Apache's config file contains this section:
     </Location>
 ```
 
-
 then any valid user (who can provide a recognized username and password)
 who accesses the site from a workstation in the .oicr.on.ca domain will
 be able to get in. You can further restrict access by adding the
 following to the \[GENERAL\] section of yeast_simple.conf:
-
 
 ``` de1
  
@@ -245,7 +229,6 @@ following to the \[GENERAL\] section of yeast_simple.conf:
    # .... other stuff ...
    restrict  = require user fred joseph andrew vivian
 ```
-
 
 This will return an unauthorized message for anyone except the four
 named users.
@@ -256,11 +239,9 @@ The GBrowse user account system provides users with a link in the upper
 right corner of the screen that lets them login, register, and manage
 their account settings.
 
-
 <a href="../File:Gbrowse_login.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/Gbrowse_login.png" class="thumbimage"
 width="437" height="262" alt="Gbrowse login.png" /></a>
-
 
 #### Configuration
 
@@ -303,7 +284,6 @@ To enable users to log in using OpenIDs, these requirements must be met:
 The following is a GBrowse.conf configuration file with all the bells
 and whistles turned on:
 
-
 ``` de1
  
  [GENERAL]
@@ -320,7 +300,6 @@ and whistles turned on:
  email_address               = noreply@gbrowse.com
 ```
 
-
 This configuration should work on most servers provided that there is a
 properly-configured mail exchanger running on the server itself. You
 will need to replace this with an appropriate mail exchanger if this is
@@ -333,19 +312,16 @@ Here is more information on these options:
 
 user_account_db
 
-
 This is a
 <a href="http://dbi.perl.org/" class="external text" rel="nofollow">Perl
 DBI</a>-style description of the database that will hold user accounts.
 Only SQLite and MySQL databases are usable at the current time. For
 MySQL databases, the full form of the option is:
 
-
 ``` de1
  
   DBI:mysql:database=gbrowse_login;host=mysql.oicr.on.ca;user=gbrowse;password=gbrowse
 ```
-
 
 This indicates that the account database is running on a MySQL server
 named "mysql.oicr.on.ca" and that the database is named "gbrowse_login".
@@ -354,15 +330,12 @@ The GBrowse application will use the username "gbrowse" and the password
 
 For SQLite databases, the format is:
 
-
 ``` de1
  
   DBI:SQLite:/var/www/gbrowse2/databases/users.sqlite
 ```
 
-
 The latter part of the description is a path to the database file.
-
 
 user_accounts, user_accounts_registration, user_accounts_openid  
 These options turn on and off user accounts, new users' ability to
@@ -372,17 +345,14 @@ comment out the option) to turn the feature off.
 
 smtp_gateway
 
-
 This option sets the mail gateway that GBrowse uses to register new
 users and to communicate track sharing information one user to another.
 The full format is:
-
 
 ``` de1
  
  <smtp.server.com>:<port>:<encryption>:<username>:<password>
 ```
-
 
 There are up to five fields, each separated by colons. The first field,
 which is required, is the hostname or IP address of a mail server
@@ -398,16 +368,13 @@ An example of a server that requires encryption, username and password
 is Gmail. Here, for example, is how to route mail through a user account
 at GMail:
 
-
 ``` de1
  
   smtp_gateway           = smtp.gmail.com:465:ssl:john.doe:open_sesame
 ```
 
-
 Replace "john.doe" and "open_sesame" with the appropriate username and
 password for the service.
-
 
 application_name, application_name_long, email_address  
 These options control the "From" address that users will see when they
@@ -476,7 +443,6 @@ You can restrict access to datasources and individual tracks using
 exactly the same **restrict** syntax described in the previous section.
 For example in yeast_simple.conf, you could have:
 
-
 ``` de1
  [GENERAL]
  # lots of other stuff...
@@ -488,7 +454,6 @@ For example in yeast_simple.conf, you could have:
  feature  = RACE:5_prime
  restrict = require user fred joseph andrea marta
 ```
-
 
 The effect will be to require everyone to log in successfully in order
 to view the datasource at all. In addition, only the users logged in

@@ -3,7 +3,6 @@ title: "User%253ABmoore"
 ---
 # User%253ABmoore
 
-
 # Barry Moore
 
 ## Summary

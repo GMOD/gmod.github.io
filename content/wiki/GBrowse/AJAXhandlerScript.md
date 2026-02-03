@@ -3,7 +3,6 @@ title: "GBrowse/AJAXhandlerScript"
 ---
 # GBrowse/AJAXhandlerScript
 
-
   convert gbrowse_details to an AJAX request
   handler</span>](#Proposal_to_convert_gbrowse_details_to_an_AJAX_request_handler)
   - [Examples](#Examples)
@@ -13,7 +12,6 @@ title: "GBrowse/AJAXhandlerScript"
     Configuration File](#Changes_To_Configuration_File)
   - [Changes to
     Bio::Graphics::Browser](#Changes_to_Bio::Graphics::Browser)
-
 
 # Proposal to convert gbrowse_details to an AJAX request handler
 
@@ -48,7 +46,6 @@ alt="Sample2b.png" /></a>
 - A response is triggered after the feature(s) are defined but before
   ***PrintTop*** is called.
 
-
 ``` de1
  if (defined $rmt) {
    print header,start_html;
@@ -58,11 +55,9 @@ alt="Sample2b.png" /></a>
  }
 ```
 
-
 - The ***remote_content*** subroutine will get the text or coderef. It
   will return the text or execute the callback with user-defined
   arguments
-
 
 ``` de1
  # do something for popup balloons
@@ -70,7 +65,7 @@ alt="Sample2b.png" /></a>
    my $key = shift; # the key for the text or code-ref in the gbrowse config file
    my $feat = shift;
    my $contents = $CONFIG->config->code_setting('TOOLTIPS',$key) or die "$key is empty";
-   my $coderef = (ref $contents||&#39;&#39;) eq 'CODE';
+   my $coderef = (ref $contents|&#39;&#39;) eq 'CODE';
    return $contents unless $coderef;
    # paranoia?
    die "Error: $key is not a CODE-REF" if ref $contents && !$coderef;
@@ -84,7 +79,6 @@ alt="Sample2b.png" /></a>
    return $contents->(\%args);
  }
 ```
-
 
 ## Changes To Configuration File
 

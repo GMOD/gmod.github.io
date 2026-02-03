@@ -3,10 +3,8 @@ title: "JBrowse Troubleshooting"
 ---
 # JBrowse Troubleshooting
 
-
 This page collects solutions to problems that people sometimes encounter
 when installing JBrowse.
-
 
   prerequisites - libpng, zlib, libgd,
   etc</span>](#Installing_prerequisites_-_libpng.2C_zlib.2C_libgd.2C_etc)
@@ -19,7 +17,6 @@ when installing JBrowse.
     X](#Mac_OS_X)
 - [Other
   Problems](#Other_Problems)
-
 
 # Installing prerequisites - libpng, zlib, libgd, etc
 

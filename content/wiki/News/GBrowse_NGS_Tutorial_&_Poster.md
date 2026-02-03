@@ -3,12 +3,10 @@ title: "News/GBrowse NGS Tutorial & Poster"
 ---
 # News/GBrowse NGS Tutorial & Poster
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a1/BA2009Logo.png/100px-BA2009Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/BA2009Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/BA2009Logo.png 2x"
 width="100" height="95" alt="GBrowse NGS Tutorial" />](../GBrowse_NGS_Tutorial "GBrowse NGS Tutorial")
-
 
 A tutorial on using [GBrowse 2 to visualize next generation sequencing
 (NGS) data](../GBrowse_NGS_Tutorial "GBrowse NGS Tutorial") is now
@@ -39,10 +37,8 @@ the adaptor with *GBrowse 1 and GBrowse 2* is also available.
 
   
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/04*
 
-
-[Category](../Special%253ACategories "Special%253ACategories"):
+:
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")

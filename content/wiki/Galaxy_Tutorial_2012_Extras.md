@@ -3,13 +3,11 @@ title: "Galaxy Tutorial 2012 Extras"
 ---
 # Galaxy Tutorial 2012 Extras
 
-
 Items shown on this page were part of earlier drafts of the [2012 Summer
 School Galaxy workshop](Galaxy_Tutorial_2012 "Galaxy Tutorial 2012").
 They were moved here either in the interests of time, or because they no
 longer fit well with other content. However, these sections are still
 informative.
-
 
   Genomes to Trackster</span>](#Defining_Genomes_to_Trackster)
 - [Adding a new
@@ -50,13 +48,11 @@ informative.
     multiple alignments corresponding to these
     intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
 
-
 ## Defining Genomes to Trackster
 
 From the <a
 href="https://wiki.galaxyproject.org/Learn/Visualization#Setup_for_Local_Instances#Setup_for_Local_Instances"
 class="external text" rel="nofollow">Learn/Visualization wiki page</a>
-
 
 Trackster needs chrom/contig length information for builds to be able to
 be visualized, either in the form of `.len` files or custom user builds.
@@ -81,12 +77,10 @@ chrom/contig of that build, each on a separate line, eg:
 To populate this directory with common UCSC builds, run the following
 commands:
 
-
 ``` de1
 mkdir ./tool-data/shared/ucsc/chrom/
 python ./cron/build_chrom_db.py ./tool-data/shared/ucsc/chrom/
 ```
-
 
 To display a build's genome data (i.e. bases/nucleotides) when
 sufficiently zoomed in: (a) create a 2bit file from the genome's fasta
@@ -101,7 +95,6 @@ changes to `datatypes_conf.xml`, then simply copy everything from
 `datatypes_conf.xml.sample` into `datatypes_conf.xml` to make sure you
 have the latest copy.
 
-
 **Note:** the above script will run for almost an hour
 
 After restarting Galaxy, Trackster will now know about the size of all
@@ -111,12 +104,10 @@ chromosomes for many genome builds.
 
 ## Adding a new tool
 
-
 **Note:** This was the "create a tool" example used in previous years.
 This year I switched the time to cover the Galaxy Tool Shed instead.
 However, this is such a nice example that I couldn't delete it
 altogether. *Dave C.*
-
 
 The <a href="http://samtools.sourceforge.net/" class="external text"
 rel="nofollow">SAM format</a> contains 12 required fields representing
@@ -133,7 +124,6 @@ Let's first create a directory for our new tool:
 
 And then using a [text editor](Linux_Text_Editors "Linux Text Editors"),
 create `tools/gmod_2012/sam_filter.py` containing:
-
 
 ``` de1
 #!/usr/bin/env python
@@ -160,12 +150,10 @@ for line in open( sys.argv[1] ):
         out.write( line )
 ```
 
-
 ### The tool wrapper
 
 Next, we need to create the tool configuration. Edit the file
 `tools/gmod_2012/sam_filter.xml` and start with the following skeleton:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -181,10 +169,8 @@ Next, we need to create the tool configuration. Edit the file
 </tool>
 ```
 
-
 First, let's define the output. This tool has a single output, of type
 `sam`, so we modify the configuration to contain:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -200,7 +186,6 @@ First, let's define the output. This tool has a single output, of type
 </tool>
 ```
 
-
 The name can be anything, but it will be used later to identify the
 output file in the command line. Second, let's define the following
 inputs
@@ -210,7 +195,6 @@ inputs
 - An input value, which can be any text
 
 The resulting configuration:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -232,12 +216,10 @@ The resulting configuration:
 </tool>
 ```
 
-
 Finally, we define how to construct our command line based on values for
 the inputs. The command line is a template, where we can substitute in
 the value of each input (filenames in the case of datasets). Thus our
 final tool configuration is:
-
 
 ``` de1
 <tool id="sam_filter_1" name="SAM Filter">
@@ -259,10 +241,8 @@ final tool configuration is:
 </tool>
 ```
 
-
 We now need to modify `tool_conf.xml` to register our new tool and run
 Galaxy. Modify the top of `tool_conf.xml` to look like:
-
 
 ``` de1
 <?xml version="1.0"?>
@@ -272,7 +252,6 @@ Galaxy. Modify the top of `tool_conf.xml` to look like:
   </section>
   ...
 ```
-
 
 and run Galaxy using
 
@@ -450,10 +429,8 @@ Now, we will download the datasets for our example genome:
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.maf
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.2bit
 
-
 Note: These files are also available on the image in
 `/home/ubuntu/Galaxy/Data/`.
-
 
 Next, we will use the script `maf_build_index.py` (put in
 `/usr/local/bin/` when `bx-python` was installed) to create a binary
