@@ -7,5 +7,5 @@ disablePathToLower = true
   unsafe = true
 
 [markup.goldmark.parser.attribute]
-  block = true
-  title = true
+  block = false
+  title = false
