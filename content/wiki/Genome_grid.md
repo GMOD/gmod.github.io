@@ -49,8 +49,8 @@ class="external text" rel="nofollow">Google: genome teragrid</a>
 # Genome analysis and annotation via Grid computing
 
 This subproject builds re-usable tools and workflows for [genome
-analyses](/wiki/Category%253AAnalysis) and
-[annotation](/wiki/Category%253AAnnotation), using shared
+analyses](/wiki/Category%3AAnalysis) and
+[annotation](/wiki/Category%3AAnnotation), using shared
 cyberinfrastructure (Grids or clusters). Here within are collections of
 scripts, documents and workflows for employing existing genome analysis
 tools (BLAST, homology tools, predictors, comparative and phylogenetic
@@ -149,7 +149,7 @@ used successfully on TeraGrid clusters for analyzing several arthropod
 genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 "as-is" on computer clusters with PBS or LoadLeveler batch queues
 (TeraGrid is not required).
-[Dongilbert](/wiki/User%253ADongilbert) 19:56, 26 June 2008
+[Dongilbert](/wiki/User%3ADongilbert) 19:56, 26 June 2008
 (EDT)
 
 # References
@@ -167,7 +167,7 @@ genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 
 # Contact
 
-[Don Gilbert](/wiki/User%253ADongilbert)
+[Don Gilbert](/wiki/User%3ADongilbert)
 
 Support provided by a grant from <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0640462"

@@ -30,7 +30,7 @@ Done
 &#10;</tbody>
 </table>
 
-[Rob Buels](/wiki/User%253ARobertBuels) ran the conversion on
+[Rob Buels](/wiki/User%3ARobertBuels) ran the conversion on
 September 15, 2009. The conversion finished around 12:45pm, Eastern US.
 See <a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a> for how to access the new repository.
@@ -55,8 +55,8 @@ Help Desk</a>.
 ## Announcement
 
 GMOD's CVS source code repository will be converted to Subversion (SVN)
-on September 15, 2009. [Rob Buels](/wiki/User%253ARobertBuels)
-of Cornell / [SGN](/wiki/Category%253ASGN) has generously offered
+on September 15, 2009. [Rob Buels](/wiki/User%3ARobertBuels)
+of Cornell / [SGN](/wiki/Category%3ASGN) has generously offered
 to to do this. The discussion leading up to this decision on the
 <a href="http://comments.gmane.org/gmane.science.biology.gmod.devel/364"
 class="external text" rel="nofollow">GMOD Developers mailing list</a>.
@@ -94,8 +94,8 @@ Please let Rob and Dave know if you have any questions.
 
 Thanks,
 
-[Dave Clements](/wiki/User%253AClements) and [Rob
-Buels](/wiki/User%253ARobertBuels)
+[Dave Clements](/wiki/User%3AClements) and [Rob
+Buels](/wiki/User%3ARobertBuels)
 
 ## Projects
 

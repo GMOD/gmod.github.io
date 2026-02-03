@@ -111,27 +111,27 @@ that can help you.
 ### Graphics
 
 ![GMOD Logos](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/GMOD-three-cogs.png/300px-GMOD-three-cogs.pngGMOD-three-cogs-200.png)
-[GMOD Project Logos](/wiki/Category%253AGMOD_Project_Logos) -
+[GMOD Project Logos](/wiki/Category%3AGMOD_Project_Logos) -
 Logos related to the project as a whole.
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/50px-CMapLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/75px-CMapLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/100px-CMapLogo.png 2x"
-width="50" height="58" alt="Component Logos" />](/wiki/Category%253ALogos_and_Icons)
-[Logos and Icons](/wiki/Category%253ALogos_and_Icons) -
+width="50" height="58" alt="Component Logos" />](/wiki/Category%3ALogos_and_Icons)
+[Logos and Icons](/wiki/Category%3ALogos_and_Icons) -
 Logos and icons, including [GMOD
 component](/wiki/GMOD_Components) logos.
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/9b/InsectaCentralLogo.png/70px-InsectaCentralLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 2x"
-width="70" height="56" alt="Member Logos" />](/wiki/Category%253AMember_Logos)
-[Member Logos](/wiki/Category%253AMember_Logos) - logos of
+width="70" height="56" alt="Member Logos" />](/wiki/Category%3AMember_Logos)
+[Member Logos](/wiki/Category%3AMember_Logos) - logos of
 organizations that contribute to or use GMOD.
 
 ### Slides
 
-- [Conferences](/wiki/Category%253AConferences)
+- [Conferences](/wiki/Category%3AConferences)
 - [Education and
-  Outreach](/wiki/Category%253AEducation_and_Outreach)
-- [Events](/wiki/Category%253AEvents)
-- [GMOD Project](/wiki/Category%253AGMOD_Project)
+  Outreach](/wiki/Category%3AEducation_and_Outreach)
+- [Events](/wiki/Category%3AEvents)
+- [GMOD Project](/wiki/Category%3AGMOD_Project)

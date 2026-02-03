@@ -60,7 +60,7 @@ If you are using MySQL databases, GBrowse also requires the Perl modules
 to talk to MySQL, DBI and DBD::mysql, which are often not present in the
 Perl installations on new Macs. These can be installed using CPAN. As of
 8-1-2007, there are some problems with the CPAN installers for
-[DBD::mysql on the Mac](/wiki/DBD%253A%253Amysql_on_the_Mac).
+[DBD::mysql on the Mac](/wiki/DBD%3A%3Amysql_on_the_Mac).
 
 ## The Fink Way
 
@@ -352,6 +352,6 @@ to look like this:
 
 # AUTHORS
 
-[Lincoln D. Stein](/wiki/User%253ALstein) \<steinl@cshl.edu\> 20:24,
+[Lincoln D. Stein](/wiki/User%3ALstein) \<steinl@cshl.edu\> 20:24,
 16 April 2007 (EDT) Adapted from instructions contributed by Yair Benita
 \<y.benita@wanadoo.nl\>.

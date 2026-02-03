@@ -11,7 +11,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="75" alt="Tripal" />
 
 This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
-Ficklin](/wiki/User%253ASficklin) at the [2012 GMOD Summer
+Ficklin](/wiki/User%3ASficklin) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School), August 2012.
 The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"

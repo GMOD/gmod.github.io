@@ -12,4 +12,4 @@ This category contains only the following page.
 - [Chado Tutorial 2011](/wiki/Chado_Tutorial_2011)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ASession](/wiki/Category%253ASession)"
+"[http://gmod.org/wiki/Category:Session](/wiki/Category%3ASession)"

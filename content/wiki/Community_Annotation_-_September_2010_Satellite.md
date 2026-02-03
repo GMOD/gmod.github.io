@@ -93,16 +93,16 @@ proposed by Kim Rutherford.
   rel="nofollow">T1DBase</a>
 - Gerd Anders, Max-Delbrueck-Centrum Berlin (MDC)
 - Jerven Bolleman, UniProt Swiss-Prot
-- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%3AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca" class="external text"
   rel="nofollow">OICR</a>
-- [Dave Clements](/wiki/User%253AClements), [GMOD Help
+- [Dave Clements](/wiki/User%3AClements), [GMOD Help
   Desk](/wiki/GMOD_Help_Desk),
   <a href="http://nescent.org" class="external text"
   rel="nofollow">NESCent</a>
 - Oskana Riba Grognuz, Swiss Institute of Bioinformatics (SIB)
   Department of Ecology and Evolution, University of Lausanne
-- [Chris Hemmerich](/wiki/User%253AChemmeri),
+- [Chris Hemmerich](/wiki/User%3AChemmeri),
   <a href="http://cgb.indiana.edu" class="external text"
   rel="nofollow">CGB, Indiana University</a>
 - Joan Pontius, National Cancer Institute, SAIC
@@ -277,7 +277,7 @@ loosely watched by GMOD staff.
 rel="nofollow">EcoliWiki</a> - Vampire!
 Logins given to trusted community members. Anyone with an existing login
 can create a login for someone else. Editors have full update access.
-[SGN](/wiki/Category%253ASGN) - Locus boss!
+[SGN](/wiki/Category%3ASGN) - Locus boss!
 SGN locus pages list the set of community members who can update
 information about that locus. Every locus page includes "Request editor
 privileges" link. This model allows specific people to control and "own"

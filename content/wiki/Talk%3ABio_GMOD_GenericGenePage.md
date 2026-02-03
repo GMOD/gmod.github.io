@@ -29,4 +29,4 @@ Please suggest changes!
   - gene_symbol in the example is only one way to get this return. You
     can also use different URLs for locus tags.
 
---[JimHu](/wiki/User%253AJimHu.1) 08:06, 17 January 2009 (UTC)
+--[JimHu](/wiki/User%3AJimHu.1) 08:06, 17 January 2009 (UTC)

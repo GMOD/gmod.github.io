@@ -67,13 +67,13 @@ One outline for these attributes is to have main sections as:
 at the [July 2008 GMOD
 Meeting](/wiki/July_2008_GMOD_Meeting) resulted in
 the
-[Bio%253A%253AGMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
+[Bio::GMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 Perl abstract class that can be used by organizations to generate common
 gene pages in XML format.
 
 # Notes for Discussion 2008
 
-From [Dongilbert](/wiki/User%253ADongilbert) 13:15, 14 July 2008
+From [Dongilbert](/wiki/User%3ADongilbert) 13:15, 14 July 2008
 (EDT) :
 
 In hopes there will be a lively discussion on this topic at the [July
@@ -128,7 +128,7 @@ Page](/wiki/July_2008_GMOD_Meeting#Common_Gene_Page)
 section of the [July 2008 GMOD
 Meeting](/wiki/July_2008_GMOD_Meeting) notes. This
 discussion resulted in implementation of the
-[Bio%253A%253AGMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
+[Bio::GMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 Perl abstract class.
 
 # Example uses

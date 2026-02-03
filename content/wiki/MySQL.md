@@ -77,7 +77,7 @@ an unfriendly error message, even though the same data loaded without
 incident using the MySQL adaptor. After spending a few days looking for
 bugs in the PostgreSQL adaptor that I'd written, I started looking at
 the data. It turns out that the test data (the entire
-[WormBase](/wiki/Category%253AWormBase) [GFF](/wiki/GFF) at
+[WormBase](/wiki/Category%3AWormBase) [GFF](/wiki/GFF) at
 the time) had data in it that violated a unique constraint on the fdata
 table. That is the main data table, and the constraint was over
 (fref,fbin,fstart,fstop,ftypeid,gid). Basically, the WormBase GFF had a

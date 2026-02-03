@@ -11,24 +11,24 @@ This category has the following 5 subcategories, out of 5 total.
 
 ### A
 
-- [Apollo](/wiki/Category%253AApollo)
+- [Apollo](/wiki/Category%3AApollo)
 
 ### C
 
 - [Community
-  Annotation](/wiki/Category%253ACommunity_Annotation)
+  Annotation](/wiki/Category%3ACommunity_Annotation)
 
 ### M
 
-- [MAKER](/wiki/Category%253AMAKER)
+- [MAKER](/wiki/Category%3AMAKER)
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ### W
 
-- [Webapollo](/wiki/Category%253AWebapollo)
+- [Webapollo](/wiki/Category%3AWebapollo)
 
 ## Pages in category "Annotation"
 

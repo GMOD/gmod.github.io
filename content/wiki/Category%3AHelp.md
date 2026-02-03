@@ -11,25 +11,25 @@ This category has the following 6 subcategories, out of 6 total.
 
 ### F
 
-- [FAQ](/wiki/Category%253AFAQ)
+- [FAQ](/wiki/Category%3AFAQ)
 
 ### H
 
-- [HOWTO](/wiki/Category%253AHOWTO)
+- [HOWTO](/wiki/Category%3AHOWTO)
 
 ### P
 
-- [Presentations](/wiki/Category%253APresentations)
-- [Publications](/wiki/Category%253APublications)
+- [Presentations](/wiki/Category%3APresentations)
+- [Publications](/wiki/Category%3APublications)
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ### U
 
 - [User
-  Experiences](/wiki/Category%253AUser_Experiences)
+  Experiences](/wiki/Category%3AUser_Experiences)
 
 ## Pages in category "Help"
 

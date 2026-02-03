@@ -79,7 +79,7 @@ rel="nofollow">http://localhost/cgi-bin/gbrowse/gbrowse/yeast_chr1</a>.
 
 # Authors
 
-[Lincoln Stein](/wiki/User%253ALstein) 12:51, 17 April 2007 (EDT)
+[Lincoln Stein](/wiki/User%3ALstein) 12:51, 17 April 2007 (EDT)
 
 Some material cut and paste from www.biopackages.net, with permission
 from Allen Day.

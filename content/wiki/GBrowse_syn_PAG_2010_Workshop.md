@@ -77,7 +77,7 @@ scientists working with multiple sequence alignment data.
 
 ## Workshop Instructor
 
-[Sheldon McKay](/wiki/User%253AMckays),
+[Sheldon McKay](/wiki/User%3AMckays),
 <a href="http://modencode.org" class="external text"
 rel="nofollow">modENCODE</a> and
 <a href="http://www.iplantcollaborative.org/" class="external text"

@@ -44,4 +44,4 @@ title="GMOD Online Training 2014/GFF3 Tutorial">GMOD Online Training
 </tbody>
 </table>
 
-Retrieved from "[http://gmod.org/wiki/Category%253AGFF3](/wiki/Category%253AGFF3)"
+Retrieved from "[http://gmod.org/wiki/Category:GFF3](/wiki/Category%3AGFF3)"

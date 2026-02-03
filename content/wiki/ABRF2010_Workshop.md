@@ -48,7 +48,7 @@ Add the GFF file to your JBrowse instance:
 ## Conference Talk
 
 **Seeing the Forest and the Trees: Visualizing Next Generation Sequence
-Data**, by [Mitch Skinner](/wiki/User%253AMitchSkinner)
+Data**, by [Mitch Skinner](/wiki/User%3AMitchSkinner)
 
 Part of the Session _Tools to Facilitate Management, Analysis and
 Visualization of 2nd Generation Sequencing Data_

@@ -93,12 +93,12 @@ rel="nofollow">NESCent</a>, as the result of a collaboration between
 GMOD and NESCent. One of NESCent's goals is to promote the adoption of
 GMOD for data management, analysis, and visualization needs for the
 genome-scale information being generated in [evolutionary
-research](/wiki/Category%253AEvolution), in particular for
+research](/wiki/Category%3AEvolution), in particular for
 emerging model organisms. This initiative includes extending the
 functionality of GMOD tools for evolutionary applications, particularly
 in the areas of managing and visualizing information about genotypic
 variation, [phenotypic
-variation](/wiki/Category%253APhenotypes), and
+variation](/wiki/Category%3APhenotypes), and
 phylogenetics.
 
 ## Please share your feedback
@@ -129,16 +129,16 @@ was initially managed by NESCent.
 title="bp:Brian">Brian Osborne</a> started the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) in 2006 and, among other things,
 created this wiki. In 2007 [Dave
-Clements](/wiki/User%253AClements) took over, who held the
+Clements](/wiki/User%3AClements) took over, who held the
 position until the end of 2010 (when he moved to the
 [Galaxy](/wiki/Galaxy.1) project). [Amelia
-Ireland](/wiki/User%253AGirlwithglasses) was Community
+Ireland](/wiki/User%3AGirlwithglasses) was Community
 Support Specialist from July 2012 to May 2014, when grant funding ran
 out.
 
 Some community support functions are also provided by several other
 members of the GMOD community, notably [Scott
-Cain](/wiki/User%253AScott), the GMOD Project Coordinator.
+Cain](/wiki/User%3AScott), the GMOD Project Coordinator.
 
 The GMOD Help Desk was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="

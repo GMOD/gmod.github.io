@@ -138,5 +138,5 @@ ActiveState and/or Apache!). A few notes:
 
 ## Authors
 
-- [Lincoln Stein](/wiki/User%253ALstein)
-- [Scott Cain](/wiki/User%253AScott)
+- [Lincoln Stein](/wiki/User%3ALstein)
+- [Scott Cain](/wiki/User%3AScott)

@@ -22,7 +22,7 @@ rel="nofollow">Scott Cain</a>.
 
 - [GBrowse](/wiki/GBrowse.1) update
 - [CMap](/wiki/CMap.1) update
-- [Mouse Genome Informatics](/wiki/Category%253AMGI) update
+- [Mouse Genome Informatics](/wiki/Category%3AMGI) update
 - Update from Gavin Sherlock's group (working with microarray data)
 - [PubFetch](/wiki/PubFetch) and PubTrack update
 - [PubSearch](/wiki/PubSearch) update
@@ -32,5 +32,5 @@ rel="nofollow">Scott Cain</a>.
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> summary
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> discussion
 - [Chado XML](/wiki/Chado_XML) uses
-- [SGD](/wiki/Category%253ASGD)
+- [SGD](/wiki/Category%3ASGD)
 - [Textpresso](/wiki/Textpresso)

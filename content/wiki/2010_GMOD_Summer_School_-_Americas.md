@@ -300,14 +300,14 @@ Ends</td>
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%253AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%253AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%253ASficklin) | [Tripal](/wiki/Tripal.1) | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](/wiki/User%253ACarsonholt) | [MAKER](/wiki/MAKER.1) | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%253AElee) | [Apollo](/wiki/Apollo.1) | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%253AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1), [GBrowse](/wiki/GBrowse.1) | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Mitch Skinner](/wiki/User%253AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [James Taylor](/wiki/User%253AJamesTaylor) | [Galaxy](/wiki/Galaxy.1) | <a href="http://www.emory.edu" class="external text"
+| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
+rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%3ASficklin) | [Tripal](/wiki/Tripal.1) | <a href="http://www.genome.clemson.edu/" class="external text"
+rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](/wiki/User%3ACarsonholt) | [MAKER](/wiki/MAKER.1) | <a href="http://www.utah.edu" class="external text"
+rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%3AElee) | [Apollo](/wiki/Apollo.1) | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1), [GBrowse](/wiki/GBrowse.1) | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a> | [Mitch Skinner](/wiki/User%3AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
+rel="nofollow">University of California, Berkeley</a> | [James Taylor](/wiki/User%3AJamesTaylor) | [Galaxy](/wiki/Galaxy.1) | <a href="http://www.emory.edu" class="external text"
 rel="nofollow">Emory University</a> |
 
 ## Prerequisites
@@ -353,8 +353,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -372,7 +372,7 @@ alt="Apple" /></a>
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, **all of which require an Intel Mac**:
 
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"

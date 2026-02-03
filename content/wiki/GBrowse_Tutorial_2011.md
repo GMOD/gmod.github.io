@@ -281,7 +281,7 @@ Bio::DB::Das::Chado:
 
 This does several things (including poorly estimating how long it will
 take to finish), including creating materialized views, using a tool
-provided by [SOL Genomics Network (SGN)](/wiki/Category%253ASGN).
+provided by [SOL Genomics Network (SGN)](/wiki/Category%3ASGN).
 In practice, it would be a good idea to read the documentation of
 `gmod_materialized_view_tool.pl` for information on keeping the view up
 to date.

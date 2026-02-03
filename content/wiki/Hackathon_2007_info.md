@@ -241,9 +241,9 @@ possibilities. Please feel free to add more.
   (documentation, examples, tutorials, configuration files, installation
   procedures, etc)
 
-[Justin](/wiki/User%253AJustaddcoffee): I've written
+[Justin](/wiki/User%3AJustaddcoffee): I've written
 [Apollo-Chado Integration at BovineBase: Bugs and
-Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase%253A_Bugs_and_Suggestions)
+Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase%3A_Bugs_and_Suggestions)
 containing a list of bugs and suggestions from our developers and
 [Apollo](/wiki/Apollo.1) users, compiled during our construction of a
 Chado\<-\>Apollo setup for the Bovine genome annotation effort.
@@ -284,7 +284,7 @@ coming:
   probably use that.)
 - Also in the vmware instance: ~~phpmyadmin, phppgadmin,~~ mediawiki all
   configured and ready to use.
-  [Scott](/wiki/User%253AScott) 20:46, 30 July 2007 (EDT): *I don't
+  [Scott](/wiki/User%3AScott) 20:46, 30 July 2007 (EDT): *I don't
   think the admin stuff needs to be a priority*
 - A printer (maybe--do people use paper anymore?)
 - A computer projector

@@ -191,7 +191,7 @@ Mailing list</a>.
 
 ## More on SOBA
 
-See [Category%253ASOBA](/wiki/Category%253ASOBA)
+See [Category:SOBA](/wiki/Category%3ASOBA)
 
 
 

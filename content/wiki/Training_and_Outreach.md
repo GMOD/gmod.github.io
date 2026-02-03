@@ -12,7 +12,7 @@ training and outreach activities. See [Support](/wiki/Support) for
 other support options in GMOD.
 
 Training and outreach are done by the [GMOD Project
-Coordinator](/wiki/User%253AScott), the [GMOD Help
+Coordinator](/wiki/User%3AScott), the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk), [GMOD
 component](/wiki/GMOD_Components) developers, and by GMOD
 users.
@@ -63,7 +63,7 @@ on several [GMOD Components](/wiki/GMOD_Components):
 | [WebApollo](/wiki/WebApollo.1) | [WebApollo Tutorial](/wiki/WebApollo_Tutorial) - from the [2013 GMOD Summer School](/wiki/2013_GMOD_Summer_School) |
 
 This website also has a large collection of
-[HOWTOs](/wiki/Category%253AHOWTO) on more specific tasks.
+[HOWTOs](/wiki/Category%3AHOWTO) on more specific tasks.
 
 ## GMOD Schools
 
@@ -128,8 +128,8 @@ Promotion](/wiki/GMOD_Promotion#Presentation_and_Event_Promotion)
 if you have an event or presentation you would like to promote within
 GMOD.
 
-See the [Posters](/wiki/Category%253APosters) and
-[Presentations](/wiki/Category%253APresentations)
+See the [Posters](/wiki/Category%3APosters) and
+[Presentations](/wiki/Category%3APresentations)
 categories for many additional presentations by GMOD staff, developers
 and users.
 
@@ -141,105 +141,105 @@ community meetings and other related rendezvous.
 | Date | Event | Location | Contact |
 |------|-------|----------|---------|
 | July 19-23, 2013 | **[2013 GMOD Summer School](/wiki/2013_GMOD_Summer_School)** - Training course on all things GMOD | [NESCent](http://nescent.org), Durham, NC | [GMOD Help Desk](mailto:help@gmod.org) |
-| June 30 - July 2, 2013 | **[2013 Galaxy Community Conference (GCC2013)](http://wiki.galaxyproject.org/Events/GCC2013)** - The [Galaxy](/wiki/Galaxy.1) project's annual meeting | Oslo, Norway | [Dave Clements](/wiki/User%253AClements) |
+| June 30 - July 2, 2013 | **[2013 Galaxy Community Conference (GCC2013)](http://wiki.galaxyproject.org/Events/GCC2013)** - The [Galaxy](/wiki/Galaxy.1) project's annual meeting | Oslo, Norway | [Dave Clements](/wiki/User%3AClements) |
 | April 7-10, 2013 | **[Biocuration 2013](http://www.ebi.ac.uk/biocuration2013/home)** | Cambridge, United Kingdom | n/a |
-| April 5-6, 2013 | **2013 GMOD Meeting** - Colocated with and immediately before [Biocuration 2013](http://www.ebi.ac.uk/biocuration2013/home) | Cambridge, United Kingdom | [Scott Cain](/wiki/User%253AScott) |
-| January 2013 | **PAGXXI** (Plant and Animal Genomes) - See [PAG 2013](/wiki/PAG_2013) for details of GMOD at PAGXXI | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
+| April 5-6, 2013 | **2013 GMOD Meeting** - Colocated with and immediately before [Biocuration 2013](http://www.ebi.ac.uk/biocuration2013/home) | Cambridge, United Kingdom | [Scott Cain](/wiki/User%3AScott) |
+| January 2013 | **PAGXXI** (Plant and Animal Genomes) - See [PAG 2013](/wiki/PAG_2013) for details of GMOD at PAGXXI | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
 
 ### 2012 Events
 
 | Date | Event | Location | Contact |
 |------|-------|----------|---------|
-| August 24-29, 2012 | **[2012 GMOD Summer School](/wiki/2012_GMOD_Summer_School)** | [NESCent](http://nescent.org), Durham, NC | [Scott Cain](/wiki/User%253AScott) |
-| July 25-27, 2012 | **[2012 Galaxy Community Conference (GCC2012)](http://wiki.g2.bx.psu.edu/Events/GCC2012)** - The [Galaxy](/wiki/Galaxy.1) project's annual meeting | Chicago, Illinois | [Dave Clements](/wiki/User%253AClements) |
-| April 5-6, 2012 | **[April 2012 GMOD Meeting](/wiki/April_2012_GMOD_Meeting)** - Colocated with [Biocuration 2012](http://pir.georgetown.edu/biocuration2012/) | Washington, DC | [Scott Cain](/wiki/User%253AScott) |
+| August 24-29, 2012 | **[2012 GMOD Summer School](/wiki/2012_GMOD_Summer_School)** | [NESCent](http://nescent.org), Durham, NC | [Scott Cain](/wiki/User%3AScott) |
+| July 25-27, 2012 | **[2012 Galaxy Community Conference (GCC2012)](http://wiki.g2.bx.psu.edu/Events/GCC2012)** - The [Galaxy](/wiki/Galaxy.1) project's annual meeting | Chicago, Illinois | [Dave Clements](/wiki/User%3AClements) |
+| April 5-6, 2012 | **[April 2012 GMOD Meeting](/wiki/April_2012_GMOD_Meeting)** - Colocated with [Biocuration 2012](http://pir.georgetown.edu/biocuration2012/) | Washington, DC | [Scott Cain](/wiki/User%3AScott) |
 | April 2-4, 2012 | **[Biocuration 2012](http://pir.georgetown.edu/biocuration2012/)** | Washington, DC | |
-| January 23-25, 2012 | **[GMOD Workshop](http://evomics.org/workshops/advanced-topics/gmod/)** | [Český Krumlov, Czech Republic](http://www.ckrumlov.info/php/) | [Scott Cain](/wiki/User%253AScott) |
-| January 8-21, 2012 | **[Workshop on Genomics](http://evomics.org/workshops/workshop-on-genomics/2012-genomics-cesky-krumlov/)** - Covers many topics including [Galaxy](/wiki/Galaxy.1) | [Český Krumlov, Czech Republic](http://www.ckrumlov.info/php/) | [James Taylor](/wiki/User%253AJamesTaylor) |
-| January 14-18, 2012 | **[Plant and Animal Genome XX (PAG 2012)](/wiki/PAG_2012)** - Strong GMOD presence including dedicated all-day GMOD Workshop | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
+| January 23-25, 2012 | **[GMOD Workshop](http://evomics.org/workshops/advanced-topics/gmod/)** | [Český Krumlov, Czech Republic](http://www.ckrumlov.info/php/) | [Scott Cain](/wiki/User%3AScott) |
+| January 8-21, 2012 | **[Workshop on Genomics](http://evomics.org/workshops/workshop-on-genomics/2012-genomics-cesky-krumlov/)** - Covers many topics including [Galaxy](/wiki/Galaxy.1) | [Český Krumlov, Czech Republic](http://www.ckrumlov.info/php/) | [James Taylor](/wiki/User%3AJamesTaylor) |
+| January 14-18, 2012 | **[Plant and Animal Genome XX (PAG 2012)](/wiki/PAG_2012)** - Strong GMOD presence including dedicated all-day GMOD Workshop | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
 
 ### 2011 Events
 
 | Date | Event | Location | Contact |
 |------|-------|----------|---------|
 | October 23-24, 2011 | **[IEEE Symposium on Biological Data Visualization (BioVis 2011)](http://www.biovis.net/)** - The [Galaxy](/wiki/Galaxy.1) Track Browser: Transforming the Genome Browser from Visualization Tool to Analysis Tool | Providence, Rhode Island | Jeremy Goecks |
-| October 12-13, 2011 | **[October 2011 GMOD Meeting](/wiki/October_2011_GMOD_Meeting)** | [Ontario Institute for Cancer Research (OICR)](http://oicr.on.ca/), Toronto, Canada | [Scott Cain](/wiki/User%253AScott) |
-| September 28-30, 2011 | **[Genome Annotation](/wiki/News/UC_Davis_Courses_this_September)** - Using [MAKER](/wiki/MAKER.1) and [Apollo](/wiki/Apollo.1) | [UC Davis Bioinformatics Core](http://bioinformatics.ucdavis.edu/) | [Barry Moore](/wiki/User%253ABmoore) |
-| September 19-22, 2011 | **[Genome Informatics Workshop @ Beyond the Genome 2011](http://www.beyond-the-genome.com/program.html)** | Washington, DC | [Lincoln Stein](/wiki/User%253ALstein), [James Taylor](/wiki/User%253AJamesTaylor) |
-| July 15-19, 2011 | **[ISMB/ECCB 2011](/wiki/ISMB/ECCB_2011)** - Included BOSC and plenty of GMOD-related content | Vienna, Austria | [Scott Cain](/wiki/User%253AScott) |
-| July 10-23, 2011 | **[Workshop on Comparative Genomics, North America](http://www.molecularevolution.org/workshops/WCG#wcgna#wcgna)** - Sessions on [BioPerl](/wiki/BioPerl), [Galaxy](/wiki/Galaxy.1) and [GBrowse_syn](/wiki/GBrowse_syn.1) | Fort Collins, Colorado | [Jason Stajich](/wiki/User%253AStajich), [Dan Blankenberg](/wiki/User%253ADanB), [Sheldon McKay](/wiki/User%253AMckays) |
+| October 12-13, 2011 | **[October 2011 GMOD Meeting](/wiki/October_2011_GMOD_Meeting)** | [Ontario Institute for Cancer Research (OICR)](http://oicr.on.ca/), Toronto, Canada | [Scott Cain](/wiki/User%3AScott) |
+| September 28-30, 2011 | **[Genome Annotation](/wiki/News/UC_Davis_Courses_this_September)** - Using [MAKER](/wiki/MAKER.1) and [Apollo](/wiki/Apollo.1) | [UC Davis Bioinformatics Core](http://bioinformatics.ucdavis.edu/) | [Barry Moore](/wiki/User%3ABmoore) |
+| September 19-22, 2011 | **[Genome Informatics Workshop @ Beyond the Genome 2011](http://www.beyond-the-genome.com/program.html)** | Washington, DC | [Lincoln Stein](/wiki/User%3ALstein), [James Taylor](/wiki/User%3AJamesTaylor) |
+| July 15-19, 2011 | **[ISMB/ECCB 2011](/wiki/ISMB/ECCB_2011)** - Included BOSC and plenty of GMOD-related content | Vienna, Austria | [Scott Cain](/wiki/User%3AScott) |
+| July 10-23, 2011 | **[Workshop on Comparative Genomics, North America](http://www.molecularevolution.org/workshops/WCG#wcgna#wcgna)** - Sessions on [BioPerl](/wiki/BioPerl), [Galaxy](/wiki/Galaxy.1) and [GBrowse_syn](/wiki/GBrowse_syn.1) | Fort Collins, Colorado | [Jason Stajich](/wiki/User%3AStajich), [Dan Blankenberg](/wiki/User%3ADanB), [Sheldon McKay](/wiki/User%3AMckays) |
 | June 21-22, 2011 | **[Pathway Tools Flux Balance Analysis Tutorial](http://ptools-fba.eventbrite.com/)** | SRI, Menlo Park, CA | [Tomer Altman](mailto:ptools-info@ai.sri.com) |
-| June 9-12, 2011 | **[Arthropod Genomics Symposium](/wiki/Arthropod_Genomics_2011)** - Genome Project 101 and GBrowse_syn workshops | Kansas City, Missouri | [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements), [Sheldon McKay](/wiki/User%253AMckays) |
-| May 28-31, 2011 | **[European Human Genetics Conference 2011](https://www.eshg.org/eshg2011.0.html)** - [Galaxy](/wiki/Galaxy.1) Workshop | Amsterdam, The Netherlands | [Dave Clements](/wiki/User%253AClements) |
-| May 25-26, 2011 | **[2011 Galaxy Community Conference](http://galaxy.psu.edu/gcc2011/)** | Lunteren, The Netherlands | [Dave Clements](/wiki/User%253AClements) |
+| June 9-12, 2011 | **[Arthropod Genomics Symposium](/wiki/Arthropod_Genomics_2011)** - Genome Project 101 and GBrowse_syn workshops | Kansas City, Missouri | [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements), [Sheldon McKay](/wiki/User%3AMckays) |
+| May 28-31, 2011 | **[European Human Genetics Conference 2011](https://www.eshg.org/eshg2011.0.html)** - [Galaxy](/wiki/Galaxy.1) Workshop | Amsterdam, The Netherlands | [Dave Clements](/wiki/User%3AClements) |
+| May 25-26, 2011 | **[2011 Galaxy Community Conference](http://galaxy.psu.edu/gcc2011/)** | Lunteren, The Netherlands | [Dave Clements](/wiki/User%3AClements) |
 | April 13-14, 2011 | **[NBIC Galaxy Hackathon](https://wiki.nbic.nl/index.php/NBIC_Galaxy_Hackathon_project)** | Belgium (near Maastricht) | [NBIC](https://wiki.nbic.nl/index.php/NBIC_Galaxy_Hackathon_project) |
 | April 12-14, 2011 | **[Dynamically Scalable, Accessible Analysis for High-Throughput Sequence Data](http://www.bio-itworldexpo.com/Bio-It_Expo_Content.aspx?id=101298)** ([Galaxy](/wiki/Galaxy.1)) | [Bio-IT World](http://www.bio-itworldexpo.com/), Boston, MA | [Enis Afgan](http://userwww.service.emory.edu/~eafgan/index.html) |
-| March 5-12, 2011 | **[GMOD Americas 2011](/wiki/GMOD_Americas_2011)** - Includes [March 2011 GMOD Meeting](/wiki/March_2011_GMOD_Meeting), [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011), and [2011 GMOD Spring Training](/wiki/2011_GMOD_Spring_Training) | [NESCent](http://www.nescent.org/), Durham, NC | [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements) |
+| March 5-12, 2011 | **[GMOD Americas 2011](/wiki/GMOD_Americas_2011)** - Includes [March 2011 GMOD Meeting](/wiki/March_2011_GMOD_Meeting), [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011), and [2011 GMOD Spring Training](/wiki/2011_GMOD_Spring_Training) | [NESCent](http://www.nescent.org/), Durham, NC | [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements) |
 | February 19-22, 2011 | **[Galaxy Next Generation Sequencing Functionality from Sample Tracking to SNP Calling](http://conf.abrf.org/index.cfm/page/ConfProg.htm)** | [ABRF 2011](https://conf.abrf.org/), San Antonio, TX | [Greg Von Kuster](mailto:greg@bx.psu.edu) |
-| February 2-5, 2011 | **[Management and Analysis of Second and Third Generation Sequencing Data with Galaxy](http://agbt.org/agenda.html)** | [AGBT 2011](http://agbt.org/), Marco Island, FL | [Anton Nekrutenko](http://www.bx.psu.edu/~anton/), [James Taylor](/wiki/User%253AJamesTaylor) |
-| January 15-19, 2011 | **[Plant and Animal Genome XIX](/wiki/PAG_2011)** - Strong GMOD presence including dedicated all-day [GMOD Workshop](http://www.intl-pag.org/19/19-gmod.html) | San Diego, CA | [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements) |
-| January 9-21, 2011 | **[Workshop on Comparative Genomics, Europe](http://www.molecularevolution.org/workshops/WCG)** - Sessions on [Galaxy](/wiki/Galaxy.1) and [GBrowse_syn](/wiki/GBrowse_syn.1) | Český Krumlov, Czech Republic | [Anton Nekrutenko](http://www.bx.psu.edu/~anton/), [Sheldon McKay](/wiki/User%253AMckays) |
+| February 2-5, 2011 | **[Management and Analysis of Second and Third Generation Sequencing Data with Galaxy](http://agbt.org/agenda.html)** | [AGBT 2011](http://agbt.org/), Marco Island, FL | [Anton Nekrutenko](http://www.bx.psu.edu/~anton/), [James Taylor](/wiki/User%3AJamesTaylor) |
+| January 15-19, 2011 | **[Plant and Animal Genome XIX](/wiki/PAG_2011)** - Strong GMOD presence including dedicated all-day [GMOD Workshop](http://www.intl-pag.org/19/19-gmod.html) | San Diego, CA | [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements) |
+| January 9-21, 2011 | **[Workshop on Comparative Genomics, Europe](http://www.molecularevolution.org/workshops/WCG)** - Sessions on [Galaxy](/wiki/Galaxy.1) and [GBrowse_syn](/wiki/GBrowse_syn.1) | Český Krumlov, Czech Republic | [Anton Nekrutenko](http://www.bx.psu.edu/~anton/), [Sheldon McKay](/wiki/User%3AMckays) |
 
 ### 2002 through 2010 Events
 
 | Date | Event | Location | Contact |
 |------|-------|----------|---------|
-| November 15-16, 2010 | **[InterMine Workshop](http://www.biomed.cam.ac.uk/gradschool/skills/intermine-developers.html)** | [Department of Genetics](http://genetics.cam.ac.uk/), Cambridge, UK | [Richard Smith](/wiki/User%253ARsmith) |
-| November 8-12, 2010 | **[GMOD Tools For Evolutionary Biology Hackathon](/wiki/GMOD_Evo_Hackathon)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%253AClements) |
+| November 15-16, 2010 | **[InterMine Workshop](http://www.biomed.cam.ac.uk/gradschool/skills/intermine-developers.html)** | [Department of Genetics](http://genetics.cam.ac.uk/), Cambridge, UK | [Richard Smith](/wiki/User%3ARsmith) |
+| November 8-12, 2010 | **[GMOD Tools For Evolutionary Biology Hackathon](/wiki/GMOD_Evo_Hackathon)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%3AClements) |
 | November 3-9, 2010 | **Computational & Comparative Genomics** - Material on [Galaxy](/wiki/Galaxy.1) and [BioMart](/wiki/BioMart) | Cold Spring Harbor, NY | [William Pearson](http://people.virginia.edu/~wrp/) |
 | November 3-4, 2010 | **[UCSC Genome Browser and Galaxy Workshops](http://www.ashg.org/2010meeting/pages/workshops_Genomic_tools.shtml#5a#5a)** | [ASHG](http://www.ashg.org/), Washington DC | [Robert Kuhn](mailto:kuhn@soe.ucsc.edu) |
 | November 2, 2010 | **[World Tour of Genome Browser and Galaxy of Analysis Tools](http://blog.openhelix.eu/?p=5576)** | Pre-[ASHG](http://www.ashg.org/2010meeting/) workshop, Washington DC | [OpenHelix](http://www.openhelix.com/cgi/contact.cgi) |
 | October 25-29, 2010 | **[Pathway Tools Workshop](http://bioinformatics.ai.sri.com/ptools10/)** | [SRI International](http://bioinformatics.ai.sri.com/ptools10/directions.html), Menlo Park, CA | [Tomer Altman](mailto:taltman@ai.sri.com) |
 | October 11-14, 2010 | **[Biocuration 2010](http://hinv.jp/biocuration2010/)** | [Tokyo International Exchange Center](http://hinv.jp/biocuration2010/venue.html), Tokyo, Japan | [Biocuration2010@ics-inc.co.jp](mailto:Biocuration2010@ics-inc.co.jp) |
-| September 13-16, 2010 | **[GMOD Europe 2010](/wiki/GMOD_Europe_2010)** - Includes [September 2010 GMOD Meeting](/wiki/September_2010_GMOD_Meeting), [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Europe_2010), [InterMine Workshop](/wiki/InterMine_Workshop_-_GMOD_Europe_2010), [BioMart Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010) | University of Cambridge, UK | [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements) |
-| July 9-13, 2010 | **[ISMB 2010](/wiki/ISMB_2010)** - Lots of GMOD-related content | Boston, MA | [Scott Cain](/wiki/User%253AScott) |
-| June 29-30, 2010 | **[GMOD for Evolutionary Biology](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODForIEvoBio2010.pdf)** | [iEvoBio 2010](http://ievobio.org), Portland, OR | [Dave Clements](/wiki/User%253AClements) |
-| June 10-13, 2010 | **[MAKER: Genome annotation made easy](http://www.k-state.edu/agc/symp2010/)** | [Arthropod Genomics Symposium](http://www.k-state.edu/agc/symp2010/), Kansas City, MO | [Carson Holt](/wiki/User%253ACarsonholt) |
+| September 13-16, 2010 | **[GMOD Europe 2010](/wiki/GMOD_Europe_2010)** - Includes [September 2010 GMOD Meeting](/wiki/September_2010_GMOD_Meeting), [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Europe_2010), [InterMine Workshop](/wiki/InterMine_Workshop_-_GMOD_Europe_2010), [BioMart Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010) | University of Cambridge, UK | [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements) |
+| July 9-13, 2010 | **[ISMB 2010](/wiki/ISMB_2010)** - Lots of GMOD-related content | Boston, MA | [Scott Cain](/wiki/User%3AScott) |
+| June 29-30, 2010 | **[GMOD for Evolutionary Biology](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODForIEvoBio2010.pdf)** | [iEvoBio 2010](http://ievobio.org), Portland, OR | [Dave Clements](/wiki/User%3AClements) |
+| June 10-13, 2010 | **[MAKER: Genome annotation made easy](http://www.k-state.edu/agc/symp2010/)** | [Arthropod Genomics Symposium](http://www.k-state.edu/agc/symp2010/), Kansas City, MO | [Carson Holt](/wiki/User%3ACarsonholt) |
 | May 15-17, 2010 | **[First Galaxy Developers Conference](http://galaxy.psu.edu/dev2010/)** | Cold Spring Harbor, NY | |
-| May 6-9, 2010 | **[2010 GMOD Summer School - Americas](/wiki/2010_GMOD_Summer_School_-_Americas)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%253AClements) |
-| March 20-23, 2010 | **[GMOD Browser Tools and Exercises Workshop](/wiki/ABRF2010_Workshop)** | [ABRF 2010](http://www.abrf2010.org/), Sacramento, CA | [Mitch Skinner](/wiki/User%253AMitchSkinner) |
+| May 6-9, 2010 | **[2010 GMOD Summer School - Americas](/wiki/2010_GMOD_Summer_School_-_Americas)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%3AClements) |
+| March 20-23, 2010 | **[GMOD Browser Tools and Exercises Workshop](/wiki/ABRF2010_Workshop)** | [ABRF 2010](http://www.abrf2010.org/), Sacramento, CA | [Mitch Skinner](/wiki/User%3AMitchSkinner) |
 | March 3-5, 2010 | **[EMBO Workshop on Visualizing Biological Data (VizBi)](http://www.vizbi.org/)** | [EMBL Advanced Training Centre](http://www.embl.de/training/eicat/atc/index.html), Heidelberg, Germany | [Adela Valceanu](mailto:valceanu@embl.de) |
 | February 22-26, 2010 | **[Programmatic Access To Biological Databases (Perl)](http://www.ebi.ac.uk/training/handson/course_100222_webservicesperl.html)** - Includes sessions on [BioMart](/wiki/BioMart) and [DAS](/wiki/DAS) | [EMBL-EBI](http://www.ebi.ac.uk/), Hinxton, UK | |
-| January 14-15, 2010 | **[January 2010 GMOD Meeting](/wiki/January_2010_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
-| January 9-13, 2010 | **[Plant and Animal Genome XVII (PAG 2010)](/wiki/PAG_2010)** - [GBrowse Workshop](/wiki/GBrowse_PAG_2010_Workshop), [GBrowse_syn Workshop](/wiki/GBrowse_syn_PAG_2010_Workshop), [MAKER Workshop](/wiki/MAKER_PAG_2010_Workshop) | San Diego, CA | [Scott Cain](/wiki/User%253AScott), [Sheldon McKay](/wiki/User%253AMckays), [Carson Holt](/wiki/User%253ACarsonholt) |
-| December 8, 2009 | **[Database Tools for Biologists](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf)** | Texas A&M University, College Station, TX | [Dave Clements](/wiki/User%253AClements) |
-| November 16-17, 2009 | **InterMine Data Warehouse Workshop** | Cambridge, UK | [Richard Smith](/wiki/User%253ARsmith) |
-| November 16-17, 2009 | **[GMOD for Comparative Genomics](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf)** | [Information Systems for Insect Pests](http://colloque.inra.fr/isyip), Rennes, France | [Dave Clements](/wiki/User%253AClements) |
-| October 28-30, 2009 | **[Database Tools for Biologists: A Half-Day GMOD Workshop](/wiki/BA2009)** and NGS poster | [Bioinformatics Australia 2009](http://www.ausbiotech2009.com.au/bia/bia-home), Melbourne, Australia | [Dave Clements](/wiki/User%253AClements) |
-| October 27-30, 2009 | **[GBrowse and Next Generation Sequencing Data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf)** | Genome Informatics, Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
+| January 14-15, 2010 | **[January 2010 GMOD Meeting](/wiki/January_2010_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
+| January 9-13, 2010 | **[Plant and Animal Genome XVII (PAG 2010)](/wiki/PAG_2010)** - [GBrowse Workshop](/wiki/GBrowse_PAG_2010_Workshop), [GBrowse_syn Workshop](/wiki/GBrowse_syn_PAG_2010_Workshop), [MAKER Workshop](/wiki/MAKER_PAG_2010_Workshop) | San Diego, CA | [Scott Cain](/wiki/User%3AScott), [Sheldon McKay](/wiki/User%3AMckays), [Carson Holt](/wiki/User%3ACarsonholt) |
+| December 8, 2009 | **[Database Tools for Biologists](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf)** | Texas A&M University, College Station, TX | [Dave Clements](/wiki/User%3AClements) |
+| November 16-17, 2009 | **InterMine Data Warehouse Workshop** | Cambridge, UK | [Richard Smith](/wiki/User%3ARsmith) |
+| November 16-17, 2009 | **[GMOD for Comparative Genomics](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf)** | [Information Systems for Insect Pests](http://colloque.inra.fr/isyip), Rennes, France | [Dave Clements](/wiki/User%3AClements) |
+| October 28-30, 2009 | **[Database Tools for Biologists: A Half-Day GMOD Workshop](/wiki/BA2009)** and NGS poster | [Bioinformatics Australia 2009](http://www.ausbiotech2009.com.au/bia/bia-home), Melbourne, Australia | [Dave Clements](/wiki/User%3AClements) |
+| October 27-30, 2009 | **[GBrowse and Next Generation Sequencing Data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf)** | Genome Informatics, Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
 | October 27-30, 2009 | **[Genome Visualization and Comparison using CMap and Circos](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf)** | Genome Informatics, Cold Spring Harbor, NY | [Ken Youens-Clark](mailto:kyclar.cshl@gmail.com) |
 | October 21-22, 2009 | **Interactive Workshops on the UCSC Genome Browser and Galaxy Framework** | [ASHG](http://www.ashg.org/), Honolulu, Hawaii | |
-| October 12-27, 2009 | **Programming for Biology** - Session on [GBrowse](/wiki/GBrowse.1) | [Cold Spring Harbor Laboratory](http://www.cshl.edu), NY | [Scott Cain](/wiki/User%253AScott) |
-| August 3-7, 2009 | **[GMOD Europe 2009](/wiki/GMOD_Europe_2009)** - Includes [2009 GMOD Summer School - Europe](/wiki/2009_GMOD_Summer_School_-_Europe) and [August 2009 GMOD Meeting](/wiki/August_2009_GMOD_Meeting) | University of Oxford, UK | [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements) |
+| October 12-27, 2009 | **Programming for Biology** - Session on [GBrowse](/wiki/GBrowse.1) | [Cold Spring Harbor Laboratory](http://www.cshl.edu), NY | [Scott Cain](/wiki/User%3AScott) |
+| August 3-7, 2009 | **[GMOD Europe 2009](/wiki/GMOD_Europe_2009)** - Includes [2009 GMOD Summer School - Europe](/wiki/2009_GMOD_Summer_School_-_Europe) and [August 2009 GMOD Meeting](/wiki/August_2009_GMOD_Meeting) | University of Oxford, UK | [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements) |
 | July 20-23, 2009 | **[Biomedical Ontologies Tutorials](http://www.bioontology.org/wiki/index.php/Tutorials_and_Classes)** | [ICBO](http://icbo.buffalo.edu), Buffalo, NY | [Barry Smith](http://philosophy.buffalo.edu/people/faculty/smith/) |
-| July 16-19, 2009 | **[2009 GMOD Summer School - Americas](/wiki/2009_GMOD_Summer_School_-_Americas)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%253AClements) |
-| June 11, 2009 | **[Chado](/wiki/Chado) Databases and Integration with GMOD Tools** | [2009 Arthropod Genomics Symposium](http://www.k-state.edu/agc/symp2009/), Kansas City, MO | [Scott Cain](/wiki/User%253AScott) |
-| June 11-13, 2009 | **[Seeing the forest and the trees: visualizing next generation sequence data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf)** | Next Generation Genome Analysis in Non-Model Organisms, Storrs, CT | [Dave Clements](/wiki/User%253AClements) |
-| June 6, 2009 | **[Database Tools for Evolutionary Genomics](http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&sym_ID=27)** - Introduction to GMOD software | [SMBE 2009](http://ccg.biology.uiowa.edu/smbe/), Iowa City, IA | [Dave Clements](/wiki/User%253AClements) |
-| April 2, 2009 | **[Visualizing and Integrating Next Generation Sequence Data using GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/NGSWithGMODWorkshop.pdf)** | Evolutionary Genetics - NGS, Lutherstadt-Wittenberg, Germany | [Dave Clements](/wiki/User%253AClements) |
-| January 15-16, 2009 | **[January 2010 GMOD Meeting](/wiki/January_2010_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
-| January 10-14, 2009 | **[Plant and Animal Genome XVII (PAG 2009)](/wiki/PAG_2009)** - [GBrowse_syn Workshop](/wiki/GBrowse_syn_PAG_2009_Workshop), [GBrowse Workshop](/wiki/GBrowse_PAG_2009_Workshop) | San Diego, CA | [Sheldon McKay](/wiki/User%253AMckays), [Scott Cain](/wiki/User%253AScott) |
+| July 16-19, 2009 | **[2009 GMOD Summer School - Americas](/wiki/2009_GMOD_Summer_School_-_Americas)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%3AClements) |
+| June 11, 2009 | **[Chado](/wiki/Chado) Databases and Integration with GMOD Tools** | [2009 Arthropod Genomics Symposium](http://www.k-state.edu/agc/symp2009/), Kansas City, MO | [Scott Cain](/wiki/User%3AScott) |
+| June 11-13, 2009 | **[Seeing the forest and the trees: visualizing next generation sequence data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf)** | Next Generation Genome Analysis in Non-Model Organisms, Storrs, CT | [Dave Clements](/wiki/User%3AClements) |
+| June 6, 2009 | **[Database Tools for Evolutionary Genomics](http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&sym_ID=27)** - Introduction to GMOD software | [SMBE 2009](http://ccg.biology.uiowa.edu/smbe/), Iowa City, IA | [Dave Clements](/wiki/User%3AClements) |
+| April 2, 2009 | **[Visualizing and Integrating Next Generation Sequence Data using GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/NGSWithGMODWorkshop.pdf)** | Evolutionary Genetics - NGS, Lutherstadt-Wittenberg, Germany | [Dave Clements](/wiki/User%3AClements) |
+| January 15-16, 2009 | **[January 2010 GMOD Meeting](/wiki/January_2010_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
+| January 10-14, 2009 | **[Plant and Animal Genome XVII (PAG 2009)](/wiki/PAG_2009)** - [GBrowse_syn Workshop](/wiki/GBrowse_syn_PAG_2009_Workshop), [GBrowse Workshop](/wiki/GBrowse_PAG_2009_Workshop) | San Diego, CA | [Sheldon McKay](/wiki/User%3AMckays), [Scott Cain](/wiki/User%3AScott) |
 | October 30-31, 2008 | **InterMine Data Warehouse Workshop** | Cambridge, UK | [Richard Smith](mailto:richard@flymine.org) |
 | September 22-23, 2008 | **[BioCyc / Pathway Tools Tutorial](http://brg.ai.sri.com/ptools/tutorial/2008-09-London.html)** | London, UK | [Peter Karp](http://www.ai.sri.com/pkarp/) |
 | September 2-5, 2008 | **[Pathway Tools Tutorial](http://bioinformatics.ai.sri.com/ptools/tutorial/)** | Menlo Park, CA | [Peter Karp](http://www.ai.sri.com/pkarp/) |
 | July 20-24, 2008 | **[ISMB 2008](/wiki/ISMB_2008)** - GMOD related posters and presentations | Toronto, Canada | |
-| July 16-17, 2008 | **[July 2008 GMOD Meeting](/wiki/July_2008_GMOD_Meeting)** | University of Toronto, Canada | [Scott Cain](/wiki/User%253AScott) |
-| July 11-13, 2008 | **[2008 GMOD Summer School](/wiki/2008_GMOD_Summer_School)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%253AClements) |
-| June 4-7, 2008 | **[GMOD: Genomics Resources for Emerging Model Organisms](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GenomicsResourcesForEmergingModelOrganismsPoster.pdf)** | American Genetic Association Annual Symposium, Raleigh, NC | [Dave Clements](/wiki/User%253AClements) |
-| April 10-13, 2008 | **[Arthropod Genomics Symposium](http://www.k-state.edu/agc/symposium.shtml)** - Apollo, Chado, and GMOD presentations | Kansas City, MO | [Christine Elsik](http://explore.georgetown.edu/people/ce75/?PageTemplateID=195), [Scott Cain](/wiki/User%253AScott), [Dave Clements](/wiki/User%253AClements) |
-| April 4-6, 2008 | **[IGERT Symposium on Evolution, Development, and Genomics](http://evodevo.uoregon.edu/symposium.html)** - GMOD posters | Eugene, OR | [Dave Clements](/wiki/User%253AClements) |
-| January 15, 2008 | **[GBrowse Workshop](http://www.intl-pag.org/16/16-gbrowse.html)** | [PAG 2008](http://www.intl-pag.org/16/16-pag.html) | [Scott Cain](/wiki/User%253AScott) |
-| November 5-7, 2007 | **[November 2007 GMOD Meeting](/wiki/November_2007_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
-| November 1-5, 2007 | **[Digesting the Genome Glut: Promoting the Use and Extension of GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/2007GenomeInformaticsGMODPoster.pdf)** | Genome Informatics 2007, Cold Spring Harbor, NY | [Dave Clements](/wiki/User%253AClements) |
-| August 23-24, 2007 | **[Hackathon 2007](/wiki/Hackathon_2007_info)** | Northwestern University, Chicago, IL | [Scott Cain](/wiki/User%253AScott) |
-| July 9, 2007 | **[The GMOD Project: Creating Reusable Software Components for Genome Data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Gmod_OCCBio_2007.ppt)** | Ohio Collaborative Conference on Bioinformatics, Oxford, OH | [Scott Cain](/wiki/User%253AScott) |
-| January 18-19, 2007 | **[January 2007 GMOD Meeting](/wiki/January_2007_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
-| June 29-30, 2006 | **[June 2006 GMOD Meeting](/wiki/June_2006_GMOD_Meeting)** | [NESCent](http://nescent.org), Durham, NC | [Scott Cain](/wiki/User%253AScott) |
-| May 10-14, 2006 | **[An Example Comparative Genome Database for Yeasts Using GMOD Tools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf)** | The Biology of Genomes, Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
-| October 27-28, 2005 | **[October 2005 GMOD Meeting](/wiki/October_2005_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
-| May 16-17, 2005 | **[May 2005 GMOD Meeting](/wiki/May_2005_GMOD_Meeting)** | SRI, Menlo Park, CA | [Scott Cain](/wiki/User%253AScott) |
-| October 4-5, 2004 | **[October 2004 GMOD Meeting](/wiki/October_2004_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
-| April 26-28, 2004 | **[April 2004 GMOD Meeting](/wiki/April_2004_GMOD_Meeting)** | Cambridge, MA | [Scott Cain](/wiki/User%253AScott) |
-| May 6-7, 2003 | **[May 2003 GMOD Meeting](/wiki/May_2003_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%253AScott) |
-| February 5, 2003 | **[February 2003 GMOD Meeting](/wiki/February_2003_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%253AScott) |
+| July 16-17, 2008 | **[July 2008 GMOD Meeting](/wiki/July_2008_GMOD_Meeting)** | University of Toronto, Canada | [Scott Cain](/wiki/User%3AScott) |
+| July 11-13, 2008 | **[2008 GMOD Summer School](/wiki/2008_GMOD_Summer_School)** | [NESCent](http://nescent.org), Durham, NC | [Dave Clements](/wiki/User%3AClements) |
+| June 4-7, 2008 | **[GMOD: Genomics Resources for Emerging Model Organisms](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GenomicsResourcesForEmergingModelOrganismsPoster.pdf)** | American Genetic Association Annual Symposium, Raleigh, NC | [Dave Clements](/wiki/User%3AClements) |
+| April 10-13, 2008 | **[Arthropod Genomics Symposium](http://www.k-state.edu/agc/symposium.shtml)** - Apollo, Chado, and GMOD presentations | Kansas City, MO | [Christine Elsik](http://explore.georgetown.edu/people/ce75/?PageTemplateID=195), [Scott Cain](/wiki/User%3AScott), [Dave Clements](/wiki/User%3AClements) |
+| April 4-6, 2008 | **[IGERT Symposium on Evolution, Development, and Genomics](http://evodevo.uoregon.edu/symposium.html)** - GMOD posters | Eugene, OR | [Dave Clements](/wiki/User%3AClements) |
+| January 15, 2008 | **[GBrowse Workshop](http://www.intl-pag.org/16/16-gbrowse.html)** | [PAG 2008](http://www.intl-pag.org/16/16-pag.html) | [Scott Cain](/wiki/User%3AScott) |
+| November 5-7, 2007 | **[November 2007 GMOD Meeting](/wiki/November_2007_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
+| November 1-5, 2007 | **[Digesting the Genome Glut: Promoting the Use and Extension of GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/2007GenomeInformaticsGMODPoster.pdf)** | Genome Informatics 2007, Cold Spring Harbor, NY | [Dave Clements](/wiki/User%3AClements) |
+| August 23-24, 2007 | **[Hackathon 2007](/wiki/Hackathon_2007_info)** | Northwestern University, Chicago, IL | [Scott Cain](/wiki/User%3AScott) |
+| July 9, 2007 | **[The GMOD Project: Creating Reusable Software Components for Genome Data](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Gmod_OCCBio_2007.ppt)** | Ohio Collaborative Conference on Bioinformatics, Oxford, OH | [Scott Cain](/wiki/User%3AScott) |
+| January 18-19, 2007 | **[January 2007 GMOD Meeting](/wiki/January_2007_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
+| June 29-30, 2006 | **[June 2006 GMOD Meeting](/wiki/June_2006_GMOD_Meeting)** | [NESCent](http://nescent.org), Durham, NC | [Scott Cain](/wiki/User%3AScott) |
+| May 10-14, 2006 | **[An Example Comparative Genome Database for Yeasts Using GMOD Tools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf)** | The Biology of Genomes, Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
+| October 27-28, 2005 | **[October 2005 GMOD Meeting](/wiki/October_2005_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
+| May 16-17, 2005 | **[May 2005 GMOD Meeting](/wiki/May_2005_GMOD_Meeting)** | SRI, Menlo Park, CA | [Scott Cain](/wiki/User%3AScott) |
+| October 4-5, 2004 | **[October 2004 GMOD Meeting](/wiki/October_2004_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
+| April 26-28, 2004 | **[April 2004 GMOD Meeting](/wiki/April_2004_GMOD_Meeting)** | Cambridge, MA | [Scott Cain](/wiki/User%3AScott) |
+| May 6-7, 2003 | **[May 2003 GMOD Meeting](/wiki/May_2003_GMOD_Meeting)** | Cold Spring Harbor, NY | [Scott Cain](/wiki/User%3AScott) |
+| February 5, 2003 | **[February 2003 GMOD Meeting](/wiki/February_2003_GMOD_Meeting)** | San Diego, CA | [Scott Cain](/wiki/User%3AScott) |
 | April 29-30, 2002 | **[NIH 2002 Workshop on Model Organism Databases](/wiki/NIH_2002_Workshop_on_Model_Organism_Databases)** - The meeting where GMOD was born | NIH, Bethesda, MD | |

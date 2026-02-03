@@ -24,8 +24,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -40,7 +40,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs _directly_ under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion

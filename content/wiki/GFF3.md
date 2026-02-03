@@ -542,4 +542,4 @@ your sequences in a separate file containing only FASTA entries.
 
 You can validate reasonably large GFF3 files at the following sites:
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)

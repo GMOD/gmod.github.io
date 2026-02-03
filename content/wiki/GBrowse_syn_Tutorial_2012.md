@@ -9,7 +9,7 @@ Use
 
 
 This tutorial on [GBrowse syn](/wiki/GBrowse_syn.1) was taught
-by [Sheldon McKay](/wiki/User%253AMckays) as part of the [2013 GMOD
+by [Sheldon McKay](/wiki/User%3AMckays) as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:

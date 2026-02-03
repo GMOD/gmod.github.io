@@ -4,7 +4,7 @@ title: "JBrowse Tutorial PAG 2015"
 # JBrowse Tutorial PAG 2015
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%253AScott) at the
+Cain](/wiki/User%3AScott) at the
 <a href="/wiki/PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
 Meeting</a> in January 2015 using JBrowse 1.11.5.
 

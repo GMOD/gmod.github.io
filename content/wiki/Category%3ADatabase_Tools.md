@@ -11,23 +11,23 @@ This category has the following 5 subcategories, out of 5 total.
 
 ### B
 
-- [BioMart](/wiki/Category%253ABioMart)
+- [BioMart](/wiki/Category%3ABioMart)
 
 ### C
 
-- [Chado](/wiki/Category%253AChado)
+- [Chado](/wiki/Category%3AChado)
 
 ### I
 
-- [InterMine](/wiki/Category%253AInterMine)
+- [InterMine](/wiki/Category%3AInterMine)
 
 ### M
 
-- [MySQL](/wiki/Category%253AMySQL)
+- [MySQL](/wiki/Category%3AMySQL)
 
 ### P
 
-- [PostgreSQL](/wiki/Category%253APostgreSQL)
+- [PostgreSQL](/wiki/Category%3APostgreSQL)
 
 ## Pages in category "Database Tools"
 

@@ -5,7 +5,7 @@ title: "Category%253AXML"
 
 Pages that deal significantly with [XML](/wiki/Glossary#XML). XML
 is commonly used in
-[Middleware](/wiki/Category%253AMiddleware).
+[Middleware](/wiki/Category%3AMiddleware).
 
 ## Subcategories
 
@@ -13,7 +13,7 @@ This category has only the following subcategory.
 
 ### X
 
-- [XORT](/wiki/Category%253AXORT)
+- [XORT](/wiki/Category%3AXORT)
 
 ## Pages in category "XML"
 

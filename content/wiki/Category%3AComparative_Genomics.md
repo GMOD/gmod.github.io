@@ -11,11 +11,11 @@ This category has the following 2 subcategories, out of 2 total.
 
 ### G
 
-- [GBrowse syn](/wiki/Category%253AGBrowse_syn)
+- [GBrowse syn](/wiki/Category%3AGBrowse_syn)
 
 ### S
 
-- [Sybil](/wiki/Category%253ASybil)
+- [Sybil](/wiki/Category%3ASybil)
 
 ## Pages in category "Comparative Genomics"
 

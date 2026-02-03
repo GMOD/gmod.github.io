@@ -53,4 +53,4 @@ Tutorial 2012</a></li>
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253A2013_Summer_School](/wiki/Category%253A2013_Summer_School)"
+"[http://gmod.org/wiki/Category:2013_Summer_School](/wiki/Category%3A2013_Summer_School)"

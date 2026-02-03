@@ -15,5 +15,5 @@ However, how to generate whole genome alignments, identify orthologous
 regions, etc, are the subject of considerable interest, so some
 background reading is listed below:
 
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [GBrowse syn](/wiki/Category%253AGBrowse_syn)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [GBrowse syn](/wiki/Category%3AGBrowse_syn)

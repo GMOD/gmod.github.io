@@ -4,7 +4,7 @@ title: "JBrowse Tutorial Programming for Biology 2015"
 # JBrowse Tutorial Programming for Biology 2015
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%253AScott) at the Programming for Biology at Cold
+Cain](/wiki/User%3AScott) at the Programming for Biology at Cold
 Spring Harbor Laboratory in October 2015 using JBrowse 1.11.6.
 
 This tutorial assumes a Mac OS X computer with apache configured to

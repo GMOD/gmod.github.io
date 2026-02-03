@@ -32,8 +32,8 @@ project which is a generic ORM/website code generation tool.
 
 ## Documentation
 
-- [Chado%253A%253AAutoDBI
-  Presentation](/wiki/Chado%253A%253AAutoDBI_Presentation)
+- [Chado::AutoDBI
+  Presentation](/wiki/Chado%3A%3AAutoDBI_Presentation)
 - [GMOD Middleware](/wiki/GMOD_Middleware) - discusses
   different packages, contains section on Chado%253A%253AAutoDBI
 

@@ -11,4 +11,4 @@ This category contains only the following page.
 
 - [BioDIG](/wiki/BioDIG.1)
 
-Retrieved from "[http://gmod.org/wiki/Category%253ABioDIG](/wiki/Category%253ABioDIG)"
+Retrieved from "[http://gmod.org/wiki/Category:BioDIG](/wiki/Category%3ABioDIG)"

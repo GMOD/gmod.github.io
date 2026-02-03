@@ -12,7 +12,7 @@ This category has only the following subcategory.
 ### U
 
 - [Under
-  Construction](/wiki/Category%253AUnder_Construction)
+  Construction](/wiki/Category%3AUnder_Construction)
 
 ## Pages in category "Wiki Tools"
 

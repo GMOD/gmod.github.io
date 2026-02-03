@@ -12,11 +12,11 @@ This category has the following 2 subcategories, out of 2 total.
 
 ### C
 
-- [Configuration](/wiki/Category%253AConfiguration)
+- [Configuration](/wiki/Category%3AConfiguration)
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ## Pages in category "HOWTO"
 

@@ -298,10 +298,10 @@ style="font-size: 79.409638554217%; ">WormBase</a>
 ## Category Tree
 
 Categories can be nested hierarchically. For example, the [GMOD
-Components](/wiki/Category%253AGMOD_Components)
+Components](/wiki/Category%3AGMOD_Components)
 category contains several subcategories for individual components (such
-as [Apollo](/wiki/Category%253AApollo) and
-[GBrowse](/wiki/Category%253AGBrowse)).
+as [Apollo](/wiki/Category%3AApollo) and
+[GBrowse](/wiki/Category%3AGBrowse)).
 
 **Eventually** this section will list the categories in a tree format.
 It doesn't do that now because the extensions I can find that do this

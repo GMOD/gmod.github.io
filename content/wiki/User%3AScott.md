@@ -14,7 +14,7 @@ culture and cell cycle modifications. Upon earning his Ph. D. in
 Chemical Engineering, he began work in the software industry, working
 for MSI/Accelrys, Pangea Systems/DoubleTwist, and Athersys, until
 finally coming to rest at Cold Spring Harbor Laboratory in [Lincoln
-Stein's](/wiki/User%253ALstein) lab, following Lincoln to
+Stein's](/wiki/User%3ALstein) lab, following Lincoln to
 [OICR](http://oicr.on.ca/) several years ago. He is the coordinator and a
 lead developer of the [GMOD project](/wiki/Main_Page), focusing
 mainly on core schema and tool development, but is also a developer for

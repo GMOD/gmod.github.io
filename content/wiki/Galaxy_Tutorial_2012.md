@@ -5,7 +5,7 @@ title: "Galaxy Tutorial 2012"
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy.1) server. This tutorial was originally taught
-by [Dave Clements](/wiki/User%253AClements) at the [2012 GMOD
+by [Dave Clements](/wiki/User%3AClements) at the [2012 GMOD
 Summer School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:

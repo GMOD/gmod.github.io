@@ -8,7 +8,7 @@ Frequently Asked Questions and Definitions.
 See also:
 
 - [Glossary](/wiki/Glossary)
-- [Category%253AHOWTO](/wiki/Category%253AHOWTO)
+- [Category:HOWTO](/wiki/Category%3AHOWTO)
 
 ## Pages in category "FAQ"
 

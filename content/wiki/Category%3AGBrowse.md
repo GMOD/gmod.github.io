@@ -11,10 +11,10 @@ This category has the following 3 subcategories, out of 3 total.
 
 ### G
 
-- [GBrowse 2](/wiki/Category%253AGBrowse_2)
+- [GBrowse 2](/wiki/Category%3AGBrowse_2)
 - [GBrowse
-  Developer](/wiki/Category%253AGBrowse_Developer)
-- [GBrowse syn](/wiki/Category%253AGBrowse_syn)
+  Developer](/wiki/Category%3AGBrowse_Developer)
+- [GBrowse syn](/wiki/Category%3AGBrowse_syn)
 
 ## Pages in category "GBrowse"
 

@@ -69,5 +69,5 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
   title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
 
 
-See **[Category%253AGBrowse](/wiki/Category%253AGBrowse)** for more
+See **[Category:GBrowse](/wiki/Category%3AGBrowse)** for more
 GBrowse documentation.

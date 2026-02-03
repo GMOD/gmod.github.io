@@ -20,7 +20,7 @@ The following 6 pages are in this category, out of 6 total.
   Directory](/wiki/Installing_GBrowse2_in_your_Home_Directory)
 - [Introduction to Chado](/wiki/Introduction_to_Chado)
 - [Talk:Introduction to
-  Chado](/wiki/Talk%253AIntroduction_to_Chado)
+  Chado](/wiki/Talk%3AIntroduction_to_Chado)
 
 ### S
 

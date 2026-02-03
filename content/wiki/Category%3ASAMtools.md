@@ -32,4 +32,4 @@ This category contains only the following file.
 
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ASAMtools](/wiki/Category%253ASAMtools)"
+"[http://gmod.org/wiki/Category:SAMtools](/wiki/Category%3ASAMtools)"

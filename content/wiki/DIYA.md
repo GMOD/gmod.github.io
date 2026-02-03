@@ -25,5 +25,5 @@ class="external text" rel="nofollow">Gnu GPL</a>
 
 Resources
 
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [Annotation](/wiki/Category%253AAnnotation)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [Annotation](/wiki/Category%3AAnnotation)

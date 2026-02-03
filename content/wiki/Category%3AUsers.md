@@ -13,6 +13,6 @@ The following 2 pages are in this category, out of 2 total.
 
 ### M
 
-- [User%253AMnrusimh](/wiki/User%253AMnrusimh)
+- [User:Mnrusimh](/wiki/User%3AMnrusimh)
 
-Retrieved from "[http://gmod.org/wiki/Category%253AUsers](/wiki/Category%253AUsers)"
+Retrieved from "[http://gmod.org/wiki/Category:Users](/wiki/Category%3AUsers)"

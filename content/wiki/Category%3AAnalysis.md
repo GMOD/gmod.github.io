@@ -12,7 +12,7 @@ This category has only the following subcategory.
 
 ### B
 
-- [BLAST](/wiki/Category%253ABLAST)
+- [BLAST](/wiki/Category%3ABLAST)
 
 ## Pages in category "Analysis"
 

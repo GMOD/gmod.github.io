@@ -11,7 +11,7 @@ rel="nofollow">Sol Genomics Network</a>.
 
 # Work
 
-- [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema)
+- [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema)
 - <a href="http://solgenomics.net" class="external text"
   rel="nofollow">SGN</a> development of the genes and phenotypes
   database

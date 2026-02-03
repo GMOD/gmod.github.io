@@ -4,7 +4,7 @@ title: "Main Page"
 # Main Page
 
 (Redirected from
-[GMOD%253AAbout](/wiki/GMOD%253AAbout)
+[GMOD:About](/wiki/GMOD%3AAbout)
 
 GMOD is Social
 

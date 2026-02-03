@@ -37,7 +37,7 @@ using XORT and what is involved to do so.
 
 ## Author
 
-- [Josh Goodman](/wiki/User%253AJogoodma)
+- [Josh Goodman](/wiki/User%3AJogoodma)
 
 ## Prerequisites
 

@@ -19,7 +19,7 @@ The following 4 pages are in this category, out of 4 total.
 
 ### D
 
-- [DBD::mysql on the Mac](/wiki/DBD%253A%253Amysql_on_the_Mac)
+- [DBD::mysql on the Mac](/wiki/DBD%3A%3Amysql_on_the_Mac)
 
 ### F
 

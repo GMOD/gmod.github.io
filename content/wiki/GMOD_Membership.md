@@ -72,7 +72,7 @@ part of GMOD through a nomination and evaluation process.
 
 Software can be nominated by its developers, by GMOD users, or by GMOD
 staff. New components also arise from within the community.
-[Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema),
+[Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema),
 [DIYA](/wiki/DIYA), and [MAKER](/wiki/MAKER.1) are all recent
 examples of software becoming a part of GMOD.
 
@@ -86,7 +86,7 @@ to the tool.
 ### Evaluation
 
 Nominated software is first evaluated by GMOD staff (currently the [GMOD
-Project Coordinator](/wiki/User%253AScott) and the [GMOD Help
+Project Coordinator](/wiki/User%3AScott) and the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk)) to see if it meets basic
 [requirements](#Requirements) such as *open source licensing* and *GMOD
 interoperability*. We'll also confirm a *good faith commitment of
@@ -115,8 +115,8 @@ butterfly wings), is probably not a good match for GMOD. Tools must be
 useful across a wide range of biology, and meet a widespread need. Tools
 that support <a href="/wiki/Next_generation_sequencing" class="mw-redirect"
 title="Next generation sequencing">next generation sequencing</a>, [gene
-expression](/wiki/Category%253AExpression),
-[phenotypes](/wiki/Category%253APhenotypes), or [comparative
+expression](/wiki/Category%3AExpression),
+[phenotypes](/wiki/Category%3APhenotypes), or [comparative
 genomics](/wiki/Comparative_Genomics) are good examples
 of broadly applicable tools.
 Useful Over Time
@@ -185,7 +185,7 @@ Being officially part of GMOD has several advantages:
 
 However, a component does not need to be officially part of GMOD to have
 a presence in GMOD. Any software that is useful to the GMOD community is
-of interest. See [External](/wiki/Category%253AExternal) for a
+of interest. See [External](/wiki/Category%3AExternal) for a
 list of such software that currently has a page on the GMOD web site.
 GMOD is particularly interested in tools (such as
 [Artemis](/wiki/Artemis)) that interoperate with GMOD components.

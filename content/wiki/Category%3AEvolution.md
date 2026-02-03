@@ -4,7 +4,7 @@ title: "Category%253AEvolution"
 # Category%253AEvolution
 
 See also the [Comparative
-Genomics](/wiki/Category%253AComparative_Genomics)
+Genomics](/wiki/Category%3AComparative_Genomics)
 category.
 
 ## Pages in category "Evolution"
@@ -13,7 +13,7 @@ The following 3 pages are in this category, out of 3 total.
 
 ### B
 
-- [User%253ABrianfoley](/wiki/User%253ABrianfoley)
+- [User:Brianfoley](/wiki/User%3ABrianfoley)
 
 ### C
 

@@ -240,10 +240,10 @@ course to a coherent close.</td>
 
 Sessions were taught by experienced GMOD personnel, including:
 
-- [Scott Cain](/wiki/User%253AScott) - GMOD Project Coordinator
-- [Dave Clements](/wiki/User%253AClements) - [GMOD Help
+- [Scott Cain](/wiki/User%3AScott) - GMOD Project Coordinator
+- [Dave Clements](/wiki/User%3AClements) - [GMOD Help
   Desk](/wiki/GMOD_Help_Desk)
-- [Ben Faga](/wiki/User%253AFaga) - [CMap](/wiki/CMap.1) and
+- [Ben Faga](/wiki/User%3AFaga) - [CMap](/wiki/CMap.1) and
   [GBrowse](/wiki/GBrowse.1) developer
 - Ed Lee - [Apollo](/wiki/Apollo.1) developer
 
@@ -262,7 +262,7 @@ people who actually implement and manage a GMOD installation on a day to
 day basis. This course was for organizations either planning to use GMOD
 components, or in the early phases of implementing GMOD.
 
-| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User%253AScott)          | CSHL                                       | [Dave Clements](/wiki/User%253AClements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User%253AFaga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
+| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User%3AScott)          | CSHL                                       | [Dave Clements](/wiki/User%3AClements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User%3AFaga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
 
 # Prerequisites
 
@@ -291,8 +291,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -307,7 +307,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs _directly_ under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion

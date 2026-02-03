@@ -13,4 +13,4 @@ This category contains only the following page.
   2014/Schedule](/wiki/GMOD_Online_Training_2014/Schedule)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AGMOD_Online_Training](/wiki/Category%253AGMOD_Online_Training)"
+"[http://gmod.org/wiki/Category:GMOD_Online_Training](/wiki/Category%3AGMOD_Online_Training)"

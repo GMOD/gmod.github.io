@@ -3,7 +3,7 @@ title: "Category%253AJavascript"
 ---
 # Category%253AJavascript
 
-See also the [AJAX Category](/wiki/Category%253AAJAX).
+See also the [AJAX Category](/wiki/Category%3AAJAX).
 
 ## Pages in category "Javascript"
 

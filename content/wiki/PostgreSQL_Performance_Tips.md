@@ -29,4 +29,4 @@ the 8.x series.
 
 ## General Tips
 
-- [PostgreSQL](/wiki/Category%253APostgreSQL)
+- [PostgreSQL](/wiki/Category%3APostgreSQL)

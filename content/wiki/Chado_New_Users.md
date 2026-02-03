@@ -151,5 +151,5 @@ Note that proteins ≠ polypeptides. Hemoglobin is a heterotetramer of two
 - [Chado -
   Getting_Started](/wiki/Chado_-_Getting_Started) -
   and documentation links from there.
-- [Category%253AChado](/wiki/Category%253AChado) - the Category page
+- [Category:Chado](/wiki/Category%3AChado) - the Category page
   for all pages about Chado in this wiki

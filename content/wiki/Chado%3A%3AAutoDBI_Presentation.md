@@ -31,7 +31,7 @@ title="AutoDBI.pdf">Brian O'Connor's presentation</a>.
 - [Problems 3,
   4, & 5](#Problems_3.2C_4.2C_.26_5)
 - [Things
-  Chado%253A%253AAutoDBI does well](#Things_Chado%253A%253AAutoDBI_does_well)
+  Chado::AutoDBI does well](#Things_Chado%3A%3AAutoDBI_does_well)
 - [For More
   Information](#For_More_Information)
 

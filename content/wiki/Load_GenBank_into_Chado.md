@@ -17,7 +17,7 @@ title: "Load GenBank into Chado"
 
 ## Abstract
 
-This [HOWTO](/wiki/Category%253AHOWTO) describes how to load
+This [HOWTO](/wiki/Category%3AHOWTO) describes how to load
 GenBank format files into
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. For a
 thorough discussion of this topic, including all the files that will
@@ -155,6 +155,6 @@ these errors by hand and reload.
 
 ## Authors
 
-- [Don Gilbert](/wiki/User%253ADongilbert)
+- [Don Gilbert](/wiki/User%3ADongilbert)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

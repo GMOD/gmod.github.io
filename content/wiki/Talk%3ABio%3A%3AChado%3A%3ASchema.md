@@ -7,7 +7,7 @@ title: "Talk:Bio%253A%253AChado%253A%253ASchema"
 
 Where is the boundary between this and [modware](/wiki/Modware)
 then? I thought the point of modware was to provide that level of
-compatibility. [Scott](/wiki/User%253AScott) 17:55, 14 April 2011
+compatibility. [Scott](/wiki/User%3AScott) 17:55, 14 April 2011
 (UTC)
 
 ------------------------------------------------------------------------
@@ -27,5 +27,5 @@ to the Bio::SeqI accessors: \`seq()\` is an alias for \`residues()\`,
 \`display_id()\` is an alias for \`name()\`, etc.
 
 I don't think anything much more involved than that belongs in BCS
-though. --[RobertBuels](/wiki/User%253ARobertBuels) 18:15, 14
+though. --[RobertBuels](/wiki/User%3ARobertBuels) 18:15, 14
 April 2011 (UTC)

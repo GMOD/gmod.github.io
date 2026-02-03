@@ -135,7 +135,7 @@ In progress.
 ## Background
 
 This effort was started after [Josh
-Goodman](/wiki/User%253AJogoodma)'s talk at the [January
+Goodman](/wiki/User%3AJogoodma)'s talk at the [January
 2009 GMOD
 Meeting](/wiki/January_2009_GMOD_Meeting)
 meeting titled "[MOD Web API (A RESTful interface for
@@ -148,7 +148,7 @@ currently in the proposal stage and have no been implemented at any
 
 ## Members
 
-- [Josh Goodman](/wiki/User%253AJogoodma) -
+- [Josh Goodman](/wiki/User%3AJogoodma) -
   <a href="http://flybase.org" class="external text"
   rel="nofollow">FlyBase</a>
 - Robert Buels -

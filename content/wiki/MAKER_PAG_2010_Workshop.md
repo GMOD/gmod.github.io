@@ -44,7 +44,7 @@ MAKER on a local machine.
 
 ## Workshop Instructor
 
-- [Carson Holt](/wiki/User%253ACarsonholt),
+- [Carson Holt](/wiki/User%3ACarsonholt),
   <a href="http://www.utah.edu" class="external text"
   rel="nofollow">University of Utah</a>
 

@@ -97,4 +97,4 @@ The following 3 files are in this category, out of 3 total.
 
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AGeneric_Gene_Pages](/wiki/Category%253AGeneric_Gene_Pages)"
+"[http://gmod.org/wiki/Category:Generic_Gene_Pages](/wiki/Category%3AGeneric_Gene_Pages)"

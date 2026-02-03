@@ -13,4 +13,4 @@ This category contains only the following page.
   Tips](/wiki/PostgreSQL_Performance_Tips)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253APerformance](/wiki/Category%253APerformance)"
+"[http://gmod.org/wiki/Category:Performance](/wiki/Category%3APerformance)"

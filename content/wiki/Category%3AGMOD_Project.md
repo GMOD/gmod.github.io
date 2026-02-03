@@ -12,15 +12,15 @@ This category has the following 5 subcategories, out of 5 total.
 
 ### G
 
-- [GMOD Community](/wiki/Category%253AGMOD_Community)
-- [GMOD Developers](/wiki/Category%253AGMOD_Developers)
+- [GMOD Community](/wiki/Category%3AGMOD_Community)
+- [GMOD Developers](/wiki/Category%3AGMOD_Developers)
 - [GMOD Project
-  Presentations](/wiki/Category%253AGMOD_Project_Presentations)
-- [GMOD Web Site](/wiki/Category%253AGMOD_Web_Site)
+  Presentations](/wiki/Category%3AGMOD_Project_Presentations)
+- [GMOD Web Site](/wiki/Category%3AGMOD_Web_Site)
 
 ### M
 
-- [Meetings](/wiki/Category%253AMeetings)
+- [Meetings](/wiki/Category%3AMeetings)
 
 ## Pages in category "GMOD Project"
 

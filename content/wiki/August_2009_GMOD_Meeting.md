@@ -243,5 +243,5 @@ href="#GMOD_Project_Talks">Summary</a></td>
 <td>14:30-15:00</td>
 <td style="text-align: center;"><a href="/wiki/User%253AClements"
 title="User%253AClements">Dave Clements</a>
-- [Semantic web](/wiki/Category%253ASemantic_web)
-- [JBrowse](/wiki/Category%253AJBrowse)
+- [Semantic web](/wiki/Category%3ASemantic_web)
+- [JBrowse](/wiki/Category%3AJBrowse)

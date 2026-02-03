@@ -4,7 +4,7 @@ title: "WebApollo Tutorial 2012"
 # WebApollo Tutorial 2012
 
 This [WebApollo](/wiki/WebApollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%253AElee) at the [2012 GMOD Summer
+Lee](/wiki/User%3AElee) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:

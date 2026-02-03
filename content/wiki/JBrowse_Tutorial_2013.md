@@ -4,7 +4,7 @@ title: "JBrowse Tutorial 2013"
 # JBrowse Tutorial 2013
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Robert
-Buels](/wiki/User%253ARobertBuels) at the [2013 GMOD Summer
+Buels](/wiki/User%3ARobertBuels) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School) in July 2013
 using JBrowse 1.9.8.
 

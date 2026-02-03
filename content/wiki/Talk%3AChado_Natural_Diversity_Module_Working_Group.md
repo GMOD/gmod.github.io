@@ -94,7 +94,7 @@ Neither group is opposed to the other group's goal *per se* - they just
 happened to be incompatible goals.
 
 To address both these needs, [Rob
-Buells](/wiki/User%253ARobertBuels) proposed
+Buells](/wiki/User%3ARobertBuels) proposed
 
 - multiple incremental releases,
 - with perhaps some backwards incompatibility,
@@ -263,7 +263,7 @@ well.
 ### Phenotypes
 
 Phenotypes are not particularly well defined in Chado.
-[Scott](/wiki/User%253AScott) says that there are two sets of
+[Scott](/wiki/User%3AScott) says that there are two sets of
 phenotype tables in Chado. One is a first rough draft that snuck in (and
 is used by some), and the other is a more robust set, which is used by
 others (including FlyBase). Too make things worse, which tables are in
@@ -381,7 +381,7 @@ Anything else?
 # February 2010
 
 The first meeting in February will be held Monday February 8, at 11am
-Eastern US. Contact [Dave C](/wiki/User%253AClements) if you are
+Eastern US. Contact [Dave C](/wiki/User%3AClements) if you are
 interested in participating in this meeting.
 
 Meetings after that will be scheduled at a regular time according to

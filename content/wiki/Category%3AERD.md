@@ -4,8 +4,8 @@ title: "Category%253AERD"
 # Category%253AERD
 
 Entity-Relationship Diagrams for GMOD (and thus mostly if not entirely
-[Category%253AChado
-Modules](/wiki/Category%253AChado_Modules)).
+[Category:Chado
+Modules](/wiki/Category%3AChado_Modules)).
 
 ## Media in category "ERD"
 

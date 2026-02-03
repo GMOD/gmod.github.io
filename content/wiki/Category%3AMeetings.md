@@ -4,7 +4,7 @@ title: "Category%253AMeetings"
 # Category%253AMeetings
 
 GMOD meeting related pages. See [Meetings](/wiki/Meetings) for
-more. See [Events](/wiki/Category%253AEvents) for other types of
+more. See [Events](/wiki/Category%3AEvents) for other types of
 events.
 
 ## Subcategories
@@ -14,7 +14,7 @@ This category has only the following subcategory.
 ### M
 
 - [MOD User
-  Interfaces](/wiki/Category%253AMOD_User_Interfaces)
+  Interfaces](/wiki/Category%3AMOD_User_Interfaces)
 
 ## Pages in category "Meetings"
 

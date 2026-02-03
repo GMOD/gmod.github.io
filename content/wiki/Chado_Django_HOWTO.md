@@ -60,7 +60,7 @@ title: "Chado Django HOWTO"
 
 ## Abstract
 
-This [HOWTO](/wiki/Category%253AHOWTO) describes how to use the
+This [HOWTO](/wiki/Category%3AHOWTO) describes how to use the
 <a href="http://www.djangoproject.com/" class="external text"
 rel="nofollow">Django</a> (Python based) framework for accessing a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
@@ -282,7 +282,7 @@ command.
       ./manage.py inspectdb > unsortedmodels.py
 
 This will create a raw `models.py` with a model for each table and view
-in the specified [Postgres](/wiki/Category%253APostgreSQL)
+in the specified [Postgres](/wiki/Category%3APostgreSQL)
 database. We will need to edit this file a bit with a Perl script.
 
 Each foreign key relation should have a unique name in Django to support

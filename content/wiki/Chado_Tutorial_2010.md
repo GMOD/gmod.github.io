@@ -9,14 +9,14 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="164" alt="Chado" />
 
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](/wiki/User%253AScott), [Dave
-Clements](/wiki/User%253AClements), [Joshua
-Orvis](/wiki/User%253AJorvis) (_in absentia_) at the 2010 GMOD
+tutorial was presented by [Scott Cain](/wiki/User%3AScott), [Dave
+Clements](/wiki/User%3AClements), [Joshua
+Orvis](/wiki/User%3AJorvis) (_in absentia_) at the 2010 GMOD
 Summer School - Americas, May 2010. The most recent Chado tutorial can
 be found at the <a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado Tutorial</a> page.
 
-This [tutorial](/wiki/Category%253ATutorials) walks you
+This [tutorial](/wiki/Category%3ATutorials) walks you
 through how to install and configure a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database,
 Chado being the database [schema](/wiki/Glossary#Schema) of the
@@ -177,7 +177,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%253ATutorials) describes the
+This [tutorial](/wiki/Category%3ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -193,9 +193,9 @@ available.
 Or, _Six years of school in 15 minutes or less._
 
 - [Tables, Rows, and
-  Columns](/wiki/Databases%253A_Tables,_Rows,_and_Columns)
+  Columns](/wiki/Databases%3A_Tables,_Rows,_and_Columns)
 - [Primary, Foreign and Alternate
-  Keys](/wiki/Databases%253A_Primary,_Foreign_and_Alternate_Keys)
+  Keys](/wiki/Databases%3A_Primary,_Foreign_and_Alternate_Keys)
 - [Chado Tables](/wiki/Chado_Tables)
 
 #### What's a [database](/wiki/Databases_and_GMOD)?
@@ -241,7 +241,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Extensible**
   - Write your own modules and properties
 - **Widely used**
-  - [FlyBase](/wiki/Category%253AFlyBase) - Chado started here,
+  - [FlyBase](/wiki/Category%3AFlyBase) - Chado started here,
     large diverse dataset and organization
   - <a href="http://xenbase.org" class="external text"
     rel="nofollow">Xenbase</a> - Smaller, but with several IT staff

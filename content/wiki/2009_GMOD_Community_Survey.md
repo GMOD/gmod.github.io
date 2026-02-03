@@ -1365,9 +1365,9 @@ here.
   [GBrowse](/wiki/GBrowse.1) and documentation of track
   configuration and additional data type adding are core requirements
   that could be made better. Although I haven't used [GBrowse
-  2](/wiki/Category%253AGBrowse_2) it sounds like the
+  2](/wiki/Category%3AGBrowse_2) it sounds like the
   performance element is being addressed.
-- User [GBrowse v2](/wiki/Category%253AGBrowse_2) Tutorial?
+- User [GBrowse v2](/wiki/Category%3AGBrowse_2) Tutorial?
 - part of my job takes place on an academic expression platform. I have
   to deal with expression microarray analyzes coming from 2 colors
   arrays and also from RNA-Seq and ChIP-Seq experiments. We use to give

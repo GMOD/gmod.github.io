@@ -261,7 +261,7 @@ Public installations of CMap:
 
 ### Development team
 
-Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User%253AFaga),
+Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User%3AFaga),
 <a href="mailto:kclark@cshl.edu" class="external text"
 rel="nofollow">Ken Youens-Clark</a>
 
@@ -276,7 +276,7 @@ at Gramene.org hopes to replace CMap with a lighter, Javascript version.
 
 ## More on CMap
 
-See [Category%253ACMap](/wiki/Category%253ACMap)
+See [Category:CMap](/wiki/Category%3ACMap)
 
 ### CMap Logo
 

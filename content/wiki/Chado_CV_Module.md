@@ -627,7 +627,7 @@ represents the class of things that happen during the larval stage.
 Two views: _cvterm_genus_ and _cvterm_differentium_ views are in
 chado/modules/cv/views.
 
-### Example Use Case: [Phenotypes](/wiki/Category%253APhenotypes)
+### Example Use Case: [Phenotypes](/wiki/Category%3APhenotypes)
 
 The idea here is that queries for composed term "syndactyly" should
 automatically return the same results as a boolean query for "fusion" +

@@ -13,9 +13,9 @@ width="250" height="80" alt="GBrowse syn" />
 This [Comparative Genomics with GBrowse_syn: A hands on workshop for
 visualizing your syntenic data with
 GBrowse_syn](/wiki/GBrowse_syn.1) tutorial was presented by
-[Sheldon McKay](/wiki/User%253AMckays), [Scott
-Cain](/wiki/User%253AScott), and [Dave
-Clements](/wiki/User%253AClements) at the
+[Sheldon McKay](/wiki/User%3AMckays), [Scott
+Cain](/wiki/User%3AScott), and [Dave
+Clements](/wiki/User%3AClements) at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome Conference</a>, January 2009. The
 most recent GBrowse syn tutorial can be found at the
@@ -63,16 +63,16 @@ workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
 
 ## Workshop Instructors
 
-- [Sheldon McKay](/wiki/User%253AMckays),
+- [Sheldon McKay](/wiki/User%3AMckays),
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant Collaborative</a> (and author of
   [GBrowse_syn](/wiki/GBrowse_syn.1)),
   <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
   Spring Harbor Laboratory</a>
-- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%3AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
-- [Dave Clements](/wiki/User%253AClements),
+- [Dave Clements](/wiki/User%3AClements),
   [GMOD_Help_Desk](/wiki/GMOD_Help_Desk),
   <a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>
@@ -126,8 +126,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -145,7 +145,7 @@ alt="Apple" /></a>
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, **all of which require an Intel Mac**:
 
 

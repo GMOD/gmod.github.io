@@ -40,5 +40,5 @@ width="89" height="66" alt="PoweredByGBrowseAnimalGenome2.jpg" /> | ## See also
 
 - [GMOD Promotion](/wiki/GMOD_Promotion)
 - [GMOD Project
-  Logos](/wiki/Category%253AGMOD_Project_Logos)
-- [Logos and Icons](/wiki/Category%253ALogos_and_Icons)
+  Logos](/wiki/Category%3AGMOD_Project_Logos)
+- [Logos and Icons](/wiki/Category%3ALogos_and_Icons)

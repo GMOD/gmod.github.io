@@ -8,7 +8,7 @@ title: "GMOD in a Box"
 
 
 GMOD in a Box is a [GMOD virtual
-server](/wiki/Category%253AGMOD_virtual_server)
+server](/wiki/Category%3AGMOD_virtual_server)
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo
 or WebApollo**. Setting up a GMOD in a Box instance is quick and easy;
@@ -104,7 +104,7 @@ section](/wiki/GMOD_in_a_Box.1#Phoning_home) below.
 
 #### Build information
 
-[Scott](/wiki/User%253AScott) has fairly extensive notes on the
+[Scott](/wiki/User%3AScott) has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in a
 Box. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"

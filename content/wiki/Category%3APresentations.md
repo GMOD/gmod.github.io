@@ -10,23 +10,23 @@ This category has the following 5 subcategories, out of 5 total.
 ### C
 
 - [Chado
-  Presentations](/wiki/Category%253AChado_Presentations)
+  Presentations](/wiki/Category%3AChado_Presentations)
 
 ### G
 
 - [GMOD Project
-  Presentations](/wiki/Category%253AGMOD_Project_Presentations)
+  Presentations](/wiki/Category%3AGMOD_Project_Presentations)
 
 ### M
 
 - [Middleware
-  Presentations](/wiki/Category%253AMiddleware_Presentations)
+  Presentations](/wiki/Category%3AMiddleware_Presentations)
 - [MOD UI
-  Presentations](/wiki/Category%253AMOD_UI_Presentations)
+  Presentations](/wiki/Category%3AMOD_UI_Presentations)
 
 ### P
 
-- [Posters](/wiki/Category%253APosters)
+- [Posters](/wiki/Category%3APosters)
 
 ## Pages in category "Presentations"
 

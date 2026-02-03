@@ -3,7 +3,7 @@ title: "Category%253AGMOD Component"
 ---
 # Category%253AGMOD Component
 
-[Tool data](/wiki/Form%253ATool_data)
+[Tool data](/wiki/Form%3ATool_data)
 
 ## Pages in category "GMOD Component"
 

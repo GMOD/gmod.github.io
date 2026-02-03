@@ -12,17 +12,17 @@ This category has the following 4 subcategories, out of 4 total.
 
 ### N
 
-- [Needs Editing](/wiki/Category%253ANeeds_Editing)
-- [Needs Testing](/wiki/Category%253ANeeds_Testing)
+- [Needs Editing](/wiki/Category%3ANeeds_Editing)
+- [Needs Testing](/wiki/Category%3ANeeds_Testing)
 
 ### P
 
 - [Pages with problems or
-  questions](/wiki/Category%253APages_with_problems_or_questions)
+  questions](/wiki/Category%3APages_with_problems_or_questions)
 
 ### W
 
-- [Wiki Tools](/wiki/Category%253AWiki_Tools)
+- [Wiki Tools](/wiki/Category%3AWiki_Tools)
 
 ## Pages in category "GMOD Web Site"
 

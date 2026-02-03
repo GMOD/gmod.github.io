@@ -17,7 +17,7 @@ Item](/wiki/GMOD_News#Adding_a_News_Item) for details.
 The following 200 pages are in this category, out of 332 total.
 
 (previous 200) ([next
-200](/wiki/Category%253ANews_Items)
+200](/wiki/Category%3ANews_Items)
 
 <table style="width: 100%;">
 <colgroup>
@@ -566,4 +566,4 @@ title="News/JBrowse 1.1 Released">News/JBrowse 1.1 Released</a></li>
 </table>
 
 (previous 200) ([next
-200](/wiki/Category%253ANews_Items)
+200](/wiki/Category%3ANews_Items)

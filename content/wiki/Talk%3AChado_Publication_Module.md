@@ -16,4 +16,4 @@ which has the standards like 'book', 'journal', and the odd ones like
 'death certificate' and 'postage stamp'.
 
 The other cvterms seem to be common chado ones for pubrelation,
-pubproperty [Dongilbert](/wiki/User%253ADongilbert)
+pubproperty [Dongilbert](/wiki/User%3ADongilbert)

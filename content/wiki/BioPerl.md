@@ -9,7 +9,7 @@ alt="BioPerl" /></a>
 
 <a href="http://www.bioperl.org/" class="external text"
 rel="nofollow">BioPerl</a> is a set of modules that support
-bioinformatics programming in [Perl](/wiki/Category%253APerl)
+bioinformatics programming in [Perl](/wiki/Category%3APerl)
 programs. BioPerl is used extensively by several GMOD components. You
 will need to install it before you can use those components.
 
@@ -69,8 +69,8 @@ rel="nofollow">podcast on the BioPerl project</a> is available at
 <a href="http://twit.tv/FLOSS" class="external text"
 rel="nofollow">FLOSS Weekly</a>. It's about an hour long and it's a good
 introduction to the **BioPerl** project. The podcast is an interview
-with BioPerl heavy hitters [Chris Fields](/wiki/User%253ACjfields)
-and [Jason Stajich](/wiki/User%253AStajich).
+with BioPerl heavy hitters [Chris Fields](/wiki/User%3ACjfields)
+and [Jason Stajich](/wiki/User%3AStajich).
 
 ### BioPerl Packages and bioperl-live
 

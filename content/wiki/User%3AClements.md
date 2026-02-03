@@ -122,7 +122,7 @@ presentations.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODForIEvoBio2010.pdf"
   class="internal" title="GMODForIEvoBio2010.pdf">GMOD for Evolutionary
   Biology</a>*, presentation with [Rob
-  Buels](/wiki/User%253ARobertBuels) at
+  Buels](/wiki/User%3ARobertBuels) at
   <a href="http://ievobio.org" class="external text"
   rel="nofollow">iEvoBio 2010</a>, Portland, Oregon, June 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Jan2010HelpDesk.pdf" class="internal"
@@ -132,15 +132,15 @@ presentations.
   Diego, January 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/PAG2010GMODProjectUpdate.pdf"
   class="internal" title="PAG2010GMODProjectUpdate.pdf">GMOD Project
-  Update</a>*, presentation with [Scott Cain](/wiki/User%253AScott)
+  Update</a>*, presentation with [Scott Cain](/wiki/User%3AScott)
   at [PAG 2010](/wiki/PAG_2010), San Diego, January 2010.
 - *<a
   href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/PAG2010ComparativeGenomicsToolsInGMOD.pdf"
   class="internal"
   title="PAG2010ComparativeGenomicsToolsInGMOD.pdf">Comparative Genomics
   Tools in GMOD</a>*, poster with [Sheldon
-  McKay](/wiki/User%253AMckays), Ken Youens-Clark, [Ben
-  Faga](/wiki/User%253AFaga), [Scott Cain](/wiki/User%253AScott),
+  McKay](/wiki/User%3AMckays), Ken Youens-Clark, [Ben
+  Faga](/wiki/User%3AFaga), [Scott Cain](/wiki/User%3AScott),
   at [PAG 2010](/wiki/PAG_2010), San Diego, January 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf" class="internal"
   title="GMODTAMUWorkshop.pdf">Database Tools for Biologists</a>*,
@@ -190,13 +190,13 @@ presentations.
 - *[Comparative Genomics with GBrowse_syn: A hands on workshop for
   visualizing your syntenic data with
   GBrowse_syn](/wiki/GBrowse_syn_PAG_2009_Workshop)*,
-  workshop with [Sheldon McKay](/wiki/User%253AMckays) and [Scott
-  Cain](/wiki/User%253AScott) at [PAG 2009](/wiki/PAG_2009),
+  workshop with [Sheldon McKay](/wiki/User%3AMckays) and [Scott
+  Cain](/wiki/User%3AScott) at [PAG 2009](/wiki/PAG_2009),
   January 2009.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/PAG2009NextGenSeqPoster.pdf"
   class="internal" title="PAG2009NextGenSeqPoster.pdf">Managing Next
   Generation Sequence Data with GMOD</a>, poster with [Scott
-  Cain](/wiki/User%253AScott), Paul Hohenlohe, Nicholas Stiffler,
+  Cain](/wiki/User%3AScott), Paul Hohenlohe, Nicholas Stiffler,
   Eric Johnson, and William Cresko, at [PAG 2009](/wiki/PAG_2009),
   January 2009.*
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/ISMB2008PosterManagingGenomicData.pdf"
@@ -217,7 +217,7 @@ presentations.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/ChadoWorkshopArthopod2008.pdf"
   class="internal" title="ChadoWorkshopArthopod2008.pdf">Chado - A
   Database Schema for Integrating Biological Data</a>*, workshop with
-  [Scott Cain](/wiki/User%253AScott) at the
+  [Scott Cain](/wiki/User%3AScott) at the
   <a href="http://www.k-state.edu/agc/symposium.shtml"
   class="external text" rel="nofollow">2nd Annual Arthropod Genomics
   Symposium</a>, April 2008.
@@ -235,13 +235,13 @@ presentations.
   class="internal"
   title="GMODToolsForComparativeGenomicsIGERTPoster.pdf">GMOD Tools for
   Comparative Genomics</a>*, poster with, David Riley, [Ben
-  Faga](/wiki/User%253AFaga), Hervé Tettelin, Sam Angiuoli, and
+  Faga](/wiki/User%3AFaga), Hervé Tettelin, Sam Angiuoli, and
   Jonathan Crabtree. Presented at the
   <a href="http://evodevo.uoregon.edu/symposium.html"
   class="external text" rel="nofollow">IGERT Symposium on Evolution,
   Development, and Genomics</a>, April 4-6, Eugene, OR. Highlights GMOD
   components particularly useful for [comparative
-  genomics](/wiki/Category%253AComparative_Genomics):
+  genomics](/wiki/Category%3AComparative_Genomics):
   [CMap](/wiki/CMap.1), [Sybil](/wiki/Sybil),
   [SynView](/wiki/SynView), [SynBrowse](/wiki/SynBrowse) and
   [GBrowse_syn](/wiki/GBrowse_syn.1).
@@ -255,7 +255,7 @@ presentations.
   class="external text" rel="nofollow">IGERT Symposium on Evolution,
   Development, and Genomics</a>, April 4-6, 2008, in Eugene OR.
   Highlights GMOD tools particularly useful for
-  [evolutionary](/wiki/Category%253AEvolution) research:
+  [evolutionary](/wiki/Category%3AEvolution) research:
   [GBrowse](/wiki/GBrowse.1), [Apollo](/wiki/Apollo.1), [Pathway
   Tools](/wiki/Pathway_Tools.1), and
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.*
@@ -263,7 +263,7 @@ presentations.
   class="internal" title="2007GenomeInformaticsGMODPoster.pdf">Digesting
   the Genome Glut: Promoting the Use and Extension of GMOD To Emerging
   Model Organisms</a>*, poster with [Brian
-  Osborne](/wiki/User%253ABosborne), Hilmar Lapp, Xianhua Liu, W.
+  Osborne](/wiki/User%3ABosborne), Hilmar Lapp, Xianhua Liu, W.
   Owen McMillan, Nassib Nassar, and Todd J. Vision, at the
   <a href="http://meetings.cshl.edu/meetings/info07.shtml"
   class="external text" rel="nofollow">2007 Genome Informatics

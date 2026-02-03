@@ -24,7 +24,7 @@ Natural Diversity Module into the production version of
 # Discussion
 
 See the [discussion
-page](/wiki/Talk%253AChado_Natural_Diversity_Module_Working_Group)
+page](/wiki/Talk%3AChado_Natural_Diversity_Module_Working_Group)
 for notes on what we've talked about and where we are heading. Once the
 discussion settle, a summary of decisions will appear here.
 

@@ -4,7 +4,7 @@ title: "MAKER Tutorial 2012"
 # MAKER Tutorial 2012
 
 This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
-Moore](/wiki/User%253ABmoore) as part of the [2012 GMOD Summer
+Moore](/wiki/User%3ABmoore) as part of the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:

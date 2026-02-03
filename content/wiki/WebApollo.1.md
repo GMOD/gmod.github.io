@@ -44,9 +44,9 @@ width="40" height="39" alt="} is open source" /></a>
 
 Resources
 
-- [Webapollo](/wiki/Category%253AWebapollo)
-- [AJAX](/wiki/Category%253AAJAX)
+- [Webapollo](/wiki/Category%3AWebapollo)
+- [AJAX](/wiki/Category%3AAJAX)
 - [Community
-  Annotation](/wiki/Category%253ACommunity_Annotation)
-- [Annotation](/wiki/Category%253AAnnotation)
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
+  Annotation](/wiki/Category%3ACommunity_Annotation)
+- [Annotation](/wiki/Category%3AAnnotation)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)

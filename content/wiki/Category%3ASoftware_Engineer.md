@@ -13,4 +13,4 @@ This category contains only the following page.
   dictyBase](/wiki/News/Open_Position_At_dictyBase)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ASoftware_Engineer](/wiki/Category%253ASoftware_Engineer)"
+"[http://gmod.org/wiki/Category:Software_Engineer](/wiki/Category%3ASoftware_Engineer)"

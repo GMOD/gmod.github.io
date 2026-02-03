@@ -13,4 +13,4 @@ The following 2 pages are in this category, out of 2 total.
 - [WebGBrowse/tool data](/wiki/WebGBrowse/tool_data)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AWebGBrowse](/wiki/Category%253AWebGBrowse)"
+"[http://gmod.org/wiki/Category:WebGBrowse](/wiki/Category%3AWebGBrowse)"

@@ -3,7 +3,7 @@ title: "Running a GBrowse2 render farm"
 ---
 # Running a GBrowse2 render farm
 
-[GBrowse 2](/wiki/Category%253AGBrowse_2) can be configured
+[GBrowse 2](/wiki/Category%3AGBrowse_2) can be configured
 to use one or more "render slave" daemons. A render slave is a small
 Perl process that runs in the background, processing requests to render
 GBrowse tracks. By distributing several render slaves across one or more

@@ -25,7 +25,7 @@ the various MODs.
 
 ## Members
 
-- [Josh Goodman](/wiki/User%253AJogoodma) -
+- [Josh Goodman](/wiki/User%3AJogoodma) -
   <a href="http://flybase.org" class="external text"
   rel="nofollow">FlyBase</a>
 - Robert Buels -
@@ -43,4 +43,4 @@ class="external text" rel="nofollow">GMOD-devel</a> mailing list.
 
 ## Links of interest
 
-- [Semantic web](/wiki/Category%253ASemantic_web)
+- [Semantic web](/wiki/Category%3ASemantic_web)

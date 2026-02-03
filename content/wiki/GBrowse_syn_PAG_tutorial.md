@@ -5,11 +5,11 @@ title: "GBrowse syn PAG tutorial"
 
 
 
-This [tutorial](/wiki/Category%253ATutorials) walks you
+This [tutorial](/wiki/Category%3ATutorials) walks you
 through how to install and configure the
 [GBrowse_syn](/wiki/GBrowse_syn.1) comparative genomics viewer.
 This tutorial was originally taught by [Sheldon
-McKay](/wiki/User%253AMckays) at the 2009 [GMOD
+McKay](/wiki/User%3AMckays) at the 2009 [GMOD
 Schools](/wiki/GMOD_Schools) -
 [Europe](/wiki/2009_GMOD_Summer_School_-_Europe)
 &
@@ -101,7 +101,7 @@ machine.</strong></em></p></td>
 
 **Important Note**
 
-This [tutorial](/wiki/Category%253ATutorials) describes the
+This [tutorial](/wiki/Category%3ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift

@@ -5,7 +5,7 @@ title: "Category%253ABiology"
 
 Categories and pages that are mainly about how to use GMOD to address
 questions in biology. This category complements the
-[Computing](/wiki/Category%253AComputing) category. In some
+[Computing](/wiki/Category%3AComputing) category. In some
 sense every page in this web site is about biology and computing.
 However, these two categories identify pages that are clearly about one
 or the other.

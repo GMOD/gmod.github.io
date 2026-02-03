@@ -4,7 +4,7 @@ title: "MAKER Tutorial 2011"
 # MAKER Tutorial 2011
 
 This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
-Moore](/wiki/User%253ABmoore) as part of the [2011 GMOD Spring
+Moore](/wiki/User%3ABmoore) as part of the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training).
 
   Overview, Installation, and Basic Configuration for Annotating Genomic

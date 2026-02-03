@@ -4,7 +4,7 @@ title: "GBrowse syn Tutorial 2013"
 # GBrowse syn Tutorial 2013
 
 This tutorial on [GBrowse syn](/wiki/GBrowse_syn.1) was taught
-by [Sheldon McKay](/wiki/User%253AMckays) as part of the [2013 GMOD
+by [Sheldon McKay](/wiki/User%3AMckays) as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).
 
 The starting image for this tutorial is **2013 GMOD start day 4

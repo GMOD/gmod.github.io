@@ -19,16 +19,16 @@ help desk</a> for custom configurations and sizes.
 
 The [original GMOD
 Logo](/wiki/File:Gmod_cogTransparent.png) was
-created by Simon Twigger of [RGD](/wiki/Category%253ARGD). Most of
+created by Simon Twigger of [RGD](/wiki/Category%3ARGD). Most of
 the derivative logos created between 2007 and 2010 were done by [Dave
-Clements](/wiki/User%253AClements) during his time at the [GMOD
+Clements](/wiki/User%3AClements) during his time at the [GMOD
 Help Desk](/wiki/GMOD_Help_Desk), and those created between
 2012 and 2014 were by [Amelia
-Ireland](/wiki/User%253AGirlwithglasses).
+Ireland](/wiki/User%3AGirlwithglasses).
 
 You are encouraged to use these graphics in your presentations, posters,
 and web sites. See [GMOD Promotion](/wiki/GMOD_Promotion) and
-[Logos and Icons](/wiki/Category%253ALogos_and_Icons)
+[Logos and Icons](/wiki/Category%3ALogos_and_Icons)
 for more.
 
 ## Pages in category "GMOD Project Logos"

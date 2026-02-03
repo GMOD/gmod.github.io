@@ -11,21 +11,21 @@ This category has the following 6 subcategories, out of 6 total.
 
 ### B
 
-- [Biology](/wiki/Category%253ABiology)
+- [Biology](/wiki/Category%3ABiology)
 
 ### C
 
-- [Computing](/wiki/Category%253AComputing)
+- [Computing](/wiki/Category%3AComputing)
 
 ### D
 
-- [Documentation](/wiki/Category%253ADocumentation)
+- [Documentation](/wiki/Category%3ADocumentation)
 
 ### G
 
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [GMOD Project](/wiki/Category%253AGMOD_Project)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [GMOD Project](/wiki/Category%3AGMOD_Project)
 
 ### H
 
-- [Help](/wiki/Category%253AHelp)
+- [Help](/wiki/Category%3AHelp)

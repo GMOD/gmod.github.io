@@ -27,6 +27,6 @@ academics)</a>, custom license for commercial usage
 
 Resources
 
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [Annotation](/wiki/Category%253AAnnotation)
-- [MAKER](/wiki/Category%253AMAKER)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [Annotation](/wiki/Category%3AAnnotation)
+- [MAKER](/wiki/Category%3AMAKER)

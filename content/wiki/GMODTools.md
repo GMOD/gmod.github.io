@@ -30,7 +30,7 @@ Bulkfiles is a GMOD [Perl](/wiki/Glossary#Perl) package that
 generates Fasta, [GFF3](/wiki/GFF3), DNA and other bulk genome
 annotation files from
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
-It works with several [FlyBase](/wiki/Category%253AFlyBase)
+It works with several [FlyBase](/wiki/Category%3AFlyBase)
 Chado releases, with SGDLite, and has been tested with other Chado
 databases. Once tuned to your project's needs with its organism and site
 configurations, it can generate public data releases on a regular basis.
@@ -56,9 +56,9 @@ Bulkfiles base adaptor object.
 # Why Use Bulkfiles?
 
 Why use this package rather than using other [middleware
-layers](/wiki/Category%253AMiddleware) to Chado db - [Chado
+layers](/wiki/Category%3AMiddleware) to Chado db - [Chado
 XML](/wiki/Chado_XML),
-[Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI),
+[Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI),
 [BioPerl](/wiki/BioPerl), ? The general logic is
 
 1.  dump all Chado db features using simple (and quick) sql, to common
@@ -296,4 +296,4 @@ Version 1.1 (2007 October) adds these features and corrections:
 
 # Contact
 
-[Dongilbert](/wiki/User%253ADongilbert)
+[Dongilbert](/wiki/User%3ADongilbert)

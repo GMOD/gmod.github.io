@@ -26,9 +26,9 @@ rel="nofollow">Academic Free License 3.0</a>
 
 Resources
 
-- [Analysis](/wiki/Category%253AAnalysis)
-- [Annotation](/wiki/Category%253AAnnotation)
+- [Analysis](/wiki/Category%3AAnalysis)
+- [Annotation](/wiki/Category%3AAnnotation)
 - [Comparative
-  Genomics](/wiki/Category%253AComparative_Genomics)
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [Galaxy](/wiki/Category%253AGalaxy)
+  Genomics](/wiki/Category%3AComparative_Genomics)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [Galaxy](/wiki/Category%3AGalaxy)

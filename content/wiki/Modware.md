@@ -65,7 +65,7 @@ using
 rel="nofollow">Moose</a> and
 <a href="http://search.cpan.org/perldoc?DBIx::Class"
 class="external text" rel="nofollow">DBIx::Class</a> (more precisely
-[Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) or BCS)
+[Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) or BCS)
 [ORM](/wiki/Glossary#ORM). This part of development is done in sync
 with dictyBase's major data migration project which includes literature
 and gene ontology annotations. So, the first release of this new version
@@ -81,7 +81,7 @@ Relevant documentations and guidelines will also be added to this wiki.
 The first CPAN release is expected to be early next year.
 
 *Siddhartha Basu, Modware developer,
-[dictyBase](/wiki/Category%253ADictyBase), 2010/10/28*
+[dictyBase](/wiki/Category%3ADictyBase), 2010/10/28*
 
 ## Getting Started
 

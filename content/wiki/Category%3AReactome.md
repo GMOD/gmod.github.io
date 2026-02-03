@@ -12,4 +12,4 @@ This category contains only the following page.
 - [GSoC](/wiki/GSoC)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AReactome](/wiki/Category%253AReactome)"
+"[http://gmod.org/wiki/Category:Reactome](/wiki/Category%3AReactome)"

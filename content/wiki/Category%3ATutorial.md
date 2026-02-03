@@ -84,4 +84,4 @@ This category contains only the following file.
 
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ATutorial](/wiki/Category%253ATutorial)"
+"[http://gmod.org/wiki/Category:Tutorial](/wiki/Category%3ATutorial)"

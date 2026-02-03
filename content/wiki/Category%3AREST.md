@@ -60,4 +60,4 @@ This category contains only the following file.
 
 
 
-Retrieved from "[http://gmod.org/wiki/Category%253AREST](/wiki/Category%253AREST)"
+Retrieved from "[http://gmod.org/wiki/Category:REST](/wiki/Category%3AREST)"

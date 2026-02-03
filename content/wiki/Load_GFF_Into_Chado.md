@@ -3,7 +3,7 @@ title: "Load GFF Into Chado"
 ---
 # Load GFF Into Chado
 
-This [HOWTO](/wiki/Category%253AHOWTO) describes a method for
+This [HOWTO](/wiki/Category%3AHOWTO) describes a method for
 loading sequence annotation data in [GFF3](/wiki/GFF3) format into a
 [Chado database](/wiki/Chado_-_Getting_Started).
 
@@ -25,7 +25,7 @@ An easy way to load data into the database is to use a
 [GFF3](/wiki/GFF3) file and the script
 `load/bin/gmod_bulk_load_gff3.pl`. A good set of sample data is the GFF3
 file prepared by the nice folks at the [Saccharomyces Genome
-Database](/wiki/Category%253ASGD):
+Database](/wiki/Category%3ASGD):
 
 <a
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
@@ -90,7 +90,7 @@ created at the time of install. For more information on using these
 classes, see [Modware](/wiki/Modware) for a
 <a href="http://search.cpan.org/perldoc?Class::DBI"
 class="external text" rel="nofollow">Class::DBI</a>-based
-[middleware/API](/wiki/Category%253AMiddleware).
+[middleware/API](/wiki/Category%3AMiddleware).
 
 ## Creating GFF3 from UniProt/SwissProt Files
 
@@ -122,6 +122,6 @@ Or contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 
 ## Authors
 
-- [Scott Cain](/wiki/User%253AScott)
+- [Scott Cain](/wiki/User%3AScott)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

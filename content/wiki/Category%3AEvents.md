@@ -5,7 +5,7 @@ title: "Category%253AEvents"
 
 Pages about GMOD related events, such as Hackathons,
 [Meetings](/wiki/Meetings),
-[Conferences](/wiki/Category%253AConferences) and
+[Conferences](/wiki/Category%3AConferences) and
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">Summer Schools</a>.
 
@@ -15,11 +15,11 @@ This category has the following 2 subcategories, out of 2 total.
 
 ### C
 
-- [Conferences](/wiki/Category%253AConferences)
+- [Conferences](/wiki/Category%3AConferences)
 
 ### M
 
-- [Meetings](/wiki/Category%253AMeetings)
+- [Meetings](/wiki/Category%3AMeetings)
 
 ## Pages in category "Events"
 

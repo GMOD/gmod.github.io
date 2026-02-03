@@ -9,7 +9,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="229" alt="GMOD in the Cloud" />
 
 GMOD in the Cloud is a [GMOD virtual
-server](/wiki/Category%253AGMOD_virtual_server)
+server](/wiki/Category%3AGMOD_virtual_server)
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo
 or WebApollo**. Setting up a GMOD in the Cloud instance is quick and
@@ -117,7 +117,7 @@ rel="nofollow">cloud.gmod.org</a> is a small instance.
 
 #### Build information
 
-[Scott](/wiki/User%253AScott) has fairly extensive notes on the
+[Scott](/wiki/User%3AScott) has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in the
 Cloud. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"

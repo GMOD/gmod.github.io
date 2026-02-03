@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="161" alt="PrimerDesigner.png" />
 
 PrimerDesigner is a [GBrowse](/wiki/GBrowse.1) plugin, written by
-[Sheldon McKay](/wiki/User%253AMckays), that uses use the
+[Sheldon McKay](/wiki/User%3AMckays), that uses use the
 <a href="http://primer3.sourceforge.net" class="external text"
 rel="nofollow">primer3</a> program to design PCR primers for selected
 regions within the genome browser. Please feel free to <a

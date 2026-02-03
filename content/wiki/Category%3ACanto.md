@@ -25,4 +25,4 @@ The following 4 pages are in this category, out of 4 total.
 - [News/Canto, a GMOD tool for functional
   annotation](/wiki/News/Canto,_a_GMOD_tool_for_functional_annotation)
 
-Retrieved from "[http://gmod.org/wiki/Category%253ACanto](/wiki/Category%253ACanto)"
+Retrieved from "[http://gmod.org/wiki/Category:Canto](/wiki/Category%3ACanto)"

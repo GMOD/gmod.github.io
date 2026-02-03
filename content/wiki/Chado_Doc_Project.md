@@ -55,7 +55,7 @@ its comrades in terms of its expressiveness, logic and coherence, and
 extensibility. It is truly a work of conceptual art. It is also not the
 easiest schema to use, compared to its comrades. Let us complete this
 work that needs to be done on Chado so that the largest number of people
-can benefit from it. [Bosborne](/wiki/User%253ABosborne) 11:24, 8
+can benefit from it. [Bosborne](/wiki/User%3ABosborne) 11:24, 8
 May 2007 (EDT)
 
 

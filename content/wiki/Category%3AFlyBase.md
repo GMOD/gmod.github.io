@@ -13,7 +13,7 @@ This category has only the following subcategory.
 
 ### C
 
-- [Chado FlyBase](/wiki/Category%253AChado_FlyBase)
+- [Chado FlyBase](/wiki/Category%3AChado_FlyBase)
 
 ## Pages in category "FlyBase"
 

@@ -4,7 +4,7 @@ title: "Modware Presentation"
 # Modware Presentation
 
 Eric Just, Senior Bioinformatics Scientist,
-[dictyBase](/wiki/Category%253ADictyBase):
+[dictyBase](/wiki/Category%3ADictyBase):
 <a href="http://dictybase.org" class="external free"
 rel="nofollow">http://dictybase.org</a> Center for Genetic Medicine,
 Northwestern University. This is an edited version of
@@ -108,7 +108,7 @@ The core of <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 
 - Object-oriented Perl interface to
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-- Built on top of [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI)
+- Built on top of [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI)
 - Connection handled by GMOD
 - Database transactions supported
 - [BioPerl](/wiki/BioPerl) used to represent and manipulate sequence
@@ -484,7 +484,7 @@ sub Write_search_results {
 - If <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> changes
   then...
   - Manually change [Modware](/wiki/Modware) or ...
-  - [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI) will automatically
+  - [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI) will automatically
     adjust to the change, depends on the change
 - Can set multiple connections through AutoDBI's `set_connection`
 
@@ -514,7 +514,7 @@ sub Write_search_results {
 
 - Rex Chisholm, PhD
 - Warren Kibbe, PhD
-- [Scott Cain](/wiki/User%253AScott)
+- [Scott Cain](/wiki/User%3AScott)
 - Brian O’connor
 - Sohel Merchant
 - Petra Fey
@@ -522,4 +522,4 @@ sub Write_search_results {
 - Karen Pilcher
 - [BioPerl](/wiki/BioPerl)
 - GMOD
-- [SGD](/wiki/Category%253ASGD)
+- [SGD](/wiki/Category%3ASGD)

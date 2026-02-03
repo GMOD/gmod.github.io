@@ -9,8 +9,8 @@ The following 5 pages are in this category, out of 5 total.
 
 ### C
 
-- [Chado%253A%253AAutoDBI
-  Presentation](/wiki/Chado%253A%253AAutoDBI_Presentation)
+- [Chado::AutoDBI
+  Presentation](/wiki/Chado%3A%3AAutoDBI_Presentation)
 
 ### G
 

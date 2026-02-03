@@ -11,4 +11,4 @@ This category contains only the following page.
 
 - [GMOD RPC API](/wiki/GMOD_RPC_API)
 
-Retrieved from "[http://gmod.org/wiki/Category%253ARPC](/wiki/Category%253ARPC)"
+Retrieved from "[http://gmod.org/wiki/Category:RPC](/wiki/Category%3ARPC)"

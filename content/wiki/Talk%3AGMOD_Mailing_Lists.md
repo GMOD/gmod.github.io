@@ -17,7 +17,7 @@ predominantly an 'add on' (documentation, discussion, etc.)? I am happy
 to expand the GMOD related content in MetaBase, but I wonder if it
 belongs in the list of 'BioWikis'?
 
-Cheers, --[Dan](/wiki/User%253ADan) 10:18, 3 May 2008 (EDT)
+Cheers, --[Dan](/wiki/User%3ADan) 10:18, 3 May 2008 (EDT)
 
 ------------------------------------------------------------------------
 
@@ -36,4 +36,4 @@ Please send me an
 <a href="mailto:clements@nescent.org" class="external text"
 rel="nofollow">e-mail</a>.
 
-[Dave Clements](/wiki/User%253AClements), 7 May 2008
+[Dave Clements](/wiki/User%3AClements), 7 May 2008

@@ -139,4 +139,4 @@ and 'every day of the week' respectively.
 ## Authors
 
 The script described in this page was originally written by Chris
-Carpita and modified by [Scott Cain](/wiki/User%253AScott)
+Carpita and modified by [Scott Cain](/wiki/User%3AScott)

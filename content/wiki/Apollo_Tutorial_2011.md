@@ -11,7 +11,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="91" alt="Apollo" />
 
 This [Apollo](/wiki/Apollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%253AElee) at the [2011 GMOD Spring
+Lee](/wiki/User%3AElee) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), Spring
 2011. The most recent Apollo tutorial can be found at the
 <a href="/wiki/Apollo_Tutorial" class="mw-redirect"

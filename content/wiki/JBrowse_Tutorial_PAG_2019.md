@@ -4,7 +4,7 @@ title: "JBrowse Tutorial PAG 2019"
 # JBrowse Tutorial PAG 2019
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%253AScott) at the
+Cain](/wiki/User%3AScott) at the
 <a href="http://www.intlpag.org" class="external text"
 rel="nofollow">Plant and Animal Genomes</a> meeting using JBrowse
 1.16.1.

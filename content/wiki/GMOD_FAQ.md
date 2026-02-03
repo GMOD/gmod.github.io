@@ -4,7 +4,7 @@ title: "GMOD FAQ"
 # GMOD FAQ
 
 A list of **F**requently **A**sked **Q**questions about the GMOD project.
-See [FAQ](/wiki/Category%253AFAQ) for a list of FAQ pages on
+See [FAQ](/wiki/Category%3AFAQ) for a list of FAQ pages on
 specific [GMOD Components](/wiki/GMOD_Components). See the
 [Glossary](/wiki/Glossary) for definitions of commonly used terms
 in GMOD.

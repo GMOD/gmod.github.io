@@ -115,7 +115,7 @@ assembly and subsequent analysis have resulted in:
 # ParameciumDB
 
 ParameciumDB is maintained by two people, [Linda
-Sperling](/wiki/User%253ASperling) and Olivier Arnaiz at the
+Sperling](/wiki/User%3ASperling) and Olivier Arnaiz at the
 <a href="http://www.cgm.cnrs-gif.fr/version_gb/index_gb.html"
 class="external text" rel="nofollow">Centre de Genetique Moleculaire</a>,
 a part of the
@@ -279,7 +279,7 @@ community for annotation of the gene models. They use
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User%253ASperling) presentation at the
+  Sperling's](/wiki/User%3ASperling) presentation at the
   [November 2007 GMOD
   Meeting](/wiki/November_2007_GMOD_Meeting).
 
@@ -289,7 +289,7 @@ community for annotation of the gene models. They use
 
 The <a href="http://paramecium.cgm.cnrs-gif.fr/chadoapi/"
 class="external text" rel="nofollow">Bio::Chado API</a> is Perl
-[Category%253Amiddleware](/wiki/Category%253AMiddleware) module
+[Category:middleware](/wiki/Category%3AMiddleware) module
 for working with
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
 It was developed specifically for the
@@ -353,7 +353,7 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User%253ASperling) presentation at the
+  Sperling's](/wiki/User%3ASperling) presentation at the
   [November 2007 GMOD
   Meeting](/wiki/November_2007_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"

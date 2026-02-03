@@ -26,12 +26,12 @@ Many questions about GMOD can be answered by  or exploring it through
 particularly useful places to start for support questions:
 
 - [Overview](/wiki/Overview) - an introduction to GMOD.
-- [FAQs](/wiki/Category%253AFAQ) - List of Frequently Asked
+- [FAQs](/wiki/Category%3AFAQ) - List of Frequently Asked
   Questions pages.
 - [GMOD Components](/wiki/GMOD_Components) - Links to pages
   about each of the GMOD components.
 - [Glossary](/wiki/Glossary) - List of commonly used terms in GMOD.
-- [HOWTOs](/wiki/Category%253AHOWTO) - List of HOWTO pages
+- [HOWTOs](/wiki/Category%3AHOWTO) - List of HOWTO pages
 
 ## [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists)
 

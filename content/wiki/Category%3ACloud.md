@@ -20,4 +20,4 @@ The following 3 pages are in this category, out of 3 total.
 
 - [WebApollo2](/wiki/WebApollo2)
 
-Retrieved from "[http://gmod.org/wiki/Category%253ACloud](/wiki/Category%253ACloud)"
+Retrieved from "[http://gmod.org/wiki/Category:Cloud](/wiki/Category%3ACloud)"

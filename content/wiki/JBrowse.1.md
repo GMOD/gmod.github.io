@@ -28,6 +28,6 @@ class="external text" rel="nofollow">Artistic License 2.0</a>
 
 Resources
 
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
-- [AJAX](/wiki/Category%253AAJAX)
-- [JBrowse](/wiki/Category%253AJBrowse)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)
+- [AJAX](/wiki/Category%3AAJAX)
+- [JBrowse](/wiki/Category%3AJBrowse)

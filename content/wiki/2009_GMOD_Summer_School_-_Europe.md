@@ -285,16 +285,16 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 
 | Instructor | GMOD Contribution | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%253AScott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](/wiki/User%253ATimCarver) | [Artemis](/wiki/Artemis) lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](/wiki/User%253AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](/wiki/User%253ASyedHaider) | [BioMart](/wiki/BioMart) developer | <a href="http://www.ebi.ac.uk/" class="external text"
+| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
+rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](/wiki/User%3ATimCarver) | [Artemis](/wiki/Artemis) lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](/wiki/User%3ASyedHaider) | [BioMart](/wiki/BioMart) developer | <a href="http://www.ebi.ac.uk/" class="external text"
 rel="nofollow">European Bioinformatics Institute</a> | Ian Holmes | [JBrowse](/wiki/JBrowse.1) PI | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [Robin Houston](/wiki/User%253ARobinHouston) | [Artemis](/wiki/Artemis) manager | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Ed Lee](/wiki/User%253AElee) | Lead [Apollo](/wiki/Apollo.1) developer | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%253AMckays) | Lead [GBrowse_syn](/wiki/GBrowse_syn.1) developer, [GBrowse](/wiki/GBrowse.1) developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User%253ABuggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Junjun Zhang](/wiki/User%253AJunjun) | [BioMart](/wiki/BioMart) developer | <a href="http://www.oicr.on.ca/" class="external text"
+rel="nofollow">University of California, Berkeley</a> | [Robin Houston](/wiki/User%3ARobinHouston) | [Artemis](/wiki/Artemis) manager | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Ed Lee](/wiki/User%3AElee) | Lead [Apollo](/wiki/Apollo.1) developer | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | Lead [GBrowse_syn](/wiki/GBrowse_syn.1) developer, [GBrowse](/wiki/GBrowse.1) developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User%3ABuggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Junjun Zhang](/wiki/User%3AJunjun) | [BioMart](/wiki/BioMart) developer | <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">OICR</a> |
 
 ## Prerequisites
@@ -338,8 +338,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -356,7 +356,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, *all of which require an Intel Mac*:
 
 

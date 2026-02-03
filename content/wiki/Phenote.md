@@ -39,7 +39,7 @@ See
 
 - <a href="http://www.phenote.org/contact.shtml" class="external free"
   rel="nofollow">http://www.phenote.org/contact.shtml</a>
-- [Nicole Washington](/wiki/User%253ANLWashington)
+- [Nicole Washington](/wiki/User%3ANLWashington)
 
 ## Logo
 

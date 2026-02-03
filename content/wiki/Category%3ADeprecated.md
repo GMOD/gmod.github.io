@@ -32,4 +32,4 @@ This category contains only the following file.
 
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ADeprecated](/wiki/Category%253ADeprecated)"
+"[http://gmod.org/wiki/Category:Deprecated](/wiki/Category%3ADeprecated)"

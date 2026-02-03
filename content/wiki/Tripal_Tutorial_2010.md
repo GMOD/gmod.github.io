@@ -11,14 +11,14 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="75" alt="Tripal" />
 
 This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
-Ficklin](/wiki/User%253ASficklin) at the [2010 GMOD Summer
+Ficklin](/wiki/User%3ASficklin) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
-This [tutorial](/wiki/Category%253ATutorials) walks you
+This [tutorial](/wiki/Category%3ATutorials) walks you
 through installing and configuring [Tripal](/wiki/Tripal.1), a web
 front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 databases. This tutorial references (and complements) the
@@ -162,7 +162,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%253ATutorials) describes the
+This [tutorial](/wiki/Category%3ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift

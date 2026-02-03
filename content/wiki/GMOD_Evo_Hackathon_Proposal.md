@@ -279,24 +279,24 @@ license.
 
 The following people comprise the organizing committee:
 
-- [Nicole Washington](/wiki/User%253ANLWashington), Chair
+- [Nicole Washington](/wiki/User%3ANLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
   rel="nofollow">modENCODE</a> and developer of
   [Phenote](/wiki/Phenote))
-- [Sheldon McKay](/wiki/User%253AMckays) (University of Arizona;
+- [Sheldon McKay](/wiki/User%3AMckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">The iPlant collaborative</a> and developer of
   [GBrowse_syn](/wiki/GBrowse_syn.1))
-- [Robert Buels](/wiki/User%253ARobertBuels) (Cornell
+- [Robert Buels](/wiki/User%3ARobertBuels) (Cornell
   University; <a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>)
-- [Scott Cain](/wiki/User%253AScott) (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User%3AScott) (Ontario Institute for Cancer
   Research; GMOD Program Coordinator)
-- [Hilmar Lapp](/wiki/User%253AHlapp)
+- [Hilmar Lapp](/wiki/User%3AHlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>)
-- [Dave Clements](/wiki/User%253AClements)
+- [Dave Clements](/wiki/User%3AClements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>; [GMOD Help
   Desk](/wiki/GMOD_Help_Desk))

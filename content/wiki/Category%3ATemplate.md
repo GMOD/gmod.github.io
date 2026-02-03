@@ -9,7 +9,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ## Pages in category "Template"
 
@@ -73,4 +73,4 @@ title="WebApollo/tool data">WebApollo/tool data</a></li>
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ATemplate](/wiki/Category%253ATemplate)"
+"[http://gmod.org/wiki/Category:Template](/wiki/Category%3ATemplate)"

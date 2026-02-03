@@ -225,15 +225,15 @@ For example, the file
 title="Gkl777.pdf">Gkl777.pdf</a> is an article on
 [ParameciumDB](/wiki/ParameciumDB) from _Nucleic Acids
 Research_, but if you look at the file's listing in the [Publications
-category](/wiki/Category%253APublications) all you see is
+category](/wiki/Category%3APublications) all you see is
 "Gkl777.pdf". You have to follow the link to find out what the file is
 about.
 
 #### File Categories
 
 When uploading a presentation or a paper, please add it to the
-[Presentations](/wiki/Category%253APresentations) or
-[Publications](/wiki/Category%253APublications)
+[Presentations](/wiki/Category%3APresentations) or
+[Publications](/wiki/Category%3APublications)
 categories. Also add the file to any other appropriate categories.
 
 If the file is an image that is being linked to from a page then you

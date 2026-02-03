@@ -13,7 +13,7 @@ inserted into a web page to display each chromosome in a genome along
 with the locations of individual features on the chromosomes. It is
 **intended to provide an overview of the genomic locations of a specific
 set of features** - eg. genes and QTLs associated with a specific
-[phenotype](/wiki/Category%253APhenotypes), etc. rather than
+[phenotype](/wiki/Category%3APhenotypes), etc. rather than
 as a way to view all features on the genome. The features can hyperlink
 out to a detail page to enable to GViewer to be used as a navigation
 tool. In addition the bands on the chromosomes can link to definable

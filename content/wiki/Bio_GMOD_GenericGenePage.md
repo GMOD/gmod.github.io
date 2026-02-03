@@ -15,7 +15,7 @@ Bio%253A%253AGMOD::GenericGenePage with the data to create the XML.
 There are two example implementations included with this module.
 Bio%253A%253AGMOD::GenericGenePage::Chado is a simple implementation for a Chado
 database populated with *S. cerevisiae* data obtained from
-[SGD](/wiki/Category%253ASGD) as GFF3. Currently, the output of
+[SGD](/wiki/Category%3ASGD) as GFF3. Currently, the output of
 this implementation can be seen at
 
 <a href="http://gmod.org/cgi-bin/gbrowse/chado_yeast/"
@@ -25,7 +25,7 @@ rel="nofollow">http://gmod.org/cgi-bin/gbrowse/chado_yeast/</a>
 and by clicking on any of the genes (red arrows).
 
 The other implementation, CXGN::Phenome::GenericGenePage, is from [SGN,
-the Sol Genomics Network](/wiki/Category%253ASGN). The XML they
+the Sol Genomics Network](/wiki/Category%3ASGN). The XML they
 provide can be seen by clicking on the "Download GMOD XML" link on any
 of there locus pages; for example, this one:
 

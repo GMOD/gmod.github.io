@@ -110,7 +110,7 @@ package for release</td>
 ## Meeting Report
 
 Meeting report for October, 2005 GMOD meeting. This is an outline by
-[Scott Cain](/wiki/User%253AScott).
+[Scott Cain](/wiki/User%3AScott).
 
 Topics covered:
 
@@ -131,13 +131,13 @@ Topics covered:
 - Architecture
   - Testing recommendations
   - Volunteers to examine [Java ORMs Hibernate and
-    iBatis](/wiki/Category%253AMiddleware)
+    iBatis](/wiki/Category%3AMiddleware)
   - How to get various chado instances to conform to a standard method
     of encoding data? Documentation: Joshua (TIGR) volunteered to
     document how TIGR is using chado to encode data and make it public
     as a first step in a collaborative effort among current users of
     chado (including TIGR,
-    [FlyBase](/wiki/Category%253AFlyBase), and GMOD
+    [FlyBase](/wiki/Category%3AFlyBase), and GMOD
     developers).
 - [www.gmod.org](/wiki/Main_Page)
   - In the evening of the first day, Allen Day, Brian O'Connor and Scott
@@ -165,7 +165,7 @@ Topics covered:
 - demos
   - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
     tool</a>
-  - Princeton/[SGD](/wiki/Category%253ASGD) web-based data curation
+  - Princeton/[SGD](/wiki/Category%3ASGD) web-based data curation
     tool (talks directly to chado)
   - [DAS2](/wiki/Distributed_Annotation_System)
     java tool for querying [chado microarray
@@ -174,7 +174,7 @@ Topics covered:
     (<a href="http://xenbase.org" class="external text"
     rel="nofollow">XenBase</a>\])
   - PuMA, java tool for pubmed query building
-  - [ApiDB](/wiki/Category%253AApiDB) [GBrowse for
+  - [ApiDB](/wiki/Category%3AApiDB) [GBrowse for
     synteny](/wiki/SynView)
   - flybase gbrowse for synteny
   - flybase query builder

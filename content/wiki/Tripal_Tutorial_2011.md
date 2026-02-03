@@ -9,7 +9,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="75" alt="Tripal" />
 
 This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
-Ficklin](/wiki/User%253ASficklin) at the [2011 GMOD Spring
+Ficklin](/wiki/User%3ASficklin) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), March 2011. The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
@@ -1864,6 +1864,6 @@ To do this, we will load three FASTA files which you can download from
 these links:
 
 - [2011 Spring
-  Training](/wiki/Category%253A2011_Spring_Training)
-- [Tripal](/wiki/Category%253ATripal)
-- [Needs Editing](/wiki/Category%253ANeeds_Editing)
+  Training](/wiki/Category%3A2011_Spring_Training)
+- [Tripal](/wiki/Category%3ATripal)
+- [Needs Editing](/wiki/Category%3ANeeds_Editing)

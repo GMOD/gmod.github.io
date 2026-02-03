@@ -12,4 +12,4 @@ This category contains only the following page.
 - [Genes4all](/wiki/Genes4all)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AVisualization](/wiki/Category%253AVisualization)"
+"[http://gmod.org/wiki/Category:Visualization](/wiki/Category%3AVisualization)"

@@ -28,4 +28,4 @@ The following 5 pages are in this category, out of 5 total.
 - [Tripal Tutorial 2011](/wiki/Tripal_Tutorial_2011)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253APages_with_broken_file_links](/wiki/Category%253APages_with_broken_file_links)"
+"[http://gmod.org/wiki/Category:Pages_with_broken_file_links](/wiki/Category%3APages_with_broken_file_links)"

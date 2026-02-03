@@ -14,4 +14,4 @@ The following 3 pages are in this category, out of 3 total.
 - [GFF2](/wiki/GFF2)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AFile_Formats](/wiki/Category%253AFile_Formats)"
+"[http://gmod.org/wiki/Category:File_Formats](/wiki/Category%3AFile_Formats)"

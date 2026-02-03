@@ -16,4 +16,4 @@ The following 2 pages are in this category, out of 2 total.
 - [Widget:GoogleCalendar](/wiki/Widget:GoogleCalendar)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253A!FixAfterUpgrade](/wiki/Category%253A!FixAfterUpgrade)"
+"[http://gmod.org/wiki/Category:!FixAfterUpgrade](/wiki/Category%3A!FixAfterUpgrade)"

@@ -17,7 +17,7 @@ VMware images are used in several places in GMOD:
 - The [Community Annotation
   System](/wiki/Community_Annotation_System) is
   packaged as a VMware image.
-- Many GMOD [tutorials](/wiki/Category%253ATutorials) use
+- Many GMOD [tutorials](/wiki/Category%3ATutorials) use
   VMware images as starting points.
 
 
@@ -48,8 +48,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](/wiki/Category%253AWindows) and
-[Linux](/wiki/Category%253ALinux) [operating
+Windows](/wiki/Category%3AWindows) and
+[Linux](/wiki/Category%3ALinux) [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
@@ -67,7 +67,7 @@ alt="Apple" /></a>
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%253AMac_OS_X). However, there are several
+X](/wiki/Category%3AMac_OS_X). However, there are several
 other options, **all of which require an Intel Mac**:
 
 
@@ -165,7 +165,7 @@ client for windows.
 # Fluxbox
 
 The images from most 2009
-[Tutorial](/wiki/Category%253ATutorials) pages include a
+[Tutorial](/wiki/Category%3ATutorials) pages include a
 basic *[graphical user interface](/wiki/Glossary#GUI)* called
 *<a href="http://fluxbox.org/" class="external text"
 rel="nofollow">Fluxbox</a>*. Fluxbox is a minimal GUI.

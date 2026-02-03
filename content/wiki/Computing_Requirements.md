@@ -54,8 +54,8 @@ candidate has the technical qualifications or not.
 **Installing and Configuring Software**
 
 Most GMOD software relies on well-established programming languages and
-technologies such as [Perl](/wiki/Category%253APerl), CPAN,
-[Java](/wiki/Category%253AJava),
+technologies such as [Perl](/wiki/Category%3APerl), CPAN,
+[Java](/wiki/Category%3AJava),
 [PostgreSQL](/wiki/PostgreSQL), [MySQL](/wiki/MySQL), and
 Apache. There are also a number of packages and systems that are
 specific to bioinformatics, such as [BioPerl](/wiki/BioPerl), that

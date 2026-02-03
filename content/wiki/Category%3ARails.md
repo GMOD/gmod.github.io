@@ -11,4 +11,4 @@ This category contains only the following page.
 
 - [Chado on Rails](/wiki/Chado_on_Rails)
 
-Retrieved from "[http://gmod.org/wiki/Category%253ARails](/wiki/Category%253ARails)"
+Retrieved from "[http://gmod.org/wiki/Category:Rails](/wiki/Category%3ARails)"

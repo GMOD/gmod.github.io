@@ -26,5 +26,5 @@ rel="nofollow">GPL 3.0</a>
 
 Resources
 
-- [GMOD Component](/wiki/Category%253AGMOD_Component)
-- [Annotation](/wiki/Category%253AAnnotation)
+- [GMOD Component](/wiki/Category%3AGMOD_Component)
+- [Annotation](/wiki/Category%3AAnnotation)

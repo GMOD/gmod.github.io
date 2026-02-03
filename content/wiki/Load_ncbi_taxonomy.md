@@ -8,7 +8,7 @@ in the
 [**`phylotree`**](/wiki/Chado_Phylogeny_Module#Table:_phylotree)[phylotree
 table](/wiki/Chado_Phylogeny_Module#Table:_phylotree).
 This script was contributed by [Naama
-Menda](/wiki/User%253ANaamaMenda) at
+Menda](/wiki/User%3ANaamaMenda) at
 <a href="http://www.sgn.cornell.edu/" class="external text"
 rel="nofollow">Sol Genomics Network (SGN)</a> led by Lukas Mueller.
 

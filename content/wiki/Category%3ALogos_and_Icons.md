@@ -12,11 +12,11 @@ This category has the following 2 subcategories, out of 2 total.
 ### G
 
 - [GMOD Project
-  Logos](/wiki/Category%253AGMOD_Project_Logos)
+  Logos](/wiki/Category%3AGMOD_Project_Logos)
 
 ### M
 
-- [Member Logos](/wiki/Category%253AMember_Logos)
+- [Member Logos](/wiki/Category%3AMember_Logos)
 
 ## Pages in category "Logos and Icons"
 

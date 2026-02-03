@@ -66,4 +66,4 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-Retrieved from "[http://gmod.org/wiki/Category%253ANGS](/wiki/Category%253ANGS)"
+Retrieved from "[http://gmod.org/wiki/Category:NGS](/wiki/Category%3ANGS)"

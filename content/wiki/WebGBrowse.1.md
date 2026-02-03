@@ -16,5 +16,5 @@ Status
 
 Resources
 
-- [GBrowse](/wiki/Category%253AGBrowse)
-- [GMOD Components](/wiki/Category%253AGMOD_Components)
+- [GBrowse](/wiki/Category%3AGBrowse)
+- [GMOD Components](/wiki/Category%3AGMOD_Components)

@@ -8,7 +8,7 @@ Tutorial](/wiki/Galaxy_Tutorial)
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy.1) server. This tutorial will be taught by
-[Dave Clements](/wiki/User%253AClements) at the [2013 GMOD Summer
+[Dave Clements](/wiki/User%3AClements) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
   20-21, 8081</span>](#Open_Ports_20-21.2C_8081)

@@ -15,4 +15,4 @@ The following 4 pages are in this category, out of 4 total.
 - [GFF Tutorial 2012](/wiki/GFF_Tutorial_2012)
 - [GFF2](/wiki/GFF2)
 
-Retrieved from "[http://gmod.org/wiki/Category%253AGFF](/wiki/Category%253AGFF)"
+Retrieved from "[http://gmod.org/wiki/Category:GFF](/wiki/Category%3AGFF)"

@@ -11,10 +11,10 @@ This category has the following 3 subcategories, out of 3 total.
 
 ### C
 
-- [Chado FlyBase](/wiki/Category%253AChado_FlyBase)
-- [Chado Modules](/wiki/Category%253AChado_Modules)
+- [Chado FlyBase](/wiki/Category%3AChado_FlyBase)
+- [Chado Modules](/wiki/Category%3AChado_Modules)
 - [Chado
-  Presentations](/wiki/Category%253AChado_Presentations)
+  Presentations](/wiki/Category%3AChado_Presentations)
 
 ## Pages in category "Chado"
 

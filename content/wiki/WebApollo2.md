@@ -23,6 +23,6 @@ width="40" height="39" alt="} is open source" /></a>
 
 Resources
 
-- [Chado](/wiki/Category%253AChado)
-- [Apollo](/wiki/Category%253AApollo)
-- [Annotation](/wiki/Category%253AAnnotation)
+- [Chado](/wiki/Category%3AChado)
+- [Apollo](/wiki/Category%3AApollo)
+- [Annotation](/wiki/Category%3AAnnotation)

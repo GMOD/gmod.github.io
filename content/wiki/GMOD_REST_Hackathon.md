@@ -51,20 +51,20 @@ hotel room, or in the New England themed bar at the Seven Seas hotel.
 
 ## Organizing Committee
 
-- [Josh Goodman](/wiki/User%253AJogoodma)
+- [Josh Goodman](/wiki/User%3AJogoodma)
 
 ## Attendees
 
 - *Please add your name here*
-- [Josh Goodman](/wiki/User%253AJogoodma)
-- [Richard Smith](/wiki/User%253ARsmith)
-- [Todd Harris](/wiki/User%253ATharris)
-- [Robert Buels](/wiki/User%253ARobertBuels)
-- [Michael Caudy](/wiki/User%253AMcaudy)
-- [Jim Hu](/wiki/User%253AJimHu.1)
+- [Josh Goodman](/wiki/User%3AJogoodma)
+- [Richard Smith](/wiki/User%3ARsmith)
+- [Todd Harris](/wiki/User%3ATharris)
+- [Robert Buels](/wiki/User%3ARobertBuels)
+- [Michael Caudy](/wiki/User%3AMcaudy)
+- [Jim Hu](/wiki/User%3AJimHu.1)
 
-- [Chris Childers](/wiki/User%253AChilders)
-- [Justin Reese](/wiki/User%253AJustaddcoffee)
+- [Chris Childers](/wiki/User%3AChilders)
+- [Justin Reese](/wiki/User%3AJustaddcoffee)
 
 ## Topics
 

@@ -15,12 +15,12 @@ height="148" alt="GMOD2008Attendees.JPG" />
     rel="nofollow">XanthusBase</a>
 3.  Jeff Bowes - <a href="http://xenbase.org" class="external text"
     rel="nofollow">Xenbase</a>
-4.  [Robert Buels](/wiki/User%253ARobertBuels) -
+4.  [Robert Buels](/wiki/User%3ARobertBuels) -
     <a href="http://www.sgn.cornell.edu" class="external text"
     rel="nofollow">Sol Genomics Network</a>
-    ([SGN](/wiki/Category%253ASGN))
-5.  [Scott Cain](/wiki/User%253AScott) - GMOD
-6.  [Dave Clements](/wiki/User%253AClements) -
+    ([SGN](/wiki/Category%3ASGN))
+5.  [Scott Cain](/wiki/User%3AScott) - GMOD
+6.  [Dave Clements](/wiki/User%3AClements) -
     <a href="http://nescent.org" class="external text"
     rel="nofollow">NESCent</a>, GMOD
 7.  Sean Davey - BirdBase, U of Arizona
@@ -31,42 +31,42 @@ height="148" alt="GMOD2008Attendees.JPG" />
 9.  Mary E Dolan
     <a href="http://www.informatics.jax.org/" class="external text"
     rel="nofollow">Mouse Genome Informatics, The Jackson Laboratory</a>
-10. [Ben Faga](/wiki/User%253AFaga) - CSHL
+10. [Ben Faga](/wiki/User%3AFaga) - CSHL
 11. Yunchen Gong - <a href="http://utoronto.ca" class="external text"
     rel="nofollow">University of Toronto</a>
-12. [Josh Goodman](/wiki/User%253AJogoodma) -
-    [FlyBase](/wiki/Category%253AFlyBase)
-13. [Todd Harris](/wiki/User%253ATharris) -
+12. [Josh Goodman](/wiki/User%3AJogoodma) -
+    [FlyBase](/wiki/Category%3AFlyBase)
+13. [Todd Harris](/wiki/User%3ATharris) -
     <a href="http://www.wormbase.org/" class="external text"
     rel="nofollow">WormBase</a>
-14. [Chris Hemmerich](/wiki/User%253AChemmeri) - Center for
+14. [Chris Hemmerich](/wiki/User%3AChemmeri) - Center for
     Genomics and Bioinformatics, Indiana U.
 15. <a href="http://biowiki.org/IanHolmes" class="external text"
     rel="nofollow">Ian Holmes</a> - UC Berkeley
-16. [Jim Hu](/wiki/User%253AJimHu.1) -
+16. [Jim Hu](/wiki/User%3AJimHu.1) -
     <a href="http://ecoliwiki.net/" class="external text"
     rel="nofollow">EcoliWiki</a>, Texas A&M
 17. Thomas Keane -
     <a href="http://www/sanger.ac.uk" class="external text"
     rel="nofollow">Wellcome Trust Sanger Institute</a>
-18. [Ed Lee](/wiki/User%253AElee) -
+18. [Ed Lee](/wiki/User%3AElee) -
     <a href="http://www.berkeleybop.org" class="external text"
     rel="nofollow">BBOP</a> and [Apollo](/wiki/Apollo.1)
 19. Suzi Lewis - BBOP
 20. Margie Manker -
     <a href="http://populargenetics.ca" class="external text"
     rel="nofollow">The Centre for Applied Genomics, Toronto</a>
-21. [Sheldon McKay](/wiki/User%253AMckays) -
+21. [Sheldon McKay](/wiki/User%3AMckays) -
     <a href="http://modencode.org" class="external text"
     rel="nofollow">modENCODE</a>,
-    [WormBase](/wiki/Category%253AWormBase)
+    [WormBase](/wiki/Category%3AWormBase)
 22. Lukas Mueller
     <a href="http://www.sgn.cornell.edu" class="external text"
     rel="nofollow">Sol Genomics Network</a>
-    ([SGN](/wiki/Category%253ASGN))
+    ([SGN](/wiki/Category%3ASGN))
 23. Brian O'Connor -
     <a href="http://ucla.edu" class="external text" rel="nofollow">UCLA</a>
-24. [Joshua Orvis](/wiki/User%253AJorvis) -
+24. [Joshua Orvis](/wiki/User%3AJorvis) -
     <a href="http://www.igs.umaryland.edu" class="external text"
     rel="nofollow">Institute for Genome Sciences</a>, University of
     Maryland
@@ -75,7 +75,7 @@ height="148" alt="GMOD2008Attendees.JPG" />
     rel="nofollow">BeeSpace</a>, University of Illinois
 26. Stéphanie Sidibe Bocs -
     <a href="http://cirad.fr" class="external text" rel="nofollow">CIRAD</a>
-27. [Richard Smith](/wiki/User%253ARsmith) -
+27. [Richard Smith](/wiki/User%3ARsmith) -
     <a href="http://www.intermine.org" class="external text"
     rel="nofollow">InterMine</a> (and
     [InterMine](/wiki/InterMine))
@@ -83,8 +83,8 @@ height="148" alt="GMOD2008Attendees.JPG" />
     <a href="http://www.xenbase.org" class="external text"
     rel="nofollow">Xenbase</a>; University Of Calgary
 29. Jason Stajich - UC Berkeley
-30. Haiyan Zhang - [FlyBase](/wiki/Category%253AFlyBase)
-31. [Junjun Zhang](/wiki/User%253AJunjun) -
+30. Haiyan Zhang - [FlyBase](/wiki/Category%3AFlyBase)
+31. [Junjun Zhang](/wiki/User%3AJunjun) -
     <a href="http://www.tcag.ca" class="external text" rel="nofollow">The
     Hospital for Sick Children, Toronto</a>
 
@@ -101,7 +101,7 @@ databases, see the [GMOD User Community](#GMOD_User_Community) section.
 
 ## Chado
 
-[Scott Cain](/wiki/User%253AScott) spoke on
+[Scott Cain](/wiki/User%3AScott) spoke on
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 The GMOD 1.1 release is in the works. There are no schema changes yet.
@@ -132,7 +132,7 @@ general approval.
 
 ### Natural Diversity Module
 
-[Dave Clements](/wiki/User%253AClements) discussed the Chado
+[Dave Clements](/wiki/User%3AClements) discussed the Chado
 Natural Diversity Module. It was developed at
 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a> and NCSU to enable
@@ -148,7 +148,7 @@ pointed out there was grant money to do exactly this.
 
 ## Community Annotation System
 
-[Scott Cain](/wiki/User%253AScott) also spoke about his work on the
+[Scott Cain](/wiki/User%3AScott) also spoke about his work on the
 [Community Annotation
 System](/wiki/Community_Annotation_System)
 (CAS). The next release of CAS, 1.1, will feature
@@ -165,7 +165,7 @@ cas-utils is a set of tools that tie together
 includes
 
 - A CGI for selecting a region in GBrowse, extracting the data for that
-  region from Apollo and creating an [XML](/wiki/Category%253AXML)
+  region from Apollo and creating an [XML](/wiki/Category%3AXML)
   file and a jnlp (webstart) file for Apollo.
 - A CGI for accepting uploads of edited XML files to either be
   immediately loaded into Chado or to be held for validation.
@@ -179,7 +179,7 @@ class="external text" rel="nofollow">download</a>.
 
 ## TableEdit
 
-[Jim Hu](/wiki/User%253AJimHu.1) spoke about progress on
+[Jim Hu](/wiki/User%3AJimHu.1) spoke about progress on
 [TableEdit](/wiki/TableEdit.1), currently at release 0.8.
 
 - Now refuses edits until user entered HTML tags are closed, thus
@@ -209,14 +209,14 @@ this from the GUI) in response to popular query patterns. Also supports
 query templates, which are fill-in-the blank versions of popular
 queries.
 
-InterMine is written in [Java](/wiki/Category%253AJava). It has
+InterMine is written in [Java](/wiki/Category%3AJava). It has
 one class per Sequence Ontology (SO) term, and use Java class
 inheritance for _is_a_ relationships. _part_of_ relationships are
 implemented with Java references and collections.
 
 ## CMap
 
-[Ben Faga](/wiki/User%253AFaga) gave a talk on what's new in
+[Ben Faga](/wiki/User%3AFaga) gave a talk on what's new in
 [CMap](/wiki/CMap.1). Some highlights:
 
 - CMap 1.0 came out in March 2008.
@@ -234,8 +234,8 @@ releases (2 and 3).
 
 ### GBrowse 1.69
 
-[Sheldon McKay](/wiki/User%253AMckays) and [Lincoln
-Stein](/wiki/User%253ALstein) spoke about recent enhancements to
+[Sheldon McKay](/wiki/User%3AMckays) and [Lincoln
+Stein](/wiki/User%3ALstein) spoke about recent enhancements to
 [GBrowse](/wiki/GBrowse.1). These features are available in the
 current development version ("stable") of GBrowse and will be included
 in the upcoming (some would say imminent) 1.69 release of GBrowse.
@@ -247,7 +247,7 @@ in the upcoming (some would say imminent) 1.69 release of GBrowse.
 - Design Primers
 - Rubberbanding
 - Popup windows (with a nice example showing
-  [WormBase](/wiki/Category%253AWormBase) anatomy cartoons)
+  [WormBase](/wiki/Category%3AWormBase) anatomy cartoons)
 - Draggable tracks
 - Easy-share tracks
   - DAS server is inside GBrowse. Also a web service.
@@ -262,7 +262,7 @@ in the upcoming (some would say imminent) 1.69 release of GBrowse.
 
 ### GBrowse 2
 
-[Lincoln Stein](/wiki/User%253ALstein) talked about GBrowse 2, the
+[Lincoln Stein](/wiki/User%3ALstein) talked about GBrowse 2, the
 next major release of GBrowse. This release focuses on performance and
 stability. GBrowse 2 will be cluster aware:
 
@@ -272,7 +272,7 @@ stability. GBrowse 2 will be cluster aware:
   - A server can be a data server or a render server or both,
   - A track may have multiple data and render servers.
   - A single node can serve data and rendering for one or more tracks.
-- Tracks loaded with [AJAX](/wiki/Category%253AAJAX). Grayed out
+- Tracks loaded with [AJAX](/wiki/Category%3AAJAX). Grayed out
   until they load.
 - Turning tracks on and off no longer requires a reload.
 
@@ -344,8 +344,8 @@ GBrowse distribution.
 
 ## Common Gene Page
 
-[Scott Cain](/wiki/User%253AScott) eerily yet effectively channeled
-[Don Gilbert](/wiki/User%253ADongilbert) on the topic of a
+[Scott Cain](/wiki/User%3AScott) eerily yet effectively channeled
+[Don Gilbert](/wiki/User%3ADongilbert) on the topic of a
 [Common Gene Page](/wiki/Common_Gene_Page).
 
 This not the gene page that people see when they come to your web site.
@@ -378,7 +378,7 @@ a framework that can be used across multiple organizations and that will
 always produce structurally identical XML, no matter how it is
 originally stored.
 
-Rob Buells from [SGN](/wiki/Category%253ASGN) produced a prototype
+Rob Buells from [SGN](/wiki/Category%3ASGN) produced a prototype
 of this program while at the meeting.
 
 **Action Items:**
@@ -402,7 +402,7 @@ Common Web Pages.
 
 ## MediaWiki Enhancements
 
-[Sheldon McKay](/wiki/User%253AMckays) spoke about MediaWiki related
+[Sheldon McKay](/wiki/User%3AMckays) spoke about MediaWiki related
 work he's been doing for the
 <a href="http://www.modencode.org" class="external text"
 rel="nofollow">modENCODE project</a>.
@@ -456,8 +456,8 @@ rel="nofollow">WikiMods</a>, [see below](#WikiMods.org)) gave a talk
 titled _Perl based Schema Abstraction Layer for
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>_. Brad's
 talk (slides unavailable) gave an overview of a
-[Perl](/wiki/Category%253APerl)
-[middleware](/wiki/Category%253AMiddleware) package for
+[Perl](/wiki/Category%3APerl)
+[middleware](/wiki/Category%3AMiddleware) package for
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> that was
 developed at XanthusBase.
 
@@ -471,12 +471,12 @@ already exists. Why not use it?
 out that way.
 
 Eric Just, the developer of Modware, is no longer at
-[DictyBase](/wiki/Category%253ADictyBase). Someone has
+[DictyBase](/wiki/Category%3ADictyBase). Someone has
 replaced him, but we don't know if that person is supporting Modware.
 
 It seems that we have a lot of Perl and Java APIs to Chado, perhaps too
 many. What should we do about that? [Lincoln
-Stein](/wiki/User%253ALstein) suggested that we document them all
+Stein](/wiki/User%3ALstein) suggested that we document them all
 and provide a list of pros and cons for each. That will allow new users
 to make the best informed choice about what they want to do.
 
@@ -514,7 +514,7 @@ using Chado. It also would make tool development much easier.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2008Lukas.JPG" width="120"
 height="148" alt="GMOD2008Lukas.JPG" />
 
-Lukas Mueller from [SGN](/wiki/Category%253ASGN) spoke about
+Lukas Mueller from [SGN](/wiki/Category%3ASGN) spoke about
 community annotation at the
 <a href="http://www.sgn.cornell.edu/" class="external text"
 rel="nofollow">Sol Genomics Network</a>.
@@ -552,7 +552,7 @@ It is scheduled to launch on July 30 2008 with these sites:
   rel="nofollow">http://demo.wikimods.org</a>
 
 They have migrated Chado from Oracle to
-[MySQL](/wiki/Category%253AMySQL).
+[MySQL](/wiki/Category%3AMySQL).
 
 ## CellFrame
 
@@ -622,7 +622,7 @@ after that.
 
 ## GMOD Help Desk
 
-[Dave Clements](/wiki/User%253AClements) gave a talk on his first
+[Dave Clements](/wiki/User%3AClements) gave a talk on his first
 10 months at the [GMOD Help Desk](/wiki/GMOD_Help_Desk), and
 what he is planning doing in the coming months.
 
@@ -711,7 +711,7 @@ communicate what ZFIN was all about and at the end of the quarter we had
 about 20 designs to pick from, and most of them were spectacularly good.
 
 Many GMOD user databases, web sites, and GMOD components don't have
-snazzy logos. [Dave](/wiki/User%253AClements) offered to contact
+snazzy logos. [Dave](/wiki/User%3AClements) offered to contact
 the same department and the local community college as well, and ask if
 they would be interested in doing something similar GMOD community. This
 time around I would propose that each student or team get a different
@@ -754,7 +754,7 @@ please add it below.
   rel="nofollow">http://genome.biowiki.org/</a> - Ian Holmes
 - [InterMine](/wiki/InterMine) and
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Richard
-  Smith ([Scott](/wiki/User%253AScott) 14:04, 6 June 2008 (EDT))
+  Smith ([Scott](/wiki/User%3AScott) 14:04, 6 June 2008 (EDT))
 - Advances in the [Common Gene
   Page](/wiki/Common_Gene_Page) effort (see also here an
   old page at blog.gmod.org:
@@ -764,19 +764,19 @@ please add it below.
   <a href="http://eugenes.org/gmod/gene-report-examples/"
   class="external free"
   rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a> )
-  ([Scott](/wiki/User%253AScott) 14:04, 6 June 2008 (EDT))
+  ([Scott](/wiki/User%3AScott) 14:04, 6 June 2008 (EDT))
 - TableEdit round trip/integration progress and plans
-  --[JimHu](/wiki/User%253AJimHu.1) 18:35, 6 June 2008 (EDT)
+  --[JimHu](/wiki/User%3AJimHu.1) 18:35, 6 June 2008 (EDT)
 - Java Chado data model API with higher level, user friendly
-  "Biological" layer [Ed](/wiki/User%253AElee)
-- GBrowse 1.69 show and tell [Sheldon McKay](/wiki/User%253AMckays)
-- MediaWiki enhancements [Sheldon McKay](/wiki/User%253AMckays)
+  "Biological" layer [Ed](/wiki/User%3AElee)
+- GBrowse 1.69 show and tell [Sheldon McKay](/wiki/User%3AMckays)
+- MediaWiki enhancements [Sheldon McKay](/wiki/User%3AMckays)
 - [GMOD Help Desk](/wiki/GMOD_Help_Desk) - [Dave
-  Clements](/wiki/User%253AClements)
+  Clements](/wiki/User%3AClements)
   - priorities for 2008-2009
   - Evaluation - Has the Help Desk been helpful? -
-    [Dave](/wiki/User%253AClements) and [Don
-    Gilbert](/wiki/User%253ADongilbert)
+    [Dave](/wiki/User%3AClements) and [Don
+    Gilbert](/wiki/User%3ADongilbert)
   - Grant review service
   - Funding GMOD
   - GMOD and the Google Summer of Code in 2009?

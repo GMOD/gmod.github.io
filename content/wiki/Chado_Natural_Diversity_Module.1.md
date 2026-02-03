@@ -211,7 +211,7 @@ insert your data in the database.
 - [Chado Natural Diversity Module Working
   Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)
   page, and the [group's discussion
-  page](/wiki/Talk%253AChado_Natural_Diversity_Module_Working_Group)
+  page](/wiki/Talk%3AChado_Natural_Diversity_Module_Working_Group)
   for background on how this module was created.
 
 ### Email Threads

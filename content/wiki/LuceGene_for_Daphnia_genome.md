@@ -68,5 +68,5 @@ title="Daphnia-genepage.png">daphnia gene page</a> and
 class="internal" title="Daphnia-genepage-xml.png">gene page xml</a>.
 
 
-[Dongilbert](/wiki/User%253ADongilbert) 16:23, 4 September 2007
+[Dongilbert](/wiki/User%3ADongilbert) 16:23, 4 September 2007
 (EDT)

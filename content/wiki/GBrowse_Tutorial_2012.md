@@ -5,7 +5,7 @@ title: "GBrowse Tutorial 2012"
 
 This [GBrowse](/wiki/GBrowse.1) tutorial was taught at the [2012
 GMOD Summer School](/wiki/2012_GMOD_Summer_School)
-by [Scott Cain](/wiki/User%253AScott).
+by [Scott Cain](/wiki/User%3AScott).
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-5bab1c32, name: GMOD 2012 day 4 start**, available in the US East
@@ -307,7 +307,7 @@ so, we need to run another script that comes with Bio::DB::Das::Chado:
 
 This does several things (including poorly estimating how long it will
 take to finish), including creating materialized views, using a tool
-provided by [SOL Genomics Network (SGN)](/wiki/Category%253ASGN).
+provided by [SOL Genomics Network (SGN)](/wiki/Category%3ASGN).
 In practice, it would be a good idea to read the documentation of
 `gmod_materialized_view_tool.pl` for information on keeping the view up
 to date.

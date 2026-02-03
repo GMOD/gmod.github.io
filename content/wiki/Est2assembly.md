@@ -46,7 +46,7 @@ class="external text" rel="nofollow">project website</a>.
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](/wiki/User%253AAlpapan) while at CSIRO, the
+Papanicolaou](/wiki/User%3AAlpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
 rel="nofollow">http://www.csiro.au</a>).

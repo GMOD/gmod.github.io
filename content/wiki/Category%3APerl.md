@@ -27,11 +27,11 @@ This category has the following 2 subcategories, out of 2 total.
 
 ### B
 
-- [BioPerl](/wiki/Category%253ABioPerl)
+- [BioPerl](/wiki/Category%3ABioPerl)
 
 ### M
 
-- [Modware](/wiki/Category%253AModware)
+- [Modware](/wiki/Category%3AModware)
 
 ## Pages in category "Perl"
 

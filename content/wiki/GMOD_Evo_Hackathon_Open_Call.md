@@ -99,22 +99,22 @@ Sincerely,
 The [GMOD EvoHack](/wiki/GMOD_Evo_Hackathon) Organizing
 Committee (and project affiliations as relevant):
 
-- [Nicole Washington](/wiki/User%253ANLWashington), Chair
+- [Nicole Washington](/wiki/User%3ANLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
   rel="nofollow">modENCODE</a>, [Phenote](/wiki/Phenote))
-- [Robert Buels](/wiki/User%253ARobertBuels)
+- [Robert Buels](/wiki/User%3ARobertBuels)
   (<a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>, Chado NatDiv)
-- [Scott Cain](/wiki/User%253AScott) (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User%3AScott) (Ontario Institute for Cancer
   Research, GMOD)
-- [Dave Clements](/wiki/User%253AClements)
+- [Dave Clements](/wiki/User%3AClements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, GMOD)
-- [Hilmar Lapp](/wiki/User%253AHlapp)
+- [Hilmar Lapp](/wiki/User%3AHlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
-- [Sheldon McKay](/wiki/User%253AMckays) (University of Arizona;
+- [Sheldon McKay](/wiki/User%3AMckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn.1))
 

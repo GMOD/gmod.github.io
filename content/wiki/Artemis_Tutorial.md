@@ -13,14 +13,14 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Artemis" />
 
 This [Artemis-Chado Integration](/wiki/Artemis) tutorial was
-presented by [Robin Houston](/wiki/User%253ARobinHouston),
-[Tim Carver](/wiki/User%253ATimCarver) and [Giles
-Velarde](/wiki/User%253ABuggy) at the 2009 GMOD Summer School -
+presented by [Robin Houston](/wiki/User%3ARobinHouston),
+[Tim Carver](/wiki/User%3ATimCarver) and [Giles
+Velarde](/wiki/User%3ABuggy) at the 2009 GMOD Summer School -
 Europe, August 2009. The most recent Artemis tutorial can be found at
 the <a href="/wiki/Artemis_Tutorial" class="mw-redirect"
 title="Artemis Tutorial">Artemis Tutorial</a> page.
 
-This [tutorial](/wiki/Category%253ATutorials) walks you
+This [tutorial](/wiki/Category%3ATutorials) walks you
 through how to use the Artemis annotation editor with a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 

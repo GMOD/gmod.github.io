@@ -206,10 +206,10 @@ Operating systems in use had a definite skew towards Unix based systems:
 
 | \# Responses | Operating System |
 |-------------:|---------------------------------------------------|
-| 55 | [Linux](/wiki/Category%253ALinux) |
-| 8 | [Mac OS X](/wiki/Category%253AMac_OS_X) |
+| 55 | [Linux](/wiki/Category%3ALinux) |
+| 8 | [Mac OS X](/wiki/Category%3AMac_OS_X) |
 | 6 | Solaris |
-| 2 | [Windows](/wiki/Category%253AWindows) |
+| 2 | [Windows](/wiki/Category%3AWindows) |
 | 1 | Unspecified Unix |
 
 ### Current Server Sufficient?
@@ -425,10 +425,10 @@ Respondents were given a list of choices along with *Other*
 | 39 | [Next generation sequence](/wiki/Next_Generation_Sequencing) |
 | 38 | [Annotation](/wiki/Annotation) pipelines |
 | 32 | Community [annotation](/wiki/Annotation) |
-| 29 | [Microarrays](/wiki/Category%253AMicroarrays) |
-| 29 | [Ontologies](/wiki/Category%253AOntologies) |
+| 29 | [Microarrays](/wiki/Category%3AMicroarrays) |
+| 29 | [Ontologies](/wiki/Category%3AOntologies) |
 | 24 | [Mapping](/wiki/CMap.1) (genetic, physical, QTL, ...) |
-| 22 | [Phenotypes](/wiki/Category%253APhenotypes) |
+| 22 | [Phenotypes](/wiki/Category%3APhenotypes) |
 | 20 | Pathways |
 | 19 | Literature curation |
 | 18 | Other expression (besides microarrays) |

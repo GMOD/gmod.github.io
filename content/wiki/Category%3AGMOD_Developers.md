@@ -12,11 +12,11 @@ This category has the following 2 subcategories, out of 2 total.
 ### G
 
 - [GMOD Best
-  Practices](/wiki/Category%253AGMOD_Best_Practices)
+  Practices](/wiki/Category%3AGMOD_Best_Practices)
 
 ### P
 
-- [Proposals](/wiki/Category%253AProposals)
+- [Proposals](/wiki/Category%3AProposals)
 
 ## Pages in category "GMOD Developers"
 

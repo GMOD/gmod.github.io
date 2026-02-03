@@ -88,4 +88,4 @@ title="Template:SemanticLink">Template:SemanticLink</a></li>
 </table>
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ASemanticLink](/wiki/Category%253ASemanticLink)"
+"[http://gmod.org/wiki/Category:SemanticLink](/wiki/Category%3ASemanticLink)"

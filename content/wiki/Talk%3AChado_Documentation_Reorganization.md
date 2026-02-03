@@ -27,7 +27,7 @@ Another is because we want users to be able to update the main
 documentation in true wiki style.
 
 Thanks,
-[Dave Clements](/wiki/User%253AClements)
+[Dave Clements](/wiki/User%3AClements)
 [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 
 ------------------------------------------------------------------------

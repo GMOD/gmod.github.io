@@ -78,7 +78,7 @@ years of the web. AJAX stands for Asynchronous Javascript and
 
 See Also:
 
-- [Category%253AAJAX](/wiki/Category%253AAJAX)
+- [Category:AJAX](/wiki/Category%3AAJAX)
 
 ### API
 
@@ -119,7 +119,7 @@ See also
 
 - <a href="http://www.w3.org/Style/CSS/" class="external text"
   rel="nofollow">CSS Home Page @ W3C</a>
-- [MediaWiki%253ACommon.css](/wiki/MediaWiki%253ACommon.css) -
+- [MediaWiki:Common.css](/wiki/MediaWiki%3ACommon.css) -
   Extensions to MediaWiki's default CSS that we have made on this web
   site.
 
@@ -370,7 +370,7 @@ encountered in GMOD primarily as a language to construct user interfaces
 
 See also:
 
-- [Category%253AJava](/wiki/Category%253AJava) - GMOD pages tagged as
+- [Category:Java](/wiki/Category%3AJava) - GMOD pages tagged as
   related to Java.
 
 ### JRE
@@ -399,7 +399,7 @@ See also:
 
 - [Computing
   Requirements](/wiki/Computing_Requirements)
-- [Category%253ALinux](/wiki/Category%253ALinux) - List of GMOD pages
+- [Category:Linux](/wiki/Category%3ALinux) - List of GMOD pages
   tagged as related to Linux.
 
 ### Middleware
@@ -411,7 +411,7 @@ does not work.
 
 See also:
 
-- [Category%253AMiddleware](/wiki/Category%253AMiddleware) -
+- [Category:Middleware](/wiki/Category%3AMiddleware) -
   List of GMOD pages tagged as related to middleware.
 
 ### Object-Relational Mapping
@@ -469,7 +469,7 @@ See also:
   Home Page</a>
 - <a href="http://cpan.perl.org/" class="external text"
   rel="nofollow">Perl's open source library repository.</a>
-- [Category%253APerl](/wiki/Category%253APerl) - GMOD pages tagged as
+- [Category:Perl](/wiki/Category%3APerl) - GMOD pages tagged as
   related to Perl.
 
 ### RDBMS
@@ -553,7 +553,7 @@ See Also:
 *Unix* is a group of [operating systems](#Operating_System) that are
 descended from the original Unix operating system developed in the
 1970s. This includes Solaris, HP-UX, [Linux](#Linux), [Mac OS
-X](/wiki/Category%253AMac_OS_X), and many others.
+X](/wiki/Category%3AMac_OS_X), and many others.
 
 ### XML
 
@@ -563,5 +563,5 @@ has a much tighter syntax than does HTML.
 
 See also:
 
-- [Category%253AXML](/wiki/Category%253AXML)
+- [Category:XML](/wiki/Category%3AXML)
 - [XORT](/wiki/XORT.1)

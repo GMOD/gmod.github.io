@@ -9,7 +9,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ## Pages in category "Pages containing blacklisted links"
 
@@ -33,4 +33,4 @@ The following 5 pages are in this category, out of 5 total.
 - [Template:TutorialList](/wiki/Template:TutorialList)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253APages_containing_blacklisted_links](/wiki/Category%253APages_containing_blacklisted_links)"
+"[http://gmod.org/wiki/Category:Pages_containing_blacklisted_links](/wiki/Category%3APages_containing_blacklisted_links)"

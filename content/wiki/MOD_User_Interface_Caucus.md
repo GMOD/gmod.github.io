@@ -68,9 +68,9 @@ comment' link below.
   Development](/wiki/Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development)
 
 - [Face Caucus SGN: Associating Solanaceae loci with
-  phenotype](/wiki/Face_Caucus_SGN%253A_Associating_Solanaceae_loci_with_phenotype)
+  phenotype](/wiki/Face_Caucus_SGN%3A_Associating_Solanaceae_loci_with_phenotype)
 
 - [MOD User Interfaces: outline of
-  topics](/wiki/MOD_User_Interfaces%253A_outline_of_topics)
+  topics](/wiki/MOD_User_Interfaces%3A_outline_of_topics)
 - [MOD User Interfaces: Sample of several MOD Top Level
   functions](/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions)

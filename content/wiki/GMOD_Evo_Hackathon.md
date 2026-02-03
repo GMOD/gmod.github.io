@@ -40,7 +40,7 @@ GMOD held a hackathon November 8-12, 2010, at the
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
 Durham, North Carolina. This hackathon focused on improving GMOD's
 support for [evolutionary
-biology](/wiki/Category%253AEvolution).
+biology](/wiki/Category%3AEvolution).
 
 The [Open Call for
 Participation](/wiki/GMOD_Evo_Hackathon_Open_Call)
@@ -204,7 +204,7 @@ memory.
 
 ## PAG Poster
 
-[Robert Buels](/wiki/User%253ARobertBuels) gave a <a
+[Robert Buels](/wiki/User%3ARobertBuels) gave a <a
 href="http://www.nescent.org/wg/gmodevohackathon/images/3/3f/Gmod_evohack_poster.pdf"
 class="external text" rel="nofollow">poster on the hackathon</a> at [PAG
 2011](/wiki/PAG_2011).
@@ -439,11 +439,11 @@ boundaries.
 
 # Organizing Committee
 
-- [Nicole Washington](/wiki/User%253ANLWashington), chair
-- [Sheldon McKay](/wiki/User%253AMckays)
-- [Scott Cain](/wiki/User%253AScott)
+- [Nicole Washington](/wiki/User%3ANLWashington), chair
+- [Sheldon McKay](/wiki/User%3AMckays)
+- [Scott Cain](/wiki/User%3AScott)
 - <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
   Buels</a>
 - <a href="http://informatics.nescent.org/wiki/User%253AHlapp"
   class="external text" rel="nofollow">Hilmar Lapp</a>
-- [Dave Clements](/wiki/User%253AClements)
+- [Dave Clements](/wiki/User%3AClements)

@@ -4,7 +4,7 @@ title: "JBrowse Tutorial Programming for Biology 2016"
 # JBrowse Tutorial Programming for Biology 2016
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%253AScott) at the Programming for Biology at Cold
+Cain](/wiki/User%3AScott) at the Programming for Biology at Cold
 Spring Harbor Laboratory in October 2016 using JBrowse 1.12.1.
 
 This tutorial assumes an Ubuntu virtual machine at AWS (ami-47f1b050, in

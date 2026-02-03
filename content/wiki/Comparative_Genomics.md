@@ -5,7 +5,7 @@ title: "Comparative Genomics"
 
 GMOD includes several components for managing and visualizing
 [comparative genomics and
-synteny](/wiki/Category%253AComparative_Genomics)
+synteny](/wiki/Category%3AComparative_Genomics)
 data.
 
   Introduction](#Introduction)
@@ -21,7 +21,7 @@ data.
 ## Introduction
 
 [Comparative
-genomics](/wiki/Category%253AComparative_Genomics)
+genomics](/wiki/Category%3AComparative_Genomics)
 and synteny are hot topics in biology and are frequently discussed at
 GMOD [Meetings](/wiki/Meetings). GMOD offers several solutions for
 managing and [visualizing](/wiki/Visualization) comparative
@@ -43,12 +43,12 @@ genomics data.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf" class="internal"
   title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
   Using GMOD Tools</a>** - poster by [Scott
-  Cain](/wiki/User%253AScott) showing how six GMOD tools are used to
+  Cain](/wiki/User%3AScott) showing how six GMOD tools are used to
   create an example comparative genome model organism database.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
   class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
   Genomics With GMOD and BioPerl</a>** - a 2004 presentation by [Jason
-  Stajich](/wiki/User%253AStajich).
+  Stajich](/wiki/User%3AStajich).
 
 ## GMOD Components
 

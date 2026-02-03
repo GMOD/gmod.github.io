@@ -11,13 +11,13 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="59" alt="GBrowse" />
 
 This [GBrowse Next Generation Sequencing](/wiki/GBrowse.1) tutorial
-was presented by [Dave Clements](/wiki/User%253AClements) at the
+was presented by [Dave Clements](/wiki/User%3AClements) at the
 [Bioinformatics Australia 2009 (BA2009)](/wiki/BA2009), October 2009.
 The most recent GBrowse tutorial can be found at the [GBrowse
 Tutorial](/wiki/GBrowse_Tutorial) page.
 
 
-This [tutorial](/wiki/Category%253ATutorials) walks you
+This [tutorial](/wiki/Category%3ATutorials) walks you
 through how to configure the [GBrowse](/wiki/GBrowse.1) genome
 browser to display [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
@@ -130,7 +130,7 @@ Password: gmod</p></td>
 
 **Important Note**
 
-This [tutorial](/wiki/Category%253ATutorials) describes the
+This [tutorial](/wiki/Category%3ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -143,7 +143,7 @@ available.
 
 The tutorial will show how to display [next generation
 sequence](/wiki/Next_Generation_Sequencing) (NGS)
-data in [GBrowse 2](/wiki/Category%253AGBrowse_2) using
+data in [GBrowse 2](/wiki/Category%3AGBrowse_2) using
 <a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a>. We'll use the example human data that comes
 with SAMtools to do that. First we'll load the reference sequence and

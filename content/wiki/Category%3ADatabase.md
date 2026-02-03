@@ -13,4 +13,4 @@ This category contains only the following page.
   Databases](/wiki/A_Brief_Guide_to_Databases)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253ADatabase](/wiki/Category%253ADatabase)"
+"[http://gmod.org/wiki/Category:Database](/wiki/Category%3ADatabase)"

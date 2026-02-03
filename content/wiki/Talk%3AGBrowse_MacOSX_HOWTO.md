@@ -10,13 +10,13 @@ fine, but I think a caveat should be added... especially on this page
 where fink is described as the simplest way to install gbrowse's
 prereqs. For example, /sw/lib would be the appropriate choice for the
 first question during the script (where is libgd) rather than /usr/lib.
---[Stewarta](/wiki/User%253AStewarta) 13:14, 29 August 2007 (EDT)
+--[Stewarta](/wiki/User%3AStewarta) 13:14, 29 August 2007 (EDT)
 
 *Good point; the comment about using the defaults is really referring to
 the defaults for the GBrowse install proper, as opposed to the
 prerequisites that get installed before GBrowse does (like GD.pm). I'll
 see if I can craft a clearer explanation both in the installer script
-and the MacOSX specific page. Thanks!* [Scott](/wiki/User%253AScott)
+and the MacOSX specific page. Thanks!* [Scott](/wiki/User%3AScott)
 13:30, 29 August 2007 (EDT)
 
 Another thing to consider is "path". This only worked for me with
@@ -41,4 +41,4 @@ If cpan is not properly installed try
 it worked fine. Unfortunately, I don't have a Tiger install disk around
 to do testing on, so I can't modify the gbrowse installer. I will add a
 note about needing LWP::Simple to the mac install page though.*
-[Scott](/wiki/User%253AScott) 17:10, 19 August 2008 (UTC)
+[Scott](/wiki/User%3AScott) 17:10, 19 August 2008 (UTC)

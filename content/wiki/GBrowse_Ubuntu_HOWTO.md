@@ -164,4 +164,4 @@ rel="nofollow">http://localhost/gbrowse</a>.
 
 # Author
 
-[Lincoln Stein](/wiki/User%253ALstein) 12:36, 17 April 2007 (EDT)
+[Lincoln Stein](/wiki/User%3ALstein) 12:36, 17 April 2007 (EDT)

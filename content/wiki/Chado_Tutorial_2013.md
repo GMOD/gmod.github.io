@@ -4,7 +4,7 @@ title: "Chado Tutorial 2013"
 # Chado Tutorial 2013
 
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](/wiki/User%253AScott) as part
+tutorial was presented by [Scott Cain](/wiki/User%3AScott) as part
 of the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
@@ -186,7 +186,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Extensible**
   - Write your own modules and properties
 - **Widely used**
-  - [FlyBase](/wiki/Category%253AFlyBase) - Chado started here,
+  - [FlyBase](/wiki/Category%3AFlyBase) - Chado started here,
     large diverse dataset and organization
   - <a href="http://xenbase.org" class="external text"
     rel="nofollow">Xenbase</a> - Smaller, but with several IT staff

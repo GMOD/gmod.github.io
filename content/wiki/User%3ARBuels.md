@@ -4,7 +4,7 @@ title: "User%253ARobertBuels"
 # User%253ARobertBuels
 
 (Redirected from
-[User%253ARBuels](/wiki/User%253ARBuels)
+[User:RBuels](/wiki/User%3ARBuels)
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fa/Rbuels_and_pretty_flowers.jpg/300px-Rbuels_and_pretty_flowers.jpg"
@@ -37,7 +37,7 @@ rel="nofollow">rbuels on GitHub</a>
 # Work
 
 - [JBrowse](/wiki/JBrowse.1) lead developer
-- [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) founding
+- [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) founding
   developer
 - <a href="http://solgenomics.net" class="external text"
   rel="nofollow">SGN</a> development processes

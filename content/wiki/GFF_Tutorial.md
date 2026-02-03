@@ -7,7 +7,7 @@ title: "GFF Tutorial 2012"
 Tutorial](/wiki/GFF_Tutorial)
 
 This tutorial on [GFF](/wiki/GFF) was given by [Scott
-Cain](/wiki/User%253AScott) at the [2012 GMOD Summer
+Cain](/wiki/User%3AScott) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
 **GFF** is a standard file format for storing genomic features in a text
@@ -527,7 +527,7 @@ your sequences in a separate file containing only FASTA entries.
 
 You can validate reasonably large GFF3 files at the following sites:
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 - [2012 Summer
-  School](/wiki/Category%253A2012_Summer_School)
+  School](/wiki/Category%3A2012_Summer_School)

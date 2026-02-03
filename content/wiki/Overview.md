@@ -383,7 +383,7 @@ See also:
 - [A Brief Guide to
   Databases](/wiki/A_Brief_Guide_to_Databases)
 - [Databases and GMOD](/wiki/Databases_and_GMOD)
-- [Database Tools](/wiki/Category%253ADatabase_Tools)
+- [Database Tools](/wiki/Category%3ADatabase_Tools)
 
 #### Chado and BioSQL
 
@@ -537,7 +537,7 @@ JBrowse's fast, flexible browsing interface, and users require only a
 web browser to use it.
 
 [Apollo](/wiki/Apollo.1) is a standalone [Java
-application](/wiki/Category%253AJava) for manual sequence
+application](/wiki/Category%3AJava) for manual sequence
 annotation, and is the predecessor of WebApollo. Apollo can read and
 write to Chado databases, but lacks the instant updates that WebApollo
 features. We recommend using [WebApollo](/wiki/WebApollo.1) as it
@@ -546,7 +546,7 @@ is under active development and has a more full feature set than Apollo.
 ### What are MAKER and DIYA?
 
 [GBrowse](/wiki/GBrowse.1) and [Apollo](/wiki/Apollo.1) both deal
-with [genome annotations](/wiki/Category%253AAnnotation),
+with [genome annotations](/wiki/Category%3AAnnotation),
 but where do these annotations come from? Frequently they come from a
 _genome annotation pipeline_, a software package or series of software
 packages that take an assembly (and other things) as input and produces
@@ -572,7 +572,7 @@ viewer, as well as a large number of interactive annotation tools.
 ### What is CMap?
 
 [CMap](/wiki/CMap.1) is a popular
-[comparative](/wiki/Category%253AComparative_Genomics)
+[comparative](/wiki/Category%3AComparative_Genomics)
 map viewer. It was initially created for use at
 <a href="http://gramene.org" class="external text"
 rel="nofollow">Gramene</a> but was redesigned to be used for any
@@ -588,7 +588,7 @@ relationships, you may need more than [GBrowse](/wiki/GBrowse.1).
 #### And SynView? or Sybil? or GBrowse_Syn?
 
 Yes, there are other [comparative
-genomics](/wiki/Category%253AComparative_Genomics)
+genomics](/wiki/Category%3AComparative_Genomics)
 viewers. The alternatives to [CMap](/wiki/CMap.1) are
 [GBrowse_syn](/wiki/GBrowse_syn.1), [Sybil](/wiki/Sybil), and
 [SynView](/wiki/SynView). [Sybil](/wiki/Sybil) stores its data in

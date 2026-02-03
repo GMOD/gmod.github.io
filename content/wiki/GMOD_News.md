@@ -1387,7 +1387,7 @@ Please follow these guidelines when adding a news item.
         <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
         page.
     - You can include images in your news item. See [preexisting news
-      items](/wiki/Category%253ANews_Items) for what markup
+      items](/wiki/Category%3ANews_Items) for what markup
       to use to do this.
 
 3.  Preview / save your changes. Edit and save the page until the news

@@ -4,7 +4,7 @@ title: "Category%253AGMOD Tools"
 # Category%253AGMOD Tools
 
 This category uses the form [Component
-information](/wiki/Form%253AComponent_information).
+information](/wiki/Form%3AComponent_information).
 
 ## Pages in category "GMOD Tools"
 

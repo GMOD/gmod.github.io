@@ -337,5 +337,5 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 # Authors
 
-- [Dongilbert](/wiki/User%253ADongilbert) 16:05, 16 April 2007
+- [Dongilbert](/wiki/User%3ADongilbert) 16:05, 16 April 2007
   (EDT)

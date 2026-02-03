@@ -69,9 +69,9 @@ subscribe to the Tripal mailing list.
 
 | Name | Email | Affiliation | Comments |
 |----|----|----|----|
-| [Stephen Ficklin](/wiki/User%253ASficklin) | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |
+| [Stephen Ficklin](/wiki/User%3ASficklin) | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |
 rel="nofollow">CUGI</a> | Meg Staton | mestato\<\*\>yahoo.com | <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">CUGI</a> | Sook Jung | sook\<\*\>bioinfo.wsu.edu | Washington State University, <a href="http://www.bioinfo.wsu.edu/gdr/" class="external text"
-rel="nofollow">GDR</a> | [Michael Caudy](/wiki/User%253AMcaudy) | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"
-rel="nofollow">Reactome</a> | [Dave Clements](/wiki/User%253AClements) | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
+rel="nofollow">GDR</a> | [Michael Caudy](/wiki/User%3AMcaudy) | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"
+rel="nofollow">Reactome</a> | [Dave Clements](/wiki/User%3AClements) | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
 rel="nofollow">NESCent</a>

@@ -12,7 +12,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](/wiki/Category%253ATutorials)
+- [Tutorials](/wiki/Category%3ATutorials)
 
 ## Pages in category "GBrowse 2"
 

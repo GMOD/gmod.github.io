@@ -41,7 +41,7 @@ comments and suggestions.
   types such as SNP, tile arrays, expression arrays, interaction data
   ... (add to this list).
 - **[comparative
-  genomics](/wiki/Category%253AComparative_Genomics)**
+  genomics](/wiki/Category%3AComparative_Genomics)**
   improvements. Projects in this area include the widely used
   [CMap](/wiki/CMap.1), and current
   <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">syntenic</a> map
@@ -58,13 +58,13 @@ comments and suggestions.
   [Textpresso](/wiki/Textpresso) and possible improvements,
   additions.
 
-[Dongilbert](/wiki/User%253ADongilbert) 18:14, 7 December 2007
+[Dongilbert](/wiki/User%3ADongilbert) 18:14, 7 December 2007
 (EST)
 
 ## Chado Documentation Reorganization
 
 We are reorganizing the [Chado related
-documentation](/wiki/Category%253AChado) in this web site. See
+documentation](/wiki/Category%3AChado) in this web site. See
 the [Chado Documentation
 Reorganization](/wiki/Chado_Documentation_Reorganization)
 page for more on this effort and how you can help direct it.

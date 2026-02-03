@@ -9,7 +9,7 @@ The following 4 pages are in this category, out of 4 total.
 
 ### B
 
-- [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema)
+- [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema)
 
 ### G
 

@@ -292,7 +292,7 @@ title="Matahari.pdf">PDF</a></td>
 
 ### Day 2: Thursday
 
-| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy.1)                                                  | [Dan Blankenberg](/wiki/User%253ADanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
+| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy.1)                                                  | [Dan Blankenberg](/wiki/User%3ADanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
 
 class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
 to GMOD Data</a> | Ben Vandervalk | <a
@@ -310,15 +310,15 @@ Please feel free to add suggested talks or topics for the meeting.
 
 - The Mycoplasma Genome Database: marrying microscopy and genomics
   (Andrew Oberlin & Iddo Friedberg)
-- Improving MOD interoperability ([Scott Cain](/wiki/User%253AScott),
-  [Josh Goodman](/wiki/User%253AJogoodma) will lead the
+- Improving MOD interoperability ([Scott Cain](/wiki/User%3AScott),
+  [Josh Goodman](/wiki/User%3AJogoodma) will lead the
   discussion)
 - [BioMart](/wiki/BioMart),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
   [Galaxy](/wiki/Galaxy.1), [GBrowse](/wiki/GBrowse.1), and
   [InterMine](/wiki/InterMine) updates - since representatives of
   all those groups will be there (suggested by [Dave
-  C](/wiki/User%253AClements))
+  C](/wiki/User%3AClements))
 - <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"
   class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
   to GMOD Data</a> (Ben Vandervalk)
@@ -358,14 +358,14 @@ You can register for the BioMart, Galaxy, and MAKER Workshops on the
 <a href="http://gmod.eventbrite.com/" class="external text"
 rel="nofollow">meeting registration site</a>. If you are interested in
 the [InterMine development meeting](#InterMine_Development_Meeting),
-please let [Richard Smith](/wiki/User%253ARsmith) know.
+please let [Richard Smith](/wiki/User%3ARsmith) know.
 
 ### [Galaxy](/wiki/Galaxy.1) Workshop
 
 This workshop will cover an introduction to [Galaxy](/wiki/Galaxy.1),
 including analyzing data with tools and visualizations, using Galaxy in
 the cloud, and running your own instance and adding new tools. [Dan
-Blankenberg](/wiki/User%253ADanB) of the
+Blankenberg](/wiki/User%3ADanB) of the
 <a href="http://galaxyproject.org/" class="external text"
 rel="nofollow">Galaxy Project</a> will lead the workshop.
 
@@ -400,7 +400,7 @@ which involves supporting InterMine data-warehouses for _D.
 melanogaster_, _R. norvegus_, _M. musculus_, _S. cerevisiae_, _D. rerio_
 and _C. elegans_. Groups representing other efforts to use InterMine for
 biological data-warehousing are welcome to attend (as indeed some already
-are) - please contact [Richard Smith](/wiki/User%253ARsmith) for
+are) - please contact [Richard Smith](/wiki/User%3ARsmith) for
 more details.
 
 ### [BioMart](/wiki/BioMart) Workshop

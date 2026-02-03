@@ -14,11 +14,11 @@ This category has the following 2 subcategories, out of 2 total.
 
 ### M
 
-- [MySQL](/wiki/Category%253AMySQL)
+- [MySQL](/wiki/Category%3AMySQL)
 
 ### P
 
-- [PostgreSQL](/wiki/Category%253APostgreSQL)
+- [PostgreSQL](/wiki/Category%3APostgreSQL)
 
 ## Pages in category "External"
 

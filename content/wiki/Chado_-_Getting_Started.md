@@ -18,7 +18,7 @@ Resources
 - [Modules](/wiki/Chado_Modules)
 - <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
   class="external text" rel="nofollow">Mailing List</a>
-- [Tagged](/wiki/Category%253AChado)
+- [Tagged](/wiki/Category%3AChado)
 - <a href="../extras/2008GMODCommunitySurvey.html#Chado"
   class="external text" rel="nofollow">2008 Survey</a>
 
@@ -163,7 +163,7 @@ data in Chado.
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
-class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI), and [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
+class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI), and [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"

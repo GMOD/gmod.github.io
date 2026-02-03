@@ -9,7 +9,7 @@ The following 5 pages are in this category, out of 5 total.
 
 ### D
 
-- [User%253ADongilbert](/wiki/User%253ADongilbert)
+- [User:Dongilbert](/wiki/User%3ADongilbert)
 
 ### G
 

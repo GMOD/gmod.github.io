@@ -521,7 +521,7 @@ sites, for example:
   <a href="http://www.biokao.com/gviewer.html" class="external free"
   rel="nofollow">http://www.biokao.com/gviewer.html</a>
 - Boston University
-  [Phenotype](/wiki/Category%253APhenotypes) Browser
+  [Phenotype](/wiki/Category%3APhenotypes) Browser
   <a href="http://gmed.bu.edu/" class="external free"
   rel="nofollow">http://gmed.bu.edu/</a>
 - Apropos annotation tool

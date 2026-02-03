@@ -11,8 +11,8 @@ response so far.
 is based on Lucene, which is open source, but are your content indexing
 programs also open source? Where can I download them?*
 
---[Jhannah](/wiki/User%253AJhannah) 16:06, 8 September 2007 (EDT)
+--[Jhannah](/wiki/User%3AJhannah) 16:06, 8 September 2007 (EDT)
 
 Is their source code available so I could run my own engine? I don't see
 any such information on their web site...?
---[Jhannah](/wiki/User%253AJhannah) 16:10, 8 September 2007 (EDT)
+--[Jhannah](/wiki/User%3AJhannah) 16:10, 8 September 2007 (EDT)

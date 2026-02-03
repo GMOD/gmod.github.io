@@ -3,7 +3,7 @@ title: "Category%253A!Lacking ERD"
 ---
 # Category%253A!Lacking ERD
 
-[Chado modules](/wiki/Category%253AChado_Modules) lacking
+[Chado modules](/wiki/Category%3AChado_Modules) lacking
 an ERD diagram.
 
 ## Pages in category "!Lacking ERD"

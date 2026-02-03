@@ -15,4 +15,4 @@ The following 2 pages are in this category, out of 2 total.
   HOWTO/Advanced](/wiki/GBrowse_2.0_Install_HOWTO/Advanced)
 
 Retrieved from
-"[http://gmod.org/wiki/Category%253AInstall](/wiki/Category%253AInstall)"
+"[http://gmod.org/wiki/Category:Install](/wiki/Category%3AInstall)"

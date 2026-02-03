@@ -10,7 +10,7 @@ providing the functionality that is needed by all organism databases.
 The table below classifies GMOD components according to their functional
 categories.
 
-See [Category%253AExternal](/wiki/Category%253AExternal) for
+See [Category:External](/wiki/Category%3AExternal) for
 software mentioned in the GMOD web site (and possibly used by GMOD
 components) that is not part of the GMOD project.
 

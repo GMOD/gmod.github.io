@@ -14,4 +14,4 @@ The following 2 pages are in this category, out of 2 total.
 - [News/Postdoc Position in Computational and Plant Evolutionary
   Biology](/wiki/News/Postdoc_Position_in_Computational_and_Plant_Evolutionary_Biology)
 
-Retrieved from "[http://gmod.org/wiki/Category%253AJobs](/wiki/Category%253AJobs)"
+Retrieved from "[http://gmod.org/wiki/Category:Jobs](/wiki/Category%3AJobs)"

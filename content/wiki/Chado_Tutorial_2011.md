@@ -4,7 +4,7 @@ title: "Chado Tutorial 2011"
 # Chado Tutorial 2011
 
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](/wiki/User%253AScott) as part
+tutorial was presented by [Scott Cain](/wiki/User%3AScott) as part
 of the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training).
 
@@ -202,6 +202,6 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Widely used**
   - \- Chado started here, large diverse dataset and organization
 
-- [Chado](/wiki/Category%253AChado)
+- [Chado](/wiki/Category%3AChado)
 - [2011 Spring
-  Training](/wiki/Category%253A2011_Spring_Training)
+  Training](/wiki/Category%3A2011_Spring_Training)

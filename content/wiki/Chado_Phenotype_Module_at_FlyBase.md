@@ -14,7 +14,7 @@ Should be done before Jan 1, 2011
 
 The [Chado Phenotype
 module](/wiki/Chado_Phenotype_Module) was developed
-at [FlyBase](/wiki/Category%253AFlyBase).
+at [FlyBase](/wiki/Category%3AFlyBase).
 
 To try and understand the existing phenotype module during the [GMOD Evo
 Hackathon](/wiki/GMOD_Evo_Hackathon), participants spent

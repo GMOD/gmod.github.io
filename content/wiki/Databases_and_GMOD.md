@@ -93,7 +93,7 @@ Chado) can be reused across multiple databases.
 #### Database Web Site
 
 Web sites that feature a lot of database driven content, such as
-[FlyBase](/wiki/Category%253AFlyBase)
+[FlyBase](/wiki/Category%3AFlyBase)
 (<a href="http://flybase.org" class="external free"
 rel="nofollow">http://flybase.org</a>) or
 [ParameciumDB](/wiki/ParameciumDB)
@@ -134,7 +134,7 @@ Chado.
 
 [BioMart](/wiki/BioMart) is a data warehouse package tailored for
 biological data. It takes existing databases (for example, the
-[FlyBase](/wiki/Category%253AFlyBase)
+[FlyBase](/wiki/Category%3AFlyBase)
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database),
 transforms them into a data warehouse and then provides a web interface
 for supporting arbitrary queries against the data.

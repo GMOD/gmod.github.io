@@ -3,8 +3,7 @@ title: "Chado - Getting Started"
 ---
 # Chado - Getting Started
 
-(Redirected from
-[Chado](/wiki/Chado)
+(Redirected from [Chado](/wiki/Chado))
 
 Status
 
@@ -21,7 +20,7 @@ Resources
 - [Modules](/wiki/Chado_Modules)
 - <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
   class="external text" rel="nofollow">Mailing List</a>
-- [Tagged](/wiki/Category%253AChado)
+- [Tagged](/wiki/Category%3AChado)
 - <a href="../extras/2008GMODCommunitySurvey.html#Chado"
   class="external text" rel="nofollow">2008 Survey</a>
 
@@ -36,17 +35,13 @@ one of the most sophisticated relational schemas currently available in
 molecular biology. The price of this capability is that the new user
 must spend some time becoming familiar with its fundamentals.
 
-  Documentation](#Documentation)
+- [Documentation](#Documentation)
 - [Modules](#Modules)
 - [Installation](#Installation)
-  - [Download a
-    Stable Release of Chado](#Download_a_Stable_Release_of_Chado)
-  - [Chado From
-    SVN](#Chado_From_SVN)
-- [Loading
-  Data](#Loading_Data)
-- [Mailing
-  Lists](#Mailing_Lists)
+  - [Download a Stable Release of Chado](#Download_a_Stable_Release_of_Chado)
+  - [Chado From SVN](#Chado_From_SVN)
+- [Loading Data](#Loading_Data)
+- [Mailing Lists](#Mailing_Lists)
 - [Pronunciation](#Pronunciation)
 
 ## Documentation
@@ -162,18 +157,10 @@ data in Chado.
 
 ## Mailing Lists
 
-|
+| | Mailing List Link | Description | Archive(s) |
 |----|----|----|----|
-|  | Mailing List Link | Description | Archive(s) |
-| <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
-class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI), and [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
-class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
-class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a
-href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"
-class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts"
-class="external text" rel="nofollow">gmod-schema-cmts</a> | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> code updates. | <a
-href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts"
-class="external text" rel="nofollow">Sourceforge</a> |
+| [Chado](/wiki/Chado) | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" class="external text" rel="nofollow">gmod-schema</a> | All issues regarding [Chado](/wiki/Chado), [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI), and [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema" class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html" class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema" class="external text" rel="nofollow">Sourceforge</a> |
+| | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts" class="external text" rel="nofollow">gmod-schema-cmts</a> | [Chado](/wiki/Chado) code updates | <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts" class="external text" rel="nofollow">Sourceforge</a> |
 
 ## Pronunciation
 

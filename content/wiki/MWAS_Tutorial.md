@@ -128,9 +128,9 @@ annotations a lot of thought, they use them everyday.
 
 Examples of Annotation Databases:
 
-- [FlyBase](/wiki/Category%253AFlyBase)
-- [WormBase](/wiki/Category%253AWormBase)
-- [Mouse Genome Informatics Group](/wiki/Category%253AMGI)
+- [FlyBase](/wiki/Category%3AFlyBase)
+- [WormBase](/wiki/Category%3AWormBase)
+- [Mouse Genome Informatics Group](/wiki/Category%3AMGI)
 
 Every time we use techniques such as RNAi, PCR, gene expression arrays,
 targeted gene knockout, or CHIP we are basing our experiments on the

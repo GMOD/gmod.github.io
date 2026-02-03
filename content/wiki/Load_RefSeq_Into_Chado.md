@@ -3,7 +3,7 @@ title: "Load RefSeq Into Chado"
 ---
 # Load RefSeq Into Chado
 
-This [HOWTO](/wiki/Category%253AHOWTO) describes a method for
+This [HOWTO](/wiki/Category%3AHOWTO) describes a method for
 loading the sequence data in Genbank RefSeq files into the [Chado
 database](/wiki/Chado_-_Getting_Started).
 
@@ -104,6 +104,6 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 ## Authors
 
-- [Scott Cain](/wiki/User%253AScott)
+- [Scott Cain](/wiki/User%3AScott)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

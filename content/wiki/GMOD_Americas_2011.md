@@ -376,7 +376,7 @@ Help spread the word about GMOD Americas 2011 events by posting and
 distributing [this
 flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf),
 or the [event
-announcements](/wiki/GMOD_News#GMOD_Spring_Training%253A_Apply_Now) to
+announcements](/wiki/GMOD_News#GMOD_Spring_Training%3A_Apply_Now) to
 your communities, mailing lists, and organizations.
 
 There are many organizations out there that are struggling to cope with

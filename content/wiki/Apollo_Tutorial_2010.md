@@ -11,7 +11,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="91" alt="Apollo" />
 
 This [Apollo](/wiki/Apollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%253AElee) at the [2010 GMOD Summer School -
+Lee](/wiki/User%3AElee) at the [2010 GMOD Summer School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Apollo tutorial can be found at the
 <a href="/wiki/Apollo_Tutorial" class="mw-redirect"
@@ -80,7 +80,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%253ATutorials) describes the
+This [tutorial](/wiki/Category%3ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift

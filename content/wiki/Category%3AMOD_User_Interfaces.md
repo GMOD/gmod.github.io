@@ -18,7 +18,7 @@ This category has only the following subcategory.
 ### M
 
 - [MOD UI
-  Presentations](/wiki/Category%253AMOD_UI_Presentations)
+  Presentations](/wiki/Category%3AMOD_UI_Presentations)
 
 ## Pages in category "MOD User Interfaces"
 

@@ -128,7 +128,7 @@ Heidelberg RNAi) by genes hit by the screens. Initially the plan is to
 store the dsRNA primers and amplicons with there chromosomal locations
 mapped to the current release. The goal is to link the libraries, dsRNA
 amplicons with genes and
-[phenotypes](/wiki/Category%253APhenotypes).
+[phenotypes](/wiki/Category%3APhenotypes).
 
 - dsRNA library: contains collections of dsRNA amplicons, primarily from
   the screening centers. Currently it holds the DRSC collection.

@@ -43,9 +43,9 @@ rel="nofollow">http://github.com/solgenomics/bio-chado-schema</a>
 
 ### Contributors
 
-- [Robert Buels](/wiki/User%253ARobertBuels) (Sol Genomics
+- [Robert Buels](/wiki/User%3ARobertBuels) (Sol Genomics
   Network)
-- [Naama Menda](/wiki/User%253ANaamaMenda) (Sol Genomics
+- [Naama Menda](/wiki/User%3ANaamaMenda) (Sol Genomics
   Network)
 - Aureliano Bombarely (Sol Genomics Network)
 - Jonathan "Duke" Leto (Sol Genomics Network)

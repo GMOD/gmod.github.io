@@ -13,7 +13,7 @@ This category has only the following subcategory.
 
 ### M
 
-- [Microarrays](/wiki/Category%253AMicroarrays)
+- [Microarrays](/wiki/Category%3AMicroarrays)
 
 ## Pages in category "Expression"
 

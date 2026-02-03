@@ -207,5 +207,5 @@ use them everyday.
 
 Examples of Annotation Databases:
 
-- [GMOD Schools](/wiki/Category%253AGMOD_Schools)
-- [Tutorials](/wiki/Category%253ATutorials)
+- [GMOD Schools](/wiki/Category%3AGMOD_Schools)
+- [Tutorials](/wiki/Category%3ATutorials)

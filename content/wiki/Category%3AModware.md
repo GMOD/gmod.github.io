@@ -3,7 +3,7 @@ title: "Category%253AModware"
 ---
 # Category%253AModware
 
-Modware is an object-oriented [Perl](/wiki/Category%253APerl) API
+Modware is an object-oriented [Perl](/wiki/Category%3APerl) API
 for <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It
 allows object-oriented querying and loading of a Chado database and
 returns data structures that a programmer can readily use without

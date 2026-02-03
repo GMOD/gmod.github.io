@@ -6,7 +6,7 @@ title: "GBrowse Tutorial"
 There are several [GBrowse](/wiki/GBrowse.1) tutorials:
 
 [GBrowse tutorial from 2013 GMOD Summer School](/wiki/GBrowse_Tutorial_2012)
-This tutorial was taught by [Scott Cain](/wiki/User%253AScott) at the
+This tutorial was taught by [Scott Cain](/wiki/User%3AScott) at the
 [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School) and the [2012
 GMOD Summer School](/wiki/2012_GMOD_Summer_School).
@@ -16,7 +16,7 @@ provided on an Amazon Machine Image: see [GMOD in the
 Cloud](/wiki/Cloud.1) for more information on getting a GMOD AMI.
 [GBrowse tutorial from 2010 GMOD Summer School](/wiki/GBrowse_Tutorial_2010)
 This tutorial was originally taught by [Scott
-Cain](/wiki/User%253AScott) at the [2010 GMOD Summer School -
+Cain](/wiki/User%3AScott) at the [2010 GMOD Summer School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas).
 It walks you through setting up and running
 [GBrowse](/wiki/GBrowse.1) with some sample data. It provides a VMware image to
