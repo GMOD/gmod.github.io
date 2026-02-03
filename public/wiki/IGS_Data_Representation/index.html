@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IGS Data Representation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoigs-data-representationspan"><span dir="auto">IGS Data Representation</span></h1>
+<p>Chado is an elegant schema that can hold nearly anything from gene
+annotations to an MP3 collection. This fabulous flexibility comes with a
+price - different MODs arrive at different ways of storing the same
+biological information. This page is not meant to be a tutorial of how
+YOU should model your biological information in Chado. Rather, it is
+simply a brain dump of the way we are doing things at IGS, for better or
+worse. The hope is that, where our encoding is different, we can
+converge on a single community-defined standard.</p>
+<p>The reference document is currently the <a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best
+Practices</a> page, into which
+much of this information may become merged at some point.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#What_we_store_.28scope.29"><span class="tocnumber">1</span> <span class="toctext">What we store
+(scope)</span></a></li>
+<li><a href="#Feature_naming_convention"><span class="tocnumber">2</span> <span class="toctext">Feature naming
+convention</span></a></li>
+<li><a href="#Structural_annotation"><span class="tocnumber">3</span> <span class="toctext">Structural
+annotation</span></a>
+<ul>
+<li><a href="#Gene_models"><span class="tocnumber">3.1</span> <span class="toctext">Gene
+models</span></a>
+<ul>
+<li><a href="#Canonical_gene_model"><span class="tocnumber">3.1.1</span>
+<span class="toctext">Canonical gene
+model</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Functional_annotation"><span class="tocnumber">4</span> <span class="toctext">Functional
+annotation</span></a>
+<ul>
+<li><a href="#Gene_product_name"><span class="tocnumber">4.1</span> <span class="toctext">Gene
+product name</span></a></li>
+<li><a href="#Gene_symbol"><span class="tocnumber">4.2</span> <span class="toctext">Gene
+symbol</span></a></li>
+<li><a href="#GO_terms"><span class="tocnumber">4.3</span> <span class="toctext">GO
+terms</span></a>
+<ul>
+<li><a href="#Representation_of_the_GO_ontology"><span class="tocnumber">4.3.1</span>
+<span class="toctext">Representation of the GO
+ontology</span></a></li>
+<li><a href="#Assigning_GO_terms_to_features"><span class="tocnumber">4.3.2</span>
+<span class="toctext">Assigning GO terms to
+features</span></a></li>
+</ul>
+</li>
+<li><a href="#Enzyme_Commission_.28EC.29_number"><span class="tocnumber">4.4</span> <span class="toctext">Enzyme
+Commission (EC) number</span></a></li>
+</ul>
+</li>
+<li><a href="#Storing_Analyses"><span class="tocnumber">5</span> <span class="toctext">Storing
+Analyses</span></a>
+<ul>
+<li><a href="#BLAST_data"><span class="tocnumber">5.1</span> <span class="toctext">BLAST
+data</span></a></li>
+<li><a href="#HMM_alignments"><span class="tocnumber">5.2</span> <span class="toctext">HMM
+alignments</span></a></li>
+<li><a href="#Comparative_data"><span class="tocnumber">5.3</span>
+<span class="toctext">Comparative data</span></a></li>
+</ul>
+</li>
+<li><a href="#Versioning_of_features"><span class="tocnumber">6</span> <span class="toctext">Versioning of
+features</span></a>
+<ul>
+<li><a href="#Background"><span class="tocnumber">6.1</span>
+<span class="toctext">Background</span></a></li>
+<li><a href="#Start_site_edits"><span class="tocnumber">6.2</span> <span class="toctext">Start site
+edits</span></a></li>
+<li><a href="#Deleting_a_gene"><span class="tocnumber">6.3</span> <span class="toctext">Deleting a
+gene</span></a></li>
+</ul>
+</li>
+<li><a href="#Data_de-normalization"><span class="tocnumber">7</span> <span class="toctext">Data
+de-normalization</span></a>
+<ul>
+<li><a href="#Materialized_views_.28chado_marts.29"><span class="tocnumber">7.1</span>
+<span class="toctext">Materialized views (chado
+marts)</span></a></li>
+<li><a href="#Disk_Caching"><span class="tocnumber">7.2</span> <span class="toctext">Disk
+Caching</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idwhat_we_store_28scope29-classmw-headlinewhat-we-store-scopespan"><span id="What_we_store_.28scope.29" class="mw-headline">What we store (scope)</span></h2>
+<p>We currently use the Chado schema primarily to store genome annotation
+data, including comparative genomics. This includes both read-only
+databases from &lsquo;finished&rsquo; annotations and ongoing, actively modified
+data. Prokaryotes and Eukaryotes are both represented in our datasets
+and we use MySQL and PostgreSQL back-ends. We&rsquo;ve started using Oracle a
+bit and have essentially abandoned Sybase usage.</p>
+<p>In terms of tools, the data representations discussed below are
+generated by custom scripts as well as components in
+<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>. They
+are read/edited by Manatee for manual
+curation, <a href="Sybil" title="Sybil">Sybil</a> for comparative displays and several
+web applications such as
+<a href="http://gemina.igs.umaryland.edu" class="external text"
+rel="nofollow">Gemina</a> and
+<a href="http://pathema.jcvi.org" class="external text"
+rel="nofollow">Pathema</a>.</p>
+<h2 id="span-idfeature_naming_convention-classmw-headlinefeature-naming-conventionspan"><span id="Feature_naming_convention" class="mw-headline">Feature naming convention</span></h2>
+<p>The <em>de novo</em> features we store in Chado follow the same naming
+convention, which is db.feature_type.N.M, where &lsquo;db&rsquo; is an abbreviation
+for a database or project (usually an organism), feature_type
+corresponds to a value in cvterm.name, N is an incrementing integer
+scoped to that feature type, and M is the version number of that
+feature. So the second version of a gene from our <em>Aspergillus
+fumigatus</em> annotation project may have a name like: afu.gene.3320.2</p>
+<h2 id="span-idstructural_annotation-classmw-headlinestructural-annotationspan"><span id="Structural_annotation" class="mw-headline">Structural annotation</span></h2>
+<p>Our structural representation differs quite a bit from the current
+recommended implementation. The canonical gene model below illustrates
+this. For now I&rsquo;ll only touch on structural annotation, which is
+beginning to be covered well on the <a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best
+Practices</a> page and instead
+focus on functional annotation, which isn&rsquo;t.</p>
+<h3 id="span-idgene_models-classmw-headlinegene-modelsspan"><span id="Gene_models" class="mw-headline">Gene models</span></h3>
+<h4 id="span-idcanonical_gene_model-classmw-headlinecanonical-gene-modelspan"><span id="Canonical_gene_model" class="mw-headline">Canonical gene model</span></h4>
+<p>The following query shows all the features in our gene graph as well as
+their relationships. The example query is for a transcript feature
+&lsquo;hsn.transcript.39176.1&rsquo;</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT f1.name AS subject, c.name AS relationship, f2.name AS object
+      FROM feature f1
+          JOIN feature_relationship fr ON f1.feature_id = fr.subject_id
+          JOIN feature f2 ON fr.object_id = f2.feature_id
+          JOIN cvterm c ON fr.type_id = c.cvterm_id
+     WHERE f1.uniquename = &#39;hsn.transcript.39176.1&#39;
+        OR f2.uniquename = &#39;hsn.transcript.39176.1&#39;;
+ 
+    +-------------------------+--------------+------------------------+
+    | subject                 | relationship | object                 |
+    +-------------------------+--------------+------------------------+
+    | hsn.transcript.39176.1  | derives_from | hsn.gene.39416.1       |
+    | hsn.polypeptide.39176.1 | part_of      | hsn.transcript.39176.1 |
+    | hsn.CDS.39416.1         | derives_from | hsn.transcript.39176.1 |
+    | hsn.exon.39416.1        | part_of      | hsn.transcript.39176.1 |
+    +-------------------------+--------------+------------------------+
+</code></pre><h2 id="span-idfunctional_annotation-classmw-headlinefunctional-annotationspan"><span id="Functional_annotation" class="mw-headline">Functional annotation</span></h2>
+<p>The assertions made in functional annotation differ greatly between MODs
+and annotation sources in general. Our minimal goal is to provide the
+following, whenever possible, for any given gene:</p>
+<ul>
+<li>Gene product name</li>
+<li>Gene symbol</li>
+<li>GO terms (process, function, component)</li>
+<li>Enzyme Commission (EC) number</li>
+</ul>
+<p>Ideally, evidence should also be stored for each of these assertions. We
+currently attach all annotation to the &rsquo;transcript&rsquo; feature in each gene
+graph.</p>
+<h3 id="span-idgene_product_name-classmw-headlinegene-product-namespan"><span id="Gene_product_name" class="mw-headline">Gene product name</span></h3>
+<p>Both gene product name and their evidence are stored as feature
+properties of the transcript. To query both:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT f.uniquename, product.VALUE AS product, sym.VALUE AS symbol
+  FROM feature f
+      JOIN featureprop product ON f.feature_id = product.feature_id
+      JOIN featureprop sym ON f.feature_id = sym.feature_id
+      JOIN cvterm cvt ON product.type_id = cvt.cvterm_id
+      JOIN cvterm cvt2 ON sym.type_id = cvt2.cvterm_id
+ WHERE cvt.name = &#39;gene_product_name&#39;
+   AND cvt2.name = &#39;gene_product_name_source&#39;
+   AND f.uniquename = &#39;hsn.transcript.39176.1&#39;;
+ 
+    +------------------------+--------------------+-----------+
+    | uniquename             | product            | symbol    |
+    +------------------------+--------------------+-----------+
+    | hsn.transcript.39176.1 | cytidine deaminase | TIGR01354 |
+    +------------------------+--------------------+-----------+
+</code></pre><p>This means that the name of this product was assigned because of a hit
+to the HMM with ID TIGR01354. Ideally, this would be a dbxref and not
+simply the value of a featureprop, but we had to do it this way because
+there is no featureprop_dbxref table.</p>
+<h3 id="span-idgene_symbol-classmw-headlinegene-symbolspan"><span id="Gene_symbol" class="mw-headline">Gene symbol</span></h3>
+<p>Gene symbols and their evidence are stored just like the gene product
+names described above, except that the terms used are &lsquo;gene_symbol&rsquo; and
+&lsquo;gene_symbol_source&rsquo;.</p>
+<h3 id="span-idgo_terms-classmw-headlinego-termsspan"><span id="GO_terms" class="mw-headline">GO terms</span></h3>
+<p>Here I&rsquo;ll discuss first how the collection of terms that makes up GO is
+stored in the Chado schema and then discuss how we assign these terms to
+features.</p>
+<h4 id="span-idrepresentation_of_the_go_ontology-classmw-headlinerepresentation-of-the-go-ontologyspan"><span id="Representation_of_the_GO_ontology" class="mw-headline">Representation of the GO ontology</span></h4>
+<p>The source of the data is an entry within an OBO file, such as:</p>
+<pre><code>   [Term]
+   id: GO:0004126
+   name: cytidine deaminase activity
+   namespace: function
+   def: &quot;Catalysis of the reaction\: cytidine + H2O = uridine + NH3.&quot; [EC:3.5.4.5]
+   xref_analog: EC:3.5.4.5
+   xref_analog: MetaCyc:CYTIDEAM2-RXN
+   xref_analog: Reactome:83524
+   is_a: GO:0019239
+</code></pre>
+<p>GO is stored as a controlled vocabulary, which has an entry in the &lsquo;cv&rsquo;
+table. Here we already run into a contentious point on how this should
+be entered. Should there be a single entry for &lsquo;GO&rsquo; as a whole or three
+different ones, since it contains three separate namespaces (process,
+function, component)? For this example I&rsquo;ll use the single &lsquo;GO&rsquo; entry:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT *
+      FROM cv
+     WHERE name = &#39;GO&#39;;
+ 
+    +-------+------+------------+
+    | cv_id | name | definition |
+    +-------+------+------------+
+    |    10 | GO   | NULL       |
+    +-------+------+------------+
+</code></pre><p>Whether to respect the namespaces within GO and create three distinct
+ontology entries is configurable within the initdb Ergatis component,
+which instantiates our Chado instances.</p>
+<p>Next, there&rsquo;s a entry in &lsquo;cvterm&rsquo; for this term but not by the
+GO:NNNNNNNN value. Instead, we can look it up by the name:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT cvterm_id, name, SUBSTRING(definition,1,20), dbxref_id, is_obsolete
+      FROM cvterm
+     WHERE cv_id = 10
+       AND name = &#39;cytidine deaminase activity&#39;;
+ 
+    +-----------+-----------------------------+----------------------------+-----------+-------------+
+    | cvterm_id | name                        | SUBSTRING(definition,1,20) | dbxref_id | is_obsolete |
+    +-----------+-----------------------------+----------------------------+-----------+-------------+
+    |      6657 | cytidine deaminase activity | &#34;Catalysis of the re       |     12389 |           0 |
+    +-----------+-----------------------------+----------------------------+-----------+-------------+
+</code></pre><p>The actual GO:NNNNNNN value is a database reference (dbxref_id returned
+in last query):</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT *
+      FROM dbxref
+     WHERE dbxref_id = 12389;
+ 
+    +-----------+-------+------------+---------+-------------+
+    | dbxref_id | db_id | accession  | version | description |
+    +-----------+-------+------------+---------+-------------+
+    |     12389 |    12 | GO:0004126 | 1.0     | NULL        |
+    +-----------+-------+------------+---------+-------------+
+</code></pre><p>Which, of course, means there&rsquo;s a GO entry in the &lsquo;db&rsquo; table too:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT *
+      FROM db
+     WHERE name = &#39;GO&#39;;
+ 
+    +-------+------+-------------+-----------+------+
+    | db_id | name | description | urlprefix | url  |
+    +-------+------+-------------+-----------+------+
+    |    12 | GO   | NULL        | NULL      | NULL |
+    +-------+------+-------------+-----------+------+
+</code></pre><p>So, reviewing, to get the basic annotation for a GO term:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT dbx.accession, cvt.name, cvt.definition
+      FROM cvterm cvt
+        JOIN dbxref dbx ON cvt.dbxref_id = dbx.dbxref_id
+     WHERE dbx.accession = &#39;GO:0004126&#39;;
+ 
+    +------------+-----------------------------+---------------------------------------------------------------------------+
+    | accession  | name                        | definition                                                                |
+    +------------+-----------------------------+---------------------------------------------------------------------------+
+    | GO:0004126 | cytidine deaminase activity | &#34;Catalysis of the reaction: cytidine + H2O = uridine + NH3.&#34; [EC:3.5.4.5] |
+    +------------+-----------------------------+---------------------------------------------------------------------------+
+</code></pre><p>What about the xref_analog entries we saw in the OBO definition? The
+additional entries are stored using the cvterm_dxref table.</p>
+<h4 id="span-idassigning_go_terms_to_features-classmw-headlineassigning-go-terms-to-featuresspan"><span id="Assigning_GO_terms_to_features" class="mw-headline">Assigning GO terms to features</span></h4>
+<p>A more narrative description has yet to be written, but here&rsquo;s a query
+to get all assigned GO terms for a given transcript, with evidence.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    SELECT f.uniquename, d.accession, c2.name &#34;evidence type&#34;,
+           cs.synonym &#34;evidence code&#34;, fcp.VALUE
+    FROM feature f
+        JOIN feature_cvterm fc ON f.feature_id = fc.feature_id
+        JOIN cvterm c ON fc.cvterm_id = c.cvterm_id
+        JOIN cv ON c.cv_id = cv.cv_id
+        JOIN dbxref d ON c.dbxref_id = d.dbxref_id
+        JOIN feature_cvtermprop fcp ON fc.feature_cvterm_id = fcp.feature_cvterm_id
+        JOIN cvterm c2 ON fcp.type_id = c2.cvterm_id
+        JOIN cvtermsynonym cs ON c2.cvterm_id = cs.cvterm_id
+    WHERE f.uniquename = &#39;hsn.transcript.39176.1&#39;
+      AND cv.name = &#39;GO&#39;;
+ 
+    +------------------------+-------------+-------------------------------------+---------------+-----------+
+    | uniquename             | ROLE id     | evidence TYPE                       | evidence code | VALUE     |
+    +------------------------+-------------+-------------------------------------+---------------+-----------+
+    | hsn.transcript.39176.1 | GO:0008655  | inferred FROM electronic annotation | IEA           | TIGR01354 |
+    | hsn.transcript.39176.1 | GO:0005737  | inferred FROM electronic annotation | IEA           | TIGR01354 |
+    | hsn.transcript.39176.1 | GO:0004126  | inferred FROM electronic annotation | IEA           | TIGR01354 |
+    +------------------------+-------------+-------------------------------------+---------------+-----------+
+</code></pre><h3 id="span-idenzyme_commission_28ec29_number-classmw-headlineenzyme-commission-ec-numberspan"><span id="Enzyme_Commission_.28EC.29_number" class="mw-headline">Enzyme Commission (EC) number</span></h3>
+<p>We convert the enzyme.dat file distributed by ExPASy to an ontology in
+OBO format and load them along with GO and SO. Further notes should go
+here.</p>
+<h2 id="span-idstoring_analyses-classmw-headlinestoring-analysesspan"><span id="Storing_Analyses" class="mw-headline">Storing Analyses</span></h2>
+<h3 id="span-idblast_data-classmw-headlineblast-dataspan"><span id="BLAST_data" class="mw-headline">BLAST data</span></h3>
+<h3 id="span-idhmm_alignments-classmw-headlinehmm-alignmentsspan"><span id="HMM_alignments" class="mw-headline">HMM alignments</span></h3>
+<h3 id="span-idcomparative_data-classmw-headlinecomparative-dataspan"><span id="Comparative_data" class="mw-headline">Comparative data</span></h3>
+<p>Our mechanisms for storing comparative computes are already described in
+the page discussion <a href="Sybil_Chado_Comparative_Genomics_Data" title="Sybil Chado Comparative Genomics Data">Sybil Chado Comparative Genomics
+Data</a></p>
+<h2 id="span-idversioning_of_features-classmw-headlineversioning-of-featuresspan"><span id="Versioning_of_features" class="mw-headline">Versioning of features</span></h2>
+<h3 id="span-idbackground-classmw-headlinebackgroundspan"><span id="Background" class="mw-headline">Background</span></h3>
+<p>One important requirement for any institution doing active annotation
+with the schema is the ability to store a versioned history of genes as
+they&rsquo;re modified. If you consider the example of editing the start site
+of a gene, it&rsquo;s certainly possible to just directly modify the
+coordinates of the gene feature. In production, this causes
+complications.</p>
+<p>We&rsquo;ve taken the position that direct resizing of a feature&rsquo;s coordinates
+on a molecule is not allowed. In fact, any modifications of a feature
+that change its underlying sequence is problematic. Features are defined
+by the sequence they represent, and since any number of analyses (and
+annotation) made on a feature are based on the underlying sequence,
+changing this sequence invalidates the feature. If you&rsquo;ve stored BLAST
+analysis for a polypeptide, as an example, and then change the
+coordinates of the feature all linked BLAST alignment coordinates would
+be incorrect and misleading.</p>
+<h3 id="span-idstart_site_edits-classmw-headlinestart-site-editsspan"><span id="Start_site_edits" class="mw-headline">Start site edits</span></h3>
+<p>To resolve these sorts of problems we create new, versioned features any
+time the underlying sequence of a feature is edited. The most common
+form of these edits is start site modification of a gene. Using that as
+an example, consider an example gene that has a feature.uniquename value
+of &lsquo;hsn.gene.39416.1&rsquo;. It has functional annotation as well as several
+analyses linked such as blastp and hmmpfam results.</p>
+<p>We don&rsquo;t delete any features from the database. Instead, we toggle the
+feature.is_obsolete field value to TRUE for those features that are no
+longer &lsquo;current.&rsquo; The overall steps are as follows:</p>
+<ol>
+<li>Mark the features in the hsn.gene.39416.1 gene graph as obsolete</li>
+<li>Create new features, hsn.gene.39416.2 and other graph features, each
+incrementing the version number portion of each obsolete feature.</li>
+<li>Copy/reattach functional annotation from obsolete to new feature</li>
+</ol>
+<p>It&rsquo;s important to note here that we do not copy the analyses (like
+blastp and hmmpfam), since those are based on the older sequences. This
+actually provides a benefit to production annotation centers. We use
+cron scripts to check for any features of a given type within our
+databases that are not associated with an analysis so that pipelines can
+automatically spawn to perform them. Since the new feature versions will
+not have these links, it&rsquo;s easy to determine which features should be
+included in the pipeline.</p>
+<h3 id="span-iddeleting_a_gene-classmw-headlinedeleting-a-genespan"><span id="Deleting_a_gene" class="mw-headline">Deleting a gene</span></h3>
+<p>Again, we don&rsquo;t actually delete any annotation features from the
+database. When a user wants a gene removed/deleted from the active set
+we simply mark the feature.is_obsolete value to TRUE for each element of
+that gene&rsquo;s graph.</p>
+<h2 id="span-iddata_de-normalization-classmw-headlinedata-de-normalizationspan"><span id="Data_de-normalization" class="mw-headline">Data de-normalization</span></h2>
+<p>Chado is fantastic at flexibly storing millions of rows of varying data
+types to support your annotation projects. It&rsquo;s also crazy slow to query
+that data out - at least at the speed expected by users for things like
+web applications. For these applications, a delay of 4 or 5 seconds is
+an eternity and you&rsquo;ll lose users. This isn&rsquo;t necessarily a Chado
+limitation, but rather one on highly normalized schemas in general. To
+query all the BLAST results for a given polypeptide you might do this:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT q.uniquename AS query, s.uniquename AS subject, af.rawscore, af.pidentity,
+       af.significance, flq.fmin AS qstart, flq.fmax AS qstop, flq.strand AS qstrand
+  FROM feature m, feature q, feature s, analysisfeature af, analysis a, cvterm c,
+       featureloc flq, featureloc fls
+ WHERE m.feature_id=af.feature_id
+   AND m.type_id=c.cvterm_id
+   AND af.analysis_id=a.analysis_id
+   AND m.feature_id=flq.feature_id
+   AND m.feature_id=fls.feature_id
+   AND flq.srcfeature_id=q.feature_id
+   AND flq.rank = 0
+   AND fls.srcfeature_id=s.feature_id
+   AND fls.rank = 1
+   AND a.name = &#39;wu-blastp&#39;
+   AND c.name = &#39;match_part&#39;
+   AND q.uniquename = &#39;nfa1.polypeptide.9292&#39;;
+</code></pre><p>That&rsquo;s just nasty isn&rsquo;t it? Not only do developers not want to write
+these but the sheer number of JOINs involved makes the query intolerably
+slow.</p>
+<p>Some of our solutions are described below. A few of them, such as the
+chado marts, have been made rather general and are reused for several
+applications. Others are very specific to a precise need. It should be
+completely acceptable, for example, to implement a cached data store for
+a single page in a web application.</p>
+<h3 id="span-idmaterialized_views_28chado_marts29-classmw-headlinematerialized-views-chado-martsspan"><span id="Materialized_views_.28chado_marts.29" class="mw-headline">Materialized views (chado marts)</span></h3>
+<p>We employ a few different methodologies for de-normalization of data for
+user displays. The first is the creation of materialized views within
+the database. We call our collection of these &lsquo;chado marts&rsquo;. The table
+definition for one of these to support BLAST results is:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">CREATE TABLE cm_blast (
+  cm_blast_id         INT NOT NULL,
+  qfeature_id         INT NOT NULL,
+  qorganism_id        INT NOT NULL,
+  hfeature_id         INT NOT NULL,
+  horganism_id        INT NOT NULL,
+  per_id              DOUBLE PRECISION NULL,
+  per_sim             DOUBLE PRECISION NULL,
+  p_value             DOUBLE PRECISION NULL,
+  mfeature_id         INT NOT NULL
+);
+</code></pre><p>For those database engines that support it, such as Oracle, these
+materialized views can be defined once and are maintained by the
+underlying database engine as their base tables are updated. For others
+they are normal tables populated at regular intervals by scripts.</p>
+<h3 id="span-iddisk_caching-classmw-headlinedisk-cachingspan"><span id="Disk_Caching" class="mw-headline">Disk Caching</span></h3>
+<p>Notes on Lucene, memcache, Storable, etc. here.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AIGS" title="Category%253AIGS">IGS</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/IGS_Data_Representation" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:34 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">81,613 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zheng&#39;s notes on wormbase migration - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautozhengs-notes-on-wormbase-migrationspan"><span dir="auto">Zheng&rsquo;s notes on wormbase migration</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#description"><span class="tocnumber">1</span>
+<span class="toctext">description</span></a></li>
+<li><a href="#module-based_migration"><span class="tocnumber">2</span> <span class="toctext">module-based
+migration</span></a></li>
+<li><a href="#bio-chaos_and_gmod_bulk_load_gff3"><span class="tocnumber">3</span> <span class="toctext">bio-chaos and
+gmod_bulk_load_gff3</span></a></li>
+<li><a href="#first_step"><span class="tocnumber">4</span> <span class="toctext">first
+step</span></a></li>
+<li><a href="#pain_for_loading"><span class="tocnumber">5</span> <span class="toctext">pain for
+loading</span></a></li>
+<li><a href="#my_experience_with_chromosome_I"><span class="tocnumber">6</span> <span class="toctext">my experience
+with chromosome I</span></a></li>
+</ul>
+<h2 id="span-iddescription-classmw-headlinedescriptionspan"><span id="description" class="mw-headline">description</span></h2>
+<p>this page is a record of my experience for migrating wormbase onto
+chado. As far as I know, wormbase is based on the Acedb (an
+object-oriented schema) mapping onto rmdbs (mysql/postgresql). Chado is
+a new, more sophisticated, but generic schema. this page has been quite
+long and I am moving from gff3 bulkload to xmlxort, so <strong>I will just
+keep this one here for record but not update it. the migration will
+continue at</strong> <a href="Learn_XMLXORT" title="Learn XMLXORT">learn XMLXORT</a></p>
+<h2 id="span-idmodule-based_migration-classmw-headlinemodule-based-migrationspan"><span id="module-based_migration" class="mw-headline">module-based migration</span></h2>
+<p>focus on sequence module first. using gff3 files as input.</p>
+<table>
+<thead>
+<tr>
+<th>gff3</th>
+<th>chado table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>seqid</td>
+<td>featureloc.srcfeature_id, featureloc.rank=0</td>
+</tr>
+<tr>
+<td>source</td>
+<td>feature_dbxref.dbxref_id, dbxref.db_id(db.name=&lsquo;GFF source&rsquo;)/accession/version</td>
+</tr>
+<tr>
+<td>type</td>
+<td>feature.type_id, cvterm.cvterm_id/dbxref_id, cv.cv_id, cvterm_dbxref.cvterm_id</td>
+</tr>
+<tr>
+<td>start</td>
+<td>featureloc.fmin</td>
+</tr>
+<tr>
+<td>end</td>
+<td>featureloc.fmax</td>
+</tr>
+<tr>
+<td>score</td>
+<td></td>
+</tr>
+<tr>
+<td>strand</td>
+<td>featureloc.strand</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>featureloc.phase</td>
+</tr>
+<tr>
+<td>attribute ID</td>
+<td>feature.name, feature.uniquename if ID is unique otherwise &lsquo;auto&rsquo;+feature.feature_id</td>
+</tr>
+<tr>
+<td>attribute Name</td>
+<td>feature.name</td>
+</tr>
+<tr>
+<td>attribute Alias</td>
+<td>feature_synonym.synonym_id, synonym.name/synonym_sgml type_id(cvterm.cvterm_id for syn)</td>
+</tr>
+<tr>
+<td>attribute Dbxref</td>
+<td>feature_dbxref, another dbxref, see column3(type)</td>
+</tr>
+<tr>
+<td>attribute Gap</td>
+<td></td>
+</tr>
+<tr>
+<td>attribute Note</td>
+<td>featureprop</td>
+</tr>
+<tr>
+<td>custom tag(lower case)</td>
+<td>db.name=null, cv.name=local, dbxref.accession=&lsquo;autocreated:xxx&rsquo;</td>
+</tr>
+<tr>
+<td>Ontology_term</td>
+<td>feature_cvterm.cvterm_id, feature_cvterm_dbxref.feature_cvterm_id, feature_cvterm_pub, feature_cvtermprop</td>
+</tr>
+<tr>
+<td>Parent</td>
+<td></td>
+</tr>
+<tr>
+<td>Target</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>gff3 columns and chado table relationship</p>
+<p>feature.dbxref_id is nullable. Dbxref could be lower-case</p>
+<h2 id="span-idbio-chaos_and_gmod_bulk_load_gff3-classmw-headlinebio-chaos-and-gmod_bulk_load_gff3span"><span id="bio-chaos_and_gmod_bulk_load_gff3" class="mw-headline">bio-chaos and gmod_bulk_load_gff3</span></h2>
+<p>both bio-chaos 0.02 and gmod_bulk_load_gff3 can theoretically work. btw,
+bio-chaos 0.01 is included in the schema cvs download, but no
+gff3-&gt;chaos script in it. so go to
+<a href="http://www.fruitfly.org/chaos-xml/" class="external text"
+rel="nofollow">bio-chaos 0.02</a> for prerequisite and installation.
+read a book <a
+href="http://www.amazon.com/Nutshell-Third-Elliotte-Rusty-Harold/dp/0596007647/ref=pd_bbs_sr_1/002-2233708-5183202?ie=UTF8&amp;s=books&amp;qid=1174502632&amp;sr=8-1"
+class="external text" rel="nofollow">XML in a nutshell</a> helps a lot
+for me to understand
+<a href="http://www.fruitfly.org/chaos-xml/specification.html#DTD#DTD"
+class="external text" rel="nofollow">chaos DTD</a>.</p>
+<p>Now I know XMLXORT will be finally used not only for sequence-related
+data but also for other data, I have to <a href="Learn_XMLXORT" title="Learn XMLXORT">learn
+XMLXORT</a>.</p>
+<h2 id="span-idfirst_step-classmw-headlinefirst-stepspan"><span id="first_step" class="mw-headline">first step</span></h2>
+<p>get the current release WS171 gff3 file from wormbase. total 1.07G.
+split it by:</p>
+<pre><code>grep -P /^I\t/
+[zha@localhost 1]$ ls -l chrI.gff3
+-rw-rw-r-- 1 zha zha 165530115 Mar 20 17:33 chrI.gff3
+</code></pre>
+<p>only two directive lines in ws171</p>
+<pre><code>##gff-version 3
+##Index-subfeature 0
+</code></pre>
+<p>but adding the size of chr-based files does not (similarly) equal to the
+original size of ws171, ??? I lost something here already?</p>
+<h2 id="span-idpain_for_loading-classmw-headlinepain-for-loadingspan"><span id="pain_for_loading" class="mw-headline">pain for loading</span></h2>
+<ul>
+<li>first try load a sample gff3</li>
+</ul>
+<p>a sample nGASP gff3 file has been successfully transformed to chadoXML
+by bio-chaos.</p>
+<pre><code>use Bio::Chaos;
+my $path = '/home/zha/gff3/phase2_confirmed.gff3';
+my $infmt = 'gff3';
+my $outfmt = 'chadoxml';
+my $c = Bio::Chaos-&gt;new;
+$c-&gt;parse($path, $infmt);
+print $c-&gt;transform_to($outfmt)-&gt;xml;
+</code></pre>
+<p>but I doubt it could load onto chado for the following test on
+gmod-bulk-load-gff3.</p>
+<pre><code>[zha@localhost gff3]$ gmod_bulk_load_gff3.pl --dbname zha --organism worm --gfffile  \ phase2_confirmed.gff3
+Preparing data for inserting into the zha database
+(This may take a while ...)
+Unable to find srcfeature IV in the database.
+</code></pre>
+<p>sort it so that Parent of a feature (column 9 tag Parent) comes before
+the feature line in file. sorted it by:</p>
+<pre><code>gmod_sort_gff3 --infile chrI.gff3 &gt; chrI.unresolved
+</code></pre>
+<p>two files are generated:</p>
+<pre><code>chrI.sorted.gff3
+chrI.unresolved
+</code></pre>
+<p>but adding the size of them, much less than the size of chrI.gff3, I
+definitely lost a lot here, abadon this is not what I expected from the
+name of the file and perldoc.</p>
+<h2 id="span-idmy_experience_with_chromosome_i-classmw-headlinemy-experience-with-chromosome-ispan"><span id="my_experience_with_chromosome_I" class="mw-headline">my experience with chromosome I</span></h2>
+<ul>
+<li>chromosome definition line</li>
+</ul>
+<!-- -->
+<pre><code>I       Link    chromosome      1       15072419        .       +       .       Name=I
+</code></pre>
+<p>I manually changed it to</p>
+<pre><code>I       Link    chromosome      1       15072419        .       +       .       ID=I, Name=I
+</code></pre>
+<p>and put it at the top of the gff3 file, it is <strong>NOT</strong> a problem of gff3
+file, i.e., the file is valid wherever this line is or even without this
+line, but put it on top helps the bulk_load, or maybe
+gmod_gff3_preprocessor will try to do this change.</p>
+<ul>
+<li>clone_end line</li>
+</ul>
+<!-- -->
+<pre><code>I       .       clone_end       10038617        10038617        .       .       .       Name=C03C11
+no cvterm for clone_end at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 3445, &lt;GEN0&gt;  line 12402.
+Issuing rollback() for database handle being DESTROY'd without explicit disconnect().
+</code></pre>
+<p>this <strong>is</strong> a valid line, i.e, clone_end is a valid SOFA term, according
+to SOFA v2 (05-16-2005). what we loaded in chado installation is the SO
+latest minor revision version v2.1 (08-16-2006). in this version
+clone_end change to clone_insert_end.</p>
+<ul>
+<li>this is a known situation&hellip;</li>
+</ul>
+<!-- -->
+<pre><code>Your GFF3 file uses a tag called 'confirmed_est', but this term is not
+already in the cvterm table so that it's value can be inserted
+into the featureprop table.  The easiest way to rectify this is
+to execute the following SQL commands in the psql shell:
+ INSERT INTO dbxref (db_id,accession)
+   VALUES ((select db_id from db where name='null'),'autocreated:confirmed_est');
+ INSERT INTO cvterm (cv_id,name,dbxref_id)
+   VALUES ((select cv_id from cv where name='autocreated'), 'confirmed_est',
+           (select dbxref_id from dbxref where accession='autocreated:confirmed_est'));
+and then rerun this loader.  Your other option is to
+write a special handler for this tag so that it will
+go where you want it in the database.
+Died at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 2834, &lt;GEN0&gt; line 13204.
+Issuing rollback() for database handle being DESTROY'd without explicit disconnect().
+</code></pre>
+<p>Noticed the above situation the cvterm is in column 3 (type), here the
+term is in column 9, a tag, such as ID, NAME, Dbxref, etc. I encountered
+a series of them, which <strong>are good information</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>confirmed_EST</td>
+</tr>
+<tr>
+<td>confirmed_UTR</td>
+</tr>
+<tr>
+<td>confirmed_Homology</td>
+</tr>
+<tr>
+<td>confirmed_inconsistency</td>
+</tr>
+<tr>
+<td>confirmed_false</td>
+</tr>
+<tr>
+<td>used_for_training</td>
+</tr>
+<tr>
+<td>predicted ncrna gene</td>
+</tr>
+<tr>
+<td>count</td>
+</tr>
+<tr>
+<td>transcript</td>
+</tr>
+<tr>
+<td>pseudogene</td>
+</tr>
+<tr>
+<td>Indexed</td>
+</tr>
+<tr>
+<td>species</td>
+</tr>
+<tr>
+<td>protein_matches</td>
+</tr>
+<tr>
+<td>cds_matches</td>
+</tr>
+<tr>
+<td>times_observed</td>
+</tr>
+<tr>
+<td>amplified</td>
+</tr>
+<tr>
+<td>rflp</td>
+</tr>
+<tr>
+<td>prediction_status</td>
+</tr>
+<tr>
+<td>gene</td>
+</tr>
+<tr>
+<td>status</td>
+</tr>
+</tbody>
+</table>
+<p><strong>non-canonical tag used in WS171 chrI</strong></p>
+<p>Scott suggests write a local ontology, such as wormbase ontology; Or as
+Don suggests, automatically load it. <strong>Notice this lower case column 9
+tag may have some terms exactly the same as column 3 SOFA cvterm, but
+they are treated as different ones.</strong> I removed all lines like this one</p>
+<pre><code>I       ncRNA   ncRNA   10010373        10010484        999.545 -       .       Name=Note;predicted ncrna    gene=1;rnaz-512263=RNAz-512263:Note
+</code></pre>
+<p>also this one</p>
+<pre><code>I       Coding_transcript       mRNA    11877789        11887256        .
++       .       ID=Transcript:Y47H9C.5a.1;Name=Y47H9C.5a.1;Note=DnaJ domain%3BWo
+rmPep WP:CE20265%3BNote dnj-27%3BPrediction_status Partially_confirmed%3BGene WB
+Gene00001045%3BCDS Y47H9C.5a%3BThioredoxin;1=1
+</code></pre>
+<ul>
+<li>several options</li>
+</ul>
+<p><strong>&ndash;analysis</strong> for file that has analysis (eg. blast) feature;
+<strong>&ndash;noexon</strong>, this is a &lsquo;weird&rsquo; option. Since chado treat CDS as
+intersection between exons and transcript polypeptides, CDS and UTR
+lines are converted to generate exon and polypeptide by default in
+bulk_load. if gff file has exon lines, then you shall use this option,
+which means do not generate exon (?, since you have exon lines, but the
+option is named noexon, tricky). my command becomes:</p>
+<pre><code>gmod_bulk_load_gff3.pl --dbname zha --organism worm --analysis --gfffile chrI_2.gff3.sorted --noexon
+</code></pre>
+<ul>
+<li>non-central-dogma-feature</li>
+</ul>
+<p>this is what I think: shall have at least 3 lines for compliance with
+central dogma, a gene line, a mrna line and a cds line. the following
+warning is actually caused by lacking a gene line. this is what I
+observed:</p>
+<pre><code>There is a CDS feature with no parent (ID:)  I think that is wrong!
+This GFF file has CDS and/or UTR features that do not belong to a
+'central dogma' gene (ie, gene/transcript/CDS).  The features of
+this type are being stored in the database as is.
+no parent CDS:B0019.1:wp90;
+</code></pre>
+<p>since the file has this two lines:</p>
+<pre><code>I       history mRNA    12759743        12764935        .       -       2       ID=CDS:B0019.1:wp90;Name=B0019.1:wp90;Indexed=1
+I       history CDS     12764810        12764935        .       -       0       Parent=CDS:B0019.1:wp90
+</code></pre>
+<p>although the warning says &lsquo;CDS feature&rsquo;, but it could also be lacking a
+gene line that trigger the warning. Infact, all the lines with &lsquo;history&rsquo;
+in column 2 do not have a corresponding line with &lsquo;gene&rsquo; in column 3.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AUser_Experiences" title="Category%253AUser Experiences">User
+Experiences</a></li>
+<li><a href="Category%253AWormBase" title="Category%253AWormBase">WormBase</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Zheng&#39;s_notes_on_wormbase_migration"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 05:57 on 28 January
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">33,027 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

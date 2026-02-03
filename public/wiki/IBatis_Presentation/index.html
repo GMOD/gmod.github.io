@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBatis Presentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoibatis-presentationspan"><span dir="auto">IBatis Presentation</span></h1>
+<p>Jeff Bowes, Xenbase, University of Calgary. This Wiki section is an
+edited version of
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf" class="internal"
+title="IBatis.pdf">Jeff&rsquo;s presentation</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#ibatis"><span class="tocnumber">1</span>
+<span class="toctext">ibatis</span></a></li>
+<li><a href="#Abator"><span class="tocnumber">2</span>
+<span class="toctext">Abator</span></a></li>
+<li><a href="#Abator_Example"><span class="tocnumber">3</span> <span class="toctext">Abator
+Example</span></a></li>
+<li><a href="#Abator_Example_2"><span class="tocnumber">4</span> <span class="toctext">Abator
+Example</span></a></li>
+<li><a href="#Abator_Example_3"><span class="tocnumber">5</span> <span class="toctext">Abator
+Example</span></a></li>
+<li><a href="#Abator_2"><span class="tocnumber">6</span>
+<span class="toctext">Abator</span></a></li>
+<li><a href="#DAO_Methods"><span class="tocnumber">7</span> <span class="toctext">DAO
+Methods</span></a></li>
+<li><a href="#Insert"><span class="tocnumber">8</span>
+<span class="toctext">Insert</span></a></li>
+<li><a href="#Insert_2"><span class="tocnumber">9</span>
+<span class="toctext">Insert</span></a></li>
+<li><a href="#Insert_3"><span class="tocnumber">10</span>
+<span class="toctext">Insert</span></a></li>
+<li><a href="#Insert_4"><span class="tocnumber">11</span>
+<span class="toctext">Insert</span></a></li>
+<li><a href="#Insert_5"><span class="tocnumber">12</span>
+<span class="toctext">Insert</span></a></li>
+<li><a href="#Problem_1_-_Insert"><span class="tocnumber">13</span> <span class="toctext">Problem 1 -
+Insert</span></a></li>
+<li><a href="#Problem_1_-_Insert_2"><span class="tocnumber">14</span> <span class="toctext">Problem 1 -
+Insert</span></a></li>
+<li><a href="#Transactions"><span class="tocnumber">15</span>
+<span class="toctext">Transactions</span></a></li>
+<li><a href="#Retrieval"><span class="tocnumber">16</span>
+<span class="toctext">Retrieval</span></a></li>
+<li><a href="#Problem_2_-_Master_Detail_Reports"><span class="tocnumber">17</span> <span class="toctext">Problem 2 -
+Master Detail Reports</span></a></li>
+<li><a href="#Problem_2_-_Master_Detail_Report"><span class="tocnumber">18</span> <span class="toctext">Problem 2 -
+Master Detail Report</span></a></li>
+<li><a href="#Master_Detail_Report"><span class="tocnumber">19</span> <span class="toctext">Master Detail
+Report</span></a></li>
+<li><a href="#Dynamic_Queries"><span class="tocnumber">20</span> <span class="toctext">Dynamic
+Queries</span></a></li>
+<li><a href="#Dynamic_Queries_2"><span class="tocnumber">21</span> <span class="toctext">Dynamic
+Queries</span></a></li>
+<li><a href="#Dynamic_Queries_3"><span class="tocnumber">22</span> <span class="toctext">Dynamic
+Queries</span></a></li>
+<li><a href="#Miscellaneous_Features"><span class="tocnumber">23</span> <span class="toctext">Miscellaneous
+Features</span></a></li>
+<li><a href="#Support"><span class="tocnumber">24</span>
+<span class="toctext">Support</span></a></li>
+<li><a href="#What_iBatis_Does_Well"><span class="tocnumber">25</span> <span class="toctext">What iBatis
+Does Well</span></a></li>
+<li><a href="#Acknowledgements"><span class="tocnumber">26</span>
+<span class="toctext">Acknowledgements</span></a></li>
+</ul>
+<h5 id="span-idibatis-classmw-headlineibatisspan"><span id="ibatis" class="mw-headline">ibatis</span></h5>
+<ul>
+<li>iBatis
+<ul>
+<li>Light-weight framework</li>
+<li>Still based on SQL but eliminates the repetitive drudgery of JDBC</li>
+<li>You can tune a query by re-writing the SQL in XML &amp; the API does not
+change.</li>
+</ul>
+</li>
+<li>iBatis does not create your database in memory as objects</li>
+<li>Shallow learning curve</li>
+<li>Manually create a Java class and SQL map to describe higher-level
+objects
+<ul>
+<li>Example: <em>Gene</em></li>
+</ul>
+</li>
+<li>Support for inheritance
+<ul>
+<li>Inheritance in result maps, allows fair amount of re-use.</li>
+</ul>
+</li>
+<li>Supports different transaction schemes
+<ul>
+<li>For example, JDBC, Java Transaction API</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idabator-classmw-headlineabatorspan"><span id="Abator" class="mw-headline">Abator</span></h5>
+<ul>
+<li>Generates ibatis CRUD objects by introspecting database tables</li>
+<li>Abator creates <em>SQL in XML</em> files (SQL Map files) and Java classes
+<ul>
+<li>Within these files is a Result Map section.</li>
+</ul>
+</li>
+<li>Abator config files are simple, set connection parameters, tell where
+the files are.</li>
+<li>In the SQL Map files you can specify how to find parent ids, such as
+feature_id.</li>
+</ul>
+<h5 id="span-idabator_example-classmw-headlineabator-examplespan"><span id="Abator_Example" class="mw-headline">Abator Example</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;abatorConfiguration&gt;
+  &lt;abatorContext&gt;    &lt;!-- TODO: Add Database Connection Information --&gt;
+    &lt;jdbcConnection driverClass=&#34;COM.ibm.db2.jdbc.app.DB2Driver&#34;
+        connectionURL=&#34;jdbc:db2:XBDV05&#34;
+        userId=&#34;db2inst1&#34;
+        password=“*******&#34;&gt;
+      &lt;classPathEntry location=&#34;/Program Files/IBM/SQLLIB/java/db2java.zip&#34; /&gt;
+    &lt;/jdbcConnection&gt;
+ 
+    &lt;javaModelGenerator
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.model&#34;
+   targetProject=&#34;gene&#34; /&gt;
+    &lt;sqlMapGenerator
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.sql&#34;
+   targetProject=&#34;gene&#34; /&gt;
+    &lt;daoGenerator type=&#34;IBATIS&#34;
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.dao&#34;
+   targetProject=&#34;gene&#34; /&gt;
+ &lt;abatorConfiguration&gt;
+</code></pre><h5 id="span-idabator_example_2-classmw-headlineabator-examplespan"><span id="Abator_Example_2" class="mw-headline">Abator Example</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;abatorConfiguration&gt;
+  &lt;abatorContext&gt;    &lt;!-- TODO: Add Database Connection Information --&gt;
+    &lt;jdbcConnection driverClass=&#34;COM.ibm.db2.jdbc.app.DB2Driver&#34;
+        connectionURL=&#34;jdbc:db2:XBDV05&#34;
+        userId=&#34;db2inst1&#34;
+        password=“*******&#34;&gt;
+      &lt;classPathEntry location=&#34;/Program Files/IBM/SQLLIB/java/db2java.zip&#34; /&gt;
+    &lt;/jdbcConnection&gt;
+ 
+    &lt;javaModelGenerator
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.model&#34;
+   targetProject=&#34;gene&#34; /&gt;
+    &lt;sqlMapGenerator
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.sql&#34;
+   targetProject=&#34;gene&#34; /&gt;
+    &lt;daoGenerator type=&#34;IBATIS&#34;
+   targetPackage=&#34;org.gmod.architecture.framework.bakeoff.abator.dao&#34;
+   targetProject=&#34;gene&#34; /&gt;
+ &lt;abatorConfiguration&gt;
+</code></pre><h5 id="span-idabator_example_3-classmw-headlineabator-examplespan"><span id="Abator_Example_3" class="mw-headline">Abator Example</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;table schema=&#34;db2inst1&#34; tableName=&#34;synonym&#34;&gt;&lt;/nowiki&gt; 
+      &lt;generatedKey column=&#34;synonym_id&#34; sqlStatement=&#34;VALUES PREVVAL FOR
+             synonym_seq&#34; identity=&#34;true&#34; /&gt;
+      &lt;columnOverride column=&#34;CREATED_BY&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+      &lt;columnOverride column=&#34;MODIFIED_BY&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+ &lt;/table&gt;
+</code></pre><h5 id="span-idabator_2-classmw-headlineabatorspan"><span id="Abator_2" class="mw-headline">Abator</span></h5>
+<p>Works as:</p>
+<ul>
+<li>Eclipse plug-in</li>
+<li>ANT</li>
+<li>Standalone</li>
+</ul>
+<h5 id="span-iddao_methods-classmw-headlinedao-methodsspan"><span id="DAO_Methods" class="mw-headline">DAO Methods</span></h5>
+<ul>
+<li>Insert (Feature)</li>
+<li>Update (Feature)</li>
+<li>DeletebyKey (FeatureKey)</li>
+<li>SelectbyKey (FeatureKey)</li>
+<li>SelectbyExample (FeatureExample)</li>
+<li>DeletebyExample (FeatureExample)</li>
+</ul>
+<h5 id="span-idinsert-classmw-headlineinsertspan"><span id="Insert" class="mw-headline">Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;insert id=&#34;abatorgenerated_insert&#34; parameterClass=
+  &#34;org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs&#34;&gt;
+    insert into db2inst1.feature
+            (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
+             RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
+             IS_OBSOLETE, CREATED_BY)
+    values (#dbxrefId:INTEGER#, #organismId:INTEGER#, #name:VARCHAR#,
+            #uniquename:VARCHAR#, #residues:CLOB#, #seqlen:INTEGER#,
+            #md5checksum:CHAR#, #typeId:INTEGER#,
+            #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
+           #createdBy:INTEGER#)
+ 
+    &lt;selectKey resultClass=&#34;java.lang.Integer&#34; keyProperty=&#34;featureId&#34;&gt;
+        VALUES PREVVAL FOR feature_seq
+    &lt;/selectKey&gt;
+  &lt;/insert&gt;
+</code></pre><h5 id="span-idinsert_2-classmw-headlineinsertspan"><span id="Insert_2" class="mw-headline">Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;insert id=&#34;abatorgenerated_insert&#34; parameterClass=
+  &#34;org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs&#34;&gt;
+    insert into db2inst1.feature
+            (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
+             RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
+             IS_OBSOLETE, CREATED_BY)
+    values (#dbxrefId:INTEGER#, #organismId:INTEGER#, #name:VARCHAR#,
+            #uniquename:VARCHAR#, #residues:CLOB#, #seqlen:INTEGER#,
+            #md5checksum:CHAR#, #typeId:INTEGER#,
+            #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
+                       #createdBy:INTEGER#)
+ 
+    &lt;selectKey resultClass=&#34;java.lang.Integer&#34; keyProperty=&#34;featureId&#34;&gt;
+        VALUES PREVVAL FOR feature_seq
+    &lt;/selectKey&gt;
+  &lt;/insert&gt;
+</code></pre><h5 id="span-idinsert_3-classmw-headlineinsertspan"><span id="Insert_3" class="mw-headline">Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;insert id=&#34;abatorgenerated_insert&#34; parameterClass=
+  &#34;org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs&#34;&gt;
+    insert into db2inst1.feature
+            (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
+             RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
+             IS_OBSOLETE, CREATED_BY)
+    values (#dbxrefId:INTEGER#, #organismId:INTEGER#, #name:VARCHAR#,
+            #uniquename:VARCHAR#, #residues:CLOB#, #seqlen:INTEGER#,
+            #md5checksum:CHAR#, #typeId:INTEGER#,
+            #isAnalysis:SMALLINT#,  #isObsolete:SMALLINT#,
+           #createdBy:INTEGER#)
+ 
+    &lt;selectKey resultClass=&#34;java.lang.Integer&#34; keyProperty=&#34;featureId&#34;&gt;
+        VALUES PREVVAL FOR feature_seq
+    &lt;/selectKey&gt;
+  &lt;/insert&gt;
+</code></pre><h5 id="span-idinsert_4-classmw-headlineinsertspan"><span id="Insert_4" class="mw-headline">Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;selectKey resultClass=&#34;java.lang.Integer&#34;
+            keyProperty=&#34;featureId&#34;&gt;
+        VALUES PREVVAL FOR feature_seq
+ &lt;/selectKey&gt;
+</code></pre><h5 id="span-idinsert_5-classmw-headlineinsertspan"><span id="Insert_5" class="mw-headline">Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;selectKey resultClass=&#34;java.lang.Integer&#34;
+            keyProperty=&#34;featureId&#34;&gt;
+        VALUES PREVVAL FOR feature_seq
+ &lt;/selectKey&gt;
+</code></pre><h5 id="span-idproblem_1_-_insert-classmw-headlineproblem-1---insertspan"><span id="Problem_1_-_Insert" class="mw-headline">Problem 1 - Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> try {
+  sqlMap.startTransaction();
+  pGene.id =featureDAO.insert(pGene.getFeatureWithBLOBs());
+  featurepropDAO.insert(pGene.getPropertyDescription());
+  pGene.featurelocId = featurelocDAO.insert(pGene
+                                   .getFeaturelocWithBLOBS());
+  pGene = insertExons(pGene);
+  insertSynonyms(pGene);
+  sqlMap.commitTransaction();
+ } catch (Exception e) {
+        System.out.println(e);
+        throw (e);
+ } finally {
+       sqlMap.endTransaction();
+ }
+</code></pre><h5 id="span-idproblem_1_-_insert_2-classmw-headlineproblem-1---insertspan"><span id="Problem_1_-_Insert_2" class="mw-headline">Problem 1 - Insert</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> try {
+  sqlMap.startTransaction();
+  pGene.id =featureDAO.insert(pGene.getFeatureWithBLOBs());
+  featurepropDAO.insert(pGene.getPropertyDescription());
+  pGene.featurelocId = featurelocDAO.insert(pGene
+                                   .getFeaturelocWithBLOBS());
+  pGene = insertExons(pGene);
+  insertSynonyms(pGene);
+  sqlMap.commitTransaction();
+ } catch (Exception e) {
+        System.out.println(e);
+        throw (e);
+ } finally {
+       sqlMap.endTransaction();
+ }
+</code></pre><h5 id="span-idtransactions-classmw-headlinetransactionsspan"><span id="Transactions" class="mw-headline">Transactions</span></h5>
+<ul>
+<li>SQLMap</li>
+<li>JDBC</li>
+<li>JTA - Java Transaction API
+<ul>
+<li>2-Phase commit</li>
+</ul>
+</li>
+<li>Hibernate</li>
+<li>External (Customized)</li>
+</ul>
+<h5 id="span-idretrieval-classmw-headlineretrievalspan"><span id="Retrieval" class="mw-headline">Retrieval</span></h5>
+<pre><code>symbol: xfile
+description: A test gene for GMOD meeting
+mRNA Feature
+        exon_1: start: 13691 end: 13767
+                        strand: 1
+                        srcFeature_id: Id of genomic sample
+        exon_2:      start: 14687 end: 14720
+                         strand: 1
+                         srcFeature_id: Id of genomic sample
+</code></pre>
+<h5 id="span-idproblem_2_-_master_detail_reports-classmw-headlineproblem-2---master-detail-reportsspan"><span id="Problem_2_-_Master_Detail_Reports" class="mw-headline">Problem 2 - Master Detail Reports</span></h5>
+<p>Account for cycles or recursion in Master Detail Report.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;resultMap id=&#34;SelectGeneResults&#34;
+   class=&#34;org.gmod.architecture.framework.bakeoff.Gene&#34; groupBy=&#34;id&#34;&gt;
+      &lt;result column=&#34;FEATURE_ID&#34; property=&#34;id&#34; jdbcType=&#34;INTEGER&#34;/&gt;
+      &lt;result column=&#34;GENE_NAME&#34; property=&#34;name&#34; jdbcType=&#34;VARCHAR&#34; /&gt;
+      &lt;result column=&#34;DESCRIPTION&#34; property=&#34;description“
+   jdbcType=&#34;VARCHAR&#34; /&gt;
+      &lt;result column=&#34;TYPE_ID&#34; property=&#34;typeId&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+      &lt;result property=&#34;exons&#34; resultMap = &#34;gene.SelectExonResults&#34;/&gt;
+  &lt;/resultMap&gt;
+ 
+ &lt;resultMap id=&#34;SelectExonResults&#34;
+   class=&#34;org.gmod.architecture.framework.bakeoff.Exon&#34;&gt;
+     &lt;result column=&#34;EXON_ID&#34; property=&#34;id&#34; jdbcType=&#34;INTEGER&#34;/&gt;
+     &lt;result column=&#34;EXON_NAME&#34; property=&#34;name&#34; jdbcType=&#34;VARCHAR&#34; /&gt;
+     &lt;result column=&#34;EXON_RESIDUES&#34; property=&#34;residues&#34; jdbcType=&#34;CLOB&#34; /&gt;
+     &lt;result column=&#34;STRAND&#34; property=&#34;strand&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;FMIN&#34; property=&#34;fmin&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;FMAX&#34; property=&#34;fmax&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;SRCFEATURE_ID&#34; property=&#34;sourceFeatureId&#34;
+   jdbcType=&#34;INTEGER&#34; /&gt;
+ &lt;/resultMap&gt;
+</code></pre><h5 id="span-idproblem_2_-_master_detail_report-classmw-headlineproblem-2---master-detail-reportspan"><span id="Problem_2_-_Master_Detail_Report" class="mw-headline">Problem 2 - Master Detail Report</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;resultMap id=&#34;SelectGeneResults&#34;
+   class=&#34;org.gmod.architecture.framework.bakeoff.Gene&#34; groupBy=&#34;id&#34;&gt;
+      &lt;result column=&#34;FEATURE_ID&#34; property=&#34;id&#34; jdbcType=&#34;INTEGER&#34;/&gt;
+      &lt;result column=&#34;GENE_NAME&#34; property=&#34;name&#34; jdbcType=&#34;VARCHAR&#34; /&gt;
+      &lt;result column=&#34;DESCRIPTION&#34; property=&#34;description“
+   jdbcType=&#34;VARCHAR&#34; /&gt;
+      &lt;result column=&#34;TYPE_ID&#34; property=&#34;typeId&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+      &lt;result property=&#34;exons&#34; resultMap = &#34;gene.SelectExonResults&#34;/&gt;
+  &lt;/resultMap&gt;
+ 
+ &lt;resultMap id=&#34;SelectExonResults&#34;
+   class=&#34;org.gmod.architecture.framework.bakeoff.Exon&#34;&gt;
+     &lt;result column=&#34;EXON_ID&#34; property=&#34;id&#34; jdbcType=&#34;INTEGER&#34;/&gt;
+     &lt;result column=&#34;EXON_NAME&#34; property=&#34;name&#34; jdbcType=&#34;VARCHAR&#34; /&gt;
+     &lt;result column=&#34;EXON_RESIDUES&#34; property=&#34;residues&#34; jdbcType=&#34;CLOB&#34; /&gt;
+     &lt;result column=&#34;STRAND&#34; property=&#34;strand&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;FMIN&#34; property=&#34;fmin&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;FMAX&#34; property=&#34;fmax&#34; jdbcType=&#34;INTEGER&#34; /&gt;
+     &lt;result column=&#34;SRCFEATURE_ID&#34; property=&#34;sourceFeatureId&#34;
+   jdbcType=&#34;INTEGER&#34; /&gt;
+ &lt;/resultMap&gt;
+</code></pre><h5 id="span-idmaster_detail_report-classmw-headlinemaster-detail-reportspan"><span id="Master_Detail_Report" class="mw-headline">Master Detail Report</span></h5>
+<pre><code>gene_id  Symbol   Type      Fmin   Fmax
+6129482  x-files  gene      13691   13767
+6129482  x-files  gene      14687   14720
+</code></pre>
+<p>Becomes:</p>
+<pre><code>gene_id  Symbol   Type      Fmin   Fmax
+6129482  x-files  gene      13691   13767
+                                          14687   14720
+</code></pre>
+<h5 id="span-iddynamic_queries-classmw-headlinedynamic-queriesspan"><span id="Dynamic_Queries" class="mw-headline">Dynamic Queries</span></h5>
+<ul>
+<li>Gene Name (Description)
+<ul>
+<li>Feature, Featureprop</li>
+</ul>
+</li>
+<li>Symbol
+<ul>
+<li>Feature</li>
+</ul>
+</li>
+<li>Feature Synonyms
+<ul>
+<li>Feature, Feature_Synonym, Synonym</li>
+</ul>
+</li>
+<li>Ortholog Synonyms
+<ul>
+<li>Feature, Feature_relationship, Feature, Feature Synonyms</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-iddynamic_queries_2-classmw-headlinedynamic-queriesspan"><span id="Dynamic_Queries_2" class="mw-headline">Dynamic Queries</span></h5>
+<pre><code>FROM
+    CAT_X_GENE_V gc
+ &lt;isEqual
+prepend=&quot;,property=&quot;searchSymbol&quot;
+             compareValue=&quot;true&quot;&gt;
+    GENE_SYMBOLS s
+ &lt;/isEqual&gt;
+  
+ &lt;isEqual prepend=&quot;,&quot;
+property=&quot;searchNcbi&quot;
+compareValue=&quot;true&quot;&gt;
+    NCBI_GI n
+ &lt;/isEqual&gt;
+</code></pre>
+<h5 id="span-iddynamic_queries_3-classmw-headlinedynamic-queriesspan"><span id="Dynamic_Queries_3" class="mw-headline">Dynamic Queries</span></h5>
+<pre><code>&lt;dynamic prepend=&quot;WHERE&quot;&gt;
+ &lt;isEqual prepend=&quot;AND&quot; property=&quot;searchNameOnly“
+               compareValue=&quot;true&quot;&gt;
+  &lt;iterate property=&quot;searchTokens&quot; conjunction=&quot;AND&quot;
+                   open=&quot; (&quot; close=&quot;) &quot;&gt;
+         LOWER(VARCHAR(gc.longname)) LIKE
+        LOWER(CAST(#searchTokens[]:VARCHAR# AS VARCHAR(512)))
+  &lt;/iterate&gt;
+&lt;/isEqual&gt;
+</code></pre>
+<p>Iterate very useful for multiple search terms</p>
+<h5 id="span-idmiscellaneous_features-classmw-headlinemiscellaneous-featuresspan"><span id="Miscellaneous_Features" class="mw-headline">Miscellaneous Features</span></h5>
+<ul>
+<li>Supports various data sources
+<ul>
+<li>Simple JDBC</li>
+<li>DBCP – Apache Connection Pooling</li>
+<li>JNDI – Java Naming Directory Interface</li>
+</ul>
+</li>
+<li>Very flexible</li>
+<li>Local caching of results
+<ul>
+<li>Lazy loading</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idsupport-classmw-headlinesupportspan"><span id="Support" class="mw-headline">Support</span></h5>
+<ul>
+<li>In GMOD used by
+<ul>
+<li>Xenbase, <a href="Artemis" title="Artemis">Artemis</a> at Sanger</li>
+</ul>
+</li>
+<li>Many other users
+<ul>
+<li>e.g. MySpace.com</li>
+</ul>
+</li>
+<li>Top level Apache Project
+<ul>
+<li><a href="https://www.ibatis.apache.org">www.ibatis.apache.org</a></li>
+</ul>
+</li>
+<li>Active community</li>
+</ul>
+<h5 id="span-idwhat_ibatis_does_well-classmw-headlinewhat-ibatis-does-wellspan"><span id="What_iBatis_Does_Well" class="mw-headline">What iBatis Does Well</span></h5>
+<ul>
+<li>Does not hide SQL
+<ul>
+<li>No new query language to learn</li>
+</ul>
+</li>
+<li>Separates and groups SQL</li>
+<li>Simple!!
+<ul>
+<li>Light wrapper - No real tweaks</li>
+</ul>
+</li>
+<li>Does the job well</li>
+<li>Excellent support for Master-Detail</li>
+<li>Dynamically generated queries
+<ul>
+<li>You can structure conditions around clauses in SQL</li>
+<li>One XML statement can represent many variations on a query</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idacknowledgements-classmw-headlineacknowledgementsspan"><span id="Acknowledgements" class="mw-headline">Acknowledgements</span></h5>
+<p>GMOD</p>
+<ul>
+<li>Eric Just</li>
+<li>Everyone else</li>
+</ul>
+<p>Ibatis Developers</p>
+<ul>
+<li>Kevin Snyder,</li>
+<li>Chris Jarabek,</li>
+<li>Ross Gibb</li>
+</ul>
+<p>PI</p>
+<ul>
+<li>Peter Vize</li>
+</ul>
+<p>Financial Support</p>
+<ul>
+<li>Alberta Heritage Foundation for Medical Research</li>
+<li>Alberta Network for Proteomics Innovation</li>
+<li>University of Calgary, Faculty of Science</li>
+<li>University of Calgary Dept. of Computer Science</li>
+<li>NICHD</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AJava" title="Category%253AJava">Java</a></li>
+<li><a href="Category%253AMiddleware_Presentations" title="Category%253AMiddleware Presentations">Middleware
+Presentations</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/IBatis_Presentation" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:10 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">32,339 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Relationship Ontology - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautostock-relationship-ontologyspan"><span dir="auto">Stock Relationship Ontology</span></h1>
+<p>This page serves as an initial draft of the nascent Stock Relationship
+Ontology.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Talk_page"><span class="tocnumber">1</span> <span class="toctext">Talk
+page</span></a></li>
+<li><a href="#stock_types"><span class="tocnumber">2</span> <span class="toctext">stock
+types</span></a></li>
+<li><a href="#Proposed_relations_.28by_Pantelis_Topalis_28_May_2010.29"><span class="tocnumber">3</span> <span class="toctext">Proposed
+relations (by Pantelis Topalis 28 May
+2010)</span></a></li>
+<li><a href="#stock_relationship_types"><span class="tocnumber">4</span>
+<span class="toctext">stock_relationship
+types</span></a>
+<ul>
+<li><a href="#individual_-.3E_individual"><span class="tocnumber">4.1</span> <span class="toctext">individual
+-&gt; individual</span></a></li>
+<li><a href="#individual_-.3E_group"><span class="tocnumber">4.2</span> <span class="toctext">individual
+-&gt; group</span></a></li>
+<li><a href="#group_-.3E_individual"><span class="tocnumber">4.3</span> <span class="toctext">group -&gt;
+individual</span></a></li>
+<li><a href="#group_-.3E_group"><span class="tocnumber">4.4</span> <span class="toctext">group -&gt;
+group</span></a></li>
+</ul>
+</li>
+<li><a href="#nd_assay_stock_types"><span class="tocnumber">5</span> <span class="toctext">nd_assay_stock
+types</span></a></li>
+<li><a href="#nd_assay_types"><span class="tocnumber">6</span> <span class="toctext">nd_assay
+types</span></a></li>
+</ul>
+<h2 id="span-idtalk_page-classmw-headlinetalk-pagespan"><span id="Talk_page" class="mw-headline">Talk page</span></h2>
+<p>If you are too shy to edit this page, then please add your suggested
+terms or comments on the <a href="Talk%253AStock_Relationship_Ontology" title="Talk:Stock Relationship Ontology">talk
+page</a>.</p>
+<h2 id="span-idstock_types-classmw-headlinestock-typesspan"><span id="stock_types" class="mw-headline">stock types</span></h2>
+<ul>
+<li>term
+<ul>
+<li>is_a subterm</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idproposed_relations_28by_pantelis_topalis_28_may_201029-classmw-headlineproposed-relations-by-pantelis"><span id="Proposed_relations_.28by_Pantelis_Topalis_28_May_2010.29" class="mw-headline">Proposed relations (by Pantelis</h2>
+<p>Topalis 28 May 2010)</span></p>
+<p>Based on what it is written in this page, we can use the following
+relations (please comment / add / modify as required).</p>
+<ul>
+<li>is_a (OBO_REL:is_a)</li>
+<li>part_of (OBO_REL:part_of)</li>
+<li>derives_from (OBO_REL:derives_from)</li>
+<li>is_parent_of</li>
+<li>is_offspring_of</li>
+<li>is_member_of</li>
+</ul>
+<h2 id="span-idstock_relationship_types-classmw-headlinestock_relationship-typesspan"><span id="stock_relationship_types" class="mw-headline">stock_relationship types</span></h2>
+<p>(the following is largely taken from a prior VB
+<a href="http://wiki.vectorbase.org/index.php/Samples_and_relationships"
+class="external text" rel="nofollow">wiki</a> dealing with the same
+issue. I&rsquo;ve put them here as a conversation starter only - feel free to
+delete / alter / extend as required) Sethnr 13:12,
+11 May 2010 (UTC)</p>
+<h3 id="span-idindividual_-3e_individual-classmw-headlineindividual---individualspan"><span id="individual_-.3E_individual" class="mw-headline">individual -&gt; individual</span></h3>
+<ul>
+<li>parent -&gt; offspring</li>
+<li>individual -&gt; RNAi treated individual</li>
+</ul>
+<h3 id="span-idindividual_-3e_group-classmw-headlineindividual---groupspan"><span id="individual_-.3E_group" class="mw-headline">individual -&gt; group</span></h3>
+<ul>
+<li>parents -&gt; offspring</li>
+<li>parent -&gt; offspring (i.e. isofem)</li>
+<li>pool of individuals</li>
+</ul>
+<h3 id="span-idgroup_-3e_individual-classmw-headlinegroup---individualspan"><span id="group_-.3E_individual" class="mw-headline">group -&gt; individual</span></h3>
+<ul>
+<li>individual from pool (e.g. single sequenced individual from field
+collection)</li>
+<li>individual under gen. modification (e.g. RNAi?)</li>
+</ul>
+<h3 id="span-idgroup_-3e_group-classmw-headlinegroup---groupspan"><span id="group_-.3E_group" class="mw-headline">group -&gt; group</span></h3>
+<ul>
+<li>sub-population from larger population</li>
+<li>group-&gt;group RNAi (and other experimental manipulations)</li>
+<li>bred lines from lab stocks</li>
+</ul>
+<h2 id="span-idnd_assay_stock_types-classmw-headlinend_assay_stock-typesspan"><span id="nd_assay_stock_types" class="mw-headline">nd_assay_stock types</span></h2>
+<p>Here is one distinction we may all need to make: assays that <strong>use</strong>
+stocks and assays that <strong>generate</strong> stocks. I suggest the following but
+it is a bit computer-sciency! Maccallr
+10:25, 1 June 2010 (UTC)</p>
+<ul>
+<li>assay_input_stock</li>
+<li>assay_output_stock</li>
+</ul>
+<p>Should the amount of stock used/generated be recorded in
+nd_assay_stockprop? Or should we have nd_assay_stock.types like &lsquo;stock
+sample&rsquo;, &rsquo;entire stock&rsquo;? Maccallr
+10:25, 1 June 2010 (UTC)</p>
+<h2 id="span-idnd_assay_types-classmw-headlinend_assay-typesspan"><span id="nd_assay_types" class="mw-headline">nd_assay types</span></h2>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253ANatural_Diversity" title="Category%253ANatural Diversity">Natural
+Diversity</a></li>
+<li><a href="Category%253AProposals" title="Category%253AProposals">Proposals</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><span id="ca-talk"><a href="Talk%253AStock_Relationship_Ontology" accesskey="t"
+title="Discussion about the content page [t]">Discussion</a></span></li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Stock_Relationship_Ontology"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 10:25 on 1 June
+2010.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">20,715 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMOD in a Box/Resizing a VirtualBox Disk - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogmod-in-a-boxresizing-a-virtualbox-diskspan"><span dir="auto">GMOD in a Box/Resizing a VirtualBox Disk</span></h1>
+<p><strong>Important Note: The actions below could potentially result in the data
+partition getting corrupted. Always do these activities on a copy of the
+data drive file.</strong></p>
+<h2 id="span-idfor_gmod_in_a_box_before_205-classmw-headlinefor-gmod-in-a-box-before-205span"><span id="For_GMOD_in_a_Box_before_2.05" class="mw-headline">For GMOD in a Box before 2.05</span></h2>
+<p>To resize the data disk in GiaB 2.04, we have to change the type of disk
+it is, since the one that shipped with 2.04 doesn&rsquo;t support resizing
+(after 2.04, we changed to the type that supported resizing). To change
+the type, Identify the file for the data disk on the host machine; for
+2.04, it is probably &ldquo;GMOD in a Box 2.04-disk2.vmdk&rdquo;. Run this command
+on that file:</p>
+<pre><code> VBoxManage clonehd GMOD\ in\ a\ Box\ 2.04-disk2.vmdk GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --format VDI --variant Standard
+</code></pre>
+<p>This creates a VDI file that we can resize.</p>
+<h2 id="span-idfor_resizing_a_vdi_file-classmw-headlinefor-resizing-a-vdi-filespan"><span id="For_Resizing_a_VDI_file" class="mw-headline">For Resizing a VDI file</span></h2>
+<p>To resize, run this command on the host machine on the disk that you
+want to resize:</p>
+<pre><code> VBoxManage modifyhd GMOD\ in\ a\ Box\ 2.05-data-disk.vdi --resize 10000
+</code></pre>
+<p>where the &ldquo;10000&rdquo; is the number of megabytes of the resized disk (so
+this is approximately 10GB). Now you can continue with adding this disk
+to the GMOD in a Box instance. Now the disk is bigger, but the file
+system doesn&rsquo;t know about it yet. By far, the easiest way to resize the
+file system is to reboot the instance using the <a
+href="https://sourceforge.net/projects/gparted/files/gparted-live-stable/0.16.2-11/%7CGParted"
+class="external text" rel="nofollow">live disk, which can be downloaded
+from SourceForge</a>. You need the iso for amd64 (GMOD in a Box is a 64
+bit machine).</p>
+<p>Once you&rsquo;ve downloaded the iso, shutdown the GMOD in a Box instance if
+it is running. Open the settings for the machine and attach the resized
+database file to the GMOD in a Box instance using the directions in the
+<a href="Updating" title="GMOD in a Box/Updating">GMOD in a Box/Updating</a> page. Then,
+in the same Storage tab, right click on &ldquo;Controller:IDE&rdquo;, select &ldquo;Add
+CD/DVD Device&rdquo;, click the &ldquo;Choose Disk&rdquo; and then find the downloaded iso
+and click OK.</p>
+<p>Press start to boot the instance using the GParted live CD iso. Answer
+the questions about language, keyboard and starting in the graphical
+environment (generally accepting the defaults is fine).</p>
+<p>In the window that results, the GParted utility should be running. In
+the upper right corner of the utility, select the resized disk from drop
+down menu (/dev/sda will probably be selected initially). Click on the
+line that has ext4 under &ldquo;File System&rdquo; and then click &ldquo;Resize/Move&rdquo;. In
+the window that results, click and drag the black triangle to make the
+file system take up the entire disk. Click the &ldquo;Resize/Move&rdquo; button to
+save and then the &ldquo;Apply&rdquo; button to make it permanent. Select Quit from
+the GParted menu in the upper left of the window. Right click on the
+desktop and select &ldquo;exit&rdquo; then &ldquo;exit-shutdown menu&rdquo; from the pop up
+menu, and select shutdown in the resulting window. Press enter to
+continue shutting down. Open the storage settings and remove the GParted
+CD iso from the ISO controller.</p>
+<p>Now you can restart the GMOD in a Box instance and continue with
+mounting the new data drive as described in the <a href="Updating" title="GMOD in a Box/Updating">GMOD in a
+Box/Updating</a> page.</p>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_in_a_Box-2FResizing_a_VirtualBox_Disk"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 03:31 on 12 December
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">7,687 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

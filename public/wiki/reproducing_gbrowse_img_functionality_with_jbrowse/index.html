@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproducing gbrowse img functionality with JBrowse - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoreproducing-gbrowse-img-functionality-with-jbrowsespan"><span dir="auto">Reproducing gbrowse img functionality with JBrowse</span></h1>
+<p>That is, &ldquo;Reproducing gbrowse_img functionality with JBrowse&rdquo;
+(underscores don&rsquo;t survive the Mediawiki page naming process). A current
+implementation of this can be seen at the WormBase staging site for the
+<a
+href="https://staging.wormbase.org/species/c_elegans/gene/WBGene00001340#09--10#09--10"
+class="external text" rel="nofollow">etr-1 gene</a>, which has quite a
+few transcripts and so needs a &ldquo;tall&rdquo; JBrowse image.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Why_this_is_needed"><span class="tocnumber">1</span> <span class="toctext">Why this is
+needed</span></a></li>
+<li><a href="#What_this_solution_does"><span class="tocnumber">2</span> <span class="toctext">What this
+solution does</span></a>
+<ul>
+<li><a href="#Fetch_JBrowse_into_a_div"><span class="tocnumber">2.1</span> <span class="toctext">Fetch
+JBrowse into a div</span></a></li>
+<li><a href="#CSS_tricks"><span class="tocnumber">2.2</span> <span class="toctext">CSS
+tricks</span></a></li>
+<li><a href="#Monitor_JBrowse_loading"><span class="tocnumber">2.3</span> <span class="toctext">Monitor
+JBrowse loading</span></a></li>
+<li><a href="#.22Div_overlay.22_to_allow_clicking"><span class="tocnumber">2.4</span> <span class="toctext">&ldquo;Div
+overlay&rdquo; to allow
+clicking</span></a></li>
+</ul>
+</li>
+<li><a href="#Acknowledgments"><span class="tocnumber">3</span>
+<span class="toctext">Acknowledgments</span></a></li>
+</ul>
+<h2 id="span-idwhy_this_is_needed-classmw-headlinewhy-this-is-neededspan"><span id="Why_this_is_needed" class="mw-headline">Why this is needed</span></h2>
+<p>While <a href="JBrowse.1" title="JBrowse">JBrowse</a> is a terrific tool for browsing
+genomes, there is one piece of functionality that is missing from this
+excellent client-side tool: getting an image from the server with a URL
+request that can be dynamically inserted into a web page, like what one
+might want for a gene page at a model organism database.</p>
+<p>The most common solution that is used when people need this
+functionality from JBrowse has been to put the needed URL in an html
+iframe. This approach has a few down sides:</p>
+<ul>
+<li>The content in the iframe remains active. Users can interact with it
+in the same way that they can interact with a full JBrowse instance.
+While this is kind of neat in some instances, there is no way to get
+back to the original view. If the designer of the page put that view
+there for a reason, the user might want to see that view in the
+context of the page. (Note that this is technically not true&ndash;one
+could write some JavaScript and attach it to a &ldquo;reset&rdquo; button, but it
+is an ugly solution).</li>
+<li>The iframe captures mouse scroll wheel events. If a user is scrolling
+down a page and the mouse pointer enters a JBrowse iframe, the iframe
+starts capturing the scroll so that scrolling in the page stops while
+the JBrowse in the iframe scrolls. This is *very* annoying to the
+user.</li>
+<li>There is no way to know before the JBrowse URL is invoked how tall the
+resulting &ldquo;image&rdquo; (JBrowse page) will be, so the page designer
+generally has to assign a fixed height and then the resulting JBrowse
+page is frequently either too large or too small. When it&rsquo;s too large,
+it results in ugly white space; but even worse, when it&rsquo;s too small,
+it requires the user to scroll to see the entirety of the content,
+which can result in accidentally scrolling away from the genomic
+location originally defined for the page.</li>
+<li>iframes are ugly.</li>
+</ul>
+<h2 id="span-idwhat_this_solution_does-classmw-headlinewhat-this-solution-doesspan"><span id="What_this_solution_does" class="mw-headline">What this solution does</span></h2>
+<ul>
+<li>Puts the JBrowse content in a div with a JavaScript function</li>
+<li>Uses CSS to prevent mouse interactions (like scrolling) in the JBrowse
+div</li>
+<li>Uses JavaScript to monitor the size of the resulting JBrowse content
+and dynamically resize the div to show all of the content</li>
+<li>Creates a div &ldquo;overlay&rdquo; for the resulting image so that a click on it
+goes to the full JBrowse site.</li>
+</ul>
+<p>The example code below uses JQuery but could easily be reimplemented in
+another framework (or vanilla JavaScript, which is how it was originally
+written&ndash;putting it into JQuery made it much cleaner).</p>
+<h3 id="span-idfetch_jbrowse_into_a_div-classmw-headlinefetch-jbrowse-into-a-divspan"><span id="Fetch_JBrowse_into_a_div" class="mw-headline">Fetch JBrowse into a div</span></h3>
+<p>The first thing to do is to fetch JBrowse into a div using an html
+object tag with the URL that you need to fetch in the &ldquo;data&rdquo; attribute
+of the object tag. In practice, the result looks like this:</p>
+<pre><code>  &lt;object id=&quot;innerJBrowse&quot; 
+         type=&quot;text/html&quot; 
+         style=&quot;pointer-events: none; position: relative; top: -1px; left: 0px; width: 100%; height: 1273px; overflow: hidden;&quot; 
+         data=&quot;/tools/genome/jbrowse-simple/full.html?overview=0&amp;tracks=Curated_Genes%2CClassical_alleles%2CYACs_Fosmids_Cosmids&amp;loc=II%253A158247..173104&amp;data=data%2Fc_elegans_simple&amp;nav=0&amp;tracklist=0&quot;&gt;
+  &lt;/object&gt;
+</code></pre>
+<p>But the trick is that the object tag gets created dynamically when the
+page is loaded, using some simple JavaScript like this:</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    var preembedURL = &quot;full.html?tracks=Curated_Genes%2CClassical_alleles%2CYACs_Fosmids_Cosmids&amp;loc=X%253A12392257..12418393&amp;data=data%2Fc_elegans_simple&quot;; 
+    var embed_part = &quot;&amp;nav=0&amp;tracklist=0&amp;overview=0&quot;;
+    $(&quot;#jbrowse-view-iframe&quot;).html('&lt;object id=&quot;innerJBrowse&quot; type=&quot;text/html&quot; style=&quot;pointer-events: none; position: relative; top: -1px; left: 0px; width: 100%; height: 14px; overflow: hidden;&quot; data=&quot;'+preembedURL+embed_part+'&quot;&gt;&lt;/object&gt;');
+&lt;/script&gt;
+</code></pre>
+<p>Note that the class of the div is &ldquo;jbrowse-view-iframe&rdquo; but of course,
+it&rsquo;s really a div, not an iframe.</p>
+<h3 id="span-idcss_tricks-classmw-headlinecss-tricksspan"><span id="CSS_tricks" class="mw-headline">CSS tricks</span></h3>
+<p>Now for a few comments about the styling of the JBrowse div. There are
+few neat tricks that are going on here that are important to making this
+work. Here they are laid out in full:</p>
+<ul>
+<li><code>pointer-events: none;</code> This is one of the most important items;
+pointer-effects none tells the browser to ignore anything the mouse
+does inside this div, so there is no clicking on features or scrolling
+with the mouse wheel.</li>
+<li><code>position: relative; </code> Makes the coordinate assignments in the next
+line work properly.</li>
+<li><code>top: -1px; left: 0px; </code> Positioning&ndash;put JBrowse starting at the top
+left of the div.</li>
+<li><code>width: 100%; </code> Not supper important what the width is; I like 100% in
+our implementation because it just fills with width of the parent.</li>
+<li><code>height: 14px; </code> This height will allow the top coordinate bar of
+JBrowse be visible while it&rsquo;s loading; another option is to set it to
+zero so the user sees nothing while it&rsquo;s loading. Finally, what was
+implemented at WormBase was to place a &ldquo;loading spinner&rdquo; in the div
+while it&rsquo;s loading.</li>
+<li><code>overflow: hidden;</code> This prevents the browser from creating a scroll
+bar from forming when the content gets bigger than the div height. Of
+course, the scrollbar wouldn&rsquo;t work anyway because of the
+pointer-events setting.</li>
+</ul>
+<h3 id="span-idmonitor_jbrowse_loading-classmw-headlinemonitor-jbrowse-loadingspan"><span id="Monitor_JBrowse_loading" class="mw-headline">Monitor JBrowse loading</span></h3>
+<p>Below is the script used at WormBase for checking the height required
+for JBrowse while it&rsquo;s loading. It checks every 2 seconds if the height
+needs to be changed for 30 seconds. Note that the stuff in <code>[% .... %]</code>
+brackets are variables being substituted in by Perl&rsquo;s Template::Toolkit
+which drives the WormBase website.</p>
+<pre><code> &lt;script type=&quot;text/javascript&quot;&gt;
+            (function() {
+                var viewId = &quot;#[% view_id %]&quot;;
+                var viewUrl = &quot;[% view_url %]&quot;;
+                var innerJBrowseContainer = $jq(viewId + &quot; .jbrowse-view-iframe&quot;);
+                var heightDefault = 400;
+
+                var reset = (function(innerJBrowseContainer, url) {
+                  return function(height) {
+                    var innerJBrowseElement = innerJBrowseContainer.find('object');
+                    innerJBrowseContainer.addClass('jbrowse-view-iframe__loading');
+                    innerJBrowseElement.attr('data', url);
+                    innerJBrowseElement.height(height);
+
+                    function updateHeight() {
+                        var heightComputed = 0;
+                        var jbrowseDocument = document.getElementById('innerJBrowse').contentDocument || document.getElementById('innerJBrowse').contentWindow.document;
+                        var tracks = jbrowseDocument.getElementsByClassName('track');
+                        for (var i=0; i &lt; tracks.length; i++) {
+                          var id = tracks[i].id;
+                          if (id !== 'gridtrack' &amp;&amp; id !== 'overviewtrack_overview_loc_track' &amp;&amp; id !== 'static_track') {
+                            heightComputed += tracks[i].offsetHeight;
+                          }
+                        }
+                        var previousHeight = innerJBrowseElement.height();
+                        innerJBrowseElement.height(Math.max(heightDefault, heightComputed));
+                        WB.scrollToOffsetHeightDiff(innerJBrowseElement, previousHeight);
+                        return heightComputed;
+                    }
+
+                    function progressInit(max_num_retries, num_stabilization_step) {
+                      var previousHeights = [0];
+                      return {
+                        isProgressComplete: function() {
+                          return previousHeights.length &gt; max_num_retries || (
+                            previousHeights.length &gt; num_stabilization_step &amp;&amp;
+                            previousHeights[0] !== 0 &amp;&amp;
+                            previousHeights.slice(1, num_stabilization_step).every(
+                              function(prevHeight) {
+                                return prevHeight === previousHeights[0];
+                              }
+                            )
+                          );
+                        },
+                        updateProgress: function(newHeight) {
+                          previousHeights.unshift(newHeight);
+                        },
+                      };
+                    }
+
+
+                    var progress = progressInit(30, 3);
+                    var interval = setInterval(function() {
+                      if (progress.isProgressComplete()) {
+                        innerJBrowseContainer.removeClass('jbrowse-view-iframe__loading');
+                        clearInterval(interval);
+                      } else {
+                        var newHeight = updateHeight();
+                        progress.updateProgress(newHeight);
+                      }
+                    }, 2000);
+
+                  };
+                })(innerJBrowseContainer, viewUrl);
+
+                reset(heightDefault);
+
+                $jq(viewId + &quot; .jbrowse-view-iframe&quot;).click(function(){
+                  window.location.href = &quot;[% jbrowse_url(taxonomy, padded_coords, bp, 0, tracks); %]&quot;;
+                });
+
+            })();
+            &lt;/script&gt;
+</code></pre>
+<h3 id="span-id22div_overlay22_to_allow_clicking-classmw-headlinediv-overlay-to-allow-clickingspan"><span id=".22Div_overlay.22_to_allow_clicking" class="mw-headline">&ldquo;Div overlay&rdquo; to allow clicking</span></h3>
+<p>The last piece that is required to make this really work well is for the
+page to open a full JBrowse instance when the image is clicked on. In
+this implementation, that is accomplished with the last few lines of the
+script in the previous sections:</p>
+<pre><code> $jq(viewId + &quot; .jbrowse-view-iframe&quot;).click(function(){
+                  window.location.href = &quot;[% jbrowse_url(taxonomy, padded_coords, bp, 0, tracks); %]&quot;;
+                });
+</code></pre>
+<p>Where we are using the JQuery &ldquo;click&rdquo; method to add a click target that
+sits &ldquo;on top of&rdquo; the JBrowse image but isn&rsquo;t subject to the
+pointer-events restriction that we placed in the first section of this
+outline.</p>
+<h2 id="span-idacknowledgments-classmw-headlineacknowledgmentsspan"><span id="Acknowledgments" class="mw-headline">Acknowledgments</span></h2>
+<p>Special thanks to Sibyl Gao at WormBase for taking the prototype I
+created and turning it into something that would actually work well in
+the context of a full website.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AJBrowse" title="Category%253AJBrowse">JBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a
+href="Special%253ABrowse/Reproducing_gbrowse_img_functionality_with_JBrowse"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:14 on 10 April
+2018.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">27,668 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InsectaCentral - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoinsectacentralspan"><span dir="auto">InsectaCentral</span></h1>
+<p><a href="http://insectacentral.org" rel="nofollow"
+title="InsectaCentral"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png" width="93"
+height="75" alt="InsectaCentral" /></a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Overview"><span class="tocnumber">1</span>
+<span class="toctext">Overview</span></a></li>
+<li><a href="#Aim"><span class="tocnumber">2</span>
+<span class="toctext">Aim</span></a></li>
+<li><a href="#Data_Origin"><span class="tocnumber">3</span> <span class="toctext">Data
+Origin</span></a></li>
+<li><a href="#Quality"><span class="tocnumber">4</span>
+<span class="toctext">Quality</span></a></li>
+<li><a href="#Content"><span class="tocnumber">5</span>
+<span class="toctext">Content</span></a>
+<ul>
+<li><a href="#Roadmap"><span class="tocnumber">5.1</span>
+<span class="toctext">Roadmap</span></a></li>
+<li><a href="#Wishlist"><span class="tocnumber">5.2</span>
+<span class="toctext">Wishlist</span></a></li>
+</ul>
+</li>
+<li><a href="#Software"><span class="tocnumber">6</span>
+<span class="toctext">Software</span></a>
+<ul>
+<li><a href="#Roadmap_2"><span class="tocnumber">6.1</span>
+<span class="toctext">Roadmap</span></a></li>
+</ul>
+</li>
+<li><a href="#Wishlist_2"><span class="tocnumber">7</span>
+<span class="toctext">Wishlist</span></a></li>
+<li><a href="#License"><span class="tocnumber">8</span>
+<span class="toctext">License</span></a></li>
+</ul>
+<h1 id="span-idoverview-classmw-headlineoverviewspan"><span id="Overview" class="mw-headline">Overview</span></h1>
+<p>The <a href="http://insectacentral.org" class="external text"
+rel="nofollow">InsectaCentral</a> database is a unique insect
+transcriptome database built by GMOD components. The database schema is
+driven by <a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
+<a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
+class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> and
+the <a href="Drupal" title="Drupal">Drupal</a> modules of
+<a href="GMOD-DBSF" class="mw-redirect" title="GMOD-DBSF">GMOD-DBSF</a>.
+The software developed for this project aim to be species neutral and
+when released anyone can make a <em>Central</em> database.</p>
+<h1 id="span-idaim-classmw-headlineaimspan"><span id="Aim" class="mw-headline">Aim</span></h1>
+<p>InsectaCentral is a central repository of Insect transcriptomes,
+produced using traditional capillary (Sanger) sequencing or 454 Next
+Generation pyrosequencing
+(<a href="NGS" class="mw-redirect" title="NGS">NGS</a>). Our aim is to
+allow the thousands of researchers working on species without a huge
+Genome Consortium and rolling database funding to make use of their own
+and the community&rsquo;s data in a streamlined, efficient and standardized
+fashion. Support for other data types is being implemented.</p>
+<h1 id="span-iddata_origin-classmw-headlinedata-originspan"><span id="Data_Origin" class="mw-headline">Data Origin</span></h1>
+<p>Data are acquired from NCBI&rsquo;s dbEST, Short Read Archive and GenBank. We
+also process private datasets, from our laboratory or collaborators,</p>
+<p>We process them using est2assembly and stored in GMOD&rsquo;s chado database.
+We use this data warehouse to allow you to search using pre-annotated
+information and you can explore each gene/protein object using GBrowse,
+driven by BioPerl&rsquo;s Bio::SeqFeature database.</p>
+<h1 id="span-idquality-classmw-headlinequalityspan"><span id="Quality" class="mw-headline">Quality</span></h1>
+<p>We provide deep annotation using BLAST similarity analysis to many
+databases, Electronic Inference Annotation of GO, EC and KEGG terms and
+also provide InterProScan domains. This process requires tremendous
+computational power, so re-annotation is done sparingly. In addition, as
+there is no dedicated funding, we do not manually curate any of the
+datasets but we would do so should the opportunity arise. Likewise, as
+we do not have a head curator, we cannot implement a Community
+Annotation System even though we would very much like to. Should you be
+interested in supporting us to help you, then a simple email will set
+things in motion.</p>
+<h1 id="span-idcontent-classmw-headlinecontentspan"><span id="Content" class="mw-headline">Content</span></h1>
+<p>The database is being constantly expanded as analysis of data progresses
+and support for new data types is implemented.</p>
+<p>The current public release is: <strong>beta</strong></p>
+<h2 id="span-idroadmap-classmw-headlineroadmapspan"><span id="Roadmap" class="mw-headline">Roadmap</span></h2>
+<ul>
+<li><strong>Alpha</strong> <del>EST datasets funded by/collaborated with RFC lab; EST
+datasets of special interest; in-depth annotation</del></li>
+<li><strong>Beta</strong> <del>Molecular markers; All Insecta transcriptomes;
+documentation</del></li>
+<li><strong>1.0</strong> Implementation of a community curation system;Tutorials;
+Solexa digital transcriptomics; preparation of manuscript</li>
+<li><strong>1.5</strong> Homeless insect genomes + DAS genomes of interest</li>
+<li><strong>2.0</strong> Geographical and population data of Insects in collaboration
+with the Atlas of Living Australia.</li>
+</ul>
+<h2 id="span-idwishlist-classmw-headlinewishlistspan"><span id="Wishlist" class="mw-headline">Wishlist</span></h2>
+<ul>
+<li><a href="GBrowse.1" title="GBrowse">GBrowse</a> 2.x</li>
+<li>Head curator to supervise community gene models</li>
+</ul>
+<h1 id="span-idsoftware-classmw-headlinesoftwarespan"><span id="Software" class="mw-headline">Software</span></h1>
+<p>Once the software is ready for public release it&rsquo;s source will be
+offered for laboratories to create InsectaCentral clones for use with
+any laboratory&rsquo;s private data. The processing of the data is
+accomplished with est2assembly, which is already available.</p>
+<p>The current public release is: <strong>beta</strong></p>
+<h2 id="span-idroadmap_2-classmw-headlineroadmapspan"><span id="Roadmap_2" class="mw-headline">Roadmap</span></h2>
+<ul>
+<li><strong>Alpha</strong> <del>Most of ButterflyBase&rsquo;s user interface; support for
+Sanger/454 EST data, SNP markers, BLASTs, ontology-based annotation;
+support for public + secure (private) data; Chado database engine;
+SeqFeature/Gbrowse driven exploration; iceBLAST interface</del></li>
+<li><strong>Beta</strong> <del>Support for sample library information; extended user
+interface; documentation; Drupalization of an extended BLAST
+interface; curation module</del></li>
+<li><strong>1.0</strong> Support for digital transcriptomics; Walkthrough/tutorials;
+Further Drupal standardization; preparation of manuscript</li>
+<li><strong>2.0</strong> Support for geographical and population data; interface with
+Google Earth/Atlas of Living Australia; support for basic phylogenetic
+information</li>
+</ul>
+<h1 id="span-idwishlist_2-classmw-headlinewishlistspan"><span id="Wishlist_2" class="mw-headline">Wishlist</span></h1>
+<ul>
+<li>Sun Grid Engine support</li>
+</ul>
+<h1 id="span-idlicense-classmw-headlinelicensespan"><span id="License" class="mw-headline">License</span></h1>
+<p>This software is GPLv2+ licensed as part of the Drupal package. It is
+currently supported by <a href="User%253AAlpapan" title="User%253AAlpapan">Alexie
+Papanicolaou</a> while at CSIRO, the
+Australian Commonwealth Scientific and Research Organization
+(<a href="http://www.csiro.au" class="external free"
+rel="nofollow"><a href="http://www.csiro.au">http://www.csiro.au</a></a>).</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ANeeds_Editing" title="Category%253ANeeds Editing">Needs Editing</a></li>
+<li><a href="Category%253ADrupal" title="Category%253ADrupal">Drupal</a></li>
+<li><a href="Category%253AGMOD_Community" title="Category%253AGMOD Community">GMOD Community</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/InsectaCentral" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 01:37 on 3 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">15,959 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

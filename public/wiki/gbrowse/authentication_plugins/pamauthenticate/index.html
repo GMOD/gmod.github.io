@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gbrowse/authentication plugins/PamAuthenticate - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowseauthentication-pluginspamauthenticatespan"><span dir="auto">Gbrowse/authentication plugins/PamAuthenticate</span></h1>
+<p>The PamAuthenticate plugin is one of a very small number of <a href="../../GBrowse_Plugins" title="GBrowse Plugins">GBrowse
+Plugins</a> that can be used to
+gather user credentials and authenticate them. This associates a user
+with a stable username and can be used to:</p>
+<ol>
+<li>Remember a user&rsquo;s preferences, uploads and other settings across
+multiple computers.</li>
+<li>Allow users to share tracks with each other and to make uploaded
+tracks public.</li>
+<li><a href="../../GBrowse_Configuration/Authentication" title="GBrowse Configuration/Authentication">Authorize</a>
+certain users to access tracks and/or datasources.</li>
+</ol>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Setting_Up_Username.2FPassword_Authentication"><span class="tocnumber">2</span> <span class="toctext">Setting Up
+Username/Password
+Authentication</span></a></li>
+<li><a href="#Setting_up_Group_Definitions"><span class="tocnumber">3</span> <span class="toctext">Setting up
+Group Definitions</span></a></li>
+<li><a href="#Customizing_the_Plugin"><span class="tocnumber">4</span> <span class="toctext">Customizing
+the Plugin</span></a></li>
+<li><a href="#Further_Information"><span class="tocnumber">5</span> <span class="toctext">Further
+Information</span></a></li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<p>The PamAuthenticate plugin is installed by default in
+/etc/gbrowse2/plugins, but is not activated. When activated, it uses the
+<a href="http://www.kernel.org/pub/linux/libs/pam/"
+class="external text" rel="nofollow">Pluggable Authentication Module
+(PAM)</a> to authenticate users, and /etc/nsswitch.conf to associate
+users with groups. This allows considerable flexibility in connecting
+GBrowse to enterprise authentication/authorization backends, and allows
+you to use systems ranging in complexity from simple UNIX shadow files
+to complex Kerberos authentication systems.</p>
+<h1 id="span-idsetting_up_username2fpassword_authentication-classmw-headlinesetting-up-usernamepassword-authenticationspan"><span id="Setting_Up_Username.2FPassword_Authentication" class="mw-headline">Setting Up Username/Password Authentication</span></h1>
+<p>To set up the PamAuthenticate system, you need to configure a PAM
+service called &ldquo;gbrowse&rdquo; by creating the file /etc/pam.d/gbrowse. A
+simple /etc/pam.d/gbrowse file that uses local UNIX password/shadow
+databases would look like this:</p>
+<pre><code>auth     requisite   pam_unix.so
+</code></pre>
+<p>an LDAP-based authentication would refer to <em>pam_ldap.so</em> instead.</p>
+<p>Note that if you are going to use the UNIX shadow password system for
+authentication, the web user must belong to the &ldquo;shadow&rdquo; group on many
+systems. You can arrange this as follows:</p>
+<pre><code>usermod -G shadow -a www-data
+</code></pre>
+<p>Change &ldquo;shadow&rdquo; and &ldquo;www-data&rdquo; to the group that can read the
+/etc/shadow file and the Apache user respectively. Note that you will
+typically <strong>not</strong> want to give server login privileges to all
+individuals who have genome browser accounts. You can use PAM to forbid
+actual logins to members of certain groups (see the pam_group.so module
+for more information).</p>
+<h1 id="span-idsetting_up_group_definitions-classmw-headlinesetting-up-group-definitionsspan"><span id="Setting_up_Group_Definitions" class="mw-headline">Setting up Group Definitions</span></h1>
+<p><a href="../../File:Pam_authenticate.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/Pam_authenticate.png" width="426"
+height="330" alt="Pam authenticate.png" /></a></p>
+<p>The PAM authentication plugin uses <strong>/etc/nsswitch.conf</strong> system
+configuration file to map users onto groups for group-based
+authentication. nsswitch.conf, in turn, provides connections to the
+traditional <strong>/etc/group</strong> file, the NIS database, or LDAP databases,
+depending on how it is configured. For example, to fetch user and group
+information from the local filesystem first, and then to look in LDAP,
+nsswitch.conf should have lines that looks like this:</p>
+<pre><code>passwd: compat ldap
+group:  compat ldap
+</code></pre>
+<p>Once these steps are taken, you&rsquo;ll configure GBrowse to use the PAM
+authentication plugin. Edit <strong>/etc/gbrowse2/GBrowse.conf</strong> and add or
+uncomment the following line in the [GENERAL] section:</p>
+<pre><code>authentication plugin = PamAuthenticate
+</code></pre>
+<p>When you reload GBrowse, you will see a simple &ldquo;Login&rdquo; link in the upper
+right hand corner of the screen. Clicking on this link will bring up a
+dialog that prompts you for your login username and password. If all is
+configured correctly, then you&rsquo;ll be able to log in using your Unix
+username and password.</p>
+<h1 id="span-idcustomizing_the_plugin-classmw-headlinecustomizing-the-pluginspan"><span id="Customizing_the_Plugin" class="mw-headline">Customizing the Plugin</span></h1>
+<p>You can customize the messages that appear at the top and bottom of the
+login dialog box by setting configuration options in the
+[PamAuthenticate:plugin] stanza located in GBrowse.conf:</p>
+<pre><code>[PamAuthenticate:plugin]
+login hint = your UNIX account
+login help = Please see your system administrator for help
+if you have lost your  password.
+pam service name = gbrowse
+</code></pre>
+<p>login hint<br>
+This is the message that appears at the top of the dialog box, and is
+intended to be used to tell the user what credentials he is to supply.
+For example, you can change it to read &ldquo;your Acme username and
+Cryptocard password&rdquo;.</p>
+<p>login help<br>
+This is the message that appears at the bottom of the dialog box and is
+intended to provide contact information for the user if he cannot
+remember his password. It can contain HTML links if desired.</p>
+<p>pam service name<br>
+This is the name of the pam.d service for gbrowse. You can place any
+defined service name in this option. For example, to use the PAM
+configuration for the login service, simply change the value to &ldquo;login&rdquo;
+and the same restrictions that are used for local logins (e.g. time of
+day) will be applied to GBrowse.</p>
+<h1 id="span-idfurther_information-classmw-headlinefurther-informationspan"><span id="Further_Information" class="mw-headline">Further Information</span></h1>
+<p>For further information on how this plugin works, and some hints on how
+to create your own customized authentication plugin, please see
+<a href="../../Creating_GBrowse_Plugins" title="Creating GBrowse Plugins">Creating GBrowse
+Plugins</a>.</p>
+<p><a href="../../Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="../../Category%253AGBrowse_Plugins" title="Category%253AGBrowse Plugins">GBrowse
+Plugins</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../../Main_Page"
+style="background-image: url(../../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../../GMOD_Promotion">GMOD
+Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a
+href="../../Special%253ABrowse/Gbrowse-2Fauthentication_plugins-2FPamAuthenticate"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 14:18 on 4 May
+2011.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">15,371 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

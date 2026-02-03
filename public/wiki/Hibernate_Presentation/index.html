@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hibernate Presentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautohibernate-presentationspan"><span dir="auto">Hibernate Presentation</span></h1>
+<p>Chado API via Java &amp; Hibernate, Robert Bruggner, VectorBase.org. This
+Wiki page is an edited version of
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf"
+class="internal" title="HibernateChadoAPI.pdf">Robert&rsquo;s presentation</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Overview"><span class="tocnumber">1</span>
+<span class="toctext">Overview</span></a></li>
+<li><a href="#Background"><span class="tocnumber">2</span>
+<span class="toctext">Background</span></a></li>
+<li><a href="#Hibernate_Background"><span class="tocnumber">3</span> <span class="toctext">Hibernate
+Background</span></a></li>
+<li><a href="#Hibernate_Database_Connectivity"><span class="tocnumber">4</span> <span class="toctext">Hibernate
+Database Connectivity</span></a></li>
+<li><a href="#POJO_and_HBM_Example_.EF.AC.81le_-_CV"><span class="tocnumber">5</span> <span class="toctext">POJO and HBM
+Example ﬁle - CV</span></a></li>
+<li><a href="#HBM_Example_CVTerm"><span class="tocnumber">6</span> <span class="toctext">HBM Example
+CVTerm</span></a></li>
+<li><a href="#Hibernate_Object_Retrieve"><span class="tocnumber">7</span> <span class="toctext">Hibernate
+Object Retrieve</span></a></li>
+<li><a href="#Hibernate_Object_Update"><span class="tocnumber">8</span> <span class="toctext">Hibernate
+Object Update</span></a></li>
+<li><a href="#Hibernate_Save"><span class="tocnumber">9</span> <span class="toctext">Hibernate
+Save</span></a></li>
+<li><a href="#Inheritance"><span class="tocnumber">10</span>
+<span class="toctext">Inheritance</span></a></li>
+<li><a href="#ChadoAPI"><span class="tocnumber">11</span>
+<span class="toctext">ChadoAPI</span></a></li>
+<li><a href="#Problem_1_-_GMOD_Example"><span class="tocnumber">12</span> <span class="toctext">Problem 1 -
+GMOD Example</span></a></li>
+<li><a href="#Problem_2_-_GMOD_Example"><span class="tocnumber">13</span> <span class="toctext">Problem 2 -
+GMOD Example</span></a></li>
+<li><a href="#Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete"><span class="tocnumber">14</span> <span class="toctext">Problems 3,
+4, &amp; 5 - GMOD Update &amp;
+Delete</span></a></li>
+<li><a href="#What_Hibernate_Does_Well"><span class="tocnumber">15</span> <span class="toctext">What
+Hibernate Does Well</span></a></li>
+<li><a href="#Acknowledgements"><span class="tocnumber">16</span>
+<span class="toctext">Acknowledgements</span></a></li>
+</ul>
+<h5 id="span-idoverview-classmw-headlineoverviewspan"><span id="Overview" class="mw-headline">Overview</span></h5>
+<ul>
+<li>Background</li>
+<li>Quick Hibernate Overview</li>
+<li>Hibernate Connectivity and O/R Mapping Example</li>
+<li>GMOD Demo</li>
+</ul>
+<p>Also see <a href="Comparison_of_XORT_and_Hibernate_for_Chado_reporting" title="Comparison of XORT and Hibernate for Chado reporting">Comparison of XORT and Hibernate for Chado
+Reporting</a>.</p>
+<h5 id="span-idbackground-classmw-headlinebackgroundspan"><span id="Background" class="mw-headline">Background</span></h5>
+<ul>
+<li>VectorBase
+<ul>
+<li>A bioinformatic resource center for invertebrate vectors of human
+pathogens</li>
+</ul>
+</li>
+<li>Responsible for storage and display of multiple organisms’ genomes
+<ul>
+<li>Anopheles gambiae, Aedes aegypti, Ixodes scapularis, Culex pipiens
+and so on&hellip;.</li>
+</ul>
+</li>
+<li>Want to store data for many organisms- Chado a natural choice</li>
+<li>Ensembl Genome Browser already used for <em>A. gambiae</em>
+<ul>
+<li>Wrote Ensembl API Database adaptor for Chado&hellip; Not maintainable.</li>
+</ul>
+</li>
+<li>Use Both Databases
+<ul>
+<li>Transfer genomic data from Ensembl to Chado</li>
+<li>Search Engine and Indexer using Lucene</li>
+<li>Run DAS</li>
+<li>Export data via ChadoXML and GFF3</li>
+</ul>
+</li>
+<li>Need API for Database I/O</li>
+</ul>
+<h5 id="span-idhibernate_background-classmw-headlinehibernate-backgroundspan"><span id="Hibernate_Background" class="mw-headline">Hibernate Background</span></h5>
+<ul>
+<li>They say: “A powerful, high performance object/relational persistence
+and query service.”</li>
+<li>Automates the persistence of plain old Java objects (POJO)
+<ul>
+<li>User maps their POJO properties to database tables via XML (HBM
+File).</li>
+<li>There are Hibernate tools that generate HBMs
+<ul>
+<li>Configurable in the sense that one can create get &amp; set tables
+where the methods map one-to-one to fields.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Persist a speciﬁc object by storing it the database.</li>
+<li>Intelligent Database I/O
+<ul>
+<li>Smart detection of <em>Dirty Properties</em> when performing Save / Update
+/ Delete.</li>
+<li>Cascadable Save / Update / Delete for complex objects.</li>
+</ul>
+</li>
+<li>Everything&rsquo;s done within the scope of a transaction.</li>
+</ul>
+<h5 id="span-idhibernate_database_connectivity-classmw-headlinehibernate-database-connectivityspan"><span id="Hibernate_Database_Connectivity" class="mw-headline">Hibernate Database Connectivity</span></h5>
+<ul>
+<li>Conﬁgure Hibernate in hibernate.cfg.xml</li>
+<li>Deﬁne a Data Source
+<ul>
+<li>We use a simple, single JDBC connection Chado</li>
+<li>Can be conﬁgured to use a connection pool or data source accessible
+by the Java Naming and Directory Interface (JNDI).</li>
+<li>Deﬁne a connection “dialect”</li>
+<li>org.hibernate.dialect.PostgreSQLDialect</li>
+</ul>
+</li>
+<li>Describe the relationship between Java objects and database tables
+<ul>
+<li>Use XML to describe where to store POJO property data in the
+database</li>
+</ul>
+</li>
+<li>Create a new Hibernate Session based on the conﬁguration</li>
+<li>Begin a transaction to start performing work</li>
+</ul>
+<h5 id="span-idpojo_and_hbm_example_efac81le_-_cv-classmw-headlinepojo-and-hbm-example-ﬁle---cvspan"><span id="POJO_and_HBM_Example_.EF.AC.81le_-_CV" class="mw-headline">POJO and HBM Example ﬁle - CV</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> public class CV {
+ 
+    private int cv_id
+    private String name;
+    private String definition;
+ 
+    public property gettersandsetters() {
+            ....
+    }
+ 
+    public boolean equals(CV comparaCV) {
+         ....
+    }
+    public int hashCode(){
+         ...
+    }
+ }
+</code></pre><pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;hibernate-mapping&gt;
+ 
+    &lt;class name=&#34;org.vectorbase.chadoAPI.chadoObjects.CV&#34; table=&#34;cv&#34;&gt;
+ 
+    &lt;id name=&#34;cv_id&#34; column=&#34;cv_id&#34; unsaved-value=&#34;undefined&#34;&gt;
+ 
+    &lt;generator class=&#34;sequence&#34;&gt;
+ 
+    &lt;param name=&#34;sequence&#34;&gt;cv_cv_id_seq&lt;/param&gt;
+ 
+    &lt;/generator&gt;
+ 
+    &lt;/id&gt;  
+ 
+    &lt;property name=&#34;name&#34; column=”name” type=&#34;java.lang.String” not-null=&#34;true&#34;/&gt;
+ 
+    &lt;property name=&#34;definition&#34; column=”definition” type=&#34;java.lang.String”/&gt;
+ 
+    &lt;/class&gt;
+ &lt;/hibernate-mapping&gt;
+</code></pre><h5 id="span-idhbm_example_cvterm-classmw-headlinehbm-example-cvtermspan"><span id="HBM_Example_CVTerm" class="mw-headline">HBM Example CVTerm</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> public class CVTerm {
+ 
+    private int cvterm_id;
+ 
+    private CV cv;
+ 
+    private String name;
+ 
+    private String definition;
+ 
+    private DBXref dbxref;
+ 
+    private int is_obsolete;
+ 
+    private int is_relationshiptype;
+ 
+   .....
+ 
+}
+</code></pre><pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;hibernate-mapping&gt;
+ 
+    &lt;class name=&#34;org.vectorbase.chadoAPI.chadoObjects.CVTerm&#34; table=&#34;cvterm&#34;&gt;
+ 
+    &lt;id name=&#34;cvterm_id&#34; column=&#34;cvterm_id&#34; unsaved-value=&#34;undefined&#34;&gt;
+ 
+    &lt;generator class=&#34;sequence&#34;&gt;
+ 
+    &lt;param name=&#34;sequence&#34;&gt;cvterm_cvterm_id_seq&lt;/param&gt;
+ 
+    &lt;/generator&gt;
+ 
+    &lt;/id&gt;
+ 
+    &lt;many-to-one name=&#34;cv&#34; class=&#34;org.vectorbase.chadoAPI.chadoObjects.CV&#34; column=&#34;cv_id&#34; 
+            not-null=&#34;true&#34; cascade=&#34;save-update&#34;/&gt;
+ 
+    &lt;property name=&#34;name&#34; not-null=&#34;true&#34; type=&#34;java.lang.String&#34;/&gt;
+ 
+    &lt;property name=&#34;definition&#34;/&gt;
+ 
+    &lt;one-to-one name=&#34;dbxref&#34; class=&#34;org.vectorbase.chadoAPI.chadoObjects.DBXref&#34; cascade=&#34;all&#34;/&gt;
+ 
+    &lt;property name=&#34;is_obsolete&#34;/&gt;
+ 
+    &lt;property name=&#34;is_relationshiptype&#34;/&gt;
+ 
+    &lt;/class&gt;
+  &lt;/hibernate-mapping&gt;
+</code></pre><h5 id="span-idhibernate_object_retrieve-classmw-headlinehibernate-object-retrievespan"><span id="Hibernate_Object_Retrieve" class="mw-headline">Hibernate Object Retrieve</span></h5>
+<p>One can use Java, Hibernate Query Language, or SQL, this example uses
+HQL</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> import org.hibernate.Session;
+ import org.vectorbase.chadoAPI.CVTerm;
+ import org.vectorbase.chadoAPI.CV;
+ 
+ // Load the configuration from hibernate.cfg.xml
+ 
+ // Build a session factory first (not shown)
+ 
+ // Get the session based on the configuration and begin transaction
+ Session session = HibernateSessionFactory.getCurrentSession();
+ session.beginTransaction();
+ 
+ // Load a CVTerm by its ID
+ CVTerm cvt = (CVTerm) session.get(CVTerm.class,1);
+ 
+ // Load a CVTerm using HQL
+ CVTerm cvt = session.createQuery(“from CVTerm where name=?”).setString(0,”name”).uniqueResult();
+ 
+ // Print out the name of the cvterm
+ System.out.println(cvt.getName());
+ 
+ // Get the cv that the cvterm is associated with
+ // Hibernate doesn’t return the cv_id - it returns a CV Object.
+ CV cv = cvt.getCv();
+ 
+ // Print out the cv’s name
+ System.out.println(cv.getName());
+</code></pre><h5 id="span-idhibernate_object_update-classmw-headlinehibernate-object-updatespan"><span id="Hibernate_Object_Update" class="mw-headline">Hibernate Object Update</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> import org.hibernate.Session;
+ import org.vectorbase.chadoAPI.CVTerm;
+ 
+ // Load the configuration from hibernate.cfg.xml
+ 
+ // Build a session factory first (not shown)
+ 
+ // Get the session based on the configuration and begin transaction
+ Session session = HibernateSessionFactory.getCurrentSession();
+ session.beginTransaction();
+ 
+ // Load a CVTerm by its ID
+ CVTerm cvt = (CVTerm) session.get(CVTerm.class,1);
+ 
+ // Change cvt’s name
+ cvt.setName(“New CVTerm name”);
+ 
+ // Save!
+ // Generated SQL updates “Dirty” properties (name, in this case)
+ session.save(cvt);
+ 
+ // Commit data to database
+ session.commit();
+</code></pre><h5 id="span-idhibernate_save-classmw-headlinehibernate-savespan"><span id="Hibernate_Save" class="mw-headline">Hibernate Save</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> import org.hibernate.Session;
+ import org.vectorbase.chadoAPI.CVTerm;
+ import org.vectorbase.chadoAPI.CV;
+ 
+ // Load the configuration from hibernate.cfg.xml
+ // Build a session factory first and get begin transaction (not shown)
+ 
+ // Make a new CV
+ CV new_cv = new CV();
+ new_cv.setName(“New CV”);
+ new_cv.setDefinition(“New CV Def”);
+ 
+ // Make a new cvterm for that cv
+ CVTerm new_cvterm = new CVTerm();
+ new_cvterm.setName(“New CVTerm Name”);
+ // ..... save dbxref etc......
+ 
+ // Add that CVTerm to our new CV
+ new_cv.addCVTerm(new_cvterm);
+ 
+ // Save the new data...
+ // Hibernate recognizes that it has to first save new_cv, then save new_cvterm.
+ session.save(new_cvterm);
+ 
+ session.commit();
+ 
+ // You can see the new id’s assigned by the database
+ System.out.println(new_cv.getCv_id());
+ System.out.println(new_cvterm.getCvterm_id());
+</code></pre><h5 id="span-idinheritance-classmw-headlineinheritancespan"><span id="Inheritance" class="mw-headline">Inheritance</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;hibernate-mapping&gt;
+ 
+     &lt;class name=&#34;org.vectorbase.chadoAPI.chadoObjects.Feature&#34; table=&#34;feature&#34; discriminator-
+  value=&#34;not null&#34;&gt;
+ 
+     &lt;id name=&#34;feature_id&#34; column=&#34;feature_id&#34; unsaved-value=&#34;undefined&#34;&gt;
+ 
+    &lt;generator class=&#34;sequence&#34;&gt;
+ 
+    &lt;param name=&#34;sequence&#34;&gt;feature_feature_id_seq&lt;/param&gt;
+ 
+    &lt;/generator&gt;
+ 
+     &lt;/id&gt; 
+ 
+      &lt;discriminator column=&#34;type_id&#34; type=&#34;integer&#34; insert=&#34;false&#34;/&gt;
+ 
+     &lt;many-to-one name=&#34;dbxref&#34; class=&#34;org.vectorbase.chadoAPI.chadoObjects.DBXref&#34; 
+                  column=&#34;dbxref_id&#34; cascade=&#34;all&#34;/&gt;
+ 
+     &lt;many-to-one name=&#34;organism&#34; class=&#34;org.vectorbase.chadoAPI.chadoObjects.Organism&#34; 
+                  column=&#34;organism_id&#34; not-null=&#34;true&#34; cascade=&#34;save-update&#34;/&gt;
+ 
+     &lt;property name=&#34;name&#34;/&gt;
+                  .....
+ 
+ &lt;hibernate-mapping&gt;   
+ 
+     &lt;subclass name=&#34;org.vectorbase.chadoAPI.chadoFeatures.Gene&#34; 
+          extends=&#34;org.vectorbase.chadoAPI.chadoObjects.Feature&#34; discriminator-value=&#34;767&#34;&gt;
+ 
+     &lt;/subclass&gt;
+ &lt;/hibernate-mapping&gt;
+</code></pre><p>Write custom methods for speciﬁc sub-classes</p>
+<h5 id="span-idchadoapi-classmw-headlinechadoapispan"><span id="ChadoAPI" class="mw-headline">ChadoAPI</span></h5>
+<ul>
+<li>POJO Mappings
+<ul>
+<li>CV, CVTerm, DB, DBXref, Feature, FeatureCVTerm, FeatureDBXref,
+FeatureLoc, FeatureProp, FeatureRelationship, FeatureSynonym,
+Organism, Pub, Synonym</li>
+</ul>
+</li>
+<li>Extended Features
+<ul>
+<li>Chromosome, Gene, Transcript, Exon, Protein</li>
+</ul>
+</li>
+<li>Constants
+<ul>
+<li>CVTerms, FeatureFeatureRelationships, Ontologies</li>
+</ul>
+</li>
+<li>Special
+<ul>
+<li>ChadoAdapter</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idproblem_1_-_gmod_example-classmw-headlineproblem-1---gmod-examplespan"><span id="Problem_1_-_GMOD_Example" class="mw-headline">Problem 1 - GMOD Example</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> // Set up our session and begin transaction
+ Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+ session.beginTransaction();
+ 
+ // Make a chado adpator and load up some utility objects
+ ChadoAdaptor ca = new ChadoAdaptor();
+ Chromosome c = ca.fetchChromosomeByUniqueName(&#34;fake_chromosome&#34;);
+ Pub null_pub = ca.fetchPubByPubID(1);
+ Organism agambiae = ca.fetchOrganismByScientificName(&#34;Anopheles&#34;,&#34;gambiae&#34;);
+ 
+ // Begin GMOD Demo Code
+ 
+ // Make our new gene;
+ Gene xfile = new Gene();
+ xfile.setOrganism(agambiae);
+ xfile.setUniquename(&#34;xfile&#34;);
+ xfile.setDescription(&#34;A test gene for GMOD meeting&#34;);
+ 
+ /* Set the location of our gene. No need to set coordinates because they&#39;ll be updated
+   * based on the exon boundaries. 
+   */
+ FeatureLoc xfile_loc = new FeatureLoc();
+ xfile_loc.setSrcfeature(c);
+ xfile_loc.setStrand(1);
+ xfile.setFeatureLoc(xfile_loc);
+ 
+ // Add synonyms to xfile
+ xfile.createNewFeatureSynonym(&#34;mulder&#34;, null_pub, CVTerms.EXACT_SYNONYM);
+ xfile.createNewFeatureSynonym(&#34;scully&#34;, null_pub, CVTerms.EXACT_SYNONYM);
+</code></pre><h5 id="span-idproblem_2_-_gmod_example-classmw-headlineproblem-2---gmod-examplespan"><span id="Problem_2_-_GMOD_Example" class="mw-headline">Problem 2 - GMOD Example</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> // Create a new transcript for our gene.
+ Transcript t = xfile.createGeneTranscript(&#34;xfile-RA&#34;);
+ 
+ // Create some exons for that transcript.
+ t.createTranscriptExon(&#34;xfile:1&#34;, 13691, 13767);
+ t.createTranscriptExon(&#34;xfile:2&#34;, 14687, 14720);
+ 
+ // Save our new gene
+ session.save(xfile);
+ System.out.println(&#34;xfile feature_id is &#34; + xfile.getFeature_id());
+ 
+ // Fetch our saved gene from the database
+ Gene xfile_r = ca.fetchGeneByUniqueName(&#34;xfile&#34;);
+ System.out.println(&#34;symbol: &#34; + xfile_r.getUniquename());
+ System.out.print(&#34;synonyms: &#34;);
+ for (FeatureSynonym fs : xfile_r.getFeatureSynonyms()){
+ 
+         System.out.print(fs.getSynonym().getName() + &#34; &#34;);
+ }
+ 
+ System.out.println(&#34;description: &#34; + xfile_r.getDescription());
+ System.out.println(&#34;type: &#34; + xfile_r.getType().getName());
+ 
+ for (Transcript tx : xfile_r.fetchAllTranscripts()){
+     for (Exon e : tx.fetchAllExons()){
+          System.out.println(e.getUniquename() + &#34; Start:\t&#34; + e.getFeatureLoc().getFmin());
+          System.out.println(e.getUniquename() + &#34; End:\t&#34; + e.getFeatureLoc().getFmax());
+          System.out.println(&#34;\tSrcFeatureID: &#34; + e.getFeatureLoc().getSrcfeature().getFeature_id());
+     }
+     System.out.println(&#34;&gt;&#34; + tx.getUniquename());
+     System.out.println(tx.generateTranscriptSequenceFromExons().toUpperCase());
+ }
+</code></pre><h5 id="span-idproblems_32c_42c_26_5_-_gmod_update_26_delete-classmw-headlineproblems-3-4--5---gmod-update--deletespan"><span id="Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete" class="mw-headline">Problems 3, 4, &amp; 5 - GMOD Update &amp; Delete</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> // Lets update our name...
+ xfile_r.setUniquename(&#34;x-file&#34;);
+ 
+ session.save(xfile_r);
+ 
+ // Not part of the ChadoAdaptor utility object, but a good example of HQL
+ List&lt;Gene&gt; genes = (List&lt;Gene&gt;)session.createQuery(&#34;from Gene where uniquename like ?&#34;).setString(0,”x-%”).list();
+ 
+ for (Gene g : genes){
+ 
+    System.out.println(g.getFeature_id() + 
+                          &#34;\t&#34; + g.getUniquename() + 
+                          &#34;\t&#34; + g.getOrganism().getGenus() +
+                          &#34; &#34; + g.getOrganism().getSpecies());
+ }
+ 
+ // Deleting... hmm...
+ Gene delete_me = ca.fetchGeneByUniqueName(&#34;x-ray&#34;);
+ session.delete(delete_me);
+ 
+ // All Finished
+ session.getTransaction().commit();
+</code></pre><h5 id="span-idwhat_hibernate_does_well-classmw-headlinewhat-hibernate-does-wellspan"><span id="What_Hibernate_Does_Well" class="mw-headline">What Hibernate Does Well</span></h5>
+<ul>
+<li>Hibernate can be configured to perform specialized functions
+<ul>
+<li>For example, it has its own notion of a cascade</li>
+</ul>
+</li>
+<li>Flexible with respect to language
+<ul>
+<li>Java, Hibernate Query Language, or SQL</li>
+</ul>
+</li>
+<li>Any JDBC driver</li>
+</ul>
+<h5 id="span-idacknowledgements-classmw-headlineacknowledgementsspan"><span id="Acknowledgements" class="mw-headline">Acknowledgements</span></h5>
+<ul>
+<li>VectorBase People
+<ul>
+<li>Frank Collins, EO Stinson, Ryan Butler</li>
+</ul>
+</li>
+<li>GMOD</li>
+<li>NIAID</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AMiddleware" title="Category%253AMiddleware">Middleware</a></li>
+<li><a href="Category%253AJava" title="Category%253AJava">Java</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Hibernate_Presentation" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:16 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">25,451 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

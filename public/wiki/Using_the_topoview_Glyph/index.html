@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using the topoview Glyph - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautousing-the-topoview-glyphspan"><span dir="auto">Using the topoview Glyph</span></h1>
+<p>This glyph is derived from the FlyBase
+<a href="http://flybase.org/static_pages/docs/software/topoview.html"
+class="external text" rel="nofollow">fb_shmiggle Glyph</a>, 2009-2010
+Victor Strelets, FlyBase.org</p>
+<p>It is maintained by
+<a href="mailto:sheldon.mckay@gmail.com" class="external text"
+rel="nofollow">Sheldon McKay &lt;sheldon.mckay@gmail.com&gt;</a></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/82/Topoview_sample.png/550px-Topoview_sample.png"
+class="thumbborder"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 2x"
+width="550" height="194" alt="Sample topoview track" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/550px-Topoview_sample2.png"
+class="thumbborder"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/825px-Topoview_sample2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/98/Topoview_sample2.png 2x"
+width="550" height="163" alt="Sample topoview track" /></p>
+<p>The TopoView glyph was developed for fast 3D-like demonstration of
+RNA-seq data consisting of multiple individual subsets. The main
+purposes were to compact presentation as much as possible (in one
+reasonably sized track) and to allow easy visual detection of
+coordinated behavior of the expression profiles of different subsets.
+See the note below about normalizing the expression profiles across the
+whole experiment.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Demonstration"><span class="tocnumber">1</span>
+<span class="toctext">Demonstration</span></a></li>
+<li><a href="#Data_format"><span class="tocnumber">2</span> <span class="toctext">Data
+format</span></a></li>
+<li><a href="#Accessory_scripts"><span class="tocnumber">3</span> <span class="toctext">Accessory
+scripts</span></a>
+<ul>
+<li><a href="#Converting_BAM_alignment_files_to_WIG_coverage_files"><span class="tocnumber">3.1</span> <span class="toctext">Converting
+BAM alignment files to WIG coverage
+files</span></a>
+<ul>
+<li><a href="#NOTE:_Normalization"><span class="tocnumber">3.1.1</span> <span class="toctext">NOTE:
+Normalization</span></a></li>
+</ul>
+</li>
+<li><a href="#Converting_coverage_WIG_to_indexed_data_for_topoview"><span class="tocnumber">3.2</span> <span class="toctext">Converting
+coverage WIG to indexed data for
+topoview</span></a>
+<ul>
+<li><a href="#Log_transformations"><span class="tocnumber">3.2.1</span> <span class="toctext">Log
+transformations</span></a></li>
+<li><a href="#Subsets_.28subplots.29"><span class="tocnumber">3.2.2</span>
+<span class="toctext">Subsets
+(subplots)</span></a></li>
+<li><a href="#Output_directories"><span class="tocnumber">3.2.3</span> <span class="toctext">Output
+directories</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Configuration"><span class="tocnumber">4</span>
+<span class="toctext">Configuration</span></a>
+<ul>
+<li><a href="#Example_config_stanza"><span class="tocnumber">4.1</span> <span class="toctext">Example
+config stanza</span></a></li>
+<li><a href="#Options"><span class="tocnumber">4.2</span>
+<span class="toctext">Options</span></a>
+<ul>
+<li><a href="#Subsets"><span class="tocnumber">4.2.1</span>
+<span class="toctext">Subsets</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Installation_Troubleshooting"><span class="tocnumber">5</span> <span class="toctext">Installation
+Troubleshooting</span></a>
+<ul>
+<li><a href="#Track_has_a_red_error_message"><span class="tocnumber">5.1</span> <span class="toctext">Track has
+a red error message</span></a></li>
+<li><a href="#Track_is_present_but_has_no_data"><span class="tocnumber">5.2</span> <span class="toctext">Track is
+present but has no data</span></a></li>
+<li><a href="#Some_other_kind_of_error"><span class="tocnumber">5.3</span> <span class="toctext">Some other
+kind of error</span></a></li>
+<li><a href="#Ask_for_help"><span class="tocnumber">5.4</span> <span class="toctext">Ask for
+help</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-iddemonstration-classmw-headlinedemonstrationspan"><span id="Demonstration" class="mw-headline">Demonstration</span></h2>
+<p>Setting up this Glyph can be complicated. If you have access to Amazon
+Web Services, there is an AMI with a demonstration instance of Gbrowse
+using the topoview track for RNASeq data at:</p>
+<p>GBrowse 2.56 with topoview track - ami-c2d677bf</p>
+<h2 id="span-iddata_format-classmw-headlinedata-formatspan"><span id="Data_format" class="mw-headline">Data format</span></h2>
+<p>Comparing performance (retrieval of several Kbp of data profiles for
+several subsets of some RNA-seq experiment) of wiggle binary method and
+of several possible alternatives, it was discovered that one of the
+approaches remarkably outperforms wiggle bin method (although it
+requires several times more space for formatted data storage). Optimal
+storage/retrieval method stores all experiment data (all subsets of the
+experiment) in one text file, where structure of the file in fact is one
+of the most simple wiggle (coverage files) formats with the addition of
+some positioning data (two-column format, without runlength
+specification, without omission of zero values). This is the only format
+which glyph is able to handle.</p>
+<pre><code># subset =BS107_all_unique chromosome =2LHet                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+-200000 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+0       0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+19955   1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+19959   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+19967   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+19972   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+19977   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+20027   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+20031   2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+20035   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+20043   1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+</code></pre>
+<h2 id="span-idaccessory_scripts-classmw-headlineaccessory-scriptsspan"><span id="Accessory_scripts" class="mw-headline">Accessory scripts</span></h2>
+<p>The Bio::Graphics package has two scripts useful for processing BAM
+alignment data from programs such as tophat for use with this glyph.</p>
+<h3 id="span-idconverting_bam_alignment_files_to_wig_coverage_files-classmw-headlineconverting-bam-alignment-files-to-wig-coverage-filesspan"><span id="Converting_BAM_alignment_files_to_WIG_coverage_files" class="mw-headline">Converting BAM alignment files to WIG coverage files</span></h3>
+<p>bam_coverage_windows.pl accepts a sorted bam file as input and will
+calculate the average read coverage for a user-specified window size
+(default 25). The windows are non-overlapping. The output format is
+WIG/BED4, which is the format used by the coverage_to_topoview.pl
+script.</p>
+<pre><code>Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c &gt; bamfile.wig.gz                                                                                                                                                                                                                                                                                                                                                                                                
+    -b name of bam file to read REQUIRED                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    -w window size (default 25)                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    -n normalized read number -- if you will be comparing multiple bam files                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                 select the read number to normalize against.                                                                                                                                                                                                                                                                                                                                                                                                                
+                                 All counts will be adjusted by a factor of:                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                 actual read count/normalized read count                                                                                                                                                                                                                                                                                                                                                                                                                          
+</code></pre>
+<p>The output of this script looks like (note the
+<a href="http://genomewiki.ucsc.edu/index.php/Coordinate_Transforms"
+class="external text" rel="nofollow">zero-based, half-open</a>
+coordinates):</p>
+<pre><code>track type=wiggle_0 name=&quot;root-R1&quot; description=&quot;read coverage for bam/root-R1.bam (window size 25)&quot;
+1   3625    3650    0.7617701464
+1   3650    3675    9.3417075848
+1   3675    3700    18.5230425072
+1   3700    3725    26.5817687928
+1   3725    3750    35.682917384
+1   3750    3775    40.494097256
+1   3775    3800    45.0246249688
+1   3800    3825    52.2413947768
+</code></pre>
+<h4 id="span-idnote_normalization-classmw-headlinenote-normalizationspan"><span id="NOTE:_Normalization" class="mw-headline">NOTE: Normalization</span></h4>
+<p>If you are comparing BAM files with different total read counts, you
+need to normalize the read counts across BAM file with the <em><strong>-n</strong></em>
+option. The number used is arbitrary. Try using a number near the
+average read count for all BAM files being analyzed in the experiment.</p>
+<h3 id="span-idconverting_coverage_wig_to_indexed_data_for_topoview-classmw-headlineconverting-coverage-wig-to-indexed-data-for-topoviewspan"><span id="Converting_coverage_WIG_to_indexed_data_for_topoview" class="mw-headline">Converting coverage WIG to indexed data for topoview</span></h3>
+<p>coverage_to_topoview.pl converts a list of coverage files (WIG/BED4) to
+the indexed format used by this glyph. It specifically expects the BED4
+format produced by the bam_coverage_windows.pl script</p>
+<pre><code>Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz                                                                                                                                                                                                                                                                                                                                                                                                      
+    -o output directory (default 'topoview')                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    -l use log2 for read counts (recommended)                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    -h this help message                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+</code></pre>
+<h4 id="span-idlog_transformations-classmw-headlinelog-transformationsspan"><span id="Log_transformations" class="mw-headline">Log transformations</span></h4>
+<p>The dynamic range in read coverage can be very high and log2 conversion
+dramatically changes perception of expression profiles and helps to
+illuminate coordinated behavior of different subsets. Using
+log2-transformed read counts in addition to raw read counts is
+recommended.</p>
+<h4 id="span-idsubsets_28subplots29-classmw-headlinesubsets-subplotsspan"><span id="Subsets_.28subplots.29" class="mw-headline">Subsets (subplots)</span></h4>
+<p>Each WIG file corresponds to a single BAM file and will be a subset in
+the experiment. The base name of the file will be used as the subset
+name. For example, the file <em><strong>shoots-R1.wig.gz</strong></em> will generate a
+subset named <em><strong>shoots-R1</strong></em> in the topoview track.</p>
+<h4 id="span-idoutput_directories-classmw-headlineoutput-directoriesspan"><span id="Output_directories" class="mw-headline">Output directories</span></h4>
+<p>If you do not specify an output directory name, the default name
+&rsquo;topoview&rsquo; will be used. Any existing contents will be overwritten. For
+example, if you are making two tracks, one using raw counts and the
+other using log2 transformed counts:</p>
+<pre><code>coverage_to_topoview.pl -o raw file1.wig.gz file2.wig.gz
+
+coverage_to_topoview.pl -o log2 -l  file1.wig.gz file2.wig.gz
+</code></pre>
+<p>..will yield:</p>
+<pre><code>├── log2
+│   ├── data.cat
+│   └── index.bdbhash
+└── raw
+    ├── data.cat
+    └── index.bdbhash
+</code></pre>
+<p>The absolute path of these directories will be used in the <em><strong>datadir</strong></em>
+option below.</p>
+<h2 id="span-idconfiguration-classmw-headlineconfigurationspan"><span id="Configuration" class="mw-headline">Configuration</span></h2>
+<h3 id="span-idexample_config_stanza-classmw-headlineexample-config-stanzaspan"><span id="Example_config_stanza" class="mw-headline">Example config stanza</span></h3>
+<pre><code>[TOPOVIEWLOG2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+feature       = region                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+glyph         = topoview                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+autoscale     = local                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+height        = 200                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+datadir       = /home/ubuntu/data/bam/log2                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+subset order  = SRR1810778.25  FF9966                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                SRR1810779.25  FF6633                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                SRR1810780.25  FF0000                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                SRR1810781.25  00CC66                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                SRR1810782.25  009933                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                SRR1810783.25  006600                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+key           = TopHat: Normalized Read Coverage (log2)                                                                                                                                                                                                                                                                                                                                                                                                                                      
+show max      = 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+x_step        = 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+y_step        = 8                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+fill opacity  = 0.8
+edge color    = black                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+</code></pre>
+<h3 id="span-idoptions-classmw-headlineoptionsspan"><span id="Options" class="mw-headline">Options</span></h3>
+<p>Glyph-specific options</p>
+<ul>
+<li><strong>feature:</strong> The full-length feature for the track. This would usually
+be the feature type you configured for your chromosomes or scaffolds.
+You don&rsquo;t need to add more GFF data for this track</li>
+<li><strong>database:</strong> The same database as you used for the chromosomes</li>
+<li><strong>autoscale:</strong> options are &rsquo;local&rsquo; and &lsquo;global&rsquo;. local scales to the
+on-screen max value, global scales to the global max</li>
+<li><strong>datadir:</strong> location of the indexed coverage data (absolute path)</li>
+<li><strong>show max:</strong> show an extra subset corresponding to the maximum
+coverage across all subsets</li>
+<li><strong>x_step:</strong> the horizontal offset (pixels) of each plotted subset (can
+not be zero)</li>
+<li><strong>y_step:</strong> the vertical offset (pixels) of each plotted subset (can
+not be zero)</li>
+<li><strong>fill opacity:</strong> the degree of transparency of each plotted subset.
+Translucency aids in the comparison.</li>
+<li><strong>edge color:</strong> the outline color for the plots (default: charcoal
+gray)</li>
+<li><strong>subset order</strong> the order and color of each subset (subplot) in the
+graph (see below)</li>
+</ul>
+<h4 id="span-idsubsets-classmw-headlinesubsetsspan"><span id="Subsets" class="mw-headline">Subsets</span></h4>
+<p>Setting the &lsquo;subset order&rsquo; is mandatory. It specifies the subplots and
+the order in which they will be displayed.</p>
+<p>There are three ways to represent the subsets:</p>
+<p>Ordered subsets with no color specified. Random colors will be assigned.
+Hope you are feeling lucky.</p>
+<pre><code>subset order  = SRR1810778.25                                                                                                                                                                                                                 
+                ...                                                                                                                                                                                                                           
+</code></pre>
+<p>Ordered subsets with color specified (use either web colors or hex
+colors with the &lsquo;#&rsquo; omitted)</p>
+<pre><code>subset order  = SRR1810778.25  red                                                                                                                                                                                                        
+                SRR1810779.25  FF6633                                                                                                                                                                                                        
+                ...                                                                                                                                                                                                                           
+</code></pre>
+<p>Ordered subsets with color and opacity set. Not that the global &lsquo;fill
+opacity&rsquo; option affects all subsets. Specifying individual opacity is
+optional.</p>
+<pre><code>subset order  = SRR1810778.25  FF9966 0.8                                                                                                                                                                                                     
+                SRR1810779.25  FF6633 0.7                                                                                                                                                                                                     
+                ...                                                                                                                                                                                                                           
+</code></pre>
+<h2 id="span-idinstallation_troubleshooting-classmw-headlineinstallation-troubleshootingspan"><span id="Installation_Troubleshooting" class="mw-headline">Installation Troubleshooting</span></h2>
+<h3 id="span-idtrack_has_a_red_error_message-classmw-headlinetrack-has-a-red-error-messagespan"><span id="Track_has_a_red_error_message" class="mw-headline">Track has a red error message</span></h3>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/Bad_topoview.png" class="thumbborder"
+width="895" height="261" alt="Bad topoview.png" /></p>
+<p>The glyph uses the Perl interface to BerkeleyDB. If you see a red error
+message in where the track should be, this might be why. In an
+Ubuntu/debian system, try:</p>
+<pre><code>sudo apt-get install libdb5.3 libdb5.3-dev libberkeleydb-perl
+</code></pre>
+<p>You may need to use apt-cache search to find other version of the above
+Debian packages.</p>
+<ul>
+<li>For redhat based systems, such as centOS, use yum to search for
+equivalent packages.</li>
+</ul>
+<h3 id="span-idtrack_is_present_but_has_no_data-classmw-headlinetrack-is-present-but-has-no-dataspan"><span id="Track_is_present_but_has_no_data" class="mw-headline">Track is present but has no data</span></h3>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Blank_topoview.png" class="thumbborder"
+width="897" height="358" alt="Blank topoview.png" /></p>
+<p>Make sure the &ldquo;feature=&rdquo; option is set to the same kind of kind of
+feature as the chromosomes in your scaffolds database</p>
+<p>For example: If you were using the chromosome GFF below, you would set
+your topoview feature to &lsquo;region&rsquo;:</p>
+<pre><code>##gff-version 3
+
+V   ce10    region  1   20924149    .   .   .   ID=V;Name=V
+X   ce10    region  1   17718866    .   .   .   ID=X;Name=X
+IV  ce10    region  1   17493793    .   .   .   ID=IV;Name=IV
+II  ce10    region  1   15279345    .   .   .   ID=II;Name=II
+I   ce10    region  1   15072423    .   .   .   ID=I;Name=I
+III ce10    region  1   13783700    .   .   .   ID=III;Name=III
+M   ce10    region  1   13794   .   .   .   ID=M;Name=M
+</code></pre>
+<h3 id="span-idsome_other_kind_of_error-classmw-headlinesome-other-kind-of-errorspan"><span id="Some_other_kind_of_error" class="mw-headline">Some other kind of error</span></h3>
+<p>Make sure your software is up-to-date</p>
+<ul>
+<li>Bio::Graphics version 2.4 or greater</li>
+<li>BioPerl 1.7.0 or greater</li>
+<li>GBrowse 2.54 or greater</li>
+</ul>
+<h3 id="span-idask_for_help-classmw-headlineask-for-helpspan"><span id="Ask_for_help" class="mw-headline">Ask for help</span></h3>
+<p><a href="mailto:sheldon.mckay@gmail.com">sheldon.mckay@gmail.com</a></p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ADocumentation" title="Category%253ADocumentation">Documentation</a></li>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AGBrowse_Developer" title="Category%253AGBrowse Developer">GBrowse
+Developer</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="Category%253AGMOD_Component" title="Category%253AGMOD Component">GMOD Component</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Using_the_topoview_Glyph"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:29 on 6 April
+2018.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">192,747 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

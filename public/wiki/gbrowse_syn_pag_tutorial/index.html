@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse syn PAG tutorial - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-syn-pag-tutorialspan"><span dir="auto">GBrowse syn PAG tutorial</span></h1>
+<p>This <a href="Category%253ATutorials" title="Category%253ATutorials">tutorial</a> walks you
+through how to install and configure the
+<a href="GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a> comparative genomics viewer.
+This tutorial was originally taught by <a href="User%253AMckays" title="User%253AMckays">Sheldon
+McKay</a> at the 2009 <a href="GMOD_Schools" title="GMOD Schools">GMOD
+Schools</a> -
+<a href="2009_GMOD_Summer_School_-_Europe" title="2009 GMOD Summer School - Europe">Europe</a>
+&amp;
+<a href="2009_GMOD_Summer_School_-_Americas" title="2009 GMOD Summer School - Americas">Americas</a>.
+The notes and <a href="#VMware">VMware image</a> used on this page are from the
+Europe course.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#VMware"><span class="tocnumber">1</span>
+<span class="toctext">VMware</span></a></li>
+<li><a href="#Caveats"><span class="tocnumber">2</span>
+<span class="toctext">Caveats</span></a></li>
+<li><a href="#The_Generic_Synteny_Browser"><span class="tocnumber">3</span> <span class="toctext">The Generic
+Synteny Browser</span></a>
+<ul>
+<li><a href="#Gbrowse_syn_Introduction"><span class="tocnumber">3.1</span>
+<span class="toctext">Gbrowse_syn
+Introduction</span></a></li>
+<li><a href="#GBrowse_syn_Documentation"><span class="tocnumber">3.2</span>
+<span class="toctext">GBrowse_syn
+Documentation</span></a></li>
+<li><a href="#Whole_Genome_Alignments"><span class="tocnumber">3.3</span> <span class="toctext">Whole
+Genome Alignments</span></a></li>
+</ul>
+</li>
+<li><a href="#Installing_GBrowse_syn"><span class="tocnumber">4</span> <span class="toctext">Installing
+GBrowse_syn</span></a></li>
+<li><a href="#Installing_Gbrowse_syn_2"><span class="tocnumber">5</span> <span class="toctext">Installing
+Gbrowse_syn</span></a></li>
+<li><a href="#Configuration_of_GBrowse_syn"><span class="tocnumber">6</span> <span class="toctext">Configuration
+of GBrowse_syn</span></a>
+<ul>
+<li><a href="#Create_a_MySQL_database"><span class="tocnumber">6.1</span> <span class="toctext">Create a
+MySQL database</span></a></li>
+<li><a href="#Loading_the_alignment_data"><span class="tocnumber">6.2</span> <span class="toctext">Loading
+the alignment data</span></a>
+<ul>
+<li><a href="#The_alignment_data_file"><span class="tocnumber">6.2.1</span> <span class="toctext">The
+alignment data file</span></a>
+<ul>
+<li><a href="#Note_on_CLUSTALW"><span class="tocnumber">6.2.1.1</span>
+<span class="toctext"><strong>Note on
+CLUSTALW</strong></span></a></li>
+<li><a href="#Note_on_the_sequence_ID_syntax"><span class="tocnumber">6.2.1.2</span>
+<span class="toctext">Note on the sequence ID
+syntax</span></a></li>
+</ul>
+</li>
+<li><a href="#The_database_loading_script"><span class="tocnumber">6.2.2</span> <span class="toctext">The
+database loading script</span></a>
+<ul>
+<li><a href="#Running_in_the_background_with_the_linux_screen_command"><span class="tocnumber">6.2.2.1</span>
+<span class="toctext">Running in the background with the linux
+<em>screen</em>
+command</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Setting_up_the_species.27_databases"><span class="tocnumber">6.3</span> <span class="toctext">Setting up
+the species&rsquo; databases</span></a>
+<ul>
+<li><a href="#GFF3"><span class="tocnumber">6.3.1</span>
+<span class="toctext">GFF3</span></a></li>
+<li><a href="#Loading"><span class="tocnumber">6.3.2</span>
+<span class="toctext">Loading</span></a></li>
+</ul>
+</li>
+<li><a href="#Setting_up_the_Configuration_Files"><span class="tocnumber">6.4</span> <span class="toctext">Setting up
+the Configuration Files</span></a></li>
+<li><a href="#A_Species_Config_File"><span class="tocnumber">6.5</span> <span class="toctext">A Species
+Config File</span></a></li>
+<li><a href="#The_GBrowse_syn_Config_File"><span class="tocnumber">6.6</span> <span class="toctext">The
+GBrowse_syn Config File</span></a></li>
+<li><a href="#Testing_the_rice_and_wild_rice_data_sources_in_GBrowse"><span class="tocnumber">6.7</span> <span class="toctext">Testing
+the rice and wild_rice data sources in
+GBrowse</span></a></li>
+<li><a href="#Viewing_the_data_in_GBrowse_syn"><span class="tocnumber">6.8</span> <span class="toctext">Viewing
+the data in GBrowse_syn</span></a></li>
+</ul>
+</li>
+<li><a href="#Optional_Advanced_Section"><span class="tocnumber">7</span> <span class="toctext">Optional
+Advanced Section</span></a></li>
+</ul>
+<h1 id="span-idvmware-classmw-headlinevmwarespan"><span id="VMware" class="mw-headline">VMware</span></h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td data-valign="top">This tutorial was taught using a VMware system image
+as a starting point. If you want to start with that same system,
+download and install the <em>Starting</em> image.
+<p><em><strong>See VMware for what
+software you need to use a VMware system image, and for directions on
+how to get the image setup and running on your
+machine.</strong></em></p></td>
+<td><table class="wikitable" style="margin-left: 1em; margin-top: 0;">
+<thead>
+<tr class="header">
+<th>Download Links will be added here</th>
+</tr>
+</thead>
+&#10;</table></td>
+</tr>
+</tbody>
+</table>
+<h1 id="span-idcaveats-classmw-headlinecaveatsspan"><span id="Caveats" class="mw-headline">Caveats</span></h1>
+<p><strong>Important Note</strong></p>
+<p>This <a href="Category%253ATutorials" title="Category%253ATutorials">tutorial</a> describes the
+world as it existed on the day the tutorial was given. Please be aware
+that things like CPAN modules, Java libraries, and Linux packages change
+over time, and that the instructions in the tutorial will slowly drift
+over time. Newer versions of tutorials will be posted as they become
+available.</p>
+<h1 id="span-idthe_generic_synteny_browser-classmw-headlinethe-generic-synteny-browserspan"><span id="The_Generic_Synteny_Browser" class="mw-headline">The Generic Synteny Browser</span></h1>
+<h1 id="span-idoptional_advanced_section-classmw-headlineoptional-advanced-sectionspan"><span id="Optional_Advanced_Section" class="mw-headline">Optional Advanced Section</span></h1>
+<p>We will setup up a five-genome database if time permits.</p>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn_PAG_tutorial"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:53 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">42,788 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

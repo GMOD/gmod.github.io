@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialized views - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautomaterialized-viewsspan"><span dir="auto">Materialized views</span></h1>
+<p>Materializing a view is the process of taking a view (which is a sort of
+virtual table) and turning it into a real table that can be indexed for
+better performance. While <a href="PostgreSQL" title="PostgreSQL">PostgreSQL</a> doesn&rsquo;t
+support maintenance of materialized views, we have written a command
+line tool that will handle the creation and maintenance of materialized
+views in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+running on PostgreSQL.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#gmod_materialized_view_tool.pl"><span class="tocnumber">1</span>
+<span class="toctext">gmod_materialized_view_tool.pl</span></a>
+<ul>
+<li><a href="#Creating_a_materialized_view_example"><span class="tocnumber">1.1</span> <span class="toctext">Creating a
+materialized view
+example</span></a></li>
+<li><a href="#Example_crontab_entry_to_maintain_materialized_views"><span class="tocnumber">1.2</span> <span class="toctext">Example
+crontab entry to maintain materialized
+views</span></a></li>
+<li><a href="#Authors"><span class="tocnumber">1.3</span>
+<span class="toctext">Authors</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idgmod_materialized_view_toolpl-classmw-headlinegmod_materialized_view_toolplspan"><span id="gmod_materialized_view_tool.pl" class="mw-headline">gmod_materialized_view_tool.pl</span></h1>
+<p>The perl script gmod_materialized_view_tool.pl (which resides in
+schema/chado/bin, and gets installed in your path when you do
+<code>sudo make install</code>) has several options for creating and maintaining
+materialized views:</p>
+<pre><code>       -c|--create_view
+
+       Guides the user through a series of prompts to create a new material‐
+       ized view.
+
+       -u|--update_view viewname
+
+       Updates the data in a materialized view by first deleting the data in
+       the table and then running the query that defines the data to repopu‐
+       late it.
+
+       -a|--automatic
+
+       Automatically updates all of the MVs that are currently marked out of
+       date according to the update frequency that was specified when the MV
+       was created.  This option is very useful in a cron job to update MVs on
+       a regular basis.
+
+       --dematerialize viewname
+
+       Takes a MV and turns into a standard view.  This might be done if the
+       database administrator decides that the downsides of the MV scheme is
+       not working for a given view, if for example, the data in the underly‐
+       ing tables is changing to frequently or the MV is taking up too much
+       disk space.
+
+       --dbprofile
+
+       The name of the DB profile to use for database connectivity.  These
+       profiles are kept in $GMOD_ROOT/conf (typically /usr/local/gmod/conf)
+       and contain information like the database name, user name and password.
+       The default value is ’default’ which was created when the Chado
+       database was created.
+
+       -l|--list
+
+       Gives a list of current MVs.
+
+       -s|--status
+
+       Gives the status of all MVs, including whether they are considered cur‐
+       rent or out of date.
+
+       -h|--help
+
+       Prints documentation and quits.
+</code></pre>
+<h2 id="span-idcreating_a_materialized_view_example-classmw-headlinecreating-a-materialized-view-examplespan"><span id="Creating_a_materialized_view_example" class="mw-headline">Creating a materialized view example</span></h2>
+<pre><code> gmod_materialized_view_tool.pl -c
+
+==========================================
+Viewing 'chado' database on host localhost
+==========================================
+
+
+
+=================================
+Creating a new materialized view!
+=================================
+
+
+Give your materialized view a name (word characters only):all_feature_names
+
+Where will this MV be located? (schemaname.tablename):public.all_feature_names
+
+A view with this name already exists; do you want to replace it
+with a materialized view? [y|n] y
+
+How often, in seconds, should the MV be refreshed?
+You can also type 'daily', 'weekly', 'monthly' (30 days), or 'yearly' (365 days):daily
+Using refresh_time of 86400 seconds
+
+Enter specifications for the materialized view, OR provide a file in which
+the specs are written ('? for help):feature_id integer,name varchar(255)
+
+Enter the SQL query for the materialized view,
+or a file containing only the query:SELECT feature_id,uniquename FROM feature UNION SELECT feature_id, name FROM feature UNION SELECT fs.feature_id,s.name FROM feature_synonym fs, synonym s WHERE fs.synonym_id = s.synonym_id
+
+Enter a comma separated list of fields to index (or return for none):feature_id,name
+
+Enter the SQL queries for special indexes,
+or a file containing only the query (or return for none):create index all_feature_names_lower_name on all_feature_names (lower(name))
+
+
+Confirm that the following is correct:
+Name: all_feature_names
+Location: public.all_feature_names
+Refresh Time (sec): 86400
+MV creation query: CREATE TABLE public.test_view ( feature_id integer,name varchar(255) )
+Query: SELECT feature_id,uniquename FROM feature UNION SELECT feature_id, name FROM feature UNION SELECT fs.feature_id,s.name FROM feature_synonym fs, synonym s WHERE fs.synonym_id = s.synonym_id
+Indexes on: feature_id,name
+Special index query: create index all_feature_names_lower_name on all_feature_names (lower(name))
+
+
+Enter 'y' to confirm, 'n' to re-enter data: y
+</code></pre>
+<p>And it goes on to create the table and populate it, giving real time
+estimates of completion time.</p>
+<h2 id="span-idexample_crontab_entry_to_maintain_materialized_views-classmw-headlineexample-crontab-entry-to-maintain-materialized-viewsspan"><span id="Example_crontab_entry_to_maintain_materialized_views" class="mw-headline">Example crontab entry to maintain materialized views</span></h2>
+<p><a href="http://en.wikipedia.org/wiki/Crontab" class="external text"
+rel="nofollow">Cron</a> is a unix tool for executing commands on a
+regular specified interval. To create a new crontab entry, execute the
+command <code>crontab -e</code>, and enter the special syntax and the command to be
+run. For example, if you wanted the materialized view tool to run every
+night at 1:16AM, you would enter this:</p>
+<pre><code> 16 1 * * * /usr/bin/gmod_materialized_view_tool.pl -a
+</code></pre>
+<p>Where the stars mean &rsquo;every day of the month&rsquo;, &rsquo;every month of the year'
+and &rsquo;every day of the week&rsquo; respectively.</p>
+<h2 id="span-idauthors-classmw-headlineauthorsspan"><span id="Authors" class="mw-headline">Authors</span></h2>
+<p>The script described in this page was originally written by Chris
+Carpita and modified by <a href="User%253AScott" title="User%253AScott">Scott Cain</a></p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253ADatabase_Tools" title="Category%253ADatabase Tools">Database Tools</a></li>
+<li><a href="Category%253APostgreSQL" title="Category%253APostgreSQL">PostgreSQL</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Materialized_views" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 05:23 on 28 January
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">22,284 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

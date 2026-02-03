@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse/AJAXhandlerScript - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowseajaxhandlerscriptspan"><span dir="auto">GBrowse/AJAXhandlerScript</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Proposal_to_convert_gbrowse_details_to_an_AJAX_request_handler"><span class="tocnumber">1</span> <span class="toctext">Proposal to
+convert gbrowse_details to an AJAX request
+handler</span></a>
+<ul>
+<li><a href="#Examples"><span class="tocnumber">1.1</span>
+<span class="toctext">Examples</span></a></li>
+<li><a href="#Changes_to_gbrowse_details"><span class="tocnumber">1.2</span> <span class="toctext">Changes to
+gbrowse_details</span></a></li>
+<li><a href="#Changes_To_Configuration_File"><span class="tocnumber">1.3</span> <span class="toctext">Changes To
+Configuration File</span></a></li>
+<li><a href="#Changes_to_Bio::Graphics::Browser"><span class="tocnumber">1.4</span> <span class="toctext">Changes to
+Bio::Graphics::Browser</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idproposal_to_convert_gbrowse_details_to_an_ajax_request_handler-classmw-headlineproposal-to-convert-gbrowse_details-to-an-ajax-request-handlerspan"><span id="Proposal_to_convert_gbrowse_details_to_an_AJAX_request_handler" class="mw-headline">Proposal to convert gbrowse_details to an AJAX request handler</span></h1>
+<p><strong>A temporary page to describe a low-impact change to existing code to
+provide a built-in ajax handler for Gbrowse</strong></p>
+<h2 id="span-idexamples-classmw-headlineexamplesspan"><span id="Examples" class="mw-headline">Examples</span></h2>
+<ul>
+<li>A balloon hover with contents generated using an AJAX call to
+gbrowse_details and the <em><strong>params</strong></em> callback shown below</li>
+</ul>
+<p><a href="../File:Sample1b.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Sample1b.png" width="492" height="239"
+alt="Sample1b.png" /></a></p>
+<ul>
+<li>A sticky balloon with contents generated from gbrowse-details (via an
+&lt;iframe&gt; element) and the <em><strong>default</strong></em> callback shown below.</li>
+</ul>
+<p><a href="../File:Sample2b.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/Sample2b.png" width="454" height="364"
+alt="Sample2b.png" /></a></p>
+<h2 id="span-idchanges_to_gbrowse_details-classmw-headlinechanges-to-gbrowse_detailsspan"><span id="Changes_to_gbrowse_details" class="mw-headline">Changes to gbrowse_details</span></h2>
+<ul>
+<li>A new CGI parameter to invoke the AJAX-handling behavior</li>
+</ul>
+<!-- -->
+<pre><code>my $rmt   = param('remote');
+</code></pre>
+<ul>
+<li>A response is triggered after the feature(s) are defined but before
+<em><strong>PrintTop</strong></em> is called.</li>
+</ul>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> if (defined $rmt) {
+   print header,start_html;
+   print remote_content($rmt,$features[0]);
+   print end_html;
+   exit 0;
+ }
+</code></pre><ul>
+<li>The <em><strong>remote_content</strong></em> subroutine will get the text or coderef. It
+will return the text or execute the callback with user-defined
+arguments</li>
+</ul>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> # do something for popup balloons
+ sub remote_content {
+   my $key = shift; # the key for the text or code-ref in the gbrowse config file
+   my $feat = shift;
+   my $contents = $CONFIG-&gt;config-&gt;code_setting(&#39;TOOLTIPS&#39;,$key) or die &#34;$key is empty&#34;;
+   my $coderef = (ref $contents||&amp;#39;&amp;#39;) eq &#39;CODE&#39;;
+   return $contents unless $coderef;
+   # paranoia?
+   die &#34;Error: $key is not a CODE-REF&#34; if ref $contents &amp;&amp; !$coderef;
+   # args are user-defined
+   my %args = (feature =&gt; $feat) if $feat;
+   for my $arg (param()) {
+     my @vals = param($arg);
+     my $val  = @vals &gt; 1 ? \@vals : $vals[0];
+     $args{$arg} = $val;
+   }
+   return $contents-&gt;(\%args);
+ }
+</code></pre><h2 id="span-idchanges_to_configuration_file-classmw-headlinechanges-to-configuration-filespan"><span id="Changes_To_Configuration_File" class="mw-headline">Changes To Configuration File</span></h2>
+<ul>
+<li>A new section [TOOLTIPS] that has all the named text sections or
+callbacks you need to access through gbrowse_details
+<ul>
+<li><strong>NOTE:</strong> This section must be placed at the end of the [GENERAL]
+section.</li>
+</ul>
+</li>
+</ul>
+<p><a href="../File:Callbacks" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/92/Callbacks" width="687" height="408"
+alt="Callbacks" /></a></p>
+<ul>
+<li>The [ORF] configuration stanza used to generate the images above.
+The relevant section is highlighted</li>
+</ul>
+<p><a href="../File:Orf_stanza" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Orf_stanza" width="749" height="267"
+alt="Orf stanza" /></a></p>
+<h2 id="span-idchanges_to_biographicsbrowser-classmw-headlinechanges-to-biographicsbrowserspan"><span id="Changes_to_Bio::Graphics::Browser" class="mw-headline">Changes to Bio::Graphics::Browser</span></h2>
+<ul>
+<li>Minimal changes to balloons code. Width option introduced to allow
+custom width constraints. Setting the iframe width should hopefully
+make the contents stay inside the balloon boundaries.</li>
+</ul>
+<p><a href="../File:Browsercode" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/Browsercode" width="666" height="385"
+alt="Browsercode" /></a></p>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="../Category%253AAJAX" title="Category%253AAJAX">AJAX</a></li>
+<li><a href="../Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse-2FAJAXhandlerScript"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:05 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">47,503 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

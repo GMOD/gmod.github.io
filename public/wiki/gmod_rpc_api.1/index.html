@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMOD RPC API - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogmod-rpc-apispan"><span dir="auto">GMOD RPC API</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Document_Status"><span class="tocnumber">1</span> <span class="toctext">Document
+Status</span></a></li>
+<li><a href="#Background"><span class="tocnumber">2</span>
+<span class="toctext">Background</span></a></li>
+<li><a href="#Members"><span class="tocnumber">3</span>
+<span class="toctext">Members</span></a></li>
+<li><a href="#Goals"><span class="tocnumber">4</span>
+<span class="toctext">Goals</span></a></li>
+<li><a href="#Related_projects"><span class="tocnumber">5</span> <span class="toctext">Related
+projects</span></a></li>
+<li><a href="#Data_classes"><span class="tocnumber">6</span> <span class="toctext">Data
+classes</span></a></li>
+<li><a href="#API_Version"><span class="tocnumber">7</span> <span class="toctext">API
+Version</span></a></li>
+<li><a href="#Data_version"><span class="tocnumber">8</span> <span class="toctext">Data
+version</span></a></li>
+<li><a href="#Result_dates"><span class="tocnumber">9</span> <span class="toctext">Result
+dates</span></a></li>
+<li><a href="#Return_types"><span class="tocnumber">10</span> <span class="toctext">Return
+types</span></a></li>
+<li><a href="#Compression"><span class="tocnumber">11</span>
+<span class="toctext">Compression</span></a></li>
+<li><a href="#Supported_HTTP_methods"><span class="tocnumber">12</span> <span class="toctext">Supported
+HTTP methods</span></a></li>
+<li><a href="#Querying_or_Filtering_by_Organism"><span class="tocnumber">13</span> <span class="toctext">Querying or
+Filtering by Organism</span></a></li>
+<li><a href="#Pretty_URLs"><span class="tocnumber">14</span> <span class="toctext">Pretty
+URLs</span></a></li>
+<li><a href="#Language_Implementation_Pages"><span class="tocnumber">15</span> <span class="toctext">Language
+Implementation Pages</span></a></li>
+<li><a href="#Error_handling"><span class="tocnumber">16</span> <span class="toctext">Error
+handling</span></a>
+<ul>
+<li><a href="#HTTP_error_code_400"><span class="tocnumber">16.1</span> <span class="toctext">HTTP
+error code 400</span></a></li>
+</ul>
+</li>
+<li><a href="#Use_Cases"><span class="tocnumber">17</span> <span class="toctext">Use
+Cases</span></a></li>
+<li><a href="#Services"><span class="tocnumber">18</span>
+<span class="toctext">Services</span></a>
+<ul>
+<li><a href="#Searches"><span class="tocnumber">18.1</span>
+<span class="toctext">Searches</span></a>
+<ul>
+<li><a href="#Organism_List"><span class="tocnumber">18.1.1</span>
+<span class="toctext">Organism List</span></a>
+<ul>
+<li><a href="#Service_Name"><span class="tocnumber">18.1.1.1</span>
+<span class="toctext">Service Name</span></a></li>
+<li><a href="#Purpose"><span class="tocnumber">18.1.1.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#URL"><span class="tocnumber">18.1.1.3</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_2"><span class="tocnumber">18.1.1.4</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type"><span class="tocnumber">18.1.1.5</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs"><span class="tocnumber">18.1.1.6</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result"><span class="tocnumber">18.1.1.7</span>
+<span class="toctext">XML Result</span></a></li>
+<li><a href="#JSON_Result"><span class="tocnumber">18.1.1.8</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Gene_full_text_search"><span class="tocnumber">18.1.2</span> <span class="toctext">Gene
+full text search</span></a>
+<ul>
+<li><a href="#Service_Name_2"><span class="tocnumber">18.1.2.1</span>
+<span class="toctext">Service Name</span></a></li>
+<li><a href="#Purpose_2"><span class="tocnumber">18.1.2.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description"><span class="tocnumber">18.1.2.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_2"><span class="tocnumber">18.1.2.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_3"><span class="tocnumber">18.1.2.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_2"><span class="tocnumber">18.1.2.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_2"><span class="tocnumber">18.1.2.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result_2"><span class="tocnumber">18.1.2.8</span>
+<span class="toctext">XML Result</span></a></li>
+<li><a href="#JSON_Result_2"><span class="tocnumber">18.1.2.9</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Gene_location"><span class="tocnumber">18.1.3</span> <span class="toctext">Gene
+location</span></a>
+<ul>
+<li><a href="#Service_Name_3"><span class="tocnumber">18.1.3.1</span>
+<span class="toctext">Service Name</span></a></li>
+<li><a href="#Purpose_3"><span class="tocnumber">18.1.3.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_2"><span class="tocnumber">18.1.3.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_3"><span class="tocnumber">18.1.3.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_4"><span class="tocnumber">18.1.3.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_3"><span class="tocnumber">18.1.3.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_3"><span class="tocnumber">18.1.3.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result_3"><span class="tocnumber">18.1.3.8</span>
+<span class="toctext">XML Result</span></a></li>
+<li><a href="#JSON_Result_3"><span class="tocnumber">18.1.3.9</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Gene_Ontology_search"><span class="tocnumber">18.1.4</span> <span class="toctext">Gene
+Ontology search</span></a>
+<ul>
+<li><a href="#Service_Name_4"><span class="tocnumber">18.1.4.1</span>
+<span class="toctext">Service Name</span></a></li>
+<li><a href="#Purpose_4"><span class="tocnumber">18.1.4.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_3"><span class="tocnumber">18.1.4.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_4"><span class="tocnumber">18.1.4.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_5"><span class="tocnumber">18.1.4.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_4"><span class="tocnumber">18.1.4.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_4"><span class="tocnumber">18.1.4.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result_4"><span class="tocnumber">18.1.4.8</span>
+<span class="toctext">XML Result</span></a></li>
+<li><a href="#JSON_Result_4"><span class="tocnumber">18.1.4.9</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Gene_ortholog_search"><span class="tocnumber">18.1.5</span> <span class="toctext">Gene
+ortholog search</span></a>
+<ul>
+<li><a href="#Service_name_5"><span class="tocnumber">18.1.5.1</span>
+<span class="toctext">Service name</span></a></li>
+<li><a href="#Purpose_5"><span class="tocnumber">18.1.5.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_4"><span class="tocnumber">18.1.5.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_5"><span class="tocnumber">18.1.5.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_6"><span class="tocnumber">18.1.5.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_5"><span class="tocnumber">18.1.5.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_5"><span class="tocnumber">18.1.5.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result:"><span class="tocnumber">18.1.5.8</span>
+<span class="toctext">XML Result:</span></a></li>
+<li><a href="#JSON_Result_5"><span class="tocnumber">18.1.5.9</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Organism_ortholog_search"><span class="tocnumber">18.1.6</span>
+<span class="toctext">Organism ortholog
+search</span></a>
+<ul>
+<li><a href="#Service_name_6"><span class="tocnumber">18.1.6.1</span>
+<span class="toctext">Service name</span></a></li>
+<li><a href="#Purpose_6"><span class="tocnumber">18.1.6.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_5"><span class="tocnumber">18.1.6.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_6"><span class="tocnumber">18.1.6.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_7"><span class="tocnumber">18.1.6.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_6"><span class="tocnumber">18.1.6.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_6"><span class="tocnumber">18.1.6.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result:_2"><span class="tocnumber">18.1.6.8</span>
+<span class="toctext">XML Result:</span></a></li>
+<li><a href="#JSON_Result_6"><span class="tocnumber">18.1.6.9</span>
+<span class="toctext">JSON Result</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Fetching"><span class="tocnumber">18.2</span>
+<span class="toctext">Fetching</span></a>
+<ul>
+<li><a href="#Gene_records"><span class="tocnumber">18.2.1</span> <span class="toctext">Gene
+records</span></a>
+<ul>
+<li><a href="#Service_name_7"><span class="tocnumber">18.2.1.1</span>
+<span class="toctext">Service name</span></a></li>
+<li><a href="#Purpose_7"><span class="tocnumber">18.2.1.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_6"><span class="tocnumber">18.2.1.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_7"><span class="tocnumber">18.2.1.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_8"><span class="tocnumber">18.2.1.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Default_return_type_7"><span class="tocnumber">18.2.1.6</span>
+<span class="toctext">Default return
+type</span></a></li>
+<li><a href="#Example_URLs_7"><span class="tocnumber">18.2.1.7</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#XML_Result_5"><span class="tocnumber">18.2.1.8</span>
+<span class="toctext">XML Result</span></a></li>
+</ul>
+</li>
+<li><a href="#Sequence"><span class="tocnumber">18.2.2</span>
+<span class="toctext">Sequence</span></a>
+<ul>
+<li><a href="#Service_name_8"><span class="tocnumber">18.2.2.1</span>
+<span class="toctext">Service name</span></a></li>
+<li><a href="#Purpose_8"><span class="tocnumber">18.2.2.2</span>
+<span class="toctext">Purpose</span></a></li>
+<li><a href="#Description_7"><span class="tocnumber">18.2.2.3</span>
+<span class="toctext">Description</span></a></li>
+<li><a href="#URL_8"><span class="tocnumber">18.2.2.4</span>
+<span class="toctext">URL</span></a></li>
+<li><a href="#Return_types_9"><span class="tocnumber">18.2.2.5</span>
+<span class="toctext">Return types</span></a></li>
+<li><a href="#Example_URLs_8"><span class="tocnumber">18.2.2.6</span>
+<span class="toctext">Example URLs</span></a></li>
+<li><a href="#FASTA_Result:"><span class="tocnumber">18.2.2.7</span>
+<span class="toctext">FASTA Result:</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#TODO"><span class="tocnumber">19</span>
+<span class="toctext">TODO</span></a></li>
+</ul>
+<h2 id="span-iddocument_status-classmw-headlinedocument-statusspan"><span id="Document_Status" class="mw-headline">Document Status</span></h2>
+<p>In progress.</p>
+<h2 id="span-idbackground-classmw-headlinebackgroundspan"><span id="Background" class="mw-headline">Background</span></h2>
+<p>This effort was started after <a href="/wiki/User%253AJogoodma" title="User%253AJogoodma">Josh
+Goodman</a>&rsquo;s talk at the <a href="/wiki/January_2009_GMOD_Meeting" title="January 2009 GMOD Meeting">January
+2009 GMOD
+Meeting</a>
+meeting titled &ldquo;<a href="/wiki/January_2009_GMOD_Meeting#A_RESTful_Interface_for_MODs.3F" title="January 2009 GMOD Meeting">MOD Web API (A RESTful interface for
+MODs)</a>&rdquo;.
+The main idea is to increase interoperability among the various model
+organism databases by creating an easy to use high level RESTful
+<a href="/wiki/Glossary#API" title="Glossary">API</a>. The queries iterated below are
+currently in the proposal stage and have no been implemented at any
+<a href="/wiki/MOD" title="MOD">MOD</a>.</p>
+<h2 id="span-idmembers-classmw-headlinemembersspan"><span id="Members" class="mw-headline">Members</span></h2>
+<ul>
+<li><a href="/wiki/User%253AJogoodma" title="User%253AJogoodma">Josh Goodman</a> -
+<a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a></li>
+<li>Robert Buels -
+<a href="http://www.sgn.cornell.edu/" class="external text"
+rel="nofollow">Sol Genomics Network</a></li>
+<li>Richard Smith -
+<a href="http://www.intermine.org" class="external text"
+rel="nofollow">InterMine</a></li>
+<li>Giles Velarde</li>
+</ul>
+<h2 id="span-idservices-classmw-headlineservicesspan"><span id="Services" class="mw-headline">Services</span></h2>
+<h3 id="span-idsearches-classmw-headlinesearchesspan"><span id="Searches" class="mw-headline">Searches</span></h3>
+<h4 id="span-idorganism_list-classmw-headlineorganism-listspan"><span id="Organism_List" class="mw-headline">Organism List</span></h4>
+<h5 id="span-idservice_name-classmw-headlineservice-namespan"><span id="Service_Name" class="mw-headline">Service Name</span></h5>
+<p>organisms</p>
+<h5 id="span-idpurpose-classmw-headlinepurposespan"><span id="Purpose" class="mw-headline">Purpose</span></h5>
+<p>Provides a list of organisms that are able to be queried with the
+service provider.</p>
+<h5 id="span-idurl-classmw-headlineurlspan"><span id="URL" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/organisms[.xml | .json]</p>
+<h5 id="span-idreturn_types_2-classmw-headlinereturn-typesspan"><span id="Return_types_2" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type-classmw-headlinedefault-return-typespan"><span id="Default_return_type" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls-classmw-headlineexample-urlsspan"><span id="Example_URLs" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/organisms">http://flybase.org/gmodrpc/v1.1/organisms</a></li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/organisms.xml">http://flybase.org/gmodrpc/v1.1/organisms.xml</a></li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/organisms.json">http://flybase.org/gmodrpc/v1.1/organisms.json</a></li>
+</ul>
+<h5 id="span-idxml_result-classmw-headlinexml-resultspan"><span id="XML_Result" class="mw-headline">XML Result</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;result&gt;
+      &lt;organism&gt;
+         &lt;genus&gt;Drosophila&lt;/genus&gt;
+         &lt;species&gt;melanogaster&lt;/species&gt;
+         &lt;taxonomy_id&gt;7227&lt;/taxonomy_id&gt;
+      &lt;/organism&gt;
+   &lt;/result&gt;
+   &lt;result&gt;
+      &lt;organism&gt;
+          &lt;species&gt;Drosophila&lt;/species&gt;
+          &lt;genus&gt;simulans&lt;/genus&gt;
+          &lt;taxonomy_id&gt;7240&lt;/taxonomy_id&gt;
+      &lt;/organism&gt;
+    &lt;/result&gt;
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result-classmw-headlinejson-resultspan"><span id="JSON_Result" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       result:[
+           {
+               organism:{
+                   genus:'Drosophila',
+                   species:'melanogaster',
+                   taxonomy_id:7227
+               }
+           },
+           {
+               organism:{
+                   species:'Drosophila',
+                   genus:'simulans',
+                   taxonomy_id:7240
+               }
+           }
+       ]
+   }
+}
+</code></pre>
+<h4 id="span-idgene_full_text_search-classmw-headlinegene-full-text-searchspan"><span id="Gene_full_text_search" class="mw-headline">Gene full text search</span></h4>
+<h5 id="span-idservice_name_2-classmw-headlineservice-namespan"><span id="Service_Name_2" class="mw-headline">Service Name</span></h5>
+<p>fulltext</p>
+<h5 id="span-idpurpose_2-classmw-headlinepurposespan"><span id="Purpose_2" class="mw-headline">Purpose</span></h5>
+<p>Performs a full text search on records and returns the IDs for matching
+records.</p>
+<h5 id="span-iddescription-classmw-headlinedescriptionspan"><span id="Description" class="mw-headline">Description</span></h5>
+<p>This service returns features that contain the search term anywhere in
+the gene record. Results can be restricted to a specific organism by
+supplying the NCBI taxonomy id.</p>
+<h5 id="span-idurl_2-classmw-headlineurlspan"><span id="URL_2" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/fulltext/&lt;search
+term&gt;[.xml | .json]?[type=&lt;SO term
+ID&gt;][taxid=&lt;taxid&gt;][genus=&lt;genus&gt;][species=&lt;species&gt;]</p>
+<h5 id="span-idreturn_types_3-classmw-headlinereturn-typesspan"><span id="Return_types_3" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type_2-classmw-headlinedefault-return-typespan"><span id="Default_return_type_2" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_2-classmw-headlineexample-urlsspan"><span id="Example_URLs_2" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704">http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704</a> -
+Find genes that contain the term cotransfection.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704&amp;taxid=7227">http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704&amp;taxid=7227</a> -
+Find Drosophila melanogaster genes that contain the term
+cotransfection.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fulltext/AE003845.json?type=SO:0000704">http://flybase.org/gmodrpc/v1.1/fulltext/AE003845.json?type=SO:0000704</a> -
+Find genes that contain the term AE003845 and return a JSON result.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fulltext/IPR000483.json?taxid=7240&amp;type=SO:0000704">http://flybase.org/gmodrpc/v1.1/fulltext/IPR000483.json?taxid=7240&amp;type=SO:0000704</a> -
+Find Drosophila simulans genes that are labeled with InterPro ID
+IPR000483.</li>
+</ul>
+<h5 id="span-idxml_result_2-classmw-headlinexml-resultspan"><span id="XML_Result_2" class="mw-headline">XML Result</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;query_time&gt;2009-01-15 09:03:00&lt;/query_time&gt;
+   &lt;query_url&gt;http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704&lt;/query_url&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0085432&lt;/accession&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085432&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;date_created&gt;2003-03-08 00:00:00&lt;/date_created&gt;
+      &lt;last_modified&gt;2005-01-15 09:03:00&lt;/last_modified&gt;
+   &lt;/result&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0004364&lt;/accession&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0004364&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;date_created&gt;2005-01-08 00:00:00&lt;/date_created&gt;
+      &lt;last_modified&gt;2009-01-01 00:00:00&lt;/last_modified&gt;
+   &lt;/result&gt;
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result_2-classmw-headlinejson-resultspan"><span id="JSON_Result_2" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       query_time:'2009-01-15 09:03:00',
+       query_url:'http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704',
+       result:[
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0085432',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085432'
+               },
+               date_created:'2003-03-08 00:00:00',
+               last_modified:'2005-01-15 09:03:00'
+           },
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0004364',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0004364'
+               },
+               date_created:'2005-01-08 00:00:00',
+               last_modified:'2009-01-01 00:00:00'
+           }
+       ]
+   }
+}
+</code></pre>
+<h4 id="span-idgene_location-classmw-headlinegene-locationspan"><span id="Gene_location" class="mw-headline">Gene location</span></h4>
+<h5 id="span-idservice_name_3-classmw-headlineservice-namespan"><span id="Service_Name_3" class="mw-headline">Service Name</span></h5>
+<p>location</p>
+<h5 id="span-idpurpose_3-classmw-headlinepurposespan"><span id="Purpose_3" class="mw-headline">Purpose</span></h5>
+<p>Retrieves a list of features that lie within a specific sequence range.</p>
+<h5 id="span-iddescription_2-classmw-headlinedescriptionspan"><span id="Description_2" class="mw-headline">Description</span></h5>
+<p>This service returns features that lie within a specific sequence range.
+Arguments include the name of the largest assembled unit (i.e.
+chromosome, scaffold, etc&hellip;), location start (fmin), location stop
+(fmax), and strand. Results can be restricted to a specific organism by
+supplying the NCBI taxonomy id.</p>
+<h5 id="span-idurl_3-classmw-headlineurlspan"><span id="URL_3" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api
+version&gt;/location/chromosome/&lt;name&gt;[.xml | .json]?[type=&lt;SO term
+ID&gt;][fmin=&lt;int&gt;][fmax=&lt;int&gt;][strand=(1 |
+-1)][taxid=&lt;taxid&gt;][genus=&lt;genus&gt;][species=&lt;species&gt;]</p>
+<h5 id="span-idreturn_types_4-classmw-headlinereturn-typesspan"><span id="Return_types_4" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type_3-classmw-headlinedefault-return-typespan"><span id="Default_return_type_3" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_3-classmw-headlineexample-urlsspan"><span id="Example_URLs_3" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/location/chromosome/X?type=SO:0000704">http://flybase.org/gmodrpc/v1.1/location/chromosome/X?type=SO:0000704</a> -
+Find all genes that are localized on the X chromosome of any
+Drosophila species.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/location/chromosome/X?type=SO:0000704&amp;taxid=7227">http://flybase.org/gmodrpc/v1.1/location/chromosome/X?type=SO:0000704&amp;taxid=7227</a> -
+Find all genes that are localized to the X chromosome of melanogaster.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/location/chromosome/X.json?type=SO:0000704&amp;fmin=40000&amp;taxid=7227">http://flybase.org/gmodrpc/v1.1/location/chromosome/X.json?type=SO:0000704&amp;fmin=40000&amp;taxid=7227</a> -
+Find all genes that are localized on the X chromosome in the range of
+40,000 bp to the end of X on any strand.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/location/chromosome/X.xml?type=SO:0000704&amp;genus=Drosophila&amp;species=melanogaster&amp;fmax=40000">http://flybase.org/gmodrpc/v1.1/location/chromosome/X.xml?type=SO:0000704&amp;genus=Drosophila&amp;species=melanogaster&amp;fmax=40000</a> -
+Find all genes that are localized on the X chromosome in the range of
+the start of the X up to and including 40,000 bp on any strand.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/location/chromosome/X.xml?type=SO:0000704&amp;fmin=50000&amp;fmax=140000&amp;strand=1&amp;taxid=7227">http://flybase.org/gmodrpc/v1.1/location/chromosome/X.xml?type=SO:0000704&amp;fmin=50000&amp;fmax=140000&amp;strand=1&amp;taxid=7227</a> -
+Find all genes that are localized on the plus strand of the X
+chromosome between and including 50,000 bp and 140,000 bp.</li>
+</ul>
+<h5 id="span-idxml_result_3-classmw-headlinexml-resultspan"><span id="XML_Result_3" class="mw-headline">XML Result</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;query_time&gt;2009-01-15 09:03:00&lt;/query_time&gt;
+   &lt;query_url&gt;http://flybase.org/gmodrpc/v1.1/location/chromosome/2L?type=SO:0000704&amp;amp;fmin=12587000&amp;amp;fmax=12629000&amp;amp;taxid=7227&lt;/query_url&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0085424&lt;/accession&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085424&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;date_created&gt;2003-03-08 00:00:00&lt;/date_created&gt;
+      &lt;last_modified&gt;2005-01-15 09:03:00&lt;/last_modified&gt;
+   &lt;/result&gt;
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result_3-classmw-headlinejson-resultspan"><span id="JSON_Result_3" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       query_time:'2009-01-15 09:03:00',
+       query_url:'http://flybase.org/gmodrpc/v1.1/location/chromosome/2L?type=SO:0000704&amp;fmin=12587000&amp;fmax=12629000&amp;taxid=7227',
+       result:[
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0085424',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085424'
+               },
+               date_created:'2003-03-08 00:00:00',
+               last_modified:'2005-01-15 09:03:00'
+           }
+       ]
+   }
+}
+</code></pre>
+<h4 id="span-idgene_ontology_search-classmw-headlinegene-ontology-searchspan"><span id="Gene_Ontology_search" class="mw-headline">Gene Ontology search</span></h4>
+<h5 id="span-idservice_name_4-classmw-headlineservice-namespan"><span id="Service_Name_4" class="mw-headline">Service Name</span></h5>
+<p>ontology</p>
+<h5 id="span-idpurpose_4-classmw-headlinepurposespan"><span id="Purpose_4" class="mw-headline">Purpose</span></h5>
+<p>Search for genes that have been annotated with a particular gene
+ontology ID.</p>
+<h5 id="span-iddescription_3-classmw-headlinedescriptionspan"><span id="Description_3" class="mw-headline">Description</span></h5>
+<p>This service returns genes that have been annotated with a particular
+ontology term. Results can be restricted to a specific organism by
+supplying the NCBI taxonomy id.</p>
+<h5 id="span-idurl_4-classmw-headlineurlspan"><span id="URL_4" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/ontology/gene/&lt;ontology
+ID&gt;[.xml |
+.json]?[taxid=&lt;taxid&gt;][genus=&lt;genus&gt;][species=&lt;species&gt;]</p>
+<h5 id="span-idreturn_types_5-classmw-headlinereturn-typesspan"><span id="Return_types_5" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type_4-classmw-headlinedefault-return-typespan"><span id="Default_return_type_4" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_4-classmw-headlineexample-urlsspan"><span id="Example_URLs_4" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515">http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515</a> - Find all
+genes annotated with GO:0005515.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/ontology/gene/!GO:0005515">http://flybase.org/gmodrpc/v1.1/ontology/gene/!GO:0005515</a> - Find all
+genes annotated with GO:0005515 and the GO NOT operator.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515?taxid=7227">http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515?taxid=7227</a> -
+Find all Drosophila melanogaster genes annotated with GO:0005515.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515.json">http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515.json</a> - Find
+all genes annotated with GO:0005515 and return a JSON result.</li>
+</ul>
+<h5 id="span-idxml_result_4-classmw-headlinexml-resultspan"><span id="XML_Result_4" class="mw-headline">XML Result</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;query_time&gt;2009-01-15 09:03:00&lt;/query_time&gt;
+   &lt;query_url&gt;http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515&lt;/query_url&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0085432&lt;/accession&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085432&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;date_created&gt;2003-03-08 00:00:00&lt;/date_created&gt;
+      &lt;last_modified&gt;2005-01-15 09:03:00&lt;/last_modified&gt;
+   &lt;/result&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0004364&lt;/accession&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0004364&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;date_created&gt;2005-01-08 00:00:00&lt;/date_created&gt;
+      &lt;last_modified&gt;2009-01-01 00:00:00&lt;/last_modified&gt;
+   &lt;/result&gt;
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result_4-classmw-headlinejson-resultspan"><span id="JSON_Result_4" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       query_time:'2009-01-15 09:03:00',
+       query_url:'http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515',
+       result:[
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0085432',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0085432'
+               },
+               date_created:'2003-03-08 00:00:00',
+               last_modified:'2005-01-15 09:03:00'
+           },
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0004364',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0004364'
+               },
+               date_created:'2005-01-08 00:00:00',
+               last_modified:'2009-01-01 00:00:00'
+           }
+       ]
+   }
+}
+</code></pre>
+<h4 id="span-idgene_ortholog_search-classmw-headlinegene-ortholog-searchspan"><span id="Gene_ortholog_search" class="mw-headline">Gene ortholog search</span></h4>
+<h5 id="span-idservice_name_5-classmw-headlineservice-namespan"><span id="Service_name_5" class="mw-headline">Service name</span></h5>
+<p>orthologs/gene</p>
+<h5 id="span-idpurpose_5-classmw-headlinepurposespan"><span id="Purpose_5" class="mw-headline">Purpose</span></h5>
+<p>Search for orthologs of the supplied gene ID.</p>
+<h5 id="span-iddescription_4-classmw-headlinedescriptionspan"><span id="Description_4" class="mw-headline">Description</span></h5>
+<p>This service returns genes that have been determined by some means to be
+orthologous to the supplied gene ID. If the supplied gene ID is within
+the namespace of the web service provider then all known orthologs of
+that gene are returned. If the supplied gene ID is not within the
+namespace of the web service provider then it only returns genes for
+organisms that are offered by the service provider.</p>
+<p>For example, for a given gene FlyBase stores orthology calls to other
+FlyBase genes and non FlyBase genes. Thus, given a FlyBase gene ID you
+can obtain a list of gene IDs for genes within FlyBase and to other non
+Drosophila species. In addition, given a non FlyBase gene ID you can
+obtain a list of FlyBase genes that are orthologous to it.</p>
+<p>Results can be restricted to a specific organism by supplying the NCBI
+taxonomy ID.</p>
+<h5 id="span-idurl_5-classmw-headlineurlspan"><span id="URL_5" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/orthologs/gene/&lt;gene
+ID&gt;[.xml |
+.json]?[taxid=&lt;taxid&gt;][genus=&lt;genus&gt;][species=&lt;species&gt;]</p>
+<h5 id="span-idreturn_types_6-classmw-headlinereturn-typesspan"><span id="Return_types_6" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type_5-classmw-headlinedefault-return-typespan"><span id="Default_return_type_5" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_5-classmw-headlineexample-urlsspan"><span id="Example_URLs_5" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0004364">http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0004364</a> - Find all
+FlyBase and non FlyBase genes that are orthologous to FBgn0004364.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0004364?taxid=7240">http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0004364?taxid=7240</a> -
+Find out if FBgn0004364 has an ortholog in Drosophila simulans.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/gene/WBGene12345.json">http://flybase.org/gmodrpc/v1.1/orthologs/gene/WBGene12345.json</a> - Find
+all FlyBase genes that are orthologous to WBGene12345 and return a
+JSON result.</li>
+</ul>
+<h5 id="span-idxml_result-classmw-headlinexml-resultspan-1"><span id="XML_Result:" class="mw-headline">XML Result:</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;query_time&gt;2009-01-15 09:03:00&lt;/query_time&gt;
+   &lt;query_url&gt;http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0000490&lt;/query_url&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0097591&lt;/accession&gt;
+         &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0097591&lt;/url&gt;
+      &lt;/dbxref&gt;
+   &lt;/result&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+          &lt;db&gt;ENSEMBL&lt;/db&gt;
+          &lt;accession&gt;ENSBTAP00000004992&lt;/accession&gt;
+          &lt;data_provider&gt;InParanoid&lt;/data_provider&gt;
+      &lt;/dbxref&gt;
+   &lt;/result&gt;
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result_5-classmw-headlinejson-resultspan"><span id="JSON_Result_5" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       query_time:'2009-01-15 09:03:00',
+       query_url:'http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0000490',
+       result:[
+           {
+               dbxref:{
+                   db:'FlyBase',
+                   accession:'FBgn0097591',
+                   data_provider:'FlyBase'
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0097591'
+               }
+           },
+           {
+               dbxref:{
+                   db:'ENSEMBL',
+                   accession:'ENSBTAP00000004992',
+                   data_provider:'InParanoid'
+               }
+           }
+       ]
+   }
+}
+</code></pre>
+<h4 id="span-idorganism_ortholog_search-classmw-headlineorganism-ortholog-searchspan"><span id="Organism_ortholog_search" class="mw-headline">Organism ortholog search</span></h4>
+<h5 id="span-idservice_name_6-classmw-headlineservice-namespan"><span id="Service_name_6" class="mw-headline">Service name</span></h5>
+<p>orthologs/organism</p>
+<h5 id="span-idpurpose_6-classmw-headlinepurposespan"><span id="Purpose_6" class="mw-headline">Purpose</span></h5>
+<p>Returns a list of orthologs between an organism and one or more other
+organisms.</p>
+<h5 id="span-iddescription_5-classmw-headlinedescriptionspan"><span id="Description_5" class="mw-headline">Description</span></h5>
+<p>This service returns genes that have been determined by some means to be
+orthologous between a single organism and one or more other organisms.
+The organisms are specified by providing taxonomy IDs.</p>
+<h5 id="span-idurl_6-classmw-headlineurlspan"><span id="URL_6" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api
+version&gt;/orthologs/organism[/&lt;taxid&gt;][/genus/&lt;genus&gt;/species/&lt;species&gt;][.xml
+|
+.json]?[to_taxid=&lt;taxid&gt;][to_genus=&lt;genus&gt;&amp;to_species=&lt;species&gt;]</p>
+<h5 id="span-idreturn_types_7-classmw-headlinereturn-typesspan"><span id="Return_types_7" class="mw-headline">Return types</span></h5>
+<p>XML or JSON</p>
+<h5 id="span-iddefault_return_type_6-classmw-headlinedefault-return-typespan"><span id="Default_return_type_6" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_6-classmw-headlineexample-urlsspan"><span id="Example_URLs_6" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/organism/genus/Drosophila/species/melanogaster">http://flybase.org/gmodrpc/v1.1/orthologs/organism/genus/Drosophila/species/melanogaster</a> -
+Find all orthologs between Dmel and any other species.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/organism/7227.xml?to_taxid=7240">http://flybase.org/gmodrpc/v1.1/orthologs/organism/7227.xml?to_taxid=7240</a> -
+Find all orthologs between Dmel and Dsim.</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/orthologs/organism/7227.json?to_taxid=7240">http://flybase.org/gmodrpc/v1.1/orthologs/organism/7227.json?to_taxid=7240</a> -
+Same as above except returned in JSON format.</li>
+</ul>
+<h5 id="span-idxml_result_2-classmw-headlinexml-resultspan-1"><span id="XML_Result:_2" class="mw-headline">XML Result:</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;resultset&gt;
+   &lt;api_version&gt;1.1&lt;/api_version&gt;
+   &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+   &lt;data_version&gt;FB2008_10&lt;/data_version&gt;
+   &lt;query_time&gt;2009-01-15 09:03:00&lt;/query_time&gt;
+   &lt;query_url&gt;http://flybase.org/gmodrpc/v1.1/orthologs/organism/genus/Drosophila/species/melanogaster&lt;/query_url&gt;
+   &lt;result&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0000490&lt;/accession&gt;
+         &lt;taxonomy_id&gt;7227&lt;/taxonomy_id&gt;
+         &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0000490&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;FlyBase&lt;/db&gt;
+         &lt;accession&gt;FBgn0015673&lt;/accession&gt;
+         &lt;taxonomy_id&gt;7240&lt;/taxonomy_id&gt;
+         &lt;data_provider&gt;FlyBase&lt;/data_provider&gt;
+         &lt;url&gt;http://flybase.org/gmodrpc/v1.1/fetch/FBgn0015673&lt;/url&gt;
+      &lt;/dbxref&gt;
+      &lt;dbxref&gt;
+         &lt;db&gt;WormBase&lt;/db&gt;
+         &lt;accession&gt;WBGene00006570&lt;/accession&gt;
+         &lt;taxonomy_id&gt;6239&lt;/taxonomy_id&gt;
+         &lt;data_provider&gt;InParanoid&lt;/data_provider&gt;
+         &lt;url&gt;http://wormbase.org/gmodrpc/v1.1/fetch/WBGene00006570&lt;/url&gt;
+      &lt;/dbxref&gt;
+   &lt;/result&gt;
+...
+&lt;/resultset&gt;
+</code></pre><h5 id="span-idjson_result_6-classmw-headlinejson-resultspan"><span id="JSON_Result_6" class="mw-headline">JSON Result</span></h5>
+<pre><code>{
+   resultset:{
+       api_version:1.1,
+       data_provider:'FlyBase',
+       data_version:'FB2008_10',
+       query_time:'2009-01-15 09:03:00',
+       query_url:'http://flybase.org/gmodrpc/v1.1/orthologs/organism/genus/Drosophila/species/melanogaster',
+       result:[
+         {
+           dbxref:[
+               {
+                   db:'FlyBase',
+                   accession:'FBgn0000490',
+                   taxonomy_id:7227,
+                   data_provider:'FlyBase',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0000490'
+               },
+               {
+                   db:'FlyBase',
+                   accession:'FBgn0015673'
+                   taxonomy_id:7240,
+                   data_provider:'FlyBase',
+                   url:'http://flybase.org/gmodrpc/v1.1/fetch/FBgn0015673'
+               },
+               {
+                   db:'WormBase',
+                   accession:'WBGene00006570',
+                   taxonomy_id:6239,
+                   data_provider:'InParanoid',
+                   url:'http://wormbase.org/gmodrpc/v1.1/fetch/WBGene00006570'
+               }
+           ]
+         }
+       ]
+   }
+}
+</code></pre>
+<h3 id="span-idfetching-classmw-headlinefetchingspan"><span id="Fetching" class="mw-headline">Fetching</span></h3>
+<h4 id="span-idgene_records-classmw-headlinegene-recordsspan"><span id="Gene_records" class="mw-headline">Gene records</span></h4>
+<h5 id="span-idservice_name_7-classmw-headlineservice-namespan"><span id="Service_name_7" class="mw-headline">Service name</span></h5>
+<p>fetch/gene</p>
+<h5 id="span-idpurpose_7-classmw-headlinepurposespan"><span id="Purpose_7" class="mw-headline">Purpose</span></h5>
+<p>To fetch gene records in the Generic gene page XML format as implemented
+by <a href="/wiki/Bio_GMOD_GenericGenePage" title="Bio GMOD GenericGenePage">Bio GMOD
+GenericGenePage</a>.</p>
+<h5 id="span-iddescription_6-classmw-headlinedescriptionspan"><span id="Description_6" class="mw-headline">Description</span></h5>
+<h5 id="span-idurl_7-classmw-headlineurlspan"><span id="URL_7" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/fetch/gene/&lt;gene ID&gt;</p>
+<h5 id="span-idreturn_types_8-classmw-headlinereturn-typesspan"><span id="Return_types_8" class="mw-headline">Return types</span></h5>
+<p>XML</p>
+<h5 id="span-iddefault_return_type_7-classmw-headlinedefault-return-typespan"><span id="Default_return_type_7" class="mw-headline">Default return type</span></h5>
+<p>XML</p>
+<h5 id="span-idexample_urls_7-classmw-headlineexample-urlsspan"><span id="Example_URLs_7" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fetch/gene/FBgn0097591">http://flybase.org/gmodrpc/v1.1/fetch/gene/FBgn0097591</a></li>
+</ul>
+<h5 id="span-idxml_result_5-classmw-headlinexml-resultspan"><span id="XML_Result_5" class="mw-headline">XML Result</span></h5>
+<p>See <a href="/wiki/Bio_GMOD_GenericGenePage" title="Bio GMOD GenericGenePage">Bio GMOD
+GenericGenePage</a>
+for example XML.</p>
+<h4 id="span-idsequence-classmw-headlinesequencespan"><span id="Sequence" class="mw-headline">Sequence</span></h4>
+<h5 id="span-idservice_name_8-classmw-headlineservice-namespan"><span id="Service_name_8" class="mw-headline">Service name</span></h5>
+<p>fetch/seq</p>
+<h5 id="span-idpurpose_8-classmw-headlinepurposespan"><span id="Purpose_8" class="mw-headline">Purpose</span></h5>
+<p>Returns FASTA sequence for the specified query.</p>
+<h5 id="span-iddescription_7-classmw-headlinedescriptionspan"><span id="Description_7" class="mw-headline">Description</span></h5>
+<h5 id="span-idurl_8-classmw-headlineurlspan"><span id="URL_8" class="mw-headline">URL</span></h5>
+<p><a href="http://yourmod.org/gmodrpc/v">http://yourmod.org/gmodrpc/v</a>&lt;api version&gt;/fetch/seq/&lt;ID&gt;[/&lt;SO term
+ID of subtype&gt;]</p>
+<h5 id="span-idreturn_types_9-classmw-headlinereturn-typesspan"><span id="Return_types_9" class="mw-headline">Return types</span></h5>
+<p>FASTA</p>
+<h5 id="span-idexample_urls_8-classmw-headlineexample-urlsspan"><span id="Example_URLs_8" class="mw-headline">Example URLs</span></h5>
+<ul>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591.fasta">http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591.fasta</a> - Fetch
+the FASTA sequence of FBgn0097591</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000204.fasta">http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000204.fasta</a> -
+Download all 5&rsquo; UTRs of the gene FBgn0097591</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta">http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta</a> -
+Download all CDS features of the gene FBgn0097591</li>
+<li><a href="http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta">http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta</a> -
+Download all CDS features of the gene FBgn0097591</li>
+</ul>
+<h5 id="span-idfasta_result-classmw-headlinefasta-resultspan"><span id="FASTA_Result:" class="mw-headline">FASTA Result:</span></h5>
+<h2 id="span-idtodo-classmw-headlinetodospan"><span id="TODO" class="mw-headline">TODO</span></h2>
+<ul>
+<li>WADLs for all services?</li>
+</ul>
+<p><a href="/wiki/Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="/wiki/Category%253AWeb_services" title="Category%253AWeb services">Web services</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="/wiki/Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="/wiki/GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="/wiki/Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="/wiki/Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="/wiki/Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="/wiki/Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="/wiki/Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="/wiki/Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="/wiki/GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="/wiki/Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="/wiki/Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="/wiki/GMOD_Promotion">GMOD
+Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="/wiki/Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="/wiki/Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/GMOD_RPC_API" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:02 on 15 August
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">187,467 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

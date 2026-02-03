@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautocloudspan"><span dir="auto">Cloud</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/400px-GitcLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/600px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/800px-GitcLogo.png 2x"
+width="400" height="229" alt="GMOD in the Cloud" /></p>
+<p>GMOD in the Cloud is a <a href="Category%253AGMOD_virtual_server" title="Category%253AGMOD virtual server">GMOD virtual
+server</a>
+equipped with a suite of preconfigured GMOD components, including a
+<strong>Chado</strong> database, <strong>GBrowse2</strong>, <strong>JBrowse</strong>, <strong>Tripal</strong>, and <strong>Apollo
+or WebApollo</strong>. Setting up a GMOD in the Cloud instance is quick and
+easy; it even comes with demo data to explore if you do not have your
+own. If you are investigating GMOD for the first time, GMOD in the Cloud
+provides an excellent way to assess GMOD components without having to do
+any installation; for longer-term uses, the virtual server can be kept
+running as long as required, and data can easily be moved when new
+versions of GMOD in the Cloud are released.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#What.27s_in_GMOD_in_the_Cloud"><span class="tocnumber">1</span> <span class="toctext">What&rsquo;s in GMOD
+in the Cloud</span></a></li>
+<li><a href="#Where_to_find_GMOD_in_the_Cloud"><span class="tocnumber">2</span> <span class="toctext">Where to find
+GMOD in the Cloud</span></a>
+<ul>
+<li><a href="#About_instance_types"><span class="tocnumber">2.1</span> <span class="toctext">About
+instance types</span></a></li>
+<li><a href="#Build_information"><span class="tocnumber">2.2</span> <span class="toctext">Build
+information</span></a></li>
+</ul>
+</li>
+<li><a href="#Getting_Started"><span class="tocnumber">3</span> <span class="toctext">Getting
+Started</span></a>
+<ul>
+<li><a href="#Directory_Structure"><span class="tocnumber">3.1</span> <span class="toctext">Directory
+Structure</span></a></li>
+<li><a href="#Updating_from_previous_versions"><span class="tocnumber">3.2</span> <span class="toctext">Updating
+from previous versions</span></a></li>
+<li><a href="#Phoning_home"><span class="tocnumber">3.3</span> <span class="toctext">Phoning
+home</span></a></li>
+</ul>
+</li>
+<li><a href="#Installed_GMOD_software"><span class="tocnumber">4</span> <span class="toctext">Installed GMOD
+software</span></a>
+<ul>
+<li><a href="#PostgreSQL"><span class="tocnumber">4.1</span>
+<span class="toctext">PostgreSQL</span></a></li>
+<li><a href="#Drupal"><span class="tocnumber">4.2</span>
+<span class="toctext">Drupal</span></a></li>
+<li><a href="#Tripal"><span class="tocnumber">4.3</span>
+<span class="toctext">Tripal</span></a></li>
+<li><a href="#Chado"><span class="tocnumber">4.4</span>
+<span class="toctext">Chado</span></a></li>
+<li><a href="#GBrowse2"><span class="tocnumber">4.5</span>
+<span class="toctext">GBrowse2</span></a></li>
+<li><a href="#JBrowse"><span class="tocnumber">4.6</span>
+<span class="toctext">JBrowse</span></a></li>
+<li><a href="#WebApollo"><span class="tocnumber">4.7</span>
+<span class="toctext">WebApollo</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idwhat27s_in_gmod_in_the_cloud-classmw-headlinewhats-in-gmod-in-the-cloudspan"><span id="What.27s_in_GMOD_in_the_Cloud" class="mw-headline">What&rsquo;s in GMOD in the Cloud</span></h2>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/300px-Gitc-poster-alt.jpg"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/450px-Gitc-poster-alt.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/600px-Gitc-poster-alt.jpg 2x"
+width="300" height="424" alt="GMOD in the Cloud poster" /></p>
+<p><a href="Chado" title="Chado"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/200px-ChadoLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/300px-ChadoLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/400px-ChadoLogo.png 2x"
+width="200" height="44" alt="Chado logo" /></a> 1.23</p>
+<p><a href="GBrowse.1" title="GBrowse"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/200px-GBrowseLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png 2x"
+width="200" height="47" alt="GBrowse logo" /></a> 2.55</p>
+<p><a href="GBrowse_syn.1" title="GBrowse syn"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/200px-GBrowse_syn_logo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/300px-GBrowse_syn_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/400px-GBrowse_syn_logo.png 2x"
+width="200" height="64" alt="GBrowse_syn logo" /></a></p>
+<p><a href="JBrowse.1" title="JBrowse"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/200px-JBrowseLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/300px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/400px-JBrowseLogo.png 2x"
+width="200" height="44" alt="JBrowse logo" /></a>
+1.10.12</p>
+<p><a href="Tripal.1" title="Tripal"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
+width="200" height="60" alt="Tripal logo" /></a> 1.1</p>
+<p><a href="WebApollo.1" title="WebApollo"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/200px-WebApolloLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/400px-WebApolloLogo.png 2x"
+width="200" height="55" alt="WebApollo logo" /></a>
+11/22/2013</p>
+<p><a href="http://cloud.gmod.org" class="external text"
+rel="nofollow">Visit a GMOD in the Cloud demo server</a></p>
+<h2 id="span-idwhere_to_find_gmod_in_the_cloud-classmw-headlinewhere-to-find-gmod-in-the-cloudspan"><span id="Where_to_find_GMOD_in_the_Cloud" class="mw-headline">Where to find GMOD in the Cloud</span></h2>
+<ul>
+<li>Amazon AMI ID: ami-a9d7f9c0 (in the US East-Virgina zone);</li>
+<li>Name: <strong>GMOD in the Cloud 2.05</strong></li>
+</ul>
+<p>(as of December 16, 2013)</p>
+<p><em>Important note:</em> GMOD in the Cloud includes a small script that sends
+an email to the GMOD developers to let them know that someone is using a
+GMOD in the Cloud instance. GMOD uses this to track the popularity of
+virtual GMOD installations for grants and funding purposes. For more
+information, see <a href="Cloud.1#Phoning_home" title="Cloud">the phoning home
+section</a> below.</p>
+<p>Versions 1.1-1.3 of GMOD in the Cloud are compatible with
+<a href="Apollo.1" title="Apollo">Apollo</a>; version 2.0 onwards contain
+<a href="WebApollo.1" title="WebApollo">WebApollo</a>.</p>
+<h4 id="span-idabout_instance_types-classmw-headlineabout-instance-typesspan"><span id="About_instance_types" class="mw-headline">About instance types</span></h4>
+<p>While GMOD in the Cloud 2.0 will run as a micro instance, it won&rsquo;t run
+well. Specifically, running GBrowse with FastCGI will have a hard time,
+and WebApollo won&rsquo;t work at all. The demo instance running at
+<a href="http://cloud.gmod.org/" class="external text"
+rel="nofollow">cloud.gmod.org</a> is a small instance.</p>
+<h4 id="span-idbuild_information-classmw-headlinebuild-informationspan"><span id="Build_information" class="mw-headline">Build information</span></h4>
+<p><a href="User%253AScott" title="User%253AScott">Scott</a> has fairly extensive notes on the
+configuration file edits and the commands used when building GMOD in the
+Cloud. See his <a
+href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
+class="external text" rel="nofollow">github repository</a> for more
+information.</p>
+<h2 id="span-idgetting_started-classmw-headlinegetting-startedspan"><span id="Getting_Started" class="mw-headline">Getting Started</span></h2>
+<p>GMOD in the Cloud is running on Ubuntu 12.04 LTS. The virtual machine is
+split into two partitions, <code>root</code> and <code>data</code>. All user information
+should be kept in the <code>data</code> partition to make backup and updates easy.</p>
+<p>Step-by-step instructions for starting up GMOD in the Cloud can be found
+at the <a href="GMOD_Cloud_Tutorial" title="GMOD Cloud Tutorial">GMOD Cloud Tutorial</a>.</p>
+<h3 id="span-iddirectory_structure-classmw-headlinedirectory-structurespan"><span id="Directory_Structure" class="mw-headline">Directory Structure</span></h3>
+<p>When you first log in to the virtual machine, you will be in the
+<em>ubuntu</em> user&rsquo;s home directory, <code>/home/ubuntu</code>, on the <code>root</code> partition
+of the machine. We recommend that any information that you want to save
+be kept in the <code>data</code> partition. There is a link to the <code>data</code> partition
+called <code>dataHome</code>, so you can easily change directories by running
+<code>cd /home/ubuntu/dataHome</code> or <code>cd ~/dataHome</code>. The <code>dataHome</code> directory
+contains a <code>bashrc</code>
+(<a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)‎"
+class="external text" rel="nofollow">bash shell</a> configuration file)
+that is automatically executed when you log in, and any shell
+environment changes you want to make should be added to this file.</p>
+<p>There are several other important directories that have been moved to
+the <code>data</code> partition. In all cases, the original files have been
+replaced by symlinks, so changes made to the files noted below are
+picked up as if the files were in their original locations. If you need
+other files moved to the <code>data</code> partition, please
+<a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
+rel="nofollow">email the GMOD developers list</a> so that we can
+incorporate the changes into future iterations of GMOD in the Cloud.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/data/etc/gbrowse</td>
+<td>The config directory for GBrowse.</td>
+</tr>
+<tr>
+<td>/data/etc/postgresql</td>
+<td>The config directory for PostgreSQL</td>
+</tr>
+<tr>
+<td>/data/opt</td>
+<td>A good place to install any other software you want to use</td>
+</tr>
+<tr>
+<td>/data/var/lib/gbrowse2</td>
+<td>Other GBrowse files that might be modified on your instance, including user session data and flat file databases.</td>
+</tr>
+<tr>
+<td>/data/var/lib/postgresql</td>
+<td>Files for the PostgreSQL database</td>
+</tr>
+<tr>
+<td>/data/var/www/.htaccess</td>
+<td>The htaccess file for the main Drupal site</td>
+</tr>
+<tr>
+<td>/data/var/www/jbrowse/jbrowse_conf.json</td>
+<td>Config file for JBrowse</td>
+</tr>
+<tr>
+<td>/data/var/www/jbrowse/data</td>
+<td>All of the data files needed for running JBrowse</td>
+</tr>
+<tr>
+<td>/data/var/www/sites/default</td>
+<td>Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all)</td>
+</tr>
+<tr>
+<td>/data/webapollo</td>
+<td>WebApollo data</td>
+</tr>
+<tr>
+<td>/data/var/lib/tomcat7/webapps/WebApollo/config</td>
+<td>Config options for WebApollo</td>
+</tr>
+<tr>
+<td>/data/usr/share/tomcat7/bin</td>
+<td>setenv.sh for tomcat; used to increase allocated memory for tomcat</td>
+</tr>
+</tbody>
+</table>
+<p>Note that changes made to files in any other locations will be lost.</p>
+<h3 id="span-idupdating_from_previous_versions-classmw-headlineupdating-from-previous-versionsspan"><span id="Updating_from_previous_versions" class="mw-headline">Updating from previous versions</span></h3>
+<p>Instances of GMOD in the Cloud can be updated by replacing the <code>data</code>
+partition in the new instance with the <code>data</code> partition from the old
+instance. For more information, see the <a href="Cloud/Updating" title="Cloud/Updating">updating
+guide</a>.</p>
+<h3 id="span-idphoning_home-classmw-headlinephoning-homespan"><span id="Phoning_home" class="mw-headline">Phoning home</span></h3>
+<p>When a GMOD in the Cloud server starts up for the first time, it sends
+an email to the GMOD developers with information about the instance.
+These data are kept private and are strictly for statistical purposes,
+primarily for funding and grant applications.</p>
+<p>The script currently sends the following information:</p>
+<ul>
+<li>the ID of the AMI being used</li>
+<li>the size of the instance (micro, small, medium, etc.)</li>
+<li>public IP address</li>
+</ul>
+<p>If you would like to send more information, this would be very helpful.
+You can provide this information in the <code>userdata</code> box when configuring
+the instance. The following information is optional, but helpful to
+GMOD:</p>
+<ul>
+<li><code>email: </code> your email address</li>
+<li><code>org: </code> your organization</li>
+<li><code>organism: </code> the organism(s) you are working on</li>
+</ul>
+<p>To disable the phone home email, put the following in the user data box:</p>
+<p><code>NoCallHome: 1</code></p>
+<h2 id="span-idinstalled_gmod_software-classmw-headlineinstalled-gmod-softwarespan"><span id="Installed_GMOD_software" class="mw-headline">Installed GMOD software</span></h2>
+<h3 id="span-idpostgresql-classmw-headlinepostgresqlspan"><span id="PostgreSQL" class="mw-headline">PostgreSQL</span></h3>
+<p>Database name: <code>drupal</code></p>
+<p>Username: <code>drupal</code></p>
+<p>See the
+<a href="Postgres" class="mw-redirect" title="Postgres">Postgres</a>
+database connection parameters in <code>/var/www/sites/default/settings.php</code>
+for more information.</p>
+<p>There is also a Postgres user named <strong>ubuntu</strong> with superuser
+privileges. The Postgres <code>search_path</code> for this user is set to look in
+the Chado schema before the public schema; this account should be used
+for tools that interact with Chado (e.g. GBrowse, Tripal, and any
+command line tools from GMOD).</p>
+<h3 id="span-iddrupal-classmw-headlinedrupalspan"><span id="Drupal" class="mw-headline">Drupal</span></h3>
+<p>Version: 6.28</p>
+<p>Source:
+<a href="http://drupal.org" class="external text" rel="nofollow">Drupal
+website</a></p>
+<p>Installation dir: <code>/var/www</code></p>
+<p>Web URL: ec2-##-##-##-##.compute-1.amazonaws.com/</p>
+<p>When navigating with a web browser to the Apache document root (i.e.,
+<a href="http://127.0.0.1/" class="external free"
+rel="nofollow">http://127.0.0.1/</a> or the IP address of your server),
+you will get the Drupal home page.</p>
+<p>New modules can be added at <code>/data/var/www/sites/default/modules</code> and
+new themes can be added at <code>/data/var/www/sites/default/themes</code>.</p>
+<h3 id="span-idtripal-classmw-headlinetripalspan"><span id="Tripal" class="mw-headline">Tripal</span></h3>
+<p>Version: 1.1</p>
+<p>Source: <a href="Tripal.1" title="Tripal">Tripal</a> svn</p>
+<p>Installation dir: <code>/var/www/sites/all/modules/tripal</code></p>
+<h3 id="span-idchado-classmw-headlinechadospan"><span id="Chado" class="mw-headline">Chado</span></h3>
+<p>Version: 1.23</p>
+<p>Tripal was used to install the Chado 1.23 database schema and load
+ontologies and a GFF file containing yeast genome annotations from SGD
+(source: <a
+href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
+class="external free"
+rel="nofollow"><a href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff">http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff</a></a>),
+as well as a sample GFF contig file output from <a href="MAKER.1" title="MAKER">MAKER</a>
+for the <em>Pythium ultimum</em> (source:
+<a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
+class="external free"
+rel="nofollow"><a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz">http://icebox.lbl.gov/webapollo/data/pyu_data.tgz</a></a>).</p>
+<p>The Chado software package is in the home directory, ~/sources/chado,
+and was used to install many utility scripts via the standard
+installation method for Perl modules
+(<code>perl Makefile.PL; make; sudo make install</code>). This checkout can be
+updated with &ldquo;svn update&rdquo; like the Tripal svn checkout.</p>
+<h3 id="span-idgbrowse2-classmw-headlinegbrowse2span"><span id="GBrowse2" class="mw-headline">GBrowse2</span></h3>
+<p>Version: 2.55</p>
+<p>The configuration file for the Chado database is /data/etc/gbrowse2;
+config files for the demo data: yeast: <code>07.chado.conf</code>; <em>P. ultimum</em>:
+<code>pythium.conf</code>.</p>
+<p>GBrowse is configured to use
+<a href="https://httpd.apache.org/mod_fcgid/" class="external text"
+rel="nofollow">fcgid</a>, a web server add-on that helps speed up
+GBrowse. To use it, your GBrowse URLs should look like this:</p>
+<pre><code>   ec2-##-##-##-##.compute-1.amazonaws.com/fgb2/gbrowse/yeast
+</code></pre>
+<p>If there are problems with fcgid, you can still use the non-accelerated
+GBrowse at</p>
+<pre><code>   ec2-##-##-##-##.compute-1.amazonaws.com/cgi-bin/gb2/gbrowse/yeast
+</code></pre>
+<h3 id="span-idjbrowse-classmw-headlinejbrowsespan"><span id="JBrowse" class="mw-headline">JBrowse</span></h3>
+<p>Version: 1.10.12</p>
+<p>Source: <a href="http://jbrowse.org" class="external text"
+rel="nofollow">JBrowse website</a></p>
+<p>Installation dir: <code>/var/www/jbrowse</code></p>
+<p>Web URL: ec2-##-##-##-##.compute-1.amazonaws.com/jbrowse</p>
+<p>Configuration file (defines database connection parameters, tracks):
+<code>~/jbrowse.conf</code>.</p>
+<p>The Pythium dataset was created in a way similar to the
+<a href="JBrowse_Tutorial_2012" class="mw-redirect"
+title="JBrowse Tutorial 2012">JBrowse tutorial</a> and using the
+configuration file <code>~/pythium-1.conf</code>.</p>
+<p>JBrowse was configured to have multiple datasets using the
+jbrowse_conf.json file as described in the <a href="JBrowse_Configuration_Guide#Dataset_Selector" title="JBrowse Configuration Guide">JBrowse configuration
+guide</a>.
+This file is at <code>/data/var/www/jbrowse/jbrowse_conf.json</code>.</p>
+<h3 id="span-idwebapollo-classmw-headlinewebapollospan"><span id="WebApollo" class="mw-headline">WebApollo</span></h3>
+<p>Version: 11/22/2013</p>
+<p>WebApollo was installed per the directions on the
+<a href="WebApollo.1" title="WebApollo">WebApollo</a> page. In addition to the admin
+user, a second user with limited permissions was created with username:
+&ldquo;guest&rdquo;, password: &ldquo;guest&rdquo;.</p>
+<p>Check out the <a href="GMOD_in_a_Box/WebApollo" title="GMOD in a Box/WebApollo">WebApollo setup
+instructions</a>
+specific to the VM for help in setting up your data.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGMOD_virtual_server" title="Category%253AGMOD virtual server">GMOD virtual
+server</a></li>
+<li><a href="Category%253AGMOD_in_the_Cloud" title="Category%253AGMOD in the Cloud">GMOD in the
+Cloud</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Cloud" rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:10 on 16 December
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">360,124 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

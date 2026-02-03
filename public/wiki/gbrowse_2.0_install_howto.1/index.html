@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse 2.0 Install HOWTO - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-20-install-howtospan"><span dir="auto">GBrowse 2.0 Install HOWTO</span></h1>
+<p>This article describes <strong>how to install GBrowse 2.0</strong> on either Linux or
+Mac OSX systems. Before you begin, please make sure that your system has
+all the <a href="GBrowse_2.0_Prerequisites" title="GBrowse 2.0 Prerequisites">GBrowse 2.0
+Prerequisites</a>
+installed. The easiest and most straightforward way to get a basic
+installation up and running is through the
+<a href="http://www.cpan.org/" class="external text" rel="nofollow">CPAN
+system</a>, where GBrowse is available
+<a href="http://search.cpan.org/dist/GBrowse/" class="external text"
+rel="nofollow">as a module</a> that can be installed - see <a href="#Installing_via_the_CPAN_Shell">Installing
+via the CPAN Shell</a> below for more
+details. This will install the newest stable version of GBrowse.</p>
+<p>Advanced users can also install the latest, bleeding-edge, unstable
+version of GBrowse manually. You will have to build it from the source
+code available at our <a
+href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/"
+class="external text" rel="nofollow">SVN code repository</a> - see
+<a href="#Installing_Manually">Installing Manually</a> for a full description of
+how that process works.</p>
+<ul>
+<li><em>For the main GBrowse 2.0 HOWTO article, see: <a href="GBrowse_2.0_HOWTO" title="GBrowse 2.0 HOWTO">GBrowse 2.0
+HOWTO</a>.</em></li>
+<li><em>See also: <a href="GBrowse_Install_HOWTO" title="GBrowse Install HOWTO">GBrowse Install
+HOWTO</a>.</em></li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Installing_via_the_CPAN_Shell"><span class="tocnumber">1</span> <span class="toctext">Installing via
+the CPAN Shell</span></a>
+<ul>
+<li><a href="#Ubuntu_11.04_Issue"><span class="tocnumber">1.1</span> <span class="toctext">Ubuntu
+11.04 Issue</span></a></li>
+</ul>
+</li>
+<li><a href="#Installing_Manually"><span class="tocnumber">2</span> <span class="toctext">Installing
+Manually</span></a>
+<ul>
+<li><a href="#Running_the_Build.PL_Script"><span class="tocnumber">2.1</span> <span class="toctext">Running
+the Build.PL Script</span></a></li>
+<li><a href="#Running_the_Build_Script"><span class="tocnumber">2.2</span> <span class="toctext">Running
+the Build Script</span></a></li>
+<li><a href="#Selecting_Installation_Directories"><span class="tocnumber">2.3</span> <span class="toctext">Selecting
+Installation
+Directories</span></a></li>
+<li><a href="#Configure_in_Mac_OS_X_10.6.6"><span class="tocnumber">2.4</span> <span class="toctext">Configure
+in Mac OS X 10.6.6</span></a></li>
+<li><a href="#Running_the_GBrowse_Demo_.28optional.29"><span class="tocnumber">2.5</span> <span class="toctext">Running
+the GBrowse Demo
+(optional)</span></a></li>
+<li><a href="#Registering_GBrowse_.28optional.29"><span class="tocnumber">2.6</span>
+<span class="toctext">Registering GBrowse
+(optional)</span></a></li>
+<li><a href="#Final_Installation"><span class="tocnumber">2.7</span> <span class="toctext">Final
+Installation</span></a></li>
+</ul>
+</li>
+<li><a href="#Debugging_and_Customizing_the_Installation"><span class="tocnumber">3</span> <span class="toctext">Debugging and
+Customizing the
+Installation</span></a></li>
+<li><a href="#Advanced_Installation_Topics"><span class="tocnumber">4</span> <span class="toctext">Advanced
+Installation Topics</span></a></li>
+</ul>
+<h2 id="span-idinstalling_via_the_cpan_shell-classmw-headlineinstalling-via-the-cpan-shellspan"><span id="Installing_via_the_CPAN_Shell" class="mw-headline">Installing via the CPAN Shell</span></h2>
+<p>For a smooth experience, please install all <a href="GBrowse_2.0_Prerequisites" title="GBrowse 2.0 Prerequisites">GBrowse 2.0
+Prerequisites</a>
+before proceeding.</p>
+<p>You can install the latest released version of GBrowse by running the
+CPAN shell. Run this command:</p>
+<pre><code>sudo perl -MCPAN -e 'install Bio::Graphics::Browser2'
+</code></pre>
+<p>This will run all the steps described in the &ldquo;Installing Manually&rdquo;
+section below, including configuring GBrowse&rsquo;s installation directories
+and installing GBrowse and its demo databases. Among other things,
+GBrowse will ask you a series of questions about where to install it.
+See <a href="#Selecting_Installation_Directories">#Selecting Installation
+Directories</a> for a detailed
+description of each question. The suggested defaults are almost always
+correct.</p>
+<p>If any perl modules are missing from the prerequisites, the CPAN shell
+will install them for you.</p>
+<h3 id="span-idubuntu_1104_issue-classmw-headlineubuntu-1104-issuespan"><span id="Ubuntu_11.04_Issue" class="mw-headline">Ubuntu 11.04 Issue</span></h3>
+<p>The binary version of the GD Perl module that is packaged for Ubuntu
+11.04 (Natty Narwhal) contains a bug that causes BioPerl to fail several
+of its tests, blocking GBrowse installation. To fix:</p>
+<pre><code>sudo apt-get remove libgd-gd2-perl
+sudo apt-get install libgd2-noxpm-dev
+sudo perl -MCPAN -e 'install GD'
+</code></pre>
+<p>Then proceed to install Bio::Graphics::Browser2 as described above.</p>
+<h2 id="span-idinstalling_manually-classmw-headlineinstalling-manuallyspan"><span id="Installing_Manually" class="mw-headline">Installing Manually</span></h2>
+<p>Alternatively, you can download and install the bleeding edge version
+via GIT. For a smooth
+experience, please install all <a href="GBrowse_2.0_Prerequisites" title="GBrowse 2.0 Prerequisites">GBrowse 2.0
+Prerequisites</a>
+before proceeding.</p>
+<p>The command to issue is:</p>
+<pre><code>git clone https://github.com/GMOD/GBrowse
+</code></pre>
+<p>This will create a directory named <em>Generic-Genome-Browser</em>:</p>
+<h3 id="span-idrunning_the_buildpl_script-classmw-headlinerunning-the-buildpl-scriptspan"><span id="Running_the_Build.PL_Script" class="mw-headline">Running the Build.PL Script</span></h3>
+<p>Next, enter the newly-created directory and run the <code>Build.PL</code> script:</p>
+<pre><code> % cd Generic-Genome-Browser
+ % perl Build.PL
+ Checking whether your kit is complete...
+ Looks good
+
+ Checking prerequisites...
+ Looks good
+
+ cc -I/usr/lib/perl/5.8/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE \
+   -DTHREADS_HAVE_PIDS -DDEBIAN -fno-strict-aliasing -pipe \
+   -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 \
+    -O2 -o /tmp/compilet.o /tmp/compilet.c
+ cc -shared -L/usr/local/lib -o /tmp/compilet.so /tmp/compilet.o
+
+ Creating new 'Build' script for 'GBrowse' version '2.00'
+ Now run:
+  ./Build test
+  ./Build config
+  ./Build demo          (optional)
+  ./Build install       (as superuser/administrator)
+        -or-
+  ./Build install_slave (optional, for slave installations)
+</code></pre>
+<p>Among other things, this script will report all the missing Perl
+libraries that you need to run GBrowse. Please be sure to <a href="GBrowse_2.0_Prerequisites" title="GBrowse 2.0 Prerequisites">install all
+prerequisites</a>
+before going any further. To install any missing Perl prerequisites
+automatically, you may run:</p>
+<pre><code>./Build installdeps
+</code></pre>
+<p>After running, Build.PL will create a script named <code>Build</code> in the
+current directory.</p>
+<h3 id="span-idrunning_the_build_script-classmw-headlinerunning-the-build-scriptspan"><span id="Running_the_Build_Script" class="mw-headline">Running the Build Script</span></h3>
+<p>You will now use Build to test, configure and install GBrowse. First you
+will confirm that GBrowse&rsquo;s libraries are completely functional by
+running <strong>./Build test</strong> (the &ldquo;./&rdquo; is there to ensure that you are
+running the Build script in the current directory, and not some other
+Build script somewhere in your path:</p>
+<pre><code> % ./Build test
+ t/01yeast...................ok
+ t/02.rearchitecture.........ok
+ t/03.render.................ok
+ ...
+ All tests successful.
+ Files=8, Tests=323, 12 wallclock secs
+ Result: PASS
+</code></pre>
+<p>All tests should pass (you may safely ignore warnings and occasional
+timeout errors). If not, please file a <a
+href="http://sourceforge.net/tracker/?func=add&amp;group_id=27707&amp;atid=391291"
+class="external text" rel="nofollow">bug report</a>, and/or send an
+inquiry to the
+<a href="https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"
+class="external text" rel="nofollow">GBrowse mailing list</a>.</p>
+<h3 id="span-idselecting_installation_directories-classmw-headlineselecting-installation-directoriesspan"><span id="Selecting_Installation_Directories" class="mw-headline">Selecting Installation Directories</span></h3>
+<p>After passings its tests, you should configure GBrowse by running
+<strong>./Build config</strong>:</p>
+<pre><code> % ./Build config
+
+ **Beginning interactive configuration**
+ Apache loadable module directory (for demo)? [/usr/lib/apache2/modules]
+ Apache CGI scripts directory? [/usr/lib/cgi-bin]
+ Directory for GBrowse's config and support files? [/etc/GBrowse2]
+ Directory for GBrowse's static images &amp; HTML files? [/var/www/gbrowse2]
+ Internet port to run demo web site on (for demo)? [8000]
+ User account under which Apache daemon runs? [www-data]
+
+ **Interactive configuration done. Run './Build reconfig' to reconfigure**
+</code></pre>
+<p>The configuration process will ask you to confirm six site-specific
+configuration options, and will do its best to guess for you. In most
+cases you can just hit return to accept the default. If you specify a
+directory that does not exist, the system will ask you to confirm that
+this is what you mean. If you press yes, the directory (and all its
+needed parents) will be created at install time.</p>
+<p>The configuration options are:</p>
+<p>apachemodules<br>
+The directory in which Apache&rsquo;s loadable modules are located. This is
+only needed to run a demo GBrowse site before formal installation. If
+you do not know the location of this directory and you do not want to
+run the demo, you can safely ignore this option.</p>
+<p>cgibin<br>
+The directory in which Apache&rsquo;s executable CGI scripts are located, for
+example <em>/usr/lib/cgi-bin</em>. This directory is set up for you when Apache
+is installed, and you must have the path correct in order for Build to
+install GBrowse&rsquo;s CGI scripts in the right place. GBrowse will be
+installed into the &ldquo;gb2&rdquo; subdirectory, so its path will be
+&ldquo;/usr/lib/cgi-bin/gb2/gbrowse&rdquo;.</p>
+<p>conf<br>
+The location of GBrowse&rsquo;s configuration files. The default is to place
+them in <em>/etc/gbrowse2</em>. This is where you will go to customize GBrowse
+and add new data sources.</p>
+<p>databases<br>
+The default location for GBrowse&rsquo;s in memory databases, and the place
+where the example databases will be stored. The default is to place this
+into a subdirectory of the same directory in which GBrowse places its
+static files, such as <em>/var/www/gbrowse2/databases</em>.</p>
+<p>htdocs<br>
+The directory in which to install GBrowse&rsquo;s Javascript libraries, static
+HTML pages and stylesheets. You can choose any location for this
+directory and it will be added to Apache&rsquo;s document tree. The default is
+to place the directory under the default document tree, such as
+<em>/var/www/gbrowse2</em>.</p>
+<p>portdemo<br>
+The internet port on which the demo will run. The demo launches a new
+instance of Apache running under your user privileges. Because port 80
+will usually already be taken by the system Apache, Build will choose an
+unused port like 8000 or 8080. You may manually select the port if you
+wish.</p>
+<p>tmp<br>
+The directory in which GBrowse will store its working data, including
+users&rsquo; session information (such as preferred tracks), uploaded data
+files, and temporary image files. The default is to place these files
+into <em>/var/tmp/gbrowse2</em>.</p>
+<p>wwwuser<br>
+The account under which the system Apache runs, often &ldquo;nobody&rdquo;,
+&ldquo;www-data&rdquo; or &ldquo;httpd.&rdquo; If you do not know, you can find out by running
+<em>ps aux | grep -i apache</em> on a system that has Apache already running.
+The first column of the output contains the name of the user account.</p>
+<p>Once you have configured GBrowse, the values you chose will stick until
+you run <em>./Build reconfig</em>. You can also bypass interactive
+configuration by directly passing Build.PL one or more of the
+configuration options on the command line:</p>
+<pre><code>perl Build.PL --apachemodules=/usr/local/share/apache/libexec \
+              --cgibin=/var/lib/cgi \
+              --conf=/etc/gbrowse \
+              --htdocs=/usr/local/docs/gbrowse \
+              --databases=/usr/local/gbrowse/databases \
+              --tmp=/tmp/gbrowse \
+              --portdemo=9000 \
+              --wwwuser=fred
+</code></pre>
+<p>The options passed on the command line will become the defaults for
+<em>./Build config</em> will be used during installation, and will also become
+the defaults if you later run <em>./Build config</em> or <em>./Build reconfig</em>.</p>
+<p>Here is an example of a &rsquo;non-standard&rsquo; install, that allows you to
+install and run GB as a non-root user (assuming you have Perl&rsquo;s
+local-lib working properly):</p>
+<pre><code>perl Build.PL \
+  --cgibin=$HOME/httpd/cgi-bin/gbrowse2 \
+  --conf=$HOME/httpd/conf/gbrowse2 \
+  --htdocs=$HOME/httpd/htdocs/potato/gbrowse2 \
+  --tmp=$HOME/httpd/tmp \
+  --url_base=/potato/gbrowse2
+
+./Build test
+./Build install
+</code></pre>
+<p>Note that we still need to tweak $HOME/httpd/conf/gbrowse2/GBrowse.conf
+to set the &lsquo;url_base&rsquo; from &lsquo;/gbrowse2&rsquo; to &lsquo;/potato/gbrowse2&rsquo; in this
+case.</p>
+<h3 id="span-idconfigure_in_mac_os_x_1066-classmw-headlineconfigure-in-mac-os-x-1066span"><span id="Configure_in_Mac_OS_X_10.6.6" class="mw-headline">Configure in Mac OS X 10.6.6</span></h3>
+<p>If you install apache2 using Mac Ports
+(<a href="http://www.macports.org/" class="external free"
+rel="nofollow"><a href="http://www.macports.org/">http://www.macports.org/</a></a>).</p>
+<pre><code>sh-3.2# ./Build config
+
+**Beginning interactive configuration**
+Directory for GBrowse's config and support files? [/etc/gbrowse2] /opt/local/apache2/conf/gbrowse2
+Directory for GBrowse's static images &amp; HTML files? [/Library/Webserver/Documents/gbrowse2] /opt/local/apache2/htdocs/gbrowse2
+Directory for GBrowse's temporary data [/var/tmp/gbrowse2]
+Directory for GBrowse's example databases [/Library/Webserver/Documents/gbrowse2/databases] /opt/local/apache2/htdocs/gbrowse2/databases
+Directory for GBrowse's CGI script executables? [/Library/Webserver/CGI-Executables/gb2] /opt/local/apache2/cgi-bin/gb2
+Internet port to run demo web site on (for demo)? [80]
+Apache loadable module directory (for demo)? [/usr/lib/apache/modules] /opt/local/apache2/modules
+User account under which Apache daemon runs? [www]
+</code></pre>
+<p>And after install</p>
+<pre><code>sh-3.2# chmod -R 777 /var/tmp/gbrowse2
+</code></pre>
+<p>Copy configure information to the end of
+&lsquo;/opt/local/apache2/conf/httpd.conf&rsquo;</p>
+<pre><code>&lt;Directory &quot;/opt/local/apache2/htdocs/gbrowse2&quot;&gt;
+  AllowOverride Options
+  Options -Indexes -MultiViews +FollowSymLinks
+  Order allow,deny
+  Allow from all
+&lt;/Directory&gt;
+
+&lt;Directory &quot;/var/tmp/gbrowse2/images/&quot;&gt;
+  Order allow,deny
+  Allow from all
+&lt;/Directory&gt;
+
+&lt;Directory &quot;/opt/local/apache2/cgi-bin/gb2&quot;&gt;
+
+  SetEnv GBROWSE_CONF   &quot;/opt/local/apache2/conf/gbrowse2&quot;
+&lt;/Directory&gt;
+
+&lt;IfModule mod_fcgid.c&gt;
+  Alias /fgb2 &quot;/opt/local/apache2/cgi-bin/gb2&quot;
+  &lt;Location /fgb2&gt;
+    SetHandler   fcgid-script
+    Options      ExecCGI
+  &lt;/Location&gt;
+  DefaultInitEnv GBROWSE_CONF /opt/local/apache2/conf/gbrowse2
+  # these directives prevent idle/busy timeouts and may need to be
+  # adjusted up or down
+  FcgidMinProcessesPerClass 6
+  FcgidIOTimeout   600
+  FcgidBusyTimeout 600
+
+&lt;/IfModule&gt;
+
+&lt;IfModule mod_fastcgi.c&gt;
+  Alias /fgb2 &quot;/opt/local/apache2/cgi-bin/gb2&quot;
+  &lt;Location /fgb2&gt;
+    SetHandler   fastcgi-script
+    Options      ExecCGI
+  &lt;/Location&gt;
+  # Note: you may need to increase -idle-timeout if file uploads are timing out and returning server
+  # errors.
+  FastCgiConfig -idle-timeout 600 -maxClassProcesses 20  -initial-env GBROWSE_CONF=/opt/local/apache2/conf/gbrowse2
+&lt;/IfModule&gt;
+
+&lt;IfModule mod_perl.c&gt;
+   Alias /mgb2 &quot;/opt/local/apache2/cgi-bin/gb2&quot;
+
+   &lt;Location /mgb2&gt;
+     SetHandler perl-script
+     PerlResponseHandler ModPerl::Registry
+     PerlOptions +ParseHeaders
+   &lt;/Location&gt;
+&lt;/IfModule&gt;
+</code></pre>
+<h3 id="span-idrunning_the_gbrowse_demo_28optional29-classmw-headlinerunning-the-gbrowse-demo-optionalspan"><span id="Running_the_GBrowse_Demo_.28optional.29" class="mw-headline">Running the GBrowse Demo (optional)</span></h3>
+<p>Before you install GBrowse, you may wish to run its demo. This will
+attempt to launch a correctly configured instance of Apache running
+under your own account. To launch the demo, run <strong>./Build demo</strong>:</p>
+<pre><code>% ./Build demo
+Demo is now running on http://localhost:8000
+Run &quot;./Build demostop&quot; to stop it.
+</code></pre>
+<p>You can now point your web browser at
+<em><a href="http://localhost:8000" class="external free"
+rel="nofollow">http://localhost:8000</a></em> (or whatever the build message
+specifies), and interact with the GBrowse web site, browse sample
+genomes and otherwise test the waters. When you are done, run <em>./Build
+demostop</em> to stop Apache and clean up.</p>
+<h3 id="span-idregistering_gbrowse_28optional29-classmw-headlineregistering-gbrowse-optionalspan"><span id="Registering_GBrowse_.28optional.29" class="mw-headline">Registering GBrowse (optional)</span></h3>
+<p>You may register GBrowse by running <strong>./Build register</strong>. This is an
+optional step, but allows the GBrowse development group to track who is
+using GBrowse. This information is useful when writing grant
+renewals :-). The information is only used internally by the GMOD
+project and is not shared with any other parties.</p>
+<h3 id="span-idfinal_installation-classmw-headlinefinal-installationspan"><span id="Final_Installation" class="mw-headline">Final Installation</span></h3>
+<p>To install GBrowse and its support files permanently, run <strong>./Build
+install</strong> as the superuser. This will copy GBrowse&rsquo;s library and support
+files into the locations chosen during configuration. It will then
+configure Apache to run GBrowse by writing the appropriate configuration
+directives into Apache&rsquo;s configuration file. Finally, it will attempt to
+restart Apache. If all goes well, you will see a note telling you to
+load <em><a href="http://localhost/gbrowse2" class="external free"
+rel="nofollow">http://localhost/gbrowse2</a></em>. This will take you to an
+autogenerated page that describes the install configurations you chose,
+points to an example database to run, and gives pointers to
+documentation, tutorials and other useful information.</p>
+<h2 id="span-iddebugging_and_customizing_the_installation-classmw-headlinedebugging-and-customizing-the-installationspan"><span id="Debugging_and_Customizing_the_Installation" class="mw-headline">Debugging and Customizing the Installation</span></h2>
+<p>If you are having trouble with the installation, see <a href="Common_Problems_with_GBrowse2_Installation" title="Common Problems with GBrowse2 Installation">Common Problems
+with GBrowse2
+Installation</a>.
+If you wish install GBrowse in your home directory because you do not
+have superuser privileges or for any other reasons, see <a href="Installing_GBrowse2_in_your_Home_Directory" title="Installing GBrowse2 in your Home Directory">Installing
+GBrowse2 in your Home
+Directory</a>.
+(These pages aren&rsquo;t written yet)!</p>
+<h1 id="span-idadvanced_installation_topics-classmw-headlineadvanced-installation-topicsspan"><span id="Advanced_Installation_Topics" class="mw-headline">Advanced Installation Topics</span></h1>
+<p>For advanced topics, such as accelerating GBrowse performance by running
+it under a persistent environment, configuring the user login and custom
+track upload system, and restricting access to certain databases and
+tracks via user authentication, see:</p>
+<ul>
+<li><a href="GBrowse_2.0_Install_HOWTO/Advanced" title="GBrowse 2.0 Install HOWTO/Advanced">GBrowse 2.0 Install
+HOWTO/Advanced</a></li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="Category%253AGBrowse_2" title="Category%253AGBrowse 2">GBrowse 2</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_2.0_Install_HOWTO"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:00 on 22 February
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">168,464 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

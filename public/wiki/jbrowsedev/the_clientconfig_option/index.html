@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBrowseDev/The ClientConfig Option - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautojbrowsedevthe-clientconfig-optionspan"><span dir="auto">JBrowseDev/The ClientConfig Option</span></h1>
+<p>The <code>--clientConfig</code> option can be used to customize the appearance of a
+non-quantitative feature tracks.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Representations_of_Non-Quantitative_Tracks_in_JBrowse"><span class="tocnumber">1</span>
+<span class="toctext">Representations of Non-Quantitative Tracks in
+JBrowse</span></a></li>
+<li><a href="#Argument_Structure"><span class="tocnumber">2</span> <span class="toctext">Argument
+Structure</span></a></li>
+<li><a href="#Descriptions_of_clientConfig_Options"><span class="tocnumber">3</span> <span class="toctext">Descriptions
+of clientConfig Options</span></a></li>
+<li><a href="#Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss"><span class="tocnumber">4</span> <span class="toctext">Relevant CSS
+Attributes to be used with featureCss and
+histCss</span></a></li>
+<li><a href="#Examples"><span class="tocnumber">5</span>
+<span class="toctext">Examples</span></a></li>
+<li><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See
+also</span></a></li>
+</ul>
+<h1 id="span-idrepresentations_of_non-quantitative_tracks_in_jbrowse-classmw-headlinerepresentations-of-non-quantitative-tracks-in-jbrowsespan"><span id="Representations_of_Non-Quantitative_Tracks_in_JBrowse" class="mw-headline">Representations of Non-Quantitative Tracks in JBrowse</span></h1>
+<p>Non-quantitative tracks have two different types of representations.
+There is the traditional feature representation, where each feature is
+visible as a horizontal bar extending from its start to end positions on
+the reference sequence, and there is also a histogram representation,
+where the density of features in each region of the reference sequence
+is shown with a histogram. Normally, when zoomed in on a reference
+sequence, the feature representation is used, and after zooming out to a
+certain extent, it is replaced with the histogram representation. The
+clientConfig option can be used to alter the appearance of either of
+these representations, and can also be used to choose the zoom levels at
+which the transition between them occurs. In addition, it can be used to
+choose at which zoom levels the feature labels and subfeatures become
+visible.</p>
+<h1 id="span-idargument_structure-classmw-headlineargument-structurespan"><span id="Argument_Structure" class="mw-headline">Argument Structure</span></h1>
+<p>The structure of the argument to clientConfig looks something like this:</p>
+<pre><code>'{
+   &quot;featureCss&quot; : &lt;string of css settings&gt;,
+   &quot;histCss&quot; : &lt;string of css settings&gt;,
+   &quot;histScale&quot; : &lt;pixels per feature&gt;,
+   &quot;labelScale&quot; : &lt;pixels per feature&gt;,
+   &quot;subfeatureScale&quot; : &lt;pixels per feature&gt;,
+   &quot;featureCallback&quot;: &lt;string of javascript code&gt;
+ }'
+</code></pre>
+<p>See
+<a href="../JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks" title="JBrowse Configuration Guide">JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks</a>
+for a discussion of the featureCallback option.</p>
+<h1 id="span-iddescriptions_of_clientconfig_options-classmw-headlinedescriptions-of-clientconfig-optionsspan"><span id="Descriptions_of_clientConfig_Options" class="mw-headline">Descriptions of clientConfig Options</span></h1>
+<p>You can think of clientConfig as being &ldquo;an option with sub-options.&rdquo; Any
+(or all) of these options can be omitted. Here is a list of them, along
+with descriptions:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>featureCss</td>
+<td>CSS configuration edits for the features. Overrides any configuration in genome.css.</td>
+</tr>
+<tr>
+<td>histCss</td>
+<td>CSS configuration edits for the histogram. Overrides any configuration in genome.css.</td>
+</tr>
+<tr>
+<td>histScale</td>
+<td>A number that defines the zoom levels at which the individual features are replaced with the histogram (or vice versa). For higher histScale values, the histogram representation will be used at more zoom levels (it will be necessary to zoom in more in order to view the feature representation). The default value is 4.</td>
+</tr>
+<tr>
+<td>labelScale</td>
+<td>A number that defines the zoom level at which the labels begin to be visible. Decreasing this value causes the feature label visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 50.</td>
+</tr>
+<tr>
+<td>subfeatureScale</td>
+<td>A number that defines the zoom level at which the subfeatures begin to be visible. Decreasing this value causes the subfeature visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 80.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="span-idrelevant_css_attributes_to_be_used_with_featurecss_and_histcss-classmw-headlinerelevant-css-attributes-to-be-used-with-featurecss-and-histcssspan"><span id="Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss" class="mw-headline">Relevant CSS Attributes to be used with featureCss and histCss</span></h1>
+<p>With the exception of the height attribute, all of these can be used
+with both featureCss and histCss:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>height</td>
+<td>The top to bottom height of each feature.</td>
+<td>Some number of pixels (e.g., 5px). Do not edit the height property for histCss. Changing it will cause each of the histogram bars to be set to the same height.</td>
+</tr>
+<tr>
+<td>background-color</td>
+<td>the background color of each feature or each bar of the histogram.</td>
+<td>A RGB hexadecimal color code (e.g. #A4C or #8FA366).</td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>An image to use as the background for the features or histogram bars.</td>
+<td>A path to an image file, with the syntax: url(&lt;path/to/image&gt;).</td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>Describes how repetition of a background image will occur, if at all.</td>
+<td>One of these: repeat, repeat-x, repeat-y, no-repeat.</td>
+</tr>
+<tr>
+<td>border-style</td>
+<td>The type of border each feature or histogram bar has.</td>
+<td>One of these: solid, dotted, dashed, double, groove, ridge, inset, outset.</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td>The border color of a feature or histogram bar.</td>
+<td>A RGB hexadecimal color code (e.g. #A4C or #8FA366).</td>
+</tr>
+<tr>
+<td>border-width</td>
+<td>The thickness of the border for a feature or histogram bar.</td>
+<td>Some number of pixels (e.g., 1px).</td>
+</tr>
+</tbody>
+</table>
+<h1 id="span-idexamples-classmw-headlineexamplesspan"><span id="Examples" class="mw-headline">Examples</span></h1>
+<p>If you would like to follow along, please begin by switching to your
+jbrowse directory and inputting the reference sequence:</p>
+<pre><code>$ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa
+</code></pre>
+<p><strong>Example 1:</strong> Change the colors in an existing CSS class.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel PurpleFeatures --type mRNA --cssClass exon --clientConfig '{ &quot;featureCss&quot;: &quot;background-color:#9A61CF;border-color:#440D78&quot;}'
+</code></pre>
+<p>Example explained: If the color of the features hadn&rsquo;t changed, they
+would have been blue, as defined by the &rsquo;exon&rsquo; class in genome.css. This
+example demonstrates that input to clientConfig overrides the default
+characteristics of a CSS class.</p>
+<p><strong>Example 2:</strong> Force a histogram to be displayed at low zoom levels.
+Also, use a background image for the features.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel AllFeatures --cssClass basic --clientConfig '{&quot;histScale&quot;: 30, &quot;histCss&quot;: &quot;background-color:#11A&quot;&quot;featureCss&quot;: &quot;height:12px;background-image:url(img/helix2-green.png);background-repeat:repeat-x&quot;}'
+</code></pre>
+<p>Example explained: Increasing histScale (from the default value 4)
+causes the histogram to appear. The histogram is made blue by editing
+the background color for histCss. The image for the features is created
+using background-image and background-repeat for featureCss. This
+example demonstrates the use of several clientConfig options at once.</p>
+<p><strong>Example 3:</strong> Cause the subfeatures to appear at all zoom levels.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel SubfeaturesEverywhere --cssclass transcript --getSubs --subfeatureClasses '{&quot;CDS&quot;: &quot;transcript-CDS&quot;, &quot;UTR&quot;: &quot;transcript-UTR&quot;}' --clientConfig '{&quot;subfeatureScale&quot;: 0}'
+</code></pre>
+<p>Example explained: In order to make the subfeatures appear at all
+levels, the value associated with subfeatureScale must be reduced. In
+the extreme case that we want subfeatures visible at all zoom levels,
+the value associated with subfeatureScale can simply be set to zero.
+This idea is also applicable to labelScale (making the labels appear at
+every zoom level) and histScale (making the histogram never appear).</p>
+<p><strong>Example 4:</strong> Cause the names to appear at the two highest zoom levels
+only.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel FewerZoomsWithNames --type match --getLabel --clientConfig '{&quot;labelScale&quot;: 1600}'
+</code></pre>
+<p>Example explained: By default, the names appear at the seven highest
+levels. This is demonstrated by counting the zoom levels with feature
+labels from the track generated by:</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff docs/tutorial/data_files/volvox.gff3 --tracklabel MoreZoomsWithNames --type match --getLabel
+</code></pre>
+<p>Thus, the value of labelScale must be increased from the default value.
+Assuming that each zoom-in operation with the smaller magnifying glass
+icon approximately doubles the level of magification, the difference in
+magnification between the second and seventh highest zoom levels is
+approximately 32-fold. So multiplying 32 by the default value (50)
+should yield a value for labelScale that is close to what we want, if
+not precisely what we want. This logic is also applicable to
+subfeatureScale and histScale.</p>
+<h1 id="span-idsee_also-classmw-headlinesee-alsospan"><span id="See_also" class="mw-headline">See also</span></h1>
+<ul>
+<li><a href="General_Usage" class="mw-redirect"
+title="JBrowseDev/General Usage">General Usage Notes</a></li>
+</ul>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="../Category%253AJBrowse" title="Category%253AJBrowse">JBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowseDev-2FThe_ClientConfig_Option"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 17:07 on 13 July
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">16,780 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

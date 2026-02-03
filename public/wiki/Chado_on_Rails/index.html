@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado on Rails - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-on-railsspan"><span dir="auto">Chado on Rails</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Intro"><span class="tocnumber">1</span>
+<span class="toctext">Intro</span></a></li>
+<li><a href="#Download"><span class="tocnumber">2</span>
+<span class="toctext">Download</span></a></li>
+<li><a href="#Features"><span class="tocnumber">3</span>
+<span class="toctext">Features</span></a></li>
+<li><a href="#Installation"><span class="tocnumber">4</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#For_the_impatient"><span class="tocnumber">4.1</span> <span class="toctext">For the
+impatient</span></a></li>
+<li><a href="#Step_1_-_Install_Ruby_on_Rails_.28and_ruby.2C_and_rubygems_if_necessary.29"><span class="tocnumber">4.2</span> <span class="toctext">Step 1 -
+Install Ruby on Rails (and ruby, and rubygems if
+necessary)</span></a></li>
+<li><a href="#Step_2_-_Install_Chado_on_Rails"><span class="tocnumber">4.3</span> <span class="toctext">Step 2 -
+Install Chado on Rails</span></a></li>
+<li><a href="#Step_3_-_Edit_config.2Fdatabase.yml"><span class="tocnumber">4.4</span> <span class="toctext">Step 3 -
+Edit
+config/database.yml</span></a></li>
+<li><a href="#Step_4a_-_Create_a_new_Chado_database"><span class="tocnumber">4.5</span> <span class="toctext">Step 4a -
+Create a new Chado
+database</span></a></li>
+<li><a href="#Step_4b_-_Connect_to_an_existing_standard_Chado_database"><span class="tocnumber">4.6</span> <span class="toctext">Step 4b -
+Connect to an existing standard Chado
+database</span></a></li>
+<li><a href="#Step_4c_-_Create_custom_CoR_for_your_non-standard_Chado_database_.28experimental.29"><span class="tocnumber">4.7</span> <span class="toctext">Step 4c -
+Create custom CoR for your non-standard Chado database
+(experimental)</span></a></li>
+</ul>
+</li>
+<li><a href="#Cookbook"><span class="tocnumber">5</span>
+<span class="toctext">Cookbook</span></a>
+<ul>
+<li><a href="#creating_new_databases"><span class="tocnumber">5.1</span> <span class="toctext">creating
+new databases</span></a></li>
+<li><a href="#creating_a_web_application_for_an_existing_Chado_database"><span class="tocnumber">5.2</span> <span class="toctext">creating a
+web application for an existing Chado
+database</span></a></li>
+<li><a href="#creating_a_web_application_for_a_custom_Chado_database"><span class="tocnumber">5.3</span> <span class="toctext">creating a
+web application for a custom Chado
+database</span></a></li>
+<li><a href="#making_gene_pages_for_a_Chado_database"><span class="tocnumber">5.4</span> <span class="toctext">making
+gene pages for a Chado
+database</span></a></li>
+<li><a href="#using_the_command_line"><span class="tocnumber">5.5</span> <span class="toctext">using the
+command line</span></a></li>
+</ul>
+</li>
+<li><a href="#Notes_from_the_GMOD_evo_hackathon_2010"><span class="tocnumber">6</span> <span class="toctext">Notes from the
+GMOD evo hackathon
+2010</span></a></li>
+</ul>
+<h2 id="span-idintro-classmw-headlineintrospan"><span id="Intro" class="mw-headline">Intro</span></h2>
+<p>Chado on Rails is a way to easily create bioinformatics applications
+that use the Chado database schema. Chado on Rails is under active
+development, and is used in the Bovine Genome Database, BeeBase and
+NasoniaBase. Chado on Rails is free as in beer/speech.</p>
+<h2 id="span-iddownload-classmw-headlinedownloadspan"><span id="Download" class="mw-headline">Download</span></h2>
+<p>The latest stable release can be downloaded here:</p>
+<pre><code> svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1
+</code></pre>
+<p>The development trunk can be downloaded here:</p>
+<pre><code> svn checkout http://chadoonrails.rubyforge.org/svn/trunk
+</code></pre>
+<h2 id="span-idfeatures-classmw-headlinefeaturesspan"><span id="Features" class="mw-headline">Features</span></h2>
+<p>easy MVC development for bioinformatics web applications<br>
+sophisticated caching for improved performance of applications that use
+Chado db<br>
+out of the box support for standard Chado and Flybase<br>
+got a non-standard Chado schema? CoR can [automatically create Rails
+objects and unit tests for your schema using magic chado, a component of
+CoR].<br>
+thousands of free Ruby and RoR gems<br>
+great support from Ruby and RoR community</p>
+<h2 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h2>
+<h4 id="span-idfor_the_impatient-classmw-headlinefor-the-impatientspan"><span id="For_the_impatient" class="mw-headline">For the impatient</span></h4>
+<pre><code>gem install rails # if you get an error, go to the following page and install rails and rubygems http://wiki.rubyonrails.org/getting-started/installation
+svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
+cd cor # edit config/database.yml if necessary
+
+# if you are hooking CoR up to an existing, standard Chado db your installation is now done.
+
+# to create new Chado db
+cp db/schema_chado_1.133.rb db/schema.rb
+rake db:create RAILS_ENV=development
+
+# to create new Flybase Chado db
+cp db/schema_flybase2010.rb db/schema.rb
+rake db:create RAILS_ENV=development
+
+# to create custom Rails models and association for your non-standard Chado db
+cd cor # or where ever CoR lives
+./script/generate magic_chado
+[lots of chatter]
+overwrite app/models/analysisfeature.rb? (enter &quot;h&quot; for help) [Ynaqdh] a # &lt;--- ANSWER 'A'
+[lots of chatter]
+</code></pre>
+<h4 id="span-idstep_1_-_install_ruby_on_rails_28and_ruby2c_and_rubygems_if_necessary29-classmw-headlinestep-1---install-ruby-on-rails-and-ruby-and-rubygems-if-necessaryspan"><span id="Step_1_-_Install_Ruby_on_Rails_.28and_ruby.2C_and_rubygems_if_necessary.29" class="mw-headline">Step 1 - Install Ruby on Rails (and ruby, and rubygems if necessary)</span></h4>
+<p>To install Rails, follow the instructions for your operating system
+[here
+<a href="http://wiki.rubyonrails.org/getting-started/installation"
+class="external free"
+rel="nofollow"><a href="http://wiki.rubyonrails.org/getting-started/installation">http://wiki.rubyonrails.org/getting-started/installation</a></a>].
+Rails 2.3 is recommended. CoR is currently being developed using Ruby
+1.8.7, Rubygems 1.3.7 and Rails 2.3.10, but differences in minor version
+should not matter.</p>
+<h4 id="span-idstep_2_-_install_chado_on_rails-classmw-headlinestep-2---install-chado-on-railsspan"><span id="Step_2_-_Install_Chado_on_Rails" class="mw-headline">Step 2 - Install Chado on Rails</span></h4>
+<pre><code>svn checkout http://chadoonrails.rubyforge.org/svn/tags/release0.1 cor
+</code></pre>
+<h4 id="span-idstep_3_-_edit_config2fdatabaseyml-classmw-headlinestep-3---edit-configdatabaseymlspan"><span id="Step_3_-_Edit_config.2Fdatabase.yml" class="mw-headline">Step 3 - Edit config/database.yml</span></h4>
+<p>Specify which database Chado on Rails should use in config/database.yml.
+By default CoR will use the development environment, which means it will
+connect to a postgreSQL database named cor_development using the root
+user with no password. The database.yml file should look something like
+this:</p>
+<pre><code>development:
+   adapter: postgresql
+   database: cor_development  # &lt;- might need to change this
+   template: template0
+   encoding: utf8
+   host: localhost
+   username: root # &lt;- might need to change this
+   password: # &lt;- might need change this
+# Warning: The database defined as &quot;test&quot; will be erased and
+# re-generated from your development database when you run &quot;rake&quot;.
+# Do not set this db to the same as development or production.
+# test:
+test: &amp;TEST
+  adapter: postgresql
+  template: template0
+  encoding: utf8
+  database: cor_test
+  host: localhost
+  username: root
+  password:
+production:
+  adapter: postgresql
+  database: cor_production
+  host: localhost
+  username: root
+  password:
+cucumber:
+  &lt;&lt;: *TEST
+</code></pre>
+<p>Edit the database, host, username, password items in the development
+stanza so that CoR can connect to the database you&rsquo;d like to use. Change
+the adapter to mysql or some other database adapter if necessary - this
+has not been tested well, but should work.</p>
+<h4 id="span-idstep_4a_-_create_a_new_chado_database-classmw-headlinestep-4a---create-a-new-chado-databasespan"><span id="Step_4a_-_Create_a_new_Chado_database" class="mw-headline">Step 4a - Create a new Chado database</span></h4>
+<p>To create a standard Chado 1.13 database</p>
+<pre><code>cd cor # or where ever CoR lives
+cp db/schema_chado_1.133.rb db/schema.rb
+rake db:create RAILS_ENV=development
+</code></pre>
+<p>To create a 2010 Flybase Chado database</p>
+<pre><code>cd cor # or where ever CoR lives
+cp db/schema_flybase2010.rb db/schema.rb
+rake db:create RAILS_ENV=development
+</code></pre>
+<p>If you get database permission errors, check that the host, username and
+password in config/database.yml are actually the ones you&rsquo;d like to use.</p>
+<h4 id="span-idstep_4b_-_connect_to_an_existing_standard_chado_database-classmw-headlinestep-4b---connect-to-an-existing-standard-chado-databasespan"><span id="Step_4b_-_Connect_to_an_existing_standard_Chado_database" class="mw-headline">Step 4b - Connect to an existing standard Chado database</span></h4>
+<p>You don&rsquo;t need to do anything special in this case. CoR will talk to
+your standard Chado database without any more effort on your part.</p>
+<h4 id="span-idstep_4c_-_create_custom_cor_for_your_non-standard_chado_database_28experimental29-classmw-headlinestep-4c---create-custom-cor-for-your-non-standard-chado-database-experimentalspan"><span id="Step_4c_-_Create_custom_CoR_for_your_non-standard_Chado_database_.28experimental.29" class="mw-headline">Step 4c - Create custom CoR for your non-standard Chado database (experimental)</span></h4>
+<p>CoR can generate a custom set of Rails models for your non-standard
+Chado database.</p>
+<pre><code>cd cor # or where ever CoR lives
+./script/generate magic_chado
+[lots of chatter]
+overwrite app/models/analysisfeature.rb? (enter &quot;h&quot; for help) [Ynaqdh] a # &lt;--- ANSWER 'A'
+[lots of chatter]
+</code></pre>
+<p>Some (gory) details: CoR generates a custom ORM for your non-standard
+Chado database using the magic chado gem, which was inspired by and
+borrows much from the magic model gem by Dr. Nic and ships as part of
+CoR. Basically the magic chado algorithm works like this:</p>
+<p>1) Create models: magic chado creates a Rails model for each table it
+finds. For example, if it finds a table called <strong>feature</strong> it will
+create a model named <strong>Feature</strong>.</p>
+<p>2) Create associations: magic chado then creates associations between
+tables by:</p>
+<p>a) looking for foreign key constraints that associate two tables in the
+database, if your database supports this and actually has foreign key
+constraints. For example, if it finds a foreign key constraint in table
+<strong>feature</strong> associating column <strong>type_id</strong> with the table <strong>cvterm</strong>, it
+will make a <strong>feature</strong> -&gt; <strong>cvterm</strong> association. Specifically, it
+will make a <strong>feature</strong> -belongs_to-&gt; <strong>cvterm</strong> association and a
+<strong>cvterm</strong> -has_many-&gt;<strong>features</strong> association.</p>
+<p>b) looking for associations &ldquo;symbolically&rdquo;. For example, if it finds a
+<strong>cv_id</strong> column in the table <strong>cvterm</strong>, it will make a <strong>cv</strong> -&gt;
+<strong>cvterm</strong> association. Specifically, it will make a <strong>cvterm</strong>
+-belongs_to-&gt; <strong>cv</strong> association, and a <strong>cv</strong> -has_many-&gt; <strong>cvterms</strong>
+association.</p>
+<h2 id="span-idcookbook-classmw-headlinecookbookspan"><span id="Cookbook" class="mw-headline">Cookbook</span></h2>
+<h4 id="span-idcreating_new_databases-classmw-headlinecreating-new-databasesspan"><span id="creating_new_databases" class="mw-headline">creating new databases</span></h4>
+<p>- creating a new instance of a standard Chado</p>
+<p>lorem ipsum - creating a new instance of Flybase Chado schema</p>
+<p>lorem ipsum</p>
+<h4 id="span-idcreating_a_web_application_for_an_existing_chado_database-classmw-headlinecreating-a-web-application-for-an-existing-chado-databasespan"><span id="creating_a_web_application_for_an_existing_Chado_database" class="mw-headline">creating a web application for an existing Chado database</span></h4>
+<p>lorem ipsum</p>
+<h4 id="span-idcreating_a_web_application_for_a_custom_chado_database-classmw-headlinecreating-a-web-application-for-a-custom-chado-databasespan"><span id="creating_a_web_application_for_a_custom_Chado_database" class="mw-headline">creating a web application for a custom Chado database</span></h4>
+<p>lorem ipsum</p>
+<h4 id="span-idmaking_gene_pages_for_a_chado_database-classmw-headlinemaking-gene-pages-for-a-chado-databasespan"><span id="making_gene_pages_for_a_Chado_database" class="mw-headline">making gene pages for a Chado database</span></h4>
+<p>lorem ipsum</p>
+<h4 id="span-idusing_the_command_line-classmw-headlineusing-the-command-linespan"><span id="using_the_command_line" class="mw-headline">using the command line</span></h4>
+<p>- adding a new feature lorem ipsum</p>
+<p>- getting all the genes for a given cvterm lorem ipsum</p>
+<p>- getting all the child features for a feature which are related by a
+given cvterm lorem ipsum</p>
+<h2 id="span-idnotes_from_the_gmod_evo_hackathon_2010-classmw-headlinenotes-from-the-gmod-evo-hackathon-2010span"><span id="Notes_from_the_GMOD_evo_hackathon_2010" class="mw-headline">Notes from the GMOD evo hackathon 2010</span></h2>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253ADatabase_Tools" title="Category%253ADatabase Tools">Database Tools</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_on_Rails" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:20 on 28 March
+2014.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">62,915 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollo Tutorial 2011 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoapollo-tutorial-2011span"><span dir="auto">Apollo Tutorial 2011</span></h1>
+<p>(Redirected from <a href="Apollo_Tutorial">Apollo
+Tutorial</a></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
+width="250" height="91" alt="Apollo" /></p>
+<p>This <a href="Apollo.1" title="Apollo">Apollo</a> tutorial was presented by <a href="User%253AElee" title="User%253AElee">Ed
+Lee</a> at the <a href="2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011 GMOD Spring
+Training</a>, Spring
+2011. The most recent Apollo tutorial can be found at the
+<a href="Apollo_Tutorial" class="mw-redirect"
+title="Apollo Tutorial">Apollo Tutorial</a> page.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a>
+<ul>
+<li><a href="#Overview"><span class="tocnumber">1.1</span>
+<span class="toctext">Overview</span></a></li>
+<li><a href="#Architecture"><span class="tocnumber">1.2</span>
+<span class="toctext">Architecture</span></a>
+<ul>
+<li><a href="#Presentation_Layer"><span class="tocnumber">1.2.1</span>
+<span class="toctext">Presentation
+Layer</span></a></li>
+<li><a href="#Logic_Layer"><span class="tocnumber">1.2.2</span> <span class="toctext">Logic
+Layer</span></a></li>
+<li><a href="#Data_Layer"><span class="tocnumber">1.2.3</span> <span class="toctext">Data
+Layer</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Installation"><span class="tocnumber">2</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#Pre-built_Installers"><span class="tocnumber">2.1</span> <span class="toctext">Pre-built
+Installers</span></a></li>
+<li><a href="#Checking_Out_the_Code_From_SVN"><span class="tocnumber">2.2</span> <span class="toctext">Checking
+Out the Code From SVN</span></a></li>
+</ul>
+</li>
+<li><a href="#Using_Apollo"><span class="tocnumber">3</span> <span class="toctext">Using
+Apollo</span></a></li>
+<li><a href="#Configuring_Apollo"><span class="tocnumber">4</span> <span class="toctext">Configuring
+Apollo</span></a>
+<ul>
+<li><a href="#apollo.cfg"><span class="tocnumber">4.1</span>
+<span class="toctext">apollo.cfg</span></a></li>
+<li><a href="#data_source.style"><span class="tocnumber">4.2</span>
+<span class="toctext">data_source.style</span></a></li>
+<li><a href="#data_source.tiers"><span class="tocnumber">4.3</span>
+<span class="toctext">data_source.tiers</span></a></li>
+</ul>
+</li>
+<li><a href="#Setting_Up_Custom_Chado_Configurations"><span class="tocnumber">5</span> <span class="toctext">Setting Up
+Custom Chado
+Configurations</span></a>
+<ul>
+<li><a href="#chado-adapter.xml"><span class="tocnumber">5.1</span>
+<span class="toctext">chado-adapter.xml</span></a>
+<ul>
+<li><a href="#chadoInstance_Element"><span class="tocnumber">5.1.1</span>
+<span class="toctext">chadoInstance
+Element</span></a></li>
+<li><a href="#chadodb_Element"><span class="tocnumber">5.1.2</span>
+<span class="toctext">chadodb Element</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Setting_Up_a_Custom_WebStart_Instance"><span class="tocnumber">6</span> <span class="toctext">Setting Up a
+Custom WebStart
+Instance</span></a></li>
+<li><a href="#Writing_Custom_Data_Adapters"><span class="tocnumber">7</span> <span class="toctext">Writing Custom
+Data Adapters</span></a></li>
+</ul>
+<h2 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h2>
+<h3 id="span-idoverview-classmw-headlineoverviewspan"><span id="Overview" class="mw-headline">Overview</span></h3>
+<p>Once we have a sequence assembled, we need to annotate that sequence:
+that is, add features such as genes, pseudogenes, ncRNAs, etc. Otherwise
+we just have sequence and can&rsquo;t make much sense of the data.
+Computational analysis, such as Genscan, FGeneSH, and tRNAscanSE are a
+great way to start the annotation process, as they help us localize
+regions of interest. However, these automated tools are far from perfect
+and the results often require manual updating from expert biologists.
+That is where Apollo comes in. Apollo is a sequence annotation editor
+and will allow you to create and edit annotations.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/Annotation-workflow.jpg" width="585"
+height="196" alt="Annotation workflow" /></p>
+<h3 id="span-idarchitecture-classmw-headlinearchitecturespan"><span id="Architecture" class="mw-headline">Architecture</span></h3>
+<p>Apollo is setup in a 3-tier architecture, with a presentation
+(<a href="Glossary#GUI" title="Glossary">GUI</a>), logic and data layer. It is highly
+configurable, with most users configuring the presentation and data
+layers.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/Architecture.jpg" width="290" height="296"
+alt="Apollo architecture" /></p>
+<h4 id="span-idpresentation_layer-classmw-headlinepresentation-layerspan"><span id="Presentation_Layer" class="mw-headline">Presentation Layer</span></h4>
+<p>The presentation layer (GUI) handles displaying and gives the user an
+interface for creating and editing these annotations. Customization of
+this layer usually entails setting up how features are displayed (e.g.,
+color, shape, labels).</p>
+<h4 id="span-idlogic_layer-classmw-headlinelogic-layerspan"><span id="Logic_Layer" class="mw-headline">Logic Layer</span></h4>
+<p>The logic layer handles how data is represented and the various
+operations you can perform on the data (e.g., creating, editing, adding
+information to annotations).</p>
+<h4 id="span-iddata_layer-classmw-headlinedata-layerspan"><span id="Data_Layer" class="mw-headline">Data Layer</span></h4>
+<p>The data layer takes care of interfacing with the different data
+sources. Customization of the data layer usually entails setting up
+access to different databases (e.g., your own
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> instance) to
+even creating new adapters to read new data formats or schemas.</p>
+<h2 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h2>
+<p>You can download Apollo from pre-built installer packages or getting the
+code from either <a href="Glossary#SVN" title="Glossary">SVN</a> or tarball, both which
+require building the application.</p>
+<h3 id="span-idpre-built_installers-classmw-headlinepre-built-installersspan"><span id="Pre-built_Installers" class="mw-headline">Pre-built Installers</span></h3>
+<p>You can download OS-specific pre-built installer packages from the
+<a href="http://apollo.berkeleybop.org/current/install.html"
+class="external text" rel="nofollow">Apollo installer page</a>. We
+provide the following installers:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Optionally bundled <a href="Glossary#JRE" title="Glossary">JRE</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mac OS X</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Solaris</td>
+<td>Yes (x86 version)</td>
+</tr>
+<tr>
+<td>Unix</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Since we&rsquo;re installing it on our Linux virtual machine, we&rsquo;ll use the
+Linux version. Java has already been setup in these machines, so we&rsquo;ll
+use the installer without the bundled JRE. The bundled JRE option is a
+great solution for users who don&rsquo;t have Java installed or have multiple
+ones installed and are not sure how to select the correct one to be
+used. The installer has already been downloaded to
+<code>~/Software/installers</code>.</p>
+<p>The Linux installer is a shell script. If we want to install Apollo to
+the common application locations (such as <code>/usr/local/bin</code>), we&rsquo;ll need
+root access. We&rsquo;ll do everything from the command line since it&rsquo;s easier
+that way. Open up a terminal window and type the following:</p>
+<pre><code>$ cd ~/Documents/Software/installers
+$ sudo /bin/sh Apollo_unix.sh
+</code></pre>
+<p>We&rsquo;ll just install everything with the default options.</p>
+<h3 id="span-idchecking_out_the_code_from_svn-classmw-headlinechecking-out-the-code-from-svnspan"><span id="Checking_Out_the_Code_From_SVN" class="mw-headline">Checking Out the Code From SVN</span></h3>
+<p>You can also checkout the code from SourceForge SVN. You&rsquo;ll need
+a SVN client to do so. This will guarantee that you&rsquo;ll get the latest
+Apollo code. Note that you&rsquo;ll be getting the development version and as
+such might not be fully stable. The following commands apply to Unix
+based command line SVN clients for an anonymous checkout.</p>
+<pre><code>$ svn co https://gmod.svn.sourceforge.net/svnroot/gmod/apollo/trunk Apollo
+</code></pre>
+<p>If you&rsquo;re using an IDE, chances are that your IDE will have SVN support
+(or have a plugin available).</p>
+<h2 id="span-idusing_apollo-classmw-headlineusing-apollospan"><span id="Using_Apollo" class="mw-headline">Using Apollo</span></h2>
+<p>We&rsquo;ll start off with seeing some of the features that Apollo can do.
+We&rsquo;ll be connecting to our local
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> instance. A
+customized Apollo Chado configuration has been setup for this. Don&rsquo;t
+worry, we&rsquo;ll cover the details on how we did that once we talk about
+<a href="#Setting_Up_Custom_Chado_Configurations">setting up custom Chado
+configurations</a>.</p>
+<p>Let&rsquo;s first start by launching Apollo. Type the following in your
+terminal:</p>
+<pre><code>$ apollo
+</code></pre>
+<p>We&rsquo;ll see an option for which data we want to load. We&rsquo;ll choose <strong>Chado
+database</strong> as our data source. Since we still don&rsquo;t have annotations on
+our data, we can&rsquo;t use the <strong>gene</strong> option. Select <strong>contig</strong> in
+<strong>Select a region to display</strong>. Let&rsquo;s look at <strong>scf1117875582023</strong> in
+the region between <strong>523000</strong> and <strong>532000</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d4/Chado-adapter.jpg" width="519"
+height="406" alt="Chado adapter" /></p>
+<p>Tip: If you want to load the whole genomic region from
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> into Apollo,
+you can enter <strong>0</strong> for both <strong>Start</strong> and <strong>End</strong> coordinates. This is
+useful so that you don&rsquo;t need to know the exact length of the sequence
+being loaded. Keep in mind that Apollo has a large memory footprint, so
+you probably want to keep the loaded regions to less than 500kb.</p>
+<p>Once loading is complete, we&rsquo;ll see the main Apollo window.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/Apollo-main-window.jpg" width="810"
+height="585" alt="Apollo main window" /></p>
+<p>The panels with the aqua background are for annotations and those with
+the black background are for computational results. The white box in the
+middle with the ruler represent the genomic region with the numbers
+being coordinates. The annotation and result panels above the genomic
+coordinate window are for the plus strand and the ones on the bottom are
+for the minus strand. The &ldquo;Zoom&rdquo; buttons will allow you to zoom in and
+out of the currently loaded region. The panels below provide information
+on the currently selected feature.</p>
+<p>We only have results loaded and no annotations. So let&rsquo;s create a gene.
+We&rsquo;ll select <strong>maker-529921-531609</strong>. We want to create a transcript
+with all of the exons. So to select all of the exons, we just need to
+<strong>double left-click on one</strong>. You&rsquo;ll notice that all the exons have a
+red border around them.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/Apollo-no-genes.jpg" width="810"
+height="585" alt="Apollo with evidence model selected" /></p>
+<p>Now that they&rsquo;re all selected, to create a new gene it&rsquo;s as easy as just
+dragging and dropping into the annotation panel. Voila! We have a new
+gene, <code>GMOD:temp1</code>, with transcript <code>GMOD:temp1-transcript1</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/Apollo-with-genes.jpg" width="810"
+height="585" alt="Apollo with a single gene model" /></p>
+<p>OK, let&rsquo;s try this again with another model. Let&rsquo;s do the same with
+<code>snap_masked-scf1117875582023-abinit-gene-5.17-mRNA-1_4016</code> (man, that&rsquo;s
+a long name!). We can see that the transcript belongs to a new gene,
+<code>GMOD:temp2</code>. Makes sense, it&rsquo;s a obviously a separate gene.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Apollo-with-two-genes.jpg" width="810"
+height="585" alt="Apollo with two gene models" /></p>
+<p>But what if we were create a new feature from
+<code>genemark_masked-scf1117875582023-abinit-gene-5.70-mRNA-1_4284</code>? Let&rsquo;s
+find out. Whoa! We can see that this new transcript was created as part
+of <code>GMOD:temp2</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Apollo-with-two-genes-splice-variants.jpg"
+width="810" height="585" alt="Apollo with splice variants" /></p>
+<p>That&rsquo;s great, as it looks as it&rsquo;s a splice variant, rather than a whole
+new gene. So is this always the case? After all, there are overlapping
+genes, right? Apollo handles overlaps the following ways (which is
+configurable):</p>
+<ul>
+<li><code>ORF_Overlap</code>: If the transcript has any in-frame overlaps with
+existing transcripts, it gets assigned as a splice variant to the
+existing gene; otherwise a new gene is created.</li>
+<li><code>SimpleOverlap</code>: If the transcript has any overlap (regardless of
+frame) with existing transcripts, it gets assigned as a splice variant
+to the existing gene; otherwise a new gene is created.</li>
+<li><code>NoOverlap</code>: A new gene is always created, regardless of overlap.</li>
+</ul>
+<p>You&rsquo;ll notice that the newly created genes have an ID of the form
+<code>GMOD:temp#</code> and the transcripts have an ID of the form
+<code>GMOD:temp#-transcript#</code>. Apollo uses naming adapters to define how
+newly created features should be named. For example, FlyBase uses
+<code>FBgn:temp#</code> for genes and
+<code>FBgn:temp#:chromosome#:chromosome_start-chromosome_end-R?</code> where <code>?</code> is
+<code>A</code>, <code>B</code>, <code>C</code> and so on.</p>
+<p>Let&rsquo;s make sure that our
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> connectivity
+is working. Let&rsquo;s save our work using <strong>File → Save as&hellip;</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f8/File-save-as.jpg" width="217" height="198"
+alt="File → Save as..." /></p>
+<p>Make sure that <code>Chado database</code> is selected at the data source (should
+already be).</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/14/Chado-save-dialog.jpg" width="519"
+height="406" alt="Chado save dialog" /></p>
+<p>You&rsquo;ll notice that the IDs have changed. This is because the GMOD naming
+adapter follows the convention that all newly created features should
+have an ID of <code>PREFIX:FEATURE_ID</code> for a Chado database. This only occurs
+with newly created features. If you modify the ID of an existing feature
+and save that, this ID replacement will not take place.</p>
+<p>Let&rsquo;s reload the data with <strong>File → Open new&hellip;</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/File-open-new.jpg" width="215"
+height="198" alt="File → Open new..." /></p>
+<p>Again, make sure that <code>Chado database</code> is the selected data source
+(should already be). You&rsquo;ll notice that all the information we put in
+when we first loaded from the database is already there. Apollo keeps a
+history of loading and saving so that you can easily access previous
+data sources. Click <code>Ok</code>. Great, the data is there!</p>
+<p>Let&rsquo;s say that we want to change some information about our gene. We can
+do so by selecting an exon in our feature, and then <strong>right click →
+Annotation Info Editor&hellip;</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/Annotation-editor-popup-menu.jpg"
+width="233" height="162" alt="Annotation editor popup menu" /></p>
+<p>We can see that we can add lots of interesting information for our gene
+and transcript.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/Annotation-editor.jpg" width="497"
+height="339" alt="Annotation editor" /></p>
+<p>Let&rsquo;s go add a comment to our gene. Click on
+<code>Edit GMOD:00020251 comments</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/Annotation-editor-edit-comments.jpg"
+width="211" height="92"
+alt="Annotation editor edit comments button" /></p>
+<p>The comments editor window will show up.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Comments-editor.jpg" width="531"
+height="464" alt="Comments editor" /></p>
+<p>Click on the <code>Add</code> button to create a new comment.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/Comments-editor-buttons.jpg" width="220"
+height="26" alt="Comments editor buttons" /></p>
+<p>Notice the drop down menu that says <code>Select comment or enter your own</code>.
+Apollo allows you to configure a set of predefined comments to choose
+from. This is great to allow consistency between annotators. Right now,
+the list of comments is empty, but we&rsquo;ll look at how to populate the
+list when working on configuring Apollo.</p>
+<p>Enter some text in the text box for your comment. Put in
+<code>&quot;My first comment.&quot;</code> in the text box.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Comments-editor-with-comments.jpg"
+width="531" height="464" alt="Comments editor with comments" /></p>
+<p>Click on the <code>Close</code> button. Notice that the newly added comment now
+shows up in the <code>Comments and properties</code> box.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/Annotation-editor-with-comments.jpg"
+width="368" height="260" alt="Annotation editor with comments" /></p>
+<p>There are a lot of things you can do to your existing annotation from
+the popup menu. You can merge and split transcripts and exons, move
+exons from one transcript to another, and lots of other cool stuff.
+Let&rsquo;s take a look at merging exons. Select the 2 exons that you want to
+merge (hold down <code>shift</code> to allow you select multiple items), right
+click, and choose <code>Merge exons</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Merge-exons-popup-menu.jpg" width="516"
+height="225" alt="Merge exons popup menu" /></p>
+<p>Alright, it does what we&rsquo;d expect it to do.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/64/Apollo-with-merged-exons.jpg" width="810"
+height="585" alt="Apollo-with-merged-exons.jpg" /></p>
+<p>But let&rsquo;s say that upon closer inspection, this is not what we wanted.
+We can <code>undo</code> any changes we&rsquo;ve made! We can undo our merge with <strong>Edit
+→ Undo</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/Edit-undo.jpg" width="100" height="147"
+alt="Edit → Undo" /></p>
+<p>Wow, lookie here, it split the exons again. Although this looks to be a
+trivial operation, it&rsquo;s actually very complex, as one single change can
+lead to multiple cascading changes. For example, merging exons can
+change the coding region frame for the downstream exons, thus affecting
+the CDS. So a single change causes other implicit changes to occur.</p>
+<p>Apollo can run remote analysis. We currently support <code>BLAST</code> and
+<code>Primer-BLAST</code> (primer identification tool) over at NCBI. Let&rsquo;s look at
+how the <code>BLAST</code> support works.</p>
+<p>Select the first model we created (with ID <code>GMOD:00012428</code> in this
+guide - the ID in your data might be different). Double-click on an exon
+to select the whole model. Right-click on the selected feature and
+choose <code>Analyze region</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Analyze-region-popup-menu.jpg" width="298"
+height="387" alt="Analyze region popup menu" /></p>
+<p>The <code>Run analysis</code> window will show up.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Run-analysis.jpg" width="710" height="565"
+alt="Run analysis" /></p>
+<p>We see there is a tab for <code>NCBI-BLAST</code> and <code>NCBI Primer-BLAST</code>. We&rsquo;ll
+just run <code>BLAST</code> for now. We have a pull-down menu for <code>BLAST type</code> and
+can select <code>blastn</code>, <code>blastx</code>, and <code>tblastx</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Blast-types.jpg" width="454" height="57"
+alt="BLAST types" /></p>
+<p>Let&rsquo;s run a <code>blastx</code> search. There are a number of options for running
+<code>BLAST</code> and post processing options. The post processing options are
+particularly useful as since we&rsquo;re searching against NCBI&rsquo;s nr database
+(which is very large), we&rsquo;ll get A LOT of results back. We&rsquo;ll check the
+following options:</p>
+<ul>
+<li>Run options
+<ul>
+<li>Filter out low complexity sequence</li>
+<li>Filter out masked sequence</li>
+</ul>
+</li>
+</ul>
+<p>Click <strong>Run</strong> to run the analysis. After a few seconds, a popup window
+will appear.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/Analysis-expected-time.jpg" width="462"
+height="185" alt="Analysis expected submission time" /></p>
+<p>This gives us the estimated time before our analysis starts running (as
+estimated by the NCBI servers). Note that this is the estimated time for
+the analysis to start, <strong>NOT</strong> the expected time for the analysis to the
+completed. Checking for analysis completion all take place in the
+background, so you can feel free to continue working as usual. You will
+be notified when the analysis is complete.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/Analysis-complete.jpg" width="287"
+height="185" alt="Analysis complete" /></p>
+<p>The new analysis will appear in the results panel and since we ran
+<code>blastn</code> against the nr database, the type for the result is
+<code>blastx:nr</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Blastx-results.jpg" width="177"
+height="40" alt="blastn results" /></p>
+<p>One last thing worth mentioning is the <code>Exon Detail Editor</code>. It allows
+you to make edits to your models at the base level. The
+<code>Sequence Aligner</code> allows you to make the same types of edits the
+<code>Exon Detail Editor</code> support, but in reference to multiple alignment
+data. We&rsquo;ll come back and talk about the <code>Sequence Aligner</code> if we have
+time.</p>
+<p>Unfortunately we don&rsquo;t have the time to go over all the sophisticated
+editing features for <a href="Apollo.1" title="Apollo">Apollo</a>, but you can get more
+information on all the powerful editing features from the
+<a href="http://apollo.berkeleybop.org/current/userguide.html"
+class="external text" rel="nofollow">Apollo user&rsquo;s guide</a>.</p>
+<h2 id="span-idconfiguring_apollo-classmw-headlineconfiguring-apollospan"><span id="Configuring_Apollo" class="mw-headline">Configuring Apollo</span></h2>
+<p>Ok, now that we got some idea of what <a href="Apollo.1" title="Apollo">Apollo</a> can
+do, let&rsquo;s talk about how to configure Apollo. First of all, be aware
+that all configuration files can live in two places:</p>
+<ul>
+<li>The global Apollo configuration directory in <code>$APOLLO_ROOT/conf</code> where
+<code>$APOLLO_ROOT</code> is where Apollo was installed</li>
+<li>User specific configurations, are stored in <code>~/.apollo</code> where ~ is the
+user home directory (different OS&rsquo;s handle it differently)</li>
+</ul>
+<p>The configurations in the user directory take precedence over the global
+ones. Depending on the configuration, it will either fully overwrite the
+global configuration or just overwrite/append to the global one.</p>
+<p>There are 3 sets of general configurations we&rsquo;ll discuss:
+<code>apollo.cfg, data_source.style, data_source.tiers</code>. You can check out
+the <a
+href="http://apollo.berkeleybop.org/current/userguide.html#Configuration#Configuration"
+class="external text" rel="nofollow">Apollo configuration</a> section
+from the user guide for a more detailed description of the supported
+options.</p>
+<h3 id="span-idapollocfg-classmw-headlineapollocfgspan"><span id="apollo.cfg" class="mw-headline"><code>apollo.cfg</code></span></h3>
+<p>This is the main Apollo configuration. Options are composed of columns
+delimited by white space, where the first column is the option parameter
+and the following columns are the specific options for the parameter.
+<code>//</code> is used for comments and everything following it (up the the new
+line) will be ignored. Out of all the options, the most interesting one
+is <code>DataAdapterInstall</code>, which is used to install data adapters for
+handling new sources of data. We&rsquo;ll talk about it in more detail in the
+<a href="#Writing_Custom_Data_Adapters">writing custom data adapters</a> section.
+You can just add any new options or ones you wish to override in your
+custom <code>apollo.cfg</code> file. The global <code>apollo.cfg</code> options will be used
+for any options absent in your custom file.</p>
+<h3 id="span-iddata_sourcestyle-classmw-headlinedata_sourcestylespan"><span id="data_source.style" class="mw-headline"><code>data_source.style</code></span></h3>
+<p>Each data source has a style file associated with it. The style file
+contains options that are data source specific and should be shared
+amongst every feature. Like the <code>apollo.cfg</code> file, it is also composed
+of columns delimited by white space, where the first column is the
+option parameter and the following columns are the specific options for
+the parameter. <code>//</code> is also used for comments and everything following
+it (up to the new line) will be ignored. There&rsquo;s a GUI for setting up
+the most common options. You can access it from <strong>Edit → Preferences</strong>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c5/Edit-preferences.jpg" width="147"
+height="160" alt="Edit -&gt; Preference" /></p>
+<p>Make sure that the <code>Style</code> tab is selected.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Style-wizard.jpg" width="546" height="516"
+alt="Style wizard" /></p>
+<p>Be aware that the GUI only supports a subset of all the options
+supported. This was done as to not overwhelm users with overly complex
+GUIs. If you need to change anything that is not supported with the GUI,
+you&rsquo;ll need to do so by manually editing the file. Of particular
+interest is the <code>Canned annotation/transcript comments</code> section. It
+allows you to add predefined comments that users can add to their
+annotations and transcripts using the <code>Annotation Info Editor</code> from a
+pull down menu.</p>
+<h3 id="span-iddata_sourcetiers-classmw-headlinedata_sourcetiersspan"><span id="data_source.tiers" class="mw-headline"><code>data_source.tiers</code></span></h3>
+<p>Each data source has a tiers file associated with it. The tiers files
+contains options on how to display specific features. It has a
+completely different format than both <code>apollo.cfg</code> and
+<code>data_source.style</code> files. <code>#</code> is used for comments. A tiers file
+contains a set of <code>Tier</code> and <code>Type</code> records.</p>
+<p>A tier record defines a set of feature types that will always be
+displayed together as a group. They will be displayed in the same row if
+possible when the features are expanded but on separate rows if they
+overlap. A <code>Tier</code> record will look something like this:</p>
+<pre><code>[Tier]
+tiername : Annotation
+visible : true
+expanded : true
+maxrows : 0
+labeled : true
+curated : true
+warnonedit : false
+</code></pre>
+<p>Following the <code>Tier</code> record is one or more <code>Type</code> records. A <code>Type</code>
+record specifies which different types should appear in a given <code>Tier</code>.
+The <code>Type</code> record will look something like this:</p>
+<pre><code>[Type]
+tiername : Gene Prediction
+typename : Genscan
+resulttype : genscan:dummy
+resulttype : genscan
+color : 204,153,255
+usescore : true
+minscore : - 1
+maxscore : 50
+glyph : DrawableResultFeatureSet
+column : SCORE
+column : GENOMIC_RANGE
+column : query_frame
+sortbycolumn : GENOMIC_RANGE
+weburl : http://genes.mit.edu/GENSCAN.html#
+</code></pre>
+<p>Again, there are many options supported by the tiers file and it can get
+quite overwhelming. The current <code>fly.tiers</code> file is over 1500 lines
+long! Craziness. Luckily we&rsquo;ve also recently added a GUI for setting the
+most useful options. You can access it by clicking <strong>Edit →
+Preferences</strong> and selecting the <strong>Types</strong> tab.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/Types-wizard.jpg" width="576" height="546"
+alt="Types wizard" /></p>
+<p>If you need to change something not supported by the GUI, you&rsquo;ll have to
+edit the file by hand. You can learn more about the configuration
+wizards in the <a
+href="http://apollo.berkeleybop.org/current/userguide.html#Preferences#Preferences"
+class="external text" rel="nofollow">Preferences</a> section from the
+Apollo user guide.</p>
+<h2 id="span-idsetting_up_custom_chado_configurations-classmw-headlinesetting-up-custom-chado-configurationsspan"><span id="Setting_Up_Custom_Chado_Configurations" class="mw-headline">Setting Up Custom Chado Configurations</span></h2>
+<p>Ok, so we connected to our local Chado instance before with an already
+existing configuration file. Now we&rsquo;re going to go into detail on how to
+set that up. The file that contains the Chado database configuration is
+<code>chado-adapter.xml</code>.</p>
+<h3 id="span-idchado-adapterxml-classmw-headlinechado-adapterxmlspan"><span id="chado-adapter.xml" class="mw-headline"><code>chado-adapter.xml</code></span></h3>
+<p>Like all other configuration files, it resides in <code>$APOLLO_ROOT/conf</code>
+for the global configuration and <code>~/.apollo</code> for the user
+configurations. As you can guess from the file extension, this
+configuration is in <a href="Glossary#XML" title="Glossary">XML</a> format (nice how all
+the formats between the configurations are so consistent, huh? =P). It
+contains a <code>&lt;chado-adapter&gt;</code> root element, with at least one
+<code>chadoInstance</code> child element and at least one <code>chadodb</code> element. The
+skeleton for the XML file will look something like this:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;chado-adapter&gt;
+  &lt;chadoInstance&gt;
+    ...
+  &lt;/chadoInstance&gt;
+   ...
+  &lt;chadodb&gt;
+    ...
+  &lt;/chadodb&gt;
+&lt;/chado-adapter&gt;
+</code></pre><h4 id="span-idchadoinstance_element-classmw-headlinechadoinstance-elementspan"><span id="chadoInstance_Element" class="mw-headline">chadoInstance Element</span></h4>
+<p>You&rsquo;ll need at least one <code>chadoInstance</code> element. It will look something
+like this:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;chadoInstance id=&#34;gmodSummerSchoolInstance&#34; default=&#34;true&#34;&gt;
+ 
+  &lt;!-- associated Java class with this instance --&gt;
+  &lt;clsName&gt;apollo.dataadapter.chado.jdbc.RiceChadoInstance&lt;/clsName&gt;
+ 
+  &lt;!-- database fields corresponding to top-level entries - will appear in the pulldown menu --&gt;
+  &lt;sequenceTypes&gt;
+    &lt;type&gt;gene&lt;/type&gt;
+    &lt;type&gt;
+      &lt;name&gt;contig&lt;/name&gt;
+      &lt;!-- give start and end input box for this region --&gt;
+      &lt;useStartAndEnd&gt;true&lt;/useStartAndEnd&gt;
+      &lt;!-- query the database for valid ids for contigs --&gt;
+      &lt;queryForValueList&gt;true&lt;/queryForValueList&gt;
+      &lt;!-- whether the feature is top level --&gt;
+      &lt;isTopLevel&gt;true&lt;/isTopLevel&gt;
+    &lt;/type&gt;
+  &lt;/sequenceTypes&gt;
+ 
+  &lt;!-- CV information stored in the Chado instance --&gt;
+  &lt;partOfCvTerm&gt;part_of&lt;/partOfCvTerm&gt;
+  &lt;featureCV&gt;sequence&lt;/featureCV&gt;
+  &lt;relationshipCV&gt;relationship&lt;/relationshipCV&gt;
+  &lt;propertyTypeCV&gt;feature_property&lt;/propertyTypeCV&gt;
+ 
+  &lt;!-- list of gene predictions to retrieve --&gt;
+  &lt;genePredictionPrograms&gt;
+    &lt;program&gt;maker&lt;/program&gt;
+  &lt;/genePredictionPrograms&gt;
+ 
+  &lt;!-- list of search hits to retrieve --&gt;
+  &lt;searchHitPrograms&gt;
+    &lt;program&gt;blastn&lt;/program&gt;
+    &lt;program&gt;blastx&lt;/program&gt;
+    &lt;program&gt;tblastx&lt;/program&gt;
+    &lt;program&gt;est2genome&lt;/program&gt;
+    &lt;program&gt;protein2genome&lt;/program&gt;
+    &lt;program&gt;repeatmasker&lt;/program&gt;
+    &lt;program&gt;fgenesh&lt;/program&gt;
+    &lt;program&gt;fgenesh_masked&lt;/program&gt;
+    &lt;program&gt;genemark&lt;/program&gt;
+    &lt;program&gt;genemark_masked&lt;/program&gt;
+    &lt;program&gt;snap&lt;/program&gt;
+    &lt;program&gt;snap_masked&lt;/program&gt;
+  &lt;/searchHitPrograms&gt;
+ 
+  &lt;!-- will most likely be set to true; exists for backward support for non-standard Chado --&gt;
+  &lt;searchHitsHaveFeatLocs&gt;true&lt;/searchHitsHaveFeatLocs&gt;
+ 
+  &lt;!-- list of one-level annotations to retrieve --&gt;
+  &lt;oneLevelAnnotTypes&gt;
+    &lt;type&gt;promoter&lt;/type&gt;
+    &lt;type&gt;transposable_element&lt;/type&gt;
+    &lt;type&gt;remark&lt;/type&gt;
+    &lt;type&gt;repeat_region&lt;/type&gt;
+  &lt;/oneLevelAnnotTypes&gt;
+ 
+  &lt;!-- list of three-level annotations to retrieve --&gt;
+  &lt;threeLevelAnnotTypes&gt;
+    &lt;type&gt;gene&lt;/type&gt;
+    &lt;type&gt;pseudogene&lt;/type&gt;
+    &lt;type&gt;tRNA&lt;/type&gt;
+    &lt;type&gt;snRNA&lt;/type&gt;
+    &lt;type&gt;snoRNA&lt;/type&gt;
+    &lt;type&gt;ncRNA&lt;/type&gt;
+    &lt;type&gt;rRNA&lt;/type&gt;
+    &lt;type&gt;miRNA&lt;/type&gt;
+  &lt;/threeLevelAnnotTypes&gt;
+ 
+&lt;/chadoInstance&gt;
+</code></pre><h4 id="span-idchadodb_element-classmw-headlinechadodb-elementspan"><span id="chadodb_Element" class="mw-headline">chadodb Element</span></h4>
+<p>You&rsquo;ll need at least one <code>&lt;chadodb&gt;</code> element. It contains information to
+connect to the database. Each <code>&lt;chadodb&gt;</code> element will have a
+<code>&lt;chadoInstance&gt;</code> associated with it. You&rsquo;ll need one <code>&lt;chadodb&gt;</code>
+element for each database you want to connect to (you can have multiple
+ones). The XML will look something like this:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;chadodb&gt;
+ 
+  &lt;!-- label that will appear in the dropdown list of databases --&gt;
+  &lt;name&gt;GMOD Summer School&lt;/name&gt;
+ 
+  &lt;!-- the Apollo class to use for your database --&gt;
+  &lt;adapter&gt;apollo.dataadapter.chado.jdbc.PostgresChadoAdapter&lt;/adapter&gt;
+ 
+  &lt;!-- the URL for the database server --&gt;
+  &lt;url&gt;jdbc:postgresql://localhost:5432/chado&lt;/url&gt;
+ 
+  &lt;!-- database name --&gt;
+  &lt;dbName&gt;chado&lt;/dbName&gt;
+ 
+  &lt;!-- database user / login --&gt;
+  &lt;dbUser&gt;gmod&lt;/dbUser&gt;
+ 
+  &lt;!-- identifies the type of Chado database --&gt;
+  &lt;dbInstance&gt;gmodSummerSchoolInstance&lt;/dbInstance&gt;
+ 
+  &lt;!-- style configuration for this database --&gt;
+  &lt;style&gt;gmod_summer_school.style&lt;/style&gt;
+ 
+  &lt;!-- if set to true, will be database used when launching Apollo using command line arguments --&gt;
+  &lt;default-command-line-db&gt;true&lt;/default-command-line-db&gt;
+ 
+&lt;/chadodb&gt;
+</code></pre><h2 id="span-idsetting_up_a_custom_webstart_instance-classmw-headlinesetting-up-a-custom-webstart-instancespan"><span id="Setting_Up_a_Custom_WebStart_Instance" class="mw-headline">Setting Up a Custom WebStart Instance</span></h2>
+<p>One of the benefits of having <a href="Apollo.1" title="Apollo">Apollo</a> as a Java
+application is that we can make use of
+<a href="http://en.wikipedia.org/wiki/Java_Web_Start"
+class="external text" rel="nofollow">Java WebStart</a>. This is a great
+way to deploy Apollo with your custom modifications. If any
+modifications are made (either source code or configuration), it will be
+automatically deployed through WebStart. To setup our own WebStart
+instance, we&rsquo;ll need to compile the code ourselves. See the
+<a href="#Installation">installation section</a> on information on how to checkout
+the code.</p>
+<p>We&rsquo;ve already checked out the code from SVN in our virtual machines. The
+code is located in <code>~/Documents/Software/Apollo</code>. The code is the up to
+date so we don&rsquo;t need to update it. Change into the <code>Apollo</code> directory.</p>
+<pre><code>$ cd ~/Documents/Software/Apollo
+</code></pre>
+<p>Now we&rsquo;ll need to create our Apollo jar file for deployment. Before we
+do that, we want to make sure that our custom configurations are in the
+<code>conf</code> directory (we want it to be globally deployed, not locally). So
+let&rsquo;s copy our modified <code>chado-adapter.xml</code> and the style and tiers
+files to the <code>conf</code> directory.</p>
+<pre><code>$ cp ~/.apollo/chado-adapter.xml ~/.apollo/gmod_summer_school.* conf
+</code></pre>
+<p>Now we&rsquo;re ready to build our updated Apollo jar. We&rsquo;ll use
+<a href="http://ant.apache.org" class="external text"
+rel="nofollow">Apache Ant</a> to do so. <code>Ant</code> is similar in many ways to
+<code>make</code> but has a lot of native support for Java. Like <code>make</code>, we can
+have multiple targets. We&rsquo;re interested in the <code>jar</code> target.</p>
+<pre><code>$ cd src/java
+$ ant jar
+</code></pre>
+<p>So traditionally, setting up a WebStart instance is quite a bit of work.
+Luckily, we have a very nice Perl script that does a lot of the magic
+for us! Before we can use this script, we&rsquo;ll need to look at the
+template XML file that is used for this script.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;webstart&gt;
+ 
+  &lt;!-- all this stuff is required for signing jars, shouldn&#39;t take too long to run --&gt;
+  &lt;jarsigner&gt;
+    &lt;alias&gt;apollo&lt;/alias&gt;
+    &lt;keypass&gt;apollo&lt;/keypass&gt;
+    &lt;storepass&gt;apollo&lt;/storepass&gt;
+    &lt;keystore&gt;apollo_store&lt;/keystore&gt;
+    &lt;validity&gt;700&lt;/validity&gt;
+    &lt;!-- you might want to put your name --&gt;
+    &lt;commonName&gt;GMOD Training 2011&lt;/commonName&gt;
+    &lt;!-- you might want to put your department name --&gt;
+    &lt;organizationUnit&gt;GMOD Training 2011&lt;/organizationUnit&gt;
+    &lt;!-- you might want to put your organization&#39;s name --&gt;
+    &lt;organizationName&gt;GMOD&lt;/organizationName&gt;
+    &lt;!-- you might want to put your organization&#39;s city --&gt;
+    &lt;localityName&gt;Durham&lt;/localityName&gt;
+    &lt;!-- you might want to put your organization&#39;s state --&gt;
+    &lt;stateName&gt;NC&lt;/stateName&gt;
+    &lt;!-- you might want to put your organization&#39;s country --&gt;
+    &lt;country&gt;USA&lt;/country&gt;
+  &lt;/jarsigner&gt;
+ 
+  &lt;!-- now we need to populate our jnlp information --&gt;
+  &lt;jnlp spec=&#34;1.0+&#34;&gt;
+    &lt;information&gt;
+      &lt;title&gt;Apollo&lt;/title&gt;
+      &lt;vendor&gt;GMOD Summer School 2010&lt;/vendor&gt;
+      &lt;description&gt;Apollo Webstart&lt;/description&gt;
+      &lt;!-- location of your project&#39;s web page --&gt;
+      &lt;homepage href=&#34;http://localhost/apollo&#34; /&gt;
+      &lt;!-- if you want to have WebStart add a specific image as your icon,
+            point to the location of the image --&gt;
+      &lt;icon href=&#34;images/head-of-apollo.gif&#34; kind=&#34;shortcut&#34; /&gt;
+      &lt;!-- create a shortcut on your desktop --&gt;
+      &lt;shortcut online=&#34;true&#34;&gt;
+        &lt;desktop /&gt;
+      &lt;/shortcut&gt;
+      &lt;!-- allow users to launch Apollo when offline --&gt;
+      &lt;offline-allowed /&gt;
+    &lt;/information&gt;
+    &lt;!-- request all permissions - might be needed since Apollo will access the local
+          file system --&gt;
+    &lt;security&gt;
+      &lt;all-permissions /&gt;
+    &lt;/security&gt;
+    &lt;!-- we require at least Java 1.5, set to start using 64m and up to 500m --&gt;
+    &lt;resources&gt;
+      &lt;j2se version=&#34;1.5+&#34; initial-heap-size=&#34;64m&#34; max-heap-size=&#34;500m&#34; /&gt;
+    &lt;/resources&gt;
+    &lt;!-- where the main method is located - don&#39;t change this --&gt;
+    &lt;application-desc main-class=&#34;apollo.main.Apollo&#34;&gt;
+        &lt;!-- we can add arguments when launching Apollo - this particular one allows us to
+              load chromosome 1, from 11650000 to 11685000 - great way to have Apollo load
+              specific regions --&gt;
+        &lt;argument&gt;-i&lt;/argument&gt;
+        &lt;argument&gt;chadodb&lt;/argument&gt;
+        &lt;argument&gt;-l&lt;/argument&gt;
+        &lt;argument&gt;scf1117875582023:523000-532000&lt;/argument&gt;
+    &lt;/application-desc&gt;
+  &lt;/jnlp&gt;
+  &lt;webserver&gt;
+    &lt;!-- URL where the webstart instance will reside --&gt;
+    &lt;url&gt;http://localhost/apollo/webstart&lt;/url&gt;
+    &lt;!-- relative location to &lt;url&gt; where jars are located --&gt;
+    &lt;jar_location&gt;jars&lt;/jar_location&gt;
+  &lt;/webserver&gt;
+&lt;/webstart&gt;
+</code></pre><p>The nice thing about this template is that you only need to set it up
+once (assuming you&rsquo;re not changing the URL or any other option).</p>
+<p>The Apache web pages reside at <code>/var/www</code>. We&rsquo;ll create an Apollo
+directory. The directory is only writable by root, so we&rsquo;ll need to be
+root.</p>
+<pre><code>$ sudo -s
+$ cd /var/www
+$ mkdir -p apollo/webstart
+$ cd apollo/webstart
+</code></pre>
+<p>Let&rsquo;s create the file <code>apollo_webstart.xml</code> in the <code>webstart</code> directory
+we just created. Now we&rsquo;ll run the magical script. Note that you&rsquo;ll need
+to have the <code>XML::Twig</code> module installed.</p>
+<pre><code>$ ~/Documents/Software/Apollo/bin/webstart_generator.pl -i apollo_webstart.xml \
+   -d ~/Documents/Software/Apollo/jars -o apollo.jnlp -D jars
+</code></pre>
+<p>Voila, it was THAT easy. This script took care of signing all the jars
+and generating the appropriate <code>jnlp</code> file. Next time, when you make a
+change to one of the configurations, you&rsquo;ll just need to recompile the
+<code>apollo.jar</code> and re-run this script.</p>
+<p>Lastly, we&rsquo;ll just create a simple web page to link to the Apollo
+WebStart instance. Let&rsquo;s call it <code>index.html</code>.</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter"> &lt;html&gt;
+   &lt;body&gt;
+     &lt;a href=&#34;apollo.jnlp&#34;&gt;Launch Apollo!!!&lt;/a&gt;
+   &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre><p>One last note, you&rsquo;ll want to make sure that your web server has support
+for <code>jnlp</code> files. With our Apache install, you&rsquo;ll need to make sure that
+you have the following line in your <code>/etc/mime.types</code> file:</p>
+<pre><code>application/x-java-jnlp-file    jnlp
+</code></pre>
+<p>Now we can test out our Java Web Start instance by going to
+<a href="http://localhost/apollo/webstart" class="external free"
+rel="nofollow">http://localhost/apollo/webstart</a> and clicking on the
+link.</p>
+<h2 id="span-idwriting_custom_data_adapters-classmw-headlinewriting-custom-data-adaptersspan"><span id="Writing_Custom_Data_Adapters" class="mw-headline">Writing Custom Data Adapters</span></h2>
+<p>There&rsquo;s a bit of work involved with writing a custom data adapter. It
+will require you to have knowledge of Java and the data model used in
+Apollo. We won&rsquo;t have enough time to write one ourselves, but we can
+briefly discuss how the process works.</p>
+<p>All data adapters belong to the <code>apollo.dataadapter</code> package. To build
+our own custom data adapter, we need to implement two specific
+interfaces: <code>apollo.dataadapter.ApolloDataAdapterI</code> and
+<code>org.bdgp.io.DataAdapterUI</code>. There are abstract classes that implement
+common methods for both of those interfaces:
+<code>apollo.dataadapter.AbstractApolloAdapter</code> and
+<code>org.bdgp.swing.AbstractDataAdapterUI</code> respectively.</p>
+<p><code>ApolloDataAdapterI</code> does the work of parsing the input data. The most
+important method for the interface is <code>getCurationSet()</code> which does the
+work of returning the data to the logic layer.</p>
+<p><code>ApolloDataAdapterGUI</code> provides the GUI that we see in the <strong>Apollo:
+load data</strong> window. It implements the necessary interfaces and extends
+JPanel, so you can build your GUI directly in the class.</p>
+<p>We&rsquo;ll take a look at how to get the sample adapter to work. The code for
+the sample adapter is located in <code>apollo.dataadapter.sample</code> package.
+Since we just finished building the jar, we have already compiled the
+code. So all we need to do is tell Apollo to load the data adapter
+plugin. We&rsquo;ll add the following to <code>apollo.cfg</code>:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter"> DataAdapterInstall      &#34;apollo.dataadapter.sample.SampleAdapter&#34;   &#34;gmod_summer_school.style&#34;     &#34;Sample data adapter&#34;
+</code></pre><p>The first column tells Apollo that we&rsquo;ll be loading a new data adapter.
+The second column points to the class for the data adapter. The third
+column tells which style to associate with this data. The fourth column
+provides the text that will be displayed in the data adapter pull down
+menu.</p>
+<p>Now if we run Apollo, we&rsquo;ll see <strong>Sample data adapter</strong> as one of the
+options. Lovely!</p>
+<p>There&rsquo;s a roughly written tutorial on how to create your own data
+adapter. It covers some information on the data adapter API and the data
+model. You&rsquo;ll want to read that if you&rsquo;re interested in creating one.
+It&rsquo;s located in <code>$APOLLO_ROOT/doc/html/dataadapter_cookbook.html</code>. You
+can also view the
+<a href="http://apollo.berkeleybop.org/current/javadoc"
+class="external text" rel="nofollow">Apollo Javadoc API</a>.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+<li><a href="Category%253AApollo" title="Category%253AApollo">Apollo</a></li>
+<li><a href="Category%253A2011_Spring_Training" title="Category%253A2011 Spring Training">2011 Spring
+Training</a></li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="Special%253ABrowse/Apollo-20Tutorial-202011" title="Special%253ABrowse/Apollo-20Tutorial-202011">Apollo Tutorial
+2011</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="Apollo.1" title="Apollo">Apollo</a> <span class="smwsearch"><a href="Special%253ASearchByProperty/Has-20topic/Apollo" title="Special%253ASearchByProperty/Has-20topic/Apollo">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Apollo_Tutorial_2011" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 00:21 on 14 February
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">31,454 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

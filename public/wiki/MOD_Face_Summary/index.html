@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOD Face Summary - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautomod-face-summaryspan"><span dir="auto">MOD Face Summary</span></h1>
+<h3 id="span-idmeeting_report_0amodel_organism_database_user_interface_caucus0agmod_meeting2c_january_182c_20072c_san_diego2c_ca2c_usa-classmw-headlinemeeting-report-span"><span id="Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA" class="mw-headline">Meeting Report </span></h3>
+<p>Model Organism Database User Interface Caucus</p>
+<p>GMOD Meeting, January 18, 2007, San Diego, CA, USA</p>
+<h1 id="span-idexecutive_summary-classmw-headlineexecutive-summaryspan"><span id="Executive_Summary" class="mw-headline">Executive Summary</span></h1>
+<p>The user interface (UI) is the most visible aspect of a model organism
+database (MOD), and arguably has the most direct impact on the
+satisfaction of its users. On the first day of the January 2007 GMOD
+meeting, we shared experiences, discussed lessons learned, and
+identified unsolved problems in the field of MOD user interface design.
+To drive the discussion, representatives of several MODs (including both
+model and multi-organism databases) presented aspects of their UI that
+related to a common set of use cases. This brought to light several
+useful topics that that are not widely known, and that new and old MODs
+can benefit from.</p>
+<p><strong>General lessons learned:</strong> Clarity in actions required of users, and
+clarity and reliability of results of these are important to users.
+Contextual examples and <em>help</em> links are very useful to users.
+Appearance is less important to users than functionality and
+responsiveness. Developing good UIs takes sustained work, including
+feedback and community testing. <strong>Complexity is an inherent problem:</strong>
+MODs deal with rich, complex data that is constantly expanding and
+changing. A central challenge for a MOD&rsquo;s user interface is to make
+common tasks easy and complex tasks possible. This problem is addressed
+through user interface design, engineering of site infrastructure, and
+user education and documentation. There is a need at many MODs for
+broader availability of power-user interfaces for complex queries, for
+uploading and operating on sets of genes in one step, and for flexible
+configuration of data output formats. <strong>Good new ideas in development:</strong>
+Wikipedia provides an excellent example for science community
+participation that several MODs are adopting. More dynamic web content
+and graphical summaries can help manage information. Interactive
+auto-complete of words typed in search boxes gives users immediate
+feedback. Google can be harnessed to aid, but is not solely sufficient
+for, searching MOD data. Providing &ldquo;server snapshots&rdquo; is a useful
+mechanism for keeping older database versions available.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA"><span class="tocnumber">1</span> <span class="toctext">Meeting Report
+Model Organism Database User Interface Caucus GMOD Meeting, January
+18, 2007, San Diego, CA,
+USA</span></a></li>
+<li><a href="#Executive_Summary"><span class="tocnumber">2</span> <span class="toctext">Executive
+Summary</span></a></li>
+<li><a href="#Participants_and_Presentations"><span class="tocnumber">3</span> <span class="toctext">Participants
+and Presentations</span></a></li>
+<li><a href="#Detailed_Report"><span class="tocnumber">4</span> <span class="toctext">Detailed
+Report</span></a>
+<ul>
+<li><a href="#Addressing_Six_MOD_Use_Cases"><span class="tocnumber">4.1</span> <span class="toctext">Addressing
+Six MOD Use Cases</span></a></li>
+<li><a href="#User_Interface_Development"><span class="tocnumber">4.2</span> <span class="toctext">User
+Interface Development</span></a>
+<ul>
+<li><a href="#Lessons_Learned_from_Experience"><span class="tocnumber">4.2.1</span>
+<span class="toctext">Lessons Learned from
+Experience</span></a></li>
+<li><a href="#Gathering_and_Analyzing_User_Feedback"><span class="tocnumber">4.2.2</span>
+<span class="toctext">Gathering and Analyzing User
+Feedback</span></a>
+<ul>
+<li><a href="#Using_User_Feedback_to_Guide_UI_Design"><span class="tocnumber">4.2.2.1</span>
+<span class="toctext">Using User Feedback to Guide UI
+Design</span></a></li>
+<li><a href="#Site_Logging"><span class="tocnumber">4.2.2.2</span>
+<span class="toctext">Site Logging</span></a></li>
+<li><a href="#Card_Sorting"><span class="tocnumber">4.2.2.3</span>
+<span class="toctext">Card Sorting</span></a></li>
+<li><a href="#Watching_Users"><span class="tocnumber">4.2.2.4</span>
+<span class="toctext">Watching Users</span></a></li>
+</ul>
+</li>
+<li><a href="#Balancing_Completeness_and_Simplicity"><span class="tocnumber">4.2.3</span>
+<span class="toctext">Balancing Completeness and
+Simplicity</span></a></li>
+</ul>
+</li>
+<li><a href="#New_Trends_in_MOD_UIs"><span class="tocnumber">4.3</span> <span class="toctext">New Trends
+in MOD UIs</span></a>
+<ul>
+<li><a href="#Community_Participation"><span class="tocnumber">4.3.1</span>
+<span class="toctext">Community
+Participation</span></a></li>
+<li><a href="#Client-side_Scripting_.28JavaScript.29"><span class="tocnumber">4.3.2</span>
+<span class="toctext">Client-side Scripting
+(JavaScript)</span></a></li>
+<li><a href="#Using_Virtualization_for_MOD_Snapshots"><span class="tocnumber">4.3.3</span> <span class="toctext">Using
+Virtualization for MOD
+Snapshots</span></a></li>
+</ul>
+</li>
+<li><a href="#Using_Google_and_Other_General_Search_Engines"><span class="tocnumber">4.4</span> <span class="toctext">Using
+Google and Other General Search
+Engines</span></a></li>
+<li><a href="#User_Interface_Conventions"><span class="tocnumber">4.5</span> <span class="toctext">User
+Interface Conventions</span></a></li>
+<li><a href="#General_Discussion"><span class="tocnumber">4.6</span> <span class="toctext">General
+Discussion</span></a></li>
+<li><a href="#Implementation_Techniques"><span class="tocnumber">4.7</span>
+<span class="toctext">Implementation
+Techniques</span></a></li>
+</ul>
+</li>
+<li><a href="#References"><span class="tocnumber">5</span>
+<span class="toctext">References</span></a></li>
+</ul>
+<h1 id="span-idparticipants_and_presentations-classmw-headlineparticipants-and-presentationsmod_face_talks-mod-face-talksspan"><span id="Participants_and_Presentations" class="mw-headline">Participants and <a href="MOD_Face_Talks" title="MOD Face Talks">Presentations</a></span></h1>
+<p>This meeting drew together some 60 biologists, bioinformaticians and
+other interested people, representing more than 25 database projects and
+organizations. The list of attendees is
+<a href="MOD_Participants" title="MOD Participants">here</a>. The day included thirteen
+presentations, and a round table discussion at the end. Slides and text
+summaries of individual presentations are provided at the <a href="MOD_Face_Talks" title="MOD Face Talks">MOD Face
+Talks</a> page.</p>
+<h1 id="span-iddetailed_report-classmw-headlinedetailed-reportspan"><span id="Detailed_Report" class="mw-headline">Detailed Report</span></h1>
+<h2 id="span-idaddressing_six_mod_use_cases-classmw-headlineaddressing-six-mod-use-casesspan"><span id="Addressing_Six_MOD_Use_Cases" class="mw-headline">Addressing Six MOD Use Cases</span></h2>
+<p><em>Many simple/quick/global searches.</em> Most MODs have some variation of a
+&ldquo;search everything&rdquo; option that is the primary search entry. Simple
+searches at MODs vary principally in the details of data classes (which
+were searched and whether or not they needed to be specified) and how
+terms are matched (exact, partial, phrase and/or wildcard). These types
+of simple searches must balance ease of use with relevance of results.
+How results can be handled also varies between MODs. Various MODs allow
+searches and results to be saved, refined, downloaded and/or exported to
+other tools. One challenge is how to support user expectations to make
+&ldquo;simple&rdquo; searches that return quality answers. The TAIR presentation
+details a several-year process to determine best functionality of simple
+search from user feedback: it takes effort to develop &ldquo;simple and quick&rdquo;
+searches that return what biologists really looking for. We note that
+&ldquo;simple&rdquo; searches present a trade-off between simplicity of specifying
+the query and simplicity of searching through the returned results. In
+the case that a keyword entered into a &ldquo;simple search&rdquo; box returns only
+a few results, merely listing the results is sufficient. In the case
+that such a search returns many results, often of different types, it
+makes sense to do one of the following 1) structure the returned
+information by &ldquo;type&rdquo;, list the types and show the first few of that
+type, allowing the user to expand/contract those lists by type, 2)
+permit the user at this point to interact to choose to either further
+limit the returned results or to page through the results. The
+threshold at which one strategy is preferable to another needs to be
+determined through user studies.</p>
+<p><em>Gene page reports.</em> Most MODs agree that users like short summaries and
+graphical presentations of data. Individual MODs vary widely in
+deciding how much detail is displayed in the default view. Individual
+MODs struggle with how to direct users, in an obvious manner, toward
+deeper levels of information.</p>
+<p><em>Advanced/attribute searches.</em> Many MODs allow some sort of advanced
+search where users can specify search criteria over multiple data types.
+Some MODs (e.g. NCBI, ApiDB) allowed query histories to be combined,
+allowing for complex, refined searches and results, and others (FlyMine)
+provide this functionality through set operations on &lsquo;bags&rsquo; of objects.</p>
+<p><em>User choices in data reports.</em> This is an acknowledged weak aspect at
+many MODs. Most have yet to develop systems that allow users to fully
+customize reports. The basic state is that users parse information from
+a given MOD&rsquo;s defined formats (which tend to vary between MODs). Some
+MODs (e.g. FlyMine, FlyBase) allow choice of output columns and their
+order.</p>
+<p><em>UIs for bulk data handling.</em> Many MODs allow some sort of bulk query,
+although the allowed data types varys.
+<a href="http://www.biomart.org/" class="external text"
+rel="nofollow">BioMart</a> provides a common UI that is used at several
+MODs
+(<a href="http://www.wormbase.org/BioMart/martview" class="external text"
+rel="nofollow">WormBase</a>,
+<a href="http://www.gramene.org/Multi/martview" class="external text"
+rel="nofollow">Gramene</a>,
+<a href="http://www.dictybase.org/biomart/martview"
+class="external text" rel="nofollow">DictyBase</a>,
+<a href="http://insects.eugenes.org/BioMart/martview"
+class="external text" rel="nofollow">DroSpeGe</a>) for bulk data search
+and retrieval, and is in development at others. Some MODs (e.g. FlyMine)
+provide a more complex query UI that can operate on large lists (e.g.
+all genes), supporting pre-defined or user-defined data export formats.
+In addition intermediate results can be saved in &lsquo;bags&rsquo; and these lists
+combined and/ or used in subsequent queries.</p>
+<p><em>Cross-site facilitation.</em> Some MODs allow searches for IDs and/or names
+that might be found elsewhere. Many MODs use ontologies (e.g. GO) or
+orthologies to link to other databases, one at least (NCBI) offers
+computed relations between databases. A common problem in this is
+keeping up-to-date across databases. Some MODs (e.g. FlyMine, Wormbase,
+SGD) maintain lists of orthologues for many species. This allows a set
+of genes from one species to be imported, and the list of corresponding
+genes from another, more data rich species, to be derived and then
+explored.</p>
+<h2 id="span-iduser_interface_development-classmw-headlineuser-interface-developmentspan"><span id="User_Interface_Development" class="mw-headline">User Interface Development</span></h2>
+<h3 id="span-idlessons_learned_from_experience-classmw-headlinelessons-learned-from-experiencespan"><span id="Lessons_Learned_from_Experience" class="mw-headline">Lessons Learned from Experience</span></h3>
+<ul>
+<li>Clear (better yet, obvious) input actions and requirements are
+important. For example, &ldquo;What, exactly, are people expected to type
+into a &lsquo;quick search&rsquo; box?&rdquo; and &ldquo;If the &rsquo;log on&rsquo; box is at the top of
+the homepage, does that mean I have to register and log on to use the
+site?&rdquo;. Also, input fields should be prefilled with an example query
+value to give user an idea of the type of value to be entered (and to
+permit</li>
+</ul>
+<p>easy exploration by novices).</p>
+<ul>
+<li>
+<p>Reliable results are important.</p>
+</li>
+<li>
+<p>Fast results are good.</p>
+</li>
+<li>
+<p>What users ask for isn&rsquo;t always what they really want (see the ApiDB
+presentation).</p>
+</li>
+<li>
+<p>Appearance is less important than functionality.</p>
+</li>
+<li>
+<p>UI components and report sections should be clearly labeled and
+include tips, sample queries and default values. Results should
+include brief summaries whenever possible.</p>
+</li>
+<li>
+<p>Use terms the bio-community understands and try to stay away from
+those that you might want them to learn, but that aren&rsquo;t strictly
+necessary for usage (e.g. the word &ldquo;Boolean&rdquo; at ApiDB )</p>
+</li>
+<li>
+<p>Don&rsquo;t change what works for users; even if you develop a &ldquo;better&rdquo; more
+sophisticated tool, the users might still prefer the one they know how
+to use (e.g. the Batch Sequences tool at Wormbase). MODs generally
+thought that we should avoid rapid turnover in UI, but many felt that
+frequent, small changes and additions can be useful to community (if
+clearly explained)</p>
+</li>
+<li>
+<p>Support for User preferences/sessions/configurations (e.g. &ldquo;MyNCBI&rdquo;,
+FlyMine&rsquo;s &ldquo;MyMine&rdquo;)</p>
+<ul>
+<li>default UI dilemma: simple/dumb for general audience, or
+sophisticated/complex for focused users</li>
+<li>variable (low) use of preference options?</li>
+<li>needs transparency to user (avoid logins/extra effort)</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idgathering_and_analyzing_user_feedback-classmw-headlinegathering-and-analyzing-user-feedbackspan"><span id="Gathering_and_Analyzing_User_Feedback" class="mw-headline">Gathering and Analyzing User Feedback</span></h3>
+<h4 id="span-idusing_user_feedback_to_guide_ui_design-classmw-headlineusing-user-feedback-to-guide-ui-designspan"><span id="Using_User_Feedback_to_Guide_UI_Design" class="mw-headline">Using User Feedback to Guide UI Design</span></h4>
+<p><em>Start early.</em> There was broad agreement that usability studies for a
+user interface should be conducted as early as possible in its
+development cycle. The more development effort that has already been
+devoted to a tool, the harder it is to make any suggested changes that
+may arise from a usability study. Moreover, the existing structure of
+the interface under test can profoundly influence the shape of suggested
+changes, possibly stifling perhaps profitable UI design ideas that may
+otherwise have been free to arise, or giving undue weight to ideas that
+happen to coincide with the current direction of development.</p>
+<p><em>Users may not know what they need any better than the developers do.</em>
+UI development should be a creative collaboration between users and
+developers. Neither party alone should drive the development, but the
+two should work closely together. In practice, users often have too
+little opportunity to participate in the UI design process.</p>
+<h4 id="span-idsite_logging-classmw-headlinesite-loggingspan"><span id="Site_Logging" class="mw-headline">Site Logging</span></h4>
+<p>A MOD site&rsquo;s server logs can be useful for gathering indirect user
+feedback. This user feedback mechanism is often overlooked, yet it is
+relatively easy to work with and can provide very rich data, limited
+only by the investigator&rsquo;s ingenuity. For example, a MOD might configure
+its server logs to provide information on user searches, how much time
+each search took, and the number of results returned by the search. The
+MOD might then analyze this data to find common instances of &ldquo;failed&rdquo;
+searches that return no results, then identify ways to improve its user
+interface to make any obscure data more accessible. A MOD might also use
+server logs to identify the types of data users search for most
+frequently, and give that data a more prominent place in the site&rsquo;s user
+interface. Tools for visualizing these logs, named &ldquo;Ajaxalytics&rdquo; have
+been developed by ApiDB personnel and are available through sourceforge.
+Further work with these tools to cluster and characterize user behavior
+is underway.</p>
+<h4 id="span-idcard_sorting-classmw-headlinecard-sortingspan"><span id="Card_Sorting" class="mw-headline">Card Sorting</span></h4>
+<p>&ldquo;Card sorting&rdquo; is an easy to implement and powerful method of
+discovering how users naturally group items of data. An investigator
+gives each user a stack of cards, on each of which is written a word or
+phrase describing a concept. The user is then asked to sort the cards
+into piles, and optionally sub-piles, that group the concepts in the way
+that makes the most &ldquo;intuitive sense&rdquo;. The users are then asked to label
+these piles, by writing a category name on a blank card and clipping
+them together.</p>
+<p>At least one MOD in the meeting reported successfully using this method
+to design easy-to-navigate groupings of menu choices for their site&rsquo;s
+UI.</p>
+<h4 id="span-idwatching_users-classmw-headlinewatching-usersspan"><span id="Watching_Users" class="mw-headline">Watching Users</span></h4>
+<p>Watching users interact with a MOD&rsquo;s user interface can tell an
+investigator more than user opinions and surveys. ApiDB recounted some
+of the methods they used for conducting user interface testing. One type
+of study they did involved pairs of users sitting at computers outfitted
+with video and keystroke capture devices, as well as audio recording.
+These pairs of users were asked to perform various tasks using the user
+interface under test. The video and keystroke capturing provided a
+comprehensive record of all actions the users performed with the site.
+Additionally, the audio recording of each pair allowed investigators to
+hear how the users talked about and explained the site to each other,
+shedding some light on the way users think about their interactions with
+the site. ApiDB&rsquo;s presentation also pointed one disadvantage of this
+approach, which is the difficulty of analyzing the large amount of data
+collected during the study, since most of it is in the form of many
+hours of audio and video recordings. Despite the analysis difficulties,
+ApiDB reported that they had found the data to be quite useful. After
+the ApiDB presentation, Ceri Van Slyke from ZFIN remarked that ZFIN had
+conducted similar usability studies, with similar experiences.</p>
+<h3 id="span-idbalancing_completeness_and_simplicity-classmw-headlinebalancing-completeness-and-simplicityspan"><span id="Balancing_Completeness_and_Simplicity" class="mw-headline">Balancing Completeness and Simplicity</span></h3>
+<p>Too much information and too many choices can overwhelm users, but
+restricting choices and hiding data limits the usefulness of a MOD. This
+dilemma and how best to handle it was a common theme in presentations.
+<em>Easier to Use</em> versus <em>Does More Things</em> is a good way to express this.
+Achieving a good balance requires a great deal of thought and user
+input.</p>
+<p>An illustrative example can be found in map displays and reports, where
+detail sections are hidden, but available through linked pages or
+dynamic web displays. At SGD, a sidebar of menu choices was found to
+hide too much from users. It is being replaced with an web page that
+openly exposes all choices.</p>
+<p>A related issue is providing adequate information on what the different
+choices available actually do, and the provenance of data: what data are
+present and where they came from.</p>
+<h2 id="span-idnew_trends_in_mod_uis-classmw-headlinenew-trends-in-mod-uisspan"><span id="New_Trends_in_MOD_UIs" class="mw-headline">New Trends in MOD UIs</span></h2>
+<h3 id="span-idcommunity_participation-classmw-headlinecommunity-participationspan"><span id="Community_Participation" class="mw-headline">Community Participation</span></h3>
+<p>Wikipedia provides an excellent example of the power of community
+participation in science documentation. Many new genomics and biology
+wikis are springing up, running on the reusable software and
+documentation provided by
+<a href="http://www.mediawiki.org/" class="external text">Wikipedia</a>.
+Members of this new generation of wikis include:
+<a href="http://gmod.org/" class="external free"
+rel="nofollow"><a href="http://gmod.org/">http://gmod.org/</a></a> , an outcome of the GMOD meeting ,
+<a href="http://genomewiki.ucsc.edu/" class="external free"
+rel="nofollow"><a href="http://genomewiki.ucsc.edu/">http://genomewiki.ucsc.edu/</a></a> ,
+<a href="http://www.bioperl.org/wiki/" class="external free"
+rel="nofollow"><a href="http://www.bioperl.org/wiki/">http://www.bioperl.org/wiki/</a></a> ,
+<a href="http://www.wormbase.org/wiki/" class="external free"
+rel="nofollow"><a href="http://www.wormbase.org/wiki/">http://www.wormbase.org/wiki/</a></a> ,
+<a href="http://wiki.dictybase.org/dictywiki/" class="external free"
+rel="nofollow"><a href="http://wiki.dictybase.org/dictywiki/">http://wiki.dictybase.org/dictywiki/</a></a> ,
+<a href="http://rana.lbl.gov/drosophila/wiki/" class="external free"
+rel="nofollow"><a href="http://rana.lbl.gov/drosophila/wiki/">http://rana.lbl.gov/drosophila/wiki/</a></a> ,
+<a href="http://www.nescent.org/wikis.php" class="external free"
+rel="nofollow"><a href="http://www.nescent.org/wikis.php">http://www.nescent.org/wikis.php</a></a> ,
+<a href="http://openwetware.org/wiki/" class="external free"
+rel="nofollow"><a href="http://openwetware.org/wiki/">http://openwetware.org/wiki/</a></a> ,
+<a href="http://darwin.nerc-oxford.ac.uk/gc_wiki/" class="external free"
+rel="nofollow"><a href="http://darwin.nerc-oxford.ac.uk/gc_wiki/">http://darwin.nerc-oxford.ac.uk/gc_wiki/</a></a> ,
+<a href="http://wiki2.germonline.org/wiki/" class="external free"
+rel="nofollow"><a href="http://wiki2.germonline.org/wiki/">http://wiki2.germonline.org/wiki/</a></a> ,
+<a href="http://www.biodirectory.com/biowiki/" class="external free"
+rel="nofollow"><a href="http://www.biodirectory.com/biowiki/">http://www.biodirectory.com/biowiki/</a></a> .</p>
+<p>This growing list of wikis offer scientists a common, well-documented
+user interface that is expected to facilitate expanded use, as
+experience in participation one site carries over to others. The
+<a href="http://ecoliwiki.net/colipedia/index.php/Main_Page"
+class="external text" rel="nofollow">EcoliWiki</a> provides a prototype
+for gene annotations. Further integration of wiki methods for genome
+community annotation have been recently proposed
+<sup><a href="#cite_note-1">[1]</a></sup>, <sup><a href="#cite_note-2">[2]</a></sup>. Also
+at the meeting, <a href="http://sgn.cornell.edu" class="external text"
+rel="nofollow">SGN</a> presented an experimental community gene curation
+interface for use by authorized users of the site.</p>
+<h3 id="span-idclient-side_scripting_28javascript29-classmw-headlineclient-side-scripting-javascriptspan"><span id="Client-side_Scripting_.28JavaScript.29" class="mw-headline">Client-side Scripting (JavaScript)</span></h3>
+<p>In recent years, general web development practices have been trending
+toward increased use of client-side scripts written in JavaScript to
+provide richer, more responsive user interfaces for web sites. This
+trend has been driven by the increasing market share of browsers with
+relatively mature JavaScript implementations (IE 6+, Firefox), and by
+the high-profile success of several web applications making use of this
+increased JavaScript support (such as
+<a href="http://maps.google.com" class="external text"
+rel="nofollow">Google Maps</a>).</p>
+<p>Most web developers at MODs have a responsibility to ensure broad access
+to the MOD&rsquo;s data, thus they do not have unlimited freedom to introduce
+new user interface features that may not be compatible with older
+versions of browser software. Instead, they must take great care to
+ensure either a.) that newer UI features &ldquo;degrade gracefully&rdquo; when
+viewed with older browser software, but preserving basic functionality,
+or b.) that an alternate method of accessing the data is available for
+users of less functional browsers.</p>
+<p>Some examples of gracefully degrading client-side features showcased at
+this meeting were:</p>
+<ul>
+<li>dynamic, database-backed automatic completion of entries typed into
+web search forms (older browsers simply won&rsquo;t see any automatic
+completion)</li>
+<li>dynamically expanding or collapsing sections of large data displays</li>
+<li>drag-and-drop map track reording in GMOD&rsquo;s GBrowse software</li>
+</ul>
+<hr>
+<p>Dynamic web page content, user preferences and histories are becoming
+more widely available at MODs. These are used for showing or hiding
+contents (aiding the dilemma of supporting both the beginner and
+advanced user), for map track reordering, retaining history of user
+queries and answers, and other uses.</p>
+<ul>
+<li>more graphical summaries of long lists/tables are possible; can be
+useful</li>
+<li>improving comparative genomics aspects to aid broader audience</li>
+<li>include curator/community edits/updates to contents (part of same
+reading UI) (ZFIN,SGN,)</li>
+</ul>
+<h3 id="span-idusing_virtualization_for_mod_snapshots-classmw-headlineusing-virtualization-for-mod-snapshotsspan"><span id="Using_Virtualization_for_MOD_Snapshots" class="mw-headline">Using Virtualization for MOD Snapshots</span></h3>
+<p>Providing stable &ldquo;snapshots&rdquo; of the data in a MOD is important for
+reproducing results in publications that cite the MOD. Many MODs provide
+snapshots in the form of large data dumps created at specific time
+intervals, which could be used to laboriously reconstruct the state of
+the MOD&rsquo;s data at a given point in time. WormBase takes this idea a step
+further, using virtualization technology to capture the complete state
+of the WormBase site for each snapshot. These snapshot images can be
+accessed via the web in the same manner as the main WormBase site, or
+can be downloaded for playback on any computer that supports the free
+<a href="http://www.vmware.com" class="external text"
+rel="nofollow">VMWare</a> player. This practice greatly facilitates
+reproduction of results from papers that cite WormBase.</p>
+<h2 id="span-idusing_google_and_other_general_search_engines-classmw-headlineusing-google-and-other-general-search-enginesspan"><span id="Using_Google_and_Other_General_Search_Engines" class="mw-headline">Using Google and Other General Search Engines</span></h2>
+<p>A number of MODs represented at the meeting used Google to provide some
+of the search functionality on their site. It was generally agreed that
+if an external search engine is allowed to fully index a MOD&rsquo;s pages, it
+can usually provide very useful full-text search results. However, since
+generalized search engines do not have specific knowledge of the
+structure of a MOD&rsquo;s data, it may not be possible to obtain relevant
+results for very specific searches. For example, it would probably not
+be possible to use a generalized search engine for searching genes based
+on their exact physical locations in a genome.</p>
+<p>It was briefly mentioned that some standard search engine optimization
+techniques may be used to improve results with external search engines,
+particularly providing a &ldquo;site map&rdquo; page with deep links to all or most
+of the pages in your site.</p>
+<p>One concern that was raised was that the &ldquo;crawlers&rdquo; used by external
+search engines for indexing web pages sometimes impose unacceptable
+demands on a MOD&rsquo;s web servers, particularly when crawlers from multiple
+search engines are indexing a site at once. Some solutions to this were
+suggested, including carefully tuning your site&rsquo;s <code>robots.txt</code> file to
+avoid computation-intensive pages, and simply buying more servers and/or
+optimizing your site&rsquo;s code to better handle the load. Googlebot and
+perhaps other robots can be told to reduce their hit rate to an
+acceptable level.</p>
+<p>A different strategy pursued by some MODs is to use generalized search
+software on their own servers, such as
+<a href="http://lucene.apache.org/" class="external text"
+rel="nofollow">Lucene</a> or
+<a href="http://www.gmod.org/lucegene" class="external text"
+rel="nofollow">LuceGene</a>, a Lucene variant customized for indexing
+many types of biological data. This approach offers more control over
+the indexing, searching, and result presentation than using an external
+search engine.</p>
+<h2 id="span-iduser_interface_conventions-classmw-headlineuser-interface-conventionsspan"><span id="User_Interface_Conventions" class="mw-headline">User Interface Conventions</span></h2>
+<p>One subject that was raised, but was not fully discussed in the time
+available, was the idea of developing common user interface conventions
+among MODs. Attendees notes several cases of &ldquo;convergent evolution&rdquo;
+among the MOD user interfaces:</p>
+<ul>
+<li>most MODs seem to have some sort of unified search feature for all
+data in the MOD</li>
+<li>wide adoption of GMOD&rsquo;s GBrowse software</li>
+<li>existing tools for bulk data download, movement toward more flexible
+search and reporting tools such as BioMart and InterMine</li>
+</ul>
+<p>Todd Harris proposed developing a convention for common URLs for bulk
+downloading of genome data, but the subject was not fully discussed. A
+page outling the common urls can be found at
+<a href="Common_Download_URL" class="mw-redirect"
+title="Common Download URL">Common Download URL</a>.</p>
+<p>Dr. Peter Karp presented a useful list of common elements that every MOD
+should be sure to include:</p>
+<ul>
+<li>procedures for citing the MOD in publications</li>
+<li>&ldquo;contact us&rdquo; links</li>
+<li>facilities for downloading datasets and software</li>
+<li>community news</li>
+<li>MOD data cross-referenced to publications</li>
+<li>summary statistics of data in the MOD
+<ul>
+<li>if possible, a history of these statistics over time</li>
+</ul>
+</li>
+<li>update history (a.k.a. changelog) of MOD</li>
+<li>central credits list for MOD contributors</li>
+</ul>
+<h2 id="span-idgeneral_discussion-classmw-headlinegeneral-discussionspan"><span id="General_Discussion" class="mw-headline">General Discussion</span></h2>
+<ul>
+<li>
+<p>Steps in developing good MOD Faces
+Consensus<br>
+help links everywhere are useful. Examples on input fields are easy to
+add, and very useful.</p>
+<ul>
+<li>Sample values are frequently invaluable near the text input box.</li>
+<li>There is no one right answer in UI design, there are many right
+answers. There are also many wrong answers.</li>
+<li>Never create a link to a location where there&rsquo;s nothing to be found.
+Indicate, by some means, if there&rsquo;s no information or more
+information.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>User community testing, interviews, surveys, HCI principles
+<ul>
+<li>Differing views on value of types and stages in user testing (Is
+user testing necessary? What about releasing software as a means to
+get feedback?)
+<ul>
+<li>It may be that user testing is most valuable when attempting to
+solve specific problems, as opposed to &ldquo;design&rdquo;. User testing is
+probably most useful in the earliest phase, looking at prototypes
+or prototypes on paper.</li>
+<li>Monitoring and logging is important, you must know what occupies
+the user the most.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>Dilemma of too much or too little information/choice
+<ul>
+<li>Consensus: complexity goes with the territory, but you have to make
+the most common things easy and the hard things possible, and have
+good user education and documentation.</li>
+<li>Is it true that complexity should be concealed? How does one strike
+the balance between providing for the expert and for the novice?</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>Google is your enemy/friend &hellip;
+<ul>
+<li>Differing views on advantage/disadavantages of Google as adjunct to
+MOD search systems (No consensus that using Google is advantageous;
+Techniques for guiding Google/Bots below)</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>Good new ideas
+<ul>
+<li>More dynamic content, graphics summaries may be good
+<ul>
+<li>Can we make more use of graphics to replace text? E.g. a generated
+image replaces expression information.</li>
+<li>Word or string completion as user asks questions is useful UI
+technique (see Javascript and AJAX below)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>Common UIs across MODs?<br>
+Not discussed (sigh :()</li>
+</ul>
+<h2 id="span-idimplementation_techniques-classmw-headlineimplementation-techniquesspan"><span id="Implementation_Techniques" class="mw-headline">Implementation Techniques</span></h2>
+<ul>
+<li>Easy way to direct Google/Bots to best or full content (e.g. gene
+pages) is with a site map with links to everything you want to expose.
+<ul>
+<li>detecting user agent, query referral string, etc., in web query lets
+report software alter output (e.g. give Google all of report to
+index, highlight Google user queries)</li>
+<li>Google offers indexing tips, directions to update or hide specific
+parts</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>Dynamic content (Javascript/AJAX):
+<ul>
+<li>Word or string completion using Javascript/AJAX and dedicated,
+simple databases of words to complete work well (Wormbase, EBI
+Ontology Lookup Service, others?).</li>
+<li>use to hide and show sections of pages; reorder tracks in a genome
+browser;</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>RSS is probably underutilized, but would it be widely used if
+available?</li>
+</ul>
+<!-- -->
+<ul>
+<li>An XML representation of an &ldquo;entry&rdquo; makes a &ldquo;diff&rdquo; or change easy to
+assess, and reliable alerts could be constructed.</li>
+</ul>
+<h1 id="span-idreferences-classmw-headlinereferencesspan"><span id="References" class="mw-headline">References</span></h1>
+<ol>
+<li><span id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span>
+<span class="reference-text">Salzberg SL. Genome re-annotation: a
+wiki solution? Genome Biol. 2007 Feb 1;8(1):102; PMID:
+17274839</span></span></li>
+<li><span id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span>
+<span class="reference-text">Bradley I. Arshinoff, Garret Suen,
+Eric M. Just, Sohel M. Merchant, Warren A. Kibbe, Rex L. Chisholm,
+and Roy D. Welch. Xanthusbase: adapting wikipedia principles to a
+model organism database. Nucl. Acids Res. 2007 35: D422-D426;
+doi:10.1093/nar/gkl881 </span></span></li>
+</ol>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AMOD_User_Interfaces" title="Category%253AMOD User Interfaces">MOD User
+Interfaces</a></li>
+<li><a href="Category%253AMeetings" title="Category%253AMeetings">Meetings</a></li>
+<li><a href="Category%253AGMOD_Best_Practices" title="Category%253AGMOD Best Practices">GMOD Best
+Practices</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/MOD_Face_Summary" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:54 on 11 August
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">28,799 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

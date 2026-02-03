@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado - Getting Started - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado---getting-startedspan"><span dir="auto">Chado - Getting Started</span></h1>
+<p>Status</p>
+<ul>
+<li><strong>Mature</strong> release</li>
+<li><strong>Active</strong> development</li>
+<li><strong>Active</strong> support</li>
+</ul>
+<p>Resources</p>
+<ul>
+<li><a href="Introduction_to_Chado" title="Introduction to Chado">Introduction</a></li>
+<li><a href="Chado_Manual" title="Chado Manual">Manual</a></li>
+<li><a href="Chado_Tutorial" class="mw-redirect"
+title="Chado Tutorial">Tutorial</a></li>
+<li><a href="Chado_Modules" title="Chado Modules">Modules</a></li>
+<li><a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
+class="external text" rel="nofollow">Mailing List</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Tagged</a></li>
+<li><a href="../extras/2008GMODCommunitySurvey.html#Chado"
+class="external text" rel="nofollow">2008 Survey</a></li>
+</ul>
+<p>Chado is a <a href="Glossary#Database_Schema" title="Glossary">relational database
+schema</a> that underlies <a href="GMOD_Users" title="GMOD Users">many GMOD
+installations</a>. It is capable of representing
+many of the general classes of data frequently encountered in modern
+biology such as sequence, sequence comparisons, phenotypes, genotypes,
+ontologies, publications, and phylogeny. It has been designed to handle
+complex representations of biological knowledge and should be considered
+one of the most sophisticated relational schemas currently available in
+molecular biology. The price of this capability is that the new user
+must spend some time becoming familiar with its fundamentals.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Documentation"><span class="tocnumber">1</span>
+<span class="toctext">Documentation</span></a></li>
+<li><a href="#Modules"><span class="tocnumber">2</span>
+<span class="toctext">Modules</span></a></li>
+<li><a href="#Installation"><span class="tocnumber">3</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#Download_a_Stable_Release_of_Chado"><span class="tocnumber">3.1</span> <span class="toctext">Download a
+Stable Release of Chado</span></a></li>
+<li><a href="#Chado_From_SVN"><span class="tocnumber">3.2</span> <span class="toctext">Chado From
+SVN</span></a></li>
+</ul>
+</li>
+<li><a href="#Loading_Data"><span class="tocnumber">4</span> <span class="toctext">Loading
+Data</span></a></li>
+<li><a href="#Mailing_Lists"><span class="tocnumber">5</span> <span class="toctext">Mailing
+Lists</span></a></li>
+<li><a href="#Pronunciation"><span class="tocnumber">6</span>
+<span class="toctext">Pronunciation</span></a></li>
+</ul>
+<h2 id="span-iddocumentation-classmw-headlinedocumentationspan"><span id="Documentation" class="mw-headline">Documentation</span></h2>
+<ul>
+<li><a href="Introduction_to_Chado" title="Introduction to Chado">Introduction to Chado</a></li>
+<li><a
+href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/23/13/i337?ijkey=QYeUct9uLSzefgk&amp;keytype=ref"
+class="external text" rel="nofollow">Chado paper in Bioinformatics</a></li>
+<li><a href="Chado_Tutorial" class="mw-redirect"
+title="Chado Tutorial">Chado Tutorial</a></li>
+<li><a href="Chado_Manual" title="Chado Manual">Chado Manual</a></li>
+<li><a href="Chado_FAQ" title="Chado FAQ">FAQ for Chado</a></li>
+<li><a href="Chado_Tables" title="Chado Tables">Chado Tables</a></li>
+<li><a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best Practices</a></li>
+<li><a href="Sample_Chado_SQL" title="Sample Chado SQL">Sample Chado SQL</a></li>
+<li><a href="PostgreSQL_Performance_Tips" title="PostgreSQL Performance Tips">PostgreSQL Performance
+Tips</a></li>
+</ul>
+<h2 id="span-idmodules-classmw-headlinemodulesspan"><span id="Modules" class="mw-headline">Modules</span></h2>
+<p>Chado is a modular schema, designed in such a way as to allow the
+addition of new modules for new data types. The existing modules are:</p>
+<ul>
+<li><a href="Chado_Audit_Module" title="Chado Audit Module">Audit</a> - for database audit
+trails</li>
+<li><a href="Chado_Companalysis_Module" title="Chado Companalysis Module">Companalysis</a> -
+for data from computational analysis</li>
+<li><a href="Chado_Contact_Module" title="Chado Contact Module">Contact</a> - for people,
+groups, and organizations</li>
+<li><a href="Chado_CV_Module" title="Chado CV Module">Controlled Vocabulary (cv)</a> - for
+controlled vocabularies and ontologies</li>
+<li><a href="Chado_Expression_Module" title="Chado Expression Module">Expression</a> - for
+summaries of RNA and protein expression</li>
+<li><a href="Chado_General_Module" title="Chado General Module">General</a> - for
+identifiers</li>
+<li><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a> - for genetic
+data and genotypes</li>
+<li><a href="Chado_Library_Module" title="Chado Library Module">Library</a> - for
+descriptions of molecular libraries</li>
+<li><a href="Chado_Mage_Module" title="Chado Mage Module">Mage</a> - for microarray data</li>
+<li><a href="Chado_Map_Module" title="Chado Map Module">Map</a> - for maps without sequence</li>
+<li><a href="Chado_Natural_Diversity_Module.1" title="Chado Natural Diversity Module">Natural Diversity
+(ND)</a> -
+for multiple experiments, such as phenotyping and genotyping</li>
+<li><a href="Chado_Organism_Module" title="Chado Organism Module">Organism</a> - for
+taxonomic data</li>
+<li><a href="Chado_Phenotype_Module" title="Chado Phenotype Module">Phenotype</a> - for
+phenotypic data</li>
+<li><a href="Chado_Phylogeny_Module" title="Chado Phylogeny Module">Phylogeny</a> - for
+organisms and phylogenetic trees</li>
+<li><a href="Chado_Publication_Module" title="Chado Publication Module">Publication
+(pub)</a> - for
+publications and references</li>
+<li><a href="Chado_Sequence_Module" title="Chado Sequence Module">Sequence</a> - for
+sequences and sequence features</li>
+<li><a href="Chado_Stock_Module" title="Chado Stock Module">Stock</a> - for specimens and
+biological collections</li>
+<li><a href="Chado_WWW_Module" title="Chado WWW Module">WWW</a> -</li>
+</ul>
+<h2 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h2>
+<p>First you will need database software, or Relational Database Management
+System (RDBMS). The recommended RDBMS for Chado currently is
+<a href="http://www.postgresql.org/" class="external text"
+rel="nofollow">Postgres</a>. Postgres is free software, usually used on
+a Unix operating system such as Linux or Mac OS X. You can also install
+Postgres, and Chado, on Windows but most Chado installations are found
+on some version of Unix - you&rsquo;ll probably get the best support by
+choosing Unix. (See <a href="Databases_and_GMOD" title="Databases and GMOD">Databases and
+GMOD</a> for more discussion.)
+Once you&rsquo;ve installed your RDBMS you can install Chado.</p>
+<h3 id="span-iddownload_a_stable_release_of_chado-classmw-headlinedownload-a-stable-release-of-chadospan"><span id="Download_a_Stable_Release_of_Chado" class="mw-headline">Download a Stable Release of Chado</span></h3>
+<p>See <a href="Downloads" title="Downloads">Downloads</a></p>
+<h3 id="span-idchado_from_svn-classmw-headlinechado-from-svnspan"><span id="Chado_From_SVN" class="mw-headline">Chado From SVN</span></h3>
+<p>You can get the most up-to-date, not even released yet, version of Chado
+from <a href="Subversion" class="mw-redirect"
+title="Subversion">Subversion</a>. To get a copy of the latest Chado
+source, enter this at the command line:</p>
+<pre><code>svn co https://svn.code.sf.net/p/gmod/svn/schema/trunk
+</code></pre>
+<p>Once the package has been downloaded <code>cd</code> to the <code>trunk/chado</code>
+directory.</p>
+<p>Follow the instructions in the <code>INSTALL.Chado</code> file, including the
+installation of the prerequisites. Or read <a
+href="http://gmod.svn.sourceforge.net/viewvc/gmod/schema/trunk/chado/INSTALL.Chado"
+class="external text" rel="nofollow"><code>INSTALL.Chado</code></a>
+online.</p>
+<h2 id="span-idloading_data-classmw-headlineloading-dataspan"><span id="Loading_Data" class="mw-headline">Loading Data</span></h2>
+<p>After completing these steps, you can load your chado schema with data
+in a number of ways:</p>
+<ul>
+<li><a href="Load_RefSeq_Into_Chado" title="Load RefSeq Into Chado">Load RefSeq into Chado
+HOWTO</a></li>
+<li><a href="Load_GFF_Into_Chado" title="Load GFF Into Chado">Load GFF into Chado HOWTO</a></li>
+<li>Using <a href="XORT.1" title="XORT">XORT</a></li>
+</ul>
+<p>You can also use the application <a href="Apollo.1" title="Apollo">Apollo</a> to curate
+data in Chado.</p>
+<h2 id="span-idmailing_lists-classmw-headlinemailing-listsspan"><span id="Mailing_Lists" class="mw-headline">Mailing Lists</span></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Mailing List Link</td>
+<td>Description</td>
+<td>Archive(s)</td>
+</tr>
+<tr>
+<td><a href="Chado" class="mw-redirect" title="Chado">Chado</a></td>
+<td>&lt;a href=&ldquo;<a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema%22">https://lists.sourceforge.net/lists/listinfo/gmod-schema&quot;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;gmod-schema</a></td>
+<td>All issues regarding <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, <a href="Chado%253A%253AAutoDBI" title="Chado%253A%253AAutoDBI">Chado%253A%253AAutoDBI</a>, and <a href="Bio%253A%253AChado%253A%253ASchema" title="Bio%253A%253AChado%253A%253ASchema">Bio%253A%253AChado%253A%253ASchema</a></td>
+<td>&lt;a href=&ldquo;<a href="http://dir.gmane.org/gmane.science.biology.gmod.schema%22">http://dir.gmane.org/gmane.science.biology.gmod.schema&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;Gmane</a>, &lt;a href=&ldquo;<a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html%22">http://gmod.827538.n3.nabble.com/Chado-f815597.html&quot;</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;Nabble (2010/05+)</a>, &lt;a</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema%22">http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema&quot;</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;Sourceforge</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;a href=&ldquo;<a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts%22">https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts&quot;</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;gmod-schema-cmts</a></td>
+<td><a href="Chado" class="mw-redirect" title="Chado">Chado</a> code updates.</td>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts%22">http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts&quot;</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;Sourceforge</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="span-idpronunciation-classmw-headlinepronunciationspan"><span id="Pronunciation" class="mw-headline">Pronunciation</span></h2>
+<p><em>Chado</em> is usually pronounced
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/Chado.mp3" class="internal"
+title="Chado.mp3">like this</a>.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253ADatabase_Tools" title="Category%253ADatabase Tools">Database Tools</a></li>
+<li><a href="Category%253AGMOD_Components" title="Category%253AGMOD Components">GMOD Components</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_-2D_Getting_Started"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:08 on 13 February
+2014.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">945,093 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

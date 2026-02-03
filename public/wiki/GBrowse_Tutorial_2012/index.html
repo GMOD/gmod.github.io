@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse Tutorial 2012 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-tutorial-2012span"><span dir="auto">GBrowse Tutorial 2012</span></h1>
+<p>This <a href="GBrowse.1" title="GBrowse">GBrowse</a> tutorial was taught at the <a href="2012_GMOD_Summer_School" title="2012 GMOD Summer School">2012
+GMOD Summer School</a>
+by <a href="User%253AScott" title="User%253AScott">Scott Cain</a>.</p>
+<p>To follow along with the tutorial, you will need to use <strong>AMI ID:
+ami-5bab1c32, name: GMOD 2012 day 4 start</strong>, available in the US East
+(N. Virginia) region. See the <a href="GMOD_Cloud_Tutorial" title="GMOD Cloud Tutorial">GMOD Cloud
+Tutorial</a> for information on
+how to get this AMI.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Prerequisites"><span class="tocnumber">1</span>
+<span class="toctext">Prerequisites</span></a></li>
+<li><a href="#Install_GBrowse"><span class="tocnumber">2</span> <span class="toctext">Install
+GBrowse</span></a></li>
+<li><a href="#Tutorial"><span class="tocnumber">3</span>
+<span class="toctext">Tutorial</span></a></li>
+<li><a href="#Basic_Chado_Configuration_.28if_we_have_time.29"><span class="tocnumber">4</span> <span class="toctext">Basic Chado
+Configuration (if we have
+time)</span></a>
+<ul>
+<li><a href="#.28Re.29loading_GFF_data"><span class="tocnumber">4.1</span>
+<span class="toctext">(Re)loading GFF
+data</span></a></li>
+<li><a href="#Add_a_BAM_data_source"><span class="tocnumber">4.2</span> <span class="toctext">Add a BAM
+data source</span></a></li>
+<li><a href="#Add_track_defaults"><span class="tocnumber">4.3</span> <span class="toctext">Add track
+defaults</span></a></li>
+<li><a href="#Add_some_tracks"><span class="tocnumber">4.4</span> <span class="toctext">Add some
+tracks</span></a></li>
+<li><a href="#Add_our_new_database_to_the_GBrowse.conf"><span class="tocnumber">4.5</span> <span class="toctext">Add our
+new database to the
+GBrowse.conf</span></a></li>
+<li><a href="#Add_semantic_zooming_for_the_BAM_tracks"><span class="tocnumber">4.6</span> <span class="toctext">Add
+semantic zooming for the BAM
+tracks</span></a></li>
+<li><a href="#Add_.22show_summary.22_functionality"><span class="tocnumber">4.7</span> <span class="toctext">Add &ldquo;show
+summary&rdquo;
+functionality</span></a></li>
+<li><a href="#Enabling_full_text_searching"><span class="tocnumber">4.8</span> <span class="toctext">Enabling
+full text searching</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idprerequisites-classmw-headlineprerequisitesspan"><span id="Prerequisites" class="mw-headline">Prerequisites</span></h2>
+<p>Installed before using apt or cpan.</p>
+<h2 id="span-idinstall_gbrowse-classmw-headlineinstall-gbrowsespan"><span id="Install_GBrowse" class="mw-headline">Install GBrowse</span></h2>
+<p>Easily installed via the cpan shell:*</p>
+<pre><code> sudo cpan
+ cpan&gt; install Bio::Graphics::Browser2
+</code></pre>
+<p>Which gets all of the prereqs that aren&rsquo;t installed on the machine.</p>
+<p>*Small caveat: the 2.49 release has a small bug that makes installing
+it slightly tricky; this will be fixed in the upcoming 2.50 release. For
+more information about the bug, you can see the <a
+href="http://gmod.827538.n3.nabble.com/Problem-updating-from-Gbrowse2-17-Can-t-locate-Bio-DB-SeqFeature-Store-Alias-pm-td3945804.html"
+class="external text" rel="nofollow">mailing list archive</a>.</p>
+<h2 id="span-idtutorial-classmw-headlinetutorialspan"><span id="Tutorial" class="mw-headline">Tutorial</span></h2>
+<p>Go to <a href="http://ec2-##-##-##-##.compute-1.amazonaws.com/gbrowse2">http://ec2-##-##-##-##.compute-1.amazonaws.com/gbrowse2</a></p>
+<h2 id="span-idbasic_chado_configuration_28if_we_have_time29-classmw-headlinebasic-a-hrefchado-classmw-redirect-titlechadochadoa-configuration-if-we-have-timespan"><span id="Basic_Chado_Configuration_.28if_we_have_time.29" class="mw-headline">Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)</span></h2>
+<p><a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
+class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
+installed when we created the image. We&rsquo;ll start with the sample Chado
+configuration that is in /etc/gbrowse:</p>
+<pre><code> sudo cp 07.chado.conf pythium.conf
+</code></pre>
+<p>Some simple tweaks and additions:</p>
+<ul>
+<li>Change description</li>
+<li>Remove or change examples (yeast examples don&rsquo;t help anybody)</li>
+<li>Add initial landmark (<code>initial landmark = scf1117875582023:1..10000</code>)</li>
+<li>Change the connection stuff to connect to drupal db</li>
+</ul>
+<h3 id="span-id28re29loading_gff_data-classmw-headlinereloading-gff-dataspan"><span id=".28Re.29loading_GFF_data" class="mw-headline">(Re)loading GFF data</span></h3>
+<p>So as it turns out, there is an incompatibility between the
+not-yet-released Tripal 1.0 GFF loader and the GBrowse Chado adaptor.
+While I will work with Steven et al. to figure out where the problem is
+(and I&rsquo;m not pointing any fingers, since it could very well be my
+fault). In addition, the Chado adaptor doesn&rsquo;t really care for the GFF
+that MAKER is producing either, so we&rsquo;re going to munge it a little.
+Make a perl script named <code>munge.pl</code> with this contents:</p>
+<pre><code>#!/usr/bin/perl
+use strict;
+use warnings;
+while (&lt;&gt;) {
+   if (/\tmatch(_part)?\t/) {
+       s/Name=[^;]+?;//;
+   }
+   print;
+}
+</code></pre>
+<p>and run it like this:</p>
+<pre><code> perl munge.pl scf1117875582023.gff &gt; new.gff
+</code></pre>
+<p>And we&rsquo;ll load it into an existing Chado database like this:</p>
+<pre><code> gmod_bulk_load_gff3.pl --org dicty --noexon --an -g new.gff --dbprof chado
+</code></pre>
+<p>Where:</p>
+<pre><code> --org dicty    #yes, I know, but I didn't want to create a new org entry
+ --noexon       #tells loader not to create exon feature from the CDS features because they're already there
+ --an           #this is an analysis result (save the score)
+ -g             #load this gff file
+ --dbprof chado #use the database profile called chado (which is the name of the database)
+</code></pre>
+<p>After we do that, we have to change the db connection parameters to use
+the database named chado:</p>
+<pre><code>[main:database]
+db_adaptor    = Bio::DB::Das::Chado
+db_args       = -dsn dbi:Pg:dbname=chado
+               -user ubuntu
+               -srcfeatureslice 1
+         #      -fulltext 1
+               -organism dicty
+</code></pre>
+<h3 id="span-idadd_a_bam_data_source-classmw-headlineadd-a-bam-data-sourcespan"><span id="Add_a_BAM_data_source" class="mw-headline">Add a BAM data source</span></h3>
+<pre><code>[bam_sample:database]
+db_adaptor     = Bio::DB::Sam
+db_args        = -fasta /var/lib/gbrowse2/databases/pythium/scf1117875582023.fasta
+                 -bam   /var/lib/gbrowse2/databases/pythium/simulated-sorted.bam
+search options = default
+</code></pre>
+<h3 id="span-idadd_track_defaults-classmw-headlineadd-track-defaultsspan"><span id="Add_track_defaults" class="mw-headline">Add track defaults</span></h3>
+<pre><code>[TRACK DEFAULTS]
+glyph       = generic
+database    = main
+height      = 8
+bgcolor     = cyan
+fgcolor     = black
+label density = 25
+bump density  = 100
+</code></pre>
+<p>Note particularly the &ldquo;database&rdquo; entry&ndash;for most tracks we&rsquo;ll be using
+the main (ie, chado) database, but the bam_sample data source will be
+available when we want it.</p>
+<h3 id="span-idadd_some_tracks-classmw-headlineadd-some-tracksspan"><span id="Add_some_tracks" class="mw-headline">Add some tracks</span></h3>
+<pre><code>[Genes]
+feature      = gene
+glyph        = gene
+ignore_sub_part = polypeptide
+#bgcolor      = yellow
+forwardcolor = yellow
+reversecolor = turquoise
+label        = sub { my $f = shift;
+                    my $name = $f-&gt;display_name;
+                    my @aliases = sort $f-&gt;attributes('Alias');
+                    $name .= &quot; (@aliases)&quot; if @aliases;
+                    $name;
+  }
+height       = 6
+description  = 0
+key          = Named gene
+
+[CDS]
+feature      = mRNA
+glyph        = cds
+description  = 0
+ignore_sub_part = polypeptide exon
+height       = 26
+sixframe     = 1
+label        = sub {shift-&gt;name . &quot; reading frame&quot;}
+key          = CDS
+citation     = This track shows CDS reading frames.
+
+[repeats]
+feature      = match:repeatmasker
+glyph        = generic
+bgcolor      = black
+key          = Repeats
+
+[ests]
+feature      = expressed_sequence_match
+glyph        = segments
+stranded     = 1
+bgcolor      = green
+key          = EST matches
+
+[proteins]
+feature      = protein_match
+glyph        = segments
+stranded     = 1
+bgcolor      = pink
+fgcolor      = red
+key          = protein matches
+
+[CoverageXyplot]
+feature        = coverage
+glyph          = wiggle_xyplot
+database       = bam_sample
+height         = 50
+fgcolor        = black
+bicolor_pivot  = 20
+pos_color      = blue
+neg_color      = red
+key            = Coverage (xyplot)
+
+[Reads]
+feature        = match
+glyph          = segments
+draw_target    = 1
+show_mismatch  = 1
+mismatch_color = red
+database       = bam_sample
+bgcolor        = blue
+fgcolor        = white
+height         = 5
+label density  = 50
+bump           = fast
+key            = Reads
+
+[Pair]
+feature       = read_pair
+glyph         = segments
+database      = bam_sample
+draw_target   = 1
+show_mismatch = 1
+bgcolor       = sub {
+                my $f = shift;
+                return $f-&gt;attributes('M_UNMAPPED') ? 'red' : 'green';
+                }
+fgcolor       = green
+height        = 3
+label         = sub {shift-&gt;display_name}
+label density = 50
+bump          = fast
+connector     = dashed
+balloon hover = sub {
+                my $f     = shift;
+                return '' unless $f-&gt;type eq 'match';
+                return 'Read: '.$f-&gt;display_name.' : '.$f-&gt;flag_str;
+                }
+key           = Read Pairs
+</code></pre>
+<h3 id="span-idadd_our_new_database_to_the_gbrowseconf-classmw-headlineadd-our-new-database-to-the-gbrowseconfspan"><span id="Add_our_new_database_to_the_GBrowse.conf" class="mw-headline">Add our new database to the GBrowse.conf</span></h3>
+<p>To let GBrowse know that there is a new database available, we have to
+add a few lines to GBrowse.conf. Add this to the bottom:</p>
+<pre><code>[pythium]
+description   = Pythium ultimum
+path          = pythium.conf
+</code></pre>
+<h3 id="span-idadd_semantic_zooming_for_the_bam_tracks-classmw-headlineadd-semantic-zooming-for-the-bam-tracksspan"><span id="Add_semantic_zooming_for_the_BAM_tracks" class="mw-headline">Add semantic zooming for the BAM tracks</span></h3>
+<p>Not doing this for very dense data (like BAM) is probably the number one
+performance killers for GBrowse; asking GBrowse to draw a track that has
+thousands of glyphs is time consuming (and ultimately, probably not very
+informative).</p>
+<pre><code>[Reads:5001]
+feature        = coverage
+glyph          = wiggle_density
+height         = 15
+
+[Pair:5001]
+feature        = coverage
+glyph          = wiggle_density
+height         = 15
+bgcolor        = purple
+</code></pre>
+<h3 id="span-idadd_22show_summary22_functionality-classmw-headlineadd-show-summary-functionalityspan"><span id="Add_.22show_summary.22_functionality" class="mw-headline">Add &ldquo;show summary&rdquo; functionality</span></h3>
+<p>For other tracks, when zoomed way out (100kb or 1MB), performance can
+similarly suffer, with a decreasing &ldquo;information&rdquo; content. Newer
+versions of GBrowse provide the ability to automatically generate
+density plots when zoomed out. This functionality is available from
+Chado and
+<a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
+class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> data
+adaptors. To prepare our Chado database to do this semantic zooming, we
+need to run a script that comes with Bio::DB::Das::Chado:</p>
+<pre><code> cd ~/GBrowse-Adaptors/Chado
+ git pull
+ perl bin/gmod_create_summary_statistics.pl --dbprof chado
+</code></pre>
+<p>and then add to the pythium.conf file, somewhere near the top (i.e., not
+in the track definitions):</p>
+<pre><code> show summary = 99999
+</code></pre>
+<h3 id="span-idenabling_full_text_searching-classmw-headlineenabling-full-text-searchingspan"><span id="Enabling_full_text_searching" class="mw-headline">Enabling full text searching</span></h3>
+<p>If we try searching for &ldquo;<code>gene 0.27</code>&rdquo;, we&rsquo;ll get &ldquo;Not Found&rdquo; as a
+result, even though maker-scf1117875582023-snap-gene-0.27 does exist. To
+look for partial strings, we need to enable full text searching. To do
+so, we need to run another script that comes with Bio::DB::Das::Chado:</p>
+<pre><code> perl bin/gmod_chado_fts_prep.pl --dbprof chado
+</code></pre>
+<p>This does several things (including poorly estimating how long it will
+take to finish), including creating materialized views, using a tool
+provided by <a href="Category%253ASGN" title="Category%253ASGN">SOL Genomics Network (SGN)</a>.
+In practice, it would be a good idea to read the documentation of
+<code>gmod_materialized_view_tool.pl</code> for information on keeping the view up
+to date.</p>
+<p>We also have to tell GBrowse that this Chado database can now do full
+text searching, by adding this to the Chado database stanza:</p>
+<pre><code> -fulltext 1
+</code></pre>
+<p>Now we can search for &ldquo;<code>gene 0.27</code>&rdquo; and we&rsquo;ll find our gene (plus its
+mRNA and exons) and we can click on the gene to see it in GBrowse.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253A2012_Summer_School" title="Category%253A2012 Summer School">2012 Summer
+School</a></li>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+<li><a href="Category%253AGBrowse_2" title="Category%253AGBrowse 2">GBrowse 2</a></li>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="Special%253ABrowse/GBrowse-20Tutorial-202012" title="Special%253ABrowse/GBrowse-20Tutorial-202012">GBrowse Tutorial
+2012</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="GBrowse.1" title="GBrowse">GBrowse</a> <span class="smwsearch"><a href="Special%253ASearchByProperty/Has-20topic/GBrowse" title="Special%253ASearchByProperty/Has-20topic/GBrowse">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Tutorial_2012" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:52 on 27 August
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">17,812 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

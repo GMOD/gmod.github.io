@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html.tmpl.main - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautohtmltmplmainspan"><span dir="auto">Html.tmpl.main</span></h1>
+<p>The process described on this page is obsolete. The process described on
+<a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">Chado Schema Documentation
+HOWTO</a>
+is the the current one. This page should be deleted once the new process
+has been fully adopted.</p>
+<pre><code>&lt;!-- $Header: /cvsroot/autodoc/autodoc/html.tmpl,v 1.4 2006/05/16 19:01:27 rbt Exp $ --&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+   &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Index for &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;database&quot; --&gt;&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+    BODY {
+        color:  #000000;
+        background-color: #FFFFFF;
+        font-family: Helvetica, sans-serif;
+    }
+
+    P {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    P.w3ref {
+        font-size: 8pt;
+        font-style: italic;
+        text-align: right;
+    }
+
+    P.detail {
+        font-size: 10pt;
+    }
+
+    .error {
+        color: #FFFFFF;
+        background-color: #FF0000;
+    }
+
+    H1, H2, H3, H4, H5, H6 {
+    }
+
+    OL {
+        list-style-type: upper-alpha;
+    }
+
+    UL.topic {
+        list-style-type: upper-alpha;
+    }
+
+    LI.topic {
+        font-weight : bold;
+    }
+
+    HR {
+        color: #00FF00;
+        background-color: #808080;
+    }
+
+    TABLE {
+        border-width: medium;
+        padding: 3px;
+        background-color: #000000;
+        width: 90%;
+    }
+
+    CAPTION {
+        text-transform: capitalize;
+        font-weight : bold;
+        font-size: 14pt;
+    }
+
+    TH {
+        color: #FFFFFF;
+        background-color: #000000;
+        text-align: left;
+    }
+
+    TR {
+        color: #000000;
+        background-color: #000000;
+        vertical-align: top;
+    }
+
+    TR.tr0 {
+        background-color: #F0F0F0;
+    }
+
+    TR.tr1 {
+        background-color: #D8D8D8;
+    }
+
+    TD {
+        font-size: 12pt;
+    }
+
+    TD.col0 {
+        font-weight : bold;
+        width: 20%;
+    }
+
+    TD.col1 {
+        font-style: italic;
+        width: 15%;
+    }
+
+    TD.col2 {
+        font-size: 12px;
+    }
+    &lt;/style&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;all.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;screen.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print&quot; href=&quot;print.css&quot;&gt;
+    &lt;meta HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html; charset=iso-8859-1&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- Primary Index --&gt;
+    &lt;p&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;database_comment&quot; --&gt;&lt;br&gt;&lt;br&gt;Dumped on &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;dumped_on&quot; --&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a name=&quot;index&quot;&gt;Index of database - &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;database&quot; --&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+    &lt;!-- TMPL_LOOP name=&quot;schemas&quot; --&gt;
+    &lt;li&gt;&lt;a name=&quot;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;
+        &lt;!-- TMPL_LOOP name=&quot;tables&quot; --&gt;&lt;li&gt;&lt;a href=&quot;#&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;table_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table&quot; --&gt;&lt;/a&gt;&lt;/li&gt;&lt;!-- /TMPL_LOOP name=&quot;tables&quot; --&gt;
+    &lt;!-- TMPL_LOOP name=&quot;functions&quot; --&gt;&lt;li&gt;&lt;a href=&quot;#&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;function_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;function&quot; --&gt;&lt;/a&gt;&lt;/li&gt;&lt;!-- /TMPL_LOOP name=&quot;functions&quot; --&gt;
+    &lt;/ul&gt;
+    &lt;!-- /TMPL_LOOP name=&quot;schemas&quot; --&gt;
+&lt;/ul&gt;
+
+    &lt;!-- Schema Creation --&gt;
+    &lt;!-- TMPL_LOOP name=&quot;schemas&quot; --&gt;&lt;!-- &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt; --&gt;
+
+        &lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;
+        &lt;hr&gt;
+        &lt;h1&gt;Schema &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;&lt;/h1&gt;
+        &lt;!-- TMPL_IF name=&quot;schema_comment&quot; --&gt;
+            &lt;p&gt;&lt;!-- TMPL_VAR name=&quot;schema_comment&quot; --&gt;&lt;/p&gt;
+        &lt;!-- /TMPL_IF name=&quot;schema_comment&quot; --&gt;
+
+        &lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;
+        &lt;!-- TMPL_LOOP name=&quot;tables&quot; --&gt;
+        &lt;hr&gt;
+        &lt;h2&gt;&lt;!-- TMPL_IF name=&quot;view_definition&quot; --&gt;View:&lt;!-- TMPL_ELSE --&gt;Table:&lt;!-- /TMPL_IF --&gt;
+            &lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;
+            &lt;a href=&quot;#&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;schema_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;&lt;/a&gt;.&lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;a name=&quot;&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;table_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table&quot; --&gt;&lt;/a&gt;
+        &lt;/h2&gt;
+        &lt;!-- TMPL_IF name=&quot;table_comment&quot; --&gt;
+         &lt;p&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table_comment&quot; --&gt;&lt;/p&gt;
+        &lt;!-- /TMPL_IF name=&quot;table_comment&quot; --&gt;
+
+        &lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+                &lt;caption&gt;&lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;.&lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table&quot; --&gt; Structure&lt;/caption&gt;
+                &lt;tr&gt;
+                &lt;th&gt;FK&lt;/th&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Type&lt;/th&gt;
+                &lt;th&gt;Description&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;!-- TMPL_LOOP name=&quot;columns&quot; --&gt;
+            &lt;tr class=&quot;&lt;!-- TMPL_IF name=&quot;__odd__&quot; --&gt;tr0&lt;!-- tmpl_else name=&quot;__odd__&quot; --&gt;tr1&lt;!-- /TMPL_IF name=&quot;__odd__&quot; --&gt;&quot;&gt;&lt;td&gt;&lt;!-- TMPL_LOOP name=&quot;column_constraints&quot; --&gt;&lt;!-- TMPL_IF name=&quot;column_fk&quot; --&gt;&lt;a href=&quot;[#Table:_&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;column_fk_table&quot; --&gt;|&quot;&gt;&lt;!-- TMPL_IF name=&quot;column_fk_keygroup&quot; --&gt;#&lt;!-- TMPL_VAR name=&quot;column_fk_keygroup&quot; --&gt;&lt;!-- /TMPL_IF name=&quot;column_fk_keygroup&quot; --&gt;&lt;!-- TMPL_VAR name=&quot;column_fk_table&quot; --&gt;]&lt;/a&gt;&lt;!-- /TMPL_IF name=&quot;column_fk&quot; --&gt;&lt;!-- /TMPL_LOOP name=&quot;column_constraints&quot; --&gt;&lt;/td&gt;&lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;column&quot; --&gt;&lt;/td&gt;&lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;column_type&quot; --&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;i&gt;
+                &lt;!-- TMPL_LOOP name=&quot;column_constraints&quot; --&gt;
+                    &lt;!-- TMPL_IF name=&quot;column_primary_key&quot; --&gt;PRIMARY KEY
+                    &lt;!-- /TMPL_IF name=&quot;column_primary_key&quot; --&gt;
+                    &lt;!-- TMPL_IF name=&quot;column_unique&quot; --&gt;
+                       UNIQUE&lt;!-- TMPL_IF name=&quot;column_unique_keygroup&quot; --&gt;#&lt;!-- TMPL_VAR name=&quot;column_unique_keygroup&quot; --&gt;&lt;!-- /TMPL_IF name=&quot;column_unique_keygroup&quot; --&gt;
+                    &lt;!-- /TMPL_IF name=&quot;column_unique&quot; --&gt;
+                &lt;!-- /TMPL_LOOP name=&quot;column_constraints&quot; --&gt;
+
+                &lt;!-- TMPL_IF name=&quot;column_constraint_notnull&quot; --&gt;NOT NULL&lt;!-- /TMPL_IF name=&quot;column_constraint_notnull&quot; --&gt;
+                &lt;!-- TMPL_IF name=&quot;column_default&quot; --&gt;DEFAULT &lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;column_default&quot; --&gt;&lt;!-- /TMPL_IF name=&quot;column_default&quot; --&gt;
+                &lt;/i&gt;
+                &lt;!-- TMPL_IF name=&quot;column_comment&quot; --&gt;&lt;br&gt;&lt;br&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;column_comment&quot; --&gt;&lt;!-- /TMPL_IF name=&quot;column_comment&quot; --&gt;
+                &lt;/td&gt;
+             &lt;/tr&gt;
+            &lt;!-- /TMPL_LOOP name=&quot;columns&quot; --&gt;
+        &lt;/table&gt;
+
+        &lt;!-- Inherits --&gt;
+        &lt;!-- TMPL_IF name=&quot;inherits&quot; --&gt;
+        &lt;p&gt;Table &lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;.&lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table&quot; --&gt; Inherits
+        &lt;!-- TMPL_LOOP name=&quot;inherits&quot; --&gt;
+           &lt;!-- TMPL_VAR name=&quot;index_name&quot; --&gt; &lt;!-- TMPL_VAR name=&quot;index_definition&quot; --&gt;
+           &lt;a href=&quot;#&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;parent_sgmlid&quot; --&gt;&quot;&gt;&lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;parent_schema&quot; --&gt;.&lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;parent_table&quot; --&gt;&lt;/a&gt;,
+        &lt;!-- /TMPL_LOOP name=&quot;inherits&quot; --&gt;
+        &lt;/p&gt;
+        &lt;!-- /TMPL_IF name=&quot;inherits&quot; --&gt;
+
+        &lt;!-- TMPL_UNLESS name=&quot;view_definition&quot; --&gt;
+        &lt;!-- TMPL_IF name=&quot;stats_enabled&quot; --&gt;
+        &lt;p&gt; &lt;/p&gt;
+        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+         &lt;caption&gt;Statistics&lt;/caption&gt;
+         &lt;tr&gt;
+          &lt;th&gt;Total Space (disk usage)&lt;/th&gt;
+          &lt;th&gt;Tuple Count&lt;/th&gt;
+          &lt;th&gt;Active Space&lt;/th&gt;
+          &lt;th&gt;Dead Space&lt;/th&gt;
+          &lt;th&gt;Free Space&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr class=&quot;tr0&quot;&gt;
+          &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;stats_table_bytes&quot; --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;stats_tuple_count&quot; --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;stats_tuple_bytes&quot; --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;stats_dead_bytes&quot; --&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;stats_free_bytes&quot; --&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;!-- /TMPL_IF name=&quot;stats_enabled&quot; --&gt;
+        &lt;!-- /TMPL_UNLESS name=&quot;view_definition&quot; --&gt;
+
+        &lt;!-- Constraint List --&gt;
+        &lt;!-- TMPL_IF name=&quot;constraints&quot; --&gt;
+        &lt;p&gt; &lt;/p&gt;
+        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;3&quot;&gt;
+            &lt;caption&gt;&lt;!-- TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;schema&quot; --&gt;.&lt;!-- /TMPL_IF name=&quot;number_of_schemas&quot; --&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;table&quot; --&gt; Constraints&lt;/caption&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Constraint&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;!-- TMPL_LOOP name=&quot;constraints&quot; --&gt;
+            &lt;tr class=&quot;&lt;!-- TMPL_IF name=&quot;__odd__&quot; --&gt;tr0&lt;!-- TMPL_ELSE name=&quot;__odd__&quot; --&gt;tr1&lt;!-- /TMPL_IF name=&quot;__odd__&quot; --&gt;&quot;&gt;
+                &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;constraint_name&quot; --&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;!-- TMPL_VAR ESCAPE=&quot;HTML&quot; name=&quot;constraint&quot; --&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;!-- /TMPL_LOOP name=&quot;constraints&quot; --&gt;
+        &lt;/table&gt;
+        &lt;!-- /TMPL_IF name=&quot;constraints&quot; --&gt;
+
+        &lt;!-- Foreign Key Discovery --&gt;
+        &lt;!-- TMPL_IF name=&quot;fk_schemas&quot; --&gt;
+            &lt;p&gt;Tables referencing this one via Foreign Key Constraints:&lt;/p&gt;
+        &lt;!-- TMPL_LOOP name=&quot;fk_schemas&quot; --&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;[#Table:_&lt;!-- TMPL_VAR ESCAPE=&quot;URL&quot; name=&quot;fk_table&quot; --&gt;|&quot;&gt;&lt;!-- TMPL_VAR name=&quot;fk_table&quot; --&gt;]&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;!-- /TMPL_LOOP name=&quot;fk_schemas&quot; --&gt;
+        &lt;!-- /TMPL_IF name=&quot;fk_schemas&quot; --&gt;
+
+    &lt;!-- /TMPL_LOOP name=&quot;tables&quot; --&gt;
+
+
+&lt;!-- /TMPL_LOOP name=&quot;schemas&quot; --&gt;
+&lt;p class=&quot;w3ref&quot;&gt;Generated by &lt;a href=&quot;http://www.rbt.ca/autodoc/&quot;&gt;PostgreSQL Autodoc&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;w3ref&quot;&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;W3C HTML 4.01 Strict&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AWiki_Tools" title="Category%253AWiki Tools">Wiki Tools</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Html.tmpl.main" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:28 on 10 December
+2010.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">11,499 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

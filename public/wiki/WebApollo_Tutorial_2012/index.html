@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebApollo Tutorial 2012 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautowebapollo-tutorial-2012span"><span dir="auto">WebApollo Tutorial 2012</span></h1>
+<p>This <a href="WebApollo.1" title="WebApollo">WebApollo</a> tutorial was presented by <a href="User%253AElee" title="User%253AElee">Ed
+Lee</a> at the <a href="2012_GMOD_Summer_School" title="2012 GMOD Summer School">2012 GMOD Summer
+School</a>.</p>
+<p>To follow along with the tutorial, you will need to use <strong>AMI ID:
+ami-a1de69c8, name: GMOD 2012 start day 3</strong>, available in the US East
+(N. Virginia) region. See the <a href="GMOD_Cloud_Tutorial" title="GMOD Cloud Tutorial">GMOD Cloud
+Tutorial</a> for information on
+how to get this AMI.</p>
+<p><strong>Please note that WebApollo was not officially released when this
+session was taught, and this tutorial was run using a beta version of
+the tool.</strong></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Using_WebApollo"><span class="tocnumber">2</span> <span class="toctext">Using
+WebApollo</span></a></li>
+<li><a href="#Installing_WebApollo"><span class="tocnumber">3</span> <span class="toctext">Installing
+WebApollo</span></a>
+<ul>
+<li><a href="#Server_operating_system"><span class="tocnumber">3.1</span> <span class="toctext">Server
+operating system</span></a></li>
+<li><a href="#Prerequisites"><span class="tocnumber">3.2</span>
+<span class="toctext">Prerequisites</span></a></li>
+</ul>
+</li>
+<li><a href="#Installation"><span class="tocnumber">4</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#User_database"><span class="tocnumber">4.1</span> <span class="toctext">User
+database</span></a></li>
+</ul>
+</li>
+<li><a href="#Deploy_servlet"><span class="tocnumber">5</span> <span class="toctext">Deploy
+servlet</span></a></li>
+<li><a href="#Configuration"><span class="tocnumber">6</span>
+<span class="toctext">Configuration</span></a>
+<ul>
+<li><a href="#Main_configuration"><span class="tocnumber">6.1</span> <span class="toctext">Main
+configuration</span></a></li>
+<li><a href="#Canned_comments"><span class="tocnumber">6.2</span> <span class="toctext">Canned
+comments</span></a></li>
+<li><a href="#Search_tools"><span class="tocnumber">6.3</span> <span class="toctext">Search
+tools</span></a>
+<ul>
+<li><a href="#Blat"><span class="tocnumber">6.3.1</span>
+<span class="toctext">Blat</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Data_generation"><span class="tocnumber">7</span> <span class="toctext">Data
+generation</span></a>
+<ul>
+<li><a href="#Static_data_generation"><span class="tocnumber">7.1</span> <span class="toctext">Static
+data generation</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h2>
+<p><a
+href="https://docs.google.com/presentation/pub?id=17jkEV0jJ3gl_B-cRK5lrG8jbQPULPAnEcPo9Acu7CCU&amp;start=false&amp;loop=false&amp;delayms=3000"
+class="external text" rel="nofollow">WebApollo Presentation</a></p>
+<h2 id="span-idusing_webapollo-classmw-headlineusing-webapollospan"><span id="Using_WebApollo" class="mw-headline">Using WebApollo</span></h2>
+<p>WebApollo is a web-based application, so the only requirement to use it
+is a web browser. It has been tested with Chrome, Firefox, and Safari.
+It currently does not support Internet Explorer.</p>
+<p>A WebApollo demo with the Pythium data has been set up on the virtual
+machine. We&rsquo;ll use the demo to view WebApollo&rsquo;s functionality.</p>
+<p><strong>Important:</strong> before you load the demo, you&rsquo;ll need to do a few things:</p>
+<pre><code>$ cd /usr/local/tomcat/tomcat7/webapps/WebApolloDemo/jbrowse
+$ sudo wget http://icebox.lbl.gov/webapollo/data/genome.css
+$ sudo mv genome.css.1 genome.css
+</code></pre>
+<p>Next we need to modify <code>data/bam_trackList.json</code>. You&rsquo;ll want to modify
+the <code>data_url</code> and <code>index_url</code> elements and add a <code>sourceUrl</code> element.</p>
+<p>This is how it currently looks:</p>
+<pre><code>       &quot;data_url&quot; : &quot;http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApolloDemo/jbrowse/data/bam/scf1117875582023.bam&quot;,
+       &quot;index_url&quot; : &quot;http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApolloDemo/jbrowse/data/bam/scf1117875582023.bam.bai&quot;,
+</code></pre>
+<p>We want to change it to:</p>
+<pre><code>       &quot;data_url&quot; : &quot;bam/scf1117875582023.bam&quot;,
+       &quot;index_url&quot; : &quot;bam/scf1117875582023.bam.bai&quot;,
+       &quot;sourceUrl&quot; : &quot;data/&quot;,
+</code></pre>
+<p>Point your browser to
+<code>http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApolloDemo</code>.<br>
+(e.g.,
+<code>http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApolloDemo</code>).</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Web_apollo_demo_login_page_with_credentials.jpg"
+class="thumbborder" width="310" height="83"
+alt="WebApollo login page" /></p>
+<p>The user name and password are both <code>demo</code>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/Web_apollo_main_options.jpg"
+class="thumbborder" width="214" height="33"
+alt="WebApollo main options" /></p>
+<p>Click on the <code>Edit annotations</code> button.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Web_apollo_select_refseq.jpg"
+class="thumbborder" width="451" height="33"
+alt="WebApollo reference sequence selection" /></p>
+<p>We only have one contig to work with. Click on the <code>Edit</code> button.</p>
+<ul>
+<li>Annotation track</li>
+<li>Add evidence tracks (maker, snap_masked, blastn, blastx, est2genome,
+protein2genome, BAM alignments)</li>
+<li>Moving around the contig</li>
+<li>Go to region <code>scf1117875582023:629476..633770</code></li>
+<li>Selection
+<ul>
+<li>Edge matching</li>
+</ul>
+</li>
+<li>Create annotation
+<ul>
+<li>Drag-n-drop</li>
+</ul>
+</li>
+<li>Delete exon (notice the change in CDS)</li>
+<li>Add exon</li>
+<li>Non-canonical splice sites (GT / AG)</li>
+<li>Zoom to base</li>
+<li>DNA track
+<ul>
+<li>Highlighting</li>
+<li>6-frame translation</li>
+</ul>
+</li>
+<li>DNA sequence insertion, deletion, substitution</li>
+<li>Zoom back out</li>
+<li>Change exon boundaries</li>
+<li>Merge (exons, transcripts)</li>
+<li>Split (exons, transcripts)</li>
+<li>Make intron</li>
+<li>Duplicate</li>
+<li>Set translation start</li>
+</ul>
+<!-- -->
+<ul>
+<li>Realtime client updating</li>
+</ul>
+<!-- -->
+<ul>
+<li>Undo / Redo</li>
+</ul>
+<!-- -->
+<ul>
+<li>Comments</li>
+<li>DBXrefs</li>
+<li>Get sequence</li>
+</ul>
+<!-- -->
+<ul>
+<li>Sequence searching</li>
+</ul>
+<h2 id="span-idinstalling_webapollo-classmw-headlineinstalling-webapollospan"><span id="Installing_WebApollo" class="mw-headline">Installing WebApollo</span></h2>
+<h3 id="span-idserver_operating_system-classmw-headlineserver-operating-systemspan"><span id="Server_operating_system" class="mw-headline">Server operating system</span></h3>
+<p>Any Unix like system (e.g., Unix, Linux, Mac OS X)</p>
+<h3 id="span-idprerequisites-classmw-headlineprerequisitesspan"><span id="Prerequisites" class="mw-headline">Prerequisites</span></h3>
+<ul>
+<li>Servlet container (must support servlet spec 3.0+) [officially
+supported: Tomcat 7]</li>
+<li>Relational Database Management System [officially supported:
+PostgreSQL]</li>
+<li>User database helper scripts
+<ul>
+<li>Perl modules
+<ul>
+<li>DBI</li>
+<li>DBD module for your specific RDBMS [officially supported: DBD::Pg
+for PostgresSQL]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Data generation pipeline (see <a href="JBrowse.1#Prerequisites" title="JBrowse">JBrowse
+prerequisites</a> for more information
+on its prerequisites)
+<ul>
+<li>Perl modules
+<ul>
+<li><a href="BioPerl" title="BioPerl">BioPerl 1.6</a></li>
+<li><a href="http://search.cpan.org/perldoc?JSON" class="external text"
+rel="nofollow">JSON</a></li>
+<li><a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
+rel="nofollow">JSON::XS</a> (optional, for speed)</li>
+<li><a href="http://search.cpan.org/perldoc?PerlIO::gzip"
+class="external text" rel="nofollow">PerlIO::gzip</a></li>
+<li><a href="http://search.cpan.org/perldoc?Heap::Simple"
+class="external text" rel="nofollow">Heap::Simple</a></li>
+<li><a href="http://search.cpan.org/perldoc?Heap::Simple::XS"
+class="external text" rel="nofollow">Heap::Simple::XS</a></li>
+<li><a href="http://search.cpan.org/perldoc?Devel::Size"
+class="external text" rel="nofollow">Devel::Size</a></li>
+<li><a href="http://search.cpan.org/perldoc?Bio::GFF3::LowLevel::Parser"
+class="external text" rel="nofollow">Bio::GFF3::LowLevel::Parser</a></li>
+</ul>
+</li>
+<li>System packages
+<ul>
+<li>libpng12-0</li>
+<li>libpng12-dev</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sequence search (optional)
+<ul>
+<li>Blat (along with a configured search database)</li>
+</ul>
+</li>
+</ul>
+<p>Note: All prerequisites have already been installed on the course&rsquo;s
+machine</p>
+<h2 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h2>
+<p>The installation steps will be done in the command line. SSH into your
+AWS machine.</p>
+<p>Uncompress the WebApollo.tgz tarball.</p>
+<pre><code>$ cd
+$ tar -xvzf WebApollo.tgz
+</code></pre>
+<h3 id="span-iduser_database-classmw-headlineuser-databasespan"><span id="User_database" class="mw-headline">User database</span></h3>
+<p>First we’ll need to create a database that will contain user permission
+information. WebApollo uses this database to determine who can access
+and edit annotations for a given sequence. We&rsquo;ll create the user
+<code>web_apollo_users_admin</code> to be the owner of the database with the
+password <code>web_apollo_users_admin</code> (enter it when prompted). The user
+will not be a superuser nor will it be able to create new roles. But it
+will be able to create databases.</p>
+<pre><code>$ createuser -P web_apollo_users_admin
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) n
+Shall the new role be allowed to create databases? (y/n) y
+Shall the new role be allowed to create more new roles? (y/n) n
+</code></pre>
+<p>Let&rsquo;s now create the database. We can call it whatever we want, so let&rsquo;s
+call it <code>web_apollo_users</code>.</p>
+<pre><code>$ createdb -U web_apollo_users_admin web_apollo_users
+</code></pre>
+<p>Now that the database is created, we need to load the schema to it.</p>
+<pre><code>$ cd ~/WebApollo/tools/user
+$ psql -U web_apollo_users_admin web_apollo_users &lt; user_database_postgresql.sql
+</code></pre>
+<p>Now the user database has been setup.</p>
+<p>Let&rsquo;s populate the database.</p>
+<p>First we’ll create an user with access to WebApollo. We’ll use the
+<code>add_user.pl</code> script in <code>~/WebApollo/tools/user</code>. Let’s create an user
+named <code>web_apollo_admin</code> with the password <code>web_apollo_admin</code>.</p>
+<pre><code>$ ./add_user.pl -D web_apollo_users -U web_apollo_users_admin -P web_apollo_users_admin \
+   -u web_apollo_admin -p web_apollo_admin
+</code></pre>
+<p>Next we’ll add the genomic sequence ids for our organism in the
+database. We’ll use the <code>add_tracks.pl</code> script in the same directory. We
+need to generate a file of genomic sequence ids for the script. For
+convenience, there’s a script called <code>extract_seqids_from_fasta.pl</code> in
+the same directory which will go through a FASTA file and extract all
+the ids from the deflines. We’ll use the data from
+<a href="MAKER.1" title="MAKER">MAKER</a>. Let’s first create the list of genomic
+sequence ids. We&rsquo;ll store it in <code>~/scratch/seqids.txt</code>. We’ll want to
+add the prefix “Annotations-” to each identifier.</p>
+<pre><code>$ mkdir ~/scratch
+$ ./extract_seqids_from_fasta.pl -p Annotations- -i ~/maker_output/scf1117875582023.fa \
+   -o ~/scratch/seqids.txt
+</code></pre>
+<p>Now we’ll add those ids to the user database.</p>
+<pre><code>$ ./add_tracks.pl -D web_apollo_users -U web_apollo_users_admin -P web_apollo_users_admin \
+   -t ~/scratch/seqids.txt
+</code></pre>
+<p>Now that we have an user created and the genomic sequence ids loaded,
+we’ll need to give the user permissions to access the sequence. We’ll
+have the user have read, write, and user manager permissions. We’ll use
+the <code>set_track_permissions.pl</code> script in the same directory. We’ll need
+to provide the script a list of genomic sequence ids, like in the
+previous step.</p>
+<pre><code>$ ./set_track_permissions.pl -D web_apollo_users -U web_apollo_users_admin \
+   -P web_apollo_users_admin -u web_apollo_admin -t ~/scratch/seqids.txt -r -w -m
+</code></pre>
+<p>We’re all done setting up the user database.</p>
+<p>Note that we’re only using a subset of the options for all the scripts
+mentioned above. You can get more detailed information on any given
+script (and other available options) using the “-h” or “&ndash;help” flag
+when running the script.</p>
+<h2 id="span-iddeploy_servlet-classmw-headlinedeploy-servletspan"><span id="Deploy_servlet" class="mw-headline">Deploy servlet</span></h2>
+<p>We need to deploy the WAR file in the war directory from the unpacked
+tarball. We need to go into the <code>webapps</code> directory in our Tomcat
+installation. Tomcat&rsquo;s installed in <code>/usr/local/tomcat/tomcat7/</code>.</p>
+<pre><code>$ cd /usr/local/tomcat/tomcat7/webapps 
+</code></pre>
+<p>Next we need to create the directory that will contain the application.
+Note that you&rsquo;ll need to use <code>sudo</code> for this, since only root has access
+to the directory.</p>
+<pre><code>$ sudo mkdir WebApollo
+</code></pre>
+<p>Now we&rsquo;ll go into the newly created directory and unpack the WAR file
+into it.</p>
+<pre><code>$ cd WebApollo
+$ sudo jar -xvf ~/WebApollo/war/WebApollo.war
+</code></pre>
+<p>That’s it! We’re done installing WebApollo. Now we need to move on to
+configuring the application.</p>
+<h2 id="span-idconfiguration-classmw-headlineconfigurationspan"><span id="Configuration" class="mw-headline">Configuration</span></h2>
+<p>Most configuration files will reside in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/config</code>. We’ll need to
+configure a number of things before we can get WebApollo up and running.</p>
+<h3 id="span-idmain_configuration-classmw-headlinemain-configurationspan"><span id="Main_configuration" class="mw-headline">Main configuration</span></h3>
+<p>The main configuration is stored in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/config/config.xml</code>. Let’s
+take a look at the file.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;server_configuration&gt;
+ 
+    &lt;!-- mapping configuration for GBOL data structures --&gt;
+    &lt;gbol_mapping&gt;/config/mapping.xml&lt;/gbol_mapping&gt;
+ 
+    &lt;!-- directory where JE database will be created --&gt;
+    &lt;datastore_directory&gt;ENTER_DATASTORE_DIRECTORY_HERE&lt;/datastore_directory&gt;
+ 
+    &lt;!-- minimum size for introns created --&gt;
+    &lt;default_minimum_intron_size&gt;1&lt;/default_minimum_intron_size&gt;
+ 
+    &lt;!-- size of history for each feature - setting to 0 means unlimited history --&gt;
+    &lt;history_size&gt;0&lt;/history_size&gt;
+ 
+    &lt;!-- overlapping strategy for adding transcripts to genes --&gt;
+    &lt;overlapper_class&gt;org.bbop.apollo.web.overlap.OrfOverlapper&lt;/overlapper_class&gt;
+ 
+    &lt;!-- class for comparing track names (used for sorting in lists) --&gt;
+    &lt;track_name_comparator_class&gt;org.bbop.apollo.web.track.DefaultTrackNameComparator&lt;/track_name_comparator_class&gt;
+ 
+    &lt;!-- user authentication/permission configuration --&gt;
+    &lt;user&gt;
+ 
+        &lt;!-- database configuration --&gt;
+        &lt;database&gt;
+ 
+            &lt;!-- driver for user database --&gt;
+            &lt;driver&gt;org.postgresql.Driver&lt;/driver&gt;
+ 
+            &lt;!-- JDBC URL for user database --&gt;
+            &lt;url&gt;ENTER_USER_DATABASE_JDBC_URL&lt;/url&gt;
+ 
+            &lt;!-- username for user database --&gt;
+            &lt;username&gt;ENTER_USER_DATABASE_USERNAME&lt;/username&gt;
+ 
+            &lt;!-- password for user database --&gt;
+            &lt;password&gt;ENTER_USER_DATABASE_PASSWORD&lt;/password&gt;
+ 
+        &lt;/database&gt;
+ 
+        &lt;!-- class for generating user authentication page (login page) --&gt;
+        &lt;authentication_class&gt;org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication&lt;/authentication_class&gt;
+ 
+    &lt;/user&gt;
+ 
+    &lt;tracks&gt;
+ 
+        &lt;!-- path to JBrowse refSeqs.json file --&gt;
+        &lt;refseqs&gt;ENTER_PATH_TO_REFSEQS_JSON_FILE&lt;/refseqs&gt;
+ 
+        &lt;!-- annotation track name the current convention is to append
+     the genomic region id to the the name of the annotation track
+     e.g., if the annotation track is called &#34;Annotations&#34; and the
+     genomic region is chr2L, the track name will be
+     &#34;Annotations-chr2L&#34;.--&gt;
+        &lt;annotation_track_name&gt;Annotations&lt;/annotation_track_name&gt;
+ 
+        &lt;!-- organism being annotated --&gt;
+        &lt;organism&gt;ENTER_ORGANISM&lt;/organism&gt;
+ 
+        &lt;!-- CV term for the genomic sequences - should be in the form
+     of &#34;CV:TERM&#34;.  This applies to all sequences --&gt;
+        &lt;sequence_type&gt;ENTER_CVTERM_FOR_SEQUENCE&lt;/sequence_type&gt;
+ 
+    &lt;/tracks&gt;
+ 
+    &lt;!-- path to file containing canned comments XML --&gt;
+    &lt;canned_comments&gt;/config/canned_comments.xml&lt;/canned_comments&gt;
+ 
+    &lt;!-- tool to be used for sequence searching.  This is optional.
+ If this is not setup, WebApollo will not have sequence search support --&gt;
+    &lt;sequence_search_tool&gt;
+ 
+        &lt;!-- class for handling search --&gt;
+        &lt;class&gt;org.bbop.apollo.tools.seq.search.blat.BlatCommandLine&lt;/class&gt;
+ 
+        &lt;!-- configuration for search tool --&gt;
+        &lt;config&gt;/config/blat_config.xml&lt;/config&gt;
+ 
+    &lt;/sequence_search_tool&gt;
+ 
+&lt;/server_configuration&gt;
+</code></pre><p>Let’s look through each element in more detail with values filled in.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- mapping configuration for GBOL data structures --&gt;
+    &lt;gbol_mapping&gt;/config/mapping.xml&lt;/gbol_mapping&gt;
+</code></pre><p>File that contains type mappings used by the underlying data model. It’s
+best not to change the default option.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- directory where JE database will be created --&gt;
+    &lt;datastore_directory&gt;/data/dataHome/web_apollo/annotations&lt;/datastore_directory&gt;
+</code></pre><p>Directory where user generated annotations will be stored. The data is
+stored using Berkeley DB. We’ll use
+<code>/data/dataHome/web_apollo/annotations</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- minimum size for introns created --&gt;
+    &lt;default_minimum_intron_size&gt;1&lt;/default_minimum_intron_size&gt;
+</code></pre><p>Minimum length of intron to be created when using the “Make intron”
+operation. The operation will try to make the shortest intron that’s at
+least as long as this parameter. So if you set it to a value of “40”,
+then all calculated introns will be at least of length 40.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- size of history for each feature - setting to 0 means unlimited history --&gt;
+    &lt;history_size&gt;0&lt;/history_size&gt;
+</code></pre><p>The size of your history stack, meaning how many “Undo/Redo” steps you
+can do. The larger the number, the larger the storage space needed.
+Setting it to “0” makes it to that there’s no limit.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- overlapping strategy for adding transcripts to genes --&gt;
+    &lt;overlapper_class&gt;org.bbop.apollo.web.overlap.OrfOverlapper&lt;/overlapper_class&gt;
+</code></pre><p>Defines the strategy to be used for deciding whether overlapping
+transcripts should be considered splice variants to the same gene. This
+points to a Java class implementing the
+<code>org.bbop.apollo.overlap.Overlapper</code> interface. This allows you to
+create your own custom overlapping strategy should the need arise.
+Currently available options are:</p>
+<ul>
+<li>org.bbop.apollo.web.overlap.NoOverlapper
+<ul>
+<li>No transcripts should be considered splice variants, regardless of
+overlap.</li>
+</ul>
+</li>
+<li>org.bbop.apollo.web.overlap.SimpleOverlapper
+<ul>
+<li>Any overlapping of transcripts will cause them to be part of the
+same gene</li>
+</ul>
+</li>
+<li>org.bbop.apollo.web.overlap.OrfOverlapper
+<ul>
+<li>Only transcripts that overlap within the coding region and within
+frame are considered part of the same gene</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- class for comparing track names (used for sorting in lists) --&gt;
+    &lt;track_name_comparator_class&gt;org.bbop.apollo.web.track.DefaultTrackNameComparator&lt;/track_name_comparator_class&gt;
+</code></pre><p>Defines how to compare genomic sequence names for sorting purposes in
+the genomic region selection list. Points to a class implementing the
+<code>org.bbop.apollo.web.track.TrackNameComparator</code> interface. You can
+implement your own class to allow whatever sorting you’d like for your
+own organism. This doesn&rsquo;t make much of a difference in our case since
+we&rsquo;re only dealing with one genomic region. The only available
+implementation is:</p>
+<ul>
+<li>org.bbop.apollo.web.track.DefaultTrackNameComparator
+<ul>
+<li>Sorts genomic sequence names lexicographically</li>
+</ul>
+</li>
+</ul>
+<p>Let’s take look at the “user” element, which handles configuration for
+user authentication and permission handling.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- user authentication/permission configuration --&gt;
+    &lt;user&gt;
+ 
+        &lt;!-- database configuration --&gt;
+        &lt;database&gt;
+ 
+            &lt;!-- driver for user database --&gt;
+            &lt;driver&gt;org.postgresql.Driver&lt;/driver&gt;
+ 
+            &lt;!-- JDBC URL for user database --&gt;
+            &lt;url&gt;ENTER_USER_DATABASE_JDBC_URL&lt;/url&gt;
+ 
+            &lt;!-- username for user database --&gt;
+            &lt;username&gt;ENTER_USER_DATABASE_USERNAME&lt;/username&gt;
+ 
+            &lt;!-- password for user database --&gt;
+            &lt;password&gt;ENTER_USER_DATABASE_PASSWORD&lt;/password&gt;
+ 
+        &lt;/database&gt;
+ 
+        &lt;!-- class for generating user authentication page (login page) --&gt;
+        &lt;authentication_class&gt;org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication&lt;/authentication_class&gt;
+ 
+    &lt;/user&gt;
+</code></pre><p>Let’s first look at the <code>database</code> element that defines the database
+that will handle user permissions (which we created previously).</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">            &lt;!-- driver for user database --&gt;
+            &lt;driver&gt;org.postgresql.Driver&lt;/driver&gt;
+</code></pre><p>This should point the JDBC driver for communicating with the database.
+We’re using a PostgreSQL driver since that’s the database we’re using
+for user permission management.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">            &lt;!-- JDBC URL for user database --&gt;
+            &lt;url&gt;jdbc:postgresql://localhost/web_apollo_users&lt;/url&gt;
+</code></pre><p>JDBC URL to the user permission database. We&rsquo;ll use
+<code>jdbc:postgresql://localhost/web_apollo_users</code> since the database is
+running in the same server as the annotation editing engine and we named
+the database <code>web_apollo_users</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">            &lt;!-- username for user database --&gt;
+            &lt;username&gt;web_apollo_users_admin&lt;/username&gt;
+</code></pre><p>User name that has read/write access to the user database. The user with
+access to the user database has the user name <code>web_apollo_users_admin</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">            &lt;!-- password for user database --&gt;
+            &lt;password&gt;web_apollo_users_admin&lt;/password&gt;
+</code></pre><p>Password to access user database. The user with access to the user
+database has the password &lt;/tt&gt;web_apollo_users_admin&lt;/tt&gt;.</p>
+<p>Now let’s look at the other elements in the <code>user</code> element.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">            &lt;!-- class for generating user authentication page (login page) --&gt;
+            &lt;authentication_class&gt;org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication&lt;/authentication_class&gt;
+</code></pre><p>Defines how user authentication is handled. This points to a class
+implementing the <code>org.bbop.apollo.web.user.UserAuthentication</code>
+interface. This allows you to implement any type of authentication you’d
+like (e.g., LDAP). Currently available options are:</p>
+<ul>
+<li>org.bbop.apollo.web.user.localdb.LocalDbUserAuthentication
+<ul>
+<li>Uses the user permission database to also store authentication
+information, meaning it stores user passwords in the database</li>
+</ul>
+</li>
+<li>org.bbop.apollo.web.user.browserid.BrowserIdUserAuthentication
+<ul>
+<li>Uses Mozilla’s <a href="https://browserid.org" class="external text"
+rel="nofollow">BrowserID</a> service for authentication. This has
+the benefits of offloading all authentication security to Mozilla
+and allows one account to have access to multiple resources (as long
+as they have BrowserID support). Being that the service is provided
+through Mozilla, it will require users to create a BrowserID account</li>
+</ul>
+</li>
+</ul>
+<p>Now let’s look at the configuration for accessing the annotation tracks
+for the genomic sequences.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;tracks&gt;
+ 
+        &lt;!-- path to JBrowse refSeqs.json file --&gt;
+        &lt;refseqs&gt;ENTER_PATH_TO_REFSEQS_JSON_FILE&lt;/refseqs&gt;
+ 
+        &lt;!-- annotation track name the current convention is to append
+     the genomic region id to the the name of the annotation track
+     e.g., if the annotation track is called &#34;Annotations&#34; and the
+     genomic region is chr2L, the track name will be
+     &#34;Annotations-chr2L&#34;.--&gt;
+        &lt;annotation_track_name&gt;Annotations&lt;/annotation_track_name&gt;
+ 
+        &lt;!-- organism being annotated --&gt;
+        &lt;organism&gt;ENTER_ORGANISM&lt;/organism&gt;
+ 
+        &lt;!-- CV term for the genomic sequences - should be in the form
+     of &#34;CV:TERM&#34;.  This applies to all sequences --&gt;
+        &lt;sequence_type&gt;ENTER_CVTERM_FOR_SEQUENCE&lt;/sequence_type&gt;
+ 
+    &lt;/tracks&gt;
+</code></pre><p>Let’s look at each element individually.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;!-- path to JBrowse refSeqs.json file --&gt;
+        &lt;refseqs&gt;/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data/refSeqs.json&lt;/refseqs&gt;
+</code></pre><p>Location where the <code>refSeqs.json</code> file resides, which is created from
+the data generation pipeline (see the <a href="#Data_generation">data
+generation</a> section). By default, the JBrowse data
+needs to reside in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data</code>. If you want
+the data to reside elsewhere, you’ll need to do configure your servlet
+container to handle the appropriate alias to <code>jbrowse/data</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;annotation_track_name&gt;Annotations&lt;/annotation_track_name&gt;
+</code></pre><p>Name of the annotation track. Leave it as the default value of
+<code>Annotations</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;!-- organism being annotated --&gt;
+        &lt;organism&gt;Pythium ultimum&lt;/organism&gt;
+</code></pre><p>Scientific name of the organism being annotated (genus and species).
+We&rsquo;re annotating <code>Pythium ultimum</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;!-- CV term for the genomic sequences - should be in the form
+     of &#34;CV:TERM&#34;.  This applies to all sequences --&gt;
+        &lt;sequence_type&gt;sequence:contig&lt;/sequence_type&gt;
+</code></pre><p>The type for the genomic sequences. Should be in the form of <code>CV:term</code>.
+Our genomic sequences are of the type <code>sequence:contig</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- path to file containing canned comments XML --&gt;
+    &lt;canned_comments&gt;/config/canned_comments.xml&lt;/canned_comments&gt;
+</code></pre><p>File that contains canned comments (predefined comments that will be
+available from a pull-down menu when creating comments). It’s best not
+to change the default option. See the <a href="#Canned_comments">canned
+comments</a> section for details on configuring canned
+comments.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- tool to be used for sequence searching.  This is optional.
+ If this is not setup, WebApollo will not have sequence search support --&gt;
+    &lt;sequence_search_tool&gt;
+ 
+        &lt;!-- class for handling search --&gt;
+        &lt;class&gt;org.bbop.apollo.tools.seq.search.blat.BlatCommandLine&lt;/class&gt;
+ 
+        &lt;!-- configuration for search tool --&gt;
+        &lt;config&gt;/config/blat_config.xml&lt;/config&gt;
+ 
+    &lt;/sequence_search_tool&gt;
+</code></pre><p>Here’s the configuration for sequence search tools (allows searching
+your genomic sequences). WebApollo does not implement any search
+algorithms, but instead relies on different tools and resources to
+handle searching (this provides much more flexible search options). This
+is optional. If it’s not configured, WebApollo will not have sequence
+search support. There are two elements that need to be configured.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;!-- class for handling search --&gt;
+        &lt;class&gt;org.bbop.apollo.tools.seq.search.blat.BlatCommandLine&lt;/class&gt;
+</code></pre><p>Should point to the class that will handle the search request. Searching
+is handled by classes that implement the
+<code>org.bbop.apollo.tools.seq.search.SequenceSearchTool</code> interface. This
+allows you to add support for your own favorite search tools (or
+resources). We currently only have support for command line Blat.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">        &lt;!-- configuration for search tool --&gt;
+        &lt;config&gt;/config/blat_config.xml&lt;/config&gt;
+</code></pre><p>File that contains the configuration for the searching plugin chosen. If
+you’re using Blat, you should not change this. If you’re using your own
+plugin, you’ll want to point this to the right configuration file (which
+will be dependent on your plugin). See the <a href="#Blat">Blat</a> section for
+details on configuring WebApollo to use Blat.</p>
+<h3 id="span-idcanned_comments-classmw-headlinecanned-commentsspan"><span id="Canned_comments" class="mw-headline">Canned comments</span></h3>
+<p>You can configure a set of predefined comments that will be available
+for users when adding comments through a dropdown menu. The
+configuration is stored in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/config/canned_comments.xml</code>.
+Let’s take a look at the configuration file.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+ 
+&lt;canned_comments&gt;
+    &lt;!-- one &lt;comment&gt; element per comment.
+ it must contain the attribute &#34;feature_type&#34; that defines
+ the type of feature this comment will apply to.
+ must be be in the form of &#34;cv:cvterm&#34; (e.g., &#34;sequence:gene&#34;)
+ 
+ &lt;comment feature_type=&#34;sequence:gene&#34;&gt;This is a comment for sequence:gene&lt;/comment&gt;
+ --&gt;
+&lt;/canned_comments&gt;
+</code></pre><p>You’ll need one <code>&lt;comment&gt;</code> element for each predefined comment. The
+element needs to have a <code>feature_type</code> attribute in the form of
+<code>cv:cvterm</code> that this comment applies to. Let’s make a few comments for
+feature of type <code>sequence:gene</code> and <code>sequence:transcript</code>:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;comment feature_type=&#34;sequence:gene&#34;&gt;This is a comment for a gene&lt;/comment&gt;
+    &lt;comment feature_type=&#34;sequence:gene&#34;&gt;This is another comment for a gene&lt;/comment&gt;
+    &lt;comment feature_type=&#34;sequence:transcript&#34;&gt;This is a comment for a transcript&lt;/comment&gt;
+</code></pre><h3 id="span-idsearch_tools-classmw-headlinesearch-toolsspan"><span id="Search_tools" class="mw-headline">Search tools</span></h3>
+<p>As mentioned previously, WebApollo makes use of tools for sequence
+searching rather than employing its own search algorithm. The only
+currently supported tool is command line Blat.</p>
+<h4 id="span-idblat-classmw-headlineblatspan"><span id="Blat" class="mw-headline">Blat</span></h4>
+<p>You’ll need to have Blat installed and a search database with your
+genomic sequences available to make use of this feature. The
+configuration is stored in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/config/blat_config.xml</code>.
+Let’s take a look at the configuration file:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+ 
+&lt;!-- configuration file for setting up command line Blat support --&gt;
+ 
+&lt;blat_config&gt;
+ 
+    &lt;!-- path to Blat binary →
+ &lt;blat_bin&gt;ENTER_PATH_TO_BLAT_BINARY&lt;/blat_bin&gt;
+ 
+ &lt;!-- path to where to put temporary data --&gt;
+    &lt;tmp_dir&gt;ENTER_PATH_FOR_TEMPORARY_DATA&lt;/tmp_dir&gt;
+ 
+    &lt;!-- path to Blat database --&gt;
+    &lt;database&gt;ENTER_PATH_TO_BLAT_DATABASE&lt;/database&gt;
+ 
+    &lt;!-- any Blat options (directly passed to Blat) e.g., -minMatch --&gt;
+    &lt;blat_options&gt;ENTER_ANY_BLAT_OPTIONS&lt;/blat_options&gt;
+ 
+&lt;/blat_config&gt;
+</code></pre><p>Let’s look at each element with values filled in.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- path to Blat binary --&gt;
+    &lt;blat_bin&gt;/home/ubuntu/Software/blat/blat&lt;/blat_bin&gt;
+</code></pre><p>We need to point to the location where the Blat binary resides. We it
+installed in <code>/usr/local/bin/blat</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- path to where to put temporary data --&gt;
+    &lt;tmp_dir&gt;/data/dataHome/web_apollo/blat/tmp&lt;/tmp_dir&gt;
+</code></pre><p>We need to point to the location where to store temporary files to be
+used in the Blat search. It can be set to whatever location you’d like.
+We’ll store the temporary data to <code>/data/dataHome/web_apollo/tmp</code>.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- path to Blat database --&gt;
+    &lt;database&gt;/data/dataHome/web_apollo/blat/db/pyu.2bit&lt;/database&gt;
+</code></pre><p>We need to point to the location of the search database to be used by
+Blat. We need point it to <code>/data/dataHome/web_apollo/blat/db/pyu.2bit</code>.
+We&rsquo;re using a <code>2bit</code> database in this case, but you have options on how
+to generate your Blat database. See the Blat documentation for more
+information.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &lt;!-- any Blat options (directly passed to Blat) e.g., -minMatch --&gt;
+    &lt;blat_options&gt;-minScore=100 -minIdentity=60&lt;/blat_options&gt;
+</code></pre><p>Here we can configure any extra options to used by Blat. These options
+are passed verbatim to the program. In this example, we’re passing the
+<code>-minScore</code> parameter with a minimum score of <code>100</code> and the
+<code>-minIdentity</code> parameter with a value of <code>60</code> (60% identity). See the
+Blat documentation for information of all available options.</p>
+<h2 id="span-iddata_generation-classmw-headlinedata-generationspan"><span id="Data_generation" class="mw-headline">Data generation</span></h2>
+<p>The steps for generating data (in particular static data) are mostly
+similar to <a href="JBrowse.1" title="JBrowse">JBrowse</a> data generation steps, with
+some extra steps required. Most of the scripts for data generation
+reside in <code>/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/bin</code>.
+Let&rsquo;s go into WebApollo&rsquo;s JBrowse directory.</p>
+<pre><code>$ cd /usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse
+</code></pre>
+<p>It will make things easier if we make sure that the scripts in the <code>bin</code>
+directory are executable. Note that you&rsquo;ll need to have root privilege
+to do so.</p>
+<pre><code>$ sudo chmod 755 bin/*
+</code></pre>
+<p>As mentioned previously, the data resides in the <code>data</code> directory by
+default. Let&rsquo;s create a symlink to
+<code>/data/dataHome/web_apollo/jbrowse/data</code> to be used as the data
+directory. This gives a lot of flexibility in allowing your WebApollo
+instance to easily point to a new data directory. Note that you&rsquo;ll need
+to have root privilege to do so.</p>
+<pre><code>$ sudo ln -sf /data/dataHome/web_apollo/jbrowse/data
+</code></pre>
+<p>Now that we have our <code>data</code> directory in JBrowse, we need to copy some
+files into it that are specific to WebApollo&rsquo;s JBrowse. We need to copy
+all of the contents from <code>~/WebApollo/json</code> in our data directory.</p>
+<pre><code>$ cp ~/WebApollo/json/* data
+</code></pre>
+<p>The first thing we need to do before processing our evidence is to
+generate the reference sequence data to be used by JBrowse. We&rsquo;ll use
+the <code>prepare-refseqs.pl</code> script.</p>
+<pre><code>$ bin/prepare-refseqs.pl --fasta ~/maker_output/scf1117875582023.fa
+</code></pre>
+<p>We now have the DNA track setup. WebApollo&rsquo;s DNA track is modified from
+JBrowse&rsquo;s stock DNA track, so we need to modify the newly generated
+<code>data/trackList.json</code> file. This step IS VERY IMPORTANT, otherwise
+WebApollo will not work.</p>
+<p>First, let&rsquo;s look at the stock generated <code>data/trackList.json</code> file.</p>
+<pre><code>{
+  &quot;tracks&quot; : [
+     {
+        &quot;chunkSize&quot; : 20000,
+        &quot;urlTemplate&quot; : &quot;seq/{refseq}/&quot;,
+        &quot;type&quot; : &quot;SequenceTrack&quot;,
+        &quot;label&quot; : &quot;DNA&quot;,
+        &quot;key&quot; : &quot;DNA&quot;
+     }
+  ],
+  &quot;formatVersion&quot; : 1
+}
+</code></pre>
+<p>We need to modify the track object. We need to modify the <code>type</code> from
+<code>SequenceTrack</code> to <code>AnnotSequenceTrack</code>, remove the <code>urlTemplate</code> , move
+the <code>chunkSize</code> element into the <code>config</code> member we&rsquo;ll be adding:</p>
+<pre><code>        &quot;config&quot; : {
+           &quot;chunkSize&quot; : 20000,
+           &quot;residuesUrlTemplate&quot; : &quot;seq/{refseq}/&quot;,
+           &quot;urlTemplate&quot; : &quot;sequence_alterations_trackData.json&quot;,
+           &quot;style&quot; : {
+              &quot;uniqueIdField&quot; : &quot;id&quot;,
+              &quot;className&quot; : &quot;{type}&quot;
+           },
+           &quot;compress&quot; : 0,
+           &quot;type&quot; : 1,
+           &quot;subfeatures&quot; : 1
+        }
+</code></pre>
+<p>After the modifications, the file should look as follow (you can just
+copy and paste it):</p>
+<pre><code>{
+  &quot;tracks&quot; : [
+     {
+        &quot;type&quot; : &quot;AnnotSequenceTrack&quot;,
+        &quot;label&quot; : &quot;DNA&quot;,
+        &quot;key&quot; : &quot;DNA&quot;,
+        &quot;config&quot; : {
+           &quot;chunkSize&quot; : 20000,
+           &quot;residuesUrlTemplate&quot; : &quot;seq/{refseq}/&quot;,
+           &quot;urlTemplate&quot; : &quot;sequence_alterations_trackData.json&quot;,
+           &quot;style&quot; : {
+              &quot;uniqueIdField&quot; : &quot;id&quot;,
+              &quot;className&quot; : &quot;{type}&quot;
+           },
+           &quot;compress&quot; : 0,
+           &quot;type&quot; : 1,
+           &quot;subfeatures&quot; : 1
+        }
+     }
+  ],
+  &quot;formatVersion&quot; : 1
+}
+</code></pre>
+<p>We need to symlink the <code>data/seq/refSeqs.json</code> file in <code>data/seq</code>.</p>
+<pre><code>$ cd data
+$ ln -sf seq/refSeqs.json
+$ cd ..
+</code></pre>
+<h3 id="span-idstatic_data_generation-classmw-headlinestatic-data-generationspan"><span id="Static_data_generation" class="mw-headline">Static data generation</span></h3>
+<p>Generating data from GFF3 works best by having a separate GFF3 per
+source type. The output from Maker puts all sources in the same GFF3. We
+need to split up the GFF3. We can use the <code>split_gff_by_source.pl</code>
+script in <code>~/WebApollo/tools/data</code> to do so. We&rsquo;ll output the split GFF3
+to some temporary directory (we&rsquo;ll use <code>~/scratch/split_gff</code>).</p>
+<pre><code>$ mkdir -p ~/scratch/split_gff
+$ ~/WebApollo/tools/data/split_gff_by_source.pl -i ~/maker_output/scf1117875582023.gff -d ~/scratch/split_gff
+</code></pre>
+<p>If we look at the contents of <code>~/scratch/split_gff</code>, we can see we have
+the following files:</p>
+<pre><code>$ ls ~/scratch/split_gff
+blastn.gff  est2genome.gff  protein2genome.gff  repeatrunner.gff
+blastx.gff  maker.gff       repeatmasker.gff    snap_masked.gff
+</code></pre>
+<p>We need to process each file and create the appropriate tracks.</p>
+<p>We&rsquo;ll start off with <code>maker.gff</code>. We need to handle that file a bit
+differently than the rest of the files since the GFF represents the
+features as gene, transcript, exons, and CDSs.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff ~/scratch/split_gff/maker.gff \
+--arrowheadClass trellis-arrowhead --getSubfeatures \
+--subfeatureClasses '{&quot;wholeCDS&quot;: &quot;null&quot;, &quot;CDS&quot;:&quot;maker-CDS&quot;, &quot;UTR&quot;: &quot;maker-UTR&quot;, &quot;exon&quot;:&quot;maker-exon&quot;}' \
+--cssClass maker-transcript --type mRNA --trackLabel maker
+</code></pre>
+<p>Now we need to convert the Maker track into WebApollo compatible JSON.
+We can use <code>json_converter.sh</code> in <code>~/WebApollo/tools/data</code> to do so.</p>
+<pre><code>$ ~/WebApollo/tools/data/json_converter.sh -d data/tracks/maker
+root track dir: data/tracks/maker
+editing files in place
+seq dir count: 1
+done processing features, total scanned: 353
+</code></pre>
+<p>Lastly we need to modify the <code>maker</code> entry in <code>data/trackList.json</code>.
+Let&rsquo;s look at the stock entry.</p>
+<pre><code>     {
+        &quot;autocomplete&quot; : &quot;none&quot;,
+        &quot;style&quot; : {
+           &quot;className&quot; : &quot;maker-transcript&quot;,
+           &quot;subfeatureClasses&quot; : {
+              &quot;wholeCDS&quot; : &quot;null&quot;,
+              &quot;exon&quot; : &quot;maker-exon&quot;,
+              &quot;CDS&quot; : &quot;maker-CDS&quot;,
+              &quot;UTR&quot; : &quot;maker-UTR&quot;
+           },
+           &quot;arrowheadClass&quot; : &quot;trellis-arrowhead&quot;
+        },
+        &quot;key&quot; : &quot;maker&quot;,
+        &quot;phase&quot; : null,
+        &quot;urlTemplate&quot; : &quot;tracks/maker/{refseq}/trackData.json&quot;,
+        &quot;compress&quot; : 0,
+        &quot;label&quot; : &quot;maker&quot;,
+        &quot;type&quot; : &quot;FeatureTrack&quot;,
+        &quot;subfeatures&quot; : 1
+     }
+</code></pre>
+<p>We need to add <code>&quot;renderClassName&quot; : &quot;maker-transcript-render&quot;</code> to the
+<code>style</code> member. We also need to change <code>type</code> from <code>FeatureTrack</code> to
+<code>DraggableFeatureTrack</code>. This is how the updated entry should look like:</p>
+<pre><code>    {
+        &quot;autocomplete&quot; : &quot;none&quot;,
+        &quot;style&quot; : {
+           &quot;renderClassName&quot; : &quot;maker-transcript-render&quot;,
+           &quot;className&quot; : &quot;maker-transcript&quot;,
+           &quot;subfeatureClasses&quot; : {
+              &quot;wholeCDS&quot; : &quot;null&quot;,
+              &quot;exon&quot; : &quot;maker-exon&quot;,
+              &quot;CDS&quot; : &quot;maker-CDS&quot;,
+              &quot;UTR&quot; : &quot;maker-UTR&quot;
+           },
+           &quot;arrowheadClass&quot; : &quot;trellis-arrowhead&quot;
+        },
+        &quot;key&quot; : &quot;maker&quot;,
+        &quot;phase&quot; : null,
+        &quot;urlTemplate&quot; : &quot;tracks/maker/{refseq}/trackData.json&quot;,
+        &quot;compress&quot; : 0,
+        &quot;label&quot; : &quot;maker&quot;,
+        &quot;type&quot; : &quot;DraggableFeatureTrack&quot;,
+        &quot;subfeatures&quot; : 1
+     }
+</code></pre>
+<p>Now we need to process the other remaining GFF3 files. The entries in
+those are stored as &ldquo;match/match_part&rdquo;, so they can all be handled in a
+similar fashion.</p>
+<p>We&rsquo;ll start off with <code>blastn</code> as an example.</p>
+<pre><code>$ bin/flatfile-to-json.pl --gff ~/scratch/split_gff/blastn.gff \
+--arrowheadClass trellis-arrowhead --getSubfeatures \
+--subfeatureClasses '{&quot;match_part&quot;: &quot;blastn-alignment-part&quot;}' \
+--cssClass &quot;blastn-alignment-match&quot; --trackLabel blastn
+</code></pre>
+<p>Now we need to modify the <code>blastn</code> entry in <code>data/trackList.json</code>. Let&rsquo;s
+look at the stock entry.</p>
+<pre><code>     {
+        &quot;autocomplete&quot; : &quot;none&quot;,
+        &quot;style&quot; : {
+           &quot;className&quot; : &quot;blastn-match&quot;,
+           &quot;subfeatureClasses&quot; : {
+              &quot;match_part&quot; : &quot;blastn-part&quot;
+           },
+           &quot;arrowheadClass&quot; : &quot;trellis-arrowhead&quot;
+        },
+        &quot;key&quot; : &quot;blastn&quot;,
+        &quot;phase&quot; : null,
+        &quot;urlTemplate&quot; : &quot;tracks/blastn/{refseq}/trackData.json&quot;,
+        &quot;compress&quot; : 0,
+        &quot;label&quot; : &quot;blastn&quot;,
+        &quot;type&quot; : &quot;FeatureTrack&quot;,
+        &quot;subfeatures&quot; : 1
+     }
+</code></pre>
+<p>We need to add <code>&quot;renderClassName&quot; : &quot;blastn-alignment-render&quot;</code> to the
+style member. We also need to change <code>type</code> from <code>FeatureTrack</code> to
+<code>DraggableFeatureTrack</code>. This is how the updated entry should look like:</p>
+<pre><code>     {
+        &quot;autocomplete&quot; : &quot;none&quot;,
+        &quot;style&quot; : {
+           &quot;renderClassName&quot; : &quot;blastn-alignment-render&quot;,
+           &quot;className&quot; : &quot;blastn-match&quot;,
+           &quot;subfeatureClasses&quot; : {
+              &quot;match_part&quot; : &quot;blastn-part&quot;
+           },
+           &quot;arrowheadClass&quot; : &quot;trellis-arrowhead&quot;
+        },
+        &quot;key&quot; : &quot;blastn&quot;,
+        &quot;phase&quot; : null,
+        &quot;urlTemplate&quot; : &quot;tracks/blastn/{refseq}/trackData.json&quot;,
+        &quot;compress&quot; : 0,
+        &quot;label&quot; : &quot;blastn&quot;,
+        &quot;type&quot; : &quot;DraggableFeatureTrack&quot;,
+        &quot;subfeatures&quot; : 1
+     }
+</code></pre>
+<p>We need to follow the same steps for the remaining GFF3 files. It can be
+a bit tedious to do this for the remaining six files, so we can use a
+simple inline shell script to help us out. However, we&rsquo;ll still have to
+manually modify <code>data/trackList.json</code> for each new track. Don&rsquo;t worry if
+the script doesn&rsquo;t make sense, you can still process each file by hand.
+For now you can just copy and paste the script into your terminal.</p>
+<pre><code>$ for i in $(ls ~/scratch/split_gff/*.gff | grep -v maker);
+do j=$(basename $i); j=${j/.gff/};
+echo &quot;Processing $j&quot; &amp;&amp; bin/flatfile-to-json.pl --gff $i --arrowheadClass trellis-arrowhead \
+--getSubfeatures --subfeatureClasses &quot;{\&quot;match_part\&quot;: \&quot;$j-alignment-part\&quot;}&quot; \
+--cssClass &quot;$j-alignment-match&quot; --trackLabel $j; done
+</code></pre>
+<p><strong>IMPORTANT!</strong></p>
+<p>Remember that we still need to add
+<code>&quot;renderClassName&quot; : &quot;$type-alignment-render&quot;</code> to the style member,
+where <code>$type</code> is the track name. We also need to change <code>type</code> from
+<code>FeatureTrack</code> to <code>DraggableFeatureTrack</code>.</p>
+<p>Now let&rsquo;s look how to configure BAM support. WebApollo has native
+support for BAM, so extra processing of the data is required.</p>
+<p>First we&rsquo;ll copy the BAM data into the WebApollo data directory. We&rsquo;ll
+put it in the <code>data/bam</code> directory. Keep in mind that this BAM data was
+randomly generated, so there&rsquo;s really no biological meaning to it. We
+only created it to show BAM support.</p>
+<pre><code>$ mkdir data/bam
+$ cp ~/maker_output/*.bam* data/bam
+</code></pre>
+<p>Now we need to edit the <code>data/bam_trackList.json</code> file. Let&rsquo;s look at
+the file.</p>
+<pre><code>{
+  &quot;tracks&quot; : [
+     {
+       &quot;type&quot; : &quot;BamFeatureTrack&quot;,
+       &quot;label&quot; : &quot;ENTER_LABEL&quot;,
+       &quot;data_url&quot; : &quot;ENTER_URL_TO_BAM_FILE&quot;,
+       &quot;index_url&quot; : &quot;ENTER_URL_TO_BAI_FILE&quot;,
+        &quot;config&quot; : {
+           &quot;autocomplete&quot; : &quot;none&quot;,
+           &quot;style&quot; : {
+              &quot;className&quot; : &quot;bam&quot;,
+              &quot;subfeatureClasses&quot; : {
+                  &quot;M&quot;: &quot;cigarM&quot;,
+                  &quot;D&quot;: &quot;cigarD&quot;,
+                  &quot;N&quot;: &quot;cigarN&quot;,
+                  &quot;=&quot;: &quot;cigarEQ&quot;,
+                  &quot;E&quot;: &quot;cigarEQ&quot;,
+                  &quot;X&quot;: &quot;cigarX&quot;,
+                  &quot;I&quot;: &quot;cigarI&quot;
+              },
+              &quot;arrowheadClass&quot; : null
+           },
+           &quot;key&quot; : &quot;ENTER_KEY&quot;,
+           &quot;compress&quot; : 0,
+           &quot;type&quot; : 1,
+           &quot;subfeatures&quot; : 1
+        }
+     }
+   ],
+  &quot;formatVersion&quot; : 1
+}
+</code></pre>
+<p>We need to modify the following elements: <code>label</code>, <code>data_url</code>,
+<code>index_url</code>, and <code>key</code>.</p>
+<p>Let&rsquo;s look at each value with their values filled in.</p>
+<pre><code>       &quot;label&quot; : &quot;simulated_bam&quot;,
+</code></pre>
+<p>The internal name for this BAM track.</p>
+<pre><code>       &quot;data_url&quot; : &quot;bam/scf1117875582023.bam&quot;,
+</code></pre>
+<p>URL to BAM file.</p>
+<pre><code>       &quot;index_url&quot; : &quot;bam/scf1117875582023.bam.bai&quot;,
+</code></pre>
+<p>URL to BAM index file.</p>
+<pre><code>       &quot;sourceUrl&quot; : &quot;data/&quot;,
+</code></pre>
+<p>Add <code>sourceUrl</code> under <code>index_url</code>.</p>
+<p>You can point to the BAM/BAI file in any server by providing an absolute
+URL. This is a nice feature since BAM files can get rather large, so you
+don&rsquo;t need to create a local copy on your own server.</p>
+<pre><code>           &quot;key&quot; : &quot;simulated BAM&quot;,
+</code></pre>
+<p>The external, human-readable label seen on the BAM track.</p>
+<p>Here&rsquo;s how the updated JSON should look like.</p>
+<pre><code>{
+  &quot;tracks&quot; : [
+     {
+       &quot;type&quot; : &quot;BamFeatureTrack&quot;,
+       &quot;label&quot; : &quot;simulated_bam&quot;, 
+       &quot;data_url&quot; : &quot;bam/scf1117875582023.bam&quot;, 
+       &quot;index_url&quot; : &quot;bam/scf1117875582023.bam.bai&quot;,
+       &quot;sourceUrl&quot; : &quot;data/&quot;,
+        &quot;config&quot; : {
+           &quot;autocomplete&quot; : &quot;none&quot;,
+           &quot;style&quot; : {
+              &quot;className&quot; : &quot;bam&quot;,
+              &quot;subfeatureClasses&quot; : {
+                  &quot;M&quot;: &quot;cigarM&quot;,
+                  &quot;D&quot;: &quot;cigarD&quot;,
+                  &quot;N&quot;: &quot;cigarN&quot;,
+                  &quot;=&quot;: &quot;cigarEQ&quot;,
+                  &quot;E&quot;: &quot;cigarEQ&quot;,
+                  &quot;X&quot;: &quot;cigarX&quot;,
+                  &quot;I&quot;: &quot;cigarI&quot;
+              },
+              &quot;arrowheadClass&quot; : null
+           },
+           &quot;key&quot; : &quot;simulated BAM&quot;,
+           &quot;compress&quot; : 0,
+           &quot;type&quot; : 1,
+           &quot;subfeatures&quot; : 1
+        }
+     }
+  ],
+  &quot;formatVersion&quot; : 1
+}
+</code></pre>
+<p>You should now have a <code>simulated BAM</code> track now available.</p>
+<p>You can download the updated <code>trackList.json</code> file here (you&rsquo;ll need to
+put the file in your virtual machine and unzip it in
+<code>/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data</code>):<br>
+<a
+href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/Web_apollo_2012_tutorial_track_list_json.zip"
+class="internal"
+title="Web apollo 2012 tutorial track list json.zip">web_apollo_track_list_json.zip</a></p>
+<p>Alternatively, you can just copy the WebApolloDemo <code>trackList.json</code> into
+WebApollo (since they&rsquo;re both using the same dataset).</p>
+<pre><code>$ cd /usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data
+$ cp /usr/local/tomcat/tomcat7/webapps/WebApolloDemo/jbrowse/data/trackList.json .
+</code></pre>
+<p>Congratulations, you&rsquo;re done configuring WebApollo.</p>
+<p>Let&rsquo;s test out our installation. Point your browser to
+<code>http://ec2-##-##-##-##.compute-1.amazonaws.com:8080/WebApollo</code><br>
+(e.g.,
+<code>http://ec2-184-73-92-243.compute-1.amazonaws.com:8080/WebApollo</code>).</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Web_apollo_login_page_with_credentials.jpg"
+class="thumbborder" width="320" height="85"
+alt="WebApollo login page" /></p>
+<p>The user name and password are both <code>web_apollo_admin</code> as we configured
+earlier.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/Web_apollo_main_options.jpg"
+class="thumbborder" width="214" height="33"
+alt="WebApollo main options" /></p>
+<p>Click on the <code>Edit annotations</code> button.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Web_apollo_select_refseq.jpg"
+class="thumbborder" width="451" height="33"
+alt="WebApollo reference sequence selection" /></p>
+<p>We only see one reference sequence to annotate since we&rsquo;re only working
+with one contig. Click on the <code>Edit</code> button.</p>
+<p>Now have fun annotating!!!</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253A2012_Summer_School" title="Category%253A2012 Summer School">2012 Summer
+School</a></li>
+<li><a href="Category%253AWebapollo" title="Category%253AWebapollo">Webapollo</a></li>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="Special%253ABrowse/WebApollo-20Tutorial-202012" title="Special%253ABrowse/WebApollo-20Tutorial-202012">WebApollo Tutorial
+2012</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="WebApollo.1" title="WebApollo">WebApollo</a> <span class="smwsearch"><a href="Special%253ASearchByProperty/Has-20topic/WebApollo" title="Special%253ASearchByProperty/Has-20topic/WebApollo">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/WebApollo_Tutorial_2012" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:52 on 27 August
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">30,902 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

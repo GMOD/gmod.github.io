@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glyphs and Glyph Options - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoglyphs-and-glyph-optionsspan"><span dir="auto">Glyphs and Glyph Options</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Selecting_and_Configuring_Glyphs"><span class="tocnumber">1</span> <span class="toctext">Selecting and
+Configuring Glyphs</span></a></li>
+<li><a href="#Values_Used_in_Glyph_Options"><span class="tocnumber">2</span> <span class="toctext">Values Used in
+Glyph Options</span></a>
+<ul>
+<li><a href="#Colors"><span class="tocnumber">2.1</span>
+<span class="toctext">Colors</span></a>
+<ul>
+<li><a href="#By_Name"><span class="tocnumber">2.1.1</span> <span class="toctext">By
+Name</span></a></li>
+<li><a href="#By_HTML_Value"><span class="tocnumber">2.1.2</span> <span class="toctext">By
+HTML Value</span></a></li>
+<li><a href="#Using_CSS_Notation"><span class="tocnumber">2.1.3</span> <span class="toctext">Using
+CSS Notation</span></a></li>
+<li><a href="#Alpha_.28Transparency.29_Values"><span class="tocnumber">2.1.4</span> <span class="toctext">Alpha
+(Transparency) Values</span></a></li>
+</ul>
+</li>
+<li><a href="#True.2FFalse_Values"><span class="tocnumber">2.2</span> <span class="toctext">True/False
+Values</span></a></li>
+<li><a href="#Fonts"><span class="tocnumber">2.3</span>
+<span class="toctext">Fonts</span></a></li>
+<li><a href="#Screen_Measurements"><span class="tocnumber">2.4</span> <span class="toctext">Screen
+Measurements</span></a></li>
+</ul>
+</li>
+<li><a href="#Glyphs_and_their_Configuration_Options"><span class="tocnumber">3</span> <span class="toctext">Glyphs and
+their Configuration
+Options</span></a>
+<ul>
+<li><a href="#generic"><span class="tocnumber">3.1</span>
+<span class="toctext">generic</span></a></li>
+<li><a href="#alignment"><span class="tocnumber">3.2</span>
+<span class="toctext">alignment</span></a></li>
+<li><a href="#allele_tower"><span class="tocnumber">3.3</span>
+<span class="toctext">allele_tower</span></a></li>
+<li><a href="#anchored_arrow"><span class="tocnumber">3.4</span>
+<span class="toctext">anchored_arrow</span></a></li>
+<li><a href="#arrow"><span class="tocnumber">3.5</span>
+<span class="toctext">arrow</span></a></li>
+<li><a href="#box"><span class="tocnumber">3.6</span>
+<span class="toctext">box</span></a></li>
+<li><a href="#broken_line"><span class="tocnumber">3.7</span>
+<span class="toctext">broken_line</span></a></li>
+<li><a href="#cds"><span class="tocnumber">3.8</span>
+<span class="toctext">cds</span></a></li>
+<li><a href="#christmas_arrow"><span class="tocnumber">3.9</span>
+<span class="toctext">christmas_arrow</span></a></li>
+<li><a href="#cross"><span class="tocnumber">3.10</span>
+<span class="toctext">cross</span></a></li>
+<li><a href="#dashed_line"><span class="tocnumber">3.11</span>
+<span class="toctext">dashed_line</span></a></li>
+<li><a href="#diamond"><span class="tocnumber">3.12</span>
+<span class="toctext">diamond</span></a></li>
+<li><a href="#dna"><span class="tocnumber">3.13</span>
+<span class="toctext">dna</span></a></li>
+<li><a href="#dot"><span class="tocnumber">3.14</span>
+<span class="toctext">dot</span></a></li>
+<li><a href="#dumbbell"><span class="tocnumber">3.15</span>
+<span class="toctext">dumbbell</span></a></li>
+<li><a href="#ellipse"><span class="tocnumber">3.16</span>
+<span class="toctext">ellipse</span></a></li>
+<li><a href="#ex"><span class="tocnumber">3.17</span>
+<span class="toctext">ex</span></a></li>
+<li><a href="#extending_arrow"><span class="tocnumber">3.18</span>
+<span class="toctext">extending_arrow</span></a></li>
+<li><a href="#fixedwidth"><span class="tocnumber">3.19</span>
+<span class="toctext">fixedwidth</span></a></li>
+<li><a href="#flag"><span class="tocnumber">3.20</span>
+<span class="toctext">flag</span></a></li>
+<li><a href="#gene"><span class="tocnumber">3.21</span>
+<span class="toctext">gene</span></a></li>
+<li><a href="#graded_segments"><span class="tocnumber">3.22</span>
+<span class="toctext">graded_segments</span></a></li>
+<li><a href="#group"><span class="tocnumber">3.23</span>
+<span class="toctext">group</span></a></li>
+<li><a href="#hat"><span class="tocnumber">3.24</span>
+<span class="toctext">hat</span></a></li>
+<li><a href="#heat_map"><span class="tocnumber">3.25</span>
+<span class="toctext">heat_map</span></a></li>
+<li><a href="#heat_map_ideogram"><span class="tocnumber">3.26</span>
+<span class="toctext">heat_map_ideogram</span></a></li>
+<li><a href="#heterogeneous_segments"><span class="tocnumber">3.27</span>
+<span class="toctext">heterogeneous_segments</span></a></li>
+<li><a href="#hidden"><span class="tocnumber">3.28</span>
+<span class="toctext">hidden</span></a></li>
+<li><a href="#hybrid_plot"><span class="tocnumber">3.29</span>
+<span class="toctext">hybrid_plot</span></a></li>
+<li><a href="#ideogram"><span class="tocnumber">3.30</span>
+<span class="toctext">ideogram</span></a></li>
+<li><a href="#image"><span class="tocnumber">3.31</span>
+<span class="toctext">image</span></a></li>
+<li><a href="#lightning"><span class="tocnumber">3.32</span>
+<span class="toctext">lightning</span></a></li>
+<li><a href="#line"><span class="tocnumber">3.33</span>
+<span class="toctext">line</span></a></li>
+<li><a href="#merge_parts"><span class="tocnumber">3.34</span>
+<span class="toctext">merge_parts</span></a></li>
+<li><a href="#merged_alignment"><span class="tocnumber">3.35</span>
+<span class="toctext">merged_alignment</span></a></li>
+<li><a href="#minmax"><span class="tocnumber">3.36</span>
+<span class="toctext">minmax</span></a></li>
+<li><a href="#oval"><span class="tocnumber">3.37</span>
+<span class="toctext">oval</span></a></li>
+<li><a href="#pairplot"><span class="tocnumber">3.38</span>
+<span class="toctext">pairplot</span></a></li>
+<li><a href="#pentagram"><span class="tocnumber">3.39</span>
+<span class="toctext">pentagram</span></a></li>
+<li><a href="#phylo_align"><span class="tocnumber">3.40</span>
+<span class="toctext">phylo_align</span></a></li>
+<li><a href="#pinsertion"><span class="tocnumber">3.41</span>
+<span class="toctext">pinsertion</span></a></li>
+<li><a href="#primers"><span class="tocnumber">3.42</span>
+<span class="toctext">primers</span></a></li>
+<li><a href="#processed_transcript"><span class="tocnumber">3.43</span>
+<span class="toctext">processed_transcript</span></a></li>
+<li><a href="#protein"><span class="tocnumber">3.44</span>
+<span class="toctext">protein</span></a></li>
+<li><a href="#ragged_ends"><span class="tocnumber">3.45</span>
+<span class="toctext">ragged_ends</span></a></li>
+<li><a href="#rainbow_gene"><span class="tocnumber">3.46</span>
+<span class="toctext">rainbow_gene</span></a></li>
+<li><a href="#redgreen_box"><span class="tocnumber">3.47</span>
+<span class="toctext">redgreen_box</span></a></li>
+<li><a href="#redgreen_segment"><span class="tocnumber">3.48</span>
+<span class="toctext">redgreen_segment</span></a></li>
+<li><a href="#repeating_shape"><span class="tocnumber">3.49</span>
+<span class="toctext">repeating_shape</span></a></li>
+<li><a href="#rndrect"><span class="tocnumber">3.50</span>
+<span class="toctext">rndrect</span></a></li>
+<li><a href="#ruler_arrow"><span class="tocnumber">3.51</span>
+<span class="toctext">ruler_arrow</span></a></li>
+<li><a href="#saw_teeth"><span class="tocnumber">3.52</span>
+<span class="toctext">saw_teeth</span></a></li>
+<li><a href="#segmented_keyglyph"><span class="tocnumber">3.53</span>
+<span class="toctext">segmented_keyglyph</span></a></li>
+<li><a href="#segments"><span class="tocnumber">3.54</span>
+<span class="toctext">segments</span></a></li>
+<li><a href="#smoothing"><span class="tocnumber">3.55</span>
+<span class="toctext">smoothing</span></a></li>
+<li><a href="#span"><span class="tocnumber">3.56</span>
+<span class="toctext">span</span></a></li>
+<li><a href="#spectrogram"><span class="tocnumber">3.57</span>
+<span class="toctext">spectrogram</span></a></li>
+<li><a href="#splice_site"><span class="tocnumber">3.58</span>
+<span class="toctext">splice_site</span></a></li>
+<li><a href="#stackedplot"><span class="tocnumber">3.59</span>
+<span class="toctext">stackedplot</span></a></li>
+<li><a href="#ternary_plot"><span class="tocnumber">3.60</span>
+<span class="toctext">ternary_plot</span></a></li>
+<li><a href="#text_in_box"><span class="tocnumber">3.61</span>
+<span class="toctext">text_in_box</span></a></li>
+<li><a href="#three_letters"><span class="tocnumber">3.62</span>
+<span class="toctext">three_letters</span></a></li>
+<li><a href="#tic_tac_toe"><span class="tocnumber">3.63</span>
+<span class="toctext">tic_tac_toe</span></a></li>
+<li><a href="#toomany"><span class="tocnumber">3.64</span>
+<span class="toctext">toomany</span></a></li>
+<li><a href="#topoview"><span class="tocnumber">3.65</span>
+<span class="toctext">topoview</span></a></li>
+<li><a href="#trace"><span class="tocnumber">3.66</span>
+<span class="toctext">trace</span></a></li>
+<li><a href="#track"><span class="tocnumber">3.67</span>
+<span class="toctext">track</span></a></li>
+<li><a href="#transcript"><span class="tocnumber">3.68</span>
+<span class="toctext">transcript</span></a></li>
+<li><a href="#transcript2"><span class="tocnumber">3.69</span>
+<span class="toctext">transcript2</span></a></li>
+<li><a href="#translation"><span class="tocnumber">3.70</span>
+<span class="toctext">translation</span></a></li>
+<li><a href="#triangle"><span class="tocnumber">3.71</span>
+<span class="toctext">triangle</span></a></li>
+<li><a href="#two_bolts"><span class="tocnumber">3.72</span>
+<span class="toctext">two_bolts</span></a></li>
+<li><a href="#vista_plot"><span class="tocnumber">3.73</span>
+<span class="toctext">vista_plot</span></a></li>
+<li><a href="#wave"><span class="tocnumber">3.74</span>
+<span class="toctext">wave</span></a></li>
+<li><a href="#weighted_arrow"><span class="tocnumber">3.75</span>
+<span class="toctext">weighted_arrow</span></a></li>
+<li><a href="#whiskerplot"><span class="tocnumber">3.76</span>
+<span class="toctext">whiskerplot</span></a></li>
+<li><a href="#wiggle_box"><span class="tocnumber">3.77</span>
+<span class="toctext">wiggle_box</span></a></li>
+<li><a href="#wiggle_density"><span class="tocnumber">3.78</span>
+<span class="toctext">wiggle_density</span></a></li>
+<li><a href="#wiggle_xyplot"><span class="tocnumber">3.79</span>
+<span class="toctext">wiggle_xyplot</span></a></li>
+<li><a href="#wiggle_minmax"><span class="tocnumber">3.80</span>
+<span class="toctext">wiggle_minmax</span></a></li>
+<li><a href="#xyplot"><span class="tocnumber">3.81</span>
+<span class="toctext">xyplot</span></a></li>
+</ul>
+</li>
+</ul>
+<p>See also: <a href="GBrowse_Configuration/Glyphs" title="GBrowse Configuration/Glyphs">GBrowse
+Configuration/Glyphs</a></p>
+<p><a href="GBrowse.1" title="GBrowse">GBrowse</a> offers many different options for
+displaying tracks. Tracks are generated by the Perl
+<a href="http://search.cpan.org/perldoc?Bio::Graphics"
+class="external text" rel="nofollow">Bio::Graphics</a> module, which is
+the definitive reference for the various display options in GBrowse.
+This page provides an introduction to the most commonly used glyphs.</p>
+<h1 id="span-idselecting_and_configuring_glyphs-classmw-headlineselecting-and-configuring-glyphsspan"><span id="Selecting_and_Configuring_Glyphs" class="mw-headline">Selecting and Configuring Glyphs</span></h1>
+<p>Every GBrowse [Track] stanza should have a <strong>glyph</strong> option. This
+option selects the shape and behavior of each feature rendered in the
+track. Other options fine tune the glyph&rsquo;s appearance by selecting its
+height, color, and other display properties. Several standard display
+options are shared among all glyphs; others are glyph-specific.</p>
+<p>The simplest [Track] stanza will look like this:</p>
+<p>Sample track containing 5 &ldquo;stacked&rdquo; wiggle_xyplot glyphs.</p>
+<p>An xy-plot compatible with dense &ldquo;wig&rdquo; data. See the documentation for
+<a
+href="http://search.cpan.org/perldoc?Bio::Graphics::Glyph::wiggle_xyplot"
+class="external text"
+rel="nofollow">Bio::Graphics::Glyph::wiggle_xyplot</a>.</p>
+<p>It produces the typical xyplot, but uses the wig data for dense data
+sets. In the example the <code>bicolor_pivot</code> parameter has been set to <code>0</code>,
+and the <code>pos_color</code> and <code>neg_color</code> were set to obtain the conditional
+coloring.</p>
+<pre><code>[wiggle_xyplot]
+feature       = Mooney_wiggle
+glyph         = wiggle_xyplot
+height        = 20
+fgcolor       = black
+bicolor_pivot = 0
+pos_color     = red
+neg_color     = blue
+key           = Mooney ChIP-chip (Plot)
+category      = Experimental Data
+label         = 0
+citation      = Mooney RA, Davis SE, Peters JM, Rowland JL et al.
+                Regulator trafficking on bacterial transcription units in vivo. Mol Cell 2009 Jan 16;33(1):97-108.
+label         = 1
+</code></pre>
+<h2 id="span-idwiggle_minmax-classmw-headlinewiggle_minmaxspan"><span id="wiggle_minmax" class="mw-headline">wiggle_minmax</span></h2>
+<p>Bio::Graphics::Glyph::wiggle_minmax</p>
+<h2 id="span-idxyplot-classmw-headlinexyplotspan"><span id="xyplot" class="mw-headline">xyplot</span></h2>
+<p>Bio::Graphics::Glyph::xyplot</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ANeeds_Editing" title="Category%253ANeeds Editing">Needs Editing</a></li>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Glyphs_and_Glyph_Options"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:35 on 27 March 2015.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">253,396 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado New Users - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-new-usersspan"><span dir="auto">Chado New Users</span></h1>
+<p>This page, and it&rsquo;s associated discussion page follow the learning curve
+for new Chado users learning the system at CSHL.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Getting_an_empty_Chado_PostgreSQL_on_our_machines"><span class="tocnumber">1</span> <span class="toctext">Getting an
+empty Chado PostgreSQL on our
+machines</span></a>
+<ul>
+<li><a href="#Installation_Notes"><span class="tocnumber">1.1</span>
+<span class="toctext">Installation
+Notes</span></a></li>
+</ul>
+</li>
+<li><a href="#Loading_the_Ontologies"><span class="tocnumber">2</span> <span class="toctext">Loading the
+Ontologies</span></a></li>
+<li><a href="#Getting_the_Sequence_Module_Working"><span class="tocnumber">3</span> <span class="toctext">Getting the
+Sequence Module Working</span></a></li>
+<li><a href="#Migration_from_other_databases"><span class="tocnumber">4</span> <span class="toctext">Migration from
+other databases</span></a></li>
+<li><a href="#Sample_Data"><span class="tocnumber">5</span> <span class="toctext">Sample
+Data</span></a></li>
+<li><a href="#Understanding_how_things_are_represented_in_Chado"><span class="tocnumber">6</span> <span class="toctext">Understanding
+how things are represented in
+Chado</span></a>
+<ul>
+<li><a href="#Central_Dogma"><span class="tocnumber">6.1</span> <span class="toctext">Central
+Dogma</span></a>
+<ul>
+<li><a href="#Gene"><span class="tocnumber">6.1.1</span>
+<span class="toctext">Gene</span></a></li>
+<li><a href="#mRNA"><span class="tocnumber">6.1.2</span>
+<span class="toctext">mRNA</span></a>
+<ul>
+<li><a href="#Polycistronic_transcription_units"><span class="tocnumber">6.1.2.1</span>
+<span class="toctext">Polycistronic transcription
+units</span></a></li>
+</ul>
+</li>
+<li><a href="#other_RNAs"><span class="tocnumber">6.1.3</span> <span class="toctext">other
+RNAs</span></a></li>
+<li><a href="#Polypeptides"><span class="tocnumber">6.1.4</span>
+<span class="toctext">Polypeptides</span></a></li>
+<li><a href="#Proteins"><span class="tocnumber">6.1.5</span>
+<span class="toctext">Proteins</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See
+also</span></a></li>
+</ul>
+<h2 id="span-idgetting_an_empty_chado_postgresql_on_our_machines-classmw-headlinegetting-an-empty-chado-postgresql-on-our-machinesspan"><span id="Getting_an_empty_Chado_PostgreSQL_on_our_machines" class="mw-headline">Getting an empty Chado PostgreSQL on our machines</span></h2>
+<ul>
+<li>Zheng - on PC with Fedora. See <a href="Zheng's_installation_notes" title="Zheng's installation notes">Zheng&rsquo;s installation
+notes</a></li>
+<li>Mike - on Intel Mac running Fedora partition</li>
+<li>Jim -
+<ul>
+<li>on PPC Mac the hard way See <a href="Jim's_installation_notes" title="Jim's installation notes">Jim&rsquo;s installation
+notes</a></li>
+<li>on CentOS server in Texas</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idinstallation_notes-classmw-headlineinstallation-notesspan"><span id="Installation_Notes" class="mw-headline">Installation Notes</span></h3>
+<p>If the easy way fails, the old documentation outside the wiki can be
+pretty confusing.</p>
+<h2 id="span-idloading_the_ontologies-classmw-headlineloading-the-ontologiesspan"><span id="Loading_the_Ontologies" class="mw-headline">Loading the Ontologies</span></h2>
+<p>This works via make ontologies. How to do updates?</p>
+<h2 id="span-idgetting_the_sequence_module_working-classmw-headlinegetting-the-sequence-module-workingspan"><span id="Getting_the_Sequence_Module_Working" class="mw-headline">Getting the Sequence Module Working</span></h2>
+<p>We think GFF3 can be thought of as a view into Chado using the <a href="Chado_Sequence_Module" title="Chado Sequence Module">Sequence
+module</a> and the <a href="Chado_CV_Module" title="Chado CV Module">CV
+module</a>, or we can think of GFF3 as a
+denormalized view of Chado.</p>
+<h2 id="span-idmigration_from_other_databases-classmw-headlinemigration-from-other-databasesspan"><span id="Migration_from_other_databases" class="mw-headline">Migration from other databases</span></h2>
+<ul>
+<li><a href="Zheng's_notes_on_wormbase_migration" title="Zheng's notes on wormbase migration">Zheng&rsquo;s notes on wormbase
+migration</a></li>
+<li><a href="Jim's_notes_on_E._coli_migration" title="Jim's notes on E. coli migration">Jim&rsquo;s notes on E. coli
+migration</a></li>
+</ul>
+<h2 id="span-idsample_data-classmw-headlinesample-dataspan"><span id="Sample_Data" class="mw-headline">Sample Data</span></h2>
+<p>To understand <a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best
+Practices</a>, where the
+documentation is sometimes incomplete, we&rsquo;ve tried to get some samples
+of Chado data in use. Things we&rsquo;ve looked at so far, and comments on
+them:</p>
+<ul>
+<li>Sample yeast data from GFF3 bulk loader. The problem with this is that
+it doesn&rsquo;t reflect a real use case for Chado, since SGD does not use
+the Chado Schema</li>
+<li>FlyBase SQL dump. Zheng got this and loaded it. One problem.
+<ul>
+<li>It&rsquo;s huge</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idunderstanding_how_things_are_represented_in_chado-classmw-headlineunderstanding-how-things-are-represented-in-chadospan"><span id="Understanding_how_things_are_represented_in_Chado" class="mw-headline">Understanding how things are represented in Chado</span></h2>
+<h3 id="span-idcentral_dogma-classmw-headlinecentral-dogmaspan"><span id="Central_Dogma" class="mw-headline">Central Dogma</span></h3>
+<p><a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best Practices</a>
+describes some of the representations. Unfortunately it&rsquo;s somewhat
+incomplete at present.</p>
+<h4 id="span-idgene-classmw-headlinegenespan"><span id="Gene" class="mw-headline">Gene</span></h4>
+<p>Chado uses a eukaryotic-centric gene definition which is based on
+monocistronic mRNAs. In this view, the gene includes information in the
+genomic DNA outside of the part that codes for the mRNA. To represent a
+gene, there needs to be:</p>
+<ul>
+<li>A [<a
+href="http://gmod.cshl.edu/wiki/index.php/Chado_Tables#Table:_feature#Table:_feature"
+class="external text" rel="nofollow">feature</a>]
+<ul>
+<li>Note that the field seqlen could be problematic - added a note.</li>
+</ul>
+</li>
+<li>If the gene is mapped to the sequence, there should be a featureloc</li>
+</ul>
+<p>Completing the representation of the gene seems to require additional
+features of types &lsquo;mRNA&rsquo; and &rsquo;exon&rsquo; (and &lsquo;polypeptide&rsquo; if it&rsquo;s protein
+coding). What happens if software tries to write a feature record as a
+gene without creating these? Presumably the gene feature has to be
+entered first in order to have an object_id for feature_relationship.</p>
+<h4 id="span-idmrna-classmw-headlinemrnaspan"><span id="mRNA" class="mw-headline">mRNA</span></h4>
+<p>mRNA features are entered with part_of relationships to genes. This is
+straightforward in cases where the mRNA is derived from a high-quality
+full length cDNA (but what&rsquo;s the feature_relationship type?). Does an
+mRNA have to have a featureloc? What if the CDS is known but the precise
+ends of the UTRs are not?</p>
+<h5 id="span-idpolycistronic_transcription_units-classmw-headlinepolycistronic-transcription-unitsspan"><span id="Polycistronic_transcription_units" class="mw-headline">Polycistronic transcription units</span></h5>
+<p>As of this writing, the description of handling dicistronic genes is not
+very clear. Based on the
+<a href="http://www.sequenceontology.org/gff3.shtml"
+class="external text" rel="nofollow">GFF3 spec</a>:</p>
+<ul>
+<li>Parenting a CDS/polypeptide directly on a gene is deprecated because
+the gene (sensu eukaryota) includes nontranscribed regions</li>
+<li>A solution is to give the mRNA feature multiple parents. Thus <em>lacZ</em>,
+<em>lacY</em> and <em>lacA</em> would all be parents of <em>lacZYA</em>, which in turn
+would be parent via a derives_from relationship to the LacZ, LacY and
+LacA polypeptides.</li>
+</ul>
+<h4 id="span-idother_rnas-classmw-headlineother-rnasspan"><span id="other_RNAs" class="mw-headline">other RNAs</span></h4>
+<p>tRNAs, rRNAs, snRNAs etc have similar relationships to genes. Note that
+even in eukaryotes, rRNAs and tRNAs are often polycistronic transcripts!</p>
+<h4 id="span-idpolypeptides-classmw-headlinepolypeptidesspan"><span id="Polypeptides" class="mw-headline">Polypeptides</span></h4>
+<p>Polypeptides derive_from mRNAs</p>
+<h4 id="span-idproteins-classmw-headlineproteinsspan"><span id="Proteins" class="mw-headline">Proteins</span></h4>
+<p>Note that proteins ≠ polypeptides. Hemoglobin is a heterotetramer of two
+α and two β subunits. Is there a feature type that represents this?</p>
+<h2 id="span-idsee_also-classmw-headlinesee-alsospan"><span id="See_also" class="mw-headline">See also</span></h2>
+<ul>
+<li><a href="Chado_-_Getting_Started" title="Chado - Getting Started">Chado -
+Getting_Started</a> -
+and documentation links from there.</li>
+<li><a href="Category%253AChado" title="Category%253AChado">Category%253AChado</a> - the Category page
+for all pages about Chado in this wiki</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AUser_Experiences" title="Category%253AUser Experiences">User
+Experiences</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><span id="ca-talk"><a href="Talk%253AChado_New_Users" accesskey="t"
+title="Discussion about the content page [t]">Discussion</a></span></li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_New_Users" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 19:58 on 22 April
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">50,450 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

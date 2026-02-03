@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSU Presentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautopsu-presentationspan"><span dir="auto">PSU Presentation</span></h1>
+<p>This Wiki page is an edited version of
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/PSU.pdf" class="internal"
+title="PSU.pdf">Chinmay&rsquo;s presentation</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Sanger_Pathogen_Sequencing_Unit_.28PSU.29"><span class="tocnumber">1</span> <span class="toctext">Sanger
+Pathogen Sequencing Unit
+(PSU)</span></a></li>
+<li><a href="#Technical_-_Connections"><span class="tocnumber">2</span> <span class="toctext">Technical -
+Connections</span></a></li>
+<li><a href="#Technical_-_Code_Generation"><span class="tocnumber">3</span> <span class="toctext">Technical -
+Code Generation</span></a></li>
+<li><a href="#Technical_-_Transactions"><span class="tocnumber">4</span> <span class="toctext">Technical -
+Transactions</span></a></li>
+<li><a href="#Problems_1.2C_2.2C_.26_3"><span class="tocnumber">5</span> <span class="toctext">Problems 1, 2,
+&amp; 3</span></a></li>
+<li><a href="#Demo_.E2.80.93_Sample_Problem"><span class="tocnumber">6</span> <span class="toctext">Demo – Sample
+Problem</span></a></li>
+</ul>
+<h5 id="span-idsanger_pathogen_sequencing_unit_28psu29-classmw-headlinesanger-pathogen-sequencing-unit-psuspan"><span id="Sanger_Pathogen_Sequencing_Unit_.28PSU.29" class="mw-headline">Sanger Pathogen Sequencing Unit (PSU)</span></h5>
+<ul>
+<li>GeneDB is the organism data and annotation database for the Pathogen
+Sequencing Unit (PSU) at the Sanger Institute, UK</li>
+<li>Contains 37 organisms, which is expected to grow to 62</li>
+<li><a href="Artemis" title="Artemis">Artemis</a> is an annotation/DNA graphical interface</li>
+<li>PSU is currently migrating to chado schema</li>
+<li>We&rsquo;ve implemented a common interface with the two leading open source
+frameworks: Hibernate and iBatis</li>
+</ul>
+<h5 id="span-idtechnical_-_connections-classmw-headlinetechnical---connectionsspan"><span id="Technical_-_Connections" class="mw-headline">Technical - Connections</span></h5>
+<p>Connections for the <strong>Hibernate</strong> engine are configured in the Spring
+configuration file</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;bean id=&#34;dataSource&#34; class=&#34;org.apache.commons.dbcp.BasicDataSource&#34;&gt;
+               &lt;property name=&#34;driverClassName&#34; value=&#34;org.postgresql.Driver&#34; /&gt;
+               &lt;property name=&#34;url&#34; value=&#34;jdbc:postgresql://holly.sanger.ac.uk:5432/chado&#34; /&gt;
+               &lt;property name=&#34;username&#34; value=&#34;DELIBERATELY_BOGUS_NAME&#34;/&gt;
+               &lt;property name=&#34;password&#34; value=&#34;WIBBLE&#34; /&gt;
+&lt;/bean&gt;
+</code></pre><ul>
+<li>Uses a connection pool</li>
+<li>Connection to the database is specified graphically, so the <strong>iBatis</strong>
+configuration file has variables for the location:</li>
+</ul>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;property name=&#34;JDBC.Driver&#34; value=&#34;org.postgresql.Driver&#34;/&gt;
+ 
+&lt;property name=&#34;JDBC.ConnectionURL” value=&#34;jdbc:postgresql://${chado}&#34;/&gt;
+ 
+&lt;property name=&#34;JDBC.Username&#34; value=&#34;${username}&#34;/&gt;
+ 
+&lt;property name=&#34;JDBC.Password&#34; value=&#34;${password}&#34;/&gt;
+</code></pre><ul>
+<li>provide database location, username &amp; password</li>
+<li>select from scrollable list of feature with residues (organisms in
+separate Postgres schemas) what to open in Artemis</li>
+</ul>
+<h5 id="span-idtechnical_-_code_generation-classmw-headlinetechnical---code-generationspan"><span id="Technical_-_Code_Generation" class="mw-headline">Technical - Code Generation</span></h5>
+<ul>
+<li>The shared interface and hibernate implementation were originally
+generated</li>
+<li>There’s no explicit code generation (although the Spring and Hibernate
+runtimes may use them behinds the scenes)</li>
+</ul>
+<h5 id="span-idtechnical_-_transactions-classmw-headlinetechnical---transactionsspan"><span id="Technical_-_Transactions" class="mw-headline">Technical - Transactions</span></h5>
+<ul>
+<li>Transactions are fully supported</li>
+</ul>
+<h5 id="span-idproblems_12c_22c_26_3-classmw-headlineproblems-1-2--3span"><span id="Problems_1.2C_2.2C_.26_3" class="mw-headline">Problems 1, 2, &amp; 3</span></h5>
+<p>Creating a gene</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">genes[0] = new Feature(ORG, GENE, &#34;xfile&#34;, false, false, now, now);
+ 
+genes[0].setSeqLen(1029);
+sequenceDao.persist(genes[0]);
+ 
+FeatureLoc loc = new FeatureLoc(SOURCE_FEATURE, genes[0], 13691, false, 14720, false, (short)1, 0, 0 ,0);
+ 
+sequenceDao.persist(loc);
+ 
+addFeatureProp(genes[0], &#34;description&#34;, &#34;A test gene for GMOD meeting&#34;);
+ 
+addSynonymsToFeature(genes[0], &#34;mulder&#34;, &#34;scully&#34;);
+ 
+createExon(&#34;exon1&#34;, genes[0], 13691, 13767, now, 0);
+ 
+createExon(&#34;exon2&#34;, genes[0], 14687, 14720, now, 1);
+</code></pre><p>Retrieve a gene</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">Feature f = sequenceDao.getFeatureByUniqueName(&#34;xfile&#34;);
+displayGene(f);
+</code></pre><p>Update a gene</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">genes[0].setUniqueName(&#34;x-file&#34;);
+ 
+sequenceDao.merge(genes[0]);
+</code></pre><pre tabindex="0"><code class="language-de1" data-lang="de1">private Feature createExon(String name, Feature gene, int min, int max, Timestamp now, int rank) {
+ 
+        Feature exon = new Feature(ORG, EXON, name, false, false, now, now);
+        exon.setSeqLen(max-min);
+        sequenceDao.persist(exon);
+ 
+        FeatureLoc loc = new FeatureLoc(SOURCE_FEATURE, exon, min, false, max, false,
+                                      (short)1, 0, 0 ,0);
+        sequenceDao.persist(loc);
+ 
+        return exon;
+ 
+}
+</code></pre><h5 id="span-iddemo_e28093_sample_problem-classmw-headlinedemo--sample-problemspan"><span id="Demo_.E2.80.93_Sample_Problem" class="mw-headline">Demo – Sample Problem</span></h5>
+<p>Simple web page to demonstrate displaying a basic feature</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;st:section name=&#34;Naming&#34; id=&#34;gene_naming&#34; collapsed=&#34;false&#34; collapsible=&#34;false&#34;
+hideIfEmpty=&#34;true&#34;&gt;
+   &lt;dl&gt;
+            &lt;dt&gt;&lt;b&gt;symbol:&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd&gt;${feature.uniqueName}&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;db:synonym name=&#34;synonym&#34; var=&#34;name&#34; collection=&#34;${feature.featureSynonyms}&#34;&gt;
+    &lt;br /&gt;&lt;b&gt;Synonym:&lt;/b&gt; &lt;db:list-string collection=&#34;${name}&#34; /&gt;
+  &lt;/db:synonym&gt;
+  &lt;dt&gt;&lt;b&gt;Type:&lt;/b&gt;&lt;/dt&gt;
+  &lt;dd&gt;${feature.cvTerm.name}&lt;/dd&gt;
+ 
+&lt;st:section name=&#34;Exons&#34; collapsed=&#34;false&#34; collapsible=&#34;true&#34; hideIfEmpty=&#34;true&#34;&gt;
+            &lt;display:table name=&#34;exons&#34; uid=&#34;tmp&#34; pagesize=&#34;30&#34; class=&#34;simple&#34; cellspacing=&#34;0&#34;
+cellpadding=&#34;4&#34;&gt;
+                 &lt;display:column property=&#34;uniqueName&#34; title=&#34;Exon&#34;/&gt;
+                 &lt;display:column property=&#34;featureLocsForSrcFeatureId.fmin&#34; title=&#34;Start&#34;/&gt;
+                 &lt;display:column property=&#34;featureLocsForSrcFeatureId.fmax&#34; title=&#34;end&#34;/&gt;
+            &lt;/display:table&gt;
+&lt;/st:section&gt;
+ 
+&lt;st:section name=&#34;cds&#34; collapsible=&#34;true&#34;&gt;
+            &lt;b&gt;${feature.residues}&lt;/b&gt;
+&lt;/st:section&gt;
+</code></pre><p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AMiddleware_Presentations" title="Category%253AMiddleware Presentations">Middleware
+Presentations</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/PSU_Presentation" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:16 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">19,221 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

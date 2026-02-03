@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions on Testing - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoquestions-on-testingspan"><span dir="auto">Questions on Testing</span></h1>
+<p><em>By Chris
+Mungall.</em></p>
+<p>I wholeheartedly agree with the need for tests and test-driven
+development</p>
+<p>A significant portion of GMOD code will be either user-interface or
+middleware. What strategies should we use for testing these?</p>
+<p>For UI code I am talking scenarios such as complex editing operations in
+Apollo. I have no idea what the best approach is.</p>
+<p>UI is, indeed, difficult. The basic things you&rsquo;d want are the ability to
+drive it through injecting events, and the ability to query what state
+the UI is in, and what state the stuff the UI alters is in. All this
+means you ideally want to build your system from the ground-up so that
+it is broken out into components like that. See, for example, anything
+talking about &ldquo;Model/View/Controller&rdquo;. (If you find yourself in a world
+of code that hasn&rsquo;t been designed to make the testing easier, then there
+are various crazy and application-specific things you can do.)</p>
+<p>I have written a lot of middleware code, and always use extensive
+tests - see go-db-perl for an example. However, I find my testing
+strategy is very ad-hoc. For example:</p>
+<ul>
+<li>load test file into test database</li>
+<li>use API to fetch objects from database</li>
+<li>check objects contain expected values</li>
+</ul>
+<p>This strategy is flawed, because it is difficult to be sure there are no
+&ldquo;holes&rdquo; in the test suite in which errors can live. Filling these holes
+is a sisyphean task - especially when the model is in flux.</p>
+<p>Another approach I use is that roundtrip approach - take a sample data
+file, slurp it in, pass it through every adapter available and save it
+back in the original format, then diff it. The problem here is that the
+diffing strategy may be sensitive to irrelevant differences -
+whitespace, ordering of XML elements, presence/absence of default
+values, etc. I suspect the solution here is some kind of generic diffing
+algorithm based on a formal specification (relational, XML-Schema,
+UML+OCL, ontologies) of the data. I&rsquo;m not sure if such a thing exists.
+If it does, it would be useful for all GMOD apps that have a middleware
+component, regardless of programming language.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AGMOD_Developers" title="Category%253AGMOD Developers">GMOD Developers</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Questions_on_Testing" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 17:16 on 5 April
+2007.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">9,037 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

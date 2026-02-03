@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableEdit Loader - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautotableedit-loaderspan"><span dir="auto">TableEdit Loader</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Objective"><span class="tocnumber">1</span>
+<span class="toctext">Objective</span></a></li>
+<li><a href="#Location"><span class="tocnumber">2</span>
+<span class="toctext">Location</span></a></li>
+<li><a href="#Execution_Syntax.2F_Usage"><span class="tocnumber">3</span> <span class="toctext">Execution
+Syntax/ Usage</span></a>
+<ul>
+<li><a href="#Options"><span class="tocnumber">3.1</span>
+<span class="toctext">Options</span></a></li>
+<li><a href="#Public_Methods.2FProperties"><span class="tocnumber">3.2</span> <span class="toctext">Public
+Methods/Properties</span></a></li>
+<li><a href="#Example"><span class="tocnumber">3.3</span>
+<span class="toctext">Example</span></a></li>
+<li><a href="#running_the_script_.28loading_information_into_the_wiki.29"><span class="tocnumber">3.4</span> <span class="toctext">running
+the script (loading information into the
+wiki)</span></a></li>
+</ul>
+</li>
+<li><a href="#I.2FO"><span class="tocnumber">4</span>
+<span class="toctext">I/O</span></a>
+<ul>
+<li><a href="#Input"><span class="tocnumber">4.1</span>
+<span class="toctext">Input</span></a></li>
+<li><a href="#Output"><span class="tocnumber">4.2</span>
+<span class="toctext">Output</span></a></li>
+</ul>
+</li>
+<li><a href="#Notes"><span class="tocnumber">5</span>
+<span class="toctext">Notes</span></a>
+<ul>
+<li><a href="#logic_cases"><span class="tocnumber">5.1</span> <span class="toctext">logic
+cases</span></a></li>
+<li><a href="#How_it_works"><span class="tocnumber">5.2</span> <span class="toctext">How it
+works</span></a></li>
+</ul>
+</li>
+<li><a href="#Code_Examples"><span class="tocnumber">6</span> <span class="toctext">Code
+Examples</span></a>
+<ul>
+<li><a href="#do_misc_features"><span class="tocnumber">6.1</span>
+<span class="toctext">do_misc_features</span></a></li>
+<li><a href="#appendRow"><span class="tocnumber">6.2</span>
+<span class="toctext">appendRow</span></a></li>
+<li><a href="#mergeRows"><span class="tocnumber">6.3</span>
+<span class="toctext">mergeRows</span></a></li>
+<li><a href="#clearOldRows"><span class="tocnumber">6.4</span>
+<span class="toctext">clearOldRows</span></a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Author</strong> : <em>Daniel Renfro</em></p>
+<h2 id="span-idobjective-classmw-headlineobjectivespan"><span id="Objective" class="mw-headline">Objective</span></h2>
+<p>Introduced in version 0.8, the loader class houses methods to <strong>load
+data into tables in the wiki</strong>.</p>
+<h2 id="span-idlocation-classmw-headlinelocationspan"><span id="Location" class="mw-headline">Location</span></h2>
+<p>Reading the page on Using
+Subversion with the wikis is a good reference, you&rsquo;ll need some
+background in SVN.</p>
+<p>The loader currently resides in the SVN repository at
+<a href="svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/"
+class="external free"
+rel="nofollow"><code>svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/</code></a></p>
+<h2 id="span-idexecution_syntax2f_usage-classmw-headlineexecution-syntax-usagespan"><span id="Execution_Syntax.2F_Usage" class="mw-headline">Execution Syntax/ Usage</span></h2>
+<p>The loader is a PHP class which must be instantiated to use.</p>
+<p>See the Example script below.</p>
+<p>The loader has a few options that can be set in the instantiation code.</p>
+<h4 id="span-idoptions-classmw-headlineoptionsspan"><span id="Options" class="mw-headline">Options</span></h4>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>input value</th>
+<th>explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>setVerbose()</em></td>
+<td>none</td>
+<td>Will force the loader to tell you more about what is going on behind the scenes. It&rsquo;s not very pretty output because it is activating print statements throughout the code, but it <em>will</em> tell you more than normal.</td>
+</tr>
+<tr>
+<td><em>setUser()</em></td>
+<td>A valid Username from the wiki</td>
+<td>This will use the given user&rsquo;s id as the owner of the loaded rows. It defaults to the <code>WikiEntryBot</code> user (which makes the rows public).</td>
+</tr>
+<tr>
+<td><em>debug()</em></td>
+<td>none</td>
+<td>Tells the loader to go through all the steps of loading, but not actually do anything permanent. This has the effect of making things run much faster because the wiki isn&rsquo;t accessing the database to do writes.</td>
+</tr>
+<tr>
+<td><em>printInfo()</em></td>
+<td>true/false</td>
+<td>Will print a few lines at the beginning of execution to tell you about what wiki and what user you&rsquo;re working with.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idpublic_methods2fproperties-classmw-headlinepublic-methodspropertiesspan"><span id="Public_Methods.2FProperties" class="mw-headline">Public Methods/Properties</span></h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Info</th>
+<th>Code / Usage Ex.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>do_misc_features()</code></td>
+<td>This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function <code>http_build_query()</code>. This string then gets cut up into an array by <code>parse_str()</code>.</td>
+<td>code</td>
+</tr>
+<tr>
+<td><code>appendRow()</code></td>
+<td>This method takes care of when the incoming row gets appended to the box.</td>
+<td>code</td>
+</tr>
+<tr>
+<td><code>mergeRows()</code></td>
+<td>This method gets called when a new row is trying to be merged into an existing box. It can be &lt;a href=&ldquo;<a href="http://en.wikipedia.org/wiki/Overriding%22">http://en.wikipedia.org/wiki/Overriding&quot;</a> class=&ldquo;external text&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;overridden</a> to behave differently.</td>
+<td>code</td>
+<td></td>
+</tr>
+<tr>
+<td><code>clearOldRows()</code></td>
+<td>This method gets called with the flag &ldquo;clear&rdquo; gets put in the update_type field of IFALT (col 6.) It will delete all the rows in a box. Useful for emptying tables for reloads.</td>
+<td>code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="span-idexample-classmw-headlineexamplespan"><span id="Example" class="mw-headline">Example</span></h3>
+<p>TableEdit ships with a sample script, but I&rsquo;ll add it here, too. This is
+a basic script which will:</p>
+<ol>
+<li>set up the wiki to be used ( by setting the variable $wikidir)</li>
+<li>include the loader class ( by giving the right path to the loader
+class in the require_once())</li>
+<li>make an object from the loader class</li>
+<li>set up some options for the object (verbosity, etc)</li>
+<li>load info into the tables in the wiki ( by calling the method
+<code>loadFromFile()</code>)</li>
+</ol>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;?php
+/* 
+    Example loader script for TableEdit.
+*/
+ 
+// Setup to use the wiki from the command line
+$options = getopt(&#39;w:&#39;);
+if(isset($options[&#39;w&#39;])){
+    if( is_file($options[&#39;w&#39;] . &#34;/AdminSettings.php&#34;) ){
+        require_once($options[&#39;w&#39;] . &#34;/maintenance/commandLine.inc&#34;);
+    } else {
+        die(&#34;Cannot find AdminSettings.php in {$options[&#39;w&#39;]}. Please check the paths.\n&#34;);
+    }
+} else {
+    die(&#34;Please use the -w flag to set a path to the wiki.\n&#34;);
+}
+ 
+// Instantiate the object
+    $loader = new TableEdit_Loader;
+ 
+// set some options
+    $loader-&gt;setVerbose();
+    $loader-&gt;setUser()
+    $loader-&gt;printInfo();
+ 
+ 
+// load pretty much anything into tables from either an *.ifalt file.
+    $loader-&gt;loadFromFile(array_pop($argv));
+ 
+?&gt;
+</code></pre><h3 id="span-idrunning_the_script_28loading_information_into_the_wiki29-classmw-headlinerunning-the-script-loading-information-into-the-wikispan"><span id="running_the_script_.28loading_information_into_the_wiki.29" class="mw-headline">running the script (loading information into the wiki)</span></h3>
+<p>Once you have a script like above, with the right variables and paths,
+you can then run that script to do the loading. In a command-line
+window, browse to the path where your script lives, and run it using the
+command</p>
+<pre><code>php5 loader.sample.php /path/to/input_file
+</code></pre>
+<p>If you want to save the output into a file for later viewing, you can
+<em>pipe</em> the output like so:</p>
+<pre><code>php5 loader.sample.php &gt;&amp; output.txt
+</code></pre>
+<p>You can also separate the output based on STDOUT and STDERR with this
+type of command:</p>
+<pre><code>(php5 loader.sample.php &gt; load.out) &gt;&amp; load.err
+</code></pre>
+<h2 id="span-idi2fo-classmw-headlineiospan"><span id="I.2FO" class="mw-headline">I/O</span></h2>
+<p>It takes a path to a <a href="#input_types">formatted input file</a>, and has a few
+options.</p>
+<h3 id="span-idinput-classmw-headlineinputspan"><span id="Input" class="mw-headline">Input</span></h3>
+<p>The loader currently will accept one type of input:</p>
+<ol>
+<li>Ifalt format</li>
+</ol>
+<h3 id="span-idoutput-classmw-headlineoutputspan"><span id="Output" class="mw-headline">Output</span></h3>
+<p>On the commandline the loader will tell you what page it&rsquo;s working on.
+It will print any error messages to STDERR.</p>
+<h2 id="span-idnotes-classmw-headlinenotesspan"><span id="Notes" class="mw-headline">Notes</span></h2>
+<h4 id="span-idlogic_cases-classmw-headlinelogic-casesspan"><span id="logic_cases" class="mw-headline">logic cases</span></h4>
+<p>There is a key method in the loader class which compares two rows. There
+are four return values:</p>
+<ol>
+<li><em>exact</em> : the two rows match data regardless of whitespace</li>
+<li><em>disjoint</em> : the two rows are totally different</li>
+<li><em>subset</em> : the old row is a subset of the new row</li>
+<li><em>different</em> : they could have some common elements, but are regarded
+as different</li>
+</ol>
+<p>Below is a table that explains these cases in more depth:</p>
+<table class="sortable" data-border="2" data-cellpadding="4"
+data-cellspacing="0"
+style="margin: 1em 1em 1em 0; background: #ffffff; border: 2px #aaa solid; border-collapse: collapse;">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>The <em>new row</em> and the <em>old row</em> match
+<strong>exactly</strong>.</p></td>
+<td><pre><code>old = a | b | c | d | e
+new = a | b | c | d | e</code></pre></td>
+<td><ol>
+<li>do nothing, as the data is the same</li>
+<li>append <em>new row</em>, creating a duplicate</li>
+</ol></td>
+<td><p>A = B</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="even">
+<td><p>The <em>new row</em> is a <a
+href="http://en.wikipedia.org/wiki/Subset" class="external text"
+rel="nofollow">superset</a> of the <em>old row</em>.</p></td>
+<td><pre><code>old = a | b |   |   | e
+new = a | b | c | d | e</code></pre></td>
+<td><ol>
+<li>replace entire <em>old row</em> with <em>new row</em></li>
+<li>merge the two rows, keeping the <em>old row</em> data and adding-in
+the <em>new row</em> data to the blank fields.</li>
+<li>append the <em>new row</em></li>
+<li>throw a [[Category%253ANeedsManualCuration]]</li>
+</ol></td>
+<td><p>A is a subset of B</p></td>
+<td><p>$new_row_obj</p></td>
+</tr>
+<tr class="odd">
+<td><p>The <em>new row</em> and the <em>old row</em> dont' match at any
+field.</p></td>
+<td><pre><code>new = a | b | c | d | e
+old = z | y | w | v | u</code></pre></td>
+<td><ol>
+<li>append row</li>
+</ol></td>
+<td><p>Pr(A ∩ B) = 0<br />
+They are mutually exclusive.</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="even">
+<td><p>The <em>new row</em> only matches part of the <em>old
+row</em>.</p></td>
+<td><pre><code>new = a | b |   | k | e
+old = a | g | h |   | e</code></pre></td>
+<td><ol>
+<li>do nothing
+<ul>
+<li>this leads to a problem -- it makes the loading of the data
+<strong>dependent on line order in the Ifalt input file</strong></li>
+</ul></li>
+<li>append
+<ul>
+<li>this is a better solution, and can be made to through a
+[[Category%253ANeeds Manual Curation]] tag</li>
+</ul></li>
+</ol></td>
+<td><p>A ∩ B = ø<br />
+They are disjoint.</p></td>
+<td><p>false</p></td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idhow_it_works-classmw-headlinehow-it-worksspan"><span id="How_it_works" class="mw-headline">How it works</span></h4>
+<ol>
+<li>constructor sets up variables to use later</li>
+<li>options are set</li>
+<li>grabs a line from ifalt, parses it into data-structure</li>
+<li>creates object for page
+<ul>
+<li>if the page doesn&rsquo;t exist, check if the gene name redirects to
+another article, and use this one (follow the redirect)</li>
+</ul>
+</li>
+<li>get content from the page</li>
+<li>create object for page template, get content</li>
+<li>get content from table template</li>
+<li>get the box_uid from the database using the page_uid
+<ul>
+<li>if that fails, try getting the box_uid from the database using the
+page_name</li>
+<li>if that fails, then try and grab the box out of the wikitext of
+the page</li>
+<li>if that fails, forget it&ndash;throw an error</li>
+</ul>
+</li>
+<li>make a box object from the table info, make sure we&rsquo;ve got the
+wikitext equivalent</li>
+<li>check what type of action we are doing (append, merge, clear)
+<ul>
+<li>if append:
+<ul>
+<li>append rows and save metadata</li>
+</ul>
+</li>
+<li>if merge:
+<ul>
+<li>compare new row to every row in the existing box</li>
+<li>we can do a plethora of things here, see above</li>
+</ul>
+</li>
+<li>if clear, clear old rows from table</li>
+</ul>
+</li>
+<li>save the box object to the database</li>
+<li>replace the any old wikitext with the new wikitext and save the page</li>
+<li>unset the box object to keep from messing up next iteration</li>
+</ol>
+<h2 id="span-idcode_examples-classmw-headlinecode-examplesspan"><span id="Code_Examples" class="mw-headline">Code Examples</span></h2>
+<h4 id="span-iddo_misc_features-classmw-headlinedo_misc_featuresspan"><span id="do_misc_features" class="mw-headline">do_misc_features</span></h4>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">public function do_misc_features( $array ){
+    foreach ($array as $name =&gt; $feature) {
+ 
+        // Here is where you can add code to define what to do for things in the 7th column.  
+        if ($name == &#39;row_style&#39;)    $this-&gt;new_row-&gt;row_style = trim($feature);
+ 
+        print &#34;added row style&#34;;
+        return true;
+    }
+}
+</code></pre><h4 id="span-idappendrow-classmw-headlineappendrowspan"><span id="appendRow" class="mw-headline">appendRow</span></h4>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">public function appendRow($new_row_obj){
+    $this-&gt;box_obj-&gt;rows[] = $new_row_obj;
+    if ($this-&gt;verbose) print &#34;\tappended row, \n&#34;;     
+    return;
+}
+</code></pre><h4 id="span-idmergerows-classmw-headlinemergerowsspan"><span id="mergeRows" class="mw-headline">mergeRows</span></h4>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">public function mergeRows($new_row_obj){ 
+    // compare the new row to each of the existing rows
+    $results = array();
+    foreach ($this-&gt;box_obj-&gt;rows as $old_row) {
+        $results[] = $this-&gt;compareRows($old_row, $new_row_obj);
+    }
+    if (in_array(&#39;exact&#39;, $results)) {
+        // skip, this row is already in the box
+        return;
+    } elseif (in_array(&#39;subset&#39;, $results)) {
+        for($i=0, $c=count($results); $i&lt;$c; $i++){
+            if($results[$i] == &#39;subset&#39;){
+                foreach($this-&gt;box_obj-&gt;rows[$i]-&gt;row_metadata as $old_row_metadata_obj){
+                    $new_row_obj-&gt;metadata[] = $old_row_metadata_obj;
+                }
+                $this-&gt;box_obj-&gt;delete_row($i);
+            }
+        }
+        $this-&gt;box_obj-&gt;rows[] = $new_row_obj;
+        return;
+    } else {
+        $this-&gt;appendRow($new_row_obj);
+    }
+}
+</code></pre><h4 id="span-idclearoldrows-classmw-headlineclearoldrowsspan"><span id="clearOldRows" class="mw-headline">clearOldRows</span></h4>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">function clearOldRows($box, $time){
+    // compare timestamps and delete row if older
+    if(!$this-&gt;debug){
+        foreach($box-&gt;rows as $row){
+            if($time &gt; $row-&gt;timestamp){
+                $row-&gt;delete_row();
+            }
+        }
+    }
+    return;
+}
+</code></pre><p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253ATableEdit" title="Category%253ATableEdit">TableEdit</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/TableEdit_Loader" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:12 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">7,294 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

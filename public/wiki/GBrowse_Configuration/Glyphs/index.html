@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse Configuration/Glyphs - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-configurationglyphsspan"><span dir="auto">GBrowse Configuration/Glyphs</span></h1>
+<p>This article describes <strong>glyphs</strong> and <strong>glyph configuration options</strong> in
+GBrowse.</p>
+<ul>
+<li><em>For the main GBrowse configuration article, see:
+<a href="../GBrowse_Configuration" class="mw-redirect"
+title="GBrowse Configuration">GBrowse Configuration</a>.</em></li>
+<li><em>See also: <a href="../Glyphs_and_Glyph_Options" title="Glyphs and Glyph Options">Glyphs and Glyph
+Options</a>, a
+competing document.</em></li>
+<li><em>See also: <a href="http://webgbrowse.cgb.indiana.edu/glyphdoc.html"
+class="external text" rel="nofollow">The Glyph Gallery</a> at
+webgbrowse.</em></li>
+</ul>
+<h2 id="span-idglyphs_and_glyph_options-classmw-headlineglyphs-and-glyph-optionsspan"><span id="Glyphs_and_Glyph_Options" class="mw-headline">Glyphs and Glyph Options</span></h2>
+<p>A large variety of glyphs are available, and more are being added as the
+<a href="http://search.cpan.org/~lds/Bio-Graphics/"
+class="external text" rel="nofollow">Bio::Graphics module</a> grows.</p>
+<p>A list of the common glyphs and their options is provided by the GBrowse
+itself. Click on the &ldquo;[Help]&rdquo; link in the section labeled &ldquo;Upload your
+own annotations&rdquo;. This page also lists the valid foreground and
+background colors. Most of the glyphs are found in the BioPerl
+distribution, but a few are distributed directly with GBrowse.</p>
+<p>Predefined glyphs are:</p>
+<table>
+<thead>
+<tr>
+<th>Glyph</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph&rdquo;&gt;Glyph</a></td>
+<td>Common options for all glyphs. (<em>Glyph</em> is the parent class of all the glyphs).</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::allele_tower%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::allele_tower&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::allele tower&rdquo;&gt;allele_tower</a></td>
+<td>genotype found at a SNP position</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::anchored_arrow%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::anchored_arrow&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::anchored arrow&rdquo;&gt;anchored_arrow</a></td>
+<td>a span with vertical bases |&mdash;&ndash;|. If one or the other end of the feature is off-screen, the base will be replaced by an arrow.</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::arrow%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::arrow&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::arrow&rdquo;&gt;arrow</a></td>
+<td>an arrow</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::box%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::box&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::box&rdquo;&gt;box</a></td>
+<td>another rectangle; doesn&rsquo;t show subparts of features</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::cds%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::cds&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::cds&rdquo;&gt;cds</a></td>
+<td>shows the reading frame of spliced transcripts; used in conjunction with the &ldquo;coding&rdquo; aggregator (<a href="../GFF2" title="GFF2">GFF2</a>).</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::crossbox%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::crossbox&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::crossbox&rdquo;&gt;crossbox</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::diamond%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::diamond&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::diamond&rdquo;&gt;diamond</a></td>
+<td>a point-like feature represented as a triangle</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::dna%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::dna&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::dna&rdquo;&gt;dna</a></td>
+<td>DNA and GC content</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::dot%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::dot&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::dot&rdquo;&gt;dot</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::ellipse%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::ellipse&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::ellipse&rdquo;&gt;ellipse</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::extending_arrow%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::extending_arrow&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::extending arrow&rdquo;&gt;extending_arrow</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::generic%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::generic&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::generic&rdquo;&gt;generic</a></td>
+<td>a rectangle</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::graded_segments%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::graded_segments&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::graded segments&rdquo;&gt;graded_segments</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::heterogeneous_segments%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::heterogeneous_segments&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::heterogeneous segments&rdquo;&gt;heterogeneous_segments</a></td>
+<td>a multi-segmented feature in which each segment can have a distinctive color. For Jim Kent&rsquo;s WABA features, this works with the waba_alignment aggregator.</td>
+</tr>
+<tr>
+<td>idiogram</td>
+<td>This takes specially-formatted feature data and turns it into an idiogram of a Giemsa-stained metaphase chromosome. (This is included in the GBrowse distribution, not in BioPerl.)</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::image%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::image&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::image&rdquo;&gt;image</a></td>
+<td>this embeds photographic images and/or diagrams on features processed_transcript multi-purpose representation of a spliced mRNA, including positions of UTRs</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::line%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::line&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::line&rdquo;&gt;line</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::primers%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::primers&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::primers&rdquo;&gt;primers</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::processed_transcript%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::processed_transcript&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::processed transcript&rdquo;&gt;processed_transcript</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::rndrect%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::rndrect&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::rndrect&rdquo;&gt;rndrect</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::ruler_arrow%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::ruler_arrow&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::ruler arrow&rdquo;&gt;ruler_arrow</a></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::segments%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::segments&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::segments&rdquo;&gt;segments</a></td>
+<td>a multi-segmented feature such as an alignment</td>
+</tr>
+<tr>
+<td>&lt;a href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::span%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::span&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::span&rdquo;&gt;span</a></td>
+<td>like anchored_arrow, except that the ends are truncated at the edge of the panel, not turned into an arrow</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::toomany%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::toomany&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::toomany&rdquo;&gt;toomany</a></td>
+<td></td>
+</tr>
+<tr>
+<td>trace</td>
+<td>reads an SCF trace file and draws a graphic representation</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::transcript%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::transcript&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::transcript&rdquo;&gt;transcript</a></td>
+<td>a gene model</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::transcript2%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::transcript2&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::transcript2&rdquo;&gt;transcript2</a></td>
+<td>a slightly different representation of a gene model</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::translation%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::translation&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::translation&rdquo;&gt;translation</a></td>
+<td>1-, 3- and 6-frame translations</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::triangle%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::triangle&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>title=&ldquo;bp:Module:Bio::Graphics::Glyph::triangle&rdquo;&gt;triangle</a></td>
+<td>a point-like feature represented as a diamond</td>
+</tr>
+<tr>
+<td>wormbase_transcript</td>
+<td>yet another gene model that can show UTR segments (for features that conform to the WormBase gene schema). Used in conjunction with the &ldquo;wormbase_gene&rdquo; aggregator (<a href="../GFF2" title="GFF2">GFF2</a>).</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_density.pm%22">http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_density.pm&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;wiggle_density</a></td>
+<td>Quantitative information from wiggle files (.wig) shown as color intensity. See <a href="../GBrowse/Uploading_Wiggle_Tracks" title="GBrowse/Uploading Wiggle Tracks">GBrowse/Uploading Wiggle Tracks</a>.</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_xyplot.pm%22">http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_xyplot.pm&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;wiggle_xyplot</a></td>
+<td>Quantitative information from wiggle files shown as an xyplot.</td>
+</tr>
+<tr>
+<td>&lt;a</td>
+<td></td>
+</tr>
+<tr>
+<td>href=&ldquo;<a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::xyplot%22">http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::xyplot&quot;</a></td>
+<td></td>
+</tr>
+<tr>
+<td>class=&ldquo;extiw&rdquo; title=&ldquo;bp:Module:Bio::Graphics::Glyph::xyplot&rdquo;&gt;xyplot</a></td>
+<td>histograms and line plots</td>
+</tr>
+</tbody>
+</table>
+<p>A more definitive list of glyph options can be found in the
+Bio::Graphics manual pages. Consult the manual pages for the following
+modules:</p>
+<p>The &ldquo;perldoc&rdquo; command is handy for reading the documentation from the
+Unix command line. For example:</p>
+<pre><code>  perldoc Bio::Graphics::Glyph::primers
+</code></pre>
+<p>This will provide you with a summary of the options that apply to the
+&ldquo;primers&rdquo; glyph.</p>
+<p>In the manual pages, the glyph options are presented the way they are
+called from Perl. For example, the documentation will tell you to use
+the -connect_color option to set the color to use when drawing the line
+that connects the two inward pointing arrows in the primer pair glyph.
+This translates to the configuration file as an option named
+&ldquo;connect_color&rdquo;. For example:</p>
+<pre><code>[PCR Products]
+glyph = primer
+connect_color = blue
+</code></pre>
+<p>When referring to colors, you can use a variety of color names such as
+&ldquo;blue&rdquo; and &ldquo;green&rdquo;. To get the full list, cut and paste the following
+magic incantation into the command line:</p>
+<pre><code>perl -MBio::Graphics::Panel -e 'print join &quot;\n&quot;,Bio::Graphics::Panel-&gt;color_names'
+</code></pre>
+<p>or see this URL:</p>
+<pre><code> http://www.wormbase.org/db/seq/gbrowse?help=annotation
+</code></pre>
+<p>Alternatively, you can use the #RRGGBB notation to specify the red,
+green and blue components of the color. Refer to any book on HTML for
+the details on using the notation.</p>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="../Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="../Category%253AConfiguration" title="Category%253AConfiguration">Configuration</a></li>
+<li><a href="../Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_Configuration-2FGlyphs"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:49 on 4 September
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">35,212 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

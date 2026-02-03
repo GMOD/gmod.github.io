@@ -1,1 +1,1 @@
-wiki/Main_Page.md
+content/wiki/Main_Page.md

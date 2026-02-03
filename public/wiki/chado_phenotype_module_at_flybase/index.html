@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Phenotype Module at FlyBase - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-phenotype-module-at-flybasespan"><span dir="auto">Chado Phenotype Module at FlyBase</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
+height="48" alt="Under Construction" /></p>
+<p><span style="font-size: 140%">This page or section is under
+construction.</span></p>
+<p>Should be done before Jan 1, 2011</p>
+<p>The <a href="Chado_Phenotype_Module" title="Chado Phenotype Module">Chado Phenotype
+module</a> was developed
+at <a href="Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a>.</p>
+<p>To try and understand the existing phenotype module during the <a href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">GMOD Evo
+Hackathon</a>, participants spent
+some time exploring the phenotype tables at FlyBase. The notes from that
+exploration are on this page.</p>
+<p>Phenotypes are not cleanly implemented in a single module. The tables
+are spread across the
+<a href="Chado_Phenotype_Module" title="Chado Phenotype Module">Phenotype</a> and
+<a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a> modules. This
+page discusses the tables from both modules. It also covers some related
+tables.</p>
+<p><strong>These notes reflect the state of the FlyBase Chado database during the
+first two weeks on November 2010.</strong></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Tables"><span class="tocnumber">1</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Important_Linked_Tables"><span class="tocnumber">1.1</span> <span class="toctext">Important
+Linked Tables</span></a></li>
+<li><a href="#phenotype"><span class="tocnumber">1.2</span>
+<span class="toctext"><strong>phenotype</strong></span></a>
+<ul>
+<li><a href="#What_is_a_Phenotype.3F"><span class="tocnumber">1.2.1</span> <span class="toctext">What
+is a Phenotype?</span></a>
+<ul>
+<li><a href="#PATO_at_FlyBase.3F"><span class="tocnumber">1.2.1.1</span>
+<span class="toctext">PATO at
+FlyBase?</span></a></li>
+</ul>
+</li>
+<li><a href="#phenotype_.40_Flybase"><span class="tocnumber">1.2.2</span>
+<span class="toctext"><strong>phenotype</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#uniquename_and_observable_id"><span class="tocnumber">1.2.2.1</span>
+<span class="toctext">uniquename and
+observable_id</span></a></li>
+<li><a href="#attr_id_and_assay_id"><span class="tocnumber">1.2.2.2</span>
+<span class="toctext">attr_id and
+assay_id</span></a></li>
+<li><a href="#cvalue_id"><span class="tocnumber">1.2.2.3</span>
+<span class="toctext">cvalue_id</span></a></li>
+<li><a href="#value"><span class="tocnumber">1.2.2.4</span>
+<span class="toctext">value</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phenotype_comparison"><span class="tocnumber">1.3</span>
+<span class="toctext"><strong>phenotype_comparison</strong></span></a>
+<ul>
+<li><a href="#phenotype_comparison_.40_Flybase"><span class="tocnumber">1.3.1</span>
+<span class="toctext"><strong>phenotype_comparison</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#environment.5B12.5D_id"><span class="tocnumber">1.3.1.1</span>
+<span class="toctext">environment[12]_id</span></a></li>
+<li><a href="#phenotype.5B12.5D_id_and_genotype.5B12.5D_id"><span class="tocnumber">1.3.1.2</span>
+<span class="toctext">phenotype[12]_id and
+genotype[12]_id</span></a></li>
+<li><a href="#type_id"><span class="tocnumber">1.3.1.3</span>
+<span class="toctext">type_id</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phenotype_cvterm"><span class="tocnumber">1.4</span>
+<span class="toctext"><strong>phenotype_cvterm</strong></span></a>
+<ul>
+<li><a href="#phenotype_cvterm_.40_Flybase"><span class="tocnumber">1.4.1</span>
+<span class="toctext"><strong>phenotype_cvterm</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#rank"><span class="tocnumber">1.4.1.1</span>
+<span class="toctext">rank</span></a></li>
+<li><a href="#cvterm_id"><span class="tocnumber">1.4.1.2</span>
+<span class="toctext">cvterm_id</span></a></li>
+<li><a href="#Semantics.3F"><span class="tocnumber">1.4.1.3</span>
+<span class="toctext">Semantics?</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phenstatement"><span class="tocnumber">1.5</span>
+<span class="toctext"><strong>phenstatement</strong></span></a>
+<ul>
+<li><a href="#phenstatement_.40_Flybase"><span class="tocnumber">1.5.1</span>
+<span class="toctext"><strong>phenstatement</strong> @
+Flybase</span></a></li>
+</ul>
+</li>
+<li><a href="#phendesc"><span class="tocnumber">1.6</span>
+<span class="toctext"><strong>phendesc</strong></span></a>
+<ul>
+<li><a href="#phendesc_.40_Flybase"><span class="tocnumber">1.6.1</span>
+<span class="toctext"><strong>phendesc</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#type_id_2"><span class="tocnumber">1.6.1.1</span>
+<span class="toctext">type_id</span></a></li>
+<li><a href="#pub_id"><span class="tocnumber">1.6.1.2</span>
+<span class="toctext">pub_id</span></a></li>
+<li><a href="#environment_id"><span class="tocnumber">1.6.1.3</span>
+<span class="toctext">environment_id</span></a></li>
+<li><a href="#genotype_id"><span class="tocnumber">1.6.1.4</span>
+<span class="toctext">genotype_id</span></a></li>
+<li><a href="#Description"><span class="tocnumber">1.6.1.5</span>
+<span class="toctext">Description</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#environment"><span class="tocnumber">1.7</span>
+<span class="toctext"><strong>environment</strong></span></a>
+<ul>
+<li><a href="#environment_.40_Flybase"><span class="tocnumber">1.7.1</span>
+<span class="toctext"><strong>environment</strong> @
+Flybase</span></a></li>
+</ul>
+</li>
+<li><a href="#environment_cvterm"><span class="tocnumber">1.8</span>
+<span class="toctext"><strong>environment_cvterm</strong></span></a>
+<ul>
+<li><a href="#environment_cvterm_.40_Flybase"><span class="tocnumber">1.8.1</span>
+<span class="toctext"><strong>environment_cvterm</strong> @
+Flybase</span></a></li>
+</ul>
+</li>
+<li><a href="#genotype"><span class="tocnumber">1.9</span>
+<span class="toctext"><strong>genotype</strong></span></a>
+<ul>
+<li><a href="#genotype_.40_Flybase"><span class="tocnumber">1.9.1</span>
+<span class="toctext"><strong>genotype</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#uniquename"><span class="tocnumber">1.9.1.1</span>
+<span class="toctext">uniquename</span></a></li>
+<li><a href="#name"><span class="tocnumber">1.9.1.2</span>
+<span class="toctext">name</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#feature_genotype"><span class="tocnumber">1.10</span>
+<span class="toctext"><strong>feature_genotype</strong></span></a>
+<ul>
+<li><a href="#feature_genotype_.40_Flybase"><span class="tocnumber">1.10.1</span>
+<span class="toctext"><strong>feature_genotype</strong> @
+Flybase</span></a>
+<ul>
+<li><a href="#cvterm_id_2"><span class="tocnumber">1.10.1.1</span>
+<span class="toctext">cvterm_id</span></a></li>
+<li><a href="#cgroup"><span class="tocnumber">1.10.1.2</span>
+<span class="toctext">cgroup</span></a></li>
+<li><a href="#chromosome_id"><span class="tocnumber">1.10.1.3</span>
+<span class="toctext">chromosome_id</span></a></li>
+<li><a href="#rank_2"><span class="tocnumber">1.10.1.4</span>
+<span class="toctext">rank</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>rows at FlyBase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Chado_Phenotype_Module#Table:_feature_phenotype" title="Chado Phenotype Module"><strong><code>feature_phenotype</code></strong></a></td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="Chado_Phenotype_Module#Table:_phenotype" title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
+<td>10,925</td>
+</tr>
+<tr>
+<td><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a></td>
+<td>100,235</td>
+</tr>
+<tr>
+<td><a href="Chado_Phenotype_Module#Table:_phenotype_cvterm" title="Chado Phenotype Module"><strong><code>phenotype_cvterm</code></strong></a></td>
+<td>7,714</td>
+</tr>
+<tr>
+<td><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a></td>
+<td>20,673</td>
+</tr>
+<tr>
+<td><a href="Chado_Genetic_Module#Table:_phendesc" title="Chado Genetic Module"><strong><code>phendesc</code></strong></a></td>
+<td>112,390</td>
+</tr>
+</tbody>
+</table>
+<p>And those are the only tables that have &ldquo;phen&rdquo; in their name.</p>
+<h2 id="span-idimportant_linked_tables-classmw-headlineimportant-linked-tablesspan"><span id="Important_Linked_Tables" class="mw-headline">Important Linked Tables</span></h2>
+<ul>
+<li><a href="Chado_Genetic_Module#Table:_environment" title="Chado Genetic Module"><strong><code>environment</code></strong></a>
+(Doc: &ldquo;The environmental component of a phenotype description.&rdquo;)</li>
+<li><a href="Chado_Genetic_Module#Table:_genotype" title="Chado Genetic Module"><strong><code>genotype</code></strong></a></li>
+</ul>
+<p>And that&rsquo;s it?</p>
+<h2 id="span-idphenotype-classmw-headlinephenotypechado_phenotype_moduletable_phenotype-chado-phenotype-modulespan"><span id="phenotype" class="mw-headline"><a href="Chado_Phenotype_Module#Table:_phenotype" title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>phenotype</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Phenotype_Module" title="Chado Phenotype Module">Phenotype</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>A phenotypic statement, or a single atomic phenotypic observation, is a
+controlled sentence describing observable effects of non-wild type
+function. E.g. Obs=eye, attribute=color, cvalue=red.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>phenotype</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>phenotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>observable_id</td>
+<td>integer</td>
+<td>The entity: e.g. anatomy_part, biological_process.</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>attr_id</td>
+<td>integer</td>
+<td>Phenotypic attribute (quality, property, attribute, character) -
+drawn from PATO.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td>Value of attribute - unconstrained free text. Used only if cvalue_id
+is not appropriate.</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>cvalue_id</td>
+<td>integer</td>
+<td>Phenotype attribute value (state).</td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>assay_id</td>
+<td>integer</td>
+<td>Evidence type.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>phenotype</code></strong> columns</p>
+<p>Tables referencing <strong><code>phenotype</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Phenotype_Module#Table:_feature_phenotype" title="Chado Phenotype Module"><strong><code>feature_phenotype</code></strong></a></li>
+<li><a href="Chado_Natural_Diversity_Module.1#Table:_nd_experiment_phenotype" title="Chado Natural Diversity Module"><strong><code>nd_experiment_phenotype</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a></li>
+<li><a href="Chado_Phenotype_Module#Table:_phenotype_cvterm" title="Chado Phenotype Module"><strong><code>phenotype_cvterm</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<h3 id="span-idwhat_is_a_phenotype3f-classmw-headlinewhat-is-a-phenotypespan"><span id="What_is_a_Phenotype.3F" class="mw-headline">What is a Phenotype?</span></h3>
+<p>From conversation with Jim Balhoff and Matt Yoder:</p>
+<p><strong>A phenotype is what you observe.</strong></p>
+<p>This means that <em>stage</em> or <em>time since conception</em> is <strong>not</strong> part of
+the phenotype. It is part of the experiment. (Unless you are observing
+development rate, in which case, stage would be the phenotype.)</p>
+<h4 id="span-idpato_at_flybase3f-classmw-headlinepato-at-flybasespan"><span id="PATO_at_FlyBase.3F" class="mw-headline">PATO at FlyBase?</span></h4>
+<p>That table description in the schema sounds like the old PATO, not the
+new EQ model.</p>
+<p>Does this table implement PATO at FlyBase?</p>
+<p>No</p>
+<ul>
+<li>observable_id is the Entity. Usually points to anatomy or
+cellular_component CVs.</li>
+<li>But attr_id is not used and cvalue_id points to compound terms in the
+FlyBase Miscellaneous CV.</li>
+</ul>
+<h3 id="span-idphenotype_40_flybase-classmw-headlinephenotypechado_phenotype_moduletable_phenotype-chado-phenotype-module--flybasespan"><span id="phenotype_.40_Flybase" class="mw-headline"><a href="Chado_Phenotype_Module#Table:_phenotype" title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>10925</td>
+</tr>
+<tr>
+<td>observable_id is null</td>
+<td>1</td>
+</tr>
+<tr>
+<td>attr_id is null</td>
+<td>1</td>
+</tr>
+<tr>
+<td>cvalue_id is null</td>
+<td>1</td>
+</tr>
+<tr>
+<td>assay_id is null</td>
+<td>1</td>
+</tr>
+<tr>
+<td>value is null</td>
+<td>10925</td>
+</tr>
+</tbody>
+</table>
+<p>All the CVterm FKs that are null have the uniquename of &ldquo;unspecified&rdquo;</p>
+<h4 id="span-iduniquename_and_observable_id-classmw-headlineuniquename-and-observable_idspan"><span id="uniquename_and_observable_id" class="mw-headline">uniquename and observable_id</span></h4>
+<p>Most uniquenames are observable_id -&gt; cvterm.name + blank or integer,
+but not when name is &ldquo;unspecified&rdquo;, uniquename can be anything. Some
+examples:</p>
+<ul>
+<li>viable</li>
+<li>long lived | dominant</li>
+<li>fertile</li>
+<li>mitotic cell cycle defective | recessive | somatic clone</li>
+<li>lethal | larval stage</li>
+</ul>
+<p>There are 1473 of these (every one of them unspecified).</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT COUNT(*), c.name
+  FROM phenotype p, cvterm t, cv c
+ WHERE t.cvterm_id = p.observable_id
+   AND t.cv_id = c.cv_id
+ GROUP BY 2
+ ORDER BY 1 DESC
+ LIMIT 50;
+</code></pre><pre><code>count |           name
+------+--------------------------
+ 8914 | FlyBase anatomy CV
+ 1473 | FlyBase miscellaneous CV
+  436 | cellular_component
+   91 | biological_process
+    9 | property type
+    1 | SO
+(6 rows)
+</code></pre>
+<h4 id="span-idattr_id_and_assay_id-classmw-headlineattr_id-and-assay_idspan"><span id="attr_id_and_assay_id" class="mw-headline">attr_id and assay_id</span></h4>
+<p>attr_id is supposed to be &ldquo;Phenotypic attribute (quality, property,
+attribute, character) - drawn from PATO.&rdquo; but is not.</p>
+<p>assay_id is supposed to be &ldquo;Evidence type&rdquo; but it is not.</p>
+<p>At FlyBase, in all rows (except the null one) both of these point to
+cvterm &ldquo;unspecified&rdquo;</p>
+<p>So, this is not used for PATO at Flybase. I&rsquo;m not sure why it isn&rsquo;t
+null.</p>
+<h4 id="span-idcvalue_id-classmw-headlinecvalue_idspan"><span id="cvalue_id" class="mw-headline">cvalue_id</span></h4>
+<p>Schema doc says &ldquo;Phenotype attribute value (state).&rdquo;</p>
+<p>There are only 118 distinct values. Some of them:</p>
+<ul>
+<li>DNA repair defective</li>
+<li>Minute</li>
+<li>aging defective</li>
+<li>auditory perception defective</li>
+<li>auxotroph</li>
+<li>bang sensitive</li>
+<li>behavior defective</li>
+</ul>
+<p>All from: FlyBase miscellaneous CV</p>
+<h4 id="span-idvalue-classmw-headlinevaluespan"><span id="value" class="mw-headline">value</span></h4>
+<p>value is null in every row in FlyBase.</p>
+<h2 id="span-idphenotype_comparison-classmw-headlinephenotype_comparisonchado_genetic_moduletable_phenotype_comparison-chado-genetic-modulespan"><span id="phenotype_comparison" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>phenotype_comparison</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Comparison of phenotypes e.g., genotype1/environment1/phenotype1
+&ldquo;non-suppressible&rdquo; with respect to genotype2/environment2/phenotype2.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>phenotype_comparison</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>phenotype_comparison_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Genetic_Module#Table:_genotype"
+title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
+<td>genotype1_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Genetic_Module#Table:_environment"
+title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
+<td>environment1_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Genetic_Module#Table:_genotype"
+title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
+<td>genotype2_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Genetic_Module#Table:_environment"
+title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
+<td>environment2_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
+<td>phenotype1_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
+<td>phenotype2_id</td>
+<td>integer</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Organism_Module#Table:_organism"
+title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
+<td>organism_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>phenotype_comparison</code></strong> columns</p>
+<p>Tables referencing <strong><code>phenotype_comparison</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Genetic_Module#Table:_phenotype_comparison_cvterm" title="Chado Genetic Module"><strong><code>phenotype_comparison_cvterm</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<p>This table is good for binary comparisons. How broadly useful is that?</p>
+<h3 id="span-idphenotype_comparison_40_flybase-classmw-headlinephenotype_comparisonchado_genetic_moduletable_phenotype_comparison-chado-genetic-module--flybasespan"><span id="phenotype_comparison_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>100,235</td>
+</tr>
+<tr>
+<td>phenotype2_id is null</td>
+<td>0</td>
+</tr>
+<tr>
+<td>phenotype1_id = phenotype2_id</td>
+<td>42,510</td>
+</tr>
+<tr>
+<td>genotype1_id = genotype2_id</td>
+<td>0</td>
+</tr>
+<tr>
+<td>environment1_id = environment2_id</td>
+<td>99,293</td>
+</tr>
+</tbody>
+</table>
+<p>Every column but phenotype2_id is not nullable, and that column has no
+nulls in it either.</p>
+<h4 id="span-idenvironment5b125d_id-classmw-headlineenvironment12_idspan"><span id="environment.5B12.5D_id" class="mw-headline">environment[12]_id</span></h4>
+<p>The above counts imply a lot comparisons using different genotypes in
+the same environment. <strong>No it does not.</strong> In every one of those 99K
+comparisons, environment is &ldquo;unspecified&rdquo;.</p>
+<p>So, FlyBase has known environments for 1% of its comparisons.</p>
+<h4 id="span-idphenotype5b125d_id_and_genotype5b125d_id-classmw-headlinephenotype12_id-and-genotype12_idspan"><span id="phenotype.5B12.5D_id_and_genotype.5B12.5D_id" class="mw-headline">phenotype[12]_id and genotype[12]_id</span></h4>
+<p>The 42K comparisons where the phenotypes are the same mean that the
+genotype did not change this phenotype.</p>
+<h4 id="span-idtype_id-classmw-headlinetype_idspan"><span id="type_id" class="mw-headline">type_id</span></h4>
+<p>type_id is a phantom column. It does not exist in current Chado or at
+FlyBase.</p>
+<p>How do we say how they compare without this column?</p>
+<p>What makes two G/E/P pairs comparable?</p>
+<h2 id="span-idphenotype_cvterm-classmw-headlinephenotype_cvtermchado_phenotype_moduletable_phenotype_cvterm-chado-phenotype-modulespan"><span id="phenotype_cvterm" class="mw-headline"><a href="Chado_Phenotype_Module#Table:_phenotype_cvterm" title="Chado Phenotype Module"><strong><code>phenotype_cvterm</code></strong></a></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>phenotype_cvterm</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Phenotype_Module" title="Chado Phenotype Module">Phenotype</a></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>phenotype_cvterm</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>phenotype_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
+<td>phenotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>phenotype_cvterm</code></strong> columns</p>
+<p>Tables referencing <strong><code>phenotype_cvterm</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p>Can imagine it just attaches a bag of terms to the phenotype. There is
+no semantics on how the terms relate to each other or to the phenotype.</p>
+<h3 id="span-idphenotype_cvterm_40_flybase-classmw-headlinephenotype_cvtermchado_phenotype_moduletable_phenotype_cvterm-chado-phenotype-module--flybasespan"><span id="phenotype_cvterm_.40_Flybase" class="mw-headline"><a href="Chado_Phenotype_Module#Table:_phenotype_cvterm" title="Chado Phenotype Module"><strong><code>phenotype_cvterm</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>7714</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idrank-classmw-headlinerankspan"><span id="rank" class="mw-headline">rank</span></h4>
+<p>Flybase&rsquo;s table def has a rank column, which is &gt; 0 for about 2000
+rows. The rank column is part of standard Chado, but not listed on the
+web site.</p>
+<p>There is a unique constraint on (phenotype_id, cvterm_id, rank). Why?</p>
+<h4 id="span-idcvterm_id-classmw-headlinecvterm_idspan"><span id="cvterm_id" class="mw-headline">cvterm_id</span></h4>
+<p>Links to terms in 5 different CVs</p>
+<ul>
+<li>FlyBase miscellaneous CV (75%)</li>
+<li>FlyBase anatomy CV</li>
+<li>SO</li>
+<li>FlyBase development CV (25%)</li>
+<li>biological_process</li>
+</ul>
+<h4 id="span-idsemantics3f-classmw-headlinesemanticsspan"><span id="Semantics.3F" class="mw-headline">Semantics?</span></h4>
+<p>Find rows that use rank in the unique constraint.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT * FROM phenotype_cvterm pcv1
+ WHERE EXISTS (
+    SELECT * FROM phenotype_cvterm pcv2
+     WHERE pcv1.phenotype_cvterm_id &lt;&gt; pcv2.phenotype_cvterm_id
+       AND pcv1.phenotype_id = pcv2.phenotype_id
+       AND pcv1.cvterm_id = pcv2.cvterm_id) LIMIT 10;
+</code></pre><pre><code>phenotype_cvterm_id | phenotype_id | cvterm_id | rank
+--------------------+--------------+-----------+------
+               8763 |        15842 |     60843 |    0
+               8764 |        15842 |     60843 |    1
+              12006 |        19433 |     60843 |    1
+              12007 |        19433 |     60843 |    2
+(4 rows)
+</code></pre>
+<p>So, what does that mean?</p>
+<p>Rank is used for some sort of code that is not stored in the database?</p>
+<h2 id="span-idphenstatement-classmw-headlinephenstatementchado_genetic_moduletable_phenstatement-chado-genetic-modulespan"><span id="phenstatement" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>phenstatement</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Phenotypes are things like &ldquo;larval lethal&rdquo;. Phenstatements are things
+like &ldquo;dpp-1 is recessive larval lethal&rdquo;. So essentially phenstatement is
+a linking table expressing the relationship between genotype,
+environment, and phenotype.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>phenstatement</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>phenstatement_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Genetic_Module#Table:_genotype"
+title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Genetic_Module#Table:_environment"
+title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
+<td>environment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
+<td>phenotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>phenstatement</code></strong> columns</p>
+<p>Tables referencing <strong><code>phenstatement</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<h3 id="span-idphenstatement_40_flybase-classmw-headlinephenstatementchado_genetic_moduletable_phenstatement-chado-genetic-module--flybasespan"><span id="phenstatement_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>203673</td>
+</tr>
+</tbody>
+</table>
+<p>All columns are not null; all except PK are FKs. Therefore
+phenstatements require</p>
+<ul>
+<li>genotype</li>
+<li>environment</li>
+<li>phenotype</li>
+<li>cvterm (type_id ?)</li>
+<li>pub</li>
+</ul>
+<p>Well, sort of.</p>
+<ul>
+<li>type_id is &ldquo;unspecified&rdquo; for every row.</li>
+<li>7% of pubs link to one with a blank title</li>
+<li>97% of environments point to &ldquo;unspecified&rdquo;</li>
+</ul>
+<p>There are 72K linked genotypes. They use a custom markup language in the
+uniquename.</p>
+<h2 id="span-idphendesc-classmw-headlinephendescchado_genetic_moduletable_phendesc-chado-genetic-modulespan"><span id="phendesc" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phendesc" title="Chado Genetic Module"><strong><code>phendesc</code></strong></a></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>phendesc</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>A summary of a _set_ of phenotypic statements for any one gcontext
+made in any one publication.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>phendesc</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>phendesc_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Genetic_Module#Table:_genotype"
+title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Genetic_Module#Table:_environment"
+title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
+<td>environment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>description</td>
+<td>text</td>
+<td><em>NOT NULL</em><br />
+</td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>phendesc</code></strong> columns</p>
+<p>Tables referencing <strong><code>phendesc</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p>You can&rsquo;t link directly from a
+<a href="Chado_Phenotype_Module#Table:_phenotype" title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a>
+to <strong><code>phendesc</code></strong>. You can link directly from a
+<a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a>
+to a {[ChadoTableName|phendesc}} using (genotype_id, environment_id,
+and pub_id). Note that this does not take full advantage of the unique
+index on those 3 columns plus type_id.</p>
+<p>This table establishes two things:</p>
+<ul>
+<li>A general comment about a set of phenstatement&rsquo;s.</li>
+<li>A general type for the overall phenotype. See below for options at
+FlyBase.</li>
+</ul>
+<p>This table means there can only be one phendesc for each
+environment/genotype/pub publication. I think that makes sense.</p>
+<p>It does mean we wont link to phenstatements with the wrong
+genotype/environment, but it also means we can orphan phendesc rows that
+don&rsquo;t join with any phenstatements.</p>
+<h3 id="span-idphendesc_40_flybase-classmw-headlinephendescchado_genetic_moduletable_phendesc-chado-genetic-module--flybasespan"><span id="phendesc_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_phendesc" title="Chado Genetic Module"><strong><code>phendesc</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>112,390</td>
+</tr>
+<tr>
+<td>description is null</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>No columns are nullable. There is description, 4 FKs (genotype_id,
+environment_id, type_id, pub_id), and the PK.</p>
+<p>Description is not unique with &ldquo;Homozygous lethal.&rdquo; and &ldquo;homozygous
+lethal&rdquo; making up ~1% of records.</p>
+<h4 id="span-idtype_id_2-classmw-headlinetype_idspan"><span id="type_id_2" class="mw-headline">type_id</span></h4>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT COUNT(*), t.name, c.name
+  FROM phendesc p, cvterm t, cv c
+ WHERE p.type_id = t.cvterm_id
+   AND t.cv_id = c.cv_id
+ GROUP BY 2,3
+ ORDER BY 1 DESC
+ LIMIT 50;
+</code></pre><pre><code>count |           name            |     name
+------+---------------------------+---------------
+71688 | single_mutant_pheno       | phendesc type
+18648 | genetic_interaction_pheno | phendesc type
+12809 | aberr_pheno               | phendesc type
+ 7662 | interallele_comp          | phendesc type
+ 1583 | xeno_interaction_pheno    | phendesc type
+(5 rows)
+</code></pre>
+<h4 id="span-idpub_id-classmw-headlinepub_idspan"><span id="pub_id" class="mw-headline">pub_id</span></h4>
+<p>11,930 rows (about 10% of rows) link to the pub with no title.</p>
+<h4 id="span-idenvironment_id-classmw-headlineenvironment_idspan"><span id="environment_id" class="mw-headline">environment_id</span></h4>
+<p>101,746 rows (over 90%) link to &ldquo;unspecified&rdquo;</p>
+<h4 id="span-idgenotype_id-classmw-headlinegenotype_idspan"><span id="genotype_id" class="mw-headline">genotype_id</span></h4>
+<p>There is wide distribution of genotypes. The top genotype has 122
+phendesc records.</p>
+<h4 id="span-iddescription-classmw-headlinedescriptionspan"><span id="Description" class="mw-headline">Description</span></h4>
+<p>Free form description of phenotype. Almost all entries are informative,
+and none are null.</p>
+<h2 id="span-idenvironment-classmw-headlineenvironmentchado_genetic_moduletable_environment-chado-genetic-modulespan"><span id="environment" class="mw-headline"><a href="Chado_Genetic_Module#Table:_environment" title="Chado Genetic Module"><strong><code>environment</code></strong></a></span></h2>
+<p>Definition:</p>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>environment</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>The environmental component of a phenotype description.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>environment</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>environment_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>description</td>
+<td>text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>environment</code></strong> columns</p>
+<p>Tables referencing <strong><code>environment</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Genetic_Module#Table:_environment_cvterm" title="Chado Genetic Module"><strong><code>environment_cvterm</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phendesc" title="Chado Genetic Module"><strong><code>phendesc</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<h3 id="span-idenvironment_40_flybase-classmw-headlineenvironmentchado_genetic_moduletable_environment-chado-genetic-module--flybasespan"><span id="environment_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_environment" title="Chado Genetic Module"><strong><code>environment</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>description is null in all rows.</p>
+<p>Uniquename choice are:</p>
+<pre><code>unspecified
+conditional qualifier
+temperature conditional
+drug conditional
+conditional tetracycline
+conditional RU486
+Drosophila cell culture
+In transgenic Drosophila (intraspecific)
+In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)
+In transgenic Drosophila (allele of foreign species in genome of drosophilid)
+Whole-organism transient assay (intraspecific)
+Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)
+Whole-organism transient assay (allele of foreign species assayed in drosophilid)
+conditional - heat sensitive
+conditional - cold sensitive
+</code></pre>
+<h2 id="span-idenvironment_cvterm-classmw-headlineenvironment_cvtermchado_genetic_moduletable_environment_cvterm-chado-genetic-modulespan"><span id="environment_cvterm" class="mw-headline"><a href="Chado_Genetic_Module#Table:_environment_cvterm" title="Chado Genetic Module"><strong><code>environment_cvterm</code></strong></a></span></h2>
+<p>Definition:</p>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>environment_cvterm</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>environment_cvterm</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>environment_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Genetic_Module#Table:_environment"
+title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
+<td>environment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>environment_cvterm</code></strong> columns</p>
+<p>Tables referencing <strong><code>environment_cvterm</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p>No semantics here. My guess is associates a list of CV terms with an
+environment.</p>
+<h3 id="span-idenvironment_cvterm_40_flybase-classmw-headlineenvironment_cvtermchado_genetic_moduletable_environment_cvterm-chado-genetic-module--flybasespan"><span id="environment_cvterm_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_environment_cvterm" title="Chado Genetic Module"><strong><code>environment_cvterm</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td> ?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="span-idgenotype-classmw-headlinegenotypechado_genetic_moduletable_genotype-chado-genetic-modulespan"><span id="genotype" class="mw-headline"><a href="Chado_Genetic_Module#Table:_genotype" title="Chado Genetic Module"><strong><code>genotype</code></strong></a></span></h2>
+<p>Definition:</p>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>genotype</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Genetic context. A genotype is defined by a collection of features,
+mutations, balancers, deficiencies, haplotype blocks, or engineered
+constructs.</p>
+<table class="wikitable chadotable">
+<caption><strong><code>genotype</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>name</td>
+<td>text</td>
+<td>Optional alternative name for a genotype,
+<p>for display purposes.</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE</em><br />
+&#10;<p><em>NOT NULL</em><br />
+The unique name for a genotype; typically derived from the features
+making up the genotype.</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>description</td>
+<td>character varying(255)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>genotype</code></strong> columns</p>
+<p>Tables referencing <strong><code>genotype</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Genetic_Module#Table:_feature_genotype" title="Chado Genetic Module"><strong><code>feature_genotype</code></strong></a></li>
+<li><a href="Chado_Natural_Diversity_Module.1#Table:_nd_experiment_genotype" title="Chado Natural Diversity Module"><strong><code>nd_experiment_genotype</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phendesc" title="Chado Genetic Module"><strong><code>phendesc</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenotype_comparison" title="Chado Genetic Module"><strong><code>phenotype_comparison</code></strong></a></li>
+<li><a href="Chado_Genetic_Module#Table:_phenstatement" title="Chado Genetic Module"><strong><code>phenstatement</code></strong></a></li>
+<li><a href="Chado_Stock_Module#Table:_stock_genotype" title="Chado Stock Module"><strong><code>stock_genotype</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<h3 id="span-idgenotype_40_flybase-classmw-headlinegenotypechado_genetic_moduletable_genotype-chado-genetic-module--flybasespan"><span id="genotype_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_genotype" title="Chado Genetic Module"><strong><code>genotype</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>263,153</td>
+</tr>
+<tr>
+<td>description is null</td>
+<td>263,153</td>
+</tr>
+<tr>
+<td>name is null</td>
+<td>165,210</td>
+</tr>
+<tr>
+<td>description and name are null</td>
+<td>165,210</td>
+</tr>
+</tbody>
+</table>
+<p>There is no <strong><code>genotype_cvterm</code></strong> table.</p>
+<h4 id="span-iduniquename-classmw-headlineuniquenamespan"><span id="uniquename" class="mw-headline">uniquename</span></h4>
+<p>Uniquename is the only informative column is 2/3 of the rows. It uses a
+custom FlyBase encoding of information.</p>
+<h4 id="span-idname-classmw-headlinenamespan"><span id="name" class="mw-headline">name</span></h4>
+<p>In the cases where this is not null it uses a custom FlyBase
+nomenclature that often includes one or more FlyBase IDs.</p>
+<h2 id="span-idfeature_genotype-classmw-headlinefeature_genotypechado_genetic_moduletable_feature_genotype-chado-genetic-modulespan"><span id="feature_genotype" class="mw-headline"><a href="Chado_Genetic_Module#Table:_feature_genotype" title="Chado Genetic Module"><strong><code>feature_genotype</code></strong></a></span></h2>
+<p>Definition:</p>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>feature_genotype</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><a href="Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>feature_genotype</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>feature_genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Sequence_Module#Table:_feature"
+title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Genetic_Module#Table:_genotype"
+title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Sequence_Module#Table:_feature"
+title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
+<td>chromosome_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p>A feature of SO type "chromosome".</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+rank can be used for n-ploid organisms or to preserve order.</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>cgroup</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+Spatially distinguishable group. group can be used for distinguishing
+the chromosomal groups, for example (RNAi products and so on can be
+treated as different groups, as they do not fall on a particular
+chromosome).</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>feature_genotype</code></strong> columns</p>
+<p>Tables referencing <strong><code>feature_genotype</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p>This is the table that connects data to features, finally. The rank and
+group have some semantics.</p>
+<h3 id="span-idfeature_genotype_40_flybase-classmw-headlinefeature_genotypechado_genetic_moduletable_feature_genotype-chado-genetic-module--flybasespan"><span id="feature_genotype_.40_Flybase" class="mw-headline"><a href="Chado_Genetic_Module#Table:_feature_genotype" title="Chado Genetic Module"><strong><code>feature_genotype</code></strong></a> @ Flybase</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Rows</td>
+<td>551,551</td>
+</tr>
+<tr>
+<td>chromosome_id is null</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idcvterm_id_2-classmw-headlinecvterm_idspan"><span id="cvterm_id_2" class="mw-headline">cvterm_id</span></h4>
+<p>All cvterm_ids are unspecified. Every one of them. No doc on this.</p>
+<h4 id="span-idcgroup-classmw-headlinecgroupspan"><span id="cgroup" class="mw-headline">cgroup</span></h4>
+<p>Spatially distinguishable group. group can be used for distinguishing
+the chromosomal groups, for example (RNAi products and so on can be
+treated as different groups, as they do not fall on a particular
+chromosome).</p>
+<p>455K are 0; After that it diminishes up to 6, which only has 5 records.</p>
+<p>What does this mean? It&rsquo;s not an FK to anywhere, just an integer that
+must be unique in combination with feature_id, genotype_id, chromosome,
+rank, cgroup, and cvterm_id (every non-PK column).</p>
+<h4 id="span-idchromosome_id-classmw-headlinechromosome_idspan"><span id="chromosome_id" class="mw-headline">chromosome_id</span></h4>
+<p>Every record points to the same feature_id, which has the name
+&ldquo;unspecified&rdquo;. Is this supposed to be a denormalization optimization
+that they don&rsquo;t use at FlyBase?</p>
+<h4 id="span-idrank_2-classmw-headlinerankspan"><span id="rank_2" class="mw-headline">rank</span></h4>
+<p>rank can be used for n-ploid organisms or to preserve order.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AUnder_Construction" title="Category%253AUnder Construction">Under
+Construction</a></li>
+<li><a href="Category%253APhenotypes" title="Category%253APhenotypes">Phenotypes</a></li>
+<li><a href="Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AGMOD_Evo_Hackathon" title="Category%253AGMOD Evo Hackathon">GMOD Evo
+Hackathon</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Phenotype_Module_at_FlyBase"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:33 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">49,941 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

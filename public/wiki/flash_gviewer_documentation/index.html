@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash GViewer Documentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoflash-gviewer-documentationspan"><span dir="auto">Flash GViewer Documentation</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Flash_GViewer"><span class="tocnumber">1</span> <span class="toctext">Flash
+GViewer</span></a></li>
+<li><a href="#Current_Features_.28v0.5.29"><span class="tocnumber">2</span> <span class="toctext">Current
+Features (v0.5)</span></a>
+<ul>
+<li><a href="#Changes_in_v0.5"><span class="tocnumber">2.1</span> <span class="toctext">Changes in
+v0.5</span></a></li>
+<li><a href="#Changes_in_v0.4"><span class="tocnumber">2.2</span> <span class="toctext">Changes in
+v0.4</span></a></li>
+<li><a href="#Changes_in_v0.3"><span class="tocnumber">2.3</span> <span class="toctext">Changes in
+v0.3</span></a></li>
+<li><a href="#Changes_in_v0.2"><span class="tocnumber">2.4</span> <span class="toctext">Changes in
+v0.2</span></a></li>
+</ul>
+</li>
+<li><a href="#Demos"><span class="tocnumber">3</span>
+<span class="toctext">Demos</span></a></li>
+<li><a href="#Installation"><span class="tocnumber">4</span>
+<span class="toctext">Installation</span></a></li>
+<li><a href="#Input_Parameters"><span class="tocnumber">5</span> <span class="toctext">Input
+Parameters</span></a></li>
+<li><a href="#The_BaseMap"><span class="tocnumber">6</span> <span class="toctext">The
+BaseMap</span></a>
+<ul>
+<li><a href="#The_Base_Maps"><span class="tocnumber">6.1</span> <span class="toctext">The Base
+Maps</span></a></li>
+</ul>
+</li>
+<li><a href="#The_Annotation_Data"><span class="tocnumber">7</span> <span class="toctext">The Annotation
+Data</span></a></li>
+<li><a href="#Web_Interface_.26_CGI_script"><span class="tocnumber">8</span> <span class="toctext">Web Interface
+&amp; CGI script</span></a></li>
+<li><a href="#Javascript_-_Flash_Connectivity"><span class="tocnumber">9</span> <span class="toctext">Javascript -
+Flash Connectivity</span></a></li>
+<li><a href="#Known_Issues"><span class="tocnumber">10</span> <span class="toctext">Known
+Issues</span></a></li>
+</ul>
+<h3 id="span-idflash_gviewer-classmw-headlineflash-gviewerspan"><span id="Flash_GViewer" class="mw-headline">Flash GViewer</span></h3>
+<p><strong>A customizable web tool for visualizing genome-wide annotation</strong></p>
+<p>See also <a href="Flash_GViewer" title="Flash GViewer">Flash GViewer</a>.</p>
+<p>Simon Twigger, Medical College of Wisconsin © 2005 Last Modified:
+February 16, 2006</p>
+<p>The Rat Genome Database has an SVG-based genome viewer that shows the
+location of genes and QTLs against a backdrop of the rat cytogenetic
+map. For our proteomics projects we were interested in viewing the
+genomic locations of the proteins identified in a proteomics experiment
+and a GViewer-like display is well suited to this. To make a more
+stand-alone solution I rewrote much of the functionality into a Flash
+application that is more adaptable to other organisms and other types of
+data. It requires Macromedia Flash Plugin Version 7, you can download
+the plugin <a
+href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
+class="external text" rel="nofollow">here</a>.</p>
+<h3 id="span-idcurrent_features_28v0529-classmw-headlinecurrent-features-v05span"><span id="Current_Features_.28v0.5.29" class="mw-headline">Current Features (v0.5)</span></h3>
+<p>Here are some of the Flash GViewer&rsquo;s current features:</p>
+<ul>
+<li>Uses a base map containing the chromosomes and banding pattern of the
+desired organism. Perl scripts are available to take the UCSC
+cytogenetic map files and convert them to the appropriate XML format.
+This can also be used to portray any other custom backdrop for a
+chromosome - colored segments corresponding to syntenic regions in
+other organisms, colored according to feature density, etc.</li>
+<li>Bands can link out to a URL defined in the base map (to allow users to
+click to view a region in a genome browser, for example).</li>
+<li>Annotations can come from a static XML file or can be dynamically
+generated by a server-side script</li>
+<li><strong>New in v0.5</strong>. Annotations can be colored independently, allowing
+further information to be conveyed (eg. red/green/yellow for
+expression levels, peptide coverage or Xcorr for proteomic data.</li>
+<li>Features appear at the appropriate position on the chromosome and then
+dynamically move out to form a non-overlapping display.</li>
+<li>Placing the mouse over individual features brings up a tooltip
+displaying the feature&rsquo;s name, it also visually highlights the region
+of the chromosome that the feature is aligned with</li>
+<li>Clicking on a feature toggles the highlight display so it will stay on
+when you move the mouse away. This can be used to turn on the region
+highlights for multiple features to better visualize their overlapping
+regions. Click again to turn each feature&rsquo;s highlight off.</li>
+<li>Clicking on a feature can open up a new browser window with a
+customizable URL, eg a gene report page.</li>
+<li>Clicking on a chromosome will expand that chromosome and enlarge and
+label the features making them easier to view. Click the chromosome
+again to return the whole genome view.</li>
+<li>Turn on/off labels for zoom view and genome view (press i button in
+bottom left corner). Click redraw to refresh the view to show/hide
+labels.</li>
+<li>Javascript can be used to dynamically highlight displayed annotations
+by using triggering javascript functions in the web page containing
+the flash movie. Javascript can be used to query annotation data from
+the flash movie and handle the returned data.</li>
+<li>Customizable web interface and perl CGI script provided to allow users
+to upload annotations and display them on the GViewer against the base
+map of their choice.</li>
+<li>Region selection sliders in Zoom View allow the selection of a genomic
+region so you can then click to open up a genome browser window for
+the specified region.</li>
+</ul>
+<h4 id="span-idchanges_in_v05-classmw-headlinechanges-in-v05span"><span id="Changes_in_v0.5" class="mw-headline">Changes in v0.5</span></h4>
+<ul>
+<li>Added the ability to color annotation features independently via
+addition of color tag to annotation XML format. Annotations without
+separate color information will rever to the default color for that
+particular feature type.</li>
+</ul>
+<h4 id="span-idchanges_in_v04-classmw-headlinechanges-in-v04span"><span id="Changes_in_v0.4" class="mw-headline">Changes in v0.4</span></h4>
+<ul>
+<li>Improved Javascript functionality - added feedback from Flash to
+Javascript to allow Javascript to query Flash for the annotation data
+and have Flash pass this data back to a Javascript function for
+display or other use.</li>
+<li>Added ability to add a title to the GViewer movie.</li>
+<li>Reset zoom view to provide 2x zoom of chromosome and annotation.</li>
+<li>Added Region selection sliders in Zoom View to allow the selection of
+a genomic region. New configuration parameter to set external URL for
+browser link.</li>
+</ul>
+<h4 id="span-idchanges_in_v03-classmw-headlinechanges-in-v03span"><span id="Changes_in_v0.3" class="mw-headline">Changes in v0.3</span></h4>
+<ul>
+<li>Added basic javascript to flash connectivity to allow javascript in a
+web page to control the feature highlighting in the flash movie</li>
+</ul>
+<h4 id="span-idchanges_in_v02-classmw-headlinechanges-in-v02span"><span id="Changes_in_v0.2" class="mw-headline">Changes in v0.2</span></h4>
+<ul>
+<li>Bands can link out to a URL defined in the base map (to allow users to
+click to view a region in a genome browser, for example).</li>
+<li>Changed click/shift click of features and bands. Clicking on a feature
+turns highlight on/off, shift-clicking opens external link. Clicking
+on a band changes to zoomed view or back to genome view, shift
+clicking opens external link. This was altered because it was too easy
+to accidentally click on a feature and open a new browser window by
+accident.</li>
+</ul>
+<p>Here&rsquo;s an example of the GViewer showing the rat genome with some of the
+rat genes and QTLs associated with blood pressure:</p>
+<p>(Dont see anything? You need Flash Plugin version 7 for this to work.
+How can you gracefully handle browsers that dont have the plugin or an
+earlier version - I have had good success with Colin Moock&rsquo;s
+<a href="http://www.moock.org/webdesign/flash/detection/moockfpi/"
+class="external text" rel="nofollow">FlashPlayerInspector</a>. His page
+has more info on how this works (and when it doesnt), plus you can
+download the appropriate code (javascript) to test for the plugin and
+provide appropriate alternative text/content as required).</p>
+<h3 id="span-iddemos-classmw-headlinedemosspan"><span id="Demos" class="mw-headline">Demos</span></h3>
+<p>Flash/Javascript interaction MouseOver Demos</p>
+<p>There is a real live demo at
+<a href="http://blog.gmod.org/nondrupal/FlashGViewer_forWeb"
+class="external text" rel="nofollow">flashGViewer doc page on the GMOD
+blog site</a>.</p>
+<h3 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h3>
+<p>Flash GViewer is available at <a
+href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=161280"
+class="external text" rel="nofollow">Sourceforge</a> and all source code
+is available via the
+<a href="http://gmod.cvs.sourceforge.net/gmod/FlashGViewer/"
+class="external text" rel="nofollow">CVS repository</a>.</p>
+<p>Basic installation is very simple, copy these files/directories to a
+directory on your webserver:</p>
+<ul>
+<li>GViewer directory and contents</li>
+<li>sample.html</li>
+</ul>
+<p>Load up sample.html in a browser and you should see a working version of
+the GViewer. The sample.html is a very basic HTML page that contains the
+tags that display the same version of GViewer as you see above. The data
+directory contains the sample rat annotation file and the rat, human and
+mouse baseMaps. You can change the baseMapURL to point to one of the
+other organisms and see what their maps look like. Not a great fan of
+the background color - change the bgcolor parameter to something more
+appropriate, see the Input Parameters section below. If everything is
+working as expected, you can modify the HTML page or cut out the object
+tag and insert it on one of your own pages. You can create your own
+static annotation XML files or create a CGI/JSP script that retrieves
+the data from a database. Details of the various file formats are given
+below.</p>
+<h3 id="span-idinput_parameters-classmw-headlineinput-parametersspan"><span id="Input_Parameters" class="mw-headline">Input Parameters</span></h3>
+<p>These values are passed into the flash application (referred to as a SWF
+or &ldquo;swiff&rdquo; file, as it has a .swf suffix) via the <code>&lt;object&gt;</code> tag used to
+place the flash SWF on an HTML page. An example tag that you might place
+on an HTML page is given below. In this hypothetical example we are
+retrieving the mouse chromosome and banding pattern (the baseMap) from a
+static XML file on a server and the annotations are retrieved from a CGI
+script which returns the annotation XML for QTLs associated with the
+phenotype of <em>blood pressure</em>. Some of the longer lines have been broken
+to keep the page width down, the sample.html page provided with the
+download has a correctly formatted set of tags for you to copy.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">&lt;object classid=&#34;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&#34;
+codebase=&#34;http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0&#34; width=&#34;300&#34; height=&#34;250&#34; id=&#34;GViewer2&#34; align=&#34;middle&#34;&gt;
+&lt;param name=&#34;allowScriptAccess&#34; value=&#34;sameDomain&#34; /&gt;
+&lt;param name=&#34;movie&#34; value=&#34;GViewer2.swf&#34; /&gt;
+&lt;param name=&#34;quality&#34; value=&#34;high&#34; /&gt;
+&lt;param name=&#34;bgcolor&#34; value=&#34;#FFFFFF&#34; /&gt;
+&lt;param FlashVars=&#34;&amp;baseMapURL=http://server.mcw.edu/~simont/
+mouse_ideo.xml&amp;annotationURL=http://server.mcw.edu/cgi-bin/getDiseaseQTLAnnotation.cgi
+?disease=blood_pressure&amp;titleBarText=Rat Genome with sample data
+&amp;browserURL=http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr&amp;&#34;&gt;
+&lt;embed src=&#34;GViewer2.swf&#34; quality=&#34;high&#34; bgcolor=&#34;#FFFFFF&#34; width=&#34;300&#34;
+height=&#34;250&#34; name=&#34;GViewer2&#34; align=&#34;middle&#34; allowScriptAccess=&#34;sameDomain&#34; type=&#34;application/x-shockwave-flash&#34;
+FlashVars=&#34;&amp;baseMapURL=http://server.mcw.edu/~simont/mouse_ideo.xml&amp;
+annotationURL=http://server.mcw.edu/cgi-bin/getDiseaseQTLAnnotation.cgi?disease=blood_pressure&amp;titleBarText=Rat Genome with sample data
+&amp;browserURL=http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr&amp;&#34; pluginspage=&#34;http://www.macromedia.com/go/getflashplayer&#34; /&gt;
+&lt;/object&gt;
+</code></pre><p>The critical sections are <code>FlashVars</code> and the name of the Flash
+application (e.g. <strong>GViewer2.swf</strong>). The other parts are standard and
+you are unlikely to have to change any of them, though you can change
+the background color of the GViewer using the <code>bgcolor</code> parameter. The
+<code>movie</code> parameter is the path to the GViewer2.swf file on your
+server/filesystem. The <code>FlashVars</code> parameter contains the information
+that is passed into the GViewer to enable it to find the base map and
+appropriate annotations. Due to differences between the windows and Mac
+platforms, you have to put these parameters in two places, in the
+<code>&lt;param&gt;</code> tags of the <code>&lt;object&gt;</code> tag, and also inside the <code>&lt;embed&gt;</code> tag.
+The windows flash plugin seems to use the object tags, the mac plugin
+uses the embed tags. If you modify these values and don&rsquo;t see a change,
+check to make sure you changed it in both locations as this is usually
+the reason for nothing happening!</p>
+<p>The <code>FlashVars</code> parameters that you can set are as follows:</p>
+<table class="wikitable">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>baseMapURL</td>
+<td>The URL of a file or server script that will return the XML
+description of the base chromosomal map and banding patterns.
+<p>longestChromosomeLength The length of the longest chromosome (in base
+pairs). This value is only needed if the longest chromosome isnt
+Chromosome 1 (i.e. the first chromosome in the baseMapFile) as by
+default the application assumes this is the longest chromosome and
+scales every other chromosome accordingly. If another chromosome is
+actually longer (eg. in C. elegans) then the scaling will be off unless
+this value is set.</p></td>
+</tr>
+<tr class="even">
+<td>annotationURL</td>
+<td>A URL of a file or server script that will provide the annotation
+XML</td>
+</tr>
+<tr class="odd">
+<td>annotationXML</td>
+<td>An embedded annotation XML string that defines the annotation
+directly in the HTML page, rather than the SWF file having to call a
+remote script or file. If the annotationXML parameter is defined it will
+take precedence over the annotation URL - ie it will use the XML
+embedded in the page rather than the remote source.</td>
+</tr>
+<tr class="even">
+<td>dimmedChromosomeAlpha</td>
+<td>The alpha value (transparency) of chromosomes with no annotations.
+Defaults to 100 (no transparency), set to value between 0 (invisible)
+and 100 to dim the chromosomes that have no annotation. Useful to
+highlight the chromosomes with annotation information, values between
+20-40 work well for this effect.</td>
+</tr>
+<tr class="odd">
+<td>bandDisplayColor</td>
+<td>The color of features drawn as bands, eg QTL. Should be set to a
+hexadecimal color using the Flash nomenclature, eg. 0xFF0000 is red, as
+opposed to traditional HTML nomenclature of #FF0000</td>
+</tr>
+<tr class="even">
+<td>wedgeDisplayColor</td>
+<td>The color of features drawn as wedges, eg Genes. Should be set to a
+hexadecimal color using the Flash nomenclature, eg. 0xFF0000 is red, as
+opposed to traditional HTML nomenclature of #FF0000</td>
+</tr>
+<tr class="odd">
+<td>titleBarText</td>
+<td>Text to be shown in the top left right corner of the GViewer - can
+be used to put a title on the display</td>
+</tr>
+<tr class="even">
+<td>browserURL</td>
+<td>Optional URL to create link out to genome browser for regions
+defined by region selection sliders in chromosome zoom view. The movie
+appends the chromosome number and start/stop coordinates to the end of
+this URL so it should be written with that fact in mind. The example
+above shows a valid URL for UCSC Rat genome. If the region sliders are
+used to select 1000 to 5000bp on chromosome 1, the final URL will look
+like:
+<p><a
+href="http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr1:1000..5000"
+class="external free"
+rel="nofollow">http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr1:1000..5000</a></p>
+<p>The part in purple comes from the browserURL value, the part in bold
+is added to the end of the URL to complete the browser URL. %26 is used
+to escape the ampersand present in the UCSC URL otherwise it interferes
+with the ampersands delimiting the various FlashVars parameters.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="span-idthe_basemap-classmw-headlinethe-basemapspan"><span id="The_BaseMap" class="mw-headline">The BaseMap</span></h3>
+<p>The baseMap file contains the data on the chromosome(s), their length,
+name, banding pattern and colors. A perl script is provided in the
+scripts directory that takes the cytoBandIdeo files produced by UCSC and
+converts them to the GViewer baseMap XML format. If this data is
+available you can find the appropriate UCSC file by going to
+<a href="http://hgdownload.cse.ucsc.edu/downloads.html"
+class="external free"
+rel="nofollow"><a href="http://hgdownload.cse.ucsc.edu/downloads.html">http://hgdownload.cse.ucsc.edu/downloads.html</a></a>, find
+your organism, find the annotation database and then see if there is a
+cytoBandIdeo.txt.gz file.</p>
+<p>The Flash GViewer lays out the chromosomes by sorting them according to
+the index attribute of the chromosome and currently divides them over
+two rows with half the chromosomes on the top and half on the bottom. If
+there were 10 chromosomes, Chromosomes 1-5 would be on the top row with
+Chr 1 on the left, Chr 5on the right, Chrs 6-10 would be on the bottom
+from left to right. Chromosomes are sized automatically based on the
+length of the first Chromosome, the assumption being that this is the
+longest. The scaling for all the other chromosomes and the mapping of
+genome coordinates (eg. basepairs) to flash coordinates (pixels) is all
+based off this value. The first chromosome is set to be 45% of the
+height of the Flash movie, you can set the <em>width</em> and <em>height</em> of the
+movie using the tags on the HTML page and the GViewer will resize the
+chromosomes accordingly. It doesn&rsquo;t scale the tooltip labels at this
+point so going really small makes the text illegible, going really large
+makes the text really large. It was developed with the movie having a
+size of 550px wide and 400px high so the text labels look good at this
+size, the further you stray from this the smaller/larger the text
+becomes. Try it and see how it looks, you can always zoom in using the
+Flash plugin&rsquo;s zoom feature.</p>
+<p>The baseMap XML format looks like this:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;?xml version=&#34;1.0&#34; standalone=&#34;yes&#34;?&gt;
+   &lt;genome&gt;
+   &lt;chromosome index=&#34;1&#34; number=&#34;1&#34; length=&#34;268121971&#34;&gt;
+        &lt;band index=&#34;1&#34; name=&#34;p13&#34;&gt;
+            &lt;start&gt;0&lt;/start&gt;
+            &lt;end&gt;10150087&lt;/end&gt;
+            &lt;stain&gt;gneg&lt;/stain&gt;
+            &lt;color&gt;0xFF0000&lt;/color&gt;
+        &lt;/band&gt;
+        &lt;band index=&#34;2&#34; name=&#34;p12&#34;&gt;
+            &lt;start&gt;10150087&lt;/start&gt;
+            &lt;end&gt;24291782&lt;/end&gt;
+            &lt;stain&gt;gvar&lt;/stain&gt;
+         &lt;/band&gt;
+         &lt;band index=&#34;3&#34; name=&#34;p11&#34;&gt;
+            &lt;start&gt;24291782&lt;/start&gt;
+            &lt;end&gt;38547522&lt;/end&gt;
+            &lt;stain&gt;gneg&lt;/stain&gt;
+        &lt;/band&gt;
+    &lt;/chromosome&gt;
+    &lt;chromosome index=&#34;2&#34; number=&#34;10&#34; length=&#34;110733352&#34;&gt;
+        &lt;band index=&#34;1&#34; name=&#34;q11&#34;&gt;
+            &lt;start&gt;0&lt;/start&gt;
+            &lt;end&gt;6255594&lt;/end&gt;
+            &lt;stain&gt;gpos&lt;/stain&gt;
+        &lt;/band&gt;
+        &lt;band index=&#34;2&#34; name=&#34;q12&#34;&gt;
+            &lt;start&gt;6255594&lt;/start&gt;
+            &lt;end&gt;26236148&lt;/end&gt;
+            &lt;stain&gt;gneg&lt;/stain&gt;
+        &lt;/band&gt;
+        &lt;band index=&#34;3&#34; name=&#34;q21&#34;&gt;
+            &lt;start&gt;26236148&lt;/start&gt;
+            &lt;end&gt;34825919&lt;/end&gt;
+            &lt;stain&gt;gpos&lt;/stain&gt;
+        &lt;/band&gt;
+    &lt;/chromosome&gt;
+ &lt;/genome&gt;
+</code></pre><p>The XML elements in this file are as follows, I&rsquo;ve used @xxxx to
+indicate attributes of elements</p>
+<table>
+<thead>
+<tr>
+<th>XML Element</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chromosome</td>
+<td>Each chromosome&rsquo;s data is contained within a chromosome element</td>
+</tr>
+<tr>
+<td>@index</td>
+<td>the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc).</td>
+</tr>
+<tr>
+<td>@number</td>
+<td>the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer</td>
+</tr>
+<tr>
+<td>@length</td>
+<td>the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML.</td>
+</tr>
+<tr>
+<td>band</td>
+<td>each band&rsquo;s data on the chromosome is contained within a band element</td>
+</tr>
+<tr>
+<td>@index</td>
+<td>index number for the band, used to sort the bands in an appropriate order</td>
+</tr>
+<tr>
+<td>@name</td>
+<td>name of band, eg q11, p12. Currently not used but could be used to display the band info when the mouse was placed over it</td>
+</tr>
+<tr>
+<td>start</td>
+<td>band start location in appropriate Units (probably basepairs)</td>
+</tr>
+<tr>
+<td>end</td>
+<td>band end location in appropriate Units (probably basepairs)</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Flash hex representation of the band color (begins with 0x rather than a #), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap.</td>
+</tr>
+<tr>
+<td>stain</td>
+<td>Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Stain abbreviations and colors</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stain Abbreviation</th>
+<th>Hex Color</th>
+<th>Swatch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gpos &amp; gpos100</td>
+<td>#000000</td>
+<td></td>
+</tr>
+<tr>
+<td>gpos75</td>
+<td>#444444</td>
+<td></td>
+</tr>
+<tr>
+<td>gpos66</td>
+<td>#666666</td>
+<td></td>
+</tr>
+<tr>
+<td>gpos50</td>
+<td>#888888</td>
+<td></td>
+</tr>
+<tr>
+<td>gpos33</td>
+<td>#AAAAAA</td>
+<td></td>
+</tr>
+<tr>
+<td>gpos25</td>
+<td>#CCCCCC</td>
+<td></td>
+</tr>
+<tr>
+<td>gneg</td>
+<td>#FFFFFF</td>
+<td></td>
+</tr>
+<tr>
+<td>gvar</td>
+<td>#CCCCCC</td>
+<td></td>
+</tr>
+<tr>
+<td>[default]</td>
+<td>#CCCCCC</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idthe_base_maps-classmw-headlinethe-base-mapsspan"><span id="The_Base_Maps" class="mw-headline">The Base Maps</span></h4>
+<p>The following base maps are provided in the standard distribution.</p>
+<p><strong>Basic Genome Maps</strong></p>
+<table>
+<thead>
+<tr>
+<th>Base Map File</th>
+<th>Map Description</th>
+<th>External Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rat_ideo.xml</td>
+<td>Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file</td>
+<td>Yes - &lt;a href=&ldquo;<a href="http://genome.ucsc.edu/%22">http://genome.ucsc.edu/&quot;</a> class=&ldquo;external text&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;UCSC Genome Browser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rgd_rat_ideo.xml</td>
+<td>Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file</td>
+<td>Yes - <a href="http://rgd.mcw.edu" class="external text" rel="nofollow">RGD</td>
+</tr>
+<tr>
+<td>Genome Browser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mouse_ideo.xml</td>
+<td>Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file</td>
+<td>Yes - &lt;a href=&ldquo;<a href="http://genome.ucsc.edu/%22">http://genome.ucsc.edu/&quot;</a> class=&ldquo;external text&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;UCSC Genome Browser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>human_ideo.xml</td>
+<td>Human genome with cytogenetic bands, created from UCSC cytoBandIdeo file</td>
+<td>Yes - &lt;a href=&ldquo;<a href="http://genome.ucsc.edu/%22">http://genome.ucsc.edu/&quot;</a> class=&ldquo;external text&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;UCSC Genome Browser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>celegans_ideo.xml</td>
+<td>C. elegans genome, no bands.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comparative Maps (Synteny data from RGD VCMap SEQBASD v1.0)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Base Map File</th>
+<th>Map Description</th>
+<th>External Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>human-rat_synteny.xml</td>
+<td>Human genome with bands corresponding to syntenic regions in Rat</td>
+<td>No</td>
+</tr>
+<tr>
+<td>human-mouse_synteny.xml</td>
+<td>Human genome with bands corresponding to syntenic regions in Mouse</td>
+<td>No</td>
+</tr>
+<tr>
+<td>rat-human_synteny.xml</td>
+<td>Rat genome with bands corresponding to syntenic regions in Human</td>
+<td>No</td>
+</tr>
+<tr>
+<td>rat-mouse_synteny.xml</td>
+<td>Rat genome with bands corresponding to syntenic regions in Mouse</td>
+<td>No</td>
+</tr>
+<tr>
+<td>mouse-rat_synteny.xml</td>
+<td>Mouse genome with bands corresponding to syntenic regions in Rat</td>
+<td>No</td>
+</tr>
+<tr>
+<td>mouse-human_synteny.xml</td>
+<td>Mouse genome with bands corresponding to syntenic regions in Human</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="span-idthe_annotation_data-classmw-headlinethe-annotation-dataspan"><span id="The_Annotation_Data" class="mw-headline">The Annotation Data</span></h3>
+<p>Flash GViewer can read annotation data in the XML format shown below
+from a static text file or dynamically from a server-side script. The
+annotation consists of multiple feature elements which provide the basic
+information for each feature to be displayed. The server-side script
+would probably query a database for this information and then return the
+XML data as its output.</p>
+<p>The annotation XML format looks like this:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;genome&gt;
+ &lt;feature&gt;
+  &lt;chromosome&gt;7&lt;/chromosome&gt;
+  &lt;start&gt;10150087&lt;/start&gt;
+  &lt;end&gt;10150087&lt;/end&gt;
+  &lt;type&gt;gene&lt;/type&gt;
+  &lt;label&gt;Abc1&lt;/label&gt;
+  &lt;color&gt;0xFF0000&lt;/color&gt;
+  &lt;link&gt;http://rgd.mcw.edu/showReport.cgi?id=45678&lt;/link&gt;
+&lt;/feature&gt;
+&lt;feature&gt;
+  &lt;chromosome&gt;6&lt;/chromosome&gt;
+  &lt;start&gt;20150087&lt;/start&gt;
+  &lt;end&gt;40150087&lt;/end&gt;
+  &lt;type&gt;qtl&lt;/type&gt;
+  &lt;label&gt;Bp123&lt;/label&gt;
+  &lt;color&gt;0x33AA33&lt;/color&gt;
+  &lt;link&gt;http://rgd.mcw.edu/showReport.cgi?id=12345&lt;/link&gt;
+ &lt;/feature&gt;
+&lt;/genome&gt;
+</code></pre>
+<table class="wikitable">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>XML Element</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>chromosome</td>
+<td>The chromosome number that this feature belongs to</td>
+</tr>
+<tr class="even">
+<td>start</td>
+<td>start location in appropriate Units (probably basepairs)</td>
+</tr>
+<tr class="odd">
+<td>end</td>
+<td>end location in appropriate Units (probably basepairs)</td>
+</tr>
+<tr class="even">
+<td>type</td>
+<td>feature type, used to determine what glyph to use when rendering the
+feature - currently two types gene and qtl. Gene is displayed as a
+triangle with the point towards the chromosome at the location of the
+feature. QTL is displayed as a bar stretching from the start location to
+the end location.</td>
+</tr>
+<tr class="odd">
+<td>label</td>
+<td>The tooltip text that is displayed when the mouse is placed over the
+feature, or when the feature is displayed on the larger scale single
+chromosome view
+<p>color Flash hex representation of the band color (begins with 0x
+rather than a #), eg. 0xFF0000 would give a red feature. Can be used to
+create a customized color scheme for each individual feature.</p></td>
+</tr>
+<tr class="even">
+<td>link</td>
+<td>URL to link out to if the user clicks on the feature, eg. to go to a
+gene report when they click on a gene</td>
+</tr>
+</tbody>
+</table>
+<h3 id="span-idweb_interface_26_cgi_script-classmw-headlineweb-interface--cgi-scriptspan"><span id="Web_Interface_.26_CGI_script" class="mw-headline">Web Interface &amp; CGI script</span></h3>
+<p>To allow users to upload their own features for display on GViewer, a
+simple web form is available that takes annotation from a text field or
+uploaded file and displays it against the base map selected by the user.
+This allows users to view their own data against a variety of different
+base maps (eg. Mouse-Human syntenic map, Mouse-Rat syntenic map).
+Available options include:</p>
+<p>Upload annotations in a simple text format, either by pasting into the
+form or uploading a file Select from one of the available base maps (or
+create your own and edit the list accordingly) Customize the movie&rsquo;s
+color scheme. The background color, bar color and wedge colors can be
+modified using a pop-up color selector. Select different movie sizes.
+Three size options are provided - normal, large and extra large.
+Enlarging the movie can be useful for taking better screenshots for
+publication, etc. Web Interface Installation</p>
+<p>1. The HTML page for the web interface is part of the main file
+distribution and is /GViewer/index.html. This contains an HTML form that
+points to the perl cgi script (see 2, below) and is initially configured
+to point to /cgi-bin/gviewer_annotation.cgi. The action attribute of the
+form tag should be modified if the perl script is installed in a
+different location.</p>
+<p>&lt;form name=&ldquo;gviewer_form&rdquo; method=&ldquo;post&rdquo;
+action=&quot;/cgi-bin/gviewer_annotation.cgi&rdquo; enctype=&ldquo;multipart/form-data&rdquo;&gt;</p>
+<p>The form contains a list of the available base maps provided with
+GViewer. These should be edited to remove any that are inappropriate and
+to add in any custom base maps that you may have created. The value
+attribute of the option tag should be the basemap&rsquo;s file name and these
+basemaps are assumed to be in the GViewer/data directory.</p>
+<pre><code>&lt;select name=&quot;baseMap&quot;&gt;
+&lt;option value=&quot;rat_ideo.xml&quot; selected&gt;Rat Cytogenetic Map&lt;/option&gt;
+&lt;option value=&quot;mouse_ideo.xml&quot;&gt;Mouse Cytogenetic Map&lt;/option&gt;
+&lt;option value=&quot;human_ideo.xml&quot;&gt;Human Cytogenetic Map&lt;/option&gt;
+ ...
+ &lt;/select&gt;
+</code></pre>
+<p>The web page can be customized to fit in with an existing web site by
+modifying the .css stylesheet, changing the header graphic and the
+gradient.gif file used to create the background for the form header
+rows. The form is the only part of the page that is required so the
+header and footer could be deleted and the form could be copied into an
+existing web page with no ill effects.</p>
+<p>2. Move the contents of the cgi-bin/ directory to your server&rsquo;s cgi-bin
+directory. The current script is a single perl script that relies only
+on the CGI.pm module. Check that the path to the perl executable is
+correct at the top of the script and that CGI.pm is available. The perl
+script has a couple of variables that may need to be modified to suit
+the location of the GViewer files on your server.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"># absolute URL pointing to GViewer directory holding movie and data
+ 
+my $pathToGViewerWebDir = &#34;/Gviewer&#34;;
+ 
+# absolute URL pointing to GViewer style sheet, probably the same as the webdir, above.
+my $pathToStyleSheet = &#34;/Gviewer&#34;;
+</code></pre><p>3. Text Annotation file format. The format of the annotation data that
+can be uploaded is very simple and is designed to be easy to create from
+typical spreadsheet applications or by manual typing into a text
+document. It consists of the same data found in the XML file with a
+single tab-delimited row for each feature. The data is in the following
+order:</p>
+<pre><code>Chromosome [tab] start_position [tab] end_position [tab] type [tab] label_text [tab] link (optional)
+</code></pre>
+<p>The data used in the example annotation XML file above would look like
+this and could be pasted into the form or uploaded as a text file:</p>
+<pre><code>7 10150087 10150087 gene Abc1 http://rgd.mcw.edu/showReport.cgi?id=45678
+6 20150087 40150087 qtl Bp123 http://rgd.mcw.edu/showReport.cgi?id=12345
+</code></pre>
+<h3 id="span-idjavascript_-_flash_connectivity-classmw-headlinejavascript---flash-connectivityspan"><span id="Javascript_-_Flash_Connectivity" class="mw-headline">Javascript - Flash Connectivity</span></h3>
+<p>It is possible to use javascript to control basic functions in the flash
+movie. This allows a higher degree of interactivity between the web
+content and the flash movie itself by allowing javascript to trigger
+actions in the movie without the User having to directly interact with
+the movie itself. This feature uses the
+<a href="http://weblogs.macromedia.com/flashjavascript/"
+class="external text" rel="nofollow">Flash/Javascript Integration
+Kit</a> and has been tested on Mac (Safari, Firefox) and windows (IE6)
+using Flash Player 7 and 8. A number of additional flash .swf and
+actionscript files and some javascript files are required, these are
+included in the GViewer distribution so no further installation is
+necessary. Currently the following functions are available for control
+via Javascript.</p>
+<table>
+<thead>
+<tr>
+<th>Flash function</th>
+<th>Function description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setHighlight(featureName)</td>
+<td>Turns on the highlight and label for the feature with the label &lsquo;featureName&rsquo;</td>
+</tr>
+<tr>
+<td>unsetHighlight(featureName)</td>
+<td>Turns off the highlight and label for the feature with the label &lsquo;featureName&rsquo;</td>
+</tr>
+<tr>
+<td>getAnnotationData(format)</td>
+<td>Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc.</td>
+</tr>
+</tbody>
+</table>
+<p>To call these functions using Javascript, a few changes are required in
+the web page containing the flash movie:</p>
+<p>Import the JavaScriptFlashGateway.js javascript file.</p>
+<pre><code> &lt;script type=&quot;text/javascript&quot; src=&quot;./GViewer/javascript/JavaScriptFlashGateway.js&quot;&gt;&lt;/script&gt;
+
+ Configure the flash proxy that acts as a bridge between the javascript and GViewer flash movie. A unique ID (uid) is created that configures the connection between javascript and a particular instance of the flash movie. If
+ you have more than one GViewer on the page, you should use different uids to communicate with them individually.
+ There is then a simple javascript function that takes the name of a feature and an appropriate action parameter and then calls the setHighlight or unsetHighlight methods in the flash movie.
+
+ &lt;script type=&quot;text/javascript&quot;&gt;
+
+ var uid = 1234567890; // needs to be unique on page, gets passed to Flash movie too
+
+ var flashProxy = new FlashProxy(uid,&quot;./GViewer/javascript/JavaScriptFlashGateway.swf&quot;);
+
+ function doHighlight(action, featureName) {
+
+ if (action == 'set') {
+    flashProxy.call('setHighlight', featureName);
+ }
+ else {
+    flashProxy.call('unsetHighlight', featureName);
+   }
+ }
+
+ // Function to trigger the Flash method to get the annotation data in html format
+ function getAnnotationData() {
+    flashProxy.call('getAnnotationData', 'html');
+ }
+
+ // Function called by flash to display the annotation data
+ function displayAnnotationData(data) {
+   var generator=window.open('','Annotation Data','height=400,width=600');
+
+   generator.document.write('&lt;html&gt;&lt;head&gt;&lt;title&gt;Annotation Data&lt;/title&gt;');
+   generator.document.write('&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;');
+   generator.document.write('&lt;/head&gt;&lt;body&gt;');
+   generator.document.write('===Known Issues with the Flash/Javascript connection===
+</code></pre>
+<p>Using <code>mouseOver</code> or <code>mouseOut</code> can cause the highlight to accidentally
+stay on if another <code>mouseOver</code> event happens before the <code>mouseOut</code> event
+(can happen if two <code>mouseOver</code> links are very close together on the page
+and the user moves the mouse quickly from one to the other).</p>
+<p>Current Solution - Moving the mouse on and off the link a few times
+should make the highlight go away.</p>
+<h3 id="span-idknown_issues-classmw-headlineknown-issuesspan"><span id="Known_Issues" class="mw-headline">Known Issues</span></h3>
+<ul>
+<li>If you load many features (hundreds), Flash is probably going to start
+running slowly - I havent done any testing on this as it is rather
+dependent on the hardware the user is using to view the webpage but
+each new feature creates a new MovieClip in Flash and ultimately this
+can start to bog it down.</li>
+<li>Similarly, if your baseMap has many bands, the same thing may start to
+happen, again I have no quantitative data on this but if you have
+hundreds of bands (or syntenic segments or whatever the &lsquo;bands&rsquo;
+represent in your situation) be aware that things might start to slow
+down. This is not probably not going to be a great solution to viewing
+an entire set of genome annotations (25,000 genes, 600,000 ESTs, etc),
+they will need to be filtered somehow. If you try a really large
+dataset, let me know how it goes!</li>
+<li>If you have lots of features that overlap on the chromosome, when you
+view an individual chromosome the current layout manager displays them
+all so they dont overlap - the problem being this may spread outside
+of the viewable area. You can now turn the labels off in the zoomed
+view which will alleviate this problem to some extent. The features
+are compressed on the genome view so they will overlap but all will be
+visible</li>
+<li>Debugging - the SWF has limited debugging messages at this point, so
+if your XML files are incorrectly formatted, etc. it wont tell you
+what&rsquo;s going wrong, you just wont get past the &lsquo;Loading&rsquo; stage, not
+too friendly I agree. It will tell you if no annotation file was
+provided or if it has no baseFile.</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253ARGD" title="Category%253ARGD">RGD</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Flash_GViewer_Documentation"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:16 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">62,208 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

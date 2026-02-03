@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAKER Tutorial 2013 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautomaker-tutorial-2013span"><span dir="auto">MAKER Tutorial 2013</span></h1>
+<p>(Redirected from <a href="MAKER_Tutorial">MAKER
+Tutorial</a></p>
+<p><a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
+class="external text" rel="nofollow">Get MAKER Bling!</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#About_MAKER"><span class="tocnumber">1</span> <span class="toctext">About
+MAKER</span></a></li>
+<li><a href="#Introduction_to_Genome_Annotation"><span class="tocnumber">2</span> <span class="toctext">Introduction
+to Genome Annotation</span></a>
+<ul>
+<li><a href="#What_Are_Annotations.3F"><span class="tocnumber">2.1</span> <span class="toctext">What Are
+Annotations?</span></a></li>
+<li><a href="#Importance_of_Genome_Annotations"><span class="tocnumber">2.2</span> <span class="toctext">Importance
+of Genome Annotations</span></a></li>
+<li><a href="#Effect_of_NextGen_Sequencing_on_the_Annotation_Process"><span class="tocnumber">2.3</span> <span class="toctext">Effect of
+NextGen Sequencing on the Annotation
+Process</span></a></li>
+</ul>
+</li>
+<li><a href="#MAKER_Overview"><span class="tocnumber">3</span> <span class="toctext">MAKER
+Overview</span></a>
+<ul>
+<li><a href="#What_does_MAKER_do.3F"><span class="tocnumber">3.1</span> <span class="toctext">What does
+MAKER do?</span></a></li>
+<li><a href="#What_sets_MAKER_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F"><span class="tocnumber">3.2</span> <span class="toctext">What sets
+MAKER apart from other tools (<em>ab initio</em> gene predictors
+etc.)?</span></a></li>
+<li><a href="#Emerging_vs._Classic_Model_Genomes"><span class="tocnumber">3.3</span> <span class="toctext">Emerging
+vs. Classic Model
+Genomes</span></a></li>
+<li><a href="#Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes"><span class="tocnumber">3.4</span> <span class="toctext">Comparison
+of Algorithm Performance on Model vs. Emerging
+Genomes</span></a></li>
+</ul>
+</li>
+<li><a href="#Installation"><span class="tocnumber">4</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#Prerequisites"><span class="tocnumber">4.1</span>
+<span class="toctext">Prerequisites</span></a></li>
+<li><a href="#The_MAKER_Package"><span class="tocnumber">4.2</span> <span class="toctext">The MAKER
+Package</span></a></li>
+</ul>
+</li>
+<li><a href="#Getting_Started_with_MAKER"><span class="tocnumber">5</span> <span class="toctext">Getting
+Started with MAKER</span></a>
+<ul>
+<li><a href="#Note"><span class="tocnumber">5.1</span>
+<span class="toctext">Note</span></a></li>
+<li><a href="#Running_MAKER_with_example_data"><span class="tocnumber">5.2</span> <span class="toctext">Running
+MAKER with example data</span></a></li>
+</ul>
+</li>
+<li><a href="#Details_of_What_is_Going_on_Inside_of_MAKER"><span class="tocnumber">6</span> <span class="toctext">Details of
+What is Going on Inside of
+MAKER</span></a>
+<ul>
+<li><a href="#Repeat_Masking"><span class="tocnumber">6.1</span> <span class="toctext">Repeat
+Masking</span></a></li>
+<li><a href="#Ab_Initio_Gene_Prediction"><span class="tocnumber">6.2</span> <span class="toctext"><em>Ab
+Initio</em> Gene Prediction</span></a></li>
+<li><a href="#RNA_and_Protein_Evidence_Alignment"><span class="tocnumber">6.3</span> <span class="toctext">RNA and
+Protein Evidence
+Alignment</span></a></li>
+<li><a href="#Polishing_Evidence_Alignments"><span class="tocnumber">6.4</span> <span class="toctext">Polishing
+Evidence Alignments</span></a></li>
+<li><a href="#Integrating_Evidence_to_Synthesize_Annotations"><span class="tocnumber">6.5</span>
+<span class="toctext">Integrating Evidence to Synthesize
+Annotations</span></a></li>
+<li><a href="#Selecting_and_Revising_the_Final_Gene_Model"><span class="tocnumber">6.6</span> <span class="toctext">Selecting
+and Revising the Final Gene
+Model</span></a></li>
+<li><a href="#Quality_Control"><span class="tocnumber">6.7</span> <span class="toctext">Quality
+Control</span></a></li>
+</ul>
+</li>
+<li><a href="#MAKER.27s_Output"><span class="tocnumber">7</span> <span class="toctext">MAKER&rsquo;s
+Output</span></a></li>
+<li><a href="#Viewing_MAKER_Annotations"><span class="tocnumber">8</span> <span class="toctext">Viewing MAKER
+Annotations</span></a>
+<ul>
+<li><a href="#Apollo"><span class="tocnumber">8.1</span>
+<span class="toctext">Apollo</span></a></li>
+</ul>
+</li>
+<li><a href="#Advanced_MAKER_Configuration.2C_Re-annotation_Options.2C_and_Improving_Annotation_Quality"><span class="tocnumber">9</span> <span class="toctext">Advanced MAKER
+Configuration, Re-annotation Options, and Improving Annotation
+Quality</span></a>
+<ul>
+<li><a href="#Configuration_Files_in_Detail"><span class="tocnumber">9.1</span>
+<span class="toctext">Configuration Files in
+Detail</span></a>
+<ul>
+<li><a href="#Genome_Options_.28Required.29"><span class="tocnumber">9.1.1</span> <span class="toctext">Genome
+Options (Required)</span></a></li>
+<li><a href="#Re-annotation_Using_MAKER_Derived_GFF3"><span class="tocnumber">9.1.2</span>
+<span class="toctext">Re-annotation Using MAKER Derived
+GFF3</span></a></li>
+<li><a href="#RNA_.28EST.29_Evidence"><span class="tocnumber">9.1.3</span> <span class="toctext">RNA
+(EST) Evidence</span></a></li>
+<li><a href="#Protein_Homology_Evidence"><span class="tocnumber">9.1.4</span>
+<span class="toctext">Protein Homology
+Evidence</span></a></li>
+<li><a href="#Repeat_Masking_2"><span class="tocnumber">9.1.5</span> <span class="toctext">Repeat
+Masking</span></a></li>
+<li><a href="#Gene_Prediction"><span class="tocnumber">9.1.6</span> <span class="toctext">Gene
+Prediction</span></a></li>
+<li><a href="#Other_Annotation_Feature_Types"><span class="tocnumber">9.1.7</span> <span class="toctext">Other
+Annotation Feature Types</span></a></li>
+<li><a href="#External_Application_Behavior_Options"><span class="tocnumber">9.1.8</span>
+<span class="toctext">External Application Behavior
+Options</span></a></li>
+<li><a href="#MAKER_Behavior_Options"><span class="tocnumber">9.1.9</span> <span class="toctext">MAKER
+Behavior Options</span></a></li>
+</ul>
+</li>
+<li><a href="#Training_ab_initio_Gene_Predictors"><span class="tocnumber">9.2</span> <span class="toctext">Training
+<em>ab initio</em> Gene
+Predictors</span></a></li>
+<li><a href="#MAKER_Web_Annotation_Service"><span class="tocnumber">9.3</span> <span class="toctext">MAKER Web
+Annotation Service</span></a></li>
+<li><a href="#mRNAseq"><span class="tocnumber">9.4</span>
+<span class="toctext">mRNAseq</span></a></li>
+<li><a href="#Improving_Annotation_Quality_with_MAKER.27s_AED_score"><span class="tocnumber">9.5</span> <span class="toctext">Improving
+Annotation Quality with MAKER&rsquo;s AED
+score</span></a></li>
+<li><a href="#Merge.2FResolve_Legacy_Annotations"><span class="tocnumber">9.6</span>
+<span class="toctext">Merge/Resolve Legacy
+Annotations</span></a></li>
+<li><a href="#MPI_Support"><span class="tocnumber">9.7</span> <span class="toctext">MPI
+Support</span></a></li>
+<li><a href="#User_Interface_for_Local_MAKER_Installation"><span class="tocnumber">9.8</span> <span class="toctext">User
+Interface for Local MAKER
+Installation</span></a></li>
+<li><a href="#MAKER_Accessory_Scripts"><span class="tocnumber">9.9</span> <span class="toctext">MAKER
+Accessory Scripts</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idabout_maker-classmw-headlineabout-makerspan"><span id="About_MAKER" class="mw-headline">About MAKER</span></h2>
+<p>MAKER is an easy-to-use genome annotation pipeline designed for small
+research groups with little bioinformatics experience. However, MAKER is
+also designed to be scalable and is thus appropriate for projects of any
+size including use by large sequence centers. MAKER can be used for <em>de
+novo</em> annotation of newly sequenced genomes, for updating existing
+annotations to reflect new evidence, or just to combine annotations,
+evidence, and quality control statistics for use with other GMOD
+programs like <a href="GBrowse.1" title="GBrowse">GBrowse</a>,
+<a href="JBrowse.1" title="JBrowse">JBrowse</a>,
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, and
+<a href="Apollo.1" title="Apollo">Apollo</a>.</p>
+<p>MAKER has been used in many genome annotation projects:</p>
+<ul>
+<li><em>Schmidtea mediterranea</em> - planaria (A Alvarado, Stowers Institute)
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/18025269"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Pythium ultimum</em> oomycete (R Buell, Michigan State Univ.)
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/20626842"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Pinus taeda</em> - Loblolly pine (A Stambolia-Kovach, Univ. California
+Davis) <a href="http://www.ncbi.nlm.nih.gov/pubmed/20609256"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Atta cephalotes</em> - leaf-cutter ant (C Currie, Univ. Wisconsin,
+Madison) <a href="http://www.ncbi.nlm.nih.gov/pubmed/21347285"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Linepithema humile</em> - Argentine ant (CD Smith, San Francisco State
+Univ.) <a href="http://www.ncbi.nlm.nih.gov/pubmed/21282631"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Pogonomyrmex barbatus</em> - red harvester Ant (J Gadau, Arizona State
+Univ.) <a href="http://www.ncbi.nlm.nih.gov/pubmed/21282651"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Conus bullatus</em> - cone snail (B Olivera Univ. Utah)
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/21266071"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Petromyzon marinus</em> - Sea lamprey (W Li, Michigan State)
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/23435085"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Fusarium circinatum</em> - pine pitch canker (B Wingfield, Univ.
+Pretoria) - Manuscript in preparation</li>
+<li><em>Cardiocondyla obscurior</em> - tramp ant (J Gadau, Arizona State Univ.) -
+Manuscript in preparation</li>
+<li><em>Columba livia</em> - pigeon (M Shapiro, Univ. Utah) - Manuscript in
+preparation</li>
+<li><em>Megachile routundata</em> alfalfa leafcutter bee () - Manuscript in
+preparation</li>
+<li><em>Latimeria menadoensis</em> - african coelacanth () -
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/23598338"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Nannochloropsis</em> - micro algae (SH Shiu, Michigan State Univ.)
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/23166516"
+class="external text" rel="nofollow">PubMed</a></li>
+<li><em>Arabidopsis</em> thale cress re-annotation (E Huala, TAIR) - Manuscript
+in preparation</li>
+<li><em>Cronartium quercuum</em> - rust fungus (JM Davis, Univ. Florida) -
+Annotation in progress</li>
+<li><em>Ophiophagus hannah</em> - King cobra (T. Castoe, Univ. Colorado) -
+Annotation in progress</li>
+<li><em>Python molurus</em> - Burmese python (T. Castoe, Univ. Colorado) -
+Annotation in progress</li>
+<li><em>Lactuca sativa</em> - Lettuce (RW Michelmore) - Annotation in progress</li>
+<li>parasitic nematode genomes (M Mitreva, Washington Univ)</li>
+<li><em>Diabrotica virgifera</em> - corn rootworm beetle (H Robertson, Univ.
+Illinois)</li>
+<li><em>Oryza sativa</em> - rice re-annotation (R Buell, MSU)</li>
+<li><em>Zea mays</em> - maize re-annotation (C Lawrence, MaizeGDP)</li>
+<li><em>Cephus cinctus</em> - wheat stem sawfly (H Robertson, Univ. Illinois)</li>
+<li><em>Rhagoletis pomonella</em> - apple maggot fly (H Robertson, Univ.
+Illinois)</li>
+</ul>
+<h2 id="span-idintroduction_to_genome_annotation-classmw-headlineintroduction-to-genome-annotationspan"><span id="Introduction_to_Genome_Annotation" class="mw-headline">Introduction to Genome Annotation</span></h2>
+<h3 id="span-idwhat_are_annotations3f-classmw-headlinewhat-are-annotationsspan"><span id="What_Are_Annotations.3F" class="mw-headline">What Are Annotations?</span></h3>
+<p>Annotations are descriptions of different features of the genome, and
+they can be structural or functional in nature.</p>
+<p>Examples:</p>
+<ul>
+<li>Structural Annotations: exons, introns, UTRs, splice forms
+(<a href="http://www.sequenceontology.org/" class="external text"
+rel="nofollow">Sequence Onotology</a>)</li>
+</ul>
+<p>Genome project from sequencing to experimental application of
+annotations</p>
+<p>Genome sequence itself is not very useful. The first question that
+occurs to most of us when a genome is sequenced is, &ldquo;where are the
+genes?&rdquo; To identify the genes we need to annotate the genome. And while
+most researchers probably don&rsquo;t give annotations a lot of thought, they
+use them everyday.</p>
+<p>Examples of Annotation Databases:</p>
+<ul>
+<li><a href="Category%253AGMOD_Schools" title="Category%253AGMOD Schools">GMOD Schools</a></li>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/MAKER_Tutorial_2013" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:47 on 29 July
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">125,258 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

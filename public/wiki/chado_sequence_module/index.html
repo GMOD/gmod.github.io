@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Sequence Module - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-sequence-modulespan"><span dir="auto">Chado Sequence Module</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Features"><span class="tocnumber">2</span>
+<span class="toctext">Features</span></a>
+<ul>
+<li><a href="#Names_of_Features"><span class="tocnumber">2.1</span> <span class="toctext">Names of
+Features</span></a></li>
+<li><a href="#Feature_Synonyms"><span class="tocnumber">2.2</span> <span class="toctext">Feature
+Synonyms</span></a></li>
+<li><a href="#Feature_Locations"><span class="tocnumber">2.3</span> <span class="toctext">Feature
+Locations</span></a>
+<ul>
+<li><a href="#The_Feature_Location_Graph"><span class="tocnumber">2.3.1</span> <span class="toctext">The
+Feature Location Graph</span></a></li>
+<li><a href="#Feature_Coordinates"><span class="tocnumber">2.3.2</span>
+<span class="toctext">Feature
+Coordinates</span></a>
+<ul>
+<li><a href="#Multiple_Locations_for_a_Feature"><span class="tocnumber">2.3.2.1</span>
+<span class="toctext">Multiple Locations for a
+Feature</span></a></li>
+</ul>
+</li>
+<li><a href="#Difference_Between_the_chado_Location_Model_and_Other_Schemas"><span class="tocnumber">2.3.3</span>
+<span class="toctext">Difference Between the chado Location Model
+and Other
+Schemas</span></a></li>
+</ul>
+</li>
+<li><a href="#Feature_Rank"><span class="tocnumber">2.4</span> <span class="toctext">Feature
+Rank</span></a></li>
+<li><a href="#Extensible_Feature_Properties"><span class="tocnumber">2.5</span> <span class="toctext">Extensible
+Feature Properties</span></a></li>
+<li><a href="#Linking_Features_to_External_Databases"><span class="tocnumber">2.6</span> <span class="toctext">Linking
+Features to External
+Databases</span></a></li>
+<li><a href="#Feature_Annotations"><span class="tocnumber">2.7</span> <span class="toctext">Feature
+Annotations</span></a></li>
+<li><a href="#Relationships_Between_Features"><span class="tocnumber">2.8</span>
+<span class="toctext">Relationships Between
+Features</span></a></li>
+<li><a href="#Compliance"><span class="tocnumber">2.9</span>
+<span class="toctext">Compliance</span></a>
+<ul>
+<li><a href="#Chado_Compliance_Layers"><span class="tocnumber">2.9.1</span> <span class="toctext">Chado
+Compliance Layers</span></a>
+<ul>
+<li><a href="#Level_0:_Relational_Schema"><span class="tocnumber">2.9.1.1</span>
+<span class="toctext">Level 0: Relational
+Schema</span></a></li>
+<li><a href="#Layer_1:_Ontologies"><span class="tocnumber">2.9.1.2</span>
+<span class="toctext">Layer 1:
+Ontologies</span></a></li>
+<li><a href="#Level_2:_Graph"><span class="tocnumber">2.9.1.3</span>
+<span class="toctext">Level 2: Graph</span></a></li>
+</ul>
+</li>
+<li><a href="#Examples:_Current_implementations"><span class="tocnumber">2.9.2</span>
+<span class="toctext">Examples: Current
+implementations</span></a>
+<ul>
+<li><a href="#SO_terms_used_for_Standard_Central-dogma_Gene_Model"><span class="tocnumber">2.9.2.1</span> <span class="toctext">SO
+terms used for Standard Central-dogma Gene
+Model</span></a></li>
+<li><a href="#SO_terms_Used_for_Storing_Alignments"><span class="tocnumber">2.9.2.2</span> <span class="toctext">SO
+terms Used for Storing
+Alignments</span></a></li>
+<li><a href="#feature_relationship_Types"><span class="tocnumber">2.9.2.3</span>
+<span class="toctext">feature_relationship
+Types</span></a></li>
+<li><a href="#featureloc_Policy"><span class="tocnumber">2.9.2.4</span>
+<span class="toctext">featureloc
+Policy</span></a></li>
+<li><a href="#Non-central_Dogma_Gene_Models"><span class="tocnumber">2.9.2.5</span>
+<span class="toctext">Non-central Dogma Gene
+Models</span></a></li>
+<li><a href="#Other_Features"><span class="tocnumber">2.9.2.6</span>
+<span class="toctext">Other Features</span></a></li>
+<li><a href="#Derivable_Feature_Types"><span class="tocnumber">2.9.2.7</span>
+<span class="toctext">Derivable Feature
+Types</span></a></li>
+<li><a href="#Sequence_Variants"><span class="tocnumber">2.9.2.8</span>
+<span class="toctext">Sequence
+Variants</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Tables"><span class="tocnumber">3</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Table:_feature"><span class="tocnumber">3.1</span> <span class="toctext">Table:
+feature</span></a></li>
+<li><a href="#Table:_feature_cvterm"><span class="tocnumber">3.2</span> <span class="toctext">Table:
+feature_cvterm</span></a></li>
+<li><a href="#Table:_feature_cvterm_dbxref"><span class="tocnumber">3.3</span> <span class="toctext">Table:
+feature_cvterm_dbxref</span></a></li>
+<li><a href="#Table:_feature_cvterm_pub"><span class="tocnumber">3.4</span> <span class="toctext">Table:
+feature_cvterm_pub</span></a></li>
+<li><a href="#Table:_feature_cvtermprop"><span class="tocnumber">3.5</span> <span class="toctext">Table:
+feature_cvtermprop</span></a></li>
+<li><a href="#Table:_feature_dbxref"><span class="tocnumber">3.6</span> <span class="toctext">Table:
+feature_dbxref</span></a></li>
+<li><a href="#Table:_feature_pub"><span class="tocnumber">3.7</span> <span class="toctext">Table:
+feature_pub</span></a></li>
+<li><a href="#Table:_feature_pubprop"><span class="tocnumber">3.8</span> <span class="toctext">Table:
+feature_pubprop</span></a></li>
+<li><a href="#Table:_feature_relationship"><span class="tocnumber">3.9</span> <span class="toctext">Table:
+feature_relationship</span></a></li>
+<li><a href="#Table:_feature_relationship_pub"><span class="tocnumber">3.10</span> <span class="toctext">Table:
+feature_relationship_pub</span></a></li>
+<li><a href="#Table:_feature_relationshipprop"><span class="tocnumber">3.11</span> <span class="toctext">Table:
+feature_relationshipprop</span></a></li>
+<li><a href="#Table:_feature_relationshipprop_pub"><span class="tocnumber">3.12</span> <span class="toctext">Table:
+feature_relationshipprop_pub</span></a></li>
+<li><a href="#Table:_feature_synonym"><span class="tocnumber">3.13</span> <span class="toctext">Table:
+feature_synonym</span></a></li>
+<li><a href="#Table:_featureloc"><span class="tocnumber">3.14</span> <span class="toctext">Table:
+featureloc</span></a></li>
+<li><a href="#Table:_featureloc_pub"><span class="tocnumber">3.15</span> <span class="toctext">Table:
+featureloc_pub</span></a></li>
+<li><a href="#Table:_featureprop"><span class="tocnumber">3.16</span> <span class="toctext">Table:
+featureprop</span></a></li>
+<li><a href="#Table:_featureprop_pub"><span class="tocnumber">3.17</span> <span class="toctext">Table:
+featureprop_pub</span></a></li>
+<li><a href="#Table:_synonym"><span class="tocnumber">3.18</span> <span class="toctext">Table:
+synonym</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<p>A central module in Chado is the sequence module. The fundamental table
+within this module is the feature table, for describing biological
+sequence features. Chado defines a feature to be a region of a
+biological polymer (typically a DNA, RNA, or a polypeptide molecule) or
+an aggregate of regions on this polymer. As the term is used here,
+region can be the entire extent of the molecule, or a junction between
+two bases. Features can be typed according to an ontology, they can be
+localized relative to other features, and they can form part-whole and
+other relationships with other features.</p>
+<p>You may find these related documents useful:</p>
+<ul>
+<li><a href="Chado_Manual" title="Chado Manual">Chado Manual</a></li>
+<li><a href="Chado_Best_Practices" title="Chado Best Practices">Chado Best Practices</a> -
+many issues specific to the Sequence module are discussed</li>
+<li><a href="Chado_FAQ" title="Chado FAQ">Chado FAQ</a></li>
+<li><a href="Introduction_to_Chado" title="Introduction to Chado">Introduction to Chado</a></li>
+<li><a href="Chado_CV_Module" title="Chado CV Module">Chado cv module</a> - the Sequence
+module makes extensive use of controlled vocabularies</li>
+</ul>
+<h1 id="span-idfeatures-classmw-headlinefeaturesspan"><span id="Features" class="mw-headline">Features</span></h1>
+<p>Chado does not distinguish between a sequence and a sequence feature, on
+the theory that a feature is a piece of a sequence, and a piece of a
+sequence is a sequence. Both are represented as a row in the
+<a href="#Table:_feature">feature</a> table.</p>
+<p>There are many different types of features. Examples include gene, exon,
+transcript, regulatory region, chromosome, sequence variation,
+polypeptide, protein domain and cross-genome match regions. Chado does
+not have a different table for each kind of feature; all features are
+stored in the <a href="#Table:_feature">feature</a> table.</p>
+<p>Feature types are taken from the
+<a href="http://www.sequenceontology.org/" class="external text"
+rel="nofollow">Sequence Ontology</a> controlled vocabulary (see also
+<a href="Chado_CV_Module" title="Chado CV Module">Controlled Vocabulary module</a>, also
+known as <em>cv</em>). Types of feature are differentiated using a <em>type_id</em>
+column, which is a foreign key to the
+<a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a> table in the cv
+(ontology) module, described <a href="Chado_CV_Module" title="Chado CV Module">here</a>.
+This allows us to type features according to the Sequence Ontology. The
+use of ontologies to type tables gives Chado a subtyping mechanism,
+which is absent from the standard relational model. For example, SO
+tells us that mRNA and snRNA are different kinds of transcript. This is
+discussed in more in the next section. For the purposes of discussion in
+this document, it can be assumed that any reference to genes, exons,
+polypeptides, SNPs, chromosomes, transcripts and various kinds of RNAs
+and so on refers to features of that Sequence Ontology type.</p>
+<p>A selection of Chado-relevant types from SO are shown below:</p>
+<table>
+<thead>
+<tr>
+<th>SO Term</th>
+<th>SO id</th>
+</tr>
+</thead>
+</table>
+<p>| <a href="http://www.sequenceontology.org/miSO/SO_CVS/exon.html"
+class="external text" rel="nofollow">Exon</a> | SL:0000025 |
+| <a href="http://www.sequenceontology.org/miSO/SO_CVS/intron.html"
+class="external text" rel="nofollow">Intron</a> | SL:0000027 |
+| <a href="http://www.sequenceontology.org/miSO/SO_CVS/mRNA.html"
+class="external text" rel="nofollow">mRNA</a> | SL:0000037 |
+| <a href="http://www.sequenceontology.org/miSO/SO_CVS/miRNA"
+class="external text" rel="nofollow">miRNA</a> | SL:0000044 |
+| <a href="http://www.sequenceontology.org/miSO/SO_CVS/regulatory_element"
+class="external text" rel="nofollow">regulatory_element</a> | SL:0000052 |
+| <a
+href="http://www.sequenceontology.org/miSO/SO_CVS/transcription_factor_binding_site.html"
+class="external text"
+rel="nofollow">transcription_factor_binding_site</a> | SL:0000054 |</p>
+<p>Sequence Ontology Examples</p>
+<p>The Chado <a href="#Table:_feature">feature</a> table has a text-valued column
+named <em>residues</em> for storing the sequence of the feature. The value of
+this column is string of
+<a href="http://bioinformatics.org/sms/iupac.html" class="external text"
+rel="nofollow">IUPAC symbols</a> corresponding to the sequence of
+biochemical residues encoded by the feature. This column is optional,
+because the sequence of the feature may not be known. Even if the
+sequence of a feature is known, it may not be desirable to store it in
+the <a href="#Table:_feature">feature</a> table, as it may be possible to infer the
+sequence from the sequence of other features in the database. For
+example, exon sequences are generally not stored, as these can trivially
+be inferred from the sequence of the genomic feature on which the exon
+is located. In contrast, mRNA and other processed transcript sequences
+are stored as it is less trivial and more computationally expensive to
+dynamically splice together the mRNA sequence.</p>
+<p>It is important to realize that the existence of a row in the
+<a href="#Table:_feature">feature</a> table does not necessarily imply that the
+feature has been characterized as a result of genome annotation. It is
+possible to have features of SO type gene for genes that have only been
+characterized through genetic studies, and for which neither sequence
+nor sequence location is known. This is in contrast to other feature
+schemas (such as <a href="GFF" title="GFF">GFF</a>) in which it is not possible to
+represent features without representing a location in sequence
+coordinates. This design decision is crucial for the use of Chado as a
+database for integrating information about the same entity from multiple
+perspectives.</p>
+<p>Because the sequence is stored as a column in the
+<a href="#Table:_feature">feature</a> table rather than as an independent table,
+sequences cannot exist in the absence of a row in the feature table;
+sequences are dependent upon features. This is in contrast with almost
+all other genomics schemas that allow independent treatment of sequences
+and features. This design decision follows for both philosophical and
+prag- matic reasons. The <a href="#Table:_feature">feature</a> table also contains
+columns <em>seqlen</em> and <em>md5checksum</em>, for storing the length of the
+sequence and the 32-character checksum computed using the MD5 [RL
+Rivest. <a href="http://tools.ietf.org/html/rfc1321"
+class="external mw-magiclink-rfc" rel="nofollow">RFC 1321</a>: The md5
+message-digest algorithm. Technical report, Internet Activities Board,
+April 1992.] algorithm. The length and checksum can be stored even when
+the <em>residues</em> column is null valued. The checksum is useful for
+checking if two or more features share the same sequence, without
+comparing the entire sequence string.</p>
+<p>The existence of these columns means that this table is no longer in
+<a href="http://en.wikipedia.org/wiki/Third_normal_form" class="extiw"
+title="wp:Third normal form">third normal form (3NF)</a>, which is
+usually a desirable formal property of relational database. On balance,
+the utility of these columns outweighs the disadvantages of violating
+<a href="http://en.wikipedia.org/wiki/Third_normal_form" class="extiw"
+title="wp:Third normal form">3NF</a>. In practical terms, it means that
+the values of the <em>residues, seqlen</em> and <em>md5checksum</em> columns are
+interdependent and cannot be updated independently of one another.</p>
+<p>The <a href="#Table:_feature">feature</a> table has a Boolean valued column,
+<em>is_analysis</em>, indicating whether this is an annotation or a computed
+feature from a computational analysis. Annotations are features that are
+generated or blessed by a human curator, or in some cases by an
+integrated genome pipeline (for example, <a href="MAKER.1" title="MAKER">MAKER</a> or
+<a href="DIYA" title="DIYA">DIYA</a>) capable of synthesizing gene models and other
+annotations from <em>in silico</em> analyses. They constitute the definitive
+version of a particular feature, in contrast to the features generated
+by gene prediction programs and sequence similarity searches such as
+BLAST.</p>
+<p>The <a href="#Table:_feature">feature</a> table has a <em>dbxref_id</em> column that
+refers to a global, stable public identifier for the feature. This
+column is optional, because not all classes of features have such
+identifiers for example, features resulting from gene predictions and
+BLAST HSP features may be less stable and thus lack public identifiers.
+It is recommended that most annotated features have <em>dbxref_id</em>s. The
+<em>organism_id</em> column refers to a row in the
+<a href="Chado_Tables#Table:_organism" title="Chado Tables">organism</a> table (defined
+in the <a href="Chado_Organism_Module" title="Chado Organism Module">organism
+module</a>). This column is
+mandatory if the feature derives from a single organism.</p>
+<h2 id="span-idnames_of_features-classmw-headlinenames-of-featuresspan"><span id="Names_of_Features" class="mw-headline">Names of Features</span></h2>
+<p>The <em>name</em> and <em>uniquename</em> columns allow features to be labelled. The
+<em>name</em> column is optional, but it is recommended that all annotated
+features (as opposed to those that arise from purely computational
+methods) have names. The name should be a simple, concise,
+human-friendly display label (such as a gene or gene product symbol, as
+defined by the nomenclature rules of governing the organism). User
+interface software (such as <a href="GBrowse.1" title="GBrowse">GBrowse</a> and
+<a href="Apollo.1" title="Apollo">Apollo</a>) can use the <em>name</em> column for labelling
+feature glyphs in user displays. Uniqueness of name within any
+particular organism or genome project is a desirable characteristic, but
+is not enforced in the schema, since there are occasions where name
+clashes are unavoidable. In contrast, the <em>uniquename</em> column is
+required, and guaranteed to be unique when taken in combination with
+<em>organism_id</em> and <em>type_id</em> this is enforced by a constraint in the
+relational schema. The unique name may be human-friendly (for example,
+it can be the same as the name); however, it is not guaranteed to be so,
+and in general should not be displayed to the end user. Its use is
+mainly as an alternate unique key on the table .</p>
+<p>The unique name normally conforms to some naming rule these rules may
+vary across chado instances, but they should all guarantee the
+uniqueness of the <em>uniquename, organism id, type id</em> triple.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/Feature-tables.png" width="555"
+height="661" alt="Feature-tables.png" /></p>
+<h2 id="span-idfeature_synonyms-classmw-headlinefeature-synonymsspan"><span id="Feature_Synonyms" class="mw-headline">Feature Synonyms</span></h2>
+<p>In addition to having a name or symbol, it is common for features such
+as genes to have multiple synonyms or aliases. These synonyms may exist
+due to different publications referring to the same gene with different
+symbols, or because one gene was once believed to be two or more
+separate genes. A common curation operation on genes is splitting and
+merging, which results in the creation of synonyms.</p>
+<p>This is modelled in Chado with a <a href="#Table:_synonym">synonym</a> table and a
+<a href="#Table:_feature_synonym">feature_synonym</a> linking table; thus multiple
+features can potentially share the same, and a single feature can be
+have multiple synonyms. Use of a synonym in the literature is indicated
+with a <em>pub_id</em> foreign key referencing the
+<a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a> table (see <a href="Chado_Publication_Module" title="Chado Publication Module">the
+publications
+module</a>),
+indicating historical provenance for the use of a synonym.</p>
+<p>Feature synonyms are found by joining to
+<a href="#Table:_feature_synonym">feature_synonym</a> and
+<a href="Chado_Tables#Table:_synonym" title="Chado Tables">synonym</a>. For example, here
+is a query to find gene by name or synonym:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">SELECT feature_id FROM feature
+WHERE name = &#39;name of interest&#39;
+UNION SELECT feature_id
+FROM feature_synonym fs, synonym s
+WHERE fs.synonym_id = s.synonym_id
+AND s.name = &#39;name of interest&#39;
+AND fs.is_current;
+</code></pre><h2 id="span-idfeature_locations-classmw-headlinefeature-locationsspan"><span id="Feature_Locations" class="mw-headline">Feature Locations</span></h2>
+<p>Features can potentially be localized using a sequence coordinate
+system. A relative localization model is used, so all feature
+localizations must be relative to another feature. Some features such as
+those of type chromosome are not localized in sequence coordinates.
+Locations are stored in the <a href="#Table:_featureloc">featureloc</a> table, also
+part of this sequence module. Other non-sequence oriented kinds of
+localization (such as physical localization from <em>in situ</em> experiments,
+or genetic localizations from linkage studies) are modelled outside the
+sequence module (for example, in the <a href="Chado_Expression_Module" title="Chado Expression Module">expression
+module</a> or <a href="Chado_Map_Module" title="Chado Map Module">map
+module</a>).</p>
+<p>A feature can have zero or more featurelocs, although it will typically
+have either one (for localized features for which the location is known)
+or zero (for unlocalized features such as chromosomes, or for features
+for which the location is not yet known, such as a gene discovered using
+classical genetics techniques). Features with multiple featurelocs will
+be explained later.</p>
+<p>A featureloc is an interval in interbase sequence coordinates (see
+figure), bounded by the <em>fmin</em> and <em>fmax</em> columns, each representing the
+lower and upper linear position of the boundary between bases or base
+pairs, with directionality indicated by the <em>strand</em> column. Interbase
+coordinates were chosen over the more commonly used base-oriented
+coordinate system because they are more naturally amenable to the
+standard arithmetic operations that are typically performed upon
+sequence coordinates. This leads to cleaner and more efficient database
+coding logic that is arguably less prone to errors. Of course, interbase
+coordinates are typically transformed into the more common base-oriented
+system used by BLAST reports and so forth prior to presentation to the
+end-user.</p>
+<p>The relational schema includes a constraint which ensures that fmin !=
+fmax is always true, and any attempt to set the database in a state
+which violates this will ﬂag an error .</p>
+<p>As mentioned previously, a featureloc must be localized relative to
+another feature, indicated using the <em>srcfeature_id</em> foreign key column,
+referencing the <a href="#Table:_feature">feature</a> table. There is nothing in
+the schema prohibiting localization chains; for example, locating an
+exon relative to a contig that is itself localized relative to a
+chromosome (see figure). The majority of Chado database instances will
+not require this ﬂexibility; features are typically located relative to
+chromosomes or chromosomes arms. Nevertheless, the ability to store such
+localization networks or location graphs can be useful for unfinished
+genomes or parts of genomes such as
+<a href="http://en.wikipedia.org/wiki/Heterochromatin" class="extiw"
+title="wp:Heterochromatin">heterochromatin</a>, in which it is desirable
+to locate features relative to stable contigs or scaffolds, which are
+themselves localized in an unstable assembly to chromosomes or
+chromosome arms. Localization chains do not necessarily only span
+assemblies protein domains may be localized relative to polypeptide
+features, themselves localized to a transcript (or to the genome, as is
+more common). Chains may also span sequence alignments.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2d/Featureloc-example.png" width="316"
+height="148" alt="Featureloc-example.png" /></p>
+<h3 id="span-idthe_feature_location_graph-classmw-headlinethe-feature-location-graphspan"><span id="The_Feature_Location_Graph" class="mw-headline">The Feature Location Graph</span></h3>
+<p>We will now present a short formal treatment of the properties of these
+hierarchies of localization using graph theory. This treatment can be
+ignored for the purposes of understanding the basics of the Chado
+schema; the end-user of the database will be entirely unaware of such
+technicalities. However, for the purposes of software engineering and
+ensuring interoperability between different Chado database instances and
+different applications, formal treatments such as these are an essential
+requirement for software specifications.</p>
+<p>We can define a featureloc graph (LG) as being a set of vertices and
+edges, with each feature constituting a vertex, and each featureloc
+constituting an edge going from the parent <em>feature_id</em> vertex to the
+<em>srcfeature_id</em> vertex. The node is labeled with column values from the
+<a href="#Table:_feature">feature</a> table, and the edge is labeled with column
+values from the <a href="#Table:_featureloc">featureloc</a> table. The LG is not
+allowed to contain cycles, it is a <a href="Glossary#DAG" title="Glossary">directed acyclic graph
+(DAG)</a>. This includes self-cycles - no feature
+may be localized relative to itself.</p>
+<p>The roots of the LG are the features that do not have featureloc rows,
+typically chromosomes or chromosome arms, although LG roots may also be
+unassembled contigs, scaffolds or features for which sequence
+localization is not yet known (such as genes discovered through
+classical genetics techniques). The leaves of the LG are any features
+that are not present as a <em>srcfeature_id</em> in any featurelocs row
+typically the bulk of features, such as genes, exons, matches and so on.
+The depth of a particular LG <em>g</em>, denoted <em>D(g)</em>, is the maximum number
+of edges between any leaf- root pair. As has been previously noted, many
+Chados will have LGs with a uniform depth of 1. Such LGs are said to be
+simple and the features within them are said to be singletons. The
+maximum depth of all LGs in a particular database instance i is denoted
+<em>LGDmax(i)</em>.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/Featureloc-graph-example.png" width="535"
+height="372" alt="Featureloc-graph-example.png" /></p>
+<p>The schema does not constrain the maximum depth of the LG. This
+ﬂexibility proves useful when applying Chado to the highly variable
+needs of multiple different genome projects; however, it can lead to
+efficiency problems when querying the database. It can also make it more
+difficult to write software to interoperate with the database, as the
+software must take into account different contingencies. We can solve
+this problem by collapsing the LG, in which a graph of arbitrary depth
+is ﬂattened to a depth of 1, transforming or projecting featurelocs onto
+the root features (typically chromosomes or chromosome arms). The
+original featurelocs are left unaltered in the database, and additional
+redundant featurelocs between leaf and root features are added to the
+database. These new featurelocs are known as inferred featurelocs. In
+the schema inferred featurelocs are differentiated from direct
+featurelocs using the locgroup column. Direct (non-inferred)
+localizations are indicated by the locgroup column taking value 0, and
+transitive localizations are indicated by this column having value !0.</p>
+<p>The terminology used above can be used to define specifications for
+applications intended to interoperate with the database. Certain kinds
+of features have paired locations. These include hits and
+high-scoring-pairs (HSPs) coming from sequence search programs such as
+BLAST, and syntenic chromosomal regions. These kinds of features have
+two featurelocs (in contrast to the usual 1) one on the query feature
+and one on the subject (hit) feature. We differentiate the two
+featurelocs with the <em>rank</em> column. A rank of 0 indicates a location
+relative to the query (as is the default for most features), and a rank
+of 1 indicates a location relative to the subject (hit) feature.</p>
+<p>For multiple alignments (e.g.
+<a href="http://www.bioperl.org/wiki/Clustalw" class="extiw"
+title="bp:Clustalw">CLUSTALW</a> results), this scheme is extended to
+unbounded ranks [0..n], with arbitrary ordering. Alignments are stored
+in the residue info column. <a
+href="http://www.ensembl.org/info/software/Pdoc/ensembl/modules/Bio/EnsEMBL/Utils/CigarString.html"
+class="external text" rel="nofollow">CIGAR</a> format is used for
+pairwise alignments.</p>
+<p>Multiple featurelocs may also be required for features of type &ldquo;sequence
+variant&rdquo; (SO:0000109), indicating points or extents which vary between
+reference and non-reference sequences. From a modelling standpoint,
+variants are conceptually similar to alignments; with variants we are
+noting a difference as opposed to a similarity. Here a rank of zero
+indicates the wild-type (or reference) feature and a rank of one or more
+indicates the variant (or non-reference) feature, with the residue info
+column representing the sequence on wild-type and variant. A featureloc
+is uniquely identified by the <em>feature_id, rank, locgroup</em> triple. This
+means that no feature can have more than one featureloc with the same
+rank and locgroup. In other words, rank and locgroup uniquely identify a
+featureloc for any particular feature.</p>
+<h3 id="span-idfeature_coordinates-classmw-headlinefeature-coordinatesspan"><span id="Feature_Coordinates" class="mw-headline">Feature Coordinates</span></h3>
+<p>Features are located relative to other features using the
+<a href="#Table:_featureloc">featureloc</a> table rows. Features can be located on
+more than one sequence. For example, a BLAST hit HSP can be a feature of
+both the query and target sequences. To locate a feature, create a
+<a href="#Table:_featureloc">featureloc</a> record with:</p>
+<ul>
+<li><em>srcfeature_id</em> = the id of the sequence on which the feature is being
+located</li>
+<li><em>feature_id</em> = the id of the feature being located</li>
+<li><em>strand</em> is 1 for the positive strand, -1 for the negative, and 0 for
+both or indifferent.</li>
+<li><em>fmin, fmax</em> – the minimum and maximum coordinates of the interval</li>
+<li><em>is_fmin_partial, is_fmax_partial</em> = true if needed to indicate that
+the sequence is incomplete (e.g. for ESTs or EST assemblies which are
+known to not go all the way to the 3’ or 5’ end.)</li>
+<li><em>phase</em> = 0, 1, or 2 – denotes phase of first base pair in a
+nucleotide feature with respect to a source protein, or the offset of
+the first nucleotide in its codon.</li>
+<li><em>rank, locgroup</em> – these are used to organize groups of feature
+locations and can be ignored in simple cases (the details are
+discussed below).</li>
+</ul>
+<h4 id="span-idmultiple_locations_for_a_feature-classmw-headlinemultiple-locations-for-a-featurespan"><span id="Multiple_Locations_for_a_Feature" class="mw-headline">Multiple Locations for a Feature</span></h4>
+<p>The ability to have multiple locations for a feature has many uses. For
+example one can locate a SNP, exon, or protein motif on the genome, on a
+transcript, and on a protein. A region of similarity between two
+sequences (HSP) can be located on both of them, so if either is viewed
+the “hit” is visible.</p>
+<h3 id="span-iddifference_between_the_chado_location_model_and_other_schemas-classmw-headlinedifference-between-the-chado-location-model-and-other-schemasspan"><span id="Difference_Between_the_chado_Location_Model_and_Other_Schemas" class="mw-headline">Difference Between the chado Location Model and Other Schemas</span></h3>
+<p>There is a crucial difference between the Chado location model and the
+sequence location model used in other schemas, such as <a href="GFF" title="GFF">GFF</a>,
+GenBank, <a href="http://biosql.org" class="external text"
+rel="nofollow">BioSQL</a>, or
+<a href="http://bioperl.org" class="external text"
+rel="nofollow">BioPerl</a>.</p>
+<p>First, Chado is the only model to use the concept of rank and locgroup.
+Second, and perhaps more important, all these other models allow
+discontiguous locations (also known as &ldquo;split locations&rdquo;). These will be
+familiar to anyone who has inspected GenBank annotated DNA records for
+an organism that has introns within the transcripts; the transcript
+location is modelled as a sequence of non-contiguous intervals on the
+genome. The interval represents the location of an exon. For example:</p>
+<pre><code>            /gene=&quot;Acph&quot;
+    CDS     join(914..1063, 1143..1241, 1297..1536, 1605..2054,
+                 2667..2925, 3063..3172)
+</code></pre>
+<p>Although Chado allows a feature to have multiple locations, this is only
+with variable <em>rank</em> and <em>locgroup</em> and this is enforced by a uniqueness
+constraint in the relational schema. We made a conscious decision to
+avoid discontiguous locations, because the extra degree of freedom this
+affords results in either redundancies or ambiguities. Redundancies
+arise when exons are stored in addition to a discontiguous transcript,
+and ambiguities arise by virtue of the fact that explicit representation
+of the exons may be seen as optional. Ambiguities are undesirable as it
+makes it harder for databases to interoperate. The omission of
+discontiguous locations does not restrict the expressive capacity of
+Chado in any way, because any discontiguous location can be modelled as
+a collection of features with contiguous locations. For example, a
+transcript with a discontiguous location can be modelled as a collection
+of exons with contiguous featurelocs, and a transcript with a single
+contiguous featureloc representing the outer boundaries defined by the
+outermost exons.</p>
+<h2 id="span-idfeature_rank-classmw-headlinefeature-rankspan"><span id="Feature_Rank" class="mw-headline">Feature Rank</span></h2>
+<p>The <em>rank</em> field is used when a feature has more than 1 location,
+otherwise the default rank value of 0 is used. Some features have two
+locations, for example BLAST hits and HSPs: one location on the query,
+rank = 0, and one location on the subject, rank = 1.</p>
+<h2 id="span-idextensible_feature_properties-classmw-headlineextensible-feature-propertiesspan"><span id="Extensible_Feature_Properties" class="mw-headline">Extensible Feature Properties</span></h2>
+<p>The <a href="#Table:_feature">feature</a> table has a fairly limited set of columns
+for recording feature data. For example, there is no anticodon column
+for recording the RNA triplet for the adapter in a tRNA feature (all
+feature types, including tRNAs, are recorded as rows in the
+<a href="#Table:_feature">feature</a> table). If we were to add columns such as
+anticodon then the number of columns in the table would become very
+large and difficult to manage; most would end up being nullable (for
+example, anticodon does not apply to non-tRNA features). This is because
+different organisms, different types of feature and different projects
+have differing needs regarding what extra data should be attached to any
+one feature. How then are we to attach both biologically relevant and
+project specific data to features?</p>
+<p>Chado solves this by using an extensible mechanism for attaching
+attribute-value pairs to features via the
+<a href="#Table:_featureprop">featureprop</a> table. The <em>featureprop.type_id</em>
+foreign key column references a property in the
+<a href="http://www.sequenceontology.org/" class="external text"
+rel="nofollow">Sequence Ontology</a>. The <em>value</em> text column stores the
+value filler for that property. Sets or lists of values for any property
+can be stored in the <a href="#Table:_featureprop">featureprop</a> table,
+differentiated by the value of the <em>rank</em> column. Provenance for the
+<a href="#Table:_featureprop">featureprop</a> assignment is stored using the
+<a href="Chado_Tables#Table:_featureprop_pub" title="Chado Tables">featureprop_pub</a>
+table in the <a href="Chado_Publication_Module" title="Chado Publication Module">publications
+module</a>, allowing
+multiple publications to be associated with any one assignment.</p>
+<p>Because <a href="#Table:_featureprop">featureprop</a> values can be of an arbitrary
+size, they are modelled using a SQL TEXT type. This has some
+disadvantages from a query efficiency perspective.</p>
+<p>Numeric values cannot be indexed correctly, and sorting the results of a
+query can only be done via a SQL casting operation, or in software
+outside of the database management system, either of which may result in
+poorer performance. This is one of several areas in Chado where
+performance has been traded in favour of a simpler, more abstract and
+generic model.</p>
+<h2 id="span-idlinking_features_to_external_databases-classmw-headlinelinking-features-to-external-databasesspan"><span id="Linking_Features_to_External_Databases" class="mw-headline">Linking Features to External Databases</span></h2>
+<p>Public database identifiers are stored in the
+<a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a> table, which holds
+the database name, the accession number, and an optional version number.
+Note that this table holds accession numbers published internally by the
+Chado instance as well as by other databases. A feature can have a
+primary dbxref, which is linked directly from the
+<a href="#Table:_feature">feature</a> table. It can also have additional secondary
+dbxref&rsquo;s linked via <em>feature_dbxref</em>. A feature need not have a primary
+dbxref; e.g. computed features may be considered “lightweight” and not
+assigned accession numbers. Some groups may wish to set up a trigger to
+automatically assign primary dbxrefs to features of types that are
+locally accessioned; a sample trigger is provided with the schema.</p>
+<h2 id="span-idfeature_annotations-classmw-headlinefeature-annotationsspan"><span id="Feature_Annotations" class="mw-headline">Feature Annotations</span></h2>
+<p>Detailed annotations, such as associations to
+<a href="http://geneontology.org" class="external text"
+rel="nofollow">Gene Ontology (GO)</a> terms or
+<a href="http://obofoundry" class="external text" rel="nofollow">Cell
+Ontology</a> terms, can be attached to features using the
+<a href="#Table:_feature_cvterm">feature_cvterm</a> linking table. This allows
+multiple ontology terms to be associated with each feature.</p>
+<p>Provenance data can be attached with the
+<a href="#Table:_feature_cvtermprop">feature_cvtermprop</a> and
+<a href="#Table:_feature_cvterm_dbxref">feature_cvterm_dbxref</a> higher-order
+linking tables. It is up to the curation policy of each individual Chado
+database instance to decide which kinds of features will be linked using
+<a href="#Table:_feature_cvterm">feature_cvterm</a>. Some may link terms to gene
+features, others to the distinct gene products (processed RNAs and
+polypeptides) that are linked to the gene features.</p>
+<p>Annotations for existing features can also go into the <a href="#Table:_featureprop">featureprop
+table</a> using the Chado feature_property ontology
+(defined in <code>chado/load/etc/feature_property.obo</code>) and the comment or
+description terms as appropriate. The purpose of the feature property
+ontology (and the related <code>chado/load/etc/genbank_feature_property.obo</code>
+file) is to capture terms that are likely to appear in <a href="GFF" title="GFF">GFF</a>
+or GenBank sequence files. In theory there is no overlap between these
+ontologies and the Sequence Ontology.</p>
+<h2 id="span-idrelationships_between_features-classmw-headlinerelationships-between-featuresspan"><span id="Relationships_Between_Features" class="mw-headline">Relationships Between Features</span></h2>
+<p>Biological features are inter-related; exons are part of transcripts,
+transcripts are part of genes, and polypeptides are derived from
+messenger RNAs. Relationships between individual features are stored in
+the <a href="#Table:_feature_relationship">feature_relationship</a> table, which
+connects two features via the <em>subject_id</em> and <em>object_id</em> columns
+(foreign keys referring to the <a href="#Table:_feature">feature</a> table) and a
+<em>type_id</em> (a foreign key referring to a relationship type in an
+ontology, either
+<a href="http://sequenceontology.org" class="external text"
+rel="nofollow">SO</a>, or the
+<a href="http://obofoundry.org/ro/" class="external text"
+rel="nofollow">OBO relationship ontology, OBO-REL</a>, indicating the
+nature of the relationship between subject and object features.</p>
+<p>The core relationships between features are part-whole (<em>part_of</em>) or
+temporal (<em>derives_from</em>). <em>Subject</em> and <em>Object</em> describes the
+linguistic role the two features play in a sentence describing the
+feature relationship. In English, many sentences follow a subject,
+predicate, object syntax, and word order is important. To say that
+”exons are part of transcripts” is the correct way to describe a typical
+biological relationship. To say ”transcripts are part of exons” is
+either grammatically or biologically incorrect.</p>
+<p>We use this same terminology (which comes from
+<a href="http://www.w3.org/RDF/" class="external text"
+rel="nofollow">RDF</a>) again in the <a href="Chado_CV_Module" title="Chado CV Module">cv
+module</a>. The collection of features
+and feature relationships can be considered as vertices and edges in a
+graph, known as the Feature Graph (FG). Example feature graphs are shown
+above and in the <a href="Introduction_to_Chado" title="Introduction to Chado">Introduction to
+Chado</a>.</p>
+<p>The FG is independent of the LG and in general the FG and the LG should
+have no edges in common. If there is a featureloc connecting two
+features, then the addition of a feature relationship between these same
+two features is redundant. The FG is required in order to query the
+database for such things as alternately spliced genes, exons shared
+between transcripts, etc.</p>
+<p>Although the chado schema admits any FG, certain configurations are
+biologically meaningless, and should not be used. The FG can be
+constrained by the
+<a href="http://sequenceontology.org" class="external text"
+rel="nofollow">Sequence Ontology</a>. Standardized FG structures are
+required for complex applications to be interoperable.</p>
+<p>Unlike the LG, the FG may be cyclic, although cycles in the FG are not
+common. The subset of the FG corresponding to certain kinds of
+relationship may be acyclic for example, the subset of the FG connecting
+parts with wholes via part of must be acyclic.</p>
+<h2 id="span-idcompliance-classmw-headlinecompliancespan"><span id="Compliance" class="mw-headline">Compliance</span></h2>
+<p><em>This section is not complete, it is in progress.</em></p>
+<p>Chado uses a layered model - this is tried and tested in software
+engineering. Some generic software can be targeted at the lower layers
+and be guaranteed to work no matter what. Other more specific software
+needs a more tightly defined rigorous model and should be targeted at
+the upper layers.</p>
+<p>We require validation software and more formal or computable
+descriptions of these layers and policies - for now natural language
+descriptions will have to suffice.</p>
+<h3 id="span-idchado_compliance_layers-classmw-headlinechado-compliance-layersspan"><span id="Chado_Compliance_Layers" class="mw-headline">Chado Compliance Layers</span></h3>
+<p>Proposal for levels of compliance.</p>
+<h4 id="span-idlevel_0_relational_schema-classmw-headlinelevel-0-relational-schemaspan"><span id="Level_0:_Relational_Schema" class="mw-headline">Level 0: Relational Schema</span></h4>
+<p>Level 0 conformance basically means the schema is adhered to. Obviously,
+this is enforced by the DBMS.</p>
+<h4 id="span-idlayer_1_ontologies-classmw-headlinelayer-1-ontologiesspan"><span id="Layer_1:_Ontologies" class="mw-headline">Layer 1: Ontologies</span></h4>
+<p>Level 1 conformance is minimal conformance to
+<a href="http://sequenceontology.org" class="external text"
+rel="nofollow">SO</a> - all feature.types must be SO terms, and all
+feature relationship.types must be SO relationship types.</p>
+<h4 id="span-idlevel_2_graph-classmw-headlinelevel-2-graphspan"><span id="Level_2:_Graph" class="mw-headline">Level 2: Graph</span></h4>
+<p>Level 2 conformance is graph conformance to SO - all feature
+relationships between a feature of type X and Y must correspond to
+relationship of that type in SO; for example, mRNA can be part of gene,
+but mRNA can not be part of golden path region. <strong>[more detailed/formal
+explanation</strong> to come]. <strong>In practice Level 2 conformance may be
+undesirable, we may need to make modifications</strong> to SO.</p>
+<p>Orthogonal to these layers are various additional policy decisions. Some
+of these are more tolerant of non-conformance than others. (there is
+also some overlaps with levels 1 and 2).</p>
+<h3 id="span-idexamples_current_implementations-classmw-headlineexamples-current-implementationsspan"><span id="Examples:_Current_implementations" class="mw-headline">Examples: Current implementations</span></h3>
+<p>This section describes details of how different sites are using Chado.
+<strong>This is likely outdated information.</strong></p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+Currently at level 0 conformance, though most (if not all) of the terms
+being used have an obvious counterpart in SO. Therefore these ”TIGR
+Ontology” terms are used in the answers to the SO-related questions that
+appear below. We plan on updating our terms with SO terms very soon.</p>
+<h4 id="span-idso_terms_used_for_standard_central-dogma_gene_model-classmw-headlineso-terms-used-for-standard-central-dogma-gene-modelspan"><span id="SO_terms_used_for_Standard_Central-dogma_Gene_Model" class="mw-headline">SO terms used for Standard Central-dogma Gene Model</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: gene mRNA exon protein [other types are
+derivable].</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+gene transcript CDS exon protein [though the strict answer is for any
+of these SO questions is ”none” since we do not yet meet level 1
+conformance].</p>
+<p>NOTE: we should be using ’polypeptide’ instead of ’protein’. For now,
+software should be tolerant of both these uses.</p>
+<h4 id="span-idso_terms_used_for_storing_alignments-classmw-headlineso-terms-used-for-storing-alignmentsspan"><span id="SO_terms_Used_for_Storing_Alignments" class="mw-headline">SO terms Used for Storing Alignments</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: match</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+match</p>
+<p>NOTE: we want to use the new more specific SO types for match set, match
+part, for hits and hsps respectively. For now, software should be
+tolerant of either usage.</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+We’ve also extended the model for storing pairwise alignments to store
+multiple alignments. Each member of the alignment is featureloced to the
+’match’ feature. We’ve used this representation to store
+paralogous/orthologous gene families.</p>
+<h4 id="span-idfeature_relationship_types-classmw-headlinefeature_relationship-typesspan"><span id="feature_relationship_Types" class="mw-headline">feature_relationship Types</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: partof (for mRNA to gene and exon to mRNA)
+producedby (for protein to mRNA)</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+part of (gene-assembly, exon-transcript, assembly-supercontig) produced
+by (protein- CDS, CDS-transcript, transcript-gene)</p>
+<p>NOTE: this should be ”part of” and ”derived from” to conform to SO. Most
+read-only software should be able to safely ignore feature
+relationship.type anyway. Protein should be polypeptide - see note above</p>
+<p>NOTE: the main difference between FB and TIGR here is that TIGR
+introduce an intermediate CDS feature between mRNA and protein.</p>
+<h4 id="span-idfeatureloc_policy-classmw-headlinefeatureloc-policyspan"><span id="featureloc_Policy" class="mw-headline">featureloc Policy</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: all constituent parts of a central dogma
+gene model are located relative to the same srcfeature (the chromosome
+arm). No redundant locations (i.e. featureloc.group ¿ 0) are used.</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+Redundant locations are used and indicated with featureloc.group ¿ 0.</p>
+<p>NOTE: we want to allow some ﬂexibility with this policy. We believe that
+the constituent parts linked located relative to the feature should
+always be followed. This can be stated more formally as:</p>
+<pre><code> IF  X is linked to Y via feature_relationship
+ AND X is located relative to Z via featureloc.srcfeature_id
+ THEN Y must also be located relative to Z via featureloc.srcfeature_id
+</code></pre>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+We’ve followed this policy in adding a featureloc between the protein
+and genomic contig in our databases (such a featureloc does not appear
+in the Chado usage documents). This additional featureloc simplifies
+many queries, especially when looking at the genomic context of ’match’
+features associated with proteins.</p>
+<p>We should also expect that the fmin/fmax boundaries of a feature be
+defined the the outermost boundaries of the outermost constituent part
+features (this rule may require refinement when we have promoters,
+enhancers and so on - but for now we don’t).</p>
+<p>As to what the srcfeature should be, it could be a contig, and assembly
+or a top-level locat- able feature such as chromosome or chromosome arm.
+Software should be tolerant of different choices here. Whilst it is
+generally always best to locate relative to the topmost feature (ie the
+arm/chromosome), sometimes this is not possible or desirable (eg low
+coverage, heterochromatin).</p>
+<h4 id="span-idnon-central_dogma_gene_models-classmw-headlinenon-central-dogma-gene-modelsspan"><span id="Non-central_Dogma_Gene_Models" class="mw-headline">Non-central Dogma Gene Models</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: we store a lot of non-central dogma gene
+models; noncoding gene models and pseudogenes [need to fill in more
+details here].</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+not many of these stored yet, save for a few pseudogenes and the
+occasional non-coding ORF.</p>
+<h4 id="span-idother_features-classmw-headlineother-featuresspan"><span id="Other_Features" class="mw-headline">Other Features</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: the FlyBase implementation includes many
+other feature types, including polyA site and se- quence variant [need
+to fill in details].</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+using ’SNP’ in some databases.</p>
+<h4 id="span-idderivable_feature_types-classmw-headlinederivable-feature-typesspan"><span id="Derivable_Feature_Types" class="mw-headline">Derivable Feature Types</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: derivable features (introns, UTRs,
+intergenic region) are not included. Feature typing is always done to
+the most specific, non-derivale level. For example, we never use types
+”5 prime exon”, ”dicistronic gene”, ”coding exon” as these are always
+inferable. We always use type ”gene” - the specific type of gene is
+inferred from the child type (mRNA, tRNA, snRNA, etc)..</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+derivable features are not included. currently not storing any tRNAs or
+snRNAs.</p>
+<p>NOTE: whilst it is perfectly permissible to include redundant derivable
+features (useful for warehouse-style querying), you should not write
+software that expects to find these if you want the software to work on
+different chado db instances.</p>
+<h4 id="span-idsequence_variants-classmw-headlinesequence-variantsspan"><span id="Sequence_Variants" class="mw-headline">Sequence Variants</span></h4>
+<p><a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>: these are included in chado, but they are
+lacking full detail.</p>
+<p><a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
+only SNPs so far. the SNPs currently being stored are computed from
+pairwise alignments of sequences already loaded into Chado, so each SNP
+feature is featureloc’ed to the appropriate place on each of the two
+sequences (rather than having one of the featurelocs ”dangling”, as
+indicated in some of the Chado usage documents.) featureloc.residue info
+is used to redundantly store the base referenced in each of the two
+sequences.</p>
+<p>NOTE: variation features should specify the edit that makes one feature
+(such as the reference/wild-type) from another (the
+variant/mutant/non-reference). There were perhaps 2 proposals for this
+[more details required&hellip;].</p>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<h2 id="span-idtable_feature-classmw-headlinetable-featurespan"><span id="Table:_feature" class="mw-headline">Table: feature</span></h2>
+<p>A feature is a biological sequence or a section of a biological
+sequence, or a collection of such sections. Examples include genes,
+exons, transcripts, regulatory regions, polypeptides, protein domains,
+chromosome sequences, sequence variations, cross-genome match regions
+such as hits and HSPs and so on; see the Sequence Ontology for more.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+An optional primary public stable identifier for this feature. Secondary
+identifiers and external dbxrefs go in the table feature_dbxref.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_organism"
+title="Chado Tables">organism</a></p></td>
+<td>organism_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The organism to which this feature belongs. This column is
+mandatory.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+The optional human-readable common name for a feature, for display
+purposes.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The unique name for a feature; may not be necessarily be particularly
+human-readable, although this is preferred. This name must be unique for
+this type of feature within this organism.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>residues</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+A sequence of alphabetic characters representing biological residues
+(nucleic acids, amino acids). This column does not need to be manifested
+for all features; it is optional for features such as exons where the
+residues can be derived from the featureloc. It is recommended that the
+value for this column be manifested for features which may may
+non-contiguous sublocations (e.g. transcripts), since derivation at
+query time is non-trivial. For expressed sequence, the DNA sequence
+should be used rather than the RNA sequence.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>seqlen</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+The length of the residue feature. See column:residues. This column is
+partially redundant with the residues column, and also with featureloc.
+This column is required because the location may be unknown and the
+residue sequence may not be manifested, yet it may be desirable to store
+and query the length of the feature. The seqlen should always be
+manifested where the length of the sequence is known.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>md5checksum</td>
+<td>character(32)</td>
+<td><em></em><br />
+<br />
+The 32-character checksum of the sequence, calculated using the MD5
+algorithm. This is practically guaranteed to be unique for any feature.
+This column thus acts as a unique identifier on the mathematical
+sequence.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+A required reference to a table:cvterm giving the feature type. This
+will typically be a Sequence Ontology identifier. This column is thus
+used to subclass the feature table.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_analysis</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+Boolean indicating whether this feature is annotated or the result of an
+automated analysis. Analysis results also use the companalysis module.
+Note that the dividing line between analysis and annotation may be
+fuzzy, this should be determined on a per-project basis in a consistent
+manner. One requirement is that there should only be one non-analysis
+version of each wild-type gene feature in a genome, whereas the same
+gene feature can be predicted multiple times in different analyses.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_obsolete</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+Boolean indicating whether this feature has been obsoleted. Some chado
+instances may choose to simply remove the feature altogether, others may
+choose to keep an obsolete row in the table.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>timeaccessioned</td>
+<td>timestamp without time zone</td>
+<td><em>NOT NULL DEFAULT ('now'::text)::timestamp(6) with time
+zone</em><br />
+<br />
+For handling object accession or modification timestamps (as opposed to
+database auditing data, handled elsewhere). The expectation is that
+these fields would be available to software interacting with chado.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>timelastmodified</td>
+<td>timestamp without time zone</td>
+<td><em>NOT NULL DEFAULT ('now'::text)::timestamp(6) with time
+zone</em><br />
+<br />
+For handling object accession or modification timestamps (as opposed to
+database auditing data, handled elsewhere). The expectation is that
+these fields would be available to software interacting with chado.</td>
+</tr>
+</tbody>
+</table>
+<p>feature Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_analysisfeature" title="Chado Tables">analysisfeature</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_element" title="Chado Tables">element</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvterm" title="Chado Tables">feature_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_dbxref" title="Chado Tables">feature_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_expression" title="Chado Tables">feature_expression</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_genotype" title="Chado Tables">feature_genotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_phenotype" title="Chado Tables">feature_phenotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_pub" title="Chado Tables">feature_pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationship" title="Chado Tables">feature_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_synonym" title="Chado Tables">feature_synonym</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featureloc" title="Chado Tables">featureloc</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featurepos" title="Chado Tables">featurepos</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featureprop" title="Chado Tables">featureprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featurerange" title="Chado Tables">featurerange</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_library_feature" title="Chado Tables">library_feature</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phylonode" title="Chado Tables">phylonode</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_wwwuser_feature" title="Chado Tables">wwwuser_feature</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_feature_cvterm-classmw-headlinetable-feature_cvtermspan"><span id="Table:_feature_cvterm" class="mw-headline">Table: feature_cvterm</span></h2>
+<p>Associate a term from a cv with a feature, for example, GO annotation.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_cvterm Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_pub"
+title="Chado Tables">pub</a></p></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Provenance for the annotation. Each annotation should have a single
+primary publication (which may be of the appropriate type for
+computational analyses) where more details can be found. Additional
+provenance dbxrefs can be attached using feature_cvterm_dbxref.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_not</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+If this is set to true, then this annotation is interpreted as a
+NEGATIVE annotation - i.e. the feature does NOT have the specified
+function, process, component, part, etc. See GO docs for more
+details.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_cvterm Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvterm_dbxref" title="Chado Tables">feature_cvterm_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvterm_pub" title="Chado Tables">feature_cvterm_pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvtermprop" title="Chado Tables">feature_cvtermprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_feature_cvterm_dbxref-classmw-headlinetable-feature_cvterm_dbxrefspan"><span id="Table:_feature_cvterm_dbxref" class="mw-headline">Table: feature_cvterm_dbxref</span></h2>
+<p>Additional dbxrefs for an association. Rows in the feature_cvterm table
+may be backed up by dbxrefs. For example, a feature_cvterm association
+that was inferred via a protein-protein interaction may be backed by by
+referring to the dbxref for the alternate protein. Corresponds to the
+WITH column in a GO gene association file (but can also be used for
+other analogous associations). See
+<a href="http://www.geneontology.org/doc/GO.annotation.shtml#file#file"
+class="external free"
+rel="nofollow"><a href="http://www.geneontology.org/doc/GO.annotation.shtml#file">http://www.geneontology.org/doc/GO.annotation.shtml#file</a></a>
+for more details.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_cvterm_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature_cvterm" title="Chado Tables">feature_cvterm</a></td>
+<td>feature_cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_cvterm_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_feature_cvterm_pub-classmw-headlinetable-feature_cvterm_pubspan"><span id="Table:_feature_cvterm_pub" class="mw-headline">Table: feature_cvterm_pub</span></h2>
+<p>Secondary pubs for an association. Each feature_cvterm association is
+supported by a single primary publication. Additional secondary pubs can
+be added using this linking table (in a GO gene association file, these
+corresponding to any IDs after the pipe symbol in the publications
+column.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_cvterm_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature_cvterm" title="Chado Tables">feature_cvterm</a></td>
+<td>feature_cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_cvterm_pub Structure</p>
+<hr>
+<h2 id="span-idtable_feature_cvtermprop-classmw-headlinetable-feature_cvtermpropspan"><span id="Table:_feature_cvtermprop" class="mw-headline">Table: feature_cvtermprop</span></h2>
+<p>Extensible properties for feature to cvterm associations. Examples: GO
+evidence codes; qualifiers; metadata such as the date on which the entry
+was curated and the source of the association. See the featureprop table
+for meanings of type_id, value and rank.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_cvtermprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_cvtermprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature_cvterm"
+title="Chado Tables">feature_cvterm</a></p></td>
+<td>feature_cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property/slot is a cvterm. The meaning of the property
+is defined in that cvterm. cvterms may come from the OBO evidence code
+cv.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+The value of the property, represented as text. Numeric values are
+converted to their text representation. This is less efficient than
+using native database types, but is easier to query.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Property-Value ordering. Any feature_cvterm can have multiple values for
+any particular property type - these are ordered in a list using rank,
+counting from zero. For properties that are single-valued rather than
+multi-valued, the default 0 value should be used.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_cvtermprop Structure</p>
+<hr>
+<h2 id="span-idtable_feature_dbxref-classmw-headlinetable-feature_dbxrefspan"><span id="Table:_feature_dbxref" class="mw-headline">Table: feature_dbxref</span></h2>
+<p>Links a feature to dbxrefs. This is for secondary identifiers; primary
+identifiers should use feature.dbxref_id.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_dbxref Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_current</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT true</em><br />
+<br />
+True if this secondary dbxref is the most up to date accession in the
+corresponding db. Retired accessions should set this field to
+false.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_feature_pub-classmw-headlinetable-feature_pubspan"><span id="Table:_feature_pub" class="mw-headline">Table: feature_pub</span></h2>
+<p>Provenance. Linking table between features and publications that mention
+them.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature" title="Chado Tables">feature</a></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_pub Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_feature_pubprop" title="Chado Tables">feature_pubprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_feature_pubprop-classmw-headlinetable-feature_pubpropspan"><span id="Table:_feature_pubprop" class="mw-headline">Table: feature_pubprop</span></h2>
+<p>Property or attribute of a feature_pub link.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_pubprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature_pub" title="Chado Tables">feature_pub</a></td>
+<td>feature_pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_pubprop Structure</p>
+<hr>
+<h2 id="span-idtable_feature_relationship-classmw-headlinetable-feature_relationshipspan"><span id="Table:_feature_relationship" class="mw-headline">Table: feature_relationship</span></h2>
+<p>Features can be arranged in graphs, e.g. &ldquo;exon part_of transcript
+part_of gene&rdquo;; If type is thought of as a verb, the each arc or edge
+makes a statement [Subject Verb Object]. The object can also be
+thought of as parent (containing feature), and subject as child
+(contained feature or subfeature). We include the relationship
+rank/order, because even though most of the time we can order things
+implicitly by sequence coordinates, we can not always do this - e.g.
+transpliced genes. It is also useful for quickly getting implicit
+introns.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_relationship Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_relationship_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>subject_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The subject of the subj-predicate-obj sentence. This is typically the
+subfeature.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>object_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The object of the subj-predicate-obj sentence. This is typically the
+container feature.</td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Relationship type between subject and object. This is a cvterm,
+typically from the OBO relationship ontology, although other
+relationship types are allowed. The most common relationship type is
+OBO_REL:part_of. Valid relationship types are constrained by the
+Sequence Ontology.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+Additional notes or comments.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The ordering of subject features with respect to the object feature may
+be important (for example, exon ordering on a transcript - not always
+derivable if you take trans spliced genes into consideration). Rank is
+used to order these; starts from zero.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_relationship Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationship_pub" title="Chado Tables">feature_relationship_pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationshipprop" title="Chado Tables">feature_relationshipprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_feature_relationship_pub-classmw-headlinetable-feature_relationship_pubspan"><span id="Table:_feature_relationship_pub" class="mw-headline">Table: feature_relationship_pub</span></h2>
+<p>Provenance. Attach optional evidence to a feature_relationship in the
+form of a publication.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_relationship_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature_relationship" title="Chado Tables">feature_relationship</a></td>
+<td>feature_relationship_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_relationship_pub Structure</p>
+<hr>
+<h2 id="span-idtable_feature_relationshipprop-classmw-headlinetable-feature_relationshippropspan"><span id="Table:_feature_relationshipprop" class="mw-headline">Table: feature_relationshipprop</span></h2>
+<p>Extensible properties for feature_relationships. Analogous structure to
+featureprop. This table is largely optional and not used with a high
+frequency. Typical scenarios may be if one wishes to attach additional
+data to a feature_relationship - for example to say that the
+feature_relationship is only true in certain contexts.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_relationshipprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_relationshipprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature_relationship"
+title="Chado Tables">feature_relationship</a></p></td>
+<td>feature_relationship_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property/slot is a cvterm. The meaning of the property
+is defined in that cvterm. Currently there is no standard ontology for
+feature_relationship property types.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+The value of the property, represented as text. Numeric values are
+converted to their text representation. This is less efficient than
+using native database types, but is easier to query.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Property-Value ordering. Any feature_relationship can have multiple
+values for any particular property type - these are ordered in a list
+using rank, counting from zero. For properties that are single-valued
+rather than multi-valued, the default 0 value should be used.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_relationshipprop Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationshipprop_pub" title="Chado Tables">feature_relationshipprop_pub</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_feature_relationshipprop_pub-classmw-headlinetable-feature_relationshipprop_pubspan"><span id="Table:_feature_relationshipprop_pub" class="mw-headline">Table: feature_relationshipprop_pub</span></h2>
+<p>Provenance for feature_relationshipprop.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>feature_relationshipprop_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_feature_relationshipprop" title="Chado Tables">feature_relationshipprop</a></td>
+<td>feature_relationshipprop_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_relationshipprop_pub Structure</p>
+<hr>
+<h2 id="span-idtable_feature_synonym-classmw-headlinetable-feature_synonymspan"><span id="Table:_feature_synonym" class="mw-headline">Table: feature_synonym</span></h2>
+<p>Linking table between feature and synonym.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>feature_synonym Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_synonym_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_synonym"
+title="Chado Tables">synonym</a></p></td>
+<td>synonym_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_pub"
+title="Chado Tables">pub</a></p></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The pub_id link is for relating the usage of a given synonym to the
+publication in which it was used.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_current</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT true</em><br />
+<br />
+The is_current boolean indicates whether the linked synonym is the
+current -official- symbol for the linked feature.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_internal</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+Typically a synonym exists so that somebody querying the db with an
+obsolete name can find the object theyre looking for (under its current
+name. If the synonym has been used publicly and deliberately (e.g. in a
+paper), it may also be listed in reports as a synonym. If the synonym
+was not used deliberately (e.g. there was a typo which went public),
+then the is_internal boolean may be set to -true- so that it is known
+that the synonym is -internal- and should be queryable but should not be
+listed in reports as a valid synonym.</td>
+</tr>
+</tbody>
+</table>
+<p>feature_synonym Structure</p>
+<hr>
+<h2 id="span-idtable_featureloc-classmw-headlinetable-featurelocspan"><span id="Table:_featureloc" class="mw-headline">Table: featureloc</span></h2>
+<p>The location of a feature relative to another feature. Important:
+interbase coordinates are used. This is vital as it allows us to
+represent zero-length features e.g. splice sites, insertion points
+without an awkward fuzzy system. Features typically have exactly ONE
+location, but this need not be the case. Some features may not be
+localized (e.g. a gene that has been characterized genetically but no
+sequence or molecular information is available). Note on multiple
+locations: Each feature can have 0 or more locations. Multiple locations
+do NOT indicate non-contiguous locations (if a feature such as a
+transcript has a non-contiguous location, then the subfeatures such as
+exons should always be manifested). Instead, multiple featurelocs for a
+feature designate alternate locations or grouped locations; for
+instance, a feature designating a blast hit or hsp will have two
+locations, one on the query feature, one on the subject feature.
+Features representing sequence variation could have alternate locations
+instantiated on a feature on the mutant strain. The column:rank is used
+to differentiate these different locations. Reflexive locations should
+never be stored - this is for -proper- (i.e. non-self) locations only;
+nothing should be located relative to itself.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>featureloc Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>featureloc_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The feature that is being located. Any feature can have zero or more
+featurelocs.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>srcfeature_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+The source feature which this location is relative to. Every location is
+relative to another feature (however, this column is nullable, because
+the srcfeature may not be known). All locations are -proper- that is,
+nothing should be located relative to itself. No cycles are allowed in
+the featureloc graph.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>fmin</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+The leftmost/minimal boundary in the linear range represented by the
+featureloc. Sometimes (e.g. in Bioperl) this is called -start- although
+this is confusing because it does not necessarily represent the 5-prime
+coordinate. Important: This is space-based (interbase) coordinates,
+counting from zero. To convert this to the leftmost position in a
+base-oriented system (eg GFF, Bioperl), add 1 to fmin.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_fmin_partial</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+This is typically false, but may be true if the value for column:fmin is
+inaccurate or the leftmost part of the range is unknown/unbounded.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>fmax</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+The rightmost/maximal boundary in the linear range represented by the
+featureloc. Sometimes (e.g. in bioperl) this is called -end- although
+this is confusing because it does not necessarily represent the 3-prime
+coordinate. Important: This is space-based (interbase) coordinates,
+counting from zero. No conversion is required to go from fmax to the
+rightmost coordinate in a base-oriented system that counts from 1 (e.g.
+GFF, Bioperl).</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_fmax_partial</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em><br />
+<br />
+This is typically false, but may be true if the value for column:fmax is
+inaccurate or the rightmost part of the range is unknown/unbounded.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>strand</td>
+<td>smallint</td>
+<td><em></em><br />
+<br />
+The orientation/directionality of the location. Should be 0, -1 or
++1.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>phase</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+Phase of translation with respect to srcfeature_id. Values are 0, 1, 2.
+It may not be possible to manifest this column for some features such as
+exons, because the phase is dependant on the spliceform (the same exon
+can appear in multiple spliceforms). This column is mostly useful for
+predicted exons and CDSs.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>residue_info</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+Alternative residues, when these differ from feature.residues. For
+instance, a SNP feature located on a wild and mutant protein would have
+different alternative residues. for alignment/similarity features, the
+alternative residues is used to represent the alignment string (CIGAR
+format). Note on variation features; even if we do not want to
+instantiate a mutant chromosome/contig feature, we can still represent a
+SNP etc with 2 locations, one (rank 0) on the genome, the other (rank 1)
+would have most fields null, except for alternative residues.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>locgroup</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+This is used to manifest redundant, derivable extra locations for a
+feature. The default locgroup=0 is used for the DIRECT location of a
+feature. Important: most Chado users may never use featurelocs WITH
+logroup &gt; 0. Transitively derived locations are indicated with
+locgroup &gt; 0. For example, the position of an exon on a BAC and in
+global chromosome coordinates. This column is used to differentiate
+these groupings of locations. The default locgroup 0 is used for the
+main or primary location, from which the others can be derived via
+coordinate transformations. Another example of redundant locations is
+storing ORF coordinates relative to both transcript and genome.
+Redundant locations open the possibility of the database getting into
+inconsistent states; this schema gives us the flexibility of both
+warehouse instantiations with redundant locations (easier for querying)
+and management instantiations with no redundant locations. An example of
+using both locgroup and rank: imagine a feature indicating a conserved
+region between the chromosomes of two different species. We may want to
+keep redundant locations on both contigs and chromosomes. We would thus
+have 4 locations for the single conserved region feature - two distinct
+locgroups (contig level and chromosome level) and two distinct ranks
+(for the two species).</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Used when a feature has &gt;1 location, otherwise the default rank 0 is
+used. Some features (e.g. blast hits and HSPs) have two locations - one
+on the query and one on the subject. Rank is used to differentiate
+these. Rank=0 is always used for the query, Rank=1 for the subject. For
+multiple alignments, assignment of rank is arbitrary. Rank is also used
+for sequence_variant features, such as SNPs. Rank=0 indicates the
+wildtype (or baseline) feature, Rank=1 indicates the mutant (or
+compared) feature.</td>
+</tr>
+</tbody>
+</table>
+<p>featureloc Structure</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>featureloc_c2</td>
+<td>CHECK ((fmin &lt;= fmax))</td>
+</tr>
+</tbody>
+</table>
+<p>featureloc Constraints</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_featureloc_pub" title="Chado Tables">featureloc_pub</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_featureloc_pub-classmw-headlinetable-featureloc_pubspan"><span id="Table:_featureloc_pub" class="mw-headline">Table: featureloc_pub</span></h2>
+<p>Provenance of featureloc. Linking table between featurelocs and
+publications that mention them.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>featureloc_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_featureloc" title="Chado Tables">featureloc</a></td>
+<td>featureloc_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>featureloc_pub Structure</p>
+<hr>
+<h2 id="span-idtable_featureprop-classmw-headlinetable-featurepropspan"><span id="Table:_featureprop" class="mw-headline">Table: featureprop</span></h2>
+<p>A feature can have any number of slot-value property tags attached to
+it. This is an alternative to hardcoding a list of columns in the
+relational schema, and is completely extensible.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>featureprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>featureprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property/slot is a cvterm. The meaning of the property
+is defined in that cvterm. Certain property types will only apply to
+certain feature types (e.g. the anticodon property will only apply to
+tRNA features) ; the types here come from the sequence feature property
+ontology.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+The value of the property, represented as text. Numeric values are
+converted to their text representation. This is less efficient than
+using native database types, but is easier to query.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Property-Value ordering. Any feature can have multiple values for any
+particular property type - these are ordered in a list using rank,
+counting from zero. For properties that are single-valued rather than
+multi-valued, the default 0 value should be used</td>
+</tr>
+</tbody>
+</table>
+<p>featureprop Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_featureprop_pub" title="Chado Tables">featureprop_pub</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_featureprop_pub-classmw-headlinetable-featureprop_pubspan"><span id="Table:_featureprop_pub" class="mw-headline">Table: featureprop_pub</span></h2>
+<p>Provenance. Any featureprop assignment can optionally be supported by a
+publication.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>featureprop_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_featureprop" title="Chado Tables">featureprop</a></td>
+<td>featureprop_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>featureprop_pub Structure</p>
+<hr>
+<h2 id="span-idtable_synonym-classmw-headlinetable-synonymspan"><span id="Table:_synonym" class="mw-headline">Table: synonym</span></h2>
+<p>A synonym for a feature. One feature can have multiple synonyms, and the
+same synonym can apply to multiple features.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>synonym Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>synonym_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The synonym itself. Should be human-readable machine-searchable ascii
+text.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Types would be symbol and fullname for now.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>synonym_sgml</td>
+<td>character varying(255)</td>
+<td><em>NOT NULL</em><br />
+<br />
+The fully specified synonym, with any non-ascii characters encoded in
+SGML.</td>
+</tr>
+</tbody>
+</table>
+<p>synonym Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_feature_synonym" title="Chado Tables">feature_synonym</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_library_synonym" title="Chado Tables">library_synonym</a></li>
+</ul>
+<hr>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ANeeds_Editing" title="Category%253ANeeds Editing">Needs Editing</a></li>
+<li><a href="Category%253ABLAST" title="Category%253ABLAST">BLAST</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Sequence_Module" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:17 on 18 December 2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">457,963 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

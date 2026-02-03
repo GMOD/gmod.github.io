@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse2 VMs - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse2-vmsspan"><span dir="auto">GBrowse2 VMs</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#GBrowse2_Virtual_Machines"><span class="tocnumber">1</span> <span class="toctext">GBrowse2
+Virtual Machines</span></a>
+<ul>
+<li><a href="#Getting_Started_with_the_VirtualBox_VM"><span class="tocnumber">1.1</span> <span class="toctext">Getting
+Started with the VirtualBox
+VM</span></a>
+<ul>
+<li><a href="#User_Accounts"><span class="tocnumber">1.1.1</span> <span class="toctext">User
+Accounts</span></a></li>
+<li><a href="#Editing_Network_Settings"><span class="tocnumber">1.1.2</span>
+<span class="toctext">Editing Network
+Settings</span></a>
+<ul>
+<li><a href="#Enabling_SSH"><span class="tocnumber">1.1.2.1</span>
+<span class="toctext">Enabling SSH</span></a></li>
+</ul>
+</li>
+<li><a href="#Expanding_Storage"><span class="tocnumber">1.1.3</span>
+<span class="toctext">Expanding
+Storage</span></a></li>
+</ul>
+</li>
+<li><a href="#Getting_Started_with_the_EC2_VM"><span class="tocnumber">1.2</span> <span class="toctext">Getting
+Started with the EC2 VM</span></a>
+<ul>
+<li><a href="#Logging_into_the_GBrowse_EC2_VM"><span class="tocnumber">1.2.1</span>
+<span class="toctext">Logging into the GBrowse EC2
+VM</span></a></li>
+<li><a href="#Using_the_Load_Balancing_Scripts"><span class="tocnumber">1.2.2</span> <span class="toctext">Using
+the Load Balancing
+Scripts</span></a></li>
+<li><a href="#Expanding_Database_Storage_on_the_GBrowse_EC2_VM"><span class="tocnumber">1.2.3</span>
+<span class="toctext">Expanding Database Storage on the GBrowse
+EC2 VM</span></a></li>
+</ul>
+</li>
+<li><a href="#Administration_common_to_both_VirtualBox_and_EC2_VMs"><span class="tocnumber">1.3</span>
+<span class="toctext">Administration common to both VirtualBox and
+EC2
+VMs</span></a>
+<ul>
+<li><a href="#Configuring_Tracks"><span class="tocnumber">1.3.1</span>
+<span class="toctext">Configuring
+Tracks</span></a></li>
+<li><a href="#Filesystem_Layout"><span class="tocnumber">1.3.2</span>
+<span class="toctext">Filesystem
+Layout</span></a></li>
+<li><a href="#Adding_New_Databases"><span class="tocnumber">1.3.3</span> <span class="toctext">Adding
+New Databases</span></a></li>
+<li><a href="#The_gbrowse_clean.pl_Script"><span class="tocnumber">1.3.4</span> <span class="toctext">The
+gbrowse_clean.pl Script</span></a></li>
+<li><a href="#Admin_mode"><span class="tocnumber">1.3.5</span> <span class="toctext">Admin
+mode</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idgbrowse2_virtual_machines-classmw-headlinegbrowse2-virtual-machinesspan"><span id="GBrowse2_Virtual_Machines" class="mw-headline">GBrowse2 Virtual Machines</span></h1>
+<p>Port Forwarding Settings</p>
+<p>By default, the NAT interface will take network requests targeted to the
+host machine&rsquo;s port 8081 to the guest VM&rsquo;s port 80. This allows the host
+machine to act as a GBrowse server for other physical machines on the
+local LAN and/or Internet. You may modify this if you wish in the
+following way. From the VirtualBox GUI, select the GBrowse VM, and then
+double-click on the <em>Network</em> setting in the details panel. This will
+bring up a dialog box that has tabs for each of the two network adapters
+attached to the VM. Select <em>Adapter 1</em>, which is the NAT adapter, and
+then open up the <em>Advanced</em> section. Click on <em>Port Forwarding</em> to open
+up the Port Forwarding definitions. You may add new forwarding rules by
+clicking on the <em>Plus</em> icon.</p>
+<p>In the example shown on the right, the first rule is the default
+forwarding of host port 8081 to guest port 80. In addition, we have
+added a second rule that forwards host&rsquo;s port 80 itself to guest port
+80. This allows you and others to access GBrowse without specifying
+the :8081 port. Note, however, that you must start VirtualBox with root
+privileges in order to successfully forward port 80 and any others below
+1024.</p>
+<h4 id="span-idenabling_ssh-classmw-headlineenabling-sshspan"><span id="Enabling_SSH" class="mw-headline">Enabling SSH</span></h4>
+<p>The VirtualBox VM does not run an SSH server by default, however you can
+enable it easily by running this command from Administrator&rsquo;s
+command-line shell.</p>
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
+<p>You can then ssh into the guest by using its host-only network
+interface. You can look up the network interface from within the virtual
+machine&rsquo;s desktop by right clicking on the Network icon (pie-wedge icon
+in the upper right of the menu bar), and selecting <em>Connection
+Information=&gt;Wired connection 2</em>. Alternatively, you can look it up
+from the command-line of the host machine using <em>VBoxManage</em>:</p>
+<pre><code>$ VBoxManage guestproperty get &quot;Growse 2.XX, VirtualBox Edition&quot; &quot;/VirtualBox/GuestInfo/Net/1/V4/IP&quot;
+Value: 192.168.56.101
+</code></pre>
+<p>You can now ssh in using the address you just got:</p>
+<pre><code>ssh admin@192.168.56.101
+</code></pre>
+<h3 id="span-idexpanding_storage-classmw-headlineexpanding-storagespan"><span id="Expanding_Storage" class="mw-headline">Expanding Storage</span></h3>
+<p>All the GBrowse databases are stored on a separate logical volume
+mounted at /opt/gbrowse. This volume grows dynamically up to 50 GB. If
+you run out of space, you can easily add more storage. First halt the
+virtual machine. Using the VirtualBox GUI, select the GBrowse VM, click
+on <em>Settings</em>, and then select <em>Storage</em>. In the <em>Storage Tree</em> panel,
+select <em>SATA Controller</em> and click on the <em>Add Hard Disk</em> icon. When
+prompted, choose <em>Create new disk</em> and then use the wizard to create a
+virtual disk with the size and characteristics you desire.</p>
+<p>Now launch the VM. The new disk you added will appear as a new
+unpartitioned disk drive device named /dev/sdc (or /dev/sdd if you&rsquo;ve
+done this once before). Do not partition or format this disk. Instead,
+use the Logical Volume Manager to extend the logical /opt/gbrowse volume
+onto this disk via the following series of commands:</p>
+<pre><code>sudo pvcreate /dev/sdc
+sudo vgextend volumes /dev/sdc
+sudo lvextend -l +100%FREE /dev/volumes/gbrowse
+sudo resize2fs /dev/volumes/gbrowse
+</code></pre>
+<p>/opt/gbrowse will now be increased by the size of the disk you just
+added.</p>
+<h2 id="span-idgetting_started_with_the_ec2_vm-classmw-headlinegetting-started-with-the-ec2-vmspan"><span id="Getting_Started_with_the_EC2_VM" class="mw-headline">Getting Started with the EC2 VM</span></h2>
+<p>To start a GBrowse server within the Amazon Elastic Compute Cloud (EC2),
+you will need to have an Amazon Web Services account and to be familiar
+with the process of configuring and launching Amazon Machine Images
+(AMIs. A good getting started guide can be found <a
+href="http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/GetStartedLinux.html"
+class="external text" rel="nofollow">here</a>.</p>
+<p>GMOD provides GBrowse AMIs in a small number of availability regions;
+this list will grow with time. Choose the region you prefer, and click
+on one of the links below:</p>
+<p><strong>GBrowse 2.54, us-east-1:</strong> <a
+href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-93e46cfa#launchAmi=ami-93e46cfa"
+class="external text" rel="nofollow">ami-93e46cfa</a></p>
+<p><strong>GBrowse 2.54, us-west-2:</strong> <a
+href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-c04fc4f0#launchAmi=ami-c04fc4f0"
+class="external text" rel="nofollow">ami-c04fc4f0</a></p>
+<p><strong>GBrowse 2.50, us-east-1:</strong> <a
+href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-4914a220#launchAmi=ami-4914a220"
+class="external text" rel="nofollow">ami-4914a220</a></p>
+<p><strong>GBrowse 2.50, us-west-2:</strong> <a
+href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-449a1474#launchAmi=ami-449a1474"
+class="external text" rel="nofollow">ami-449a1474</a></p>
+<p>Alternatively you may use the Amazon Console to search for public images
+matching the name &ldquo;GBrowse*&rdquo; in order to find images in your preferred
+region (there may not be any).</p>
+<p>Clicking on one of the AMIs listed above will start an instance launch
+wizard. Here is guidance on how to configure the instance:</p>
+<p>Instance Type<br>
+GBrowse will run even on the tiny <em>t1.micro</em> instance type, but this is
+only recommended for the purposes of kicking the tires. For production
+use, we recommend <em>m1.medium</em> or larger. High-CPU and high I/O
+performance instance types generally provide better performance than
+high-memory instances.</p>
+<!-- -->
+<p>Key Pair<br>
+Use your default SSH keypair.</p>
+<!-- -->
+<p>Firewall<br>
+Use or create a security group that allows both incoming SSH and HTTP
+connections. The former will allow you to log into the GBrowse server
+for administrative purposes, while the latter gives you access to the
+GBrowse web application.</p>
+<p>Once you are satisfied with the settings, launch the instance and watch
+the Amazon Console until it enters <em>Running</em> state. At this point,
+record the instance&rsquo;s public DNS name from the information provided on
+the console, and paste this DNS name into a web browser. You will be
+taken to the GBrowse welcome page, which offers links to documentation
+and bare-bones starter genome databases.</p>
+<h3 id="span-idlogging_into_the_gbrowse_ec2_vm-classmw-headlinelogging-into-the-gbrowse-ec2-vmspan"><span id="Logging_into_the_GBrowse_EC2_VM" class="mw-headline">Logging into the GBrowse EC2 VM</span></h3>
+<p>The administrative user for the GBrowse EC2 VM has a password-less
+account named &ldquo;admin&rdquo;, which can only be accessed via an SSH key. To log
+into the instance, invoke ssh with your AWS keypair identity file and
+the &ldquo;admin&rdquo; username:</p>
+<pre><code>ssh -i /path/to/aws_private_key.pem admin@ec2-XX-XX-XX-XX.compute-1.amazonaws.com
+</code></pre>
+<p>This will give you a command-line shell on the GBrowse server. To run
+any command as root, you may use <em>sudo</em> without providing a password.</p>
+<h3 id="span-idusing_the_load_balancing_scripts-classmw-headlineusing-the-load-balancing-scriptsspan"><span id="Using_the_Load_Balancing_Scripts" class="mw-headline">Using the Load Balancing Scripts</span></h3>
+<p>You may take advantage of Amazon&rsquo;s spot instances to load balance
+GBrowse at modest cost. The two scripts needed are:</p>
+<p>gbrowse_sync_aws_slave.pl<br>
+This script will synchronize the databases on the master VM to a data
+snapshot that can be accessed by the load balancing slave machines.</p>
+<p>gbrowse_aws_balancer.pl<br>
+This script runs the balancer daemon on the master VM. It monitors load
+on the master instance and launches slave instances to handle increased
+load.</p>
+<p>Configuration information for these two scripts is maintained in a
+common file named /opt/gbrowse/etc/aws_balancer.conf. This file controls
+the number of spot instances for launch for different load levels, the
+size and memory capacity of the spot instances, and the maximum hourly
+price you are willing to pay for a spot instance.</p>
+<p>There is also an init script located at
+/opt/gbrowse/etc/init.d/gbrowse-aws-balancer that launches and
+configures the balancer daemon. It is controlled by the configuration
+file /opt/gbrowse/etc/default/gbrowse-aws-balancer.</p>
+<p>Some setup is required to use the load balancer. For details see <a href="Load_Balancing_GBrowse2_with_AWS_Spot_Instances" title="Load Balancing GBrowse2 with AWS Spot Instances">Load
+Balancing GBrowse2 with AWS Spot
+Instances</a>
+or run:</p>
+<pre><code>perldoc gbrowse_aws_balancer.pl
+</code></pre>
+<h3 id="span-idexpanding_database_storage_on_the_gbrowse_ec2_vm-classmw-headlineexpanding-database-storage-on-the-gbrowse-ec2-vmspan"><span id="Expanding_Database_Storage_on_the_GBrowse_EC2_VM" class="mw-headline">Expanding Database Storage on the GBrowse EC2 VM</span></h3>
+<p>All GBrowse databases are stored in a logical volume mounted at
+/opt/gbrowse. The default volume is only 10 Gb in size, but you can
+easily expand it while logged into the GBrowse server by running
+<em>gbrowse_grow_cloud_vol.pl</em> and providing the number of gigabytes to
+expand it by. For example, this command increases the volume by an
+additional 40 GB:</p>
+<pre><code>gbrowse_grow_cloud_vol.pl 40
+</code></pre>
+<p>This works by allocating a new EBS volume, attaching it to the server
+instance, adding it to the logical volume manager group, and then
+resizing the /opt/gbrowse filesystem. Volumes added in this way have
+their &ldquo;delete on termination&rdquo; flag set, so the data will disappear when
+you terminate the instance, unless you snapshot the volume or create a
+new AMI to hold your local modifications.</p>
+<h2 id="span-idadministration_common_to_both_virtualbox_and_ec2_vms-classmw-headlineadministration-common-to-both-virtualbox-and-ec2-vmsspan"><span id="Administration_common_to_both_VirtualBox_and_EC2_VMs" class="mw-headline">Administration common to both VirtualBox and EC2 VMs</span></h2>
+<p>This section discusses configuration and administration tasks that are
+common for both the VirtualBox and EC2 virtual machines.</p>
+<h3 id="span-idconfiguring_tracks-classmw-headlineconfiguring-tracksspan"><span id="Configuring_Tracks" class="mw-headline">Configuring Tracks</span></h3>
+<p>The process of loading data and configuring tracks is described well in
+detail in the <a href="GBrowse_2.0_HOWTO" title="GBrowse 2.0 HOWTO">GBrowse 2.0
+HOWTO</a>, and the <a href="GBrowse_NGS_Tutorial" title="GBrowse NGS Tutorial">GBrowse NGS
+Tutorial</a> (for BAM and SAM
+next generation sequencing data). There are also several step-by-step
+tutorials located on the <a href="GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
+Tutorial</a> page. All tutorials will
+work on the VMs, except that the layout of the GBrowse&rsquo;s data and
+configuration files is slightly different from those in the tutorial.
+For example, the main GBrowse configuration file is located at
+/opt/gbrowse/etc/GBrowse.conf, instead of /etc/gbrowse2/GBrowse.conf.
+The VM filesystem layout is described in the next section.</p>
+<h3 id="span-idfilesystem_layout-classmw-headlinefilesystem-layoutspan"><span id="Filesystem_Layout" class="mw-headline">Filesystem Layout</span></h3>
+<p>The filesystem layout of both VMs is similar. The root filesystem at &ldquo;/&rdquo;
+consists of a generic Ubuntu bootable disk. Almost all GBrowse-related
+software has been installed in /opt/gbrowse:</p>
+<p>/opt/gbrowse/etc<br>
+GBrowse configuration files, including GBrowse.conf and datasource .conf
+files.</p>
+<!-- -->
+<p>/opt/gbrowse/databases<br>
+GBrowse databases</p>
+<!-- -->
+<p>/opt/gbrowse/htdocs<br>
+GBrowse Javascript and static HTML files.</p>
+<!-- -->
+<p>/opt/gbrowse/bin<br>
+Various command-line tools from the GBrowse and BioPerl distributions.</p>
+<!-- -->
+<p>/opt/gbrowse/lib<br>
+Perl and non-Perl libraries used by GBrowse.</p>
+<p>The system PATH includes /opt/gbrowse/bin, and the PERL5LIB environment
+variable is
+/opt/gbrowse/lib/perl:/opt/gbrowse/lib/perl5:/opt/gbrowse/share/perl.</p>
+<h3 id="span-idadding_new_databases-classmw-headlineadding-new-databasesspan"><span id="Adding_New_Databases" class="mw-headline">Adding New Databases</span></h3>
+<p>You can add new databases in the way described in <a href="GBrowse_2.0_HOWTO" title="GBrowse 2.0 HOWTO">GBrowse 2.0
+HOWTO</a> and <a href="GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
+Tutorial</a>. However, there is also a
+new command-line tool called <em>gbrowse_import_ucsc_db.pl</em> that will
+initialize starter databases from information held in the UCSC Genome
+Browser. It is run this way:</p>
+<pre><code>gbrowse_import_ucsc_db.pl hg19 'H. sapiens genome (hg19), genes and DNA'
+</code></pre>
+<p>The first argument is the UCSC genome build name, such as <em>hg19</em>. The
+second is the description to attach to the new database. This
+description will appear in the GBrowse datasources menu. When this
+script is run, it will fetch the DNA, genes and non-coding RNA
+annotations for the indicated data source and create a bare-bones
+configuration file for the data source. You can then tweak the
+configuration file and add to it.</p>
+<h3 id="span-idthe_gbrowse_cleanpl_script-classmw-headlinethe-gbrowse_cleanpl-scriptspan"><span id="The_gbrowse_clean.pl_Script" class="mw-headline">The gbrowse_clean.pl Script</span></h3>
+<p>On both VMs there is a daily cron job that runs under the www-data user.
+This cronjob runs gbrowse_clean.pl to remove old cache files as well as
+uploads that haven&rsquo;t been accessed in a minimum number of days
+(controlled by the &ldquo;expire uploads&rdquo; option in GBrowse.conf). The script
+will log its run time actions to the file
+/etc/gbrowse2/gbrowse_clean.log.</p>
+<p>You may disable gbrowse_clean.pl by running:</p>
+<pre><code>sudo crontab -u www-data -e
+</code></pre>
+<p>This will open up a text editor. Simply comment out the line that runs
+gbrowse_clean.pl.</p>
+<h3 id="span-idadmin_mode-classmw-headlineadmin-modespan"><span id="Admin_mode" class="mw-headline">Admin mode</span></h3>
+<p>Both VMs come with a preinstalled GBrowse administrator user. When the
+administrator is logged into the browser using the <em>Log in / create
+account</em> link in the upper right of the GBrowse main window, all tracks
+uploaded by this user will be publicly visible. The username and
+password for this user are:</p>
+<pre><code>username: admin
+password: gbrowse
+</code></pre>
+<p>If you make the VM publicly accessible, you are advised to change the
+password by selecting <em>My Account</em> and then <em>Change Password</em> after you
+initially log in. You may also use the command-line tool
+<em>gbrowse_set_admin_passwd.pl</em> to change the password from a server
+shell.</p>
+<p>To administer the embedded MySQL server, please use the user account
+&ldquo;root&rdquo; and the password &ldquo;gbrowse&rdquo;. To change the MySQL root password,
+use the <strong>mysqladmin password</strong> command.</p>
+<p><strong>Important note:</strong> The GBrowse &ldquo;admin&rdquo; user is separate from the
+&ldquo;admin&rdquo; user used to log into the server command-line shell. On the
+Amazon edition, &ldquo;admin&rdquo; has no password and must use an SSH key to log
+in. On the VirtualBox edition, &ldquo;admin&rdquo; has the default password of
+&ldquo;gbrowse&rdquo;. If you change the web interface password, you will not change
+the shell login password; this must be done separately.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse_2" title="Category%253AGBrowse 2">GBrowse 2</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse2_VMs" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:37 on 13 February
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">99,745 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

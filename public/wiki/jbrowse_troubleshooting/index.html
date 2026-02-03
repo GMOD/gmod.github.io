@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBrowse Troubleshooting - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautojbrowse-troubleshootingspan"><span dir="auto">JBrowse Troubleshooting</span></h1>
+<p>This page collects solutions to problems that people sometimes encounter
+when installing JBrowse.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Installing_prerequisites_-_libpng.2C_zlib.2C_libgd.2C_etc"><span class="tocnumber">1</span> <span class="toctext">Installing
+prerequisites - libpng, zlib, libgd,
+etc</span></a>
+<ul>
+<li><a href="#Linux_-_Ubuntu_.2F_Debian"><span class="tocnumber">1.1</span> <span class="toctext">Linux -
+Ubuntu / Debian</span></a></li>
+<li><a href="#Linux_-_Red_Hat_.2F_Fedora_.2F_CentOS"><span class="tocnumber">1.2</span> <span class="toctext">Linux -
+Red Hat / Fedora /
+CentOS</span></a></li>
+<li><a href="#Mac_OS_X"><span class="tocnumber">1.3</span> <span class="toctext">Mac OS
+X</span></a></li>
+</ul>
+</li>
+<li><a href="#Other_Problems"><span class="tocnumber">2</span> <span class="toctext">Other
+Problems</span></a></li>
+</ul>
+<h1 id="span-idinstalling_prerequisites_-_libpng2c_zlib2c_libgd2c_etc-classmw-headlineinstalling-prerequisites---libpng-zlib-libgd-etcspan"><span id="Installing_prerequisites_-_libpng.2C_zlib.2C_libgd.2C_etc" class="mw-headline">Installing prerequisites - libpng, zlib, libgd, etc</span></h1>
+<p>JBrowse requires a few fundamental prerequisites that it cannot install
+itself: these are libpng, zlib, libgd, make, a C compiler, and a C++
+compiler.</p>
+<h2 id="span-idlinux_-_ubuntu_2f_debian-classmw-headlinelinux---ubuntu--debianspan"><span id="Linux_-_Ubuntu_.2F_Debian" class="mw-headline">Linux - Ubuntu / Debian</span></h2>
+<p>These commands, or similar, should install what you need:</p>
+<pre><code> sudo apt-get install build-essential libpng-dev zlib1g-dev libgd2-xpm-dev
+</code></pre>
+<h2 id="span-idlinux_-_red_hat_2f_fedora_2f_centos-classmw-headlinelinux---red-hat--fedora--centosspan"><span id="Linux_-_Red_Hat_.2F_Fedora_.2F_CentOS" class="mw-headline">Linux - Red Hat / Fedora / CentOS</span></h2>
+<p>These commands, or similar, should install what you need:</p>
+<pre><code> sudo yum groupinstall &quot;Development Tools&quot;
+ sudo yum install libpng-devel gd-devel zlib-devel perl-ExtUtils-MakeMaker
+</code></pre>
+<h2 id="span-idmac_os_x-classmw-headlinemac-os-xspan"><span id="Mac_OS_X" class="mw-headline">Mac OS X</span></h2>
+<p>Use <a href="http://www.macports.org/" class="external text"
+rel="nofollow">MacPorts</a>,
+<a href="http://www.finkproject.org/" class="external text"
+rel="nofollow">Fink</a>,
+<a href="http://mxcl.github.com/homebrew/" class="external text"
+rel="nofollow">Homebrew</a>, or another package manager to install a C++
+compiler, libpng development headers, GD development headers, and Zlib
+development headers.</p>
+<h1 id="span-idother_problems-classmw-headlineother-problemsspan"><span id="Other_Problems" class="mw-headline">Other Problems</span></h1>
+<p>If nothing on this page helps you, try emailing the JBrowse mailing
+list.</p>
+<p>The setup script creates a file called <code>setup.log</code>, contains detailed
+information on your installation. Email
+<a href="mailto:gmod-ajax@lists.sourceforge.net" class="external text"
+rel="nofollow"><a href="mailto:gmod-ajax@lists.sourceforge.net">gmod-ajax@lists.sourceforge.net</a></a> with a request for
+support, and attach your <code>setup.log</code> file to the email. Please do not
+put the setup.log file directly in the email body.</p>
+<p>As more users try <code>setup.sh</code> and report problems to the mailing list,
+this wiki will be updated with fixes for common problems they encounter.</p>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_Troubleshooting" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 12:28 on 25 September
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">39,332 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

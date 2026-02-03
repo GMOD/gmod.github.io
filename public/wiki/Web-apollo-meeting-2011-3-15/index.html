@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-apollo-meeting-2011-3-15 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoweb-apollo-meeting-2011-3-15span"><span dir="auto">Web-apollo-meeting-2011-3-15</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#3.2F15.2F2011:_Suzi.2C_Gregg.2C_Ed.2C_and_Nomi"><span class="tocnumber">1</span> <span class="toctext">3/15/2011:
+Suzi, Gregg, Ed, and
+Nomi</span></a>
+<ul>
+<li><a href="#Progress_Report"><span class="tocnumber">1.1</span> <span class="toctext">Progress
+Report</span></a></li>
+<li><a href="#Hardware"><span class="tocnumber">1.2</span>
+<span class="toctext">Hardware</span></a></li>
+<li><a href="#JBrowse_issues"><span class="tocnumber">1.3</span> <span class="toctext">JBrowse
+issues</span></a></li>
+<li><a href="#What_does_WebApollo_need_to_provide.3F"><span class="tocnumber">1.4</span> <span class="toctext">What does
+WebApollo need to
+provide?</span></a></li>
+<li><a href="#Discussed_commonality_between_editing_operations"><span class="tocnumber">1.5</span> <span class="toctext">Discussed
+commonality between editing
+operations</span></a></li>
+<li><a href="#Undo.2FRedo"><span class="tocnumber">1.6</span>
+<span class="toctext">Undo/Redo</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-id32f152f2011_suzi2c_gregg2c_ed2c_and_nomi-classmw-headline3152011-suzi-gregg-ed-and-nomispan"><span id="3.2F15.2F2011:_Suzi.2C_Gregg.2C_Ed.2C_and_Nomi" class="mw-headline">3/15/2011: Suzi, Gregg, Ed, and Nomi</span></h2>
+<h3 id="span-idprogress_report-classmw-headlineprogress-reportspan"><span id="Progress_Report" class="mw-headline">Progress Report</span></h3>
+<ul>
+<li>WebApollo year 1 progress report submitted. Thanks to all who
+contributed to it.</li>
+</ul>
+<h3 id="span-idhardware-classmw-headlinehardwarespan"><span id="Hardware" class="mw-headline">Hardware</span></h3>
+<ul>
+<li>What hardware do we need for a WebApollo server?
+<ul>
+<li>One server (Linux or OSX). (Budget?)</li>
+<li>Server itself doesn&rsquo;t need to be too studly&ndash;mostly we need a lot of
+storage.</li>
+<li>Four 3-terabyte drives (or at least 8 terabytes to start with)</li>
+<li>Need space to double every year (but hopefully that will be constant
+cost/year as price of memory drops)</li>
+<li>Server speed is not a huge issue. The client side (how much data a
+browser can handle) will be the limiting factor.</li>
+<li>Seth says we have space on campus and the networking we need.</li>
+</ul>
+</li>
+<li>Action items:
+<ul>
+<li>AI: Suzi will check on time constraint (when does this grant year
+end? April 30?) and hardware budget</li>
+<li>AI: Seth will get a price quote</li>
+<li>AI: Seth and/or Ed will do the ordering</li>
+<li>AI: Ed will get Tomcat up on the server</li>
+<li>AI: Gregg will deal with the rsync</li>
+</ul>
+</li>
+<li>Backups and server use by outside groups
+<ul>
+<li>Need to back up user data (though not the UCSC data, which we can
+always get again).</li>
+<li>Larger groups may set up their own servers, but we need to be a
+server for smaller groups that want to use WebApollo.</li>
+<li>Would we have to set limits about how much data users could save on
+our server?</li>
+</ul>
+</li>
+<li>Seth proposed buying a server with the following (which we can afford
+with our current hardware budget):
+<ul>
+<li>2x 4 core</li>
+<li>6GB RAM</li>
+<li>7x 2TB hd (RAID 6 + one hot spare = 8TB)</li>
+<li>1x 120MB SSD boot disk</li>
+<li>3U profile, 12 hd slots</li>
+<li>4x Gb ethernet (for bonding on two interfaces)</li>
+<li>Gregg said: &ldquo;Seth and I talked briefly in person on Tuesday, and he
+convinced me that it makes sense to spend the money for enough hard
+drives to set up RAID 6 for the UCSC data. And I agree to allow for
+future expansion we should go ahead with a 4U 16 slot box.&rdquo;</li>
+<li>I believe the server has now been ordered?</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idjbrowse_issues-classmw-headlinejbrowse-issuesspan"><span id="JBrowse_issues" class="mw-headline">JBrowse issues</span></h3>
+<ul>
+<li>JBrowse currently only supports two-level feature hierarchy.
+<ul>
+<li>Mitch wants to do a JSON approach that allows arbitrary levels of
+features, and also different kinds of features at the same level
+(possibly with different fields).
+<ul>
+<li>Gregg and Mitch have talked about details of this approach, sounds
+like it&rsquo;ll provide what we need</li>
+<li>Mitch may be able to implement this in the next several months</li>
+<li>If Mitch doesn&rsquo;t get to it before we need it, Gregg can implement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idwhat_does_webapollo_need_to_provide3f-classmw-headlinewhat-does-webapollo-need-to-providespan"><span id="What_does_WebApollo_need_to_provide.3F" class="mw-headline">What does WebApollo need to provide?</span></h3>
+<ul>
+<li>We looked at old Apollo to see what it has so we could decide what
+WebApollo needs.</li>
+<li>Authentication service with read/write privileges (records who made
+the annotation)</li>
+<li>Sequence window (old Apollo)&ndash;view as cDNA, AA, etc., and can
+copy&amp;paste or save to a file
+<ul>
+<li>Suzi notes that it&rsquo;s really annoying when web apps pop up extra
+windows</li>
+<li>Gregg says what he&rsquo;d want is a menu item, Copy to Clipboard</li>
+</ul>
+</li>
+<li>Alignment viewer</li>
+<li>(Exon Detail Editor&ndash;don&rsquo;t want)</li>
+<li>Show start/stop codons (when you&rsquo;ve zoomed in enough to see
+bases)&ndash;calculate on the fly on client. (Would need to show which
+strand they were on.)</li>
+<li>Stuff that&rsquo;s in Apollo&rsquo;s Annotation Information Editor&ndash;what do we
+need?
+<ul>
+<li>Ability to rename annotations</li>
+<li>Add/edit comments</li>
+<li>Synonyms</li>
+<li>Dbxrefs (JBrowse already provides this?)</li>
+<li>Ability to paste in new exon boundaries (?) (Maybe this doesn&rsquo;t
+belong in the Annotation Info Editor)</li>
+<li>Little pieces of info, some of which are calculated automatically
+(e.g., missing start/stop codons)</li>
+<li>Ontology terms? (Old Apollo doesn&rsquo;t really have this, except via the
+dbxref, which has a checkbox for &ldquo;is from an ontology&rdquo;.)
+<ul>
+<li>Gregg suggests that this panel could pull out as a slider, or it
+could be brought up by a right-menu option. We don&rsquo;t want it
+around taking up space unless it&rsquo;s requested. We don&rsquo;t want it to
+pop up as a separate window.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ability to create de novo annotation (Apollo offers a right-menu
+option to choose annotation type)&ndash;types should be a subset of the
+Sequence Ontology, but you should also be able to create your own new
+annotation type.</li>
+<li>Time-stamp annotations</li>
+<li>Let user set an anchor? (Keep a point centered even when zooming in
+and out.)</li>
+<li>Should we offer zoomed-in and zoomed-out views (vertically) in the
+same screen? Suzi says yes. Can have two vertical scrollbars. Can zoom
+the two views independently.</li>
+<li>Splice view (like in <a href="IGB" title="IGB">IGB</a>)&ndash;show all the exons (plus a bit
+of the introns) and leave out the boring empty intron stretches.</li>
+<li>Annotation editing operations:
+<ul>
+<li>Undo</li>
+<li>Merge</li>
+<li>Split</li>
+<li>&hellip;</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-iddiscussed_commonality_between_editing_operations-classmw-headlinediscussed-commonality-between-editing-operationsspan"><span id="Discussed_commonality_between_editing_operations" class="mw-headline">Discussed commonality between editing operations</span></h3>
+<ul>
+<li>Interval algebra
+<ul>
+<li>Add exon, extend exon, merge exons, create transcript, merge
+transcripts can all be considered union operations on
+exon/transcript intervals</li>
+<li>Delete exon, shorten exon, split exon, delete transcript, split
+transcript can all be considered intersect (or alternatively XOR or
+NOT) operations on exon/transcript intervals</li>
+<li>Not exactly sure what this implies for user interface, but hopefully
+thinking about this will help simplify the GUI</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idundo2fredo-classmw-headlineundoredospan"><span id="Undo.2FRedo" class="mw-headline">Undo/Redo</span></h3>
+<ul>
+<li>Discussed global undo vs. per-annotation undo</li>
+<li>Implementing undo/redo as ancestor/descendant traversal</li>
+<li>Handling splits and merges &ndash; implies multiple ancestors, multiple
+descendants</li>
+<li>UI for undo/redo &ndash; back/forward, select from version list, or both</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AWebapollo" title="Category%253AWebapollo">Webapollo</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Web-2Dapollo-2Dmeeting-2D2011-2D3-2D15"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:53 on 21 February
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">14,146 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

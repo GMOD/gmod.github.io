@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User talk:Rbruggne - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautouser-talkrbruggnespan"><span dir="auto">User talk:Rbruggne</span></h1>
+<p>This is a scratch page for thoughts on development of the GMOD Bio
+Object Layer (GBOL).</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Random"><span class="tocnumber">1</span>
+<span class="toctext">Random</span></a></li>
+<li><a href="#Object_Layer_Design_Goals"><span class="tocnumber">2</span> <span class="toctext">Object Layer
+Design Goals</span></a></li>
+<li><a href="#Diagrams"><span class="tocnumber">3</span>
+<span class="toctext">Diagrams</span></a></li>
+<li><a href="#Simple_Object_Layer"><span class="tocnumber">4</span> <span class="toctext">Simple Object
+Layer</span></a></li>
+<li><a href="#Bio_Object_Layer"><span class="tocnumber">5</span> <span class="toctext">Bio Object
+Layer</span></a></li>
+<li><a href="#Configuration_Adaptor_Thoughts"><span class="tocnumber">6</span> <span class="toctext">Configuration
+Adaptor Thoughts</span></a></li>
+<li><a href="#Analyses"><span class="tocnumber">7</span>
+<span class="toctext">Analyses</span></a></li>
+<li><a href="#Annotation_Properties"><span class="tocnumber">8</span> <span class="toctext">Annotation
+Properties</span></a></li>
+</ul>
+<h2 id="span-idrandom-classmw-headlinerandomspan"><span id="Random" class="mw-headline">Random</span></h2>
+<p>First things first. Can we pronounce GBOL gobble?</p>
+<h2 id="span-idobject_layer_design_goals-classmw-headlineobject-layer-design-goalsspan"><span id="Object_Layer_Design_Goals" class="mw-headline">Object Layer Design Goals</span></h2>
+<ul>
+<li>Provide a simple object layer for manipulating generic genomic
+features, their locations, annotation properties, and supporting
+analyses. This object layer will essentially mimic the structure of
+GMOD&rsquo;s Chado schema.</li>
+<li>Provide a set of biologically contextual objects that are extensions
+of the abstract layer and that have type-specific convenience
+functions and properties.</li>
+<li>The simple / bio object layers should be able to be used independently
+of any connection to a data store.</li>
+<li>Provide a factory interface for the fetching / storing of GBOL
+objects, as well as implementations that work with the Chado Schema
+and ChadoXML files.</li>
+<li><strong>EL</strong>: Make sure that the biological layer adheres to Chado best
+practices in how it represents the data. We need to start
+standardizing use.</li>
+</ul>
+<h2 id="span-iddiagrams-classmw-headlinediagramsspan"><span id="Diagrams" class="mw-headline">Diagrams</span></h2>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/Gbol_architecture.png" width="489"
+height="406" alt="Primitive Architecture Diagram" /></p>
+<ul>
+<li>The bio object layer contains classes that are extensions of the
+Simple Object layer classes. for instance, the Gene bio object class
+extends the simple object layer Feature class and has convenience
+methods like getTranscripts(). The feature set in the constructor by a
+<a href="#Configuration_Adaptor_Thoughts">configuration adaptor</a>.</li>
+<li>The simple object layer is made of of classes that are essentially a
+transformation of the Chado Schema. For instance, there&rsquo;s a CV class,
+CVTerm class, Feature class, etc.</li>
+<li>The simple object factory interface declares methods for fetching and
+saving simple objects to and from data stores. Initially, I&rsquo;d like to
+implement that against chado &amp; chado xml.</li>
+</ul>
+<h2 id="span-idsimple_object_layer-classmw-headlinesimple-object-layerspan"><span id="Simple_Object_Layer" class="mw-headline">Simple Object Layer</span></h2>
+<p>As stated above, the simple object layer is essentially the chado schema
+in java object form.</p>
+<ul>
+<li>Random thoughts&hellip;.
+<ul>
+<li>In my first go around, I calculated equality and hascode based on
+the property values that are specified as the unique constraints of
+a table. For instance, equality of a Feature Object is based on
+organism, type, and uniquename, This might be unexpected behavior if
+people expect equality / hashcode to be evaluated based on all
+object fields instead of a subset.</li>
+<li>Definitely want to go for the schema-driven class generation
+approach if the tools are good enough.</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idbio_object_layer-classmw-headlinebio-object-layerspan"><span id="Bio_Object_Layer" class="mw-headline">Bio Object Layer</span></h2>
+<p>These BioObjects will be extensions of the simple object class Feature.
+We&rsquo;ve discussed the idea of having some sort of &ldquo;configuration adaptor&rdquo;
+assigned to each bio object instance that would essentially specify the
+object&rsquo;s type, detail how other bio objects are related to it, and tell
+what sorts of features to save should the object be written to a data
+store. See <a href="#Configuration_Adaptor_Thoughts">Configuration Adaptor
+Thoughts</a> for more details.</p>
+<p>Central Dogma Model thoughts:</p>
+<ul>
+<li>I think there&rsquo;s a significant amount of confusion (or ambiguity) in
+the way the molbio central dogma is represented between MODs (and
+Apollo). Personally, I like the using a flybase-style protein feature
+who&rsquo;s coordinates denote the start and stop of translation of a
+protein within a transcript, but the name protein is sort of a
+misnomer and a protein shouldn&rsquo;t have a feature loc on a chromosome
+arm. So what about using a CDS feature to denote the boundaries of
+translation within a transcript? It could work just like the flybase
+protein feature - not multiple CDS regions on a per-exon basis but
+rather a single feature who&rsquo;s coordinates dictate start and stop of
+translation within a transcript. It&rsquo;s residues will be nucleotides and
+can be translated to get the polypeptide residues. There can be a
+polypeptide feature also, but it&rsquo;s related to the CDS feature, not the
+transcript.</li>
+<li>Possible biological model: Gene-&gt;Transcript-&gt;(Single) CDS
+-&gt;Polypeptide. The CDS feature would be a single feature that would
+denote the start and stop of translation within the transcript and
+would have coordinates relative to the genome or transcript. Genomic
+coordinates makes it easiest to calculate exon cds regions &amp; urs.
+Transcript-relative coordinates seem most technically correct. The
+polypeptide would have no feature coordinates relative to the genome.</li>
+</ul>
+<p>Extended Objects and methods:</p>
+<ul>
+<li>
+<p>SO:0000704: Gene</p>
+<ul>
+<li><strong>Thoughts:</strong></li>
+<li><strong>Methods:</strong>
+<ul>
+<li>List&lt;Transcript&gt; getTranscripts(): Returns all transcripts
+related to a gene.</li>
+<li>boolean addTranscript(Transcript): Associates a transcript with a
+gene. Updates gene boundaries if necessary.</li>
+<li>List&lt;Exon&gt; getExons(): Returns all gene exons ordered by
+increasing start location.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000673: Transcript</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>Most of the objects involved in the CDS_region/ coding / UTR
+related functions could be calculated on the fly.</li>
+</ul>
+</li>
+<li><strong>Methods:</strong>
+<ul>
+<li>Gene getGene(): returns gene that transcript is part of.</li>
+<li>List&lt;Exon&gt; getExons(): Returns transcript exons ordered by
+increasing start location.</li>
+<li>List&lt;Exon&gt; getCodingExons(): Returns transcript exons that
+contain coding sequence.</li>
+<li>List&lt;Exon&gt; getFivePrimeUTRExons(): Returns transcript exons
+containing 5&rsquo; UTR sequence.</li>
+<li>List&lt;Exon&gt; getThreePrimerimeUTRExons(): Returns transcript exons
+containing 3&rsquo; UTR sequence.</li>
+<li>boolean addExon(Exon): Associates an exon with a transcript.
+Updates transcript / gene boundaries if necessary.</li>
+<li>List&lt;FivePrimeUTR&gt; getFivePrimeUTRs(): Returns FivePrimeUTR
+features for a transcript. Should this actually be
+FivePrimeUTR_region?&hellip; see below.</li>
+<li>List&lt;ThreePrimeUTR&gt; getThreePrimeUTRs(): Returns ThreePrimeUTR
+features for a transcript. Ditto ThreePrimeUTR_region.</li>
+<li>List&lt;Intron&gt; getIntrons(): Returns intron features for a
+transcript.</li>
+<li>CDS getCDS() returns a single CDS feature for a transcript.</li>
+<li>List&lt;CDS&gt; getCDSRegions(): Returns CDS_region features for a
+transcript.</li>
+<li>Protein getProtein(): Not sure about this one. It&rsquo;d be nice to
+assume that there was a single protein for any protein-coding
+transcript. How many people have multiple proteins associated with
+a single transcript?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000147: Exon</p>
+<ul>
+<li><strong>Thoughts:</strong></li>
+<li><strong>Methods:</strong>
+<ul>
+<li>gene getGene(): returns gene that exon is part of.</li>
+<li>List&lt;Transcript&gt; getTranscripts: returns transcripts that exon
+is part of.</li>
+<li>boolean containsCDS(): returns true if exon contains coding
+sequence, false otherwise.</li>
+<li>boolean containsUTR(): returns true if exon has any UTR, false
+otherwise.</li>
+<li>boolean contains5primeUTR(): returns true if exon contains
+5primeUTR, false otherwise.</li>
+<li>boolean contains3primeUTR(): returns true if exon contains
+3primeUTR, false otherwise.</li>
+<li>CDSRegion getCDSRegion(): Returns CDSRegion component of an exon
+if it exists.</li>
+<li>5primeUTR get5primeUTR(): Returns 5primeUTR component of an exon
+if it exists.</li>
+<li>3primeUTR get3primeUTR(): Returns 3primeUTR component of an exon
+if it exists.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000188: Intron</p>
+<ul>
+<li><strong>Thoughts:</strong></li>
+<li><strong>Methods:</strong>
+<ul>
+<li>transcript getTranscript(): returns transcript that intron is a
+part of.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000204: FivePrimeUTR:</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>The SO definition indicates that it&rsquo;s a contiguous sequence, but
+we want separate 5&rsquo; UTR pieces. So maybe a new FivePrimeUTR_region
+SO term is called for?</li>
+</ul>
+</li>
+<li><strong>Methods:</strong>
+<ul>
+<li>transcript getTranscript(): returns transcript that UTR is a part
+of.</li>
+<li>exon getExon(): returns</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000205: ThreePrimeUTR:</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>Same as FivePrimeUTR- Need a ThreePrimeUTR_region in so?</li>
+</ul>
+</li>
+<li><strong>Methods:</strong>
+<ul>
+<li>transcript getTranscript(): returns transcript that UTR is a part
+of.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000316: CDS</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>The idea of having a cds feature define the translational
+boundaries of a transcript actually makes more sense than using a
+protein feature. So maybe the model should look like
+gene-&gt;transcript-&gt;cds-&gt;protein. The CDS feature would have
+nucleotides as residues and featurelocs that define the
+translational boundaries of a related protein feature.</li>
+</ul>
+</li>
+<li><strong>Methods:</strong>
+<ul>
+<li>transcript getTranscript(): returns transcript that CDS is a
+subsequence of.</li>
+<li>String translate(): returns the translated peptide sequence of the
+CDS.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>
+<p>SO:0000851: CDSRegion</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>First, I don&rsquo;t really see the utility of CDS_region features -
+they seem like a waste of space and all the information that they
+contain can simply be derived from single flybase-style protein
+feature (with translational start / stop coordinates as its
+featureloc). Actually&hellip; that should be a CDS feature instead of a
+protein. Despite this, it appears as though a number of MODs and
+Ensembl too maybe rely on CDS_region-style features (often just
+called &lsquo;CDS&rsquo; features) so GBOL should support them to some extent.</li>
+</ul>
+</li>
+<li><strong>Methods</strong>
+<ul>
+<li>transcript getTranscript(): returns transcript that CDSRegion is a
+part of.</li>
+<li>exon getExon(): returns the exon that the CDSRegion is a part of.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>SO:0000104: Polypeptide</p>
+<ul>
+<li><strong>Thoughts:</strong>
+<ul>
+<li>Should this even have a featureloc if the CDS feature is used to
+define translational boundaries?</li>
+<li>Should this contain the translated stop codon (*) from the CDS
+sequence?</li>
+</ul>
+</li>
+<li><strong>Methods:</strong>
+<ul>
+<li>transcript getTranscript(): returns the transcript the the
+polypeptide derives from.</li>
+<li>CDS getCDS(): returns the CDS feature that the polypeptide is
+translated from.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Others&hellip;.</p>
+<ul>
+<li>SO:0005836: RegulatoryRegion</li>
+<li>SO:0000188: Intron</li>
+<li>SO:0000105: ChromosomeArm</li>
+<li>SO:0000148: Supercontig</li>
+</ul>
+<h2 id="span-idconfiguration_adaptor_thoughts-classmw-headlineconfiguration-adaptor-thoughtsspan"><span id="Configuration_Adaptor_Thoughts" class="mw-headline">Configuration Adaptor Thoughts</span></h2>
+<p>Hmmm&hellip;.</p>
+<h2 id="span-idanalyses-classmw-headlineanalysesspan"><span id="Analyses" class="mw-headline">Analyses</span></h2>
+<p>I&rsquo;d like a bioperl set of objects that allow you to traverse sequence
+alignments, hits, &amp; HSPs. Certainly, people are always asking how to get
+analyses in and out of Chado. I think this will involve an extension of
+the Feature class like the bio object layer. Err&hellip; It probably should
+be part of the bio object layer.</p>
+<h2 id="span-idannotation_properties-classmw-headlineannotation-propertiesspan"><span id="Annotation_Properties" class="mw-headline">Annotation Properties</span></h2>
+<p>Is there a controlled vocabulary for annotation properties? We need to
+specify conventions for things like, storing feature comments and
+comment properties. How about annotation evidence structure and
+confidence codes from GO?</p>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><span id="ca-nstab-user">User page</span></li>
+<li><span id="ca-talk"><a href="User_talk%253ARbruggne" accesskey="t"
+title="Discussion about the content page [t]">Discussion</a></span></li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><span id="footer-info-lastmod">Last updated at 19:23 on 14 July
+2008.</span></li>
+</ul>
+<!-- - <span id="footer-info-viewcount">3,368 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Tutorial 2012 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-tutorial-2012span"><span dir="auto">Chado Tutorial 2012</span></h1>
+<p>This <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+tutorial was presented by <a href="User%253AScott" title="User%253AScott">Scott Cain</a> as part
+of the <a href="2012_GMOD_Summer_School" title="2012 GMOD Summer School">2012 GMOD Summer
+School</a>.</p>
+<p>To follow along with the tutorial, you will need to use <strong>AMI ID:
+ami-ad2f98c4, name: GMOD 2012 final day</strong>, available in the US East (N.
+Virginia) region. See the <a href="GMOD_Cloud_Tutorial" title="GMOD Cloud Tutorial">GMOD Cloud
+Tutorial</a> for information on
+how to get this AMI.</p>
+<p>Chado is the database schema of the GMOD project. This session
+introduces database concepts, and then provides an overview of Chado&rsquo;s
+design and architecture, and then goes into detail about how to use a
+Chado database.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Theory"><span class="tocnumber">1</span>
+<span class="toctext">Theory</span></a>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1.1</span>
+<span class="toctext">Introduction</span></a>
+<ul>
+<li><a href="#Database_Terminology"><span class="tocnumber">1.1.1</span>
+<span class="toctext">Database
+Terminology</span></a>
+<ul>
+<li><a href="#What.27s_a_database.3F"><span class="tocnumber">1.1.1.1</span>
+<span class="toctext">What&rsquo;s a
+database?</span></a></li>
+<li><a href="#SQL"><span class="tocnumber">1.1.1.2</span>
+<span class="toctext">SQL</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Why_Chado.3F"><span class="tocnumber">1.2</span> <span class="toctext">Why
+Chado?</span></a></li>
+<li><a href="#Chado_Architecture:_Modules"><span class="tocnumber">1.3</span> <span class="toctext">Chado
+Architecture: Modules</span></a>
+<ul>
+<li><a href="#Extensible"><span class="tocnumber">1.3.1</span>
+<span class="toctext">Extensible</span></a></li>
+<li><a href="#Plus"><span class="tocnumber">1.3.2</span>
+<span class="toctext">Plus</span></a></li>
+<li><a href="#Module_Caveats"><span class="tocnumber">1.3.3</span> <span class="toctext">Module
+Caveats</span></a></li>
+</ul>
+</li>
+<li><a href="#Exploring_the_schema"><span class="tocnumber">1.4</span> <span class="toctext">Exploring
+the schema</span></a>
+<ul>
+<li><a href="#Sequence_Module"><span class="tocnumber">1.4.1</span>
+<span class="toctext">Sequence Module</span></a>
+<ul>
+<li><a href="#Features"><span class="tocnumber">1.4.1.1</span>
+<span class="toctext">Features</span></a></li>
+</ul>
+</li>
+<li><a href="#CV_.28Controlled_Vocabularies.29_Module"><span class="tocnumber">1.4.2</span> <span class="toctext">CV
+(Controlled Vocabularies)
+Module</span></a>
+<ul>
+<li><a href="#Controlled_Vocabularies"><span class="tocnumber">1.4.2.1</span>
+<span class="toctext">Controlled
+Vocabularies</span></a></li>
+<li><a href="#Ontologies"><span class="tocnumber">1.4.2.2</span>
+<span class="toctext">Ontologies</span></a></li>
+<li><a href="#CVs_and_Ontologies_in_Chado"><span class="tocnumber">1.4.2.3</span>
+<span class="toctext">CVs and Ontologies in
+Chado</span></a>
+<ul>
+<li><a href="#Data_Integrity"><span class="tocnumber">1.4.2.3.1</span>
+<span class="toctext">Data Integrity</span></a></li>
+<li><a href="#Data_Portability_and_Standardization"><span class="tocnumber">1.4.2.3.2</span>
+<span class="toctext">Data Portability and
+Standardization</span></a></li>
+<li><a href="#Complexity"><span class="tocnumber">1.4.2.3.3</span>
+<span class="toctext">Complexity</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Opening_our_sample_database"><span class="tocnumber">1.4.3</span>
+<span class="toctext">Opening our sample
+database</span></a></li>
+<li><a href="#Our_first_example_query"><span class="tocnumber">1.4.4</span> <span class="toctext">Our
+first example query</span></a></li>
+<li><a href="#General_Module"><span class="tocnumber">1.4.5</span>
+<span class="toctext">General Module</span></a>
+<ul>
+<li><a href="#IDs"><span class="tocnumber">1.4.5.1</span>
+<span class="toctext">IDs</span></a>
+<ul>
+<li><a href="#Public_IDs"><span class="tocnumber">1.4.5.1.1</span>
+<span class="toctext">Public IDs</span></a></li>
+<li><a href="#Private_IDs"><span class="tocnumber">1.4.5.1.2</span>
+<span class="toctext">Private IDs</span></a></li>
+</ul>
+</li>
+<li><a href="#IDs_in_Chado"><span class="tocnumber">1.4.5.2</span>
+<span class="toctext">IDs in Chado</span></a></li>
+</ul>
+</li>
+<li><a href="#Properties"><span class="tocnumber">1.4.6</span>
+<span class="toctext">Properties</span></a>
+<ul>
+<li><a href="#Relationships"><span class="tocnumber">1.4.6.1</span>
+<span class="toctext">Relationships</span></a></li>
+<li><a href="#Locations"><span class="tocnumber">1.4.6.2</span>
+<span class="toctext">Locations</span></a>
+<ul>
+<li><a href="#Interbase_Coordinates"><span class="tocnumber">1.4.6.2.1</span>
+<span class="toctext">Interbase
+Coordinates</span></a></li>
+<li><a href="#Location_Chains"><span class="tocnumber">1.4.6.2.2</span>
+<span class="toctext">Location
+Chains</span></a></li>
+<li><a href="#featureloc_Table"><span class="tocnumber">1.4.6.2.3</span>
+<span class="toctext">featureloc
+Table</span></a></li>
+</ul>
+</li>
+<li><a href="#Example:_Gene"><span class="tocnumber">1.4.6.3</span>
+<span class="toctext">Example: Gene</span></a></li>
+<li><a href="#Example:_Computational_Analysis"><span class="tocnumber">1.4.6.4</span>
+<span class="toctext">Example: Computational
+Analysis</span></a></li>
+<li><a href="#Other_Feature_Annotations"><span class="tocnumber">1.4.6.5</span>
+<span class="toctext">Other Feature
+Annotations</span></a></li>
+<li><a href="#Extending_Chado:_Properties_tables_and_new_modules"><span class="tocnumber">1.4.6.6</span>
+<span class="toctext">Extending Chado: Properties tables and new
+modules</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Practice"><span class="tocnumber">2</span>
+<span class="toctext">Practice</span></a>
+<ul>
+<li><a href="#Prerequisites"><span class="tocnumber">2.1</span>
+<span class="toctext">Prerequisites</span></a>
+<ul>
+<li><a href="#PostgreSQL"><span class="tocnumber">2.1.1</span>
+<span class="toctext">PostgreSQL</span></a>
+<ul>
+<li><a href="#Edit_config_files"><span class="tocnumber">2.1.1.1</span>
+<span class="toctext">Edit config
+files</span></a></li>
+<li><a href="#Create_a_gmod_user"><span class="tocnumber">2.1.1.2</span>
+<span class="toctext">Create a gmod
+user</span></a></li>
+<li><a href="#Installing_DBIx::DBStag_by_hand"><span class="tocnumber">2.1.1.3</span>
+<span class="toctext">Installing DBIx::DBStag by
+hand</span></a></li>
+</ul>
+</li>
+<li><a href="#BioPerl"><span class="tocnumber">2.1.2</span>
+<span class="toctext">BioPerl</span></a></li>
+<li><a href="#Let.27s_Go.21"><span class="tocnumber">2.1.3</span> <span class="toctext">Let&rsquo;s
+Go!</span></a></li>
+<li><a href="#Environment_Variables"><span class="tocnumber">2.1.4</span>
+<span class="toctext">Environment
+Variables</span></a></li>
+</ul>
+</li>
+<li><a href="#Installing_GMOD"><span class="tocnumber">2.2</span> <span class="toctext">Installing
+GMOD</span></a>
+<ul>
+<li><a href="#Saving_your_progress_to_this_point"><span class="tocnumber">2.2.1</span> <span class="toctext">Saving
+your progress to this
+point</span></a></li>
+<li><a href="#A_Note_about_Redos"><span class="tocnumber">2.2.2</span> <span class="toctext">A Note
+about Redos</span></a></li>
+</ul>
+</li>
+<li><a href="#Preparing_GFF_data_for_loading"><span class="tocnumber">2.3</span> <span class="toctext">Preparing
+GFF data for loading</span></a>
+<ul>
+<li><a href="#Working_with_Large_GFF_files"><span class="tocnumber">2.3.1</span>
+<span class="toctext">Working with Large GFF
+files</span></a></li>
+<li><a href="#Loading_GFF3"><span class="tocnumber">2.3.2</span>
+<span class="toctext">Loading GFF3</span></a></li>
+<li><a href="#Capturing_the_output_to_check_for_problems"><span class="tocnumber">2.3.3</span>
+<span class="toctext">Capturing the output to check for
+problems</span></a></li>
+<li><a href="#Really_loading_data"><span class="tocnumber">2.3.4</span> <span class="toctext">Really
+loading data</span></a>
+<ul>
+<li><a href="#Adding_our_organism"><span class="tocnumber">2.3.4.1</span>
+<span class="toctext">Adding our
+organism</span></a></li>
+<li><a href="#Try_again"><span class="tocnumber">2.3.4.2</span>
+<span class="toctext">Try again</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Loading_other_data"><span class="tocnumber">2.4</span> <span class="toctext">Loading
+other data</span></a></li>
+</ul>
+</li>
+<li><a href="#Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity"><span class="tocnumber">3</span> <span class="toctext">Chado for
+Expression, Genotype, Phenotype, and Natural
+Diversity</span></a>
+<ul>
+<li><a href="#Expression"><span class="tocnumber">3.1</span>
+<span class="toctext">Expression</span></a>
+<ul>
+<li><a href="#What_defines_an_expression_pattern.3F"><span class="tocnumber">3.1.1</span> <span class="toctext">What
+defines an expression
+pattern?</span></a></li>
+<li><a href="#How_does_Chado_deal_with_this_variety.3F"><span class="tocnumber">3.1.2</span> <span class="toctext">How
+does Chado deal with this
+variety?</span></a></li>
+<li><a href="#FlyBase_Example"><span class="tocnumber">3.1.3</span>
+<span class="toctext">FlyBase Example</span></a></li>
+<li><a href="#Chado_Allows"><span class="tocnumber">3.1.4</span> <span class="toctext">Chado
+Allows</span></a></li>
+<li><a href="#Table:_expression"><span class="tocnumber">3.1.5</span> <span class="toctext">Table:
+expression</span></a></li>
+<li><a href="#Table:_expression_cvterm"><span class="tocnumber">3.1.6</span> <span class="toctext">Table:
+expression_cvterm</span></a></li>
+</ul>
+</li>
+<li><a href="#Genotype"><span class="tocnumber">3.2</span>
+<span class="toctext">Genotype</span></a>
+<ul>
+<li><a href="#Table:_genotype"><span class="tocnumber">3.2.1</span> <span class="toctext">Table:
+genotype</span></a></li>
+<li><a href="#Table:_feature_genotype"><span class="tocnumber">3.2.2</span> <span class="toctext">Table:
+feature_genotype</span></a></li>
+</ul>
+</li>
+<li><a href="#Environment"><span class="tocnumber">3.3</span>
+<span class="toctext">Environment</span></a>
+<ul>
+<li><a href="#Table:_environment"><span class="tocnumber">3.3.1</span> <span class="toctext">Table:
+environment</span></a></li>
+<li><a href="#Table:_environment_cvterm"><span class="tocnumber">3.3.2</span> <span class="toctext">Table:
+environment_cvterm</span></a></li>
+</ul>
+</li>
+<li><a href="#Phenotype.2C_Natural_Diversity_and_Atlas_Support"><span class="tocnumber">3.4</span> <span class="toctext">Phenotype,
+Natural Diversity and Atlas
+Support</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idtheory-classmw-headlinetheoryspan"><span id="Theory" class="mw-headline">Theory</span></h2>
+<h3 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h3>
+<h4 id="span-iddatabase_terminology-classmw-headlinedatabase-terminologyspan"><span id="Database_Terminology" class="mw-headline">Database Terminology</span></h4>
+<p>Or six years of school in 15 minutes or less.</p>
+<ul>
+<li><a href="A_Brief_Guide_to_Databases" title="A Brief Guide to Databases">A Brief Guide to
+Databases</a></li>
+<li><a href="Chado_Tables" title="Chado Tables">Chado Tables</a></li>
+</ul>
+<h5 id="span-idwhat27s_a_database3f-classmw-headlinewhats-a-databasedatabases_and_gmod-databases-and-gmodspan"><span id="What.27s_a_database.3F" class="mw-headline">What&rsquo;s a <a href="Databases_and_GMOD" title="Databases and GMOD">database</a>?</span></h5>
+<ul>
+<li>Chado is a <a href="Glossary#Schema" title="Glossary">schema</a>, a database design - a
+blueprint for a database containing genomic data</li>
+<li>Distinct from
+<ul>
+<li><a href="Glossary#Database_Management_System" title="Glossary">Database Management System
+(DBMS)</a>
+<ul>
+<li>Software system for storing databases</li>
+<li><em>e.g.,</em> Oracle, <a href="PostgreSQL" title="PostgreSQL">PostgreSQL</a>,
+<a href="MySQL" title="MySQL">MySQL</a></li>
+</ul>
+</li>
+<li>Database, a very loose term
+<ul>
+<li>Any set of organized data that is readable by a computer</li>
+<li>A web site with database driven content, e.g., FlyBase</li>
+<li>Schema + DBMS + Data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idsql-classmw-headlinesqlspan"><span id="SQL" class="mw-headline">SQL</span></h5>
+<p>SQL is a standardized query language for defining and manipulating
+databases. Chado uses it. SQL is supported by all major DBMSs.</p>
+<p><a href="FlyBase_Field_Mapping_Tables" title="FlyBase Field Mapping Tables">FlyBase Field Mapping
+Tables</a>
+shows some example SQL that queries the FlyBase Chado database. (Caveat:
+FlyBase sometimes uses Chado in ways that no other organizations do.)</p>
+<p><strong>Will SQL be on the test?</strong></p>
+<p>No, we aren&rsquo;t going to teach in-depth SQL in this course but we will use
+it in examples and show how to write queries in Chado.</p>
+<p>You <em>can</em> do basics with Chado without knowing SQL. Many common tasks
+already have scripts written for them. However, as you get more into
+using Chado, you will find that a working knowledge of SQL is necessary.</p>
+<h3 id="span-idwhy_chado3f-classmw-headlinewhy-chadospan"><span id="Why_Chado.3F" class="mw-headline">Why Chado?</span></h3>
+<ul>
+<li><strong>Integration</strong>
+<ul>
+<li>Supports many types of data, integrates with many tools</li>
+</ul>
+</li>
+<li><strong>Modular</strong>
+<ul>
+<li>Use only what you need, ignore the rest</li>
+</ul>
+</li>
+<li><strong>Extensible</strong>
+<ul>
+<li>Write your own modules and properties</li>
+</ul>
+</li>
+<li><strong>Widely used</strong>
+<ul>
+<li><a href="Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a> - Chado started here,
+large diverse dataset and organization</li>
+</ul>
+</li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="Special%253ABrowse/Chado-20Tutorial-202012" title="Special%253ABrowse/Chado-20Tutorial-202012">Chado Tutorial
+2012</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="Chado" class="mw-redirect" title="Chado">Chado</a> <span class="smwsearch"><a href="Special%253ASearchByProperty/Has-20topic/Chado" title="Special%253ASearchByProperty/Has-20topic/Chado">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Tutorial_2012" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:26 on 2 September
+2018.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">69,722 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

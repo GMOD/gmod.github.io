@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running a GBrowse2 render farm - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautorunning-a-gbrowse2-render-farmspan"><span dir="auto">Running a GBrowse2 render farm</span></h1>
+<p><a href="Category%253AGBrowse_2" title="Category%253AGBrowse 2">GBrowse 2</a> can be configured
+to use one or more &ldquo;render slave&rdquo; daemons. A render slave is a small
+Perl process that runs in the background, processing requests to render
+GBrowse tracks. By distributing several render slaves across one or more
+computers, you can spread out the work of generating GBrowse pages,
+thereby achieving improved performance. A slave can be attached to a
+particular track, a particular set of tracks, or to all tracks. In
+addition, you may assign multiple slaves to tracks, in which case the
+load will be distributed across each slave in a round-robin fashion.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Common_Configurations"><span class="tocnumber">2</span> <span class="toctext">Common
+Configurations</span></a></li>
+<li><a href="#Slave_Setup"><span class="tocnumber">3</span> <span class="toctext">Slave
+Setup</span></a>
+<ul>
+<li><a href="#Installing_the_GBrowse_Slave_Software"><span class="tocnumber">3.1</span> <span class="toctext">Installing
+the GBrowse Slave
+Software</span></a></li>
+<li><a href="#Running_the_Render_Slave_Daemon"><span class="tocnumber">3.2</span> <span class="toctext">Running
+the Render Slave Daemon</span></a></li>
+</ul>
+</li>
+<li><a href="#Master_Setup"><span class="tocnumber">4</span> <span class="toctext">Master
+Setup</span></a>
+<ul>
+<li><a href="#Using_.5BTRACK_DEFAULTS.5D"><span class="tocnumber">4.1</span> <span class="toctext">Using
+[TRACK DEFAULTS]</span></a></li>
+<li><a href="#The_slave_preload.conf_file"><span class="tocnumber">4.2</span> <span class="toctext">The
+slave_preload.conf file</span></a></li>
+</ul>
+</li>
+<li><a href="#Troubleshooting"><span class="tocnumber">5</span>
+<span class="toctext">Troubleshooting</span></a></li>
+</ul>
+<h2 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h2>
+<p>Configuration of a render slave is minimal. All the datasource-specific
+information is stored in the central GBrowse script (known as the
+&ldquo;master&rdquo; GBrowse) and sent across the wire to the render slave.
+Configuration of the master GBrowse is also quite simple, and requires
+just an extra line or two in its configuration files.</p>
+<p><em>The main limitations on render slaves is that a slave needs access to
+the database underlying any track that it is asked to render.</em> If you
+run slaves on multiple hosts, then each host must have access to the
+relevant databases. For relational database backends, such as MySQL, you
+will need to grant access permissions for each host. For file-based
+database backends, such as the BerkeleyDB and in-memory databases, the
+database files must be replicated among the hosts, or else mounted on a
+common filesystem such as NFS. An additional limitation is that all
+plugins and uploaded files will be rendered on the master, and cannot be
+offloaded to render slaves.</p>
+<h2 id="span-idcommon_configurations-classmw-headlinecommon-configurationsspan"><span id="Common_Configurations" class="mw-headline">Common Configurations</span></h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>
+<p>Figure 4:Multiple servers with private databases</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Figures 1 through 4 illustrate common render slave configurations. In
+each of these configurations, we assume that your data source has three
+underlying databases: a &ldquo;scaffold&rdquo; database that contains basic
+chromosome information and the DNA sequence, for use by any plugins
+running on the master, and two &ldquo;annotation&rdquo; databases that contain
+feature tracks.</p>
+<p><a href="File:Renderfarm_1.png" title="File:Renderfarm 1.png">Figure 1</a> illustrates a
+simple case in which the master and slave processes are all running on
+the same machine and all databases are locally accessible. This
+configuration makes sense on a multiprocessor or multicore system that
+can take advantage of parallel processes. The only special configuration
+needed for this arrangement is to activate GBrowse&rsquo;s renderfarm support
+(as described in <a href="#Initial_Setup">Initial Setup</a> and to launch one or
+more slave processes at machine startup time.</p>
+<p><a href="File:Renderfarm_2.png" title="File:Renderfarm 2.png">Figure 2</a> illustrates a
+master server and two slave servers, all located on the same LAN. Each
+server runs a single GBrowse slave process; however it is possible to
+launch multiple processes for a possible performance boost. The three
+databases are located on a single NFS-mounted volume, so that the master
+server and the two slave servers have direct access to them. The host
+for this volume could be the master server, one of the slave servers, or
+a dedicated NFS server somewhere on the LAN.</p>
+<p><a href="File:Renderfarm_3.png" title="File:Renderfarm 3.png">Figure 3</a> illustrates
+almost the same configuration as the previous one, except that instead
+of an NFS-mounted filesystem, the databases reside on a relational
+database (e.g. MySQL) server which is accessed via the network.</p>
+<p><a href="File:Renderfarm_4.png" title="File:Renderfarm 4.png">Figure 4</a> illustrates a
+case in which the master and slave servers do not share databases. In
+this case, each machine has access to a private local database file or
+relational database server.</p>
+<p>Which configuration is best for you depends on your needs. For small
+renderfarms, a shared disk or database server is easy and effective. For
+large renderfarms, you may encounter resource contention as the slave
+servers all attempt to access the same files. In this case, it makes
+more sense to give each slave its own database copy.</p>
+<p>Many other configurations are possible, including distributing the work
+across the Internet. However, there is no particular authentication or
+authorization mechanism built into the slaves, so it is recommended that
+they be run on a protected LAN.</p>
+<h2 id="span-idslave_setup-classmw-headlineslave-setupspan"><span id="Slave_Setup" class="mw-headline">Slave Setup</span></h2>
+<p>To set up a GBrowse renderfarm, you will need to install and configure
+slaves on each physical server you plan to use, arrange for the slaves
+to launch at boot time, and configure the master server to use the
+slaves.</p>
+<h3 id="span-idinstalling_the_gbrowse_slave_software-classmw-headlineinstalling-the-gbrowse-slave-softwarespan"><span id="Installing_the_GBrowse_Slave_Software" class="mw-headline">Installing the GBrowse Slave Software</span></h3>
+<p>The GBrowse render slave is a small perl script named <em>gbrowse_slave</em>.
+Most of its functionality is contained in various Perl modules that are
+part of the GBrowse core distribution. On the master server, when you
+install GBrowse using <strong>./Build install</strong>, gbrowse_slave will be
+installed automatically to Perl&rsquo;s default binary directory, usually
+<em>/usr/local/bin</em>. For the master, no additional software installation is
+needed.</p>
+<p>On machines destined to be slave servers, you will probably not want to
+install the full GBrowse distribution, because this includes
+configuration files, sample databases, javascript libraries and other
+elements that are not needed. For these machines, the build and install
+procedure is as follows:</p>
+<pre><code>% cd Generic-Genome-Browser
+% perl Build.PL
+% ./Build test  (optional)
+% sudo ./Build install_slave
+</code></pre>
+<p>The last step, which should be performed as root, will install the
+required Perl libraries, manual pages and gbrowse_slave script, as well
+as the init support scripts needed to launch gbrowse_slave at startup
+time. Running the tests is optional, but it does ensure that all
+prerequisites are installed and working properly. The slave requires all
+the same prerequisites as the master server, including Bio::Perl, GD,
+CGI::Session, JSON, etc. However, an Apache server is <strong>not</strong> needed to
+run a slave.</p>
+<h3 id="span-idrunning_the_render_slave_daemon-classmw-headlinerunning-the-render-slave-daemonspan"><span id="Running_the_Render_Slave_Daemon" class="mw-headline">Running the Render Slave Daemon</span></h3>
+<p>The slave usually runs as a daemon, listening on a designated server
+port and logging its output to a log file. You may run it by hand using
+an invocation like the following:</p>
+<pre><code>/usr/local/bin/gbrowse_slave --verbose=3 --log=`pwd`/slave.log --pid=`pwd`/slave.pid --port=8100
+</code></pre>
+<p>This will launch the slave with maximum (level 3) verbosity, write its
+output to the file <em>slave.log</em>, leave its process ID in the file named
+<em>slave.pid</em> and listen for incoming connections on port 8100. If it
+launches successfully, the slave.log and slave.pid files will be created
+in the current directory and the log file will contain lines like the
+following:</p>
+<pre><code>[Thu Jan 22 17:58:45 2009] [info]   [pid=8128]  GBrowse render slave starting on port 8100
+[Thu Jan 22 17:58:45 2009] [debug]  [pid=8128]  Waiting for connection...
+</code></pre>
+<p>To kill the server, run the following command:</p>
+<pre><code>% /usr/local/bin/gbrowse_slave -k --pid=`pwd`/slave.pid
+</code></pre>
+<p>A more convenient way to start and stop the slave is using its init
+script, which was installed during <strong>./Build install_slave</strong>. This init
+script is located in /etc/init.d/gbrowse-slave, and works on a variety
+of Linux distributions (it has not yet been tested on MacOSX - please
+edit this if you are able to confirm that it works or doesn&rsquo;t). The
+script will not work with Windows as it requires the bash shell.</p>
+<p>To start the slave<br>
+sudo /etc/init.d/gbrowse-slave start</p>
+<p>If successful, you will see a message that three slave renderers have
+been started on ports 8101, 8102 and 8103. The slaves will log their
+activities to /var/log/gbrowse/gbrowse_slave, and write their process
+IDs to /var/run/gbrowse/</p>
+<p>To stop the slave<br>
+sudo /etc/init.d/gbrowse-slave stop</p>
+<p>The number of slave servers to launch, the network ports they listen on,
+and the location of their log and pid files are controlled by a defaults
+file located in <em>/etc/default/gbrowse-slave</em>. This file looks like this:</p>
+<pre><code> #!/bin/sh
+
+ DAEMON=/usr/local/bin/gbrowse_slave
+ USER=www-data
+ PRELOAD=/etc/gbrowse2/slave_preload.conf
+ RUNDIR=/var/run/gbrowse
+ LOGDIR=/var/log/gbrowse
+ PORT=&quot;8101 8102 8103&quot;
+ VERBOSITY=3
+ NICE=0
+</code></pre>
+<p>Adjust this file as needed to meet your preferences. <strong>DAEMON</strong> gives
+the path to the gbrowse_slave script. <strong>USER</strong> indicates which user
+account to run under. If you run the slave daemon on the same machine
+used by the master, then this should be set to the same user as the one
+the Apache daemon uses, as they share directories. <strong>PRELOAD</strong>, an
+optional argument, gives the path to a file of in-memory databases for
+the render slave to load at startup time. <strong>RUNDIR</strong> and <strong>LOGDIR</strong>
+indicate the directories containing the slave&rsquo;s PID and log files,
+respectively. <strong>PORT</strong> is a space-delimited list of ports to listen on.
+The init script will launch one slave for each port. <strong>VERBOSITY</strong>
+controls the verbosity of the log file, and ranges from 0 (fatal errors
+only) to 3 (verbose informational logging). Lastly, <strong>NICE</strong> sets the
+daemon nice level, and ranges from 0 (normal priority) to 20 (very low
+priority). Adjust this if you find that slave processes are interfering
+with other processes on the machine.</p>
+<p>To arrange for the init script to run at system boot time, simply create
+a symbolic link from the script to the appropriate /etc/rc.* directory.
+For example, if the machine usually runs at runlevel 2 (which you can
+determine using the <em>runlevel</em> command), then run the following
+commands:</p>
+<pre><code>% cd /etc/rc2.d
+% sudo ln -s ../init.d/gbrowse-slave S99gbrowse-slave
+</code></pre>
+<p>You may prefer to use your distribution&rsquo;s GUI for configuring startup
+services.</p>
+<h2 id="span-idmaster_setup-classmw-headlinemaster-setupspan"><span id="Master_Setup" class="mw-headline">Master Setup</span></h2>
+<p>Once the slaves are configured and running, you need to tell the master
+GBrowse server about them. There are two configuration options that
+control this: <strong>renderfarm</strong> and <strong>remote renderer</strong>.</p>
+<p>The <strong>renderfarm</strong> option is placed in the [GENERAL] section of either
+the main GBrowse.conf configuration file, or the [GENERAL] section of
+one or more datasource-specific configuration files. Set this option to
+a true value (non-zero) to activate slave rendering support:</p>
+<pre><code>[GENERAL]
+...other options...
+renderfarm = 1
+...
+</code></pre>
+<p>It is safe to set renderfarm to 1 even for a datasource that does not
+use slaves. It is most often used as a convenient way to disable remote
+rendering during debugging and troubleshooting.</p>
+<p>Place the <strong>remote renderer</strong> option into datasource-specific [TRACK]
+sections to enable remote rendering for that track. Here is a simple
+example:</p>
+<pre><code># in a datasource-specific config file, such as yeast_renderfarm.conf
+[Genes]
+feature         = gene
+database        = volvox_annotations
+remote renderer = http://slavehost1.example.org:8101
+glyph           = gene
+bgcolor         = yellow
+key             = Protein-coding genes
+
+[tRNAs]
+feature         = tRNA
+database        = volvox_annotations
+remote renderer = http://slavehost2.example.org:8101
+glyph           = generic
+bgcolor         = lightgray
+height          = 6
+key             = tRNAs
+</code></pre>
+<p>This defines two tracks named Genes and tRNAs respectively. The Genes
+track fetches features of type &ldquo;gene&rdquo; from the database
+&ldquo;volvox_annotations&rdquo;. This database is defined in a configuration stanza
+named [volvox_annotations:database] as usual. The rendering task is
+passed off to the render slave running on port 8101 on the host
+<em>slavehost1.example.org</em>. The rest of the stanza is as usual, and
+contains options for selecting the glyph, color, height and key of the
+rendered feature.</p>
+<p>The tRNAs track is similar, except that it uses the render slave running
+on port 8101 of <em>slavehost2.example.org</em>.</p>
+<p>The format of the <strong>remote renderer</strong> option is a space-delimited list
+of one or more slave addresses. Slaves are addressed using ordinary HTTP
+URLs. The hostname and port number parts of the URL are significant. The
+path part of the URL (e.g. /path/to/index.html) is not needed and is
+ignored if present. If you list multiple render slaves, then requests
+will be distributed across them in a round-robin fashion. For example:</p>
+<pre><code>remote renderer = http://slavehost1.example.org:8101 http://slavehost1.example.org:8102 http://slavehost2.example.org:8101
+</code></pre>
+<p>This will distribute requests across the two slave processes running on
+slavehost1 at ports 8101 and 8102, and across the slave running on
+slavehost2 port 8101. If one of the slave servers goes down, the master
+will note this and mark it temporarily unavailable for use. This
+provides a simple failover facility.</p>
+<p>Note that the database named &ldquo;volvox_annotations&rdquo; must be available to
+the two slave servers. If it is a file-based database, such as one
+created using the &ldquo;memory&rdquo; adaptor of Bio::DB::SeqFeature::Store or
+Bio::DB::GFF, then the directory the database is located in must be
+available to the slave server at the path indicated in the
+[volvox_annotations:database] stanza. If the database is available on
+a network-connected relational database server, then the slave must have
+access privileges and the RDBMS hostname, username and password
+credentials indicated in the database configuration stanza must be
+appropriate for the slave.</p>
+<h3 id="span-idusing_5btrack_defaults5d-classmw-headlineusing-track-defaultsspan"><span id="Using_.5BTRACK_DEFAULTS.5D" class="mw-headline">Using [TRACK DEFAULTS]</span></h3>
+<p>In many cases you will wish to use the [TRACK DEFAULTS] stanza to
+assign a set of slaves to all tracks by default:</p>
+<pre><code>[TRACK DEFAULTS]
+remote renderer = http://localhost:8101  http://localhost:8102
+                  http://slavehost1:8101 http://slavehost2:8101
+database        = volvox_annotations
+</code></pre>
+<p>This make two slaves running on the local machine and two additional
+slaves running on slavehost1 and slavehost2 the defaults. It also makes
+&ldquo;volvox_annotations&rdquo; the default database for all tracks. If you wish
+you can override the choice of slaves for individual tracks by placing
+&ldquo;remote renderer&rdquo; option in those tracks&rsquo; stanzas. Use a value of &ldquo;none&rdquo;
+or &ldquo;local&rdquo; to turn off slave rendering for a particular track:</p>
+<pre><code>[TRANSL]
+remote renderer = none
+global feature = 1
+glyph          = translation
+database       = chromosomes
+</code></pre>
+<h3 id="span-idthe_slave_preloadconf_file-classmw-headlinethe-slave_preloadconf-filespan"><span id="The_slave_preload.conf_file" class="mw-headline">The slave_preload.conf file</span></h3>
+<p>If you are relying on in-memory databases, you may wish to have them
+preloaded at slave startup time. This avoids the overhead of parsing and
+storing the in-memory database with each slave request. Note that
+preloading databases is usually unnecessary for relational databases, as
+the overhead for creating and tearing down a network connection to the
+database server is usually minimal.</p>
+<p>The slave_preload.conf file is located in the gbrowse configuration
+directory, typically /etc/gbrowse2. It consists of a series of database
+stanzas that follow the same format as the stanzas in the data source
+configuration file. For example:</p>
+<pre><code>[yeast12:database]
+db_adaptor    = Bio::DB::SeqFeature::Store
+db_args       = -adaptor memory
+                -dir    /var/www/gbrowse2/databases/yeast_chr1+2
+
+[scaffolds:database]
+db_adaptor    = Bio::DB::SeqFeature::Store
+db_args       = -adaptor memory
+                -dir    /var/www/gbrowse2/databases/yeast_scaffolds
+</code></pre>
+<p>You can name the stanzas the same as you name them in the data source
+configuration file ([yeast12:database]) or leave off the :database
+part ([yeast12]). In fact, the stanza name isn&rsquo;t significant; the
+slave uses the <strong>db_adaptor</strong> and <strong>db_args</strong> options to match up
+preloaded databases with the database in the request, so you can name
+the stanzas [db1], [db2], or whatever you like.</p>
+<p>You are encouraged to experiment with preloading databases or not to see
+whether performance improves on your system.</p>
+<h2 id="span-idtroubleshooting-classmw-headlinetroubleshootingspan"><span id="Troubleshooting" class="mw-headline">Troubleshooting</span></h2>
+<p>Slaves write diagnostic messages to a log file usually located in
+/var/log/gbrowse/gbrowse_slave. Error messages will be written to this
+location. During troubleshooting you may wish to increase VERBOSITY
+option in the /etc/default/gbrowse-slave file to its maximum level of 3.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse_2" title="Category%253AGBrowse 2">GBrowse 2</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Running_a_GBrowse2_render_farm"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 12:08 on 12 October
+2011.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">51,512 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

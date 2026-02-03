@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News/Chado Version 1.2 Released - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautonewschado-version-12-releasedspan"><span dir="auto">News/Chado Version 1.2 Released</span></h1>
+<p>I am pleased to announce the release of Chado version 1.2. It is
+available at:</p>
+<pre><code>http://sourceforge.net/projects/gmod/files/gmod/chado-1.2/
+</code></pre>
+<p>and the change log is listed below. There are two items of special
+interest in this release:</p>
+<ol>
+<li>The <a href="../Chado_Natural_Diversity_Module.1" title="Chado Natural Diversity Module">natural diversity
+module</a>
+is included in this release. It is intended for capturing a variety
+of experimental data related to diversity, including phenotype and
+genotype assays, and collections like crosses and field collection.</li>
+<li>It now ships with a tool to aid in updating the schema from previous
+versions of Chado (from version 1.0 or better). See
+<a href="../Updating_Chado" title="Updating Chado">Updating_Chado</a> for more
+information on this tool.</li>
+</ol>
+<p>Please follow up with comments or problems with this release to the
+schema mailing list.</p>
+<p>Thanks, <a href="../User%253AScott" title="User%253AScott">Scott</a></p>
+<p>Changes in Chado 1.2:</p>
+<ul>
+<li>Added some error checking to gmod_fasta2gff3.pl (Rob)</li>
+<li>Updated Bio::Chado::Builder to detect recent versions of go-perl. They
+no longer have .pl at the end of the go2fmt script name (Rob)</li>
+<li>The GFF3 bulk loader will now ignore ##sequence-region directives;
+previously, their presence caused the loader to fail (Scott)</li>
+<li>added a check for the nodes file downloaded from NCBI. There have been
+cases of missing nodes/parents. Code dies if parent is missing. User
+must check the nodes file. This needs further investigation with NCBI
+taxonomy. (Naama)</li>
+<li>Fix the code in the gff-bridge in the sequence module so that GFF
+dumping from GBrowse will work correctly (Scott)</li>
+<li>Added a cvprop table to capture things like obo file version from a
+loaded cv. (Scott)</li>
+<li>Removed the &ldquo;DB:&rdquo; prefix from all of the names of databases that go
+into the db table. (Scott)</li>
+<li>Removed the dependency on Log::Log4perl (it was overkill for what it
+was being used for) (Scott)</li>
+<li>Bumped the version to 1.2 because of the new schema module. (Scott)</li>
+<li>Added gmod_chado_properties.pl to examine the chadoprop table and
+return values on the command line (like the schema version) (Scott)</li>
+<li>Added gmod_update_chado.pl to update the schema automatically, and
+added a make target (make update) to make updating easier. (Scott)</li>
+<li>Removed cell_type ontology from &lsquo;make ontologies&rsquo; list as it wasn&rsquo;t
+loading via stag_storenode.pl at release time (Scott)</li>
+</ul>
+<p><em>Posted to the <a href="../GMOD_News" title="GMOD News">GMOD News</a> on 2011/09/22</em></p>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="../Category%253ANews_Items" title="Category%253ANews Items">News Items</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/News-2FChado_Version_1.2_Released"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 15:08 on 22 September
+2011.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">6,914 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

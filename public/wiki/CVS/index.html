@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version Control System Access - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoversion-control-system-accessspan"><span dir="auto">Version Control System Access</span></h1>
+<p>(Redirected from
+<a href="CVS">CVS</a></p>
+<p><em>Subversion</em> (often abbreviated <em>SVN</em> is the <em>source code control</em>
+system used by most of GMOD. Source code control systems, also known as
+<em>revision control</em> or <em>version control</em> systems are used to record
+changes to computer files. GMOD&rsquo;s main source code repository is at
+<a href="http://gmod.svn.sourceforge.net/" class="external text"
+rel="nofollow">SourceForge</a>.</p>
+<p>This page explains how to both download and update the main GMOD
+repository at SourceForge. For more on SVN itself see the
+<a href="http://subversion.tigris.org/" class="external text"
+rel="nofollow">Subversion Home Page</a> and the official
+<a href="http://svnbook.red-bean.com/" class="external text"
+rel="nofollow">Subversion Book</a>.</p>
+<p>SVN is used by GMOD developers to update the components. SVN is also
+used by some GMOD users, most of whom never modify any GMOD code. GMOD
+users access SVN when they want to get component source code so they can
+use the latest development version of that component, without having to
+wait for the next official release. Please note, however, that
+components pulled from SVN are <strong>development</strong> versions, and may not
+always work as expected.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Browsing_SVN_Repositories"><span class="tocnumber">1</span> <span class="toctext">Browsing SVN
+Repositories</span></a></li>
+<li><a href="#SVN_Read-only_Access"><span class="tocnumber">2</span> <span class="toctext">SVN Read-only
+Access</span></a></li>
+<li><a href="#SVN_Developer_Access"><span class="tocnumber">3</span> <span class="toctext">SVN Developer
+Access</span></a></li>
+<li><a href="#Legacy_CVS_Read-only_Access"><span class="tocnumber">4</span> <span class="toctext">Legacy CVS
+Read-only Access</span></a></li>
+</ul>
+<h2 id="span-idbrowsing_svn_repositories-classmw-headlinebrowsing-svn-repositoriesspan"><span id="Browsing_SVN_Repositories" class="mw-headline">Browsing SVN Repositories</span></h2>
+<p>GMOD SVN repositories can be browsed via web:
+<a href="http://gmod.svn.sourceforge.net/gmod/" class="external free"
+rel="nofollow"><a href="http://gmod.svn.sourceforge.net/gmod/">http://gmod.svn.sourceforge.net/gmod/</a></a>.</p>
+<h2 id="span-idsvn_read-only_access-classmw-headlinesvn-read-only-accessspan"><span id="SVN_Read-only_Access" class="mw-headline">SVN Read-only Access</span></h2>
+<p>The GMOD <a href="Glossary#SVN" title="Glossary">SVN</a> repository can be checked out
+through anonymous SVN with the following instruction set. The module you
+wish to check out must be specified in place of <strong>PROJECTNAME</strong>.</p>
+<pre><code>svn co https://gmod.svn.sourceforge.net/svnroot/gmod/PROJECTNAME/trunk
+</code></pre>
+<p>See <a href="http://gmod.svn.sourceforge.net/" class="external free"
+rel="nofollow"><a href="http://gmod.svn.sourceforge.net/">http://gmod.svn.sourceforge.net/</a></a> for available GMOD
+projects in SVN repositories.</p>
+<p>You can then get updates with the <code>svn update</code> command.</p>
+<h2 id="span-idsvn_developer_access-classmw-headlinesvn-developer-accessspan"><span id="SVN_Developer_Access" class="mw-headline">SVN Developer Access</span></h2>
+<p>Developer access uses the same URLs as read-only access. When performing
+write operations, you will simply be prompted for your SourceForge.net
+username and password. To perform write operations, a GMOD project
+administrator must have granted you write access to the repository.</p>
+<h2 id="span-idlegacy_cvs_read-only_access-classmw-headlinelegacy-cvs-read-only-accessspan"><span id="Legacy_CVS_Read-only_Access" class="mw-headline">Legacy CVS Read-only Access</span></h2>
+<p>GMOD has migrated all projects from CVS to
+<a href="http://subversion.tigris.org/" class="external text"
+rel="nofollow">Subversion</a> as of September 15, 2009. See the <a href="CVS_to_Subversion_Conversion" title="CVS to Subversion Conversion">CVS to
+Subversion
+Conversion</a>
+page.</p>
+<p>The old GMOD <a href="Glossary#CVS" title="Glossary">CVS</a> repositories can be checked
+out through anonymous (pserver) CVS with the following instruction set.
+The module you wish to check out must be specified as the <em>modulename</em>.
+When prompted for a password for anonymous, simply press the Enter or
+Return key.</p>
+<pre><code>cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
+cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co modulename
+</code></pre>
+<p>If you need to check out a particular revision/tag in the repository,
+add <em>-r tag_name</em> to the command. For example, if you needed the
+&lsquo;stable&rsquo; branch of the GBrowse repository, you would do this in your
+checkout command:</p>
+<pre><code> cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -r stable Generic-Genome-Browser
+</code></pre>
+<p>See <a href="http://gmod.cvs.sourceforge.net/" class="external free"
+rel="nofollow"><a href="http://gmod.cvs.sourceforge.net/">http://gmod.cvs.sourceforge.net/</a></a> for available CVS
+repositories.</p>
+<p>You can then get updates with the <code>cvs update -d</code> command (the <code>-d</code>
+command tells CVS to get any new directories that have been added to the
+repository since the last update).</p>
+<p>GMOD CVS repositories can also be browsed on the web:
+<a href="http://gmod.cvs.sourceforge.net/gmod/" class="external free"
+rel="nofollow"><a href="http://gmod.cvs.sourceforge.net/gmod/">http://gmod.cvs.sourceforge.net/gmod/</a></a>.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AGMOD_Developers" title="Category%253AGMOD Developers">GMOD Developers</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Version_Control_System_Access"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:46 on 15 September
+2009.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">125,104 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

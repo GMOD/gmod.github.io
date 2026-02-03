@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaos XML - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochaos-xmlspan"><span dir="auto">Chaos XML</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Chaos-XML_and_Chado"><span class="tocnumber">1</span> <span class="toctext">Chaos-XML and
+Chado</span></a></li>
+<li><a href="#The_Chaos_Model"><span class="tocnumber">2</span> <span class="toctext">The Chaos
+Model</span></a></li>
+<li><a href="#Library_Contents"><span class="tocnumber">3</span> <span class="toctext">Library
+Contents</span></a>
+<ul>
+<li><a href="#DTD"><span class="tocnumber">3.1</span>
+<span class="toctext">DTD</span></a></li>
+<li><a href="#XSL_Stylesheets"><span class="tocnumber">3.2</span> <span class="toctext">XSL
+Stylesheets</span></a></li>
+<li><a href="#Example_Chaos_XML"><span class="tocnumber">3.3</span> <span class="toctext">Example
+Chaos XML</span></a></li>
+<li><a href="#Scripts"><span class="tocnumber">3.4</span>
+<span class="toctext">Scripts</span></a></li>
+<li><a href="#Chaos_Perl_Module"><span class="tocnumber">3.5</span> <span class="toctext">Chaos Perl
+Module</span></a></li>
+</ul>
+</li>
+<li><a href="#Converting_between_Chaos-XML_and_Chado-XML"><span class="tocnumber">4</span> <span class="toctext">Converting
+between Chaos-XML and
+Chado-XML</span></a></li>
+<li><a href="#Future_Extensions"><span class="tocnumber">5</span> <span class="toctext">Future
+Extensions</span></a></li>
+<li><a href="#Differences_between_Chaos_XML_and_the_Chado_Relational_Database_Schema"><span class="tocnumber">6</span> <span class="toctext">Differences
+between Chaos XML and the Chado Relational Database
+Schema</span></a>
+<ul>
+<li><a href="#Coordinates"><span class="tocnumber">6.1</span>
+<span class="toctext">Coordinates</span></a></li>
+<li><a href="#Dbxref_Flattening"><span class="tocnumber">6.2</span> <span class="toctext">Dbxref
+Flattening</span></a></li>
+<li><a href="#Type_Flattening"><span class="tocnumber">6.3</span> <span class="toctext">Type
+Flattening</span></a></li>
+<li><a href="#Organism_Flattening"><span class="tocnumber">6.4</span> <span class="toctext">Organism
+Flattening</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idchaos-xml_and_chado-classmw-headlinechaos-xml-and-chadospan"><span id="Chaos-XML_and_Chado" class="mw-headline">Chaos-XML and Chado</span></h2>
+<p>Chaos-XML is based on the Chado relational model and is a subset of
+Chado&rsquo;s content. For a full explanation of the meaning of the elements
+in Chaos-XML, please refer to the <a href="Chado_Manual" title="Chado Manual">Chado
+manual</a> and in particular the <a href="Chado_Sequence_Module" title="Chado Sequence Module">sequence
+module documentation</a>.</p>
+<p>Chaos XML was created at around the same time the main chado software
+development team at FlyBase devised the official Chado XML format. Chado
+XML and Chaos XML are semantically very similar, but they are different
+in how the XML to relational database mapping is performed. Chado XML is
+also considerably more verbose than Chaos XML. This is because Chaos
+uses some denormalisations of the Chado model, explained below. In our
+view these two formats are complementary. Conversions between the
+formats should be trivial.</p>
+<h2 id="span-idthe_chaos_model-classmw-headlinethe-chaos-modelspan"><span id="The_Chaos_Model" class="mw-headline">The Chaos Model</span></h2>
+<p>Elements in Chaos XML will generally have an equivalent table or column
+in the Chado relational schema. Thus the Chado documentation should also
+serve as documentation for the Chaos XML format.</p>
+<p>The central concept in Chaos/Chado is a &ldquo;feature&rdquo;. A feature can
+represent any genomic or sequence entity that is typed by the
+<a href="http://sequenceontology.org" class="external text"
+rel="nofollow">Sequence Ontology (SO)</a>.</p>
+<p>Features are interconnected in a feature graph using the
+<em>feature_relationship</em> element. This is to indicate which exons and
+proteins belong to which transcript, which transcripts belong to which
+gene.</p>
+<p>The location of a feature, relative to another feature, is described by
+the <em>featureloc</em> element. All locations are interbase (i.e. counting
+from 0, not 1. It is the gaps between bases that are counted, not the
+bases themselves). In contrast to chado, which uses fmin/fmax to
+indicate the left and right coordinates, chaos use nbeg/nend to indicate
+the five prime (natural start) and three prime (natural end)
+coordinates.</p>
+<h2 id="span-idlibrary_contents-classmw-headlinelibrary-contentsspan"><span id="Library_Contents" class="mw-headline">Library Contents</span></h2>
+<p>The Chaos-XML Library consists of specifications and software for
+dealing with Chaos-XML files.</p>
+<h3 id="span-iddtd-classmw-headlinedtdspan"><span id="DTD" class="mw-headline">DTD</span></h3>
+<p>The DTD specification can be found in <code>chaos-xml/dtd/chaos.dtd</code>.</p>
+<p>Soon there will also be specifications as XML Schema and/or Relax-NG</p>
+<h3 id="span-idxsl_stylesheets-classmw-headlinexsl-stylesheetsspan"><span id="XSL_Stylesheets" class="mw-headline">XSL Stylesheets</span></h3>
+<p>XSL transformations can be found in the <code>chaos-xml/xsl/</code> directory.</p>
+<h3 id="span-idexample_chaos_xml-classmw-headlineexample-chaos-xmlspan"><span id="Example_Chaos_XML" class="mw-headline">Example Chaos XML</span></h3>
+<p>Example Chaos-XML can be found in the <code>chaos-xml/sample-data/</code>
+directory.</p>
+<h3 id="span-idscripts-classmw-headlinescriptsspan"><span id="Scripts" class="mw-headline">Scripts</span></h3>
+<p>The scripts are in the <code>chaos-xml/bin/</code> directory. You need to install
+the perl chaos library before running these scripts.</p>
+<h3 id="span-idchaos_perl_module-classmw-headlinechaos-perl-modulespan"><span id="Chaos_Perl_Module" class="mw-headline">Chaos Perl Module</span></h3>
+<p>You can browse the perl modules in the <code>chaos-xml/lib/</code> directory. To
+install, download the chaos-xml library and follow the instructions in
+the <code>chaos-xml/INSTALL</code> file.</p>
+<h2 id="span-idconverting_between_chaos-xml_and_chado-xml-classmw-headlineconverting-between-chaos-xml-and-chado-xmlspan"><span id="Converting_between_Chaos-XML_and_Chado-XML" class="mw-headline">Converting between Chaos-XML and Chado-XML</span></h2>
+<p>There are XSLT stylesheets defined for mapping between these two similar
+formats, see the <code>chaos-xml/xsl</code> directory.</p>
+<p>If you are not familiar with XSLT, you can use these scripts, part of
+this distribution (see the <code>chaos-xml/bin/</code> directory)</p>
+<ul>
+<li>cx-chaos2chadoxml.pl</li>
+<li>cx-chadoxml2chaos.pl</li>
+</ul>
+<h2 id="span-idfuture_extensions-classmw-headlinefuture-extensionsspan"><span id="Future_Extensions" class="mw-headline">Future Extensions</span></h2>
+<p>As new modules are added to chado (for example, the <a href="Chado_Genetic_Module" title="Chado Genetic Module">genetics
+module</a> and the <a href="Chado_Phylogeny_Module" title="Chado Phylogeny Module">phylogeny
+module</a>), corresponding
+chaos-xml DTDs will be generated.</p>
+<h2 id="span-iddifferences_between_chaos_xml_and_the_chado_relational_database_schema-classmw-headlinedifferences-between-chaos-xml-and-the-chado-relational-database-schemaspan"><span id="Differences_between_Chaos_XML_and_the_Chado_Relational_Database_Schema" class="mw-headline">Differences between Chaos XML and the Chado Relational Database Schema</span></h2>
+<h3 id="span-idcoordinates-classmw-headlinecoordinatesspan"><span id="Coordinates" class="mw-headline">Coordinates</span></h3>
+<p>Chaos uses <em>nbeg</em> and <em>nend</em> as opposed to the <em>fmin</em> and <em>fmax</em> found
+in the <a href="Chado_Tables#Table:_feature" title="Chado Tables">feature table</a>.</p>
+<h3 id="span-iddbxref_flattening-classmw-headlinedbxref-flatteningspan"><span id="Dbxref_Flattening" class="mw-headline">Dbxref Flattening</span></h3>
+<p>Chaos collapses the normalised chado table
+<a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a> into a single
+&ldquo;dbxrefstr&rdquo; PCDATA element.</p>
+<h3 id="span-idtype_flattening-classmw-headlinetype-flatteningspan"><span id="Type_Flattening" class="mw-headline">Type Flattening</span></h3>
+<p>Chaos uses a PCDATA element <em>type</em> in both
+<a href="Chado_Tables#Table:_feature" title="Chado Tables">feature</a> and
+<a href="Chado_Tables#Table:_feature_relationship" title="Chado Tables">feature_relationship</a>.
+In Chado, types are represented as a foreign key into the <a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm
+table</a>. In Chaos the type
+string is implicitly mapped to
+<a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a> with the same name
+as the type, from the
+<a href="http://sequenceontology.org" class="external text"
+rel="nofollow">Sequence Ontology (SO)</a> CV.</p>
+<h3 id="span-idorganism_flattening-classmw-headlineorganism-flatteningspan"><span id="Organism_Flattening" class="mw-headline">Organism Flattening</span></h3>
+<p>Chaos uses an <em>organismstr</em> PCDATA element to represent the normalised
+chado table <a href="Chado_Tables#Table:_organism" title="Chado Tables">organism</a>.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AXML" title="Category%253AXML">XML</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chaos_XML" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:08 on 22 January
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">17,768 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

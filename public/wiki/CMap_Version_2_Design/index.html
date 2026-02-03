@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMap Version 2 Design - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautocmap-version-2-designspan"><span dir="auto">CMap Version 2 Design</span></h1>
+<p>The hopes and dreams for a new generation&hellip;.</p>
+<p>Up to <a href="CMap.1" title="CMap">CMap</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#User_Interface"><span class="tocnumber">1</span> <span class="toctext">User
+Interface</span></a></li>
+<li><a href="#Schema"><span class="tocnumber">2</span>
+<span class="toctext">Schema</span></a></li>
+<li><a href="#Visualizations"><span class="tocnumber">3</span>
+<span class="toctext">Visualizations</span></a></li>
+<li><a href="#Data_Loading"><span class="tocnumber">4</span> <span class="toctext">Data
+Loading</span></a></li>
+<li><a href="#DAS"><span class="tocnumber">5</span>
+<span class="toctext">DAS</span></a></li>
+</ul>
+<h1 id="span-iduser_interface-classmw-headlineuser-interfacespan"><span id="User_Interface" class="mw-headline">User Interface</span></h1>
+<ul>
+<li>The new interface will be all Web 2.0 goodness, using tons of
+JavaScript/AJAX/CSS (which I so studiously avoided in early versions)</li>
+</ul>
+<h1 id="span-idschema-classmw-headlineschemaspan"><span id="Schema" class="mw-headline">Schema</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b8/Cmap_2.0_schema.png/100px-Cmap_2.0_schema.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b8/Cmap_2.0_schema.png/150px-Cmap_2.0_schema.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b8/Cmap_2.0_schema.png/200px-Cmap_2.0_schema.png 2x"
+width="100" height="234" alt="Cmap 2.0 schema.png" /></p>
+<ul>
+<li>No more &ldquo;cmap_&rdquo; table prefix</li>
+<li>Move to support only <a href="MySQL" title="MySQL">MySQL</a> InnoDB tables to get
+proper foreign keys, not worry about implementing common db functions
+in Perl</li>
+<li>New, slimmer schema</li>
+<li>Eschew evidence table</li>
+<li>In the past, there was a canonical &ldquo;feature_correspondence&rdquo; table and
+the &ldquo;f1-&gt;f2&rdquo; correspondence was duplicated into a
+&ldquo;correspondence_lookup&rdquo; table where &ldquo;f1-&gt;f2&rdquo; and &ldquo;f2-&gt;f1&rdquo; in order
+to write simple <a href="Glossary#SQL" title="Glossary">SQL</a>. The new version will
+remove the lookup table and simply have correspondences be repeated in
+the one table (making them essentially one-way).</li>
+<li>Map and feature types originally existed in the database but were
+moved into configuration files in past versions. They will be restored
+to there previous tables because any mismatch in configuration files
+and incoming data can easily cause data to be quietly ignored,
+creating many headaches for the author. Back in the db, code will be
+able to instantiate the needed types, and SQL will make cleanup of
+types easy.</li>
+<li>Steal the binning idea from
+<a href="http://genome.cshlp.org/content/12/10/1599.full"
+class="external text" rel="nofollow">Gbrowse</a> to speed up feature
+retrieval, group features into chunks for display as
+<a href="http://en.wikipedia.org/wiki/Sparkline" class="external text"
+rel="nofollow">sparklines</a></li>
+</ul>
+<h1 id="span-idvisualizations-classmw-headlinevisualizationsspan"><span id="Visualizations" class="mw-headline">Visualizations</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/da/CMap_circos.png/100px-CMap_circos.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/da/CMap_circos.png/150px-CMap_circos.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/da/CMap_circos.png/200px-CMap_circos.png 2x"
+width="100" height="100" alt="CMap circos.png" /></p>
+<ul>
+<li>All output to SVG, convert to other formats as needed</li>
+<li>Each &ldquo;slot&rdquo; holding maps in a comparative view will be generated and
+cached individually on server side; they will be assembled into a
+larger SVG container with an additional SVG to show the correspondence
+lines; changes to one slot will necessitate only changes to that image</li>
+<li>It will be possible to pregenerate all initial map views (e.g., whole
+chromosomes) for immediate viewing; other images can be labeled and
+cached as users create views, enabling re-use of images</li>
+<li><a href="http://mkweb.bcgsc.ca/circos" class="external text"
+rel="nofollow">Circos</a> to be used to generate circular views</li>
+<li>I&rsquo;ve written to Dave Edwards and Chris Duran at the Univ. of
+Queensland (Australia) about including their 3-D Java desktop app as a
+server-side tool; no word back</li>
+<li>Investigate
+<a href="http://code.google.com/apis/o3d/" class="external text"
+rel="nofollow">Google&rsquo;s O3D</a></li>
+<li>Also can investigate using GraphViz, gnuplot and
+<a href="http://pdl.perl.org/" class="external text"
+rel="nofollow">PDL</a> for other presentations</li>
+</ul>
+<h1 id="span-iddata_loading-classmw-headlinedata-loadingspan"><span id="Data_Loading" class="mw-headline">Data Loading</span></h1>
+<p>Write loaders for:</p>
+<ul>
+<li>Tab-delimited</li>
+<li><a href="GFF" title="GFF">GFF</a></li>
+<li>Ensembl</li>
+<li>Compara</li>
+<li><a href="Chado" class="mw-redirect" title="Chado">Chado</a></li>
+</ul>
+<h1 id="span-iddas-classmw-headlinedasspan"><span id="DAS" class="mw-headline">DAS</span></h1>
+<ul>
+<li>Will write a module to plug into
+<a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
+class="external text" rel="nofollow">Proserver</a> to create
+<a href="DAS" class="mw-redirect" title="DAS">DAS</a> server to share
+directly from <a href="CMap.1" title="CMap">CMap</a>; docs to explain to users how to
+do this</li>
+<li>As a DAS client to show additional features</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ADAS" title="Category%253ADAS">DAS</a></li>
+<li><a href="Category%253ACMap" title="Category%253ACMap">CMap</a></li>
+<li><a href="Category%253AProposals" title="Category%253AProposals">Proposals</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/CMap_Version_2_Design" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:22 on 12 May
+2009.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">57,329 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

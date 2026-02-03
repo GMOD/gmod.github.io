@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBrowseDev/The CssClass Option - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautojbrowsedevthe-cssclass-optionspan"><span dir="auto">JBrowseDev/The CssClass Option</span></h1>
+<p>The cssClass option makes it possible to choose how a
+<a href="../JBrowse.1" title="JBrowse">JBrowse</a> track will look by selecting a
+pre-existing template. Every built-in JBrowse track template is defined
+as a <a href="../Glossary#CSS" title="Glossary">Cascading Style Sheet</a> (CSS) class in
+the file &lsquo;genome.css&rsquo;. This file can be edited as a regular text file,
+and classes can be added, changed, or removed (although direct editing
+is not necessary; it is possible to use the
+<a href="The_ClientConfig_Option" title="JBrowseDev/The ClientConfig Option">clientConfig</a>
+option to avoid changing genome.css). The argument to the cssClass
+option is the name of a class in genome.css.</p>
+<h1 id="span-idjbrowse_css_classes-classmw-headlinejbrowse-css-classesspan"><span id="JBrowse_CSS_Classes" class="mw-headline">JBrowse CSS Classes</span></h1>
+<p>As of JBrowse v1.2.1, these classes are available:</p>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Shows Strand Information</th>
+<th>Other Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic</td>
+<td>No</td>
+<td>Useful when it is desirable for the track appearance to be defined entirely by clientConfig.</td>
+</tr>
+<tr>
+<td>cds0</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>cds1</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>cds2</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>dblhelix</td>
+<td>No</td>
+<td>A black double helix outline is superimposed over the light red background.</td>
+</tr>
+<tr>
+<td>est</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>exon</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>feature</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>feature2</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>feature3</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>feature4</td>
+<td>Yes</td>
+<td>Pacman design.</td>
+</tr>
+<tr>
+<td>feature5</td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td>generic_parent</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>generic_part_a</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>helix</td>
+<td>No</td>
+<td>A single black coil outline is superimposed over a faint green background.</td>
+</tr>
+<tr>
+<td>transcript</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>transcript-CDS</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>transcript-exon</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td>transcript-five_prime_UTR</td>
+<td>No</td>
+<td>Identical to transcript-exon.</td>
+</tr>
+<tr>
+<td>transcript-three_prime_UTR</td>
+<td>No</td>
+<td>Identical to transcript-exon.</td>
+</tr>
+<tr>
+<td>transcript-UTR</td>
+<td>No</td>
+<td>Identical to transcript-exon.</td>
+</tr>
+<tr>
+<td>triangle</td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="span-idsee_also-classmw-headlinesee-alsospan"><span id="See_also" class="mw-headline">See also</span></h1>
+<ul>
+<li><a href="General_Usage" class="mw-redirect"
+title="JBrowseDev/General Usage">General Usage Notes</a></li>
+</ul>
+<h1 id="span-idexternal_links-classmw-headlineexternal-linksspan"><span id="External_Links" class="mw-headline">External Links</span></h1>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="../Category%253AJBrowse" title="Category%253AJBrowse">JBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowseDev-2FThe_CssClass_Option"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 17:11 on 21 June
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">18,741 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

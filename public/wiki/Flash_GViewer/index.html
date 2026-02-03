@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash GViewer - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoflash-gviewerspan"><span dir="auto">Flash GViewer</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Flash_gviewer_title.jpg" width="650"
+height="100" alt="Flash GViewer Logo" /></p>
+<p>Flash GViewer is a <strong>customizable Flash movie</strong> that can be easily
+inserted into a web page to display each chromosome in a genome along
+with the locations of individual features on the chromosomes. It is
+<strong>intended to provide an overview of the genomic locations of a specific
+set of features</strong> - eg. genes and QTLs associated with a specific
+<a href="Category%253APhenotypes" title="Category%253APhenotypes">phenotype</a>, etc. rather than
+as a way to view all features on the genome. The features can hyperlink
+out to a detail page to enable to GViewer to be used as a navigation
+tool. In addition the bands on the chromosomes can link to definable
+URL and new region selection sliders can be used to select a specific
+chromosome region and then link out to a genome browser for higher
+resolution information.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Demo_.26_Screenshots"><span class="tocnumber">1</span> <span class="toctext">Demo &amp;
+Screenshots</span></a></li>
+<li><a href="#Requirements"><span class="tocnumber">2</span>
+<span class="toctext">Requirements</span></a></li>
+<li><a href="#Documentation"><span class="tocnumber">3</span>
+<span class="toctext">Documentation</span></a></li>
+<li><a href="#Contact"><span class="tocnumber">4</span>
+<span class="toctext">Contact</span></a></li>
+<li><a href="#Downloads"><span class="tocnumber">5</span>
+<span class="toctext">Downloads</span></a></li>
+</ul>
+<h2 id="span-iddemo_26_screenshots-classmw-headlinedemo--screenshotsspan"><span id="Demo_.26_Screenshots" class="mw-headline">Demo &amp; Screenshots</span></h2>
+<p>Check out the
+<a href="http://blog.gmod.org/nondrupal/FlashGViewer_forWeb/index.html"
+class="external text" rel="nofollow">live version of the Flash
+GViewer</a>!</p>
+<p>Screenshots of the tool are provided below.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Gviewer_regionbar-01.jpg" width="60"
+height="64" alt="Gviewer regionbar-01.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b4/Gviewer_rat_human.jpg" width="400"
+height="322" alt="Gviewer rat human.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/92/Gviewer_r_m_chr2.jpg" width="509"
+height="410" alt="Gviewer r m chr2.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/Gviewer_r_m_chr2-01.jpg" width="64"
+height="52" alt="Gviewer r m chr2-01.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/Gviewer_human_mouse.jpg" width="499"
+height="398" alt="Gviewer human mouse.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Gviewer_human_mouse-01.jpg" width="64"
+height="51" alt="Gviewer human mouse-01.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c6/Gviewer_example2.jpg" width="289"
+height="408" alt="Gviewer example2.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/64/Gviewer_example2-01.jpg" width="45"
+height="64" alt="Gviewer example2-01.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Gviewer_example1.jpg" width="477"
+height="404" alt="Gviewer example1.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/Gviewer_example1-01.jpg" width="64"
+height="54" alt="Gviewer example1-01.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/48/Gviewer_example_hs.jpg" width="477"
+height="404" alt="Gviewer example hs.jpg" /></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/Gviewer_example_hs-01.jpg" width="64"
+height="54" alt="Gviewer example hs-01.jpg" /></p>
+<h2 id="span-idrequirements-classmw-headlinerequirementsspan"><span id="Requirements" class="mw-headline">Requirements</span></h2>
+<ul>
+<li>Macromedia Flash Plugin version 7, it can be downloaded from
+Macromedia <a
+href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
+class="external text" rel="nofollow">here</a>. To edit the source code
+(the <code>.fla</code> file in
+<a href="SVN" class="mw-redirect" title="SVN">SVN</a>) and publish
+modified versions of the <code>.swf</code> requires Macromedia Flash Professional
+v7.</li>
+</ul>
+<h2 id="span-iddocumentation-classmw-headlinedocumentationspan"><span id="Documentation" class="mw-headline">Documentation</span></h2>
+<p>Installation instructions, explanations of the Flash HTML tags, the XML
+file formats for the base map and the annotations are discussed in the
+<a href="Flash_GViewer_Documentation" title="Flash GViewer Documentation">Flash GViewer
+documentation</a>.</p>
+<h2 id="span-idcontact-classmw-headlinecontactspan"><span id="Contact" class="mw-headline">Contact</span></h2>
+<p><a href="mailto:simont@mcw.edu" class="external text"
+rel="nofollow">Simon Twigger</a></p>
+<h2 id="span-iddownloads-classmw-headlinedownloadsspan"><span id="Downloads" class="mw-headline">Downloads</span></h2>
+<p><a
+href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=161280"
+class="external text" rel="nofollow">Via the web from sourceforge</a></p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGMOD_Components" title="Category%253AGMOD Components">GMOD Components</a></li>
+<li><a href="Category%253ARGD" title="Category%253ARGD">RGD</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Flash_GViewer" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 19:41 on 26 February
+2014.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">118,862 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

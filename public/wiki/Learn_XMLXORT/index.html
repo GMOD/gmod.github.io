@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn XMLXORT - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautolearn-xmlxortspan"><span dir="auto">Learn XMLXORT</span></h1>
+<p>ok, first question is why xmlxort. because many information are not in
+gff3.</p>
+<p>second question is how.
+<a href="http://www.acedb.org/" class="external text"
+rel="nofollow">acedb</a> underlines wormbase and acedb is organized into
+ace classes. the classes are
+<a href="http://wormbase.org/db/misc/database_stats"
+class="external text" rel="nofollow">here</a>. seems to me there are two
+strategies: first, for each class in ace set up a procedure to migrate
+its info into chado, this is like gff3 to chado, have to do a &lsquo;chain
+reaction&rsquo; on chado tables; the good news is that we don&rsquo;t need to do
+&lsquo;join&rsquo; on the acedb side and once we are done, we know all data have
+been migrated. second, for each module in chado get the required
+information from acedb, we will do a lot of join on acedb side,
+potential problem is we donnot know whether we have migrated all the
+data. Which strategy to use?</p>
+<p>steps: I will first try on the rudimental table, such as cv(?), biblio,
+db(?).</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#wormbase_acedb_classes"><span class="tocnumber">1</span> <span class="toctext">wormbase acedb
+classes</span></a></li>
+<li><a href="#chado_database_ddl"><span class="tocnumber">2</span> <span class="toctext">chado database
+ddl</span></a></li>
+<li><a href="#chadoxml_dtd"><span class="tocnumber">3</span> <span class="toctext">chadoxml
+dtd</span></a></li>
+<li><a href="#chadoxml"><span class="tocnumber">4</span>
+<span class="toctext">chadoxml</span></a></li>
+<li><a href="#migration"><span class="tocnumber">5</span>
+<span class="toctext">migration</span></a>
+<ul>
+<li><a href="#mapping_wormbase_info_to_chado"><span class="tocnumber">5.1</span> <span class="toctext">mapping
+wormbase info to chado</span></a></li>
+<li><a href="#extract_info_from_wormbase_using_AcePerl_.28sample_code.29"><span class="tocnumber">5.2</span> <span class="toctext">extract
+info from wormbase using AcePerl (sample
+code)</span></a></li>
+<li><a href="#write_chadoxml_.28sample_xml.29"><span class="tocnumber">5.3</span> <span class="toctext">write
+chadoxml (sample xml)</span></a></li>
+<li><a href="#validate_xml_file"><span class="tocnumber">5.4</span> <span class="toctext">validate
+xml file</span></a></li>
+<li><a href="#load_xml_file"><span class="tocnumber">5.5</span> <span class="toctext">load xml
+file</span></a></li>
+</ul>
+</li>
+<li><a href="#order_is_important_for_loading"><span class="tocnumber">6</span> <span class="toctext">order is
+important for loading</span></a></li>
+<li><a href="#extend_chado_schema"><span class="tocnumber">7</span> <span class="toctext">extend chado
+schema</span></a></li>
+<li><a href="#cvterm_is_most_important_for_chado"><span class="tocnumber">8</span> <span class="toctext">cvterm is most
+important for chado</span></a></li>
+<li><a href="#strain_from_wormbase_to_stock_from_chado"><span class="tocnumber">9</span> <span class="toctext">strain from
+wormbase to stock from
+chado</span></a></li>
+<li><a href="#transgene_from_wormbase_to_feature_from_chado"><span class="tocnumber">10</span> <span class="toctext">transgene
+from wormbase to feature from
+chado</span></a></li>
+<li><a href="#variation_from_wormbase"><span class="tocnumber">11</span> <span class="toctext">variation
+from wormbase</span></a></li>
+</ul>
+<h2 id="span-idwormbase_acedb_classes-classmw-headlinewormbase-acedb-classesspan"><span id="wormbase_acedb_classes" class="mw-headline">wormbase acedb classes</span></h2>
+<p>I started with class Paper. acedb classes are mixture of c structure and
+database description. pointers are to other class object. class paper
+points to class author, person, person_name, keyword?, address, role,
+laboratory. some are weak reference (circular, back_ref, dealt in perl
+module scalar::util, interesting it is here) obviously, a lot of <em>ad
+hoc</em> reading script needed.</p>
+<h2 id="span-idchado_database_ddl-classmw-headlinechado-database-ddlspan"><span id="chado_database_ddl" class="mw-headline">chado database ddl</span></h2>
+<p>there is a file named chado.ddl in xmlxort/example/, schema/dat/. the
+grammar can be found at
+<a href="http://www.postgresql.org/docs/8.1/static/sql-createtable.html"
+class="external text" rel="nofollow">postgresql create table command</a>.</p>
+<h2 id="span-idchadoxml_dtd-classmw-headlinechadoxml-dtdspan"><span id="chadoxml_dtd" class="mw-headline">chadoxml dtd</span></h2>
+<h2 id="span-idchadoxml-classmw-headlinechadoxmlspan"><span id="chadoxml" class="mw-headline">chadoxml</span></h2>
+<ul>
+<li>chadoxml is a direct, fixed mapping of the chado schema;</li>
+<li>change to ddl will map to change to dtd by a program
+chado_dtd_creator.pl in xmlxort/examples</li>
+<li>can delete, update(alter), new(create), etc using XML.</li>
+<li>no module in xml</li>
+<li>table map to element, foreign table maps to nested element</li>
+</ul>
+<!-- -->
+<pre><code>&lt;pub&gt;
+   &lt;pubprop&gt;
+      ....
+   &lt;/pubprop&gt;
+&lt;/pub&gt; 
+</code></pre>
+<ul>
+<li>column map to nested element</li>
+</ul>
+<!-- -->
+<pre><code>&lt;pub&gt;
+   &lt;uniquename&gt;this paper&lt;/uniquename&gt;
+&lt;/pub&gt;
+</code></pre>
+<ul>
+<li>xml attributes only a few, usually for database transaction, such as
+lookup, insert, delete, update, force. default is force, i.e,combining
+lookup/update/insert.</li>
+</ul>
+<!-- -->
+<pre><code>&lt;pub op='lookup'&gt;
+</code></pre>
+<ul>
+<li>macro_id for save space, since XML could be quite long</li>
+</ul>
+<!-- -->
+<pre><code>&lt;pub id='WBPaper000001'&gt;
+  &lt;title&gt;....
+  &lt;miniref&gt;....
+  &lt;volumn&gt;
+&lt;stock_pub&gt;
+   &lt;pub_id&gt;
+      &lt;pub&gt;WBPaper000001&lt;/pub&gt;
+</code></pre>
+<ul>
+<li>use &lt;pub_id&gt; instead of &lt;pub&gt; if the schema ask for a column of
+pub_id. this is always true in chado for foreign key. see above
+example.</li>
+</ul>
+<h2 id="span-idmigration-classmw-headlinemigrationspan"><span id="migration" class="mw-headline">migration</span></h2>
+<p>I first wrote a read and a write part for migrating paper class object.
+after I finished write subroutine with XML::Writer, I found it just
+mimics the tree structure of chadoxml, so apparently a fixed DOM object
+( a fixed-structured tree) for each table will do most of the writing
+job. So I need to read acedb (multi classes) to extract info for a table
+and represent it into a <strong>DOM</strong> object. this is what I think I will do
+in the next several months.</p>
+<h3 id="span-idmapping_wormbase_info_to_chado-classmw-headlinemapping-wormbase-info-to-chadospan"><span id="mapping_wormbase_info_to_chado" class="mw-headline">mapping wormbase info to chado</span></h3>
+<p><a href="http://www.wormbase.org/db/misc/model?class=Paper"
+class="external text" rel="nofollow">here</a> is the paper class model
+in Wormbase.
+<a href="http://search.cpan.org/~lds/AcePerl-1.91/Ace/Object.pm"
+class="external text" rel="nofollow">AcePerl</a> is here. mapping from
+Wormbase to chado is as following:</p>
+<ul>
+<li>paper-&gt;Cgc_name etc. &ndash;&gt; pub_dbxref (CGC/PubMed/Medline)</li>
+<li>paper-&gt;Merged_into &ndash;&gt; pub_relationship (makes obsolete)</li>
+<li>paper-&gt;Status &ndash;&gt; pub.is_obsolete=FALSE</li>
+<li>paper-&gt;Erratum &ndash;&gt; pub_relationship (corrects)</li>
+<li>paper-&gt;Journal &mdash;&gt;pub_relationship (journal is another pub,
+type=journal)</li>
+<li>paper-&gt;Reference-&gt;title etc. &mdash;&gt; pub (title, pages, volume, issue,
+year, publisher)</li>
+<li>paper-&gt;In_book pub_relationship (book is another pub, type=book)</li>
+<li>paper-&gt;journal and paper-&gt;Contained_in &mdash;&gt;pub_relationship
+(published in)</li>
+<li>paper-&gt;author &mdash;-&gt;pubauthor</li>
+<li>paper-&gt;B rief_citation &ndash;&gt;pub.miniref (modified)</li>
+<li>paper-&gt;Abstract, paper-&gt;Keyword &mdash;&gt; pubprop
+(type=abstract/keyword)</li>
+<li>paper-&gt;Type &ndash;&gt; pub.type_id</li>
+<li>pubprop (type=paper remark)</li>
+</ul>
+<h3 id="span-idextract_info_from_wormbase_using_aceperl_28sample_code29-classmw-headlineextract-info-from-wormbase-using-aceperl-sample-codespan"><span id="extract_info_from_wormbase_using_AcePerl_.28sample_code.29" class="mw-headline">extract info from wormbase using AcePerl (sample code)</span></h3>
+<pre><code> sub read_paper_pub {
+   my $paper = shift;
+   my %info;
+   $info{uniquename} = $paper-&gt;name; 
+   ........... 
+   if (defined($paper-&gt;Page)) {
+       my @pages = $paper-&gt;Page-&gt;row;
+       if (scalar @pages == 1) {
+           $info{pages} = $pages[0]-&gt;name;
+       } elsif (scalar @pages == 2) {
+           $info{pages} = join &quot;-&quot;, ($pages[0]-&gt;name, $pages[1]-&gt;name);
+       }
+   }
+</code></pre>
+<h3 id="span-idwrite_chadoxml_28sample_xml29-classmw-headlinewrite-chadoxml-sample-xmlspan"><span id="write_chadoxml_.28sample_xml.29" class="mw-headline">write chadoxml (sample xml)</span></h3>
+<pre><code>sub write_paper_pub {
+   my $paper = shift;
+   my $fh = shift;
+   my $p_href = &amp;read_paper_pub($paper);
+   my $doc = new XML::DOM::Document;
+   my $root = $doc-&gt;createElement(&quot;chado&quot;);
+   my $pub_el = create_ch_pub(doc =&gt; $doc,
+                              no_lookup =&gt; 1,
+                              %$p_href);
+   ........
+   if (defined($paper-&gt;CGC_name)) {
+       my $db = 'CGC';
+       my $accession = substr($paper-&gt;CGC_name-&gt;name, 3);
+       my $is_current = 't';
+       my $pd_el = create_ch_pub_dbxref(doc =&gt; $doc,
+                                        db =&gt; $db,
+                                        accession =&gt; $accession,
+                                        no_lookup =&gt; 1);
+       $pub_el-&gt;appendChild($pd_el);
+   } 
+   ........
+   if (defined($paper-&gt;Abstract)) {
+       my %abstract = ();
+       $abstract{type} = 'pubmed_abstract';
+       if ($paper-&gt;Abstract-&gt;right-&gt;name ne ) {
+           $abstract{value} = $paper-&gt;Abstract-&gt;right-&gt;name;
+           my $pp_el = create_ch_pubprop(doc =&gt; $doc,
+                                         %abstract);
+           $pub_el-&gt;appendChild($pp_el);
+       }
+   }
+   .........
+
+sub write_paper_pub_relationship {
+   .........
+   if (defined($paper-&gt;In_book)) {
+       my %pr = ();
+       $pr{is_object} = 't';
+       $pr{rtype} = 'published_in';
+       if (defined($paper-&gt;In_book-&gt;at('Title'))) {
+         $pr{uniquename} = $paper-&gt;In_book-&gt;at('Title')-&gt;right-&gt;name;
+       } else {........    
+       }
+       my $pr_el = create_ch_pub_relationship(doc =&gt; $doc;
+                                              %pr);
+       $pub_el-&gt;appendChild($pr_el);
+   }
+</code></pre>
+<h3 id="span-idvalidate_xml_file-classmw-headlinevalidate-xml-filespan"><span id="validate_xml_file" class="mw-headline">validate xml file</span></h3>
+<pre><code>xort_validator.pl -d wormbase_chado -f xml/paper/1.xml -v 1 -b 1
+</code></pre>
+<p>this will connect database to validate the xml file</p>
+<h3 id="span-idload_xml_file-classmw-headlineload-xml-filespan"><span id="load_xml_file" class="mw-headline">load xml file</span></h3>
+<pre><code>xort_loader.pl -d wormbase_chado -f xml/paper/1.xml
+</code></pre>
+<h2 id="span-idorder_is_important_for_loading-classmw-headlineorder-is-important-for-loadingspan"><span id="order_is_important_for_loading" class="mw-headline">order is important for loading</span></h2>
+<ul>
+<li>load cvterm first, mapping wormbase paper/person type/proptype to
+chado cvterm</li>
+<li>load pub/pubauthor/pubprop, contact/contactprop first, extracting
+related paper/person info</li>
+<li>load pub_relationship/contact_relationship at last, since two
+pub/contact (a relationship)will not exist in xml/db before all
+pub/contact instance get populated.</li>
+</ul>
+<h2 id="span-idextend_chado_schema-classmw-headlineextend-chado-schemaspan"><span id="extend_chado_schema" class="mw-headline">extend chado schema</span></h2>
+<ul>
+<li>add a contactprop table rather than alter contact table (e.g, adding
+email column, etc.) this solution is fully extensible.</li>
+</ul>
+<!-- -->
+<pre><code>   1 -- ================================================
+   2 -- TABLE: contactprop
+   3 -- ================================================
+   4 
+   5 -- contactprop models person/lab properties, such as email, phone, etc.
+   6 -- the cvterms come from FOAF project, see the spec at http://xmlns.com/foaf/spec/
+   7 
+   8 create table contactprop (
+   9    contactprop_id serial not null,
+  10    primary key (contactprop_id),
+  11    contact_id int not null,
+  12    foreign key (contact_id) references contact (contact_id) on delete cascade,
+  13    type_id int not null,
+  14    foreign key (type_id) references cvterm (cvterm_id) on delete cascade,
+  15    value text,
+  16 
+  17    unique (contact_id, type_id, value)
+  18 );
+  19 create index contactprop_idx1 on contactprop (contactprop_id);
+  20 create index contactprop_idx2 on contactprop (type_id);
+</code></pre>
+<h2 id="span-idcvterm_is_most_important_for_chado-classmw-headlinecvterm-is-most-important-for-chadospan"><span id="cvterm_is_most_important_for_chado" class="mw-headline">cvterm is most important for chado</span></h2>
+<p>the power of chado relies on common and controlled cvterms,
+<a href="http://www.foaf-project.org/" class="external text"
+rel="nofollow">FOAF</a> cvterms will be reused as much as possible for
+contact properties. Plus some terms from WormBase.</p>
+<h2 id="span-idstrain_from_wormbase_to_stock_from_chado-classmw-headlinestrain-from-wormbase-to-stock-from-chadospan"><span id="strain_from_wormbase_to_stock_from_chado" class="mw-headline">strain from wormbase to stock from chado</span></h2>
+<p>straight forward mapping.</p>
+<h2 id="span-idtransgene_from_wormbase_to_feature_from_chado-classmw-headlinetransgene-from-wormbase-to-feature-from-chadospan"><span id="transgene_from_wormbase_to_feature_from_chado" class="mw-headline">transgene from wormbase to feature from chado</span></h2>
+<p>a transgene in wormbase will map to a feature in chado,
+type_id=synthetic construct</p>
+<h2 id="span-idvariation_from_wormbase-classmw-headlinevariation-from-wormbasespan"><span id="variation_from_wormbase" class="mw-headline">variation from wormbase</span></h2>
+<ul>
+<li>variation type == allele will map to feature</li>
+<li>variation type == delete/ will map to ?</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AXORT" title="Category%253AXORT">XORT</a></li>
+<li><a href="Category%253AXML" title="Category%253AXML">XML</a></li>
+<li><a href="Category%253AWormBase" title="Category%253AWormBase">WormBase</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Learn_XMLXORT" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:52 on 23 January
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">48,767 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

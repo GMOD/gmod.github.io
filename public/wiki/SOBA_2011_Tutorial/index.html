@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOBA 2011 Tutorial - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautosoba-2011-tutorialspan"><span dir="auto">SOBA 2011 Tutorial</span></h1>
+<p>The following tutorial was presented as part of the <a href="2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011 GMOD Spring
+Training</a>.</p>
+<p><strong><a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
+class="external text" rel="nofollow">SOBA</a></strong> is a command line tool
+and web application for analyzing <a href="GFF3" title="GFF3">GFF3</a> annotations.
+<a href="GFF3" title="GFF3">GFF3</a> is a standard file format for genomic annotation
+data. SOBA gathers statistics from GFF3 files and renders them as tables
+and graphs.</p>
+<p>The web version of SOBA will produce the following:</p>
+<ul>
+<li>Summary statistics of feature types and attributes used</li>
+<li>Histograms of feature lengths</li>
+<li>Graphs of
+<a href="http://www.sequenceontology.org" class="external text"
+rel="nofollow">Sequence Ontology</a> terms used</li>
+<li>Histograms of intron density</li>
+<li>Suggestions to improve SO compliance for invalid terms</li>
+</ul>
+<p>In addition, the command line tool (SOBAcl) flexibly produces a much
+wider variety of tables, figures and graphs based on the data in a
+<a href="GFF3" title="GFF3">GFF3</a> file as well as the the ability to produce complex
+and extensible custom reports via a robust template system.</p>
+<p>SOBA is intended is a tool for those dealing with genomic sequence
+annotation who want to view genome wide summaries their annotation
+files. For example: SOBA would be a useful tool at an annotation
+jamboree for a newly sequenced organism and when preparing a the
+resulting genome paper; SOBA would help those developing annotation
+tools to quickly evaluate updates to their tool; SOBA assists
+comparative genomics analyses by providing a high-level overview of the
+genome of multiple organisms. SOBA complements genome browsers by
+providing a summary of all the features annotated in the genome.</p>
+<p>SOBA is built with Perl (and JavaScript for the web interface). The web
+interface uses <a href="http://search.cpan.org/perldoc?CGI::Application"
+class="external text" rel="nofollow">CGI::Application</a> as a Perl
+webapp framework and the JQuery JavaScript library for Web 2.0 effects
+and <a href="Glossary#AJAX" title="Glossary">AJAX</a>. Both versions of SOBA use the
+<a href="http://template-toolkit.org/" class="external text"
+rel="nofollow">Template Tooklit (TT)</a> to generate html/txt reports,
+graphviz for the ontology graphs, and GD for charts. Template Toolkit
+makes extensibility very easy, at least for someone who&rsquo;s willing to
+learn the fairly simple template language of TT (you don&rsquo;t need to know
+Perl or any other programming to use TT).</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#SOBA_Web_Application"><span class="tocnumber">1</span> <span class="toctext">SOBA Web
+Application</span></a></li>
+<li><a href="#SOBAcl"><span class="tocnumber">2</span>
+<span class="toctext">SOBAcl</span></a>
+<ul>
+<li><a href="#Help"><span class="tocnumber">2.1</span>
+<span class="toctext">Help</span></a></li>
+<li><a href="#Tables"><span class="tocnumber">2.2</span>
+<span class="toctext">Tables</span></a></li>
+<li><a href="#Charts"><span class="tocnumber">2.3</span>
+<span class="toctext">Charts</span></a></li>
+<li><a href="#Reports"><span class="tocnumber">2.4</span>
+<span class="toctext">Reports</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idsoba_web_application-classmw-headlinesoba-web-applicationspan"><span id="SOBA_Web_Application" class="mw-headline">SOBA Web Application</span></h2>
+<p>Documentation for the web interface to SOBA is available on the <a
+href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
+class="external text" rel="nofollow">Sequence Ontology Wiki</a> as well
+as via tool-tips on the site itself.</p>
+<p>Navigate to the
+<a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
+class="external text" rel="nofollow">SOBA Web Application</a> with any
+modern browser that has JavaScript enabled.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>
+<p><strong>Figure:8</strong> SOBA feature lengths by chromosome</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>We can constrain the features reported in other ways as well.</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">SOBAcl --columns seqid --rows type --data length --data_type mean --layout table --format text --select &#39;start =&gt; [&#34;&gt;=&#34;, &#34;1000&#34;], end =&gt; [&#34;&lt;=&#34;, &#34;1000000&#34;]&#39; hsap_hg18_demo.gff3
+</code></pre><h3 id="span-idreports-classmw-headlinereportsspan"><span id="Reports" class="mw-headline">Reports</span></h3>
+<p>SOBAcl has support for more complex reports.</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">SOBAcl --report attributes --format html_page hsap_hg18_demo.gff3
+</code></pre><p>These reports can be generated by custom templates.</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">SOBAcl --columns file   --rows type --data length --data_type mean  --layout table --format tab --template soba_custom_template_text.tt hsap_hg18_demo.gff3
+</code></pre><pre><code>             count  length (mean)
+CDS          11944  165.853064300067
+contig           3  229900897.333333
+exon             12918  288.366697631212
+five_prime_UTR   1381   597.052136133237
+gene             1157   67319.117545376
+mRNA             1085   70187.8202764977
+ncRNA            72 24089.3611111111
+three_prime_UTR  1385   569.969675090253
+</code></pre>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ASOBA" title="Category%253ASOBA">SOBA</a></li>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/SOBA_2011_Tutorial" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:03 on 20 August 2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">8,042 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

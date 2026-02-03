@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparative Genomics - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautocomparative-genomicsspan"><span dir="auto">Comparative Genomics</span></h1>
+<p>GMOD includes several components for managing and visualizing
+<a href="Category%253AComparative_Genomics" title="Category%253AComparative Genomics">comparative genomics and
+synteny</a>
+data.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Presentations_and_Posters"><span class="tocnumber">2</span> <span class="toctext">Presentations
+and Posters</span></a></li>
+<li><a href="#GMOD_Components"><span class="tocnumber">3</span> <span class="toctext">GMOD
+Components</span></a>
+<ul>
+<li><a href="#CMap"><span class="tocnumber">3.1</span>
+<span class="toctext">CMap</span></a></li>
+<li><a href="#GBrowse_syn"><span class="tocnumber">3.2</span>
+<span class="toctext">GBrowse_syn</span></a></li>
+<li><a href="#Sybil"><span class="tocnumber">3.3</span>
+<span class="toctext">Sybil</span></a></li>
+<li><a href="#SynView"><span class="tocnumber">3.4</span>
+<span class="toctext">SynView</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h2>
+<p><a href="Category%253AComparative_Genomics" title="Category%253AComparative Genomics">Comparative
+genomics</a>
+and synteny are hot topics in biology and are frequently discussed at
+GMOD <a href="Meetings" title="Meetings">Meetings</a>. GMOD offers several solutions for
+managing and <a href="Visualization" title="Visualization">visualizing</a> comparative
+genomics data.</p>
+<h2 id="span-idpresentations_and_posters-classmw-headlinepresentations-and-postersspan"><span id="Presentations_and_Posters" class="mw-headline">Presentations and Posters</span></h2>
+<ul>
+<li><strong><a
+href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf"
+class="internal"
+title="GMODToolsForComparativeGenomicsIGERTPoster.pdf">GMOD Tools for
+Comparative Genomics</a></strong> - Poster about the tools described on this
+page.</li>
+<li><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
+title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
+SynView</a></strong> - presented by Steve Fischer at the <a href="November_2007_GMOD_Meeting" title="November 2007 GMOD Meeting">November 2007 GMOD
+Meeting</a>, is
+a good overview of many issues encountered when displaying synteny.</li>
+<li><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf" class="internal"
+title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
+Using GMOD Tools</a></strong> - poster by <a href="User%253AScott" title="User%253AScott">Scott
+Cain</a> showing how six GMOD tools are used to
+create an example comparative genome model organism database.</li>
+<li><strong><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
+class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
+Genomics With GMOD and BioPerl</a></strong> - a 2004 presentation by <a href="User%253AStajich" title="User%253AStajich">Jason
+Stajich</a>.</li>
+</ul>
+<h2 id="span-idgmod_components-classmw-headlinegmod-componentsspan"><span id="GMOD_Components" class="mw-headline">GMOD Components</span></h2>
+<h3 id="span-idcmap-classmw-headlinecmapspan"><span id="CMap" class="mw-headline">CMap</span></h3>
+<p><a href="CMap.1" title="CMap">CMap</a> is a web-based tool that allows users to view
+comparisons of a wide variety of data including genetic maps, physical
+maps, sequence assemblies, QTL and deletion maps. Unlike the other tools
+listed here, it does not require sequence data.</p>
+<p>CMap can display correspondences between features such as markers, HSPs
+or any other annotation. The distribution comes with tools for creating
+these correspondences based on feature names or correspondences can be
+imported directly. CMap can display correspondences as either lines or
+ribbons.</p>
+<p>See <a href="CMap.1" title="CMap">CMap</a> for more.</p>
+<h3 id="span-idgbrowse_syn-classmw-headlinegbrowse_synspan"><span id="GBrowse_syn" class="mw-headline">GBrowse_syn</span></h3>
+<p>GBrowse_syn, as implemented at WormBase</p>
+<p><a href="GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>, or the Generic Synteny
+Browser, is a <a href="GBrowse.1" title="GBrowse">GBrowse</a>-based
+<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
+browser designed to display multiple genomes, with a central reference
+species compared to two or more additional species.  It can be used to
+view multiple sequence alignment data, synteny or co-linearity data from
+other sources against genome annotations provided by GBrowse.
+GBrowse_syn is included with the standard GBrowse package (version 1.69
+and later).  Working examples can be seen at <a
+href="http://www.arabidopsis.org/cgi-bin/gbrowse_syn/arabidopsis/?name=Chr1%253A8367000..8370501"
+class="external text" rel="nofollow">TAIR</a>, <span class="pops"><a
+href="http://dev.wormbase.org/db/seq/gbrowse_syn/compara?search_src=Cele;name=X:1050001..1150000"
+class="external text" rel="nofollow">WormBase</a></span>, and
+<a href="http://solgenomics.net/gbrowse2/bin/gbrowse_syn/sol3/"
+class="external text" rel="nofollow">SGN</a>.</p>
+<h3 id="span-idsybil-classmw-headlinesybilspan"><span id="Sybil" class="mw-headline">Sybil</span></h3>
+<p><a href="Sybil" title="Sybil">Sybil</a> is a web-based system for comparative genomics
+visualizations. It is currently developed by engineers at
+<a href="http://jcvi.org" class="external text" rel="nofollow">JCVI</a>
+and at <a href="http://medschool.umaryland.edu" class="external text"
+rel="nofollow">IGS at the University of Maryland School of Medicine</a>.
+Sybil supports several visualizations: Whole genome comparisons,
+regional comparisons (synteny) and orthologous gene comparisons.</p>
+<p>See the
+<a href="Chado_Comparative_Schema#Sybil.2FIGS" title="Chado Comparative Schema">Sybil/IGS</a>
+section of the <a href="Chado_Comparative_Schema" title="Chado Comparative Schema">Chado Comparative
+Schema</a> page for
+how Sybil represents syntenic data in
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a>.</p>
+<h3 id="span-idsynview-classmw-headlinesynviewspan"><span id="SynView" class="mw-headline">SynView</span></h3>
+<p><a href="SynView" title="SynView">SynView</a> displays synteny at the region and/or gene
+level. Users select a reference genome and then synteny with other
+selected genomes is displayed relative to that genome. SynView is based
+on <a href="GBrowse.1" title="GBrowse">GBrowse</a>. It can be layered on top of an
+existing GBrowse instance and uses the full range of GBrowse&rsquo;s display
+and configuration options. SynView is included in the GBrowse
+distribution.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AComparative_Genomics" title="Category%253AComparative Genomics">Comparative
+Genomics</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Comparative_Genomics" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:26 on 2 November
+2009.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">82,473 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

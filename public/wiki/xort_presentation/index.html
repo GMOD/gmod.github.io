@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XORT Presentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoxort-presentationspan"><span dir="auto">XORT Presentation</span></h1>
+<p>This Wiki section is an edited version of
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf" class="internal"
+title="XORT.pdf">Josh Goodman and Pinglei Zhou&rsquo;s presentation</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Chado_XML"><span class="tocnumber">2</span> <span class="toctext">Chado
+XML</span></a></li>
+<li><a href="#Components"><span class="tocnumber">3</span>
+<span class="toctext">Components</span></a></li>
+<li><a href="#Highlights_of_Chado_XML_Specification"><span class="tocnumber">4</span> <span class="toctext">Highlights of
+Chado XML
+Specification</span></a></li>
+<li><a href="#Putting_it_together:_New_FlyBase_dataflow_Part_1"><span class="tocnumber">5</span> <span class="toctext">Putting it
+together: New FlyBase dataflow Part
+1</span></a></li>
+<li><a href="#Putting_it_together:_New_FlyBase_dataflow_Part_2"><span class="tocnumber">6</span> <span class="toctext">Putting it
+together: New FlyBase dataflow Part
+2</span></a></li>
+<li><a href="#Data_.26_Report_Generation"><span class="tocnumber">7</span> <span class="toctext">Data &amp; Report
+Generation</span></a></li>
+<li><a href="#Hibernate_.26_XORT"><span class="tocnumber">8</span> <span class="toctext">Hibernate &amp;
+XORT</span></a></li>
+<li><a href="#Support_for_complex_transactions_using_XORT"><span class="tocnumber">9</span> <span class="toctext">Support for
+complex transactions using
+XORT</span></a></li>
+<li><a href="#CHIA_.28Chado_Interface_Application.29"><span class="tocnumber">10</span> <span class="toctext">CHIA (Chado
+Interface
+Application)</span></a></li>
+<li><a href="#Documentation"><span class="tocnumber">11</span>
+<span class="toctext">Documentation</span></a></li>
+<li><a href="#Acknowledgements"><span class="tocnumber">12</span>
+<span class="toctext">Acknowledgements</span></a></li>
+</ul>
+<h5 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h5>
+<ul>
+<li>An <a href="Glossary#XML" title="Glossary">XML</a>-database mapping system for data
+exchange between DB and XML-driven application</li>
+<li><a href="XORT.1" title="XORT">XORT</a> can handle typical XML, it&rsquo;s not
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a>-specific</li>
+<li>Developed/Supported by Pinglei Zhou at FlyBase Harvard, 0.007 version
+now.</li>
+<li>Used at all FlyBase sites
+<ul>
+<li>Harvard has extensive library of Perl modules for generating
+ChadoXML</li>
+</ul>
+</li>
+<li>Written in Perl</li>
+<li>Required Perl modules:
+<ul>
+<li><a href="http://search.cpan.org/perldoc?XML::Parser::PerlSAX"
+class="external text" rel="nofollow">XML::Parser::PerlSAX</a></li>
+<li><a href="http://search.cpan.org/perldoc?Unicode::String"
+class="external text" rel="nofollow">Unicode::String</a></li>
+<li><a href="http://search.cpan.org/perldoc?XML::DOM" class="external text"
+rel="nofollow">XML::DOM</a></li>
+<li><a href="http://search.cpan.org/perldoc?DBI" class="external text"
+rel="nofollow">DBI</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idchado_xml-classmw-headlinechado-xmlspan"><span id="Chado_XML" class="mw-headline">Chado XML</span></h5>
+<ul>
+<li>Is <a href="Chado_XML" title="Chado XML">Chado XML</a> necessary? No, but it may help
+you.</li>
+<li>ChadoXML assists with incremental updates, if you want to avoid
+flush-and-reload.</li>
+<li>While update can be achived by other middleware (for example, perl
+Class::DBI, Java Hibernate), ChadoXML provide additional feature as
+way to archive your transaction.</li>
+<li>It provides bulk update/download which other methods lack or is
+inefficient</li>
+</ul>
+<h5 id="span-idcomponents-classmw-headlinecomponentsspan"><span id="Components" class="mw-headline">Components</span></h5>
+<ul>
+<li>Database &amp; Schema</li>
+<li>ChadoXML Specification</li>
+<li>DumpSpec
+<ul>
+<li>DumpSpec files are simple XML files that tell XORT what to do</li>
+<li>DumpSpec files are <em>language independent</em>, being XML</li>
+<li>It&rsquo;s fairly easy for those who know the schema to read these files
+and understand what the operation is</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idhighlights_of_chado_xml_specification-classmw-headlinehighlights-of-chado-xml-specificationspan"><span id="Highlights_of_Chado_XML_Specification" class="mw-headline">Highlights of Chado XML Specification</span></h5>
+<ul>
+<li>Unique represent of specific database schema</li>
+<li>Get away with those internal primary key value</li>
+<li>Static vs. Operational</li>
+<li>Encoding for non-ASCII characters</li>
+<li>Macro mechanism (object reference)</li>
+</ul>
+<h5 id="span-idputting_it_together_new_flybase_dataflow_part_1-classmw-headlineputting-it-together-new-flybase-dataflow-part-1span"><span id="Putting_it_together:_New_FlyBase_dataflow_Part_1" class="mw-headline">Putting it together: New FlyBase dataflow Part 1</span></h5>
+<p>There are three Flybase sites, and most curation is done at Harvard and
+Cambridge. Proforma is the curation format at Cambridge and Harvard, but
+Harvard also curates with <a href="Apollo.1" title="Apollo">Apollo</a> and ChadoXML.</p>
+<p>Once in Chado, the reporting instance, there&rsquo;s a denormalization step in
+moving data to a read-only database. Once in the read-only database
+there are dumps, for reporting purposes, using XORT to create ChadoXML.
+Once ChadoXML is created version 2 of XSLT is used to create HTML and
+<a href="GFF" title="GFF">GFF</a>. HTML reports are for human-readable reports,
+<a href="GFF" title="GFF">GFF</a> for <a href="GBrowse.1" title="GBrowse">GBrowse</a> and for various
+power users.</p>
+<p>1.a. Proforma (FlyBase Cambridge) is converted to ChadoXML</p>
+<p>1.b. ChadoXML is created by Apollo (Harvard)</p>
+<p>1.c. ChadoXML is created by Java SEAN (Harvard)</p>
+<p>2. All ChadoXML is loaded into Chado by XORT</p>
+<h5 id="span-idputting_it_together_new_flybase_dataflow_part_2-classmw-headlineputting-it-together-new-flybase-dataflow-part-2span"><span id="Putting_it_together:_New_FlyBase_dataflow_Part_2" class="mw-headline">Putting it together: New FlyBase dataflow Part 2</span></h5>
+<p>3. Chado (Harvard) is denormalized and loaded into Chado (Indiana)</p>
+<p>4. ChadoXML is created from Chado using XORT</p>
+<p>5.a. <a href="GFF" title="GFF">GFF</a> and Fasta is created from ChadoXML</p>
+<p>5.b. HTML is created from Chado XML</p>
+<h5 id="span-iddata_26_report_generation-classmw-headlinedata--report-generationspan"><span id="Data_.26_Report_Generation" class="mw-headline">Data &amp; Report Generation</span></h5>
+<ul>
+<li>Content of all output files is controlled by XML dumpspecs.
+<ul>
+<li>Dumpspecs are language independent.</li>
+<li>Easily readable (with knowledge of Chado structure).</li>
+</ul>
+</li>
+<li>All XML transformation steps are done with XSLT v2.
+<ul>
+<li>Saxon XSLT
+(<a href="http://saxon.sourceforge.net/" class="external free"
+rel="nofollow"><a href="http://saxon.sourceforge.net/">http://saxon.sourceforge.net/</a></a>)</li>
+<li>ChadoXML is split into individual chunks before XSLT processing to
+accommodate large file sizes.</li>
+<li>Extremely fast. We can process all data for ~60,000 Drosophila genes
+in under 30 minutes.</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idhibernate_26_xort-classmw-headlinehibernate--xortspan"><span id="Hibernate_.26_XORT" class="mw-headline">Hibernate &amp; XORT</span></h5>
+<ul>
+<li>Hibernate didn&rsquo;t scale well when dealing with 5,000+ features in bulk.
+<ul>
+<li>The test was simply calling <code>print()</code> statements</li>
+</ul>
+</li>
+<li>Performance tweaks for Hibernate can be quite complicated to setup for
+bulk operations.</li>
+<li>XORT is currently handling ~6 million features in production with only
+minor performance problems.</li>
+<li>XORT is much more language independent.</li>
+</ul>
+<h5 id="span-idsupport_for_complex_transactions_using_xort-classmw-headlinesupport-for-complex-transactions-using-xortspan"><span id="Support_for_complex_transactions_using_XORT" class="mw-headline">Support for complex transactions using XORT</span></h5>
+<p>For example:</p>
+<ul>
+<li>Find all records linked to a record using dumpspec</li>
+<li>Merge gene x into y, each with thousands of records attached</li>
+</ul>
+<p>Step 1. Dump all data use simple dumpspec</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> &lt;chado&gt;
+  &lt;feature dump=“all”&gt;
+   &lt;uniquename test=“eq”&gt;x&lt;/uniquename&gt;
+  &lt;/feature&gt;
+ &lt;/chado&gt;
+</code></pre><p>Step 2 Delete feature x from DB, with triggers to clean orphan records,
+if necessary</p>
+<p>Step 3. Edit the output xml, change uniquename x to y, then load the
+edited file back to DB</p>
+<h5 id="span-idchia_28chado_interface_application29-classmw-headlinechia-chado-interface-applicationspan"><span id="CHIA_.28Chado_Interface_Application.29" class="mw-headline">CHIA (Chado Interface Application)</span></h5>
+<p>A Java application that organizes SQL and XORT functionality for
+internal users, e.g.:</p>
+<ul>
+<li>Dump chado-XML for gene regions for Apollo curation</li>
+<li>Organize and execute “canned” SQL queries</li>
+<li>Serve IDs for curators (in development)</li>
+<li>Dynamic browser Chado without writing SQL statement</li>
+</ul>
+<p>CHIA is being designed to be extensible for adding new functionality as
+needed.</p>
+<h5 id="span-iddocumentation-classmw-headlinedocumentationspan"><span id="Documentation" class="mw-headline">Documentation</span></h5>
+<ul>
+<li><em>Using Chado to Store Genome Annotation Data&quot;</em>
+<ul>
+<li>Current Protocols in Bioinformatics (Baxevanis, A.D., and Davison,
+D.B., eds) 2, 9.6.1-9.6.28.</li>
+</ul>
+</li>
+<li>XORT specification docs</li>
+<li>XORT draft (unpublished)</li>
+<li>GMOD case demo procedure
+<ul>
+<li>All in the doc directory of XORT package,
+<a href="http://www.gmod.org" class="external free"
+rel="nofollow"><a href="http://www.gmod.org">http://www.gmod.org</a></a></li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idacknowledgements-classmw-headlineacknowledgementsspan"><span id="Acknowledgements" class="mw-headline">Acknowledgements</span></h5>
+<ul>
+<li>Willian Gelbart</li>
+<li>Chris Mungall</li>
+<li>David Emmert</li>
+<li>Mark Gibson</li>
+<li>Stan Letovsky</li>
+<li>Nomi Harris</li>
+<li>Frank Smutniak</li>
+<li>Suzanna Lewis</li>
+<li>Peili Zhang</li>
+<li>Stan Letovsky</li>
+<li>Haiyan Zhang</li>
+<li>Aubrey de Grey</li>
+<li>Andy Schroeder</li>
+<li>Don Gilbert</li>
+<li>Susan Russo</li>
+<li>Mark Zythovicz</li>
+<li>Scott Cain</li>
+<li>Lincoln Stein</li>
+<li>Victor Strelets</li>
+<li>Robert Wilson</li>
+<li>Paul Leyland</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a></li>
+<li><a href="Category%253AXORT" title="Category%253AXORT">XORT</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/XORT_Presentation" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:54 on 9 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">16,595 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

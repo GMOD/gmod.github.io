@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PubFetch - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautopubfetchspan"><span dir="auto">PubFetch</span></h1>
+<blockquote>
+<p>The item described in this page is not (or is no longer) supported by
+the GMOD project.<br>
+This page is included only for reference purposes.</p>
+</blockquote>
+<p>PubFetch is part of the
+<a href="http://tesuque.stanford.edu/pubsearch.org/index.html"
+class="external text" rel="nofollow">PubSearch</a> web-based literature
+curation toolset and functions as the interface between the literature
+curation tools and the online literature databases, such as PubMed. The
+aim of PubFetch is to provide a generic way of searching and retrieving
+literature data from online literature datasources so that the
+downstream applications dont have to deal with the idiosyncrasies of the
+individual literature databases.</p>
+<p>Initially PubFetch will act as the interface between PubSearch and the
+<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed"
+class="external text" rel="nofollow">PubMed</a>] and
+<a href="http://www.nal.usda.gov/ag98/" class="external text"
+rel="nofollow">Agricola</a> databases used by
+<a href="http://rgd.mcw.edu/" class="external text"
+rel="nofollow">RGD</a> and
+<a href="http://www.arabidopsis.org/" class="external text"
+rel="nofollow">TAIR</a>. A standard API and data format will be created
+to provide database queries and return results, popular existing formats
+and protocols will be used/supported wherever possible.</p>
+<h2 id="span-iddocumentation-classmw-headlinedocumentationspan"><span id="Documentation" class="mw-headline">Documentation</span></h2>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Pubfetch_overview.jpg" width="496"
+height="370" alt="Pubfetch overview.jpg" /></p>
+<p><strong>Figure 1 - Overview diagram of PubFetch showing how the PubFetch
+module will provide a generic literature access interface to PubMed and
+Agricola which could be expanded to other literature sources as
+desired.</strong></p>
+<p>The codebase will be developed initially in perl by adapting existing
+RGD perl modules designed to retrieve data from PubMed in a standard XML
+format. This code will be reviewed and adapted to create the main
+PubFetch module and appropriate database interface modules. Figure 2
+below is a schematic diagram of the existing RGD literature download
+modules.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/Existing_PubMed_flow.jpg" width="400"
+height="197" alt="Existing PubMed flow.jpg" /></p>
+<p><strong>Figure 2- Current RGD literature download process showing perl modules
+used to interact with PubMed, create XML data and load into RGD.</strong></p>
+<p>The fundamental actions required of PubFetch are:</p>
+<ul>
+<li>Search LitDb for articles matching certain query criteria (eg.
+keywords, date, author, etc).
+<ul>
+<li>This will most likely entail passing the search criteria to
+PubFetch and retrieving a set of accession numbers (eg. PubMed IDs,
+PMIDs) for matching references.</li>
+</ul>
+</li>
+<li>Retrieve the text information from the LitDb corresponding to a
+supplied accession number (e.g. <em>bring me the PubMed entry for
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/12345?dopt=Abstract"
+class="external mw-magiclink-pmid" rel="nofollow">PMID 12345</a></em>)</li>
+</ul>
+<h3 id="span-idpubfetch_as_a_biomoby_webservice-classmw-headlinepubfetch-as-a-biomoby-webservicespan"><span id="PubFetch_as_a_BioMOBY_webservice" class="mw-headline">PubFetch as a BioMOBY webservice</span></h3>
+<p>To provide generic access to PubFetch we intend to make the core
+functionality available as a webservice, following the
+<a href="http://www.biomoby.org/" class="external text"
+rel="nofollow">BioMOBY</a> service model. The two actions described
+above will be implemented as two classes of Web services, the first
+taking keywords and returning PubMed IDs (or other LitDb accession) ,
+the second taking LitDb accessions and returning the text information in
+a simple, standardized XML format. We will endeavour to provide the data
+in existing formats (raw data from the LitDb, a BioPerl-compatible
+format, etc) in addition to a simple XML format that is not dependent on
+other codebases</p>
+<h2 id="span-iddownloads-classmw-headlinedownloadsspan"><span id="Downloads" class="mw-headline">Downloads</span></h2>
+<p>The source code can be downloaded from <a
+href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=126656"
+class="external text" rel="nofollow">SourceForge</a>.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AUnsupported" title="Category%253AUnsupported">Unsupported</a></li>
+<li><a href="Category%253ARGD" title="Category%253ARGD">RGD</a></li>
+<li><a href="Category%253ATAIR" title="Category%253ATAIR">TAIR</a></li>
+<li><a href="Category%253APubSearch" title="Category%253APubSearch">PubSearch</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/PubFetch" rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:31 on 15 October
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">24,824 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

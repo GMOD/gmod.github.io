@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artemis-Chado Integration Tutorial - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoartemis-chado-integration-tutorialspan"><span dir="auto">Artemis-Chado Integration Tutorial</span></h1>
+<p>(Redirected from <a href="Artemis_Tutorial">Artemis
+Tutorial</a></p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Artemis_logo.gif" width="250" height="159"
+alt="Artemis" /></p>
+<p>This <a href="Artemis" title="Artemis">Artemis-Chado Integration</a> tutorial was
+presented by <a href="User%253ARobinHouston" title="User%253ARobinHouston">Robin Houston</a>,
+<a href="User%253ATimCarver" title="User%253ATimCarver">Tim Carver</a> and <a href="User%253ABuggy" title="User%253ABuggy">Giles
+Velarde</a> at the 2009 GMOD Summer School -
+Europe, August 2009. The most recent Artemis tutorial can be found at
+the <a href="Artemis_Tutorial" class="mw-redirect"
+title="Artemis Tutorial">Artemis Tutorial</a> page.</p>
+<p>This <a href="Category%253ATutorials" title="Category%253ATutorials">tutorial</a> walks you
+through how to use the Artemis annotation editor with a
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.</p>
+<h2 id="span-idvmware-classmw-headlinevmwarespan"><span id="VMware" class="mw-headline">VMware</span></h2>
+<p>.</p>
+<p>To run ACT use the <code>act</code> script:</p>
+<pre><code>./act -Dchado=&quot;localhost:5432/chado_pathogen?gmod&quot; -Dibatis
+</code></pre>
+<p>From the &lsquo;File&rsquo; menu select the option &lsquo;Open Database and SSH File
+Manager&rsquo; and login. Drag and drop the <em>Plasmodium</em> entries from the
+Database Manager into the ACT selection window. Also, drag and drop the
+comparison files into this window, so it looks something like this (note
+the featureId numbers may well be different as these are the Chado
+feature_id):</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a3/ActSelection2seqs.gif" width="528"
+height="187" alt="ActSelection2seqs.gif" /></p>
+<p>Click on Apply to read these entries and open up ACT. You can use the
+right hand scroll bar to zoom in and out. If you zoom out you can
+identify the regions that match between these sequences.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Pf10_Pk6.gif" width="900" height="700"
+alt="Pf10 Pk6.gif" /></p>
+<p>ACT can display multiple pairwise comparison. So the two <code>P.knowlesi</code>
+sequences can be compared to the <code>P.falciparum sequence</code>. From the ACT
+launch window go to the File menu and select &lsquo;Open Database and SSH File
+Manager&rsquo;. Drag in the sequences and comparison files (clicking on &lsquo;more
+files&rsquo; to add the additional sequence and comparison).</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ActSelection.gif" width="528" height="245"
+alt="ActSelection.gif" /></p>
+<p>Zooming out you will see that <em>Pfalciparum</em> chromosome 10 matches to
+regions in <em>Pknowlesi</em> chromosome 7 and 9.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/Pk6_Pf10_Pk8.gif" width="900" height="700"
+alt="Pk6 Pf10 Pk8.gif" /></p>
+<h2 id="span-idwriting_out_sequence_files-classmw-headlinewriting-out-sequence-filesspan"><span id="Writing_Out_Sequence_Files" class="mw-headline">Writing Out Sequence Files</span></h2>
+<p>Artemis can write out EMBL and <a href="GFF" title="GFF">GFF</a> files for an entry
+opened from the database. You can optionally flatten the gene model
+(i.e. gene, transcript, exon) to just a CDS feature. Also an option is
+given to ignore any obsolete features. For EMBL it uses mappings for
+conversion of the keys and qualifiers. These mappings are stored in the
+<code>etc/key_mapping</code> and <code>etc/qualifier_mapping</code> files.</p>
+<p>A utility script (<code>etc/write_db_entry</code>) is also provided as a means of
+writing out multiple sequences from the database. The script takes the
+following options:</p>
+<pre><code>-h      show help
+-f      [y|n] flatten the gene model, default is y
+-i      [y|n] ignore obsolete features, default is y
+-s      space separated list of sequences to read and write out
+-o      [EMBL|GFF] output format, default is EMBL
+-a      [y|n] for EMBL submission format change to n, default is y
+</code></pre>
+<p>Try running:</p>
+<pre><code>etc/writedb_entry -Dchado=&quot;localhost:5432/chado_pathogen?gmod&quot; NC_004314
+</code></pre>
+<h2 id="span-idmailing_list-classmw-headlinemailing-listspan"><span id="Mailing_List" class="mw-headline">Mailing List</span></h2>
+<p>There is an Artemis mailing list:
+<a href="http://lists.sanger.ac.uk/mailman/listinfo/artemis-users"
+class="external text" rel="nofollow">artemis-user</a>.</p>
+<h2 id="span-idreferences-classmw-headlinereferencesspan"><span id="References" class="mw-headline">References</span></h2>
+<ul>
+<li><a href="http://www.sanger.ac.uk/Software/Artemis/"
+class="external text" rel="nofollow">Artemis home page</a></li>
+<li><a href="http://www.sanger.ac.uk/Software/ACT/" class="external text"
+rel="nofollow">ACT home page</a></li>
+<li><a href="http://www.sanger.ac.uk/Software/Artemis/v11/chado/"
+class="external text" rel="nofollow">Artemis Connecting to Chado
+Databases</a></li>
+<li><a
+href="http://www.sanger.ac.uk/Software/Artemis/v11/database/chado.practical.guide.pdf"
+class="external text" rel="nofollow">User Practical Guide</a></li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+<li><a href="Category%253AAnnotation" title="Category%253AAnnotation">Annotation</a></li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="Special%253ABrowse/Artemis-2DChado-20Integration-20Tutorial" title="Special%253ABrowse/Artemis-2DChado-20Integration-20Tutorial">Artemis-Chado Integration
+Tutorial</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="Artemis" title="Artemis">Artemis</a> <span class="smwsearch"><a href="Special%253ASearchByProperty/Has-20topic/Artemis" title="Special%253ASearchByProperty/Has-20topic/Artemis">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Artemis-2DChado_Integration_Tutorial"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:33 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">54,134 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse Gentoo HOWTO - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-gentoo-howtospan"><span dir="auto">GBrowse Gentoo HOWTO</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Prerequisites"><span class="tocnumber">1</span>
+<span class="toctext">Prerequisites</span></a></li>
+<li><a href="#Installing_GBrowse_using_net_installer"><span class="tocnumber">2</span> <span class="toctext">Installing
+GBrowse using net
+installer</span></a></li>
+<li><a href="#Installing_GBrowse_with_Source_File"><span class="tocnumber">3</span> <span class="toctext">Installing
+GBrowse with Source File</span></a></li>
+<li><a href="#Starting_GBrowse"><span class="tocnumber">4</span> <span class="toctext">Starting
+GBrowse</span></a></li>
+<li><a href="#AUTHORS"><span class="tocnumber">5</span>
+<span class="toctext">AUTHORS</span></a></li>
+</ul>
+<h1 id="span-idprerequisites-classmw-headlineprerequisitesspan"><span id="Prerequisites" class="mw-headline">Prerequisites</span></h1>
+<p>Install Apache</p>
+<p>Apache2 will now work on most systems with no problems, if it doesn&rsquo;t
+for you, section Common Problems might be helpful.</p>
+<p>Start by emerging apache2: add &ldquo;apache2&rdquo; to your USE flags in make.conf
+and</p>
+<pre><code> emerge apache -av
+</code></pre>
+<p>To start Apache2 run:</p>
+<pre><code>/etc/init.d/apache2 start
+</code></pre>
+<p>If you&rsquo;d like to have have Apache2 start on boot run:</p>
+<pre><code>rc-update add apache2 default
+</code></pre>
+<p>Install Mysql (Optional, But highly recommended)</p>
+<pre><code> emerge mysql -av
+</code></pre>
+<p>Or if you do not want mysql to be updated automatically with the system,</p>
+<pre><code> emerge mysql -1
+</code></pre>
+<p>This will install mysql once without adding its ebuild into world
+namespace. So next time when you emerge -u world, mysql will be excluded
+from updating.</p>
+<p>Create the initial mysql database</p>
+<pre><code> emerge --config mysql
+</code></pre>
+<p>This will also inform you to set the root password of mysql database. If
+you have more than one version of mysql installed on your machine,
+please name it specifically like =dev-db/mysql-4.1.21</p>
+<p>Install Bioperl</p>
+<p>The advantage of this approach is it&rsquo;s stepwise, so it&rsquo;s easy to stop
+and analyze in case of any problem.</p>
+<p>Download, then unpack the
+<a href="http://bioperl.org/DIST/" class="external text"
+rel="nofollow">appropriate package</a>. For example:</p>
+<pre><code>&gt;gunzip bioperl-1.5.2_102.tar.gz
+&gt;tar xvf bioperl-1.5.2_102.tar
+&gt;cd bioperl-1.5.2_102
+</code></pre>
+<p>Now issue the build commands:</p>
+<pre><code>&gt;perl Build.PL
+&gt;./Build test
+</code></pre>
+<p>If you&rsquo;ve installed everything perfectly and all the network connections
+are working then you may pass all the tests run in the &lsquo;./Build test&rsquo;
+phase. It&rsquo;s also possible that you may fail some tests. Possible
+explanations: problems with local Perl installation, network problems,
+previously undetected bug in Bioperl, flawed test script, problems with
+CGI script using for sequence retrieval at public database, and so on.
+Remember that there are over 800 modules in Bioperl and the test suite
+is running more than 12000 individual tests, a few failed tests may not
+affect your usage of Bioperl.</p>
+<p>If you decide that the failed tests will not affect how you intend to
+use Bioperl and you&rsquo;d like to install anyway, or if all tests were fine,
+do:</p>
+<pre><code>&gt;./Build install
+</code></pre>
+<p>This is what most experienced Bioperl users would do. However, if you&rsquo;re
+concerned about a failed test and need assistance or advice then contact
+<strong><a href="mailto:bioperl-l@bioperl.org">bioperl-l@bioperl.org</a></strong>.</p>
+<p>To <code>'./Build install'</code> you need write permission in the
+<code>perl5/site_perl/source</code> area (or similar, depending on your
+environment). Usually this will require you becoming
+<a href="http://en.wikipedia.org/wiki/Superuser" class="extiw"
+title="wp:Superuser">root</a>, so you will want to talk to your systems
+manager if you don&rsquo;t have the necessary privileges.</p>
+<p>Cite from
+<a href="http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix"
+class="external free"
+rel="nofollow"><a href="http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix">http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix</a></a>.</p>
+<h1 id="span-idinstalling_gbrowse_using_net_installer-classmw-headlineinstalling-gbrowse-using-net-installerspan"><span id="Installing_GBrowse_using_net_installer" class="mw-headline">Installing GBrowse using net installer</span></h1>
+<p>Now we have a very convenient way to have Gbrowse and all its
+prerequisites, like latest leased version of bioperl, GD, which were
+absent from your computer installed.</p>
+<p>Download the network installer script: <a
+href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl"
+class="external text"
+rel="nofollow"><code>gbrowse_netinstall.pl</code></a></p>
+<p>I edit gbrowse_netinstall.pl file, change the the gbrowse download
+mirror to <a href="http://jaist.dl.sourceforge.net/sourceforge/gmod/"
+class="external free"
+rel="nofollow"><a href="http://jaist.dl.sourceforge.net/sourceforge/gmod/">http://jaist.dl.sourceforge.net/sourceforge/gmod/</a></a>,
+because the mirror is faster than others, download from China.</p>
+<pre><code> use constant SOURCEFORGE_MIRROR1  =&gt; 'http://jaist.dl.sourceforge.net/sourceforge/gmod/';
+</code></pre>
+<p>Make sure you have root privilege and run</p>
+<pre><code> perl gbrowse_netinstall.pl
+</code></pre>
+<p>Then follow the instruction to complete installation. The default
+settings are suitable from most circumstances.</p>
+<p>The only thing need to be noticed is that the installer uses wrong
+directories as apache default directories. When the question appears,
+you should change them to</p>
+<pre><code> Apache conf directory? [/usr/local/apache/conf] /etc/apache2/
+ Apache htdocs directory? [/usr/local/apache/htdocs] /var/www/localhost/htdocs/
+ Apache cgibin directory? [/usr/local/apache/cgi-bin] /var/www/localhost/cgi-bin/
+</code></pre>
+<p>You may go to the main page of Gbrowse to see more detailed instructions
+about netinstaller.</p>
+<h1 id="span-idinstalling_gbrowse_with_source_file-classmw-headlineinstalling-gbrowse-with-source-filespan"><span id="Installing_GBrowse_with_Source_File" class="mw-headline">Installing GBrowse with Source File</span></h1>
+<p>Download GBrowse Source from</p>
+<!-- -->
+<pre><code> http://prdownloads.sourceforge.net/gmod
+</code></pre>
+<p>You should be uncompressed and unpacked the source files.</p>
+<p>Install GBrowse</p>
+<p>Change to the directory which the source files have been uncompressed
+and unpacked. We will install GBrowse in the default directory
+&ldquo;/var/www/localhost/htdocs/&rdquo; and &ldquo;/var/www/localhost/cgi-bin/&rdquo;.
+Following these command:</p>
+<pre><code> perl Makefile.PL APACHE=/var/www/localhost/ CONF=/etc/apache2/ HTDOCS=/var/www/localhost/htdocs/ CGIBIN=/var/www/localhost/cgi-bin/ DO_XS=1
+ make
+ make install
+</code></pre>
+<h1 id="span-idstarting_gbrowse-classmw-headlinestarting-gbrowsespan"><span id="Starting_GBrowse" class="mw-headline">Starting GBrowse</span></h1>
+<p>Start mysql and apache</p>
+<pre><code> /etc/init.d/mysql start
+ /etc/init.d/apache2 start
+</code></pre>
+<p>Now browse the documentation and example database at
+<a href="http://localhost/gbrowse" class="external free"
+rel="nofollow">http://localhost/gbrowse</a>.</p>
+<h1 id="span-idauthors-classmw-headlineauthorsspan"><span id="AUTHORS" class="mw-headline">AUTHORS</span></h1>
+<p>Tao Zhang &lt;forrest_<a href="mailto:zhang@163.com">zhang@163.com</a>&gt;.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="Category%253ALinux" title="Category%253ALinux">Linux</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Gentoo_HOWTO" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 21:00 on 23 September
+2009.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">62,187 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Balloons - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautopopup-balloonsspan"><span dir="auto">Popup Balloons</span></h1>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/79/Sample_ballon.png" width="292"
+height="105" alt="Sample ballon.png" /></p>
+<p><strong>balloon.js</strong> is a javascript class for balloon tooltips, otherwise
+known as popup balloons, bubble tooltips, rollover tooltips, etc. It is
+maintained by <span class="pops"><a href="User%253AMckays" title="User%253AMckays">Sheldon
+McKay</a></span>, a scientist at the
+<span class="pops"><a href="http://dnalc.org" class="external text" rel="nofollow">DNA
+Learning center</a></span>,
+<span class="pops"><a href="http://www.cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a>.</span></p>
+<p>balloon.js is generic and should work in most web sites.</p>
+<ul>
+<li>This software is open-source and free to all, so please feel free to
+incorporate it into your own web site but it would be <strong><em>very
+naughty</em></strong> of you to remove the copyright notice from the top of the
+balloon.js file.</li>
+</ul>
+<!-- -->
+<ul>
+<li>If you find this software useful, please drop me a line
+(<a href="mailto:Sheldon.McKay@gmail.com" class="external text"
+rel="nofollow"><a href="mailto:Sheldon.McKay@gmail.com">Sheldon.McKay@gmail.com</a></a>). I am curious to see how
+it works for you and how you are using it.</li>
+<li><strong>Note:</strong> If you have installed this package on your web server as
+described below and it does not work, you have likely made an error.
+Please see the <a href="#Troubleshooting_for_the_impatient">troubleshooting
+guidelines</a> and send me the URL
+(web site address for your implementation) and I will do my best to
+help you.</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Example_Implementations"><span class="tocnumber">1</span> <span class="toctext">Example
+Implementations</span></a></li>
+<li><a href="#Availability"><span class="tocnumber">2</span>
+<span class="toctext">Availability</span></a></li>
+<li><a href="#Installation"><span class="tocnumber">3</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#Required_components"><span class="tocnumber">3.1</span> <span class="toctext">Required
+components</span></a></li>
+<li><a href="#Put_the_required_files_on_your_web_server"><span class="tocnumber">3.2</span> <span class="toctext">Put the
+required files on your web
+server</span></a></li>
+<li><a href="#Specify_the_location_of_the_javascript_libraries"><span class="tocnumber">3.3</span> <span class="toctext">Specify
+the location of the javascript
+libraries</span></a></li>
+<li><a href="#Initialize_balloon_object.28s.29"><span class="tocnumber">3.4</span> <span class="toctext">Initialize
+balloon object(s)</span></a></li>
+<li><a href="#Notes_on_balloon_images"><span class="tocnumber">3.5</span> <span class="toctext">Notes on
+balloon images</span></a>
+<ul>
+<li><a href="#How_it_works"><span class="tocnumber">3.5.1</span> <span class="toctext">How it
+works</span></a></li>
+<li><a href="#Note_on_simpler_popups"><span class="tocnumber">3.5.2</span> <span class="toctext">Note
+on simpler popups</span></a></li>
+<li><a href="#Where_to_get_the_balloon_images"><span class="tocnumber">3.5.3</span> <span class="toctext">Where
+to get the balloon
+images</span></a>
+<ul>
+<li><a href="#Default_images"><span class="tocnumber">3.5.3.1</span>
+<span class="toctext">Default images</span></a></li>
+<li><a href="#Design_your_own_images"><span class="tocnumber">3.5.3.2</span>
+<span class="toctext">Design your own
+images</span></a></li>
+</ul>
+</li>
+<li><a href="#How_they_are_used"><span class="tocnumber">3.5.4</span> <span class="toctext">How
+they are used</span></a></li>
+<li><a href="#Note:_Internet_Explorer"><span class="tocnumber">3.5.5</span> <span class="toctext">Note:
+Internet Explorer</span></a></li>
+<li><a href="#Balloon_image_locations"><span class="tocnumber">3.5.6</span>
+<span class="toctext">Balloon image
+locations</span></a></li>
+<li><a href="#Balloon_image_properties"><span class="tocnumber">3.5.7</span>
+<span class="toctext">Balloon image
+properties</span></a></li>
+<li><a href="#Online_balloon_image_generator"><span class="tocnumber">3.5.8</span> <span class="toctext">Online
+balloon image generator</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Configuration"><span class="tocnumber">4</span>
+<span class="toctext">Configuration</span></a>
+<ul>
+<li><a href="#Using_a_formatted_box_with_no_balloon_images"><span class="tocnumber">4.1</span> <span class="toctext">Using a
+formatted box with no balloon
+images</span></a></li>
+<li><a href="#Configuration_Sets"><span class="tocnumber">4.2</span>
+<span class="toctext">Configuration
+Sets</span></a>
+<ul>
+<li><a href="#Configuration_Sets_included_in_the_balloon.js_package"><span class="tocnumber">4.2.1</span>
+<span class="toctext">Configuration Sets included in the
+balloon.js
+package</span></a>
+<ul>
+<li><a href="#GBubble_and_GFade"><span class="tocnumber">4.2.1.1</span>
+<span class="toctext">GBubble and
+GFade</span></a></li>
+<li><a href="#GPlain"><span class="tocnumber">4.2.1.2</span>
+<span class="toctext">GPlain</span></a></li>
+<li><a href="#GBox"><span class="tocnumber">4.2.1.3</span>
+<span class="toctext">GBox</span></a></li>
+</ul>
+</li>
+<li><a href="#Configuring_Default_Tooltip_Styles"><span class="tocnumber">4.2.2</span>
+<span class="toctext">Configuring Default Tooltip
+Styles</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#The_JavaScript_User_Interface"><span class="tocnumber">5</span> <span class="toctext">The JavaScript
+User Interface</span></a>
+<ul>
+<li><a href="#Basic_Usage"><span class="tocnumber">5.1</span> <span class="toctext">Basic
+Usage</span></a>
+<ul>
+<li><a href="#How_do_I_put_an_image_in_the_balloon.3F"><span class="tocnumber">5.1.1</span> <span class="toctext">How do
+I put an image in the
+balloon?</span></a>
+<ul>
+<li><a href="#Examples"><span class="tocnumber">5.1.1.1</span>
+<span class="toctext">Examples</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Sticky_balloon_behavior"><span class="tocnumber">5.2</span> <span class="toctext">Sticky
+balloon behavior</span></a></li>
+<li><a href="#Formatting_balloon_contents"><span class="tocnumber">5.3</span> <span class="toctext">Formatting
+balloon contents</span></a>
+<ul>
+<li><a href="#Escape_characters_and_multi-line_strings"><span class="tocnumber">5.3.1</span> <span class="toctext">Escape
+characters and multi-line
+strings</span></a></li>
+<li><a href="#Storing_balloon_contents_in_invisible_page_elements"><span class="tocnumber">5.3.2</span>
+<span class="toctext">Storing balloon contents in invisible page
+elements</span></a></li>
+</ul>
+</li>
+<li><a href="#Using_AJAX_to_get_balloon_contents"><span class="tocnumber">5.4</span> <span class="toctext">Using AJAX
+to get balloon contents</span></a>
+<ul>
+<li><a href="#The_AJAX_handling_script_and_its_behavior_are_the_responsibility_of_the_implementer."><span class="tocnumber">5.4.1</span> <span class="toctext">The
+AJAX handling script and its behavior are the responsibility of
+the
+implementer.</span></a></li>
+</ul>
+</li>
+<li><a href="#An_alternative_AJAX_implementation"><span class="tocnumber">5.5</span> <span class="toctext">An
+alternative AJAX
+implementation</span></a></li>
+<li><a href="#Inserting_images_and_other_remote_content_without_AJAX"><span class="tocnumber">5.6</span> <span class="toctext">Inserting
+images and other remote content without
+AJAX</span></a></li>
+</ul>
+</li>
+<li><a href="#CHANGES"><span class="tocnumber">6</span>
+<span class="toctext">CHANGES</span></a>
+<ul>
+<li><a href="#version_1.11"><span class="tocnumber">6.1</span> <span class="toctext">version
+1.11</span></a></li>
+<li><a href="#version_1.19"><span class="tocnumber">6.2</span> <span class="toctext">version
+1.19</span></a></li>
+<li><a href="#version_1.20"><span class="tocnumber">6.3</span> <span class="toctext">version
+1.20</span></a></li>
+<li><a href="#version_1.22"><span class="tocnumber">6.4</span> <span class="toctext">version
+1.22</span></a></li>
+<li><a href="#version_1.27"><span class="tocnumber">6.5</span> <span class="toctext">version
+1.27</span></a></li>
+<li><a href="#version_1.33"><span class="tocnumber">6.6</span> <span class="toctext">version
+1.33</span></a></li>
+<li><a href="#version_1.37"><span class="tocnumber">6.7</span> <span class="toctext">version
+1.37</span></a></li>
+<li><a href="#version_1.41"><span class="tocnumber">6.8</span> <span class="toctext">version
+1.41</span></a></li>
+<li><a href="#version_1.43"><span class="tocnumber">6.9</span> <span class="toctext">version
+1.43</span></a></li>
+<li><a href="#version_1.46"><span class="tocnumber">6.10</span> <span class="toctext">version
+1.46</span></a></li>
+<li><a href="#version_2.0"><span class="tocnumber">6.11</span> <span class="toctext">version
+2.0</span></a></li>
+<li><a href="#version_2.1"><span class="tocnumber">6.12</span> <span class="toctext">version
+2.1</span></a></li>
+<li><a href="#version_2.2"><span class="tocnumber">6.13</span> <span class="toctext">version
+2.2</span></a></li>
+</ul>
+</li>
+<li><a href="#New_Features"><span class="tocnumber">7</span> <span class="toctext">New
+Features</span></a>
+<ul>
+<li><a href="#Cursor_Tracking"><span class="tocnumber">7.1</span> <span class="toctext">Cursor
+Tracking</span></a></li>
+<li><a href="#Overflow_and_Scrollbars"><span class="tocnumber">7.2</span> <span class="toctext">Overflow
+and Scrollbars</span></a></li>
+<li><a href="#Both_height_and_width_can_be_constrained"><span class="tocnumber">7.3</span> <span class="toctext">Both
+height and width can be
+constrained</span></a></li>
+<li><a href="#Tooltips_will_not_go_off-screen"><span class="tocnumber">7.4</span> <span class="toctext">Tooltips
+will not go off-screen</span></a></li>
+</ul>
+</li>
+<li><a href="#Troubleshooting_for_the_impatient"><span class="tocnumber">8</span>
+<span class="toctext">Troubleshooting for the
+impatient</span></a>
+<ul>
+<li><a href="#What_is_a_Document_Root.3F"><span class="tocnumber">8.1</span> <span class="toctext">What is a
+Document Root?</span></a></li>
+<li><a href="#This_package_is_NOT_a_desktop_application"><span class="tocnumber">8.2</span> <span class="toctext">This
+package is NOT a desktop
+application</span></a></li>
+<li><a href="#Reporting_errors"><span class="tocnumber">8.3</span> <span class="toctext">Reporting
+errors</span></a></li>
+</ul>
+</li>
+<li><a href="#Software_License"><span class="tocnumber">9</span> <span class="toctext">Software
+License</span></a></li>
+</ul>
+<h1 id="span-idexample_implementations-classmw-headlineexample-implementationsspan"><span id="Example_Implementations" class="mw-headline">Example Implementations</span></h1>
+<p><strong>Example 1:</strong> See the balloons in action:
+<a href="http://mckay.cshl.edu/balloons.html" class="external text"
+rel="nofollow">balloons2.html</a></p>
+<h1 id="span-idavailability-classmw-headlineavailabilityspan"><span id="Availability" class="mw-headline">Availability</span></h1>
+<ul>
+<li>You can download the package
+<a href="http://mckay.cshl.edu/downloads/balloons.tar.gz"
+class="external text" rel="nofollow">here</a></li>
+</ul>
+<!-- -->
+<ul>
+<li>You can also browse the complete package, at the <a
+href="https://gmod.svn.sourceforge.net/svnroot/gmod/balloon-tooltips/trunk/"
+class="external text" rel="nofollow">GMOD SVN site</a>.</li>
+</ul>
+<h1 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h1>
+<h2 id="span-idrequired_components-classmw-headlinerequired-componentsspan"><span id="Required_components" class="mw-headline">Required components</span></h2>
+<ul>
+<li><a
+href="https://gmod.svn.sourceforge.net/svnroot/gmod/balloon-tooltips/trunk/htdocs/js/balloon.js"
+class="external text" rel="nofollow">balloon.js</a> - balloon tooltip
+library by Sheldon McKay</li>
+<li><a href="https://mckays.cshl.edu/js/box.js" class="external text"
+rel="nofollow">box.js</a> - optional subclass to draw lighter-weight
+boxes rather than bubbles</li>
+<li><a href="https://mckays.cshl.edu/js/balloon.config.js"
+class="external text" rel="nofollow">balloon.config.js</a> -
+configuration file for the above</li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="http://prototypejs.org" class="external text"
+rel="nofollow">prototype.js</a> - Prototype is a JavaScript Framework
+that aims to ease development of dynamic web applications.</li>
+<li><a href="http://mckay.cshl.edu/images/balloons/balloons.tar.gz"
+class="external text" rel="nofollow">Balloon images</a> - Some balloon
+images. You can use these or make your own (see below for details).</li>
+</ul>
+<p>Download all of the above:
+<a href="http://mckay.cshl.edu/downloads/balloons.tar.gz"
+class="external text" rel="nofollow">tarball</a> or
+<a href="http:///mckay.cshl.edu/downloads/balloons.zip"
+class="external text" rel="nofollow">zip archive</a></p>
+<h2 id="span-idput_the_required_files_on_your_web_server-classmw-headlineput-the-required-files-on-your-web-serverspan"><span id="Put_the_required_files_on_your_web_server" class="mw-headline">Put the required files on your web server</span></h2>
+<ul>
+<li>Copy the above javascript libraries to your web server, for example in</li>
+</ul>
+<!-- -->
+<pre><code>document_root/js
+</code></pre>
+<p>NOTE: <a
+href="http://www.solucorp.qc.ca/linuxconf/help.files/apache/apache-5.html"
+class="external text" rel="nofollow">document root</a> is the root
+folder for your web server. It will vary by system architecture.
+Depending on your web server, this may be:</p>
+<pre><code>Linux:
+/var/www/html
+/var/www/htdocs
+/etc/apache2
+
+Windows (why would you use windows?):
+C:/Program Files/Apache Software Foundation/Apache2.2/htdocs
+
+Max OS X:
+/Library/WebServer/Documents
+
+etc...
+</code></pre>
+<ul>
+<li>Copy the above image files (or your own) to your web server, for
+example in</li>
+</ul>
+<!-- -->
+<pre><code>document_root/images/balloons
+</code></pre>
+<h2 id="span-idspecify_the_location_of_the_javascript_libraries-classmw-headlinespecify-the-location-of-the-javascript-librariesspan"><span id="Specify_the_location_of_the_javascript_libraries" class="mw-headline">Specify the location of the javascript libraries</span></h2>
+<ul>
+<li>Add the following directives to your page header.</li>
+<li>Note that the examples below assume that the javascript files are
+located in a folder &lsquo;js&rsquo; off of your document root.</li>
+</ul>
+<p>via HTML:</p>
+<pre><code> &lt;head&gt;
+ &lt;script type=&quot;text/javascript&quot; src=&quot;js/balloon.config.js&quot;&gt;&lt;/script&gt;
+ &lt;script type=&quot;text/javascript&quot; src=&quot;js/balloon.js&quot;&gt;&lt;/script&gt;
+ &lt;script type=&quot;text/javascript&quot; src=&quot;js/box.js&quot;&gt;&lt;/script&gt;
+ &lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype.js&quot;&gt;&lt;/script&gt;
+ &lt;/head&gt;
+</code></pre>
+<p>NOTE: you can also add this code to the &lt;body&gt; section instead of the
+page header.</p>
+<h2 id="span-idinitialize_balloon_object28s29-classmw-headlineinitialize-balloon-objectsspan"><span id="Initialize_balloon_object.28s.29" class="mw-headline">Initialize balloon object(s)</span></h2>
+<ul>
+<li>Insert a script like the example below either in the &lt;head&gt; section
+of the document or near the top of the &lt;body&gt; section, ensuring that
+it is <strong>after</strong> the external libraries above.</li>
+<li>Only one object is required but multiple objects are allowed.</li>
+<li>See the configuration section (below) for more details on
+configuration options.</li>
+<li>More examples can be seen in the example implementations above.</li>
+<li>NOTE: If you get an error message complaining that &lsquo;balloon&rsquo; is null
+or not an object, or that funtion/method &lsquo;Balloon&rsquo; is not found, check
+your path to the javascript files.</li>
+</ul>
+<!-- -->
+<pre><code> &lt;script type=&quot;text/javascript&quot;&gt;
+   // white balloon, with default configuration
+   var whiteBalloon    = new Balloon;
+
+   // Stemless blue balloon, with custom image
+   var blueBalloon  = new Balloon;
+   blueBalloon.balloonTextSize  = '90%';
+   blueBalloon.images           = '/images/balloons';
+   blueBalloon.balloonImage     = 'blue_balloon.png';
+   blueBalloon.vOffset          = 15;
+   blueBalloon.shadow           = 0;
+   blueBalloon.stem             = false; // no stems, just the body
+
+   // Plain box with no fancy balloon images
+   var plainBox         = new Box();
+   plainBox.bgColor     = 'ivory';
+   plainBox.borderStyle = '2px solid blue';
+
+ &lt;/script&gt;
+</code></pre>
+<h2 id="span-idnotes_on_balloon_images-classmw-headlinenotes-on-balloon-imagesspan"><span id="Notes_on_balloon_images" class="mw-headline">Notes on balloon images</span></h2>
+<h3 id="span-idhow_it_works-classmw-headlinehow-it-worksspan"><span id="How_it_works" class="mw-headline">How it works</span></h3>
+<ul>
+<li>The popup balloons object creates the illusion of a perfectly sized
+balloon using four copies of a background image for the balloon body
+and one background image for each stem orientation (see image below).</li>
+<li>Not counting the stem, the balloon has four parts, one for each
+corner. The size of the balloon is stretched to fit the content.</li>
+<li>Each of these four parts is a \ element that uses the same
+image, the <a
+href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/balloon-tooltips/htdocs/images/balloon.png"
+class="external text" rel="nofollow">balloon body</a> , as it&rsquo;s
+background image. The actual balloon body image is much larger that
+the visible portion, to allow the balloon to be resized to a maximum
+width of 1000px (but don&rsquo;t do that).</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/Howitworks.png" width="410" height="244"
+alt="Howitworks.png" /></p>
+<ul>
+<li>The top left (blue border) image is fixed, while the right side
+(green), bottom right corner (red) and bottom side (black) slide
+outward as required.</li>
+<li>The appropriate stem image (orange) is added after the balloon layout
+and orientation are calculated.</li>
+<li>Except for the main part of the balloon (blue), only a tiny sliver of
+the balloon image is visible for each of the corners.</li>
+</ul>
+<h3 id="span-idnote_on_simpler_popups-classmw-headlinenote-on-simpler-popupsspan"><span id="Note_on_simpler_popups" class="mw-headline">Note on simpler popups</span></h3>
+<ul>
+<li>If you want something less fancy, you can use a plain box with
+configurable border and background color (see below)</li>
+</ul>
+<h3 id="span-idwhere_to_get_the_balloon_images-classmw-headlinewhere-to-get-the-balloon-imagesspan"><span id="Where_to_get_the_balloon_images" class="mw-headline">Where to get the balloon images</span></h3>
+<h4 id="span-iddefault_images-classmw-headlinedefault-imagesspan"><span id="Default_images" class="mw-headline">Default images</span></h4>
+<ul>
+<li>Default balloon images are provided with the
+<a href="http://mckay.cshl.edu/downloads/balloons.tar.gz"
+class="external text" rel="nofollow">downloaded package</a>.</li>
+<li>These images were created and/or edited with
+<a href="http://http://www.gimp.org" class="external text"
+rel="nofollow">The GIMP</a></li>
+</ul>
+<h4 id="span-iddesign_your_own_images-classmw-headlinedesign-your-own-imagesspan"><span id="Design_your_own_images" class="mw-headline">Design your own images</span></h4>
+<ul>
+<li>See
+<a href="Popup_Balloons#Online_balloon_image_generator" title="Popup Balloons">below</a>
+for a script that will draw balloon images according to your
+specifications.</li>
+</ul>
+<h3 id="span-idhow_they_are_used-classmw-headlinehow-they-are-usedspan"><span id="How_they_are_used" class="mw-headline">How they are used</span></h3>
+<ul>
+<li>
+<p>A total of five images are required to draw balloons in all possible
+orientations: The balloon body and four stems (up, down, left and
+right).</p>
+</li>
+<li>
+<p>In addition, a close button for sticky balloons and an optional
+no-shadow version of the balloon (for internet explorer versions &lt; 7)
+are also included.</p>
+<p>The images below are provided with the package (not to scale):</p>
+</li>
+</ul>
+<p><strong>The stem:</strong> This part of the image is the top or bottom (depending on
+whether the balloon is facing up or down) that has the triangle. It is
+overlaid on top of the balloon background image. The connector is a
+fixed-size image.</p>
+<pre><code>For example, a bottom-left stem:
+</code></pre>
+<p><strong>The body:</strong> This image is used as the background for the balloon. The
+image is much larger and the actual balloon size (1020px *1020px). Each
+of the four corners of the balloon has its own identical background
+image. The top corner contains the contents of the balloon and the
+amount of the background image that is visible is adjusted with the
+balloon size. The other corners and right and bottom edges of the
+balloon are created by making only a small portion of their respective
+background images visible. Te size of the balloon is dynamic in both the
+vertical and horizontal dimensions. However, maximum and minimum widths
+for the balloon can be specified as follows:</p>
+<pre><code>balloon.minWidth = 150;
+balloon.maxWidth = 600;
+</code></pre>
+<p>and the balloon width can be constrained at run-time by adding a fourth
+argument to the showToolip method call:</p>
+<pre><code>onmouseover=balloon.showTooltip(event,'message...',null,300)
+</code></pre>
+<h3 id="span-idnote_internet_explorer-classmw-headlinenote-internet-explorerspan"><span id="Note:_Internet_Explorer" class="mw-headline">Note: Internet Explorer</span></h3>
+<p>The balloon body image is in PNG format with alpha channels. This file
+format is required for the semi-transparent shadow. Older versions of
+internet explorer do not support this feature (support was added to
+version 7). In the default configuration, an alternative image without a
+shadow if substituted is IE version &lt; 7 is detected.</p>
+<ul>
+<li>If you design custom balloon images that use alpha channels, consider
+creating an alternative body image for older IE browsers.</li>
+<li>The use of the alternate image is configured as follows:</li>
+</ul>
+<!-- -->
+<pre><code>balloon.ieImage = 'balloon_ie.png;
+</code></pre>
+<h3 id="span-idballoon_image_locations-classmw-headlineballoon-image-locationsspan"><span id="Balloon_image_locations" class="mw-headline">Balloon image locations</span></h3>
+<p>If you have saved the balloon images in a location other than the
+default relative URL &lsquo;/images/balloons&rsquo;, you need to tell the balloon
+object about it or your popups will not have the balloon image.<br>
+<strong>There are two ways to do this:</strong></p>
+<p>1) Set the variable balloon.images to the relative url for balloon
+images. If you use this method, specify the relative URL only once with
+the instance variable <strong><em>balloon.images</em></strong>. Individual image name should
+not have the path. For example:</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  my balloon = new Balloon;
+  balloon.images = '/myImages/myBalloons';
+  balloon.balloonImage  = 'balloon.png';
+  balloon.upLeftStem    = 'up_left.png';
+  balloon.downLeftStem  = 'down_left.png';
+  balloon.upRightStem   = 'up_right.png';
+  balloon.downRightStem = 'down_right.png';
+  balloon.closeButton   = 'close.png';
+&lt;/script&gt;
+</code></pre>
+<ol start="2">
+<li>
+<p>Use an explicit URL for each balloon image. Note <strong><em>balloon.images</em></strong>
+must be reset to &rsquo;null&rsquo; in this case.</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+  my balloon = new Balloon;
+  balloon.images = null;
+  balloon.balloonImage  = '/myImages/myBalloons/balloon.png';
+  balloon.upLeftStem    = '/myImages/myBalloons/up_left.png';
+  balloon.downLeftStem  = '/myImages/myBalloons/down_left.png';
+  balloon.upRightStem   = '/myImages/myBalloons/up_right.png';
+  balloon.downRightStem = '/myImages/myBalloons/down_right.png';
+  balloon.closeButton   = '/myImages/myBalloons/close.png';
+&lt;/script&gt;
+</code></pre>
+</li>
+</ol>
+<p><strong>NOTE: the two methods above are mutually exclusive.</strong></p>
+<h3 id="span-idballoon_image_properties-classmw-headlineballoon-image-propertiesspan"><span id="Balloon_image_properties" class="mw-headline">Balloon image properties</span></h3>
+<ul>
+<li>If you wish to create your own balloon images, the image below
+demonstrates some key balloon image properties. The stem height, the
+stem overlap and the padding and shadow widths must be accurate to a
+precision of 1px or the balloon will not render properly.</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/Options.png" width="960" height="361"
+alt="Options.png" /></p>
+<p><strong>Note:</strong> The padding is not only the distance of the text from the
+balloon outline, it also defines the width of the right and bottom
+corners of the dynamically rendered balloon image. Setting the padding
+to a value less than the radius of the corners (10px is the default)
+will obscure the balloon corners.</p>
+<p>For example, setting the padding to 2px with the default balloon images
+will cause the effect below because the image corner radius is 10px:</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/Padding_defect.png" width="658"
+height="115" alt="Padding defect.png" /></p>
+<h3 id="span-idonline_balloon_image_generator-classmw-headlineonline-balloon-image-generatorspan"><span id="Online_balloon_image_generator" class="mw-headline">Online balloon image generator</span></h3>
+<ul>
+<li>A CGI script is available for interactive drawing of balloon images
+and accompanying javascript code.</li>
+<li>The script is hosted at
+<span class="pops"><a href="http://mckay.cshl.edu/balloon" class="external free"
+rel="nofollow"><a href="http://mckay.cshl.edu/balloon">http://mckay.cshl.edu/balloon</a></a></span> and can also
+be obtained as part of the
+<a href="http://gmod.cvs.sourceforge.net/gmod/balloon-tooltips/"
+class="external text" rel="nofollow">balloon.js package</a></li>
+</ul>
+<p>Below is an example of the input form that can be used to experiment
+with different balloon options.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f1/Balloon_generator.png" width="891"
+height="295"
+alt="The actual script is at http://mckay.cshl.edu/balloon" /></p>
+<p>Sample output. The program will draw either a sample of what the final
+product will look like or all of the necessary image components.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+</table>
+<p>| <img 
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Balloon_sample.png" width="411"    
+height="402"                            
+alt="The actual script is at http://mckay.cshl.edu/balloon" /> |</p>
+<p>The CGI script will also generate the necessary javascript code to use
+the custom balloon images on a web page:</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/03/Balloon_script.png" width="1040"
+height="422"
+alt="The actual script is at http://mckay.cshl.edu/balloon" /></p>
+<h1 id="span-idconfiguration-classmw-headlineconfigurationspan"><span id="Configuration" class="mw-headline">Configuration</span></h1>
+<p>This section describes javascript configuration. To configure balloon
+tooltips in GBrowse, see <a href="GBrowse_Configuration/Balloons" title="GBrowse Configuration/Balloons">Configuring Balloon
+Tooltips</a>.</p>
+<ul>
+<li>The balloon.js library offers default configuration settings that
+should work &ldquo;out of the box&rdquo;, as long as the components are installed
+in the specified locations relative to your document root.</li>
+<li>Configuration is contained in the file <a
+href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/balloon-tooltips/htdocs/js/balloon.config.js"
+class="external text" rel="nofollow">balloon.config.js</a>. This is
+the file to edit if you wish to change the default balloon behavior
+and appearance.
+<ul>
+<li>Note: if you do not install your balloon images in the default
+location &lsquo;images/balloons&rsquo;, the you will need to <a href="Popup_Balloons#Balloon_image_locations" title="Popup Balloons">make some
+adjustments</a>.</li>
+</ul>
+</li>
+<li>Any of the default settings shown below can be overridden via a script
+in the body section of your HTML.</li>
+</ul>
+<p>For example:</p>
+<pre><code>&lt;body&gt;
+ &lt;script &quot;type=text/javascript&quot;&gt;
+   // This creates the balloon object
+   var balloon = new Balloon;
+   balloon.fontSize  = '11pt';
+   balloon.fontColor = 'blue';
+   balloon.delayTime = 500;
+ &lt;/script&gt;
+</code></pre>
+<p>The following options can be reset/configured in the page header or body
+(after the balloon object has been initialized) using the syntax below,
+where &lsquo;balloon&rsquo; is the object created by the &rsquo;new Balloon&rsquo; command.</p>
+<p>NOTE: The default values are shown. Edit the file balloon.config.js to
+change the values below.</p>
+<ul>
+<li>parentID &ndash; Needed for some skins in the mediawiki implementation</li>
+</ul>
+<!-- -->
+<pre><code> // ID of element to which balloon should be added
+ // default = none (document.body is used)
+ // This option may be required for mediawiki or other
+ // implementations with complex stylesheets
+ balloon.parentID = null;
+</code></pre>
+<ul>
+<li>maxWidth and minWidth &ndash; allowed range of balloon widths (px)</li>
+</ul>
+<!-- -->
+<pre><code> balloon.minWidth = 150;
+ balloon.maxWidth = 600;
+</code></pre>
+<ul>
+<li>delayTime &ndash; how long before mouseover trigger a balloon (Don&rsquo;t set
+this too low, trust me on this one)</li>
+</ul>
+<!-- -->
+<pre><code> // Delay before balloon is displayed (msec)
+ balloon.delayTime = 500;
+</code></pre>
+<ul>
+<li>Fading parameters</li>
+</ul>
+<!-- -->
+<pre><code> // If fade-in/out is allowed
+ balloon.allowFade = false;
+ // time interval for fade-in (msec)
+ balloon.fadeIn    = 300;
+ // time interval for fade-out (msec)
+ balloon.fadeOut   = 300;
+</code></pre>
+<ul>
+<li>vOffset (how far below/above the cursor the balloom stem starts)</li>
+</ul>
+<!-- -->
+<pre><code> // Vertical Distance from cursor location (px)
+ balloon.vOffset  = 10;
+</code></pre>
+<ul>
+<li>padding &ndash; distance from balloon edge to contents. Don&rsquo;t set to &lt; 10
+if your balloon has corners</li>
+</ul>
+<!-- -->
+<pre><code> // text-padding within the balloon (px)
+ balloon.padding  = 10;
+</code></pre>
+<ul>
+<li>displayTime &ndash; non-sticky balloons will go away after this length of
+time (in milliseconds). &lsquo;false&rsquo; means never.</li>
+</ul>
+<!-- -->
+<pre><code> // How long to display mousover balloons (msec)
+ // false = 'always on'
+ balloon.displayTime = 10000;
+</code></pre>
+<ul>
+<li>shadow &ndash; amount of external padding needed for the shadow, if your
+balloon has one. NOTE: this does not add or remove a shadow from the
+image &ndash; that&rsquo;s up to you!</li>
+</ul>
+<!-- -->
+<pre><code> // width of shadow (space around whole balloon; px)
+ // This can be zero if there is no shadow and the
+ // edges of the balloon are also the edges of the image
+ balloon.shadow   = 20;
+</code></pre>
+<ul>
+<li>images &ndash; the relative or absolute URL of your image directory.</li>
+</ul>
+<!-- -->
+<pre><code> // images of balloon body.  If the browser is IE &lt; 7, png alpha
+ // channels will not work.  An optional alternative image can be
+ // provided.  It should have the same dimensions as the default png image
+ balloon.images        = '/images/balloons';
+</code></pre>
+<ul>
+<li>name of the balloon background image</li>
+</ul>
+<!-- -->
+<pre><code> balloon.balloonImage  = 'balloon.png';    // with alpha channels
+</code></pre>
+<ul>
+<li>an optional, alternate image for IE 6 and below, which is too stupid
+to cope with PNG transparency</li>
+</ul>
+<!-- -->
+<pre><code> balloon.ieImage       = 'balloon_ie.png'; a// indexed color, transparent background
+</code></pre>
+<ul>
+<li>stem (throat, pointy bit, whatever) parameters</li>
+</ul>
+<!-- -->
+<pre><code> // whether the balloon should have a stem
+ balloon.stem          = true;
+
+ // The height (px) of the stem and the extent to which the
+ // stem image should overlaps the balloon image.
+ balloon.stemHeight  = 32;
+ balloon.stemOverlap = 3;
+
+ // A stem for each of the four orientations
+ balloon.upLeftStem    = 'up_left.png';
+ balloon.downLeftStem  = 'down_left.png';
+ balloon.upRightStem   = 'up_right.png';
+ balloon.downRightStem = 'down_right.png';
+</code></pre>
+<ul>
+<li>where to find a close button</li>
+</ul>
+<!-- -->
+<pre><code> // A close button for sticky balloons
+ balloon.closeButton   = 'close.png';
+</code></pre>
+<ul>
+<li>balloon font properties &ndash; you can control the appearance of balloon
+contents with embedded HTML/CSS but the following font attributes can
+be set globally for the balloon object</li>
+</ul>
+<!-- -->
+<pre><code> balloon.fontSize      = '12pt';
+ balloon.fontColor     = 'black';
+ balloon.fontFamily    = 'Arial, sans-serif';
+</code></pre>
+<ul>
+<li>AJAX and security settings</li>
+</ul>
+<p>This section allows support for AJAX, iframes and JavaScript in
+balloons. If you have concerns about XSS vulnerabilities, set some or
+all of these values to false;</p>
+<pre><code> // URL for default AJAX request handler
+ balloon.helpUrl            = false;
+
+ // Should AJAX be allowed at all?
+ balloon.allowAJAX          = true;
+
+ // Allow iframe elements in balloons?
+ balloon.allowIframes       = true;
+
+ // Allow javascript event handlers in balloons?
+ balloon.allowEventHandlers = false;
+
+ // Allow &lt;script&gt; elements in balloons?
+ balloon.allowScripts       = false;
+
+ // Escape all HTML characters -- this will be very
+ // unnattractive unless your AJAX request returns plain
+ // text.  short of disallowing AJAX entirely, This is the safe
+ // way to go if you must have AJAX in an environment where
+ // outside users can send text to the browser/balloon
+ balloon.escapeHTML         = false;
+</code></pre>
+<h2 id="span-idusing_a_formatted_box_with_no_balloon_images-classmw-headlineusing-a-formatted-box-with-no-balloon-imagesspan"><span id="Using_a_formatted_box_with_no_balloon_images" class="mw-headline">Using a formatted box with no balloon images</span></h2>
+<ul>
+<li>an alternative to the balloons is to use the <strong><em>Box</em></strong> class instead
+of the <strong><em>Balloon</em></strong> class.</li>
+<li>the tooltip box offer the same dynamic size, orientation, positioning
+and capabilities as the balloons, but uses no background images and is
+always rectangular in shape.</li>
+<li>make sure you have loaded &ldquo;box.js&rdquo; in your page header, as shown
+above.</li>
+<li>It is configured as above but does not use image variables</li>
+<li>The default box configuration is also in the balloon.config.js file.</li>
+<li>There are two box-specific variable:</li>
+</ul>
+<!-- -->
+<pre><code>  var box = new Box();
+  BalloonConfig(box,'GBox');
+
+  // background color of the box (web colors of hex)
+  box.bgcolor = &quot;red&quot;;
+
+  // border style (standard CSS syntax)
+  box.borderStyle = &quot;2px solid purple&quot;;
+</code></pre>
+<h2 id="span-idconfiguration_sets-classmw-headlineconfiguration-setsspan"><span id="Configuration_Sets" class="mw-headline">Configuration Sets</span></h2>
+<ul>
+<li>As of release x.xx, balloon.js uses configuration sets, which are sets
+of options bundled together for convenience.</li>
+<li>There are four config sets available (GBubble, GPlain, GFade and
+GBox). GBubble is the default set that will be used unless otherwise
+specified. These are described in more detail below.</li>
+<li>You can also edit balloon.config.js to add you own configuration sets.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Loading a configuration set is easy:</li>
+</ul>
+<!-- -->
+<pre><code>var plainBalloon = new Balloon;
+BalloonConfig(plainBalloon,'GPlain');
+
+var fancyBalloon = new Balloon;
+BalloonConfig(fancyBalloon,'GFade');
+</code></pre>
+<h3 id="span-idconfiguration_sets_included_in_the_balloonjs_package-classmw-headlineconfiguration-sets-included-in-the-balloonjs-packagespan"><span id="Configuration_Sets_included_in_the_balloon.js_package" class="mw-headline">Configuration Sets included in the balloon.js package</span></h3>
+<h4 id="span-idgbubble_and_gfade-classmw-headlinegbubble-and-gfadespan"><span id="GBubble_and_GFade" class="mw-headline">GBubble and GFade</span></h4>
+<p>This is the original cartoon bubble popup balloon style. It has a couple
+of new behaviors, including an opacity setting (the example shown has
+opacity set to 0.9).</p>
+<ul>
+<li>GBubble is the the default balloon style.</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/GBubble.png" class="thumbborder"
+width="358" height="199" alt="GBubble.png" /></p>
+<ul>
+<li>GFade is identical to GBubble except that it fades into view rather
+than just popping up. This is accomplished by starting out transparent
+and gradually increasing the opacity over a span of 1200 msec.</li>
+</ul>
+<h4 id="span-idgplain-classmw-headlinegplainspan"><span id="GPlain" class="mw-headline">GPlain</span></h4>
+<p>The GPlain style is a plainer style of balloon tooltip but still offers
+fully HTML formatted contents, opacity, etc. The default configuration
+has opacity set to 85% and cursor tracking enabled, so the tooltip will
+follow the mouse until you mouseout from the text or image the tooltip
+is attached to.</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/GPlain.png" class="thumbborder"
+width="515" height="172" alt="GPlain.png" /></p>
+<h4 id="span-idgbox-classmw-headlinegboxspan"><span id="GBox" class="mw-headline">GBox</span></h4>
+<p>GBox is a formatted box. It can have fixed dimensions or resize
+dynamically (actually, this is true of all balloon tooltips).</p>
+<ul>
+<li>For sticky boxes, if the contents are too big, scrollbars will appear.</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/GBox.png" class="thumbborder" width="672"
+height="343" alt="The GBox style" /></p>
+<h3 id="span-idconfiguring_default_tooltip_styles-classmw-headlineconfiguring-default-tooltip-stylesspan"><span id="Configuring_Default_Tooltip_Styles" class="mw-headline">Configuring Default Tooltip Styles</span></h3>
+<ul>
+<li>Default balloon style options are configured in the file
+balloon.config.js, which comes with the distribution.</li>
+<li>Follow <span class="pops"><a
+href="http://gmod.cvs.sourceforge.net/viewvc/*checkout*/gmod/balloon-tooltips/htdocs/js/balloon.config.js"
+class="external text" rel="nofollow">this link</a></span> to see the
+complete balloon.config.js file</li>
+</ul>
+<p>Below is the syntax for default configuration for the three styles above
+in balloon.config.js</p>
+<pre tabindex="0"><code>
+  ////////////////////////////////////////////////////////////////
+  // Custom configuration options -- Add a case below for your  //
+  // config set (GBrowse defaults: GBox, GPlain and GBubble)    //
+  ////////////////////////////////////////////////////////////////
+  switch(set) {
+
+    // A formatted box (no background image)
+    case(&#39;GBox&#39;) :
+      balloon.bgColor     = &#39;lightgoldenrodyellow&#39;;
+      balloon.borderStyle = &#39;2px solid gray&#39;;
+      balloon.padding     = 5;
+      balloon.shadow      = 0;
+      balloon.stem        = false;
+      balloon.opacity     = 90;
+      break;
+
+    // A simple balloon
+    case(&#39;GPlain&#39;) :
+      balloon.padding     = 5;
+      balloon.shadow      = 0;
+      balloon.stemHeight  = 15;
+      balloon.stemOverlap = 1;
+      balloon.opacity     = 85;
+      break;
+
+    // The original cartoon bubble
+    case(&#39;GBubble&#39;) :
+      balloon.ieImage     = &#39;balloon_ie.png&#39;;
+      balloon.shadow      = 20;
+      balloon.padding     = 10;
+      balloon.stemHeight  = 32;
+      balloon.stemOverlap = 3;
+      balloon.vOffset     = 1;
+      balloon.hOffset     = 1;
+      balloon.opacity     = 85;
+      break;
+
+    // The cartoon bubble with a fade-in effect
+    case(&#39;GFade&#39;) :
+      balloon.ieImage     = &#39;balloon_ie.png&#39;;
+      balloon.shadow      = 20;
+      balloon.padding     = 10;
+      balloon.stemHeight  = 32;
+      balloon.stemOverlap = 3;
+      balloon.vOffset     = 1;
+      balloon.hOffset     = 1;
+      balloon.opacity     = 85;
+      balloon.allowFade   = true;
+      balloon.trackCursor = false;
+      break;
+  }
+</code></pre><h1 id="span-idthe_javascript_user_interface-classmw-headlinethe-javascript-user-interfacespan"><span id="The_JavaScript_User_Interface" class="mw-headline">The JavaScript User Interface</span></h1>
+<h2 id="span-idbasic_usage-classmw-headlinebasic-usagespan"><span id="Basic_Usage" class="mw-headline">Basic Usage</span></h2>
+<p>The API is fairly simple. Simply add a mouseover event handler to any
+HTML element you want to fire a tooltip.</p>
+<pre><code>onmouseover=&quot;balloon.showTooltip(event,caption[,sticky][,width][,height])&quot;
+</code></pre>
+<ul>
+<li>The &rsquo;event&rsquo; argument passes the event object to the showTooltip
+function. The event object is used to get the page coordinates of the
+mouseover identify the target element.</li>
+<li>The &lsquo;caption&rsquo; argument can be plain text,HTML, a URL or the ID of a
+div element on the page that contains the balloon contents.</li>
+<li>The optional &lsquo;sticky&rsquo; argument can be any true value</li>
+<li>The optional &lsquo;width&rsquo; argument will force the balloon to be a specified
+width.</li>
+<li>The optional &lsquo;height&rsquo; argument will force the balloon to be a
+specified height.</li>
+</ul>
+<p><strong>NOTE:</strong> Even if width and height are specified, the balloon will
+shrink to fit when the actual contents are smaller than the specified
+dimensions.</p>
+<p><strong>Examples:</strong></p>
+<p>A simple message</p>
+<pre><code> &lt;a href=&quot;someURL&quot; onmouseover=&quot;balloon.showTooltip(event,'Some text...')&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<p>A sticky balloon</p>
+<pre><code> &lt;a href=&quot;someURL&quot; onmouseover=&quot;balloon.showTooltip(event,'Some text...',1)&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<p>A sticky balloon that is 250px wide</p>
+<pre><code> &lt;a href=&quot;someURL&quot; onmouseover=&quot;balloon.showTooltip(event,'Some text...',1,250)&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<p>A non-sticky balloon that is 150px wide</p>
+<pre><code> &lt;a href=&quot;someURL&quot; onmouseover=&quot;balloon.showTooltip(event,'Some text...',0,150)&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<p>A balloon that has its content stored in a \</p>
+<pre><code>  Your message goes here.  It may be long and have lots of HTML markup,
+  forms, images, etc...
+
+ &lt;a href=&quot;someURL&quot; onmouseover=&quot;balloon.showTooltip(event,'load:contents1',1,250)&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<p>A balloon that contains another website loaded via an iframe</p>
+<pre><code>&lt;span onmouseover=&quot;balloon.showTooltip(event,'\
+ &lt;iframe style=\'width:270;height:300;border:0\' \
+ src=\'http://www.nypost.com/avantgo/avantnews/avantnews.htm\'&gt;&lt;/iframe&gt;',1,300)&quot;
+&lt;/span&gt;
+</code></pre>
+<h3 id="span-idhow_do_i_put_an_image_in_the_balloon3f-classmw-headlinehow-do-i-put-an-image-in-the-balloonspan"><span id="How_do_I_put_an_image_in_the_balloon.3F" class="mw-headline">How do I put an image in the balloon?</span></h3>
+<p><strong>Note:</strong> see notes below about nested quoted and the &rsquo;load:myContent&rsquo;
+syntax.</p>
+<h4 id="span-idexamples-classmw-headlineexamplesspan"><span id="Examples" class="mw-headline">Examples</span></h4>
+<ul>
+<li>A simple popup with an image inside the balloon</li>
+</ul>
+<!-- -->
+<pre><code> &lt;span onmouseover=&quot;balloon.showTooltip(event,'&lt;img src=\'myImage\' /&gt;')&quot;&gt;Mouseover text&lt;/span&gt;
+</code></pre>
+<ul>
+<li>A link and popup with an image inside the balloon</li>
+</ul>
+<!-- -->
+<pre><code> &lt;a href=&quot;http:/some.site.org&quot; onmouseover=&quot;balloon.showTooltip(event,'&lt;img src=\'myImage\' /&gt;')&quot;&gt;Link&lt;/a&gt;
+</code></pre>
+<ul>
+<li>A sticky balloon that has an image (that is a link) in the balloon</li>
+</ul>
+<!-- -->
+<pre><code> &lt;span onclick=&quot;balloon.showTooltip(event,'&lt;a href=\'http:/some.site.org\'&gt;&lt;img src=\'myImage\' /&gt;&lt;/a&gt;',1)&quot;&gt;
+   Mouseover text
+ &lt;/span&gt;
+</code></pre>
+<ul>
+<li>The above example with the balloon contents stored somewhere else</li>
+</ul>
+<!-- -->
+<pre><code> &lt;span onclick=&quot;balloon.showTooltip(event,'load:myImageLink',1)&quot;&gt;
+   Mouseover text
+ &lt;/span&gt;
+
+ &lt;span id=&quot;myImageLink&quot; style=&quot;display:none&quot;&gt;
+  &lt;a href=&quot;http:/some.site.org&quot;&gt;
+    &lt;img src=&quot;myImage&quot; /&gt;
+  &lt;/a&gt;
+ &lt;/span&gt;
+</code></pre>
+<h2 id="span-idsticky_balloon_behavior-classmw-headlinesticky-balloon-behaviorspan"><span id="Sticky_balloon_behavior" class="mw-headline">Sticky balloon behavior</span></h2>
+<ul>
+<li>Sticky balloons will persist until the close button is clicked</li>
+<li>Note this behavior was changed due to repeated complaints about sticky
+balloons being closed when nearby sticky balloons were fired.</li>
+<li>The author does not force you to refrain from sing mouseover sticky
+balloons but finds them obnoxious and wishes you would consider
+reserving the sticky ones for deliberate click events.</li>
+</ul>
+<h2 id="span-idformatting_balloon_contents-classmw-headlineformatting-balloon-contentsspan"><span id="Formatting_balloon_contents" class="mw-headline">Formatting balloon contents</span></h2>
+<h3 id="span-idescape_characters_and_multi-line_strings-classmw-headlineescape-characters-and-multi-line-stringsspan"><span id="Escape_characters_and_multi-line_strings" class="mw-headline">Escape characters and multi-line strings</span></h3>
+<p>For very long or multiple-line strings that are being passed to a
+javascript function, use the &lsquo;\ escape character to break up the text,
+with the string terminator occurring only once at the end.</p>
+<p>For example:</p>
+<pre><code>'This is some text.  It is quite long, perhaps too long to fit comfortably on \
+one line.  Yep, I thought so.  Well, here comes the end, anyway.'
+</code></pre>
+<ul>
+<li>If you are editing HTML directly, the escape character &lsquo;\ should be
+used once for each occurrence.</li>
+<li>If you are adding string from within a perl/CGI script and are using
+double quotes or qq(), use a double escape &lsquo;\&rsquo;.</li>
+</ul>
+<p><strong>Nested quotes:</strong></p>
+<ul>
+<li>Single quotes nested without the string must be escaped. You can use
+this character &lsquo;\ or else the HTML escape character '</li>
+<li>Double quotes within the string may cause problems with your browser&rsquo;s
+HTML-parsing.
+<ul>
+<li>For internal or nested double quotes, use the HTML escape &quot;.</li>
+</ul>
+</li>
+</ul>
+<p>For example;</p>
+<pre><code>'This is some text.  It is \'very interesting\'.  Well, maybe not. \
+I guess it depends on your definition of &amp;quote;interesting&amp;quote;'
+</code></pre>
+<h3 id="span-idstoring_balloon_contents_in_invisible_page_elements-classmw-headlinestoring-balloon-contents-in-invisible-page-elementsspan"><span id="Storing_balloon_contents_in_invisible_page_elements" class="mw-headline">Storing balloon contents in invisible page elements</span></h3>
+<ul>
+<li>An alternative to the quoting and multiline strings described above is
+to wrap the balloon contents in an invisible element on the page.</li>
+</ul>
+<p>For example, the string above would be encoded as:</p>
+<pre><code> This is some text.  It is 'very interesting'.  Well, maybe not.
+ I guess it depends on your definition of &quot;interesting&quot;.
+</code></pre>
+<p>and the contents are retrieved using the syntax below:</p>
+<pre><code>onmouseover=&quot;balloon.showTooltip(event,&quot;load:contents1&quot;);
+</code></pre>
+<p>NOTE: For special characters, do not use HTML escape characters (eg
+&amp; for &amp;) URI escape codes such as those described
+<span class="pops"><a href="http://www.december.com/html/spec/esccodes.html"
+class="external text" rel="nofollow">here</a></span>.</p>
+<p>If you have URI encoding that you do not want to be unencoded inside the
+balloon, for example:</p>
+<pre><code>http://mysite.org?paramx=my%20param%20has%20spaces
+</code></pre>
+<p>edit balloon.config.js and set balloon.protectEncoding to &rsquo;true&rsquo;.</p>
+<h2 id="span-idusing_ajax_to_get_balloon_contents-classmw-headlineusing-ajax-to-get-balloon-contentsspan"><span id="Using_AJAX_to_get_balloon_contents" class="mw-headline">Using AJAX to get balloon contents</span></h2>
+<p><strong>NOTE: Currently only AJAX requests to the same host are supported.</strong></p>
+<p>The &lsquo;helpURL&rsquo; variable on the configuration section can be used to
+specify the URL of a perl script that will act as an ajax handler and
+return text in response to an ajax query.</p>
+<p>For example:</p>
+<pre><code>balloon.helpUrl = '/cgi-bin/help.pl';
+</code></pre>
+<p>If &lsquo;helpUrl&rsquo; is defined, balloon.js will send an http request to the
+address specified with the following parameters:</p>
+<ul>
+<li><strong>section</strong> - the text label specified as an argument to the
+showTooltip function.</li>
+</ul>
+<p>Assuming a function call &lsquo;showTooltip(event,&lsquo;section2&rsquo;)&rsquo;, the following
+query would be generated and the result of the query would be used to
+populate the balloon.</p>
+<pre><code>/cgi-bin/help.pl?section=section2
+</code></pre>
+<h3 id="span-idthe_ajax_handling_script_and_its_behavior_are_the_responsibility_of_the_implementer-classmw-headlinethe-ajax-handling-script-and-its-behavior-are-the-responsibility-of-the-implementerspan"><span id="The_AJAX_handling_script_and_its_behavior_are_the_responsibility_of_the_implementer." class="mw-headline">The AJAX handling script and its behavior are the responsibility of the implementer.</span></h3>
+<p><strong>An example:</strong> <a
+href="http://brebiou.cshl.edu/viewcvs/wormbase-site/cgi-perl/misc/help?rev=1.7&amp;content-type=text/vnd.viewcvs-markup"
+class="external text" rel="nofollow">the AJAX handler used by
+wormbase</a></p>
+<ul>
+<li>If you do not intend to use this functionality, make sure the helpUrl
+variable is not defined.</li>
+<li>&lsquo;contents2&rsquo; will then be interpreted as the literal balloon contents:</li>
+</ul>
+<!-- -->
+<pre><code>balloon.helpUrl = null;
+</code></pre>
+<h2 id="span-idan_alternative_ajax_implementation-classmw-headlinean-alternative-ajax-implementationspan"><span id="An_alternative_AJAX_implementation" class="mw-headline">An alternative AJAX implementation</span></h2>
+<p>An alternative to using an AJAX handler script is to specify the balloon
+contents with a self-contained URL in the balloon.showTooltip function
+call. This requires a special syntax:</p>
+<pre><code>balloon.showTooltip(event,'url:/examples/example1.html')
+</code></pre>
+<p><strong>NOTE:</strong> The URL is subject to the same cross-domain limitation as
+other AJAX requests.</p>
+<ul>
+<li>This approach has the advantage of having no preset CGI parameters and
+leaves the implementer free to structure queries in whatever way they
+prefer.</li>
+</ul>
+<h2 id="span-idinserting_images_and_other_remote_content_without_ajax-classmw-headlineinserting-images-and-other-remote-content-without-ajaxspan"><span id="Inserting_images_and_other_remote_content_without_AJAX" class="mw-headline">Inserting images and other remote content without AJAX</span></h2>
+<p><strong>Images:</strong></p>
+<p>Inserting images is a simple as encoding the image in a regular HTML
+image tag.</p>
+<ul>
+<li>It up to the implementor to ensure that the image is the correct size
+to fit in the balloon.</li>
+<li>In some browsers, the calculation of the balloon&rsquo;s position will be
+wrong unless the size of the image is known prior to loading.
+Specifying an image height ensures consistent behavior across
+browsers.</li>
+</ul>
+<!-- -->
+<pre><code>showTooltip(event,'&lt;img height=200 src=image1.png&gt;')
+</code></pre>
+<p><strong>Other remote content:</strong></p>
+<p>Inserting content from URLs outside of the domain that hosts balloon.js
+can be done with an &lt;iframe&gt; element.</p>
+<ul>
+<li>As with images, it up to the implementor to ensure that the contents
+returned by the remote URL are the correct size to fit in the balloon.</li>
+<li>Specify the dimensions of the iframe element for best results.</li>
+<li>Balloons with complex content should be made sticky.</li>
+</ul>
+<!-- -->
+<pre><code>showTooltip(event,'&lt;iframe frameborder=0 width=250 src=http://somehost.com&gt;&lt;/iframe&gt;',1)
+</code></pre>
+<h1 id="span-idchanges-classmw-headlinechangesspan"><span id="CHANGES" class="mw-headline">CHANGES</span></h1>
+<h2 id="span-idversion_111-classmw-headlineversion-111span"><span id="version_1.11" class="mw-headline">version 1.11</span></h2>
+<ul>
+<li>Substantial changes to balloon rendering
+<ul>
+<li>dynamic balloon size</li>
+<li>new background images</li>
+</ul>
+</li>
+<li>Made sticky balloons stickier</li>
+<li>Improved cross-browser behavior</li>
+<li>Added the ability to load balloon contents from another element on the
+page</li>
+</ul>
+<h2 id="span-idversion_119-classmw-headlineversion-119span"><span id="version_1.19" class="mw-headline">version 1.19</span></h2>
+<ul>
+<li>several IE bugs fixed</li>
+<li>online balloon image and javascript generator restored</li>
+</ul>
+<h2 id="span-idversion_120-classmw-headlineversion-120span"><span id="version_1.20" class="mw-headline">version 1.20</span></h2>
+<ul>
+<li>many bug fixes</li>
+<li>improved cursor tracking</li>
+<li>added optional fade in/out and balloon expiry time</li>
+<li>removed prototype.js dependency</li>
+</ul>
+<h2 id="span-idversion_122-classmw-headlineversion-122span"><span id="version_1.22" class="mw-headline">version 1.22</span></h2>
+<ul>
+<li>added support for mediawiki</li>
+<li>added user patch (Dan Wilson &lt;killroyboy@users.sourceforge.net&gt;) for
+custom close button width</li>
+</ul>
+<h2 id="span-idversion_127-classmw-headlineversion-127span"><span id="version_1.27" class="mw-headline">version 1.27</span></h2>
+<ul>
+<li>Various small improvements and bug fixes (Thanks to Richard DeMers and
+Ir. H. Hahn for bug reports and suggestions)</li>
+<li>Added controls for default font color, face and size.</li>
+<li>Nasty IE6 missing balloon bug squashed.</li>
+</ul>
+<h2 id="span-idversion_133-classmw-headlineversion-133span"><span id="version_1.33" class="mw-headline">version 1.33</span></h2>
+<ul>
+<li>Added some security options</li>
+<li>Some changes to support MediaWiki</li>
+<li>Fixed image preloading issue</li>
+</ul>
+<h2 id="span-idversion_137-classmw-headlineversion-137span"><span id="version_1.37" class="mw-headline">version 1.37</span></h2>
+<ul>
+<li>Added plain box option</li>
+<li>Hopefully dealt with IE event position bug (Thanks to Peter McBride
+for reports on this)</li>
+</ul>
+<h2 id="span-idversion_141-classmw-headlineversion-141span"><span id="version_1.41" class="mw-headline">version 1.41</span></h2>
+<ul>
+<li>Fixed ajax bugs (Thanks to Craig Eminger and Stephan Schrade for
+feedback)</li>
+<li>Discovered that the IE text-selection bug was unknowingly fixed in a
+previous edit</li>
+</ul>
+<h2 id="span-idversion_143-classmw-headlineversion-143span"><span id="version_1.43" class="mw-headline">version 1.43</span></h2>
+<ul>
+<li>Numerous bug fixes and other changes; see <a href="#New_Features">below</a></li>
+<li>Thanks to Lee Fox for helpful feedback and debugging information</li>
+</ul>
+<h2 id="span-idversion_146-classmw-headlineversion-146span"><span id="version_1.46" class="mw-headline">version 1.46</span></h2>
+<ul>
+<li>Still more bug fixes</li>
+<li>IE scroll issue hopefully resolved but somehow I expect to hear more
+about it</li>
+<li>Thanks to Nick Masters, Preston Mark Stone and Vishakha K for help or
+feedback.</li>
+</ul>
+<h2 id="span-idversion_20-classmw-headlineversion-20span"><span id="version_2.0" class="mw-headline">version 2.0</span></h2>
+<ul>
+<li>major rewrite to use prototype.js and remove YAHOO dependencies. Some
+code contributed by Lincoln Stein (Ontario Institute for Cancer
+Research.</li>
+</ul>
+<h2 id="span-idversion_21-classmw-headlineversion-21span"><span id="version_2.1" class="mw-headline">version 2.1</span></h2>
+<ul>
+<li>fixes to documentation links. Updates to MediaWiki support.</li>
+</ul>
+<p>NOTE: to the helpful, if somewhat pugilistic, user who spent so such
+time bug-hunting and pointing out errors: I&rsquo;m sorry I deleted your email
+before recording your name and can not acknowledge you properly. Please
+contact me if you want to be acknowledged.</p>
+<h2 id="span-idversion_22-classmw-headlineversion-22span"><span id="version_2.2" class="mw-headline">version 2.2</span></h2>
+<ul>
+<li>Fixes to FireFox event handler behavior and for IE9-specific
+behaviors.</li>
+</ul>
+<h1 id="span-idnew_features-classmw-headlinenew-featuresspan"><span id="New_Features" class="mw-headline">New Features</span></h1>
+<h2 id="span-idcursor_tracking-classmw-headlinecursor-trackingspan"><span id="Cursor_Tracking" class="mw-headline">Cursor Tracking</span></h2>
+<ul>
+<li>By default, the position of non-sticky balloons (or boxes) will follow
+the mouse cursor until it leaves the text or image that triggered the
+balloon tooltip.</li>
+</ul>
+<!-- -->
+<ul>
+<li>This option can be disabled via balloon.config.js</li>
+</ul>
+<!-- -->
+<pre><code> balloon.trackCursor = false;
+</code></pre>
+<h2 id="span-idoverflow_and_scrollbars-classmw-headlineoverflow-and-scrollbarsspan"><span id="Overflow_and_Scrollbars" class="mw-headline">Overflow and Scrollbars</span></h2>
+<ul>
+<li>When the size of the balloon contents exceeds the balloon (or box)
+size, two new behaviors have been introduced:</li>
+</ul>
+<ol>
+<li>for sticky tooltips, scrollbars will appear.</li>
+<li>for non-sticky tooltips, excess contents will be clipped (hidden).
+Note this will not usually happen unless the size of the balloons
+has been explicitly constrained. Reasonable care must be taken here,
+as popup balloons are not mean to contain contents exceeding
+500-600px width and height in any case.</li>
+</ol>
+<h2 id="span-idboth_height_and_width_can_be_constrained-classmw-headlineboth-height-and-width-can-be-constrainedspan"><span id="Both_height_and_width_can_be_constrained" class="mw-headline">Both height and width can be constrained</span></h2>
+<p>Height and width arguments are supported. In cases where the balloon
+contents are smaller than the specified dimensions, the balloon or box
+will shrink to fit. However, oversize contents will trigger clipping for
+non-sticky balloons and scrollbars for sticky balloons</p>
+<h2 id="span-idtooltips_will_not_go_off-screen-classmw-headlinetooltips-will-not-go-off-screenspan"><span id="Tooltips_will_not_go_off-screen" class="mw-headline">Tooltips will not go off-screen</span></h2>
+<p>Tooltips will automatically resize to stay inside the visible window.
+Again, reasonable limits apply.</p>
+<h1 id="span-idtroubleshooting_for_the_impatient-classmw-headlinetroubleshooting-for-the-impatientspan"><span id="Troubleshooting_for_the_impatient" class="mw-headline">Troubleshooting for the impatient</span></h1>
+<p>Almost all problems reported are not bugs in balloon.js but
+implementation errors, such as those described below:</p>
+<h3 id="span-idwhat_is_a_document_root3f-classmw-headlinewhat-is-a-document-rootspan"><span id="What_is_a_Document_Root.3F" class="mw-headline">What is a Document Root?</span></h3>
+<p>The directory (in the real filesystem) from which your Web server will
+be serving most of its Web pages.</p>
+<p>For example: If you set the document root to /home/httpd/html, then
+accesses to
+<a href="http://your.webserver.com/index.html" class="external free"
+rel="nofollow"><a href="http://your.webserver.com/index.html">http://your.webserver.com/index.html</a></a> would return the
+file /home/httpd/html/index.html. An access to
+<img src="http://your.webserver.com/foo/gazonk.gif" alt="gazonk.gif"> would return
+/home/httpd/html/foo/gazonk.gif.</p>
+<p>For URLs used by your web browser, the document root is &lsquo;/&rsquo;. If you
+create subdirectories, &rsquo;test&rsquo; for example, the URL for path for the
+contents of &rsquo;test&rsquo; would be /test/*, e.g. &lsquo;/test/images&rsquo;, &lsquo;/test/js&rsquo;,
+etc.</p>
+<p>library locations<br>
+Your web browser needs to know where the javascript files are. Make sure
+the &lt;script src=&hellip; lines in your page header point to the actual
+location of the javascript files on your web server. If you do not put
+them in /js (relative to the document root), you must change the header
+lines in your HTML accordingly. For example, lets say you put the whole
+works under /test relative to your web servers document root. The the
+correct URL for your js files is &lsquo;/test/js&rsquo;.</p>
+<p>image locations<br>
+Your web browser needs to know where the image files are. By default,
+image files are located in /images/balloons (relative to the document
+root) under GBubble, GPlain, etc. This is specified in the
+balloon.config.js file. If you move the image files somewhere else on
+your web server&rsquo;s files system, edit balloon.config.js accordingly. For
+example, lets say you put the whole works under /test relative to your
+web servers document root. The the correct URL for your js files is
+&lsquo;/test/images/balloons&rsquo;</p>
+<p>typos<br>
+These take many forms but almost all are fatal. JavaScript is
+case-sensitive and bear in mind that you are editing Javascript code,
+which will only work if it is <strong>exactly</strong> right. For example:</p>
+<!-- -->
+<pre><code> var balloon = new Balloon();
+</code></pre>
+<p><strong>is NOT the same as:</strong></p>
+<pre><code>var balloon = new balloon();
+</code></pre>
+<h3 id="span-idthis_package_is_not_a_desktop_application-classmw-headlinethis-package-is-not-a-desktop-applicationspan"><span id="This_package_is_NOT_a_desktop_application" class="mw-headline">This package is NOT a desktop application</span></h3>
+<ul>
+<li>There is a working demonstration at
+<a href="http://mckay.cshl.edu/balloons.html" class="external free"
+rel="nofollow"><a href="http://mckay.cshl.edu/balloons.html">http://mckay.cshl.edu/balloons.html</a></a> for your test
+drive.</li>
+<li>balloon.js is for web servers, not your personal desktop computer
+(unless you use it as a web server).</li>
+<li>Downloading the package, then double-clicking balloons.html will
+probably not work on your local desktop computer. You will likely see
+the text but not the balloon images.</li>
+<li>If you remove the leading &lsquo;/&rsquo; from the image path in
+balloon.config.js, it might work on your desktop, but likely not.</li>
+</ul>
+<p>With apologies, the author does not provide user support for this
+package installed on local desktop computers</p>
+<h2 id="span-idreporting_errors-classmw-headlinereporting-errorsspan"><span id="Reporting_errors" class="mw-headline">Reporting errors</span></h2>
+<ul>
+<li>If you send an
+<a href="mailto:Sheldon.McKay@gmail.com" class="external text"
+rel="nofollow">email asking for help</a>, you can save a lot of time
+by providing detailed information. The author can not diagnose the
+problem based on &ldquo;It does not work&hellip;&rdquo;</li>
+<li>Report the URL of your implementation or HTML code samples, which
+browser and operating system, any error messages from the JavaScript
+console of your browser, firebug, microsoft script debugger, etc.</li>
+<li>By far, the easiest thing to do is send your URL (the address of your
+web site) or at the very minimum your HTML code.</li>
+<li>Also check to see if the error occurs in just one browser (aka
+internet explorer) or all browsers.</li>
+</ul>
+<h1 id="span-idsoftware_license-classmw-headlinesoftware-licensespan"><span id="Software_License" class="mw-headline">Software License</span></h1>
+<pre><code>This balloon tooltip package and associated files not otherwise copyrighted are
+distributed under the MIT-style license:
+
+ http://opensource.org/licenses/mit-license.php
+
+
+ Copyright (c) 2007-2012 Sheldon McKay, Cold Spring Harbor Laboratory
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the &quot;Software&quot;), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
+ If publications result from research using this SOFTWARE, we ask that
+ CSHL and the author be acknowledged as scientifically appropriate.
+</code></pre>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AJavascript" title="Category%253AJavascript">Javascript</a></li>
+<li><a href="Category%253AGMOD_Components" title="Category%253AGMOD Components">GMOD Components</a></li>
+<li><a href="Category%253AGMOD_Developers" title="Category%253AGMOD Developers">GMOD Developers</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Popup_Balloons" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 14:22 on 29 May 2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">604,339 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

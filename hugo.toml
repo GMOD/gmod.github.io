@@ -1,0 +1,11 @@
+baseURL = 'https://gmod.org/'
+languageCode = 'en-us'
+title = 'GMOD'
+disablePathToLower = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zheng&#39;s installation notes - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautozhengs-installation-notesspan"><span dir="auto">Zheng&rsquo;s installation notes</span></h1>
+<p>Back to <a href="Chado_New_Users" title="Chado New Users">Chado New Users</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#general_information"><span class="tocnumber">1</span> <span class="toctext">general
+information</span></a></li>
+<li><a href="#before_you_start"><span class="tocnumber">2</span> <span class="toctext">before you
+start</span></a></li>
+<li><a href="#get_chado_schema_from_cvs"><span class="tocnumber">3</span> <span class="toctext">get chado
+schema from cvs</span></a></li>
+<li><a href="#install_prerequisites"><span class="tocnumber">4</span> <span class="toctext">install
+prerequisites</span></a>
+<ul>
+<li><a href="#install_Ant"><span class="tocnumber">4.1</span> <span class="toctext">install
+Ant</span></a></li>
+<li><a href="#install_postgresql"><span class="tocnumber">4.2</span> <span class="toctext">install
+postgresql</span></a></li>
+<li><a href="#install_several_general_perl_modules"><span class="tocnumber">4.3</span> <span class="toctext">install
+several general perl
+modules</span></a></li>
+<li><a href="#install_bioperl_live"><span class="tocnumber">4.4</span> <span class="toctext">install
+bioperl live</span></a></li>
+<li><a href="#install_go-dev"><span class="tocnumber">4.5</span> <span class="toctext">install
+go-dev</span></a></li>
+</ul>
+</li>
+<li><a href="#install_chado"><span class="tocnumber">5</span> <span class="toctext">install
+chado</span></a></li>
+<li><a href="#install_gbrowse_to_work_with_chado"><span class="tocnumber">6</span> <span class="toctext">install
+gbrowse to work with
+chado</span></a></li>
+</ul>
+<h2 id="span-idgeneral_information-classmw-headlinegeneral-informationspan"><span id="general_information" class="mw-headline">general information</span></h2>
+<p>There suppose to be an easy way and a hard way to install Chado database
+on Fedora:</p>
+<ul>
+<li>the easy way: use an existing rpm package. I have not tried it. but
+you can find information at <a href="Chado_-_Getting_Started#Installation_using_an_RPM" title="Chado - Getting Started">installation using an
+RPM</a></li>
+<li>the hard way: install by source. But
+<a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater,_Modified"
+class="external text" rel="nofollow">yum</a> makes it easier. The
+following is my note on installation of Chado on Fedora 6.</li>
+</ul>
+<h2 id="span-idbefore_you_start-classmw-headlinebefore-you-startspan"><span id="before_you_start" class="mw-headline">before you start</span></h2>
+<ul>
+<li>you can be a superuser or you can sudo to install packages;</li>
+<li>you have read <a
+href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
+class="external text" rel="nofollow">the chado INSTALL document</a></li>
+</ul>
+<h2 id="span-idget_chado_schema_from_cvs-classmw-headlineget-chado-schema-from-cvsspan"><span id="get_chado_schema_from_cvs" class="mw-headline">get chado schema from cvs</span></h2>
+<p>see <a href="Chado_-_Getting_Started#Chado_From_CVS" title="Chado - Getting Started">Chado From
+CVS</a>,
+issue cvs command at my home directory.</p>
+<h2 id="span-idinstall_prerequisites-classmw-headlineinstall-prerequisitesspan"><span id="install_prerequisites" class="mw-headline">install prerequisites</span></h2>
+<h3 id="span-idinstall_ant-classmw-headlineinstall-a-hrefhttpenwikipediaorgwikiapache_ant-classexternal-text"><span id="install_Ant" class="mw-headline">install &lt;a href=&ldquo;<a href="http://en.wikipedia.org/wiki/Apache_Ant%22">http://en.wikipedia.org/wiki/Apache_Ant&quot;</a> class=&ldquo;external text&rdquo;</h3>
+<p>rel=&ldquo;nofollow&rdquo;&gt;Ant</a></span></p>
+<pre><code>sudo yum install ant
+</code></pre>
+<h3 id="span-idinstall_postgresql-classmw-headlineinstall-a-hrefhttpwwwpostgresqlorg-classexternal-text"><span id="install_postgresql" class="mw-headline">install &lt;a href=&ldquo;<a href="http://www.postgresql.org/%22">http://www.postgresql.org/&quot;</a> class=&ldquo;external text&rdquo;</h3>
+<p>rel=&ldquo;nofollow&rdquo;&gt;postgresql</a></span></p>
+<ul>
+<li>install both client and server by yum</li>
+</ul>
+<!-- -->
+<pre><code>[zha@localhost ~] sudo yum install postgresql
+[zha@localhost ~] sudo yum install postgresql-server
+</code></pre>
+<p>right now the version is 8.1.8 (in yum package pool)</p>
+<ul>
+<li>make server run</li>
+</ul>
+<!-- -->
+<pre><code>[zha@localhost ~] sudo /sbin/service postgres start
+</code></pre>
+<p>to make it run at boot</p>
+<pre><code>[zha@localhost ~] sudo /sbin/chkconfig postgres on
+</code></pre>
+<ul>
+<li>in .bash_profile add line</li>
+</ul>
+<!-- -->
+<pre><code>export PGDATA=&quot;/var/lib/pgsql/data/&quot;
+</code></pre>
+<p>But I still can&rsquo;t get rid of the -D /var/lib/pgsql/data/ <strong>why???</strong></p>
+<pre><code>[zha@localhost gff3]$ sudo -u postgres postgres
+postgres does not know where to find the server configuration file.
+You must specify the --config-file or -D invocation option or set the PGDATA environment variable.
+[zha@localhost gff3]$ sudo -u postgres postgres -D /var/lib/pgsql/data
+FATAL:  lock file &quot;postmaster.pid&quot; already exists
+HINT:  Is another postmaster (PID 2785) running in data directory &quot;/var/lib/pgsql/data&quot;?
+</code></pre>
+<ul>
+<li>create PL language, template, several roles</li>
+</ul>
+<!-- -->
+<pre><code>[zha@localhost ~] sudo -u postgres creatlang plpgsql template1
+[zha@localhost ~] sudo -u postgres createuser zha
+</code></pre>
+<p>replace zha with your own account name at your home directory. this must
+be a user with privilege to create and drop database. this is purely for
+the purpose of smooth installation.</p>
+<pre><code>[zha@localhost ~] sudo -u postgres createuser root
+</code></pre>
+<p>this must be a superuser of postgresql (same privilege as postgres),
+this is for installing DBIx::DBStag.</p>
+<ul>
+<li>edit the pg_hba.conf</li>
+</ul>
+<p>the pg_hba.conf is in /var/lib/pgsql/data/pg_hba.conf, you probably need
+to chown to postgres.</p>
+<pre><code># TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+local   all         all                               trust
+host    all         all         127.0.0.1/32          trust
+host    all         all         ::1/128               trust
+</code></pre>
+<p><strong>need revisit for local access and access method (MD5)</strong></p>
+<ul>
+<li>tune the server</li>
+</ul>
+<p>haven&rsquo;t done yet.</p>
+<h3 id="span-idinstall_several_general_perl_modules-classmw-headlineinstall-several-general-perl-modulesspan"><span id="install_several_general_perl_modules" class="mw-headline">install several general perl modules</span></h3>
+<p>use sudo cpan to do it. install</p>
+<p><a href="http://search.cpan.org/~lds/CGI.pm-3.27/CGI.pm"
+class="external text" rel="nofollow">CGI</a> (GBrowse)</p>
+<p><a href="http://search.cpan.org/~lds/GD-2.35/GD.pm"
+class="external text" rel="nofollow">GD</a> (GBrowse)</p>
+<p><a href="http://search.cpan.org/~timb/DBI-1.54/DBI.pm"
+class="external text" rel="nofollow">DBI</a> (GBrowse,chado)</p>
+<p><a href="http://search.cpan.org/~dbdpg/DBD-Pg-1.49/Pg.pm"
+class="external text" rel="nofollow">DBD::Pg</a> (1.49 or better)
+(GBrowse,chado)</p>
+<p>you can also install it by</p>
+<pre><code>yum install perl-DBD-Pg
+</code></pre>
+<p><a href="http://search.cpan.org/~gaas/Digest-MD5-2.36/MD5.pm"
+class="external text" rel="nofollow">Digest::MD5</a> (GBrowse)</p>
+<p><a
+href="http://search.cpan.org/search?query=Text%253A%253AShellwords&amp;mode=all"
+class="external text" rel="nofollow">Text::Shellwords</a> (GBrowse)</p>
+<p><a href="http://search.cpan.org/~cmungall/Data-Stag-0.10/"
+class="external text" rel="nofollow">Data::Stag</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~kmacleod/libxml-perl-0.08/lib/XML/Parser/PerlSAX.pm"
+class="external text" rel="nofollow">XML::Parser::PerlSAX</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~kwilliams/Module-Build-0.2806/lib/Module/Build.pm"
+class="external text" rel="nofollow">Module::Build</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~tmtm/Class-DBI-v3.0.16/lib/Class/DBI.pm"
+class="external text" rel="nofollow">Class::DBI</a> (GMODWeb, or with a
+custom Chado schema)</p>
+<p><a
+href="http://search.cpan.org/~dmaki/Class-DBI-Pg-0.09/lib/Class/DBI/Pg.pm"
+class="external text" rel="nofollow">Class::DBI::Pg</a> (GMODWeb, or
+with a custom Chado schema)</p>
+<p><a
+href="http://search.cpan.org/~miyagawa/Class-DBI-Pager-0.08/lib/Class/DBI/Pager.pm"
+class="external text" rel="nofollow">Class::DBI::Pager</a> (GMODWeb, or
+with a custom Chado schema)</p>
+<p><a
+href="http://search.cpan.org/~cmungall/DBIx-DBStag-0.08/DBIx/DBStag.pm"
+class="external text" rel="nofollow">DBIx::DBStag</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~grantm/XML-Simple-2.16/lib/XML/Simple.pm"
+class="external text" rel="nofollow">XML::Simple</a> (chado)</p>
+<p><a href="http://search.cpan.org/~gaas/libwww-perl-5.805/lib/LWP.pm"
+class="external text" rel="nofollow">LWP</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~abw/Template-Toolkit-2.18/lib/Template.pm"
+class="external text" rel="nofollow">Template</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~mschilli/Log-Log4perl-1.09/lib/Log/Log4perl.pm"
+class="external text" rel="nofollow">Log::Log4perl</a> (chado)</p>
+<p><a
+href="http://search.cpan.org/~fluffy/Term-ProgressBar-2.09/lib/Term/ProgressBar.pm"
+class="external text" rel="nofollow">Term::ProgressBar</a> (2.06 or
+better) (chado)</p>
+<h3 id="span-idinstall_bioperl_live-classmw-headlineinstall-a-hrefhttpsearchcpanorgsendubioperl-152_102"><span id="install_bioperl_live" class="mw-headline">install &lt;a href=&ldquo;<a href="http://search.cpan.org/~sendu/bioperl-1.5.2_102/%22">http://search.cpan.org/~sendu/bioperl-1.5.2_102/&quot;</a></h3>
+<p>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;bioperl live</a></span></p>
+<pre><code>[zha@localhost ~]$ sudo cpan
+Password:
+cpan[1]&gt; install S/SE/SENDU/bioperl-1.5.2_102
+</code></pre>
+<p>this is the live bioperl right now</p>
+<h3 id="span-idinstall_go-dev-classmw-headlineinstall-a-hrefhttpsourceforgenetprojectsgeneontology"><span id="install_go-dev" class="mw-headline">install &lt;a href=&ldquo;<a href="http://sourceforge.net/projects/geneontology%22">http://sourceforge.net/projects/geneontology&quot;</a></h3>
+<p>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;go-dev</a></span></p>
+<p>download and unpack the go-dev package since need to set the GO_ROOT
+environment variable. Although right now only a perl parser module for
+GO is needed.</p>
+<ul>
+<li>in .bash_profile add line</li>
+</ul>
+<!-- -->
+<pre><code>export GO_ROOT=&quot;$HOME/go-dev&quot;
+</code></pre>
+<ul>
+<li>install GO::Parser</li>
+</ul>
+<!-- -->
+<pre><code>[zha@localhost ~]$ sudo cpan
+Password:
+cpan[1]&gt; install GO::Parser
+</code></pre>
+<h2 id="span-idinstall_chado-classmw-headlineinstall-chadospan"><span id="install_chado" class="mw-headline">install chado</span></h2>
+<ul>
+<li>in .bash_profile add lines</li>
+</ul>
+<!-- -->
+<pre><code>export GMOD_ROOT=&quot;/usr/local/gmod&quot;
+export CHADO_DB_NAME=&quot;yeast_chado&quot;
+export CHADO_DB_USERNAME=&quot;zha&quot;
+</code></pre>
+<ul>
+<li>standard perl package install</li>
+</ul>
+<!-- -->
+<pre><code>perl Makefile.PL
+make
+sudo make install
+</code></pre>
+<p>and then:</p>
+<pre><code>make load_schema
+make prepdb
+make ontologies
+</code></pre>
+<ul>
+<li>backup ontologies</li>
+</ul>
+<!-- -->
+<pre><code>pg_dump wormbase_chado &gt; onto_only.sql
+</code></pre>
+<ul>
+<li>load sample yeast genome data</li>
+</ul>
+<p>download yeast genome gff3 file. load by bulk load</p>
+<pre><code>gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.gff
+</code></pre>
+<h2 id="span-idinstall_gbrowse_to_work_with_chado-classmw-headlineinstall-gbrowse-to-work-with-chadospan"><span id="install_gbrowse_to_work_with_chado" class="mw-headline">install gbrowse to work with chado</span></h2>
+<ul>
+<li>install gbrowse</li>
+</ul>
+<p>download
+<a href="http://sourceforge.net/forum/forum.php?forum_id=672152"
+class="external text" rel="nofollow">Gbrowse</a>, unpack it. standard
+install procedure. But be sure to read <strong>README.fedora</strong> and disable
+SELINUX for apache!!!</p>
+<pre><code>perl Makefile.PL HTDOCS=/var/www/html CONF=/etc/httpd/conf CGIBIN=/var/www/cgi-bin --SELINUX=1
+make
+sudo make install UNINST=1
+</code></pre>
+<ul>
+<li>work with chado</li>
+</ul>
+<p>who is running apache?</p>
+<pre><code>[zha@localhost ~]$ ps -ef |grep httpd
+</code></pre>
+<p>in my machine it is &lsquo;apache&rsquo;. configure gbrowse to work with chado.</p>
+<pre><code>cp /home/zha/Generic-Genome-Browser-1.67/contrib/conf_files/07.chado.conf /etc/httpd/conf/gbrowse.conf/yeast_chado.conf
+</code></pre>
+<p>make two-line-change to yeast_chado.conf</p>
+<pre><code>database      = dbi:Pg:dbname=yeast_chado;host=localhost;port=5432
+user          = apache
+</code></pre>
+<p>grant select privilege on several tables to apache</p>
+<pre><code>grant select on feature to apache;
+</code></pre>
+<p>in Mac it is www, see <a href="Jim's_installation_notes" title="Jim's installation notes">Jim&rsquo;s installation
+notes</a>.</p>
+<p>it is a little bit surprise to me that I need</p>
+<pre><code>grant select on analysisfeature to apache;
+</code></pre>
+<p>since no analysisfeature exists in dataset (?)</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AUser_Experiences" title="Category%253AUser Experiences">User
+Experiences</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Zheng&#39;s_installation_notes"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 05:56 on 28 January
+2008.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">87,740 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

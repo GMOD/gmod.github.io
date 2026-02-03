@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes on simplified nd schema and Use Cases - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautonotes-on-simplified-nd-schema-and-use-casesspan"><span dir="auto">Notes on simplified nd schema and Use Cases</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#SQL"><span class="tocnumber">1</span>
+<span class="toctext">SQL</span></a></li>
+<li><a href="#Schema_Drawing"><span class="tocnumber">2</span> <span class="toctext">Schema
+Drawing</span></a></li>
+<li><a href="#Notes_on_the_tables"><span class="tocnumber">3</span> <span class="toctext">Notes on the
+tables</span></a></li>
+<li><a href="#Use_Cases"><span class="tocnumber">4</span> <span class="toctext">Use
+Cases</span></a>
+<ul>
+<li><a href="#tree_fruit_breeding_data_.28tfGDR.29"><span class="tocnumber">4.1</span> <span class="toctext">tree fruit
+breeding data (tfGDR)</span></a>
+<ul>
+<li><a href="#Cross_Experiment"><span class="tocnumber">4.1.1</span> <span class="toctext">Cross
+Experiment</span></a></li>
+<li><a href="#Phenotype_Assay"><span class="tocnumber">4.1.2</span>
+<span class="toctext">Phenotype Assay</span></a></li>
+</ul>
+</li>
+<li><a href="#mosquito_field_collections"><span class="tocnumber">4.2</span> <span class="toctext">mosquito
+field collections</span></a>
+<ul>
+<li><a href="#Field_Collections_.2B_karyotyping"><span class="tocnumber">4.2.1</span> <span class="toctext">Field
+Collections +
+karyotyping</span></a>
+<ul>
+<li><a href="#Collection"><span class="tocnumber">4.2.1.1</span>
+<span class="toctext">Collection</span></a></li>
+<li><a href="#Karyotyping"><span class="tocnumber">4.2.1.2</span>
+<span class="toctext">Karyotyping</span></a></li>
+</ul>
+</li>
+<li><a href="#Questions:"><span class="tocnumber">4.2.2</span>
+<span class="toctext">Questions:</span></a></li>
+</ul>
+</li>
+<li><a href="#mosquito_phenotype_data"><span class="tocnumber">4.3</span> <span class="toctext">mosquito
+phenotype data</span></a>
+<ul>
+<li><a href="#RNAi_knockdown_experiments"><span class="tocnumber">4.3.1</span> <span class="toctext">RNAi
+knockdown experiments</span></a></li>
+<li><a href="#stocks_selected_for_phenotype"><span class="tocnumber">4.3.2</span> <span class="toctext">stocks
+selected for phenotype</span></a>
+<ul>
+<li><a href="#stock_selection"><span class="tocnumber">4.3.2.1</span>
+<span class="toctext">stock selection</span></a></li>
+<li><a href="#genotyping_performed"><span class="tocnumber">4.3.2.2</span>
+<span class="toctext">genotyping
+performed</span></a></li>
+</ul>
+</li>
+<li><a href="#Insecticide_Resistance_Assay"><span class="tocnumber">4.3.3</span>
+<span class="toctext">Insecticide Resistance
+Assay</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idsql-classmw-headlinesqlspan"><span id="SQL" class="mw-headline">SQL</span></h2>
+<p><a
+href="https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql"
+class="external free"
+rel="nofollow"><a href="https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql">https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql</a></a></p>
+<h2 id="span-idschema_drawing-classmw-headlineschema-drawingspan"><span id="Schema_Drawing" class="mw-headline">Schema Drawing</span></h2>
+<p><a
+href="http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010#April_2010"
+class="external free"
+rel="nofollow"><a href="http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010">http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010</a></a></p>
+<h2 id="span-idnotes_on_the_tables-classmw-headlinenotes-on-the-tablesspan"><span id="Notes_on_the_tables" class="mw-headline">Notes on the tables</span></h2>
+<p>stock</p>
+<ul>
+<li>Stores all types (groups or individuals) of germplasm, and their
+relationship is defined through stock_relationship table</li>
+<li>Stock Relationship Ontology under development in the page below</li>
+</ul>
+<p><a href="Stock_Relationship_Ontology" class="external free"
+rel="nofollow"><a href="http://gmod.org/wiki/Stock_Relationship_Ontology">http://gmod.org/wiki/Stock_Relationship_Ontology</a></a></p>
+<p>nd_assay</p>
+<ul>
+<li>The type_id would store whether the assay is phenotype assay, genotype
+assay, crossexperiment, field collection study. or any other potential
+assays.</li>
+<li>In case of phenotype/genotype assay, the assay_id is unique per
+specific sample of a stock (part or clone of a stock under specific
+treatment), per collection date (eg. postharvest phenotype assay), per
+assay date, per type of protocol (eg. a specific molecular marker in
+case of genotype assay)</li>
+</ul>
+<p>nd_assay_phenotype</p>
+<ul>
+<li>linking table between nd_assay and phenotype</li>
+<li><strong>Question:</strong> The SQL document says that there is one to one
+relationship between assay_id and phenotype_id but multiple samples
+can have the same phenotypic value so it would be many to one
+relationship. For example, the phenotypic value of firmness (eg.
+apple) varies from 1 to 5 (1 being very soft and 5 being very firm).
+Multiple assay_ids, therefore, can be linked to phenotype_id with the
+attr_id &lsquo;firmness&rsquo; and value 1.</li>
+</ul>
+<p>- [Naama] From my understanding every time you measure a phenotype
+you store it it the phenotype table with the relevant attributes. I
+don&rsquo;t think you are supposed to &lsquo;reuse&rsquo; these records, even if you get a
+similar measurement.</p>
+<ul>
+<li>[Sook] Perhaps chado users could choose either way? If we check 1000
+flies and 500 of them had white eyes and the rest of them had red eyes,
+we can only have two rows in phenotype table - red or white. Otherwise
+we&rsquo;ll have 1000 rows each connected with individual assay.. I think
+ParameciumDB store distinct phenotypes and link to multiple stocks.
+<a href="http://paramecium.cgm.cnrs-gif.fr/db/Phenotype/5"
+class="external free"
+rel="nofollow"><a href="http://paramecium.cgm.cnrs-gif.fr/db/Phenotype/5">http://paramecium.cgm.cnrs-gif.fr/db/Phenotype/5</a></a></li>
+</ul>
+<p>nd_assay_genotype</p>
+<ul>
+<li>linking table between nd_assay and genotype</li>
+<li><strong>Question:</strong> For heterozygotes, do we store the genotype of an
+individual or an allele? In another word, when SSR results in 200 in
+one allele 230 in another for a locus of an individual, do we store
+200/230 in genotype table or 200 and 230 separately? If we store the
+genotype of an allele in the genotype table, one nd_assay_id should be
+able to linked to multiple genotype_id. So nd_assay to genotype will
+be many to many in that case.</li>
+</ul>
+<p>-[Naama] I would say for individuals you store the heterozygous
+genotype (200/230) and for an allele entry you store the actual allele
+genotype. If your individual is in the stock table, I guess you could
+link it to the allele and retrieve the genotype from there.</p>
+<p>nd_assayprop</p>
+<ul>
+<li>Stores all the assay related data using cvterm_id and value</li>
+<li>The sample_id (or clone_id, tree_id, etc) of a stock, when part of a
+stock was used as a sample or a stock was propagated to produce
+multiple clones.</li>
+<li>Any treatment or environmental condition applied to the sample
+(fertilizer, salt conc, temp, etc), which are not part of a specific
+phenotyping/genotyping protocol</li>
+<li>Any property of a sample (eg. number of fruits picked per sample,
+fresh vs. stored, etc)</li>
+<li>Dates (collection date/assay date for phenoytping assay, assay date
+for genotyping assay, cross date for cross experiment and collection
+start/end date for field collection experiment)</li>
+<li>cross name/ID and cross type (F1, F2, etc) for cross experiment</li>
+<li>Notes and comments for a specific assay</li>
+<li><strong>Question:</strong> Experimenter_id could be stored in cvterm_id and value
+and link to contact table OR do we better have nd_assay_contact table?</li>
+</ul>
+<p>-[Naama] experimenter_id should be in a contact table (contact_id) .<br>
+-[Sook] Then can we add assay_contact table?</p>
+<p>nd_assay_project</p>
+<ul>
+<li>Links individual assays/crosses to a bigger project</li>
+<li>Related tables: projectprop and project_relationship</li>
+</ul>
+<p>nd_assay_stock</p>
+<ul>
+<li>Linking table between nd_assay and stock</li>
+<li>New stocks can be generated by nd_assay in case of field collection or
+cross experiment (progeny)</li>
+<li>Or stock can be used for nd_assay in case of phenotype assay, genotype
+assay, and cross experiment (parent)</li>
+<li>The type_id can record whether the stock is a female parent, male
+parent, parent for mutation, or progeny in case of cross experiment</li>
+<li>The rootstocks that are used in planting fruit trees can be recorded
+in nd_assay_stock and the type_id could represent &lsquo;root stock&rsquo;.</li>
+</ul>
+<p>nd_assay_stockprop</p>
+<ul>
+<li>Since nd_assay_stock is only a linking table now, not a table to store
+a specific sample of a stock, the IDs and the treatments done to the
+sample of a stock can be stored in nd_assayprop</li>
+<li>What could be stored here?</li>
+</ul>
+<p>nd_protocol</p>
+<ul>
+<li>stores phenotyping/genotyping protocols</li>
+<li>For genotyping assays, the protocol would be equivalent to molcular
+markers</li>
+</ul>
+<p>nd_protocolprop</p>
+<ul>
+<li>Any property of a protocol</li>
+</ul>
+<p>nd_assay_protocol</p>
+<ul>
+<li>linking table between nd_assay and nd_protocol</li>
+<li>Many to one relationship between assay_id and protocol_id</li>
+</ul>
+<p>nd_reagent</p>
+<ul>
+<li>A reagent such as a primer, an enzyme, an adapter oligo, a linker
+oligo used in genotyping protocol or any other protocol</li>
+<li>feature_id links reagent with DNA sequences (eg. primer) to an entry
+in feature table</li>
+</ul>
+<p>nd_reagentprop</p>
+<ul>
+<li>Any property of reagents</li>
+</ul>
+<p>nd_reagent_relationship</p>
+<ul>
+<li>relationship between reagents</li>
+</ul>
+<p>nd_protocol_reagent</p>
+<ul>
+<li>linking table between nd_protocol and nd_reagent</li>
+</ul>
+<p>nd_geolocation</p>
+<p>nd_geolocationprop</p>
+<h2 id="span-iduse_cases-classmw-headlineuse-casesspan"><span id="Use_Cases" class="mw-headline">Use Cases</span></h2>
+<h3 id="span-idtree_fruit_breeding_data_28tfgdr29-classmw-headlinetree-fruit-breeding-data-tfgdrspan"><span id="tree_fruit_breeding_data_.28tfGDR.29" class="mw-headline">tree fruit breeding data (tfGDR)</span></h3>
+<h4 id="span-idcross_experiment-classmw-headlinecross-experimentspan"><span id="Cross_Experiment" class="mw-headline">Cross Experiment</span></h4>
+<p>Data:</p>
+<ul>
+<li>Cross name/ID, location, female and male parent, progeny, project
+name, metadata such as how many seeds were produced, date of the
+cross, etc.</li>
+<li>Accession_ID, Aliases, cultivar name, pedigree, description</li>
+</ul>
+<p>Chado:</p>
+<ul>
+<li>Accession_ID is stored in &lsquo;stock&rsquo; table and the associated data such
+as cultivar name, pedigree, and description are stored in &lsquo;stockprop&rsquo;
+table.</li>
+<li>nd_experiment.type_id is the cvterm_id for &lsquo;cross_experiment&rsquo;.</li>
+<li>Cross location is stored in &rsquo;nd_experiment&rsquo; table (nd_geolocation_id).</li>
+<li>Cross name/ID and the all the metadata that are associated with the
+cross experiments are stored in &rsquo;nd_experimentprop&rsquo; table (cvterm_id
+and value).</li>
+<li>Parent and progeny are stored in &lsquo;stock&rsquo; table and they are linked to
+&rsquo;nd_experiment&rsquo; via &rsquo;nd_experiment_stock&rsquo; using type_id such as &lsquo;is a
+female parent&rsquo;, &lsquo;is a progeny&rsquo;, etc.</li>
+<li>The whole progeny is stored as a population in stock table and the
+individual line is linked to the population entry via
+&lsquo;stock_relationship&rsquo; table.</li>
+<li>Individual crosses is linked to a larger project via
+nd_experiment_project.</li>
+</ul>
+<h4 id="span-idphenotype_assay-classmw-headlinephenotype-assayspan"><span id="Phenotype_Assay" class="mw-headline">Phenotype Assay</span></h4>
+<ul>
+<li>Multiple clones of the same fruit tree accessions are planted in
+various lots of various orchards.</li>
+<li>The fruits are harvested from the tree in multiple times, freshly
+evaluated or stored in different conditions then evaluated for
+multiple phenotypes.</li>
+<li>The fruits of the multiple clonal trees in the same lot are combined
+for phenotype assays and are given the same clone_ID (?!!)</li>
+<li>Individual trees have a distinct repetition number (per individual
+tree) in addition to the clone_ID and the phenotypes of individual
+trees are evaluated multiple times.</li>
+</ul>
+<p>Data:</p>
+<ul>
+<li>Sample_ID (given by tfGDR), Clone_ID (eg. wsu001_1, gala_1),
+Accession_ID (eg. wsu001, gala, etc), pick date, assay date, storage
+time, storage condition, evaluators, plant date, repetition number.</li>
+<li>rootstock_ID, site (orchard), sub_location (plot, row and position)</li>
+<li>Name, definition and scale of phenotype descriptor and phenotypic
+value</li>
+<li>An example of phenotype is &lsquo;fruit size&rsquo; and their value can be 1
+through 5 (1=very small; 2=small; 3=medium; 4=large; 5= very large)</li>
+</ul>
+<p>Chado:</p>
+<ul>
+<li>Sample_ID is given by tfGDR for each sample to which a distinct set of
+phenotype assays were performed.</li>
+<li>Accession_ID, Clone_ID and Sample_ID are stored in &lsquo;stock&rsquo; table and
+their relationship are stored in &lsquo;stock_relationship&rsquo; table.</li>
+<li>A unique nd_experiment_id with type &lsquo;phenotype_assay&rsquo; is created for a
+unique combination of a sample and its phenotype.</li>
+<li>pick date, assay date, storage time, storage condition, rootstock and
+any other sample properties are stored in stockprop table using cvterm
+and value.</li>
+<li>If more complicated treatments are performed on the sample (eg.
+fertilizers), nd_experiment of type &lsquo;sample_treatment&rsquo; will be
+created.</li>
+<li>Evaluators of each phenotype experiment are stored in &lsquo;contact&rsquo; table,
+and linked to &rsquo;nd_experiment&rsquo; via &rsquo;nd_experiment_contact&rsquo;.</li>
+<li>Project information is stored in project, linked to nd_experiment via
+nd_experiment_project.</li>
+<li>Relationship between subprojects and larger projects are stored in
+project_relationship.</li>
+<li>Each breeder can have different definitions for similar phenotype
+descriptors, phenotype descriptors from each breeder are stored
+separately in &lsquo;cvterm&rsquo; table (eg.fruit_size from a breeder called KE
+is stored as KE_fruit_size in cvterm table).</li>
+<li>The names and definitions of phenotype descriptors are stored in
+cvterm table and their scale is stored in &lsquo;cvtermprop&rsquo; table using
+value and scale fields. For example, &lsquo;KE_fruit_size&rsquo; has a scale of 1
+to 5 with 1(tiny), 2(small), 3(medium), 4(large), and 5(very large),
+the numeric values are stored in cvtermprop.rank and the descriptions
+are stored in cvtermprop.value.</li>
+<li>Phenotype and the value , such as KE_fruit_size (attr_id) and 1
+(value), are stored in phenotype table</li>
+</ul>
+<p>Comments:</p>
+<h3 id="span-idmosquito_field_collections-classmw-headlinemosquito-field-collectionsspan"><span id="mosquito_field_collections" class="mw-headline">mosquito field collections</span></h3>
+<h4 id="span-idfield_collections_2b_karyotyping-classmw-headlinefield-collections--karyotypingspan"><span id="Field_Collections_.2B_karyotyping" class="mw-headline">Field Collections + karyotyping</span></h4>
+<h5 id="span-idcollection-classmw-headlinecollectionspan"><span id="Collection" class="mw-headline">Collection</span></h5>
+<ul>
+<li>Data:
+<ul>
+<li>Collection site, catch method, time, project</li>
+</ul>
+</li>
+<li>ND Module
+<ul>
+<li>Collection Site -&gt; nd_geolocation (lat/long/geodetic datum recorded
+directly in table. Any or all of GAZeteer IDs, postcodes, etc
+recorded as nd_geolocationprop CVterm IDs)</li>
+<li>Catch Method -&gt; nd_protocol / nd_protocolprop (catch method
+recorded in IDOMAL (or other ontology) and placed in
+nd_protocolprop)</li>
+<li>Time -&gt; nd_assay (recorded in nd_assayprop, format depending on
+whether a date/time range or cv term)</li>
+<li>Project -&gt; Project</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idkaryotyping-classmw-headlinekaryotypingspan"><span id="Karyotyping" class="mw-headline">Karyotyping</span></h5>
+<ul>
+<li>Data:
+<ul>
+<li>Karyotyping method, karyotype, project</li>
+</ul>
+</li>
+<li>ND Module
+<ul>
+<li>Karyotyping method -&gt; nd_protocol (which CV to record in? or just
+record as freetext under protocolprop?)</li>
+<li>Karyotype -&gt; genotype/feature (relies on karyotypes being clearly
+defined in feature module)</li>
+</ul>
+</li>
+</ul>
+<h4 id="span-idquestions-classmw-headlinequestionsspan"><span id="Questions:" class="mw-headline">Questions:</span></h4>
+<p>No obvious way to link a project to either a contact (i.e. experimenter)
+or a publication. project_pub / project_contact experiments needed?</p>
+<h3 id="span-idmosquito_phenotype_data-classmw-headlinemosquito-phenotype-dataspan"><span id="mosquito_phenotype_data" class="mw-headline">mosquito phenotype data</span></h3>
+<h4 id="span-idrnai_knockdown_experiments-classmw-headlinernai-knockdown-experimentsspan"><span id="RNAi_knockdown_experiments" class="mw-headline">RNAi knockdown experiments</span></h4>
+<ul>
+<li>Data:
+<ul>
+<li>original lab strain, experimental and control dsRNA reagents,
+observed phenotype</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li>ND Module <strong>Approach 1</strong> (graph version: <a
+href="http://wiki.vectorbase.org/index.php/Popgen_development/Use_case_diagrams#Approach_1#Approach_1"
+class="external autonumber" rel="nofollow">[1]</a>)
+<ul>
+<li>the lab strain is represented by the &lsquo;stock&rsquo; table</li>
+<li>the knockdown is represented by &rsquo;nd_assay&rsquo; (type = &ldquo;RNAi knockdown
+phenotype assay&rdquo;), linked through &rsquo;nd_assay_stock&rsquo; (type = &ldquo;stock
+sample&rdquo;?)</li>
+<li>the knockdown is described by one entry in the &rsquo;nd_protocol&rsquo; table</li>
+<li>rearing and injection conditions are described in &rsquo;nd_protocolprop&rsquo;
+(referring to &rsquo;nd_protocol&rsquo;)</li>
+<li>experimental dsRNA reagent(s) is(are) represented as a &rsquo;nd_reagent&rsquo;
+(via nd_protocol_reagent) and are linked to a &lsquo;feature&rsquo; (gene or
+location of primers?)</li>
+<li>&rsquo;nd_reagentprop&rsquo; cvterm describes the reagent as &rsquo;experimental RNAi
+reagent&rsquo;.</li>
+<li>control dsRNA reagents are also attached to the protocol via
+&rsquo;nd_protocol_reagent&rsquo; but are described in nd_reagentprop as
+&lsquo;control RNAi reagent&rsquo;</li>
+<li>the phenotype is attached to the &rsquo;nd_assay&rsquo; via &rsquo;nd_assay_phenotype&rsquo;</li>
+</ul>
+</li>
+</ul>
+<p>Is a problem with this approach that the phenotype looks like it is
+attached to the lab strain? It also convolves the two operations
+(knockdown and phenotype assay) into one &rsquo;nd_assay&rsquo;, although they could
+be described by two separate &rsquo;nd_protocol&rsquo;s. An alternative approach is
+to create a new stock entity to represent the (temporarily) genetically
+altered organisms.</p>
+<p>Sethnr 11:37,
+27 May 2010 (UTC) <em>even if described by two protocols we would then have
+to distinguish which genotype/phenotype/assay_prop values arose from
+which protocol. Simple in this case, but perhaps not in others. I
+suspect adding the second assay will be less of a headache</em></p>
+<ul>
+<li>ND Module <strong>Approach 2</strong> (graph version: <a
+href="http://wiki.vectorbase.org/index.php/Popgen_development/Use_case_diagrams#Approach_2#Approach_2"
+class="external autonumber" rel="nofollow">[2]</a>)
+<ul>
+<li>lab strain → stock</li>
+<li>the knockdown is represented by &rsquo;nd_assay&rsquo; (type = &ldquo;RNAi knockdown&rdquo;)
+the lab strain is linked through &rsquo;nd_assay_stock&rsquo; (type = &ldquo;stock
+sample&rdquo;?) as above, <strong>but separately for each dsRNA treatment</strong>
+(experimental and control)</li>
+<li>the knockdown treated mosquitoes are represented by another entry in
+&lsquo;stock&rsquo;, linked from &rsquo;nd_assay&rsquo; (above) via &rsquo;nd_assay_stock&rsquo; (type =
+&ldquo;transient genetic modification&rdquo;?)</li>
+<li>the experimental knockdown stock has a &rsquo;nd_assay&rsquo; (type = &lsquo;phenotype
+assay&rsquo;) associated via &rsquo;nd_assay_stock&rsquo; (type = &ldquo;experimental stock
+sample&rdquo;)</li>
+<li>the control knockdown stock has a &rsquo;nd_assay&rsquo; (type = &lsquo;phenotype
+assay&rsquo;) associated via &rsquo;nd_assay_stock&rsquo; (type = &ldquo;control stock
+sample&rdquo;)</li>
+<li>the phenotype is attached to the &rsquo;nd_assay&rsquo; via &rsquo;nd_assay_phenotype&rsquo;
+as in approach 1</li>
+</ul>
+</li>
+</ul>
+<p>Sethnr 11:37,
+27 May 2010 (UTC) <em>it is arguable we could get away without a separate
+control stock. Whilst the knockdown is genotypically (-ish) different
+than the G3 line, and as such needs a separate entry in the stock table,
+the GFP knockdown is bred to be a direct representation of the G3 line.
+As long as it&rsquo;s use as a control is clearly marked (e.g.
+stock_assay.type = &ldquo;control&rdquo; + stock_assayprop = &ldquo;dsGFP knockdown&rdquo;) I
+don&rsquo;t see a problem with linking the g3 stock directly to the control
+assay.</em></p>
+<h4 id="span-idstocks_selected_for_phenotype-classmw-headlinestocks-selected-for-phenotypespan"><span id="stocks_selected_for_phenotype" class="mw-headline">stocks selected for phenotype</span></h4>
+<h5 id="span-idstock_selection-classmw-headlinestock-selectionspan"><span id="stock_selection" class="mw-headline">stock selection</span></h5>
+<ul>
+<li>data
+<ul>
+<li>G3 mosquitos grown, midguts dissected and mosquitos split into 3
+groups by count of melanized oocysts</li>
+</ul>
+</li>
+<li>ND Module
+<ul>
+<li>G3 stock links to 3 assays
+<ul>
+<li>assays link to a single protocol describing whole selection
+process, but&hellip;</li>
+<li>each assay has a different assay prop describing which category
+the mosquitos were put in to.</li>
+</ul>
+</li>
+<li>3 assays each linked to a NEW stock
+<ul>
+<li>via assay_stock table, type = &ldquo;mosquito midgut&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idgenotyping_performed-classmw-headlinegenotyping-performedspan"><span id="genotyping_performed" class="mw-headline">genotyping performed</span></h5>
+<ul>
+<li>data
+<ul>
+<li>DNA extracted from bodies of above and used in genotyping assays</li>
+</ul>
+</li>
+<li>ND Module
+<ul>
+<li>3 new stocks linked to new assays (type = &ldquo;genotyping&rdquo;)
+<ul>
+<li>via assay_stock table, type = &ldquo;mosquito body&rdquo;</li>
+</ul>
+</li>
+<li>3 genotyping assays link to 3 separate genotypes</li>
+</ul>
+</li>
+</ul>
+<p>see diagram on <a
+href="http://wiki.vectorbase.org/index.php/GMOD_Natural_Diversity_Use_Cases#stocks_selected_for_phenotype#stocks_selected_for_phenotype"
+class="external text" rel="nofollow">VB wiki</a></p>
+<h4 id="span-idinsecticide_resistance_assay-classmw-headlineinsecticide-resistance-assayspan"><span id="Insecticide_Resistance_Assay" class="mw-headline">Insecticide Resistance Assay</span></h4>
+<ul>
+<li>Insecticide Resistance assay</li>
+<li>Sample developmental stage -&gt; ontology ID in nd_assay_stockprop</li>
+<li>Sample age -&gt; ontology term in nd_assay_stockprop</li>
+<li>Sample size -&gt; CV term-value pair stored in in nd_assay_stock</li>
+<li>Assay type -&gt; ontology/cv term in nd_assay</li>
+<li>Assay method -&gt; ontology term in nd_protocolprop</li>
+<li>Insecticide (&amp; synergist ) -&gt; nd_protocol_reagent, nd_reagentprop</li>
+<li>Insecticide (&amp; synergist ) concentration -&gt; nd_protocol_reagent,
+nd_reagentprop</li>
+<li>Results -&gt; nd_assayprop</li>
+<li>Observed phenotype -&gt; nd_assay_phenotype, phenotype module</li>
+<li>Genotype -&gt; nd_assay_genotype, genotype module</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253ANatural_Diversity" title="Category%253ANatural Diversity">Natural
+Diversity</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Notes_on_simplified_nd_schema_and_Use_Cases"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 00:18 on 5 January
+2011.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">68,334 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

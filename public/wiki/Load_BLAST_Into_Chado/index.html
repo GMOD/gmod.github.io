@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load BLAST Into Chado - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoload-blast-into-chadospan"><span dir="auto">Load BLAST Into Chado</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Abstract"><span class="tocnumber">1</span>
+<span class="toctext">Abstract</span></a></li>
+<li><a href="#Have_an_existing_Chado_genome_database"><span class="tocnumber">2</span> <span class="toctext">Have an
+existing Chado genome
+database</span></a></li>
+<li><a href="#Convert_BLAST_analysis_to_GFF3"><span class="tocnumber">3</span> <span class="toctext">Convert BLAST
+analysis to GFF3</span></a>
+<ul>
+<li><a href="#BLAST_GFF3_sample_for_Chado"><span class="tocnumber">3.1</span> <span class="toctext">BLAST GFF3
+sample for Chado</span></a></li>
+</ul>
+</li>
+<li><a href="#Load_Query_Protein_sequence_to_Chado_DB"><span class="tocnumber">4</span> <span class="toctext">Load Query
+Protein sequence to Chado
+DB</span></a></li>
+<li><a href="#Load_BLAST_result_GFF3_to_Chado_DB"><span class="tocnumber">5</span> <span class="toctext">Load BLAST
+result GFF3 to Chado DB</span></a>
+<ul>
+<li><a href="#Chado_Tables_Updated"><span class="tocnumber">5.1</span> <span class="toctext">Chado
+Tables Updated</span></a></li>
+</ul>
+</li>
+<li><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See
+also</span></a></li>
+<li><a href="#More_Information"><span class="tocnumber">7</span> <span class="toctext">More
+Information</span></a></li>
+<li><a href="#Authors"><span class="tocnumber">8</span>
+<span class="toctext">Authors</span></a></li>
+</ul>
+<h1 id="span-idabstract-classmw-headlineabstractspan"><span id="Abstract" class="mw-headline">Abstract</span></h1>
+<p>This <a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a> describes steps to add a
+<a href="Category%253ABLAST" title="Category%253ABLAST">BLAST</a> analysis to a <a href="Chado_-_Getting_Started" title="Chado - Getting Started">Chado
+database</a>.</p>
+<h1 id="span-idhave_an_existing_chado_genome_database-classmw-headlinehave-an-existing-chado-genome-databasespan"><span id="Have_an_existing_Chado_genome_database" class="mw-headline">Have an existing Chado genome database</span></h1>
+<p>See <a href="Load_RefSeq_Into_Chado" title="Load RefSeq Into Chado">Load RefSeq Into
+Chado</a> for advice on
+how to load a GenBank Genome into a database. In the following examples,
+<strong>bp_<em>scriptname</em></strong> is from <a href="BioPerl" title="BioPerl">BioPerl</a>, and
+<strong>gmod_<em>scriptname</em></strong> is from GMOD. As of this date (2007 April) you
+will need current modules from the <a href="BioPerl" title="BioPerl">BioPerl</a> Git and
+<a href="SVN" class="mw-redirect" title="SVN">GMOD SVN repositories</a>
+to have this example work.</p>
+<h1 id="span-idconvert_blast_analysis_to_gff3-classmw-headlineconvert-blast-analysis-to-gff3span"><span id="Convert_BLAST_analysis_to_GFF3" class="mw-headline">Convert BLAST analysis to GFF3</span></h1>
+<p>For example, match yeast proteins to your genome with tBLASTn, and
+reformat to <a href="GFF3" title="GFF3">GFF3</a>.</p>
+<pre><code> $ncbi/blastall -p tblastn -i MOD_Scer.fa -d dmel4 -o dmel4-modsc.tblastn
+</code></pre>
+<p>First reformat to <a href="GFF3" title="GFF3">GFF3</a> with the
+<a href="BioPerl" title="BioPerl">BioPerl</a> <code>bp_search2gff.pl</code> script. The Chado policy
+here is to put your program and blast query data names into the GFF3
+<code>--source</code> field. The GFF3 <code>--method</code> field should always be SO term
+&lsquo;match_part&rsquo;. You also want the <code>--type hit</code> and <code>--target</code> options.</p>
+<pre><code> scripts/bp_search2gff.pl --in dmel4-modsc.tblastn \
+     --out dmel4-modsc.tblastn.gff -version 3 \
+     --format blast \
+     --method match_part --source tBLASTn.MOD_Scer \
+     --type hit --target
+</code></pre>
+<p>Finally clean up the GFF3 a bit:</p>
+<pre><code>  perl -pi -e 's/Target=Sequence:/Target=/' dmel4-modsc.tblastn.gff
+</code></pre>
+<h2 id="span-idblast_gff3_sample_for_chado-classmw-headlineblast-gff3-sample-for-chadospan"><span id="BLAST_GFF3_sample_for_Chado" class="mw-headline">BLAST GFF3 sample for Chado</span></h2>
+<p>Result should be formatted like this:</p>
+<pre><code>  ##gff-version 3
+  # sample tBLASTn yeast protein x fly chromosome 4 (GenBank NC_004353) matches
+  # GFF formatted for loading to Chado database
+
+  NC_004353 tBLASTn.MOD_Scer  match_part  141495  141815  48.9  - 0 Target=S000003211 43 156
+
+  NC_004353 tBLASTn.MOD_Scer  match_part  161699  162793  217 + 0 Target=S000005817 984 1204
+  NC_004353 tBLASTn.MOD_Scer  match_part  160517  161407  185 + 0 Target=S000005817 455 980
+     # this is a protein match with 2 HSP parts, note the identical Target=
+</code></pre>
+<h1 id="span-idload_query_protein_sequence_to_chado_db-classmw-headlineload-query-protein-sequence-to-chado-dbspan"><span id="Load_Query_Protein_sequence_to_Chado_DB" class="mw-headline">Load Query Protein sequence to Chado DB</span></h1>
+<p>You want to have your query sequences used for BLAST, such as proteins,
+for reference in your
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> db. The GMOD
+script <code>gmod_bulk_load_gff3.pl</code> will handle this after converting
+sequence Fasta to <a href="GFF3" title="GFF3">GFF3</a> format.</p>
+<pre><code> gmod_fasta2gff3.pl  --type protein --source SGD --fasta MOD_Scer.fa --gff MOD_Scer.fa.gff
+ gmod_bulk_load_gff3.pl --dbname my_chado_01  --organism yeast --dbxref --gff MOD_Scer.fa.gff
+</code></pre>
+<p>If your query sequence comes from UniProt or GenBank formats, you can
+instead use the
+<code> </code><a href="Load_GFF_Into_Chado" title="Load GFF Into Chado"><code>bp_genbank2gff.pl</code></a>
+script that will retain more useful annotations for your Chado database.
+Then BLAST matches can be linked to many known gene/protein attributes.</p>
+<h1 id="span-idload_blast_result_gff3_to_chado_db-classmw-headlineload-blast-result-gff3-to-chado-dbspan"><span id="Load_BLAST_result_GFF3_to_Chado_DB" class="mw-headline">Load BLAST result GFF3 to Chado DB</span></h1>
+<p>Use the <code>gmod_bulk_load_gff3.pl</code> script for this, indicating the input
+is <code>--analysis</code>, and the Target names are unique IDs matching above
+protein features.</p>
+<pre><code> gmod_bulk_load_gff3.pl --dbname my_chado_01  --organism fruitfly \
+   --analysis --unique_target --score raw  \
+   --gff dmel4-modsc.tblastn.gff
+</code></pre>
+<p>Note: If you have pre-loaded the database with all the protein sequence
+features such as the SGD:S000002445 protein, you should use</p>
+<pre><code>gmod_bulk_load_gff3 --analysis --unique_target
+</code></pre>
+<p>to ensure that Target feature is linked with your Blast result.</p>
+<h2 id="span-idchado_tables_updated-classmw-headlinechado-tables-updatedspan"><span id="Chado_Tables_Updated" class="mw-headline">Chado Tables Updated</span></h2>
+<p>Then you should see these database updates:</p>
+<p>Analysis table entry of the
+<a href="Chado_Companalysis_Module" title="Chado Companalysis Module">Chado_Companalysis_Module</a>:</p>
+<table>
+<thead>
+<tr>
+<th>analysis_id</th>
+<th>name</th>
+<th>description</th>
+<th>program</th>
+<th>programversion</th>
+<th>algorithm</th>
+<th>sourcename</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>tBLASTn.MOD_Scer</td>
+<td></td>
+<td>tBLASTn</td>
+<td>null</td>
+<td></td>
+<td>MOD_Scer</td>
+</tr>
+</tbody>
+</table>
+<p>Analysisfeature table entries (1/hsp)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>analysisfeature_id</td>
+<td>feature_id</td>
+<td>analysis_id</td>
+<td>rawscore</td>
+<td>normscore</td>
+<td>significance</td>
+<td>identity</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>88148</td>
+<td>10</td>
+<td>117</td>
+<td></td>
+<td></td>
+<td></td>
+<td>← 1st HSP</td>
+</tr>
+<tr>
+<td>22</td>
+<td>88150</td>
+<td>10</td>
+<td>91.7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Feature table entry for Hit feature_id 88148 :</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> SELECT * FROM feature WHERE feature_id = 88148;
+</code></pre><table>
+<thead>
+<tr>
+<th>feature_id</th>
+<th>dbxref_id</th>
+<th>organism_id</th>
+<th>name</th>
+<th>uniquename</th>
+<th>residues</th>
+<th>seqlen</th>
+<th>md5checksum</th>
+<th>type_id</th>
+<th>is_analysis</th>
+<th>is_obsolete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>88148</td>
+<td>76797</td>
+<td>10</td>
+<td>protein_match-auto88148</td>
+<td>auto88148</td>
+<td></td>
+<td></td>
+<td></td>
+<td>423</td>
+<td>t</td>
+<td>f</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Featureloc entries for Hit feature_id 88148:</p>
+<table>
+<thead>
+<tr>
+<th>featureloc_id</th>
+<th>feature_id</th>
+<th>srcfeature_id</th>
+<th>fmin</th>
+<th>is_fmin_partial</th>
+<th>fmax</th>
+<th>is_fmax_partial</th>
+<th>strand</th>
+<th>phase</th>
+<th>residue_info</th>
+<th>locgroup</th>
+<th>rank</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>88149</td>
+<td>88148</td>
+<td>88149</td>
+<td>69</td>
+<td>f</td>
+<td>858</td>
+<td>f</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>1</td>
+<td>← Target protein</td>
+</tr>
+<tr>
+<td>88148</td>
+<td>88148</td>
+<td>31118</td>
+<td>24052</td>
+<td>f</td>
+<td>24448</td>
+<td>f</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>← Source genome</td>
+</tr>
+</tbody>
+</table>
+<p>Featureloc entries for Target feature_id 88149:</p>
+<table>
+<thead>
+<tr>
+<th>featureloc_id</th>
+<th>feature_id</th>
+<th>srcfeature_id</th>
+<th>fmin</th>
+<th>is_fmin_partial</th>
+<th>fmax</th>
+<th>is_fmax_partial</th>
+<th>strand</th>
+<th>phase</th>
+<th>residue_info</th>
+<th>locgroup</th>
+<th>rank</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>88149</td>
+<td>88148</td>
+<td>88149</td>
+<td>69</td>
+<td>f</td>
+<td>858</td>
+<td>f</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>1</td>
+<td>← first HSP</td>
+</tr>
+<tr>
+<td>88151</td>
+<td>88150</td>
+<td>88149</td>
+<td>69</td>
+<td>f</td>
+<td>858</td>
+<td>f</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>1</td>
+<td>← second HSP</td>
+</tr>
+</tbody>
+</table>
+<p><em>I believe the ranks shown in the featureloc example above may not be
+correct or at least are misleading; see the <a href="Chado_Best_Practices#Results_from_BLAST" title="Chado Best Practices">Chado Best Practices
+section for handling BLAST
+results</a>
+for clarification</em> <a href="User%253AScott" title="User%253AScott">Scott</a> 19:18, 21 November
+2008 (UTC)</p>
+<h1 id="span-idsee_also-classmw-headlinesee-alsospan"><span id="See_also" class="mw-headline">See also</span></h1>
+<ul>
+<li><a href="Chado_Best_Practices#Results_from_BLAST" title="Chado Best Practices">Chado_Best_Practices#Results_from_BLAST</a></li>
+</ul>
+<h1 id="span-idmore_information-classmw-headlinemore-informationspan"><span id="More_Information" class="mw-headline">More Information</span></h1>
+<p>Please send questions to the GMOD developers list:</p>
+<p><a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
+rel="nofollow"><a href="mailto:gmod-devel@lists.sourceforge.net">gmod-devel@lists.sourceforge.net</a></a></p>
+<h1 id="span-idauthors-classmw-headlineauthorsspan"><span id="Authors" class="mw-headline">Authors</span></h1>
+<ul>
+<li><a href="User%253ADongilbert" title="User%253ADongilbert">Dongilbert</a> 23:24, 3 April 2007
+(EDT)</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ABLAST" title="Category%253ABLAST">BLAST</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_BLAST_Into_Chado" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:34 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">99,887 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

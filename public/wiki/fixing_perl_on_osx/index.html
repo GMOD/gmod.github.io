@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixing Perl on OSX - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautofixing-perl-on-osxspan"><span dir="auto">Fixing Perl on OSX</span></h1>
+<p>One of the Security Updates to Mac OSX 10.5 caused problems for Perl.
+See</p>
+<ul>
+<li><a
+href="http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/"
+class="external free"
+rel="nofollow"><a href="http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/">http://www.theregister.co.uk/2009/02/16/apple_update_perl_breakage/</a></a></li>
+<li><a href="http://www.macosxhints.com/article.php?story=20090219082024982"
+class="external free"
+rel="nofollow"><a href="http://www.macosxhints.com/article.php?story=20090219082024982">http://www.macosxhints.com/article.php?story=20090219082024982</a></a></li>
+</ul>
+<p>What seems to have happened is that Apple replaced some Perl modules
+with their older versions. These need to be reinstalled from source to
+get cpan and other things to work. Which modules need to be replaced
+seems to depend on what was updated on your system and when. Generally,
+you can figure out which modules you need by examining the error
+messages you get when installing. I had to manually reinstall IO,
+Scalar-List-Utils, Compress-Raw-Zlib, and Compress-Zlib from the tar
+distributions.</p>
+<p>The general process is illustrated by how to reinstall IO</p>
+<pre><code>  mkdir -p /SourceCache
+  cd /SourceCache
+  curl -O http://cpan.mirror.solnet.ch/authors/id/G/GB/GBARR/IO-1.2301.tar.gz
+  tar xzf IO-1.2301.tar.gz
+  cd IO-1.2301
+  perl Makefile.PL
+  make
+  make install
+</code></pre>
+<p>This was copied from an Apple discussion forum. There&rsquo;s nothing special
+about using /SourceCache as the directory for the downloaded modules. I
+did have some problems with cpan mirrors failing to download the needed
+code modules via curl. In most cases you can get these via ftp.</p>
+<p>See:</p>
+<ul>
+<li><a href="http://www.cpan.org/SITES.html" class="external free"
+rel="nofollow"><a href="http://www.cpan.org/SITES.html">http://www.cpan.org/SITES.html</a></a></li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253APerl" title="Category%253APerl">Perl</a></li>
+<li><a href="Category%253AMac_OS_X" title="Category%253AMac OS X">Mac OS X</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Fixing_Perl_on_OSX" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 02:50 on 9 June
+2009.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">11,746 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

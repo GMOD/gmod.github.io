@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse (DasI) Presentation - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-dasi-presentationspan"><span dir="auto">GBrowse (DasI) Presentation</span></h1>
+<p>This Wiki page is an edited version of
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/DasI_middleware.pdf" class="internal"
+title="DasI middleware.pdf">Scott&rsquo;s presentation</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Create_the_database"><span class="tocnumber">1</span> <span class="toctext">Create the
+database</span></a></li>
+<li><a href="#Problem_1_-_Loading_Data"><span class="tocnumber">2</span> <span class="toctext">Problem 1 -
+Loading Data</span></a></li>
+<li><a href="#Adaptor_Components"><span class="tocnumber">3</span> <span class="toctext">Adaptor
+Components</span></a></li>
+<li><a href="#Use_Bio::DB::Das::Chado"><span class="tocnumber">4</span> <span class="toctext">Use
+Bio::DB::Das::Chado</span></a></li>
+<li><a href="#Problem_2_-_Use_Some_Accessors"><span class="tocnumber">5</span> <span class="toctext">Problem 2 -
+Use Some Accessors</span></a></li>
+<li><a href="#Bulk_Output"><span class="tocnumber">6</span> <span class="toctext">Bulk
+Output</span></a></li>
+<li><a href="#Advantages"><span class="tocnumber">7</span>
+<span class="toctext">Advantages</span></a></li>
+<li><a href="#Conclusion"><span class="tocnumber">8</span>
+<span class="toctext">Conclusion</span></a></li>
+</ul>
+<h5 id="span-idcreate_the_database-classmw-headlinecreate-the-databasespan"><span id="Create_the_database" class="mw-headline">Create the database</span></h5>
+<pre><code>$ perl Makefile.PL
+$ make
+$ sudo make install
+$ make load_schema
+$ make prepdb             # now with Xenopus!
+$ make ontologies        # load rel, SO, featureprop
+</code></pre>
+<h5 id="span-idproblem_1_-_loading_data-classmw-headlineproblem-1---loading-dataspan"><span id="Problem_1_-_Loading_Data" class="mw-headline">Problem 1 - Loading Data</span></h5>
+<p>Create some <a href="GFF3" title="GFF3">GFF3</a> from the specifications:</p>
+<pre><code>fake_chromosome example chromosome 1  15017 .  .  . ID=fake_chromosome;Name=fake_chromosome
+fake_chromosome example gene   13691  14720 .  +  . ID=xfile;Name=xfile;Alias=mulder,scully;Note=A test gene for GMOD meeting
+fake_chromosome example mRNA   13691  14720 .  +  . ID=xfile_mRNA;Parent=xfile
+fake_chromosome example exon   13691  13767 .  +  . Parent=xfile_mRNA
+fake_chromosome example exon   14687  14720 .  +  . Parent=xfile_mRNA
+fake_chromosome example gene   12648  13136 .  +  . ID=x-men
+</code></pre>
+<p>Gene inserted as GFF3 using a standard bulk loader:</p>
+<p><code>$ gmod_bulk_load_gff3.pl -g sample.gff3</code></p>
+<p><em>&hellip;lots of output&hellip;</em></p>
+<h5 id="span-idadaptor_components-classmw-headlineadaptor-componentsspan"><span id="Adaptor_Components" class="mw-headline">Adaptor Components</span></h5>
+<ul>
+<li>Bio::DB::Das::Chado
+<ul>
+<li>Database connection object</li>
+</ul>
+</li>
+<li>Bio::DB::Das::Chado::Segment
+<ul>
+<li>Object for any range of DNA</li>
+</ul>
+</li>
+<li>Bio::DB::Das::Chado::Segment::Feature</li>
+</ul>
+<h5 id="span-iduse_biodbdaschado-classmw-headlineuse-biodbdaschadospan"><span id="Use_Bio::DB::Das::Chado" class="mw-headline">Use Bio::DB::Das::Chado</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">use Bio::DB::Das::Chado;
+ 
+my $chado = Bio::DB::Das::Chado-&gt;new(
+      -dsn =&gt; &#34;dbi:Pg:dbname=test&#34;,
+      -user=&gt; &#34;scott&#34;,
+      -pass=&gt; &#34;&#34; ) || die &#34;no new chado&#34;;
+ 
+my $gene_name = &#39;xfile&#39;;
+ 
+my ($gene_fo) = $chado-&gt;get_features_by_name($gene_name);
+</code></pre><h5 id="span-idproblem_2_-_use_some_accessors-classmw-headlineproblem-2---use-some-accessorsspan"><span id="Problem_2_-_Use_Some_Accessors" class="mw-headline">Problem 2 - Use Some Accessors</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">print &#34;symbol: &#34;      .  $gene_fo-&gt;display_name.&#34;\n&#34;;
+print &#34;synonyms: &#34;  .  join(&#39;, &#39;,$gene_fo-&gt;synonyms).&#34;\n&#34;;
+print &#34;description: &#34; . $gene_fo-&gt;notes.&#34;\n&#34;;
+print &#34;type: &#34;        .     $gene_fo-&gt;type.&#34;\n&#34;;
+ 
+my ($mRNA) = $gene_fo-&gt;sub_SeqFeature();
+my @exons  = $mRNA-&gt;sub_SeqFeature();
+ 
+for my $exon (@exons) {
+    next unless ($exon-&gt;type-&gt;method eq &#39;exon&#39;);
+    $exon_count++;
+    print &#34;exon$exon_count start: &#34; . $exon-&gt;start.&#34;\n&#34;;
+    print &#34;exon$exon_count end: &#34;  . $exon-&gt;end.  &#34;\n&#34;;
+    $cds_seq .= $exon-&gt;seq-&gt;seq; # the first seq call returns a Bio::Seq object, the second gets the DNA string from Bio::Seq
+}
+</code></pre><h5 id="span-idbulk_output-classmw-headlinebulk-outputspan"><span id="Bulk_Output" class="mw-headline">Bulk Output</span></h5>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> my $gene_name = &#39;x-*&#39;;
+ 
+ my @genes = $chado-&gt;get_features_by_name(
+                 -name =&gt; $gene_name,
+                 -class=&gt; &#39;gene&#39; );
+ 
+ for my $gene (@genes) {
+     print join(&#34;\t&#34;,
+                $gene-&gt;feature_id,
+                $gene-&gt;display_name,
+                $gene-&gt;organism),&#34;\n&#34;;
+ }
+</code></pre><p>Or see your report in <a href="GBrowse.1" title="GBrowse">GBrowse</a></p>
+<h5 id="span-idadvantages-classmw-headlineadvantagesspan"><span id="Advantages" class="mw-headline">Advantages</span></h5>
+<ul>
+<li>Comes &lsquo;for free&rsquo; with GBrowse
+<ul>
+<li>GBrowse will run with any DasI-compatible interface</li>
+</ul>
+</li>
+<li>Uses &lsquo;familiar&rsquo; BioPerl idioms, very similar to widely used
+Bio::DB::GFF (though with fewer methods)</li>
+</ul>
+<h5 id="span-idconclusion-classmw-headlineconclusionspan"><span id="Conclusion" class="mw-headline">Conclusion</span></h5>
+<ul>
+<li>Not suitable as a &lsquo;general&rsquo;
+<a href="Glossary#Middleware" title="Glossary">middleware</a> layer
+<ul>
+<li>May be suitable for some applications, particularly if they are
+similar to <a href="GBrowse.1" title="GBrowse">GBrowse</a> or other uses of
+Bio::DB::GFF</li>
+</ul>
+</li>
+</ul>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253APerl" title="Category%253APerl">Perl</a></li>
+<li><a href="Category%253AMiddleware_Presentations" title="Category%253AMiddleware Presentations">Middleware
+Presentations</a></li>
+<li><a href="Category%253ABioPerl" title="Category%253ABioPerl">BioPerl</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_(DasI)_Presentation"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:05 on 8 October
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">16,851 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

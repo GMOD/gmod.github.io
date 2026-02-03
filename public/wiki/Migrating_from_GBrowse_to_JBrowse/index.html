@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Migrating from GBrowse to JBrowse - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautomigrating-from-gbrowse-to-jbrowsespan"><span dir="auto">Migrating from GBrowse to JBrowse</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Things_to_consider"><span class="tocnumber">1</span> <span class="toctext">Things to
+consider</span></a>
+<ul>
+<li><a href="#New_or_Existing_Server"><span class="tocnumber">1.1</span> <span class="toctext">New or
+Existing Server</span></a></li>
+<li><a href="#disk_space_requirements"><span class="tocnumber">1.2</span> <span class="toctext">disk space
+requirements</span></a></li>
+<li><a href="#computing_requirements"><span class="tocnumber">1.3</span> <span class="toctext">computing
+requirements</span></a></li>
+<li><a href="#do_you_have_the_original_GFF.3F"><span class="tocnumber">1.4</span> <span class="toctext">do you
+have the original GFF?</span></a></li>
+<li><a href="#dealing_with_multiple_species.2Fdata_sources"><span class="tocnumber">1.5</span> <span class="toctext">dealing
+with multiple species/data
+sources</span></a></li>
+</ul>
+</li>
+<li><a href="#prepare-refseqs.pl"><span class="tocnumber">2</span>
+<span class="toctext">prepare-refseqs.pl</span></a></li>
+<li><a href="#.2A-to-json.pl"><span class="tocnumber">3</span>
+<span class="toctext">*-to-json.pl</span></a>
+<ul>
+<li><a href="#Mapping_out_GBrowse_to_JBrowse_configuration"><span class="tocnumber">3.1</span> <span class="toctext">Mapping
+out GBrowse to JBrowse
+configuration</span></a>
+<ul>
+<li><a href="#Special_note_about_callbacks"><span class="tocnumber">3.1.1</span>
+<span class="toctext">Special note about
+callbacks</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Dealing_with_binary_data"><span class="tocnumber">4</span> <span class="toctext">Dealing with
+binary data</span></a></li>
+<li><a href="#Where_to_get_help"><span class="tocnumber">5</span> <span class="toctext">Where to get
+help</span></a></li>
+</ul>
+<h2 id="span-idthings_to_consider-classmw-headlinethings-to-considerspan"><span id="Things_to_consider" class="mw-headline">Things to consider</span></h2>
+<h3 id="span-idnew_or_existing_server-classmw-headlinenew-or-existing-serverspan"><span id="New_or_Existing_Server" class="mw-headline">New or Existing Server</span></h3>
+<h3 id="span-iddisk_space_requirements-classmw-headlinedisk-space-requirementsspan"><span id="disk_space_requirements" class="mw-headline">disk space requirements</span></h3>
+<h3 id="span-idcomputing_requirements-classmw-headlinecomputing-requirementsspan"><span id="computing_requirements" class="mw-headline">computing requirements</span></h3>
+<p>The computing requirements for a JBrowse server are generally much less
+than a GBrowse server, since the JBrowse server will only be serving up
+small bits of text as json and javascript files, as opposed to creating
+images on the fly for GBrowse servers. On the other hand, processing the
+data to create the JBrowse server is generally more intensive (or at a
+minimum, as much as) that what is needed for a GBrowse instance. It is
+not unreasonable therefore to have a server with a fair amount of
+resources for doing the data processing and then using a &ldquo;smaller&rdquo;
+server for serving the data. In fact, it is possible to put all of the
+data in an AWS S3 store and not have a server at all once the data
+processing is done. See
+<a href="Using_AWS_S3_For_JBrowse" title="Using AWS S3 For JBrowse">Using_AWS_S3_For_JBrowse</a>.</p>
+<h3 id="span-iddo_you_have_the_original_gff3f-classmw-headlinedo-you-have-the-original-gffspan"><span id="do_you_have_the_original_GFF.3F" class="mw-headline">do you have the original GFF?</span></h3>
+<p>Generally, it Is easier to create a JBrowse instance from the original
+GFF that from a GBrowse database like Bio::DB::GFF or
+Bio::DB::SeqFeature::Store.</p>
+<h3 id="span-iddealing_with_multiple_species2fdata_sources-classmw-headlinedealing-with-multiple-speciesdata-sourcesspan"><span id="dealing_with_multiple_species.2Fdata_sources" class="mw-headline">dealing with multiple species/data sources</span></h3>
+<p>JBrowse can easily support having multiple species or data sources, like
+you would see in a drop down menu in GBrowse. See <a href="JBrowse_FAQ#How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F" title="JBrowse FAQ">this
+FAQ</a>
+and the one below it, and the section in the <a href="JBrowse_Configuration_Guide" title="JBrowse Configuration Guide">JBrowse Configuration
+Guide</a> that
+they point to.</p>
+<h2 id="span-idprepare-refseqspl-classmw-headlineprepare-refseqsplspan"><span id="prepare-refseqs.pl" class="mw-headline">prepare-refseqs.pl</span></h2>
+<p>Example command lines for GFF, FASTA and BioDB</p>
+<h2 id="span-id2a-to-jsonpl-classmw-headline-to-jsonplspan"><span id=".2A-to-json.pl" class="mw-headline">*-to-json.pl</span></h2>
+<h3 id="span-idmapping_out_gbrowse_to_jbrowse_configuration-classmw-headlinemapping-out-gbrowse-to-jbrowse-configurationspan"><span id="Mapping_out_GBrowse_to_JBrowse_configuration" class="mw-headline">Mapping out GBrowse to JBrowse configuration</span></h3>
+<p>A table would be good</p>
+<h4 id="span-idspecial_note_about_callbacks-classmw-headlinespecial-note-about-callbacksspan"><span id="Special_note_about_callbacks" class="mw-headline">Special note about callbacks</span></h4>
+<h2 id="span-iddealing_with_binary_data-classmw-headlinedealing-with-binary-dataspan"><span id="Dealing_with_binary_data" class="mw-headline">Dealing with binary data</span></h2>
+<h2 id="span-idwhere_to_get_help-classmw-headlinewhere-to-get-helpspan"><span id="Where_to_get_help" class="mw-headline">Where to get help</span></h2>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AJBrowse" title="Category%253AJBrowse">JBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Migrating_from_GBrowse_to_JBrowse"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 18:24 on 9 July
+2018.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">9,142 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

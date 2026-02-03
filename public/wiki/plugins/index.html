@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse Plugins - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-pluginsspan"><span dir="auto">GBrowse Plugins</span></h1>
+<p>(Redirected from
+<a href="Plugins">Plugins</a></p>
+<p>Plugins extend GBrowse</p>
+<p>For details on how to configure plugins, see
+<a href="GBrowse_Configuration_HOWTO#Plugin_Options" class="mw-redirect"
+title="GBrowse Configuration HOWTO">GBrowse_Configuration_HOWTO#Plugin_Options</a>.</p>
+<p>Below is an annotated list of GBrowse plugins with pointers to more
+detailed documentation, where available. Developers, see: <a href="Creating_GBrowse_Plugins" title="Creating GBrowse Plugins">Creating
+GBrowse Plugins</a>.</p>
+<p><a href="AlignTwoSequences.pm" title="AlignTwoSequences.pm">AlignTwoSequences.pm</a> <br>
+BLASTs an input sequence against the current display, with hits as new
+sequence features.</p>
+<p><a href="Aligner.pm" title="Aligner.pm">Aligner.pm</a> <br>
+Prints out a multiple alignment of the selected features.</p>
+<p><a href="AttributeHiliter.pm" title="AttributeHiliter.pm">AttributeHiliter.pm</a> <br>
+Highlights features whose properties match certain criteria.</p>
+<p><a href="BatchDumper.pm" title="BatchDumper.pm">BatchDumper.pm</a> <br>
+Dumps out the currently displayed genomic segment or the segments
+corresponding to the given accessions, in the requested format.</p>
+<p><a href="Blat.pm" title="Blat.pm">Blat.pm</a> <br>
+Blats an input against the genome of the current organism.</p>
+<p><a href="CMapDumper.pm" title="CMapDumper.pm">CMapDumper.pm</a> <br>
+Dumps a tab delimited file that can be read by CMap.</p>
+<p><a href="CreateBlastDB.pm" title="CreateBlastDB.pm">CreateBlastDB.pm</a> <br>
+Creates a Blast-formatted database from a Bio::DB::GFF database</p>
+<p><a href="FastaDumper.pm" title="FastaDumper.pm">FastaDumper.pm</a> <br>
+Dumps out the currently displayed genomic segment in decorated FASTA
+format.</p>
+<p><a href="FilterTest.pm" title="FilterTest.pm">FilterTest.pm</a> <br>
+Filters the features.</p>
+<p><a href="GeneFinder.pm" title="GeneFinder.pm">GeneFinder.pm</a> <br>
+A front end to Phil Green&rsquo;s GeneFinder program.</p>
+<p><a href="GFFDumper.pm" title="GFFDumper.pm">GFFDumper.pm</a> <br>
+Dumps various versions of <a href="GFF" title="GFF">GFF</a>.</p>
+<p><a href="LDAPAuthenticate.pm" title="LDAPAuthenticate.pm">LDAPAuthenticate.pm</a> <br>
+Authentication via LDAP.</p>
+<p><a href="MotifFinder.pm" title="MotifFinder.pm">MotifFinder.pm</a> <br>
+Finds sequence specific motifs using Position Frequency Matrix.</p>
+<p><a href="OligoFinder.pm" title="OligoFinder.pm">OligoFinder.pm</a> <br>
+Finds oligos between 11 and 50 bp in length.</p>
+<p><a href="Gbrowse/authentication_plugins/PamAuthenticate" title="Gbrowse/authentication plugins/PamAuthenticate">PamAuthenticate.pm</a> <br>
+Authenticate users using Pluggable Authentication Modules.</p>
+<p><a href="ProteinDumper.pm" title="ProteinDumper.pm">ProteinDumper.pm</a> <br>
+Dumps translated protein sequences in various formats.</p>
+<p><a href="PrimerDesigner.pm" title="PrimerDesigner.pm">PrimerDesigner.pm</a> <br>
+Real-time design PCR primers for a selected region.</p>
+<p><a href="RandomGene.pm" title="RandomGene.pm">RandomGene.pm</a> <br>
+Generates random genes, designed to demonstrate annotator plugins.</p>
+<p><a href="RestrictionAnnotator.pm" title="RestrictionAnnotator.pm">RestrictionAnnotator.pm</a> <br>
+Generates a restriction map on the current view.</p>
+<p><a href="SequenceDumper.pm" title="SequenceDumper.pm">SequenceDumper.pm</a> <br>
+Dumps sequences I guess.</p>
+<p><a href="Spectrogram.pm" title="Spectrogram.pm">Spectrogram.pm</a> <br>
+Digital signal processing of DNA sequences.</p>
+<p><a href="Submitter.pm" title="Submitter.pm">Submitter.pm</a> <br>
+Submit selected sequences to external web sites</p>
+<p><a href="TrackFinder.pm" title="TrackFinder.pm">TrackFinder.pm</a> <br>
+Filter and highlight the track listing according to keywords</p>
+<p><a href="Gbrowse/authentication_plugins/testauthenticator" title="Gbrowse/authentication plugins/testauthenticator">TestAuthenticator.pm</a> <br>
+A simple test of the authentication plugin system that looks for a
+hardcoded username/password.</p>
+<p><a href="Test.pm" title="Test.pm">test.pm</a> <br>
+Used to test that the dump architecture is working properly.</p>
+<p>YourPlugin.pm <br>
+Your cool plugin described here&hellip;</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AGBrowse_Plugins" title="Category%253AGBrowse Plugins">GBrowse Plugins</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Plugins" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 17:00 on 4 December
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">108,760 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

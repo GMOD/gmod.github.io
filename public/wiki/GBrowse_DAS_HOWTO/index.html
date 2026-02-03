@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse DAS HOWTO - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-das-howtospan"><span dir="auto">GBrowse DAS HOWTO</span></h1>
+<p>The Distributed Annotation System protocol (DAS;
+<a href="http://www.biodas.org" class="external free"
+rel="nofollow"><a href="http://www.biodas.org">http://www.biodas.org</a></a>) is a system for exchanging
+genomic annotations across the Internet. It works similarly to the idea
+of sharing the URLs of web-accessible GFF files, except that it is
+designed to support large data sets. When a client application needs to
+fetch just a subset of the data, such as a small piece of a chromosomal
+arm, the DAS protocol allows only the relevant annotations to be
+retrieved, rather than the whole data set.</p>
+<h2 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h2>
+<p>To take advantage of DAS functionality, you will have to install the
+Perl Bio::Das module. This is available from CPAN (the Comprehensive
+Perl Archive Network
+(<a href="http://www.cpan.org" class="external free"
+rel="nofollow"><a href="http://www.cpan.org">http://www.cpan.org</a></a>) or from the GMOD PPM repository.
+Unix users can install Bio::Das with this command:</p>
+<pre><code>% perl -MCPAN -e 'install Bio::Das'
+Windows users can use the PPM tool:
+
+C:\Windows&gt; ppm
+ppm&gt; install Bio::Das
+ppm&gt; quit
+</code></pre>
+<p>You may need to issue the command &ldquo;rep add gmod
+<a href="http://www.gmod.org/ggb/ppm" class="external free"
+rel="nofollow"><a href="http://www.gmod.org/ggb/ppm">http://www.gmod.org/ggb/ppm</a></a>&rdquo; if PPM complains that it
+cannot find Bio::Das.</p>
+<h2 id="span-ida_tutorial-classmw-headlinea-tutorialspan"><span id="A_Tutorial" class="mw-headline">A Tutorial</span></h2>
+<p>We start out with a short tutorial that illustrates how GBrowse DAS
+support works.</p>
+<p>When you installed GBrowse, the system also installed a series of
+tutorial files, the location of which you can find at
+<a href="http://localhost/gbrowse2" class="external free"
+rel="nofollow">http://localhost/gbrowse2</a>. We will use the <em>C.
+elegans core</em> tutorial database as the basis for creating a DAS server.</p>
+<p>To start, find the elegans_core.conf configuration file in the tutorial
+<strong>conf</strong> directory and copy it to your GBrowse2 configuration directory
+(typically /etc/gbrowse2). Edit the master /etc/gbrowse2/GBrowse.conf
+configuration file to load this file by adding the following to the end
+(if it is not there already from previous tutorials):</p>
+<pre><code>[elegans_core]
+description = Core C. elegans annotations
+path        = elegans_core.conf
+</code></pre>
+<p>To enable the DAS server, add the following somewhere within the
+[GENERAL] section of the elegans_core.conf file:</p>
+<pre><code># DAS reference server
+das mapmaster      = SELF
+</code></pre>
+<p>What this line is doing is to declare to the DAS system that our server
+is authoritative for the coordinates on the current C. elegans genome
+example. This is appropriate if you are starting out a genome for the
+first time. If, however, you want to annotate against an existing set of
+genome coordinates, you should replace SELF with the URL of the DAS
+reference server that serves that genome. For example release hg16 of
+the human genome at UCSC corresponds to DAS URL
+<a href="http://genome.cse.ucsc.edu/cgi-bin/das" class="external free"
+rel="nofollow"><a href="http://genome.cse.ucsc.edu/cgi-bin/das">http://genome.cse.ucsc.edu/cgi-bin/das</a></a>. A list of
+reference servers for various model organisms can be found at
+<a href="http://www.biodas.org" class="external free"
+rel="nofollow"><a href="http://www.biodas.org">http://www.biodas.org</a></a>.</p>
+<p>The next step is to go through the configured tracks and add a &ldquo;das
+category&rdquo; to each of them. DAS uses the idea of the &ldquo;category&rdquo; of a
+feature in order to filter sets of features by their purpose. Categories
+include:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>transcription</td>
+<td>features that have to do with RNA transcription</td>
+</tr>
+<tr>
+<td>translation</td>
+<td>features that have to do with protein translation and function</td>
+</tr>
+<tr>
+<td>variation</td>
+<td>mutations, deletions, polymorphisms</td>
+</tr>
+<tr>
+<td>structural</td>
+<td>contigs, clones, reads, PCR primers</td>
+</tr>
+<tr>
+<td>repeat</td>
+<td>repetitive elements</td>
+</tr>
+<tr>
+<td>experimental</td>
+<td>a catch-all for experimental data</td>
+</tr>
+<tr>
+<td>miscellaneous</td>
+<td>anything that doesn&rsquo;t fit in one fo the other categories</td>
+</tr>
+</tbody>
+</table>
+<p>Find the [Genes] stanza and modify it to to have a das category of
+&ldquo;transcription&rdquo; as shown here:</p>
+<pre><code>[Genes]
+feature      = gene
+glyph        = gene
+height       = 8
+bgcolor      = blue
+description  = 1
+das category = transcription
+key          = Protein-coding genes
+</code></pre>
+<p>Similarly, modify the [Alignments] track to have a das category of
+&ldquo;similarity.&rdquo; You do not need to add a category to the DNA track, as it
+is treated specially by das. You&rsquo;re all done! Be sure to save the
+configuration file before you try the next step.</p>
+<p>Using a web browser fetch the URL
+<a href="http://localhost/cgi-bin/gb2/das/dsn" class="external free"
+rel="nofollow">http://localhost/cgi-bin/gb2/das/dsn</a>. This will
+return an XML document giving information about each of the data sources
+that you have configured.</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+&lt;!DOCTYPE DASDSN SYSTEM &quot;http://www.biodas.org/dtd/dasdsn.dtd&quot;&gt;
+&lt;DASDSN&gt;
+  &lt;DSN&gt;
+</code></pre>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">elegans_core|Genes
+</code></pre><pre><code>     &lt;MAPMASTER&gt;http://localhost/cgi-bin/gb2/das/elegans_core&lt;/MAPMASTER&gt;
+     &lt;DESCRIPTION&gt;Core C. elegans annotations; Genes track; Protein-coding genes&lt;/DESCRIPTION&gt;
+  &lt;/DSN&gt;
+  &lt;DSN&gt;
+</code></pre>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">elegans_core|Alignments
+</code></pre><pre><code>     &lt;MAPMASTER&gt;http://localhost/cgi-bin/gb2/das/elegans_core&lt;/MAPMASTER&gt;
+     &lt;DESCRIPTION&gt;elegans_core; Alignments track; ESTs&lt;/DESCRIPTION&gt;
+  &lt;/DSN&gt;
+&lt;/DASDSN&gt;
+</code></pre>
+<p>This is showing that there is one configured DAS source, the
+&ldquo;elegans_core&rdquo; data set. Next test that the DAS &ldquo;types&rdquo; request is
+working. This request returns all the feature types that the database
+knows about. Using a web browser fetch the URL
+<a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes/types"
+class="external free"
+rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes/types</a>.
+This should return another short document confirming that the &ldquo;gene&rdquo;
+feature type is available.</p>
+<p>The final test that the DAS server is performing correctly is to browse
+to the elegans_core database and to turn off all the tracks except for
+DNA/GC content. This should give you an empty details panel. Open up the
+&ldquo;Upload and Share Tracks&rdquo; tab, press &ldquo;Import a Track URL&rdquo;, and type in
+<a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes"
+class="external free"
+rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes</a>
+and press &ldquo;Update URLs.&rdquo; The page should now reload and display the gene
+models. Do this again with
+<a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CAlignments"
+class="external free"
+rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CAlignments</a>
+in order to view the alignments. These tracks are not coming directly
+from the local database, but from the database via the DAS protocol.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AMOD_User_Interfaces" title="Category%253AMOD User Interfaces">MOD User
+Interfaces</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_DAS_HOWTO" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:15 on 8 July
+2010.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">20,076 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

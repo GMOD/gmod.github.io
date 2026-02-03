@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News/JBrowse2 v1.1.0 Released - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautonewsjbrowse2-v110-releasedspan"><span dir="auto">News/JBrowse2 v1.1.0 Released</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#We.27re_pleased_to_announce_a_new_release_of_JBrowse_Web.21"><span class="tocnumber">1</span> <span class="toctext">We&rsquo;re pleased
+to announce a new release of JBrowse
+Web!</span></a>
+<ul>
+<li><a href="#Changed_callbacks_language_from_JavaScript_to_Jexl"><span class="tocnumber">1.1</span> <span class="toctext">Changed
+callbacks language from JavaScript to
+Jexl</span></a></li>
+<li><a href="#Fetch_intron_and_upstream.2Fdownstream_sequences"><span class="tocnumber">1.2</span> <span class="toctext">Fetch
+intron and upstream/downstream
+sequences</span></a></li>
+<li><a href="#Interactive_documentation_using_Storybook"><span class="tocnumber">1.3</span>
+<span class="toctext">Interactive documentation using
+Storybook</span></a></li>
+<li><a href="#Enhanced_navigation_to_drawer_widget_stack"><span class="tocnumber">1.4</span> <span class="toctext">Enhanced
+navigation to drawer widget
+stack</span></a></li>
+<li><a href="#Downloads"><span class="tocnumber">1.5</span>
+<span class="toctext">Downloads</span></a></li>
+<li><a href="#1.1.0_.282021-03-29.29"><span class="tocnumber">1.6</span> <span class="toctext">1.1.0
+(2021-03-29)</span></a>
+<ul>
+<li><a href="#.F0.9F.9A.80_Enhancement"><span class="tocnumber">1.6.1</span> <span class="toctext">🚀
+Enhancement</span></a></li>
+<li><a href="#.F0.9F.90.9B_Bug_Fix"><span class="tocnumber">1.6.2</span> <span class="toctext">🐛 Bug
+Fix</span></a></li>
+<li><a href="#.F0.9F.93.9D_Documentation"><span class="tocnumber">1.6.3</span> <span class="toctext">📝
+Documentation</span></a></li>
+<li><a href="#.F0.9F.8F.A0_Internal"><span class="tocnumber">1.6.4</span> <span class="toctext">🏠
+Internal</span></a></li>
+<li><a href="#Committers:_6"><span class="tocnumber">1.6.5</span>
+<span class="toctext">Committers: 6</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idwe27re_pleased_to_announce_a_new_release_of_jbrowse_web21-classmw-headlinewere-pleased-to-announce-a-new-release-of-jbrowse-webspan"><span id="We.27re_pleased_to_announce_a_new_release_of_JBrowse_Web.21" class="mw-headline">We&rsquo;re pleased to announce a new release of JBrowse Web!</span></h2>
+<p>(Reposted by permission from
+<a href="https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release"
+class="external free"
+rel="nofollow"><a href="https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release">https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release</a></a></p>
+<h3 id="span-idchanged_callbacks_language_from_javascript_to_jexl-classmw-headlinechanged-callbacks-language-from-javascript-to-jexlspan"><span id="Changed_callbacks_language_from_JavaScript_to_Jexl" class="mw-headline">Changed callbacks language from JavaScript to Jexl</span></h3>
+<p>To allow users to safely and seamlessly share advanced configurations in
+sessions, we now use Jexl to express configuration callbacks. Note that
+this is a breaking change, function()-style callbacks will no longer
+work.</p>
+<p>For details, see the <a
+href="https://jbrowse.org/jb2/docs/config_guide#configuration-callbacks#configuration-callbacks"
+class="external text" rel="nofollow">callbacks section of our
+configuration guide</a>.</p>
+<h3 id="span-idfetch_intron_and_upstream2fdownstream_sequences-classmw-headlinefetch-intron-and-upstreamdownstream-sequencesspan"><span id="Fetch_intron_and_upstream.2Fdownstream_sequences" class="mw-headline">Fetch intron and upstream/downstream sequences</span></h3>
+<p>We also have several other improvements including the ability to get
+intron and upstream/downstream sequence in the feature details</p>
+<p><a href="../File:Upstream_downstream.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/76/Upstream_downstream.png/700px-Upstream_downstream.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/76/Upstream_downstream.png/1050px-Upstream_downstream.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/76/Upstream_downstream.png/1400px-Upstream_downstream.png 2x"
+width="700" height="248" alt="Upstream downstream.png" /></a></p>
+<h3 id="span-idinteractive_documentation_using_storybook-classmw-headlineinteractive-documentation-using-storybookspan"><span id="Interactive_documentation_using_Storybook" class="mw-headline">Interactive documentation using Storybook</span></h3>
+<p>Another new update is the first release of our interactive Storybook
+docs for the embeddable React Linear Genome View. The docs contain live
+examples of how the LGV component can be used, along with source-code
+examples. The site can be found
+<a href="https://jbrowse.org/storybook/lgv/v1.1.0" class="external text"
+rel="nofollow">here</a>.</p>
+<h3 id="span-idenhanced_navigation_to_drawer_widget_stack-classmw-headlineenhanced-navigation-to-drawer-widget-stackspan"><span id="Enhanced_navigation_to_drawer_widget_stack" class="mw-headline">Enhanced navigation to drawer widget stack</span></h3>
+<p>We have added a dropdown to enhance navigation between stack of active
+widgets. The update also adds a minimize button to allow quick access to
+full screen JBrowse web.</p>
+<p>See below for demos of the new navigation UI.</p>
+<p><a href="../File:Minimize_button_demo.gif" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0f/Minimize_button_demo.gif" width="480"
+height="414" alt="Minimize button demo.gif" /></a></p>
+<p>Demo of using the minimize button in the drawer</p>
+<h3 id="span-iddownloads-classmw-headlinedownloadsspan"><span id="Downloads" class="mw-headline">Downloads</span></h3>
+<ul>
+<li><a href="https://github.com/GMOD/jbrowse-components/releases/tag/v1.1.0"
+class="external text" rel="nofollow">v1.1.0</a></li>
+</ul>
+<p>To install JBrowse 2 for the web, you can download the link above, or
+you can use the JBrowse CLI to automatically download the latest
+version. See the JBrowse web quick start for more details.</p>
+<h3 id="span-id110_282021-03-2929-classmw-headline110-2021-03-29span"><span id="1.1.0_.282021-03-29.29" class="mw-headline">1.1.0 (2021-03-29)</span></h3>
+<h4 id="span-idf09f9a80_enhancement-classmw-headline-enhancementspan"><span id=".F0.9F.9A.80_Enhancement" class="mw-headline">🚀 Enhancement</span></h4>
+<p>core</p>
+<ol>
+<li>1846 Improve copy+paste in the data grids for feature details
+(@cmdcolin)</li>
+<li>1814 Add ability to get promoter sequence and intron sequence for
+genes from the feature details panel (@cmdcolin)</li>
+<li>1816 Remove some animation effects (@cmdcolin)</li>
+<li>1778 Adds dropdown to show drawer widget stack (@teresam856)</li>
+<li>1685 Change callbacks language from JavaScript to Jexl (@peterkxie)</li>
+</ol>
+<p>Other</p>
+<ol>
+<li>1831 Add dialog for launching breakpoint split view from variant
+feature details (@cmdcolin)</li>
+<li>1803 Transcript and gene glyphs can now display implied UTRs, active
+by default (@cmdcolin)</li>
+<li>1808 Add another heuristic for returning gene features from BigBed
+(@cmdcolin)</li>
+<li>1774 Add warning dialog in LGV before returning to import form to
+prevent accidentally losing the current view (@cmdcolin)</li>
+</ol>
+<h4 id="span-idf09f909b_bug_fix-classmw-headline-bug-fixspan"><span id=".F0.9F.90.9B_Bug_Fix" class="mw-headline">🐛 Bug Fix</span></h4>
+<p>core</p>
+<ol>
+<li>1811 Check for existence of window more robustly to allow in SSR or
+node applications (@elliothershberg)</li>
+<li>1793 Fix dotplot rendering outside it&rsquo;s allowed bounds (@cmdcolin)</li>
+<li>1783 Add hic aborting and fix remoteAbort signal propagation
+(@cmdcolin)</li>
+<li>1723 A few bugfixes (@garrettjstevens)</li>
+</ol>
+<p>Other</p>
+<ol>
+<li>1815 Clear tracks when using &ldquo;Return to import form&rdquo; (@cmdcolin)</li>
+<li>1819 Standardized sentence casing on drawer widget titles
+(@cmdcolin)</li>
+<li>1796 Bump generic-filehandle for fixing CORS errors from Chrome
+cache pollution (@cmdcolin)</li>
+</ol>
+<h4 id="span-idf09f939d_documentation-classmw-headline-documentationspan"><span id=".F0.9F.93.9D_Documentation" class="mw-headline">📝 Documentation</span></h4>
+<ol>
+<li>1824 Add storybook docs page for nextjs usage (@elliothershberg)</li>
+<li>1770 1469 storybook deploy (@elliothershberg)</li>
+<li>1807 Update developer guide to cover displays, and highlight working
+external plugins (@cmdcolin)</li>
+<li>1779 Collaborative release announcement editing (@rbuels)</li>
+<li>1791 Add a couple more demos for our live version with MDX
+(@cmdcolin)</li>
+</ol>
+<h4 id="span-idf09f8fa0_internal-classmw-headline-internalspan"><span id=".F0.9F.8F.A0_Internal" class="mw-headline">🏠 Internal</span></h4>
+<p>Other</p>
+<ol>
+<li>1820 Create v1.1.0.md, draft of release announcements
+(@garrettjstevens)</li>
+<li>1823 Add note about previewing changelog to CONTRIBUTING.md
+(@garrettjstevens)</li>
+</ol>
+<p>core</p>
+<ol>
+<li>1834 Change jbrowse-components monorepo default branch from &lsquo;master&rsquo;
+to &lsquo;main&rsquo; (@rbuels)</li>
+</ol>
+<h4 id="span-idcommitters_6-classmw-headlinecommitters-6span"><span id="Committers:_6" class="mw-headline">Committers: 6</span></h4>
+<ul>
+<li>Colin Diesh (@cmdcolin)</li>
+<li>Elliot Hershberg (@elliothershberg)</li>
+<li>Garrett Stevens (@garrettjstevens)</li>
+<li>Peter Xie (@peterkxie)</li>
+<li>Robert Buels (@rbuels)</li>
+<li>Teresa Martinez (@teresam856)</li>
+</ul>
+<p><em>Posted to the <a href="../GMOD_News" title="GMOD News">GMOD News</a> on 2021/03/30</em></p>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="../Category%253ANews_Items" title="Category%253ANews Items">News Items</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/News-2FJBrowse2_v1.1.0_Released"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 20:28 on 30 March
+2021.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">13,736 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

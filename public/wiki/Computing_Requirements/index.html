@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computing Requirements - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautocomputing-requirementsspan"><span dir="auto">Computing Requirements</span></h1>
+<p>This page discusses high-level computing requirements and prerequisites
+for implementing GMOD components at your organization. Requirements for
+specific components can be found on <a href="GMOD_Components" title="GMOD Components">each component&rsquo;s
+page</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#GMOD_Systems_Administrator"><span class="tocnumber">1</span> <span class="toctext">GMOD Systems
+Administrator</span></a>
+<ul>
+<li><a href="#Qualifications_and_Hiring"><span class="tocnumber">1.1</span>
+<span class="toctext">Qualifications and
+Hiring</span></a></li>
+</ul>
+</li>
+<li><a href="#Hardware_and_Software"><span class="tocnumber">2</span> <span class="toctext">Hardware and
+Software</span></a>
+<ul>
+<li><a href="#Hardware"><span class="tocnumber">2.1</span>
+<span class="toctext">Hardware</span></a></li>
+<li><a href="#Operating_System"><span class="tocnumber">2.2</span> <span class="toctext">Operating
+System</span></a>
+<ul>
+<li><a href="#Unix.2C_Linux.2C_and_Mac_OS"><span class="tocnumber">2.2.1</span> <span class="toctext">Unix,
+Linux, and Mac OS</span></a></li>
+<li><a href="#Windows"><span class="tocnumber">2.2.2</span>
+<span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+<li><a href="#Other_Software"><span class="tocnumber">2.3</span> <span class="toctext">Other
+Software</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idgmod_systems_administrator-classmw-headlinegmod-systems-administratorspan"><span id="GMOD_Systems_Administrator" class="mw-headline">GMOD Systems Administrator</span></h2>
+<p>The key to any successful computing infrastructure is a good systems
+administrator. System administration is primarily concerned with setting
+up systems and keeping them going; the job involves some programming,
+but that is not its primary focus. The sysadmin is responsible for
+setting up the computer systems, installing software, performing updates
+and routine maintenance, and dealing with crises.</p>
+<p>At larger organizations, such as university departments or companies,
+there may be a department who take care of computer support who will
+take care of installing software on public servers, setting up
+databases, and so on; at minimum, they will be able to provide help and
+advice with issues like network support, even if they leave the software
+installation to you. It may not be necessary to have a full-time
+sysadmin, but there should be someone on staff with time and expertise
+to deal with any computer-related issues that may arise.</p>
+<h3 id="span-idqualifications_and_hiring-classmw-headlinequalifications-and-hiringspan"><span id="Qualifications_and_Hiring" class="mw-headline">Qualifications and Hiring</span></h3>
+<p>The following section lays down some of the important skills that a
+systems administrator dealing with GMOD software would be expected to
+have. In addition, we recommend having one of your computing support
+staff interview your candidates. They are best suited to determine if a
+candidate has the technical qualifications or not.</p>
+<p><strong>Installing and Configuring Software</strong></p>
+<p>Most GMOD software relies on well-established programming languages and
+technologies such as <a href="Category%253APerl" title="Category%253APerl">Perl</a>, CPAN,
+<a href="Category%253AJava" title="Category%253AJava">Java</a>,
+<a href="PostgreSQL" title="PostgreSQL">PostgreSQL</a>, <a href="MySQL" title="MySQL">MySQL</a>, and
+Apache. There are also a number of packages and systems that are
+specific to bioinformatics, such as <a href="BioPerl" title="BioPerl">BioPerl</a>, that
+are required by several GMOD tools. Most operating systems have standard
+ways of installing these packages; your sysadmin should be familiar with
+how to install software and how to diagnose and fix a failed
+installation.</p>
+<p><strong>Backups</strong></p>
+<p>The importance of backing up is too often a lesson that is learned after
+a systems crash and massive data loss. Any good sysadmin&ndash;or even a
+minimally competent one&ndash;will hold regular backups to be a fundamental
+principle of life itself. Backups should be started very early, and
+should be performed on a daily basis; they should also be regularly
+checked to ensure that the system can be restored from the backups. The
+belief in the importance of backups is more important than the technical
+knowledge of how to do them, which can be learned.</p>
+<p>Some painfully-learned advice: if you do not have a protocol to follow,
+<strong>document the steps involved in setting up software</strong>, and <strong>make a
+backup when you have the system working</strong>.</p>
+<p><strong>Finding and Fixing Problems</strong></p>
+<p>Computers are complex systems and diagnosing problems is part science
+and part art. An ideal sysadmin will have experience with this. They may
+not know the specifics of the technologies used by GMOD, but they will
+have had enough experience to know, for example, that many technologies
+support debuggers and logging, two things that are enormously helpful
+when investigating problems.</p>
+<p><strong>Communication</strong></p>
+<p>Your sys admin needs good written and oral communication skills. They
+will need to work with at least these communities:</p>
+<ul>
+<li>Biologists, inside and probably outside your organization</li>
+<li>Your organization&rsquo;s computing support staff</li>
+<li>GMOD community</li>
+<li>Their successor</li>
+</ul>
+<p>Depending on the candidate&rsquo;s background (see
+<a href="#Credentials">Credentials</a>), communicating with biologists may prove
+the most challenging for them. You want someone who is patient by
+nature, and who won&rsquo;t treat biologists with contempt because they don&rsquo;t
+know (or care) about the finer points of some technology. Ask a
+candidate to explain a technical point to you and see how they respond.</p>
+<p>The last community, &ldquo;the successor,&rdquo; emphasizes that whoever you hire
+may not have the job for the entire time your project exists. They
+should be willing to document things that would be useful to whoever
+follows them in the job. This includes things like where software and
+data is on the file system, how backups are done, and what special
+tweaks had to be done to get things to work.</p>
+<p>A good candidate will believe in the value of documentation, and will
+write <em>and</em> maintain it.</p>
+<p><strong>Credentials and Professionalism</strong></p>
+<p>Does a sysadmin need a degree in Computer Science? <strong>No.</strong></p>
+<p>Does a sysadmin need to at least be a Computer Science student? <strong>No.</strong></p>
+<p>What a candidate needs is some experience maintaining systems, an
+ability to learn, and a professional attitude.</p>
+<p>What does a <em>professional attitude</em> mean in this context?</p>
+<ul>
+<li>They should be willing to tell you when choices being made can
+compromise the project. For example:
+<ul>
+<li>Yes, we can do that, but it means our backups won&rsquo;t work for the
+next week. Or,</li>
+<li>Yes, I can do that now, but it means I won&rsquo;t be able to document the
+installation I just did until next week and by then I may have
+forgotten a lot.</li>
+</ul>
+</li>
+<li>They will tell you when things aren&rsquo;t going well, or when they have
+messed up.</li>
+<li>They treat everyone with respect, including people in your group, any
+users your project may have, your organization&rsquo;s sys admins, and the
+larger GMOD community.</li>
+</ul>
+<h2 id="span-idhardware_and_software-classmw-headlinehardware-and-softwarespan"><span id="Hardware_and_Software" class="mw-headline">Hardware and Software</span></h2>
+<h3 id="span-idhardware-classmw-headlinehardwarespan"><span id="Hardware" class="mw-headline">Hardware</span></h3>
+<p>This is somewhat dependent on the type of resource that you are setting
+up, and who will be using it. Most mid- to high-end computers can be
+used as a server; such a machine could easily be set up to run GBrowse
+or JBrowse, a Chado database, a Galaxy server, and other web- or
+intranet-based services for a small research group. If you are going to
+be the only one using the tools, a laptop can easily be set up to run a
+server that can run a genome browser or a database. If you are
+anticipating large amounts of traffic, you will want to invest in
+dedicated infrastructure such as rackmount servers and load balancing
+software. In addition, there should be capacity for data and systems
+backups on some medium.</p>
+<p>Cloud computing resources are fast-emerging as a viable alternative to
+in-house hardware. Whilst the software will still have to be installed
+and set up, the computing resources (storage space, processing power,
+input/output rates) can be adjusted as required, and much of the hassle
+and worry of maintaining expensive computer hardware is eliminated.
+<a href="http://wormbase.org" class="external text"
+rel="nofollow">Wormbase</a> serve all their web resources from the
+cloud, and <a href="Cloud.1" title="Cloud">GMOD in the Cloud</a> is a great way to get
+started with GMOD software without the bother of installation.
+Cost-wise, cloud computing compares very favourably to hosting your own
+hardware, and in terms of flexibility, it cannot be beaten.</p>
+<h3 id="span-idoperating_system-classmw-headlineoperating-systemspan"><span id="Operating_System" class="mw-headline">Operating System</span></h3>
+<p><a href="Glossary#Operating_System" title="Glossary">Operating system</a> (OS) choice is
+the first decision you will make about your computing platform and it
+impacts all subsequent decisions. The intention here is <em>not</em> to start a
+debate on <em>what rules</em> or <em>what stinks</em>, but rather to advise you on the
+choice of OS that will make your life easiest.</p>
+<p>Note that the following discussion refers to the operating system used
+on the machine serving the GMOD software; the operating system you use
+on your personal computer is less important.</p>
+<p>A discussion of the pros and cons of using different operating systems
+in GMOD follows.</p>
+<h4 id="span-idunix2c_linux2c_and_mac_os-classmw-headlineunix-linux-and-mac-osspan"><span id="Unix.2C_Linux.2C_and_Mac_OS" class="mw-headline">Unix, Linux, and Mac OS</span></h4>
+<p>The Unix operating system has been around since the 1970s. Linux is a
+variant of Unix that has become very popular in the last decade. Mac OS
+is a Unix variant with the MacOS GUI on top of it.</p>
+<p><strong>Note:</strong> People use the term <em>Unix</em> to mean slightly different things.
+Sometimes they include Linux and/or MacOS and sometimes they don&rsquo;t. All
+definitions of Unix include Unix variants that are not Linux or Mac OS.</p>
+<p><strong>Linux</strong> <br>
+<em><strong>Linux is the default operating system for GMOD and you are strongly
+encouraged to use Linux for your GMOD implementation.</strong></em></p>
+<p>Most tools are developed on and for Linux operating systems, and many
+GMOD implementations use Linux as their operating system. If you need
+help with something and you are running on Linux, then the majority of
+the GMOD community can potentially help you with your problem. This is
+much less true if you are running on a different operating system.</p>
+<!-- -->
+<p>Which Linux? <br>
+The official
+<a href="http://en.wikipedia.org/wiki/Linux_distribution" class="extiw"
+title="wp:Linux distribution">Linux distributions</a> of GMOD are
+<a href="http://www.centos.org" class="external text"
+rel="nofollow">CentOS</a> and
+<a href="http://ubuntu.com" class="external text"
+rel="nofollow">Ubuntu</a>. CentOS is a Linux variant based on
+<a href="http://www.redhat.com/rhel/server/" class="external text"
+rel="nofollow">Red Hat Enterprise Server</a>. Ubuntu is based on
+<a href="http://www.debian.org" class="external text"
+rel="nofollow">Debian</a> branch of Linux. However, many other Linux
+variants are compatible with GMOD.</p>
+<p>If you don&rsquo;t already have Linux up and running then you are encouraged
+to pick CentOS or Ubuntu, and if you are new to Linux, you will likely
+find Ubuntu easier to use. If you already have another version of Linux
+running and you don&rsquo;t want to switch then you can probably use that
+distribution without problems.</p>
+<!-- -->
+<p>Mac OS <br>
+<a href="http://www.apple.com/macosx/" class="external text"
+rel="nofollow">Mac OS</a> from
+<a href="http://www.apple.com" class="external text"
+rel="nofollow">Apple</a> is also a Unix based operating system. Mac OS,
+however, is not a Linux variant. Mac OS is built on the
+<a href="http://www.freebsd.org" class="external text"
+rel="nofollow">FreeBSD</a> version of Unix. Because of its different
+roots, the difference between MacOS and a typical Linux distribution is
+greater than the difference between any two Linux distributions. If you
+run GMOD on Apples, you will need to do more work to set things up then
+if you were running on Linux.</p>
+<!-- -->
+<p>Other Unix <br>
+This category covers any non-Linux, non-Mac OS version of Unix. This
+includes operating systems like Solaris, HP-UX, AIX, FreeBSD, and a
+multitude of others as well. These systems are all Unix based but are
+not Linux based. As such, implementing GMOD on these systems can be
+done, but it will involve additional work, in the same way that MacOS
+involves more work than Linux.</p>
+<h4 id="span-idwindows-classmw-headlinewindowsspan"><span id="Windows" class="mw-headline">Windows</span></h4>
+<p>While Mac OS and other Unix operating systems are fairly close to Linux,
+<a href="http://microsoft.com" class="external text"
+rel="nofollow">Microsoft Windows</a> is not. Windows is based on an
+entirely different code base and set of principles than are Unix-based
+systems, to avoid errors - optimize
+<a href="http://www.top5optimizers.com/" class="external text"
+rel="nofollow">windows XP</a>. There are users that run GMOD components
+on Windows machines, but there are relatively few of them. Running GMOD
+on Windows means significantly more work up front and greatly reduces
+the part of the GMOD community that can help you if you encounter
+problems.</p>
+<h3 id="span-idother_software-classmw-headlineother-softwarespan"><span id="Other_Software" class="mw-headline">Other Software</span></h3>
+<p>Different GMOD components require different software to support them.
+Some require Perl or Java support, a database management system, a web
+server (such as Apache), or any number of other things. See <a href="GMOD_Components" title="GMOD Components">each
+component</a> for their specific
+software requirements.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ALinux" title="Category%253ALinux">Linux</a></li>
+<li><a href="Category%253AMac_OS_X" title="Category%253AMac OS X">Mac OS X</a></li>
+<li><a href="Category%253AWindows" title="Category%253AWindows">Windows</a></li>
+<li><a href="Category%253AHelp" title="Category%253AHelp">Help</a></li>
+<li><a href="Category%253AComputing" title="Category%253AComputing">Computing</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Computing_Requirements" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 05:03 on 20 November
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">111,606 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotifFinder.pm - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautomotiffinderpmspan"><span dir="auto">MotifFinder.pm</span></h1>
+<p>MotifFinder.pm is a <a href="GBrowse.1" title="GBrowse">GBrowse</a> plugin written by
+<a href="User%253AXshi" title="User%253AXshi">Xiaoqi Shi</a>. It finds sequence specific motifs
+using Position Weight Matrix and display results graphically as tracks
+in the genome browser.</p>
+<p>Please feel free to
+<a href="mailto:xshi@oicr.on.ca?subject=MotifFinder%20plugin"
+class="external text" rel="nofollow">contact the author</a> for help or
+more information. Follow this link for
+<span class="pops"><a href="http://en.wikipedia.org/wiki/Position-specific_scoring_matrix"
+class="external text" rel="nofollow">background reading of Position
+Weight Matrix</a></span></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#download_the_plugin"><span class="tocnumber">1</span> <span class="toctext">download the
+plugin</span></a></li>
+<li><a href="#How_to_use_MotifFinder_plugin"><span class="tocnumber">2</span> <span class="toctext">How to use
+MotifFinder plugin</span></a>
+<ul>
+<li><a href="#Access_The_Plugin"><span class="tocnumber">2.1</span> <span class="toctext">Access The
+Plugin</span></a></li>
+<li><a href="#MotifFinder_Parameters"><span class="tocnumber">2.2</span>
+<span class="toctext">MotifFinder
+Parameters</span></a></li>
+<li><a href="#Position_Frequency_Matrices"><span class="tocnumber">2.3</span> <span class="toctext">Position
+Frequency Matrices</span></a></li>
+<li><a href="#Indel_Detection"><span class="tocnumber">2.4</span> <span class="toctext">Indel
+Detection</span></a></li>
+<li><a href="#Graphical_Presentation"><span class="tocnumber">2.5</span> <span class="toctext">Graphical
+Presentation</span></a></li>
+</ul>
+</li>
+<li><a href="#How_is_the_motif_predicted.3F"><span class="tocnumber">3</span> <span class="toctext">How is the
+motif predicted?</span></a>
+<ul>
+<li><a href="#Calculate_Weight_Score"><span class="tocnumber">3.1</span> <span class="toctext">Calculate
+Weight Score</span></a></li>
+<li><a href="#Algorithms"><span class="tocnumber">3.2</span>
+<span class="toctext">Algorithms</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-iddownload_the_plugin-classmw-headlinedownload-the-pluginspan"><span id="download_the_plugin" class="mw-headline">download the plugin</span></h1>
+<p>The plugin is installed on the GBrowse of WormBase&amp;modENCODE, you may
+access it directory here:
+<a href="http://www.wormbase.org/db/gb2/gbrowse" class="external free"
+rel="nofollow"><a href="http://www.wormbase.org/db/gb2/gbrowse">http://www.wormbase.org/db/gb2/gbrowse</a></a> or
+<a href="http://modencode.oicr.on.ca/" class="external free"
+rel="nofollow"><a href="http://modencode.oicr.on.ca/">http://modencode.oicr.on.ca/</a></a></p>
+<p>If you want to install it on your own GBrowse, please
+<a href="mailto:xshi@oicr.on.ca?subject=MotifFinder%20plugin"
+class="external text" rel="nofollow">contact the author</a> for source
+code and then follow the instruction below:</p>
+<ul>
+<li>save both &lsquo;motiffinder&rsquo; and &lsquo;MotifFinder.pm&rsquo; under GBrowse plugin
+directory(set the permission as executable).</li>
+<li>save &lsquo;matrices.txt&rsquo;(example of the PFM tables) under GBrowse conf
+directory</li>
+<li>include &ldquo;MotifFinder&rdquo; in your main GBrowse.conf.</li>
+<li>specify the matrix file name in your species *.conf</li>
+</ul>
+<!-- -->
+<pre><code>        [MotifFinder:plugin]
+        matrix = matrices.txt
+</code></pre>
+<p>Then you should be able to run the plugin!</p>
+<h1 id="span-idhow_to_use_motiffinder_plugin-classmw-headlinehow-to-use-motiffinder-pluginspan"><span id="How_to_use_MotifFinder_plugin" class="mw-headline">How to use MotifFinder plugin</span></h1>
+<h2 id="span-idaccess_the_plugin-classmw-headlineaccess-the-pluginspan"><span id="Access_The_Plugin" class="mw-headline">Access The Plugin</span></h2>
+<ul>
+<li>From GBrowse main page, the PrimerDesigner plugin, as well as other
+installed plugins, can be accessed via the upper right menu.</li>
+<li>In GBrowse, navigate to the genomic region you interested in, then
+select &lsquo;Annotate Sequence Motif&rsquo; from the menu and click &lsquo;Configure&rsquo;</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Select.png" class="thumbborder"
+width="389" height="112" alt="Select.png" /></p>
+<h2 id="span-idmotiffinder_parameters-classmw-headlinemotiffinder-parametersspan"><span id="MotifFinder_Parameters" class="mw-headline">MotifFinder Parameters</span></h2>
+<ul>
+<li>Reasonable default options are provided for each parameter.</li>
+<li>Threshold: a cutoff score between 0.8 to 1 is recommended.</li>
+<li>Background Probability: should be inputted in (A C G T) order.</li>
+<li>Indel Size: currently only small Indels(length under 6) can be
+handled.</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/Parameter.png" width="428" height="289"
+alt="boarder" /></p>
+<h2 id="span-idposition_frequency_matrices-classmw-headlineposition-frequency-matricesspan"><span id="Position_Frequency_Matrices" class="mw-headline">Position Frequency Matrices</span></h2>
+<p>Existing PFMs were loaded from file &lsquo;matrices.txt&rsquo; under GBrowse
+configuration directory, they are mostly curated PFMs from existing
+publications.</p>
+<p>Click here for a list of
+<a href="http://www.wormbase.org/db/seq/position_matrix?list=all"
+class="external text" rel="nofollow">all the available PFMs from
+WormBase</a></p>
+<p>However, you can also add your own PFMs to the toggle section &ldquo;Paste
+PFMs Here&rdquo; in fasta format(arrange rows in A C G T order). e.g.</p>
+<pre><code> &gt;name of the matrix ( the '&gt;' sign is required !)
+ 0       1       1       1       1       23      0       0       1       7       0       0       19
+ 10      18      1       13      14      2       20      0       17      0       7       16      0
+ 2       4       24      1       0       0       0       26      8       2       0       10      7
+ 14      3       0       11      11      1       6       0       0       17      19      0       0
+</code></pre>
+<h2 id="span-idindel_detection-classmw-headlineindel-detectionspan"><span id="Indel_Detection" class="mw-headline">Indel Detection</span></h2>
+<p>User can search for sequence motifs that contain Indels up to certain
+length. This part hasn&rsquo;t been fully tested and depends on future
+improvement.</p>
+<h2 id="span-idgraphical_presentation-classmw-headlinegraphical-presentationspan"><span id="Graphical_Presentation" class="mw-headline">Graphical Presentation</span></h2>
+<ul>
+<li>each matching motifs is displayed as a glyph box on the tracks</li>
+<li>box arrow indicates the strand info</li>
+<li>move mouse on glyph will show you the computed similarity score and
+start/stop position of the motif</li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/29/Display.png" width="1035" height="293"
+alt="Display.png" /></p>
+<h1 id="span-idhow_is_the_motif_predicted3f-classmw-headlinehow-is-the-motif-predictedspan"><span id="How_is_the_motif_predicted.3F" class="mw-headline">How is the motif predicted?</span></h1>
+<p>The problem is to find occurrences of known patterns(represented by
+position matrix) in new sequences.</p>
+<h2 id="span-idcalculate_weight_score-classmw-headlinecalculate-weight-scorespan"><span id="Calculate_Weight_Score" class="mw-headline">Calculate Weight Score</span></h2>
+<p>Scoring function is the same as the
+<a href="http://tfbs.genereg.net/" class="external text"
+rel="nofollow">TFBS Perl modules</a> developed by Bergen University.</p>
+<pre><code> w = log2 ( ( f + sqrt(N) * p ) / ( N + sqrt(N) ) / 0.25 )
+</code></pre>
+<p>If we have PFM from TRANSFAC 7.0:</p>
+<pre><code>   A 1 12 0 0 0 0 0 7 1 1 0 0 0 2 1
+   C 8 0 0 0 0 0 13 1 7 0 0 3 8 7 8
+   G 2 1 12 0 0 0 0 1 2 0 0 0 0 2 3
+   T 2 0 0 13 13 13 0 4 3 12 13 10 5 2 1
+</code></pre>
+<p>w - is a weight for the current nucleotide we are calculating</p>
+<p>f - is a number of occurrences of the current nucleotide in the current
+column (e.g., &ldquo;1&rdquo; for A in column 1, &ldquo;8&rdquo; for C etc)</p>
+<p>N - total number of observations, the sum of all nucleotides occurrences
+in a column (13 in this example)</p>
+<p>p - [prior] [background] frequency of the current nucleotide; this
+one usually defaults to 0.25 (i.e. one nucleotide out of four)</p>
+<h2 id="span-idalgorithms-classmw-headlinealgorithmsspan"><span id="Algorithms" class="mw-headline">Algorithms</span></h2>
+<ul>
+<li>Backtrack: use recursive function to build all possible motifs,
+terminate recursion when an intermediate score is not reached.</li>
+<li>Brute-Force: calculate the similarity score across the whole region
+using a sliding window of motif size</li>
+</ul>
+<p>This program uses a combined strategy by choosing between above two
+methods(depending length of the motif and cutoff score) to achieve
+faster computational speed .</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse_Plugins" title="Category%253AGBrowse Plugins">GBrowse Plugins</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/MotifFinder.pm" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 15:00 on 11 July
+2016.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">53,940 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

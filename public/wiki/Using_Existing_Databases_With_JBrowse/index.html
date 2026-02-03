@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JBrowse Configuration Guide - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <h1 id="jbrowse-configuration-guide">JBrowse Configuration Guide</h1>
+<p><strong>This page has been replaced with this page (<a
+href="https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide"
+class="external free"
+rel="nofollow"><a href="https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide">https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide</a></a>)
+at github. Please don&rsquo;t edit this page as changes will be discarded.</strong></p>
+<p>This page provides a comprehensive reference guide for configuring
+JBrowse. If you find something that is missing or inaccurate, please
+feel very free to edit it!</p>
+<p>Note: this is a <strong>reference guide</strong>. It is not meant to be read from
+beginning to end. If this is your first time setting up JBrowse, you
+probably want to read the <a
+href="http://jbrowse.org/code/latest-release/docs/tutorial/index.html"
+class="external text" rel="nofollow">Quick-start tutorial</a> first, and
+then consult this guide when you need information on specific things you
+want to do with your JBrowse.</p>
+<p>Check out the new <a href="JBrowse_FAQ" title="JBrowse FAQ">JBrowse FAQ</a> page for more
+tips on setup and configuration</p>
+<p>Also see the <a href="JBrowse_Desktop" title="JBrowse Desktop">JBrowse Desktop</a> guide
+here.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Installation"><span class="tocnumber">1</span>
+<span class="toctext">Installation</span></a>
+<ul>
+<li><a href="#Making_a_New_JBrowse"><span class="tocnumber">1.1</span> <span class="toctext">Making a
+New JBrowse</span></a></li>
+<li><a href="#Upgrading_an_Existing_JBrowse"><span class="tocnumber">1.2</span> <span class="toctext">Upgrading
+an Existing JBrowse</span></a></li>
+<li><a href="#Configuration_Loading.2C_Files.2C_and_Formats"><span class="tocnumber">1.3</span>
+<span class="toctext">Configuration Loading, Files, and
+Formats</span></a>
+<ul>
+<li><a href="#JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29"><span class="tocnumber">1.3.1</span>
+<span class="toctext">JavaScript Object Notation (JSON)
+Configuration Format
+(.json)</span></a>
+<ul>
+<li><a href="#Considerations_for_the_JSON_format"><span class="tocnumber">1.3.1.1</span>
+<span class="toctext">Considerations for the JSON
+format</span></a></li>
+</ul>
+</li>
+<li><a href="#Text_Configuration_Format_.28.conf.29"><span class="tocnumber">1.3.2</span> <span class="toctext">Text
+Configuration Format
+(.conf)</span></a>
+<ul>
+<li><a href="#Considerations_for_the_text-based_.conf_format"><span class="tocnumber">1.3.2.1</span>
+<span class="toctext">Considerations for the text-based .conf
+format</span></a></li>
+<li><a href="#Callback-function_specific_considerations_for_the_text-based_.conf_format"><span class="tocnumber">1.3.2.2</span>
+<span class="toctext">Callback-function specific considerations
+for the text-based .conf
+format</span></a></li>
+</ul>
+</li>
+<li><a href="#Configuration_loading_details"><span class="tocnumber">1.3.3</span>
+<span class="toctext">Configuration loading
+details</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Reference_Sequences"><span class="tocnumber">2</span> <span class="toctext">Reference
+Sequences</span></a>
+<ul>
+<li><a href="#Reference_Sequence_Selector_Configuration"><span class="tocnumber">2.1</span> <span class="toctext">Reference
+Sequence Selector
+Configuration</span></a>
+<ul>
+<li><a href="#Reference_Sequence_Display_Order"><span class="tocnumber">2.1.1</span>
+<span class="toctext">Reference Sequence Display
+Order</span></a></li>
+<li><a href="#Explicitly_Specifying_a_Reference_Sequence_List"><span class="tocnumber">2.1.2</span>
+<span class="toctext">Explicitly Specifying a Reference Sequence
+List</span></a></li>
+</ul>
+</li>
+<li><a href="#prepare-refseqs.pl"><span class="tocnumber">2.2</span>
+<span class="toctext">prepare-refseqs.pl</span></a></li>
+</ul>
+</li>
+<li><a href="#Formatting_Feature_Data"><span class="tocnumber">3</span> <span class="toctext">Formatting
+Feature Data</span></a>
+<ul>
+<li><a href="#flatfile-to-json.pl"><span class="tocnumber">3.1</span>
+<span class="toctext">flatfile-to-json.pl</span></a></li>
+<li><a href="#biodb-to-json.pl"><span class="tocnumber">3.2</span>
+<span class="toctext">biodb-to-json.pl</span></a></li>
+<li><a href="#ucsc-to-json.pl"><span class="tocnumber">3.3</span>
+<span class="toctext">ucsc-to-json.pl</span></a></li>
+</ul>
+</li>
+<li><a href="#Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29"><span class="tocnumber">4</span> <span class="toctext">Feature Tracks
+(HTMLFeatures and
+CanvasFeatures)</span></a>
+<ul>
+<li><a href="#HTMLFeatures_Configuration_Options"><span class="tocnumber">4.1</span>
+<span class="toctext">HTMLFeatures Configuration
+Options</span></a></li>
+<li><a href="#CanvasFeatures_Configuration_Options"><span class="tocnumber">4.2</span>
+<span class="toctext">CanvasFeatures Configuration
+Options</span></a>
+<ul>
+<li><a href="#Customizing_CanvasFeatures_tracks_with_callbacks"><span class="tocnumber">4.2.1</span>
+<span class="toctext">Customizing CanvasFeatures tracks with
+callbacks</span></a></li>
+</ul>
+</li>
+<li><a href="#Generic_Track_Configuration_Options"><span class="tocnumber">4.3</span> <span class="toctext">Generic
+Track Configuration
+Options</span></a></li>
+<li><a href="#Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks"><span class="tocnumber">4.4</span>
+<span class="toctext">Customizing parts of the &lsquo;View details&rsquo;
+Pop-ups with
+callbacks</span></a>
+<ul>
+<li><a href="#Additional_customizations_to_the_pop-up_boxes"><span class="tocnumber">4.4.1</span>
+<span class="toctext">Additional customizations to the pop-up
+boxes</span></a></li>
+</ul>
+</li>
+<li><a href="#Customizing_Left-click_Behavior"><span class="tocnumber">4.5</span>
+<span class="toctext">Customizing Left-click
+Behavior</span></a></li>
+<li><a href="#Customizing_Mouse-over_behavior"><span class="tocnumber">4.6</span>
+<span class="toctext">Customizing Mouse-over
+behavior</span></a></li>
+<li><a href="#Configuring_Summary_Histograms"><span class="tocnumber">4.7</span>
+<span class="toctext">Configuring Summary
+Histograms</span></a></li>
+<li><a href="#Customizing_Right-click_Context_Menus"><span class="tocnumber">4.8</span>
+<span class="toctext">Customizing Right-click Context
+Menus</span></a></li>
+<li><a href="#Click_Configuration_Options"><span class="tocnumber">4.9</span> <span class="toctext">Click
+Configuration Options</span></a></li>
+<li><a href="#Using_callbacks_to_customize_feature_tracks"><span class="tocnumber">4.10</span> <span class="toctext">Using
+callbacks to customize feature
+tracks</span></a></li>
+</ul>
+</li>
+<li><a href="#Alignment_Tracks_.28BAM.29"><span class="tocnumber">5</span> <span class="toctext">Alignment
+Tracks (BAM)</span></a>
+<ul>
+<li><a href="#Alignments2"><span class="tocnumber">5.1</span>
+<span class="toctext">Alignments2</span></a>
+<ul>
+<li><a href="#Alignments2_coloring_schemes"><span class="tocnumber">5.1.1</span>
+<span class="toctext">Alignments2 coloring
+schemes</span></a></li>
+</ul>
+</li>
+<li><a href="#SNPCoverage"><span class="tocnumber">5.2</span>
+<span class="toctext">SNPCoverage</span></a>
+<ul>
+<li><a href="#Example_SNPCoverage_Configuration"><span class="tocnumber">5.2.1</span>
+<span class="toctext">Example SNPCoverage
+Configuration</span></a></li>
+</ul>
+</li>
+<li><a href="#Alignments"><span class="tocnumber">5.3</span>
+<span class="toctext">Alignments</span></a></li>
+<li><a href="#BAM_Data_Configuration_Options"><span class="tocnumber">5.4</span> <span class="toctext">BAM Data
+Configuration Options</span></a></li>
+<li><a href="#Example_BAM_Alignments2_track_configuration"><span class="tocnumber">5.5</span> <span class="toctext">Example
+BAM Alignments2 track
+configuration</span></a></li>
+<li><a href="#Apache_Configuration_Note"><span class="tocnumber">5.6</span> <span class="toctext">Apache
+Configuration Note</span></a></li>
+</ul>
+</li>
+<li><a href="#Wiggle.2FBigWig_Tracks_.28XYPlot.2C_Density.29"><span class="tocnumber">6</span> <span class="toctext">Wiggle/BigWig
+Tracks (XYPlot,
+Density)</span></a>
+<ul>
+<li><a href="#Example_BigWig-based_Wiggle_XY-Plot_Track_Configuration"><span class="tocnumber">6.1</span> <span class="toctext">Example
+BigWig-based Wiggle XY-Plot Track
+Configuration</span></a></li>
+<li><a href="#Example_BigWig-based_Wiggle_Color_Density_Track_Configuration"><span class="tocnumber">6.2</span> <span class="toctext">Example
+BigWig-based Wiggle Color Density Track
+Configuration</span></a></li>
+<li><a href="#Wiggle_track_configuration_options"><span class="tocnumber">6.3</span> <span class="toctext">Wiggle
+track configuration
+options</span></a></li>
+<li><a href="#BigWig_File_Compatibility"><span class="tocnumber">6.4</span> <span class="toctext">BigWig
+File Compatibility</span></a></li>
+</ul>
+</li>
+<li><a href="#Variant_Tracks_.28VCF.29"><span class="tocnumber">7</span> <span class="toctext">Variant Tracks
+(VCF)</span></a>
+<ul>
+<li><a href="#Example_VCF-based_Variant_Track_Configuration"><span class="tocnumber">7.1</span> <span class="toctext">Example
+VCF-based Variant Track
+Configuration</span></a>
+<ul>
+<li><a href="#Using_VCF_Filters_in_configuration"><span class="tocnumber">7.1.1</span> <span class="toctext">Using
+VCF Filters in
+configuration</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Feature_Coverage_Tracks"><span class="tocnumber">8</span> <span class="toctext">Feature
+Coverage Tracks</span></a>
+<ul>
+<li><a href="#Example_Feature_Coverage_Track_Configuration_for_a_BAM_file"><span class="tocnumber">8.1</span> <span class="toctext">Example
+Feature Coverage Track Configuration for a BAM
+file</span></a></li>
+</ul>
+</li>
+<li><a href="#Sequence_track"><span class="tocnumber">9</span> <span class="toctext">Sequence
+track</span></a></li>
+<li><a href="#Pre-rendered_Image_Tracks"><span class="tocnumber">10</span> <span class="toctext">Pre-rendered
+Image Tracks</span></a>
+<ul>
+<li><a href="#wig-to-json.pl"><span class="tocnumber">10.1</span>
+<span class="toctext">wig-to-json.pl</span></a>
+<ul>
+<li><a href="#Basic_usage"><span class="tocnumber">10.1.1</span> <span class="toctext">Basic
+usage</span></a></li>
+<li><a href="#System-specific_tips_for_building_wig2png"><span class="tocnumber">10.1.2</span>
+<span class="toctext">System-specific tips for building
+wig2png</span></a>
+<ul>
+<li><a href="#Apple_OS_X"><span class="tocnumber">10.1.2.1</span>
+<span class="toctext">Apple OS X</span></a></li>
+<li><a href="#Ubuntu_.2F_Debian_Linux"><span class="tocnumber">10.1.2.2</span>
+<span class="toctext">Ubuntu / Debian
+Linux</span></a></li>
+<li><a href="#Red_Hat.2FCentOS.2FFedora_Linux"><span class="tocnumber">10.1.2.3</span>
+<span class="toctext">Red Hat/CentOS/Fedora
+Linux</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#draw-basepair-track.pl"><span class="tocnumber">10.2</span>
+<span class="toctext">draw-basepair-track.pl</span></a>
+<ul>
+<li><a href="#Basic_usage_2"><span class="tocnumber">10.2.1</span> <span class="toctext">Basic
+usage</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Name_Searching_and_Autocompletion"><span class="tocnumber">11</span> <span class="toctext">Name
+Searching and
+Autocompletion</span></a>
+<ul>
+<li><a href="#Autocompletion_Configuration"><span class="tocnumber">11.1</span>
+<span class="toctext">Autocompletion
+Configuration</span></a></li>
+<li><a href="#generate-names.pl"><span class="tocnumber">11.2</span>
+<span class="toctext">generate-names.pl</span></a></li>
+</ul>
+</li>
+<li><a href="#Removing_Tracks"><span class="tocnumber">12</span> <span class="toctext">Removing
+Tracks</span></a></li>
+<li><a href="#Authentication_and_Access_Control"><span class="tocnumber">13</span>
+<span class="toctext">Authentication and Access
+Control</span></a>
+<ul>
+<li><a href="#HTTP_Basic_LDAP_under_Nginx"><span class="tocnumber">13.1</span> <span class="toctext">HTTP
+Basic LDAP under Nginx</span></a></li>
+</ul>
+</li>
+<li><a href="#Cross-origin_resource_sharing_.28CORS.29:_showing_data_on_multiple_servers"><span class="tocnumber">14</span> <span class="toctext">Cross-origin
+resource sharing (CORS): showing data on multiple
+servers</span></a></li>
+<li><a href="#Compressing_data_on_the_server"><span class="tocnumber">15</span> <span class="toctext">Compressing
+data on the server</span></a></li>
+<li><a href="#Controlling_JBrowse_with_the_URL_Query_String"><span class="tocnumber">16</span> <span class="toctext">Controlling
+JBrowse with the URL Query
+String</span></a>
+<ul>
+<li><a href="#Overview_of_URL_Query_String_params"><span class="tocnumber">16.1</span> <span class="toctext">Overview
+of URL Query String
+params</span></a></li>
+<li><a href="#data"><span class="tocnumber">16.2</span>
+<span class="toctext">data</span></a></li>
+<li><a href="#loc"><span class="tocnumber">16.3</span>
+<span class="toctext">loc</span></a></li>
+<li><a href="#tracks"><span class="tocnumber">16.4</span>
+<span class="toctext">tracks</span></a></li>
+<li><a href="#highlight"><span class="tocnumber">16.5</span>
+<span class="toctext">highlight</span></a></li>
+<li><a href="#addFeatures"><span class="tocnumber">16.6</span>
+<span class="toctext">addFeatures</span></a></li>
+<li><a href="#addTracks"><span class="tocnumber">16.7</span>
+<span class="toctext">addTracks</span></a></li>
+<li><a href="#addStores"><span class="tocnumber">16.8</span>
+<span class="toctext">addStores</span></a></li>
+<li><a href="#addBookmarks"><span class="tocnumber">16.9</span>
+<span class="toctext">addBookmarks</span></a></li>
+<li><a href="#Embedded_mode"><span class="tocnumber">16.10</span> <span class="toctext">Embedded
+mode</span></a></li>
+</ul>
+</li>
+<li><a href="#Data_Export"><span class="tocnumber">17</span> <span class="toctext">Data
+Export</span></a>
+<ul>
+<li><a href="#Data_Formats"><span class="tocnumber">17.1</span> <span class="toctext">Data
+Formats</span></a></li>
+<li><a href="#Export_Configuration"><span class="tocnumber">17.2</span> <span class="toctext">Export
+Configuration</span></a></li>
+</ul>
+</li>
+<li><a href="#Data_from_a_SPARQL_Endpoint"><span class="tocnumber">18</span> <span class="toctext">Data from a
+SPARQL Endpoint</span></a>
+<ul>
+<li><a href="#Example_SPARQL_Configuration"><span class="tocnumber">18.1</span> <span class="toctext">Example
+SPARQL Configuration</span></a></li>
+<li><a href="#Variable_Interpolation"><span class="tocnumber">18.2</span> <span class="toctext">Variable
+Interpolation</span></a></li>
+</ul>
+</li>
+<li><a href="#Track_Metadata"><span class="tocnumber">19</span> <span class="toctext">Track
+Metadata</span></a>
+<ul>
+<li><a href="#Embedding_Track_Metadata_in_JBrowse_Configuration"><span class="tocnumber">19.1</span> <span class="toctext">Embedding
+Track Metadata in JBrowse
+Configuration</span></a></li>
+<li><a href="#Loading_Track_Metadata_from_Files"><span class="tocnumber">19.2</span> <span class="toctext">Loading
+Track Metadata from
+Files</span></a>
+<ul>
+<li><a href="#Example"><span class="tocnumber">19.2.1</span>
+<span class="toctext">Example</span></a></li>
+<li><a href="#Track_metadata_options"><span class="tocnumber">19.2.2</span> <span class="toctext">Track
+metadata options</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Faceted_Track_Selector"><span class="tocnumber">20</span> <span class="toctext">Faceted Track
+Selector</span></a>
+<ul>
+<li><a href="#Example_Faceted_Track_Selector_Configuration"><span class="tocnumber">20.1</span> <span class="toctext">Example
+Faceted Track Selector
+Configuration</span></a></li>
+</ul>
+</li>
+<li><a href="#Hierarchical_Track_Selector"><span class="tocnumber">21</span> <span class="toctext">Hierarchical
+Track Selector</span></a></li>
+<li><a href="#General_configuration_options"><span class="tocnumber">22</span> <span class="toctext">General
+configuration options</span></a>
+<ul>
+<li><a href="#General_track_configuration_options"><span class="tocnumber">22.1</span> <span class="toctext">General
+track configuration
+options</span></a></li>
+</ul>
+</li>
+<li><a href="#Dataset_Selector"><span class="tocnumber">23</span> <span class="toctext">Dataset
+Selector</span></a>
+<ul>
+<li><a href="#Example_Dataset_Switching_Configuration"><span class="tocnumber">23.1</span> <span class="toctext">Example
+Dataset Switching
+Configuration</span></a></li>
+</ul>
+</li>
+<li><a href="#Anonymous_Usage_Statistics"><span class="tocnumber">24</span> <span class="toctext">Anonymous
+Usage Statistics</span></a></li>
+<li><a href="#Plugins"><span class="tocnumber">25</span>
+<span class="toctext">Plugins</span></a>
+<ul>
+<li><a href="#Installing_Plugins"><span class="tocnumber">25.1</span>
+<span class="toctext">Installing
+Plugins</span></a></li>
+<li><a href="#Activating_Plugins"><span class="tocnumber">25.2</span>
+<span class="toctext">Activating
+Plugins</span></a></li>
+</ul>
+</li>
+<li><a href="#Advanced_Topics"><span class="tocnumber">26</span> <span class="toctext">Advanced
+Topics</span></a>
+<ul>
+<li><a href="#Using_JBrowse_with_Existing_Databases"><span class="tocnumber">26.1</span> <span class="toctext">Using
+JBrowse with Existing
+Databases</span></a>
+<ul>
+<li><a href="#Extract_data_and_reformat"><span class="tocnumber">26.1.1</span>
+<span class="toctext">Extract data and
+reformat</span></a>
+<ul>
+<li><a href="#Example_Configuration"><span class="tocnumber">26.1.1.1</span>
+<span class="toctext">Example
+Configuration</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Configure_a_Loading_Page"><span class="tocnumber">26.2</span> <span class="toctext">Configure
+a Loading Page</span></a></li>
+<li><a href="#Milestone_functions"><span class="tocnumber">26.3</span> <span class="toctext">Milestone
+functions</span></a></li>
+<li><a href="#Configuring_track_locations_with_Apache"><span class="tocnumber">26.4</span>
+<span class="toctext">Configuring track locations with
+Apache</span></a></li>
+<li><a href="#Feature_API_and_Feature_Store_API"><span class="tocnumber">26.5</span> <span class="toctext">Feature
+API and Feature Store
+API</span></a>
+<ul>
+<li><a href="#Other_useful_classes"><span class="tocnumber">26.5.1</span> <span class="toctext">Other
+useful classes</span></a></li>
+</ul>
+</li>
+<li><a href="#Using_JBrowse_with_Existing_Web_Services"><span class="tocnumber">26.6</span> <span class="toctext">Using
+JBrowse with Existing Web
+Services</span></a>
+<ul>
+<li><a href="#Example_custom_JBrowse_store_class"><span class="tocnumber">26.6.1</span>
+<span class="toctext">Example custom JBrowse store
+class</span></a></li>
+</ul>
+</li>
+<li><a href="#Writing_JBrowse-compatible_Web_Services"><span class="tocnumber">26.7</span> <span class="toctext">Writing
+JBrowse-compatible Web
+Services</span></a>
+<ul>
+<li><a href="#JBrowse_REST_Feature_Store_API"><span class="tocnumber">26.7.1</span>
+<span class="toctext">JBrowse REST Feature Store
+API</span></a>
+<ul>
+<li><a href="#GET_.28base.29.2Fstats.2Fglobal"><span class="tocnumber">26.7.1.1</span>
+<span class="toctext">GET
+(base)/stats/global</span></a></li>
+<li><a href="#GET_.28base.29.2Fstats.2Fregion.2F.28refseq_name.29.3Fstart.3D123.26end.3D456"><span class="tocnumber">26.7.1.2</span>
+<span class="toctext">GET
+(base)/stats/region/(refseq_name)?start=123&amp;end=456</span></a></li>
+<li><a href="#GET_.28base.29.2Fstats.2FregionFeatureDensities.2F.28refseq_name.29.3Fstart.3D123.26end.3D456.26basesPerBin.3D20000"><span class="tocnumber">26.7.1.3</span>
+<span class="toctext">GET
+(base)/stats/regionFeatureDensities/(refseq_name)?start=123&amp;end=456&amp;basesPerBin=20000</span></a></li>
+<li><a href="#GET_.28base.29.2Ffeatures.2F.28refseq_name.29.3Fstart.3D234.26end.3D5678"><span class="tocnumber">26.7.1.4</span>
+<span class="toctext">GET
+(base)/features/(refseq_name)?start=234&amp;end=5678</span></a></li>
+</ul>
+</li>
+<li><a href="#Configuring_Tracks_to_Use_a_REST_Feature_Store"><span class="tocnumber">26.7.2</span>
+<span class="toctext">Configuring Tracks to Use a REST Feature
+Store</span></a></li>
+<li><a href="#Other_Dynamically-Servable_Formats"><span class="tocnumber">26.7.3</span> <span class="toctext">Other
+Dynamically-Servable
+Formats</span></a>
+<ul>
+<li><a href="#trackList.json_format"><span class="tocnumber">26.7.3.1</span>
+<span class="toctext">trackList.json
+format</span></a></li>
+<li><a href="#refSeqs.json_format"><span class="tocnumber">26.7.3.2</span>
+<span class="toctext">refSeqs.json
+format</span></a></li>
+<li><a href="#Sequence_data_format"><span class="tocnumber">26.7.3.3</span>
+<span class="toctext">Sequence data
+format</span></a></li>
+</ul>
+</li>
+<li><a href="#JBrowse_REST_Names_API"><span class="tocnumber">26.7.4</span>
+<span class="toctext">JBrowse REST Names
+API</span></a>
+<ul>
+<li><a href="#GET_.28url.29.3Fequals.3DApple1"><span class="tocnumber">26.7.4.1</span>
+<span class="toctext">GET
+(url)?equals=Apple1</span></a></li>
+<li><a href="#GET_.28url.29.3Fstartswith.3DAp"><span class="tocnumber">26.7.4.2</span>
+<span class="toctext">GET
+(url)?startswith=Ap</span></a></li>
+</ul>
+</li>
+<li><a href="#Configuring_JBrowse_to_Use_REST_Name_Lookup"><span class="tocnumber">26.7.5</span>
+<span class="toctext">Configuring JBrowse to Use REST Name
+Lookup</span></a></li>
+</ul>
+</li>
+<li><a href="#Publishing_and_Subscribing_to_JBrowse_Events"><span class="tocnumber">26.8</span>
+<span class="toctext">Publishing and Subscribing to JBrowse
+Events</span></a></li>
+<li><a href="#Writing_JBrowse_Plugins"><span class="tocnumber">26.9</span> <span class="toctext">Writing
+JBrowse Plugins</span></a>
+<ul>
+<li><a href="#Plugin_Components"><span class="tocnumber">26.9.1</span>
+<span class="toctext">Plugin
+Components</span></a>
+<ul>
+<li><a href="#Example_main.js"><span class="tocnumber">26.9.1.1</span>
+<span class="toctext">Example main.js</span></a></li>
+<li><a href="#Example_plugin_directory_contents"><span class="tocnumber">26.9.1.2</span>
+<span class="toctext">Example plugin directory
+contents</span></a></li>
+<li><a href="#Distributing_a_plugin_via_npm"><span class="tocnumber">26.9.1.3</span>
+<span class="toctext">Distributing a plugin via
+npm</span></a></li>
+</ul>
+</li>
+<li><a href="#Plugin_build_notes"><span class="tocnumber">26.9.2</span>
+<span class="toctext">Plugin build
+notes</span></a></li>
+</ul>
+</li>
+<li><a href="#Data_Format_Specification:_JSON_LazyNCList_Feature_Store"><span class="tocnumber">26.10</span> <span class="toctext">Data
+Format Specification: JSON LazyNCList Feature
+Store</span></a>
+<ul>
+<li><a href="#Array_Representation_.28ArrayRepr.29"><span class="tocnumber">26.10.1</span>
+<span class="toctext">Array Representation
+(ArrayRepr)</span></a></li>
+<li><a href="#Lazy_Nested-Containment_Lists_.28LazyNCList.29"><span class="tocnumber">26.10.2</span> <span class="toctext">Lazy
+Nested-Containment Lists
+(LazyNCList)</span></a></li>
+</ul>
+</li>
+<li><a href="#Data_Format_Specification:_Fixed-Resolution_Tiled_Image_Store"><span class="tocnumber">26.11</span> <span class="toctext">Data
+Format Specification: Fixed-Resolution Tiled Image
+Store</span></a></li>
+<li><a href="#Including_external_files_and_functions_in_trackList.json"><span class="tocnumber">26.12</span>
+<span class="toctext">Including external files and functions in
+trackList.json</span></a></li>
+<li><a href="#Rendering_high_resolution_screenshots_using_PhantomJS"><span class="tocnumber">26.13</span>
+<span class="toctext">Rendering high resolution screenshots using
+PhantomJS</span></a>
+<ul>
+<li><a href="#Export_as_SVG"><span class="tocnumber">26.13.1</span>
+<span class="toctext">Export as SVG</span></a></li>
+<li><a href="#Using_pageres_wrapper_for_PNG_output"><span class="tocnumber">26.13.2</span>
+<span class="toctext">Using pageres wrapper for PNG
+output</span></a></li>
+<li><a href="#Other_links"><span class="tocnumber">26.13.3</span>
+<span class="toctext">Other links</span></a></li>
+</ul>
+</li>
+<li><a href="#Rendering_high_resolution_screenshots_using_Puppeteer"><span class="tocnumber">26.14</span>
+<span class="toctext">Rendering high resolution screenshots using
+Puppeteer</span></a></li>
+</ul>
+</li>
+<li><a href="#External_Links"><span class="tocnumber">27</span> <span class="toctext">External
+Links</span></a></li>
+</ul>
+<h1 id="span-idinstallation-classmw-headlineinstallationspan"><span id="Installation" class="mw-headline">Installation</span></h1>
+<p>At the most basic level, setting up JBrowse consists of:</p>
+<ul>
+<li>Placing a copy of the JBrowse directory somewhere in the web-servable
+part of your server&rsquo;s file system (often <code>/var/www</code> by default)</li>
+<li>Running the JBrowse setup script to install a few server-side
+dependencies</li>
+<li>Running one or more server-side scripts to create a directory
+containing a JBrowse-formatted copy of your data.</li>
+</ul>
+<p>Both the JBrowse code and these data files must be in a location where
+the web server can serve them to users. Then, a user pointing their web
+browser at the appropriate URL for the index.html file in the JBrowse
+directory will see the JBrowse interface, including sequence and feature
+tracks reflecting the data source.</p>
+<p>Reference sequence data should be added first (using
+<code>prepare-refseqs.pl</code>`), followed by annotation data. Once all of
+annotation data has been added, use <code>generate-names.pl</code> to make the
+feature names searchable.</p>
+<h2 id="span-idmaking_a_new_jbrowse-classmw-headlinemaking-a-new-jbrowsespan"><span id="Making_a_New_JBrowse" class="mw-headline">Making a New JBrowse</span></h2>
+<p>0. Install build prerequisites, plus make and a C compiler. On Ubuntu,
+you could do this with:</p>
+<pre><code> sudo apt-get install zlib1g-dev libpng-dev libgd2-noxpm-dev build-essential
+</code></pre>
+<p>Some other things that sometimes need to be manually installed if your
+setup.sh is failing includes these</p>
+<pre><code> sudo apt-get install libexpat-dev libxml2-dev libdb-dev
+</code></pre>
+<p>If you need a web server you can add apache2 to the list</p>
+<p>1. <a href="http://jbrowse.org/install/" class="external text"
+rel="nofollow">Download JBrowse</a> onto your web server.</p>
+<p>2. Unpack JBrowse into a directory that is served by your web browser.
+On many systems, this defaults to <code>/var/www</code> or <code>/var/www/html</code> for
+apache2</p>
+<pre><code>   cd /var/www/html
+   unzip JBrowse-*.zip
+</code></pre>
+<p><strong>Make sure you have permissions to write to the contents of the
+jbrowse/ directory you have just created.</strong></p>
+<p>3. Run the automated-setup script, <code>./setup.sh</code>, which will attempt to
+install all of JBrowse&rsquo;s (modest) prerequisites for you in the
+<code>jbrowse/</code> directory itself. Note that <code>setup.sh</code> should not be run as
+root or with <code>sudo</code>.</p>
+<p>4. Visit <a
+href="http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox"
+class="external free"
+rel="nofollow"><a href="http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox">http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox</a></a>.
+If you can see the included Volvox example data, you are ready to
+configure JBrowse to show your own data! The
+<a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
+class="external text" rel="nofollow">Getting Started with JBrowse
+Tutorial</a> provides a very basic step-by-step guide to formatting your
+own data, and in-depth configuration reference information can be found
+on this page.</p>
+<p>Note: if there is an error installing the perl pre-requisites, and you
+get an error in your setup.log such as
+&ldquo;/home.local/username/.cpanm/build.log: No such file or directory at
+/loader/0x10b108f0/App/cpanminus/script.pm line 224.&rdquo;</p>
+<p>Then you can clear out your users locallib with <code>rm -rf ~/.cpanm</code> and
+re-run setup.sh. Only do this if you are not concerned about your
+personal cpanm folder in the first place. Otherwise, you can use your
+system&rsquo;s cpanm to install jbrowse pre-requisites with &ldquo;cpanm .&rdquo; inside
+the jbrowse directory.</p>
+<h2 id="span-idupgrading_an_existing_jbrowse-classmw-headlineupgrading-an-existing-jbrowsespan"><span id="Upgrading_an_Existing_JBrowse" class="mw-headline">Upgrading an Existing JBrowse</span></h2>
+<p>To upgrade an existing JBrowse (1.3.0 or later) to the latest version,
+simply move its data directory (and <code>jbrowse_conf.json</code> if you are using
+it) into the directory of a newer JBrowse, and the new JBrowse will
+display that data.</p>
+<p>To upgrade a 1.2.x JBrowse, copy its data directory into the new JBrowse
+directory, and point your browser at compat_121.html in the new JBrowse
+directory, instead of index.html. Or, if desired, you could simply
+overwrite index.html with compat_121.html.</p>
+<p>If you are upgrading from a version of JBrowse older than 1.2.0, a fresh
+installation is required.</p>
+<h2 id="span-idconfiguration_loading2c_files2c_and_formats-classmw-headlineconfiguration-loading-files-and-formatsspan"><span id="Configuration_Loading.2C_Files.2C_and_Formats" class="mw-headline">Configuration Loading, Files, and Formats</span></h2>
+<p>JBrowse supports <strong>two configuration formats</strong>, a JSON-based format and
+a GBrowse-like textual format that is easier to edit and maintain by
+hand than JSON. Sites can use either format, or a mixture of both. The
+default shipped configuration of JBrowse uses both: jbrowse.conf in the
+main JBrowse directory for global settings, and trackList.json in each
+data directory for dataset-specific configuration in JSON, and
+tracks.conf in the data directory for dataset-specific configuration in
+.conf format.</p>
+<h3 id="span-idjavascript_object_notation_28json29_configuration_format_28json29-classmw-headlinejavascript-object-notation-json-configuration-format-jsonspan"><span id="JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29" class="mw-headline">JavaScript Object Notation (JSON) Configuration Format (.json)</span></h3>
+<p>The JSON configuration format was the first format supported by JBrowse,
+and is easy for software programs to read and modify. Before version
+1.11.0, this was the only format supported by JBrowse.</p>
+<p>As an example, the trackList.json file might have something like this.
+Here is an example of a BAM track</p>
+<pre><code>{
+ &quot;tracks&quot;: [
+   {
+     &quot;urlTemplate&quot; : &quot;volvox-sorted.bam&quot;,
+     &quot;storeClass&quot;  : &quot;JBrowse/Store/SeqFeature/BAM&quot;,
+     &quot;type&quot;        : &quot;JBrowse/View/Track/Alignments2&quot;,
+     &quot;label&quot;       : &quot;BAM_track&quot;,
+     &quot;key&quot;         : &quot;My BAM track&quot;
+     &quot;style&quot;: { &quot;color&quot;: &quot;red&quot; }
+   }
+ ]
+}
+</code></pre>
+<p>The specifics of this config are not essential, we are specifying an
+array of tracks in a trackList.json style, and each track is an object
+that includes some parameters like the urlTemplate to refer to the
+location of the BAM file on the server relative to the data directory,
+the color of the features, etc.</p>
+<h4 id="span-idconsiderations_for_the_json_format-classmw-headlineconsiderations-for-the-json-formatspan"><span id="Considerations_for_the_JSON_format" class="mw-headline">Considerations for the JSON format</span></h4>
+<ul>
+<li>Nested objects are specified using typical JSON format, using curly
+brackets</li>
+<li>Booleans and numbers should remain unquoted</li>
+<li>Functions do remain quoted however e.g. &ldquo;style&rdquo;: { &ldquo;color&rdquo;:
+&ldquo;function() { /* your code here */ }&rdquo; }</li>
+<li>JSON strings should not contain line breaks (see Text .conf format for
+info on multiline callbacks)</li>
+<li>Configuration values can be stored in both jbrowse_conf.json or in
+trackList.json (or conf files) i.e. the trackList.json does not only
+have to contain tracks, can contain other config entries</li>
+</ul>
+<h3 id="span-idtext_configuration_format_28conf29-classmw-headlinetext-configuration-format-confspan"><span id="Text_Configuration_Format_.28.conf.29" class="mw-headline">Text Configuration Format (.conf)</span></h3>
+<p>JBrowse 1.11.0 introduced support for a new text-based configuration
+format that users of GBrowse will find very familiar, since its design
+borrows heavily from GBrowse’s configuration syntax. It is fairly
+comfortable to hand-edit, but rather inconvenient for automated tools to
+work with. To get the best of both worlds, JBrowse supports both
+formats.</p>
+<p>This text configuration format can be used to specify</p>
+<ul>
+<li>general configuration options (i.e. jbrowse.conf
+<a href="#General_configuration_options">[1]</a>)</li>
+<li>track-specific options (i.e. tracks.conf
+<a href="#Example_SNPCoverage_Configuration">[2]</a>)</li>
+<li>standalone files with extra code (i.e. functions.conf
+<a href="#Including_external_files_and_functions_in_trackList.json">[3]</a>).</li>
+</ul>
+<p>The text format has several benefits, including the ability to specify
+multi-line callbacks. Example:</p>
+<pre><code># BAM track with a new callback
+[tracks.mytrack]
+storeClass  = JBrowse/Store/SeqFeature/BAM
+type        = JBrowse/View/Track/Alignments2
+urlTemplate = myfile.bam
+key         = My BAM track
+style.color = function(feature) {
+   /* comment */
+   return 'red';
+ }
+</code></pre>
+<h4 id="span-idconsiderations_for_the_text-based_conf_format-classmw-headlineconsiderations-for-the-text-based-conf-formatspan"><span id="Considerations_for_the_text-based_.conf_format" class="mw-headline">Considerations for the text-based .conf format</span></h4>
+<ul>
+<li>Comments should start with #</li>
+<li>The section labels, e.g. [tracks.testtrack] defines an identifier
+for the track named testtrack, so you should not have dots in your
+identifier, e.g. don&rsquo;t use something like this [tracks.test.track]</li>
+<li>Don&rsquo;t quote the values in the file, e.g key=My BAM track, not key=&ldquo;My
+BAM track&rdquo;</li>
+<li>Nested values can specified using &lsquo;dot&rsquo; notation, e.g. &ldquo;style.color&rdquo;</li>
+<li>A &ldquo;section&rdquo; can be specified with square brackets, e.g.
+[trackMetadata] will create the config variable trackMetadata and
+the values in the section are added to it.</li>
+<li>Extra JSON values can be specified in the conf file using the syntax
+json:{&hellip;} (see <a href="#Customizing_Right-click_Context_Menus">[4]</a> for
+example)</li>
+<li>Very large .conf files (thousands of lines) files can take longer to
+parse than equivalent JSON</li>
+<li>An array of values can be built up over multiple lines. NOTE: A quirk
+of the format is that there cannot be more than 4 spaces before the +
+sign in each item. Example:</li>
+</ul>
+<!-- -->
+<pre><code>    [trackMetadata]
+    sources =
+       + data/mymeta.csv
+       + data/more_meta.csv
+</code></pre>
+<h4 id="span-idcallback-function_specific_considerations_for_the_text-based_conf_format-classmw-headlinecallback-function-specific-considerations-for-the-text-based-conf-formatspan"><span id="Callback-function_specific_considerations_for_the_text-based_.conf_format" class="mw-headline">Callback-function specific considerations for the text-based .conf format</span></h4>
+<ul>
+<li>Comments inside callbacks can use the /* */ format but not the //
+format</li>
+<li>All lines of a multi-line callback should be spaced away from the
+left-most column, including the closing bracket (see the style.color
+example above)</li>
+<li>There should be no blank lines inside a multi-line callback</li>
+<li>Refer to
+<a href="#Including_external_files_and_functions_in_trackList.json">[5]</a> for
+more info on multi-line functions</li>
+</ul>
+<h3 id="span-idconfiguration_loading_details-classmw-headlineconfiguration-loading-detailsspan"><span id="Configuration_loading_details" class="mw-headline">Configuration loading details</span></h3>
+<p>When your web browser loads a page containing JBrowse, and JBrowse
+starts, the following steps are done</p>
+<ul>
+<li>In index.html, read the URL params (e.g. query params like &amp;data= and
+&amp;tracks, &amp;loc=, etc.)</li>
+<li>In index.html, create a JSON blob using URL params and pass them to
+the Browser.js constructor which you can see on index.html</li>
+<li>In Browser.js, the constructor is a JSON blob that becomes the &ldquo;root
+configuration object&rdquo;</li>
+<li>In Browser.js, mix the root config with the _defaultConfig object</li>
+<li>In _defaultConfig, the default is to include both jbrowse_conf.json
+and jbrowse.conf config files</li>
+<li>In jbrowse.conf, the default is to include {dataRoot}/trackList.json
+{dataRoot}/tracks.conf</li>
+</ul>
+<p>This is how you eventually get the trackList.json and tracks.conf files
+from your data directory loaded. Note that the &amp;data=blah URL parameter
+becomes the dataRoot config parameter, so dataRoot would be &ldquo;blah&rdquo; in
+that case.</p>
+<p>The configuration system then merges all this information, e.g. from the
+URL params, from the Browser constructors, the defaultConfigs, the
+jbrowse.conf, the jbrowse_conf.json, the trackList.json, the
+tracks.conf, and any files that the trackList.json or tracks.conf files
+themselves include, into a single config.</p>
+<p>Generally this happens all seamlessly, and both the text-based .conf
+format and .json config files can co-exist. That is because anything
+that can be written as a .conf file can also be written as a .json, they
+are both parsed on the client side into config objects.</p>
+<h1 id="span-idreference_sequences-classmw-headlinereference-sequencesspan"><span id="Reference_Sequences" class="mw-headline">Reference Sequences</span></h1>
+<p>The reference sequences on which the browser will display annotations,
+and which provide a common coordinate system for all tracks. At a close
+enough zoom level, the sequence bases are visible in the &ldquo;Reference
+Sequence&rdquo; track.</p>
+<p>The exact interpretation of &ldquo;reference sequence&rdquo; will depend on how you
+are using JBrowse. For a model organism genome database, each reference
+sequence would typically represent a chromosome or a
+<a href="http://en.wikipedia.org/wiki/Contig" class="external text"
+rel="nofollow">contig</a>. Before any feature or image tracks can be
+displayed in JBrowse, the reference sequences must be defined using the
+prepare-refseqs.pl formatting tool.</p>
+<h2 id="span-idreference_sequence_selector_configuration-classmw-headlinereference-sequence-selector-configurationspan"><span id="Reference_Sequence_Selector_Configuration" class="mw-headline">Reference Sequence Selector Configuration</span></h2>
+<p>JBrowse displays a dropdown selector for changing reference sequences.</p>
+<p>For JBrowse versions 1.6.3 to 1.8.1, if more than 30 reference sequences
+are loaded, this selector is not shown by default. To force JBrowse to
+show the reference sequence dropdown selector, set
+<code>refSeqDropdown: true</code> in the configuration. This can be done in any
+configuration file, e.g. index.html, jbrowse_conf.json, or
+data/trackList.json.</p>
+<p>In JBrowse version 1.9.0 and later, the reference sequence dropdown menu
+is always displayed. However, if there are too many reference sequences
+to practically display in the dropdown selector, the first portion of
+the sequence list is shown in the dropdown selector, along with a
+message stating that there are more reference sequences than can be
+shown. The maximum number of reference sequences in the selector is set
+by the <code>refSeqSelectorMaxSize</code> configuration variable, and defaults to 30.</p>
+<h3 id="span-idreference_sequence_display_order-classmw-headlinereference-sequence-display-orderspan"><span id="Reference_Sequence_Display_Order" class="mw-headline">Reference Sequence Display Order</span></h3>
+<p>The ordering of reference sequences in the selector is configurable
+using the <code>refSeqOrder</code> configuration variable.</p>
+<p>Supported values for refSeqOrder include</p>
+<ul>
+<li><code>name</code></li>
+<li><code>name descending</code></li>
+<li><code>length</code></li>
+<li><code>length descending</code></li>
+<li><code>false/null/0</code> to disable any sorting</li>
+<li><code>by_list</code> to manually specify a list of reference sequences in the
+selector</li>
+</ul>
+<p>One instance in which refSeqOrder is particularly useful is in
+displaying annotations on early-stage, incomplete genomic assemblies: to
+display the N biggest contigs in the assembly in the reference sequence
+selector dropdown, one can set <code>refSeqOrder</code> to &rsquo;length descending&rsquo;, and
+set <code>refSeqSelectorMaxSize</code> to N.</p>
+<h3 id="span-idexplicitly_specifying_a_reference_sequence_list-classmw-headlineexplicitly-specifying-a-reference-sequence-listspan"><span id="Explicitly_Specifying_a_Reference_Sequence_List" class="mw-headline">Explicitly Specifying a Reference Sequence List</span></h3>
+<p>If you set <code>refSeqOrder</code> to <code>by_list</code>, you can then set
+<code>refSeqOrderList</code> to set the exact order of the reference sequence list.</p>
+<p>Example (in data/tracks.conf)</p>
+<pre><code>[GENERAL]
+refSeqOrder = by_list
+refSeqOrderList =
+  + ctgB
+  + ctgA
+  + ctgAprime
+  + bethsCrazyBananasContig
+  + ctgAZed
+</code></pre>
+<h2 id="span-idprepare-refseqspl-classmw-headlineprepare-refseqsplspan"><span id="prepare-refseqs.pl" class="mw-headline">prepare-refseqs.pl</span></h2>
+<p>This script is used to format sequence data for use by JBrowse, and must
+be run before adding other tracks. In addition to formatting the
+sequence data, this script creates a track called &ldquo;DNA&rdquo; that displays
+the reference sequence. The simplest way to use it is with the &ndash;fasta
+option, which uses a single sequence or set of reference sequences from
+a <a href="Glossary#FASTA" title="Glossary">FASTA</a> file:</p>
+<pre><code>bin/prepare-refseqs.pl --fasta &lt;fasta file&gt; [options]
+</code></pre>
+<p>If the file has multiple sequences (e.g. multiple chromosomes), each
+sequence will become a reference sequence by default. You may switch
+between these sequences by selecting the sequence of interest via the
+pull-down menu to the right of the large &ldquo;zoom in&rdquo; button.</p>
+<p>You may use any alphabet you wish for your sequences (i.e., you are not
+restricted to the nucleotides A, T, C, and G; any alphanumeric
+character, as well as several other characters, may be used). Hence, it
+is possible to browse RNA and protein in addition to DNA. However, some
+characters should be avoided, because they will cause the sequence to
+&ldquo;split&rdquo; - part of the sequence will be cut off and and continue on the
+next line. These characters are the <em>hyphen</em> and <em>question mark</em>.
+Unfortunately, this prevents the use of hyphens to represent gaps in a
+reference sequence.</p>
+<p>In addition to reading from a fasta file, prepare-refseqs.pl can read
+sequences from a gff file or a database. In order to read fasta
+sequences from a database, a config file must be used.</p>
+<p>Syntax used to import sequences from gff files:</p>
+<pre><code>bin/prepare-refseqs.pl --gff &lt;gff file with sequence information&gt; [options]
+</code></pre>
+<p>Syntax used to import sequences with a config file:</p>
+<pre><code>bin/prepare-refseqs.pl --conf &lt;config file that references a database with sequence information&gt; --[refs|refid] &lt;reference sequences&gt; [options]
+</code></pre>
+<p>Syntax used to import a indexed fasta(i.e. a fasta file where you run
+`samtools faidx yourfile.fa` which outputs yourfile.fa.fai)</p>
+<pre><code>bin/prepare-refseqs.pl --indexed_fasta yourfile.fa
+</code></pre>
+<p>This will copy yourfile.fa and yourfile.fa.fai to the data directory</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fasta, indexed_fasta, twobit, gff, sizes, or conf</td>
+<td>Path to the file that JBrowse will use to import sequences. With the fasta and gff options, the sequence information is imported directly from the specified file. With the sizes option, a tab delimited file with chromosome names and lengths is used, but no sequence information is added. With the conf option, the specified config file includes the details necessary to access a database that contains the sequence information. Exactly one of these three options must be used. With indexed_fasta, the samtools faidx yourfile.fa must be run before hand. With twobit, the twobit file will automatically be copied into your data directory.</td>
+</tr>
+<tr>
+<td>out</td>
+<td>A path to the output directory (default is &lsquo;data&rsquo; in the current directory)</td>
+</tr>
+<tr>
+<td>seqdir</td>
+<td>The directory where the reference sequences are stored (default: &lt;output directory&gt;/seq)</td>
+</tr>
+<tr>
+<td>noseq</td>
+<td>Causes no reference sequence track to be created. This is useful for reducing disk usage.</td>
+</tr>
+<tr>
+<td>refs</td>
+<td>A comma-delimited list of the names of sequences to be imported as reference sequences. This option (or refid) is required when using the conf option. It is not required when the fasta or gff options are used, but it can be useful with these options, since it can be used to select which sequences JBrowse will import.</td>
+</tr>
+<tr>
+<td>refids</td>
+<td>A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the &lsquo;feature_id&rsquo; column of &lsquo;feature&rsquo; table in a Chado database.</td>
+</tr>
+</tbody>
+</table>
+<p>Note: the `prepare-refseqs.pl &ndash;sizes chrom.sizes` option is maybe
+underappreciated. You can technically run jbrowse without any sequence
+data loaded, simply a set of chromosomes and their sizes. The
+chrom.sizes file simply can contain two column tab separated list of
+chromosome names and their lengths.</p>
+<h1 id="span-idformatting_feature_data-classmw-headlineformatting-feature-dataspan"><span id="Formatting_Feature_Data" class="mw-headline">Formatting Feature Data</span></h1>
+<p>JBrowse has several different tools that can be used to convert
+range-based annotation data (genes, transcripts, etc) to range-indexed
+sets of static JSON files that are very fast for JBrowse to access. Each
+of these tools also adds a track configuration stanza to the
+<code>trackList.json</code> configuration file in its output directory.</p>
+<ul>
+<li><a href="#flatfile-to-json.pl">flatfile-to-json.pl</a> - import GFF3 and BED
+files (<strong>recommended for new users</strong>)</li>
+<li><a href="#biodb-to-json.pl">biodb-to-json.pl</a> - import from a
+Bio::DB::SeqFeature::Store database (recommended for users with
+existing databases)</li>
+<li><a href="#ucsc-to-json.pl">ucsc-to-json.pl</a> - import UCSC database dumps (.sql
+and .txt.gz)</li>
+</ul>
+<h3 id="span-idflatfile-to-jsonpl-classmw-headlineflatfile-to-jsonplspan"><span id="flatfile-to-json.pl" class="mw-headline">flatfile-to-json.pl</span></h3>
+<p>Each run of this script formats a single track for JBrowse. A <em>flat
+file</em> is a data set that exists entirely in a single file. For this
+script, the file must be a <a href="GFF3" title="GFF3">GFF3</a>,
+<a href="http://www.ensembl.org/info/website/upload/bed.html"
+class="external text" rel="nofollow">BED</a>, or GenBank text file.</p>
+<p>Basic usage:</p>
+<pre><code>   bin/flatfile-to-json.pl --[gff|gbk|bed] &lt;flat file&gt; --tracklabel &lt;track name&gt; [options]
+</code></pre>
+<p>For a full list of the options supported by flatfile-to-json.pl, run it
+with the &ndash;help option</p>
+<pre><code>   bin/flatfile-to-json.pl --help
+</code></pre>
+<p>Example</p>
+<pre><code>        flatfile-to-json.pl                                                         \
+            ( --gff &lt;GFF3 file&gt; | --bed &lt;BED file&gt; | --gbk &lt;GenBank file&gt; )         \
+            --trackLabel &lt;track identifier&gt;                                         \
+            [ --trackType &lt;JS Class&gt; ]                                              \
+            [ --out &lt;output directory&gt; ]                                            \
+            [ --key &lt;human-readable track name&gt; ]                                   \
+            [ --className &lt;CSS class name for displaying features&gt; ]                \
+            [ --urltemplate &quot;http://example.com/idlookup?id={id}&quot; ]                 \
+            [ --arrowheadClass &lt;CSS class&gt; ]                                        \
+            [ --noSubfeatures ]                                                     \
+            [ --subfeatureClasses '{ JSON-format subfeature class map }' ]          \
+            [ --clientConfig '{ JSON-format style configuration for this track }' ] \
+            [ --config '{ JSON-format extra configuration for this track }' ]       \
+            [ --thinType &lt;BAM -thin_type&gt; ]                                         \
+            [ --thicktype &lt;BAM -thick_type&gt;]                                        \
+            [ --type &lt;feature types to process&gt; ]                                   \
+            [ --nclChunk &lt;chunk size for generated NCLs&gt; ]                          \
+            [ --compress ]                                                          \
+            [ --sortMem &lt;memory in bytes to use for sorting&gt; ]                      \
+            [ --maxLookback &lt;maximum number of features to buffer in gff3 files&gt; ]  \
+            [ --nameAttributes &quot;name,alias,id&quot; ]                                    \
+</code></pre>
+<p>The &ndash;trackLabel parameter is the only required parameter, and is the
+&ldquo;id&rdquo; to refer to your track by. The displayed name is also whatever
+&ndash;trackLabel is unless &ndash;key is specified, in which case, whatever &ndash;key
+is will be used as the displayed name.</p>
+<p>By default the output is in a folder called data in your current working
+directory, or whatever is specified by &ndash;out</p>
+<p>Using &ndash;trackType CanvasFeatures is generally useful since
+CanvasFeatures are newer than the default HTMLFeatures (aka
+FeatureTrack)</p>
+<h3 id="span-idbiodb-to-jsonpl-classmw-headlinebiodb-to-jsonplspan"><span id="biodb-to-json.pl" class="mw-headline">biodb-to-json.pl</span></h3>
+<p>This script uses a
+<a href="JBrowseDev/Current/Usage/ConfigFiles" class="mw-redirect"
+title="JBrowseDev/Current/Usage/ConfigFiles">config file</a> to produce
+a set of feature tracks in JBrowse. It can be used to obtain information
+from any database with appropriate
+<a href="Glossary#Database_Schema" title="Glossary">schema</a>, or from flat files.
+Because it can produce several feature tracks in a single execution, it
+is useful for large-scale feature data entry into JBrowse.</p>
+<p>Basic usage:</p>
+<pre><code>   bin/biodb-to-json.pl --conf &lt;config file&gt; [options]
+</code></pre>
+<p>For a full list of the options supported by biodb-to-json.pl, run it
+with the &ndash;help option, like:</p>
+<pre><code>   bin/biodb-to-json.pl --help
+</code></pre>
+<h3 id="span-iducsc-to-jsonpl-classmw-headlineucsc-to-jsonplspan"><span id="ucsc-to-json.pl" class="mw-headline">ucsc-to-json.pl</span></h3>
+<p>This script uses data from a local dump of the UCSC genome annotation
+MySQL database. To reach this data, go to
+<a href="http://hgdownload.cse.ucsc.edu/downloads.html"
+class="external text" rel="nofollow">hgdownload.cse.ucsc.edu</a> and
+click the link for the genome of interest. Next, click the &ldquo;Annotation
+Database&rdquo; link. The data relevant to ucsc-to-json.pl (*.sql and
+*.txt.gz files) can be downloaded from either this page or the FTP
+server described on this page.</p>
+<p>Together, a *.sql and *.txt.gz pair of files (such as
+cytoBandIdeo.txt.gz and cytoBandIdeo.sql) constitute a database table.
+Ucsc-to-json.pl uses the *.sql file to get the column labels, and it
+uses the *.txt.gz file to get the data for each row of the table. For
+the example pair of files above, the name of the database table is
+&ldquo;cytoBandIdeo&rdquo;. This will become the name of the JBrowse track that is
+produced from the data in the table.</p>
+<p>In addition to all of the feature-containing tables that you want to use
+as JBrowse tracks, you will also need to download the trackDb.sql and
+trackDb.txt.gz files for the organism of interest.</p>
+<p>Basic usage:</p>
+<pre><code>  bin/ucsc-to-json.pl --in &lt;directory with files from UCSC&gt; --track &lt;database table name&gt; [options]
+</code></pre>
+<p>Hint: If you&rsquo;re using this approach, it might be convenient to also
+download the sequence(s) from UCSC. These are usually available from the
+&ldquo;Data set by chromosome&rdquo; link for the particular genome or from the FTP
+server.</p>
+<p>For a full list of the options supported by ucsc-to-json.pl, run it with
+the &ndash;help option, like:</p>
+<pre><code>   bin/ucsc-to-json.pl --help
+</code></pre>
+<h1 id="span-idfeature_tracks_28htmlfeatures_and_canvasfeatures29-classmw-headlinefeature-tracks-htmlfeatures-and-canvasfeaturesspan"><span id="Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29" class="mw-headline">Feature Tracks (HTMLFeatures and CanvasFeatures)</span></h1>
+<p>Feature tracks can be used to visualize localized annotations on a
+sequence, such as gene models, transcript alignments, SNPs and so forth.</p>
+<h2 id="span-idhtmlfeatures_configuration_options-classmw-headlinehtmlfeatures-configuration-optionsspan"><span id="HTMLFeatures_Configuration_Options" class="mw-headline">HTMLFeatures Configuration Options</span></h2>
+<p>JBrowse HTMLFeatures tracks, the default legacy track type for
+range-based features, have many available options for customization, not
+all of which are available from the command-line formatting scripts.
+Below is a comprehensive list of configuration options for HTMLFeatures
+tracks. HTMLFeatures tracks are also referred to as trackType:
+&ldquo;FeatureTrack&rdquo; or &ldquo;type&rdquo;: &ldquo;FeatureTrack&rdquo;.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yScalePosition</code></td>
+<td>Position of the y-axis scale indicator when the track is zoomed far enough out that density histograms are displayed. Can be &ldquo;left&rdquo;, &ldquo;right&rdquo;, or &ldquo;center&rdquo;. Defaults to &ldquo;center&rdquo;.</td>
+</tr>
+<tr>
+<td><code>maxFeatureScreenDensity</code></td>
+<td>Maximum density of features to display on the screen. If this is exceeded, will display either feature density histograms (if available), or a &ldquo;too many features to show&rdquo; message. The units of this number are features per screen width in pixels. Defaults to 0.5.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Comma-separated list of fields in which to look for the description of a feature. Case-insensitive. If set to <code>false</code> or <code>null</code>, no feature description will be shown. Defaults to &rsquo;note, description&rsquo;.</td>
+</tr>
+<tr>
+<td><code>maxDescriptionLength</code></td>
+<td>Maximum length, in characters, for displayed feature descriptions.</td>
+</tr>
+<tr>
+<td><code>minSubfeatureWidth</code></td>
+<td>Minimum width, in pixels, of the <em>top-level</em> feature for JBrowse to attempt to display its subfeatures. Default 6.</td>
+</tr>
+<tr>
+<td><code>menuTemplate</code></td>
+<td>Optional menu configuration for right-click menus on features. Can be as large and complicated as you want. See <a href="#Customizing_Right-click_Context_Menus">#Customizing_Right-click_Context_Menus</a> below. If set to null or false, disables feature right-click menus.</td>
+</tr>
+<tr>
+<td><code>hooks→create</code></td>
+<td>JavaScript function that creates the parent feature HTML element and returns it. By default this is: <code>function(track,feature) { return document.createElement('div'); }</code>, which creates an HTML <code>div</code> element.</td>
+</tr>
+<tr>
+<td><code>hooks→modify</code></td>
+<td>JavaScript function that can be used to modify the feature HTML element in any way desired. If set, the function is called with the track object, feature object, and feature HTML element as arguments (signature: <code>function(track, feature, featDiv)</code>).</td>
+</tr>
+<tr>
+<td><code>style→featureScale</code></td>
+<td>Minimum zoom scale (pixels/basepair) for displaying individual features in the track. Not set by default, and overrides the <code>maxFeatureScreenDensity</code>.</td>
+</tr>
+<tr>
+<td><code>style→className</code></td>
+<td>CSS class for parent features. Defaults to &ldquo;feature&rdquo;.</td>
+</tr>
+<tr>
+<td><code>style→subfeatureClasses</code></td>
+<td>Key-value pairs of CSS classes for subfeatures, organized by feature type. Example: { &ldquo;CDS&rdquo; : &ldquo;transcript-CDS&rdquo;,&ldquo;UTR&rdquo; : &ldquo;transcript-UTR&rdquo; }</td>
+</tr>
+<tr>
+<td><code>style→featureCss</code></td>
+<td>Text string of additional CSS rules to add to features. Example: &ldquo;border-color: purple; background-color: yellow;&rdquo;</td>
+</tr>
+<tr>
+<td><code>style→arrowheadClass</code></td>
+<td>CSS class of the strand arrowheads to show for this feature. Defaults to &lsquo;arrowhead&rsquo;. If set to <code>null</code>, no arrowhead will be drawn.</td>
+</tr>
+<tr>
+<td><code>style→histScale</code></td>
+<td>Scale (pixels per basepair) below which the track will attempt to draw feature density histograms instead of features, if available. By default, this is set to 4 times the average feature density (features per basepair) of the track.</td>
+</tr>
+<tr>
+<td><code>style→label</code></td>
+<td>Comma-separated list of case-insensitive feature tags to use for showing the feature&rsquo;s label. The first one found will be used. Default &rsquo;name,id&rsquo;.</td>
+</tr>
+<tr>
+<td><code>style→labelScale</code></td>
+<td>Scale (pixels per basepair) above which feature labels (names) will be shown. By default, this is set to 30 times the average feature density (features per basepair) of the track.</td>
+</tr>
+<tr>
+<td><code>style→descriptionScale</code></td>
+<td>Scale (pixels per basepair) above which long feature descriptions will be shown. By default, this is set to 170 times the average feature density (features per basepair) of the track.</td>
+</tr>
+<tr>
+<td><code>style→description</code></td>
+<td>Comma-separated list of case-insensitive feature tags to check for the feature&rsquo;s long description. The first one found will be used. Default &rsquo;note,description&rsquo;. If blank no description is used.</td>
+</tr>
+<tr>
+<td><code>style→showLabels</code></td>
+<td>If set to true, feature labels may be shown. Defaults to true. Set this to false to disable display of feature labels.</td>
+</tr>
+<tr>
+<td><code>maxHeight</code></td>
+<td>Maximum height, in pixels, that the track is allowed to grow to. When it reaches this height, features that stack higher than this will not be shown, and a &ldquo;Max height reached&rdquo; message will be displayed. Default 600 pixels.</td>
+</tr>
+<tr>
+<td><code>showNoteInAttributes</code></td>
+<td>If set to true, show the feature&rsquo;s &ldquo;Note&rdquo; attribute as a regular attribute in the feature detail dialog. This is mostly useful for projects that want the blue description text on a feature to be different from the feature&rsquo;s Notes attribute, but still display the Notes attribute in the detail dialog</td>
+</tr>
+<tr>
+<td><code>topLevelFeatures</code></td>
+<td>Specifies which feature types should be considered &ldquo;top-level&rdquo; for this track. For example, if you have a track with gene-&gt;mRNA-&gt;CDS features, but for some reason want to only display the mRNA features, you can set topLevelFeatures=mRNA. Can also be an array of string types, or a function callback that returns an array of types. Default: all features are displayed. Added in 1.14.0</td>
+</tr>
+</tbody>
+</table>
+<p><code>HTMLFeatures</code> track configuration options</p>
+<h2 id="span-idcanvasfeatures_configuration_options-classmw-headlinecanvasfeatures-configuration-optionsspan"><span id="CanvasFeatures_Configuration_Options" class="mw-headline">CanvasFeatures Configuration Options</span></h2>
+<p>Introduced in JBrowse 1.10.0, the new JBrowse CanvasFeatures tracks are
+faster and easier to configure than HTMLFeatures tracks.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>maxHeight</code></td>
+<td>Maximum height, in pixels, that the track is allowed to grow to. When it reaches this height, features that stack higher than this will not be shown, and a &ldquo;Max height reached&rdquo; message will be displayed. Default 600 pixels.</td>
+</tr>
+<tr>
+<td><code>style→showLabels</code></td>
+<td>If true, allows feature labels to be shown if features are not too dense on the screen. Default <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>style→showTooltips</code></td>
+<td>If true, allows feature name tooltips to be shown. Default true.</td>
+</tr>
+<tr>
+<td><code>displayMode</code></td>
+<td>&rsquo;normal&rsquo;, &lsquo;compact&rsquo;, or &lsquo;collapsed&rsquo;. Sets the initial display mode of the track. Default &rsquo;normal&rsquo;.</td>
+</tr>
+<tr>
+<td><code>style→featureScale</code></td>
+<td>Minimum zoom scale (pixels/basepair) for displaying individual features in the track. Not set by default, and overrides the <code>maxFeatureScreenDensity</code>.</td>
+</tr>
+<tr>
+<td><code>maxFeatureScreenDensity</code></td>
+<td>Maximum density of features to display on the screen. If this is exceeded, will display either feature density histograms (if available), or a &ldquo;too many features to show&rdquo; or &ldquo;too much data to show&rdquo; message. The units of this number are features per screen width in pixels. Defaults to 0.5. If increased to ~6 then it should pretty much always go away</td>
+</tr>
+<tr>
+<td><code>glyph</code></td>
+<td>JS class name of the glyph to use for each feature. By default, it tries to guess for each feature based on its <code>type</code> attribute, and uses JBrowse/View/FeatureGlyph/Box if it cannot find something better. Can be a callback with signature (feature), returning a string class name.</td>
+</tr>
+<tr>
+<td><code>menuTemplate</code></td>
+<td>Optional menu configuration for right-click menus on features. Can be as large and complicated as you want. See <a href="#Right-click_Context_Menus">#Right-click_Context_Menus</a> below. If set to null or false, disables feature right-click menus.</td>
+</tr>
+<tr>
+<td><code>style→maxDescriptionLength</code></td>
+<td>Maximum length, in characters, of long feature descriptions, for glyphs that support them. Default 70.</td>
+</tr>
+<tr>
+<td><code>style→color</code></td>
+<td>Basic color of features. Most glyphs interpret this as the fill color of the rectangle they draw. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default &lsquo;goldenrod&rsquo;.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→mouseovercolor</code></td>
+<td>Color of the overlay drawn on top of features when the mouse hovers over them. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default rgba(0,0,0,0.3), which is semi-transparent black.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→borderColor</code></td>
+<td>Color of the borders drawn around boxes in glyphs. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default varies from glyph to glyph.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→borderWidth</code></td>
+<td>Width of the borders drawn around boxes in glyphs. Default 0.5 if borderColor specified</td>
+</tr>
+<tr>
+<td><code>style→height</code></td>
+<td>Height in pixels of glyphs. Default value varies from glyph to glyph.</td>
+</tr>
+<tr>
+<td><code>style→marginBottom</code></td>
+<td>Margin space to leave below each feature when arranging them in the view. Default 2 pixels.</td>
+</tr>
+<tr>
+<td><code>style→strandArrow</code></td>
+<td>If true, allow glyphs to draw strand arrowheads on features that are stranded. Default <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>style→label</code></td>
+<td>Comma-separated list of case-insensitive feature tags to use for showing the feature&rsquo;s label. The first one found will be used. Default &rsquo;name,id&rsquo;.</td>
+</tr>
+<tr>
+<td><code>style→textFont</code></td>
+<td>Font used for feature labels. Same format as CSS font rules. Default &rsquo;normal 12px Univers,Helvetica,Arial,sans-serif&rsquo;.</td>
+</tr>
+<tr>
+<td><code>style→textColor</code></td>
+<td>Color of feature labels. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default &lsquo;black&rsquo;.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→text2Color</code></td>
+<td>Color of feature descriptions. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default &lsquo;blue&rsquo;.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→text2Font</code></td>
+<td>Font used for feature descriptions. Same format as CSS font rules. Default &rsquo;normal 12px Univers,Helvetica,Arial,sans-serif&rsquo;.</td>
+</tr>
+<tr>
+<td><code>style→description</code></td>
+<td>Comma-separated list of case-insensitive feature tags to check for the feature&rsquo;s long description. The first one found will be used. Default &rsquo;note,description&rsquo;. If blank no description is used.</td>
+</tr>
+<tr>
+<td><code>style→connectorColor</code></td>
+<td>Color of the connecting line drawn between boxes in glyphs that draw segments (like the Segments, ProcessedTranscript, and Gene glyphs). Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default &lsquo;#333&rsquo;.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→connectorThickness</code></td>
+<td>Thickness in pixels of the connecting line drawn between boxes in glyphs that draw segments (like the Segments, ProcessedTranscript, and Gene glyphs). Default 1.</td>
+</tr>
+<tr>
+<td><code>style→utrColor</code></td>
+<td>Color of UTR regions drawn by ProcessedTranscript and Gene glyphs. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Defaults to be a color that complements the current <code>style→color</code> value (calculated using a bit of color theory).</td>
+<td></td>
+</tr>
+<tr>
+<td><code>subParts</code></td>
+<td>Comma-separated list of feature <code>type</code> tags that will be drawn as subparts of parent features. Defaults to all features for Segments glyphs, and &lsquo;CDS, UTR, five_prime_UTR, three_prime_UTR&rsquo; for ProcessedTranscript glyphs.</td>
+</tr>
+<tr>
+<td><code>transcriptType</code></td>
+<td>For Gene glyphs, the feature <code>type</code> tag that indicates that a subfeature is a processed transcript. Defaults to &lsquo;mRNA&rsquo;.</td>
+</tr>
+<tr>
+<td><code>labelTranscripts</code></td>
+<td>For Gene glyphs, if true, draw a label with the transcript&rsquo;s name beside each transcript, if space permits. Default true.</td>
+</tr>
+<tr>
+<td><code>style→transcriptLabelColor</code></td>
+<td>For Gene glyphs, the color of transcript name labels. Color syntax is the same as that used for CSS, specified at &lt;a href=&ldquo;<a href="http://dev.w3.org/csswg/css-color/%22">http://dev.w3.org/csswg/css-color/&quot;</a> class=&ldquo;external free&rdquo;</td>
+</tr>
+<tr>
+<td>rel=&ldquo;nofollow&rdquo;&gt;http://dev.w3.org/csswg/css-color/</a>. Default &lsquo;black&rsquo;.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>style→transcriptLabelFont</code></td>
+<td>For Gene glyphs, the font used for transcript name labels. Same format as CSS font rules. Default &rsquo;normal 10px Univers,Helvetica,Arial,sans-serif&rsquo;.</td>
+</tr>
+<tr>
+<td><code>impliedUTRs</code></td>
+<td>Introduced in JBrowse 1.10.5. If true, indicates that UTRs are not present in the feature data, but should be inferred from the overlap of exon and CDS features in ProcessedTranscript and Gene glyphs. Default false. Can be a callback.</td>
+</tr>
+<tr>
+<td><code>maxFeatureGlyphExpansion</code></td>
+<td>A factor to expand the glyphs by so that if subfeatures go outside the bounds of the parent feature, they will still be rendered. Default: 500bp/current scale.</td>
+</tr>
+<tr>
+<td><code>inferCdsParts </code></td>
+<td>If a single CDS span covers the whole gene except the UTRs, then it is drawn as though it only covers the exon parts (not the introns). Default: false. Added in 1.12.3</td>
+</tr>
+<tr>
+<td><code>disableCollapsedClick</code></td>
+<td>Disables the click action when track is collapsed. Default: false. Added in 1.13.0</td>
+</tr>
+<tr>
+<td><code>enableCollapsedMouseover</code></td>
+<td>Enables the mouseover action when track is collapsed. Default: false. Added in 1.13.0. See the ChromHMM track in volvox sample browser for example of mouseover on the collapsed track</td>
+</tr>
+<tr>
+<td><code>topLevelFeatures</code></td>
+<td>Specifies which feature types should be considered &ldquo;top-level&rdquo; for this track. For example, if you have a track with gene-&gt;mRNA-&gt;CDS features, but for some reason want to only display the mRNA features, you can set topLevelFeatures=mRNA. Can also be an array of string types, or a function callback that returns an array of types. Default: all features are displayed. Added in 1.14.0</td>
+</tr>
+<tr>
+<td><code>ItemRgb</code></td>
+<td>If set to true, the RGB colors specified in BigBed or BED files will be used for the feature&rsquo;s background color. Default true. Added in 1.14.0</td>
+</tr>
+</tbody>
+</table>
+<p><code>CanvasFeatures</code> track configuration options</p>
+<p>Note: the &ldquo;compact&rdquo; displayMode for CanvasFeatures tracks uses
+style-&gt;height and multiplies it by 0.35 to create the compact view.
+Therefore, if you adjust style-&gt;height to a smaller default value, then
+you can create &ldquo;ultra compact&rdquo; visualizations.</p>
+<h3 id="span-idcustomizing_canvasfeatures_tracks_with_callbacks-classmw-headlinecustomizing-canvasfeatures-tracks-with-callbacksspan"><span id="Customizing_CanvasFeatures_tracks_with_callbacks" class="mw-headline">Customizing CanvasFeatures tracks with callbacks</span></h3>
+<p>Unlike HTML-based feature tracks, canvas-based feature tracks don&rsquo;t use
+modify and create hooks. Instead, the <code>glyph</code> variable, and all of the
+<code>style</code> variables, support customization callbacks.</p>
+<p>All style callbacks are like:</p>
+<pre><code>   function( featureObject, variableName, glyphObject, trackObject ) {  return '#ffcccc'; }
+</code></pre>
+<p>And the glyph callback is like:</p>
+<pre><code>   function( featureObject ) { return 'JBrowse/View/FeatureGlyph/&lt;glyphclassname&gt;'; }
+</code></pre>
+<p>So, for example, if you wanted to customize a CanvasVariants track to
+color all homozygous variants blue, and all heterozygous variants red,
+you could set something like:</p>
+<pre><code>[tracks.myvcf]
+...
+variantIsHeterozygous = function( feature ) {
+    var genotypes = feature.get('genotypes');
+    for( var sampleName in genotypes ) {
+      try {
+          var gtString = genotypes[sampleName].GT.values[0];
+          if( ! /^1([\|\/]1)*$/.test( gtString) &amp;&amp; ! /^0([\|\/]0)*$/.test( gtString ) )
+              return true;
+      } catch(e) {}
+    }
+    return false;
+  }
+style.color = function( feature, variableName, glyphObject, track ) {
+    return track.config.variantIsHeterozygous(feature) ? 'red' : 'blue';
+  }
+</code></pre>
+<p>Note: the multiline callbacks are only enabled in the tracks.conf form.
+See <a href="#Text_Configuration_Format_.28.conf.29">Text Configuration Format
+(.conf)</a> for more considerations
+about this format.</p>
+<h2 id="span-idgeneric_track_configuration_options-classmw-headlinegeneric-track-configuration-optionsspan"><span id="Generic_Track_Configuration_Options" class="mw-headline">Generic Track Configuration Options</span></h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subfeatureDetailLevel </code></td>
+<td>Set the level of detail of the View details box. If set to 1, only displays one level of subfeatures for example. Default: 0 which displays all subfeature levels. Added in 1.12.3</td>
+</tr>
+</tbody>
+</table>
+<p><code>Generic track</code> configuration options</p>
+<h2 id="span-idcustomizing_parts_of_the_27view_details27_pop-ups_with_callbacks-classmw-headlinecustomizing-parts-of-the-view-details-pop-ups-with-callbacksspan"><span id="Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks" class="mw-headline">Customizing parts of the &lsquo;View details&rsquo; Pop-ups with callbacks</span></h2>
+<p>Starting in JBrowse version 1.11.3, the ability to customize parts of
+the &lsquo;View details&rsquo; Pop-ups was added. This lets you specify functions
+that have the format fmtDetailValue_* or fmtDetailField_* to either
+change the value section of an attribute in the config, or the fieldname
+of an attribute in the config.</p>
+<p>Here is an example in tracks.conf format for formatting the &ldquo;Name&rdquo; field
+by adding a link to it:</p>
+<pre><code>[tracks.mygff]
+key = My Gene Track
+storeClass = JBrowse/Store/SeqFeature/NCList
+type = FeatureTrack
+fmtDetailValue_Name = function(name) {
+   return &quot;&lt;a href='http://www.example.com?featurename=&quot;+name+&quot;'&gt;&quot;+name+&quot;&lt;/a&gt;&quot;;
+ }
+</code></pre>
+<p>Note: It is also easy to specify these methods in trackList.json format.</p>
+<pre><code>{
+ &quot;key&quot;: &quot;My Gene Track&quot;,
+ &quot;storeClass&quot; : &quot;JBrowse/Store/SeqFeature/NCList&quot;,
+ &quot;type&quot; : &quot;FeatureTrack&quot;,
+ &quot;label&quot;: &quot;mygff&quot;,
+ &quot;fmtDetailValue_Name&quot;: &quot;function(name) { return '&lt;a href=\&quot;http://www.example.com?featurename='+name+'\&quot;&gt;'+name+'&lt;/a&gt;'; }&quot;
+}
+</code></pre>
+<p>Addendum: If the field has multiple values (e.g. multiple DBXrefs or GO
+terms), then the callback will receive an array as it&rsquo;s argument, and
+then you can also return an array which indicates that each element will
+be formatted inside its own \ In this case you will check that the
+input is an array, because it will also be called on the individual
+elements too. For example</p>
+<pre><code> &quot;fmtDetailValue_links&quot;: &quot;function(links) { if(Array.isArray(links)) { return links; } else return `&lt;a href=\&quot;${link}\&quot;&gt;${link}&lt;/a&gt;`; }&quot;
+</code></pre>
+<p>This shows that you could, in essence, pre-process the array if you
+wanted, but the same callback is then called on the individual elements,
+so you handle both these cases.</p>
+<h3 id="span-idadditional_customizations_to_the_pop-up_boxes-classmw-headlineadditional-customizations-to-the-pop-up-boxesspan"><span id="Additional_customizations_to_the_pop-up_boxes" class="mw-headline">Additional customizations to the pop-up boxes</span></h3>
+<p>In JBrowse 1.11.5, some additional customizations to the pop-up boxes
+were added.</p>
+<p>1. The ability to access the feature data was added to the callback
+signature of the fmtDetailValue_* functions. Example:</p>
+<pre><code>fmtDetailValue_Name = function(name, feature) {
+    /* only add links to the top-level feature */
+    if(feature.get('type')=='mRNA') {
+        return name + ' [&lt;a href=http://www.ncbi.nlm.nih.gov/gquery/?term='+name+'&gt;Search NCBI&lt;/a&gt;]';
+    }
+  }
+</code></pre>
+<p>2. The ability to customize the &lsquo;About track&rsquo; popups was added. These
+callbacks are named fmtMetaValue_* and fmtMetaField_*</p>
+<p>3. The ability to customize mouseover descriptions of the fieldnames
+was also added. These callbacks are named fmtDetailDescription_* and
+fmtMetaDescription_*</p>
+<p>4. The ability to remove a field from the popup was added. You can do
+this by returning null from a fmtDetailField_* and fmtMetaField_*
+callback;</p>
+<h2 id="span-idcustomizing_left-click_behavior-classmw-headlinecustomizing-left-click-behaviorspan"><span id="Customizing_Left-click_Behavior" class="mw-headline">Customizing Left-click Behavior</span></h2>
+<p>Beginning with JBrowse 1.5.0, the left-clicking behavior of feature
+tracks (both HTMLFeatures and CanvasFeatures) is highly configurable. To
+make something happen when left-clicking features on a track, add an
+onClick option to the feature track&rsquo;s configuration.</p>
+<p>In the example configuration below, left-clicks on features will open an
+embedded popup window showing the results of searching for that
+feature&rsquo;s name in NCBI&rsquo;s global search, and &ldquo;search at NCBI&rdquo; will show
+in a tooltip when the user hovers over a feature with the mouse:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">   &#34;tracks&#34;: [
+      {
+         &#34;label&#34;    : &#34;ReadingFrame&#34;,
+         &#34;category&#34; : &#34;Genes&#34;,
+         &#34;class&#34;    : &#34;dblhelix&#34;,
+         &#34;key&#34;      : &#34;Frame usage&#34;,
+         &#34;onClick&#34;  : {
+             &#34;label&#34;: &#34;search at NCBI&#34;,
+             &#34;url&#34;: &#34;http://www.ncbi.nlm.nih.gov/gquery/?term={name}&#34;
+         }
+      }
+   ...
+</code></pre><p>For details on all the options supported by <strong>onClick</strong>, see <a href="#Click_Configuration_Options">Click
+Configuration Options</a>.</p>
+<p>Note: the style→linkTemplate variable can also be used to specify a URL
+for left-click on features, but this is a legacy option.</p>
+<h2 id="span-idcustomizing_mouse-over_behavior-classmw-headlinecustomizing-mouse-over-behaviorspan"><span id="Customizing_Mouse-over_behavior" class="mw-headline">Customizing Mouse-over behavior</span></h2>
+<p>The onClick-&gt;label attribute from the <a href="#Customizing_Left-click_Behavior">previous
+section</a> is used as the mouse-over
+description for features on the HTMLFeatures and CanvasFeatures tracks.</p>
+<p>In JBrowse 1.11.6, the onClick-&gt;label attribute was extended further to
+allow the mouse-over description to be customized using callbacks and
+template strings.</p>
+<p>Example for CanvasFeatures, allows full HTML tooltips. Here the {name}
+template is automatically filled in with the feature info:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &#34;onClick&#34;: {
+        &#34;label&#34; : &#34;Feature name: {name}&#34;,
+        &#34;title&#34; : &#34;{name} {type}&#34;,
+        &#34;action&#34;: &#34;defaultDialog&#34;
+    }
+</code></pre><p>Example for HTMLFeatures, which only allows plain text descriptions but
+can support newlines (essentially uses \ for
+mouseover).</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &#34;onClick&#34;: {
+        &#34;label&#34;: &#34;Feature name {name}\nFeature start {start}\nFeature end {end}&#34;,
+        &#34;title&#34; : &#34;{name} {type}&#34;,
+        &#34;action&#34;: &#34;defaultDialog&#34;
+    }
+</code></pre><p>Example using a callback (for either HTMLFeatures or CanvasFeatures),
+using this.feature to access the feature details</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">    &#34;onClick&#34;: {
+        &#34;label&#34;: &#34;function() { return &#39;Feature name: &#39;+this.feature.get(&#39;name&#39;); }&#34;,
+        &#34;title&#34; : &#34;{name} {type}&#34;,
+        &#34;action&#34;: &#34;defaultDialog&#34;
+    }
+</code></pre><p>Note: on CanvasFeatures, the action &ldquo;defaultDialog&rdquo; isn&rsquo;t necessary, but
+it is necessary for HTMLFeatures to keep the default dialog (as of
+writing, 1.11.6).</p>
+<p>Also note: The &ldquo;label&rdquo; which is used in the text for mouseover will be
+used for the title of any popup by default, so you might also specify a
+different title.</p>
+<p>Also also note: Your mouseover will crash if your features do not have
+an ID or name, even if you coded the mouseover to not use ID or name.</p>
+<h2 id="span-idconfiguring_summary_histograms-classmw-headlineconfiguring-summary-histogramsspan"><span id="Configuring_Summary_Histograms" class="mw-headline">Configuring Summary Histograms</span></h2>
+<p>Canvas-based feature tracks (CanvasFeatures) support an optional
+<code>histograms</code> configuration subsection that can contain a definition for
+a second datastore that holds quantitative data (usually either coverage
+depth or feature density) to be displayed when zoomed further out than
+<code>featureScale</code> (or if <code>featureScale</code> is not set, the scale determined by
+the store&rsquo;s feature density divided by <code>maxFeatureScreenDensity</code>). This
+is often used for BAM coverage on Alignments2 tracks using the
+<code>histograms.urlTemplate</code> and <code>histograms.storeClass</code> arguments.</p>
+<p>Example track</p>
+<pre><code>[ tracks.mytrack ]
+histograms.storeClass = JBrowse/Store/SeqFeature/BigWig
+histograms.urlTemplate = coverage.bw
+storeClass = JBrowse/Store/SeqFeature/BAM
+urlTemplate = file.bam
+type = Alignments2
+</code></pre>
+<h2 id="span-idcustomizing_right-click_context_menus-classmw-headlinecustomizing-right-click-context-menusspan"><span id="Customizing_Right-click_Context_Menus" class="mw-headline">Customizing Right-click Context Menus</span></h2>
+<p>Feature tracks can be configured to display a context menu of options
+when a user right-clicks a feature item. Here is an example of a track
+configured with a multi-level right-click context menu:</p>
+<pre><code>     {
+        &quot;feature&quot; : [
+           &quot;match&quot;
+        ],
+        &quot;track&quot; : &quot;Alignments&quot;,
+        &quot;category&quot; : &quot;Alignments&quot;,
+        &quot;class&quot; : &quot;feature4&quot;,
+        &quot;key&quot; : &quot;Example alignments&quot;,
+        &quot;hooks&quot;: {
+            &quot;modify&quot;: &quot;function( track, feature, div ) { div.style.height = (Math.random()*10+8)+'px';  div.style.backgroundColor = ['green','blue','red','orange','purple'][Math.round(Math.random()*5)];}&quot;
+        },
+        &quot;menuTemplate&quot; : [
+            {
+              &quot;label&quot; : &quot;Item with submenu&quot;,
+              # hello this is a comment
+              &quot;children&quot; : [
+              {
+                &quot;label&quot; : &quot;Check gene on databases&quot;,
+                &quot;children&quot; : [
+                {
+                  &quot;label&quot; : &quot;Query trin for {name}&quot;,
+                  &quot;iconClass&quot; : &quot;dijitIconBookmark&quot;,
+                  &quot;action&quot;: &quot;newWindow&quot;,
+                  &quot;url&quot; : &quot;http://wiki.trin.org.au/{name}-{start}-{end}&quot;
+                },
+                {
+                &quot;label&quot; : &quot;Query example.com for {name}&quot;,
+                &quot;iconClass&quot; : &quot;dijitIconSearch&quot;,
+                &quot;url&quot; : &quot;http://example.com/{name}-{start}-{end}&quot;
+                }
+                ]
+              },
+              { &quot;label&quot; : &quot;2nd child of demo&quot; },
+              { &quot;label&quot; : &quot;3rd child: this is a track&quot; }
+            ]
+            },
+            {
+              &quot;label&quot; : &quot;Open example.com in an iframe popup&quot;,
+              &quot;title&quot; : &quot;The magnificent example.com (feature {name})&quot;,
+              &quot;iconClass&quot; : &quot;dijitIconDatabase&quot;,
+              &quot;action&quot;: &quot;iframeDialog&quot;,
+              &quot;url&quot; : &quot;http://www.example.com?featurename={name}&quot;
+            },
+            {
+              &quot;label&quot; : &quot;Open popup with XHR HTML snippet (btw this is feature {name})&quot;,
+              &quot;title&quot;: &quot;function(track,feature,div) { return 'Random XHR HTML '+Math.random()+' title!'; }&quot;,
+              &quot;iconClass&quot; : &quot;dijitIconDatabase&quot;,
+              &quot;action&quot;: &quot;xhrDialog&quot;,
+              &quot;url&quot; : &quot;sample_data/test_snippet.html?featurename={name}:{start}-{end}&quot;
+            },
+            {
+              &quot;label&quot; : &quot;Open popup with content snippet (btw this is feature {name})&quot;,
+              &quot;title&quot;: &quot;function(track,feature,div) { return 'Random content snippet '+Math.random()+' title!'; }&quot;,
+              &quot;iconClass&quot; : &quot;dijitIconDatabase&quot;,
+              &quot;action&quot;: &quot;contentDialog&quot;,
+              &quot;content&quot; : &quot;function(track,feature,div) { return '&lt;h2&gt;{name}&lt;/h2&gt;&lt;p&gt;This is some test content about feature {name}!&lt;/p&gt;&lt;p&gt;This message brought to you by the number &lt;span style=\&quot;font-size: 300%\&quot;&gt;'+Math.round(Math.random()*100)+'&lt;/span&gt;.&lt;/p&gt;
+            },
+            {
+              &quot;label&quot; : &quot;function(track,feature,div) { return 'Run a JS callback '+Math.random()+' title!'; }&quot;,
+              &quot;iconClass&quot; : &quot;dijitIconDatabase&quot;,
+              &quot;action&quot;: &quot;function( evt ){ alert('Hi there! Ran the callback on feature '+this.feature.get('name')); }&quot;
+            },
+            {
+              &quot;label&quot;: &quot;Create a url with a callback&quot;,
+              &quot;action&quot;: &quot;iframeDialog&quot;,
+              &quot;iconClass&quot;: &quot;dijitIconDatabase&quot;,
+              &quot;title&quot;: &quot;Create a url with a callback&quot;,
+              &quot;url&quot;: &quot;function(track,feature) { return
+                  'http://www.example.com?refseq='+track.refSeq.name
+                  +'&amp;featurename='+feature.get('name')+'&amp;start='+feature.get('start')+'&amp;end='+feature.get('end'); }&quot;
+             },
+        ]
+     }
+</code></pre>
+<p>This configuration results in a context menu like the one pictured
+below. For details on what each of the options supported by menu items
+does, see <a href="#Click_Configuration_Options">#Click Configuration Options</a>.</p>
+<h2 id="span-idrendering_high_resolution_screenshots_using_puppeteer-classmw-headlinerendering-high-resolution-screenshots-using-puppeteerspan"><span id="Rendering_high_resolution_screenshots_using_Puppeteer" class="mw-headline">Rendering high resolution screenshots using Puppeteer</span></h2>
+<p>The Google Chrome headless browser &ldquo;Puppeteer&rdquo; is an alternative to
+PhantomJS</p>
+<p>The jbrowse-rasterize tool from cpgJBrowseToolkit provides a tool for
+automating puppeteer
+<a href="https://github.com/cancerit/cgpJBrowseToolkit/"
+class="external free"
+rel="nofollow"><a href="https://github.com/cancerit/cgpJBrowseToolkit/">https://github.com/cancerit/cgpJBrowseToolkit/</a></a></p>
+<p>A stripped down puppeteer example is as follows</p>
+<p>First run &ldquo;npm install puppeteer&rdquo; in a new directory, then create a file
+screenshot.js</p>
+<pre><code>   const puppeteer = require('puppeteer');
+   function delay(ms) {
+       return new Promise(r =&gt; setTimeout(r, ms));
+   }
+   (async () =&gt; {
+     const browser = await puppeteer.launch();
+     const page = await browser.newPage();
+     const argv=process.argv;
+     await page.goto(argv[2]);
+     //debug
+     //page.on('console', msg =&gt; console.log('PAGE LOG:', msg.text()));
+     await page.setViewport({
+       width:+argv[4]||1000,
+       height:+argv[5]||600,
+       deviceScaleFactor:argv[6]||2
+     });
+     // wait five seconds for rendering, add or remove time as needed
+     await delay(5000);
+     await page.screenshot({path: argv[3]||&quot;example.png&quot;});
+     await browser.close();
+   })();
+</code></pre>
+<p>Then you can run &ldquo;node screenshot.js
+<a href="http://localhost/jbrowse/" class="external free"
+rel="nofollow">http://localhost/jbrowse/</a>&rdquo; or other URL argument as
+needed. The third, fourth, fifth and sixth arguments are optional a)
+output filename b) output width c) output height and d) zoom factor to
+make it higher resolution</p>
+<h1 id="span-idexternal_links-classmw-headlineexternal-linksspan"><span id="External_Links" class="mw-headline">External Links</span></h1>
+<ul>
+<li><a href="http://genome.cshlp.org/content/19/9/1630.full"
+class="external text" rel="nofollow">JBrowse: A Next Generation Genome
+Browser</a> paper</li>
+</ul>
+<p>Retrieved from
+&ldquo;[JBrowse_Configuration_Guide](JBrowse_Configuration_Guide&rdquo;</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Category</a>:</p>
+<ul>
+<li><a href="Category%253AJBrowse" title="Category%253AJBrowse">JBrowse</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_Configuration_Guide"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 02:48 on 30 September 2020.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">1,674,206 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

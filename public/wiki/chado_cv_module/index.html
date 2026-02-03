@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado CV Module - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-cv-modulespan"><span dir="auto">Chado CV Module</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a>
+<ul>
+<li><a href="#Similarities_to_the_GO_Database_schema"><span class="tocnumber">1.1</span>
+<span class="toctext">Similarities to the GO Database
+schema</span></a></li>
+<li><a href="#Overview"><span class="tocnumber">1.2</span>
+<span class="toctext">Overview</span></a></li>
+<li><a href="#Associating_features_to_cvterms"><span class="tocnumber">1.3</span>
+<span class="toctext">Associating features to
+cvterms</span></a></li>
+<li><a href="#Complex_annotations"><span class="tocnumber">1.4</span> <span class="toctext">Complex
+annotations</span></a></li>
+<li><a href="#Transitive_Closure"><span class="tocnumber">1.5</span> <span class="toctext">Transitive
+Closure</span></a>
+<ul>
+<li><a href="#Transitivity_of_other_Relations"><span class="tocnumber">1.5.1</span>
+<span class="toctext">Transitivity of other
+Relations</span></a></li>
+<li><a href="#Transitivity_over_is_a"><span class="tocnumber">1.5.2</span>
+<span class="toctext">Transitivity over
+<em>is_a</em></span></a></li>
+<li><a href="#Difference_between_Deductive_Closure_and_Transitive_Closure"><span class="tocnumber">1.5.3</span>
+<span class="toctext">Difference between Deductive Closure and
+Transitive
+Closure</span></a></li>
+<li><a href="#Rules"><span class="tocnumber">1.5.4</span>
+<span class="toctext">Rules</span></a></li>
+<li><a href="#Populating_cvtermpath"><span class="tocnumber">1.5.5</span>
+<span class="toctext">Populating
+cvtermpath</span></a></li>
+</ul>
+</li>
+<li><a href="#Advanced_Usage"><span class="tocnumber">1.6</span> <span class="toctext">Advanced
+Usage</span></a>
+<ul>
+<li><a href="#Background"><span class="tocnumber">1.6.1</span>
+<span class="toctext">Background</span></a></li>
+<li><a href="#Logical_definitions"><span class="tocnumber">1.6.2</span>
+<span class="toctext">Logical
+definitions</span></a></li>
+<li><a href="#How_Logical_Definitions_are_Stored_in_Chado"><span class="tocnumber">1.6.3</span> <span class="toctext">How
+Logical Definitions are Stored in
+Chado</span></a></li>
+<li><a href="#Logical_Definition_Views"><span class="tocnumber">1.6.4</span>
+<span class="toctext">Logical Definition
+Views</span></a></li>
+<li><a href="#Example_Use_Case:_Phenotypes"><span class="tocnumber">1.6.5</span>
+<span class="toctext">Example Use Case:
+Phenotypes</span></a></li>
+<li><a href="#Example_Use_Case:_Feature_Types"><span class="tocnumber">1.6.6</span>
+<span class="toctext">Example Use Case: Feature
+Types</span></a>
+<ul>
+<li><a href="#Example_use_case:_GO"><span class="tocnumber">1.6.6.1</span>
+<span class="toctext">Example use case:
+GO</span></a></li>
+<li><a href="#Example_use_case:_Drawing_DAGs"><span class="tocnumber">1.6.6.2</span>
+<span class="toctext">Example use case: Drawing
+DAGs</span></a></li>
+<li><a href="#Loading_OWL_into_Chado"><span class="tocnumber">1.6.6.3</span>
+<span class="toctext">Loading OWL into
+Chado</span></a></li>
+<li><a href="#Post-coordinating_Terms"><span class="tocnumber">1.6.6.4</span>
+<span class="toctext">Post-coordinating
+Terms</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Tables"><span class="tocnumber">2</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Table:_cv"><span class="tocnumber">2.1</span> <span class="toctext">Table:
+cv</span></a></li>
+<li><a href="#Table:_cvterm"><span class="tocnumber">2.2</span> <span class="toctext">Table:
+cvterm</span></a></li>
+<li><a href="#Table:_cvterm_dbxref"><span class="tocnumber">2.3</span> <span class="toctext">Table:
+cvterm_dbxref</span></a></li>
+<li><a href="#Table:_cvterm_relationship"><span class="tocnumber">2.4</span> <span class="toctext">Table:
+cvterm_relationship</span></a></li>
+<li><a href="#Table:_cvtermpath"><span class="tocnumber">2.5</span> <span class="toctext">Table:
+cvtermpath</span></a></li>
+<li><a href="#Table:_cvtermprop"><span class="tocnumber">2.6</span> <span class="toctext">Table:
+cvtermprop</span></a></li>
+<li><a href="#Table:_cvtermsynonym"><span class="tocnumber">2.7</span> <span class="toctext">Table:
+cvtermsynonym</span></a></li>
+<li><a href="#Table:_dbxrefprop"><span class="tocnumber">2.8</span> <span class="toctext">Table:
+dbxrefprop</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<p>This module is for controlled vocabularies (CVs), semantic networks and
+ontologies, depending on which terminology you prefer.</p>
+<p>It is intended to be rich enough to encapsulate anything in the Gene
+Ontology (GO) or OBO family of ontologies (see the
+<a href="http://www.geneontology.org" class="external text"
+rel="nofollow">GO website</a> and the
+<a href="http://obo.sourceforge.net" class="external text"
+rel="nofollow">OBO project</a>). The schema reflects the data model of
+OBO and of the
+<a href="http://oboedit.org/" class="external text" rel="nofollow">OBO
+Edit</a> tool currently used by these projects.</p>
+<p>This module is also intended to be extensible to richer formalisms such
+as <a href="http://en.wikipedia.org/wiki/Web_Ontology_Language"
+class="external text" rel="nofollow">OWL (Ontology Web Language)</a>,
+but this is outside the current requirements.</p>
+<h2 id="span-idsimilarities_to_the_go_database_schema-classmw-headlinesimilarities-to-the-go-database-schemaspan"><span id="Similarities_to_the_GO_Database_schema" class="mw-headline">Similarities to the GO Database schema</span></h2>
+<p>The schema is similar to the
+<a href="http://geneontology.org/GO.database.shtml"
+class="external text" rel="nofollow">GO database schema</a>, which was
+also developed by one of the Chado designers.</p>
+<p>There is a <em>bridge</em> layer in the directory <code>modules/cv/bridges/</code>, which
+can make the Chado cv module look like the GO DB, and vice versa.</p>
+<h2 id="span-idoverview-classmw-headlineoverviewspan"><span id="Overview" class="mw-headline">Overview</span></h2>
+<p>An ontology, or controlled vocabulary (cv) is a collection of classes
+(or concepts or terms, depending on your terminology) with definitions
+and relationships to other classes. Each class&ndash;a word or phrase&ndash;can
+only appear once in a controlled vocabulary and has a defined meaning
+within that vocabulary. The controlled vocabularies are chosen so that
+the contents do not overlap; if the same text string is used to describe
+two different concepts in two different cvs, these are distinct classes.
+These terms are housed in the <a href="#Table:_cvterm">cvterm</a> table in the
+Chado schema.</p>
+<p>cvterms are related to one another via
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a>. This can be thought
+of as a graph, or semantic network. The relationship types (the labels
+on the arcs of the graph) are also stored in the
+<a href="#Table:_cvterm">cvterm</a> table. The relationship types are extensible,
+but the type <em>is a</em> (subtyping relationship) is assumed to be present;
+many OBO ontologies use the <em>part of</em> relationship, and GO also uses the
+<em>regulates</em> relation. Relationship types also come from a controlled
+vocabulary, the
+<a href="http://obofoundry.org/ro/" class="external text"
+rel="nofollow">OBO Relation Ontology</a>.</p>
+<p>The <a href="#Table:_cvterm_relationship">cvterm_relationship</a> can be thought of
+as specifying sentences about the cvterms. These sentences have 3
+parts - a subject term, an object term, and a verb or type. For example
+in the phrase &ldquo;an exon is part of a transcript&rdquo; the subject of the
+sentence is &ldquo;exon&rdquo; and the object is &ldquo;transcript&rdquo;. If you prefer to
+think of it as a
+<a href="http://en.wikipedia.org/wiki/Directed_graph" class="extiw"
+title="wp:Directed graph">directed graph)</a>, then you can think of the
+subject as the child node, and the object as the parent node.</p>
+<h2 id="span-idassociating_features_to_cvterms-classmw-headlineassociating-features-to-cvtermsspan"><span id="Associating_features_to_cvterms" class="mw-headline">Associating features to cvterms</span></h2>
+<p>This module is used by most of the Chado modules. But it is useful to
+describe here how this module would be used in the context of the
+<a href="Chado_Sequence_Module" title="Chado Sequence Module">sequence module</a>.</p>
+<p>Often we want to attach cvterms to features. One example is typing
+features with SO - this is central to the <a href="Chado_Sequence_Module" title="Chado Sequence Module">sequence
+module</a>. Each feature has
+one primary type, stored in
+<a href="Chado_Tables#Table:_feature" title="Chado Tables">feature.type_id</a>.</p>
+<p>We can also attach an arbitrary number of non-primary cvterms to a
+feature.</p>
+<p>For example, we may want to attach GO annotations to gene or protein
+features. We may also want to attach phenotypic terms to gene features
+(although the preferred way to do this is <em>via</em> a genotype using the
+<a href="Chado_Genetic_Module" title="Chado Genetic Module">genetics module</a>).</p>
+<h2 id="span-idcomplex_annotations-classmw-headlinecomplex-annotationsspan"><span id="Complex_annotations" class="mw-headline">Complex annotations</span></h2>
+<p>Note that this is something that is not handled by the current GO DB,
+but it is something we may want to allow for in future.</p>
+<p>Currently in GO, all annotations are disjunctive; for example, if we
+have</p>
+<pre><code>gene | GO ID
+-----+------
+foo  | GO:001
+foo  | GO:002
+foo  | GO:003
+</code></pre>
+<p><strong>The text above was taken from <a
+href="http://gmod.svn.sourceforge.net/viewvc/gmod/schema/trunk/chado/modules/cv/"
+class="external text"
+rel="nofollow"><code>modules/cv/cv-intro.txt</code></a> , which was
+incomplete</strong> (and no longer exists).</p>
+<p>The <a href="Chado_Sequence_Module" title="Chado Sequence Module">sequence module</a>
+makes extensive use of terms taken from various ontologies such as
+<a href="http://song.sourceforge.net/" class="external text"
+rel="nofollow">SO</a> and the
+<a href="http://obofoundry.org" class="external text"
+rel="nofollow">OBO</a> Relations Ontology, using the <em>type_id</em> foreign
+key column. In addition, features can be annotated using ontologies such
+as GO using the
+<a href="Chado_Tables#Table:_feature_cvterm" title="Chado Tables">feature_cvterm</a>
+linking table. These terms are modelled using the cv module, the core of
+which is the <a href="#Table:_cvterm">cvterm</a> table.</p>
+<p>An ontology, terminology or cv (controlled vocabulary) is a collection
+of terms (here equivalent to what are more typically called classes,
+types, categories or kinds in the ontology literature in a particular
+domain of interest. Examples include &ldquo;gene&rdquo; (from SO), &ldquo;transcription
+factor activity&rdquo; (from GO molecular function) and &ldquo;lymphocyte&rdquo; (from
+OBO-Cell). The chado cv module is based on the
+<a href="http://www.godatabase.org/dev/sql/doc/godb-sql-doc.html"
+class="external text" rel="nofollow">GO Database schema</a>. Terms are
+stored in the <a href="#Table:_cvterm">cvterm</a> table, and relationships between
+terms are stored in the
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a> table. This table
+follows an analogous structure to the
+<a href="Chado_Tables#Table:_feature_relationship" title="Chado Tables">feature_relationship</a>
+table, in that it has columns <em>subject_id</em>, <em>object_id</em> and <em>type_id</em>.
+Here, all three of these foreign keys refer to rows in the
+<a href="#Table:_cvterm">cvterm</a> table.</p>
+<p>A brief treatment of relationship types in biological ontologies can be
+<a href="http://www.geneontology.org/GO.ontology.relations.shtml"
+class="external text" rel="nofollow">found here</a>. Of particular
+interest to Chado is the <em>is_a</em> relation, which specifies a sub-typing
+relationship between two terms or classes. Recall that tables in the
+sequence module frequently (such as the <a href="Chado_Tables#Table:_feature" title="Chado Tables">feature
+table</a>) defined a <em>type_id</em>
+foreign key column to indicate the specific type or class of entity for
+each row in that table. The combination of the <em>type_id</em> column and the
+<em>is_a</em> relationship gives Chado a data sub-classing system, beyond what
+is possible with traditional SQL database semantics.</p>
+<p>This is discussed further below. The collection of cvterms and
+cvterm_relationships can be considered to constitute vertices and edges
+in a graph. This graph is typically acyclic (a
+<a href="Glossary#DAG" title="Glossary">DAG</a>), though it is not guaranteed to be as
+certain relationship types are allowed to form cycles.</p>
+<table>
+<thead>
+<tr>
+<th>SO Term</th>
+<th>SO id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exon</td>
+<td>&lt;a</td>
+</tr>
+</tbody>
+</table>
+<p>href=&ldquo;<a href="http://www.sequenceontology.org/miso/current_release/term/SO:0000147%22">http://www.sequenceontology.org/miso/current_release/term/SO:0000147&quot;</a>
+class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;SO:0000147</a> |
+| intron | <a
+href="http://www.sequenceontology.org/miso/current_release/term/SO:0000188"
+class="external text" rel="nofollow">SO:0000188</a> |
+| mRNA | &hellip; |
+| miRNA | &hellip; |
+| regulatory_element | &hellip; |
+| transcription_factor_binding_site | &hellip; |</p>
+<p>Sequence Ontology Examples</p>
+<h2 id="span-idtransitive_closure-classmw-headlinetransitive-closurespan"><span id="Transitive_Closure" class="mw-headline">Transitive Closure</span></h2>
+<p>This section concerns relations between ontology terms and how defined
+terms and relations can be used to reason, either by humans or
+computers. A specialized ontology concerning these relations has been
+developed, the <a href="http://obofoundry.org/ro/" class="external text"
+rel="nofollow">OBO Relation Ontology</a>.</p>
+<p>Often it is useful to know the
+<a href="http://en.wikipedia.org/wiki/Transitive_closure" class="extiw"
+title="wp:Transitive closure">transitive closure</a> over a relationship
+type, or a collection of relationship types. The closure is the result
+of recursively applying the relationship. For example, if A <em>is_a</em> B, <em>B
+is_a C</em>, then the closure of <em>is_a</em> includes A <em>is_a</em> C.</p>
+<p>In particular, we want the reflexive transitive closure. A term is
+always related to itself in a reflexive closure. Meaning:</p>
+<pre><code>X is_a X
+</code></pre>
+<p>This may seem odd, but it comes in useful both for doing queries and for
+deriving future rules. This makes it easier to ask &ldquo;find me all genes of
+class X&rdquo;, and to get back genes attached to X and subtypes of X.</p>
+<p>The closure goes in the <a href="#Table:_cvtermpath">cvtermpath</a> table - the
+closure can also be thought of as a path through the graph or semantic
+network.</p>
+<h3 id="span-idtransitivity_of_other_relations-classmw-headlinetransitivity-of-other-relationsspan"><span id="Transitivity_of_other_Relations" class="mw-headline">Transitivity of other Relations</span></h3>
+<p>Many other relations, such as <em>part_of</em> are also transitive.</p>
+<p>If R is a transitive relation, then we can say</p>
+<pre><code>X R Z &lt;= X R Y, Y R Z
+</code></pre>
+<p>For example, assume we have the following 3 <em>develops_from</em> links, and
+<em>develops_from</em> is a transitive relation:</p>
+<pre><code> neurectodermal cell develops_from glioblast
+ glioblast develops_from glial cell
+</code></pre>
+<p>Then it follows that glial cells develop from neurectodermal cells</p>
+<h3 id="span-idtransitivity_over_is_a-classmw-headlinetransitivity-over-_is_a_span"><span id="Transitivity_over_is_a" class="mw-headline">Transitivity over <em>is_a</em></span></h3>
+<p>It can be proved from the definition of <em>is_a</em> (proof not shown here)
+that:</p>
+<pre><code> X R Z &lt;= X is_a Y, Y R Z
+</code></pre>
+<p>and</p>
+<pre><code> X R Z &lt;= X R Y, Y is_a Z
+</code></pre>
+<p>This can be thought of as &ldquo;inheritance&rdquo;.</p>
+<p>For example, if an astrocyte <em>is_a</em> glial cell and a glial cell
+<em>develops_from</em> a glioblast, then it follows that an astrocyte
+<em>develop_from</em> a glioblast.</p>
+<h3 id="span-iddifference_between_deductive_closure_and_transitive_closure-classmw-headlinedifference-between-deductive-closure-and-transitive-closurespan"><span id="Difference_between_Deductive_Closure_and_Transitive_Closure" class="mw-headline">Difference between Deductive Closure and Transitive Closure</span></h3>
+<p>With a transitive closure we simply follow all links in the
+<a href="Glossary#DAG" title="Glossary">DAG</a>, ignoring the relationship type. This
+works fine for ontologies such as GO that have only <em>is_a</em> and
+<em>part_of</em>, but is not ideal for other ontologies such as anatomical
+ontologies.</p>
+<p>First of all, it may be possible for the closure to grow in size
+explosively.</p>
+<p>Second of all, a closure that ignores the relations may be
+scientifically meaningless. It is also less useful for queries. For
+example, we may want to query for genes expressed in the larva or part
+of the larva, but not genes expressed in anatomical entities that
+develop from the larva.</p>
+<h3 id="span-idrules-classmw-headlinerulesspan"><span id="Rules" class="mw-headline">Rules</span></h3>
+<p>The <a href="#Table:_cvtermpath">cvtermpath</a> table is for calculating the
+reflexive transitive closure of a relationship, and any derived
+relationships.</p>
+<p>Normal (direct) relationships are stored in the
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a> table. A entry in
+this table represents a <em>cvterm_relationship</em> S over some relation R.</p>
+<pre><code>S = Subj R Obj
+</code></pre>
+<p>For example:</p>
+<pre><code>S = &quot;cardioblast&quot; develops_from &quot;mesodermal cell&quot;
+</code></pre>
+<p>In addition to these <em>asserted</em> links, we want to be able to <em>deduce</em>
+links between terms.</p>
+<p>If X <em>is_a</em> Y, then it follows that all of Y&rsquo;s
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a> statements are
+inherited by X.</p>
+<p><strong>Rule 1</strong></p>
+<pre><code>If X is_a Y
+and  Y R Z
+then X R(inh) Z
+</code></pre>
+<p>For example:</p>
+<pre><code> &quot;cilium axoneme&quot;  is_a &quot;axoneme&quot;
+ &quot;axoneme&quot;part_of &quot;cell projection&quot;
+</code></pre>
+<p>Therefore:</p>
+<pre><code> &quot;cilium axoneme&quot;  part_of(inh) &quot;cell projection&quot;
+</code></pre>
+<p>Here we use <em>T(inh)</em> to represent an inherited relationship.</p>
+<h3 id="span-idpopulating_cvtermpath-classmw-headlinepopulating-cvtermpathspan"><span id="Populating_cvtermpath" class="mw-headline">Populating cvtermpath</span></h3>
+<p>The <a href="#Table:_cvtermpath">cvtermpath</a> table stores the reflexive
+transitive closure of a relationship, taking into account subsumption or
+inheritance. The number of intermediate relationships is represented in
+the <em>distance</em> column of the table.</p>
+<p>Here we use <em>T(path)</em> to represent the &ldquo;path&rdquo; or closure of a
+relationship. Every <em>T(path)</em> is stored in
+<a href="#Table:_cvtermpath">cvtermpath</a> . We use the same <em>cvterm</em> for T, the
+fact that it is a path is implicit.</p>
+<p>We use these rules:</p>
+<p>Reflexive relationships:</p>
+<pre><code>for all relations T,
+  X T(path) X
+</code></pre>
+<p>In this case the distance = 0.</p>
+<p>Direct relationships:</p>
+<p>These are also included in the <a href="#Table:_cvtermpath">cvtermpath</a> table,
+distance = 1.</p>
+<pre><code>IfX T Y
+Then X T(path) Y
+</code></pre>
+<p>Transitive relationships:</p>
+<p>These have distance &gt; 1; these also make use of inheritance rule,
+<strong>Rule 1</strong>, which gives us <em>T(inh)</em>.</p>
+<pre><code>If X T(inh)  Y
+and  Y T(path) Z
+Then X T(path) Z
+</code></pre>
+<p>Note that this rule is recursive.</p>
+<p>These rules should be used for populating
+<a href="#Table:_cvtermpath">cvtermpath</a>. Attempting to calculate a more general
+closure where all relations are treated equally or ignored will produce
+combinatorial explosions over certain ontologies (e.g.
+<a href="http://www.geneontology.org/gobo/anatomy.ontology/anatomy.fb"
+class="external text" rel="nofollow">Flybase anatomy ontology</a>). What
+does this mean in practice?</p>
+<p>For a typical database, which may only have relations <em>isa</em>, <em>part_of</em>
+and <em>develops_from</em>, we will end up with 3 sets of paths.</p>
+<p>The <em>isa</em> closure, <em>isa (path)</em> will include paths over
+cvterm_relationships that look like this:</p>
+<pre><code>a is_a b is_a c is_a d is_a e
+</code></pre>
+<p>The <em>part_of</em> closure, <em>part_of(path)</em> will include paths over
+cvterm_relationships that look like this:</p>
+<pre><code>a is_a b part_of c part_of d is_a e part_of f
+</code></pre>
+<p>The <em>develops_from</em> closure, <em>develops_from(path)</em> will include paths
+over cvterm_relationships that look like this:</p>
+<pre><code>a develops_from b develops_from c is_a d is_a e develops_from f
+</code></pre>
+<p>It may be tempting to mix different non-<em>isa</em> relationships in the same
+path, but this should <strong>never</strong> be done - there will be an unacceptable
+combinatorial explosion in many cases. Besides, there is no use for such
+a cvtermpath; it is meaningless.</p>
+<p>Note that for
+<a href="http://amigo.geneontology.org/" class="external text"
+rel="nofollow">Amigo</a>-like query behaviour, it is necessary only to
+query <a href="#Table:_cvtermpath">cvtermpath</a>, ignoring cvtermpath.type_id
+(these are obtained by querying
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a>).</p>
+<h2 id="span-idadvanced_usage-classmw-headlineadvanced-usagespan"><span id="Advanced_Usage" class="mw-headline">Advanced Usage</span></h2>
+<p>This section describes advanced usage of the cv module for use with
+OWL-DL advanced Obo format 1.2 [REF] features or elements from other
+ontology formalisms.</p>
+<p>If you aren&rsquo;t sure what this means, you probably don&rsquo;t need to read this
+section yet.</p>
+<p>Note that this section is liable to change; in particular the scheme
+below may be replaced with a simpler one. For details of the simpler
+scheme, along the lines of the transform used in the GO Database. See:</p>
+<ul>
+<li><a
+href="http://geneontology.cvs.sourceforge.net/geneontology/go-dev/xml/xsl/oboxml_to_godb_prestore.xsl?view=markup"
+class="external free"
+rel="nofollow"><a href="http://geneontology.cvs.sourceforge.net/geneontology/go-dev/xml/xsl/oboxml_to_godb_prestore.xsl?view=markup">http://geneontology.cvs.sourceforge.net/geneontology/go-dev/xml/xsl/oboxml_to_godb_prestore.xsl?view=markup</a></a></li>
+</ul>
+<p>(search for intersection_of)</p>
+<h3 id="span-idbackground-classmw-headlinebackgroundspan"><span id="Background" class="mw-headline">Background</span></h3>
+<p>See the document on
+<a href="http://www.fruitfly.org/~cjm/obol/doc/mapping-obo-to-owl.html"
+class="external text" rel="nofollow">Converting OBO to OWL</a>.</p>
+<h3 id="span-idlogical_definitions-classmw-headlinelogical-definitionsspan"><span id="Logical_definitions" class="mw-headline">Logical definitions</span></h3>
+<p>In a normal ontology <a href="Glossary#DAG" title="Glossary">DAG</a> representation in
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, the
+<a href="#Table:_cvterm_relationship">cvterm_relationship</a> rows represent
+relationships between terms, or more formally, <strong>necessary conditions</strong>.
+A logical definition must have both <strong>necessary and sufficient
+conditions</strong>. A logical definition often consists of a <strong>generic term</strong>
+(also known as &ldquo;genus&rdquo;) and one or more <strong>discriminating
+characteristics</strong> (also known as &ldquo;differentiae&rdquo;). The discriminating
+characteristics are typically relationships.</p>
+<p>For example, the logical definition of &ldquo;larval locomotory behaviour&rdquo;
+would be a &ldquo;locomotory behaviour&rdquo; (genus) which &ldquo;during&rdquo; &ldquo;tt larval
+stage&rdquo; (where &ldquo;during&rdquo; could be drawn from an ontology of relations, and
+larval stage may come from an insect developmental stage ontology).
+These constitute both necessary and sufficient conditions: the
+conditions are necessary in that all instances of larval locomotory
+behavior are necessarily locomotory behaviors and are necessarily
+manifested at the larval stage. We could represent this using a normal
+DAG. However, because this is a definition it also constitutes
+sufficient conditions, in that any instance of locomotory behavior which
+manifests at the larval stage is by definition a larval locomotory
+behavior.</p>
+<p>In an ontology formalism like OWL-DL or OBO-1.2, genus-differentiae are
+represented using set-intersections.</p>
+<p>Here is the OBO 1.2 representation:</p>
+<pre><code>[Term]
+id: GO:0008345
+name: larval locomotory behavior
+namespace: biological_process
+is_a: GO:0007626 ! locomotory behavior
+is_a: GO:0030537 ! larval behavior
+intersection_of: GO:0007626  ! GENUS: locomotory behavior
+intersection_of: during FBdv:00005336 ! DIFFERENTIUM: during larval stage
+</code></pre>
+<p>Here is the equivalent in OWL (note: RDF-XML syntax is very verbose!):</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">  &lt;owl:Class rdf:ID=&#34;GO_0008345&#34;&gt;
+    &lt;rdfs:label xml:lang=&#34;en&#34;&gt;larval locomotory behavior&lt;/rdfs:label&gt;
+    &lt;rdfs:subClassOf rdf:resource=&#34;#GO_0007626&#34;/&gt;
+    &lt;rdfs:subClassOf rdf:resource=&#34;#GO_0030537&#34;/&gt;
+    &lt;owl:equivalentClass&gt;
+      &lt;owl:Class&gt;
+        &lt;owl:intersectionOf rdf:parseType=&#34;Collection&#34;&gt;
+          &lt;owl:Class rdf:about=&#34;#GO_0007626&#34;/&gt;
+          &lt;owl:Restriction&gt;
+            &lt;owl:onProperty&gt;
+              &lt;owl:ObjectProperty rdf:about=&#34;#during&#34;/&gt;
+            &lt;/owl:onProperty&gt;
+            &lt;owl:someValuesFrom rdf:resource=&#34;#FBdv_00005336&#34;/&gt;
+          &lt;/owl:Restriction&gt;
+        &lt;/owl:intersectionOf&gt;
+      &lt;/owl:Class&gt;
+    &lt;/owl:equivalentClass&gt;
+  &lt;/owl:Class&gt;
+</code></pre><p>When converting to Chado we employ a more economical representation, in
+terms of the number of triples we use:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">  &lt;!-- normal DAG relationships (necessary conditions) --&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;is_a&lt;/type_id&gt;
+    &lt;subject_id&gt;GO:0008345&lt;/subject_id&gt;
+    &lt;object_id&gt;GO:0007626&lt;/object_id&gt;
+  &lt;/cvterm_relationship&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;is_a&lt;/type_id&gt;
+    &lt;subject_id&gt;GO:0008345&lt;/subject_id&gt;
+    &lt;object_id&gt;GO:0030537&lt;/object_id&gt;
+  &lt;/cvterm_relationship&gt;
+ 
+  &lt;!-- Genus/generic term --&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;intersection_of&lt;/type_id&gt;
+    &lt;subject_id&gt;GO:0008345&lt;/subject_id&gt;
+    &lt;object_id&gt;GO:0007626&lt;/object_id&gt; &lt;!-- locomotory behavior --&gt;
+  &lt;/cvterm_relationship&gt;
+ 
+  &lt;!-- Discriminating characteristics --&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;intersection_of&lt;/type_id&gt;
+    &lt;subject_id&gt;GO:0008345&lt;/subject_id&gt;
+    &lt;object_id&gt;
+ 
+      &lt;!-- anonymous term representing  during(larval stage) --&gt;
+      &lt;cvterm&gt;
+        &lt;dbxref_id&gt;
+          &lt;dbxref&gt;
+            &lt;db_id&gt;internal&lt;/db_id&gt;
+            &lt;accession&gt;restriction--OBOL:during--GO:0008345&lt;/accession&gt;
+          &lt;/dbxref&gt;
+        &lt;/dbxref_id&gt;
+ 
+        &lt;!-- note: as this is an anon term, the name will never
+             be shown to a user --&gt;
+        &lt;name&gt;restriction--OBOL:during--GO:0008345&lt;/name&gt;
+        &lt;cv_id&gt;anonymous_cv&lt;/cv_id&gt;
+        &lt;cvtermprop&gt;
+          &lt;type_id&gt;is_anonymous&lt;/type_id&gt;
+          &lt;value&gt;1&lt;/value&gt;
+          &lt;rank&gt;0&lt;/rank&gt;
+        &lt;/cvtermprop&gt;
+        &lt;cvterm_relationship&gt;
+          &lt;type_id&gt;OBOL:during&lt;/type_id&gt;
+          &lt;object_id&gt;FBdv:00005336&lt;/object_id&gt;
+        &lt;/cvterm_relationship&gt;
+      &lt;/cvterm&gt;
+ 
+    &lt;/object_id&gt;
+  &lt;/cvterm_relationship&gt;
+</code></pre><p>Note that in the above, we are creating <strong>anonymous</strong> terms. We give
+them fake names and fake dbxrefs. In the <a
+href="http://gmod.svn.sourceforge.net/viewvc/gmod/schema/branches/bbop-experimental/"
+class="external text" rel="nofollow">bbop-experimental SVN branch</a> of
+chado, names and dbxrefs are nullable, so these can be omitted. With the
+current schema, you must provide fake dbxrefs and names that are unique,
+such as the above (if you are not familiar with how <a href="Chado_XML" title="Chado XML">Chado
+XML</a> maps to the Chado schema, see the
+explanation below).</p>
+<p>If you wish to convert OBO-specified logical definitions to <a href="Chado_XML" title="Chado XML">Chado
+XML</a> you will need
+<a href="http://www.godatabase.org/dev/pod/go-perl.html"
+class="external text" rel="nofollow">go-perl</a>, v0.05 or higher (if
+you have a lower version, the <em>intersection_of</em> tags will simply be
+ignored).</p>
+<pre><code>go2chadoxml ont.obo &gt; ont.chado
+</code></pre>
+<h3 id="span-idhow_logical_definitions_are_stored_in_chado-classmw-headlinehow-logical-definitions-are-stored-in-chadospan"><span id="How_Logical_Definitions_are_Stored_in_Chado" class="mw-headline">How Logical Definitions are Stored in Chado</span></h3>
+<p>This involves no schema changes to the cv module. Each <em>intersection_of</em>
+goes in as a <a href="Glossary#DAG" title="Glossary">DAG</a> arc of type
+<em>internal:intersection_of</em>. The <em>object_id</em> in the arc is either a term
+(for the genus) or an anonymous term representing a restriction (the
+differentium). The restriction has a relationship of some type to
+another term.</p>
+<p>For example, for &ldquo;larval locomotory behavior&rdquo; we would normally just
+have:</p>
+<pre><code>LLB is_a LocomotoryBehavior
+LLB is_a LarvalBehavior
+</code></pre>
+<p>If we load a logical definition for this term (see /t/data/llm/obo in
+the <a href="http://www.godatabase.org/dev/pod/go-perl.html"
+class="external text" rel="nofollow">go-perl</a> package), like this:</p>
+<pre><code>[Term]
+id: GO:0008345
+name: larval locomotory behavior
+namespace: biological_process
+is_a: GO:0007626 ! locomotory behavior
+is_a: GO:0030537 ! larval behavior
+intersection_of: GO:0007626  ! locomotory behavior
+intersection_of: during FBdv:00005336 ! larval stage
+</code></pre>
+<p>Then the <em>intersection_of</em>s get stored using the basic DAG tables as:</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Relation</th>
+<th>Object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLB</td>
+<td><em>intersection_of</em></td>
+<td>Locomotory Behaviour</td>
+</tr>
+<tr>
+<td>LLB</td>
+<td><em>intersection_of</em></td>
+<td>anon:xxx</td>
+</tr>
+<tr>
+<td>anon:xxx</td>
+<td>during</td>
+<td>FBv:00005336</td>
+</tr>
+</tbody>
+</table>
+<p>Definition stored in <a href="#Table:_cvterm_relationship">cvterm_relationship</a>
+table</p>
+<p>This uses 4 cvterm_relationships and the creation of a new <strong>anonymous</strong>
+term that is never shown directly to the user. The anonymous term
+represents the class of things that happen during the larval stage.</p>
+<h3 id="span-idlogical_definition_views-classmw-headlinelogical-definition-viewsspan"><span id="Logical_Definition_Views" class="mw-headline">Logical Definition Views</span></h3>
+<p>Two views: <em>cvterm_genus</em> and <em>cvterm_differentium</em> views are in
+chado/modules/cv/views.</p>
+<h3 id="span-idexample_use_case_phenotypes-classmw-headlineexample-use-case-phenotypescategory253aphenotypes-category253aphenotypesspan"><span id="Example_Use_Case:_Phenotypes" class="mw-headline">Example Use Case: <a href="Category%253APhenotypes" title="Category%253APhenotypes">Phenotypes</a></span></h3>
+<p>The idea here is that queries for composed term &ldquo;syndactyly&rdquo; should
+automatically return the same results as a boolean query for &ldquo;fusion&rdquo; +
+<em>inheres_in</em> = &ldquo;finger&rdquo; regardless of whether the annotation is to the
+composed term or is a composed annotation (provided we put the logical
+definition of syndactyly in the database).</p>
+<h3 id="span-idexample_use_case_feature_types-classmw-headlineexample-use-case-feature-typesspan"><span id="Example_Use_Case:_Feature_Types" class="mw-headline">Example Use Case: Feature Types</span></h3>
+<p>The Sequence Ontology has some logical definitions - you will need to
+load the file <a
+href="http://song.cvs.sourceforge.net/song/ontology/so-xp.obo?view=log"
+class="external text" rel="nofollow">so-xp.obo</a>.</p>
+<h4 id="span-idexample_use_case_go-classmw-headlineexample-use-case-gospan"><span id="Example_use_case:_GO" class="mw-headline">Example use case: GO</span></h4>
+<p>See <a href="http://wiki.geneontology.org/index.php/Obol"
+class="external text" rel="nofollow">Obol</a>.</p>
+<h4 id="span-idexample_use_case_drawing_dags-classmw-headlineexample-use-case-drawing-dagsspan"><span id="Example_use_case:_Drawing_DAGs" class="mw-headline">Example use case: Drawing DAGs</span></h4>
+<p>Currently the DAGs of many OBO ontologies are highly tangled; see
+<a href="http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html"
+class="external free"
+rel="nofollow"><a href="http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html">http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html</a></a></p>
+<p>If all terms have logical definitions, then there is only one <strong>true</strong>
+(genus) or <em>isa</em> parent. This enables us to disentangle the DAGs and
+draw distinct hierarchies. For example, the GO term <strong>cysteine
+biosynthesis</strong> could be drawn as two distinct hierarchies - one process
+and one chemical.</p>
+<h4 id="span-idloading_owl_into_chado-classmw-headlineloading-owl-into-chadospan"><span id="Loading_OWL_into_Chado" class="mw-headline">Loading OWL into Chado</span></h4>
+<p>Not all OWL-DL features are supported. Only <em>intersection_of</em>s
+corresponding to genus-differentiae are loaded.</p>
+<p>First you must convert OWL into OBO 1.2 format. There will soon be a way
+to do this in <a href="http://www.oboedit.org/" class="external text"
+rel="nofollow">OboEdit</a>. For now you can use
+<a href="http://www.blipkit.org" class="external text"
+rel="nofollow">blipkit</a>.</p>
+<pre><code>blip io-convert my.owl -to obo -o my.obo
+</code></pre>
+<p>Once you have an OBO file you can run <a
+href="http://search.cpan.org/src/CMUNGALL/go-perl-0.06/scripts/go2chadoxml"
+class="external text" rel="nofollow">go2chadoxml</a>, as above.</p>
+<h4 id="span-idpost-coordinating_terms-classmw-headlinepost-coordinating-termsspan"><span id="Post-coordinating_Terms" class="mw-headline">Post-coordinating Terms</span></h4>
+<p>Sometimes we want to be able to refer to a term such as &ldquo;plasma membrane
+of spermatocyte&rdquo;, but no such term exists in the ontology. Introducing
+these as <strong>pre-coordinated</strong> cross-product terms would make the ontology
+unwieldy due the large number of possible combinations.</p>
+<p>Chado allows the <strong>post-coordination</strong> or <strong>post-composition</strong> of terms
+using the same formalism as described above. Briefly: we would create an
+<strong>anonymous</strong> term. This anonymous term would be defined using the terms
+&ldquo;plasma membrane&rdquo; and &ldquo;spermatocyte&rdquo;, using a genus-differentia
+definition as above.</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1">  &lt;!-- Genus/generic term --&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;intersection_of&lt;/type_id&gt;
+    &lt;subject_id&gt;anon_1&lt;/subject_id&gt;
+    &lt;object_id&gt;GO__plasma_membrane&lt;/object_id&gt;
+  &lt;/cvterm_relationship&gt;
+ 
+  &lt;!-- Discriminating characteristics --&gt;
+  &lt;cvterm_relationship&gt;
+    &lt;type_id&gt;intersection_of&lt;/type_id&gt;
+    &lt;subject_id&gt;anon_1&lt;/subject_id&gt;
+    &lt;object_id&gt;
+ 
+      &lt;!-- anonymous term representing  part_of(spermatocyte) --&gt;
+      &lt;cvterm&gt;
+        &lt;dbxref_id&gt;
+          &lt;dbxref&gt;
+            &lt;db_id&gt;internal&lt;/db_id&gt;
+            &lt;accession&gt;restriction--part_of--spermatocyte&lt;/accession&gt;
+          &lt;/dbxref&gt;
+        &lt;/dbxref_id&gt;
+ 
+        &lt;!-- note: as this is an anon term, the name will never
+             be shown to a user --&gt;
+        &lt;name&gt;restriction--part_of--spermatocyte&lt;/name&gt;
+        &lt;cv_id&gt;anonymous_cv&lt;/cv_id&gt;
+        &lt;cvtermprop&gt;
+          &lt;type_id&gt;is_anonymous&lt;/type_id&gt;
+          &lt;value&gt;1&lt;/value&gt;
+          &lt;rank&gt;0&lt;/rank&gt;
+        &lt;/cvtermprop&gt;
+        &lt;cvterm_relationship&gt;
+          &lt;type_id&gt;OBO_REL:part_of&lt;/type_id&gt;
+          &lt;object_id&gt;CL__spermatocyte&lt;/object_id&gt;
+        &lt;/cvterm_relationship&gt;
+      &lt;/cvterm&gt;
+ 
+    &lt;/object_id&gt;
+  &lt;/cvterm_relationship&gt;
+</code></pre><p>The above assumes <a href="XORT.1" title="XORT">XORT</a> macro IDs defined for
+<em>GO__plasma_membrane</em> and <em>CL__spermatocyte</em>.</p>
+<p>Allow post-coordinated terms places a greater burden on applications
+that use the cv module. More documentation will be provided here on
+this.</p>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<h2 id="span-idtable_cv-classmw-headlinetable-cvspan"><span id="Table:_cv" class="mw-headline">Table: cv</span></h2>
+<p>A controlled vocabulary or ontology. A cv is composed of cvterms (AKA
+terms, classes, types, universals - relations and properties are also
+stored in cvterm) and the relationships between them.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cv Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cv_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em>UNIQUE NOT NULL</em><br />
+<br />
+The name of the ontology. This corresponds to the obo-format
+-namespace-. cv names uniquely identify the cv. In OBO file format, the
+cv.name is known as the namespace.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>definition</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+A text description of the criteria for membership of this ontology.</td>
+</tr>
+</tbody>
+</table>
+<p>cv Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvtermpath" title="Chado Tables">cvtermpath</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_cvterm-classmw-headlinetable-cvtermspan"><span id="Table:_cvterm" class="mw-headline">Table: cvterm</span></h2>
+<p>A term, class, universal or type within an ontology or controlled
+vocabulary. This table is also used for relations and properties.
+cvterms constitute nodes in the graph defined by the collection of
+cvterms and cvterm_relationships.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvterm Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cv"
+title="Chado Tables">cv</a></p></td>
+<td>cv_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The cv or ontology or namespace to which this cvterm belongs.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>name</td>
+<td>character varying(1024)</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+A concise human-readable name or label for the cvterm. Uniquely
+identifies a cvterm within a cv.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>definition</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+A human-readable text definition.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE NOT NULL</em><br />
+<br />
+Primary identifier dbxref - The unique global OBO identifier for this
+cvterm. Note that a cvterm may have multiple secondary dbxrefs - see
+also table: cvterm_dbxref.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_obsolete</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Boolean 0=false,1=true; see GO documentation for details of obsoletion.
+Note that two terms with different primary dbxrefs may exist if one is
+obsolete.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>is_relationshiptype</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+Boolean 0=false,1=true relations or relationship types (also known as
+Typedefs in OBO format, or as properties or slots) form a cv/ontology in
+themselves. We use this flag to indicate whether this cvterm is an
+actual term/class/universal or a relation. Relations may be drawn from
+the OBO Relations ontology, but are not exclusively drawn from
+there.</td>
+</tr>
+</tbody>
+</table>
+<p>cvterm Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_acquisition_relationship" title="Chado Tables">acquisition_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_acquisitionprop" title="Chado Tables">acquisitionprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_analysisprop" title="Chado Tables">analysisprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_arraydesign" title="Chado Tables">arraydesign</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_arraydesignprop" title="Chado Tables">arraydesignprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_assayprop" title="Chado Tables">assayprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_biomaterial_relationship" title="Chado Tables">biomaterial_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_biomaterial_treatment" title="Chado Tables">biomaterial_treatment</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_biomaterialprop" title="Chado Tables">biomaterialprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_contact" title="Chado Tables">contact</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_contact_relationship" title="Chado Tables">contact_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_control" title="Chado Tables">control</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvterm_dbxref" title="Chado Tables">cvterm_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvterm_relationship" title="Chado Tables">cvterm_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvtermpath" title="Chado Tables">cvtermpath</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvtermprop" title="Chado Tables">cvtermprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_cvtermsynonym" title="Chado Tables">cvtermsynonym</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_dbxrefprop" title="Chado Tables">dbxrefprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_element" title="Chado Tables">element</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_element_relationship" title="Chado Tables">element_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_elementresult_relationship" title="Chado Tables">elementresult_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_environment_cvterm" title="Chado Tables">environment_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature" title="Chado Tables">feature</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvterm" title="Chado Tables">feature_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_cvtermprop" title="Chado Tables">feature_cvtermprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_genotype" title="Chado Tables">feature_genotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_pubprop" title="Chado Tables">feature_pubprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationship" title="Chado Tables">feature_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_feature_relationshipprop" title="Chado Tables">feature_relationshipprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featuremap" title="Chado Tables">featuremap</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_featureprop" title="Chado Tables">featureprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_library" title="Chado Tables">library</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_library_cvterm" title="Chado Tables">library_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_libraryprop" title="Chado Tables">libraryprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_organism_relationship" title="Chado Tables">organism_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_organismpath" title="Chado Tables">organismpath</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_organismprop" title="Chado Tables">organismprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phendesc" title="Chado Tables">phendesc</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phenotype" title="Chado Tables">phenotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phenotype_comparison" title="Chado Tables">phenotype_comparison</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phenotype_cvterm" title="Chado Tables">phenotype_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phenstatement" title="Chado Tables">phenstatement</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phylonode" title="Chado Tables">phylonode</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phylonode_relationship" title="Chado Tables">phylonode_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phylonodeprop" title="Chado Tables">phylonodeprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_phylotree" title="Chado Tables">phylotree</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_protocol" title="Chado Tables">protocol</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_protocolparam" title="Chado Tables">protocolparam</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_pub_relationship" title="Chado Tables">pub_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_pubprop" title="Chado Tables">pubprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_quantification_relationship" title="Chado Tables">quantification_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_quantificationprop" title="Chado Tables">quantificationprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_cvterm" title="Chado Tables">stock_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_relationship" title="Chado Tables">stock_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockcollection" title="Chado Tables">stockcollection</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockcollectionprop" title="Chado Tables">stockcollectionprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockprop" title="Chado Tables">stockprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_studydesignprop" title="Chado Tables">studydesignprop</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_studyfactor" title="Chado Tables">studyfactor</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_synonym" title="Chado Tables">synonym</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_treatment" title="Chado Tables">treatment</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_wwwuser_cvterm" title="Chado Tables">wwwuser_cvterm</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_cvterm_dbxref-classmw-headlinetable-cvterm_dbxrefspan"><span id="Table:_cvterm_dbxref" class="mw-headline">Table: cvterm_dbxref</span></h2>
+<p>In addition to the primary identifier (cvterm.dbxref_id) a cvterm can
+have zero or more secondary identifiers/dbxrefs, which may refer to
+records in external databases. The exact semantics of cvterm_dbxref are
+not fixed. For example: the dbxref could be a pubmed ID that is
+pertinent to the cvterm, or it could be an equivalent or similar term in
+another ontology. For example, GO cvterms are typically linked to
+InterPro IDs, even though the nature of the relationship between them is
+largely one of statistical association. The dbxref may be have data
+records attached in the same database instance, or it could be a
+&ldquo;hanging&rdquo; dbxref pointing to some external database. NOTE: If the
+desired objective is to link two cvterms together, and the nature of the
+relation is known and holds for all instances of the subject cvterm then
+consider instead using cvterm_relationship together with a well-defined
+relation.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvterm_dbxref Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvterm_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_for_definition</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+A cvterm.definition should be supported by one or more references. If
+this column is true, the dbxref is not for a term in an external
+database - it is a dbxref for provenance information for the
+definition.</td>
+</tr>
+</tbody>
+</table>
+<p>cvterm_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_cvterm_relationship-classmw-headlinetable-cvterm_relationshipspan"><span id="Table:_cvterm_relationship" class="mw-headline">Table: cvterm_relationship</span></h2>
+<p>A relationship linking two cvterms. Each cvterm_relationship constitutes
+an edge in the graph defined by the collection of cvterms and
+cvterm_relationships. The meaning of the cvterm_relationship depends on
+the definition of the cvterm R referred to by type_id. However, in
+general the definitions are such that the statement &ldquo;all SUBJs REL some
+OBJ&rdquo; is true. The cvterm_relationship statement is about the subject,
+not the object. For example &ldquo;insect wing part_of thorax&rdquo;.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvterm_relationship Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvterm_relationship_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The nature of the relationship between subject and object. Note that
+relations are also housed in the cvterm table, typically from the OBO
+relationship ontology, although other relationship types are
+allowed.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>subject_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The subject of the subj-predicate-obj sentence. The cvterm_relationship
+is about the subject. In a graph, this typically corresponds to the
+child node.</td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>object_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The object of the subj-predicate-obj sentence. The cvterm_relationship
+refers to the object. In a graph, this typically corresponds to the
+parent node.</td>
+</tr>
+</tbody>
+</table>
+<p>cvterm_relationship Structure</p>
+<hr>
+<h2 id="span-idtable_cvtermpath-classmw-headlinetable-cvtermpathspan"><span id="Table:_cvtermpath" class="mw-headline">Table: cvtermpath</span></h2>
+<p>The reflexive transitive closure of the cvterm_relationship relation.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvtermpath Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvtermpath_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+<br />
+The relationship type that this is a closure over. If null, then this is
+a closure over ALL relationship types. If non-null, then this references
+a relationship cvterm - note that the closure will apply to both this
+relationship AND the OBO_REL:is_a (subclass) relationship.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>subject_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>object_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cv"
+title="Chado Tables">cv</a></p></td>
+<td>cv_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+Closures will mostly be within one cv. If the closure of a relationship
+traverses a cv, then this refers to the cv of the object_id cvterm.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>pathdistance</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+<br />
+The number of steps required to get from the subject cvterm to the
+object cvterm, counting from zero (reflexive relationship).</td>
+</tr>
+</tbody>
+</table>
+<p>cvtermpath Structure</p>
+<hr>
+<h2 id="span-idtable_cvtermprop-classmw-headlinetable-cvtermpropspan"><span id="Table:_cvtermprop" class="mw-headline">Table: cvtermprop</span></h2>
+<p>Additional extensible properties can be attached to a cvterm using this
+table. Corresponds to -AnnotationProperty- in W3C OWL format.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvtermprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvtermprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property or slot is a cvterm. The meaning of the
+property is defined in that cvterm.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em>UNIQUE#1 NOT NULL DEFAULT ''::text</em><br />
+<br />
+The value of the property, represented as text. Numeric values are
+converted to their text representation.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Property-Value ordering. Any cvterm can have multiple values for any
+particular property type - these are ordered in a list using rank,
+counting from zero. For properties that are single-valued rather than
+multi-valued, the default 0 value should be used.</td>
+</tr>
+</tbody>
+</table>
+<p>cvtermprop Structure</p>
+<hr>
+<h2 id="span-idtable_cvtermsynonym-classmw-headlinetable-cvtermsynonymspan"><span id="Table:_cvtermsynonym" class="mw-headline">Table: cvtermsynonym</span></h2>
+<p>A cvterm actually represents a distinct class or concept. A concept can
+be referred to by different phrases or names. In addition to the primary
+name (cvterm.name) there can be a number of alternative aliases or
+synonyms. For example, &ldquo;T cell&rdquo; as a synonym for &ldquo;T lymphocyte&rdquo;.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>cvtermsynonym Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>cvtermsynonym_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>synonym</td>
+<td>character varying(1024)</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+A synonym can be exact, narrower, or broader than.</td>
+</tr>
+</tbody>
+</table>
+<p>cvtermsynonym Structure</p>
+<hr>
+<h2 id="span-idtable_dbxrefprop-classmw-headlinetable-dbxrefpropspan"><span id="Table:_dbxrefprop" class="mw-headline">Table: dbxrefprop</span></h2>
+<p>Metadata about a dbxref. Note that this is not defined in the dbxref
+module, as it depends on the cvterm table. This table has a structure
+analogous to cvtermprop.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>dbxrefprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>text</td>
+<td><em>NOT NULL DEFAULT &lsquo;&rsquo;::text</em></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>dbxrefprop Structure</p>
+<hr>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ANeeds_Editing" title="Category%253ANeeds Editing">Needs Editing</a></li>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+<li><a href="Category%253AOntologies" title="Category%253AOntologies">Ontologies</a></li>
+<li><a href="Category%253A!Lacking_ERD" title="Category%253A!Lacking ERD">!Lacking ERD</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_CV_Module" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 04:35 on 18 February 2015.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">510,098 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

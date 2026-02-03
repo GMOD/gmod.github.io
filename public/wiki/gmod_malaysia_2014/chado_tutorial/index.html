@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMOD Malaysia 2014/Chado Tutorial - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogmod-malaysia-2014chado-tutorialspan"><span dir="auto">GMOD Malaysia 2014/Chado Tutorial</span></h1>
+<p>This <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
+tutorial was presented by <a href="../User%253AScott" title="User%253AScott">Scott Cain</a> at
+<a href="../GMOD_Malaysia_2014.1" title="GMOD Malaysia 2014">GMOD Malaysia 2014</a>,
+February 2014. This tutorial requires Chado version 1.22.</p>
+<p>The most recent Chado tutorial can be found at the
+<a href="../Chado_Tutorial" class="mw-redirect"
+title="Chado Tutorial">Chado Tutorial</a> page.</p>
+<p>This tutorial uses the AWS AMI &rsquo; <strong><em>named &lsquo;</em></strong> in the '</p>
+<p>.</p>
+<p><a href="../Chado" class="mw-redirect" title="Chado">Chado</a> is the
+database schema of the GMOD project. This session introduces database
+concepts, and then provides an overview of Chado&rsquo;s design and
+architecture, and then goes into detail about how to use a Chado
+database.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Theory"><span class="tocnumber">1</span>
+<span class="toctext">Theory</span></a>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1.1</span>
+<span class="toctext">Introduction</span></a>
+<ul>
+<li><a href="#Database_Terminology"><span class="tocnumber">1.1.1</span>
+<span class="toctext">Database
+Terminology</span></a>
+<ul>
+<li><a href="#What.27s_a_database.3F"><span class="tocnumber">1.1.1.1</span>
+<span class="toctext">What&rsquo;s a
+database?</span></a></li>
+<li><a href="#SQL"><span class="tocnumber">1.1.1.2</span>
+<span class="toctext">SQL</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Why_Chado.3F"><span class="tocnumber">1.2</span> <span class="toctext">Why
+Chado?</span></a></li>
+<li><a href="#Chado_Architecture:_Modules"><span class="tocnumber">1.3</span> <span class="toctext">Chado
+Architecture: Modules</span></a>
+<ul>
+<li><a href="#Extensible"><span class="tocnumber">1.3.1</span>
+<span class="toctext">Extensible</span></a></li>
+<li><a href="#Plus"><span class="tocnumber">1.3.2</span>
+<span class="toctext">Plus</span></a></li>
+<li><a href="#Module_Caveats"><span class="tocnumber">1.3.3</span> <span class="toctext">Module
+Caveats</span></a></li>
+</ul>
+</li>
+<li><a href="#Exploring_the_schema"><span class="tocnumber">1.4</span> <span class="toctext">Exploring
+the schema</span></a>
+<ul>
+<li><a href="#Sequence_Module"><span class="tocnumber">1.4.1</span>
+<span class="toctext">Sequence Module</span></a>
+<ul>
+<li><a href="#Features"><span class="tocnumber">1.4.1.1</span>
+<span class="toctext">Features</span></a></li>
+</ul>
+</li>
+<li><a href="#CV_.28Controlled_Vocabularies.29_Module"><span class="tocnumber">1.4.2</span> <span class="toctext">CV
+(Controlled Vocabularies)
+Module</span></a>
+<ul>
+<li><a href="#Controlled_Vocabularies"><span class="tocnumber">1.4.2.1</span>
+<span class="toctext">Controlled
+Vocabularies</span></a></li>
+<li><a href="#Ontologies"><span class="tocnumber">1.4.2.2</span>
+<span class="toctext">Ontologies</span></a></li>
+<li><a href="#CVs_and_Ontologies_in_Chado"><span class="tocnumber">1.4.2.3</span>
+<span class="toctext">CVs and Ontologies in
+Chado</span></a>
+<ul>
+<li><a href="#Data_Integrity"><span class="tocnumber">1.4.2.3.1</span>
+<span class="toctext">Data Integrity</span></a></li>
+<li><a href="#Data_Portability_and_Standardization"><span class="tocnumber">1.4.2.3.2</span>
+<span class="toctext">Data Portability and
+Standardization</span></a></li>
+<li><a href="#Complexity"><span class="tocnumber">1.4.2.3.3</span>
+<span class="toctext">Complexity</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Opening_our_sample_database"><span class="tocnumber">1.4.3</span>
+<span class="toctext">Opening our sample
+database</span></a></li>
+<li><a href="#Our_first_example_query"><span class="tocnumber">1.4.4</span> <span class="toctext">Our
+first example query</span></a></li>
+<li><a href="#General_Module"><span class="tocnumber">1.4.5</span>
+<span class="toctext">General Module</span></a>
+<ul>
+<li><a href="#IDs"><span class="tocnumber">1.4.5.1</span>
+<span class="toctext">IDs</span></a>
+<ul>
+<li><a href="#Public_IDs"><span class="tocnumber">1.4.5.1.1</span>
+<span class="toctext">Public IDs</span></a></li>
+<li><a href="#Private_IDs"><span class="tocnumber">1.4.5.1.2</span>
+<span class="toctext">Private IDs</span></a></li>
+</ul>
+</li>
+<li><a href="#IDs_in_Chado"><span class="tocnumber">1.4.5.2</span>
+<span class="toctext">IDs in Chado</span></a></li>
+</ul>
+</li>
+<li><a href="#Properties"><span class="tocnumber">1.4.6</span>
+<span class="toctext">Properties</span></a>
+<ul>
+<li><a href="#Relationships"><span class="tocnumber">1.4.6.1</span>
+<span class="toctext">Relationships</span></a></li>
+<li><a href="#Locations"><span class="tocnumber">1.4.6.2</span>
+<span class="toctext">Locations</span></a>
+<ul>
+<li><a href="#Interbase_Coordinates"><span class="tocnumber">1.4.6.2.1</span>
+<span class="toctext">Interbase
+Coordinates</span></a></li>
+<li><a href="#Location_Chains"><span class="tocnumber">1.4.6.2.2</span>
+<span class="toctext">Location
+Chains</span></a></li>
+<li><a href="#featureloc_Table"><span class="tocnumber">1.4.6.2.3</span>
+<span class="toctext">featureloc
+Table</span></a></li>
+</ul>
+</li>
+<li><a href="#Example:_Gene"><span class="tocnumber">1.4.6.3</span>
+<span class="toctext">Example: Gene</span></a></li>
+<li><a href="#Example:_Computational_Analysis"><span class="tocnumber">1.4.6.4</span>
+<span class="toctext">Example: Computational
+Analysis</span></a></li>
+<li><a href="#Other_Feature_Annotations"><span class="tocnumber">1.4.6.5</span>
+<span class="toctext">Other Feature
+Annotations</span></a></li>
+<li><a href="#Extending_Chado:_Properties_tables_and_new_modules"><span class="tocnumber">1.4.6.6</span>
+<span class="toctext">Extending Chado: Properties tables and new
+modules</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Practice"><span class="tocnumber">2</span>
+<span class="toctext">Practice</span></a>
+<ul>
+<li><a href="#Prerequisites"><span class="tocnumber">2.1</span>
+<span class="toctext">Prerequisites</span></a>
+<ul>
+<li><a href="#PostgreSQL"><span class="tocnumber">2.1.1</span>
+<span class="toctext">PostgreSQL</span></a>
+<ul>
+<li><a href="#Edit_config_files"><span class="tocnumber">2.1.1.1</span>
+<span class="toctext">Edit config
+files</span></a></li>
+<li><a href="#Create_a_gmod_user"><span class="tocnumber">2.1.1.2</span>
+<span class="toctext">Create a gmod
+user</span></a></li>
+<li><a href="#Installing_DBIx::DBStag_by_hand"><span class="tocnumber">2.1.1.3</span>
+<span class="toctext">Installing DBIx::DBStag by
+hand</span></a></li>
+</ul>
+</li>
+<li><a href="#BioPerl"><span class="tocnumber">2.1.2</span>
+<span class="toctext">BioPerl</span></a></li>
+<li><a href="#Let.27s_Go.21"><span class="tocnumber">2.1.3</span> <span class="toctext">Let&rsquo;s
+Go!</span></a></li>
+<li><a href="#Environment_Variables"><span class="tocnumber">2.1.4</span>
+<span class="toctext">Environment
+Variables</span></a></li>
+</ul>
+</li>
+<li><a href="#Installing_Chado"><span class="tocnumber">2.2</span> <span class="toctext">Installing
+Chado</span></a>
+<ul>
+<li><a href="#Saving_your_progress_to_this_point"><span class="tocnumber">2.2.1</span> <span class="toctext">Saving
+your progress to this
+point</span></a></li>
+<li><a href="#A_Note_about_Redos"><span class="tocnumber">2.2.2</span> <span class="toctext">A Note
+about Redos</span></a></li>
+</ul>
+</li>
+<li><a href="#Preparing_GFF_data_for_loading"><span class="tocnumber">2.3</span> <span class="toctext">Preparing
+GFF data for loading</span></a>
+<ul>
+<li><a href="#Working_with_Large_GFF_files"><span class="tocnumber">2.3.1</span>
+<span class="toctext">Working with Large GFF
+files</span></a></li>
+<li><a href="#Loading_GFF3"><span class="tocnumber">2.3.2</span>
+<span class="toctext">Loading GFF3</span></a></li>
+<li><a href="#Capturing_the_output_to_check_for_problems"><span class="tocnumber">2.3.3</span>
+<span class="toctext">Capturing the output to check for
+problems</span></a></li>
+<li><a href="#Really_loading_data"><span class="tocnumber">2.3.4</span> <span class="toctext">Really
+loading data</span></a>
+<ul>
+<li><a href="#Try_again"><span class="tocnumber">2.3.4.1</span>
+<span class="toctext">Try again</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Loading_other_data"><span class="tocnumber">2.4</span> <span class="toctext">Loading
+other data</span></a></li>
+</ul>
+</li>
+<li><a href="#Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity"><span class="tocnumber">3</span> <span class="toctext">Chado for
+Expression, Genotype, Phenotype, and Natural
+Diversity</span></a>
+<ul>
+<li><a href="#Expression"><span class="tocnumber">3.1</span>
+<span class="toctext">Expression</span></a>
+<ul>
+<li><a href="#What_defines_an_expression_pattern.3F"><span class="tocnumber">3.1.1</span> <span class="toctext">What
+defines an expression
+pattern?</span></a></li>
+<li><a href="#How_does_Chado_deal_with_this_variety.3F"><span class="tocnumber">3.1.2</span> <span class="toctext">How
+does Chado deal with this
+variety?</span></a></li>
+<li><a href="#FlyBase_Example"><span class="tocnumber">3.1.3</span>
+<span class="toctext">FlyBase Example</span></a></li>
+<li><a href="#Chado_Allows"><span class="tocnumber">3.1.4</span> <span class="toctext">Chado
+Allows</span></a></li>
+<li><a href="#Table:_expression"><span class="tocnumber">3.1.5</span> <span class="toctext">Table:
+expression</span></a></li>
+<li><a href="#Table:_expression_cvterm"><span class="tocnumber">3.1.6</span> <span class="toctext">Table:
+expression_cvterm</span></a></li>
+</ul>
+</li>
+<li><a href="#Genotype"><span class="tocnumber">3.2</span>
+<span class="toctext">Genotype</span></a>
+<ul>
+<li><a href="#Table:_genotype"><span class="tocnumber">3.2.1</span> <span class="toctext">Table:
+genotype</span></a></li>
+<li><a href="#Table:_feature_genotype"><span class="tocnumber">3.2.2</span> <span class="toctext">Table:
+feature_genotype</span></a></li>
+</ul>
+</li>
+<li><a href="#Environment"><span class="tocnumber">3.3</span>
+<span class="toctext">Environment</span></a>
+<ul>
+<li><a href="#Table:_environment"><span class="tocnumber">3.3.1</span> <span class="toctext">Table:
+environment</span></a></li>
+<li><a href="#Table:_environment_cvterm"><span class="tocnumber">3.3.2</span> <span class="toctext">Table:
+environment_cvterm</span></a></li>
+</ul>
+</li>
+<li><a href="#Phenotype.2C_Natural_Diversity_and_Atlas_Support"><span class="tocnumber">3.4</span> <span class="toctext">Phenotype,
+Natural Diversity and Atlas
+Support</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idtheory-classmw-headlinetheoryspan"><span id="Theory" class="mw-headline">Theory</span></h2>
+<h3 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h3>
+<h4 id="span-iddatabase_terminology-classmw-headlinedatabase-terminologyspan"><span id="Database_Terminology" class="mw-headline">Database Terminology</span></h4>
+<p>Or six years of school in 15 minutes or less.</p>
+<ul>
+<li><a href="../A_Brief_Guide_to_Databases" title="A Brief Guide to Databases">A Brief Guide to
+Databases</a></li>
+<li><a href="../Chado_Tables" title="Chado Tables">Chado Tables</a></li>
+</ul>
+<h5 id="span-idwhat27s_a_database3f-classmw-headlinewhats-a-databasedatabases_and_gmod-databases-and-gmodspan"><span id="What.27s_a_database.3F" class="mw-headline">What&rsquo;s a <a href="../Databases_and_GMOD" title="Databases and GMOD">database</a>?</span></h5>
+<ul>
+<li>Chado is a <a href="../Glossary#Schema" title="Glossary">schema</a>, a database
+design - a blueprint for a database containing genomic data</li>
+<li>Distinct from
+<ul>
+<li><a href="../Glossary#Database_Management_System" title="Glossary">Database Management System
+(DBMS)</a>
+<ul>
+<li>Software system for storing databases</li>
+<li><em>e.g.,</em> Oracle, <a href="../PostgreSQL" title="PostgreSQL">PostgreSQL</a>,
+<a href="../MySQL" title="MySQL">MySQL</a></li>
+</ul>
+</li>
+<li>Database, a very loose term
+<ul>
+<li>Any set of organized data that is readable by a computer</li>
+<li>A web site with database driven content, e.g., FlyBase</li>
+<li>Schema + DBMS + Data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="span-idsql-classmw-headlinesqlspan"><span id="SQL" class="mw-headline">SQL</span></h5>
+<p>SQL is a standardized query language for defining and manipulating
+databases. Chado uses it. SQL is supported by all major DBMSs.</p>
+<p><a href="../FlyBase_Field_Mapping_Tables" title="FlyBase Field Mapping Tables">FlyBase Field Mapping
+Tables</a>
+shows some example SQL that queries the FlyBase Chado database. (Caveat:
+FlyBase sometimes uses Chado in ways that no other organizations do.)</p>
+<p><strong>Will SQL be on the test?</strong></p>
+<p>No, we aren&rsquo;t going to teach in-depth SQL in this course but we will use
+it in examples and show how to write queries in Chado.</p>
+<p>You <em>can</em> do basics with Chado without knowing SQL. Many common tasks
+already have scripts written for them. However, as you get more into
+using Chado, you will find that a working knowledge of SQL is necessary.</p>
+<h3 id="span-idwhy_chado3f-classmw-headlinewhy-chadospan"><span id="Why_Chado.3F" class="mw-headline">Why Chado?</span></h3>
+<ul>
+<li><strong>Integration</strong>
+<ul>
+<li>Supports many types of data, integrates with many tools</li>
+</ul>
+</li>
+<li><strong>Modular</strong>
+<ul>
+<li>Use only what you need, ignore the rest</li>
+</ul>
+</li>
+<li><strong>Extensible</strong>
+<ul>
+<li>Write your own modules and properties</li>
+</ul>
+</li>
+<li><strong>Widely used</strong>
+<ul>
+<li><a href="../Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a> - Chado started
+here, large diverse dataset and organization</li>
+<li><a href="http://xenbase.org" class="external text"
+rel="nofollow">Xenbase</a> - Smaller, but with several IT staff</li>
+<li><a href="../ParameciumDB" title="ParameciumDB">ParameciumDB</a> - Smaller still,
+complete GMOD shop, including Chado</li>
+<li><a href="http://www.igs.umaryland.edu" class="external text"
+rel="nofollow">IGS</a> - Large-scale annotation/comparative data in
+Chado, more than a dozen active developers</li>
+<li>Plus AphidBase, BeeBase, BeetleBase, BovineBase, &hellip;</li>
+</ul>
+</li>
+<li><strong>Great Community of Support</strong>
+<ul>
+<li><a href="../GMOD_Mailing_Lists" title="GMOD Mailing Lists">Mailing List</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idchado_architecture_modules-classmw-headlinechado-architecture-modulesspan"><span id="Chado_Architecture:_Modules" class="mw-headline">Chado Architecture: Modules</span></h3>
+<p>The Chado schema is built with a set of <em>modules</em>. A Chado module is a
+set of database tables and relationships that stores information about a
+well-defined area of biology, such as sequence or attribution.</p>
+<p><a href="../File:ChadoModules.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/ChadoModules.png" width="519"
+height="408" alt="ChadoModules.png" /></a></p>
+<p>(Also available as a
+<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/ChadoModules.ppt" class="internal"
+title="ChadoModules.ppt">PowerPoint animation</a>)</p>
+<p>Arrows are dependencies between modules. Dependencies indicate one or
+more <em>foreign keys</em> linking modules.</p>
+<ul>
+<li><a href="../Chado_General_Module" title="Chado General Module">General</a> -
+Identifying things within the DB to the outside world, and identifying
+things from other databases.</li>
+<li><a href="../Chado_CV_Module" title="Chado CV Module">Controlled Vocabulary (cv)</a> -
+Controlled vocabularies and ontologies</li>
+<li><a href="../Chado_Publication_Module" title="Chado Publication Module">Publication
+(pub)</a> -
+Publications and attribution</li>
+<li><a href="../Chado_Organism_Module" title="Chado Organism Module">Organism</a> -
+Describes species; pretty simple. Phylogeny module stores
+relationships.</li>
+<li><a href="../Chado_Sequence_Module" title="Chado Sequence Module">Sequence</a> - Genomic
+features and things that can be tied to or descend from genomic
+features.</li>
+<li><a href="../Chado_Map_Module" title="Chado Map Module">Map</a> - Maps without sequence</li>
+<li><a href="../Chado_Genetic_Module" title="Chado Genetic Module">Genetic</a> - Genetic
+data and genotypes</li>
+<li><a href="../Chado_Companalysis_Module" title="Chado Companalysis Module">Companalysis</a> -
+Storage of Computational sequence analysis. The key concept is that
+the results of a computational analysis can be interpreted or
+described as a sequence feature.</li>
+</ul>
+<h4 id="span-idextensible-classmw-headlineextensiblespan"><span id="Extensible" class="mw-headline">Extensible</span></h4>
+<p>These modules have been contributed to Chado by users who developed
+them.</p>
+<ul>
+<li><a href="../Chado_Mage_Module" title="Chado Mage Module">Mage</a> - Microarray data</li>
+<li><a href="../Chado_Stock_Module" title="Chado Stock Module">Stock</a> - Specimens and
+biological collections</li>
+<li><a href="../Chado_Natural_Diversity_Module_Working_Group" title="Chado Natural Diversity Module Working Group">Natural
+Diversity</a> -
+geolocation, phenotype, genotype</li>
+<li>Plus property tables in many modules.</li>
+</ul>
+<h4 id="span-idplus-classmw-headlineplusspan"><span id="Plus" class="mw-headline">Plus</span></h4>
+<ul>
+<li><a href="../Chado_Audit_Module" title="Chado Audit Module">Audit</a> - Database audit
+trail</li>
+<li><a href="../Chado_Expression_Module" title="Chado Expression Module">Expression</a> -
+Summaries of RNA and protein expression</li>
+<li><a href="../Chado_Library_Module" title="Chado Library Module">Library</a> -
+Descriptions of molecular libraries</li>
+<li><a href="../Chado_Phenotype_Module" title="Chado Phenotype Module">Phenotype</a> -
+Phenotypic data</li>
+<li><a href="../Chado_Phylogeny_Module" title="Chado Phylogeny Module">Phylogeny</a> -
+Organisms and phylogenetic trees</li>
+</ul>
+<h4 id="span-idmodule_caveats-classmw-headlinemodule-caveatsspan"><span id="Module_Caveats" class="mw-headline">Module Caveats</span></h4>
+<p>All modules are <em>blessed</em>, but some modules are <em>more blessed</em> than
+others.</p>
+<p>The General, CV, Publication, Organism, Sequence and Companalysis
+modules are all widely used and cleanly designed. After that modules
+become less frequently used (Stock, Expression, Phenotype, Mage). Also
+several modules are not as cleanly separated as we would like them to
+be. Phenotypic data is spread over several modules. Organism and
+Phylogeny overlap. <a href="../CMap.1" title="CMap">CMap</a> is all about maps, but it
+does not use the Map module.</p>
+<p>From Jeff Bowes, at XenBase:</p>
+<p>As for Chado, we are more Chadoish than exactly Chado. We use the core
+modules with few changes - feature, cv, general, analysis. Although I
+prefer to add columns to tables when it is reasonable and limit the use
+of property tables (too many left outer joins). We use a slightly
+modified version of the phylogeny module. We have developed completely
+different modules for community, literature, anatomy and gene
+expression. If there is a PATO compatible Chado Phenotype solution we&rsquo;d
+prefer to go with that. Although, it might cause problems that we have a
+separate anatomy module as opposed to using cvterm to store anatomy.</p>
+<p>In other words the ideal is good, but implementation and usage is
+uneven. See the
+<a href="../../extras/2008GMODCommunitySurvey.html#Chado"
+class="external text" rel="nofollow">2008 GMOD Community survey</a> for
+what gets used.</p>
+<h3 id="span-idexploring_the_schema-classmw-headlineexploring-the-schemaspan"><span id="Exploring_the_schema" class="mw-headline">Exploring the schema</span></h3>
+<p>Rather than simply listing out the modules and what is stored in them,
+we&rsquo;ll take a data-centric view and imagine what we want to store in our
+database, then learn the Chado way of storing it.</p>
+<p>During this course you&rsquo;ll be working with genome annotation data from
+<a href="../MAKER.1" title="MAKER">MAKER</a>. We&rsquo;ll simplify this and start by
+considering that we have annotation on chromosomes that we want to store
+in our database. These are the sort of things we want to store:</p>
+<ul>
+<li>chromosomes</li>
+<li>genes</li>
+<li>gene predictions</li>
+<li>tRNAs</li>
+<li>BLAST matches</li>
+</ul>
+<p>You may have worked with databases in the past where each type of thing
+you want to store is given its own table. That is, we&rsquo;d have a table for
+genes, one for chromosomes, tRNAs, etc. The problem with this sort of
+design is that, as you encounter new types of things, you have to create
+new tables to store them. Also, many of these &rsquo;thing&rsquo; tables are going
+to look very much alike.</p>
+<p>Chado is what is a <em>generic</em> schema which, in effect, means that data
+are abstracted wherever possible to prevent duplication in both the
+design and data itself. So, instead of one table for each type of
+&rsquo;thing&rsquo;, we just have one table to hold &rsquo;things&rsquo;, regardless of their
+types. In the Chado world these are known as &lsquo;features&rsquo;.</p>
+<p>This brings us to the Sequence Module, which contains the central
+feature table.</p>
+<h4 id="span-idsequence_module-classmw-headlinesequence-modulespan"><span id="Sequence_Module" class="mw-headline">Sequence Module</span></h4>
+<p><a href="../Chado_Sequence_Module" title="Chado Sequence Module">Sequence Module</a></p>
+<p>The sequence module is used to manage genomic features.</p>
+<h5 id="span-idfeatures-classmw-headlinefeaturesspan"><span id="Features" class="mw-headline">Features</span></h5>
+<p>Chado defines a <em>feature</em> to be a region of a biological polymer
+(typically a DNA, RNA, or a polypeptide molecule) or an aggregate of
+regions on this polymer. A region can be an entire chromosome, or a
+junction between two bases. Features are typed according to the
+<a href="http://www.sequenceontology.org/" class="external text"
+rel="nofollow">Sequence Ontology (SO)</a>, they can be localized
+relative to other features, and they can form part-whole and other
+relationships with other features.</p>
+<p>Features are stored in the <a href="../Chado_Sequence_Module#Table:_feature" title="Chado Sequence Module">feature
+table</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Table: feature</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feature_id</td>
+<td>name</td>
+<td>uniquename</td>
+<td>type_id</td>
+<td>is_analysis</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>Within this feature table we can store all types of features and keep
+track of their type with the type_id field. It&rsquo;s conceivable to store
+the named value of each type in this field, like &lsquo;gene&rsquo;, &rsquo;tRNA&rsquo;, etc.
+but this would be prone to things like spelling errors, not to mention
+disagreement of the definition of some of these terms.</p>
+<p>So solve this, all features are linked to a specific type in a
+controlled vocabulary or ontology. These are stored in the cv module.</p>
+<h4 id="span-idcv_28controlled_vocabularies29_module-classmw-headlinecv-controlled-vocabularies-modulespan"><span id="CV_.28Controlled_Vocabularies.29_Module" class="mw-headline">CV (Controlled Vocabularies) Module</span></h4>
+<p><a href="http://gmod.org/Chado_CV_Module" class="external text"
+rel="nofollow">Controlled Vocabulary Module Tables</a></p>
+<p>The CV module implements <em>controlled vocabularies</em> and their more
+complex cousins, <em>ontologies</em>.</p>
+<h5 id="span-idcontrolled_vocabularies-classmw-headlinecontrolled-vocabulariesspan"><span id="Controlled_Vocabularies" class="mw-headline">Controlled Vocabularies</span></h5>
+<p>A <em>controlled vocabulary</em> (CV) is a list of terms from which a value
+must come. CVs are widely used in all databases, not just biological
+ones. Pull down menus are often used to present CVs to users in query or
+annotation interfaces.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+</table>
+<p>| <a href="http://zfin.org" class="external text"
+rel="nofollow">ZFIN&rsquo;s</a> Assay Type CV | <a href="../File:ZfinAssayTypePullDown.png" class="image"
+title="ZFIN&#39;s Assay Type CV"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/ZfinAssayTypePullDown.png" width="231"
+height="260" alt="ZFIN&#39;s Assay Type CV" /></a> |</p>
+<h5 id="span-idontologies-classmw-headlineontologiesspan"><span id="Ontologies" class="mw-headline">Ontologies</span></h5>
+<p>Controlled vocabularies are simple lists of terms. <em>Ontologies</em> are
+terms plus rules and relationships between the terms. The Gene Ontology
+(GO) and Sequence Ontology (SO) are the two best known ontologies, but
+there are many more available from
+<a href="http://www.obofoundry.org/" class="external text"
+rel="nofollow">OBO</a>.</p>
+<p>Ontologies can be incredibly complex with many relationships between
+terms. Representing them and reasoning with them is non-trivial, but the
+CV module helps with both.</p>
+<p>| &lt;a href=&ldquo;<a href="http://flybase.org">http://flybase.org</a>&rdquo; class=&ldquo;external text&rdquo;</p>
+<table>
+<thead>
+<tr>
+<th>rel=&ldquo;nofollow&rdquo;&gt;FlyBase</a> CV Term Viewer showing GO term &ldquo;tissue regeneration&rdquo;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../File:FlyBaseCVTermViewer.png" class="image">&lt;img</td>
+</tr>
+<tr>
+<td>src=&ldquo;<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png%22">https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png&quot;</a> width=&ldquo;1067&rdquo;</td>
+</tr>
+<tr>
+<td>height=&ldquo;604&rdquo; alt=&ldquo;FlyBaseCVTermViewer.png&rdquo; /&gt;</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="span-idcvs_and_ontologies_in_chado-classmw-headlinecvs-and-ontologies-in-chadospan"><span id="CVs_and_Ontologies_in_Chado" class="mw-headline">CVs and Ontologies in Chado</span></h5>
+<p><a href="../Chado_CV_Module" title="Chado CV Module">Chado CV Module</a></p>
+<p><a href="../File:ChadoModulesCV.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ChadoModulesCV.png" width="588"
+height="431" alt="ChadoModulesCV.png" /></a></p>
+<p>(See the <a
+href="Chado_CV_Module#Table:_cvterm"
+class="external text" rel="nofollow">CVTerm table</a> referencing table
+list.)</p>
+<p>Every other module depends on on the CV module. CVs and ontologies are
+central to Chado&rsquo;s design philosophy. Why?</p>
+<h6 id="span-iddata_integrity-classmw-headlinedata-integrityspan"><span id="Data_Integrity" class="mw-headline">Data Integrity</span></h6>
+<p>Using CVs (and enforcing their use as Chado does) ensures that your data
+stays consistent. For example, in the most simple case it prevents your
+database from using several different values all to mean the same thing
+(e.g., &ldquo;unknown&rdquo;, &ldquo;unspecified&rdquo;, &ldquo;missing&rdquo;, &ldquo;other&rdquo;, &quot; &ldquo;,&hellip;), and it
+prevents misspellings (&ldquo;sagital&rdquo; instead of &ldquo;sagittal&rdquo;) and typos.</p>
+<h6 id="span-iddata_portability_and_standardization-classmw-headlinedata-portability-and-standardizationspan"><span id="Data_Portability_and_Standardization" class="mw-headline">Data Portability and Standardization</span></h6>
+<p>If you are studying developmental processes and you use the Gene
+Ontology&rsquo;s <em>biological process</em> terms then your data can be easily
+shared <em>and integrated</em> with data from other researchers. If you create
+your set of terms or just enter free text (egads!), then it will require
+a lot of human intervention to convert your data to a standard
+nomenclature so it can be integrated with others.</p>
+<p>Using an established ontology when one exists usually involves some
+compromises, but it greatly increases the usability of your data to
+others (and to yourself).</p>
+<h6 id="span-idcomplexity-classmw-headlinecomplexityspan"><span id="Complexity" class="mw-headline">Complexity</span></h6>
+<p>Controlled vocabularies are not particularly complex - they are just
+lists of terms. Ontologies, however, can be very complex, as shown by
+the GO example above. This complexity could be ignored. You could, for
+example, convert GO to a controlled vocabulary - a very long list of
+terms. You would still have data integrity and portability, and it
+wouldn&rsquo;t be as complex.</p>
+<p>It also would not be as powerful. Ontologies support reasoning about the
+terms in them and this can be very useful. With GO, for example, you can
+ask</p>
+<p>Show me all genes involved in <em>anatomical structure development</em></p>
+<p>and get back genes directly tagged with <em>anatomical structure
+development</em>, plus any genes tagged with any of that term&rsquo;s sub-terms,
+from <em>organ development</em> to <em>regulation of skeletal muscle
+regeneration</em>. If you convert GO to just a list of terms, you can no
+longer answer that question.</p>
+<p>The Chado CV Module supports such complex queries with ontologies by
+pre-calculating the <em><a href="../Chado_CV_Module#Transitive_Closure" title="Chado CV Module">transitive
+closure</a></em> of
+all terms in an ontology. There is a great explanation of transitive
+closure on the <a href="../Chado_CV_Module#Transitive_Closure" title="Chado CV Module">Chado CV Module
+page</a>. Also see
+the description of these 3 tables:</p>
+<ul>
+<li><a href="../Chado_CV_Module#Table:_cvterm" title="Chado CV Module">cvterm</a></li>
+<li><a href="../Chado_CV_Module#Table:_cvterm_relationship" title="Chado CV Module">cvterm_relationship</a></li>
+<li><a href="../Chado_CV_Module#Table:_cvtermpath" title="Chado CV Module">cvtermpath</a></li>
+</ul>
+<p>We won&rsquo;t go into any more detail on it here.</p>
+<h4 id="span-idopening_our_sample_database-classmw-headlineopening-our-sample-databasespan"><span id="Opening_our_sample_database" class="mw-headline">Opening our sample database</span></h4>
+<pre><code>$ psql chado
+</code></pre>
+<h4 id="span-idour_first_example_query-classmw-headlineour-first-example-queryspan"><span id="Our_first_example_query" class="mw-headline">Our first example query</span></h4>
+<p>Up to this point we&rsquo;ve seen how to store features using the feature
+table as well as rigidly define what types of things they are using the
+cv module tables. Here is an SQL example of how to query some very basic
+information about all gene features in our database:</p>
+<pre tabindex="0"><code class="language-de1" data-lang="de1"> SELECT gene.feature_id, gene.uniquename, gene.name
+   FROM feature gene
+        JOIN cvterm c ON gene.type_id = c.cvterm_id
+  WHERE c.name = &#39;gene&#39; AND organism_id = 12;
+</code></pre><p>This should return something like:</p>
+<pre><code> feature_id |                   uniquename                   |                      name
+------------+------------------------------------------------+------------------------------------------------
+        405 | maker-scf1117875582023-snap-gene-0.0           | maker-scf1117875582023-snap-gene-0.0
+        409 | maker-scf1117875582023-snap-gene-0.3           | maker-scf1117875582023-snap-gene-0.3
+        415 | genemark-scf1117875582023-abinit-gene-0.42     | genemark-scf1117875582023-abinit-gene-0.42
+       1011 | maker-scf1117875582023-snap-gene-1.0           | maker-scf1117875582023-snap-gene-1.0
+       1018 | maker-scf1117875582023-snap-gene-1.4           | maker-scf1117875582023-snap-gene-1.4
+       1022 | maker-scf1117875582023-snap-gene-1.1           | maker-scf1117875582023-snap-gene-1.1
+       1027 | maker-scf1117875582023-snap-gene-1.2           | maker-scf1117875582023-snap-gene-1.2
+       1032 | maker-scf1117875582023-snap-gene-1.7           | maker-scf1117875582023-snap-gene-1.7
+       1038 | maker-scf1117875582023-snap-gene-1.5           | maker-scf1117875582023-snap-gene-1.5
+       1698 | snap_masked-scf1117875582023-abinit-gene-2.4   | snap_masked-scf1117875582023-abinit-gene-2.4
+...
+</code></pre>
+<p>Type <code>q</code> to escape the listing.</p>
+<p>Lists of things are great, but we&rsquo;re going to need to do a lot more with
+our genomic data than keep lists of features. First, we need to be able
+to identify them properly. This may seem straightforward, but creating
+one column per ID type in feature would be a bad idea, since any given
+feature could have dozens of different identifiers from different data
+sources. The General Module helps resolve this.</p>
+<h4 id="span-idgeneral_module-classmw-headlinegeneral-modulespan"><span id="General_Module" class="mw-headline">General Module</span></h4>
+<p>The General module is about identifying things within this DB to the
+outside world, and identifying things from the outside world (i.e.,
+other databases) within this database.</p>
+<h5 id="span-idids-classmw-headlineidsspan"><span id="IDs" class="mw-headline">IDs</span></h5>
+<p><a href="../Chado_General_Module" title="Chado General Module">General module tables</a></p>
+<p>Biological databases have <em>public</em> and <em>private</em> IDs and they are
+usually different things.</p>
+<h6 id="span-idpublic_ids-classmw-headlinepublic-idsspan"><span id="Public_IDs" class="mw-headline">Public IDs</span></h6>
+<p>These are shown on web pages and in publications. These are also known
+as <em>accession numbers</em>.</p>
+<table>
+<thead>
+<tr>
+<th>GO + 0043565 = GO:0043565</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InterPro + IPR001356 = InterPro:IPR001356</td>
+</tr>
+<tr>
+<td>YourDB + whatever = YourDB:whatever</td>
+</tr>
+</tbody>
+</table>
+<p>Public IDs tend to be <em>alternate keys</em> inside the database: they do
+uniquely identify objects in the database.</p>
+<h6 id="span-idprivate_ids-classmw-headlineprivate-idsspan"><span id="Private_IDs" class="mw-headline">Private IDs</span></h6>
+<p>These are used inside the database and are not meant to be shown or
+published. Tend to be long integers. There are many more private IDs
+than public IDs.</p>
+<p>Private IDs are used for <em>primary keys</em> and <em>foreign keys</em>.</p>
+<p>Most DBMSs have built-in mechanisms for generating private IDs.</p>
+<h5 id="span-idids_in_chado-classmw-headlineids-in-chadospan"><span id="IDs_in_Chado" class="mw-headline">IDs in Chado</span></h5>
+<p>The <a href="../Chado_General_Module" title="Chado General Module">General module</a>
+defines <em>public</em> IDs of</p>
+<ul>
+<li>items defined in this databases, and</li>
+<li>items defined in other databases, that are used or referenced in this
+database.</li>
+</ul>
+<p>In fact, those two classes of IDs are defined in exactly the same way,
+in the <a
+href="http://gmod.org/Chado_General_Module#Table:_dbxref"
+class="external text" rel="nofollow">dbxref table</a>.</p>
+<p>In Chado every table (in every module) defines its own private IDs.</p>
+<h4 id="span-idproperties-classmw-headlinepropertiesspan"><span id="Properties" class="mw-headline">Properties</span></h4>
+<p>So far we&rsquo;ve only seen very basic information for each feature stored.
+Because the feature table was designed to be very generic and store all
+feature types, attributes specific to only some types can&rsquo;t be stored
+there. It wouldn&rsquo;t make sense, for example, to have a column called
+&lsquo;gene_product_name&rsquo;, since that column would be empty for all the
+features, like chromosomes, that aren&rsquo;t gene products.</p>
+<p>These feature-specific attributes are known as &lsquo;properties&rsquo; of a feature
+in Chado. They are stored in a table called <a
+href="Chado_Sequence_Module#Table:_featureprop"
+class="external text" rel="nofollow">featureprop</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Table: featureprop</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>featureprop_id</td>
+<td>feature_id</td>
+<td>type_id</td>
+<td>value</td>
+<td>rank</td>
+</tr>
+</tbody>
+</table>
+<p>You may have noticed that the featureprop table shares a &rsquo;type_id&rsquo;
+column with the feature table. Properties of features are typed
+according to a controlled vocabulary just as the features themselves
+are. This helps to ensure that anyone using the same vocabularies are
+encoding their property assertions in the same way.</p>
+<p>Using feature properties we can now describe our features as richly as
+needed, but our features are still independent of one another. Because
+many of the features we&rsquo;re storing have some sort of relationship to one
+another (such as genes and their polypeptide end-products), our schema
+needs to accommodate this.</p>
+<h5 id="span-idrelationships-classmw-headlinerelationshipsspan"><span id="Relationships" class="mw-headline">Relationships</span></h5>
+<p>Relationships between features are stored in the <a
+href="Chado_Sequence_Module#Table:_feature_relationship"
+class="external text" rel="nofollow">feature_relationship table</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Table: feature_relationship</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feature_relationship_id</td>
+<td>subject_id</td>
+<td>object_id</td>
+<td>type_id</td>
+<td>rank</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>Features can be arranged in graphs, e.g. &ldquo;exon <em>part_of</em> transcript
+<em>part_of</em> gene&rdquo;; If type is thought of as a verb, then each arc or edge
+makes a statement:</p>
+<ul>
+<li>Subject <em>verb</em> Object, or</li>
+<li>Child <em>verb</em> Parent, or</li>
+<li>Contained <em>verb</em> Container, or</li>
+<li>Subfeature <em>verb</em> Feature</li>
+</ul>
+<p>Again, notice the use of controlled vocabularies (type_id) to define the
+relationship between features.</p>
+<p>One might think of a relationship between a gene and chromosome as
+&rsquo;located_on&rsquo;, and store that as a feature_relationship entry between the
+two. If you did, pat yourself on the back for Chado-ish thinking, but
+there&rsquo;s a better way to handle locatable features, since a relationship
+entry alone wouldn&rsquo;t actually say WHERE the feature was located, only
+that it was.</p>
+<h5 id="span-idlocations-classmw-headlinelocationsspan"><span id="Locations" class="mw-headline">Locations</span></h5>
+<p>Location describes where a feature is/comes from relative to another
+feature. Some features such as chromosomes are not localized in sequence
+coordinates, though contigs/assemblies which make up the chromosomes
+could be.</p>
+<p>Locations are stored in the <a
+href="Chado_Sequence_Module#Table:_featureloc"
+class="external text" rel="nofollow">featureloc table</a>, and a feature
+can have zero or more featureloc records. Features will have either</p>
+<ul>
+<li>one featureloc record, for localized features for which the location
+is known, or</li>
+<li>zero featureloc records, for unlocalized features such as chromosomes,
+or for features for which the location is not yet known, such as a
+gene discovered using classical genetics techniques.</li>
+<li>Features with multiple featurelocs are explained below.</li>
+</ul>
+<p>(For a good explanation of how features are located in Chado see <a
+href="Chado_Sequence_Module#Feature_Locations"
+class="external text" rel="nofollow">Feature Locations</a>. This
+explanation is excerpted from that.)</p>
+<h6 id="span-idinterbase_coordinates-classmw-headlineinterbase-coordinatesspan"><span id="Interbase_Coordinates" class="mw-headline">Interbase Coordinates</span></h6>
+<p>This is covered in more detail on the <a href="../Introduction_to_Chado#Interbase_Coordinates" title="Introduction to Chado">GMOD web
+site</a>.</p>
+<p><a href="../File:Interbase.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a0/Interbase.png" width="352" height="296"
+alt="Interbase.png" /></a></p>
+<p>A featureloc record specifies an interval in <em>interbase sequence
+coordinates</em>, bounded by the fmin and fmax columns, each representing
+the lower and upper linear position of the <em>boundary</em> between bases or
+base pairs (with directionality indicated by the strand column).</p>
+<p>Interbase coordinates were chosen over the base-oriented coordinate
+system because the math is easier, and it cleanly supports zero-length
+features such as splice sites and insertion points.</p>
+<h6 id="span-idlocation_chains-classmw-headlinelocation-chainsspan"><span id="Location_Chains" class="mw-headline">Location Chains</span></h6>
+<p>Chado supports <em>location chains</em>. For example, locating an exon relative
+to a contig that is itself localized relative to a chromosome. The
+majority of Chado instances will not require this flexibility; features
+are typically located relative to chromosomes or chromosomes arms.</p>
+<p>The ability to store such localization networks or location graphs can
+be useful for unfinished genomes or parts of genomes such as
+heterochromatin, in which it is desirable to locate features relative to
+stable contigs or scaffolds, which are themselves localized in an
+unstable assembly to chromosomes or chromosome arms.</p>
+<p>Localization chains do not necessarily only span assemblies - protein
+domains may be localized relative to polypeptide features, themselves
+localized to a transcript (or to the genome, as is more common). Chains
+may also span sequence alignments.</p>
+<h6 id="span-idfeatureloc_table-classmw-headlinefeatureloc-tablespan"><span id="featureloc_Table" class="mw-headline">featureloc Table</span></h6>
+<p>Feature location information is stored in the <a
+href="Chado_Sequence_Module#Table:_featureloc"
+class="external text" rel="nofollow">featureloc table</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Table: featureloc</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>featureloc_id</td>
+<td>feature_id</td>
+<td>srcfeature_id</td>
+<td>fmin</td>
+<td>rank</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="span-idexample_gene-classmw-headlineexample-genespan"><span id="Example:_Gene" class="mw-headline">Example: Gene</span></h5>
+<p><strong>Note:</strong> This example and some of the figures are extracted from
+<em><a href="Image:A_Chado_Case_Study.pdf"
+class="external text" rel="nofollow">A Chado case study: an
+ontology-based modular schema for representing genome-associated
+biological information</a></em>, by Christopher J. Mungall, David B. Emmert,
+and the FlyBase Consortium (2007)</p>
+<p>How is a &ldquo;central dogma&rdquo; gene represented in Chado?</p>
+<p><a href="../File:CentralDogma.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/CentralDogma.png" width="347"
+height="370" alt="CentralDogma.png" /></a></p>
+<p>How do we represent these exons, mRNAs, proteins, and there
+relationships between them?</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><table class="wikitable">
+<thead>
+<tr class="header">
+<th colspan="6">Table: feature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th>feature _id</th>
+<th>name</th>
+<th>uniquename</th>
+<th>type_id</th>
+<th>is_ analysis</th>
+<th></th>
+</tr>
+&#10;<tr class="odd">
+<td>10456</td>
+<td>exon 1</td>
+<td>genex_exon1</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10457</td>
+<td>exon 2</td>
+<td>genex_exon2</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10458</td>
+<td>exon 3</td>
+<td>genex_exon3</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10459</td>
+<td>exon 4</td>
+<td>genex_exon4</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10460</td>
+<td>exon 5</td>
+<td>genex_exon5</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10461</td>
+<td>exon 6</td>
+<td>genex_exon6</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10462</td>
+<td>exon 7</td>
+<td>genex_exon7</td>
+<td>(exon)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10463</td>
+<td>mRNA-A</td>
+<td>genex_mRNA-A</td>
+<td>(mRNA)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10464</td>
+<td>mRNA-B</td>
+<td>genex_mRNA-B</td>
+<td>(mRNA)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10465</td>
+<td>protein-p2</td>
+<td>genex_protein-p2</td>
+<td>(polypeptide)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10466</td>
+<td>protein-p1</td>
+<td>genex_protein-p1</td>
+<td>(polypeptide)</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10467</td>
+<td>gene X</td>
+<td>genex</td>
+<td>(polypeptide)</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table></td>
+<td><table class="wikitable">
+<thead>
+<tr class="header">
+<th colspan="6">Table: feature_relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th>feature_ relationship _id</th>
+<th>subject_id</th>
+<th>object_id</th>
+<th>type_id</th>
+<th>rank</th>
+<th></th>
+</tr>
+&#10;<tr class="odd">
+<td>589</td>
+<td>(exon 1)</td>
+<td>(mRNA-A)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>590</td>
+<td>(exon 2)</td>
+<td>(mRNA-A)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>591</td>
+<td>(exon 3)</td>
+<td>(mRNA-A)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>592</td>
+<td>(exon 4)</td>
+<td>(mRNA-A)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>593</td>
+<td>(exon 5)</td>
+<td>(mRNA-A)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>594</td>
+<td>(exon 2)</td>
+<td>(mRNA-B)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>595</td>
+<td>(exon 4)</td>
+<td>(mRNA-B)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>596</td>
+<td>(exon 6)</td>
+<td>(mRNA-B)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>597</td>
+<td>(exon 7)</td>
+<td>(mRNA-B)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>598</td>
+<td>(protein-p2)</td>
+<td>(mRNA-A)</td>
+<td>(derives_from)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>599</td>
+<td>(protein-p1)</td>
+<td>(mRNA-B)</td>
+<td>(derives_from)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>600</td>
+<td>(mRNA-A)</td>
+<td>(gene X)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>601</td>
+<td>(mRNA-B)</td>
+<td>(gene X)</td>
+<td>(part_of)</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<h5 id="span-idexample_computational_analysis-classmw-headlineexample-computational-analysisspan"><span id="Example:_Computational_Analysis" class="mw-headline">Example: Computational Analysis</span></h5>
+<p><strong>Note:</strong> This is example is based on an example by Scott Cain from an
+earlier <a
+href="Image:ChadoWorkshopArthopod2008.pdf"
+class="external text" rel="nofollow">Chado workshop</a>.</p>
+<p>You can store the results of computational analysis such as BLAST or
+BLAT runs in the sequence module. Here&rsquo;s an example of you could store a
+BLAST highest scoring pair (HSP) result.</p>
+<p>With HSP results there are two reference sequences, which means two
+entries in the featureloc table. (The analysis and analysisfeature
+tables, in the Companalysis module, are used to store information about
+how the analysis was done and what scores resulted.)</p>
+<p><a href="../File:CompAnalysisFeature.png" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/CompAnalysisFeature.png" width="615"
+height="322" alt="CompAnalysisFeature.png" /></a></p>
+<p>Every horizontal line becomes a record in the feature table, and every
+vertical line becomes a record in the feature_relationship table.</p>
+<h5 id="span-idother_feature_annotations-classmw-headlineother-feature-annotationsspan"><span id="Other_Feature_Annotations" class="mw-headline">Other Feature Annotations</span></h5>
+<p>Link to any feature via <a
+href="Chado_Sequence_Module#Table:_feature"
+class="external text" rel="nofollow">feature_id</a>:</p>
+<ul>
+<li>GO terms in <a
+href="Chado_Sequence_Module#Table:_feature_cvterm"
+class="external text" rel="nofollow">feature_cvterm</a></li>
+<li>DB links in <a
+href="Chado_Sequence_Module#Table:_feature_dbxref"
+class="external text" rel="nofollow">feature_dbxref</a></li>
+<li>Miscellaneous features in <a
+href="Chado_Sequence_Module#Table:_featureprop"
+class="external text" rel="nofollow">featureprop</a></li>
+<li>Attribution in <a
+href="Chado_Sequence_Module#Table:_feature_pub"
+class="external text" rel="nofollow">feature_pub</a></li>
+</ul>
+<h5 id="span-idextending_chado_properties_tables_and_new_modules-classmw-headlineextending-chado-properties-tables-and-new-modulesspan"><span id="Extending_Chado:_Properties_tables_and_new_modules" class="mw-headline">Extending Chado: Properties tables and new modules</span></h5>
+<p>Chado was built to be easily extensible. New functionality can be added
+by adding new modules. Both the Mage and the Stock modules were added
+after Chado had been out for a while. They both addressed needs that
+were either not addressed, or were inadequately addressed in the
+original release.</p>
+<p>Chado can be tailored to an individual organization&rsquo;s needs by using
+<em>property tables</em>. Property tables are a means to virtually add new
+columns without having to modify the schema. Property tables are
+included in many modules.</p>
+<p>Property tables are incredibly flexible, and they do make Chado
+extremely extensible, but they do so at a cost.</p>
+<ul>
+<li>The SQL to get attributes from property tables is much more complex,
+and</li>
+<li>It is more work to enforce constraints on data in properties tables
+then in regular columns.</li>
+</ul>
+<h2 id="span-idpractice-classmw-headlinepracticespan"><span id="Practice" class="mw-headline">Practice</span></h2>
+<h3 id="span-idprerequisites-classmw-headlineprerequisitesspan"><span id="Prerequisites" class="mw-headline">Prerequisites</span></h3>
+<p>Using data from <a href="../MAKER.1" title="MAKER">MAKER</a>.</p>
+<h4 id="span-idpostgresql-classmw-headlinepostgresqlspan"><span id="PostgreSQL" class="mw-headline">PostgreSQL</span></h4>
+<p>Already installed PostgreSQL 8.4 via apt-get.</p>
+<h5 id="span-idedit_config_files-classmw-headlineedit-config-filesspan"><span id="Edit_config_files" class="mw-headline">Edit config files</span></h5>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  sudo su
+  cd /etc/postgresql/9.1/main/
+  less pg_hba.conf
+</code></pre><p>At the bottom of the file, we&rsquo;ve already changed <code>ident sameuser</code> to
+<code>trust</code>. This means that anyone who is on the local machine is allowed
+to connect to any database. If you want to allow people to connect from
+other machines, their IP address or a combo of IP address and netmasks
+can be used to allow remote access.</p>
+<p>If we&rsquo;d have edited the pg_hba.conf file, we&rsquo;d have to (re)start the
+database server:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  /etc/init.d/postgresql restart
+  exit # to get out of su
+</code></pre><h5 id="span-idcreate_a_gmod_user-classmw-headlinecreate-a-gmod-userspan"><span id="Create_a_gmod_user" class="mw-headline">Create a gmod user</span></h5>
+<p>Normally, we&rsquo;d have to switch to the postgres user to create a new
+database user, but the ubuntu user is already a superuser. Create a new
+user named &ldquo;gmod&rdquo;:</p>
+<pre><code>  createuser gmod
+    Shall the new role be a superuser? (y/n) y
+</code></pre>
+<h5 id="span-idinstalling_dbixdbstag_by_hand-classmw-headlineinstalling-a-hrefhttpsearchcpanorgperldocdbixdbstag"><span id="Installing_DBIx::DBStag_by_hand" class="mw-headline">Installing &lt;a href=&ldquo;<a href="http://search.cpan.org/perldoc?DBIx::DBStag%22">http://search.cpan.org/perldoc?DBIx::DBStag&quot;</a></h5>
+<p>class=&ldquo;external text&rdquo; rel=&ldquo;nofollow&rdquo;&gt;DBIx::DBStag</a> by hand</span></p>
+<p>In the previous course, this was installed by hand, and then in a
+subsequent course it was pre-installed; now were back to installing it by
+hand. It is moderately tricky, because it is difficult to install by
+CPAN when using <code>sudo cpan</code> but is easy to install &ldquo;by hand&rdquo; or using
+<code>cpan</code>.</p>
+<pre><code> createdb test
+ cpan
+ cpan&gt; force install DBIx::DBStag
+</code></pre>
+<h4 id="span-idbioperl-classmw-headlinebioperlbioperl-bioperlspan"><span id="BioPerl" class="mw-headline"><a href="../BioPerl" title="BioPerl">BioPerl</a></span></h4>
+<p>Version 1.6 already installed.</p>
+<h4 id="span-idlet27s_go21-classmw-headlinelets-gospan"><span id="Let.27s_Go.21" class="mw-headline">Let&rsquo;s Go!</span></h4>
+<h4 id="span-idenvironment_variables-classmw-headlineenvironment-variablesspan"><span id="Environment_Variables" class="mw-headline">Environment Variables</span></h4>
+<p>in <code>~/.bashrc</code> add:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  GMOD_ROOT=&#39;/usr/local/gmod&#39;
+  export GMOD_ROOT
+</code></pre><p>and source the profile:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  source ~/.bashrc
+</code></pre><h3 id="span-idinstalling_chado-classmw-headlineinstalling-chadospan"><span id="Installing_Chado" class="mw-headline">Installing Chado</span></h3>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  cd ~/sources/chado/chado/
+  perl Makefile.PL
+</code></pre><pre><code> Use values in '/home/ubuntu/chado/chado/build.conf'? [Y] n
+</code></pre>
+<p>This allows you to specify Pythium when you are asked for a default
+organism.</p>
+<pre><code> &gt; &quot;chado&quot; for database name
+ &gt; &quot;gmod&quot; for database username
+ &gt; &quot;Pythium&quot; for the default organism
+ &gt; &quot;public&quot; for the schema Chado will reside in
+</code></pre>
+<p>Just hit enter when it asks for a password for user gmod.</p>
+<p>This <code>Makefile.PL</code> does quite a bit of stuff to get the installation
+ready. Among other things it:</p>
+<ul>
+<li>Sets up a variety of database user parameters</li>
+<li>Prepares the SQL files for installation</li>
+<li>It can rebuild <a href="http://search.cpan.org/perldoc?Class::DBI"
+class="external text" rel="nofollow">Class::DBI</a> api for
+<a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, but
+isn&rsquo;t now (they are prebuilt for the default schema)</li>
+<li>All the &rsquo;normal&rsquo; stuff that would happen when running <code>Makefile.PL</code>,
+like copying <code>lib</code> and <code>bin</code> files to be ready for installation</li>
+</ul>
+<!-- -->
+<pre><code> make
+ sudo make install
+ make load_schema
+ make prepdb
+</code></pre>
+<p>At this point, the installer checks the database to see if the organism
+we put in as our default organism is present in the database. Since it
+isn&rsquo;t, it will ask us to add it. It does this by automatically executing
+a script that comes with Chado, gmod_add_organism.pl. You can execute
+this script any time you want to <a href="../Load_GFF_Into_Chado#Add_an_Entry_for_Your_Organism" title="Load GFF Into Chado">add organisms to your
+database</a>:</p>
+<pre><code> Adding Pythium to the database...
+
+ Both genus and species are required; please provide them below
+
+ Organism's genus?  Pythium
+ Organism's species?  ultimum
+ Organism's abbreviation? [P.ultimum]
+ Comment (can be empty)?
+</code></pre>
+<p>Continuing on&hellip;</p>
+<pre><code> make ontologies
+ Available ontologies:
+ [1] Relationship Ontology
+ [2] Sequence Ontology
+ [3] Gene Ontology
+ [4] Chado Feature Properties
+ [5] Plant Ontology
+
+ Which ontologies would you like to load (Comma delimited)? [0]  1,2,4
+</code></pre>
+<p>You can pick any ontologies you want, but GO will take over an hour to
+install, and it doesn&rsquo;t matter to much what you pick, because we are
+going to be blowing this database away soon anyway.</p>
+<h4 id="span-idsaving_your_progress_to_this_point-classmw-headlinesaving-your-progress-to-this-pointspan"><span id="Saving_your_progress_to_this_point" class="mw-headline">Saving your progress to this point</span></h4>
+<p>It is generally a good idea to save your progress when you are done
+loading ontologies before you&rsquo;ve attempted to load any other data. That
+way, if something goes wrong, it is very easy to restore to this point.
+To make a db dump, do this:</p>
+<pre><code> pg_dump chado | bzip2 -c --best &gt; db_w_ontologies.bz2
+</code></pre>
+<p>The <code>-c</code> tells <code>bzip2</code> to take input on standard in and spit it out on
+<code>stdout</code>. To restore from a dump, drop and recreate the database and
+then uncompress the dump into it, like this:</p>
+<pre tabindex="0"><code class="language-dont" data-lang="dont">  dropdb chado
+  createdb chado
+  bzip2 -dc db_w_ontologies.bz2 | psql chado
+</code></pre><h4 id="span-ida_note_about_redos-classmw-headlinea-note-about-redosspan"><span id="A_Note_about_Redos" class="mw-headline">A Note about Redos</span></h4>
+<p>If at some point you feel like you want to rebuild your database from
+scratch, you need to get rid of the temporary directory where ontology
+files are stored. You can either do this with <code>rm -rf ./tmp</code> <strong>(be very
+careful about that <code>./</code> in front of <code>tmp</code>)</strong> or with a make target that
+was designed for this: <code>make rm_locks</code>, which only gets rid of the lock
+files but leaves the ontology files in place.</p>
+<h3 id="span-idpreparing_gff_data_for_loading-classmw-headlinepreparing-gffgff-gff-data-for-loadingspan"><span id="Preparing_GFF_data_for_loading" class="mw-headline">Preparing <a href="../GFF" title="GFF">GFF</a> data for loading</span></h3>
+<p>Issues:</p>
+<ul>
+<li>splitting &lsquo;annotations&rsquo; from &lsquo;computational analysis&rsquo;</li>
+<li>very large files</li>
+<li>fasta → gff</li>
+<li>utility scripts for various preparation activities</li>
+</ul>
+<h4 id="span-idworking_with_large_gff_files-classmw-headlineworking-with-large-gffgff-gff-filesspan"><span id="Working_with_Large_GFF_files" class="mw-headline">Working with Large <a href="../GFF" title="GFF">GFF</a> files</span></h4>
+<p>Large files (more than 3-500,000 rows) can cause headaches for the
+<a href="../GFF3" title="GFF3">GFF3</a> bulk loader, but genome annotation GFF3 files can
+frequently be millions of lines. What to do? The script
+<code>gmod_gff3_preprocessor.pl</code> will help with this, both by splitting the
+files in to reasonable size chunks and sorting the output so that it
+make sense.</p>
+<p>Note that if your files are already sorted (and in this case, that means
+that all parent features come before their child features and lines that
+share IDs (like CDSes sometimes do) are together), then all you need to
+do is split your files. Frequently files are already sorted and avoiding
+sorting is good for two reasons:</p>
+<ol>
+<li>It takes a long time to do the sort compared to the split (it parses
+every line, loads it into temporary tables and pulls out lines via
+query to rebuild the GFF file)</li>
+<li>The sorting process makes it more difficult to read the resulting
+GFF, since the parent feature will no longer be near the child
+features in the GFF file. Chado doesn&rsquo;t care about that but you
+might.</li>
+</ol>
+<h4 id="span-idloading_gff3-classmw-headlineloading-gff3gff3-gff3span"><span id="Loading_GFF3" class="mw-headline">Loading <a href="../GFF3" title="GFF3">GFF3</a></span></h4>
+<p>Working with the large number of files that come out of the preprocessor
+can be a bit of a headache, so I&rsquo;ve &lsquo;developed&rsquo; a few tricks. Basically,
+I make a bash script that will execute all of the loads at once. The
+easy way (for me) to do this is:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  ls *.gff3 &gt; load.sh
+  vi load.sh
+</code></pre><p>and then use vim regex goodness to write the loader commands into every
+line of the file:</p>
+<pre><code> :% s/^/gmod_bulk_load_gff3.pl --analysis -g /
+</code></pre>
+<p>which puts the command at the beginning every line. The <code>--analysis</code>
+tells the loader that it is working with analysis results, so the scores
+need to be store in the companalysis module. While the genes file are
+not really analysis results, I faked them to look like FgenesH results
+so that Apollo would have something to work with. Then I manually edit
+the file to add and remove the few modifications I need:</p>
+<ul>
+<li>Add <code>--noexon</code> to the genes file (since it contains both CDS and exon
+features, I don&rsquo;t want the loader to create exon features from CDS
+features).</li>
+</ul>
+<p>Then I add <code>#!/bin/bash</code> at the top of the file (which isn&rsquo;t actually
+needed) and run</p>
+<pre><code> bash load.sh
+</code></pre>
+<p>and it loads all of the files sequentially. I have done this with 60-70
+files at a time, letting the loader run for a few days(!)</p>
+<h4 id="span-idcapturing_the_output_to_check_for_problems-classmw-headlinecapturing-the-output-to-check-for-problemsspan"><span id="Capturing_the_output_to_check_for_problems" class="mw-headline">Capturing the output to check for problems</span></h4>
+<p>If you are going to let a load run a very long time, you probably should
+capture the output to check for problems. There are two ways to do this:</p>
+<ul>
+<li>
+<p>run inside the <code>screen</code> command:</p>
+<p>screen -S loader</p>
+</li>
+</ul>
+<p>which creates a new &lsquo;screen&rsquo; separate from your login. Then execute the
+load command in the screen. To exit the screen but let your load command
+continue running in it, type <code>ctrl-a</code> followed by a <code>d</code> (to detach) and
+you get your original terminal back. To reconnect to the loader screen,
+type</p>
+<pre><code> screen -R loader
+</code></pre>
+<ul>
+<li>capture <code>stdout</code> and <code>stderr</code> to a file</li>
+</ul>
+<p>When you run the load command, you can use redirection to collect the
+<code>stdout</code> and <code>stderr</code> to a file:</p>
+<pre><code> bash load.sh &gt;&amp; load.output
+</code></pre>
+<h4 id="span-idreally_loading_data-classmw-headlinereally-loading-dataspan"><span id="Really_loading_data" class="mw-headline">Really loading data</span></h4>
+<p>OK, let&rsquo;s put the data into chado:</p>
+<pre tabindex="0"><code class="language-enter" data-lang="enter">  gmod_bulk_load_gff3.pl -g /home/ubuntu/sources/pyu_data/scf1117875582023.gff
+</code></pre><p>This should not work (yet!)</p>
+<h5 id="span-idtry_again-classmw-headlinetry-againspan"><span id="Try_again" class="mw-headline">Try again</span></h5>
+<p>Doh! The loader is trying to tell us that this looks like analysis data
+(that is, data produced by computer rather than humans).</p>
+<p>We need to tell the loader that it is in fact analysis results:</p>
+<pre><code> gmod_bulk_load_gff3.pl --analysis -g /home/ubuntu/sources/pyu_data/scf1117875582023.gff
+</code></pre>
+<p><span style="font-size:120%">Kill, <em>kill</em>, <strong>kill!</strong> (ctrl-c)</span> the
+load as soon as you see this message:</p>
+<pre><code>There are both CDS and exon features in this file, but
+you did not set the --noexon option, which you probably want.
+Please see `perldoc gmod_bulk_load_gff3.pl for more information.
+</code></pre>
+<p>Argh! Now the loader is pointing out that this <a href="../GFF" title="GFF">GFF</a> file
+has both exons and CDS features and Chado prefers something a little
+different. While the loader will load this data as written, it won&rsquo;t be
+&ldquo;standard.&rdquo; Instead, we&rsquo;ll add the <code>--noexon</code> option (which tells the
+loader not to create exon features from the CDS features, since we
+already have them). One (at least) more time:</p>
+<pre><code> gmod_bulk_load_gff3.pl --noexon --analysis -g /home/ubuntu/sources/pyu_data/scf1117875582023.gff
+</code></pre>
+<p>Success! (Probably.) If this failed, when rerun, we may need the
+<code>--recreate_cache</code> option, which recreates a &ldquo;temporary&rdquo; table that the
+loader uses to keep track of IDs.</p>
+<h3 id="span-idloading_other_data-classmw-headlineloading-other-dataspan"><span id="Loading_other_data" class="mw-headline">Loading other data</span></h3>
+<p><a href="../Chado_XML" title="Chado XML">Chado XML</a> and <a href="../XORT.1" title="XORT">XORT</a>, but
+really, <a href="../Tripal.1" title="Tripal">Tripal</a> bulk file loader.</p>
+<h2 id="span-idchado_for_expression2c_genotype2c_phenotype2c_and_natural_diversity-classmw-headlinechado-for-expression-genotype-phenotype-and-natural-diversityspan"><span id="Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity" class="mw-headline">Chado for Expression, Genotype, Phenotype, and Natural Diversity</span></h2>
+<p>This section is about some of the lesser used Chado Modules.</p>
+<h3 id="span-idexpression-classmw-headlineexpressionspan"><span id="Expression" class="mw-headline">Expression</span></h3>
+<p>From an organism database point of view, expression is about turning
+this:</p>
+<table class="wikitable">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><a href="../File:ZfinGSC.jpg" class="image"><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/80/ZfinGSC.jpg/200px-ZfinGSC.jpg"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/80/ZfinGSC.jpg/300px-ZfinGSC.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/80/ZfinGSC.jpg/400px-ZfinGSC.jpg 2x"
+width="200" height="201" alt="ZfinGSC.jpg" /></a></td>
+<td>Fig. S5 Synergistic effect of zdia2 sMO and profilin I tMO. Embryos
+were injected with 8 ng zdia2 sMO (A and B) or co-injected with 4 ng
+zdia2 sMO and 4 ng profilin I tMO (C and D). Embryos were incubated
+until tail bud stage (10 hpf), fixed and stained with ntl and gsc
+riboprobe. Photographs were taken for side view (A and C) and dorsal
+view (B and D) after WISH.
+<p>From <a href="http://dx.doi.org/10.1371/journal.pone.0003439"
+class="external text" rel="nofollow">Lai <em>et al.</em>, 2008 -
+Diaphanous-related formin 2 and profilin I are required for gastrulation
+cell movements. PLoS One 3(10):e3439</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Into this:</p>
+<table>
+<thead>
+<tr>
+<th>Gene</th>
+<th>Fish</th>
+<th>Stage</th>
+<th>Anatomy</th>
+<th>Assay</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gsc</td>
+<td>wild type (unspecified), MO:diaph2,pfn1</td>
+<td>Bud</td>
+<td>prechordal plate</td>
+<td>ISH</td>
+</tr>
+<tr>
+<td>gsc</td>
+<td>wild type (unspecified), MO:diaph2</td>
+<td>Bud</td>
+<td>prechordal plate</td>
+<td>ISH</td>
+</tr>
+<tr>
+<td>ntla</td>
+<td>wild type (unspecified), MO:diaph2,pfn1</td>
+<td>Bud</td>
+<td>notochord</td>
+<td>ISH</td>
+</tr>
+<tr>
+<td>ntla</td>
+<td>wild type (unspecified), MO:diaph2,pfn1</td>
+<td>Bud</td>
+<td>tail bud</td>
+<td>ISH</td>
+</tr>
+<tr>
+<td>ntla</td>
+<td>wild type (unspecified), MO:diaph2</td>
+<td>Bud</td>
+<td>notochord</td>
+<td>ISH</td>
+</tr>
+<tr>
+<td>ntla</td>
+<td>wild type (unspecified), MO:diaph2</td>
+<td>Bud</td>
+<td>tail bud</td>
+<td>ISH</td>
+</tr>
+</tbody>
+</table>
+<p>| From <a
+href="http://zfin.org/cgi-bin/webdriver?MIval=aa-fxfigureview.apg&amp;OID=ZDB-FIG-081103-25"
+class="external text" rel="nofollow">ZFIN: Figure: <em>Lai et al.</em>,
+2008, Fig. S5</a> | | | | |</p>
+<h4 id="span-idwhat_defines_an_expression_pattern3f-classmw-headlinewhat-defines-an-expression-patternspan"><span id="What_defines_an_expression_pattern.3F" class="mw-headline">What defines an expression pattern?</span></h4>
+<p>Expression could include a lot of different things, and what it includes
+depends on the community:</p>
+<p>Gene, or Transcript, or Protein, or &hellip;<br>
+What are we measuring?</p>
+<p>Stage<br>
+Store single stages, or stage windows?</p>
+<p>What do stage windows or adjacent stages mean: throughout window, or we
+aren&rsquo;t sure on the stage (high-throughput)</p>
+<p>Strain / Genotype<br>
+What geneotype did we see this on.</p>
+<p>Anatomy<br>
+Does &ldquo;expressed in brain&rdquo; mean expressed in all, most, or somewhere in
+brain?</p>
+<p>Assay<br>
+ISN, antibody, probe, &hellip;</p>
+<p>Source<br>
+Publication, high-throughput screen, lab, project, &hellip;</p>
+<p>Genotype</p>
+<p>Environment</p>
+<p>Pattern<br>
+Do you want to keep track of homogeneous, graded, spotty</p>
+<p>Not Expressed<br>
+Do you keep track of absence? If so, what does it mean? (not <em>detected</em>)</p>
+<p>Image<br>
+Is an image required or optional?</p>
+<p>Strength<br>
+What do strengths mean across different experiments?</p>
+<h4 id="span-idhow_does_chado_deal_with_this_variety3f-classmw-headlinehow-does-chado-deal-with-this-varietyspan"><span id="How_does_Chado_deal_with_this_variety.3F" class="mw-headline">How does Chado deal with this variety?</span></h4>
+<p><em>Post-composition</em>, which is a very Chadoish way of doing things.</p>
+<ul>
+<li>Embrace a minimal definition of what an expression pattern is. In
+Chado, all that is required is a <em>name</em>, e.g., <em>SLC21A in GMOD Course
+Participant kidney after 4 days at NESCent</em>, or just &ldquo;GMOD0002347&rdquo;.</li>
+<li>You can also provide a description. If your name is &ldquo;GMOD0002347&rdquo;,
+this may be a good idea</li>
+<li>Details are then hung off that.</li>
+</ul>
+<h4 id="span-idflybase_example-classmw-headlineflybase-examplespan"><span id="FlyBase_Example" class="mw-headline">FlyBase Example</span></h4>
+<p>A specific example from FlyBase:</p>
+<p>Here is an example of a simple case of the sort of data that
+<a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a> curates.</p>
+<p>The <em>dpp</em> transcript is expressed in embryonic stage 13-15 in the
+cephalic segment as reported in a
+<a href="http://flybase.bio.indiana.edu/reports/FBrf0053806.html"
+class="external text" rel="nofollow">paper by Blackman <em>et al.</em>
+in 1991</a>.</p>
+<p>This would be implemented in the expression module by linking the <em>dpp</em>
+transcript feature to expression via
+<a href="../Chado_Tables#Table:_feature_expression" title="Chado Tables">feature_expression</a>.
+We would then link the following cvterms to the expression using
+<a href="#Table:_expression_cvterm">expression_cvterm</a>:</p>
+<ul>
+<li><em>embryonic stage 13</em> where the cvterm_type would be stage and the
+rank=0</li>
+<li><em>embryonic stage 14</em> where the cvterm_type would be stage and the
+rank=1</li>
+<li><em>embryonic stage 15</em> where the cvterm_type would be stage and the
+rank=1</li>
+<li><em>cephalic segment</em> where the cvterm_type would be anatomy and the
+rank=0</li>
+<li><em>in situ hybridization</em> where the cvterm_type would be assay and the
+rank=0</li>
+</ul>
+<p>Translation</p>
+<p>In FlyBase, this would be a single expression record, with 5 Ontology/CV
+terms attached to it.</p>
+<ul>
+<li>1 saying what anatomy the expression is for - <em>cephalic segment</em></li>
+<li>1 saying that the assay type was <em>in situ hybridization</em></li>
+<li>1 each for each of the 3 stages - <em>embryonic stages 13, 14, 15</em></li>
+</ul>
+<p>And</p>
+<ul>
+<li>1 record saying this expression pattern is for <em>dpp</em>.</li>
+<li>1 record saying this expression pattern is from
+<a href="http://flybase.bio.indiana.edu/reports/FBrf0053806.html"
+class="external text" rel="nofollow">Blackman <em>et al.</em> in
+1991</a>.</li>
+</ul>
+<h4 id="span-idchado_allows-classmw-headlinechado-allowsspan"><span id="Chado_Allows" class="mw-headline">Chado Allows</span></h4>
+<p>The Expression module table design allows each expression pattern to
+have</p>
+<ul>
+<li>1 name</li>
+<li>0, 1 or more
+<ul>
+<li>Publications / Sources</li>
+<li>Features</li>
+<li>Images</li>
+<li>Anatomy terms</li>
+<li>Stages</li>
+<li>Assay types</li>
+<li>Any other CV/Ontology term (e.g., detected, not detected)</li>
+</ul>
+</li>
+</ul>
+<p>Two Key Points</p>
+<ol>
+<li><strong>Chado can support whatever your community decides your definition
+of an expression pattern is.</strong></li>
+<li><strong>However, Chado will not enforce that definition for you.</strong></li>
+</ol>
+<p>If you require an expression pattern to have</p>
+<ul>
+<li>1 name</li>
+<li>1 publication/source</li>
+<li>1 Feature</li>
+<li>1 anatomy term</li>
+<li>1 stage</li>
+<li>1 assay type</li>
+<li>1 detected / not detected flag</li>
+<li>0, 1 or more images</li>
+</ul>
+<p>then you will have to write a script to check that.</p>
+<h4 id="span-idtable_expression-classmw-headlinetable-expressionspan"><span id="Table:_expression" class="mw-headline">Table: expression</span></h4>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>expression_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>md5checksum</td>
+<td>character(32)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>description</td>
+<td>text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>expression Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="#Table:_expression_cvterm">expression_cvterm</a>,
+<a href="../Chado_Tables#Table:_expression_image" title="Chado Tables">expression_image</a>,
+<a href="../Chado_Tables#Table:_expression_pub" title="Chado Tables">expression_pub</a>,
+<a href="../Chado_Tables#Table:_expressionprop" title="Chado Tables">expressionprop</a>,
+<a href="../Chado_Tables#Table:_feature_expression" title="Chado Tables">feature_expression</a>,
+<a href="../Chado_Tables#Table:_wwwuser_expression" title="Chado Tables">wwwuser_expression</a></li>
+</ul>
+<h4 id="span-idtable_expression_cvterm-classmw-headlinetable-expression_cvtermspan"><span id="Table:_expression_cvterm" class="mw-headline">Table: expression_cvterm</span></h4>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>expression_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="#Table:_expression">expression</a></td>
+<td>expression_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="../Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="../Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>cvterm_type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>expression_cvterm Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="../Chado_Tables#Table:_expression_cvtermprop" title="Chado Tables">expression_cvtermprop</a></li>
+</ul>
+<h3 id="span-idgenotype-classmw-headlinegenotypespan"><span id="Genotype" class="mw-headline">Genotype</span></h3>
+<p>Defined in the <a href="../Chado_Genetic_Module" title="Chado Genetic Module">Chado Genetic
+Module</a>.</p>
+<p>A <em>genotype</em> in Chado is basically a <em>name</em>, with a pile of <em>features</em>
+associated to it.</p>
+<p>This used to mean a set of alleles.</p>
+<p>Not sure how strains have been handled</p>
+<p>In the era of high-throughput sequencing, this may be much more
+detailed.</p>
+<h4 id="span-idtable_genotype-classmw-headlinetable-genotypespan"><span id="Table:_genotype" class="mw-headline">Table: genotype</span></h4>
+<p>Genetic context. A genotype is defined by a collection of features,
+mutations, balancers, deficiencies, haplotype blocks, or engineered
+constructs.</p>
+<table class="wikitable">
+<caption>genotype Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+Optional alternative name for a genotype, for display purposes.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE NOT NULL</em><br />
+<br />
+The unique name for a genotype; typically derived from the features
+making up the genotype.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>description</td>
+<td>character varying(255)</td>
+<td><em></em></td>
+</tr>
+</tbody>
+</table>
+<p>genotype Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="../Chado_Tables#Table:_feature_genotype" title="Chado Tables">feature_genotype</a>,
+<a href="../Chado_Tables#Table:_phendesc" title="Chado Tables">phendesc</a>,
+<a href="../Chado_Tables#Table:_phenotype_comparison" title="Chado Tables">phenotype_comparison</a>,
+<a href="../Chado_Tables#Table:_phenstatement" title="Chado Tables">phenstatement</a>,
+<a href="../Chado_Tables#Table:_stock_genotype" title="Chado Tables">stock_genotype</a>,
+<a href="../Chado_Tables#Table:_wwwuser_genotype" title="Chado Tables">wwwuser_genotype</a></li>
+</ul>
+<h4 id="span-idtable_feature_genotype-classmw-headlinetable-feature_genotypespan"><span id="Table:_feature_genotype" class="mw-headline">Table: feature_genotype</span></h4>
+<table class="wikitable">
+<caption>feature_genotype Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>feature_genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="../Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="#Table:_genotype">genotype</a></p></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="../Chado_Tables#Table:_feature"
+title="Chado Tables">feature</a></p></td>
+<td>chromosome_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+<br />
+A feature of SO type "chromosome".</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+rank can be used for n-ploid organisms or to preserve order.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>cgroup</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+Spatially distinguishable group. group can be used for distinguishing
+the chromosomal groups, for example (RNAi products and so on can be
+treated as different groups, as they do not fall on a particular
+chromosome).</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="../Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>feature_genotype Structure</p>
+<h3 id="span-idenvironment-classmw-headlineenvironmentspan"><span id="Environment" class="mw-headline">Environment</span></h3>
+<p>Also defined in the <a href="../Chado_Genetic_Module" title="Chado Genetic Module">Chado Genetic
+Module</a>.</p>
+<h4 id="span-idtable_environment-classmw-headlinetable-environmentspan"><span id="Table:_environment" class="mw-headline">Table: environment</span></h4>
+<p>The environmental component of a phenotype description.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>environment_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>description</td>
+<td>text</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>environment Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="#Table:_environment_cvterm">environment_cvterm</a>,
+<a href="../Chado_Tables#Table:_phendesc" title="Chado Tables">phendesc</a>,
+<a href="../Chado_Tables#Table:_phenotype_comparison" title="Chado Tables">phenotype_comparison</a>,
+<a href="../Chado_Tables#Table:_phenstatement" title="Chado Tables">phenstatement</a></li>
+</ul>
+<h4 id="span-idtable_environment_cvterm-classmw-headlinetable-environment_cvtermspan"><span id="Table:_environment_cvterm" class="mw-headline">Table: environment_cvterm</span></h4>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>environment_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="#Table:_environment">environment</a></td>
+<td>environment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="../Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>environment_cvterm Structure</p>
+<h3 id="span-idphenotype2c_natural_diversity_and_atlas_support-classmw-headlinephenotype-natural-diversity-and-atlas-supportspan"><span id="Phenotype.2C_Natural_Diversity_and_Atlas_Support" class="mw-headline">Phenotype, Natural Diversity and Atlas Support</span></h3>
+<p>Phenotypes, natural diversity, and atlas support are all areas of future
+work in Chado. Chado does have a phenotype module, but it has not aged
+as well as other modules. Its support for natural diversity is limited
+to what is implemented in the genotype, environment, and phenotype
+modules. This is not robust enough to deal with studie that are
+frequently done in the plant community, and are increasingly done in
+animal communities as well.</p>
+<p>To address this there are several efforts currently underway. The
+<a href="http://aniseed-ibdm.univ-mrs.fr/" class="external text"
+rel="nofollow">Aniseed project</a> includes 4 dimensional anatomy,
+expression, and cell fate graphical atlases. Aniseed is currently in the
+process of reimplementing itself to use Chado. This work is likely to
+lead to contributions back to GMOD (both in Chado and a web interface)
+to better support these types of atlases.</p>
+<p>Better natural diversity support will be added in the coming year.
+<a href="http://nescent.org" class="external text"
+rel="nofollow">NESCent</a> has developed a prototype natural diversity
+Chado module based on the
+<a href="http://www.maizegenetics.net/gdpdm/" class="external text"
+rel="nofollow">GDPDM</a>, that will added robust support for natural
+diversity data.</p>
+<p><a href="../Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="../Category%253ATutorials" title="Category%253ATutorials">Tutorials</a></li>
+<li><a href="../Category%253AChado" title="Category%253AChado">Chado</a></li>
+<li><a href="../Category%253AGMOD_Schools" title="Category%253AGMOD Schools">GMOD Schools</a></li>
+</ul>
+<p><span class="smwfactboxhead">Facts about
+&ldquo;<span class="swmfactboxheadbrowse"><a href="../Special%253ABrowse/GMOD-20Malaysia-202014-2FChado-20Tutorial" title="Special%253ABrowse/GMOD-20Malaysia-202014-2FChado-20Tutorial">GMOD Malaysia 2014/Chado
+Tutorial</a></span>&quot;</span></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Property%253AHas_topic" title="Property:Has topic">Has topic</a></td>
+<td><a href="../Chado" class="mw-redirect" title="Chado">Chado</a> <span class="smwsearch"><a href="../Special%253ASearchByProperty/Has-20topic/Chado" title="Special%253ASearchByProperty/Has-20topic/Chado">+</a></span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-menu">Navigation menu</h2>
+<p><a href="../Main_Page"
+style="background-image: url(../../images/GMOD-cogs.png);"
+title="Visit the main page"></a></p>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="../Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="../GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="../Categories">Categories /
+Tags</a></span></li>
+<li><span id="n-View-all-pages"><a href="../Special:AllPages">View all
+pages</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="../Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="../Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="../Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="../Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="../GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="../Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="../Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="../GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="../Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="../Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_Malaysia_2014-2FChado_Tutorial"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 00:19 on 20 February 2014.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">8,719 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

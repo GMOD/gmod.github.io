@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado GBrowse Summary View - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-gbrowse-summary-viewspan"><span dir="auto">Chado GBrowse Summary View</span></h1>
+<p>Starting in <a href="GBrowse.1" title="GBrowse">GBrowse</a> version 2.13, administrators
+have the option of configuring a <em>summary view</em> (feature density) for
+tracks when zoomed out too far to effectively show individual features,
+and starting with the 0.30 release of
+<a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
+class="external text" rel="nofollow">Bio::DB::Das::Chado</a> this
+functionality is supported for browsing
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases
+with GBrowse.</p>
+<h2 id="span-idprerequisites-classmw-headlineprerequisitesspan"><span id="Prerequisites" class="mw-headline">Prerequisites</span></h2>
+<ul>
+<li><a href="GBrowse.1" title="GBrowse">GBrowse</a> 2.13</li>
+<li><a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
+class="external text" rel="nofollow">Bio::DB::Das::Chado</a> 0.31</li>
+<li><a href="PostgreSQL" title="PostgreSQL">PostgreSQL</a> 8.1 (probably&ndash;I only tested
+with 8.4, but I&rsquo;m reasonably sure it will work with versions back to
+8.1)</li>
+</ul>
+<h2 id="span-idconfiguration-classmw-headlineconfigurationspan"><span id="Configuration" class="mw-headline">Configuration</span></h2>
+<p>To support the summary view,
+<a href="Chado" class="mw-redirect" title="Chado">Chado</a> needs an
+additional table that the Chado <a href="GBrowse_Adaptors" title="GBrowse Adaptors">GBrowse
+adaptor</a> will use to calculate the
+summary view. To create this table (gff_interval_stats) and populate it
+with data, the
+<a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
+class="external text" rel="nofollow">Bio::DB::Das::Chado</a>
+distribution comes with a perl script,
+<code>gmod_create_summary_statistics.pl</code>. Executing this script, optionally
+with a <code>--dbprofile</code> flag to indicate the database to work on, will
+create the table if it doesn&rsquo;t exist, as well as a few stored procedures
+for populating the table, and then execute the stored procedure. This
+script can also be used in a
+<a href="http://linuxmanpages.com/man8/cron.8.php" class="external text"
+rel="nofollow"><code>cron</code></a> job to periodically recreate the
+data in the summary statistics data when the data in the table becomes
+stale due to added data.</p>
+<p>To turn on summaries, add this line to your data source&rsquo;s conf file in
+the main section:</p>
+<pre><code> show summary   = 100000
+</code></pre>
+<p>which will make all tracks go to the summary view when the region shown
+is greater than 100000. To turn summaries off for a given track, add</p>
+<pre><code> show summary   = 0
+</code></pre>
+<p>to the track configuration.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="namespaces">Namespaces</h3>
+<ul>
+<li><span id="ca-talk"><a href="Talk%253AChado_GBrowse_Summary_View" accesskey="t"
+title="Discussion about the content page [t]">Discussion</a></span></li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_GBrowse_Summary_View"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 12:55 on 4 May
+2011.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">17,392 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

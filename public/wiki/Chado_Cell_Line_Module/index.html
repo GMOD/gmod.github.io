@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Cell Line Module - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-cell-line-modulespan"><span dir="auto">Chado Cell Line Module</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Tables"><span class="tocnumber">2</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Table:_cell_line"><span class="tocnumber">2.1</span> <span class="toctext">Table:
+<strong>cell_line</strong></span></a></li>
+<li><a href="#Table:_cell_line_relationship"><span class="tocnumber">2.2</span> <span class="toctext">Table:
+<strong>cell_line_relationship</strong></span></a></li>
+<li><a href="#Table:_cell_line_synonym"><span class="tocnumber">2.3</span> <span class="toctext">Table:
+<strong>cell_line_synonym</strong></span></a></li>
+<li><a href="#Table:_cell_line_cvterm"><span class="tocnumber">2.4</span> <span class="toctext">Table:
+<strong>cell_line_cvterm</strong></span></a></li>
+<li><a href="#Table:_cell_line_dbxref"><span class="tocnumber">2.5</span> <span class="toctext">Table:
+<strong>cell_line_dbxref</strong></span></a></li>
+<li><a href="#Table:_cell_lineprop"><span class="tocnumber">2.6</span> <span class="toctext">Table:
+<strong>cell_lineprop</strong></span></a></li>
+<li><a href="#Table:_cell_lineprop_pub"><span class="tocnumber">2.7</span> <span class="toctext">Table:
+<strong>cell_lineprop_pub</strong></span></a></li>
+<li><a href="#Table:_cell_line_feature"><span class="tocnumber">2.8</span> <span class="toctext">Table:
+<strong>cell_line_feature</strong></span></a></li>
+<li><a href="#Table:_cell_line_cvtermprop"><span class="tocnumber">2.9</span> <span class="toctext">Table:
+<strong>cell_line_cvtermprop</strong></span></a></li>
+<li><a href="#Table:_cell_line_pub"><span class="tocnumber">2.10</span> <span class="toctext">Table:
+<strong>cell_line_pub</strong></span></a></li>
+<li><a href="#Table:_cell_line_library"><span class="tocnumber">2.11</span> <span class="toctext">Table:
+<strong>cell_line_library</strong></span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<h2 id="span-idtable_cell_line-classmw-headlinetable-cell_linespan"><span id="Table:_cell_line" class="mw-headline">Table: <strong><code>cell_line</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>uniquename</td>
+<td>character varying(255)</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Organism_Module#Table:_organism"
+title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
+<td>organism_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>timeaccessioned</td>
+<td>timestamp without time zone</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><em>DEFAULT</em> now()<br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>timelastmodified</td>
+<td>timestamp without time zone</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><em>DEFAULT</em> now()<br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_cvterm" title="Chado Cell Line Module"><strong><code>cell_line_cvterm</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_dbxref" title="Chado Cell Line Module"><strong><code>cell_line_dbxref</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_feature" title="Chado Cell Line Module"><strong><code>cell_line_feature</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_library" title="Chado Cell Line Module"><strong><code>cell_line_library</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_pub" title="Chado Cell Line Module"><strong><code>cell_line_pub</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_relationship" title="Chado Cell Line Module"><strong><code>cell_line_relationship</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_synonym" title="Chado Cell Line Module"><strong><code>cell_line_synonym</code></strong></a></li>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_lineprop" title="Chado Cell Line Module"><strong><code>cell_lineprop</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<p><strong><code>cell_line</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_relationship-classmw-headlinetable-cell_line_relationshipspan"><span id="Table:_cell_line_relationship" class="mw-headline">Table: <strong><code>cell_line_relationship</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_relationship</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_relationship</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_relationship_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>subject_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>object_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_relationship</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_relationship</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_relationship</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_synonym-classmw-headlinetable-cell_line_synonymspan"><span id="Table:_cell_line_synonym" class="mw-headline">Table: <strong><code>cell_line_synonym</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_synonym</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_synonym</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_synonym_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Sequence_Module#Table:_synonym"
+title="Chado Sequence Module"><strong><code>synonym</code></strong></a></td>
+<td>synonym_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>is_current</td>
+<td>boolean</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><em>DEFAULT</em> false<br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>is_internal</td>
+<td>boolean</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><em>DEFAULT</em> false<br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_synonym</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_synonym</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_synonym</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_cvterm-classmw-headlinetable-cell_line_cvtermspan"><span id="Table:_cell_line_cvterm" class="mw-headline">Table: <strong><code>cell_line_cvterm</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_cvterm</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_cvterm</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_cvterm</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_cvterm</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_line_cvtermprop" title="Chado Cell Line Module"><strong><code>cell_line_cvtermprop</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<p><strong><code>cell_line_cvterm</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_dbxref-classmw-headlinetable-cell_line_dbxrefspan"><span id="Table:_cell_line_dbxref" class="mw-headline">Table: <strong><code>cell_line_dbxref</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_dbxref</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_dbxref</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_General_Module#Table:_dbxref"
+title="Chado General Module"><strong><code>dbxref</code></strong></a></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>is_current</td>
+<td>boolean</td>
+<td><em>NOT NULL</em><br />
+&#10;<p><em>DEFAULT</em> true<br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_dbxref</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_dbxref</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_dbxref</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_lineprop-classmw-headlinetable-cell_linepropspan"><span id="Table:_cell_lineprop" class="mw-headline">Table: <strong><code>cell_lineprop</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_lineprop</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_lineprop</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_lineprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_lineprop</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_lineprop</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li><a href="Chado_Cell_Line_Module#Table:_cell_lineprop_pub" title="Chado Cell Line Module"><strong><code>cell_lineprop_pub</code></strong></a></li>
+</ul>
+<p>&lt;/protect&gt;</p>
+<p><strong><code>cell_lineprop</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_lineprop_pub-classmw-headlinetable-cell_lineprop_pubspan"><span id="Table:_cell_lineprop_pub" class="mw-headline">Table: <strong><code>cell_lineprop_pub</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_lineprop_pub</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_lineprop_pub</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_lineprop_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_lineprop"
+title="Chado Cell Line Module"><strong><code>cell_lineprop</code></strong></a></td>
+<td>cell_lineprop_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_lineprop_pub</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_lineprop_pub</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_lineprop_pub</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_feature-classmw-headlinetable-cell_line_featurespan"><span id="Table:_cell_line_feature" class="mw-headline">Table: <strong><code>cell_line_feature</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_feature</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_feature</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_feature_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Sequence_Module#Table:_feature"
+title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_feature</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_feature</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_feature</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_cvtermprop-classmw-headlinetable-cell_line_cvtermpropspan"><span id="Table:_cell_line_cvtermprop" class="mw-headline">Table: <strong><code>cell_line_cvtermprop</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_cvtermprop</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_cvtermprop</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_cvtermprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line_cvterm"
+title="Chado Cell Line Module"><strong><code>cell_line_cvterm</code></strong></a></td>
+<td>cell_line_cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_CV_Module#Table:_cvterm"
+title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_cvtermprop</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_cvtermprop</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_cvtermprop</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_pub-classmw-headlinetable-cell_line_pubspan"><span id="Table:_cell_line_pub" class="mw-headline">Table: <strong><code>cell_line_pub</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_pub</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_pub</code></strong> columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_pub</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_pub</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_pub</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<h2 id="span-idtable_cell_line_library-classmw-headlinetable-cell_line_libraryspan"><span id="Table:_cell_line_library" class="mw-headline">Table: <strong><code>cell_line_library</code></strong></span></h2>
+<p>&lt;protect&gt;</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Table:</strong></td>
+<td><strong><code>cell_line_library</code></strong></td>
+</tr>
+<tr>
+<td><strong>Module:</strong></td>
+<td><strong><strong>Cell Line</strong></strong></td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable chadotable">
+<caption><strong><code>cell_line_library</code></strong>
+columns</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>cell_line_library_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em><br />
+</td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
+<td>cell_line_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="odd">
+<td><a href="Chado_Library_Module#Table:_library"
+title="Chado Library Module"><strong><code>library</code></strong></a></td>
+<td>library_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p></td>
+</tr>
+<tr class="even">
+<td><a href="Chado_Publication_Module#Table:_pub"
+title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1</em><br />
+&#10;<p><em>NOT NULL</em><br />
+</p>
+<p><br />
+</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>cell_line_library</code></strong> columns</p>
+<p>Tables referencing <strong><code>cell_line_library</code></strong> via <a href="Glossary#Foreign_Key" title="Glossary">foreign
+key</a> constraints:</p>
+<ul>
+<li>None.&lt;/protect&gt;</li>
+</ul>
+<p><strong><code>cell_line_library</code></strong> <strong>Additional Comments:</strong></p>
+<p>Add your comments here and they will be integrated into the <a href="Chado_Schema_Documentation_HOWTO" title="Chado Schema Documentation HOWTO">schema
+documentation</a>
+as part of the next Chado release.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+<li><a href="Category%253A!Lacking_ERD" title="Category%253A!Lacking ERD">!Lacking ERD</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Cell_Line_Module" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 04:32 on 18 February
+2015.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">9,743 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

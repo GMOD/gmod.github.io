@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Stock Module - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-stock-modulespan"><span dir="auto">Chado Stock Module</span></h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a></li>
+<li><a href="#Tables"><span class="tocnumber">2</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Table:_stock"><span class="tocnumber">2.1</span> <span class="toctext">Table:
+stock</span></a></li>
+<li><a href="#Table:_stock_cvterm"><span class="tocnumber">2.2</span> <span class="toctext">Table:
+stock_cvterm</span></a></li>
+<li><a href="#Table:_stock_dbxref"><span class="tocnumber">2.3</span> <span class="toctext">Table:
+stock_dbxref</span></a></li>
+<li><a href="#Table:_stock_genotype"><span class="tocnumber">2.4</span> <span class="toctext">Table:
+stock_genotype</span></a></li>
+<li><a href="#Table:_stock_pub"><span class="tocnumber">2.5</span> <span class="toctext">Table:
+stock_pub</span></a></li>
+<li><a href="#Table:_stock_relationship"><span class="tocnumber">2.6</span> <span class="toctext">Table:
+stock_relationship</span></a></li>
+<li><a href="#Table:_stock_relationship_pub"><span class="tocnumber">2.7</span> <span class="toctext">Table:
+stock_relationship_pub</span></a></li>
+<li><a href="#Table:_stockcollection"><span class="tocnumber">2.8</span> <span class="toctext">Table:
+stockcollection</span></a></li>
+<li><a href="#Table:_stockcollection_stock"><span class="tocnumber">2.9</span> <span class="toctext">Table:
+stockcollection_stock</span></a></li>
+<li><a href="#Table:_stockcollectionprop"><span class="tocnumber">2.10</span> <span class="toctext">Table:
+stockcollectionprop</span></a></li>
+<li><a href="#Table:_stockprop"><span class="tocnumber">2.11</span> <span class="toctext">Table:
+stockprop</span></a></li>
+<li><a href="#Table:_stockprop_pub"><span class="tocnumber">2.12</span> <span class="toctext">Table:
+stockprop_pub</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<p>The stock module was designed to store information about stock
+collections in a laboratory. What is called a <em>stock</em> could also be
+called a <em>strain</em> or an <em>accession</em>. There is a lot in common between a
+<em>Drosophila</em> stock and a Saccharomyces <em>strain</em> and an <em>Arabidopsis</em>
+line. They all come from some taxon, have genotypes, physical locations
+in the lab, some conceivable relationship with a publication, some
+conceivable relationship with a sequence feature (such as a transgene),
+and could be described by some ontology term.</p>
+<p>It may be that not all critical details about your collection are
+accommodated, if this is the case it should not be difficult to extend
+for your own purposes.</p>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<h2 id="span-idtable_stock-classmw-headlinetable-stockspan"><span id="Table:_stock" class="mw-headline">Table: stock</span></h2>
+<p>Any stock can be globally identified by the combination of organism,
+uniquename and stock type. A stock is the physical entities, either
+living or preserved, held by collections. Stocks belong to a collection;
+they have IDs, type, organism, description and may have a genotype.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>stock Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>stock_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+The dbxref_id is an optional primary stable identifier for this stock.
+Secondary identifiers and external dbxrefs go in table:
+stock_dbxref.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_organism"
+title="Chado Tables">organism</a></p></td>
+<td>organism_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The organism_id is the organism to which the stock belongs. This column
+is mandatory.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+The name is a human-readable local name for a stock.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>description</td>
+<td>text</td>
+<td><em></em><br />
+<br />
+The description is the genetic description provided in the stock
+list.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The type_id foreign key links to a controlled vocabulary of stock types.
+The would include living stock, genomic DNA, preserved specimen.
+Secondary cvterms for stocks would go in stock_cvterm.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_obsolete</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT false</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_stock_cvterm" title="Chado Tables">stock_cvterm</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_dbxref" title="Chado Tables">stock_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_genotype" title="Chado Tables">stock_genotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_pub" title="Chado Tables">stock_pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stock_relationship" title="Chado Tables">stock_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockcollection_stock" title="Chado Tables">stockcollection_stock</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockprop" title="Chado Tables">stockprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_stock_cvterm-classmw-headlinetable-stock_cvtermspan"><span id="Table:_stock_cvterm" class="mw-headline">Table: stock_cvterm</span></h2>
+<p>stock_cvterm links a stock to cvterms. This is for secondary cvterms;
+primary cvterms should use stock.type_id.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stock_cvterm_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>cvterm_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock_cvterm Structure</p>
+<hr>
+<h2 id="span-idtable_stock_dbxref-classmw-headlinetable-stock_dbxrefspan"><span id="Table:_stock_dbxref" class="mw-headline">Table: stock_dbxref</span></h2>
+<p>stock_dbxref links a stock to dbxrefs. This is for secondary
+identifiers; primary identifiers should use stock.dbxref_id.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>stock_dbxref Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>stock_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_stock"
+title="Chado Tables">stock</a></p></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_dbxref"
+title="Chado Tables">dbxref</a></p></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>is_current</td>
+<td>boolean</td>
+<td><em>NOT NULL DEFAULT true</em><br />
+<br />
+The is_current boolean indicates whether the linked dbxref is the
+current -official- dbxref for the linked stock.</td>
+</tr>
+</tbody>
+</table>
+<p>stock_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_stock_genotype-classmw-headlinetable-stock_genotypespan"><span id="Table:_stock_genotype" class="mw-headline">Table: stock_genotype</span></h2>
+<p>Simple table linking a stock to a genotype. Features with genotypes can
+be linked to stocks thru feature_genotype -&gt; genotype -&gt;
+stock_genotype -&gt; stock.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stock_genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_genotype" title="Chado Tables">genotype</a></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock_genotype Structure</p>
+<hr>
+<h2 id="span-idtable_stock_pub-classmw-headlinetable-stock_pubspan"><span id="Table:_stock_pub" class="mw-headline">Table: stock_pub</span></h2>
+<p>Provenance. Linking table between stocks and, for example, a stocklist
+computer file.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stock_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock_pub Structure</p>
+<hr>
+<h2 id="span-idtable_stock_relationship-classmw-headlinetable-stock_relationshipspan"><span id="Table:_stock_relationship" class="mw-headline">Table: stock_relationship</span></h2>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stock_relationship_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>subject_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>object_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock_relationship Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_stock_relationship_pub" title="Chado Tables">stock_relationship_pub</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_stock_relationship_pub-classmw-headlinetable-stock_relationship_pubspan"><span id="Table:_stock_relationship_pub" class="mw-headline">Table: stock_relationship_pub</span></h2>
+<p>Provenance. Attach optional evidence to a stock_relationship in the form
+of a publication.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stock_relationship_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock_relationship" title="Chado Tables">stock_relationship</a></td>
+<td>stock_relationship_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stock_relationship_pub Structure</p>
+<hr>
+<h2 id="span-idtable_stockcollection-classmw-headlinetable-stockcollectionspan"><span id="Table:_stockcollection" class="mw-headline">Table: stockcollection</span></h2>
+<p>The lab or stock center distributing the stocks in their collection.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>stockcollection Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>stockcollection_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+type_id is the collection type cv.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_contact"
+title="Chado Tables">contact</a></p></td>
+<td>contact_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+contact_id links to the contact information for the collection.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+name is the collection.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>uniquename</td>
+<td>text</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+uniqename is the value of the collection cv.</td>
+</tr>
+</tbody>
+</table>
+<p>stockcollection Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_stockcollection_stock" title="Chado Tables">stockcollection_stock</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_stockcollectionprop" title="Chado Tables">stockcollectionprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_stockcollection_stock-classmw-headlinetable-stockcollection_stockspan"><span id="Table:_stockcollection_stock" class="mw-headline">Table: stockcollection_stock</span></h2>
+<p>stockcollection_stock links a stock collection to the stocks which are
+contained in the collection.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stockcollection_stock_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stockcollection" title="Chado Tables">stockcollection</a></td>
+<td>stockcollection_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stockcollection_stock Structure</p>
+<hr>
+<h2 id="span-idtable_stockcollectionprop-classmw-headlinetable-stockcollectionpropspan"><span id="Table:_stockcollectionprop" class="mw-headline">Table: stockcollectionprop</span></h2>
+<p>The table stockcollectionprop contains the value of the stock collection
+such as website/email URLs; the value of the stock collection order
+URLs.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stockcollectionprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stockcollection" title="Chado Tables">stockcollection</a></td>
+<td>stockcollection_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stockcollectionprop Structure</p>
+<hr>
+<h2 id="span-idtable_stockprop-classmw-headlinetable-stockpropspan"><span id="Table:_stockprop" class="mw-headline">Table: stockprop</span></h2>
+<p>A stock can have any number of slot-value property tags attached to it.
+This is an alternative to hardcoding a list of columns in the relational
+schema, and is completely extensible. There is a unique constraint,
+stockprop_c1, for the combination of stock_id, rank, and type_id.
+Multivalued property-value pairs must be differentiated by rank.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stockprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stock" title="Chado Tables">stock</a></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stockprop Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_stockprop_pub" title="Chado Tables">stockprop_pub</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_stockprop_pub-classmw-headlinetable-stockprop_pubspan"><span id="Table:_stockprop_pub" class="mw-headline">Table: stockprop_pub</span></h2>
+<p>Provenance. Any stockprop assignment can optionally be supported by a
+publication.</p>
+<table>
+<thead>
+<tr>
+<th>F-Key</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>stockprop_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_stockprop" title="Chado Tables">stockprop</a></td>
+<td>stockprop_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>stockprop_pub Structure</p>
+<hr>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+<li><a href="Category%253A!Lacking_ERD" title="Category%253A!Lacking ERD">!Lacking ERD</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Stock_Module" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 04:41 on 18 February
+2015.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">54,279 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBrowse User Database - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautogbrowse-user-databasespan"><span dir="auto">GBrowse User Database</span></h1>
+<p><a href="GBrowse.1" title="GBrowse">GBrowse</a> has the option to use a database to
+manage users, so that a user may save their session for use on multiple
+computers and associate files with one specific user. Users can sign up
+using a username, password and e-mail, or they can also associate their
+<a href="http://openid.net/" class="external text"
+rel="nofollow">OpenID</a> with a username. Currently, GBrowse supports
+<a href="http://www.sqlite.org/" class="external text"
+rel="nofollow">SQLite</a>, <a
+href="http://www.oracle.com/technology/products/berkeley-db/index.html"
+class="external text" rel="nofollow">Berkeley DB</a> and
+<a href="http://www.mysql.com/" class="external text"
+rel="nofollow">MySQL</a> as backends.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Setup"><span class="tocnumber">1</span>
+<span class="toctext">Setup</span></a>
+<ul>
+<li><a href="#To_use_SQLite"><span class="tocnumber">1.1</span> <span class="toctext">To use
+SQLite</span></a></li>
+<li><a href="#To_use_MySQL"><span class="tocnumber">1.2</span> <span class="toctext">To use
+MySQL</span></a></li>
+<li><a href="#User_Accounts_Flag"><span class="tocnumber">1.3</span> <span class="toctext">User
+Accounts Flag</span></a></li>
+</ul>
+</li>
+<li><a href="#Database_Schema"><span class="tocnumber">2</span> <span class="toctext">Database
+Schema</span></a>
+<ul>
+<li><a href="#Users"><span class="tocnumber">2.1</span>
+<span class="toctext">Users</span></a>
+<ul>
+<li><a href="#OpenID_Users"><span class="tocnumber">2.1.1</span> <span class="toctext">OpenID
+Users</span></a></li>
+<li><a href="#Sessions"><span class="tocnumber">2.1.2</span>
+<span class="toctext">Sessions</span></a></li>
+<li><a href="#DBInfo"><span class="tocnumber">2.1.3</span>
+<span class="toctext">DBInfo</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Errors"><span class="tocnumber">3</span>
+<span class="toctext">Errors</span></a>
+<ul>
+<li><a href="#Access_Denied"><span class="tocnumber">3.1</span> <span class="toctext">Access
+Denied</span></a></li>
+<li><a href="#Unable_to_Find_Table"><span class="tocnumber">3.2</span> <span class="toctext">Unable to
+Find Table</span></a></li>
+</ul>
+</li>
+<li><a href="#Confirmation"><span class="tocnumber">4</span>
+<span class="toctext">Confirmation</span></a></li>
+</ul>
+<h2 id="span-idsetup-classmw-headlinesetupspan"><span id="Setup" class="mw-headline">Setup</span></h2>
+<p>To use the user database, you will need to install the
+<a href="http://search.cpan.org/~gbarr/libnet-1.22/Net/SMTP.pm"
+class="external text" rel="nofollow">Net::SMTP</a> and
+<a href="http://search.cpan.org/~nanis/Crypt-SSLeay-0.58/lib/Net/SSL.pm"
+class="external text" rel="nofollow">Net::SSL</a> modules from
+<a href="http://search.cpan.org/" class="external text"
+rel="nofollow">CPAN</a>. OpenID login will also need the <a
+href="http://search.cpan.org/~mart/Net-OpenID-Consumer-1.03/lib/Net/OpenID/Consumer.pm"
+class="external text" rel="nofollow">Net::OpenID::Consumer</a> module -
+OpenID is optional in GBrowse 2.20 or later.</p>
+<h3 id="span-idto_use_sqlite-classmw-headlineto-use-sqlitespan"><span id="To_use_SQLite" class="mw-headline">To use SQLite</span></h3>
+<p>SQLite doesn&rsquo;t require much setup, you just need to decide on a location
+to store the database file.</p>
+<p>To configure your GBrowse.conf file to use a SQLite database, uncomment
+(remove the preceding #) the line that starts with &ldquo;user_account_db&rdquo;
+(without quotes), or add this section if it is not there. Specify the
+location of the .sqlite file to be used. Remember to grant permissions
+for GBrowse to read and write to this file. As well, due to the design
+of SQLite, you will have to grant permissions for GBrowse to write to
+the folder <em>holding</em> the .sqlite file, as SQLite creates a temporary
+file in that folder before any writes are made, and needs the
+permissions to do so.</p>
+<pre><code># Path to the database -- you will need to create this database and grant all
+# privileges on it to the indicated user.
+# user_account_db        = DBI:SQLite:/path/to/your/database.sqlite
+</code></pre>
+<h3 id="span-idto_use_mysql-classmw-headlineto-use-mysqlspan"><span id="To_use_MySQL" class="mw-headline">To use MySQL</span></h3>
+<p>For MySQL, ensure that the MySQL server is up and running, and that you
+have the administrator username and password handy. You&rsquo;ll also need the
+name of the user you want to connect with; the default value is
+&ldquo;gbrowse&rdquo; for both username and password, but you can specify your own
+if you wish.</p>
+<p>To configure your GBrowse.conf file to use a MySQL database, uncomment
+(remove the preceding #), or add if it&rsquo;s not there, this line (for
+&ldquo;user_account_db&rdquo;) and specify the connection details as indicated.
+Change the user and/or password fields as needed.</p>
+<pre><code># user_account_db        = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
+</code></pre>
+<h3 id="span-iduser_accounts_flag-classmw-headlineuser-accounts-flagspan"><span id="User_Accounts_Flag" class="mw-headline">User Accounts Flag</span></h3>
+<p>Once the configuration option has been set, the &ldquo;user accounts&rdquo; switch
+to enable the user database must be turned on (set from 0 to 1).</p>
+<pre><code>####### User Account Registration Database ######
+# If &quot;user accounts&quot; is true, then we will try to use
+# a user registration database
+user accounts          = 0
+</code></pre>
+<h2 id="span-iddatabase_schema-classmw-headlinedatabase-schemaspan"><span id="Database_Schema" class="mw-headline">Database Schema</span></h2>
+<p>The database is named &ldquo;gbrowse_login&rdquo; and is made up of three tables,
+<strong>users</strong>, <strong>openid_users</strong> and <strong>sessions</strong>. The first three are used
+to store information about users, registered, OpenID, or otherwise. An
+additional <strong>dbinfo</strong> table holds information regarding the version of
+the schema we are currently using. Additional tables are included in the
+database, and are part of the user uploads system.</p>
+<h3 id="span-idusers-classmw-headlineusersspan"><span id="Users" class="mw-headline">Users</span></h3>
+<p>This table holds all the users, regardless of whether they signed up
+using their OpenID or a username. It stores the following information:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userid</td>
+<td>integer not null PRIMARY KEY auto_increment</td>
+<td>A unique user ID.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>varchar(64) not null UNIQUE</td>
+<td>An e-mail for confirmation &amp; notification.</td>
+</tr>
+<tr>
+<td>pass</td>
+<td>varchar(32) not null</td>
+<td>An encrypted password (not stored as plain text).</td>
+</tr>
+<tr>
+<td>remember</td>
+<td>boolean not null</td>
+<td>Whether to remember the user at this location or not.</td>
+</tr>
+<tr>
+<td>openid_only</td>
+<td>boolean not null</td>
+<td>Was registered with an OpenID or no?</td>
+</tr>
+<tr>
+<td>confirmed</td>
+<td>boolean not null</td>
+<td>Has been confirmed?</td>
+</tr>
+<tr>
+<td>cnfm_code</td>
+<td>varchar(32) not null</td>
+<td>Confirmation code.</td>
+</tr>
+<tr>
+<td>last_login</td>
+<td>timestamp not null</td>
+<td>Date &amp; time of last login.</td>
+</tr>
+<tr>
+<td>created</td>
+<td>datetime not null</td>
+<td>Date &amp; time created.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idopenid_users-classmw-headlineopenid-usersspan"><span id="OpenID_Users" class="mw-headline">OpenID Users</span></h4>
+<p>This table holds all openIDs associated with users.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userid</td>
+<td>integer not null</td>
+<td>A unique user ID.</td>
+</tr>
+<tr>
+<td>openid_url</td>
+<td>varchar(128) not null PRIMARY key</td>
+<td>The URL of the openID.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-idsessions-classmw-headlinesessionsspan"><span id="Sessions" class="mw-headline">Sessions</span></h4>
+<p>This table holds all registered sessions. In order for a user to add
+public files, have files shared with them, or upload files, they need to
+be assigned a user ID and a record in this table.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userid</td>
+<td>integer not null PRIMARY KEY auto increment</td>
+<td>A unique user ID.</td>
+</tr>
+<tr>
+<td>username</td>
+<td>varchar(32)</td>
+<td>A username, assigned on registration so the user can login. Anonymous users have &ldquo;an anonymous user&rdquo; as their username.</td>
+</tr>
+<tr>
+<td>sessionid</td>
+<td>char(32) not null UNIQUE</td>
+<td>The 32-bit hexadecimal ID corresponding to their session.</td>
+</tr>
+<tr>
+<td>uploadsid</td>
+<td>char(32) not null UNIQUE</td>
+<td>The 32-bit hexadecimal ID corresponding to their uploads folder.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="span-iddbinfo-classmw-headlinedbinfospan"><span id="DBInfo" class="mw-headline">DBInfo</span></h4>
+<p>This table holds the version number of the current database schema. It&rsquo;s
+used in upgrading from older schemas, without losing information.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>schema_version</td>
+<td>int(10) not null UNIQUE</td>
+<td>The version number of the current schema.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="span-iderrors-classmw-headlineerrorsspan"><span id="Errors" class="mw-headline">Errors</span></h2>
+<h3 id="span-idaccess_denied-classmw-headlineaccess-deniedspan"><span id="Access_Denied" class="mw-headline">Access Denied</span></h3>
+<p>If you receive an &ldquo;Access denied for user &lsquo;www-data&rsquo;@&rsquo;localhost&rsquo; (using
+password: NO)&rdquo; error, then the &ldquo;www-data&rdquo; user (or whatever user has
+been given by the error) has not been granted access to the database by
+the administrator. It could also be that the database connection program
+is not using the credentials as specified in GBrowse.conf. A fix for
+this error is to grant permissions for the user on your database, by
+having the database administrator run the following SQL command:</p>
+<pre><code>GRANT ALL PRIVILEGES
+ON gbrowse_login.*
+TO 'www-data'@'localhost' identified by &quot;&quot;;
+</code></pre>
+<p>If you wish to use another user, simply replace &ldquo;www-data&rdquo; with the user
+of your choice. If you wish to use a password, enter it between the
+quotes after &lsquo;identified by &ldquo;&rdquo;&rsquo;.</p>
+<h3 id="span-idunable_to_find_table-classmw-headlineunable-to-find-tablespan"><span id="Unable_to_Find_Table" class="mw-headline">Unable to Find Table</span></h3>
+<p>If you receive an error saying that the database cannot find the table
+specified, your schema is probably incorrect (or hasn&rsquo;t been created at
+all). The gbrowse_metadb_config.pl script should correct any schema
+errors regarding the database (assuming the credentials are correct in
+your Gbrowse.conf file), simply run it as root (<strong>sudo perl
+gbrowse_metadb_config.pl</strong>) and that should fix any errors.</p>
+<h2 id="span-idconfirmation-classmw-headlineconfirmationspan"><span id="Confirmation" class="mw-headline">Confirmation</span></h2>
+<p>If everything has been set up properly, you will see a &ldquo;Log in / create
+account&rdquo; link on the top-right corner of the screen:</p>
+<p><img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/User_db_enabled.png" width="504"
+height="296" alt="User db enabled.png" />[[Category%253A]]</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253ADocumentation" title="Category%253ADocumentation">Documentation</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="Category%253AGBrowse_Developer" title="Category%253AGBrowse Developer">GBrowse
+Developer</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_User_Database" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 22:41 on 29 December
+2010.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">161,028 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chado Natural Diversity Module - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautochado-natural-diversity-modulespan"><span dir="auto">Chado Natural Diversity Module</span></h1>
+<p>The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Natural
+Diversity Module is an extension to the Chado
+<a href="Glossary#Schema" title="Glossary">schema</a> to better support natural diversity
+data.</p>
+<p>Eventually this page will resemble the <a href="Chado_Modules" title="Chado Modules">other Chado Module
+pages</a>, with an overview followed by a
+detailed explanation of the tables, columns, and relationships in the
+module. However, while the module is <a href="Chado_Natural_Diversity_Module_Working_Group" title="Chado Natural Diversity Module Working Group">under
+development</a>,
+this page will have an alternative structure.</p>
+<p>Recently, a lot of work was done on the ND module at the <a href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">GMOD Tools for
+Evolutionary Biology
+hackathon</a>, see <a
+href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
+class="external free"
+rel="nofollow"><a href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup">https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup</a></a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span>
+<span class="toctext">Introduction</span></a>
+<ul>
+<li><a href="#Interactions_with_Other_Chado_Modules"><span class="tocnumber">1.1</span>
+<span class="toctext">Interactions with Other Chado
+Modules</span></a>
+<ul>
+<li><a href="#Stock_Module"><span class="tocnumber">1.1.1</span> <span class="toctext">Stock
+Module</span></a></li>
+</ul>
+</li>
+<li><a href="#General_Description_of_Natural_Diversity_Module"><span class="tocnumber">1.2</span> <span class="toctext">General
+Description of Natural Diversity
+Module</span></a></li>
+<li><a href="#Key_Ontologies"><span class="tocnumber">1.3</span> <span class="toctext">Key
+Ontologies</span></a>
+<ul>
+<li><a href="#Stock_Relationship_Ontology"><span class="tocnumber">1.3.1</span> <span class="toctext">Stock
+Relationship Ontology</span></a></li>
+</ul>
+</li>
+<li><a href="#Loading_Data"><span class="tocnumber">1.4</span> <span class="toctext">Loading
+Data</span></a></li>
+<li><a href="#Web_Front_Ends"><span class="tocnumber">1.5</span> <span class="toctext">Web Front
+Ends</span></a></li>
+<li><a href="#See_Also"><span class="tocnumber">1.6</span> <span class="toctext">See
+Also</span></a>
+<ul>
+<li><a href="#Email_Threads"><span class="tocnumber">1.6.1</span> <span class="toctext">Email
+Threads</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Use_Cases"><span class="tocnumber">2</span> <span class="toctext">Use
+Cases</span></a>
+<ul>
+<li><a href="#tree_fruit_breeding_data_.28tfGDR.29"><span class="tocnumber">2.1</span> <span class="toctext">tree fruit
+breeding data (tfGDR)</span></a>
+<ul>
+<li><a href="#Cross_Experiment"><span class="tocnumber">2.1.1</span> <span class="toctext">Cross
+Experiment</span></a></li>
+<li><a href="#Phenotype_Assay"><span class="tocnumber">2.1.2</span>
+<span class="toctext">Phenotype Assay</span></a></li>
+</ul>
+</li>
+<li><a href="#Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29"><span class="tocnumber">2.2</span>
+<span class="toctext">Tomato/potato breeder lines and cultivars (Sol
+genomics
+network)</span></a>
+<ul>
+<li><a href="#Phenotyping_experiment"><span class="tocnumber">2.2.1</span>
+<span class="toctext">Phenotyping
+experiment</span></a></li>
+<li><a href="#Genotyping_experiment"><span class="tocnumber">2.2.2</span>
+<span class="toctext">Genotyping
+experiment</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#ER_Diagram"><span class="tocnumber">3</span> <span class="toctext">ER
+Diagram</span></a></li>
+<li><a href="#Tables"><span class="tocnumber">4</span>
+<span class="toctext">Tables</span></a>
+<ul>
+<li><a href="#Table:_nd_experiment"><span class="tocnumber">4.1</span> <span class="toctext">Table:
+nd_experiment</span></a></li>
+<li><a href="#Table:_nd_experiment_contact"><span class="tocnumber">4.2</span> <span class="toctext">Table:
+nd_experiment_contact</span></a></li>
+<li><a href="#Table:_nd_experiment_dbxref"><span class="tocnumber">4.3</span> <span class="toctext">Table:
+nd_experiment_dbxref</span></a></li>
+<li><a href="#Table:_nd_experiment_genotype"><span class="tocnumber">4.4</span> <span class="toctext">Table:
+nd_experiment_genotype</span></a></li>
+<li><a href="#Table:_nd_experiment_phenotype"><span class="tocnumber">4.5</span> <span class="toctext">Table:
+nd_experiment_phenotype</span></a></li>
+<li><a href="#Table:_nd_experiment_project"><span class="tocnumber">4.6</span> <span class="toctext">Table:
+nd_experiment_project</span></a></li>
+<li><a href="#Table:_nd_experiment_protocol"><span class="tocnumber">4.7</span> <span class="toctext">Table:
+nd_experiment_protocol</span></a></li>
+<li><a href="#Table:_nd_experiment_pub"><span class="tocnumber">4.8</span> <span class="toctext">Table:
+nd_experiment_pub</span></a></li>
+<li><a href="#Table:_nd_experiment_stock"><span class="tocnumber">4.9</span> <span class="toctext">Table:
+nd_experiment_stock</span></a></li>
+<li><a href="#Table:_nd_experiment_stock_dbxref"><span class="tocnumber">4.10</span> <span class="toctext">Table:
+nd_experiment_stock_dbxref</span></a></li>
+<li><a href="#Table:_nd_experiment_stockprop"><span class="tocnumber">4.11</span> <span class="toctext">Table:
+nd_experiment_stockprop</span></a></li>
+<li><a href="#Table:_nd_experimentprop"><span class="tocnumber">4.12</span> <span class="toctext">Table:
+nd_experimentprop</span></a></li>
+<li><a href="#Table:_nd_geolocation"><span class="tocnumber">4.13</span> <span class="toctext">Table:
+nd_geolocation</span></a></li>
+<li><a href="#Table:_nd_geolocationprop"><span class="tocnumber">4.14</span> <span class="toctext">Table:
+nd_geolocationprop</span></a></li>
+<li><a href="#Table:_nd_protocol"><span class="tocnumber">4.15</span> <span class="toctext">Table:
+nd_protocol</span></a></li>
+<li><a href="#Table:_nd_protocol_reagent"><span class="tocnumber">4.16</span> <span class="toctext">Table:
+nd_protocol_reagent</span></a></li>
+<li><a href="#Table:_nd_protocolprop"><span class="tocnumber">4.17</span> <span class="toctext">Table:
+nd_protocolprop</span></a></li>
+<li><a href="#Table:_nd_reagent"><span class="tocnumber">4.18</span> <span class="toctext">Table:
+nd_reagent</span></a></li>
+<li><a href="#Table:_nd_reagent_relationship"><span class="tocnumber">4.19</span> <span class="toctext">Table:
+nd_reagent_relationship</span></a></li>
+<li><a href="#Table:_nd_reagentprop"><span class="tocnumber">4.20</span> <span class="toctext">Table:
+nd_reagentprop</span></a></li>
+</ul>
+</li>
+</ul>
+<h1 id="span-idintroduction-classmw-headlineintroductionspan"><span id="Introduction" class="mw-headline">Introduction</span></h1>
+<p>The Natural Diversity module allows storing data from multiple
+experiments of the same accessions/lines/strains, collected, treated and
+evaluated in various locations, environments, and times. Each
+accessions/lines/strains can be scored for a large number of phenotypic
+traits, and genotyped with an array of genetic markers. In addition to
+storing data from experiments performed on existing
+accessions/lines/strains, the tables in this module and other
+interacting modules allow storing data from experiments that generate
+new accessions/lines/strains and experimental samples, such as field
+collection, cross, and treatments.</p>
+<h2 id="span-idinteractions_with_other_chado_modules-classmw-headlineinteractions-with-other-chado-moduleschado_modules-chado-modulesspan"><span id="Interactions_with_Other_Chado_Modules" class="mw-headline">Interactions with Other <a href="Chado_Modules" title="Chado Modules">Chado Modules</a></span></h2>
+<h3 id="span-idstock_module-classmw-headlinestock-modulespan"><span id="Stock_Module" class="mw-headline">Stock Module</span></h3>
+<p>The original stock module was designed to store information about stock
+collections in a laboratory. This original concept of ‘stock’ table has
+been expanded to accommodate entities that a ‘stock’ belongs to or
+entities that derived from a ‘stock’. Hence ‘stock’ table can store
+hierarchical entity of population, strain/line/accession, individual,
+clone, and sample, with relationships between ‘stocks’ defined in the
+&lsquo;stock_relationship&rsquo; table. For example, a plant accession can belong to
+a population (eg. progeny of a particular cross), and have multiple
+‘children’ when used as parent in a cross. A plant accession can also
+have a ‘clone’ when it is clonally propagated. The &lsquo;stock&rsquo; table also
+stores ‘samples’ or &lsquo;observational units&rsquo; of individual experiments. For
+example, when a plant was treated with different amounts of chemicals
+before various phenotyping experiments were performed, each sample
+treated with specific amounts of chemicals is stored in a distinct row
+of &lsquo;stock&rsquo; table. Since population can be defined as a group of any
+entities, a population entity can be composed of multiple species (eg. a
+group of insects collected in a field). To accommodate this change, the
+‘NOT NULL’ constraint for organism_id has been dropped.</p>
+<h2 id="span-idgeneral_description_of_natural_diversity_module-classmw-headlinegeneral-description-of-natural-diversity-modulespan"><span id="General_Description_of_Natural_Diversity_Module" class="mw-headline">General Description of Natural Diversity Module</span></h2>
+<ul>
+<li>This section can be removed later on from this wiki page since most of
+the content exists in the table descriptions below. But it is included
+here as a summary to help us write the Use Cases.</li>
+</ul>
+<p>Nd_experiment is the core table for the natural diversity module,
+representing each individual assay that is undertaken (nb this is
+usually *not* an entire experiment). Experiment.type is a cvterm that
+will define which records are expected for other tables. The types of
+experiments that are done on or gave rise to &lsquo;stocks&rsquo; include, but are
+not restricted to, cross, field collection, sample treatment,
+phenotyping and genotyping experiments. Any cvterm may be used but it
+was designed with terms such as: [phenotype_assay, genotype_assay,
+field_collection, cross_experiment, sample_treatment] in mind.</p>
+<p>For experiments of type &lsquo;phenotype_assay&rsquo; or &lsquo;genotype_assay&rsquo;, each
+nd_experiment generally give rise to a single genotype or phenotype.
+Though there is no longer a one-to-one restriction, it is expected that
+phenotypes and genotypes will be the result of a single assay. An
+exception to one-to-one relationship would include the genotype of
+heterozygotes where the genotype of each allele is stored in a distinct
+row of genotype table. One record of phenotype and genotype can be
+linked to multiple experiments since multiple stock entries can produce
+same phenotype and/or genotype.</p>
+<p>Each nd_experiment of type &lsquo;phenotype_assay&rsquo; or &lsquo;genotype_assay&rsquo; should
+be linked to a single stock entry via nd_experiment_stock table. So when
+multiple samples from the same line/accession/strain have been used for
+multiple phenotype assays, a unique nd_experiment_id should be created
+for a unique combination of a sample and a phenotype assay. The sample
+treatment that are performed to generate a sample from a
+line/accession/strain can be stored in a separate row of nd_experiment
+of type &lsquo;sample_treatment&rsquo;. Collections of assays that relate to each
+other can be linked via the same record in the &lsquo;project&rsquo; table and/or
+same record in &lsquo;stock&rsquo; table.</p>
+<p>For experiments of type &lsquo;field_collection&rsquo; and &lsquo;cross_experiment&rsquo;, the
+appropriate stock entries that are used or generated from the experiment
+can be linked by nd_experiment_stock table. In cross experiment, the
+parental stocks and the progeny are stored in &lsquo;stock&rsquo; table and their
+roles in cross can be recorded using an appropriate cvterm for
+nd_experiment_stock.type_id. The progeny of a cross and the stocks
+collected from a field collection can be stored in &lsquo;stock&rsquo; table as a
+population or as an individual line/accession/strain/sample and then be
+linked to nd_experiment appropriately.</p>
+<p>The detailed protocols of experiments can be described via one or more
+protocols. Reagents used in protocol can be stored in nd_reagent table.
+The same protocol and reagent can be linked to multiple experiments and
+protocols, respectively. Metadata of experiments, such as date and
+experimenters, can be stored as properties (nd_experimentprop).</p>
+<h2 id="span-idkey_ontologies-classmw-headlinekey-ontologiesspan"><span id="Key_Ontologies" class="mw-headline">Key Ontologies</span></h2>
+<h3 id="span-idstock_relationship_ontology-classmw-headlinestock-relationship-ontologystock_relationship_ontology-stock-relationship-ontologyspan"><span id="Stock_Relationship_Ontology" class="mw-headline"><a href="Stock_Relationship_Ontology" title="Stock Relationship Ontology">Stock Relationship Ontology</a></span></h3>
+<h2 id="span-idloading_data-classmw-headlineloading-dataspan"><span id="Loading_Data" class="mw-headline">Loading Data</span></h2>
+<p>There are, as yet, no standard flat file formats or loading scripts to
+load data into this module. Custom scripts will need to be written to
+insert your data in the database.</p>
+<h2 id="span-idweb_front_ends-classmw-headlineweb-front-endsspan"><span id="Web_Front_Ends" class="mw-headline">Web Front Ends</span></h2>
+<h2 id="span-idsee_also-classmw-headlinesee-alsospan"><span id="See_Also" class="mw-headline">See Also</span></h2>
+<ul>
+<li><a href="Chado_Natural_Diversity_Module_Working_Group" title="Chado Natural Diversity Module Working Group">Chado Natural Diversity Module Working
+Group</a>
+page, and the <a href="Talk%253AChado_Natural_Diversity_Module_Working_Group" title="Talk:Chado Natural Diversity Module Working Group">group&rsquo;s discussion
+page</a>
+for background on how this module was created.</li>
+</ul>
+<h3 id="span-idemail_threads-classmw-headlineemail-threadsspan"><span id="Email_Threads" class="mw-headline">Email Threads</span></h3>
+<ul>
+<li><a
+href="http://gmod.827538.n3.nabble.com/Natural-diversity-module-and-phenotype-cvterm-values-td829757.html#a829757#a829757"
+class="external text" rel="nofollow">Natural diversity module and
+phenotype cvterm values</a></li>
+<li><a
+href="http://gmod.827538.n3.nabble.com/Re-Gmod-schema-Use-Cases-on-the-simplified-natural-diversity-module-td815602.html#a840919#a840919"
+class="external text" rel="nofollow">Use Cases on the simplified natural
+diversity module</a></li>
+<li><a
+href="http://gmod.827538.n3.nabble.com/Re-nd-naming-td937709.html#a937709#a937709"
+class="external text" rel="nofollow">nd naming</a></li>
+</ul>
+<h1 id="span-iduse_cases-classmw-headlineuse-casesspan"><span id="Use_Cases" class="mw-headline">Use Cases</span></h1>
+<h3 id="span-idtree_fruit_breeding_data_28tfgdr29-classmw-headlinetree-fruit-breeding-data-tfgdrspan"><span id="tree_fruit_breeding_data_.28tfGDR.29" class="mw-headline">tree fruit breeding data (tfGDR)</span></h3>
+<h4 id="span-idcross_experiment-classmw-headlinecross-experimentspan"><span id="Cross_Experiment" class="mw-headline">Cross Experiment</span></h4>
+<p>Data:</p>
+<ul>
+<li>Cross name/ID, location, female and male parent, progeny, project
+name, metadata such as how many seeds were produced, date of the
+cross, etc.</li>
+<li>Accession_ID, Aliases, cultivar name, pedigree, description</li>
+</ul>
+<p>Chado:</p>
+<ul>
+<li>Accession_ID is stored in &lsquo;stock&rsquo; table and the associated data such
+as cultivar name, pedigree, and description are stored in &lsquo;stockprop&rsquo;
+table.</li>
+<li>nd_experiment.type_id is the cvterm_id for &lsquo;cross_experiment&rsquo;.</li>
+<li>Cross location is stored in &rsquo;nd_experiment&rsquo; table (nd_geolocation_id).</li>
+<li>Cross name/ID and the all the metadata that are associated with the
+cross experiments are stored in &rsquo;nd_experimentprop&rsquo; table (cvterm_id
+and value).</li>
+<li>Parent and progeny are stored in &lsquo;stock&rsquo; table and they are linked to
+&rsquo;nd_experiment&rsquo; via &rsquo;nd_experiment_stock&rsquo; using type_id such as &lsquo;is a
+female parent&rsquo;, &lsquo;is a progeny&rsquo;, etc.</li>
+<li>The whole progeny is stored as a population in stock table and the
+individual line is linked to the population entry via
+&lsquo;stock_relationship&rsquo; table.</li>
+<li>Individual crosses is linked to a larger project via
+nd_experiment_project.</li>
+</ul>
+<h4 id="span-idphenotype_assay-classmw-headlinephenotype-assayspan"><span id="Phenotype_Assay" class="mw-headline">Phenotype Assay</span></h4>
+<ul>
+<li>Multiple clones of the same fruit tree accessions are planted in
+various lots of various orchards.</li>
+<li>The fruits are harvested from the tree in multiple times, freshly
+evaluated or stored in different conditions then evaluated for
+multiple phenotypes.</li>
+<li>The fruits of the multiple clonal trees in the same lot are combined
+for phenotype assays and are given the same clone_ID (?!!)</li>
+<li>Individual trees have a distinct repetition number (per individual
+tree) in addition to the clone_ID and the phenotypes of individual
+trees are evaluated multiple times.</li>
+</ul>
+<p>Data:</p>
+<ul>
+<li>Sample_ID (given by tfGDR), Clone_ID (eg. wsu001_1, gala_1),
+Accession_ID (eg. wsu001, gala, etc), pick date, assay date, storage
+time, storage condition, evaluators, plant date, repetition number.</li>
+<li>rootstock_ID, site (orchard), sub_location (plot, row and position)</li>
+<li>Name, definition and scale of phenotype descriptor and phenotypic
+value</li>
+<li>An example of phenotype is &lsquo;fruit size&rsquo; and their value can be 1
+through 5 (1=very small; 2=small; 3=medium; 4=large; 5= very large)</li>
+</ul>
+<p>Chado:</p>
+<ul>
+<li>Sample_ID is given by tfGDR for each sample to which a distinct set of
+phenotype assays were performed.</li>
+<li>Accession_ID, Clone_ID and Sample_ID are stored in &lsquo;stock&rsquo; table and
+their relationship are stored in &lsquo;stock_relationship&rsquo; table.</li>
+<li>A unique nd_experiment_id with type &lsquo;phenotype_assay&rsquo; is created for a
+unique combination of a sample and its phenotype.</li>
+<li>pick date, assay date, storage time, storage condition, rootstock and
+any other sample properties are stored in stockprop table using cvterm
+and value.</li>
+<li>If more complicated treatments are performed on the sample (eg.
+fertilizers), nd_experiment of type &lsquo;sample_treatment&rsquo; will be
+created.</li>
+<li>Evaluators of each phenotype experiment are stored in &lsquo;contact&rsquo; table,
+and linked to &rsquo;nd_experiment&rsquo; via &rsquo;nd_experiment_contact&rsquo;.</li>
+<li>Project information is stored in project, linked to nd_experiment via
+nd_experiment_project.</li>
+<li>Relationship between subprojects and larger projects are stored in
+project_relationship.</li>
+<li>Each breeder can have different definitions for similar phenotype
+descriptors, phenotype descriptors from each breeder are stored
+separately in &lsquo;cvterm&rsquo; table (eg.fruit_size from a breeder called KE
+is stored as KE_fruit_size in cvterm table).</li>
+<li>The names and definitions of phenotype descriptors are stored in
+cvterm table and their scale is stored in &lsquo;cvtermprop&rsquo; table using
+value and scale fields. For example, &lsquo;KE_fruit_size&rsquo; has a scale of 1
+to 5 with 1(tiny), 2(small), 3(medium), 4(large), and 5(very large),
+the numeric values are stored in cvtermprop.rank and the descriptions
+are stored in cvtermprop.value.</li>
+<li>Phenotype and the value , such as KE_fruit_size (attr_id) and 1
+(value), are stored in phenotype table</li>
+</ul>
+<p>Comments:</p>
+<hr>
+<h3 id="span-idtomato2fpotato_breeder_lines_and_cultivars_28sol_genomics_network29-classmw-headlinetomatopotato-breeder-lines-and-cultivars-a-hrefhttpsolgenomicsnet-classexternal-text"><span id="Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29" class="mw-headline">Tomato/potato breeder lines and cultivars (&lt;a href=&ldquo;<a href="http://solgenomics.net">http://solgenomics.net</a>&rdquo; class=&ldquo;external text&rdquo;</h3>
+<p>rel=&ldquo;nofollow&rdquo;&gt;Sol genomics network</a>)</span></p>
+<h4 id="span-idphenotyping_experiment-classmw-headlinephenotyping-experimentspan"><span id="Phenotyping_experiment" class="mw-headline">Phenotyping experiment</span></h4>
+<p>A collection of 479 tomato accessions were used in several locations and
+years for assaying traits of breeding significance. The collection is an
+unstructured population of tomato varieties.</p>
+<p><strong><a href="Chado_Stock_Module" title="Chado Stock Module">Chado Stock Module</a></strong> The
+stock table is used for storing any plant accession, collection,
+germplasm, or plants in a field plot. We use the
+<a href="Chado_Stock_Module#Table:_stock_relationship"
+class="external text" rel="nofollow">stock_relationship</a> table for
+defining those relationships. Each plant accession, and its derived
+germplasm, is stored in the stock table , with relationships between
+accessions defined in the stock_relationship table. For example, a plant
+accession can belong to a ‘parent’ population, and has multiple
+‘children’, such as individual plants in a field plot.</p>
+<p>In this data-set, we have in the stock table a
+<a href="http://solgenomics.net/stock/view/id/646" class="external text"
+rel="nofollow">Tomato cultivars</a> population, and all the related
+accessions. The relationship between the accession stocks and the
+population stock is defined in stock_relationship (the population is the
+object in stock_relationship, and all accessions are subjects). Similar
+relationship is defined between each accession and the plants in the
+experiment&rsquo;s field plots. For example accession
+<a href="http://solgenomics.net/stock/view/id/676" class="external text"
+rel="nofollow">Heinz 1706</a> belongs to the
+<a href="http://solgenomics.net/stock/view/id/646" class="external text"
+rel="nofollow">cultivars</a> population, and has several
+<a href="http://solgenomics.net/stock/view/id/1517"
+class="external text" rel="nofollow">field plots</a>.</p>
+<p><strong><strong>Chado Natural Diversity Module</strong></strong> Each phenotyping event is stored
+in the nd_experiment table. An experiment, in the Natural Diversity
+module, is usually defined as a single genotyping event, or a
+phenotyping event performed on one or more plants, at the same time and
+location, for one or multiple traits. Then the experiment is linked with
+each participating stock (nd_experiment_stock table). In this example,
+the phenotyping was performed on plants in field plots, thus
+nd_experiment_stock links the experiment_id with the stock_id of the
+field plot. This allows storing multiple experiments of the same
+accessions, evaluated in different locations, environments, and years.
+Each plant can be scored for a large number of phenotypic traits, and
+genotyped with an array of genetic markers (see &lsquo;SGN Genotyping
+experiment bellow).</p>
+<p>Each phenotyping and genotyping experiment is also tied to a geolocation
+(nd_geolocation table). Metadata of experiments, such as date,
+environmental conditions, and person recording the data, are stored as
+properties (nd_experimentprop).</p>
+<p>All the scored phenotype values and attributes are stored in the
+<a href="Chado_Phenotype_Module" class="external text"
+rel="nofollow">phenotype table</a>, and genotypes in the
+<a href="http://gmod.org/wiki/Chado_Genotype_Module"
+class="external text" rel="nofollow">genotype table</a>. The 2 linking
+tables, nd_experiment_phenotype and nd_experiment_genotype, provide a
+1-1 or 1-many relationship between phenotype/genotype and experiments.</p>
+<h4 id="span-idgenotyping_experiment-classmw-headlinegenotyping-experimentspan"><span id="Genotyping_experiment" class="mw-headline">Genotyping experiment</span></h4>
+<p>Each genotyping experiment (in this use case SNP and SSR markers were
+assayed, yielding a genotype of a SNP of number of repeats) has a unique
+nd_experiment_id, and is linked to the stock using nd_experiment_stock,
+and to the genotype using nd_experiment_genotype table.</p>
+<h1 id="span-ider_diagram-classmw-headlineer-diagramspan"><span id="ER_Diagram" class="mw-headline">ER Diagram</span></h1>
+<p>A simplified schema diagram by N. Menda and R. Buels
+<img
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/Natdiv_simplified_SGN.png" width="1600"
+height="943" alt="Natdiv simplified SGN.png" /></p>
+<h1 id="span-idtables-classmw-headlinetablesspan"><span id="Tables" class="mw-headline">Tables</span></h1>
+<p>This will be populated using the process outlined in <a href="Chado_Tables_to_Wiki" title="Chado Tables to Wiki">Chado Tables to
+Wiki</a>.</p>
+<h2 id="span-idtable_nd_experiment-classmw-headlinetable-nd_experimentspan"><span id="Table:_nd_experiment" class="mw-headline">Table: nd_experiment</span></h2>
+<p>This is the core table for the natural diversity module, representing
+each individual assay that is undertaken (nb this is usually *not* an
+entire experiment). Each nd_experiment should give rise to a single
+genotype or phenotype and be described via 1 (or more) protocols.
+Collections of assays that relate to each other should be linked to the
+same record in the <em>project</em> table.<br>
+Experiment.type is a cvterm that will define which records are expected
+for other tables. Any CV may be used but it was designed with terms such
+as: [phenotype_assay, genotype_assay, field_collection,
+cross_experiment] in mind.</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_geolocation" title="Chado Tables">nd_geolocation</a></td>
+<td>nd_geolocation_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_contact" title="Chado Tables">nd_experiment_contact</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_dbxref" title="Chado Tables">nd_experiment_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_genotype" title="Chado Tables">nd_experiment_genotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_phenotype" title="Chado Tables">nd_experiment_phenotype</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_project" title="Chado Tables">nd_experiment_project</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_protocol" title="Chado Tables">nd_experiment_protocol</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_pub" title="Chado Tables">nd_experiment_pub</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_stock" title="Chado Tables">nd_experiment_stock</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experimentprop" title="Chado Tables">nd_experimentprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_nd_experiment_contact-classmw-headlinetable-nd_experiment_contactspan"><span id="Table:_nd_experiment_contact" class="mw-headline">Table: nd_experiment_contact</span></h2>
+<p>primary contact / submitter of these nd_experiments (nd, where assays
+are not submitted separately this may be better stored in
+project_contact).</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_contact_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_contact" title="Chado Tables">contact</a></td>
+<td>contact_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_contact Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_dbxref-classmw-headlinetable-nd_experiment_dbxrefspan"><span id="Table:_nd_experiment_dbxref" class="mw-headline">Table: nd_experiment_dbxref</span></h2>
+<p>Cross-reference experiment to accessions, images, etc</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_genotype-classmw-headlinetable-nd_experiment_genotypespan"><span id="Table:_nd_experiment_genotype" class="mw-headline">Table: nd_experiment_genotype</span></h2>
+<p>Linking table: experiments to the genotypes they produce. Though there
+is no longer a one-to-one restriction, it is expected that genotypes
+will be the result of a single assay. The restriction was lifted to
+allow items such as: a single chromosome staining giving values for
+inversions: 2La/+, 2Rbc - (whilst these are technically a single
+genotype users may wish to store these separately such that all 2La/+
+individuals can be easily ascertained).</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_genotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_genotype" title="Chado Tables">genotype</a></td>
+<td>genotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_genotype Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_phenotype-classmw-headlinetable-nd_experiment_phenotypespan"><span id="Table:_nd_experiment_phenotype" class="mw-headline">Table: nd_experiment_phenotype</span></h2>
+<p>Linking table: experiments to the phenotypes they produce. in most cases
+this will either be a single record, or an alternative (quantitative /
+qualitative?) description of the same phenotype (e.g. 1: &ldquo;wing length:
+12mm&rdquo; / &ldquo;wing length: increased&rdquo;). In rare cases it may suit the user to
+link a single qualitative phenotype to multiple experiments</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_phenotype_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_phenotype" title="Chado Tables">phenotype</a></td>
+<td>phenotype_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_phenotype Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_project-classmw-headlinetable-nd_experiment_projectspan"><span id="Table:_nd_experiment_project" class="mw-headline">Table: nd_experiment_project</span></h2>
+<p>Used to group together related nd_experiment records. All nd_experiments
+should be linked to at least one project.</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_project_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_project" title="Chado Tables">project</a></td>
+<td>project_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_project Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_protocol-classmw-headlinetable-nd_experiment_protocolspan"><span id="Table:_nd_experiment_protocol" class="mw-headline">Table: nd_experiment_protocol</span></h2>
+<p>Linking table: experiments to the protocols they involve.</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_protocol_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_protocol" title="Chado Tables">nd_protocol</a></td>
+<td>nd_protocol_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_protocol Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_pub-classmw-headlinetable-nd_experiment_pubspan"><span id="Table:_nd_experiment_pub" class="mw-headline">Table: nd_experiment_pub</span></h2>
+<p>Linking nd_experiment(s) to publication(s)</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_pub_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_pub" title="Chado Tables">pub</a></td>
+<td>pub_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_pub Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_stock-classmw-headlinetable-nd_experiment_stockspan"><span id="Table:_nd_experiment_stock" class="mw-headline">Table: nd_experiment_stock</span></h2>
+<p>Part of a stock or a clone of a stock that is used in an experiment</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_experiment_stock Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_experiment_stock_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_nd_experiment"
+title="Chado Tables">nd_experiment</a></p></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_stock"
+title="Chado Tables">stock</a></p></td>
+<td>stock_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+stock used in the extraction or the corresponding stock for the
+clone</td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_stock Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_stock_dbxref" title="Chado Tables">nd_experiment_stock_dbxref</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_stockprop" title="Chado Tables">nd_experiment_stockprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_nd_experiment_stock_dbxref-classmw-headlinetable-nd_experiment_stock_dbxrefspan"><span id="Table:_nd_experiment_stock_dbxref" class="mw-headline">Table: nd_experiment_stock_dbxref</span></h2>
+<p>Cross-reference experiment_stock to accessions, images, etc</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experiment_stock_dbxref_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment_stock" title="Chado Tables">nd_experiment_stock</a></td>
+<td>nd_experiment_stock_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_dbxref" title="Chado Tables">dbxref</a></td>
+<td>dbxref_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_stock_dbxref Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experiment_stockprop-classmw-headlinetable-nd_experiment_stockpropspan"><span id="Table:_nd_experiment_stockprop" class="mw-headline">Table: nd_experiment_stockprop</span></h2>
+<p>Property/value associations for experiment_stocks. This table can store
+the properties such as treatment</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_experiment_stockprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_experiment_stockprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_nd_experiment_stock"
+title="Chado Tables">nd_experiment_stock</a></p></td>
+<td>nd_experiment_stock_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The experiment_stock to which the property applies.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property as a reference to a controlled vocabulary
+term.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+The value of the property.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The rank of the property value, if the property has an array of
+values.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experiment_stockprop Structure</p>
+<hr>
+<h2 id="span-idtable_nd_experimentprop-classmw-headlinetable-nd_experimentpropspan"><span id="Table:_nd_experimentprop" class="mw-headline">Table: nd_experimentprop</span></h2>
+<p>Tag-value properties - follows standard chado model.</p>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_experimentprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></td>
+<td>nd_experiment_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>character varying(255)</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_experimentprop Structure</p>
+<hr>
+<h2 id="span-idtable_nd_geolocation-classmw-headlinetable-nd_geolocationspan"><span id="Table:_nd_geolocation" class="mw-headline">Table: nd_geolocation</span></h2>
+<p>The geo-referenceable location of the stock. NOTE: This entity is subject
+to change as a more general and possibly more OpenGIS-compliant
+geolocation module may be introduced into Chado.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_geolocation Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_geolocation_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>description</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+A textual representation of the location, if this is the original
+georeference. Optional if the original georeference is available in
+lat/long coordinates.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>latitude</td>
+<td>real</td>
+<td><em></em><br />
+<br />
+The decimal latitude coordinate of the georeference, using positive and
+negative sign to indicate N and S, respectively.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>longitude</td>
+<td>real</td>
+<td><em></em><br />
+<br />
+The decimal longitude coordinate of the georeference, using positive and
+negative sign to indicate E and W, respectively.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>geodetic_datum</td>
+<td>character varying(32)</td>
+<td><em></em><br />
+<br />
+The geodetic system on which the geo-reference coordinates are based.
+For geo-references measured between 1984 and 2010, this will typically
+be WGS84.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>altitude</td>
+<td>real</td>
+<td><em></em><br />
+<br />
+The altitude (elevation) of the location in meters. If the altitude is
+only known as a range, this is the average, and altitude_dev will hold
+half of the width of the range.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_geolocation Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment" title="Chado Tables">nd_experiment</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_geolocationprop" title="Chado Tables">nd_geolocationprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_nd_geolocationprop-classmw-headlinetable-nd_geolocationpropspan"><span id="Table:_nd_geolocationprop" class="mw-headline">Table: nd_geolocationprop</span></h2>
+<p>Property/value associations for geolocations. This table can store the
+properties such as location and environment</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_geolocationprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_geolocationprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_nd_geolocation"
+title="Chado Tables">nd_geolocation</a></p></td>
+<td>nd_geolocation_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property as a reference to a controlled vocabulary
+term.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>character varying(250)</td>
+<td><em></em><br />
+<br />
+The value of the property.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The rank of the property value, if the property has an array of
+values.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_geolocationprop Structure</p>
+<hr>
+<h2 id="span-idtable_nd_protocol-classmw-headlinetable-nd_protocolspan"><span id="Table:_nd_protocol" class="mw-headline">Table: nd_protocol</span></h2>
+<p>A protocol can be anything that is done as part of the experiment.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_protocol Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_protocol_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(255)</td>
+<td><em>UNIQUE NOT NULL</em><br />
+<br />
+The protocol name.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_protocol Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_nd_experiment_protocol" title="Chado Tables">nd_experiment_protocol</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_protocol_reagent" title="Chado Tables">nd_protocol_reagent</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_protocolprop" title="Chado Tables">nd_protocolprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_nd_protocol_reagent-classmw-headlinetable-nd_protocol_reagentspan"><span id="Table:_nd_protocol_reagent" class="mw-headline">Table: nd_protocol_reagent</span></h2>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_protocol_reagent_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_protocol" title="Chado Tables">nd_protocol</a></td>
+<td>nd_protocol_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_reagent" title="Chado Tables">nd_reagent</a></td>
+<td>reagent_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_protocol_reagent Structure</p>
+<hr>
+<h2 id="span-idtable_nd_protocolprop-classmw-headlinetable-nd_protocolpropspan"><span id="Table:_nd_protocolprop" class="mw-headline">Table: nd_protocolprop</span></h2>
+<p>Property/value associations for protocol.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_protocolprop Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_protocolprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_nd_protocol"
+title="Chado Tables">nd_protocol</a></p></td>
+<td>nd_protocol_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The protocol to which the property applies.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The name of the property as a reference to a controlled vocabulary
+term.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>value</td>
+<td>character varying(255)</td>
+<td><em></em><br />
+<br />
+The value of the property.</td>
+</tr>
+<tr class="odd tr0">
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em><br />
+<br />
+The rank of the property value, if the property has an array of
+values.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_protocolprop Structure</p>
+<hr>
+<h2 id="span-idtable_nd_reagent-classmw-headlinetable-nd_reagentspan"><span id="Table:_nd_reagent" class="mw-headline">Table: nd_reagent</span></h2>
+<p>A reagent such as a primer, an enzyme, an adapter oligo, a linker oligo.
+Reagents are used in genotyping experiments, or in any other kind of
+experiment.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_reagent Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_reagent_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>name</td>
+<td>character varying(80)</td>
+<td><em>NOT NULL</em><br />
+<br />
+The name of the reagent. The name should be unique for a given
+type.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+The type of the reagent, for example linker oligomer, or forward
+primer.</td>
+</tr>
+<tr class="even tr1">
+<td></td>
+<td>feature_id</td>
+<td>integer</td>
+<td><em></em><br />
+<br />
+If the reagent is a primer, the feature that it corresponds to. More
+generally, the corresponding feature for any reagent that has a sequence
+that maps to another sequence.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_reagent Structure</p>
+<p>Tables referencing this one via Foreign Key Constraints:</p>
+<ul>
+<li><a href="Chado_Tables#Table:_nd_protocol_reagent" title="Chado Tables">nd_protocol_reagent</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_reagent_relationship" title="Chado Tables">nd_reagent_relationship</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="Chado_Tables#Table:_nd_reagentprop" title="Chado Tables">nd_reagentprop</a></li>
+</ul>
+<hr>
+<h2 id="span-idtable_nd_reagent_relationship-classmw-headlinetable-nd_reagent_relationshipspan"><span id="Table:_nd_reagent_relationship" class="mw-headline">Table: nd_reagent_relationship</span></h2>
+<p>Relationships between reagents. Some reagents form a group. i.e., they
+are used all together or not at all. Examples are adapter/linker/enzyme
+experiment reagents.</p>
+<table data-border="1" data-cellpadding="3">
+<caption>public.nd_reagent_relationship Structure</caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd tr0">
+<td></td>
+<td>nd_reagent_relationship_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_nd_reagent"
+title="Chado Tables">nd_reagent</a></p></td>
+<td>subject_reagent_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+The subject reagent in the relationship. In parent/child terminology,
+the subject is the child. For example, in "linkerA
+3prime-overhang-linker enzymeA" linkerA is the subject,
+3prime-overhand-linker is the type, and enzymeA is the object.</td>
+</tr>
+<tr class="odd tr0">
+<td><p><a href="Chado_Tables#Table:_nd_reagent"
+title="Chado Tables">nd_reagent</a></p></td>
+<td>object_reagent_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+The object reagent in the relationship. In parent/child terminology, the
+object is the parent. For example, in "linkerA 3prime-overhang-linker
+enzymeA" linkerA is the subject, 3prime-overhand-linker is the type, and
+enzymeA is the object.</td>
+</tr>
+<tr class="even tr1">
+<td><p><a href="Chado_Tables#Table:_cvterm"
+title="Chado Tables">cvterm</a></p></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>NOT NULL</em><br />
+<br />
+The type (or predicate) of the relationship. For example, in "linkerA
+3prime-overhang-linker enzymeA" linkerA is the subject,
+3prime-overhand-linker is the type, and enzymeA is the object.</td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_reagent_relationship Structure</p>
+<hr>
+<h2 id="span-idtable_nd_reagentprop-classmw-headlinetable-nd_reagentpropspan"><span id="Table:_nd_reagentprop" class="mw-headline">Table: nd_reagentprop</span></h2>
+<table>
+<thead>
+<tr>
+<th>FK</th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>nd_reagentprop_id</td>
+<td>serial</td>
+<td><em>PRIMARY KEY</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_nd_reagent" title="Chado Tables">nd_reagent</a></td>
+<td>nd_reagent_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td><a href="Chado_Tables#Table:_cvterm" title="Chado Tables">cvterm</a></td>
+<td>type_id</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+<tr>
+<td></td>
+<td>value</td>
+<td>character varying(255)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rank</td>
+<td>integer</td>
+<td><em>UNIQUE#1 NOT NULL</em></td>
+</tr>
+</tbody>
+</table>
+<p>public.nd_reagentprop Structure</p>
+<hr>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ANatural_Diversity" title="Category%253ANatural Diversity">Natural
+Diversity</a></li>
+<li><a href="Category%253AChado_Modules" title="Category%253AChado Modules">Chado Modules</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Natural_Diversity_Module"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 16:35 on 30 January
+2013.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">163,936 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

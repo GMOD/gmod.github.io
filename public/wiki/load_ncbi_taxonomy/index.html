@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load ncbi taxonomy - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautoload-ncbi-taxonomyspan"><span dir="auto">Load ncbi taxonomy</span></h1>
+<p><code>load_ncbi_taxonomy.pl</code> is a perl script for loading NCBI taxonomy trees
+in the
+<a href="Chado_Phylogeny_Module#Table:_phylotree" title="Chado Phylogeny Module"><strong><code>phylotree</code></strong></a><a href="Chado_Phylogeny_Module#Table:_phylotree" title="Chado Phylogeny Module">phylotree
+table</a>.
+This script was contributed by <a href="User%253ANaamaMenda" title="User%253ANaamaMenda">Naama
+Menda</a> at
+<a href="http://www.sgn.cornell.edu/" class="external text"
+rel="nofollow">Sol Genomics Network (SGN)</a> led by Lukas Mueller.</p>
+<h2 id="span-idwhere_to_find_it-classmw-headlinewhere-to-find-itspan"><span id="Where_to_find_it" class="mw-headline">Where to find it</span></h2>
+<h3 id="span-idgmod_11-classmw-headlinegmod-11span"><span id="gmod_1.1" class="mw-headline">gmod 1.1</span></h3>
+<p>In the 1.1 release,load_ncbi_taxonomy.pl is installed with other scripts
+with the distribution and will typically go in /usr/bin or
+/usr/local/bin.</p>
+<h2 id="span-idcommand_line_options-classmw-headlinecommand-line-optionsspan"><span id="Command_line_options" class="mw-headline">Command line options</span></h2>
+<ul>
+<li><code>-H hostname</code> for database [required if <code>-g</code> isn&rsquo;t used]</li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-D database name&lt;/t&gt; [required if &lt;tt&gt;-g</code> isn&rsquo;t used]</li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-g GMOD database profile name</code> (can provide host and DB name)
+Default: <code>default</code></li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-p phylotree name</code> (optional - defaults to <code>NCBI taxonomy tree</code>. You
+want to set this if you plan to load more than one tree)</li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-i input file</code> - list of taxonomy ids to be stored (optional- without
+this the entire NCBI taxonomy will be loaded)</li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-v</code> verbose output</li>
+</ul>
+<!-- -->
+<ul>
+<li><code>-t</code> trial mode. Don&rsquo;t perform any store operations at all. (trial
+mode cannot test inserting associated data for new terms)</li>
+</ul>
+<p>For storing phylonodes a new phylotree will be stored with the name
+&lsquo;NCBI taxonomy tree&rsquo;. Each organism will get a phylonode id and will be
+stored in a tmp table, since each phylonode (except for the root) has a
+parent_phylonode_id, which is an internal foreign key. Next each
+phylonode will get a left and right indexes, which are calculated by
+walking down the entire tree structure (see article by Aaron Mackey: <a
+href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html?page=2"
+class="external free"
+rel="nofollow"><a href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html?page=2">http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html?page=2</a></a>).
+Only after each phylonode will have calculated indexes, the phylonode
+table will be populated from the tmp table.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253ASGN" title="Category%253ASGN">SGN</a></li>
+<li><a href="Category%253AChado" title="Category%253AChado">Chado</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_ncbi_taxonomy" rel="smw-browse">Browse
+properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 23:29 on 29 December
+2010.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">11,778 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>

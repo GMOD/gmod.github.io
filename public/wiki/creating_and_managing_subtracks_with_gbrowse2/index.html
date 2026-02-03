@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating and Managing Subtracks with GBrowse2 - GMOD</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    a { color: #0366d6; }
+    img { max-width: 100%; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; }
+    code { background: #f6f8fa; padding: 0.2em 0.4em; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+  </style>
+</head>
+<body>
+  <header><a href="/wiki/Main_Page"><img src="/images/GMOD-cogs.png" alt="GMOD" width="100"></a></header>
+  <main>
+<article>
+  <p><span id="top"></span></p>
+<h1 id="span-dirautocreating-and-managing-subtracks-with-gbrowse2span"><span dir="auto">Creating and Managing Subtracks with GBrowse2</span></h1>
+<p><em>For the main GBrowse 2.0 HOWTO article, see: <a href="GBrowse_2.0_HOWTO" title="GBrowse 2.0 HOWTO">GBrowse 2.0
+HOWTO</a>.</em></p>
+<p>As of GBrowse version 2.09, you can create an unlimited number of
+subtracks within a single major track in order to group a series of
+datasets that are logically linked, such as a timecourse. You can choose
+which subtracks to show by default and the order in which they will
+appear. When the user clicks a designated area in the titlebar, a dialog
+box appears that allows the user to select which subtracks to make
+visible. The user can also drag subtrack labels up and down to adjust
+the order in which they are displayed.</p>
+<p>There are two mechanisms for defining subtracks. The &ldquo;Metadata&rdquo;
+mechanism (new in version 2.48) is used when you have one feature per
+subtrack such as a whole genome quantitative (&ldquo;wiggle&rdquo;) feature and each
+feature is enumerable by its display name. You provide a file that lists
+each feature subtrack explicitly.</p>
+<p>The second mechanism is more flexible and is used when there are too
+many features to list explicitly and/or there are more than one feature
+per subtrack. In this scheme, each subtrack is defined by a set of
+feature filters. The filters are applied to each filter in turn, sorting
+them into the appropriate subtrack.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#Using_Metadata"><span class="tocnumber">1</span> <span class="toctext">Using
+Metadata</span></a>
+<ul>
+<li><a href="#Full_Example"><span class="tocnumber">1.1</span> <span class="toctext">Full
+Example</span></a></li>
+</ul>
+</li>
+<li><a href="#Using_Subtrack_Select"><span class="tocnumber">2</span> <span class="toctext">Using Subtrack
+Select</span></a>
+<ul>
+<li><a href="#A_Basic_Example"><span class="tocnumber">2.1</span> <span class="toctext">A Basic
+Example</span></a></li>
+<li><a href="#Multidimensional_Subtracks"><span class="tocnumber">2.2</span>
+<span class="toctext">Multidimensional
+Subtracks</span></a></li>
+<li><a href="#Adding_subtrack_IDs_to_the_Table"><span class="tocnumber">2.3</span> <span class="toctext">Adding
+subtrack IDs to the Table</span></a></li>
+<li><a href="#Labeling_Subtracks"><span class="tocnumber">2.4</span> <span class="toctext">Labeling
+Subtracks</span></a></li>
+<li><a href="#Hiding_Subtracks_with_no_Data"><span class="tocnumber">2.5</span> <span class="toctext">Hiding
+Subtracks with no Data</span></a></li>
+</ul>
+</li>
+</ul>
+<h2 id="span-idusing_metadata-classmw-headlineusing-metadataspan"><span id="Using_Metadata" class="mw-headline">Using Metadata</span></h2>
+<p>If you have just a few features and there is a one-to-one correspondence
+between feature and subtrack, then the easiest way to define subtracks
+is by use of an external metadata file. A typical file looks like this:</p>
+<pre><code>[feature_name_1]
+:dbid        = f101
+:selected    = 1
+display_name = My First Feature
+type         = some_type1
+method       = my_method1
+source       = my_source1
+some_attribute    = value1
+another_attribute = value2
+
+[feature_name_2]
+:dbid        = f102
+:selected    = 1
+display_name = My Second Feature
+type         = some_type2
+method       = my_method2
+source       = my_source2
+some_attribute    = value3
+another_attribute = value4
+
+[feature_name_3]
+:dbid        = f103
+type         = some_type2
+method       = my_method2
+source       = my_source2
+some_attribute    = value5
+another_attribute = value6
+</code></pre>
+<p>Each [stanza] begins with the name of a feature as it is represented
+in the underlying database. Below each [stanza] heading are a series
+of tag=value pairs. The following tag names have special meaning:</p>
+<pre><code>:dbid          Optional unique identifier for the subtrack; If provided, it can be used in the GBrowse
+               URL to select the subtrack.
+:selected      If true, this subtrack is selected by default when the containing track is turned on.
+display_name   Display name for the feature. If not present, will
+               default to the feature's native display name (i.e. the one in the [stanza]).
+type           What is returned by calling the feature's type() method.
+method         What is returned by calling the feature's method() method.
+source         What is returned by calling the feature's source() method.
+score          What is returned by calling the feature's score() method.
+</code></pre>
+<p>Any other tags become sortable attributes which are displayed by the
+GBrowse subtrack selection dialog box. For this to work properly, each
+tag must be present in each stanza. Tags that are present in some
+stanzas and not others are ignored.</p>
+<p>Save this file anywhere convenient and then associate it with the
+desired track using the <strong>metadata</strong> option. This option takes the full
+path name to the metadata file. For example:</p>
+<pre><code>[ChIP-Seq]
+database = Peaks
+feature  = signal
+glyph    = vista_ploat
+metadata = /var/www/gbrowse2/databases/chip-seq/metadata.txt
+</code></pre>
+<h3 id="span-idfull_example-classmw-headlinefull-examplespan"><span id="Full_Example" class="mw-headline">Full Example</span></h3>
+<p>Here is a full working example of a metadata-based subtrack definition
+that shows a number of ChIP-seq experiments with the attributes
+&ldquo;factor&rdquo;, &ldquo;stage&rdquo; and &ldquo;algorithm&rdquo;. The subtrack selection dialog that
+this generates is shown on the right.</p>
+<p>modENCODE ChIP-seq subtrack selector</p>
+<h3 id="span-idmultidimensional_subtracks-classmw-headlinemultidimensional-subtracksspan"><span id="Multidimensional_Subtracks" class="mw-headline">Multidimensional Subtracks</span></h3>
+<p>The previous example partitioned subtracks on a single dimension. This
+example will show how to create individually-selectable subtracks based
+on multiple selection dimensions. As an example, we use a track based on
+the <a href="http://www.modencode.org" class="external text"
+rel="nofollow">modENCODE</a> ChIP-seq tracks. These have four different
+dimensions, corresponding to the antibody used to bring down
+chromatin-bound transcription factors, the organism&rsquo;s developmental
+stage, the temperature at which the organism was grown, and whether the
+data set has been validated.</p>
+<p>The images below and to the right show a development version of the
+histone modification ChIP-seq track from the modENCODE project and the
+dialog box used to select among the subtracks. This track was created
+with the following configuration:</p>
+<pre><code>[ChIP-seq]
+subtrack select = Antibody    tag_value antibody    ;
+                  Stage       tag_value stage       ;
+                  Temperature tag_value temp        ;
+                  Confirmed   has_tag   confirmed   ;
+subtrack table = H3K4Me3  E0-4h 23  1 * ;
+                 H3K4Me3  E4-8h 23  0   ;
+                 H3K4Me3  pupae 23  0   ;
+                 H3K4Me3  pupae 26  0   ;
+                 H3K9Me2  E0-4h 23  0 * ;
+                 H3K9Me2  E4-8h 23  1   ;
+                 H3K9Me2  pupae 23  0   ;
+                 H3K9Me2  pupae 26  1   ;
+                 H3K27Me3 E0-4h 23  1 * ;
+subtrack select labels = E0-4h &quot;Early embryo&quot; ;
+                         E4-8h &quot;Late embryo&quot;  ;
+                         pupae &quot;Pupating larvae&quot; ;
+brief comment = This track shows modENCODE ChIP-seq characterization of
+                histone marks across various stages and growth conditions.
+</code></pre>
+<p>In this case, the <strong>subtrack select</strong> option has four lines, each one
+separated by a semicolon (the semicolon on the final line is optional).
+Each line defines a subtrack dimension and has the format described
+above, consisting of a column label and a Bio::SeqFeature method call.
+However, in this case all the dimensions are contained in the features'
+tags (also known as feature &ldquo;attributes&rdquo;), which are accessed using the
+tag_value() and has_tag() methods. To specify which tags we are
+interested in, there is a third space-delimited argument that contains
+the tag name. So the Antibody dimension is determined by calling
+$feature-&gt;tag_value(&lsquo;antibody&rsquo;) and the Confirmed dimension is
+determined by calling $feature-&gt;has_tag(&lsquo;confirmed&rsquo;).</p>
+<p>The <strong>subtrack table</strong> option lists each of the possible subtracks. The
+first four columns correspond to the four dimensions specified by
+<strong>subtrack select</strong>, e.g. antibody followed by developmental stage,
+followed by temperature and confirmation status. In this case we do not
+specify subtrack labels for reasons discussed later. However, since
+there are a lot of subtracks, we do not want them all to be displayed by
+default. The optional asterisk symbol (*) falling anywhere inside a
+subtrack table line indicates that this subtrack is to be turned on by
+default. If no asterisks are present, all subtracks are turned on.</p>
+<p>The <strong>brief comment</strong> option serves to define a short description of the
+subtracks that will be printed in the subtrack selection dialog box.</p>
+<h3 id="span-idadding_subtrack_ids_to_the_table-classmw-headlineadding-subtrack-ids-to-the-tablespan"><span id="Adding_subtrack_IDs_to_the_Table" class="mw-headline">Adding subtrack IDs to the Table</span></h3>
+<p>If you wish to embed GBrowse in another application, you will probably
+want to assign IDs to the subtracks so that they can be turned on and
+off via the GBrowse URL in the same way that whole tracks are turned on
+and off. To do this, append &ldquo;=<em>identifier</em>&rdquo; to each line of the subtrack
+table like this:</p>
+<pre><code>subtrack table = H3K4Me3  E0-4h 23  1 * =100 ;
+                 H3K4Me3  E4-8h 23  0   =101 ;
+                 H3K4Me3  pupae 23  0   =102 ;
+                 H3K4Me3  pupae 26  0   =103 ;
+                 H3K9Me2  E0-4h 23  0 * =104 ;
+                 H3K9Me2  E4-8h 23  1   =105 ;
+                 H3K9Me2  pupae 23  0   =106 ;
+                 H3K9Me2  pupae 26  1   =107 ;
+                 H3K27Me3 E0-4h 23  1 * =108 ;
+</code></pre>
+<p>The identifier can be any combination of letters and numbers. Its exact
+position on the line doesn&rsquo;t matter.</p>
+<p>The identifiers can then be used to select subtrack in the GBrowse URL:</p>
+<pre><code>  http://your.site/cgi-bin/gb2/gbrowse/elegans/?q=I:1000..2000;l=ChIP-seq/100+102+103
+</code></pre>
+<p>This will select the region between positions 1000 and 2000 on
+chromosome I, and turn on the ChIP-seq track, subtracks 100, 102 and
+103.</p>
+<h3 id="span-idlabeling_subtracks-classmw-headlinelabeling-subtracksspan"><span id="Labeling_Subtracks" class="mw-headline">Labeling Subtracks</span></h3>
+<p>Subtracks are labeled on the left side of the panel. If you are using
+&ldquo;label_position=left&rdquo; in your stanza, or the genes glyph with
+&ldquo;label_transcripts&rdquo; set to true, then it is possible for the labels of
+individual features to collide with the subtrack labels. There are two
+ways around this problem. One is to turn off subtrack labeling entirely
+and to let each individual feature&rsquo;s label identify subtracks. This
+works well with chromosome-wide features such as wiggle tracks when
+there is only one feature per subtrack (this is illustrated in the
+modENCODE data set above). The other is to relocate the position of the
+subtrack label to the top of the subtrack, where it won&rsquo;t clash with the
+feature labels. GBrowse will attempt to detect potential clash cases,
+and to configure them for you automatically, but there may be cases
+where you to have intervene manually.</p>
+<p>To implement the first scheme, set the option &ldquo;group_label&rdquo; to a false
+value:</p>
+<pre><code> group_label = 0
+</code></pre>
+<p>Be sure that the label assigned to each feature is sufficiently
+informative that they can substitute for the subtrack label.</p>
+<p>To implement the second scheme, set &ldquo;group_label_position&rdquo; to &ldquo;top&rdquo;:</p>
+<pre><code> group_label_position = top
+</code></pre>
+<p>For compatibility with earlier behavior, GBrowse will automatically set
+group_label to 0 if the track consists of quantitative data (uses one of
+the wiggle, xyplot, density or whisker glyphs). Please set group_label
+to a true value in order to activate subtrack labeling.</p>
+<h3 id="span-idhiding_subtracks_with_no_data-classmw-headlinehiding-subtracks-with-no-dataspan"><span id="Hiding_Subtracks_with_no_Data" class="mw-headline">Hiding Subtracks with no Data</span></h3>
+<p>By default, if a subtrack has no data in the currently displayed region,
+its label will still be printed to show that the subtrack exists. If you
+prefer, you can set <strong>hide empty subtracks</strong> to a true value, in which
+case the display of empty subtracks will be suppressed.</p>
+<p><a href="Special%253ACategories" title="Special%253ACategories">Categories</a>:</p>
+<ul>
+<li><a href="Category%253AGBrowse" title="Category%253AGBrowse">GBrowse</a></li>
+<li><a href="Category%253AHOWTO" title="Category%253AHOWTO">HOWTO</a></li>
+<li><a href="Category%253AConfiguration" title="Category%253AConfiguration">Configuration</a></li>
+</ul>
+<h2 id="navigation-menu">Navigation menu</h2>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><span id="n-GMOD-Home"><a href="Main_Page">GMOD Home</a></span></li>
+<li><span id="n-Software"><a href="GMOD_Components">Software</a></span></li>
+<li><span id="n-Categories-.2F-Tags"><a href="Categories">Categories /
+Tags</a></span></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><span id="n-Overview"><a href="Overview">Overview</a></span></li>
+<li><span id="n-FAQs"><a href="Category%253AFAQ">FAQs</a></span></li>
+<li><span id="n-HOWTOs"><a href="Category%253AHOWTO">HOWTOs</a></span></li>
+<li><span id="n-Glossary"><a href="Glossary">Glossary</a></span></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><span id="n-GMOD-News"><a href="GMOD_News">GMOD News</a></span></li>
+<li><span id="n-Training-.2F-Outreach"><a href="Training_and_Outreach">Training /
+Outreach</a></span></li>
+<li><span id="n-Support"><a href="Support">Support</a></span></li>
+<li><span id="n-GMOD-Promotion"><a href="GMOD_Promotion">GMOD Promotion</a></span></li>
+<li><span id="n-Meetings"><a href="Meetings">Meetings</a></span></li>
+<li><span id="n-Calendar"><a href="Calendar">Calendar</a></span></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<p><span id="t-smwbrowselink"><a href="Special%253ABrowse/Creating_and_Managing_Subtracks_with_GBrowse2"
+rel="smw-browse">Browse properties</a></span></p>
+</li>
+<li>
+<p><span id="footer-info-lastmod">Last updated at 19:42 on 17 April
+2012.</span></p>
+</li>
+</ul>
+<!-- - <span id="footer-info-viewcount">152,090 page views.</span> -->
+<ul>
+<li><span id="footer-info-copyright">Content is available under
+<a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
+rel="nofollow">a GNU Free Documentation License</a> unless otherwise
+noted.</span></li>
+</ul>
+<!-- -->
+<!-- -->
+
+</article>
+</main>
+</body>
+</html>
