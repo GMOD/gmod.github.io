@@ -36,13 +36,13 @@ Showing 21 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 unix  ,
@@ -54,12 +54,12 @@ os x  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 unix  ,
@@ -71,7 +71,7 @@ web  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 unix  ,
@@ -82,17 +82,17 @@ os x  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GBrowse_syn.1"
+<td class="smwpropname"><a href="/wiki/GBrowse_syn.1"
 title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GO_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/GO_Graphic_Viewer.1"
 title="GO Graphic Viewer">GO Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">web  ,
@@ -101,7 +101,7 @@ os x  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
+<td class="smwpropname"><a href="/wiki/GO%253A%253ATermFinder.1"
 title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 os x  ,
@@ -109,7 +109,7 @@ unix  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
@@ -118,7 +118,7 @@ title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
@@ -127,12 +127,12 @@ title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
@@ -141,7 +141,7 @@ title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 os x  ,
@@ -152,7 +152,7 @@ unix  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  ,
 linux  ,
@@ -164,12 +164,12 @@ os x  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  ,
 linux  ,
@@ -181,17 +181,17 @@ unix  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebApollo.1"
+<td class="smwpropname"><a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebApollo2"
+<td class="smwpropname"><a href="/wiki/WebApollo2"
 title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">web  </td>
 </tr>
@@ -200,7 +200,7 @@ title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
+<td class="smwpropname"><a href="/wiki/XORT.1" title="XORT">XORT</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">linux  ,
 unix  </td>
@@ -211,5 +211,5 @@ unix  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Allows value](Property%253AAllows_value "Property:Allows value")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | web , linux , os x , unix , windows , vm  and cloud |
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Allows value](/wiki/Property%253AAllows_value)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | web , linux , os x , unix , windows , vm  and cloud |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

@@ -71,14 +71,14 @@ This glossary does **not** define biology terms.
 ### AJAX
 
 AJAX is a web user interface technology used in some [GMOD
-Components](GMOD_Components "GMOD Components"). It is used to provide a
+Components](/wiki/GMOD_Components). It is used to provide a
 richer user experience than was typically available during the first 10
 years of the web. AJAX stands for Asynchronous Javascript and
 [XML](#XML).
 
 See Also:
 
-- [Category%253AAJAX](Category%253AAJAX "Category%253AAJAX")
+- [Category%253AAJAX](/wiki/Category%253AAJAX)
 
 ### API
 
@@ -93,8 +93,8 @@ or *GUI*, which is a direct user interface to a resource.
 *BAM* is a binary version of *[Sequence Alignment/Map (SAM)](#SAM)*
 format. BAM and SAM are both part of [SAMtools](#SAMtools). BAM is
 compressed, binary, indexed format for [Next Generation
-Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
-data. [GBrowse](GBrowse.1 "GBrowse") 2 has an adaptor that can read BAM
+Sequencing](/wiki/Next_Generation_Sequencing)
+data. [GBrowse](/wiki/GBrowse.1) 2 has an adaptor that can read BAM
 data.
 
 ### CPAN
@@ -119,7 +119,7 @@ See also
 
 - <a href="http://www.w3.org/Style/CSS/" class="external text"
   rel="nofollow">CSS Home Page @ W3C</a>
-- [MediaWiki%253ACommon.css](MediaWiki%253ACommon.css "MediaWiki%253ACommon.css") -
+- [MediaWiki%253ACommon.css](/wiki/MediaWiki%253ACommon.css) -
   Extensions to MediaWiki's default CSS that we have made on this web
   site.
 
@@ -132,7 +132,7 @@ files. GMOD now uses [SVN](#SVN).
 
 See Also:
 
-- <a href="Subversion" class="mw-redirect"
+- <a href="/wiki/Subversion" class="mw-redirect"
   title="Subversion">Subversion</a>
 - <a href="http://ximbiot.com/cvs/" class="external text"
   rel="nofollow">CVS Home Page</a>
@@ -152,7 +152,7 @@ See also:
 ### DAS
 
 See [Distributed Annotation
-System](Distributed_Annotation_System "Distributed Annotation System")
+System](/wiki/Distributed_Annotation_System)
 
 ### Database
 
@@ -164,13 +164,13 @@ defined format.
 
 For example, the *database* behind the FlyBase web site contains data on
 drosopholids, and uses the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> schema and
-the [PostgreSQL](PostgreSQL "PostgreSQL") [database management
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> schema and
+the [PostgreSQL](/wiki/PostgreSQL) [database management
 system](#Database_Management_System).
 
 See also:
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
 - [Database Management System](#Database_Management_System)
 - [Database Schema](#Database_Schema)
 - [DBMS-Database](#DBMS-Database)
@@ -178,8 +178,8 @@ See also:
 ### Database Management System
 
 *Database management systems* (DBMSs) are software systems that can
-manage data. [PostgreSQL](PostgreSQL "PostgreSQL"),
-[MySQL](MySQL "MySQL"), Oracle and Sybase are all examples of DBMSs.
+manage data. [PostgreSQL](/wiki/PostgreSQL),
+[MySQL](/wiki/MySQL), Oracle and Sybase are all examples of DBMSs.
 DBMSs are containers of databases. That is, they are the systems that
 manage databases, which is distinct from the data that they manage.
 
@@ -190,24 +190,24 @@ database management system* (RDBMS) interchangeably.
 
 See also:
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
 - [Database](#Database)
 - [Database Schema](#Database_Schema)
-- [MySQL](MySQL "MySQL")
-- [PostgreSQL](PostgreSQL "PostgreSQL")
+- [MySQL](/wiki/MySQL)
+- [PostgreSQL](/wiki/PostgreSQL)
 - [Relational](#Relational)
 
 ### Database Schema
 
 A *database schema* is the design of a particular database, independent
 of its contents.
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> is an
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is an
 example of a *database schema*. Designs (like Chado) can be reused
 across multiple databases.
 
 See also:
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
 - [Database](#Database)
 - [Database Management System](#Database_Management_System)
 - [DBMS-Schema](#DBMS-Schema)
@@ -282,7 +282,7 @@ A former name for [GFF](#GFF).
 
 ### Generic Feature Format
 
-See [GFF](GFF "GFF").
+See [GFF](/wiki/GFF).
 
 ### General Feature Format
 
@@ -290,12 +290,12 @@ A former name for [GFF](#GFF).
 
 ### GFF
 
-**[GFF](GFF "GFF")** is a standard file format for storing genomic
+**[GFF](/wiki/GFF)** is a standard file format for storing genomic
 features in a text file. GFF stands for ***G**eneric **F**eature
 **F**ormat*. GFF files are plain text, 9 column, tab-delimited files.
-GFF *[databases](Databases_and_GMOD "Databases and GMOD")* also exist.
+GFF *[databases](/wiki/Databases_and_GMOD)* also exist.
 They use a [schema](#Schema) custom built to represent GFF data. GFF is
-[frequently used in GMOD](GFF#GFF_in_GMOD "GFF") for data exchange and
+[frequently used in GMOD](/wiki/GFF#GFF_in_GMOD) for data exchange and
 representation of genomic data.
 
 There are two versions of GFF supported in GMOD: [GFF3](#GFF3) and
@@ -303,28 +303,28 @@ There are two versions of GFF supported in GMOD: [GFF3](#GFF3) and
 
 See also:
 
-- [GFF](GFF "GFF") - all things GFF and GFF3
+- [GFF](/wiki/GFF) - all things GFF and GFF3
 
 ### GFF2
 
-[GFF2](GFF2 "GFF2") is a supported [GFF](#GFF) format in GMOD, **but it
+[GFF2](/wiki/GFF2) is a supported [GFF](#GFF) format in GMOD, **but it
 is now deprecated and if you have a choice you should use
 [GFF3](#GFF3)**. Unfortunately, data is sometimes only available in GFF2
 format. GFF2 has a number of shortcomings compared to GFF3.
 
 See also:
 
-- [GFF2](GFF2 "GFF2")
+- [GFF2](/wiki/GFF2)
 
 ### GFF3
 
-[GFF3](GFF3 "GFF3") is the most recent version of the [GFF](#GFF)
+[GFF3](/wiki/GFF3) is the most recent version of the [GFF](#GFF)
 format. It has many advantages over the now deprecated [GFF2](#GFF2) and
 should be used in favor of GFF2 whenever possible.
 
 See also:
 
-- [GFF3](GFF3 "GFF3")
+- [GFF3](/wiki/GFF3)
 - <a href="http://www.sequenceontology.org/gff3.shtml"
   class="external text" rel="nofollow">GFF3 Specification</a>
 
@@ -351,7 +351,7 @@ need to convert it to [GFF3](#GFF3).
 See also:
 
 - [GFF](#GFF)
-- The [GTF section](GFF#GTF "GFF") of the [GFF](GFF "GFF") page.
+- The [GTF section](/wiki/GFF#GTF) of the [GFF](/wiki/GFF) page.
 
 ### GUI
 
@@ -366,11 +366,11 @@ only the keyboard.
 *Java* is arguably the world's most popular programming language but it
 is not as popular for command-line work on Unix as [Perl](#Perl). It's
 encountered in GMOD primarily as a language to construct user interfaces
-(e.g. [Apollo](Apollo.1 "Apollo")).
+(e.g. [Apollo](/wiki/Apollo.1)).
 
 See also:
 
-- [Category%253AJava](Category%253AJava "Category%253AJava") - GMOD pages tagged as
+- [Category%253AJava](/wiki/Category%253AJava) - GMOD pages tagged as
   related to Java.
 
 ### JRE
@@ -382,7 +382,7 @@ Environment* or *JRE*.
 
 *JSON* is an acronym for JavaScript Object Notation, a lightweight
 data-interchange format. It is used in GMOD in
-[Galaxy](Galaxy.1 "Galaxy") and [JBrowse](JBrowse.1 "JBrowse").
+[Galaxy](/wiki/Galaxy.1) and [JBrowse](/wiki/JBrowse.1).
 
 See also:
 
@@ -398,8 +398,8 @@ operating system for GMOD.
 See also:
 
 - [Computing
-  Requirements](Computing_Requirements "Computing Requirements")
-- [Category%253ALinux](Category%253ALinux "Category%253ALinux") - List of GMOD pages
+  Requirements](/wiki/Computing_Requirements)
+- [Category%253ALinux](/wiki/Category%253ALinux) - List of GMOD pages
   tagged as related to Linux.
 
 ### Middleware
@@ -411,7 +411,7 @@ does not work.
 
 See also:
 
-- [Category%253AMiddleware](Category%253AMiddleware "Category%253AMiddleware") -
+- [Category%253AMiddleware](/wiki/Category%253AMiddleware) -
   List of GMOD pages tagged as related to middleware.
 
 ### Object-Relational Mapping
@@ -440,7 +440,7 @@ rel="nofollow">Microsoft Windows</a> and [Linux](#Linux).
 See also:
 
 - [Computing
-  Requirements](Computing_Requirements "Computing Requirements")
+  Requirements](/wiki/Computing_Requirements)
 
 ### ORM
 
@@ -456,10 +456,10 @@ See [Operating System](#Operating_System).
 realm, and it is the language most used by GMOD developers. It is
 well-suited to text and data processing and is also characterized by an
 extensive open source library, so it's highly functional. Many of GMOD
-components use [BioPerl](BioPerl "BioPerl"), a bioinformatics toolkit
+components use [BioPerl](/wiki/BioPerl), a bioinformatics toolkit
 written in Perl.
 
-Some parts of GMOD, like [GBrowse](GBrowse.1 "GBrowse"), can be extended
+Some parts of GMOD, like [GBrowse](/wiki/GBrowse.1), can be extended
 or customized using Perl but beginners' skills in Perl is sufficient for
 this work.
 
@@ -469,7 +469,7 @@ See also:
   Home Page</a>
 - <a href="http://cpan.perl.org/" class="external text"
   rel="nofollow">Perl's open source library repository.</a>
-- [Category%253APerl](Category%253APerl "Category%253APerl") - GMOD pages tagged as
+- [Category%253APerl](/wiki/Category%253APerl) - GMOD pages tagged as
   related to Perl.
 
 ### RDBMS
@@ -486,11 +486,11 @@ DBMSs that GMOD is concerned with are relational, so GMOD uses the terms
 
 See also:
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
 - [Database](#Database)
 - [Database Schema](#Database_Schema)
-- [MySQL](MySQL "MySQL")
-- [PostgreSQL](PostgreSQL "PostgreSQL")
+- [MySQL](/wiki/MySQL)
+- [PostgreSQL](/wiki/PostgreSQL)
 
 ### Relational Database Management System
 
@@ -501,16 +501,16 @@ System](#Database_Management_System).
 
 ***S**equence **A**lignment/**M**ap* format. SAM is a text format for
 [Next Generation
-Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](/wiki/Next_Generation_Sequencing)
 data. It is a part of [SAMtools](#SAMtools).
-[GBrowse](GBrowse.1 "GBrowse") 2 has an adaptor that can read SAM data.
+[GBrowse](/wiki/GBrowse.1) 2 has an adaptor that can read SAM data.
 
 ### SAMtools
 
 *<a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a>* is a set of formats and programs for
 storing, manipulating, and accessing [Next Generation
-Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](/wiki/Next_Generation_Sequencing)
 data.
 
 ### Schema
@@ -532,20 +532,20 @@ from one DBMS to another.
 is used by most of GMOD. Source code control systems, also known as
 *revision control* or *version control* systems are used to record
 changes to computer files. GMOD
-[converted](CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+[converted](/wiki/CVS_to_Subversion_Conversion)
 from [CVS](#CVS) to
-<a href="SVN" class="mw-redirect" title="SVN">SVN</a> on 2009/09/15.
+<a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> on 2009/09/15.
 
 GMOD's main source code repository is at
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/"
 class="external text" rel="nofollow">SourceForge</a>.
-<a href="Subversion" class="mw-redirect"
+<a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a> explains how to both download and
 update the main GMOD repository at SourceForge.
 
 See Also:
 
-- <a href="Subversion" class="mw-redirect"
+- <a href="/wiki/Subversion" class="mw-redirect"
   title="Subversion">Subversion</a>
 
 ### Unix
@@ -553,7 +553,7 @@ See Also:
 *Unix* is a group of [operating systems](#Operating_System) that are
 descended from the original Unix operating system developed in the
 1970s. This includes Solaris, HP-UX, [Linux](#Linux), [Mac OS
-X](Category%253AMac_OS_X "Category%253AMac OS X"), and many others.
+X](/wiki/Category%253AMac_OS_X), and many others.
 
 ### XML
 
@@ -563,5 +563,5 @@ has a much tighter syntax than does HTML.
 
 See also:
 
-- [Category%253AXML](Category%253AXML "Category%253AXML")
-- [XORT](XORT.1 "XORT")
+- [Category%253AXML](/wiki/Category%253AXML)
+- [XORT](/wiki/XORT.1)

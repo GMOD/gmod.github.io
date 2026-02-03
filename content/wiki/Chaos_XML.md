@@ -37,8 +37,8 @@ title: "Chaos XML"
 Chaos-XML is based on the Chado relational model and is a subset of
 Chado's content. For a full explanation of the meaning of the elements
 in Chaos-XML, please refer to the [Chado
-manual](Chado_Manual "Chado Manual") and in particular the [sequence
-module documentation](Chado_Sequence_Module "Chado Sequence Module").
+manual](/wiki/Chado_Manual) and in particular the [sequence
+module documentation](/wiki/Chado_Sequence_Module).
 
 Chaos XML was created at around the same time the main chado software
 development team at FlyBase devised the official Chado XML format. Chado
@@ -126,8 +126,8 @@ this distribution (see the `chaos-xml/bin/` directory)
 ## Future Extensions
 
 As new modules are added to chado (for example, the [genetics
-module](Chado_Genetic_Module "Chado Genetic Module") and the [phylogeny
-module](Chado_Phylogeny_Module "Chado Phylogeny Module")), corresponding
+module](/wiki/Chado_Genetic_Module) and the [phylogeny
+module](/wiki/Chado_Phylogeny_Module)), corresponding
 chaos-xml DTDs will be generated.
 
 ## Differences between Chaos XML and the Chado Relational Database Schema
@@ -135,23 +135,23 @@ chaos-xml DTDs will be generated.
 ### Coordinates
 
 Chaos uses *nbeg* and *nend* as opposed to the *fmin* and *fmax* found
-in the [feature table](Chado_Tables#Table:_feature "Chado Tables").
+in the [feature table](/wiki/Chado_Tables#Table:_feature).
 
 ### Dbxref Flattening
 
 Chaos collapses the normalised chado table
-[dbxref](Chado_Tables#Table:_dbxref "Chado Tables") into a single
+[dbxref](/wiki/Chado_Tables#Table:_dbxref) into a single
 "dbxrefstr" PCDATA element.
 
 ### Type Flattening
 
 Chaos uses a PCDATA element *type* in both
-[feature](Chado_Tables#Table:_feature "Chado Tables") and
-[feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables").
+[feature](/wiki/Chado_Tables#Table:_feature) and
+[feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship).
 In Chado, types are represented as a foreign key into the [cvterm
-table](Chado_Tables#Table:_cvterm "Chado Tables"). In Chaos the type
+table](/wiki/Chado_Tables#Table:_cvterm). In Chaos the type
 string is implicitly mapped to
-[cvterm](Chado_Tables#Table:_cvterm "Chado Tables") with the same name
+[cvterm](/wiki/Chado_Tables#Table:_cvterm) with the same name
 as the type, from the
 <a href="http://sequenceontology.org" class="external text"
 rel="nofollow">Sequence Ontology (SO)</a> CV.
@@ -159,4 +159,4 @@ rel="nofollow">Sequence Ontology (SO)</a> CV.
 ### Organism Flattening
 
 Chaos uses an *organismstr* PCDATA element to represent the normalised
-chado table [organism](Chado_Tables#Table:_organism "Chado Tables").
+chado table [organism](/wiki/Chado_Tables#Table:_organism).

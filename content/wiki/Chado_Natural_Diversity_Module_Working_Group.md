@@ -4,10 +4,10 @@ title: "Chado Natural Diversity Module Working Group"
 # Chado Natural Diversity Module Working Group
 
 The **[Chado Natural Diversity
-Module](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
+Module](/wiki/Chado_Natural_Diversity_Module.1)
 Working Group** was established with the aim of getting the Chado
 Natural Diversity Module into the production version of
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 
 
@@ -24,7 +24,7 @@ Natural Diversity Module into the production version of
 # Discussion
 
 See the [discussion
-page](Talk%253AChado_Natural_Diversity_Module_Working_Group "Talk:Chado Natural Diversity Module Working Group")
+page](/wiki/Talk%253AChado_Natural_Diversity_Module_Working_Group)
 for notes on what we've talked about and where we are heading. Once the
 discussion settle, a summary of decisions will appear here.
 
@@ -51,7 +51,7 @@ research. This first version was directly inspired by the
 rel="nofollow">Genomic Diversity and Phenotype Data Model (GDPDM)</a>,
 which comes out of Cornell. The GDPDM has great documentation and is
 also described in [this
-presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/GDPDM_GMOD_presentation20060630.ppt "File:GDPDM GMOD presentation20060630.ppt").
+presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/GDPDM_GMOD_presentation20060630.ppt).
 
 ### Links
 
@@ -64,4 +64,4 @@ presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawi
 # Stock Relationship Ontology
 
 [Stock Relationship
-Ontology](Stock_Relationship_Ontology "Stock Relationship Ontology")
+Ontology](/wiki/Stock_Relationship_Ontology)

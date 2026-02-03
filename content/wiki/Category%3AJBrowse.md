@@ -9,7 +9,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 ## Pages in category "JBrowse"
 
@@ -25,146 +25,144 @@ The following 44 pages are in this category, out of 44 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="ABRF2010_Workshop" title="ABRF2010 Workshop">ABRF2010
+<li><a href="/wiki/ABRF2010_Workshop" title="ABRF2010 Workshop">ABRF2010
 Workshop</a></li>
-<li><a href="August_2009_GMOD_Meeting"
+<li><a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">August 2009 GMOD Meeting</a></li>
 </ul>
 <h3 id="b">B</h3>
 <ul>
-<li><span class="redirect-in-category"><a
-href="BrowseDev/Using_a_Database_With_JBrowse" class="mw-redirect"
+<li><span class="redirect-in-category"><a href="/wiki/BrowseDev/Using_a_Database_With_JBrowse" class="mw-redirect"
 title="BrowseDev/Using a Database With JBrowse">BrowseDev/Using a
 Database With JBrowse</a></span></li>
 </ul>
 <h3 id="d">D</h3>
 <ul>
-<li><a href="Downloads" title="Downloads">Downloads</a></li>
+<li><a href="/wiki/Downloads" title="Downloads">Downloads</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GMOD_Malaysia_2014/JBrowse_Tutorial"
+<li><a href="/wiki/GMOD_Malaysia_2014/JBrowse_Tutorial"
 title="GMOD Malaysia 2014/JBrowse Tutorial">GMOD Malaysia 2014/JBrowse
 Tutorial</a></li>
-<li><a href="GSoC" title="GSoC">GSoC</a></li>
+<li><a href="/wiki/GSoC" title="GSoC">GSoC</a></li>
 </ul>
 <h3 id="j">J</h3>
 <ul>
-<li><a href="January_2009_GMOD_Meeting"
+<li><a href="/wiki/January_2009_GMOD_Meeting"
 title="January 2009 GMOD Meeting">January 2009 GMOD Meeting</a></li>
-<li><a href="JBrowse.1" title="JBrowse">JBrowse</a></li>
-<li><a href="JBrowse_Configuration_Guide"
+<li><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></li>
+<li><a href="/wiki/JBrowse_Configuration_Guide"
 title="JBrowse Configuration Guide">JBrowse Configuration Guide</a></li>
-<li><a href="JBrowse_PSB_2020" title="JBrowse PSB 2020">JBrowse PSB
+<li><a href="/wiki/JBrowse_PSB_2020" title="JBrowse PSB 2020">JBrowse PSB
 2020</a></li>
-<li><span class="redirect-in-category"><a href="JBrowse_Tutorial"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowse_Tutorial"
 class="mw-redirect" title="JBrowse Tutorial">JBrowse
 Tutorial</a></span></li>
-<li><a href="JBrowse_Tutorial_2010"
+<li><a href="/wiki/JBrowse_Tutorial_2010"
 title="JBrowse Tutorial 2010">JBrowse Tutorial 2010</a></li>
-<li><a href="JBrowse_Tutorial_2011"
+<li><a href="/wiki/JBrowse_Tutorial_2011"
 title="JBrowse Tutorial 2011">JBrowse Tutorial 2011</a></li>
-<li><span class="redirect-in-category"><a href="JBrowse_Tutorial_2012"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowse_Tutorial_2012"
 class="mw-redirect" title="JBrowse Tutorial 2012">JBrowse Tutorial
 2012</a></span></li>
-<li><a href="JBrowse_Tutorial_2013"
+<li><a href="/wiki/JBrowse_Tutorial_2013"
 title="JBrowse Tutorial 2013">JBrowse Tutorial 2013</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="j-cont.">J cont.</h3>
 <ul>
-<li><a href="JBrowse_Tutorial_PAG_2015"
+<li><a href="/wiki/JBrowse_Tutorial_PAG_2015"
 title="JBrowse Tutorial PAG 2015">JBrowse Tutorial PAG 2015</a></li>
-<li><a href="JBrowse_Tutorial_PAG_2018"
+<li><a href="/wiki/JBrowse_Tutorial_PAG_2018"
 title="JBrowse Tutorial PAG 2018">JBrowse Tutorial PAG 2018</a></li>
-<li><a href="JBrowse_Tutorial_Programming_for_Biology_2014"
+<li><a href="/wiki/JBrowse_Tutorial_Programming_for_Biology_2014"
 title="JBrowse Tutorial Programming for Biology 2014">JBrowse Tutorial
 Programming for Biology 2014</a></li>
-<li><a href="JBrowse/tool_data" title="JBrowse/tool data">JBrowse/tool
+<li><a href="/wiki/JBrowse/tool_data" title="JBrowse/tool data">JBrowse/tool
 data</a></li>
-<li><a href="JBrowse2_Tutorial_PAG_2023"
+<li><a href="/wiki/JBrowse2_Tutorial_PAG_2023"
 title="JBrowse2 Tutorial PAG 2023">JBrowse2 Tutorial PAG 2023</a></li>
-<li><span class="redirect-in-category"><a href="JBrowseDev/Current"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowseDev/Current"
 class="mw-redirect"
 title="JBrowseDev/Current">JBrowseDev/Current</a></span></li>
-<li><span class="redirect-in-category"><a href="JBrowseDev/Installation"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowseDev/Installation"
 class="mw-redirect"
 title="JBrowseDev/Installation">JBrowseDev/Installation</a></span></li>
-<li><span class="redirect-in-category"><a href="JBrowseDev/Main"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowseDev/Main"
 class="mw-redirect"
 title="JBrowseDev/Main">JBrowseDev/Main</a></span></li>
-<li><a href="JBrowseDev/The_ClientConfig_Option"
+<li><a href="/wiki/JBrowseDev/The_ClientConfig_Option"
 title="JBrowseDev/The ClientConfig Option">JBrowseDev/The ClientConfig
 Option</a></li>
-<li><a href="JBrowseDev/The_CssClass_Option"
+<li><a href="/wiki/JBrowseDev/The_CssClass_Option"
 title="JBrowseDev/The CssClass Option">JBrowseDev/The CssClass
 Option</a></li>
-<li><a href="JBrowseDev/The_ExtraData_Option"
+<li><a href="/wiki/JBrowseDev/The_ExtraData_Option"
 title="JBrowseDev/The ExtraData Option">JBrowseDev/The ExtraData
 Option</a></li>
-<li><a href="JBrowseDev/The_SubfeatureClasses_Option"
+<li><a href="/wiki/JBrowseDev/The_SubfeatureClasses_Option"
 title="JBrowseDev/The SubfeatureClasses Option">JBrowseDev/The
 SubfeatureClasses Option</a></li>
-<li><a href="JBrowseDev/The_UrlTemplate_Option"
+<li><a href="/wiki/JBrowseDev/The_UrlTemplate_Option"
 title="JBrowseDev/The UrlTemplate Option">JBrowseDev/The UrlTemplate
 Option</a></li>
-<li><span class="redirect-in-category"><a href="JBrowseDev/Upcoming"
+<li><span class="redirect-in-category"><a href="/wiki/JBrowseDev/Upcoming"
 class="mw-redirect"
 title="JBrowseDev/Upcoming">JBrowseDev/Upcoming</a></span></li>
-<li><a href="July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
+<li><a href="/wiki/July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
 2008 GMOD Meeting</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="m">M</h3>
 <ul>
-<li><a href="Migrating_from_GBrowse_to_JBrowse"
+<li><a href="/wiki/Migrating_from_GBrowse_to_JBrowse"
 title="Migrating from GBrowse to JBrowse">Migrating from GBrowse to
 JBrowse</a></li>
-<li><a href="User%253AMitchSkinner"
+<li><a href="/wiki/User%253AMitchSkinner"
 title="User%253AMitchSkinner">User%253AMitchSkinner</a></li>
 </ul>
 <h3 id="n">N</h3>
 <ul>
-<li><a href="News/Feedback_Wanted%253A_JBrowse_UI_Redesign"
+<li><a href="/wiki/News/Feedback_Wanted%253A_JBrowse_UI_Redesign"
 title="News/Feedback Wanted: JBrowse UI Redesign">News/Feedback Wanted:
 JBrowse UI Redesign</a></li>
-<li><a href="News/JBrowse_1.7.0_Released"
+<li><a href="/wiki/News/JBrowse_1.7.0_Released"
 title="News/JBrowse 1.7.0 Released">News/JBrowse 1.7.0 Released</a></li>
-<li><a href="November_2007_GMOD_Meeting"
+<li><a href="/wiki/November_2007_GMOD_Meeting"
 title="November 2007 GMOD Meeting">November 2007 GMOD Meeting</a></li>
 </ul>
 <h3 id="r">R</h3>
 <ul>
-<li><a href="Reproducing_gbrowse_img_functionality_with_JBrowse"
+<li><a href="/wiki/Reproducing_gbrowse_img_functionality_with_JBrowse"
 title="Reproducing gbrowse img functionality with JBrowse">Reproducing
 gbrowse img functionality with JBrowse</a></li>
-<li><a href="User%253ARobertBuels"
+<li><a href="/wiki/User%253ARobertBuels"
 title="User%253ARobertBuels">User%253ARobertBuels</a></li>
-<li><a href="User%253ARSCummings"
+<li><a href="/wiki/User%253ARSCummings"
 title="User%253ARSCummings">User%253ARSCummings</a></li>
 </ul>
 <h3 id="s">S</h3>
 <ul>
-<li><a href="September_2010_GMOD_Meeting"
+<li><a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
 </ul>
 <h3 id="t-1">T</h3>
 <ul>
-<li><a href="Training_and_Outreach"
+<li><a href="/wiki/Training_and_Outreach"
 title="Training and Outreach">Training and Outreach</a></li>
-<li><a href="Template:TutorialList"
+<li><a href="/wiki/Template:TutorialList"
 title="Template:TutorialList">Template:TutorialList</a></li>
 </ul>
 <h3 id="u">U</h3>
 <ul>
-<li><span class="redirect-in-category"><a
-href="Using_Existing_Databases_With_JBrowse" class="mw-redirect"
+<li><span class="redirect-in-category"><a href="/wiki/Using_Existing_Databases_With_JBrowse" class="mw-redirect"
 title="Using Existing Databases With JBrowse">Using Existing Databases
 With JBrowse</a></span></li>
 </ul>
 <h3 id="w">W</h3>
 <ul>
-<li><a href="Web-apollo-meeting-2011-1-6"
+<li><a href="/wiki/Web-apollo-meeting-2011-1-6"
 title="Web-apollo-meeting-2011-1-6">Web-apollo-meeting-2011-1-6</a></li>
-<li><a href="Web-apollo-meeting-2011-3-21"
+<li><a href="/wiki/Web-apollo-meeting-2011-3-21"
 title="Web-apollo-meeting-2011-3-21">Web-apollo-meeting-2011-3-21</a></li>
 </ul></td>
 </tr>
@@ -191,7 +189,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Basepair-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/Basepair-options.png "File:Basepair-options.png")
+  [Basepair-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/Basepair-options.png)
   32 KB
 
 
@@ -214,7 +212,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Flatfile-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Flatfile-options.png "File:Flatfile-options.png")
+  [Flatfile-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Flatfile-options.png)
   60 KB
 
 
@@ -237,7 +235,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf "File:HelpDeskSept2010.pdf")
+  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf)
   10.54 MB
 
 
@@ -260,7 +258,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Aug2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/Aug2009JBrowse.pdf "File:Aug2009JBrowse.pdf")
+  [Aug2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/Aug2009JBrowse.pdf)
   823 KB
 
 
@@ -283,7 +281,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [GBrowse3GMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf "File:GBrowse3GMOD2008.pdf")
+  [GBrowse3GMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf)
   194 KB
 
 
@@ -306,7 +304,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [GMODCourse2010-JBrowse...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/GMODCourse2010-JBrowseIntro.pdf "File:GMODCourse2010-JBrowseIntro.pdf")
+  [GMODCourse2010-JBrowse...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/GMODCourse2010-JBrowseIntro.pdf)
   507 KB
 
 
@@ -329,7 +327,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Jan2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/ca/Jan2009JBrowse.pdf "File:Jan2009JBrowse.pdf")
+  [Jan2009JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/ca/Jan2009JBrowse.pdf)
   354 KB
 
 
@@ -352,7 +350,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Jbrowse arch.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Jbrowse_arch.png "File:Jbrowse arch.png")
+  [Jbrowse arch.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Jbrowse_arch.png)
   99 KB
 
 
@@ -375,7 +373,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [PAG2010JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf "File:PAG2010JBrowse.pdf")
+  [PAG2010JBrowse.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf)
   270 KB
 
 
@@ -399,7 +397,7 @@ The following 12 files are in this category, out of 12 total.
 
 
   [JBrowse PAG
-  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")
+  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf)
   2.4 MB
 
 
@@ -422,7 +420,7 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [JBrowseUI.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a9/JBrowseUI.png "File:JBrowseUI.png")
+  [JBrowseUI.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a9/JBrowseUI.png)
   41 KB
 
 
@@ -445,5 +443,5 @@ The following 12 files are in this category, out of 12 total.
 
 
 
-  [Wiggle-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Wiggle-options.png "File:Wiggle-options.png")
+  [Wiggle-options.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Wiggle-options.png)
   37 KB

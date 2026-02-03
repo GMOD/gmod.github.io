@@ -3,7 +3,7 @@ title: "JBrowseDev/The ExtraData Option"
 ---
 # JBrowseDev/The ExtraData Option
 
-In [JBrowse](../JBrowse.1 "JBrowse"), the extraData option causes
+In [JBrowse](../JBrowse.1), the extraData option causes
 additional data from a data source to be incorporated into the output
 file. In particular, it is useful when used with the urlTemplate option,
 because the data it extracts can be used to query annotation databases.
@@ -153,8 +153,8 @@ minimize the size of the data extracted from each feature.
 
 # See also
 
-- <a href="General_Usage" class="mw-redirect"
+- <a href="/wiki/General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
 
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+- [JBrowse](../Category%253AJBrowse)

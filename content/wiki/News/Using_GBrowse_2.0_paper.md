@@ -3,7 +3,7 @@ title: "News/Using GBrowse 2.0 paper"
 ---
 # News/Using GBrowse 2.0 paper
 
-There is a new [GBrowse](../GBrowse.1 "GBrowse") paper by Lincoln Stein
+There is a new [GBrowse](../GBrowse.1) paper by Lincoln Stein
 out in Briefings in Bioinformatics, entitled **Using GBrowse 2.0 to
 visualize and share next-generation sequence data**, <span class="Z3988"
 title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F23376193">PMID:23376193</span>

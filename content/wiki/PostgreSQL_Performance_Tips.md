@@ -21,12 +21,12 @@ title: "PostgreSQL Performance Tips"
 ## Background
 
 This page is for collecting tips on tuning
-[PostgreSQL](PostgreSQL "PostgreSQL"), especially when using it with
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. Feel free
+[PostgreSQL](/wiki/PostgreSQL), especially when using it with
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. Feel free
 to place information from your own experience on this page. Unless
 otherwise indicated the tips on this page refer to PostgreSQL servers in
 the 8.x series.
 
 ## General Tips
 
-- [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
+- [PostgreSQL](/wiki/Category%253APostgreSQL)

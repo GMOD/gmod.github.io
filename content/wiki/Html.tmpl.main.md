@@ -5,7 +5,7 @@ title: "Html.tmpl.main"
 
 The process described on this page is obsolete. The process described on
 [Chado Schema Documentation
-HOWTO](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+HOWTO](/wiki/Chado_Schema_Documentation_HOWTO)
 is the the current one. This page should be deleted once the new process
 has been fully adopted.
 
@@ -164,7 +164,7 @@ has been fully adopted.
                     <th>Description</th>
                     </tr>
                 <!-- TMPL_LOOP name="columns" -->
-                <tr class="<!-- TMPL_IF name="__odd__" -->tr0<!-- tmpl_else name="__odd__" -->tr1<!-- /TMPL_IF name="__odd__" -->"><td><!-- TMPL_LOOP name="column_constraints" --><!-- TMPL_IF name="column_fk" --><a href="[#Table:_<!-- TMPL_VAR ESCAPE="URL" name="column_fk_table" -->|"><!-- TMPL_IF name="column_fk_keygroup" -->#<!-- TMPL_VAR name="column_fk_keygroup" --><!-- /TMPL_IF name="column_fk_keygroup" --><!-- TMPL_VAR name="column_fk_table" -->]</a><!-- /TMPL_IF name="column_fk" --><!-- /TMPL_LOOP name="column_constraints" --></td><td><!-- TMPL_VAR ESCAPE="HTML" name="column" --></td><td><!-- TMPL_VAR ESCAPE="HTML" name="column_type" --></td>
+                <tr class="<!-- TMPL_IF name="__odd__" -->tr0<!-- tmpl_else name="__odd__" -->tr1<!-- /TMPL_IF name="__odd__" -->"><td><!-- TMPL_LOOP name="column_constraints" --><!-- TMPL_IF name="column_fk" --><a href="/wiki/[#Table:_<!-- TMPL_VAR ESCAPE="URL" name="column_fk_table" -->|"><!-- TMPL_IF name="column_fk_keygroup" -->#<!-- TMPL_VAR name="column_fk_keygroup" --><!-- /TMPL_IF name="column_fk_keygroup" --><!-- TMPL_VAR name="column_fk_table" -->]</a><!-- /TMPL_IF name="column_fk" --><!-- /TMPL_LOOP name="column_constraints" --></td><td><!-- TMPL_VAR ESCAPE="HTML" name="column" --></td><td><!-- TMPL_VAR ESCAPE="HTML" name="column_type" --></td>
                     <td><i>
                     <!-- TMPL_LOOP name="column_constraints" -->
                         <!-- TMPL_IF name="column_primary_key" -->PRIMARY KEY
@@ -239,7 +239,7 @@ has been fully adopted.
                 <p>Tables referencing this one via Foreign Key Constraints:</p>
             <!-- TMPL_LOOP name="fk_schemas" -->
                 <ul>
-                    <li><a href="[#Table:_<!-- TMPL_VAR ESCAPE="URL" name="fk_table" -->|"><!-- TMPL_VAR name="fk_table" -->]</a></li>
+                    <li><a href="/wiki/[#Table:_<!-- TMPL_VAR ESCAPE="URL" name="fk_table" -->|"><!-- TMPL_VAR name="fk_table" -->]</a></li>
                 </ul>
             <!-- /TMPL_LOOP name="fk_schemas" -->
             <!-- /TMPL_IF name="fk_schemas" -->

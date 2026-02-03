@@ -418,7 +418,7 @@ chado_dmel_r5_1=# select field,value from v_genepage2 where feature_id =
 </tr>
 <tr class="even" data-valign="top">
 <td style="text-align: left;">Dbxref 2</td>
-<td style="text-align: left;"><a href="geo:FBgn0019650"
+<td style="text-align: left;"><a href="/wiki/geo:FBgn0019650"
 class="external free" rel="nofollow">geo:FBgn0019650</a></td>
 </tr>
 <tr class="odd" data-valign="top">

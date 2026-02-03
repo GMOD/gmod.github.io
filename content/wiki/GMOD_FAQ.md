@@ -4,9 +4,9 @@ title: "GMOD FAQ"
 # GMOD FAQ
 
 A list of **F**requently **A**sked **Q**questions about the GMOD project.
-See [FAQ](Category%253AFAQ "Category%253AFAQ") for a list of FAQ pages on
-specific [GMOD Components](GMOD_Components "GMOD Components"). See the
-[Glossary](Glossary "Glossary") for definitions of commonly used terms
+See [FAQ](/wiki/Category%253AFAQ) for a list of FAQ pages on
+specific [GMOD Components](/wiki/GMOD_Components). See the
+[Glossary](/wiki/Glossary) for definitions of commonly used terms
 in GMOD.
 
 
@@ -48,7 +48,7 @@ When GMOD was first created it stood for **G**eneric **M**odel
 **O**rganism **D**atabase. As GMOD has been adopted and extended it has
 become clear that the word **M**odel should no longer apply. Virtually
 any sort of organism or group of organisms can be the focus of a GMOD
-database (see [the GMOD users list](GMOD_Users "GMOD Users") for many
+database (see [the GMOD users list](/wiki/GMOD_Users) for many
 examples). It's been suggested that **M**odel should now be **M**y, or
 **M**any.
 
@@ -57,13 +57,13 @@ examples). It's been suggested that **M**odel should now be **M**y, or
 It is a suite of interconnected applications, middleware, and databases
 that researchers and informaticians use to store and study biological
 information. For a list of what's in GMOD see the [GMOD components
-page](GMOD_Components "GMOD Components"). Some of the more popular
-components include the genome browser [GBrowse](GBrowse.1 "GBrowse"),
+page](/wiki/GMOD_Components). Some of the more popular
+components include the genome browser [GBrowse](/wiki/GBrowse.1),
 the relational database
-[Chado](Chado_-_Getting_Started "Chado - Getting Started"), and the
-comparative map viewer [CMap](CMap.1 "CMap").
+[Chado](/wiki/Chado_-_Getting_Started), and the
+comparative map viewer [CMap](/wiki/CMap.1).
 
 ### How do I learn more about GMOD?
 
-See the [Overview](Overview "Overview") and [GMOD Getting
-Started](GMOD_-_Getting_Started "GMOD - Getting Started") pages.
+See the [Overview](/wiki/Overview) and [GMOD Getting
+Started](/wiki/GMOD_-_Getting_Started) pages.

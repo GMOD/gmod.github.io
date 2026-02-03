@@ -4,7 +4,7 @@ title: "GBrowse img"
 # GBrowse img
 
 **gbrowse_img** - CGI script to generate genome images via the
-<a href="Gbrowse.1" class="mw-redirect" title="Gbrowse">Generic Genome
+<a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Generic Genome
 Browser</a>
 
   Description](#Description)
@@ -45,7 +45,7 @@ be used as the destination of an \<img\> tag like this:
 The script can also be used to superimpose one or more external features
 onto the display, for example for the purpose of displaying BLAST hits,
 an STS or a knockout in the context of the genome. It is designed to use
-a URL-based API to draw or embed [GBrowse](GBrowse.1 "GBrowse") images
+a URL-based API to draw or embed [GBrowse](/wiki/GBrowse.1) images
 without loading the full genome browser interface. gbrowse_img can be
 used to embed Gbrowse images in other webpages or to create
 high-resolution images appropriate for publications.
@@ -278,7 +278,7 @@ This argument specifies the data source for the images. The list of
 sources can be found using *list=sources*. See also the
 [GBrowse_2.0_HOWTO#Configured_Data_Source_Sections configured data
 source
-sections](GBrowse_2.0_HOWTO#Configured_Data_Source_Sections_configured_data_source_sections "GBrowse 2.0 HOWTO")
+sections](/wiki/GBrowse_2.0_HOWTO#Configured_Data_Source_Sections_configured_data_source_sections)
 in the GBrowse 2 guide.
 h_feat
 The name of a feature to highlight in the format
@@ -369,4 +369,4 @@ display an image (rendered by gbrowse_img) in a wiki-page.
 
 ## See Also
 
-- <a href="Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>
+- <a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>

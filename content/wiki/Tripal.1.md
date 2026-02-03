@@ -35,27 +35,25 @@ Resources
 <tbody>
 
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253AInteracts_with"
+<td class="smwpropname"><a href="/wiki/Property%253AInteracts_with"
 title="Property:Interacts with">Interacts with</a></td>
-<td class="smwprops"><a href="GBrowse.1" title="GBrowse">GBrowse</a>
+<td class="smwprops"><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a>
 ,
-<a href="CMap.1" title="CMap">CMap</a> , <a
-href="Galaxy.1" title="Galaxy">Galaxy</a>
-and <a href="Chado" class="mw-redirect" title="Chado">Chado</a> </td>
+<a href="/wiki/CMap.1" title="CMap">CMap</a> , <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a>
+and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253AIs_open_source"
+<td class="smwpropname"><a href="/wiki/Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
 <td class="smwprops">Yes </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253ALink_type"
+<td class="smwpropname"><a href="/wiki/Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
 <td class="smwprops">download </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a
-href="Property%253ATool_functionality_or_classification"
+<td class="smwpropname"><a href="/wiki/Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">Database (Chado) web front ends ,
@@ -63,7 +61,7 @@ Database tools
 and Development Platform (has API) </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253AWritten_in_language"
+<td class="smwpropname"><a href="/wiki/Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
 <td class="smwprops">PHP ,
 Javascript
@@ -71,23 +69,21 @@ and HTML </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
-data-state="inline" data-title="Property"><span class="smwbuiltin"><a
-href="Property%253AHas_subobject" title="Property:Has subobject">Has
+data-state="inline" data-title="Property"><span class="smwbuiltin"><a href="/wiki/Property%253AHas_subobject" title="Property:Has subobject">Has
 subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
-<td class="smwspecs"><a href="Tripal.1#http:.2F.2Ftripal.info"
+<td class="smwspecs"><a href="/wiki/Tripal.1#http:.2F.2Ftripal.info"
 title="Tripal">Tripal#http://tripal.info</a> ,
-<a
-href="Tripal.1#http:.2F.2Ftripal.info.2Ftutorials.2Fv2.x.2Finstallation"
+<a href="/wiki/Tripal.1#http:.2F.2Ftripal.info.2Ftutorials.2Fv2.x.2Finstallation"
 title="Tripal">Tripal#http://tripal.info/tutorials/v2.x/installation</a>
 ,
-<a href="Tripal.1#_c72e4a5953ad38254b5ae05e4fca68cf"
+<a href="/wiki/Tripal.1#_c72e4a5953ad38254b5ae05e4fca68cf"
 title="Tripal">Tripal</a> ,
-<a href="Tripal.1#_8904ca0c9942fceca83d1637dceaa4e9"
+<a href="/wiki/Tripal.1#_8904ca0c9942fceca83d1637dceaa4e9"
 title="Tripal">Tripal</a> ,
-<a href="Tripal.1#_780a3bd63980716b96e285070f997e2a"
+<a href="/wiki/Tripal.1#_780a3bd63980716b96e285070f997e2a"
 title="Tripal">Tripal</a>
-and <a href="Tripal.1#_c5e2b05d4750eb0951eb1ad5fced6761"
+and <a href="/wiki/Tripal.1#_c5e2b05d4750eb0951eb1ad5fced6761"
 title="Tripal">Tripal</a> </td>
 </tr>
 </tbody>

@@ -19,4 +19,4 @@ creation of your account!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/10*
+*Posted to the [GMOD News](../GMOD_News) on 2013/07/10*

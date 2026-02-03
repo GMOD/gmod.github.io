@@ -10,7 +10,7 @@ This category contains only the following page.
 ### A
 
 - [A Brief Guide to
-  Databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
+  Databases](/wiki/A_Brief_Guide_to_Databases)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253ADatabase](/wiki/Category%253ADatabase)"

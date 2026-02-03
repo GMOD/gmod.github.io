@@ -4,7 +4,7 @@ title: "Category%253AMac OS X"
 # Category%253AMac OS X
 
 Pages that are particularly relevant to using GMOD on the Mac OS X
-[operating system](Glossary#Operating_System "Glossary").
+[operating system](/wiki/Glossary#Operating_System).
 <a href="http://www.mac-how.net" class="external text"
 rel="nofollow">how to recover deleted files on mac</a>
 
@@ -15,19 +15,19 @@ The following 4 pages are in this category, out of 4 total.
 ### C
 
 - [Computing
-  Requirements](Computing_Requirements "Computing Requirements")
+  Requirements](/wiki/Computing_Requirements)
 
 ### D
 
-- [DBD::mysql on the Mac](DBD%253A%253Amysql_on_the_Mac "DBD::mysql on the Mac")
+- [DBD::mysql on the Mac](/wiki/DBD%253A%253Amysql_on_the_Mac)
 
 ### F
 
-- [Fixing Perl on OSX](Fixing_Perl_on_OSX "Fixing Perl on OSX")
+- [Fixing Perl on OSX](/wiki/Fixing_Perl_on_OSX)
 
 ### G
 
-- [GBrowse MacOSX HOWTO](GBrowse_MacOSX_HOWTO "GBrowse MacOSX HOWTO")
+- [GBrowse MacOSX HOWTO](/wiki/GBrowse_MacOSX_HOWTO)
 
 ## Media in category "Mac OS X"
 
@@ -49,7 +49,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [AppleBootCampLogo.jpg](File:AppleBootCampLogo.jpg "File:AppleBootCampLogo.jpg")
+  [AppleBootCampLogo.jpg](/wiki/File:AppleBootCampLogo.jpg)
   1 KB
 
 
@@ -72,7 +72,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [AppleSmall.gif](File:AppleSmall.gif "File:AppleSmall.gif")
+  [AppleSmall.gif](/wiki/File:AppleSmall.gif)
   2 KB
 
 
@@ -95,5 +95,5 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [ParallelsDesktopLogo.gif](File:ParallelsDesktopLogo.gif "File:ParallelsDesktopLogo.gif")
+  [ParallelsDesktopLogo.gif](/wiki/File:ParallelsDesktopLogo.gif)
   2 KB

@@ -9,18 +9,18 @@ The following 5 pages are in this category, out of 5 total.
 
 ### D
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
 
 ### G
 
-- [GBrowse Adaptors](GBrowse_Adaptors "GBrowse Adaptors")
+- [GBrowse Adaptors](/wiki/GBrowse_Adaptors)
 
 ### M
 
-- [Materialized views](Materialized_views "Materialized views")
+- [Materialized views](/wiki/Materialized_views)
 
 ### P
 
-- [PostgreSQL](PostgreSQL "PostgreSQL")
+- [PostgreSQL](/wiki/PostgreSQL)
 - [PostgreSQL Performance
-  Tips](PostgreSQL_Performance_Tips "PostgreSQL Performance Tips")
+  Tips](/wiki/PostgreSQL_Performance_Tips)

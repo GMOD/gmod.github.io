@@ -21,8 +21,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="200" alt="EvoHackathonLogo.png" />
 
 </td>
-<td><span style="font-size: 200%; line-height: 120%"><strong><a
-href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
+<td><span style="font-size: 200%; line-height: 120%"><strong><a href="/wiki/GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
 Evolutionary Biology Hackathon</a></strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
@@ -34,7 +33,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
 
 On this page you will find additional information related to the [GMOD
 Evo Hackathon
-Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal").
+Proposal](/wiki/GMOD_Evo_Hackathon_Proposal).
 
   of Secondary Importance</span>](#Other_topics_of_Secondary_Importance)
   - [Natural
@@ -88,13 +87,13 @@ the association of genome-phenotype (phenome). This could be solved
 either with specific new glyphs and plugins, or with generic interfaces
 to statistical/geolocation/image based visualization packages.
 
-There is also work currently under way to extend [GFF3](GFF3 "GFF3") to
+There is also work currently under way to extend [GFF3](/wiki/GFF3) to
 handle variant information. Several existing GMOD tools will need to be
 modified to recognize this data.
 
 #### Web-based display of Chado Phenotype/Natural Diversity data
 
-[Tripal](Tripal.1 "Tripal") is a
+[Tripal](/wiki/Tripal.1) is a
 <a href="http://drupal.org" class="external text"
 rel="nofollow">Drupal</a>-based web interface to Chado databases. It
 supports interfaces for several popular data types, but does not

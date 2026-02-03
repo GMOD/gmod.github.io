@@ -7,9 +7,9 @@ title: "Galaxy Tutorial 2013"
 Tutorial](/wiki/Galaxy_Tutorial)
 
 This walks you through setting up and running a
-[Galaxy](Galaxy.1 "Galaxy") server. This tutorial will be taught by
-[Dave Clements](User%253AClements "User%253AClements") at the [2013 GMOD Summer
-School](2013_GMOD_Summer_School "2013 GMOD Summer School").
+[Galaxy](/wiki/Galaxy.1) server. This tutorial will be taught by
+[Dave Clements](/wiki/User%253AClements) at the [2013 GMOD Summer
+School](/wiki/2013_GMOD_Summer_School).
 
   20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
 - [Starting
@@ -262,7 +262,7 @@ to this:
 
     port = 8081
 
-Galaxy, like [WebApollo](WebApollo.1 "WebApollo") and several other
+Galaxy, like [WebApollo](/wiki/WebApollo.1) and several other
 components that are also covered at the course, will listen to port 8080
 by default; to avoid stomping on that earlier work, we will configure
 Galaxy to listen to a different port.
@@ -303,10 +303,10 @@ database</a>. This allows Galaxy to run with zero-configuration and
 provides an excellent solution for single-user Galaxy installations
 being used for tool development. However, for any multi-user scenario a
 more robust database will be needed for Galaxy to be reliable. We
-**highly** recommend [Postgres](PostgreSQL "PostgreSQL"), although other
+**highly** recommend [Postgres](/wiki/PostgreSQL), although other
 databases are known to work. Postgres is already installed on our AMI
-(it's the default [DBMS](Glossary#DBMS "Glossary") for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>)
+(it's the default [DBMS](/wiki/Glossary#DBMS) for
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>)
 
 Update `universe_wsgi.ini` file to use Postgres. Update the
 `database_connection` in your Galaxy config file to look like:
@@ -553,7 +553,7 @@ named with an abbreviation for the species and a version number. For
 example, "mm9" represents the *Mus musculus 9" assembly released in
 2007, and "mm10" is the more recent assembly released in 2010. If these
 datasets had been directly imported into Galaxy from, for example, the
-UCSC Table Browser, or [BioMart](BioMart "BioMart") then the database
+UCSC Table Browser, or [BioMart](/wiki/BioMart) then the database
 for these datasets would have been set automatically.*
 
 The "?" means that Galaxy does not know which genome assembly the

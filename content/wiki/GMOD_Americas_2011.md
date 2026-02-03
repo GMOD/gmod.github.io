@@ -43,18 +43,17 @@ width="300" height="121" alt="GMODAmericas2011Reception.jpg" />
 
 </td>
 <td><ul>
-<li><a href="March_2011_GMOD_Meeting"
+<li><a href="/wiki/March_2011_GMOD_Meeting"
 title="March 2011 GMOD Meeting">March 2011 GMOD Meeting</a>
 <ul>
-<li>For the first time, there will also be a <em><strong><a
-href="March_2011_GMOD_Meeting#Friday:_Introduction_to_GMOD"
+<li>For the first time, there will also be a <em><strong><a href="/wiki/March_2011_GMOD_Meeting#Friday:_Introduction_to_GMOD"
 title="March 2011 GMOD Meeting">Introduction to GMOD</a></strong></em>
 session for GMOD newcomers the night before the meeting.</li>
 </ul></li>
-<li><a href="Satellite_Meetings_-_GMOD_Americas_2011"
+<li><a href="/wiki/Satellite_Meetings_-_GMOD_Americas_2011"
 title="Satellite Meetings - GMOD Americas 2011">Satellite
 Meetings</a></li>
-<li><a href="2011_GMOD_Spring_Training"
+<li><a href="/wiki/2011_GMOD_Spring_Training"
 title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></li>
 </ul></td>
 </tr>
@@ -67,35 +66,35 @@ title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></li>
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
-components](GMOD_Components "GMOD Components") for annotating,
+components](/wiki/GMOD_Components) for annotating,
 visualizing, managing and analyzing biological data. GMOD is also an
 active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse") (and
-[WebGBrowse](WebGBrowse.1 "WebGBrowse")) for genome browsing,
-[Apollo](Apollo.1 "Apollo") and [MAKER](MAKER.1 "MAKER") for genome
-annotation, [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") and
-[CMap](CMap.1 "CMap") for comparative genomics visualization,
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[BioMart](BioMart "BioMart") and [InterMine](InterMine "InterMine") for
+[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
+[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
+[Apollo](/wiki/Apollo.1) and [MAKER](/wiki/MAKER.1) for genome
+annotation, [GBrowse_syn](/wiki/GBrowse_syn.1) and
+[CMap](/wiki/CMap.1) for comparative genomics visualization,
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](Galaxy.1 "Galaxy") and
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
-[ISGA](ISGA "ISGA")) for data analysis.
+[Galaxy](/wiki/Galaxy.1) and
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
+[ISGA](/wiki/ISGA)) for data analysis.
 
 # Registration
 
 There were separate registration fees for the [Community
-Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") and the
-[GMOD School](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
+Meeting](/wiki/March_2011_GMOD_Meeting) and the
+[GMOD School](/wiki/2011_GMOD_Spring_Training).
 The [Satellite
-Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
+Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 were free and registration was not required.
 
 The registration fee for [March 2011 GMOD
-Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") was
+Meeting](/wiki/March_2011_GMOD_Meeting) was
 
 - \$80 on or before February 18
 - \$95 after February 18
@@ -150,8 +149,7 @@ S<br />
 March 4</td>
 <td style="background-color: #ccffff">7pm-9pm</td>
 <td colspan="2"
-style="text-align: center; background-color: #ddffff;"><strong><a
-href="March_2011_GMOD_Meeting#Introduction_to_GMOD"
+style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/March_2011_GMOD_Meeting#Introduction_to_GMOD"
 title="March 2011 GMOD Meeting">Introduction to GMOD</a></strong><br />
 An overview of the GMOD project for GMOD newcomers, the night before the
 meeting starts. If you are new to GMOD this will give you the background
@@ -167,10 +165,9 @@ you need to get the most out of the Community Meeting.</td>
 March 5</td>
 <td style="background-color: #ccffff">9am-5pm</td>
 <td colspan="2" rowspan="2"
-style="text-align: center; background-color: #ddffff;"><strong><a
-href="March_2011_GMOD_Meeting" title="March 2011 GMOD Meeting">GMOD
+style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/March_2011_GMOD_Meeting" title="March 2011 GMOD Meeting">GMOD
 Community Meeting</a></strong><br />
-Talks and discussions on <a href="GMOD_Components"
+Talks and discussions on <a href="/wiki/GMOD_Components"
 title="GMOD Components">GMOD Components</a>, project direction and
 planning, best practices, recent developments, extensions, ...</td>
 <td></td>
@@ -189,8 +186,7 @@ March 6</td>
 <td style="background-color: #bbffcc">Monday<br />
 March 7</td>
 <td style="background-color: #ccffdd">8:30am-5pm</td>
-<td style="text-align: center; background-color: #ddffdd;"><strong><a
-href="Satellite_Meetings_-_GMOD_Americas_2011"
+<td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Satellite_Meetings_-_GMOD_Americas_2011"
 title="Satellite Meetings - GMOD Americas 2011">Satellite
 Meetings</a></strong><br />
 GMOD special interest groups and birds-of-a-feather meetings where GMOD
@@ -208,21 +204,19 @@ March 8</td>
 <td style="background-color: #ffffbb">8:30am-5:30pm<br />
 7pm-9pm</td>
 <td rowspan="5"
-style="text-align: center; background-color: #ffffcc;"><strong><a
-href="2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011
+style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011
 GMOD Spring Training</a></strong>
 
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="Apollo.1" title="Apollo">Apollo</a> • <a
-href="MAKER.1" title="MAKER">MAKER</a> • <a href="GBrowse.1"
-title="GBrowse">GBrowse</a> • <a href="Chado" class="mw-redirect"
-title="Chado">Chado</a> • <a href="InterMine"
-title="InterMine">InterMine</a> • <a href="JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="Tripal.1"
-title="Tripal">Tripal</a> • <a href="Galaxy.1"
+<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
+title="Chado">Chado</a> • <a href="/wiki/InterMine"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
+title="Tripal">Tripal</a> • <a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a></strong></p>
 </td>
 <td></td>
@@ -333,9 +327,9 @@ The shuttle operates 24 hours a day and can be reached at 919-323-1745.
 ## Meals
 
 Lunch will be provided on both days of the [March 2011 GMOD
-Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting"), but at the
+Meeting](/wiki/March_2011_GMOD_Meeting), but at the
 [Satellite Meetings - GMOD Americas
-2011](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011").
+2011](/wiki/Satellite_Meetings_-_GMOD_Americas_2011).
 Snacks and drinks will also be provided throughout the two days of the
 meeting. For other meals, NESCent is adjacent to Durham's 9<sup>th</sup>
 Street District, which offers dining options across the budget spectrum.
@@ -365,9 +359,9 @@ boundaries.
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
-width="130" height="45" alt="Galaxy" />](Galaxy.1 "Galaxy")
+width="130" height="45" alt="Galaxy" />](/wiki/Galaxy.1)
 
-The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring **GMOD
+The [Galaxy Project](/wiki/Galaxy.1) is also sponsoring **GMOD
 Americas 2011** events. Galaxy is a data integration framework that
 enables biologists to both analyze their data, and to archive those
 analyses (including data sets and program parameters) for future
@@ -376,13 +370,13 @@ reference. Galaxy is developed at Penn State and Emory University.
 # Help Get the Word Out
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
-width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
+width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf)
 
 Help spread the word about GMOD Americas 2011 events by posting and
 distributing [this
-flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "File:GMODAmericas2011Flier.pdf"),
+flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf),
 or the [event
-announcements](GMOD_News#GMOD_Spring_Training%253A_Apply_Now "GMOD News") to
+announcements](/wiki/GMOD_News#GMOD_Spring_Training%253A_Apply_Now) to
 your communities, mailing lists, and organizations.
 
 There are many organizations out there that are struggling to cope with
@@ -392,13 +386,13 @@ exploit their data.
 
 # See Also
 
-- [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") - The previous
+- [GMOD Europe 2010](/wiki/GMOD_Europe_2010) - The previous
   GMOD event.
 - [2010 GMOD Summer School -
-  Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas") -
-  the previous [GMOD School](GMOD_Schools "GMOD Schools").
+  Americas](/wiki/2010_GMOD_Summer_School_-_Americas) -
+  the previous [GMOD School](/wiki/GMOD_Schools).
 - <a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a> - Meeting sponsor and host.
 - [October 2011 GMOD
-  Meeting](October_2011_GMOD_Meeting "October 2011 GMOD Meeting") - the
-  next [GMOD meeting](Meetings "Meetings")
+  Meeting](/wiki/October_2011_GMOD_Meeting) - the
+  next [GMOD meeting](/wiki/Meetings)

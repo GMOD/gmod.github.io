@@ -103,4 +103,4 @@ September 2006 01:26:42 PM**
 
 
 - [Apollo-Chado example
-  database](Apollo-Chado_example_database "Apollo-Chado example database")
+  database](/wiki/Apollo-Chado_example_database)

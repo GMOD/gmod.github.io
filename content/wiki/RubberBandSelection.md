@@ -146,21 +146,21 @@ or hex code is accepted.</p></td>
              </tr>
              <tr>
                <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="?plugin=FastaDumper;plugin_action=Go;name=SELECTION" target="_BLANK">
+                 <a href="/wiki/?plugin=FastaDumper;plugin_action=Go;name=SELECTION" target="_BLANK">
                   Dump selection as FASTA
                  </a>
                </td>
              </tr>
              <tr>
                <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=UCSC_BLAT" target="_BLANK">
+                 <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=UCSC_BLAT" target="_BLANK">
                    Submit selection to UCSC BLAT
                  </a>
                </td>
              </tr>
              <tr>
                <td onmouseup="SelectArea.prototype.cancelRubber()">
-                 <a href="?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=NCBI_BLAST" target="_BLANK">
+                 <a href="/wiki/?name=SELECTION;plugin=Submitter;plugin_do=Go;Submitter.target=NCBI_BLAST" target="_BLANK">
                    Submit selection to NCBI BLAST
                  </a>
                </td>

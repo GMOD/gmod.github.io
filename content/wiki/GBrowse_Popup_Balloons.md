@@ -409,7 +409,7 @@ configuration file for individual data sources.
 Default balloon style options are configured in the file
 balloon.config.js, which comes with the distribution. Many display
 options are configurable, see
-[Popup_Balloons#Customization](Popup_Balloons#Customization "Popup Balloons")
+[Popup_Balloons#Customization](/wiki/Popup_Balloons#Customization)
 for details.
 
 below is the default configuration applied to all balloon styles

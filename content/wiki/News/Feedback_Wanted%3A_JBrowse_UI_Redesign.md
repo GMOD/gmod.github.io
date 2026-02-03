@@ -26,4 +26,4 @@ class="external text" rel="nofollow">JBrowse mailing list</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/11/24*
+*Posted to the [GMOD News](../GMOD_News) on 2012/11/24*

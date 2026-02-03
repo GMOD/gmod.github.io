@@ -60,21 +60,21 @@ title: "Chado Django HOWTO"
 
 ## Abstract
 
-This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes how to use the
+This [HOWTO](/wiki/Category%253AHOWTO) describes how to use the
 <a href="http://www.djangoproject.com/" class="external text"
 rel="nofollow">Django</a> (Python based) framework for accessing a
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 The Django framework can be used to create web interfaces and command
 line tools using the Python language.
 
 ## Introduction
 
 During the [first GMOD Summer
-school](2008_GMOD_Summer_School "2008 GMOD Summer School") and [July
-2008 GMOD Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting") a
+school](/wiki/2008_GMOD_Summer_School) and [July
+2008 GMOD Meeting](/wiki/July_2008_GMOD_Meeting) a
 great deal was learned about
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and the
-surrounding [GMOD tools](GMOD_Components "GMOD Components").
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and the
+surrounding [GMOD tools](/wiki/GMOD_Components).
 Specifically that one should try not to change the Chado schema
 (although some do with very good reasons) and secondly not to change
 code of third party tools, Perl modules etc in order to make them work
@@ -282,7 +282,7 @@ command.
       ./manage.py inspectdb > unsortedmodels.py
 
 This will create a raw `models.py` with a model for each table and view
-in the specified [Postgres](Category%253APostgreSQL "Category%253APostgreSQL")
+in the specified [Postgres](/wiki/Category%253APostgreSQL)
 database. We will need to edit this file a bit with a Perl script.
 
 Each foreign key relation should have a unique name in Django to support
@@ -300,9 +300,9 @@ using a model method with the following name:
       example: Feature.featureset_feature.filter(srcfeature_exact='NC_004567')
 
 The table
-[featureloc](Chado_Sequence_Module#Table:_featureloc "Chado Sequence Module")
+[featureloc](/wiki/Chado_Sequence_Module#Table:_featureloc)
 has two foreign keys to the table
-[feature](Chado_Sequence_Module#Table:_feature "Chado Sequence Module"),
+[feature](/wiki/Chado_Sequence_Module#Table:_feature),
 one through the field 'feature' and the other through the field
 'srcfeature'. The above Django queryset will return all features that
 are referenced by featureloc records that have 'NC_004567' as source
@@ -311,9 +311,9 @@ feature value.
 
 The code will also create an `admin.py` file for linking the models to
 the admin site (handy for smaller size tables like the
-[organism](Chado_Organism_Module#Table:_organism "Chado Organism Module"),
-[db](Chado_General_Module#Table:_db "Chado General Module") or
-[cv](Chado_CV_Module#Table:_cv "Chado CV Module") tables).
+[organism](/wiki/Chado_Organism_Module#Table:_organism),
+[db](/wiki/Chado_General_Module#Table:_db) or
+[cv](/wiki/Chado_CV_Module#Table:_cv) tables).
 
 Perl code is available at
 <a href="http://www.cmbi.ru.nl/~vdejager/gmod/sortmodel.pl.gz"
@@ -482,7 +482,7 @@ Using Q objects
 
 ### Show Me the Generated SQL
 
-It is possible to see the [SQL](Glossary#SQL "Glossary") Django
+It is possible to see the [SQL](/wiki/Glossary#SQL) Django
 generates using the following commands
 
 Make sure your Django `DEBUG` setting is set to `True`. Then, just do

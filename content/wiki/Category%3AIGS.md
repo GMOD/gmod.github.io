@@ -10,4 +10,4 @@ This category contains only the following page.
 ### I
 
 - [IGS Data
-  Representation](IGS_Data_Representation "IGS Data Representation")
+  Representation](/wiki/IGS_Data_Representation)

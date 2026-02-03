@@ -100,7 +100,7 @@ Website hits were measured using AWStats during this period.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="2008_GMOD_Summer_School"
+<td><a href="/wiki/2008_GMOD_Summer_School"
 title="2008 GMOD Summer School">2008 GMOD Summer School</a>
 first school ever offered</td>
 <td>2.5</td>
@@ -115,7 +115,7 @@ rel="nofollow">NESCent</a></td>
 <td>from 15 states and 4 countries</td>
 </tr>
 <tr class="even">
-<td><a href="2009_GMOD_Summer_School_-_Americas"
+<td><a href="/wiki/2009_GMOD_Summer_School_-_Americas"
 title="2009 GMOD Summer School - Americas">2009 GMOD Summer School -
 Americas</a></td>
 <td>4.0</td>
@@ -130,7 +130,7 @@ rel="nofollow">NESCent</a></td>
 <td>from 15 states and 4 countries, including India and Brazil.</td>
 </tr>
 <tr class="odd">
-<td><a href="2009_GMOD_Summer_School_-_Europe"
+<td><a href="/wiki/2009_GMOD_Summer_School_-_Europe"
 title="2009 GMOD Summer School - Europe">2009 GMOD Summer School -
 Europe</a>
 First school outside of NESCent.</td>
@@ -146,7 +146,7 @@ First school outside of NESCent.</td>
 countries</td>
 </tr>
 <tr class="even">
-<td><a href="2010_GMOD_Summer_School_-_Americas"
+<td><a href="/wiki/2010_GMOD_Summer_School_-_Americas"
 title="2010 GMOD Summer School - Americas">2010 GMOD Summer School -
 Americas</a></td>
 <td>4.0</td>
@@ -161,7 +161,7 @@ rel="nofollow">NESCent</a></td>
 <td>from 16 states and 4 countries, including Ireland and Spain.</td>
 </tr>
 <tr class="odd">
-<td><a href="2011_GMOD_Spring_Training"
+<td><a href="/wiki/2011_GMOD_Spring_Training"
 title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
@@ -176,7 +176,7 @@ rel="nofollow">NEScent</a></td>
 Portugal.</td>
 </tr>
 <tr class="even">
-<td><a href="2012_GMOD_Summer_School"
+<td><a href="/wiki/2012_GMOD_Summer_School"
 title="2012 GMOD Summer School">2012 GMOD Summer School</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
@@ -191,7 +191,7 @@ rel="nofollow">NEScent</a></td>
 Philippines</td>
 </tr>
 <tr class="odd">
-<td><a href="2013_GMOD_Summer_School"
+<td><a href="/wiki/2013_GMOD_Summer_School"
 title="2013 GMOD Summer School">2013 GMOD Summer School</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
@@ -206,7 +206,7 @@ rel="nofollow">NEScent</a></td>
 Switzerland</td>
 </tr>
 <tr class="even">
-<td><a href="GMOD_Malaysia_2014.1" title="GMOD Malaysia 2014">GMOD
+<td><a href="/wiki/GMOD_Malaysia_2014.1" title="GMOD Malaysia 2014">GMOD
 Malaysia 2014</a></td>
 <td>3.0</td>
 <td>Kuala Lumpur, Malaysia</td>
@@ -223,7 +223,7 @@ Malaysia 2014</a></td>
 
 ## Mailing Lists
 
-[GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") are hosted
+[GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) are hosted
 all over the place. Since June of 2010, there is a single Nabble Archive
 for all GMOD lists, but before that the archives, like the lists, are
 spread out all over. Therefore, getting a comprehensive picture of email
@@ -240,14 +240,14 @@ the numbers.
 
 See also [Components](#Components) below.
 
-### [Mailing List](GMOD_Mailing_Lists "GMOD Mailing Lists") Subscriber Counts
+### [Mailing List](/wiki/GMOD_Mailing_Lists) Subscriber Counts
 
 Numbers are only shown for lists where we have access to this
 information.
 
 | List | 2008/02 | 2009/08 | 2010/12 | Description |
 |----|----|----|----|----|
-| gmod-ajax | 49 | 89 | 143 | javascript interfaces for GMOD centered around [JBrowse](JBrowse.1 "JBrowse") |
+| gmod-ajax | 49 | 89 | 143 | javascript interfaces for GMOD centered around [JBrowse](/wiki/JBrowse.1) |
 | gmod-announce | 126 | 152 | 174 | A moderated, low traffic list for announcements of meetings and software release |
 | gmod-architecture | 55 | 69 | 78 | mailing list for the architecture working group |
 | gmod-cmap | 57 | 72 | 80 | Discussion of the CMAP comparative map viewer |
@@ -255,12 +255,12 @@ information.
 | gmod-gbrowse | 210 | 333 | 442 | Discussion of GBrowse |
 | gmod-schema | 148 | 194 | 213 | For discussion of Chado |
 | ergatis-announce | 16 | 18 | general Ergatis announcements | ergatis-devel |
-| 22 | 23 | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer communication | ergatis-users | 24 |
+| 22 | 23 | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer communication | ergatis-users | 24 |
 | 36 | Ergatis user communication and general help | isga-users |  | 9 |
-| [ISGA](ISGA "ISGA") user communication and general help | gmod-ware-users |  | 15 | [Modware](Modware "Modware") user communication and general help |
-| sybil-info |  | 8 | [Sybil](Sybil "Sybil") user communication and general help | turnkey-devel |
-|  | 15 | [Turnkey](Turnkey "Turnkey") development | turnkey-users |  |
-| 10 | [Turnkey](Turnkey "Turnkey") user list | gmod-cogephy |  | 0 |
+| [ISGA](/wiki/ISGA) user communication and general help | gmod-ware-users |  | 15 | [Modware](/wiki/Modware) user communication and general help |
+| sybil-info |  | 8 | [Sybil](/wiki/Sybil) user communication and general help | turnkey-devel |
+|  | 15 | [Turnkey](/wiki/Turnkey) development | turnkey-users |  |
+| 10 | [Turnkey](/wiki/Turnkey) user list | gmod-cogephy |  | 0 |
 | Comparative genomics, phylogeny and related topics. Created in 2010/12 | gmod-phendiver |  | 0 | Phenotype, natural diversity and related topics. Created in 2010/12 |
 | galaxy-user |  | 1681 | Support list for users of the Galaxy public server. *Note: The 2010/12 numbers are from 2011/01.* | galaxy-dev |
 |  | 280 | Support list for Galaxy developers and those deploying Galaxy locally. *Note: The 2010/12 numbers are from 2011/01.* |  |  |
@@ -270,19 +270,19 @@ information.
 Postings per month is readily available for any mailing list hosted by
 Sourceforge. And, at some point, we should summarize that information
 here. Raw data is available as [GMOD Mailing List
-Statistics](GMOD_Mailing_List_Statistics "GMOD Mailing List Statistics").
+Statistics](/wiki/GMOD_Mailing_List_Statistics).
 
 ## Components
 
 - [Components Section
-  summary](2008_GMOD_Community_Survey#GMOD_Components "2008 GMOD Community Survey")
+  summary](/wiki/2008_GMOD_Community_Survey#GMOD_Components)
   and <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Components"
   class="external text" rel="nofollow">details</a> of the [2008 GMOD
   Community
-  Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey"). This
+  Survey](/wiki/2008_GMOD_Community_Survey). This
   covers all components.
 - The [2009 GMOD Community
-  Survey](2009_GMOD_Community_Survey "2009 GMOD Community Survey") has
+  Survey](/wiki/2009_GMOD_Community_Survey) has
   some numbers on components for genome and comparative genomics
   visualization.
 
@@ -290,12 +290,12 @@ Statistics](GMOD_Mailing_List_Statistics "GMOD Mailing List Statistics").
 
 Download statistics are available for projects hosted on the GMOD
 SourceForge page. See [SourceForge Download
-Statistics](SourceForge_Download_Statistics "SourceForge Download Statistics")
+Statistics](/wiki/SourceForge_Download_Statistics)
 for the raw data.
 
 
 
-### [GBrowse](GBrowse.1 "GBrowse")
+### [GBrowse](/wiki/GBrowse.1)
 
 #### GBrowse 2 Registrations
 
@@ -307,7 +307,7 @@ hosts. This comes to 203 registrations per month total, 72
 registrations/mo on unique hosts. The true number of installations is
 higher, because people can choose not to send in registrations.
 
-### [Galaxy](Galaxy.1 "Galaxy")
+### [Galaxy](/wiki/Galaxy.1)
 
 See the
 <a href="http://galaxyproject.org/wiki/Galaxy%20Project/Statistics"
@@ -321,7 +321,7 @@ class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
   GMOD Survey</a> - Survey of the GMOD community, covering a wide range
   of topics.
 - [2009 GMOD Community
-  Survey](2009_GMOD_Community_Survey "2009 GMOD Community Survey")
+  Survey](/wiki/2009_GMOD_Community_Survey)
 - [2008 GMOD Community
-  Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey") - A
+  Survey](/wiki/2008_GMOD_Community_Survey) - A
   treasure trove of information about the GMOD community in late 2008.

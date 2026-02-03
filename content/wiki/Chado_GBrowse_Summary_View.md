@@ -3,31 +3,31 @@ title: "Chado GBrowse Summary View"
 ---
 # Chado GBrowse Summary View
 
-Starting in [GBrowse](GBrowse.1 "GBrowse") version 2.13, administrators
+Starting in [GBrowse](/wiki/GBrowse.1) version 2.13, administrators
 have the option of configuring a *summary view* (feature density) for
 tracks when zoomed out too far to effectively show individual features,
 and starting with the 0.30 release of
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> this
 functionality is supported for browsing
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases
 with GBrowse.
 
 ## Prerequisites
 
-- [GBrowse](GBrowse.1 "GBrowse") 2.13
+- [GBrowse](/wiki/GBrowse.1) 2.13
 - <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
   class="external text" rel="nofollow">Bio::DB::Das::Chado</a> 0.31
-- [PostgreSQL](PostgreSQL "PostgreSQL") 8.1 (probably--I only tested
+- [PostgreSQL](/wiki/PostgreSQL) 8.1 (probably--I only tested
   with 8.4, but I'm reasonably sure it will work with versions back to
   8.1)
 
 ## Configuration
 
 To support the summary view,
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> needs an
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> needs an
 additional table that the Chado [GBrowse
-adaptor](GBrowse_Adaptors "GBrowse Adaptors") will use to calculate the
+adaptor](/wiki/GBrowse_Adaptors) will use to calculate the
 summary view. To create this table (gff_interval_stats) and populate it
 with data, the
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"

@@ -3,7 +3,7 @@ title: "GBrowse User Database"
 ---
 # GBrowse User Database
 
-[GBrowse](GBrowse.1 "GBrowse") has the option to use a database to
+[GBrowse](/wiki/GBrowse.1) has the option to use a database to
 manage users, so that a user may save their session for use on multiple
 computers and associate files with one specific user. Users can sign up
 using a username, password and e-mail, or they can also associate their

@@ -48,7 +48,7 @@ title: "Talk:Chado Natural Diversity Module Working Group"
 
 This is the *discussion* page for the [Chado Natural Diversity Module
 Working
-Group](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group").
+Group](/wiki/Chado_Natural_Diversity_Module_Working_Group).
 Notes on what we talk about and what decisions are made will be posted
 here. Eventually, as we settle on specific outcomes, those outcomes will
 be posted to the main page, and eventually reflected in the Chado
@@ -94,7 +94,7 @@ Neither group is opposed to the other group's goal *per se* - they just
 happened to be incompatible goals.
 
 To address both these needs, [Rob
-Buells](User%253ARobertBuels "User%253ARobertBuels") proposed
+Buells](/wiki/User%253ARobertBuels) proposed
 
 - multiple incremental releases,
 - with perhaps some backwards incompatibility,
@@ -125,7 +125,7 @@ HDB has several different levels of biological unit, all represented
 with a different set of tables
 
 - Organism - This already exists and comes from the [Chado Organism
-  Module](Chado_Organism_Module "Chado Organism Module"). It defines a
+  Module](/wiki/Chado_Organism_Module). It defines a
   species.
 - <a
   href="http://heliconiusdb.svn.sourceforge.net/viewvc/heliconiusdb/trunk/schema/doc/diversity.html#biotype#biotype"
@@ -162,7 +162,7 @@ This particular hierarchy is also particular to butterflies.
 ### Stock
 
 Both the HDB version and the production Chado have a stock table. The
-[Chado Stock Module](Chado_Stock_Module "Chado Stock Module") was added
+[Chado Stock Module](/wiki/Chado_Stock_Module) was added
 to production Chado while or after the HDB version was being developed.
 
 The Chado Stock module is about keeping track of lines in your
@@ -248,9 +248,9 @@ single table. And, no we can't yet agree on that table name.
 ## Project/Experiment/Study Hierarchy
 
 The current [Project
-table](Chado_General_Module#Table:_project "Chado General Module") is
+table](/wiki/Chado_General_Module#Table:_project) is
 defined in the [General
-Module](Chado_General_Module "Chado General Module"). The HDB design
+Module](/wiki/Chado_General_Module). The HDB design
 links to it extensively. However, other modules hardly use it at all.
 
 
@@ -263,7 +263,7 @@ well.
 ### Phenotypes
 
 Phenotypes are not particularly well defined in Chado.
-[Scott](User%253AScott "User%253AScott") says that there are two sets of
+[Scott](/wiki/User%253AScott) says that there are two sets of
 phenotype tables in Chado. One is a first rough draft that snuck in (and
 is used by some), and the other is a more robust set, which is used by
 others (including FlyBase). Too make things worse, which tables are in
@@ -288,9 +288,9 @@ users, then I would like to look into
 #### HDB Design
 
 The HDB version of the module ties into the preexisting [phenotype
-table](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module").
+table](/wiki/Chado_Phenotype_Module#Table:_phenotype).
 The phenotype table has 4 foreign keys pointing to the [cvterm
-table](Chado_CV_Module#Table:_cvterm "Chado CV Module"):
+table](/wiki/Chado_CV_Module#Table:_cvterm):
 
 |----|----|
 | observable_id | The entity: e.g. anatomy_part, biological_process. |
@@ -302,7 +302,7 @@ Any of these 4 columns can be null.
 
 
 There is also a [phenotype_cvterm
-table](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
+table](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm)
 to hold CV terms that don't fit cleanly into the 4 CV term columns in
 phenotype.
 
@@ -381,7 +381,7 @@ Anything else?
 # February 2010
 
 The first meeting in February will be held Monday February 8, at 11am
-Eastern US. Contact [Dave C](User%253AClements "User%253AClements") if you are
+Eastern US. Contact [Dave C](/wiki/User%253AClements) if you are
 interested in participating in this meeting.
 
 Meetings after that will be scheduled at a regular time according to
@@ -451,4 +451,4 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="943" alt="Natdiv simplified SGN.png" />
 
 [Notes on simplified nd schema and Use
-Cases](Notes_on_simplified_nd_schema_and_Use_Cases "Notes on simplified nd schema and Use Cases")
+Cases](/wiki/Notes_on_simplified_nd_schema_and_Use_Cases)

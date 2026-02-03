@@ -12,7 +12,7 @@ construction.</span>
 
 This page is a working area for updating the revised genetic module that
 came out of the [GMOD Evo
-Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"). Please edit the
+Hackathon](/wiki/GMOD_Evo_Hackathon). Please edit the
 table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
 
@@ -36,7 +36,7 @@ PostgreSQL comments before the next Chado release.
 # Introduction
 
 See Dave Emmert's presentation [The new and improved chado genetics
-module](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Emmert_040526.pdf "File:Emmert 040526.pdf") for
+module](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Emmert_040526.pdf) for
 explanations of parts of this module.
 
 # Tables
@@ -53,10 +53,10 @@ The environmental component of a phenotype description.
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [environment_cvterm](Chado_Tables#Table:_environment_cvterm "Chado Tables")
-- [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
+- [environment_cvterm](/wiki/Chado_Tables#Table:_environment_cvterm)
+- [phendesc](/wiki/Chado_Tables#Table:_phendesc)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
 
 ------------------------------------------------------------------------
 
@@ -67,8 +67,8 @@ Tables referencing this one via Foreign Key Constraints:
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | environment_cvterm_id | serial | *PRIMARY KEY* |
-| [environment](Chado_Tables#Table:_environment "Chado Tables") | environment_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.environment_cvterm Structure
 
@@ -102,21 +102,21 @@ public.environment_cvterm Structure
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_genotype"
+<td><p><a href="/wiki/Chado_Tables#Table:_genotype"
 title="Chado Tables">genotype</a></p></td>
 <td>genotype_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>chromosome_id</td>
 <td>integer</td>
@@ -144,7 +144,7 @@ treated as different groups, as they do not fall on a particular
 chromosome).</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -218,19 +218,19 @@ public.genotype Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_genotype](Chado_Tables#Table:_feature_genotype "Chado Tables")
-- [nd_experiment_genotype](Chado_Tables#Table:_nd_experiment_genotype "Chado Tables")
-- [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-- [stock_genotype](Chado_Tables#Table:_stock_genotype "Chado Tables")
+- [feature_genotype](/wiki/Chado_Tables#Table:_feature_genotype)
+- [nd_experiment_genotype](/wiki/Chado_Tables#Table:_nd_experiment_genotype)
+- [phendesc](/wiki/Chado_Tables#Table:_phendesc)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
+- [stock_genotype](/wiki/Chado_Tables#Table:_stock_genotype)
 
 
 
 Discussion
 
 OPEN QUESTION: for multicopy transgenes, should we include a 'n_copies'
-column as well? -- [Brain Osborne](User%253ABosborne "User%253ABosborne"), Feb
+column as well? -- [Brain Osborne](/wiki/User%253ABosborne), Feb
 2007
 
 ------------------------------------------------------------------------
@@ -243,11 +243,11 @@ made in any one publication.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | phendesc_id | serial | *PRIMARY KEY* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
-| [environment](Chado_Tables#Table:_environment "Chado Tables") | environment_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
 |  | description | text | *NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.phendesc Structure
 
@@ -263,20 +263,20 @@ Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | phenotype_comparison_id | serial | *PRIMARY KEY* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype1_id | integer | *UNIQUE#1 NOT NULL* |
-| [environment](Chado_Tables#Table:_environment "Chado Tables") | environment1_id | integer | *UNIQUE#1 NOT NULL* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype2_id | integer | *UNIQUE#1 NOT NULL* |
-| [environment](Chado_Tables#Table:_environment "Chado Tables") | environment2_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype1_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype2_id | integer | [pub](Chado_Tables#Table:_pub "Chado Tables") |
-| pub_id | integer | *UNIQUE#1 NOT NULL* | [organism](Chado_Tables#Table:_organism "Chado Tables") |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype1_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](/wiki/Chado_Tables#Table:_environment) | environment1_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype2_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](/wiki/Chado_Tables#Table:_environment) | environment2_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype1_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype2_id | integer | [pub](/wiki/Chado_Tables#Table:_pub) |
+| pub_id | integer | *UNIQUE#1 NOT NULL* | [organism](/wiki/Chado_Tables#Table:_organism) |
 | organism_id | integer | *NOT NULL* |  |
 
 public.phenotype_comparison Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [phenotype_comparison_cvterm](Chado_Tables#Table:_phenotype_comparison_cvterm "Chado Tables")
+- [phenotype_comparison_cvterm](/wiki/Chado_Tables#Table:_phenotype_comparison_cvterm)
 
 ------------------------------------------------------------------------
 
@@ -292,11 +292,11 @@ environment, and phenotype.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | phenstatement_id | serial | *PRIMARY KEY* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
-| [environment](Chado_Tables#Table:_environment "Chado Tables") | environment_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](/wiki/Chado_Tables#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.phenstatement Structure
 

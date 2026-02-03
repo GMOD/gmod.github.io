@@ -3,9 +3,9 @@ title: "JBrowse Tutorial PAG 2015"
 ---
 # JBrowse Tutorial PAG 2015
 
-This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Scott
-Cain](User%253AScott "User%253AScott") at the
-<a href="PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
+This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
+Cain](/wiki/User%253AScott) at the
+<a href="/wiki/PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
 Meeting</a> in January 2015 using JBrowse 1.11.5.
 
 This tutorial assumes an Ubuntu 14.04.1 <a
@@ -97,8 +97,8 @@ console, click the "gear" icon (settings) and check the box labeled
 
 ## JBrowse Introduction
 
-How and why [JBrowse](JBrowse.1 "JBrowse") is different from most other
-web-based genome browsers, including [GBrowse](GBrowse.1 "GBrowse").
+How and why [JBrowse](/wiki/JBrowse.1) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
@@ -154,7 +154,7 @@ Here, we'll use the
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>
 adaptor in "memory" mode to read a directory of files. There are
 adaptors available for use with many other databases, such as
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
 <a href="http://search.cpan.org/perldoc?Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a>.
 
@@ -189,7 +189,7 @@ far enough.
 #### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
-database and turn it into [JSON](Glossary#JSON "Glossary") data that the
+database and turn it into [JSON](/wiki/Glossary#JSON) data that the
 web browser can use.
 
 In this case, we have specified all of our track configurations in
@@ -233,7 +233,7 @@ searchable.
 `urltemplate` specifies a URL pattern that you can use to link genomic
 features to specific web pages.
 
-`class` specifies the [CSS](Glossary#CSS "Glossary") class that
+`class` specifies the [CSS](/wiki/Glossary#CSS) class that
 describes how the feature should look.
 
 For this particular track, I've specified the `transcript` feature
@@ -493,7 +493,7 @@ A simple change we can make is to the color; in the line starting with
 save the changes and select the RepeatMasker track or reload the browser
 to see the change. Many attributes of the display can be modified in
 this way, see the [JBrowse Configuration
-Guide](JBrowse_Configuration_Guide#CanvasFeatures_Configuration_Options "JBrowse Configuration Guide")
+Guide](/wiki/JBrowse_Configuration_Guide#CanvasFeatures_Configuration_Options)
 for a list of options.
 
 ### Making changes based on the data
@@ -524,7 +524,7 @@ repeat).
 The default action when you click on a glyph is to open a "floating"
 window that displays everything JBrowse knows about a feature. If you'd
 like something else to happen, you have several options ([outlined
-here](JBrowse_Configuration_Guide#Click_Configuration_Options "JBrowse Configuration Guide")),
+here](/wiki/JBrowse_Configuration_Guide#Click_Configuration_Options)),
 including having a different floating window open or executing any
 JavaScript function you define. For this example, we'll create a link
 that will Google the repeat's name and open the result in a new window.
@@ -635,4 +635,4 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") |
+| [Has topic](/wiki/Property%253AHas_topic) | [JBrowse](/wiki/JBrowse.1) |

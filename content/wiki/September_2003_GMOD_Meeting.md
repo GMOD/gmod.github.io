@@ -56,7 +56,7 @@ text of progress reports they submitted.
 
 ### PubSearch Status Update
 
-[PubSearch](PubSearch "PubSearch") status as 0f 9/05/2003)
+[PubSearch](/wiki/PubSearch) status as 0f 9/05/2003)
 
 Upgrades made to the PubSearch software are as follows:
 
@@ -91,7 +91,7 @@ Upgrades made to the PubSearch software are as follows:
 
 ### Pathway Tools Status Report
 
-[Pathway Tools](Pathway_Tools.1 "Pathway Tools") status report, by Peter
+[Pathway Tools](/wiki/Pathway_Tools.1) status report, by Peter
 Karp, September 1, 2003
 
 Please note that the full history of updates to Pathway Tools can be

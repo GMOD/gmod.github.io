@@ -25,7 +25,7 @@ height="104" alt="SynBrowse logo.png" />
 SynBrowse (Synteny Browser) is a generic sequence comparison tool for
 visualizing genome alignments both within and between species. It is
 intended to help scientists study and analyze
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>,
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>,
 homologous genes and other conserved elements between sequences. This
 software is useful in studying genome duplication and evolution. It can
 also aid in identifying uncharacterized genes, putative regulatory
@@ -39,7 +39,7 @@ annotations.
 SynBrowse is no longer under active development and has not been funded
 since 2006. However, the most recent version of it is still available
 and still supported by it's lead developer. Xioakang Pan. See
-[Comparative Genomics](Comparative_Genomics "Comparative Genomics") for
+[Comparative Genomics](/wiki/Comparative_Genomics) for
 other options that are still actively developed and supported.
 
 ## Demo
@@ -49,7 +49,7 @@ rel="nofollow">http://www.synbrowse.org</a>.
 
 ## Requirements
 
-[GBrowse](GBrowse.1 "GBrowse"), between 1.62 and 1.68. A new release of
+[GBrowse](/wiki/GBrowse.1), between 1.62 and 1.68. A new release of
 SynBrowse that works with GBrowse 1.70 is under development and is
 expected to be released in early 2010.
 

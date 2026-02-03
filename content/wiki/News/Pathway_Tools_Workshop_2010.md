@@ -15,7 +15,7 @@ held October 25th - 29th, 2010 in Menlo Park, CA. Early registration
 ends September 1.
 
 This workshop is oriented around SRI's [Pathway
-Tools](../Pathway_Tools.1 "Pathway Tools") software and BioCyc Database
+Tools](../Pathway_Tools.1) software and BioCyc Database
 Collection and will explore pathway bioinformatics and Pathway/Genome
 Databases.
 
@@ -49,7 +49,7 @@ rel="nofollow">Tomer Altman</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/09*
+*Posted to the [GMOD News](../GMOD_News) on 2010/07/09*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -12,7 +12,7 @@ This category has only the following subcategory.
 ### U
 
 - [Under
-  Construction](Category%253AUnder_Construction "Category%253AUnder Construction")
+  Construction](/wiki/Category%253AUnder_Construction)
 
 ## Pages in category "Wiki Tools"
 
@@ -28,49 +28,49 @@ The following 10 pages are in this category, out of 10 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="c">C</h3>
 <ul>
-<li><a href="Chado_Schema_Documentation_HOWTO"
+<li><a href="/wiki/Chado_Schema_Documentation_HOWTO"
 title="Chado Schema Documentation HOWTO">Chado Schema Documentation
 HOWTO</a></li>
-<li><a href="Chado_Tables_to_Wiki" title="Chado Tables to Wiki">Chado
+<li><a href="/wiki/Chado_Tables_to_Wiki" title="Chado Tables to Wiki">Chado
 Tables to Wiki</a></li>
 </ul>
 <h3 id="d">D</h3>
 <ul>
-<li><a href="Drupal2wiki" title="Drupal2wiki">Drupal2wiki</a></li>
+<li><a href="/wiki/Drupal2wiki" title="Drupal2wiki">Drupal2wiki</a></li>
 </ul>
 <h3 id="h">H</h3>
 <ul>
-<li><a href="Html.tmpl.main"
+<li><a href="/wiki/Html.tmpl.main"
 title="Html.tmpl.main">Html.tmpl.main</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="h-cont.">H cont.</h3>
 <ul>
-<li><a href="Html.tmpl.module"
+<li><a href="/wiki/Html.tmpl.module"
 title="Html.tmpl.module">Html.tmpl.module</a></li>
 </ul>
 <h3 id="m">M</h3>
 <ul>
-<li><a href="Modifying_the_mediawiki_footer"
+<li><a href="/wiki/Modifying_the_mediawiki_footer"
 title="Modifying the mediawiki footer">Modifying the mediawiki
 footer</a></li>
 </ul>
 <h3 id="o">O</h3>
 <ul>
-<li><a href="Template:ObsoleteChadoTablesToWiki"
+<li><a href="/wiki/Template:ObsoleteChadoTablesToWiki"
 title="Template:ObsoleteChadoTablesToWiki">Template:ObsoleteChadoTablesToWiki</a></li>
 </ul>
 <h3 id="p">P</h3>
 <ul>
-<li><a href="Print-wiki-tables"
+<li><a href="/wiki/Print-wiki-tables"
 title="Print-wiki-tables">Print-wiki-tables</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="s">S</h3>
 <ul>
-<li><a href="Sandbox" title="Sandbox">Sandbox</a></li>
+<li><a href="/wiki/Sandbox" title="Sandbox">Sandbox</a></li>
 </ul>
 <h3 id="w">W</h3>
 <ul>
-<li><a href="Wiki_linking_style_guide"
+<li><a href="/wiki/Wiki_linking_style_guide"
 title="Wiki linking style guide">Wiki linking style guide</a></li>
 </ul></td>
 </tr>

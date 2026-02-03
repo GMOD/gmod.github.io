@@ -4,14 +4,14 @@ title: "Interface test"
 # Interface test
 
 Meeting Report [Model Organism Database User Interface
-Caucus](MOD_User_Interface_Caucus "MOD User Interface Caucus") January
+Caucus](/wiki/MOD_User_Interface_Caucus) January
 18, 2007 Town and Country Hotel, San Diego, CA, USA
 
 
 The user interface (UI) is the most visible aspect of a MOD, and
 arguably has the most direct impact on the satisfaction of its users. On
 the first day of the [January 2007 GMOD
-Meeting](January_2007_GMOD_Meeting "January 2007 GMOD Meeting"), we
+Meeting](/wiki/January_2007_GMOD_Meeting), we
 shared experiences, discussed lessons learned, and identified unsolved
 problems in the field of MOD user interface design. To drive the
 discussion, representatives of several MODs (including both model and
@@ -113,7 +113,7 @@ Ideas for future development
 
 \- attendance list
 
-#  [Individual Presentations](MOD_Face_Talks "MOD Face Talks")
+#  [Individual Presentations](/wiki/MOD_Face_Talks)
 
 Slides and text summaries of individual presentations.
 

@@ -29,7 +29,7 @@ analyzing, and sharing the diverse and very large datasets that are now
 typical in biomedical research. This is an opportunity to share best
 practices with, and learn from, a large community of researchers and
 support staff who are facing the challenges of data-intensive biology.
-[Galaxy](../Galaxy.1 "Galaxy") is an
+[Galaxy](../Galaxy.1) is an
 <a href="http://galaxyproject.org" class="external text"
 rel="nofollow">open web-based platform for data intensive biomedical
 research</a> that is widely used and deployed at research organizations
@@ -56,13 +56,13 @@ the conference web site.
 
 Hope to see you in Chicago,
 
-[Dave Clements](../User%253AClements "User%253AClements"), on behalf of the <a
+[Dave Clements](../User%253AClements), on behalf of the <a
 href="http://galaxyproject.org/wiki/Events/GCC2012/Organizing%20Committee"
 class="external text" rel="nofollow">GCC2012 Organizing Committee</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/07/10*
+*Posted to the [GMOD News](../GMOD_News) on 2012/07/10*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

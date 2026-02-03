@@ -5,8 +5,8 @@ title: "User%253AStajich"
 
 I am an Assistant Professor at University of California, Riverside
 working on fungal evolutionary genomics. I work on
-[BioPerl](BioPerl "BioPerl") and
-<a href="Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>.
+[BioPerl](/wiki/BioPerl) and
+<a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>.
 
 For more information, see my
 <a href="http://bioperl.org/wiki/User%253AJason" class="external text"

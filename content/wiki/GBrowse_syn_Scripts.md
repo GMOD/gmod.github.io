@@ -3,11 +3,11 @@ title: "GBrowse syn Scripts"
 ---
 # GBrowse syn Scripts
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
-[GBrowse](GBrowse.1 "GBrowse") based
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a
+[GBrowse](/wiki/GBrowse.1) based
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 viewer. This page describes helper scripts for processing alignment data
-for loading into [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
+for loading into [GBrowse_syn](/wiki/GBrowse_syn.1).
 
   load_alignments_msa.pl](#load_alignments_msa.pl)
 - [load_alignment_database.pl](#load_alignment_database.pl)
@@ -42,7 +42,7 @@ Options
 | f | clustalw | Format on the multiple sequence alignment files |
 | u | Username for the mysql database | p |
 | Password for the mysql database | d | Database name |
-| m | 100 | Resolution of the base-pair map uses to guide the alignment [grid-lines in GBrowse_syn](GBrowse_syn_Help#Grid_Lines "GBrowse syn Help") |
+| m | 100 | Resolution of the base-pair map uses to guide the alignment [grid-lines in GBrowse_syn](/wiki/GBrowse_syn_Help#Grid_Lines) |
 | n | Flag to skip grid-line mapping (faster but you will lose all of the insertion/deletion data) | v |
 | Flag for verbose progress reporting | c | Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |
 
@@ -51,7 +51,7 @@ Options
 Purpose
 This script loads the alignment database from a tab-delimited alignment
 data files (format described
-<span class="pops">[here](GBrowse_syn_Database#alignment_data_loading_format "GBrowse syn Database")</span>).
+<span class="pops">[here](/wiki/GBrowse_syn_Database#alignment_data_loading_format)</span>).
 This format can either be an intermediate for parsed alignment data or
 can be used for data that does not come from multiple sequence
 alignments, for example gene orthology data, defined regions of
@@ -103,11 +103,11 @@ database loading format.
 Purpose
 Use this script in cases where you have a single alignment file and want
 to convert it to the [tab-delimited
-format](GBrowse_syn_Database#alignment_data_loading_format "GBrowse syn Database")
+format](/wiki/GBrowse_syn_Database#alignment_data_loading_format)
 that is used to load the GBrowse_syn alignment database.
 Note
 This script is deprecated. You can use the
-[load_alignments_msa.pl](GBrowse_syn_Scripts#load_alignments_msa.pl "GBrowse syn Scripts")
+[load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
 to load the database directly.
 Example
     perl aln2hit.pl -f clustalw -i my_alignments.aln >my_alignments.txt
@@ -131,11 +131,11 @@ format alignment data parser.
 Purpose
 Use this script in cases where you have a one or more clustal alignment
 files and want to convert them to the [tab-delimited
-format](GBrowse_syn_Database#alignment_data_loading_format "GBrowse syn Database")
+format](/wiki/GBrowse_syn_Database#alignment_data_loading_format)
 that is used to load the GBrowse_syn alignment database.
 Note
 This script is deprecated. You can use the
-[load_alignments_msa.pl](GBrowse_syn_Scripts#load_alignments_msa.pl "GBrowse syn Scripts")
+[load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
 to load the database directly.
 Example
     perl clustal2hit.pl *.aln >my_alignments.txt

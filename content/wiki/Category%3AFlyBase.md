@@ -13,7 +13,7 @@ This category has only the following subcategory.
 
 ### C
 
-- [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")
+- [Chado FlyBase](/wiki/Category%253AChado_FlyBase)
 
 ## Pages in category "FlyBase"
 
@@ -29,38 +29,37 @@ The following 7 pages are in this category, out of 7 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="c-1">C</h3>
 <ul>
-<li><a href="Chado_Phenotype_Module_at_FlyBase"
+<li><a href="/wiki/Chado_Phenotype_Module_at_FlyBase"
 title="Chado Phenotype Module at FlyBase">Chado Phenotype Module at
 FlyBase</a></li>
 </ul>
 <h3 id="f">F</h3>
 <ul>
-<li><a href="Chado_Tutorial_2011" title="Chado Tutorial 2011">Chado
+<li><a href="/wiki/Chado_Tutorial_2011" title="Chado Tutorial 2011">Chado
 Tutorial 2011</a></li>
-<li><a href="FlyBase_Comparative_Genomics_Data"
+<li><a href="/wiki/FlyBase_Comparative_Genomics_Data"
 title="FlyBase Comparative Genomics Data">FlyBase Comparative Genomics
 Data</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="j">J</h3>
 <ul>
-<li><a href="June_2007_Progress_Report"
+<li><a href="/wiki/June_2007_Progress_Report"
 title="June 2007 Progress Report">June 2007 Progress Report</a></li>
 </ul>
 <h3 id="m">M</h3>
 <ul>
-<li><a
-href="MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions"
+<li><a href="/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions"
 title="MOD User Interfaces: Sample of several MOD Top Level functions">MOD
 User Interfaces: Sample of several MOD Top Level functions</a></li>
 </ul>
 <h3 id="p">P</h3>
 <ul>
-<li><a href="Public_Chado_Databases"
+<li><a href="/wiki/Public_Chado_Databases"
 title="Public Chado Databases">Public Chado Databases</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="x">X</h3>
 <ul>
-<li><a href="XORT_Presentation" title="XORT Presentation">XORT
+<li><a href="/wiki/XORT_Presentation" title="XORT Presentation">XORT
 Presentation</a></li>
 </ul></td>
 </tr>
@@ -88,7 +87,7 @@ The following 8 files are in this category, out of 8 total.
 
 
   [A Chado Case
-  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf "File:A Chado Case Study.pdf")
+  Study.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/59/A_Chado_Case_Study.pdf)
   304 KB
 
 
@@ -111,7 +110,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Fly logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png "File:Fly logo.png")
+  [Fly logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e0/Fly_logo.png)
   22 KB
 
 
@@ -134,7 +133,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Flybase-ng-may03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf "File:Flybase-ng-may03.pdf")
+  [Flybase-ng-may03.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf)
   584 KB
 
 
@@ -157,7 +156,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [FlyBaseMainPageIcon.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/FlyBaseMainPageIcon.png "File:FlyBaseMainPageIcon.png")
+  [FlyBaseMainPageIcon.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/FlyBaseMainPageIcon.png)
   22 KB
 
 
@@ -180,7 +179,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Mod-face-07jan-FlyBase...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Mod-face-07jan-FlyBase.pdf "File:Mod-face-07jan-FlyBase.pdf")
+  [Mod-face-07jan-FlyBase...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Mod-face-07jan-FlyBase.pdf)
   1.89 MB
 
 
@@ -203,7 +202,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Smutniak-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e9/Smutniak-050516.ppt "File:Smutniak-050516.ppt")
+  [Smutniak-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e9/Smutniak-050516.ppt)
   343 KB
 
 
@@ -226,7 +225,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")
+  [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf)
   155 KB
 
 
@@ -249,5 +248,5 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Zhang-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt "File:Zhang-050517.ppt")
+  [Zhang-050517.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt)
   745 KB

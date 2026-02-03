@@ -17,13 +17,13 @@ There will be a
 rel="nofollow">Pathway Tools Workshop</a>, August 19-28, 2009 at
 <a href="http://www.sri.com" class="external text" rel="nofollow">SRI
 International</a>. This two-part workshop covers [Pathway
-Tools](../Pathway_Tools.1 "Pathway Tools") and the BioCyc Database
+Tools](../Pathway_Tools.1) and the BioCyc Database
 Collection.
 
 **Part 1: Tutorial, August 19-21**
 
 This introductory tutorial will educate the new user on aspects of
-[Pathway Tools](../Pathway_Tools.1 "Pathway Tools") including basic use
+[Pathway Tools](../Pathway_Tools.1) including basic use
 of the Pathway/Genome Navigator, Editors, and PathoLogic. Students can
 bring a genome and leave with a draft Pathway/Genome Database.
 
@@ -37,7 +37,7 @@ abstract-submission process), tutorials by SRI International staff, and
 a hackathon. Suggested topics include but are not limited to:
 
 - Share expertise on how to develop new organism-specific databases with
-  [Pathway Tools](../Pathway_Tools.1 "Pathway Tools")
+  [Pathway Tools](../Pathway_Tools.1)
 - Present new scientific results achieved with Pathway Tools and BioCyc
 - Share experiences on how to make the most of Pathway Tools
 - Presentations by users on extensions they have developed to Pathway
@@ -61,8 +61,8 @@ rel="nofollow">website</a> for updates.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/07,
+*Posted to the [GMOD News](../GMOD_News) on 2009/04/07,
 updated 2009/04/24*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -39,15 +39,15 @@ See
 
 - <a href="http://www.phenote.org/contact.shtml" class="external free"
   rel="nofollow">http://www.phenote.org/contact.shtml</a>
-- [Nicole Washington](User%253ANLWashington "User%253ANLWashington")
+- [Nicole Washington](/wiki/User%253ANLWashington)
 
 ## Logo
 
 The [Phenote
-logo](File:PhenoteLogo_Medium.png "File:PhenoteLogo Medium.png") was
+logo](/wiki/File:PhenoteLogo_Medium.png) was
 created by <a href="http://visual-mark.com" class="external text"
 rel="nofollow">Mark Meadows</a>, a participant in the [Spring 2010 Logo
-Program](Spring_2010_Logo_Program "Spring 2010 Logo Program"), while a
+Program](/wiki/Spring_2010_Logo_Program), while a
 design student at
 <a href="http://www.linn-benton.edu" class="external text"
 rel="nofollow">Linn-Benton Community College</a>.

@@ -37,13 +37,13 @@ meeting</a>
 ### Friday 5th April
 
 **State of the GMOD Project**, including GBrowse and Chado updates
-([Scott](User%253AScott "User%253AScott"))
+([Scott](/wiki/User%253AScott))
 
 - <a href="http://www.youtube.com/watch?v=_Q17wcQB5-o"
   class="external text" rel="nofollow">Video (audio + slides)</a>
 
 **GMODsurveyome redux** ([Amelia
-Ireland](User%253AGirlwithglasses "User%253AGirlwithglasses"))
+Ireland](/wiki/User%253AGirlwithglasses))
 
 - <a href="../tour/tour-0.html" class="external text" rel="nofollow">A
   tour of the GMOD community</a>
@@ -60,7 +60,7 @@ rel="nofollow">Manuel Corpas</a>)
   framework for biological data visualization</a>
 
 **Community Building and Maintenance** ([Dave
-Clements](User%253AClements "User%253AClements"))
+Clements](/wiki/User%253AClements))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/GMOD2013_CommunityBuilding.pdf"
   class="internal" title="GMOD2013 CommunityBuilding.pdf">Slides</a>
@@ -111,26 +111,26 @@ rel="nofollow">Manuel Corpas</a>)
   href="http://www.slideshare.net/josephrossetto/drupal-atemblebi-gmod-18857285"
   class="external text" rel="nofollow">Slides</a>
 
-**[JBrowse](JBrowse.1 "JBrowse")** ([Gregg
-Helt](User%253AGreggHelt2 "User%253AGreggHelt2"))
+**[JBrowse](/wiki/JBrowse.1)** ([Gregg
+Helt](/wiki/User%253AGreggHelt2))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/33/GMOD2013_JBrowse.pdf" class="internal"
   title="GMOD2013 JBrowse.pdf">Slides</a>
 
-**[WebApollo](WebApollo.1 "WebApollo")** ([Moni
-Munoz-Torres](User%253AMoni "User%253AMoni"))
+**[WebApollo](/wiki/WebApollo.1)** ([Moni
+Munoz-Torres](/wiki/User%253AMoni))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/GMOD2013_WebApollo.pptx"
   class="internal" title="GMOD2013 WebApollo.pptx">Slides</a>
 
-**[Galaxy](Galaxy.1 "Galaxy")** Project Update ([Dave
-Clements](User%253AClements "User%253AClements"))
+**[Galaxy](/wiki/Galaxy.1)** Project Update ([Dave
+Clements](/wiki/User%253AClements))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/GMOD2013_GalaxyUpdate.pdf"
   class="internal" title="GMOD2013 GalaxyUpdate.pdf">Slides</a>
 
-**[InterMine](InterMine "InterMine")** ([Alex
-Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis"))
+**[InterMine](/wiki/InterMine)** ([Alex
+Kalderimis](/wiki/User%253AAlexkalderimis))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GMOD2013_InterMine.pdf"
   class="internal" title="GMOD2013 InterMine.pdf">Slides</a>
@@ -140,7 +140,7 @@ Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis"))
 **FlyBase update** (Josh Goodman)
 
 **WormBase - some notes on running a MOD in the cloud** ([Todd
-Harris](User%253ATharris "User%253ATharris"))
+Harris](/wiki/User%253ATharris))
 
 **What <a href="http://geneontology.org" class="external text"
 rel="nofollow">the Gene Ontology</a> can do for you** (Jane Lomax)
@@ -148,7 +148,7 @@ rel="nofollow">the Gene Ontology</a> can do for you** (Jane Lomax)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/GMOD2013_GeneOntology.pptx"
   class="internal" title="GMOD2013 GeneOntology.pptx">Slides</a>
 
-**[Tripal](Tripal.1 "Tripal")** (Stephen Ficklin)
+**[Tripal](/wiki/Tripal.1)** (Stephen Ficklin)
 
 **<a href="http://www.arabidopsis.org/about/plain.jsp"
 class="external text" rel="nofollow">TAIR PLAIN</a>** (Bob Muller)
@@ -164,7 +164,7 @@ class="external text" rel="nofollow">TAIR PLAIN</a>** (Bob Muller)
 
 **<a href="https://github.com/intermine/demeter" class="external text"
 rel="nofollow">Demeter</a>: A data-harvester for biological sources**
-([Alex Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis"))
+([Alex Kalderimis](/wiki/User%253AAlexkalderimis))
 
 **Banana Genome Hub** (Delphine Larivière)
 
@@ -174,7 +174,7 @@ rel="nofollow">Demeter</a>: A data-harvester for biological sources**
 
 **<a href="http://wiki.galaxyproject.org/CloudMan" class="external text"
 rel="nofollow">Galaxy CloudMan</a> Workshop** ([Dave
-Clements](User%253AClements "User%253AClements"))
+Clements](/wiki/User%253AClements))
 
 ## Remote Attendance
 

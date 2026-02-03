@@ -4,7 +4,7 @@ title: "Tripal/tool data"
 # Tripal/tool data
 
 This page stores the data that populates the
-[Tripal](../Tripal.1 "Tripal") wiki page.
+[Tripal](../Tripal.1) wiki page.
 
 \| name = Tripal \| full_name = \| status = mature \|
 dev = active \| support = active \| type = \| platform = linux, os x,
@@ -30,16 +30,16 @@ Features and advantages of Tripal:
 - Integrates directly with GMOD
   <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Provides visualizations for Chado "modules" such as
-  [features](../Chado_Sequence_Module "Chado Sequence Module"),
-  [analyses](../Chado_Companalysis_Module "Chado Companalysis Module"),
-  [libraries](../Chado_Library_Module "Chado Library Module"),
-  [stocks](../Chado_Stock_Module "Chado Stock Module"), [and
-  others](../Chado_Modules "Chado Modules").
+  [features](../Chado_Sequence_Module),
+  [analyses](../Chado_Companalysis_Module),
+  [libraries](../Chado_Library_Module),
+  [stocks](../Chado_Stock_Module), [and
+  others](../Chado_Modules).
 - Provides an interface for easy editing/updating of data in Chado.
 - Provides full text and categorical search capabilities for Chado
   content.
-- Can integrate GMOD tools such as [CMap](../CMap.1 "CMap") and
-  [GBrowse](../GBrowse.1 "GBrowse").
+- Can integrate GMOD tools such as [CMap](../CMap.1) and
+  [GBrowse](../GBrowse.1).
 - Integrates with powerful Drupal features like
   <a href="http://drupal.org/project/views" class="external text"
   rel="nofollow">Drupal views</a> and
@@ -91,8 +91,8 @@ with Chado, Tripal, and for constructing or editing custom templates for
 a custom look-and-feel. For more information, see the following links:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
+  Cloud](../Category%253AGMOD_in_the_Cloud)
+- [Tool data](../Category%253ATool_data)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Tripal](../Category%253ATripal "Category%253ATripal")
+  Components](../Category%253AGMOD_Components)
+- [Tripal](../Category%253ATripal)

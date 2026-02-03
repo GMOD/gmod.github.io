@@ -4,20 +4,20 @@ title: "GBrowse Configuration/Balloons"
 # GBrowse Configuration/Balloons
 
 This article describes **popup balloons** and how to configure them in
-[GBrowse](../GBrowse.1 "GBrowse").
+[GBrowse](../GBrowse.1).
 
 For the main GBrowse configuration article, see:
 
 - <a href="../GBrowse_Configuration" class="mw-redirect"
   title="GBrowse Configuration">GBrowse Configuration</a> or
-- [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
+- [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO).
 
 See also:
 
 - <a href="../Popup_balloons" class="mw-redirect"
   title="Popup balloons">popup balloons</a>!
 - [GBrowse Popup
-  Balloons](../GBrowse_Popup_Balloons "GBrowse Popup Balloons")!!
+  Balloons](../GBrowse_Popup_Balloons)!!
 
 See also:
 
@@ -153,7 +153,7 @@ second, named "wide_balloon" takes all the defaults for the default
 balloon, including the location of its images in the directory
 /gbrowse/images/balloons, except that it has a maximum width of 800
 pixels. The various balloon options are described well on the [Popup
-Balloons](../Popup_Balloons "Popup Balloons") page.
+Balloons](../Popup_Balloons) page.
 
 To use the blue balloon rather than the standard one, format the
 "balloon hover" and/or "balloon click" options like this:
@@ -172,7 +172,7 @@ The images for custom balloons reside in the default location of
 config option. To use custom balloon images, point "images" to a a
 web-accessible directory in your document tree which contains the seven
 PNG images described on the [Popup
-Balloons](../Popup_Balloons "Popup Balloons") page. These images must be
+Balloons](../Popup_Balloons) page. These images must be
 named as follows:
 
      balloon.png     down_right.png  up_right.png
@@ -180,7 +180,7 @@ named as follows:
      close.png
 
 Tips for creating these images can be found on [Popup
-Balloons](../Popup_Balloons "Popup Balloons").
+Balloons](../Popup_Balloons).
 
 
 

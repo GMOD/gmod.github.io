@@ -25,7 +25,7 @@ title: "Sample Chado SQL"
 
 This HOWTO provides several sample SQL queries to view basic genome data
 from a Chado database. Some of these are drawn from the
-[GMODTools](GMODTools "GMODTools") configuration file
+[GMODTools](/wiki/GMODTools) configuration file
 GMODTools/conf/bulkfiles/chadofeatsql.xml Example output of some of
 these is shown in the tables at <a
 href="http://insects.eugenes.org/genome/Drosophila_melanogaster/current/tables/"
@@ -36,7 +36,7 @@ rel="nofollow">http://insects.eugenes.org/genome/Drosophila_melanogaster/current
 
 The simplest way to test contents of a Chado database is with the
 **psql** command line program that is part of the
-[PostgreSQL](PostgreSQL "PostgreSQL") software. The following sample SQL
+[PostgreSQL](/wiki/PostgreSQL) software. The following sample SQL
 code can be used this way from a Unix or MacOSX command line.
 
      dgbook% psql -l
@@ -325,7 +325,7 @@ complex)
 ## longer gene_page output
 
 See this
-[Sample_Chado_gene_report](Sample_Chado_gene_report "Sample Chado gene report")
+[Sample_Chado_gene_report](/wiki/Sample_Chado_gene_report)
 for a well studied gene from FlyBase chado release 5.
 
 # More Information
@@ -337,5 +337,5 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 # Authors
 
-- [Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:05, 16 April 2007
+- [Dongilbert](/wiki/User%253ADongilbert) 16:05, 16 April 2007
   (EDT)

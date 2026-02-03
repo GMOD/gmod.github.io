@@ -9,8 +9,8 @@ The following 2 pages are in this category, out of 2 total.
 
 ### W
 
-- [WebGBrowse](WebGBrowse.1 "WebGBrowse")
-- [WebGBrowse/tool data](WebGBrowse/tool_data "WebGBrowse/tool data")
+- [WebGBrowse](/wiki/WebGBrowse.1)
+- [WebGBrowse/tool data](/wiki/WebGBrowse/tool_data)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253AWebGBrowse](/wiki/Category%253AWebGBrowse)"

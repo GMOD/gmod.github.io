@@ -5,6 +5,6 @@ title: "User%253ADanB"
 
 # Dan Blankenberg
 
-I work on the [Galaxy](Galaxy.1 "Galaxy") project at Penn State. I'll be
+I work on the [Galaxy](/wiki/Galaxy.1) project at Penn State. I'll be
 presenting Galaxy at the upcoming GMOD Workshop at [PAG
-2011](PAG_2011 "PAG 2011").
+2011](/wiki/PAG_2011).

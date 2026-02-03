@@ -10,25 +10,25 @@ The following 5 pages are in this category, out of 5 total.
 ### C
 
 - [Chado%253A%253AAutoDBI
-  Presentation](Chado%253A%253AAutoDBI_Presentation "Chado%253A%253AAutoDBI Presentation")
+  Presentation](/wiki/Chado%253A%253AAutoDBI_Presentation)
 
 ### G
 
-- [GMODWeb](GMODWeb "GMODWeb")
+- [GMODWeb](/wiki/GMODWeb)
 
 ### J
 
 - [January 2009 GMOD
-  Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting")
+  Meeting](/wiki/January_2009_GMOD_Meeting)
 
 ### N
 
 - [November 2007 GMOD
-  Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
+  Meeting](/wiki/November_2007_GMOD_Meeting)
 
 ### T
 
-- [Turnkey](Turnkey "Turnkey")
+- [Turnkey](/wiki/Turnkey)
 
 ## Media in category "Turnkey"
 
@@ -50,7 +50,7 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [Oconnor-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Oconnor-050516.ppt "File:Oconnor-050516.ppt")
+  [Oconnor-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/Oconnor-050516.ppt)
   1.23 MB
 
 
@@ -74,5 +74,5 @@ The following 2 files are in this category, out of 2 total.
 
 
   [Turnkey sept
-  2003.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Turnkey_sept_2003.ppt "File:Turnkey sept 2003.ppt")
+  2003.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Turnkey_sept_2003.ppt)
   155 KB

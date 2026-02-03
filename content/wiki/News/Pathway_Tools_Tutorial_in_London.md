@@ -3,7 +3,7 @@ title: "News/Pathway Tools Tutorial in London"
 ---
 # News/Pathway Tools Tutorial in London
 
-A [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") and BioCyc
+A [Pathway Tools](../Pathway_Tools.1) and BioCyc
 <a href="http://brg.ai.sri.com/ptools/tutorial/2008-09-London.html"
 class="external text" rel="nofollow">tutorial</a> well be held September
 22-23, 2008 at Kings College London. This tutorial is kindly hosted by
@@ -25,7 +25,7 @@ these resources.
 Day 2 will address creation of new Pathway/Genome Databases (PGDBs) with
 Pathway Tools, and how to query PGDBs programmatically.
 
-[Pathway Tools](../Pathway_Tools.1 "Pathway Tools") includes a unique
+[Pathway Tools](../Pathway_Tools.1) includes a unique
 combination of bioinformatics algorithms including a predictor of
 metabolic pathways, an operon predictor, and an algorithm for predicting
 which genes in a genome code for missing enzymes in predicted metabolic
@@ -43,7 +43,7 @@ Peter Karp
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/28*
+*Posted to the [GMOD News](../GMOD_News) on 2008/08/28*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

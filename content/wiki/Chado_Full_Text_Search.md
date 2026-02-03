@@ -4,8 +4,8 @@ title: "Chado Full Text Search"
 # Chado Full Text Search
 
 Starting with the 0.30 release of the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> [GBrowse
-adaptor](GBrowse_Adaptors "GBrowse Adaptors")
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> [GBrowse
+adaptor](/wiki/GBrowse_Adaptors)
 (<a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a>), there is
 support for full text searching of names and attributes of features in
@@ -17,9 +17,9 @@ like to thank him for contributing to the Chado GBrowse adaptor.
 
 ## Prerequisites
 
-- [PostgreSQL](PostgreSQL "PostgreSQL") 8.4
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a> 1.11
-- [GBrowse](GBrowse.1 "GBrowse") 1.70 or 2.0
+- [PostgreSQL](/wiki/PostgreSQL) 8.4
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> 1.11
+- [GBrowse](/wiki/GBrowse.1) 1.70 or 2.0
 
 ## Configuration
 
@@ -32,13 +32,13 @@ actions:
 
 - Validate that you have the prerequisite software.
 - Add "searchable_name" column to the
-  [feature](Chado_Sequence_Module#Table:_feature "Chado Sequence Module")
+  [feature](/wiki/Chado_Sequence_Module#Table:_feature)
   table.
 - Add "searchable_synonym_sgml" column to the
-  [synonym](Chado_Sequence_Module#Table:_synonym "Chado Sequence Module")
+  [synonym](/wiki/Chado_Sequence_Module#Table:_synonym)
   table.
 - Add "searchable_accession" column to the
-  [dbxref](Chado_General_Module#Table:_dbxref "Chado General Module")
+  [dbxref](/wiki/Chado_General_Module#Table:_dbxref)
   table.
 - Add triggers on these tables so that when the name or accession is
   added or modified, the "searchable" column will be updated too.
@@ -60,7 +60,7 @@ the configuration file. Like this example:
 ## Maintaining the materialized view
 
 If the data in your
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database is
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database is
 changing, it is a good idea to periodically update the all_feature_names
 materialized view. The `gmod_materialized_view_tool.pl` has a function
 for examining the database and updating materialized views. This

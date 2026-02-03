@@ -140,7 +140,7 @@ class="external text" rel="nofollow">Nodejs.org</a>:
 - Created a "Genes only" *C. elegans* GFF file
   (`gzip -dc c_elegans.PRJNA13758.WS286.annotations.gff3.gz | grep "\tWormBase\t" > c_elegans.genes.gff3`
   )
-- Created a [bash script](PAG2026_bash_script "PAG2026 bash script")
+- Created a [bash script](/wiki/PAG2026_bash_script)
   that will do all of the commands in this tutorial "all at once".
 
 ## Initializing JBrowse

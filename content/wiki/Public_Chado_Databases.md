@@ -12,29 +12,29 @@ title: "Public Chado Databases"
     - [FlyBase](#FlyBase)
     - [GeneDB](#GeneDB)
 
-# Public <a href="Chado" class="mw-redirect" title="Chado">Chado</a> <a href="Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases
+# Public <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> <a href="/wiki/Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases
 
-## Chado [PostgreSQL](PostgreSQL "PostgreSQL") Dumps
+## Chado [PostgreSQL](/wiki/PostgreSQL) Dumps
 
 These projects provide
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 dumps that you can copy and learn from.
 
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase"):
-  <a href="ftp://ftp.flybase.org/releases/current/psql/"
+- [FlyBase](/wiki/Category%253AFlyBase):
+  <a href="/wiki/ftp://ftp.flybase.org/releases/current/psql/"
   class="external free"
   rel="nofollow">ftp://ftp.flybase.org/releases/current/psql/</a> -
   Contains 12 Drosophila genomes.
-- [ParameciumDB](ParameciumDB "ParameciumDB"):
+- [ParameciumDB](/wiki/ParameciumDB):
   <a href="http://paramecium.cgm.cnrs-gif.fr/download/sql/"
   class="external free"
   rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/download/sql/</a>
-- [Yeast](Category%253ASGD "Category%253ASGD"):
+- [Yeast](/wiki/Category%253ASGD):
   <a href="http://sgdlite.princeton.edu/download/sgdlite/"
   class="external free"
   rel="nofollow">http://sgdlite.princeton.edu/download/sgdlite/</a>
 :
-  <a href="ftp://ftp.vectorbase.org/public_data/databases/chado/"
+  <a href="/wiki/ftp://ftp.vectorbase.org/public_data/databases/chado/"
   class="external free"
   rel="nofollow">ftp://ftp.vectorbase.org/public_data/databases/chado/</a>
 
@@ -44,7 +44,7 @@ consider adding an export dump file.
 
      pg_dump -f mychado.dump mychado
 
-## Direct <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Access
+## Direct <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Access
 
 ### <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>

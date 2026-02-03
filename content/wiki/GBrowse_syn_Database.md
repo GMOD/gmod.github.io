@@ -3,14 +3,13 @@ title: "GBrowse syn Database"
 ---
 # GBrowse syn Database
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
-[GBrowse](GBrowse.1 "GBrowse") based
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a
+[GBrowse](/wiki/GBrowse.1) based
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 viewer. This page describes the database that GBrowse_syn uses, and how
 to get syntenic data into that database.
 
-- Sample data and configuration files can be downloaded from the <a
-  href="ftp://ftp.gmod.org/pub/gmod/Courses/2009/SummerSchoolEurope/rice.tar.bz2"
+- Sample data and configuration files can be downloaded from the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2009/SummerSchoolEurope/rice.tar.bz2"
   class="external text" rel="nofollow">GMOD FTP site</a>; the sample
   data are for two rice species (courtesy of Bonnie Hurwitz)
 
@@ -136,7 +135,7 @@ MySQL command:
 
 Multiple sequence alignments can be loaded directly into the GBrowse_syn
 alignment database with the script
-[load_alignments_msa.pl](GBrowse_syn_Scripts#load_alignments_msa.pl "GBrowse syn Scripts").
+[load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl).
 This script will process alignment data in a number of formats
 recognized by BioPerl, such as CLUSTAL and FASTA. Note that these are
 file formatting conventions used by a variety of different applications
@@ -146,16 +145,16 @@ genome alignments for multiple species are generally more complex than
 simple multiple sequence alignments with clustalw.
 
 - More information on
-  [load_alignments_msa.pl](GBrowse_syn_Scripts#load_alignments_msa.pl "GBrowse syn Scripts")
+  [load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
 - See the GBrowse_syn page for more on [whole genome alignment
-  approaches](GBrowse_syn.1#See_also "GBrowse syn")
+  approaches](/wiki/GBrowse_syn.1#See_also)
 
 
 
 ## Loading from other sources
 
 The script
-[load_alignment_database.pl](GBrowse_syn_Scripts#load_alignment_database.pl "GBrowse syn Scripts")
+[load_alignment_database.pl](/wiki/GBrowse_syn_Scripts#load_alignment_database.pl)
 can be used to load the alignment database from a tab-delimited
 alignment data files (format described below). This format can either be
 an intermediate for parsed alignment data or can be used for data that
@@ -165,7 +164,7 @@ format requires start and end coordinates for each reference sequence.
 Any features that have start end and strand information can be used.
 
 - More information on
-  [load_alignment_database.pl](GBrowse_syn_Scripts#load_alignment_database.pl "GBrowse syn Scripts")
+  [load_alignment_database.pl](/wiki/GBrowse_syn_Scripts#load_alignment_database.pl)
 
 
 
@@ -186,13 +185,13 @@ reciprocal alignment is also created during database loading.
 
 # GBrowse_syn Database Schema
 
-- The alignment database [schema](Glossary#Schema "Glossary") is very
+- The alignment database [schema](/wiki/Glossary#Schema) is very
   simple; it has a tables for all reciprocal 'hits,' or alignment
   features, and a table for (optional) 1:1 coordinate maps
 - The alignments table contains coordinate information and also support
   cigar-line representations and the alignment to facilitate future
   reconstruction of the alignment within
-  [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
+  [GBrowse_syn](/wiki/GBrowse_syn.1).
 
 
 

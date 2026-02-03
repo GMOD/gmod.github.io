@@ -9,12 +9,12 @@ The following 2 pages are in this category, out of 2 total.
 
 ### B
 
-- [BioDIG](BioDIG.1 "BioDIG")
+- [BioDIG](/wiki/BioDIG.1)
 
 ### G
 
 - [GMOD Online Training 2014/GBrowse syn
-  Tutorial](GMOD_Online_Training_2014/GBrowse_syn_Tutorial "GMOD Online Training 2014/GBrowse syn Tutorial")
+  Tutorial](/wiki/GMOD_Online_Training_2014/GBrowse_syn_Tutorial)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253ATools_using_GMOD](/wiki/Category%253ATools_using_GMOD)"

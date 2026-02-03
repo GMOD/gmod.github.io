@@ -3,11 +3,11 @@ title: "News/WebApollo released"
 ---
 # News/WebApollo released
 
-From the [WebApollo](../WebApollo.1 "WebApollo") development team:
+From the [WebApollo](../WebApollo.1) development team:
 
 We're very excited to announce that we've just released the first
-version of [WebApollo](../WebApollo.1 "WebApollo"), the next generation
-[Apollo](../Apollo.1 "Apollo") (as you can probably guess from the name,
+version of [WebApollo](../WebApollo.1), the next generation
+[Apollo](../Apollo.1) (as you can probably guess from the name,
 it's now on the web!).
 
 <a
@@ -30,9 +30,9 @@ migrating to it.
 
 Please post any questions or issues you may have to the
 [Apollo/WebApollo mailing
-list](../Apollo.1#Contacts_and_Mailing_Lists "Apollo").
+list](../Apollo.1#Contacts_and_Mailing_Lists).
 
 Lastly, we'd like to give a huge thanks to Rob Buels from the
-[JBrowse](../JBrowse.1 "JBrowse") team for his invaluable contribution
+[JBrowse](../JBrowse.1) team for his invaluable contribution
 (and countless hours) in helping migrate WebApollo to the current
 version of JBrowse. Thanks!!!

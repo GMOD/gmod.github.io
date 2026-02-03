@@ -5,7 +5,7 @@ title: "MySQL"
 
 <a href="http://mysql.com" class="external text"
 rel="nofollow">MySQL</a> is a popular open source [database management
-system](Glossary#Database_Management_System "Glossary") (DBMS). It's
+system](/wiki/Glossary#Database_Management_System) (DBMS). It's
 generally considered to be the easiest of all relational database
 management systems to install (Unix or Windows). It's not always viewed
 as favorably by database experts as it lacks certain features that they
@@ -16,9 +16,9 @@ databases.
 
 See also:
 
-- [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
-- [PostgreSQL](PostgreSQL "PostgreSQL") - The DBMS used with
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+- [Databases and GMOD](/wiki/Databases_and_GMOD)
+- [PostgreSQL](/wiki/PostgreSQL) - The DBMS used with
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ## Scott Cain's thoughts on why you shouldn't use MySQL for Chado
 
@@ -27,7 +27,7 @@ down while I'm thinking about it.
 
 MySQL is a very good database for some things: it is very fast as a read
 only database, and so is quite good for driving data displays like
-[GBrowse](GBrowse.1 "GBrowse"). My experience outlined below describes
+[GBrowse](/wiki/GBrowse.1). My experience outlined below describes
 why I learned to distrust it for 'important' data.
 
 Some things that make me wary:
@@ -67,17 +67,17 @@ Some things that make me wary:
 ### How I learned to distrust MySQL
 
 When I started working on GMOD in 2002, the first project I tackled was
-to write a port of the [GBrowse](GBrowse.1 "GBrowse") /
-<a href="GBrowse_adaptors" class="mw-redirect"
+to write a port of the [GBrowse](/wiki/GBrowse.1) /
+<a href="/wiki/GBrowse_adaptors" class="mw-redirect"
 title="GBrowse adaptors">Bio::DB::GFF adaptor</a> to
-[PostgreSQL](PostgreSQL "PostgreSQL"). I did a perfect job the first
+[PostgreSQL](/wiki/PostgreSQL). I did a perfect job the first
 time through (not really, but pretend it's true for the moment). When I
 went to load some test data, the load failed and PostgreSQL barfed with
 an unfriendly error message, even though the same data loaded without
 incident using the MySQL adaptor. After spending a few days looking for
 bugs in the PostgreSQL adaptor that I'd written, I started looking at
 the data. It turns out that the test data (the entire
-[WormBase](Category%253AWormBase "Category%253AWormBase") [GFF](GFF "GFF") at
+[WormBase](/wiki/Category%253AWormBase) [GFF](/wiki/GFF) at
 the time) had data in it that violated a unique constraint on the fdata
 table. That is the main data table, and the constraint was over
 (fref,fbin,fstart,fstop,ftypeid,gid). Basically, the WormBase GFF had a

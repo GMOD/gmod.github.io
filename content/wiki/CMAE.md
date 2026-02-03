@@ -9,10 +9,10 @@ title: "CMAE"
 
 Work on CMAE was started, but never completed.
 
-The [CMap](CMap.1 "CMap") Assembly Editor (CMAE) is a desktop
+The [CMap](/wiki/CMap.1) Assembly Editor (CMAE) is a desktop
 application that is being developed to assist in visualizing and editing
 large scale sequence assemblies for the maize sequencing project. Using
-the [CMap](CMap.1 "CMap") comparative mapping database, CMAE allows
+the [CMap](/wiki/CMap.1) comparative mapping database, CMAE allows
 sequence assemblies to be superimposed on top of diverse other types of
 mapping data, allowing the finisher to view assemblies in the context of
 a cascade of mapping data at a variety of resolutions. For example, the
@@ -33,7 +33,7 @@ contigs can be exported to a more specialized program. (L. Stein)
 
 ## Requirements
 
-- [CMap](CMap.1 "CMap")
+- [CMap](/wiki/CMap.1)
 - <a href="http://www.perltk.org/" class="external text"
   rel="nofollow">Perl/Tk</a>
 - <a href="http://www.tkzinc.org/tkzinc/index.php" class="external text"
@@ -41,10 +41,10 @@ contigs can be exported to a more specialized program. (L. Stein)
 
 ## Documentation
 
-- [Integrating_CMAE](Integrating_CMAE "Integrating CMAE") (<a
+- [Integrating_CMAE](/wiki/Integrating_CMAE) (<a
   href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view=markup"
   class="external text" rel="nofollow">CVS</a>)
-- [CMap_API](CMap_API "CMap API") (<a
+- [CMap_API](/wiki/CMap_API) (<a
   href="http://gmod.cvs.sourceforge.net/gmod/cmap/docs/CMAP_API.pod?view=markup"
   class="external text" rel="nofollow">CVS</a>)
 
@@ -81,4 +81,4 @@ The CMAE specific information is located in the "editor" directory.
 
 ## Contact
 
-- [Ben Faga](User%253AFaga "User%253AFaga")
+- [Ben Faga](/wiki/User%253AFaga)

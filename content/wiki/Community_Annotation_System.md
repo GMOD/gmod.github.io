@@ -34,16 +34,16 @@ Items that need to be addressed soon are:
 
 - Make networking generic again (currently it is hard coded to run at
   CSHL). This should be pretty easy (writing a bash script similar to
-  what Eric wrote for the original [Modware](Modware "Modware") VM).
+  what Eric wrote for the original [Modware](/wiki/Modware) VM).
 - Address the hard coding of stuff in the
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> -\>
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> -\>
   Mediawiki and Mediawiki -\> Chado scripts.
 - ~~Hook up the cgi for generating GameXML from
-  [GBrowse](GBrowse.1 "GBrowse") (so that the click to edit with
-  [Apollo](Apollo.1 "Apollo") will work).~~DONE!
+  [GBrowse](/wiki/GBrowse.1) (so that the click to edit with
+  [Apollo](/wiki/Apollo.1) will work).~~DONE!
 - Documentation, Documentation, Documentation!
 
 For more information or help, send email to the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") at
+Desk](/wiki/GMOD_Help_Desk) at
 <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a>.

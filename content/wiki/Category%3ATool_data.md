@@ -7,7 +7,7 @@ Tool data pages are a way of organising the information about GMOD tools
 in a standardized manner.
 
 To create a tool data page, copy and paste the data skeleton at
-[Template:Tool_data](Template:Tool_data "Template:Tool data"). The
+[Template:Tool_data](/wiki/Template:Tool_data). The
 format should be fairly self-explanatory; it's basic tag-value pairs
 with a vertical bar as separator. Values can be multiple lines long, as
 long as they don't contain tag-like text, i.e. vertical bar followed by
@@ -34,7 +34,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 ## Pages in category "Tool data"
 
@@ -50,79 +50,79 @@ The following 22 pages are in this category, out of 22 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="Apollo/tool_data" title="Apollo/tool data">Apollo/tool
+<li><a href="/wiki/Apollo/tool_data" title="Apollo/tool data">Apollo/tool
 data</a></li>
 </ul>
 <h3 id="b">B</h3>
 <ul>
-<li><a href="BLAST_Graphic_Viewer/tool_data"
+<li><a href="/wiki/BLAST_Graphic_Viewer/tool_data"
 title="BLAST Graphic Viewer/tool data">BLAST Graphic Viewer/tool
 data</a></li>
 </ul>
 <h3 id="c">C</h3>
 <ul>
-<li><a href="CMap/tool_data" title="CMap/tool data">CMap/tool
+<li><a href="/wiki/CMap/tool_data" title="CMap/tool data">CMap/tool
 data</a></li>
 </ul>
 <h3 id="d">D</h3>
 <ul>
-<li><a href="Downloads" title="Downloads">Downloads</a></li>
+<li><a href="/wiki/Downloads" title="Downloads">Downloads</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="Galaxy/tool_data" title="Galaxy/tool data">Galaxy/tool
+<li><a href="/wiki/Galaxy/tool_data" title="Galaxy/tool data">Galaxy/tool
 data</a></li>
-<li><a href="GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></li>
-<li><a href="GBrowse_syn/tool_data"
+<li><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></li>
+<li><a href="/wiki/GBrowse_syn/tool_data"
 title="GBrowse syn/tool data">GBrowse syn/tool data</a></li>
-<li><a href="GBrowse/tool_data" title="GBrowse/tool data">GBrowse/tool
+<li><a href="/wiki/GBrowse/tool_data" title="GBrowse/tool data">GBrowse/tool
 data</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="g-cont.">G cont.</h3>
 <ul>
-<li><a href="GO_Graphic_Viewer/tool_data"
+<li><a href="/wiki/GO_Graphic_Viewer/tool_data"
 title="GO Graphic Viewer/tool data">GO Graphic Viewer/tool data</a></li>
-<li><a href="GO%253A%253ATermFinder/tool_data"
+<li><a href="/wiki/GO%253A%253ATermFinder/tool_data"
 title="GO::TermFinder/tool data">GO::TermFinder/tool data</a></li>
 </ul>
 <h3 id="j">J</h3>
 <ul>
-<li><a href="JBrowse/tool_data" title="JBrowse/tool data">JBrowse/tool
+<li><a href="/wiki/JBrowse/tool_data" title="JBrowse/tool data">JBrowse/tool
 data</a></li>
 </ul>
 <h3 id="m">M</h3>
 <ul>
-<li><a href="MAKER/tool_data" title="MAKER/tool data">MAKER/tool
+<li><a href="/wiki/MAKER/tool_data" title="MAKER/tool data">MAKER/tool
 data</a></li>
 </ul>
 <h3 id="p">P</h3>
 <ul>
-<li><a href="Pathway_Tools.1" title="Pathway Tools">Pathway
+<li><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway
 Tools</a></li>
-<li><a href="Pathway_Tools/tool_data"
+<li><a href="/wiki/Pathway_Tools/tool_data"
 title="Pathway Tools/tool data">Pathway Tools/tool data</a></li>
 </ul>
 <h3 id="s">S</h3>
 <ul>
-<li><a href="SOBA.1" title="SOBA">SOBA</a></li>
-<li><a href="SOBA/tool_data" title="SOBA/tool data">SOBA/tool
+<li><a href="/wiki/SOBA.1" title="SOBA">SOBA</a></li>
+<li><a href="/wiki/SOBA/tool_data" title="SOBA/tool data">SOBA/tool
 data</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="t-1">T</h3>
 <ul>
-<li><a href="Training_and_Outreach"
+<li><a href="/wiki/Training_and_Outreach"
 title="Training and Outreach">Training and Outreach</a></li>
-<li><a href="Tripal/tool_data" title="Tripal/tool data">Tripal/tool
+<li><a href="/wiki/Tripal/tool_data" title="Tripal/tool data">Tripal/tool
 data</a></li>
-<li><a href="Template:TutorialList"
+<li><a href="/wiki/Template:TutorialList"
 title="Template:TutorialList">Template:TutorialList</a></li>
 </ul>
 <h3 id="w">W</h3>
 <ul>
-<li><a href="WebApollo/tool_data"
+<li><a href="/wiki/WebApollo/tool_data"
 title="WebApollo/tool data">WebApollo/tool data</a></li>
-<li><a href="WebGBrowse.1" title="WebGBrowse">WebGBrowse</a></li>
-<li><a href="WebGBrowse/tool_data"
+<li><a href="/wiki/WebGBrowse.1" title="WebGBrowse">WebGBrowse</a></li>
+<li><a href="/wiki/WebGBrowse/tool_data"
 title="WebGBrowse/tool data">WebGBrowse/tool data</a></li>
 </ul></td>
 </tr>

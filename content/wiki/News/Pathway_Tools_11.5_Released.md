@@ -18,13 +18,13 @@ See the
 class="external text" rel="nofollow">Pathway Tools release notes</a> for
 details.
 
-[Pathway Tools](../Pathway_Tools.1 "Pathway Tools") is a comprehensive
+[Pathway Tools](../Pathway_Tools.1) is a comprehensive
 symbolic systems biology software package that supports several use
 cases in bioinformatics and systems biology.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/08/15*
+*Posted to the [GMOD News](../GMOD_News) on 2007/08/15*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

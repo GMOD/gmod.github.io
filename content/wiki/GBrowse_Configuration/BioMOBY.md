@@ -64,7 +64,7 @@ the GFF source (column 2) to a MOBY namespace:
 
 REQUIRED LIBRARIES
 This script requires libraries from the BioMOBY project. Currently these
-are only available from the [CVS](../Glossary#CVS "Glossary"). Anonymous
+are only available from the [CVS](../Glossary#CVS). Anonymous
 checkout of the BioMOBY project can be accomplished as follows:
      cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/moby login
 

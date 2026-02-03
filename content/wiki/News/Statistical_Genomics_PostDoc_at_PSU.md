@@ -25,7 +25,7 @@ of genes in certain mutation states, as identified by HMMs). Such
 knowledge is vital in a clinical setting where disease mutations need to
 be evaluated. Our resources and links with medical researchers at
 Hershey Medical School and computational biologists from the
-[Galaxy](../Galaxy.1 "Galaxy") team put us in a great position to
+[Galaxy](../Galaxy.1) team put us in a great position to
 address these questions.
 
 Candidates should have experience in bioinformatics, working knowledge
@@ -55,4 +55,4 @@ workforce.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/09/09*
+*Posted to the [GMOD News](../GMOD_News) on 2013/09/09*

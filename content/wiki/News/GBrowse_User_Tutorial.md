@@ -15,7 +15,7 @@ rel="nofollow">GBrowse User Tutorial</a> was released by
 rel="nofollow">OpenHelix</a> this week. The narrated tutorial covers:
 
 - the basic layout and search methods in
-  [GBrowse](../GBrowse.1 "GBrowse")
+  [GBrowse](../GBrowse.1)
 - how to access detailed annotation data tied to genomic sequences
 - how to select and customize annotations using tracks
 - how to upload and incorporate your own data or other external data
@@ -47,8 +47,8 @@ rel="nofollow">MGI</a>, and
 <a href="http://www.openhelix.com/wormbase" class="external text"
 rel="nofollow">WormBase</a>, and in the future for
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN</a>,
-[FlyBase](../Category%253AFlyBase "Category%253AFlyBase"), and
-[SGD](../Category%253ASGD "Category%253ASGD") (*all* of which are GMOD users
+[FlyBase](../Category%253AFlyBase), and
+[SGD](../Category%253ASGD) (*all* of which are GMOD users
 and/or contributors).
 
 This tutorial focuses on *using* GBrowse and complements the
@@ -57,13 +57,13 @@ class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a>. It is
 an excellent resource for any organization that wants to help its users
 use GBrowse better.
 
-[Dave Clements](../User%253AClements "User%253AClements")
+[Dave Clements](../User%253AClements)
 
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
-
-
-
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/05*
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+
+*Posted to the [GMOD News](../GMOD_News) on 2009/02/05*
+
+
+- [News Items](../Category%253ANews_Items)

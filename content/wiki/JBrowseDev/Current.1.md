@@ -22,12 +22,12 @@ then consult this guide when you need information on specific things you
 want to do with your JBrowse.
 
 
-Check out the new [JBrowse FAQ](/wiki/JBrowse_FAQ "JBrowse FAQ") page
+Check out the new [JBrowse FAQ](/wiki/JBrowse_FAQ) page
 for more tips on setup and configuration
 <a href="http://gmod.org/wiki/JBrowse_FAQ" class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ</a>
 
-Also see the [JBrowse Desktop](/wiki/JBrowse_Desktop "JBrowse Desktop")
+Also see the [JBrowse Desktop](/wiki/JBrowse_Desktop)
 guide here
 <a href="http://gmod.org/wiki/JBrowse_Desktop" class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Desktop</a>
@@ -666,7 +666,7 @@ be run before adding other tracks. In addition to formatting the
 sequence data, this script creates a track called "DNA" that displays
 the reference sequence. The simplest way to use it is with the --fasta
 option, which uses a single sequence or set of reference sequences from
-a [FASTA](/wiki/Glossary#FASTA "Glossary") file:
+a [FASTA](/wiki/Glossary#FASTA) file:
 
     bin/prepare-refseqs.pl --fasta <fasta file> [options]
 
@@ -741,7 +741,7 @@ of these tools also adds a track configuration stanza to the
 
 Each run of this script formats a single track for JBrowse. A *flat
 file* is a data set that exists entirely in a single file. For this
-script, the file must be a [GFF3](/wiki/GFF3 "GFF3"),
+script, the file must be a [GFF3](/wiki/GFF3),
 <a href="http://www.ensembl.org/info/website/upload/bed.html"
 class="external text" rel="nofollow">BED</a>, or GenBank text file.
 
@@ -797,7 +797,7 @@ This script uses a
 title="JBrowseDev/Current/Usage/ConfigFiles">config file</a> to produce
 a set of feature tracks in JBrowse. It can be used to obtain information
 from any database with appropriate
-[schema](/wiki/Glossary#Database_Schema "Glossary"), or from flat files.
+[schema](/wiki/Glossary#Database_Schema), or from flat files.
 Because it can produce several feature tracks in a single execution, it
 is useful for large-scale feature data entry into JBrowse.
 
@@ -1060,20 +1060,7 @@ embedded popup window showing the results of searching for that
 feature's name in NCBI's global search, and "search at NCBI" will show
 in a tooltip when the user hovers over a feature with the mouse:
 
-``` de1
-   "tracks": [
-      {
-         "label"    : "ReadingFrame",
-         "category" : "Genes",
-         "class"    : "dblhelix",
-         "key"      : "Frame usage",
-         "onClick"  : {
-             "label": "search at NCBI",
-             "url": "http://www.ncbi.nlm.nih.gov/gquery/?term={name}"
-         }
-      }
-   ...
-```
+__CODE_BLOCK_0__
 
 For details on all the options supported by **onClick**, see [Click
 Configuration Options](#Click_Configuration_Options).
@@ -1097,25 +1084,13 @@ template is automatically filled in with the feature info:
 
 
 
-``` de1
-    "onClick": {
-        "label" : "Feature name: {name}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_1__
 
 Example for HTMLFeatures, which only allows plain text descriptions but
 can support newlines (essentially uses \ for
 mouseover).
 
-``` de1
-    "onClick": {
-        "label": "Feature name {name}\nFeature start {start}\nFeature end {end}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_2__
 
 
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
@@ -1123,13 +1098,7 @@ using this.feature to access the feature details
 
 
 
-``` de1
-    "onClick": {
-        "label": "function() { return 'Feature name: '+this.feature.get('name'); }",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_3__
 
 
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but
@@ -1304,4 +1273,4 @@ make it higher resolution
   Browser</a> paper
 
 
-- [JBrowse](/wiki/Category%253AJBrowse "Category%253AJBrowse")
+- [JBrowse](/wiki/Category%253AJBrowse)

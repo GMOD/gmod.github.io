@@ -4,24 +4,24 @@ title: "GBrowse Install HOWTO"
 # GBrowse Install HOWTO
 
 This page contains detailed installation instructions for **installing
-[GBrowse 1.x](GBrowse.1 "GBrowse")**, suitable for use on Linux and
+[GBrowse 1.x](/wiki/GBrowse.1)**, suitable for use on Linux and
 other Unix-like platforms. It also contains performance and maintenance
 hints useful for all systems.
 
 Note that these instructions are specific to GBrowse 1.x versions. See
 the [installation instructions for GBrowse
-2.x](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO").
+2.x](/wiki/GBrowse_2.0_Install_HOWTO.1).
 
 See also the following OS-specific instructions:
 
-- [Install on MacOSX](GBrowse_MacOSX_HOWTO "GBrowse MacOSX HOWTO")
-- [Install on Windows](GBrowse_Windows_HOWTO "GBrowse Windows HOWTO")
+- [Install on MacOSX](/wiki/GBrowse_MacOSX_HOWTO)
+- [Install on Windows](/wiki/GBrowse_Windows_HOWTO)
 - [Install on Ubuntu and other Debian-based
-  systems](GBrowse_Ubuntu_HOWTO "GBrowse Ubuntu HOWTO")
+  systems](/wiki/GBrowse_Ubuntu_HOWTO)
 - [Install on Fedora Core and other RPM-based
-  systems](GBrowse_RPM_HOWTO "GBrowse RPM HOWTO")
+  systems](/wiki/GBrowse_RPM_HOWTO)
 - [Install on Gentoo Linux
-  system](GBrowse_Gentoo_HOWTO "GBrowse Gentoo HOWTO")
+  system](/wiki/GBrowse_Gentoo_HOWTO)
 - **Source Code Install (for other Linux systems)**
 
 
@@ -144,7 +144,7 @@ for Unix and Windows systems.
 
 ## MySQL (recommended)
 
-The [MySQL](MySQL "MySQL") database
+The [MySQL](/wiki/MySQL) database
 <a href="http://www.mysql.com" class="external autonumber"
 rel="nofollow">[2]</a> is a fast open source relational database that is
 widely used for web applications. It is required for most real-live
@@ -177,7 +177,7 @@ rel="nofollow">[4]</a>:
 
 ### BioPerl
 
-The [BioPerl](BioPerl "BioPerl") project
+The [BioPerl](/wiki/BioPerl) project
 <a href="http://www.bioperl.org" class="external autonumber"
 rel="nofollow">[5]</a> is a set of Perl modules for working with common
 bioinformatics applications. GBrowse requires BioPerl version 1.6 or
@@ -224,7 +224,7 @@ LWP
 To load remote 3d party annotations. Available from CPAN.
 Bio::Das
 To display remote annotations using the [Distributed Annotation
-System](Distributed_Annotation_System "Distributed Annotation System").
+System](/wiki/Distributed_Annotation_System).
 The current version is available at CPAN:
 <a href="http://search.cpan.org/~lds/Bio-Das/" class="external free"
 rel="nofollow">http://search.cpan.org/~lds/Bio-Das/</a> and can be
@@ -300,11 +300,11 @@ removed to help prevent conflicts.
 To further configure GBrowse, see <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/docs/pod/CONFIGURE_HOWTO.pod"
 class="external text" rel="nofollow">CONFIGURE_HOWTO.pod</a>. To run
-GBrowse on top of Oracle and [PostgreSQL](PostgreSQL "PostgreSQL")
+GBrowse on top of Oracle and [PostgreSQL](/wiki/PostgreSQL)
 databases see <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/docs/pod/ORACLE_AND_POSTGRESQL.pod"
 class="external text" rel="nofollow">ORACLE_AND_POSTGRESQL.pod</a>. To
-run on top of a [BioSQL](BioSQL "BioSQL") database, see <a
+run on top of a [BioSQL](/wiki/BioSQL) database, see <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/docs/pod/BIOSQL_ADAPTER_HOWTO.pod"
 class="external text" rel="nofollow">BIOSQL_ADAPTER_HOWTO.pod</a>. *Note
 that these are in Perl "POD" format. To get rid of the formatting
@@ -552,7 +552,7 @@ use a different user account. Mac OSX uses "www", Fedora Core uses
 "apache" and Ubuntu uses "www-data." In the instructions that follow,
 replace 'nobody' with the appropriate Apache account name.*
 
-You will need an installation of [MySQL](MySQL "MySQL") for this
+You will need an installation of [MySQL](/wiki/MySQL) for this
 section. Using the mysql command line, create a database (called "yeast"
 in the synopsis above), and ensure that you have update and file
 privileges on it. The example above assumes that you have a username of
@@ -569,13 +569,13 @@ account.
 
 The next step is to load the database with data. This is accomplished by
 loading the database from a tab-delimited file containing the genomic
-annotations in [GFF](GFF "GFF") format. The [BioPerl](BioPerl "BioPerl")
+annotations in [GFF](/wiki/GFF) format. The [BioPerl](/wiki/BioPerl)
 distribution comes with three tools for loading Bio::DB::GFF databases:
 
 bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
-[MySQL](MySQL "MySQL") server is located on another host.
+[MySQL](/wiki/MySQL) server is located on another host.
 bp_bulk_load_gff.pl
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
@@ -595,7 +595,7 @@ subdirectory `scripts/Bio-DB-GFF`. If you requested that BioPerl scripts
 be installed during installation, they will also be found in your
 command path.
 
-For testing purposes, this distribution includes a [GFF](GFF "GFF") file
+For testing purposes, this distribution includes a [GFF](/wiki/GFF) file
 with yeast genome annotations. The file can be found in the `test_data`
 subdirectory. If the load is successful, you should see a message
 indicating that 13298 features were successfully loaded.
@@ -634,18 +634,17 @@ to find a bunch of genes that are involved in glucose metabolism.
 how Apache was installed, it may be located in
 `/usr/local/apache/logs/`, `/var/log/httpd/`, `/var/log/apache`, or
 elsewhere). Usually there will be an informative error message in the
-error log. The most common problem is [MySQL](MySQL "MySQL") password or
+error log. The most common problem is [MySQL](/wiki/MySQL) password or
 permissions problems.
 
 ### GFF3 Loading
 
 An increasing number of model organism databases are distributing genome
-annotation in [GFF3](GFF3 "GFF3") format. An example of this format can
-be found at <a
-href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/saccharomyces_verevisiae.gff"
+annotation in [GFF3](/wiki/GFF3) format. An example of this format can
+be found at <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/saccharomyces_verevisiae.gff"
 class="external text" rel="nofollow">SGD</a>. Although these files will
 load into the standard Bio::DB::GFF database, some of the features of
-[GFF3](GFF3 "GFF3"), such as the ability to represent multiple
+[GFF3](/wiki/GFF3), such as the ability to represent multiple
 alternative splice forms as a single gene, will be lost. We suggest
 instead that you use a Bio::DB::SeqFeature::Store database.
 
@@ -659,7 +658,7 @@ sites) and save it as `genome.gff3`.
          mysql -uroot -p password -e 'grant select on genomegff3.* to nobody@localhost'
          bp_seqfeature_load.pl -d genomegff3 -f -c genome.gff3
 
-Create a <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+Create a <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse config</a> file by copying
 one of the existing examples, and modify the top lines to read like the
 following:
@@ -670,28 +669,26 @@ following:
                     -user    nobody
 
 The database should now be browsable. For more details, see
-[GFF3](GFF3 "GFF3").
+[GFF3](/wiki/GFF3).
 
 # Loading Other Data Sets
 
 Go to the individual model organism database's web sites to find the
-[GFF3](GFF3 "GFF3") (or [GFF2](GFF2 "GFF2")) format files you need. A
+[GFF3](/wiki/GFF3) (or [GFF2](/wiki/GFF2)) format files you need. A
 few notable sites are:
 
 WormBase (C. elegans and related nematodes)
-<a
-href="ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
+<a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
 class="external free"
 rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz</a>
 
 SGD (S. cerevisiae)
-<a href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
+<a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
 class="external free"
 rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/</a>
 
 FlyBase (D. melanogaster)
-<a
-href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
+<a href="/wiki/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
 class="external free"
 rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/</a>
 
@@ -699,11 +696,11 @@ rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff
 
 In addition, the `bin/` subdirectory of the GBrowse distribution
 contains a series of scripts to convert annotation files in various
-formats into GFF3 (or [GFF2](GFF2 "GFF2")) format. For example, the
+formats into GFF3 (or [GFF2](/wiki/GFF2)) format. For example, the
 `ucsc_genes2gff.pl` script will convert gene models in Table Browser
 format files from
 <a href="http://www.genome.ucsc.edu" class="external free"
-rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](GFF3 "GFF3")
+rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](/wiki/GFF3)
 format. `load_genbank.pl` will download and load sequence annotation
 files in GenBank format from NCBI. The sample configuration file
 `08.genbank.conf` (located in `contrib/conf_files`) is appropriate for
@@ -726,19 +723,19 @@ Alternatively, you may put several FASTA files into a directory, and
 provide the directory name as the argument to -fasta. (The yeast DNA is
 too large to be included in this distribution, but you can get a copy of
 it from
-<a href="ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
+<a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
 rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/</a>)
 
 Run `bp_bulk_load_gff.pl -h` to see usage instructions.
 
-[GFF3](GFF3 "GFF3") allow you to include FASTA sequence at the bottom of
+[GFF3](/wiki/GFF3) allow you to include FASTA sequence at the bottom of
 the file, following the sequence annotations. If you are loading one of
 these GFF files, the DNA will be recognized automatically and loaded by
 any of the loaders.
 
 # Creating your own Genome Database
 
-See the <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+See the <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a> for
 information on how to create new databases from scratch, add new browser
 tracks, and how to get the browser to dump the DNA from the region

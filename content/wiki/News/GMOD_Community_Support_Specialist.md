@@ -4,7 +4,7 @@ title: "News/GMOD Community Support Specialist"
 # News/GMOD Community Support Specialist
 
 **[GMOD Community
-Support](../GMOD_Community_Support "GMOD Community Support") Specialist
+Support](../GMOD_Community_Support) Specialist
 hired**
 
 ***The following opening was filled by Amelia Ireland as of July 1,
@@ -30,10 +30,10 @@ short courses, conference sessions, GMOD meetings and other community
 building activities; survey user needs; liaise between users and
 developers on GMOD mailing lists; and oversee the community wiki and
 news feeds. The incumbent will collaborate closely with the GMOD
-Coordinator ([Scott Cain](../User%253AScott "User%253AScott"), The Ontario
+Coordinator ([Scott Cain](../User%253AScott), The Ontario
 Institute for Cancer Research) and other distributed personnel. See
 [GMOD Community
-Support](../GMOD_Community_Support "GMOD Community Support") for more
+Support](../GMOD_Community_Support) for more
 background. The position offers a competitive salary and the incumbent
 will receive a comprehensive benefits package as an SPA employee within
 the UNC system. Funding is anticipated to be available for three years.
@@ -53,7 +53,7 @@ to H. Lapp by email or by phone at 919.668.5288.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/02/23*
+*Posted to the [GMOD News](../GMOD_News) on 2012/02/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

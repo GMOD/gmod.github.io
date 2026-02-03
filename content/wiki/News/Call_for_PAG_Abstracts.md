@@ -16,14 +16,14 @@ least a descriptive title to
 rel="nofollow">help@gmod.org</a>. Types of talks typically include
 updates on GMOD software projects, usage stories for successful sites,
 proposals for new GMOD projects and descriptions of plugins for existing
-GMOD software projects like [Tripal](../Tripal.1 "Tripal"),
-[JBrowse](../JBrowse.1 "JBrowse") and [Galaxy](../Galaxy.1 "Galaxy").
+GMOD software projects like [Tripal](../Tripal.1),
+[JBrowse](../JBrowse.1) and [Galaxy](../Galaxy.1).
 
 Please consider giving a talk and sharing your experience and ideas!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2016/11/04*
+*Posted to the [GMOD News](../GMOD_News) on 2016/11/04*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

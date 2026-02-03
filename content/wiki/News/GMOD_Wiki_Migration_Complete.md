@@ -4,7 +4,7 @@ title: "News/GMOD Wiki Migration Complete"
 # News/GMOD Wiki Migration Complete
 
 I am pleased to announce that the migration of the [GMOD
-wiki](../Main_Page "Main Page") is now complete, and I believe that all
+wiki](../Main_Page) is now complete, and I believe that all
 of the functionality in the new wiki replicates the old. In fact, the
 only major change as a result of this move is with respect to the RSS
 feed that this news item is a part of. The main differences are two
@@ -17,17 +17,17 @@ fold:
 2.  The URL for the RSS news feed has changed, though mod_rewrite is
     being used on the server to transparently translate requests for the
     old feed into the new one. The URL for the new News feed is The procedure for creating a news entry is described at the [bottom of
-the News page](../GMOD_News#Adding_a_News_Item "GMOD News").
+the News page](../GMOD_News#Adding_a_News_Item).
 
 I would like to sincerely thank [Dave
-Clements](../User%253AClements "User%253AClements") for his considerable help
+Clements](../User%253AClements) for his considerable help
 getting this new News page and feed set up.
 
-[Scott Cain](../User%253AScott "User%253AScott")
+[Scott Cain](../User%253AScott)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/02/03*
+*Posted to the [GMOD News](../GMOD_News) on 2011/02/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

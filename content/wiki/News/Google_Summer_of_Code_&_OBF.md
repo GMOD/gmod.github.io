@@ -33,14 +33,14 @@ project's GSoC wiki page.
 Thanks to all who helped make OBF's application to GSoC a success, and
 let's have a great, productive summer of code!
 
-[Rob Buels](../User%253ARobertBuels "User%253ARobertBuels")
+[Rob Buels](../User%253ARobertBuels)
 
 <a href="http://open-bio.org/wiki/Google_Summer_of_Code"
 class="external text" rel="nofollow">OBF GSoC 2010 Administrator</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/21*
+*Posted to the [GMOD News](../GMOD_News) on 2010/03/21*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

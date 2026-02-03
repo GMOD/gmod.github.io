@@ -6,7 +6,7 @@ title: "News/BioCyc 16.5 Released"
 <a href="http://biocyc.org" class="external text"
 rel="nofollow">BioCyc</a> version 16.5 has been released! 16.5 is a
 major new version that includes updates to the [Pathway
-Tools](../Pathway_Tools.1 "Pathway Tools") software/database bundle, as
+Tools](../Pathway_Tools.1) software/database bundle, as
 well as significant data updates and website changes.
 
 Selected highlights of the Pathway Tools update:

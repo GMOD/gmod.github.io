@@ -37,7 +37,7 @@ rel="nofollow">NESCent</a>, Durham, NC
   class="internal"
   title="Stajich GMOD 2006-06-30.pdf">Stajich_GMOD_2006-06-30.pdf</a>‎ -
   Fungal [Comparative
-  Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
+  Genomics](/wiki/Category%253AComparative_Genomics)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bc/Vision.pdf" class="internal"
   title="Vision.pdf">Vision.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt" class="internal"

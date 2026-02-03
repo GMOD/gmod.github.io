@@ -138,19 +138,19 @@ In progress.
 ## Background
 
 This effort was started after [Josh
-Goodman](User%253AJogoodma "User%253AJogoodma")'s talk at the [January 2009 GMOD
-Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting") meeting
+Goodman](/wiki/User%253AJogoodma)'s talk at the [January 2009 GMOD
+Meeting](/wiki/January_2009_GMOD_Meeting) meeting
 titled "[MOD Web API (A RESTful interface for
-MODs)](January_2009_GMOD_Meeting#A_RESTful_Interface_for_MODs.3F "January 2009 GMOD Meeting")".
+MODs)](/wiki/January_2009_GMOD_Meeting#A_RESTful_Interface_for_MODs.3F)".
 The main idea is to increase interoperability among the various model
 organism databases by creating an easy to use high level RESTful
-[API](Glossary#API "Glossary"). The queries iterated below are currently
+[API](/wiki/Glossary#API). The queries iterated below are currently
 in the proposal stage and have no been implemented at any
-[MOD](MOD "MOD").
+[MOD](/wiki/MOD).
 
 ## Members
 
-- [Josh Goodman](User%253AJogoodma "User%253AJogoodma") -
+- [Josh Goodman](/wiki/User%253AJogoodma) -
   <a href="http://flybase.org" class="external text"
   rel="nofollow">FlyBase</a>
 - Robert Buels -
@@ -790,7 +790,7 @@ fetch/gene
 
 To fetch gene records in the Generic gene page XML format as implemented
 by [Bio GMOD
-GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage").
+GenericGenePage](/wiki/Bio_GMOD_GenericGenePage).
 
 ##### Description
 
@@ -813,7 +813,7 @@ XML
 ##### XML Result
 
 See [Bio GMOD
-GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
+GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 for example XML.
 
 #### Sequence

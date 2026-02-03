@@ -9,7 +9,7 @@ alt="EcoCyc website" /></a>
 
 <a href="http://ecocyc.org" class="external text" rel="nofollow">EcoCyc,
 the <em>E. coli</em> information resource</a> and one of the resources
-offered by the [Pathway Tools](../Pathway_Tools.1 "Pathway Tools")
+offered by the [Pathway Tools](../Pathway_Tools.1)
 group, is in need of letters of support from the community after
 receiving a poor grant review, which could result in a complete loss of
 funding on July 1st, 2014. If you are a user of EcoCyc, please consider
@@ -60,4 +60,4 @@ class="external text" rel="nofollow">the Pathway Tools website</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/05/21*
+*Posted to the [GMOD News](../GMOD_News) on 2014/05/21*

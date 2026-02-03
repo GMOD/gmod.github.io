@@ -5,7 +5,7 @@ title: "Java TreeView"
 
 Java TreeView, a portable Java application that has been tested on
 Linux, Windows, MacOS9 and MacOSX. Java TreeView is a
-[visualization](Visualization "Visualization") for various clustering
+[visualization](/wiki/Visualization) for various clustering
 algorithms. Commonly microarray data are clustered, for example with
 hierarchical clustering. Java TreeView provides an easy to use interface
 to explore clustered experiments involving large sets of experiments or

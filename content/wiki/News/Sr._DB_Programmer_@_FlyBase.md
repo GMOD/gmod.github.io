@@ -19,8 +19,8 @@ rel="nofollow">VectorBase</a> and
 rel="nofollow">FlyBase</a>, in the development and maintenance of
 production applications involving
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
-[Apollo](../Apollo.1 "Apollo"), Ensembl, and
-[InterMine](../InterMine "InterMine"). For more information, see the <a
+[Apollo](../Apollo.1), Ensembl, and
+[InterMine](../InterMine). For more information, see the <a
 href="https://sjobs.brassring.com/1033/asp/tg/cim_jobdetail.asp?partnerID=25240&amp;siteID=5341&amp;AReq=20510BR"
 class="external text" rel="nofollow">job posting</a>.
 
@@ -28,7 +28,7 @@ Dave Emmert
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/09*
+*Posted to the [GMOD News](../GMOD_News) on 2010/03/09*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

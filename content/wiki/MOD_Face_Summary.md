@@ -89,15 +89,15 @@ mechanism for keeping older database versions available.
     Techniques](#Implementation_Techniques)
 - [References](#References)
 
-# Participants and [Presentations](MOD_Face_Talks "MOD Face Talks")
+# Participants and [Presentations](/wiki/MOD_Face_Talks)
 
 This meeting drew together some 60 biologists, bioinformaticians and
 other interested people, representing more than 25 database projects and
 organizations. The list of attendees is
-[here](MOD_Participants "MOD Participants"). The day included thirteen
+[here](/wiki/MOD_Participants). The day included thirteen
 presentations, and a round table discussion at the end. Slides and text
 summaries of individual presentations are provided at the [MOD Face
-Talks](MOD_Face_Talks "MOD Face Talks") page.
+Talks](/wiki/MOD_Face_Talks) page.
 
 # Detailed Report
 
@@ -470,7 +470,7 @@ among the MOD user interfaces:
 Todd Harris proposed developing a convention for common URLs for bulk
 downloading of genome data, but the subject was not fully discussed. A
 page outling the common urls can be found at
-<a href="Common_Download_URL" class="mw-redirect"
+<a href="/wiki/Common_Download_URL" class="mw-redirect"
 title="Common Download URL">Common Download URL</a>.
 
 Dr. Peter Karp presented a useful list of common elements that every MOD

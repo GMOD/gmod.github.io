@@ -164,10 +164,10 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
     - DBD module for your specific RDBMS \[officially supported: DBD::Pg
       for PostgresSQL\]
 - Data generation pipeline (see [JBrowse
-  prerequisites](../JBrowse.1#Prerequisites "JBrowse") for more
+  prerequisites](../JBrowse.1#Prerequisites) for more
   information on its prerequisites)
   - Perl modules
-    - [BioPerl 1.6](../BioPerl "BioPerl")
+    - [BioPerl 1.6](../BioPerl)
     - <a href="http://search.cpan.org/perldoc?JSON" class="external text"
       rel="nofollow">JSON</a>
     - <a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
@@ -1902,7 +1902,7 @@ information about `remove_temporary_files.sh`.
 ## Data generation
 
 The steps for generating data (in particular static data) are mostly
-similar to [JBrowse](../JBrowse.1 "JBrowse") data generation steps, with
+similar to [JBrowse](../JBrowse.1) data generation steps, with
 some extra steps required. The scripts for data generation reside in
 `/var/lib/tomcat7/webapps/WebApollo/jbrowse/bin`. Let's go into
 WebApollo's JBrowse directory.
@@ -1986,7 +1986,7 @@ be shortened to:
 See the [Customizing features](#Customizing_features) section for more
 information on CSS styles. There are also many other configuration
 options for flatfile-to-json.pl, see [JBrowse data
-formatting](../JBrowse_Configuration_Guide#Data_Formatting "JBrowse Configuration Guide")
+formatting](../JBrowse_Configuration_Guide#Data_Formatting)
 for more information.
 
 #### GFF3 with match/match_part features

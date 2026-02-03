@@ -5,16 +5,16 @@ title: "Display CMap Markers in GBrowse"
 
 This proposal came out of a presentation by Erick Antezana and Frederic
 Potier at the [August 2009 GMOD
-Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting") titled:
+Meeting](/wiki/August_2009_GMOD_Meeting) titled:
 
 - [GBrowse: Lessons Learned and Statement of
-  Interest](August_2009_GMOD_Meeting#GBrowse:_Lessons_Learned_and_Statement_of_Interest "August 2009 GMOD Meeting")
+  Interest](/wiki/August_2009_GMOD_Meeting#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
 
 
 From Frederic and Erick:
 
-We were thinking about having [CMap](CMap.1 "CMap") features displayed
-in [GBrowse](GBrowse.1 "GBrowse") in one or more dedicated tracks. Using
+We were thinking about having [CMap](/wiki/CMap.1) features displayed
+in [GBrowse](/wiki/GBrowse.1) in one or more dedicated tracks. Using
 now the fact that GBrowse can be connected to multiple datasources, the
 GBrowse config file could be for example:
 

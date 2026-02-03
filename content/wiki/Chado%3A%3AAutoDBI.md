@@ -15,16 +15,16 @@ Chado%253A%253AAutoDBI is a middleware package based on Class::DBI and maps Perl
 objects directly to tables in the Chado schema. It provides a very easy
 Perl interface for access to the database. It is currently used as a
 bulk loader for the Chado database, and as the underlying
-Object-Relational Mapping (ORM) tool in [Modware](Modware "Modware").
+Object-Relational Mapping (ORM) tool in [Modware](/wiki/Modware).
 Chado%253A%253AAutoDBI is automatically generated from the Chado database schema
 which makes it very easy to update when changes are made. This code
-autogeneration process was adapted from the [Turnkey](Turnkey "Turnkey")
+autogeneration process was adapted from the [Turnkey](/wiki/Turnkey)
 project which is a generic ORM/website code generation tool.
 
 ## Requirements
 
 - Chado. See [Chado - Getting
-  Started](Chado_-_Getting_Started "Chado - Getting Started")
+  Started](/wiki/Chado_-_Getting_Started)
 - <a href="http://search.cpan.org/perldoc?Class::DBI"
   class="external text" rel="nofollow">Class::DBI</a>
 
@@ -33,8 +33,8 @@ project which is a generic ORM/website code generation tool.
 ## Documentation
 
 - [Chado%253A%253AAutoDBI
-  Presentation](Chado%253A%253AAutoDBI_Presentation "Chado%253A%253AAutoDBI Presentation")
-- [GMOD Middleware](GMOD_Middleware "GMOD Middleware") - discusses
+  Presentation](/wiki/Chado%253A%253AAutoDBI_Presentation)
+- [GMOD Middleware](/wiki/GMOD_Middleware) - discusses
   different packages, contains section on Chado%253A%253AAutoDBI
 
 

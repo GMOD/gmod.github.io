@@ -26,10 +26,10 @@ biological research undergoing explosive growth and change, working with
 the JGI's scientists, computational biologists, and developers in a
 state-of-the-art computational environment.
 
-Phytozome currently incorporates [GBrowse](../GBrowse.1 "GBrowse") and
+Phytozome currently incorporates [GBrowse](../GBrowse.1) and
 <a href="../Biomart" class="mw-redirect" title="Biomart">Biomart</a>, as
 well as Jalview, Lucene, and MView, and will be integrating
-[Galaxy](../Galaxy.1 "Galaxy") and
+[Galaxy](../Galaxy.1) and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> over the
 next 12 months.
 
@@ -40,7 +40,7 @@ information on this position.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/19*
+*Posted to the [GMOD News](../GMOD_News) on 2010/08/19*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

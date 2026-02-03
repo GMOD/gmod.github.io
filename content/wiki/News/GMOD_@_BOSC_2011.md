@@ -13,24 +13,24 @@ A tentative schedule for the
 <a href="http://www.open-bio.org/wiki/BOSC_2011" class="external text"
 rel="nofollow">2011 Bioinformatics Open Source Conference (BOSC)</a> has
 been published and it features at least 8 GMOD related talks, covering
-[Galaxy](../Galaxy.1 "Galaxy"), [InterMine](../InterMine "InterMine"),
-[BioMart](../BioMart "BioMart"),
-[WebApollo](../WebApollo.1 "WebApollo"), SADI for GMOOD, and the project
+[Galaxy](../Galaxy.1), [InterMine](../InterMine),
+[BioMart](../BioMart),
+[WebApollo](../WebApollo.1), SADI for GMOOD, and the project
 as a whole.
 
 BOSC is being held as a satellite to [ISMB/ECCB
-2011](../ISMB/ECCB_2011 "ISMB/ECCB 2011"). If you are giving a GMOD
+2011](../ISMB/ECCB_2011). If you are giving a GMOD
 related talk or poster at any ISMB/ECCB event, please add it to the
-[ISMB/ECCB 2011](../ISMB/ECCB_2011 "ISMB/ECCB 2011") page.
+[ISMB/ECCB 2011](../ISMB/ECCB_2011) page.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[Galaxy](../Galaxy.1 "Galaxy") Project
+[Dave Clements](../User%253AClements)
+[Galaxy](../Galaxy.1) Project
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/21*
+*Posted to the [GMOD News](../GMOD_News) on 2011/06/21*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

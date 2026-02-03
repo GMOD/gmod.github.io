@@ -47,7 +47,7 @@ have expertise in Bioinformatics and Computational Biology and research
 interests that complement but extend the
 <a href="http://bx.mathcs.emory.edu/research/" class="external text"
 rel="nofollow">lab's current interests</a>: The
-[Galaxy](../Galaxy.1 "Galaxy") project; distributed and high-performance
+[Galaxy](../Galaxy.1) project; distributed and high-performance
 computing for data intensive science; vertebrate functional genomics;
 and genomics and epigenomic mechanisms of gene regulation, the role of
 transcription factors and chromatin structure in global gene expression,
@@ -72,7 +72,7 @@ jobs@galaxyproject.org.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/03*
+*Posted to the [GMOD News](../GMOD_News) on 2012/08/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

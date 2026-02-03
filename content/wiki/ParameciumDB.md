@@ -16,7 +16,7 @@ tetraurelia*. ParameciumDB contains genome sequence and annotations,
 alleles and RNAi knockdowns, mutant phenotypes, and stocks all in a
 tightly integrated package. ParameciumDB is a good example of an online
 biological resource built mainly with [GMOD
-Components](GMOD_Components "GMOD Components").
+Components](/wiki/GMOD_Components).
 
 This article provides an overview of Paramecium followed by a
 description of how ParameciumDB was implemented using GMOD components.
@@ -115,14 +115,14 @@ assembly and subsequent analysis have resulted in:
 # ParameciumDB
 
 ParameciumDB is maintained by two people, [Linda
-Sperling](User%253ASperling "User%253ASperling") and Olivier Arnaiz at the
+Sperling](/wiki/User%253ASperling) and Olivier Arnaiz at the
 <a href="http://www.cgm.cnrs-gif.fr/version_gb/index_gb.html"
 class="external text" rel="nofollow">Centre de Genetique Moleculaire</a>,
 a part of the
 <a href="http://www.cnrs.fr/index.html" class="external text"
 rel="nofollow">Centre National de la Recherche Scientifique</a>.
 ParameciumDB is mainly implemented with [GMOD
-Components](GMOD_Components "GMOD Components").
+Components](/wiki/GMOD_Components).
 
 ParameciumDB is first came online in August 2005.
 
@@ -137,7 +137,7 @@ implemented, but also touches on toher technologies as well.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
   title="Cain-050516.ppt">Setting up ParameciumDB</a> in Scott Cain's
   presentation at the [May 2005 GMOD
-  Meeting](May_2005_GMOD_Meeting "May 2005 GMOD Meeting").
+  Meeting](/wiki/May_2005_GMOD_Meeting).
 - <a href="http://paramecium.cgm.cnrs-gif.fr/parawiki/ParameciumDB"
   class="external text" rel="nofollow">About ParameciumDB</a> on the
   ParameciumDB web site.
@@ -145,10 +145,10 @@ implemented, but also touches on toher technologies as well.
 ## Database
 
 ParameciumDB is built on the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-[schema](Glossary#Schema "Glossary") and implemented in
-[PostgreSQL](PostgreSQL "PostgreSQL") [database management
-system](Glossary#Database_Management_System "Glossary").
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+[schema](/wiki/Glossary#Schema) and implemented in
+[PostgreSQL](/wiki/PostgreSQL) [database management
+system](/wiki/Glossary#Database_Management_System).
 
 ### Design Overview
 
@@ -164,22 +164,22 @@ modules.
 #### General Module
 
 ParameciumDB uses the [Chado General
-Module](Chado_General_Module "Chado General Module") to handle database
+Module](/wiki/Chado_General_Module) to handle database
 IDs and cross-references.
 
 #### Pub Module
 
 The [Chado Publication
-Module](Chado_Publication_Module "Chado Publication Module") is another
+Module](/wiki/Chado_Publication_Module) is another
 core Chado module. ParameciumDB does not manually curate publications,
 but they do mine PubMed entries for Paramecium allele references.
 
 #### Sequence Module
 
 The [Chado Sequence
-Module](Chado_Sequence_Module "Chado Sequence Module"), another core
+Module](/wiki/Chado_Sequence_Module), another core
 module, is used to represent sequence features and
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>.
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>.
 Because of the recent whole genome duplication, a great deal of thought
 has been given to how to represent paralogy and synteny. These are
 represented in the sequence module using the `feature, featureloc`, and
@@ -193,7 +193,7 @@ represented in the sequence module using the `feature, featureloc`, and
 
 #### Controlled Vocabulary Module
 
-The core [Chado CV Module](Chado_CV_Module "Chado CV Module") is used to
+The core [Chado CV Module](/wiki/Chado_CV_Module) is used to
 store these ontologies:
 
 - <a href="http://www.sequenceontology.org/" class="external text"
@@ -225,11 +225,11 @@ Cell Component hierarchy.
 The assay ontology will hopefully also be incorporated into a broader
 assay ontology in the future.
 
-To create new phenotypes, we use the [Phenote](Phenote "Phenote") tool.
+To create new phenotypes, we use the [Phenote](/wiki/Phenote) tool.
 
 #### Genetic Module
 
-This [Chado Genetic Module](Chado_Genetic_Module "Chado Genetic Module")
+This [Chado Genetic Module](/wiki/Chado_Genetic_Module)
 is used to model information about Paramecium alleles, genetic
 interactions and phenotypes.
 
@@ -237,7 +237,7 @@ The genetic module is tightly linked to the Stock Module.
 
 #### Stock Module
 
-The [Chado Stock Module](Chado_Stock_Module "Chado Stock Module"), which
+The [Chado Stock Module](/wiki/Chado_Stock_Module), which
 is now a standard Chado extension module, originated at ParameciumDB.
 
 This module was necessary to allow integration of Paramecium Stock
@@ -251,7 +251,7 @@ height="193" alt="ParameciumDBHomePage.png" />
 
 ### Turnkey / GMODWeb
 
-ParameciumDB uses [Turnkey](Turnkey "Turnkey"), a generic Web framework
+ParameciumDB uses [Turnkey](/wiki/Turnkey), a generic Web framework
 built on Apache, mod_perl, and SQLFairy, that takes a relational schema
 of a given database as input and transforms it into a fully-functional
 and customizable web site within minutes. We use templates and cascading
@@ -259,7 +259,7 @@ style sheets to customize the ParameciumDB web interface.
 
 ### GBrowse
 
-[GBrowse](GBrowse.1 "GBrowse"), the Generic Genome Browser, is used to
+[GBrowse](/wiki/GBrowse.1), the Generic Genome Browser, is used to
 display and query sequence annotation with a Bio::DB::SeqFeature::Store
 database.
 
@@ -267,7 +267,7 @@ database.
 
 ParameciumDB does not have paid curators. It currently relies on the
 community for annotation of the gene models. They use
-[Apollo](Apollo.1 "Apollo") as their genome annotation editor.
+[Apollo](/wiki/Apollo.1) as their genome annotation editor.
 
 
 **See also:**
@@ -279,9 +279,9 @@ community for annotation of the gene models. They use
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](User%253ASperling "User%253ASperling") presentation at the
+  Sperling's](/wiki/User%253ASperling) presentation at the
   [November 2007 GMOD
-  Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
+  Meeting](/wiki/November_2007_GMOD_Meeting).
 
 ## Middleware
 
@@ -289,11 +289,11 @@ community for annotation of the gene models. They use
 
 The <a href="http://paramecium.cgm.cnrs-gif.fr/chadoapi/"
 class="external text" rel="nofollow">Bio::Chado API</a> is Perl
-[Category%253Amiddleware](Category%253AMiddleware "Category%253AMiddleware") module
+[Category%253Amiddleware](/wiki/Category%253AMiddleware) module
 for working with
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
 It was developed specifically for the
-[BioPipe](Bioperl_Pipeline "Bioperl Pipeline") project (so that BioPipe
+[BioPipe](/wiki/Bioperl_Pipeline) project (so that BioPipe
 users can choose to store pipeline results in a Chado database as
 opposed to an EnsEMBL database) and for ParameciumDB.
 
@@ -301,33 +301,33 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 
 ### Issues
 
-- Content control - moved to [CVS](Glossary#CVS "Glossary")
+- Content control - moved to [CVS](/wiki/Glossary#CVS)
 - Incorporation of the custom [Chado Stock
-  Module](Chado_Stock_Module "Chado Stock Module")
-- Getting [Turnkey](Turnkey "Turnkey")/[GMODWeb](GMODWeb "GMODWeb") to
+  Module](/wiki/Chado_Stock_Module)
+- Getting [Turnkey](/wiki/Turnkey)/[GMODWeb](/wiki/GMODWeb) to
   work
 - Logical Chado issues
   - Making all features part-of chromosome
   - Making results children of genes
-- <a href="GBrowse_adaptors" class="mw-redirect"
+- <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
   title="GBrowse adaptors">GBrowse Chado adapter</a> bugs
 - Getting parsers and loaders bug free.
-- Making [Apollo and Chado](Apollo-Chado "Apollo-Chado") data models
+- Making [Apollo and Chado](/wiki/Apollo-Chado) data models
   compatible
 - Maintenance of data, schema and new software versions
 
 ### Feedback
 
-- [GBrowse](GBrowse.1 "GBrowse") documentation is very good for
+- [GBrowse](/wiki/GBrowse.1) documentation is very good for
   Bio::DB::GFF but a little less so for Bio::DB::Das::Chado.
 - Chado's install documentation is not bad but requires investment.
-- [Turnkey](Turnkey "Turnkey") is a wonderful tool and it should
+- [Turnkey](/wiki/Turnkey) is a wonderful tool and it should
   continue to be developed.
-- [Apollo](Apollo.1 "Apollo") is a beautiful genome editor, though it is
+- [Apollo](/wiki/Apollo.1) is a beautiful genome editor, though it is
   complicated for a naive user.
-- [BioMart](BioMart "BioMart") seems to be a very powerful tool and is
+- [BioMart](/wiki/BioMart) seems to be a very powerful tool and is
   an invaluable addition to any MOD.
-- [Chado Mage Module](Chado_Mage_Module "Chado Mage Module") is being
+- [Chado Mage Module](/wiki/Chado_Mage_Module) is being
   successfully used for transcriptome data, but it is not yet visible to
   the public.
 
@@ -349,13 +349,13 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
   title="Cain-050516.ppt">Scott Cain's presentation</a> (the "Setting up
   ParameciumDB" section) from the [May 2005 GMOD
-  Meeting](May_2005_GMOD_Meeting "May 2005 GMOD Meeting").
+  Meeting](/wiki/May_2005_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](User%253ASperling "User%253ASperling") presentation at the
+  Sperling's](/wiki/User%253ASperling) presentation at the
   [November 2007 GMOD
-  Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
+  Meeting](/wiki/November_2007_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
   class="internal" title="ParameciumDB synteny.pdf">Synteny data in
   ParameciumDB</a> working document.

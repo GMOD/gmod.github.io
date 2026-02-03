@@ -4,20 +4,20 @@ title: "News/GMOD Summer School - Americas"
 # News/GMOD Summer School - Americas
 
 We are now [accepting
-applications](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
+applications](../2010_GMOD_Summer_School_-_Americas)
 for the [2010 GMOD Summer School -
-Americas](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas").
+Americas](../2010_GMOD_Summer_School_-_Americas).
 This will be a hands-on multi-day course aimed at teaching new GMOD
 administrators how to get [GMOD
-Components](../GMOD_Components "GMOD Components") up and running. The
+Components](../GMOD_Components) up and running. The
 course will introduce participants to the GMOD project and then focus on
 installation, configuration and integration of popular [GMOD
-Components](../GMOD_Components "GMOD Components").
+Components](../GMOD_Components).
 
 The course will be held May 6-9, at
 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a> in Durham, NC. These [GMOD
-Components](../GMOD_Components "GMOD Components") will be covered:
+Components](../GMOD_Components) will be covered:
 
 <table>
 <colgroup>
@@ -70,15 +70,15 @@ deadline will be automatically placed on the waiting list.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 |----|----|
-| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") and the [GMOD News](../GMOD_News "GMOD News") for updates. |
+| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists) and the [GMOD News](../GMOD_News) for updates. |
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/29*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/29*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

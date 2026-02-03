@@ -67,4 +67,4 @@ presentation (poster or talks only)</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/17*
+*Posted to the [GMOD News](../GMOD_News) on 2014/01/17*

@@ -28,7 +28,7 @@ May 16-17, 2005 SRI, Menlo Park, CA
   title="Apollo.ppt">Apollo.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt" class="internal"
   title="Cain-050516.ppt">Cain-050516.ppt</a> - GMOD business and
-  setting up [ParameciumDB](ParameciumDB "ParameciumDB")
+  setting up [ParameciumDB](/wiki/ParameciumDB)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf" class="internal"
   title="Cmap-050516.pdf">Cmap-050516.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt" class="internal"
@@ -43,8 +43,8 @@ May 16-17, 2005 SRI, Menlo Park, CA
   title="Just-050516.ppt">Just-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt" class="internal"
   title="Kasprzyk-050516.ppt">Kasprzyk-050516.ppt</a> -
-  [BioMart](BioMart "BioMart") and
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+  [BioMart](/wiki/BioMart) and
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Karp-050516.ppt" class="internal"
   title="Karp-050516.ppt">Karp-050516.ppt</a>
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f0/Mungall-050516.ppt" class="internal"

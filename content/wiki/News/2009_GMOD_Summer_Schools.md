@@ -10,7 +10,7 @@ Schools are hands-on multi-day courses aimed at teaching new GMOD users
 how to get up and running with GMOD. Summer schools introduce
 participants to the GMOD project and focus on installation,
 configuration and integration of popular [GMOD
-Components](../GMOD_Components "GMOD Components"). In 2009 we are proud
+Components](../GMOD_Components). In 2009 we are proud
 to offer two schools, one on each side of the Atlantic:
 
 <table style="vertical-align: middle; width=80%" data-cellpadding="10">
@@ -78,23 +78,23 @@ Oxford UK</span></td>
 </table>
 
 The [European summer
-school](../2009_GMOD_Summer_School_-_Europe "2009 GMOD Summer School - Europe")
-is part of [GMOD Europe 2009](../GMOD_Europe_2009 "GMOD Europe 2009"), a
+school](../2009_GMOD_Summer_School_-_Europe)
+is part of [GMOD Europe 2009](../GMOD_Europe_2009), a
 week long event which also includes the [August 2009 GMOD
-Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting"). This
+Meeting](../August_2009_GMOD_Meeting). This
 is the first time a <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> or [GMOD
-meeting](../Meetings "Meetings") will be held outside of North America.
+meeting](../Meetings) will be held outside of North America.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/03/15,
+*Posted to the [GMOD News](../GMOD_News) on 2009/03/15,
 updated 2009/04/06, 2008/04/27*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

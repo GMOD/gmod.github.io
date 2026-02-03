@@ -26,7 +26,7 @@ Showing 21 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">BLAST Graphic Viewer provides a graphical
@@ -34,7 +34,7 @@ visualization of the regions contained within HSPs relative to the query
 sequence. BLAST Graphic Viewer is also known as blastGraphic.  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Links to BioMart installations in the wild  ,
 BioMart is a freely available, open source, federated database system
@@ -48,7 +48,7 @@ into the BioMart framework.  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">Comparative mapping resource for grasses
 (plant)  ,
@@ -59,7 +59,7 @@ The Honey Bee genome database  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">Curate GO annotations for proteins using UniProtKB
 identifiers  ,
@@ -82,7 +82,7 @@ S. pombe  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">DIYA (Do-It-Yourself Annotator) is a modular and
 configurable open source pipeline framework, written in Perl, used for
@@ -100,7 +100,7 @@ modules.  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GBrowse is a combination of database and
 interactive web pages for manipulating and displaying annotations on
@@ -122,7 +122,7 @@ where legacy browser support is required and a single database is
 used.  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GBrowse_syn.1"
+<td class="smwpropname"><a href="/wiki/GBrowse_syn.1"
 title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GBrowse_syn, or the Generic Synteny Browser, is a
 [[GBrowse]]-based [[synteny]] browser designed to display multiple
@@ -133,7 +133,7 @@ annotations provided by GBrowse. GBrowse_syn is included with the
 standard GBrowse package (version 1.69 and later).  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GO_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/GO_Graphic_Viewer.1"
 title="GO Graphic Viewer">GO Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">The GO Graphic Viewer module (Bio%253A%253AGMOD::GO::View)
@@ -147,7 +147,7 @@ examples of its use in web browser-based user interfaces (goView.pl and
 goTermFinder.pl).  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
+<td class="smwpropname"><a href="/wiki/GO%253A%253ATermFinder.1"
 title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GO TermFinder takes a list of genes as input, and
 determines whether there are enriched GO terms for that list. These
@@ -164,7 +164,7 @@ the GO TermFinder. Some simple clients of these modules are provided in
 the examples directory of the download.  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Fully supported, publicly accessible platforms for
 using Galaxy  ,
@@ -200,7 +200,7 @@ sessions, and a CollaborationFest.  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">InterMine should always be checked out in source
 code form  ,
@@ -225,7 +225,7 @@ can be configured and branded.  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Browse the genome of Ötzi the ice man  ,
 JBrowse is a genome browser with a fully dynamic AJAX interface, being
@@ -243,7 +243,7 @@ for formatting data files to be read directly over HTTP. Serve huge
 datasets from a single low-cost cloud instance.  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">JBrowse 2 is a multi-modal genome browser that can
 view data in linear, circular, dotplot, and syntenic modes, in order to
@@ -258,7 +258,7 @@ new view types. See https://jbrowse.org/jb2/ for more info  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">online version of the MAKER tool  ,
 The ant genomes were annotated using MAKER.  ,
@@ -306,7 +306,7 @@ directory in the download.  , </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">list of PGDBs hosted elsewhere  ,
 Pathway Tools is a comprehensive symbolic systems biology software
@@ -344,7 +344,7 @@ Provide interactive editing capabilities for PGDBs.  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Textpresso is an information extracting and
 processing (text mining) package for biological literature whose
@@ -362,7 +362,7 @@ Human Genome Research Institute at the US National Institutes of Health
 # HG004090.  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Tripal is a web front end for [[Chado]] databases,
 based on the [http://www.drupal.org Drupal] content management system.
@@ -396,7 +396,7 @@ Homepage ==== Get the most up-to-date information about Tripal
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebApollo.1"
+<td class="smwpropname"><a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">WebApollo is a browser-based tool for visualization
 and editing of sequence annotations. It is designed for distributed
@@ -427,7 +427,7 @@ http://genomearchitect.org/WebApolloDemo] (''Apis mellifera''
 genome).  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebApollo2"
+<td class="smwpropname"><a href="/wiki/WebApollo2"
 title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">WebApollo2 is a browser-based tool for
 visualization and editing of sequence annotations. It is designed for
@@ -459,7 +459,7 @@ genome).  , Username: demo@demo.com,
 Password: demo  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The [[GBrowse|Generic Genome Browser (GBrowse)]] is
 one of the most widely used visualization tools for sequence display
@@ -496,7 +496,7 @@ CGB].  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
+<td class="smwpropname"><a href="/wiki/XORT.1" title="XORT">XORT</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">XORT is a utility written in Perl that can be used
 to read to and write from a [[Glossary#Relational|relational]]
@@ -519,4 +519,4 @@ XML."  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

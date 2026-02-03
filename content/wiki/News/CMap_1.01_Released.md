@@ -3,9 +3,9 @@ title: "News/CMap 1.01 Released"
 ---
 # News/CMap 1.01 Released
 
-Version 1.01 of [CMap](../CMap.1 "CMap") has been released.
+Version 1.01 of [CMap](../CMap.1) has been released.
 
-I'm quite excited about using [GFF3](../GFF3 "GFF3") for data
+I'm quite excited about using [GFF3](../GFF3) for data
 import/export which is possible with this release.
 
 You can get the new version from SourceForge, <a
@@ -17,7 +17,7 @@ Highlights of this release are:
 
 - Added a GFF3 parser and producer for easier and more complete data
   import and export (requires latest version of
-  [bioperl-live](../BioPerl "BioPerl") to import GFF).
+  [bioperl-live](../BioPerl) to import GFF).
 - Added a module to serve data to
   <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
   rel="nofollow">CMap3D</a>, a 3D viewer being developed by Chris Duran
@@ -37,11 +37,11 @@ No updates to the database or config files are needed.
 If you are updating from an older version, see the documentation in the
 `upgrade/` directory included in the package.
 
-[Ben](../User%253AFaga "User%253AFaga")
+[Ben](../User%253AFaga)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/01*
+*Posted to the [GMOD News](../GMOD_News) on 2008/07/01*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

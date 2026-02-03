@@ -9,7 +9,7 @@ Staff Scientist
 Center for Genomics and Bioinformatics
 Indiana University
 
-- Project Lead for [WebGBrowse](WebGBrowse.1 "WebGBrowse")
+- Project Lead for [WebGBrowse](/wiki/WebGBrowse.1)
 
 Contact info
 Email: mnrusimh@indiana.edu

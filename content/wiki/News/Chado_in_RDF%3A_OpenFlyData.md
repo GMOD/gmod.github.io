@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="RDF" /></a>
 
 The [OpenFlyData project has ported the FlyBase Chado
-database](../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases "August 2009 GMOD Meeting")
+database](../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases)
 and several other *Drosophila* gene expression databases to the
 <a href="http://www.w3.org/RDF/" class="external text"
 rel="nofollow">Resource Description Framework (RDF)</a>. Each source
@@ -23,7 +23,7 @@ programmatic
 rel="nofollow">SPARQL-based</a> interface to each. Source databases
 include the
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database
-from [FlyBase](../Category%253AFlyBase "Category%253AFlyBase"),
+from [FlyBase](../Category%253AFlyBase),
 <a href="http://www.fruitfly.org/" class="external text"
 rel="nofollow">BDGP</a>,
 <a href="http://www.flyatlas.org/" class="external text"
@@ -33,26 +33,26 @@ rel="nofollow">FlyTED</a>.
 
 Transforming databases into RDF can be an effective way to merge these
 data, and does not require mapping everything to a central
-[relational](../Glossary#RDBMS "Glossary")
-[schema](../Glossary#Schema "Glossary"). The common graph-based data
+[relational](../Glossary#RDBMS)
+[schema](../Glossary#Schema). The common graph-based data
 model facilitates the reuse of RDF data published by other projects,
 with fewer constraints on the kind of questions you can ask.
 
 For more on
 <a href="http://openflydata.org/OpenFlyData" class="external text"
 rel="nofollow">OpenFlyData</a>, see the [*Linked Data for GMOD
-Databases*](../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases "August 2009 GMOD Meeting")
+Databases*](../August_2009_GMOD_Meeting#Linked_Data_for_GMOD_Databases)
 presentation from the [August 2009 GMOD
-Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting"), and
+Meeting](../August_2009_GMOD_Meeting), and
 the <a href="http://openflydata.org" class="external text"
 rel="nofollow">OpenFlyData web site</a>.
 
-[Jun Zhou](../User%253AJunZhao "User%253AJunZhao") and [Dave
-Clements](../User%253AClements "User%253AClements")
+[Jun Zhou](../User%253AJunZhao) and [Dave
+Clements](../User%253AClements)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/23*
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

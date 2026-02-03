@@ -9,4 +9,4 @@ Jim Hu Texas A&M University
 rel="nofollow">EcoliHub</a>/<a href="http://ecoliwiki.net" class="external text"
 rel="nofollow">EcoliWiki</a>
 
-[User%253AJimHu/Gbrowse](User%253AJimHu/Gbrowse "User%253AJimHu/Gbrowse")
+[User%253AJimHu/Gbrowse](/wiki/User%253AJimHu/Gbrowse)

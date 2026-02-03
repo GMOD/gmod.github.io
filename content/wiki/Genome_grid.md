@@ -49,8 +49,8 @@ class="external text" rel="nofollow">Google: genome teragrid</a>
 # Genome analysis and annotation via Grid computing
 
 This subproject builds re-usable tools and workflows for [genome
-analyses](Category%253AAnalysis "Category%253AAnalysis") and
-[annotation](Category%253AAnnotation "Category%253AAnnotation"), using shared
+analyses](/wiki/Category%253AAnalysis) and
+[annotation](/wiki/Category%253AAnnotation), using shared
 cyberinfrastructure (Grids or clusters). Here within are collections of
 scripts, documents and workflows for employing existing genome analysis
 tools (BLAST, homology tools, predictors, comparative and phylogenetic
@@ -66,7 +66,7 @@ The customers for this project are small to medium genome database
 projects, and individual bioscience research labs. We expect some
 familiarity with bioinformatics data and analyses. The customers
 generally have genome data in hand, in common formats of which Fasta
-(sequence) and [GFF](GFF "GFF") (annotation) are most common. Customers
+(sequence) and [GFF](/wiki/GFF) (annotation) are most common. Customers
 also will need to draw on public bio-data from the usual suspects (NCBI,
 EBI, Uniprot, UCSC, common genome databases). Often the project will
 need a one-time set of analyses on a new genome, or to test a new idea
@@ -107,7 +107,7 @@ genome analyses is a goal. These include in no particular order
   genome data splitting methods
 - <a href="http://www.biomart.org" class="external text"
   rel="nofollow">BioMart</a> : a transaction oriented bio-datatabase
-  ([MySQL](MySQL "MySQL"), others) that understands range of biodata,
+  ([MySQL](/wiki/MySQL), others) that understands range of biodata,
   selecting subsets, and has interfacing with the Taverna workflow
   project (Taverna is java-based; BioMart a mix of perl, java and
   various RDBMS methods).
@@ -131,8 +131,8 @@ genome analyses is a goal. These include in no particular order
   like an interesting and practical package for a grid gateway suited to
   bioinformaticians when I saw it in 2006, but haven't evaluated it in
   detail.
-- <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
-  [Galaxy](Galaxy.1 "Galaxy") are GMOD related projects with genome
+- <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
+  [Galaxy](/wiki/Galaxy.1) are GMOD related projects with genome
   analysis workflow systems that are relevant to this.
 
 # Downloads
@@ -149,7 +149,7 @@ used successfully on TeraGrid clusters for analyzing several arthropod
 genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 "as-is" on computer clusters with PBS or LoadLeveler batch queues
 (TeraGrid is not required).
-[Dongilbert](User%253ADongilbert "User%253ADongilbert") 19:56, 26 June 2008
+[Dongilbert](/wiki/User%253ADongilbert) 19:56, 26 June 2008
 (EDT)
 
 # References
@@ -167,7 +167,7 @@ genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 
 # Contact
 
-[Don Gilbert](User%253ADongilbert "User%253ADongilbert")
+[Don Gilbert](/wiki/User%253ADongilbert)
 
 Support provided by a grant from <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0640462"

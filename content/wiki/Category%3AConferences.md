@@ -17,51 +17,51 @@ The following 17 pages are in this category, out of 17 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="Arthropod_Genomics_2011"
+<li><a href="/wiki/Arthropod_Genomics_2011"
 title="Arthropod Genomics 2011">Arthropod Genomics 2011</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GMOD_Promotion" title="GMOD Promotion">GMOD
+<li><a href="/wiki/GMOD_Promotion" title="GMOD Promotion">GMOD
 Promotion</a></li>
 </ul>
 <h3 id="i">I</h3>
 <ul>
-<li><a href="ISMB_2008" title="ISMB 2008">ISMB 2008</a></li>
-<li><a href="ISMB_2010" title="ISMB 2010">ISMB 2010</a></li>
-<li><a href="ISMB/ECCB_2011" title="ISMB/ECCB 2011">ISMB/ECCB
+<li><a href="/wiki/ISMB_2008" title="ISMB 2008">ISMB 2008</a></li>
+<li><a href="/wiki/ISMB_2010" title="ISMB 2010">ISMB 2010</a></li>
+<li><a href="/wiki/ISMB/ECCB_2011" title="ISMB/ECCB 2011">ISMB/ECCB
 2011</a></li>
 </ul>
 <h3 id="j">J</h3>
 <ul>
-<li><a href="JBrowse_PSB_2020" title="JBrowse PSB 2020">JBrowse PSB
+<li><a href="/wiki/JBrowse_PSB_2020" title="JBrowse PSB 2020">JBrowse PSB
 2020</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="n">N</h3>
 <ul>
-<li><a href="News/Biocuration_2014"
+<li><a href="/wiki/News/Biocuration_2014"
 title="News/Biocuration 2014">News/Biocuration 2014</a></li>
-<li><a href="News/GMOD_2014_San_Diego%253A_Save_the_Date"
+<li><a href="/wiki/News/GMOD_2014_San_Diego%253A_Save_the_Date"
 title="News/GMOD 2014 San Diego: Save the Date">News/GMOD 2014 San
 Diego: Save the Date</a></li>
-<li><a href="News/GMOD_at_PAG_XXI"
+<li><a href="/wiki/News/GMOD_at_PAG_XXI"
 title="News/GMOD at PAG XXI">News/GMOD at PAG XXI</a></li>
-<li><a href="News/ISMB_2013%253A_Automated_Function_Prediction"
+<li><a href="/wiki/News/ISMB_2013%253A_Automated_Function_Prediction"
 title="News/ISMB 2013: Automated Function Prediction">News/ISMB 2013:
 Automated Function Prediction</a></li>
 </ul>
 <h3 id="p">P</h3>
 <ul>
-<li><a href="PAG_2009" title="PAG 2009">PAG 2009</a></li>
-<li><a href="PAG_2010" title="PAG 2010">PAG 2010</a></li>
+<li><a href="/wiki/PAG_2009" title="PAG 2009">PAG 2009</a></li>
+<li><a href="/wiki/PAG_2010" title="PAG 2010">PAG 2010</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="p-cont.">P cont.</h3>
 <ul>
-<li><a href="PAG_2011" title="PAG 2011">PAG 2011</a></li>
-<li><a href="PAG_2012" title="PAG 2012">PAG 2012</a></li>
-<li><a href="PAG_2013" title="PAG 2013">PAG 2013</a></li>
-<li><a href="PAG_2014" title="PAG 2014">PAG 2014</a></li>
-<li><a href="PAG_2015" title="PAG 2015">PAG 2015</a></li>
+<li><a href="/wiki/PAG_2011" title="PAG 2011">PAG 2011</a></li>
+<li><a href="/wiki/PAG_2012" title="PAG 2012">PAG 2012</a></li>
+<li><a href="/wiki/PAG_2013" title="PAG 2013">PAG 2013</a></li>
+<li><a href="/wiki/PAG_2014" title="PAG 2014">PAG 2014</a></li>
+<li><a href="/wiki/PAG_2015" title="PAG 2015">PAG 2015</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -87,7 +87,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GMODatISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/GMODatISMB2010.pdf "File:GMODatISMB2010.pdf")
+  [GMODatISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cd/GMODatISMB2010.pdf)
   358 KB
 
 
@@ -110,7 +110,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [AGS2011Brochure.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf "File:AGS2011Brochure.pdf")
+  [AGS2011Brochure.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf)
   1.02 MB
 
 
@@ -133,7 +133,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [Biocuration2010Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/Biocuration2010Logo.png "File:Biocuration2010Logo.png")
+  [Biocuration2010Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/Biocuration2010Logo.png)
   61 KB
 
 
@@ -156,7 +156,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png "File:GCC2011Logo.png")
+  [GCC2011Logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/GCC2011Logo.png)
   797 KB
 
 
@@ -179,7 +179,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png "File:GCC2011LogoShort.png")
+  [GCC2011LogoShort.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GCC2011LogoShort.png)
   544 KB
 
 
@@ -202,7 +202,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf "File:GMODatAGS2008.pdf")
+  [GMODatAGS2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/GMODatAGS2008.pdf)
   351 KB
 
 
@@ -225,7 +225,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GMODatISMB2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GMODatISMB2008.pdf "File:GMODatISMB2008.pdf")
+  [GMODatISMB2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GMODatISMB2008.pdf)
   97 KB
 
 
@@ -248,7 +248,7 @@ The following 10 files are in this category, out of 10 total.
 
 
 
-  [GMODatPAG2011.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GMODatPAG2011.pdf "File:GMODatPAG2011.pdf")
+  [GMODatPAG2011.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a6/GMODatPAG2011.pdf)
   140 KB
 
 
@@ -272,7 +272,7 @@ The following 10 files are in this category, out of 10 total.
 
 
   [JBrowse PAG
-  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf "File:JBrowse PAG 2017.pdf")
+  2017.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e2/JBrowse_PAG_2017.pdf)
   2.4 MB
 
 
@@ -296,5 +296,5 @@ The following 10 files are in this category, out of 10 total.
 
 
   [JBrowse PAG
-  2018.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/JBrowse_PAG_2018.pdf "File:JBrowse PAG 2018.pdf")
+  2018.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/JBrowse_PAG_2018.pdf)
   725 KB

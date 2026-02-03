@@ -34,17 +34,17 @@ rel="nofollow">Andy Cameron</a> if you have questions about the
 position.
 
 SpBase uses several [GMOD
-Components](../GMOD_Components "GMOD Components"), including
-[GBrowse](../GBrowse.1 "GBrowse"), [Apollo](../Apollo.1 "Apollo"),
-[BioMart](../BioMart "BioMart"), and
+Components](../GMOD_Components), including
+[GBrowse](../GBrowse.1), [Apollo](../Apollo.1),
+[BioMart](../BioMart), and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-[Dave C.](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave C.](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/22*
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/22*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

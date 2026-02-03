@@ -6,7 +6,7 @@ title: "GFF2"
 <a href="http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml"
 class="external text" rel="nofollow">GFF2</a> is a supported format in
 GMOD, **but it is now deprecated and if you have a choice you should use
-[GFF3](GFF3 "GFF3")**. Unfortunately, data is sometimes only available
+[GFF3](/wiki/GFF3)**. Unfortunately, data is sometimes only available
 in GFF2 format. GFF2 has a number of shortcomings compared to GFF3. GFF2
 can only represent 2 level feature hierarchies, while GFF3 can support
 arbitrary levels. GFF2 also does not require that column 3, the feature
@@ -72,9 +72,9 @@ the direction of the hierarchy. So it doesn't know whether the exon is a
 subfeature of the transcript, or vice-versa. This means you have to use
 "aggregators" to sort out the relationships. This is a major pain in the
 neck. For this reason, GFF2 format has been deprecated in favor of
-[GFF3](GFF3 "GFF3") format databases.
+[GFF3](/wiki/GFF3) format databases.
 
-See [GFF3](GFF3 "GFF3") for more on the current version of GFF.
+See [GFF3](/wiki/GFF3) for more on the current version of GFF.
 
 ## The GFF2 File Format
 
@@ -313,7 +313,7 @@ for instructions.
 
 ### Loading the GFF file into the database
 
-Use the [BioPerl](BioPerl "BioPerl") script utilities
+Use the [BioPerl](/wiki/BioPerl) script utilities
 `bp_bulk_load_gff.pl`, `bp_load_gff.pl` or (if you are brave)
 `bp_fast_load_gff.pl` to load the GFF file into the database. For
 example, if your database is a MySQL database on the local host named
@@ -329,10 +329,10 @@ care.
 ### Aggregators
 
 It is not necessary to use aggregators with the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[BioSQL](BioSQL "BioSQL"), or Bio::DB::SeqFeature::Store [GBrowse
-Adaptors](GBrowse_Adaptors "GBrowse Adaptors"), or any other adaptor
-that is based on [GFF3](GFF3 "GFF3").
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[BioSQL](/wiki/BioSQL), or Bio::DB::SeqFeature::Store [GBrowse
+Adaptors](/wiki/GBrowse_Adaptors), or any other adaptor
+that is based on [GFF3](/wiki/GFF3).
 
 The Bio::DB::GFF adaptor (and only Bio::DB::GFF!) has a feature known as
 "aggregators". These are small software packages that recognize certain
@@ -354,7 +354,7 @@ suggested that you use the sample GFF2 files from the yeast,
 achieve the desired results.
 
 In addition to the standard aggregators that are distributed with
-[BioPerl](BioPerl "BioPerl"), [GBrowse](GBrowse.1 "GBrowse") distributes
+[BioPerl](/wiki/BioPerl), [GBrowse](/wiki/GBrowse.1) distributes
 several experimental and/or special-purpose aggregators:
 
 match_gap
@@ -374,8 +374,8 @@ of the GMOD development group. It can be used to aggregate
 "reftranscripts" from "refexons", loaded as second copy features. These
 features, in contrast to "transcripts", are usually implemented as
 features which cannot be edited and serve as starting point references
-for annotations added using [GBrowse](GBrowse.1 "GBrowse") for feature
-[visualization](Visualization "Visualization"). Adding features to the
+for annotations added using [GBrowse](/wiki/GBrowse.1) for feature
+[visualization](/wiki/Visualization). Adding features to the
 compound feature, "reftranscript", can be done by adding to the
 "part_names" call (i.e. "refCDS").
 
@@ -398,16 +398,15 @@ feature of type "Sequence".
 
 It is strongly recommended that for mirroring *C. elegans* annotations,
 you use the "processed_transcript" aggregator in conjunction with the
-[GFF3](GFF3 "GFF3") files found at:
+[GFF3](/wiki/GFF3) files found at:
 
-<a
-href="ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3"
+<a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3"
 class="external free"
 rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3</a>
 
 ## Converting GFF2 to GFF3
 
-Converting a file from GFF2 to [GFF3](GFF3 "GFF3") format is problematic
+Converting a file from GFF2 to [GFF3](/wiki/GFF3) format is problematic
 for several reasons. However, there are several GFF2 to GFF3 converters
 available on the web, but each makes specific assumptions about the GFF2
 data that limit its applicability. GMOD does not endorse (or disparage)

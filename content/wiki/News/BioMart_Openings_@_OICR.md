@@ -13,7 +13,7 @@ alt="4 openings at OICR" /></a>
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/130px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/195px-Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
-width="130" height="51" alt="BioMart" />](../BioMart "BioMart")
+width="130" height="51" alt="BioMart" />](../BioMart)
 
 The Ontario Institute for Cancer Research (OICR) has
 <a href="http://www.recruitingsite.com/csbsites/oicr/careers.asp"
@@ -36,17 +36,17 @@ openings</a>:
   class="external text" rel="nofollow">Scientific Associate Computational
   Biology</a>
 
-The [BioMart](../BioMart "BioMart") biological data warehouse system is
+The [BioMart](../BioMart) biological data warehouse system is
 developed at <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">OICR</a>. Please see the job postings for additional
 details.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/12*
+*Posted to the [GMOD News](../GMOD_News) on 2010/09/12*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -20,17 +20,17 @@ rel="nofollow">Scott Cain</a>.
 
 
 
-- [GBrowse](GBrowse.1 "GBrowse") update
-- [CMap](CMap.1 "CMap") update
-- [Mouse Genome Informatics](Category%253AMGI "Category%253AMGI") update
+- [GBrowse](/wiki/GBrowse.1) update
+- [CMap](/wiki/CMap.1) update
+- [Mouse Genome Informatics](/wiki/Category%253AMGI) update
 - Update from Gavin Sherlock's group (working with microarray data)
-- [PubFetch](PubFetch "PubFetch") and PubTrack update
-- [PubSearch](PubSearch "PubSearch") update
-- [Apollo](Apollo.1 "Apollo") update and discussion
+- [PubFetch](/wiki/PubFetch) and PubTrack update
+- [PubSearch](/wiki/PubSearch) update
+- [Apollo](/wiki/Apollo.1) update and discussion
 - PTools update
 - GMOD website design update
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a> summary
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a> discussion
-- [Chado XML](Chado_XML "Chado XML") uses
-- [SGD](Category%253ASGD "Category%253ASGD")
-- [Textpresso](Textpresso "Textpresso")
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> summary
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> discussion
+- [Chado XML](/wiki/Chado_XML) uses
+- [SGD](/wiki/Category%253ASGD)
+- [Textpresso](/wiki/Textpresso)

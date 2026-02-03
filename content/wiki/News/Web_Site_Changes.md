@@ -3,7 +3,7 @@ title: "News/Web Site Changes"
 ---
 # News/Web Site Changes
 
-The [GMOD web site](../Main_Page "Main Page") doesn't look very
+The [GMOD web site](../Main_Page) doesn't look very
 different, but it was updated on Monday, August 11,2008. Here's what
 changed:
 
@@ -23,12 +23,12 @@ Help Desk</a>.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/08/11*
+*Posted to the [GMOD News](../GMOD_News) on 2008/08/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

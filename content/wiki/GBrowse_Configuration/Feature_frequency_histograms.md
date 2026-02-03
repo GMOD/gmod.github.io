@@ -38,7 +38,7 @@ There are four steps for making histograms:
 The first step is to generate the density data. Currently this is done
 by generating a GFF file containing a set of "bin" feature types. Use
 the `bp_generate_histogram.pl` script to do this. You will find it in
-[BioPerl](../BioPerl "BioPerl") under the `scripts/Bio-DB-GFF`
+[BioPerl](../BioPerl) under the `scripts/Bio-DB-GFF`
 directory.
 
 Assuming that your database is named "dicty", you have a feature named

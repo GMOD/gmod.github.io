@@ -18,7 +18,7 @@ Scott
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/05/12*
+*Posted to the [GMOD News](../GMOD_News) on 2011/05/12*
 
 
 OK, GBrowse and Bio-Graphics are done. For each, I replaced their master
@@ -38,4 +38,4 @@ to have come though fine. Please let me know if you find any problems!
 Rob
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

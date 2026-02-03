@@ -3,14 +3,14 @@ title: "News/Apollo 1.7.0 Released"
 ---
 # News/Apollo 1.7.0 Released
 
-Version 1.7.0 of [Apollo](../Apollo.1 "Apollo") has just been released.
+Version 1.7.0 of [Apollo](../Apollo.1) has just been released.
 You can access the updated Apollo page at
 <a href="http://www.fruitfly.org/annot/apollo" class="external free"
 rel="nofollow">http://www.fruitfly.org/annot/apollo</a>
 
 Changes in this version include
 
-- Added [GFF3](../Glossary#GFF "Glossary") support
+- Added [GFF3](../Glossary#GFF) support
 - Added program source filtering for reading off
   <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
   databases
@@ -44,12 +44,12 @@ class="external text" rel="nofollow">release notes</a> for more.
 
 We are hoping to cut releases on a more regular basis (after the year
 and a half long hiatus). So please [let us
-know](../Apollo.1#Contact "Apollo") if you find any bugs and they will
+know](../Apollo.1#Contact) if you find any bugs and they will
 be addressed and put into a new release as soon as possible.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/01/11*
+*Posted to the [GMOD News](../GMOD_News) on 2008/01/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

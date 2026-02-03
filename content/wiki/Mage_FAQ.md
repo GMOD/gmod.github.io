@@ -37,7 +37,7 @@ title: "Mage FAQ"
 ### What is this FAQ?
 
 It is the list of Frequently Asked Questions about [the Chado Mage
-module](Chado_Mage_Module "Chado Mage Module").
+module](/wiki/Chado_Mage_Module).
 
 ### How is it maintained?
 
@@ -49,7 +49,7 @@ adding questions and answers.
 ### Is there other documentation?
 
 See [the Mage module
-documentation](Chado_Mage_Module "Chado Mage Module").
+documentation](/wiki/Chado_Mage_Module).
 
 ## Using Mage
 
@@ -64,17 +64,17 @@ Examples: genome tiling experiments, or multiple samples per array
 
 There is a many-to-many between samples and hybridizations using the
 [assay_biomaterial
-table](Chado_Tables#Table:_assay_biomaterial "Chado Tables"). You assign
+table](/wiki/Chado_Tables#Table:_assay_biomaterial). You assign
 your sample channel using the
-[assay_biomaterial.channel](Chado_Tables#Table:_assay_biomaterial "Chado Tables")
+[assay_biomaterial.channel](/wiki/Chado_Tables#Table:_assay_biomaterial)
 attribute for a multi-channel array. Each tiling array hybridization in
 a tiling set would be considered a separate assay, and each would have a
 different
-[assay.arraydesign_id](Chado_Tables#Table:_assay "Chado Tables").
+[assay.arraydesign_id](/wiki/Chado_Tables#Table:_assay).
 
 ### How do you store files containing raw data?
 
-Use [acquisition.uri](Chado_Tables#Table:_acquisition "Chado Tables") to
+Use [acquisition.uri](/wiki/Chado_Tables#Table:_acquisition) to
 point to the file outside the database, in the file system.
 
 ### How can one trace the biomaterials back to get a sense of the level of technical and/or biological replication?

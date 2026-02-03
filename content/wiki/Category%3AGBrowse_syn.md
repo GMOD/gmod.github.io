@@ -9,7 +9,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 ## Pages in category "GBrowse syn"
 
@@ -25,63 +25,63 @@ The following 19 pages are in this category, out of 19 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="August_2009_GMOD_Meeting"
+<li><a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">August 2009 GMOD Meeting</a></li>
 </ul>
 <h3 id="c">C</h3>
 <ul>
-<li><a href="C_briggsae.syn" title="C briggsae.syn">C
+<li><a href="/wiki/C_briggsae.syn" title="C briggsae.syn">C
 briggsae.syn</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></li>
-<li><a href="GBrowse_syn_AGS_Tutorial"
+<li><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></li>
+<li><a href="/wiki/GBrowse_syn_AGS_Tutorial"
 title="GBrowse syn AGS Tutorial">GBrowse syn AGS Tutorial</a></li>
-<li><a href="GBrowse_syn_Configuration"
+<li><a href="/wiki/GBrowse_syn_Configuration"
 title="GBrowse syn Configuration">GBrowse syn Configuration</a></li>
-<li><a href="GBrowse_syn_Database" title="GBrowse syn Database">GBrowse
+<li><a href="/wiki/GBrowse_syn_Database" title="GBrowse syn Database">GBrowse
 syn Database</a></li>
-<li><a href="GBrowse_syn_Help" title="GBrowse syn Help">GBrowse syn
+<li><a href="/wiki/GBrowse_syn_Help" title="GBrowse syn Help">GBrowse syn
 Help</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="g-cont.">G cont.</h3>
 <ul>
-<li><a href="GBrowse_syn_PAG_2009_Workshop"
+<li><a href="/wiki/GBrowse_syn_PAG_2009_Workshop"
 title="GBrowse syn PAG 2009 Workshop">GBrowse syn PAG 2009
 Workshop</a></li>
-<li><a href="GBrowse_syn_Scripts" title="GBrowse syn Scripts">GBrowse
+<li><a href="/wiki/GBrowse_syn_Scripts" title="GBrowse syn Scripts">GBrowse
 syn Scripts</a></li>
-<li><span class="redirect-in-category"><a href="GBrowse_syn_Tutorial"
+<li><span class="redirect-in-category"><a href="/wiki/GBrowse_syn_Tutorial"
 class="mw-redirect" title="GBrowse syn Tutorial">GBrowse syn
 Tutorial</a></span></li>
-<li><a href="GBrowse_syn_Tutorial_2010"
+<li><a href="/wiki/GBrowse_syn_Tutorial_2010"
 title="GBrowse syn Tutorial 2010">GBrowse syn Tutorial 2010</a></li>
-<li><a href="GBrowse_syn_Tutorial_2011"
+<li><a href="/wiki/GBrowse_syn_Tutorial_2011"
 title="GBrowse syn Tutorial 2011">GBrowse syn Tutorial 2011</a></li>
-<li><a href="GBrowse_syn_Tutorial_2012"
+<li><a href="/wiki/GBrowse_syn_Tutorial_2012"
 title="GBrowse syn Tutorial 2012">GBrowse syn Tutorial 2012</a></li>
-<li><a href="GBrowse_syn_Tutorial_new"
+<li><a href="/wiki/GBrowse_syn_Tutorial_new"
 title="GBrowse syn Tutorial new">GBrowse syn Tutorial new</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="g-cont.-1">G cont.</h3>
 <ul>
-<li><a href="GBrowse_syn/tool_data"
+<li><a href="/wiki/GBrowse_syn/tool_data"
 title="GBrowse syn/tool data">GBrowse syn/tool data</a></li>
-<li><a href="GMOD_Online_Training_2014/GBrowse_syn_Tutorial"
+<li><a href="/wiki/GMOD_Online_Training_2014/GBrowse_syn_Tutorial"
 title="GMOD Online Training 2014/GBrowse syn Tutorial">GMOD Online
 Training 2014/GBrowse syn Tutorial</a></li>
 </ul>
 <h3 id="n">N</h3>
 <ul>
-<li><a href="November_2007_GMOD_Meeting"
+<li><a href="/wiki/November_2007_GMOD_Meeting"
 title="November 2007 GMOD Meeting">November 2007 GMOD Meeting</a></li>
 </ul>
 <h3 id="t-1">T</h3>
 <ul>
-<li><a href="Training_and_Outreach"
+<li><a href="/wiki/Training_and_Outreach"
 title="Training and Outreach">Training and Outreach</a></li>
-<li><a href="Template:TutorialList"
+<li><a href="/wiki/Template:TutorialList"
 title="Template:TutorialList">Template:TutorialList</a></li>
 </ul></td>
 </tr>
@@ -109,7 +109,7 @@ The following 9 files are in this category, out of 9 total.
 
 
   [Aug2009GBrowse
-  syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Aug2009GBrowse_syn.pdf "File:Aug2009GBrowse syn.pdf")
+  syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/55/Aug2009GBrowse_syn.pdf)
   2.91 MB
 
 
@@ -133,7 +133,7 @@ The following 9 files are in this category, out of 9 total.
 
 
   [Cain GI
-  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")
+  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf)
   522 KB
 
 
@@ -157,7 +157,7 @@ The following 9 files are in this category, out of 9 total.
 
 
   [GBrowse syn
-  logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/GBrowse_syn_logo.png "File:GBrowse syn logo.png")
+  logo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/GBrowse_syn_logo.png)
   113 KB
 
 
@@ -180,7 +180,7 @@ The following 9 files are in this category, out of 9 total.
 
 
 
-  [Gbrowse syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf "File:Gbrowse syn.pdf")
+  [Gbrowse syn.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Gbrowse_syn.pdf)
   2.05 MB
 
 
@@ -204,7 +204,7 @@ The following 9 files are in this category, out of 9 total.
 
 
   [GBrowse
-  synSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GBrowse_synSMBE2009.pdf "File:GBrowse synSMBE2009.pdf")
+  synSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GBrowse_synSMBE2009.pdf)
   5 MB
 
 
@@ -227,7 +227,7 @@ The following 9 files are in this category, out of 9 total.
 
 
 
-  [GBS PAG10.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/GBS_PAG10.pdf "File:GBS PAG10.pdf")
+  [GBS PAG10.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/GBS_PAG10.pdf)
   5.01 MB
 
 
@@ -251,7 +251,7 @@ The following 9 files are in this category, out of 9 total.
 
 
 
-  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")
+  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf)
   714 KB
 
 
@@ -274,7 +274,7 @@ The following 9 files are in this category, out of 9 total.
 
 
 
-  [WGA data.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/WGA_data.png "File:WGA data.png")
+  [WGA data.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/WGA_data.png)
   86 KB
 
 
@@ -298,5 +298,5 @@ The following 9 files are in this category, out of 9 total.
 
 
 
-  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")
+  [ISyIPGMODforComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf)
   14.44 MB

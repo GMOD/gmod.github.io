@@ -6,20 +6,20 @@ title: "Talk%253AOverview"
 The section **GFF Databases** -\> has the phrase "GFF is described
 below, it's a compact format for describing sequence and sequence
 annotations", however, AFAICT, GFF is not described below. Also the link
-on 'GFF' is dead. Where is [GFF](GFF "GFF") described? I seem to
+on 'GFF' is dead. Where is [GFF](/wiki/GFF) described? I seem to
 remember reading a really nice field by field description, but
 unfortunately I don't remember where!
---[DanBolser](User%253ADanBolser "User%253ADanBolser") 09:46, 18 December 2008
+--[DanBolser](/wiki/User%253ADanBolser) 09:46, 18 December 2008
 (UTC)
 
 ## GFF page created
 
 Dan,
 
-The [GFF](GFF "GFF") page now exists and is linked to from this page.
+The [GFF](/wiki/GFF) page now exists and is linked to from this page.
 Thanks for the push.
 
-[Clements](User%253AClements "User%253AClements") 22:31, 30 December 2008 (UTC)
+[Clements](/wiki/User%253AClements) 22:31, 30 December 2008 (UTC)
 
 ## There is too much text here.
 
@@ -29,7 +29,7 @@ promising information. What is returned is a screen full of TOC and more
 text than it is comfortable to read. I think there should be a better
 'Overview' page (more succinct) with various links to pages created from
 this mega-doc. Sorry for my near continuous state of bitching,
---[DanBolser](User%253ADanBolser "User%253ADanBolser") 14:35, 9 July 2010 (UTC)
+--[DanBolser](/wiki/User%253ADanBolser) 14:35, 9 July 2010 (UTC)
 
 ## How to cite this wiki?
 

@@ -19,19 +19,19 @@ rel="nofollow">Český Krumlov</a>, Czech Republic, immediately following
 the <a
 href="http://evomics.org/workshops/workshop-on-genomics/2012-genomics-cesky-krumlov/2012"
 class="external text" rel="nofollow">Workshop on Genomics</a>, (which
-also features [Galaxy](../Galaxy.1 "Galaxy") content and is still taking
+also features [Galaxy](../Galaxy.1) content and is still taking
 applications).
 
 This workshop is aimed at:
 
 IT and Bioinformatics staff
-[Galaxy](../Galaxy.1 "Galaxy") is an easy to use, web-based tool that
+[Galaxy](../Galaxy.1) is an easy to use, web-based tool that
 enables your researchers to perform data integration and analysis, in
 house, without handholding from you. This workshop will teach you how to
 install your own instance of Galaxy, either on your local compute
 infrastructure, or on the cloud.
 Bioinformatics tool developers
-[Galaxy](../Galaxy.1 "Galaxy") provides mechanisms for integrating your
+[Galaxy](../Galaxy.1) provides mechanisms for integrating your
 own tools and the tools of others into Galaxy instances. This workshop
 will cover how to define your tools in Galaxy, and how to then make
 those definitions available for installation in any Galaxy instance,
@@ -50,7 +50,7 @@ biological datasets.
 registration will certainly be accepted dependent on availability. The
 registration fee is \$200 USD (payment terms provided upon acceptance).
 
-[Dave Clements](../User%253AClements "User%253AClements")
+[Dave Clements](../User%253AClements)
 
 PS: Plans for the <a href="http://galaxyproject.org/wiki/Events/GCC2012"
 class="external text" rel="nofollow">2012 Galaxy Community
@@ -59,8 +59,8 @@ Illinois.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/11,
+*Posted to the [GMOD News](../GMOD_News) on 2011/11/11,
 updated 2011/12/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

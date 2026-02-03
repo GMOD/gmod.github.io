@@ -7,7 +7,7 @@ title: "GBrowse syn/tool data"
 Browser \| status = beta release \| dev = active \| support = active \|
 type = Comparative genome visualization \| platform = web \| logo =
 GBrowse_syn_logo.png \| home = \| about = GBrowse_syn, or the Generic
-Synteny Browser, is a [GBrowse](../GBrowse.1 "GBrowse")-based
+Synteny Browser, is a [GBrowse](../GBrowse.1)-based
 <a href="../Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species. It can be used to
@@ -29,20 +29,20 @@ dl_src_url = \| dl_dev = \| dl_dev_url =
 <a href="https://github.com/GMOD/GBrowse" class="external free"
 rel="nofollow">https://github.com/GMOD/GBrowse</a> \|
 getting_started_preamble = GBrowse_syn has been part of the
-[GBrowse](../GBrowse.1 "GBrowse") distribution since version 1.69; we
+[GBrowse](../GBrowse.1) distribution since version 1.69; we
 recommend using the most up-to-date version of GBrowse 2. Please follow
 the [installation instructions for
-GBrowse](../GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO"). \|
+GBrowse](../GBrowse_2.0_Install_HOWTO.1). \|
 req = \| install = \| config = Configuration of GBrowse_syn is much the
-same as for [GBrowse](../GBrowse.1 "GBrowse"), with database and display
+same as for [GBrowse](../GBrowse.1), with database and display
 options controlled by a configuration file. GBrowse_syn uses a main
 configuration file for general options plus an individual configuration
 for each species represented in the multiple sequence alignments.
 
 More information on [GBrowse_syn
-configuration](../GBrowse_syn_Configuration "GBrowse syn Configuration")
+configuration](../GBrowse_syn_Configuration)
 \| doc = See the [help for
-GBrowse_syn](../GBrowse_syn_Help "GBrowse syn Help")
+GBrowse_syn](../GBrowse_syn_Help)
 
 #### Alignment data
 
@@ -53,7 +53,7 @@ GBrowse_syn](../GBrowse_syn_Help "GBrowse syn Help")
 - The databases for each species are configured in the same way as a
   regular GBrowse installations
 - [Details on the GBrowse_syn
-  database](../GBrowse_syn_Database "GBrowse syn Database")
+  database](../GBrowse_syn_Database)
 
 #### User interface
 
@@ -74,7 +74,7 @@ to the following paper when citing GBrowse_syn:
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d4/GBrowse_syn_EBI2009.pdf"
 class="internal" title="GBrowse syn EBI2009.pdf">Challenges in
 Comparative Genome Browsing</a> - Presented by [Sheldon
-McKay](../User%253AMckays "User%253AMckays") at the
+McKay](../User%253AMckays) at the
 <a href="http://www.ebi.ac.uk" class="external text"
 rel="nofollow">European Bioinformatics Institute</a>, Hinxton, UK.
 
@@ -87,8 +87,8 @@ orthologous regions are the subject of considerable interest, so some
 background reading is listed below:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
+  Cloud](../Category%253AGMOD_in_the_Cloud)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
-- [GBrowse syn](../Category%253AGBrowse_syn "Category%253AGBrowse syn")
+  Components](../Category%253AGMOD_Components)
+- [Tool data](../Category%253ATool_data)
+- [GBrowse syn](../Category%253AGBrowse_syn)

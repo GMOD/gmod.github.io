@@ -6,10 +6,10 @@ minimal level of Linux systems administration knowledge" we mean that
 participants should be comfortable installing packages under Linux. _A
 good benchmark for this level of knowledge is that you should be able to
 get a basic [GBrowse
-installation](GBrowse_Install_HOWTO "GBrowse Install HOWTO") (that is,
-GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
+installation](/wiki/GBrowse_Install_HOWTO) (that is,
+GBrowse without [MySQL](/wiki/MySQL)) up and running with the example
 GBrowse data._ This also requires installing Apache, and
-[BioPerl](BioPerl "BioPerl") and all its dependencies.
+[BioPerl](/wiki/BioPerl) and all its dependencies.
 
 ## System Requirements
 
@@ -24,9 +24,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](Category%253AWindows "Category%253AWindows") and
-[Linux](Category%253ALinux "Category%253ALinux") [operating
-systems](Glossary#Operating_System "Glossary") from
+Windows](/wiki/Category%253AWindows) and
+[Linux](/wiki/Category%253ALinux) [operating
+systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
 
@@ -40,7 +40,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs _directly_ under [Mac OS
-X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
+X](/wiki/Category%253AMac_OS_X). However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion
@@ -112,16 +112,14 @@ details shown on the second one have now changed.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;" data-valign="top"><a
-href="File:SummerSchoolPoster2008Thumb.png" class="image"
+<td style="text-align: center;" data-valign="top"><a href="/wiki/File:SummerSchoolPoster2008Thumb.png" class="image"
 title="Poster 1"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/SummerSchoolPoster2008Thumb.png"
 width="150" height="196" alt="Poster 1" /></a><br />
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/SummerSchoolPoster2008.pdf"
 class="internal" title="SummerSchoolPoster2008.pdf">Download</a><br />
 A poster (US Letter size) announcing the 2008 GMOD Summer School.</td>
-<td style="text-align: center;" data-valign="top"><a
-href="File:SummerSchoolFlier2008.png" class="image"
+<td style="text-align: center;" data-valign="top"><a href="/wiki/File:SummerSchoolFlier2008.png" class="image"
 title="Poster 2"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/SummerSchoolFlier2008.png" width="254"
 height="196" alt="Poster 2" /></a><br />

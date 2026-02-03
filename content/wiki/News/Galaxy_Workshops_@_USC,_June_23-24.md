@@ -17,7 +17,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="35"
 alt="Galaxy Workshops at University of Southern California" /></a>
 
-There will be two [Galaxy](../Galaxy.1 "Galaxy") workshops at the
+There will be two [Galaxy](../Galaxy.1) workshops at the
 University of Southern California (USC) later this month. Both are
 presented by Jeremy Goecks of Emory University and the Galaxy team. Both
 workshops are open to the public:
@@ -63,7 +63,7 @@ might be addressed using artificial intelligence methods and techniques.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/06/17*
+*Posted to the [GMOD News](../GMOD_News) on 2011/06/17*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -5,8 +5,8 @@ title: "User%253AFaga"
 
 ## Information
 
-Ben Faga is the primary developer for [CMap](CMap.1 "CMap") and
-[CMAE](CMAE "CMAE").
+Ben Faga is the primary developer for [CMap](/wiki/CMap.1) and
+[CMAE](/wiki/CMAE).
 
 ## Contact
 

@@ -16,9 +16,9 @@ January 2011. The workshop consists of a
 class="external text" rel="nofollow">series of lectures, demonstrations
 and computer laboratories</a> that cover various aspects of comparative
 genomics. Faculty include Anton Nekrutenko leading a session on
-[Galaxy](../Galaxy.1 "Galaxy") and [Sheldon
-McKay](../User%253AMckays "User%253AMckays") leading a session on
-[GBrowse_syn](../GBrowse_syn.1 "GBrowse syn").
+[Galaxy](../Galaxy.1) and [Sheldon
+McKay](../User%253AMckays) leading a session on
+[GBrowse_syn](../GBrowse_syn.1).
 
 The course is designed for established investigators, postdoctoral
 scholars, and advanced graduate students. Scientists with strong
@@ -36,7 +36,7 @@ being held immediately after.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/03*
+*Posted to the [GMOD News](../GMOD_News) on 2010/11/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

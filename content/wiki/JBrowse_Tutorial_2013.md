@@ -3,9 +3,9 @@ title: "JBrowse Tutorial 2013"
 ---
 # JBrowse Tutorial 2013
 
-This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Robert
-Buels](User%253ARobertBuels "User%253ARobertBuels") at the [2013 GMOD Summer
-School](2013_GMOD_Summer_School "2013 GMOD Summer School") in July 2013
+This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Robert
+Buels](/wiki/User%253ARobertBuels) at the [2013 GMOD Summer
+School](/wiki/2013_GMOD_Summer_School) in July 2013
 using JBrowse 1.9.8.
 
 This tutorial uses the AWS AMI **ami-d2c8b1bb** named **2013 GMOD start
@@ -93,8 +93,8 @@ It's also very useful to know how to tab-complete in the shell.
 
 ## JBrowse Introduction
 
-How and why [JBrowse](JBrowse.1 "JBrowse") is different from most other
-web-based genome browsers, including [GBrowse](GBrowse.1 "GBrowse").
+How and why [JBrowse](/wiki/JBrowse.1) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
@@ -150,7 +150,7 @@ Here, we'll use the
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>
 adaptor in "memory" mode to read a directory of files. There are
 adaptors available for use with many other databases, such as
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
 <a href="http://search.cpan.org/perldoc?Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a>.
 
@@ -185,7 +185,7 @@ far enough.
 #### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
-database and turn it into [JSON](Glossary#JSON "Glossary") data that the
+database and turn it into [JSON](/wiki/Glossary#JSON) data that the
 web browser can use.
 
 In this case, we have specified all of our track configurations in
@@ -229,7 +229,7 @@ searchable.
 `urltemplate` specifies a URL pattern that you can use to link genomic
 features to specific web pages.
 
-`class` specifies the [CSS](Glossary#CSS "Glossary") class that
+`class` specifies the [CSS](/wiki/Glossary#CSS) class that
 describes how the feature should look.
 
 For this particular track, I've specified the `transcript` feature
@@ -486,4 +486,4 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") |
+| [Has topic](/wiki/Property%253AHas_topic) | [JBrowse](/wiki/JBrowse.1) |

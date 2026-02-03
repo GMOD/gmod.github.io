@@ -9,11 +9,11 @@ The following 2 pages are in this category, out of 2 total.
 
 ### G
 
-- [GMOD News Archives](GMOD_News_Archives "GMOD News Archives")
+- [GMOD News Archives](/wiki/GMOD_News_Archives)
 
 ### W
 
-- [Widget:GoogleCalendar](Widget:GoogleCalendar "Widget:GoogleCalendar")
+- [Widget:GoogleCalendar](/wiki/Widget:GoogleCalendar)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253A!FixAfterUpgrade](/wiki/Category%253A!FixAfterUpgrade)"

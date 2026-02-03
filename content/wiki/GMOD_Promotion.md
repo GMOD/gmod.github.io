@@ -52,13 +52,13 @@ class="external text" rel="nofollow">NCBI guidelines</a> on citing
 wikis. The wiki was first 'published' in 2007, although some material
 predates that.
 
-## [Powered by GMOD](Powered_by_GMOD "Powered by GMOD")
+## [Powered by GMOD](/wiki/Powered_by_GMOD)
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/PoweredByGMOD80.png" width="80"
-height="38" alt="Powered by GMOD" />](Powered_by_GMOD "Powered by GMOD")
+height="38" alt="Powered by GMOD" />](/wiki/Powered_by_GMOD)
 
 _"Powered by GMOD"_ icons are [available in a number of different
-resolutions](Powered_by_GMOD "Powered by GMOD") for inclusion on web
+resolutions](/wiki/Powered_by_GMOD) for inclusion on web
 sites, in talks, and on posters and other printed material. This is an
 easy way to let people know just how widely used (and how widely useful)
 GMOD is.
@@ -66,38 +66,38 @@ GMOD is.
 ## Speakers
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/MitchSpeaking2009.jpg" width="150"
-height="100" alt="Mitch speaking" />](Training_and_Outreach "Mitch speaking")
+height="100" alt="Mitch speaking" />](/wiki/Training_and_Outreach)
 
 Speakers are available to give presentations at your institution or
 event. Past topics have included project overviews (e.g., [Database
 Tools for
-Biologists](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf "File:GMODTAMUWorkshop.pdf") at
+Biologists](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf) at
 Texas A&M), general areas of GMOD (e.g., [GMOD Browser Tools and
-Exercises Workshop](ABRF2010_Workshop "ABRF2010 Workshop") at
+Exercises Workshop](/wiki/ABRF2010_Workshop) at
 <a href="http://www.abrf2010.org/" class="external text"
 rel="nofollow">ABRF 2010</a> and [GMOD for Comparative
-Genomics](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf "File:ISyIPGMODforComparativeGenomics.pdf")
+Genomics](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf)
 at <a href="https://colloque.inra.fr/isyip" class="external text"
 rel="nofollow">ISyIP</a>), and specific [GMOD
-Components](GMOD_Components "GMOD Components") (e.g., the
-[MAKER](MAKER_PAG_2010_Workshop "MAKER PAG 2010 Workshop") and
-[GBrowse_syn](GBrowse_syn_PAG_2010_Workshop "GBrowse syn PAG 2010 Workshop")
-workshops at [PAG 2010](PAG_2010 "PAG 2010")). Presentations can range
+Components](/wiki/GMOD_Components) (e.g., the
+[MAKER](/wiki/MAKER_PAG_2010_Workshop) and
+[GBrowse_syn](/wiki/GBrowse_syn_PAG_2010_Workshop)
+workshops at [PAG 2010](/wiki/PAG_2010)). Presentations can range
 from short talks (e.g., [Demonstration of Pathway
-Tools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/PathwayToolsTalkISMB2010.pdf "File:PathwayToolsTalkISMB2010.pdf")
-at [ISMB 2010](ISMB_2010 "ISMB 2010")), to workshops with multiple
+Tools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/PathwayToolsTalkISMB2010.pdf)
+at [ISMB 2010](/wiki/ISMB_2010)), to workshops with multiple
 speakers (e.g., <a
 href="http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&amp;sym_ID=27"
 class="external text" rel="nofollow">Database tools for evolutionary
 genomics</a> at <a href="http://ccg.biology.uiowa.edu/smbe/index.php"
 class="external text" rel="nofollow">SMBE 2009</a>), to highly
 interactive and hands-on tutorials (e.g., [GBrowse PAG 2010
-Workshop](GBrowse_PAG_2010_Workshop "GBrowse PAG 2010 Workshop")). See
+Workshop](/wiki/GBrowse_PAG_2010_Workshop)). See
 [Training and
-Outreach](Training_and_Outreach#Workshops.2C_Presentations_and_Posters "Training and Outreach")
+Outreach](/wiki/Training_and_Outreach#Workshops.2C_Presentations_and_Posters)
 for a more complete list of recent topics.
 
-Please contact the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
+Please contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 (<a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a>) if you are interested in arranging for
 a GMOD speaker to present at your institution or event.
@@ -111,27 +111,27 @@ that can help you.
 ### Graphics
 
 ![GMOD Logos](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/GMOD-three-cogs.png/300px-GMOD-three-cogs.pngGMOD-three-cogs-200.png)
-[GMOD Project Logos](Category%253AGMOD_Project_Logos "Category%253AGMOD Project Logos") -
+[GMOD Project Logos](/wiki/Category%253AGMOD_Project_Logos) -
 Logos related to the project as a whole.
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/50px-CMapLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/75px-CMapLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/100px-CMapLogo.png 2x"
-width="50" height="58" alt="Component Logos" />](Category%253ALogos_and_Icons "Component Logos")
-[Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons") -
+width="50" height="58" alt="Component Logos" />](/wiki/Category%253ALogos_and_Icons)
+[Logos and Icons](/wiki/Category%253ALogos_and_Icons) -
 Logos and icons, including [GMOD
-component](GMOD_Components "GMOD Components") logos.
+component](/wiki/GMOD_Components) logos.
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/9b/InsectaCentralLogo.png/70px-InsectaCentralLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 2x"
-width="70" height="56" alt="Member Logos" />](Category%253AMember_Logos "Member Logos")
-[Member Logos](Category%253AMember_Logos "Category%253AMember Logos") - logos of
+width="70" height="56" alt="Member Logos" />](/wiki/Category%253AMember_Logos)
+[Member Logos](/wiki/Category%253AMember_Logos) - logos of
 organizations that contribute to or use GMOD.
 
 ### Slides
 
-- [Conferences](Category%253AConferences "Category%253AConferences")
+- [Conferences](/wiki/Category%253AConferences)
 - [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
+  Outreach](/wiki/Category%253AEducation_and_Outreach)
+- [Events](/wiki/Category%253AEvents)
+- [GMOD Project](/wiki/Category%253AGMOD_Project)

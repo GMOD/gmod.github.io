@@ -9,12 +9,12 @@ The following 2 pages are in this category, out of 2 total.
 
 ### E
 
-- [Est2assembly](Est2assembly "Est2assembly")
+- [Est2assembly](/wiki/Est2assembly)
 
 ### G
 
 - [GBrowse Volvox SAM
-  Tutorial](GBrowse_Volvox_SAM_Tutorial "GBrowse Volvox SAM Tutorial")
+  Tutorial](/wiki/GBrowse_Volvox_SAM_Tutorial)
 
 ## Media in category "NGS"
 
@@ -36,7 +36,7 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf "File:GalaxyNGSISMB2010.pdf")
+  [GalaxyNGSISMB2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GalaxyNGSISMB2010.pdf)
   159 KB
 
 
@@ -59,7 +59,7 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [NGSTranscriptomeISGAEr...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf "File:NGSTranscriptomeISGAErgatis.pdf")
+  [NGSTranscriptomeISGAEr...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf)
   2.8 MB
 
 

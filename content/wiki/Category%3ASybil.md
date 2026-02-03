@@ -10,13 +10,13 @@ The following 3 pages are in this category, out of 3 total.
 ### P
 
 - [Proposed schema extensions related to Sybil/IGS
-  needs](Proposed_schema_extensions_related_to_Sybil/IGS_needs "Proposed schema extensions related to Sybil/IGS needs")
+  needs](/wiki/Proposed_schema_extensions_related_to_Sybil/IGS_needs)
 
 ### S
 
-- [Sybil](Sybil "Sybil")
+- [Sybil](/wiki/Sybil)
 - [Sybil Chado Comparative Genomics
-  Data](Sybil_Chado_Comparative_Genomics_Data "Sybil Chado Comparative Genomics Data")
+  Data](/wiki/Sybil_Chado_Comparative_Genomics_Data)
 
 ## Media in category "Sybil"
 
@@ -39,7 +39,7 @@ The following 2 files are in this category, out of 2 total.
 
 
   [Cain GI
-  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf "File:Cain GI poster.pdf")
+  poster.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c4/Cain_GI_poster.pdf)
   522 KB
 
 
@@ -63,5 +63,5 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf "File:GMODToolsForComparativeGenomicsIGERTPoster.pdf")
+  [GMODToolsForComparativ...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/GMODToolsForComparativeGenomicsIGERTPoster.pdf)
   714 KB

@@ -14,20 +14,20 @@ Status
 
 Resources
 
-- [Introduction](Introduction_to_Chado "Introduction to Chado")
-- [Manual](Chado_Manual "Chado Manual")
-- <a href="Chado_Tutorial" class="mw-redirect"
+- [Introduction](/wiki/Introduction_to_Chado)
+- [Manual](/wiki/Chado_Manual)
+- <a href="/wiki/Chado_Tutorial" class="mw-redirect"
   title="Chado Tutorial">Tutorial</a>
-- [Modules](Chado_Modules "Chado Modules")
+- [Modules](/wiki/Chado_Modules)
 - <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
   class="external text" rel="nofollow">Mailing List</a>
-- [Tagged](Category%253AChado "Category%253AChado")
+- [Tagged](/wiki/Category%253AChado)
 - <a href="../extras/2008GMODCommunitySurvey.html#Chado"
   class="external text" rel="nofollow">2008 Survey</a>
 
 Chado is a [relational database
-schema](Glossary#Database_Schema "Glossary") that underlies [many GMOD
-installations](GMOD_Users "GMOD Users"). It is capable of representing
+schema](/wiki/Glossary#Database_Schema) that underlies [many GMOD
+installations](/wiki/GMOD_Users). It is capable of representing
 many of the general classes of data frequently encountered in modern
 biology such as sequence, sequence comparisons, phenotypes, genotypes,
 ontologies, publications, and phylogeny. It has been designed to handle
@@ -51,60 +51,60 @@ must spend some time becoming familiar with its fundamentals.
 
 ## Documentation
 
-- [Introduction to Chado](Introduction_to_Chado "Introduction to Chado")
+- [Introduction to Chado](/wiki/Introduction_to_Chado)
 - <a
   href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/23/13/i337?ijkey=QYeUct9uLSzefgk&amp;keytype=ref"
   class="external text" rel="nofollow">Chado paper in Bioinformatics</a>
-- <a href="Chado_Tutorial" class="mw-redirect"
+- <a href="/wiki/Chado_Tutorial" class="mw-redirect"
   title="Chado Tutorial">Chado Tutorial</a>
-- [Chado Manual](Chado_Manual "Chado Manual")
-- [FAQ for Chado](Chado_FAQ "Chado FAQ")
-- [Chado Tables](Chado_Tables "Chado Tables")
-- [Chado Best Practices](Chado_Best_Practices "Chado Best Practices")
-- [Sample Chado SQL](Sample_Chado_SQL "Sample Chado SQL")
+- [Chado Manual](/wiki/Chado_Manual)
+- [FAQ for Chado](/wiki/Chado_FAQ)
+- [Chado Tables](/wiki/Chado_Tables)
+- [Chado Best Practices](/wiki/Chado_Best_Practices)
+- [Sample Chado SQL](/wiki/Sample_Chado_SQL)
 - [PostgreSQL Performance
-  Tips](PostgreSQL_Performance_Tips "PostgreSQL Performance Tips")
+  Tips](/wiki/PostgreSQL_Performance_Tips)
 
 ## Modules
 
 Chado is a modular schema, designed in such a way as to allow the
 addition of new modules for new data types. The existing modules are:
 
-- [Audit](Chado_Audit_Module "Chado Audit Module") - for database audit
+- [Audit](/wiki/Chado_Audit_Module) - for database audit
   trails
-- [Companalysis](Chado_Companalysis_Module "Chado Companalysis Module") -
+- [Companalysis](/wiki/Chado_Companalysis_Module) -
   for data from computational analysis
-- [Contact](Chado_Contact_Module "Chado Contact Module") - for people,
+- [Contact](/wiki/Chado_Contact_Module) - for people,
   groups, and organizations
-- [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
+- [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
   controlled vocabularies and ontologies
-- [Expression](Chado_Expression_Module "Chado Expression Module") - for
+- [Expression](/wiki/Chado_Expression_Module) - for
   summaries of RNA and protein expression
-- [General](Chado_General_Module "Chado General Module") - for
+- [General](/wiki/Chado_General_Module) - for
   identifiers
-- [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic
+- [Genetic](/wiki/Chado_Genetic_Module) - for genetic
   data and genotypes
-- [Library](Chado_Library_Module "Chado Library Module") - for
+- [Library](/wiki/Chado_Library_Module) - for
   descriptions of molecular libraries
-- [Mage](Chado_Mage_Module "Chado Mage Module") - for microarray data
-- [Map](Chado_Map_Module "Chado Map Module") - for maps without sequence
+- [Mage](/wiki/Chado_Mage_Module) - for microarray data
+- [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module") -
+  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
   for multiple experiments, such as phenotyping and genotyping
-- [Organism](Chado_Organism_Module "Chado Organism Module") - for
+- [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data
-- [Phenotype](Chado_Phenotype_Module "Chado Phenotype Module") - for
+- [Phenotype](/wiki/Chado_Phenotype_Module) - for
   phenotypic data
-- [Phylogeny](Chado_Phylogeny_Module "Chado Phylogeny Module") - for
+- [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
   organisms and phylogenetic trees
 - [Publication
-  (pub)](Chado_Publication_Module "Chado Publication Module") - for
+  (pub)](/wiki/Chado_Publication_Module) - for
   publications and references
-- [Sequence](Chado_Sequence_Module "Chado Sequence Module") - for
+- [Sequence](/wiki/Chado_Sequence_Module) - for
   sequences and sequence features
-- [Stock](Chado_Stock_Module "Chado Stock Module") - for specimens and
+- [Stock](/wiki/Chado_Stock_Module) - for specimens and
   biological collections
-- [WWW](Chado_WWW_Module "Chado WWW Module") -
+- [WWW](/wiki/Chado_WWW_Module) -
 
 
 
@@ -118,21 +118,21 @@ a Unix operating system such as Linux or Mac OS X. You can also install
 Postgres, and Chado, on Windows but most Chado installations are found
 on some version of Unix - you'll probably get the best support by
 choosing Unix. (See [Databases and
-GMOD](Databases_and_GMOD "Databases and GMOD") for more discussion.)
+GMOD](/wiki/Databases_and_GMOD) for more discussion.)
 Once you've installed your RDBMS you can install Chado.
 
 
 
 ### Download a Stable Release of Chado
 
-See [Downloads](Downloads "Downloads")
+See [Downloads](/wiki/Downloads)
 
 
 
 ### Chado From SVN
 
 You can get the most up-to-date, not even released yet, version of Chado
-from <a href="Subversion" class="mw-redirect"
+from <a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a>. To get a copy of the latest Chado
 source, enter this at the command line:
 
@@ -153,11 +153,11 @@ After completing these steps, you can load your chado schema with data
 in a number of ways:
 
 - [Load RefSeq into Chado
-  HOWTO](Load_RefSeq_Into_Chado "Load RefSeq Into Chado")
-- [Load GFF into Chado HOWTO](Load_GFF_Into_Chado "Load GFF Into Chado")
-- Using [XORT](XORT.1 "XORT")
+  HOWTO](/wiki/Load_RefSeq_Into_Chado)
+- [Load GFF into Chado HOWTO](/wiki/Load_GFF_Into_Chado)
+- Using [XORT](/wiki/XORT.1)
 
-You can also use the application [Apollo](Apollo.1 "Apollo") to curate
+You can also use the application [Apollo](/wiki/Apollo.1) to curate
 data in Chado.
 
 ## Mailing Lists
@@ -165,13 +165,13 @@ data in Chado.
 |
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
-| <a href="Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
-class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI"), and [Bio%253A%253AChado%253A%253ASchema](Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
+| <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
+class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI), and [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"
 class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts"
-class="external text" rel="nofollow">gmod-schema-cmts</a> | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> code updates. | <a
+class="external text" rel="nofollow">gmod-schema-cmts</a> | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> code updates. | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts"
 class="external text" rel="nofollow">Sourceforge</a> |
 

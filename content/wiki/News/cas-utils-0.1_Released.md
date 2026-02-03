@@ -6,8 +6,8 @@ title: "News/cas-utils-0.1 Released"
 In the wake of the <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> a little over a week
 ago, I decided that I should create a release that has the tools that I
-used to tie together [GBrowse](../GBrowse.1 "GBrowse"),
-[Apollo](../Apollo.1 "Apollo") and
+used to tie together [GBrowse](../GBrowse.1),
+[Apollo](../Apollo.1) and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>. It can
 be downloaded at:
 
@@ -18,7 +18,7 @@ These utilities consist of 4 main tools:
 - A CGI for selecting a region in GBrowse, extracting the data for
 
 that region from Apollo and creating an
-[XML](../Glossary#XML "Glossary") file and a Java Webstart (.jnlp) file
+[XML](../Glossary#XML) file and a Java Webstart (.jnlp) file
 for Apollo.
 
 - A CGI for accepting uploads of edited XML files to either be
@@ -64,11 +64,11 @@ probably on MacOS as well. I am considerably less sure that this would
 work out of the box on Windows, but support for that could probably be
 in a future release if the demand is there.
 
-Thanks and happy curating! [Scott Cain](../User%253AScott "User%253AScott")
+Thanks and happy curating! [Scott Cain](../User%253AScott)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/22*
+*Posted to the [GMOD News](../GMOD_News) on 2008/07/22*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

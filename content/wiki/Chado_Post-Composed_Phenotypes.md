@@ -125,5 +125,5 @@ Secondary Entity 2
 ## Older proposals
 
 See
-[Talk%253AChado_Post-Composed_Phenotypes](Talk%253AChado_Post-Composed_Phenotypes "Talk:Chado Post-Composed Phenotypes")
+[Talk%253AChado_Post-Composed_Phenotypes](/wiki/Talk%253AChado_Post-Composed_Phenotypes)
 for the older versions of this schema proposal

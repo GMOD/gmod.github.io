@@ -32,7 +32,7 @@ Recommendations
 
 
 - [Java Testing - by Jon
-  Slenk](Java_Testing_-_by_Jon_Slenk "Java Testing - by Jon Slenk")
+  Slenk](/wiki/Java_Testing_-_by_Jon_Slenk)
 - [Perl Testing - by Gavin
-  Sherlock](Perl_Testing_-_by_Gavin_Sherlock "Perl Testing - by Gavin Sherlock")
-- [Questions on Testing](Questions_on_Testing "Questions on Testing")
+  Sherlock](/wiki/Perl_Testing_-_by_Gavin_Sherlock)
+- [Questions on Testing](/wiki/Questions_on_Testing)

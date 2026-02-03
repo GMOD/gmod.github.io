@@ -70,7 +70,7 @@ rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Ins
 Step 2
 Perform the "Theme Configuration" section of the tutorial at this link
 (only do this section):
-<a href="Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
+<a href="/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration</a>
 Step 3

@@ -15,12 +15,12 @@ data-cellpadding="10">
 <td><a href="http://www.intl-pag.org/" rel="nofollow"
 title="PAG 2009">
 
-View of [MAKER](MAKER.1 "MAKER") annotations in the
-[Apollo](Apollo.1 "Apollo") genome annotation curation tool. Supporting
+View of [MAKER](/wiki/MAKER.1) annotations in the
+[Apollo](/wiki/Apollo.1) genome annotation curation tool. Supporting
 evidence is shown in the upper dark panel. Gene annotations are shown in
 the blue panel.
 
-[MAKER](MAKER.1 "MAKER") is a portable and easily configurable genome
+[MAKER](/wiki/MAKER.1) is a portable and easily configurable genome
 annotation pipeline. It's purpose is to allow smaller eukaryotic and
 prokaryotic genome projects to independently annotate their genomes and
 to create genome databases. MAKER identifies repeats, aligns ESTs and
@@ -31,10 +31,10 @@ of preliminary runs can be used to automatically retrain the gene
 prediction algorithms used by MAKER, producing higher quality
 gene-models on subsequent runs. MAKER's inputs are minimal and its
 outputs can be directly loaded into a
-<a href="Chado" class="mw-redirect" title="Chado">GMOD compatible
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">GMOD compatible
 database</a>. They can also be viewed in the
-[GBrowse](GBrowse.1 "GBrowse") genome viewer, and manually updated using
-the [Apollo](Apollo.1 "Apollo") genome annotation editor.
+[GBrowse](/wiki/GBrowse.1) genome viewer, and manually updated using
+the [Apollo](/wiki/Apollo.1) genome annotation editor.
 
 MAKER can be installed locally on your own machine, or for smaller
 datasets, you can upload your data to the online MAKER gene annotation
@@ -44,14 +44,14 @@ MAKER on a local machine.
 
 ## Workshop Instructor
 
-- [Carson Holt](User%253ACarsonholt "User%253ACarsonholt"),
+- [Carson Holt](/wiki/User%253ACarsonholt),
   <a href="http://www.utah.edu" class="external text"
   rel="nofollow">University of Utah</a>
 
 ## Tutorial Level
 
 **Beginner to Intermediate.** No prior knowledge of MAKER or genome
-[annotation](Annotation "Annotation") pipelines is required.
+[annotation](/wiki/Annotation) pipelines is required.
 
 The tutorial is aimed at biologists who have, or soon will have, genomic
 sequence data.
@@ -64,7 +64,7 @@ This workshop will cover
 - Creating an Account and Uploading Data
 - Basic Explanation on Using a Locally Installed Version of MAKER
 - Quick Demonstration on Loading MAKER Data into Other [GMOD
-  Tools](GMOD_Components "GMOD Components")
+  Tools](/wiki/GMOD_Components)
 
 This is not a hands-on workshop. There are portions of the workshop for
 which the user may follow along online if they wish, but it is not
@@ -77,18 +77,18 @@ material presented at this workshop.
 
 ## Other GMOD Presentations and Meetings
 
-GMOD will have a [strong presence](PAG_2010 "PAG 2010") at PAG 2010,
+GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
-- A [workshop](GBrowse_PAG_2010_Workshop "GBrowse PAG 2010 Workshop") on
-  [GBrowse](GBrowse.1 "GBrowse"), a genome viewer.
+- A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
+  [GBrowse](/wiki/GBrowse.1), a genome viewer.
 - A
-  [workshop](GBrowse_syn_PAG_2010_Workshop "GBrowse syn PAG 2010 Workshop")
-  on [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), a comparative genomics
-  viewer built on [GBrowse](GBrowse.1 "GBrowse")
+  [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
+  on [GBrowse_syn](/wiki/GBrowse_syn.1), a comparative genomics
+  viewer built on [GBrowse](/wiki/GBrowse.1)
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](CMap.1 "CMap") comparative map viewer.
+  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
 
-See [PAG 2010](PAG_2010 "PAG 2010") for a more complete list of
+See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

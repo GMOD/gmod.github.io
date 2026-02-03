@@ -30,7 +30,7 @@ width="100" height="108" alt="Arthropod Genomics Symposium" /></a>
 </tbody>
 </table>
 
-[MAKER](../MAKER.1 "MAKER"), the easy to use genome annotation pipeline,
+[MAKER](../MAKER.1), the easy to use genome annotation pipeline,
 is now version 2.0.
 
 Some of the current features and other improvements
@@ -41,13 +41,13 @@ Some of the current features and other improvements
   rel="nofollow">TopHat</a>,
   <a href="http://cufflinks.cbcb.umd.edu/" class="external text"
   rel="nofollow">CuffLinks</a>, and others in
-  [MAKER](../MAKER.1 "MAKER"))...
+  [MAKER](../MAKER.1))...
 - Annotate eukaryotes and prokayotes...
 - Pass through any kind of evidence evidence from any source via
-  [GFF3](../GFF3 "GFF3") pass-through...
+  [GFF3](../GFF3) pass-through...
 - Easy single-command-line dump of MAKER output to a
   <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-  database and to [JBrowse](../JBrowse.1 "JBrowse")...
+  database and to [JBrowse](../JBrowse.1)...
 - Same directory parallelization - just start MAKER on top of itself,
   and it will share the workload with the new process...
 - Auto recovery - start, stop, and restart MAKER at any time; MAKER will
@@ -65,11 +65,11 @@ interested in genome annotation, please consider attending.
 
 
 Thanks,
-[Carson Holt](../User%253ACarsonholt "User%253ACarsonholt")
+[Carson Holt](../User%253ACarsonholt)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/01*
+*Posted to the [GMOD News](../GMOD_News) on 2010/06/01*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

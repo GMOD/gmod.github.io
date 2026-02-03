@@ -4,7 +4,7 @@ title: "GBrowse/tool data"
 # GBrowse/tool data
 
 This page stores the data that populates the
-[GBrowse](../GBrowse.1 "GBrowse") wiki page.
+[GBrowse](../GBrowse.1) wiki page.
 
 \| name = GBrowse \| full_name = Generic Genome
 Browser \| status = mature \| dev = active \| support = active \| type =
@@ -25,20 +25,20 @@ displaying annotations on genomes. Features include:
 - Order and appearance of tracks are customizable by administrator and
   end-user.
 - Search by annotation ID, name, or comment.
-- Supports third party annotation using [GFF](../GFF "GFF") formats.
+- Supports third party annotation using [GFF](../GFF) formats.
 - Settings persist across sessions.
-- DNA and [GFF](../GFF "GFF") dumps.
+- DNA and [GFF](../GFF) dumps.
 - Connectivity to different databases, including
-  [BioSQL](../BioSQL "BioSQL") and
+  [BioSQL](../BioSQL) and
   <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Multi-language support.
 - Third-party feature loading.
-- Customizable [plug-in](../GBrowse_Plugins "GBrowse Plugins")
+- Customizable [plug-in](../GBrowse_Plugins)
   architecture (e.g. run
   <a href="http://en.wikipedia.org/wiki/BLAST" class="extiw"
   title="wp:BLAST">BLAST</a>, dump & import many formats, find
   oligonucleotides, [design
-  primers](../PrimerDesigner.pm "PrimerDesigner.pm"), create restriction
+  primers](../PrimerDesigner.pm), create restriction
   maps, edit features)
 
 Note that the information on this page refers to GBrowse 2; GBrowse 1.x
@@ -68,7 +68,7 @@ repository and can be installed via apt-get in Ubuntu 12.04 and later.
 <a href="https://github.com/GMOD/GBrowse" class="external free"
 rel="nofollow">https://github.com/GMOD/GBrowse</a> \|
 getting_started_preamble = \| req = GBrowse is
-[Perl](../Glossary#Perl "Glossary")-based and the GBrowse 2.x modules
+[Perl](../Glossary#Perl)-based and the GBrowse 2.x modules
 are <a href="http://search.cpan.org/dist/GBrowse/" class="external text"
 rel="nofollow">hosted on CPAN</a>. GBrowse can be installed using the
 standard Perl module build procedure, or automated using a network-based
@@ -76,16 +76,16 @@ install script. In order to use the net installer, you will need to have
 Perl 5.8.6 or higher and the Apache web server installed. \| install =
 
 - [GBrowse 2.x installation
-  guide](../GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO")
-- [Advanced](../GBrowse_2.0_Install_HOWTO/Advanced "GBrowse 2.0 Install HOWTO/Advanced")
+  guide](../GBrowse_2.0_Install_HOWTO.1)
+- [Advanced](../GBrowse_2.0_Install_HOWTO/Advanced)
 - [Install
-  Paths](../GBrowse_2.0_Install_Paths "GBrowse 2.0 Install Paths")
+  Paths](../GBrowse_2.0_Install_Paths)
 
 \| config =
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [GBrowse 2](../Category%253AGBrowse_2 "Category%253AGBrowse 2")
+  Cloud](../Category%253AGMOD_in_the_Cloud)
+- [GBrowse 2](../Category%253AGBrowse_2)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
+  Components](../Category%253AGMOD_Components)
+- [Tool data](../Category%253ATool_data)

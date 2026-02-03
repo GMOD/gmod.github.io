@@ -245,7 +245,7 @@ rel="nofollow">http://www.drupal.org/project/themes</a>
 ### Chado
 
 The session for Chado was presented yesterday
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
 for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
@@ -351,11 +351,11 @@ Tripal: <a href="http://tripal.sourceforge.net" class="external free"
 rel="nofollow">http://tripal.sourceforge.net</a>
 
 GMOD Tripal mailing lists:
-<a href="GMOD_Mailing_Lists" class="external free"
+<a href="/wiki/GMOD_Mailing_Lists" class="external free"
 rel="nofollow">http://gmod.org/wiki/GMOD_Mailing_Lists</a>
 
 GMOD Tutorials from previous GMOD schools:
-<a href="Tripal.1" class="external free"
+<a href="/wiki/Tripal.1" class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
 
@@ -870,7 +870,7 @@ cron launch the crontab editor:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -1573,7 +1573,7 @@ need to add a second cron entry:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -1984,7 +1984,7 @@ source of your data. For this tutorial, enter the following:
 - Time Executed: (todays date)
 - Description: A subset of the gene list from the 2lHet chromosome of
   Drosophila melanogaster was downloaded from Flybase. The original GFF
-  file can be obtained from here: \<a href="<a
+  file can be obtained from here: \<a href="/wiki/<a
   href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz"
   class="external free"
   rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/dmel_r5.34_FB2011_02/gff/dmel-2LHet-r5.34.gff.gz</a>"\>dmel-2LHet-r5.34.gff.gz\</a\>
@@ -2732,8 +2732,7 @@ this analysis
 - Source version: FB2011_02
 - Time Executed: Aug 18, 2011
 - Description: Drosophila melanogaster gene sequences were uploaded to
-  the KEGG / KASS server at \<a
-  href="<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
+  the KEGG / KASS server at \<a href="/wiki/<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
   rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>"\><a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
   rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>\</a\>.   The
   SBH method was selected.  Results were downloaded in the heir.tar.gz

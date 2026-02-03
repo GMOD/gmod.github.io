@@ -90,7 +90,7 @@ If you haven't already, download gmod, either from
 
     http://sourceforge.net/projects/gmod/files/gmod/
 
-or via <a href="SVN" class="mw-redirect" title="SVN">SVN</a>.
+or via <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>.
 
 Then, in the gmod directory
 
@@ -101,7 +101,7 @@ Then, in the gmod directory
      make prepdb
      make ontologies  #selected 1,2,3,4
 
-Get and load yeast [GFF3](GFF3 "GFF3") file:
+Get and load yeast [GFF3](/wiki/GFF3) file:
 
       wget http://downloads.yeastgenome.org/sequence/S288C_reference/genome_releases/S288C_reference_genome_Current_Release.tgz
 

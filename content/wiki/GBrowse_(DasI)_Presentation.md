@@ -32,7 +32,7 @@ title="DasI middleware.pdf">Scott's presentation</a>.
 
 ##### Problem 1 - Loading Data
 
-Create some [GFF3](GFF3 "GFF3") from the specifications:
+Create some [GFF3](/wiki/GFF3) from the specifications:
 
     fake_chromosome example chromosome 1  15017 .  .  . ID=fake_chromosome;Name=fake_chromosome
     fake_chromosome example gene   13691  14720 .  +  . ID=xfile;Name=xfile;Alias=mulder,scully;Note=A test gene for GMOD meeting
@@ -107,7 +107,7 @@ for my $exon (@exons) {
  }
 ```
 
-Or see your report in [GBrowse](GBrowse.1 "GBrowse")
+Or see your report in [GBrowse](/wiki/GBrowse.1)
 
 ##### Advantages
 
@@ -121,7 +121,7 @@ Or see your report in [GBrowse](GBrowse.1 "GBrowse")
 ##### Conclusion
 
 - Not suitable as a 'general'
-  [middleware](Glossary#Middleware "Glossary") layer
+  [middleware](/wiki/Glossary#Middleware) layer
   - May be suitable for some applications, particularly if they are
-    similar to [GBrowse](GBrowse.1 "GBrowse") or other uses of
+    similar to [GBrowse](/wiki/GBrowse.1) or other uses of
     Bio::DB::GFF

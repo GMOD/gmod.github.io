@@ -13,17 +13,17 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a href="January_2010_GMOD_Meeting"
+<td style="text-align: center;"><a href="/wiki/January_2010_GMOD_Meeting"
 title="January 2010 GMOD Meeting"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/39/Jan2010MtgLogo170.png/120px-Jan2010MtgLogo170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/39/Jan2010MtgLogo170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/39/Jan2010MtgLogo170.png 2x"
 width="120" height="114" alt="January 2010 GMOD Meeting" /></a></td>
-<td data-valign="middle"><strong><a href="January_2010_GMOD_Meeting"
+<td data-valign="middle"><strong><a href="/wiki/January_2010_GMOD_Meeting"
 title="January 2010 GMOD Meeting">January 2010 Satellite
 Meeting</a></strong><br />
 January 13, 2010<br />
 <br />
-Following <a href="PAG_2010" title="PAG 2010">PAG 2010</a><br />
+Following <a href="/wiki/PAG_2010" title="PAG 2010">PAG 2010</a><br />
 San Diego, California, USA</td>
 <td data-valign="middle"><a href="http://www.sandiego.org/nav/Visitors"
 rel="nofollow" title="San Diego Convention and Visitors Bureau"><img
@@ -42,7 +42,7 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 - [Schedule](#Schedule)
 
 The goal of this hackathon is to produce a working prototype of the
-<a href="GMOD_REST_API" class="mw-redirect" title="GMOD REST API">GMOD
+<a href="/wiki/GMOD_REST_API" class="mw-redirect" title="GMOD REST API">GMOD
 REST API</a>. It will be a very low key event with no official reserved
 location or catered goodies. We will probably congregate pool side, in a
 hotel room, or in the New England themed bar at the Seven Seas hotel.
@@ -51,31 +51,31 @@ hotel room, or in the New England themed bar at the Seven Seas hotel.
 
 ## Organizing Committee
 
-- [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
+- [Josh Goodman](/wiki/User%253AJogoodma)
 
 ## Attendees
 
 - *Please add your name here*
-- [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
-- [Richard Smith](User%253ARsmith "User%253ARsmith")
-- [Todd Harris](User%253ATharris "User%253ATharris")
-- [Robert Buels](User%253ARobertBuels "User%253ARobertBuels")
-- [Michael Caudy](User%253AMcaudy "User%253AMcaudy")
-- [Jim Hu](User%253AJimHu.1 "User%253AJimHu")
+- [Josh Goodman](/wiki/User%253AJogoodma)
+- [Richard Smith](/wiki/User%253ARsmith)
+- [Todd Harris](/wiki/User%253ATharris)
+- [Robert Buels](/wiki/User%253ARobertBuels)
+- [Michael Caudy](/wiki/User%253AMcaudy)
+- [Jim Hu](/wiki/User%253AJimHu.1)
 
-- [Chris Childers](User%253AChilders "User%253AChilders")
-- [Justin Reese](User%253AJustaddcoffee "User%253AJustaddcoffee")
+- [Chris Childers](/wiki/User%253AChilders)
+- [Justin Reese](/wiki/User%253AJustaddcoffee)
 
 ## Topics
 
 - Produce a working version of the
-  <a href="GMOD_REST_API" class="mw-redirect" title="GMOD REST API">REST
+  <a href="/wiki/GMOD_REST_API" class="mw-redirect" title="GMOD REST API">REST
   API</a>
 
 ## Dates
 
 Jan 13th before the [January 2010 GMOD
-Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting").
+Meeting](/wiki/January_2010_GMOD_Meeting).
 
 ## Schedule
 

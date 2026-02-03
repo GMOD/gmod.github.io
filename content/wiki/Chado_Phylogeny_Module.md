@@ -38,16 +38,16 @@ This module also has the ability to easily create multiple trees, to
 easily create super trees, to retrieve nodes easily from different
 levels in a tree without recursion (nested sets), and the ability to
 associate trees with algorithms (referencing the [Chado Companalysis
-Module](Chado_Companalysis_Module "Chado Companalysis Module")).
+Module](/wiki/Chado_Companalysis_Module)).
 
 This module relies heavily on the [Sequence
-module](Chado_Sequence_Module "Chado Sequence Module"). In particular,
+module](/wiki/Chado_Sequence_Module). In particular,
 all the leaf nodes in a tree correspond to features; these will usually
 be features of type SO:protein or SO:polypeptide (but other trees are
 possible - e.g. intron trees). If it is desirable to store multiple
 alignments for each non-leaf node, then each node can be mapped to a
 feature of type SO:match. Please refer to the [sequence module
-docs](Chado_Sequence_Module "Chado Sequence Module") for details on
+docs](/wiki/Chado_Sequence_Module) for details on
 storing multiple alignments.
 
 ### Annotating nodes
@@ -79,7 +79,7 @@ be useful here.
 # More Information
 
 See the page on the related [Organism
-module](Chado_Organism_Module "Chado Organism Module").
+module](/wiki/Chado_Organism_Module).
 
 # Tables
 
@@ -120,14 +120,14 @@ indices.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_phylotree"
+<td><p><a href="/wiki/Chado_Tables#Table:_phylotree"
 title="Chado Tables">phylotree</a></p></td>
 <td>phylotree_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 UNIQUE#2 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_phylonode"
+<td><p><a href="/wiki/Chado_Tables#Table:_phylonode"
 title="Chado Tables">phylonode</a></p></td>
 <td>parent_phylonode_id</td>
 <td>integer</td>
@@ -148,7 +148,7 @@ Root phylonode can have null parent_phylonode_id value.</td>
 <td><em>UNIQUE#2 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -157,7 +157,7 @@ title="Chado Tables">cvterm</a></p></td>
 Type: e.g. root, interior, leaf.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
@@ -188,12 +188,12 @@ phylonode Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-- [phylonode_dbxref](Chado_Tables#Table:_phylonode_dbxref "Chado Tables")
-- [phylonode_organism](Chado_Tables#Table:_phylonode_organism "Chado Tables")
-- [phylonode_pub](Chado_Tables#Table:_phylonode_pub "Chado Tables")
-- [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-- [phylonodeprop](Chado_Tables#Table:_phylonodeprop "Chado Tables")
+- [phylonode](/wiki/Chado_Tables#Table:_phylonode)
+- [phylonode_dbxref](/wiki/Chado_Tables#Table:_phylonode_dbxref)
+- [phylonode_organism](/wiki/Chado_Tables#Table:_phylonode_organism)
+- [phylonode_pub](/wiki/Chado_Tables#Table:_phylonode_pub)
+- [phylonode_relationship](/wiki/Chado_Tables#Table:_phylonode_relationship)
+- [phylonodeprop](/wiki/Chado_Tables#Table:_phylonodeprop)
 
 ---
 
@@ -203,7 +203,7 @@ For example, for orthology, paralogy group identifiers; could also be
 used for NCBI taxonomy; for sequences, refer to phylonode_feature,
 feature associated dbxrefs.
 
-| FK                                                        | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phylonode_dbxref_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")       | dbxref_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phylonode_dbxref_id | serial  | _PRIMARY KEY_       | [phylonode](/wiki/Chado_Tables#Table:_phylonode) | phylonode_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](/wiki/Chado_Tables#Table:_dbxref)       | dbxref_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylonode_dbxref Structure
 
@@ -241,7 +241,7 @@ taxonomy tree).
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_phylonode"
+<td><p><a href="/wiki/Chado_Tables#Table:_phylonode"
 title="Chado Tables">phylonode</a></p></td>
 <td>phylonode_id</td>
 <td>integer</td>
@@ -250,7 +250,7 @@ title="Chado Tables">phylonode</a></p></td>
 One phylonode cannot refer to &gt;1 organism.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_organism"
+<td><p><a href="/wiki/Chado_Tables#Table:_organism"
 title="Chado Tables">organism</a></p></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -265,7 +265,7 @@ phylonode_organism Structure
 
 ## Table: phylonode_pub
 
-| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylonode_pub_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | phylonode_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylonode_pub_id | serial  | _PRIMARY KEY_       | [phylonode](/wiki/Chado_Tables#Table:_phylonode) | phylonode_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylonode_pub Structure
 
@@ -277,7 +277,7 @@ This is for relationships that are not strictly hierarchical; for
 example, horizontal gene transfer. Most phylogenetic trees are strictly
 hierarchical, nevertheless it is here for completeness.
 
-| FK                                                        | Name                      | Type    | Description         | --------------------------------------------------------- | ------------------------- | ------- | ------------------- |                                                           | phylonode_relationship_id | serial  | _PRIMARY KEY_       | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | subject_id                | integer | _UNIQUE#1 NOT NULL_ | [phylonode](Chado_Tables#Table:_phylonode "Chado Tables") | object_id                 | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | type_id                   | integer | _UNIQUE#1 NOT NULL_ |                                                           | rank                      | integer | [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id              | integer | _NOT NULL_          |
+| FK                                                        | Name                      | Type    | Description         | --------------------------------------------------------- | ------------------------- | ------- | ------------------- |                                                           | phylonode_relationship_id | serial  | _PRIMARY KEY_       | [phylonode](/wiki/Chado_Tables#Table:_phylonode) | subject_id                | integer | _UNIQUE#1 NOT NULL_ | [phylonode](/wiki/Chado_Tables#Table:_phylonode) | object_id                 | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)       | type_id                   | integer | _UNIQUE#1 NOT NULL_ |                                                           | rank                      | integer | [phylotree](/wiki/Chado_Tables#Table:_phylotree) | phylotree_id              | integer | _NOT NULL_          |
 
 phylonode_relationship Structure
 
@@ -309,14 +309,14 @@ phylonode_relationship Structure
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_phylonode"
+<td><p><a href="/wiki/Chado_Tables#Table:_phylonode"
 title="Chado Tables">phylonode</a></p></td>
 <td>phylonode_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -373,7 +373,7 @@ Global anchor for phylogenetic tree.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -386,7 +386,7 @@ title="Chado Tables">dbxref</a></p></td>
 <td><em></em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -396,7 +396,7 @@ Type: protein, nucleotide, taxonomy, for example. The type should be any
 SO type, or "taxonomy".</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_analysis"
+<td><p><a href="/wiki/Chado_Tables#Table:_analysis"
 title="Chado Tables">analysis</a></p></td>
 <td>analysis_id</td>
 <td>integer</td>
@@ -415,9 +415,9 @@ phylotree Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-- [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-- [phylotree_pub](Chado_Tables#Table:_phylotree_pub "Chado Tables")
+- [phylonode](/wiki/Chado_Tables#Table:_phylonode)
+- [phylonode_relationship](/wiki/Chado_Tables#Table:_phylonode_relationship)
+- [phylotree_pub](/wiki/Chado_Tables#Table:_phylotree_pub)
 
 ---
 
@@ -426,7 +426,7 @@ Tables referencing this one via Foreign Key Constraints:
 Tracks citations global to the tree e.g. multiple sequence alignment
 supporting tree construction.
 
-| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylotree_pub_id | serial  | _PRIMARY KEY_       | [phylotree](Chado_Tables#Table:_phylotree "Chado Tables") | phylotree_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
+| FK                                                        | Name             | Type    | Description         | --------------------------------------------------------- | ---------------- | ------- | ------------------- |                                                           | phylotree_pub_id | serial  | _PRIMARY KEY_       | [phylotree](/wiki/Chado_Tables#Table:_phylotree) | phylotree_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)             | pub_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phylotree_pub Structure
 

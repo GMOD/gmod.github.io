@@ -5,10 +5,10 @@ title: "GMOD Users"
 
 The following is a selection of the websites (including organism
 databases, research groups, and software) using
-[GBrowse](GBrowse.1 "GBrowse"), [JBrowse](JBrowse.1 "JBrowse"),
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, or some
+[GBrowse](/wiki/GBrowse.1), [JBrowse](/wiki/JBrowse.1),
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, or some
 other popular component of GMOD. For a list of related publications see
-[Publications](Publications "Publications").
+[Publications](/wiki/Publications).
 
 Check out the
 <a href="../worldwide.html" class="external text" rel="nofollow">map of
@@ -109,7 +109,7 @@ rel="nofollow">http://www.aphidbase.com/</a></td>
 <tr class="even">
 <td><a href="http://www.arabidopsis.org" class="external free"
 rel="nofollow">http://www.arabidopsis.org</a></td>
-<td><a href="Category%253ATAIR" title="Category%253ATAIR">TAIR</a></td>
+<td><a href="/wiki/Category%253ATAIR" title="Category%253ATAIR">TAIR</a></td>
 <td></td>
 <td></td>
 <td>2013</td>
@@ -247,7 +247,7 @@ single-cytosine-resolution DNA methylation data</td>
 <td><a href="http://bioinformatics.ai.sri.com/ptools/"
 class="external free"
 rel="nofollow">http://bioinformatics.ai.sri.com/ptools/</a></td>
-<td><a href="Pathway_Tools.1" title="Pathway Tools">Pathway
+<td><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway
 Tools</a></td>
 <td></td>
 <td>Home of Pathway Tools</td>
@@ -513,7 +513,7 @@ rel="nofollow">http://diagcomputing.org/resources/software.php</a></td>
 <tr class="odd">
 <td><a href="http://www.dictybase.org" class="external free"
 rel="nofollow">http://www.dictybase.org</a></td>
-<td><a href="Category%253ADictyBase"
+<td><a href="/wiki/Category%253ADictyBase"
 title="Category%253ADictyBase">DictyBase</a></td>
 <td></td>
 <td>Chado, GBrowse, more</td>
@@ -593,7 +593,7 @@ rel="nofollow">http://fagaceae.org</a></td>
 <tr class="even">
 <td><a href="http://www.flybase.org" class="external free"
 rel="nofollow">http://www.flybase.org</a></td>
-<td><a href="Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a></td>
+<td><a href="/wiki/Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a></td>
 <td>A Database of Drosophila Genes &amp; Genomes</td>
 <td>Chado, GBrowse, more</td>
 <td>2013</td>
@@ -857,7 +857,7 @@ class="external text" rel="nofollow">Chado controller</a></td>
 <tr class="even">
 <td><a href="http://www.gramene.org" class="external free"
 rel="nofollow">http://www.gramene.org</a></td>
-<td><a href="Category%253AGramene" title="Category%253AGramene">Gramene</a></td>
+<td><a href="/wiki/Category%253AGramene" title="Category%253AGramene">Gramene</a></td>
 <td>Grain resources</td>
 <td></td>
 <td>2013</td>
@@ -1303,7 +1303,7 @@ rel="nofollow">http://www.oryzasnp.org/</a></td>
 <tr class="odd">
 <td><a href="http://paramecium.cgm.cnrs-gif.fr/" class="external free"
 rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/</a></td>
-<td><a href="ParameciumDB" title="ParameciumDB">ParameciumDB</a></td>
+<td><a href="/wiki/ParameciumDB" title="ParameciumDB">ParameciumDB</a></td>
 <td></td>
 <td>Chado, GBrowse, BioMart</td>
 <td>2013</td>
@@ -1459,7 +1459,7 @@ rel="nofollow">http://research.nhgri.nih.gov/mnemiopsis/</a></td>
 <tr class="even">
 <td><a href="http://rgd.mcw.edu" class="external free"
 rel="nofollow">http://rgd.mcw.edu</a></td>
-<td><a href="Category%253ARGD" title="Category%253ARGD">RGD</a></td>
+<td><a href="/wiki/Category%253ARGD" title="Category%253ARGD">RGD</a></td>
 <td>Rat Genome Database</td>
 <td></td>
 <td>2013</td>
@@ -1577,7 +1577,7 @@ rel="nofollow">http://smedgd.neuro.utah.edu/</a></td>
 <tr class="even">
 <td><a href="http://solgenomics.net/" class="external free"
 rel="nofollow">http://solgenomics.net/</a></td>
-<td><a href="Category%253ASGN" title="Category%253ASGN">Sol Genomics
+<td><a href="/wiki/Category%253ASGN" title="Category%253ASGN">Sol Genomics
 Network</a></td>
 <td></td>
 <td>Chado</td>
@@ -1798,7 +1798,7 @@ rel="nofollow">http://wildsoydb.org/</a></td>
 <tr class="odd">
 <td><a href="http://www.wormbase.org" class="external free"
 rel="nofollow">http://www.wormbase.org</a></td>
-<td><a href="Category%253AWormBase"
+<td><a href="/wiki/Category%253AWormBase"
 title="Category%253AWormBase">WormBase</a></td>
 <td>C. elegans</td>
 <td></td>
@@ -1840,7 +1840,7 @@ rel="nofollow">http://yandell-lab.org/software/cgl/</a></td>
 <tr class="even">
 <td><a href="http://yeastgenome.org/" class="external free"
 rel="nofollow">http://yeastgenome.org/</a></td>
-<td><a href="Category%253ASGD" title="Category%253ASGD">SGD</a></td>
+<td><a href="/wiki/Category%253ASGD" title="Category%253ASGD">SGD</a></td>
 <td>S. cerevisiae resources</td>
 <td></td>
 <td>2013</td>
@@ -1851,7 +1851,7 @@ rel="nofollow">http://ymap.ftdna.com/</a></td>
 <td>Ymap</td>
 <td>Human Y chromosome map for SNP and STR markers used in genetic
 genealogy and anthropology</td>
-<td><a href="Gbrowse.1" class="mw-redirect"
+<td><a href="/wiki/Gbrowse.1" class="mw-redirect"
 title="Gbrowse">Gbrowse</a></td>
 <td>2013</td>
 </tr>

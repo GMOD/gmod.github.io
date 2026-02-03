@@ -21,7 +21,7 @@ Several databases, including
 rel="nofollow">InsectaCentral</a> and
 <a href="http://www.inra.fr/lepidodb" class="external text"
 rel="nofollow">LepidoDB</a>, both of which use [GMOD
-Components](../GMOD_Components "GMOD Components"), will be discussed in
+Components](../GMOD_Components), will be discussed in
 the workshop.
 
 The session is held during the last conference day and is one hour long;
@@ -47,7 +47,7 @@ rel="nofollow">Fabrice Legeai</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/18*
+*Posted to the [GMOD News](../GMOD_News) on 2009/08/18*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

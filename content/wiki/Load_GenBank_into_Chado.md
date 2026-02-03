@@ -17,9 +17,9 @@ title: "Load GenBank into Chado"
 
 ## Abstract
 
-This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes how to load
+This [HOWTO](/wiki/Category%253AHOWTO) describes how to load
 GenBank format files into
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. For a
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. For a
 thorough discussion of this topic, including all the files that will
 allow you to set up a complete test environment see:
 
@@ -31,16 +31,16 @@ rel="nofollow">http://eugenes.org/gmod/genbank2chado/</a>
 ## Summary
 
 - Install prerequisites: latest versions of
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
-  [GBrowse](GBrowse.1 "GBrowse")
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
+  [GBrowse](/wiki/GBrowse.1)
 - Fetch Genbank genome/chromosomes
 - Run <a
   href="http://code.open-bio.org/svnweb/index.cgi/bioperl/view/bioperl-live/trunk/scripts/Bio-DB-GFF/genbank2gff3.PLS"
   class="external text" rel="nofollow"><code>genbank2gff3</code></a>
-  script from [BioPerl](BioPerl "BioPerl") (Important: use a version of
+  script from [BioPerl](/wiki/BioPerl) (Important: use a version of
   the script created April 2007 or later)
 - Run `gmod_bulk_load_gff3.pl` script (from GMOD)
-- View genome(s) with [GBrowse](GBrowse.1 "GBrowse") (see an <a
+- View genome(s) with [GBrowse](/wiki/GBrowse.1) (see an <a
   href="http://server3.eugenes.org/cgi-bin/gmod01/gbrowse/dev_chado_ggb/"
   class="external text" rel="nofollow">example at eugenes.org</a>).
 
@@ -54,9 +54,9 @@ In summary, to load *Saccharomyces* chromosome X to Chado database
 ## Fetch Genbank Genome Files
 
 Genbank genome data is available from NCBI genomes section,
-<a href="ftp://ftp.ncbi.nih.gov/genomes" class="external free"
+<a href="/wiki/ftp://ftp.ncbi.nih.gov/genomes" class="external free"
 rel="nofollow">ftp://ftp.ncbi.nih.gov/genomes</a>, or from a current
-mirror at <a href="ftp://bio-mirror.net/biomirror/ncbigenomes/"
+mirror at <a href="/wiki/ftp://bio-mirror.net/biomirror/ncbigenomes/"
 class="external free"
 rel="nofollow">ftp://bio-mirror.net/biomirror/ncbigenomes/</a>
 
@@ -79,10 +79,10 @@ Other sample genomes of interest:
 
 ## Create GFF3 from the Genbank Files
 
-The [BioPerl](BioPerl "BioPerl") script `bp_genbank2gff3.pl`
+The [BioPerl](/wiki/BioPerl) script `bp_genbank2gff3.pl`
 (`scripts/Bio-DB-GFF/genbank2gff3.PLS`) will convert to
-[GFF3](GFF3 "GFF3") suited to
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> loading.
+[GFF3](/wiki/GFF3) suited to
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> loading.
 **Important**: use a version of the script created April 2007 or later.
 
 The new `-noCDS` flag is required for this. Use `-s` flag to summarize
@@ -132,12 +132,12 @@ or
      set GMOD_ROOT=/usr/local/gmod/ # bash
 
 
-**Your [GFF3](GFF3 "GFF3") file uses a tag called \<term\>, but this
+**Your [GFF3](/wiki/GFF3) file uses a tag called \<term\>, but this
 term is not already in the cvterm and dbxref tables so that its value
 can be inserted into the featureprop table**
 
 Solution: This error message will be followed by
-[SQL](Glossary#SQL "Glossary") statements that insert the term in the
+[SQL](/wiki/Glossary#SQL) statements that insert the term in the
 correct way - execute them. By the way, one explanation for this error
 is that the source sequence was curated but not with terms from the
 <a href="http://sequenceontology.org" class="external text"
@@ -150,11 +150,11 @@ constraint "featureprop_c1"**
 
 Solution: The CONTEXT line above is telling you what the offending data
 is. This error probably means that there are 2 features sharing the same
-name or ID and feature type in the [GFF3](GFF3 "GFF3") file. Correct
+name or ID and feature type in the [GFF3](/wiki/GFF3) file. Correct
 these errors by hand and reload.
 
 ## Authors
 
-- [Don Gilbert](User%253ADongilbert "User%253ADongilbert")
+- [Don Gilbert](/wiki/User%253ADongilbert)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

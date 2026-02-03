@@ -26,7 +26,7 @@ title: "Talk:GMOD REST Hackathon"
 - Jim
 
 Additional documentation/discussion at
-[GMOD_RPC_API/PHP](GMOD_RPC_API/PHP "GMOD RPC API/PHP")
+[GMOD_RPC_API/PHP](/wiki/GMOD_RPC_API/PHP)
 
 ## Perl
 

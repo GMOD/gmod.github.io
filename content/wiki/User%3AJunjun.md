@@ -9,7 +9,7 @@ alt="Junjun.jpg" />
 
 #### Junjun Zhang
 
-[BioMart](BioMart "BioMart") developer, Informatics and Biocomputing,
+[BioMart](/wiki/BioMart) developer, Informatics and Biocomputing,
 Ontario Institute for Cancer Research
 (<a href="http://www.oicr.on.ca" class="external text"
 rel="nofollow">OICR</a>).

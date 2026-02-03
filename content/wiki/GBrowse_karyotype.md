@@ -13,7 +13,7 @@ demo installation</a>
 
 ## Note on installation
 
-- GBrowse_karyotype is not part of the [GBrowse](GBrowse.1 "GBrowse")
+- GBrowse_karyotype is not part of the [GBrowse](/wiki/GBrowse.1)
   distribution
 - It should be
   <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/GBrowse_karyotype"
@@ -23,7 +23,7 @@ demo installation</a>
   class="external text" rel="nofollow">here</a>.
 - Install as you would GBrowse, **after** you have installed GBrowse
   1.69, or 1.68, or a
-  <a href="SVN" class="mw-redirect" title="SVN">SVN</a> checkout of the
+  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> checkout of the
   'stable' branch
     cd GBrowse_karyotype
     perl MakeFile.PL
@@ -32,6 +32,6 @@ demo installation</a>
 ## Cytoband Data
 
 [Follow this
-link](GBrowse_karyotype_ideogram.pl "GBrowse karyotype ideogram.pl") for
+link](/wiki/GBrowse_karyotype_ideogram.pl) for
 an example of a Perl script that will download and format cytband data
 from EnsEMBL

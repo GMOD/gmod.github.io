@@ -52,7 +52,7 @@ title: "Chado Cell Line Module"
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -81,7 +81,7 @@ title: "Chado Cell Line Module"
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Organism_Module#Table:_organism"
+<td><a href="/wiki/Chado_Organism_Module#Table:_organism"
 title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -113,23 +113,23 @@ title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
 **`cell_line`** columns
 
 Tables referencing **`cell_line`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`cell_line_cvterm`**](Chado_Cell_Line_Module#Table:_cell_line_cvterm "Chado Cell Line Module")
-- [**`cell_line_dbxref`**](Chado_Cell_Line_Module#Table:_cell_line_dbxref "Chado Cell Line Module")
-- [**`cell_line_feature`**](Chado_Cell_Line_Module#Table:_cell_line_feature "Chado Cell Line Module")
-- [**`cell_line_library`**](Chado_Cell_Line_Module#Table:_cell_line_library "Chado Cell Line Module")
-- [**`cell_line_pub`**](Chado_Cell_Line_Module#Table:_cell_line_pub "Chado Cell Line Module")
-- [**`cell_line_relationship`**](Chado_Cell_Line_Module#Table:_cell_line_relationship "Chado Cell Line Module")
-- [**`cell_line_synonym`**](Chado_Cell_Line_Module#Table:_cell_line_synonym "Chado Cell Line Module")
-- [**`cell_lineprop`**](Chado_Cell_Line_Module#Table:_cell_lineprop "Chado Cell Line Module")
+- [**`cell_line_cvterm`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_cvterm)
+- [**`cell_line_dbxref`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_dbxref)
+- [**`cell_line_feature`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_feature)
+- [**`cell_line_library`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_library)
+- [**`cell_line_pub`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_pub)
+- [**`cell_line_relationship`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_relationship)
+- [**`cell_line_synonym`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_synonym)
+- [**`cell_lineprop`**](/wiki/Chado_Cell_Line_Module#Table:_cell_lineprop)
 
 \</protect\>
 
 **`cell_line`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_relationship`**
@@ -153,7 +153,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -168,7 +168,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>subject_id</td>
 <td>integer</td>
@@ -177,7 +177,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>object_id</td>
 <td>integer</td>
@@ -186,7 +186,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>type_id</td>
 <td>integer</td>
@@ -202,14 +202,14 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`cell_line_relationship`** columns
 
 Tables referencing **`cell_line_relationship`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_relationship`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_synonym`**
@@ -233,7 +233,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -248,7 +248,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -257,7 +257,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Sequence_Module#Table:_synonym"
+<td><a href="/wiki/Chado_Sequence_Module#Table:_synonym"
 title="Chado Sequence Module"><strong><code>synonym</code></strong></a></td>
 <td>synonym_id</td>
 <td>integer</td>
@@ -266,7 +266,7 @@ title="Chado Sequence Module"><strong><code>synonym</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -298,14 +298,14 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_line_synonym`** columns
 
 Tables referencing **`cell_line_synonym`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_synonym`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_cvterm`**
@@ -329,7 +329,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -344,7 +344,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -353,7 +353,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -362,7 +362,7 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -386,16 +386,16 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_line_cvterm`** columns
 
 Tables referencing **`cell_line_cvterm`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`cell_line_cvtermprop`**](Chado_Cell_Line_Module#Table:_cell_line_cvtermprop "Chado Cell Line Module")
+- [**`cell_line_cvtermprop`**](/wiki/Chado_Cell_Line_Module#Table:_cell_line_cvtermprop)
 
 \</protect\>
 
 **`cell_line_cvterm`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_dbxref`**
@@ -419,7 +419,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -434,7 +434,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -443,7 +443,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_General_Module#Table:_dbxref"
+<td><a href="/wiki/Chado_General_Module#Table:_dbxref"
 title="Chado General Module"><strong><code>dbxref</code></strong></a></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -467,14 +467,14 @@ title="Chado General Module"><strong><code>dbxref</code></strong></a></td>
 **`cell_line_dbxref`** columns
 
 Tables referencing **`cell_line_dbxref`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_dbxref`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_lineprop`**
@@ -497,7 +497,7 @@ as part of the next Chado release.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -512,7 +512,7 @@ as part of the next Chado release.
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -521,7 +521,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>type_id</td>
 <td>integer</td>
@@ -551,16 +551,16 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`cell_lineprop`** columns
 
 Tables referencing **`cell_lineprop`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`cell_lineprop_pub`**](Chado_Cell_Line_Module#Table:_cell_lineprop_pub "Chado Cell Line Module")
+- [**`cell_lineprop_pub`**](/wiki/Chado_Cell_Line_Module#Table:_cell_lineprop_pub)
 
 \</protect\>
 
 **`cell_lineprop`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_lineprop_pub`**
@@ -584,7 +584,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -599,7 +599,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_lineprop"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_lineprop"
 title="Chado Cell Line Module"><strong><code>cell_lineprop</code></strong></a></td>
 <td>cell_lineprop_id</td>
 <td>integer</td>
@@ -608,7 +608,7 @@ title="Chado Cell Line Module"><strong><code>cell_lineprop</code></strong></a></
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -624,14 +624,14 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_lineprop_pub`** columns
 
 Tables referencing **`cell_lineprop_pub`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_lineprop_pub`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_feature`**
@@ -655,7 +655,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -670,7 +670,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -679,7 +679,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Sequence_Module#Table:_feature"
+<td><a href="/wiki/Chado_Sequence_Module#Table:_feature"
 title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
 <td>feature_id</td>
 <td>integer</td>
@@ -688,7 +688,7 @@ title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -704,14 +704,14 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_line_feature`** columns
 
 Tables referencing **`cell_line_feature`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_feature`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_cvtermprop`**
@@ -735,7 +735,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -750,7 +750,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line_cvterm"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line_cvterm"
 title="Chado Cell Line Module"><strong><code>cell_line_cvterm</code></strong></a></td>
 <td>cell_line_cvterm_id</td>
 <td>integer</td>
@@ -759,7 +759,7 @@ title="Chado Cell Line Module"><strong><code>cell_line_cvterm</code></strong></a
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>type_id</td>
 <td>integer</td>
@@ -789,14 +789,14 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`cell_line_cvtermprop`** columns
 
 Tables referencing **`cell_line_cvtermprop`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_cvtermprop`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_pub`**
@@ -819,7 +819,7 @@ as part of the next Chado release.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -834,7 +834,7 @@ as part of the next Chado release.
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -843,7 +843,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -859,14 +859,14 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_line_pub`** columns
 
 Tables referencing **`cell_line_pub`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_pub`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.
 
 ## Table: **`cell_line_library`**
@@ -890,7 +890,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -905,7 +905,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Cell_Line_Module#Table:_cell_line"
+<td><a href="/wiki/Chado_Cell_Line_Module#Table:_cell_line"
 title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 <td>cell_line_id</td>
 <td>integer</td>
@@ -914,7 +914,7 @@ title="Chado Cell Line Module"><strong><code>cell_line</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Library_Module#Table:_library"
+<td><a href="/wiki/Chado_Library_Module#Table:_library"
 title="Chado Library Module"><strong><code>library</code></strong></a></td>
 <td>library_id</td>
 <td>integer</td>
@@ -923,7 +923,7 @@ title="Chado Library Module"><strong><code>library</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -939,12 +939,12 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`cell_line_library`** columns
 
 Tables referencing **`cell_line_library`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 **`cell_line_library`** **Additional Comments:**
 
 Add your comments here and they will be integrated into the [schema
-documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+documentation](/wiki/Chado_Schema_Documentation_HOWTO)
 as part of the next Chado release.

@@ -44,12 +44,12 @@ width="40" height="39" alt="} is open source" /></a>
 
 Resources
 
-- [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
+- [Webapollo](/wiki/Category%253AWebapollo)
+- [AJAX](/wiki/Category%253AAJAX)
 - [Community
-  Annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
+  Annotation](/wiki/Category%253ACommunity_Annotation)
+- [Annotation](/wiki/Category%253AAnnotation)
+- [GMOD Components](/wiki/Category%253AGMOD_Components)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
@@ -62,18 +62,18 @@ Resources
 <tbody>
 
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253AInteracts_with"
+<td class="smwpropname"><a href="/wiki/Property%253AInteracts_with"
 title="Property:Interacts with">Interacts with</a></td>
-<td class="smwprops"><a href="MAKER.1" title="MAKER">MAKER</a>  and
-<a href="JBrowse.1" title="JBrowse">JBrowse</a> </td>
+<td class="smwprops"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a>  and
+<a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253AIs_open_source"
+<td class="smwpropname"><a href="/wiki/Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
 <td class="smwprops">Yes </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253ALink_type"
+<td class="smwpropname"><a href="/wiki/Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
 <td class="smwprops">website ,
 source code ,
@@ -81,49 +81,44 @@ demo server
 and download </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253ARelease_date"
+<td class="smwpropname"><a href="/wiki/Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
 <td class="smwprops">2012 </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a
-href="Property%253ATool_functionality_or_classification"
+<td class="smwpropname"><a href="/wiki/Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">Community annotation
 and Sequence annotation </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253AWritten_in_language"
+<td class="smwpropname"><a href="/wiki/Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
 <td class="smwprops">Javascript
 and Java </td>
 </tr>
 <tr class="even row-even">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
-data-state="inline" data-title="Property"><span class="smwbuiltin"><a
-href="Property%253AHas_subobject" title="Property:Has subobject">Has
+data-state="inline" data-title="Property"><span class="smwbuiltin"><a href="/wiki/Property%253AHas_subobject" title="Property:Has subobject">Has
 subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
-<td class="smwspecs"><a
-href="WebApollo.1#http:.2F.2Fgenomearchitect.org"
+<td class="smwspecs"><a href="/wiki/WebApollo.1#http:.2F.2Fgenomearchitect.org"
 title="WebApollo">WebApollo#http://genomearchitect.org</a> ,
-<a href="WebApollo.1#https:.2F.2Fgithub.com.2Fgmod.2Fapollo"
+<a href="/wiki/WebApollo.1#https:.2F.2Fgithub.com.2Fgmod.2Fapollo"
 title="WebApollo">WebApollo#https://github.com/gmod/apollo</a> ,
-<a href="WebApollo.1#http:.2F.2Fcode.google.com.2Fp.2Fgenomancer"
+<a href="/wiki/WebApollo.1#http:.2F.2Fcode.google.com.2Fp.2Fgenomancer"
 title="WebApollo">WebApollo#http://code.google.com/p/genomancer</a>
 ,
-<a
-href="WebApollo.1#http:.2F.2Fgenomearchitect.org:8080.2FWebApolloDemo.2F"
+<a href="/wiki/WebApollo.1#http:.2F.2Fgenomearchitect.org:8080.2FWebApolloDemo.2F"
 title="WebApollo">WebApollo#http://genomearchitect.org:8080/WebApolloDemo/</a>
 ,
-<a
-href="WebApollo.1#http:.2F.2Fgenomearchitect.org.2Fwebapollo.2Freleases.2F"
+<a href="/wiki/WebApollo.1#http:.2F.2Fgenomearchitect.org.2Fwebapollo.2Freleases.2F"
 title="WebApollo">WebApollo#http://genomearchitect.org/webapollo/releases/</a>
 ,
-<a href="WebApollo.1#_0d2bc0e8d059cba6cefd439a084fc7c8"
+<a href="/wiki/WebApollo.1#_0d2bc0e8d059cba6cefd439a084fc7c8"
 title="WebApollo">WebApollo</a>
-and <a href="WebApollo.1#_e25e09b3c3c15a82835f7fa1b510fe42"
+and <a href="/wiki/WebApollo.1#_e25e09b3c3c15a82835f7fa1b510fe42"
 title="WebApollo">WebApollo</a> </td>
 </tr>
 </tbody>

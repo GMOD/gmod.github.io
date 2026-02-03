@@ -26,11 +26,11 @@ height="75" alt="InsectaCentral" /></a>
 The <a href="http://insectacentral.org" class="external text"
 rel="nofollow">InsectaCentral</a> database is a unique insect
 transcriptome database built by GMOD components. The database schema is
-driven by <a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
+driven by <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 <a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> and
-the [Drupal](Drupal "Drupal") modules of
-<a href="GMOD-DBSF" class="mw-redirect" title="GMOD-DBSF">GMOD-DBSF</a>.
+the [Drupal](/wiki/Drupal) modules of
+<a href="/wiki/GMOD-DBSF" class="mw-redirect" title="GMOD-DBSF">GMOD-DBSF</a>.
 The software developed for this project aim to be species neutral and
 when released anyone can make a *Central* database.
 
@@ -39,7 +39,7 @@ when released anyone can make a *Central* database.
 InsectaCentral is a central repository of Insect transcriptomes,
 produced using traditional capillary (Sanger) sequencing or 454 Next
 Generation pyrosequencing
-(<a href="NGS" class="mw-redirect" title="NGS">NGS</a>). Our aim is to
+(<a href="/wiki/NGS" class="mw-redirect" title="NGS">NGS</a>). Our aim is to
 allow the thousands of researchers working on species without a huge
 Genome Consortium and rolling database funding to make use of their own
 and the community's data in a streamlined, efficient and standardized
@@ -89,7 +89,7 @@ The current public release is: **beta**
 
 ## Wishlist
 
-- [GBrowse](GBrowse.1 "GBrowse") 2.x
+- [GBrowse](/wiki/GBrowse.1) 2.x
 - Head curator to supervise community gene models
 
 # Software
@@ -124,7 +124,7 @@ The current public release is: **beta**
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](User%253AAlpapan "User%253AAlpapan") while at CSIRO, the
+Papanicolaou](/wiki/User%253AAlpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
 rel="nofollow">http://www.csiro.au</a>).

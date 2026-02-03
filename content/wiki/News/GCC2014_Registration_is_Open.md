@@ -98,4 +98,4 @@ class="external text" rel="nofollow">GCC2014 Organizing Committee</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/14*
+*Posted to the [GMOD News](../GMOD_News) on 2014/02/14*

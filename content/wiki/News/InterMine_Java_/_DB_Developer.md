@@ -12,9 +12,9 @@ width="180" height="23" alt="InterMine Java Developer" /></a>
 We are
 <a href="http://www.intermine.org/wiki/NowHiring" class="external text"
 rel="nofollow">looking for a software developer</a> to work with Java
-and [PostgreSQL](../../PostgreSQL "PostgreSQL") as part of the Wellcome
-Trust funded [InterMine](../../InterMine "InterMine") project here in
-the Department of Genetics. [InterMine](../../InterMine "InterMine") is
+and [PostgreSQL](../../PostgreSQL) as part of the Wellcome
+Trust funded [InterMine](../../InterMine) project here in
+the Department of Genetics. [InterMine](../../InterMine) is
 an open source software system for building data warehouses of
 biological data. It can integrate data from many different formats into
 a central database and makes the data available to query via a flexible
@@ -33,11 +33,11 @@ See the
 rel="nofollow">position announcement</a> for full details. The closing
 date for applications is 24 September 2010.
 
-[Richard Smith](../../User%253ARsmith "User%253ARsmith")
+[Richard Smith](../../User%253ARsmith)
 
 
 
-*Posted to the [GMOD News](../../GMOD_News "GMOD News") on 2010/09/16*
+*Posted to the [GMOD News](../../GMOD_News) on 2010/09/16*
 
 
-- [News Items](../../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../../Category%253ANews_Items)

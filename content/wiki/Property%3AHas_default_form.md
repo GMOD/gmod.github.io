@@ -30,16 +30,16 @@ this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="Category%253AGMOD_Component"
+<td class="smwpropname"><a href="/wiki/Category%253AGMOD_Component"
 title="Category%253AGMOD Component">GMOD Component</a> <span
 class="smwbrowse"></span></td>
-<td class="smwprops"><a href="Form%253ATool_data"
+<td class="smwprops"><a href="/wiki/Form%253ATool_data"
 title="Form:Tool data">Tool data</a>  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Category%253AGMOD_Tools"
+<td class="smwpropname"><a href="/wiki/Category%253AGMOD_Tools"
 title="Category%253AGMOD Tools">GMOD Tools</a> <span class="smwbrowse"></span></td>
-<td class="smwprops"><a href="Form%253AComponent_information"
+<td class="smwprops"><a href="/wiki/Form%253AComponent_information"
 title="Form:Component information">Component information</a>  </td>
 </tr>
 </tbody>

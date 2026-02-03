@@ -21,11 +21,11 @@ Robin Haw Manager of Reactome Outreach Outreach \[at\] reactome.org
 <a href="http://www.reactome.org" class="external free"
 rel="nofollow">http://www.reactome.org</a>
 
-Posted by [Scott Cain](../User%253AScott "User%253AScott")
+Posted by [Scott Cain](../User%253AScott)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/28*
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/28*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -3,9 +3,9 @@ title: "Chado Best Practices"
 ---
 # Chado Best Practices
 
-Chado is a generic [schema](Glossary#Database_Schema "Glossary"), which
+Chado is a generic [schema](/wiki/Glossary#Database_Schema), which
 means anyone writing software to query or write to chado (either
-[middleware](GMOD_Middleware "GMOD Middleware") or applications) should
+[middleware](/wiki/GMOD_Middleware) or applications) should
 be aware of the different ways in which data can be stored. We want to
 strike a nice balance between ﬂexibility and extensibility on the one
 hand, and strong typing and rigor on the other. We want to avoid the
@@ -19,13 +19,13 @@ familiar with its theoretical underpinnings.
 See also:
 
 - [Chado Sequence
-  Module](Chado_Sequence_Module "Chado Sequence Module") - description
+  Module](/wiki/Chado_Sequence_Module) - description
   of many of the terms used here
 - [Introduction to
-  Chado](Introduction_to_Chado "Introduction to Chado") - useful
+  Chado](/wiki/Introduction_to_Chado) - useful
   visualizations of some of the models described here
 - [IGS Data
-  Representation](IGS_Data_Representation "IGS Data Representation") -
+  Representation](/wiki/IGS_Data_Representation) -
   further discussion on these conventions and how they were implemented
   at IGS (for comparison)
 
@@ -160,7 +160,7 @@ This scenario involves rows in the following tables:
 Sample query: retrieve a gene, "Dredd", along with its transcripts,
 proteins and exons. Since this is a "canonical gene" we can assume that
 its [feature
-graph](Introduction_to_Chado#Feature_Graphs "Introduction to Chado") has
+graph](/wiki/Introduction_to_Chado#Feature_Graphs) has
 3 levels. If we follow this assumption:
 
 ```de1
@@ -181,8 +181,8 @@ This query should fetch a 3-deep graph rooted at "Dredd".
 
 ##### Application Support
 
-- Supported by [Apollo](Apollo.1 "Apollo")
-- Supported by [GBrowse](GBrowse.1 "GBrowse")
+- Supported by [Apollo](/wiki/Apollo.1)
+- Supported by [GBrowse](/wiki/GBrowse.1)
 
 #### Noncoding Genes
 
@@ -197,8 +197,8 @@ model](#Canonical_Gene_Model), with the following exceptions:
 
 ##### Application Support
 
-- Supported by [Apollo](Apollo.1 "Apollo")
-- Supported by [GBrowse](GBrowse.1 "GBrowse")
+- Supported by [Apollo](/wiki/Apollo.1)
+- Supported by [GBrowse](/wiki/GBrowse.1)
 
 #### Pseudogene
 
@@ -227,7 +227,7 @@ no-one is using Chado to do this. There are currently two practices:
 
 ##### Application Support
 
-- [Apollo](Apollo.1 "Apollo"): status is unclear.
+- [Apollo](/wiki/Apollo.1): status is unclear.
 
 Apollo by default treats pseudogenes using the first method, above. It
 may also be possible to configure it to the second, singleton, method.
@@ -249,8 +249,8 @@ not be supported by all applications)
 
 ##### Application Support
 
-- Supported by [Apollo](Apollo.1 "Apollo")
-- Supported by [GBrowse](GBrowse.1 "GBrowse")
+- Supported by [Apollo](/wiki/Apollo.1)
+- Supported by [GBrowse](/wiki/GBrowse.1)
 
 Apollo supports singletons provided they are located relative to the
 genome (singletons located relative to other features will be ignored).
@@ -287,7 +287,7 @@ data-align="right" width="200px">
 all of prokaryotic molecular biology to being outside the realm of
 biologists who use the term "gene". Note that although the test refers
 to two proposals, they are not linked/or described. What the heck are
-they?!!! <a href="User%253AJimHu.1" title="User%253AJimHu">JimHu</a> 13:33, 10
+they?!!! <a href="/wiki/User%253AJimHu.1" title="User%253AJimHu">JimHu</a> 13:33, 10
 April 2007 (EDT)</p></td>
 </tr>
 </tbody>
@@ -348,8 +348,8 @@ to be adopted.
 
 ##### Application Support
 
-- [Apollo](Apollo.1 "Apollo"): status unclear.
-- [GBrowse](GBrowse.1 "GBrowse"): status unclear.
+- [Apollo](/wiki/Apollo.1): status unclear.
+- [GBrowse](/wiki/GBrowse.1): status unclear.
 
 #### xxx Gene with Regulatory Elements
 
@@ -406,8 +406,8 @@ by adding transcript and exon features.
 
 ##### Application Support
 
-- [GBrowse](GBrowse.1 "GBrowse"): supported.
-- [Apollo](Apollo.1 "Apollo"): supported.
+- [GBrowse](/wiki/GBrowse.1): supported.
+- [Apollo](/wiki/Apollo.1): supported.
 
 GBrowse supports this scenario in that unlocalized features will be
 ignored from the genome viewer, which is appropriate.
@@ -428,10 +428,10 @@ distinct subfeatures (e.g. a transcript composes of exons), then it is
 there must be rows for the subfeatures, each with their own featureloc.
 
 In a feature graph (i.e. a group of features connected _via_
-[feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
+[feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
 rows, all features will typically be localized relative to the same
 source feature (i.e. they will all have the same value for
-[featureloc.srcfeature_id](Chado_Tables#Table:_featureloc "Chado Tables")).
+[featureloc.srcfeature_id](/wiki/Chado_Tables#Table:_featureloc)).
 
 Features are typically localized to some kind of genomic or assembly
 feature, but chado does not constrain you to using only this. For
@@ -464,8 +464,8 @@ top-level units and back.
 
 ##### Application Support
 
-- [Apollo](Apollo.1 "Apollo"): status unclear.
-- [GBrowse](GBrowse.1 "GBrowse"): status unclear.
+- [Apollo](/wiki/Apollo.1): status unclear.
+- [GBrowse](/wiki/GBrowse.1): status unclear.
 
 Apollo should be happy to treat contigs just as if they were top-level
 units as chromosome arms. However, the user may have to explicitly
@@ -496,8 +496,8 @@ circumstances
 
 ##### Application Support
 
-- [GBrowse](GBrowse.1 "GBrowse"): status unclear.
-- [GBrowse](GBrowse.1 "GBrowse"): status partial.
+- [GBrowse](/wiki/GBrowse.1): status unclear.
+- [GBrowse](/wiki/GBrowse.1): status partial.
 
 It is not clear if GBrowse uses _locgroup_ in querying. If it constrains
 by _locgroup_, then this is essentially the same as [feature
@@ -528,7 +528,7 @@ there is something useful to say about them. If one wants to instantiate
 these they would be represented as features, and the mature message
 would be related to the primary message with _derived_from_ as _type_id_
 in the
-[feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
+[feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
 table.
 
 ### xxx Genomic Rearrangements
@@ -569,7 +569,7 @@ still useful to have rank anyway - e.g. for multiple alignments).
 ### Single Nucleotide Polymorphisms (SNPs)
 
 This outlines one way of modeling SNPs in chado. it also illustrates use
-of the [featureloc](Chado_Tables#Table:_featureloc "Chado Tables")
+of the [featureloc](/wiki/Chado_Tables#Table:_featureloc)
 table.
 
 Most of this applies to other variation features, but we will illustrate
@@ -726,7 +726,7 @@ sequence can be reconstructed from the wild type proteins plus the
 corresponding mutation.
 
 Remember chado uses [interbase
-coordinates](Introduction_to_Chado#Interbase_Coordinates "Introduction to Chado"),
+coordinates](/wiki/Introduction_to_Chado#Interbase_Coordinates),
 and postgresql substring counts from 1.
 
 The following query dynamically constructs mutant feature residues based
@@ -789,43 +789,43 @@ pair with a distinct locgroup). All queries should work the same.
 #### Results from BLAST
 
 These steps will add a BLAST analysis to a Chado database.
-[Load_BLAST_Into_Chado](Load_BLAST_Into_Chado "Load BLAST Into Chado")
+[Load_BLAST_Into_Chado](/wiki/Load_BLAST_Into_Chado)
 provides a worked example of this using BioPerl and GMOD scripts,
 bp_search2gff.pl and gmod_bulk_load_gff3.pl
 
 - Create a record for the BLAST search itself is an entry in the
-  [analysis](Chado_Tables#Table:_analysis "Chado Tables") table.
+  [analysis](/wiki/Chado_Tables#Table:_analysis) table.
 - Create a feature for both the query and target sequences. If these
   have database accessions or identifiers then records in the
-  [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") table should be
+  [dbxref](/wiki/Chado_Tables#Table:_dbxref) table should be
   created for each.
   - Optionally include the residues of the features.
 - Store the hits in both the
-  [feature](Chado_Tables#Table:_feature "Chado Tables") and
-  [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
+  [feature](/wiki/Chado_Tables#Table:_feature) and
+  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
   tables, as well as in the
-  [featureloc](Chado_Tables#Table:_featureloc "Chado Tables") table,
+  [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
   where the featureloc entry for the query sequence has a
   featureloc.rank of 0 and the featureloc.rank of the target sequence
   is 1. The <a href="http://sequenceontology" class="external text"
   rel="nofollow">SO</a> term is _match_.
   - Note: _featureloc.locgroup_ is not used.
 - Store the HSPs in both the
-  [feature](Chado_Tables#Table:_feature "Chado Tables") and
-  [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
+  [feature](/wiki/Chado_Tables#Table:_feature) and
+  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
   tables, as well as in the
-  [featureloc](Chado_Tables#Table:_featureloc "Chado Tables") table,
+  [featureloc](/wiki/Chado_Tables#Table:_featureloc) table,
   where the featureloc entry for the query sequence has a
   featureloc.rank of 0 and the featureloc.rank of the target sequence
   is 1. The <a href="http://sequenceontology" class="external text"
   rel="nofollow">SO</a> term is _match_part_.
   - Note: _featureloc.locgroup_ is not used.
 - Map the hits and the HSPs to each other _via_ entries in the
-  [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
+  [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
   tables.
 - Standard scores (rawscore, normscore, significance, identity) are
   stored in the
-  [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
+  [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
   table. For BLAST searches those would correspond to bits, score,
   e-value and frac_identical.
 
@@ -851,16 +851,16 @@ and the SEQUENCE modules. The CV module can be used to store the GO
 Ontology. Details of the CV module can be found at CV module
 documentation. The actual GO annotation which is a association between
 Gene Product/Gene is stored in the [Feature_cvterm
-table](Chado_Tables#Table:_feature_cvterm "Chado Tables"). It is
+table](/wiki/Chado_Tables#Table:_feature_cvterm). It is
 recommended that the GO term should be associated with a Gene Product
 feature. But, it could be associated with Gene feature. The Evidence
 code and qualifier information are stored in the
-[Feature_cvtermprop](Chado_Tables#Table:_feature_cvtermprop "Chado Tables")
+[Feature_cvtermprop](/wiki/Chado_Tables#Table:_feature_cvtermprop)
 table.
-[Feature_cvterm_Dbxref](Chado_Tables#Table:_feature_cvterm_dbxref "Chado Tables")
+[Feature_cvterm_Dbxref](/wiki/Chado_Tables#Table:_feature_cvterm_dbxref)
 table should be used to store the external ids associated with the
 evidence code, and
-[Feature_cvterm_pub](Chado_Tables#Table:_feature_cvterm_pub "Chado Tables")
+[Feature_cvterm_pub](/wiki/Chado_Tables#Table:_feature_cvterm_pub)
 should link publications to annotations. For example evidence IEA with
 dictyBase:DDB0185051
 

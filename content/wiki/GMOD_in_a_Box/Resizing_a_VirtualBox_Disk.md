@@ -40,7 +40,7 @@ bit machine).
 Once you've downloaded the iso, shutdown the GMOD in a Box instance if
 it is running. Open the settings for the machine and attach the resized
 database file to the GMOD in a Box instance using the directions in the
-[GMOD in a Box/Updating](Updating "GMOD in a Box/Updating") page. Then,
+[GMOD in a Box/Updating](/wiki/Updating) page. Then,
 in the same Storage tab, right click on "Controller:IDE", select "Add
 CD/DVD Device", click the "Choose Disk" and then find the downloaded iso
 and click OK.
@@ -64,4 +64,4 @@ CD iso from the ISO controller.
 
 Now you can restart the GMOD in a Box instance and continue with
 mounting the new data drive as described in the [GMOD in a
-Box/Updating](Updating "GMOD in a Box/Updating") page.
+Box/Updating](/wiki/Updating) page.

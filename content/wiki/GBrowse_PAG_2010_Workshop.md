@@ -34,7 +34,7 @@ This page provides additional information about the
 class="external text" rel="nofollow">GBrowse workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
-2010](PAG_2010 "PAG 2010")) held in San Diego on January 9-13, 2009.
+2010](/wiki/PAG_2010)) held in San Diego on January 9-13, 2009.
 
 
 
@@ -58,7 +58,7 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
 ## Overview
 
 This will be a hands-on tutorial on how to install and use the
-[GBrowse](GBrowse.1 "GBrowse") genome browser.
+[GBrowse](/wiki/GBrowse.1) genome browser.
 
 ## Tutorial Level
 
@@ -67,14 +67,14 @@ simple system administration tasks like stopping and starting services.
 
 ## Intended Audience
 
-[GBrowse](GBrowse.1 "GBrowse") is sufficiently easy to install that a
+[GBrowse](/wiki/GBrowse.1) is sufficiently easy to install that a
 biologist can easily set up and configure a GBrowse server after the
 initial hurdles of learning about configuration options and file formats
 are overcome. This class is intended to help them over those hurdles.
 
 ## Prerequisite Software and Conference PCs
 
-Prerequisite software for [GBrowse](GBrowse.1 "GBrowse") will be
+Prerequisite software for [GBrowse](/wiki/GBrowse.1) will be
 pre-installed on the conference PCs in the classroom area of the
 California Room. Participants using these PCs will be able to setup and
 configure GBrowse during the workshop.
@@ -100,28 +100,28 @@ material presented at this workshop.
 - Displaying DNA and 3-frame translations
 - Features added in latest release, including draggable and collapsible
   tracks, and [popup
-  balloons](GBrowse_Popup_Balloons "GBrowse Popup Balloons")
+  balloons](/wiki/GBrowse_Popup_Balloons)
 
 ## Workshop Instructor
 
-- [Scott Cain](User%253AScott "User%253AScott"), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
 
 ## Other GMOD Presentations and Meetings
 
-GMOD will have a [strong presence](PAG_2010 "PAG 2010") at PAG 2010,
+GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A
-  [workshop](GBrowse_syn_PAG_2010_Workshop "GBrowse syn PAG 2010 Workshop")
-  on [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), a comparative genomics
-  viewer built on [GBrowse](GBrowse.1 "GBrowse")
-- A [workshop](MAKER_PAG_2010_Workshop "MAKER PAG 2010 Workshop") on
-  [MAKER](MAKER.1 "MAKER"), a genome annotation pipeline.
+  [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
+  on [GBrowse_syn](/wiki/GBrowse_syn.1), a comparative genomics
+  viewer built on [GBrowse](/wiki/GBrowse.1)
+- A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
+  [MAKER](/wiki/MAKER.1), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](CMap.1 "CMap") comparative map viewer.
+  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
 
-See [PAG 2010](PAG_2010 "PAG 2010") for a more complete list of
+See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

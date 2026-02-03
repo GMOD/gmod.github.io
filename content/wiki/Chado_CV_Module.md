@@ -131,13 +131,13 @@ subject as the child node, and the object as the parent node.
 
 This module is used by most of the Chado modules. But it is useful to
 describe here how this module would be used in the context of the
-[sequence module](Chado_Sequence_Module "Chado Sequence Module").
+[sequence module](/wiki/Chado_Sequence_Module).
 
 Often we want to attach cvterms to features. One example is typing
 features with SO - this is central to the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module"). Each feature has
+module](/wiki/Chado_Sequence_Module). Each feature has
 one primary type, stored in
-[feature.type_id](Chado_Tables#Table:_feature "Chado Tables").
+[feature.type_id](/wiki/Chado_Tables#Table:_feature).
 
 We can also attach an arbitrary number of non-primary cvterms to a
 feature.
@@ -145,7 +145,7 @@ feature.
 For example, we may want to attach GO annotations to gene or protein
 features. We may also want to attach phenotypic terms to gene features
 (although the preferred way to do this is _via_ a genotype using the
-[genetics module](Chado_Genetic_Module "Chado Genetic Module")).
+[genetics module](/wiki/Chado_Genetic_Module)).
 
 ## Complex annotations
 
@@ -167,7 +167,7 @@ class="external text"
 rel="nofollow"><code>modules/cv/cv-intro.txt</code></a> , which was
 incomplete** (and no longer exists).
 
-The [sequence module](Chado_Sequence_Module "Chado Sequence Module")
+The [sequence module](/wiki/Chado_Sequence_Module)
 makes extensive use of terms taken from various ontologies such as
 <a href="http://song.sourceforge.net/" class="external text"
 rel="nofollow">SO</a> and the
@@ -175,7 +175,7 @@ rel="nofollow">SO</a> and the
 rel="nofollow">OBO</a> Relations Ontology, using the _type_id_ foreign
 key column. In addition, features can be annotated using ontologies such
 as GO using the
-[feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
+[feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm)
 linking table. These terms are modelled using the cv module, the core of
 which is the [cvterm](#Table:_cvterm) table.
 
@@ -191,7 +191,7 @@ stored in the [cvterm](#Table:_cvterm) table, and relationships between
 terms are stored in the
 [cvterm_relationship](#Table:_cvterm_relationship) table. This table
 follows an analogous structure to the
-[feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
+[feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
 table, in that it has columns _subject_id_, _object_id_ and _type_id_.
 Here, all three of these foreign keys refer to rows in the
 [cvterm](#Table:_cvterm) table.
@@ -202,7 +202,7 @@ class="external text" rel="nofollow">found here</a>. Of particular
 interest to Chado is the _is_a_ relation, which specifies a sub-typing
 relationship between two terms or classes. Recall that tables in the
 sequence module frequently (such as the [feature
-table](Chado_Tables#Table:_feature "Chado Tables")) defined a _type_id_
+table](/wiki/Chado_Tables#Table:_feature)) defined a _type_id_
 foreign key column to indicate the specific type or class of entity for
 each row in that table. The combination of the _type_id_ column and the
 _is_a_ relationship gives Chado a data sub-classing system, beyond what
@@ -211,7 +211,7 @@ is possible with traditional SQL database semantics.
 This is discussed further below. The collection of cvterms and
 cvterm_relationships can be considered to constitute vertices and edges
 in a graph. This graph is typically acyclic (a
-[DAG](Glossary#DAG "Glossary")), though it is not guaranteed to be as
+[DAG](/wiki/Glossary#DAG)), though it is not guaranteed to be as
 certain relationship types are allowed to form cycles.
 
 | SO Term | SO id | ------- | ----- | exon    | <a    |
@@ -287,7 +287,7 @@ _develop_from_ a glioblast.
 ### Difference between Deductive Closure and Transitive Closure
 
 With a transitive closure we simply follow all links in the
-[DAG](Glossary#DAG "Glossary"), ignoring the relationship type. This
+[DAG](/wiki/Glossary#DAG), ignoring the relationship type. This
 works fine for ontologies such as GO that have only _is_a_ and
 _part_of_, but is not ideal for other ontologies such as anatomical
 ontologies.
@@ -447,8 +447,8 @@ class="external text" rel="nofollow">Converting OBO to OWL</a>.
 
 ### Logical definitions
 
-In a normal ontology [DAG](Glossary#DAG "Glossary") representation in
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, the
+In a normal ontology [DAG](/wiki/Glossary#DAG) representation in
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, the
 [cvterm_relationship](#Table:_cvterm_relationship) rows represent
 relationships between terms, or more formally, **necessary conditions**.
 A logical definition must have both **necessary and sufficient
@@ -571,11 +571,11 @@ class="external text" rel="nofollow">bbop-experimental SVN branch</a> of
 chado, names and dbxrefs are nullable, so these can be omitted. With the
 current schema, you must provide fake dbxrefs and names that are unique,
 such as the above (if you are not familiar with how [Chado
-XML](Chado_XML "Chado XML") maps to the Chado schema, see the
+XML](/wiki/Chado_XML) maps to the Chado schema, see the
 explanation below).
 
 If you wish to convert OBO-specified logical definitions to [Chado
-XML](Chado_XML "Chado XML") you will need
+XML](/wiki/Chado_XML) you will need
 <a href="http://www.godatabase.org/dev/pod/go-perl.html"
 class="external text" rel="nofollow">go-perl</a>, v0.05 or higher (if
 you have a lower version, the _intersection_of_ tags will simply be
@@ -586,7 +586,7 @@ ignored).
 ### How Logical Definitions are Stored in Chado
 
 This involves no schema changes to the cv module. Each _intersection_of_
-goes in as a [DAG](Glossary#DAG "Glossary") arc of type
+goes in as a [DAG](/wiki/Glossary#DAG) arc of type
 _internal:intersection_of_. The _object_id_ in the arc is either a term
 (for the genus) or an anonymous term representing a restriction (the
 differentium). The restriction has a relationship of some type to
@@ -627,7 +627,7 @@ represents the class of things that happen during the larval stage.
 Two views: _cvterm_genus_ and _cvterm_differentium_ views are in
 chado/modules/cv/views.
 
-### Example Use Case: [Phenotypes](Category%253APhenotypes "Category%253APhenotypes")
+### Example Use Case: [Phenotypes](/wiki/Category%253APhenotypes)
 
 The idea here is that queries for composed term "syndactyly" should
 automatically return the same results as a boolean query for "fusion" +
@@ -732,7 +732,7 @@ definition as above.
   </cvterm_relationship>
 ```
 
-The above assumes [XORT](XORT.1 "XORT") macro IDs defined for
+The above assumes [XORT](/wiki/XORT.1) macro IDs defined for
 _GO\_\_plasma_membrane_ and _CL\_\_spermatocyte_.
 
 Allow post-coordinated terms places a greater burden on applications
@@ -795,8 +795,8 @@ cv Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")
-- [cvtermpath](Chado_Tables#Table:_cvtermpath "Chado Tables")
+- [cvterm](/wiki/Chado_Tables#Table:_cvterm)
+- [cvtermpath](/wiki/Chado_Tables#Table:_cvtermpath)
 
 ---
 
@@ -831,7 +831,7 @@ cvterms and cvterm_relationships.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cv"
+<td><p><a href="/wiki/Chado_Tables#Table:_cv"
 title="Chado Tables">cv</a></p></td>
 <td>cv_id</td>
 <td>integer</td>
@@ -857,7 +857,7 @@ identifies a cvterm within a cv.</td>
 A human-readable text definition.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -897,70 +897,70 @@ cvterm Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [acquisition_relationship](Chado_Tables#Table:_acquisition_relationship "Chado Tables")
-- [acquisitionprop](Chado_Tables#Table:_acquisitionprop "Chado Tables")
-- [analysisprop](Chado_Tables#Table:_analysisprop "Chado Tables")
-- [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-- [arraydesignprop](Chado_Tables#Table:_arraydesignprop "Chado Tables")
-- [assayprop](Chado_Tables#Table:_assayprop "Chado Tables")
-- [biomaterial_relationship](Chado_Tables#Table:_biomaterial_relationship "Chado Tables")
-- [biomaterial_treatment](Chado_Tables#Table:_biomaterial_treatment "Chado Tables")
-- [biomaterialprop](Chado_Tables#Table:_biomaterialprop "Chado Tables")
-- [contact](Chado_Tables#Table:_contact "Chado Tables")
-- [contact_relationship](Chado_Tables#Table:_contact_relationship "Chado Tables")
-- [control](Chado_Tables#Table:_control "Chado Tables")
-- [cvterm_dbxref](Chado_Tables#Table:_cvterm_dbxref "Chado Tables")
-- [cvterm_relationship](Chado_Tables#Table:_cvterm_relationship "Chado Tables")
-- [cvtermpath](Chado_Tables#Table:_cvtermpath "Chado Tables")
-- [cvtermprop](Chado_Tables#Table:_cvtermprop "Chado Tables")
-- [cvtermsynonym](Chado_Tables#Table:_cvtermsynonym "Chado Tables")
-- [dbxrefprop](Chado_Tables#Table:_dbxrefprop "Chado Tables")
-- [element](Chado_Tables#Table:_element "Chado Tables")
-- [element_relationship](Chado_Tables#Table:_element_relationship "Chado Tables")
-- [elementresult_relationship](Chado_Tables#Table:_elementresult_relationship "Chado Tables")
-- [environment_cvterm](Chado_Tables#Table:_environment_cvterm "Chado Tables")
-- [feature](Chado_Tables#Table:_feature "Chado Tables")
-- [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-- [feature_cvtermprop](Chado_Tables#Table:_feature_cvtermprop "Chado Tables")
-- [feature_genotype](Chado_Tables#Table:_feature_genotype "Chado Tables")
-- [feature_pubprop](Chado_Tables#Table:_feature_pubprop "Chado Tables")
-- [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
-- [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables")
-- [featuremap](Chado_Tables#Table:_featuremap "Chado Tables")
-- [featureprop](Chado_Tables#Table:_featureprop "Chado Tables")
-- [library](Chado_Tables#Table:_library "Chado Tables")
-- [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-- [libraryprop](Chado_Tables#Table:_libraryprop "Chado Tables")
-- [organism_relationship](Chado_Tables#Table:_organism_relationship "Chado Tables")
-- [organismpath](Chado_Tables#Table:_organismpath "Chado Tables")
-- [organismprop](Chado_Tables#Table:_organismprop "Chado Tables")
-- [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-- [phenotype](Chado_Tables#Table:_phenotype "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenotype_cvterm](Chado_Tables#Table:_phenotype_cvterm "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-- [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-- [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-- [phylonodeprop](Chado_Tables#Table:_phylonodeprop "Chado Tables")
-- [phylotree](Chado_Tables#Table:_phylotree "Chado Tables")
-- [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-- [protocolparam](Chado_Tables#Table:_protocolparam "Chado Tables")
-- [pub](Chado_Tables#Table:_pub "Chado Tables")
-- [pub_relationship](Chado_Tables#Table:_pub_relationship "Chado Tables")
-- [pubprop](Chado_Tables#Table:_pubprop "Chado Tables")
-- [quantification_relationship](Chado_Tables#Table:_quantification_relationship "Chado Tables")
-- [quantificationprop](Chado_Tables#Table:_quantificationprop "Chado Tables")
-- [stock](Chado_Tables#Table:_stock "Chado Tables")
-- [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-- [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables")
-- [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables")
-- [stockcollectionprop](Chado_Tables#Table:_stockcollectionprop "Chado Tables")
-- [stockprop](Chado_Tables#Table:_stockprop "Chado Tables")
-- [studydesignprop](Chado_Tables#Table:_studydesignprop "Chado Tables")
-- [studyfactor](Chado_Tables#Table:_studyfactor "Chado Tables")
-- [synonym](Chado_Tables#Table:_synonym "Chado Tables")
-- [treatment](Chado_Tables#Table:_treatment "Chado Tables")
-- [wwwuser_cvterm](Chado_Tables#Table:_wwwuser_cvterm "Chado Tables")
+- [acquisition_relationship](/wiki/Chado_Tables#Table:_acquisition_relationship)
+- [acquisitionprop](/wiki/Chado_Tables#Table:_acquisitionprop)
+- [analysisprop](/wiki/Chado_Tables#Table:_analysisprop)
+- [arraydesign](/wiki/Chado_Tables#Table:_arraydesign)
+- [arraydesignprop](/wiki/Chado_Tables#Table:_arraydesignprop)
+- [assayprop](/wiki/Chado_Tables#Table:_assayprop)
+- [biomaterial_relationship](/wiki/Chado_Tables#Table:_biomaterial_relationship)
+- [biomaterial_treatment](/wiki/Chado_Tables#Table:_biomaterial_treatment)
+- [biomaterialprop](/wiki/Chado_Tables#Table:_biomaterialprop)
+- [contact](/wiki/Chado_Tables#Table:_contact)
+- [contact_relationship](/wiki/Chado_Tables#Table:_contact_relationship)
+- [control](/wiki/Chado_Tables#Table:_control)
+- [cvterm_dbxref](/wiki/Chado_Tables#Table:_cvterm_dbxref)
+- [cvterm_relationship](/wiki/Chado_Tables#Table:_cvterm_relationship)
+- [cvtermpath](/wiki/Chado_Tables#Table:_cvtermpath)
+- [cvtermprop](/wiki/Chado_Tables#Table:_cvtermprop)
+- [cvtermsynonym](/wiki/Chado_Tables#Table:_cvtermsynonym)
+- [dbxrefprop](/wiki/Chado_Tables#Table:_dbxrefprop)
+- [element](/wiki/Chado_Tables#Table:_element)
+- [element_relationship](/wiki/Chado_Tables#Table:_element_relationship)
+- [elementresult_relationship](/wiki/Chado_Tables#Table:_elementresult_relationship)
+- [environment_cvterm](/wiki/Chado_Tables#Table:_environment_cvterm)
+- [feature](/wiki/Chado_Tables#Table:_feature)
+- [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm)
+- [feature_cvtermprop](/wiki/Chado_Tables#Table:_feature_cvtermprop)
+- [feature_genotype](/wiki/Chado_Tables#Table:_feature_genotype)
+- [feature_pubprop](/wiki/Chado_Tables#Table:_feature_pubprop)
+- [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
+- [feature_relationshipprop](/wiki/Chado_Tables#Table:_feature_relationshipprop)
+- [featuremap](/wiki/Chado_Tables#Table:_featuremap)
+- [featureprop](/wiki/Chado_Tables#Table:_featureprop)
+- [library](/wiki/Chado_Tables#Table:_library)
+- [library_cvterm](/wiki/Chado_Tables#Table:_library_cvterm)
+- [libraryprop](/wiki/Chado_Tables#Table:_libraryprop)
+- [organism_relationship](/wiki/Chado_Tables#Table:_organism_relationship)
+- [organismpath](/wiki/Chado_Tables#Table:_organismpath)
+- [organismprop](/wiki/Chado_Tables#Table:_organismprop)
+- [phendesc](/wiki/Chado_Tables#Table:_phendesc)
+- [phenotype](/wiki/Chado_Tables#Table:_phenotype)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenotype_cvterm](/wiki/Chado_Tables#Table:_phenotype_cvterm)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
+- [phylonode](/wiki/Chado_Tables#Table:_phylonode)
+- [phylonode_relationship](/wiki/Chado_Tables#Table:_phylonode_relationship)
+- [phylonodeprop](/wiki/Chado_Tables#Table:_phylonodeprop)
+- [phylotree](/wiki/Chado_Tables#Table:_phylotree)
+- [protocol](/wiki/Chado_Tables#Table:_protocol)
+- [protocolparam](/wiki/Chado_Tables#Table:_protocolparam)
+- [pub](/wiki/Chado_Tables#Table:_pub)
+- [pub_relationship](/wiki/Chado_Tables#Table:_pub_relationship)
+- [pubprop](/wiki/Chado_Tables#Table:_pubprop)
+- [quantification_relationship](/wiki/Chado_Tables#Table:_quantification_relationship)
+- [quantificationprop](/wiki/Chado_Tables#Table:_quantificationprop)
+- [stock](/wiki/Chado_Tables#Table:_stock)
+- [stock_cvterm](/wiki/Chado_Tables#Table:_stock_cvterm)
+- [stock_relationship](/wiki/Chado_Tables#Table:_stock_relationship)
+- [stockcollection](/wiki/Chado_Tables#Table:_stockcollection)
+- [stockcollectionprop](/wiki/Chado_Tables#Table:_stockcollectionprop)
+- [stockprop](/wiki/Chado_Tables#Table:_stockprop)
+- [studydesignprop](/wiki/Chado_Tables#Table:_studydesignprop)
+- [studyfactor](/wiki/Chado_Tables#Table:_studyfactor)
+- [synonym](/wiki/Chado_Tables#Table:_synonym)
+- [treatment](/wiki/Chado_Tables#Table:_treatment)
+- [wwwuser_cvterm](/wiki/Chado_Tables#Table:_wwwuser_cvterm)
 
 ---
 
@@ -1005,14 +1005,14 @@ relation.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvterm_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -1070,7 +1070,7 @@ not the object. For example "insect wing part_of thorax".
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1082,7 +1082,7 @@ relationship ontology, although other relationship types are
 allowed.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>subject_id</td>
 <td>integer</td>
@@ -1093,7 +1093,7 @@ is about the subject. In a graph, this typically corresponds to the
 child node.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>object_id</td>
 <td>integer</td>
@@ -1138,7 +1138,7 @@ The reflexive transitive closure of the cvterm_relationship relation.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1150,21 +1150,21 @@ a relationship cvterm - note that the closure will apply to both this
 relationship AND the OBO_REL:is_a (subclass) relationship.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>subject_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>object_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cv"
+<td><p><a href="/wiki/Chado_Tables#Table:_cv"
 title="Chado Tables">cv</a></p></td>
 <td>cv_id</td>
 <td>integer</td>
@@ -1218,14 +1218,14 @@ table. Corresponds to -AnnotationProperty- in W3C OWL format.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvterm_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1292,7 +1292,7 @@ synonyms. For example, "T cell" as a synonym for "T lymphocyte".
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -1305,7 +1305,7 @@ title="Chado Tables">cvterm</a></p></td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1326,7 +1326,7 @@ Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
 analogous to cvtermprop.
 
-| F-Key                                               | Name          | Type    | Description                 | --------------------------------------------------- | ------------- | ------- | --------------------------- |                                                     | dbxrefprop_id | serial  | _PRIMARY KEY_               | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id     | integer | _UNIQUE#1 NOT NULL_         | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id       | integer | _UNIQUE#1 NOT NULL_         |                                                     | value         | text    | _NOT NULL DEFAULT ''::text_ |                                                     | rank          | integer | _UNIQUE#1 NOT NULL_         |
+| F-Key                                               | Name          | Type    | Description                 | --------------------------------------------------- | ------------- | ------- | --------------------------- |                                                     | dbxrefprop_id | serial  | _PRIMARY KEY_               | [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id     | integer | _UNIQUE#1 NOT NULL_         | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id       | integer | _UNIQUE#1 NOT NULL_         |                                                     | value         | text    | _NOT NULL DEFAULT ''::text_ |                                                     | rank          | integer | _UNIQUE#1 NOT NULL_         |
 
 dbxrefprop Structure
 

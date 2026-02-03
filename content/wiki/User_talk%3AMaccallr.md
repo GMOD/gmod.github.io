@@ -4,7 +4,7 @@ title: "User talk:Maccallr"
 # User talk:Maccallr
 
 Bob's notes from
-[Chado_Natural_Diversity_Module/natdiv_schema_changes_call](Chado_Natural_Diversity_Module/natdiv_schema_changes_call "Chado Natural Diversity Module/natdiv schema changes call")
+[Chado_Natural_Diversity_Module/natdiv_schema_changes_call](/wiki/Chado_Natural_Diversity_Module/natdiv_schema_changes_call)
 
   genotype](#genotype)
 - [phenotype](#phenotype)

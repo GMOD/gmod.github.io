@@ -15,7 +15,7 @@ class="external text" rel="nofollow">InterMine Workshop</a> is being
 offered at the University of Cambridge, 30th-31st October 2008. This
 workshop is intended for software developers aspiring to build a
 database and web interface with the
-[InterMine](../InterMine "InterMine") software. An example of such a
+[InterMine](../InterMine) software. An example of such a
 database is <a href="http://flymine.org" class="external text"
 rel="nofollow">FlyMine</a> but InterMine imposes no restriction on the
 sort of data it can be used to manage. A reasonable grasp of programming
@@ -42,7 +42,7 @@ Richard Smith
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/09/11*
+*Posted to the [GMOD News](../GMOD_News) on 2008/09/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

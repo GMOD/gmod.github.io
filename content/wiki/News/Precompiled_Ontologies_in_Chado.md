@@ -44,4 +44,4 @@ not a problem.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/20*
+*Posted to the [GMOD News](../GMOD_News) on 2014/02/20*

@@ -65,7 +65,7 @@ We have to store several items in the chado database:
 ### Analysis
 
 The analysis is stored in the [analysis
-table](Chado_Tables#Table:_analysis "Chado Tables"):
+table](/wiki/Chado_Tables#Table:_analysis):
 
 - **name**: A way of grouping analyses. This should be a handy short
   identifier that can help people find an analysis they want. For
@@ -81,7 +81,7 @@ table](Chado_Tables#Table:_analysis "Chado Tables"):
 ### ESTs
 
 Each EST is stored in the [feature
-table](Chado_Tables#Table:_feature "Chado Tables").
+table](/wiki/Chado_Tables#Table:_feature).
 
 - **dbxref_id**: public stable identifier for this EST.
 - **name**: Human readable.
@@ -148,7 +148,7 @@ Additional features for the alignments.
 | ? | CMV:UNI001_EST1 | SO:668 id | True |
 | ? | CMV:UNI001_EST2 | SO:668 id | True |
 
-An [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
+An [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
 for each of the previous features with the alignment scores. If we don't
 need to store these scores, maybe be this table could be optional.
 
@@ -158,7 +158,7 @@ need to store these scores, maybe be this table could be optional.
 | CMV:UNI001_EST2 id | EST clustering analysis id | The identity % |
 
 The alignment coordinates are stored in two featurelocs in the
-[featureloc table](Chado_Tables#Table:_featureloc "Chado Tables").
+[featureloc table](/wiki/Chado_Tables#Table:_featureloc).
 
 | feature_id | srcfeature_id | fmin | fmax | strand | residue_info | rank |
 |----|----|----|----|----|----|----|

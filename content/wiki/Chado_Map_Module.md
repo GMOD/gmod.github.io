@@ -42,19 +42,19 @@ the left or right of a feature (but not within it):
 
 ## Table: featuremap
 
-| F-Key                                               | Name          | Type                   | Description   | --------------------------------------------------- | ------------- | ---------------------- | ------------- |                                                     | featuremap_id | serial                 | _PRIMARY KEY_ |                                                     | name          | character varying(255) | _UNIQUE_      |                                                     | description   | text                   | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id   | integer                featuremap Structure
+| F-Key                                               | Name          | Type                   | Description   | --------------------------------------------------- | ------------- | ---------------------- | ------------- |                                                     | featuremap_id | serial                 | _PRIMARY KEY_ |                                                     | name          | character varying(255) | _UNIQUE_      |                                                     | description   | text                   | [cvterm](/wiki/Chado_Tables#Table:_cvterm) | unittype_id   | integer                featuremap Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [featuremap_pub](Chado_Tables#Table:_featuremap_pub "Chado Tables")
-- [featurepos](Chado_Tables#Table:_featurepos "Chado Tables")
-- [featurerange](Chado_Tables#Table:_featurerange "Chado Tables")
+- [featuremap_pub](/wiki/Chado_Tables#Table:_featuremap_pub)
+- [featurepos](/wiki/Chado_Tables#Table:_featurepos)
+- [featurerange](/wiki/Chado_Tables#Table:_featurerange)
 
 ---
 
 ## Table: featuremap_pub
 
-| F-Key                                                       | Name              | Type    | Description   | ----------------------------------------------------------- | ----------------- | ------- | ------------- |                                                             | featuremap_pub_id | serial  | _PRIMARY KEY_ | [featuremap](Chado_Tables#Table:_featuremap "Chado Tables") | featuremap_id     | integer | _NOT NULL_    | [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _NOT NULL_    |
+| F-Key                                                       | Name              | Type    | Description   | ----------------------------------------------------------- | ----------------- | ------- | ------------- |                                                             | featuremap_pub_id | serial  | _PRIMARY KEY_ | [featuremap](/wiki/Chado_Tables#Table:_featuremap) | featuremap_id     | integer | _NOT NULL_    | [pub](/wiki/Chado_Tables#Table:_pub)               | pub_id            | integer | _NOT NULL_    |
 
 featuremap_pub Structure
 
@@ -86,21 +86,21 @@ featuremap_pub Structure
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_featuremap"
+<td><p><a href="/wiki/Chado_Tables#Table:_featuremap"
 title="Chado Tables">featuremap</a></p></td>
 <td>featuremap_id</td>
 <td>serial</td>
 <td><em>NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>map_feature_id</td>
 <td>integer</td>
@@ -153,7 +153,7 @@ which the feature is being mapped. These may be cytological bands.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_featuremap"
+<td><p><a href="/wiki/Chado_Tables#Table:_featuremap"
 title="Chado Tables">featuremap</a></p></td>
 <td>featuremap_id</td>
 <td>integer</td>
@@ -162,35 +162,35 @@ title="Chado Tables">featuremap</a></p></td>
 featuremap_id is the id of the feature being mapped.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>leftstartf_id</td>
 <td>integer</td>
 <td><em>NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>leftendf_id</td>
 <td>integer</td>
 <td><em></em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>rightstartf_id</td>
 <td>integer</td>
 <td><em></em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>rightendf_id</td>
 <td>integer</td>

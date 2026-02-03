@@ -24,7 +24,7 @@ class="external text" rel="nofollow">Genomic Database Specialist
 and this individual will be responsible for maintaining and optimizing
 database systems for genome annotation and related information.
 Experience overseeing database systems is required and experience with
-Oracle and [PostgreSQL](../PostgreSQL "PostgreSQL") is desirable. The
+Oracle and [PostgreSQL](../PostgreSQL) is desirable. The
 ideal candidate will have a solid understanding of genomics and a
 background in a life sciences setting. Strong competency with Unix and
 Perl is required.
@@ -40,14 +40,14 @@ desirable. A strong competency with Unix and scripting in a language
 such as Perl is required.
 
 Both positions will work with Chado and
-[GBrowse](../GBrowse.1 "GBrowse"), and will help evaluate the adoption
+[GBrowse](../GBrowse.1), and will help evaluate the adoption
 of additional GMOD tools. See the links for more details.
 
-[Eric Ganko](../User%253AEric.ganko "User%253AEric.ganko")
+[Eric Ganko](../User%253AEric.ganko)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/21*
+*Posted to the [GMOD News](../GMOD_News) on 2009/10/21*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -3,7 +3,7 @@ title: "Running a GBrowse2 render farm"
 ---
 # Running a GBrowse2 render farm
 
-[GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2") can be configured
+[GBrowse 2](/wiki/Category%253AGBrowse_2) can be configured
 to use one or more "render slave" daemons. A render slave is a small
 Perl process that runs in the background, processing requests to render
 GBrowse tracks. By distributing several render slaves across one or more
@@ -75,7 +75,7 @@ chromosome information and the DNA sequence, for use by any plugins
 running on the master, and two "annotation" databases that contain
 feature tracks.
 
-[Figure 1](File:Renderfarm_1.png "File:Renderfarm 1.png") illustrates a
+[Figure 1](/wiki/File:Renderfarm_1.png) illustrates a
 simple case in which the master and slave processes are all running on
 the same machine and all databases are locally accessible. This
 configuration makes sense on a multiprocessor or multicore system that
@@ -84,7 +84,7 @@ needed for this arrangement is to activate GBrowse's renderfarm support
 (as described in [Initial Setup](#Initial_Setup) and to launch one or
 more slave processes at machine startup time.
 
-[Figure 2](File:Renderfarm_2.png "File:Renderfarm 2.png") illustrates a
+[Figure 2](/wiki/File:Renderfarm_2.png) illustrates a
 master server and two slave servers, all located on the same LAN. Each
 server runs a single GBrowse slave process; however it is possible to
 launch multiple processes for a possible performance boost. The three
@@ -93,12 +93,12 @@ server and the two slave servers have direct access to them. The host
 for this volume could be the master server, one of the slave servers, or
 a dedicated NFS server somewhere on the LAN.
 
-[Figure 3](File:Renderfarm_3.png "File:Renderfarm 3.png") illustrates
+[Figure 3](/wiki/File:Renderfarm_3.png) illustrates
 almost the same configuration as the previous one, except that instead
 of an NFS-mounted filesystem, the databases reside on a relational
 database (e.g. MySQL) server which is accessed via the network.
 
-[Figure 4](File:Renderfarm_4.png "File:Renderfarm 4.png") illustrates a
+[Figure 4](/wiki/File:Renderfarm_4.png) illustrates a
 case in which the master and slave servers do not share databases. In
 this case, each machine has access to a private local database file or
 relational database server.

@@ -25,7 +25,7 @@ Showing 5 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BioDIG.1"
+<td class="smwpropname"><a href="/wiki/BioDIG.1"
 title="BioDIG">BioDIG</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://biodig.org" class="external"
 rel="nofollow">http://biodig.org</a>  </td>
@@ -35,7 +35,7 @@ rel="nofollow">http://biodig.org</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://bioinformatics.ai.sri.com/ptools/"
 class="external"
@@ -46,7 +46,7 @@ rel="nofollow">http://bioinformatics.ai.sri.com/ptools/</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="SOBA.1" title="SOBA">SOBA</a> <span
+<td class="smwpropname"><a href="/wiki/SOBA.1" title="SOBA">SOBA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
@@ -58,7 +58,7 @@ rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_On
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://webgbrowse.cgb.indiana.edu"
 class="external"
@@ -69,9 +69,9 @@ rel="nofollow">http://webgbrowse.cgb.indiana.edu</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
+<td class="smwpropname"><a href="/wiki/XORT.1" title="XORT">XORT</a> <span
 class="smwbrowse"></span></td>
-<td class="smwprops"><a href="XORT.1" class="external"
+<td class="smwprops"><a href="/wiki/XORT.1" class="external"
 rel="nofollow">http://gmod.org/wiki/XORT</a>  </td>
 </tr>
 </tbody>
@@ -80,4 +80,4 @@ rel="nofollow">http://gmod.org/wiki/XORT</a>  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

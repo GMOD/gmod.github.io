@@ -65,13 +65,13 @@ computer. This may or may not use a formal *database schema* and may or
 may not be in a *database management system*.
 
 A database can be implemented in a *[relational database management
-system](Glossary#Relational_Database_Management_System "Glossary")*
+system](/wiki/Glossary#Relational_Database_Management_System)*
 using a defined *[database
-schema](Glossary#Database_Schema "Glossary")*. For example, the database
+schema](/wiki/Glossary#Database_Schema)*. For example, the database
 behind the <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase web site</a> contains data on drosopholids, and
-uses the <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-schema and the [PostgreSQL](PostgreSQL "PostgreSQL") database management
+uses the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+schema and the [PostgreSQL](/wiki/PostgreSQL) database management
 system.
 
 A database can also be in regular files with a well defined format.
@@ -93,10 +93,10 @@ Chado) can be reused across multiple databases.
 #### Database Web Site
 
 Web sites that feature a lot of database driven content, such as
-[FlyBase](Category%253AFlyBase "Category%253AFlyBase")
+[FlyBase](/wiki/Category%253AFlyBase)
 (<a href="http://flybase.org" class="external free"
 rel="nofollow">http://flybase.org</a>) or
-[ParameciumDB](ParameciumDB "ParameciumDB")
+[ParameciumDB](/wiki/ParameciumDB)
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
 rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>), are often
 referred to as databases. This is somewhat accurate as there are
@@ -107,10 +107,10 @@ they also may not show everything in their databases.
 ### Relational Database Terminology
 
 The [brief guide to
-databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
+databases](/wiki/A_Brief_Guide_to_Databases)
 defines some basic database concepts, and the [Relational
-Databases](Overview#Relational_Databases "Overview") section in
-[Overview](Overview "Overview") explains many terms that are useful in
+Databases](/wiki/Overview#Relational_Databases) section in
+[Overview](/wiki/Overview) explains many terms that are useful in
 understanding relational databases.
 
 ## GMOD Database Components
@@ -123,7 +123,7 @@ GMOD's database related components are:
 
 ### Chado
 
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> is the
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is the
 modular [database schema](#Database_Schema) of GMOD. Chado is about
 organizing your data in a database so that you can manage it and can
 connect other GMOD components to it (either directly or via data
@@ -132,16 +132,16 @@ Chado.
 
 ### BioMart
 
-[BioMart](BioMart "BioMart") is a data warehouse package tailored for
+[BioMart](/wiki/BioMart) is a data warehouse package tailored for
 biological data. It takes existing databases (for example, the
-[FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database),
+[FlyBase](/wiki/Category%253AFlyBase)
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database),
 transforms them into a data warehouse and then provides a web interface
 for supporting arbitrary queries against the data.
 
 ### InterMine
 
-[InterMine](InterMine "InterMine") also integrates multiple data sources
+[InterMine](/wiki/InterMine) also integrates multiple data sources
 into a single data warehouse. It has a core data model based on the
 sequence ontology and supports several biological data formats. It is
 easy to extend the data model and integrate your own data, Java and Perl
@@ -152,39 +152,39 @@ Many aspects of the web app can be configured and branded.
 
 ### Database Tools
 
-- [Argos](Argos "Argos"), a.k.a. Flybase-NG, a.k.a. biodb, is designed
+- [Argos](/wiki/Argos), a.k.a. Flybase-NG, a.k.a. biodb, is designed
   to provide automatic replication, installation and updates of genome
   and organism databases and information servers, including FlyBase and
   euGenes. It should be not too difficult to add other organism/genome
   services to this replication structure.
-- [GMODTools](GMODTools "GMODTools") is a Perl package that generates
-  Fasta, [GFF](GFF "GFF"), DNA and other bulk genome annotation files
-  from <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+- [GMODTools](/wiki/GMODTools) is a Perl package that generates
+  Fasta, [GFF](/wiki/GFF), DNA and other bulk genome annotation files
+  from <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
   databases.
-- [Modware](Modware "Modware") is an object-oriented Perl API for
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
+- [Modware](/wiki/Modware) is an object-oriented Perl API for
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
   object-oriented querying and loading of a Chado database and returns
   data structures that a programmer can readily use without knowing the
   details of how the object is stored in the relational schema.
-- [XORT](XORT.1 "XORT") is a utility written in Perl that can be used to
+- [XORT](/wiki/XORT.1) is a utility written in Perl that can be used to
   read to and write from a [relational
-  schema](Glossary#Schema "Glossary") using
-  [XML](Glossary#XML "Glossary") as an interchange format. In GMOD XORT
+  schema](/wiki/Glossary#Schema) using
+  [XML](/wiki/Glossary#XML) as an interchange format. In GMOD XORT
   is frequently used to transfer data to and from
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ### GMOD Components that Require a DBMS
 
-- [CMap](CMap.1 "CMap")
-- [GBrowse_syn](GBrowse_syn.1 "GBrowse syn")
+- [CMap](/wiki/CMap.1)
+- [GBrowse_syn](/wiki/GBrowse_syn.1)
 
 ## GMOD DBMS Choices
 
-Several [GMOD Components](GMOD_Components "GMOD Components") rely on
+Several [GMOD Components](/wiki/GMOD_Components) rely on
 databases to store their data. All such components have a default DBMS
 that the developers had in mind when they created the component. The
-default DBMS is most often [PostgreSQL](PostgreSQL "PostgreSQL") or
-[MySQL](MySQL "MySQL"). PostgreSQL, commonly known as Postgres, and
+default DBMS is most often [PostgreSQL](/wiki/PostgreSQL) or
+[MySQL](/wiki/MySQL). PostgreSQL, commonly known as Postgres, and
 MySQL are both open-source DBMSs with large and active user communities.
 It is possible to use a DBMS other than the default but it does involve
 more work, sometimes a lot more work.
@@ -210,25 +210,25 @@ use in the GMOD community.
 
 #### PostgreSQL
 
-[Postgres](PostgreSQL "PostgreSQL") (officially known as *PostgreSQL*)
+[Postgres](/wiki/PostgreSQL) (officially known as *PostgreSQL*)
 is the default DBMS for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, GMOD's
-modular database schema. [Galaxy](Galaxy.1 "Galaxy") can also run using
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, GMOD's
+modular database schema. [Galaxy](/wiki/Galaxy.1) can also run using
 Postgres. Work is being done on
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> to
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> to
 also support PostgreSQL.
 
-See the [PostgreSQL](PostgreSQL "PostgreSQL") page from more information
+See the [PostgreSQL](/wiki/PostgreSQL) page from more information
 on Postgres.
 
 #### MySQL
 
-MySQL adapters exist for [GBrowse](GBrowse.1 "GBrowse") and it also used
-by [CMap](CMap.1 "CMap")
+MySQL adapters exist for [GBrowse](/wiki/GBrowse.1) and it also used
+by [CMap](/wiki/CMap.1)
 
 Using MySQL with
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> is
-discouraged. See [MySQL](MySQL "MySQL") for more information on MySQL in
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is
+discouraged. See [MySQL](/wiki/MySQL) for more information on MySQL in
 GMOD.
 
 #### SQLite
@@ -239,12 +239,12 @@ self-contained, serverless, zero-configuration, transactional SQL
 database engine. SQLite is the most widely deployed SQL database engine
 in the world. The source code for SQLite is in the public domain.
 
-SQLite is used in a few places in GMOD. [MAKER](MAKER.1 "MAKER") uses it
+SQLite is used in a few places in GMOD. [MAKER](/wiki/MAKER.1) uses it
 for its data store. It is the default database when installing
-[Galaxy](Galaxy.1 "Galaxy"), but most users then upgrade to a different
-[DBMS](Glossary#DBMS "Glossary"), usually
-[PostgreSQL](PostgreSQL "PostgreSQL"). It can also be used with
-[GBrowse](GBrowse.1 "GBrowse").
+[Galaxy](/wiki/Galaxy.1), but most users then upgrade to a different
+[DBMS](/wiki/Glossary#DBMS), usually
+[PostgreSQL](/wiki/PostgreSQL). It can also be used with
+[GBrowse](/wiki/GBrowse.1).
 
 #### DB2
 
@@ -252,7 +252,7 @@ for its data store. It is the default database when installing
 rel="nofollow">Xenbase</a> uses
 <a href="http://www.ibm.com/db2" class="external text"
 rel="nofollow">DB2</a> for their
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 installation. DB2 is a high-end database from
 <a href="http://ibm.com" class="external text" rel="nofollow">IBM</a>
 that has a
@@ -264,8 +264,8 @@ one of the big players in the commercial database market.
 
 #### Oracle
 
-Oracle is a supported DBMS for [CMap](CMap.1 "CMap") and
-[GBrowse](GBrowse.1 "GBrowse").
+Oracle is a supported DBMS for [CMap](/wiki/CMap.1) and
+[GBrowse](/wiki/GBrowse.1).
 
 <a href="http://apidb.org" class="external text"
 rel="nofollow">ApiDB</a> uses
@@ -273,10 +273,10 @@ rel="nofollow">ApiDB</a> uses
 rel="nofollow">Oracle</a> for its database needs, and
 <a href="http://www.dictybase.org" class="external text"
 rel="nofollow">dictyBase</a> uses [Oracle for Chado and
-GMODTools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt "File:Just-050516.ppt").
+GMODTools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt).
 
 Work is being done on
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> to
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> to
 also support Oracle.
 
 Oracle is a high-end database management system from
@@ -287,7 +287,7 @@ world.
 #### Sybase
 
 Due to its heritage at JCVI, the default database of the
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 workflow management tool was originally Sybase. Currently, it is usually
 used with MySQL and PostgreSQL by way of the
 <a href="https://sourceforge.net/projects/coati-api/"
@@ -295,5 +295,5 @@ class="external text" rel="nofollow">Coati</a> development framework.
 
 ## See Also
 
-[Relational Databases](Overview#Relational_Databases "Overview") in
-[Overview](Overview "Overview").
+[Relational Databases](/wiki/Overview#Relational_Databases) in
+[Overview](/wiki/Overview).

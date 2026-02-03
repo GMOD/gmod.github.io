@@ -48,7 +48,7 @@ GBrowse and UCSC differ in how glyphs are organized
   ***wiggle_xyplot*** or ***wiggle_density***) will be more efficient
 - Each experiment (represented as a single feature/glyph in GBrowse)
   looks like a sub-track.
-- Some advantages of using WIG *vs.* [GFF](GFF "GFF") are:
+- Some advantages of using WIG *vs.* [GFF](/wiki/GFF) are:
 
 There are speed optimizations for both range queries and graphical
 rendering.
@@ -92,7 +92,7 @@ An example of a GFF2WIG(BED) script.
 
 #### GFF-based, individual features
 
-- If you have a lot of features (lines in the [GFF](GFF "GFF") file),
+- If you have a lot of features (lines in the [GFF](/wiki/GFF) file),
   you can load them in the database as individual standalone features,
   with no grouping or containment hierarchy, as long as they have an
   informative source tag that will allow grouping of the features you
@@ -100,7 +100,7 @@ An example of a GFF2WIG(BED) script.
 - one example would be data that was received in WIG (BED) format but it
   would be better suited for GFF.
 
-An example WIG(BED) to [GFF3](GFF3 "GFF3") converter
+An example WIG(BED) to [GFF3](/wiki/GFF3) converter
 
     #!/usr/bin/perl -w
     use strict;
@@ -127,7 +127,7 @@ An example WIG(BED) to [GFF3](GFF3 "GFF3") converter
       print join("\t",$ref,$source,$type,$start,$end,$score,qw/. ./,$group), "\n";
     }
 
-- The source column in [GFF](GFF "GFF") is not semantically constrained,
+- The source column in [GFF](/wiki/GFF) is not semantically constrained,
   so use an informative tag like TF_binding_DPY27. Then, in the
   configuration stanza for the track, use the **group on** option.
      group on = source
@@ -140,7 +140,7 @@ An example WIG(BED) to [GFF3](GFF3 "GFF3") converter
 
 #### GFF-based, multi-level features
 
-- If you have a bunch of [GFF](GFF "GFF") features but you want them
+- If you have a bunch of [GFF](/wiki/GFF) features but you want them
   displayed as anonymous blocks in a single linear feature, reminiscent
   of a wiggle_density or wiggle_box glyph (but without the wiggle), do
   this:

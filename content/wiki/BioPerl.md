@@ -9,7 +9,7 @@ alt="BioPerl" /></a>
 
 <a href="http://www.bioperl.org/" class="external text"
 rel="nofollow">BioPerl</a> is a set of modules that support
-bioinformatics programming in [Perl](Category%253APerl "Category%253APerl")
+bioinformatics programming in [Perl](/wiki/Category%253APerl)
 programs. BioPerl is used extensively by several GMOD components. You
 will need to install it before you can use those components.
 
@@ -44,7 +44,7 @@ rel="nofollow">BioPerl web site</a> for more.
 ## The Most Frequently Given Answer in GMOD
 
 By at least an order or magnitude, the most frequently given answer on
-the [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") has
+the [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) has
 been:
 
 ***"You need to upgrade to the latest version of BioPerl, known as
@@ -69,8 +69,8 @@ rel="nofollow">podcast on the BioPerl project</a> is available at
 <a href="http://twit.tv/FLOSS" class="external text"
 rel="nofollow">FLOSS Weekly</a>. It's about an hour long and it's a good
 introduction to the **BioPerl** project. The podcast is an interview
-with BioPerl heavy hitters [Chris Fields](User%253ACjfields "User%253ACjfields")
-and [Jason Stajich](User%253AStajich "User%253AStajich").
+with BioPerl heavy hitters [Chris Fields](/wiki/User%253ACjfields)
+and [Jason Stajich](/wiki/User%253AStajich).
 
 ### BioPerl Packages and bioperl-live
 

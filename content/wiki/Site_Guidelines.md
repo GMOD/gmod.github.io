@@ -85,7 +85,7 @@ writing your content so it does conform to these standards.
 These guidelines are a work in progress and you are encouraged to
 suggest additions, deletions or revisions to them. The best way to do
 this is to send your comments to the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk"). Alternatively, you can post them
+Desk](/wiki/GMOD_Help_Desk). Alternatively, you can post them
 to this page (or to this page's discussion/talk
 page).
 
@@ -124,10 +124,10 @@ It looks better.
 Use of MediaWiki redirects for page name synonyms is encouraged.
 
 This means that if a user types
-"<a href="Generic_Genome_Browser" class="mw-redirect"
+"<a href="/wiki/Generic_Genome_Browser" class="mw-redirect"
 title="Generic Genome Browser">Generic Genome Browser</a>" in the
 "Go/Search" box and you have a redirect defined for
-"[GBrowse](GBrowse.1 "GBrowse")" then they will go directly to the
+"[GBrowse](/wiki/GBrowse.1)" then they will go directly to the
 GBrowse page, instead of the search results page.
 
 To create a redirect page, enter the name of the redirect page in the
@@ -159,7 +159,7 @@ When you update a page in this web site you can flag it as a _minor
 edit_. As of December 2007, the minor/major edit distinction is used in
 one place in the GMOD web site: Major edits (that is, edits that are
 _not_ marked as minor) cause the page to be listed in the _New & Revised
-Pages_ list on the [GMOD home page](Main_Page "Main Page"). That list is
+Pages_ list on the [GMOD home page](/wiki/Main_Page). That list is
 a reverse chronological ordering of all recent non-minor edits
 
 If your edit is small, such as a spelling or other typo correction, then
@@ -170,7 +170,7 @@ mark it as a minor edit.
 Tag any pages you edit with appropriate categories for that page.
 
 Be generous in your tagging. If a particular category gets too many
-pages in it then the [help desk](GMOD_Help_Desk "GMOD Help Desk") will
+pages in it then the [help desk](/wiki/GMOD_Help_Desk) will
 subdivide that category.
 
 This web site makes extensive use of tags, called
@@ -206,7 +206,7 @@ When creating a new category please:
       the edit page when creating the category page.
 
 Or, just send your new category suggestion to the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") and we will add it.
+Desk](/wiki/GMOD_Help_Desk) and we will add it.
 
 ### Uploading Files
 
@@ -217,23 +217,23 @@ filename**.
 
 The **Destination filename** is the name the file will have in the GMOD
 web site. Why does this matter? Filenames are displayed in
-[Categories](Categories "Categories"), but none of the text in the file
+[Categories](/wiki/Categories), but none of the text in the file
 is. Therefore the filename should describe the contents of the file.
 
 For example, the file
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/Gkl777.pdf" class="internal"
 title="Gkl777.pdf">Gkl777.pdf</a> is an article on
-[ParameciumDB](ParameciumDB "ParameciumDB") from _Nucleic Acids
+[ParameciumDB](/wiki/ParameciumDB) from _Nucleic Acids
 Research_, but if you look at the file's listing in the [Publications
-category](Category%253APublications "Category%253APublications") all you see is
+category](/wiki/Category%253APublications) all you see is
 "Gkl777.pdf". You have to follow the link to find out what the file is
 about.
 
 #### File Categories
 
 When uploading a presentation or a paper, please add it to the
-[Presentations](Category%253APresentations "Category%253APresentations") or
-[Publications](Category%253APublications "Category%253APublications")
+[Presentations](/wiki/Category%253APresentations) or
+[Publications](/wiki/Category%253APublications)
 categories. Also add the file to any other appropriate categories.
 
 If the file is an image that is being linked to from a page then you
@@ -254,10 +254,10 @@ future rather than recreate them from scratch.
 **Please Note:**
 
 1.  These guidelines were first developed for the
-    <a href="GMOD_Summer_School" class="mw-redirect"
+    <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
     title="GMOD Summer School">GMOD Courses</a>, where these were used
     to format the [Tutorial
-    pages](Training_and_Outreach#Online_Tutorials "Training and Outreach").
+    pages](/wiki/Training_and_Outreach#Online_Tutorials).
 2.  If this seems daunting, please see Meta-Guideline \#1:
     [Ignoring](#Ignoring), and hopefully feel better.
 
@@ -364,7 +364,7 @@ TextEditorLink|gedit</p>
 <p>Edit the configuration file:</p>
 <pre><code>gedit thingy.conf</code></pre>
 
-<a href="Linux_Text_Editors" title="Linux Text Editors">A word on text
+<a href="/wiki/Linux_Text_Editors" title="Linux Text Editors">A word on text
 editors such as gedit</a>.
 </td>
 </tr>
@@ -581,6 +581,6 @@ numerous lines. For example:
     | tag = Include A Template
 
 The `tool_data` pages essentially act as a data store, and the page
-[Template:ToolDisplay](Template:ToolDisplay "Template:ToolDisplay")
+[Template:ToolDisplay](/wiki/Template:ToolDisplay)
 parses and formats the data to produce a standardized GMOD component
 page.

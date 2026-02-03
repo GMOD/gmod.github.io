@@ -22,28 +22,28 @@ for your question.
 ## GMOD Web Site
 
 Many questions about GMOD can be answered by  or exploring it through
-[category tags](Categories "Categories"). Some pages that are
+[category tags](/wiki/Categories). Some pages that are
 particularly useful places to start for support questions:
 
-- [Overview](Overview "Overview") - an introduction to GMOD.
-- [FAQs](Category%253AFAQ "Category%253AFAQ") - List of Frequently Asked
+- [Overview](/wiki/Overview) - an introduction to GMOD.
+- [FAQs](/wiki/Category%253AFAQ) - List of Frequently Asked
   Questions pages.
-- [GMOD Components](GMOD_Components "GMOD Components") - Links to pages
+- [GMOD Components](/wiki/GMOD_Components) - Links to pages
   about each of the GMOD components.
-- [Glossary](Glossary "Glossary") - List of commonly used terms in GMOD.
-- [HOWTOs](Category%253AHOWTO "Category%253AHOWTO") - List of HOWTO pages
+- [Glossary](/wiki/Glossary) - List of commonly used terms in GMOD.
+- [HOWTOs](/wiki/Category%253AHOWTO) - List of HOWTO pages
 
-## [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists")
+## [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists)
 
 The GMOD project has many [mailing
-lists](GMOD_Mailing_Lists "GMOD Mailing Lists") and if one exists on
+lists](/wiki/GMOD_Mailing_Lists) and if one exists on
 your topic of interest then that mailing list is often the best place to
 start. First, search the list archives to see if your question has
 already been asked and answered. If it hasn't then subscribe to the list
 and then post your question. (Most GMOD mailing lists are
 subscriber-only to cut down on spam.)
 
-See [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") for
+See [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) for
 links to and descriptions of most of the GMOD mailing lists that are
 geared towards GMOD users. This includes both project wide and component
 specific mailing lists.
@@ -51,9 +51,9 @@ specific mailing lists.
 ### Which List?
 
 If your question is about how
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and another
-component like [GBrowse](GBrowse.1 "GBrowse") and
-[Apollo](Apollo.1 "Apollo") interact, it is best to subscribe and post
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and another
+component like [GBrowse](/wiki/GBrowse.1) and
+[Apollo](/wiki/Apollo.1) interact, it is best to subscribe and post
 the question to both the Chado and the component lists.
 
 For applications that don't have a dedicated mailing list, you can post
@@ -68,26 +68,26 @@ If you are interested in mailing lists for component developers, see
 class="external text" rel="nofollow">SourceForge</a>.
 
 If it is not clear where to send your question you can send it to the
-[GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk").
+[GMOD Help Desk](/wiki/GMOD_Help_Desk).
 
 ## GMOD Help Desk
 
-The [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") is also available
+The [GMOD Help Desk](/wiki/GMOD_Help_Desk) is also available
 to answer your support questions (or at least refer you to the people
 who can). In addition to e-mail support the help desk also offers other
 services such as onsite support and user training. See [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") for more.
+Desk](/wiki/GMOD_Help_Desk) for more.
 
-## [Meetings](Meetings "Meetings") and [Training and Outreach](Training_and_Outreach "Training and Outreach")
+## [Meetings](/wiki/Meetings) and [Training and Outreach](/wiki/Training_and_Outreach)
 
 You can also get (and give) support at [GMOD
-meetings](Meetings "Meetings") and at [GMOD sponsored and related
-workshops](Training_and_Outreach "Training and Outreach"). Meetings and
-workshops are always listed on the GMOD [Calendar](Calendar "Calendar")
-and are often announced on the [GMOD News](GMOD_News "GMOD News") page
+meetings](/wiki/Meetings) and at [GMOD sponsored and related
+workshops](/wiki/Training_and_Outreach). Meetings and
+workshops are always listed on the GMOD [Calendar](/wiki/Calendar)
+and are often announced on the [GMOD News](/wiki/GMOD_News) page
 and GMOD-Announce [mailing
-list](GMOD_Mailing_Lists "GMOD Mailing Lists").
+list](/wiki/GMOD_Mailing_Lists).
 
-[GMOD Schools](GMOD_Schools "GMOD Schools") are held about once a year
+[GMOD Schools](/wiki/GMOD_Schools) are held about once a year
 and offer hands-on training on installing, configuring and integrating
 GMOD components.

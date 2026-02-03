@@ -12,10 +12,10 @@ title: "GFF3 2011 tutorial"
 <tr class="odd">
 <td><span style="font-size: 160%; line-height: 120%"> GFF3 Session</span><br />
 <br />
-&#10;<p><a href="2011_GMOD_Spring_Training"
+&#10;<p><a href="/wiki/2011_GMOD_Spring_Training"
 title="2011 GMOD Spring Training">2011 GMOD Spring Training</a><br />
 8-12 March 2011<br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a></p></td>
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></p></td>
 <td style="text-align: right;"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f5/GMODAmericas2011Logo.png/200px-GMODAmericas2011Logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f5/GMODAmericas2011Logo.png/300px-GMODAmericas2011Logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f5/GMODAmericas2011Logo.png/400px-GMODAmericas2011Logo.png 2x"
@@ -28,7 +28,7 @@ width="200" height="200" alt="GMODAmericas2011Logo.png" /></td>
 **GFF** is a standard file format for storing genomic features in a text
 file. GFF stands for *Generic Feature Format*. GFF files are plain text,
 9 column, tab-delimited files. GFF *databases*
-also exist. They use a [schema](Glossary#Schema "Glossary") custom built
+also exist. They use a [schema](/wiki/Glossary#Schema) custom built
 to represent GFF data. GFF is [frequently used in GMOD](#GFF_in_GMOD)
 for data exchange and representation of genomic data.
 
@@ -304,7 +304,7 @@ genomic coordinates. It has an ID of "mrna0001" and a human-readable
 name of "sonichedgehog" (note that the ID and the Name are **not** the
 same thing). This is followed by five exon features, each of which is
 linked to the mRNA using a Parent tag. When
-[GBrowse](GBrowse.1 "GBrowse") displays this transcript, it will display
+[GBrowse](/wiki/GBrowse.1) displays this transcript, it will display
 each of the exons linked together by a solid line. The entire set can be
 found by searching for the name "sonichedgehog."
 
@@ -403,7 +403,7 @@ named "EDEN" which has three alternatively-spliced mRNA transcripts:
 
 We start with a feature of type "gene" with the ID "EDEN". This has
 three alternative splice forms named EDEN.1, EDEN.2 and EDEN.3. To tell
-[GBrowse](GBrowse.1 "GBrowse") that each of these splice forms are part
+[GBrowse](/wiki/GBrowse.1) that each of these splice forms are part
 of the same gene, we give each one a Parent attribute of "EDEN"
 corresponding to the ID of the parent gene. Now consider mRNA EDEN.1. It
 has a five_prime_UTR feature, a three_prime_UTR feature, and four CDS
@@ -461,7 +461,7 @@ agt830.5 aligns to genomic contig ctg123 such that positions 1 through
 
 Using the \##FASTA section of the GFF3 file, you can specify the
 sequence of the ESTs as well as of the contig, and
-[GBrowse](GBrowse.1 "GBrowse") will display the DNA and/or protein
+[GBrowse](/wiki/GBrowse.1) will display the DNA and/or protein
 sequences in the appropriate contexts.
 
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
@@ -500,14 +500,14 @@ single line per experiment like this one:
     ctg123 . microarray_oligo 1 50000 . . . Name=example;wigfile=/usr/data/ctg123.Expt1.wig
 
 The .wig file is created and managed using a script called
-`wiggle2gff3.pl` that comes with [GBrowse](GBrowse.1 "GBrowse").
+`wiggle2gff3.pl` that comes with [GBrowse](/wiki/GBrowse.1).
 Instructions on how to use this script is described in the <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/docs/tutorial/tutorial.html?pathrev=stable"
 class="external text" rel="nofollow">GBrowse Administration Tutorial</a>.
 
 ## GFF3 Sequence Section
 
-[GFF3](GFF3 "GFF3") files can also include sequence in FASTA format at
+[GFF3](/wiki/GFF3) files can also include sequence in FASTA format at
 the end of the file. The FASTA sequences are preceded by a `##FASTA`
 line. This sequence section is optional. If present, the sequence
 section can define sequence for any landmark used in column 1 (the frame
@@ -571,15 +571,15 @@ description of that support.
 
 ## Apollo
 
-The [Apollo](Apollo.1 "Apollo") genome annotation editor can read and
+The [Apollo](/wiki/Apollo.1) genome annotation editor can read and
 write annotations in GFF3 format. You can also load GFF3 data into
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and have
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and have
 Apollo connect with the database.
 
 ## Chado
 
 GFF3 data can be loaded into and dumped from
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
 See:
 
  - by converting it to GFF3
@@ -587,8 +587,8 @@ See:
  - by converting it to GFF3
 
  -
-  Generate [GFF3](GFF3 "GFF3") from a
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.
+  Generate [GFF3](/wiki/GFF3) from a
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 
 ## CMap
 
@@ -597,10 +597,10 @@ mapping viewer can read data in GFF3 format.
 
 ## GBrowse
 
-The [GBrowse](GBrowse.1 "GBrowse") genome viewer supports data in many
+The [GBrowse](/wiki/GBrowse.1) genome viewer supports data in many
 formats, but in many ways GFF3 is its native data format. GBrowse
 also supports GFF2 data. See
-the [GBrowse](GBrowse.1 "GBrowse") and GBrowse
+the [GBrowse](/wiki/GBrowse.1) and GBrowse
 Adaptors pages for details.
 
 # See Also

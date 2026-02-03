@@ -150,11 +150,11 @@ from any other Galaxy clone.
 
 Often you can just fire up Galaxy at this point. However, if you are
 following this tutorial using a
-[VMware](VMware_2011_Spring_Training "VMware 2011 Spring Training")
+[VMware](/wiki/VMware_2011_Spring_Training)
 image from the [2011 GMOD Spring
-Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training") course,
+Training](/wiki/2011_GMOD_Spring_Training) course,
 this may not work. The issue is that Galaxy, like
-[InterMine](InterMine "InterMine") (also covered at that course), will
+[InterMine](/wiki/InterMine) (also covered at that course), will
 by default listen to port 8080. InterMine is already using port 8080 on
 the course image. Therefore, to avoid a collision with InterMine, let's
 do InterMine one better and use port 8081.
@@ -270,7 +270,7 @@ height="791" alt="Galaxy FirstAnalysis 2.png" />
 
 The dataset we uploaded is a generic tabular data file (dumped out of
 the UCSC browser, not in any particular feature format like BED or
-[GFF](GFF "GFF")). However, it is feature data, meaning that each row
+[GFF](/wiki/GFF)). However, it is feature data, meaning that each row
 represents a location on a genome. To let Galaxy know about this,
 *click* the **pencil icon** in the dataset's **History** entry to show
 the dataset attributes interface. Under **Change data type** *set* **New
@@ -292,8 +292,8 @@ height="791" alt="Galaxy FirstAnalysis 3.png" />
 
 Another major way to pull data into Galaxy is through interfaces with
 external data providers. Several of these are pre-configured out of the
-box, including interfaces to [InterMine](InterMine "InterMine"),
-[BioMart](BioMart "BioMart") and the UCSC Table Browser. Here we will
+box, including interfaces to [InterMine](/wiki/InterMine),
+[BioMart](/wiki/BioMart) and the UCSC Table Browser. Here we will
 pull gene annotations from UCSC.
 
 In the **Tools** panel, *select* **Get Data** → **UCSC Main Table
@@ -367,7 +367,7 @@ Within our Galaxy instance directory, instance data is stored under the
     files               job_working_directory  tmp  whoosh_indexes
 
 Two key files are `universe.sqlite` which is a [relational
-database](Glossary#Relational "Glossary") containing all the metadata
+database](/wiki/Glossary#Relational) containing all the metadata
 tracked by Galaxy, and the `files` directory which contains the raw
 datasets. First let's look at the database using the SQLite command line
 interface:
@@ -427,7 +427,7 @@ we see that Galaxy just stores the raw data exactly as we uploaded it.
 ## Tools
 
 Galaxy reads all of its tool configuration from a series of
-[XML](Glossary#XML "Glossary") files. The file `tool_conf.xml` defines
+[XML](/wiki/Glossary#XML) files. The file `tool_conf.xml` defines
 which tools are loaded by a given instance:
 
     gmod@ubuntu:~/work/galaxy-dist$ head tool_conf.xml
@@ -550,12 +550,12 @@ Galaxy to run with zero-configuration and provides an excellent solution
 for single-user Galaxy's being used for tool development. However, for
 any multi-user scenario a more robust database will be needed for Galaxy
 to be reliable. We **highly** recommend
-[Postgres](PostgreSQL "PostgreSQL"), although other database are known
+[Postgres](/wiki/PostgreSQL), although other database are known
 to work.
 
 Postgres is already installed on our VM image (it's the default
-[DBMS](Glossary#DBMS "Glossary") for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>), and the
+[DBMS](/wiki/Glossary#DBMS) for
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>), and the
 `gmod` user has permission to create databases, so let's create a
 database for Galaxy
 
@@ -696,7 +696,7 @@ rel="nofollow">http://...fastqsanger</a>** is selected.
 *Click* **Execute**.
 
 A new dataset is generated containing the mapped reads in [SAM
-format](Glossary#SAM "Glossary").
+format](/wiki/Glossary#SAM).
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d5/Galaxy_SecondAnalysis_3.png" width="1001"
@@ -717,7 +717,7 @@ Let's first create a directory for our new tool:
 
 ## The tool command (script)
 
-And then using a [text editor](Linux_Text_Editors "Linux Text Editors"),
+And then using a [text editor](/wiki/Linux_Text_Editors),
 create `tools/gmod_2011/sam_filter.py` containing:
 
 ``` de1

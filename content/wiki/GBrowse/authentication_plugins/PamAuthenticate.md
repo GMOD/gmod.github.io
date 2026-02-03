@@ -4,7 +4,7 @@ title: "Gbrowse/authentication plugins/PamAuthenticate"
 # Gbrowse/authentication plugins/PamAuthenticate
 
 The PamAuthenticate plugin is one of a very small number of [GBrowse
-Plugins](../../GBrowse_Plugins "GBrowse Plugins") that can be used to
+Plugins](../../GBrowse_Plugins) that can be used to
 gather user credentials and authenticate them. This associates a user
 with a stable username and can be used to:
 
@@ -12,7 +12,7 @@ with a stable username and can be used to:
     multiple computers.
 2.  Allow users to share tracks with each other and to make uploaded
     tracks public.
-3.  [Authorize](../../GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
+3.  [Authorize](../../GBrowse_Configuration/Authentication)
     certain users to access tracks and/or datasources.
 
   Introduction](#Introduction)
@@ -128,8 +128,8 @@ day) will be applied to GBrowse.
 For further information on how this plugin works, and some hints on how
 to create your own customized authentication plugin, please see
 [Creating GBrowse
-Plugins](../../Creating_GBrowse_Plugins "Creating GBrowse Plugins").
+Plugins](../../Creating_GBrowse_Plugins).
 
 
 - [GBrowse
-  Plugins](../../Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")
+  Plugins](../../Category%253AGBrowse_Plugins)

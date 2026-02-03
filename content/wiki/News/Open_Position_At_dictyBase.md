@@ -19,4 +19,4 @@ details.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/04*
+*Posted to the [GMOD News](../GMOD_News) on 2013/11/04*

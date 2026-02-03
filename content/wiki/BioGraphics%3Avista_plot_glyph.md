@@ -745,4 +745,4 @@ Options inherited from more general glyph classes:
 **COLOR OPTIONS**
 
 See
-[Glyphs_and_Glyph_Options#Colors](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options")
+[Glyphs_and_Glyph_Options#Colors](/wiki/Glyphs_and_Glyph_Options#Colors)

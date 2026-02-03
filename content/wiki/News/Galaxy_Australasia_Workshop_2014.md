@@ -80,4 +80,4 @@ Committee</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on yyyy/mm/dd*
+*Posted to the [GMOD News](../GMOD_News) on yyyy/mm/dd*

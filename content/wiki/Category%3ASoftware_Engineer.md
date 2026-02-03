@@ -10,7 +10,7 @@ This category contains only the following page.
 ### N
 
 - [News/Open Position At
-  dictyBase](News/Open_Position_At_dictyBase "News/Open Position At dictyBase")
+  dictyBase](/wiki/News/Open_Position_At_dictyBase)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253ASoftware_Engineer](/wiki/Category%253ASoftware_Engineer)"

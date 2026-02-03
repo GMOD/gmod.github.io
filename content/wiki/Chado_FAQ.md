@@ -44,9 +44,9 @@ title: "Chado FAQ"
 ### What is this FAQ?
 
 It is the list of Frequently Asked Questions about
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. It
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It
 summarises the questions that have come up on the Chado
-<a href="Mailing_list" class="mw-redirect" title="Mailing list">mailing
+<a href="/wiki/Mailing_list" class="mw-redirect" title="Mailing list">mailing
 list</a>.
 
 ### How is it maintained?
@@ -68,28 +68,28 @@ title="Chado.mp3">like this</a>.
 
 Questions about the best ways to represent a variety of observations are
 answered at the [Chado Best
-Practices](Chado_Best_Practices "Chado Best Practices") page. There is
+Practices](/wiki/Chado_Best_Practices) page. There is
 also a worked example for this at
-[Load_BLAST_Into_Chado](Load_BLAST_Into_Chado "Load BLAST Into Chado").
+[Load_BLAST_Into_Chado](/wiki/Load_BLAST_Into_Chado).
 
 ### Where do I find a list of tables in Chado?
 
-The [Chado Tables](Chado_Tables "Chado Tables") page.
+The [Chado Tables](/wiki/Chado_Tables) page.
 
 ### What are the modules in Chado?
 
 They are listed in the [Chado
-Manual](Chado_Manual#Modules "Chado Manual") page.
+Manual](/wiki/Chado_Manual#Modules) page.
 
 ### Is there a *Chado for Beginners*?
 
 The best place to start would be the [Chado
-Manual](Chado_Manual#Modules "Chado Manual") or
-[Overview](Overview "Overview").
+Manual](/wiki/Chado_Manual#Modules) or
+[Overview](/wiki/Overview).
 
 ### Loading data into Chado
 
-When I try to load data into Chado using the [GFF](GFF "GFF") bulk
+When I try to load data into Chado using the [GFF](/wiki/GFF) bulk
 loader (gmod_bulk_load_gff3.pl), I get this error:
 
      DBD::Pg::db pg_endcopy failed: ERROR:  invalid input syntax for integer: ""
@@ -123,7 +123,7 @@ The gmod_bulk_load_gff3.pl script has to do quite a bit of work that the
 similarly named bp_bulk_load_gff.pl does not have to do. Since Chado
 makes extensive use of constraints and foreign key relationships, the
 bulk loader has to keep track of all of those constraints while parsing
-the [GFF3](GFF3 "GFF3") file. Also, when it is loading data, it does it
+the [GFF3](/wiki/GFF3) file. Also, when it is loading data, it does it
 in a single database transaction, which can take quite a while if there
 is a lot of data.
 
@@ -194,6 +194,6 @@ including the \*-dev packages. (This was on Ubuntu 10.04 Lucid.)
 ### Loading Ontologies takes forever! There has to be a better way?
 
 There are [Precompiled Chado
-Databases](Precompiled_Chado_Databases "Precompiled Chado Databases")
+Databases](/wiki/Precompiled_Chado_Databases)
 (including all five ontologies), made available online. These are
 updated on a weekly basis.

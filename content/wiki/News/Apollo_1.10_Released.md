@@ -3,7 +3,7 @@ title: "News/Apollo 1.10 Released"
 ---
 # News/Apollo 1.10 Released
 
-A new version of [Apollo](../Apollo.1 "Apollo") has been released.
+A new version of [Apollo](../Apollo.1) has been released.
 Highlights for this release include:
 
 - Support for remote NCBI BLAST (blastn, blastx, tblastx)
@@ -31,11 +31,11 @@ As always, you can download the current version at:
 class="external free"
 rel="nofollow">http://apollo.berkeleybop.org/current/install.html</a>
 
-[Ed Lee](../User%253AElee "User%253AElee")
+[Ed Lee](../User%253AElee)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/03/02*
+*Posted to the [GMOD News](../GMOD_News) on 2009/03/02*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

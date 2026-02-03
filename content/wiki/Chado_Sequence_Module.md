@@ -110,12 +110,12 @@ other relationships with other features.
 
 You may find these related documents useful:
 
-- [Chado Manual](Chado_Manual "Chado Manual")
-- [Chado Best Practices](Chado_Best_Practices "Chado Best Practices") -
+- [Chado Manual](/wiki/Chado_Manual)
+- [Chado Best Practices](/wiki/Chado_Best_Practices) -
   many issues specific to the Sequence module are discussed
-- [Chado FAQ](Chado_FAQ "Chado FAQ")
-- [Introduction to Chado](Introduction_to_Chado "Introduction to Chado")
-- [Chado cv module](Chado_CV_Module "Chado CV Module") - the Sequence
+- [Chado FAQ](/wiki/Chado_FAQ)
+- [Introduction to Chado](/wiki/Introduction_to_Chado)
+- [Chado cv module](/wiki/Chado_CV_Module) - the Sequence
   module makes extensive use of controlled vocabularies
 
 # Features
@@ -134,11 +134,11 @@ stored in the [feature](#Table:_feature) table.
 Feature types are taken from the
 <a href="http://www.sequenceontology.org/" class="external text"
 rel="nofollow">Sequence Ontology</a> controlled vocabulary (see also
-[Controlled Vocabulary module](Chado_CV_Module "Chado CV Module"), also
+[Controlled Vocabulary module](/wiki/Chado_CV_Module), also
 known as _cv_). Types of feature are differentiated using a _type_id_
 column, which is a foreign key to the
-[cvterm](Chado_Tables#Table:_cvterm "Chado Tables") table in the cv
-(ontology) module, described [here](Chado_CV_Module "Chado CV Module").
+[cvterm](/wiki/Chado_Tables#Table:_cvterm) table in the cv
+(ontology) module, described [here](/wiki/Chado_CV_Module).
 This allows us to type features according to the Sequence Ontology. The
 use of ontologies to type tables gives Chado a subtyping mechanism,
 which is absent from the standard relational model. For example, SO
@@ -184,7 +184,7 @@ feature has been characterized as a result of genome annotation. It is
 possible to have features of SO type gene for genes that have only been
 characterized through genetic studies, and for which neither sequence
 nor sequence location is known. This is in contrast to other feature
-schemas (such as [GFF](GFF "GFF")) in which it is not possible to
+schemas (such as [GFF](/wiki/GFF)) in which it is not possible to
 represent features without representing a location in sequence
 coordinates. This design decision is crucial for the use of Chado as a
 database for integrating information about the same entity from multiple
@@ -221,8 +221,8 @@ The [feature](#Table:_feature) table has a Boolean valued column,
 _is_analysis_, indicating whether this is an annotation or a computed
 feature from a computational analysis. Annotations are features that are
 generated or blessed by a human curator, or in some cases by an
-integrated genome pipeline (for example, [MAKER](MAKER.1 "MAKER") or
-[DIYA](DIYA "DIYA")) capable of synthesizing gene models and other
+integrated genome pipeline (for example, [MAKER](/wiki/MAKER.1) or
+[DIYA](/wiki/DIYA)) capable of synthesizing gene models and other
 annotations from _in silico_ analyses. They constitute the definitive
 version of a particular feature, in contrast to the features generated
 by gene prediction programs and sequence similarity searches such as
@@ -235,9 +235,9 @@ identifiers for example, features resulting from gene predictions and
 BLAST HSP features may be less stable and thus lack public identifiers.
 It is recommended that most annotated features have *dbxref_id*s. The
 _organism_id_ column refers to a row in the
-[organism](Chado_Tables#Table:_organism "Chado Tables") table (defined
+[organism](/wiki/Chado_Tables#Table:_organism) table (defined
 in the [organism
-module](Chado_Organism_Module "Chado Organism Module")). This column is
+module](/wiki/Chado_Organism_Module)). This column is
 mandatory if the feature derives from a single organism.
 
 ## Names of Features
@@ -248,8 +248,8 @@ features (as opposed to those that arise from purely computational
 methods) have names. The name should be a simple, concise,
 human-friendly display label (such as a gene or gene product symbol, as
 defined by the nomenclature rules of governing the organism). User
-interface software (such as [GBrowse](GBrowse.1 "GBrowse") and
-[Apollo](Apollo.1 "Apollo")) can use the _name_ column for labelling
+interface software (such as [GBrowse](/wiki/GBrowse.1) and
+[Apollo](/wiki/Apollo.1)) can use the _name_ column for labelling
 feature glyphs in user displays. Uniqueness of name within any
 particular organism or genome project is a desirable characteristic, but
 is not enforced in the schema, since there are occasions where name
@@ -283,14 +283,14 @@ This is modelled in Chado with a [synonym](#Table:_synonym) table and a
 features can potentially share the same, and a single feature can be
 have multiple synonyms. Use of a synonym in the literature is indicated
 with a _pub_id_ foreign key referencing the
-[pub](Chado_Tables#Table:_pub "Chado Tables") table (see [the
+[pub](/wiki/Chado_Tables#Table:_pub) table (see [the
 publications
-module](Chado_Publication_Module "Chado Publication Module")),
+module](/wiki/Chado_Publication_Module)),
 indicating historical provenance for the use of a synonym.
 
 Feature synonyms are found by joining to
 [feature_synonym](#Table:_feature_synonym) and
-[synonym](Chado_Tables#Table:_synonym "Chado Tables"). For example, here
+[synonym](/wiki/Chado_Tables#Table:_synonym). For example, here
 is a query to find gene by name or synonym:
 
 ```de1
@@ -314,8 +314,8 @@ part of this sequence module. Other non-sequence oriented kinds of
 localization (such as physical localization from _in situ_ experiments,
 or genetic localizations from linkage studies) are modelled outside the
 sequence module (for example, in the [expression
-module](Chado_Expression_Module "Chado Expression Module") or [map
-module](Chado_Map_Module "Chado Map Module")).
+module](/wiki/Chado_Expression_Module) or [map
+module](/wiki/Chado_Map_Module)).
 
 A feature can have zero or more featurelocs, although it will typically
 have either one (for localized features for which the location is known)
@@ -382,7 +382,7 @@ _srcfeature_id_ vertex. The node is labeled with column values from the
 [feature](#Table:_feature) table, and the edge is labeled with column
 values from the [featureloc](#Table:_featureloc) table. The LG is not
 allowed to contain cycles, it is a [directed acyclic graph
-(DAG)](Glossary#DAG "Glossary"). This includes self-cycles - no feature
+(DAG)](/wiki/Glossary#DAG). This includes self-cycles - no feature
 may be localized relative to itself.
 
 The roots of the LG are the features that do not have featureloc rows,
@@ -488,7 +488,7 @@ the “hit” is visible.
 ### Difference Between the chado Location Model and Other Schemas
 
 There is a crucial difference between the Chado location model and the
-sequence location model used in other schemas, such as [GFF](GFF "GFF"),
+sequence location model used in other schemas, such as [GFF](/wiki/GFF),
 GenBank, <a href="http://biosql.org" class="external text"
 rel="nofollow">BioSQL</a>, or
 <a href="http://bioperl.org" class="external text"
@@ -555,9 +555,9 @@ value filler for that property. Sets or lists of values for any property
 can be stored in the [featureprop](#Table:_featureprop) table,
 differentiated by the value of the _rank_ column. Provenance for the
 [featureprop](#Table:_featureprop) assignment is stored using the
-[featureprop_pub](Chado_Tables#Table:_featureprop_pub "Chado Tables")
+[featureprop_pub](/wiki/Chado_Tables#Table:_featureprop_pub)
 table in the [publications
-module](Chado_Publication_Module "Chado Publication Module"), allowing
+module](/wiki/Chado_Publication_Module), allowing
 multiple publications to be associated with any one assignment.
 
 Because [featureprop](#Table:_featureprop) values can be of an arbitrary
@@ -574,7 +574,7 @@ generic model.
 ## Linking Features to External Databases
 
 Public database identifiers are stored in the
-[dbxref](Chado_Tables#Table:_dbxref "Chado Tables") table, which holds
+[dbxref](/wiki/Chado_Tables#Table:_dbxref) table, which holds
 the database name, the accession number, and an optional version number.
 Note that this table holds accession numbers published internally by the
 Chado instance as well as by other databases. A feature can have a
@@ -610,7 +610,7 @@ table](#Table:_featureprop) using the Chado feature_property ontology
 (defined in `chado/load/etc/feature_property.obo`) and the comment or
 description terms as appropriate. The purpose of the feature property
 ontology (and the related `chado/load/etc/genbank_feature_property.obo`
-file) is to capture terms that are likely to appear in [GFF](GFF "GFF")
+file) is to capture terms that are likely to appear in [GFF](/wiki/GFF)
 or GenBank sequence files. In theory there is no overlap between these
 ontologies and the Sequence Ontology.
 
@@ -642,11 +642,11 @@ either grammatically or biologically incorrect.
 We use this same terminology (which comes from
 <a href="http://www.w3.org/RDF/" class="external text"
 rel="nofollow">RDF</a>) again in the [cv
-module](Chado_CV_Module "Chado CV Module"). The collection of features
+module](/wiki/Chado_CV_Module). The collection of features
 and feature relationships can be considered as vertices and edges in a
 graph, known as the Feature Graph (FG). Example feature graphs are shown
 above and in the [Introduction to
-Chado](Introduction_to_Chado "Introduction to Chado").
+Chado](/wiki/Introduction_to_Chado).
 
 The FG is independent of the LG and in general the FG and the LG should
 have no edges in common. If there is a featureloc connecting two
@@ -901,7 +901,7 @@ such as hits and HSPs and so on; see the Sequence Ontology for more.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -911,7 +911,7 @@ An optional primary public stable identifier for this feature. Secondary
 identifiers and external dbxrefs go in the table feature_dbxref.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_organism"
+<td><p><a href="/wiki/Chado_Tables#Table:_organism"
 title="Chado Tables">organism</a></p></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -979,7 +979,7 @@ This column thus acts as a unique identifier on the mathematical
 sequence.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1042,23 +1042,23 @@ feature Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
-- [element](Chado_Tables#Table:_element "Chado Tables")
-- [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-- [feature_dbxref](Chado_Tables#Table:_feature_dbxref "Chado Tables")
-- [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-- [feature_genotype](Chado_Tables#Table:_feature_genotype "Chado Tables")
-- [feature_phenotype](Chado_Tables#Table:_feature_phenotype "Chado Tables")
-- [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables")
-- [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
-- [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-- [featureloc](Chado_Tables#Table:_featureloc "Chado Tables")
-- [featurepos](Chado_Tables#Table:_featurepos "Chado Tables")
-- [featureprop](Chado_Tables#Table:_featureprop "Chado Tables")
-- [featurerange](Chado_Tables#Table:_featurerange "Chado Tables")
-- [library_feature](Chado_Tables#Table:_library_feature "Chado Tables")
-- [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-- [wwwuser_feature](Chado_Tables#Table:_wwwuser_feature "Chado Tables")
+- [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
+- [element](/wiki/Chado_Tables#Table:_element)
+- [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm)
+- [feature_dbxref](/wiki/Chado_Tables#Table:_feature_dbxref)
+- [feature_expression](/wiki/Chado_Tables#Table:_feature_expression)
+- [feature_genotype](/wiki/Chado_Tables#Table:_feature_genotype)
+- [feature_phenotype](/wiki/Chado_Tables#Table:_feature_phenotype)
+- [feature_pub](/wiki/Chado_Tables#Table:_feature_pub)
+- [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship)
+- [feature_synonym](/wiki/Chado_Tables#Table:_feature_synonym)
+- [featureloc](/wiki/Chado_Tables#Table:_featureloc)
+- [featurepos](/wiki/Chado_Tables#Table:_featurepos)
+- [featureprop](/wiki/Chado_Tables#Table:_featureprop)
+- [featurerange](/wiki/Chado_Tables#Table:_featurerange)
+- [library_feature](/wiki/Chado_Tables#Table:_library_feature)
+- [phylonode](/wiki/Chado_Tables#Table:_phylonode)
+- [wwwuser_feature](/wiki/Chado_Tables#Table:_wwwuser_feature)
 
 ---
 
@@ -1090,21 +1090,21 @@ Associate a term from a cv with a feature, for example, GO annotation.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvterm_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_pub"
+<td><p><a href="/wiki/Chado_Tables#Table:_pub"
 title="Chado Tables">pub</a></p></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -1133,9 +1133,9 @@ feature_cvterm Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_cvterm_dbxref](Chado_Tables#Table:_feature_cvterm_dbxref "Chado Tables")
-- [feature_cvterm_pub](Chado_Tables#Table:_feature_cvterm_pub "Chado Tables")
-- [feature_cvtermprop](Chado_Tables#Table:_feature_cvtermprop "Chado Tables")
+- [feature_cvterm_dbxref](/wiki/Chado_Tables#Table:_feature_cvterm_dbxref)
+- [feature_cvterm_pub](/wiki/Chado_Tables#Table:_feature_cvterm_pub)
+- [feature_cvtermprop](/wiki/Chado_Tables#Table:_feature_cvtermprop)
 
 ---
 
@@ -1152,7 +1152,7 @@ class="external free"
 rel="nofollow">http://www.geneontology.org/doc/GO.annotation.shtml#file</a>
 for more details.
 
-| F-Key                                                               | Name                     | Type    | Description         | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       | [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                               | Name                     | Type    | Description         | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](/wiki/Chado_Tables#Table:_dbxref)                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_dbxref Structure
 
@@ -1166,7 +1166,7 @@ be added using this linking table (in a GO gene association file, these
 corresponding to any IDs after the pipe symbol in the publications
 column.
 
-| F-Key                                                               | Name                  | Type    | Description         | ------------------------------------------------------------------- | --------------------- | ------- | ------------------- |                                                                     | feature_cvterm_pub_id | serial  | _PRIMARY KEY_       | [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables") | feature_cvterm_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                       | pub_id                | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                               | Name                  | Type    | Description         | ------------------------------------------------------------------- | --------------------- | ------- | ------------------- |                                                                     | feature_cvterm_pub_id | serial  | _PRIMARY KEY_       | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                       | pub_id                | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_cvterm_pub Structure
 
@@ -1203,14 +1203,14 @@ for meanings of type_id, value and rank.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature_cvterm"
 title="Chado Tables">feature_cvterm</a></p></td>
 <td>feature_cvterm_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1277,14 +1277,14 @@ identifiers should use feature.dbxref_id.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -1312,13 +1312,13 @@ feature_dbxref Structure
 Provenance. Linking table between features and publications that mention
 them.
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | feature_pub_id | serial  | _PRIMARY KEY_       | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | feature_pub_id | serial  | _PRIMARY KEY_       | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pub Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_pubprop](Chado_Tables#Table:_feature_pubprop "Chado Tables")
+- [feature_pubprop](/wiki/Chado_Tables#Table:_feature_pubprop)
 
 ---
 
@@ -1326,7 +1326,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Property or attribute of a feature_pub link.
 
-| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | feature_pubprop_id | serial  | _PRIMARY KEY_       | [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables") | feature_pub_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")           | type_id            | integer | _UNIQUE#1 NOT NULL_ |                                                               | value              | text    | rank               | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | feature_pubprop_id | serial  | _PRIMARY KEY_       | [feature_pub](/wiki/Chado_Tables#Table:_feature_pub) | feature_pub_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)           | type_id            | integer | _UNIQUE#1 NOT NULL_ |                                                               | value              | text    | rank               | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_pubprop Structure
 
@@ -1368,7 +1368,7 @@ introns.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>subject_id</td>
 <td>integer</td>
@@ -1378,7 +1378,7 @@ The subject of the subj-predicate-obj sentence. This is typically the
 subfeature.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>object_id</td>
 <td>integer</td>
@@ -1388,7 +1388,7 @@ The object of the subj-predicate-obj sentence. This is typically the
 container feature.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1426,8 +1426,8 @@ feature_relationship Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_relationship_pub](Chado_Tables#Table:_feature_relationship_pub "Chado Tables")
-- [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables")
+- [feature_relationship_pub](/wiki/Chado_Tables#Table:_feature_relationship_pub)
+- [feature_relationshipprop](/wiki/Chado_Tables#Table:_feature_relationshipprop)
 
 ---
 
@@ -1436,7 +1436,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
 
-| F-Key                                                                           | Name                        | Type    | Description         | ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- |                                                                                 | feature_relationship_pub_id | serial  | _PRIMARY KEY_       | [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables") | feature_relationship_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                                   | pub_id                      | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                                           | Name                        | Type    | Description         | ------------------------------------------------------------------------------- | --------------------------- | ------- | ------------------- |                                                                                 | feature_relationship_pub_id | serial  | _PRIMARY KEY_       | [feature_relationship](/wiki/Chado_Tables#Table:_feature_relationship) | feature_relationship_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                                   | pub_id                      | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationship_pub Structure
 
@@ -1474,14 +1474,14 @@ feature_relationship is only true in certain contexts.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature_relationship"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature_relationship"
 title="Chado Tables">feature_relationship</a></p></td>
 <td>feature_relationship_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1519,7 +1519,7 @@ feature_relationshipprop Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_relationshipprop_pub](Chado_Tables#Table:_feature_relationshipprop_pub "Chado Tables")
+- [feature_relationshipprop_pub](/wiki/Chado_Tables#Table:_feature_relationshipprop_pub)
 
 ---
 
@@ -1527,7 +1527,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 Provenance for feature_relationshipprop.
 
-| F-Key                                                                                   | Name                            | Type    | Description         | --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- |                                                                                         | feature_relationshipprop_pub_id | serial  | _PRIMARY KEY_       | [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables") | feature_relationshipprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                                           | pub_id                          | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                                                   | Name                            | Type    | Description         | --------------------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------- |                                                                                         | feature_relationshipprop_pub_id | serial  | _PRIMARY KEY_       | [feature_relationshipprop](/wiki/Chado_Tables#Table:_feature_relationshipprop) | feature_relationshipprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                                           | pub_id                          | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_relationshipprop_pub Structure
 
@@ -1561,21 +1561,21 @@ Linking table between feature and synonym.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_synonym"
+<td><p><a href="/wiki/Chado_Tables#Table:_synonym"
 title="Chado Tables">synonym</a></p></td>
 <td>synonym_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_pub"
+<td><p><a href="/wiki/Chado_Tables#Table:_pub"
 title="Chado Tables">pub</a></p></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -1661,7 +1661,7 @@ nothing should be located relative to itself.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
@@ -1671,7 +1671,7 @@ The feature that is being located. Any feature can have zero or more
 featurelocs.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>srcfeature_id</td>
 <td>integer</td>
@@ -1817,7 +1817,7 @@ featureloc Constraints
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [featureloc_pub](Chado_Tables#Table:_featureloc_pub "Chado Tables")
+- [featureloc_pub](/wiki/Chado_Tables#Table:_featureloc_pub)
 
 ---
 
@@ -1826,7 +1826,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
 
-| F-Key                                                       | Name              | Type    | Description         | ----------------------------------------------------------- | ----------------- | ------- | ------------------- |                                                             | featureloc_pub_id | serial  | _PRIMARY KEY_       | [featureloc](Chado_Tables#Table:_featureloc "Chado Tables") | featureloc_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")               | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                       | Name              | Type    | Description         | ----------------------------------------------------------- | ----------------- | ------- | ------------------- |                                                             | featureloc_pub_id | serial  | _PRIMARY KEY_       | [featureloc](/wiki/Chado_Tables#Table:_featureloc) | featureloc_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)               | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
 
 featureloc_pub Structure
 
@@ -1862,14 +1862,14 @@ relational schema, and is completely extensible.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1909,7 +1909,7 @@ featureprop Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [featureprop_pub](Chado_Tables#Table:_featureprop_pub "Chado Tables")
+- [featureprop_pub](/wiki/Chado_Tables#Table:_featureprop_pub)
 
 ---
 
@@ -1918,7 +1918,7 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
 
-| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | featureprop_pub_id | serial  | _PRIMARY KEY_       | [featureprop](Chado_Tables#Table:_featureprop "Chado Tables") | featureprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")                 | pub_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                         | Name               | Type    | Description         | ------------------------------------------------------------- | ------------------ | ------- | ------------------- |                                                               | featureprop_pub_id | serial  | _PRIMARY KEY_       | [featureprop](/wiki/Chado_Tables#Table:_featureprop) | featureprop_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)                 | pub_id             | integer | _UNIQUE#1 NOT NULL_ |
 
 featureprop_pub Structure
 
@@ -1962,7 +1962,7 @@ The synonym itself. Should be human-readable machine-searchable ascii
 text.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1986,7 +1986,7 @@ synonym Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-- [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
+- [feature_synonym](/wiki/Chado_Tables#Table:_feature_synonym)
+- [library_synonym](/wiki/Chado_Tables#Table:_library_synonym)
 
 ---

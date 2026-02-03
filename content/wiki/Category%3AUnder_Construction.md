@@ -5,7 +5,7 @@ title: "Category%253AUnder Construction"
 
 This category tag is included on any page that uses the
 [UnderConstruction
-template](Template:UnderConstruction "Template:UnderConstruction"). Any
+template](/wiki/Template:UnderConstruction). Any
 page or section that has this tag is in the process of being built or
 rebuilt.
 
@@ -16,20 +16,20 @@ The following 6 pages are in this category, out of 6 total.
 ### C
 
 - [Chado Genetic Module -
-  Staging](Chado_Genetic_Module_-_Staging "Chado Genetic Module - Staging")
+  Staging](/wiki/Chado_Genetic_Module_-_Staging)
 - [Chado Phenotype Module -
-  Staging](Chado_Phenotype_Module_-_Staging "Chado Phenotype Module - Staging")
+  Staging](/wiki/Chado_Phenotype_Module_-_Staging)
 - [Chado Phenotype Module at
-  FlyBase](Chado_Phenotype_Module_at_FlyBase "Chado Phenotype Module at FlyBase")
+  FlyBase](/wiki/Chado_Phenotype_Module_at_FlyBase)
 
 ### G
 
-- [GMODviews](GMODviews "GMODviews")
+- [GMODviews](/wiki/GMODviews)
 
 ### U
 
-- [Template:UnderConstruction](Template:UnderConstruction "Template:UnderConstruction")
+- [Template:UnderConstruction](/wiki/Template:UnderConstruction)
 
 ### W
 
-- [Widget:GoogleCalendar](Widget:GoogleCalendar "Widget:GoogleCalendar")
+- [Widget:GoogleCalendar](/wiki/Widget:GoogleCalendar)

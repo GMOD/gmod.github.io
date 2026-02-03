@@ -3,7 +3,7 @@ title: "GMOD Logo Program"
 ---
 # GMOD Logo Program
 
-The [GMOD](Main_Page "Main Page") Logo Program connects graphic design
+The [GMOD](/wiki/Main_Page) Logo Program connects graphic design
 programs at colleges and universities with GMOD users that would like a
 new logo. This is usually done as part of a course, with each student or
 team of students being assigned to a different client (a GMOD user) The
@@ -40,5 +40,5 @@ Oregon, as part of an advanced graphic design course offered in Spring
 quarter 2010.
 
 See [Spring 2010 Logo
-Program](Spring_2010_Logo_Program "Spring 2010 Logo Program") for
+Program](/wiki/Spring_2010_Logo_Program) for
 details, and list of projects and logos that were created.

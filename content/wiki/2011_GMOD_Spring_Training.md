@@ -39,10 +39,10 @@ The ***2011 GMOD Spring Training*** was held March 8-12 at the
 <a href="http://www.nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
 Durham, North Carolina, as part of [GMOD Americas
-2011](GMOD_Americas_2011 "GMOD Americas 2011"). Like previous [GMOD
-Schools](GMOD_Schools "GMOD Schools"), this one focused on installing,
+2011](/wiki/GMOD_Americas_2011). Like previous [GMOD
+Schools](/wiki/GMOD_Schools), this one focused on installing,
 configuring and integrating popular [GMOD
-Components](GMOD_Components "GMOD Components"). Sessions were taught by
+Components](/wiki/GMOD_Components). Sessions were taught by
 GMOD Component developers and GMOD staff. There was space for 25
 participants and admission was competitive.
 
@@ -61,21 +61,21 @@ the course.
 <tr class="odd">
 <td data-valign="top"><p>These tutorials will be updated:</p>
 <ul>
-<li><a href="Apollo_Tutorial" class="mw-redirect"
+<li><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo Tutorial</a></li>
-<li><a href="Chado_Tutorial" class="mw-redirect"
+<li><a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado Tutorial</a></li>
-<li><a href="Galaxy_Tutorial" class="mw-redirect"
+<li><a href="/wiki/Galaxy_Tutorial" class="mw-redirect"
 title="Galaxy Tutorial">Galaxy Tutorial</a></li>
-<li><a href="GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
+<li><a href="/wiki/GBrowse_Tutorial" title="GBrowse Tutorial">GBrowse
 Tutorial</a></li>
-<li><a href="GBrowse_syn_Tutorial" class="mw-redirect"
+<li><a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a></li>
-<li><a href="JBrowse_Tutorial" class="mw-redirect"
+<li><a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a></li>
-<li><a href="MAKER_Tutorial" class="mw-redirect"
+<li><a href="/wiki/MAKER_Tutorial" class="mw-redirect"
 title="MAKER Tutorial">MAKER Tutorial</a></li>
-<li><a href="Tripal_Tutorial" class="mw-redirect"
+<li><a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a></li>
 </ul></td>
 <td>   </td>
@@ -83,7 +83,7 @@ title="Tripal Tutorial">Tripal Tutorial</a></li>
 <ul>
 <li>InterMine
 Tutorial</li>
-<li><a href="SOBA_2011_Tutorial" title="SOBA 2011 Tutorial">SOBA
+<li><a href="/wiki/SOBA_2011_Tutorial" title="SOBA 2011 Tutorial">SOBA
 Tutorial</a></li>
 </ul></td>
 </tr>
@@ -113,8 +113,7 @@ data-cellspacing="0">
 </tr>
 <tr class="odd">
 <td style="color: #aaaaaa">7pm-9pm</td>
-<td style="text-align: center;"><strong><a
-href="March_2011_GMOD_Meeting#Introduction_to_GMOD"
+<td style="text-align: center;"><strong><a href="/wiki/March_2011_GMOD_Meeting#Introduction_to_GMOD"
 title="March 2011 GMOD Meeting"><span
 style="color: #aaaaff">Introduction to GMOD</span></a></strong></td>
 </tr>
@@ -126,8 +125,7 @@ style="color: #aaaaff">Introduction to GMOD</span></a></strong></td>
 </tr>
 <tr class="even">
 <td style="color: #aaaaaa">9am-5pm</td>
-<td style="text-align: center;"><strong><a
-href="March_2011_GMOD_Meeting" title="March 2011 GMOD Meeting"><span
+<td style="text-align: center;"><strong><a href="/wiki/March_2011_GMOD_Meeting" title="March 2011 GMOD Meeting"><span
 style="color: #aaaaff">March 2011 GMOD Community
 Meeting</span></a></strong></td>
 </tr>
@@ -139,8 +137,7 @@ Meeting</span></a></strong></td>
 </tr>
 <tr class="odd">
 <td style="color: #aaaaaa">8:30am-5pm</td>
-<td style="text-align: center;"><strong><a
-href="Satellite_Meetings_-_GMOD_Americas_2011"
+<td style="text-align: center;"><strong><a href="/wiki/Satellite_Meetings_-_GMOD_Americas_2011"
 title="Satellite Meetings - GMOD Americas 2011"><span
 style="color: #aaaaff">Satellite Meetings</span></a></strong></td>
 </tr>
@@ -161,15 +158,13 @@ GMOD Spring Training</strong></strong>
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="Apollo.1" title="Apollo">Apollo</a> • <a
-href="MAKER.1" title="MAKER">MAKER</a> • <a href="GBrowse.1"
-title="GBrowse">GBrowse</a> • <a href="Chado" class="mw-redirect"
-title="Chado">Chado</a> • <a href="InterMine"
-title="InterMine">InterMine</a> • <a href="JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="Tripal.1"
-title="Tripal">Tripal</a> • <a href="GFF3" title="GFF3">GFF3</a> • <a
-href="Galaxy.1" title="Galaxy">Galaxy</a> • <a href="SOBA.1"
+<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
+title="Chado">Chado</a> • <a href="/wiki/InterMine"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
+title="Tripal">Tripal</a> • <a href="/wiki/GFF3" title="GFF3">GFF3</a> • <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> • <a href="/wiki/SOBA.1"
 title="SOBA">SOBA</a></strong></p>
 </td>
 </tr>
@@ -187,21 +182,21 @@ project staff:
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.wsu.edu" class="external text"
-rel="nofollow">Washington State University</a> | Alex Kalderimis | [InterMine](InterMine "InterMine") | <a href="http://flymine.org" class="external text"
-rel="nofollow">FlyMine</a> | [Barry Moore](User%253ABmoore "User%253ABmoore") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> | [Ed Lee](User%253AElee "User%253AElee") | [Apollo](Apollo.1 "Apollo") | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](User%253AMckays "User%253AMckays") | [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), [GBrowse](GBrowse.1 "GBrowse") | <a href="http://iplantcollaborarive" class="external text"
-rel="nofollow">iPlant Collaborative</a> | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
+| [Scott Cain](/wiki/User%253AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
+rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%253AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%253ASficklin) | [Tripal](/wiki/Tripal.1) | <a href="http://www.wsu.edu" class="external text"
+rel="nofollow">Washington State University</a> | Alex Kalderimis | [InterMine](/wiki/InterMine) | <a href="http://flymine.org" class="external text"
+rel="nofollow">FlyMine</a> | [Barry Moore](/wiki/User%253ABmoore) | [MAKER](/wiki/MAKER.1) | <a href="http://www.utah.edu" class="external text"
+rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%253AElee) | [Apollo](/wiki/Apollo.1) | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%253AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1), [GBrowse](/wiki/GBrowse.1) | <a href="http://iplantcollaborarive" class="external text"
+rel="nofollow">iPlant Collaborative</a> | [Mitch Skinner](/wiki/User%253AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
 rel="nofollow">University of California, Berkeley</a> |
 
 # Prerequisites
 
 *The course requires a minimal level of Linux systems administration
 knowledge* (see [Computing
-Requirements](Computing_Requirements "Computing Requirements")). By "a
+Requirements](/wiki/Computing_Requirements)). By "a
 minimal level of Linux systems administration knowledge" we mean that
 participants should be
 
@@ -210,10 +205,10 @@ participants should be
 
 *A good benchmark for this level of knowledge is that you should be able
 to get a basic [GBrowse
-installation](GBrowse_Install_HOWTO "GBrowse Install HOWTO") (that is,
-GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
+installation](/wiki/GBrowse_Install_HOWTO) (that is,
+GBrowse without [MySQL](/wiki/MySQL)) up and running with the example
 GBrowse data.* This also requires installing Apache, and
-[BioPerl](BioPerl "BioPerl") and all its dependencies.
+[BioPerl](/wiki/BioPerl) and all its dependencies.
 
 # System Requirements
 
@@ -239,7 +234,7 @@ course:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a> | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
-alt="Linux" /> | A free VMware player is available for [Microsoft Windows](Category%253AWindows "Category%253AWindows") and [Linux](Category%253ALinux "Category%253ALinux") [operating systems](Glossary#Operating_System "Glossary") from <a href="http://vmware.com/products/player/" class="external text"
+alt="Linux" /> | A free VMware player is available for [Microsoft Windows](/wiki/Category%253AWindows) and [Linux](/wiki/Category%253ALinux) [operating systems](/wiki/Glossary#Operating_System) from <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it. There are multiple versions. Be sure to download a version that can run on your laptop. |
 
 
@@ -249,7 +244,7 @@ rel="nofollow">VMware</a>. You will need to register to download it. There are m
 |----|----|
 | <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
-alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several other options, **all of which require an Intel Mac**: |
+alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under [Mac OS X](/wiki/Category%253AMac_OS_X). However, there are several other options, **all of which require an Intel Mac**: |
 
 VMware Fusion
 
@@ -278,7 +273,7 @@ were notified of admission status by January 21.
 
 **Admission to the course was competitive and was based on the strength
 of the application (especially the statement of interest).** In
-[2010](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
+[2010](/wiki/2010_GMOD_Summer_School_-_Americas)
 there were over 60 applicants for 25 slots.
 
 # Costs
@@ -296,7 +291,7 @@ width="100" height="93" alt="NESCent" /></a>
 The <a href="http://nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> is
 hosting this course and all other [GMOD Americas
-2011](GMOD_Americas_2011 "GMOD Americas 2011") events. NESCent is
+2011](/wiki/GMOD_Americas_2011) events. NESCent is
 interested in outreach to groups who are underrepresented in
 evolutionary biology and improving evolution education, and offers
 resources for scientists, educators, and the general public that meet
@@ -307,9 +302,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />
 
-The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring this course
+The [Galaxy Project](/wiki/Galaxy.1) is also sponsoring this course
 and all other [GMOD Americas
-2011](GMOD_Americas_2011 "GMOD Americas 2011") events. Galaxy is a
+2011](/wiki/GMOD_Americas_2011) events. Galaxy is a
 analysis and data integration framework that enables biologists to both
 analyze their data, and to archive those analyses (including data sets
 and program parameters) for future reference. Galaxy is developed at
@@ -323,14 +318,14 @@ participation in this event.
 # Get the Word Out!
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
-width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
+width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf)
 
 Help spread the word about GMOD Spring Training and other [GMOD Americas
-2011](GMOD_Americas_2011 "GMOD Americas 2011") events by posting and
+2011](/wiki/GMOD_Americas_2011) events by posting and
 distributing [this
-flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "File:GMODAmericas2011Flier.pdf"),
+flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf),
 or the [event
-announcements](GMOD_News#GMOD_Spring_Training%253A_Apply_Now "GMOD News") to
+announcements](/wiki/GMOD_News#GMOD_Spring_Training%253A_Apply_Now) to
 your communities, mailing lists, and organizations.
 
 There are many organizations out there that are struggling to cope with
@@ -341,7 +336,7 @@ exploit their data.
 # Travel, Lodging and Meals
 
 See the [GMOD Americas
-2011](GMOD_Americas_2011#Logistics "GMOD Americas 2011") page for
+2011](/wiki/GMOD_Americas_2011#Logistics) page for
 details.
 
 # Feedback

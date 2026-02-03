@@ -24,8 +24,8 @@ title: "Chado Expression Module"
 
 This module is for how curated expression data is stored in Chado. This
 module is totally dependent on the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module"). Objects in the
-[genetic module](Chado_Genetic_Module "Chado Genetic Module") cannot
+module](/wiki/Chado_Sequence_Module). Objects in the
+[genetic module](/wiki/Chado_Genetic_Module) cannot
 connect to expression data except by going *via* the sequence module. We
 assume that we'll **always** have a controlled vocabulary for expression
 data.
@@ -38,11 +38,11 @@ embryonic stage 13-15 in the cephalic segment as reported in a
 class="external text" rel="nofollow">paper by Blackman <em>et al.</em>
 in 1991</a>. This would be implemented in the expression module by
 linking the *dpp* transcript feature to expression via
-[feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
+[feature_expression](/wiki/Chado_Tables#Table:_feature_expression)
 (we would add a *pub_id* column to
-[feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
+[feature_expression](/wiki/Chado_Tables#Table:_feature_expression)
 to link to the publication in the [pub
-table](Chado_Tables#Table:_pub "Chado Tables")). We would then link the
+table](/wiki/Chado_Tables#Table:_pub)). We would then link the
 following cvterms to the expression using
 [expression_cvterm](#Table:_expression_cvterm):
 
@@ -65,7 +65,7 @@ rel="nofollow">OBO</a> ontologies can share the same *cvterm_type*.
 
 ### Mage and Expression
 
-The [Mage module](Chado_Mage_Module "Chado Mage Module") and the
+The [Mage module](/wiki/Chado_Mage_Module) and the
 Expression module can be considered overlapping but complementary. The
 Mage module can store data taken directly from the experimental results
 whereas the Expression module is typically used to store summary data
@@ -131,7 +131,7 @@ eimage Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [expression_image](Chado_Tables#Table:_expression_image "Chado Tables")
+- [expression_image](/wiki/Chado_Tables#Table:_expression_image)
 
 ------------------------------------------------------------------------
 
@@ -150,12 +150,12 @@ The expression table is essentially a bridge table.
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [expression_cvterm](Chado_Tables#Table:_expression_cvterm "Chado Tables")
-- [expression_image](Chado_Tables#Table:_expression_image "Chado Tables")
-- [expression_pub](Chado_Tables#Table:_expression_pub "Chado Tables")
-- [expressionprop](Chado_Tables#Table:_expressionprop "Chado Tables")
-- [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-- [wwwuser_expression](Chado_Tables#Table:_wwwuser_expression "Chado Tables")
+- [expression_cvterm](/wiki/Chado_Tables#Table:_expression_cvterm)
+- [expression_image](/wiki/Chado_Tables#Table:_expression_image)
+- [expression_pub](/wiki/Chado_Tables#Table:_expression_pub)
+- [expressionprop](/wiki/Chado_Tables#Table:_expressionprop)
+- [feature_expression](/wiki/Chado_Tables#Table:_feature_expression)
+- [wwwuser_expression](/wiki/Chado_Tables#Table:_wwwuser_expression)
 
 ------------------------------------------------------------------------
 
@@ -166,16 +166,16 @@ Tables referencing this one via Foreign Key Constraints:
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | expression_cvterm_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 |  | rank | integer | *NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_cvterm Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [expression_cvtermprop](Chado_Tables#Table:_expression_cvtermprop "Chado Tables")
+- [expression_cvtermprop](/wiki/Chado_Tables#Table:_expression_cvtermprop)
 
 ------------------------------------------------------------------------
 
@@ -186,8 +186,8 @@ Tables referencing this one via Foreign Key Constraints:
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | expression_image_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [eimage](Chado_Tables#Table:_eimage "Chado Tables") | eimage_id | integer | *UNIQUE#1 NOT NULL* |
+| [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [eimage](/wiki/Chado_Tables#Table:_eimage) | eimage_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_image Structure
 
@@ -200,8 +200,8 @@ expression_image Structure
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | expression_pub_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_pub Structure
 
@@ -214,14 +214,14 @@ expression_pub Structure
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | feature_expression_id | serial | *PRIMARY KEY* |
-| [expression](Chado_Tables#Table:_expression "Chado Tables") | expression_id | integer | *UNIQUE#1 NOT NULL* |
-| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [expression](/wiki/Chado_Tables#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_expression Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_expressionprop](Chado_Tables#Table:_feature_expressionprop "Chado Tables")
+- [feature_expressionprop](/wiki/Chado_Tables#Table:_feature_expressionprop)
 
 ------------------------------------------------------------------------

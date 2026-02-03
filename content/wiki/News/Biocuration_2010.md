@@ -16,7 +16,7 @@ research communtities working with biological databases. It is sponsored
 by the <a href="http://www.biocurator.org/" class="external text"
 rel="nofollow">International Society for Biocuration</a> (an
 organization which I strongly encourage [GMOD
-members](../GMOD_Membership "GMOD Membership") to join).
+members](../GMOD_Membership) to join).
 
 Biocuration 2010 "aims to invite all biocurators and their colleagues,
 providing them with a platform where all the participants including
@@ -40,13 +40,13 @@ September 6*.
 
 The abstract submission deadline has been extended to August 31.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/24,
+*Posted to the [GMOD News](../GMOD_News) on 2010/08/24,
 updated 2010/08/25*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

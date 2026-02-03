@@ -4,8 +4,8 @@ title: "GMOD Malaysia 2014/Chado Tutorial"
 # GMOD Malaysia 2014/Chado Tutorial
 
 This <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](../User%253AScott "User%253AScott") at
-[GMOD Malaysia 2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"),
+tutorial was presented by [Scott Cain](../User%253AScott) at
+[GMOD Malaysia 2014](../GMOD_Malaysia_2014.1),
 February 2014. This tutorial requires Chado version 1.22.
 
 The most recent Chado tutorial can be found at the
@@ -151,19 +151,19 @@ database.
 Or six years of school in 15 minutes or less.
 
 - [A Brief Guide to
-  Databases](../A_Brief_Guide_to_Databases "A Brief Guide to Databases")
-- [Chado Tables](../Chado_Tables "Chado Tables")
+  Databases](../A_Brief_Guide_to_Databases)
+- [Chado Tables](../Chado_Tables)
 
-##### What's a [database](../Databases_and_GMOD "Databases and GMOD")?
+##### What's a [database](../Databases_and_GMOD)?
 
-- Chado is a [schema](../Glossary#Schema "Glossary"), a database
+- Chado is a [schema](../Glossary#Schema), a database
   design - a blueprint for a database containing genomic data
 - Distinct from
   - [Database Management System
-    (DBMS)](../Glossary#Database_Management_System "Glossary")
+    (DBMS)](../Glossary#Database_Management_System)
     - Software system for storing databases
-    - _e.g.,_ Oracle, [PostgreSQL](../PostgreSQL "PostgreSQL"),
-      [MySQL](../MySQL "MySQL")
+    - _e.g.,_ Oracle, [PostgreSQL](../PostgreSQL),
+      [MySQL](../MySQL)
   - Database, a very loose term
     - Any set of organized data that is readable by a computer
     - A web site with database driven content, e.g., FlyBase
@@ -175,7 +175,7 @@ SQL is a standardized query language for defining and manipulating
 databases. Chado uses it. SQL is supported by all major DBMSs.
 
 [FlyBase Field Mapping
-Tables](../FlyBase_Field_Mapping_Tables "FlyBase Field Mapping Tables")
+Tables](../FlyBase_Field_Mapping_Tables)
 shows some example SQL that queries the FlyBase Chado database. (Caveat:
 FlyBase sometimes uses Chado in ways that no other organizations do.)
 
@@ -197,18 +197,18 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Extensible**
   - Write your own modules and properties
 - **Widely used**
-  - [FlyBase](../Category%253AFlyBase "Category%253AFlyBase") - Chado started
+  - [FlyBase](../Category%253AFlyBase) - Chado started
     here, large diverse dataset and organization
   - <a href="http://xenbase.org" class="external text"
     rel="nofollow">Xenbase</a> - Smaller, but with several IT staff
-  - [ParameciumDB](../ParameciumDB "ParameciumDB") - Smaller still,
+  - [ParameciumDB](../ParameciumDB) - Smaller still,
     complete GMOD shop, including Chado
   - <a href="http://www.igs.umaryland.edu" class="external text"
     rel="nofollow">IGS</a> - Large-scale annotation/comparative data in
     Chado, more than a dozen active developers
   - Plus AphidBase, BeeBase, BeetleBase, BovineBase, ...
 - **Great Community of Support**
-  - [Mailing List](../GMOD_Mailing_Lists "GMOD Mailing Lists")
+  - [Mailing List](../GMOD_Mailing_Lists)
 
 ### Chado Architecture: Modules
 
@@ -227,24 +227,24 @@ title="ChadoModules.ppt">PowerPoint animation</a>)
 Arrows are dependencies between modules. Dependencies indicate one or
 more _foreign keys_ linking modules.
 
-- [General](../Chado_General_Module "Chado General Module") -
+- [General](../Chado_General_Module) -
   Identifying things within the DB to the outside world, and identifying
   things from other databases.
-- [Controlled Vocabulary (cv)](../Chado_CV_Module "Chado CV Module") -
+- [Controlled Vocabulary (cv)](../Chado_CV_Module) -
   Controlled vocabularies and ontologies
 - [Publication
-  (pub)](../Chado_Publication_Module "Chado Publication Module") -
+  (pub)](../Chado_Publication_Module) -
   Publications and attribution
-- [Organism](../Chado_Organism_Module "Chado Organism Module") -
+- [Organism](../Chado_Organism_Module) -
   Describes species; pretty simple. Phylogeny module stores
   relationships.
-- [Sequence](../Chado_Sequence_Module "Chado Sequence Module") - Genomic
+- [Sequence](../Chado_Sequence_Module) - Genomic
   features and things that can be tied to or descend from genomic
   features.
-- [Map](../Chado_Map_Module "Chado Map Module") - Maps without sequence
-- [Genetic](../Chado_Genetic_Module "Chado Genetic Module") - Genetic
+- [Map](../Chado_Map_Module) - Maps without sequence
+- [Genetic](../Chado_Genetic_Module) - Genetic
   data and genotypes
-- [Companalysis](../Chado_Companalysis_Module "Chado Companalysis Module") -
+- [Companalysis](../Chado_Companalysis_Module) -
   Storage of Computational sequence analysis. The key concept is that
   the results of a computational analysis can be interpreted or
   described as a sequence feature.
@@ -254,25 +254,25 @@ more _foreign keys_ linking modules.
 These modules have been contributed to Chado by users who developed
 them.
 
-- [Mage](../Chado_Mage_Module "Chado Mage Module") - Microarray data
-- [Stock](../Chado_Stock_Module "Chado Stock Module") - Specimens and
+- [Mage](../Chado_Mage_Module) - Microarray data
+- [Stock](../Chado_Stock_Module) - Specimens and
   biological collections
 - [Natural
-  Diversity](../Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group") -
+  Diversity](../Chado_Natural_Diversity_Module_Working_Group) -
   geolocation, phenotype, genotype
 - Plus property tables in many modules.
 
 #### Plus
 
-- [Audit](../Chado_Audit_Module "Chado Audit Module") - Database audit
+- [Audit](../Chado_Audit_Module) - Database audit
   trail
-- [Expression](../Chado_Expression_Module "Chado Expression Module") -
+- [Expression](../Chado_Expression_Module) -
   Summaries of RNA and protein expression
-- [Library](../Chado_Library_Module "Chado Library Module") -
+- [Library](../Chado_Library_Module) -
   Descriptions of molecular libraries
-- [Phenotype](../Chado_Phenotype_Module "Chado Phenotype Module") -
+- [Phenotype](../Chado_Phenotype_Module) -
   Phenotypic data
-- [Phylogeny](../Chado_Phylogeny_Module "Chado Phylogeny Module") -
+- [Phylogeny](../Chado_Phylogeny_Module) -
   Organisms and phylogenetic trees
 
 #### Module Caveats
@@ -285,7 +285,7 @@ modules are all widely used and cleanly designed. After that modules
 become less frequently used (Stock, Expression, Phenotype, Mage). Also
 several modules are not as cleanly separated as we would like them to
 be. Phenotypic data is spread over several modules. Organism and
-Phylogeny overlap. [CMap](../CMap.1 "CMap") is all about maps, but it
+Phylogeny overlap. [CMap](../CMap.1) is all about maps, but it
 does not use the Map module.
 
 From Jeff Bowes, at XenBase:
@@ -313,7 +313,7 @@ we'll take a data-centric view and imagine what we want to store in our
 database, then learn the Chado way of storing it.
 
 During this course you'll be working with genome annotation data from
-[MAKER](../MAKER.1 "MAKER"). We'll simplify this and start by
+[MAKER](../MAKER.1). We'll simplify this and start by
 considering that we have annotation on chromosomes that we want to store
 in our database. These are the sort of things we want to store:
 
@@ -341,7 +341,7 @@ feature table.
 
 #### Sequence Module
 
-[Sequence Module](../Chado_Sequence_Module "Chado Sequence Module")
+[Sequence Module](../Chado_Sequence_Module)
 
 The sequence module is used to manage genomic features.
 
@@ -357,7 +357,7 @@ relative to other features, and they can form part-whole and other
 relationships with other features.
 
 Features are stored in the [feature
-table](../Chado_Sequence_Module#Table:_feature "Chado Sequence Module").
+table](../Chado_Sequence_Module#Table:_feature).
 
 | Table: feature |            |             | -------------- | ---- | ---------- | ------- | ----------- | --- | feature_id     | name | uniquename | type_id | is_analysis | ... |
 
@@ -413,14 +413,13 @@ height="604" alt="FlyBaseCVTermViewer.png" /></a> |
 
 ##### CVs and Ontologies in Chado
 
-[Chado CV Module](../Chado_CV_Module "Chado CV Module")
+[Chado CV Module](../Chado_CV_Module)
 
 <a href="../File:ChadoModulesCV.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ChadoModulesCV.png" width="588"
 height="431" alt="ChadoModulesCV.png" /></a>
 
-(See the <a
-href="Chado_CV_Module#Table:_cvterm"
+(See the <a href="/wiki/Chado_CV_Module#Table:_cvterm"
 class="external text" rel="nofollow">CVTerm table</a> referencing table
 list.)
 
@@ -471,15 +470,15 @@ longer answer that question.
 
 The Chado CV Module supports such complex queries with ontologies by
 pre-calculating the _[transitive
-closure](../Chado_CV_Module#Transitive_Closure "Chado CV Module")_ of
+closure](../Chado_CV_Module#Transitive_Closure)_ of
 all terms in an ontology. There is a great explanation of transitive
 closure on the [Chado CV Module
-page](../Chado_CV_Module#Transitive_Closure "Chado CV Module"). Also see
+page](../Chado_CV_Module#Transitive_Closure). Also see
 the description of these 3 tables:
 
-- [cvterm](../Chado_CV_Module#Table:_cvterm "Chado CV Module")
-- [cvterm_relationship](../Chado_CV_Module#Table:_cvterm_relationship "Chado CV Module")
-- [cvtermpath](../Chado_CV_Module#Table:_cvtermpath "Chado CV Module")
+- [cvterm](../Chado_CV_Module#Table:_cvterm)
+- [cvterm_relationship](../Chado_CV_Module#Table:_cvterm_relationship)
+- [cvtermpath](../Chado_CV_Module#Table:_cvtermpath)
 
 We won't go into any more detail on it here.
 
@@ -534,7 +533,7 @@ other databases) within this database.
 
 ##### IDs
 
-[General module tables](../Chado_General_Module "Chado General Module")
+[General module tables](../Chado_General_Module)
 
 Biological databases have _public_ and _private_ IDs and they are
 usually different things.
@@ -561,7 +560,7 @@ Most DBMSs have built-in mechanisms for generating private IDs.
 
 ##### IDs in Chado
 
-The [General module](../Chado_General_Module "Chado General Module")
+The [General module](../Chado_General_Module)
 defines _public_ IDs of
 
 - items defined in this databases, and
@@ -585,8 +584,7 @@ there. It wouldn't make sense, for example, to have a column called
 features, like chromosomes, that aren't gene products.
 
 These feature-specific attributes are known as 'properties' of a feature
-in Chado. They are stored in a table called <a
-href="Chado_Sequence_Module#Table:_featureprop"
+in Chado. They are stored in a table called <a href="/wiki/Chado_Sequence_Module#Table:_featureprop"
 class="external text" rel="nofollow">featureprop</a>.
 
 | Table: featureprop |         | ------------------ | ---------- | ------- | ----- | ---- | featureprop_id     | feature_id | type_id | value | rank |
@@ -605,8 +603,7 @@ needs to accommodate this.
 
 ##### Relationships
 
-Relationships between features are stored in the <a
-href="Chado_Sequence_Module#Table:_feature_relationship"
+Relationships between features are stored in the <a href="/wiki/Chado_Sequence_Module#Table:_feature_relationship"
 class="external text" rel="nofollow">feature_relationship table</a>.
 
 | Table: feature_relationship |           |      | --------------------------- | ---------- | --------- | ------- | ---- | --- | feature_relationship_id     | subject_id | object_id | type_id | rank | ... |
@@ -637,8 +634,7 @@ feature. Some features such as chromosomes are not localized in sequence
 coordinates, though contigs/assemblies which make up the chromosomes
 could be.
 
-Locations are stored in the <a
-href="Chado_Sequence_Module#Table:_featureloc"
+Locations are stored in the <a href="/wiki/Chado_Sequence_Module#Table:_featureloc"
 class="external text" rel="nofollow">featureloc table</a>, and a feature
 can have zero or more featureloc records. Features will have either
 
@@ -649,15 +645,14 @@ can have zero or more featureloc records. Features will have either
   gene discovered using classical genetics techniques.
 - Features with multiple featurelocs are explained below.
 
-(For a good explanation of how features are located in Chado see <a
-href="Chado_Sequence_Module#Feature_Locations"
+(For a good explanation of how features are located in Chado see <a href="/wiki/Chado_Sequence_Module#Feature_Locations"
 class="external text" rel="nofollow">Feature Locations</a>. This
 explanation is excerpted from that.)
 
 ###### Interbase Coordinates
 
 This is covered in more detail on the [GMOD web
-site](../Introduction_to_Chado#Interbase_Coordinates "Introduction to Chado").
+site](../Introduction_to_Chado#Interbase_Coordinates).
 
 <a href="../File:Interbase.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a0/Interbase.png" width="352" height="296"
@@ -692,8 +687,7 @@ may also span sequence alignments.
 
 ###### featureloc Table
 
-Feature location information is stored in the <a
-href="Chado_Sequence_Module#Table:_featureloc"
+Feature location information is stored in the <a href="/wiki/Chado_Sequence_Module#Table:_featureloc"
 class="external text" rel="nofollow">featureloc table</a>.
 
 | Table: featureloc |               |      | ----------------- | ---------- | ------------- | ---- | ---- | --- | featureloc_id     | feature_id | srcfeature_id | fmin | rank | ... |
@@ -701,7 +695,7 @@ class="external text" rel="nofollow">featureloc table</a>.
 ##### Example: Gene
 
 **Note:** This example and some of the figures are extracted from
-_<a href="Image:A_Chado_Case_Study.pdf"
+_<a href="/wiki/Image:A_Chado_Case_Study.pdf"
 class="external text" rel="nofollow">A Chado case study: an
 ontology-based modular schema for representing genome-associated
 biological information</a>_, by Christopher J. Mungall, David B. Emmert,
@@ -964,8 +958,7 @@ relationships between them?
 ##### Example: Computational Analysis
 
 **Note:** This is example is based on an example by Scott Cain from an
-earlier <a
-href="Image:ChadoWorkshopArthopod2008.pdf"
+earlier <a href="/wiki/Image:ChadoWorkshopArthopod2008.pdf"
 class="external text" rel="nofollow">Chado workshop</a>.
 
 You can store the results of computational analysis such as BLAST or
@@ -986,21 +979,16 @@ vertical line becomes a record in the feature_relationship table.
 
 ##### Other Feature Annotations
 
-Link to any feature via <a
-href="Chado_Sequence_Module#Table:_feature"
+Link to any feature via <a href="/wiki/Chado_Sequence_Module#Table:_feature"
 class="external text" rel="nofollow">feature_id</a>:
 
-- GO terms in <a
-  href="Chado_Sequence_Module#Table:_feature_cvterm"
+- GO terms in <a href="/wiki/Chado_Sequence_Module#Table:_feature_cvterm"
   class="external text" rel="nofollow">feature_cvterm</a>
-- DB links in <a
-  href="Chado_Sequence_Module#Table:_feature_dbxref"
+- DB links in <a href="/wiki/Chado_Sequence_Module#Table:_feature_dbxref"
   class="external text" rel="nofollow">feature_dbxref</a>
-- Miscellaneous features in <a
-  href="Chado_Sequence_Module#Table:_featureprop"
+- Miscellaneous features in <a href="/wiki/Chado_Sequence_Module#Table:_featureprop"
   class="external text" rel="nofollow">featureprop</a>
-- Attribution in <a
-  href="Chado_Sequence_Module#Table:_feature_pub"
+- Attribution in <a href="/wiki/Chado_Sequence_Module#Table:_feature_pub"
   class="external text" rel="nofollow">feature_pub</a>
 
 ##### Extending Chado: Properties tables and new modules
@@ -1028,7 +1016,7 @@ extremely extensible, but they do so at a cost.
 
 ### Prerequisites
 
-Using data from [MAKER](../MAKER.1 "MAKER").
+Using data from [MAKER](../MAKER.1).
 
 #### PostgreSQL
 
@@ -1079,7 +1067,7 @@ CPAN when using `sudo cpan` but is easy to install "by hand" or using
      cpan
      cpan> force install DBIx::DBStag
 
-#### [BioPerl](../BioPerl "BioPerl")
+#### [BioPerl](../BioPerl)
 
 Version 1.6 already installed.
 
@@ -1140,7 +1128,7 @@ we put in as our default organism is present in the database. Since it
 isn't, it will ask us to add it. It does this by automatically executing
 a script that comes with Chado, gmod_add_organism.pl. You can execute
 this script any time you want to [add organisms to your
-database](../Load_GFF_Into_Chado#Add_an_Entry_for_Your_Organism "Load GFF Into Chado"):
+database](../Load_GFF_Into_Chado#Add_an_Entry_for_Your_Organism):
 
      Adding Pythium to the database...
 
@@ -1195,7 +1183,7 @@ careful about that `./` in front of `tmp`)** or with a make target that
 was designed for this: `make rm_locks`, which only gets rid of the lock
 files but leaves the ontology files in place.
 
-### Preparing [GFF](../GFF "GFF") data for loading
+### Preparing [GFF](../GFF) data for loading
 
 Issues:
 
@@ -1204,10 +1192,10 @@ Issues:
 - fasta → gff
 - utility scripts for various preparation activities
 
-#### Working with Large [GFF](../GFF "GFF") files
+#### Working with Large [GFF](../GFF) files
 
 Large files (more than 3-500,000 rows) can cause headaches for the
-[GFF3](../GFF3 "GFF3") bulk loader, but genome annotation GFF3 files can
+[GFF3](../GFF3) bulk loader, but genome annotation GFF3 files can
 frequently be millions of lines. What to do? The script
 `gmod_gff3_preprocessor.pl` will help with this, both by splitting the
 files in to reasonable size chunks and sorting the output so that it
@@ -1227,7 +1215,7 @@ sorting is good for two reasons:
     features in the GFF file. Chado doesn't care about that but you
     might.
 
-#### Loading [GFF3](../GFF3 "GFF3")
+#### Loading [GFF3](../GFF3)
 
 Working with the large number of files that come out of the preprocessor
 can be a bit of a headache, so I've 'developed' a few tricks. Basically,
@@ -1313,7 +1301,7 @@ load as soon as you see this message:
     you did not set the --noexon option, which you probably want.
     Please see `perldoc gmod_bulk_load_gff3.pl for more information.
 
-Argh! Now the loader is pointing out that this [GFF](../GFF "GFF") file
+Argh! Now the loader is pointing out that this [GFF](../GFF) file
 has both exons and CDS features and Chado prefers something a little
 different. While the loader will load this data as written, it won't be
 "standard." Instead, we'll add the `--noexon` option (which tells the
@@ -1328,8 +1316,8 @@ loader uses to keep track of IDs.
 
 ### Loading other data
 
-[Chado XML](../Chado_XML "Chado XML") and [XORT](../XORT.1 "XORT"), but
-really, [Tripal](../Tripal.1 "Tripal") bulk file loader.
+[Chado XML](../Chado_XML) and [XORT](../XORT.1), but
+really, [Tripal](../Tripal.1) bulk file loader.
 
 ## Chado for Expression, Genotype, Phenotype, and Natural Diversity
 
@@ -1440,7 +1428,7 @@ in 1991</a>.
 
 This would be implemented in the expression module by linking the _dpp_
 transcript feature to expression via
-[feature_expression](../Chado_Tables#Table:_feature_expression "Chado Tables").
+[feature_expression](../Chado_Tables#Table:_feature_expression).
 We would then link the following cvterms to the expression using
 [expression_cvterm](#Table:_expression_cvterm):
 
@@ -1513,26 +1501,26 @@ then you will have to write a script to check that.
 Tables referencing this one via Foreign Key Constraints:
 
 - [expression_cvterm](#Table:_expression_cvterm),
-  [expression_image](../Chado_Tables#Table:_expression_image "Chado Tables"),
-  [expression_pub](../Chado_Tables#Table:_expression_pub "Chado Tables"),
-  [expressionprop](../Chado_Tables#Table:_expressionprop "Chado Tables"),
-  [feature_expression](../Chado_Tables#Table:_feature_expression "Chado Tables"),
-  [wwwuser_expression](../Chado_Tables#Table:_wwwuser_expression "Chado Tables")
+  [expression_image](../Chado_Tables#Table:_expression_image),
+  [expression_pub](../Chado_Tables#Table:_expression_pub),
+  [expressionprop](../Chado_Tables#Table:_expressionprop),
+  [feature_expression](../Chado_Tables#Table:_feature_expression),
+  [wwwuser_expression](../Chado_Tables#Table:_wwwuser_expression)
 
 #### Table: expression_cvterm
 
-| F-Key                                                  | Name                 | Type    | Description         | ------------------------------------------------------ | -------------------- | ------- | ------------------- |                                                        | expression_cvterm_id | serial  | _PRIMARY KEY_       | [expression](#Table:_expression)                       | expression_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id            | integer | _UNIQUE#1 NOT NULL_ |                                                        | rank                 | integer | _NOT NULL_          | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_type_id       | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                  | Name                 | Type    | Description         | ------------------------------------------------------ | -------------------- | ------- | ------------------- |                                                        | expression_cvterm_id | serial  | _PRIMARY KEY_       | [expression](#Table:_expression)                       | expression_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm) | cvterm_id            | integer | _UNIQUE#1 NOT NULL_ |                                                        | rank                 | integer | _NOT NULL_          | [cvterm](../Chado_Tables#Table:_cvterm) | cvterm_type_id       | integer | _UNIQUE#1 NOT NULL_ |
 
 expression_cvterm Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [expression_cvtermprop](../Chado_Tables#Table:_expression_cvtermprop "Chado Tables")
+- [expression_cvtermprop](../Chado_Tables#Table:_expression_cvtermprop)
 
 ### Genotype
 
 Defined in the [Chado Genetic
-Module](../Chado_Genetic_Module "Chado Genetic Module").
+Module](../Chado_Genetic_Module).
 
 A _genotype_ in Chado is basically a _name_, with a pile of _features_
 associated to it.
@@ -1603,12 +1591,12 @@ genotype Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_genotype](../Chado_Tables#Table:_feature_genotype "Chado Tables"),
-  [phendesc](../Chado_Tables#Table:_phendesc "Chado Tables"),
-  [phenotype_comparison](../Chado_Tables#Table:_phenotype_comparison "Chado Tables"),
-  [phenstatement](../Chado_Tables#Table:_phenstatement "Chado Tables"),
-  [stock_genotype](../Chado_Tables#Table:_stock_genotype "Chado Tables"),
-  [wwwuser_genotype](../Chado_Tables#Table:_wwwuser_genotype "Chado Tables")
+- [feature_genotype](../Chado_Tables#Table:_feature_genotype),
+  [phendesc](../Chado_Tables#Table:_phendesc),
+  [phenotype_comparison](../Chado_Tables#Table:_phenotype_comparison),
+  [phenstatement](../Chado_Tables#Table:_phenstatement),
+  [stock_genotype](../Chado_Tables#Table:_stock_genotype),
+  [wwwuser_genotype](../Chado_Tables#Table:_wwwuser_genotype)
 
 #### Table: feature_genotype
 
@@ -1691,7 +1679,7 @@ feature_genotype Structure
 ### Environment
 
 Also defined in the [Chado Genetic
-Module](../Chado_Genetic_Module "Chado Genetic Module").
+Module](../Chado_Genetic_Module).
 
 #### Table: environment
 
@@ -1702,13 +1690,13 @@ The environmental component of a phenotype description.
 Tables referencing this one via Foreign Key Constraints:
 
 - [environment_cvterm](#Table:_environment_cvterm),
-  [phendesc](../Chado_Tables#Table:_phendesc "Chado Tables"),
-  [phenotype_comparison](../Chado_Tables#Table:_phenotype_comparison "Chado Tables"),
-  [phenstatement](../Chado_Tables#Table:_phenstatement "Chado Tables")
+  [phendesc](../Chado_Tables#Table:_phendesc),
+  [phenotype_comparison](../Chado_Tables#Table:_phenotype_comparison),
+  [phenstatement](../Chado_Tables#Table:_phenstatement)
 
 #### Table: environment_cvterm
 
-| F-Key                                                  | Name                  | Type    | Description         | ------------------------------------------------------ | --------------------- | ------- | ------------------- |                                                        | environment_cvterm_id | serial  | _PRIMARY KEY_       | [environment](#Table:_environment)                     | environment_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id             | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                  | Name                  | Type    | Description         | ------------------------------------------------------ | --------------------- | ------- | ------------------- |                                                        | environment_cvterm_id | serial  | _PRIMARY KEY_       | [environment](#Table:_environment)                     | environment_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](../Chado_Tables#Table:_cvterm) | cvterm_id             | integer | _UNIQUE#1 NOT NULL_ |
 
 environment_cvterm Structure
 
@@ -1739,11 +1727,11 @@ rel="nofollow">GDPDM</a>, that will added robust support for natural
 diversity data.
 
 
-- [Tutorials](../Category%253ATutorials "Category%253ATutorials")
-- [Chado](../Category%253AChado "Category%253AChado")
-- [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
+- [Tutorials](../Category%253ATutorials)
+- [Chado](../Category%253AChado)
+- [GMOD Schools](../Category%253AGMOD_Schools)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic "Property:Has topic") | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>  |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic) | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>  |

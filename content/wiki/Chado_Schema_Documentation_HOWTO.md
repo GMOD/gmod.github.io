@@ -3,20 +3,20 @@ title: "Chado Schema Documentation HOWTO"
 ---
 # Chado Schema Documentation HOWTO
 
-The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> schema
+The <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> schema
 documentation on this wiki is a mixture of generated content and
 material directly entered by GMOD users into this wiki. The generated
 part of the documentation consists of the table definitions that are
 included on the [Chado module
-pages](Template:ChadoModules "Template:ChadoModules") and on the [Chado
-Tables](Chado_Tables "Chado Tables") page, listing all the tables in
+pages](/wiki/Template:ChadoModules) and on the [Chado
+Tables](/wiki/Chado_Tables) page, listing all the tables in
 Chado.
 
 All of the table descriptions on [Chado module
-pages](Template:ChadoModules "Template:ChadoModules") and the [Chado
-Tables](Chado_Tables "Chado Tables") page are generated every time there
+pages](/wiki/Template:ChadoModules) and the [Chado
+Tables](/wiki/Chado_Tables) page are generated every time there
 is a new release of Chado. The column and table details, including
-comments, come from the [PostgreSQL](PostgreSQL "PostgreSQL") data
+comments, come from the [PostgreSQL](/wiki/PostgreSQL) data
 dictionary.
 
   and Table Documentation</span>](#Using_Module_and_Table_Documentation)
@@ -78,7 +78,7 @@ process and you must take the first step. Here's the recipe:
 1.  Enter your update on the wiki.
     1.  Login to the wiki
     2.  Go to the [module
-        page](Template:ChadoModules "Template:ChadoModules") for the
+        page](/wiki/Template:ChadoModules) for the
         module the table is in.
     3.  Click on the \[edit\] link to the right of the table you want to
         comment on.
@@ -122,7 +122,7 @@ This step is itself a multistep process:
 ### Integrate New Comments Into SQL DDL
 
 This step involves walking through all the [Chado Module
-pages](Template:ChadoModules "Template:ChadoModules"), looking at any
+pages](/wiki/Template:ChadoModules), looking at any
 "Additional Comments" that have been added since the last Chado release,
 and then integrating them with the comments in the SQL DDL definitions
 of the tables. Integrated comments should then be removed from the
@@ -160,7 +160,7 @@ on my laptop.
 This script places generated wiki content in the `WIKI_DIR` directory,
 which by default is `/tmp/ChadoWikiFiles/`:
 
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | `/tmp/ChadoWikiFiles/` | Determined by what `WIKI_DIR` is set to.                                                                                                    | ` Modules/`            | Contains one file per module. These become the "Tables" sections of the [Chado module pages](Template:ChadoModules "Template:ChadoModules") | ` Tables/`             | Contains one file per table; these will become Table Templates.                                                                             | ` allTables.wiki`      | List of all tables; will become the module/table list on [Chado Tables](Chado_Tables "Chado Tables").                                       |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | `/tmp/ChadoWikiFiles/` | Determined by what `WIKI_DIR` is set to.                                                                                                    | ` Modules/`            | Contains one file per module. These become the "Tables" sections of the [Chado module pages](/wiki/Template:ChadoModules) | ` Tables/`             | Contains one file per table; these will become Table Templates.                                                                             | ` allTables.wiki`      | List of all tables; will become the module/table list on [Chado Tables](/wiki/Chado_Tables).                                       |
 
 ### Push Regenerated Wiki Text to GMOD.org
 
@@ -171,7 +171,7 @@ do this. Then update the three types of pages:
 
 - Table Templates
 - Module Pages
-- [Chado Tables](Chado_Tables "Chado Tables") page
+- [Chado Tables](/wiki/Chado_Tables) page
 
 #### Update Table Templates
 
@@ -215,7 +215,7 @@ Table Templates.
 #### Update Module Pages
 
 We don't yet have an automated way to synchronize the [module
-pages](Template:ChadoModules "Template:ChadoModules") with the update.
+pages](/wiki/Template:ChadoModules) with the update.
 
 The _first time_ this process is done (the process described on this
 page), you'll probably want to do a wholesale replacement of the
@@ -227,9 +227,9 @@ On subsequent updates, you will only need to touch the module pages if a
 table was dropped or added. The Table Templates will take care of the
 rest.
 
-#### Update [Chado Tables](Chado_Tables "Chado Tables") Page
+#### Update [Chado Tables](/wiki/Chado_Tables) Page
 
-The [Chado Tables](Chado_Tables "Chado Tables") page lists every table
+The [Chado Tables](/wiki/Chado_Tables) page lists every table
 defined in Chado. Replace this wholesale each time.
 
 ## Why is this complicated?
@@ -246,11 +246,11 @@ With any programmatically generated wiki doc we've got conflicting goals:
 We've tackled this for Chado with MediaWiki Templates:
 
 1.  There's a template for each table. (e.g.,
-    [Template:ChadoTable_cv](Template:ChadoTable_cv "Template:ChadoTable cv"))
+    [Template:ChadoTable_cv](/wiki/Template:ChadoTable_cv))
 2.  The templates are protected and can't be edited by regular wiki
     users (prevents lost updates)
 3.  The [Chado Module
-    pages](Template:ChadoModules "Template:ChadoModules") include the
+    pages](/wiki/Template:ChadoModules) include the
     templates and clearly have a place for additional comments to be
     added. (Encourages updates without requiring SVN update access).
 4.  Those comments can be incorporated into the SQL on the next Chado

@@ -3,7 +3,7 @@ title: "CMap/tool data"
 ---
 # CMap/tool data
 
-This page stores the data that populates the [CMap](../CMap.1 "CMap")
+This page stores the data that populates the [CMap](../CMap.1)
 wiki page.
 
 \| name = CMap \| full_name = \| status = mature \|
@@ -96,7 +96,7 @@ dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req =
 - A relational database, e.g.
   <a href="http://www.mysql.com" class="external text"
   rel="nofollow">MySQL (4.0+)</a>, Sybase Adaptive Server Enterprise,
-  [PostgreSQL](../PostgreSQL "PostgreSQL"), SQLite or Oracle (9.x)
+  [PostgreSQL](../PostgreSQL), SQLite or Oracle (9.x)
 - <a href="http://www.boutell.com/gd/" class="external text"
   rel="nofollow">libgd (2.0.28 or higher)</a> and
   \[<a href="http://search.cpan.org/perldoc?GD" class="external text"
@@ -114,7 +114,7 @@ dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req =
   class="external text" rel="nofollow">PDF</a> and
   <a href="http://www.gramene.org/tutorials/cmap_tutorial.ppt"
   class="external text" rel="nofollow">PowerPoint</a> formats.
-- [CMap_API](../CMap_API "CMap API") (<a
+- [CMap_API](../CMap_API) (<a
   href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/CMAP_API.pod"
   class="external text" rel="nofollow">SVN</a>)
 - <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/README"
@@ -142,41 +142,41 @@ dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req =
   class="external text" rel="nofollow">CMAP Tutorial at Texas A &amp;
   M</a>
 - [CMap Version 2
-  Design](../CMap_Version_2_Design "CMap Version 2 Design")
+  Design](../CMap_Version_2_Design)
 
-Also see the [CMap FAQ](../CMap_FAQ "CMap FAQ").
+Also see the [CMap FAQ](../CMap_FAQ).
 
 \| papers = \*CMap 1.01: a comparative mapping application for the
 Internet. <sup>[\[1\]](#cite_note-1)</sup> \| presentations =
 
-- [File:CMapGenomeInformatics2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf "File:CMapGenomeInformatics2009.pdf"),
+- [File:CMapGenomeInformatics2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf),
   poster from <a href="http://meetings.cshl.edu/meetings/info09.shtml"
   class="external text" rel="nofollow">Genome Informatics 2009</a>
-- [File:CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")
+- [File:CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf)
   from the <a
   href="http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&amp;sym_ID=27"
   class="external text" rel="nofollow">GMOD Workshop at SMBE 2009</a>
 - [File:2007 11 05 CMap
-  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt "File:2007 11 05 CMap GMOD.ppt")
+  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt)
   from [November 2007 GMOD
-  Meeting](../November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
+  Meeting](../November_2007_GMOD_Meeting)
 - [File:BenFaga GMOD June
-  2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt "File:BenFaga GMOD June 2006.ppt")
+  2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt)
   from [June 2006 GMOD
-  Meeting](../June_2006_GMOD_Meeting "June 2006 GMOD Meeting")
-- [File:Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf "File:Cmap-050516.pdf")
+  Meeting](../June_2006_GMOD_Meeting)
+- [File:Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf)
   from [May 2005 GMOD
-  Meeting](../May_2005_GMOD_Meeting "May 2005 GMOD Meeting")
-- [File:Gramene-cmap-pag-poster-2005.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf "File:Gramene-cmap-pag-poster-2005.pdf")
+  Meeting](../May_2005_GMOD_Meeting)
+- [File:Gramene-cmap-pag-poster-2005.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf)
   poster form 2005 Plant and Animal Genomics meeting.
 - [File:Cmap update sept
-  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt "File:Cmap update sept 03.ppt")
+  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt)
   from [September 2003 GMOD
-  Meeting](../September_2003_GMOD_Meeting "September 2003 GMOD Meeting").
+  Meeting](../September_2003_GMOD_Meeting).
 - [File:CMap
-  Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf "File:CMap Overview.pdf") from
+  Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf) from
   [May 2003 GMOD
-  Meeting](../May_2003_GMOD_Meeting "May 2003 GMOD Meeting").
+  Meeting](../May_2003_GMOD_Meeting).
 
 \| tutorials =
 
@@ -232,26 +232,26 @@ class="external text" rel="nofollow">Tutorial @ Gramene</a>
 
 \| mail =
 
-|                                                                                   | -------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |                                                    | Mailing List Link                                                                 | Description                                                  | Archive(s) | [CMap](../CMap.1 "CMap")                           | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"                  | class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](../CMap.1 "CMap") development, installation problems, _etc._ | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html" |
+|                                                                                   | -------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |                                                    | Mailing List Link                                                                 | Description                                                  | Archive(s) | [CMap](../CMap.1)                           | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"                  | class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](../CMap.1) development, installation problems, _etc._ | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html" |
 
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
 class="external text" rel="nofollow">Sourceforge</a> | | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
-class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="../SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](../CMap.1 "CMap"). | <a
+class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="../SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](../CMap.1). | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits"
 class="external text" rel="nofollow">Sourceforge</a> |
 
 \| logo_info = The CMap logo was created by Kathy Bracken, a participant
 in the [Spring 2010 Logo
-Program](../Spring_2010_Logo_Program "Spring 2010 Logo Program"), while
+Program](../Spring_2010_Logo_Program), while
 a design student at
 <a href="http://www.linn-benton.edu" class="external text"
 rel="nofollow">Linn-Benton Community College</a>. \| dev_ppl = Lincoln
-Stein, Doreen Ware, [Ben Faga](../User%253AFaga "User%253AFaga"),
+Stein, Doreen Ware, [Ben Faga](../User%253AFaga),
 <a href="mailto:kclark@cshl.edu" class="external text"
 rel="nofollow">Ken Youens-Clark</a> \| dev_status = No development in
 several years. Future development at Gramene.org hopes to replace CMap
 with a lighter, Javascript version. \| contact_email = Ken Youens-Clark
 \<kclark@cshl.edu\> \| input = \| output = \| see_also =
-[CMap3D](../CMap3D "CMap3D") \| demo_server = \| survey_link = CMap \|
+[CMap3D](../CMap3D) \| demo_server = \| survey_link = CMap \|
 release date = 2002 \| more_info =
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

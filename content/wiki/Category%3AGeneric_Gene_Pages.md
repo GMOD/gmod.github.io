@@ -10,16 +10,16 @@ The following 3 pages are in this category, out of 3 total.
 ### B
 
 - [Bio GMOD
-  GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
+  GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 
 ### C
 
-- [Common Gene Page](Common_Gene_Page "Common Gene Page")
+- [Common Gene Page](/wiki/Common_Gene_Page)
 
 ### J
 
 - [January 2009 GMOD
-  Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting")
+  Meeting](/wiki/January_2009_GMOD_Meeting)
 
 ## Media in category "Generic Gene Pages"
 
@@ -42,7 +42,7 @@ The following 3 files are in this category, out of 3 total.
 
 
   [Common gene
-  page.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/Common_gene_page.pdf "File:Common gene page.pdf")
+  page.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/Common_gene_page.pdf)
   506 KB
 
 
@@ -66,7 +66,7 @@ The following 3 files are in this category, out of 3 total.
 
 
   [Gilbert
-  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Gilbert_040526.ppt "File:Gilbert 040526.ppt")
+  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Gilbert_040526.ppt)
   1.43 MB
 
 
@@ -89,7 +89,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [Jan2009GenericGenePage...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf "File:Jan2009GenericGenePage.pdf")
+  [Jan2009GenericGenePage...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf)
   410 KB
 
 

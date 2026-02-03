@@ -6,14 +6,14 @@ title: "News/WebGBrowse Joins GMOD"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/280px-WebGBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/420px-WebGBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/WebGBrowseLogo.png/560px-WebGBrowseLogo.png 2x"
-width="280" height="55" alt="WebGBrowse now a part of GMOD" />](../WebGBrowse.1 "WebGBrowse now a part of GMOD")
+width="280" height="55" alt="WebGBrowse now a part of GMOD" />](../WebGBrowse.1)
 
-[WebGBrowse](../WebGBrowse.1 "WebGBrowse"), a web interface for setting
-up [GBrowse](../GBrowse.1 "GBrowse") instances, is now a part of GMOD.
-[WebGBrowse](../WebGBrowse.1 "WebGBrowse") enables biologists and
+[WebGBrowse](../WebGBrowse.1), a web interface for setting
+up [GBrowse](../GBrowse.1) instances, is now a part of GMOD.
+[WebGBrowse](../WebGBrowse.1) enables biologists and
 bioinformaticians to
 
-1.  upload genome annotation information in [GFF3](../GFF3 "GFF3")
+1.  upload genome annotation information in [GFF3](../GFF3)
     format,
 2.  configure display of each genomic feature through simple mouse
     clicks on a web browser,
@@ -49,15 +49,15 @@ WebGBrowse comes with
 class="external text" rel="nofollow">a tutorial</a>,
 <a href="http://webgbrowse.cgb.indiana.edu/faq.html"
 class="external text" rel="nofollow">FAQ</a>, and a [user and support
-mailing list](../WebGBrowse.1#Mailing_Lists "WebGBrowse").
+mailing list](../WebGBrowse.1#Mailing_Lists).
 
-[Ram Podicheti](../User%253AMnrusimh "User%253AMnrusimh")
+[Ram Podicheti](../User%253AMnrusimh)
 <a href="http://cgb.indiana.edu/" class="external text"
 rel="nofollow">Center for Genomics and Bioinformatics</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/10*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/10*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

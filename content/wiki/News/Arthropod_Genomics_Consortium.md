@@ -35,12 +35,12 @@ If you are an arthropod researcher, please consider <a
 href="http://arthropodgenomes.org/wiki/Main_Page#tab=Adding_data_to_this_wiki#tab=Adding_data_to_this_wiki"
 class="external text" rel="nofollow">joining this growing consortium</a>.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/12/18*
+*Posted to the [GMOD News](../GMOD_News) on 2009/12/18*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

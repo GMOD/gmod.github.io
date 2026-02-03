@@ -14,7 +14,7 @@ class="external text" rel="nofollow">Dow AgroSciences has 7
 Bioinformatics summer internship positions open</a>, 2 of which are
 related to GMOD. We are looking for candidates with experience in
 installing, configuring, and uploading data into GMOD. Experience with
-the [GBrowse](../GBrowse.1 "GBrowse") source code and modifying it to
+the [GBrowse](../GBrowse.1) source code and modifying it to
 create new views (e.g creating new glyphs and modifying existing glyphs
 as per user needs) is highly preferred. We have started the interview
 process. Please email your resume ASAP to Navin Elango
@@ -28,7 +28,7 @@ Navin Elango
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/16*
+*Posted to the [GMOD News](../GMOD_News) on 2010/03/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

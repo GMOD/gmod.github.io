@@ -4,14 +4,14 @@ title: "Galaxy Tutorial 2012"
 # Galaxy Tutorial 2012
 
 This walks you through setting up and running a
-[Galaxy](Galaxy.1 "Galaxy") server. This tutorial was originally taught
-by [Dave Clements](User%253AClements "User%253AClements") at the [2012 GMOD
-Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School").
+[Galaxy](/wiki/Galaxy.1) server. This tutorial was originally taught
+by [Dave Clements](/wiki/User%253AClements) at the [2012 GMOD
+Summer School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-a1de69c8, name: GMOD 2012 start day 3**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
-Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
+Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
   Galaxy Resources</span>](#Some_General_Galaxy_Resources)
@@ -139,7 +139,7 @@ rel="nofollow">http://getgalaxy.org</a>.
 The only prerequisite to run your own Galaxy is a Python interpreter,
 version 2.5 or greater. Python 3 is a different language and is
 currently not supported. The [GMOD Amazon Machine Image
-(AMI)](Cloud.1 "Cloud") used for this course includes version 2.6.5 of
+(AMI)](/wiki/Cloud.1) used for this course includes version 2.6.5 of
 the interpreter.
 
     $ python --version
@@ -202,7 +202,7 @@ to this:
 
     port = 8081
 
-Galaxy, like [WebApollo](WebApollo.1 "WebApollo") and several other
+Galaxy, like [WebApollo](/wiki/WebApollo.1) and several other
 components that were also covered at the course, will listen to port
 8080 by default; for simplicity, we will configure Galaxy to listen to a
 different port.
@@ -240,10 +240,10 @@ Galaxy to run with zero-configuration and provides an excellent solution
 for single-user Galaxy installations being used for tool development.
 However, for any multi-user scenario a more robust database will be
 needed for Galaxy to be reliable. We **highly** recommend
-[Postgres](PostgreSQL "PostgreSQL"), although other databases are known
+[Postgres](/wiki/PostgreSQL), although other databases are known
 to work. Postgres is already installed on our AMI (it's the default
-[DBMS](Glossary#DBMS "Glossary") for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>)
+[DBMS](/wiki/Glossary#DBMS) for
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>)
 
 Update `universe_wsgi.ini` file to use Postgres. Update the `Database`
 section of your Galaxy config file to look like:

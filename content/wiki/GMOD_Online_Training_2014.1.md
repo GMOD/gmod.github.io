@@ -11,50 +11,50 @@ width="300" height="235" alt="Gmod-online-training.png" />
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/150px-GitcLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/225px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/300px-GitcLogo.png 2x"
-width="150" height="86" alt="GMOD in the Cloud toolset" />](Cloud.1 "GMOD in the Cloud toolset")
+width="150" height="86" alt="GMOD in the Cloud toolset" />](/wiki/Cloud.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/150px-ChadoLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/225px-ChadoLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/300px-ChadoLogo.png 2x"
-width="150" height="33" alt="Chado: Biological database schema" />](Chado "Chado: Biological database schema")
+width="150" height="33" alt="Chado: Biological database schema" />](/wiki/Chado)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/150px-GalaxyLogoBigger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/225px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/300px-GalaxyLogoBigger.png 2x"
-width="150" height="53" alt="Galaxy: Data analysis &amp; integration" />](Galaxy.1 "Galaxy: Data analysis & integration")
+width="150" height="53" alt="Galaxy: Data analysis &amp; integration" />](/wiki/Galaxy.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/150px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/225px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 2x"
-width="150" height="35" alt="GBrowse: Genome annotation viewer" />](GBrowse.1 "GBrowse: Genome annotation viewer")
+width="150" height="35" alt="GBrowse: Genome annotation viewer" />](/wiki/GBrowse.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/150px-GBrowse_syn_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/225px-GBrowse_syn_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/300px-GBrowse_syn_logo.png 2x"
-width="150" height="48" alt="GBrowse_syn: Synteny viewer" />](GBrowse_syn.1 "GBrowse_syn: Synteny viewer")
+width="150" height="48" alt="GBrowse_syn: Synteny viewer" />](/wiki/GBrowse_syn.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/150px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/225px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/300px-JBrowseLogo.png 2x"
 width="150" height="33"
-alt="JBrowse: Super-fast genome annotation viewer" />](JBrowse.1 "JBrowse: Super-fast genome annotation viewer")
+alt="JBrowse: Super-fast genome annotation viewer" />](/wiki/JBrowse.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/150px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/225px-TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/300px-TripalLogo.png 2x"
 width="150" height="45"
-alt="Tripal: website creation software and Chado interface" />](Tripal.1 "Tripal: website creation software and Chado interface")
+alt="Tripal: website creation software and Chado interface" />](/wiki/Tripal.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/150px-MAKERLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/225px-MAKERLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/300px-MAKERLogo.png 2x"
-width="150" height="51" alt="MAKER: Genome annotation pipeline" />](MAKER.1 "MAKER: Genome annotation pipeline")
+width="150" height="51" alt="MAKER: Genome annotation pipeline" />](/wiki/MAKER.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/150px-WebApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/225px-WebApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png 2x"
 width="150" height="41"
-alt="WebApollo: browser-based annotation editor" />](WebApollo.1 "WebApollo: browser-based annotation editor")
+alt="WebApollo: browser-based annotation editor" />](/wiki/WebApollo.1)
 
 **Monday 19th May - Friday 23rd May 2014**
 
@@ -67,14 +67,14 @@ and genomic data.
 
 Components covered in the course include:
 
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
   schema
-- [Galaxy](Galaxy.1 "Galaxy") analysis pipeline
-- [GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse")
+- [Galaxy](/wiki/Galaxy.1) analysis pipeline
+- [GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1)
   genome browsers
-- [MAKER](MAKER.1 "MAKER") and MAKER-P genome annotation pipelines
-- [Tripal](Tripal.1 "Tripal") website generator and database interface
-- [WebApollo](WebApollo.1 "WebApollo") manual gene annotation software
+- [MAKER](/wiki/MAKER.1) and MAKER-P genome annotation pipelines
+- [Tripal](/wiki/Tripal.1) website generator and database interface
+- [WebApollo](/wiki/WebApollo.1) manual gene annotation software
 
 The course is taught by experienced instructors and developers with deep
 knowledge of the tools and their applications. Attendees will be able to

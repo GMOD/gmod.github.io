@@ -10,7 +10,7 @@ height="100" alt="Software Requirements, Ver 2 Proposal" /></a>
 
 The [proposed revisions](#Software_Requirements_V2.0.3F) to GMOD's
 [software membership
-requirements](../GMOD_Membership#Software "GMOD Membership") have been
+requirements](../GMOD_Membership#Software) have been
 approved.
 
 The *Version 2* requirements are:
@@ -25,8 +25,8 @@ The *Version 2* requirements are:
 - Publicly accessible code repository (new)
 
 The revised requirements were discussed at the [September 2010 GMOD
-Meeting](../September_2010_GMOD_Meeting#GMOD_Membership_Requirements "September 2010 GMOD Meeting"),
-and on [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists").
+Meeting](../September_2010_GMOD_Meeting#GMOD_Membership_Requirements),
+and on [GMOD Mailing Lists](../GMOD_Mailing_Lists).
 Not surprisingly, these uncontroversial revisions were approved in both
 forums (and even
 <a href="http://twitter.com/OpenHelix/status/12248306868551680"
@@ -34,12 +34,12 @@ class="external text" rel="nofollow">on Twitter</a>).
 
 Thanks for your help and input,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/21*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/21*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

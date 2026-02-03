@@ -145,7 +145,7 @@ it with anything.</td>
 <tr class="odd">
 <td>Java 6</td>
 <td><code>sudo apt-get install sun-java6-jdk</code></td>
-<td>Java run time and tools; need for <a href="Apollo.1"
+<td>Java run time and tools; need for <a href="/wiki/Apollo.1"
 title="Apollo">Apollo</a>.</td>
 </tr>
 <tr class="even">
@@ -182,7 +182,7 @@ alternative</td>
 <tr class="even">
 <td>Inkscape</td>
 <td><code>sudo apt-get install inkscape</code></td>
-<td>High-res image generation in <a href="GBrowse.1"
+<td>High-res image generation in <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a>.</td>
 </tr>
 <tr class="odd">
@@ -193,7 +193,7 @@ title="GBrowse">GBrowse</a>.</td>
 <tr class="even">
 <td>MySQL Server</td>
 <td><code>sudo apt-get install mysql-server</code></td>
-<td>MySQL database; used as a backend to <a href="GBrowse.1"
+<td>MySQL database; used as a backend to <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a>. Root password is same as for the
 system.</td>
 </tr>
@@ -225,7 +225,7 @@ system.</td>
 <tr class="even">
 <td>C++ Compiler</td>
 <td><code>sudo apt-get install g++</code></td>
-<td>C++ compiler from GNU. Required for <a href="MAKER.1"
+<td>C++ compiler from GNU. Required for <a href="/wiki/MAKER.1"
 title="MAKER">MAKER</a></td>
 </tr>
 <tr class="odd">
@@ -241,14 +241,14 @@ title="MAKER">MAKER</a></td>
 <tr class="odd">
 <td>PostgreSQL</td>
 <td><code>sudo apt-get install postgresql</code></td>
-<td>Postgres database management system. Used by <a href="Chado"
+<td>Postgres database management system. Used by <a href="/wiki/Chado"
 class="mw-redirect" title="Chado">Chado</a></td>
 </tr>
 <tr class="even">
 <td>GD::SVG Perl module</td>
 <td><code>sudo apt-get install libgd-svg-perl</code></td>
 <td>"Seamlessly enable SVG output from scripts written using GD." - such
-as <a href="GBrowse.1" title="GBrowse">GBrowse</a>.</td>
+as <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a>.</td>
 </tr>
 <tr class="odd">
 <td>Bio::Graphics::Browser2</td>
@@ -327,17 +327,17 @@ loader</td>
 <tr class="even">
 <td>python-dev</td>
 <td><code>sudo apt-get install python-dev </code></td>
-<td>Used in <a href="Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
+<td>Used in <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
 </tr>
 <tr class="odd">
 <td>python-setuptools</td>
 <td><code>sudo apt-get install python-setuptools</code></td>
-<td>Used in <a href="Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
+<td>Used in <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
 </tr>
 <tr class="even">
 <td>python-pip</td>
 <td><code>sudo apt-get install python-pip</code></td>
-<td>Used in <a href="Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
+<td>Used in <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> session.</td>
 </tr>
 <tr class="odd">
 <td>bx-python scripts</td>

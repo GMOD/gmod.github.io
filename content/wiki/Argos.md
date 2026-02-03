@@ -94,7 +94,7 @@ program has been built.
 
 ## Developer notes
 
-Current developers are [Don Gilbert](User%253ADongilbert "User%253ADongilbert"),
+Current developers are [Don Gilbert](/wiki/User%253ADongilbert),
 Nihar Sheth and Victor Strelets for FlyBase-NG and euGenes uses. We hope
 others will try it and join us in using and developing it. Email us at
 <a href="mailto:argos@eugenes.org" class="external text"
@@ -103,7 +103,7 @@ rel="nofollow">argos@eugenes.org</a>.
 Contents in <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/argos"
 class="external text" rel="nofollow">SourceForge</a> for this project
 are installation and configuration files.
-<a href="Subversion" class="mw-redirect"
+<a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a> is not designed for storage and
 distribution of bulk data, program binaries, and the many package
 installations included in Argos repositories.

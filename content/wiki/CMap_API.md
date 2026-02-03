@@ -230,7 +230,7 @@ Level 4 should be purged when correspondence information is changed.
 ### CMap Assembly Editor Plug-ins
 
 It is important to note that if you are writing a plug-in for
-[CMAE](CMAE "CMAE"), the methods described in this section will only
+[CMAE](/wiki/CMAE), the methods described in this section will only
 work if the data is stored locally. If the data access is remote, you
 must use the methods in `AppData.pm`. There will be further
 documentation written on this topic.

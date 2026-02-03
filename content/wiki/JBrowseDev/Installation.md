@@ -122,7 +122,7 @@ the command:
      sudo apt-get install libpng-dev libgd2-noxpm-dev build-essential
 
 For tips on installing these baseline libraries, see [JBrowse
-Troubleshooting](../JBrowse_Troubleshooting "JBrowse Troubleshooting").
+Troubleshooting](../JBrowse_Troubleshooting).
 
 ### Installation
 
@@ -148,7 +148,7 @@ install all of JBrowse's (modest) prerequisites for you in the
 `jbrowse/` directory itself. Note that `setup.sh` does not need to be
 run as root or with `sudo`. For help troubleshooting failures of
 setup.sh, see [JBrowse
-Troubleshooting](../JBrowse_Troubleshooting "JBrowse Troubleshooting").
+Troubleshooting](../JBrowse_Troubleshooting).
 
 4\. Visit JBrowse on your machine, substituting the
 http://(your_machine/path_to_jbrowse)/index.html?data=sample_data/json/volvox.
@@ -158,37 +158,37 @@ configure JBrowse to show your own data!
 ### Configuration
 
 See the [JBrowse Configuration
-Guide](../JBrowse_Configuration_Guide "JBrowse Configuration Guide") for
+Guide](../JBrowse_Configuration_Guide) for
 information on:
 
 - [Formatting reference
-  sequences](../JBrowse_Configuration_Guide#Reference_Sequences "JBrowse Configuration Guide")
+  sequences](../JBrowse_Configuration_Guide#Reference_Sequences)
   (e.g. from FASTA files, or a Chado database)
 - [Feature
-  Tracks](../JBrowse_Configuration_Guide#Feature_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Feature_Tracks)
   (e.g. from BED or GFF files, a Chado database, or the UCSC genome
   browser)
 - [Image
-  Tracks](../JBrowse_Configuration_Guide#Image_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Image_Tracks)
   (e.g. from WIG files)
 - [Wiggle/BigWig
-  Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks)
 - [Name Search and
-  Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion "JBrowse Configuration Guide")
+  Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion)
 - [Removing
-  tracks](../JBrowse_Configuration_Guide#Removing_Tracks "JBrowse Configuration Guide")
+  tracks](../JBrowse_Configuration_Guide#Removing_Tracks)
 - [Compressing data stored on the
-  server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server "JBrowse Configuration Guide")
+  server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server)
 - [URL
-  control](../JBrowse_Configuration_Guide#URL_Control "JBrowse Configuration Guide")
+  control](../JBrowse_Configuration_Guide#URL_Control)
 - [Faceted track
-  selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection "JBrowse Configuration Guide")
+  selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection)
 - [Anonymous usage
-  statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics "JBrowse Configuration Guide")
+  statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics)
 
 Additional topics:
 
-- <a href="Using_a_Database_With_JBrowse" class="mw-redirect"
+- <a href="/wiki/Using_a_Database_With_JBrowse" class="mw-redirect"
   title="JBrowseDev/Using a Database With JBrowse">Using an Existing
   Database with JBrowse</a>
 
@@ -233,7 +233,7 @@ installation is required.
 <a href="../JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a> covering installation and configuration
 part of the [2013 GMOD Summer
-School](../2013_GMOD_Summer_School "2013 GMOD Summer School")
+School](../2013_GMOD_Summer_School)
 
 <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
 class="external text" rel="nofollow">Getting Started with JBrowse
@@ -255,7 +255,7 @@ rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/JBrowse_bioit_world_apr2013.pdf"
   class="internal" title="JBrowse bioit world apr2013.pdf">PDF</a>
 - August 2012 - presentation given as part of the [2012 GMOD Summer
-  School](../2012_GMOD_Summer_School "2012 GMOD Summer School"):
+  School](../2012_GMOD_Summer_School):
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/JBrowse_gmod_aug2012.pdf"
   class="internal" title="JBrowse gmod aug2012.pdf">PDF</a>
 - April 2012 - GMOD 2012 Community Meeting, Robert Buels:
@@ -268,9 +268,9 @@ rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/67/JBrowse-UCSC-4-21-10.pdf"
   class="internal" title="JBrowse-UCSC-4-21-10.pdf">PDF</a>
 - August 2009 - [GMOD Community
-  Meeting](../August_2009_GMOD_Meeting "August 2009 GMOD Meeting"):
+  Meeting](../August_2009_GMOD_Meeting):
   [Talk
-  summary](../August_2009_GMOD_Meeting#JBrowse "August 2009 GMOD Meeting")
+  summary](../August_2009_GMOD_Meeting#JBrowse)
 
 ## Contacts and Mailing Lists
 
@@ -319,7 +319,7 @@ development.
 
 ## More on JBrowse
 
-See [Category%253AJBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+See [Category%253AJBrowse](../Category%253AJBrowse)
 
 1.  <span id="cite_note-PMID:19570905-1"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:19570905_1-0)</span>
     <span class="reference-text">\*JBrowse: a next-generation genome
@@ -336,11 +336,11 @@ See [Category%253AJBrowse](../Category%253AJBrowse "Category%253AJBrowse")
 
 </span>
 
-[Available on platform](../Property%253AAvailable_on_platform "Property:Available on platform")
+[Available on platform](../Property%253AAvailable_on_platform)
 
 web
 
-[Has URL](../Property%253AHas_URL "Property:Has URL")
+[Has URL](../Property%253AHas_URL)
 
 <a href="http://jbrowse.org/install/" class="external free"
 rel="nofollow">http://jbrowse.org/install/</a>
@@ -370,7 +370,7 @@ and <a href="http://www.medicinalgenomics.com/the-jane-ome/"
 class="external free"
 rel="nofollow">http://www.medicinalgenomics.com/the-jane-ome/</a>
 
-[Has description](../Property%253AHas_description "Property:Has description")
+[Has description](../Property%253AHas_description)
 
 JBrowse is a genome browser with a fully d<span class="smw-highlighter"
 data-type="2" state="persistent"

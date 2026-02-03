@@ -6,9 +6,9 @@ title: "News/Canto, a GMOD tool for functional annotation"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/300px-CantoTextLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/450px-CantoTextLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/600px-CantoTextLogo.png 2x"
-width="300" height="74" alt="CantoTextLogo.png" />](../Canto "Canto")
+width="300" height="74" alt="CantoTextLogo.png" />](../Canto)
 
-We are pleased to announce that [Canto](../Canto "Canto"), the
+We are pleased to announce that [Canto](../Canto), the
 <a href="http://pombase.org" class="external text"
 rel="nofollow">PomBase</a> community curation tool, is now a GMOD
 component.
@@ -40,5 +40,5 @@ annotations.
 
 More information about Canto:
 
-- [GMOD wiki page on Canto](../Canto "Canto") -- includes downloads and
+- [GMOD wiki page on Canto](../Canto) -- includes downloads and
   mailing list

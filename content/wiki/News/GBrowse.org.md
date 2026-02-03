@@ -12,7 +12,7 @@ rel="nofollow">GBrowse.org</a></span> |
 
 <a href="http://www.gbrowse.org" class="external text"
 rel="nofollow">GBrowse.org</a> is a resource for using and setting up
-[GBrowse](../GBrowse.1 "GBrowse") genome browsers. The site provides one
+[GBrowse](../GBrowse.1) genome browsers. The site provides one
 location where biologists and bioinformaticians can find:
 
 1.  Genome browser web sites for any organism that has them. If a
@@ -25,9 +25,9 @@ location where biologists and bioinformaticians can find:
 
 <a href="http://www.gbrowse.org" class="external text"
 rel="nofollow">GBrowse.org</a> emphasizes the
-[GBrowse](../GBrowse.1 "GBrowse") genome browser in its organization,
+[GBrowse](../GBrowse.1) genome browser in its organization,
 but also links to sites that use other browser packages such as UCSC,
-Ensembl, and [JBrowse](../JBrowse.1 "JBrowse").
+Ensembl, and [JBrowse](../JBrowse.1).
 
 Also, we are currently conducting a
 <a href="http://gbrowse.org/survey/index.php?sid=64264&amp;lang=en"
@@ -37,17 +37,17 @@ project direction. Please take a few minutes now to
 class="external text" rel="nofollow">provide your feedback</a>.
 
 GBrowse.org was first introduced at the [August 2009 GMOD
-Meeting](../August_2009_GMOD_Meeting#GBrowse.org "August 2009 GMOD Meeting").
+Meeting](../August_2009_GMOD_Meeting#GBrowse.org).
 
 Ciao,
 
-[Alessandra Bilardi](../User%253ABilardi "User%253ABilardi")
+[Alessandra Bilardi](../User%253ABilardi)
 <a href="http://genomics.cribi.unipd.it/Main_Page" class="external text"
 rel="nofollow">CRIBI Genomics, University of Padua</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/11*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

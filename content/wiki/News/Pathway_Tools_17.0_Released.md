@@ -3,14 +3,14 @@ title: "News/Pathway Tools 17.0 Released"
 ---
 # News/Pathway Tools 17.0 Released
 
-Version 17.0 of [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") has
+Version 17.0 of [Pathway Tools](../Pathway_Tools.1) has
 been released, and can be downloaded from the
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external text"
 rel="nofollow">Pathway Tools website</a>.
 
 Version 17.0 is a major release that includes updates to the BioCyc Web
 site, downloadable data files, and downloadable [Pathway
-Tools](../Pathway_Tools.1 "Pathway Tools") software/database bundle.
+Tools](../Pathway_Tools.1) software/database bundle.
 Version 17.0 of BioCyc contains 2,920 Pathway/Genome Databases.
 
   Changes</span>](#General_Changes)
@@ -90,4 +90,4 @@ class="external text" rel="nofollow">Pathway Tools release notes</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/03*
+*Posted to the [GMOD News](../GMOD_News) on 2013/04/03*

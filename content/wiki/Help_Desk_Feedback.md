@@ -4,7 +4,7 @@ title: "Help Desk Feedback"
 # Help Desk Feedback
 
 If you have had a recent interaction with the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk"), please give us your feedback. We
+Desk](/wiki/GMOD_Help_Desk), please give us your feedback. We
 also welcome any general suggestions you have on how the Help Desk can
 do its job better.
 
@@ -46,5 +46,5 @@ contact information</td>
 </table>
 
 Thank you for your feedback. Your input will be used to improve the
-service offered by the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
+service offered by the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 in the future.

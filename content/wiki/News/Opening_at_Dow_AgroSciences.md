@@ -16,7 +16,7 @@ will be responsible for three main tasks and several secondary ones:
 1.  Install the open source software components for the
     <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
     database, data loaders, and genome browser.
-2.  Deploy the [GBrowse](../GBrowse.1 "GBrowse") genome browser in a
+2.  Deploy the [GBrowse](../GBrowse.1) genome browser in a
     centralized location in our intranet, which can be used by Dow
     AgroSciences scientists across functions.
 3.  Test the system by performing preprocess (e.g annotate, perform
@@ -37,7 +37,7 @@ rel="nofollow">mdippold@dow.com</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/02/03*
+*Posted to the [GMOD News](../GMOD_News) on 2009/02/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

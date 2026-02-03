@@ -15,7 +15,7 @@ title: "Talk:Chado New Users"
 - Tried to work through some of the Central Dogma stuff in Chado Best
   Practices. Zheng ran the sample query, which hung his laptop.
 - Jim created the Problems template
-  [Template:Problems](Template:Problems "Template:Problems") for adding
+  [Template:Problems](/wiki/Template:Problems) for adding
   notes to documentation pages in the wiki.
 
 ### 20070329

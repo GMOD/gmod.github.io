@@ -5,7 +5,7 @@ title: "Migrating from GBrowse 1.X to 2.X"
 
 This is a guide for existing users of the GBrowse 1.X series to help
 them migrate to version 2.0 and higher. For first-time users, please see
-[GBrowse 2.0 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
+[GBrowse 2.0 HOWTO](/wiki/GBrowse_2.0_HOWTO).
 
 GBrowse 2.0 is mostly backward compatible with the 1.0 series, but there
 have been some changes to the layout of configuration files that make

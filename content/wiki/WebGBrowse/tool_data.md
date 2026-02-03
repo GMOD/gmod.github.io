@@ -4,14 +4,14 @@ title: "WebGBrowse/tool data"
 # WebGBrowse/tool data
 
 This page stores the data that populates the
-[WebGBrowse](../WebGBrowse.1 "WebGBrowse") wiki page.
+[WebGBrowse](../WebGBrowse.1) wiki page.
 
 \| name = WebGBrowse \| full_name = \| status = mature
 \| dev = inactive \| support = active \| type = Genome Visualization &
 Editing, Tool Integration \| os = web \| logo = WebGBrowseLogo.png \|
 home = <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
 rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> \| about = The
-[Generic Genome Browser (GBrowse)](../GBrowse.1 "GBrowse") is one of the
+[Generic Genome Browser (GBrowse)](../GBrowse.1) is one of the
 most widely used visualization tools for sequence display characterized
 by a rich set of utilities helpful in presenting a variety of genome
 features pertaining to a reference sequence. Despite the tool being
@@ -23,7 +23,7 @@ building the feature tracks on GBrowse, thus adding to the complexities
 involved in configuration.
 
 WebGBrowse guides the users through the process of configuring the
-[GFF3](../GFF3 "GFF3") datasets for GBrowse display. It presents the
+[GFF3](../GFF3) datasets for GBrowse display. It presents the
 user with a "Glyph Library" comprising of around 40 different glyphs to
 choose from. It generates the configuration data by collecting the
 user's input through an organized, step-by-step process guided by the
@@ -70,6 +70,6 @@ install = \| config = \| doc = Information on
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> is available in several places:
 
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
+- [GBrowse](../Category%253AGBrowse)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
+  Components](../Category%253AGMOD_Components)

@@ -9,15 +9,15 @@ The following 5 pages are in this category, out of 5 total.
 
 ### B
 
-- [Biosoftware bench](Biosoftware_bench "Biosoftware bench")
+- [Biosoftware bench](/wiki/Biosoftware_bench)
 
 ### G
 
-- [Genes4all](Genes4all "Genes4all")
-- [GMOD RPC API](GMOD_RPC_API "GMOD RPC API")
-- [Gmod-dbsf](Gmod-dbsf "Gmod-dbsf")
+- [Genes4all](/wiki/Genes4all)
+- [GMOD RPC API](/wiki/GMOD_RPC_API)
+- [Gmod-dbsf](/wiki/Gmod-dbsf)
 
 ### W
 
 - [Web services working
-  group](Web_services_working_group "Web services working group")
+  group](/wiki/Web_services_working_group)

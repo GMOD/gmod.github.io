@@ -10,11 +10,11 @@ upload system, and restricting access to certain databases and tracks
 via user authentication.
 
 - For basic GBrowse 2.0 install instructions, see [GBrowse 2.0 Install
-  HOWTO](../GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO")
+  HOWTO](../GBrowse_2.0_Install_HOWTO.1)
 - *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-  HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
+  HOWTO](../GBrowse_2.0_HOWTO).*
 - *See also: [GBrowse Install
-  HOWTO](../GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
+  HOWTO](../GBrowse_Install_HOWTO).*
 
 
 
@@ -67,7 +67,7 @@ FCGI module (*libfcgi-perl* for APT/Debian, *fcgi-perl* for RPM). The
 mod_fcgid module has a significant gotcha that you should be aware of if
 you use custom Perl library paths. See [Recompiling mod_fcgid to avoid
 truncated Perl library
-paths](../Recompiling_mod_fcgid_to_avoid_truncated_Perl_library_paths "Recompiling mod fcgid to avoid truncated Perl library paths").
+paths](../Recompiling_mod_fcgid_to_avoid_truncated_Perl_library_paths).
 
 The next step is to create a suitable Apache configuration stanza for
 GBrowse, if needed. When you configured and install GBrowse, it probably
@@ -105,7 +105,7 @@ rel="nofollow">http://localhost/fgb2/gbrowse</a>*. You should notice a
 marked improvement in load and update speed. The improvement will be
 particularly noticeable if you combine FastCGI with a rendering slave,
 as described in [Running a GBrowse2 Render
-Farm](../Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm").
+Farm](../Running_a_GBrowse2_render_farm).
 
 If things don't seem to work as advertised, please check the Apache
 server error log file, usually /var/log/apache/error_log, for clues
@@ -391,7 +391,7 @@ files, and often a SQLite database named index.SQLite.
 
 #### WebGBrowse
 
-[WebGBrowse](../WebGBrowse.1 "WebGBrowse") is a web-based administrative
+[WebGBrowse](../WebGBrowse.1) is a web-based administrative
 interface for GBrowse2 written by Ram Podicheti and colleagues at
 Indiana University. With it, you can create new GBrowse datasources,
 configure them, and manage tracks all from a convenient web-based user
@@ -426,7 +426,7 @@ will need to install the following:
 Once these are installed, users will be able to upload and view BAM and
 SAM files, as well as to link to indexed BAM files via the URL
 interface. See
-[GBrowse_NGS_Tutorial](../GBrowse_NGS_Tutorial "GBrowse NGS Tutorial")
+[GBrowse_NGS_Tutorial](../GBrowse_NGS_Tutorial)
 for a tutorial on configuration.
 
 ## Configuring the Uploaded Track Database

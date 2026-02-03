@@ -7,7 +7,7 @@ title: "Face Caucus SGN: Associating Solanaceae loci with phenotype"
 class="internal" title="Mod-face-07jan-SGN.pdf">SGN: Associating
 Solanaceae loci with phenotypes</a>
 
-The Sol Genomics Network ([SGN](Category%253ASGN "Category%253ASGN"),
+The Sol Genomics Network ([SGN](/wiki/Category%253ASGN),
 <a href="http://www.sgn.cornell.edu/" class="external free"
 rel="nofollow">http://www.sgn.cornell.edu/</a>) is a Clade Oriented
 Database (COD) containing genomic, genetic and taxonomic information for

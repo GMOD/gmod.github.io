@@ -28,18 +28,18 @@ class="external text" rel="nofollow">Artistic License 2.0</a>
 
 Resources
 
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
+- [GMOD Components](/wiki/Category%253AGMOD_Components)
+- [AJAX](/wiki/Category%253AAJAX)
+- [JBrowse](/wiki/Category%253AJBrowse)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-[Available on platform](Property%253AAvailable_on_platform "Property:Available on platform")
+[Available on platform](/wiki/Property%253AAvailable_on_platform)
 
 web
 
-[Has URL](Property%253AHas_URL "Property:Has URL")
+[Has URL](/wiki/Property%253AHas_URL)
 
 <a href="http://jbrowse.org/install/" class="external free"
 rel="nofollow">http://jbrowse.org/install/</a>
@@ -69,7 +69,7 @@ and <a href="http://www.medicinalgenomics.com/the-jane-ome/"
 class="external free"
 rel="nofollow">http://www.medicinalgenomics.com/the-jane-ome/</a>
 
-[Has description](Property%253AHas_description "Property:Has description")
+[Has description](/wiki/Property%253AHas_description)
 
 JBrowse is a genome browser with a fully d<span class="smw-highlighter"
 data-type="2" state="persistent"

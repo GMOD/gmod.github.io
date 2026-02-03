@@ -3,7 +3,7 @@ title: "Jim's installation notes"
 ---
 # Jim's installation notes
 
-Back to [Chado New Users](Chado_New_Users "Chado New Users")
+Back to [Chado New Users](/wiki/Chado_New_Users)
 
   on PPC mac</span>](#Installation_on_PPC_mac)
   - [Prerequisites](#Prerequisites)
@@ -44,7 +44,7 @@ Back to [Chado New Users](Chado_New_Users "Chado New Users")
   XServe.
 
 [Installation section of Getting
-Started](Chado_-_Getting_Started#Installation "Chado - Getting Started")
+Started](/wiki/Chado_-_Getting_Started#Installation)
 describes how to get Chado from CVS. Note, when updating, be sure to be
 at the directory level just above schema. Getting Started refers to <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
@@ -385,8 +385,7 @@ on.
 
 ### Load the yeast sample data
 
-Per instructions: get the yeast file from <a
-href="ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff"
+Per instructions: get the yeast file from <a href="/wiki/ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff"
 class="external free"
 rel="nofollow">ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff</a>.
 cd to my downloads directory and do

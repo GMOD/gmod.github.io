@@ -12,19 +12,19 @@ and the change log is listed below. There are two items of special
 interest in this release:
 
 1.  The [natural diversity
-    module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
+    module](../Chado_Natural_Diversity_Module.1)
     is included in this release. It is intended for capturing a variety
     of experimental data related to diversity, including phenotype and
     genotype assays, and collections like crosses and field collection.
 2.  It now ships with a tool to aid in updating the schema from previous
     versions of Chado (from version 1.0 or better). See
-    [Updating_Chado](../Updating_Chado "Updating Chado") for more
+    [Updating_Chado](../Updating_Chado) for more
     information on this tool.
 
 Please follow up with comments or problems with this release to the
 schema mailing list.
 
-Thanks, [Scott](../User%253AScott "User%253AScott")
+Thanks, [Scott](../User%253AScott)
 
 Changes in Chado 1.2:
 
@@ -55,7 +55,7 @@ Changes in Chado 1.2:
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/09/22*
+*Posted to the [GMOD News](../GMOD_News) on 2011/09/22*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

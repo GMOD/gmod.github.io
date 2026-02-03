@@ -52,13 +52,13 @@ Needs to be done still:
 
 ## MediaWiki
 
-See [Hackathon_wikidb](Hackathon_wikidb "Hackathon wikidb")
+See [Hackathon_wikidb](/wiki/Hackathon_wikidb)
 
 - Did most of a new release of TableEdit to conform better to MW coding
   standards
 - Wiki Chado round trip partly successful
   - Chado2Wiki worked via dumps to intermediate flatfile formats
-  - Wiki2Chado worked for simple case with [Modware](Modware "Modware")
+  - Wiki2Chado worked for simple case with [Modware](/wiki/Modware)
   - Wiki2Chado via Chado XML and XORT - close but not completed before
     we left
 
@@ -78,7 +78,7 @@ Thursday 8:40 Meet in the lobby of the hotel to walk over to NU
 
 - Chado
 - Wiki/TableEdit  : working notes at
-  [Hackathon_wikidb](Hackathon_wikidb "Hackathon wikidb")
+  [Hackathon_wikidb](/wiki/Hackathon_wikidb)
 - Apollo
 - Documentation\`
 
@@ -174,17 +174,17 @@ is relatively near an 'El' stop is convenient!
 Several people have expressed interest in tuning the Apollo ↔ Chado
 interaction. With that in mind, I would like to propose this goal: to
 produce a VMware image that has
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
-associated tools, [Apollo](Apollo.1 "Apollo"), and MediaWiki with
-[TableEdit](TableEdit.1 "TableEdit"), with the point of producing a
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
+associated tools, [Apollo](/wiki/Apollo.1), and MediaWiki with
+[TableEdit](/wiki/TableEdit.1), with the point of producing a
 server that could be picked up and used for a nascent model organism
 database for use with community annotation.
 
 Other things that would make sense to put in the VMware image but are
-secondary to the goal are [GBrowse](GBrowse.1 "GBrowse") and
-[GMODWeb](GMODWeb "GMODWeb"). Other things that could be worked on
+secondary to the goal are [GBrowse](/wiki/GBrowse.1) and
+[GMODWeb](/wiki/GMODWeb). Other things that could be worked on
 during the hackathon are rebuilding rpm packages for biopackages.net,
-tuning [Modware](Modware "Modware") for the newer Chado schema, and
+tuning [Modware](/wiki/Modware) for the newer Chado schema, and
 tuning PostgreSQL to get better performance.
 
 More specific subgoals:
@@ -221,10 +221,10 @@ More specific subgoals:
   release of Apollo (I'm betting yes)
 - A good example config that works with the dicty example database.
 
-**MediaWiki/[TableEdit](TableEdit.1 "TableEdit"):**
+**MediaWiki/[TableEdit](/wiki/TableEdit.1):**
 
 - See [Table Edit at Hackathon
-  2007](TableEdit.1#Table_Edit_at_Hackathon_2007 "TableEdit")
+  2007](/wiki/TableEdit.1#Table_Edit_at_Hackathon_2007)
 
 All of this should be saved in the schema cvs, in the hackathon_2007
 directory:
@@ -237,33 +237,33 @@ rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/schema/hackathon_2007/</a>
 While definitive goals have not been established yet, here are some
 possibilities. Please feel free to add more.
 
-- Improving [Apollo-Chado](Apollo-Chado "Apollo-Chado") round tripping
+- Improving [Apollo-Chado](/wiki/Apollo-Chado) round tripping
   (documentation, examples, tutorials, configuration files, installation
   procedures, etc)
 
-[Justin](User%253AJustaddcoffee "User%253AJustaddcoffee"): I've written
+[Justin](/wiki/User%253AJustaddcoffee): I've written
 [Apollo-Chado Integration at BovineBase: Bugs and
-Suggestions](Apollo-Chado_Integration_at_BovineBase%253A_Bugs_and_Suggestions "Apollo-Chado Integration at BovineBase: Bugs and Suggestions")
+Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase%253A_Bugs_and_Suggestions)
 containing a list of bugs and suggestions from our developers and
-[Apollo](Apollo.1 "Apollo") users, compiled during our construction of a
+[Apollo](/wiki/Apollo.1) users, compiled during our construction of a
 Chado\<-\>Apollo setup for the Bovine genome annotation effort.
 
 - Beginning work on Apollo-Ensembl round tripping
-- Merging the ClassDBI classes the [Modware](Modware "Modware") and
-  [GMODWeb](GMODWeb "GMODWeb") use (Chado::AutoDBO and Turnkey::AutoDBI)
+- Merging the ClassDBI classes the [Modware](/wiki/Modware) and
+  [GMODWeb](/wiki/GMODWeb) use (Chado::AutoDBO and Turnkey::AutoDBI)
 - Giving a small MOD a 'GMOD make over'
 - Work on perl XML::DOM tools for writing [Chado
-  XML](Chado_XML "Chado XML")
+  XML](/wiki/Chado_XML)
 - Building VMware instances for distribution
 - Rebuilding RPM packages for updated GMOD software
 - Polishing a gmod 0.5 release
 - Modify Apollo to annotate with GO terms and enable Chado round
   tripping of feature_cvterms
-- improving analysis plugins for chado via [Modware](Modware "Modware")
-  or [GBrowse](GBrowse.1 "GBrowse")
+- improving analysis plugins for chado via [Modware](/wiki/Modware)
+  or [GBrowse](/wiki/GBrowse.1)
 - performance tuning.
 - community [wiki development/wiki table editor
-  work](TableEdit.1#Table_Edit_at_Hackathon_2007 "TableEdit")
+  work](/wiki/TableEdit.1#Table_Edit_at_Hackathon_2007)
 
 # Preparation
 
@@ -284,7 +284,7 @@ coming:
   probably use that.)
 - Also in the vmware instance: ~~phpmyadmin, phppgadmin,~~ mediawiki all
   configured and ready to use.
-  [Scott](User%253AScott "User%253AScott") 20:46, 30 July 2007 (EDT): *I don't
+  [Scott](/wiki/User%253AScott) 20:46, 30 July 2007 (EDT): *I don't
   think the admin stuff needs to be a priority*
 - A printer (maybe--do people use paper anymore?)
 - A computer projector

@@ -25,7 +25,7 @@ Showing 21 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
@@ -37,7 +37,7 @@ class="external"
 rel="nofollow">http://www.yeastgenome.org/cgi-bin/blast-sgd.pl</a>  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://www.biomart.org/download.html"
 class="external"
@@ -52,7 +52,7 @@ rel="nofollow">http://www.biomart.org/community.html</a>  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://sourceforge.net/projects/gmod/files/cmap/" class="external"
@@ -65,7 +65,7 @@ rel="nofollow">http://www.gramene.org/db/cmap</a>  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://curation.pombase.org/"
 class="external" rel="nofollow">http://curation.pombase.org/</a>  ,
@@ -80,7 +80,7 @@ rel="nofollow">https://github.com/pombase/canto</a>  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a href="https://github.com/bioteam/DIYA"
 class="external"
@@ -91,7 +91,7 @@ rel="nofollow">https://github.com/bioteam/DIYA</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/"
@@ -104,7 +104,7 @@ rel="nofollow">http://gbrowse.org</a>  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GBrowse_syn.1"
+<td class="smwpropname"><a href="/wiki/GBrowse_syn.1"
 title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="https://github.com/GMOD/GBrowse"
 class="external"
@@ -120,7 +120,7 @@ rel="nofollow">http://www.arabidopsis.org/cgi-bin/gbrowse_syn/arabidopsis/?name=
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GO_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/GO_Graphic_Viewer.1"
 title="GO Graphic Viewer">GO Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
@@ -132,7 +132,7 @@ class="external"
 rel="nofollow">http://www.yeastgenome.org/cgi-bin/GO/goTermFinder.pl</a>  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
+<td class="smwpropname"><a href="/wiki/GO%253A%253ATermFinder.1"
 title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://search.cpan.org/dist/GO-TermFinder/" class="external"
@@ -142,7 +142,7 @@ class="external"
 rel="nofollow">http://go.princeton.edu/cgi-bin/GOTermFinder/GOTermFinder</a>  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="https://twitter.com/galaxyproject"
 class="external"
@@ -159,7 +159,7 @@ rel="nofollow">https://github.com/galaxyproject/galaxy/</a>  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="https://github.com/intermine/intermine.git" class="external"
@@ -175,7 +175,7 @@ rel="nofollow">http://www.flymine.org</a>  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://jbrowse.org/install/"
 class="external" rel="nofollow">http://jbrowse.org/install/</a>  ,
@@ -186,7 +186,7 @@ rel="nofollow">http://twitter.com/usejbrowse</a>  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="https://jbrowse.org/jb2/docs/quickstart_web" class="external"
@@ -202,7 +202,7 @@ rel="nofollow">http://twitter.com/usejbrowse</a>  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://www.yandell-lab.org/software/maker.html" class="external"
@@ -221,7 +221,7 @@ rel="nofollow">http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi</a>  
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://biocyc.org/download.shtml"
 class="external"
@@ -237,7 +237,7 @@ rel="nofollow">http://biocyc.org/</a>  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://textpresso.org" class="external"
 rel="nofollow">http://textpresso.org</a>  ,
@@ -249,7 +249,7 @@ rel="nofollow">http://textpresso-www.caltech.edu/cgi-bin/celegans/user_guide</a>
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://tripal.info" class="external"
 rel="nofollow">http://tripal.info</a>  ,
@@ -262,7 +262,7 @@ rel="nofollow">http://tripal.info/tutorials/v2.x/installation</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebApollo.1"
+<td class="smwpropname"><a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://code.google.com/p/genomancer"
 class="external"
@@ -276,7 +276,7 @@ rel="nofollow">http://genomearchitect.org/webapollo/releases/</a>  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebApollo2"
+<td class="smwpropname"><a href="/wiki/WebApollo2"
 title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://genomearchitect.org"
 class="external" rel="nofollow">http://genomearchitect.org</a>  ,
@@ -287,7 +287,7 @@ rel="nofollow">http://icebox.lbl.gov/Apollo2/annotator/index</a>  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html"
@@ -301,7 +301,7 @@ rel="nofollow">http://webgbrowse.cgb.indiana.edu</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
+<td class="smwpropname"><a href="/wiki/XORT.1" title="XORT">XORT</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://sourceforge.net/projects/gmod/files/OldFiles/"
@@ -314,4 +314,4 @@ rel="nofollow">http://sourceforge.net/projects/gmod/files/OldFiles/</a>  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

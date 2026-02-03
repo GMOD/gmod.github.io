@@ -5,19 +5,17 @@ title: "GBrowse Install HOWTO"
 few notable sites are:
 
 WormBase (C. elegans and related nematodes)
-<a
-href="ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
+<a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
 class="external free"
 rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz</a>
 
 SGD (S. cerevisiae)
-<a href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
+<a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
 class="external free"
 rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/</a>
 
 FlyBase (D. melanogaster)
-<a
-href="ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
+<a href="/wiki/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
 class="external free"
 rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/</a>
 
@@ -25,11 +23,11 @@ rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff
 
 In addition, the `bin/` subdirectory of the GBrowse distribution
 contains a series of scripts to convert annotation files in various
-formats into GFF3 (or [GFF2](GFF2 "GFF2")) format. For example, the
+formats into GFF3 (or [GFF2](/wiki/GFF2)) format. For example, the
 `ucsc_genes2gff.pl` script will convert gene models in Table Browser
 format files from
 <a href="http://www.genome.ucsc.edu" class="external free"
-rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](GFF3 "GFF3")
+rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](/wiki/GFF3)
 format. `load_genbank.pl` will download and load sequence annotation
 files in GenBank format from NCBI. The sample configuration file
 `08.genbank.conf` (located in `contrib/conf_files`) is appropriate for
@@ -52,19 +50,19 @@ Alternatively, you may put several FASTA files into a directory, and
 provide the directory name as the argument to -fasta. (The yeast DNA is
 too large to be included in this distribution, but you can get a copy of
 it from
-<a href="ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
+<a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
 rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/</a>)
 
 Run `bp_bulk_load_gff.pl -h` to see usage instructions.
 
-[GFF3](GFF3 "GFF3") allow you to include FASTA sequence at the bottom of
+[GFF3](/wiki/GFF3) allow you to include FASTA sequence at the bottom of
 the file, following the sequence annotations. If you are loading one of
 these GFF files, the DNA will be recognized automatically and loaded by
 any of the loaders.
 
 # Creating your own Genome Database
 
-See the <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+See the <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a> for
 information on how to create new databases from scratch, add new browser
 tracks, and how to get the browser to dump the DNA from the region

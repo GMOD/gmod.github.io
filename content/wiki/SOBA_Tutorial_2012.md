@@ -3,10 +3,10 @@ title: "SOBA Tutorial 2012"
 ---
 # SOBA Tutorial 2012
 
-This [SOBA](SOBA.1 "SOBA") tutorial was taught as part of the [2012 GMOD
-Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School") and
+This [SOBA](/wiki/SOBA.1) tutorial was taught as part of the [2012 GMOD
+Summer School](/wiki/2012_GMOD_Summer_School) and
 the [2013 GMOD Summer
-School](2013_GMOD_Summer_School "2013 GMOD Summer School").
+School](/wiki/2013_GMOD_Summer_School).
 
 
 
@@ -23,8 +23,8 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School").
 
 **<a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
 class="external text" rel="nofollow">SOBA</a>** is a command line tool
-and web application for analyzing [GFF3](GFF3 "GFF3") annotations.
-[GFF3](GFF3 "GFF3") is a standard file format for genomic annotation
+and web application for analyzing [GFF3](/wiki/GFF3) annotations.
+[GFF3](/wiki/GFF3) is a standard file format for genomic annotation
 data. SOBA gathers statistics from GFF3 files and renders them as tables
 and graphs.
 
@@ -40,7 +40,7 @@ The web version of SOBA will produce the following:
 
 In addition, the command line tool (SOBAcl) flexibly produces a much
 wider variety of tables, figures and graphs based on the data in a
-[GFF3](GFF3 "GFF3") file, as well as the ability to produce complex and
+[GFF3](/wiki/GFF3) file, as well as the ability to produce complex and
 extensible custom reports via a robust template system.
 
 SOBA is a tool for those dealing with genomic sequence annotation who
@@ -57,7 +57,7 @@ SOBA is built with Perl (and JavaScript for the web interface). The web
 interface uses <a href="http://search.cpan.org/perldoc?CGI::Application"
 class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
-and [AJAX](Glossary#AJAX "Glossary"). Both versions of SOBA use the
+and [AJAX](/wiki/Glossary#AJAX). Both versions of SOBA use the
 <a href="http://template-toolkit.org/" class="external text"
 rel="nofollow">Template Tooklit (TT)</a> to generate html/txt reports,
 graphviz for the ontology graphs, and GD for charts. Template Toolkit
@@ -117,4 +117,4 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA") |
+| [Has topic](/wiki/Property%253AHas_topic) | [SOBA](/wiki/SOBA.1) |

@@ -128,7 +128,7 @@ Otherwise, the browser will proceed to a full text search of all the
 comment fields.
 
 search attributes (<a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
-class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](../GBrowse_Adaptors "GBrowse Adaptors") only)
+class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](../GBrowse_Adaptors) only)
 When the browser has searched the name and alias of features without
 success, it will do a whole database keyword search by calling the
 database's `search_notes()` method. By default this will search the text
@@ -201,7 +201,7 @@ third argument. It specifies additional parameters to be passed to the
 selected driver.
 
 For example, here is how to create session data that is stored in the
-[MySQL](../MySQL "MySQL") "test" database under a table named
+[MySQL](../MySQL) "test" database under a table named
 "gbrowse_sessions." The session data will be stored in binary form by
 the Storable module:
 
@@ -368,7 +368,7 @@ directories to search in.
 
 Users can link to their own tracks or to tracks published by other
 GBrowse or <a href="../DAS" class="mw-redirect" title="DAS">DAS</a>
-servers. GBrowse can also integrate with [Galaxy](../Galaxy.1 "Galaxy").
+servers. GBrowse can also integrate with [Galaxy](../Galaxy.1).
 
 - **allow remote callbacks**
 
@@ -794,7 +794,7 @@ described in the next section.
 ## Glyphs and Glyph Options
 
 See the separate article [GBrowse
-Configuration/Glyphs](../GBrowse_Configuration/Glyphs "GBrowse Configuration/Glyphs")
+Configuration/Glyphs](../GBrowse_Configuration/Glyphs)
 for this important topic.
 
 ## Adding features to the overview
@@ -1298,27 +1298,27 @@ value of the tag looks like an NCBI GI number:
 ## Configuring Balloon Tooltips
 
 See: [GBrowse
-Configuration/Balloons](../GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
+Configuration/Balloons](../GBrowse_Configuration/Balloons).
 
 ## Generating Static Images: PNGs, SVGs and PDFs
 
 See: [GBrowse
-Configuration/Images](../GBrowse_Configuration/Images "GBrowse Configuration/Images").
+Configuration/Images](../GBrowse_Configuration/Images).
 
 # Generating Feature Frequency Histograms
 
 See: [GBrowse Configuration/Feature frequency
-histograms](../GBrowse_Configuration/Feature_frequency_histograms "GBrowse Configuration/Feature frequency histograms")
+histograms](../GBrowse_Configuration/Feature_frequency_histograms)
 
 # Internationalization
 
 See: [GBrowse
-Configuration/I18n](../GBrowse_Configuration/I18n "GBrowse Configuration/I18n").
+Configuration/I18n](../GBrowse_Configuration/I18n).
 
 # Authentication & Authorization
 
 See: [GBrowse
-Configuration/Authentication](../GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication").
+Configuration/Authentication](../GBrowse_Configuration/Authentication).
 
 # Displaying Genetic & RH Maps
 
@@ -1383,12 +1383,12 @@ For example:
 # Using DAS (Distributed Annotation System) Databases
 
 See: [GBrowse
-Configuration/DAS](../GBrowse_Configuration/DAS "GBrowse Configuration/DAS").
+Configuration/DAS](../GBrowse_Configuration/DAS).
 
 # The Bio::MOBY Browse
 
 See: [GBrowse
-Configuration/BioMOBY](../GBrowse_Configuration/BioMOBY "GBrowse Configuration/BioMOBY").
+Configuration/BioMOBY](../GBrowse_Configuration/BioMOBY).
 
 # Filtering Search Results
 
@@ -1440,7 +1440,7 @@ on the primary_tag
 # Invoking GBrowse URLs
 
 See: [GBrowse Configuration/URL
-schema](../GBrowse_Configuration/URL_schema "GBrowse Configuration/URL schema").
+schema](../GBrowse_Configuration/URL_schema).
 
 # Important Maintenance
 
@@ -1458,7 +1458,7 @@ proper permissions to delete the files in this directory.
 # Further Information
 
 For further information, bug reports, etc, please consult the [GMOD
-Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists"). The main
+Mailing Lists](../GMOD_Mailing_Lists). The main
 mailing list for gbrowse support is
 <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
 class="external free"
@@ -1468,7 +1468,7 @@ also get help on the GMOD
 class="external text" rel="nofollow">IRC</a> channel on
 <a href="http://freenode.net/" class="external text"
 rel="nofollow">Freenode</a>:
-<a href="irc://irc.freenode.net/#gmod" class="external free"
+<a href="/wiki/irc://irc.freenode.net/#gmod" class="external free"
 rel="nofollow">irc://irc.freenode.net/#gmod</a>
 
 Have fun!

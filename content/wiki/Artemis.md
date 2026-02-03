@@ -19,14 +19,14 @@ systems. It can read
 rel="nofollow">EMBL</a> and
 <a href="http://www.ncbi.nlm.nih.gov:80/Genbank/GenbankOverview.html"
 class="external text" rel="nofollow">GENBANK</a> database entries or
-sequence in [FASTA](Glossary#FASTA "Glossary") or raw format. Extra
-sequence features can be in EMBL, GENBANK or [GFF](GFF "GFF") format.
+sequence in [FASTA](/wiki/Glossary#FASTA) or raw format. Extra
+sequence features can be in EMBL, GENBANK or [GFF](/wiki/GFF) format.
 
 Artemis is not part of the GMOD project, but Artemis does work with
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> (see the
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (see the
 [Artemis-Chado Integration
-Tutorial](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial")),
+Tutorial](/wiki/Artemis-Chado_Integration_Tutorial)),
 and the Artemis group is working closely with
-[Apollo](Apollo.1 "Apollo") developers on [Gbol](Gbol "Gbol").
-[Apollo](Apollo.1 "Apollo") is GMOD's official genome
-[annotation](Annotation "Annotation") editor.
+[Apollo](/wiki/Apollo.1) developers on [Gbol](/wiki/Gbol).
+[Apollo](/wiki/Apollo.1) is GMOD's official genome
+[annotation](/wiki/Annotation) editor.

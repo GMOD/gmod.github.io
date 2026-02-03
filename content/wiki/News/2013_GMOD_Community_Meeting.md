@@ -18,7 +18,7 @@ rel="nofollow">International Society for Biocuration</a>.
 
 More details--venue, meeting agenda, and so on--will be going up on the
 GMOD wiki in the new year; watch the [April 2013 GMOD
-Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") page for
+Meeting](../April_2013_GMOD_Meeting) page for
 updates.
 
 
@@ -31,4 +31,4 @@ and what to avoid!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/12/03*
+*Posted to the [GMOD News](../GMOD_News) on 2012/12/03*

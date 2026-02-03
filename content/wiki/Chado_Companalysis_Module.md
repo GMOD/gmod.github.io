@@ -317,9 +317,9 @@ analysis Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
-- [analysisprop](Chado_Tables#Table:_analysisprop "Chado Tables")
-- [quantification](Chado_Tables#Table:_quantification "Chado Tables")
+- [analysisfeature](/wiki/Chado_Tables#Table:_analysisfeature)
+- [analysisprop](/wiki/Chado_Tables#Table:_analysisprop)
+- [quantification](/wiki/Chado_Tables#Table:_quantification)
 
 ------------------------------------------------------------------------
 
@@ -360,14 +360,14 @@ entries, with rank indicating query/subject
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_feature"
+<td><p><a href="/wiki/Chado_Tables#Table:_feature"
 title="Chado Tables">feature</a></p></td>
 <td>feature_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_analysis"
+<td><p><a href="/wiki/Chado_Tables#Table:_analysis"
 title="Chado Tables">analysis</a></p></td>
 <td>analysis_id</td>
 <td>integer</td>
@@ -436,8 +436,8 @@ analysisfeature Structure
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | analysisprop_id | serial | *PRIMARY KEY* |
-| [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [analysis](/wiki/Chado_Tables#Table:_analysis) | analysis_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | *UNIQUE#1* |
 
 analysisprop Structure

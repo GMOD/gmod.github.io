@@ -11,8 +11,8 @@ this is a snapshot of the news page from right before MW was shutdown.
 News that is relevant to the GMOD user and developer communities. This
 page only shows recent news; to see all news items since autumn 2007, go
 to the **[GMOD News
-Archives](GMOD_News_Archives "GMOD News Archives")**. See also the [GMOD
-Calendar and Events List](Calendar "Calendar").
+Archives](/wiki/GMOD_News_Archives)**. See also the [GMOD
+Calendar and Events List](/wiki/Calendar).
 
   News</span>](#Recent_News)
 - [News
@@ -33,12 +33,10 @@ Calendar and Events List](Calendar "Calendar").
 <tbody>
 <tr class="odd">
 <td data-valign="top" style="width: 95%">
-<h3 id="prospecting-for-proposals-for-gsoc-2024"><a
-href="News/Prospecting_for_Proposals_for_GSoC_2024">Prospecting for
+<h3 id="prospecting-for-proposals-for-gsoc-2024"><a href="/wiki/News/Prospecting_for_Proposals_for_GSoC_2024">Prospecting for
 Proposals for GSoC 2024</a></h3>
 
-<a
-href="GSoC"
+<a href="/wiki/GSoC"
 title="GSoC">&lt;img alt="GoogleSummer 2016logo.jpg"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/GoogleSummer_2016logo.jpg/272px-GoogleSummer_2016logo.jpg.png"
 width="272" height="272"
@@ -57,8 +55,7 @@ work on a project over the summer months and receive a stipend from
 Google for participating. Thousands of organizations of different sizes
 participate in GSoC, with the common factor being that they must produce
 open-source code.</p>
-<p>Please take a look at the <a
-href="GSoC"
+<p>Please take a look at the <a href="/wiki/GSoC"
 title="GSoC">GSoC wiki page</a> and think about any projects that might
 work well for a GSoC student, and add them to the wiki. If you are
 interested in being a mentor, don't hesitate to get in touch with us at
@@ -76,12 +73,10 @@ class="external text" rel="nofollow">help@gmod.org</a> for advice!</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2024/02/12</em>
 
-<h3 id="jbrowse2-v1.1.0-released"><a
-href="News/JBrowse2_v1.1.0_Released">JBrowse2 v1.1.0 Released</a></h3>
+<h3 id="jbrowse2-v1.1.0-released"><a href="/wiki/News/JBrowse2_v1.1.0_Released">JBrowse2 v1.1.0 Released</a></h3>
 
 <h2 id="contents-1">Contents</h2>
 
@@ -145,8 +140,7 @@ class="mw-headline">Fetch intron and upstream/downstream
 sequences</span></h3>
 <p>We also have several other improvements including the ability to get
 intron and upstream/downstream sequence in the feature details</p>
-<p><a
-href="File:Upstream_downstream.png"
+<p><a href="/wiki/File:Upstream_downstream.png"
 class="image">&lt;img alt="Upstream downstream.png"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/76/Upstream_downstream.png/700px-Upstream_downstream.png"
 width="700" height="248"
@@ -172,8 +166,7 @@ stack</span></h3>
 active widgets. The update also adds a minimize button to allow quick
 access to full screen JBrowse web.</p>
 <p>See below for demos of the new navigation UI.</p>
-<p><a
-href="File:Minimize_button_demo.gif"
+<p><a href="/wiki/File:Minimize_button_demo.gif"
 class="image">&lt;img alt="Minimize button demo.gif"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0f/Minimize_button_demo.gif"
 width="480" height="414" /&gt;</a></p>
@@ -274,16 +267,13 @@ class="mw-headline">Committers: 6</span></h4>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2021/03/30</em>
 
-<h3 id="prospecting-for-proposals-for-gsoc-2021"><a
-href="News/Prospecting_for_Proposals_for_GSoC_2021">Prospecting for
+<h3 id="prospecting-for-proposals-for-gsoc-2021"><a href="/wiki/News/Prospecting_for_Proposals_for_GSoC_2021">Prospecting for
 Proposals for GSoC 2021</a></h3>
 
-<a
-href="GSoC"
+<a href="/wiki/GSoC"
 title="GSoC">&lt;img alt="GoogleSummer 2016logo.jpg"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/GoogleSummer_2016logo.jpg/272px-GoogleSummer_2016logo.jpg.png"
 width="272" height="272"
@@ -302,8 +292,7 @@ work on a project over the summer months and receive a stipend from
 Google for participating. Thousands of organizations of many different
 sizes take part in GSoC, with the common factor being that they must
 produce open-source code.</p>
-<p>Please take a look at the <a
-href="GSoC"
+<p>Please take a look at the <a href="/wiki/GSoC"
 title="GSoC">GSoC wiki page</a> and think about any projects that might
 work well for a GSoC student, and add them to the wiki. If you are
 interested in being a mentor, please contact us at <a
@@ -321,14 +310,12 @@ class="external text" rel="nofollow">help@gmod.org</a> for advice!</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2021/02/16</em>
 
-<h3 id="codefest-2020"><a href="Codefest_2020">Codefest 2020</a></h3>
+<h3 id="codefest-2020"><a href="/wiki/Codefest_2020">Codefest 2020</a></h3>
 
-<a
-href="File:Palms.jpg"
+<a href="/wiki/File:Palms.jpg"
 class="image">&lt;img alt="Palms.jpg"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/df/Palms.jpg" width="1052"
 height="218" /&gt;</a>
@@ -363,8 +350,7 @@ class="external text" rel="nofollow">Google Doc</a>. The codefest is
 open to anyone who'd like to work on any GMOD project (or, better yet,
 any combination of GMOD projects), including but not limited to</p>
 
-<a
-href="File:EvoHackLaptops2010.jpg"
+<a href="/wiki/File:EvoHackLaptops2010.jpg"
 class="image" title="GMOD Hackathon">&lt;img alt="GMOD Hackathon"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/200px-EvoHackLaptops2010.jpg"
 width="200" height="119"
@@ -372,23 +358,17 @@ srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/image
 1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x" /&gt;</a>
 
 <ul>
-<li><a
-href="Tripal"
+<li><a href="/wiki/Tripal"
 title="Tripal">Tripal</a></li>
-<li><a
-href="Chado"
+<li><a href="/wiki/Chado"
 class="mw-redirect" title="Chado">Chado</a></li>
-<li><a
-href="JBrowse"
+<li><a href="/wiki/JBrowse"
 title="JBrowse">JBrowse</a> (1 and 2)</li>
-<li><a
-href="Apollo"
+<li><a href="/wiki/Apollo"
 title="Apollo">Apollo</a></li>
-<li><a
-href="Galaxy"
+<li><a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a></li>
-<li><a
-href="InterMine"
+<li><a href="/wiki/InterMine"
 title="InterMine">InterMine</a></li>
 </ul>
 <p>We already know that there will be Tripal, Chado, Apollo and JBrowse
@@ -447,11 +427,10 @@ developers present.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2020/01/08</em>
 
-<h3 id="tripal-3.5-released"><a href="Tripal_3.5_Released">Tripal 3.5
+<h3 id="tripal-3.5-released"><a href="/wiki/Tripal_3.5_Released">Tripal 3.5
 Released</a></h3>
 <p>This <a
 href="http://tripal.info"
@@ -474,11 +453,10 @@ now have more informative definition lines for FASTA sequences.</li>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2021/02/08</em>
 
-<h3 id="jbrowse-2-release"><a href="News/JBrowse_2_release">JBrowse 2
+<h3 id="jbrowse-2-release"><a href="/wiki/News/JBrowse_2_release">JBrowse 2
 release</a></h3>
 
 <a
@@ -515,16 +493,13 @@ href="https://jbrowse.org/jb2/contact/"
 class="external text" rel="nofollow">here</a>.</p>
 <p>The JBrowse Team</p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2020/11/09</em>
 
-<h3 id="prospecting-for-proposals-for-gsoc-2020"><a
-href="News/Prospecting_for_Proposals_for_GSoC_2020">Prospecting for
+<h3 id="prospecting-for-proposals-for-gsoc-2020"><a href="/wiki/News/Prospecting_for_Proposals_for_GSoC_2020">Prospecting for
 Proposals for GSoC 2020</a></h3>
 
-<a
-href="GSoC"
+<a href="/wiki/GSoC"
 title="GSoC">&lt;img alt="GoogleSummer 2016logo.jpg"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/GoogleSummer_2016logo.jpg/272px-GoogleSummer_2016logo.jpg.png"
 width="272" height="272"
@@ -543,8 +518,7 @@ work on a project over the summer months and receive a stipend from
 Google for participating. Thousands of organizations of many different
 sizes take part in GSoC, with the common factor being that they must
 produce open-source code.</p>
-<p>Please take a look at the <a
-href="GSoC"
+<p>Please take a look at the <a href="/wiki/GSoC"
 title="GSoC">GSoC wiki page</a> and think about any projects that might
 work well for a GSoC student, and add them to the wiki. If you are
 interested in being a mentor, please contact us at <a
@@ -562,12 +536,10 @@ class="external text" rel="nofollow">help@gmod.org</a> for advice!</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2020/02/03</em>
 
-<h3 id="call-for-pag-abstracts"><a
-href="News/Call_for_PAG_Abstracts">Call for PAG Abstracts</a></h3>
+<h3 id="call-for-pag-abstracts"><a href="/wiki/News/Call_for_PAG_Abstracts">Call for PAG Abstracts</a></h3>
 <h2 id="call-for-pag-abstracts-1"><span id="Call_for_PAG_Abstracts"
 class="mw-headline">Call for PAG Abstracts</span></h2>
 <p>Time is short!</p>
@@ -580,23 +552,19 @@ href="mailto:help@gmod.org"
 class="external text" rel="nofollow">help@gmod.org</a>. Types of talks
 typically include updates on GMOD software projects, usage stories for
 successful sites, proposals for new GMOD projects and descriptions of
-plugins for existing GMOD software projects like <a
-href="Tripal"
-title="Tripal">Tripal</a>, <a
-href="JBrowse"
-title="JBrowse">JBrowse</a> and <a
-href="Galaxy"
+plugins for existing GMOD software projects like <a href="/wiki/Tripal"
+title="Tripal">Tripal</a>, <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a> and <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a>.</p>
 <p>Please consider giving a talk and sharing your experience and
 ideas!</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2016/11/04</em>
 
-<h3 id="new-gmod-server"><a href="News/New_GMOD_Server">New GMOD
+<h3 id="new-gmod-server"><a href="/wiki/News/New_GMOD_Server">New GMOD
 Server</a></h3>
 <h2 id="gmod.org-has-a-new-home"><span id="GMOD.org_has_a_new_home"
 class="mw-headline">GMOD.org has a new home</span></h2>
@@ -608,12 +576,10 @@ what's going on.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2016/09/29</em>
 
-<h3 id="gmod-jbrowse-2016-survey"><a
-href="News/GMOD-JBrowse_2016_Survey">GMOD-JBrowse 2016 Survey</a></h3>
+<h3 id="gmod-jbrowse-2016-survey"><a href="/wiki/News/GMOD-JBrowse_2016_Survey">GMOD-JBrowse 2016 Survey</a></h3>
 <p>Hello Genome Informaticians,</p>
 <p>The following survey is aimed at users (and potential users) of GMOD
 genome databases, especially the JBrowse genome browser. It will
@@ -630,11 +596,10 @@ rel="nofollow">https://goo.gl/forms/1bKIuAMjGKrS0hUi1</a></p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2016/09/23</em>
 
-<h3 id="gcc2016"><a href="News/GCC2016">GCC2016</a></h3>
+<h3 id="gcc2016"><a href="/wiki/News/GCC2016">GCC2016</a></h3>
 
 <a
 href="https://gcc2016.iu.edu/"
@@ -644,8 +609,7 @@ src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/med
 width="250" height="167" srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/GCC2016Logo.png
 1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/GCC2016Logo.png 2x" /&gt;</a>
 
-<a
-href="Jun_2016_GMOD_Meeting"
+<a href="/wiki/Jun_2016_GMOD_Meeting"
 title="Jun 2016 GMOD Meeting">&lt;img alt="GMOD2016ColorsBigLetters
 300px.png"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e1/GMOD2016ColorsBigLetters_300px.png/150px-GMOD2016ColorsBigLetters_300px.png"
@@ -661,27 +625,20 @@ class="external text" rel="nofollow">2016 Galaxy Community Conference
 (GCC2016)</a> will be held June 25-29, at <a
 href="https://gcc2016.iu.edu/location/"
 class="external text" rel="nofollow">Indiana University</a> in
-Bloomington, Indiana, United states, immediately before the <a
-href="Jun_2016_GMOD_Meeting"
+Bloomington, Indiana, United states, immediately before the <a href="/wiki/Jun_2016_GMOD_Meeting"
 title="Jun 2016 GMOD Meeting">June 2016 GMOD Meeting</a>, also in
-Bloomington.</strong> <a
-href="Galaxy"
+Bloomington.</strong> <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a> is a GMOD Component which interacts with many
-other <a
-href="GMOD_Components"
+other <a href="/wiki/GMOD_Components"
 title="GMOD Components">GMOD Components</a>, including:</p>
 <ul>
-<li><a
-href="Tripal"
-title="Tripal">Tripal</a>: A web front end for <a
-href="Chado"
+<li><a href="/wiki/Tripal"
+title="Tripal">Tripal</a>: A web front end for <a href="/wiki/Chado"
 class="mw-redirect" title="Chado">Chado</a> databases. Galaxy is working
 with the Tripal project to make Galaxy be Tripal's analysis engine.</li>
-<li><a
-href="JBrowse"
+<li><a href="/wiki/JBrowse"
 title="JBrowse">JBrowse</a>: A client-side genome browser and successor
-to the venerable <a
-href="GBrowse"
+to the venerable <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>. <a
 href="http://gcc2015.tsl.ac.uk/Lightning/#JBrowse_as_a_Galaxy_Tool"
 class="external text" rel="nofollow">JBrowse as a Galaxy Tool</a> was
@@ -690,18 +647,15 @@ href="http://gcc2015.tsl.ac.uk/"
 class="external text" rel="nofollow">GCC2015</a>. Ian Holmes, the
 JBrowse PI, has put JBrowse-Galaxy integration at "top of the list" for
 JBrowse's infrastructure upcoming infrastructure work.</li>
-<li><a
-href="MAKER"
+<li><a href="/wiki/MAKER"
 title="MAKER">MAKER</a>: A genome annotation pipeline that integrates
 several gene annotation engines, and combines them to produce annotation
 that is better than any individual tool produces. A <a
 href="https://wiki.galaxyproject.org/Documents/Posters?action=AttachFile&amp;do=view&amp;target=ISMB2014_Kandalaft_GenomeAnnotation.pdf"
 class="external text" rel="nofollow">MAKER-Galaxy</a> by Agriculture and
 Agri-Food Canada was presented at ISMB 2014.</li>
-<li><a
-href="InterMine"
-title="InterMine">InterMine</a> and <a
-href="BioMart"
+<li><a href="/wiki/InterMine"
+title="InterMine">InterMine</a> and <a href="/wiki/BioMart"
 title="BioMart">BioMart</a>: These are both popular data sources that
 are integrated with Galaxy.</li>
 </ul>
@@ -727,15 +681,13 @@ May 1.</strong></p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2016/04/04</em>
 
-<h3 id="gmod-meeting"><a href="News/2016_GMOD_Meeting">2016 GMOD
+<h3 id="gmod-meeting"><a href="/wiki/News/2016_GMOD_Meeting">2016 GMOD
 Meeting</a></h3>
 
-<a
-href="Jun_2016_GMOD_Meeting"
+<a href="/wiki/Jun_2016_GMOD_Meeting"
 title="Jun 2016 GMOD Meeting">&lt;img alt="GMOD2016ColorsBigLetters
 300px.png"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e1/GMOD2016ColorsBigLetters_300px.png/260px-GMOD2016ColorsBigLetters_300px.png"
@@ -743,19 +695,15 @@ width="260" height="218"
 srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/GMOD2016ColorsBigLetters_300px.png 1.5x,
 /mediawiki/images/e/e1/GMOD2016ColorsBigLetters_300px.png 2x" /&gt;</a>
 
-<p><strong>The <a
-href="Jun_2016_GMOD_Meeting"
+<p><strong>The <a href="/wiki/Jun_2016_GMOD_Meeting"
 title="Jun 2016 GMOD Meeting">next GMOD Community Meeting</a> will be
 held at Indiana University in Bloomington, Indiana, United States, June
 30-July 1, directly after the <a
 href="https://gcc2016.iu.edu/"
 class="external text" rel="nofollow">2016 Galaxy Community Conference
-(GCC2016)</a></strong>. <a
-href="Meetings"
-title="Meetings">GMOD Meetings</a> are a mix of <a
-href="GMOD_Membership#Users"
-title="GMOD Membership">user</a> and <a
-href="GMOD_Membership#Developers"
+(GCC2016)</a></strong>. <a href="/wiki/Meetings"
+title="Meetings">GMOD Meetings</a> are a mix of <a href="/wiki/GMOD_Membership#Users"
+title="GMOD Membership">user</a> and <a href="/wiki/GMOD_Membership#Developers"
 title="GMOD Membership">developer</a> presentations, and are a great
 place to find out what is happening in the project, what's coming up,
 and what others are doing.</p>
@@ -776,12 +724,10 @@ class="external text" rel="nofollow">GMOD help desk</a>.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2016/04/04</em>
 
-<h3 id="please-support-ecocyc"><a
-href="News/Please_Support_EcoCyc">Please Support EcoCyc</a></h3>
+<h3 id="please-support-ecocyc"><a href="/wiki/News/Please_Support_EcoCyc">Please Support EcoCyc</a></h3>
 
 <a href="http://ecocyc.org"
 rel="nofollow">&lt;img alt="EcoCyc website"
@@ -790,8 +736,7 @@ height="60" /&gt;</a>
 
 <p><a href="http://ecocyc.org"
 class="external text" rel="nofollow">EcoCyc, the <em>E. coli</em>
-information resource</a> and one of the resources offered by the <a
-href="Pathway_Tools"
+information resource</a> and one of the resources offered by the <a href="/wiki/Pathway_Tools"
 title="Pathway Tools">Pathway Tools</a> group, is in need of letters of
 support from the community after receiving a poor grant review, which
 could result in a complete loss of funding on July 1st, 2014. If you are
@@ -836,12 +781,10 @@ class="external text" rel="nofollow">the Pathway Tools website</a>.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/05/21</em>
 
-<h3 id="june-2014-webapollo-hackathon"><a
-href="News/June_2014_WebApollo_Hackathon">June 2014 WebApollo
+<h3 id="june-2014-webapollo-hackathon"><a href="/wiki/News/June_2014_WebApollo_Hackathon">June 2014 WebApollo
 Hackathon</a></h3>
 <p>Berkeley Bioinformatics Open-Source Projects (BBOP) invites you to
 join us this summer for a <strong><a
@@ -856,8 +799,7 @@ href="http://www.lbl.gov/LBL-Work/lab-site-map.html"
 class="external text" rel="nofollow">Lawrence Berkeley National
 Laboratory. Building 74 (B74)</a>, Room 104. 1 Cyclotron Rd, Berkeley,
 CA 94720</p>
-<p><strong>What</strong>: five days of intensive, collaborative <a
-href="WebApollo"
+<p><strong>What</strong>: five days of intensive, collaborative <a href="/wiki/WebApollo"
 title="WebApollo">WebApollo</a> development!</p>
 <p>For five days developers will work on new features of interest to
 their research communities, improve existing features, and collaborate
@@ -885,50 +827,36 @@ information</a></p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014-04-22</em>
 
-<h3 id="applications-open-for-gmod-online-training"><a
-href="News/Applications_Open_for_GMOD_Online_Training">Applications Open
+<h3 id="applications-open-for-gmod-online-training"><a href="/wiki/News/Applications_Open_for_GMOD_Online_Training">Applications Open
 for GMOD Online Training</a></h3>
 <p>GMOD will be holding its first online training course for those
 interested in the set up and use of GMOD components.</p>
 <p>The course will be held from <strong>Monday 19th May to Friday 23rd
-May 2014</strong>, and will cover core GMOD software, including <a
-href="GBrowse"
-title="GBrowse">GBrowse</a> and <a
-href="JBrowse"
-title="JBrowse">JBrowse</a>, <a
-href="Galaxy"
-title="Galaxy">Galaxy</a>, <a
-href="MAKER"
-title="MAKER">MAKER</a>, <a
-href="Tripal"
-title="Tripal">Tripal</a>, <a
-href="WebApollo"
-title="WebApollo">WebApollo</a>, <a
-href="Canto"
-title="Canto">Canto</a>, and the <a
-href="Chado"
+May 2014</strong>, and will cover core GMOD software, including <a href="/wiki/GBrowse"
+title="GBrowse">GBrowse</a> and <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a>, <a href="/wiki/Galaxy"
+title="Galaxy">Galaxy</a>, <a href="/wiki/MAKER"
+title="MAKER">MAKER</a>, <a href="/wiki/Tripal"
+title="Tripal">Tripal</a>, <a href="/wiki/WebApollo"
+title="WebApollo">WebApollo</a>, <a href="/wiki/Canto"
+title="Canto">Canto</a>, and the <a href="/wiki/Chado"
 class="mw-redirect" title="Chado">Chado</a> database.</p>
-<p>If you are interested in attending, please see <a
-href="GMOD_Online_Training_2014"
+<p>If you are interested in attending, please see <a href="/wiki/GMOD_Online_Training_2014"
 title="GMOD Online Training 2014">GMOD Online Training 2014</a> for more
 information and to submit your application.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014-03-31</em>
 
-<h3 id="canto-workshop-at-biocuration-2014"><a
-href="News/Canto_Workshop_at_Biocuration_2014">Canto Workshop at
+<h3 id="canto-workshop-at-biocuration-2014"><a href="/wiki/News/Canto_Workshop_at_Biocuration_2014">Canto Workshop at
 Biocuration 2014</a></h3>
 
-<a
-href="Canto"
+<a href="/wiki/Canto"
 title="Canto">&lt;img alt="CantoTextLogo.png"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/CantoTextLogo.png/240px-CantoTextLogo.png"
 width="240" height="59"
@@ -946,15 +874,13 @@ height="71" /&gt;</a>
 <p>GMOD will be running a workshop at <a
 href="http://biocuration2014.events.oicr.on.ca/"
 class="external text" rel="nofollow">Biocuration 2014</a> to demonstrate
-the use of <a
-href="Canto"
+the use of <a href="/wiki/Canto"
 title="Canto">Canto</a>, on Wednesday 9th April in the afternoon. Canto
 is a literature curation tool that allows users to create functional
 annotations for genes and gene products using <a
 href="http://www.obofoundry.org/"
 class="external text" rel="nofollow">OBO (ontology) terms</a>. Canto
-will soon be added to <a
-href="Cloud"
+will soon be added to <a href="/wiki/Cloud"
 title="Cloud">GMOD in the Cloud</a>, and this workshop will show
 participants how to get a GMOD in the Cloud instance up and running--it
 takes less than ten minutes!--and how to use Canto for literature
@@ -963,11 +889,10 @@ curation.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/03/25</em>
 
-<h3 id="tripal-2.0a-released"><a href="News/Tripal_2.0a_released">Tripal
+<h3 id="tripal-2.0a-released"><a href="/wiki/News/Tripal_2.0a_released">Tripal
 2.0a released</a></h3>
 <p>The Tripal Development Team is pleased to announce an alpha release
 of Tripal 2.0 for Drupal 7. This release is expected to have bugs and
@@ -987,12 +912,10 @@ loading of organisms and features.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/02/27</em>
 
-<h3 id="precompiled-ontologies-in-chado"><a
-href="News/Precompiled_Ontologies_in_Chado">Precompiled Ontologies in
+<h3 id="precompiled-ontologies-in-chado"><a href="/wiki/News/Precompiled_Ontologies_in_Chado">Precompiled Ontologies in
 Chado</a></h3>
 <p>Helena Rasche and the <a
 href="https://cpt.tamu.edu/"
@@ -1034,12 +957,10 @@ is not a problem.</p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/02/20</em>
 
-<h3 id="gcc2014-registration-is-open"><a
-href="News/GCC2014_Registration_is_Open">GCC2014 Registration is
+<h3 id="gcc2014-registration-is-open"><a href="/wiki/News/GCC2014_Registration_is_Open">GCC2014 Registration is
 Open</a></h3>
 
 <a
@@ -1151,12 +1072,10 @@ Committee</a></p>
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/02/14</em>
 
-<h3 id="gmod-paper-cuts-feb-10th-2014"><a
-href="News/GMOD_Paper_Cuts,_Feb_10th,_2014">GMOD Paper Cuts, Feb 10th,
+<h3 id="gmod-paper-cuts-feb-10th-2014"><a href="/wiki/News/GMOD_Paper_Cuts,_Feb_10th,_2014">GMOD Paper Cuts, Feb 10th,
 2014</a></h3>
 <p>__NOFACTBOX__</p>
 <p><strong>GMOD Paper Cuts is a periodic selection of choice cuts from
@@ -1210,14 +1129,10 @@ including many more genes than were found in the initial assembly. The
 <a
 href="http://hymenopteragenome.org"
 class="external text" rel="nofollow">Hymenoptera Genome Database</a>
-uses numerous GMOD resources, including <a
-href="MAKER"
-title="MAKER">MAKER</a> for automated genome annotation, <a
-href="JBrowse"
-title="JBrowse">JBrowse</a> and <a
-href="GBrowse"
-title="GBrowse">GBrowse</a> for sequence browsing, and <a
-href="WebApollo"
+uses numerous GMOD resources, including <a href="/wiki/MAKER"
+title="MAKER">MAKER</a> for automated genome annotation, <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a> and <a href="/wiki/GBrowse"
+title="GBrowse">GBrowse</a> for sequence browsing, and <a href="/wiki/WebApollo"
 title="WebApollo">WebApollo</a> for community genome annotation.</p>
 <p><br />
 </p>
@@ -1325,12 +1240,10 @@ associated with important agronomic traits in oil palm.</p>
 </blockquote>
 <p>The newly-sequenced <a
 href="http://genomsawit.mpob.gov.my/genomsawit/"
-class="external text" rel="nofollow">oil palm genome</a> used the <a
-href="MAKER"
+class="external text" rel="nofollow">oil palm genome</a> used the <a href="/wiki/MAKER"
 title="MAKER">MAKER</a> automated annotation pipeline. The oil palm is
 one of a number of genomics projects taking off in Malaysia at the
-moment. Perfect timing for a <a
-href="GMOD_Malaysia_2014"
+moment. Perfect timing for a <a href="/wiki/GMOD_Malaysia_2014"
 title="GMOD Malaysia 2014">GMOD workshop</a>!</p>
 <p><br />
 </p>
@@ -1366,8 +1279,7 @@ href="http://cnidarians.bu.edu/EdwardBase/cgi-bin/index.cgi"
 class="external text" rel="nofollow">EdwardsiellaBase</a>, and can be
 searched according to contig ID, gene ontology, protein family motif
 (Pfam), enzyme commission number, and BLAST. The alignment of the raw
-reads to the contigs can also be visualized via <a
-href="JBrowse"
+reads to the contigs can also be visualized via <a href="/wiki/JBrowse"
 title="JBrowse">JBrowse</a>.</p>
 <p><br />
 </p>
@@ -1408,8 +1320,7 @@ the GMOD project.
 <p><br />
 </p>
 
-<em>Posted to the <a
-href="GMOD_News"
+<em>Posted to the <a href="/wiki/GMOD_News"
 title="GMOD News">GMOD News</a> on 2014/02/10</em>
 
 </td>
@@ -1417,9 +1328,9 @@ title="GMOD News">GMOD News</a> on 2014/02/10</em>
 </tbody>
 </table>
 
-## [News Archives](GMOD_News_Archives "GMOD News Archives")
+## [News Archives](/wiki/GMOD_News_Archives)
 
-The [GMOD News Archives](GMOD_News_Archives "GMOD News Archives") lists
+The [GMOD News Archives](/wiki/GMOD_News_Archives) lists
 all news items since autumn 2007.
 
 ## Adding a News Item
@@ -1432,8 +1343,8 @@ Help Desk</a> and we will post it for you.
 GMOD news items are wiki pages with the prefix "News/". Creating a news
 item will automatically add it to the RSS feed, which appears on the
 **GMOD News** and [GMOD News
-Archives](GMOD_News_Archives "GMOD News Archives") pages, and in the
-news tracker on the [home page](Main_Page "Main Page").
+Archives](/wiki/GMOD_News_Archives) pages, and in the
+news tracker on the [home page](/wiki/Main_Page).
 
 ### Short Instructions
 
@@ -1471,12 +1382,12 @@ Please follow these guidelines when adding a news item.
     - **The first link in the news item should point to the page/URL you
       want the RSS feed to link to.**
       - For example, the first link in a news item about
-        <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+        <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
         could point to the
-        <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+        <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
         page.
     - You can include images in your news item. See [preexisting news
-      items](Category%253ANews_Items "Category%253ANews Items") for what markup
+      items](/wiki/Category%253ANews_Items) for what markup
       to use to do this.
 
 3.  Preview / save your changes. Edit and save the page until the news

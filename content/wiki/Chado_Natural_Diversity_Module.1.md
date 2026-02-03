@@ -3,21 +3,21 @@ title: "Chado Natural Diversity Module"
 ---
 # Chado Natural Diversity Module
 
-The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Natural
+The <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Natural
 Diversity Module is an extension to the Chado
-[schema](Glossary#Schema "Glossary") to better support natural diversity
+[schema](/wiki/Glossary#Schema) to better support natural diversity
 data.
 
 Eventually this page will resemble the [other Chado Module
-pages](Chado_Modules "Chado Modules"), with an overview followed by a
+pages](/wiki/Chado_Modules), with an overview followed by a
 detailed explanation of the tables, columns, and relationships in the
 module. However, while the module is [under
-development](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group"),
+development](/wiki/Chado_Natural_Diversity_Module_Working_Group),
 this page will have an alternative structure.
 
 Recently, a lot of work was done on the ND module at the [GMOD Tools for
 Evolutionary Biology
-hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), see <a
+hackathon](/wiki/GMOD_Evo_Hackathon), see <a
 href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
 class="external free"
 rel="nofollow">https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup</a>.
@@ -113,7 +113,7 @@ interacting modules allow storing data from experiments that generate
 new accessions/lines/strains and experimental samples, such as field
 collection, cross, and treatments.
 
-## Interactions with Other [Chado Modules](Chado_Modules "Chado Modules")
+## Interactions with Other [Chado Modules](/wiki/Chado_Modules)
 
 ### Stock Module
 
@@ -196,7 +196,7 @@ experimenters, can be stored as properties (nd_experimentprop).
 
 ## Key Ontologies
 
-### [Stock Relationship Ontology](Stock_Relationship_Ontology "Stock Relationship Ontology")
+### [Stock Relationship Ontology](/wiki/Stock_Relationship_Ontology)
 
 ## Loading Data
 
@@ -209,9 +209,9 @@ insert your data in the database.
 ## See Also
 
 - [Chado Natural Diversity Module Working
-  Group](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group")
+  Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)
   page, and the [group's discussion
-  page](Talk%253AChado_Natural_Diversity_Module_Working_Group "Talk:Chado Natural Diversity Module Working Group")
+  page](/wiki/Talk%253AChado_Natural_Diversity_Module_Working_Group)
   for background on how this module was created.
 
 ### Email Threads
@@ -330,10 +330,10 @@ A collection of 479 tomato accessions were used in several locations and
 years for assaying traits of breeding significance. The collection is an
 unstructured population of tomato varieties.
 
-**[Chado Stock Module](Chado_Stock_Module "Chado Stock Module")** The
+**[Chado Stock Module](/wiki/Chado_Stock_Module)** The
 stock table is used for storing any plant accession, collection,
 germplasm, or plants in a field plot. We use the
-<a href="Chado_Stock_Module#Table:_stock_relationship"
+<a href="/wiki/Chado_Stock_Module#Table:_stock_relationship"
 class="external text" rel="nofollow">stock_relationship</a> table for
 defining those relationships. Each plant accession, and its derived
 germplasm, is stored in the stock table , with relationships between
@@ -377,7 +377,7 @@ environmental conditions, and person recording the data, are stored as
 properties (nd_experimentprop).
 
 All the scored phenotype values and attributes are stored in the
-<a href="Chado_Phenotype_Module" class="external text"
+<a href="/wiki/Chado_Phenotype_Module" class="external text"
 rel="nofollow">phenotype table</a>, and genotypes in the
 <a href="http://gmod.org/wiki/Chado_Genotype_Module"
 class="external text" rel="nofollow">genotype table</a>. The 2 linking
@@ -401,7 +401,7 @@ height="943" alt="Natdiv simplified SGN.png" />
 # Tables
 
 This will be populated using the process outlined in [Chado Tables to
-Wiki](Chado_Tables_to_Wiki "Chado Tables to Wiki").
+Wiki](/wiki/Chado_Tables_to_Wiki).
 
 ## Table: nd_experiment
 
@@ -419,22 +419,22 @@ cross_experiment\] in mind.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_id | serial | *PRIMARY KEY* |
-| [nd_geolocation](Chado_Tables#Table:_nd_geolocation "Chado Tables") | nd_geolocation_id | integer | *NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* |
+| [nd_geolocation](/wiki/Chado_Tables#Table:_nd_geolocation) | nd_geolocation_id | integer | *NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *NOT NULL* |
 
 public.nd_experiment Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [nd_experiment_contact](Chado_Tables#Table:_nd_experiment_contact "Chado Tables")
-- [nd_experiment_dbxref](Chado_Tables#Table:_nd_experiment_dbxref "Chado Tables")
-- [nd_experiment_genotype](Chado_Tables#Table:_nd_experiment_genotype "Chado Tables")
-- [nd_experiment_phenotype](Chado_Tables#Table:_nd_experiment_phenotype "Chado Tables")
-- [nd_experiment_project](Chado_Tables#Table:_nd_experiment_project "Chado Tables")
-- [nd_experiment_protocol](Chado_Tables#Table:_nd_experiment_protocol "Chado Tables")
-- [nd_experiment_pub](Chado_Tables#Table:_nd_experiment_pub "Chado Tables")
-- [nd_experiment_stock](Chado_Tables#Table:_nd_experiment_stock "Chado Tables")
-- [nd_experimentprop](Chado_Tables#Table:_nd_experimentprop "Chado Tables")
+- [nd_experiment_contact](/wiki/Chado_Tables#Table:_nd_experiment_contact)
+- [nd_experiment_dbxref](/wiki/Chado_Tables#Table:_nd_experiment_dbxref)
+- [nd_experiment_genotype](/wiki/Chado_Tables#Table:_nd_experiment_genotype)
+- [nd_experiment_phenotype](/wiki/Chado_Tables#Table:_nd_experiment_phenotype)
+- [nd_experiment_project](/wiki/Chado_Tables#Table:_nd_experiment_project)
+- [nd_experiment_protocol](/wiki/Chado_Tables#Table:_nd_experiment_protocol)
+- [nd_experiment_pub](/wiki/Chado_Tables#Table:_nd_experiment_pub)
+- [nd_experiment_stock](/wiki/Chado_Tables#Table:_nd_experiment_stock)
+- [nd_experimentprop](/wiki/Chado_Tables#Table:_nd_experimentprop)
 
 ------------------------------------------------------------------------
 
@@ -447,8 +447,8 @@ project_contact).
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_contact_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *NOT NULL* |
-| [contact](Chado_Tables#Table:_contact "Chado Tables") | contact_id | integer | *NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
+| [contact](/wiki/Chado_Tables#Table:_contact) | contact_id | integer | *NOT NULL* |
 
 public.nd_experiment_contact Structure
 
@@ -461,8 +461,8 @@ Cross-reference experiment to accessions, images, etc
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_dbxref_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
+| [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *NOT NULL* |
 
 public.nd_experiment_dbxref Structure
 
@@ -483,8 +483,8 @@ individuals can be easily ascertained).
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_genotype_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.nd_experiment_genotype Structure
 
@@ -501,8 +501,8 @@ link a single qualitative phenotype to multiple experiments
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_phenotype_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.nd_experiment_phenotype Structure
 
@@ -516,8 +516,8 @@ should be linked to at least one project.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_project_id | serial | *PRIMARY KEY* |
-| [project](Chado_Tables#Table:_project "Chado Tables") | project_id | integer | *NOT NULL* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *NOT NULL* |
+| [project](/wiki/Chado_Tables#Table:_project) | project_id | integer | *NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
 
 public.nd_experiment_project Structure
 
@@ -530,8 +530,8 @@ Linking table: experiments to the protocols they involve.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_protocol_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *NOT NULL* |
-| [nd_protocol](Chado_Tables#Table:_nd_protocol "Chado Tables") | nd_protocol_id | integer | *NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *NOT NULL* |
+| [nd_protocol](/wiki/Chado_Tables#Table:_nd_protocol) | nd_protocol_id | integer | *NOT NULL* |
 
 public.nd_experiment_protocol Structure
 
@@ -546,8 +546,8 @@ Linking nd_experiment(s) to publication(s)
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_pub_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.nd_experiment_pub Structure
 
@@ -583,14 +583,14 @@ Part of a stock or a clone of a stock that is used in an experiment
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_nd_experiment"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_experiment"
 title="Chado Tables">nd_experiment</a></p></td>
 <td>nd_experiment_id</td>
 <td>integer</td>
 <td><em>NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_stock"
+<td><p><a href="/wiki/Chado_Tables#Table:_stock"
 title="Chado Tables">stock</a></p></td>
 <td>stock_id</td>
 <td>integer</td>
@@ -600,7 +600,7 @@ stock used in the extraction or the corresponding stock for the
 clone</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -613,8 +613,8 @@ public.nd_experiment_stock Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [nd_experiment_stock_dbxref](Chado_Tables#Table:_nd_experiment_stock_dbxref "Chado Tables")
-- [nd_experiment_stockprop](Chado_Tables#Table:_nd_experiment_stockprop "Chado Tables")
+- [nd_experiment_stock_dbxref](/wiki/Chado_Tables#Table:_nd_experiment_stock_dbxref)
+- [nd_experiment_stockprop](/wiki/Chado_Tables#Table:_nd_experiment_stockprop)
 
 ------------------------------------------------------------------------
 
@@ -627,8 +627,8 @@ Cross-reference experiment_stock to accessions, images, etc
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experiment_stock_dbxref_id | serial | *PRIMARY KEY* |
-| [nd_experiment_stock](Chado_Tables#Table:_nd_experiment_stock "Chado Tables") | nd_experiment_stock_id | integer | *NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *NOT NULL* |
+| [nd_experiment_stock](/wiki/Chado_Tables#Table:_nd_experiment_stock) | nd_experiment_stock_id | integer | *NOT NULL* |
+| [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *NOT NULL* |
 
 public.nd_experiment_stock_dbxref Structure
 
@@ -665,7 +665,7 @@ the properties such as treatment
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_nd_experiment_stock"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_experiment_stock"
 title="Chado Tables">nd_experiment_stock</a></p></td>
 <td>nd_experiment_stock_id</td>
 <td>integer</td>
@@ -674,7 +674,7 @@ title="Chado Tables">nd_experiment_stock</a></p></td>
 The experiment_stock to which the property applies.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -716,8 +716,8 @@ Tag-value properties - follows standard chado model.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_experimentprop_id | serial | *PRIMARY KEY* |
-| [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables") | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment) | nd_experiment_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | character varying(255) | *NOT NULL* |
 |  | rank | integer | *UNIQUE#1 NOT NULL* |
 
@@ -809,8 +809,8 @@ public.nd_geolocation Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables")
-- [nd_geolocationprop](Chado_Tables#Table:_nd_geolocationprop "Chado Tables")
+- [nd_experiment](/wiki/Chado_Tables#Table:_nd_experiment)
+- [nd_geolocationprop](/wiki/Chado_Tables#Table:_nd_geolocationprop)
 
 ------------------------------------------------------------------------
 
@@ -845,14 +845,14 @@ properties such as location and environment
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_nd_geolocation"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_geolocation"
 title="Chado Tables">nd_geolocation</a></p></td>
 <td>nd_geolocation_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -929,9 +929,9 @@ public.nd_protocol Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [nd_experiment_protocol](Chado_Tables#Table:_nd_experiment_protocol "Chado Tables")
-- [nd_protocol_reagent](Chado_Tables#Table:_nd_protocol_reagent "Chado Tables")
-- [nd_protocolprop](Chado_Tables#Table:_nd_protocolprop "Chado Tables")
+- [nd_experiment_protocol](/wiki/Chado_Tables#Table:_nd_experiment_protocol)
+- [nd_protocol_reagent](/wiki/Chado_Tables#Table:_nd_protocol_reagent)
+- [nd_protocolprop](/wiki/Chado_Tables#Table:_nd_protocolprop)
 
 ------------------------------------------------------------------------
 
@@ -942,9 +942,9 @@ Tables referencing this one via Foreign Key Constraints:
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_protocol_reagent_id | serial | *PRIMARY KEY* |
-| [nd_protocol](Chado_Tables#Table:_nd_protocol "Chado Tables") | nd_protocol_id | integer | *NOT NULL* |
-| [nd_reagent](Chado_Tables#Table:_nd_reagent "Chado Tables") | reagent_id | integer | *NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* |
+| [nd_protocol](/wiki/Chado_Tables#Table:_nd_protocol) | nd_protocol_id | integer | *NOT NULL* |
+| [nd_reagent](/wiki/Chado_Tables#Table:_nd_reagent) | reagent_id | integer | *NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *NOT NULL* |
 
 public.nd_protocol_reagent Structure
 
@@ -980,7 +980,7 @@ Property/value associations for protocol.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_nd_protocol"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_protocol"
 title="Chado Tables">nd_protocol</a></p></td>
 <td>nd_protocol_id</td>
 <td>integer</td>
@@ -989,7 +989,7 @@ title="Chado Tables">nd_protocol</a></p></td>
 The protocol to which the property applies.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1063,7 +1063,7 @@ The name of the reagent. The name should be unique for a given
 type.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1089,9 +1089,9 @@ public.nd_reagent Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [nd_protocol_reagent](Chado_Tables#Table:_nd_protocol_reagent "Chado Tables")
-- [nd_reagent_relationship](Chado_Tables#Table:_nd_reagent_relationship "Chado Tables")
-- [nd_reagentprop](Chado_Tables#Table:_nd_reagentprop "Chado Tables")
+- [nd_protocol_reagent](/wiki/Chado_Tables#Table:_nd_protocol_reagent)
+- [nd_reagent_relationship](/wiki/Chado_Tables#Table:_nd_reagent_relationship)
+- [nd_reagentprop](/wiki/Chado_Tables#Table:_nd_reagentprop)
 
 ------------------------------------------------------------------------
 
@@ -1127,7 +1127,7 @@ experiment reagents.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_nd_reagent"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_reagent"
 title="Chado Tables">nd_reagent</a></p></td>
 <td>subject_reagent_id</td>
 <td>integer</td>
@@ -1139,7 +1139,7 @@ the subject is the child. For example, in "linkerA
 3prime-overhand-linker is the type, and enzymeA is the object.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_nd_reagent"
+<td><p><a href="/wiki/Chado_Tables#Table:_nd_reagent"
 title="Chado Tables">nd_reagent</a></p></td>
 <td>object_reagent_id</td>
 <td>integer</td>
@@ -1151,7 +1151,7 @@ enzymeA" linkerA is the subject, 3prime-overhand-linker is the type, and
 enzymeA is the object.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -1175,8 +1175,8 @@ public.nd_reagent_relationship Structure
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | nd_reagentprop_id | serial | *PRIMARY KEY* |
-| [nd_reagent](Chado_Tables#Table:_nd_reagent "Chado Tables") | nd_reagent_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [nd_reagent](/wiki/Chado_Tables#Table:_nd_reagent) | nd_reagent_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | character varying(255) | rank |
 | integer | *UNIQUE#1 NOT NULL* |  |  |
 

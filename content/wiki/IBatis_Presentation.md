@@ -416,7 +416,7 @@ Iterate very useful for multiple search terms
 ##### Support
 
 - In GMOD used by
-  - Xenbase, [Artemis](Artemis "Artemis") at Sanger
+  - Xenbase, [Artemis](/wiki/Artemis) at Sanger
 - Many other users
   - e.g. MySpace.com
 - Top level Apache Project

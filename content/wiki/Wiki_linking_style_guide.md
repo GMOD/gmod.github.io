@@ -9,7 +9,7 @@ MediaWiki server and may not make a lot of sense in the markdown context.
 Stolen wholesale from BioPerl wiki
 <a href="http://www.bioperl.org/wiki/Style_guide" class="extiw"
 title="bp:Style guide">Style Guide</a>. See also the [Site
-Guidelines](Site_Guidelines "Site Guidelines").
+Guidelines](/wiki/Site_Guidelines).
 
 <table class="wikitable">
 <colgroup>
@@ -28,13 +28,13 @@ Guidelines](Site_Guidelines "Site Guidelines").
 <tr class="odd">
 <td>Internal Wiki link</td>
 <td><code>[[GMOD_Middleware|GMOD Middleware]]</code></td>
-<td><a href="GMOD_Middleware" title="GMOD Middleware">GMOD
+<td><a href="/wiki/GMOD_Middleware" title="GMOD Middleware">GMOD
 Middleware</a></td>
 </tr>
 <tr class="even">
 <td>Internal Wiki link w/ display name</td>
 <td><code>[[GMOD_Middleware|GMOD middleware meeting]]</code></td>
-<td><a href="GMOD_Middleware" title="GMOD Middleware">GMOD middleware
+<td><a href="/wiki/GMOD_Middleware" title="GMOD Middleware">GMOD middleware
 meeting</a></td>
 </tr>
 <tr class="odd">
@@ -63,7 +63,7 @@ title="wp:The Beatles">The Fab Four</a></td>
 class="external text" rel="nofollow">Bio::SeqIO</a></td>
 </tr>
 <tr class="odd">
-<td>GMOD SourceForge <a href="SVN" class="mw-redirect"
+<td>GMOD SourceForge <a href="/wiki/SVN" class="mw-redirect"
 title="SVN">SVN</a> file/directory</td>
 <td><code>SF_SVN|schema/trunk/chado/INSTALL.Chado|Chado install instructions</code></td>
 <td><a

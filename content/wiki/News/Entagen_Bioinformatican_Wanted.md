@@ -48,8 +48,8 @@ address. This address wasn't routing correctly.**
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/22,
+*Posted to the [GMOD News](../GMOD_News) on 2011/04/22,
 updated 2011/05/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

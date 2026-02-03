@@ -16,10 +16,10 @@ rel="nofollow">http://webgbrowse.cgb.indiana.edu</a>. Here is some of
 
 - <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
   rel="nofollow">WebGBrowse 2.0</a> continues to help the inexperienced
-  users of [GBrowse](../GBrowse.1 "GBrowse") with hosting their
-  [GFF3](../GFF3 "GFF3") data without worrying about installation or
+  users of [GBrowse](../GBrowse.1) with hosting their
+  [GFF3](../GFF3) data without worrying about installation or
   configuration semantics.
-- Users now have a choice of [GBrowse](../GBrowse.1 "GBrowse") display
+- Users now have a choice of [GBrowse](../GBrowse.1) display
   between versions 1.7 and 2.0.
 - The display from one version can be migrated to the other by simple
   button clicks. This helps the users to compare their data display
@@ -40,7 +40,7 @@ Indiana University</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/25*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/25*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

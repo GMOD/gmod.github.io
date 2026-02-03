@@ -50,8 +50,8 @@ Resources
 ## About Sequence Ontology Bioinformatics Analysis (SOBA)
 
 SOBA, Sequence Ontology Bioinformatics Analysis, is a command line tool
-and web application for analyzing [GFF3](GFF3 "GFF3") annotations.
-[GFF3](GFF3 "GFF3") is a standard file format for genomic annotation
+and web application for analyzing [GFF3](/wiki/GFF3) annotations.
+[GFF3](/wiki/GFF3) is a standard file format for genomic annotation
 data. SOBA gathers statistics from GFF3 files and renders them as tables
 and graphs.
 
@@ -67,7 +67,7 @@ The web version of SOBA will produce the following:
 
 In addition, the command line tool (SOBAcl) flexibly produces a much
 wider variety of tables, figures and graphs based on the data in a
-[GFF3](GFF3 "GFF3") file as well as the ability to produce complex and
+[GFF3](/wiki/GFF3) file as well as the ability to produce complex and
 extensible custom reports via a robust template system.
 
 SOBA is intended as a tool for those dealing with genomic sequence
@@ -108,7 +108,7 @@ reports, GraphViz for ontology graphs, and GD for charts. SOBAweb uses
 <a href="http://search.cpan.org/perldoc?CGI::Application"
 class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
-and [AJAX](Glossary#AJAX "Glossary").
+and [AJAX](/wiki/Glossary#AJAX).
 
 #### SOBA web
 
@@ -169,10 +169,10 @@ A README and INSTALL document are also included with SOBAcl.
 
 ### Tutorials
 
-<a href="SOBA_Tutorial" class="mw-redirect" title="SOBA Tutorial">SOBA
+<a href="/wiki/SOBA_Tutorial" class="mw-redirect" title="SOBA Tutorial">SOBA
 Tutorial</a>
 taught as part of the [2013 GMOD Summer
-School](2013_GMOD_Summer_School "2013 GMOD Summer School")
+School](/wiki/2013_GMOD_Summer_School)
 
 
 
@@ -191,20 +191,20 @@ Mailing list</a>.
 
 ## More on SOBA
 
-See [Category%253ASOBA](Category%253ASOBA "Category%253ASOBA")
+See [Category%253ASOBA](/wiki/Category%253ASOBA)
 
 
 
 
 
 
-Raw tool data at [SOBA/tool data](SOBA/tool_data "SOBA/tool data")
+Raw tool data at [SOBA/tool data](/wiki/SOBA/tool_data)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has website](Property%253AHas_website "Property:Has website") | <a |
+| [Has website](/wiki/Property%253AHas_website) | <a |
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external free"
 rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis</a>  |

@@ -13,8 +13,8 @@ href="http://www.sequenceontology.org/wiki/index.php/SOBA*-_Sequence_Ontology_Bi
 class="external free"
 rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-\_Sequence_Ontology_Bioinformatics_Analysis</a>
 \| about = SOBA, Sequence Ontology Bioinformatics Analysis, is a command
-line tool and web application for analyzing [GFF3](../GFF3 "GFF3")
-annotations. [GFF3](../GFF3 "GFF3") is a standard file format for
+line tool and web application for analyzing [GFF3](../GFF3)
+annotations. [GFF3](../GFF3) is a standard file format for
 genomic annotation data. SOBA gathers statistics from GFF3 files and
 renders them as tables and graphs.
 
@@ -30,7 +30,7 @@ The web version of SOBA will produce the following:
 
 In addition, the command line tool (SOBAcl) flexibly produces a much
 wider variety of tables, figures and graphs based on the data in a
-[GFF3](../GFF3 "GFF3") file as well as the ability to produce complex
+[GFF3](../GFF3) file as well as the ability to produce complex
 and extensible custom reports via a robust template system.
 
 SOBA is intended as a tool for those dealing with genomic sequence
@@ -59,7 +59,7 @@ reports, GraphViz for ontology graphs, and GD for charts. SOBAweb uses
 <a href="http://search.cpan.org/perldoc?CGI::Application"
 class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
-and [AJAX](../Glossary#AJAX "Glossary").
+and [AJAX](../Glossary#AJAX).
 
 #### SOBA web
 
@@ -116,11 +116,11 @@ A README and INSTALL document are also included with SOBAcl. \| papers =
 <a href="../SOBA_Tutorial" class="mw-redirect"
 title="SOBA Tutorial">SOBA Tutorial</a>
 taught as part of the [2013 GMOD Summer
-School](../2013_GMOD_Summer_School "2013 GMOD Summer School")
+School](../2013_GMOD_Summer_School)
 
 \| wild_urls = \| mail = SOBA is supported by the
 <a href="https://lists.sourceforge.net/lists/listinfo/song-devel"
 class="external text" rel="nofollow">Sequence Ontology Developers
 Mailing list</a>. \| logo_info = \| dev_ppl = \| dev_status = \|
-contact_email = \| input = [GFF3](../GFF3 "GFF3") \| output = \|
+contact_email = \| input = [GFF3](../GFF3) \| output = \|
 see_also = \| demo_server = \|release date=2009 \| survey_link =

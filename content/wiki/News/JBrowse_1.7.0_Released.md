@@ -12,7 +12,7 @@ It can be downloaded from
 <a href="http://jbrowse.org/jbrowse-1-7-0/" class="external text"
 rel="nofollow">the JBrowse website</a>. As always, see the updated
 [JBrowse Configuration
-Guide](../JBrowse_Configuration_Guide "JBrowse Configuration Guide") for
+Guide](../JBrowse_Configuration_Guide) for
 documentation on how to use the new features.
 
 Firstly, JBrowse can now quickly and efficiently display alignment data
@@ -54,4 +54,4 @@ rel="nofollow">JBrowse website</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/11/05*
+*Posted to the [GMOD News](../GMOD_News) on 2012/11/05*

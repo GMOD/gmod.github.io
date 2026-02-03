@@ -5,14 +5,14 @@ title: "C briggsae.syn"
 
 This is the species database for *C. briggsae*. This is one of the three
 species currently represented in the instance of
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") that is installed at
-[WormBase](Category%253AWormBase "Category%253AWormBase"). The species config
+[GBrowse_syn](/wiki/GBrowse_syn.1) that is installed at
+[WormBase](/wiki/Category%253AWormBase). The species config
 file con be a normal
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+<a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse config file</a> or can a a
 simplified version as shown here.
 
-[return to GBrowse_syn](GBrowse_syn.1 "GBrowse syn")
+[return to GBrowse_syn](/wiki/GBrowse_syn.1)
 
     [GENERAL]
     description   = C. briggsae Database

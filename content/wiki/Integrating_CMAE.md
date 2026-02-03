@@ -145,8 +145,8 @@ If you will be serving the data from a web page, the database only needs
 to be created on the web server.
 
 Create the CMap database schema by reading the schema file into the
-database. There are schema files provided for [MySQL](MySQL "MySQL"),
-Oracle, [PostgreSQL](PostgreSQL "PostgreSQL"), Sybase and SQLite. Each
+database. There are schema files provided for [MySQL](/wiki/MySQL),
+Oracle, [PostgreSQL](/wiki/PostgreSQL), Sybase and SQLite. Each
 is named cmap.create.dbname (e.g. cmap.create.mysql). They are in the
 sql directory in the distribution.
 

@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="TripalLogo.png" /></a>
 
-The [Tripal](../Tripal.1 "Tripal") team have put out a publication on
+The [Tripal](../Tripal.1) team have put out a publication on
 the 1.1 version of the software. **Tripal v1.1: a standards-based
 toolkit for construction of online genetic and genomic databases.** can
 be read for free at
@@ -53,4 +53,4 @@ Here is the abstract:
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/10/31*
+*Posted to the [GMOD News](../GMOD_News) on 2013/10/31*

@@ -8,9 +8,9 @@ title: "GMODWeb"
 > This page is included only for reference purposes.
 
 GMODWeb is a Web application that uses
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, a flexible
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, a flexible
 and modular schema for representing biological data. GMODWeb is based on
-[Turnkey](Turnkey "Turnkey"), a generic Web framework built on
+[Turnkey](/wiki/Turnkey), a generic Web framework built on
 <a href="http://apache.org" class="external text"
 rel="nofollow">Apache</a>, mod_perl, and
 <a href="http://sqlfairy.sourceforge.net/" class="external text"
@@ -18,7 +18,7 @@ rel="nofollow">SQLFairy</a>. GMODWeb takes a basic Turnkey site built
 with the Chado schema and adds to the default templates to create a
 custom look and feel for GMOD. This GMODWeb *skin* includes code to
 display information using a variety of GMOD applications, including
-[GBrowse](GBrowse.1 "GBrowse"). New model organism databases can use the
+[GBrowse](/wiki/GBrowse.1). New model organism databases can use the
 GMODWeb skin as a starting point for creating a new organism website.
 See <a
 href="http://radius.genomics.ctrl.ucla.edu/turnkey/pmwiki.php?n=Main.NewMod"
@@ -27,7 +27,7 @@ information about his process.
 
 ## Turnkey
 
-[Turnkey](Turnkey "Turnkey") takes a relational schema of a given
+[Turnkey](/wiki/Turnkey) takes a relational schema of a given
 database as input and transforms it into a fully-functional and
 customizable website within minutes. This automated process frees
 developers to work on the content of a website rather than the
@@ -48,7 +48,7 @@ alt="Turnkey.png" />
 For site administrators installing GMODWeb we recommend using the
 <a href="http://biopackages.net" class="external free"
 rel="nofollow">http://biopackages.net</a> RPM packages or
-[CVS](Glossary#CVS "Glossary") repository located at
+[CVS](/wiki/Glossary#CVS) repository located at
 <a href="http://sourceforge.net/projects/turnkey" class="external free"
 rel="nofollow">http://sourceforge.net/projects/turnkey</a>.
 
@@ -57,11 +57,11 @@ rel="nofollow">http://sourceforge.net/projects/turnkey</a>.
 <a href="http://genomebiology.com/2008/9/6/R102" class="external text"
 rel="nofollow">GMODWeb: a web framework for the generic model organism
 database</a>,
-by Brian D O'Connor, Allen Day, [Scott Cain](User%253AScott "User%253AScott"),
-Olivier Arnaiz, [Linda Sperling](User%253ASperling "User%253ASperling") and
-[Lincoln D Stein](User%253ALstein "User%253ALstein"), Genome Biology 2008,
+by Brian D O'Connor, Allen Day, [Scott Cain](/wiki/User%253AScott),
+Olivier Arnaiz, [Linda Sperling](/wiki/User%253ASperling) and
+[Lincoln D Stein](/wiki/User%253ALstein), Genome Biology 2008,
 9:R102. The publication describing GMODWeb
 
-[GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf "File:Jan2009GMODWebAndPackages.pdf")
+[GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf)
 presentation by Brian O'Connor at the [January 2009 GMOD
-Meeting](January_2009_GMOD_Meeting#GMODWeb_and_Package_Management "January 2009 GMOD Meeting").
+Meeting](/wiki/January_2009_GMOD_Meeting#GMODWeb_and_Package_Management).

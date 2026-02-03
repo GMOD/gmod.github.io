@@ -11,32 +11,31 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="September_2010_GMOD_Meeting"
+<td><a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/220px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
 width="220" height="188" alt="September 2010 GMOD Meeting" /></a>
 
-<strong>Community Annotation <a
-href="Satellite_Meetings_-_GMOD_Europe_2010"
+<strong>Community Annotation <a href="/wiki/Satellite_Meetings_-_GMOD_Europe_2010"
 title="Satellite Meetings - GMOD Europe 2010">Satellite
 Meeting</a></strong><br />
 <br />
 &#10;
 
-<a href="September_2010_GMOD_Meeting"
+<a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD
 Meeting</a><br />
 15 September 2010<br />
 Cambridge, UK
 </td>
-<td style="text-align: center;"><a href="GMOD_Europe_2010"
+<td style="text-align: center;"><a href="/wiki/GMOD_Europe_2010"
 title="part of GMOD Europe 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/200px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
 width="200" height="171" alt="part of GMOD Europe 2010" /></a>
 
-<a href="GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
+<a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
 2010</a>
 </td>
 </tr>
@@ -76,14 +75,14 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
   Also](#See_Also)
 
 This [satellite
-meeting](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
+meeting](/wiki/Satellite_Meetings_-_GMOD_Europe_2010)
 was held Wednesday, 15 September, in Cambridge, UK as part of [GMOD
-Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") and the [September
+Europe 2010](/wiki/GMOD_Europe_2010) and the [September
 2010 GMOD
-Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting").
+Meeting](/wiki/September_2010_GMOD_Meeting).
 This session dealt with *Community Annotation.* The other satellite was
 on [Post Reference Genome
-Tools](Post_Reference_Genome_Tools "Post Reference Genome Tools") and
+Tools](/wiki/Post_Reference_Genome_Tools) and
 had many of the same participants. The topic of community annotation was
 proposed by Kim Rutherford.
 
@@ -94,16 +93,16 @@ proposed by Kim Rutherford.
   rel="nofollow">T1DBase</a>
 - Gerd Anders, Max-Delbrueck-Centrum Berlin (MDC)
 - Jerven Bolleman, UniProt Swiss-Prot
-- [Scott Cain](User%253AScott "User%253AScott"), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca" class="external text"
   rel="nofollow">OICR</a>
-- [Dave Clements](User%253AClements "User%253AClements"), [GMOD Help
-  Desk](GMOD_Help_Desk "GMOD Help Desk"),
+- [Dave Clements](/wiki/User%253AClements), [GMOD Help
+  Desk](/wiki/GMOD_Help_Desk),
   <a href="http://nescent.org" class="external text"
   rel="nofollow">NESCent</a>
 - Oskana Riba Grognuz, Swiss Institute of Bioinformatics (SIB)
   Department of Ecology and Evolution, University of Lausanne
-- [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri"),
+- [Chris Hemmerich](/wiki/User%253AChemmeri),
   <a href="http://cgb.indiana.edu" class="external text"
   rel="nofollow">CGB, Indiana University</a>
 - Joan Pontius, National Cancer Institute, SAIC
@@ -169,7 +168,7 @@ original efforts, there has been viewing traffic, but no user updates so
 far.
 
 ZFIN encourages labs to submit gene expression and phenotype data using
-the [Phenote](Phenote "Phenote") software tool. Phenote allows
+the [Phenote](/wiki/Phenote) software tool. Phenote allows
 researchers to annotate their images using terms from the ontologies
 used by ZFIN curators. There have been inquiries but there have not been
 any submissions with this tool to date.
@@ -201,9 +200,9 @@ interface.
 
 ### Genome Annotation
 
-Several resources, including [ParameciumDB](ParameciumDB "ParameciumDB")
+Several resources, including [ParameciumDB](/wiki/ParameciumDB)
 and the Pea Aphid database, have offered training in genome annotation
-using [Apollo](Apollo.1 "Apollo"). Apollo is a sophisticated tool that
+using [Apollo](/wiki/Apollo.1). Apollo is a sophisticated tool that
 allows users to add evidence and refine gene predictions and other
 annotations. However, some efforts have hit bumps along the way with
 users who don't use the tools often enough to remember the user
@@ -227,7 +226,7 @@ is a win for both the students and the resources the annotations go
 into. This approach has been a stunning success with an order of
 magnitude more annotations coming in than organizers expected.
 
-[ParameciumDB](ParameciumDB "ParameciumDB") also harnesses the power of
+[ParameciumDB](/wiki/ParameciumDB) also harnesses the power of
 undergraduates to do genomic annotation. They have partnered with two
 undergraduate institutions that teach term-long classes on annotation.
 Students annotate the *paramecium* genome, and then submit their work to
@@ -250,7 +249,7 @@ CACAO and EcoliWiki make extensive use of wiki technology to make the
 technology aspects of entering annotation easy for researchers and
 students. EcoliWiki's update interface makes extensive use of the the
 locally developed, but publicly available,
-[TableEdit](TableEdit.1 "TableEdit") MediaWiki extension. This presents
+[TableEdit](/wiki/TableEdit.1) MediaWiki extension. This presents
 editors with a GUI interface to tabular data and protects them from
 MediaWiki markup.
 
@@ -278,7 +277,7 @@ loosely watched by GMOD staff.
 rel="nofollow">EcoliWiki</a> - Vampire!
 Logins given to trusted community members. Anyone with an existing login
 can create a login for someone else. Editors have full update access.
-[SGN](Category%253ASGN "Category%253ASGN") - Locus boss!
+[SGN](/wiki/Category%253ASGN) - Locus boss!
 SGN locus pages list the set of community members who can update
 information about that locus. Every locus page includes "Request editor
 privileges" link. This model allows specific people to control and "own"
@@ -288,7 +287,7 @@ the locus editor.
 PomBase (so far) - Reviewed before posting.
 Submissions are reviewed by staff at the online resource before being
 posted to the public resource.
-[ParameciumDB](ParameciumDB "ParameciumDB") - Vetting, followed by complete trust
+[ParameciumDB](/wiki/ParameciumDB) - Vetting, followed by complete trust
 ParameciumDB only give access to people who know how to annotate. These
 annotations are not reviewed before incorporation. They are incorporated
 automatically once a month if they are tagged as finished by the
@@ -413,7 +412,7 @@ likely to lead to increased citations. In large communities, such as
 mouse or yeast, adding annotation is likely to only lead to an
 incremental increase in visibility and citations.
 
-[ParameciumDB](ParameciumDB "ParameciumDB") has also had some success in
+[ParameciumDB](/wiki/ParameciumDB) has also had some success in
 encouraging community annotation. The *paramecium* community, like the
 *pombe* community, is also small and collaborative. UniProt, a
 pan-biology resource if ever there was one, had 46 million page views
@@ -432,13 +431,13 @@ non-trivial tool. This problem will occur anytime a tool does a complex
 task and thus has a complex interface. This problem will, however,
 lessen over time, as tools move from custom desktop applications to web
 based one, using the same user interface conventions as other
-sophisticated interfaces. [Apollo](Apollo.1 "Apollo"), for example, is
+sophisticated interfaces. [Apollo](/wiki/Apollo.1), for example, is
 currently being migrated from a stand-alone Java application to web
 application that shares a common platform with
-[JBrowse](JBrowse.1 "JBrowse"). This common platform will ease
+[JBrowse](/wiki/JBrowse.1). This common platform will ease
 adaptation of Apollo by any user that is already familiar with JBrowse.
 
-[ParameciumDB](ParameciumDB "ParameciumDB") and EcoliWiki's
+[ParameciumDB](/wiki/ParameciumDB) and EcoliWiki's
 <a href="http://ecoliwiki.net/colipedia/index.php/cacao"
 class="external text" rel="nofollow">CACAO project</a>, while not being
 community annotation efforts *per se*, are successful at generating

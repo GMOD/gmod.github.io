@@ -16,7 +16,7 @@ extensions to GMOD software -- basically anything and everything to do
 with GMOD! If you use Mendeley, please join the group, and feel free to
 contribute GMOD-related papers to the publication list. The papers
 listed in the GMOD group are also [on GMOD publications
-page](../Publications "Publications").
+page](../Publications).
 
 If you use a different citation manager and would like to see more
 support for it, drop us an email at
@@ -25,4 +25,4 @@ rel="nofollow">help@gmod.org</a> and we'll see what we can do!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/08/20*
+*Posted to the [GMOD News](../GMOD_News) on 2012/08/20*

@@ -45,7 +45,7 @@ class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
 - GMOD Demo
 
 Also see [Comparison of XORT and Hibernate for Chado
-Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of XORT and Hibernate for Chado reporting").
+Reporting](/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting).
 
 ##### Background
 

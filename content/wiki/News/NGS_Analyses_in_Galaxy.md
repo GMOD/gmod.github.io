@@ -13,7 +13,7 @@ The Galaxy team is
 class="external text" rel="nofollow">announcing the launch of the first
 free public resource for NGS analysis</a>. This service is the beginning
 of our campaign to provide free web-based utilities for
-[NGS](../Next_Generation_Sequencing "Next Generation Sequencing")
+[NGS](../Next_Generation_Sequencing)
 analysis and later in the year will take advantage of the Cloud
 resources. At present, there are three main groups of tools including:
 
@@ -35,7 +35,7 @@ resources. At present, there are three main groups of tools including:
     <a href="http://samtools.sourceforge.net" class="external text"
     rel="nofollow">SAMTools</a>** - includes a variety of utilities for
     SAM/BAM manipulation. Some are based on SAMtools library, some are
-    written by [Galaxy](../Galaxy.1 "Galaxy") team.
+    written by [Galaxy](../Galaxy.1) team.
 
 See the
 <a href="http://main.g2.bx.psu.edu/u/aun1/p/ngs-analysis-service"
@@ -47,7 +47,7 @@ Anton Nekrutenko
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/03/08*
+*Posted to the [GMOD News](../GMOD_News) on 2010/03/08*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

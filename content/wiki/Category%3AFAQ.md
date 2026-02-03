@@ -7,8 +7,8 @@ Frequently Asked Questions and Definitions.
 
 See also:
 
-- [Glossary](Glossary "Glossary")
-- [Category%253AHOWTO](Category%253AHOWTO "Category%253AHOWTO")
+- [Glossary](/wiki/Glossary)
+- [Category%253AHOWTO](/wiki/Category%253AHOWTO)
 
 ## Pages in category "FAQ"
 
@@ -16,15 +16,15 @@ The following 6 pages are in this category, out of 6 total.
 
 ### C
 
-- [Chado FAQ](Chado_FAQ "Chado FAQ")
-- [CMap FAQ](CMap_FAQ "CMap FAQ")
+- [Chado FAQ](/wiki/Chado_FAQ)
+- [CMap FAQ](/wiki/CMap_FAQ)
 
 ### G
 
-- [GBrowse FAQ](GBrowse_FAQ "GBrowse FAQ")
-- [GMOD FAQ](GMOD_FAQ "GMOD FAQ")
+- [GBrowse FAQ](/wiki/GBrowse_FAQ)
+- [GMOD FAQ](/wiki/GMOD_FAQ)
 
 ### M
 
-- [Mage FAQ](Mage_FAQ "Mage FAQ")
-- [MOD](MOD "MOD")
+- [Mage FAQ](/wiki/Mage_FAQ)
+- [MOD](/wiki/MOD)

@@ -26,14 +26,14 @@ The first characterization of the *Ruditapes decussatus* transcriptome;
 the team responsible have also set up
 <a href="http://morse-ccmar.ualg.pt/edge" class="external text"
 rel="nofollow">Rdecusdb, the Ruditapes decussatus database</a>, built
-with [Tripal](../Tripal.1 "Tripal")
+with [Tripal](../Tripal.1)
 The database of genomic variants: a curated collection of structural variation in the human genome <sup>[\[2\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt958-2)</sup>
 An update on the <a href="http://dgv.tcag.ca/" class="external text"
 rel="nofollow">Database of Genomic Variants (DGV)</a>, which provides a
 publicly accessible, comprehensive curated catalogue of structural
 variation (SV) found in the genomes of control individuals from
 worldwide populations. The core visualization tool,
-[GBrowse](../GBrowse.1 "GBrowse"), has been upgraded with additional
+[GBrowse](../GBrowse.1), has been upgraded with additional
 functions to facilitate data analysis and comparison.
 Meta-analysis of 74,046 individuals identifies 11 new susceptibility loci for Alzheimer's disease <sup>[\[3\]](#cite_note-DOI:10.1038.2Fng.2802-3)</sup>
 A genome-wide association study on humans of European ancestry that
@@ -69,4 +69,4 @@ fit the needs of the project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/08*
+*Posted to the [GMOD News](../GMOD_News) on 2013/11/08*

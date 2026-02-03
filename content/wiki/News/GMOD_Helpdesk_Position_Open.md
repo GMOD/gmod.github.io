@@ -28,9 +28,9 @@ documentation; respond to mailing list help requests; present tutorials;
 organize short courses, conference sessions and other community building
 activities; survey user needs, and recruit members of the community to
 assist with these functions. The incumbent will collaborate closely with
-the GMOD Coordinator ([Scott Cain](../User%253AScott "User%253AScott"), The
+the GMOD Coordinator ([Scott Cain](../User%253AScott), The
 Ontario Institute for Cancer Research) and other distributed personnel.
-See [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk") for more
+See [GMOD Help Desk](../GMOD_Help_Desk) for more
 background on the activities of the user support specialist. The salary
 range is \$68,906 to \$82,687, depending on qualifications, and the
 incumbent will receive a comprehensive benefits package as an SPA
@@ -56,7 +56,7 @@ may be addressed to H. Lapp at by email or by phone at 919.668.5288.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/02/21*
+*Posted to the [GMOD News](../GMOD_News) on 2011/02/21*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

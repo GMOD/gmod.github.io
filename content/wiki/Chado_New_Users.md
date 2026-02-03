@@ -37,11 +37,11 @@ for new Chado users learning the system at CSHL.
 ## Getting an empty Chado PostgreSQL on our machines
 
 - Zheng - on PC with Fedora. See [Zheng's installation
-  notes](Zheng's_installation_notes "Zheng's installation notes")
+  notes](/wiki/Zheng's_installation_notes)
 - Mike - on Intel Mac running Fedora partition
 - Jim -
   - on PPC Mac the hard way See [Jim's installation
-    notes](Jim's_installation_notes "Jim's installation notes")
+    notes](/wiki/Jim's_installation_notes)
   - on CentOS server in Texas
 
 ### Installation Notes
@@ -56,21 +56,21 @@ This works via make ontologies. How to do updates?
 ## Getting the Sequence Module Working
 
 We think GFF3 can be thought of as a view into Chado using the [Sequence
-module](Chado_Sequence_Module "Chado Sequence Module") and the [CV
-module](Chado_CV_Module "Chado CV Module"), or we can think of GFF3 as a
+module](/wiki/Chado_Sequence_Module) and the [CV
+module](/wiki/Chado_CV_Module), or we can think of GFF3 as a
 denormalized view of Chado.
 
 ## Migration from other databases
 
 - [Zheng's notes on wormbase
-  migration](Zheng's_notes_on_wormbase_migration "Zheng's notes on wormbase migration")
+  migration](/wiki/Zheng's_notes_on_wormbase_migration)
 - [Jim's notes on E. coli
-  migration](Jim's_notes_on_E._coli_migration "Jim's notes on E. coli migration")
+  migration](/wiki/Jim's_notes_on_E._coli_migration)
 
 ## Sample Data
 
 To understand [Chado Best
-Practices](Chado_Best_Practices "Chado Best Practices"), where the
+Practices](/wiki/Chado_Best_Practices), where the
 documentation is sometimes incomplete, we've tried to get some samples
 of Chado data in use. Things we've looked at so far, and comments on
 them:
@@ -85,7 +85,7 @@ them:
 
 ### Central Dogma
 
-[Chado Best Practices](Chado_Best_Practices "Chado Best Practices")
+[Chado Best Practices](/wiki/Chado_Best_Practices)
 describes some of the representations. Unfortunately it's somewhat
 incomplete at present.
 
@@ -149,7 +149,7 @@ Note that proteins ≠ polypeptides. Hemoglobin is a heterotetramer of two
 ## See also
 
 - [Chado -
-  Getting_Started](Chado_-_Getting_Started "Chado - Getting Started") -
+  Getting_Started](/wiki/Chado_-_Getting_Started) -
   and documentation links from there.
-- [Category%253AChado](Category%253AChado "Category%253AChado") - the Category page
+- [Category%253AChado](/wiki/Category%253AChado) - the Category page
   for all pages about Chado in this wiki

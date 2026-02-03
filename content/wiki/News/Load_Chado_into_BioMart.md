@@ -15,7 +15,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="105" height="71" alt="INRA URG" /></a>
 
 A group at INRA URGI have documented "[How to load a Chado database into
-BioMart](../BioMart#How_to_Load_a_Chado_Database_into_BioMart "BioMart")".
+BioMart](../BioMart#How_to_Load_a_Chado_Database_into_BioMart)".
 This step by step document details what how to configure BioMart for
 Chado, and includes some specific use cases useful with
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>. This
@@ -26,17 +26,17 @@ Amselem, Sandra Derozie, and Delphine Steinbach.
 
 If you are interested in loading your
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> data into
-a [BioMart](../BioMart "BioMart") instance then I recommend starting
+a [BioMart](../BioMart) instance then I recommend starting
 with this guide.
 
 Thanks,
 
-[Dave C.](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave C.](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/27*
+*Posted to the [GMOD News](../GMOD_News) on 2010/05/27*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

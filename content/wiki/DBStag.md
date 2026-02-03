@@ -3,8 +3,8 @@ title: "DBStag"
 ---
 # DBStag
 
-DBStag is a generic [SQL](Glossary#SQL "Glossary") to
-[XML](Glossary#XML "Glossary") mapping tool
+DBStag is a generic [SQL](/wiki/Glossary#SQL) to
+[XML](/wiki/Glossary#XML) mapping tool
 
   Download](#Download)
 - [Use](#Use)
@@ -22,7 +22,7 @@ DBStag is a generic [SQL](Glossary#SQL "Glossary") to
 ### Loading data
 
 The most common use in the context of Chado is to load [Chado
-XML](Chado_XML "Chado XML"). No configuration is necessary, just install
+XML](/wiki/Chado_XML). No configuration is necessary, just install
 and run
 
      stag-storenode.pl -d Pg:mychadoinst@myserver gene_ontology.chado
@@ -30,7 +30,7 @@ and run
 ### Querying
 
 A secondary use is a means of data retrieval. DBStag can be used to
-query <a href="Chado" class="mw-redirect" title="Chado">Chado</a> using
+query <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> using
 multi-table joins with the results automatically nested.
 
 Chado <a

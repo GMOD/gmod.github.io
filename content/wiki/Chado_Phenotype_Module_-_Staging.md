@@ -12,7 +12,7 @@ construction.</span>
 
 This page is a working area for updating the revised phenotype module
 that came out of the [GMOD Evo
-Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"). Please edit the
+Hackathon](/wiki/GMOD_Evo_Hackathon). Please edit the
 table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
 
@@ -37,25 +37,25 @@ class="internal" title="02-chado-for-nescent-2006.pdf">Chado for
 evolutionary science</a> presentation discusses the Phenotype module.
 
 The phenotype tables are spread across the Phenotype and
-[Genetic](Chado_Genetic_Module "Chado Genetic Module") modules. Both
-modules originated at [FlyBase](Category%253AFlyBase "Category%253AFlyBase").
+[Genetic](/wiki/Chado_Genetic_Module) modules. Both
+modules originated at [FlyBase](/wiki/Category%253AFlyBase).
 There were actually two versions of the Phenotype module that came out
 of FlyBase: An early one that included the
-[**`feature_phenotype`**](Chado_Phenotype_Module#Table:_feature_phenotype "Chado Phenotype Module")
+[**`feature_phenotype`**](/wiki/Chado_Phenotype_Module#Table:_feature_phenotype)
 table; and a later one that included several new phenotype tables in the
 Genetic module, but did not make use of the **`feature_phenotype`** at
 all. The later release does not tie phenotypes to a single feature, but
 rather to a
-[**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module"),
+[**`genotype`**](/wiki/Chado_Genetic_Module#Table:_genotype),
 which is a collection of features.
 
 ## Phenotypes at FlyBase
 
 To try and understand the existing phenotype module during the [GMOD Evo
-Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), participants spent
+Hackathon](/wiki/GMOD_Evo_Hackathon), participants spent
 some time exploring the phenotype tables at FlyBase. The notes from that
 exploration are on the [Chado Phenotype Module at
-FlyBase](Chado_Phenotype_Module_at_FlyBase "Chado Phenotype Module at FlyBase")
+FlyBase](/wiki/Chado_Phenotype_Module_at_FlyBase)
 page.
 
 # Tables
@@ -65,8 +65,8 @@ page.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | feature_phenotype_id | serial | *PRIMARY KEY* |
-| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [feature](/wiki/Chado_Tables#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.feature_phenotype Structure
 
@@ -110,7 +110,7 @@ function. E.g. Obs=eye, attribute=color, cvalue=red.
 <td><em></em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>observable_id</td>
 <td>integer</td>
@@ -119,7 +119,7 @@ title="Chado Tables">cvterm</a></p></td>
 The entity: e.g. anatomy_part, biological_process.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>attr_id</td>
 <td>integer</td>
@@ -138,7 +138,7 @@ Value of attribute - unconstrained free text. Used only if cvalue_id is
 not appropriate.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>units_id</td>
 <td>integer</td>
@@ -147,7 +147,7 @@ title="Chado Tables">cvterm</a></p></td>
 Phenotype value units of measurement.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvalue_id</td>
 <td>integer</td>
@@ -156,7 +156,7 @@ title="Chado Tables">cvterm</a></p></td>
 Phenotype attribute value (state).</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>assay_id</td>
 <td>integer</td>
@@ -171,12 +171,12 @@ public.phenotype Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_phenotype](Chado_Tables#Table:_feature_phenotype "Chado Tables")
-- [nd_experiment_phenotype](Chado_Tables#Table:_nd_experiment_phenotype "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenotype_cvterm](Chado_Tables#Table:_phenotype_cvterm "Chado Tables")
-- [phenotypeprop](Chado_Tables#Table:_phenotypeprop "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
+- [feature_phenotype](/wiki/Chado_Tables#Table:_feature_phenotype)
+- [nd_experiment_phenotype](/wiki/Chado_Tables#Table:_nd_experiment_phenotype)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenotype_cvterm](/wiki/Chado_Tables#Table:_phenotype_cvterm)
+- [phenotypeprop](/wiki/Chado_Tables#Table:_phenotypeprop)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
 
 ------------------------------------------------------------------------
 
@@ -189,8 +189,8 @@ Deprecated and superseded by phenotypeprop.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | phenotype_cvterm_id | serial | *PRIMARY KEY* |
-| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 |  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 public.phenotype_cvterm Structure
@@ -229,14 +229,14 @@ fields.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_phenotype"
+<td><p><a href="/wiki/Chado_Tables#Table:_phenotype"
 title="Chado Tables">phenotype</a></p></td>
 <td>phenotype_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -251,7 +251,7 @@ title="Chado Tables">cvterm</a></p></td>
 Property value is free text.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvalue_id</td>
 <td>integer</td>

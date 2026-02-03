@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="155" height="114" alt="GMOD Beta site" /></a>
 
 We have begun the process of migrating the
-[gmod.org](../Main_Page "Main Page") wiki from it server in
+[gmod.org](../Main_Page) wiki from it server in
 <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
 Spring Harbor</a> to a pair of load balanced servers at the
 <a href="http://oicr.on.ca/" class="external text"
@@ -23,11 +23,11 @@ issues. Note that any additions made to the beta site will be lost when
 the final transition is made!
 
 Thanks,
-[Scott Cain](../User%253AScott "User%253AScott")
+[Scott Cain](../User%253AScott)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/23*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

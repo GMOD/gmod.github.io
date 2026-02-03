@@ -6,7 +6,7 @@ title: "IGB"
 <a href="http://genoviz.sourceforge.net/" class="external text"
 rel="nofollow">Integrated Genome Browser</a> (IGB, pronounced "ig-bee")
 is an application built upon the GenoViz SDK and Genometry for
-[visualization](Visualization "Visualization") and exploration of
+[visualization](/wiki/Visualization) and exploration of
 genomes and corresponding annotations from multiple data sources. IGB is
 also a client for the DAS (Distributed Annotation System) protocol.
 
@@ -15,7 +15,7 @@ also a client for the DAS (Distributed Annotation System) protocol.
 I'm going to see if I can get IGB on my Mac to connect to a local Perl
 DAS/2 server I'm writing. This section is for Gregg to see my progress
 (more likely lack thereof) and slap me if I stray too far.
---[Jhannah](User%253AJhannah "User%253AJhannah") 14:30, 7 November 2007 (EST)
+--[Jhannah](/wiki/User%253AJhannah) 14:30, 7 November 2007 (EST)
 
 Gregg instructions from a Windows client:
 

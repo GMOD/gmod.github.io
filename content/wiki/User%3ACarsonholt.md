@@ -14,7 +14,7 @@ Post Doctoral Fellow
 
 Ontario Institute for Cancer Research
 
-- Primary developer for [MAKER](MAKER.1 "MAKER")
+- Primary developer for [MAKER](/wiki/MAKER.1)
 
 
 

@@ -22,4 +22,4 @@ standard Drupal updating procedures to update. Changes in this version:
 
 
 
-*Posted to the [GMOD News](GMOD_News "GMOD News") on 2021/02/08*
+*Posted to the [GMOD News](/wiki/GMOD_News) on 2021/02/08*

@@ -3,7 +3,7 @@ title: "News/Chado 1.23 released"
 ---
 # News/Chado 1.23 released
 
-From [Scott Cain](../User%253AScott "User%253AScott"):
+From [Scott Cain](../User%253AScott):
 
 I've just released Chado 1.23. This is a bug fix release with no changes
 to the schema from the 1.22 release. If you are upgrading from Chado 1.2
@@ -19,7 +19,7 @@ If you're installing from before Chado 1.2, you can add
       make update
 
 which should update the schema (after backing up your database, of
-course). See [Updating Chado](../Updating_Chado "Updating Chado") for
+course). See [Updating Chado](../Updating_Chado) for
 more information. Chado 1.23 can be
 <a href="https://sourceforge.net/projects/gmod/files/gmod/chado-1.23/"
 class="external text" rel="nofollow">downloaded from SourceForge</a>.
@@ -40,4 +40,4 @@ Here are the changes from the last release:
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/12/13*
+*Posted to the [GMOD News](../GMOD_News) on 2012/12/13*

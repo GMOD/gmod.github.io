@@ -44,9 +44,9 @@ GMOD will be holding a community meeting on June 30th and July 1st in
 Bloomington, IN, immediately after the
 <a href="https://gcc2016.iu.edu/" class="external text"
 rel="nofollow">2016 Galaxy Community Conference (GCC2016)</a>. [GMOD
-Meetings](Meetings "Meetings") are a mix of
-[user](GMOD_Membership#Users "GMOD Membership") and
-[developer](GMOD_Membership#Developers "GMOD Membership") presentations,
+Meetings](/wiki/Meetings) are a mix of
+[user](/wiki/GMOD_Membership#Users) and
+[developer](/wiki/GMOD_Membership#Developers) presentations,
 and are a great place to find out what is happening in the project,
 what's coming up, and what others are doing.
 
@@ -81,24 +81,24 @@ help desk</a>.
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
-components](GMOD_Components "GMOD Components") for annotating,
+components](/wiki/GMOD_Components) for annotating,
 visualizing, managing and analyzing biological data. GMOD is also an
 active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse") (and
-[WebGBrowse](WebGBrowse.1 "WebGBrowse")) for genome browsing,
-[Apollo](Apollo.1 "Apollo"), [Canto](Canto "Canto") and
-[MAKER](MAKER.1 "MAKER") for genome annotation,
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") and [CMap](CMap.1 "CMap") for
+[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
+[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
+[Apollo](/wiki/Apollo.1), [Canto](/wiki/Canto) and
+[MAKER](/wiki/MAKER.1) for genome annotation,
+[GBrowse_syn](/wiki/GBrowse_syn.1) and [CMap](/wiki/CMap.1) for
 comparative genomics visualization,
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[BioMart](BioMart "BioMart") and [InterMine](InterMine "InterMine") for
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](Galaxy.1 "Galaxy") and
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
-[ISGA](ISGA "ISGA")) for data analysis.
+[Galaxy](/wiki/Galaxy.1) and
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
+[ISGA](/wiki/ISGA)) for data analysis.
 
 
 
@@ -116,26 +116,26 @@ The registration fee includes lunch on June 30th.
 | Time | Topic | Presenter(s) | Presentation |
 |----|----|----|----|
 | 08:50 | Pre-meeting continental breakfast | 09:15 | Introductions |
-| 09:40 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal" |
+| 09:40 | The State of GMOD | [Scott Cain](/wiki/User%253AScott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal" |
 title="GMOD2016 GMOD.pdf">Intro</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/GMOD2016_InterMine.pdf"
 class="internal" title="GMOD2016 InterMine.pdf">InterMine</a>, <a
 href="https://www.dropbox.com/s/7i39svwlegfr4rq/MAKER_GMOD_2016.pdf?dl=0"
-class="external text" rel="nofollow">MAKER</a> | 10:10 | Introduction to uMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/GMOD2016_uMOD.pdf" class="internal"
+class="external text" rel="nofollow">MAKER</a> | 10:10 | Introduction to uMOD | [Scott Cain](/wiki/User%253AScott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/GMOD2016_uMOD.pdf" class="internal"
 title="GMOD2016 uMOD.pdf">Slides</a> | 10:35 | Coffee | 10:50 | GMOD in Action: The Legume Federation Project | Ethalinda Cannon | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/LegFed_GMOD2016.pdf" class="internal"
-title="LegFed GMOD2016.pdf">Slides</a> | 11:20 | [JBrowse](JBrowse.1 "JBrowse") Update | Eric Yao | <a
+title="LegFed GMOD2016.pdf">Slides</a> | 11:20 | [JBrowse](/wiki/JBrowse.1) Update | Eric Yao | <a
 href="https://drive.google.com/a/berkeley.edu/file/d/0BzJAAJpIcu9hVFloS2R6ZUxhcUE/view?usp=sharing"
-class="external text" rel="nofollow">Slides</a> | 11:50 | Lunch | 1:00 | [Apollo](Apollo.1 "Apollo"): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
+class="external text" rel="nofollow">Slides</a> | 11:50 | Lunch | 1:00 | [Apollo](/wiki/Apollo.1): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
 rel="nofollow">Nathan Dunn</a> | <a href="http://f1000research.com/slides/5-1389" class="external text"
-rel="nofollow">Slides</a> | 1:30 | [Tripal](Tripal.1 "Tripal") Update | Lacey-Anne Sanderson | 2:30 | Coffee | 2:45 | [Galaxy](Galaxy.1 "Galaxy") Update | [Dave Clements](User%253AClements "User%253AClements"), <a href="https://github.com/bgruening" class="external text"
-rel="nofollow">Bjöern Grüning</a> | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf "File:GMOD2016 Galaxy.pdf") | 3:15 | EvidentialGene project at <a href="http://eugenes.org/EvidentialGene/" class="external free"
+rel="nofollow">Slides</a> | 1:30 | [Tripal](/wiki/Tripal.1) Update | Lacey-Anne Sanderson | 2:30 | Coffee | 2:45 | [Galaxy](/wiki/Galaxy.1) Update | [Dave Clements](/wiki/User%253AClements), <a href="https://github.com/bgruening" class="external text"
+rel="nofollow">Bjöern Grüning</a> | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMOD2016_Galaxy.pdf) | 3:15 | EvidentialGene project at <a href="http://eugenes.org/EvidentialGene/" class="external free"
 rel="nofollow">http://eugenes.org/EvidentialGene/</a> | Don Gilbert | <a
 href="http://arthropods.eugenes.org/EvidentialGene/about/evigenegmod1606iu.pdf"
-class="external text" rel="nofollow">Slides</a> | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") ### Friday, July 1
+class="external text" rel="nofollow">Slides</a> | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](/wiki/User%253AJogoodma) ### Friday, July 1
 
 | Time | Topic | Presenter(s) | Presentation |
 |----|----|----|----|
 | 08:50 | Pre-meeting continental breakfast | 09:15 | Tripal Expression module and search |
-| Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf "File:GMOD Staton.pdf") | 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose |
+| Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf) | 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose |
 | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/GMOD_Asela.pdf" class="internal" |  |  |  |
 title="GMOD Asela.pdf">Asela/LanzaTech</a> | 11:30 | Lunch (on your own) | 1:00 | Tripal workshop |  ## Agenda items
 
@@ -144,11 +144,11 @@ giving a talk please contact the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a>.
 
-- GMOD project updates, including [Tripal](Tripal.1 "Tripal"),
-  [Galaxy](Galaxy.1 "Galaxy"), [JBrowse](JBrowse.1 "JBrowse"),
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-  [MAKER](MAKER.1 "MAKER").
-- Introduction to umod ([Scott Cain](User%253AScott "User%253AScott"))
+- GMOD project updates, including [Tripal](/wiki/Tripal.1),
+  [Galaxy](/wiki/Galaxy.1), [JBrowse](/wiki/JBrowse.1),
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+  [MAKER](/wiki/MAKER.1).
+- Introduction to umod ([Scott Cain](/wiki/User%253AScott))
 - "Apollo: Collaborative Manual Annotation in the GMOD Workflow" (Nathan
   Dunn)
 - Tripal update (Lacey Sanderson)
@@ -156,11 +156,11 @@ help desk</a>.
 - EvidentialGene project at
   <a href="http://eugenes.org/EvidentialGene/" class="external free"
   rel="nofollow">http://eugenes.org/EvidentialGene/</a> ([Don
-  Gilbert](User%253ADongilbert "User%253ADongilbert"))
+  Gilbert](/wiki/User%253ADongilbert))
 - DictyBase on using and extending GMOD tools (Chado, JBrowse) and new
   infrastructure(docker and possibly kubernetes) (Siddhartha Basu)
 - GMOD in Action: The Legume Federation Project (Ethalinda Cannon)
-- [Tripal](Tripal.1 "Tripal") Workshop (Friday afternoon)
+- [Tripal](/wiki/Tripal.1) Workshop (Friday afternoon)
 
 ## Logistics
 
@@ -187,5 +187,5 @@ Isabelle Phan,
 <a href="http://www.seattlebiomed.org" class="external text"
 rel="nofollow">SBRI</a>, and past GMOD meeting participant
 
-(Thanks to [Dave Clements](User%253AClements "User%253AClements") for the nice
+(Thanks to [Dave Clements](/wiki/User%253AClements) for the nice
 logo)

@@ -10,14 +10,14 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
-Ficklin](User%253ASficklin "User%253ASficklin") at the [2013 GMOD Summer
-School](2013_GMOD_Summer_School "2013 GMOD Summer School"), July 2013.
+This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+Ficklin](/wiki/User%253ASficklin) at the [2013 GMOD Summer
+School](/wiki/2013_GMOD_Summer_School), July 2013.
 The most recent Tripal tutorial can be found at the
-<a href="Tripal_Tutorial" class="mw-redirect"
+<a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
-Welcome to the [Tripal](Tripal.1 "Tripal") v1.1 Tutorial. Here you will
+Welcome to the [Tripal](/wiki/Tripal.1) v1.1 Tutorial. Here you will
 find instructions for installation, usage and administration of a
 Tripal-based genome website. This tutorial guides the user through the
 process of installation, setup and data loading of genomic feature data
@@ -267,7 +267,7 @@ compatible version. Later releases will be compatible with Drupal v7.
 ### Chado
 
 You can find more detailed information about Chado here:
-<a href="Chado_-_Getting_Started" class="external free"
+<a href="/wiki/Chado_-_Getting_Started" class="external free"
 rel="nofollow">http://gmod.org/wiki/Chado_-_Getting_Started</a>.
 However, one thing to remember in regards to Tripal organization is that
 Chado has a modular structure:
@@ -377,11 +377,11 @@ The Tripal home site where you can find everything about Tripal:
 rel="nofollow">http://tripal.info</a>
 
 GMOD Tripal mailing lists:
-<a href="GMOD_Mailing_Lists" class="external free"
+<a href="/wiki/GMOD_Mailing_Lists" class="external free"
 rel="nofollow">http://gmod.org/wiki/GMOD_Mailing_Lists</a>
 
 GMOD Tutorials from previous GMOD schools:
-<a href="Tripal.1" class="external free"
+<a href="/wiki/Tripal.1" class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
 ### Contributing Organizations
@@ -459,7 +459,7 @@ server available for your site
     provides hosting compatible with Drupal, Tripal and its
     dependencies.
 4.  **Option \#4 In the Cloud:** Tripal is a part of the
-    <a href="Cloud.1" class="external text" rel="nofollow">GMOD in the
+    <a href="/wiki/Cloud.1" class="external text" rel="nofollow">GMOD in the
     cloud</a> Amazon AWS image created by GMOD. It is also accompanied
     by other GMOD tools such as GBrowse2, JBrowse, Apollo and WebApollo.
 
@@ -1020,7 +1020,7 @@ cron launch the crontab editor:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -1775,7 +1775,7 @@ need to add a second cron entry:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -2283,4 +2283,4 @@ used for this tutorial:
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

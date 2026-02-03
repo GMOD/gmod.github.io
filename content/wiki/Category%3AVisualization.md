@@ -9,7 +9,7 @@ This category contains only the following page.
 
 ### G
 
-- [Genes4all](Genes4all "Genes4all")
+- [Genes4all](/wiki/Genes4all)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253AVisualization](/wiki/Category%253AVisualization)"

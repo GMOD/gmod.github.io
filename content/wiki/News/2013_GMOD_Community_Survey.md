@@ -26,7 +26,7 @@ prefer).
 
 The survey will be open until March 1st. Results will be collated and
 discussed at the [April 2013 GMOD
-Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") in
+Meeting](../April_2013_GMOD_Meeting) in
 Cambridge, UK, and posted on the GMOD wiki.
 
 

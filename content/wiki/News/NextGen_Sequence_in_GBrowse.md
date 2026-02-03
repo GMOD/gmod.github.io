@@ -11,8 +11,8 @@ alt="Next Generation Genome Analysis in Non-Model Organisms--An American Genetic
 There will be a
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf" class="internal"
 title="AGA NGS 2009.pdf">talk</a> on visualizing [next generation
-sequence](../Next_Generation_Sequencing "Next Generation Sequencing")
-data in [GBrowse](../GBrowse.1 "GBrowse") at
+sequence](../Next_Generation_Sequencing)
+data in [GBrowse](../GBrowse.1) at
 <a href="http://www.regonline.com/Nextgeneration" class="external text"
 rel="nofollow">Next Generation Genome Analysis in Non-Model
 Organisms</a>, an <a href="http://www.theaga.org" class="external text"
@@ -22,7 +22,7 @@ how GBrowse can visualize both individual reads and summary and derived
 data. This talk will become a wiki page after the meeting.
 
 June will be a busy month for [GMOD
-outreach](../Training_and_Outreach "Training and Outreach"). If you
+outreach](../Training_and_Outreach). If you
 can't make it to this meeting, there will also be [GMOD
 workshops](#GMOD_Workshops_at_SMBE.2C_AGS) at <a
 href="http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&amp;sym_ID=27"
@@ -30,12 +30,12 @@ class="external text" rel="nofollow">SMBE</a> and the
 <a href="http://www.k-state.edu/agc/symp2009/seminar.html"
 class="external text" rel="nofollow">Arthropod Genomics Symposium</a>.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/05/19*
+*Posted to the [GMOD News](../GMOD_News) on 2009/05/19*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

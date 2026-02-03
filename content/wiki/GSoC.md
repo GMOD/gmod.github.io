@@ -4,7 +4,7 @@ title: "GSoC"
 # GSoC
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg"
-width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](GSoC "GSoC")
+width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](/wiki/GSoC)
 
   of Code 2026 @ Open Genome
   Informatics</span>](#Google_Summer_of_Code_2026_.40_Open_Genome_Informatics)
@@ -46,10 +46,10 @@ rel="nofollow">Google Summer of Code website</a>*)
 
 Since 2011, the Open Genome Informatics group has served as an "umbrella
 organization" to a variety of bioinformatics projects, including
-[GMOD](Main_Page "Main Page") and its software projects --
-[JBrowse](JBrowse.1 "JBrowse"), [Apollo](Apollo.1 "Apollo"),
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[Galaxy](Galaxy.1 "Galaxy") etc.;
+[GMOD](/wiki/Main_Page) and its software projects --
+[JBrowse](/wiki/JBrowse.1), [Apollo](/wiki/Apollo.1),
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[Galaxy](/wiki/Galaxy.1) etc.;
 <a href="http://www.informatics.jax.org/" class="external text"
 rel="nofollow">Mouse Genome Informatics</a>;
 <a href="https://oicr.on.ca/research-portfolio/" class="external text"
@@ -62,7 +62,7 @@ rel="nofollow">WormBase</a>; and
 rel="nofollow">Bioconda</a>.
 
 **More information about this year's participating bioinformatics groups
-can be found [here](GSOC_Groups "GSOC Groups").**
+can be found [here](/wiki/GSOC_Groups).**
 
 To learn more about this year's event and how GSoC works, please refer
 to the <a href="https://developers.google.com/open-source/gsoc/faq"
@@ -85,10 +85,10 @@ class="external text" rel="nofollow">FAQ</a>.
   Robin and Adam to get more information about the
   program.
 
-##  [Project Ideas](GSOC_Project_Ideas_2026 "GSOC Project Ideas 2026")
+##  [Project Ideas](/wiki/GSOC_Project_Ideas_2026)
 
 **Got an idea for a GSOC project? [Add it
-here](GSOC_Project_Ideas_2026 "GSOC Project Ideas 2026").** Ideas will
+here](/wiki/GSOC_Project_Ideas_2026).** Ideas will
 be included in the proposal we send to GSOC, and great ideas make for a
 great proposal, so please add yours now.
 
@@ -117,7 +117,7 @@ Mentors section below, and contact the organization admin.
 ### Contributors
 
 More information about [writing your
-application](GSOC_Applications_Guide "GSOC Applications Guide") will be
+application](/wiki/GSOC_Applications_Guide) will be
 available closer to the start of the student application period.
 
 ### Mentors
@@ -126,10 +126,10 @@ We encourage mentors and mentoring organizations to think about new
 projects year-round! If you'd like help with your ideas page or your
 separate mentoring org application, please feel free to contact the
 organization admins. Links to [advice about mentoring and other
-resources](GSOC_Mentoring_Guide "GSOC Mentoring Guide") are available.
+resources](/wiki/GSOC_Mentoring_Guide) are available.
 
 ### Source Code
 
 Genome and bioinformatics projects that participate in the Open Genome
 Informatics group maintain there own [source code
-repositories](Source_Code_Repositories "Source Code Repositories").
+repositories](/wiki/Source_Code_Repositories).

@@ -20,8 +20,8 @@ title: "Using AWS S3 For JBrowse"
 
 <a href="https://aws.amazon.com/s3/" class="external text"
 rel="nofollow">Amazon Web Services’ S3</a> object storage service can be
-configured to store [JBrowse](JBrowse.1 "JBrowse") data or to serve a
-full [JBrowse](JBrowse.1 "JBrowse") instance. It’s possible, depending
+configured to store [JBrowse](/wiki/JBrowse.1) data or to serve a
+full [JBrowse](/wiki/JBrowse.1) instance. It’s possible, depending
 on usage patterns, that operating a JBrowse instance from an S3 store
 could provide a significant savings over operating an EC2 instance for
 the sole purpose of running JBrowse (as opposed to putting JBrowse on a

@@ -6,7 +6,7 @@ title: "News/Beta Test CMap: Win a T-Shirt!"
 UPDATE: We have our winners. Even still, please feel free to give the
 release candidate a try and let us know how it goes.
 
-We need beta testers for the [CMap](../CMap.1 "CMap") 1.0 release
+We need beta testers for the [CMap](../CMap.1) 1.0 release
 candidate.
 
 <a href="http://www.cafepress.com/genericmod.238973590" rel="nofollow"
@@ -46,13 +46,13 @@ Remember: *If no one beta tests, everyone beta tests.*
 
 Thanks,
 
-[Ben Faga](../User%253AFaga "User%253AFaga"),
+[Ben Faga](../User%253AFaga),
 <a href="mailto:faga.cshl@gmail.com" class="external text"
 rel="nofollow">faga.cshl@gmail.com</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/11*
+*Posted to the [GMOD News](../GMOD_News) on 2008/03/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -63,4 +63,4 @@ height="398" alt="ChadoSybilComparative new.png" />
 ------------------------------------------------------------------------
 
 [Proposed schema extensions related to Sybil/IGS
-needs](Proposed_schema_extensions_related_to_Sybil/IGS_needs "Proposed schema extensions related to Sybil/IGS needs")
+needs](/wiki/Proposed_schema_extensions_related_to_Sybil/IGS_needs)

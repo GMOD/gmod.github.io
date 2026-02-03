@@ -30,4 +30,4 @@ rel="nofollow">Steven Cannon</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/1/24*
+*Posted to the [GMOD News](../GMOD_News) on 2014/1/24*

@@ -3,14 +3,14 @@ title: "MAKER Tutorial 2012"
 ---
 # MAKER Tutorial 2012
 
-This [MAKER](MAKER.1 "MAKER") tutorial was taught by [Barry
-Moore](User%253ABmoore "User%253ABmoore") as part of the [2012 GMOD Summer
-School](2012_GMOD_Summer_School "2012 GMOD Summer School").
+This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
+Moore](/wiki/User%253ABmoore) as part of the [2012 GMOD Summer
+School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-b1812ad8, name: GMOD in the Cloud 1.3**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
-Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
+Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
@@ -126,10 +126,10 @@ size including use by large sequence centers. MAKER can be used for *de
 novo* annotation of newly sequenced genomes, for updating existing
 annotations to reflect new evidence, or just to combine annotations,
 evidence, and quality control statistics for use with other GMOD
-programs like [GBrowse](GBrowse.1 "GBrowse"),
-[JBrowse](JBrowse.1 "JBrowse"),
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, and
-[Apollo](Apollo.1 "Apollo").
+programs like [GBrowse](/wiki/GBrowse.1),
+[JBrowse](/wiki/JBrowse.1),
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, and
+[Apollo](/wiki/Apollo.1).
 
 MAKER has been used in many genome annotation projects:
 
@@ -363,7 +363,7 @@ using `sudo`.
 ```
 
 If you set `APOLLO_ROOT` in the `server.ctl` file, then you can now
-setup a special Java Web Start version of [Apollo](Apollo.1 "Apollo") to
+setup a special Java Web Start version of [Apollo](/wiki/Apollo.1) to
 view results directly from the web interface. Web Start will be
 described in more detail in the Apollo session. This must be done as
 root or using `sudo`.
@@ -396,7 +396,7 @@ Scripts:
      add_utr_start_stop_gff <gff3_file>
 
 - *add_utr_to_gff3.pl* - Adds explicit 5' and 3' UTR features to the
-  [GFF3](GFF3 "GFF3") output file
+  [GFF3](/wiki/GFF3) output file
      add_utr_gff.pl <gff3_directory>
 
 - *cegma2zff' - This script converts the output of a GFF file from CEGMA
@@ -474,7 +474,7 @@ Scripts:
 
 - *maker2chado* - This script takes MAKER produced GFF3 files and dumps
   them into a
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
   You must set the database up first according to CHADO installation
   instructions. CHADO provides its own methods for loading GFF3, but
   this script makes it easier for MAKER specific data. You can either
@@ -536,4 +536,4 @@ Scripts:
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER") |
+| [Has topic](/wiki/Property%253AHas_topic) | [MAKER](/wiki/MAKER.1) |

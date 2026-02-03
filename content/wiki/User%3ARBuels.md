@@ -18,7 +18,7 @@ rel="nofollow">Sol Genomics Network</a>, an clade-oriented database for
 the Solanaceae and other plants.
 
 From January 2012 to March 2014, he was the lead developer on the
-[JBrowse](JBrowse.1 "JBrowse") project.
+[JBrowse](/wiki/JBrowse.1) project.
 
 In March 2014, Rob moved to a role as a software developer on the
 Knowledge Informatics team at
@@ -36,8 +36,8 @@ rel="nofollow">rbuels on GitHub</a>
 
 # Work
 
-- [JBrowse](JBrowse.1 "JBrowse") lead developer
-- [Bio%253A%253AChado%253A%253ASchema](Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") founding
+- [JBrowse](/wiki/JBrowse.1) lead developer
+- [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) founding
   developer
 - <a href="http://solgenomics.net" class="external text"
   rel="nofollow">SGN</a> development processes
@@ -46,6 +46,6 @@ rel="nofollow">rbuels on GitHub</a>
   and annotations)
 - International Tomato Genome Annotation Group (ITAG) distributed
   annotation pipeline
-- [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") core developer
+- [GBrowse_syn](/wiki/GBrowse_syn.1) core developer
 - <a href="http://bioperl.org" class="external text"
   rel="nofollow">BioPerl</a> core developer

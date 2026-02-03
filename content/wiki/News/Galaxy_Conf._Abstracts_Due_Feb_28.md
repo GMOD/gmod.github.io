@@ -38,12 +38,12 @@ class="external text" rel="nofollow">Early Registration</a> Deadline |
 Please contact me if you have any questions, and hope to see you in the
 Netherlands!
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[Galaxy](../Galaxy.1 "Galaxy") Project
+[Dave Clements](../User%253AClements)
+[Galaxy](../Galaxy.1) Project
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/03/04*
+*Posted to the [GMOD News](../GMOD_News) on 2011/03/04*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

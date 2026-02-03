@@ -6,7 +6,7 @@ title: "GBrowse2 REST API"
 This article describes the **GBrowse2 REST API**.
 
 _For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO")._
+HOWTO](/wiki/GBrowse_2.0_HOWTO)._
 
   REST API</span>](#The_GBrowse2_REST_API)
   - [Getting
@@ -93,7 +93,7 @@ unique ID for the build).
 
 These fields are derived from GBrowse.conf and the "metadata" option in
 the configuration file for the data source. Also see
-[GBrowse_2.0_HOWTO#The_GENERAL_Section](GBrowse_2.0_HOWTO#The_GENERAL_Section "GBrowse 2.0 HOWTO").
+[GBrowse_2.0_HOWTO#The_GENERAL_Section](/wiki/GBrowse_2.0_HOWTO#The_GENERAL_Section).
 
 ### Getting Tracks from a Particular Datasource
 

@@ -24,13 +24,13 @@ project. Over three days, participants will learn about GMOD's free,
 open-source tools for visualising, storing, and disseminating genetic
 and genomic data. These include:
 
-- [Galaxy](Galaxy.1 "Galaxy") analysis pipeline
-- [GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse")
+- [Galaxy](/wiki/Galaxy.1) analysis pipeline
+- [GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1)
   genome browsers
-- [InterMine](InterMine "InterMine") data warehouse
-- [MAKER](MAKER.1 "MAKER") and MAKER-P genome annotation pipelines
-- [Tripal](Tripal.1 "Tripal") website generator and database interface
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+- [InterMine](/wiki/InterMine) data warehouse
+- [MAKER](/wiki/MAKER.1) and MAKER-P genome annotation pipelines
+- [Tripal](/wiki/Tripal.1) website generator and database interface
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
   schema
 
 Instruction is by experienced instructors and developers with deep
@@ -63,7 +63,7 @@ class="external text" rel="nofollow">feedback on the course</a>.
 ## Schedule
 
 [Course
-Schedule](GMOD_Malaysia_2014/Schedule "GMOD Malaysia 2014/Schedule")
+Schedule](/wiki/GMOD_Malaysia_2014/Schedule)
 
 ## Details
 

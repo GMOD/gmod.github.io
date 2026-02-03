@@ -115,10 +115,10 @@ size including use by large sequence centers. MAKER can be used for *de
 novo* annotation of newly sequenced genomes, for updating existing
 annotations to reflect new evidence, or just to combine annotations,
 evidence, and quality control statistics for use with other GMOD
-programs like [GBrowse](../GBrowse.1 "GBrowse"),
-[JBrowse](../JBrowse.1 "JBrowse"),
+programs like [GBrowse](../GBrowse.1),
+[JBrowse](../JBrowse.1),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, and
-[Apollo](../Apollo.1 "Apollo").
+[Apollo](../Apollo.1).
 
 MAKER has been used in many genome annotation projects:
 
@@ -346,7 +346,7 @@ using `sudo`.
 ```
 
 If you set `APOLLO_ROOT` in the `server.ctl` file, then you can now
-setup a special Java Web Start version of [Apollo](../Apollo.1 "Apollo")
+setup a special Java Web Start version of [Apollo](../Apollo.1)
 to view results directly from the web interface. Web Start will be
 described in more detail in the Apollo session. This must be done as
 root or using `sudo`.
@@ -379,7 +379,7 @@ Scripts:
      add_utr_start_stop_gff <gff3_file>
 
 - *add_utr_to_gff3.pl* - Adds explicit 5' and 3' UTR features to the
-  [GFF3](../GFF3 "GFF3") output file
+  [GFF3](../GFF3) output file
      add_utr_gff.pl <gff3_directory>
 
 - *cegma2zff' - This script converts the output of a GFF file from CEGMA

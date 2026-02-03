@@ -15,8 +15,7 @@ data-cellpadding="10">
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/300px-April2012MeetingLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/450px-April2012MeetingLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2f/April2012MeetingLogo.png/600px-April2012MeetingLogo.png 2x"
 width="300" height="236" alt="April2012MeetingLogo.png" /></td>
-<td style="font-size: 180%; line-height: 120%"><strong>April 2012 <a
-href="Meetings" title="Meetings">GMOD Meeting</a></strong>
+<td style="font-size: 180%; line-height: 120%"><strong>April 2012 <a href="/wiki/Meetings" title="Meetings">GMOD Meeting</a></strong>
 <hr />
 <p>Immediately following <a
 href="http://pir.georgetown.edu/biocuration2012/" class="external text"
@@ -26,7 +25,7 @@ April 5-6, Washington, DC, United States</p></td>
 </tbody>
 </table>
 
-The 2012 [GMOD meeting](Meetings "Meetings") was held April 5-6, in
+The 2012 [GMOD meeting](/wiki/Meetings) was held April 5-6, in
 Washington, DC, immediately following
 <a href="http://pir.georgetown.edu/biocuration2012/"
 class="external text" rel="nofollow">Biocuration 2012</a>.
@@ -107,7 +106,7 @@ change (likely even) until this note goes away.
 
 ### Thursday April 5
 
-| Time                                                         | Topic                                                                                                                 | Presenter(s)                                                                                                      | Presentation                                                                                                                   | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                                                         | Introductions                                                                                                         | [Scott Cain](User%253AScott "User%253AScott")                                                                     | 9:45                                                         | The State of GMOD                                                                                                     | [Scott Cain](User%253AScott "User%253AScott")                                                                     | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/State_of_GMOD_2012.pdf"              | class="internal" title="State of GMOD 2012.pdf">PDF</a>      | 10:15                                                        | Coffee break                                                                                                          | 10:30                                                        | <a href="http://www.reactome.org" class="external text"                                                               | rel="nofollow">Reactome</a>                                  | [Robin Haw](User%253ARobin.haw "User%253ARobin.haw")                                                                  | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/2012_Reactome_GMOD.pdf" | class="internal" title="2012 Reactome GMOD.pdf">Slides</a>   | 11:00                                                        | Keynote: Navigating genomics resources at NCBI                                                                        | Deanna Church                                                                                                     | 12:00                                                        | Lunch                                                                                                                 | 1:15                                                         | GLEAN and [MAKER](MAKER.1 "MAKER")                                                                                    | Aaron Mackey                                                                                                      | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Aarom_mackey.pptx" class="internal"  | title="Aarom mackey.pptx">PPTX</a>                           | 1:45                                                         | Integration of NGS and Population Data with the Phytozome Plant Comparative Genomics Portal                           | [Richard Hayes](User%253ARichard_Hayes "User%253ARichard Hayes")                                                  | 2:15                                                         | InterMOD                                                                                                              | Ben Hitz                                                                                                          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Bhitz_InterMOD_2012.pdf"             | class="internal" title="Bhitz InterMOD 2012.pdf">PDF</a>     | 2:45                                                         | Coffee break                                                                                                          | 3:30                                                         | [JBrowse](JBrowse.1 "JBrowse")                                                                                        | <a href="User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert                                      | Buels</a>                                                    | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/ba/RBuels_JBrowse_apr2012.pdf" | class="internal" title="RBuels JBrowse apr2012.pdf">PDF</a>  |                                                              | [WebApollo](WebApollo.1 "WebApollo")                                                                                  | [Ed Lee](User%253AElee "User%253AElee")                                                                           | Tengcha (A generic middle-ware for retrieving data from Chado databases)                                              | [Justin Reese](User%253AJustaddcoffee "User%253AJustaddcoffee")                                                   | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/JustinReese_April2012.pptx"          | class="internal" title="JustinReese April2012.pptx">PPTX</a> | 5:00                                                         | Dinner (on your own)                                                                                                  | 7:00                                                         | [Galaxy CloudMan Workshop](#Galaxy_Workshop)                                                                          | [Dave Clements](User%253AClements "User%253AClements")                                                            | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/April2012GalaxyCloudManWorkshop.pdf" |
+| Time                                                         | Topic                                                                                                                 | Presenter(s)                                                                                                      | Presentation                                                                                                                   | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                                                         | Introductions                                                                                                         | [Scott Cain](/wiki/User%253AScott)                                                                     | 9:45                                                         | The State of GMOD                                                                                                     | [Scott Cain](/wiki/User%253AScott)                                                                     | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/State_of_GMOD_2012.pdf"              | class="internal" title="State of GMOD 2012.pdf">PDF</a>      | 10:15                                                        | Coffee break                                                                                                          | 10:30                                                        | <a href="http://www.reactome.org" class="external text"                                                               | rel="nofollow">Reactome</a>                                  | [Robin Haw](/wiki/User%253ARobin.haw)                                                                  | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/2012_Reactome_GMOD.pdf" | class="internal" title="2012 Reactome GMOD.pdf">Slides</a>   | 11:00                                                        | Keynote: Navigating genomics resources at NCBI                                                                        | Deanna Church                                                                                                     | 12:00                                                        | Lunch                                                                                                                 | 1:15                                                         | GLEAN and [MAKER](/wiki/MAKER.1)                                                                                    | Aaron Mackey                                                                                                      | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Aarom_mackey.pptx" class="internal"  | title="Aarom mackey.pptx">PPTX</a>                           | 1:45                                                         | Integration of NGS and Population Data with the Phytozome Plant Comparative Genomics Portal                           | [Richard Hayes](/wiki/User%253ARichard_Hayes)                                                  | 2:15                                                         | InterMOD                                                                                                              | Ben Hitz                                                                                                          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Bhitz_InterMOD_2012.pdf"             | class="internal" title="Bhitz InterMOD 2012.pdf">PDF</a>     | 2:45                                                         | Coffee break                                                                                                          | 3:30                                                         | [JBrowse](/wiki/JBrowse.1)                                                                                        | <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert                                      | Buels</a>                                                    | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/ba/RBuels_JBrowse_apr2012.pdf" | class="internal" title="RBuels JBrowse apr2012.pdf">PDF</a>  |                                                              | [WebApollo](/wiki/WebApollo.1)                                                                                  | [Ed Lee](/wiki/User%253AElee)                                                                           | Tengcha (A generic middle-ware for retrieving data from Chado databases)                                              | [Justin Reese](/wiki/User%253AJustaddcoffee)                                                   | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/JustinReese_April2012.pptx"          | class="internal" title="JustinReese April2012.pptx">PPTX</a> | 5:00                                                         | Dinner (on your own)                                                                                                  | 7:00                                                         | [Galaxy CloudMan Workshop](#Galaxy_Workshop)                                                                          | [Dave Clements](/wiki/User%253AClements)                                                            | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/April2012GalaxyCloudManWorkshop.pdf" |
 
 class="internal" title="April2012GalaxyCloudManWorkshop.pdf">slides</a>, <a href="http://galaxyproject.org/wiki/Admin/Cloud/Getting%20Started"
 class="external text" rel="nofollow">Hands-on</a> |
@@ -132,8 +131,8 @@ class="external text" rel="nofollow">Hands-on</a> |
 <tbody>
 <tr class="odd">
 <td>9:15</td>
-<td><a href="Galaxy.1" title="Galaxy">Galaxy</a> Update</td>
-<td><a href="User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<td><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> Update</td>
+<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/April2012GalaxyUpdate.pdf"
 class="internal" title="April2012GalaxyUpdate.pdf">slides</a>, <a
 href="http://usegalaxy.org/" class="external text" rel="nofollow">Web
@@ -141,7 +140,7 @@ site</a></td>
 </tr>
 <tr class="even">
 <td>9:45</td>
-<td><a href="Tripal.1" title="Tripal">Tripal</a></td>
+<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
 <td>Lacey
 Sanderson</td>
 <td><a
@@ -189,7 +188,7 @@ class="internal" title="QunfengDong April2012.pdf">PDF</a></td>
 <tr class="even">
 <td>1:00</td>
 <td>GMOD's Future: Meetings and Focus, a discussion</td>
-<td><a href="User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -207,7 +206,7 @@ introduction to the interaction Chado module, and PolyBrowse</td>
 class="internal" title="April2012 MGIUpdate.pptx">PPTX</a></td>
 </tr>
 <tr class="even">
-<td><a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+<td><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 Interaction Module</td>
 <td>Andy Schroeder</td>
 <td><a
@@ -238,7 +237,7 @@ PDF unavailable</td>
 <tr class="even">
 <td><a href="http://opossumbase.org/" class="external text"
 rel="nofollow">OpossumBase</a></td>
-<td><a href="User%253AChilders" title="User%253AChilders">Chris
+<td><a href="/wiki/User%253AChilders" title="User%253AChilders">Chris
 Childers</a></td>
 <td></td>
 </tr>
@@ -249,7 +248,7 @@ Childers</a></td>
 </tr>
 <tr class="even">
 <td>Community Building, Outreach and Support</td>
-<td><a href="User%253AClements" title="User%253AClements">Dave
+<td><a href="/wiki/User%253AClements" title="User%253AClements">Dave
 Clements</a><br />
 (+ Robin Haw)</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/79/April2012_CommunityBuilding.pdf"
@@ -260,20 +259,20 @@ class="internal" title="April2012 CommunityBuilding.pdf">PDF</a></td>
 
 ## Suggested Agenda Items
 
-- GMOD/<a href="Chado" class="mw-redirect" title="Chado">Chado</a>/[GBrowse](GBrowse.1 "GBrowse")
-  update --[Scott Cain](User%253AScott "User%253AScott")
-- GLEAN and [MAKER](MAKER.1 "MAKER") --Aaron Mackey
-- [Galaxy](Galaxy.1 "Galaxy") Update -- [Dave
-  Clements](User%253AClements "User%253AClements")
-- Future [GMOD Meetings](Meetings "Meetings")? -- suggested by [Dave
-  Clements](User%253AClements "User%253AClements")
+- GMOD/<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>/[GBrowse](/wiki/GBrowse.1)
+  update --[Scott Cain](/wiki/User%253AScott)
+- GLEAN and [MAKER](/wiki/MAKER.1) --Aaron Mackey
+- [Galaxy](/wiki/Galaxy.1) Update -- [Dave
+  Clements](/wiki/User%253AClements)
+- Future [GMOD Meetings](/wiki/Meetings)? -- suggested by [Dave
+  Clements](/wiki/User%253AClements)
   1.  Stay the course or shift in emphasis?
   2.  Consistently co-locate with [another
-      meeting](Category%253AConferences "Category%253AConferences"):
-      Biocuration, [PAG](PAG_2012 "PAG 2012"),
-      [ISMB](ISMB_2010 "ISMB 2010"), Genome Informatics, ...?
+      meeting](/wiki/Category%253AConferences):
+      Biocuration, [PAG](/wiki/PAG_2012),
+      [ISMB](/wiki/ISMB_2010), Genome Informatics, ...?
 - GMOD in the Cloud -- suggested by [Dave
-  Clements](User%253AClements "User%253AClements")
+  Clements](/wiki/User%253AClements)
 - <a href="http://www.abrowse.org/" class="external text"
   rel="nofollow">ABrowse</a> a new genome browser -- Kong Lei
 - <a href="http://reactome.org/" class="external text"
@@ -281,7 +280,7 @@ class="internal" title="April2012 CommunityBuilding.pdf">PDF</a></td>
 - InterMOD update -- Ben Hitz
 - Integration of NGS and Population Data with the Phytozome Plant
   Comparative Genomics Portal -- [Richard
-  Hayes](User%253ARichard_Hayes "User%253ARichard Hayes")
+  Hayes](/wiki/User%253ARichard_Hayes)
 - BioStudio genome editor -- Sarah Richardson
 - <a href="http://epigenomegateway.wustl.edu/" class="external text"
   rel="nofollow">Epigenome Browser</a> -- Xin Zhou
@@ -291,7 +290,7 @@ class="internal" title="April2012 CommunityBuilding.pdf">PDF</a></td>
 - Tripal Update (New Release this Summer!) --Lacey Sanderson
 - GMOD and Google Summer of Code -- Robin Haw
 
-## [Galaxy](Galaxy.1 "Galaxy") Workshop
+## [Galaxy](/wiki/Galaxy.1) Workshop
 
 <table>
 <colgroup>
@@ -331,7 +330,7 @@ April 5, after the first day of the meeting. In this hands-on workshop,
 participants will use
 <a href="http://wiki.g2.bx.psu.edu/Admin/Cloud" class="external text"
 rel="nofollow">Galaxy CloudMan</a> to setup a fully populated and
-scalable instance of the [Galaxy](Galaxy.1 "Galaxy") data integration
+scalable instance of the [Galaxy](/wiki/Galaxy.1) data integration
 and analysis framework. The workshop will use
 <a href="http://aws.amazon.com/" class="external text"
 rel="nofollow">Amazon Web Services</a>'
@@ -347,7 +346,7 @@ Please [register](#Registration) for the workshop when you register for
 the meeting. The workshop is free, but space is limited and
 [registration](#Registration) is required.
 
-Please contact [Dave Clements](User%253AClements "User%253AClements") if you
+Please contact [Dave Clements](/wiki/User%253AClements) if you
 have any questions.
 
 ## Registration
@@ -388,4 +387,4 @@ Feedback will be summarized and posted here once we have it.
 ## Previous Meeting
 
 - [October 2011 GMOD
-  Meeting](October_2011_GMOD_Meeting "October 2011 GMOD Meeting")
+  Meeting](/wiki/October_2011_GMOD_Meeting)

@@ -5,8 +5,8 @@ title: "GBrowse Tutorial 2010"
 
 TutorialHeader \| what = GBrowse \| where = [2010 GMOD Summer
 School -
-Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
-\| who = [Scott Cain](User%253AScott "User%253AScott") \| when = May 2010 \|
+Americas](/wiki/2010_GMOD_Summer_School_-_Americas)
+\| who = [Scott Cain](/wiki/User%253AScott) \| when = May 2010 \|
 logo = GBrowseLogo.png
 
   VMware](#VMware)
@@ -29,10 +29,8 @@ and install the start image (below). See VMware for what
 software you need to use a VMware system image and for directions on how
 to get the image up and running on your machine.
 
-Download the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
-class="external text" rel="nofollow">start image</a> and the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
+Download the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
+class="external text" rel="nofollow">start image</a> and the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
 class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
@@ -43,7 +41,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
+This [tutorial](/wiki/Category%253ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -68,7 +66,7 @@ Which gets all of the prereqs that aren't installed on the machine.
 Go to <a href="http://localhost/gbrowse" class="external free"
 rel="nofollow">http://localhost/gbrowse</a>
 
-## Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
+## Basic <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
@@ -89,11 +87,11 @@ Some simple tweaks and additions:
 ### Materialized views for searching
 
 Chado comes with a tool to materialize views written by developers at
-the [SOL Genomics Network (SGN)](Category%253ASGN "Category%253ASGN"). A
+the [SOL Genomics Network (SGN)](/wiki/Category%253ASGN). A
 materialized view is faster (at the expense of more disk space) to
 search than a regular view (which is really a query over potentially
 several tables). To create a materialized view that makes searching a
-GBrowse <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+GBrowse <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 instance a faster, we can do this:
 
      gmod_materialized_view_tool.pl -c

@@ -4,12 +4,12 @@ title: "JBrowse/tool data"
 # JBrowse/tool data
 
 This page stores the data that populates the
-[JBrowse](../JBrowse.1 "JBrowse") wiki page.
+[JBrowse](../JBrowse.1) wiki page.
 
 \| name = JBrowse \| full_name = \| contact_email =
 rbuels@gmail.com \| status = mature \| dev = active \| support = active
 \| type = Genome visualization \| platform = web \| logo =
-JBrowseLogo.png \| input = [GFF3](../GFF3 "GFF3"), BED, FASTA, Wiggle,
+JBrowseLogo.png \| input = [GFF3](../GFF3), BED, FASTA, Wiggle,
 BigWig, BAM \| output = \| licence =
 <a href="http://www.gnu.org/licenses/lgpl.txt" class="external text"
 rel="nofollow">LGPL</a> and
@@ -58,7 +58,7 @@ prerequisites using the command:
      sudo apt-get install libpng-dev libgd2-noxpm-dev build-essential
 
 For tips on installing these baseline libraries, see [JBrowse
-Troubleshooting](../JBrowse_Troubleshooting "JBrowse Troubleshooting").
+Troubleshooting](../JBrowse_Troubleshooting).
 
 \| install = The
 <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
@@ -83,7 +83,7 @@ install all of JBrowse's (modest) prerequisites for you in the
 `jbrowse/` directory itself. Note that `setup.sh` does not need to be
 run as root or with `sudo`. For help troubleshooting failures of
 setup.sh, see [JBrowse
-Troubleshooting](../JBrowse_Troubleshooting "JBrowse Troubleshooting").
+Troubleshooting](../JBrowse_Troubleshooting).
 
 4\. Visit JBrowse on your machine, substituting the
 http://(your_machine/path_to_jbrowse)/index.html?data=sample_data/json/volvox.
@@ -91,39 +91,39 @@ If you can see the included Volvox example data, you are ready to
 configure JBrowse to show your own data!
 
 \| config = See the [JBrowse Configuration
-Guide](../JBrowse_Configuration_Guide "JBrowse Configuration Guide") for
+Guide](../JBrowse_Configuration_Guide) for
 information on:
 
 - [Formatting reference
-  sequences](../JBrowse_Configuration_Guide#Reference_Sequences "JBrowse Configuration Guide")
+  sequences](../JBrowse_Configuration_Guide#Reference_Sequences)
   (e.g. from FASTA files, or a Chado database)
 - [Feature
-  Tracks](../JBrowse_Configuration_Guide#Feature_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Feature_Tracks)
   (e.g. from BED or GFF files, a Chado database, or the UCSC genome
   browser)
 - [Image
-  Tracks](../JBrowse_Configuration_Guide#Image_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Image_Tracks)
   (e.g. from WIG files)
 - [Wiggle/BigWig
-  Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks "JBrowse Configuration Guide")
+  Tracks](../JBrowse_Configuration_Guide#Wiggle_Tracks)
 - [Name Search and
-  Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion "JBrowse Configuration Guide")
+  Autocompletion](../JBrowse_Configuration_Guide#Name_Searching_and_Autocompletion)
 - [Removing
-  tracks](../JBrowse_Configuration_Guide#Removing_Tracks "JBrowse Configuration Guide")
+  tracks](../JBrowse_Configuration_Guide#Removing_Tracks)
 - [Compressing data stored on the
-  server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server "JBrowse Configuration Guide")
+  server](../JBrowse_Configuration_Guide#Compressing_data_on_the_server)
 - [URL
-  control](../JBrowse_Configuration_Guide#URL_Control "JBrowse Configuration Guide")
+  control](../JBrowse_Configuration_Guide#URL_Control)
 - [Faceted track
-  selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection "JBrowse Configuration Guide")
+  selection](../JBrowse_Configuration_Guide#Faceted_Track_Selection)
 - [Anonymous usage
-  statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics "JBrowse Configuration Guide")
+  statistics](../JBrowse_Configuration_Guide#Anonymous_Usage_Statistics)
 
 Additional topics:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+  Cloud](../Category%253AGMOD_in_the_Cloud)
+- [JBrowse](../Category%253AJBrowse)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
+  Components](../Category%253AGMOD_Components)
+- [Tool data](../Category%253ATool_data)

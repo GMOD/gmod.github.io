@@ -172,7 +172,7 @@ be run before adding other tracks. In addition to formatting the
 sequence data, this script creates a track called "DNA" that displays
 the reference sequence. The simplest way to use it is with the --fasta
 option, which uses a single sequence or set of reference sequences from
-a [FASTA](../Glossary#FASTA "Glossary") file:
+a [FASTA](../Glossary#FASTA) file:
 
     bin/prepare-refseqs.pl --fasta <fasta file> [options]
 
@@ -247,7 +247,7 @@ of these tools also adds a track configuration stanza to the
 
 Each run of this script formats a single track for JBrowse. A *flat
 file* is a data set that exists entirely in a single file. For this
-script, the file must be a [GFF3](../GFF3 "GFF3"),
+script, the file must be a [GFF3](../GFF3),
 <a href="http://www.ensembl.org/info/website/upload/bed.html"
 class="external text" rel="nofollow">BED</a>, or GenBank text file.
 
@@ -299,11 +299,11 @@ FeatureTrack)
 ### biodb-to-json.pl
 
 This script uses a
-<a href="Current/Usage/ConfigFiles" class="mw-redirect"
+<a href="/wiki/Current/Usage/ConfigFiles" class="mw-redirect"
 title="JBrowseDev/Current/Usage/ConfigFiles">config file</a> to produce
 a set of feature tracks in JBrowse. It can be used to obtain information
 from any database with appropriate
-[schema](../Glossary#Database_Schema "Glossary"), or from flat files.
+[schema](../Glossary#Database_Schema), or from flat files.
 Because it can produce several feature tracks in a single execution, it
 is useful for large-scale feature data entry into JBrowse.
 
@@ -810,4 +810,4 @@ make it higher resolution
   Browser</a> paper
 
 
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+- [JBrowse](../Category%253AJBrowse)

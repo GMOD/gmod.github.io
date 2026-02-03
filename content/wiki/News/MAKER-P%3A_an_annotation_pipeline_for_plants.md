@@ -3,7 +3,7 @@ title: "News/MAKER-P: an annotation pipeline for plants"
 ---
 # News/MAKER-P: an annotation pipeline for plants
 
-The popular [MAKER](../MAKER.1 "MAKER") annotation pipeline has been
+The popular [MAKER](../MAKER.1) annotation pipeline has been
 extended and optimised to allow the annotation of plant species:
 
 > Sequencing diverse plant species of evolutionary, agricultural, and
@@ -22,8 +22,8 @@ extended and optimised to allow the annotation of plant species:
   <a href="http://dx.doi.org/​10.​1104/​pp.​113.​230144" class="external text"
   rel="nofollow">MAKER-P: a tool-kit for the rapid creation, management,
   and quality control of plant genome annotations</a>
-- Download and install [MAKER and MAKER-P](../MAKER.1 "MAKER").
+- Download and install [MAKER and MAKER-P](../MAKER.1).
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/16*
+*Posted to the [GMOD News](../GMOD_News) on 2013/12/16*

@@ -6,7 +6,7 @@ title: "Computing Requirements"
 This page discusses high-level computing requirements and prerequisites
 for implementing GMOD components at your organization. Requirements for
 specific components can be found on [each component's
-page](GMOD_Components "GMOD Components").
+page](/wiki/GMOD_Components).
 
 
 
@@ -54,11 +54,11 @@ candidate has the technical qualifications or not.
 **Installing and Configuring Software**
 
 Most GMOD software relies on well-established programming languages and
-technologies such as [Perl](Category%253APerl "Category%253APerl"), CPAN,
-[Java](Category%253AJava "Category%253AJava"),
-[PostgreSQL](PostgreSQL "PostgreSQL"), [MySQL](MySQL "MySQL"), and
+technologies such as [Perl](/wiki/Category%253APerl), CPAN,
+[Java](/wiki/Category%253AJava),
+[PostgreSQL](/wiki/PostgreSQL), [MySQL](/wiki/MySQL), and
 Apache. There are also a number of packages and systems that are
-specific to bioinformatics, such as [BioPerl](BioPerl "BioPerl"), that
+specific to bioinformatics, such as [BioPerl](/wiki/BioPerl), that
 are required by several GMOD tools. Most operating systems have standard
 ways of installing these packages; your sysadmin should be familiar with
 how to install software and how to diagnose and fix a failed
@@ -168,7 +168,7 @@ input/output rates) can be adjusted as required, and much of the hassle
 and worry of maintaining expensive computer hardware is eliminated.
 <a href="http://wormbase.org" class="external text"
 rel="nofollow">Wormbase</a> serve all their web resources from the
-cloud, and [GMOD in the Cloud](Cloud.1 "Cloud") is a great way to get
+cloud, and [GMOD in the Cloud](/wiki/Cloud.1) is a great way to get
 started with GMOD software without the bother of installation.
 Cost-wise, cloud computing compares very favourably to hosting your own
 hardware, and in terms of flexibility, it cannot be beaten.
@@ -177,7 +177,7 @@ hardware, and in terms of flexibility, it cannot be beaten.
 
 ### Operating System
 
-[Operating system](Glossary#Operating_System "Glossary") (OS) choice is
+[Operating system](/wiki/Glossary#Operating_System) (OS) choice is
 the first decision you will make about your computing platform and it
 impacts all subsequent decisions. The intention here is *not* to start a
 debate on *what rules* or *what stinks*, but rather to advise you on the
@@ -269,5 +269,5 @@ problems.
 Different GMOD components require different software to support them.
 Some require Perl or Java support, a database management system, a web
 server (such as Apache), or any number of other things. See [each
-component](GMOD_Components "GMOD Components") for their specific
+component](/wiki/GMOD_Components) for their specific
 software requirements.

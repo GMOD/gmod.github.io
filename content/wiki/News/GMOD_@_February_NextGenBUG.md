@@ -23,31 +23,31 @@ with GMOD related content.
   transcriptomes**, Alexie Papanicolau, Exeter
   <a href="http://insectacentral.org" class="external text"
   rel="nofollow">InsectaCentral</a> uses [GMOD
-  Components](../GMOD_Components "GMOD Components") (including
+  Components](../GMOD_Components) (including
   <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> and
-  [GBrowse](../GBrowse.1 "GBrowse")) extensively in its infrastructure.
-- **[Galaxy](../Galaxy.1 "Galaxy"): a stairway to
-  [NGS](../Next_Generation_Sequencing "Next Generation Sequencing")
+  [GBrowse](../GBrowse.1)) extensively in its infrastructure.
+- **[Galaxy](../Galaxy.1): a stairway to
+  [NGS](../Next_Generation_Sequencing)
   heaven**, Chris Cole, Dundee
   Chris will be discussing how Dundee uses
-  [Galaxy](../Galaxy.1 "Galaxy") to process their
+  [Galaxy](../Galaxy.1) to process their
   <a href="../Next_generation_sequencing" class="mw-redirect"
   title="Next generation sequencing">next generation sequencing</a>
   data.
 
 There will also be talks by [Dan
-Bolser](../User%253ADanBolser "User%253ADanBolser") of Dundee and Darrol Baker
+Bolser](../User%253ADanBolser) of Dundee and Darrol Baker
 of CLCBio. If you are interested in attending, please
 <a href="http://genepool.bio.ed.ac.uk:16080/nextgenbug/meeting/20100209"
 class="external text" rel="nofollow">add your name to the participants
 list</a>.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/29*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/29*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

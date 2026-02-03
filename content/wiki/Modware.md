@@ -19,9 +19,9 @@ width="300" height="158" alt="Modware" /></a>
 
 <a href="http://gmod-ware.sourceforge.net/" class="external text"
 rel="nofollow">Modware</a> is an object-oriented Perl API for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
 object-oriented querying and loading of a
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database and
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database and
 returns data structures that a programmer can readily use without
 knowing the details of how the object is stored in the relational
 schema.
@@ -40,7 +40,7 @@ feature requests.
 
 - For a wiki-ized version of a presentation done at the GMOD meeting in
   January 2007: [Modware
-  Presentation](Modware_Presentation "Modware Presentation")
+  Presentation](/wiki/Modware_Presentation)
 - For a VERY quick tour of the kinds of things you can do with Modware,
   check out the
   <a href="http://gmod-ware.sourceforge.net/some_use_cases.html"
@@ -48,11 +48,11 @@ feature requests.
 - For detailed documentation on the API, check out the
   <a href="http://gmod-ware.sourceforge.net/doc/" class="external text"
   rel="nofollow">API docs</a>.
-- To download Modware and [CVS](Glossary#CVS "Glossary") access, go to
+- To download Modware and [CVS](/wiki/Glossary#CVS) access, go to
   the <a href="http://sourceforge.net/projects/gmod-ware"
   class="external text" rel="nofollow">Project page</a>.
 - For a general discussion of GMOD Middleware: [GMOD
-  Middleware](GMOD_Middleware "GMOD Middleware")
+  Middleware](/wiki/GMOD_Middleware)
 
 ## Status
 
@@ -65,12 +65,12 @@ using
 rel="nofollow">Moose</a> and
 <a href="http://search.cpan.org/perldoc?DBIx::Class"
 class="external text" rel="nofollow">DBIx::Class</a> (more precisely
-[Bio%253A%253AChado%253A%253ASchema](Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") or BCS)
-[ORM](Glossary#ORM "Glossary"). This part of development is done in sync
+[Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) or BCS)
+[ORM](/wiki/Glossary#ORM). This part of development is done in sync
 with dictyBase's major data migration project which includes literature
 and gene ontology annotations. So, the first release of this new version
 is expected to deal with publication and ontology datasets in
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. Handling of
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. Handling of
 feature module will be added after the first release gets settled down.
 Like any other standard Perl module Modware's public release will be
 available from CPAN and the bleeding edge can be grabbed from
@@ -81,11 +81,11 @@ Relevant documentations and guidelines will also be added to this wiki.
 The first CPAN release is expected to be early next year.
 
 *Siddhartha Basu, Modware developer,
-[dictyBase](Category%253ADictyBase "Category%253ADictyBase"), 2010/10/28*
+[dictyBase](/wiki/Category%253ADictyBase), 2010/10/28*
 
 ## Getting Started
 
-- Install [Chado](Chado_-_Getting_Started "Chado - Getting Started")
+- Install [Chado](/wiki/Chado_-_Getting_Started)
 - Install Modware, and there is an option to `make install_sample` that
   will install the Dictyostelium Genome
 - Explore the API documentation and ask questions to

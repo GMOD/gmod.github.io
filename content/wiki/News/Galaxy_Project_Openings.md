@@ -16,7 +16,7 @@ for highly-motivated, seeking-a-challenge, computationally-savvy,
 biologically-aware
 <a href="http://wiki.galaxyproject.org/GalaxyIsHiring"
 class="external text" rel="nofollow"><strong>software engineers and
-post-docs</strong></a> to work on [Galaxy](../Galaxy.1 "Galaxy"). See
+post-docs</strong></a> to work on [Galaxy](../Galaxy.1). See
 <a href="http://wiki.galaxyproject.org/GalaxyIsHiring"
 class="external text" rel="nofollow">Galaxy wiki for details</a>.
 
@@ -37,9 +37,9 @@ rel="nofollow">any of us</a>, know if you have any questions.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[Galaxy](../Galaxy.1 "Galaxy") Training and Outreach
+[Dave Clements](../User%253AClements)
+[Galaxy](../Galaxy.1) Training and Outreach
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/25*
+*Posted to the [GMOD News](../GMOD_News) on 2013/01/25*

@@ -6,7 +6,7 @@ title: "News/GMOD Europe 2010"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/160px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/240px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
-width="160" height="137" alt="GMOD Europe 2010" />](../GMOD_Europe_2010 "GMOD Europe 2010")
+width="160" height="137" alt="GMOD Europe 2010" />](../GMOD_Europe_2010)
 
 <a href="../InterMine_Workshop_-_GMOD_Europe_2010" rel="nofollow"
 title="InterMine Workshop"><img
@@ -21,10 +21,10 @@ width="170" height="67" alt="BioMart Workshop" /></a>
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/150px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/225px-Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
-width="150" height="128" alt="September 2010 GMOD Meeting" />](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
+width="150" height="128" alt="September 2010 GMOD Meeting" />](../September_2010_GMOD_Meeting)
 
 We are pleased to announce *[GMOD Europe
-2010](../GMOD_Europe_2010 "GMOD Europe 2010")*, four days of GMOD events
+2010](../GMOD_Europe_2010)*, four days of GMOD events
 being held 13-16 September 2010, at the University of Cambridge. GMOD
 Europe 2010 includes:
 
@@ -92,35 +92,35 @@ href="../Glossary#API" title="Glossary">APIs</a>.</td>
 </table>
 
 [Registration is now
-open](../GMOD_Europe_2010#Registration "GMOD Europe 2010") for these
+open](../GMOD_Europe_2010#Registration) for these
 events. There is a £50 registration fee for the [GMOD
-Meeting](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
+Meeting](../September_2010_GMOD_Meeting)
 to cover catered lunches, coffee/tee breaks, and other expenses.
 Registration for all other events is free. Please register soon, as
 space is limited.
 
 See you in Cambridge!
 
-[Scott Cain](../User%253AScott "User%253AScott") and [Dave
-Clements](../User%253AClements "User%253AClements")
+[Scott Cain](../User%253AScott) and [Dave
+Clements](../User%253AClements)
 
 *PS: If you have topics you want to have covered (or you want to cover)
 at the [GMOD
-Meeting](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting"),
+Meeting](../September_2010_GMOD_Meeting),
 or at the [Satellite
-Meetings](../Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010"),
+Meetings](../Satellite_Meetings_-_GMOD_Europe_2010),
 please add them to the
-[meeting](../September_2010_GMOD_Meeting#Agenda_Proposals "September 2010 GMOD Meeting")
+[meeting](../September_2010_GMOD_Meeting#Agenda_Proposals)
 page, or to the [Satellite
-Meetings](../Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
+Meetings](../Satellite_Meetings_-_GMOD_Europe_2010)
 list, or <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">contact us</a>. We are also looking for [guest speaker
-nominations](../September_2010_GMOD_Meeting#Guest_Speaker_Nominations "September 2010 GMOD Meeting")
+nominations](../September_2010_GMOD_Meeting#Guest_Speaker_Nominations)
 for the meeting.*
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/08/04*
+*Posted to the [GMOD News](../GMOD_News) on 2010/08/04*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

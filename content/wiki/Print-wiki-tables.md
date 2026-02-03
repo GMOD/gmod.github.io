@@ -5,7 +5,7 @@ title: "Print-wiki-tables"
 
 The process described on this page is obsolete. The process described on
 [Chado Schema Documentation
-HOWTO](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+HOWTO](/wiki/Chado_Schema_Documentation_HOWTO)
 is the the current one. This page should be deleted once the new process
 has been fully adopted.
 

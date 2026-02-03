@@ -130,7 +130,7 @@ committed to the development of a diverse workforce.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/05/16*
+*Posted to the [GMOD News](../GMOD_News) on 2012/05/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

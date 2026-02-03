@@ -10,7 +10,7 @@ height="105" alt="Sample ballon.png" />
 **balloon.js** is a javascript class for balloon tooltips, otherwise
 known as popup balloons, bubble tooltips, rollover tooltips, etc. It is
 maintained by <span class="pops">[Sheldon
-McKay](User%253AMckays "User%253AMckays")</span>, a scientist at the
+McKay](/wiki/User%253AMckays)</span>, a scientist at the
 <span class="pops"><a href="http://dnalc.org" class="external text" rel="nofollow">DNA
 Learning center</a></span>,
 <span class="pops"><a href="http://www.cshl.edu" class="external text" rel="nofollow">Cold
@@ -330,7 +330,7 @@ alt="Howitworks.png" />
 #### Design your own images
 
 - See
-  [below](Popup_Balloons#Online_balloon_image_generator "Popup Balloons")
+  [below](/wiki/Popup_Balloons#Online_balloon_image_generator)
   for a script that will draw balloon images according to your
   specifications.
 
@@ -486,7 +486,7 @@ alt="The actual script is at http://mckay.cshl.edu/balloon" />
 
 This section describes javascript configuration. To configure balloon
 tooltips in GBrowse, see [Configuring Balloon
-Tooltips](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
+Tooltips](/wiki/GBrowse_Configuration/Balloons).
 
 - The balloon.js library offers default configuration settings that
   should work "out of the box", as long as the components are installed
@@ -498,7 +498,7 @@ Tooltips](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
   and appearance.
   - Note: if you do not install your balloon images in the default
     location 'images/balloons', the you will need to [make some
-    adjustments](Popup_Balloons#Balloon_image_locations "Popup Balloons").
+    adjustments](/wiki/Popup_Balloons#Balloon_image_locations).
 - Any of the default settings shown below can be overridden via a script
   in the body section of your HTML.
 
@@ -806,26 +806,26 @@ dimensions.
 
 A simple message
 
-     <a href="someURL" onmouseover="balloon.showTooltip(event,'Some text...')">Link</a>
+     <a href="/wiki/someURL" onmouseover="balloon.showTooltip(event,'Some text...')">Link</a>
 
 A sticky balloon
 
-     <a href="someURL" onmouseover="balloon.showTooltip(event,'Some text...',1)">Link</a>
+     <a href="/wiki/someURL" onmouseover="balloon.showTooltip(event,'Some text...',1)">Link</a>
 
 A sticky balloon that is 250px wide
 
-     <a href="someURL" onmouseover="balloon.showTooltip(event,'Some text...',1,250)">Link</a>
+     <a href="/wiki/someURL" onmouseover="balloon.showTooltip(event,'Some text...',1,250)">Link</a>
 
 A non-sticky balloon that is 150px wide
 
-     <a href="someURL" onmouseover="balloon.showTooltip(event,'Some text...',0,150)">Link</a>
+     <a href="/wiki/someURL" onmouseover="balloon.showTooltip(event,'Some text...',0,150)">Link</a>
 
 A balloon that has its content stored in a \
 
       Your message goes here.  It may be long and have lots of HTML markup,
       forms, images, etc...
 
-     <a href="someURL" onmouseover="balloon.showTooltip(event,'load:contents1',1,250)">Link</a>
+     <a href="/wiki/someURL" onmouseover="balloon.showTooltip(event,'load:contents1',1,250)">Link</a>
 
 A balloon that contains another website loaded via an iframe
 
@@ -845,7 +845,7 @@ syntax.
      <span onmouseover="balloon.showTooltip(event,'<img src=\'myImage\' />')">Mouseover text</span>
 
 - A link and popup with an image inside the balloon
-     <a href="http:/some.site.org" onmouseover="balloon.showTooltip(event,'<img src=\'myImage\' />')">Link</a>
+     <a href="/wiki/http:/some.site.org" onmouseover="balloon.showTooltip(event,'<img src=\'myImage\' />')">Link</a>
 
 - A sticky balloon that has an image (that is a link) in the balloon
      <span onclick="balloon.showTooltip(event,'<a href=\'http:/some.site.org\'><img src=\'myImage\' /></a>',1)">
@@ -858,7 +858,7 @@ syntax.
      </span>
 
      <span id="myImageLink" style="display:none">
-      <a href="http:/some.site.org">
+      <a href="/wiki/http:/some.site.org">
         <img src="myImage" />
       </a>
      </span>

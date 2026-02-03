@@ -5,9 +5,9 @@ title: "Chado Library Module"
 
 The library module is designed to store detailed information about
 molecular libraries. The library module uses the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module"), thus the library
+module](/wiki/Chado_Sequence_Module), thus the library
 in question could be any collection of sequences that the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module") can describe. It
+module](/wiki/Chado_Sequence_Module) can describe. It
 is expected that most of the description of a given library would come
 through the use of ontology terms.
 
@@ -128,7 +128,7 @@ Heidelberg RNAi) by genes hit by the screens. Initially the plan is to
 store the dsRNA primers and amplicons with there chromosomal locations
 mapped to the current release. The goal is to link the libraries, dsRNA
 amplicons with genes and
-[phenotypes](Category%253APhenotypes "Category%253APhenotypes").
+[phenotypes](/wiki/Category%253APhenotypes).
 
 - dsRNA library: contains collections of dsRNA amplicons, primarily from
   the screening centers. Currently it holds the DRSC collection.
@@ -210,7 +210,7 @@ _library_feature_ table.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_organism"
+<td><p><a href="/wiki/Chado_Tables#Table:_organism"
 title="Chado Tables">organism</a></p></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -229,7 +229,7 @@ title="Chado Tables">organism</a></p></td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -246,11 +246,11 @@ library Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-- [library_feature](Chado_Tables#Table:_library_feature "Chado Tables")
-- [library_pub](Chado_Tables#Table:_library_pub "Chado Tables")
-- [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
-- [libraryprop](Chado_Tables#Table:_libraryprop "Chado Tables")
+- [library_cvterm](/wiki/Chado_Tables#Table:_library_cvterm)
+- [library_feature](/wiki/Chado_Tables#Table:_library_feature)
+- [library_pub](/wiki/Chado_Tables#Table:_library_pub)
+- [library_synonym](/wiki/Chado_Tables#Table:_library_synonym)
+- [libraryprop](/wiki/Chado_Tables#Table:_libraryprop)
 
 ---
 
@@ -260,7 +260,7 @@ The table library_cvterm links a library to controlled vocabularies
 which describe the library. For instance, there might be a link to the
 anatomy cv for "head" or "testes" for a head or testes library.
 
-| F-Key                                                 | Name              | Type    | Description         | ----------------------------------------------------- | ----------------- | ------- | ------------------- |                                                       | library_cvterm_id | serial  | _PRIMARY KEY_       | [library](Chado_Tables#Table:_library "Chado Tables") | library_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")   | cvterm_id         | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")         | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name              | Type    | Description         | ----------------------------------------------------- | ----------------- | ------- | ------------------- |                                                       | library_cvterm_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)   | cvterm_id         | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id            | integer | _UNIQUE#1 NOT NULL_ |
 
 library_cvterm Structure
 
@@ -272,7 +272,7 @@ library_feature links a library to the clones which are contained in the
 library. Examples of such linked features might be "cDNA_clone" or
 "genomic_clone".
 
-| F-Key                                                 | Name               | Type    | Description         | ----------------------------------------------------- | ------------------ | ------- | ------------------- |                                                       | library_feature_id | serial  | _PRIMARY KEY_       | [library](Chado_Tables#Table:_library "Chado Tables") | library_id         | integer | _UNIQUE#1 NOT NULL_ | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name               | Type    | Description         | ----------------------------------------------------- | ------------------ | ------- | ------------------- |                                                       | library_feature_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id         | integer | _UNIQUE#1 NOT NULL_ | [feature](/wiki/Chado_Tables#Table:_feature) | feature_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 library_feature Structure
 
@@ -280,7 +280,7 @@ library_feature Structure
 
 ## Table: library_pub
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | library_pub_id | serial  | _PRIMARY KEY_       | [library](Chado_Tables#Table:_library "Chado Tables") | library_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](Chado_Tables#Table:_pub "Chado Tables")         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | library_pub_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id     | integer | _UNIQUE#1 NOT NULL_ | [pub](/wiki/Chado_Tables#Table:_pub)         | pub_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 library_pub Structure
 
@@ -312,21 +312,21 @@ library_pub Structure
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_synonym"
+<td><p><a href="/wiki/Chado_Tables#Table:_synonym"
 title="Chado Tables">synonym</a></p></td>
 <td>synonym_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_library"
+<td><p><a href="/wiki/Chado_Tables#Table:_library"
 title="Chado Tables">library</a></p></td>
 <td>library_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_pub"
+<td><p><a href="/wiki/Chado_Tables#Table:_pub"
 title="Chado Tables">pub</a></p></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -368,7 +368,7 @@ library_synonym Structure
 
 ## Table: libraryprop
 
-| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | libraryprop_id | serial  | _PRIMARY KEY_       | [library](Chado_Tables#Table:_library "Chado Tables") | library_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")   | type_id        | integer | _UNIQUE#1 NOT NULL_ |                                                       | value          | text    | rank           | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                 | Name           | Type    | Description         | ----------------------------------------------------- | -------------- | ------- | ------------------- |                                                       | libraryprop_id | serial  | _PRIMARY KEY_       | [library](/wiki/Chado_Tables#Table:_library) | library_id     | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)   | type_id        | integer | _UNIQUE#1 NOT NULL_ |                                                       | value          | text    | rank           | integer | _UNIQUE#1 NOT NULL_ |
 
 libraryprop Structure
 

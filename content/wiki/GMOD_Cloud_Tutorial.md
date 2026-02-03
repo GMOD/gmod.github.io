@@ -3,7 +3,7 @@ title: "GMOD Cloud Tutorial"
 ---
 # GMOD Cloud Tutorial
 
-See also the [AWS walkthrough](AWS_walkthrough "AWS walkthrough"), a
+See also the [AWS walkthrough](/wiki/AWS_walkthrough), a
 screenshot guide to registering with Amazon Web Services, setting up a
 GMOD in the Cloud instance, connecting to it using SSH, and shutting
 down.

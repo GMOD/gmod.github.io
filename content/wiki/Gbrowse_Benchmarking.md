@@ -7,7 +7,7 @@ title: "Gbrowse Benchmarking"
 
 The following recipe shows how to use existing options, such as
 **head**, **html2**, etc., to add javascript functionality to
-[GBrowse](GBrowse.1 "GBrowse") via the configuration file. This example
+[GBrowse](/wiki/GBrowse.1) via the configuration file. This example
 is used for benchmarking page loading and image generation.
 
 

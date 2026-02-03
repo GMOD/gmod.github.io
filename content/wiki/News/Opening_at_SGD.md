@@ -23,13 +23,13 @@ SGD, knowledge of new experimental methodology, large genomic datasets
 and their computational analysis, and bioinformatic analysis of data
 types such as RNA transcription and second-generation sequencing.
 Experience with [comparative
-genomics](../Comparative_Genomics "Comparative Genomics") is also
+genomics](../Comparative_Genomics) is also
 desirable.
 
 SGD is both a GMOD contributor (*e.g.*, [BLAST Graphic
-Viewer](../BLAST_Graphic_Viewer.1 "BLAST Graphic Viewer")) and GMOD
+Viewer](../BLAST_Graphic_Viewer.1)) and GMOD
 user, and this position will work with the
-[GBrowse](../GBrowse.1 "GBrowse") genome viewer as well as other GMOD
+[GBrowse](../GBrowse.1) genome viewer as well as other GMOD
 tools.
 
 See the <a href="http://jobs.stanford.edu" class="external text"
@@ -39,7 +39,7 @@ class="external text" rel="nofollow">36125</a>) for more.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/20*
+*Posted to the [GMOD News](../GMOD_News) on 2009/10/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

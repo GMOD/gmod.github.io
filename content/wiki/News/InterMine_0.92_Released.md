@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/InterMine.png 2x"
 width="180" height="49" alt="InterMine Release Notes" /></a>
 
-We have released version 0.92 of [InterMine](../InterMine "InterMine").
+We have released version 0.92 of [InterMine](../InterMine).
 
 The main changes are some improvements to the way integration keys and
 priorities are configured and validated, a BioPax parser, performance
@@ -32,7 +32,7 @@ The InterMine team.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/23*
+*Posted to the [GMOD News](../GMOD_News) on 2009/11/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

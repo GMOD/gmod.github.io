@@ -10,16 +10,16 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/375px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/500px-GalaxyLogoBigger.png 2x"
 width="250" height="89" alt="Galaxy" />
 
-This [Galaxy](Galaxy.1 "Galaxy") tutorial was presented by [James
-Taylor](User%253AJamesTaylor "User%253AJamesTaylor") at the [2010 GMOD Summer
+This [Galaxy](/wiki/Galaxy.1) tutorial was presented by [James
+Taylor](/wiki/User%253AJamesTaylor) at the [2010 GMOD Summer
 School -
-Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas"),
+Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Galaxy tutorial can be found at the
-<a href="Galaxy_Tutorial" class="mw-redirect"
+<a href="/wiki/Galaxy_Tutorial" class="mw-redirect"
 title="Galaxy Tutorial">Galaxy Tutorial</a> page.
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
-through setting up and running a [Galaxy](Galaxy.1 "Galaxy") server.
+This [tutorial](/wiki/Category%253ATutorials) walks you
+through setting up and running a [Galaxy](/wiki/Galaxy.1) server.
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -117,10 +117,8 @@ and install the start image (below). See VMware for what
 software you need to use a VMware system image and for directions on how
 to get the image up and running on your machine.
 
-Download the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
-class="external text" rel="nofollow">start image</a> and the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
+Download the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
+class="external text" rel="nofollow">start image</a> and the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
 class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
@@ -134,7 +132,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
+This [tutorial](/wiki/Category%253ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -304,7 +302,7 @@ height="791" alt="Galaxy FirstAnalysis 2.png" />
 
 The dataset we uploaded is a generic tabular data file (dumped out of
 the UCSC browser, not in any particular feature format like BED or
-[GFF](GFF "GFF")). However, it is feature data, meaning that each row
+[GFF](/wiki/GFF)). However, it is feature data, meaning that each row
 represents a location on a genome. To let Galaxy know about this, click
 the **pencil icon** in the dataset's history entry to show the dataset
 attributes interface. Under **Change Datatype** set **New Type** to
@@ -326,7 +324,7 @@ height="791" alt="Galaxy FirstAnalysis 3.png" />
 Another major way to pull data into Galaxy is through interfaces with
 external data providers. Several of these are pre-configured out of the
 box, including interfaces to the UCSC Table Browser and
-[BioMart](BioMart "BioMart"). Here we will pull gene annotations from
+[BioMart](/wiki/BioMart). Here we will pull gene annotations from
 UCSC.
 
 In the **Tools** panel, select **Get Data** → **UCSC Main Table
@@ -522,7 +520,7 @@ Galaxy to run with zero-configuration and provides an excellent solution
 for single-user Galaxy's being used for tool development. However, for
 any multi-user scenario a more robust database will be needed for Galaxy
 to be reliable. We **highly** recommend
-[Postgres](PostgreSQL "PostgreSQL"), although other database are known
+[Postgres](/wiki/PostgreSQL), although other database are known
 to work.
 
 Postgres is already installed on our VM image, and the gmod user has
@@ -1053,4 +1051,4 @@ are some pointers for learning more:
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Galaxy](Galaxy.1 "Galaxy") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Galaxy](/wiki/Galaxy.1) |

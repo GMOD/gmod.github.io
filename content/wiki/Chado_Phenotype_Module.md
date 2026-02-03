@@ -23,7 +23,7 @@ evolutionary science</a> presentation discusses the Phenotype module.
 
 ## Table: feature_phenotype
 
-| F-Key                                                     | Name                 | Type    | Description         | --------------------------------------------------------- | -------------------- | ------- | ------------------- |                                                           | feature_phenotype_id | serial  | _PRIMARY KEY_       | [feature](Chado_Tables#Table:_feature "Chado Tables")     | feature_id           | integer | _UNIQUE#1 NOT NULL_ | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id         | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                     | Name                 | Type    | Description         | --------------------------------------------------------- | -------------------- | ------- | ------------------- |                                                           | feature_phenotype_id | serial  | _PRIMARY KEY_       | [feature](/wiki/Chado_Tables#Table:_feature)     | feature_id           | integer | _UNIQUE#1 NOT NULL_ | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id         | integer | _UNIQUE#1 NOT NULL_ |
 
 feature_phenotype Structure
 
@@ -65,7 +65,7 @@ function. E.g. Obs=eye, attribute=color, cvalue=red.
 <td><em>UNIQUE NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>observable_id</td>
 <td>integer</td>
@@ -74,7 +74,7 @@ title="Chado Tables">cvterm</a></p></td>
 The entity: e.g. anatomy_part, biological_process.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>attr_id</td>
 <td>integer</td>
@@ -93,7 +93,7 @@ Value of attribute - unconstrained free text. Used only if cvalue_id is
 not appropriate.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>cvalue_id</td>
 <td>integer</td>
@@ -102,7 +102,7 @@ title="Chado Tables">cvterm</a></p></td>
 Phenotype attribute value (state).</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>assay_id</td>
 <td>integer</td>
@@ -117,17 +117,17 @@ phenotype Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [feature_phenotype](Chado_Tables#Table:_feature_phenotype "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenotype_cvterm](Chado_Tables#Table:_phenotype_cvterm "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-- [wwwuser_phenotype](Chado_Tables#Table:_wwwuser_phenotype "Chado Tables")
+- [feature_phenotype](/wiki/Chado_Tables#Table:_feature_phenotype)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenotype_cvterm](/wiki/Chado_Tables#Table:_phenotype_cvterm)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
+- [wwwuser_phenotype](/wiki/Chado_Tables#Table:_wwwuser_phenotype)
 
 ---
 
 ## Table: phenotype_cvterm
 
-| F-Key                                                     | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phenotype_cvterm_id | serial  | _PRIMARY KEY_       | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")       | cvterm_id           | integer | _UNIQUE#1 NOT NULL_ |
+| F-Key                                                     | Name                | Type    | Description         | --------------------------------------------------------- | ------------------- | ------- | ------------------- |                                                           | phenotype_cvterm_id | serial  | _PRIMARY KEY_       | [phenotype](/wiki/Chado_Tables#Table:_phenotype) | phenotype_id        | integer | _UNIQUE#1 NOT NULL_ | [cvterm](/wiki/Chado_Tables#Table:_cvterm)       | cvterm_id           | integer | _UNIQUE#1 NOT NULL_ |
 
 phenotype_cvterm Structure
 

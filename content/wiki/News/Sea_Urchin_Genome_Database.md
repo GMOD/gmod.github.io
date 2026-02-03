@@ -30,7 +30,7 @@ Andy Cameron
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/04/08*
+*Posted to the [GMOD News](../GMOD_News) on 2008/04/08*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

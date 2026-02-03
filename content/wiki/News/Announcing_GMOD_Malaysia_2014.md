@@ -10,24 +10,24 @@ cover the following tools:
 
 - <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
   database schema
-- [GBrowse](../GBrowse.1 "GBrowse") genome browser
-- [Galaxy](../Galaxy.1 "Galaxy") workflow generator
+- [GBrowse](../GBrowse.1) genome browser
+- [Galaxy](../Galaxy.1) workflow generator
 - <a href="../Intermine" class="mw-redirect"
   title="Intermine">Intermine</a> data warehouse
-- [JBrowse](../JBrowse.1 "JBrowse") genome browser
-- [MAKER](../MAKER.1 "MAKER") and MAKER-P genome annotation pipeline
-- [Tripal](../Tripal.1 "Tripal") website/database interface
+- [JBrowse](../JBrowse.1) genome browser
+- [MAKER](../MAKER.1) and MAKER-P genome annotation pipeline
+- [Tripal](../Tripal.1) website/database interface
 
 Date: February 26-28, 2014
 
 Venue: Kuala Lumpur, Malaysia.
 
 Please check the [GMOD Malaysia
-2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014") wiki page for
+2014](../GMOD_Malaysia_2014.1) wiki page for
 updates, or email the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a> for more information.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/28*
+*Posted to the [GMOD News](../GMOD_News) on 2013/12/28*

@@ -5,7 +5,7 @@ title: "News/WebGBrowse Has Arrived"
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> - A Web Server for
-[GBrowse](../GBrowse.1 "GBrowse") Configuration Made Easy
+[GBrowse](../GBrowse.1) Configuration Made Easy
 
 <a href="http://webgbrowse.cgb.indiana.edu/" rel="nofollow"
 title="WebGBrowse at the Center for Genomics and Bioinformatics"><img
@@ -14,7 +14,7 @@ alt="WebGBrowse at the Center for Genomics and Bioinformatics" /></a>
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
 rel="nofollow">WebGBrowse</a> is a web site that guides users through
-the process of creating a [GBrowse](../GBrowse.1 "GBrowse")
+the process of creating a [GBrowse](../GBrowse.1)
 configuration file and then shows them how their data renders with that
 configuration. Users can
 <a href="../GBrowse_Configuration_HOWTO" class="mw-redirect"
@@ -25,7 +25,7 @@ select the glyph to use
 (<a href="http://webgbrowse.cgb.indiana.edu/webgbrowse/glyphdoc.html"
 class="external text" rel="nofollow">over 40 glyphs are currently
 supported</a>), and are then prompted for that glyph's settings. Data is
-provided by uploading a [GFF3](../GFF3 "GFF3") file.
+provided by uploading a [GFF3](../GFF3) file.
 
 WebGBrowse has an extensive
 <a href="http://webgbrowse.cgb.indiana.edu/webgbrowse/tutorial.html"
@@ -44,19 +44,19 @@ rel="nofollow">The Center for Genomics and Bioinformatics (CGB)</a> at
 <a href="http://www.indaina.edu" class="external text"
 rel="nofollow">Indiana University - Bloomington</a>. WebGBrowse was
 first presented by Ram Podicheti at the [January 2009 GMOD
-Meeting](../January_2009_GMOD_Meeting#WebGBrowse:_GBrowse_Configuration_Management "January 2009 GMOD Meeting").
+Meeting](../January_2009_GMOD_Meeting#WebGBrowse:_GBrowse_Configuration_Management).
 
 WebGBrowse is an excellent way to get started with GBrowse, and to learn
 what glyphs are available, and what options each glyph supports. Please
 <a href="mailto:biohelp@cgb.indiana.edu" class="external text"
 rel="nofollow">contact the CGB</a> if you have any questions.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/04/22*
+*Posted to the [GMOD News](../GMOD_News) on 2009/04/22*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

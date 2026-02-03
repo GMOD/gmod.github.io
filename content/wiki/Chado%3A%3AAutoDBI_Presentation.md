@@ -88,7 +88,7 @@ Turnkey::Model::DBI->set_db('Main', $dsn, $name, $pass, {AutoCommit => 1});
 
 ##### Technical Overview
 
-- Basic [ORM](Glossary#ORM "Glossary") Object: Feature
+- Basic [ORM](/wiki/Glossary#ORM) Object: Feature
 
 ``` de1
 package Turnkey::Model::Feature;

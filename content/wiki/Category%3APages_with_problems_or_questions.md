@@ -11,17 +11,17 @@ The following 6 pages are in this category, out of 6 total.
 
 ### C
 
-- [Chado Best Practices](Chado_Best_Practices "Chado Best Practices")
-- [Chado Django HOWTO](Chado_Django_HOWTO "Chado Django HOWTO")
+- [Chado Best Practices](/wiki/Chado_Best_Practices)
+- [Chado Django HOWTO](/wiki/Chado_Django_HOWTO)
 
 ### I
 
 - [Installing GBrowse2 in your Home
-  Directory](Installing_GBrowse2_in_your_Home_Directory "Installing GBrowse2 in your Home Directory")
-- [Introduction to Chado](Introduction_to_Chado "Introduction to Chado")
+  Directory](/wiki/Installing_GBrowse2_in_your_Home_Directory)
+- [Introduction to Chado](/wiki/Introduction_to_Chado)
 - [Talk:Introduction to
-  Chado](Talk%253AIntroduction_to_Chado "Talk:Introduction to Chado")
+  Chado](/wiki/Talk%253AIntroduction_to_Chado)
 
 ### S
 
-- [Spectrogram.pm](Spectrogram.pm "Spectrogram.pm")
+- [Spectrogram.pm](/wiki/Spectrogram.pm)

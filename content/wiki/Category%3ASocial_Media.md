@@ -9,7 +9,7 @@ This category contains only the following page.
 
 ### N
 
-- [News/GMOD is tweeting](News/GMOD_is_tweeting "News/GMOD is tweeting")
+- [News/GMOD is tweeting](/wiki/News/GMOD_is_tweeting)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253ASocial_Media](/wiki/Category%253ASocial_Media)"

@@ -9,17 +9,17 @@ title: "Artemis-Chado Integration Tutorial"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Artemis_logo.gif" width="250" height="159"
 alt="Artemis" />
 
-This [Artemis-Chado Integration](Artemis "Artemis") tutorial was
-presented by [Robin Houston](User%253ARobinHouston "User%253ARobinHouston"),
-[Tim Carver](User%253ATimCarver "User%253ATimCarver") and [Giles
-Velarde](User%253ABuggy "User%253ABuggy") at the 2009 GMOD Summer School -
+This [Artemis-Chado Integration](/wiki/Artemis) tutorial was
+presented by [Robin Houston](/wiki/User%253ARobinHouston),
+[Tim Carver](/wiki/User%253ATimCarver) and [Giles
+Velarde](/wiki/User%253ABuggy) at the 2009 GMOD Summer School -
 Europe, August 2009. The most recent Artemis tutorial can be found at
-the <a href="Artemis_Tutorial" class="mw-redirect"
+the <a href="/wiki/Artemis_Tutorial" class="mw-redirect"
 title="Artemis Tutorial">Artemis Tutorial</a> page.
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
+This [tutorial](/wiki/Category%253ATutorials) walks you
 through how to use the Artemis annotation editor with a
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 
 ## VMware
 
@@ -76,7 +76,7 @@ alt="Pk6 Pf10 Pk8.gif" />
 
 ## Writing Out Sequence Files
 
-Artemis can write out EMBL and [GFF](GFF "GFF") files for an entry
+Artemis can write out EMBL and [GFF](/wiki/GFF) files for an entry
 opened from the database. You can optionally flatten the gene model
 (i.e. gene, transcript, exon) to just a CDS feature. Also an option is
 given to ignore any obsolete features. For EMBL it uses mappings for
@@ -121,4 +121,4 @@ class="external text" rel="nofollow">artemis-user</a>.
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Artemis](/wiki/Artemis) |

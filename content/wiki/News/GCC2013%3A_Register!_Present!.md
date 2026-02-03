@@ -76,4 +76,4 @@ class="external text" rel="nofollow">get the word out</a>!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/02/24*
+*Posted to the [GMOD News](../GMOD_News) on 2013/02/24*

@@ -7,8 +7,8 @@ title: "PrimerDesigner.pm"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/PrimerDesigner.png" width="406"
 height="161" alt="PrimerDesigner.png" />
 
-PrimerDesigner is a [GBrowse](GBrowse.1 "GBrowse") plugin, written by
-[Sheldon McKay](User%253AMckays "User%253AMckays"), that uses use the
+PrimerDesigner is a [GBrowse](/wiki/GBrowse.1) plugin, written by
+[Sheldon McKay](/wiki/User%253AMckays), that uses use the
 <a href="http://primer3.sourceforge.net" class="external text"
 rel="nofollow">primer3</a> program to design PCR primers for selected
 regions within the genome browser. Please feel free to <a
@@ -157,11 +157,11 @@ height="198" alt="Uh oh.png" />
 ## How to install the PrimerDesigner plugin
 
 First of all, you will need to
-<a href="Gbrowse.1#Installation" class="mw-redirect"
+<a href="/wiki/Gbrowse.1#Installation" class="mw-redirect"
 title="Gbrowse">install GBrowse</a>, with all of its prerequisites, such
-as <a href="Bioperl#BioPerl_Background" class="mw-redirect"
+as <a href="/wiki/Bioperl#BioPerl_Background" class="mw-redirect"
 title="Bioperl">BioPerl</a> and
-[Bio::Graphics](News/BioGraphics_now_at_gmod.org "News/BioGraphics now at gmod.org")
+[Bio::Graphics](/wiki/News/BioGraphics_now_at_gmod.org)
 
 ### Dependencies
 
@@ -283,8 +283,8 @@ are amplified by the primer pair.
 You must check the site to see if there is a genome sequence for you
 species and modify the above example accordingly
 
-## PrimerDesigner and [GBrowse](GBrowse.1 "GBrowse") 2
+## PrimerDesigner and [GBrowse](/wiki/GBrowse.1) 2
 
 The PrimerDesigner plugin does not work with
-[GBrowse](GBrowse.1 "GBrowse") 2.00. Work is currently underway to fix
+[GBrowse](/wiki/GBrowse.1) 2.00. Work is currently underway to fix
 this before the next release of GBrowse.

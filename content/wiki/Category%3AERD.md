@@ -5,7 +5,7 @@ title: "Category%253AERD"
 
 Entity-Relationship Diagrams for GMOD (and thus mostly if not entirely
 [Category%253AChado
-Modules](Category%253AChado_Modules "Category%253AChado Modules")).
+Modules](/wiki/Category%253AChado_Modules)).
 
 ## Media in category "ERD"
 
@@ -27,7 +27,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [ChadoComparativeModule...](File:ChadoComparativeModule.png "File:ChadoComparativeModule.png")
+  [ChadoComparativeModule...](/wiki/File:ChadoComparativeModule.png)
   325 KB
 
 
@@ -50,7 +50,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [ChadoMod-Companalysis.png](File:ChadoMod-Companalysis.png "File:ChadoMod-Companalysis.png")
+  [ChadoMod-Companalysis.png](/wiki/File:ChadoMod-Companalysis.png)
   93 KB
 
 
@@ -73,7 +73,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [Feature-tables.png](File:Feature-tables.png "File:Feature-tables.png")
+  [Feature-tables.png](/wiki/File:Feature-tables.png)
   82 KB
 
 
@@ -97,7 +97,7 @@ The following 5 files are in this category, out of 5 total.
 
 
   [Natdiv simplified
-  SGN.png](File:Natdiv_simplified_SGN.png "File:Natdiv simplified SGN.png")
+  SGN.png](/wiki/File:Natdiv_simplified_SGN.png)
   263 KB
 
 
@@ -120,5 +120,5 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [Rad-query-1.png](File:Rad-query-1.png "File:Rad-query-1.png")
+  [Rad-query-1.png](/wiki/File:Rad-query-1.png)
   71 KB

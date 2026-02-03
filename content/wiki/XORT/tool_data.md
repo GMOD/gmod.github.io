@@ -9,9 +9,9 @@ Middleware \| os = linux, unix \| logo = \| home =
 <a href="../XORT.1" class="external free"
 rel="nofollow">http://gmod.org/wiki/XORT</a> \| about = XORT is a
 utility written in Perl that can be used to read to and write from a
-[relational](../Glossary#Relational "Glossary")
-[schema](../Glossary#Schema "Glossary") using
-[XML](../Glossary#XML "Glossary") as an interchange format. In GMOD XORT
+[relational](../Glossary#Relational)
+[schema](../Glossary#Schema) using
+[XML](../Glossary#XML) as an interchange format. In GMOD XORT
 is frequently used to transfer data to and from
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 
@@ -47,14 +47,14 @@ getting_started_preamble = \| req =
   class="external text" rel="nofollow">Loading Chado Using XORT and
   Chado-XML</a>
 - [File:XORTSpecification
-  0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf "File:XORTSpecification 0.pdf")
+  0.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/XORTSpecification_0.pdf)
 
 \| papers = \| presentations =
 
 - [Presentation on XORT by Pinglei
-  Zhou](../XORT_Presentation "XORT Presentation")
+  Zhou](../XORT_Presentation)
 - [Comparison of XORT and Hibernate for Chado
-  reporting](../Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of XORT and Hibernate for Chado reporting")
+  reporting](../Comparison_of_XORT_and_Hibernate_for_Chado_reporting)
 
 \| tutorials = \| wild_urls = \| mail = There is no mailing list for
 XORT; please direct queries to the
@@ -66,7 +66,7 @@ rel="nofollow">Pinglei Zhou</a>. \| logo_info = \| dev_ppl =
 rel="nofollow">FlyBase at Harvard</a> \| dev_status = \| contact_email =
 zhou@morgan.harvard.edu \| formats = \| see_also =
 
-Note that [GMODTools](../GMODTools "GMODTools") offers an alternative
+Note that [GMODTools](../GMODTools) offers an alternative
 approach to bulk uploads and downloads from a Chado database.
 
   DBStag](#DBStag)
@@ -80,12 +80,12 @@ approach to bulk uploads and downloads from a Chado database.
 
 ### DBStag
 
-The [DBStag](../DBStag "DBStag") XML\<-\>SQL API implements the XORT
+The [DBStag](../DBStag) XML\<-\>SQL API implements the XORT
 spec for bulkloading of data; it does not support the dump spec
 
 ### Chado-XML
 
-[Chado XML](../Chado_XML "Chado XML") is a direct mapping of the
+[Chado XML](../Chado_XML) is a direct mapping of the
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 relational schema into XML.
 
@@ -97,7 +97,7 @@ Distributed as part of
 <a href="http://search.cpan.org/~cmungall/go-perl/"
 class="external text" rel="nofollow">go-perl</a>. Takes any obo file and
 exports as Chado-XML. Can be loaded using XML::Xort or
-[DBStag](../DBStag "DBStag")
+[DBStag](../DBStag)
 
 Status: Stable
 

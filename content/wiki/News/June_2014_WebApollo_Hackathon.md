@@ -18,7 +18,7 @@ Laboratory. Building 74 (B74)</a>, Room 104. 1 Cyclotron Rd, Berkeley,
 CA 94720
 
 **What**: five days of intensive, collaborative
-[WebApollo](../WebApollo.1 "WebApollo") development!
+[WebApollo](../WebApollo.1) development!
 
 For five days developers will work on new features of interest to their
 research communities, improve existing features, and collaborate on
@@ -49,4 +49,4 @@ class="external text" rel="nofollow">WebApollo Hackathon information</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014-04-22*
+*Posted to the [GMOD News](../GMOD_News) on 2014-04-22*

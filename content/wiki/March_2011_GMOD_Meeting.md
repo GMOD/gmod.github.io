@@ -15,14 +15,14 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="300" height="153" alt="March2011GMODMeeting.jpg" />
 
 
-This [GMOD community meeting](Meetings "Meetings") was held March 5-6
+This [GMOD community meeting](/wiki/Meetings) was held March 5-6
 2011, at <a href="http://www.nescent.org/" class="external text"
 rel="nofollow">NESCent</a> in Durham, North Carolina, as part of [GMOD
-Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"), which also
+Americas 2011](/wiki/GMOD_Americas_2011), which also
 included [Satellite
-Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011"),
+Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011),
 and a [GMOD
-Course](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
+Course](/wiki/2011_GMOD_Spring_Training).
 
 For the first time, the meeting was preceded by a GMOD Overview session
 the night before. This session was intended to help GMOD newcomers (of
@@ -30,22 +30,22 @@ which there are usually many) learn the big picture in GMOD and get the
 most out of the meeting that follows.
 
 This meeting was [hosted and
-sponsored](GMOD_Americas_2011#Sponsor "GMOD Americas 2011") by
+sponsored](/wiki/GMOD_Americas_2011#Sponsor) by
 <a href="http://www.nescent.org" class="external text"
 rel="nofollow">NESCent</a>.
 
-[GMOD Meetings](Meetings "Meetings") are a mix of
-[user](GMOD_Membership#Users "GMOD Membership") and
-[developer](GMOD_Membership#Developers "GMOD Membership") presentations,
+[GMOD Meetings](/wiki/Meetings) are a mix of
+[user](/wiki/GMOD_Membership#Users) and
+[developer](/wiki/GMOD_Membership#Developers) presentations,
 and are a great place to find out what is happening in the project,
 what's coming up, and what others are doing.
 
 The next meeting will be held in [October
-2011](October_2011_GMOD_Meeting "October 2011 GMOD Meeting") at the
+2011](/wiki/October_2011_GMOD_Meeting) at the
 <a href="http://oicr.on.ca/" class="external text"
 rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> in
 Toronto, Canada. OICR is the current home of both
-[GBrowse](GBrowse.1 "GBrowse") and [BioMart](BioMart "BioMart").
+[GBrowse](/wiki/GBrowse.1) and [BioMart](/wiki/BioMart).
 
 
 
@@ -72,23 +72,23 @@ Toronto, Canada. OICR is the current home of both
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
-components](GMOD_Components "GMOD Components") for annotating,
+components](/wiki/GMOD_Components) for annotating,
 visualizing, managing and analyzing biological data. GMOD is also an
 active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse") (and
-[WebGBrowse](WebGBrowse.1 "WebGBrowse")) for genome browsing,
-[Apollo](Apollo.1 "Apollo") and [MAKER](MAKER.1 "MAKER") for genome
-annotation, [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") and
-[CMap](CMap.1 "CMap") for comparative genomics visualization,
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[BioMart](BioMart "BioMart") and [InterMine](InterMine "InterMine") for
+[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
+[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
+[Apollo](/wiki/Apollo.1) and [MAKER](/wiki/MAKER.1) for genome
+annotation, [GBrowse_syn](/wiki/GBrowse_syn.1) and
+[CMap](/wiki/CMap.1) for comparative genomics visualization,
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](Galaxy.1 "Galaxy") and
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
-[ISGA](ISGA "ISGA")) for data analysis.
+[Galaxy](/wiki/Galaxy.1) and
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
+[ISGA](/wiki/ISGA)) for data analysis.
 
 # Registration
 
@@ -98,7 +98,7 @@ The registration fee for the **March 2011 GMOD Meeting** was
 - **\$95 after February 18**
 
 The [Satellite
-Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
+Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 were free and were attended by over 20 people.
 
 # GMOD Americas Events
@@ -117,8 +117,7 @@ data-cellspacing="0">
 <thead>
 <tr class="header">
 <th width="5%"
-style="background-color: #99ccff; font-size: 140%; line-height: 130%"><a
-href="GMOD_Americas_2011" title="GMOD Americas 2011">G<br />
+style="background-color: #99ccff; font-size: 140%; line-height: 130%"><a href="/wiki/GMOD_Americas_2011" title="GMOD Americas 2011">G<br />
 M<br />
 O<br />
 D<br />
@@ -152,8 +151,7 @@ S<br />
 March 4</td>
 <td style="background-color: #ccffff">7pm-9pm</td>
 <td colspan="2"
-style="text-align: center; background-color: #ddffff;"><strong><a
-href="March_2011_GMOD_Meeting#Friday:_Introduction_to_GMOD"
+style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/March_2011_GMOD_Meeting#Friday:_Introduction_to_GMOD"
 title="March 2011 GMOD Meeting">Introduction to GMOD</a></strong><br />
 An overview of the GMOD project for GMOD newcomers, the night before the
 meeting starts. If you are new to GMOD this will give you the background
@@ -171,7 +169,7 @@ March 5</td>
 <td colspan="2" rowspan="2"
 style="text-align: center; background-color: #ddffff;"><strong><strong>GMOD
 Community Meeting</strong></strong><br />
-Talks and discussions on <a href="GMOD_Components"
+Talks and discussions on <a href="/wiki/GMOD_Components"
 title="GMOD Components">GMOD Components</a>, project direction and
 planning, best practices, recent developments, extensions, ...<br />
 &#10;<p><strong>See <a href="#Agenda">Agenda</a> and <a
@@ -193,15 +191,13 @@ March 6</td>
 <td style="background-color: #bbffcc">Monday<br />
 March 7</td>
 <td style="background-color: #ccffdd">8:30am-5pm</td>
-<td style="text-align: center; background-color: #ddffdd;"><strong><a
-href="Satellite_Meetings_-_GMOD_Americas_2011"
+<td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/Satellite_Meetings_-_GMOD_Americas_2011"
 title="Satellite Meetings - GMOD Americas 2011">Satellite
 Meetings</a></strong><br />
 GMOD special interest groups and birds-of-a-feather meetings where GMOD
 community members can discuss topics of common interest.<br />
 &#10;<p>If you are attending the Community Meeting, you are strongly
-encouraged to also attend a <a
-href="Satellite_Meetings_-_GMOD_Americas_2011"
+encouraged to also attend a <a href="/wiki/Satellite_Meetings_-_GMOD_Americas_2011"
 title="Satellite Meetings - GMOD Americas 2011">Satellite Meeting</a> as
 well.</p></td>
 <td></td>
@@ -215,21 +211,19 @@ well.</p></td>
 <td style="background-color: #ffffaa">Tue-Sat<br />
 March 8-12</td>
 <td style="background-color: #ffffbb">All Day</td>
-<td style="text-align: center; background-color: #ffffcc;"><strong><a
-href="2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011
+<td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/2011_GMOD_Spring_Training" title="2011 GMOD Spring Training">2011
 GMOD Spring Training</a></strong>
 
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="Apollo.1" title="Apollo">Apollo</a> • <a
-href="MAKER.1" title="MAKER">MAKER</a> • <a href="GBrowse.1"
-title="GBrowse">GBrowse</a> • <a href="Chado" class="mw-redirect"
-title="Chado">Chado</a> • <a href="InterMine"
-title="InterMine">InterMine</a> • <a href="JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="Tripal.1"
-title="Tripal">Tripal</a> • <a href="Galaxy.1"
+<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
+title="Chado">Chado</a> • <a href="/wiki/InterMine"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
+title="Tripal">Tripal</a> • <a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a></strong></p>
 </td>
 <td></td>
@@ -285,16 +279,16 @@ clearer picture of the project in advance of the meeting.
 
 | Time   | Topic                    | Presenter(s)                          | Links |
 |--------|--------------------------|---------------------------------------|-------|
-| 7pm-9m | **Introduction to GMOD** | [Scott Cain](User%253AScott "User%253AScott") ## Saturday: Day 1 |  |
+| 7pm-9m | **Introduction to GMOD** | [Scott Cain](/wiki/User%253AScott) ## Saturday: Day 1 |  |
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
-| 9:15 | Introductions | [Scott Cain](User%253AScott "User%253AScott") | 9:35 |
-| Welcome to NESCent, & opportunities at the center | [Todd Vision](User%253ATjvision "User%253ATjvision") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal" |  |
-title="Tjv.gmod11.pdf">slides</a> | 9:50 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/State_of_gmod.ppt" class="internal"
-title="State of gmod.ppt">PPT</a> | 10:35 | Coffee | 10:50 | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") Update | [Dave Clements](User%253AClements "User%253AClements") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/March2011GMODHelpDesk.ppt"
+| 9:15 | Introductions | [Scott Cain](/wiki/User%253AScott) | 9:35 |
+| Welcome to NESCent, & opportunities at the center | [Todd Vision](/wiki/User%253ATjvision) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal" |  |
+title="Tjv.gmod11.pdf">slides</a> | 9:50 | The State of GMOD | [Scott Cain](/wiki/User%253AScott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/State_of_gmod.ppt" class="internal"
+title="State of gmod.ppt">PPT</a> | 10:35 | Coffee | 10:50 | [GMOD Help Desk](/wiki/GMOD_Help_Desk) Update | [Dave Clements](/wiki/User%253AClements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/March2011GMODHelpDesk.ppt"
 class="internal" title="March2011GMODHelpDesk.ppt">PPT</a> | 11:55 | Lunch | 1:15 | *Drosophila* Genetic Reference Panel (DGRP) | Eric Stone | 2:00 | GSA and GMOD | Elizabeth Ruedi | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/March2011GSAandGMOD.pptx"
-class="internal" title="March2011GSAandGMOD.pptx">PPT</a> | 2:30 | Coffee | 3:00 | Mashing up InterMine: An introduction to the new InterMine webservice features | [Alex Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis") | Slides? | 3:45 | Mimosa: Miniature Model Organism Sequence Aligner | [Jonathan "Duke" Leto](User%253ADukeleto "User%253ADukeleto") | <a
+class="internal" title="March2011GSAandGMOD.pptx">PPT</a> | 2:30 | Coffee | 3:00 | Mashing up InterMine: An introduction to the new InterMine webservice features | [Alex Kalderimis](/wiki/User%253AAlexkalderimis) | Slides? | 3:45 | Mimosa: Miniature Model Organism Sequence Aligner | [Jonathan "Duke" Leto](/wiki/User%253ADukeleto) | <a
 href="https://github.com/leto/presentations/raw/master/2011/GMOD/pres.pdf"
 class="external text" rel="nofollow">Slides</a> | 4:30 | Head out for dinner |  ## Sunday: Day 2
 
@@ -303,38 +297,38 @@ please see the [confirmed speakers list](#Confirmed_Speakers).
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
-| 9:15 | [JBrowse](JBrowse.1 "JBrowse") Project Update | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | <a |
+| 9:15 | [JBrowse](/wiki/JBrowse.1) Project Update | [Mitch Skinner](/wiki/User%253AMitchSkinner) | <a |
 href="http://jbrowse.org/info/GMOD_Mar_2011/JBrowse_GMOD_Meeting_2011.pdf"
-class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](Tripal.1 "Tripal") Project Update | Lacey Sanderson | <a
+class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](/wiki/Tripal.1) Project Update | Lacey Sanderson | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/LaceySanderson_Tripal_GMODAmericas2011.pptx"
 class="internal"
-title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](Galaxy.1 "Galaxy") for high-throughput sequence data analysis | [Dave Clements](User%253AClements "User%253AClements") | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
+title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](/wiki/Galaxy.1) for high-throughput sequence data analysis | [Dave Clements](/wiki/User%253AClements) | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/DaveEmmert_RNAseq_Tripal_GMODAmericas2011.pdf"
 class="internal"
-title="DaveEmmert RNAseq Tripal GMODAmericas2011.pdf">Slides</a> | 2:00 | Lightning talks: |  | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | [ISGA](ISGA "ISGA") | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | Coffee break |  | [Modware](Modware "Modware"): Its latest development using Moose and [Bio%253A%253AChado%253A%253ASchema](Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") | Siddhartha Basu | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/March2011Modware.ppt" class="internal"
+title="DaveEmmert RNAseq Tripal GMODAmericas2011.pdf">Slides</a> | 2:00 | Lightning talks: |  | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | [Chris Hemmerich](/wiki/User%253AChemmeri) | [ISGA](/wiki/ISGA) | [Chris Hemmerich](/wiki/User%253AChemmeri) | Coffee break |  | [Modware](/wiki/Modware): Its latest development using Moose and [Bio%253A%253AChado%253A%253ASchema](/wiki/Bio%253A%253AChado%253A%253ASchema) | Siddhartha Basu | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/March2011Modware.ppt" class="internal"
 title="March2011Modware.ppt">PPT</a>, <a href="http://slidesha.re/i3WYZ1" class="external text"
 rel="nofollow">Slideshare</a> |  | Developing genome sequencing for identification, detection, and control of *Bactrocera dorsalis (Hendel)* and other Tephritid pests | Tom Walk | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/March20111TomWalk.pptx"
 class="internal" title="March20111TomWalk.pptx">PPT</a> |  | <a href="http://cas-bioinfo.cas.unt.edu/gsv" class="external text"
-rel="nofollow">Genome Synteny Viewer</a> | Kashi Ravenna | [PPT](March2011GenomeSyntenyViewer.pptx "March2011GenomeSyntenyViewer.pptx") |
+rel="nofollow">Genome Synteny Viewer</a> | Kashi Ravenna | [PPT](/wiki/March2011GenomeSyntenyViewer.pptx) |
 
-## Monday: [Satellite Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
+## Monday: [Satellite Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 
-[GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011") continued
+[GMOD Americas 2011](/wiki/GMOD_Americas_2011) continued
 on Monday with partial and full day [Satellite
-Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011").
+Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011).
 
 # Participants
 
 | First | Last | Affiliation |
 |----|----|----|
 | Siddhartha | Basu | Northwestern university |
-| [Robert](User%253ARobertBuels "User%253ARobertBuels") | [Buels](User%253ARobertBuels "User%253ARobertBuels") | <a href="http://solgenomics.net" class="external text" |
-rel="nofollow">Sol Genomics Network</a> - Boyce Thompson Institute | [Scott](User%253AScott "User%253AScott") | [Cain](User%253AScott "User%253AScott") | Ontario Institute for Cancer Research (OICR), GMOD | [Dave](User%253AClements "User%253AClements") | [Clements](User%253AClements "User%253AClements") | <a href="http://emory.edu" class="external text" rel="nofollow">Emory
-University</a>, [Galaxy](Galaxy.1 "Galaxy") | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](User%253AChemmeri "User%253AChemmeri") | [Hemmerich](User%253AChemmeri "User%253AChemmeri") | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](User%253AAlexkalderimis "User%253AAlexkalderimis") | [Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis") | <a href="http://www.cam.ac.uk" class="external text"
+| [Robert](/wiki/User%253ARobertBuels) | [Buels](/wiki/User%253ARobertBuels) | <a href="http://solgenomics.net" class="external text" |
+rel="nofollow">Sol Genomics Network</a> - Boyce Thompson Institute | [Scott](/wiki/User%253AScott) | [Cain](/wiki/User%253AScott) | Ontario Institute for Cancer Research (OICR), GMOD | [Dave](/wiki/User%253AClements) | [Clements](/wiki/User%253AClements) | <a href="http://emory.edu" class="external text" rel="nofollow">Emory
+University</a>, [Galaxy](/wiki/Galaxy.1) | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](/wiki/User%253AChemmeri) | [Hemmerich](/wiki/User%253AChemmeri) | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](/wiki/User%253AAlexkalderimis) | [Kalderimis](/wiki/User%253AAlexkalderimis) | <a href="http://www.cam.ac.uk" class="external text"
 rel="nofollow">University of Cambridge</a>, <a href="http://flymine.org" class="external text"
-rel="nofollow">FlyMine</a>, [InterMine](InterMine "InterMine") | Jonathan | Leto | <a href="http://solgenomics.net" class="external text"
+rel="nofollow">FlyMine</a>, [InterMine](/wiki/InterMine) | Jonathan | Leto | <a href="http://solgenomics.net" class="external text"
 rel="nofollow">Sol Genomics Network</a> - Boyce Thompson Institute | Zhanji | Liu | Delaware State University | Olaf | Mueller | Duke University | Trevor | Newell | Delaware State University | Daniel | Quest | Oak Ridge National Lab (JGI) | Kashi | Revanna | UNT | Elizabeth | Ruedi | <a href="http://www.genetics-gsa.org/" class="external text"
-rel="nofollow">Genetics Society of America (GSA)</a> | Victor | Ruotti | Morgridge Institute for Research | Surya | Saha | Cornell University | Lacey-anne | Sanderson | University of Saskatchewan | Sheena | Scroggins | Polytechnic of NYU | [Mitchell](User%253AMitchSkinner "User%253AMitchSkinner") | [Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | UC Berkeley | Olen | Sluder | <a href="http://txbiomed.org/" class="external text"
+rel="nofollow">Genetics Society of America (GSA)</a> | Victor | Ruotti | Morgridge Institute for Research | Surya | Saha | Cornell University | Lacey-anne | Sanderson | University of Saskatchewan | Sheena | Scroggins | Polytechnic of NYU | [Mitchell](/wiki/User%253AMitchSkinner) | [Skinner](/wiki/User%253AMitchSkinner) | UC Berkeley | Olen | Sluder | <a href="http://txbiomed.org/" class="external text"
 rel="nofollow">Texas Biomedical Research Institute</a> | Tomasz | Smolinski | Delaware State University | Eric | Stone | North Carolina State University | Yaqoob | Thurston | Delaware State University | Todd | Vision | <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a> | Tom | Walk | USDA ARS | Gary | xie | LANL |
 
@@ -347,12 +341,10 @@ rel="nofollow">NESCent</a> | Tom | Walk | USDA ARS | Gary | xie | LANL |
 </colgroup>
 <tbody>
 <tr class="odd">
-<td data-valign="top">Help spread the word about <a
-href="GMOD_Americas_2011" title="GMOD Americas 2011">GMOD Americas
+<td data-valign="top">Help spread the word about <a href="/wiki/GMOD_Americas_2011" title="GMOD Americas 2011">GMOD Americas
 2011</a> events by posting and distributing <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf"
-title="File:GMODAmericas2011Flier.pdf">this flier</a>, or the <a
-href="News/March_2011_GMOD_Meeting"
+title="File:GMODAmericas2011Flier.pdf">this flier</a>, or the <a href="/wiki/News/March_2011_GMOD_Meeting"
 title="News/March 2011 GMOD Meeting">event announcements</a> to your
 communities, mailing lists, and organizations.
 <p>There are many organizations out there that are struggling to cope
@@ -369,14 +361,14 @@ width="131" height="170" alt="GMOD Americas 2011 Flier" /></td>
 # Logistics
 
 See the [GMOD Americas
-2011](GMOD_Americas_2011#Logistics "GMOD Americas 2011") page for
+2011](/wiki/GMOD_Americas_2011#Logistics) page for
 information on lodging, transportation and meals.
 
 # Feedback
 
 Attendees were asked to provide feedback at the end of the meeting.
 
-**Q: Would you recommend [GMOD meetings](Meetings "Meetings") to
+**Q: Would you recommend [GMOD meetings](/wiki/Meetings) to
 others**
 
 | Yes | Maybe | No |

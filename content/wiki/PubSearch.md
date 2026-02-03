@@ -9,8 +9,8 @@ title: "PubSearch"
 
 PubSearch is a web-based literature curation tool to allow curators to
 search and annotate genes to keywords from articles. It has a simple,
-[MySQL](MySQL "MySQL") database backend and uses a set of
-[Java](Category%253AJava "Category%253AJava") Servlets and JSPs for querying,
+[MySQL](/wiki/MySQL) database backend and uses a set of
+[Java](/wiki/Category%253AJava) Servlets and JSPs for querying,
 modifying, and adding gene, gene-annotation, and literature information.
 
 See the <a href="http://pubsearch.org" class="external text"

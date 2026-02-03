@@ -4,17 +4,17 @@ title: "News/GMOD Spring Training: Apply Now"
 # News/GMOD Spring Training: Apply Now
 
 [Applications are now being
-accepted](../2011_GMOD_Spring_Training#Applications "2011 GMOD Spring Training")
+accepted](../2011_GMOD_Spring_Training#Applications)
 for the [2011 GMOD Spring
-Training](../2011_GMOD_Spring_Training "2011 GMOD Spring Training")
+Training](../2011_GMOD_Spring_Training)
 course, a five-day hands-on school aimed at teaching new GMOD
 administrators how to install, configure and integrate popular [GMOD
-Components](../GMOD_Components "GMOD Components"). The course will be
+Components](../GMOD_Components). The course will be
 held March 8-12 at the
 <a href="http://www.nescent.org" class="external text" rel="nofollow">US
 National Evolutionary Synthesis Center (NESCent)</a> in Durham, North
 Carolina, as part of [GMOD Americas
-2011](../GMOD_Americas_2011 "GMOD Americas 2011").
+2011](../GMOD_Americas_2011).
 
 These components will be covered at the school:
 
@@ -61,27 +61,27 @@ Chado databases</li>
 **The deadline for applying is the end of Friday, January 7, 2011.
 Admission is competitive and is based on the strength of the
 application, especially the statement of interest.** The [2010
-school](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
+school](../2010_GMOD_Summer_School_-_Americas)
 had over 60 applicants for the 25 slots. Any application received after
 deadline will be automatically placed on the waiting list.
 
 The course [requires some knowledge of
-Linux](../2011_GMOD_Spring_Training#Prerequisites "2011 GMOD Spring Training")
+Linux](../2011_GMOD_Spring_Training#Prerequisites)
 as a prerequisite. The registration fee will be \$265 (only \$53 per
 day). There will be a limited number of scholarships available.
 
-*This may be the only [GMOD School](../GMOD_Schools "GMOD Schools")
+*This may be the only [GMOD School](../GMOD_Schools)
 offered in 2011.* If you are interested, you are strongly encouraged to
 apply by January 7.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/03*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/03*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

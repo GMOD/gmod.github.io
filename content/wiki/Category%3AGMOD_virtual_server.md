@@ -10,10 +10,10 @@ needs to add their data.
 
 Current GMOD virtual servers:
 
-- [GMOD in the Cloud](Cloud.1 "Cloud")
-- <a href="Box" class="mw-redirect" title="Box">GMOD in a Box</a>
+- [GMOD in the Cloud](/wiki/Cloud.1)
+- <a href="/wiki/Box" class="mw-redirect" title="Box">GMOD in a Box</a>
 
-Poster from [PAG 2014](PAG_2014 "PAG 2014"):
+Poster from [PAG 2014](/wiki/PAG_2014):
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gitc-giab-poster.pdf" class="internal"
 title="Gitc-giab-poster.pdf">GMOD in the Cloud and GMOD in a Box:
 Instant Virtual Servers for Genomics Data</a>
@@ -24,9 +24,9 @@ The following 3 pages are in this category, out of 3 total.
 
 ### C
 
-- [Cloud](Cloud.1 "Cloud")
+- [Cloud](/wiki/Cloud.1)
 
 ### G
 
-- [GMOD in a Box](GMOD_in_a_Box.1 "GMOD in a Box")
-- [Template:GMOD VM](Template:GMOD_VM "Template:GMOD VM")
+- [GMOD in a Box](/wiki/GMOD_in_a_Box.1)
+- [Template:GMOD VM](/wiki/Template:GMOD_VM)

@@ -26,30 +26,30 @@ title: "Load BLAST Into Chado"
 
 # Abstract
 
-This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes steps to add a
-[BLAST](Category%253ABLAST "Category%253ABLAST") analysis to a [Chado
-database](Chado_-_Getting_Started "Chado - Getting Started").
+This [HOWTO](/wiki/Category%253AHOWTO) describes steps to add a
+[BLAST](/wiki/Category%253ABLAST) analysis to a [Chado
+database](/wiki/Chado_-_Getting_Started).
 
 # Have an existing Chado genome database
 
 See [Load RefSeq Into
-Chado](Load_RefSeq_Into_Chado "Load RefSeq Into Chado") for advice on
+Chado](/wiki/Load_RefSeq_Into_Chado) for advice on
 how to load a GenBank Genome into a database. In the following examples,
-**bp\_*scriptname*** is from [BioPerl](BioPerl "BioPerl"), and
+**bp\_*scriptname*** is from [BioPerl](/wiki/BioPerl), and
 **gmod\_*scriptname*** is from GMOD. As of this date (2007 April) you
-will need current modules from the [BioPerl](BioPerl "BioPerl") Git and
-<a href="SVN" class="mw-redirect" title="SVN">GMOD SVN repositories</a>
+will need current modules from the [BioPerl](/wiki/BioPerl) Git and
+<a href="/wiki/SVN" class="mw-redirect" title="SVN">GMOD SVN repositories</a>
 to have this example work.
 
 # Convert BLAST analysis to GFF3
 
 For example, match yeast proteins to your genome with tBLASTn, and
-reformat to [GFF3](GFF3 "GFF3").
+reformat to [GFF3](/wiki/GFF3).
 
      $ncbi/blastall -p tblastn -i MOD_Scer.fa -d dmel4 -o dmel4-modsc.tblastn
 
-First reformat to [GFF3](GFF3 "GFF3") with the
-[BioPerl](BioPerl "BioPerl") `bp_search2gff.pl` script. The Chado policy
+First reformat to [GFF3](/wiki/GFF3) with the
+[BioPerl](/wiki/BioPerl) `bp_search2gff.pl` script. The Chado policy
 here is to put your program and blast query data names into the GFF3
 `--source` field. The GFF3 `--method` field should always be SO term
 'match_part'. You also want the `--type hit` and `--target` options.
@@ -82,16 +82,16 @@ Result should be formatted like this:
 
 You want to have your query sequences used for BLAST, such as proteins,
 for reference in your
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> db. The GMOD
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> db. The GMOD
 script `gmod_bulk_load_gff3.pl` will handle this after converting
-sequence Fasta to [GFF3](GFF3 "GFF3") format.
+sequence Fasta to [GFF3](/wiki/GFF3) format.
 
      gmod_fasta2gff3.pl  --type protein --source SGD --fasta MOD_Scer.fa --gff MOD_Scer.fa.gff
      gmod_bulk_load_gff3.pl --dbname my_chado_01  --organism yeast --dbxref --gff MOD_Scer.fa.gff
 
 If your query sequence comes from UniProt or GenBank formats, you can
 instead use the
-` `[`bp_genbank2gff.pl`](Load_GFF_Into_Chado "Load GFF Into Chado")
+` `[`bp_genbank2gff.pl`](/wiki/Load_GFF_Into_Chado)
 script that will retain more useful annotations for your Chado database.
 Then BLAST matches can be linked to many known gene/protein attributes.
 
@@ -117,7 +117,7 @@ to ensure that Target feature is linked with your Blast result.
 Then you should see these database updates:
 
 Analysis table entry of the
-[Chado_Companalysis_Module](Chado_Companalysis_Module "Chado Companalysis Module"):
+[Chado_Companalysis_Module](/wiki/Chado_Companalysis_Module):
 
 | analysis_id | name | description | program | programversion | algorithm | sourcename |
 |----|----|----|----|----|----|----|
@@ -155,13 +155,13 @@ Featureloc entries for Target feature_id 88149:
 *I believe the ranks shown in the featureloc example above may not be
 correct or at least are misleading; see the [Chado Best Practices
 section for handling BLAST
-results](Chado_Best_Practices#Results_from_BLAST "Chado Best Practices")
-for clarification* [Scott](User%253AScott "User%253AScott") 19:18, 21 November
+results](/wiki/Chado_Best_Practices#Results_from_BLAST)
+for clarification* [Scott](/wiki/User%253AScott) 19:18, 21 November
 2008 (UTC)
 
 # See also
 
-- [Chado_Best_Practices#Results_from_BLAST](Chado_Best_Practices#Results_from_BLAST "Chado Best Practices")
+- [Chado_Best_Practices#Results_from_BLAST](/wiki/Chado_Best_Practices#Results_from_BLAST)
 
 # More Information
 
@@ -172,5 +172,5 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 # Authors
 
-- [Dongilbert](User%253ADongilbert "User%253ADongilbert") 23:24, 3 April 2007
+- [Dongilbert](/wiki/User%253ADongilbert) 23:24, 3 April 2007
   (EDT)

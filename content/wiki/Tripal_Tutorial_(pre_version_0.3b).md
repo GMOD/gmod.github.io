@@ -10,21 +10,21 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
-Ficklin](User%253ASficklin "User%253ASficklin") at the [2011 GMOD Spring
-Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training"), 8-12
+This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+Ficklin](/wiki/User%253ASficklin) at the [2011 GMOD Spring
+Training](/wiki/2011_GMOD_Spring_Training), 8-12
 March 2011. The most recent Tripal tutorial can be found at the
-<a href="Tripal_Tutorial" class="mw-redirect"
+<a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-b7fa4dde, name: GMOD 2012 day 2 start**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
-Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
+Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
 **The most recent version of this tutorial is available at the
-<a href="Tripal_Tutorial" class="mw-redirect"
+<a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.**
 
   to Tripal</span>](#Introduction_to_Tripal)
@@ -252,7 +252,7 @@ rel="nofollow">http://www.drupal.org/project/themes</a>
 ### Chado
 
 The session for Chado was presented yesterday
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
 for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
@@ -358,11 +358,11 @@ Tripal: <a href="http://tripal.sourceforge.net" class="external free"
 rel="nofollow">http://tripal.sourceforge.net</a>
 
 GMOD Tripal mailing lists:
-<a href="GMOD_Mailing_Lists" class="external free"
+<a href="/wiki/GMOD_Mailing_Lists" class="external free"
 rel="nofollow">http://gmod.org/wiki/GMOD_Mailing_Lists</a>
 
 GMOD Tutorials from previous GMOD schools:
-<a href="Tripal.1" class="external free"
+<a href="/wiki/Tripal.1" class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
 
@@ -852,7 +852,7 @@ cron launch the crontab editor:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -1574,7 +1574,7 @@ need to add a second cron entry:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 
 Add this line to the crontab
@@ -2839,4 +2839,4 @@ height="495" alt="800px-TripalGBrowseImg.png" />
 "<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b)")</span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

@@ -49,7 +49,7 @@ The structure of the argument to clientConfig looks something like this:
      }'
 
 See
-[JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks](../JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks "JBrowse Configuration Guide")
+[JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks](../JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks)
 for a discussion of the featureCallback option.
 
 # Descriptions of clientConfig Options
@@ -141,8 +141,8 @@ subfeatureScale and histScale.
 
 # See also
 
-- <a href="General_Usage" class="mw-redirect"
+- <a href="/wiki/General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
 
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+- [JBrowse](../Category%253AJBrowse)

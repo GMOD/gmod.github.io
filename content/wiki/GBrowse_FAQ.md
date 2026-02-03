@@ -77,7 +77,7 @@ title: "GBrowse FAQ"
 ### What is this FAQ?
 
 It is the list of Frequently Asked Questions about
-[GBrowse](GBrowse.1 "GBrowse").
+[GBrowse](/wiki/GBrowse.1).
 
 ### How is it maintained?
 
@@ -99,7 +99,7 @@ qualitative data such as the splicing structure of a gene, and
 quantitative data such as microarray expression levels.
 
 Another good way to get an overview of the features GBrowse offers is to
-read the documentation at the [GBrowse](GBrowse.1 "GBrowse") Wiki page.
+read the documentation at the [GBrowse](/wiki/GBrowse.1) Wiki page.
 
 
 
@@ -149,7 +149,7 @@ From
 class="external text" rel="nofollow">SourceForge</a>. If you want to
 live on the bleeding edge, you may try the development version of
 GBrowse. Instructions for accessing the development version of GBrowse
-can be found at <a href="Subversion" class="mw-redirect"
+can be found at <a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a>.
 
 ### How do I install GBrowse?
@@ -170,8 +170,8 @@ from the command line.
 
 ### When I search, why doesn't GBrowse find my 3-letter gene name?
 
-If you are using the [MySQL](MySQL "MySQL") [GFF](GFF "GFF")
-[adaptor](GBrowse_Adaptors "GBrowse Adaptors") and are storing gene
+If you are using the [MySQL](/wiki/MySQL) [GFF](/wiki/GFF)
+[adaptor](/wiki/GBrowse_Adaptors) and are storing gene
 names inside Note attributes, then you may bump up against MySQL's
 default four-letter limit on full text searches. To fix this, either:
 
@@ -216,11 +216,11 @@ Add a line to the appropriate \*.conf file using *link*. For example:
 
 You need to structure the feature in such a way that it has a single
 parent part that spans the whole feature from end to end. When using
-[GFF3](GFF3 "GFF3") and a Bio::DB::SeqFeature::Store database (see
-[GBrowse Adaptors](GBrowse_Adaptors "GBrowse Adaptors")), that is all
+[GFF3](/wiki/GFF3) and a Bio::DB::SeqFeature::Store database (see
+[GBrowse Adaptors](/wiki/GBrowse_Adaptors)), that is all
 you have to do. For example, using "match" as the feature in track
 configuration of the
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+<a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse configuration file</a> and
 GFF3 like this would work:
 
@@ -229,7 +229,7 @@ GFF3 like this would work:
                 Chr1 . match_part  500   600 . . . Parent=Hit27
                 Chr1 . match_part  900  1000 . . . Parent=Hit27
 
-In [GFF2](GFF2 "GFF2") format, you will need to use an aggregator, in
+In [GFF2](/wiki/GFF2) format, you will need to use an aggregator, in
 this case, the "match" aggregator. Example GFF2 will look like this:
 
                 Chr1 . match    1  1000 . . . Hit Hit27
@@ -239,7 +239,7 @@ this case, the "match" aggregator. Example GFF2 will look like this:
 
 And you will use "match" (the name of the aggregator, not the name of
 the parent feature) as the feature in the track configuration in the
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+<a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse config file</a>.
 
 For transcripts, use the "processed_transcript" aggregator and create
@@ -248,17 +248,17 @@ and/or various types of UTRs.
 
 ### I'm using the GFF database adaptor. Is it better to load it using GFF2 or GFF3?
 
-[GFF3](GFF3 "GFF3").
+[GFF3](/wiki/GFF3).
 
-[GFF2](GFF2 "GFF2"), described in the <a
+[GFF2](/wiki/GFF2), described in the <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/branches/stable/docs/tutorial/dbgff/tutorial.html?content-type=text%2Fhtml"
 class="external text" rel="nofollow">Using GBrowse with Bio::DB::GFF</a>
-tutorial, is the older version of the [GFF](GFF "GFF") feature
+tutorial, is the older version of the [GFF](/wiki/GFF) feature
 annotation format. Its main limitation is that it cannot represent
 features that have more than one level of nested subparts. For example,
 you cannot represent the relationship between a gene, two alternatively
 spliced transcripts, and the exons inside the transcripts.
-[GFF3](GFF3 "GFF3") corrects this problem as well as a number of other
+[GFF3](/wiki/GFF3) corrects this problem as well as a number of other
 deficiencies.
 
 ### How do I pass parameters into functions of init_code?
@@ -300,8 +300,8 @@ column 9 of the first line of the gff file.
 
 That usually is a problem with your reference sequences. Either you
 haven't set you reference class correctly in your config file (if you
-are using [GFF3](GFF3 "GFF3"), it should probably be set to 'Sequence'),
-or you don't have reference sequences in your [GFF](GFF "GFF")
+are using [GFF3](/wiki/GFF3), it should probably be set to 'Sequence'),
+or you don't have reference sequences in your [GFF](/wiki/GFF)
 file/database. That is, you don't have the lines in your GFF file that
 correspond to the chromosomes.
 
@@ -311,7 +311,7 @@ Yes! As of version 1.69, you can populate popup balloons similar to the
 ones used by Google Maps. The balloons can contain arbitrary HTML
 (including images) and can be set to appear when the user hovers over a
 feature or left clicks on it. See [GBrowse
-Configuration/Balloons](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons")
+Configuration/Balloons](/wiki/GBrowse_Configuration/Balloons)
 for details.
 
 ### Why is GBrowse on Chado so slow?
@@ -329,12 +329,12 @@ on highly denormalized but fast to query databases. Chado on the other
 hand is highly normalized, which is good for preventing data handling
 errors, but bad in general for speed. There are some things that can be
 done, like [materializing
-views](Materialized_views "Materialized views") to speed some of the
+views](/wiki/Materialized_views) to speed some of the
 slower queries, but in practice most users find it easier to dump the
 contents of their Chado database to GFF3 and and load it into a
 <a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>
-database. [GMODTools](GMODTools "GMODTools") is a good tool for setting
+database. [GMODTools](/wiki/GMODTools) is a good tool for setting
 up periodic dumps of your Chado database to GFF3.
 
 ### The "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line 587" Error
@@ -346,7 +346,7 @@ Users of GBrowse 1.69 will see this message in their Apache error logs:
 This is a debugging statement that was accidentally left in the GBrowse
 1.69 release. You can either ignore it (it does not affect anything), or
 install the latest version of GBrowse from
-<a href="Subversion" class="mw-redirect"
+<a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a>.
 
 ### Can I show more than one glyph in the same track?
@@ -394,7 +394,7 @@ There is no set maximum number of tracks. As of about GBrowse 2.13,
 GBrowse works with more than 1,000 tracks. From this <a
 href="http://gmod.827538.n3.nabble.com/http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-tp946842p946842.html"
 class="external text" rel="nofollow">email thread (Kai Xia, 2010/07</a>,
-[Lincoln Stein](User%253ALstein "User%253ALstein") said:
+[Lincoln Stein](/wiki/User%253ALstein) said:
 
 I think you'll find that 20,000 track definitions are going to slow
 GBrowse down to the point of unusability. I have made some fixes to
@@ -405,6 +405,6 @@ If you combine wiggle data into subtracks, then performance in GBrowse2
 should be quite good. There is also an interface that lets you define
 metadata for each subtrack and search, filter and sort on the basis of
 this metadata (see [Creating and Managing Subtracks with
-GBrowse2](Creating_and_Managing_Subtracks_with_GBrowse2 "Creating and Managing Subtracks with GBrowse2")).
+GBrowse2](/wiki/Creating_and_Managing_Subtracks_with_GBrowse2)).
 I've also just now added an option that lets you hide subtracks that
 have no data currently showing.

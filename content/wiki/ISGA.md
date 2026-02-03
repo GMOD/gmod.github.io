@@ -13,12 +13,12 @@ Resources
 
 - <a href="http://isga.cgb.indiana.edu/" class="external text"
   rel="nofollow">Home Page</a>
-- <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
+- <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 - <a href="http://isga.cgb.indiana.edu/Help/Tutorial"
   class="external text" rel="nofollow">Tutorials</a>
 - <a href="http://isga.cgb.indiana.edu/Help/FAQ" class="external text"
   rel="nofollow">FAQ</a>
-- [Mailing List](ISGA#Mailing_List "ISGA")
+- [Mailing List](/wiki/ISGA#Mailing_List)
 - <a
   href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/8/1122"
   class="external text" rel="nofollow">Paper</a>
@@ -36,14 +36,14 @@ alt="ISGA at the Center for Genomics and Bioinformatics" /></a>
 <a href="http://isga.cgb.indiana.edu/" class="external text"
 rel="nofollow">Integrated Services for Genomic Analysis (ISGA)</a> is a
 bioinformatics pipeline service software package based on
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>. ISGA
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>. ISGA
 can be installed locally to provide a biologist-friendly web interface
 to your computational resources. ISGA comes with prokaryotic annotation
 and prokaryotic assembly pipelines and offers an intuitive interface for
 biologists to run and customize pipelines. ISGA also integrates tools
-such as [GBrowse](GBrowse.1 "GBrowse") and BLAST for visualizing and
+such as [GBrowse](/wiki/GBrowse.1) and BLAST for visualizing and
 analyzing pipeline results. Since ISGA utilizes the
-<a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
+<a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 workflow system to execute pipelines, ISGA pipeline can be submitted
 back to the Ergatis community and other Ergatis pipelines can be adapted
 to use ISGA.
@@ -70,24 +70,24 @@ used for prokarytic annotation and assembly.
   genome annotation web server"</a> in
   *<a href="http://bioinformatics.oxfordjournals.org/"
   class="external text" rel="nofollow">Bioinformatics</a>*
-- [Presentations](Category%253APresentations "Category%253APresentations") and
-  [Posters](Category%253APosters "Category%253APosters")
+- [Presentations](/wiki/Category%253APresentations) and
+  [Posters](/wiki/Category%253APosters)
   - [Automated Annotation of NGS Transcriptome Data using ISGA and
-    Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf "File:NGSTranscriptomeISGAErgatis.pdf"),
-    presented by [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") at
-    [BOSC 2010](ISMB_2010 "ISMB 2010")
+    Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf),
+    presented by [Chris Hemmerich](/wiki/User%253AChemmeri) at
+    [BOSC 2010](/wiki/ISMB_2010)
   - [Integrative Services for Genomic Analysis (ISGA) - An Intuitive Web
     Server for Prokaryotic Genome Annotation and Other
-    Analyses](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/ISGAISMB2010Poster.pdf "File:ISGAISMB2010Poster.pdf"),
-    poster by [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri"), Aaron
+    Analyses](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/ISGAISMB2010Poster.pdf),
+    poster by [Chris Hemmerich](/wiki/User%253AChemmeri), Aaron
     Buechlein, Ram Podicheti, and Jeong-Hyeon Choi, presented at [ISMB
-    2010](ISMB_2010 "ISMB 2010").
+    2010](/wiki/ISMB_2010).
   - [Web-Based Bioinformatics Pipelines For Biologists: Integrative
     Services for Genomic Analysis
-    (ISGA)](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf "File:Jan2010ErgatisForBiologists.pdf"),
-    presented by [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") at the
+    (ISGA)](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf),
+    presented by [Chris Hemmerich](/wiki/User%253AChemmeri) at the
     [January 2010 GMOD
-    Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting").
+    Meeting](/wiki/January_2010_GMOD_Meeting).
 
 
 

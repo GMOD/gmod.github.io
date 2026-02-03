@@ -9,9 +9,9 @@ The following 2 pages are in this category, out of 2 total.
 
 ### F
 
-- [FlyBase Chado](FlyBase_Chado "FlyBase Chado")
+- [FlyBase Chado](/wiki/FlyBase_Chado)
 - [FlyBase Field Mapping
-  Tables](FlyBase_Field_Mapping_Tables "FlyBase Field Mapping Tables")
+  Tables](/wiki/FlyBase_Field_Mapping_Tables)
 
 ## Media in category "Chado FlyBase"
 
@@ -33,5 +33,5 @@ This category contains only the following file.
 
 
 
-  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf "File:Aug2009LinkedData.pdf")
+  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf)
   829 KB

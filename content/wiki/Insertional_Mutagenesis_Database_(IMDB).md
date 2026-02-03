@@ -29,7 +29,7 @@ class="external text" rel="nofollow">Release notes</a>
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f0/IMDB.ppt" class="internal"
 title="IMDB.ppt">IMDB: A Generic Insertional Mutagenesis Database</a>
 presentation from the [May 2003 GMOD
-Meeting](May_2003_GMOD_Meeting "May 2003 GMOD Meeting").
+Meeting](/wiki/May_2003_GMOD_Meeting).
 **Contact**
 addresshere.
 **Downloads**

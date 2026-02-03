@@ -4,9 +4,9 @@ title: "News/August 2010 Calendar"
 # News/August 2010 Calendar
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
-height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
+height="35" alt="GMOD Calendar" />](../Calendar)
 
-There's not a lot going on in [August](../Calendar "Calendar") but what
+There's not a lot going on in [August](../Calendar) but what
 is going on is significant. First there are submission deadlines for the
 International Digital Curation Conference (IDCC), and Data Integration
 in the Life Sciences (DILS 2010). Several noteworthy conferences are
@@ -22,9 +22,9 @@ also happening:
 And, sometime in the next month GMOD will
 
 - **formally announce [GMOD Europe
-  2010](../GMOD_Europe_2010 "GMOD Europe 2010") and**
+  2010](../GMOD_Europe_2010) and**
 - **start taking registrations for the [September 2010 GMOD
-  Meeting](../September_2010_GMOD_Meeting "September 2010 GMOD Meeting")**
+  Meeting](../September_2010_GMOD_Meeting)**
 
 
 If you know of any other events or deadlines that the GMOD community
@@ -32,12 +32,12 @@ would be interested in, please send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/28*
+*Posted to the [GMOD News](../GMOD_News) on 2010/07/28*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

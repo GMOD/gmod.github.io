@@ -56,15 +56,15 @@ As always, please let me know if you have any questions.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
+[Dave Clements](../User%253AClements)
 
 |----| \* You don't have to vote for exactly three topics. You can vote for fewer topics and have each vote count for more, or you can vote for more topics and have each vote count for less. |
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/01/28*
+*Posted to the [GMOD News](../GMOD_News) on 2013/01/28*
 
 Category%253AGalaxy
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

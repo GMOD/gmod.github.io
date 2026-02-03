@@ -11,21 +11,21 @@ height="48" alt="Under Construction" />
 construction.</span>
 
 
-GMODviews will be presented at [PAG 2011](PAG_2011 "PAG 2011").
+GMODviews will be presented at [PAG 2011](/wiki/PAG_2011).
 
 GMODviews is built on
 <a href="http://drupal.org" class="external text" rel="nofollow">Drupal
 6</a>, and aims to provide integration with 3 major Drupal modules: CCK,
 Views, and Panels, so as to full access to advanced Drupal
 functionality. One immediate goal is to provide an intermediate
-integration of these with [Tripal](Tripal.1 "Tripal"), which does not
+integration of these with [Tripal](/wiki/Tripal.1), which does not
 yet have such integration. GMODviews also provides tools for creating
 generic *data mashups* with data from essentially any external sources,
 such as <a href="http://flybase.org/" class="external text"
 rel="nofollow">FlyBase</a>, PubMed, *etc.* User-selected data can then
 be stored in the local Drupal database, to thus create a
 custom-knowledge-base for further data integration and analysis. Views
-integration allows complex [SQL](Glossary#SQL "Glossary") queries to be
+integration allows complex [SQL](/wiki/Glossary#SQL) queries to be
 performed and visualized in custom *data mashups* using a wide-variety
 of third-party ("contrib") Drupal modules, such as Views Gallery and
 Views Slideshow. Panels integration allows multipane layouts of specific
@@ -36,4 +36,4 @@ write PHP code.
 ## GMOD Status
 
 GMODviews is in development and has not yet been [nominated for GMOD
-membership](GMOD_Membership#Software "GMOD Membership").
+membership](/wiki/GMOD_Membership#Software).

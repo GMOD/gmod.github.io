@@ -30,7 +30,7 @@ this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="Property%253AAvailable_on_platform"
+<td class="smwpropname"><a href="/wiki/Property%253AAvailable_on_platform"
 title="Property:Available on platform">Available on platform</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">web  ,
@@ -42,7 +42,7 @@ x  , </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Property%253AHas_development_status"
+<td class="smwpropname"><a href="/wiki/Property%253AHas_development_status"
 title="Property:Has development status">Has development status</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">active  ,
@@ -50,7 +50,7 @@ maintenance  ,
 inactive  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Property%253AHas_software_maturity_status"
+<td class="smwpropname"><a href="/wiki/Property%253AHas_software_maturity_status"
 title="Property:Has software maturity status">Has software maturity
 status</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">mature  ,
@@ -59,7 +59,7 @@ alpha release  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Property%253AHas_support_status"
+<td class="smwpropname"><a href="/wiki/Property%253AHas_support_status"
 title="Property:Has support status">Has support status</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">active  ,
@@ -70,7 +70,7 @@ inactive  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Property%253AIs_open_source"
+<td class="smwpropname"><a href="/wiki/Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">Yes  ,
@@ -82,7 +82,7 @@ apply  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Property%253ALink_type"
+<td class="smwpropname"><a href="/wiki/Property%253ALink_type"
 title="Property:Link type">Link type</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">website  ,
 download  ,

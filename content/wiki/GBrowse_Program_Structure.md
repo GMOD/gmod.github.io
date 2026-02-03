@@ -3,12 +3,12 @@ title: "GBrowse Program Structure"
 ---
 # GBrowse Program Structure
 
-This page gives a basic overview of how [GBrowse](GBrowse.1 "GBrowse")
+This page gives a basic overview of how [GBrowse](/wiki/GBrowse.1)
 has been organized and programmed, and is intended for developers to get
 a feel for the structure of the program so they can become more
 comfortable adding features to it or modifying it for their own needs.
 Help is always available via the
-<a href="GMOD_Mailing_Lists#GMOD_Components" class="external text"
+<a href="/wiki/GMOD_Mailing_Lists#GMOD_Components" class="external text"
 rel="nofollow">mailing list</a>, or on other sections of the GMOD wiki.
 
   Structure</span>](#Program_Structure)
@@ -102,12 +102,12 @@ in the SVN. They are as follows:
 - **DataLoader** (Bio::Graphics::Browser2::DataLoader) - An interface
   for managing files or URLs containing data and converting them into
   new databases for easier access. A full list of adaptors is available
-  [here](GBrowse_Adaptors "GBrowse Adaptors").
+  [here](/wiki/GBrowse_Adaptors).
   - **bam** (Bio::Graphics::Browser2::DataLoader::bam) - A loader for
-    the BAM half of the [SAM/BAM file format](Glossary#BAM "Glossary").
+    the BAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
   - **bed** (Bio::Graphics::Browser2::DataLoader::bed) - A loader for
     the [BED file
-    format](GBrowse/Uploading_Wiggle_Tracks#Wiggle_.28BED.29 "GBrowse/Uploading Wiggle Tracks").
+    format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_.28BED.29).
   - **bigwig** (Bio::Graphics::Browser2::DataLoader::bigwig) - A loader
     for the <a href="http://search.cpan.org/perldoc?Bio::DB::BigWig"
     class="external text" rel="nofollow">BigWig file format</a>
@@ -118,14 +118,14 @@ in the SVN. They are as follows:
   - **generic** (Bio::Graphics::Browser2::DataLoader::generic) - A
     generic loader module.
   - **gff** (Bio::Graphics::Browser2::DataLoader::gff) - A loader for
-    the [GFF#GFF3](GFF#GFF3 "GFF") file format.
+    the [GFF#GFF3](/wiki/GFF#GFF3) file format.
   - **gff3** (Bio::Graphics::Browser2::DataLoader::gff3) - A loader for
-    the [GFF3](GFF3 "GFF3") file format.
+    the [GFF3](/wiki/GFF3) file format.
   - **sam** (Bio::Graphics::Browser2::DataLoader::sam) - A loader for
-    the SAM half of the [SAM/BAM file format](Glossary#BAM "Glossary").
+    the SAM half of the [SAM/BAM file format](/wiki/Glossary#BAM).
   - **wiggle** (Bio::Graphics::Browser2::DataLoader::wiggle) - A loader
     for the [Wiggle file
-    format](GBrowse/Uploading_Wiggle_Tracks#Wiggle_tracks "GBrowse/Uploading Wiggle Tracks").
+    format](/wiki/GBrowse/Uploading_Wiggle_Tracks#Wiggle_tracks).
 - **DataSource** (Bio::Graphics::Browser2::DataSource) - An interface
   for managing a data source, since GBrowse can work with a few (see the
   "Data Sources" drop-down menu on the main page)

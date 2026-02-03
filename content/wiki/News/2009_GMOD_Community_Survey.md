@@ -18,7 +18,7 @@ class="external text" rel="nofollow">2009 GMOD Community Survey</a> and
 your name will be entered to win a free GMOD T-shirt or mug! This year's
 survey focuses on genome and comparative genomics visualization (and is
 much shorter than the [2008
-survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey")). We
+survey](../2008_GMOD_Community_Survey)). We
 are asking all GMOD users and developers to provide your feedback.
 
 **Three randomly selected survey participants will receive the
@@ -33,12 +33,12 @@ Help Desk</a> if you have any questions.
 
 Thank you,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/16*
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

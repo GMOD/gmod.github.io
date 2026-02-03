@@ -14,7 +14,7 @@ Thanks!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/09/26*
+*Posted to the [GMOD News](../GMOD_News) on 2012/09/26*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

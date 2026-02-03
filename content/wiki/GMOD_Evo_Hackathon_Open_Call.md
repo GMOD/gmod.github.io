@@ -11,12 +11,11 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon"><img
+<td><a href="/wiki/GMOD_Evo_Hackathon" title="GMOD Evo Hackathon"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/200px-EvoHackathonLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/300px-EvoHackathonLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/400px-EvoHackathonLogo.png 2x"
 width="200" height="200" alt="GMOD Evo Hackathon" /></a></td>
-<td><span style="font-size: 200%; line-height: 120%"><strong><a
-href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
+<td><span style="font-size: 200%; line-height: 120%"><strong><a href="/wiki/GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
 Evolutionary Biology Hackathon</a></strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
@@ -48,7 +47,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
 - [Links](#Links)
 
 We are seeking participants for the [GMOD Tools for Evolutionary Biology
-Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), held November 8-12,
+Hackathon](/wiki/GMOD_Evo_Hackathon), held November 8-12,
 2010 at the
 <a href="http://nescent.org/" class="external text" rel="nofollow">US
 National Evolutionary Synthesis Center (NESCent)</a> in Durham, NC.
@@ -75,15 +74,15 @@ The open call closed August 25.
 GMOD is an intercompatible suite of open-source software components for
 storing, managing, analyzing, and visualizing genome-scale data. GMOD
 includes many widely-used software components:
-[GBrowse](GBrowse.1 "GBrowse") and [JBrowse](JBrowse.1 "JBrowse"), both
-genome viewers; [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), a
+[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1), both
+genome viewers; [GBrowse_syn](/wiki/GBrowse_syn.1), a
 comparative genomics viewer;
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>, a generic
-and modular database schema; [CMap](CMap.1 "CMap"), a comparative map
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, a generic
+and modular database schema; [CMap](/wiki/CMap.1), a comparative map
 viewer; as well as many other components including
-[Apollo](Apollo.1 "Apollo"), [MAKER](MAKER.1 "MAKER"),
-[BioMart](BioMart "BioMart"), [InterMine](InterMine "InterMine"), and
-[Galaxy](Galaxy.1 "Galaxy"). We hope to extend the functionality of
+[Apollo](/wiki/Apollo.1), [MAKER](/wiki/MAKER.1),
+[BioMart](/wiki/BioMart), [InterMine](/wiki/InterMine), and
+[Galaxy](/wiki/Galaxy.1). We hope to extend the functionality of
 existing GMOD components, and integrate new components as well.
 
 ## About Hackathons
@@ -97,29 +96,29 @@ end-users.
 
 Sincerely,
 
-The [GMOD EvoHack](GMOD_Evo_Hackathon "GMOD Evo Hackathon") Organizing
+The [GMOD EvoHack](/wiki/GMOD_Evo_Hackathon) Organizing
 Committee (and project affiliations as relevant):
 
-- [Nicole Washington](User%253ANLWashington "User%253ANLWashington"), Chair
+- [Nicole Washington](/wiki/User%253ANLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
-  rel="nofollow">modENCODE</a>, [Phenote](Phenote "Phenote"))
-- [Robert Buels](User%253ARobertBuels "User%253ARobertBuels")
+  rel="nofollow">modENCODE</a>, [Phenote](/wiki/Phenote))
+- [Robert Buels](/wiki/User%253ARobertBuels)
   (<a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>, Chado NatDiv)
-- [Scott Cain](User%253AScott "User%253AScott") (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User%253AScott) (Ontario Institute for Cancer
   Research, GMOD)
-- [Dave Clements](User%253AClements "User%253AClements")
+- [Dave Clements](/wiki/User%253AClements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, GMOD)
-- [Hilmar Lapp](User%253AHlapp "User%253AHlapp")
+- [Hilmar Lapp](/wiki/User%253AHlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
-- [Sheldon McKay](User%253AMckays "User%253AMckays") (University of Arizona;
+- [Sheldon McKay](/wiki/User%253AMckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
-  rel="nofollow">iPlant</a>, [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"))
+  rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn.1))
 
-## About the [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon")
+## About the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon)
 
 ### Overview
 
@@ -164,7 +163,7 @@ which they have the most experience or interest.
 ### Deliverables / Event Results
 
 The meeting’s attendance, working groups, and outcomes will be fully
-logged and documented on the [GMOD wiki](Main_Page "Main Page"). Each
+logged and documented on the [GMOD wiki](/wiki/Main_Page). Each
 working group during the event will typically have its own wiki page,
 linked from the main EvoHack page, where it documents its minutes and
 design notes, and provides links to the code and documentation it
@@ -189,10 +188,10 @@ demographic boundaries.
 
 ## Links
 
-- [Main GMOD EvoHack page](GMOD_Evo_Hackathon "GMOD Evo Hackathon")
+- [Main GMOD EvoHack page](/wiki/GMOD_Evo_Hackathon)
 - <a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>
-- [GMOD](Main_Page "Main Page")
+- [GMOD](/wiki/Main_Page)
 - <a href="http://www.uninstallersoftware.net/" class="external text"
   rel="nofollow">uninstall google toolbar</a>
 - <a href="http://hackathon.nescent.org/" class="external text"

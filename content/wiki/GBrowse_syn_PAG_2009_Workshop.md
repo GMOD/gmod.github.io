@@ -12,14 +12,14 @@ width="250" height="80" alt="GBrowse syn" />
 
 This [Comparative Genomics with GBrowse_syn: A hands on workshop for
 visualizing your syntenic data with
-GBrowse_syn](GBrowse_syn.1 "GBrowse syn") tutorial was presented by
-[Sheldon McKay](User%253AMckays "User%253AMckays"), [Scott
-Cain](User%253AScott "User%253AScott"), and [Dave
-Clements](User%253AClements "User%253AClements") at the
+GBrowse_syn](/wiki/GBrowse_syn.1) tutorial was presented by
+[Sheldon McKay](/wiki/User%253AMckays), [Scott
+Cain](/wiki/User%253AScott), and [Dave
+Clements](/wiki/User%253AClements) at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome Conference</a>, January 2009. The
 most recent GBrowse syn tutorial can be found at the
-<a href="GBrowse_syn_Tutorial" class="mw-redirect"
+<a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse syn Tutorial</a> page.
 
 
@@ -28,7 +28,7 @@ This page provides additional information about the
 class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome XVII Conference</a> ([PAG
-2009](PAG_2009 "PAG 2009")) held in San Diego on January 10-14, 2009.
+2009](/wiki/PAG_2009)) held in San Diego on January 10-14, 2009.
 This workshop was attended by almost 70 people.
 
   Overview](#Overview)
@@ -50,30 +50,30 @@ This workshop was attended by almost 70 people.
 
 ## Overview
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a tool for visualizing
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a> in up
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a tool for visualizing
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a> in up
 5 different genomes. This will be a hands-on tutorial on how to install,
 configure and use GBrowse_syn.
 
 GBrowse_syn is a part of the GMOD Project and is included in the latest
-release (1.69) of the popular [GBrowse](GBrowse.1 "GBrowse") genome
+release (1.69) of the popular [GBrowse](/wiki/GBrowse.1) genome
 browser. (GBrowse is the topic of a [separate
-workshop](GBrowse_PAG_2009_Workshop "GBrowse PAG 2009 Workshop") at [PAG
-2009](PAG_2009 "PAG 2009").
+workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
+2009](/wiki/PAG_2009).
 
 ## Workshop Instructors
 
-- [Sheldon McKay](User%253AMckays "User%253AMckays"),
+- [Sheldon McKay](/wiki/User%253AMckays),
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant Collaborative</a> (and author of
-  [GBrowse_syn](GBrowse_syn.1 "GBrowse syn")),
+  [GBrowse_syn](/wiki/GBrowse_syn.1)),
   <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
   Spring Harbor Laboratory</a>
-- [Scott Cain](User%253AScott "User%253AScott"), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
-- [Dave Clements](User%253AClements "User%253AClements"),
-  [GMOD_Help_Desk](GMOD_Help_Desk "GMOD Help Desk"),
+- [Dave Clements](/wiki/User%253AClements),
+  [GMOD_Help_Desk](/wiki/GMOD_Help_Desk),
   <a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>
 
@@ -82,8 +82,8 @@ workshop](GBrowse_PAG_2009_Workshop "GBrowse PAG 2009 Workshop") at [PAG
 Beginner to Intermediate. Students should be comfortable performing
 simple system Linux administration tasks like stopping and starting
 services, and installing software. No prior knowledge of
-[GBrowse](GBrowse.1 "GBrowse") or
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is required.
+[GBrowse](/wiki/GBrowse.1) or
+[GBrowse_syn](/wiki/GBrowse_syn.1) is required.
 
 The tutorial was aimed at computer-savvy biologists and computer
 scientists working with syntenic data.
@@ -111,7 +111,7 @@ workshop.
 
 ### VMware
 
-Which software to use to run [VMware](VMware_HOWTO "VMware HOWTO")
+Which software to use to run [VMware](/wiki/VMware_HOWTO)
 images depends on the operating system you will run the image under. (It
 does not depend on the operating system inside the VMware image.)
 
@@ -126,9 +126,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](Category%253AWindows "Category%253AWindows") and
-[Linux](Category%253ALinux "Category%253ALinux") [operating
-systems](Glossary#Operating_System "Glossary") from
+Windows](/wiki/Category%253AWindows) and
+[Linux](/wiki/Category%253ALinux) [operating
+systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
 There are multiple versions. Be sure to download a version that can run
@@ -145,7 +145,7 @@ alt="Apple" /></a>
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 There is no free VMware player that runs *directly* under [Mac OS
-X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
+X](/wiki/Category%253AMac_OS_X). However, there are several
 other options, **all of which require an Intel Mac**:
 
 
@@ -190,7 +190,7 @@ rel="nofollow">VMware</a> system image.*
 ### System Image
 
 - The virtual disk image can be downloaded from
-  <a href="ftp://ftp.wormbase.org/pub/gmod" class="external text"
+  <a href="/wiki/ftp://ftp.wormbase.org/pub/gmod" class="external text"
   rel="nofollow">WormBase ftp</a>
 - The disk image is approximately 1 gigabyte.
 
@@ -198,16 +198,16 @@ rel="nofollow">VMware</a> system image.*
 
 ## Other GMOD Presentations and Meetings
 
-GMOD had a [strong presence](PAG_2009 "PAG 2009") at PAG 2009, including
+GMOD had a [strong presence](/wiki/PAG_2009) at PAG 2009, including
 a [workshop on
-GBrowse](GBrowse_PAG_2009_Workshop "GBrowse PAG 2009 Workshop") itself.
+GBrowse](/wiki/GBrowse_PAG_2009_Workshop) itself.
 See the [list of GMOD related PAG 2009
-presentations](PAG_2009 "PAG 2009") for more. The [January 2009 GMOD
-Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting") was held
+presentations](/wiki/PAG_2009) for more. The [January 2009 GMOD
+Meeting](/wiki/January_2009_GMOD_Meeting) was held
 in San Diego, immediately after PAG 2009.
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse syn](GBrowse_syn.1 "GBrowse syn") |
+| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse syn](/wiki/GBrowse_syn.1) |

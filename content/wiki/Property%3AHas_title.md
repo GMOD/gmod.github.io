@@ -26,7 +26,7 @@ Showing 25 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">BioMart user community  </td>
 </tr>
@@ -35,14 +35,14 @@ title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">Gramene  ,
 NCGR's Legume Information System  ,
 BeeBase  , </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">Generic Gene Ontology Canto  ,
 PomBase Canto  </td>
@@ -52,7 +52,7 @@ PomBase Canto  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">DIYA: a bacterial annotation pipeline for any
 genomics lab.  </td>
@@ -62,14 +62,14 @@ genomics lab.  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">WormBase  ,
 FlyBase  ,
 HapMap  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse_syn.1"
+<td class="smwpropname"><a href="/wiki/GBrowse_syn.1"
 title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The Arabidopsis Information Resource  ,
 WormBase  , Sol
@@ -77,14 +77,14 @@ Genomics  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
+<td class="smwpropname"><a href="/wiki/GO%253A%253ATermFinder.1"
 title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GO::TermFinder--open source software for accessing
 Gene Ontology information and finding significantly enriched Gene
 Ontology terms associated with a list of genes.  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Galaxy source code documentation  ,
 Galaxy publication library  ,
@@ -96,7 +96,7 @@ ully supported, publicly accessible platforms for using Galaxy  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">InterMine source at GitHub  ,
 FlyMine  ,
@@ -107,7 +107,7 @@ YeastMine  , </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">JBrowse demos  ,
 Ice Man Genome  ,
@@ -115,12 +115,12 @@ Genomes Unzipped: Public Personal Genomics  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">JBrowse demos  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="User%253AJimHu/Gbrowse"
+<td class="smwpropname"><a href="/wiki/User%253AJimHu/Gbrowse"
 title="User%253AJimHu/Gbrowse">JimHu/Gbrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The generic genome browser: a building block for a
 model organism system database.  </td>
@@ -130,7 +130,7 @@ model organism system database.  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">MAKER Web Annotation Server  ,
 Ant Genomes Portal  ,
@@ -141,7 +141,7 @@ MAKER-P  , </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Dec_6th,_2013"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Dec_6th,_2013"
 title="News/GMOD Paper Cuts, Dec 6th, 2013">News/GMOD Paper Cuts, Dec
 6th, 2013</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The king cobra genome reveals dynamic gene
@@ -153,7 +153,7 @@ high-throughput data and analysis tools  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Feb_10th,_2014"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Feb_10th,_2014"
 title="News/GMOD Paper Cuts, Feb 10th, 2014">News/GMOD Paper Cuts, Feb
 10th, 2014</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Finding the missing honey bee genes: lessons
@@ -165,7 +165,7 @@ Extensive Network Plasticity in Response to Abiotic Stress  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Jan_24th,_2014"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Jan_24th,_2014"
 title="News/GMOD Paper Cuts, Jan 24th, 2014">News/GMOD Paper Cuts, Jan
 24th, 2014</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">CoryneBase: Corynebacterium Genomic Resources and
@@ -175,7 +175,7 @@ Causes Sudden Death Syndrome in Soybean  ,
 Genome of the human hookworm Necator americanus  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Nov_15th,_2013"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Nov_15th,_2013"
 title="News/GMOD Paper Cuts, Nov 15th, 2013">News/GMOD Paper Cuts, Nov
 15th, 2013</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The Aspergillus genome database: multispecies
@@ -187,7 +187,7 @@ WormBase 2014: new views of curated biology  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Nov_22nd,_2013"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Nov_22nd,_2013"
 title="News/GMOD Paper Cuts, Nov 22nd, 2013">News/GMOD Paper Cuts, Nov
 22nd, 2013</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">The Genome Database for Rosaceae (GDR): year 10
@@ -197,7 +197,7 @@ FlyBase 101 - the basics of navigating FlyBase  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="News/GMOD_Paper_Cuts,_Nov_8th,_2013"
+<td class="smwpropname"><a href="/wiki/News/GMOD_Paper_Cuts,_Nov_8th,_2013"
 title="News/GMOD Paper Cuts, Nov 8th, 2013">News/GMOD Paper Cuts, Nov
 8th, 2013</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">mRNA-Seq and microarray development for the Grooved
@@ -214,7 +214,7 @@ loci for Alzheimer's disease  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Pathway Tools version 13.0: integrated software for
 pathway/genome informatics and systems biology.  ,
@@ -227,7 +227,7 @@ The pathway tools pathway prediction algorithm.  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Site_Guidelines"
+<td class="smwpropname"><a href="/wiki/Site_Guidelines"
 title="Site Guidelines">Site Guidelines</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">mRNA-Seq and microarray development for the Grooved
 carpet shell clam, Ruditapes decussatus: a functional approach to
@@ -239,7 +239,7 @@ Tripal: a construction toolkit for online genome databases.  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Textpresso User Guide  ,
 Textpresso for Sea Urchin  ,
@@ -247,7 +247,7 @@ Textpresso for S. cerevisiae  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Tripal Home  ,
 Download and Install Tripal  </td>
@@ -257,7 +257,7 @@ Download and Install Tripal  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebApollo.1"
+<td class="smwpropname"><a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Trellis server  ,
 WebApollo demo - Bos taurus genome  ,
@@ -265,7 +265,7 @@ WebApollo download  ,
 </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebApollo2"
+<td class="smwpropname"><a href="/wiki/WebApollo2"
 title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Client and server  ,
 WebApollo2 demo  ,
@@ -277,4 +277,4 @@ WebApollo download  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

@@ -4,11 +4,11 @@ title: "News/March 2010 Calendar"
 # News/March 2010 Calendar
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
-height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
+height="35" alt="GMOD Calendar" />](../Calendar)
 
 There is always a lot going on that is of interest to the GMOD
 community. Anything that GMOD staff knows about is added to the GMOD
-[Calendar](../Calendar "Calendar"). I'm going to start posting the GMOD
+[Calendar](../Calendar). I'm going to start posting the GMOD
 calendar here for the upcoming month.
 
 
@@ -19,12 +19,12 @@ and the GMOD News will be a little less cluttered.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/02/22*
+*Posted to the [GMOD News](../GMOD_News) on 2010/02/22*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

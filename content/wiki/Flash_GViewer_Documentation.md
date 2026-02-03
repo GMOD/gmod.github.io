@@ -35,7 +35,7 @@ title: "Flash GViewer Documentation"
 
 **A customizable web tool for visualizing genome-wide annotation**
 
-See also [Flash GViewer](Flash_GViewer "Flash GViewer").
+See also [Flash GViewer](/wiki/Flash_GViewer).
 
 Simon Twigger, Medical College of Wisconsin © 2005 Last Modified:
 February 16, 2006

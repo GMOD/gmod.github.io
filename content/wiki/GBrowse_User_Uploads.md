@@ -3,7 +3,7 @@ title: "GBrowse User Uploads"
 ---
 # GBrowse User Uploads
 
-[GBrowse](GBrowse.1 "GBrowse") allows users to supplement the database
+[GBrowse](/wiki/GBrowse.1) allows users to supplement the database
 with their own data as Custom Tracks in a variety of file formats
 including BAM, SAM, GFF, GFF3, BedLoader, and more. Users can upload
 data files of their own, link remote data files from a URL, or create an

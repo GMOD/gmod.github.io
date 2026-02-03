@@ -24,7 +24,7 @@ This category contains only the following file.
 
 
   [Gmod
-  OneCogTransparent...](File:Gmod_OneCogTransparentSmall.png "File:Gmod OneCogTransparentSmall.png")
+  OneCogTransparent...](/wiki/File:Gmod_OneCogTransparentSmall.png)
   4 KB
 
 

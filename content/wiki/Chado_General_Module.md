@@ -176,7 +176,7 @@ decided.
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [dbxref](Chado_Tables#Table:_dbxref "Chado Tables")
+- [dbxref](/wiki/Chado_Tables#Table:_dbxref)
 
 ---
 
@@ -216,7 +216,7 @@ written as \<DB\>:\<ACCESSION\> or as \<DB\>:\<ACCESSION\>:\<VERSION\>.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_db"
+<td><p><a href="/wiki/Chado_Tables#Table:_db"
 title="Chado Tables">db</a></p></td>
 <td>db_id</td>
 <td>integer</td>
@@ -250,25 +250,25 @@ dbxref Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-- [assay](Chado_Tables#Table:_assay "Chado Tables")
-- [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables")
-- [biomaterial_dbxref](Chado_Tables#Table:_biomaterial_dbxref "Chado Tables")
-- [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")
-- [cvterm_dbxref](Chado_Tables#Table:_cvterm_dbxref "Chado Tables")
-- [dbxrefprop](Chado_Tables#Table:_dbxrefprop "Chado Tables")
-- [element](Chado_Tables#Table:_element "Chado Tables")
-- [feature](Chado_Tables#Table:_feature "Chado Tables")
-- [feature_cvterm_dbxref](Chado_Tables#Table:_feature_cvterm_dbxref "Chado Tables")
-- [feature_dbxref](Chado_Tables#Table:_feature_dbxref "Chado Tables")
-- [organism_dbxref](Chado_Tables#Table:_organism_dbxref "Chado Tables")
-- [phylonode_dbxref](Chado_Tables#Table:_phylonode_dbxref "Chado Tables")
-- [phylotree](Chado_Tables#Table:_phylotree "Chado Tables")
-- [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-- [pub_dbxref](Chado_Tables#Table:_pub_dbxref "Chado Tables")
-- [stock](Chado_Tables#Table:_stock "Chado Tables")
-- [stock_dbxref](Chado_Tables#Table:_stock_dbxref "Chado Tables")
-- [study](Chado_Tables#Table:_study "Chado Tables")
+- [arraydesign](/wiki/Chado_Tables#Table:_arraydesign)
+- [assay](/wiki/Chado_Tables#Table:_assay)
+- [biomaterial](/wiki/Chado_Tables#Table:_biomaterial)
+- [biomaterial_dbxref](/wiki/Chado_Tables#Table:_biomaterial_dbxref)
+- [cvterm](/wiki/Chado_Tables#Table:_cvterm)
+- [cvterm_dbxref](/wiki/Chado_Tables#Table:_cvterm_dbxref)
+- [dbxrefprop](/wiki/Chado_Tables#Table:_dbxrefprop)
+- [element](/wiki/Chado_Tables#Table:_element)
+- [feature](/wiki/Chado_Tables#Table:_feature)
+- [feature_cvterm_dbxref](/wiki/Chado_Tables#Table:_feature_cvterm_dbxref)
+- [feature_dbxref](/wiki/Chado_Tables#Table:_feature_dbxref)
+- [organism_dbxref](/wiki/Chado_Tables#Table:_organism_dbxref)
+- [phylonode_dbxref](/wiki/Chado_Tables#Table:_phylonode_dbxref)
+- [phylotree](/wiki/Chado_Tables#Table:_phylotree)
+- [protocol](/wiki/Chado_Tables#Table:_protocol)
+- [pub_dbxref](/wiki/Chado_Tables#Table:_pub_dbxref)
+- [stock](/wiki/Chado_Tables#Table:_stock)
+- [stock_dbxref](/wiki/Chado_Tables#Table:_stock_dbxref)
+- [study](/wiki/Chado_Tables#Table:_study)
 
 ---
 
@@ -280,8 +280,8 @@ project Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [assay_project](Chado_Tables#Table:_assay_project "Chado Tables")
-- [wwwuser_project](Chado_Tables#Table:_wwwuser_project "Chado Tables")
+- [assay_project](/wiki/Chado_Tables#Table:_assay_project)
+- [wwwuser_project](/wiki/Chado_Tables#Table:_wwwuser_project)
 
 ---
 
@@ -293,7 +293,7 @@ tableinfo Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [control](Chado_Tables#Table:_control "Chado Tables")
-- [magedocumentation](Chado_Tables#Table:_magedocumentation "Chado Tables")
+- [control](/wiki/Chado_Tables#Table:_control)
+- [magedocumentation](/wiki/Chado_Tables#Table:_magedocumentation)
 
 ---

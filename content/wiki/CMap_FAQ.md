@@ -33,7 +33,7 @@ title: "CMap FAQ"
 ### What is this FAQ?
 
 It is the list of [Frequently Asked
-Questions](Category%253AFAQ "Category%253AFAQ") about [CMap](CMap.1 "CMap").
+Questions](/wiki/Category%253AFAQ) about [CMap](/wiki/CMap.1).
 
 ### How is it maintained?
 

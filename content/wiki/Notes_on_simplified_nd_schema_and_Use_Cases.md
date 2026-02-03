@@ -59,7 +59,7 @@ stock
   relationship is defined through stock_relationship table
 - Stock Relationship Ontology under development in the page below
 
-<a href="Stock_Relationship_Ontology" class="external free"
+<a href="/wiki/Stock_Relationship_Ontology" class="external free"
 rel="nofollow">http://gmod.org/wiki/Stock_Relationship_Ontology</a>
 
 

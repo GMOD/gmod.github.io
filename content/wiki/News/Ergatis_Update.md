@@ -33,17 +33,17 @@ href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0959894"
 class="external text" rel="nofollow">Data Intensive Academic Grid
 (DIAG)</a>, which will provide a publicly-accessible Ergatis instance as
 one of its access methods. At the [January 2010 GMOD
-Meeting](../January_2010_GMOD_Meeting "January 2010 GMOD Meeting") Chris
+Meeting](../January_2010_GMOD_Meeting) Chris
 Hemmerich [presented
-ISGA](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf "File:Jan2010ErgatisForBiologists.pdf"),
+ISGA](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf),
 which provides a customized, abstract interface to Ergatis designed for
 biologists with specific pipeline needs.
 
-[Joshua Orvis](../User%253AJorvis "User%253AJorvis")
+[Joshua Orvis](../User%253AJorvis)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/05/20*
+*Posted to the [GMOD News](../GMOD_News) on 2010/05/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

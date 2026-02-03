@@ -20,7 +20,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Galaxy/Python and Bioinformatics Engineers positions at the J.Craig Venter Institute" /></a>
 
 one of which involves largely developing further the
-[Galaxy](../Galaxy.1 "Galaxy") platform for use in-house (writing
+[Galaxy](../Galaxy.1) platform for use in-house (writing
 additional Galaxy wrappers for internal pipelines / tools, integrating
 Galaxy with existing cluster systems, SGE etc.)
 
@@ -47,7 +47,7 @@ rel="nofollow">J.Craig Venter Institute</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/11/18*
+*Posted to the [GMOD News](../GMOD_News) on 2010/11/18*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

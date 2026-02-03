@@ -43,9 +43,9 @@ rel="nofollow">http://github.com/solgenomics/bio-chado-schema</a>
 
 ### Contributors
 
-- [Robert Buels](User%253ARobertBuels "User%253ARobertBuels") (Sol Genomics
+- [Robert Buels](/wiki/User%253ARobertBuels) (Sol Genomics
   Network)
-- [Naama Menda](User%253ANaamaMenda "User%253ANaamaMenda") (Sol Genomics
+- [Naama Menda](/wiki/User%253ANaamaMenda) (Sol Genomics
   Network)
 - Aureliano Bombarely (Sol Genomics Network)
 - Jonathan "Duke" Leto (Sol Genomics Network)
@@ -76,7 +76,7 @@ is often sufficient.
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
 | **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
-class="external text" rel="nofollow">gmod-schema</a> | Use the <a href="Chado" class="mw-redirect" title="Chado">Chado</a> list (gmod-schema) for all **Bio%253A%253AChado%253A%253ASchema** questions. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
+class="external text" rel="nofollow">gmod-schema</a> | Use the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> list (gmod-schema) for all **Bio%253A%253AChado%253A%253ASchema** questions. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://old.nabble.com/gmod-schema-f3506.html"
 class="external text" rel="nofollow">Nabble (old)</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
 class="external text" rel="nofollow">Nabble (new, 2010/05+)</a>, <a

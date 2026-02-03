@@ -4,7 +4,7 @@ title: "News/October 2010 Calendar"
 # News/October 2010 Calendar
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Calendar_icon.gif" width="36"
-height="35" alt="GMOD Calendar" />](../Calendar "GMOD Calendar")
+height="35" alt="GMOD Calendar" />](../Calendar)
 
 October is calmer than September, but is still relatively full:
 
@@ -12,7 +12,7 @@ Deadlines
 
 - SWAT4LS: Semantic Web Applications for Life Sciences abstracts
 - Rocky '10 Bionformatics Conference abstracts
-- [Plant and Animal Genome (PAG)](../PAG_2011 "PAG 2011") early
+- [Plant and Animal Genome (PAG)](../PAG_2011) early
   registration
 - EMBO Global Exchange Lecture Course on Bioinformatics and Comparative
   Genome Analysis registration
@@ -33,12 +33,12 @@ send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/23*
+*Posted to the [GMOD News](../GMOD_News) on 2010/09/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

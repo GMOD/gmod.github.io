@@ -26,8 +26,8 @@ rel="nofollow">GPL 3.0</a>
 
 Resources
 
-- [GMOD Component](Category%253AGMOD_Component "Category%253AGMOD Component")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
+- [GMOD Component](/wiki/Category%253AGMOD_Component)
+- [Annotation](/wiki/Category%253AAnnotation)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
@@ -40,18 +40,18 @@ Resources
 <tbody>
 
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253AInteracts_with"
+<td class="smwpropname"><a href="/wiki/Property%253AInteracts_with"
 title="Property:Interacts with">Interacts with</a></td>
-<td class="smwprops"><a href="Chado" class="mw-redirect"
+<td class="smwprops"><a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a> </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253AIs_open_source"
+<td class="smwpropname"><a href="/wiki/Property%253AIs_open_source"
 title="Property:Is open source">Is open source</a></td>
 <td class="smwprops">Yes </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a href="Property%253ALink_type"
+<td class="smwpropname"><a href="/wiki/Property%253ALink_type"
 title="Property:Link type">Link type</a></td>
 <td class="smwprops">website , demo
 server ,
@@ -60,13 +60,12 @@ documentation
 and wild URL </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253ARelease_date"
+<td class="smwpropname"><a href="/wiki/Property%253ARelease_date"
 title="Property:Release date">Release date</a></td>
 <td class="smwprops">1 November 2013 </td>
 </tr>
 <tr class="odd row-odd">
-<td class="smwpropname"><a
-href="Property%253ATool_functionality_or_classification"
+<td class="smwpropname"><a href="/wiki/Property%253ATool_functionality_or_classification"
 title="Property:Tool functionality or classification">Tool functionality or
 classification</a></td>
 <td class="smwprops">literature curation ,
@@ -74,31 +73,29 @@ functional annotation
 and community annotation </td>
 </tr>
 <tr class="even row-even">
-<td class="smwpropname"><a href="Property%253AWritten_in_language"
+<td class="smwpropname"><a href="/wiki/Property%253AWritten_in_language"
 title="Property:Written in language">Written in language</a></td>
 <td class="smwprops">Perl </td>
 </tr>
 <tr class="odd row-odd">
 <td class="smwspecname"><span class="smw-highlighter" data-type="1"
-data-state="inline" data-title="Property"><span class="smwbuiltin"><a
-href="Property%253AHas_subobject" title="Property:Has subobject">Has
+data-state="inline" data-title="Property"><span class="smwbuiltin"><a href="/wiki/Property%253AHas_subobject" title="Property:Has subobject">Has
 subobject</a></span><span class="smwttcontent">This property is a
 special property in this wiki.</span></span></td>
-<td class="smwspecs"><a href="Canto#http:.2F.2Fcuration.pombase.org.2F"
+<td class="smwspecs"><a href="/wiki/Canto#http:.2F.2Fcuration.pombase.org.2F"
 title="Canto">Canto#http://curation.pombase.org/</a> ,
-<a href="Canto#http:.2F.2Fcuration.pombase.org.2Fdemo"
+<a href="/wiki/Canto#http:.2F.2Fcuration.pombase.org.2Fdemo"
 title="Canto">Canto#http://curation.pombase.org/demo</a> ,
-<a href="Canto#https:.2F.2Fgithub.com.2Fpombase.2Fcanto"
+<a href="/wiki/Canto#https:.2F.2Fgithub.com.2Fpombase.2Fcanto"
 title="Canto">Canto#https://github.com/pombase/canto</a> ,
-<a
-href="Canto#https:.2F.2Fgithub.com.2Fpombase.2Fcanto.2Fblob.2Fmaster.2Fdocumentation.2Fcanto_admin.md"
+<a href="/wiki/Canto#https:.2F.2Fgithub.com.2Fpombase.2Fcanto.2Fblob.2Fmaster.2Fdocumentation.2Fcanto_admin.md"
 title="Canto">Canto#https://github.com/pombase/canto/blob/master/documentation/canto_admin.md</a>
 ,
-<a href="Canto#http:.2F.2Fcuration.pombase.org.2Fpombe"
+<a href="/wiki/Canto#http:.2F.2Fcuration.pombase.org.2Fpombe"
 title="Canto">Canto#http://curation.pombase.org/pombe</a> ,
-<a href="Canto#http:.2F.2Fcuration.pombase.org.2Funiprot"
+<a href="/wiki/Canto#http:.2F.2Fcuration.pombase.org.2Funiprot"
 title="Canto">Canto#http://curation.pombase.org/uniprot</a>
-and <a href="Canto#_564f9c71bf2847fc3c542a7b9ac7927f"
+and <a href="/wiki/Canto#_564f9c71bf2847fc3c542a7b9ac7927f"
 title="Canto">Canto</a> </td>
 </tr>
 </tbody>

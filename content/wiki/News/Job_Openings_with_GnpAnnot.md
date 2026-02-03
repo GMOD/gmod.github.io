@@ -41,7 +41,7 @@ technology.
 
 - experience in Java development
 - good knowledge of J2EE technologies (Hibernate, Spring, Struts et
-  JSP) - experience with [BioPerl](../BioPerl "BioPerl") or Perl objects
+  JSP) - experience with [BioPerl](../BioPerl) or Perl objects
 
 The job should start on the first of September 2008
 
@@ -72,7 +72,7 @@ rel="nofollow">INRA-URGI</a> in Versailles (Near Paris), France.
 The applicant will write specifications and develop/improve, databases
 and interfaces from the GMOD project
 (<a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
-[Apollo](../Apollo.1 "Apollo"), [GBrowse](../GBrowse.1 "GBrowse")).
+[Apollo](../Apollo.1), [GBrowse](../GBrowse.1)).
 
 **Skills**
 
@@ -103,7 +103,7 @@ yourself when you see her.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/17*
+*Posted to the [GMOD News](../GMOD_News) on 2008/07/17*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

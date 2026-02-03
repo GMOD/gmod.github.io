@@ -63,4 +63,4 @@ bacterial species. How should this be represented this in Chado?
 ## See also
 
 - [IGS Data
-  Representation](IGS_Data_Representation "IGS Data Representation")
+  Representation](/wiki/IGS_Data_Representation)

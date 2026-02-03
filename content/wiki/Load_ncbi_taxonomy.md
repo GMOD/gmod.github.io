@@ -5,10 +5,10 @@ title: "Load ncbi taxonomy"
 
 `load_ncbi_taxonomy.pl` is a perl script for loading NCBI taxonomy trees
 in the
-[**`phylotree`**](Chado_Phylogeny_Module#Table:_phylotree "Chado Phylogeny Module")[phylotree
-table](Chado_Phylogeny_Module#Table:_phylotree "Chado Phylogeny Module").
+[**`phylotree`**](/wiki/Chado_Phylogeny_Module#Table:_phylotree)[phylotree
+table](/wiki/Chado_Phylogeny_Module#Table:_phylotree).
 This script was contributed by [Naama
-Menda](User%253ANaamaMenda "User%253ANaamaMenda") at
+Menda](/wiki/User%253ANaamaMenda) at
 <a href="http://www.sgn.cornell.edu/" class="external text"
 rel="nofollow">Sol Genomics Network (SGN)</a> led by Lukas Mueller.
 

@@ -23,7 +23,7 @@ object-oriented schema) mapping onto rmdbs (mysql/postgresql). Chado is
 a new, more sophisticated, but generic schema. this page has been quite
 long and I am moving from gff3 bulkload to xmlxort, so **I will just
 keep this one here for record but not update it. the migration will
-continue at** [learn XMLXORT](Learn_XMLXORT "Learn XMLXORT")
+continue at** [learn XMLXORT](/wiki/Learn_XMLXORT)
 
 ## module-based migration
 
@@ -66,7 +66,7 @@ class="external text" rel="nofollow">chaos DTD</a>.
 
 Now I know XMLXORT will be finally used not only for sequence-related
 data but also for other data, I have to [learn
-XMLXORT](Learn_XMLXORT "Learn XMLXORT").
+XMLXORT](/wiki/Learn_XMLXORT).
 
 ## first step
 

@@ -10,17 +10,17 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/375px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/500px-GBrowseLogo.png 2x"
 width="250" height="59" alt="GBrowse" />
 
-This [GBrowse Next Generation Sequencing](GBrowse.1 "GBrowse") tutorial
-was presented by [Dave Clements](User%253AClements "User%253AClements") at the
-[Bioinformatics Australia 2009 (BA2009)](BA2009 "BA2009"), October 2009.
+This [GBrowse Next Generation Sequencing](/wiki/GBrowse.1) tutorial
+was presented by [Dave Clements](/wiki/User%253AClements) at the
+[Bioinformatics Australia 2009 (BA2009)](/wiki/BA2009), October 2009.
 The most recent GBrowse tutorial can be found at the [GBrowse
-Tutorial](GBrowse_Tutorial "GBrowse Tutorial") page.
+Tutorial](/wiki/GBrowse_Tutorial) page.
 
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
-through how to configure the [GBrowse](GBrowse.1 "GBrowse") genome
+This [tutorial](/wiki/Category%253ATutorials) walks you
+through how to configure the [GBrowse](/wiki/GBrowse.1) genome
 browser to display [Next Generation
-Sequencing](Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](/wiki/Next_Generation_Sequencing)
 (NGS) data using the
 <a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
@@ -103,7 +103,7 @@ how to get the image setup and running on your machine.***
 
 The starting image used for this tutorial is a modified copy of the one
 used at the start of the [2009 GMOD Summer School -
-Europe](2009_GMOD_Summer_School_-_Europe "2009 GMOD Summer School - Europe").
+Europe](/wiki/2009_GMOD_Summer_School_-_Europe).
 See below for what was added to the starting image for this tutorial.
 
 <table class="wikitable" style="margin-left: 1em; margin-top: 0;">
@@ -117,8 +117,7 @@ See below for what was added to the starting image for this tutorial.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><a
-href="ftp://ftp.gmod.org/pub/gmod/Meetings/2009/BA/GBrowseNGS.vmware.tar.gz"
+<td style="text-align: center;"><a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2009/BA/GBrowseNGS.vmware.tar.gz"
 class="external text" rel="nofollow">Starting Image</a><br />
 &#10;<hr />
 <p>Username: gmod<br />
@@ -131,7 +130,7 @@ Password: gmod</p></td>
 
 **Important Note**
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
+This [tutorial](/wiki/Category%253ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -143,8 +142,8 @@ available.
 ## Introduction
 
 The tutorial will show how to display [next generation
-sequence](Next_Generation_Sequencing "Next Generation Sequencing") (NGS)
-data in [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2") using
+sequence](/wiki/Next_Generation_Sequencing) (NGS)
+data in [GBrowse 2](/wiki/Category%253AGBrowse_2) using
 <a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a>. We'll use the example human data that comes
 with SAMtools to do that. First we'll load the reference sequence and
@@ -154,7 +153,7 @@ some gene models.
 
 The starting VMware image was created by starting with the starting
 image used in the [2009 GMOD Summer School -
-Europe](2009_GMOD_Summer_School_-_Europe "2009 GMOD Summer School - Europe").
+Europe](/wiki/2009_GMOD_Summer_School_-_Europe).
 Several key prerequisites, including GBrowse 2 and SAMtools, were then
 installed on that, and then the starting image was created.
 
@@ -557,7 +556,7 @@ to tie everything together.
 
 #### GFF3
 
-[GFF3](GFF3 "GFF3") is a widely used standard format for genomic
+[GFF3](/wiki/GFF3) is a widely used standard format for genomic
 annotation.
 
 When you are looking for GFF3 for an organism is a good place to start
@@ -884,7 +883,7 @@ but we'll leave it there because it is nice to have.
 #### Create the Human Database
 
 In the `human.conf` file, we told GBrowse that the data would come from
-a [MySQL](MySQL "MySQL") database called "human":
+a [MySQL](/wiki/MySQL) database called "human":
 
     [annotations:database]
     db_adaptor     = Bio::DB::SeqFeature::Store
@@ -1327,4 +1326,4 @@ Reset GBrowse and test this.
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") |
+| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse](/wiki/GBrowse.1) |

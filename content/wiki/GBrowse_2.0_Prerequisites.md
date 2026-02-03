@@ -4,7 +4,7 @@ title: "GBrowse 2.0 Prerequisites"
 # GBrowse 2.0 Prerequisites
 
 Before [installing GBrowse
-2.0](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO"), you will
+2.0](/wiki/GBrowse_2.0_Install_HOWTO.1), you will
 need to install some prerequisites on your system. Most prerequisites
 come as prepackaged binaries which can be installed from the command
 line or via GUI tools. This document describes the prerequisites for
@@ -132,7 +132,7 @@ fix:
 
 Then proceed to install Bio::Graphics::Browser2 from the CPAN shell as
 described in [GBrowse 2.0 Install
-HOWTO](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO").
+HOWTO](/wiki/GBrowse_2.0_Install_HOWTO.1).
 
 ### RPM Systems (yum)
 
@@ -173,7 +173,7 @@ You should use version 1.7.1 of BioPerl, currently available from CPAN:
 
 You're done installing prerequisites! You can now go back to the
 [GBrowse 2.0 Install
-HOWTO](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO"), and
+HOWTO](/wiki/GBrowse_2.0_Install_HOWTO.1), and
 follow the installation instructions for your platform.
 
 # MacOSX

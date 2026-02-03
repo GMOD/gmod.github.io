@@ -32,7 +32,7 @@ incorporation of RNA-Seq data to improve structural gene annotations**
 > source of information for the entire fungal research community.
 
 A redesigned website and expanded resources for AspGD, which is now
-using [JBrowse](../JBrowse.1 "JBrowse") as primary genome browser.
+using [JBrowse](../JBrowse.1) as primary genome browser.
 
 
 **CottonGen: a genomics, genetics and breeding database for cotton
@@ -46,10 +46,10 @@ research** <sup>[\[2\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1064-2)</sup>
 An update on the
 <a href="http://www.cottongen.org" class="external text"
 rel="nofollow">CottonGen database</a>, which uses the
-[Tripal](../Tripal.1 "Tripal") framework to make available data from a
+[Tripal](../Tripal.1) framework to make available data from a
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database,
-and to integrate the GMOD tools [GBrowse](../GBrowse.1 "GBrowse") and
-[CMap](../CMap.1 "CMap").
+and to integrate the GMOD tools [GBrowse](../GBrowse.1) and
+[CMap](../CMap.1).
 
 
 **WormBase 2014: new views of curated biology**
@@ -61,8 +61,8 @@ and to integrate the GMOD tools [GBrowse](../GBrowse.1 "GBrowse") and
 
 Updates and expansions on the WormBase website, which is notable not
 only for developing and using a number of GMOD tools, including
-[GBrowse](../GBrowse.1 "GBrowse") and
-[Textpresso](../Textpresso "Textpresso"), but also for being hosted
+[GBrowse](../GBrowse.1) and
+[Textpresso](../Textpresso), but also for being hosted
 entirely in the cloud.
 
 
@@ -78,7 +78,7 @@ yeast Saccharomyces boulardii.**
 > Mbp draft genome of this probiotic yeast.
 
 The newly-sequenced *Saccharomyces boulardii* genome, which was
-annotated with using [MAKER](../MAKER.1 "MAKER").
+annotated with using [MAKER](../MAKER.1).
 
 
 **DOOR 2.0: presenting operons and their functions through dynamic and
@@ -96,7 +96,7 @@ integrated views**
 A bright, lively update to the
 <a href="http://csbl.bmb.uga.edu/DOOR/" class="external text"
 rel="nofollow">Database of prokaryotic operons</a>, which uses
-[JBrowse](../JBrowse.1 "JBrowse") for sequence visualization.
+[JBrowse](../JBrowse.1) for sequence visualization.
 
 
 And finally, if you have access to the Wiley Online Library through your
@@ -107,7 +107,7 @@ rel="nofollow">http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi0915s43/a
 Cloud Computing with iPlant Atmosphere\], from Current Protocols in
 Bioinformatics, which details the resources available on the
 \[www.iplantcollaborative.org/‎ iPlant website\] and how to get started
-with tools such as [GBrowse](../GBrowse.1 "GBrowse").
+with tools such as [GBrowse](../GBrowse.1).
 
 
 Happy reading!
@@ -137,4 +137,4 @@ the GMOD project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/15*
+*Posted to the [GMOD News](../GMOD_News) on 2013/11/15*

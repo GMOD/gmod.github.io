@@ -27,13 +27,13 @@ information to annotations).
 The data layer takes care of interfacing with the different data
 sources. Customization of the data layer usually entails setting up
 access to different databases (e.g., your own
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> instance) to
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> instance) to
 even creating new adapters to read new data formats or schemas.
 
 ## Installation
 
 You can download Apollo from pre-built installer packages or getting the
-code from either [SVN](Glossary#SVN "Glossary") or tarball, both which
+code from either [SVN](/wiki/Glossary#SVN) or tarball, both which
 require building the application.
 
 ### Pre-built Installers
@@ -43,7 +43,7 @@ You can download OS-specific pre-built installer packages from the
 class="external text" rel="nofollow">Apollo installer page</a>. We
 provide the following installers:
 
-| Platform | Optionally bundled [JRE](Glossary#JRE "Glossary") |
+| Platform | Optionally bundled [JRE](/wiki/Glossary#JRE) |
 |----------|---------------------------------------------------|
 | Windows | Yes |
 | Mac OS X | No |
@@ -88,7 +88,7 @@ If you're using an IDE, chances are that your IDE will have SVN support
 
 We'll start off with seeing some of the features that Apollo can do.
 We'll be connecting to our local
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> instance. A
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> instance. A
 customized Apollo Chado configuration has been setup for this. Don't
 worry, we'll cover the details on how we did that once we talk about
 [setting up custom Chado
@@ -110,7 +110,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="406" alt="Chado adapter" />
 
 Tip: If you want to load the whole genomic region from
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> into Apollo,
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> into Apollo,
 you can enter **0** for both **Start** and **End** coordinates. This is
 useful so that you don't need to know the exact length of the sequence
 being loaded. Keep in mind that Apollo has a large memory footprint, so
@@ -189,7 +189,7 @@ newly created features should be named. For example, FlyBase uses
 `A`, `B`, `C` and so on.
 
 Let's make sure that our
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> connectivity
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> connectivity
 is working. Let's save our work using **File → Save as...**.
 
 <img
@@ -379,14 +379,14 @@ data. We'll come back and talk about the `Sequence Aligner` if we have
 time.
 
 Unfortunately we don't have the time to go over all the sophisticated
-editing features for [Apollo](Apollo.1 "Apollo"), but you can get more
+editing features for [Apollo](/wiki/Apollo.1), but you can get more
 information on all the powerful editing features from the
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
 class="external text" rel="nofollow">Apollo user's guide</a>.
 
 ## Configuring Apollo
 
-Ok, now that we got some idea of what [Apollo](Apollo.1 "Apollo") can
+Ok, now that we got some idea of what [Apollo](/wiki/Apollo.1) can
 do, let's talk about how to configure Apollo. First of all, be aware
 that all configuration files can live in two places:
 
@@ -522,7 +522,7 @@ set that up. The file that contains the Chado database configuration is
 Like all other configuration files, it resides in `$APOLLO_ROOT/conf`
 for the global configuration and `~/.apollo` for the user
 configurations. As you can guess from the file extension, this
-configuration is in [XML](Glossary#XML "Glossary") format (nice how all
+configuration is in [XML](/wiki/Glossary#XML) format (nice how all
 the formats between the configurations are so consistent, huh? =P). It
 contains a `<chado-adapter>` root element, with at least one
 `chadoInstance` child element and at least one `chadodb` element. The
@@ -659,7 +659,7 @@ ones). The XML will look something like this:
 
 ## Setting Up a Custom WebStart Instance
 
-One of the benefits of having [Apollo](Apollo.1 "Apollo") as a Java
+One of the benefits of having [Apollo](/wiki/Apollo.1) as a Java
 application is that we can make use of
 <a href="http://en.wikipedia.org/wiki/Java_Web_Start"
 class="external text" rel="nofollow">Java WebStart</a>. This is a great
@@ -800,7 +800,7 @@ WebStart instance. Let's call it `index.html`.
 ``` enter
  <html>
    <body>
-     <a href="apollo.jnlp">Launch Apollo!!!</a>
+     <a href="/wiki/apollo.jnlp">Launch Apollo!!!</a>
    </body>
  </html>
 ```
@@ -870,4 +870,4 @@ class="external text" rel="nofollow">Apollo Javadoc API</a>.
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Apollo](/wiki/Apollo.1) |

@@ -68,25 +68,25 @@ used.
 Database
 
 A [Database Management System
-(DBMS)](Glossary#Database_Management_System "Glossary"), the software
+(DBMS)](/wiki/Glossary#Database_Management_System), the software
 that manages a database. The PostgreSQL software is an example of a
 DBMS. The documentation rarely uses the term _database_ in this sense.
 
 A collection of tables or other database content stored within a
 particular DBMS, all of which can be queried together or otherwise
 mutually manimpulated -- [the topmost hierarchal
-element](Glossary#DBMS-Database "Glossary") in a DBMS's collection of
+element](/wiki/Glossary#DBMS-Database) in a DBMS's collection of
 data. By definition, data stored within different databases cannot be
 related, by query or otherwise. This is the sense of the term _database_
 in a DBMS context, such as PostgreSQL, but the Chado document rarely
 uses _database_ in this sense.
 
-A [set of organized data](Glossary#Database "Glossary") that is readable
+A [set of organized data](/wiki/Glossary#Database) that is readable
 by a computer. This is the sense intended most often within the Chado
 documentation. Usually, the word _database_ means something very
 specific, a particular revision or version of bioinformatic information
 stored in a Chado [database
-schema](Glossary#Database_Schema "Glossary").
+schema](/wiki/Glossary#Database_Schema).
 
 As an example the word _database_ might be used within this document to
 refer to a specific version of the Flybase data set, a version stored
@@ -96,10 +96,10 @@ Flybase drosopholid bioinformatic data.
 Schema
 
 A logical collection of tables or other DBMS-database content -- [the
-layer below the topmost](Glossary#DBMS-Schema "Glossary") in a DBMS's
+layer below the topmost](/wiki/Glossary#DBMS-Schema) in a DBMS's
 collection of data. An organizing concept somewhat similar to that of a
 folder or directory; data stored within different schema of the same
-[DBMS-Database](Glossary "Glossary") can be related and otherwise
+[DBMS-Database](/wiki/Glossary) can be related and otherwise
 mutually manipulated. This is the sense of the term _schema_ in a DBMS
 context, such as PostgreSQL, but the Chado documentation rarely uses the
 term _schema_ in this sense.
@@ -118,26 +118,26 @@ database structural elements that make up Chado.
 The Chado schema has been designed with modularity and
 compartmentalization of function in mind. Groups of tables concerned
 with a single knowledge domain are called _modules_. There is a core
-module, [_general_](Chado_General_Module "Chado General Module"),
+module, [_general_](/wiki/Chado_General_Module),
 concerned with data underlying all other classes, these tables store
 information about databases, databases identifiers, and general
 information about Chado tables. Equal in importance in Chado is
-[_cv_](Chado_CV_Module "Chado CV Module"), the module concerned with
+[_cv_](/wiki/Chado_CV_Module), the module concerned with
 **c**controlled **v**ocabularies or ontologies.
 
 All other sets of tables, or _modules_, link to these _general_ and _cv_
 tables directly or indirectly but are limited in scope to specific
 biological domains. For example, the [_sequence_
-module](Chado_Sequence_Module "Chado Sequence Module") is concerned with
+module](/wiki/Chado_Sequence_Module) is concerned with
 protein and nucleotide sequence, the [_pub_
-module](Chado_Publication_Module "Chado Publication Module") is
+module](/wiki/Chado_Publication_Module) is
 concerned with articles and publications, and so on. In addition to
 these limitations in scope we see an effective absence of redundancy.
 For example, there is a module called
-[_companalysis_](Chado_Companalysis_Module "Chado Companalysis Module"),
+[_companalysis_](/wiki/Chado_Companalysis_Module),
 short for ’’computational analysis”. Its tables are responsible for
 describing algorithms and the output of algorithms. The [_Mage_
-module](Chado_Mage_Module "Chado Mage Module") (for microarrays) uses
+module](/wiki/Chado_Mage_Module) (for microarrays) uses
 _companalysis_ in order to refer to algorithms in addition. The
 uniqueness, and generality, of the modules implies that one can rely on
 pre-existing modules for function if one is interested in introducing
@@ -168,7 +168,7 @@ excellent platform for annotation of biological data.
 
 Chado is considered to be one of the key components in the GMOD suite.
 It should not be considered **the** database of GMOD, there are other
-ways of storing data within GMOD (e.g. [BioSQL](BioSQL "BioSQL"),
+ways of storing data within GMOD (e.g. [BioSQL](/wiki/BioSQL),
 <a href="http://search.cpan.org/perldoc?Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a>,
 <a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature"
@@ -178,13 +178,13 @@ of this central position in GMOD it has been the focus of much software
 development, not just the design of the schema itself but in terms of
 components using it and _adaptor_ software that connect Chado to some
 other GMOD component. Thus we are able to use Chado with different
-browsers such as [GBrowse](GBrowse.1 "GBrowse") and
-[Apollo](Apollo.1 "Apollo") (the latter being able to both read from and
+browsers such as [GBrowse](/wiki/GBrowse.1) and
+[Apollo](/wiki/Apollo.1) (the latter being able to both read from and
 write to the database). We have a variety of tools that can be used to
-load sequence data as [GFF](GFF "GFF") into Chado and there are
+load sequence data as [GFF](/wiki/GFF) into Chado and there are
 different utilities that can move complex data in and out of Chado as
-[XML](Glossary#XML "Glossary") ([XORT](XORT.1 "XORT"),
-[GMODTools](GMODTools "GMODTools")).
+[XML](/wiki/Glossary#XML) ([XORT](/wiki/XORT.1),
+[GMODTools](/wiki/GMODTools)).
 
 ### Complexity and Detail
 
@@ -215,15 +215,15 @@ types is fully realized when they are tied to other types of data. For
 example, an evolutionary biologist may be studying the evolution of
 non-coding, regulatory sequences. In order to do this she will consider
 integrating expression data from microarrays (using the [_mage_
-module](Chado_Mage_Module "Chado Mage Module")) with sequence data
+module](/wiki/Chado_Mage_Module)) with sequence data
 (stored using the [_sequence_
-module](Chado_Sequence_Module "Chado Sequence Module")) from various
+module](/wiki/Chado_Sequence_Module)) from various
 species (the [_organism_
-module](Chado_Organism_Module "Chado Organism Module")) with
+module](/wiki/Chado_Organism_Module)) with
 phylogenetic trees ([_phylogeny_
-module](Chado_Phylogeny_Module "Chado Phylogeny Module")) with results
+module](/wiki/Chado_Phylogeny_Module)) with results
 from sequence comparison studies ([_companalysis_
-module](Chado_Companalysis_Module "Chado Companalysis Module")). This is
+module](/wiki/Chado_Companalysis_Module)). This is
 not to suggest that such an effort is easy, rather that with a schema
 like Chado such a proposition is actually _possible_.
 
@@ -231,10 +231,10 @@ like Chado such a proposition is actually _possible_.
 
 The community using Chado, and GMOD, is extensive and growing. Chado is
 in use at a number of sites worldwide (see [GMOD
-Users](GMOD_Users "GMOD Users")) and is being considered by researchers
+Users](/wiki/GMOD_Users)) and is being considered by researchers
 in related fields, notably molecular evolution and ecology. The Chado
 community is active and supports a number of different [mailing
-lists](GMOD_Mailing_Lists "GMOD Mailing Lists"). It is also notable that
+lists](/wiki/GMOD_Mailing_Lists). It is also notable that
 there are close ties not just between GMOD and Chado users but also
 between these two groups and the community of ontology developers (for
 example, <a href="http://obofoundry.org" class="external text"
@@ -245,11 +245,11 @@ rel="nofollow">NCBO</a>).
 There is also Chado Documentation in this Wiki:
 
 - [Chado - Getting
-  Started](Chado_-_Getting_Started "Chado - Getting Started")
-- [Introduction to Chado](Introduction_to_Chado "Introduction to Chado")
-- [FAQ for Chado](Chado_FAQ "Chado FAQ")
-- [Chado Tables](Chado_Tables "Chado Tables")
-- [Chado Best Practices](Chado_Best_Practices "Chado Best Practices")
+  Started](/wiki/Chado_-_Getting_Started)
+- [Introduction to Chado](/wiki/Introduction_to_Chado)
+- [FAQ for Chado](/wiki/Chado_FAQ)
+- [Chado Tables](/wiki/Chado_Tables)
+- [Chado Best Practices](/wiki/Chado_Best_Practices)
 
 ## Modules
 
@@ -264,51 +264,51 @@ organism and bioinformatics groups; these groups may want to swap in
 their own table variants within specific modules, or add modules of
 their own.
 
-- [Audit](Chado_Audit_Module "Chado Audit Module") - for database audit
+- [Audit](/wiki/Chado_Audit_Module) - for database audit
   trails
-- [Companalysis](Chado_Companalysis_Module "Chado Companalysis Module") -
+- [Companalysis](/wiki/Chado_Companalysis_Module) -
   for data from computational analysis
-- [Contact](Chado_Contact_Module "Chado Contact Module") - for people,
+- [Contact](/wiki/Chado_Contact_Module) - for people,
   groups, and organizations
-- [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
+- [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
   controlled vocabularies and ontologies
-- [Expression](Chado_Expression_Module "Chado Expression Module") - for
+- [Expression](/wiki/Chado_Expression_Module) - for
   summaries of RNA and protein expression
-- [General](Chado_General_Module "Chado General Module") - for
+- [General](/wiki/Chado_General_Module) - for
   identifiers
-- [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic
+- [Genetic](/wiki/Chado_Genetic_Module) - for genetic
   data and genotypes
-- [Library](Chado_Library_Module "Chado Library Module") - for
+- [Library](/wiki/Chado_Library_Module) - for
   descriptions of molecular libraries
-- [Mage](Chado_Mage_Module "Chado Mage Module") - for microarray data
-- [Map](Chado_Map_Module "Chado Map Module") - for maps without sequence
+- [Mage](/wiki/Chado_Mage_Module) - for microarray data
+- [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module") -
+  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
   for multiple experiments, such as phenotyping and genotyping
-- [Organism](Chado_Organism_Module "Chado Organism Module") - for
+- [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data
-- [Phenotype](Chado_Phenotype_Module "Chado Phenotype Module") - for
+- [Phenotype](/wiki/Chado_Phenotype_Module) - for
   phenotypic data
-- [Phylogeny](Chado_Phylogeny_Module "Chado Phylogeny Module") - for
+- [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
   organisms and phylogenetic trees
 - [Publication
-  (pub)](Chado_Publication_Module "Chado Publication Module") - for
+  (pub)](/wiki/Chado_Publication_Module) - for
   publications and references
-- [Sequence](Chado_Sequence_Module "Chado Sequence Module") - for
+- [Sequence](/wiki/Chado_Sequence_Module) - for
   sequences and sequence features
-- [Stock](Chado_Stock_Module "Chado Stock Module") - for specimens and
+- [Stock](/wiki/Chado_Stock_Module) - for specimens and
   biological collections
-- [WWW](Chado_WWW_Module "Chado WWW Module") -
+- [WWW](/wiki/Chado_WWW_Module) -
 
 ### Module Dependencies
 
 There is one module,
-[general](Chado_General_Module "Chado General Module"), that does not
+[general](/wiki/Chado_General_Module), that does not
 depend on or inherit from any other module. All other modules require
-[general](Chado_General_Module "Chado General Module") or some other
+[general](/wiki/Chado_General_Module) or some other
 module. Many modules require the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module") or the [cv
-module](Chado_CV_Module "Chado CV Module"), or both.
+module](/wiki/Chado_Sequence_Module) or the [cv
+module](/wiki/Chado_CV_Module), or both.
 
 | Module       | Depends on                                                    | ------------ | ------------------------------------------------------------- | general      | _none_                                                        | organism     | general cv                                                    | pub          | general cv                                                    | cv           | general                                                       | sequence     | cv general pub organism                                       | genetic      | sequence cv general pub phenotype                             | expression   | sequence cv pub                                               | map          | sequence cv pub                                               | rad          | sequence cv pub organism contact general companalysis         | companalysis | sequence cv                                                   | contact      | cv                                                            | library      | sequence cv pub organism                                      | phenotype    | cv sequence                                                   | phylogeny    | sequence cv pub organism general                              | stock        | cv pub general organism genetic                               | www          | sequence cv pub phenotype organism expression general genetic |
 
@@ -456,11 +456,11 @@ must always by >0 for AA sequences';
 ### Function Implementations
 
 The goal is to provide implementations for different dialects of
-procedural [SQL](Glossary#SQL "Glossary"). Currently only
-[PostgreSQL](PostgreSQL "PostgreSQL") dialect is supported. The psql
+procedural [SQL](/wiki/Glossary#SQL). Currently only
+[PostgreSQL](/wiki/PostgreSQL) dialect is supported. The psql
 implementations are stored in \*.plpgsql files.
 
 ## Glossary
 
-This document has a [glossary](Glossary "Glossary") of technical,
+This document has a [glossary](/wiki/Glossary) of technical,
 non-biological, terms.

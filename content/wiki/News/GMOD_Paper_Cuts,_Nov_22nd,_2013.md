@@ -31,10 +31,10 @@ our Mendeley group</a>.
 > data, and improved functionality.
 
 Lots of GMOD goodness in the Genome Database for Rosaceae, which is
-built using [Tripal](../Tripal.1 "Tripal"), includes [Pathway
-Tools](../Pathway_Tools.1 "Pathway Tools") data, and has integrated
-[GBrowse](../GBrowse.1 "GBrowse") and [GBrowse
-syn](../GBrowse_syn.1 "GBrowse syn") instances for sequence and synteny
+built using [Tripal](../Tripal.1), includes [Pathway
+Tools](../Pathway_Tools.1) data, and has integrated
+[GBrowse](../GBrowse.1) and [GBrowse
+syn](../GBrowse_syn.1) instances for sequence and synteny
 viewing respectively.
 
 
@@ -72,7 +72,7 @@ schema and users can query the database directly.
 PATRIC provides an immense data bank on bacteria: over 10,000 bacterial
 genomes as of Sept. 2013, projections of 15,000 by 2014. This paper
 details the resources provided, including their
-[JBrowse](../JBrowse.1 "JBrowse")-based genome browser, and Disease
+[JBrowse](../JBrowse.1)-based genome browser, and Disease
 View, which integrates data on pathogens, genes, diseases, and
 geolocation of disease reports. Very cool!
 
@@ -106,7 +106,7 @@ Resources**
 <a href="http://trifldb.psc.riken.jp/v3/index.pl" class="external text"
 rel="nofollow">TriFLDB, or the Triticeae full-length CDS database</a>,
 is a new resource of *Brachypodium* full length cDNA clones and other
-resources; it includes [GBrowse](../GBrowse.1 "GBrowse") for exploring
+resources; it includes [GBrowse](../GBrowse.1) for exploring
 the *B. distachyon* genome and its annotations further.
 
 
@@ -140,4 +140,4 @@ the GMOD project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/11/22*
+*Posted to the [GMOD News](../GMOD_News) on 2013/11/22*

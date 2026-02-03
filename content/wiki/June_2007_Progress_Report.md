@@ -130,7 +130,7 @@ can tell in attracting users for its software. There are approximately
 planaria database) and Sol Genomics Network (a Solanaceae genome
 database) and VectorBase (a database for Invertebrate Vectors of Human
 Pathogens). A list of known GMOD users is at
-<a href="GMOD_Users"
+<a href="/wiki/GMOD_Users"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/index.php/GMOD_Users</a>.
 
@@ -521,7 +521,7 @@ sites, for example:
   <a href="http://www.biokao.com/gviewer.html" class="external free"
   rel="nofollow">http://www.biokao.com/gviewer.html</a>
 - Boston University
-  [Phenotype](Category%253APhenotypes "Category%253APhenotypes") Browser
+  [Phenotype](/wiki/Category%253APhenotypes) Browser
   <a href="http://gmed.bu.edu/" class="external free"
   rel="nofollow">http://gmed.bu.edu/</a>
 - Apropos annotation tool

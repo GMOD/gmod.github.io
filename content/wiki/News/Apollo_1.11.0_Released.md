@@ -3,7 +3,7 @@ title: "News/Apollo 1.11.0 Released"
 ---
 # News/Apollo 1.11.0 Released
 
-A new version of [Apollo](../Apollo.1 "Apollo") has been released.
+A new version of [Apollo](../Apollo.1) has been released.
 Highlights for this release include:
 
 - The "Sequence Aligner" ("Exon Detail Editor" with alignment viewing)
@@ -22,7 +22,7 @@ Ed Lee
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/06/05*
+*Posted to the [GMOD News](../GMOD_News) on 2009/06/05*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

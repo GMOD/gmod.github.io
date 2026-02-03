@@ -7,9 +7,9 @@ title: "Bioperl Pipeline"
 > the GMOD project.
 > This page is included only for reference purposes.
 
-See <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
-[Galaxy](Galaxy.1 "Galaxy"), [Genome grid](Genome_grid "Genome grid"),
-[DIYA](DIYA "DIYA") and [MAKER](MAKER.1 "MAKER") for currently supported
+See <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
+[Galaxy](/wiki/Galaxy.1), [Genome grid](/wiki/Genome_grid),
+[DIYA](/wiki/DIYA) and [MAKER](/wiki/MAKER.1) for currently supported
 workflow and analysis packages.
 
   Description](#Description)
@@ -82,4 +82,4 @@ rel="nofollow">Maize annotation project</a>
 <a href="http://www.top-registry-cleaner.org/" class="external text"
 rel="nofollow">system registry cleaner</a>
 
-[ParameciumDB](ParameciumDB "ParameciumDB")
+[ParameciumDB](/wiki/ParameciumDB)

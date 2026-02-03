@@ -47,7 +47,7 @@ minutes for some of those meetings are here.
 ## 2010/02/12 Conference Call, February 12, 2010 2pm EST
 
 The minutes taken by
-[User%253ARobertBuels](User%253ARobertBuels "User%253ARobertBuels"), any
+[User%253ARobertBuels](/wiki/User%253ARobertBuels), any
 inaccuracies or omissions are his.
 
 ### Agenda
@@ -67,7 +67,7 @@ the focus on this topic. Some ideas I have are:
     bycurrent MSA formats.
 2.  Others...
 
-[mckays](User%253AMckays "User%253AMckays") 14:55, 12 February 2010 (UTC)
+[mckays](/wiki/User%253AMckays) 14:55, 12 February 2010 (UTC)
 
 - focus in on one or at most two implementation goals for the hackathon
 - identify which type of person we need to invite
@@ -76,11 +76,11 @@ the focus on this topic. Some ideas I have are:
   - drafting the proposal?
   - securing the venue?
     - NESCent has blocked out the second week of June or the last two
-      weeks of July for us [mckays](User%253AMckays "User%253AMckays") 14:55, 12
+      weeks of July for us [mckays](/wiki/User%253AMckays) 14:55, 12
       February 2010 (UTC)
       - June timeframe overlaps with Arthropod Genomics (at this time,
         only Carson Holt is going from GMOD); nothing overlaps yet with
-        last two weeks of July) - see [Calendar](Calendar "Calendar")
+        last two weeks of July) - see [Calendar](/wiki/Calendar)
         for what else is going on.
 
 ### Attendance
@@ -320,7 +320,7 @@ Please add/change items.
 - Dave Clements: check on natural diversity module and its relation to
   evolutionary phenotype data
   - Still don't know, but see [phenotype comparison
-    table](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
+    table](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
 - Hilmar: general edits
 - Rob: general edits
 

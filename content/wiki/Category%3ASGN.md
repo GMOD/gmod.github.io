@@ -25,36 +25,35 @@ The following 7 pages are in this category, out of 7 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="f">F</h3>
 <ul>
-<li><a
-href="Face_Caucus_SGN%253A_Associating_Solanaceae_loci_with_phenotype"
+<li><a href="/wiki/Face_Caucus_SGN%253A_Associating_Solanaceae_loci_with_phenotype"
 title="Face Caucus SGN: Associating Solanaceae loci with phenotype">Face
 Caucus SGN: Associating Solanaceae loci with phenotype</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="Gmod_load_cvterms" title="Gmod load cvterms">Gmod load
+<li><a href="/wiki/Gmod_load_cvterms" title="Gmod load cvterms">Gmod load
 cvterms</a></li>
 </ul>
 <h3 id="j">J</h3>
 <ul>
-<li><a href="July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
+<li><a href="/wiki/July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
 2008 GMOD Meeting</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="l">L</h3>
 <ul>
-<li><a href="Load_ncbi_taxonomy" title="Load ncbi taxonomy">Load ncbi
+<li><a href="/wiki/Load_ncbi_taxonomy" title="Load ncbi taxonomy">Load ncbi
 taxonomy</a></li>
 </ul>
 <h3 id="n">N</h3>
 <ul>
-<li><a href="User%253ANaamaMenda"
+<li><a href="/wiki/User%253ANaamaMenda"
 title="User%253ANaamaMenda">User%253ANaamaMenda</a></li>
-<li><a href="November_2007_GMOD_Meeting"
+<li><a href="/wiki/November_2007_GMOD_Meeting"
 title="November 2007 GMOD Meeting">November 2007 GMOD Meeting</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="r">R</h3>
 <ul>
-<li><a href="User%253ARobertBuels"
+<li><a href="/wiki/User%253ARobertBuels"
 title="User%253ARobertBuels">User%253ARobertBuels</a></li>
 </ul></td>
 </tr>
@@ -81,7 +80,7 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [Mod-face-07jan-SGN.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f4/Mod-face-07jan-SGN.pdf "File:Mod-face-07jan-SGN.pdf")
+  [Mod-face-07jan-SGN.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f4/Mod-face-07jan-SGN.pdf)
   2.17 MB
 
 
@@ -104,5 +103,5 @@ The following 2 files are in this category, out of 2 total.
 
 
 
-  [Sgn small tag.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Sgn_small_tag.png "File:Sgn small tag.png")
+  [Sgn small tag.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Sgn_small_tag.png)
   5 KB

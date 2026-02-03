@@ -9,5 +9,5 @@ sure that you have
 us your feedback</a> by then!
 
 Results will be discussed at the [April 2013 GMOD
-Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") in
+Meeting](../April_2013_GMOD_Meeting) in
 Cambridge, UK.

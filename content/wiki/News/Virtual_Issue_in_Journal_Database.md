@@ -41,12 +41,12 @@ meeting last year</a>.
 
 I look forward to your ideas and commitments!
 
-[Scott Cain](../User%253AScott "User%253AScott")
+[Scott Cain](../User%253AScott)
 GMOD Project Coordinator
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/01*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/01*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -66,7 +66,7 @@ All of:
 
 #### DBMS
 
-[PostgreSQL](PostgreSQL "PostgreSQL") 7.3 or 8.0
+[PostgreSQL](/wiki/PostgreSQL) 7.3 or 8.0
 
 #### Compilers
 

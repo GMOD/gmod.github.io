@@ -35,7 +35,7 @@ This page provides additional information about the
 class="external text" rel="nofollow">GBrowse workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome XVII Conference</a> ([PAG
-2009](PAG_2009 "PAG 2009")) held in San Diego on January 10-14, 2009.
+2009](/wiki/PAG_2009)) held in San Diego on January 10-14, 2009.
 This workshop was attended by over 60 people.
 
   Installation</span>](#Note_on_Installation)
@@ -65,14 +65,14 @@ rel="nofollow">here</a>.
   run GBrowse on your system
 
 Also, see the [Windows
-installation](GBrowse_Windows_HOWTO "GBrowse Windows HOWTO") guide and
-<a href="Gbrowse.1#Installation" class="mw-redirect"
+installation](/wiki/GBrowse_Windows_HOWTO) guide and
+<a href="/wiki/Gbrowse.1#Installation" class="mw-redirect"
 title="Gbrowse">guides for other operating systems</a>.
 
 ## Overview
 
 This was be a hands-on tutorial on how to install and use the
-[GBrowse](GBrowse.1 "GBrowse") genome browser.
+[GBrowse](/wiki/GBrowse.1) genome browser.
 
 ## Tutorial Level
 
@@ -81,7 +81,7 @@ simple system administration tasks like stopping and starting services.
 
 Students who wish to use their own computer should preinstall the
 prerequisites described in the [GBrowse installation
-notes](GBrowse.1#Installation "GBrowse"), including Perl, Apache, MySQL
+notes](/wiki/GBrowse.1#Installation), including Perl, Apache, MySQL
 and (for Unix) BioPerl.
 
 ## Intended Audience
@@ -107,11 +107,11 @@ intended to help them over those hurdles.
 - Displaying DNA and 3-frame translations
 - Features added in latest release, including draggable and collapsible
   tracks, and [popup
-  balloons](GBrowse_Popup_Balloons "GBrowse Popup Balloons")
+  balloons](/wiki/GBrowse_Popup_Balloons)
 
 ## Workshop Instructor
 
-- [Scott Cain](User%253AScott "User%253AScott"), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User%253AScott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
 
@@ -121,11 +121,11 @@ Example datasets will be posted prior to the conference.
 
 ## Other GMOD Presentations and Meetings
 
-GMOD will have a [strong presence](PAG_2009 "PAG 2009") at PAG 2009,
+GMOD will have a [strong presence](/wiki/PAG_2009) at PAG 2009,
 including a
-[workshop](GBrowse_syn_PAG_2009_Workshop "GBrowse syn PAG 2009 Workshop")
-on [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), a synteny viewer built on
+[workshop](/wiki/GBrowse_syn_PAG_2009_Workshop)
+on [GBrowse_syn](/wiki/GBrowse_syn.1), a synteny viewer built on
 GBrowse. See the [list of GMOD related PAG 2009
-presentations](PAG_2009 "PAG 2009") for more. The [January 2009 GMOD
-Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting") was held
+presentations](/wiki/PAG_2009) for more. The [January 2009 GMOD
+Meeting](/wiki/January_2009_GMOD_Meeting) was held
 in San Diego, immediately after PAG 2009.

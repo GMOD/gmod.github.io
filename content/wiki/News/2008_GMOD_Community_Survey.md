@@ -3,13 +3,13 @@ title: "News/2008 GMOD Community Survey"
 ---
 # News/2008 GMOD Community Survey
 
-|----| *Thanks to everyone who participated in the [2008 GMOD Community Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). Survey results are [now available](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"). The winners are Randall Svancara of <a href="http://www.bioinfo.wsu.edu" class="external text"
+|----| *Thanks to everyone who participated in the [2008 GMOD Community Survey](../2008_GMOD_Community_Survey). Survey results are [now available](../2008_GMOD_Community_Survey). The winners are Randall Svancara of <a href="http://www.bioinfo.wsu.edu" class="external text"
 rel="nofollow">Washington State University</a>, Victor Jun M. Ulat of the <a href="http://www.irri.org" class="external text"
 rel="nofollow">International Rice Research Institute</a> and Pinglei Zhou of <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>. 2008/11/20* |
 
 Please take a few minutes to fill out the [2008 GMOD Community
-Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey") and
+Survey](../2008_GMOD_Community_Survey) and
 your name will be entered to win a free [GMOD T-shirt or
 mug](#Get_GMOD_Gear.21)!
 
@@ -25,7 +25,7 @@ rel="nofollow">GMOD T-shirt or mug</a> of their choice. Names will be
 drawn from the first 100 responses we receive, so get your response in
 early.**
 
-Please contact the [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+Please contact the [GMOD Help Desk](../GMOD_Help_Desk)
 at <a href="mailto:help@gmod.org%7C" class="external text"
 rel="nofollow">&lt;help@gmod.org&gt;</a> if you have any questions.
 
@@ -35,8 +35,8 @@ Thank you,
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/10/17,
+*Posted to the [GMOD News](../GMOD_News) on 2008/10/17,
 updated 2008/11/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

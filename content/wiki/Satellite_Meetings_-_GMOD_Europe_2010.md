@@ -12,7 +12,7 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="September_2010_GMOD_Meeting"
+<td><a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/220px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
@@ -22,26 +22,26 @@ width="220" height="188" alt="September 2010 GMOD Meeting" /></a></td>
 &#10;
 
 <ul>
-<li><a href="Post_Reference_Genome_Tools"
+<li><a href="/wiki/Post_Reference_Genome_Tools"
 title="Post Reference Genome Tools">Post Reference Genome Tools</a></li>
-<li><a href="Community_Annotation_-_September_2010_Satellite"
+<li><a href="/wiki/Community_Annotation_-_September_2010_Satellite"
 title="Community Annotation - September 2010 Satellite">Community
 Annotation</a></li>
 </ul>
 <br />
-<a href="September_2010_GMOD_Meeting"
+<a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD
 Meeting</a><br />
 15 September 2010<br />
 Cambridge, UK
 </td>
-<td style="text-align: center;"><a href="GMOD_Europe_2010"
+<td style="text-align: center;"><a href="/wiki/GMOD_Europe_2010"
 title="Part of GMOD Europe 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/200px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
 width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 
-<a href="GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
+<a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
 2010</a>
 </td>
 </tr>
@@ -52,9 +52,9 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 
 
 The [Satellite
-Meetings](January_2010_GMOD_Meeting#Satellite_Meetings "January 2010 GMOD Meeting")
+Meetings](/wiki/January_2010_GMOD_Meeting#Satellite_Meetings)
 at the [January 2010 GMOD
-Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting") proved
+Meeting](/wiki/January_2010_GMOD_Meeting) proved
 so popular that we decided to hold them again.
 
 
@@ -71,10 +71,10 @@ so popular that we decided to hold them again.
 We discussed
 
 - *[Post Reference Genome
-  Tools](Post_Reference_Genome_Tools "Post Reference Genome Tools")* in
+  Tools](/wiki/Post_Reference_Genome_Tools)* in
   the morning session, and
 - *[Community
-  Annotation](Community_Annotation_-_September_2010_Satellite "Community Annotation - September 2010 Satellite")*
+  Annotation](/wiki/Community_Annotation_-_September_2010_Satellite)*
   in the afternoon.
 
 There is a nice
@@ -87,13 +87,13 @@ rel="nofollow">OpenHelix blog</a>.
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
+| [Dave Clements](/wiki/User%253AClements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
 rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | <a href="http://cgb.indiana.edu" class="external free"
+rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](/wiki/User%253AChemmeri) | <a href="http://cgb.indiana.edu" class="external free"
 rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
 rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
+rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](/wiki/User%253AScott) | OICR | <a href="http://gmod.org/" class="external free"
 rel="nofollow">http://gmod.org/</a> | Gerd Anders | Public research institute: Max-Delbrueck-Centrum Berlin (MDC), Researcher and database developer | <a
 href="http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html"
 class="external free"
@@ -143,13 +143,13 @@ and free to all who might benefit.
 CCBI provided copious organizational and logistical support for this
 event. The Bioinformatics Training Facility is generously providing all
 coffee, tea, and break snacks at no charge. Please thank Gos Micklem,
-[Richard Smith](User%253ARsmith "User%253ARsmith"), Shelley Lawson, and Dave
+[Richard Smith](/wiki/User%253ARsmith), Shelley Lawson, and Dave
 Judge profusely every time you see them.
 
 ## Lodging and Other Logistics
 
 See the [Logistics
-section](GMOD_Europe_2010#Logistics "GMOD Europe 2010") on the GMOD
+section](/wiki/GMOD_Europe_2010#Logistics) on the GMOD
 Europe 2010 page for information.
 
 ## Registration

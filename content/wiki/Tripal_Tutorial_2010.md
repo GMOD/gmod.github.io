@@ -10,17 +10,17 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](Tripal.1 "Tripal") tutorial was presented by [Stephen
-Ficklin](User%253ASficklin "User%253ASficklin") at the [2010 GMOD Summer
+This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+Ficklin](/wiki/User%253ASficklin) at the [2010 GMOD Summer
 School -
-Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas"),
+Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Tripal tutorial can be found at the
-<a href="Tripal_Tutorial" class="mw-redirect"
+<a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
-through installing and configuring [Tripal](Tripal.1 "Tripal"), a web
-front end to <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+This [tutorial](/wiki/Category%253ATutorials) walks you
+through installing and configuring [Tripal](/wiki/Tripal.1), a web
+front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 databases. This tutorial references (and complements) the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf"
 class="internal" title="TripalUsersGuideJan2010.pdf">Tripal User's
@@ -147,10 +147,8 @@ and install the start image (below). See VMware for what
 software you need to use a VMware system image and for directions on how
 to get the image up and running on your machine.
 
-Download the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day3.vmwarevm.tar.bz2"
-class="external text" rel="nofollow">start image</a> and the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Final.vmwarevm.tar.bz2"
+Download the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day3.vmwarevm.tar.bz2"
+class="external text" rel="nofollow">start image</a> and the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Final.vmwarevm.tar.bz2"
 class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
@@ -164,7 +162,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
+This [tutorial](/wiki/Category%253ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -177,7 +175,7 @@ available.
 
 1.  Tripal is open source and currently at version 0.2 (second release).
 2.  The documentation is complete enough to allow for setup of a site.
-3.  The [API](Glossary#API "Glossary") for adding customized modules
+3.  The [API](/wiki/Glossary#API) for adding customized modules
     will need to be added to the documentation.
 4.  A publication for Tripal is currently in the works and should be
     submitted this summer.
@@ -197,10 +195,10 @@ reference.
 - <a href="http://apache.org" class="external text"
   rel="nofollow">Apache</a> Web server
 - PHP (both command-line and web module)
-- [PostgreSQL](PostgreSQL "PostgreSQL") database management system
+- [PostgreSQL](/wiki/PostgreSQL) database management system
 - phpPgAdmin (for easy database administration)
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-- [BioPerl](BioPerl "BioPerl")
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+- [BioPerl](/wiki/BioPerl)
 - go-perl
 - <a href="http://drupal.org" class="external text"
   rel="nofollow">Drupal</a>
@@ -247,7 +245,7 @@ Set the memory limit:
 #### Install phpPgAdmin
 
 phpPgAdmin is a nice web-based utility for easy administration of a
-[PostgreSQL](PostgreSQL "PostgreSQL") database. It is not required for
+[PostgreSQL](/wiki/PostgreSQL) database. It is not required for
 successful operation of Tripal but is very useful.
 
 ``` enter
@@ -281,7 +279,7 @@ Set permission for the web user:
 ### Prepare Postgres
 
 We need to create two Postgres databases, one for the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> tables and
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> tables and
 the other for the Drupal tables.
 
       sudo su - postgres
@@ -337,7 +335,7 @@ this demonstration)
   install Spreadsheet::WriteExcel
 ```
 
-Download and install [BioPerl](BioPerl "BioPerl"):
+Download and install [BioPerl](/wiki/BioPerl):
 
 ``` enter
   cd /home/gmod/Documents/Software/tripal/packages/
@@ -373,7 +371,7 @@ Download and extract the gmod package:
 ```
 
 Set some environment variables that provide database connection for
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>:
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>:
 
 ``` enter
   export GMOD_ROOT=/home/gmod/Documents/Software/tripal/gmod-1.0
@@ -397,7 +395,7 @@ Now install the gmod package and pre-populate the database:
 
 ### Load DMel Data
 
-Download the [GFF](GFF "GFF") file available (originally) from the fly
+Download the [GFF](/wiki/GFF) file available (originally) from the fly
 genome website. For the sake of simplicity we will only be using
 chromosome 4:
 
@@ -497,7 +495,7 @@ Finally, load the new data:
 
 This step would normally not occur at this point but it takes about 20
 minutes to prepare the database for GO terms.
-[Tripal](Tripal.1 "Tripal") has an interface to do this but to save time
+[Tripal](/wiki/Tripal.1) has an interface to do this but to save time
 and keep the course moving we will do this manually now:
 
 ``` enter
@@ -537,7 +535,7 @@ Set permissions so we can easily work with
 ```
 
 This will undo the permission changes we did previously with
-[GBrowse](GBrowse.1 "GBrowse"). Redo them.
+[GBrowse](/wiki/GBrowse.1). Redo them.
 
 ``` enter
    sudo chmod -R 777  /var/www/gbrowse2/{tmp,databases}
@@ -603,7 +601,7 @@ installing and then configuration the Drupal site.
 ```
 
 The username and password used in [this
-course](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
+course](/wiki/2010_GMOD_Summer_School_-_Americas)
 were
 
 - Username: fly_admin
@@ -704,7 +702,7 @@ Drupal requires an entry in the crontab to function:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 Add this line to the crontab
 
@@ -765,7 +763,7 @@ Availability
   <a href="http://www.genome.clemson.edu/software/tripal"
   class="external text" rel="nofollow">CUGI website</a>.
 - Active source code available for download from
-  <a href="SVN" class="mw-redirect" title="SVN">Subversion</a> at the
+  <a href="/wiki/SVN" class="mw-redirect" title="SVN">Subversion</a> at the
   GMOD
   <a href="http://gmod.svn.sourceforge.net/gmod/" class="external text"
   rel="nofollow">Sourceforge site</a>.
@@ -864,7 +862,7 @@ unpacked:
 
 Tripal includes a "base" theme for Drupal to allow for customization of
 the look-and-feel of
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> data. This
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> data. This
 base theme is provided in the `theme_tripal` directory. Move the theme
 to the `themes` directory created earlier:
 
@@ -908,7 +906,7 @@ Tripal also require an entry in the crontab to function:
 ```
 
 [A word on text editors such as
-nano](Linux_Text_Editors "Linux Text Editors").
+nano](/wiki/Linux_Text_Editors).
 
 Add this line to the crontab
 
@@ -944,7 +942,7 @@ the administrator account for Drupal. In our case '`fly_admin`'
 
 What is syncing? Syncing is needed to create pages in Drupal that
 correspond to data (e.g. organisms and features) in
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 Navigate to **Administer → Tripal Management → Organisms**. Click the
 checkbox beside **Drosophila melanogaster (fruitfly)** and then click
@@ -1423,7 +1421,7 @@ associated in chado.
 4.  Save the page.
 5.  Create a menu item
 
-This [JBrowse](JBrowse.1 "JBrowse") won't contain to the sequence in our
+This [JBrowse](/wiki/JBrowse.1) won't contain to the sequence in our
 demo database but for purposes of demonstration this is adequate.
 
 ## Example Customizing Content
@@ -2066,4 +2064,4 @@ they should be fixed.
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |
+| [Has topic](/wiki/Property%253AHas_topic) | [Tripal](/wiki/Tripal.1) |

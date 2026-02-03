@@ -38,7 +38,7 @@ new communities and research applications.
 ### Help Desk
 
 The community support includes the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk"), which liaises between users and
+Desk](/wiki/GMOD_Help_Desk), which liaises between users and
 developers so that questions, and those who ask them, quickly find the
 people who are best able to answer. Also, as the diversity and
 complexity of the GMOD suite of software tools can be bewildering even
@@ -52,7 +52,7 @@ As part of the aim to promote GMOD adoption, Community Support staff can
 aid investigators with grant proposals that include using and/or
 extending GMOD components. Consultancy on grant proposals focuses on
 
-- How [GMOD Components](GMOD_Components "GMOD Components") can be used
+- How [GMOD Components](/wiki/GMOD_Components) can be used
   to their fullest extent in the grant, and
 - Finding opportunities to fund support and extension of the GMOD
   project as a part of grants that use GMOD.
@@ -62,27 +62,27 @@ extending GMOD components. Consultancy on grant proposals focuses on
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/120px-GMODAmericas2011Logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/180px-GMODAmericas2011Logo.jpg.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/240px-GMODAmericas2011Logo.jpg.png 2x"
-width="120" height="120" alt="2011 GMOD Spring Training" />](2011_GMOD_Spring_Training "2011 GMOD Spring Training") [<img
+width="120" height="120" alt="2011 GMOD Spring Training" />](/wiki/2011_GMOD_Spring_Training) [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/0b/2010SummerSchoolAmericas170.png/150px-2010SummerSchoolAmericas170.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/2010SummerSchoolAmericas170.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/2010SummerSchoolAmericas170.png 2x"
-width="150" height="109" alt="2010 GMOD Summer School - Americas" />](http://gmod.org/wiki/2010_Summer_School_-_Americas "2010 GMOD Summer School - Americas") [<img
+width="150" height="109" alt="2010 GMOD Summer School - Americas" />](http://gmod.org/wiki/2010_Summer_School_-_Americas) [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/140px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/210px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/280px-GMOD2010Europe300.png 2x"
-width="140" height="119" alt="GMOD Europe 2010" />](GMOD_Europe_2010 "GMOD Europe 2010")
+width="140" height="119" alt="GMOD Europe 2010" />](/wiki/GMOD_Europe_2010)
 
 The Community Support organizes and provides GMOD [training events and
-outreach activities](Training_and_Outreach "Training and Outreach").
+outreach activities](/wiki/Training_and_Outreach).
 These include the following:
 
-- Running multi-day hands-on [GMOD Schools](GMOD_Schools "GMOD Schools")
+- Running multi-day hands-on [GMOD Schools](/wiki/GMOD_Schools)
   for new GMOD users.
 - Giving in person
-  [tutorials](Training_and_Outreach#Other_Training_and_Tutorials "Training and Outreach")
+  [tutorials](/wiki/Training_and_Outreach#Other_Training_and_Tutorials)
   and [workshops at
-  conferences](Training_and_Outreach#Conference_Workshops "Training and Outreach")
+  conferences](/wiki/Training_and_Outreach#Conference_Workshops)
   and at GMOD user sites.
 - Presenting [posters at
-  conferences](Training_and_Outreach#Outreach:_Posters_and_Presentations "Training and Outreach")
+  conferences](/wiki/Training_and_Outreach#Outreach:_Posters_and_Presentations)
   to increase awareness of GMOD and its capabilities.
 
 ### GMOD for Evolutionary Biology
@@ -93,12 +93,12 @@ rel="nofollow">NESCent</a>, as the result of a collaboration between
 GMOD and NESCent. One of NESCent's goals is to promote the adoption of
 GMOD for data management, analysis, and visualization needs for the
 genome-scale information being generated in [evolutionary
-research](Category%253AEvolution "Category%253AEvolution"), in particular for
+research](/wiki/Category%253AEvolution), in particular for
 emerging model organisms. This initiative includes extending the
 functionality of GMOD tools for evolutionary applications, particularly
 in the areas of managing and visualizing information about genotypic
 variation, [phenotypic
-variation](Category%253APhenotypes "Category%253APhenotypes"), and
+variation](/wiki/Category%253APhenotypes), and
 phylogenetics.
 
 ## Please share your feedback
@@ -127,18 +127,18 @@ was initially managed by NESCent.
 
 <a href="http://www.bioperl.org/wiki/Brian" class="extiw"
 title="bp:Brian">Brian Osborne</a> started the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") in 2006 and, among other things,
+Desk](/wiki/GMOD_Help_Desk) in 2006 and, among other things,
 created this wiki. In 2007 [Dave
-Clements](User%253AClements "User%253AClements") took over, who held the
+Clements](/wiki/User%253AClements) took over, who held the
 position until the end of 2010 (when he moved to the
-[Galaxy](Galaxy.1 "Galaxy") project). [Amelia
-Ireland](User%253AGirlwithglasses "User%253AGirlwithglasses") was Community
+[Galaxy](/wiki/Galaxy.1) project). [Amelia
+Ireland](/wiki/User%253AGirlwithglasses) was Community
 Support Specialist from July 2012 to May 2014, when grant funding ran
 out.
 
 Some community support functions are also provided by several other
 members of the GMOD community, notably [Scott
-Cain](User%253AScott "User%253AScott"), the GMOD Project Coordinator.
+Cain](/wiki/User%253AScott), the GMOD Project Coordinator.
 
 The GMOD Help Desk was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="

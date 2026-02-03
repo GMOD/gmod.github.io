@@ -4,8 +4,8 @@ title: "Chado Documentation Reorganization"
 # Chado Documentation Reorganization
 
 We are going to reorganize the [Chado related
-documentation](Category%253AChado "Category%253AChado") in this web site.
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> is the
+documentation](/wiki/Category%253AChado) in this web site.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is the
 database schema of GMOD and it has quite a bit of documentation in this
 web site. However, the doc could be better organized and integrated.
 This page summaries the documentation we have, and then proposes (and
@@ -27,7 +27,7 @@ going.
 This summarizes the major Chado related pages that existed when the
 reorganization began in early April 2008. It is not an exhaustive list
 of pages related to Chado. See the [Chado
-Category](Category%253AChado "Category%253AChado") for that.
+Category](/wiki/Category%253AChado) for that.
 
 <table class="wikitable">
 <colgroup>
@@ -44,7 +44,7 @@ Category](Category%253AChado "Category%253AChado") for that.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="Chado_-_Getting_Started"
+<td><a href="/wiki/Chado_-_Getting_Started"
 title="Chado - Getting Started">Chado - Getting Started</a></td>
 <td>Sections:<br />
 1 Documentation;<br />
@@ -56,7 +56,7 @@ title="Chado - Getting Started">Chado - Getting Started</a></td>
 <td>Need to reconstruct it.</td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Best_Practices" title="Chado Best Practices">Chado
+<td><a href="/wiki/Chado_Best_Practices" title="Chado Best Practices">Chado
 Best Practices</a></td>
 <td>Description of how various sequence features can be represented in
 Chado. Has placeholders for genotypes, phenotypes and a few others.</td>
@@ -64,9 +64,9 @@ Chado. Has placeholders for genotypes, phenotypes and a few others.</td>
 Chado</em> page - a Chado Cookbook page.</td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Doc_Project" title="Chado Doc Project">Chado Doc
+<td><a href="/wiki/Chado_Doc_Project" title="Chado Doc Project">Chado Doc
 Project</a></td>
-<td><a href="User%253ABosborne" title="User%253ABosborne">Brian Osborne's</a>
+<td><a href="/wiki/User%253ABosborne" title="User%253ABosborne">Brian Osborne's</a>
 call-to-arms to write "material that is very practical and specific"
 meaning "Best Practices" and "module pages". Brian broke Chado up into 8
 workpackages and sent out a call for volunteers. 3 of the 8 packages
@@ -75,14 +75,14 @@ have been claimed.</td>
 done.</td>
 </tr>
 <tr class="even">
-<td><a href="Chado_FAQ" title="Chado FAQ">Chado FAQ</a></td>
+<td><a href="/wiki/Chado_FAQ" title="Chado FAQ">Chado FAQ</a></td>
 <td>Currently has 5 widely disparate questions.</td>
 <td>Split questions into FAQs and Chado Cookbook. Cookbook cover "How do
 you represent 'x' in Chado" questions, and FAQs handle everything
 else.</td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Manual" title="Chado Manual">Chado Manual</a></td>
+<td><a href="/wiki/Chado_Manual" title="Chado Manual">Chado Manual</a></td>
 <td>A high level, architectural view of Chado. Has 5 sections:<br />
 1) Intro (Modularity, Ontologies, Associated Software, Complexity and
 Detail, Data Integration, Support),<br />
@@ -93,7 +93,7 @@ Detail, Data Integration, Support),<br />
 <td>Explains chado from a database practitioners point of view.</td>
 </tr>
 <tr class="even">
-<td><a href="Chado_New_Users" title="Chado New Users">Chado New
+<td><a href="/wiki/Chado_New_Users" title="Chado New Users">Chado New
 Users</a></td>
 <td>This page, and its associated discussion page follow the learning
 curve for new Chado users learning the system at CSHL.</td>
@@ -105,14 +105,14 @@ combination. Just have a list of user log pages that detail <em>X</em>
 and <em>Y</em>.</td>
 </tr>
 <tr class="odd">
-<td><a href="Introduction_to_Chado"
+<td><a href="/wiki/Introduction_to_Chado"
 title="Introduction to Chado">Introduction to Chado</a></td>
 <td>An explanation of the Sequence module.</td>
 <td>Change the title. This is almost entirely about the Sequence module.
 Chris Mungall also indicates that this page is no longer current.</td>
 </tr>
 <tr class="even">
-<td><a href="Sample_Chado_SQL" title="Sample Chado SQL">Sample Chado
+<td><a href="/wiki/Sample_Chado_SQL" title="Sample Chado SQL">Sample Chado
 SQL</a></td>
 <td>Shows 8 or 9 queries.</td>
 <td>All but one of the queries involves the feature table. Integrate the
@@ -132,23 +132,22 @@ title="Chado-manual.pdf">Chado Manual (PDF)</a></td>
 <td>The TOC is extensive, but many sections are empty. Much of this
 information has already been transferred to wiki pages. Sections with
 content:<br />
-1) DBMS Functions (see <a href="Chado_Manual" title="Chado Manual">Chado
+1) DBMS Functions (see <a href="/wiki/Chado_Manual" title="Chado Manual">Chado
 Manual</a>),<br />
-2) The General Module (see <a href="Chado_Manual"
+2) The General Module (see <a href="/wiki/Chado_Manual"
 title="Chado Manual">Chado Manual</a>),<br />
-3) The CV Module (see <a href="Chado_CV_Module"
+3) The CV Module (see <a href="/wiki/Chado_CV_Module"
 title="Chado CV Module">Chado CV Module</a>),<br />
-4) The Sequence Module (see <a href="Chado_Sequence_Module"
-title="Chado Sequence Module">Chado Sequence Module</a>, <a
-href="Chado_Best_Practices" title="Chado Best Practices">Chado Best
+4) The Sequence Module (see <a href="/wiki/Chado_Sequence_Module"
+title="Chado Sequence Module">Chado Sequence Module</a>, <a href="/wiki/Chado_Best_Practices" title="Chado Best Practices">Chado Best
 Practices</a>), and<br />
-5) Chado Naming Conventions (see <a href="Chado_Manual"
+5) Chado Naming Conventions (see <a href="/wiki/Chado_Manual"
 title="Chado Manual">Chado Manual</a>).<br />
 Add pointers to the PDF page to the wiki pages that now cover the same
 material.</td>
 </tr>
 <tr class="odd">
-<td><a href="Template:ChadoModules"
+<td><a href="/wiki/Template:ChadoModules"
 title="Template:ChadoModules">Template:ChadoModules</a></td>
 <td>All the module documentation.</td>
 <td>There is a page for each module, and each page contains a complete
@@ -157,7 +156,7 @@ some explanatory text, as do many tables and columns. Keep and expand
 this.</td>
 </tr>
 <tr class="even">
-<td><a href="GMOD_Users" title="GMOD Users">GMOD Users</a></td>
+<td><a href="/wiki/GMOD_Users" title="GMOD Users">GMOD Users</a></td>
 <td>A list of GMOD users. Has a column for Chado users.</td>
 <td>List users differently. Problem is maximizing usefulness without
 maximizing redundancy. Want<br />
@@ -182,10 +181,10 @@ A draft plan for how the documentation will be restructured.
     section or link
   - Getting Started
 - Chado Architecture and Logical Design
-  - [Chado Manual](Chado_Manual "Chado Manual") - Database-theory
+  - [Chado Manual](/wiki/Chado_Manual) - Database-theory
     centric explanation.
   - Modules -
-    [Template:ChadoModules](Template:ChadoModules "Template:ChadoModules")
+    [Template:ChadoModules](/wiki/Template:ChadoModules)
     and all accompanying pages.
 - Chado Database Administration
   - DBMS and OS Choice
@@ -206,7 +205,7 @@ A draft plan for how the documentation will be restructured.
   - Chado User Experiences
     - Who uses chado and how matrix.
     - High level user stories, such as
-      [ParameciumDB](ParameciumDB "ParameciumDB")
+      [ParameciumDB](/wiki/ParameciumDB)
     - Low-level "installing/using Chado on *X* using DBMS *Y*"
       logs/stories.
 
@@ -219,11 +218,11 @@ You are encouraged to provide feedback on this effort by
 
 - Typing your comments right here.
 - Sending comments to the [GMOD Help
-  Desk](GMOD_Help_Desk "GMOD Help Desk") at
+  Desk](/wiki/GMOD_Help_Desk) at
   <a href="mailto:help@gmod.org" class="external text"
   rel="nofollow">help@gmod.org</a>.
 - Sending comments to the [GMOD-Schema mailing
-  list](GMOD_Mailing_Lists "GMOD Mailing Lists") at
+  list](/wiki/GMOD_Mailing_Lists) at
   <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
   rel="nofollow">gmod-schema@lists.sourceforge.net</a>. You must first
   <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
@@ -231,8 +230,8 @@ You are encouraged to provide feedback on this effort by
   to it.
 
 **Note:** Unless you request otherwise anything sent to the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") or to the [GMOD-Schema mailing
-list](GMOD_Mailing_Lists "GMOD Mailing Lists") may be reproduced here.
+Desk](/wiki/GMOD_Help_Desk) or to the [GMOD-Schema mailing
+list](/wiki/GMOD_Mailing_Lists) may be reproduced here.
 
 #### Comments
 
@@ -242,7 +241,7 @@ Provide your feedback here!
 
 Each page that is being modified, created or deleted as part of this
 effort will include the [ChadoDocReorg
-template](Template:ChadoDocReorg "Template:ChadoDocReorg"):
+template](/wiki/Template:ChadoDocReorg):
 
 > **This page is being modified, created, or deleted as part of the
 > **Chado Documentation Reorganization** effort.**
@@ -254,7 +253,7 @@ template](Template:ChadoDocReorg "Template:ChadoDocReorg"):
 >
 > If you have any questions, comments, or suggestions on this effort
 > please see the
-> [Feedback](Chado_Documentation_Reorganization#Feedback "Chado Documentation Reorganization")
+> [Feedback](/wiki/Chado_Documentation_Reorganization#Feedback)
 > section of the **Chado Documentation Reorganization** page.
 
 This will be placed at the top of the page.

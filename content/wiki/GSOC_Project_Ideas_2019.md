@@ -3,7 +3,7 @@ title: "GSOC Project Ideas 2019"
 ---
 # GSOC Project Ideas 2019
 
-**Got an idea for [GSOC 2019](GSoC "GSoC")?**
+**Got an idea for [GSOC 2019](/wiki/GSoC)?**
 
 Then please post it. You can either
 

@@ -13,7 +13,7 @@ alt="Pathway Tools Workshop 2010" /></a>
 class="external text" rel="nofollow">Pathway Tools Workshop 2010</a>
 closes in two days, on Thursday, October 21**. The workshop is being
 held next week in Menlo Park, CA. This workshop is oriented around SRI's
-[Pathway Tools](../Pathway_Tools.1 "Pathway Tools") software and BioCyc
+[Pathway Tools](../Pathway_Tools.1) software and BioCyc
 Database Collection and will explore pathway bioinformatics and
 Pathway/Genome Databases.
 
@@ -23,12 +23,12 @@ staff, and a hackathon. See the
 class="external text" rel="nofollow">workshop website</a> for more
 information and registration link.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/19*
+*Posted to the [GMOD News](../GMOD_News) on 2010/10/19*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -6,13 +6,13 @@ title: "News/Tripal v0.2 Released"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/120px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/180px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/240px-TripalLogo.jpg 2x"
-width="120" height="36" alt="Triapl" />](../Tripal.1 "Triapl")
+width="120" height="36" alt="Triapl" />](../Tripal.1)
 
 I’d like to announce the release of the second version of
-[Tripal](../Tripal.1 "Tripal"), v0.2. This version provides new support
-for [controlled vocabularies](../Chado_CV_Module "Chado CV Module"),
-[databases](../Chado_General_Module "Chado General Module") and several
-[analysis](../Chado_Companalysis_Module "Chado Companalysis Module")
+[Tripal](../Tripal.1), v0.2. This version provides new support
+for [controlled vocabularies](../Chado_CV_Module),
+[databases](../Chado_General_Module) and several
+[analysis](../Chado_Companalysis_Module)
 types. This includes better support and visualizations for
 <a href="http://geneontology.org" class="external text"
 rel="nofollow">GO</a>, new
@@ -23,7 +23,7 @@ rel="nofollow">BRITE hierarchies</a>,
 <a href="http://www.ebi.ac.uk/Tools/InterProScan/" class="external text"
 rel="nofollow">InterProScan</a> results and improved BLAST results.
 
-[Tripal](../Tripal.1 "Tripal") has been freely and publicly available
+[Tripal](../Tripal.1) has been freely and publicly available
 since May of 2009 and provides a PHP-based
 <a href="http://drupal.org" class="external text"
 rel="nofollow">Drupal</a> front-end for the
@@ -50,13 +50,13 @@ up-to-date code from the GMOD
 
 Best Regards,
 
-[Stephen Ficklin](../User%253ASficklin "User%253ASficklin")
+[Stephen Ficklin](../User%253ASficklin)
 <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">Clemson University Genomics Institute</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/23*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/23*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

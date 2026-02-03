@@ -9,7 +9,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="300" height="188" alt="2014-gmod-san-diego.png" /></a>
 
 The [next GMOD Community
-Meeting](../Jan_2014_GMOD_Meeting "Jan 2014 GMOD Meeting") will be held
+Meeting](../Jan_2014_GMOD_Meeting) will be held
 in San Diego, CA, on January 16-17, directly after
 <a href="http://intl-pag.org" class="external text" rel="nofollow">PAG
 XXII</a>. In addition to the usual talks and updates, we plan to have a
@@ -26,4 +26,4 @@ posted on the wiki closer to the time.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013-09-10*
+*Posted to the [GMOD News](../GMOD_News) on 2013-09-10*

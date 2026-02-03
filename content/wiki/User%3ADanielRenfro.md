@@ -9,7 +9,7 @@ rel="nofollow">punting</a> on the
 <a href="http://en.wikipedia.org/wiki/River_Cam" class="external text"
 rel="nofollow">River Cam</a>.
 Taken at the [2010 GMOD meeting in
-Cambridge.](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
+Cambridge.](/wiki/September_2010_GMOD_Meeting)
 
 About
 
@@ -27,4 +27,4 @@ See Also
 
 Links I can never find
 
-- [GMOD Components](GMOD_Components "GMOD Components")
+- [GMOD Components](/wiki/GMOD_Components)

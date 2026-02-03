@@ -4,7 +4,7 @@ title: "Creating and Managing Subtracks with GBrowse2"
 # Creating and Managing Subtracks with GBrowse2
 
 *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
+HOWTO](/wiki/GBrowse_2.0_HOWTO).*
 
 As of GBrowse version 2.09, you can create an unlimited number of
 subtracks within a single major track in order to group a series of

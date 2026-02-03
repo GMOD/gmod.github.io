@@ -118,7 +118,7 @@ title: "Web-apollo-meeting-2011-3-15"
 - Should we offer zoomed-in and zoomed-out views (vertically) in the
   same screen? Suzi says yes. Can have two vertical scrollbars. Can zoom
   the two views independently.
-- Splice view (like in [IGB](IGB "IGB"))--show all the exons (plus a bit
+- Splice view (like in [IGB](/wiki/IGB))--show all the exons (plus a bit
   of the introns) and leave out the boring empty intron stretches.
 - Annotation editing operations:
   - Undo

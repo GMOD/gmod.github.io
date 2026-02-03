@@ -16,7 +16,7 @@ job advertisement (PDF)</a> for more information.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/3/30*
+*Posted to the [GMOD News](../GMOD_News) on 2013/3/30*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

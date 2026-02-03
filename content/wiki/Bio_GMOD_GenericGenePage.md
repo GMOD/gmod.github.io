@@ -4,9 +4,9 @@ title: "Bio GMOD GenericGenePage"
 # Bio GMOD GenericGenePage
 
 Bio%253A%253AGMOD::GenericGenePage is an abstract
-[Perl](Glossary#Perl "Glossary") class that provides a render_xml method
-to crete [Common Gene Page](Common_Gene_Page "Common Gene Page")
-[XML](Glossary#XML "Glossary"), but does not fetch the data. In order to
+[Perl](/wiki/Glossary#Perl) class that provides a render_xml method
+to crete [Common Gene Page](/wiki/Common_Gene_Page)
+[XML](/wiki/Glossary#XML), but does not fetch the data. In order to
 effectively use this module, you need to subclass it and implement all
 of the methods that are listed under ABSTRACT CLASSES below for your
 database. These abstract methods are responsible for providing
@@ -15,7 +15,7 @@ Bio%253A%253AGMOD::GenericGenePage with the data to create the XML.
 There are two example implementations included with this module.
 Bio%253A%253AGMOD::GenericGenePage::Chado is a simple implementation for a Chado
 database populated with *S. cerevisiae* data obtained from
-[SGD](Category%253ASGD "Category%253ASGD") as GFF3. Currently, the output of
+[SGD](/wiki/Category%253ASGD) as GFF3. Currently, the output of
 this implementation can be seen at
 
 <a href="http://gmod.org/cgi-bin/gbrowse/chado_yeast/"
@@ -25,7 +25,7 @@ rel="nofollow">http://gmod.org/cgi-bin/gbrowse/chado_yeast/</a>
 and by clicking on any of the genes (red arrows).
 
 The other implementation, CXGN::Phenome::GenericGenePage, is from [SGN,
-the Sol Genomics Network](Category%253ASGN "Category%253ASGN"). The XML they
+the Sol Genomics Network](/wiki/Category%253ASGN). The XML they
 provide can be seen by clicking on the "Download GMOD XML" link on any
 of there locus pages; for example, this one:
 
@@ -34,7 +34,7 @@ class="external free"
 rel="nofollow">http://sgn.cornell.edu/phenome/locus_display.pl?locus_id=1238</a>
 
 For more information see
-<a href="Bio_GMOD_GenericGenePage" class="external free"
+<a href="/wiki/Bio_GMOD_GenericGenePage" class="external free"
 rel="nofollow">http://gmod.org/wiki/Bio_GMOD_GenericGenePage</a> or
 contact Scott Cain, scain@cpan.org.
 

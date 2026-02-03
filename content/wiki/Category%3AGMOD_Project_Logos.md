@@ -12,23 +12,23 @@ width="400" height="320" alt="GMOD-three-cogs.png" />
 
 It is available in a number of different sizes and formats; we advise
 you use the [highest quality
-version](File:GMOD-three-cogs.png "File:GMOD-three-cogs.png") where
+version](/wiki/File:GMOD-three-cogs.png) where
 possible. Please contact the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a> for custom configurations and sizes.
 
 The [original GMOD
-Logo](File:Gmod_cogTransparent.png "File:Gmod cogTransparent.png") was
-created by Simon Twigger of [RGD](Category%253ARGD "Category%253ARGD"). Most of
+Logo](/wiki/File:Gmod_cogTransparent.png) was
+created by Simon Twigger of [RGD](/wiki/Category%253ARGD). Most of
 the derivative logos created between 2007 and 2010 were done by [Dave
-Clements](User%253AClements "User%253AClements") during his time at the [GMOD
-Help Desk](GMOD_Help_Desk "GMOD Help Desk"), and those created between
+Clements](/wiki/User%253AClements) during his time at the [GMOD
+Help Desk](/wiki/GMOD_Help_Desk), and those created between
 2012 and 2014 were by [Amelia
-Ireland](User%253AGirlwithglasses "User%253AGirlwithglasses").
+Ireland](/wiki/User%253AGirlwithglasses).
 
 You are encouraged to use these graphics in your presentations, posters,
-and web sites. See [GMOD Promotion](GMOD_Promotion "GMOD Promotion") and
-[Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons")
+and web sites. See [GMOD Promotion](/wiki/GMOD_Promotion) and
+[Logos and Icons](/wiki/Category%253ALogos_and_Icons)
 for more.
 
 ## Pages in category "GMOD Project Logos"
@@ -37,11 +37,11 @@ The following 2 pages are in this category, out of 2 total.
 
 ### G
 
-- [Template:GMOD logos](Template:GMOD_logos "Template:GMOD logos")
+- [Template:GMOD logos](/wiki/Template:GMOD_logos)
 
 ### P
 
-- [Powered by GMOD](Powered_by_GMOD "Powered by GMOD")
+- [Powered by GMOD](/wiki/Powered_by_GMOD)
 
 ## Media in category "GMOD Project Logos"
 
@@ -63,7 +63,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2012SummerSchool400.png](File:2012SummerSchool400.png "File:2012SummerSchool400.png")
+  [2012SummerSchool400.png](/wiki/File:2012SummerSchool400.png)
   179 KB
 
 
@@ -87,7 +87,7 @@ The following 43 files are in this category, out of 43 total.
 
 
   [GMOD
-  cogTransparent.xcf](File:GMOD_cogTransparent.xcf "File:GMOD cogTransparent.xcf")
+  cogTransparent.xcf](/wiki/File:GMOD_cogTransparent.xcf)
   574 KB
 
 
@@ -110,7 +110,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD-three-cogs.jpg](File:GMOD-three-cogs.jpg "File:GMOD-three-cogs.jpg")
+  [GMOD-three-cogs.jpg](/wiki/File:GMOD-three-cogs.jpg)
   182 KB
 
 
@@ -133,7 +133,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD-three-cogs.png](File:GMOD-three-cogs.png "File:GMOD-three-cogs.png")
+  [GMOD-three-cogs.png](/wiki/File:GMOD-three-cogs.png)
   304 KB
 
 
@@ -156,7 +156,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2009SummerSchoolAmeric...](File:2009SummerSchoolAmericas170.png "File:2009SummerSchoolAmericas170.png")
+  [2009SummerSchoolAmeric...](/wiki/File:2009SummerSchoolAmericas170.png)
   34 KB
 
 
@@ -179,7 +179,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2010SummerSchoolAmeric...](File:2010SummerSchoolAmericas170.png "File:2010SummerSchoolAmericas170.png")
+  [2010SummerSchoolAmeric...](/wiki/File:2010SummerSchoolAmericas170.png)
   49 KB
 
 
@@ -202,7 +202,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2010SummerSchoolAmeric...](File:2010SummerSchoolAmericas300.png "File:2010SummerSchoolAmericas300.png")
+  [2010SummerSchoolAmeric...](/wiki/File:2010SummerSchoolAmericas300.png)
   138 KB
 
 
@@ -225,7 +225,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2011GMODAmericasSatell...](File:2011GMODAmericasSatellitesLogo.png "File:2011GMODAmericasSatellitesLogo.png")
+  [2011GMODAmericasSatell...](/wiki/File:2011GMODAmericasSatellitesLogo.png)
   233 KB
 
 
@@ -248,7 +248,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2011GMODSpringTraining...](File:2011GMODSpringTrainingLogo.png "File:2011GMODSpringTrainingLogo.png")
+  [2011GMODSpringTraining...](/wiki/File:2011GMODSpringTrainingLogo.png)
   259 KB
 
 
@@ -272,7 +272,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [2011SequencingCenterSa...](File:2011SequencingCenterSatelliteLogo.png "File:2011SequencingCenterSatelliteLogo.png")
+  [2011SequencingCenterSa...](/wiki/File:2011SequencingCenterSatelliteLogo.png)
   247 KB
 
 
@@ -296,7 +296,7 @@ The following 43 files are in this category, out of 43 total.
 
 
   [Bluemarine
-  logo.png](File:Bluemarine_logo.png "File:Bluemarine logo.png")
+  logo.png](/wiki/File:Bluemarine_logo.png)
   3 KB
 
 
@@ -319,7 +319,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [EvoHackathonLogo.png](File:EvoHackathonLogo.png "File:EvoHackathonLogo.png")
+  [EvoHackathonLogo.png](/wiki/File:EvoHackathonLogo.png)
   419 KB
 
 
@@ -342,7 +342,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD BlueCog.png](File:GMOD_BlueCog.png "File:GMOD BlueCog.png")
+  [GMOD BlueCog.png](/wiki/File:GMOD_BlueCog.png)
   71 KB
 
 
@@ -365,7 +365,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD Cog NoO.png](File:GMOD_Cog_NoO.png "File:GMOD Cog NoO.png")
+  [GMOD Cog NoO.png](/wiki/File:GMOD_Cog_NoO.png)
   2.87 MB
 
 
@@ -389,7 +389,7 @@ The following 43 files are in this category, out of 43 total.
 
 
   [Gmod
-  NoCogTransparent.xcf](File:Gmod_NoCogTransparent.xcf "File:Gmod NoCogTransparent.xcf")
+  NoCogTransparent.xcf](/wiki/File:Gmod_NoCogTransparent.xcf)
   616 KB
 
 
@@ -413,7 +413,7 @@ The following 43 files are in this category, out of 43 total.
 
 
   [Gmod
-  OneCogTransparent...](File:Gmod_OneCogTransparent.xcf "File:Gmod OneCogTransparent.xcf")
+  OneCogTransparent...](/wiki/File:Gmod_OneCogTransparent.xcf)
   638 KB
 
 
@@ -437,7 +437,7 @@ The following 43 files are in this category, out of 43 total.
 
 
   [Gmod
-  OrangeCog.png](File:Gmod_OrangeCog.png "File:Gmod OrangeCog.png")
+  OrangeCog.png](/wiki/File:Gmod_OrangeCog.png)
   26 KB
 
 
@@ -460,7 +460,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Gmod-gears.png](File:Gmod-gears.png "File:Gmod-gears.png")
+  [Gmod-gears.png](/wiki/File:Gmod-gears.png)
   12 KB
 
 
@@ -483,7 +483,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD2009Europe.png](File:GMOD2009Europe.png "File:GMOD2009Europe.png")
+  [GMOD2009Europe.png](/wiki/File:GMOD2009Europe.png)
   138 KB
 
 
@@ -506,7 +506,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMOD2010Europe300.png](File:GMOD2010Europe300.png "File:GMOD2010Europe300.png")
+  [GMOD2010Europe300.png](/wiki/File:GMOD2010Europe300.png)
   96 KB
 
 
@@ -529,7 +529,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMODAmericas2011Logo.jpg](File:GMODAmericas2011Logo.jpg "File:GMODAmericas2011Logo.jpg")
+  [GMODAmericas2011Logo.jpg](/wiki/File:GMODAmericas2011Logo.jpg)
   523 KB
 
 
@@ -552,7 +552,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMODAmericas2011WithTe...](File:GMODAmericas2011WithText.jpg "File:GMODAmericas2011WithText.jpg")
+  [GMODAmericas2011WithTe...](/wiki/File:GMODAmericas2011WithText.jpg)
   68 KB
 
 
@@ -575,7 +575,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [GMODHelpDeskLogo.jpg](File:GMODHelpDeskLogo.jpg "File:GMODHelpDeskLogo.jpg")
+  [GMODHelpDeskLogo.jpg](/wiki/File:GMODHelpDeskLogo.jpg)
   49 KB
 
 
@@ -598,7 +598,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Jan2009MtgLogo300px.jpg](File:Jan2009MtgLogo300px.jpg "File:Jan2009MtgLogo300px.jpg")
+  [Jan2009MtgLogo300px.jpg](/wiki/File:Jan2009MtgLogo300px.jpg)
   10 KB
 
 
@@ -621,7 +621,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Jan2009MtgLogoNoText.png](File:Jan2009MtgLogoNoText.png "File:Jan2009MtgLogoNoText.png")
+  [Jan2009MtgLogoNoText.png](/wiki/File:Jan2009MtgLogoNoText.png)
   81 KB
 
 
@@ -644,7 +644,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Jan2010MtgLogo.png](File:Jan2010MtgLogo.png "File:Jan2010MtgLogo.png")
+  [Jan2010MtgLogo.png](/wiki/File:Jan2010MtgLogo.png)
   294 KB
 
 
@@ -667,7 +667,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Jan2010MtgLogo170.png](File:Jan2010MtgLogo170.png "File:Jan2010MtgLogo170.png")
+  [Jan2010MtgLogo170.png](/wiki/File:Jan2010MtgLogo170.png)
   44 KB
 
 
@@ -690,7 +690,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Jan2010MtgLogo300.png](File:Jan2010MtgLogo300.png "File:Jan2010MtgLogo300.png")
+  [Jan2010MtgLogo300.png](/wiki/File:Jan2010MtgLogo300.png)
   101 KB
 
 
@@ -713,7 +713,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [July2008Logo.png](File:July2008Logo.png "File:July2008Logo.png")
+  [July2008Logo.png](/wiki/File:July2008Logo.png)
   204 KB
 
 
@@ -736,7 +736,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [July2008LogoSmaller.png](File:July2008LogoSmaller.png "File:July2008LogoSmaller.png")
+  [July2008LogoSmaller.png](/wiki/File:July2008LogoSmaller.png)
   141 KB
 
 
@@ -759,7 +759,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [March2011GMODMeetingLo...](File:March2011GMODMeetingLogo.png "File:March2011GMODMeetingLogo.png")
+  [March2011GMODMeetingLo...](/wiki/File:March2011GMODMeetingLogo.png)
   239 KB
 
 
@@ -782,7 +782,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGBrowseAnimal...](File:PoweredByGBrowseAnimalGenome.jpg "File:PoweredByGBrowseAnimalGenome.jpg")
+  [PoweredByGBrowseAnimal...](/wiki/File:PoweredByGBrowseAnimalGenome.jpg)
   18 KB
 
 
@@ -805,7 +805,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGMOD.png](File:PoweredByGMOD.png "File:PoweredByGMOD.png")
+  [PoweredByGMOD.png](/wiki/File:PoweredByGMOD.png)
   74 KB
 
 
@@ -828,7 +828,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGMOD.xcf](File:PoweredByGMOD.xcf "File:PoweredByGMOD.xcf")
+  [PoweredByGMOD.xcf](/wiki/File:PoweredByGMOD.xcf)
   133 KB
 
 
@@ -851,7 +851,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGMOD100.png](File:PoweredByGMOD100.png "File:PoweredByGMOD100.png")
+  [PoweredByGMOD100.png](/wiki/File:PoweredByGMOD100.png)
   5 KB
 
 
@@ -874,7 +874,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGMOD150.png](File:PoweredByGMOD150.png "File:PoweredByGMOD150.png")
+  [PoweredByGMOD150.png](/wiki/File:PoweredByGMOD150.png)
   9 KB
 
 
@@ -897,7 +897,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [PoweredByGMOD80.png](File:PoweredByGMOD80.png "File:PoweredByGMOD80.png")
+  [PoweredByGMOD80.png](/wiki/File:PoweredByGMOD80.png)
   3 KB
 
 
@@ -920,7 +920,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Sept2010MtgLogo.png](File:Sept2010MtgLogo.png "File:Sept2010MtgLogo.png")
+  [Sept2010MtgLogo.png](/wiki/File:Sept2010MtgLogo.png)
   287 KB
 
 
@@ -943,7 +943,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Sept2010MtgLogo170.png](File:Sept2010MtgLogo170.png "File:Sept2010MtgLogo170.png")
+  [Sept2010MtgLogo170.png](/wiki/File:Sept2010MtgLogo170.png)
   36 KB
 
 
@@ -966,7 +966,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [Sept2010MtgLogo300.png](File:Sept2010MtgLogo300.png "File:Sept2010MtgLogo300.png")
+  [Sept2010MtgLogo300.png](/wiki/File:Sept2010MtgLogo300.png)
   100 KB
 
 
@@ -989,7 +989,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [SummerSchoolBig.png](File:SummerSchoolBig.png "File:SummerSchoolBig.png")
+  [SummerSchoolBig.png](/wiki/File:SummerSchoolBig.png)
   3.55 MB
 
 
@@ -1012,7 +1012,7 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [SummerSchoolSmall.png](File:SummerSchoolSmall.png "File:SummerSchoolSmall.png")
+  [SummerSchoolSmall.png](/wiki/File:SummerSchoolSmall.png)
   25 KB
 
 
@@ -1035,5 +1035,5 @@ The following 43 files are in this category, out of 43 total.
 
 
 
-  [October2011Logo.png](File:October2011Logo.png "File:October2011Logo.png")
+  [October2011Logo.png](/wiki/File:October2011Logo.png)
   220 KB

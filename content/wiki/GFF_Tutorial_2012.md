@@ -3,15 +3,15 @@ title: "GFF Tutorial 2012"
 ---
 # GFF Tutorial 2012
 
-This tutorial on [GFF](GFF "GFF") was given by [Scott
-Cain](User%253AScott "User%253AScott") at the [2012 GMOD Summer
-School](2012_GMOD_Summer_School "2012 GMOD Summer School").
+This tutorial on [GFF](/wiki/GFF) was given by [Scott
+Cain](/wiki/User%253AScott) at the [2012 GMOD Summer
+School](/wiki/2012_GMOD_Summer_School).
 
 **GFF** is a standard file format for storing genomic features in a text
 file. GFF stands for *Generic Feature Format*. GFF files are plain text,
 9 column, tab-delimited files. GFF
-*[databases](Databases_and_GMOD "Databases and GMOD")* also exist. They
-use a [schema](Glossary#Schema "Glossary") custom built to represent GFF
+*[databases](/wiki/Databases_and_GMOD)* also exist. They
+use a [schema](/wiki/Glossary#Schema) custom built to represent GFF
 data. GFF is [frequently used in GMOD](#GFF_in_GMOD) for data exchange
 and representation of genomic data.
 
@@ -53,7 +53,7 @@ GFF3 addresses several shortcomings in its predecessor, [GFF2](#GFF2).
 available in GFF3 format, so you may have to use GFF2. The two versions
 are similar but are not compatible and scripts usually only work with
 one of the other format. This page discusses GFF3 in detail. GFF2
-details are covered on a [separate page](GFF2 "GFF2").
+details are covered on a [separate page](/wiki/GFF2).
 
 Unfortunately, people, documentation, and even this web site are not
 always clear about what version of GFF is being discussed. This web page
@@ -288,7 +288,7 @@ genomic coordinates. It has an ID of "mrna0001" and a human-readable
 name of "sonichedgehog" (note that the ID and the Name are **not** the
 same thing). This is followed by five exon features, each of which is
 linked to the mRNA using a Parent tag. When
-[GBrowse](GBrowse.1 "GBrowse") displays this transcript, it will display
+[GBrowse](/wiki/GBrowse.1) displays this transcript, it will display
 each of the exons linked together by a solid line. The entire set can be
 found by searching for the name "sonichedgehog."
 
@@ -387,7 +387,7 @@ named "EDEN" which has three alternatively-spliced mRNA transcripts:
 
 We start with a feature of type "gene" with the ID "EDEN". This has
 three alternative splice forms named EDEN.1, EDEN.2 and EDEN.3. To tell
-[GBrowse](GBrowse.1 "GBrowse") that each of these splice forms are part
+[GBrowse](/wiki/GBrowse.1) that each of these splice forms are part
 of the same gene, we give each one a Parent attribute of "EDEN"
 corresponding to the ID of the parent gene. Now consider mRNA EDEN.1. It
 has a five_prime_UTR feature, a three_prime_UTR feature, and four CDS
@@ -445,7 +445,7 @@ agt830.5 aligns to genomic contig ctg123 such that positions 1 through
 
 Using the \##FASTA section of the GFF3 file, you can specify the
 sequence of the ESTs as well as of the contig, and
-[GBrowse](GBrowse.1 "GBrowse") will display the DNA and/or protein
+[GBrowse](/wiki/GBrowse.1) will display the DNA and/or protein
 sequences in the appropriate contexts.
 
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
@@ -484,14 +484,14 @@ single line per experiment like this one:
     ctg123 . microarray_oligo 1 50000 . . . Name=example;wigfile=/usr/data/ctg123.Expt1.wig
 
 The .wig file is created and managed using a script called
-`wiggle2gff3.pl` that comes with [GBrowse](GBrowse.1 "GBrowse").
+`wiggle2gff3.pl` that comes with [GBrowse](/wiki/GBrowse.1).
 Instructions on how to use this script is described in the <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/docs/tutorial/tutorial.html?pathrev=stable"
 class="external text" rel="nofollow">GBrowse Administration Tutorial</a>.
 
 ## GFF3 Sequence Section
 
-[GFF3](GFF3 "GFF3") files can also include sequence in FASTA format at
+[GFF3](/wiki/GFF3) files can also include sequence in FASTA format at
 the end of the file. The FASTA sequences are preceded by a `##FASTA`
 line. This sequence section is optional. If present, the sequence
 section can define sequence for any landmark used in column 1 (the frame
@@ -524,7 +524,7 @@ your sequences in a separate file containing only FASTA entries.
 
 You can validate reasonably large GFF3 files at the following sites:
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 - [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
+  School](/wiki/Category%253A2012_Summer_School)

@@ -23,4 +23,4 @@ database projects.
 
 A list of some of the databases and organizations using, contributing
 to, and developing GMOD components can be found on the [GMOD
-Users](GMOD_Users "GMOD Users") page.
+Users](/wiki/GMOD_Users) page.

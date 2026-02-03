@@ -21,7 +21,7 @@ title: "GBrowse Cygwin HOWTO"
 
 ## Abstract
 
-Installing [GBrowse](GBrowse.1 "GBrowse") on Cygwin running on Windows.
+Installing [GBrowse](/wiki/GBrowse.1) on Cygwin running on Windows.
 Note that this is quite old, and does not apply to GBrowse2, which has
 not been tested or tried on any Windows server.
 

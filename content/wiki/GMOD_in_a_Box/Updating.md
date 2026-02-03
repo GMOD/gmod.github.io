@@ -24,7 +24,7 @@ save the settings.
 
 5a. If you would like to resize the data disk, see the [GMOD in a
 Box/Resizing a VirtualBox
-Disk](Resizing_a_VirtualBox_Disk "GMOD in a Box/Resizing a VirtualBox Disk")
+Disk](/wiki/Resizing_a_VirtualBox_Disk)
 
 6\. Start the instance and log in.
 

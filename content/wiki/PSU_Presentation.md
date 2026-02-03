@@ -25,7 +25,7 @@ title="PSU.pdf">Chinmay's presentation</a>.
 - GeneDB is the organism data and annotation database for the Pathogen
   Sequencing Unit (PSU) at the Sanger Institute, UK
 - Contains 37 organisms, which is expected to grow to 62
-- [Artemis](Artemis "Artemis") is an annotation/DNA graphical interface
+- [Artemis](/wiki/Artemis) is an annotation/DNA graphical interface
 - PSU is currently migrating to chado schema
 - We've implemented a common interface with the two leading open source
   frameworks: Hibernate and iBatis

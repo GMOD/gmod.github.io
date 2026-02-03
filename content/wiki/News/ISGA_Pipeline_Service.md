@@ -22,7 +22,7 @@ install locally to provide a biologist-friendly web interface to your
 computational resources. ISGA currently provides prokaryotic annotation
 and prokaryotic assembly pipelines and offers an intuitive interface for
 biologists to run and customize pipelines. ISGA also integrates tools
-such as [GBrowse](../GBrowse.1 "GBrowse") and Blast for visualizing and
+such as [GBrowse](../GBrowse.1) and Blast for visualizing and
 analyzing pipeline results. Since ISGA utilizes the
 <a href="../Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 workflow system to execute pipelines, ISGA pipeline can be submitted
@@ -45,11 +45,11 @@ join the
 <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
 class="external text" rel="nofollow">isga-users mailing list</a>.
 
-[Chris Hemmerich](../User%253AChemmeri "User%253AChemmeri")
+[Chris Hemmerich](../User%253AChemmeri)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/06/07*
+*Posted to the [GMOD News](../GMOD_News) on 2010/06/07*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

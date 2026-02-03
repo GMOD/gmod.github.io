@@ -25,7 +25,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Berkeley-text.png](File:Berkeley-text.png "File:Berkeley-text.png")
+  [Berkeley-text.png](/wiki/File:Berkeley-text.png)
   15 KB
 
 
@@ -48,7 +48,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [BioCycDC.gif](File:BioCycDC.gif "File:BioCycDC.gif")
+  [BioCycDC.gif](/wiki/File:BioCycDC.gif)
   5 KB
 
 
@@ -71,7 +71,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [BioCycMainPageLogo.gif](File:BioCycMainPageLogo.gif "File:BioCycMainPageLogo.gif")
+  [BioCycMainPageLogo.gif](/wiki/File:BioCycMainPageLogo.gif)
   3 KB
 
 
@@ -94,7 +94,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Cambridge.jpg](File:Cambridge.jpg "File:Cambridge.jpg")
+  [Cambridge.jpg](/wiki/File:Cambridge.jpg)
   6 KB
 
 
@@ -117,7 +117,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [CambridgeWide.gif](File:CambridgeWide.gif "File:CambridgeWide.gif")
+  [CambridgeWide.gif](/wiki/File:CambridgeWide.gif)
   6 KB
 
 
@@ -140,7 +140,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [CancerResearchUKLogo.jpg](File:CancerResearchUKLogo.jpg "File:CancerResearchUKLogo.jpg")
+  [CancerResearchUKLogo.jpg](/wiki/File:CancerResearchUKLogo.jpg)
   7 KB
 
 
@@ -163,7 +163,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Cbrg.jpg](File:Cbrg.jpg "File:Cbrg.jpg")
+  [Cbrg.jpg](/wiki/File:Cbrg.jpg)
   26 KB
 
 
@@ -186,7 +186,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [CCBILogo.png](File:CCBILogo.png "File:CCBILogo.png")
+  [CCBILogo.png](/wiki/File:CCBILogo.png)
   5 KB
 
 
@@ -209,7 +209,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Cgb logo.png](File:Cgb_logo.png "File:Cgb logo.png")
+  [Cgb logo.png](/wiki/File:Cgb_logo.png)
   4 KB
 
 
@@ -232,7 +232,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Cgb-logo-transparent.png](File:Cgb-logo-transparent.png "File:Cgb-logo-transparent.png")
+  [Cgb-logo-transparent.png](/wiki/File:Cgb-logo-transparent.png)
   51 KB
 
 
@@ -256,7 +256,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [CSHL
-  Logo75x75.gif](File:CSHL_Logo75x75.gif "File:CSHL Logo75x75.gif")
+  Logo75x75.gif](/wiki/File:CSHL_Logo75x75.gif)
   3 KB
 
 
@@ -279,7 +279,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Cugi logo6.5.jpg](File:Cugi_logo6.5.jpg "File:Cugi logo6.5.jpg")
+  [Cugi logo6.5.jpg](/wiki/File:Cugi_logo6.5.jpg)
   85 KB
 
 
@@ -302,7 +302,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [CUGILogoHomePage.png](File:CUGILogoHomePage.png "File:CUGILogoHomePage.png")
+  [CUGILogoHomePage.png](/wiki/File:CUGILogoHomePage.png)
   11 KB
 
 
@@ -325,7 +325,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Daphnia-wfleabase2.png](File:Daphnia-wfleabase2.png "File:Daphnia-wfleabase2.png")
+  [Daphnia-wfleabase2.png](/wiki/File:Daphnia-wfleabase2.png)
   17 KB
 
 
@@ -348,7 +348,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [DictyLogo.png](File:DictyLogo.png "File:DictyLogo.png")
+  [DictyLogo.png](/wiki/File:DictyLogo.png)
   12 KB
 
 
@@ -371,7 +371,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [DictyMainPageLogo.png](File:DictyMainPageLogo.png "File:DictyMainPageLogo.png")
+  [DictyMainPageLogo.png](/wiki/File:DictyMainPageLogo.png)
   22 KB
 
 
@@ -394,7 +394,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [DolanDNALCLogo.jpg](File:DolanDNALCLogo.jpg "File:DolanDNALCLogo.jpg")
+  [DolanDNALCLogo.jpg](/wiki/File:DolanDNALCLogo.jpg)
   6 KB
 
 
@@ -418,7 +418,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [Dow AgroSciences
-  logo.gif](File:Dow_AgroSciences_logo.gif "File:Dow AgroSciences logo.gif")
+  logo.gif](/wiki/File:Dow_AgroSciences_logo.gif)
   2 KB
 
 
@@ -442,7 +442,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [EcoliWiki
-  logo.png](File:EcoliWiki_logo.png "File:EcoliWiki logo.png")
+  logo.png](/wiki/File:EcoliWiki_logo.png)
   16 KB
 
 
@@ -465,7 +465,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Ecoliwiki.png](File:Ecoliwiki.png "File:Ecoliwiki.png")
+  [Ecoliwiki.png](/wiki/File:Ecoliwiki.png)
   8 KB
 
 
@@ -488,7 +488,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [EmoryLogoSmall.gif](File:EmoryLogoSmall.gif "File:EmoryLogoSmall.gif")
+  [EmoryLogoSmall.gif](/wiki/File:EmoryLogoSmall.gif)
   4 KB
 
 
@@ -511,7 +511,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Fly logo.png](File:Fly_logo.png "File:Fly logo.png")
+  [Fly logo.png](/wiki/File:Fly_logo.png)
   22 KB
 
 
@@ -534,7 +534,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [FlyBaseMainPageIcon.png](File:FlyBaseMainPageIcon.png "File:FlyBaseMainPageIcon.png")
+  [FlyBaseMainPageIcon.png](/wiki/File:FlyBaseMainPageIcon.png)
   22 KB
 
 
@@ -557,7 +557,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [FlyMineLogo.png](File:FlyMineLogo.png "File:FlyMineLogo.png")
+  [FlyMineLogo.png](/wiki/File:FlyMineLogo.png)
   7 KB
 
 
@@ -581,7 +581,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [Gramene
-  logo180.jpg](File:Gramene_logo180.jpg "File:Gramene logo180.jpg")
+  logo180.jpg](/wiki/File:Gramene_logo180.jpg)
   10 KB
 
 
@@ -604,7 +604,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [GrameneMainPageIcon.jpg](File:GrameneMainPageIcon.jpg "File:GrameneMainPageIcon.jpg")
+  [GrameneMainPageIcon.jpg](/wiki/File:GrameneMainPageIcon.jpg)
   2 KB
 
 
@@ -627,7 +627,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [InfinityPlanaria.png](File:InfinityPlanaria.png "File:InfinityPlanaria.png")
+  [InfinityPlanaria.png](/wiki/File:InfinityPlanaria.png)
   11 KB
 
 
@@ -650,7 +650,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [InfinityPlanaria58x72.png](File:InfinityPlanaria58x72.png "File:InfinityPlanaria58x72.png")
+  [InfinityPlanaria58x72.png](/wiki/File:InfinityPlanaria58x72.png)
   11 KB
 
 
@@ -673,7 +673,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [InfinityPlanaria64x80.png](File:InfinityPlanaria64x80.png "File:InfinityPlanaria64x80.png")
+  [InfinityPlanaria64x80.png](/wiki/File:InfinityPlanaria64x80.png)
   12 KB
 
 
@@ -696,7 +696,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [InsectaCentralLogo.png](File:InsectaCentralLogo.png "File:InsectaCentralLogo.png")
+  [InsectaCentralLogo.png](/wiki/File:InsectaCentralLogo.png)
   3 KB
 
 
@@ -720,7 +720,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [IPlant Logo Trans
-  Small...](File:IPlant_Logo_Trans_Small.png "File:IPlant Logo Trans Small.png")
+  Small...](/wiki/File:IPlant_Logo_Trans_Small.png)
   12 KB
 
 
@@ -743,7 +743,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [IRISALogo.jpg](File:IRISALogo.jpg "File:IRISALogo.jpg")
+  [IRISALogo.jpg](/wiki/File:IRISALogo.jpg)
   1 KB
 
 
@@ -766,7 +766,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [JCVILogo.jpg](File:JCVILogo.jpg "File:JCVILogo.jpg")
+  [JCVILogo.jpg](/wiki/File:JCVILogo.jpg)
   3 KB
 
 
@@ -789,7 +789,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Lbl logo.png](File:Lbl_logo.png "File:Lbl logo.png")
+  [Lbl logo.png](/wiki/File:Lbl_logo.png)
   9 KB
 
 
@@ -813,7 +813,7 @@ The following 69 files are in this category, out of 69 total.
 
 
   [Logo
-  BayerCropScience.gif](File:Logo_BayerCropScience.gif "File:Logo BayerCropScience.gif")
+  BayerCropScience.gif](/wiki/File:Logo_BayerCropScience.gif)
   5 KB
 
 
@@ -836,7 +836,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [MaizeGDB.gif](File:MaizeGDB.gif "File:MaizeGDB.gif")
+  [MaizeGDB.gif](/wiki/File:MaizeGDB.gif)
   8 KB
 
 
@@ -859,7 +859,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [MaizeGDBNoSubtext.png](File:MaizeGDBNoSubtext.png "File:MaizeGDBNoSubtext.png")
+  [MaizeGDBNoSubtext.png](/wiki/File:MaizeGDBNoSubtext.png)
   12 KB
 
 
@@ -882,7 +882,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [MetabolicMineLogoWide.png](File:MetabolicMineLogoWide.png "File:MetabolicMineLogoWide.png")
+  [MetabolicMineLogoWide.png](/wiki/File:MetabolicMineLogoWide.png)
   44 KB
 
 
@@ -905,7 +905,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Mgi logo.jpg](File:Mgi_logo.jpg "File:Mgi logo.jpg")
+  [Mgi logo.jpg](/wiki/File:Mgi_logo.jpg)
   20 KB
 
 
@@ -928,7 +928,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [MgiMainPageLogo.jpg](File:MgiMainPageLogo.jpg "File:MgiMainPageLogo.jpg")
+  [MgiMainPageLogo.jpg](/wiki/File:MgiMainPageLogo.jpg)
   6 KB
 
 
@@ -951,7 +951,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [NBICLogo.png](File:NBICLogo.png "File:NBICLogo.png")
+  [NBICLogo.png](/wiki/File:NBICLogo.png)
   5 KB
 
 
@@ -974,7 +974,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Nescent logo.gif](File:Nescent_logo.gif "File:Nescent logo.gif")
+  [Nescent logo.gif](/wiki/File:Nescent_logo.gif)
   4 KB
 
 
@@ -997,7 +997,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [NESCentLogo152.jpg](File:NESCentLogo152.jpg "File:NESCentLogo152.jpg")
+  [NESCentLogo152.jpg](/wiki/File:NESCentLogo152.jpg)
   18 KB
 
 
@@ -1020,7 +1020,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [NESCentMainPageIcon.png](File:NESCentMainPageIcon.png "File:NESCentMainPageIcon.png")
+  [NESCentMainPageIcon.png](/wiki/File:NESCentMainPageIcon.png)
   21 KB
 
 
@@ -1043,7 +1043,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [OICRlogo.png](File:OICRlogo.png "File:OICRlogo.png")
+  [OICRlogo.png](/wiki/File:OICRlogo.png)
   15 KB
 
 
@@ -1066,7 +1066,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [ParameciumDBIcon133x42...](File:ParameciumDBIcon133x42.png "File:ParameciumDBIcon133x42.png")
+  [ParameciumDBIcon133x42...](/wiki/File:ParameciumDBIcon133x42.png)
   25 KB
 
 
@@ -1089,7 +1089,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [ParameciumDBLogo.png](File:ParameciumDBLogo.png "File:ParameciumDBLogo.png")
+  [ParameciumDBLogo.png](/wiki/File:ParameciumDBLogo.png)
   11 KB
 
 
@@ -1112,7 +1112,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [PennState.gif](File:PennState.gif "File:PennState.gif")
+  [PennState.gif](/wiki/File:PennState.gif)
   972 B
 
 
@@ -1135,7 +1135,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [PhytozomeLogo.jpg](File:PhytozomeLogo.jpg "File:PhytozomeLogo.jpg")
+  [PhytozomeLogo.jpg](/wiki/File:PhytozomeLogo.jpg)
   5 KB
 
 
@@ -1158,7 +1158,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [PomBaseLogo.png](File:PomBaseLogo.png "File:PomBaseLogo.png")
+  [PomBaseLogo.png](/wiki/File:PomBaseLogo.png)
   20 KB
 
 
@@ -1181,7 +1181,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [RedFlyLogo.png](File:RedFlyLogo.png "File:RedFlyLogo.png")
+  [RedFlyLogo.png](/wiki/File:RedFlyLogo.png)
   45 KB
 
 
@@ -1204,7 +1204,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Rgd-logo.gif](File:Rgd-logo.gif "File:Rgd-logo.gif")
+  [Rgd-logo.gif](/wiki/File:Rgd-logo.gif)
   11 KB
 
 
@@ -1227,7 +1227,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [RgdMainPageIcon.gif](File:RgdMainPageIcon.gif "File:RgdMainPageIcon.gif")
+  [RgdMainPageIcon.gif](/wiki/File:RgdMainPageIcon.gif)
   5 KB
 
 
@@ -1250,7 +1250,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [RgdRatLogo.png](File:RgdRatLogo.png "File:RgdRatLogo.png")
+  [RgdRatLogo.png](/wiki/File:RgdRatLogo.png)
   9 KB
 
 
@@ -1273,7 +1273,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [SGD-t.gif](File:SGD-t.gif "File:SGD-t.gif")
+  [SGD-t.gif](/wiki/File:SGD-t.gif)
   3 KB
 
 
@@ -1296,7 +1296,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Sgn small tag.png](File:Sgn_small_tag.png "File:Sgn small tag.png")
+  [Sgn small tag.png](/wiki/File:Sgn_small_tag.png)
   5 KB
 
 
@@ -1319,7 +1319,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [SNPRC.png](File:SNPRC.png "File:SNPRC.png")
+  [SNPRC.png](/wiki/File:SNPRC.png)
   19 KB
 
 
@@ -1342,7 +1342,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [SpBaseLogo.png](File:SpBaseLogo.png "File:SpBaseLogo.png")
+  [SpBaseLogo.png](/wiki/File:SpBaseLogo.png)
   34 KB
 
 
@@ -1365,7 +1365,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [SRILogo.png](File:SRILogo.png "File:SRILogo.png")
+  [SRILogo.png](/wiki/File:SRILogo.png)
   11 KB
 
 
@@ -1388,7 +1388,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [TAIR logo.gif](File:TAIR_logo.gif "File:TAIR logo.gif")
+  [TAIR logo.gif](/wiki/File:TAIR_logo.gif)
   2 KB
 
 
@@ -1411,7 +1411,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [TxBiomed-logo.png](File:TxBiomed-logo.png "File:TxBiomed-logo.png")
+  [TxBiomed-logo.png](/wiki/File:TxBiomed-logo.png)
   23 KB
 
 
@@ -1434,7 +1434,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [UofSaskatchewanLogo.png](File:UofSaskatchewanLogo.png "File:UofSaskatchewanLogo.png")
+  [UofSaskatchewanLogo.png](/wiki/File:UofSaskatchewanLogo.png)
   4 KB
 
 
@@ -1457,7 +1457,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Urgi.png](File:Urgi.png "File:Urgi.png")
+  [Urgi.png](/wiki/File:Urgi.png)
   29 KB
 
 
@@ -1480,7 +1480,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [Wdb small.gif](File:Wdb_small.gif "File:Wdb small.gif")
+  [Wdb small.gif](/wiki/File:Wdb_small.gif)
   8 KB
 
 
@@ -1503,7 +1503,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [WFleaBaseMainPageIcon.png](File:WFleaBaseMainPageIcon.png "File:WFleaBaseMainPageIcon.png")
+  [WFleaBaseMainPageIcon.png](/wiki/File:WFleaBaseMainPageIcon.png)
   24 KB
 
 
@@ -1526,7 +1526,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [WSULogo.jpg](File:WSULogo.jpg "File:WSULogo.jpg")
+  [WSULogo.jpg](/wiki/File:WSULogo.jpg)
   10 KB
 
 
@@ -1549,7 +1549,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [XenbaseLogo.png](File:XenbaseLogo.png "File:XenbaseLogo.png")
+  [XenbaseLogo.png](/wiki/File:XenbaseLogo.png)
   4 KB
 
 
@@ -1572,7 +1572,7 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [USC logo.png](File:USC_logo.png "File:USC logo.png")
+  [USC logo.png](/wiki/File:USC_logo.png)
   8 KB
 
 
@@ -1595,5 +1595,5 @@ The following 69 files are in this category, out of 69 total.
 
 
 
-  [ZFINLogo.png](File:ZFINLogo.png "File:ZFINLogo.png")
+  [ZFINLogo.png](/wiki/File:ZFINLogo.png)
   20 KB

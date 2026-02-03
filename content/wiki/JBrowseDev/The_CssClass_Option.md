@@ -4,13 +4,13 @@ title: "JBrowseDev/The CssClass Option"
 # JBrowseDev/The CssClass Option
 
 The cssClass option makes it possible to choose how a
-[JBrowse](../JBrowse.1 "JBrowse") track will look by selecting a
+[JBrowse](../JBrowse.1) track will look by selecting a
 pre-existing template. Every built-in JBrowse track template is defined
-as a [Cascading Style Sheet](../Glossary#CSS "Glossary") (CSS) class in
+as a [Cascading Style Sheet](../Glossary#CSS) (CSS) class in
 the file 'genome.css'. This file can be edited as a regular text file,
 and classes can be added, changed, or removed (although direct editing
 is not necessary; it is possible to use the
-[clientConfig](The_ClientConfig_Option "JBrowseDev/The ClientConfig Option")
+[clientConfig](/wiki/The_ClientConfig_Option)
 option to avoid changing genome.css). The argument to the cssClass
 option is the name of a class in genome.css.
 
@@ -38,10 +38,10 @@ As of JBrowse v1.2.1, these classes are available:
 | Identical to transcript-exon. | transcript-UTR | No |
 | Identical to transcript-exon. | triangle | No # See also |
 
-- <a href="General_Usage" class="mw-redirect"
+- <a href="/wiki/General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
 # External Links
 
 
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
+- [JBrowse](../Category%253AJBrowse)

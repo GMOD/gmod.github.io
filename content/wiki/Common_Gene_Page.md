@@ -63,23 +63,23 @@ One outline for these attributes is to have main sections as:
 
 # Implementation
 
-[Discussion](July_2008_GMOD_Meeting#Common_Gene_Page "July 2008 GMOD Meeting")
+[Discussion](/wiki/July_2008_GMOD_Meeting#Common_Gene_Page)
 at the [July 2008 GMOD
-Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting") resulted in
+Meeting](/wiki/July_2008_GMOD_Meeting) resulted in
 the
-[Bio%253A%253AGMOD::GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
+[Bio%253A%253AGMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 Perl abstract class that can be used by organizations to generate common
 gene pages in XML format.
 
 # Notes for Discussion 2008
 
-From [Dongilbert](User%253ADongilbert "User%253ADongilbert") 13:15, 14 July 2008
+From [Dongilbert](/wiki/User%253ADongilbert) 13:15, 14 July 2008
 (EDT) :
 
 In hopes there will be a lively discussion on this topic at the [July
-2008 GMOD Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting") here
+2008 GMOD Meeting](/wiki/July_2008_GMOD_Meeting) here
 are some thoughts. I would like to attend, but instead will be later in
-the week at the [ISMB 2008](ISMB_2008 "ISMB 2008") Toronto meeting, and
+the week at the [ISMB 2008](/wiki/ISMB_2008) Toronto meeting, and
 hope to hear some outcomes of this.
 
 It seems to me the only real issue in moving forward with a common gene
@@ -90,10 +90,10 @@ report (or such data files) within the coming year.
 
 There is a history in genome informatics of everyone doing their own
 thing across projects with common genome data and common customer needs.
-Some efforts do achieve common usage and consensus: [GFF(3)](GFF "GFF")
-format, [GBrowse](GBrowse.1 "GBrowse"),
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> schema/db,
-[Apollo](Apollo.1 "Apollo") annotator among others.
+Some efforts do achieve common usage and consensus: [GFF(3)](/wiki/GFF)
+format, [GBrowse](/wiki/GBrowse.1),
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> schema/db,
+[Apollo](/wiki/Apollo.1) annotator among others.
 
 This common gene report concept to date is to provide consumers of
 genome data with the format across projects, both for web display and
@@ -124,11 +124,11 @@ with this.
 ## Notes from the July 2008 GMOD Meeting
 
 See the [Common Gene
-Page](July_2008_GMOD_Meeting#Common_Gene_Page "July 2008 GMOD Meeting")
+Page](/wiki/July_2008_GMOD_Meeting#Common_Gene_Page)
 section of the [July 2008 GMOD
-Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting") notes. This
+Meeting](/wiki/July_2008_GMOD_Meeting) notes. This
 discussion resulted in implementation of the
-[Bio%253A%253AGMOD::GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
+[Bio%253A%253AGMOD::GenericGenePage](/wiki/Bio_GMOD_GenericGenePage)
 Perl abstract class.
 
 # Example uses
@@ -162,7 +162,7 @@ title="Daphnia-genepage.png">daphnia gene page</a> and
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/Daphnia-genepage-xml.png"
 class="internal" title="Daphnia-genepage-xml.png">gene page xml</a>.
 
-There is a simple perl tool to turn annotated [GFF](GFF "GFF") data into
+There is a simple perl tool to turn annotated [GFF](/wiki/GFF) data into
 this gene page XML, suitable for search and display, in
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/genepages"
 class="external text" rel="nofollow">GMOD genepages in SVN</a> or
@@ -172,8 +172,8 @@ rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a> for
 `bin/gff2ugpxml.pl`.
 
 Search and display is then provided by the GMOD
-[LuceGene](LuceGene "LuceGene") tool, detailed at
-[LuceGene_for_Daphnia_genome](LuceGene_for_Daphnia_genome "LuceGene for Daphnia genome").
+[LuceGene](/wiki/LuceGene) tool, detailed at
+[LuceGene_for_Daphnia_genome](/wiki/LuceGene_for_Daphnia_genome).
 
 ## Pea aphid genome annotation case
 

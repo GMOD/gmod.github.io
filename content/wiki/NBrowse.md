@@ -147,7 +147,7 @@ the trunk directory.
 #### SVN N-Browse Version 2
 
 N-Browse Version 2 source code is available using
-<a href="Subversion" class="mw-redirect"
+<a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a> and is available in the
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/nbrowse"
 class="external text" rel="nofollow">GMOD SourceForge repository</a>.

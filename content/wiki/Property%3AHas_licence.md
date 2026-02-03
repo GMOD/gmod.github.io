@@ -26,7 +26,7 @@ Showing 12 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/LGPL-3.0
 LGPL]  </td>
@@ -36,12 +36,12 @@ LGPL]  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/GPL-3.0 GPL]  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">GPL3  </td>
 </tr>
@@ -50,7 +50,7 @@ class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/gpl-license Gnu
 GPL]  </td>
@@ -60,13 +60,13 @@ GPL]  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GPL2  ,
 Artistic License  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/AFL-3.0 Academic
 Free License 3.0]  </td>
@@ -76,7 +76,7 @@ Free License 3.0]  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/LGPL-3.0
 LGPL]  </td>
@@ -86,7 +86,7 @@ LGPL]  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/LGPL-3.0
 LGPL]  ,
@@ -94,7 +94,7 @@ LGPL]  ,
 2.0]  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[https://opensource.org/licenses/Apache-2.0 Apache
 2]  </td>
@@ -104,7 +104,7 @@ title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">[http://opensource.org/licenses/gpl-license GNU GPL
 (for academics)]  ,
@@ -117,12 +117,12 @@ custom license for commercial usage  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Modified GPL  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GPLv2  </td>
 </tr>
@@ -132,4 +132,4 @@ title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

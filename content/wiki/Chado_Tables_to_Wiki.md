@@ -5,15 +5,15 @@ title: "Chado Tables to Wiki"
 
 The process described on this page is obsolete. The process described on
 [Chado Schema Documentation
-HOWTO](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
+HOWTO](/wiki/Chado_Schema_Documentation_HOWTO)
 is the the current one. This page should be deleted once the new process
 has been fully adopted.
 
 ## Description
 
 This page shows you how to create the Chado table documentation seen on
-pages like [Chado Tables](Chado_Tables "Chado Tables") and [Chado
-Organism Module](Chado_Organism_Module "Chado Organism Module").
+pages like [Chado Tables](/wiki/Chado_Tables) and [Chado
+Organism Module](/wiki/Chado_Organism_Module).
 
 ## Instructions
 
@@ -21,11 +21,11 @@ The postgresql_autodoc script uses template files to create HTML
 documentation of Postgres schemas. To create table documentation for
 this Wiki you will use one template file to create the documentation for
 the entire Chado schema (as in this [Chado Tables
-page](Chado_Tables "Chado Tables"), where all links are internal to the
+page](/wiki/Chado_Tables), where all links are internal to the
 page) and another template to create table documentation for a module
 (e.g. [Chado Organism
-Module](Chado_Organism_Module "Chado Organism Module"), where all links
-go to the [Chado Tables page](Chado_Tables "Chado Tables")). A simple
+Module](/wiki/Chado_Organism_Module), where all links
+go to the [Chado Tables page](/wiki/Chado_Tables)). A simple
 Perl script converts the HTML to Wiki text.
 
 First, the Chado tables or schema that you want to document has to be
@@ -34,9 +34,9 @@ installed in Postgres. Then:
 - Install postgresql_autodoc
   (<a href="http://www.rbt.ca/autodoc/" class="external free"
   rel="nofollow">http://www.rbt.ca/autodoc/</a>)
-- Save [this text](Html.tmpl.main "Html.tmpl.main") as *html.tmpl* if
+- Save [this text](/wiki/Html.tmpl.main) as *html.tmpl* if
   you want to create table documentation for the entire schema
-- Save [this text](Html.tmpl.module "Html.tmpl.module") as *html.tmpl*
+- Save [this text](/wiki/Html.tmpl.module) as *html.tmpl*
   if you want to create table documentation for a single module
 - Run the postgresql_autodoc script in the same directory as the
   *html.tmpl* file. The command will be something like this (substitute
@@ -44,7 +44,7 @@ installed in Postgres. Then:
       >postgresql_autodoc -f chado -u user -d chado --password=passwd -l .
 
 - This should create an HTML file called *chado.html*
-- Run [this Perl script](Print-wiki-tables "Print-wiki-tables") to
+- Run [this Perl script](/wiki/Print-wiki-tables) to
   convert the HTML to Wiki text (this script will work with the Chado v.
   1.6 schema)
 - If you're creating table documentation for the entire schema the

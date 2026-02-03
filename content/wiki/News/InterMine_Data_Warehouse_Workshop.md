@@ -15,7 +15,7 @@ class="external text" rel="nofollow">InterMine workshop</a> in
 Cambridge, UK on November 16th-17th.
 
 This is intended for software developers to learn the
-[InterMine](../InterMine "InterMine") system. The two day course will
+[InterMine](../InterMine) system. The two day course will
 step through creating a new Mine, integrating real data and deploying
 and customising the web application.
 
@@ -33,7 +33,7 @@ rel="nofollow">Richard Smith</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/29*
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/29*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

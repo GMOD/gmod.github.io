@@ -13,18 +13,18 @@ construction.</span>
 Should be done before Jan 1, 2011
 
 The [Chado Phenotype
-module](Chado_Phenotype_Module "Chado Phenotype Module") was developed
-at [FlyBase](Category%253AFlyBase "Category%253AFlyBase").
+module](/wiki/Chado_Phenotype_Module) was developed
+at [FlyBase](/wiki/Category%253AFlyBase).
 
 To try and understand the existing phenotype module during the [GMOD Evo
-Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), participants spent
+Hackathon](/wiki/GMOD_Evo_Hackathon), participants spent
 some time exploring the phenotype tables at FlyBase. The notes from that
 exploration are on this page.
 
 Phenotypes are not cleanly implemented in a single module. The tables
 are spread across the
-[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module") and
-[Genetic](Chado_Genetic_Module "Chado Genetic Module") modules. This
+[Phenotype](/wiki/Chado_Phenotype_Module) and
+[Genetic](/wiki/Chado_Genetic_Module) modules. This
 page discusses the tables from both modules. It also covers some related
 tables.
 
@@ -94,30 +94,30 @@ first two weeks on November 2010.**
 
 | Table | rows at FlyBase |
 |----|----|
-| [**`feature_phenotype`**](Chado_Phenotype_Module#Table:_feature_phenotype "Chado Phenotype Module") | 0 |
-| [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") | 10,925 |
-| [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") | 100,235 |
-| [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") | 7,714 |
-| [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") | 20,673 |
-| [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") | 112,390 |
+| [**`feature_phenotype`**](/wiki/Chado_Phenotype_Module#Table:_feature_phenotype) | 0 |
+| [**`phenotype`**](/wiki/Chado_Phenotype_Module#Table:_phenotype) | 10,925 |
+| [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison) | 100,235 |
+| [**`phenotype_cvterm`**](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm) | 7,714 |
+| [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement) | 20,673 |
+| [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc) | 112,390 |
 
 And those are the only tables that have "phen" in their name.
 
 ## Important Linked Tables
 
-- [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module")
+- [**`environment`**](/wiki/Chado_Genetic_Module#Table:_environment)
   (Doc: "The environmental component of a phenotype description.")
-- [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module")
+- [**`genotype`**](/wiki/Chado_Genetic_Module#Table:_genotype)
 
 And that's it?
 
-## [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module")
+## [**`phenotype`**](/wiki/Chado_Phenotype_Module#Table:_phenotype)
 
 \<protect\>
 
 |----|----|
 | **Table:** | **`phenotype`** |
-| **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
+| **Module:** | **[Phenotype](/wiki/Chado_Phenotype_Module)** |
 
 A phenotypic statement, or a single atomic phenotypic observation, is a
 controlled sentence describing observable effects of non-wild type
@@ -133,7 +133,7 @@ function. E.g. Obs=eye, attribute=color, cvalue=red.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -156,14 +156,14 @@ function. E.g. Obs=eye, attribute=color, cvalue=red.
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>observable_id</td>
 <td>integer</td>
 <td>The entity: e.g. anatomy_part, biological_process.</td>
 </tr>
 <tr class="even">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>attr_id</td>
 <td>integer</td>
@@ -178,14 +178,14 @@ drawn from PATO.</td>
 is not appropriate.</td>
 </tr>
 <tr class="even">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>cvalue_id</td>
 <td>integer</td>
 <td>Phenotype attribute value (state).</td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>assay_id</td>
 <td>integer</td>
@@ -197,13 +197,13 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`phenotype`** columns
 
 Tables referencing **`phenotype`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`feature_phenotype`**](Chado_Phenotype_Module#Table:_feature_phenotype "Chado Phenotype Module")
-- [**`nd_experiment_phenotype`**](Chado_Natural_Diversity_Module.1#Table:_nd_experiment_phenotype "Chado Natural Diversity Module")
-- [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
-- [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
-- [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
+- [**`feature_phenotype`**](/wiki/Chado_Phenotype_Module#Table:_feature_phenotype)
+- [**`nd_experiment_phenotype`**](/wiki/Chado_Natural_Diversity_Module.1#Table:_nd_experiment_phenotype)
+- [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
+- [**`phenotype_cvterm`**](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm)
+- [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
 
 \</protect\>
 
@@ -231,7 +231,7 @@ No
 - But attr_id is not used and cvalue_id points to compound terms in the
   FlyBase Miscellaneous CV.
 
-### [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") @ Flybase
+### [**`phenotype`**](/wiki/Chado_Phenotype_Module#Table:_phenotype) @ Flybase
 
 | Counts |
 |-----------------------|--------|
@@ -316,13 +316,13 @@ All from: FlyBase miscellaneous CV
 
 value is null in every row in FlyBase.
 
-## [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
+## [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
 
 \<protect\>
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`phenotype_comparison`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 "non-suppressible" with respect to genotype2/environment2/phenotype2.
@@ -338,7 +338,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -353,7 +353,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Genetic_Module#Table:_genotype"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_genotype"
 title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 <td>genotype1_id</td>
 <td>integer</td>
@@ -362,7 +362,7 @@ title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Genetic_Module#Table:_environment"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_environment"
 title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 <td>environment1_id</td>
 <td>integer</td>
@@ -371,7 +371,7 @@ title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Genetic_Module#Table:_genotype"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_genotype"
 title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 <td>genotype2_id</td>
 <td>integer</td>
@@ -380,7 +380,7 @@ title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Genetic_Module#Table:_environment"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_environment"
 title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 <td>environment2_id</td>
 <td>integer</td>
@@ -389,7 +389,7 @@ title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+<td><a href="/wiki/Chado_Phenotype_Module#Table:_phenotype"
 title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 <td>phenotype1_id</td>
 <td>integer</td>
@@ -398,14 +398,14 @@ title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+<td><a href="/wiki/Chado_Phenotype_Module#Table:_phenotype"
 title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 <td>phenotype2_id</td>
 <td>integer</td>
 <td></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -414,7 +414,7 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Organism_Module#Table:_organism"
+<td><a href="/wiki/Chado_Organism_Module#Table:_organism"
 title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -428,15 +428,15 @@ title="Chado Organism Module"><strong><code>organism</code></strong></a></td>
 **`phenotype_comparison`** columns
 
 Tables referencing **`phenotype_comparison`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`phenotype_comparison_cvterm`**](Chado_Genetic_Module#Table:_phenotype_comparison_cvterm "Chado Genetic Module")
+- [**`phenotype_comparison_cvterm`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison_cvterm)
 
 \</protect\>
 
 This table is good for binary comparisons. How broadly useful is that?
 
-### [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") @ Flybase
+### [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison) @ Flybase
 
 | Counts |
 |-----------------------------------|---------|
@@ -471,13 +471,13 @@ How do we say how they compare without this column?
 
 What makes two G/E/P pairs comparable?
 
-## [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
+## [**`phenotype_cvterm`**](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm)
 
 \<protect\>
 
 |----|----|
 | **Table:** | **`phenotype_cvterm`** |
-| **Module:** | **[Phenotype](Chado_Phenotype_Module "Chado Phenotype Module")** |
+| **Module:** | **[Phenotype](/wiki/Chado_Phenotype_Module)** |
 
 
 
@@ -492,7 +492,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -507,7 +507,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+<td><a href="/wiki/Chado_Phenotype_Module#Table:_phenotype"
 title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 <td>phenotype_id</td>
 <td>integer</td>
@@ -516,7 +516,7 @@ title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -540,14 +540,14 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`phenotype_cvterm`** columns
 
 Tables referencing **`phenotype_cvterm`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 Can imagine it just attaches a bag of terms to the phenotype. There is
 no semantics on how the terms relate to each other or to the phenotype.
 
-### [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") @ Flybase
+### [**`phenotype_cvterm`**](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm) @ Flybase
 
 | Counts |
 |------------|--------|
@@ -596,13 +596,13 @@ So, what does that mean?
 
 Rank is used for some sort of code that is not stored in the database?
 
-## [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
+## [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
 
 \<protect\>
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`phenstatement`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 Phenotypes are things like "larval lethal". Phenstatements are things
 like "dpp-1 is recessive larval lethal". So essentially phenstatement is
@@ -619,7 +619,7 @@ environment, and phenotype.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -634,7 +634,7 @@ environment, and phenotype.
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Genetic_Module#Table:_genotype"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_genotype"
 title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 <td>genotype_id</td>
 <td>integer</td>
@@ -643,7 +643,7 @@ title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Genetic_Module#Table:_environment"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_environment"
 title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 <td>environment_id</td>
 <td>integer</td>
@@ -652,7 +652,7 @@ title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Phenotype_Module#Table:_phenotype"
+<td><a href="/wiki/Chado_Phenotype_Module#Table:_phenotype"
 title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 <td>phenotype_id</td>
 <td>integer</td>
@@ -661,7 +661,7 @@ title="Chado Phenotype Module"><strong><code>phenotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>type_id</td>
 <td>integer</td>
@@ -670,7 +670,7 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -686,11 +686,11 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`phenstatement`** columns
 
 Tables referencing **`phenstatement`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
-### [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") @ Flybase
+### [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement) @ Flybase
 
 | Counts |
 |------------|--------|
@@ -714,13 +714,13 @@ Well, sort of.
 There are 72K linked genotypes. They use a custom markup language in the
 uniquename.
 
-## [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")
+## [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc)
 
 \<protect\>
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`phendesc`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 A summary of a \_set\_ of phenotypic statements for any one gcontext
 made in any one publication.
@@ -735,7 +735,7 @@ made in any one publication.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -750,7 +750,7 @@ made in any one publication.
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Genetic_Module#Table:_genotype"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_genotype"
 title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 <td>genotype_id</td>
 <td>integer</td>
@@ -759,7 +759,7 @@ title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Genetic_Module#Table:_environment"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_environment"
 title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 <td>environment_id</td>
 <td>integer</td>
@@ -775,7 +775,7 @@ title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 </td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>type_id</td>
 <td>integer</td>
@@ -784,7 +784,7 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Publication_Module#Table:_pub"
+<td><a href="/wiki/Chado_Publication_Module#Table:_pub"
 title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -800,14 +800,14 @@ title="Chado Publication Module"><strong><code>pub</code></strong></a></td>
 **`phendesc`** columns
 
 Tables referencing **`phendesc`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 You can't link directly from a
-[**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module")
+[**`phenotype`**](/wiki/Chado_Phenotype_Module#Table:_phenotype)
 to **`phendesc`**. You can link directly from a
-[**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
+[**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
 to a {\[ChadoTableName\|phendesc}} using (genotype_id, environment_id,
 and pub_id). Note that this does not take full advantage of the unique
 index on those 3 columns plus type_id.
@@ -825,7 +825,7 @@ It does mean we wont link to phenstatements with the wrong
 genotype/environment, but it also means we can orphan phendesc rows that
 don't join with any phenstatements.
 
-### [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") @ Flybase
+### [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc) @ Flybase
 
 | Counts |
 |---------------------|---------|
@@ -877,7 +877,7 @@ phendesc records.
 Free form description of phenotype. Almost all entries are informative,
 and none are null.
 
-## [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module")
+## [**`environment`**](/wiki/Chado_Genetic_Module#Table:_environment)
 
 Definition:
 
@@ -885,7 +885,7 @@ Definition:
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`environment`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 The environmental component of a phenotype description.
 
@@ -899,7 +899,7 @@ The environmental component of a phenotype description.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -933,16 +933,16 @@ The environmental component of a phenotype description.
 **`environment`** columns
 
 Tables referencing **`environment`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module")
-- [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")
-- [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
-- [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
+- [**`environment_cvterm`**](/wiki/Chado_Genetic_Module#Table:_environment_cvterm)
+- [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc)
+- [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
+- [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
 
 \</protect\>
 
-### [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module") @ Flybase
+### [**`environment`**](/wiki/Chado_Genetic_Module#Table:_environment) @ Flybase
 
 | Counts |
 |------------|--------|
@@ -968,7 +968,7 @@ Uniquename choice are:
     conditional - heat sensitive
     conditional - cold sensitive
 
-## [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module")
+## [**`environment_cvterm`**](/wiki/Chado_Genetic_Module#Table:_environment_cvterm)
 
 Definition:
 
@@ -976,7 +976,7 @@ Definition:
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`environment_cvterm`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 
 
@@ -991,7 +991,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -1006,7 +1006,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Genetic_Module#Table:_environment"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_environment"
 title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 <td>environment_id</td>
 <td>integer</td>
@@ -1015,7 +1015,7 @@ title="Chado Genetic Module"><strong><code>environment</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -1031,20 +1031,20 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`environment_cvterm`** columns
 
 Tables referencing **`environment_cvterm`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 No semantics here. My guess is associates a list of CV terms with an
 environment.
 
-### [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module") @ Flybase
+### [**`environment_cvterm`**](/wiki/Chado_Genetic_Module#Table:_environment_cvterm) @ Flybase
 
 | Counts |
 |------------|--------|
 | Table Rows | ? |
 
-## [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module")
+## [**`genotype`**](/wiki/Chado_Genetic_Module#Table:_genotype)
 
 Definition:
 
@@ -1052,7 +1052,7 @@ Definition:
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`genotype`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 Genetic context. A genotype is defined by a collection of features,
 mutations, balancers, deficiencies, haplotype blocks, or engineered
@@ -1068,7 +1068,7 @@ constructs.
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -1110,18 +1110,18 @@ making up the genotype.</p></td>
 **`genotype`** columns
 
 Tables referencing **`genotype`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
-- [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module")
-- [**`nd_experiment_genotype`**](Chado_Natural_Diversity_Module.1#Table:_nd_experiment_genotype "Chado Natural Diversity Module")
-- [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")
-- [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
-- [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
-- [**`stock_genotype`**](Chado_Stock_Module#Table:_stock_genotype "Chado Stock Module")
+- [**`feature_genotype`**](/wiki/Chado_Genetic_Module#Table:_feature_genotype)
+- [**`nd_experiment_genotype`**](/wiki/Chado_Natural_Diversity_Module.1#Table:_nd_experiment_genotype)
+- [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc)
+- [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
+- [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
+- [**`stock_genotype`**](/wiki/Chado_Stock_Module#Table:_stock_genotype)
 
 \</protect\>
 
-### [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module") @ Flybase
+### [**`genotype`**](/wiki/Chado_Genetic_Module#Table:_genotype) @ Flybase
 
 | Counts |
 |-------------------------------|---------|
@@ -1142,7 +1142,7 @@ custom FlyBase encoding of information.
 In the cases where this is not null it uses a custom FlyBase
 nomenclature that often includes one or more FlyBase IDs.
 
-## [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module")
+## [**`feature_genotype`**](/wiki/Chado_Genetic_Module#Table:_feature_genotype)
 
 Definition:
 
@@ -1150,7 +1150,7 @@ Definition:
 
 |-------------|------------------------------------------------------------|
 | **Table:** | **`feature_genotype`** |
-| **Module:** | **[Genetic](Chado_Genetic_Module "Chado Genetic Module")** |
+| **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
 
 
@@ -1165,7 +1165,7 @@ columns</caption>
 </colgroup>
 <thead>
 <tr class="header">
-<th><a href="Glossary#Foreign_Key" title="Glossary">FK</a></th>
+<th><a href="/wiki/Glossary#Foreign_Key" title="Glossary">FK</a></th>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
@@ -1180,7 +1180,7 @@ columns</caption>
 </td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Sequence_Module#Table:_feature"
+<td><a href="/wiki/Chado_Sequence_Module#Table:_feature"
 title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
 <td>feature_id</td>
 <td>integer</td>
@@ -1189,7 +1189,7 @@ title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_Genetic_Module#Table:_genotype"
+<td><a href="/wiki/Chado_Genetic_Module#Table:_genotype"
 title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 <td>genotype_id</td>
 <td>integer</td>
@@ -1198,7 +1198,7 @@ title="Chado Genetic Module"><strong><code>genotype</code></strong></a></td>
 </p></td>
 </tr>
 <tr class="even">
-<td><a href="Chado_Sequence_Module#Table:_feature"
+<td><a href="/wiki/Chado_Sequence_Module#Table:_feature"
 title="Chado Sequence Module"><strong><code>feature</code></strong></a></td>
 <td>chromosome_id</td>
 <td>integer</td>
@@ -1225,7 +1225,7 @@ treated as different groups, as they do not fall on a particular
 chromosome).</p></td>
 </tr>
 <tr class="odd">
-<td><a href="Chado_CV_Module#Table:_cvterm"
+<td><a href="/wiki/Chado_CV_Module#Table:_cvterm"
 title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 <td>cvterm_id</td>
 <td>integer</td>
@@ -1241,14 +1241,14 @@ title="Chado CV Module"><strong><code>cvterm</code></strong></a></td>
 **`feature_genotype`** columns
 
 Tables referencing **`feature_genotype`** via [foreign
-key](Glossary#Foreign_Key "Glossary") constraints:
+key](/wiki/Glossary#Foreign_Key) constraints:
 
 - None.\</protect\>
 
 This is the table that connects data to features, finally. The rank and
 group have some semantics.
 
-### [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module") @ Flybase
+### [**`feature_genotype`**](/wiki/Chado_Genetic_Module#Table:_feature_genotype) @ Flybase
 
 | Counts |
 |-----------------------|---------|

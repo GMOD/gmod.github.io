@@ -3,8 +3,8 @@ title: "Category%253ATripal"
 ---
 # Category%253ATripal
 
-Pages related to [Tripal](Tripal.1 "Tripal"), a web front end to
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases.
+Pages related to [Tripal](/wiki/Tripal.1), a web front end to
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
 
 ## Subcategories
 
@@ -12,7 +12,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 ## Pages in category "Tripal"
 
@@ -28,54 +28,54 @@ The following 16 pages are in this category, out of 16 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="d">D</h3>
 <ul>
-<li><a href="Downloads" title="Downloads">Downloads</a></li>
+<li><a href="/wiki/Downloads" title="Downloads">Downloads</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GMOD_Malaysia_2014/Tripal_Tutorial"
+<li><a href="/wiki/GMOD_Malaysia_2014/Tripal_Tutorial"
 title="GMOD Malaysia 2014/Tripal Tutorial">GMOD Malaysia 2014/Tripal
 Tutorial</a></li>
 </ul>
 <h3 id="n">N</h3>
 <ul>
-<li><a href="News/Tripal_1.1_Publication"
+<li><a href="/wiki/News/Tripal_1.1_Publication"
 title="News/Tripal 1.1 Publication">News/Tripal 1.1 Publication</a></li>
-<li><a href="News/Tripal_v1.0_Released"
+<li><a href="/wiki/News/Tripal_v1.0_Released"
 title="News/Tripal v1.0 Released">News/Tripal v1.0 Released</a></li>
 </ul>
 <h3 id="t-1">T</h3>
 <ul>
-<li><a href="Training_and_Outreach"
+<li><a href="/wiki/Training_and_Outreach"
 title="Training and Outreach">Training and Outreach</a></li>
-<li><a href="Tripal.1" title="Tripal">Tripal</a></li>
+<li><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="t-cont.">T cont.</h3>
 <ul>
-<li><span class="redirect-in-category"><a href="Tripal_Tutorial"
+<li><span class="redirect-in-category"><a href="/wiki/Tripal_Tutorial"
 class="mw-redirect" title="Tripal Tutorial">Tripal
 Tutorial</a></span></li>
-<li><a href="Tripal_Tutorial_(pre_version_0.3b)"
+<li><a href="/wiki/Tripal_Tutorial_(pre_version_0.3b)"
 title="Tripal Tutorial (pre version 0.3b)">Tripal Tutorial (pre version
 0.3b)</a></li>
-<li><a href="Tripal_Tutorial_(v0.3.1b_VM)"
+<li><a href="/wiki/Tripal_Tutorial_(v0.3.1b_VM)"
 title="Tripal Tutorial (v0.3.1b VM)">Tripal Tutorial (v0.3.1b
 VM)</a></li>
-<li><a href="Tripal_Tutorial_(v0.3.1b)"
+<li><a href="/wiki/Tripal_Tutorial_(v0.3.1b)"
 title="Tripal Tutorial (v0.3.1b)">Tripal Tutorial (v0.3.1b)</a></li>
-<li><a href="Tripal_Tutorial_(v1.0)"
+<li><a href="/wiki/Tripal_Tutorial_(v1.0)"
 title="Tripal Tutorial (v1.0)">Tripal Tutorial (v1.0)</a></li>
-<li><a href="Tripal_Tutorial_2010" title="Tripal Tutorial 2010">Tripal
+<li><a href="/wiki/Tripal_Tutorial_2010" title="Tripal Tutorial 2010">Tripal
 Tutorial 2010</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="t-cont.-1">T cont.</h3>
 <ul>
-<li><a href="Tripal_Tutorial_2011" title="Tripal Tutorial 2011">Tripal
+<li><a href="/wiki/Tripal_Tutorial_2011" title="Tripal Tutorial 2011">Tripal
 Tutorial 2011</a></li>
-<li><a href="Tripal_Working_Group" title="Tripal Working Group">Tripal
+<li><a href="/wiki/Tripal_Working_Group" title="Tripal Working Group">Tripal
 Working Group</a></li>
-<li><a href="Tripal/tool_data" title="Tripal/tool data">Tripal/tool
+<li><a href="/wiki/Tripal/tool_data" title="Tripal/tool data">Tripal/tool
 data</a></li>
-<li><a href="Template:TutorialList"
+<li><a href="/wiki/Template:TutorialList"
 title="Template:TutorialList">Template:TutorialList</a></li>
 </ul></td>
 </tr>
@@ -102,7 +102,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [Cugi logo6.5.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Cugi_logo6.5.jpg "File:Cugi logo6.5.jpg")
+  [Cugi logo6.5.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/Cugi_logo6.5.jpg)
   85 KB
 
 
@@ -125,7 +125,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [CUGILogoHomePage.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/01/CUGILogoHomePage.png "File:CUGILogoHomePage.png")
+  [CUGILogoHomePage.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/01/CUGILogoHomePage.png)
   11 KB
 
 
@@ -148,7 +148,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [PAG2010GDRinDrupal.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/PAG2010GDRinDrupal.pdf "File:PAG2010GDRinDrupal.pdf")
+  [PAG2010GDRinDrupal.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/PAG2010GDRinDrupal.pdf)
   2.2 MB
 
 
@@ -171,7 +171,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [TripalLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg "File:TripalLogo.jpg")
+  [TripalLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg)
   30 KB
 
 
@@ -194,7 +194,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [TripalLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png "File:TripalLogo.png")
+  [TripalLogo.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png)
   14 KB
 
 
@@ -217,7 +217,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [TripalUsersGuideJan201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf "File:TripalUsersGuideJan2010.pdf")
+  [TripalUsersGuideJan201...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf)
   1.44 MB
 
 
@@ -240,7 +240,7 @@ The following 8 files are in this category, out of 8 total.
 
 
 
-  [TripalUsersGuideJune20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/TripalUsersGuideJune2009.pdf "File:TripalUsersGuideJune2009.pdf")
+  [TripalUsersGuideJune20...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/00/TripalUsersGuideJune2009.pdf)
   1.4 MB
 
 
@@ -264,5 +264,5 @@ The following 8 files are in this category, out of 8 total.
 
 
   [PeanutBase PAG2015
-  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")
+  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf)
   3.35 MB

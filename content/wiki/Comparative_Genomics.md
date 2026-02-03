@@ -5,7 +5,7 @@ title: "Comparative Genomics"
 
 GMOD includes several components for managing and visualizing
 [comparative genomics and
-synteny](Category%253AComparative_Genomics "Category%253AComparative Genomics")
+synteny](/wiki/Category%253AComparative_Genomics)
 data.
 
   Introduction](#Introduction)
@@ -21,10 +21,10 @@ data.
 ## Introduction
 
 [Comparative
-genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
+genomics](/wiki/Category%253AComparative_Genomics)
 and synteny are hot topics in biology and are frequently discussed at
-GMOD [Meetings](Meetings "Meetings"). GMOD offers several solutions for
-managing and [visualizing](Visualization "Visualization") comparative
+GMOD [Meetings](/wiki/Meetings). GMOD offers several solutions for
+managing and [visualizing](/wiki/Visualization) comparative
 genomics data.
 
 ## Presentations and Posters
@@ -38,23 +38,23 @@ genomics data.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
   title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
   SynView</a>** - presented by Steve Fischer at the [November 2007 GMOD
-  Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting"), is
+  Meeting](/wiki/November_2007_GMOD_Meeting), is
   a good overview of many issues encountered when displaying synteny.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf" class="internal"
   title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
   Using GMOD Tools</a>** - poster by [Scott
-  Cain](User%253AScott "User%253AScott") showing how six GMOD tools are used to
+  Cain](/wiki/User%253AScott) showing how six GMOD tools are used to
   create an example comparative genome model organism database.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
   class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
   Genomics With GMOD and BioPerl</a>** - a 2004 presentation by [Jason
-  Stajich](User%253AStajich "User%253AStajich").
+  Stajich](/wiki/User%253AStajich).
 
 ## GMOD Components
 
 ### CMap
 
-[CMap](CMap.1 "CMap") is a web-based tool that allows users to view
+[CMap](/wiki/CMap.1) is a web-based tool that allows users to view
 comparisons of a wide variety of data including genetic maps, physical
 maps, sequence assemblies, QTL and deletion maps. Unlike the other tools
 listed here, it does not require sequence data.
@@ -65,15 +65,15 @@ these correspondences based on feature names or correspondences can be
 imported directly. CMap can display correspondences as either lines or
 ribbons.
 
-See [CMap](CMap.1 "CMap") for more.
+See [CMap](/wiki/CMap.1) for more.
 
 ### GBrowse_syn
 
 GBrowse_syn, as implemented at WormBase
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn"), or the Generic Synteny
-Browser, is a [GBrowse](GBrowse.1 "GBrowse")-based
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
+[GBrowse_syn](/wiki/GBrowse_syn.1), or the Generic Synteny
+Browser, is a [GBrowse](/wiki/GBrowse.1)-based
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species.  It can be used to
 view multiple sequence alignment data, synteny or co-linearity data from
@@ -89,7 +89,7 @@ class="external text" rel="nofollow">SGN</a>.
 
 ### Sybil
 
-[Sybil](Sybil "Sybil") is a web-based system for comparative genomics
+[Sybil](/wiki/Sybil) is a web-based system for comparative genomics
 visualizations. It is currently developed by engineers at
 <a href="http://jcvi.org" class="external text" rel="nofollow">JCVI</a>
 and at <a href="http://medschool.umaryland.edu" class="external text"
@@ -98,18 +98,18 @@ Sybil supports several visualizations: Whole genome comparisons,
 regional comparisons (synteny) and orthologous gene comparisons.
 
 See the
-[Sybil/IGS](Chado_Comparative_Schema#Sybil.2FIGS "Chado Comparative Schema")
+[Sybil/IGS](/wiki/Chado_Comparative_Schema#Sybil.2FIGS)
 section of the [Chado Comparative
-Schema](Chado_Comparative_Schema "Chado Comparative Schema") page for
+Schema](/wiki/Chado_Comparative_Schema) page for
 how Sybil represents syntenic data in
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ### SynView
 
-[SynView](SynView "SynView") displays synteny at the region and/or gene
+[SynView](/wiki/SynView) displays synteny at the region and/or gene
 level. Users select a reference genome and then synteny with other
 selected genomes is displayed relative to that genome. SynView is based
-on [GBrowse](GBrowse.1 "GBrowse"). It can be layered on top of an
+on [GBrowse](/wiki/GBrowse.1). It can be layered on top of an
 existing GBrowse instance and uses the full range of GBrowse's display
 and configuration options. SynView is included in the GBrowse
 distribution.

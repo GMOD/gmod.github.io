@@ -47,7 +47,7 @@ Model persons, institutes, groups, organizations, etc.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -74,13 +74,13 @@ contact Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-- [assay](Chado_Tables#Table:_assay "Chado Tables")
-- [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables")
-- [contact_relationship](Chado_Tables#Table:_contact_relationship "Chado Tables")
-- [quantification](Chado_Tables#Table:_quantification "Chado Tables")
-- [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables")
-- [study](Chado_Tables#Table:_study "Chado Tables")
+- [arraydesign](/wiki/Chado_Tables#Table:_arraydesign)
+- [assay](/wiki/Chado_Tables#Table:_assay)
+- [biomaterial](/wiki/Chado_Tables#Table:_biomaterial)
+- [contact_relationship](/wiki/Chado_Tables#Table:_contact_relationship)
+- [quantification](/wiki/Chado_Tables#Table:_quantification)
+- [stockcollection](/wiki/Chado_Tables#Table:_stockcollection)
+- [study](/wiki/Chado_Tables#Table:_study)
 
 ------------------------------------------------------------------------
 
@@ -114,7 +114,7 @@ Model relationships between contacts
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -125,7 +125,7 @@ typically from the OBO relationship ontology, although other
 relationship types are allowed.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_contact"
+<td><p><a href="/wiki/Chado_Tables#Table:_contact"
 title="Chado Tables">contact</a></p></td>
 <td>subject_id</td>
 <td>integer</td>
@@ -135,7 +135,7 @@ The subject of the subj-predicate-obj sentence. In a DAG, this
 corresponds to the child node.</td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_contact"
+<td><p><a href="/wiki/Chado_Tables#Table:_contact"
 title="Chado Tables">contact</a></p></td>
 <td>object_id</td>
 <td>integer</td>

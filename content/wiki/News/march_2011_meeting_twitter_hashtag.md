@@ -7,7 +7,7 @@ Follow the GMOD March 2011 Meeting on Twitter at \#gmod11
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/03/05*
+*Posted to the [GMOD News](../GMOD_News) on 2011/03/05*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -3,9 +3,9 @@ title: "GMOD Malaysia 2014/JBrowse Tutorial"
 ---
 # GMOD Malaysia 2014/JBrowse Tutorial
 
-This [JBrowse](../JBrowse.1 "JBrowse") tutorial was presented by [Scott
-Cain](../User%253AScott "User%253AScott") at [GMOD Malaysia
-2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February 2014. This
+This [JBrowse](../JBrowse.1) tutorial was presented by [Scott
+Cain](../User%253AScott) at [GMOD Malaysia
+2014](../GMOD_Malaysia_2014.1), February 2014. This
 tutorial requires JBrowse version 1.11.x.
 
 The most recent JBrowse tutorial can be found at the
@@ -98,9 +98,9 @@ It's also very useful to know how to tab-complete in the shell.
 
 ## JBrowse Introduction
 
-How and why [JBrowse](../JBrowse.1 "JBrowse") is different from most
+How and why [JBrowse](../JBrowse.1) is different from most
 other web-based genome browsers, including
-[GBrowse](../GBrowse.1 "GBrowse").
+[GBrowse](../GBrowse.1).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
@@ -192,7 +192,7 @@ far enough.
 #### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
-database and turn it into [JSON](../Glossary#JSON "Glossary") data that
+database and turn it into [JSON](../Glossary#JSON) data that
 the web browser can use.
 
 In this case, we have specified all of our track configurations in
@@ -236,7 +236,7 @@ searchable.
 `urltemplate` specifies a URL pattern that you can use to link genomic
 features to specific web pages.
 
-`class` specifies the [CSS](../Glossary#CSS "Glossary") class that
+`class` specifies the [CSS](../Glossary#CSS) class that
 describes how the feature should look.
 
 For this particular track, I've specified the `transcript` feature
@@ -490,12 +490,12 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
 
-- [Tutorials](../Category%253ATutorials "Category%253ATutorials")
-- [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
-- [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
+- [Tutorials](../Category%253ATutorials)
+- [JBrowse](../Category%253AJBrowse)
+- [GMOD Schools](../Category%253AGMOD_Schools)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [JBrowse](../JBrowse.1 "JBrowse") |
+| [Has topic](../Property%253AHas_topic) | [JBrowse](../JBrowse.1) |

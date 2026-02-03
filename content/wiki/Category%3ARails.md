@@ -9,6 +9,6 @@ This category contains only the following page.
 
 ### C
 
-- [Chado on Rails](Chado_on_Rails "Chado on Rails")
+- [Chado on Rails](/wiki/Chado_on_Rails)
 
 Retrieved from "[http://gmod.org/wiki/Category%253ARails](/wiki/Category%253ARails)"

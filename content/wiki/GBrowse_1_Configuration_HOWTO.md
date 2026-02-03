@@ -4,9 +4,9 @@ title: "GBrowse 1 Configuration HOWTO"
 # GBrowse 1 Configuration HOWTO
 
 This document provides information on configuring version 1 of the
-[Generic Genome Browser (GBrowse)](GBrowse.1 "GBrowse"), part of the
-[GMOD Project](Main_Page "Main Page"). For version 2, see
-<a href="GBrowse_2_Configuration_HOWTO" class="mw-redirect"
+[Generic Genome Browser (GBrowse)](/wiki/GBrowse.1), part of the
+[GMOD Project](/wiki/Main_Page). For version 2, see
+<a href="/wiki/GBrowse_2_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
 
   Databases From Scratch</span>](#Creating_Databases_From_Scratch)
@@ -80,27 +80,27 @@ title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
 
 # Creating Databases From Scratch
 
-[GBrowse](GBrowse.1 "GBrowse") uses
-*[adaptors](GBrowse_Adaptors "GBrowse Adaptors")* to read genomic data.
+[GBrowse](/wiki/GBrowse.1) uses
+*[adaptors](/wiki/GBrowse_Adaptors)* to read genomic data.
 Several of those adaptors read data from [database management systems (
-*a.k.a. databases*)](Glossary#Database_Management_System "Glossary"). If
+*a.k.a. databases*)](/wiki/Glossary#Database_Management_System). If
 you have a significant amount of data (and most people do) then you want
 to store your GBrowse data in a database and use a database adaptor.
 Often the first step after [installing
-GBrowse](GBrowse_Install_HOWTO "GBrowse Install HOWTO") is to get the
+GBrowse](/wiki/GBrowse_Install_HOWTO) is to get the
 genomic data you want to see into a database that GBrowse can read.
 
 There are 3 widely used [GBrowse
-Adaptors](GBrowse_Adaptors "GBrowse Adaptors") that use databases:
+Adaptors](/wiki/GBrowse_Adaptors) that use databases:
 
-1.  [GFF3](GFF3 "GFF3") databases - slightly faster than
-    [GFF2](GFF2 "GFF2") and able to represent multilevel features.
-2.  [GFF2](GFF2 "GFF2") databases - older and unable to represent genes
+1.  [GFF3](/wiki/GFF3) databases - slightly faster than
+    [GFF2](/wiki/GFF2) and able to represent multilevel features.
+2.  [GFF2](/wiki/GFF2) databases - older and unable to represent genes
     with alternative splicing patterns, features with more than one
     level of nesting, and several other common situations. **GFF2 is
     deprecated and if possible you are strongly encouraged to use
-    [GFF3](GFF3 "GFF3").**
-3.  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+    [GFF3](/wiki/GFF3).**
+3.  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
     databases - These are significantly slower than the GFF databases,
     but are feature-rich.
 
@@ -225,7 +225,7 @@ All \[GENERAL\] options are listed below, grouped together by function.
 
 ### Adaptor Options
 
-[GBrowse Adaptors](GBrowse_Adaptors "GBrowse Adaptors") connect GBrowse
+[GBrowse Adaptors](/wiki/GBrowse_Adaptors) connect GBrowse
 to a data source. A config file specifies exactly one adaptor. Adaptor
 options specify which adaptor to use and what parameters to use with it.
 
@@ -233,13 +233,13 @@ db_adaptor
 Tells GBrowse what database adaptor to use. By using different adaptors
 you can attach GBrowse to a variety of different databases. Available
 options are listed on the [GBrowse
-Adaptors](GBrowse_Adaptors "GBrowse Adaptors") page.
+Adaptors](/wiki/GBrowse_Adaptors) page.
 
 db_args
 
 Arguments to pass to the adaptor for it to use when making a database
 connection. The exact format will depend on the adaptor you're using.
-For Bio::DB::GFF running on top of a [MySQL](MySQL "MySQL") database use
+For Bio::DB::GFF running on top of a [MySQL](/wiki/MySQL) database use
 a db_args like the following:
 
        db_args = -adaptor dbi::mysql
@@ -279,8 +279,8 @@ To use the in-memory version of Bio::DB::GFF, use these arguments:
      db_args = -adaptor memory
                -dir   /path/to/directory
 
-The indicated directory should contain one or more [GFF](GFF "GFF") and
-[FASTA](Glossary#FASTA "Glossary") files, distinguished by the filename
+The indicated directory should contain one or more [GFF](/wiki/GFF) and
+[FASTA](/wiki/Glossary#FASTA) files, distinguished by the filename
 extensions `.gff` and `.fa` respectively.
 
 user
@@ -354,7 +354,7 @@ units, unit_divider
 The units option allows GBrowse to display units on an alternate scale
 (for example, (centi)Morgans), and the `unit_divider` provides the
 conversion factor between base pair units (which is what must be
-specified in the [GFF](GFF "GFF") file) and the specified units. For
+specified in the [GFF](/wiki/GFF) file) and the specified units. For
 example if it is known that 5010 base pairs is equal to one Morgan, 5010
 would be specified for the `unit_divider`. Note that if `unit_divider`
 is specified, `max segment`, `default segment` and and `zoom levels`
@@ -612,8 +612,8 @@ class="external text" rel="nofollow">this email</a> for an example of
 using this feature to show assembly gaps as vertical gray regions.
 
 For a clever example of how to use postgrid calls, see the
-[SynView](SynView "SynView")
-<a href="Synteny" class="mw-redirect" title="Synteny">synteny</a>
+[SynView](/wiki/SynView)
+<a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser in the `contrib` directory of the GBrowse distribution. It uses
 a standard GBrowse configuration file with postgrid calls to draw
 trapezoids between glyphs to show synteny. For an example of how this
@@ -670,14 +670,14 @@ To activate the default aggregators of `transcript`, `clone`, and
 Do not use aggregators with the
 <a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>,
-BioSQL, or Chado [adaptors](GBrowse_Adaptors "GBrowse Adaptors").
+BioSQL, or Chado [adaptors](/wiki/GBrowse_Adaptors).
 
 reference class
 
 **Note:** This option is used only with the
 <a href="http://bioperl.org/wiki/Module:Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a>
-([GFF2](GFF2 "GFF2")) adaptor.
+([GFF2](/wiki/GFF2)) adaptor.
 
 GBrowse needs to know the class of the reference sequences that other
 features are placed on. The default is Sequence. If you want to use
@@ -804,7 +804,7 @@ Otherwise, the browser will proceed to a full text search of all the
 comment fields.
 
 search attributes (<a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
-class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](GBrowse_Adaptors "GBrowse Adaptors") only)
+class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](/wiki/GBrowse_Adaptors) only)
 When the browser has searched the name and alias of features without
 success, it will do a whole database keyword search by calling the
 database's `search_notes()` method. By default this will search the text
@@ -833,7 +833,7 @@ das mapmaster
 
 This option, which should appear somewhere in the `[GENERAL]` section,
 indicates that the database should be made available as a
-<a href="DAS" class="mw-redirect" title="DAS">DAS</a> source. The value
+<a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> source. The value
 of the option corresponds to the URL of the DAS reference server for
 this data source, or `SELF` if this database is its own reference
 server. (See <a href="http://www.biodas.org/" class="external text"
@@ -841,7 +841,7 @@ rel="nofollow">the BioDAS web site</a> for an explanation of what
 reference servers are.)
 
 Please see DAS_HOWTO for more information on using
-<a href="DAS" class="mw-redirect" title="DAS">DAS</a> with GBrowse.
+<a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> with GBrowse.
 
 proxy, http proxy, ftp proxy
 
@@ -849,7 +849,7 @@ If your web server is behind a firewall and needs to use a proxy in
 order to access remote HTTP or FTP sites, then one or more of these
 options needs to be specified in order for the "add remote annotations"
 feature to work (both for file-based and
-<a href="DAS" class="mw-redirect" title="DAS">DAS</a>-based remote
+<a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>-based remote
 annotations). `http proxy` will set the proxy to use for outgoing HTTP
 connections, `ftp proxy` will set the proxy to use for outgoing FTP
 connections, and "proxy" will set both. The value is the URL of the
@@ -877,7 +877,7 @@ third argument. It specifies additional parameters to be passed to the
 selected driver.
 
 For example, here is how to create session data that is stored in the
-[MySQL](MySQL "MySQL") "test" database under a table named
+[MySQL](/wiki/MySQL) "test" database under a table named
 "gbrowse_sessions." The session data will be stored in binary form by
 the Storable module:
 
@@ -1011,7 +1011,7 @@ directory programmatically.
 Plugins are a way for third party developers to add functionality to
 GBrowse without changing its core source code. Plugins are stored in the
 GBrowse configuration directory under the `plugins` subdirectory. See
-<a href="Plugins" class="mw-redirect" title="Plugins">plugins</a>.
+<a href="/wiki/Plugins" class="mw-redirect" title="Plugins">plugins</a>.
 
 
 
@@ -1043,8 +1043,8 @@ directories to search in.
 ### Track Sharing Options
 
 Users can link to their own tracks or to tracks published by other
-GBrowse or <a href="DAS" class="mw-redirect" title="DAS">DAS</a>
-servers. GBrowse can also integrate with [Galaxy](Galaxy.1 "Galaxy").
+GBrowse or <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>
+servers. GBrowse can also integrate with [Galaxy](/wiki/Galaxy.1).
 
 - **allow remote callbacks**
 
@@ -1470,7 +1470,7 @@ described in the next section.
 ## Glyphs and Glyph Options
 
 See the separate article [GBrowse
-Configuration/Glyphs](GBrowse_Configuration/Glyphs "GBrowse Configuration/Glyphs")
+Configuration/Glyphs](/wiki/GBrowse_Configuration/Glyphs)
 for this important topic.
 
 ## Adding features to the overview
@@ -1974,27 +1974,27 @@ value of the tag looks like an NCBI GI number:
 ## Configuring Balloon Tooltips
 
 See: [GBrowse
-Configuration/Balloons](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
+Configuration/Balloons](/wiki/GBrowse_Configuration/Balloons).
 
 ## Generating Static Images: PNGs, SVGs and PDFs
 
 See: [GBrowse
-Configuration/Images](GBrowse_Configuration/Images "GBrowse Configuration/Images").
+Configuration/Images](/wiki/GBrowse_Configuration/Images).
 
 # Generating Feature Frequency Histograms
 
 See: [GBrowse Configuration/Feature frequency
-histograms](GBrowse_Configuration/Feature_frequency_histograms "GBrowse Configuration/Feature frequency histograms")
+histograms](/wiki/GBrowse_Configuration/Feature_frequency_histograms)
 
 # Internationalization
 
 See: [GBrowse
-Configuration/I18n](GBrowse_Configuration/I18n "GBrowse Configuration/I18n").
+Configuration/I18n](/wiki/GBrowse_Configuration/I18n).
 
 # Authentication & Authorization
 
 See: [GBrowse
-Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication").
+Configuration/Authentication](/wiki/GBrowse_Configuration/Authentication).
 
 # Displaying Genetic & RH Maps
 
@@ -2059,12 +2059,12 @@ For example:
 # Using DAS (Distributed Annotation System) Databases
 
 See: [GBrowse
-Configuration/DAS](GBrowse_Configuration/DAS "GBrowse Configuration/DAS").
+Configuration/DAS](/wiki/GBrowse_Configuration/DAS).
 
 # The Bio::MOBY Browse
 
 See: [GBrowse
-Configuration/BioMOBY](GBrowse_Configuration/BioMOBY "GBrowse Configuration/BioMOBY").
+Configuration/BioMOBY](/wiki/GBrowse_Configuration/BioMOBY).
 
 # Filtering Search Results
 
@@ -2116,7 +2116,7 @@ on the primary_tag
 # Invoking GBrowse URLs
 
 See: [GBrowse Configuration/URL
-schema](GBrowse_Configuration/URL_schema "GBrowse Configuration/URL schema").
+schema](/wiki/GBrowse_Configuration/URL_schema).
 
 # Important Maintenance
 
@@ -2134,7 +2134,7 @@ proper permissions to delete the files in this directory.
 # Further Information
 
 For further information, bug reports, etc, please consult the [GMOD
-Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists"). The main
+Mailing Lists](/wiki/GMOD_Mailing_Lists). The main
 mailing list for gbrowse support is
 <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
 class="external free"
@@ -2144,7 +2144,7 @@ also get help on the GMOD
 class="external text" rel="nofollow">IRC</a> channel on
 <a href="http://freenode.net/" class="external text"
 rel="nofollow">Freenode</a>:
-<a href="irc://irc.freenode.net/#gmod" class="external free"
+<a href="/wiki/irc://irc.freenode.net/#gmod" class="external free"
 rel="nofollow">irc://irc.freenode.net/#gmod</a>
 
 Have fun!

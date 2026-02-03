@@ -8,16 +8,16 @@ title: "News/CVS to SVN Conversion: Sept 15"
 | [<img |  |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/0e/Cvs_logo.gif/70px-Cvs_logo.gif"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/Cvs_logo.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/Cvs_logo.gif 2x"
-width="70" height="54" alt="CVS" />](../CVS_to_Subversion_Conversion "CVS") | <span style="font-size: 200%; font-weight: bold">⇒</span> | [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Subversion_logo.jpg" width="73"
-height="52" alt="Subversion" />](../CVS_to_Subversion_Conversion "Subversion") |
+width="70" height="54" alt="CVS" />](../CVS_to_Subversion_Conversion) | <span style="font-size: 200%; font-weight: bold">⇒</span> | [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Subversion_logo.jpg" width="73"
+height="52" alt="Subversion" />](../CVS_to_Subversion_Conversion) |
 
 GMOD's CVS source code repository will be [converted to Subversion
-(SVN)](../CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+(SVN)](../CVS_to_Subversion_Conversion)
 on September 15, 2009. [Rob
-Buels](../User%253ARobertBuels "User%253ARobertBuels") of Cornell /
-[SGN](../Category%253ASGN "Category%253ASGN") has generously offered to to do
+Buels](../User%253ARobertBuels) of Cornell /
+[SGN](../Category%253ASGN) has generously offered to to do
 this. Notes on the conversion are described on the [CVS to Subversion
-Conversion](../CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+Conversion](../CVS_to_Subversion_Conversion)
 page. The discussion leading up to this decision on the
 <a href="http://comments.gmane.org/gmane.science.biology.gmod.devel/364"
 class="external text" rel="nofollow">GMOD Developers mailing list</a>.
@@ -36,13 +36,13 @@ See
 <a href="http://gmod.cvs.sourceforge.net/gmod/" class="external text"
 rel="nofollow">SourceForge</a> for a complete list of projects in GMOD
 CVS. This list is reproduced on the [CVS to Subversion
-Conversion](../CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+Conversion](../CVS_to_Subversion_Conversion)
 page. Between now and September 15, we will contact project developers
 to confirm what projects are still active. All projects will be moved to
 SVN, but any projects that are no longer active will be placed in a
 separate archive directory. This will significantly clean up the
 repository. See the [CVS to Subversion
-Conversion](../CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+Conversion](../CVS_to_Subversion_Conversion)
 page for the current status of each project.
 
 Rob has created a
@@ -63,12 +63,12 @@ reminder and additional info a few days before the conversion.
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements") and [Rob
-Buels](../User%253ARobertBuels "User%253ARobertBuels")
+[Dave Clements](../User%253AClements) and [Rob
+Buels](../User%253ARobertBuels)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/08/26*
+*Posted to the [GMOD News](../GMOD_News) on 2009/08/26*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

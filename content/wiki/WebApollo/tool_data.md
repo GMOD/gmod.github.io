@@ -55,9 +55,9 @@ dl_src =
 rel="nofollow">JBrowse client source on github</a>
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [Webapollo](../Category%253AWebapollo "Category%253AWebapollo")
-- [Annotation](../Category%253AAnnotation "Category%253AAnnotation")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
+  Cloud](../Category%253AGMOD_in_the_Cloud)
+- [Webapollo](../Category%253AWebapollo)
+- [Annotation](../Category%253AAnnotation)
+- [Tool data](../Category%253ATool_data)
 - [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
+  Components](../Category%253AGMOD_Components)

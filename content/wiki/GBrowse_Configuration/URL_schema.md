@@ -233,7 +233,7 @@ in order to be able to view the annotations.
 
 **plugin, plugin_do**
 
-These arguments run [plugins](../GBrowse_Plugins "GBrowse Plugins"). The
+These arguments run [plugins](../GBrowse_Plugins). The
 "plugin" argument gives the name of the plugin to activate. The name is
 the last component of the plugin package name, e.g. FastaDumper. The
 "plugin_do" argument selects what to do with the plugin. Possible values

@@ -16,7 +16,7 @@ class="external text" rel="nofollow">find the code here</a>.
 
 What's new:
 
-- **Scalability:** [JBrowse](../JBrowse.1 "JBrowse") can now handle very
+- **Scalability:** [JBrowse](../JBrowse.1) can now handle very
   large data tracks, including human EST/SNP tracks, or tracks of
   next-gen sequence reads. Large datasets are broken into smaller
   chunks, so there is no loading delay for big tracks.
@@ -30,7 +30,7 @@ What's new:
 - **Bug fixes:** Numerous display glitches have been fixed, including
   issues with wide-screen monitors and long mostly-offscreen features.
 
-Note: The [JSON](../Glossary#JSON "Glossary") format used by 1.1 *is not
+Note: The [JSON](../Glossary#JSON) format used by 1.1 *is not
 backward compatible with previous releases. If you are upgrading from an
 older version of JBrowse, you will have to regenerate all the JSON files
 on your server.*
@@ -38,11 +38,11 @@ on your server.*
 See the <a href="http://jbrowse.org/?p=56" class="external text"
 rel="nofollow">release notes</a> for full details.
 
-[Mitch Skinner](../User%253AMitchSkinner "User%253AMitchSkinner")
+[Mitch Skinner](../User%253AMitchSkinner)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/09/12*
+*Posted to the [GMOD News](../GMOD_News) on 2010/09/12*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

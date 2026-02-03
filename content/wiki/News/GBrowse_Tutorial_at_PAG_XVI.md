@@ -9,7 +9,7 @@ class="external text" rel="nofollow">GBrowse tutorial</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome XVI Conference (PAG-XVI)</a>,
 January 12-16, 2008, in San Diego. This will be a hands-on tutorial on
-how to install and use the [GBrowse](../GBrowse.1 "GBrowse") genome
+how to install and use the [GBrowse](../GBrowse.1) genome
 browser. If you are attending PAG and you are interested in GBrowse then
 please consider attending.
 
@@ -19,7 +19,7 @@ additional information.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/12/27*
+*Posted to the [GMOD News](../GMOD_News) on 2007/12/27*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

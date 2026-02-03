@@ -26,7 +26,7 @@ the GMOD wiki.
 1.  1.  Express interest in having a GMOD workshop/meeting in a certain
         area
     2.  Add your DB and location to the [GMOD
-        Users](GMOD_Users "GMOD Users") list
+        Users](/wiki/GMOD_Users) list
 
 - Generic feedback - send a message to GMOD help if something is broken
   (e.g. OpenID login!) or a mistake is found

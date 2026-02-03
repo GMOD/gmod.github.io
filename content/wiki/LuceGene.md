@@ -100,14 +100,14 @@ rel="nofollow">http://www.uniprot.org/</a>
 
 ## Demo & Screenshots
 
-- [Demo Screenshots](LuceGene_Screenshots "LuceGene Screenshots")
+- [Demo Screenshots](/wiki/LuceGene_Screenshots)
 - Daphnia genome search
   <a href="http://wfleabase.org/lucegene" class="external free"
   rel="nofollow">http://wfleabase.org/lucegene</a>
   - newly updated with full Daphnia genome, see notes at
-    [LuceGene_for_Daphnia_genome](LuceGene_for_Daphnia_genome "LuceGene for Daphnia genome")
+    [LuceGene_for_Daphnia_genome](/wiki/LuceGene_for_Daphnia_genome)
 
-[Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:25, 4 September 2007
+[Dongilbert](/wiki/User%253ADongilbert) 16:25, 4 September 2007
 (EDT)
 
 - Demonstration server is available at

@@ -79,7 +79,7 @@ prokaryotic genome sequence (i.e. BAC clones, small whole genomes,
 preliminary sequencing data, etc.) to independently annotate and analyse
 their data and produce output that can be loaded into a genome database.
 MWAS is build on the stand alone genome annotation pipeline
-[MAKER](MAKER.1 "MAKER"), and users who wish to annotate datasets that
+[MAKER](/wiki/MAKER.1), and users who wish to annotate datasets that
 are too large to submit to MWAS are free to
 <a href="http://www.yandell-lab.org/software/" class="external text"
 rel="nofollow">download MAKER</a> for use on their own systems.
@@ -88,7 +88,7 @@ rel="nofollow">download MAKER</a> for use on their own systems.
 
 The first half of this page gives general background to genome
 annotation as well as describes validation data for the
-[MAKER](MAKER.1 "MAKER") Web Annotation Service, MWAS. The stand alone
+[MAKER](/wiki/MAKER.1) Web Annotation Service, MWAS. The stand alone
 annotation pipeline MAKER is at the heart of MWAS, and MWAS has been
 configured to present the user with configuration options that match
 those of the command line program MAKER as closely as possible.
@@ -128,9 +128,9 @@ annotations a lot of thought, they use them everyday.
 
 Examples of Annotation Databases:
 
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-- [WormBase](Category%253AWormBase "Category%253AWormBase")
-- [Mouse Genome Informatics Group](Category%253AMGI "Category%253AMGI")
+- [FlyBase](/wiki/Category%253AFlyBase)
+- [WormBase](/wiki/Category%253AWormBase)
+- [Mouse Genome Informatics Group](/wiki/Category%253AMGI)
 
 Every time we use techniques such as RNAi, PCR, gene expression arrays,
 targeted gene knockout, or CHIP we are basing our experiments on the
@@ -145,7 +145,7 @@ brings up a major point:
 Quality control and evidence management are therefore essential
 components to any annotation process.
 
-#### Effect of [Next Generation Sequencing](Next_Generation_Sequencing "Next Generation Sequencing") on the Annotation Process
+#### Effect of [Next Generation Sequencing](/wiki/Next_Generation_Sequencing) on the Annotation Process
 
 It’s generally accepted that within the next few years it will be
 possible to sequence even human sized genomes for as little as \$1,000
@@ -187,7 +187,7 @@ MAKER.
 - Produces evidence-based quality values for downstream annotation
   management
 
-MAKER generated annotations, shown in [Apollo](Apollo.1 "Apollo").
+MAKER generated annotations, shown in [Apollo](/wiki/Apollo.1).
 
 ### What sets MAKER and MWAS apart from other tools (_ab initio_ gene predictors etc.)?
 

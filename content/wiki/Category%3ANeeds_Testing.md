@@ -11,12 +11,12 @@ The following 3 pages are in this category, out of 3 total.
 
 ### C
 
-- [Chado Django HOWTO](Chado_Django_HOWTO "Chado Django HOWTO")
+- [Chado Django HOWTO](/wiki/Chado_Django_HOWTO)
 
 ### L
 
-- [Load GFF Into Chado](Load_GFF_Into_Chado "Load GFF Into Chado")
+- [Load GFF Into Chado](/wiki/Load_GFF_Into_Chado)
 
 ### N
 
-- [Template:NeedsTesting](Template:NeedsTesting "Template:NeedsTesting")
+- [Template:NeedsTesting](/wiki/Template:NeedsTesting)

@@ -21,53 +21,53 @@ The following 15 pages are in this category, out of 15 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="Apollo.1" title="Apollo">Apollo</a></li>
-<li><a href="Apollo_PureJDBCTransactionWriter_HOWTO"
+<li><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></li>
+<li><a href="/wiki/Apollo_PureJDBCTransactionWriter_HOWTO"
 title="Apollo PureJDBCTransactionWriter HOWTO">Apollo
 PureJDBCTransactionWriter HOWTO</a></li>
-<li><a href="Apollo_webstart" title="Apollo webstart">Apollo
+<li><a href="/wiki/Apollo_webstart" title="Apollo webstart">Apollo
 webstart</a></li>
-<li><a href="August_2009_GMOD_Meeting"
+<li><a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">August 2009 GMOD Meeting</a></li>
 </ul>
 <h3 id="b">B</h3>
 <ul>
-<li><a href="Bop" title="Bop">Bop</a></li>
+<li><a href="/wiki/Bop" title="Bop">Bop</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="c">C</h3>
 <ul>
-<li><a href="Caryoscope" title="Caryoscope">Caryoscope</a></li>
-<li><a href="Comparison_of_XORT_and_Hibernate_for_Chado_reporting"
+<li><a href="/wiki/Caryoscope" title="Caryoscope">Caryoscope</a></li>
+<li><a href="/wiki/Comparison_of_XORT_and_Hibernate_for_Chado_reporting"
 title="Comparison of XORT and Hibernate for Chado reporting">Comparison
 of XORT and Hibernate for Chado reporting</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GMOD_Middleware" title="GMOD Middleware">GMOD
+<li><a href="/wiki/GMOD_Middleware" title="GMOD Middleware">GMOD
 Middleware</a></li>
 </ul>
 <h3 id="h">H</h3>
 <ul>
-<li><a href="Hibernate_Presentation"
+<li><a href="/wiki/Hibernate_Presentation"
 title="Hibernate Presentation">Hibernate Presentation</a></li>
 </ul>
 <h3 id="i">I</h3>
 <ul>
-<li><a href="IBatis_Presentation" title="IBatis Presentation">IBatis
+<li><a href="/wiki/IBatis_Presentation" title="IBatis Presentation">IBatis
 Presentation</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="j">J</h3>
 <ul>
-<li><a href="Java_Testing_-_by_Jon_Slenk"
+<li><a href="/wiki/Java_Testing_-_by_Jon_Slenk"
 title="Java Testing - by Jon Slenk">Java Testing - by Jon Slenk</a></li>
-<li><a href="Java_TreeView" title="Java TreeView">Java TreeView</a></li>
-<li><a href="July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
+<li><a href="/wiki/Java_TreeView" title="Java TreeView">Java TreeView</a></li>
+<li><a href="/wiki/July_2008_GMOD_Meeting" title="July 2008 GMOD Meeting">July
 2008 GMOD Meeting</a></li>
 </ul>
 <h3 id="p">P</h3>
 <ul>
-<li><a href="Phenote" title="Phenote">Phenote</a></li>
-<li><a href="PubSearch" title="PubSearch">PubSearch</a></li>
+<li><a href="/wiki/Phenote" title="Phenote">Phenote</a></li>
+<li><a href="/wiki/PubSearch" title="PubSearch">PubSearch</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -93,7 +93,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [Aug2009Gobol.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/Aug2009Gobol.pdf "File:Aug2009Gobol.pdf")
+  [Aug2009Gobol.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/Aug2009Gobol.pdf)
   292 KB
 
 
@@ -116,7 +116,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [HibernateChadoAPI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf "File:HibernateChadoAPI.pdf")
+  [HibernateChadoAPI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/HibernateChadoAPI.pdf)
   92 KB
 
 
@@ -139,5 +139,5 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [IBatis.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf "File:IBatis.pdf")
+  [IBatis.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/IBatis.pdf)
   6.59 MB

@@ -20,7 +20,7 @@ from GFF3 lines that have a Target attribute. This is useful if these
 dbxref attributes are the only record of what the query sequence was for
 a similarity analysis. It prints the extracted database and accession
 information to standard out, and another script,
-[gmod_make_gff_from_dbxref.pl](GMOD_Utility_Scripts#gmod_make_gff_from_dbxref.pl "GMOD Utility Scripts"),
+[gmod_make_gff_from_dbxref.pl](/wiki/GMOD_Utility_Scripts#gmod_make_gff_from_dbxref.pl),
 takes this information on standard in and creates a GFF3 file.
 
 ## gmod_fasta2gff3.pl
@@ -42,11 +42,11 @@ Splits a GFF3 file into smaller more manageable files.
 **This script currently has no perldoc, which needs to be added!**
 
 This script takes the output of
-[gmod_extract_dbxref_from_gff.pl](GMOD_Utility_Scripts#gmod_extract_dbxref_from_gff.pl "GMOD Utility Scripts")
+[gmod_extract_dbxref_from_gff.pl](/wiki/GMOD_Utility_Scripts#gmod_extract_dbxref_from_gff.pl)
 as well as a list of fasta files and creates a GFF3 file for the
 sequences that are represented in both the output from the extractor as
 well as in the fasta file. This script operates in a similar manner to
-[gmod_fasta2gff3.pl](GMOD_Utility_Scripts#gmod_fasta2gff3.pl "GMOD Utility Scripts")
+[gmod_fasta2gff3.pl](/wiki/GMOD_Utility_Scripts#gmod_fasta2gff3.pl)
 except that it is selective in what it will make GFF3 out of, versus the
 all inclusive fasta2gff3 script. This is useful if only a relatively
 small proportion of the fasta file's contents are represented in the
@@ -56,7 +56,7 @@ GFF3 similarity results.
 
 This is a tool for creating materialized views in Chado. See the page
 dedicated to [it
-(Materialized_views)](Materialized_views "Materialized views") for more
+(Materialized_views)](/wiki/Materialized_views) for more
 information.
 
 ## gmod_sort_gff3.pl
@@ -65,7 +65,7 @@ Sorts a GFF3 file so that parent features occur before child features.
 It does this using temporary tables in the Chado database, so it must be
 available when the sorter is run. If the file is very large, it is a
 good idea to run the
-[gmod_gff3_preprocessor.pl](GMOD_Utility_Scripts#gmod_gff3_preprocessor.pl "GMOD Utility Scripts")
+[gmod_gff3_preprocessor.pl](/wiki/GMOD_Utility_Scripts#gmod_gff3_preprocessor.pl)
 first. There are only two options, one for specifying the input file
 (--infile or -i) and one for optionally specifying the output file
 (--outfile or -o). The current implementation (which may be reworked)

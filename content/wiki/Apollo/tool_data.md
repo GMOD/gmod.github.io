@@ -5,7 +5,7 @@ title: "Apollo/tool data"
 
 
 This page stores the data that populates the
-[Apollo](../Apollo.1 "Apollo") wiki page.
+[Apollo](../Apollo.1) wiki page.
 
 
 \| name = Apollo \| full_name = \| status = mature \|
@@ -14,10 +14,10 @@ dev = inactive \| support = active \| platform = linux, os x, unix, win
 <a href="http://apollo.berkeleybop.org/" class="external free"
 rel="nofollow">http://apollo.berkeleybop.org/</a> \| about = Apollo is a
 GUI (graphical user interface)-based tool for editing genome
-annotations. Like [GBrowse](../GBrowse.1 "GBrowse"), Apollo allows users
+annotations. Like [GBrowse](../GBrowse.1), Apollo allows users
 to scroll and zoom in on areas of interest in a sequence; authorized
 users can edit annotations and write the changes back to the underlying
-database. Apollo can run off [GFF3](../GFF3 "GFF3") or a
+database. Apollo can run off [GFF3](../GFF3) or a
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database,
 and it can also integrate with remote services, such as BLAST and Primer
 BLAST analyses. Apollo is a standalone Java application. \| screenshot =
@@ -46,12 +46,12 @@ instructions are available from the
 class="external text" rel="nofollow">Apollo website</a>. \| config = \|
 doc = \* <a href="http://apollo.berkeleybop.org/current/javadoc/"
 class="external text" rel="nofollow">Apollo Javadocs</a> \| papers = \*
-[Apollo](../Apollo.1 "Apollo"): a community resource for genome
+[Apollo](../Apollo.1): a community resource for genome
 annotation editing. <span class="Z3988"
 title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19439563">PMID:19439563</span>
 <sup>[\[1\]](#cite_note-PMID:19439563-1)</sup>
 
-- [Apollo](../Apollo.1 "Apollo"): a sequence annotation editor.
+- [Apollo](../Apollo.1): a sequence annotation editor.
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F12537571">PMID:12537571</span>
   <sup>[\[2\]](#cite_note-PMID:12537571-2)</sup>
@@ -62,36 +62,36 @@ title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%25
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
 class="internal" title="CommunityAnnotationNov2007.pdf">Community
 Annotation at ParameciumDB</a> - [Linda
-Sperling's](../User%253ASperling "User%253ASperling") presentation on
-[ParameciumDB's](../ParameciumDB "ParameciumDB") [Community
-Annotation](../Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
+Sperling's](../User%253ASperling) presentation on
+[ParameciumDB's](../ParameciumDB) [Community
+Annotation](../Category%253ACommunity_Annotation)
 process at the [November 2007 GMOD
-Meeting](../November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
+Meeting](../November_2007_GMOD_Meeting).
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Apollo.ppt" class="internal"
   title="Apollo.ppt">Progress Report</a> - from [May 2005 GMOD
-  Meeting](../May_2005_GMOD_Meeting "May 2005 GMOD Meeting")
+  Meeting](../May_2005_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/Harris_040527.ppt" class="internal"
   title="Harris 040527.ppt">Future Plans</a> - from [April 2004 GMOD
-  Meeting](../April_2004_GMOD_Meeting "April 2004 GMOD Meeting")
+  Meeting](../April_2004_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Apollo.GMOD.ppt" class="internal"
   title="Apollo.GMOD.ppt">Progress Report</a> - from [September 2003
   GMOD
-  Meeting](../September_2003_GMOD_Meeting "September 2003 GMOD Meeting")
+  Meeting](../September_2003_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Apollo.GMOD.May2003.ppt"
   class="internal" title="Apollo.GMOD.May2003.ppt">Progress Report</a> -
   from [May 2003 GMOD
-  Meeting](../May_2003_GMOD_Meeting "May 2003 GMOD Meeting")
+  Meeting](../May_2003_GMOD_Meeting)
 
 \| tutorials =
 
-[Apollo Tutorial 2011](../Apollo_Tutorial_2011 "Apollo Tutorial 2011")
+[Apollo Tutorial 2011](../Apollo_Tutorial_2011)
 The Apollo session from the [2011 GMOD Spring
-Training](../2011_GMOD_Spring_Training "2011 GMOD Spring Training")
+Training](../2011_GMOD_Spring_Training)
 
-[Apollo Tutorial 2010](../Apollo_Tutorial_2010 "Apollo Tutorial 2010")
+[Apollo Tutorial 2010](../Apollo_Tutorial_2010)
 The Apollo session from the [2010 GMOD Summer School -
-Americas](../2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas").
+Americas](../2010_GMOD_Summer_School_-_Americas).
 
 Apollo tutorials at the <a href="http://dynamicgene.dnalc.org" class="external text"
 rel="nofollow">Dynamic Gene</a> web site.
@@ -114,24 +114,24 @@ installation and usage of Apollo.
 |
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
-| [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" |  |  |
-rel="nofollow">apollo</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") mailing list | <a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
+| [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" |  |  |
+rel="nofollow">apollo</a> | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) mailing list | <a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
-class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") code updates. Please submit bug reports to the <a
+class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) code updates. Please submit bug reports to the <a
 href="http://sourceforge.net/tracker/?atid=462763&amp;group_id=27707&amp;func=browse"
 class="external text" rel="nofollow">Apollo bug tracker at
 Sourceforge</a>. \| logo_info = The [Apollo
-logo](../File:ApolloLogo.png "File:ApolloLogo.png") was created by
+logo](../File:ApolloLogo.png) was created by
 <a href="mailto:audra.radke@gmail.com" class="external text"
 rel="nofollow">Audra Radke</a>, a participant in the [Spring 2010 Logo
-Program](../Spring_2010_Logo_Program "Spring 2010 Logo Program"), while
+Program](../Spring_2010_Logo_Program), while
 a design student at
 <a href="http://www.linnbenton.edu" class="external text"
 rel="nofollow">Linn-Benton Community College</a>.
 
 \| dev_ppl = \| dev_status = Active development of Apollo has ceased;
-the focus has shifted to [WebApollo](../WebApollo.1 "WebApollo"), a
+the focus has shifted to [WebApollo](../WebApollo.1), a
 web-based version of the tool.
 
 \| contact_email = \| input = \| output = \| see_also = \| demo_server =

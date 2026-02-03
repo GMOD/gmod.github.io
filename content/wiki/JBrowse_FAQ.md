@@ -6,7 +6,7 @@ title: "JBrowse FAQ"
 Some frequently asked questions, and some hypothetical ones for fun
 
 See the
-[JBrowse_Configuration_Guide](JBrowse_Configuration_Guide "JBrowse Configuration Guide")
+[JBrowse_Configuration_Guide](/wiki/JBrowse_Configuration_Guide)
 for more details
 
 
@@ -770,7 +770,7 @@ given directory and add the directories via the user interface.
 
 You can also setup the "dataset selector" see [\#What is the dataset
 selector](#What_is_the_dataset_selector) and
-[JBrowse_Configuration_Guide#Dataset_Selector](JBrowse_Configuration_Guide#Dataset_Selector "JBrowse Configuration Guide")
+[JBrowse_Configuration_Guide#Dataset_Selector](/wiki/JBrowse_Configuration_Guide#Dataset_Selector)
 
 ## What is the dataset selector
 
@@ -782,7 +782,7 @@ trackList.json or tracks.conf on your data directory, and then in
 jbrowse.conf, add a list of all your datasets with the dataset_ids that
 you listed in the genome's data directory.
 
-See <a href="JBrowse_Configuration_Guide#Dataset_Selector"
+See <a href="/wiki/JBrowse_Configuration_Guide#Dataset_Selector"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Dataset_Selector</a>
 
@@ -879,8 +879,7 @@ box, and it can also support HTML, e.g
     "metadata": {"randominfo": "<p style='color:green'>Green text</p>", "otherrandominfo": "<p style='color:red'>Red text</p>"}
 
 You can also use the fmtDetailMeta and fmtFieldMeta callback functions
-to change pre-existing values <a
-href="JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes"
+to change pre-existing values <a href="/wiki/JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes</a>
 
@@ -955,7 +954,7 @@ Note: when you add 1 method to menuTemplate, it overwrites 1 of the
 default elements in the default right-click menu. This is sort of a bug.
 If you want to "add" your method to the list, then create a "blank"
 menuTemplate items for the View details, etc. See
-[JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus](JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus "JBrowse Configuration Guide")
+[JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus](/wiki/JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus)
 for more details.
 
 
@@ -1015,7 +1014,7 @@ track labels
 
 The easiest way to "embed jbrowse" on another page would be to use an
 iframe to link to the jbrowse instance of choice e.g.
-<a href="JBrowse_Configuration_Guide#Embedded_mode"
+<a href="/wiki/JBrowse_Configuration_Guide#Embedded_mode"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Embedded_mode</a>
 
@@ -1092,8 +1091,7 @@ implicitly. The notation for the query start/end and subject start/end
 are shortened as qend, send, sstart, and qstart
 
 We use the addFeatures URL parameter of JBrowse to make the features
-appear. For reference, see <a
-href="JBrowse_Configuration_Guide#Controlling_JBrowse_with_the_URL_Query_String"
+appear. For reference, see <a href="/wiki/JBrowse_Configuration_Guide#Controlling_JBrowse_with_the_URL_Query_String"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Controlling_JBrowse_with_the_URL_Query_String</a>
 
@@ -1339,7 +1337,7 @@ open that track while browsing chr1
 ## Can I add a loading bar while JBrowse is starting up?
 
 Yes, you can configure one. See this section
-<a href="JBrowse_Configuration_Guide#Configure_a_Loading_Page"
+<a href="/wiki/JBrowse_Configuration_Guide#Configure_a_Loading_Page"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configure_a_Loading_Page</a>
 
@@ -1675,7 +1673,7 @@ only used in wig-to-json.pl and this is superseded by directly reading
 BigWig files (no conversion step needed)
 
 You can follow these instructions for how to setup a BigWig file if
-needed <a href="JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F"
+needed <a href="/wiki/JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F</a>
 
@@ -1825,7 +1823,7 @@ This is normally due to a module called mime_magic being enabled on your
 Apache server. Two options for fixing this are 1. disable mime_magic or
 2. configuring custom file types with AddType in your apache
 configuration. See
-[JBrowse_Configuration_Guide#Apache_Configuration_Note](JBrowse_Configuration_Guide#Apache_Configuration_Note "JBrowse Configuration Guide")
+[JBrowse_Configuration_Guide#Apache_Configuration_Note](/wiki/JBrowse_Configuration_Guide#Apache_Configuration_Note)
 for recommended fixes.
 
 ## What is the error "invalid BGZF header" on my VCF files?
@@ -2054,8 +2052,7 @@ autoupdated when you change locations
 
 ## Can I use JBrowse with phantomJS?
 
-Yes! See <a
-href="JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS"
+Yes! See <a href="/wiki/JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS</a>
 for an example
@@ -2206,7 +2203,7 @@ Also note: with the third option, you can make it so that your BAM track
 has a bigwig when zoomed out, but then shows the reads when zoomed in.
 Any CanvasFeatures track can use a bigwig for summary histograms. The
 Alignments2 volvox-sorted.bam track is an example of this. See
-<a href="JBrowse_Configuration_Guide#Configuring_Summary_Histograms"
+<a href="/wiki/JBrowse_Configuration_Guide#Configuring_Summary_Histograms"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configuring_Summary_Histograms</a>
 

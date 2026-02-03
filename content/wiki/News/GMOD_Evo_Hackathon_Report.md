@@ -6,9 +6,9 @@ title: "News/GMOD Evo Hackathon Report"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/170px-EvoHackLaptops2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/255px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/340px-EvoHackLaptops2010.jpg 2x"
-width="170" height="101" alt="GMOD Evo Hackathon" />](../GMOD_Evo_Hackathon "GMOD Evo Hackathon")
+width="170" height="101" alt="GMOD Evo Hackathon" />](../GMOD_Evo_Hackathon)
 
-The [GMOD Evo Hackathon](../GMOD_Evo_Hackathon "GMOD Evo Hackathon") was
+The [GMOD Evo Hackathon](../GMOD_Evo_Hackathon) was
 held November 8-12 at
 <a href="http://www.nescent.org" class="external text"
 rel="nofollow">NESCent</a>. The
@@ -16,31 +16,31 @@ rel="nofollow">NESCent</a>. The
 class="external text" rel="nofollow">30 participants</a> self-organized
 into eight groups with at least one group addressing each of the event's
 three
-[objectives](../GMOD_Evo_Hackathon#Specific_objectives "GMOD Evo Hackathon").
+[objectives](../GMOD_Evo_Hackathon#Specific_objectives).
 The outcomes for each group are summarized below.
 
 <a href="https://www.nescent.org/wg_gmodevohackathon/GMatchbox"
 class="external text" rel="nofollow">GMatchbox</a>
 Worked on establishing a common database backend and
-[JSON](../Glossary#JSON "Glossary")-based API for comparative genomics
+[JSON](../Glossary#JSON)-based API for comparative genomics
 data, using several visualization tools (including
-[JBrowse](../JBrowse.1 "JBrowse") and
-[GBrowse_syn](../GBrowse_syn.1 "GBrowse syn")) as targets. Will enable
+[JBrowse](../JBrowse.1) and
+[GBrowse_syn](../GBrowse_syn.1)) as targets. Will enable
 sharing of comparative data in multiple tools from multiple sources.
 <a href="https://www.nescent.org/wg_gmodevohackathon/GBrowse_syn2"
 class="external text" rel="nofollow">GBrowse_syn2</a>
-[GBrowse_syn](../GBrowse_syn.1 "GBrowse syn") is built on and takes
-advantage of the [GBrowse](../GBrowse.1 "GBrowse") genome browser code
+[GBrowse_syn](../GBrowse_syn.1) is built on and takes
+advantage of the [GBrowse](../GBrowse.1) genome browser code
 and config files. However, it did not work well with GBrowse2, due to
 significant architectural changes. This group refactored GBrowse2 to
 naturally support GBrowse_syn. This work will also enable several other
-GBrowse1-only applications ([SynView](../SynView "SynView"), [Primer
-Designer](../PrimerDesigner.pm "PrimerDesigner.pm"), ...) to be ported
+GBrowse1-only applications ([SynView](../SynView), [Primer
+Designer](../PrimerDesigner.pm), ...) to be ported
 to GBrowse2 as well. Two participants also became core GBrowse_syn
 developers.
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
 class="external text" rel="nofollow">JBrowse_syn</a>
-This group set out to extend [JBrowse](../JBrowse.1 "JBrowse") to be a
+This group set out to extend [JBrowse](../JBrowse.1) to be a
 comparative genomics browser. The group removed the existing "single
 genome" assumption from the code and successfully displayed several
 genomes in parallel. Several participants also became familiar with
@@ -74,15 +74,15 @@ This group focused on two outcomes, both relating to
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>. The
 first was a prototype Rails application that provided a web interface to
 the new [Natural
-Diversity](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
+Diversity](../Chado_Natural_Diversity_Module.1)
 module in Chado. This was built on top of the emerging [Chado on
-Rails](../Chado_on_Rails "Chado on Rails") project. The second was a
+Rails](../Chado_on_Rails) project. The second was a
 better understanding, slight refactoring, and updated documentation for
 Chado's phenotype module.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Galaxy_and_HyPhy_Subgroup"
 class="external text" rel="nofollow">Galaxy + HyPhy</a>
-[Galaxy](../Galaxy.1 "Galaxy") is both a workflow system and a means of
+[Galaxy](../Galaxy.1) is both a workflow system and a means of
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
@@ -92,17 +92,17 @@ HyPhy code bases were modified to support this.
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
 class="external text" rel="nofollow">BioPerl</a>
 This subgroup worked on improving tree handling in
-[BioPerl](../BioPerl "BioPerl"). Specifically, they addressed the
+[BioPerl](../BioPerl). Specifically, they addressed the
 handling of very large trees or large numbers of small trees. BioPerl
 now supports storing such trees in a lightweight database instead of in
 memory.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/20*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -3,14 +3,14 @@ title: "GBrowse Tutorial 2012"
 ---
 # GBrowse Tutorial 2012
 
-This [GBrowse](GBrowse.1 "GBrowse") tutorial was taught at the [2012
-GMOD Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School")
-by [Scott Cain](User%253AScott "User%253AScott").
+This [GBrowse](/wiki/GBrowse.1) tutorial was taught at the [2012
+GMOD Summer School](/wiki/2012_GMOD_Summer_School)
+by [Scott Cain](/wiki/User%253AScott).
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-5bab1c32, name: GMOD 2012 day 4 start**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
-Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
+Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
   Prerequisites](#Prerequisites)
@@ -63,7 +63,7 @@ class="external text" rel="nofollow">mailing list archive</a>.
 
 Go to http://ec2-##-##-##-##.compute-1.amazonaws.com/gbrowse2
 
-## Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
+## Basic <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
@@ -307,7 +307,7 @@ so, we need to run another script that comes with Bio::DB::Das::Chado:
 
 This does several things (including poorly estimating how long it will
 take to finish), including creating materialized views, using a tool
-provided by [SOL Genomics Network (SGN)](Category%253ASGN "Category%253ASGN").
+provided by [SOL Genomics Network (SGN)](/wiki/Category%253ASGN).
 In practice, it would be a good idea to read the documentation of
 `gmod_materialized_view_tool.pl` for information on keeping the view up
 to date.
@@ -324,4 +324,4 @@ mRNA and exons) and we can click on the gene to see it in GBrowse.
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") |
+| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse](/wiki/GBrowse.1) |

@@ -4,7 +4,7 @@ title: "IFALT"
 # IFALT
 
 (Redirected from
-[TableEdit/IFALT](TableEdit/IFALT)
+[TableEdit/IFALT](/wiki/TableEdit/IFALT)
 
 ## specifications
 
@@ -120,4 +120,4 @@ rel="nofollow">parse_str</a> function man page.</p></td>
 <span style="color:#ff9700">`lacZ:Gene`</span>` `<span style="color:#aaff00">`Gene`</span>` `<span style="color:#00ffe1">`Gene_sequence_features_table`</span>` `<span style="color:#1d6fff">`1|2|3`</span>` `<span style="color:#ff2022">`more metadata`</span>` `<span style="color:#da37e0">`append`</span>` key2=value2 `
 
 
-- [TableEdit](../Category%253ATableEdit "Category%253ATableEdit")
+- [TableEdit](../Category%253ATableEdit)

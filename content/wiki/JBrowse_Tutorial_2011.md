@@ -44,7 +44,7 @@ These have **already been set up** on the VM image.
 
 Perl:
 
-- [BioPerl 1.6](BioPerl "BioPerl")
+- [BioPerl 1.6](/wiki/BioPerl)
  data
 that the web browser can use.
 
@@ -187,7 +187,7 @@ Visit in web browser; you should see a second reference sequence.
 
 To get feature data from flat files into JBrowse, use
 `flatfile-to-json.pl`. We'll use some more of the data from the
-[MAKER](MAKER.1 "MAKER") session:
+[MAKER](/wiki/MAKER.1) session:
 
     $ bin/flatfile-to-json.pl \
         --gff /home/gmod/Documents/Data/maker/example2_pyu/finished.maker.output/gff/scf1117875582023.gff \

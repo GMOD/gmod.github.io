@@ -3,9 +3,9 @@ title: "GMOD Malaysia 2014/MAKER Tutorial"
 ---
 # GMOD Malaysia 2014/MAKER Tutorial
 
-This [MAKER](../MAKER.1 "MAKER") tutorial was presented by [Michael
-Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") at [GMOD
-Malaysia 2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February
+This [MAKER](../MAKER.1) tutorial was presented by [Michael
+Campbell](../User%253AMichael_Campbell) at [GMOD
+Malaysia 2014](../GMOD_Malaysia_2014.1), February
 2014. This tutorial requires MAKER version 2.x.
 
 The most recent MAKER tutorial can be found at the
@@ -134,10 +134,10 @@ size including use by large sequence centers. MAKER can be used for *de
 novo* annotation of newly sequenced genomes, for updating existing
 annotations to reflect new evidence, or just to combine annotations,
 evidence, and quality control statistics for use with other GMOD
-programs like [GBrowse](../GBrowse.1 "GBrowse"),
-[JBrowse](../JBrowse.1 "JBrowse"),
+programs like [GBrowse](../GBrowse.1),
+[JBrowse](../JBrowse.1),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, and
-[Apollo](../Apollo.1 "Apollo").
+[Apollo](../Apollo.1).
 
 MAKER has been used in many genome annotation projects:
 
@@ -407,12 +407,12 @@ Scripts:
      tophat2gff3 <junctions.bed>
 
 
-- [Tutorials](../Category%253ATutorials "Category%253ATutorials")
-- [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
-- [MAKER](../Category%253AMAKER "Category%253AMAKER")
+- [Tutorials](../Category%253ATutorials)
+- [GMOD Schools](../Category%253AGMOD_Schools)
+- [MAKER](../Category%253AMAKER)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [MAKER](../MAKER.1 "MAKER") |
+| [Has topic](../Property%253AHas_topic) | [MAKER](../MAKER.1) |

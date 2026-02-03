@@ -84,7 +84,7 @@ response to high load levels on the master server.
 
 Load balancing is most convenient to run in conjunction with a GBrowse
 instance running within the Amazon Web Service EC2 cloud (see
-[GBrowse2_VMs#Getting_Started_with_the_EC2_VM](GBrowse2_VMs#Getting_Started_with_the_EC2_VM "GBrowse2 VMs")),
+[GBrowse2_VMs#Getting_Started_with_the_EC2_VM](/wiki/GBrowse2_VMs#Getting_Started_with_the_EC2_VM)),
 but you may also use this to supplement a server running on local
 hardware. The sections below describe the configuration needed for these
 two scenarios.

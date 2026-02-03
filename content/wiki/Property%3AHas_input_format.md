@@ -26,7 +26,7 @@ Showing 19 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BLAST_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/BLAST_Graphic_Viewer.1"
 title="BLAST Graphic Viewer">BLAST Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">FASTA  ,
@@ -34,7 +34,7 @@ GTG  ,
 RAW  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="BioMart"
+<td class="smwpropname"><a href="/wiki/BioMart"
 title="BioMart">BioMart</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Any data that can be stored in the relational
 database  </td>
@@ -44,13 +44,13 @@ database  </td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="CMap.1" title="CMap">CMap</a> <span
+<td class="smwpropname"><a href="/wiki/CMap.1" title="CMap">CMap</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">tab-delimited  ,
 GFF  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Canto" title="Canto">Canto</a> <span
+<td class="smwpropname"><a href="/wiki/Canto" title="Canto">Canto</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">OBO  ,
 gene/protein IDs  ,
@@ -61,7 +61,7 @@ literature  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="DIYA" title="DIYA">DIYA</a> <span
+<td class="smwpropname"><a href="/wiki/DIYA" title="DIYA">DIYA</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">FASTA  ,
 GFF  ,
@@ -72,25 +72,25 @@ Genbank  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse.1"
+<td class="smwpropname"><a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GFF3  ,
 GFF2  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="GO_Graphic_Viewer.1"
+<td class="smwpropname"><a href="/wiki/GO_Graphic_Viewer.1"
 title="GO Graphic Viewer">GO Graphic Viewer</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">gene or ORF names  ,
 OBO ontology  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GO%253A%253ATermFinder.1"
+<td class="smwpropname"><a href="/wiki/GO%253A%253ATermFinder.1"
 title="GO::TermFinder">GO::TermFinder</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">gene list  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Galaxy.1"
+<td class="smwpropname"><a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Roadmaps  ,
 Sequences  ,
@@ -102,7 +102,7 @@ ab1  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="InterMine"
+<td class="smwpropname"><a href="/wiki/InterMine"
 title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Chado  ,
 [[GFF3]]  ,
@@ -114,7 +114,7 @@ title="InterMine">InterMine</a> <span class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="JBrowse.1"
+<td class="smwpropname"><a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[[GFF3]]  ,
 BED  ,
@@ -122,7 +122,7 @@ FASTA  ,
 </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="JBrowse2"
+<td class="smwpropname"><a href="/wiki/JBrowse2"
 title="JBrowse2">JBrowse2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[[GFF3]]  ,
 BigWig  ,
@@ -134,7 +134,7 @@ BAM  ,
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="MAKER.1" title="MAKER">MAKER</a> <span
+<td class="smwpropname"><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops">[[GFF3]]  ,
 [[Glossary#FASTA|FASTA]]  </td>
@@ -144,7 +144,7 @@ class="smwbrowse"></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Genbank format  ,
 GFF  </td>
@@ -154,14 +154,14 @@ GFF  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Textpresso"
+<td class="smwpropname"><a href="/wiki/Textpresso"
 title="Textpresso">Textpresso</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">Plain text  ,
 PDF  ,
 html  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="Tripal.1"
+<td class="smwpropname"><a href="/wiki/Tripal.1"
 title="Tripal">Tripal</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[[GFF3]]  ,
 FASTA  ,
@@ -173,21 +173,21 @@ Chado DB  ,
 <td></td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebApollo.1"
+<td class="smwpropname"><a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GFF3  ,
 BigWig  ,
 BAM  </td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebApollo2"
+<td class="smwpropname"><a href="/wiki/WebApollo2"
 title="WebApollo2">WebApollo2</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">GFF3  ,
 BigWig  ,
 BAM  </td>
 </tr>
 <tr class="even">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops">[[GFF3]]  </td>
 </tr>
@@ -197,4 +197,4 @@ title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

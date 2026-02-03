@@ -85,9 +85,9 @@ It's also very useful to know how to tab-complete in the shell.
 
 ## JBrowse Introduction
 
-How and why [JBrowse](../JBrowse.1 "JBrowse") is different from most
+How and why [JBrowse](../JBrowse.1) is different from most
 other web-based genome browsers, including
-[GBrowse](../GBrowse.1 "GBrowse").
+[GBrowse](../GBrowse.1).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
@@ -179,7 +179,7 @@ far enough.
 #### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
-database and turn it into [JSON](../Glossary#JSON "Glossary") data that
+database and turn it into [JSON](../Glossary#JSON) data that
 the web browser can use.
 
 In this case, we have specified all of our track configurations in
@@ -223,7 +223,7 @@ searchable.
 `urltemplate` specifies a URL pattern that you can use to link genomic
 features to specific web pages.
 
-`class` specifies the [CSS](../Glossary#CSS "Glossary") class that
+`class` specifies the [CSS](../Glossary#CSS) class that
 describes how the feature should look.
 
 For this particular track, I've specified the `transcript` feature

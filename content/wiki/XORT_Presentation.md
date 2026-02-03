@@ -35,10 +35,10 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 ##### Introduction
 
-- An [XML](Glossary#XML "Glossary")-database mapping system for data
+- An [XML](/wiki/Glossary#XML)-database mapping system for data
   exchange between DB and XML-driven application
-- [XORT](XORT.1 "XORT") can handle typical XML, it's not
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>-specific
+- [XORT](/wiki/XORT.1) can handle typical XML, it's not
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>-specific
 - Developed/Supported by Pinglei Zhou at FlyBase Harvard, 0.007 version
   now.
 - Used at all FlyBase sites
@@ -57,7 +57,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 ##### Chado XML
 
-- Is [Chado XML](Chado_XML "Chado XML") necessary? No, but it may help
+- Is [Chado XML](/wiki/Chado_XML) necessary? No, but it may help
   you.
 - ChadoXML assists with incremental updates, if you want to avoid
   flush-and-reload.
@@ -89,14 +89,14 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 There are three Flybase sites, and most curation is done at Harvard and
 Cambridge. Proforma is the curation format at Cambridge and Harvard, but
-Harvard also curates with [Apollo](Apollo.1 "Apollo") and ChadoXML.
+Harvard also curates with [Apollo](/wiki/Apollo.1) and ChadoXML.
 
 Once in Chado, the reporting instance, there's a denormalization step in
 moving data to a read-only database. Once in the read-only database
 there are dumps, for reporting purposes, using XORT to create ChadoXML.
 Once ChadoXML is created version 2 of XSLT is used to create HTML and
-[GFF](GFF "GFF"). HTML reports are for human-readable reports,
-[GFF](GFF "GFF") for [GBrowse](GBrowse.1 "GBrowse") and for various
+[GFF](/wiki/GFF). HTML reports are for human-readable reports,
+[GFF](/wiki/GFF) for [GBrowse](/wiki/GBrowse.1) and for various
 power users.
 
 1.a. Proforma (FlyBase Cambridge) is converted to ChadoXML
@@ -113,7 +113,7 @@ power users.
 
 4\. ChadoXML is created from Chado using XORT
 
-5.a. [GFF](GFF "GFF") and Fasta is created from ChadoXML
+5.a. [GFF](/wiki/GFF) and Fasta is created from ChadoXML
 
 5.b. HTML is created from Chado XML
 

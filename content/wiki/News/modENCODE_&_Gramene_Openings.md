@@ -38,14 +38,14 @@ rel="nofollow">complete job description</a> for details.
 
 <a href="http://www.modencode.org" class="external text"
 rel="nofollow">modENCODE</a> is a power GMOD user. The project uses
-[GBrowse](../GBrowse.1 "GBrowse"),
+[GBrowse](../GBrowse.1),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
-[InterMine](../InterMine "InterMine"),
-[JBrowse](../JBrowse.1 "JBrowse"), and
-[GBrowse_syn](../GBrowse_syn.1 "GBrowse syn"). (See [Nicole Washington's
-talk](../January_2009_GMOD_Meeting#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display "January 2009 GMOD Meeting")
+[InterMine](../InterMine),
+[JBrowse](../JBrowse.1), and
+[GBrowse_syn](../GBrowse_syn.1). (See [Nicole Washington's
+talk](../January_2009_GMOD_Meeting#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display)
 at the [January 2009 GMOD
-Meeting](../January_2009_GMOD_Meeting "January 2009 GMOD Meeting") for
+Meeting](../January_2009_GMOD_Meeting) for
 some details on how they are used.)
 
 
@@ -68,16 +68,16 @@ The positions involve development and maintenance of the databases,
 software and analysis pipelines necessary for development of the Plant
 Gene Expression, biochemical and regulatory pathway networks,
 comparative genomics, text mining
-([Textpresso](../Textpresso "Textpresso")) and biological ontology
+([Textpresso](../Textpresso)) and biological ontology
 projects. Gramene is a long-time GMOD user and is the home of the
-[CMap](../CMap.1 "CMap") comparative map viewer.
+[CMap](../CMap.1) comparative map viewer.
 
 See <a href="http://news.gramene.org/?p=392" class="external text"
 rel="nofollow">the position announcement</a> for full details.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
+*Posted to the [GMOD News](../GMOD_News) on 2009/10/02*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

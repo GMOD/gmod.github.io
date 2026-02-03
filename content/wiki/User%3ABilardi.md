@@ -44,7 +44,7 @@ Development biology and molecular biology (Bsc thesys)
 
 1.  <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
     <span class="reference-text">[August 2009 GMOD
-    Meeting](August_2009_GMOD_Meeting#GBrowse.org "August 2009 GMOD Meeting")</span></span>
+    Meeting](/wiki/August_2009_GMOD_Meeting#GBrowse.org)</span></span>
 2.  <span id="cite_note-PMID:19218350"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:19218350_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `PMID:19218350`**</span>

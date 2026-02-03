@@ -31,7 +31,7 @@ Advanced querying. A brief tour of creating custom queries, creating
 your own templates and using the web service API to build and run
 queries from Perl or Java code.
 
-[InterMine](../InterMine "InterMine") is an open source system for
+[InterMine](../InterMine) is an open source system for
 building biological data warehouses with a powerful web interface and
 query API. See <a href="http://www.flymine.org" class="external text"
 rel="nofollow">FlyMine</a> or
@@ -40,7 +40,7 @@ rel="nofollow">modMine</a> for examples. InterMine can integrate data
 from many common biological formats and is easy to extend to include
 your own data. Parsers are included to load data from
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, Ensembl,
-UniProt, KEGG, PubMed, TreeFam, [GFF3](../GFF3 "GFF3"), FASTA, BioPax
+UniProt, KEGG, PubMed, TreeFam, [GFF3](../GFF3), FASTA, BioPax
 and many others.
 
 The web application works out of the box for querying any data is easily
@@ -49,11 +49,11 @@ creating simple 'canned queries', upload and operations on lists,
 graphical and statistical widgets for analysing lists of data and MyMine
 accounts for saving user data.
 
-[Richard Smith](../User%253ARsmith "User%253ARsmith")
+[Richard Smith](../User%253ARsmith)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/10/13*
+*Posted to the [GMOD News](../GMOD_News) on 2010/10/13*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -4,26 +4,26 @@ title: "News/2009 GMOD Survey Results"
 # News/2009 GMOD Survey Results
 
 The [results of the 2009 GMOD Community
-Survey](../2009_GMOD_Community_Survey "2009 GMOD Community Survey") are
+Survey](../2009_GMOD_Community_Survey) are
 now available online. This year's survey focused on genomic and
 comparative genomics visualization was taken by 45 respondents. The
 survey includes:
 
 - [Use
-  Cases](../2009_GMOD_Community_Survey#Use_Cases "2009 GMOD Community Survey") -
+  Cases](../2009_GMOD_Community_Survey#Use_Cases) -
   what people would like visualization software to do.
 - [Feature
-  Ranking](../2009_GMOD_Community_Survey#Features "2009 GMOD Community Survey") -
+  Ranking](../2009_GMOD_Community_Survey#Features) -
   what features are the most (and least) important to users.
 - Plus general feedback on [visualization
-  tools](../2009_GMOD_Community_Survey#Other_Feedback_on_Visualization_Tools "2009 GMOD Community Survey"),
-  [documentation](../2009_GMOD_Community_Survey#Documentation "2009 GMOD Community Survey"),
+  tools](../2009_GMOD_Community_Survey#Other_Feedback_on_Visualization_Tools),
+  [documentation](../2009_GMOD_Community_Survey#Documentation),
   and the
-  [project](../2009_GMOD_Community_Survey#Other_Feedback "2009 GMOD Community Survey").
+  [project](../2009_GMOD_Community_Survey#Other_Feedback).
 
 The survey results will be used to improve GMOD and guide its future
 direction. This year's survey complements the [2008 GMOD Community
-Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey"),
+Survey](../2008_GMOD_Community_Survey),
 which covered all of GMOD.
 
 <a href="http://www.cafepress.com/GenericMOD/" rel="nofollow"
@@ -47,12 +47,12 @@ rel="nofollow">GMOD Gear</a>:
 
 Thanks to everyone who took the time to participate in the survey.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/05*
+*Posted to the [GMOD News](../GMOD_News) on 2009/10/05*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

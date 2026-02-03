@@ -115,4 +115,4 @@ code distribution for details.
 
 **SEE ALSO**
 
-[GBrowse 2.0 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO")
+[GBrowse 2.0 HOWTO](/wiki/GBrowse_2.0_HOWTO)

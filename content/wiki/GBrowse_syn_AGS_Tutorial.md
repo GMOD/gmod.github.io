@@ -9,4 +9,4 @@ title: "GBrowse syn AGS Tutorial"
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse syn](GBrowse_syn.1 "GBrowse syn") |
+| [Has topic](/wiki/Property%253AHas_topic) | [GBrowse syn](/wiki/GBrowse_syn.1) |

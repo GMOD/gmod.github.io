@@ -9,7 +9,7 @@ occurred with the databases and ORM technologies discussed herein. It is
 left here for historical purposes.</span>
 
 
-**Comparison of [XORT](XORT.1 "XORT") and
+**Comparison of [XORT](/wiki/XORT.1) and
 <a href="http://www.hibernate.org/" class="external text"
 rel="nofollow">Hibernate</a> for Chado reporting** - written by Josh
 Goodman, FlyBase - Indiana University

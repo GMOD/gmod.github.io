@@ -11,7 +11,7 @@ height="43" alt="Open positions at Bayer CropScience" /></a>
 **1. BioAnalyst Scientist:**
 
 You will provide support in various activities: [Next Generation
-Sequencing](../Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](../Next_Generation_Sequencing)
 (NGS) data analysis, expression data (microarrays) analysis, genomics
 and biological networks. The successful applicant should have a PhD or
 equivalent experience in (plant) genetics and/or genomics. Computer
@@ -27,14 +27,14 @@ class="external text" rel="nofollow">BioAnalyst Scientist</a>
 
 You will support and foster the data management and analysis of [Next
 Generation
-Sequencing](../Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](../Next_Generation_Sequencing)
 (NGS) data (assembly, processing, development of analysis methods,
 pipelines, etc.). Candidates must be highly motivated to work on
 biological questions and flexible to interact with the various groups of
 the research center. They should have a degree (MSc or PhD) in
 computational biology, boinformatics, statistics or equivalent level of
 knowledge and possess some programming skills (e.g.
-[perl](../Glossary#Perl "Glossary") and/or python). The candidate should
+[perl](../Glossary#Perl) and/or python). The candidate should
 have a good background in (plant) genetics and/or genomics and/or
 molecular biology.
 
@@ -50,11 +50,11 @@ rel="nofollow">here</a> or send your CV to
 <a href="mailto:Laurent.viau@bayercropscience.com" class="external text"
 rel="nofollow">Laurent Viau</a>
 
-[Erick Antezana](../User%253AErickAntezana "User%253AErickAntezana")
+[Erick Antezana](../User%253AErickAntezana)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/06*
+*Posted to the [GMOD News](../GMOD_News) on 2009/11/06*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

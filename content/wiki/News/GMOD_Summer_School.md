@@ -4,7 +4,7 @@ title: "News/GMOD Summer School"
 # News/GMOD Summer School
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/SummerSchoolSmall.png" width="200"
-height="182" alt="Summer School" />](../2008_GMOD_Summer_School "Summer School")
+height="182" alt="Summer School" />](../2008_GMOD_Summer_School)
 
 <span style="font-size: 120%; font-weight: bold">July 11-13, 2008
 National Evolutionary Synthesis Center (NESCent)
@@ -31,7 +31,7 @@ information and a tentative program.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/03/07*
+*Posted to the [GMOD News](../GMOD_News) on 2008/03/07*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

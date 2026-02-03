@@ -8,16 +8,16 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/375px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/500px-JBrowseLogo.png 2x"
 width="250" height="55" alt="JBrowse" />
 
-This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Mitch
-Skinner](User%253AMitchSkinner "User%253AMitchSkinner") at the [2010 GMOD Summer
+This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Mitch
+Skinner](/wiki/User%253AMitchSkinner) at the [2010 GMOD Summer
 School -
-Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas"),
+Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent JBrowse tutorial can be found at the
-<a href="JBrowse_Tutorial" class="mw-redirect"
+<a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
-through setting up and running a [JBrowse](JBrowse.1 "JBrowse") server.
+This [tutorial](/wiki/Category%253ATutorials) walks you
+through setting up and running a [JBrowse](/wiki/JBrowse.1) server.
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -64,10 +64,8 @@ and install the start image (below). See VMware for what
 software you need to use a VMware system image and for directions on how
 to get the image up and running on your machine.
 
-Download the \[<a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
-class="external text" rel="nofollow">start image</a> and the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
+Download the \[<a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
+class="external text" rel="nofollow">start image</a> and the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
 class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
@@ -78,7 +76,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](Category%253ATutorials "Category%253ATutorials") describes the
+This [tutorial](/wiki/Category%253ATutorials) describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -91,7 +89,7 @@ These have **already been set up** on the VM image.
 
 Perl:
 
-- [BioPerl 1.6](BioPerl "BioPerl")
+- [BioPerl 1.6](/wiki/BioPerl)
 - <a href="http://search.cpan.org/perldoc?JSON" class="external text"
   rel="nofollow">JSON</a>
 - <a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
@@ -132,8 +130,8 @@ Shell tricks:
 
 ## JBrowse Introduction
 
-How and why [JBrowse](JBrowse.1 "JBrowse") is different from most other
-web-based genome browsers, including [GBrowse](GBrowse.1 "GBrowse").
+How and why [JBrowse](/wiki/JBrowse.1) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
@@ -192,7 +190,7 @@ steps:
 ### Data from a database
 
 Here, we'll use the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> adapter;
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> adapter;
 other common database adapters are
 <a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> and
@@ -253,7 +251,7 @@ features to put into the track, and how the track should look:
       ]
     }
 
-`"class"` specifies the [CSS](Glossary#CSS "Glossary") class that
+`"class"` specifies the [CSS](/wiki/Glossary#CSS) class that
 describes how the feature should look. The classes are specified in the
 `genome.css` file:
 
@@ -349,7 +347,7 @@ Visit in web browser; you should see a second reference sequence.
 
 To get feature data from flat files into JBrowse, use
 `flatfile-to-json.pl`. We'll use some more of the data from the
-<a href="MAKER_Tutorial" class="mw-redirect"
+<a href="/wiki/MAKER_Tutorial" class="mw-redirect"
 title="MAKER Tutorial">MAKER session</a>:
 
     $ bin/flatfile-to-json.pl \
@@ -384,7 +382,7 @@ Visit in web browser
 
 ## See also
 
-- Documentation: <a href="JBrowseDev/Main" class="mw-redirect"
+- Documentation: <a href="/wiki/JBrowseDev/Main" class="mw-redirect"
   title="JBrowseDev/Main">JBrowseDev/Main</a>
 
 ## Other links
@@ -404,4 +402,4 @@ Visit in web browser
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse")  |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | [Has topic](/wiki/Property%253AHas_topic) | [JBrowse](/wiki/JBrowse.1)  |

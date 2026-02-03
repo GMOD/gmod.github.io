@@ -10,7 +10,7 @@ the summer. **Flavien Bossiaux** is a computer science student from the
 University of Nice, France, and he is working on a number of
 improvements to the GMOD website user experience. He has already created
 two Mediawiki extensions to allow the embedding of external content into
-the GMOD wiki; visit the [GMOD calendar](../Calendar "Calendar") to see
+the GMOD wiki; visit the [GMOD calendar](../Calendar) to see
 one of them, the
 <a href="http://iann.pro" class="external text" rel="nofollow">iAnn</a>
 calendar plugin, in action.
@@ -31,4 +31,4 @@ GMOD helpdesk</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/07/09*
+*Posted to the [GMOD News](../GMOD_News) on 2013/07/09*

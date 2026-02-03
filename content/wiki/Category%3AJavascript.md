@@ -3,7 +3,7 @@ title: "Category%253AJavascript"
 ---
 # Category%253AJavascript
 
-See also the [AJAX Category](Category%253AAJAX "Category%253AAJAX").
+See also the [AJAX Category](/wiki/Category%253AAJAX).
 
 ## Pages in category "Javascript"
 
@@ -11,19 +11,19 @@ The following 5 pages are in this category, out of 5 total.
 
 ### G
 
-- [Gbrowse Benchmarking](Gbrowse_Benchmarking "Gbrowse Benchmarking")
+- [Gbrowse Benchmarking](/wiki/Gbrowse_Benchmarking)
 - [GBrowse Popup
-  Balloons](GBrowse_Popup_Balloons "GBrowse Popup Balloons")
+  Balloons](/wiki/GBrowse_Popup_Balloons)
 
 ### J
 
 - [July 2008 GMOD
-  Meeting](July_2008_GMOD_Meeting "July 2008 GMOD Meeting")
+  Meeting](/wiki/July_2008_GMOD_Meeting)
 
 ### P
 
-- [Popup Balloons](Popup_Balloons "Popup Balloons")
+- [Popup Balloons](/wiki/Popup_Balloons)
 
 ### R
 
-- [RubberBandSelection](RubberBandSelection "RubberBandSelection")
+- [RubberBandSelection](/wiki/RubberBandSelection)

@@ -19,8 +19,8 @@ class="external text" rel="nofollow">highly qualified software
 development project manager</a>. The person who fills this position will
 work with a team of computer scientists and biologists to design,
 develop and maintain a dynamic bioinformatics database infrastructure
-that includes [GBrowse](../GBrowse.1 "GBrowse") and
-[InterMine](../InterMine "InterMine") deployments. The final candidate
+that includes [GBrowse](../GBrowse.1) and
+[InterMine](../InterMine) deployments. The final candidate
 must successfully complete a criminal background check
 
 The essential functions of this position include:
@@ -63,7 +63,7 @@ first consideration. The position will remain open until filled.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/10/30*
+*Posted to the [GMOD News](../GMOD_News) on 2011/10/30*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

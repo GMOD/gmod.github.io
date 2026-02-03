@@ -78,7 +78,7 @@ width="131" height="120" alt="Cmap sample3.jpg" />
 - A relational database, e.g.
   <a href="http://www.mysql.com" class="external text"
   rel="nofollow">MySQL (4.0+)</a>, Sybase Adaptive
-  Server Enterprise, [PostgreSQL](/wiki/PostgreSQL "PostgreSQL"), SQLite
+  Server Enterprise, [PostgreSQL](/wiki/PostgreSQL), SQLite
   or Oracle (9.x)
 - <a href="http://www.boutell.com/gd/" class="external text"
   rel="nofollow">libgd (2.0.28 or higher)</a> and
@@ -98,7 +98,7 @@ width="131" height="120" alt="Cmap sample3.jpg" />
   <a
   href="http://www.gramene.org/tutorials/cmap_tutorial.ppt"
   class="external text" rel="nofollow">PowerPoint</a> formats.
-- [CMap_API](/wiki/CMap_API "CMap API") (<a
+- [CMap_API](/wiki/CMap_API) (<a
   href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/CMAP_API.pod"
   class="external text" rel="nofollow">SVN</a>)
 - <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/README"
@@ -126,9 +126,9 @@ width="131" height="120" alt="Cmap sample3.jpg" />
   class="external text" rel="nofollow">CMAP Tutorial
   at Texas A &amp; M</a>
 - [CMap Version 2
-  Design](/wiki/CMap_Version_2_Design "CMap Version 2 Design")
+  Design](/wiki/CMap_Version_2_Design)
 
-Also see the [CMap FAQ](/wiki/CMap_FAQ "CMap FAQ").
+Also see the [CMap FAQ](/wiki/CMap_FAQ).
 
 ## Publications, Tutorials, and Presentations
 
@@ -144,36 +144,36 @@ class="external text" rel="nofollow">Tutorial @ Gramene</a>
 
 ### Presentations
 
-- [File:CMapGenomeInformatics2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf "File:CMapGenomeInformatics2009.pdf"),
+- [File:CMapGenomeInformatics2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/CMapGenomeInformatics2009.pdf),
   poster from <a href="http://meetings.cshl.edu/meetings/info09.shtml"
   class="external text" rel="nofollow">Genome Informatics 2009</a>
-- [File:CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf "File:CMapGBrowseSMBE2009.pdf")
+- [File:CMapGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/CMapGBrowseSMBE2009.pdf)
   from the <a
   href="http://ccg.biology.uiowa.edu/smbe/symposia.php?action=view&amp;sym_ID=27"
   class="external text" rehttp:="" data-gmod.org="" data-wiki=""
   data-l="nofollow">GMOD Workshop at SMBE 2009</a>
 - [File:2007 11 05 CMap
-  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt "File:2007 11 05 CMap GMOD.ppt")
+  GMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/2007_11_05_CMap_GMOD.ppt)
   from [November 2007 GMOD
-  Meeting](/wiki/November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
+  Meeting](/wiki/November_2007_GMOD_Meeting)
 - [File:BenFaga GMOD June
-  2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt "File:BenFaga GMOD June 2006.ppt")
+  2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt)
   from [June 2006 GMOD
-  Meeting](/wiki/June_2006_GMOD_Meeting "June 2006 GMOD Meeting")
-- [File:Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf "File:Cmap-050516.pdf")
+  Meeting](/wiki/June_2006_GMOD_Meeting)
+- [File:Cmap-050516.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/16/Cmap-050516.pdf)
   from [May 2005 GMOD
-  Meeting](/wiki/May_2005_GMOD_Meeting "May 2005 GMOD Meeting")
-- [File:Gramene-cmap-pag-poster-2005.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf "File:Gramene-cmap-pag-poster-2005.pdf")
+  Meeting](/wiki/May_2005_GMOD_Meeting)
+- [File:Gramene-cmap-pag-poster-2005.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Gramene-cmap-pag-poster-2005.pdf)
   poster form 2005 Plant and Animal Genomics
   meeting.
 - [File:Cmap update sept
-  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt "File:Cmap update sept 03.ppt")
+  03.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/Cmap_update_sept_03.ppt)
   from [September 2003 GMOD
-  Meeting](/wiki/September_2003_GMOD_Meeting "September 2003 GMOD Meeting").
+  Meeting](/wiki/September_2003_GMOD_Meeting).
 - [File:CMap
-  Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf "File:CMap Overview.pdf")
+  Overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/CMap_Overview.pdf)
   from [May 2003 GMOD
-  Meeting](/wiki/May_2003_GMOD_Meeting "May 2003 GMOD Meeting").
+  Meeting](/wiki/May_2003_GMOD_Meeting).
 
 ## Contacts and Mailing Lists
 
@@ -261,7 +261,7 @@ Public installations of CMap:
 
 ### Development team
 
-Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User%253AFaga "User%253AFaga"),
+Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User%253AFaga),
 <a href="mailto:kclark@cshl.edu" class="external text"
 rel="nofollow">Ken Youens-Clark</a>
 
@@ -272,17 +272,17 @@ at Gramene.org hopes to replace CMap with a lighter, Javascript version.
 
 ## See also
 
-[CMap3D](/wiki/CMap3D "CMap3D")
+[CMap3D](/wiki/CMap3D)
 
 ## More on CMap
 
-See [Category%253ACMap](/wiki/Category%253ACMap "Category%253ACMap")
+See [Category%253ACMap](/wiki/Category%253ACMap)
 
 ### CMap Logo
 
 The CMap logo was created by Kathy Bracken, a participant in the [Spring
 2010 Logo
-Program](/wiki/Spring_2010_Logo_Program "Spring 2010 Logo Program"),
+Program](/wiki/Spring_2010_Logo_Program),
 while a design student at <a href="http://www.linn-benton.edu"
 class="external text" rel="nofollow">Linn-Benton
 Community College</a>.

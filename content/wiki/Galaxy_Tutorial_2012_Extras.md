@@ -4,7 +4,7 @@ title: "Galaxy Tutorial 2012 Extras"
 # Galaxy Tutorial 2012 Extras
 
 Items shown on this page were part of earlier drafts of the [2012 Summer
-School Galaxy workshop](Galaxy_Tutorial_2012 "Galaxy Tutorial 2012").
+School Galaxy workshop](/wiki/Galaxy_Tutorial_2012).
 They were moved here either in the interests of time, or because they no
 longer fit well with other content. However, these sections are still
 informative.
@@ -122,7 +122,7 @@ Let's first create a directory for our new tool:
 
 ### The tool command (script)
 
-And then using a [text editor](Linux_Text_Editors "Linux Text Editors"),
+And then using a [text editor](/wiki/Linux_Text_Editors),
 create `tools/gmod_2012/sam_filter.py` containing:
 
 ``` de1
@@ -379,7 +379,7 @@ width="1059" height="621"
 alt="GalaxyExtras SecondAnalysis BWASettings.png" />
 
 A new dataset is generated containing the mapped reads in [SAM
-format](Glossary#SAM "Glossary").
+format](/wiki/Glossary#SAM).
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/GalaxyExtras_SecondAnalysis_3.png"

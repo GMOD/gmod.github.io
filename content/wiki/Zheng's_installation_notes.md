@@ -3,7 +3,7 @@ title: "Zheng's installation notes"
 ---
 # Zheng's installation notes
 
-Back to [Chado New Users](Chado_New_Users "Chado New Users")
+Back to [Chado New Users](/wiki/Chado_New_Users)
 
   information</span>](#general_information)
 - [before you
@@ -36,7 +36,7 @@ on Fedora:
 
 - the easy way: use an existing rpm package. I have not tried it. but
   you can find information at [installation using an
-  RPM](Chado_-_Getting_Started#Installation_using_an_RPM "Chado - Getting Started")
+  RPM](/wiki/Chado_-_Getting_Started#Installation_using_an_RPM)
 - the hard way: install by source. But
   <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater,_Modified"
   class="external text" rel="nofollow">yum</a> makes it easier. The
@@ -52,7 +52,7 @@ on Fedora:
 ## get chado schema from cvs
 
 see [Chado From
-CVS](Chado_-_Getting_Started#Chado_From_CVS "Chado - Getting Started"),
+CVS](/wiki/Chado_-_Getting_Started#Chado_From_CVS),
 issue cvs command at my home directory.
 
 ## install prerequisites
@@ -283,7 +283,7 @@ grant select privilege on several tables to apache
     grant select on feature to apache;
 
 in Mac it is www, see [Jim's installation
-notes](Jim's_installation_notes "Jim's installation notes").
+notes](/wiki/Jim's_installation_notes).
 
 it is a little bit surprise to me that I need
 

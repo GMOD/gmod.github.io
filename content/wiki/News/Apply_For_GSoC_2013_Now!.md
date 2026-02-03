@@ -6,10 +6,10 @@ title: "News/Apply For GSoC 2013 Now!"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/250px-Soc-logo-google-blue.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/375px-Soc-logo-google-blue.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c5/Soc-logo-google-blue.jpg/500px-Soc-logo-google-blue.jpg 2x"
-width="250" height="133" alt="Soc-logo-google-blue.jpg" />](../GSoC "GSoC")
+width="250" height="133" alt="Soc-logo-google-blue.jpg" />](../GSoC)
 
 The Genome Informatics group is now accepting applications from students
-to participate in [Google Summer of Code 2013](../GSoC "GSoC").
+to participate in [Google Summer of Code 2013](../GSoC).
 
 Please check out <a
 href="http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2013/help_page"
@@ -26,11 +26,11 @@ help with Melange. The deadline to apply is
 UTC, 3 May 2013</a>. Late proposals will not be accepted for any reason.
 
 For the GMOD-related project proposals, see the [GSoC wiki
-page](../GSoC "GSoC"), and to ask questions or make suggestions, please
+page](../GSoC), and to ask questions or make suggestions, please
 join the <a href="http://groups.google.com/group/genome-informatics"
 class="external text" rel="nofollow">Genome Informatics GSoC mailing
 list</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/24*
+*Posted to the [GMOD News](../GMOD_News) on 2013/04/24*

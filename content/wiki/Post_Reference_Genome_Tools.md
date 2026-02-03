@@ -13,7 +13,7 @@ data-cellpadding="10">
 <tbody>
 <tr class="odd">
 <td>
-<a href="September_2010_GMOD_Meeting"
+<a href="/wiki/September_2010_GMOD_Meeting"
 title="Part of the September 2010 GMOD Meeting"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/200px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
@@ -22,24 +22,24 @@ alt="Part of the September 2010 GMOD Meeting" /></a>
 </td>
 <td>
 <strong>Post Reference Genome Tools<br />
-<a href="Satellite_Meetings_-_GMOD_Europe_2010"
+<a href="/wiki/Satellite_Meetings_-_GMOD_Europe_2010"
 title="Satellite Meetings - GMOD Europe 2010">Satellite Meeting</a></strong><br />
 <br />
 &#10;
 
-<a href="September_2010_GMOD_Meeting"
+<a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD
 Meeting</a><br />
 15 September 2010<br />
 Cambridge, UK
 </td>
-<td style="text-align: center;"><a href="GMOD_Europe_2010"
+<td style="text-align: center;"><a href="/wiki/GMOD_Europe_2010"
 title="Part of GMOD Europe 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/200px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png 2x"
 width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 
-<a href="GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
+<a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">Part of GMOD Europe
 2010</a>
 </td>
 </tr>
@@ -56,11 +56,11 @@ reference genome. Will a reference make sense in the future, or will it
 hold us back?
 
 This was a [Satellite
-Meeting](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
+Meeting](/wiki/Satellite_Meetings_-_GMOD_Europe_2010)
 to the [September 2010 GMOD
-Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting") and
-was a part of [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010").
-See [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") for
+Meeting](/wiki/September_2010_GMOD_Meeting) and
+was a part of [GMOD Europe 2010](/wiki/GMOD_Europe_2010).
+See [GMOD Europe 2010](/wiki/GMOD_Europe_2010) for
 information on other events.
 
   Participants](#Participants)
@@ -81,16 +81,16 @@ information on other events.
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
+| [Dave Clements](/wiki/User%253AClements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
 rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | <a href="http://cgb.indiana.edu" class="external free"
+rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](/wiki/User%253AChemmeri) | <a href="http://cgb.indiana.edu" class="external free"
 rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
 rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](User%253AScott "User%253AScott") | OICR | <a href="http://gmod.org/" class="external free"
+rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](/wiki/User%253AScott) | OICR | <a href="http://gmod.org/" class="external free"
 rel="nofollow">http://gmod.org/</a> | joan pontius | SAIC-NCI-FREDERICK Laboratory of Genomic Diversity | <a href="http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/"
 class="external free"
-rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> | [Don Gilbert](User%253ADongilbert "User%253ADongilbert") | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
+rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> | [Don Gilbert](/wiki/User%253ADongilbert) | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
 rel="nofollow">http://arthropods.eugenes.org/</a> |
 
 ## Summary
@@ -190,7 +190,7 @@ preprocessing.
 How do these new concepts affect how we will visualize information?
 
 We have lots genomes - can we just stack them up? One can imagine a
-[Sybil](Sybil "Sybil") like display where the "reference" genome is
+[Sybil](/wiki/Sybil) like display where the "reference" genome is
 selected by the user and then clusters of other genomes are dynamically
 ordered in the display, based on similarity to the selected reference.
 This could work for a whole genome view, although summarization would be
@@ -224,8 +224,8 @@ should also support selection on a wide variety of facets in the data.
 For example, "show me regions that have these *n* characteristics from
 the *m* detected characteristics of the current region." Selection can
 be made arbitrarily complex by seamless integration with analysis tools
-such as [Galaxy](Galaxy.1 "Galaxy"), [BioMart](BioMart "BioMart"), and
-[InterMine](InterMine "InterMine").
+such as [Galaxy](/wiki/Galaxy.1), [BioMart](/wiki/BioMart), and
+[InterMine](/wiki/InterMine).
 
 #### Inspiration
 
@@ -234,13 +234,13 @@ learn from them. The group also discussed the UCSC Cancer Genome
 Browser, and walked through the video tutorial. There was much
 discussion on gene sets, and viewing regions that have many
 characteristics in common. (Might be able to use
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") code to show related
+[GBrowse_syn](/wiki/GBrowse_syn.1) code to show related
 regions.) The UCSC cancer genome browser has a very useful option to
 sort their "wiggleplots" according to some aspect of the sample that
 each row represents, so that any trends in the heatplot for example, of
 expression or chromosome rearrangements, can be more easily seen.
 Imagine a TopoView glyph with the ability to reorder data.
-[GBrowse](GBrowse.1 "GBrowse") might be able to do something like that
+[GBrowse](/wiki/GBrowse.1) might be able to do something like that
 with subtracks.
 
 One participant suggested using a
@@ -248,7 +248,7 @@ One participant suggested using a
 rel="nofollow">Prezi</a> style of navigation to move between related
 regions. Another suggested gaining inspiration from current network
 tools such as Cytoscape or [Pathway
-Tools](Pathway_Tools.1 "Pathway Tools"). Muave, a comparative genomics
+Tools](/wiki/Pathway_Tools.1). Muave, a comparative genomics
 browser was also mentioned; Flickr for genomes was also suggested.
 Ortholog databases such as OMA, Eggnog, ergononome, hovergen,
 inparanoid, orthodb, and phylomeDB can also provide guidance. An Amazon
@@ -258,7 +258,7 @@ model could also be adopted.
 Key ideas here are network representation and navigation.
 
 Clade databases can also provide some insights here. An excerpt from and
-email from [Don Gilbert](User%253ADongilbert "User%253ADongilbert"):
+email from [Don Gilbert](/wiki/User%253ADongilbert):
 
 Part of the answer likely involves clade genomics, i.e. don't peg your
 new genome to one reference, but to a consensus of several related. We

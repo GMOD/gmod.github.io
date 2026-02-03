@@ -45,7 +45,7 @@ resources for doing the data processing and then using a "smaller"
 server for serving the data. In fact, it is possible to put all of the
 data in an AWS S3 store and not have a server at all once the data
 processing is done. See
-[Using_AWS_S3_For_JBrowse](Using_AWS_S3_For_JBrowse "Using AWS S3 For JBrowse").
+[Using_AWS_S3_For_JBrowse](/wiki/Using_AWS_S3_For_JBrowse).
 
 ### do you have the original GFF?
 
@@ -57,9 +57,9 @@ Bio::DB::SeqFeature::Store.
 
 JBrowse can easily support having multiple species or data sources, like
 you would see in a drop down menu in GBrowse. See [this
-FAQ](JBrowse_FAQ#How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F "JBrowse FAQ")
+FAQ](/wiki/JBrowse_FAQ#How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F)
 and the one below it, and the section in the [JBrowse Configuration
-Guide](JBrowse_Configuration_Guide "JBrowse Configuration Guide") that
+Guide](/wiki/JBrowse_Configuration_Guide) that
 they point to.
 
 ## prepare-refseqs.pl

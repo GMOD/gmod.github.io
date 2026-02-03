@@ -6,7 +6,7 @@ title: "News/Prospecting for Proposals for GSoC 2021"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5d/GoogleSummer_2016logo.jpg/272px-GoogleSummer_2016logo.jpg.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/GoogleSummer_2016logo.jpg 2x"
-width="272" height="272" alt="GoogleSummer 2016logo.jpg" />](../GSoC "GSoC")
+width="272" height="272" alt="GoogleSummer 2016logo.jpg" />](../GSoC)
 
 The Genome Informatics group and GMOD will be submitting an application
 for <a href="https://summerofcode.withgoogle.com/" class="external text"
@@ -21,7 +21,7 @@ Google for participating. Thousands of organizations of many different
 sizes take part in GSoC, with the common factor being that they must
 produce open-source code.
 
-Please take a look at the [GSoC wiki page](../GSoC "GSoC") and think
+Please take a look at the [GSoC wiki page](../GSoC) and think
 about any projects that might work well for a GSoC student, and add them
 to the wiki. If you are interested in being a mentor, please contact us
 at <a href="mailto:robin.haw@oicr.on.ca" class="external text"
@@ -38,7 +38,7 @@ rel="nofollow">help@gmod.org</a> for advice!
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2021/02/16*
+*Posted to the [GMOD News](../GMOD_News) on 2021/02/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

@@ -8,7 +8,7 @@ title: "GMOD in a Box"
 
 
 GMOD in a Box is a [GMOD virtual
-server](Category%253AGMOD_virtual_server "Category%253AGMOD virtual server")
+server](/wiki/Category%253AGMOD_virtual_server)
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo
 or WebApollo**. Setting up a GMOD in a Box instance is quick and easy;
@@ -49,33 +49,33 @@ versions of GMOD in a Box are released.
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/200px-ChadoLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/300px-ChadoLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/400px-ChadoLogo.png 2x"
-width="200" height="44" alt="Chado logo" />](Chado "Chado") 1.23
+width="200" height="44" alt="Chado logo" />](/wiki/Chado) 1.23
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/200px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png 2x"
-width="200" height="47" alt="GBrowse logo" />](GBrowse.1 "GBrowse") 2.55
+width="200" height="47" alt="GBrowse logo" />](/wiki/GBrowse.1) 2.55
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/200px-GBrowse_syn_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/300px-GBrowse_syn_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/400px-GBrowse_syn_logo.png 2x"
-width="200" height="64" alt="GBrowse_syn logo" />](GBrowse_syn.1 "GBrowse syn")
+width="200" height="64" alt="GBrowse_syn logo" />](/wiki/GBrowse_syn.1)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/200px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/300px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/400px-JBrowseLogo.png 2x"
-width="200" height="44" alt="JBrowse logo" />](JBrowse.1 "JBrowse")
+width="200" height="44" alt="JBrowse logo" />](/wiki/JBrowse.1)
 1.10.12
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
-width="200" height="60" alt="Tripal logo" />](Tripal.1 "Tripal") 1.1
+width="200" height="60" alt="Tripal logo" />](/wiki/Tripal.1) 1.1
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/200px-WebApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/400px-WebApolloLogo.png 2x"
-width="200" height="55" alt="WebApollo logo" />](WebApollo.1 "WebApollo")
+width="200" height="55" alt="WebApollo logo" />](/wiki/WebApollo.1)
 11/22/2013
 
 
@@ -83,7 +83,7 @@ width="200" height="55" alt="WebApollo logo" />](WebApollo.1 "WebApollo")
 ## Where to find GMOD in a Box
 
 GMOD in a Box can be downloaded from the
-<a href="ftp://ftp.gmod.org//pub/gmod/GMODinaBox" class="external text"
+<a href="/wiki/ftp://ftp.gmod.org//pub/gmod/GMODinaBox" class="external text"
 rel="nofollow">GMOD ftp site</a>.
 
 Filename: `GMOD_in_a_Box-2.05.ova.bz2` (approx. 2.1GB).
@@ -100,11 +100,11 @@ email to the GMOD developers to let them know that someone is using a
 GMOD in a Box instance. GMOD uses this to track the popularity of
 virtual GMOD installations for grants and funding purposes. For more
 information, see [the phoning home
-section](GMOD_in_a_Box.1#Phoning_home "GMOD in a Box") below.
+section](/wiki/GMOD_in_a_Box.1#Phoning_home) below.
 
 #### Build information
 
-[Scott](User%253AScott "User%253AScott") has fairly extensive notes on the
+[Scott](/wiki/User%253AScott) has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in a
 Box. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
@@ -176,7 +176,7 @@ Note that changes made to files in any other locations will be lost.
 Instances of GMOD in a Box can be updated by replacing the `data`
 partition in the new instance with the `data` partition from the old
 instance. For more information, see the [updating
-guide](GMOD_in_a_Box/Updating "GMOD in a Box/Updating").
+guide](/wiki/GMOD_in_a_Box/Updating).
 
 ### Phoning home
 
@@ -199,7 +199,7 @@ Database name: `drupal`
 Username: `drupal`
 
 See the
-<a href="Postgres" class="mw-redirect" title="Postgres">Postgres</a>
+<a href="/wiki/Postgres" class="mw-redirect" title="Postgres">Postgres</a>
 database connection parameters in `/var/www/sites/default/settings.php`
 for more information.
 
@@ -237,7 +237,7 @@ new themes can be added at `/data/var/www/sites/default/themes`.
 
 Version: 1.1
 
-Source: [Tripal](Tripal.1 "Tripal") svn
+Source: [Tripal](/wiki/Tripal.1) svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
@@ -253,7 +253,7 @@ ontologies and a GFF file containing yeast genome annotations from SGD
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
 class="external free"
 rel="nofollow">http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff</a>),
-as well as a sample GFF contig file output from [MAKER](MAKER.1 "MAKER")
+as well as a sample GFF contig file output from [MAKER](/wiki/MAKER.1)
 for the *Pythium ultimum* (source:
 <a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
 class="external free"
@@ -304,13 +304,13 @@ Configuration file (defines database connection parameters, tracks):
 `~/jbrowse.conf`.
 
 The Pythium dataset was created in a way similar to the
-<a href="JBrowse_Tutorial_2012" class="mw-redirect"
+<a href="/wiki/JBrowse_Tutorial_2012" class="mw-redirect"
 title="JBrowse Tutorial 2012">JBrowse tutorial</a> and using the
 configuration file `~/pythium-1.conf`.
 
 JBrowse was configured to have multiple datasets using the
 jbrowse_conf.json file as described in the [JBrowse configuration
-guide](JBrowse_Configuration_Guide#Dataset_Selector "JBrowse Configuration Guide").
+guide](/wiki/JBrowse_Configuration_Guide#Dataset_Selector).
 This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 
 
@@ -320,10 +320,10 @@ This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 Version: 11/22/2013
 
 WebApollo was installed per the directions on the
-[WebApollo](WebApollo.1 "WebApollo") page. In addition to the admin
+[WebApollo](/wiki/WebApollo.1) page. In addition to the admin
 user, a second user with limited permissions was created with username:
 "guest", password: "guest".
 
 Check out the [WebApollo setup
-instructions](GMOD_in_a_Box/WebApollo "GMOD in a Box/WebApollo")
+instructions](/wiki/GMOD_in_a_Box/WebApollo)
 specific to the VM for help in setting up your data.

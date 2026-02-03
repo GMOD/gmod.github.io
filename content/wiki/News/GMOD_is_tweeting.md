@@ -20,7 +20,7 @@ out your database, answer a question, or share your news.
 
 
 You can also see the latest GMOD tweets on the [GMOD
-News](../GMOD_News "GMOD News") page.
+News](../GMOD_News) page.
 
 
 See you there, tweeps!

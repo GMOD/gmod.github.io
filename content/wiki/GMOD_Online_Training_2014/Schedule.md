@@ -39,7 +39,7 @@ title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Day 1, AM</td>
-<td><a href="GFF3_Tutorial"
+<td><a href="/wiki/GFF3_Tutorial"
 title="GMOD Online Training 2014/GFF3 Tutorial">GFF3</a></td>
 <td><a href="../User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
@@ -71,7 +71,7 @@ rel="nofollow">Yandell Lab</a><br />
 </tr>
 <tr class="odd">
 <td>Day 2, AM</td>
-<td><a href="Chado_Tutorial"
+<td><a href="/wiki/Chado_Tutorial"
 title="GMOD Online Training 2014/Chado Tutorial">Chado</a></td>
 <td><a href="../User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
@@ -92,7 +92,7 @@ rel="nofollow">Washington State University</a><br />
 </tr>
 <tr class="odd">
 <td>Day 3, AM</td>
-<td><a href="JBrowse_Tutorial"
+<td><a href="/wiki/JBrowse_Tutorial"
 title="GMOD Online Training 2014/JBrowse Tutorial">JBrowse</a></td>
 <td><a href="../User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
@@ -103,7 +103,7 @@ title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Day 3, PM</td>
-<td><a href="WebApollo_Tutorial"
+<td><a href="/wiki/WebApollo_Tutorial"
 title="GMOD Online Training 2014/WebApollo Tutorial">WebApollo</a></td>
 <td><a href="../User%253AElee" title="User%253AElee">Ed Lee</a></td>
 <td><a href="http://www.berkeleybop.org/" class="external text"
@@ -123,7 +123,7 @@ title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Day 4, PM</td>
-<td><a href="GBrowse_syn_Tutorial"
+<td><a href="/wiki/GBrowse_syn_Tutorial"
 title="GMOD Online Training 2014/GBrowse syn Tutorial">GBrowse
 syn</a></td>
 <td><a href="../User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>

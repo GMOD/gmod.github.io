@@ -27,32 +27,32 @@ The following 7 pages are in this category, out of 7 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="b">B</h3>
 <ul>
-<li><a href="BioMart" title="BioMart">BioMart</a></li>
-<li><a href="BioMart_Tutorial" title="BioMart Tutorial">BioMart
+<li><a href="/wiki/BioMart" title="BioMart">BioMart</a></li>
+<li><a href="/wiki/BioMart_Tutorial" title="BioMart Tutorial">BioMart
 Tutorial</a></li>
-<li><span class="redirect-in-category"><a href="BioMart_Tutorial_2011"
+<li><span class="redirect-in-category"><a href="/wiki/BioMart_Tutorial_2011"
 class="mw-redirect" title="BioMart Tutorial 2011">BioMart Tutorial
 2011</a></span></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="b-cont.">B cont.</h3>
 <ul>
-<li><a href="BioMart_Workshop_-_GMOD_Europe_2010"
+<li><a href="/wiki/BioMart_Workshop_-_GMOD_Europe_2010"
 title="BioMart Workshop - GMOD Europe 2010">BioMart Workshop - GMOD
 Europe 2010</a></li>
 </ul>
 <h3 id="j">J</h3>
 <ul>
-<li><a href="January_2009_GMOD_Meeting"
+<li><a href="/wiki/January_2009_GMOD_Meeting"
 title="January 2009 GMOD Meeting">January 2009 GMOD Meeting</a></li>
 </ul>
 <h3 id="o">O</h3>
 <ul>
-<li><a href="October_2011_GMOD_Meeting"
+<li><a href="/wiki/October_2011_GMOD_Meeting"
 title="October 2011 GMOD Meeting">October 2011 GMOD Meeting</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="s">S</h3>
 <ul>
-<li><a href="User%253ASyedHaider"
+<li><a href="/wiki/User%253ASyedHaider"
 title="User%253ASyedHaider">User%253ASyedHaider</a></li>
 </ul></td>
 </tr>
@@ -80,7 +80,7 @@ The following 4 files are in this category, out of 4 total.
 
 
   [How to load chado to
-  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf "File:How to load chado to biomart.pdf")
+  b...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/How_to_load_chado_to_biomart.pdf)
   767 KB
 
 
@@ -103,7 +103,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [Jan2009BioMart.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Jan2009BioMart.pdf "File:Jan2009BioMart.pdf")
+  [Jan2009BioMart.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/Jan2009BioMart.pdf)
   3.42 MB
 
 
@@ -127,7 +127,7 @@ The following 4 files are in this category, out of 4 total.
 
 
   [Kasprzyk
-  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Kasprzyk_040526.ppt "File:Kasprzyk 040526.ppt")
+  040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Kasprzyk_040526.ppt)
   781 KB
 
 
@@ -150,5 +150,5 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [Kasprzyk-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt "File:Kasprzyk-050516.ppt")
+  [Kasprzyk-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Kasprzyk-050516.ppt)
   1.48 MB

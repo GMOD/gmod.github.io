@@ -34,7 +34,7 @@ include:
 - Storage balancing and tiered storage
 - Virtualization
 - Schedulers
-- Deployment of [Galaxy](../Galaxy.1 "Galaxy") instances and dependence
+- Deployment of [Galaxy](../Galaxy.1) instances and dependence
   management
 - Relational databases and query optimization
 - User management
@@ -63,7 +63,7 @@ University</a> is looking for
 rel="nofollow">software engineers</a> and
 <a href="http://bx.mathcs.emory.edu/joining/postdocs/"
 class="external text" rel="nofollow">postdoctoral scholars</a> to work
-on the [Galaxy](../Galaxy.1 "Galaxy") project.
+on the [Galaxy](../Galaxy.1) project.
 
 We are seeking
 <a href="http://bx.mathcs.emory.edu/joining/sw/" class="external text"
@@ -91,7 +91,7 @@ class="external text" rel="nofollow">announcement</a> for full details.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/08/29*
+*Posted to the [GMOD News](../GMOD_News) on 2011/08/29*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

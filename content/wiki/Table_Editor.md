@@ -42,7 +42,7 @@ rel="nofollow">Ecoliwiki</a> is providing detailed gene reports in a
 community editable form. One goal for this with GMOD is to integrate
 annotations made in
 <a href="http://mediawiki.org" class="external text">MediaWiki</a> with
-a <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+a <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 for better comprehensive genome data management. MediaWiki is a widely
 used wiki package and the one that backs the GMOD site,
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
@@ -50,14 +50,14 @@ rel="nofollow">Ecoliwiki</a>, and
 <a href="http://wikipedia.org" class="external text"
 rel="nofollow">Wikipedia</a>). MediaWiki is also included in the
 [Community Annotation
-System](Community_Annotation_System "Community Annotation System").
+System](/wiki/Community_Annotation_System).
 
 ## Table Edit
 
 Ecoliwiki's
  is the core for this
 gene-oriented [community
-annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
+annotation](/wiki/Category%253ACommunity_Annotation)
 database. TableEdit provides a somewhat more friendly way to edit simple
 tables in
 <a href="http://mediawiki.org" class="external text">MediaWiki</a>.
@@ -87,7 +87,7 @@ behavior and appearance of the table and a collection of row objects
 that hold the actual data. The `wikiBox` also has methods to manipulate
 rows, <a href="http://en.wikipedia.org/wiki/Serialization" class="extiw"
 title="wp:Serialization">serialize and unserialize</a> its contents, and
-for interacting with the [MySQL](MySQL "MySQL") database that controls
+for interacting with the [MySQL](/wiki/MySQL) database that controls
 the tables.
 
 #### `wikiBoxRow`
@@ -114,7 +114,7 @@ rel="nofollow">EcoliWiki</a>, we built PHP scripts to load and/or update
 tables. This involved writing functions that find the `box_uid` of
 tables of specific types on specific pages, looking for the rows that
 needed updating, creating them if they did not already exist, and either
-incorporating the table markup into an [XML](Glossary#XML "Glossary")
+incorporating the table markup into an [XML](/wiki/Glossary#XML)
 load file for the wiki, or directly editing the page via <a
 href="http://www.mediawiki.org/wiki/Manual:Maintenance_scripts#List_of_maintenance_scripts#List_of_maintenance_scripts"
 class="external text">MediaWiki's command line utilities</a>.
@@ -171,15 +171,15 @@ foreach ($rows as $index=>$row){
 
 Making the Table Editor more useful and integrating it better with other
 GMOD tools was our goal for the wiki part of [Hackathon
-2007](Hackathon_2007_info "Hackathon 2007 info"). See [Possible
+2007](/wiki/Hackathon_2007_info). See [Possible
 TableEdit/Wiki hackathon
-projects](Talk%253AHackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects "Talk:Hackathon 2007 info")
+projects](/wiki/Talk%253AHackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects)
 for more.
 
 ### TableEdit Chado round trip
 
 Integration with
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> will require
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> will require
 that TableEdit tables reflect data from an underlying Chado, and also
 that changes made in a TableEdit table be saved back to the underlying
 Chado. In both directions there are issues about how to handle
@@ -191,10 +191,10 @@ corruption of data in the other.
 This would involve:
 
 - Something triggering a
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> query that
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> query that
   would generate a view or join with sufficient information to determine
   the desired page, table (box) and row to be added or updated.
-- Creating an <a href="TableEdit/IFALT" class="mw-redirect"
+- Creating an <a href="/wiki/TableEdit/IFALT" class="mw-redirect"
   title="TableEdit/IFALT">IFALT</a> file for loading into the wiki via
   the TableEdit loader system.
 - Instantiating a box and TableEdit as in the EcoliWiki example above,
@@ -202,7 +202,7 @@ This would involve:
 
 Based on our already being able to do table insertion, row creation, row
 updates, and row deletion, this should be a relatively simple task of
-getting [middleware](Category%253AMiddleware "Category%253AMiddleware") to have
+getting [middleware](/wiki/Category%253AMiddleware) to have
 Chado provide data in a form that the TableEdit can use.
 
 #### TableEdit2Chado
@@ -211,16 +211,16 @@ This would involve:
 
 - Passing a request to the TableEdit/Wiki system to identify tables/rows
   with information needed to populate/update fields in
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Returning the data in a format that can be transformed to something
-  Chado \[\[[middleware](Category%253AMiddleware "Category%253AMiddleware") can
+  Chado \[\[[middleware](/wiki/Category%253AMiddleware) can
   use.
 
 This is a specific case of the general problem discussed at the [Jan
-2007 GMOD workshop](GMOD_Middleware "GMOD Middleware") - how to
+2007 GMOD workshop](/wiki/GMOD_Middleware) - how to
 transform data to update Chado where the structure of the incoming data
 has to be manipulated to fit the Chado
-[schema](Glossary#Schema "Glossary").
+[schema](/wiki/Glossary#Schema).
 
 #### Bidirectional issues
 
@@ -233,7 +233,7 @@ Some issues to discuss:
 - how should we pass these requests and send confirmation messages to
   and from remote servers (i.e can we do this as a web service?). This
   would allow interaction with non-PHP
-  [middleware](Category%253AMiddleware "Category%253AMiddleware") (highly
+  [middleware](/wiki/Category%253AMiddleware) (highly
   desirable!).
 
 ### TableEdit IntraWiki Interaction
@@ -243,19 +243,19 @@ the Table in page A triggers an update of the table in page B. Use case:
 GO annotations on wiki pages. If round-trips work, this should fall out
 of the code needed. It may then be possible to couple tables without an
 intermediate trip to
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ### Restricting search to Tables
 
 This one is relatively simple and we might have a prototype before the
-[2007 Hackathon](Hackathon_2007_info "Hackathon 2007 info") - modify the
+[2007 Hackathon](/wiki/Hackathon_2007_info) - modify the
 wiki search system to restrict searching to a particular class of tables
 or fields.
 
 ### AJAX
 
 There are many places where the TableEdit system would benefit from the
-addition of [AJAX](Category%253AAJAX "Category%253AAJAX").
+addition of [AJAX](/wiki/Category%253AAJAX).
 
 - General elimination of reloads
 - Autocomplete fields
@@ -265,7 +265,7 @@ addition of [AJAX](Category%253AAJAX "Category%253AAJAX").
 
 Many of the items above do not require changes to the core TableEdit
 extension. But we can do that too during the [2007
-Hackathon](Hackathon_2007_info "Hackathon 2007 info"), if there's time.
+Hackathon](/wiki/Hackathon_2007_info), if there's time.
 Some possible things to add or change
 
 - recovery of data from old wiki revisions

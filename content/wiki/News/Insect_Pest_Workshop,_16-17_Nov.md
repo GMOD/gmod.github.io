@@ -55,7 +55,7 @@ minute presentation may be asked.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/07/20*
+*Posted to the [GMOD News](../GMOD_News) on 2009/07/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

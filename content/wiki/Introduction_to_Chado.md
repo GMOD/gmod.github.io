@@ -97,9 +97,9 @@ alt="Chado.jpg" />
 This Wiki is currently the best source of documentation for Chado. Here
 are more useful pages in the Wiki:
 
-- [Getting Started](Chado_-_Getting_Started "Chado - Getting Started")
-- [Chado Manual](Chado_Manual "Chado Manual")
-- [Best Practices](Chado_Best_Practices "Chado Best Practices")
+- [Getting Started](/wiki/Chado_-_Getting_Started)
+- [Chado Manual](/wiki/Chado_Manual)
+- [Best Practices](/wiki/Chado_Best_Practices)
 
 
 
@@ -107,52 +107,52 @@ are more useful pages in the Wiki:
 
 ### Chado Module List
 
-- [Audit](Chado_Audit_Module "Chado Audit Module") - for database audit
+- [Audit](/wiki/Chado_Audit_Module) - for database audit
   trails
-- [Companalysis](Chado_Companalysis_Module "Chado Companalysis Module") -
+- [Companalysis](/wiki/Chado_Companalysis_Module) -
   for data from computational analysis
-- [Contact](Chado_Contact_Module "Chado Contact Module") - for people,
+- [Contact](/wiki/Chado_Contact_Module) - for people,
   groups, and organizations
-- [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
+- [Controlled Vocabulary (cv)](/wiki/Chado_CV_Module) - for
   controlled vocabularies and ontologies
-- [Expression](Chado_Expression_Module "Chado Expression Module") - for
+- [Expression](/wiki/Chado_Expression_Module) - for
   summaries of RNA and protein expression
-- [General](Chado_General_Module "Chado General Module") - for
+- [General](/wiki/Chado_General_Module) - for
   identifiers
-- [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic
+- [Genetic](/wiki/Chado_Genetic_Module) - for genetic
   data and genotypes
-- [Library](Chado_Library_Module "Chado Library Module") - for
+- [Library](/wiki/Chado_Library_Module) - for
   descriptions of molecular libraries
-- [Mage](Chado_Mage_Module "Chado Mage Module") - for microarray data
-- [Map](Chado_Map_Module "Chado Map Module") - for maps without sequence
+- [Mage](/wiki/Chado_Mage_Module) - for microarray data
+- [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module") -
+  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
   for multiple experiments, such as phenotyping and genotyping
-- [Organism](Chado_Organism_Module "Chado Organism Module") - for
+- [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data
-- [Phenotype](Chado_Phenotype_Module "Chado Phenotype Module") - for
+- [Phenotype](/wiki/Chado_Phenotype_Module) - for
   phenotypic data
-- [Phylogeny](Chado_Phylogeny_Module "Chado Phylogeny Module") - for
+- [Phylogeny](/wiki/Chado_Phylogeny_Module) - for
   organisms and phylogenetic trees
 - [Publication
-  (pub)](Chado_Publication_Module "Chado Publication Module") - for
+  (pub)](/wiki/Chado_Publication_Module) - for
   publications and references
-- [Sequence](Chado_Sequence_Module "Chado Sequence Module") - for
+- [Sequence](/wiki/Chado_Sequence_Module) - for
   sequences and sequence features
-- [Stock](Chado_Stock_Module "Chado Stock Module") - for specimens and
+- [Stock](/wiki/Chado_Stock_Module) - for specimens and
   biological collections
-- [WWW](Chado_WWW_Module "Chado WWW Module") -
+- [WWW](/wiki/Chado_WWW_Module) -
 
 There are *dependencies* between the modules.
 
 This page is focused on the [sequence
-module](Chado_Sequence_Module "Chado Sequence Module"); we will also
-discuss parts of the [cv module](Chado_CV_Module "Chado CV Module") as
+module](/wiki/Chado_Sequence_Module); we will also
+discuss parts of the [cv module](/wiki/Chado_CV_Module) as
 ontologies are crucial to how chado represents all data.
 
 The actual chado tables themselves are not discussed in
 attribute-by-attribute detail; this can be browsed by checking out the
-[Chado Manual](Chado_Manual "Chado Manual").
+[Chado Manual](/wiki/Chado_Manual).
 
 One of the main strengths of chado is that it brings the sequence and
 genetics views of the world together.
@@ -217,7 +217,7 @@ these cases represent compositional relationships (although other
 relationship types are possible). Feature graphs do **not** represent
 positional or spatial relationships - we will get to that later. For
 more on representing genes also see [Chado Best
-Practices](Chado_Best_Practices "Chado Best Practices").
+Practices](/wiki/Chado_Best_Practices).
 
 **Basic Central Dogma Example**
 <img
@@ -356,7 +356,7 @@ lines is the closure of the relationships.
 ## Using views to simplify queries
 
 The following view uses the
-[cvpath](Chado_Tables#Table:_cvpath "Chado Tables") table, which
+[cvpath](/wiki/Chado_Tables#Table:_cvpath) table, which
 includes the closure of the *is_a* relationship.
 
 ``` de1
@@ -376,7 +376,7 @@ for speed.
 ## Extensible Attributes
 
 The chado relational model defines a fixed set of attributes for a
-[feature](Chado_Tables#Table:_feature "Chado Tables"):
+[feature](/wiki/Chado_Tables#Table:_feature):
 
 | Field | Required | Description |
 |----|----|----|

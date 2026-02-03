@@ -3,10 +3,10 @@ title: "Chado Tutorial 2011"
 ---
 # Chado Tutorial 2011
 
-This <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](User%253AScott "User%253AScott") as part
+This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+tutorial was presented by [Scott Cain](/wiki/User%253AScott) as part
 of the [2011 GMOD Spring
-Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training").
+Training](/wiki/2011_GMOD_Spring_Training).
 
 Chado is the database schema of the GMOD project. This session
 introduces database concepts, and then provides an overview of Chado's
@@ -153,19 +153,19 @@ Chado database.
 Or, *Six years of school in 15 minutes or less.*
 
 - [A Brief Guide to
-  Databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
-- [Chado Tables](Chado_Tables "Chado Tables")
+  Databases](/wiki/A_Brief_Guide_to_Databases)
+- [Chado Tables](/wiki/Chado_Tables)
 
-#### What's a [database](Databases_and_GMOD "Databases and GMOD")?
+#### What's a [database](/wiki/Databases_and_GMOD)?
 
-- Chado is a [schema](Glossary#Schema "Glossary"), a database design - a
+- Chado is a [schema](/wiki/Glossary#Schema), a database design - a
   blueprint for a database containing genomic data
 - Distinct from
   - [Database Management System
-    (DBMS)](Glossary#Database_Management_System "Glossary")
+    (DBMS)](/wiki/Glossary#Database_Management_System)
     - Software system for storing databases
-    - *e.g.,* Oracle, [PostgreSQL](PostgreSQL "PostgreSQL"),
-      [MySQL](MySQL "MySQL")
+    - *e.g.,* Oracle, [PostgreSQL](/wiki/PostgreSQL),
+      [MySQL](/wiki/MySQL)
   - Database, a very loose term
     - Any set of organized data that is readable by a computer
     - A web site with database driven content, e.g., FlyBase
@@ -177,7 +177,7 @@ SQL is a standardized query language for defining and manipulating
 databases. Chado uses it. SQL is supported by all major DBMSs.
 
 [FlyBase Field Mapping
-Tables](FlyBase_Field_Mapping_Tables "FlyBase Field Mapping Tables")
+Tables](/wiki/FlyBase_Field_Mapping_Tables)
 shows some example SQL that queries the FlyBase Chado database. (Caveat:
 FlyBase sometimes uses Chado in ways that no other organizations do.)
 
@@ -202,12 +202,12 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Widely used**
   - \- Chado started here, large diverse dataset and organization
 
-- [Chado](Category%253AChado "Category%253AChado")
+- [Chado](/wiki/Category%253AChado)
 - [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
+  Training](/wiki/Category%253A2011_Spring_Training)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
+| [Has topic](/wiki/Property%253AHas_topic) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |

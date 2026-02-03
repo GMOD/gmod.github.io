@@ -3,7 +3,7 @@ title: "GBrowse karyotype ideogram.pl"
 ---
 # GBrowse karyotype ideogram.pl
 
-# How to get cytoband data for the ideogram glyph of [GBrowse_karyotype](GBrowse_karyotype "GBrowse karyotype")
+# How to get cytoband data for the ideogram glyph of [GBrowse_karyotype](/wiki/GBrowse_karyotype)
 
 ## perl script
 

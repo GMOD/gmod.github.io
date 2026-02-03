@@ -6,9 +6,9 @@ title: "News/Tripal: A Web Front End for Chado"
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
-width="200" height="60" alt="Tripal" />](../Tripal.1 "Tripal")
+width="200" height="60" alt="Tripal" />](../Tripal.1)
 
-[Tripal](../Tripal.1 "Tripal") is a new web front end for
+[Tripal](../Tripal.1) is a new web front end for
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> databases
 and is now a part of GMOD. Tripal is a collection of
 <a href="http://www.drupal.org" class="external text"
@@ -36,14 +36,14 @@ and extend Tripal.
 
 If you use or are considering using
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, please
-take a look at [Tripal](../Tripal.1 "Tripal").
+take a look at [Tripal](../Tripal.1).
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
-
-
-
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/09/28*
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+
+*Posted to the [GMOD News](../GMOD_News) on 2009/09/28*
+
+
+- [News Items](../Category%253ANews_Items)

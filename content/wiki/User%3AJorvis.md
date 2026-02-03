@@ -28,7 +28,7 @@ primary work at IGS involves:
 
 - prokaryotic and eukaryotic genome annotation
 - project lead for the distributed grid computing platform
-  <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
+  <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 - data modeling and management
 - metagenomic annotation
 

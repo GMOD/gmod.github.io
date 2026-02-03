@@ -312,8 +312,8 @@ that reads the data into the database. We supply a
 <a href="http://intermine.org/wiki/BioSources" class="external text"
 rel="nofollow">large number of parsers</a> with our source code for
 reading in data from common biological formats (including
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[GFF3](GFF3 "GFF3")), and we supply the tools for writing your own
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[GFF3](/wiki/GFF3)), and we supply the tools for writing your own
 parsers for datasources we don't support out of the box.
 
 <img
@@ -374,7 +374,7 @@ these classes and fields are integrated into the data model.
 
 ### The GFF3 source
 
-InterMine includes a parser to load valid [GFF3](GFF3 "GFF3") files. The
+InterMine includes a parser to load valid [GFF3](/wiki/GFF3) files. The
 creation of features, sequence features (usually chromosomes), locations
 and standard attributes is taken care of automatically.
 

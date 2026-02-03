@@ -3,7 +3,7 @@ title: "GBrowse Persistent Variables"
 ---
 # GBrowse Persistent Variables
 
-[GBrowse](GBrowse.1 "GBrowse") uses a few persistent variables to store
+[GBrowse](/wiki/GBrowse.1) uses a few persistent variables to store
 data for a user. The following is an explanation of the structure of the
 commonly-used ones:
 
@@ -102,7 +102,7 @@ following key-\>value pairs:
 # Querying the State Variable
 
 To query the value of your state variables, copy and paste the [Named
-Subroutines](GBrowse_2.0_HOWTO#Named_Subroutine_References "GBrowse 2.0 HOWTO")
+Subroutines](/wiki/GBrowse_2.0_HOWTO#Named_Subroutine_References)
 below to a file called init_code.conf.
 
 ``` de1
@@ -176,5 +176,5 @@ subroutine so that the main GBrowse page appears normally.
 # Globals
 
 **\$globals** is essentially an object containing the
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+<a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse.conf</a> file.

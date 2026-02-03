@@ -6,7 +6,7 @@ title: "GBrowse 2.0 Install HOWTO"
 This article describes **how to install GBrowse 2.0** on either Linux or
 Mac OSX systems. Before you begin, please make sure that your system has
 all the [GBrowse 2.0
-Prerequisites](GBrowse_2.0_Prerequisites "GBrowse 2.0 Prerequisites")
+Prerequisites](/wiki/GBrowse_2.0_Prerequisites)
 installed. The easiest and most straightforward way to get a basic
 installation up and running is through the
 <a href="http://www.cpan.org/" class="external text" rel="nofollow">CPAN
@@ -25,9 +25,9 @@ class="external text" rel="nofollow">SVN code repository</a> - see
 how that process works.
 
 - *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
-  HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
+  HOWTO](/wiki/GBrowse_2.0_HOWTO).*
 - *See also: [GBrowse Install
-  HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
+  HOWTO](/wiki/GBrowse_Install_HOWTO).*
 
   the CPAN Shell</span>](#Installing_via_the_CPAN_Shell)
   - [Ubuntu
@@ -59,7 +59,7 @@ how that process works.
 ## Installing via the CPAN Shell
 
 For a smooth experience, please install all [GBrowse 2.0
-Prerequisites](GBrowse_2.0_Prerequisites "GBrowse 2.0 Prerequisites")
+Prerequisites](/wiki/GBrowse_2.0_Prerequisites)
 before proceeding.
 
 You can install the latest released version of GBrowse by running the
@@ -96,7 +96,7 @@ Then proceed to install Bio::Graphics::Browser2 as described above.
 Alternatively, you can download and install the bleeding edge version
 via GIT. For a smooth
 experience, please install all [GBrowse 2.0
-Prerequisites](GBrowse_2.0_Prerequisites "GBrowse 2.0 Prerequisites")
+Prerequisites](/wiki/GBrowse_2.0_Prerequisites)
 before proceeding.
 
 The command to issue is:
@@ -134,7 +134,7 @@ Next, enter the newly-created directory and run the `Build.PL` script:
 
 Among other things, this script will report all the missing Perl
 libraries that you need to run GBrowse. Please be sure to [install all
-prerequisites](GBrowse_2.0_Prerequisites "GBrowse 2.0 Prerequisites")
+prerequisites](/wiki/GBrowse_2.0_Prerequisites)
 before going any further. To install any missing Perl prerequisites
 automatically, you may run:
 
@@ -406,11 +406,11 @@ documentation, tutorials and other useful information.
 
 If you are having trouble with the installation, see [Common Problems
 with GBrowse2
-Installation](Common_Problems_with_GBrowse2_Installation "Common Problems with GBrowse2 Installation").
+Installation](/wiki/Common_Problems_with_GBrowse2_Installation).
 If you wish install GBrowse in your home directory because you do not
 have superuser privileges or for any other reasons, see [Installing
 GBrowse2 in your Home
-Directory](Installing_GBrowse2_in_your_Home_Directory "Installing GBrowse2 in your Home Directory").
+Directory](/wiki/Installing_GBrowse2_in_your_Home_Directory).
 (These pages aren't written yet)!
 
 # Advanced Installation Topics
@@ -421,4 +421,4 @@ track upload system, and restricting access to certain databases and
 tracks via user authentication, see:
 
 - [GBrowse 2.0 Install
-  HOWTO/Advanced](GBrowse_2.0_Install_HOWTO/Advanced "GBrowse 2.0 Install HOWTO/Advanced")
+  HOWTO/Advanced](/wiki/GBrowse_2.0_Install_HOWTO/Advanced)

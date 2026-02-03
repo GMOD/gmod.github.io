@@ -30,13 +30,13 @@ Done
 &#10;</tbody>
 </table>
 
-[Rob Buels](User%253ARobertBuels "User%253ARobertBuels") ran the conversion on
+[Rob Buels](/wiki/User%253ARobertBuels) ran the conversion on
 September 15, 2009. The conversion finished around 12:45pm, Eastern US.
-See <a href="Subversion" class="mw-redirect"
+See <a href="/wiki/Subversion" class="mw-redirect"
 title="Subversion">Subversion</a> for how to access the new repository.
 We spent the rest of the day locking down CVS access (it is still there,
 but is read-only), and updating this website to refer to
-<a href="SVN" class="mw-redirect" title="SVN">SVN</a> instead of CVS.
+<a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> instead of CVS.
 
 ## Outstanding Issues
 
@@ -49,14 +49,14 @@ Help Desk</a>.
 
 | Issue Name | Description | Status |
 |----|----|----|
-| Commit Mailing Lists | Several [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") exist that automatically sent out emails whenever a commit was made to a CVS project. Need to create new lists or modify existing ones to read from SVN instead. | Work is under way. GBrowse, Schema, and Apollo have been set up. |
-| [GBrowse](GBrowse.1 "GBrowse") net installer | The GBrowse net install program gets GBrowse from CVS. Needs to now get it from SVN | Fixed in the STABLE branch |
+| Commit Mailing Lists | Several [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) exist that automatically sent out emails whenever a commit was made to a CVS project. Need to create new lists or modify existing ones to read from SVN instead. | Work is under way. GBrowse, Schema, and Apollo have been set up. |
+| [GBrowse](/wiki/GBrowse.1) net installer | The GBrowse net install program gets GBrowse from CVS. Needs to now get it from SVN | Fixed in the STABLE branch |
 
 ## Announcement
 
 GMOD's CVS source code repository will be converted to Subversion (SVN)
-on September 15, 2009. [Rob Buels](User%253ARobertBuels "User%253ARobertBuels")
-of Cornell / [SGN](Category%253ASGN "Category%253ASGN") has generously offered
+on September 15, 2009. [Rob Buels](/wiki/User%253ARobertBuels)
+of Cornell / [SGN](/wiki/Category%253ASGN) has generously offered
 to to do this. The discussion leading up to this decision on the
 <a href="http://comments.gmane.org/gmane.science.biology.gmod.devel/364"
 class="external text" rel="nofollow">GMOD Developers mailing list</a>.
@@ -94,8 +94,8 @@ Please let Rob and Dave know if you have any questions.
 
 Thanks,
 
-[Dave Clements](User%253AClements "User%253AClements") and [Rob
-Buels](User%253ARobertBuels "User%253ARobertBuels")
+[Dave Clements](/wiki/User%253AClements) and [Rob
+Buels](/wiki/User%253ARobertBuels)
 
 ## Projects
 
@@ -112,7 +112,7 @@ projects are still active.
 | 8808 | 5 years | dongilbert | v0.7 updates | Asked Don, Josh | Don said keep | Keep | balloon-tooltips |
 | 8893 | 5 weeks | sheldon_mckay | Adding fall through for pre-existing mouseout event handlers. I hope this … |  | Keep | Bio-Graphics | 9120 |
 | 5 days | anonymous | This commit was manufactured by cvs2svn to create tag 'release-1_981'. |  | Keep | blastGraphic | 9133 | 3 years |
-| briano | Correct POD | Asked Shuai. Had 7 users in [2008 GMOD Community Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey"). | *No response*, but keep anyway b/c of users. | Keep | bop | 9168 | 4 years |
+| briano | Correct POD | Asked Shuai. Had 7 users in [2008 GMOD Community Survey](/wiki/2008_GMOD_Community_Survey). | *No response*, but keep anyway b/c of users. | Keep | bop | 9168 | 4 years |
 | nomi | Removing this old redundant BOP repository--BOP is now integrated into the … | Ed, apollo list | Didn't address bop, but it's empty with a comment that it has been moved inside Apollo. | Archive | Bundle-GMOD | 9177 | 12 days |
 | scottcain | adding prereqs for DBIx::DBStag, since DBStag's Makefile.PL doesn't … |  | Keep | citrina | 9289 | 4 years | jogoodma |
 | Various minor bug fixes. | Josh Goodman, citrina list | Archive it | Archive | cmap | 692 | 2 weeks | kycl4rk |
@@ -129,7 +129,7 @@ projects are still active.
 | 4 months | zzgw | changed according to latest pod |  | Keep | gmod | 14270 | 6 years |
 | scottcain | appended ggb\_ to special make targets for gbrowse | Asked Scott | Scott said this can go away. It was an idea that was never realized. | Don't copy | gmod-home | 14152 | 2 years |
 | scottcain | pointing to cvs for diagrams in really old website | Asked Scott | Archive | gmod-web | 14261 | 5 years | scottcain |
-| Looks good! Minor fixes, and tt2/custom/feature.tt2 is generated … | Asked Allen and Brian | Brian responded that the current version of [GMODWeb](GMODWeb "GMODWeb") is inside the [Turnkey](Turnkey "Turnkey") Subversion repository. | Archive | goet | 14326 | 7 years | jmr39 |
+| Looks good! Minor fixes, and tt2/custom/feature.tt2 is generated … | Asked Allen and Brian | Brian responded that the current version of [GMODWeb](/wiki/GMODWeb) is inside the [Turnkey](/wiki/Turnkey) Subversion repository. | Archive | goet | 14326 | 7 years | jmr39 |
 | \*\*\* empty log message \*\*\* | Wrote to John Day-Richter | *No responses. Drop because of no updates in 7 years.* | Archive | GOView | 14330 | 4 years | anonymous |
 | This commit was manufactured by cvs2svn to create tag 'start'. | Asked Shuai. Had 1 user in 2008 survey. | *No response.* Keep b/c of 1 user. | Keep | graphbrowse | 14349 | 5 years | sletovsky |
 | fixed vertical_layout in new forms | No idea where Stan is. Asked Ben F and Scott. | Scott and Ben said archive it. Work never finished and never used. | Archive | imdb | 14374 | 6 years | x-pan |

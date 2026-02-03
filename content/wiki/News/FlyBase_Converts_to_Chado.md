@@ -4,7 +4,7 @@ title: "News/FlyBase Converts to Chado"
 # News/FlyBase Converts to Chado
 
 This summer, FlyBase [finished its
-reimplementation](../June_2007_Progress_Report#Chado.2FFlyBase "June 2007 Progress Report")
+reimplementation](../June_2007_Progress_Report#Chado.2FFlyBase)
 using <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
 the modular GMOD database schema which
 <a href="http://flybase.org/" class="external text"
@@ -19,13 +19,13 @@ annotations, and cross-species comparative data for eleven additional
 Drosophila species into the single production instance of Chado.
 
 PostgreSQL dumps of FlyBase-chado are available at
-<a href="ftp://ftp.flybase.net/releases/current/psql/"
+<a href="/wiki/ftp://ftp.flybase.net/releases/current/psql/"
 class="external free"
 rel="nofollow">ftp://ftp.flybase.net/releases/current/psql/</a>
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/09/01*
+*Posted to the [GMOD News](../GMOD_News) on 2007/09/01*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

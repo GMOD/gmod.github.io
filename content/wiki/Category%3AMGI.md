@@ -9,17 +9,17 @@ The following 3 pages are in this category, out of 3 total.
 
 ### G
 
-- [GSoC](GSoC "GSoC")
+- [GSoC](/wiki/GSoC)
 
 ### M
 
 - [MOD User Interfaces: Sample of several MOD Top Level
-  functions](MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions "MOD User Interfaces: Sample of several MOD Top Level functions")
+  functions](/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions)
 
 ### S
 
 - [September 2003 GMOD
-  Meeting](September_2003_GMOD_Meeting "September 2003 GMOD Meeting")
+  Meeting](/wiki/September_2003_GMOD_Meeting)
 
 ## Media in category "MGI"
 
@@ -41,7 +41,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [Mgi logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Mgi_logo.jpg "File:Mgi logo.jpg")
+  [Mgi logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Mgi_logo.jpg)
   20 KB
 
 
@@ -64,7 +64,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [Mgi.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Mgi.ppt "File:Mgi.ppt")
+  [Mgi.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Mgi.ppt)
   463 KB
 
 
@@ -87,7 +87,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [MgiMainPageLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/MgiMainPageLogo.jpg "File:MgiMainPageLogo.jpg")
+  [MgiMainPageLogo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/MgiMainPageLogo.jpg)
   6 KB
 
 
@@ -110,5 +110,5 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [Mod-face-07jan-MGI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Mod-face-07jan-MGI.pdf "File:Mod-face-07jan-MGI.pdf")
+  [Mod-face-07jan-MGI.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Mod-face-07jan-MGI.pdf)
   3.12 MB

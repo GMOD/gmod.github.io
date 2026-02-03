@@ -19,10 +19,10 @@ registered attendees.
 ## Other Items of Interest
 
 - [GMOD Summer
-  School](2012_GMOD_Summer_School "2012 GMOD Summer School") -
+  School](/wiki/2012_GMOD_Summer_School) -
   Applications are officially closed, but if you indicate you were at
   this workshop, you might get in on "stand by".
-- [GMOD in the Cloud](Cloud.1 "Cloud") - An Amazon Web Services (AWS),
+- [GMOD in the Cloud](/wiki/Cloud.1) - An Amazon Web Services (AWS),
   aka "the Cloud", instance with lots of GMOD software preinstalled and
   configured.
 
@@ -36,8 +36,7 @@ source application available for Windows, MacOS X and Linux that is
 similar to Parallels or VMware. Please download and install the version
 appropriate for your laptop.
 
-The appliance should also be downloaded from the <a
-href="ftp://ftp.gmod.org/pub/gmod/Courses/2012/ASPB/GBrowse_tutorial.tar.gz"
+The appliance should also be downloaded from the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2012/ASPB/GBrowse_tutorial.tar.gz"
 class="external text" rel="nofollow">GMOD ftp</a> site before the start
 of the workshop. The appliance is 1.3 GB as a compressed tar file (which
 can be uncompressed by 7zip on Windows or built in compression tools on
@@ -70,7 +69,7 @@ While we cover as much as we can in the standard tutorial, I will skip
 around some and we will certainly not finish the tutorial. For the last
 30 minutes, I'll switch to another tutorial to cover working with Next
 Generation sequence data presented on a [separate wiki
-page](GBrowse_Volvox_SAM_Tutorial "GBrowse Volvox SAM Tutorial").
+page](/wiki/GBrowse_Volvox_SAM_Tutorial).
 
 ## Thoughts after the workshop
 

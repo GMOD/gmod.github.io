@@ -5,7 +5,7 @@ title: "Category%253AOntologies"
 
 An *ontology* is a controlled vocabulary plus semantics about how the
 terms in the controlled vocabulary relate to each other.
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> makes heavy
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> makes heavy
 use of ontologies.
 
 ## Pages in category "Ontologies"
@@ -14,16 +14,16 @@ The following 4 pages are in this category, out of 4 total.
 
 ### C
 
-- [Chado CV Module](Chado_CV_Module "Chado CV Module")
+- [Chado CV Module](/wiki/Chado_CV_Module)
 
 ### G
 
-- [Gmod load cvterms](Gmod_load_cvterms "Gmod load cvterms")
-- [GO Graphic Viewer](GO_Graphic_Viewer.1 "GO Graphic Viewer")
+- [Gmod load cvterms](/wiki/Gmod_load_cvterms)
+- [GO Graphic Viewer](/wiki/GO_Graphic_Viewer.1)
 
 ### V
 
-- [Visualization](Visualization "Visualization")
+- [Visualization](/wiki/Visualization)
 
 ## Media in category "Ontologies"
 
@@ -47,7 +47,7 @@ The following 5 files are in this category, out of 5 total.
 
 
   [2005-10 ISMB
-  Ontology-...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/2005-10_ISMB_Ontology-Building_various.pdf "File:2005-10 ISMB Ontology-Building various.pdf")
+  Ontology-...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/2005-10_ISMB_Ontology-Building_various.pdf)
   1.07 MB
 
 
@@ -70,7 +70,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [Chado-ncibi-2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/Chado-ncibi-2006.ppt "File:Chado-ncibi-2006.ppt")
+  [Chado-ncibi-2006.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/Chado-ncibi-2006.ppt)
   1.42 MB
 
 
@@ -93,7 +93,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [DictyBase-phenotypes.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/DictyBase-phenotypes.pdf "File:DictyBase-phenotypes.pdf")
+  [DictyBase-phenotypes.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/DictyBase-phenotypes.pdf)
   1.01 MB
 
 
@@ -116,7 +116,7 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [FlyBaseCVTermViewer.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png "File:FlyBaseCVTermViewer.png")
+  [FlyBaseCVTermViewer.png](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png)
   106 KB
 
 
@@ -139,5 +139,5 @@ The following 5 files are in this category, out of 5 total.
 
 
 
-  [Lapp.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/Lapp.pdf "File:Lapp.pdf")
+  [Lapp.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0a/Lapp.pdf)
   1.2 MB

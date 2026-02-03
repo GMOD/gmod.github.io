@@ -23,7 +23,7 @@ Resources
   class="external text" rel="nofollow">Predefined Tools</a>
 - <a href="http://clovr.igs.umaryland.edu/" class="external text"
   rel="nofollow">CloVR</a>
-- [ISGA](../ISGA "ISGA")
+- [ISGA](../ISGA)
 
 ## What is it?
 
@@ -45,9 +45,9 @@ blast, gene predictions, clustering etc.) can be loaded automatically
 into a chado database instance. In the past, due to its primary use at
 TIGR/JCVI, the database support was limited to Sybase, though flat-files
 could also be generated. Development is now underway to port this to
-also support [PostgreSQL](../PostgreSQL "PostgreSQL") and Oracle.
+also support [PostgreSQL](../PostgreSQL) and Oracle.
 
-[Joshua Orvis](../User%253AJorvis "User%253AJorvis") is the lead developer of
+[Joshua Orvis](../User%253AJorvis) is the lead developer of
 Ergatis and is currently at the
 <a href="http://www.igs.umaryland.edu/" class="external text"
 rel="nofollow">Institute for Genome Sciences</a> at the University of

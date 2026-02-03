@@ -149,6 +149,6 @@ class="external text" rel="nofollow">Reference Genomes</a>
 
 # See also
 
-- [MOD](MOD "MOD")
+- [MOD](/wiki/MOD)
 - <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/standard-urls"
   class="external text" rel="nofollow">standard-urls project in SVN</a>

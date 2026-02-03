@@ -60,7 +60,7 @@ worldwide, is hiring.
     and research interests that complement but extend the
     <a href="http://bx.mathcs.emory.edu/research/" class="external text"
     rel="nofollow">lab's current interests</a>: The
-    [Galaxy](../Galaxy.1 "Galaxy") project; distributed and
+    [Galaxy](../Galaxy.1) project; distributed and
     high-performance computing for data intensive science; vertebrate
     functional genomics; and genomics and epigenomic mechanisms of gene
     regulation, the role of transcription factors and chromatin
@@ -88,4 +88,4 @@ Please send your CV to jobs@galaxyproject.org.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/02*
+*Posted to the [GMOD News](../GMOD_News) on 2012/03/02*

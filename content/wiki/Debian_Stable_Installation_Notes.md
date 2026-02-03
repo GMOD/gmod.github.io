@@ -34,7 +34,7 @@ genomes
 - 500 GB SATA disk
 
 I borrowed a lot of stuff from the
-[Installing_Chado_on_Ubuntu_HOWTO](Installing_Chado_on_Ubuntu_HOWTO "Installing Chado on Ubuntu HOWTO")
+[Installing_Chado_on_Ubuntu_HOWTO](/wiki/Installing_Chado_on_Ubuntu_HOWTO)
 page as Debian and Ubuntu are much alike.
 
 ### Apache
@@ -190,7 +190,7 @@ unique constraint "cvterm_c1" error as well.
 ### Data loading
 
 We have a local mirror of
-<a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria"
+<a href="/wiki/ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria"
 class="external autonumber" rel="nofollow">[1]</a> mounted at
 /data/genomes As described in the Chado manual I inserted an organism in
 the database, our pet organism of course:
@@ -251,7 +251,7 @@ This results in lots of errors
 
 **NCBI genbank RefSeq files (does work, with adaptations)** Please note
 that the page at
-[Load_RefSeq_Into_Chado](Load_RefSeq_Into_Chado "Load RefSeq Into Chado")
+[Load_RefSeq_Into_Chado](/wiki/Load_RefSeq_Into_Chado)
 is now including an organism_id, confusing.
 
 taken from RefSeq howto --\> does not load in the database

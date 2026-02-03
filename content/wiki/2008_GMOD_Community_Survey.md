@@ -51,7 +51,7 @@ improvement and what priorities for the future are.
 
 
 **Note:** See the [2009 GMOD Community
-Survey](2009_GMOD_Community_Survey "2009 GMOD Community Survey") for the
+Survey](/wiki/2009_GMOD_Community_Survey) for the
 following year's survey, which focused on genome and comparative
 genomics visualization.
 
@@ -178,13 +178,13 @@ was 9 responses.
 
 | Components and Combinations |  |  | \# Responses |
 |----|----|----|----|----|----|
-|  |  | [GBrowse](GBrowse.1 "GBrowse") | 63 |  | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
-|  | 32 | [Apollo](Apollo.1 "Apollo") |  |  | 27 |
+|  |  | [GBrowse](/wiki/GBrowse.1) | 63 |  | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
+|  | 32 | [Apollo](/wiki/Apollo.1) |  |  | 27 |
 |  | Chado | GBrowse | 25 | Apollo |  |
 | GBrowse | 22 | Apollo | Chado |  | 21 |
-|  | [BioMart](BioMart "BioMart") |  | 19 | Apollo | Chado |
+|  | [BioMart](/wiki/BioMart) |  | 19 | Apollo | Chado |
 | GBrowse | 18 |  | BioMart | GBrowse | 18 |
-|  |  | [Pathway Tools](Pathway_Tools.1 "Pathway Tools") | 12 |  |  |
+|  |  | [Pathway Tools](/wiki/Pathway_Tools.1) | 12 |  |  |
 | GBrowse | Pathway Tools | 11 | Apollo | BioMart |  |
 | 10 | Apollo | BioMart | GBrowse | 9 |  |
 | BioMart | Chado |  | 9 |  |  |
@@ -197,7 +197,7 @@ class="external text" rel="nofollow">servers GMOD components are running
 on</a>.
 
 See [Computing
-Requirements](Computing_Requirements "Computing Requirements") for
+Requirements](/wiki/Computing_Requirements) for
 recommendations.
 
 ### Operating System
@@ -206,10 +206,10 @@ Operating systems in use had a definite skew towards Unix based systems:
 
 | \# Responses | Operating System |
 |-------------:|---------------------------------------------------|
-| 55 | [Linux](Category%253ALinux "Category%253ALinux") |
-| 8 | [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X") |
+| 55 | [Linux](/wiki/Category%253ALinux) |
+| 8 | [Mac OS X](/wiki/Category%253AMac_OS_X) |
 | 6 | Solaris |
-| 2 | [Windows](Category%253AWindows "Category%253AWindows") |
+| 2 | [Windows](/wiki/Category%253AWindows) |
 | 1 | Unspecified Unix |
 
 ### Current Server Sufficient?
@@ -241,7 +241,7 @@ class="external text" rel="nofollow">section on GMOD Meetings</a>.
 - 21 of 31 respondents who have not attended meetings cited time, cost
   and/or distance as a reason for not attending.
 
-See [Meetings](Meetings "Meetings") for a summary of past and upcoming
+See [Meetings](/wiki/Meetings) for a summary of past and upcoming
 meetings.
 
 ## GMOD Project
@@ -261,12 +261,12 @@ Popular responses were:
 
 | \# Responses | Aspect / Component |
 |---:|----|
-| 23 | [GBrowse](GBrowse.1 "GBrowse") |
+| 23 | [GBrowse](/wiki/GBrowse.1) |
 | 17 | Support and active community |
-| 8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
+| 8 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
 | 8 | Software tools quality, maintenance, breadth and functionality |
 | 6 | Open Source |
-| 6 | [Apollo](Apollo.1 "Apollo") |
+| 6 | [Apollo](/wiki/Apollo.1) |
 
 ### Least Satisfied With
 
@@ -279,7 +279,7 @@ Recurring responses were:
 | \# Responses | Aspect / Component |
 |-------------:|-------------------------------------------------------------|
 | 14 | Documentation |
-| 8 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |
+| 8 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
 | 7 | Difficult configuration and installation |
 | 5 | Integration and coordination |
 | 3 | None |
@@ -297,7 +297,7 @@ Recurring responses were:
 | 18 | Documentation |
 | 14 | Integration |
 | 11 | GBrowse: testing, speed, Web 2.0, glyph documentation, features |
-| 5 | <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](Apollo.1 "Apollo"), functional annotation |
+| 5 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](/wiki/Apollo.1), functional annotation |
 | 3 | Training |
 | 3 | Improve what we already have. |
 
@@ -308,7 +308,7 @@ Recurring responses were:
 The survey asked
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Help_Desk"
 class="external text" rel="nofollow">several questions</a> about the
-[GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk").
+[GMOD Help Desk](/wiki/GMOD_Help_Desk).
 
 Questions asked included:
 
@@ -320,7 +320,7 @@ Questions asked included:
 - What training offerings would be most helpful to you or your
   colleagues?
 - Several questions about holding a
-  <a href="GMOD_Summer_School" class="mw-redirect"
+  <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
   title="GMOD Summer School">GMOD Course</a> in Europe and Asia/Pacific.
   (responses summarized below).
 
@@ -341,7 +341,7 @@ resulted in this priority ranking for these 5 areas:
 ### GMOD Course in Europe
 
 - 25 respondents were definitely or probably interested in attending a
-  <a href="GMOD_Summer_School" class="mw-redirect"
+  <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
   title="GMOD Summer School">GMOD course</a> in Europe in 2009.
 - Of three possible locations given (UK, France, Netherlands), the UK
   was the preferred location for a course.
@@ -352,7 +352,7 @@ UK in 2009. Watch the website for details.*
 ### GMOD Course in Asia/Pacific
 
 21 respondents were definitely or probably interested in attending a
-<a href="GMOD_Summer_School" class="mw-redirect"
+<a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD course</a> in Asia/Pacific in 2009.
 
 When asked what locations respondents could make it to, these locations
@@ -420,15 +420,15 @@ Respondents were given a list of choices along with *Other*
 | \# Responses | Interest |
 |---:|----|
 | 51 | Assembled sequence |
-| 48 | [Comparative Genomics](Comparative_Genomics "Comparative Genomics") |
-| 43 | Manual genome [annotation](Annotation "Annotation") |
-| 39 | [Next generation sequence](Next_Generation_Sequencing "Next Generation Sequencing") |
-| 38 | [Annotation](Annotation "Annotation") pipelines |
-| 32 | Community [annotation](Annotation "Annotation") |
-| 29 | [Microarrays](Category%253AMicroarrays "Category%253AMicroarrays") |
-| 29 | [Ontologies](Category%253AOntologies "Category%253AOntologies") |
-| 24 | [Mapping](CMap.1 "CMap") (genetic, physical, QTL, ...) |
-| 22 | [Phenotypes](Category%253APhenotypes "Category%253APhenotypes") |
+| 48 | [Comparative Genomics](/wiki/Comparative_Genomics) |
+| 43 | Manual genome [annotation](/wiki/Annotation) |
+| 39 | [Next generation sequence](/wiki/Next_Generation_Sequencing) |
+| 38 | [Annotation](/wiki/Annotation) pipelines |
+| 32 | Community [annotation](/wiki/Annotation) |
+| 29 | [Microarrays](/wiki/Category%253AMicroarrays) |
+| 29 | [Ontologies](/wiki/Category%253AOntologies) |
+| 24 | [Mapping](/wiki/CMap.1) (genetic, physical, QTL, ...) |
+| 22 | [Phenotypes](/wiki/Category%253APhenotypes) |
 | 20 | Pathways |
 | 19 | Literature curation |
 | 18 | Other expression (besides microarrays) |

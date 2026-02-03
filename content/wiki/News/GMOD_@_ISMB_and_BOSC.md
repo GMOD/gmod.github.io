@@ -12,26 +12,26 @@ height="136" alt="ISMB 2008" /></a>
 title="BOSC 2008"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/BoscPear.png"
 width="161" height="115" alt="BOSC 2008" /></a>
 
-GMOD has a [strong presence](../ISMB_2008 "ISMB 2008") at the
+GMOD has a [strong presence](../ISMB_2008) at the
 <a href="http://www.iscb.org/ismb2008/" class="external text"
 rel="nofollow">ISMB 2008</a> and
 <a href="http://open-bio.org/wiki/BOSC_2008" class="external text"
 rel="nofollow">BOSC 2008</a> meetings, getting under way this week in
 Toronto. There are over a dozen talks and posters at the BOSC and ISMB
 conferences about [GMOD
-Components](../GMOD_Components "GMOD Components"), or that feature
+Components](../GMOD_Components), or that feature
 research that using GMOD components. See [ISMB
-2008](../ISMB_2008 "ISMB 2008") for a complete list and for a
+2008](../ISMB_2008) for a complete list and for a
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GMODatISMB2008.pdf"
 class="internal" title="GMODatISMB2008.pdf">flier we'll be distributing
 at the conference</a>.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/07/16*
+*Posted to the [GMOD News](../GMOD_News) on 2008/07/16*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

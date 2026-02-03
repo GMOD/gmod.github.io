@@ -39,13 +39,13 @@ height="120" alt="SummerSchool2008Class2.jpg" />
 </tbody>
 </table>
 
-The first annual <a href="GMOD_Summer_School" class="mw-redirect"
+The first annual <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> was a 2 1/2 day
 hands-on workshop aimed at teaching new GMOD users how to get up and
 running with popular GMOD components such as
-[Apollo](Apollo.1 "Apollo"),
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
-[CMap](CMap.1 "CMap"), and [GBrowse](GBrowse.1 "GBrowse"). Participants
+[Apollo](/wiki/Apollo.1),
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
+[CMap](/wiki/CMap.1), and [GBrowse](/wiki/GBrowse.1). Participants
 included 25 students and 4 instructors, from 19 states and 4 countries.
 It was held at the <a href="http://nescent.org" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
@@ -69,7 +69,7 @@ Durham, North Carolina, USA, July 11-13, 2008.
 
 # Program
 
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse"), [CMap](CMap.1 "CMap"), [Apollo](Apollo.1 "Apollo"), and the [Community Annotation System](Community_Annotation_System "Community Annotation System"). | <img |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1), [CMap](/wiki/CMap.1), [Apollo](/wiki/Apollo.1), and the [Community Annotation System](/wiki/Community_Annotation_System). | <img |
 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/SummerSchool2008GBrowse.jpg" width="311"
 height="120" alt="SummerSchool2008GBrowse.jpg" /> |
@@ -94,8 +94,7 @@ data-cellspacing="0">
 <td style="background-color: #FFCCBB">9am - 10:30am</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>GMOD
 Overview</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a> and <a
-href="User%253AClements" title="User%253AClements">Dave Clements</a><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, course
@@ -103,14 +102,12 @@ overview, and installing VMware appliances on student computers.</td>
 </tr>
 <tr class="even">
 <td style="background-color: #FFCCBB">10:30am - Noon</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="Chado" class="mw-redirect" title="Chado">Chado</a>:
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>:
 Theory</strong><br />
-<a href="User%253AClements" title="User%253AClements">Dave Clements</a><br />
-Architecture and logical design of the Chado database <a
-href="Glossary#Schema" title="Glossary">schema</a>: Chado's modules and
+<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
+Architecture and logical design of the Chado database <a href="/wiki/Glossary#Schema" title="Glossary">schema</a>: Chado's modules and
 extensibility, how IDs and database cross references are handled, the
-central role of <a href="Category%253AOntologies"
+central role of <a href="/wiki/Category%253AOntologies"
 title="Category%253AOntologies">ontologies/controlled vocabularies</a>, and
 an overview of how sequence data is handled.</td>
 </tr>
@@ -127,19 +124,17 @@ rel="nofollow">Durham's 9<sup>th</sup> Street District</a>.</td>
 </tr>
 <tr class="even">
 <td style="background-color: #FFCCBB">1pm - 3pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="Chado" class="mw-redirect" title="Chado">Chado</a>:
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>:
 Practice</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
 Using Chado: Installation, importing and exporting data, and a complete
 worked example of loading example sequence data.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFCCBB">3pm - 5pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="GBrowse.1" title="GBrowse">GBrowse</a> 1</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a><br />
-Overview, GBrowse installation and using <a href="GBrowse_adaptors"
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> 1</strong><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
+Overview, GBrowse installation and using <a href="/wiki/GBrowse_adaptors"
 class="mw-redirect" title="GBrowse adaptors">GBrowse adaptors</a></td>
 </tr>
 <tr class="even">
@@ -163,8 +158,7 @@ rel="nofollow">Places to eat</a></td>
 <td style="background-color: #FFCCBB">7:30pm - 9:30pm</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>Open
 Discussion</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott</a>, <a
-href="User%253AClements" title="User%253AClements">Dave</a>, <a href="User%253AFaga"
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott</a>, <a href="/wiki/User%253AClements" title="User%253AClements">Dave</a>, <a href="/wiki/User%253AFaga"
 title="User%253AFaga">Ben</a>, Ed, and <em><strong>You!</strong></em><br />
 This <em>optional</em> session is open to any and all questions you have
 on the GMOD Project, GMOD components, and GMOD users. The instructors
@@ -177,9 +171,8 @@ to be lively.</td>
 </tr>
 <tr class="even">
 <td style="background-color: #FFE5BB">9am - 11:30pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="GBrowse.1" title="GBrowse">GBrowse</a> 2</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> 2</strong><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
 GBrowse Configuration: Changing defaults and displays, adding tracks,
 and performance tuning</td>
 </tr>
@@ -192,17 +185,15 @@ rel="nofollow">Places to eat</a></td>
 </tr>
 <tr class="even">
 <td style="background-color: #FFE5BB">12:30pm - 4pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="Apollo.1" title="Apollo">Apollo</a></strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></strong><br />
 Ed Lee<br />
 Overview, installation, configuration, reading/writing data, setting up
 a Java WebStart instance.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5BB">4pm - 5pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="CMap.1" title="CMap">CMap</a> 1</strong><br />
-<a href="User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap.1" title="CMap">CMap</a> 1</strong><br />
+<a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
 Overview, installation, configuration and data importation.</td>
 </tr>
 <tr class="even">
@@ -215,9 +206,8 @@ rel="nofollow">Places to eat</a></td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5BB">6:30pm - 9pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="CMap.1" title="CMap">CMap</a> 2</strong><br />
-<a href="User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap.1" title="CMap">CMap</a> 2</strong><br />
+<a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
 Overview, installation, configuration and data importation.</td>
 </tr>
 <tr class="even">
@@ -225,11 +215,10 @@ Overview, installation, configuration and data importation.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5CC">9am - 12:30pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a
-href="Community_Annotation_System"
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Community_Annotation_System"
 title="Community Annotation System">Community Annotation
 System</a></strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
 How to install and configure the GMOD Community Annotation System, an
 integrated package of GMOD components (including all the ones covered in
 this course) that reduces much of the installation, integration, and
@@ -240,8 +229,7 @@ configuration work of doing each component individually.</td>
 <td
 style="text-align: center; background-color: #d6fff5;"><strong>Wrapup
 and Resources</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a> and <a
-href="User%253AClements" title="User%253AClements">Dave Clements</a><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
 Describe the resources available to GMOD users and attempt to bring the
 course to a coherent close.</td>
 </tr>
@@ -252,12 +240,12 @@ course to a coherent close.</td>
 
 Sessions were taught by experienced GMOD personnel, including:
 
-- [Scott Cain](User%253AScott "User%253AScott") - GMOD Project Coordinator
-- [Dave Clements](User%253AClements "User%253AClements") - [GMOD Help
-  Desk](GMOD_Help_Desk "GMOD Help Desk")
-- [Ben Faga](User%253AFaga "User%253AFaga") - [CMap](CMap.1 "CMap") and
-  [GBrowse](GBrowse.1 "GBrowse") developer
-- Ed Lee - [Apollo](Apollo.1 "Apollo") developer
+- [Scott Cain](/wiki/User%253AScott) - GMOD Project Coordinator
+- [Dave Clements](/wiki/User%253AClements) - [GMOD Help
+  Desk](/wiki/GMOD_Help_Desk)
+- [Ben Faga](/wiki/User%253AFaga) - [CMap](/wiki/CMap.1) and
+  [GBrowse](/wiki/GBrowse.1) developer
+- Ed Lee - [Apollo](/wiki/Apollo.1) developer
 
 # Who Attended?
 
@@ -269,26 +257,26 @@ The GMOD Summer School was attended by people implementing GMOD at their
 organizations, and by Principal Investigators whose organizations have
 adopted GMOD. The course went into detail about how to install and
 configure GMOD components. It was aimed primarily at [GMOD System
-Administrators](Computing_Requirements "Computing Requirements"), the
+Administrators](/wiki/Computing_Requirements), the
 people who actually implement and manage a GMOD installation on a day to
 day basis. This course was for organizations either planning to use GMOD
 components, or in the early phases of implementing GMOD.
 
-| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](User%253AScott "User%253AScott")          | CSHL                                       | [Dave Clements](User%253AClements "User%253AClements") | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](User%253AFaga "User%253AFaga")              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
+| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User%253AScott)          | CSHL                                       | [Dave Clements](/wiki/User%253AClements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User%253AFaga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
 
 # Prerequisites
 
 _The course requires a minimal level of Linux systems administration
 knowledge_ (see [Computing
-Requirements](Computing_Requirements "Computing Requirements")). By "a
+Requirements](/wiki/Computing_Requirements)). By "a
 minimal level of Linux systems administration knowledge" we mean that
 participants should be comfortable installing packages under Linux. _A
 good benchmark for this level of knowledge is that you should be able to
 get a basic [GBrowse
-installation](GBrowse_Install_HOWTO "GBrowse Install HOWTO") (that is,
-GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
+installation](/wiki/GBrowse_Install_HOWTO) (that is,
+GBrowse without [MySQL](/wiki/MySQL)) up and running with the example
 GBrowse data._ This also requires installing Apache, and
-[BioPerl](BioPerl "BioPerl") and all its dependencies.
+[BioPerl](/wiki/BioPerl) and all its dependencies.
 
 ## System Requirements
 
@@ -303,9 +291,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](Category%253AWindows "Category%253AWindows") and
-[Linux](Category%253ALinux "Category%253ALinux") [operating
-systems](Glossary#Operating_System "Glossary") from
+Windows](/wiki/Category%253AWindows) and
+[Linux](/wiki/Category%253ALinux) [operating
+systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
 
@@ -319,7 +307,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs _directly_ under [Mac OS
-X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
+X](/wiki/Category%253AMac_OS_X). However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion
@@ -391,16 +379,14 @@ details shown on the second one have now changed.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;" data-valign="top"><a
-href="File:SummerSchoolPoster2008Thumb.png" class="image"
+<td style="text-align: center;" data-valign="top"><a href="/wiki/File:SummerSchoolPoster2008Thumb.png" class="image"
 title="Poster 1"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/SummerSchoolPoster2008Thumb.png"
 width="150" height="196" alt="Poster 1" /></a><br />
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/SummerSchoolPoster2008.pdf"
 class="internal" title="SummerSchoolPoster2008.pdf">Download</a><br />
 A poster (US Letter size) announcing the 2008 GMOD Summer School.</td>
-<td style="text-align: center;" data-valign="top"><a
-href="File:SummerSchoolFlier2008.png" class="image"
+<td style="text-align: center;" data-valign="top"><a href="/wiki/File:SummerSchoolFlier2008.png" class="image"
 title="Poster 2"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/SummerSchoolFlier2008.png" width="254"
 height="196" alt="Poster 2" /></a><br />

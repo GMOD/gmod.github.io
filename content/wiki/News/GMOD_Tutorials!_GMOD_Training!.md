@@ -16,52 +16,52 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="120" height="97" alt="Summer School - Americas" /></a>
 
 Detailed and hands-on [online
-tutorials](../Training_and_Outreach#Online_Tutorials "Training and Outreach")
+tutorials](../Training_and_Outreach#Online_Tutorials)
 are now available for the [GMOD
-Components](../GMOD_Components "GMOD Components") that were covered at
+Components](../GMOD_Components) that were covered at
 the <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">2009 GMOD Summer Schools</a>. Each tutorial
 includes a VMware system image
 to work with, and detailed instructions on how to setup the component on
 that image.
 
-The [tutorials](../Category%253ATutorials "Category%253ATutorials") are:
+The [tutorials](../Category%253ATutorials) are:
 
 - **<a href="../Apollo_Tutorial" class="mw-redirect"
   title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
-  Lee](../User%253AElee "User%253AElee")
+  Lee](../User%253AElee)
 - **[Artemis-Chado Integration
-  Tutorial](../Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial")** -
-  by [Robin Houston](../User%253ARobinHouston "User%253ARobinHouston"), [Tim
-  Carver](../User%253ATimCarver "User%253ATimCarver") and [Giles
-  Velarde](../User%253ABuggy "User%253ABuggy")
-- **[BioMart Tutorial](../BioMart_Tutorial "BioMart Tutorial")** - by
-  [Junjun Zhang](../User%253AJunjun "User%253AJunjun") and [Syed
-  Haider](../User%253ASyedHaider "User%253ASyedHaider")
+  Tutorial](../Artemis-Chado_Integration_Tutorial)** -
+  by [Robin Houston](../User%253ARobinHouston), [Tim
+  Carver](../User%253ATimCarver) and [Giles
+  Velarde](../User%253ABuggy)
+- **[BioMart Tutorial](../BioMart_Tutorial)** - by
+  [Junjun Zhang](../User%253AJunjun) and [Syed
+  Haider](../User%253ASyedHaider)
 - **<a href="../Chado_Tutorial" class="mw-redirect"
   title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
-  Cain](../User%253AScott "User%253AScott"), [Joshua
-  Orvis](../User%253AJorvis "User%253AJorvis"), and [Dave
-  Clements](../User%253AClements "User%253AClements")
-- **[GBrowse Tutorial](../GBrowse_Tutorial "GBrowse Tutorial")** - by
-  [Scott Cain](../User%253AScott "User%253AScott") and [Sheldon
-  McKay](../User%253AMckays "User%253AMckays")
+  Cain](../User%253AScott), [Joshua
+  Orvis](../User%253AJorvis), and [Dave
+  Clements](../User%253AClements)
+- **[GBrowse Tutorial](../GBrowse_Tutorial)** - by
+  [Scott Cain](../User%253AScott) and [Sheldon
+  McKay](../User%253AMckays)
 - **<a href="../GBrowse_syn_Tutorial" class="mw-redirect"
   title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
-  McKay](../User%253AMckays "User%253AMckays")
+  McKay](../User%253AMckays)
 - **<a href="../JBrowse_Tutorial" class="mw-redirect"
   title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
-  Skinner](../User%253AMitchSkinner "User%253AMitchSkinner") and Ian Holmes
+  Skinner](../User%253AMitchSkinner) and Ian Holmes
 - **<a href="../MAKER_Tutorial" class="mw-redirect"
   title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
-  Holt](../User%253ACarsonholt "User%253ACarsonholt")
+  Holt](../User%253ACarsonholt)
 - **<a href="../Tripal_Tutorial" class="mw-redirect"
   title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
-  Ficklin](../User%253ASficklin "User%253ASficklin")
+  Ficklin](../User%253ASficklin)
 
 
 There is also a plethora of GMOD related [training and
-outreach](../Training_and_Outreach "Training and Outreach") going on in
+outreach](../Training_and_Outreach) going on in
 the next few months. Here's what I know about:
 
 <table class="wikitable">
@@ -169,12 +169,12 @@ pipeline</a></strong></td>
 </tbody>
 </table>
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/10/02*
+*Posted to the [GMOD News](../GMOD_News) on 2009/10/02*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

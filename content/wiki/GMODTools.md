@@ -26,16 +26,16 @@ title: "GMODTools"
 
 # Description
 
-Bulkfiles is a GMOD [Perl](Glossary#Perl "Glossary") package that
-generates Fasta, [GFF3](GFF3 "GFF3"), DNA and other bulk genome
+Bulkfiles is a GMOD [Perl](/wiki/Glossary#Perl) package that
+generates Fasta, [GFF3](/wiki/GFF3), DNA and other bulk genome
 annotation files from
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> databases.
-It works with several [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
+It works with several [FlyBase](/wiki/Category%253AFlyBase)
 Chado releases, with SGDLite, and has been tested with other Chado
 databases. Once tuned to your project's needs with its organism and site
 configurations, it can generate public data releases on a regular basis.
 It produces all the contents needed for a GMOD [Standard
-URL](Standard_URL "Standard URL") genome data download folder.
+URL](/wiki/Standard_URL) genome data download folder.
 
 # Outputs
 
@@ -43,7 +43,7 @@ These are current primary outputs, which are configurable to suit
 project needs.
 
 - DNA files (full chromosomes) in raw and fasta formats
-- [GFF3](GFF3 "GFF3") feature files
+- [GFF3](/wiki/GFF3) feature files
 - Fasta sequence for each selected feature set, with headers from
   feature files
 - BLAST Index files (NCBI)
@@ -56,10 +56,10 @@ Bulkfiles base adaptor object.
 # Why Use Bulkfiles?
 
 Why use this package rather than using other [middleware
-layers](Category%253AMiddleware "Category%253AMiddleware") to Chado db - [Chado
-XML](Chado_XML "Chado XML"),
-[Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI"),
-[BioPerl](BioPerl "BioPerl"), ? The general logic is
+layers](/wiki/Category%253AMiddleware) to Chado db - [Chado
+XML](/wiki/Chado_XML),
+[Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI),
+[BioPerl](/wiki/BioPerl), ? The general logic is
 
 1.  dump all Chado db features using simple (and quick) sql, to common
     intermediate table files, and chromosome dna to raw files. The
@@ -100,7 +100,7 @@ rel="nofollow">GMODTools</a>:
      unzip GMODTools*.zip
 
 If you want to try out GMODTools from
-<a href="SVN" class="mw-redirect" title="SVN">SVN</a> check out using
+<a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> check out using
 these commands:
 
      svn co https://gmod.svn.sourceforge.net/svnroot/gmod/schema/trunk/GMODTools
@@ -112,7 +112,7 @@ password, and it may be very slow.
 # Configuration
 
 Bulkfiles has extensive configurations, in a simple
-[XML](Glossary#XML "Glossary") format. This is both a strength and
+[XML](/wiki/Glossary#XML) format. This is both a strength and
 weakness. The strength is that most aspects for genome data publication,
 such as feature names, types, aspects of the output format, are under
 your project's control. The weakness is these need detailed
@@ -134,7 +134,7 @@ These are the main contents of the configuration files
 
 - `sgdbulk.xml` : main release configuration for tested sample
 
-This main release [XML](Glossary#XML "Glossary") controls what other
+This main release [XML](/wiki/Glossary#XML) controls what other
 configurations are used.
 
 A new release configuration with date, release name should be added as
@@ -144,7 +144,7 @@ needed.
   project/organism configuration
 - `site_defaults.xml`  : common database and output settings for your
   site.
-- `chadofeatsql.xml`  : primary Chado [SQL](Glossary#SQL "Glossary")
+- `chadofeatsql.xml`  : primary Chado [SQL](/wiki/Glossary#SQL)
   used to extract data from database.
 
 If you have a complex Chado database, you may well want to add to or
@@ -164,7 +164,7 @@ part of the territory with genome databases.
 
 # Sample Use
 
-Load a genome Chado db to [PostgreSQL](PostgreSQL "PostgreSQL")
+Load a genome Chado db to [PostgreSQL](/wiki/PostgreSQL)
 database:
 
      curl -O http://sgdlite.princeton.edu/download/sgdlite/sgdlite.sql.gz
@@ -185,7 +185,7 @@ result log file to the developer contact below.
 
 Output data folder looks like this. It is suited to linking to a public
 web server for data downloading, e.g. the GMOD
-[Standard_URL](Standard_URL "Standard URL").
+[Standard_URL](/wiki/Standard_URL).
 
      data/genomes/Saccharomyces_cerevisiae/sgdlite_2005_08_23/
      Example.txt  README.html  blast/       fasta/       gff/         tmp/
@@ -218,14 +218,14 @@ configurations.
 ## GenBank genome round-trip test
 
 See also this brief [GMODTools
-TestCase](GMODTools_TestCase "GMODTools TestCase") that describes how to
+TestCase](/wiki/GMODTools_TestCase) that describes how to
 load a GenBank genome to Chado then regurgitate it via Bulkfiles as a
 GenBank submission file set.
 
 # Requirements
 
 Bulkfiles is mostly a self-contained Perl package. It uses a few
-[BioPerl](BioPerl "BioPerl") parts plus
+[BioPerl](/wiki/BioPerl) parts plus
 <a href="http://search.cpan.org/perldoc?XML::Simple"
 class="external text" rel="nofollow">XML::Simple</a> for configuration
 files.
@@ -286,14 +286,14 @@ Version 1.1 (2007 October) adds these features and corrections:
 
 # See Also
 
-- [XORT](XORT.1 "XORT") offers an alternative approach to bulk uploads
+- [XORT](/wiki/XORT.1) offers an alternative approach to bulk uploads
   and downloads from a Chado database.
-- [Sample Chado SQL](Sample_Chado_SQL "Sample Chado SQL") gives an
+- [Sample Chado SQL](/wiki/Sample_Chado_SQL) gives an
   overview of the feature and other Chado table
-  [SQL](Glossary#SQL "Glossary") commands used for Bulkfiles output.
+  [SQL](/wiki/Glossary#SQL) commands used for Bulkfiles output.
   Examples here can help you learn the contents of a database created by
   someone else, and are useful for GMODTools configuration.
 
 # Contact
 
-[Dongilbert](User%253ADongilbert "User%253ADongilbert")
+[Dongilbert](/wiki/User%253ADongilbert)

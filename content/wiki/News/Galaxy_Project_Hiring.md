@@ -11,7 +11,7 @@ height="25" alt="Galaxy Project Hiring" /></a>
 There are several open
 <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/job_rc2"
 class="external text" rel="nofollow">software engineer and postdoc
-positions</a> with the [Galaxy](../Galaxy.1 "Galaxy") project. Galaxy is
+positions</a> with the [Galaxy](../Galaxy.1) project. Galaxy is
 looking for engineers with with experience in distributed computing,
 visualization, and usability. The positions will initially focus on
 making <a href="../Next_generation_sequencing" class="mw-redirect"
@@ -21,7 +21,7 @@ well as development of bioinformatic tools in areas enabled by NGS:
 re-sequencing, *de novo* assembly, metagenomics, transcriptome analysis
 and epigenetics. Postdoc positions will address biological questions
 (*e.g.*, mutagenesis and sex chromosome evolution from NGS data) using
-[Galaxy](../Galaxy.1 "Galaxy") tools.
+[Galaxy](../Galaxy.1) tools.
 
 See the
 <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/job_rc2"
@@ -30,7 +30,7 @@ details and contact information.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/02*
+*Posted to the [GMOD News](../GMOD_News) on 2009/11/02*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

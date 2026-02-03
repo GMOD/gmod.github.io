@@ -3,7 +3,7 @@ title: "News/Modware Feedback Wanted"
 ---
 # News/Modware Feedback Wanted
 
-[Modware](../Modware "Modware") provides an object-oriented Perl API for
+[Modware](../Modware) provides an object-oriented Perl API for
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> suitable
 for use by any application based on GMOD. This Chado API supports
 creating, retrieving and updating objects in a Chado database. Modware
@@ -28,7 +28,7 @@ rel="nofollow">gmod-ware-users@sourceforge.net</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2007/12/11*
+*Posted to the [GMOD News](../GMOD_News) on 2007/12/11*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

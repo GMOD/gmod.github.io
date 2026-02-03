@@ -29,7 +29,7 @@ HIVE cloud.
 - Expertise in fundamental mathematical models/algorithms
 - Solid understanding of bioinformatics concepts: alignments, strings
   and trees, sequences, clustering methods, biostatistics
-- GMOD or [Galaxy](../Galaxy.1 "Galaxy") experience is a significant
+- GMOD or [Galaxy](../Galaxy.1) experience is a significant
   plus
 - Ability to work in different operating systems: Linux, Windows, Mac;
   development environments: Visual Studio, Eclipse, GCC/GDB;
@@ -61,7 +61,7 @@ rel="nofollow">Vahan Simonyan</a> to apply, or if you have questions.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/04/25*
+*Posted to the [GMOD News](../GMOD_News) on 2012/04/25*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

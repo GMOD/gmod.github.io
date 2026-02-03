@@ -27,7 +27,7 @@ few transcripts and so needs a "tall" JBrowse image.
 
 ## Why this is needed
 
-While [JBrowse](JBrowse.1 "JBrowse") is a terrific tool for browsing
+While [JBrowse](/wiki/JBrowse.1) is a terrific tool for browsing
 genomes, there is one piece of functionality that is missing from this
 excellent client-side tool: getting an image from the server with a URL
 request that can be dynamically inserted into a web page, like what one

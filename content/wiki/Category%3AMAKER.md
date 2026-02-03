@@ -9,7 +9,7 @@ This category has only the following subcategory.
 
 ### T
 
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](/wiki/Category%253ATutorials)
 
 ## Pages in category "MAKER"
 
@@ -25,59 +25,59 @@ The following 15 pages are in this category, out of 15 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="d">D</h3>
 <ul>
-<li><a href="Downloads" title="Downloads">Downloads</a></li>
+<li><a href="/wiki/Downloads" title="Downloads">Downloads</a></li>
 </ul>
 <h3 id="g">G</h3>
 <ul>
-<li><a href="GMOD_Malaysia_2014/MAKER_Tutorial"
+<li><a href="/wiki/GMOD_Malaysia_2014/MAKER_Tutorial"
 title="GMOD Malaysia 2014/MAKER Tutorial">GMOD Malaysia 2014/MAKER
 Tutorial</a></li>
 </ul>
 <h3 id="l">L</h3>
 <ul>
-<li><a href="Talk%253ALinux_Text_Editors"
+<li><a href="/wiki/Talk%253ALinux_Text_Editors"
 title="Talk:Linux Text Editors">Talk:Linux Text Editors</a></li>
 </ul>
 <h3 id="m">M</h3>
 <ul>
-<li><a href="MAKER.1" title="MAKER">MAKER</a></li>
-<li><span class="redirect-in-category"><a href="MAKER_Tutorial"
+<li><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></li>
+<li><span class="redirect-in-category"><a href="/wiki/MAKER_Tutorial"
 class="mw-redirect" title="MAKER Tutorial">MAKER
 Tutorial</a></span></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="m-cont.">M cont.</h3>
 <ul>
-<li><a href="MAKER_Tutorial_2010" title="MAKER Tutorial 2010">MAKER
+<li><a href="/wiki/MAKER_Tutorial_2010" title="MAKER Tutorial 2010">MAKER
 Tutorial 2010</a></li>
-<li><a href="MAKER_Tutorial_2011" title="MAKER Tutorial 2011">MAKER
+<li><a href="/wiki/MAKER_Tutorial_2011" title="MAKER Tutorial 2011">MAKER
 Tutorial 2011</a></li>
-<li><a href="MAKER_Tutorial_2012" title="MAKER Tutorial 2012">MAKER
+<li><a href="/wiki/MAKER_Tutorial_2012" title="MAKER Tutorial 2012">MAKER
 Tutorial 2012</a></li>
-<li><a href="MAKER_Tutorial_2013" title="MAKER Tutorial 2013">MAKER
+<li><a href="/wiki/MAKER_Tutorial_2013" title="MAKER Tutorial 2013">MAKER
 Tutorial 2013</a></li>
-<li><a href="MAKER/tool_data" title="MAKER/tool data">MAKER/tool
+<li><a href="/wiki/MAKER/tool_data" title="MAKER/tool data">MAKER/tool
 data</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="m-cont.-1">M cont.</h3>
 <ul>
-<li><a href="MWAS_Tutorial" title="MWAS Tutorial">MWAS Tutorial</a></li>
+<li><a href="/wiki/MWAS_Tutorial" title="MWAS Tutorial">MWAS Tutorial</a></li>
 </ul>
 <h3 id="n">N</h3>
 <ul>
-<li><a href="News/MAKER-P%253A_an_annotation_pipeline_for_plants"
+<li><a href="/wiki/News/MAKER-P%253A_an_annotation_pipeline_for_plants"
 title="News/MAKER-P: an annotation pipeline for plants">News/MAKER-P: an
 annotation pipeline for plants</a></li>
 </ul>
 <h3 id="o">O</h3>
 <ul>
-<li><a href="October_2011_GMOD_Meeting"
+<li><a href="/wiki/October_2011_GMOD_Meeting"
 title="October 2011 GMOD Meeting">October 2011 GMOD Meeting</a></li>
 </ul>
 <h3 id="t-1">T</h3>
 <ul>
-<li><a href="Training_and_Outreach"
+<li><a href="/wiki/Training_and_Outreach"
 title="Training and Outreach">Training and Outreach</a></li>
-<li><a href="Template:TutorialList"
+<li><a href="/wiki/Template:TutorialList"
 title="Template:TutorialList">Template:TutorialList</a></li>
 </ul></td>
 </tr>
@@ -104,7 +104,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [2009SumSchMAKER.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9e/2009SumSchMAKER.pdf "File:2009SumSchMAKER.pdf")
+  [2009SumSchMAKER.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9e/2009SumSchMAKER.pdf)
   15.99 MB
 
 
@@ -127,7 +127,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [MAKERSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/MAKERSMBE2009.pdf "File:MAKERSMBE2009.pdf")
+  [MAKERSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/MAKERSMBE2009.pdf)
   13.16 MB
 
 
@@ -150,7 +150,7 @@ The following 4 files are in this category, out of 4 total.
 
 
 
-  [PAG2010MAKER.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/03/PAG2010MAKER.pdf "File:PAG2010MAKER.pdf")
+  [PAG2010MAKER.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/03/PAG2010MAKER.pdf)
   7 MB
 
 
@@ -174,5 +174,5 @@ The following 4 files are in this category, out of 4 total.
 
 
   [PeanutBase PAG2015
-  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf "File:PeanutBase PAG2015 Poster.pdf")
+  Pos...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/PeanutBase_PAG2015_Poster.pdf)
   3.35 MB

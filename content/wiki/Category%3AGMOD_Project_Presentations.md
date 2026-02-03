@@ -26,7 +26,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [GMODTAMUWorkshop.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf "File:GMODTAMUWorkshop.pdf")
+  [GMODTAMUWorkshop.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf)
   17.35 MB
 
 
@@ -49,7 +49,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf "File:HelpDeskSept2010.pdf")
+  [HelpDeskSept2010.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf)
   10.54 MB
 
 
@@ -73,7 +73,7 @@ The following 26 files are in this category, out of 26 total.
 
 
   [01-NESC January
-  2006-L...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/01-NESC_January_2006-LINCOLN.pdf "File:01-NESC January 2006-LINCOLN.pdf")
+  2006-L...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/01-NESC_January_2006-LINCOLN.pdf)
   1.56 MB
 
 
@@ -97,7 +97,7 @@ The following 26 files are in this category, out of 26 total.
 
 
   [03-NESCent
-  intro.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/03-NESCent_intro.pdf "File:03-NESCent intro.pdf")
+  intro.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/03-NESCent_intro.pdf)
   459 KB
 
 
@@ -121,7 +121,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [2007GenomeInformaticsG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/2007GenomeInformaticsGMODPoster.pdf "File:2007GenomeInformaticsGMODPoster.pdf")
+  [2007GenomeInformaticsG...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/2007GenomeInformaticsGMODPoster.pdf)
   1.23 MB
 
 
@@ -144,7 +144,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Aug2009HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Aug2009HelpDesk.pdf "File:Aug2009HelpDesk.pdf")
+  [Aug2009HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Aug2009HelpDesk.pdf)
   6.8 MB
 
 
@@ -167,7 +167,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Aug2009StateOfGMOD.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Aug2009StateOfGMOD.pdf "File:Aug2009StateOfGMOD.pdf")
+  [Aug2009StateOfGMOD.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Aug2009StateOfGMOD.pdf)
   495 KB
 
 
@@ -190,7 +190,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Cain 040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/Cain_040526.ppt "File:Cain 040526.ppt")
+  [Cain 040526.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/Cain_040526.ppt)
   26 KB
 
 
@@ -213,7 +213,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Cain-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt "File:Cain-050516.ppt")
+  [Cain-050516.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Cain-050516.ppt)
   818 KB
 
 
@@ -237,7 +237,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [GenomicsResourcesForEm...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GenomicsResourcesForEmergingModelOrganismsPoster.pdf "File:GenomicsResourcesForEmergingModelOrganismsPoster.pdf")
+  [GenomicsResourcesForEm...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/GenomicsResourcesForEmergingModelOrganismsPoster.pdf)
   1.5 MB
 
 
@@ -261,7 +261,7 @@ The following 26 files are in this category, out of 26 total.
 
 
   [Gmod meeting 7
-  2008.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt "File:Gmod meeting 7 2008.ppt")
+  2008.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt)
   103 KB
 
 
@@ -285,7 +285,7 @@ The following 26 files are in this category, out of 26 total.
 
 
   [Gmod OCCBio
-  2007.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Gmod_OCCBio_2007.ppt "File:Gmod OCCBio 2007.ppt")
+  2007.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Gmod_OCCBio_2007.ppt)
   2.99 MB
 
 
@@ -308,7 +308,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Gmod update.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Gmod_update.ppt "File:Gmod update.ppt")
+  [Gmod update.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Gmod_update.ppt)
   73 KB
 
 
@@ -331,7 +331,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [GMODBrochure2010.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1a/GMODBrochure2010.ppt "File:GMODBrochure2010.ppt")
+  [GMODBrochure2010.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1a/GMODBrochure2010.ppt)
   2.73 MB
 
 
@@ -354,7 +354,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [GMODGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODGBrowseSMBE2009.pdf "File:GMODGBrowseSMBE2009.pdf")
+  [GMODGBrowseSMBE2009.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODGBrowseSMBE2009.pdf)
   18.41 MB
 
 
@@ -377,7 +377,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [HelpDeskGMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/HelpDeskGMOD2008.pdf "File:HelpDeskGMOD2008.pdf")
+  [HelpDeskGMOD2008.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/HelpDeskGMOD2008.pdf)
   8.14 MB
 
 
@@ -401,7 +401,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [ISMB2008PosterManaging...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/ISMB2008PosterManagingGenomicData.pdf "File:ISMB2008PosterManagingGenomicData.pdf")
+  [ISMB2008PosterManaging...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/ISMB2008PosterManagingGenomicData.pdf)
   723 KB
 
 
@@ -424,7 +424,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Jan2009HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf "File:Jan2009HelpDesk.pdf")
+  [Jan2009HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf)
   5.58 MB
 
 
@@ -447,7 +447,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Jan2009StateOfGMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt "File:Jan2009StateOfGMOD.ppt")
+  [Jan2009StateOfGMOD.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt)
   146 KB
 
 
@@ -470,7 +470,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Jan2010HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Jan2010HelpDesk.pdf "File:Jan2010HelpDesk.pdf")
+  [Jan2010HelpDesk.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Jan2010HelpDesk.pdf)
   8.78 MB
 
 
@@ -493,7 +493,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [March2011GSAandGMOD.pptx](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/March2011GSAandGMOD.pptx "File:March2011GSAandGMOD.pptx")
+  [March2011GSAandGMOD.pptx](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/March2011GSAandGMOD.pptx)
   366 KB
 
 
@@ -516,7 +516,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Mod-face-07jan-Intro-s...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/Mod-face-07jan-Intro-scain.pdf "File:Mod-face-07jan-Intro-scain.pdf")
+  [Mod-face-07jan-Intro-s...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/Mod-face-07jan-Intro-scain.pdf)
   138 KB
 
 
@@ -539,7 +539,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [PAG2010GMODProjectUpda...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/PAG2010GMODProjectUpdate.pdf "File:PAG2010GMODProjectUpdate.pdf")
+  [PAG2010GMODProjectUpda...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/PAG2010GMODProjectUpdate.pdf)
   12.05 MB
 
 
@@ -563,7 +563,7 @@ The following 26 files are in this category, out of 26 total.
 
 
   [System architecture
-  ma...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/System_architecture_may_2003.ppt "File:System architecture may 2003.ppt")
+  ma...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/System_architecture_may_2003.ppt)
   115 KB
 
 
@@ -586,7 +586,7 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [What next.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/What_next.ppt "File:What next.ppt")
+  [What next.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/What_next.ppt)
   84 KB
 
 
@@ -609,5 +609,5 @@ The following 26 files are in this category, out of 26 total.
 
 
 
-  [Whats new.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt "File:Whats new.ppt")
+  [Whats new.ppt](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt)
   382 KB

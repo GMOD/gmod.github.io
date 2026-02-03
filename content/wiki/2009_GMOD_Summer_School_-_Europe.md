@@ -11,7 +11,7 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="GMOD_Europe_2009" title="GMOD Europe 2009"><img
+<td><a href="/wiki/GMOD_Europe_2009" title="GMOD Europe 2009"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2f/GMOD2009Europe300.png" width="300"
 height="256" alt="GMOD Europe 2009" /></a></td>
 <td><span style="font-size: 200%; line-height: 120%"><strong>2009 GMOD
@@ -19,9 +19,8 @@ Summer School - Europe</strong><br />
 3-6 August, 2009<br />
 Oxford UK</span>
 <p><br />
-<span style="font-size: 160%; line-height: 120%">Part of <a
-href="GMOD_Europe_2009" title="GMOD Europe 2009">GMOD Europe 2009</a>,
-five days of GMOD including a <a href="August_2009_GMOD_Meeting"
+<span style="font-size: 160%; line-height: 120%">Part of <a href="/wiki/GMOD_Europe_2009" title="GMOD Europe 2009">GMOD Europe 2009</a>,
+five days of GMOD including a <a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">Community Meeting</a></span></p></td>
 </tr>
 </tbody>
@@ -30,18 +29,18 @@ title="August 2009 GMOD Meeting">Community Meeting</a></span></p></td>
 
 The ***2009 GMOD Summer School - Europe*** was held 3-6 August in
 Oxford, UK. Like the [2008 GMOD Summer
-School](2008_GMOD_Summer_School "2008 GMOD Summer School"), this course
+School](/wiki/2008_GMOD_Summer_School), this course
 focused on installing, configuring and integrating popular [GMOD
-Components](GMOD_Components "GMOD Components").
+Components](/wiki/GMOD_Components).
 
 The summer school was a part of ***[GMOD Europe
-2009](GMOD_Europe_2009 "GMOD Europe 2009")*** a week long event that
+2009](/wiki/GMOD_Europe_2009)*** a week long event that
 also included the [August 2009 GMOD
-Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting"). Another
-<a href="GMOD_Summer_School" class="mw-redirect"
+Meeting](/wiki/August_2009_GMOD_Meeting). Another
+<a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> was offered in
 [Durham, North Carolina in July
-2009](2009_GMOD_Summer_School_-_Americas "2009 GMOD Summer School - Americas").
+2009](/wiki/2009_GMOD_Summer_School_-_Americas).
 
   Program](#Program)
 - [Instructors](#Instructors)
@@ -60,21 +59,21 @@ title="GMOD Summer School">GMOD Summer School</a> was offered in
 The program featured 3 ½ days of hands-on training starting with an
 overview of GMOD, and then covering the installation, configuration, and
 administration of several popular [GMOD
-Components](GMOD_Components "GMOD Components").
+Components](/wiki/GMOD_Components).
 
 The summer school GMOD component sessions are available as [online
-tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").
+tutorials](/wiki/Training_and_Outreach#Online_Tutorials).
 To access the tutorials, follow the links for
-<a href="Chado_Tutorial" class="mw-redirect"
+<a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado</a>,
-[GBrowse](GBrowse_Tutorial "GBrowse Tutorial"),
-<a href="GBrowse_syn_Tutorial" class="mw-redirect"
+[GBrowse](/wiki/GBrowse_Tutorial),
+<a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn</a>,
-[BioMart](BioMart_Tutorial "BioMart Tutorial"),
-<a href="Apollo_Tutorial" class="mw-redirect"
+[BioMart](/wiki/BioMart_Tutorial),
+<a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo</a>, [Artemis-Chado
-Integration](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial"),
-and <a href="JBrowse_Tutorial" class="mw-redirect"
+Integration](/wiki/Artemis-Chado_Integration_Tutorial),
+and <a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse</a>.
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
@@ -104,8 +103,7 @@ data-cellspacing="0">
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Introduction
 and Overview</strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a> and <a
-href="User%253AClements" title="User%253AClements">Dave Clements</a><br />
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
 Participant and instructor introductions, how the GMOD project works,
 what software tools are available in GMOD, how they interoperate, what
 resources are needed to get a GMOD installation up and running, and
@@ -119,8 +117,7 @@ style="text-align: center; background-color: #ddffff;"><strong>VMware
 and BioPerl Setup</strong><br />
 <strong>Everyone</strong><br />
 Get the GMOD Summer School <a href="#System_Requirements">VMware</a>
-image up and running on your laptop, and then finish installation of <a
-href="BioPerl" title="BioPerl">BioPerl</a>.</td>
+image up and running on your laptop, and then finish installation of <a href="/wiki/BioPerl" title="BioPerl">BioPerl</a>.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -132,11 +129,9 @@ Lunch</strong></td>
 </tr>
 <tr class="even">
 <td style="background-color: #ccffff">13:00</td>
-<td style="text-align: center; background-color: #ddffff;"><strong><a
-href="Chado_Tutorial" class="mw-redirect"
+<td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado</a></strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a> and <a
-href="User%253AClements" title="User%253AClements">Dave Clements</a></td>
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -154,11 +149,9 @@ href="User%253AClements" title="User%253AClements">Dave Clements</a></td>
 </tr>
 <tr class="even">
 <td style="background-color: #ccffdd">8:30</td>
-<td style="text-align: center; background-color: #ddffdd;"><strong><a
-href="GBrowse_Tutorial"
+<td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/GBrowse_Tutorial"
 title="GBrowse Tutorial">GBrowse</a></strong><br />
-<a href="User%253AScott" title="User%253AScott">Scott Cain</a> and <a
-href="User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a> and <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -170,10 +163,9 @@ Lunch</strong></td>
 </tr>
 <tr class="even">
 <td style="background-color: #ccffdd">13:30</td>
-<td style="text-align: center; background-color: #ddffdd;"><strong><a
-href="GBrowse_syn_Tutorial" class="mw-redirect"
+<td style="text-align: center; background-color: #ddffdd;"><strong><a href="/wiki/GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
-<a href="User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
+<a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -192,15 +184,11 @@ August</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ffffbb">8:30</td>
-<td style="text-align: center; background-color: #ffffcc;"><strong><a
-href="BioMart_Tutorial"
+<td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/BioMart_Tutorial"
 title="BioMart Tutorial">BioMart</a></strong><br />
-<a href="User%253AJunjun" title="User%253AJunjun">Junjun Zhang</a> and <a
-href="User%253ASyedHaider" title="User%253ASyedHaider">Syed Haider</a><br />
-Introduction; exploring over 20 public databases through <a
-href="BioMart" title="BioMart">BioMart</a> central portal; system
-installation; accessing BioMart server via API, webservice and <a
-href="DAS" class="mw-redirect" title="DAS">DAS</a>; configuration of
+<a href="/wiki/User%253AJunjun" title="User%253AJunjun">Junjun Zhang</a> and <a href="/wiki/User%253ASyedHaider" title="User%253ASyedHaider">Syed Haider</a><br />
+Introduction; exploring over 20 public databases through <a href="/wiki/BioMart" title="BioMart">BioMart</a> central portal; system
+installation; accessing BioMart server via API, webservice and <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>; configuration of
 BioMart server including federation; demonstration of creating data
 mart.</td>
 <td></td>
@@ -213,10 +201,9 @@ on your own</strong></td>
 </tr>
 <tr class="even">
 <td style="background-color: #ffffbb">13:45</td>
-<td style="text-align: center; background-color: #ffffcc;"><strong><a
-href="Apollo_Tutorial" class="mw-redirect"
+<td style="text-align: center; background-color: #ffffcc;"><strong><a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo</a></strong><br />
-<a href="User%253AElee" title="User%253AElee">Ed Lee</a><br />
+<a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a><br />
 Overview, installation (from installers and from source), configuration,
 reading/writing data, remote analyses, and setting up a customized Java
 Web Start instance.</td>
@@ -237,22 +224,18 @@ Web Start instance.</td>
 </tr>
 <tr class="even">
 <td style="background-color: #ffddcc">8:30</td>
-<td style="text-align: center; background-color: #ffeedd;"><strong><a
-href="Artemis-Chado_Integration_Tutorial"
+<td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/Artemis-Chado_Integration_Tutorial"
 title="Artemis-Chado Integration Tutorial">Artemis-Chado
 Integration</a></strong><br />
-<a href="User%253ARobinHouston" title="User%253ARobinHouston">Robin Houston</a>,
-<a href="User%253ATimCarver" title="User%253ATimCarver">Tim Carver</a> and <a
-href="User%253ABuggy" title="User%253ABuggy">Giles Velarde</a><br />
-<a href="Artemis" title="Artemis">Artemis</a> and ACT: Overview,
-installation, configuration, reading &amp; writing data to <a
-href="Chado" class="mw-redirect" title="Chado">Chado</a>.</td>
+<a href="/wiki/User%253ARobinHouston" title="User%253ARobinHouston">Robin Houston</a>,
+<a href="/wiki/User%253ATimCarver" title="User%253ATimCarver">Tim Carver</a> and <a href="/wiki/User%253ABuggy" title="User%253ABuggy">Giles Velarde</a><br />
+<a href="/wiki/Artemis" title="Artemis">Artemis</a> and ACT: Overview,
+installation, configuration, reading &amp; writing data to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="background-color: #ffddcc">10:10</td>
-<td style="text-align: center; background-color: #ffeedd;"><strong><a
-href="JBrowse_Tutorial" class="mw-redirect"
+<td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse</a></strong><br />
 Ian Holmes</td>
 <td></td>
@@ -262,8 +245,7 @@ Ian Holmes</td>
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Wrapup
 and Resources</strong><br />
-<a href="User%253AClements" title="User%253AClements">Dave Clements</a> and <a
-href="User%253AScott" title="User%253AScott">Scott Cain</a></td>
+<a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a> and <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -279,8 +261,7 @@ Ends</td>
 <tr class="odd">
 <td style="color: #aaaaaa">13:30-<br />
 18:00</td>
-<td colspan="2" style="text-align: center; color: #aaaaaa;"><a
-href="August_2009_GMOD_Meeting" title="August 2009 GMOD Meeting"><span
+<td colspan="2" style="text-align: center; color: #aaaaaa;"><a href="/wiki/August_2009_GMOD_Meeting" title="August 2009 GMOD Meeting"><span
 style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 </tr>
 <tr class="even">
@@ -294,8 +275,7 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 <tr class="even">
 <td style="color: #aaaaaa">8:30-<br />
 18:00</td>
-<td colspan="2" style="text-align: center; color: #aaaaaa;"><a
-href="August_2009_GMOD_Meeting" title="August 2009 GMOD Meeting"><span
+<td colspan="2" style="text-align: center; color: #aaaaaa;"><a href="/wiki/August_2009_GMOD_Meeting" title="August 2009 GMOD Meeting"><span
 style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 </tr>
 </tbody>
@@ -305,31 +285,31 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 
 | Instructor | GMOD Contribution | Affiliation |
 |----|----|----|
-| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](User%253ATimCarver "User%253ATimCarver") | [Artemis](Artemis "Artemis") lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](User%253ASyedHaider "User%253ASyedHaider") | [BioMart](BioMart "BioMart") developer | <a href="http://www.ebi.ac.uk/" class="external text"
-rel="nofollow">European Bioinformatics Institute</a> | Ian Holmes | [JBrowse](JBrowse.1 "JBrowse") PI | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [Robin Houston](User%253ARobinHouston "User%253ARobinHouston") | [Artemis](Artemis "Artemis") manager | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Ed Lee](User%253AElee "User%253AElee") | Lead [Apollo](Apollo.1 "Apollo") developer | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](User%253AMckays "User%253AMckays") | Lead [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") developer, [GBrowse](GBrowse.1 "GBrowse") developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Giles Velarde](User%253ABuggy "User%253ABuggy") | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Junjun Zhang](User%253AJunjun "User%253AJunjun") | [BioMart](BioMart "BioMart") developer | <a href="http://www.oicr.on.ca/" class="external text"
+| [Scott Cain](/wiki/User%253AScott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
+rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](/wiki/User%253ATimCarver) | [Artemis](/wiki/Artemis) lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](/wiki/User%253AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
+rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](/wiki/User%253ASyedHaider) | [BioMart](/wiki/BioMart) developer | <a href="http://www.ebi.ac.uk/" class="external text"
+rel="nofollow">European Bioinformatics Institute</a> | Ian Holmes | [JBrowse](/wiki/JBrowse.1) PI | <a href="http://berkeley.edu" class="external text"
+rel="nofollow">University of California, Berkeley</a> | [Robin Houston](/wiki/User%253ARobinHouston) | [Artemis](/wiki/Artemis) manager | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Ed Lee](/wiki/User%253AElee) | Lead [Apollo](/wiki/Apollo.1) developer | <a href="http://www.berkeleybop.org/" class="external text"
+rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%253AMckays) | Lead [GBrowse_syn](/wiki/GBrowse_syn.1) developer, [GBrowse](/wiki/GBrowse.1) developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
+Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User%253ABuggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
+rel="nofollow">Wellcome Trust Sanger Institute</a> | [Junjun Zhang](/wiki/User%253AJunjun) | [BioMart](/wiki/BioMart) developer | <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">OICR</a> |
 
 ## Prerequisites
 
 *The course requires a minimal level of Linux systems administration
 knowledge* (see [Computing
-Requirements](Computing_Requirements "Computing Requirements")). By "a
+Requirements](/wiki/Computing_Requirements)). By "a
 minimal level of Linux systems administration knowledge" we mean that
 participants should be comfortable installing packages under Linux. *A
 good benchmark for this level of knowledge is that you should be able to
 get a basic [GBrowse
-installation](GBrowse_Install_HOWTO "GBrowse Install HOWTO") (that is,
-GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
+installation](/wiki/GBrowse_Install_HOWTO) (that is,
+GBrowse without [MySQL](/wiki/MySQL)) up and running with the example
 GBrowse data.* This also requires installing Apache, and
-[BioPerl](BioPerl "BioPerl") and all its dependencies.
+[BioPerl](/wiki/BioPerl) and all its dependencies.
 
 **Getting a basic GBrowse up and running on your system will be assigned
 as homework to be done prior to the course's start.**
@@ -358,9 +338,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Linux" />
 
 A free VMware player is available for [Microsoft
-Windows](Category%253AWindows "Category%253AWindows") and
-[Linux](Category%253ALinux "Category%253ALinux") [operating
-systems](Glossary#Operating_System "Glossary") from
+Windows](/wiki/Category%253AWindows) and
+[Linux](/wiki/Category%253ALinux) [operating
+systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
 rel="nofollow">VMware</a>. You will need to register to download it.
 
@@ -376,7 +356,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apple" /></a>
 
 There is no free VMware player that runs *directly* under [Mac OS
-X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
+X](/wiki/Category%253AMac_OS_X). However, there are several
 other options, *all of which require an Intel Mac*:
 
 
@@ -420,7 +400,7 @@ Tuition for the course was £95. Participants were responsible for their
 own travel and living expenses.
 
 Tuition for this course did not include registration for the [August
-2009 GMOD Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting").
+2009 GMOD Meeting](/wiki/August_2009_GMOD_Meeting).
 The meeting had a separate registration cost from the summer school.
 
 ## Location
@@ -436,12 +416,12 @@ rel="nofollow">Oxford, United Kingdom</a>.
 ## Transportation, Lodging, Meals
 
 See the
-[Transportation](GMOD_Europe_2009#Transportation "GMOD Europe 2009") and
-[Lodging](GMOD_Europe_2009#Lodging "GMOD Europe 2009") sections of the
-[GMOD Europe 2009](GMOD_Europe_2009 "GMOD Europe 2009") page for
+[Transportation](/wiki/GMOD_Europe_2009#Transportation) and
+[Lodging](/wiki/GMOD_Europe_2009#Lodging) sections of the
+[GMOD Europe 2009](/wiki/GMOD_Europe_2009) page for
 information on transport and lodging for both the summer school and
 [August 2009 GMOD
-Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting").
+Meeting](/wiki/August_2009_GMOD_Meeting).
 
 ## Sponsors
 
@@ -464,7 +444,7 @@ events.
 
 
 **Q: Would you recommend
-<a href="GMOD_Summer_School" class="mw-redirect"
+<a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
 | No  | Yes, with reservations | Yes | No opinion |

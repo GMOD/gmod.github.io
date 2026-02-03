@@ -13,21 +13,21 @@ available.***
 
 VMware images still exist in GMOD in several places. See:
 
-- [VMware HOWTO](VMware_HOWTO "VMware HOWTO")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
+- [VMware HOWTO](/wiki/VMware_HOWTO)
+- [Tutorials](/wiki/Category%253ATutorials)
 - [Community Annotation
-  System](Community_Annotation_System "Community Annotation System")
+  System](/wiki/Community_Annotation_System)
 
 Initial versions of GMOD virtual machines have been uploaded/documented
 at the
-<a href="VMWare_HOWTO" class="mw-redirect" title="VMWare HOWTO">VMWare
+<a href="/wiki/VMWare_HOWTO" class="mw-redirect" title="VMWare HOWTO">VMWare
 HOWTO</a>. The [Community Annotation
-System](Community_Annotation_System "Community Annotation System") is an
+System](/wiki/Community_Annotation_System) is an
 example GMOD virtual machine.
 
 This page is for discussion on creating a GMOD virtual machine. The idea
 was initiated by an email to the GMOD-devel, schema and gbrowse [mailing
-lists](GMOD_Mailing_Lists "GMOD Mailing Lists"):
+lists](/wiki/GMOD_Mailing_Lists):
 
 Hello,
 
@@ -36,7 +36,7 @@ for creating virtual machines. I am excited about the potential uses for
 these virtual machines for several purposes, among them the ability to
 create a consistent platform for teaching (like giving a classroom a
 disk with the VMware player and a linux VM with
-[GBrowse](GBrowse.1 "GBrowse") preinstalled to give a tutorial), and for
+[GBrowse](/wiki/GBrowse.1) preinstalled to give a tutorial), and for
 creating virtual machines that could be used as a 'test server' that
 people interested in GMOD software could get and try out without having
 to set up a server to do it. That is what this email is about.
@@ -72,18 +72,18 @@ Any thoughts on these?
 Thanks for your time, Scott
 
 - Ian Holmes suggested their extensions to GBrowse
-  ([AJAX](Category%253AAJAX "Category%253AAJAX") and wiki).
-- Eric Just suggested [Modware](Modware "Modware").
+  ([AJAX](/wiki/Category%253AAJAX) and wiki).
+- Eric Just suggested [Modware](/wiki/Modware).
 
 ## About 'when released'
 
 - Work is on going on Chado core components, notably getting a conversion
-  from GFF3 to [chadoxml](Chado_XML "Chado XML") which will require
+  from GFF3 to [chadoxml](/wiki/Chado_XML) which will require
   changes to XORT.
 - There have been a few fixes to the
-  <a href="GBrowse_adaptors" class="mw-redirect"
+  <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
   title="GBrowse adaptors">chado adaptor in GBrowse</a>, so it should
   get a new release soon
 
 Also see [Community Annotation
-System](Community_Annotation_System "Community Annotation System").
+System](/wiki/Community_Annotation_System).

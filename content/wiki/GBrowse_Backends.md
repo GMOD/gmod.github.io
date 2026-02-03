@@ -3,7 +3,7 @@ title: "GBrowse Backends"
 ---
 # GBrowse Backends
 
-This page describes the [GBrowse](GBrowse.1 "GBrowse") database back
+This page describes the [GBrowse](/wiki/GBrowse.1) database back
 ends. It is incomplete.
 
   Bio::DB::SeqFeature::Store
@@ -30,17 +30,16 @@ ends. It is incomplete.
 # The Bio::DB::SeqFeature::Store Adaptor
 
 This is a quick and easy adaptor to use. It allows you to load both
-[GFF2](GFF2 "GFF2") and [GFF3](GFF3 "GFF3") formatted files, and
+[GFF2](/wiki/GFF2) and [GFF3](/wiki/GFF3) formatted files, and
 provides storage via flat files, BerkeleyDB-formatted files, and
-[MySQL](MySQL "MySQL") and [PostgreSQL](PostgreSQL "PostgreSQL")
+[MySQL](/wiki/MySQL) and [PostgreSQL](/wiki/PostgreSQL)
 databases.
 
 ## The GFF3 Format
 
 An increasing number of model organism databases are distributing genome
-annotation in [GFF3](GFF3 "GFF3") format. An example of this format can
-be found at <a
-href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/saccharomyces_verevisiae.gff"
+annotation in [GFF3](/wiki/GFF3) format. An example of this format can
+be found at <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/saccharomyces_verevisiae.gff"
 class="external text" rel="nofollow">SGD</a>.
 
 ## Using Bio::DB::SeqFeature::Store with Flat Files
@@ -50,7 +49,7 @@ Apache web server. Copy into it one or more GFF3 files containing
 annotations for the genome of interest.
 
 Create a [datasource-specific configuration
-file](GBrowse_2.0_HOWTO#Data_Source_Configuration_Files "GBrowse 2.0 HOWTO")
+file](/wiki/GBrowse_2.0_HOWTO#Data_Source_Configuration_Files)
 for GBrowse with a \[database\] stanza like this one:
 
     [my_data:database]
@@ -67,10 +66,10 @@ The configuration file's \[GENERAL\] section should contain the entry
 "database = my_data".
 
 If you wish to create tracks that display or manipulate DNA sequences,
-you will need to add [FASTA](Glossary#FASTA "Glossary") files to this
+you will need to add [FASTA](/wiki/Glossary#FASTA) files to this
 directory. The FASTA files should have one DNA entry for each
 chromosome, contig, or other sequence used as reference points by the
-[GFF3](GFF3 "GFF3") files. For example:
+[GFF3](/wiki/GFF3) files. For example:
 
     >chr1
     CCACACCACACCCACACACCCACACACCACACCACACACCACACCACACCCACACACACA
@@ -106,7 +105,7 @@ writeable:
 
 ## Using Bio::DB::SeqFeature::Store with the BerkeleyDB Backend
 
-If your [GFF3](GFF3 "GFF3") files get much larger than a 1000 features
+If your [GFF3](/wiki/GFF3) files get much larger than a 1000 features
 or so, GBrowse will begin to slow down. You can increase performance by
 using the BerkeleyDB backend. In exactly the way that you did with the
 in-memory version, set up a database directory containing to be
@@ -128,7 +127,7 @@ files at any time, and the indexes will be rebuilt as necessary.
 Note that for the BerkeleyDB backend to work at all, the database
 directory **must** be writeable by the Apache user.
 
-## Using Bio::DB::SeqFeature::Store with the [MySQL](MySQL "MySQL") Backend
+## Using Bio::DB::SeqFeature::Store with the [MySQL](/wiki/MySQL) Backend
 
 More preparation is required for this backend. You will need to use the
 mysql command-line tool to create a new empty database, grant yourself
@@ -178,7 +177,7 @@ use a different user account. Mac OSX uses "www", Fedora Core uses
 "apache" and Ubuntu uses "www-data." In the instructions that follow,
 replace 'nobody' with the appropriate Apache account name._
 
-You will need an installation of [MySQL](MySQL "MySQL") for this
+You will need an installation of [MySQL](/wiki/MySQL) for this
 section. Using the mysql command line, create a database (called "yeast"
 in the synopsis above), and ensure that you have update and file
 privileges on it. The example above assumes that you have a username of
@@ -195,13 +194,13 @@ account.
 
 The next step is to load the database with data. This is accomplished by
 loading the database from a tab-delimited file containing the genomic
-annotations in [GFF](GFF "GFF") format. The [BioPerl](BioPerl "BioPerl")
+annotations in [GFF](/wiki/GFF) format. The [BioPerl](/wiki/BioPerl)
 distribution comes with three tools for loading Bio::DB::GFF databases:
 
 bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
-[MySQL](MySQL "MySQL") server is located on another host.
+[MySQL](/wiki/MySQL) server is located on another host.
 bp_bulk_load_gff.pl
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
@@ -221,7 +220,7 @@ subdirectory `scripts/Bio-DB-GFF`. If you requested that BioPerl scripts
 be installed during installation, they will also be found in your
 command path.
 
-For testing purposes, this distribution includes a [GFF](GFF "GFF") file
+For testing purposes, this distribution includes a [GFF](/wiki/GFF) file
 with yeast genome annotations. The file can be found in the `test_data`
 subdirectory. If the load is successful, you should see a message
 indicating that 13298 features were successfully loaded.
@@ -260,7 +259,7 @@ _IF YOU GET AN ERROR_ examine the Apache server error log (depending on
 how Apache was installed, it may be located in
 `/usr/local/apache/logs/`, `/var/log/httpd/`, `/var/log/apache`, or
 elsewhere). Usually there will be an informative error message in the
-error log. The most common problem is [MySQL](MySQL "MySQL") password or
+error log. The most common problem is [MySQL](/wiki/MySQL) password or
 permissions problems.
 
 # Bio::DB::Das::Chado
@@ -281,4 +280,4 @@ Scott needs to fill this in.
 
 In order to achieve the best possible performance when using this
 adaptor, please read [PostgreSQL Performance
-Tips](PostgreSQL_Performance_Tips "PostgreSQL Performance Tips").
+Tips](/wiki/PostgreSQL_Performance_Tips).

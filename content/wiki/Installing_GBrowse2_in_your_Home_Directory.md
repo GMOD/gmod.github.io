@@ -23,7 +23,7 @@ Once you have local::lib correctly installed...
 
 _I believe there must be a trick to configuring cpan at this point that
 is left out of this narrative. It is probably in the lib::local docs._
-[Scott](User%253AScott "User%253AScott") 18:47, 3 June 2011 (UTC)
+[Scott](/wiki/User%253AScott) 18:47, 3 June 2011 (UTC)
 
 Test that cpan is working for you as a non-root user (install a random
 module or two).
@@ -34,7 +34,7 @@ rel="nofollow">[2]</a>. This can be painful. The best trick is to
 install all the dependencies first, then install BioPerl.
 
 Third, follow the GBrowse install instructions (using cpan
-again)<a href="GBrowse_2.0_HOWTO" class="external autonumber"
+again)<a href="/wiki/GBrowse_2.0_HOWTO" class="external autonumber"
 rel="nofollow">[3]</a>. It should be easy to grab any prerequisites
 (using cpan).
 

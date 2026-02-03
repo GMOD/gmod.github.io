@@ -4,7 +4,7 @@ title: "News/GMOD Community Survey Results"
 # News/GMOD Community Survey Results
 
 The [results of the 2008 GMOD Community
-Survey](../2008_GMOD_Community_Survey "2008 GMOD Community Survey") are
+Survey](../2008_GMOD_Community_Survey) are
 now available online. The survey was taken by 89 respondents. The survey
 includes questions on:
 
@@ -39,12 +39,12 @@ Help Desk</a> know if you have any questions about the survey.
 
 Thanks,
 
-[Dave C](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave C](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2008/11/20*
+*Posted to the [GMOD News](../GMOD_News) on 2008/11/20*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

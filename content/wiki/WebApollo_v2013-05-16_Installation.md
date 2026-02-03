@@ -91,10 +91,10 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
     - DBD module for your specific RDBMS \[officially supported: DBD::Pg
       for PostgresSQL\]
 - Data generation pipeline (see [JBrowse
-  prerequisites](JBrowse.1#Prerequisites "JBrowse") for more information
+  prerequisites](/wiki/JBrowse.1#Prerequisites) for more information
   on its prerequisites)
   - Perl modules
-    - [BioPerl 1.6](BioPerl "BioPerl")
+    - [BioPerl 1.6](/wiki/BioPerl)
     - <a href="http://search.cpan.org/perldoc?JSON" class="external text"
       rel="nofollow">JSON</a>
     - <a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
@@ -1081,7 +1081,7 @@ users to download those files). The script is in
 
 The Chado data adapter will allow writing the current annotations to a
 Chado database. You can get more information about the Chado at
-<a href="Chado" class="external text" rel="nofollow">GMOD Chado page</a>.
+<a href="/wiki/Chado" class="external text" rel="nofollow">GMOD Chado page</a>.
 The configuration is stored in
 `$TOMCAT_WEBAPPS_DIR/WebApollo/config/chado_config.xml`. Let’s take a
 look at the configuration file:
@@ -1171,7 +1171,7 @@ Password for the provided user name.
 ## Data generation
 
 The steps for generating data (in particular static data) are mostly
-similar to [JBrowse](JBrowse.1 "JBrowse") data generation steps, with
+similar to [JBrowse](/wiki/JBrowse.1) data generation steps, with
 some extra steps required. The scripts for data generation reside in
 `$TOMCAT_WEBAPPS_DIR/WebApollo/jbrowse/bin`. Let's go into WebApollo's
 JBrowse directory.
@@ -1259,7 +1259,7 @@ styles for maker.gff, the above could instead be shortened to:
 See the [Customizing features](#Customizing_features) section for more
 information on CSS styles. There are also many other configuration
 options for flatfile-to-json.pl, see [JBrowse data
-formatting](JBrowse_Configuration_Guide#Data_Formatting "JBrowse Configuration Guide")
+formatting](/wiki/JBrowse_Configuration_Guide#Data_Formatting)
 for more information.
 
 #### GFF3 with match/match_part features

@@ -17,41 +17,41 @@ The following 11 pages are in this category, out of 11 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="August_2009_GMOD_Meeting"
+<li><a href="/wiki/August_2009_GMOD_Meeting"
 title="August 2009 GMOD Meeting">August 2009 GMOD Meeting</a></li>
 </ul>
 <h3 id="b">B</h3>
 <ul>
-<li><a href="Template:BioPerl"
+<li><a href="/wiki/Template:BioPerl"
 title="Template:BioPerl">Template:BioPerl</a></li>
-<li><a href="BioPerl" title="BioPerl">BioPerl</a></li>
-<li><a href="Bioperl_Pipeline" title="Bioperl Pipeline">Bioperl
+<li><a href="/wiki/BioPerl" title="BioPerl">BioPerl</a></li>
+<li><a href="/wiki/Bioperl_Pipeline" title="Bioperl Pipeline">Bioperl
 Pipeline</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="g">G</h3>
 <ul>
-<li><a href="GBrowse_(DasI)_Presentation"
+<li><a href="/wiki/GBrowse_(DasI)_Presentation"
 title="GBrowse (DasI) Presentation">GBrowse (DasI) Presentation</a></li>
-<li><a href="GBrowse_Adaptors" title="GBrowse Adaptors">GBrowse
+<li><a href="/wiki/GBrowse_Adaptors" title="GBrowse Adaptors">GBrowse
 Adaptors</a></li>
-<li><a href="GMOD_Middleware" title="GMOD Middleware">GMOD
+<li><a href="/wiki/GMOD_Middleware" title="GMOD Middleware">GMOD
 Middleware</a></li>
 </ul>
 <h3 id="i">I</h3>
 <ul>
-<li><a href="Installing_GBrowse2_in_your_Home_Directory"
+<li><a href="/wiki/Installing_GBrowse2_in_your_Home_Directory"
 title="Installing GBrowse2 in your Home Directory">Installing GBrowse2
 in your Home Directory</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="m">M</h3>
 <ul>
-<li><a href="Mimosa" title="Mimosa">Mimosa</a></li>
-<li><a href="Modware_Presentation" title="Modware Presentation">Modware
+<li><a href="/wiki/Mimosa" title="Mimosa">Mimosa</a></li>
+<li><a href="/wiki/Modware_Presentation" title="Modware Presentation">Modware
 Presentation</a></li>
 </ul>
 <h3 id="w">W</h3>
 <ul>
-<li><a href="Wiki_linking_style_guide"
+<li><a href="/wiki/Wiki_linking_style_guide"
 title="Wiki linking style guide">Wiki linking style guide</a></li>
 </ul></td>
 </tr>
@@ -79,7 +79,7 @@ The following 3 files are in this category, out of 3 total.
 
 
   [04-Stajich NESCENT
-  GMO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf "File:04-Stajich NESCENT GMOD.pdf")
+  GMO...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf)
   1.66 MB
 
 
@@ -102,7 +102,7 @@ The following 3 files are in this category, out of 3 total.
 
 
 
-  [BioPerl logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg "File:BioPerl logo.jpg")
+  [BioPerl logo.jpg](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5d/BioPerl_logo.jpg)
   3 KB
 
 
@@ -126,5 +126,5 @@ The following 3 files are in this category, out of 3 total.
 
 
   [Stajich GMOD
-  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf "File:Stajich GMOD 2006-06-30.pdf")
+  2006-06-3...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf)
   2.36 MB

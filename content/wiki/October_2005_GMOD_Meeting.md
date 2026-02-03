@@ -55,7 +55,7 @@ Lunch
 1:30
 
 [architecture working
-group](Summary_of_Fall_2005_CHSL_Meeting "Summary of Fall 2005 CHSL Meeting"):
+group](/wiki/Summary_of_Fall_2005_CHSL_Meeting):
 Review and revisit what we have done
 
 2:00
@@ -110,7 +110,7 @@ package for release</td>
 ## Meeting Report
 
 Meeting report for October, 2005 GMOD meeting. This is an outline by
-[Scott Cain](User%253AScott "User%253AScott").
+[Scott Cain](/wiki/User%253AScott).
 
 Topics covered:
 
@@ -124,22 +124,22 @@ Topics covered:
   - Some discussion of using a content management tool like
     <a href="http://drupal.org" class="external text"
     rel="nofollow">Drupal</a> to handle some of the page display tasks
-    for a MOD and use [turnkey](Turnkey "Turnkey") only as a tool to
+    for a MOD and use [turnkey](/wiki/Turnkey) only as a tool to
     access and display
-    <a href="Chado" class="mw-redirect" title="Chado">chado</a> related
+    <a href="/wiki/Chado" class="mw-redirect" title="Chado">chado</a> related
     data.
 - Architecture
   - Testing recommendations
   - Volunteers to examine [Java ORMs Hibernate and
-    iBatis](Category%253AMiddleware "Category%253AMiddleware")
+    iBatis](/wiki/Category%253AMiddleware)
   - How to get various chado instances to conform to a standard method
     of encoding data? Documentation: Joshua (TIGR) volunteered to
     document how TIGR is using chado to encode data and make it public
     as a first step in a collaborative effort among current users of
     chado (including TIGR,
-    [FlyBase](Category%253AFlyBase "Category%253AFlyBase"), and GMOD
+    [FlyBase](/wiki/Category%253AFlyBase), and GMOD
     developers).
-- [www.gmod.org](Main_Page "Main Page")
+- [www.gmod.org](/wiki/Main_Page)
   - In the evening of the first day, Allen Day, Brian O'Connor and Scott
     Cain created a prototype website with the purpose of improving the
     function of the site. It is based on an open source content
@@ -163,18 +163,18 @@ Topics covered:
     implementations
   - Talk to lincoln about identifying a journal for publication
 - demos
-  - <a href="Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
+  - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
     tool</a>
-  - Princeton/[SGD](Category%253ASGD "Category%253ASGD") web-based data curation
+  - Princeton/[SGD](/wiki/Category%253ASGD) web-based data curation
     tool (talks directly to chado)
-  - [DAS2](Distributed_Annotation_System "Distributed Annotation System")
+  - [DAS2](/wiki/Distributed_Annotation_System)
     java tool for querying [chado microarray
-    data](Chado_Mage_Module "Chado Mage Module")
+    data](/wiki/Chado_Mage_Module)
   - community module for chado
     (<a href="http://xenbase.org" class="external text"
     rel="nofollow">XenBase</a>\])
   - PuMA, java tool for pubmed query building
-  - [ApiDB](Category%253AApiDB "Category%253AApiDB") [GBrowse for
-    synteny](SynView "SynView")
+  - [ApiDB](/wiki/Category%253AApiDB) [GBrowse for
+    synteny](/wiki/SynView)
   - flybase gbrowse for synteny
   - flybase query builder

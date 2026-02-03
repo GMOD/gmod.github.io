@@ -38,12 +38,12 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/300px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x"
 width="200" height="119" alt="GMOD Hackathon" />
 
-- [Tripal](Tripal.1 "Tripal")
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-- [JBrowse](JBrowse.1 "JBrowse") (1 and 2)
-- [Apollo](Apollo.1 "Apollo")
-- [Galaxy](Galaxy.1 "Galaxy")
-- [InterMine](InterMine "InterMine")
+- [Tripal](/wiki/Tripal.1)
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+- [JBrowse](/wiki/JBrowse.1) (1 and 2)
+- [Apollo](/wiki/Apollo.1)
+- [Galaxy](/wiki/Galaxy.1)
+- [InterMine](/wiki/InterMine)
 
 We already know that there will be Tripal, Chado, Apollo and JBrowse
 developers present.
@@ -72,4 +72,4 @@ Friday:
 
 
 
-*Posted to the [GMOD News](GMOD_News "GMOD News") on 2020/01/08*
+*Posted to the [GMOD News](/wiki/GMOD_News) on 2020/01/08*

@@ -3,10 +3,10 @@ title: "GMOD Malaysia 2014/WebApollo Tutorial"
 ---
 # GMOD Malaysia 2014/WebApollo Tutorial
 
-This [WebApollo](../WebApollo.1 "WebApollo") tutorial was presented by
-[Scott Cain](../User%253AScott "User%253AScott") and [User%253AMichael
-Campbell](../User%253AMichael_Campbell "User%253AMichael Campbell") at [GMOD
-Malaysia 2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February
+This [WebApollo](../WebApollo.1) tutorial was presented by
+[Scott Cain](../User%253AScott) and [User%253AMichael
+Campbell](../User%253AMichael_Campbell) at [GMOD
+Malaysia 2014](../GMOD_Malaysia_2014.1), February
 2014.
 
 The most recent WebApollo tutorial can be found at the
@@ -411,10 +411,10 @@ styles are located in
     jbrowse/data/trackList.json
 
 
-- [Tutorials](../Category%253ATutorials "Category%253ATutorials")
+- [Tutorials](../Category%253ATutorials)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](../Property%253AHas_topic "Property:Has topic") | [WebApollo](../WebApollo.1 "WebApollo") |
+| [Has topic](../Property%253AHas_topic) | [WebApollo](../WebApollo.1) |

@@ -4,7 +4,7 @@ title: "Modware Presentation"
 # Modware Presentation
 
 Eric Just, Senior Bioinformatics Scientist,
-[dictyBase](Category%253ADictyBase "Category%253ADictyBase"):
+[dictyBase](/wiki/Category%253ADictyBase):
 <a href="http://dictybase.org" class="external free"
 rel="nofollow">http://dictybase.org</a> Center for Genetic Medicine,
 Northwestern University. This is an edited version of
@@ -64,15 +64,15 @@ title="Modware.pdf">Eric's presentation</a>.
 
 - Each feature type requires different behavior
 - Want to leave schema semantics out of application
-- Want to leverage work done in [BioPerl](BioPerl "BioPerl")
+- Want to leverage work done in [BioPerl](/wiki/BioPerl)
 - Re-use code developed for common use cases
-- DictyBase is using a superset of [Modware](Modware "Modware")
+- DictyBase is using a superset of [Modware](/wiki/Modware)
   - Modware uses this code, but strips out all non-standard GMOD code
 - Provides nice interface over stock GMOD installation
 
 ##### What is in the Feature Table?
 
-The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+The core of <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 
 - Chromosome
 - Contig
@@ -92,7 +92,7 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
   - Abstract factory for various feature types
 - Lazy : information is only retrieved when you ask for it, but cached
   for speedy retrieval the next time it is required
-- Uses [BioPerl](BioPerl "BioPerl") and its objects
+- Uses [BioPerl](/wiki/BioPerl) and its objects
   - Each different feature subclass has a bioperl() method that returns
     an appropriate BioPerl object.
   - Bioperl object manipulation used to update feature coordinates
@@ -107,11 +107,11 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 ##### Architectural Overview
 
 - Object-oriented Perl interface to
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
-- Built on top of [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI")
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
+- Built on top of [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI)
 - Connection handled by GMOD
 - Database transactions supported
-- [BioPerl](BioPerl "BioPerl") used to represent and manipulate sequence
+- [BioPerl](/wiki/BioPerl) used to represent and manipulate sequence
   and feature structure
 - ‘Lazy’ evaluation
 
@@ -481,10 +481,10 @@ sub Write_search_results {
   - <a href="http://gmod-ware.sourceforge.net/doc/" class="external free"
     rel="nofollow">http://gmod-ware.sourceforge.net/doc/</a>
   - POD for all methods
-- If <a href="Chado" class="mw-redirect" title="Chado">Chado</a> changes
+- If <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> changes
   then...
-  - Manually change [Modware](Modware "Modware") or ...
-  - [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI") will automatically
+  - Manually change [Modware](/wiki/Modware) or ...
+  - [Chado%253A%253AAutoDBI](/wiki/Chado%253A%253AAutoDBI) will automatically
     adjust to the change, depends on the change
 - Can set multiple connections through AutoDBI's `set_connection`
 
@@ -514,12 +514,12 @@ sub Write_search_results {
 
 - Rex Chisholm, PhD
 - Warren Kibbe, PhD
-- [Scott Cain](User%253AScott "User%253AScott")
+- [Scott Cain](/wiki/User%253AScott)
 - Brian O’connor
 - Sohel Merchant
 - Petra Fey
 - Pascale Gaudet,
 - Karen Pilcher
-- [BioPerl](BioPerl "BioPerl")
+- [BioPerl](/wiki/BioPerl)
 - GMOD
-- [SGD](Category%253ASGD "Category%253ASGD")
+- [SGD](/wiki/Category%253ASGD)

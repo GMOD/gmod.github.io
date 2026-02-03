@@ -24,7 +24,7 @@ species, as such it is fairly simple.
 # More Information
 
 See the page on the related [Phylogeny
-module](Chado_Phylogeny_Module "Chado Phylogeny Module"). The phylogeny
+module](/wiki/Chado_Phylogeny_Module). The phylogeny
 module is designed for phylogenetic trees and taxonomies.
 
 # Tables
@@ -102,14 +102,14 @@ organism Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables")
-- [feature](Chado_Tables#Table:_feature "Chado Tables")
-- [library](Chado_Tables#Table:_library "Chado Tables")
-- [organism_dbxref](Chado_Tables#Table:_organism_dbxref "Chado Tables")
-- [organismprop](Chado_Tables#Table:_organismprop "Chado Tables")
-- [phylonode_organism](Chado_Tables#Table:_phylonode_organism "Chado Tables")
-- [stock](Chado_Tables#Table:_stock "Chado Tables")
-- [wwwuser_organism](Chado_Tables#Table:_wwwuser_organism "Chado Tables")
+- [biomaterial](/wiki/Chado_Tables#Table:_biomaterial)
+- [feature](/wiki/Chado_Tables#Table:_feature)
+- [library](/wiki/Chado_Tables#Table:_library)
+- [organism_dbxref](/wiki/Chado_Tables#Table:_organism_dbxref)
+- [organismprop](/wiki/Chado_Tables#Table:_organismprop)
+- [phylonode_organism](/wiki/Chado_Tables#Table:_phylonode_organism)
+- [stock](/wiki/Chado_Tables#Table:_stock)
+- [wwwuser_organism](/wiki/Chado_Tables#Table:_wwwuser_organism)
 
 ------------------------------------------------------------------------
 
@@ -120,8 +120,8 @@ Tables referencing this one via Foreign Key Constraints:
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | organism_dbxref_id | serial | *PRIMARY KEY* |
-| [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| [organism](/wiki/Chado_Tables#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 organism_dbxref Structure
 
@@ -136,8 +136,8 @@ Tag-value properties - follows standard chado model.
 | FK | Name | Type | Description |
 |----|----|----|----|
 |  | organismprop_id | serial | *PRIMARY KEY* |
-| [organism](Chado_Tables#Table:_organism "Chado Tables") | organism_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [organism](/wiki/Chado_Tables#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | rank |
 | integer | *UNIQUE#1 NOT NULL* |  |  |
 

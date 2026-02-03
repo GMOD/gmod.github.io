@@ -25,7 +25,7 @@ Showing 5 pages using this property.
 </thead>
 <tbody>
 <tr class="odd">
-<td class="smwpropname"><a href="BioDIG.1"
+<td class="smwpropname"><a href="/wiki/BioDIG.1"
 title="BioDIG">BioDIG</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://github.com/idoerg/BioDIG"
 class="external"
@@ -36,7 +36,7 @@ rel="nofollow">http://github.com/idoerg/BioDIG</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="GBrowse_syn.1"
+<td class="smwpropname"><a href="/wiki/GBrowse_syn.1"
 title="GBrowse syn">GBrowse syn</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="https://github.com/GMOD/GBrowse"
 class="external"
@@ -47,7 +47,7 @@ rel="nofollow">https://github.com/GMOD/GBrowse</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="Pathway_Tools.1"
+<td class="smwpropname"><a href="/wiki/Pathway_Tools.1"
 title="Pathway Tools">Pathway Tools</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a href="http://biocyc.org/download.shtml"
 class="external"
@@ -58,7 +58,7 @@ rel="nofollow">http://biocyc.org/download.shtml</a>  </td>
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="WebGBrowse.1"
+<td class="smwpropname"><a href="/wiki/WebGBrowse.1"
 title="WebGBrowse">WebGBrowse</a> <span class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html"
@@ -70,7 +70,7 @@ rel="nofollow">http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html</a> �
 <td></td>
 </tr>
 <tr class="odd">
-<td class="smwpropname"><a href="XORT.1" title="XORT">XORT</a> <span
+<td class="smwpropname"><a href="/wiki/XORT.1" title="XORT">XORT</a> <span
 class="smwbrowse"></span></td>
 <td class="smwprops"><a
 href="http://sourceforge.net/projects/gmod/files/OldFiles/"
@@ -83,4 +83,4 @@ rel="nofollow">http://sourceforge.net/projects/gmod/files/OldFiles/</a>  </td>
 </span>
 
 |----|----|
-| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](/wiki/Property%253AHas_type)</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

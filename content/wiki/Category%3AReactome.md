@@ -9,7 +9,7 @@ This category contains only the following page.
 
 ### G
 
-- [GSoC](GSoC "GSoC")
+- [GSoC](/wiki/GSoC)
 
 Retrieved from
 "[http://gmod.org/wiki/Category%253AReactome](/wiki/Category%253AReactome)"

@@ -4,13 +4,13 @@ title: "News/New Topic-Based Mailing Lists"
 # News/New Topic-Based Mailing Lists
 
 Two new [GMOD mailing
-lists](../GMOD_Mailing_Lists#Topic_Based_Lists "GMOD Mailing Lists")
+lists](../GMOD_Mailing_Lists#Topic_Based_Lists)
 have been created as a result of the [GMOD Evo
-Hackathon](../GMOD_Evo_Hackathon "GMOD Evo Hackathon") and subsequent <a
+Hackathon](../GMOD_Evo_Hackathon) and subsequent <a
 href="http://gmod.827538.n3.nabble.com/New-Mailing-Lists-GMOD-PhenDiver-GMOD-CoGePhy-td2052650.html"
 class="external text" rel="nofollow">feedback from the community</a>.
 The two lists are both based on [research
-topics](../GMOD_Mailing_Lists#Topic_Based_Lists "GMOD Mailing Lists"),
+topics](../GMOD_Mailing_Lists#Topic_Based_Lists),
 rather than on specific components:
 
 | Name | List Link | Topics | Archive(s) |
@@ -31,12 +31,12 @@ before!
 
 Thanks,
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/08*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/08*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

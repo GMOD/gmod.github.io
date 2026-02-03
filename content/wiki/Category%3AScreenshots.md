@@ -3,7 +3,7 @@ title: "Category%253AScreenshots"
 ---
 # Category%253AScreenshots
 
-Screenshots of [GMOD Components](GMOD_Components "GMOD Components"),
+Screenshots of [GMOD Components](/wiki/GMOD_Components),
 GMOD user web sites, and anything else.
 
 ## Pages in category "Screenshots"
@@ -12,7 +12,7 @@ This category contains only the following page.
 
 ### A
 
-- [AWS walkthrough](AWS_walkthrough "AWS walkthrough")
+- [AWS walkthrough](/wiki/AWS_walkthrough)
 
 ## Media in category "Screenshots"
 
@@ -35,7 +35,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [GBrowse
-  screenshot1.png](File:GBrowse_screenshot1.png "File:GBrowse screenshot1.png")
+  screenshot1.png](/wiki/File:GBrowse_screenshot1.png)
   24 KB
 
 
@@ -58,7 +58,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [ActSelection.gif](File:ActSelection.gif "File:ActSelection.gif")
+  [ActSelection.gif](/wiki/File:ActSelection.gif)
   20 KB
 
 
@@ -81,7 +81,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [ActSelection2seqs.gif](File:ActSelection2seqs.gif "File:ActSelection2seqs.gif")
+  [ActSelection2seqs.gif](/wiki/File:ActSelection2seqs.gif)
   14 KB
 
 
@@ -104,7 +104,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [AddCV.gif](File:AddCV.gif "File:AddCV.gif")
+  [AddCV.gif](/wiki/File:AddCV.gif)
   10 KB
 
 
@@ -128,7 +128,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Alignments
-  table.png](File:Alignments_table.png "File:Alignments table.png")
+  table.png](/wiki/File:Alignments_table.png)
   24 KB
 
 
@@ -151,7 +151,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Analysis-complete.jpg](File:Analysis-complete.jpg "File:Analysis-complete.jpg")
+  [Analysis-complete.jpg](/wiki/File:Analysis-complete.jpg)
   14 KB
 
 
@@ -174,7 +174,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Analysis-expected-time...](File:Analysis-expected-time.jpg "File:Analysis-expected-time.jpg")
+  [Analysis-expected-time...](/wiki/File:Analysis-expected-time.jpg)
   19 KB
 
 
@@ -197,7 +197,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Analyze-region-popup-m...](File:Analyze-region-popup-menu.jpg "File:Analyze-region-popup-menu.jpg")
+  [Analyze-region-popup-m...](/wiki/File:Analyze-region-popup-menu.jpg)
   43 KB
 
 
@@ -220,7 +220,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Annotation-editor-popu...](File:Annotation-editor-popup-menu.jpg "File:Annotation-editor-popup-menu.jpg")
+  [Annotation-editor-popu...](/wiki/File:Annotation-editor-popup-menu.jpg)
   20 KB
 
 
@@ -243,7 +243,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Annotation-editor.jpg](File:Annotation-editor.jpg "File:Annotation-editor.jpg")
+  [Annotation-editor.jpg](/wiki/File:Annotation-editor.jpg)
   47 KB
 
 
@@ -266,7 +266,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-main-window.jpg](File:Apollo-main-window.jpg "File:Apollo-main-window.jpg")
+  [Apollo-main-window.jpg](/wiki/File:Apollo-main-window.jpg)
   99 KB
 
 
@@ -289,7 +289,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-no-genes.jpg](File:Apollo-no-genes.jpg "File:Apollo-no-genes.jpg")
+  [Apollo-no-genes.jpg](/wiki/File:Apollo-no-genes.jpg)
   110 KB
 
 
@@ -312,7 +312,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-with-genes.jpg](File:Apollo-with-genes.jpg "File:Apollo-with-genes.jpg")
+  [Apollo-with-genes.jpg](/wiki/File:Apollo-with-genes.jpg)
   110 KB
 
 
@@ -335,7 +335,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-with-merged-exo...](File:Apollo-with-merged-exons.jpg "File:Apollo-with-merged-exons.jpg")
+  [Apollo-with-merged-exo...](/wiki/File:Apollo-with-merged-exons.jpg)
   117 KB
 
 
@@ -359,7 +359,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-with-two-genes-...](File:Apollo-with-two-genes-splice-variants.jpg "File:Apollo-with-two-genes-splice-variants.jpg")
+  [Apollo-with-two-genes-...](/wiki/File:Apollo-with-two-genes-splice-variants.jpg)
   118 KB
 
 
@@ -382,7 +382,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Apollo-with-two-genes.jpg](File:Apollo-with-two-genes.jpg "File:Apollo-with-two-genes.jpg")
+  [Apollo-with-two-genes.jpg](/wiki/File:Apollo-with-two-genes.jpg)
   113 KB
 
 
@@ -405,7 +405,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Artemis.gif](File:Artemis.gif "File:Artemis.gif")
+  [Artemis.gif](/wiki/File:Artemis.gif)
   68 KB
 
 
@@ -428,7 +428,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [ArtemisLogin.gif](File:ArtemisLogin.gif "File:ArtemisLogin.gif")
+  [ArtemisLogin.gif](/wiki/File:ArtemisLogin.gif)
   12 KB
 
 
@@ -452,7 +452,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Balloon
-  generator.png](File:Balloon_generator.png "File:Balloon generator.png")
+  generator.png](/wiki/File:Balloon_generator.png)
   47 KB
 
 
@@ -476,7 +476,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Balloon
-  sample.png](File:Balloon_sample.png "File:Balloon sample.png")
+  sample.png](/wiki/File:Balloon_sample.png)
   39 KB
 
 
@@ -499,7 +499,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Balloon.png](File:Balloon.png "File:Balloon.png")
+  [Balloon.png](/wiki/File:Balloon.png)
   27 KB
 
 
@@ -522,7 +522,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [BenchMark.png](File:BenchMark.png "File:BenchMark.png")
+  [BenchMark.png](/wiki/File:BenchMark.png)
   56 KB
 
 
@@ -545,7 +545,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Blast-types.jpg](File:Blast-types.jpg "File:Blast-types.jpg")
+  [Blast-types.jpg](/wiki/File:Blast-types.jpg)
   10 KB
 
 
@@ -568,7 +568,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Blastn-results.jpg](File:Blastn-results.jpg "File:Blastn-results.jpg")
+  [Blastn-results.jpg](/wiki/File:Blastn-results.jpg)
   11 KB
 
 
@@ -591,7 +591,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Blastx-results.jpg](File:Blastx-results.jpg "File:Blastx-results.jpg")
+  [Blastx-results.jpg](/wiki/File:Blastx-results.jpg)
   8 KB
 
 
@@ -614,7 +614,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Chado-adapter.jpg](File:Chado-adapter.jpg "File:Chado-adapter.jpg")
+  [Chado-adapter.jpg](/wiki/File:Chado-adapter.jpg)
   50 KB
 
 
@@ -637,7 +637,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Chado-save-dialog.jpg](File:Chado-save-dialog.jpg "File:Chado-save-dialog.jpg")
+  [Chado-save-dialog.jpg](/wiki/File:Chado-save-dialog.jpg)
   57 KB
 
 
@@ -660,7 +660,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample1.jpg](File:Cmap_sample1.jpg "File:Cmap sample1.jpg")
+  [Cmap sample1.jpg](/wiki/File:Cmap_sample1.jpg)
   71 KB
 
 
@@ -683,7 +683,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample1t.jpg](File:Cmap_sample1t.jpg "File:Cmap sample1t.jpg")
+  [Cmap sample1t.jpg](/wiki/File:Cmap_sample1t.jpg)
   7 KB
 
 
@@ -706,7 +706,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample2.jpg](File:Cmap_sample2.jpg "File:Cmap sample2.jpg")
+  [Cmap sample2.jpg](/wiki/File:Cmap_sample2.jpg)
   91 KB
 
 
@@ -729,7 +729,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample2t.jpg](File:Cmap_sample2t.jpg "File:Cmap sample2t.jpg")
+  [Cmap sample2t.jpg](/wiki/File:Cmap_sample2t.jpg)
   11 KB
 
 
@@ -752,7 +752,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample3.jpg](File:Cmap_sample3.jpg "File:Cmap sample3.jpg")
+  [Cmap sample3.jpg](/wiki/File:Cmap_sample3.jpg)
   65 KB
 
 
@@ -775,7 +775,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Cmap sample3t.jpg](File:Cmap_sample3t.jpg "File:Cmap sample3t.jpg")
+  [Cmap sample3t.jpg](/wiki/File:Cmap_sample3t.jpg)
   7 KB
 
 
@@ -798,7 +798,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [CreateConfigMart.png](File:CreateConfigMart.png "File:CreateConfigMart.png")
+  [CreateConfigMart.png](/wiki/File:CreateConfigMart.png)
   19 KB
 
 
@@ -821,7 +821,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Edit-preferences.jpg](File:Edit-preferences.jpg "File:Edit-preferences.jpg")
+  [Edit-preferences.jpg](/wiki/File:Edit-preferences.jpg)
   15 KB
 
 
@@ -844,7 +844,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [FlyBaseCVTermViewer.png](File:FlyBaseCVTermViewer.png "File:FlyBaseCVTermViewer.png")
+  [FlyBaseCVTermViewer.png](/wiki/File:FlyBaseCVTermViewer.png)
   106 KB
 
 
@@ -868,7 +868,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy Fetch
-  1.png](File:Galaxy_Fetch_1.png "File:Galaxy Fetch 1.png")
+  1.png](/wiki/File:Galaxy_Fetch_1.png)
   190 KB
 
 
@@ -892,7 +892,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy Fetch
-  2.png](File:Galaxy_Fetch_2.png "File:Galaxy Fetch 2.png")
+  2.png](/wiki/File:Galaxy_Fetch_2.png)
   186 KB
 
 
@@ -916,7 +916,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy Fetch
-  3.png](File:Galaxy_Fetch_3.png "File:Galaxy Fetch 3.png")
+  3.png](/wiki/File:Galaxy_Fetch_3.png)
   156 KB
 
 
@@ -940,7 +940,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  1...](File:Galaxy_FirstAnalysis_1.png "File:Galaxy FirstAnalysis 1.png")
+  1...](/wiki/File:Galaxy_FirstAnalysis_1.png)
   158 KB
 
 
@@ -964,7 +964,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  2...](File:Galaxy_FirstAnalysis_2.png "File:Galaxy FirstAnalysis 2.png")
+  2...](/wiki/File:Galaxy_FirstAnalysis_2.png)
   134 KB
 
 
@@ -988,7 +988,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  3...](File:Galaxy_FirstAnalysis_3.png "File:Galaxy FirstAnalysis 3.png")
+  3...](/wiki/File:Galaxy_FirstAnalysis_3.png)
   162 KB
 
 
@@ -1012,7 +1012,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  4...](File:Galaxy_FirstAnalysis_4.png "File:Galaxy FirstAnalysis 4.png")
+  4...](/wiki/File:Galaxy_FirstAnalysis_4.png)
   196 KB
 
 
@@ -1036,7 +1036,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  5...](File:Galaxy_FirstAnalysis_5.png "File:Galaxy FirstAnalysis 5.png")
+  5...](/wiki/File:Galaxy_FirstAnalysis_5.png)
   209 KB
 
 
@@ -1060,7 +1060,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy FirstAnalysis
-  6...](File:Galaxy_FirstAnalysis_6.png "File:Galaxy FirstAnalysis 6.png")
+  6...](/wiki/File:Galaxy_FirstAnalysis_6.png)
   202 KB
 
 
@@ -1083,7 +1083,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Galaxy Misc 1.png](File:Galaxy_Misc_1.png "File:Galaxy Misc 1.png")
+  [Galaxy Misc 1.png](/wiki/File:Galaxy_Misc_1.png)
   167 KB
 
 
@@ -1106,7 +1106,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Galaxy Misc 2.png](File:Galaxy_Misc_2.png "File:Galaxy Misc 2.png")
+  [Galaxy Misc 2.png](/wiki/File:Galaxy_Misc_2.png)
   138 KB
 
 
@@ -1129,7 +1129,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Galaxy Misc 3.png](File:Galaxy_Misc_3.png "File:Galaxy Misc 3.png")
+  [Galaxy Misc 3.png](/wiki/File:Galaxy_Misc_3.png)
   77 KB
 
 
@@ -1152,7 +1152,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Galaxy Misc 4.png](File:Galaxy_Misc_4.png "File:Galaxy Misc 4.png")
+  [Galaxy Misc 4.png](/wiki/File:Galaxy_Misc_4.png)
   87 KB
 
 
@@ -1176,7 +1176,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy
-  SecondAnalysis...](File:Galaxy_SecondAnalysis_1.png "File:Galaxy SecondAnalysis 1.png")
+  SecondAnalysis...](/wiki/File:Galaxy_SecondAnalysis_1.png)
   163 KB
 
 
@@ -1200,7 +1200,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Galaxy
-  SecondAnalysis...](File:Galaxy_SecondAnalysis_2.png "File:Galaxy SecondAnalysis 2.png")
+  SecondAnalysis...](/wiki/File:Galaxy_SecondAnalysis_2.png)
   150 KB
 
 
@@ -1223,7 +1223,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Gbrowse syn.png](File:Gbrowse_syn.png "File:Gbrowse syn.png")
+  [Gbrowse syn.png](/wiki/File:Gbrowse_syn.png)
   167 KB
 
 
@@ -1247,7 +1247,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Gbrowse
-  synBubble1.png](File:Gbrowse_synBubble1.png "File:Gbrowse synBubble1.png")
+  synBubble1.png](/wiki/File:Gbrowse_synBubble1.png)
   23 KB
 
 
@@ -1271,7 +1271,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [Gbrowse
-  synEtfinit.png](File:Gbrowse_synEtfinit.png "File:Gbrowse synEtfinit.png")
+  synEtfinit.png](/wiki/File:Gbrowse_synEtfinit.png)
   16 KB
 
 
@@ -1295,7 +1295,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [GBrowse
-  synPulldown1.png](File:GBrowse_synPulldown1.png "File:GBrowse synPulldown1.png")
+  synPulldown1.png](/wiki/File:GBrowse_synPulldown1.png)
   24 KB
 
 
@@ -1319,7 +1319,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [GBrowse synWe made
-  it1...](File:GBrowse_synWe_made_it1.png "File:GBrowse synWe made it1.png")
+  it1...](/wiki/File:GBrowse_synWe_made_it1.png)
   197 KB
 
 
@@ -1343,7 +1343,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [GBrowse synWe made
-  it2...](File:GBrowse_synWe_made_it2.png "File:GBrowse synWe made it2.png")
+  it2...](/wiki/File:GBrowse_synWe_made_it2.png)
   161 KB
 
 
@@ -1367,7 +1367,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [GBrowse
-  synWelcom.png](File:GBrowse_synWelcom.png "File:GBrowse synWelcom.png")
+  synWelcom.png](/wiki/File:GBrowse_synWelcom.png)
   242 KB
 
 
@@ -1390,7 +1390,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [GBrowse2Thumb.png](File:GBrowse2Thumb.png "File:GBrowse2Thumb.png")
+  [GBrowse2Thumb.png](/wiki/File:GBrowse2Thumb.png)
   54 KB
 
 
@@ -1413,7 +1413,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [GBrowseSAMtools1.png](File:GBrowseSAMtools1.png "File:GBrowseSAMtools1.png")
+  [GBrowseSAMtools1.png](/wiki/File:GBrowseSAMtools1.png)
   410 KB
 
 
@@ -1436,7 +1436,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [GBrowseSAMtoolsCoverag...](File:GBrowseSAMtoolsCoverageXY.png "File:GBrowseSAMtoolsCoverageXY.png")
+  [GBrowseSAMtoolsCoverag...](/wiki/File:GBrowseSAMtoolsCoverageXY.png)
   464 KB
 
 
@@ -1459,7 +1459,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [GBrowseSAMtoolsReads1.png](File:GBrowseSAMtoolsReads1.png "File:GBrowseSAMtoolsReads1.png")
+  [GBrowseSAMtoolsReads1.png](/wiki/File:GBrowseSAMtoolsReads1.png)
   613 KB
 
 
@@ -1482,7 +1482,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [ISGAHomePageThumb.png](File:ISGAHomePageThumb.png "File:ISGAHomePageThumb.png")
+  [ISGAHomePageThumb.png](/wiki/File:ISGAHomePageThumb.png)
   36 KB
 
 
@@ -1505,7 +1505,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MAKERresults.jpg](File:MAKERresults.jpg "File:MAKERresults.jpg")
+  [MAKERresults.jpg](/wiki/File:MAKERresults.jpg)
   41 KB
 
 
@@ -1529,7 +1529,7 @@ The following 89 files are in this category, out of 89 total.
 
 
   [MAKERselect
-  dpp.jpg](File:MAKERselect_dpp.jpg "File:MAKERselect dpp.jpg")
+  dpp.jpg](/wiki/File:MAKERselect_dpp.jpg)
   13 KB
 
 
@@ -1552,7 +1552,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MAKERstatus.jpg](File:MAKERstatus.jpg "File:MAKERstatus.jpg")
+  [MAKERstatus.jpg](/wiki/File:MAKERstatus.jpg)
   29 KB
 
 
@@ -1575,7 +1575,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorContextMenu.png](File:MartEditorContextMenu.png "File:MartEditorContextMenu.png")
+  [MartEditorContextMenu.png](/wiki/File:MartEditorContextMenu.png)
   19 KB
 
 
@@ -1598,7 +1598,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorCreateImport...](File:MartEditorCreateImportable.png "File:MartEditorCreateImportable.png")
+  [MartEditorCreateImport...](/wiki/File:MartEditorCreateImportable.png)
   12 KB
 
 
@@ -1621,7 +1621,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorExportable.png](File:MartEditorExportable.png "File:MartEditorExportable.png")
+  [MartEditorExportable.png](/wiki/File:MartEditorExportable.png)
   19 KB
 
 
@@ -1644,7 +1644,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorImportable.png](File:MartEditorImportable.png "File:MartEditorImportable.png")
+  [MartEditorImportable.png](/wiki/File:MartEditorImportable.png)
   16 KB
 
 
@@ -1667,7 +1667,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorMenu.png](File:MartEditorMenu.png "File:MartEditorMenu.png")
+  [MartEditorMenu.png](/wiki/File:MartEditorMenu.png)
   7 KB
 
 
@@ -1690,7 +1690,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartEditorPanal.png](File:MartEditorPanal.png "File:MartEditorPanal.png")
+  [MartEditorPanal.png](/wiki/File:MartEditorPanal.png)
   25 KB
 
 
@@ -1713,7 +1713,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartModel.png](File:MartModel.png "File:MartModel.png")
+  [MartModel.png](/wiki/File:MartModel.png)
   19 KB
 
 
@@ -1736,7 +1736,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartViewGUI.png](File:MartViewGUI.png "File:MartViewGUI.png")
+  [MartViewGUI.png](/wiki/File:MartViewGUI.png)
   31 KB
 
 
@@ -1759,7 +1759,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MartViewJoinQuery.png](File:MartViewJoinQuery.png "File:MartViewJoinQuery.png")
+  [MartViewJoinQuery.png](/wiki/File:MartViewJoinQuery.png)
   32 KB
 
 
@@ -1782,7 +1782,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderAddSchema.png](File:MBuilderAddSchema.png "File:MBuilderAddSchema.png")
+  [MBuilderAddSchema.png](/wiki/File:MBuilderAddSchema.png)
   19 KB
 
 
@@ -1805,7 +1805,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderDatasetView.png](File:MBuilderDatasetView.png "File:MBuilderDatasetView.png")
+  [MBuilderDatasetView.png](/wiki/File:MBuilderDatasetView.png)
   21 KB
 
 
@@ -1828,7 +1828,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderMenu.png](File:MBuilderMenu.png "File:MBuilderMenu.png")
+  [MBuilderMenu.png](/wiki/File:MBuilderMenu.png)
   8 KB
 
 
@@ -1851,7 +1851,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderRunner.png](File:MBuilderRunner.png "File:MBuilderRunner.png")
+  [MBuilderRunner.png](/wiki/File:MBuilderRunner.png)
   24 KB
 
 
@@ -1874,7 +1874,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderRunnerMonitor.png](File:MBuilderRunnerMonitor.png "File:MBuilderRunnerMonitor.png")
+  [MBuilderRunnerMonitor.png](/wiki/File:MBuilderRunnerMonitor.png)
   32 KB
 
 
@@ -1897,7 +1897,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [MBuilderSchemaView.PNG](File:MBuilderSchemaView.PNG "File:MBuilderSchemaView.PNG")
+  [MBuilderSchemaView.PNG](/wiki/File:MBuilderSchemaView.PNG)
   30 KB
 
 
@@ -1920,7 +1920,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Merge-exons-popup-menu...](File:Merge-exons-popup-menu.jpg "File:Merge-exons-popup-menu.jpg")
+  [Merge-exons-popup-menu...](/wiki/File:Merge-exons-popup-menu.jpg)
   37 KB
 
 
@@ -1943,7 +1943,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [PoweredByBioMart.png](File:PoweredByBioMart.png "File:PoweredByBioMart.png")
+  [PoweredByBioMart.png](/wiki/File:PoweredByBioMart.png)
   10 KB
 
 
@@ -1966,7 +1966,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Run-analysis.jpg](File:Run-analysis.jpg "File:Run-analysis.jpg")
+  [Run-analysis.jpg](/wiki/File:Run-analysis.jpg)
   87 KB
 
 
@@ -1989,7 +1989,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [Style-wizard.jpg](File:Style-wizard.jpg "File:Style-wizard.jpg")
+  [Style-wizard.jpg](/wiki/File:Style-wizard.jpg)
   40 KB
 
 
@@ -2012,7 +2012,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [WebGBrowseAddTrack.jpg](File:WebGBrowseAddTrack.jpg "File:WebGBrowseAddTrack.jpg")
+  [WebGBrowseAddTrack.jpg](/wiki/File:WebGBrowseAddTrack.jpg)
   48 KB
 
 
@@ -2035,7 +2035,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [WhatInBioMart.png](File:WhatInBioMart.png "File:WhatInBioMart.png")
+  [WhatInBioMart.png](/wiki/File:WhatInBioMart.png)
   18 KB
 
 
@@ -2058,7 +2058,7 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [ZfinAssayTypePullDown.png](File:ZfinAssayTypePullDown.png "File:ZfinAssayTypePullDown.png")
+  [ZfinAssayTypePullDown.png](/wiki/File:ZfinAssayTypePullDown.png)
   28 KB
 
 
@@ -2081,5 +2081,5 @@ The following 89 files are in this category, out of 89 total.
 
 
 
-  [JBrowse-arc-screenshot...](File:JBrowse-arc-screenshot.png.png "File:JBrowse-arc-screenshot.png.png")
+  [JBrowse-arc-screenshot...](/wiki/File:JBrowse-arc-screenshot.png.png)
   50 KB

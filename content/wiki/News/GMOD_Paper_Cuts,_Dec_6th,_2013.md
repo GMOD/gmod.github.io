@@ -37,7 +37,7 @@ the snake venom system**
 A fascinating insight into the biology and genome of the king cobra; the
 Burmese python has also been recently been sequenced
 <sup>[\[2\]](#cite_note-DOI:10.1073.2Fpnas.1314475110-2)</sup>, with
-both projects using [MAKER](../MAKER.1 "MAKER") for automated
+both projects using [MAKER](../MAKER.1) for automated
 annotation.
 
 
@@ -57,7 +57,7 @@ high-throughput data and analysis tools**
 rel="nofollow">PortEco</a> integrates *E. coli* data from numerous
 sources and uses a wiki-based system to enable collaborative knowledge
 management. PortEco is currently testing a
-[JBrowse](../JBrowse.1 "JBrowse") installation with the view to
+[JBrowse](../JBrowse.1) installation with the view to
 migrating over to JBrowse from their current GBrowse sequence browser.
 
 
@@ -92,7 +92,7 @@ involved in GMOD since the very beginning of the project.
 
 This stylishly-designed website draws data on disease mutations from
 numerous sources, including Ensembl, HGMD-PUBLIC, UniProt, COSMIC, and
-ClinVar, and includes [GBrowse](../GBrowse.1 "GBrowse")-able disease
+ClinVar, and includes [GBrowse](../GBrowse.1)-able disease
 variants, function annotations, and paralogue annotations and a DAS
 server. Sweet!
 
@@ -148,4 +148,4 @@ the GMOD project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/12/06*
+*Posted to the [GMOD News](../GMOD_News) on 2013/12/06*

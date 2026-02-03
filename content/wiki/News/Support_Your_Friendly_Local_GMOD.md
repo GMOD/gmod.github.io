@@ -16,7 +16,7 @@ submitting many letters of support from users. We would be very grateful
 if you could take a couple of minutes to write such a letter; it should
 include information about how you use or plan to use GMOD software.
 There are [some template
-paragraphs](../User%253AScott#Support_letter_templates "User%253AScott")
+paragraphs](../User%253AScott#Support_letter_templates)
 provided for inspiration.
 
 The letters should be on institutional letterhead, signed, and then
@@ -33,8 +33,8 @@ letter or if you need any help.
 This grant would help to secure the future of important parts of the
 GMOD project, so we would be very grateful for your help!
 
-*Via [Scott Cain](../User%253AScott "User%253AScott")*
+*Via [Scott Cain](../User%253AScott)*
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/08/20*
+*Posted to the [GMOD News](../GMOD_News) on 2013/08/20*

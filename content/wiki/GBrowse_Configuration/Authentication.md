@@ -7,7 +7,7 @@ This article describes **user authentication** and how to configure it
 to work with GBrowse.
 
 *For the main GBrowse2 configuration article, see [GBrowse 2.0
-HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
+HOWTO](../GBrowse_2.0_HOWTO).*
 
   & Authorization,
   Introduction</span>](#Authentication_.26_Authorization.2C_Introduction)
@@ -68,7 +68,7 @@ one-click login. Users can change their passwords and other information
 such as their full name and email address.
 
 The third mechanism uses authentication plugins that are similar in
-spirit to other [GBrowse Plugins](../GBrowse_Plugins "GBrowse Plugins").
+spirit to other [GBrowse Plugins](../GBrowse_Plugins).
 Plugins can be written to implement a variety of authentication
 mechanisms, and are intended to be used by organizations to allow users
 to use the same authentication mechanism for GBrowse as they use for
@@ -79,13 +79,13 @@ help them with this. Authentication plugins do, however, provide the
 ability to restrict access to role-based groups, something that neither
 of the other two mechanisms allows. Currently there is are two GBrowse
 authentication plugins defined, the [PamAuthenticate
-plugin](../GBrowse_Plugins/PamAuthenticate "GBrowse Plugins/PamAuthenticate"),
+plugin](../GBrowse_Plugins/PamAuthenticate),
 which authenticates users via the
 <a href="http://www.kernel.org/pub/linux/libs/pam/"
 class="external text" rel="nofollow">Pluggable Authentication Module
 (PAM)</a> system, and fetches groups from whatever group database is
 defined in /etc/nsswitch.conf, and the LDAP authentication plugin,
-[LDAPAuthenticate.pm](../LDAPAuthenticate.pm "LDAPAuthenticate.pm"). The
+[LDAPAuthenticate.pm](../LDAPAuthenticate.pm). The
 PAM module is the most flexible, so we describe it in detail later in
 this article.
 
@@ -470,7 +470,7 @@ GBrowse (versions 2.20 and higher) offers user authentication via a
 plug-in mechanism that lets organizations integrate the software with
 such enterprise authentication systems as LDAP, Kerberos, NIS, and UNIX
 password files. The [Authentication
-Plugins](../Gbrowse/authentication_plugins "Gbrowse/authentication plugins")
+Plugins](../Gbrowse/authentication_plugins)
 are easy to write, but GBrowse comes with a very flexible default one
 that makes use of the PAM (Pluggable Authentication Modules) system that
 is installed on most if not all modern Linux distributions. Basically,
@@ -528,7 +528,7 @@ right hand corner of the screen. Clicking on this link will bring up a
 dialog that prompts you for your login username and password. If all is
 configured correctly, then you'll be able to log in using your Unix
 username and password. See
-[PamAuthenticate](../Gbrowse/authentication_plugins/PamAuthenticate "Gbrowse/authentication plugins/PamAuthenticate")
+[PamAuthenticate](../Gbrowse/authentication_plugins/PamAuthenticate)
 for more information on customizing the plugin, including how to add
 site-specific messages to the login dialog.
 

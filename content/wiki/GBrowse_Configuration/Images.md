@@ -4,13 +4,13 @@ title: "GBrowse Configuration/Images"
 # GBrowse Configuration/Images
 
 This article describes **static images** and how to create them in
-[GBrowse](../GBrowse.1 "GBrowse").
+[GBrowse](../GBrowse.1).
 
 For the main GBrowse configuration article, see:
 
 - <a href="../GBrowse_Configuration" class="mw-redirect"
   title="GBrowse Configuration">GBrowse Configuration</a> or
-- [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
+- [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO).
 
 ## Generating Static Images: PNGs, SVGs and PDFs
 

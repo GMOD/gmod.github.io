@@ -27,8 +27,7 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span><br />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/af/EvoHackRoom2010.jpg/290px-EvoHackRoom2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/af/EvoHackRoom2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/af/EvoHackRoom2010.jpg 2x"
-width="290" height="100" alt="EvoHackRoom2010.jpg" /> <a
-href="File:EvoHackWhiteboard2010.jpg" class="image"><img
+width="290" height="100" alt="EvoHackRoom2010.jpg" /> <a href="/wiki/File:EvoHackWhiteboard2010.jpg" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f0/EvoHackWhiteboard2010.jpg/149px-EvoHackWhiteboard2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f0/EvoHackWhiteboard2010.jpg/224px-EvoHackWhiteboard2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f0/EvoHackWhiteboard2010.jpg/298px-EvoHackWhiteboard2010.jpg 2x"
 width="149" height="100" alt="EvoHackWhiteboard2010.jpg" /></a></td>
@@ -41,10 +40,10 @@ GMOD held a hackathon November 8-12, 2010, at the
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
 Durham, North Carolina. This hackathon focused on improving GMOD's
 support for [evolutionary
-biology](Category%253AEvolution "Category%253AEvolution").
+biology](/wiki/Category%253AEvolution).
 
 The [Open Call for
-Participation](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call")
+Participation](/wiki/GMOD_Evo_Hackathon_Open_Call)
 went out on August 1, 2010, and remained open until August 25.
 Participants have been selected and notified of their status.
 
@@ -122,31 +121,31 @@ The <a href="https://www.nescent.org/wg_gmodevohackathon/Participants"
 class="external text" rel="nofollow">30 participants</a> self-organized
 into eight groups with at least one group addressing each of the event's
 three
-[objectives](GMOD_Evo_Hackathon#Specific_objectives "GMOD Evo Hackathon").
+[objectives](/wiki/GMOD_Evo_Hackathon#Specific_objectives).
 The outcomes for each group are summarized below.
 
 <a href="https://www.nescent.org/wg_gmodevohackathon/GMatchbox"
 class="external text" rel="nofollow">GMatchbox</a>
 Worked on establishing a common database backend and
-[JSON](Glossary#JSON "Glossary")-based API for comparative genomics
+[JSON](/wiki/Glossary#JSON)-based API for comparative genomics
 data, using several visualization tools (including
-[JBrowse](JBrowse.1 "JBrowse") and
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn")) as targets. Will enable
+[JBrowse](/wiki/JBrowse.1) and
+[GBrowse_syn](/wiki/GBrowse_syn.1)) as targets. Will enable
 sharing of comparative data in multiple tools from multiple sources.
 <a href="https://www.nescent.org/wg_gmodevohackathon/GBrowse_syn2"
 class="external text" rel="nofollow">GBrowse_syn2</a>
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is built on and takes
-advantage of the [GBrowse](GBrowse.1 "GBrowse") genome browser code and
+[GBrowse_syn](/wiki/GBrowse_syn.1) is built on and takes
+advantage of the [GBrowse](/wiki/GBrowse.1) genome browser code and
 config files. However, it did not work well with GBrowse2, due to
 significant architectural changes. This group refactored GBrowse2 to
 naturally support GBrowse_syn. This work will also enable several other
-GBrowse1-only applications ([SynView](SynView "SynView"), [Primer
-Designer](PrimerDesigner.pm "PrimerDesigner.pm"), ...) to be ported to
+GBrowse1-only applications ([SynView](/wiki/SynView), [Primer
+Designer](/wiki/PrimerDesigner.pm), ...) to be ported to
 GBrowse2 as well. Two participants also became core GBrowse_syn
 developers.
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
 class="external text" rel="nofollow">JBrowse_syn</a>
-This group set out to extend [JBrowse](JBrowse.1 "JBrowse") to be a
+This group set out to extend [JBrowse](/wiki/JBrowse.1) to be a
 comparative genomics browser. The group removed the existing "single
 genome" assumption from the code and successfully displayed several
 genomes in parallel. Several participants also became familiar with
@@ -177,18 +176,18 @@ href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotyp
 class="external text" rel="nofollow">Natural Diversity and Phenotypes in
 Chado</a>
 This group focused on two outcomes, both relating to
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a>. The first
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. The first
 was a prototype Rails application that provided a web interface to the
 new [Natural
-Diversity](Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module")
+Diversity](/wiki/Chado_Natural_Diversity_Module.1)
 module in Chado. This was built on top of the emerging [Chado on
-Rails](Chado_on_Rails "Chado on Rails") project. The second was a better
+Rails](/wiki/Chado_on_Rails) project. The second was a better
 understanding, slight refactoring, and updated documentation for Chado's
 phenotype module.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Galaxy_and_HyPhy_Subgroup"
 class="external text" rel="nofollow">Galaxy + HyPhy</a>
-[Galaxy](Galaxy.1 "Galaxy") is both a workflow system and a means of
+[Galaxy](/wiki/Galaxy.1) is both a workflow system and a means of
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
@@ -198,17 +197,17 @@ HyPhy code bases were modified to support this.
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
 class="external text" rel="nofollow">BioPerl</a>
 This subgroup worked on improving tree handling in
-[BioPerl](BioPerl "BioPerl"). Specifically, they addressed the handling
+[BioPerl](/wiki/BioPerl). Specifically, they addressed the handling
 of very large trees or large numbers of small trees. BioPerl now
 supports storing such trees in a lightweight database instead of in
 memory.
 
 ## PAG Poster
 
-[Robert Buels](User%253ARobertBuels "User%253ARobertBuels") gave a <a
+[Robert Buels](/wiki/User%253ARobertBuels) gave a <a
 href="http://www.nescent.org/wg/gmodevohackathon/images/3/3f/Gmod_evohack_poster.pdf"
 class="external text" rel="nofollow">poster on the hackathon</a> at [PAG
-2011](PAG_2011 "PAG 2011").
+2011](/wiki/PAG_2011).
 
 # Background
 
@@ -262,16 +261,16 @@ of a target for implementation, availability of test data, and potential
 for completing or making significant progress towards the target during
 the hackathon. Further ideas and discussion topics can be found on the
 [Supplemental
-Information](GMOD_Evo_Hackathon_Proposal_Supplemental_Information "GMOD Evo Hackathon Proposal Supplemental Information")
+Information](/wiki/GMOD_Evo_Hackathon_Proposal_Supplemental_Information)
 page.
 
 ## Viewing tools for comparative genomics data
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a popular GMOD component
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
 between genomes. It does not currently support the [next-generation
 sequencing (NGS)
-data](Next_Generation_Sequencing "Next Generation Sequencing")
+data](/wiki/Next_Generation_Sequencing)
 increasingly available for comparative genomics and emerging model
 systems. Support for NGS data was identified by the EMS working group as
 a high priority.
@@ -281,7 +280,7 @@ In particular, GBrowse_syn lacks support for the
 rel="nofollow">Sequence Alignment Format (SAM)</a>, its mechanism of
 storing genome comparisons does not scale beyond a few organisms, and
 the means for tracking the necessary alignment metadata in
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> are
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> are
 insufficient.
 
 In addition to filling those gaps, GBrowse_syn would also particularly
@@ -290,10 +289,10 @@ base.
 
 ## Visualization of phylogenetic data and trees
 
-The [GMOD toolkit](GMOD_Components "GMOD Components") at present does
+The [GMOD toolkit](/wiki/GMOD_Components) at present does
 not include web-based alignment viewers, nor can the increasingly
-popular [JBrowse](JBrowse.1 "JBrowse") genome browser (the designated
-successor of [GBrowse](GBrowse.1 "GBrowse")) display multiple sequence
+popular [JBrowse](/wiki/JBrowse.1) genome browser (the designated
+successor of [GBrowse](/wiki/GBrowse.1)) display multiple sequence
 alignments. GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon
@@ -322,7 +321,7 @@ Yet, phenotypic and genetic diversity data are central to many
 evolutionary research questions.
 
 A [Natural Diversity Module
-initiative](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group")
+initiative](/wiki/Chado_Natural_Diversity_Module_Working_Group)
 to address at least the deficiencies within Chado has already formed
 earlier this year. Several key developers (one of the original
 developers of the module, and the developer of Phenex, a phenotype
@@ -367,7 +366,7 @@ The hackathon will use a
 <a href="http://www.nescent.org/wg_gmodevohackathon/Main_Page"
 class="external text" rel="nofollow">wiki hosted at NESCent</a> during
 the event. Once the hackathon is done, relevant content will be copied
-from the NESCent wiki to the [GMOD wiki](Main_Page "Main Page"). Each
+from the NESCent wiki to the [GMOD wiki](/wiki/Main_Page). Each
 working group during the event will typically have its own wiki page,
 linked from the main hackathon wiki page, where it documents its minutes
 and design notes, and provides links to the code and documentation it
@@ -390,17 +389,17 @@ available to defray costs for qualified participants.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/300px-2011GMODAmericasSatellitesLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/450px-2011GMODAmericasSatellitesLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/8e/2011GMODAmericasSatellitesLogo.png/600px-2011GMODAmericasSatellitesLogo.png 2x"
 width="300" height="119"
-alt="Satellite Meetings at GMOD Americas 2011" />](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings at GMOD Americas 2011")
+alt="Satellite Meetings at GMOD Americas 2011" />](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 
 We are planning a followup gathering as a [Satellite
-Meeting](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
-at [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"), in
+Meeting](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
+at [GMOD Americas 2011](/wiki/GMOD_Americas_2011), in
 March at NESCent. If you are interested in participating, please add
 your name below.
 
 *You do not need to have attended the original hackathon or plan on
 attending any other [GMOD Americas
-2011](GMOD_Americas_2011 "GMOD Americas 2011") events to participate in
+2011](/wiki/GMOD_Americas_2011) events to participate in
 this satellite (or any other satellite). If you have an interest in
 extending GMOD and will be in the area or at GMOD Americas 2011, then
 you are strongly encouraged to participate.*
@@ -415,8 +414,8 @@ you are strongly encouraged to participate.*
 | # Timeline |  |  |
 
 |---:|----|
-| **June 3, 2010** | [Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal") submitted to <a href="http://nesscent.org/" class="external text" |
-rel="nofollow">NESCent</a> | **June 10, 2010** | Funding approved | **August 1, 2010** | [Open call for participants](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call"), applications open | **August 25, 2010** | [Open call application](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call") deadline | **September 16, 2010** | Applicants notified | **September 24, 2010** | Deadline for participant attendance commitment | **November 8-12, 2010** | Hackathon at NESCent | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"). |
+| **June 3, 2010** | [Proposal](/wiki/GMOD_Evo_Hackathon_Proposal) submitted to <a href="http://nesscent.org/" class="external text" |
+rel="nofollow">NESCent</a> | **June 10, 2010** | Funding approved | **August 1, 2010** | [Open call for participants](/wiki/GMOD_Evo_Hackathon_Open_Call), applications open | **August 25, 2010** | [Open call application](/wiki/GMOD_Evo_Hackathon_Open_Call) deadline | **September 16, 2010** | Applicants notified | **September 24, 2010** | Deadline for participant attendance commitment | **November 8-12, 2010** | Hackathon at NESCent | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](/wiki/GMOD_Americas_2011). |
 
 # Sponsorship
 
@@ -440,11 +439,11 @@ boundaries.
 
 # Organizing Committee
 
-- [Nicole Washington](User%253ANLWashington "User%253ANLWashington"), chair
-- [Sheldon McKay](User%253AMckays "User%253AMckays")
-- [Scott Cain](User%253AScott "User%253AScott")
-- <a href="User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
+- [Nicole Washington](/wiki/User%253ANLWashington), chair
+- [Sheldon McKay](/wiki/User%253AMckays)
+- [Scott Cain](/wiki/User%253AScott)
+- <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
   Buels</a>
 - <a href="http://informatics.nescent.org/wiki/User%253AHlapp"
   class="external text" rel="nofollow">Hilmar Lapp</a>
-- [Dave Clements](User%253AClements "User%253AClements")
+- [Dave Clements](/wiki/User%253AClements)

@@ -11,7 +11,7 @@ height="43" alt="Open positions at Bayer CropScience" /></a>
 **1. BioAnalyst Scientist:**
 
 You will provide support in various activities: [Next Generation
-Sequencing](../Next_Generation_Sequencing "Next Generation Sequencing")
+Sequencing](../Next_Generation_Sequencing)
 (NGS) data analysis, expression data (microarrays) analysis, genomics
 and biological networks. The successful applicant should have a PhD or
 equivalent experience in (plant) genetics and/or genomics. Computer
@@ -53,12 +53,12 @@ class="external text" rel="nofollow">here</a> or send your CV to
 <a href="mailto:yann-francois.bizouerne@bayer.com" class="external text"
 rel="nofollow">Yann-Francois Bizouerne</a>
 
-[Erick Antezana](../User%253AErickAntezana "User%253AErickAntezana")
+[Erick Antezana](../User%253AErickAntezana)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/04/14,
+*Posted to the [GMOD News](../GMOD_News) on 2011/04/14,
 updated 2011/04/15*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

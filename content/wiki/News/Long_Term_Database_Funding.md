@@ -68,11 +68,11 @@ site</a>. And, if you aren't already doing so, make it easy for your
 users to cite your database by including an easy to find "Citing this
 resource" link on your site.
 
-[Dave Clements](../User%253AClements "User%253AClements")
+[Dave Clements](../User%253AClements)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/11/06*
+*Posted to the [GMOD News](../GMOD_News) on 2009/11/06*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

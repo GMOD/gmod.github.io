@@ -50,7 +50,7 @@ Which gets all of the prereqs that aren't installed on the machine.
 Go to <a href="http://localhost/gbrowse2" class="external free"
 rel="nofollow">http://localhost/gbrowse2</a>
 
-# Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
+# Basic <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
@@ -281,7 +281,7 @@ Bio::DB::Das::Chado:
 
 This does several things (including poorly estimating how long it will
 take to finish), including creating materialized views, using a tool
-provided by [SOL Genomics Network (SGN)](Category%253ASGN "Category%253ASGN").
+provided by [SOL Genomics Network (SGN)](/wiki/Category%253ASGN).
 In practice, it would be a good idea to read the documentation of
 `gmod_materialized_view_tool.pl` for information on keeping the view up
 to date.

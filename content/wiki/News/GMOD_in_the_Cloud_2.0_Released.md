@@ -21,4 +21,4 @@ This AMI has several GMOD software packages installed and configured,
 including:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
+  Cloud](../Category%253AGMOD_in_the_Cloud)

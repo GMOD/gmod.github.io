@@ -204,7 +204,7 @@ file /opt/gbrowse/etc/default/gbrowse-aws-balancer.
 
 Some setup is required to use the load balancer. For details see [Load
 Balancing GBrowse2 with AWS Spot
-Instances](Load_Balancing_GBrowse2_with_AWS_Spot_Instances "Load Balancing GBrowse2 with AWS Spot Instances")
+Instances](/wiki/Load_Balancing_GBrowse2_with_AWS_Spot_Instances)
 or run:
 
     perldoc gbrowse_aws_balancer.pl
@@ -236,11 +236,11 @@ common for both the VirtualBox and EC2 virtual machines.
 
 The process of loading data and configuring tracks is described well in
 detail in the [GBrowse 2.0
-HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO"), and the [GBrowse NGS
-Tutorial](GBrowse_NGS_Tutorial "GBrowse NGS Tutorial") (for BAM and SAM
+HOWTO](/wiki/GBrowse_2.0_HOWTO), and the [GBrowse NGS
+Tutorial](/wiki/GBrowse_NGS_Tutorial) (for BAM and SAM
 next generation sequencing data). There are also several step-by-step
 tutorials located on the [GBrowse
-Tutorial](GBrowse_Tutorial "GBrowse Tutorial") page. All tutorials will
+Tutorial](/wiki/GBrowse_Tutorial) page. All tutorials will
 work on the VMs, except that the layout of the GBrowse's data and
 configuration files is slightly different from those in the tutorial.
 For example, the main GBrowse configuration file is located at
@@ -272,8 +272,8 @@ variable is
 ### Adding New Databases
 
 You can add new databases in the way described in [GBrowse 2.0
-HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO") and [GBrowse
-Tutorial](GBrowse_Tutorial "GBrowse Tutorial"). However, there is also a
+HOWTO](/wiki/GBrowse_2.0_HOWTO) and [GBrowse
+Tutorial](/wiki/GBrowse_Tutorial). However, there is also a
 new command-line tool called *gbrowse_import_ucsc_db.pl* that will
 initialize starter databases from information held in the UCSC Genome
 Browser. It is run this way:

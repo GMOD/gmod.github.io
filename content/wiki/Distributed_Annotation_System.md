@@ -45,7 +45,7 @@ weaknesses.
 - XML has been shortened, but big gain comes from client-server content
   format negotiation, including binary. Empty elements dropped.
 - Uses HTTP caching in the client.
-- [IGB](IGB "IGB") - reference client for DAS2. Integrated Genome
+- [IGB](/wiki/IGB) - reference client for DAS2. Integrated Genome
   Browser
 
 
@@ -54,20 +54,20 @@ weaknesses.
 
 These components work with DAS servers:
 
-- [GBrowse](GBrowse.1 "GBrowse") - See
-  <a href="GBrowse_adaptors" class="mw-redirect"
+- [GBrowse](/wiki/GBrowse.1) - See
+  <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
   title="GBrowse adaptors">GBrowse adaptors</a>
 
 ## Presentations
 
 - [DAS
-  Update](August_2009_GMOD_Meeting#DAS_update "August 2009 GMOD Meeting"),
+  Update](/wiki/August_2009_GMOD_Meeting#DAS_update),
   [August 2009 GMOD
-  Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
+  Meeting](/wiki/August_2009_GMOD_Meeting)
 - [Distributed Annotation Systems/2
-  (DAS/2)](November_2007_GMOD_Meeting#Distributed_Annotation_System.2F2_.28DAS.2F2.29 "November 2007 GMOD Meeting"),
+  (DAS/2)](/wiki/November_2007_GMOD_Meeting#Distributed_Annotation_System.2F2_.28DAS.2F2.29),
   [November 2007 GMOD
-  Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting")
+  Meeting](/wiki/November_2007_GMOD_Meeting)
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Das.ppt" class="internal"
   title="Das.ppt">DAS2</a>, [May 2005 GMOD
-  Meeting](May_2005_GMOD_Meeting "May 2005 GMOD Meeting")
+  Meeting](/wiki/May_2005_GMOD_Meeting)

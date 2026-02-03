@@ -8,7 +8,7 @@ addition to making the code base more maintainable, GBrowse 2.0 adds the
 following major features:
 
 - **User Interface:** The user interface uses
-  [AJAX](Glossary#AJAX "Glossary") to provide a smoother user
+  [AJAX](/wiki/Glossary#AJAX) to provide a smoother user
   experience. Tracks turn on and off immediately, and updates affect
   only the tracks that have changed.
 - **More rational configuration:** Most configuration options have been
@@ -172,7 +172,7 @@ rel="nofollow">VirtualBox</a>, and the other for running on
 <a href="http://aws.amazon.com" class="external text"
 rel="nofollow">Amazon Web Services</a>.
 
-Please see [GBrowse2 VMs](GBrowse2_VMs "GBrowse2 VMs") for a list of the
+Please see [GBrowse2 VMs](/wiki/GBrowse2_VMs) for a list of the
 VMs that are available to use, plus a quick start guide to using these
 virtual machines.
 
@@ -216,42 +216,42 @@ class="external text" rel="nofollow">GBrowse Debian package pages.</a>
 
 First install prerequisites following the instructions at
 [GBrowse_2.0_Prerequisites#DEB Systems
-(apt)](GBrowse_2.0_Prerequisites#DEB_Systems_.28apt.29 "GBrowse 2.0 Prerequisites").
+(apt)](/wiki/GBrowse_2.0_Prerequisites#DEB_Systems_.28apt.29).
 Then perform the last steps manually as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO").
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell).
 
 ## Installation on RedHat, CentOS and other RPM Systems
 
 First install prerequisites following the instructions at
 [GBrowse_2.0_Prerequisites#RPM Systems
-(yum)](GBrowse_2.0_Prerequisites#RPM_Systems_.28yum.29 "GBrowse 2.0 Prerequisites").
+(yum)](/wiki/GBrowse_2.0_Prerequisites#RPM_Systems_.28yum.29).
 Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO").
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell).
 
 ## Installation on MacOSX Systems
 
 Install the prerequisites following the instructions at
-[GBrowse_2.0_Prerequisites#MacOSX](GBrowse_2.0_Prerequisites#MacOSX "GBrowse 2.0 Prerequisites").
+[GBrowse_2.0_Prerequisites#MacOSX](/wiki/GBrowse_2.0_Prerequisites#MacOSX).
 Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell "GBrowse 2.0 Install HOWTO")
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell)
 and
-[GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6](GBrowse_2.0_Install_HOWTO.1#Configure_in_Mac_OS_X_10.6.6 "GBrowse 2.0 Install HOWTO").
+[GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6](/wiki/GBrowse_2.0_Install_HOWTO.1#Configure_in_Mac_OS_X_10.6.6).
 
 ## Installation from Source Code
 
 Installation from source code is described in
-[GBrowse_2.0_Install_HOWTO#Installing_Manually](GBrowse_2.0_Install_HOWTO.1#Installing_Manually "GBrowse 2.0 Install HOWTO").
+[GBrowse_2.0_Install_HOWTO#Installing_Manually](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_Manually).
 
 ## Users of GBrowse 1.X
 
 GBrowse 2.0 is largely backward compatible with GBrowse 1.X, but you
 will need to do some modest work in order to port existing sources to
 the new system. Please see [Migrating from GBrowse 1.X to
-2.X](Migrating_from_GBrowse_1.X_to_2.X "Migrating from GBrowse 1.X to 2.X")
+2.X](/wiki/Migrating_from_GBrowse_1.X_to_2.X)
 for a guide to the process.
 
 For GBrowse 1.X configuration, see:
-<a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+<a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>.
 
 # Configuring GBrowse
@@ -496,7 +496,7 @@ a relative path, they will be taken as relative to **htdocs_base** (in
 filesystem space) and **url_base** (in URL space).
 plugin_path, language_path, templates_path, moby_path
 These configuration options specify where
-[plugins](GBrowse_Plugins "GBrowse Plugins"), language translation
+[plugins](/wiki/GBrowse_Plugins), language translation
 files, templates and
 <a href="http://www.biomoby.org" class="external text"
 rel="nofollow">MOBY</a> configuration files are located. If relative
@@ -539,7 +539,7 @@ NFS, but requires you to install the
 <a href="http://search.cpan.org/perldoc?File::NFSLock"
 class="external text" rel="nofollow">File::NFSLock</a> module from CPAN.
 mysql
-Use the locking in the [MySQL](MySQL "MySQL") database. It is handy if
+Use the locking in the [MySQL](/wiki/MySQL) database. It is handy if
 you already have a MySQL database up and running. The full format of
 this value is:
 
@@ -559,7 +559,7 @@ renderfarm
 
 This configuration directive turns on and off GBrowse's support for a
 rendering farm (see [Running a GBrowse2 Render
-Farm](Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm")).
+Farm](/wiki/Running_a_GBrowse2_render_farm)).
 By default this support is enabled, but there no particular performance
 penalty if you choose not to take advantage of it. If you plan never to
 use the feature, set it to a false (zero) value:
@@ -568,7 +568,7 @@ use the feature, set it to a false (zero) value:
 
 slave_timeout
 When [running a GBrowse2 render
-farm](Running_a_GBrowse2_render_farm "Running a GBrowse2 render farm"),
+farm](/wiki/Running_a_GBrowse2_render_farm),
 this option controls how long the master server will wait for one of its
 slaves before it times out and considers the slave "down". The units are
 seconds, 45 seconds by default.
@@ -616,7 +616,7 @@ Options](#Database_Search_Options) for more information.
 The autocomplete setting also applies to the "Custom Tracks" and
 "Community Tracks" sections, and allows users to search the user account
 database for public tracks via autocomplete. See
-[GBrowse_Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
+[GBrowse_Configuration/Authentication](/wiki/GBrowse_Configuration/Authentication)
 for more information on the user account database.
 
 balloon tips
@@ -693,7 +693,7 @@ surround the detail panel with on the left and the right. This is
 sometimes necessary for glyphs that need extra space to the left or
 right for additional information. An example of this is the [UCSC
 multiple alignment
-glyph](GBrowse_UCSC_Plugin_Install_HOWTO "GBrowse UCSC Plugin Install HOWTO").
+glyph](/wiki/GBrowse_UCSC_Plugin_Install_HOWTO).
 too many landmarks
 This option controls the maximum number of results to return when the
 user performs a wildcard search on the database. The default is 100.
@@ -702,14 +702,14 @@ This option controls the interior color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
-value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
+value](/wiki/Glyphs_and_Glyph_Options#Colors), such
 as "beige:0.8" for a beige background at 80% opacity.
 hilite outline
 This option controls the outline color of the selection rectangle that
 appears when the user clicks and drags on a scalebar, as well as the
 highlighted region of the currently selected region. It accepts a
 [Bio::Graphics color
-value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options"), such
+value](/wiki/Glyphs_and_Glyph_Options#Colors), such
 as "red:0.8".
 hilite height
 This option controls the height of the draggable region marker, which
@@ -718,13 +718,13 @@ overview bgcolor, region bgcolor, detail bgcolor
 These three options control the background colors of the overview,
 region and detail panels respectively. They each accept [Bio::Graphics
 color
-value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
+value](/wiki/Glyphs_and_Glyph_Options#Colors).
 grid color, grid major color
 These options control the appearance of the grid lines in the overview,
 region and detail panels. The first controls the color of the minor grid
 lines, and the second controls the color of the major grid lines. They
 each accept a [Bio::Graphics color
-value](Glyphs_and_Glyph_Options#Colors "Glyphs and Glyph Options").
+value](/wiki/Glyphs_and_Glyph_Options#Colors).
 show sources
 Ordinarily GBrowse generates a popup menu showing all configured data
 sources; the user can change the datasource by selecting from this menu.
@@ -777,7 +777,7 @@ that fast track panning is turned off and GBrowse behaves as usual.
 #### Cleanup Settings
 
 These settings are used by the
-[gbrowse_clean.pl](Gbrowse_clean.pl "Gbrowse clean.pl") script to remove
+[gbrowse_clean.pl](/wiki/Gbrowse_clean.pl) script to remove
 stale temporary files of various sorts.
 
 expire cache
@@ -805,7 +805,7 @@ These options configure the backend database that is used to store the
 information that a user uploads when he or she creates custom tracks.
 The default is to choose a workable database system based on the Perl
 DBI drivers installed on the system. See [Configuring the Uploaded Track
-Database](GBrowse_2.0_Install_HOWTO/Advanced#Configuring_the_Uploaded_Track_Database "GBrowse 2.0 Install HOWTO/Advanced")
+Database](/wiki/GBrowse_2.0_Install_HOWTO/Advanced#Configuring_the_Uploaded_Track_Database)
 for detailed configuration information.
 
 upload_db_adaptor
@@ -835,12 +835,12 @@ user named by **upload_db_user**. (Default no password).
 admin_account
 The name of the administrator account that has privileges to upload and
 configure public tracks. See [The Admin
-Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
+Interface](/wiki/GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface)
 for more details.
 admin_dbs
 The path used to store data files uploaded by the administrator named in
 **admin_account**. See [The Admin
-Interface](GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface "GBrowse 2.0 Install HOWTO/Advanced")
+Interface](/wiki/GBrowse_2.0_Install_HOWTO/Advanced#The_Admin_Interface)
 for more details.
 
 #### Debug Settings
@@ -862,7 +862,7 @@ the
 protocol</a>.
 debug_plugins
 This turns on debugging messages concerning the operation of GBrowse's
-user-contributed [plugins](GBrowse_Plugins "GBrowse Plugins").
+user-contributed [plugins](/wiki/GBrowse_Plugins).
 
 #### Configuring Genomic Regions
 
@@ -901,7 +901,7 @@ and the order in which they will appear. The user can use a dialog box
 to select which subtracks to make visible and to reorder the subtracks.
 
 See [Creating and Managing Subtracks with
-GBrowse2](Creating_and_Managing_Subtracks_with_GBrowse2 "Creating and Managing Subtracks with GBrowse2")
+GBrowse2](/wiki/Creating_and_Managing_Subtracks_with_GBrowse2)
 for full details.
 
 # Advanced Datasource Configuration Topics
@@ -1136,7 +1136,7 @@ gbrowse_details script will be invoked when the user clicks on a feature
 contained within the track. This will generate a simple table of all
 feature information available in the database. This includes the
 user-defined tag/value attributes set in Column 9 of the
-[GFF](GFF "GFF") for that feature.
+[GFF](/wiki/GFF) for that feature.
 
 You can control, to some extent, the formatting of the tag value table
 by providing a configuration stanza with the following format:
@@ -1215,7 +1215,7 @@ spelled with capital letters. Put the option "URL" inside this stanza,
 containing a string to be transformed into the URL.
 
 For example, to link to a local cgi script from the following
-[GFF2](GFF2 "GFF2") line:
+[GFF2](/wiki/GFF2) line:
 
     IV     curated exon    518     550     . + .   Transcript B0273.1; local_id 11723
 
@@ -1250,17 +1250,17 @@ value of the tag looks like an NCBI GI number:
 ## Restricting Access to Data Sources and Tracks with Usernames and Passwords
 
 See: [GBrowse
-Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")
+Configuration/Authentication](/wiki/GBrowse_Configuration/Authentication)
 
 ## Configuring Balloon Tooltips
 
 See: [GBrowse
-Configuration/Balloons](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
+Configuration/Balloons](/wiki/GBrowse_Configuration/Balloons).
 
 ## Generating Static Images: PNGs, SVGs and PDFs
 
 See: [GBrowse
-Configuration/Images](GBrowse_Configuration/Images "GBrowse Configuration/Images").
+Configuration/Images](/wiki/GBrowse_Configuration/Images).
 
 ## Describing a GBrowse data source using structured meta-data
 
@@ -1345,7 +1345,7 @@ DBD::mysql), then **./Build install** will run a script called
 "gbrowse_metadb_config.pl", which creates and initializes a user account
 database for managing user logins and shared tracks. If you take
 advantage of the user accounts feature (described in more detail in
-[GBrowse_Configuration/Authentication](GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication")),
+[GBrowse_Configuration/Authentication](/wiki/GBrowse_Configuration/Authentication)),
 you may wish to run gbrowse_metadb_config.pl periodically. It checks for
 database inconsistencies, removes unused uploads, and does other routine
 maintenance on the user accounts database.
@@ -1375,9 +1375,9 @@ web user's cron table, or by running it in root's cron table.
 More installation and maintenance tips, including support for next
 generation sequencing data, user accounts, and more, are given in
 [GBrowse 2.0 Install HOWTO#Advanced Installation
-Topics](GBrowse_2.0_Install_HOWTO.1#Advanced_Installation_Topics "GBrowse 2.0 Install HOWTO")
+Topics](/wiki/GBrowse_2.0_Install_HOWTO.1#Advanced_Installation_Topics)
 
 # The GBrowse2 REST API
 
-See: [GBrowse2 REST API](GBrowse2_REST_API "GBrowse2 REST API") (section
+See: [GBrowse2 REST API](/wiki/GBrowse2_REST_API) (section
 under construction)

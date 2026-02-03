@@ -12,7 +12,7 @@ width="175" height="131" alt="Dave Clements looking cheeky" />
 
 
 
-I work on the [Galaxy](Galaxy.1 "Galaxy") Project for Johns Hopkins
+I work on the [Galaxy](/wiki/Galaxy.1) Project for Johns Hopkins
 University, where I organize meetings and courses, prepare training
 materials, and improve
 <a href="http://wiki.galaxyproject.org/" class="external text"
@@ -20,7 +20,7 @@ rel="nofollow">Galaxy's documentation wiki</a>, and web presence. I'm
 also hoping to touch the (Python!) code.
 
 Prior to working on Galaxy I ran the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk") from 2007-2010, where I did
+Desk](/wiki/GMOD_Help_Desk) from 2007-2010, where I did
 similar work. I am still involved in the GMOD community as a
 representative of Galaxy. From 2013-2018 I telecommuted from the
 <a href="http://pages.uoregon.edu/drt/" class="external text"
@@ -48,7 +48,7 @@ also at Oregon.
 My background is in computer science. I have been working in biological
 databases since 2000.
 
-Prior to working on [Galaxy](Galaxy.1 "Galaxy"), and for
+Prior to working on [Galaxy](/wiki/Galaxy.1), and for
 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a> and GMOD before that, I worked as the
 database manager at the
@@ -110,38 +110,38 @@ class="external text" rel="nofollow">Galaxy home page</a> for other
 presentations.
 
 - *[GMOD Sustainability and
-  Organization](September_2010_GMOD_Meeting#GMOD_Sustainability_and_Organization "September 2010 GMOD Meeting")*
+  Organization](/wiki/September_2010_GMOD_Meeting#GMOD_Sustainability_and_Organization)*
   at [September 2010 GMOD
-  Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting"),
+  Meeting](/wiki/September_2010_GMOD_Meeting),
   Cambridge, United Kingdom, September 2010.
 - *[Help Desk
-  Update](September_2010_GMOD_Meeting#Help_Desk_Update "September 2010 GMOD Meeting")*
+  Update](/wiki/September_2010_GMOD_Meeting#Help_Desk_Update)*
   at [September 2010 GMOD
-  Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting"),
+  Meeting](/wiki/September_2010_GMOD_Meeting),
   Cambridge, United Kingdom, September 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/93/GMODForIEvoBio2010.pdf"
   class="internal" title="GMODForIEvoBio2010.pdf">GMOD for Evolutionary
   Biology</a>*, presentation with [Rob
-  Buels](User%253ARobertBuels "User%253ARobertBuels") at
+  Buels](/wiki/User%253ARobertBuels) at
   <a href="http://ievobio.org" class="external text"
   rel="nofollow">iEvoBio 2010</a>, Portland, Oregon, June 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Jan2010HelpDesk.pdf" class="internal"
   title="Jan2010HelpDesk.pdf">Help Desk Report</a>*, presentation at
   [January 2010 GMOD
-  Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting"), San
+  Meeting](/wiki/January_2010_GMOD_Meeting), San
   Diego, January 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/PAG2010GMODProjectUpdate.pdf"
   class="internal" title="PAG2010GMODProjectUpdate.pdf">GMOD Project
-  Update</a>*, presentation with [Scott Cain](User%253AScott "User%253AScott")
-  at [PAG 2010](PAG_2010 "PAG 2010"), San Diego, January 2010.
+  Update</a>*, presentation with [Scott Cain](/wiki/User%253AScott)
+  at [PAG 2010](/wiki/PAG_2010), San Diego, January 2010.
 - *<a
   href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/PAG2010ComparativeGenomicsToolsInGMOD.pdf"
   class="internal"
   title="PAG2010ComparativeGenomicsToolsInGMOD.pdf">Comparative Genomics
   Tools in GMOD</a>*, poster with [Sheldon
-  McKay](User%253AMckays "User%253AMckays"), Ken Youens-Clark, [Ben
-  Faga](User%253AFaga "User%253AFaga"), [Scott Cain](User%253AScott "User%253AScott"),
-  at [PAG 2010](PAG_2010 "PAG 2010"), San Diego, January 2010.
+  McKay](/wiki/User%253AMckays), Ken Youens-Clark, [Ben
+  Faga](/wiki/User%253AFaga), [Scott Cain](/wiki/User%253AScott),
+  at [PAG 2010](/wiki/PAG_2010), San Diego, January 2010.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8f/GMODTAMUWorkshop.pdf" class="internal"
   title="GMODTAMUWorkshop.pdf">Database Tools for Biologists</a>*,
   workshop at Department of Biochemistry and Biophysics, Texas A&M
@@ -153,7 +153,7 @@ presentations.
   rel="nofollow">Information Systems for Insect Pests (ISyIP)</a>,
   Rennes, France, November 2009
 - *[Database Tools for Biologists: A Half-Day GMOD
-  Workshop](BA2009 "BA2009")*, at
+  Workshop](/wiki/BA2009)*, at
   <a href="http://www.ausbiotech2009.com.au/bia/bia-home"
   class="external text" rel="nofollow">Bioinformatics Australia 2009
   (BA2009)</a>, Melbourne, Australia, October 2009
@@ -161,11 +161,10 @@ presentations.
   poster at <a href="http://www.ausbiotech2009.com.au/bia/bia-home"
   class="external text" rel="nofollow">Bioinformatics Australia 2009
   (BA2009)</a>, Melbourne, Australia, October 2009
-- *<a
-  href="ftp://ftp.gmod.org/pub/gmod/Meetings/2009/August/Aug2009NGSinGBrowse.pdf"
+- *<a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2009/August/Aug2009NGSinGBrowse.pdf"
   class="external text" rel="nofollow">Visualising NGS Data in GBrowse
   2</a>*, presentation at [August 2009 GMOD
-  Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting"), Oxford,
+  Meeting](/wiki/August_2009_GMOD_Meeting), Oxford,
   UK, August 2009.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/AGA_NGS_2009.pdf" class="internal"
   title="AGA NGS 2009.pdf"><em>Seeing the forest</em> and <em>the trees:
@@ -190,15 +189,15 @@ presentations.
   technologies*, Lutherstadt-Wittenberg, Germany, April 2009.
 - *[Comparative Genomics with GBrowse_syn: A hands on workshop for
   visualizing your syntenic data with
-  GBrowse_syn](GBrowse_syn_PAG_2009_Workshop "GBrowse syn PAG 2009 Workshop")*,
-  workshop with [Sheldon McKay](User%253AMckays "User%253AMckays") and [Scott
-  Cain](User%253AScott "User%253AScott") at [PAG 2009](PAG_2009 "PAG 2009"),
+  GBrowse_syn](/wiki/GBrowse_syn_PAG_2009_Workshop)*,
+  workshop with [Sheldon McKay](/wiki/User%253AMckays) and [Scott
+  Cain](/wiki/User%253AScott) at [PAG 2009](/wiki/PAG_2009),
   January 2009.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/PAG2009NextGenSeqPoster.pdf"
   class="internal" title="PAG2009NextGenSeqPoster.pdf">Managing Next
   Generation Sequence Data with GMOD</a>, poster with [Scott
-  Cain](User%253AScott "User%253AScott"), Paul Hohenlohe, Nicholas Stiffler,
-  Eric Johnson, and William Cresko, at [PAG 2009](PAG_2009 "PAG 2009"),
+  Cain](/wiki/User%253AScott), Paul Hohenlohe, Nicholas Stiffler,
+  Eric Johnson, and William Cresko, at [PAG 2009](/wiki/PAG_2009),
   January 2009.*
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/ISMB2008PosterManagingGenomicData.pdf"
   class="internal" title="ISMB2008PosterManagingGenomicData.pdf">GMOD:
@@ -218,7 +217,7 @@ presentations.
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4a/ChadoWorkshopArthopod2008.pdf"
   class="internal" title="ChadoWorkshopArthopod2008.pdf">Chado - A
   Database Schema for Integrating Biological Data</a>*, workshop with
-  [Scott Cain](User%253AScott "User%253AScott") at the
+  [Scott Cain](/wiki/User%253AScott) at the
   <a href="http://www.k-state.edu/agc/symposium.shtml"
   class="external text" rel="nofollow">2nd Annual Arthropod Genomics
   Symposium</a>, April 2008.
@@ -236,16 +235,16 @@ presentations.
   class="internal"
   title="GMODToolsForComparativeGenomicsIGERTPoster.pdf">GMOD Tools for
   Comparative Genomics</a>*, poster with, David Riley, [Ben
-  Faga](User%253AFaga "User%253AFaga"), Hervé Tettelin, Sam Angiuoli, and
+  Faga](/wiki/User%253AFaga), Hervé Tettelin, Sam Angiuoli, and
   Jonathan Crabtree. Presented at the
   <a href="http://evodevo.uoregon.edu/symposium.html"
   class="external text" rel="nofollow">IGERT Symposium on Evolution,
   Development, and Genomics</a>, April 4-6, Eugene, OR. Highlights GMOD
   components particularly useful for [comparative
-  genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics"):
-  [CMap](CMap.1 "CMap"), [Sybil](Sybil "Sybil"),
-  [SynView](SynView "SynView"), [SynBrowse](SynBrowse "SynBrowse") and
-  [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
+  genomics](/wiki/Category%253AComparative_Genomics):
+  [CMap](/wiki/CMap.1), [Sybil](/wiki/Sybil),
+  [SynView](/wiki/SynView), [SynBrowse](/wiki/SynBrowse) and
+  [GBrowse_syn](/wiki/GBrowse_syn.1).
 - *<a
   href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/InformaticsResourcesForEvolutionaryResearchIGERTPoster.pdf"
   class="internal"
@@ -256,15 +255,15 @@ presentations.
   class="external text" rel="nofollow">IGERT Symposium on Evolution,
   Development, and Genomics</a>, April 4-6, 2008, in Eugene OR.
   Highlights GMOD tools particularly useful for
-  [evolutionary](Category%253AEvolution "Category%253AEvolution") research:
-  [GBrowse](GBrowse.1 "GBrowse"), [Apollo](Apollo.1 "Apollo"), [Pathway
-  Tools](Pathway_Tools.1 "Pathway Tools"), and
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.*
+  [evolutionary](/wiki/Category%253AEvolution) research:
+  [GBrowse](/wiki/GBrowse.1), [Apollo](/wiki/Apollo.1), [Pathway
+  Tools](/wiki/Pathway_Tools.1), and
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.*
 - *<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/2007GenomeInformaticsGMODPoster.pdf"
   class="internal" title="2007GenomeInformaticsGMODPoster.pdf">Digesting
   the Genome Glut: Promoting the Use and Extension of GMOD To Emerging
   Model Organisms</a>*, poster with [Brian
-  Osborne](User%253ABosborne "User%253ABosborne"), Hilmar Lapp, Xianhua Liu, W.
+  Osborne](/wiki/User%253ABosborne), Hilmar Lapp, Xianhua Liu, W.
   Owen McMillan, Nassib Nassar, and Todd J. Vision, at the
   <a href="http://meetings.cshl.edu/meetings/info07.shtml"
   class="external text" rel="nofollow">2007 Genome Informatics

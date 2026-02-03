@@ -366,7 +366,7 @@ language.
 
 Each content type in Tripal corresponds roughly to a table module in
 Chado. For a listing of Chado modules, see this page:
-<a href="Chado_-_Getting_Started#Modules" class="external free"
+<a href="/wiki/Chado_-_Getting_Started#Modules" class="external free"
 rel="nofollow">http://gmod.org/wiki/Chado_-_Getting_Started#Modules</a>.
 It is normally easy to identify which Tripal module, and hence which
 content type corresponds to each Chado module as the naming is
@@ -514,7 +514,7 @@ node templates. The code is as follows:
      for($i = 0; $i < count($node->field_resource_links); $i++){
        if($node->field_resource_links[$i]['value']){
          $matches = preg_split("/\|/",$node->field_resource_links[$i]['value']);?>
-         <li><a href="<?php print $matches[1] ?>" target="_blank"><?php print $matches[0] ?></a></li><?php
+         <li><a href="/wiki/<?php print $matches[1] ?>" target="_blank"><?php print $matches[0] ?></a></li><?php
        }
      }?>
 

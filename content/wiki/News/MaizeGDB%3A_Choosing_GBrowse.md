@@ -19,7 +19,7 @@ rel="nofollow">Database</a>.* To prepare for the availability of a
 reference genome, MaizeGDB surveyed their community to assess genome
 visualization needs. This paper summarizes the survey and MaizeGDB's
 review of available browsers, and describes why they chose
-[GBrowse](../GBrowse.1 "GBrowse"). The paper finishes by describing how
+[GBrowse](../GBrowse.1). The paper finishes by describing how
 they implemented GBrowse, including the *locus lookup tool* (<a
 href="http://bioinformatics.oxfordjournals.org/cgi/content/short/26/3/434"
 class="external text" rel="nofollow">described here</a>), a MaizeGDB
@@ -55,12 +55,12 @@ class="external text" rel="nofollow">3<sup>rd</sup> International
 Biocuration Conference</a>. *Database* is an open access publication,
 making it an even better match for GMOD.
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/04/19*
+*Posted to the [GMOD News](../GMOD_News) on 2010/04/19*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

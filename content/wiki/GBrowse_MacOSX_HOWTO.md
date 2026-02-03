@@ -5,7 +5,7 @@ title: "GBrowse MacOSX HOWTO"
 
 **NOTE:** These instructions are quite old and describe how to install
 GBrowse 1.X. Since Mac OS X is very "unix-y", once libgd installed,
-[GBrowse2](GBrowse.1 "GBrowse") can be installed just like it would on
+[GBrowse2](/wiki/GBrowse.1) can be installed just like it would on
 any other unix like system. A libgd installer for Leopard and Snow
 Leopard can be obtained from <a
 href="https://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/libgd-MacOSX/20100406/"
@@ -16,7 +16,7 @@ instructions describe how to install GBrowse on these platforms.
 
 Note: One of the 2009 security updates from Apple caused problems for
 Perl, which affect cpan and installation of Perl packages. See: [Fixing
-Perl on OSX](Fixing_Perl_on_OSX "Fixing Perl on OSX")
+Perl on OSX](/wiki/Fixing_Perl_on_OSX)
 
   libGD with the double click
   installer</span>](#Installing_libGD_with_the_double_click_installer)
@@ -52,7 +52,7 @@ install GBrowse on a Mac, since _make_ is required. See step 1 of [The
 Manual Way](#The_Manual_Way) section below for more information.
 
 GBrowse has a number of prerequisites, including BioPerl, GD (which
-requires libgd), and the [MySQL](MySQL "MySQL") database. You can
+requires libgd), and the [MySQL](/wiki/MySQL) database. You can
 install these prerequisites using the Fink precompiled binary package
 manager, or from source code.
 
@@ -60,7 +60,7 @@ If you are using MySQL databases, GBrowse also requires the Perl modules
 to talk to MySQL, DBI and DBD::mysql, which are often not present in the
 Perl installations on new Macs. These can be installed using CPAN. As of
 8-1-2007, there are some problems with the CPAN installers for
-[DBD::mysql on the Mac](DBD%253A%253Amysql_on_the_Mac "DBD::mysql on the Mac").
+[DBD::mysql on the Mac](/wiki/DBD%253A%253Amysql_on_the_Mac).
 
 ## The Fink Way
 
@@ -277,7 +277,7 @@ not needed for GBrowse._
 
 Whether you installed the non-Perl prerequisites with Fink or manually,
 you will now use the GBrowse net installer to install
-[BioPerl](BioPerl "BioPerl"), GD and other perl-based prerequisites. You
+[BioPerl](/wiki/BioPerl), GD and other perl-based prerequisites. You
 will need a working Internet connection for this step.
 
 Download the <a
@@ -290,7 +290,7 @@ using "sudo":
       % perl gbrowse_netinstall.pl
 
 See the main install page for a description of command line options for
-the [netinstall script](GBrowse.1#Installation "GBrowse").
+the [netinstall script](/wiki/GBrowse.1#Installation).
 
 This will install the correct versions of GD, BioPerl, and all
 dependencies. During the process you will be asked to respond to various
@@ -352,6 +352,6 @@ to look like this:
 
 # AUTHORS
 
-[Lincoln D. Stein](User%253ALstein "User%253ALstein") \<steinl@cshl.edu\> 20:24,
+[Lincoln D. Stein](/wiki/User%253ALstein) \<steinl@cshl.edu\> 20:24,
 16 April 2007 (EDT) Adapted from instructions contributed by Yair Benita
 \<y.benita@wanadoo.nl\>.

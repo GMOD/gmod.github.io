@@ -3,14 +3,14 @@ title: "WebApollo Tutorial 2012"
 ---
 # WebApollo Tutorial 2012
 
-This [WebApollo](WebApollo.1 "WebApollo") tutorial was presented by [Ed
-Lee](User%253AElee "User%253AElee") at the [2012 GMOD Summer
-School](2012_GMOD_Summer_School "2012 GMOD Summer School").
+This [WebApollo](/wiki/WebApollo.1) tutorial was presented by [Ed
+Lee](/wiki/User%253AElee) at the [2012 GMOD Summer
+School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
 ami-a1de69c8, name: GMOD 2012 start day 3**, available in the US East
 (N. Virginia) region. See the [GMOD Cloud
-Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
+Tutorial](/wiki/GMOD_Cloud_Tutorial) for information on
 how to get this AMI.
 
 **Please note that WebApollo was not officially released when this
@@ -155,10 +155,10 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
     - DBD module for your specific RDBMS \[officially supported: DBD::Pg
       for PostgresSQL\]
 - Data generation pipeline (see [JBrowse
-  prerequisites](JBrowse.1#Prerequisites "JBrowse") for more information
+  prerequisites](/wiki/JBrowse.1#Prerequisites) for more information
   on its prerequisites)
   - Perl modules
-    - [BioPerl 1.6](BioPerl "BioPerl")
+    - [BioPerl 1.6](/wiki/BioPerl)
     - <a href="http://search.cpan.org/perldoc?JSON" class="external text"
       rel="nofollow">JSON</a>
     - <a href="http://search.cpan.org/perldoc?JSON::XS" class="external text"
@@ -236,7 +236,7 @@ need to generate a file of genomic sequence ids for the script. For
 convenience, there’s a script called `extract_seqids_from_fasta.pl` in
 the same directory which will go through a FASTA file and extract all
 the ids from the deflines. We’ll use the data from
-[MAKER](MAKER.1 "MAKER"). Let’s first create the list of genomic
+[MAKER](/wiki/MAKER.1). Let’s first create the list of genomic
 sequence ids. We'll store it in `~/scratch/seqids.txt`. We’ll want to
 add the prefix “Annotations-” to each identifier.
 
@@ -787,7 +787,7 @@ Blat documentation for information of all available options.
 ## Data generation
 
 The steps for generating data (in particular static data) are mostly
-similar to [JBrowse](JBrowse.1 "JBrowse") data generation steps, with
+similar to [JBrowse](/wiki/JBrowse.1) data generation steps, with
 some extra steps required. Most of the scripts for data generation
 reside in `/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/bin`.
 Let's go into WebApollo's JBrowse directory.
@@ -1217,4 +1217,4 @@ Now have fun annotating!!!
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
 |----|----|
-| [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo") |
+| [Has topic](/wiki/Property%253AHas_topic) | [WebApollo](/wiki/WebApollo.1) |

@@ -111,5 +111,5 @@ class="external text" rel="nofollow">Citrina discussion list</a>
 
 ## Contact
 
-[Josh Goodman](User%253AJogoodma "User%253AJogoodma") (jogoodma A\*T indiana
+[Josh Goodman](/wiki/User%253AJogoodma) (jogoodma A\*T indiana
 D\*O\*T edu )

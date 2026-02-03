@@ -53,23 +53,23 @@ The Mediawiki extension that opens and closes these sections
 
 Email: sheldon.mckay@gmail.com
 
-- Active in the <span class="pops">[GMOD](Main_Page "Main Page")</span>
+- Active in the <span class="pops">[GMOD](/wiki/Main_Page)</span>
   and
   <span class="pops"><a href="http://iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant</a></span> consortia
-- <span class="pops">[GBrowse_syn](GBrowse_syn.1 "GBrowse syn")</span>
+- <span class="pops">[GBrowse_syn](/wiki/GBrowse_syn.1)</span>
   primary developer
-- <span class="pops">[GBrowse_karyotype](GBrowse_karyotype "GBrowse karyotype")</span>
+- <span class="pops">[GBrowse_karyotype](/wiki/GBrowse_karyotype)</span>
   primary developer
-- <span class="pops">[GBrowse](GBrowse.1 "GBrowse")</span> core
+- <span class="pops">[GBrowse](/wiki/GBrowse.1)</span> core
   developer
 - <span class="pops">[GBrowse PrimerDesigner
-  plugin](PrimerDesigner.pm "PrimerDesigner.pm")</span> for inline
+  plugin](/wiki/PrimerDesigner.pm)</span> for inline
   design and selection of PCR primers
 - <span class="pops">[GBrowse Spectrogram
-  plugin](Spectrogram.pm "Spectrogram.pm")</span> for spectral analysis
+  plugin](/wiki/Spectrogram.pm)</span> for spectral analysis
   of DNA
-- Annoying [Popup_Balloons](Popup_Balloons "Popup Balloons")
+- Annoying [Popup_Balloons](/wiki/Popup_Balloons)
 
 **<a
 href="https://docs.google.com/document/d/1Getz3X-IntsEYnkIxJ5MEI8b1szMJOB4URrgTJxq_qY/pub"

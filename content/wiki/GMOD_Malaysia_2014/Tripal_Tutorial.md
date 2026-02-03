@@ -3,9 +3,9 @@ title: "GMOD Malaysia 2014/Tripal Tutorial"
 ---
 # GMOD Malaysia 2014/Tripal Tutorial
 
-This [Tripal](../Tripal.1 "Tripal") tutorial was presented by [Scott
-Cain](../User%253AScott "User%253AScott") at [GMOD Malaysia
-2014](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014"), February 2014. This
+This [Tripal](../Tripal.1) tutorial was presented by [Scott
+Cain](../User%253AScott) at [GMOD Malaysia
+2014](../GMOD_Malaysia_2014.1), February 2014. This
 tutorial requires Tripal version 1.1.
 
 The most recent Tripal tutorial can be found at the
@@ -16,7 +16,7 @@ This tutorial uses the AWS AMI ' **_named '_** in the '
 
 .
 
-Welcome to the [Tripal](../Tripal.1 "Tripal") v1.1 Tutorial. Here you
+Welcome to the [Tripal](../Tripal.1) v1.1 Tutorial. Here you
 will find instructions for installation, usage and administration of a
 Tripal-based genome website. This tutorial guides the user through the
 process of installation, setup and data loading of genomic feature data
@@ -971,7 +971,7 @@ cron launch the crontab editor:
 ```
 
 [A word on text editors such as
-nano](../Linux_Text_Editors "Linux Text Editors").
+nano](../Linux_Text_Editors).
 
 Add this line to the crontab
 
@@ -1686,7 +1686,7 @@ need to add a second cron entry:
 ```
 
 [A word on text editors such as
-nano](../Linux_Text_Editors "Linux Text Editors").
+nano](../Linux_Text_Editors).
 
 Add this line to the crontab
 
@@ -3952,7 +3952,7 @@ The Tripal API can be found on the home page:
 <a href="http://tripal.sourceforge.net/" class="external free"
 rel="nofollow">http://tripal.sourceforge.net/</a>. Information for
 developing new module can be found in the [Tripal Developer's
-Handbook](../Tripal_Developer's_Handbook "Tripal Developer's Handbook").
+Handbook](../Tripal_Developer's_Handbook).
 
 Modules that conform the the Tripal API and Drupal coding standards will
 be officially approved by the Tripal Developers Consortium. These
@@ -3968,11 +3968,11 @@ and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
 
 
-- [Tutorials](../Category%253ATutorials "Category%253ATutorials")
-- [Tripal](../Category%253ATripal "Category%253ATripal")
-- [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
+- [Tutorials](../Category%253ATutorials)
+- [Tripal](../Category%253ATripal)
+- [GMOD Schools](../Category%253AGMOD_Schools)
 
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic "Property:Has topic") | [Tripal](../Tripal.1 "Tripal")  |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Has topic](../Property%253AHas_topic) | [Tripal](../Tripal.1)  |

@@ -11,20 +11,20 @@ data-cellpadding="10">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="GMOD_Europe_2010" title="GMOD Europe 2010"><img
+<td><a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2010Europe300.png" width="300"
 height="256" alt="GMOD Europe 2010" /></a></td>
 <td>
-<a href="BioMart" title="BioMart"><img
+<a href="/wiki/BioMart" title="BioMart"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png" width="250" height="99"
 alt="BioMart" /></a>
 <hr />
-<a href="BioMart" title="BioMart">BioMart</a> Workshop
+<a href="/wiki/BioMart" title="BioMart">BioMart</a> Workshop
 
 16 September 2010<br />
 Cambridge UK
 <hr />
-Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
+Part of <a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 2010</a>
 </td>
 </tr>
@@ -41,14 +41,14 @@ Part of <a href="GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 - [Lodging and
   Other Logistics](#Lodging_and_Other_Logistics)
 
-## [BioMart](BioMart "BioMart"): Mining genomic data
+## [BioMart](/wiki/BioMart): Mining genomic data
 
-[BioMart](BioMart "BioMart") provides a single point of access to
+[BioMart](/wiki/BioMart) provides a single point of access to
 various 'omics and annotation from disparate data sources, including
 biomolecular sequence resources, pathways, protein interaction and
 annotation. This one-day workshop was aimed to biologists who may wish
 to learn how to programmatically integrate various sources over the web
-([API](Glossary#API "Glossary")/webservices), introducing the latest
+([API](/wiki/Glossary#API)/webservices), introducing the latest
 BioMart (0.8) Java libraries that supersedes the current Perl
 infrastructure. The hands-on primarily focused on the resources
 currently available at the
@@ -77,18 +77,18 @@ rel="nofollow"><em>etc</em></a>.) will be presented.
 Participants were expected to have intermediate level experience in
 writing Perl or Java programs. A background in object oriented
 programming techniques and familiarity with databases
-([MySQL](MySQL "MySQL")) would be an advantage.
+([MySQL](/wiki/MySQL)) would be an advantage.
 
 ## Instructors
 
-- [Syed Haider](User%253ASyedHaider "User%253ASyedHaider")
+- [Syed Haider](/wiki/User%253ASyedHaider)
   (<a href="http://oicr.on.ca" class="external text"
   rel="nofollow">OICR</a> and University of Cambridge)
 - <a href="http://www.ebi.ac.uk/~damian" class="external text"
   rel="nofollow">Damian Smedley</a>
   (<a href="http://www.ebi.ac.uk/" class="external text"
   rel="nofollow">EBI</a>)
-- [Junjun Zhang](User%253AJunjun "User%253AJunjun")
+- [Junjun Zhang](/wiki/User%253AJunjun)
   (<a href="http://oicr.on.ca" class="external text"
   rel="nofollow">OICR</a>)
 - Arek Kasprzyk (<a href="http://oicr.on.ca" class="external text"
@@ -107,7 +107,7 @@ G12-G13</a>, at the University of Cambridge.
 
 |----|----|
 | 9:00 - 9:20 | Coffee/Tea |
-| 9:20 - 9:45 | Introduction to [BioMart](BioMart "BioMart") and status update (by Arek Kasprzyk) |
+| 9:20 - 9:45 | Introduction to [BioMart](/wiki/BioMart) and status update (by Arek Kasprzyk) |
 | 9:45 - 12:30 | Hands-on training (Perl and Java) |
 | 12:30 - 13:30 | Lunch break (on your own) |
 | 13:30 - 15:00 | Hands-on training (Perl and Java) |
@@ -143,5 +143,5 @@ every time you see him.
 ## Lodging and Other Logistics
 
 See the [Logistics
-section](GMOD_Europe_2010#Logistics "GMOD Europe 2010") on the GMOD
+section](/wiki/GMOD_Europe_2010#Logistics) on the GMOD
 Europe 2010 page for information.

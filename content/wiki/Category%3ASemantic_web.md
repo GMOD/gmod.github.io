@@ -10,17 +10,17 @@ The following 3 pages are in this category, out of 3 total.
 ### A
 
 - [August 2009 GMOD
-  Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting")
+  Meeting](/wiki/August_2009_GMOD_Meeting)
 
 ### J
 
 - [January 2009 GMOD
-  Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting")
+  Meeting](/wiki/January_2009_GMOD_Meeting)
 
 ### W
 
 - [Web services working
-  group](Web_services_working_group "Web services working group")
+  group](/wiki/Web_services_working_group)
 
 ## Media in category "Semantic web"
 
@@ -42,5 +42,5 @@ This category contains only the following file.
 
 
 
-  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf "File:Aug2009LinkedData.pdf")
+  [Aug2009LinkedData.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Aug2009LinkedData.pdf)
   829 KB

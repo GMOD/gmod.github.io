@@ -12,17 +12,17 @@ This category has the following 4 subcategories, out of 4 total.
 
 ### N
 
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Needs Testing](Category%253ANeeds_Testing "Category%253ANeeds Testing")
+- [Needs Editing](/wiki/Category%253ANeeds_Editing)
+- [Needs Testing](/wiki/Category%253ANeeds_Testing)
 
 ### P
 
 - [Pages with problems or
-  questions](Category%253APages_with_problems_or_questions "Category%253APages with problems or questions")
+  questions](/wiki/Category%253APages_with_problems_or_questions)
 
 ### W
 
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")
+- [Wiki Tools](/wiki/Category%253AWiki_Tools)
 
 ## Pages in category "GMOD Web Site"
 
@@ -38,40 +38,40 @@ The following 9 pages are in this category, out of 9 total.
 <tr class="odd" style="vertical-align: top;">
 <td style="width: 33.3%"><h3 id="a">A</h3>
 <ul>
-<li><a href="About_This_Site" title="About This Site">About This
+<li><a href="/wiki/About_This_Site" title="About This Site">About This
 Site</a></li>
 </ul>
 <h3 id="c">C</h3>
 <ul>
-<li><a href="Categories" title="Categories">Categories</a></li>
-<li><a href="Chado_Documentation_Reorganization"
+<li><a href="/wiki/Categories" title="Categories">Categories</a></li>
+<li><a href="/wiki/Chado_Documentation_Reorganization"
 title="Chado Documentation Reorganization">Chado Documentation
 Reorganization</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="n-1">N</h3>
 <ul>
-<li><a href="News/GMOD&#39;s_GSoC_Going_Great_Guns!"
+<li><a href="/wiki/News/GMOD&#39;s_GSoC_Going_Great_Guns!"
 title="News/GMOD&#39;s GSoC Going Great Guns!">News/GMOD's GSoC Going
 Great Guns!</a></li>
-<li><a href="News/OpenID_Account_Creation_Fixed"
+<li><a href="/wiki/News/OpenID_Account_Creation_Fixed"
 title="News/OpenID Account Creation Fixed">News/OpenID Account Creation
 Fixed</a></li>
 </ul>
 <h3 id="p-1">P</h3>
 <ul>
-<li><a href="Project_Statistics" title="Project Statistics">Project
+<li><a href="/wiki/Project_Statistics" title="Project Statistics">Project
 Statistics</a></li>
 </ul></td>
 <td style="width: 33.3%"><h3 id="s">S</h3>
 <ul>
-<li><a href="September_2010_GMOD_Meeting"
+<li><a href="/wiki/September_2010_GMOD_Meeting"
 title="September 2010 GMOD Meeting">September 2010 GMOD Meeting</a></li>
-<li><a href="Site_Guidelines" title="Site Guidelines">Site
+<li><a href="/wiki/Site_Guidelines" title="Site Guidelines">Site
 Guidelines</a></li>
 </ul>
 <h3 id="w-1">W</h3>
 <ul>
-<li><a href="Wiki_linking_style_guide"
+<li><a href="/wiki/Wiki_linking_style_guide"
 title="Wiki linking style guide">Wiki linking style guide</a></li>
 </ul></td>
 </tr>

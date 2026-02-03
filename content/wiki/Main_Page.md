@@ -22,32 +22,32 @@ to update pages you're interested in.
 
 ### Get Started
 
-Read the [GMOD overview](/wiki/Overview "Overview") for the big picture, or
-visit [GMOD Components](/wiki/GMOD_Components "GMOD Components") for a
+Read the [GMOD overview](/wiki/Overview) for the big picture, or
+visit [GMOD Components](/wiki/GMOD_Components) for a
 comprehensive list of GMOD tools. If GMOD looks promising for your
 needs, consider attending the next [GMOD community
-meeting](/wiki/Meetings "Meetings").
+meeting](/wiki/Meetings).
 
 ### Get Support
 
 GMOD support is available from several different sources.
-[Support](/wiki/Support "Support") introduces each support option (this web
-site, [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists "GMOD Mailing Lists"),
-[Training and Outreach](/wiki/Training_and_Outreach "Training and Outreach")
-activities (including [GMOD Schools](/wiki/GMOD_Schools "GMOD Schools")), and
-the [GMOD Help Desk](/wiki/GMOD_Help_Desk "GMOD Help Desk")) and offers
+[Support](/wiki/Support) introduces each support option (this web
+site, [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists),
+[Training and Outreach](/wiki/Training_and_Outreach)
+activities (including [GMOD Schools](/wiki/GMOD_Schools)), and
+the [GMOD Help Desk](/wiki/GMOD_Help_Desk)) and offers
 guidance on which one is the most appropriate for your question.
 
 ### Get Involved
 
 As an open source project GMOD relies on the [donation of time and
-software](/wiki/GMOD_Membership "GMOD Membership") by groups and individuals.
+software](/wiki/GMOD_Membership) by groups and individuals.
 Contribution of new tools, adoption of existing ones, and [improving the
-documentation](/wiki/Site_Guidelines "Site Guidelines") are all welcome.
-[Existing](/wiki/MOD "MOD") and potential users are encouraged to provide
-feedback via [mailing lists](/wiki/GMOD_Mailing_Lists "GMOD Mailing Lists") or
-the [help desk](/wiki/GMOD_Help_Desk "GMOD Help Desk"). You can also attend
-project [meetings](/wiki/Meetings "Meetings").
+documentation](/wiki/Site_Guidelines) are all welcome.
+[Existing](/wiki/MOD) and potential users are encouraged to provide
+feedback via [mailing lists](/wiki/GMOD_Mailing_Lists) or
+the [help desk](/wiki/GMOD_Help_Desk). You can also attend
+project [meetings](/wiki/Meetings).
 
 ## GMOD is Social
 
@@ -72,9 +72,9 @@ height="50" alt="GMOD group on LinkedIn" /></a>
 class="external text" rel="nofollow">Join other <strong>GMOD
 users</strong> on LinkedIn</a>
 
-### [GMOD News](/wiki/GMOD_News "GMOD News")
+### [GMOD News](/wiki/GMOD_News)
 
-[Add](/wiki/GMOD_News#Adding_a_News_Item "GMOD News")
+[Add](/wiki/GMOD_News#Adding_a_News_Item)
 
 <table class="RSSMainBody" style="background:inherit;">
 <colgroup>
@@ -106,7 +106,7 @@ Survey</a></li>
 
 ## Popular GMOD Tools
 
-See the [full list of GMOD components](/wiki/GMOD_Components "GMOD Components")
+See the [full list of GMOD components](/wiki/GMOD_Components)
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
 

@@ -43,7 +43,7 @@ Subversion with the wikis is a good reference, you'll need some
 background in SVN.
 
 The loader currently resides in the SVN repository at
-<a href="svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/"
+<a href="/wiki/svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/"
 class="external free"
 rel="nofollow"><code>svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/</code></a>
 

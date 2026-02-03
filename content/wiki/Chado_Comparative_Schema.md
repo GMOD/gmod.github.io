@@ -14,7 +14,7 @@ title: "Chado Comparative Schema"
 
 This article will be used to describe strategies to store comparative
 data within Chado. To kickstart the discussion the ex-TIGR crew will
-detail their strategy as used in the [sybil system](Sybil "Sybil"). We
+detail their strategy as used in the [sybil system](/wiki/Sybil). We
 will discuss/criticize it in the discussion section.
 
 # Goal
@@ -26,17 +26,17 @@ include: Paralogous and Orthologous Gene clusters and Syntenic Blocks
 
 # Strategies
 
-## [Sybil/IGS](Sybil_Chado_Comparative_Genomics_Data "Sybil Chado Comparative Genomics Data")
+## [Sybil/IGS](/wiki/Sybil_Chado_Comparative_Genomics_Data)
 
 See [Sybil Chado Comparative Genomics
-Data](Sybil_Chado_Comparative_Genomics_Data "Sybil Chado Comparative Genomics Data")
-to see a description of the [Sybil](Sybil "Sybil")/IGS way of storing
+Data](/wiki/Sybil_Chado_Comparative_Genomics_Data)
+to see a description of the [Sybil](/wiki/Sybil)/IGS way of storing
 comparative data.
 
-## [FlyBase](FlyBase_Comparative_Genomics_Data "FlyBase Comparative Genomics Data")
+## [FlyBase](/wiki/FlyBase_Comparative_Genomics_Data)
 
 This
-[document](FlyBase_Comparative_Genomics_Data "FlyBase Comparative Genomics Data")
+[document](/wiki/FlyBase_Comparative_Genomics_Data)
 describes how FlyBase has implemented comparative data for Dmel\<-\>Dpse
 and also how it plans to implement these analyses for 10 more Drosophila
 species.
@@ -44,10 +44,10 @@ species.
 ## <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
 class="internal" title="ParameciumDB synteny.pdf">ParameciumDB</a>
 
-[ParameciumDB](ParameciumDB "ParameciumDB")
+[ParameciumDB](/wiki/ParameciumDB)
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
 class="internal" title="ParameciumDB synteny.pdf">working document</a>
 heavily inspired by the [FlyBase comparative implementation
-standard](FlyBase_Comparative_Genomics_Data "FlyBase Comparative Genomics Data").
+standard](/wiki/FlyBase_Comparative_Genomics_Data).
 This document describes how ParameciumDB models paralogy and synteny
 within a genome that has undergone whole genome duplications.

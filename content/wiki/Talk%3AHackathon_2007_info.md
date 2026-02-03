@@ -15,22 +15,22 @@ title: "Talk:Hackathon 2007 info"
     - [Wiki
       for GMOD installer?](#Wiki_for_GMOD_installer.3F)
 
-## Possible [TableEdit](TableEdit.1 "TableEdit")/Wiki hackathon projects
+## Possible [TableEdit](/wiki/TableEdit.1)/Wiki hackathon projects
 
 These are some things we are planning to work on, but could use
 hackathon help on --18:00, 26 July 2007 (EDT)
 
-### [TableEdit](TableEdit.1 "TableEdit") possible goals
+### [TableEdit](/wiki/TableEdit.1) possible goals
 
-- [TableEdit](TableEdit.1 "TableEdit")
-  <a href="Chado" class="mw-redirect" title="Chado">Chado</a> round trip
+- [TableEdit](/wiki/TableEdit.1)
+  <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> round trip
   We would like to have Wiki tables populated from Chado (this is
   relatively easy) and Chado data updated or created from the wiki. The
   hard part is probably resolving edit conflicts.
   _Since you are mostly dealing with textual information, maybe this
   isn't too much of a problem; just let everything in. If people put in
   conflicting information, let the community sort it out._
-  [Scott](User%253AScott "User%253AScott") 10:09, 27 July 2007 (EDT)
+  [Scott](/wiki/User%253AScott) 10:09, 27 July 2007 (EDT)
 - TableEdit IntraWiki Interaction
   Two or more tables in a wiki could be interconnected so that updating
   the Table in page A triggers an update of the table in page B. Use
@@ -39,7 +39,7 @@ hackathon help on --18:00, 26 July 2007 (EDT)
   This one is relatively simple and we might have a prototype before the
   hackathon - modify the wiki search system to restrict searching to a
   particular class of tables or fields.
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
+- [AJAX](/wiki/Category%253AAJAX)
 
 ### Other possible wiki for gmod goals
 
@@ -62,6 +62,6 @@ hackathon help on --18:00, 26 July 2007 (EDT)
 _Perhaps, but unless it's easy, I wouldn't make this a priority for the
 hackathon. I'm hoping to leave the hackathon with a working VMware
 appliance that already has MW installed._
-[Scott](User%253AScott "User%253AScott") 10:11, 27 July 2007 (EDT)
+[Scott](/wiki/User%253AScott) 10:11, 27 July 2007 (EDT)
 
 - Could this include an update installer?

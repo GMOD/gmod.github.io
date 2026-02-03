@@ -22,7 +22,7 @@ Resources
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-[Available on platform](Property%253AAvailable_on_platform "Property:Available on platform")
+[Available on platform](/wiki/Property%253AAvailable_on_platform)
 
 web
 ,
@@ -32,7 +32,7 @@ os x
 
 and windows
 
-[Has URL](Property%253AHas_URL "Property:Has URL")
+[Has URL](/wiki/Property%253AHas_URL)
 
 <a href="http://biocyc.org/download.shtml" class="external free"
 rel="nofollow">http://biocyc.org/download.shtml</a>
@@ -49,7 +49,7 @@ rel="nofollow">http://biocyc.org/ECOLI/</a>
 and <a href="http://biocyc.org/otherpgdbs.shtml" class="external free"
 rel="nofollow">http://biocyc.org/otherpgdbs.shtml</a>
 
-[Has description](Property%253AHas_description "Property:Has description")
+[Has description](/wiki/Property%253AHas_description)
 
 Pathway Tools is a comprehensive symbolic <span class="smw-highlighter"
 data-type="2" state="persistent"

@@ -5,10 +5,10 @@ title: "Materialized views"
 
 Materializing a view is the process of taking a view (which is a sort of
 virtual table) and turning it into a real table that can be indexed for
-better performance. While [PostgreSQL](PostgreSQL "PostgreSQL") doesn't
+better performance. While [PostgreSQL](/wiki/PostgreSQL) doesn't
 support maintenance of materialized views, we have written a command
 line tool that will handle the creation and maintenance of materialized
-views in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+views in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 running on PostgreSQL.
 
   gmod_materialized_view_tool.pl](#gmod_materialized_view_tool.pl)
@@ -139,4 +139,4 @@ and 'every day of the week' respectively.
 ## Authors
 
 The script described in this page was originally written by Chris
-Carpita and modified by [Scott Cain](User%253AScott "User%253AScott")
+Carpita and modified by [Scott Cain](/wiki/User%253AScott)

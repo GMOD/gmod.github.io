@@ -58,10 +58,10 @@ Interesting findings from the new assembly of the honey bee genome,
 including many more genes than were found in the initial assembly. The
 <a href="http://hymenopteragenome.org" class="external text"
 rel="nofollow">Hymenoptera Genome Database</a> uses numerous GMOD
-resources, including [MAKER](../MAKER.1 "MAKER") for automated genome
-annotation, [JBrowse](../JBrowse.1 "JBrowse") and
-[GBrowse](../GBrowse.1 "GBrowse") for sequence browsing, and
-[WebApollo](../WebApollo.1 "WebApollo") for community genome annotation.
+resources, including [MAKER](../MAKER.1) for automated genome
+annotation, [JBrowse](../JBrowse.1) and
+[GBrowse](../GBrowse.1) for sequence browsing, and
+[WebApollo](../WebApollo.1) for community genome annotation.
 
 
 
@@ -172,10 +172,10 @@ Space**<sup>[\[4\]](#cite_note-DOI:10.1371.2Fjournal.pone.0086728-4)</sup>
 
 The newly-sequenced <a href="http://genomsawit.mpob.gov.my/genomsawit/"
 class="external text" rel="nofollow">oil palm genome</a> used the
-[MAKER](../MAKER.1 "MAKER") automated annotation pipeline. The oil palm
+[MAKER](../MAKER.1) automated annotation pipeline. The oil palm
 is one of a number of genomics projects taking off in Malaysia at the
 moment. Perfect timing for a [GMOD
-workshop](../GMOD_Malaysia_2014.1 "GMOD Malaysia 2014")!
+workshop](../GMOD_Malaysia_2014.1)!
 
 
 
@@ -213,7 +213,7 @@ class="external text" rel="nofollow">EdwardsiellaBase</a>, and can be
 searched according to contig ID, gene ontology, protein family motif
 (Pfam), enzyme commission number, and BLAST. The alignment of the raw
 reads to the contigs can also be visualized via
-[JBrowse](../JBrowse.1 "JBrowse").
+[JBrowse](../JBrowse.1).
 
 
 Happy reading!
@@ -243,4 +243,4 @@ the GMOD project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/02/10*
+*Posted to the [GMOD News](../GMOD_News) on 2014/02/10*

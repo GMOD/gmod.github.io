@@ -11,7 +11,7 @@ width="250" height="46" alt="ImpactstoryLogo.png" /></a>
 The GMOD wiki now includes
 <a href="http://impactstory.org" class="external text"
 rel="nofollow">ImpactStory altmetrics</a> for publications cited in the
-page text. See the [Publications](../Publications "Publications") page
+page text. See the [Publications](../Publications) page
 for an example of ImpactStory altmetrics.
 
 For those unfamiliar with the term *altmetrics,* these are measures
@@ -43,4 +43,4 @@ rel="nofollow">ImpactStory</a> website.
 We hope to add impact metrics for GMOD software soon.
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

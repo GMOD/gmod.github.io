@@ -6,7 +6,7 @@ title: "PostgreSQL"
 PostgreSQL, more commonly known as Postgres, is an open source
 relational database management system (RDBMS or DBMS) that is the
 default DBMS for the Chado database schema. See [Databases and
-GMOD](Databases_and_GMOD "Databases and GMOD") for other choices, and
+GMOD](/wiki/Databases_and_GMOD) for other choices, and
 for an introduction to database terms. This page is in an introduction
 to Postgres for GMOD users.
 
@@ -24,13 +24,13 @@ to Postgres for GMOD users.
 ## Postgres in GMOD
 
 Several GMOD components can use [database management
-systems](Glossary#Database_Management_System "Glossary"). Postgres's
+systems](/wiki/Glossary#Database_Management_System). Postgres's
 primary role in GMOD is to be the DBMS for the
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 schema. Chado was developed with Postgres as its target DBMS and Chado
 off the shelf will work best with Postgres.
 
-Postgres can also be used to back [Galaxy](Galaxy.1 "Galaxy").
+Postgres can also be used to back [Galaxy](/wiki/Galaxy.1).
 
 ## What Do I Need to Know About Postgres?
 
@@ -68,14 +68,14 @@ the workings of other GMOD components.
 
 ## What About MySQL?
 
-[MySQL](MySQL "MySQL") is more popular than Postgres. Why would you ever
+[MySQL](/wiki/MySQL) is more popular than Postgres. Why would you ever
 want to pick Postgres instead of MySQL?
 
 The trade-off between MySQL and Postgres is, allowing some
 oversimplification, simplicity on one hand versus more features on the
 other hand. With either platform you will get good performance,
 excellent documentation, and well-supported software. Postgres was
-picked for <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+picked for <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 because of its rich feature set.
 
 Postgres will be a bit harder for the novice but it is only required if

@@ -22,8 +22,8 @@ href="http://zfin.org/cgi-bin/webdriver?MIval=aa-labview.apg&amp;OID=ZDB-LAB-000
 class="external text" rel="nofollow">team of computer scientists and
 biologists</a> to design, develop, and maintain the biological model
 organism database for zebrafish. ZFIN supports
-[GBrowse](../GBrowse.1 "GBrowse") and
-[InterMine](../InterMine "InterMine") deployments.
+[GBrowse](../GBrowse.1) and
+[InterMine](../InterMine) deployments.
 
 ZFIN is located at the
 <a href="http://uoregon.edu/" class="external text"
@@ -40,7 +40,7 @@ apply.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2012/03/14*
+*Posted to the [GMOD News](../GMOD_News) on 2012/03/14*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

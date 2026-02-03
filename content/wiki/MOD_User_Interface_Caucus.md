@@ -65,12 +65,12 @@ comment' link below.
 
 
 - [Face Caucus ApiDB: User Studies and Impact on
-  Development](Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development "Face Caucus ApiDB: User Studies and Impact on Development")
+  Development](/wiki/Face_Caucus_ApiDB:_User_Studies_and_Impact_on_Development)
 
 - [Face Caucus SGN: Associating Solanaceae loci with
-  phenotype](Face_Caucus_SGN%253A_Associating_Solanaceae_loci_with_phenotype "Face Caucus SGN: Associating Solanaceae loci with phenotype")
+  phenotype](/wiki/Face_Caucus_SGN%253A_Associating_Solanaceae_loci_with_phenotype)
 
 - [MOD User Interfaces: outline of
-  topics](MOD_User_Interfaces%253A_outline_of_topics "MOD User Interfaces: outline of topics")
+  topics](/wiki/MOD_User_Interfaces%253A_outline_of_topics)
 - [MOD User Interfaces: Sample of several MOD Top Level
-  functions](MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions "MOD User Interfaces: Sample of several MOD Top Level functions")
+  functions](/wiki/MOD_User_Interfaces:_Sample_of_several_MOD_Top_Level_functions)

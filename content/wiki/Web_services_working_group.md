@@ -17,15 +17,15 @@ title: "Web services working group"
 ## About Us
 
 The GMOD web services working group was formed at the [January 2009 GMOD
-Meeting](January_2009_GMOD_Meeting "January 2009 GMOD Meeting") after a
+Meeting](/wiki/January_2009_GMOD_Meeting) after a
 consensus was reached about the need for a high level API that would be
-shared across all [MODs](MOD "MOD"). This working group was created to
+shared across all [MODs](/wiki/MOD). This working group was created to
 formalize these services in order to increase interoperability between
 the various MODs.
 
 ## Members
 
-- [Josh Goodman](User%253AJogoodma "User%253AJogoodma") -
+- [Josh Goodman](/wiki/User%253AJogoodma) -
   <a href="http://flybase.org" class="external text"
   rel="nofollow">FlyBase</a>
 - Robert Buels -
@@ -43,4 +43,4 @@ class="external text" rel="nofollow">GMOD-devel</a> mailing list.
 
 ## Links of interest
 
-- [Semantic web](Category%253ASemantic_web "Category%253ASemantic web")
+- [Semantic web](/wiki/Category%253ASemantic_web)

@@ -4,17 +4,17 @@ title: "Chado Update via GFF"
 # Chado Update via GFF
 
 There has frequently been interest in updating a
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
-using a [GFF](GFF "GFF") file, and I've finally gotten around to trying
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
+using a [GFF](/wiki/GFF) file, and I've finally gotten around to trying
 to implement it. My initial efforts were centered around converting GFF
-to [Chado XML](Chado_XML "Chado XML") using
+to [Chado XML](/wiki/Chado_XML) using
 <a href="http://bioperl.org/wiki/Module:Bio::SeqIO::chadoxml"
 class="external text" rel="nofollow">Bio::SeqIO::chadoxml</a>, but I was
 never completely satisfied with the result, and I was unable to load it
-with [XORT](XORT.1 "XORT") or
+with [XORT](/wiki/XORT.1) or
 <a href="http://search.cpan.org/perldoc?DBIx::DBStag"
 class="external text" rel="nofollow">DBIx::DBStag</a>. So, I've decided
-to work on the [GFF3](GFF3 "GFF3") bulk loader `gmod_bulk_load_gff3.pl`
+to work on the [GFF3](/wiki/GFF3) bulk loader `gmod_bulk_load_gff3.pl`
 to have it do updates and deletes as well. Accordingly, I've identified
 these cases that should be addressed:
 
@@ -32,10 +32,10 @@ these cases that should be addressed:
 Perhaps the simplest case is when updating feature properties (for
 purposes of this discussion, 'feature properties' encompasses items in
 the
-[featureprop](Chado_Sequence_Module#Table:_featureprop "Chado Sequence Module"),
-[feature_cvterm](Chado_Sequence_Module#Table:_feature_cvterm "Chado Sequence Module")
+[featureprop](/wiki/Chado_Sequence_Module#Table:_featureprop),
+[feature_cvterm](/wiki/Chado_Sequence_Module#Table:_feature_cvterm)
 and
-[feature_dbxref](Chado_Sequence_Module#Table:_feature_dbxref "Chado Sequence Module")
+[feature_dbxref](/wiki/Chado_Sequence_Module#Table:_feature_dbxref)
 tables) is desired, nevertheless, it poses some possible hang ups. For
 instance:
 
@@ -50,14 +50,14 @@ instance:
 # Updating feature locations
 
 If name, type and srcfeature are the same, allow
-[featureloc](Chado_Sequence_Module#Table:_featureloc "Chado Sequence Module")
+[featureloc](/wiki/Chado_Sequence_Module#Table:_featureloc)
 updates?
 
 # Updating complete gene models
 
 If updating child features, what happens to the old features? Remove
 their
-[featureloc](Chado_Sequence_Module#Table:_featureloc "Chado Sequence Module")
+[featureloc](/wiki/Chado_Sequence_Module#Table:_featureloc)
 entries and create completely new children? Only allow this for features
 of type 'gene'?
 
@@ -74,7 +74,7 @@ Again, if name, type and srcfeature are the same, allow the delete?
   annotating new genomes: adding more dbxrefs, properties, etc. to
   existing gene features, and ability to update selected features by
   drop/replace. For the second case, if one can **Delete** via a
-  [GFF](GFF "GFF") entry, it should be easy to also **Update** the
+  [GFF](/wiki/GFF) entry, it should be easy to also **Update** the
   complete gene model.
 - For GFF input to handle these, I'd say lines like this should be able
   to trigger updates to an existing feature, where CRUDop is your
@@ -84,5 +84,5 @@ Again, if name, type and srcfeature are the same, allow the delete?
      ChrX    MyDB    gene    .    .   .    .    .      ID=MyGene2;CRUDop=UPDATE;Dbxref=SW:U1234
      ChrX    MyDB    gene    1    2   9    -    .      ID=MyGene3;CRUDop=REPLACE;Dbxref=SW:U1234;..more..
 
-[Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:48, 30 March 2007
+[Dongilbert](/wiki/User%253ADongilbert) 16:48, 30 March 2007
 (EDT)

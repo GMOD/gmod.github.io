@@ -24,7 +24,7 @@ Application Programming Interface module for the
 <a href="http://drupal.org" class="external text"
 rel="nofollow">Drupal</a> CMS which simplifies programming bioinformatic
 Drupal modules. This Drupal API is not a visualization module, like
-[Tripal](Tripal.1 "Tripal"). It is aimed for developers and seeks to
+[Tripal](/wiki/Tripal.1). It is aimed for developers and seeks to
 make the co-existence of Chado and Drupal seamless to the end-user and
 reduces the learning curve for the bioinformatic community. It was
 developed with the non-model species community in mind and is especially
@@ -67,8 +67,8 @@ engine and the custom genes4all module for visualization
 ## Drupal modules using it
 
 - The [Bioinformatics Software
-  Bench](Biosoftware_bench "Biosoftware bench")
-- The [genes4all](Genes4all "Genes4all") visualization project.
+  Bench](/wiki/Biosoftware_bench)
+- The [genes4all](/wiki/Genes4all) visualization project.
 
 ## Examples of capabilities
 
@@ -114,7 +114,7 @@ engine and the custom genes4all module for visualization
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](User%253AAlpapan "User%253AAlpapan") while at CSIRO, the
+Papanicolaou](/wiki/User%253AAlpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
 rel="nofollow">http://www.csiro.au</a>).

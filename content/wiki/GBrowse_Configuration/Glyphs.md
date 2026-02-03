@@ -10,7 +10,7 @@ GBrowse.
   <a href="../GBrowse_Configuration" class="mw-redirect"
   title="GBrowse Configuration">GBrowse Configuration</a>.*
 - *See also: [Glyphs and Glyph
-  Options](../Glyphs_and_Glyph_Options "Glyphs and Glyph Options"), a
+  Options](../Glyphs_and_Glyph_Options), a
   competing document.*
 - *See also: <a href="http://webgbrowse.cgb.indiana.edu/glyphdoc.html"
   class="external text" rel="nofollow">The Glyph Gallery</a> at
@@ -44,7 +44,7 @@ class="extiw"
 title="bp:Module:Bio::Graphics::Glyph::anchored arrow">anchored_arrow</a> | a span with vertical bases \|-----\|. If one or the other end of the feature is off-screen, the base will be replaced by an arrow. | <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::arrow"
 class="extiw" title="bp:Module:Bio::Graphics::Glyph::arrow">arrow</a> | an arrow | <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::box"
 class="extiw" title="bp:Module:Bio::Graphics::Glyph::box">box</a> | another rectangle; doesn't show subparts of features | <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::cds"
-class="extiw" title="bp:Module:Bio::Graphics::Glyph::cds">cds</a> | shows the reading frame of spliced transcripts; used in conjunction with the "coding" aggregator ([GFF2](../GFF2 "GFF2")). | <a
+class="extiw" title="bp:Module:Bio::Graphics::Glyph::cds">cds</a> | shows the reading frame of spliced transcripts; used in conjunction with the "coding" aggregator ([GFF2](../GFF2)). | <a
 href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::crossbox"
 class="extiw"
 title="bp:Module:Bio::Graphics::Glyph::crossbox">crossbox</a> | <a
@@ -100,9 +100,9 @@ class="extiw"
 title="bp:Module:Bio::Graphics::Glyph::translation">translation</a> | 1-, 3- and 6-frame translations | <a
 href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::triangle"
 class="extiw"
-title="bp:Module:Bio::Graphics::Glyph::triangle">triangle</a> | a point-like feature represented as a diamond | wormbase_transcript | yet another gene model that can show UTR segments (for features that conform to the WormBase gene schema). Used in conjunction with the "wormbase_gene" aggregator ([GFF2](../GFF2 "GFF2")). | <a
+title="bp:Module:Bio::Graphics::Glyph::triangle">triangle</a> | a point-like feature represented as a diamond | wormbase_transcript | yet another gene model that can show UTR segments (for features that conform to the WormBase gene schema). Used in conjunction with the "wormbase_gene" aggregator ([GFF2](../GFF2)). | <a
 href="http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_density.pm"
-class="external text" rel="nofollow">wiggle_density</a> | Quantitative information from wiggle files (.wig) shown as color intensity. See [GBrowse/Uploading Wiggle Tracks](../GBrowse/Uploading_Wiggle_Tracks "GBrowse/Uploading Wiggle Tracks"). | <a
+class="external text" rel="nofollow">wiggle_density</a> | Quantitative information from wiggle files (.wig) shown as color intensity. See [GBrowse/Uploading Wiggle Tracks](../GBrowse/Uploading_Wiggle_Tracks). | <a
 href="http://search.cpan.org/~lds/Bio-Graphics/lib/Bio/Graphics/Glyph/wiggle_xyplot.pm"
 class="external text" rel="nofollow">wiggle_xyplot</a> | Quantitative information from wiggle files shown as an xyplot. | <a
 href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::xyplot"

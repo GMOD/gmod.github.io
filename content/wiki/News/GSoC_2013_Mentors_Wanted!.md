@@ -16,19 +16,19 @@ Genome Informatics proposal has been accepted by Google. GSoC is a
 global program that offers student developers stipends to write code for
 various open source software projects. This year, the Genome Informatics
 group is coordinating proposals for seven big bioinformatics projects:
-[Galaxy](../Galaxy.1 "Galaxy"), [GBrowse](../GBrowse.1 "GBrowse"),
-**GMOD**, [JBrowse](../JBrowse.1 "JBrowse"),
+[Galaxy](../Galaxy.1), [GBrowse](../GBrowse.1),
+**GMOD**, [JBrowse](../JBrowse.1),
 <a href="http://reactome.org" class="external text"
 rel="nofollow">Reactome</a>, and
 <a href="http://wormbase.org" class="external text"
-rel="nofollow">Wormbase</a>. See the [GSoC wiki page](../GSoC "GSoC")
+rel="nofollow">Wormbase</a>. See the [GSoC wiki page](../GSoC)
 for more information or visit the <a
 href="http://www.google-melange.com/gsoc/org/google/gsoc2013/genomeinformatics"
 class="external text" rel="nofollow">Genome Informatics GSoC page</a>.
 
 We are still interested in new project ideas; if you have one, or you
 are interested in being a mentor, please post on the [Google Summer of
-Code page](../GSoC "GSoC").
+Code page](../GSoC).
 
 Questions or comments should be directed towards the Genome Informatics
 GSoC coordinator,
@@ -41,4 +41,4 @@ class="external text" rel="nofollow">Genome Informatics mailing list</a>.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/15*
+*Posted to the [GMOD News](../GMOD_News) on 2013/04/15*

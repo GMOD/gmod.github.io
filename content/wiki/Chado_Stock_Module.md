@@ -78,7 +78,7 @@ they have IDs, type, organism, description and may have a genotype.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -89,7 +89,7 @@ Secondary identifiers and external dbxrefs go in table:
 stock_dbxref.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_organism"
+<td><p><a href="/wiki/Chado_Tables#Table:_organism"
 title="Chado Tables">organism</a></p></td>
 <td>organism_id</td>
 <td>integer</td>
@@ -122,7 +122,7 @@ The description is the genetic description provided in the stock
 list.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -145,13 +145,13 @@ stock Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-- [stock_dbxref](Chado_Tables#Table:_stock_dbxref "Chado Tables")
-- [stock_genotype](Chado_Tables#Table:_stock_genotype "Chado Tables")
-- [stock_pub](Chado_Tables#Table:_stock_pub "Chado Tables")
-- [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables")
-- [stockcollection_stock](Chado_Tables#Table:_stockcollection_stock "Chado Tables")
-- [stockprop](Chado_Tables#Table:_stockprop "Chado Tables")
+- [stock_cvterm](/wiki/Chado_Tables#Table:_stock_cvterm)
+- [stock_dbxref](/wiki/Chado_Tables#Table:_stock_dbxref)
+- [stock_genotype](/wiki/Chado_Tables#Table:_stock_genotype)
+- [stock_pub](/wiki/Chado_Tables#Table:_stock_pub)
+- [stock_relationship](/wiki/Chado_Tables#Table:_stock_relationship)
+- [stockcollection_stock](/wiki/Chado_Tables#Table:_stockcollection_stock)
+- [stockprop](/wiki/Chado_Tables#Table:_stockprop)
 
 ------------------------------------------------------------------------
 
@@ -165,9 +165,9 @@ primary cvterms should use stock.type_id.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stock_cvterm_id | serial | *PRIMARY KEY* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_cvterm Structure
 
@@ -204,14 +204,14 @@ identifiers; primary identifiers should use stock.dbxref_id.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_stock"
+<td><p><a href="/wiki/Chado_Tables#Table:_stock"
 title="Chado Tables">stock</a></p></td>
 <td>stock_id</td>
 <td>integer</td>
 <td><em>UNIQUE#1 NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_dbxref"
+<td><p><a href="/wiki/Chado_Tables#Table:_dbxref"
 title="Chado Tables">dbxref</a></p></td>
 <td>dbxref_id</td>
 <td>integer</td>
@@ -244,8 +244,8 @@ stock_genotype -\> stock.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stock_genotype_id | serial | *PRIMARY KEY* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
-| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](/wiki/Chado_Tables#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_genotype Structure
 
@@ -261,8 +261,8 @@ computer file.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stock_pub_id | serial | *PRIMARY KEY* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_pub Structure
 
@@ -275,9 +275,9 @@ stock_pub Structure
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stock_relationship_id | serial | *PRIMARY KEY* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | rank |
 | integer | *UNIQUE#1 NOT NULL* |  |  |
 
@@ -285,7 +285,7 @@ stock_relationship Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [stock_relationship_pub](Chado_Tables#Table:_stock_relationship_pub "Chado Tables")
+- [stock_relationship_pub](/wiki/Chado_Tables#Table:_stock_relationship_pub)
 
 ------------------------------------------------------------------------
 
@@ -299,8 +299,8 @@ of a publication.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stock_relationship_pub_id | serial | *PRIMARY KEY* |
-| [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables") | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock_relationship](/wiki/Chado_Tables#Table:_stock_relationship) | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_relationship_pub Structure
 
@@ -336,7 +336,7 @@ The lab or stock center distributing the stocks in their collection.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -345,7 +345,7 @@ title="Chado Tables">cvterm</a></p></td>
 type_id is the collection type cv.</td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_contact"
+<td><p><a href="/wiki/Chado_Tables#Table:_contact"
 title="Chado Tables">contact</a></p></td>
 <td>contact_id</td>
 <td>integer</td>
@@ -376,8 +376,8 @@ stockcollection Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [stockcollection_stock](Chado_Tables#Table:_stockcollection_stock "Chado Tables")
-- [stockcollectionprop](Chado_Tables#Table:_stockcollectionprop "Chado Tables")
+- [stockcollection_stock](/wiki/Chado_Tables#Table:_stockcollection_stock)
+- [stockcollectionprop](/wiki/Chado_Tables#Table:_stockcollectionprop)
 
 ------------------------------------------------------------------------
 
@@ -391,8 +391,8 @@ contained in the collection.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stockcollection_stock_id | serial | *PRIMARY KEY* |
-| [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [stockcollection](/wiki/Chado_Tables#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockcollection_stock Structure
 
@@ -409,8 +409,8 @@ URLs.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stockcollectionprop_id | serial | *PRIMARY KEY* |
-| [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [stockcollection](/wiki/Chado_Tables#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | rank |
 | integer | *UNIQUE#1 NOT NULL* |  |  |
 
@@ -431,8 +431,8 @@ Multivalued property-value pairs must be differentiated by rank.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stockprop_id | serial | *PRIMARY KEY* |
-| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](/wiki/Chado_Tables#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | rank |
 | integer | *UNIQUE#1 NOT NULL* |  |  |
 
@@ -440,7 +440,7 @@ stockprop Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [stockprop_pub](Chado_Tables#Table:_stockprop_pub "Chado Tables")
+- [stockprop_pub](/wiki/Chado_Tables#Table:_stockprop_pub)
 
 ------------------------------------------------------------------------
 
@@ -454,8 +454,8 @@ publication.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | stockprop_pub_id | serial | *PRIMARY KEY* |
-| [stockprop](Chado_Tables#Table:_stockprop "Chado Tables") | stockprop_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [stockprop](/wiki/Chado_Tables#Table:_stockprop) | stockprop_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockprop_pub Structure
 

@@ -22,7 +22,7 @@ maintain applications for interfacing public APIs, SQL databases, and
 large data sets.
 
 The successful candidate should come from a bioinformatics background
-that includes work with [BioPerl](../BioPerl "BioPerl"), genome
+that includes work with [BioPerl](../BioPerl), genome
 databases (such as
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>),
 browsers, and annotation tools. Expertise in Java, SQL and database
@@ -36,7 +36,7 @@ rel="nofollow">CSHL jobs site</a> and search for Job ID 934.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/07/14*
+*Posted to the [GMOD News](../GMOD_News) on 2010/07/14*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

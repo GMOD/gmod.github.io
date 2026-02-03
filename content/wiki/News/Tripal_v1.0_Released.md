@@ -44,4 +44,4 @@ to those who have done so already and have helped make Tripal better.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/03/08*
+*Posted to the [GMOD News](../GMOD_News) on 2013/03/08*

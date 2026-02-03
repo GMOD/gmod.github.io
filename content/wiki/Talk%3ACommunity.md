@@ -7,4 +7,4 @@ Hello,
 
 Great idea. Unfortunately demo gives an error: The requested URL
 /communitydemo/demo.html was not found on this server.
-[Alpapan](User%253AAlpapan "User%253AAlpapan")
+[Alpapan](/wiki/User%253AAlpapan)

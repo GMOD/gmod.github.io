@@ -6,10 +6,10 @@ title: "GBrowse UCSC Plugin Install HOWTO"
 This page contains detailed installation instructions for setting up
 <a href="http://genome.ucsc.edu" class="external text"
 rel="nofollow">UCSC Genome Browser</a> comparative genomics track data
-and [GBrowse](GBrowse.1 "GBrowse")
-[plugins](GBrowse_Install_HOWTO#Plugins "GBrowse Install HOWTO") to
+and [GBrowse](/wiki/GBrowse.1)
+[plugins](/wiki/GBrowse_Install_HOWTO#Plugins) to
 display them. It assumes that you already have a working installation of
-[GBrowse](GBrowse.1 "GBrowse") and
+[GBrowse](/wiki/GBrowse.1) and
 <a href="http://www.mysql.com/" class="external text"
 rel="nofollow">MySQL</a>.
 
@@ -66,8 +66,8 @@ rel="nofollow">MySQL</a>.
 
 ## Prerequisites
 
-- A working installation of [GBrowse](GBrowse.1 "GBrowse") (see also
-  [GBrowse_Install_HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO"))
+- A working installation of [GBrowse](/wiki/GBrowse.1) (see also
+  [GBrowse_Install_HOWTO](/wiki/GBrowse_Install_HOWTO))
 - A working installation of
   <a href="http://www.mysql.com/" class="external text"
   rel="nofollow">MySQL http://www.mysql.com/</a>
@@ -203,7 +203,7 @@ that describes all tracks in that database.
     - If adding the Conservation track, also download external data
       files.
 3.  Download the [GBrowse
-    plugin](GBrowse_Install_HOWTO#Plugins "GBrowse Install HOWTO") and
+    plugin](/wiki/GBrowse_Install_HOWTO#Plugins) and
     glyph modules
 4.  Install and configure plugin(s).
 
@@ -358,7 +358,7 @@ files.
 ### Download and install the GBrowse plugin(s)
 
 The plugin and glyph modules are available by anonymous
-[Git](Glossary#Git "Glossary"):
+[Git](/wiki/Glossary#Git):
 
     git clone git://genome-source.cse.ucsc.edu/gmod-ucsc.git
 
@@ -425,7 +425,7 @@ updated and if Makefile.PL was configured with DO_XS enabled.
 Add the plugin names (UcscChain, UcscNet, and/or UcscConservation to the
 plugins setting in the appropriate .conf file(s): for GBrowse 1.52,
 *datasource*.conf; for GBrowse 2.0, GBrowse.conf. (see also
-[GBrowse_Install_HOWTO#Plugins](GBrowse_Install_HOWTO#Plugins "GBrowse Install HOWTO"))
+[GBrowse_Install_HOWTO#Plugins](/wiki/GBrowse_Install_HOWTO#Plugins))
 
 Add plugin settings like the following to *datasource*.conf:
 

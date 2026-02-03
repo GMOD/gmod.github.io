@@ -24,8 +24,8 @@ title: "XORT Dumper HOWTO"
 ## Introduction
 
 This HOWTO describes how to dump data from
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> into [Chado
-XML](Chado_XML "Chado XML") using [XORT](XORT.1 "XORT"). It is a fairly
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> into [Chado
+XML](/wiki/Chado_XML) using [XORT](/wiki/XORT.1). It is a fairly
 high level introduction to XORT dumpspecs. In this HOWTO you will be
 taken through setting up a Chado database using Ubuntu 8.04, installing
 XORT, and running some simple dumpspecs. The dumpspecs used herein start
@@ -37,13 +37,13 @@ using XORT and what is involved to do so.
 
 ## Author
 
-- [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
+- [Josh Goodman](/wiki/User%253AJogoodma)
 
 ## Prerequisites
 
 The steps outlined in this HOWTO were done on a x86 Ubuntu 8.0.4 desktop
 edition machine. It is also assumed that you have some basic knowledge
-of the <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+of the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 schema.
 
 ## System Setup
@@ -151,7 +151,7 @@ we only want to dump what we explicitly define in the dumpspec. The
 tree in the XML is to be used to restrict the rows returned by XORT.
 Here we are using a simple exact value comparison test but you can also
 use 'like' or regular expression comparison operators. Please refer to
-the [XORT](XORT.1 "XORT") documentation for a full list of supported
+the [XORT](/wiki/XORT.1) documentation for a full list of supported
 search operators. The SQL version of this dumpspec looks like this:
 
 ``` de1
@@ -295,11 +295,11 @@ to the feature table to fetch the CDS.
 
 ## More Information
 
-See the [XORT](XORT.1 "XORT") page.
+See the [XORT](/wiki/XORT.1) page.
 
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
 rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
-Or contact the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
+Or contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)

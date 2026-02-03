@@ -13,7 +13,7 @@ Content Management System (CMS). CMSs are platforms for storing,
 managing, disseminating data of any type. Often they have been used to
 drive websites, particularly the now popular 'blogs'. Of interest to
 informaticians is that some CMSs support a number of useful concepts
-such as the RDF, [XML](Glossary#XML "Glossary") and similar protocols,
+such as the RDF, [XML](/wiki/Glossary#XML) and similar protocols,
 ontologies, controlled vocabularies and the other concepts relating to
 the Semantic Web. Further, CMSs often are a complete software package
 with tools for managing community-based data, such as users, roles and
@@ -21,8 +21,8 @@ fine-grained permissions. Some are modular, allowing for users to code
 their our plugins and extend functionalities. Drupal is such as CMS. It
 is written in PHP, a language straightforward for nascent
 bioinformaticians to learn. It supports a number of database engines,
-including [MySQL](MySQL "MySQL"), Oracle and the GMOD supported
-[PostgreSQL](PostgreSQL "PostgreSQL"). Further, it is built with
+including [MySQL](/wiki/MySQL), Oracle and the GMOD supported
+[PostgreSQL](/wiki/PostgreSQL). Further, it is built with
 security in mind, has powerful user management tools, is highly modular
 allowing for plugins to be developed and deployed in a very standardized
 and streamlined fashion. Importantly, it is popular, and therefore well
@@ -39,9 +39,9 @@ rel="nofollow">http://egressive.com/article/who-uses-drupal</a>).
 The following software currently exist for biosciences.
 
 - GMOD-compatible
-  - [Tripal](Tripal.1 "Tripal")
-  - [GMOD-DBSF](Gmod-dbsf "Gmod-dbsf"),
-    [genes4all](Genes4all "Genes4all") and [Bioinformatics Software
-    Bench](Biosoftware_bench "Biosoftware bench")
+  - [Tripal](/wiki/Tripal.1)
+  - [GMOD-DBSF](/wiki/Gmod-dbsf),
+    [genes4all](/wiki/Genes4all) and [Bioinformatics Software
+    Bench](/wiki/Biosoftware_bench)
 - Others
   - Scratchpads

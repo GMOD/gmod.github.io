@@ -138,5 +138,5 @@ This simplified table contains a number of bad practices, such as the
 primary and foreign key values used, and naming conventions. We'll get
 to those.
 
-Back to <a href="Chado_Tutorial" class="mw-redirect"
+Back to <a href="/wiki/Chado_Tutorial" class="mw-redirect"
 title="Chado Tutorial">Chado Tutorial</a>.

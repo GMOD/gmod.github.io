@@ -44,7 +44,7 @@ rel="nofollow">http://gmod.svn.sourceforge.net/gmod/</a>.
 
 ## SVN Read-only Access
 
-The GMOD [SVN](Glossary#SVN "Glossary") repository can be checked out
+The GMOD [SVN](/wiki/Glossary#SVN) repository can be checked out
 through anonymous SVN with the following instruction set. The module you
 wish to check out must be specified in place of **PROJECTNAME**.
 
@@ -69,10 +69,10 @@ GMOD has migrated all projects from CVS to
 <a href="http://subversion.tigris.org/" class="external text"
 rel="nofollow">Subversion</a> as of September 15, 2009. See the [CVS to
 Subversion
-Conversion](CVS_to_Subversion_Conversion "CVS to Subversion Conversion")
+Conversion](/wiki/CVS_to_Subversion_Conversion)
 page.
 
-The old GMOD [CVS](Glossary#CVS "Glossary") repositories can be checked
+The old GMOD [CVS](/wiki/Glossary#CVS) repositories can be checked
 out through anonymous (pserver) CVS with the following instruction set.
 The module you wish to check out must be specified as the *modulename*.
 When prompted for a password for anonymous, simply press the Enter or

@@ -3,7 +3,7 @@ title: "Updating Chado"
 ---
 # Updating Chado
 
-As of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+As of <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 version 1.2, the Chado software distribution comes with a tool to
 upgrade the Chado schema from an old version (1.0 or newer) to a new
 one. This tool, gmod_update_chado.pl, will get installed with other

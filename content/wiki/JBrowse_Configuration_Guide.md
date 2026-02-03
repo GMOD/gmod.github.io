@@ -22,13 +22,13 @@ then consult this guide when you need information on specific things you
 want to do with your JBrowse.
 
 
-Check out the new [JBrowse FAQ](JBrowse_FAQ "JBrowse FAQ") page for more
+Check out the new [JBrowse FAQ](/wiki/JBrowse_FAQ) page for more
 tips on setup and configuration
-<a href="JBrowse_FAQ" class="external free"
+<a href="/wiki/JBrowse_FAQ" class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ</a>
 
-Also see the [JBrowse Desktop](JBrowse_Desktop "JBrowse Desktop") guide
-here <a href="JBrowse_Desktop" class="external free"
+Also see the [JBrowse Desktop](/wiki/JBrowse_Desktop) guide
+here <a href="/wiki/JBrowse_Desktop" class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Desktop</a>
 
 
@@ -665,7 +665,7 @@ be run before adding other tracks. In addition to formatting the
 sequence data, this script creates a track called "DNA" that displays
 the reference sequence. The simplest way to use it is with the --fasta
 option, which uses a single sequence or set of reference sequences from
-a [FASTA](Glossary#FASTA "Glossary") file:
+a [FASTA](/wiki/Glossary#FASTA) file:
 
     bin/prepare-refseqs.pl --fasta <fasta file> [options]
 
@@ -711,7 +711,7 @@ This will copy yourfile.fa and yourfile.fa.fai to the data directory
 | seqdir | The directory where the reference sequences are stored (default: \<output directory\>/seq) |
 | noseq | Causes no reference sequence track to be created. This is useful for reducing disk usage. |
 | refs | A comma-delimited list of the names of sequences to be imported as reference sequences. This option (or refid) is required when using the conf option. It is not required when the fasta or gff options are used, but it can be useful with these options, since it can be used to select which sequences JBrowse will import. |
-| refids | A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the 'feature_id' column of 'feature' table in a Chado database. |
+| refids | A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the 'feature_id' column of 'feature' table in a Chado database. |
 
 
 Note: the \`prepare-refseqs.pl --sizes chrom.sizes\` option is maybe
@@ -740,7 +740,7 @@ of these tools also adds a track configuration stanza to the
 
 Each run of this script formats a single track for JBrowse. A *flat
 file* is a data set that exists entirely in a single file. For this
-script, the file must be a [GFF3](GFF3 "GFF3"),
+script, the file must be a [GFF3](/wiki/GFF3),
 <a href="http://www.ensembl.org/info/website/upload/bed.html"
 class="external text" rel="nofollow">BED</a>, or GenBank text file.
 
@@ -792,11 +792,11 @@ FeatureTrack)
 ### biodb-to-json.pl
 
 This script uses a
-<a href="JBrowseDev/Current/Usage/ConfigFiles" class="mw-redirect"
+<a href="/wiki/JBrowseDev/Current/Usage/ConfigFiles" class="mw-redirect"
 title="JBrowseDev/Current/Usage/ConfigFiles">config file</a> to produce
 a set of feature tracks in JBrowse. It can be used to obtain information
 from any database with appropriate
-[schema](Glossary#Database_Schema "Glossary"), or from flat files.
+[schema](/wiki/Glossary#Database_Schema), or from flat files.
 Because it can produce several feature tracks in a single execution, it
 is useful for large-scale feature data entry into JBrowse.
 
@@ -1059,20 +1059,7 @@ embedded popup window showing the results of searching for that
 feature's name in NCBI's global search, and "search at NCBI" will show
 in a tooltip when the user hovers over a feature with the mouse:
 
-``` de1
-   "tracks": [
-      {
-         "label"    : "ReadingFrame",
-         "category" : "Genes",
-         "class"    : "dblhelix",
-         "key"      : "Frame usage",
-         "onClick"  : {
-             "label": "search at NCBI",
-             "url": "http://www.ncbi.nlm.nih.gov/gquery/?term={name}"
-         }
-      }
-   ...
-```
+__CODE_BLOCK_0__
 
 For details on all the options supported by **onClick**, see [Click
 Configuration Options](#Click_Configuration_Options).
@@ -1096,25 +1083,13 @@ template is automatically filled in with the feature info:
 
 
 
-``` de1
-    "onClick": {
-        "label" : "Feature name: {name}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_1__
 
 Example for HTMLFeatures, which only allows plain text descriptions but
 can support newlines (essentially uses \ for
 mouseover).
 
-``` de1
-    "onClick": {
-        "label": "Feature name {name}\nFeature start {start}\nFeature end {end}",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_2__
 
 
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
@@ -1122,13 +1097,7 @@ using this.feature to access the feature details
 
 
 
-``` de1
-    "onClick": {
-        "label": "function() { return 'Feature name: '+this.feature.get('name'); }",
-        "title" : "{name} {type}",
-        "action": "defaultDialog"
-    }
-```
+__CODE_BLOCK_3__
 
 
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but

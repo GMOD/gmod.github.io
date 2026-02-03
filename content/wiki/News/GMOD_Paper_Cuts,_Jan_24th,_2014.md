@@ -6,7 +6,7 @@ title: "News/GMOD Paper Cuts, Jan 24th, 2014"
 After a break for the festive season,
 <a href="../PAG" class="mw-redirect" title="PAG">PAG XXII</a>, and the
 [GMOD community meeting in San
-Diego](../Jan_2014_GMOD_Meeting "Jan 2014 GMOD Meeting"), GMOD Paper
+Diego](../Jan_2014_GMOD_Meeting), GMOD Paper
 Cuts is back with a selection of scholarly publications for your reading
 pleasure.
 
@@ -44,7 +44,7 @@ Your Fingertips**
 > Corynebacterium genomic resources as well as analysis tools for
 > comparative genomics and pathogenomics.
 
-A new bacterial resource that uses [JBrowse](../JBrowse.1 "JBrowse") for
+A new bacterial resource that uses [JBrowse](../JBrowse.1) for
 genome visualization. The justification for using JBrowse is
 interesting:
 
@@ -109,7 +109,7 @@ Blaxter; published on arxiv.org
 
 A fascinating study that uses genetic techniques to dig into the history
 of a host-parasite relationship. The D. viviparus genome was annotated
-using the [MAKER](../MAKER.1 "MAKER") pipeline.
+using the [MAKER](../MAKER.1) pipeline.
 
 
 **Genome of the human hookworm *Necator americanus***
@@ -136,7 +136,7 @@ using the [MAKER](../MAKER.1 "MAKER") pipeline.
 
 Another somewhat gruesome parasite, the human hookworm, which is
 responsible for causing more disease than any other soil-based helminth.
-The genome was annotated using [MAKER](../MAKER.1 "MAKER") and can be
+The genome was annotated using [MAKER](../MAKER.1) and can be
 viewed online at <a href="http://nematode.net" class="external text"
 rel="nofollow">Nematode.net</a> and
 <a href="http://wormbase.org" class="external text"
@@ -164,4 +164,4 @@ the GMOD project.
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2014/01/24*
+*Posted to the [GMOD News](../GMOD_News) on 2014/01/24*

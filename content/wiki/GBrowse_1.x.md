@@ -4,12 +4,12 @@ title: "GBrowse 1.x"
 # GBrowse 1.x
 
 This page contains documentation specific to GBrowse 1.x. We recommend
-all users upgrade to [GBrowse 2.x](GBrowse.1 "GBrowse") to take
+all users upgrade to [GBrowse 2.x](/wiki/GBrowse.1) to take
 advantage of all the features GBrowse offers.
 
 For users wanting to upgrade, please see the guide on [migrating from
 GBrowse 1.X to
-2.X](Migrating_from_GBrowse_1.X_to_2.X "Migrating from GBrowse 1.X to 2.X").
+2.X](/wiki/Migrating_from_GBrowse_1.X_to_2.X).
 
 **GBrowse 1.X** (currently 1.70) is the older series that has been in
 use since 2002. It is recommended for applications which use a single
@@ -54,20 +54,20 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 ## Installation
 
 - [GBrowse 1.X Install
-  HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO")
-- [Cygwin](GBrowse_Cygwin_HOWTO "GBrowse Cygwin HOWTO")
-- [Gentoo](GBrowse_Gentoo_HOWTO "GBrowse Gentoo HOWTO")
-- [Mac OS X](GBrowse_MacOSX_HOWTO "GBrowse MacOSX HOWTO")
-- [Ubuntu](GBrowse_Ubuntu_HOWTO "GBrowse Ubuntu HOWTO")
-- [Windows](GBrowse_Windows_HOWTO "GBrowse Windows HOWTO")
+  HOWTO](/wiki/GBrowse_Install_HOWTO)
+- [Cygwin](/wiki/GBrowse_Cygwin_HOWTO)
+- [Gentoo](/wiki/GBrowse_Gentoo_HOWTO)
+- [Mac OS X](/wiki/GBrowse_MacOSX_HOWTO)
+- [Ubuntu](/wiki/GBrowse_Ubuntu_HOWTO)
+- [Windows](/wiki/GBrowse_Windows_HOWTO)
 
 
 
 ## Configuration
 
-- <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
+- <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
   title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
 
 
-See **[Category%253AGBrowse](Category%253AGBrowse "Category%253AGBrowse")** for more
+See **[Category%253AGBrowse](/wiki/Category%253AGBrowse)** for more
 GBrowse documentation.

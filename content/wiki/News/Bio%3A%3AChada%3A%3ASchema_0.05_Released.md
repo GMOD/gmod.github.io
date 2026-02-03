@@ -4,7 +4,7 @@ title: "News/Bio%253A%253AChado%253A%253ASchema 0.05 Released"
 # News/Bio%253A%253AChado%253A%253ASchema 0.05 Released
 
 I'd like to announce a new
-[Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema")
+[Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema)
 release, version 0.05. Changes in this release:
 
 - Got POD generation working, now all classes and methods have POD,
@@ -20,17 +20,17 @@ class="external text" rel="nofollow">uploaded</a> it to
 a week ago, so it should have propagated by now to almost all of the
 CPAN mirrors.
 
-See the [Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema")
+See the [Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema)
 wiki page for more on what
-[Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema "Bio%253A%253AChado%253A%253ASchema") is and
+[Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema) is and
 what it's for.
 
-[Rob Buels](../User%253ARobertBuels "User%253ARobertBuels")
-[SGN](../Category%253ASGN "Category%253ASGN")
+[Rob Buels](../User%253ARobertBuels)
+[SGN](../Category%253ASGN)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/01/08*
+*Posted to the [GMOD News](../GMOD_News) on 2010/01/08*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

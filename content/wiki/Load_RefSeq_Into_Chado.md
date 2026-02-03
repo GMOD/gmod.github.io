@@ -3,9 +3,9 @@ title: "Load RefSeq Into Chado"
 ---
 # Load RefSeq Into Chado
 
-This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes a method for
+This [HOWTO](/wiki/Category%253AHOWTO) describes a method for
 loading the sequence data in Genbank RefSeq files into the [Chado
-database](Chado_-_Getting_Started "Chado - Getting Started").
+database](/wiki/Chado_-_Getting_Started).
 
   Sequence Files</span>](#Download_the_Sequence_Files)
 - [Convert RefSeq
@@ -23,14 +23,14 @@ database](Chado_-_Getting_Started "Chado - Getting Started").
 These steps have been used to load data from genomic RefSeq files. You
 can recognize these files by their `NC_` and `NT_` prefixes. First
 download the Genbank genome files of interest. A good source for RefSeq
-files is <a href="ftp://ftp.ncbi.nih.gov/genomes" class="external text"
+files is <a href="/wiki/ftp://ftp.ncbi.nih.gov/genomes" class="external text"
 rel="nofollow">NCBI's FTP site</a>. This website provides some files in
 GFF3 format (suffix `.gff`). Files in the Genbank format have the suffix
 `.gbk`.
 
 ## Convert RefSeq to GFF3
 
-Use the [BioPerl](BioPerl "BioPerl") script `genbank2gff3.pl`, found in
+Use the [BioPerl](/wiki/BioPerl) script `genbank2gff3.pl`, found in
 `scripts/Bio-DB-GFF/` within the BioPerl distribution. If you've
 actually installed BioPerl then the installed script will have been
 renamed `bp_genbank2gff3.pl`. Note that there's also an older
@@ -38,12 +38,12 @@ renamed `bp_genbank2gff3.pl`. Note that there's also an older
 
      >bp_genbank2gff3.pl <filename>
 
-This will create a [GFF3](GFF3 "GFF3") file. It may give several
+This will create a [GFF3](/wiki/GFF3) file. It may give several
 warnings about *unrecognized feature types*. If the feature types are
 not part of
 <a href="http://www.sequenceontology.org/" class="external text"
 rel="nofollow">SOFA</a>, you will have to hand edit the resulting
-[GFF3](GFF3 "GFF3") file to change the feature type. Any skipped
+[GFF3](/wiki/GFF3) file to change the feature type. Any skipped
 features will be printed at the end. If you want those to be part of the
 GFF3 file, you will have to add those manually as well, fixing any
 non-SOFA feature types.
@@ -51,9 +51,9 @@ non-SOFA feature types.
 ## Add an Entry for Your Organism
 
 You will need to have an entry for your species in the [Chado organism
-table](Chado_Tables#Table:_organism "Chado Tables"). If you are unsure
+table](/wiki/Chado_Tables#Table:_organism). If you are unsure
 if this entry exists log into your database and execute this
-[SQL](Glossary#SQL "Glossary") command:
+[SQL](/wiki/Glossary#SQL) command:
 
 ``` de1
 SELECT genus,species,common_name FROM organism;
@@ -84,7 +84,7 @@ to the question "What is the default organism (common name, or
 this script supports.
 
 This will load your data into the [Chado
-database](Chado_-_Getting_Started "Chado - Getting Started"). Note that
+database](/wiki/Chado_-_Getting_Started). Note that
 if there are
 non-<a href="http://www.sequenceontology.org/" class="external text"
 rel="nofollow">SOFA</a> feature types remaining in the GFF3 file the
@@ -104,6 +104,6 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 ## Authors
 
-- [Scott Cain](User%253AScott "User%253AScott")
+- [Scott Cain](/wiki/User%253AScott)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

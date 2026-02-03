@@ -115,7 +115,7 @@ Page number range[s], e.g. 457--459, viii + 664pp, lv--lvii.</td>
 <td><em>UNIQUE NOT NULL</em></td>
 </tr>
 <tr class="odd tr0">
-<td><p><a href="Chado_Tables#Table:_cvterm"
+<td><p><a href="/wiki/Chado_Tables#Table:_cvterm"
 title="Chado Tables">cvterm</a></p></td>
 <td>type_id</td>
 <td>integer</td>
@@ -154,36 +154,36 @@ pub Structure
 
 Tables referencing this one via Foreign Key Constraints:
 
-- [expression_pub](Chado_Tables#Table:_expression_pub "Chado Tables")
-- [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-- [feature_cvterm_pub](Chado_Tables#Table:_feature_cvterm_pub "Chado Tables")
-- [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-- [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables")
-- [feature_relationship_pub](Chado_Tables#Table:_feature_relationship_pub "Chado Tables")
-- [feature_relationshipprop_pub](Chado_Tables#Table:_feature_relationshipprop_pub "Chado Tables")
-- [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-- [featureloc_pub](Chado_Tables#Table:_featureloc_pub "Chado Tables")
-- [featuremap_pub](Chado_Tables#Table:_featuremap_pub "Chado Tables")
-- [featureprop_pub](Chado_Tables#Table:_featureprop_pub "Chado Tables")
-- [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-- [library_pub](Chado_Tables#Table:_library_pub "Chado Tables")
-- [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
-- [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-- [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-- [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-- [phylonode_pub](Chado_Tables#Table:_phylonode_pub "Chado Tables")
-- [phylotree_pub](Chado_Tables#Table:_phylotree_pub "Chado Tables")
-- [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-- [pub_dbxref](Chado_Tables#Table:_pub_dbxref "Chado Tables")
-- [pub_relationship](Chado_Tables#Table:_pub_relationship "Chado Tables")
-- [pubauthor](Chado_Tables#Table:_pubauthor "Chado Tables")
-- [pubprop](Chado_Tables#Table:_pubprop "Chado Tables")
-- [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-- [stock_pub](Chado_Tables#Table:_stock_pub "Chado Tables")
-- [stock_relationship_pub](Chado_Tables#Table:_stock_relationship_pub "Chado Tables")
-- [stockprop_pub](Chado_Tables#Table:_stockprop_pub "Chado Tables")
-- [study](Chado_Tables#Table:_study "Chado Tables")
-- [wwwuser_pub](Chado_Tables#Table:_wwwuser_pub "Chado Tables")
+- [expression_pub](/wiki/Chado_Tables#Table:_expression_pub)
+- [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm)
+- [feature_cvterm_pub](/wiki/Chado_Tables#Table:_feature_cvterm_pub)
+- [feature_expression](/wiki/Chado_Tables#Table:_feature_expression)
+- [feature_pub](/wiki/Chado_Tables#Table:_feature_pub)
+- [feature_relationship_pub](/wiki/Chado_Tables#Table:_feature_relationship_pub)
+- [feature_relationshipprop_pub](/wiki/Chado_Tables#Table:_feature_relationshipprop_pub)
+- [feature_synonym](/wiki/Chado_Tables#Table:_feature_synonym)
+- [featureloc_pub](/wiki/Chado_Tables#Table:_featureloc_pub)
+- [featuremap_pub](/wiki/Chado_Tables#Table:_featuremap_pub)
+- [featureprop_pub](/wiki/Chado_Tables#Table:_featureprop_pub)
+- [library_cvterm](/wiki/Chado_Tables#Table:_library_cvterm)
+- [library_pub](/wiki/Chado_Tables#Table:_library_pub)
+- [library_synonym](/wiki/Chado_Tables#Table:_library_synonym)
+- [phendesc](/wiki/Chado_Tables#Table:_phendesc)
+- [phenotype_comparison](/wiki/Chado_Tables#Table:_phenotype_comparison)
+- [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
+- [phylonode_pub](/wiki/Chado_Tables#Table:_phylonode_pub)
+- [phylotree_pub](/wiki/Chado_Tables#Table:_phylotree_pub)
+- [protocol](/wiki/Chado_Tables#Table:_protocol)
+- [pub_dbxref](/wiki/Chado_Tables#Table:_pub_dbxref)
+- [pub_relationship](/wiki/Chado_Tables#Table:_pub_relationship)
+- [pubauthor](/wiki/Chado_Tables#Table:_pubauthor)
+- [pubprop](/wiki/Chado_Tables#Table:_pubprop)
+- [stock_cvterm](/wiki/Chado_Tables#Table:_stock_cvterm)
+- [stock_pub](/wiki/Chado_Tables#Table:_stock_pub)
+- [stock_relationship_pub](/wiki/Chado_Tables#Table:_stock_relationship_pub)
+- [stockprop_pub](/wiki/Chado_Tables#Table:_stockprop_pub)
+- [study](/wiki/Chado_Tables#Table:_study)
+- [wwwuser_pub](/wiki/Chado_Tables#Table:_wwwuser_pub)
 
 ------------------------------------------------------------------------
 
@@ -195,8 +195,8 @@ Medline, ISSN, coden...
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | pub_dbxref_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
-| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](/wiki/Chado_Tables#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 |  | is_current | boolean | *NOT NULL DEFAULT true* |
 
 pub_dbxref Structure
@@ -215,9 +215,9 @@ pub.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | pub_relationship_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 
 pub_relationship Structure
 
@@ -255,7 +255,7 @@ assign IDs to authors.
 <td><em>PRIMARY KEY</em></td>
 </tr>
 <tr class="even tr1">
-<td><p><a href="Chado_Tables#Table:_pub"
+<td><p><a href="/wiki/Chado_Tables#Table:_pub"
 title="Chado Tables">pub</a></p></td>
 <td>pub_id</td>
 <td>integer</td>
@@ -317,8 +317,8 @@ Property-value pairs for a pub. Follows standard chado pattern.
 | F-Key | Name | Type | Description |
 |----|----|----|----|
 |  | pubprop_id | serial | *PRIMARY KEY* |
-| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
-| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](/wiki/Chado_Tables#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](/wiki/Chado_Tables#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 |  | value | text | *NOT NULL* |
 |  | rank | integer | *UNIQUE#1* |
 

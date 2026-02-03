@@ -4,16 +4,16 @@ title: "Apollo-Chado Integration at BovineBase: Bugs and Suggestions"
 # Apollo-Chado Integration at BovineBase: Bugs and Suggestions
 
 This was written by Justin Reese in preparation for [Hackathon
-2007](Hackathon_2007_info "Hackathon 2007 info").
+2007](/wiki/Hackathon_2007_info).
 
 In preparation for the Bovine Annotation effort, we set up a
-<a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
+<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 containing annotation evidence, allow annotators to connect via
-[Apollo](Apollo.1 "Apollo") and do their annotations (we haven't gotten
+[Apollo](/wiki/Apollo.1) and do their annotations (we haven't gotten
 Apollo-\>Chado writebacks working yet, but we'd like to eventually).
 
 We thought it might help GMOD developers improve [Apollo/Chado
-interoperability](Apollo-Chado "Apollo-Chado") to get some feedback from
+interoperability](/wiki/Apollo-Chado) to get some feedback from
 the Apollo users (annotators) and developers (the ones who set up our
 Chado db). So, below are some bug reports and suggestions that compiled
 from annotators and developers involved in the Bovine Genome annotation
@@ -86,7 +86,7 @@ something isn't clear.
     searchHitPrograms are always alignments between the reference
     sequence and a second sequence. Not sure if I can suggest an
     intelligent improvement, but would it be possible to construct
-    tracks like you do in [GBrowse](GBrowse.1 "GBrowse") (using
+    tracks like you do in [GBrowse](/wiki/GBrowse.1) (using
     aggregators and the names of the things I would like to aggregate,
     like gene/trancript/CDS) or have Apollo construct them automatically
     using some SQL magic (query for a parent, query for it's children,

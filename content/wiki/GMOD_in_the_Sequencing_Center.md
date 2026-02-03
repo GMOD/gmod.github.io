@@ -11,20 +11,20 @@ alt="GMOD in the Sequencing Center Satellite Meeting" />
 
 Sequencing centers have tremendous bioinformatics needs that GMOD can
 help address. Attend this [Satellite
-Meeting](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
+Meeting](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
 to find out what other sequencing centers are doing with GMOD, and how
 GMOD can help you help your researchers.
 
 ## Organizers
 
-- [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") - Biological Database
-  Unit Leader, and Project Lead for [ISGA](ISGA "ISGA") at the
+- [Chris Hemmerich](/wiki/User%253AChemmeri) - Biological Database
+  Unit Leader, and Project Lead for [ISGA](/wiki/ISGA) at the
   <a href="http://www.cgb.indiana.edu" class="external text"
   rel="nofollow">Center for Genomics and Bioinformatics (CGB)</a>,
   Indiana University (which is also the home of
-  [WebGBrowse](WebGBrowse.1 "WebGBrowse")).
-- [Dave Clements](User%253AClements "User%253AClements") -
-  [Galaxy](Galaxy.1 "Galaxy") project, Emory University.
+  [WebGBrowse](/wiki/WebGBrowse.1)).
+- [Dave Clements](/wiki/User%253AClements) -
+  [Galaxy](/wiki/Galaxy.1) project, Emory University.
 
 ## Topics
 
@@ -35,26 +35,26 @@ something you want to discuss, please add it here.
 Suggested Topics
 
 - Using tools like
-  <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
-  [MAKER](MAKER.1 "MAKER") and [Galaxy](Galaxy.1 "Galaxy") to help run a
+  <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
+  [MAKER](/wiki/MAKER.1) and [Galaxy](/wiki/Galaxy.1) to help run a
   sequencing center.
-- Using tools like [ISGA](ISGA "ISGA"),
-  [WebGBrowse](WebGBrowse.1 "WebGBrowse"), and
-  [Galaxy](Galaxy.1 "Galaxy") to enable your researchers to do
+- Using tools like [ISGA](/wiki/ISGA),
+  [WebGBrowse](/wiki/WebGBrowse.1), and
+  [Galaxy](/wiki/Galaxy.1) to enable your researchers to do
   bioinformatics without a bioinformatician.
 - Providing your clients with a more finished product. Provide your
   clients with a _genome server in a box_ using technology like VMware and tools
-  such as [GBrowse](GBrowse.1 "GBrowse"),
-  [JBrowse](JBrowse.1 "JBrowse"), [MAKER](MAKER.1 "MAKER"),
-  [Apollo](Apollo.1 "Apollo").
+  such as [GBrowse](/wiki/GBrowse.1),
+  [JBrowse](/wiki/JBrowse.1), [MAKER](/wiki/MAKER.1),
+  [Apollo](/wiki/Apollo.1).
 - ???
 
 ## Participants
 
 Add your name below if you are interested in attending the satellite.
 This satellite, like all [Satellite
-Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
-at [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"), is
+Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011)
+at [GMOD Americas 2011](/wiki/GMOD_Americas_2011), is
 free and open to anyone.
 
-| Participant                                              | Email                                 | Comments                                                                                                                                                                                                                                | -------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | chemmeri 'at' cgb dot indiana dpt edu | Organizer. CGB is a sequencing center that uses and develops GMOD tools.                                                                                                                                                                | [Dave Clements](User%253AClements "User%253AClements")   | clements@nescent.org                  | Organizer. Galaxy Project Community Liaison. [Galaxy](Galaxy.1 "Galaxy") includes support for sequencing center sample tracking, and can also be a useful platform for your clients to analyze their data and preserve their workflows. | Olen Sluder                                              | olen AT acm DOT org                   | Texas Biomedical Research Institute                                                                                                                                                                                                     | Surya Saha                                               | ss2489 at cornell edu                 | Cornell University                                                                                                                                                                                                                      | Zhanji Liu                                               | Delaware State                                                                                                                                                                                                                          | Daniel Quest                                             | ORNL                                                                                                                                                                                                                                    | Gary Xie                                                 | LANL                                                                                                                                                                                                                                    | Victor Ruotti                                            | Wisconsin                                                                                                                                                                                                                               | Joe Hornton                                              | GSK                                                                                                                                                                                                                                     | Madhavan Ganesh                                          | UC Berkeley                                                                                                                                                                                                                             | Kashi Ravenna                                            | University of North Texas                                                                                                                                                                                                               | Template:ThisIsATET
+| Participant                                              | Email                                 | Comments                                                                                                                                                                                                                                | -------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [Chris Hemmerich](/wiki/User%253AChemmeri) | chemmeri 'at' cgb dot indiana dpt edu | Organizer. CGB is a sequencing center that uses and develops GMOD tools.                                                                                                                                                                | [Dave Clements](/wiki/User%253AClements)   | clements@nescent.org                  | Organizer. Galaxy Project Community Liaison. [Galaxy](/wiki/Galaxy.1) includes support for sequencing center sample tracking, and can also be a useful platform for your clients to analyze their data and preserve their workflows. | Olen Sluder                                              | olen AT acm DOT org                   | Texas Biomedical Research Institute                                                                                                                                                                                                     | Surya Saha                                               | ss2489 at cornell edu                 | Cornell University                                                                                                                                                                                                                      | Zhanji Liu                                               | Delaware State                                                                                                                                                                                                                          | Daniel Quest                                             | ORNL                                                                                                                                                                                                                                    | Gary Xie                                                 | LANL                                                                                                                                                                                                                                    | Victor Ruotti                                            | Wisconsin                                                                                                                                                                                                                               | Joe Hornton                                              | GSK                                                                                                                                                                                                                                     | Madhavan Ganesh                                          | UC Berkeley                                                                                                                                                                                                                             | Kashi Ravenna                                            | University of North Texas                                                                                                                                                                                                               | Template:ThisIsATET

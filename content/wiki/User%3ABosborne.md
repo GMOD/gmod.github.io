@@ -4,7 +4,7 @@ title: "User%253ABosborne"
 # User%253ABosborne
 
 Brian Osborne was the first person to run the [GMOD Help
-Desk](GMOD_Help_Desk "GMOD Help Desk"). The GMOD web site was ported to
+Desk](/wiki/GMOD_Help_Desk). The GMOD web site was ported to
 this wiki during his tenure.
 
 On <a

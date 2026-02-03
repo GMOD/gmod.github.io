@@ -16,7 +16,7 @@ Standard registration costs \$85 and is available until March 21st;
 after that, the price rises to \$100. Registration covers the cost of
 the venue hire and refreshments; for information on accommodation,
 please see the [April 2013 GMOD
-Meeting](../April_2013_GMOD_Meeting "April 2013 GMOD Meeting") page.
+Meeting](../April_2013_GMOD_Meeting) page.
 
 If you do plan on attending the meeting (or even if you don't!), please
 do the

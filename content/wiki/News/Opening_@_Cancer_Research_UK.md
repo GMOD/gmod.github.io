@@ -28,7 +28,7 @@ rel="nofollow">Pancreas Expression Database</a>:
 
 ... contribute to the development of the pancreatic cancer
 bioinformatics platform and tools. Working mainly with
-[BioMart](../BioMart "BioMart"), the successful candidate will be
+[BioMart](../BioMart), the successful candidate will be
 expected to address bioinformatics needs related to the update,
 maintenance and expansion of the pancreatic expression database
 (<a href="http://www.pancreasexpression.org" class="external text"
@@ -43,12 +43,12 @@ See the
 class="external text" rel="nofollow">full announcement</a> for details.
 **The new application deadline is January 17.**
 
-[Dave Clements](../User%253AClements "User%253AClements")
-[GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
+[Dave Clements](../User%253AClements)
+[GMOD Help Desk](../GMOD_Help_Desk)
 
 
 
-*Posted to the [GMOD News](../GMOD_News "GMOD News") on 2010/12/14*
+*Posted to the [GMOD News](../GMOD_News) on 2010/12/14*
 
 
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
+- [News Items](../Category%253ANews_Items)

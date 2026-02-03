@@ -10,7 +10,7 @@ install the Apache webserver (httpd) and libgd with yum:
      sudo yum install gd-devel httpd
 
 and then follow the directions on [the main install
-page](GBrowse_Install_HOWTO "GBrowse Install HOWTO") for using the net
+page](/wiki/GBrowse_Install_HOWTO) for using the net
 install script. If you don't want or need the 'bleating edge', just
 ignore this note.
 
@@ -33,11 +33,11 @@ using the
 <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater_Modified"
 class="external text" rel="nofollow">yum</a> installer tool. For more
 information please see the [Biopackages
-HOWTO](Biopackages_HOWTO "Biopackages HOWTO").
+HOWTO](/wiki/Biopackages_HOWTO).
 
 # Preliminaries
 
-See the [Biopackages HOWTO](Biopackages_HOWTO "Biopackages HOWTO") for
+See the [Biopackages HOWTO](/wiki/Biopackages_HOWTO) for
 the steps to setup Biopackages on your system.
 
 # Installing Packages
@@ -79,7 +79,7 @@ rel="nofollow">http://localhost/cgi-bin/gbrowse/gbrowse/yeast_chr1</a>.
 
 # Authors
 
-[Lincoln Stein](User%253ALstein "User%253ALstein") 12:51, 17 April 2007 (EDT)
+[Lincoln Stein](/wiki/User%253ALstein) 12:51, 17 April 2007 (EDT)
 
 Some material cut and paste from www.biopackages.net, with permission
 from Allen Day.

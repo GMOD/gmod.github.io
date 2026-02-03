@@ -5,7 +5,7 @@ title: "CMap Version 2 Design"
 
 The hopes and dreams for a new generation....
 
-Up to [CMap](CMap.1 "CMap").
+Up to [CMap](/wiki/CMap.1).
 
   Interface</span>](#User_Interface)
 - [Schema](#Schema)
@@ -27,7 +27,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="234" alt="Cmap 2.0 schema.png" />
 
 - No more "cmap\_" table prefix
-- Move to support only [MySQL](MySQL "MySQL") InnoDB tables to get
+- Move to support only [MySQL](/wiki/MySQL) InnoDB tables to get
   proper foreign keys, not worry about implementing common db functions
   in Perl
 - New, slimmer schema
@@ -35,7 +35,7 @@ width="100" height="234" alt="Cmap 2.0 schema.png" />
 - In the past, there was a canonical "feature_correspondence" table and
   the "f1-\>f2" correspondence was duplicated into a
   "correspondence_lookup" table where "f1-\>f2" and "f2-\>f1" in order
-  to write simple [SQL](Glossary#SQL "Glossary"). The new version will
+  to write simple [SQL](/wiki/Glossary#SQL). The new version will
   remove the lookup table and simply have correspondences be repeated in
   the one table (making them essentially one-way).
 - Map and feature types originally existed in the database but were
@@ -84,17 +84,17 @@ width="100" height="100" alt="CMap circos.png" />
 Write loaders for:
 
 - Tab-delimited
-- [GFF](GFF "GFF")
+- [GFF](/wiki/GFF)
 - Ensembl
 - Compara
-- <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
+- <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 
 # DAS
 
 - Will write a module to plug into
   <a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
   class="external text" rel="nofollow">Proserver</a> to create
-  <a href="DAS" class="mw-redirect" title="DAS">DAS</a> server to share
-  directly from [CMap](CMap.1 "CMap"); docs to explain to users how to
+  <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> server to share
+  directly from [CMap](/wiki/CMap.1); docs to explain to users how to
   do this
 - As a DAS client to show additional features

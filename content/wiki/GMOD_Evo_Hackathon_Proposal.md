@@ -19,8 +19,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="200" alt="EvoHackathonLogo.png" />
 
 </td>
-<td><span style="font-size: 200%; line-height: 120%"><strong><a
-href="GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
+<td><span style="font-size: 200%; line-height: 120%"><strong><a href="/wiki/GMOD_Evo_Hackathon" title="GMOD Evo Hackathon">Tools for
 Evolutionary Biology Hackathon</a> Proposal</strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
@@ -32,13 +31,13 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
 
 
 This proposal was submitted to, and then approved and
-[funded](GMOD_Evo_Hackathon#Sponsorship "GMOD Evo Hackathon") by
+[funded](/wiki/GMOD_Evo_Hackathon#Sponsorship) by
 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a> in June 2010. **For up-to-date information on
 the hackathon, see the [hackathon's home
-page](GMOD_Evo_Hackathon "GMOD Evo Hackathon").**
+page](/wiki/GMOD_Evo_Hackathon).**
 
-The [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon") aims
+The [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon) aims
 to bring together key developers of GMOD components with developers from
 the evolutionary biology community to fill critical gaps in GMOD for
 evolutionary research.
@@ -147,12 +146,12 @@ a target for implementation, availability of test data, and potential
 for completing or making significant progress towards the target during
 the hackathon. Further ideas and discussion topics can be found on the
 [Supplemental
-Information](GMOD_Evo_Hackathon_Proposal_Supplemental_Information "GMOD Evo Hackathon Proposal Supplemental Information")
+Information](/wiki/GMOD_Evo_Hackathon_Proposal_Supplemental_Information)
 page.
 
 ### Viewing tools for comparative genomics data
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a popular GMOD component
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
 between genomes. It does not currently support the next-generation
 sequencing (NGS) data increasingly available for comparative genomics
@@ -173,9 +172,9 @@ base.
 ### Visualization of phylogenetic data and trees
 
 The GMOD toolkit at present does not include web-based alignment
-viewers, nor can the increasingly popular [JBrowse](JBrowse.1 "JBrowse")
+viewers, nor can the increasingly popular [JBrowse](/wiki/JBrowse.1)
 genome browser (the designated successor of
-[GBrowse](GBrowse.1 "GBrowse")) display multiple sequence alignments.
+[GBrowse](/wiki/GBrowse.1)) display multiple sequence alignments.
 GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon
@@ -204,7 +203,7 @@ Yet, phenotypic and genetic diversity data are central to many
 evolutionary research questions.
 
 A [Natural Diversity Module
-initiative](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group")
+initiative](/wiki/Chado_Natural_Diversity_Module_Working_Group)
 to address at least the deficiencies within Chado has already formed
 earlier this year. Several key developers (one of the original
 developers of the module, and the developer of Phenex, a phenotype
@@ -280,27 +279,27 @@ license.
 
 The following people comprise the organizing committee:
 
-- [Nicole Washington](User%253ANLWashington "User%253ANLWashington"), Chair
+- [Nicole Washington](/wiki/User%253ANLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
   rel="nofollow">modENCODE</a> and developer of
-  [Phenote](Phenote "Phenote"))
-- [Sheldon McKay](User%253AMckays "User%253AMckays") (University of Arizona;
+  [Phenote](/wiki/Phenote))
+- [Sheldon McKay](/wiki/User%253AMckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">The iPlant collaborative</a> and developer of
-  [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"))
-- [Robert Buels](User%253ARobertBuels "User%253ARobertBuels") (Cornell
+  [GBrowse_syn](/wiki/GBrowse_syn.1))
+- [Robert Buels](/wiki/User%253ARobertBuels) (Cornell
   University; <a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>)
-- [Scott Cain](User%253AScott "User%253AScott") (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User%253AScott) (Ontario Institute for Cancer
   Research; GMOD Program Coordinator)
-- [Hilmar Lapp](User%253AHlapp "User%253AHlapp")
+- [Hilmar Lapp](/wiki/User%253AHlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>)
-- [Dave Clements](User%253AClements "User%253AClements")
+- [Dave Clements](/wiki/User%253AClements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>; [GMOD Help
-  Desk](GMOD_Help_Desk "GMOD Help Desk"))
+  Desk](/wiki/GMOD_Help_Desk))
 
 The actual agenda will be determined by the participants. At the event,
 participants will split into subgroups. The composition and tasks of the
@@ -311,4 +310,4 @@ the event.
 After the hackathon organizers and GMOD staff will followup with
 participants to help with seeing unfinished tasks through to completion,
 similar as has been done in GMOD following the [GMOD
-Meetings](Meetings "Meetings").
+Meetings](/wiki/Meetings).

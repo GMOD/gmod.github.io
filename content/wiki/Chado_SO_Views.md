@@ -41,7 +41,7 @@ CREATE VIEW exon AS
 
 Essentially, it is a way of taking advantage of the structure of the
 ontology without calculating the
-[closure](Chado_CV_Module#Transitive_Closure "Chado CV Module"). Of
+[closure](/wiki/Chado_CV_Module#Transitive_Closure). Of
 course, a downside of this approach is that it is hard coded for a
 particular version of the Sequence Ontology, and if it changes, the
 views will need to be updated as well.

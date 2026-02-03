@@ -5,7 +5,7 @@ title: "LuceGene for Daphnia genome"
 
 Daphnia's genome now has lots of gene annotations, wanting both search
 and reporting for these. I've dusted off
-**[LuceGene](LuceGene "LuceGene")** which is designed for this, and
+**[LuceGene](/wiki/LuceGene)** which is designed for this, and
 installed over the Labor Day weekend at
 <a href="http://wfleabase.org/lucegene/" class="external free"
 rel="nofollow">http://wfleabase.org/lucegene/</a>. It was relatively
@@ -16,8 +16,8 @@ report service without special effort.
 
 Steps involved
 
-- Convert Daphnia's gene annotations (some 28,000) from [GFF](GFF "GFF")
-  to GeneSummary [XML](Glossary#XML "Glossary"). This took a simple perl
+- Convert Daphnia's gene annotations (some 28,000) from [GFF](/wiki/GFF)
+  to GeneSummary [XML](/wiki/Glossary#XML). This took a simple perl
   script and the GeneSummary XML package, at
   <a href="http://eugenes.org/gmod/gene-report-examples/"
   class="external free"
@@ -27,8 +27,8 @@ Steps involved
   sections here to generate UGP-XML. See also the
   <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/genepages/"
   class="external text" rel="nofollow">genepages project</a> in
-  <a href="SVN" class="mw-redirect" title="SVN">SVN</a>.
-- install from the [GMOD Lucegene distribution](Downloads "Downloads")
+  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>.
+- install from the [GMOD Lucegene distribution](/wiki/Downloads)
   the web archive (lucegene.war), having already a Tomcat servlet server
   for this.
 - copy and edit the `conf/ugpxml.*` configuration files, tweaking for
@@ -68,5 +68,5 @@ title="Daphnia-genepage.png">daphnia gene page</a> and
 class="internal" title="Daphnia-genepage-xml.png">gene page xml</a>.
 
 
-[Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:23, 4 September 2007
+[Dongilbert](/wiki/User%253ADongilbert) 16:23, 4 September 2007
 (EDT)

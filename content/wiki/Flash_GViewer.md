@@ -13,7 +13,7 @@ inserted into a web page to display each chromosome in a genome along
 with the locations of individual features on the chromosomes. It is
 **intended to provide an overview of the genomic locations of a specific
 set of features** - eg. genes and QTLs associated with a specific
-[phenotype](Category%253APhenotypes "Category%253APhenotypes"), etc. rather than
+[phenotype](/wiki/Category%253APhenotypes), etc. rather than
 as a way to view all features on the genome. The features can hyperlink
 out to a detail page to enable to GViewer to be used as a navigation
 tool. In addition the bands on the chromosomes can link to definable
@@ -91,7 +91,7 @@ height="54" alt="Gviewer example hs-01.jpg" />
   href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
   class="external text" rel="nofollow">here</a>. To edit the source code
   (the `.fla` file in
-  <a href="SVN" class="mw-redirect" title="SVN">SVN</a>) and publish
+  <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a>) and publish
   modified versions of the `.swf` requires Macromedia Flash Professional
   v7.
 
@@ -100,7 +100,7 @@ height="54" alt="Gviewer example hs-01.jpg" />
 Installation instructions, explanations of the Flash HTML tags, the XML
 file formats for the base map and the annotations are discussed in the
 [Flash GViewer
-documentation](Flash_GViewer_Documentation "Flash GViewer Documentation").
+documentation](/wiki/Flash_GViewer_Documentation).
 
 ## Contact
 

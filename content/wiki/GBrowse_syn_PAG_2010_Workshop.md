@@ -35,7 +35,7 @@ This page provides additional information about the
 class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
 rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
-2010](PAG_2010 "PAG 2010")) held in San Diego on January 9-13, 2009.
+2010](/wiki/PAG_2010)) held in San Diego on January 9-13, 2009.
 
 
 
@@ -57,27 +57,27 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
 
 ## Overview
 
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a tool for visualizing
+[GBrowse_syn](/wiki/GBrowse_syn.1) is a tool for visualizing
 comparative genomic data. This workshop will introduce multiple sequence
 alignment and then demonstrate how to install, configure and use the
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") comparative genomics viewer.
+[GBrowse_syn](/wiki/GBrowse_syn.1) comparative genomics viewer.
 
-GBrowse_syn is a part of the [GMOD Project](Main_Page "Main Page") and
+GBrowse_syn is a part of the [GMOD Project](/wiki/Main_Page) and
 is included in the latest release of the popular
-[GBrowse](GBrowse.1 "GBrowse") genome browser
+[GBrowse](/wiki/GBrowse.1) genome browser
 
 ## Tutorial Level
 
 **Beginner to Intermediate:** No prior knowledge of
-[GBrowse](GBrowse.1 "GBrowse") or
-[GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is required.
+[GBrowse](/wiki/GBrowse.1) or
+[GBrowse_syn](/wiki/GBrowse_syn.1) is required.
 
 The tutorial is aimed at computer-savvy biologists and computer
 scientists working with multiple sequence alignment data.
 
 ## Workshop Instructor
 
-[Sheldon McKay](User%253AMckays "User%253AMckays"),
+[Sheldon McKay](/wiki/User%253AMckays),
 <a href="http://modencode.org" class="external text"
 rel="nofollow">modENCODE</a> and
 <a href="http://www.iplantcollaborative.org/" class="external text"
@@ -99,30 +99,30 @@ data, but it will not go into detail on different analysis options.
 
 This is not a hands-on workshop. However, after the workshop, links to
 workshop materials and a VMware system image
-with [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") prerequisite software
+with [GBrowse_syn](/wiki/GBrowse_syn.1) prerequisite software
 already installed on it will be linked to from this page. You can use
 this image to walk through the material presented at this workshop.
 
 ## Workshop Tutorial
 
 You can follow along the installation and configuration steps in the
-[GBrowse_syn_PAG_tutorial](GBrowse_syn_PAG_tutorial "GBrowse syn PAG tutorial").
+[GBrowse_syn_PAG_tutorial](/wiki/GBrowse_syn_PAG_tutorial).
 
 ## Other GMOD Presentations and Meetings
 
-GMOD will have a [strong presence](PAG_2010 "PAG 2010") at PAG 2010,
+GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
-- A [workshop](GBrowse_PAG_2010_Workshop "GBrowse PAG 2010 Workshop") on
-  [GBrowse](GBrowse.1 "GBrowse"), a genome viewer that
-  [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is built on.
-- A [workshop](MAKER_PAG_2010_Workshop "MAKER PAG 2010 Workshop") on
-  [MAKER](MAKER.1 "MAKER"), a genome annotation pipeline.
+- A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
+  [GBrowse](/wiki/GBrowse.1), a genome viewer that
+  [GBrowse_syn](/wiki/GBrowse_syn.1) is built on.
+- A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
+  [MAKER](/wiki/MAKER.1), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](CMap.1 "CMap") comparative map viewer.
+  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
 
-See [PAG 2010](PAG_2010 "PAG 2010") for a more complete list of
+See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.
 
 ## Workshop Evaluation
