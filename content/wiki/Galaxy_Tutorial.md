@@ -8,7 +8,7 @@ Tutorial](/wiki/Galaxy_Tutorial)
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy.1) server. This tutorial will be taught by
-[Dave Clements](/wiki/User%3AClements) at the [2013 GMOD Summer
+[Dave Clements](/wiki/User:Clements) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
   20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
@@ -67,7 +67,7 @@ School](/wiki/2013_GMOD_Summer_School).
   on the Cloud](#Running_Galaxy_on_the_Cloud)
 
 <a href="http://galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy</a> is a data integration and analysis framework
+
 for biomedical research. Galaxy allows nearly any tool that can be run
 from the command line to be integrated into it.
 
@@ -111,25 +111,25 @@ Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
 
 <a href="http://galaxyproject.org" class="external free"
-rel="nofollow">http://galaxyproject.org</a>
+
 The Galaxy Project home page
 <a href="https://wiki.galaxyproject.org/" class="external text"
-rel="nofollow">GalaxyWiki</a>
+
 All things Galaxy.
 <a href="http://getgalaxy.org/" class="external free"
-rel="nofollow">http://getgalaxy.org/</a>
+
 Hub page for installing and managing your own Galaxy instance.
 <a href="http://usegalaxy.org/" class="external free"
-rel="nofollow">http://usegalaxy.org/</a>
+
 The Galaxy project's free public server.
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
 class="external text" rel="nofollow">Public Galaxy Servers</a>
 Current list of know publicly accessible Galaxy servers.
 <a href="http://galaxyproject.org/search/" class="external text"
-rel="nofollow">Galaxy Search</a>
+
 Integrated searches of all online Galaxy resources. Available searches:
 <a href="http://galaxyproject.org/search/web" class="external text"
-rel="nofollow">Pan-Galactic Web Search</a>
+
 Search everything
 <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>
@@ -163,10 +163,10 @@ Galaxy has several mailing lists, some of which are
 <a href="https://wiki.galaxyproject.org/Statistics"
 class="external text" rel="nofollow">very active</a>
 <a href="https://wiki.galaxyproject.org/Learn" class="external text"
-rel="nofollow">Learning hub page</a>
+
 Start here to learn how to use Galaxy.
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
-rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
+
 class="external text" rel="nofollow">@ CiteULike</a>)
 Seventeen different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a> on *1066+
@@ -175,7 +175,6 @@ publications*
 ## Create a Galaxy instance
 
 See <a href="http://getgalaxy.org" class="external free"
-rel="nofollow">http://getgalaxy.org</a>.
 
 ### Prerequisites
 
@@ -190,7 +189,7 @@ interpreter.
 Galaxy is distributed (and developed) using a distributed version
 control system called
 <a href="http://mercurial.selenic.com/" class="external text"
-rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
+
 2:0.2:
 
     $ hg --version
@@ -200,7 +199,7 @@ rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
 #### Galaxy needs a newer version of bedtools
 
 <a href="https://code.google.com/p/bedtools/" class="external text"
-rel="nofollow">bedtools</a> is installed on this machine, but it's an
+
 <a href="http://packages.ubuntu.com/precise/bedtools"
 class="external text" rel="nofollow">older version</a> without the
 `bedtools` executable in it, and Galaxy needs that. Remove the existing
@@ -227,7 +226,6 @@ then put it where it can be found.
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
-rel="nofollow">bitbucket hosting service</a>.
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
 
@@ -253,7 +251,6 @@ and update it:
     $ cp universe_wsgi.ini.sample universe_wsgi.ini
     $ nano universe_wsgi.ini
 
-
 Change the port from
 
     #port = 8080
@@ -276,7 +273,6 @@ to:
     host = 0.0.0.0
 
 This makes Galaxy visible to remote hosts, such as your laptop
-
 
 Set the *brand* to make it obvious that you are working on your Galaxy
 instance
@@ -366,13 +362,11 @@ your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 ## Running analyses with Galaxy
 
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
-rel="nofollow">Galaxy 101 tutorial</a>
 
 Without any additional configuration, there is already a lot we can do
 with our first Galaxy instance. As an example, let's work through an
 analysis that is based on, but distinct from the
 <a href="http://usegalaxy.org/galaxy101" class="external text"
-rel="nofollow">Galaxy 101 tutorial</a>.
 
 #### 1. Access your new Galaxy instance
 
@@ -479,7 +473,6 @@ databases. Select **Tools → Join, Subtract, and Group → Group**.
 
 Then *click* **Add new operation** and then *set* **Type** to **Count**.
 
-
 This tells Galaxy to walk through the dataset, create a group for each
 different value of column 4 (the gene name), and then count the number
 of records that were in that group (i.e. the number of records that had
@@ -507,7 +500,6 @@ produce a more useful dataset that we can visualize right now.
 The original gene dataset downloaded from UCSC had a meaningless score
 column. Let's replace that with the repeat count.
 
-
 First, bring the original gene information together with the counts.
 
 *Select* **Tools → Join, Subtract and Group → Join two Datasets**. *Set*
@@ -517,17 +509,14 @@ the original **Genes** dataset.
 *Join* them using column **c1** and column **c4**, which are the gene
 names in both datasets.
 
-
 This produces and a dataset with the gene repeat counts in the first two
 columns and the gene information in the rightmost columns.
-
 
 Now, use the **Cut** tool to reshuffle these columns into a valid 6
 column BED file with the repeat count in column 5, the score column.
 
 *Select* **Tools → Text Manipulation → Cut**. *Enter*
 `c3,c4,c5,c6,c2,c8`
-
 
 Finally, note that even though we now have what is a valid 6 column bed
 file, Galaxy doesn't know that. We need to tell it. We should also give
@@ -563,7 +552,6 @@ instance's administrators. Most Galaxy servers know about widely used
 assemblies, and if our datasets were for mm9 or mm10 (or any of many
 other choices), we (as users) could just tell Galaxy that and be done.
 
-
 However, these datasets aren't from a common assembly - they are from
 your sequencing center and are for some novel archaea that was pulled
 out of a mudflat (that is a bald-faced lie; it is actually *<a
@@ -587,7 +575,6 @@ and select the FASTA file from your history. *Click* **Submit**. Now,
 every time you log into this server in the future, Galaxy will know
 about this assembly. No click on the final datasets visualization icon
 again.
-
 
 And ...
 
@@ -677,7 +664,6 @@ Success.
 ## Running Galaxy on the Cloud
 
 Go to <a href="http://usegalaxy.org/cloudlaunch" class="external text"
-rel="nofollow">CloudLaunch</a>
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2b/GMOD2013GalaxyCloud.pdf"
 class="internal" title="GMOD2013GalaxyCloud.pdf">Slides</a>

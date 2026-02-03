@@ -5,7 +5,7 @@ title: "Recompiling mod fcgid to avoid truncated Perl library paths"
 
 Apache's
 <a href="http://httpd.apache.org/mod_fcgid/" class="external text"
-rel="nofollow">mod_fcgid</a> has many feature and performance advantages
+
 over the older mod_fastcgi, but has one major gotcha. Many people will
 install custom Perl libraries in non-standard locations, and then use
 the PERL5LIB environment variable to point GBrowse at those locations.

@@ -4,7 +4,7 @@ title: "JBrowse Tutorial Programming for Biology 2016"
 # JBrowse Tutorial Programming for Biology 2016
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the Programming for Biology at Cold
+Cain](/wiki/User:Scott) at the Programming for Biology at Cold
 Spring Harbor Laboratory in October 2016 using JBrowse 1.12.1.
 
 This tutorial assumes an Ubuntu virtual machine at AWS (ami-47f1b050, in
@@ -101,7 +101,7 @@ class="external text" rel="nofollow">paper</a>
 
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/JBrowse_programming_for_biology_2016.pdf"
-class="internal"
+
 title="JBrowse programming for biology 2016.pdf">JBrowse
 presentation</a>
 
@@ -400,8 +400,6 @@ inject the track configuration:
            "urlTemplate" : "../../simulated-sorted.vcf.gz",
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
-
-
 
 ### Faceted Track Selection
 

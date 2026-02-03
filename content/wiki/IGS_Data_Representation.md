@@ -76,9 +76,8 @@ are read/edited by Manatee for manual
 curation, [Sybil](/wiki/Sybil) for comparative displays and several
 web applications such as
 <a href="http://gemina.igs.umaryland.edu" class="external text"
-rel="nofollow">Gemina</a> and
+
 <a href="http://pathema.jcvi.org" class="external text"
-rel="nofollow">Pathema</a>.
 
 ## Feature naming convention
 

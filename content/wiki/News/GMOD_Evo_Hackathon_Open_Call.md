@@ -37,16 +37,13 @@ due August 25.
 
 The GMOD Evo Hackathon Organizing Committee:
 
-[Nicole Washington](../User%253ANLWashington), [Robert
-Buels](../User%253ARobertBuels), [Scott
-Cain](../User%253AScott), [Dave
-Clements](../User%253AClements), [Hilmar
-Lapp](../User%253AHlapp), and [Sheldon
-McKay](../User%253AMckays)
-
-
+[Nicole Washington](../User:NLWashington), [Robert
+Buels](../User:RobertBuels), [Scott
+Cain](../User:Scott), [Dave
+Clements](../User:Clements), [Hilmar
+Lapp](../User:Hlapp), and [Sheldon
+McKay](../User:Mckays)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/08/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

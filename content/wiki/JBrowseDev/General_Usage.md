@@ -102,7 +102,7 @@ The exact interpretation of "reference sequence" will depend on how you
 are using JBrowse. For a model organism genome database, each reference
 sequence would typically represent a chromosome or a
 <a href="http://en.wikipedia.org/wiki/Contig" class="external text"
-rel="nofollow">contig</a>. Before any feature or image tracks can be
+
 displayed in JBrowse, the reference sequences must be defined using the
 prepare-refseqs.pl formatting tool.
 
@@ -125,8 +125,6 @@ message stating that there are more reference sequences than can be
 shown. The maximum number of reference sequences in the selector is set
 by the `refSeqSelectorMaxSize` configuration variable, and defaults to
 30.
-
-
 
 ### Reference Sequence Display Order
 
@@ -203,7 +201,6 @@ Syntax used to import sequences with a config file:
 
     bin/prepare-refseqs.pl --conf <config file that references a database with sequence information> --[refs|refid] <reference sequences> [options]
 
-
 Syntax used to import a indexed fasta(i.e. a fasta file where you run
 \`samtools faidx yourfile.fa\` which outputs yourfile.fa.fai)
 
@@ -219,7 +216,6 @@ This will copy yourfile.fa and yourfile.fa.fai to the data directory
 | noseq | Causes no reference sequence track to be created. This is useful for reducing disk usage. |
 | refs | A comma-delimited list of the names of sequences to be imported as reference sequences. This option (or refid) is required when using the conf option. It is not required when the fasta or gff options are used, but it can be useful with these options, since it can be used to select which sequences JBrowse will import. |
 | refids | A comma-delimited list of the database identifiers of sequences to be imported as reference sequences. This option is useful when working with a <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database that contains data from multiple different species, and those species have at least one chromosome with the same name (e.g. chrX). In this case, the desired chromosome cannot be uniquely identified by name, so it is instead identified by ID. This ID can be found in the 'feature_id' column of 'feature' table in a Chado database. |
-
 
 Note: the \`prepare-refseqs.pl --sizes chrom.sizes\` option is maybe
 underappreciated. You can technically run jbrowse without any sequence
@@ -310,7 +306,6 @@ is useful for large-scale feature data entry into JBrowse.
 Basic usage:
 
        bin/biodb-to-json.pl --conf <config file> [options]
-
 
 For a full list of the options supported by biodb-to-json.pl, run it
 with the --help option, like:
@@ -412,26 +407,13 @@ faster and easier to configure than HTMLFeatures tracks.
 | `menuTemplate` | Optional menu configuration for right-click menus on features. Can be as large and complicated as you want. See [\#Right-click_Context_Menus](#Right-click_Context_Menus) below. If set to null or false, disables feature right-click menus. |
 | `style→maxDescriptionLength` | Maximum length, in characters, of long feature descriptions, for glyphs that support them. Default 70. |
 | `style→color` | Basic color of features. Most glyphs interpret this as the fill color of the rectangle they draw. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free" |
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'goldenrod'. | `style→mouseovercolor` | Color of the overlay drawn on top of features when the mouse hovers over them. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default rgba(0,0,0,0.3), which is semi-transparent black. | `style→borderColor` | Color of the borders drawn around boxes in glyphs. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default varies from glyph to glyph. | `style→borderWidth` | Width of the borders drawn around boxes in glyphs. Default 0.5 if borderColor specified | `style→height` | Height in pixels of glyphs. Default value varies from glyph to glyph. | `style→marginBottom` | Margin space to leave below each feature when arranging them in the view. Default 2 pixels. | `style→strandArrow` | If true, allow glyphs to draw strand arrowheads on features that are stranded. Default `true`. | `style→label` | Comma-separated list of case-insensitive feature tags to use for showing the feature's label. The first one found will be used. Default 'name,id'. | `style→textFont` | Font used for feature labels. Same format as CSS font rules. Default 'normal 12px Univers,Helvetica,Arial,sans-serif'. | `style→textColor` | Color of feature labels. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'black'. | `style→text2Color` | Color of feature descriptions. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'blue'. | `style→text2Font` | Font used for feature descriptions. Same format as CSS font rules. Default 'normal 12px Univers,Helvetica,Arial,sans-serif'. | `style→description` | Comma-separated list of case-insensitive feature tags to check for the feature's long description. The first one found will be used. Default 'note,description'. If blank no description is used. | `style→connectorColor` | Color of the connecting line drawn between boxes in glyphs that draw segments (like the Segments, ProcessedTranscript, and Gene glyphs). Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default '#333'. | `style→connectorThickness` | Thickness in pixels of the connecting line drawn between boxes in glyphs that draw segments (like the Segments, ProcessedTranscript, and Gene glyphs). Default 1. | `style→utrColor` | Color of UTR regions drawn by ProcessedTranscript and Gene glyphs. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Defaults to be a color that complements the current `style→color` value (calculated using a bit of color theory). | `subParts` | Comma-separated list of feature `type` tags that will be drawn as subparts of parent features. Defaults to all features for Segments glyphs, and 'CDS, UTR, five_prime_UTR, three_prime_UTR' for ProcessedTranscript glyphs. | `transcriptType` | For Gene glyphs, the feature `type` tag that indicates that a subfeature is a processed transcript. Defaults to 'mRNA'. | `labelTranscripts` | For Gene glyphs, if true, draw a label with the transcript's name beside each transcript, if space permits. Default true. | `style→transcriptLabelColor` | For Gene glyphs, the color of transcript name labels. Color syntax is the same as that used for CSS, specified at <a href="http://dev.w3.org/csswg/css-color/" class="external free"
-rel="nofollow">http://dev.w3.org/csswg/css-color/</a>. Default 'black'. | `style→transcriptLabelFont` | For Gene glyphs, the font used for transcript name labels. Same format as CSS font rules. Default 'normal 10px Univers,Helvetica,Arial,sans-serif'. | `impliedUTRs` | Introduced in JBrowse 1.10.5. If true, indicates that UTRs are not present in the feature data, but should be inferred from the overlap of exon and CDS features in ProcessedTranscript and Gene glyphs. Default false. Can be a callback. | `maxFeatureGlyphExpansion` | A factor to expand the glyphs by so that if subfeatures go outside the bounds of the parent feature, they will still be rendered. Default: 500bp/current scale. | `inferCdsParts ` | If a single CDS span covers the whole gene except the UTRs, then it is drawn as though it only covers the exon parts (not the introns). Default: false. Added in 1.12.3 | `disableCollapsedClick` | Disables the click action when track is collapsed. Default: false. Added in 1.13.0 | `enableCollapsedMouseover` | Enables the mouseover action when track is collapsed. Default: false. Added in 1.13.0. See the ChromHMM track in volvox sample browser for example of mouseover on the collapsed track | `topLevelFeatures` | Specifies which feature types should be considered "top-level" for this track. For example, if you have a track with gene-\>mRNA-\>CDS features, but for some reason want to only display the mRNA features, you can set topLevelFeatures=mRNA. Can also be an array of string types, or a function callback that returns an array of types. Default: all features are displayed. Added in 1.14.0 | `ItemRgb` | If set to true, the RGB colors specified in BigBed or BED files will be used for the feature's background color. Default true. Added in 1.14.0 |
 
 `CanvasFeatures` track configuration options
-
 
 Note: the "compact" displayMode for CanvasFeatures tracks uses
 style-\>height and multiplies it by 0.35 to create the compact view.
 Therefore, if you adjust style-\>height to a smaller default value, then
 you can create "ultra compact" visualizations.
-
-
-
-
 
 ### Customizing CanvasFeatures tracks with callbacks
 
@@ -481,8 +463,6 @@ about this format.
 
 `Generic track` configuration options
 
-
-
 ## Customizing parts of the 'View details' Pop-ups with callbacks
 
 Starting in JBrowse version 1.11.3, the ability to customize parts of
@@ -490,7 +470,6 @@ the 'View details' Pop-ups was added. This lets you specify functions
 that have the format fmtDetailValue\_\* or fmtDetailField\_\* to either
 change the value section of an attribute in the config, or the fieldname
 of an attribute in the config.
-
 
 Here is an example in tracks.conf format for formatting the "Name" field
 by adding a link to it:
@@ -512,7 +491,6 @@ Note: It is also easy to specify these methods in trackList.json format.
      "label": "mygff",
      "fmtDetailValue_Name": "function(name) { return '<a href=\"http://www.example.com?featurename='+name+'\">'+name+'</a>'; }"
     }
-
 
 Addendum: If the field has multiple values (e.g. multiple DBXrefs or GO
 terms), then the callback will receive an array as it's argument, and
@@ -560,7 +538,6 @@ tracks (both HTMLFeatures and CanvasFeatures) is highly configurable. To
 make something happen when left-clicking features on a track, add an
 onClick option to the feature track's configuration.
 
-
 In the example configuration below, left-clicks on features will open an
 embedded popup window showing the results of searching for that
 feature's name in NCBI's global search, and "search at NCBI" will show
@@ -597,11 +574,8 @@ In JBrowse 1.11.6, the onClick-\>label attribute was extended further to
 allow the mouse-over description to be customized using callbacks and
 template strings.
 
-
 Example for CanvasFeatures, allows full HTML tooltips. Here the {name}
 template is automatically filled in with the feature info:
-
-
 
 ``` de1
     "onClick": {
@@ -623,11 +597,8 @@ mouseover).
     }
 ```
 
-
 Example using a callback (for either HTMLFeatures or CanvasFeatures),
 using this.feature to access the feature details
-
-
 
 ``` de1
     "onClick": {
@@ -636,7 +607,6 @@ using this.feature to access the feature details
         "action": "defaultDialog"
     }
 ```
-
 
 Note: on CanvasFeatures, the action "defaultDialog" isn't necessary, but
 it is necessary for HTMLFeatures to keep the default dialog (as of
@@ -659,7 +629,6 @@ depth or feature density) to be displayed when zoomed further out than
 the store's feature density divided by `maxFeatureScreenDensity`). This
 is often used for BAM coverage on Alignments2 tracks using the
 `histograms.urlTemplate` and `histograms.storeClass` arguments.
-
 
 Example track
 
@@ -764,8 +733,6 @@ PhantomJS
 The jbrowse-rasterize tool from cpgJBrowseToolkit provides a tool for
 automating puppeteer
 <a href="https://github.com/cancerit/cgpJBrowseToolkit/"
-class="external free"
-rel="nofollow">https://github.com/cancerit/cgpJBrowseToolkit/</a>
 
 A stripped down puppeteer example is as follows
 
@@ -796,12 +763,10 @@ screenshot.js
 
 Then you can run "node screenshot.js
 <a href="http://localhost/jbrowse/" class="external free"
-rel="nofollow">http://localhost/jbrowse/</a>" or other URL argument as
+
 needed. The third, fourth, fifth and sixth arguments are optional a)
 output filename b) output width c) output height and d) zoom factor to
 make it higher resolution
-
-
 
 # External Links
 
@@ -809,5 +774,4 @@ make it higher resolution
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
-
-- [JBrowse](../Category%253AJBrowse)
+- [JBrowse](../Category:JBrowse)

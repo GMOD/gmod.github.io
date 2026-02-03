@@ -25,40 +25,39 @@ includes a VMware system image
 to work with, and detailed instructions on how to setup the component on
 that image.
 
-The [tutorials](../Category%253ATutorials) are:
+The [tutorials](../Category:Tutorials) are:
 
 - **<a href="../Apollo_Tutorial" class="mw-redirect"
   title="Apollo Tutorial">Apollo Tutorial</a>** - by [Ed
-  Lee](../User%253AElee)
+  Lee](../User:Elee)
 - **[Artemis-Chado Integration
   Tutorial](../Artemis-Chado_Integration_Tutorial)** -
-  by [Robin Houston](../User%253ARobinHouston), [Tim
-  Carver](../User%253ATimCarver) and [Giles
-  Velarde](../User%253ABuggy)
+  by [Robin Houston](../User:RobinHouston), [Tim
+  Carver](../User:TimCarver) and [Giles
+  Velarde](../User:Buggy)
 - **[BioMart Tutorial](../BioMart_Tutorial)** - by
-  [Junjun Zhang](../User%253AJunjun) and [Syed
-  Haider](../User%253ASyedHaider)
+  [Junjun Zhang](../User:Junjun) and [Syed
+  Haider](../User:SyedHaider)
 - **<a href="../Chado_Tutorial" class="mw-redirect"
   title="Chado Tutorial">Chado Tutorial</a>** - by [Scott
-  Cain](../User%253AScott), [Joshua
-  Orvis](../User%253AJorvis), and [Dave
-  Clements](../User%253AClements)
+  Cain](../User:Scott), [Joshua
+  Orvis](../User:Jorvis), and [Dave
+  Clements](../User:Clements)
 - **[GBrowse Tutorial](../GBrowse_Tutorial)** - by
-  [Scott Cain](../User%253AScott) and [Sheldon
-  McKay](../User%253AMckays)
+  [Scott Cain](../User:Scott) and [Sheldon
+  McKay](../User:Mckays)
 - **<a href="../GBrowse_syn_Tutorial" class="mw-redirect"
   title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>** - by [Sheldon
-  McKay](../User%253AMckays)
+  McKay](../User:Mckays)
 - **<a href="../JBrowse_Tutorial" class="mw-redirect"
   title="JBrowse Tutorial">JBrowse Tutorial</a>** - by [Mitch
-  Skinner](../User%253AMitchSkinner) and Ian Holmes
+  Skinner](../User:MitchSkinner) and Ian Holmes
 - **<a href="../MAKER_Tutorial" class="mw-redirect"
   title="MAKER Tutorial">MAKER Tutorial</a>** - by [Carson
-  Holt](../User%253ACarsonholt)
+  Holt](../User:Carsonholt)
 - **<a href="../Tripal_Tutorial" class="mw-redirect"
   title="Tripal Tutorial">Tripal Tutorial</a>** - by [Stephen
-  Ficklin](../User%253ASficklin)
-
+  Ficklin](../User:Sficklin)
 
 There is also a plethora of GMOD related [training and
 outreach](../Training_and_Outreach) going on in
@@ -86,7 +85,7 @@ Biology</a></strong><br />
 This includes a session on <a href="../GBrowse.1"
 title="GBrowse">GBrowse</a>.</td>
 <td><a href="http://www.cshl.edu" class="external text"
-rel="nofollow">Cold Spring Harbor Laboratory</a>, Cold Spring Harobr,
+
 NY, USA</td>
 </tr>
 <tr class="even">
@@ -96,7 +95,7 @@ href="http://www.ashg.org/2009meeting/pages/workshops.shtml#ucsc#ucsc"
 class="external text" rel="nofollow">Interactive Workshops on the UCSC
 Genome Browser and Galaxy Framework</a></strong></td>
 <td><a href="http://www.ashg.org/2009meeting/" class="external text"
-rel="nofollow">The American Society of Human Genetics (AHSG)</a>,
+
 Honolulu, Hawaii, USA</td>
 </tr>
 <tr class="odd">
@@ -122,7 +121,7 @@ class="external text" rel="nofollow">Bioinformatics Australia 2009
 title="Next Generation Sequencing">Next Generation Sequence</a> Data
 with <a href="../GBrowse.1" title="GBrowse">GBrowse</a> and <a
 href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a></strong> (poster)</td>
+
 </tr>
 <tr class="even">
 <td colspan="3" style="background-color: #cccccc"></td>
@@ -138,7 +137,7 @@ Workshop</a></strong></td>
 <tr class="even">
 <td><strong>Comparative Genomics with GMOD</strong></td>
 <td><a href="http://colloque.inra.fr/isyip" class="external text"
-rel="nofollow">Information Systems for Insect Pests</a>, Rennes,
+
 France</td>
 </tr>
 <tr class="odd">
@@ -169,12 +168,9 @@ pipeline</a></strong></td>
 </tbody>
 </table>
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

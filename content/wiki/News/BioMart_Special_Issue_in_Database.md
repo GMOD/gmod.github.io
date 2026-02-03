@@ -6,13 +6,9 @@ title: "News/BioMart Special Issue in Database"
 I am very pleased to announce the publication of the DATABASE special
 issue dedicated to the
 <a href="http://www.biomart.org/" class="external text"
-rel="nofollow">BioMart</a> project
 
 <a
 href="http://www.oxfordjournals.org/our_journals/databa/biomart_virtual_issue.html"
-class="external free"
-rel="nofollow">http://www.oxfordjournals.org/our_journals/databa/biomart_virtual_issue.html</a>
-
 
 [BioMart](../BioMart) is a unique open source data federation
 technology that provides unified access to distributed databases storing
@@ -27,10 +23,8 @@ I would like to thank and congratulate the BioMart community on this
 impressive achievement. This issue would have not been possible without
 their dedication, expertise, passion and enthusiasm.
 
-
 Arek Kasprzyk
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/11/18*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

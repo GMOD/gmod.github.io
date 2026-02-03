@@ -17,16 +17,13 @@ title: "Load GenBank into Chado"
 
 ## Abstract
 
-This [HOWTO](/wiki/Category%3AHOWTO) describes how to load
+This  describes how to load
 GenBank format files into
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. For a
 thorough discussion of this topic, including all the files that will
 allow you to set up a complete test environment see:
 
 <a href="http://eugenes.org/gmod/genbank2chado/" class="external free"
-rel="nofollow">http://eugenes.org/gmod/genbank2chado/</a>
-
-
 
 ## Summary
 
@@ -55,10 +52,8 @@ In summary, to load *Saccharomyces* chromosome X to Chado database
 
 Genbank genome data is available from NCBI genomes section,
 <a href="/wiki/ftp://ftp.ncbi.nih.gov/genomes" class="external free"
-rel="nofollow">ftp://ftp.ncbi.nih.gov/genomes</a>, or from a current
+
 mirror at <a href="/wiki/ftp://bio-mirror.net/biomirror/ncbigenomes/"
-class="external free"
-rel="nofollow">ftp://bio-mirror.net/biomirror/ncbigenomes/</a>
 
      mkdir data; cd data
 
@@ -75,8 +70,6 @@ Other sample genomes of interest:
 - `M_musculus/CHR_19/mm_ref_chr19.gbk.gz`
 - `H_sapiens/CHR_19/hs_ref_chr19.gbk.gz`
 
-
-
 ## Create GFF3 from the Genbank Files
 
 The [BioPerl](/wiki/BioPerl) script `bp_genbank2gff3.pl`
@@ -89,8 +82,6 @@ The new `-noCDS` flag is required for this. Use `-s` flag to summarize
 features found.
 
      bp_genbank2gff3.pl -noCDS -s -o . data/NC_001142.gbk.gz
-
-
 
 ## Load GFF3 into Chado
 
@@ -111,13 +102,10 @@ Check data:
       (select common_name from organism where organism_id = f.organism_id) as species \
       from feature f where f.seqlen>0 group by f.organism_id;'
 
-
-
 ## Possible Errors
 
 It's possible that you'll run into some errors coming from the input
 data itself. Some of the errors, and their fixes, are described below.
-
 
 **couldn't open /var/lib/gmod/conf directory for reading:No such file or
 directory**
@@ -131,7 +119,6 @@ or
 
      set GMOD_ROOT=/usr/local/gmod/ # bash
 
-
 **Your [GFF3](/wiki/GFF3) file uses a tag called \<term\>, but this
 term is not already in the cvterm and dbxref tables so that its value
 can be inserted into the featureprop table**
@@ -141,8 +128,6 @@ Solution: This error message will be followed by
 correct way - execute them. By the way, one explanation for this error
 is that the source sequence was curated but not with terms from the
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology</a>.
-
 
 **DBD::Pg::db pg_endcopy failed: ERROR: duplicate key violates unique
 constraint "featureprop_c1"**
@@ -155,6 +140,6 @@ these errors by hand and reload.
 
 ## Authors
 
-- [Don Gilbert](/wiki/User%3ADongilbert)
+- [Don Gilbert](/wiki/User:Dongilbert)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

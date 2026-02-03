@@ -6,18 +6,12 @@ few notable sites are:
 
 WormBase (C. elegans and related nematodes)
 <a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
-class="external free"
-rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz</a>
 
 SGD (S. cerevisiae)
 <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
-class="external free"
-rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/</a>
 
 FlyBase (D. melanogaster)
 <a href="/wiki/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
-class="external free"
-rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/</a>
 
 *Other MODs - please feel free to add your download URLs here*
 
@@ -27,7 +21,7 @@ formats into GFF3 (or [GFF2](/wiki/GFF2)) format. For example, the
 `ucsc_genes2gff.pl` script will convert gene models in Table Browser
 format files from
 <a href="http://www.genome.ucsc.edu" class="external free"
-rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](/wiki/GFF3)
+
 format. `load_genbank.pl` will download and load sequence annotation
 files in GenBank format from NCBI. The sample configuration file
 `08.genbank.conf` (located in `contrib/conf_files`) is appropriate for
@@ -51,7 +45,6 @@ provide the directory name as the argument to -fasta. (The yeast DNA is
 too large to be included in this distribution, but you can get a copy of
 it from
 <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
-rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/</a>)
 
 Run `bp_bulk_load_gff.pl -h` to see usage instructions.
 
@@ -81,7 +74,7 @@ load a gbrowse page:
 
 To improve (1), I recommend that you install the mod_perl module for
 Apache.(<a href="http://perl.apache.org" class="external free"
-rel="nofollow">http://perl.apache.org</a>). By configuring an
+
 Apache::Registry directory and placing gbrowse inside it (rather than in
 the default cgi-bin directory). The overhead for loading Perl and its
 libraries are eliminated, thereby increasing the performance of the
@@ -158,7 +151,7 @@ BLAST hits) on the existing genome features.
 If the script is called without CGI arguments, it will generate usage
 instructions. Select
 <a href="http://your.host/cgi-bin/gbrowse_img" class="external free"
-rel="nofollow">http://your.host/cgi-bin/gbrowse_img</a> to see this
+
 internal documentation.
 
 # Plugins
@@ -229,8 +222,6 @@ Please report bugs to the
 class="external text" rel="nofollow">GMOD project bug tracking
 system</a>. Email support is available by sending requests for help to
 <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
-class="external text"
-rel="nofollow">gmod-gbrowse@lists.sourceforge.net</a>.
 
 Have fun!
 

@@ -28,9 +28,6 @@ See the
 class="external text" rel="nofollow">official posting</a> for full
 details and contact information.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

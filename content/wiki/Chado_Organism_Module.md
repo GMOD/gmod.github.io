@@ -19,8 +19,6 @@ title: "Chado Organism Module"
 The organism module is designed to hold information about a given
 species, as such it is fairly simple.
 
-
-
 # More Information
 
 See the page on the related [Phylogeny
@@ -113,8 +111,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: organism_dbxref
 
 | FK | Name | Type | Description |
@@ -126,8 +122,6 @@ Tables referencing this one via Foreign Key Constraints:
 organism_dbxref Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: organismprop
 

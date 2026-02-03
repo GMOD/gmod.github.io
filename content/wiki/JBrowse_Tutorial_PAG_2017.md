@@ -4,14 +4,14 @@ title: "JBrowse Tutorial PAG 2017"
 # JBrowse Tutorial PAG 2017
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the
+Cain](/wiki/User:Scott) at the
 <a href="http://www.intlpag.org" class="external text"
-rel="nofollow">Plant and Animal Genomes</a> meeting using JBrowse
+
 1.12.1.
 
 This tutorial assumes a
 <a href="https://www.virtualbox.org" class="external text"
-rel="nofollow">VirtualBox</a> Ubuntu 16.10 instance with the tutorial
+
 bundle zip file, also available on Amazon S3: <a
 href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+PAG+2017.ova.bz2"
 class="external text" rel="nofollow">JBrowse PAG 2017.ova.bz2</a> (about
@@ -400,8 +400,6 @@ inject the track configuration:
            "urlTemplate" : "../../simulated-sorted.vcf.gz",
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
-
-
 
 ### Faceted Track Selection
 

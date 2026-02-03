@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="91" alt="Dow AgroSciences" /></a>
 
 <a href="http://www.dowagro.com/" class="external text"
-rel="nofollow">Dow AgroSciences</a> has a short term contract position
+
 available for someone with GMOD experience. The candidate proposed here
 will be responsible for three main tasks and several secondary ones:
 
@@ -33,11 +33,7 @@ will be responsible for three main tasks and several secondary ones:
 
 Interested candidates please send a resume to Mindi Dippold at
 <a href="mailto:mdippold@dow.com" class="external text"
-rel="nofollow">mdippold@dow.com</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/02/03*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

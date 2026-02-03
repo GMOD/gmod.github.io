@@ -40,17 +40,13 @@ and will continue until the position is filled.
 Miami University is an affirmative action/equal opportunity employer
 with smoke-free campuses. Consumer Information <a
 href="http://www.miami.muohio.edu/about-miami/publications-and-policies/student-consumer-info/"
-class="external free"
-rel="nofollow">http://www.miami.muohio.edu/about-miami/publications-and-policies/student-consumer-info/</a>.
+
 Hard copy upon request.
 
 See also here:
 <a href="http://bytesizebio.net/index.php/2012/03/27/you-want-this-job/"
 class="external autonumber" rel="nofollow">[1]</a>
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/03/27*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

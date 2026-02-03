@@ -60,9 +60,9 @@ title: "Chado Django HOWTO"
 
 ## Abstract
 
-This [HOWTO](/wiki/Category%3AHOWTO) describes how to use the
+This  describes how to use the
 <a href="http://www.djangoproject.com/" class="external text"
-rel="nofollow">Django</a> (Python based) framework for accessing a
+
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 The Django framework can be used to create web interfaces and command
 line tools using the Python language.
@@ -86,13 +86,12 @@ those tools.
 
 Some reasons why to use
 <a href="http://www.djangoproject.com/" class="external text"
-rel="nofollow">Django</a> as web framework
 
 ### High Performance
 
 Django is a high-level
 <a href="http://www.python.org/" class="external text"
-rel="nofollow">Python</a> web framework that encourages rapid
+
 development and clean, pragmatic design and adheres the <a
 href="http://docs.djangoproject.com/en/dev/misc/design-philosophies/#dry#dry"
 class="external text" rel="nofollow">DRY (Don't Repeat Yourself)</a>
@@ -114,19 +113,18 @@ documented framework that is well maintained by a large community.
 This makes Django a nice choice for data disclosure projects like a
 website on top of a Chado database. There are other such frameworks like
 <a href="http://turbogears.org/" class="external text"
-rel="nofollow">Turbogears</a> (Python),
+
 <a href="http://www.hibernate.org/" class="external text"
-rel="nofollow">Hibernate</a> (Java),
+
 <a href="http://www.rubyonrails.org/" class="external text"
-rel="nofollow">Ruby on Rails</a> and
+
 <a href="http://www.catalystframework.org/" class="external text"
-rel="nofollow">Catalyst</a> (Perl). Choose what you like and write a
+
 HOWTO as well. Python is the most used language in
 <a href="http://www2.cmbi.ru.nl/groups/bacterial-genomics/research/"
 class="external text" rel="nofollow">our lab</a> and thus an obvious
 first choice. (and the inventor is Dutch,
 <a href="http://www.python.org/~guido/" class="external text"
-rel="nofollow">Guido van Rossum</a>, employed by Google.)
 
 In an ideal world one would be able to upgrade the Django framework code
 without breaking anything (a practice I have been doing for almost a
@@ -138,8 +136,6 @@ Also, since the Chado schema is bigger than most schemas, the models
 will be generated or regenerated automatically. Any model specific
 functionality is attached to the model classes in such a way that the
 models can be upgraded independently without breaking the website code.
-
-
 
 ### Our Goal
 
@@ -270,7 +266,6 @@ command:
 
       example /home/gmod/projects/microgear/manage.py startapp gmod
 
-
 This will create a directory inside your project directory named `gmod`
 and contains all file scaffolds we will need later.
 
@@ -282,7 +277,7 @@ command.
       ./manage.py inspectdb > unsortedmodels.py
 
 This will create a raw `models.py` with a model for each table and view
-in the specified [Postgres](/wiki/Category%3APostgreSQL)
+in the specified
 database. We will need to edit this file a bit with a Perl script.
 
 Each foreign key relation should have a unique name in Django to support
@@ -295,8 +290,6 @@ using a model method with the following name:
 
       model.relatedmodelname_field_set.(queryfilters)
 
-
-
       example: Feature.featureset_feature.filter(srcfeature_exact='NC_004567')
 
 The table
@@ -308,7 +301,6 @@ one through the field 'feature' and the other through the field
 are referenced by featureloc records that have 'NC_004567' as source
 feature value.
 
-
 The code will also create an `admin.py` file for linking the models to
 the admin site (handy for smaller size tables like the
 [organism](/wiki/Chado_Organism_Module#Table:_organism),
@@ -317,8 +309,7 @@ the admin site (handy for smaller size tables like the
 
 Perl code is available at
 <a href="http://www.cmbi.ru.nl/~vdejager/gmod/sortmodel.pl.gz"
-class="external free"
-rel="nofollow">http://www.cmbi.ru.nl/~vdejager/gmod/sortmodel.pl.gz</a>
+
 Feel free to change and republish since my Perl is a bit rusty.
 
 Usage:
@@ -377,7 +368,6 @@ class="external text" rel="nofollow">package</a> in Python
     #this is a generic method definition for model, returning the value of the field called 'name'
     def unicode_name(self):
         return self.name
-
 
     # this is a method definition for the 'Organism' model, returning the value of the field called
     # 'common_name'
@@ -441,7 +431,7 @@ and see the models described in the `@adminmodels` array in the
 
 *example:
 <a href="http://localhost/microgear/admin/" class="external free"
-rel="nofollow">http://localhost/microgear/admin/</a>* (although this url
+
 depends on *how* you install your Django sites.
 
 ## Using Django From the Command Line

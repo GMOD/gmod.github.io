@@ -30,11 +30,8 @@ The most significant change is actually the third from the top, which
 improves speed dramatically when used with data sources that have lots
 of complex track definitions.
 
-[Lincoln Stein](../User%253ALstein)
-
-
+[Lincoln Stein](../User:Lstein)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/09/30*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -131,9 +131,9 @@ encouraged that a short form is used as the db.name.
 A W3C compliant URL with the address of a website containing information
 about the DB or authority. For example,
 <a href="http://www.ﬂybase.org" class="external free"
-rel="nofollow">http://www.ﬂybase.org</a>,
+
 <a href="http://www.geneontology.org" class="external free"
-rel="nofollow">http://www.geneontology.org</a>. The URL is intended for
+
 humans rather than software agents.
 
 ### About URI

@@ -16,8 +16,6 @@ via user authentication.
 - *See also: [GBrowse Install
   HOWTO](../GBrowse_Install_HOWTO).*
 
-
-
   GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
 - [Running
   GBrowse under modperl](#Running_GBrowse_under_modperl)
@@ -46,7 +44,7 @@ via user authentication.
 ## Running GBrowse under FastCGI
 
 <a href="http://www.fastcgi.com/drupal/" class="external text"
-rel="nofollow">FastCGI</a> is a web protocol for generating dynamic that
+
 replaces the usual CGI mechanism. The first time a script is requested,
 FastCGI launches that script as a long-running process. Subsequent
 requests are forwarded to that process. Because startup time is
@@ -56,9 +54,9 @@ GBrowse is FastCGI ready. To take advantage of this facility, you will
 need a version of Apache equipped with FastCGI support, and a short
 Apache configuration stanza for GBrowse. There are two FastCGI Apache
 modules: <a href="http://www.fastcgi.com/dist/" class="external text"
-rel="nofollow">mod_fastcgi</a> and
+
 <a href="http://httpd.apache.org/mod_fcgid/" class="external text"
-rel="nofollow">mod_fcgid</a>. In our experience, mod_fastcgi is somewhat
+
 faster than mod_fcgid when working with GBrowse. If you have a binary
 distribution, please install the appropriate package:
 *libapache2-mod-fastcgi* or *libapache2-mod-fcgid* for APT/Debian
@@ -77,7 +75,7 @@ web server's configuration directory (depending on your system,
 /etc/httpd/conf.d/gbrowse2.conf, or similar). If this file is already
 installed, then you are all done. Fetch URL
 *<a href="http://localhost/fgb2/gbrowse" class="external free"
-rel="nofollow">http://localhost/fgb2/gbrowse</a>* and compare the
+
 performance to GBrowse running as a CGI script.
 
 If you declined to have the configuration script create this file and
@@ -101,7 +99,7 @@ into the site configuration file directory, /etc/apache/conf.d (or
 similar). Restart Apache to pick up the configuration file changes and
 fetch the URL
 *<a href="http://localhost/fgb2/gbrowse" class="external free"
-rel="nofollow">http://localhost/fgb2/gbrowse</a>*. You should notice a
+
 marked improvement in load and update speed. The improvement will be
 particularly noticeable if you combine FastCGI with a rendering slave,
 as described in [Running a GBrowse2 Render
@@ -114,7 +112,7 @@ about where things are going wrong.
 ## Running GBrowse under modperl
 
 <a href="http://perl.apache.org/" class="external text"
-rel="nofollow">ModPerl</a> is an Apache extension that embeds a Perl
+
 interpreter in the Apache process. Unfortunately signal handling is
 inconsistent among different combinations of Perl, mod_perl, and Apache,
 and **mod_perl is no longer supported by GBrowse2**. Please use FastCGI
@@ -132,7 +130,7 @@ allow users to search for public shared tracks and selectively share
 custom tracks with each other. The user accounts feature also allows
 users to login using an
 <a href="http://openid.net/" class="external text"
-rel="nofollow">OpenID</a>, such as one obtained from Yahoo or Flickr, or
+
 to associate one or several OpenIDs with their account.
 
 Once user accounts are installed, you may use a special administrator's
@@ -156,28 +154,28 @@ additional libraries and modules are required for basic functionality:
 **Digest::SHA**
 For creating and storing passwords. Available from
 <a href="http://www.cpan.org" class="external text"
-rel="nofollow">CPAN</a> or as Debian package or as Debian package
+
 libdigest-sha-perl.
 **Crypt::SSLeay**
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
-rel="nofollow">CPAN</a> or as Debian package libcrypt-ssleay-perl. This
+
 module in turn requires the
 <a href="http://www.openssl.org/" class="external text"
-rel="nofollow">OpenSSL package</a>, Debian package *libssl-dev*.
+
 **Math::BigInt::Pari** or **Math::BigInt::GMP**
 These libraries speed up Net::OpenID::Consumer, and in particular reduce
 the time needed to run the Net::OpenID::Consumer tests. To use the Pari
 module you will first need to install libpari
 (<a href="http://pari.math.u-bordeaux.fr/).To" class="external free"
-rel="nofollow">http://pari.math.u-bordeaux.fr/).To</a> use GMP install
+
 libGMP (<a href="http://gmplib.org/" class="external free"
-rel="nofollow">http://gmplib.org/</a>). Debian users can simply install
+
 *libmath-bigint-gmp-perl*.
 **Net::OpenID::Consumer**
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
-rel="nofollow">CPAN</a> or as Debian package
+
 *libnet-openid-consumer-perl*.
 
 If your preferred mail server requires user authentication to forward
@@ -186,11 +184,10 @@ outgoing mail, then you will also need the following two modules:
 **Net::SMTP::SSL**
 Encrypted connections to mail servers. Available from
 <a href="http://www.cpan.org" class="external text"
-rel="nofollow">CPAN</a> or as Debian package *libnet-smtp-ssl-perl*.
+
 **Authen::SASL**
 Handle the authentication between mail client and server. Available from
 <a href="http://www.cpan.org" class="external text"
-rel="nofollow">CPAN</a> or as Debian package *libauthen-sasl-per*l.
 
 ### Creating and configuring the user account database
 
@@ -398,7 +395,6 @@ configure them, and manage tracks all from a convenient web-based user
 interface. You can try it out and download the source code for your own
 use from
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu/</a>.
 
 ## Displaying Next Generation Sequencing Data
 
@@ -492,8 +488,6 @@ select which datasource it is set to:
 where "your_datasource" is the name of the currently selected database.
 For example, the yeast source is
 <a href="http://your.host/cgi-bin/gb2/gbrowse/yeast"
-class="external free"
-rel="nofollow">http://your.host/cgi-bin/gb2/gbrowse/yeast</a>.
 
 To control access to the entire database, create a \<Location\> section
 in httpd.conf. The \<Location\> section should look like this:
@@ -510,8 +504,7 @@ This denies access to everybody except for "localhost" and browsers from
 the domains .cshl.edu and .ebi.ac.uk. You can also limit by IP address,
 by username and password or by combinations of these techniques. See
 <a href="http://httpd.apache.org/docs/howto/auth.html"
-class="external free"
-rel="nofollow">http://httpd.apache.org/docs/howto/auth.html</a> for the
+
 full details.
 
 You can also limit individual tracks to certain individuals or

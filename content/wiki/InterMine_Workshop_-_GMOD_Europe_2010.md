@@ -34,15 +34,12 @@ Part of <a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-
-
 [InterMine](/wiki/InterMine) is an open source system for building
 biological data warehouses with a powerful web interface and query
 [API](/wiki/Glossary#API). See
 <a href="http://www.flymine.org" class="external text"
-rel="nofollow">FlyMine</a> or
+
 <a href="http://www.modmine.org" class="external text"
-rel="nofollow">ModMine</a> for examples.
 
 It can integrate data from many common biological formats and is easy to
 extend to include your own data. Parsers are included to load data from

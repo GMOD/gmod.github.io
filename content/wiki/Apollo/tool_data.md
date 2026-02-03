@@ -3,16 +3,14 @@ title: "Apollo/tool data"
 ---
 # Apollo/tool data
 
-
 This page stores the data that populates the
 [Apollo](../Apollo.1) wiki page.
-
 
 \| name = Apollo \| full_name = \| status = mature \|
 dev = inactive \| support = active \| platform = linux, os x, unix, win
 \| logo = ApolloLogo.png \| home =
 <a href="http://apollo.berkeleybop.org/" class="external free"
-rel="nofollow">http://apollo.berkeleybop.org/</a> \| about = Apollo is a
+
 GUI (graphical user interface)-based tool for editing genome
 annotations. Like [GBrowse](../GBrowse.1), Apollo allows users
 to scroll and zoom in on areas of interest in a sequence; authorized
@@ -26,16 +24,14 @@ BLAST analyses. Apollo is a standalone Java application. \| screenshot =
 the <a href="http://apollo.berkeleybop.org/current/index.html"
 class="external text" rel="nofollow">Apollo web site</a>. \| dl_url =
 <a href="http://apollo.berkeleybop.org/current/install.html"
-class="external free"
-rel="nofollow">http://apollo.berkeleybop.org/current/install.html</a> \|
+
 dl_src = The Apollo source code (only needed if you plan to modify
 Apollo) is available from
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/apollo"
 class="external text" rel="nofollow">SourceForge</a> via
 <a href="../SVN" class="mw-redirect" title="SVN">SVN</a>. \| dl_src_url
 = <a href="https://sourceforge.net/projects/gmod/files/Apollo/"
-class="external free"
-rel="nofollow">https://sourceforge.net/projects/gmod/files/Apollo/</a>
+
 \| dl_dev = \| dl_dev_url = \| getting_started_preamble = A
 comprehensive guide to installing and using Apollo is available from the
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
@@ -62,9 +58,9 @@ title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%25
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
 class="internal" title="CommunityAnnotationNov2007.pdf">Community
 Annotation at ParameciumDB</a> - [Linda
-Sperling's](../User%253ASperling) presentation on
+Sperling's](../User:Sperling) presentation on
 [ParameciumDB's](../ParameciumDB) [Community
-Annotation](../Category%253ACommunity_Annotation)
+Annotation](../Category:Community_Annotation)
 process at the [November 2007 GMOD
 Meeting](../November_2007_GMOD_Meeting).
 
@@ -94,7 +90,7 @@ The Apollo session from the [2010 GMOD Summer School -
 Americas](../2010_GMOD_Summer_School_-_Americas).
 
 Apollo tutorials at the <a href="http://dynamicgene.dnalc.org" class="external text"
-rel="nofollow">Dynamic Gene</a> web site.
+
 Flash based tutorials on how to use Apollo, using rice as an example.
 Sections of particular interest are
 
@@ -115,7 +111,7 @@ installation and usage of Apollo.
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
 | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" |  |  |
-rel="nofollow">apollo</a> | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) mailing list | <a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
+
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
 class="external text" rel="nofollow">gmod-apollo-cmts</a> | [Apollo](../Apollo.1) and [WebApollo](../WebApollo.1) code updates. Please submit bug reports to the <a
@@ -124,11 +120,10 @@ class="external text" rel="nofollow">Apollo bug tracker at
 Sourceforge</a>. \| logo_info = The [Apollo
 logo](../File:ApolloLogo.png) was created by
 <a href="mailto:audra.radke@gmail.com" class="external text"
-rel="nofollow">Audra Radke</a>, a participant in the [Spring 2010 Logo
+
 Program](../Spring_2010_Logo_Program), while
 a design student at
 <a href="http://www.linnbenton.edu" class="external text"
-rel="nofollow">Linn-Benton Community College</a>.
 
 \| dev_ppl = \| dev_status = Active development of Apollo has ceased;
 the focus has shifted to [WebApollo](../WebApollo.1), a

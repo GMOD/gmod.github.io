@@ -30,7 +30,7 @@ Bulkfiles is a GMOD [Perl](/wiki/Glossary#Perl) package that
 generates Fasta, [GFF3](/wiki/GFF3), DNA and other bulk genome
 annotation files from
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
-It works with several [FlyBase](/wiki/Category%3AFlyBase)
+It works with several
 Chado releases, with SGDLite, and has been tested with other Chado
 databases. Once tuned to your project's needs with its organism and site
 configurations, it can generate public data releases on a regular basis.
@@ -55,10 +55,9 @@ Bulkfiles base adaptor object.
 
 # Why Use Bulkfiles?
 
-Why use this package rather than using other [middleware
-layers](/wiki/Category%3AMiddleware) to Chado db - [Chado
+Why use this package rather than using other  to Chado db - [Chado
 XML](/wiki/Chado_XML),
-[Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI),
+[Chado::AutoDBI](/wiki/Chado_AutoDBI),
 [BioPerl](/wiki/BioPerl), ? The general logic is
 
 1.  dump all Chado db features using simple (and quick) sql, to common
@@ -94,7 +93,6 @@ Here are some reasons we take this approach:
 
 Here is a candidate release package for
 <a href="http://eugenes.org/gmod/GMODTools/" class="external text"
-rel="nofollow">GMODTools</a>:
 
      curl -O http://eugenes.org/gmod/GMODTools/GMODTools-1.2.zip
      unzip GMODTools*.zip
@@ -247,28 +245,22 @@ those who need to do this job. This is open source and collaborators are
 welcome to add code here
 
 <a href="http://gmod.cvs.sourceforge.net/gmod/schema/GMODTools/"
-class="external free"
-rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/schema/GMODTools/</a>
 
 esp. lib/Bio/GMOD/Bulkfiles/GenbankSubmitWriter.pm and
 conf/bulkfiles/genbanksubmit.xml
 
 The above code is packaged at
 <a href="http://eugenes.org/gmod/GMODTools/" class="external free"
-rel="nofollow">http://eugenes.org/gmod/GMODTools/</a> as
+
 GMODTools-1.2.zip
 
 Here are sample Bulkfiles outputs from DrosMel CHR_4 and AnoGam CHR_X
 
 <a
 href="http://insects.eugenes.org/genome/Drosophila_melanogaster/dromel_20080512/"
-class="external free"
-rel="nofollow">http://insects.eugenes.org/genome/Drosophila_melanogaster/dromel_20080512/</a>
 
 <a
 href="http://insects.eugenes.org/genome/Anopheles_gambiae_str._PEST/anogam_20080511/"
-class="external free"
-rel="nofollow">http://insects.eugenes.org/genome/Anopheles_gambiae_str._PEST/anogam_20080511/</a>
 
 Version 1.1 (2007 October) adds these features and corrections:
 
@@ -296,4 +288,4 @@ Version 1.1 (2007 October) adds these features and corrections:
 
 # Contact
 
-[Dongilbert](/wiki/User%3ADongilbert)
+[Dongilbert](/wiki/User:Dongilbert)

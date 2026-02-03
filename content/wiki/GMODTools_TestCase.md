@@ -51,8 +51,6 @@ and outputs of NCBI tbl2asn:
 
 You will find these sample outputs here <a
 href="http://insects.eugenes.org/genome/Anopheles_gambiae_str._PEST/anogam_20080511/"
-class="external free"
-rel="nofollow">http://insects.eugenes.org/genome/Anopheles_gambiae_str._PEST/anogam_20080511/</a>
 
 There remain caveats on reproducing the original GenBank record this
 way. At this writing, the GenbankSubmit function is still in

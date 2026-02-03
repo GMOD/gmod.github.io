@@ -15,14 +15,9 @@ Highlights for this release include:
 As always, you can download the current version at:
 
 <a href="http://apollo.berkeleybop.org/current/install.html"
-class="external free"
-rel="nofollow">http://apollo.berkeleybop.org/current/install.html</a>
 
 Ed Lee
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/06/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

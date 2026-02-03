@@ -11,9 +11,9 @@ alt="Opening @ Dolan DNA Learning Center, job ID 934" /></a>
 
 There's an
 <a href="http://www.cshl.edu/hr/jobs.html" class="external text"
-rel="nofollow">opening (Job ID 934)</a> at the
+
 <a href="http://www.dnalc.org" class="external text"
-rel="nofollow">Dolan DNA Learning Center (DNALC)</a> of
+
 <a href="http://www.cshl.edu" class="external text" rel="nofollow">Cold
 Spring Harbor Laboratory</a> for a programmer to develop
 cyberinfrastructure to support plant biology research. The programmer
@@ -32,11 +32,7 @@ desirable.
 
 For more information, go to the
 <a href="http://www.cshl.edu/hr/jobs.html" class="external text"
-rel="nofollow">CSHL jobs site</a> and search for Job ID 934.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/14*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

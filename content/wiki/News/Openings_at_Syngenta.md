@@ -10,7 +10,7 @@ height="43" alt="Openings at Syngenta" /></a>
 
 There are two openings at
 <a href="http://www.syngentacareers.com/listing/" class="external text"
-rel="nofollow">Syngenta</a>, recently named one of the top biotechnology
+
 employers by <a
 href="http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2009_10_02/science.opms.r0900079"
 class="external text" rel="nofollow">Science</a>, in Research Triangle
@@ -43,11 +43,8 @@ Both positions will work with Chado and
 [GBrowse](../GBrowse.1), and will help evaluate the adoption
 of additional GMOD tools. See the links for more details.
 
-[Eric Ganko](../User%253AEric.ganko)
-
-
+[Eric Ganko](../User:Eric.ganko)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/21*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

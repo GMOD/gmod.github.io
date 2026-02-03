@@ -33,13 +33,11 @@ Scott Cain, GMOD coordinator</td>
 <li>GBrowse</li>
 <li><a
 href="http://brebiou.cshl.org/gmod/meetings/oct-2004/gmod-041004-kr.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/gmod-041004-kr.ppt</a>
+
 Pathways tools</li>
 <li><a
 href="http://brebiou.cshl.org/gmod/meetings/oct-2004/04_10_1_GMOD_presentation.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/04_10_1_GMOD_presentation.ppt</a>
+
 PubSearch/Fetch/Track</li>
 <li>Textpresso</li>
 <li>WormBase</li>
@@ -76,14 +74,11 @@ Guanming Wu, CSHL</td>
 <td width="85%">EST Clustering tools<br />
 Feng Sun, Pratt Lab, University of Georgia<br />
 <a href="http://brebiou.cshl.org/gmod/meetings/oct-2004/ESTminer.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/ESTminer.ppt</a>
+
 Huang Yecheng, Gingle Lab, University of Georgia</td>
 </tr>
 </tbody>
 </table>
-
-
 
 #### October 5, Gerry Conference room, Marks Laboratory
 
@@ -97,8 +92,7 @@ Huang Yecheng, Gingle Lab, University of Georgia</td>
 <td data-valign="top" width="15%">9:30</td>
 <td width="85%"><a
 href="http://brebiou.cshl.org/gmod/meetings/oct-2004/GenePattern_GMOD.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/GenePattern_GMOD.ppt</a>
+
 GenePattern for MicroArray analysis<br />
 Ted Liefeld, Broad Institute</td>
 </tr>
@@ -111,8 +105,7 @@ Ted Liefeld, Broad Institute</td>
 <td data-valign="top" width="15%">11:00</td>
 <td width="85%"><a
 href="http://brebiou.cshl.org/gmod/meetings/oct-2004/GMOD_SynBrowse1.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/GMOD_SynBrowse1.ppt</a>
+
 SynBrowse: A Synteny Browser for Comparative Sequence Analysis<br />
 Xiaokang Pan, Iowa State University</td>
 </tr>
@@ -125,8 +118,7 @@ Xiaokang Pan, Iowa State University</td>
 <td data-valign="top" width="15%">1:00</td>
 <td width="85%"><a
 href="http://brebiou.cshl.org/gmod/meetings/oct-2004/gmod-oct04.ppt"
-class="external free"
-rel="nofollow">http://brebiou.cshl.org/gmod/meetings/oct-2004/gmod-oct04.ppt</a>
+
 GMDOTools<br />
 Don Gilbert, Indiana University</td>
 </tr>

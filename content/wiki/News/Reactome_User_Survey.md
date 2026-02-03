@@ -19,13 +19,9 @@ Thank you for taking part.
 
 Robin Haw Manager of Reactome Outreach Outreach \[at\] reactome.org
 <a href="http://www.reactome.org" class="external free"
-rel="nofollow">http://www.reactome.org</a>
 
-Posted by [Scott Cain](../User%253AScott)
-
-
+Posted by [Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

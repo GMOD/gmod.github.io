@@ -10,9 +10,8 @@ height="79" alt="OpenHelix" /></a>
 
 A comprehensive
 <a href="http://www.openhelix.com/gbrowse" class="external text"
-rel="nofollow">GBrowse User Tutorial</a> was released by
+
 <a href="http://www.openhelix.com" class="external text"
-rel="nofollow">OpenHelix</a> this week. The narrated tutorial covers:
 
 - the basic layout and search methods in
   [GBrowse](../GBrowse.1)
@@ -34,21 +33,21 @@ reference or for training others. The narration is reproduced in the
 notes area on the slides.
 
 The <a href="http://www.openhelix.com/gbrowse" class="external text"
-rel="nofollow">GBrowse User Tutorial</a> is part of a
+
 <a href="http://www.openhelix.com/model_organisms.shtml"
 class="external text" rel="nofollow">set of model organism resource
 tutorials</a> funded in a large part by
 <a href="http://www.genome.gov/" class="external text"
-rel="nofollow">NHGRI</a>. The set includes tutorials on how to navigate
+
 and use <a href="http://www.openhelix.com/rgd" class="external text"
-rel="nofollow">RGD</a>,
+
 <a href="http://www.openhelix.com/mgi" class="external text"
-rel="nofollow">MGI</a>, and
+
 <a href="http://www.openhelix.com/wormbase" class="external text"
-rel="nofollow">WormBase</a>, and in the future for
+
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN</a>,
-[FlyBase](../Category%253AFlyBase), and
-[SGD](../Category%253ASGD) (*all* of which are GMOD users
+[FlyBase](../Category:FlyBase), and
+[SGD](../Category:SGD) (*all* of which are GMOD users
 and/or contributors).
 
 This tutorial focuses on *using* GBrowse and complements the
@@ -57,13 +56,10 @@ class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a>. It is
 an excellent resource for any organization that wants to help its users
 use GBrowse better.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 
 [GMOD Help Desk](../GMOD_Help_Desk)
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/02/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

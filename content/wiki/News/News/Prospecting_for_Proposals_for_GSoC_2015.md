@@ -10,7 +10,7 @@ width="200" height="180" alt="GoogleSummer 2015logo.jpg" />](../../GSoC)
 
 The Genome Informatics group and GMOD will be submitting an application
 for <a href="http://google-melange.com" class="external text"
-rel="nofollow">Google Summer of Code (GSoC)</a> this year, and we are
+
 soliciting project ideas from people and groups involved in the GMOD
 project.
 
@@ -25,16 +25,13 @@ Please take a look at the [GSoC wiki page](../../GSoC) and think
 about any projects that might work well for a GSoC student, and add them
 to the wiki. If you are interested in being a mentor, please contact us
 at <a href="mailto:robin.haw@oicr.on.ca" class="external text"
-rel="nofollow">robin.haw@oicr.on.ca</a>
+
 <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>.
 
 If you have any questions--e.g. what constitutes an appropriate project;
 whether your idea is sufficiently GMOD-related--please feel free to
 email <a href="mailto:robin.haw@oicr.on.ca" class="external text"
-rel="nofollow">robin.haw@oicr.on.ca</a> and
+
 <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a> for advice!
 
-
-- [GSoC](../../Category%253AGSoC)
+- [GSoC](../../Category:GSoC)

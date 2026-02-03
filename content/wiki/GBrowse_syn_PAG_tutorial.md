@@ -3,21 +3,17 @@ title: "GBrowse syn PAG tutorial"
 ---
 # GBrowse syn PAG tutorial
 
-
-
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through how to install and configure the
 [GBrowse_syn](/wiki/GBrowse_syn.1) comparative genomics viewer.
 This tutorial was originally taught by [Sheldon
-McKay](/wiki/User%3AMckays) at the 2009 [GMOD
+McKay](/wiki/User:Mckays) at the 2009 [GMOD
 Schools](/wiki/GMOD_Schools) -
 [Europe](/wiki/2009_GMOD_Summer_School_-_Europe)
 &
 [Americas](/wiki/2009_GMOD_Summer_School_-_Americas).
 The notes and [VMware image](#VMware) used on this page are from the
 Europe course.
-
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -68,8 +64,6 @@ Europe course.
 - [Optional
   Advanced Section](#Optional_Advanced_Section)
 
-
-
 # VMware
 
 <table>
@@ -101,7 +95,7 @@ machine.</strong></em></p></td>
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift

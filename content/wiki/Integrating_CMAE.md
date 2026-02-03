@@ -77,8 +77,6 @@ are being served off another machine.
 
 Download CMap from the SourceForge CVS repository
 
-
-
      $ cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod login
      $ cvs -z3 -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -P cmap
 
@@ -95,13 +93,10 @@ can be downloaded from CPAN.
 A bundle can be used to install most of these at once. To use this
 bundle, run:
 
-
-
      $ sudo perl -MCPAN -e "install Bundle::CMap"
 
 The GD module requires the use of the libgd library which can be found
 at <a href="http://www.libgd.org/" class="external free"
-rel="nofollow">http://www.libgd.org/</a> .
 
 #### CMAE Pre-Requisites
 
@@ -112,18 +107,14 @@ In addition to the CMap requirements, CMAE requires:
 
 Perl/Tk can be downloaded from CPAN,
 <a href="http://search.cpan.org/~ni-s/Tk-804.027/" class="external free"
-rel="nofollow">http://search.cpan.org/~ni-s/Tk-804.027/</a> .
 
 - Tkzinc (<a href="http://www.tkzinc.org/" class="external free"
   rel="nofollow">http://www.tkzinc.org/</a>)
 
 Zinc can render images using openGL. It can be downloaded from
 <a href="http://www.tkzinc.org/tkzinc/pmwiki.php?n=Main.Download"
-class="external free"
-rel="nofollow">http://www.tkzinc.org/tkzinc/pmwiki.php?n=Main.Download</a>
+
 .
-
-
 
 ### Install CMap
 
@@ -132,8 +123,6 @@ will ask you about the location of various web related directories. On a
 linux system those should be easily answered.
 
 The install process is simply:
-
-
 
      $ perl Build.PL
      $ ./Build

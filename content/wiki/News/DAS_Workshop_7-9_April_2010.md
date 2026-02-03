@@ -12,7 +12,7 @@ There will be a
 <a href="http://www.ebi.ac.uk/training/handson/DAS_070410.html"
 class="external text" rel="nofollow">Distributed Annotation System (DAS)
 Workshop</a> at <a href="http://www.ebi.ac.uk/" class="external text"
-rel="nofollow">EBI</a>, 7-9 April 2010. In GMOD, DAS is supported by
+
 [GBrowse](../GBrowse.1), and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> (and DAS
 support in [Apollo](../Apollo.1) is in the works).
@@ -36,11 +36,8 @@ See the <a href="http://www.ebi.ac.uk/training/handson/DAS_070410.html"
 class="external text" rel="nofollow">workshop page</a> for more
 information and registration details.
 
-[Jonathan Warren](../User%253AJWarren)
-
-
+[Jonathan Warren](../User:JWarren)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/21*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

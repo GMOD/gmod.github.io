@@ -10,8 +10,6 @@ September 2006 01:26:42 PM**
 
 ------------------------------------------------------------------------
 
-
-
     Reading and Writing to a Chado database with Apollo
         This needs to be better documented, but here is a start:
 
@@ -99,8 +97,6 @@ September 2006 01:26:42 PM**
         cain@cshl.edu
 
         4/29/05
-
-
 
 - [Apollo-Chado example
   database](/wiki/Apollo-Chado_example_database)

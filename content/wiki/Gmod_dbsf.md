@@ -25,7 +25,7 @@ dbsf](/wiki/Gmod_dbsf)
 The GMOD Drupal Bioinformatic Server Framework (GMOD-DBSF) is an
 Application Programming Interface module for the
 <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a> CMS which simplifies programming bioinformatic
+
 Drupal modules. This Drupal API is not a visualization module, like
 [Tripal](/wiki/Tripal.1). It is aimed for developers and seeks to
 make the co-existence of Chado and Drupal seamless to the end-user and
@@ -37,9 +37,9 @@ development.
 
 It is freely available from
 <a href="http://drupal.org/project/gmod_dbsf" class="external free"
-rel="nofollow">http://drupal.org/project/gmod_dbsf</a> and
+
 <a href="http://gmod-dbsf.googlecode.com" class="external free"
-rel="nofollow">http://gmod-dbsf.googlecode.com</a> with the latter being
+
 a more complete repository.
 
 # Dependencies
@@ -64,7 +64,7 @@ GMOD-DBSF offers:
 ## Websites using it
 
 The <a href="http://insectacentral.org" class="external text"
-rel="nofollow">InsectaCentral</a> database is coded using the GMOD-DBSF
+
 engine and the custom genes4all module for visualization
 
 ## Drupal modules using it
@@ -106,8 +106,6 @@ engine and the custom genes4all module for visualization
       Taxonomy database flatfile) for the taxonomy of a species.
 - and an evergrowing list of many others...
 
-
-
 # Demos and Screenshots
 
 - A <a href="http://www.scivee.tv/node/20322" class="external text"
@@ -117,7 +115,6 @@ engine and the custom genes4all module for visualization
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](/wiki/User%3AAlpapan) while at CSIRO, the
+Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
-rel="nofollow">http://www.csiro.au</a>).

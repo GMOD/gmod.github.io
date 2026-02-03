@@ -14,7 +14,7 @@ available.***
 VMware images still exist in GMOD in several places. See:
 
 - [VMware HOWTO](/wiki/VMware_HOWTO)
-- [Tutorials](/wiki/Category%3ATutorials)
+
 - [Community Annotation
   System](/wiki/Community_Annotation_System)
 
@@ -72,7 +72,7 @@ Any thoughts on these?
 Thanks for your time, Scott
 
 - Ian Holmes suggested their extensions to GBrowse
-  ([AJAX](/wiki/Category%3AAJAX) and wiki).
+  ( and wiki).
 - Eric Just suggested [Modware](/wiki/Modware).
 
 ## About 'when released'

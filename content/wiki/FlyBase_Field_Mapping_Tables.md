@@ -44,8 +44,6 @@ field.
 
 **Example report:**
 <a href="http://flybase.org/reports/FBgn0259750.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBgn0259750.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -2502,8 +2500,6 @@ Component</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBal0000067.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBal0000067.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -3747,8 +3743,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBgn0259750_exp.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBgn0259750_exp.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -4116,8 +4110,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBtr0087703.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBtr0087703.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -4659,8 +4651,6 @@ gene</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBpp0086822.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBpp0086822.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -5042,8 +5032,6 @@ rel="nofollow">http://flybase.org/reports/FBpp0086822.html</a>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBti0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBti0000001.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -5868,8 +5856,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBcl0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBcl0000001.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -6513,8 +6499,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBst0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBst0000001.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -6654,8 +6638,6 @@ rel="nofollow">http://flybase.org/reports/FBst0000001.html</a>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBab0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBab0000001.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -7193,8 +7175,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBba0000005.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBba0000005.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -7630,8 +7610,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBrf0126983.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBrf0126983.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -8311,8 +8289,6 @@ SELECT pa.surname | &#39;, &#39; | pa.givennames
 
 **Example report:**
 <a href="http://flybase.org/reports/FBtp0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBtp0000001.html</a>
 
 <table class="wikitable">
 <colgroup>
@@ -9050,8 +9026,6 @@ material</td>
 
 **Example report:**
 <a href="http://flybase.org/reports/FBte0000001.html"
-class="external free"
-rel="nofollow">http://flybase.org/reports/FBte0000001.html</a>
 
 <table class="wikitable">
 <colgroup>

@@ -100,7 +100,6 @@ select which data source is active:
 where "your_datasource" is the name of the currently selected
 datasource. For example, the yeast datasource is
 <a href="http://your.host/cgi-bin/gbrowse/yeast" class="external free"
-rel="nofollow">http://your.host/cgi-bin/gbrowse/yeast</a>.
 
 Apache's access control mechanism is based on URLs. To control access to
 an entire datasource, create a \<Location\> section in httpd.conf. The
@@ -434,7 +433,7 @@ Both of these scripts need to run as the web user (e.g. "www-data") in
 order to access and update the accounts database. If they are not run as
 this user, then the script will relaunch itself under
 <a href="http://en.wikipedia.org/wiki/Sudo" class="external text"
-rel="nofollow">sudo</a>. Sudo may prompt you for your login password; do
+
 not get your password confused with the new user's password!
 
 ##### Restricting Access to Datasources with GBrowse Account Database

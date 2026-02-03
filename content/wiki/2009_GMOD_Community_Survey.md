@@ -30,8 +30,6 @@ Components](/wiki/GMOD_Components) are used, see the [2008
 GMOD Community
 Survey](/wiki/2008_GMOD_Community_Survey).*
 
-
-
 ## Which components have you used?
 
 GMOD has a wealth of genome and comparative genomics browsers. Which of
@@ -135,8 +133,6 @@ karyotype</a></td>
 </tbody>
 </table>
 
-
-
 ## Documentation
 
 How satisfied are you with the documentation for these components?
@@ -195,10 +191,9 @@ title="GBrowse syn Tutorial">GBrowse_syn Tutorial</a>, ...
 </tbody>
 </table>
 
-
 **End user Documentation** - *e.g.*
 <a href="http://www.openhelix.com/gbrowse" class="external text"
-rel="nofollow">GBrowse User Tutorial</a>,
+
 <a href="http://www.gramene.org/tutorials/cmap_tutorial.pdf"
 class="external text" rel="nofollow">CMap Tutorial</a>, ...
 
@@ -249,7 +244,6 @@ class="external text" rel="nofollow">CMap Tutorial</a>, ...
 </tr>
 </tbody>
 </table>
-
 
 **Overview Documentation** - *e.g.* [Comparative
 Genomics](/wiki/Comparative_Genomics),
@@ -426,7 +420,7 @@ from new papers or new data discoveries.</td>
 <td><a href="http://genome.ucsc.edu/cgi-bin/hgGateway"
 class="external text" rel="nofollow">UCSC Genome Browser</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> (varies by species), <a
 href="http://www.ensembl.org/index.html" class="external text"
-rel="nofollow">Ensembl</a>, Map Viewer</td>
+
 </tr>
 <tr class="even">
 <td>I have a few.
@@ -520,7 +514,7 @@ relatively well. While I have used <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a>, <a href="/wiki/JBrowse.1"
 title="JBrowse">JBrowse</a>, <a
 href="http://genome.ucsc.edu/cgi-bin/hgGateway" class="external text"
-rel="nofollow">UCSC Genome Browser</a>, and <a href="/wiki/Apollo.1"
+
 title="Apollo">Apollo</a>, I have used only <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a> extensively.</td>
 </tr>
@@ -827,7 +821,7 @@ title="GBrowse">GBrowse</a>.</td>
 including example annotations such as gene models, NGS data,
 quantitative data (wiggle), ...</strong>
 <a href="http://gbrowse.org" class="external text"
-rel="nofollow">GBrowse.org</a> is a step in this direction.</td>
+
 <td style="text-align: right;"> 29% </td>
 <td style="text-align: right;"> 44% </td>
 <td style="text-align: right;"> 20% </td>
@@ -1364,10 +1358,9 @@ here.
 - I think basic elements like speed to load a region in
   [GBrowse](/wiki/GBrowse.1) and documentation of track
   configuration and additional data type adding are core requirements
-  that could be made better. Although I haven't used [GBrowse
-  2](/wiki/Category%3AGBrowse_2) it sounds like the
+  that could be made better. Although I haven't used  it sounds like the
   performance element is being addressed.
-- User [GBrowse v2](/wiki/Category%3AGBrowse_2) Tutorial?
+- User  Tutorial?
 - part of my job takes place on an academic expression platform. I have
   to deal with expression microarray analyzes coming from 2 colors
   arrays and also from RNA-Seq and ChIP-Seq experiments. We use to give

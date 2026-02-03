@@ -47,7 +47,7 @@ the habit of submitting new [Calendar](../Calendar),
 [Glossary](../Glossary), and News items.
 
 Our next big goal for the web site is to reorganize the [Chado
-documentation](../Category%253AChado). Watch the web site
+documentation](../Category:Chado). Watch the web site
 for details on this.
 
 As always, please let us know if you have any questions or comments.
@@ -56,11 +56,7 @@ Thanks,
 
 Dave Clements, [GMOD Help Desk](../GMOD_Help_Desk)
 <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/02/13*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

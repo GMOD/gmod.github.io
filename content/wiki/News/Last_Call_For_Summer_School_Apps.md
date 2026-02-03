@@ -26,9 +26,6 @@ hand to answer questions and help with troubleshooting.
 Applications received after June 10th will be kept in case there are
 spare places due to accepted applicants not being able to attend.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2013/06/06*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

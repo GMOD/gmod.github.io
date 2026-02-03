@@ -12,12 +12,12 @@ rbuels@gmail.com \| status = mature \| dev = active \| support = active
 JBrowseLogo.png \| input = [GFF3](../GFF3), BED, FASTA, Wiggle,
 BigWig, BAM \| output = \| licence =
 <a href="http://www.gnu.org/licenses/lgpl.txt" class="external text"
-rel="nofollow">LGPL</a> and
+
 <a href="http://www.perlfoundation.org/artistic_license_2_0"
 class="external text" rel="nofollow">Artistic license</a> \| open source
 = yes \| language = Javascript, Perl \| release date = 2008 \| home =
 <a href="http://jbrowse.org" class="external free"
-rel="nofollow">http://jbrowse.org</a> \| demo_server = <a
+
 href="http://jbrowse.org/code/JBrowse-1.5.0-full/index.html?loc=ctgA%253A5947..26686&amp;tracks=DNA%2CCDS%2CTranscript%2Cvolvox_microarray.wig%2Cvolvox_microarray.bw&amp;data=sample_data%2Fjson%2Fvolvox"
 class="external text" rel="nofollow">Volvox example data</a> \|
 wild_urls = \| about = JBrowse is a genome browser with a fully dynamic
@@ -44,9 +44,9 @@ width="600" height="373" alt="JBrowse alignment and coverage.png" /></a>
 
 \| public_server = \| dl = \| dl_url =
 <a href="http://jbrowse.org/install/" class="external free"
-rel="nofollow">http://jbrowse.org/install/</a> \| dl_src = \| dl_src_url
+
 = <a href="http://github.com/GMOD/jbrowse" class="external free"
-rel="nofollow">http://github.com/GMOD/jbrowse</a> \|
+
 getting_started_preamble = The
 <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
 class="external text" rel="nofollow">JBrowse Quick-Start Tutorial</a>
@@ -67,7 +67,6 @@ provides a basic step-by-step recipe for quickly getting up and running
 with JBrowse.
 
 1\. <a href="http://jbrowse.org/install/" class="external text"
-rel="nofollow">Download JBrowse</a> onto your web server.
 
 2\. Unpack JBrowse into a directory that is served by your web browser.
 On many systems, this defaults to `/var/www`.
@@ -122,8 +121,8 @@ information on:
 Additional topics:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
-- [JBrowse](../Category%253AJBrowse)
+  Cloud](../Category:GMOD_in_the_Cloud)
+- [JBrowse](../Category:JBrowse)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
-- [Tool data](../Category%253ATool_data)
+  Components](../Category:GMOD_Components)
+- [Tool data](../Category:Tool_data)

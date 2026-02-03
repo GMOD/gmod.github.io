@@ -27,18 +27,14 @@ Conferences, Meetings, and Courses
 - Automated Functional Annotation and Data Mining course
 - VisWeek 2010
 
-
 If you know of any upcoming events that are not on the calendar, please
 send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/09/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

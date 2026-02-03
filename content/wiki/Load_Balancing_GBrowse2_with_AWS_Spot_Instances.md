@@ -77,7 +77,7 @@ Use the init script:
 The AWS balancer scripts help you synchronize the contents of your local
 GBrowse databases with a snapshot (or series of snapshots) on
 <a href="http://aws.amazon.com" class="external text"
-rel="nofollow">Amazon Web Services</a>, and to launch track rendering
+
 slaves as <a href="http://aws.amazon.com/ec2/spot-instances/"
 class="external text" rel="nofollow">Amazon Spot Instances</a> in
 response to high load levels on the master server.
@@ -115,8 +115,7 @@ suggestions.
 4\. Apache must be configured to enable the mod_status module and to
 allow password-less requests to this module from localhost
 (<a href="http://httpd.apache.org/docs/2.2/mod/mod_status.html"
-class="external free"
-rel="nofollow">http://httpd.apache.org/docs/2.2/mod/mod_status.html</a>).
+
 This is the recommended configuration:
 
     <IfModule mod_status.c>
@@ -206,7 +205,6 @@ Note that the server load includes both GBrowse requests and all other
 requests on the web server. If this is a problem, you may wish to run
 GBrowse on a separate Apache port or virtual host.
 
-
 ***\[MASTER\]***
 
 The options in this sections configure the master GBrowse instance.
@@ -288,8 +286,6 @@ needed and destroyed when the balancer script exits. If you choose to
 manage the security group manually, be sure to configure the firewall
 ingress rule to allow access to the slave port(s) (see the "ports"
 option) from the master's group or IP address.
-
-
 
 ### Configuring AWS Credentials
 

@@ -41,8 +41,6 @@ The lists are broken into several categories:
 We also include pointers to [a few non GMOD
 lists](#A_Few_Non_GMOD_Lists) that are of general interest.
 
-
-
 ## Searching Email Lists
 
 <table>
@@ -72,7 +70,7 @@ Therefore, we try to archive mailing lists on sites that have friendlier
 search facilities, such as <a href="http://gmod.827538.n3.nabble.com/"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://gmane.org" class="external text"
-rel="nofollow">Gmane.org</a>, and <a href="http://groups.google.com"
+
 class="external text" rel="nofollow">Google groups</a>. The tables below
 link to these archives, whenever they exist.</td>
 </tr>
@@ -190,7 +188,7 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 <tr class="odd">
 <td rowspan="6"><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a><br />
 &#10;(<a href="http://galaxyproject.org/search/" class="external text"
-rel="nofollow">Search everything</a>)</td>
+
 <td><a href="http://announce.list.galaxyproject.org/"
 class="external text" rel="nofollow">galaxy-announce</a></td>
 <td>Announcements of interest to the <a href="/wiki/Galaxy.1"
@@ -203,7 +201,7 @@ class="external text" rel="nofollow">Mailman</a></td>
 </tr>
 <tr class="even">
 <td><a href="https://help.galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy Help</a></td>
+
 <td>General questions and discussion about using <a href="/wiki/Galaxy.1"
 title="Galaxy">Galaxy</a>. Also used for announcements relevant to the
 Galaxy user community. <em>This is not a mailing list, but an online
@@ -214,12 +212,12 @@ volume.</td>
 </tr>
 <tr class="odd">
 <td><a href="http://dev.list.galaxyproject.org/" class="external text"
-rel="nofollow">galaxy-dev</a></td>
+
 <td>Discussion and questions regarding local installations and
 development of <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a>. <em>Medium
 volume.</em></td>
 <td><a href="http://dev.list.galaxyproject.org/" class="external text"
-rel="nofollow">Nabble</a>, <a
+
 href="https://lists.galaxyproject.org/archives/list/galaxy-dev@lists.galaxyproject.org/"
 class="external text" rel="nofollow">Mailman</a></td>
 </tr>
@@ -302,9 +300,9 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 development for <a href="/wiki/Textpresso" title="Textpresso">Textpresso</a>.
 In the mean time, if you have support questions, please send them to <a
 href="mailto:textpresso@caltech.edu" class="external text"
-rel="nofollow">textpresso@caltech.edu</a>. See the <a
+
 href="http://www.textpresso.org" class="external text"
-rel="nofollow">Textspresso website</a> for help.</td>
+
 <td></td>
 </tr>
 <tr class="odd">
@@ -408,7 +406,7 @@ months.
 | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture" |  |
 class="external text" rel="nofollow">gmod-architecture</a> | GMOD architecture working group list. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-chado-seq-ad"
 class="external text" rel="nofollow">gmod-chado-seq-ad</a> | Last post November 2006. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-citrina"
-class="external text" rel="nofollow">gmod-citrina</a> | [Citrina](/wiki/Citrina) mailing list. Last post June 2006. Citrina is [no longer supported](/wiki/Category%3AUnsupported) by GMOD. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmae"
+class="external text" rel="nofollow">gmod-citrina</a> | [Citrina](/wiki/Citrina) mailing list. Last post June 2006. Citrina is  by GMOD. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmae"
 class="external text" rel="nofollow">gmod-cmae</a> | [CMAE](/wiki/CMAE) mailing list. Last post July 2007. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-das2-cmts"
 class="external text" rel="nofollow">gmod-das2-cmts</a> | [Distributed Annotation System](/wiki/Distributed_Annotation_System) mailing list. Last commit June 2007. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-gene-page"
 class="external text" rel="nofollow">gmod-gene-page</a> | Last post December 2005. *This topic was restarted at the [July 2008 GMOD Meeting](/wiki/July_2008_GMOD_Meeting) and the discussion is now happening on the <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
@@ -428,10 +426,10 @@ GMOD, often have content of interest to the GMOD community.
 
 | List Link(s) | Comment | Archive(s) |
 |----|----|----|
-| <a href="http://www.biocurator.org/emaillist.shtml" |  |  |
+
 class="external text" rel="nofollow">ISB</a> (formerly <a href="http://mailman.tairgroup.org/mailman/listinfo/biocurator"
 class="external text" rel="nofollow">Biocurator</a>) | List for biological data curators and informatics people who support them. If you are interested in how biological databases are created, maintained and used, then subscribe to this list. | <a href="http://mailman.tairgroup.org/pipermail/biocurator/"
 class="external text" rel="nofollow">TAIR</a> (2009/12-) | <a href="http://lists.open-bio.org/mailman/listinfo/bioperl-l"
-class="external text" rel="nofollow">Bioperl-l</a> | Primary [BioPerl](/wiki/BioPerl) mailing list and is meant both for developers as well as people who are interested in project issues and internals. The place where usage, code modifications, bugs & feature requests are discussed. If you do development with any of GMOD's [Perl based](/wiki/Category%3APerl) components then this is a useful list. | <a href="http://lists.open-bio.org/mailman/listinfo/open-bio-l"
+class="external text" rel="nofollow">Bioperl-l</a> | Primary [BioPerl](/wiki/BioPerl) mailing list and is meant both for developers as well as people who are interested in project issues and internals. The place where usage, code modifications, bugs & feature requests are discussed. If you do development with any of GMOD's  components then this is a useful list. | <a href="http://lists.open-bio.org/mailman/listinfo/open-bio-l"
 class="external text" rel="nofollow">OBF cross-project</a> | This list is for <a href="http://open-bio.org" class="external text" rel="nofollow">Open
 Bioinformatics Foundation (OBF)</a> projects to cross talk such as for OBDA and BioSQL issues.

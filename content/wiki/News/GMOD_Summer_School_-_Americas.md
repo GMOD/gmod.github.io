@@ -16,7 +16,7 @@ Components](../GMOD_Components).
 
 The course will be held May 6-9, at
 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a> in Durham, NC. These [GMOD
+
 Components](../GMOD_Components) will be covered:
 
 <table>
@@ -70,15 +70,12 @@ deadline will be automatically placed on the waiting list.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
 
 |----|----|
 | PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists) and the [GMOD News](../GMOD_News) for updates. |
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/29*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -9,25 +9,21 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="International Society for Biocuration" /></a>
 
 The <a href="http://biocurator.org/" class="external text"
-rel="nofollow">International Society for Biocuration (ISB)</a> is now
+
 accepting
 <a href="http://colleagues.biocurator.org/join" class="external text"
-rel="nofollow">member registrations</a>. I strongly encourage GMOD
+
 community members to think about joining ISB. GMOD and ISB have
 <a href="http://www.biocurator.org/mission.shtml" class="external text"
-rel="nofollow">many shared and complementary interests</a>.
 
 Membership rates start at less than US\$20 for students to a little over
 US\$100 for principal investigators from industry.
 
 Please consider this investment,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/06/25*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

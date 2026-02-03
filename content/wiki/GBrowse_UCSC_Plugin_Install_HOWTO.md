@@ -5,15 +5,12 @@ title: "GBrowse UCSC Plugin Install HOWTO"
 
 This page contains detailed installation instructions for setting up
 <a href="http://genome.ucsc.edu" class="external text"
-rel="nofollow">UCSC Genome Browser</a> comparative genomics track data
+
 and [GBrowse](/wiki/GBrowse.1)
 [plugins](/wiki/GBrowse_Install_HOWTO#Plugins) to
 display them. It assumes that you already have a working installation of
 [GBrowse](/wiki/GBrowse.1) and
 <a href="http://www.mysql.com/" class="external text"
-rel="nofollow">MySQL</a>.
-
-
 
   Prerequisites](#Prerequisites)
 - [UCSC naming
@@ -194,8 +191,6 @@ Assembly databases are described by the dbDb table in the central
 database, hgcentral. Each assembly database contains a trackDb table
 that describes all tracks in that database.
 
-
-
 ## Installation Overview
 
 1.  Download MySQL table data from UCSC.
@@ -207,8 +202,6 @@ that describes all tracks in that database.
     glyph modules
 4.  Install and configure plugin(s).
 
-
-
 ## Installation Details
 
 ### Which UCSC database?
@@ -218,12 +211,11 @@ version on which your GBrowse installation is built. For example,
 WormBase version WS170 corresponds to UCSC database ce4. This version
 correspondence is usually available on the assembly description page at
 <a href="http://genome.ucsc.edu/cgi-bin/hgGateway" class="external free"
-rel="nofollow">http://genome.ucsc.edu/cgi-bin/hgGateway</a> ; you might
+
 need to change the clade and genome in order to see your species of
 interest and its available assembly dates. If you still aren't sure
 about the correspondence, ask
 <a href="mailto:genome@soe.ucsc.edu" class="external free"
-rel="nofollow">mailto:genome@soe.ucsc.edu</a> for assistance.
 
 ### Which tables for my track(s) of interest?
 
@@ -263,13 +255,11 @@ multiz<em>N</em>waySummary, phastCons<em>N</em>way*</td>
 </tbody>
 </table>
 
-
-
 ### Download mysql dump files from UCSC
 
 All UCSC Genome Browser data can be downloaded from
 <a href="http://hgdownload.cse.ucsc.edu/" class="external text"
-rel="nofollow">hgdownload.cse.ucsc.edu</a>. The HTTP, FTP and rsync
+
 protocols are supported.
 
 For each database table \$TABLE, there are two files: \$TABLE.sql, which
@@ -304,7 +294,7 @@ several assembly metadata tables.
 
 If you encounter any problems while fetching the files, contact
 <a href="mailto:genome-mirror@soe.ucsc.edu" class="external free"
-rel="nofollow">mailto:genome-mirror@soe.ucsc.edu</a> . Please include
+
 which database and file(s), which version of downloading tool you were
 using, error messages if any, and any other relevant info.
 
@@ -508,8 +498,6 @@ data in the current region; try viewing a region that contains an exon
 or gene. Or the error log may contain a message that indicates what is
 missing.
 
-
-
 ## Performance tweaks
 
 ### rsync mysql table binary files
@@ -523,21 +511,14 @@ and loading into MySQL.
     rsync -navP rsync://hgdownload.cse.ucsc.edu/mysql/$DB/$TABLE.\* \
       /var/lib/mysql/$DB/
 
-
-
 ## Bug Reports and Support Requests
 
 Please send general questions and/or bug reports to
 <a href="mailto:genome@soe.ucsc.edu" class="external free"
-rel="nofollow">mailto:genome@soe.ucsc.edu</a>. If your question is
+
 specifically about fetching data from hgdownload.cse.ucsc.edu, send to
 <a href="mailto:genome_mirror@soe.ucsc.edu" class="external free"
-rel="nofollow">mailto:genome_mirror@soe.ucsc.edu</a>.
-
-
 
 ## AUTHORS
 
 Angie Hinrichs <a href="mailto:angiehinrichs@users.sourceforge.net"
-class="external free"
-rel="nofollow">mailto:angiehinrichs@users.sourceforge.net</a>

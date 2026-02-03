@@ -12,7 +12,7 @@ biological information</a>' by Chris Mungall, Dave Emmert, and The
 class="external text" rel="nofollow">FlyBase Consortium</a>, was
 presented at
 <a href="http://www.iscb.org/ismbeccb2007/" class="external text"
-rel="nofollow">ISMB/ECCB 2007</a>, and is now available in the journal
+
 <a href="http://bioinformatics.oxfordjournals.org/"
 class="external text" rel="nofollow">Bioinformatics</a>.
 
@@ -20,9 +20,6 @@ The paper describes the overall
 <a href="../../Chado" class="mw-redirect" title="Chado">Chado</a>
 philosophy and the 5 core Chado modules.
 
-
-
 *Posted to the [GMOD News](../../GMOD_News) on 2007/07/13*
 
-
-- [News Items](../../Category%253ANews_Items)
+- [News Items](../../Category:News_Items)

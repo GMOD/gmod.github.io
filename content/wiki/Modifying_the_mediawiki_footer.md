@@ -12,7 +12,6 @@ Here is what the surrounding code looked like:
 
                     <!-- end of the left (by default at least) column -->
 
-
     <?php
                     if($this->data['poweredbyico']) { ?>
                                     <?php $this->html('poweredbyico') ?>

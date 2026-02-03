@@ -11,22 +11,18 @@ title: "FlyBase Chado"
 - [Questions or
   comments](#Questions_or_comments)
 
-
-
 ## Introduction
 
 This document covers the specifics of
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and how it
 is used within <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>.
 
 ## Public Chado Access
 
 FlyBase provides public access to our Chado database via a couple of
 methods. One method is to download our PostgreSQL dumps from
 <a href="/wiki/ftp://ftp.flybase.net/releases/current/psql/"
-class="external free"
-rel="nofollow">ftp://ftp.flybase.net/releases/current/psql/</a> and
+
 install that on a local PostgreSQL server. Alternatively, you can
 directly connect to our PostgreSQL server which runs our current
 release. Information about how to connect to this database is detailed

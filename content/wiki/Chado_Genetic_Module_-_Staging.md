@@ -60,8 +60,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: environment_cvterm
 
 | FK | Name | Type | Description |
@@ -73,8 +71,6 @@ Tables referencing this one via Foreign Key Constraints:
 public.environment_cvterm Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: feature_genotype
 
@@ -157,8 +153,6 @@ public.feature_genotype Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: genotype
 
 Genetic context. A genotype is defined by a collection of features,
@@ -225,12 +219,10 @@ Tables referencing this one via Foreign Key Constraints:
 - [phenstatement](/wiki/Chado_Tables#Table:_phenstatement)
 - [stock_genotype](/wiki/Chado_Tables#Table:_stock_genotype)
 
-
-
 Discussion
 
 OPEN QUESTION: for multicopy transgenes, should we include a 'n_copies'
-column as well? -- [Brain Osborne](/wiki/User%3ABosborne), Feb
+column as well? -- [Brain Osborne](/wiki/User:Bosborne), Feb
 2007
 
 ------------------------------------------------------------------------
@@ -252,8 +244,6 @@ made in any one publication.
 public.phendesc Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: phenotype_comparison
 
@@ -279,8 +269,6 @@ Tables referencing this one via Foreign Key Constraints:
 - [phenotype_comparison_cvterm](/wiki/Chado_Tables#Table:_phenotype_comparison_cvterm)
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: phenstatement
 

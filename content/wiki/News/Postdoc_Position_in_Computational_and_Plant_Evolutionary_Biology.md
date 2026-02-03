@@ -12,9 +12,9 @@ events in evolution of selected plants and agronomic traits.
 
 The primary research groups are located at
 <a href="http://www.iastate.edu/‎" class="external text"
-rel="nofollow">Iowa State University (Ames, IA)</a> and at
+
 <a href="http://www.ncgr.org" class="external text"
-rel="nofollow">National Center for Genome Resources (Santa Fe, NM)</a>.
+
 Remote work may be considered. This is a two-year position, with
 possibility for extension. Salary will be at competitive federal rates
 (\>\$50k). U.S. citizenship will not be a requirement for the position.
@@ -26,8 +26,5 @@ and genetics.
 
 If interested, please contact
 <a href="mailto:steven.cannon@ars.usda.gov" class="external text"
-rel="nofollow">Steven Cannon</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2014/1/24*

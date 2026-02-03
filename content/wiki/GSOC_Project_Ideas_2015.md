@@ -25,7 +25,6 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* name + contact details of the lead mentor, name + contact
     details of backup mentor.
 
-
 Here is a list of the proposed project ideas for 2015:
 
 - **Project Idea 1: Using an interpreted language to develop
@@ -45,8 +44,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Knowledge prerequisites:* Java, Groovy, git
   - *Skill level:* Medium
   - *Mentors:* Lars Jorgensen, Morgan Taschuk, Pipeline team
-
-
 
 - **Project Idea 2: Write a Foreign Data Wrapper for Postgres and
   BAM/VCF**
@@ -76,8 +73,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Skill level:* Advanced
   - *Mentors:* Lars Jorgensen
 
-
-
 - **Project Idea 3: Implement a FUSE interface to BAM/CRAM**
   - *Brief explanation:* Storage of big data is an ongoing problem that
     will only get worse. As data moves through a processing pipeline in
@@ -96,8 +91,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Skill level:* Advanced
   - *Mentor:* Lars Jorgensen
 
-
-
 - **Project Idea 4: Use Galaxy to run SeqWare workflows and process on
   data**
   - *Brief explanation:* SeqWare is a bioinformatics workflow engine
@@ -114,8 +107,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Knowledge prerequisites:* Galaxy, Java, web services, PostgreSQL
   - *Skill level:* Medium
   - *Mentor:* Morgan Taschuk
-
-
 
 - **Project Idea 5: Barcode scanner using phone or tablet to drive
   LIMS**
@@ -140,8 +131,6 @@ Here is a list of the proposed project ideas for 2015:
     interface design
   - *Mentor:* Lars Jorgensen, Timothy Beck and Tony DeBat
 
-
-
 - **Project Idea 6: iPython notebook on top of our infrastructure**
   - *Brief explanation:* iPython notebook is a powerful tool. It enables
     reproducible science as people can share their work. It would be
@@ -153,8 +142,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Knowledge prerequisites:* Python, web services
   - *Skill level:* Basic
   - *Mentor:* Timothy Beck, Lawrence Heisler, Yogi Sundaravadanam
-
-
 
 - **Project Idea 7: Use Galaxy to run Reactome analysis and processes on
   genomic data**
@@ -176,8 +163,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Knowledge prerequisites:* Galaxy, Java, web services
   - *Skill level:* Medium
   - *Mentor:* Joel Weiser
-
-
 
 - **Project Idea 8: Biological Graph Visualization**
   - *Brief explanation:* Tripal
@@ -201,8 +186,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Skill level:* Medium
   - *Mentors:* Stephen Ficklin
 
-
-
 - **Project Idea 9: BioModels AnalysisTools**
   - *Brief explanation:* Following the Reactome
     (<a href="http://www.reactome.org" class="external free"
@@ -222,8 +205,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Knowledge prerequisites:* Java, SQL, XML, web services, Git.
   - *Skill level:* Medium/Advanced.
   - *Mentors:* Antonio Fabregat, Camille Laibe, Henning Hermjakob
-
-
 
 - **Project Idea 10: Reactome for Illumina Basespace**
   - *Brief explanation:* Reactome
@@ -248,8 +229,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Skill level:* Medium.
   - *Mentors:* Antonio Fabregat, Henning Hemjakob.
 
-
-
 - **Project Idea 11: WebApollo Variant annotation**
   - *Background:* WebApollo
     (<a href="http://genomearchitect.org" class="external free"
@@ -265,8 +244,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Skill level:* Medium
   - *Mentor:* Nathan Dunn, Colin Diesh
 
-
-
 - **Project Idea 12: WebApollo Multi-scaffold visualization**
   - *Background:* WebApollo
     (<a href="http://genomearchitect.org" class="external free"
@@ -280,8 +257,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Tools:* advanced javascript, some server side java
   - *Skill level:* Advanced
   - *Mentor:* Nathan Dunn, Colin Diesh
-
-
 
 - **Project Idea 13: Afra Flexible realtime Export**
   - *Background:* Afra
@@ -309,8 +284,6 @@ Here is a list of the proposed project ideas for 2015:
   - *Tools:* ruby, javascript
   - *Skill level:* Advanced
   - *Mentor:* Anurag Priyam, Yannick Wurm
-
-
 
 - **Project Idea 14: Implementing filters and filter visualizations for
   the MGI mouse genome browser using jbrowse**
@@ -344,8 +317,6 @@ Here is a list of the proposed project ideas for 2015:
     basic familiarity with biological data.
   - *Skill level:* Medium
   - *Mentors:* Paul Hale (primary), Joanne Berghout
-
-
 
 - **Project Idea 15: Intermine for Reactome: a data mining resource for
   metabolic pathways**

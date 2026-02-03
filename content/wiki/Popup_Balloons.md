@@ -10,7 +10,7 @@ height="105" alt="Sample ballon.png" />
 **balloon.js** is a javascript class for balloon tooltips, otherwise
 known as popup balloons, bubble tooltips, rollover tooltips, etc. It is
 maintained by <span class="pops">[Sheldon
-McKay](/wiki/User%3AMckays)</span>, a scientist at the
+McKay](/wiki/User:Mckays)</span>, a scientist at the
 <span class="pops"><a href="http://dnalc.org" class="external text" rel="nofollow">DNA
 Learning center</a></span>,
 <span class="pops"><a href="http://www.cshl.edu" class="external text" rel="nofollow">Cold
@@ -166,7 +166,6 @@ balloon.js is generic and should work in most web sites.
 
 **Example 1:** See the balloons in action:
 <a href="http://mckay.cshl.edu/balloons.html" class="external text"
-rel="nofollow">balloons2.html</a>
 
 # Availability
 
@@ -1142,7 +1141,7 @@ be serving most of its Web pages.
 For example: If you set the document root to /home/httpd/html, then
 accesses to
 <a href="http://your.webserver.com/index.html" class="external free"
-rel="nofollow">http://your.webserver.com/index.html</a> would return the
+
 file /home/httpd/html/index.html. An access to
 ![gazonk.gif](http://your.webserver.com/foo/gazonk.gif) would return
 /home/httpd/html/foo/gazonk.gif.

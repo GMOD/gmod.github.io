@@ -22,14 +22,11 @@ href="http://recruit.trovix.com/jobhostmaster/jobhost/ListJobPosts.do?action=sea
 class="external text" rel="nofollow">job postings</a> for more
 information.
 
-[SGD](../Category%253ASGD) is both a GMOD contributor
+[SGD](../Category:SGD) is both a GMOD contributor
 (*e.g.*, [BLAST Graphic
 Viewer](../BLAST_Graphic_Viewer.1)) and GMOD
 user.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/03/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

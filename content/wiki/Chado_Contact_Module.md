@@ -15,8 +15,6 @@ title: "Chado Contact Module"
 The contact module is used to store information about people, groups,
 and organizations.
 
-
-
 # Tables
 
 ## Table: contact
@@ -83,8 +81,6 @@ Tables referencing this one via Foreign Key Constraints:
 - [study](/wiki/Chado_Tables#Table:_study)
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: contact_relationship
 

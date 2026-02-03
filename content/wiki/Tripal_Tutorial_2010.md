@@ -3,22 +3,20 @@ title: "Tripal Tutorial 2010"
 ---
 # Tripal Tutorial 2010
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
 This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
-Ficklin](/wiki/User%3ASficklin) at the [2010 GMOD Summer
+Ficklin](/wiki/User:Sficklin) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through installing and configuring [Tripal](/wiki/Tripal.1), a web
 front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 databases. This tutorial references (and complements) the
@@ -162,14 +160,12 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
-
-
 
 ## Important Information
 
@@ -453,7 +449,7 @@ Next, download a GFF file that has been reduced and adjusted for the
 course:
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a0/Dmel-4-r5.27.reduced.gff.txt"
-class="internal"
+
 title="Dmel-4-r5.27.reduced.gff.txt">Media:Dmel-4-r5.27.reduced.gff.txt</a>
 
 The following changes were made from the original GFF:
@@ -649,8 +645,6 @@ Administration - Site Building
   - Add the "Who's Online" block to the left sidebar.
   - Add a search box to the left sidebar as well.
 
-
-
 - Site Building → Menu
   - Add a 'Home' link
   - Add an 'About' link
@@ -665,8 +659,6 @@ Administration - Site Building
   - Configure the theme and remove the search box.
   - Navigate to Drupal.org and click on 'Themes'. Review the wealth of
     public themes.
-
-
 
 Administration - User Management
 
@@ -718,7 +710,6 @@ Drupal allows for customization for the look-and-feel of the website.
 This is done through use of themes. A list of publicly available themes
 is available on the
 <a href="http://drupal.org/project/Themes" class="external text"
-rel="nofollow">Drupal website</a>.
 
 Themes not packaged with Drupal should be installed in a special
 directory. Create the `themes` directory:
@@ -731,7 +722,7 @@ directory. Create the `themes` directory:
 
 For this demonstration we will use the Pixture Reloaded theme
 (<a href="http://drupal.org/node/456520" class="external free"
-rel="nofollow">http://drupal.org/node/456520</a>). Installation is easy.
+
 Simply download and then unpack the downloaded compressed theme file
 into the newly created `themes` directory:
 
@@ -778,8 +769,6 @@ Mailing List
 
 Made available through GMOD:
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal"
-class="external free"
-rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal</a>
 
 ## Tripal Overview
 
@@ -1013,7 +1002,6 @@ Now add the following to the `pixture_reloaded.info`
 Now, navigate to the **Administer → Site Building → Themes** directory
 and enable the Tripal theme but do not set as default.
 
-
 Return to the organism page and refresh. Now the content is available.
 
 #### Organize the Blocks
@@ -1151,8 +1139,6 @@ this navigate to **Administer → Tripal Management → DB**. The page with
 
 Now return to the feature page and the reference should be clickable
 
-
-
 ### Review Permissions
 
 Now that we have data in the site we can control who has access to do
@@ -1285,7 +1271,6 @@ the form that appears provide the following details:
 8.  Parameters: <span class="enter">'iprscan -cli -i JYalpha.fasta -o
     JYalpha.fasta.ipr.html -format html -goterms -ipr'</span>
 
-
 Save the Analysis and run the new job:
 
 ``` enter
@@ -1351,7 +1336,6 @@ this, we need to reindex the features.
 
 How to reindex all content
 
-
 Navigate to **Administer &rar; Tripal Management → Features** and click
 the **Reindex all feature nodes** button. This will add a Job to Tripal.
 
@@ -1378,7 +1362,6 @@ through how to do it.
 
 An example of advanced searching with multiple taxonomy terms:
 <a href="http://www.fagaceae.org/search" class="external free"
-rel="nofollow">http://www.fagaceae.org/search</a>
 
 - First, navigate to the Search page and open the advanced options. It
   provides some default filtering mechanisms.
@@ -1458,8 +1441,6 @@ Concepts
     with Tripal.
 2.  Drupal API provide the rest
 
-
-
 Anatomy of a Drupal module
 
 1.  module name (directory name)
@@ -1469,8 +1450,6 @@ Anatomy of a Drupal module
 4.  a .module file the code for the module.
 5.  templates: the look-and-feel should be separated from the code if
     possible.
-
-
 
 Example `.info` file
 `tripal_feature.info`
@@ -1492,7 +1471,6 @@ Example `.install file`
 
 Drupal hooks: {node}\_{hook_name} or {module}\_{hook_name}
 
-
 The important functions:
 
 - function *tripal_feature_install()*: actions to do on install
@@ -1502,8 +1480,6 @@ The important functions:
   module is uninstalled
 
 See the code here: `/var/www/sites/all/modules/tripal_feature`
-
-
 
 Example `.module` file
 `tripal_feature.module`
@@ -1547,8 +1523,6 @@ The important node-centric functions:
 
 Tripal provides the following functions for integrating with Tripal:
 
-
-
 *tripal_create_moddir(\$module_name)*
 
 Every tripal module is expected to have it's own data directory. This
@@ -1582,22 +1556,16 @@ argument is as follows:
 argument to the callback function. Therefore all callback functions
 should have a jobid argument first.
 
-
-
 *tripal_job_set_progress(\$job_id,\$percentage)*
 
 Allows the callback function for the job to set the progress of the job.
 The first argument is the job id that get's passed into the callback by
 Tripal and the percentage is a value between 0 and 100.
 
-
-
 *tripal_get_module_active_jobs (\$modulename)*
 
 Allows a module to see if it has any active jobs currently executing. A
 list of jobs is returned.
-
-
 
 *tripal_add_cvterms (\$name,\$definition,\$cv_name =
 'tripal',\$db_name='tripal'*
@@ -1607,8 +1575,6 @@ added by default to the 'tripal' CV and associated with the 'tripal'
 database in Chado. This function allows modules to create cvterms
 behind-the-scenes to support the data management they provide. This
 function is particularly useful in \_install hooks of .install files.
-
-
 
 *function tripal_add_mview
 (\$name,\$modulename,\$mv_table,\$mv_specs,\$indexed,\$query,\$special_index)*
@@ -1633,8 +1599,6 @@ stored in Chado. This is different from the materialized views that
 comes with chado 1.0, although the outcome is the same. Any materialized
 views created with Tripal are not compatible with the Chado scripts for
 updating materialized views.
-
-
 
 Adding a new analysis method
 
@@ -1756,7 +1720,6 @@ so that in the future if we do want to add code to these modules we can.
    */
    function tripal_pubs_install() {
    }
-
 
    /*******************************************************************************
    * Implementation of hook_uninstall().

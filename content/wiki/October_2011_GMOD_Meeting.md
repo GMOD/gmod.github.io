@@ -23,7 +23,7 @@ width="250" height="225" alt="October2011Logo.png" />
 <hr />
 <p>12-13 October 2011<br />
 <a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a><br />
+
 Toronto, Canada<br />
 <a href="http://oicr.on.ca" rel="nofollow"
 title="Ontario Institute for Cancer Research"><img
@@ -69,7 +69,7 @@ class="external text" rel="nofollow">#gmod11 hashtag</a>.</span>
 
 The next [GMOD meeting](/wiki/Meetings) is being held in October
 12-13, 2011 at the <a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> in
+
 Toronto, Canada. OICR is the home of [GBrowse](/wiki/GBrowse.1) and
 [BioMart](/wiki/BioMart).
 
@@ -149,7 +149,7 @@ Professor at the University of Toronto in January 2006. He is the
 recipient of the Alfred P. Sloan Research Fellowship, Ontario Early
 Researcher Award, and a Canada Research Chair in Computational Biology.
 See <a href="http://www.cs.toronto.edu/~brudno/" class="external free"
-rel="nofollow">http://www.cs.toronto.edu/~brudno/</a> for more
+
 information on Mike.</p></td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ title="Matahari.pdf">PDF</a></td>
 
 ### Day 2: Thursday
 
-| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy.1)                                                  | [Dan Blankenberg](/wiki/User%3ADanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
+| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy.1)                                                  | [Dan Blankenberg](/wiki/User:DanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
 
 class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
 to GMOD Data</a> | Ben Vandervalk | <a
@@ -310,15 +310,15 @@ Please feel free to add suggested talks or topics for the meeting.
 
 - The Mycoplasma Genome Database: marrying microscopy and genomics
   (Andrew Oberlin & Iddo Friedberg)
-- Improving MOD interoperability ([Scott Cain](/wiki/User%3AScott),
-  [Josh Goodman](/wiki/User%3AJogoodma) will lead the
+- Improving MOD interoperability ([Scott Cain](/wiki/User:Scott),
+  [Josh Goodman](/wiki/User:Jogoodma) will lead the
   discussion)
 - [BioMart](/wiki/BioMart),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
   [Galaxy](/wiki/Galaxy.1), [GBrowse](/wiki/GBrowse.1), and
   [InterMine](/wiki/InterMine) updates - since representatives of
   all those groups will be there (suggested by [Dave
-  C](/wiki/User%3AClements))
+  C](/wiki/User:Clements))
 - <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"
   class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
   to GMOD Data</a> (Ben Vandervalk)
@@ -356,25 +356,24 @@ width="110" height="37" alt="MAKER" /> |
 
 You can register for the BioMart, Galaxy, and MAKER Workshops on the
 <a href="http://gmod.eventbrite.com/" class="external text"
-rel="nofollow">meeting registration site</a>. If you are interested in
+
 the [InterMine development meeting](#InterMine_Development_Meeting),
-please let [Richard Smith](/wiki/User%3ARsmith) know.
+please let [Richard Smith](/wiki/User:Rsmith) know.
 
 ### [Galaxy](/wiki/Galaxy.1) Workshop
 
 This workshop will cover an introduction to [Galaxy](/wiki/Galaxy.1),
 including analyzing data with tools and visualizations, using Galaxy in
 the cloud, and running your own instance and adding new tools. [Dan
-Blankenberg](/wiki/User%3ADanB) of the
+Blankenberg](/wiki/User:DanB) of the
 <a href="http://galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy Project</a> will lead the workshop.
 
 Galaxy is an open-source analysis and data integration framework that is
 available as a
 <a href="http://usegalaxy" class="external text" rel="nofollow">free
 public service</a> and as
 <a href="http://getgalaxy.org/" class="external text"
-rel="nofollow">open source software</a> that can be deployed both
+
 locally or on cloud resources. The Galaxy platform empowers transparent
 and reproducible research by providing interactive access to popular
 tools, including those that allow manipulation of raw sequencing reads,
@@ -386,7 +385,6 @@ the Ontario Institute for Cancer Research, room OICR HL-31. Table
 seating is limited to 18 participants, with space for an additional 10
 participants, so please
 <a href="http://gmod.eventbrite.com/" class="external text"
-rel="nofollow">register</a> and arrive early.
 
 | Workshop Slides                                                                                                                                                                                                                 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | [An Introduction to Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d8/GalaxyWorkshop0_2011_10.pdf)                                                    | [Using Galaxy for High-throughput Sequencing (HTS) Analysis and Visualization](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/GalaxyWorkshop1_2011_10.pdf) | [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf)                                        | [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf)                                       |
 
@@ -400,7 +398,7 @@ which involves supporting InterMine data-warehouses for _D.
 melanogaster_, _R. norvegus_, _M. musculus_, _S. cerevisiae_, _D. rerio_
 and _C. elegans_. Groups representing other efforts to use InterMine for
 biological data-warehousing are welcome to attend (as indeed some already
-are) - please contact [Richard Smith](/wiki/User%3ARsmith) for
+are) - please contact [Richard Smith](/wiki/User:Rsmith) for
 more details.
 
 ### [BioMart](/wiki/BioMart) Workshop
@@ -409,30 +407,29 @@ This workshop will include an introduction to the
 [BioMart](/wiki/BioMart) system, followed by a brief demonstration
 of BioMart applications in the BioMart Central Portal
 (<a href="http://central.biomart.org" class="external free"
-rel="nofollow">http://central.biomart.org</a>) and the International
+
 Cancer Genome Consortium (ICGC) Data Portal
 (<a href="http://dcc.icgc.org" class="external free"
-rel="nofollow">http://dcc.icgc.org</a>), and a hands-on tutorial to show
+
 how to create and configure a local data mart, how to import external
 mart and link it with the local mart, how to deploy the BioMart server
 to provide data access, and how to query BioMart server via web GUI and
 REST API. Junjun Zhang of the
 <a href="http://biomart.org/" class="external text"
-rel="nofollow">BioMart Project</a> will lead the workshop.
 
 Requirements: Parts of the tutorial will be taught using a VirtualBox
 Open Virtualization Appliance (OVA) image file. You will need a laptop
 with the latest version of VirtualBox, VMware Player, or VMware
 Workstation installed and running. VirtualBox is freely available from
 <a href="http://www.virtualbox.org/wiki/Downloads" class="external free"
-rel="nofollow">http://www.virtualbox.org/wiki/Downloads</a>. VMware
+
 player for Linux and Windows operating systems is freely available from
 VMware
 (<a href="http://vmware.com/products/player/" class="external free"
-rel="nofollow">http://vmware.com/products/player/</a>). Mac users may
+
 use VMware Fusion
 (<a href="http://www.vmware.com/products/fusion/" class="external free"
-rel="nofollow">http://www.vmware.com/products/fusion/</a> on a 30 day
+
 free trail).
 
 The BioMart workshop will be held on Friday, October 14, from 9-12 in
@@ -448,8 +445,7 @@ models, and ingrate the output into other GMOD tools. To make
 demonstrations as hands on as possible, the web version of MAKER will be
 used to give everyone access to the pipeline
 (<a href="http://www.yandell-lab.org/software/mwas.html"
-class="external free"
-rel="nofollow">http://www.yandell-lab.org/software/mwas.html</a>).
+
 Examples will include demonstrations of the command line version of
 MAKER as well (but the online examples will be hands on). You can follow
 along online, or you can just watch and take notes.

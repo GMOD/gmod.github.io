@@ -46,8 +46,6 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-
-
 How are we going to visualize and exploit (or even cope with) the world
 three years from now, when small labs may be able to fully sequence 500
 individuals or species (or more) in a month? How can we visualize and
@@ -81,17 +79,7 @@ information on other events.
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](/wiki/User%3AClements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
-rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
-rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](/wiki/User%3AChemmeri) | <a href="http://cgb.indiana.edu" class="external free"
-rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
-rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](/wiki/User%3AScott) | OICR | <a href="http://gmod.org/" class="external free"
-rel="nofollow">http://gmod.org/</a> | joan pontius | SAIC-NCI-FREDERICK Laboratory of Genomic Diversity | <a href="http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/"
-class="external free"
-rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> | [Don Gilbert](/wiki/User%3ADongilbert) | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
-rel="nofollow">http://arthropods.eugenes.org/</a> |
+| [Dave Clements](/wiki/User:Clements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 
 ## Summary
 
@@ -245,7 +233,7 @@ with subtracks.
 
 One participant suggested using a
 <a href="http://prezi.com" class="external text"
-rel="nofollow">Prezi</a> style of navigation to move between related
+
 regions. Another suggested gaining inspiration from current network
 tools such as Cytoscape or [Pathway
 Tools](/wiki/Pathway_Tools.1). Muave, a comparative genomics
@@ -258,7 +246,7 @@ model could also be adopted.
 Key ideas here are network representation and navigation.
 
 Clade databases can also provide some insights here. An excerpt from and
-email from [Don Gilbert](/wiki/User%3ADongilbert):
+email from [Don Gilbert](/wiki/User:Dongilbert):
 
 Part of the answer likely involves clade genomics, i.e. don't peg your
 new genome to one reference, but to a consensus of several related. We
@@ -273,7 +261,6 @@ helps and where it may not, which a clade database can help with.
 
 This is shows my approach w/
 <a href="http://arthropods.eugenes.org/" class="external text"
-rel="nofollow">euGenes/ Arthropod genomes</a>.
 
 The basics are similar to Ensembl's and others in collecting related
 species genes, doing orthology analysis and grouping genes with some
@@ -288,6 +275,5 @@ examples for post-reference genome informatics.
 
 There is a nice
 <a href="http://blog.openhelix.eu/?p=5551" class="external text"
-rel="nofollow">writeup of this summary</a> by Mary Mangan on the
+
 <a href="http://blog.openhelix.eu/" class="external text"
-rel="nofollow">OpenHelix blog</a>.

@@ -4,7 +4,7 @@ title: "MAKER Tutorial 2012"
 # MAKER Tutorial 2012
 
 This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
-Moore](/wiki/User%3ABmoore) as part of the [2012 GMOD Summer
+Moore](/wiki/User:Bmoore) as part of the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
@@ -15,8 +15,6 @@ how to get this AMI.
 
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
-
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -198,7 +196,6 @@ Examples:
   (<a href="http://www.sequenceontology.org/" class="external text"
   rel="nofollow">Sequence Onotology</a>)
 
-
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
 Installer's Guide). I have installed this for you. So let's set up
@@ -259,7 +256,6 @@ You should see the following.
      MPD_SECRETWORD=mr45-j9z
     into the file. (Of course use some other secret word than mr45-j9z.)
 
-
 Follow the instructions to set this file up, and start the mpi
 environment with `mpdboot`. Then run `mpi_maker` through the MPI manager
 `mpiexec`.
@@ -301,7 +297,6 @@ annotating an entire genome you will need to install MAKER locally. But
 if you like the convenience of the MWAS user interface, you can
 optionally install the interface on top of a locally installed version
 of MAKER for use in your own lab.
-
 
 First under the `maker` directory there is a subdirectory called `MWAS`.
 `MWAS` contains all the needed files to build the MAKER web interface.
@@ -382,7 +377,6 @@ need to launch a server to monitor for new job submissions.
 And then go to
 
 <a href="http://localhost/maker" class="external free"
-rel="nofollow">http://localhost/maker</a>
 
 ## MAKER Accessory Scripts
 

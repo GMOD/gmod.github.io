@@ -237,8 +237,6 @@ distributed separately and can be downloaded from:
 
 <a
 href="http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download"
-class="external free"
-rel="nofollow">http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download</a>
 
 Load the file with this command:
 
@@ -248,8 +246,6 @@ You should now be able to browse the yeast genome. Type the following
 URL into your favorite browser:
 
 <a href="http://name.of.your.host/cgi-bin/gbrowse/yeast"
-class="external free"
-rel="nofollow">http://name.of.your.host/cgi-bin/gbrowse/yeast</a>
 
 This will display the genome browser instructions and a search field.
 Type in "III" to start searching chromosome III, or search for "glucose"

@@ -98,8 +98,6 @@ GBrowse.
 <a href="../GBrowse_Configuration" class="mw-redirect"
 title="GBrowse Configuration">GBrowse Configuration</a>.*
 
-
-
 This is declaring a new constant track in the overview named "SNP
 Density." The feature is "snp_density", corresponding to the aggregator
 declared earlier. The glyph is "xyplot" using the graph type of "boxes"

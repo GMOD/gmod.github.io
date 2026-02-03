@@ -128,9 +128,6 @@ follow the instructions to complete the application process.
 Berkeley Lab is an affirmative action/equal opportunity employer
 committed to the development of a diverse workforce.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/05/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -57,8 +57,7 @@ appliance. For the bulk of the tutorial, we will be following the
 tutorial that comes with GBrowse and can be found via this URL when you
 launch Firefox inside the virtual machine:
 <a href="http://localhost/gbrowse2/tutorial/tutorial.html"
-class="external free"
-rel="nofollow">http://localhost/gbrowse2/tutorial/tutorial.html</a>
+
 (note that if you click this link from somewhere other than inside the
 virtual machine, Firefox will try to contact a web server on your own
 machine, whether there is one there or not).

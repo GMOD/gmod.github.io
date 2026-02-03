@@ -8,7 +8,7 @@ gff3.
 
 second question is how.
 <a href="http://www.acedb.org/" class="external text"
-rel="nofollow">acedb</a> underlines wormbase and acedb is organized into
+
 ace classes. the classes are
 <a href="http://wormbase.org/db/misc/database_stats"
 class="external text" rel="nofollow">here</a>. seems to me there are two
@@ -264,7 +264,7 @@ this will connect database to validate the xml file
 
 the power of chado relies on common and controlled cvterms,
 <a href="http://www.foaf-project.org/" class="external text"
-rel="nofollow">FOAF</a> cvterms will be reused as much as possible for
+
 contact properties. Plus some terms from WormBase.
 
 ## strain from wormbase to stock from chado

@@ -11,7 +11,7 @@ Reorganization](../Chado_Documentation_Reorganization)
 effort to do just that.
 
 During this effort the existing [Chado
-documentation](../Category%253AChado) may be unstable. We
+documentation](../Category:Chado) may be unstable. We
 will do our best to make this reorganization be as painless as possible.
 
 The [Chado Documentation
@@ -24,12 +24,9 @@ then please send us your
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/04/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

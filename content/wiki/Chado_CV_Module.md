@@ -71,9 +71,9 @@ ontologies, depending on which terminology you prefer.
 It is intended to be rich enough to encapsulate anything in the Gene
 Ontology (GO) or OBO family of ontologies (see the
 <a href="http://www.geneontology.org" class="external text"
-rel="nofollow">GO website</a> and the
+
 <a href="http://obo.sourceforge.net" class="external text"
-rel="nofollow">OBO project</a>). The schema reflects the data model of
+
 OBO and of the
 <a href="http://oboedit.org/" class="external text" rel="nofollow">OBO
 Edit</a> tool currently used by these projects.
@@ -115,7 +115,6 @@ many OBO ontologies use the _part of_ relationship, and GO also uses the
 _regulates_ relation. Relationship types also come from a controlled
 vocabulary, the
 <a href="http://obofoundry.org/ro/" class="external text"
-rel="nofollow">OBO Relation Ontology</a>.
 
 The [cvterm_relationship](#Table:_cvterm_relationship) can be thought of
 as specifying sentences about the cvterms. These sentences have 3
@@ -163,16 +162,16 @@ have
 
 **The text above was taken from <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/schema/trunk/chado/modules/cv/"
-class="external text"
+
 rel="nofollow"><code>modules/cv/cv-intro.txt</code></a> , which was
 incomplete** (and no longer exists).
 
 The [sequence module](/wiki/Chado_Sequence_Module)
 makes extensive use of terms taken from various ontologies such as
 <a href="http://song.sourceforge.net/" class="external text"
-rel="nofollow">SO</a> and the
+
 <a href="http://obofoundry.org" class="external text"
-rel="nofollow">OBO</a> Relations Ontology, using the _type_id_ foreign
+
 key column. In addition, features can be annotated using ontologies such
 as GO using the
 [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm)
@@ -229,7 +228,6 @@ This section concerns relations between ontology terms and how defined
 terms and relations can be used to reason, either by humans or
 computers. A specialized ontology concerning these relations has been
 developed, the <a href="http://obofoundry.org/ro/" class="external text"
-rel="nofollow">OBO Relation Ontology</a>.
 
 Often it is useful to know the
 <a href="http://en.wikipedia.org/wiki/Transitive_closure" class="extiw"
@@ -414,7 +412,7 @@ a cvtermpath; it is meaningless.
 
 Note that for
 <a href="http://amigo.geneontology.org/" class="external text"
-rel="nofollow">Amigo</a>-like query behaviour, it is necessary only to
+
 query [cvtermpath](#Table:_cvtermpath), ignoring cvtermpath.type_id
 (these are obtained by querying
 [cvterm_relationship](#Table:_cvterm_relationship)).
@@ -627,7 +625,7 @@ represents the class of things that happen during the larval stage.
 Two views: _cvterm_genus_ and _cvterm_differentium_ views are in
 chado/modules/cv/views.
 
-### Example Use Case: [Phenotypes](/wiki/Category%3APhenotypes)
+### Example Use Case:
 
 The idea here is that queries for composed term "syndactyly" should
 automatically return the same results as a boolean query for "fusion" +
@@ -651,8 +649,6 @@ class="external text" rel="nofollow">Obol</a>.
 
 Currently the DAGs of many OBO ontologies are highly tangled; see
 <a href="http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html"
-class="external free"
-rel="nofollow">http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html</a>
 
 If all terms have logical definitions, then there is only one **true**
 (genus) or _isa_ parent. This enables us to disentangle the DAGs and
@@ -667,9 +663,8 @@ corresponding to genus-differentiae are loaded.
 
 First you must convert OWL into OBO 1.2 format. There will soon be a way
 to do this in <a href="http://www.oboedit.org/" class="external text"
-rel="nofollow">OboEdit</a>. For now you can use
+
 <a href="http://www.blipkit.org" class="external text"
-rel="nofollow">blipkit</a>.
 
     blip io-convert my.owl -to obo -o my.obo
 

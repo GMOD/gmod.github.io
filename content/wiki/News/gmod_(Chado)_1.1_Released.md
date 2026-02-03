@@ -5,20 +5,19 @@ title: "News/gmod (Chado) 1.1 Released"
 
 I am pleased to announce that we released
 <a href="https://sourceforge.net/projects/gmod/" class="external text"
-rel="nofollow">gmod-1.1</a> today. This release has the GMOD database
+
 [schema](../Glossary#Schema),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>, and a
 variety of tools for loading and working with the database. The release
 can be downloaded from the
 <a href="https://sourceforge.net/projects/gmod/" class="external text"
-rel="nofollow">GMOD SourceForge site</a>.
 
 There have been many people who have helped with getting this release
 done and I would like to thank all of them. I would like to especially
-thank [Rob Buels](../User%253ARobertBuels) and [Naama
-Menda](../User%253ANaamaMenda) and the rest of the people
+thank [Rob Buels](../User:RobertBuels) and [Naama
+Menda](../User:NaamaMenda) and the rest of the people
 at the <a href="http://solgenomics.net/" class="external text"
-rel="nofollow">Sol Genomics Network (SGN)</a> for their code
+
 contributions, including a pub table loader that works with PubMed and
 an updated version of the script to calculate [cvterm
 closures](../Chado_CV_Module#Transitive_Closure).
@@ -49,11 +48,8 @@ schema modifications being worked on now.
 
 Thanks for your continued support of the GMOD project,
 
-[Scott](../User%253AScott)
-
-
+[Scott](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/05/24*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

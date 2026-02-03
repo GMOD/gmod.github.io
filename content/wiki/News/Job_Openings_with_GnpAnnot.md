@@ -6,12 +6,10 @@ title: "News/Job Openings with GnpAnnot"
 <a href="http://urgi.versailles.inra.fr/projects/GnpAnnot/"
 class="external text" rel="nofollow">GnpAnnot</a>, an
 <a href="http://www.inra.fr/" class="external text"
-rel="nofollow">INRA</a> project, is offering 2 positions for programmers
+
 to implement and/or improve GMOD interfaces for
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 databases.
-
-
 
 1st Position: IRISA
 
@@ -47,9 +45,6 @@ The job should start on the first of September 2008
 
 **Contact:** Fabrice Legeai
 <a href="mailto:fabrice.legeai@rennes.inra.fr" class="external text"
-rel="nofollow">fabrice.legeai@rennes.inra.fr</a>
-
-
 
 2nd Position: INRA-URGI
 
@@ -65,7 +60,6 @@ One year object-oriented programmer (Java, Perl Object)
 
 The job opportunity will be located at
 <a href="http://urgi.versailles.inra.fr/" class="external text"
-rel="nofollow">INRA-URGI</a> in Versailles (Near Paris), France.
 
 **Description:**
 
@@ -93,17 +87,13 @@ Answers expected before September the 5th. The job should start on the
 
 *update october 2008: position for the first year now assigned.*
 
-
 Stéphanie Sidibe-Bocs, the PI of GnpAnnot, will be at BOSC and ISMB this
 week and is available to discuss the project and these openings. You can
 e-mail Stéphanie at
 <a href="mailto:stephanie.sidibe-bocs@cirad.fr" class="external text"
-rel="nofollow">stephanie.sidibe-bocs@cirad.fr</a>, or just introduce
+
 yourself when you see her.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/07/17*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

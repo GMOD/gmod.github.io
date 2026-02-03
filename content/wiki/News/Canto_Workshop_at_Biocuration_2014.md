@@ -19,14 +19,12 @@ the use of [Canto](../Canto), on Wednesday 9th April in the
 afternoon. Canto is a literature curation tool that allows users to
 create functional annotations for genes and gene products using
 <a href="http://www.obofoundry.org/" class="external text"
-rel="nofollow">OBO (ontology) terms</a>. Canto will soon be added to
+
 [GMOD in the Cloud](../Cloud.1), and this workshop will show
 participants how to get a GMOD in the Cloud instance up and running--it
 takes less than ten minutes!--and how to use Canto for literature
 curation.
 
 We will have more information closer to the time.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2014/03/25*

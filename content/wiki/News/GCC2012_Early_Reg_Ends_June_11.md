@@ -22,7 +22,6 @@ class="external text" rel="nofollow">discounted conference lodging</a>
 <a href="http://wiki.g2.bx.psu.edu/Events/GCC2012/Register"
 class="external text" rel="nofollow">Register now</a>.
 
-
 <a href="http://galaxyproject.org/wiki/Events/GCC2012"
 class="external text" rel="nofollow">GCC2012</a> is about integrating,
 analyzing, and sharing the diverse and very large datasets that are now
@@ -31,12 +30,11 @@ practices with, and learn from, a large community of researchers and
 support staff who are facing the challenges of data-intensive biology.
 [Galaxy](../Galaxy.1) is an
 <a href="http://galaxyproject.org" class="external text"
-rel="nofollow">open web-based platform for data intensive biomedical
-research</a> that is widely used and deployed at research organizations
+
 of all sizes and around the world.
 
 <a href="http://galaxyproject.org/wiki/Events/GCC2012/TrainingDay"
-rel="nofollow"
+
 title="2012 Galaxy Community Conference Training Day"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2e/GCC2012TrainingDayLogo.png/170px-GCC2012TrainingDayLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/GCC2012TrainingDayLogo.png 2x"
@@ -58,13 +56,10 @@ the conference web site.
 
 Hope to see you in Chicago,
 
-[Dave Clements](../User%253AClements), on behalf of the <a
+[Dave Clements](../User:Clements), on behalf of the <a
 href="http://galaxyproject.org/wiki/Events/GCC2012/Organizing%20Committee"
 class="external text" rel="nofollow">GCC2012 Organizing Committee</a>
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/06/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

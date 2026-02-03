@@ -91,8 +91,6 @@ dialog that prompts you for your login username and password. If all is
 configured correctly, then you'll be able to log in using your Unix
 username and password.
 
-
-
 # Customizing the Plugin
 
 You can customize the messages that appear at the top and bottom of the
@@ -130,6 +128,5 @@ to create your own customized authentication plugin, please see
 [Creating GBrowse
 Plugins](../../Creating_GBrowse_Plugins).
 
-
 - [GBrowse
-  Plugins](../../Category%253AGBrowse_Plugins)
+  Plugins](../../Category:GBrowse_Plugins)

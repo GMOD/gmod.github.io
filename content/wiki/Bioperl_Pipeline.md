@@ -65,21 +65,15 @@ class="external text" rel="nofollow">Bioperl CVS</a>
 
     cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/bioperl co bioperl-pipeline
 
-
-
 ## Mailing List
 
 <a href="http://bioperl.org/mailman/listinfo/bioperl-pipeline"
 class="external text" rel="nofollow">Mailing list</a>
 
-
-
 ## Affiliated projects
 
 <a href="http://www.maizegdb.org/" class="external text"
-rel="nofollow">Maize annotation project</a>
 
 <a href="http://www.top-registry-cleaner.org/" class="external text"
-rel="nofollow">system registry cleaner</a>
 
 [ParameciumDB](/wiki/ParameciumDB)

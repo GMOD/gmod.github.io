@@ -8,7 +8,7 @@ and reporting for these. I've dusted off
 **[LuceGene](/wiki/LuceGene)** which is designed for this, and
 installed over the Labor Day weekend at
 <a href="http://wfleabase.org/lucegene/" class="external free"
-rel="nofollow">http://wfleabase.org/lucegene/</a>. It was relatively
+
 easy to do: most of my time was in designing an XSLT stylesheet for gene
 page display. Other organism databases should be able to follow these
 steps, with more detail forthcoming, and have a similar gene search and
@@ -58,8 +58,7 @@ without tedious HTML page scraping.
 
 Here is a Daphnia gene page example,
 <a href="http://wfleabase.org/lucegene/lookup?id=NCBI_GNO_292134"
-class="external free"
-rel="nofollow">http://wfleabase.org/lucegene/lookup?id=NCBI_GNO_292134</a>
+
 (view the page source to see structured gene page XML). This corresponds
 to these screen shots
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/Daphnia-genepage.png" class="internal"
@@ -67,6 +66,5 @@ title="Daphnia-genepage.png">daphnia gene page</a> and
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/96/Daphnia-genepage-xml.png"
 class="internal" title="Daphnia-genepage-xml.png">gene page xml</a>.
 
-
-[Dongilbert](/wiki/User%3ADongilbert) 16:23, 4 September 2007
+[Dongilbert](/wiki/User:Dongilbert) 16:23, 4 September 2007
 (EDT)

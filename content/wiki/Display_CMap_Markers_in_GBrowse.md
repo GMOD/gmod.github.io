@@ -10,7 +10,6 @@ Meeting](/wiki/August_2009_GMOD_Meeting) titled:
 - [GBrowse: Lessons Learned and Statement of
   Interest](/wiki/August_2009_GMOD_Meeting#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
 
-
 From Frederic and Erick:
 
 We were thinking about having [CMap](/wiki/CMap.1) features displayed

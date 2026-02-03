@@ -5,7 +5,7 @@ title: "January 2007 GMOD meeting agenda"
 
 GMOD Meeting Schedule --
 <a href="http://www.gmod.org/meeting_registration" class="external text"
-rel="nofollow">Registration link</a>
+
 January 18-19, 2007
 Town and Country Hotel, San Diego, CA
 Sheffield Room
@@ -117,7 +117,6 @@ practices, new approaches, commonalities</td>
 Friday, 19 January
 
 <a href="http://www.gmod.org/middleware-bake-off" class="external text"
-rel="nofollow">Middleware for Chado databases</a>
 
 |-------|------------------------------------------------------------|
 | 9:00 | Introduction, Eric Just |

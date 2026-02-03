@@ -22,14 +22,12 @@ width="300" height="219" alt="2010SummerSchoolAmericas300.png" />
 Summer School - Americas</strong><br />
 6-9 May, 2010<br />
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">NESCent</a><br />
+
 Durham, NC, USA</span><br />
 </td>
 </tr>
 </tbody>
 </table>
-
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6e/2010GMODSummerSchoolAmParticipants.jpg/500px-2010GMODSummerSchoolAmParticipants.jpg"
@@ -37,10 +35,9 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="500" height="149"
 alt="2010GMODSummerSchoolAmParticipants.jpg" />
 
-
 The ***2010 GMOD Summer School - Americas*** was held 6-9 May at the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina. Like previous
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer Schools</a>, this course focused
@@ -52,8 +49,6 @@ for 25 participants, and admission was competitive.
 **All of the sessions from this school have now been moved to this
 website, where they are available as [Online
 Tutorials](/wiki/Training_and_Outreach#Online_Tutorials).**
-
-
 
   Applications](#Applications)
 - [Program](#Program)
@@ -124,7 +119,7 @@ image up and running on your laptop, and then finish installation of <a href="/w
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #ccffff">1:15pm</td>
@@ -140,7 +135,7 @@ and improving annotation quality</td>
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Social
 Hour w/ <a href="http://www.nescent.org/dir/" class="external text"
-rel="nofollow">NESCent Staff</a></strong><br />
+
 and then <strong>Dinner</strong> <a href="http://www.ninthst.com/"
 class="external text" rel="nofollow">on your own</a></td>
 </tr>
@@ -186,7 +181,7 @@ title="GBrowse Tutorial">GBrowse</a></strong><br />
 <td
 style="text-align: center; background-color: #ddffdd;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #ccffdd">2:00pm</td>
@@ -229,7 +224,7 @@ I</a></strong><br />
 <td
 style="text-align: center; background-color: #ffffcc;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #ffffbb">2:00pm</td>
@@ -268,7 +263,7 @@ title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #ffddcc">1:30pm</td>
@@ -277,7 +272,7 @@ title="Tripal Tutorial">Tripal</a></strong><br />
 <a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen Ficklin</a><br />
 <a href="/wiki/Tripal.1" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
 on <a href="http://www.drupal.org/" class="external text"
-rel="nofollow">Drupal</a>. This class will introduce Drupal and Tripal
+
 architecture, and then cover Tripal installation, configuration and
 administration.</td>
 </tr>
@@ -300,15 +295,9 @@ Ends</td>
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%3ASficklin) | [Tripal](/wiki/Tripal.1) | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](/wiki/User%3ACarsonholt) | [MAKER](/wiki/MAKER.1) | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%3AElee) | [Apollo](/wiki/Apollo.1) | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1), [GBrowse](/wiki/GBrowse.1) | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Mitch Skinner](/wiki/User%3AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [James Taylor](/wiki/User%3AJamesTaylor) | [Galaxy](/wiki/Galaxy.1) | <a href="http://www.emory.edu" class="external text"
-rel="nofollow">Emory University</a> |
+| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
+
+Spring Harbor Laboratory</a> | [Mitch Skinner](/wiki/User:MitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
 
 ## Prerequisites
 
@@ -352,16 +341,13 @@ height="48" alt="Windows" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
+
 There are multiple versions. Be sure to download a version that can run
 on your laptop.
-
-
 
 ### VMware on Mac OS X
 
@@ -371,8 +357,7 @@ alt="Apple" /></a>
 
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
-There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs *directly* under . However, there are several
 other options, **all of which require an Intel Mac**:
 
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
@@ -382,9 +367,9 @@ width="48" height="48" alt="Fusion" /></a>
 VMware Fusion
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a>
+
 (<a href="http://www.vmware.com/a/buylink/10" class="external text"
-rel="nofollow">$80/corporate</a>,
+
 <a href="http://www.vmware.com/vmwarestore/academicstore.html"
 class="external text" rel="nofollow">$40/Academic</a>) allows you to run
 VMware images (as well as Windows and Linux) under Mac OS. **We
@@ -398,7 +383,7 @@ height="48" alt="VirtualBox-logo.png" />
 VirtualBox
 
 <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
-rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel
+
 Macs (and Windows, Linux and Solaris too). It claims to be capable of
 running VMware images, *but we have not tested this with our images.*
 
@@ -425,13 +410,13 @@ width="140" height="130" alt="NESCent" /></a>
 
 We would like to thank the
 <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> for
+
 hosting and financially supporting this course. Travel awards are
 entirely funded by NESCent, as part of its
 <a href="http://www.nescent.org/eog/" class="external text"
-rel="nofollow">Education and Outreach</a> effort. NESCent's
+
 <a href="http://www.nescent.org/eog/" class="external text"
-rel="nofollow">Education and Outreach Group</a> is committed to sharing
+
 the exciting evolutionary biology research occurring at NESCent and
 elsewhere. In addition, NESCent is interested in outreach to groups who
 are underrepresented in evolutionary biology and improving evolution
@@ -442,10 +427,10 @@ general public that meet these goals.
 
 The course was held at the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina, United States. The closest airport is
 <a href="http://www.rdu.com/" class="external text"
-rel="nofollow">Raleigh-Durham International Airport (RDU)</a>, a 30
+
 minute drive from NESCent.
 
 Participants are responsible for their own travel, lodging and some meal

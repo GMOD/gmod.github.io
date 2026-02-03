@@ -27,12 +27,9 @@ and
 [Xenbase](../July_2008_GMOD_Meeting#Xenbase)
 (plus several more).
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/07/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

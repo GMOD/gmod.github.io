@@ -27,7 +27,6 @@ class="external text" rel="nofollow">BioAnalyst Scientist</a>
 href="https://mybayerjob.bayerbbs.com/sap(bD1lbiZjPTAwNQ==)/bc/bsp/sap/hrrcf_pinst_pbl/application.do?PARAM=UElOU1RfR1VJRD00QUE2NjQ4RkNFNjUwMDlBRTEwMDgwMDAwQUJGRDkwRQ%3d%3d"
 class="external text" rel="nofollow">here</a> or send your CV to
 <a href="mailto:Laurent.Viau@bayer.com" class="external text"
-rel="nofollow">Laurent Viau</a>
 
 **2. Bioinformatics Researcher:**
 
@@ -51,14 +50,10 @@ Operating language in the company is English.
 href="https://mybayerjob.bayerbbs.com/sap(bD1lbiZjPTAwNSZwPTM0NDU3)/bc/bsp/sap/hrrcf_pinstappl/application.do?PARAM=UElOU1RfR1VJRD00RDkwRTlBMDVBMzgwQTkwRTEwMDgwMDAwQUJGRDkwRQ%3d%3d&amp;rcfcontext=APP_DE"
 class="external text" rel="nofollow">here</a> or send your CV to
 <a href="mailto:yann-francois.bizouerne@bayer.com" class="external text"
-rel="nofollow">Yann-Francois Bizouerne</a>
 
-[Erick Antezana](../User%253AErickAntezana)
-
-
+[Erick Antezana](../User:ErickAntezana)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/04/14,
 updated 2011/04/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

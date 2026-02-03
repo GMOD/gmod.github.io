@@ -20,7 +20,7 @@ These projects provide
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 dumps that you can copy and learn from.
 
-- [FlyBase](/wiki/Category%3AFlyBase):
+- :
   <a href="/wiki/ftp://ftp.flybase.org/releases/current/psql/"
   class="external free"
   rel="nofollow">ftp://ftp.flybase.org/releases/current/psql/</a> -
@@ -29,7 +29,7 @@ dumps that you can copy and learn from.
   <a href="http://paramecium.cgm.cnrs-gif.fr/download/sql/"
   class="external free"
   rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/download/sql/</a>
-- [Yeast](/wiki/Category%3ASGD):
+- :
   <a href="http://sgdlite.princeton.edu/download/sgdlite/"
   class="external free"
   rel="nofollow">http://sgdlite.princeton.edu/download/sgdlite/</a>
@@ -47,14 +47,12 @@ consider adding an export dump file.
 ## Direct <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Access
 
 ### <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>
 
 - <a
   href="https://flybase.github.io/docs/chado/index#public-database#public-database"
   class="external text" rel="nofollow">FlyBase public chado database</a>
 
 ### <a href="http://www.genedb.org" class="external text"
-rel="nofollow">GeneDB</a>
 
 The following connection information is for the preliminary GeneDB Chado
 database. This database currently contains Plasmodium genomes; more

@@ -8,9 +8,8 @@ in the
 [**`phylotree`**](/wiki/Chado_Phylogeny_Module#Table:_phylotree)[phylotree
 table](/wiki/Chado_Phylogeny_Module#Table:_phylotree).
 This script was contributed by [Naama
-Menda](/wiki/User%3ANaamaMenda) at
+Menda](/wiki/User:NaamaMenda) at
 <a href="http://www.sgn.cornell.edu/" class="external text"
-rel="nofollow">Sol Genomics Network (SGN)</a> led by Lukas Mueller.
 
 ## Where to find it
 
@@ -41,7 +40,6 @@ parent_phylonode_id, which is an internal foreign key. Next each
 phylonode will get a left and right indexes, which are calculated by
 walking down the entire tree structure (see article by Aaron Mackey: <a
 href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html?page=2"
-class="external free"
-rel="nofollow">http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html?page=2</a>).
+
 Only after each phylonode will have calculated indexes, the phylonode
 table will be populated from the tmp table.

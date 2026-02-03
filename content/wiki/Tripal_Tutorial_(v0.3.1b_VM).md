@@ -9,12 +9,11 @@ dependencies and Drupal modules.
 
 You can download the Tripal virtual image from the Tripal website
 (<a href="http://tripal.sourceforge.net/?q=download"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/?q=download</a>). To use
+
 this virtual machine, you need to download and install the Oracle
 VirtualBox software at
 <a href="http://www.virtualbox.org/" class="external free"
-rel="nofollow">http://www.virtualbox.org/</a>. Follow these instructions
+
 for installing the Tripal v0.3.1b virtual machine:
 
 **Note:**: The Tripal VM requires by default 2GB of RAM.
@@ -61,21 +60,16 @@ PostgreSQL database server, Drupal, Tripal and Chado. It is not
 necessary to perform these tasks, but it recommend to review these steps
 for familiarity. You can find the full tutorial here:
 <a href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29</a>
+
 At a minimum, please review from the point that Tripal is installed: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation#Tripal_Installation"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation</a>
+
 Step 2
 Perform the "Theme Configuration" section of the tutorial at this link
 (only do this section):
 <a href="/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration</a>
+
 Step 3
 Start using Tripal by following all remaining sections of the tutorial
 from this point: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Creating_Organism_Pages#Creating_Organism_Pages"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Creating_Organism_Pages</a>

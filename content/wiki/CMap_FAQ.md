@@ -32,8 +32,7 @@ title: "CMap FAQ"
 
 ### What is this FAQ?
 
-It is the list of [Frequently Asked
-Questions](/wiki/Category%3AFAQ) about [CMap](/wiki/CMap.1).
+It is the list of  about [CMap](/wiki/CMap.1).
 
 ### How is it maintained?
 
@@ -48,8 +47,6 @@ adding questions and answers.
 
 You can download CMap from source forge :
 <a href="http://sourceforge.net/projects/gmod/files/"
-class="external free"
-rel="nofollow">http://sourceforge.net/projects/gmod/files/</a>
 
 ## Configuration
 

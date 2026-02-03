@@ -14,7 +14,6 @@ know if you'd like to make changes now.
 - add type_id to genotype (can be null)
 - add genotypeprop
 
-
 **Phenotype module**
 
 - phenotype table
@@ -67,21 +66,17 @@ module is beyond its scope
 --Bob: Flybase does not store quantitative terms, and they don't use
 PATO terms. They also use either observable_id or attr_id (see more here
 <a href="../Chado_Phenotype_Module_at_FlyBase" class="external free"
-rel="nofollow">http://gmod.org/wiki/Chado_Phenotype_Module_at_FlyBase</a>)
 
 --Naama: adding the name column could be the first step in deprecating
 some of the columns in the phenotype table, if we go ahead and separate
 the actual phenotype (EQ model, or anything else) from the measurement
 (the value that would remain in the phenotype table)
 
-
-
 ------------------------------------------------------------------------
 
 **phenotypeprop** some are using this table for post-composing terms,
 which requires adding a cvalue_id , and also raises the question if this
 is a good place for it.
-
 
 **Suggestion**
 

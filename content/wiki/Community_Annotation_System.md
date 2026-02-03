@@ -6,12 +6,10 @@ title: "Community Annotation System"
 This is placeholder page for the community annotation system information
 page. The live version of the CAS is running at
 <a href="http://cas.gmod.org/" class="external free"
-rel="nofollow">http://cas.gmod.org/</a>
 
 You can download a copy of the currently running annotation server from
 here: <a href="http://www.gmod.org/live_annotation_server.tar.bz2"
-class="external free"
-rel="nofollow">http://www.gmod.org/live_annotation_server.tar.bz2</a>
+
 (it's big: 1.3GB). Be warned however that this virtual appliance is
 still quite rough.
 
@@ -29,7 +27,6 @@ Items that are working:
 - A CGI that takes a chromosomal range and creates GAME-XML and jnlp
   files and a link to download and run Apollo WebStart.
 
-
 Items that need to be addressed soon are:
 
 - Make networking generic again (currently it is hard coded to run at
@@ -46,4 +43,3 @@ Items that need to be addressed soon are:
 For more information or help, send email to the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) at
 <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>.

@@ -50,8 +50,6 @@ library.
 Written by Haiyan Zhang, April 14, 2006, the original Wiki page is here:
 <a
 href="http://cedar.bio.indiana.edu/mediawiki/index.php/Library_module_implementation"
-class="external free"
-rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/Library_module_implementation</a>.
 
 #### Background
 
@@ -116,8 +114,6 @@ Rules for chado clones and clone features:
 June 1, 2006 written by Kathleen Falls. The original Wiki page is here:
 <a
 href="http://cedar.bio.indiana.edu/mediawiki/index.php/RNAi_primer_and_amplicon_implementation"
-class="external free"
-rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/RNAi_primer_and_amplicon_implementation</a>.
 
 #### Background
 
@@ -128,7 +124,7 @@ Heidelberg RNAi) by genes hit by the screens. Initially the plan is to
 store the dsRNA primers and amplicons with there chromosomal locations
 mapped to the current release. The goal is to link the libraries, dsRNA
 amplicons with genes and
-[phenotypes](/wiki/Category%3APhenotypes).
+.
 
 - dsRNA library: contains collections of dsRNA amplicons, primarily from
   the screening centers. Currently it holds the DRSC collection.

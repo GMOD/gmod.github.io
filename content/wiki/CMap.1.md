@@ -21,7 +21,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="40" height="39" alt=" is open source" /></a>
 
 <a href="http://opensource.org/licenses/GPL-3.0" class="external text"
-rel="nofollow">GPL</a>
 
 Resources
 
@@ -45,9 +44,8 @@ also includes tools for curating map data.
 
 Here are some sample maps from the
 <a href="http://www.gramene.org/" class="external text"
-rel="nofollow">Gramene Project</a>. See also
+
 <a href="http://www.gramene.org/cmap/entry.html" class="external text"
-rel="nofollow">other Gramene views</a>.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Cmap_sample1.jpg/89px-Cmap_sample1.jpg"
@@ -261,9 +259,8 @@ Public installations of CMap:
 
 ### Development team
 
-Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User%3AFaga),
+Lincoln Stein, Doreen Ware, [Ben Faga](/wiki/User:Faga),
 <a href="mailto:kclark@cshl.edu" class="external text"
-rel="nofollow">Ken Youens-Clark</a>
 
 ### Current status
 
@@ -276,7 +273,7 @@ at Gramene.org hopes to replace CMap with a lighter, Javascript version.
 
 ## More on CMap
 
-See [Category:CMap](/wiki/Category%3ACMap)
+See
 
 ### CMap Logo
 

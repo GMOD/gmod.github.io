@@ -10,7 +10,7 @@ width="300" height="74" alt="CantoTextLogo.png" />](../Canto)
 
 We are pleased to announce that [Canto](../Canto), the
 <a href="http://pombase.org" class="external text"
-rel="nofollow">PomBase</a> community curation tool, is now a GMOD
+
 component.
 
 Canto is an online tool that supports functional gene annotation by

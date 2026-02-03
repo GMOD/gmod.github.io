@@ -19,7 +19,6 @@ speakers we will have.
 
 To register, go to the
 <a href="http://gmod.eventbrite.com/" class="external text"
-rel="nofollow">meeting registration page</a> at EventBrite.
 
 While you are there, you register for the *[free
 workshops](../October_2011_GMOD_Meeting#Scheduled_Satellite_Meetings)*
@@ -36,11 +35,8 @@ not need to attend the main GMOD meeting to attend one of the workshops.
 
 See you in October,
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/09/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

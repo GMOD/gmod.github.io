@@ -11,11 +11,10 @@ NOTE:  This document is provided for versions of Web Apollo 2014-04-03 and older
 
 Newer documentation can be found on
 <a href="http://genomearchitect.org" class="external text"
-rel="nofollow">Genome architect</a> and
+
 <a href="https://genomearchitect.readthedocs.org/" class="external text"
-rel="nofollow">Readthedocs</a>. Source and documentation is (still)
+
 found on <a href="https://github.com/GMOD/Apollo" class="external text"
-rel="nofollow">Github</a>.
 
 ------------------------------------------------------------------------
 
@@ -105,7 +104,7 @@ Explorer.
 
 You can download the latest Web Apollo release
 <a href="http://icebox.lbl.gov/webapollo/releases" class="external text"
-rel="nofollow">here</a>. All installation steps will be done through a
+
 shell. We'll be using Tomcat 7 as our servlet container and PostgreSQL
 as our relational database management system. We'll use sample data from
 the Pythium ultimum genome, provided as a
@@ -250,7 +249,7 @@ user `web_apollo_users_admin` with password `web_apollo_users_admin` who
 has database creation privilege. Depending on how your database server
 is setup, you might not need to set a password for the user. See the
 <a href="http://www.postgresql.org/docs" class="external text"
-rel="nofollow">PostgreSQL documentation</a> for more information. We'll
+
 assume that the database is in the same server where Web Apollo is being
 installed ("localhost"). These commands will be run as the *postgres*
 user.
@@ -355,7 +354,6 @@ tarball.
 Next we need to create the directory that will contain the application.
 
     $ mkdir WebApollo
-
 
 Now we'll go into the newly created directory and unpack the WAR file
 into it.
@@ -2435,7 +2433,7 @@ Let's test out our installation. Point your browser to
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/Web_apollo_login_page_with_credentials_doc.jpg/220px-Web_apollo_login_page_with_credentials_doc.jpg"
-class="thumbborder"
+
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Web_apollo_login_page_with_credentials_doc.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Web_apollo_login_page_with_credentials_doc.jpg 2x"
 width="220" height="115" alt="WebApollo login page" />
 
@@ -2444,7 +2442,7 @@ earlier. Enter them into the login dialog.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b2/Web_apollo_select_refseq_doc.jpg/800px-Web_apollo_select_refseq_doc.jpg"
-class="thumbborder"
+
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/Web_apollo_select_refseq_doc.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/Web_apollo_select_refseq_doc.jpg 2x"
 width="800" height="55"
 alt="WebApollo reference sequence selection" />

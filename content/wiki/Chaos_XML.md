@@ -49,8 +49,6 @@ uses some denormalisations of the Chado model, explained below. In our
 view these two formats are complementary. Conversions between the
 formats should be trivial.
 
-
-
 ## The Chaos Model
 
 Elements in Chaos XML will generally have an equivalent table or column
@@ -60,7 +58,6 @@ serve as documentation for the Chaos XML format.
 The central concept in Chaos/Chado is a "feature". A feature can
 represent any genomic or sequence entity that is typed by the
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology (SO)</a>.
 
 Features are interconnected in a feature graph using the
 *feature_relationship* element. This is to indicate which exons and
@@ -74,8 +71,6 @@ bases themselves). In contrast to chado, which uses fmin/fmax to
 indicate the left and right coordinates, chaos use nbeg/nend to indicate
 the five prime (natural start) and three prime (natural end)
 coordinates.
-
-
 
 ## Library Contents
 
@@ -108,8 +103,6 @@ You can browse the perl modules in the `chaos-xml/lib/` directory. To
 install, download the chaos-xml library and follow the instructions in
 the `chaos-xml/INSTALL` file.
 
-
-
 ## Converting between Chaos-XML and Chado-XML
 
 There are XSLT stylesheets defined for mapping between these two similar
@@ -120,8 +113,6 @@ this distribution (see the `chaos-xml/bin/` directory)
 
 - cx-chaos2chadoxml.pl
 - cx-chadoxml2chaos.pl
-
-
 
 ## Future Extensions
 
@@ -154,7 +145,6 @@ string is implicitly mapped to
 [cvterm](/wiki/Chado_Tables#Table:_cvterm) with the same name
 as the type, from the
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology (SO)</a> CV.
 
 ### Organism Flattening
 

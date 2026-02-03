@@ -24,7 +24,6 @@ successful, bioinformatics program SRS (Sequence Retrieval System).
 
 It is built with the
 <a href="http://jakarta.apache.org/lucene/" class="external text"
-rel="nofollow">open-source Lucene package</a>.
 
 It includes common text search features: booleans, phrases, word
 stemming, fuzzy and field range searches, relevance ranking. It supports
@@ -96,7 +95,6 @@ an Advance search.*
 Uniprot's new version (2007) also uses Lucene as it's
 search-all-proteins system. See it in action at
 <a href="http://www.uniprot.org/" class="external free"
-rel="nofollow">http://www.uniprot.org/</a>
 
 ## Demo & Screenshots
 
@@ -107,7 +105,7 @@ rel="nofollow">http://www.uniprot.org/</a>
   - newly updated with full Daphnia genome, see notes at
     [LuceGene_for_Daphnia_genome](/wiki/LuceGene_for_Daphnia_genome)
 
-[Dongilbert](/wiki/User%3ADongilbert) 16:25, 4 September 2007
+[Dongilbert](/wiki/User:Dongilbert) 16:25, 4 September 2007
 (EDT)
 
 - Demonstration server is available at
@@ -148,7 +146,6 @@ Current distribution files are at <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=120452"
 class="external text" rel="nofollow">SourceForge</a> and
 <a href="http://eugenes.org/gmod/lucegene/" class="external free"
-rel="nofollow">http://eugenes.org/gmod/lucegene/</a>
 
 - <a href="http://prdownloads.sourceforge.net/gmod/lucegene.war"
   class="external text" rel="nofollow">lucegene.war</a>: web application

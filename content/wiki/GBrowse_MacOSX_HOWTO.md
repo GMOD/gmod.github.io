@@ -60,7 +60,7 @@ If you are using MySQL databases, GBrowse also requires the Perl modules
 to talk to MySQL, DBI and DBD::mysql, which are often not present in the
 Perl installations on new Macs. These can be installed using CPAN. As of
 8-1-2007, there are some problems with the CPAN installers for
-[DBD::mysql on the Mac](/wiki/DBD%3A%3Amysql_on_the_Mac).
+[DBD::mysql on the Mac](/wiki/DBD_mysql_on_the_Mac).
 
 ## The Fink Way
 
@@ -118,7 +118,7 @@ one caveat after installing libgd.
 Make sure you have installed the most recent version of MacPorts,
 available from
 <a href="http://www.macports.org/install.php" class="external text"
-rel="nofollow">MacPorts install page</a>. Configure port and run
+
 `port selfupdate`.
 
 Open up a command window, and install the following MacPorts packages:
@@ -185,8 +185,7 @@ found," then you should (re)install the developer tools.
 
 Go to <a
 href="http://www.mysql.org/downloads/mysql/5.0.html#macosx-dmg#macosx-dmg"
-class="external free"
-rel="nofollow">http://www.mysql.org/downloads/mysql/5.0.html#macosx-dmg</a>,
+
 download and run the appropriate OSX installer for your version of the
 operating system. Note that there are separate installers for OS X
 versions 10.3 and upward on PowerPC 32-bit, 64-bit and Intel platforms.
@@ -228,7 +227,7 @@ the version is too low, then upgrade autoconf like this:
 
 Download version 2.58 or higher from
 <a href="http://ftp.gnu.org/gnu/autoconf/" class="external free"
-rel="nofollow">http://ftp.gnu.org/gnu/autoconf/</a>. It's best to use
+
 2.58 because it is known to work.
 
 Unpack autoconf, enter the distribution directory and type:
@@ -254,7 +253,6 @@ Unpack libpng, enter the distribution directory and type:
 
 Get the latest libgd from
 <a href="http://www.libgd.org" class="external free"
-rel="nofollow">http://www.libgd.org</a>.
 
 Unpack libgd, enter the distribution directory and type:
 
@@ -282,7 +280,7 @@ will need a working Internet connection for this step.
 
 Download the <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl"
-class="external text"
+
 rel="nofollow"><code>gbrowse_netinstall.pl</code></a> script from the
 GBrowse distribution. Run the following command as the root user or
 using "sudo":
@@ -321,7 +319,7 @@ your machine's web server from the Internet.
 # Test the browser
 
 Open <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a> and click the link for the
+
 example yeast chromosome 1 database.
 
 # Install Perl MySQL driver
@@ -352,6 +350,6 @@ to look like this:
 
 # AUTHORS
 
-[Lincoln D. Stein](/wiki/User%3ALstein) \<steinl@cshl.edu\> 20:24,
+[Lincoln D. Stein](/wiki/User:Lstein) \<steinl@cshl.edu\> 20:24,
 16 April 2007 (EDT) Adapted from instructions contributed by Yair Benita
 \<y.benita@wanadoo.nl\>.

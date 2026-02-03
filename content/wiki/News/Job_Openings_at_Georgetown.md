@@ -13,7 +13,7 @@ This position is part of the USDA-funded
 class="external text" rel="nofollow">Hymenoptera Genome Database</a>
 project, which includes
 <a href="http://www.beebase.org/" class="external text"
-rel="nofollow">BeeBase</a> (honey bee genome) and
+
 <a href="http://genomes.arc.georgetown.edu/nasonia/"
 class="external text" rel="nofollow">NasoniaBase</a> (wasp genome). This
 person will implement GMOD software and develop new query interfaces;
@@ -35,11 +35,7 @@ GMOD and [BioPerl](../BioPerl) is highly desired.
 
 Contact Chris Elsik:
 <a href="mailto:chris.elsik@gmail.com" class="external text"
-rel="nofollow">chris.elsik@gmail.com</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/01/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -47,11 +47,8 @@ There is also
 Please post any issues or questions about this new version to the
 [Tripal Mailing List](../Tripal.1#Mailing_Lisgts)
 
-[Stephen Ficklin](../User%253ASficklin)
-
-
+[Stephen Ficklin](../User:Sficklin)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/06/03*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

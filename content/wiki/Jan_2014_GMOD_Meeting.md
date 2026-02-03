@@ -51,28 +51,27 @@ Ontology Consortium.
 
 ### Thursday, January 16
 
-| Time  | Topic             | Presenter(s)                                  | Presentation                                                                                                      | ----- | ----------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | 09:15 | Introductions     | [Scott Cain](/wiki/User%3AScott) | 09:30 | The State of GMOD | [Scott Cain](/wiki/User%3AScott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/State_of_GMOD_2014.pdf" |
+| Time  | Topic             | Presenter(s)                                  | Presentation                                                                                                      | ----- | ----------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | 09:15 | Introductions     | [Scott Cain](/wiki/User:Scott) | 09:30 | The State of GMOD | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a8/State_of_GMOD_2014.pdf" |
 
 class="internal" title="State of GMOD 2014.pdf">Slides</a>, <a href="http://youtu.be/8DXWzgag8R4" class="external text"
-rel="nofollow">YouTube</a> | 10:15 | Coffee break | 10:30 | High throughput comparative genomics using a Chado backend | [Mara Kim](/wiki/User%3AMara_Kim) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f8/MaraKim_GMOD2014.pdf" class="internal"
+
 title="MaraKim GMOD2014.pdf">Slides</a>, <a href="http://youtu.be/Soam8O3g1jg" class="external text"
-rel="nofollow">YouTube</a> | 11:00 | **Keynote:** A Centralized Model Organism Database (CMOD) for the Long Tail of Sequenced Genomes | Andrew Su | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/AndrewSu_GMOD2014.pptx"
+
 class="internal" title="AndrewSu GMOD2014.pptx">Slides</a>,<a href="https://www.youtube.com/watch?v=RVijs5ry05E"
 class="external text" rel="nofollow">YouTube</a> and <a href="https://www.youtube.com/watch?v=dGHXo-iNsyU"
 class="external text" rel="nofollow">some of the discussion
 following</a> | 12:00 | Lunch and poster session | 1:15 | [JBrowse](/wiki/JBrowse.1) and [WebApollo](/wiki/WebApollo.1) | <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
 Buels</a> | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/RBuels_JBrowse_2014.pdf"
-class="internal" title="RBuels JBrowse 2014.pdf">Slides</a> | 2:00 | Migrating from GBrowse to JBrowse | [Richard Hayes](/wiki/User%3ARichard_Hayes) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Richard_Hayes_2014.pdf"
+class="internal" title="RBuels JBrowse 2014.pdf">Slides</a> | 2:00 | Migrating from GBrowse to JBrowse | [Richard Hayes](/wiki/User:Richard_Hayes) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Richard_Hayes_2014.pdf"
 class="internal" title="Richard Hayes 2014.pdf">Slides</a> | 2:30 | Crowdsourcing genomics with Ash dieback | <a href="http://www.tsl.ac.uk/profile/dan-maclean.asp"
 class="external text" rel="nofollow">Dan MacLean</a> and <a href="http://www.tsl.ac.uk/profile/martin-page.asp"
 class="external text" rel="nofollow">Martin Page</a> | <a
 href="https://github.com/danmaclean/talks/tree/master/GMOD_san_diego_jan_2014"
 class="external text" rel="nofollow">Slides and resources</a>, <a href="http://youtu.be/wjne4d32bbU" class="external text"
-rel="nofollow">YouTube</a> | 3:00 | Coffee break | 3:15 | [Galaxy](/wiki/Galaxy.1) Project Update | [Dave Clements](/wiki/User%3AClements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d2/Dave_Clements_2014.pdf"
+
 class="internal" title="Dave Clements 2014.pdf">Slides</a> | 3:45 | Drunken Noodle (really, Ken?) | Ken Youens-Clark | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/2014-KYClark-CMap.pdf"
 class="internal" title="2014-KYClark-CMap.pdf">Slides</a> | 4:15 | Creating and Maintaining Sustainable Scientific Resources | Bob Muller | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0d/Bob_Muller_2014.pdf" class="internal"
 title="Bob Muller 2014.pdf">Slides</a>, <a href="http://youtu.be/KsBZxiGsOps" class="external text"
-rel="nofollow">YouTube</a> | 4:45 | Wrap up | [Scott Cain](/wiki/User%3AScott) ### Friday, January 17
 
 <table class="wikitable">
 <colgroup>
@@ -97,7 +96,7 @@ rel="nofollow">YouTube</a> | 4:45 | Wrap up | [Scott Cain](/wiki/User%3AScott) #
 <td><a href="http://testgenomes.dictybase.org/test-chado.slide"
 class="external text" rel="nofollow">Slides</a>, <a
 href="http://youtu.be/9F6rskt3JRM" class="external text"
-rel="nofollow">YouTube</a></td>
+
 </tr>
 <tr class="even">
 <td>09:45</td>
@@ -106,7 +105,7 @@ rel="nofollow">YouTube</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Tripal-GMOD-2014.pptx"
 class="internal" title="Tripal-GMOD-2014.pptx">Slides</a> <a
 href="http://www.youtube.com/watch?v=qSwb3cGtzJg" class="external text"
-rel="nofollow">YouTube</a></td>
+
 </tr>
 <tr class="odd">
 <td>10:15</td>
@@ -115,7 +114,7 @@ rel="nofollow">YouTube</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/12/2014_Chado_health_module.pdf"
 class="internal" title="2014 Chado health module.pdf">Slides</a>, <a
 href="http://youtu.be/ahA4EYgY-G0" class="external text"
-rel="nofollow">YouTube</a></td>
+
 </tr>
 <tr class="even">
 <td>10:45</td>
@@ -163,7 +162,7 @@ group</a></td>
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Cvit_GMOD2014.pptx" class="internal"
 title="Cvit GMOD2014.pptx">Slides</a> - <a
 href="http://youtu.be/Ye2WVFwvmz0" class="external text"
-rel="nofollow">YouTube</a></li>
+
 <li>Updates from the Cancer Genome Project - <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/2014_CGP_updates.pdf" class="internal"
 title="2014 CGP updates.pdf">Slides</a></li>

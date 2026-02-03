@@ -80,7 +80,7 @@ class="external text" rel="nofollow">Class::DBI</a></td>
 <td>Bare URL</td>
 <td><code>http://www.google.com/</code></td>
 <td><a href="http://www.google.com/" class="external free"
-rel="nofollow">http://www.google.com/</a></td>
+
 </tr>
 <tr class="even">
 <td>Display an image</td>
@@ -91,7 +91,7 @@ rel="nofollow">http://www.google.com/</a></td>
 <td>URL w/ display name</td>
 <td><code>[http://www.google.com/ Search Google]</code></td>
 <td><a href="http://www.google.com/" class="external text"
-rel="nofollow">Search Google</a></td>
+
 </tr>
 <tr class="even">
 <td>Put page in category</td>

@@ -16,7 +16,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="170" height="113" alt="GCC2013Logo.png" /></a>
 
 The <a href="http://galaxyproject.org/GCC2013" class="external text"
-rel="nofollow">2013 Galaxy Community Conference (GCC2013)</a> will start
+
 on 30 June with a
 <a href="http://wiki.galaxyproject.org/Events/GCC2013/TrainingDay"
 class="external text" rel="nofollow">Training Day</a> featuring 4
@@ -36,7 +36,6 @@ minutes to <a
 href="http://wiki.galaxyproject.org/Events/GCC2013/TrainingDay#Topics#Topics"
 class="external text" rel="nofollow">review these possibilities</a> and
 then <a href="http://bit.ly/gcc2013tdpoll" class="external text"
-rel="nofollow">vote for your favorite three topics.</a>\*
 
 Your votes will determine not only the topics that are offered, but also
 which topics should be offered more than once, assigned to which rooms,
@@ -51,20 +50,16 @@ contact possible instructors and publish a Training Day schedule before
 class="external text" rel="nofollow">registration opens on 22
 February</a>.
 
-
 As always, please let me know if you have any questions.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 
 |----| \* You don't have to vote for exactly three topics. You can vote for fewer topics and have each vote count for more, or you can vote for more topics and have each vote count for less. |
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/01/28*
 
 Category%253AGalaxy
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

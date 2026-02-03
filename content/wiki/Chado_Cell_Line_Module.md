@@ -40,8 +40,6 @@ title: "Chado Cell Line Module"
 | **Table:** | **`cell_line`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line</code></strong> columns</caption>
 <colgroup>
@@ -140,8 +138,6 @@ as part of the next Chado release.
 | **Table:** | **`cell_line_relationship`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_relationship</code></strong>
 columns</caption>
@@ -219,8 +215,6 @@ as part of the next Chado release.
 |-------------|-------------------------|
 | **Table:** | **`cell_line_synonym`** |
 | **Module:** | ****Cell Line**** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_synonym</code></strong>
@@ -316,8 +310,6 @@ as part of the next Chado release.
 | **Table:** | **`cell_line_cvterm`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_cvterm</code></strong>
 columns</caption>
@@ -406,8 +398,6 @@ as part of the next Chado release.
 | **Table:** | **`cell_line_dbxref`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_dbxref</code></strong>
 columns</caption>
@@ -484,8 +474,6 @@ as part of the next Chado release.
 |-------------|---------------------|
 | **Table:** | **`cell_lineprop`** |
 | **Module:** | ****Cell Line**** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>cell_lineprop</code></strong> columns</caption>
@@ -571,8 +559,6 @@ as part of the next Chado release.
 | **Table:** | **`cell_lineprop_pub`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_lineprop_pub</code></strong>
 columns</caption>
@@ -641,8 +627,6 @@ as part of the next Chado release.
 |-------------|-------------------------|
 | **Table:** | **`cell_line_feature`** |
 | **Module:** | ****Cell Line**** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_feature</code></strong>
@@ -721,8 +705,6 @@ as part of the next Chado release.
 |-------------|----------------------------|
 | **Table:** | **`cell_line_cvtermprop`** |
 | **Module:** | ****Cell Line**** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_cvtermprop</code></strong>
@@ -807,8 +789,6 @@ as part of the next Chado release.
 | **Table:** | **`cell_line_pub`** |
 | **Module:** | ****Cell Line**** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_pub</code></strong> columns</caption>
 <colgroup>
@@ -876,8 +856,6 @@ as part of the next Chado release.
 |-------------|-------------------------|
 | **Table:** | **`cell_line_library`** |
 | **Module:** | ****Cell Line**** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>cell_line_library</code></strong>

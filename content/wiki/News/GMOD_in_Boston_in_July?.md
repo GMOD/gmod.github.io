@@ -27,25 +27,22 @@ would be fairly low (I'm guessing in the ballpark of \$50).
 
 Thanks,
 
-[Scott](../User%253AScott)
+[Scott](../User:Scott)
 
 Scott hasn't heard back, yea or nay, from very many people so far and we
 need to make a decision as soon as possible. **If you have any thoughts
 on this, please
 <a href="mailto:scott@scottcain.net" class="external text"
-rel="nofollow">send them to Scott</a> before 3pm Eastern US time on
+
 Monday, May 24.** See the GMOD [Calendar](../Calendar) for a
 list of what else is going on in July.
 
 Thanks,
 
-[Dave C.](../User%253AClements)
+[Dave C.](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/05/21,
 updated 2010/05/25*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

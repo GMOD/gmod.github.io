@@ -130,8 +130,6 @@ Sample track containing 5 "stacked" wiggle_xyplot glyphs.
 An xy-plot compatible with dense "wig" data. See the documentation for
 <a
 href="http://search.cpan.org/perldoc?Bio::Graphics::Glyph::wiggle_xyplot"
-class="external text"
-rel="nofollow">Bio::Graphics::Glyph::wiggle_xyplot</a>.
 
 It produces the typical xyplot, but uses the wig data for dense data
 sets. In the example the `bicolor_pivot` parameter has been set to `0`,

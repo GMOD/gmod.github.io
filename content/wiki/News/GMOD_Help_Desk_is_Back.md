@@ -11,9 +11,6 @@ improving the GMOD web site and documentation, and supporting the GMOD
 user community. See [GMOD Help Desk](../GMOD_Help_Desk)
 for more.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2007/10/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

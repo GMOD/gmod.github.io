@@ -8,14 +8,12 @@ system used by most of GMOD. Source code control systems, also known as
 *revision control* or *version control* systems are used to record
 changes to computer files. GMOD's main source code repository is at
 <a href="http://gmod.svn.sourceforge.net/" class="external text"
-rel="nofollow">SourceForge</a>.
 
 This page explains how to both download and update the main GMOD
 repository at SourceForge. For more on SVN itself see the
 <a href="http://subversion.tigris.org/" class="external text"
-rel="nofollow">Subversion Home Page</a> and the official
+
 <a href="http://svnbook.red-bean.com/" class="external text"
-rel="nofollow">Subversion Book</a>.
 
 SVN is used by GMOD developers to update the components. SVN is also
 used by some GMOD users, most of whom never modify any GMOD code. GMOD
@@ -37,7 +35,6 @@ always work as expected.
 
 GMOD SVN repositories can be browsed via web:
 <a href="http://gmod.svn.sourceforge.net/gmod/" class="external free"
-rel="nofollow">http://gmod.svn.sourceforge.net/gmod/</a>.
 
 ## SVN Read-only Access
 
@@ -48,7 +45,7 @@ wish to check out must be specified in place of **PROJECTNAME**.
     svn co https://gmod.svn.sourceforge.net/svnroot/gmod/PROJECTNAME/trunk
 
 See <a href="http://gmod.svn.sourceforge.net/" class="external free"
-rel="nofollow">http://gmod.svn.sourceforge.net/</a> for available GMOD
+
 projects in SVN repositories.
 
 You can then get updates with the `svn update` command.
@@ -64,7 +61,7 @@ administrator must have granted you write access to the repository.
 
 GMOD has migrated all projects from CVS to
 <a href="http://subversion.tigris.org/" class="external text"
-rel="nofollow">Subversion</a> as of September 15, 2009. See the [CVS to
+
 Subversion
 Conversion](/wiki/CVS_to_Subversion_Conversion)
 page.
@@ -86,7 +83,7 @@ checkout command:
      cvs -d:pserver:anonymous@gmod.cvs.sourceforge.net:/cvsroot/gmod co -r stable Generic-Genome-Browser
 
 See <a href="http://gmod.cvs.sourceforge.net/" class="external free"
-rel="nofollow">http://gmod.cvs.sourceforge.net/</a> for available CVS
+
 repositories.
 
 You can then get updates with the `cvs update -d` command (the `-d`
@@ -95,4 +92,3 @@ repository since the last update).
 
 GMOD CVS repositories can also be browsed on the web:
 <a href="http://gmod.cvs.sourceforge.net/gmod/" class="external free"
-rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/</a>.

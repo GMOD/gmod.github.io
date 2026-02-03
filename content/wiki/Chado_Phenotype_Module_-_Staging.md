@@ -38,7 +38,7 @@ evolutionary science</a> presentation discusses the Phenotype module.
 
 The phenotype tables are spread across the Phenotype and
 [Genetic](/wiki/Chado_Genetic_Module) modules. Both
-modules originated at [FlyBase](/wiki/Category%3AFlyBase).
+modules originated at .
 There were actually two versions of the Phenotype module that came out
 of FlyBase: An early one that included the
 [**`feature_phenotype`**](/wiki/Chado_Phenotype_Module#Table:_feature_phenotype)
@@ -71,8 +71,6 @@ page.
 public.feature_phenotype Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: phenotype
 
@@ -180,8 +178,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: phenotype_cvterm
 
 Deprecated and superseded by phenotypeprop.
@@ -196,8 +192,6 @@ Deprecated and superseded by phenotypeprop.
 public.phenotype_cvterm Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: phenotypeprop
 

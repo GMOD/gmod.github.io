@@ -4,7 +4,7 @@ title: "MotifFinder.pm"
 # MotifFinder.pm
 
 MotifFinder.pm is a [GBrowse](/wiki/GBrowse.1) plugin written by
-[Xiaoqi Shi](/wiki/User%3AXshi). It finds sequence specific motifs
+[Xiaoqi Shi](/wiki/User:Xshi). It finds sequence specific motifs
 using Position Weight Matrix and display results graphically as tracks
 in the genome browser.
 
@@ -40,9 +40,8 @@ Weight Matrix</a></span>
 The plugin is installed on the GBrowse of WormBase&modENCODE, you may
 access it directory here:
 <a href="http://www.wormbase.org/db/gb2/gbrowse" class="external free"
-rel="nofollow">http://www.wormbase.org/db/gb2/gbrowse</a> or
+
 <a href="http://modencode.oicr.on.ca/" class="external free"
-rel="nofollow">http://modencode.oicr.on.ca/</a>
 
 If you want to install it on your own GBrowse, please
 <a href="mailto:xshi@oicr.on.ca?subject=MotifFinder%20plugin"
@@ -73,8 +72,6 @@ Then you should be able to run the plugin!
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Select.png" class="thumbborder"
 width="389" height="112" alt="Select.png" />
 
-
-
 ## MotifFinder Parameters
 
 - Reasonable default options are provided for each parameter.
@@ -86,8 +83,6 @@ width="389" height="112" alt="Select.png" />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/Parameter.png" width="428" height="289"
 alt="boarder" />
-
-
 
 ## Position Frequency Matrices
 
@@ -135,7 +130,6 @@ position matrix) in new sequences.
 
 Scoring function is the same as the
 <a href="http://tfbs.genereg.net/" class="external text"
-rel="nofollow">TFBS Perl modules</a> developed by Bergen University.
 
      w = log2 ( ( f + sqrt(N) * p ) / ( N + sqrt(N) ) / 0.25 )
 

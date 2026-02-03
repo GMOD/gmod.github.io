@@ -17,7 +17,7 @@ title="GBrowse syn Tutorial">tutorial</a>.
 There will likely be one more release in the GBrowse 1 development path,
 which will introduce improved support for circular genomes. After that,
 development on this path will end and further development will focus on
-[GBrowse 2](../Category%253AGBrowse_2).
+[GBrowse 2](../Category:GBrowse_2).
 
 GBrowse can be installed with the [GBrowse
 netinstaller](../GBrowse_Install_HOWTO).
@@ -27,8 +27,8 @@ href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/GBro
 class="external text" rel="nofollow">downloaded directly from
 SourceForge</a>.
 
-A big thanks to [Lincoln Stein](../User%253ALstein), the lead
-developer of GBrowse, [Sheldon McKay](../User%253AMckays), the
+A big thanks to [Lincoln Stein](../User:Lstein), the lead
+developer of GBrowse, [Sheldon McKay](../User:Mckays), the
 developer of GBrowse_syn, and all of the GBrowse users who debug and
 provide help on the [GBrowse mailing
 list](../GMOD_Mailing_Lists).
@@ -58,11 +58,8 @@ Changes from 1.69 to 1.70:
 - Made the <a href="../DAS" class="mw-redirect" title="DAS">DAS</a>
   script compatible with DAS Registry
 
-[Scott](../User%253AScott)
-
-
+[Scott](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/08/24*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

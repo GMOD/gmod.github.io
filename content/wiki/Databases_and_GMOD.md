@@ -8,8 +8,6 @@ This introduces the broad topic of databases in GMOD. It introduces some
 databases. It also covers how databases are implemented and used in
 GMOD, and what database management system choices are available.
 
-
-
   Terminology</span>](#Database_Terminology)
   - [What's a
     Database?](#What.27s_a_Database.3F)
@@ -69,7 +67,7 @@ system](/wiki/Glossary#Relational_Database_Management_System)*
 using a defined *[database
 schema](/wiki/Glossary#Database_Schema)*. For example, the database
 behind the <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase web site</a> contains data on drosopholids, and
+
 uses the <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 schema and the [PostgreSQL](/wiki/PostgreSQL) database management
 system.
@@ -93,12 +91,12 @@ Chado) can be reused across multiple databases.
 #### Database Web Site
 
 Web sites that feature a lot of database driven content, such as
-[FlyBase](/wiki/Category%3AFlyBase)
+
 (<a href="http://flybase.org" class="external free"
-rel="nofollow">http://flybase.org</a>) or
+
 [ParameciumDB](/wiki/ParameciumDB)
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
-rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>), are often
+
 referred to as databases. This is somewhat accurate as there are
 databases backing the web sites, but it is also misleading. These
 websites also show information that doesn't come from their database and
@@ -134,7 +132,7 @@ Chado.
 
 [BioMart](/wiki/BioMart) is a data warehouse package tailored for
 biological data. It takes existing databases (for example, the
-[FlyBase](/wiki/Category%3AFlyBase)
+
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database),
 transforms them into a data warehouse and then provides a web interface
 for supporting arbitrary queries against the data.
@@ -234,7 +232,7 @@ GMOD.
 #### SQLite
 
 <a href="http://sqlite.org/" class="external text"
-rel="nofollow">SQLite</a> is a software library that implements a
+
 self-contained, serverless, zero-configuration, transactional SQL
 database engine. SQLite is the most widely deployed SQL database engine
 in the world. The source code for SQLite is in the public domain.
@@ -249,9 +247,9 @@ for its data store. It is the default database when installing
 #### DB2
 
 <a href="http://xenbase.org" class="external text"
-rel="nofollow">Xenbase</a> uses
+
 <a href="http://www.ibm.com/db2" class="external text"
-rel="nofollow">DB2</a> for their
+
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 installation. DB2 is a high-end database from
 <a href="http://ibm.com" class="external text" rel="nofollow">IBM</a>
@@ -268,11 +266,11 @@ Oracle is a supported DBMS for [CMap](/wiki/CMap.1) and
 [GBrowse](/wiki/GBrowse.1).
 
 <a href="http://apidb.org" class="external text"
-rel="nofollow">ApiDB</a> uses
+
 <a href="http://http://www.oracle.com/database/" class="external text"
-rel="nofollow">Oracle</a> for its database needs, and
+
 <a href="http://www.dictybase.org" class="external text"
-rel="nofollow">dictyBase</a> uses [Oracle for Chado and
+
 GMODTools](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Just-050516.ppt).
 
 Work is being done on

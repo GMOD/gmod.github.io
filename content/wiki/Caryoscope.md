@@ -19,7 +19,6 @@ utilities, command line tools and an application GUI -- for viewing gene
 expression data in a whole-genome context.
 
 <a href="http://caryoscope.stanford.edu" class="external text"
-rel="nofollow">Caryoscope Homepage</a>
 
   Status](#Status)
 - [Demo &
@@ -40,14 +39,10 @@ provide user support.
 <a href="http://caryoscope.stanford.edu/screenshots.html"
 class="external text" rel="nofollow">Screenshots</a>
 
-
-
 ## Requirements
 
 <a href="http://caryoscope.stanford.edu/dependencies.html"
 class="external text" rel="nofollow">Dependencies page</a>
-
-
 
 ## Documentation
 
@@ -65,7 +60,6 @@ context. <em>BMC Bioinformatics</em> <strong>5</strong>:151.</a>
 ## Contact
 
 <a href="mailto:sherlock@genome.stanford.edu" class="external text"
-rel="nofollow">Gavin Sherlock</a>, Stanford University.
 
 ## Downloads
 

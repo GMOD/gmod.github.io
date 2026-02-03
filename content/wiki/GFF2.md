@@ -13,8 +13,6 @@ arbitrary levels. GFF2 also does not require that column 3, the feature
 type, be part of the sequence ontology. It can be any string. This often
 led to quality control and data exchange problems.
 
-
-
   Deprecated!</span>](#GFF2_is_Deprecated.21)
   - [Why GFF2
     is harmful to your
@@ -261,8 +259,6 @@ Bio::DB::GFF module when no more specific class is requested. If you use
 a different class name, then be sure to indicate that fact with the
 "reference class" option (see below).
 
-
-
 ### Sequence alignments
 
 There are several cases in which an annotation indicates the
@@ -298,8 +294,6 @@ This indicates that the region between bases 10922906 and 11177731 of
 Chr1 are composed of LINK_H06O01 from bp 1 to bp 254826. The region of
 LINK_H0601 between 32386 and 64122 is, in turn, composed of the bases 5
 to 31742 of cosmid F49B2.
-
-
 
 ### Dense quantitative data
 
@@ -401,8 +395,6 @@ you use the "processed_transcript" aggregator in conjunction with the
 [GFF3](/wiki/GFF3) files found at:
 
 <a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3"
-class="external free"
-rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3</a>
 
 ## Converting GFF2 to GFF3
 

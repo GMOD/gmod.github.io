@@ -60,7 +60,6 @@ and analyze in case of any problem.
 
 Download, then unpack the
 <a href="http://bioperl.org/DIST/" class="external text"
-rel="nofollow">appropriate package</a>. For example:
 
     >gunzip bioperl-1.5.2_102.tar.gz
     >tar xvf bioperl-1.5.2_102.tar
@@ -100,8 +99,6 @@ manager if you don't have the necessary privileges.
 
 Cite from
 <a href="http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix"
-class="external free"
-rel="nofollow">http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix</a>.
 
 # Installing GBrowse using net installer
 
@@ -111,13 +108,12 @@ absent from your computer installed.
 
 Download the network installer script: <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl"
-class="external text"
+
 rel="nofollow"><code>gbrowse_netinstall.pl</code></a>
 
 I edit gbrowse_netinstall.pl file, change the the gbrowse download
 mirror to <a href="http://jaist.dl.sourceforge.net/sourceforge/gmod/"
-class="external free"
-rel="nofollow">http://jaist.dl.sourceforge.net/sourceforge/gmod/</a>,
+
 because the mirror is faster than others, download from China.
 
      use constant SOURCEFORGE_MIRROR1  => 'http://jaist.dl.sourceforge.net/sourceforge/gmod/';
@@ -167,7 +163,6 @@ Start mysql and apache
 
 Now browse the documentation and example database at
 <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a>.
 
 # AUTHORS
 

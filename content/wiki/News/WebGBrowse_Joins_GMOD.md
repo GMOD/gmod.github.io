@@ -32,16 +32,15 @@ WebGBrowse is a good match for any organization that has users who want
 to create their own GBrowse instances, but lack enough computing
 resources and expertise to do so. WebGBrowse was developed at
 <a href="http://www.iub.edu/" class="external text"
-rel="nofollow">Indiana University's</a>
+
 <a href="http://cgb.indiana.edu/" class="external text"
-rel="nofollow">Center for Genomics and Bioinformatics</a>.
 
 WebGBrowse can be
 <a href="http://webgbrowse.cgb.indiana.edu/software.html"
 class="external text" rel="nofollow">downloaded</a> and installed
 locally, or you can use the
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse at CGB</a>. The source is
+
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/WebGBrowse/"
 class="external text" rel="nofollow">available at SourceForge</a>.
 WebGBrowse comes with
@@ -51,13 +50,9 @@ class="external text" rel="nofollow">a tutorial</a>,
 class="external text" rel="nofollow">FAQ</a>, and a [user and support
 mailing list](../WebGBrowse.1#Mailing_Lists).
 
-[Ram Podicheti](../User%253AMnrusimh)
+[Ram Podicheti](../User:Mnrusimh)
 <a href="http://cgb.indiana.edu/" class="external text"
-rel="nofollow">Center for Genomics and Bioinformatics</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/12/10*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

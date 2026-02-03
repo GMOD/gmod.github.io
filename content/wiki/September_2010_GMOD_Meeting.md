@@ -58,7 +58,7 @@ Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010).
 The meeting was
 [sponsored](#Sponsor:_Cambridge_Computational_Biology_Institute) and
 hosted by the <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">Cambridge Computational Biology Institute</a> at the
+
 University of Cambridge.
 
 [GMOD Meetings](/wiki/Meetings) are a mix of
@@ -252,7 +252,7 @@ width="150" height="123" alt="Jason Swedlow" /></a>
 Professor Jason Swedlow
 
 _The <a href="http://www.openmicroscopy.org/" class="external text"
-rel="nofollow">Open Microscopy Environment</a>: Open Informatics for
+
 Biological Imaging_
 
 - Professor,
@@ -268,7 +268,7 @@ Biological Imaging_
 The meeting's guest speaker was Prof Jason Swedlow, who discussed his
 work with with the
 <a href="http://www.openmicroscopy.org/" class="external text"
-rel="nofollow">Open Microscopy Environment (OME)</a>, an open
+
 international consortium that develops and releases data specifications
 and management tools for biological imaging. OME metadata enables image
 sharing, analysis, and integration with other data types.
@@ -278,47 +278,47 @@ Dr Swedlow is a Professor at the
 class="external text" rel="nofollow">Wellcome Trust Centre for Gene
 Regulation and Expression</a> and the
 <a href="http://www.dundee.ac.uk/" class="external text"
-rel="nofollow">University of Dundee</a>. Jason's research focuses on
+
 mechanisms and regulation of chromosome segregation during mitotic cell
 division.
 
 ## Monday, 13 September
 
-| Time                                                                                       | Topic                                               | Presenter(s)                                           | Links                                                                                                                            | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                      | Introductions                                       | [Scott Cain](/wiki/User%3AScott)          | 10:00                                                                                      | The State of GMOD                                   | [Scott Cain](/wiki/User%3AScott)          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf"            | class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>, [Summary](#The_State_of_GMOD) | 10:30                                                                                      | Break                                               | 11:00                                                                                      | [Help Desk](/wiki/GMOD_Help_Desk) Update | [Dave Clements](/wiki/User%3AClements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal" |
+| Time                                                                                       | Topic                                               | Presenter(s)                                           | Links                                                                                                                            | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                      | Introductions                                       | [Scott Cain](/wiki/User:Scott)          | 10:00                                                                                      | The State of GMOD                                   | [Scott Cain](/wiki/User:Scott)          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf"            | class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>, [Summary](#The_State_of_GMOD) | 10:30                                                                                      | Break                                               | 11:00                                                                                      | [Help Desk](/wiki/GMOD_Help_Desk) Update | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal" |
 
 title="HelpDeskSept2010.pdf">PDF</a>, <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODSeptember/HelpDeskSept2010.ppt"
 class="external text" rel="nofollow">PPT</a>, [Summary](#Help_Desk_Update) | 11:30 | Keynote: The <a href="http://www.openmicroscopy.org/" class="external text"
-rel="nofollow">Open Microscopy Environment</a>: Open Informatics for Biological Imaging | Jason Swedlow |
+
 [Summary](#The_Open_Microscopy_Environment:_Open_Informatics_for_Biological_Imaging) | 12:30 | Catered Lunch | 13:45 | <a href="http://psicquic.googlecode.com" class="external text"
-rel="nofollow">PSICQUIC</a>: The PSI Common QUery Interface | [Bruno Aranda](/wiki/User%3ABaranda) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d2/PSICQUICSept2010.pdf" class="internal"
+
 title="PSICQUICSept2010.pdf">PDF</a>, [Summary](#PSICQUIC:_The_PSI_Common_QUery_Interface) | 14:15 | [MolGenIS](/wiki/MolGenIS) and <a href="http://www.xgap.org" class="external text"
-rel="nofollow">XGAP</a> | Morris Swertz | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/df/MolGenISXGAPSept2010.pdf"
+
 class="internal" title="MolGenISXGAPSept2010.pdf">PDF</a>, [Summary](#MolGenIS_and_XGAP) | 14:45 | The GMOD Chado Natural Diversity Module | Bob MacCallum | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/ChadoNDSept2010.pdf" class="internal"
 title="ChadoNDSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/ChadoNDSept2010.ppt" class="internal"
 title="ChadoNDSept2010.ppt">PPT</a>, <a
 href="https://docs.google.com/present/edit?id=0ASHJk7ao3qFUZGo2ODJydl8xMjNmZGh3eDVnNg&amp;hl=en"
 class="external text" rel="nofollow">gdoc</a>, [Summary](#The_GMOD_Chado_Natural_Diversity_Module) | 15:15 | Break | 15:45 | Cosmic [GBrowse](/wiki/GBrowse.1): Visualising cancer mutations in genomic context | David Beare | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf"
 class="internal" title="CosmicGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/CosMicGBrowseSept2010.ppt"
-class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context) | 16:15 | GMOD Projects at the Center for Genomics and Bioinformatics | [Chris Hemmerich](/wiki/User%3AChemmeri) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf"
+class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context) | 16:15 | GMOD Projects at the Center for Genomics and Bioinformatics | [Chris Hemmerich](/wiki/User:Chemmeri) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf"
 class="internal" title="ISGAWebGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/ISGAWebGBrowseSept2010.pptx"
 class="internal" title="ISGAWebGBrowseSept2010.pptx">PPT</a>, [Summary](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics) |
 
 ## Tuesday, 14 September
 
-| Time                                                                                                           | Topic                                                                                                                    | Presenter(s)                                          | Links                                                                                                                        | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                                          | [GMOD RPC API](/wiki/GMOD_RPC_API): The almost RESTful GMOD API                                                 | [Josh Goodman](/wiki/User%3AJogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/GMOD_RPC_Sept_2010.pdf"            | class="internal" title="GMOD RPC Sept 2010.pdf">PDF</a>, [Summary](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API) | 09:45                                                                                                          | Overview of current resources and update on <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> Meeting Cambridge 2010 | Jonathan Warren                                       | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf" class="internal" |
+| Time                                                                                                           | Topic                                                                                                                    | Presenter(s)                                          | Links                                                                                                                        | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | 09:15                                                                                                          | [GMOD RPC API](/wiki/GMOD_RPC_API): The almost RESTful GMOD API                                                 | [Josh Goodman](/wiki/User:Jogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/GMOD_RPC_Sept_2010.pdf"            | class="internal" title="GMOD RPC Sept 2010.pdf">PDF</a>, [Summary](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API) | 09:45                                                                                                          | Overview of current resources and update on <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> Meeting Cambridge 2010 | Jonathan Warren                                       | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/DAS_Sept2010.pdf" class="internal" |
 
 title="DAS Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/DAS_Sept2010.pptx" class="internal"
-title="DAS Sept2010.pptx">PPT</a>, [Summary](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010) | 10:15 | [InterMine](/wiki/InterMine): new Mines and new features | [Richard Smith](/wiki/User%3ARsmith) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/InterMine_Sept2010.pdf"
-class="internal" title="InterMine Sept2010.pdf">PDF</a>, [Summary](#InterMine:_new_Mines_and_new_features) | 10:40 | Break | 11:00 | Literature Curation in GMOD | [Daniel Renfro](/wiki/User%3ADanielRenfro) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/Literature_Curation_Sept2010.pdf"
+title="DAS Sept2010.pptx">PPT</a>, [Summary](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010) | 10:15 | [InterMine](/wiki/InterMine): new Mines and new features | [Richard Smith](/wiki/User:Rsmith) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1c/InterMine_Sept2010.pdf"
+class="internal" title="InterMine Sept2010.pdf">PDF</a>, [Summary](#InterMine:_new_Mines_and_new_features) | 10:40 | Break | 11:00 | Literature Curation in GMOD | [Daniel Renfro](/wiki/User:DanielRenfro) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/Literature_Curation_Sept2010.pdf"
 class="internal" title="Literature Curation Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Literature_Curation_Sept2010.ppt"
 class="internal" title="Literature Curation Sept2010.ppt">PPT</a>, [Summary](#Literature_Curation_in_GMOD) | 11:30 | Towards a GO Annotation Tool: Curation Accelerator Software | Helen Field | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/70/GO_Curation_Sept2010.pdf"
 class="internal" title="GO Curation Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/GO_Curation_Sept2010.key"
 class="internal" title="GO Curation Sept2010.key">KEY</a>, [Summary](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software) | 12:00 | BioPivot: Applying Microsoft Live Labs Pivot to Problems in Bioinformatics | Steve Taylor | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ae/BioPivot_Sept2010.pdf"
 class="internal" title="BioPivot Sept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a2/BioPivot_Sept2010.ppt"
-class="internal" title="BioPivot Sept2010.ppt">PPT</a>, [Summary](#BioPivot) | 12:30 | Catered Lunch | 13:45 | CRAWL (<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> RESTful Access Web-service Layer) | [Giles Verlarde](/wiki/User%3ABuggy) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf" class="internal"
+class="internal" title="BioPivot Sept2010.ppt">PPT</a>, [Summary](#BioPivot) | 12:30 | Catered Lunch | 13:45 | CRAWL (<a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> RESTful Access Web-service Layer) | [Giles Verlarde](/wiki/User:Buggy) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/CRAWL_Sept2010.pdf" class="internal"
 title="CRAWL Sept2010.pdf">PDF</a>, [Summary](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29_-_a_programmatic_interface_for_querying_pathogen_genomics_data) | 14:15 | Lessons the GMOD community can glean from the <a
 href="http://www.slideshare.net/bosc2010/gardler-bosc2010-communitydevelopmentattheasf"
-class="external text" rel="nofollow">Apache Software Foundation</a> | [Summary](#Lessons_from_the_Apache_Community) | 14:45 | Lightning talks | [Summary](#Lightning_Talks) | | [GBrowse 2 and JBrowse Features](#GBrowse_2_and_JBrowse_Features) | [Scott Cain](/wiki/User%3AScott) | [Summary](#GBrowse_2_and_JBrowse_Features) | | [CpG Island and STR Annotator Plugins](#CpG_Island_and_STR_Annotator_Plugins) | Joan Pontius | [Summary](#CpG_Island_and_STR_Annotator_Plugins) | | [GMOD Sustainability and Organization](#GMOD_Sustainability_and_Organization) | [Dave Clements](/wiki/User%3AClements) | [Summary](#GMOD_Sustainability_and_Organization) | 15:15 | Break | ## Wednesday & Thursday, 15-16 September
+class="external text" rel="nofollow">Apache Software Foundation</a> | [Summary](#Lessons_from_the_Apache_Community) | 14:45 | Lightning talks | [Summary](#Lightning_Talks) | | [GBrowse 2 and JBrowse Features](#GBrowse_2_and_JBrowse_Features) | [Scott Cain](/wiki/User:Scott) | [Summary](#GBrowse_2_and_JBrowse_Features) | | [CpG Island and STR Annotator Plugins](#CpG_Island_and_STR_Annotator_Plugins) | Joan Pontius | [Summary](#CpG_Island_and_STR_Annotator_Plugins) | | [GMOD Sustainability and Organization](#GMOD_Sustainability_and_Organization) | [Dave Clements](/wiki/User:Clements) | [Summary](#GMOD_Sustainability_and_Organization) | 15:15 | Break | ## Wednesday & Thursday, 15-16 September
 
 [GMOD Europe 2010](/wiki/GMOD_Europe_2010) continued after
 the GMOD meeting, starting with the [Satellite
@@ -497,9 +497,9 @@ of current resources and update on DAS Meeting Cambridge 2010</a></li>
 ## The State of GMOD
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/ScottSept2010.jpg" width="100"
-height="135" alt="Scott Cain" />](/wiki/User%3AScott)
+height="135" alt="Scott Cain" />](/wiki/User:Scott)
 
-[Scott Cain](/wiki/User%3AScott),
+[Scott Cain](/wiki/User:Scott),
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/TheStateofGMODSept2010.pdf"
 class="internal" title="TheStateofGMODSept2010.pdf">PDF</a>
 
@@ -654,12 +654,12 @@ width="100" height="100" alt="March 2011 GMOD Meeting" />](/wiki/GMOD_Americas_2
 **Note: The next meeting is the [March 2011 GMOD
 Meeting](/wiki/March_2011_GMOD_Meeting) being held
 at <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a>, in Durham, North Carolina, United States, as
+
 part of [GMOD Americas 2011](/wiki/GMOD_Americas_2011).**
 
 ## [Help Desk](/wiki/GMOD_Help_Desk) Update
 
-[Dave Clements](/wiki/User%3AClements),
+[Dave Clements](/wiki/User:Clements),
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal"
 title="HelpDeskSept2010.pdf">PDF</a>, <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODSeptember/HelpDeskSept2010.ppt"
 class="external text" rel="nofollow">PPT</a>
@@ -675,7 +675,7 @@ but the search interface is frustrating.
 Since May/June 2010, all emails to GMOD mailing lists have been archived
 in a single
 <a href="http://gmod.827538.n3.nabble.com/" class="external text"
-rel="nofollow">searchable hierarchy at Nabble</a>. Nabble has a
+
 functional search capability and you can now search all lists, or just a
 single list.
 
@@ -707,7 +707,7 @@ For next version, want to add:
 Discussion favored these additions. The issue of incompatible open
 source licenses also came up. GMOD currently requires any
 <a href="http://www.opensource.org/licenses" class="external text"
-rel="nofollow">OSI approved license</a>. However, some of those licenses
+
 are not compatible with each other, meaning they such components can't
 be bundled together.
 
@@ -733,8 +733,8 @@ How?
 - [Powered by GMOD](/wiki/Powered_by_GMOD) icons
 - [Speakers](/wiki/GMOD_Promotion#Speakers) at [your
   event](/wiki/Calendar#GMOD_Event_List); not just
-  [Scott](/wiki/User%3AScott) and
-  [Dave](/wiki/User%3AClements). PIs and developers are also
+  [Scott](/wiki/User:Scott) and
+  [Dave](/wiki/User:Clements). PIs and developers are also
   available.
 - [Graphics &
   slides](/wiki/GMOD_Promotion#Presentation_Material) for

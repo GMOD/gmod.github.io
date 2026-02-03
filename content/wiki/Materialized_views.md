@@ -125,7 +125,7 @@ estimates of completion time.
 ## Example crontab entry to maintain materialized views
 
 <a href="http://en.wikipedia.org/wiki/Crontab" class="external text"
-rel="nofollow">Cron</a> is a unix tool for executing commands on a
+
 regular specified interval. To create a new crontab entry, execute the
 command `crontab -e`, and enter the special syntax and the command to be
 run. For example, if you wanted the materialized view tool to run every
@@ -139,4 +139,4 @@ and 'every day of the week' respectively.
 ## Authors
 
 The script described in this page was originally written by Chris
-Carpita and modified by [Scott Cain](/wiki/User%3AScott)
+Carpita and modified by [Scott Cain](/wiki/User:Scott)

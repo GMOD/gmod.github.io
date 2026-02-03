@@ -116,7 +116,7 @@ class="external text" rel="nofollow">mailing list</a> and let us know!
 Before staring your development work, it is suggested that you download
 and install the
 <a href="https://drupal.org/project/devel" class="external text"
-rel="nofollow">Drupal devel</a> module. This module helps greatly with
+
 debugging your custom theme or module. A very useful function of this
 module is the **dpm** function. You can use the **dpm** function to
 print to the web page an interactive view of the contents of any
@@ -182,7 +182,7 @@ part of the default offering, however thousands of user-contributed
 themes are available for site-developers to download, install, and
 almost instantly change the look and feel of their sites. A
 <a href="http://drupal.org/project/Themes" class="external text"
-rel="nofollow">Drupal Theme repository</a> is available for searching
+
 user-contributed themes.
 
 Each theme is physically a directory within the Drupal site that
@@ -191,7 +191,6 @@ the files in the theme directory are required and some are named
 according to Drupal naming styles so that Drupal can properly find them.
 For an in-depth overview of theming within Drupal, please see the Drupal
 <a href="http://drupal.org/documentation/theme" class="external text"
-rel="nofollow">Theming Guide</a>.
 
 ### Introduction to the Tripal Theme
 
@@ -203,7 +202,7 @@ administration page (**Administer** → **Site Building** → **Themes**) of
 a demo Tripal installation. As shown in the screen shot below, the
 Tripal theme is enabled, but is not default. In the example screen shot,
 the <a href="http://drupal.org/project/sky" class="external text"
-rel="nofollow">Sky theme</a> is default. Thus the primary look-and-feel
+
 of the site is controlled by the Sky theme, and the Tripal theme only
 provides a look-and-feel for Chado-based content:
 
@@ -223,7 +222,6 @@ directory:
 
 Where \[drupal dir\] is the location where Drupal is installed.
 
-
 Inside of the Tripal theme are the following files:
 
 - **tripal.info**: a file required by Drupal to identify the theme and
@@ -239,7 +237,6 @@ Inside of the Tripal theme are the following files:
   correspond to the same content types available when creating new
   content in Drupal.
 
-
 Inside of the Tripal theme are the following directories:
 
 - **tripal\_\[content type\]**: a series of directories with sub
@@ -250,8 +247,6 @@ Inside of the Tripal theme are the following directories:
   Each Tripal module has its own CSS file.
 - **images**: a directory for storing images referenced by any of the
   template files.
-
-
 
 ### Theming Content Types
 
@@ -328,13 +323,11 @@ height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. It is bes
 Each content type provided by Tripal follows the same layout pattern.
 Below is a screen shot of an organism page (chado_organism content type)
 from the <a href="http://www.citrusgenomedb.org/" class="external text"
-rel="nofollow">Citrus Genome Database</a>.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/54/TripalDevHB-ThemeLayout.png/800px-TripalDevHB-ThemeLayout.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/54/TripalDevHB-ThemeLayout.png/1200px-TripalDevHB-ThemeLayout.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/54/TripalDevHB-ThemeLayout.png 2x"
 width="800" height="655" alt="TripalDevHB-ThemeLayout.png" />
-
 
 In the screen shot above, there are two distinct regions added by the
 Tripal templates. The first is the large content section on the
@@ -367,7 +360,7 @@ language.
 Each content type in Tripal corresponds roughly to a table module in
 Chado. For a listing of Chado modules, see this page:
 <a href="/wiki/Chado_-_Getting_Started#Modules" class="external free"
-rel="nofollow">http://gmod.org/wiki/Chado_-_Getting_Started#Modules</a>.
+
 It is normally easy to identify which Tripal module, and hence which
 content type corresponds to each Chado module as the naming is
 consistent (i.e. Tripal stock module and 'chado_stock' content type
@@ -401,7 +394,6 @@ In the template file, each of these sections is defined by **div** tags
 with special CSS class names. First is the details section:
 
 ``` enter
-
 
    <!-- Basic Details Theme -->
    <?php print theme('tripal_feature_base',$node); ?>
@@ -447,7 +439,6 @@ with special CSS class names. First is the details section:
    {
       print theme('tripal_feature_alignments', $node);
    } ?>
-
 
    <!-- Resource Blocks CCK elements --><?php
    for($i = 0; $i < count($node->field_resource_titles); $i++){
@@ -635,7 +626,6 @@ the following subtemplates are available:
 - tripal_feature_synonyms.tpl.php
 - tripal_feature_teaser.tpl.php
 - tripal_feature_terms.tpl.php
-
 
 Each of these subtemplates adds to the details section of the page a
 specific category of data. For example, the
@@ -825,7 +815,6 @@ $feature  = $variables['node']->feature;
 ?>
 
   <?php print $feature->type_id->name ?> Details
-
 
    <?php if(strcmp($feature->is_obsolete,'t')==0){ ?>
       This feature is obsolete
@@ -1054,10 +1043,6 @@ page refreshes.
 
 To see a working example, visit the Tripal demo site at this page: <a
 href="http://tripal.gmod-dev.oicr.on.ca/1.1/node/3637?block=featurepos&amp;block=featurepos"
-class="external free"
-rel="nofollow">http://tripal.gmod-dev.oicr.on.ca/1.1/node/3637?block=featurepos&amp;block=featurepos</a>
-
-
 
 ##### Accessing Drupal Node Information
 
@@ -1102,25 +1087,20 @@ should have the following skills:
 It is best to have a basic understanding of Drupal module development to
 help understand the remainder of this document.
 
-
-
 ### Brief Introduction to Drupal Module Development
 
 Drupal provides an API for anyone to create new modules to extend the
 functionality of Drupal. Tripal is itself a collection of modules that
 use the Drupal API. The Drupal API can be found at
 <a href="http://api.drupal.org/api/drupal" class="external free"
-rel="nofollow">http://api.drupal.org/api/drupal</a>, but can best be
+
 learned through
 <a href="http://drupal.org/node/300614%7C" class="external text"
-rel="nofollow">one of the Drupal books for sale</a>.
 
 |----|----|
 | <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Before proceeding with Tripal module development, it is recommended to have a general understanding of the Drupal API. It is possible to add functionality to Drupal without strictly using the API. However, inappropriate use of the API can cause problems in the future when integrating with other modules or for upgrading. It is important to become familiar with the coding standards suggested by Drupal to ensure readable, re-usable code. |
-
-
 
 ### Components of the Tripal API
 
@@ -1141,10 +1121,6 @@ These include the following:
 
 The Tripal API documentation can be found here:
 <a href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/index.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/index.html</a>
-
-
 
 #### Materialized Views API
 
@@ -1194,10 +1170,6 @@ MViews is described below.
 A quick link to the functions available in the MViews API can be found
 here: <a
 href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__mviews__api.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__mviews__api.html</a>
-
-
 
 #### Controlled Vocabularies API
 
@@ -1208,11 +1180,11 @@ terms from controlled vocabularies and ontologies are stored. This
 **type_id** column is used to specify the type of feature (e.g. gene,
 protein, cDNA, etc.) Examples of publicly curated ontologies include the
 <a href="http://obofoundry.org/ro/" class="external text"
-rel="nofollow">Relationship</a>,
+
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence</a>, and the
+
 <a href="http://www.geneontology.org/" class="external text"
-rel="nofollow">Gene Ontology</a>. All of the property tables (e.g.
+
 featureprop, analysisprop, stockprop, etc) use vocabularies. When
 possible a public ontology or vocabulary should be used. Tripal provides
 a mechanism for loading remote and local ontologies to the site
@@ -1223,10 +1195,6 @@ module.
 A quick link to the functions available in the Controlled Vocabulary API
 can be found here: <a
 href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__core__cv__api.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__core__cv__api.html</a>
-
-
 
 #### Jobs Management API
 
@@ -1243,10 +1211,6 @@ module to add jobs to the queue for execution.
 A quick link to the functions available in the Jobs Management API can
 be found here: <a
 href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__jobs__api.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__jobs__api.html</a>
-
-
 
 #### Chado API
 
@@ -1270,10 +1234,6 @@ height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Even thou
 A quick link to the functions found in the Chado API can be found here:
 <a
 href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__chado__api.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__chado__api.html</a>
-
-
 
 #### Chado Schema API
 
@@ -1287,10 +1247,6 @@ corresponding function, and all table names can be retrieved using the
 A quick link to the functions contained in the Chado Schema API can be
 found here: <a
 href="http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__schema__api.html"
-class="external free"
-rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal__schema__api.html</a>
-
-
 
 #### Analysis API
 
@@ -1311,27 +1267,21 @@ documented. Therefore a brief description of the necessary function
 calls are provided below. See the example module files below for
 examples of useful API functions and appropriate places to use them.
 
-
-
 #### Modules API
 
 Each Tripal module may provide a set of functions as an API. See the API
 documentation for the functions exposed by each module.
-
-
 
 #### Views API
 
 Currently under development is an API that will allow integration of all
 Chado tables and MViews with Drupal
 <a href="http://www.dropal.org/project/views" class="external text"
-rel="nofollow">Views</a>. Drupal Views is a powerful querying and
+
 display mechanism that allows the site administrator to create novel
 queries and views of the data in Chado or a Materialized View without
 using SQL or PHP programming. Filters for such queries can be exposed on
 a page and used to create custom search pages for a site.
-
-
 
 ### The Anatomy of a Tripal Module
 
@@ -1422,7 +1372,6 @@ content. An example menu item has been provided in the code below.</li>
 </tr>
 </tbody>
 </table>
-
 
 The following code creates a new module with the project name
 'example_module'.

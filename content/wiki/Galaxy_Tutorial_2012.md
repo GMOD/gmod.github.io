@@ -5,7 +5,7 @@ title: "Galaxy Tutorial 2012"
 
 This walks you through setting up and running a
 [Galaxy](/wiki/Galaxy.1) server. This tutorial was originally taught
-by [Dave Clements](/wiki/User%3AClements) at the [2012 GMOD
+by [Dave Clements](/wiki/User:Clements) at the [2012 GMOD
 Summer School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
@@ -54,7 +54,7 @@ how to get this AMI.
     Exon Info back](#6._Get_Exon_Info_back)
 
 <a href="http://galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy</a> is a data integration and analysis framework
+
 for biomedical research. Galaxy allows nearly any tool that can be run
 from the command line to be integrated into it.
 
@@ -69,19 +69,19 @@ Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
 
 <a href="http://galaxyproject.org" class="external free"
-rel="nofollow">http://galaxyproject.org</a>
+
 The Galaxy Project home page
 <a href="https://wiki.galaxyproject.org/" class="external text"
-rel="nofollow">GalaxyWiki</a>
+
 All things Galaxy.
 <a href="http://usegalaxy.org/" class="external free"
-rel="nofollow">http://usegalaxy.org/</a>
+
 The Galaxy project's free public server.
 <a href="http://galaxyproject.org/search/" class="external text"
-rel="nofollow">Galaxy Search</a>
+
 Integrated searches of all online Galaxy resources. Available searches:
 <a href="http://galaxyproject.org/search/web" class="external text"
-rel="nofollow">Pan-Galactic Web Search</a>
+
 Search everything
 <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>
@@ -121,18 +121,17 @@ class="external text" rel="nofollow">very active</a>
 class="external text" rel="nofollow">Screencasts</a>, lots of them.
 Slides, and sometimes videos, from past
 <a href="https://wiki.galaxyproject.org/Events" class="external text"
-rel="nofollow">Galaxy-related events and presentations</a>.
+
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
-rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
+
 class="external text" rel="nofollow">@ CiteULike</a>) and <a href="http://www.mendeley.com/groups/1710745/" class="external text"
-rel="nofollow">Mendeley mirror</a>
+
 Eight different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a>.
 
 ## Create a Galaxy instance
 
 See <a href="http://getgalaxy.org" class="external free"
-rel="nofollow">http://getgalaxy.org</a>.
 
 ### Prerequisites
 
@@ -148,7 +147,7 @@ the interpreter.
 Galaxy is distributed (and developed) using a distributed version
 control system called
 <a href="http://mercurial.selenic.com/" class="external text"
-rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
+
 1.4.3:
 
     $ hg --version
@@ -159,7 +158,6 @@ rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
-rel="nofollow">bitbucket hosting service</a>.
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
 
@@ -193,7 +191,6 @@ and update it:
     $ cp universe_wsgi.ini.sample universe_wsgi.ini
     $ pico universe_wsgi.ini
 
-
 Change the port from
 
     #port = 8080
@@ -216,7 +213,6 @@ to:
     host = 0.0.0.0
 
 This makes Galaxy visible to remote hosts, such as your laptop
-
 
 Set the *brand* to make it obvious that you are working on your Galaxy
 instance
@@ -327,13 +323,11 @@ your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 ## Running analyses with Galaxy
 
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
-rel="nofollow">Galaxy 101 tutorial</a>
 
 Without any additional configuration, there is already a lot we can do
 with our first Galaxy instance. As an example, let's work through an
 analysis that is based on, but distinct from the
 <a href="http://usegalaxy.org/galaxy101" class="external text"
-rel="nofollow">Galaxy 101 tutorial</a>.
 
 #### 1. Access your new Galaxy instance
 
@@ -562,7 +556,6 @@ produce a more useful dataset that we can visualize right now.
 The original exon dataset downloaded from UCSC had a meaningless score
 column. Let's replace that with the repeat count.
 
-
 First, bring the original exon information together with the counts.
 
 *Select* **Tools → Join, Subtract and Group → Join two Datasets**. *Set*
@@ -584,7 +577,6 @@ first two columns and the exon information in the last 6 columns.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/65/Galaxy_JoinOnExonNameResults.png/900px-Galaxy_JoinOnExonNameResults.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Galaxy_JoinOnExonNameResults.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/Galaxy_JoinOnExonNameResults.png 2x"
 width="900" height="249" alt="Galaxy JoinOnExonNameResults.png" />
-
 
 Now, use the **Cut** tool to reshuffle these 8 columns into a valid 6
 column BED file with the repeat count in column 5, the score column.

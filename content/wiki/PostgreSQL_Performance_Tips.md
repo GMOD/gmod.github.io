@@ -28,5 +28,3 @@ otherwise indicated the tips on this page refer to PostgreSQL servers in
 the 8.x series.
 
 ## General Tips
-
-- [PostgreSQL](/wiki/Category%3APostgreSQL)

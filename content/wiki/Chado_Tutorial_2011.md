@@ -4,7 +4,7 @@ title: "Chado Tutorial 2011"
 # Chado Tutorial 2011
 
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](/wiki/User%3AScott) as part
+tutorial was presented by [Scott Cain](/wiki/User:Scott) as part
 of the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training).
 
@@ -181,7 +181,6 @@ Tables](/wiki/FlyBase_Field_Mapping_Tables)
 shows some example SQL that queries the FlyBase Chado database. (Caveat:
 FlyBase sometimes uses Chado in ways that no other organizations do.)
 
-
 **Will SQL be on the test?**
 
 No, we aren't going to teach in-depth SQL in this course but we will use
@@ -201,7 +200,3 @@ using Chado, you will find that a working knowledge of SQL is necessary.
   - Write your own modules and properties
 - **Widely used**
   - \- Chado started here, large diverse dataset and organization
-
-- [Chado](/wiki/Category%3AChado)
-- [2011 Spring
-  Training](/wiki/Category%3A2011_Spring_Training)

@@ -30,7 +30,6 @@ http://www.gmod.org/mod_user_interfaces_outline_of_topics
 http://www.gmod.org/mod_user_interfaces_sample_of_several_mod_top_level_functions
 );
 
-
 foreach my $url_to_convert (@urls) {
 
    $mech->get( $url_to_convert );

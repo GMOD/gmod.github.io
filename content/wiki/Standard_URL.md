@@ -23,17 +23,8 @@ available.
 
 | MOD | Standard URL | Description |
 |----|----|----|
-| <a href="http://www.wormbase.org/" class="external text" |  |  |
-rel="nofollow">WormBase</a> | <a href="http://www.wormbase.org/genome/" class="external free"
-rel="nofollow">http://www.wormbase.org/genome/</a> | *Caenorhabditis elegans* and related nematodes | <a href="http://wfleabase.org/" class="external text"
-rel="nofollow">wFleaBase</a> | <a href="http://wfleabase.org/genome/" class="external free"
-rel="nofollow">http://wfleabase.org/genome/</a> | *Daphnia pulex* and related crustaceans | <a href="http://insects.eugenes.org/DroSpeGe/" class="external text"
-rel="nofollow">DroSpeGe</a> | <a href="http://insects.eugenes.org/genome/" class="external free"
-rel="nofollow">http://insects.eugenes.org/genome/</a> | Twelve *Drosophila* insect species genomes |
 
 **Genome datasets available through the GMOD common URL**
-
-
 
 # About GMOD Standard URL
 
@@ -51,8 +42,6 @@ these common URLs are two-fold:
   parsable data URL, with no guesswork on spelling, and defined data
   formats.
 
-
-
 | Standard URL | Description |
 |----|----|
 | /genome/Binomial_name | An index page for species "Binomial_name". This will be an HTML-format page containing links to each of the genome releases. |
@@ -65,7 +54,6 @@ these common URLs are two-fold:
 | /genome/Binomial_name/current/feature | Returns a GFF3 file describing genome annotations. MIME type is application/x-gff3. |
 
 Other names for this: Common download URL, Common URL, Standard URL
-
 
 *Note: MODs may optionally provide URLs in the short form of G_species
 (eg C_elegans) as a convenience for users. This should be supplied in
@@ -93,41 +81,38 @@ common formats described below.
 <tbody>
 <tr class="odd">
 <td><a href="http://www.medicago.org/" class="external text"
-rel="nofollow">Medicago</a></td>
+
 <td><a href="http://www.medicago.org/genome/" class="external free"
-rel="nofollow">http://www.medicago.org/genome/</a></td>
+
 <td><em>Medicago truncatula</em> plant genome</td>
 </tr>
 <tr class="even">
 <td><a href="http://www.maizegdb.org/" class="external text"
-rel="nofollow">MaizeGDB</a></td>
+
 <td><a href="http://www.maizegdb.org/genome/" class="external free"
-rel="nofollow">http://www.maizegdb.org/genome/</a></td>
+
 <td><em>Maize</em> corn genome</td>
 </tr>
 <tr class="odd">
 <td><a href="http://www.neurosporagenome.org/" class="external text"
-rel="nofollow">Neurospora</a></td>
+
 <td><a href="http://www.neurosporagenome.org/genome/"
-class="external free"
-rel="nofollow">http://www.neurosporagenome.org/genome/</a></td>
+
 <td><em>Neurospora crassa</em></td>
 </tr>
 <tr class="even">
 <td><a href="http://www.vectorbase.org/" class="external text"
-rel="nofollow">Vectorbase</a></td>
+
 <td><a href="http://agambiae.vectorbase.org/Genome/"
-class="external free"
-rel="nofollow">http://agambiae.vectorbase.org/Genome/</a><br />
+
 <a href="http://aaegypti.vectorbase.org/Genome/" class="external free"
-rel="nofollow">http://aaegypti.vectorbase.org/Genome/</a><br />
+
 <a href="http://iscapularis.vectorbase.org/Genome/"
-class="external free"
-rel="nofollow">http://iscapularis.vectorbase.org/Genome/</a><br />
+
 <a href="http://cpipiens.vectorbase.org/Genome/" class="external free"
-rel="nofollow">http://cpipiens.vectorbase.org/Genome/</a><br />
+
 <a href="http://phumanus.vectorbase.org/Genome/" class="external free"
-rel="nofollow">http://phumanus.vectorbase.org/Genome/</a></td>
+
 <td>Human vector insects genomes</td>
 </tr>
 </tbody>

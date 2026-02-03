@@ -17,14 +17,14 @@ The
 <a href="http://iub.edu" class="external text" rel="nofollow">Indiana
 University</a> division of
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> in
+
 <a href="http://en.wikipedia.org/wiki/Bloomington,_Indiana"
 class="external text" rel="nofollow">Bloomington, Indiana</a> is
 currently looking for a qualified software engineer to help with
 deploying the <a href="http://intermine.org" class="external text"
-rel="nofollow">InterMine</a> and
+
 <a href="http://biomart.org" class="external text"
-rel="nofollow">BioMart</a> data management systems. The developer will
+
 be responsible for the web accessible aspect of these technologies. This
 includes the initial setup and configuration of these two systems,
 setting up and automating update cycles in sync with the existing
@@ -35,11 +35,8 @@ databases (MODs). Loading and preprocessing of data for these systems
 will be performed at the Harvard University FlyBase site so close
 coordination with developers there will also be required.
 
-[Josh Goodman](../User%253AJogoodma)
-
-
+[Josh Goodman](../User:Jogoodma)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/14*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

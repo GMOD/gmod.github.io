@@ -40,11 +40,11 @@ These commands, or similar, should install what you need:
 ## Mac OS X
 
 Use <a href="http://www.macports.org/" class="external text"
-rel="nofollow">MacPorts</a>,
+
 <a href="http://www.finkproject.org/" class="external text"
-rel="nofollow">Fink</a>,
+
 <a href="http://mxcl.github.com/homebrew/" class="external text"
-rel="nofollow">Homebrew</a>, or another package manager to install a C++
+
 compiler, libpng development headers, GD development headers, and Zlib
 development headers.
 
@@ -56,7 +56,7 @@ list.
 The setup script creates a file called `setup.log`, contains detailed
 information on your installation. Email
 <a href="mailto:gmod-ajax@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-ajax@lists.sourceforge.net</a> with a request for
+
 support, and attach your `setup.log` file to the email. Please do not
 put the setup.log file directly in the email body.
 

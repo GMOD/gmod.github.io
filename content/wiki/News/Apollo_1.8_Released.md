@@ -15,20 +15,15 @@ class="external text" rel="nofollow">release doc</a>.
 On another note, the official Apollo URL has changed. It's no longer:
 
 <a href="http://www.fruitfly.org/annot/apollo" class="external free"
-rel="nofollow">http://www.fruitfly.org/annot/apollo</a>
 
 but rather:
 
 <a href="http://apollo.berkeleybop.org" class="external free"
-rel="nofollow">http://apollo.berkeleybop.org</a>
 
 Please update your bookmarks accordingly.
 
 Ed Lee
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/04/10*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

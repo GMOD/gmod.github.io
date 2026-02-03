@@ -5,14 +5,9 @@ title: "June 2006 GMOD Meeting"
 
 GMOD Generic Model Organism Database
 
-
-
 ## Meeting 8
 
 June 29-30 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a>, Durham, NC
-
-
 
 ## Presentations
 
@@ -36,8 +31,7 @@ rel="nofollow">NESCent</a>, Durham, NC
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Stajich_GMOD_2006-06-30.pdf"
   class="internal"
   title="Stajich GMOD 2006-06-30.pdf">Stajich_GMOD_2006-06-30.pdf</a>‎ -
-  Fungal [Comparative
-  Genomics](/wiki/Category%3AComparative_Genomics)
+  Fungal
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bc/Vision.pdf" class="internal"
   title="Vision.pdf">Vision.pdf</a>‎
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt" class="internal"

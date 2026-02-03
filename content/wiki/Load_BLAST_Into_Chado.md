@@ -26,8 +26,8 @@ title: "Load BLAST Into Chado"
 
 # Abstract
 
-This [HOWTO](/wiki/Category%3AHOWTO) describes steps to add a
-[BLAST](/wiki/Category%3ABLAST) analysis to a [Chado
+This  describes steps to add a
+ analysis to a [Chado
 database](/wiki/Chado_-_Getting_Started).
 
 # Have an existing Chado genome database
@@ -156,7 +156,7 @@ Featureloc entries for Target feature_id 88149:
 correct or at least are misleading; see the [Chado Best Practices
 section for handling BLAST
 results](/wiki/Chado_Best_Practices#Results_from_BLAST)
-for clarification* [Scott](/wiki/User%3AScott) 19:18, 21 November
+for clarification* [Scott](/wiki/User:Scott) 19:18, 21 November
 2008 (UTC)
 
 # See also
@@ -168,9 +168,8 @@ for clarification* [Scott](/wiki/User%3AScott) 19:18, 21 November
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 # Authors
 
-- [Dongilbert](/wiki/User%3ADongilbert) 23:24, 3 April 2007
+- [Dongilbert](/wiki/User:Dongilbert) 23:24, 3 April 2007
   (EDT)

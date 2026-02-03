@@ -51,6 +51,4 @@ Here is the abstract:
 > located at <a href="http://tripal.info" class="external free"
 > rel="nofollow">http://tripal.info</a>.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2013/10/31*

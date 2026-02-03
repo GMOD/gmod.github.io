@@ -19,7 +19,7 @@ width="200" height="200" alt="GMOD Evo Hackathon" /></a></td>
 Evolutionary Biology Hackathon</a></strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
+
 <br />
 </span>
 <p><strong>Open Call for Participation:</strong> August 1-25,
@@ -27,8 +27,6 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
 </tr>
 </tbody>
 </table>
-
-
 
   Apply</span>](#How_To_Apply)
 - [About
@@ -93,28 +91,27 @@ to develop working code that is of utility to the community as a whole.
 The mix of people will include domain experts and computer-savvy
 end-users.
 
-
 Sincerely,
 
 The [GMOD EvoHack](/wiki/GMOD_Evo_Hackathon) Organizing
 Committee (and project affiliations as relevant):
 
-- [Nicole Washington](/wiki/User%3ANLWashington), Chair
+- [Nicole Washington](/wiki/User:NLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
   rel="nofollow">modENCODE</a>, [Phenote](/wiki/Phenote))
-- [Robert Buels](/wiki/User%3ARobertBuels)
+- [Robert Buels](/wiki/User:RobertBuels)
   (<a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>, Chado NatDiv)
-- [Scott Cain](/wiki/User%3AScott) (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User:Scott) (Ontario Institute for Cancer
   Research, GMOD)
-- [Dave Clements](/wiki/User%3AClements)
+- [Dave Clements](/wiki/User:Clements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, GMOD)
-- [Hilmar Lapp](/wiki/User%3AHlapp)
+- [Hilmar Lapp](/wiki/User:Hlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
-- [Sheldon McKay](/wiki/User%3AMckays) (University of Arizona;
+- [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn.1))
 

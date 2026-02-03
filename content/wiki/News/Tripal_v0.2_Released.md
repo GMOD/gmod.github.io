@@ -15,18 +15,17 @@ for [controlled vocabularies](../Chado_CV_Module),
 [analysis](../Chado_Companalysis_Module)
 types. This includes better support and visualizations for
 <a href="http://geneontology.org" class="external text"
-rel="nofollow">GO</a>, new
+
 <a href="http://www.genome.jp/kegg/pathway.html" class="external text"
-rel="nofollow">KEGG pathways</a> and
+
 <a href="http://www.genome.jp/kegg/brite.html" class="external text"
-rel="nofollow">BRITE hierarchies</a>,
+
 <a href="http://www.ebi.ac.uk/Tools/InterProScan/" class="external text"
-rel="nofollow">InterProScan</a> results and improved BLAST results.
 
 [Tripal](../Tripal.1) has been freely and publicly available
 since May of 2009 and provides a PHP-based
 <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a> front-end for the
+
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database
 schema. It his highly customizable and is extendable by anyone with
 Drupal and PHP experience. We encourage end-users to develop new or
@@ -50,13 +49,9 @@ up-to-date code from the GMOD
 
 Best Regards,
 
-[Stephen Ficklin](../User%253ASficklin)
+[Stephen Ficklin](../User:Sficklin)
 <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

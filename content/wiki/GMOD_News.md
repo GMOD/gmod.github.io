@@ -120,8 +120,7 @@ class="mw-headline">We're pleased to announce a new release of JBrowse
 Web!</span></h2>
 <p>(Reposted by permission from <a
 href="https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release"
-class="external free"
-rel="nofollow">https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release</a></p>
+
 <h3 id="changed-callbacks-language-from-javascript-to-jexl"><span
 id="Changed_callbacks_language_from_JavaScript_to_Jexl"
 class="mw-headline">Changed callbacks language from JavaScript to
@@ -589,8 +588,7 @@ software development and the GMOD helpdesk.</p>
 one is GREATLY appreciated.</p>
 <p><a
 href="https://goo.gl/forms/1bKIuAMjGKrS0hUi1"
-class="external free"
-rel="nofollow">https://goo.gl/forms/1bKIuAMjGKrS0hUi1</a></p>
+
 <p>Thanks &amp; best wishes,</p>
 <p>The JBrowse team</p>
 <p><br />
@@ -730,9 +728,6 @@ title="GMOD News">GMOD News</a> on 2016/04/04</em>
 <h3 id="please-support-ecocyc"><a href="/wiki/News/Please_Support_EcoCyc">Please Support EcoCyc</a></h3>
 
 <a href="http://ecocyc.org"
-rel="nofollow">&lt;img alt="EcoCyc website"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/BioCyc.gif" width="216"
-height="60" /&gt;</a>
 
 <p><a href="http://ecocyc.org"
 class="external text" rel="nofollow">EcoCyc, the <em>E. coli</em>
@@ -867,9 +862,6 @@ srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/image
 
 <a
 href="http://biocuration2014.events.oicr.on.ca/"
-rel="nofollow">&lt;img alt="ISBLogo.jpg"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/ISBLogo.jpg" width="240"
-height="71" /&gt;</a>
 
 <p>GMOD will be running a workshop at <a
 href="http://biocuration2014.events.oicr.on.ca/"
@@ -965,7 +957,7 @@ Open</a></h3>
 
 <a
 href="http://wiki.galaxyproject.org/Events/GCC2014"
-rel="nofollow"
+
 title="2014 Galaxy Community Conference (GCC2014)">&lt;img alt="2014
 Galaxy Community Conference (GCC2014)"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/300px-GCC2014Logo.png"
@@ -1386,8 +1378,7 @@ Please follow these guidelines when adding a news item.
         could point to the
         <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
         page.
-    - You can include images in your news item. See [preexisting news
-      items](/wiki/Category%3ANews_Items) for what markup
+    - You can include images in your news item. See  for what markup
       to use to do this.
 
 3.  Preview / save your changes. Edit and save the page until the news
@@ -1408,6 +1399,5 @@ Please follow these guidelines when adding a news item.
     - Every edit results in the news item being reposted to the RSS
       feed. If you do need to update an item later on, you may do so,
       but please also update the NewsItem line:
-
 
         NewsItem|yyyy/mm/dd, updated yyyy/mm/dd

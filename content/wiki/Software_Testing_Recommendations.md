@@ -15,21 +15,14 @@ Links
 
 It won't hurt you to read the following up front:
 <a href="http://en.wikipedia.org/wiki/Unit_testing"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Unit_testing</a>
+
 <a href="http://en.wikipedia.org/wiki/Integration_testing"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Integration_testing</a>
+
 <a href="http://en.wikipedia.org/wiki/Regression_testing"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Regression_testing</a>
+
 <a href="http://en.wikipedia.org/wiki/Extreme_programming"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Extreme_programming</a>
 
 Recommendations
-
-
 
 - [Java Testing - by Jon
   Slenk](/wiki/Java_Testing_-_by_Jon_Slenk)

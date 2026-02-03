@@ -9,7 +9,6 @@ improvements.
 
 It can be downloaded from
 <a href="http://jbrowse.org/jbrowse-1-8-0/" class="external free"
-rel="nofollow">http://jbrowse.org/jbrowse-1-8-0/</a>.
 
 The number 1 new feature is: JBrowse **can now open local BAM, BigWig,
 and GFF3 files** that reside on the user’s computer, without the need to
@@ -54,11 +53,7 @@ Happy browsing.  ;-)
 Robert Buels
 Lead Developer
 JBrowse - <a href="http://jbrowse.org" class="external free"
-rel="nofollow">http://jbrowse.org</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/01/31*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

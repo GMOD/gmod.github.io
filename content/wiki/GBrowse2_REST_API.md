@@ -80,8 +80,7 @@ Description of the type of coordinate, such as "Chromosome" or "Contig"
 BuildAuthority (optional)
 The group that maintains the coordinate system. See
 <a href="http://www.dasregistry.org/help_coordsys.jsp"
-class="external free"
-rel="nofollow">http://www.dasregistry.org/help_coordsys.jsp</a> for a
+
 list of codes.
 
 BuildVersion (optional)

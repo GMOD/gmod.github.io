@@ -23,17 +23,15 @@ width="200" height="200" alt="EvoHackathonLogo.png" />
 Evolutionary Biology Hackathon</a> Proposal</strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
+
 </tr>
 </tbody>
 </table>
 
-
-
 This proposal was submitted to, and then approved and
 [funded](/wiki/GMOD_Evo_Hackathon#Sponsorship) by
 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a> in June 2010. **For up-to-date information on
+
 the hackathon, see the [hackathon's home
 page](/wiki/GMOD_Evo_Hackathon).**
 
@@ -160,7 +158,7 @@ EMS working group as a high priority.
 
 In particular, GBrowse_syn lacks support for the
 <a href="http://samtools.sourceforge.net/" class="external text"
-rel="nofollow">Sequence Alignment Format (SAM)</a>, its mechanism of
+
 storing genome comparisons does not scale beyond a few organisms, and
 the means for tracking the necessary alignment metadata in Chado are
 insufficient.
@@ -179,16 +177,16 @@ GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon
 target. However, <a href="http://solgenomics.net" class="external text"
-rel="nofollow">SGN</a> has a relatively mature
+
 <a href="http://solgenomics.net/tools/align_viewer/"
 class="external text" rel="nofollow">web-based multiple alignment and
 tree browser</a> that could be extracted from SGN's codebase and
 transformed into a GMOD component, an add-on for JBrowse. Current
 Java-based tree viewers (such as
 <a href="http://www.phylosoft.org/atv/" class="external text"
-rel="nofollow">Archaeopteryx</a> or
+
 <a href="http://www.phylowidget.org" class="external text"
-rel="nofollow">PhyloWidget</a>) could be used as the basis for a
+
 JavaScript-based tree viewer (or an applet that can be controlled
 through JavaScript) that integrates with JBrowse.
 
@@ -216,7 +214,7 @@ generalized to become the data persistence interface for such data.
 
 Aside from the data model deficiencies, the
 <a href="http://aniseed-ibdm.univ-mrs.fr/" class="external text"
-rel="nofollow">ANISEED</a> project has started efforts to generalize its
+
 sophisticated atlas/image-based web interface for phenotype data, and to
 make it operate on top of Chado. The hackathon could harness this
 synergy to help this effort leap forward, which could ultimately provide
@@ -244,17 +242,16 @@ class="external text" rel="nofollow">EvolDir</a>. In addition, the
 organizers will announce Calls for Participation at conferences they
 attend, such as
 <a href="http://www.k-state.edu/agc/symp2010" class="external text"
-rel="nofollow">Arthropod Genomics</a>,
+
 <a href="http://www.evolutionsociety.org/SSE2010/" class="external text"
-rel="nofollow">Evolution</a>,
+
 <a href="http://ievobio.org/" class="external text"
-rel="nofollow">iEvoBio</a>,
+
 <a href="http://www.open-bio.org/wiki/BOSC_2010" class="external text"
-rel="nofollow">BOSC</a>, and
+
 <a href="http://www.iscb.org/ismb2010" class="external text"
-rel="nofollow">ISMB</a>. Additional targets may be identified by
+
 <a href="http://www.nescent.org/eog/AboutEOG.php" class="external text"
-rel="nofollow">NESCent's Education and Outreach group</a>.
 
 The organizing committee will select participants from the applicant
 pool to create a group with balanced, complementary, and diverse sets of
@@ -279,24 +276,24 @@ license.
 
 The following people comprise the organizing committee:
 
-- [Nicole Washington](/wiki/User%3ANLWashington), Chair
+- [Nicole Washington](/wiki/User:NLWashington), Chair
   (Lawrence Berkeley National Laboratory;
   <a href="http://www.modencode.org" class="external text"
   rel="nofollow">modENCODE</a> and developer of
   [Phenote](/wiki/Phenote))
-- [Sheldon McKay](/wiki/User%3AMckays) (University of Arizona;
+- [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">The iPlant collaborative</a> and developer of
   [GBrowse_syn](/wiki/GBrowse_syn.1))
-- [Robert Buels](/wiki/User%3ARobertBuels) (Cornell
+- [Robert Buels](/wiki/User:RobertBuels) (Cornell
   University; <a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>)
-- [Scott Cain](/wiki/User%3AScott) (Ontario Institute for Cancer
+- [Scott Cain](/wiki/User:Scott) (Ontario Institute for Cancer
   Research; GMOD Program Coordinator)
-- [Hilmar Lapp](/wiki/User%3AHlapp)
+- [Hilmar Lapp](/wiki/User:Hlapp)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>)
-- [Dave Clements](/wiki/User%3AClements)
+- [Dave Clements](/wiki/User:Clements)
   (<a href="http://www.nescent.org" class="external text"
   rel="nofollow">NESCent</a>; [GMOD Help
   Desk](/wiki/GMOD_Help_Desk))

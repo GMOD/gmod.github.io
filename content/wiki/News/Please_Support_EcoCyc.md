@@ -58,6 +58,4 @@ available at
 <a href="http://brg.ai.sri.com/ptools/ecocyc-letters-of-support.shtml"
 class="external text" rel="nofollow">the Pathway Tools website</a>.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2014/05/21*

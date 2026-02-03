@@ -24,8 +24,6 @@ See also the following OS-specific instructions:
   system](/wiki/GBrowse_Gentoo_HOWTO)
 - **Source Code Install (for other Linux systems)**
 
-
-
   NetInstaller</span>](#The_NetInstaller)
 - [Prerequisites](#Prerequisites)
   - [Apache](#Apache)
@@ -81,7 +79,7 @@ See also the following OS-specific instructions:
 One of the easiest ways to install GBrowse is with the network installer
 script, <a
 href="https://github.com/GMOD/GBrowse/raw/master/bin/gbrowse_netinstall.pl"
-class="external text"
+
 rel="nofollow"><code>gbrowse_netinstall.pl</code></a>
 
 - You will need to have Perl 5.8.6 or higher, and the Apache web server
@@ -133,20 +131,18 @@ GBrowse runs on top of several software packages. These must be
 installed and configured before you can run GBrowse. Most preconfigured
 Linux systems will have some of these packages installed already.
 
-
-
 ## Apache
 
 The Apache web server
 <a href="http://www.apache.org" class="external autonumber"
-rel="nofollow">[1]</a> is the industry standard open source web server
+
 for Unix and Windows systems.
 
 ## MySQL (recommended)
 
 The [MySQL](/wiki/MySQL) database
 <a href="http://www.mysql.com" class="external autonumber"
-rel="nofollow">[2]</a> is a fast open source relational database that is
+
 widely used for web applications. It is required for most real-live
 genome annotation projects. For small projects (a few thousands of
 annotated features), you can skip installing MySQL and use an in-memory
@@ -156,7 +152,7 @@ database instead.
 
 The Perl language
 <a href="http://www.cpan.org" class="external autonumber"
-rel="nofollow">[3]</a> is widely used for web applications. You will
+
 need version 5.8.6 or higher.
 
 ### Standard Perl modules
@@ -164,7 +160,6 @@ need version 5.8.6 or higher.
 The following Perl modules must be installed for GBrowse to work. They
 can be found on the Comprehensive Perl Archive Network (CPAN)
 <a href="http://www.cpan.org" class="external autonumber"
-rel="nofollow">[4]</a>:
 
 - CGI (2.56 or higher)
 - GD (2.07 or higher)
@@ -179,13 +174,12 @@ rel="nofollow">[4]</a>:
 
 The [BioPerl](/wiki/BioPerl) project
 <a href="http://www.bioperl.org" class="external autonumber"
-rel="nofollow">[5]</a> is a set of Perl modules for working with common
+
 bioinformatics applications. GBrowse requires BioPerl version 1.6 or
 greater.
 
 For full details on installing BioPerl, see
 <a href="http://www.bioperl.org" class="external free"
-rel="nofollow">http://www.bioperl.org</a>
 
 Note that in addition to the above Perl modules required by GBrowse,
 BioPerl has its own set of required Perl modules. The BioPerl install
@@ -227,15 +221,14 @@ To display remote annotations using the [Distributed Annotation
 System](/wiki/Distributed_Annotation_System).
 The current version is available at CPAN:
 <a href="http://search.cpan.org/~lds/Bio-Das/" class="external free"
-rel="nofollow">http://search.cpan.org/~lds/Bio-Das/</a> and can be
+
 installed from the cpan shell.
 BioMOBY
 Needed by gbrowse_moby to fetch and display data from BioMOBY providers.
 Available from biomoby.org; obtain via anonymous cvs until it is
 released. Directions are at
 <a href="http://www.biomoby.org/GettingTheCode.html"
-class="external free"
-rel="nofollow">http://www.biomoby.org/GettingTheCode.html</a>.
+
 GD::SVG
 To save images as publication-quality editable images in Scalar Vector
 Graphics format. Available from CPAN.
@@ -243,11 +236,10 @@ Bio::SCF File::Temp io-lib(v1.7+)
 Needed by the sequencing trace glyph to parse SCF files and display the
 trace graph. The io-lib library can be downloaded from <a
 href="https://sourceforge.net/project/showfiles.php?group_id=100316&amp;package_id=108243"
-class="external free"
-rel="nofollow">https://sourceforge.net/project/showfiles.php?group_id=100316&amp;package_id=108243</a>
+
 which is part of the Staden Package
 <a href="https://sourceforge.net/projects/staden/" class="external free"
-rel="nofollow">https://sourceforge.net/projects/staden/</a>.
+
 Math::FFT Statistics::Descriptive
 Needed by the Spectrogram plugin to calculate Fast Fourier Transforms.
 This module is available from CPAN.
@@ -256,8 +248,7 @@ Needed by the PrimerDesigner plugin. The perl modules are available from
 CPAN. The linux primer3 binary is packaged with the Bio::PrimerDesigner
 distribution. The binary (or source code) can also be obtained from
 <a href="http://frodo.wi.mit.edu/primer3/primer3_code.html"
-class="external free"
-rel="nofollow">http://frodo.wi.mit.edu/primer3/primer3_code.html</a>. If
+
 you are using this plugin, the primer3 binary must be installed in
 /usr/local/bin and named 'primer3'. If it is installed in another path,
 edit the following section in the PrimerDesigner plugin:
@@ -273,8 +264,6 @@ preinstalled Perl to work nicely with MySQL. You can get the correct
 DBD::mysql version at
 <a href="http://search.cpan.org/~capttofu/DBD-mysql-2.9007/"
 class="external text" rel="nofollow">CPAN</a>.
-
-
 
 # Basic Installation
 
@@ -330,7 +319,6 @@ controlled by the following installation options:
 | LIB | The system wide Perl library path | The Perl modules that are part of GBrowse are created under this location. This location will be added to Perl's INC path, telling GBrowse where to look for these Perl modules. **Note**, if you see errors like "Can't locate Bio/Graphics.pm in @INC (@INC contains: ...", you probably need to set the servers \$PERL5LIB to match the one you used at install time. |
 | BIN | ? | Perl executable scripts directory - but I don't know what that means! |
 
-
 Some additional configuration settings include:
 
 | Setting | Default | Description |
@@ -339,7 +327,6 @@ Some additional configuration settings include:
 | NONROOT | 0 | If set to a non-zero value (e.g. NONROOT=1) then install gbrowse in a way that does not require root access (in theory). |
 | DO_XS | 1 | Compile fast alignment algorithm (XS C extension). If you have a C compiler and wish to compile the XS extensions, set DO_XS=1. Currently all this does is to speed up the multiple alignment plugin. |
 | SELINUX | 0 | Avoid the message to warn you about SELinux that appears when SELinux could be a problem. |
-
 
 You can manually set these locations by passing Makefile.PL one or more
 NAME=VALUE pairs, like so:
@@ -428,7 +415,6 @@ rather than the usual port 80. If you also see a "Port 80" directive,
 change it to read "Port 8000." You'll now be able to talk to Apache
 using URLs like
 <a href="http://your.host.edu:8000/" class="external free"
-rel="nofollow">http://your.host.edu:8000/</a>.
 
 You may not need to install Apache from scratch if your Unix
 distribution already has Apache installed. What you will do is to create
@@ -490,7 +476,7 @@ found in ~/apache/logs/error_log. To confirm that Apache is running from
 your home directory, create a file named index.html and copy it into
 ~/apache/htdocs. You should then be able to open a browser, connect to
 <a href="http://localhost:8000/" class="external free"
-rel="nofollow">http://localhost:8000/</a>, and see the index.html file
+
 that you just created.
 
 Now you can build and install gbrowse with the following incantation:
@@ -502,9 +488,8 @@ Now you can build and install gbrowse with the following incantation:
 
 When you are prompted to load gbrowse using
 <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a>, use
+
 <a href="http://localhost:8000/gbrowse" class="external free"
-rel="nofollow">http://localhost:8000/gbrowse</a> instead.
 
 # Try the Browser Out
 
@@ -612,8 +597,6 @@ distributed separately and can be downloaded from:
 
 <a
 href="http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download"
-class="external free"
-rel="nofollow">http://prdownloads.sourceforge.net/gmod/yeast.fasta.gz?download</a>
 
 Load the file with this command:
 
@@ -623,8 +606,6 @@ You should now be able to browse the yeast genome. Type the following
 URL into your favorite browser:
 
 <a href="http://name.of.your.host/cgi-bin/gbrowse/yeast"
-class="external free"
-rel="nofollow">http://name.of.your.host/cgi-bin/gbrowse/yeast</a>
 
 This will display the genome browser instructions and a search field.
 Type in "III" to start searching chromosome III, or search for "glucose"
@@ -679,18 +660,12 @@ few notable sites are:
 
 WormBase (C. elegans and related nematodes)
 <a href="/wiki/ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz"
-class="external free"
-rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/species/c_elegans/gff/c_elegans.current.annotations.gff2.gz</a>
 
 SGD (S. cerevisiae)
 <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/"
-class="external free"
-rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/</a>
 
 FlyBase (D. melanogaster)
 <a href="/wiki/ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/"
-class="external free"
-rel="nofollow">ftp://ftp.flybase.net/genomes/Drosophila_melanogaster/current/gff/</a>
 
 *Other MODs - please feel free to add your download URLs here*
 
@@ -700,7 +675,7 @@ formats into GFF3 (or [GFF2](/wiki/GFF2)) format. For example, the
 `ucsc_genes2gff.pl` script will convert gene models in Table Browser
 format files from
 <a href="http://www.genome.ucsc.edu" class="external free"
-rel="nofollow">http://www.genome.ucsc.edu</a> into [GFF3](/wiki/GFF3)
+
 format. `load_genbank.pl` will download and load sequence annotation
 files in GenBank format from NCBI. The sample configuration file
 `08.genbank.conf` (located in `contrib/conf_files`) is appropriate for
@@ -724,7 +699,6 @@ provide the directory name as the argument to -fasta. (The yeast DNA is
 too large to be included in this distribution, but you can get a copy of
 it from
 <a href="/wiki/ftp://genome-ftp.stanford.edu/pub/yeast/" class="external free"
-rel="nofollow">ftp://genome-ftp.stanford.edu/pub/yeast/</a>)
 
 Run `bp_bulk_load_gff.pl -h` to see usage instructions.
 
@@ -754,7 +728,7 @@ load a gbrowse page:
 
 To improve (1), I recommend that you install the mod_perl module for
 Apache.(<a href="http://perl.apache.org" class="external free"
-rel="nofollow">http://perl.apache.org</a>). By configuring an
+
 Apache::Registry directory and placing gbrowse inside it (rather than in
 the default cgi-bin directory). The overhead for loading Perl and its
 libraries are eliminated, thereby increasing the performance of the
@@ -831,7 +805,7 @@ BLAST hits) on the existing genome features.
 If the script is called without CGI arguments, it will generate usage
 instructions. Select
 <a href="http://your.host/cgi-bin/gbrowse_img" class="external free"
-rel="nofollow">http://your.host/cgi-bin/gbrowse_img</a> to see this
+
 internal documentation.
 
 # Plugins
@@ -902,8 +876,6 @@ Please report bugs to the
 class="external text" rel="nofollow">GMOD project bug tracking
 system</a>. Email support is available by sending requests for help to
 <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
-class="external text"
-rel="nofollow">gmod-gbrowse@lists.sourceforge.net</a>.
 
 Have fun!
 

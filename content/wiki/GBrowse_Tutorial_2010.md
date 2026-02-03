@@ -6,7 +6,7 @@ title: "GBrowse Tutorial 2010"
 TutorialHeader \| what = GBrowse \| where = [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas)
-\| who = [Scott Cain](/wiki/User%3AScott) \| when = May 2010 \|
+\| who = [Scott Cain](/wiki/User:Scott) \| when = May 2010 \|
 logo = GBrowseLogo.png
 
   VMware](#VMware)
@@ -41,7 +41,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -64,7 +64,6 @@ Which gets all of the prereqs that aren't installed on the machine.
 ## Tutorial
 
 Go to <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a>
 
 ## Basic <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
@@ -87,7 +86,7 @@ Some simple tweaks and additions:
 ### Materialized views for searching
 
 Chado comes with a tool to materialize views written by developers at
-the [SOL Genomics Network (SGN)](/wiki/Category%3ASGN). A
+the . A
 materialized view is faster (at the expense of more disk space) to
 search than a regular view (which is really a query over potentially
 several tables). To create a materialized view that makes searching a

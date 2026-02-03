@@ -116,8 +116,6 @@ Or see your report in [GBrowse](/wiki/GBrowse.1)
 - Uses 'familiar' BioPerl idioms, very similar to widely used
   Bio::DB::GFF (though with fewer methods)
 
-
-
 ##### Conclusion
 
 - Not suitable as a 'general'

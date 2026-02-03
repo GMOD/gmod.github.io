@@ -23,21 +23,18 @@ genomics data with GBrowse_syn</a></strong><br />
 <br />
 January 9-13, 2010<br />
 <a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">Plant and Animal Genome Conference</a><br />
+
 San Diego, California, USA</td>
 </tr>
 </tbody>
 </table>
 
-
 This page provides additional information about the
 <a href="http://www.intl-pag.org/18/18-gbrowse_syn.html"
 class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
+
 2010](/wiki/PAG_2010)) held in San Diego on January 9-13, 2009.
-
-
 
   Overview](#Overview)
 - [Tutorial
@@ -52,8 +49,6 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
   Meetings](#Other_GMOD_Presentations_and_Meetings)
 - [Workshop
   Evaluation](#Workshop_Evaluation)
-
-
 
 ## Overview
 
@@ -77,11 +72,11 @@ scientists working with multiple sequence alignment data.
 
 ## Workshop Instructor
 
-[Sheldon McKay](/wiki/User%3AMckays),
+[Sheldon McKay](/wiki/User:Mckays),
 <a href="http://modencode.org" class="external text"
-rel="nofollow">modENCODE</a> and
+
 <a href="http://www.iplantcollaborative.org/" class="external text"
-rel="nofollow">iPlant Collaborative</a>,
+
 <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
 Spring Harbor Laboratory</a>
 

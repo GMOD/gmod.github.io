@@ -7,9 +7,9 @@ A <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a> on the
 [JBrowse](../JBrowse.1) genome browser is in
 <a href="http://genome.cshlp.org/content/19/9" class="external text"
-rel="nofollow">this month's issue</a> of
+
 <a href="http://genome.cshlp.org/" class="external text"
-rel="nofollow">Genome Research</a>. If you haven't looked at
+
 [JBrowse](../JBrowse.1) before, *it feels both very familiar
 and radically different at the same time.*
 
@@ -32,12 +32,9 @@ JBrowse is a Web 2.0 genome browser that features:
 JBrowse features smooth panning, zooming, navigation, and track
 selection and sets a new standard for the genome browser interface.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

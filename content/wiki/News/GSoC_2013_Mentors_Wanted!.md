@@ -11,7 +11,7 @@ width="300" height="160" alt="Google Summer of Code" /></a>
 
 GMOD's participation in
 <a href="http://google-melange.com" class="external text"
-rel="nofollow">Google Summer of Code</a> has been confirmed as the
+
 Genome Informatics proposal has been accepted by Google. GSoC is a
 global program that offers student developers stipends to write code for
 various open source software projects. This year, the Genome Informatics
@@ -19,9 +19,9 @@ group is coordinating proposals for seven big bioinformatics projects:
 [Galaxy](../Galaxy.1), [GBrowse](../GBrowse.1),
 **GMOD**, [JBrowse](../JBrowse.1),
 <a href="http://reactome.org" class="external text"
-rel="nofollow">Reactome</a>, and
+
 <a href="http://wormbase.org" class="external text"
-rel="nofollow">Wormbase</a>. See the [GSoC wiki page](../GSoC)
+
 for more information or visit the <a
 href="http://www.google-melange.com/gsoc/org/google/gsoc2013/genomeinformatics"
 class="external text" rel="nofollow">Genome Informatics GSoC page</a>.
@@ -33,12 +33,9 @@ Code page](../GSoC).
 Questions or comments should be directed towards the Genome Informatics
 GSoC coordinator,
 <a href="mailto:robin.haw@oicr.on.ca" class="external text"
-rel="nofollow">Robin Haw</a>.
 
 More information is also available on the
 <a href="https://groups.google.com/group/genome-informatics"
 class="external text" rel="nofollow">Genome Informatics mailing list</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/04/15*

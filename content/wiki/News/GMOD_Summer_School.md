@@ -13,7 +13,7 @@ Durham, North Carolina, USA</span>
 The first annual <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> will be held July
 11-13, 2008 at the <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a>, in
+
 Durham, North Carolina, USA. This is a 2 1/2 day hands-on workshop aimed
 at teaching new GMOD users how to get up and running with popular GMOD
 components. There will also be a concurrent 1 day session aimed at
@@ -22,16 +22,13 @@ what GMOD can do, how the project operates, and what level of resources
 are needed to get a GMOD installation up and running. If you are
 interested in attending please submit a
 <a href="../GMOD_Summer_School_Statement_of_Interest"
-class="mw-redirect"
+
 title="GMOD Summer School Statement of Interest">Statement of
 Interest</a> before April 15, 2008. The course is free but class size is
 limited. See the <a href="../GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> page for more
 information and a tentative program.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/03/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

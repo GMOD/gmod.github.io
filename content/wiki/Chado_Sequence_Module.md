@@ -133,7 +133,7 @@ stored in the [feature](#Table:_feature) table.
 
 Feature types are taken from the
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence Ontology</a> controlled vocabulary (see also
+
 [Controlled Vocabulary module](/wiki/Chado_CV_Module), also
 known as _cv_). Types of feature are differentiated using a _type_id_
 column, which is a foreign key to the
@@ -157,8 +157,6 @@ class="external text" rel="nofollow">mRNA</a> | SL:0000037 | <a href="http://www
 class="external text" rel="nofollow">miRNA</a> | SL:0000044 | <a href="http://www.sequenceontology.org/miSO/SO_CVS/regulatory_element"
 class="external text" rel="nofollow">regulatory_element</a> | SL:0000052 | <a
 href="http://www.sequenceontology.org/miSO/SO_CVS/transcription_factor_binding_site.html"
-class="external text"
-rel="nofollow">transcription_factor_binding_site</a> | SL:0000054 |
 
 Sequence Ontology Examples
 
@@ -166,7 +164,7 @@ The Chado [feature](#Table:_feature) table has a text-valued column
 named _residues_ for storing the sequence of the feature. The value of
 this column is string of
 <a href="http://bioinformatics.org/sms/iupac.html" class="external text"
-rel="nofollow">IUPAC symbols</a> corresponding to the sequence of
+
 biochemical residues encoded by the feature. This column is optional,
 because the sequence of the feature may not be known. Even if the
 sequence of a feature is known, it may not be desirable to store it in
@@ -490,9 +488,8 @@ the “hit” is visible.
 There is a crucial difference between the Chado location model and the
 sequence location model used in other schemas, such as [GFF](/wiki/GFF),
 GenBank, <a href="http://biosql.org" class="external text"
-rel="nofollow">BioSQL</a>, or
+
 <a href="http://bioperl.org" class="external text"
-rel="nofollow">BioPerl</a>.
 
 First, Chado is the only model to use the concept of rank and locgroup.
 Second, and perhaps more important, all these other models allow
@@ -550,7 +547,7 @@ attribute-value pairs to features via the
 [featureprop](#Table:_featureprop) table. The _featureprop.type_id_
 foreign key column references a property in the
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence Ontology</a>. The _value_ text column stores the
+
 value filler for that property. Sets or lists of values for any property
 can be stored in the [featureprop](#Table:_featureprop) table,
 differentiated by the value of the _rank_ column. Provenance for the
@@ -590,7 +587,7 @@ locally accessioned; a sample trigger is provided with the schema.
 
 Detailed annotations, such as associations to
 <a href="http://geneontology.org" class="external text"
-rel="nofollow">Gene Ontology (GO)</a> terms or
+
 <a href="http://obofoundry" class="external text" rel="nofollow">Cell
 Ontology</a> terms, can be attached to features using the
 [feature_cvterm](#Table:_feature_cvterm) linking table. This allows
@@ -625,9 +622,9 @@ connects two features via the _subject_id_ and _object_id_ columns
 _type_id_ (a foreign key referring to a relationship type in an
 ontology, either
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">SO</a>, or the
+
 <a href="http://obofoundry.org/ro/" class="external text"
-rel="nofollow">OBO relationship ontology, OBO-REL</a>, indicating the
+
 nature of the relationship between subject and object features.
 
 The core relationships between features are part-whole (_part_of_) or
@@ -641,7 +638,7 @@ either grammatically or biologically incorrect.
 
 We use this same terminology (which comes from
 <a href="http://www.w3.org/RDF/" class="external text"
-rel="nofollow">RDF</a>) again in the [cv
+
 module](/wiki/Chado_CV_Module). The collection of features
 and feature relationships can be considered as vertices and edges in a
 graph, known as the Feature Graph (FG). Example feature graphs are shown
@@ -659,7 +656,7 @@ Although the chado schema admits any FG, certain configurations are
 biologically meaningless, and should not be used. The FG can be
 constrained by the
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology</a>. Standardized FG structures are
+
 required for complex applications to be interoperable.
 
 Unlike the LG, the FG may be cyclic, although cycles in the FG are not
@@ -694,7 +691,7 @@ this is enforced by the DBMS.
 
 Level 1 conformance is minimal conformance to
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">SO</a> - all feature.types must be SO terms, and all
+
 feature relationship.types must be SO relationship types.
 
 #### Level 2: Graph
@@ -724,7 +721,7 @@ appear below. We plan on updating our terms with SO terms very soon.
 #### SO terms used for Standard Central-dogma Gene Model
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: gene mRNA exon protein \[other types are
+
 derivable\].
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
@@ -738,7 +735,6 @@ software should be tolerant of both these uses.
 #### SO terms Used for Storing Alignments
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: match
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
 match
@@ -756,7 +752,7 @@ paralogous/orthologous gene families.
 #### feature_relationship Types
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: partof (for mRNA to gene and exon to mRNA)
+
 producedby (for protein to mRNA)
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
@@ -773,7 +769,7 @@ introduce an intermediate CDS feature between mRNA and protein.
 #### featureloc Policy
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: all constituent parts of a central dogma
+
 gene model are located relative to the same srcfeature (the chromosome
 arm). No redundant locations (i.e. featureloc.group ¿ 0) are used.
 
@@ -810,7 +806,7 @@ coverage, heterochromatin).
 #### Non-central Dogma Gene Models
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: we store a lot of non-central dogma gene
+
 models; noncoding gene models and pseudogenes \[need to fill in more
 details here\].
 
@@ -821,7 +817,7 @@ occasional non-coding ORF.
 #### Other Features
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: the FlyBase implementation includes many
+
 other feature types, including polyA site and se- quence variant \[need
 to fill in details\].
 
@@ -831,7 +827,7 @@ using ’SNP’ in some databases.
 #### Derivable Feature Types
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: derivable features (introns, UTRs,
+
 intergenic region) are not included. Feature typing is always done to
 the most specific, non-derivale level. For example, we never use types
 ”5 prime exon”, ”dicistronic gene”, ”coding exon” as these are always
@@ -850,7 +846,7 @@ different chado db instances.
 #### Sequence Variants
 
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>: these are included in chado, but they are
+
 lacking full detail.
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
@@ -1148,8 +1144,7 @@ referring to the dbxref for the alternate protein. Corresponds to the
 WITH column in a GO gene association file (but can also be used for
 other analogous associations). See
 <a href="http://www.geneontology.org/doc/GO.annotation.shtml#file#file"
-class="external free"
-rel="nofollow">http://www.geneontology.org/doc/GO.annotation.shtml#file</a>
+
 for more details.
 
 | F-Key                                                               | Name                     | Type    | Description         | ------------------------------------------------------------------- | ------------------------ | ------- | ------------------- |                                                                     | feature_cvterm_dbxref_id | serial  | _PRIMARY KEY_       | [feature_cvterm](/wiki/Chado_Tables#Table:_feature_cvterm) | feature_cvterm_id        | integer | _UNIQUE#1 NOT NULL_ | [dbxref](/wiki/Chado_Tables#Table:_dbxref)                 | dbxref_id                | integer | _UNIQUE#1 NOT NULL_ |

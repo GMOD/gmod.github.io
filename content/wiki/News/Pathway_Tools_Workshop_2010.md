@@ -45,11 +45,7 @@ Looking forward to seeing you at an upcoming Pathway Tools event.
 Best regards,
 
 <a href="mailto:ptools-info@ai.sri.com" class="external text"
-rel="nofollow">Tomer Altman</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/09*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

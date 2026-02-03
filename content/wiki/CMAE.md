@@ -81,4 +81,4 @@ The CMAE specific information is located in the "editor" directory.
 
 ## Contact
 
-- [Ben Faga](/wiki/User%3AFaga)
+- [Ben Faga](/wiki/User:Faga)

@@ -146,7 +146,6 @@ init_code=
     }
 ```
 
-
 In your GBrowse.conf file, use the include directive to import the named
 subroutines, by including the init_code.conf file in the \[GENERAL\]
 section of the configuration file. Add a reference to the named

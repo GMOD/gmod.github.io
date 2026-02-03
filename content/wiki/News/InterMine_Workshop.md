@@ -17,7 +17,7 @@ workshop is intended for software developers aspiring to build a
 database and web interface with the
 [InterMine](../InterMine) software. An example of such a
 database is <a href="http://flymine.org" class="external text"
-rel="nofollow">FlyMine</a> but InterMine imposes no restriction on the
+
 sort of data it can be used to manage. A reasonable grasp of programming
 in either Java or PERL is essential. Some experience with relational
 database would also be very useful.
@@ -40,9 +40,6 @@ details and registration information. The workshop is free to attend.
 
 Richard Smith
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/09/11*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

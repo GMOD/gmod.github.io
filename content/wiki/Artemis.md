@@ -16,7 +16,7 @@ the context of the sequence, and its six-frame translation. Artemis is
 written in Java, and is available for UNIX, Macintosh and Windows
 systems. It can read
 <a href="http://www.ebi.ac.uk/embl/index.html" class="external text"
-rel="nofollow">EMBL</a> and
+
 <a href="http://www.ncbi.nlm.nih.gov:80/Genbank/GenbankOverview.html"
 class="external text" rel="nofollow">GENBANK</a> database entries or
 sequence in [FASTA](/wiki/Glossary#FASTA) or raw format. Extra

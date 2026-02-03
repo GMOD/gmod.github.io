@@ -47,6 +47,4 @@ class="external text" rel="nofollow">WebApollo Hackathon information</a>
 
 *via Monica Munoz-Torres*
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2014-04-22*

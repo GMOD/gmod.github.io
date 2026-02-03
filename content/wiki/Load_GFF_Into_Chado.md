@@ -3,7 +3,7 @@ title: "Load GFF Into Chado"
 ---
 # Load GFF Into Chado
 
-This [HOWTO](/wiki/Category%3AHOWTO) describes a method for
+This  describes a method for
 loading sequence annotation data in [GFF3](/wiki/GFF3) format into a
 [Chado database](/wiki/Chado_-_Getting_Started).
 
@@ -24,17 +24,14 @@ loading sequence annotation data in [GFF3](/wiki/GFF3) format into a
 An easy way to load data into the database is to use a
 [GFF3](/wiki/GFF3) file and the script
 `load/bin/gmod_bulk_load_gff3.pl`. A good set of sample data is the GFF3
-file prepared by the nice folks at the [Saccharomyces Genome
-Database](/wiki/Category%3ASGD):
+file prepared by the nice folks at the :
 
 <a
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
-class="external free"
-rel="nofollow">http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff</a>
 
 This file contains
 <a href="http://geneontology.org" class="external text"
-rel="nofollow">Gene Ontology (GO)</a> annotations, so if you didn't load
+
 GO when you executed `make ontologies` you will get many warning
 messages about being unable to find entries in the
 [dbxref](/wiki/Chado_Tables#Table:_dbxref) table. If you want
@@ -73,7 +70,7 @@ This loads the [GFF3](/wiki/GFF3) file. The loading script requires
 [GFF3](/wiki/GFF3) as it has tighter control of the syntax and requires
 the use of a controlled vocabulary (from
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology Feature Annotation (SOFA)</a>),
+
 allowing mapping to the relational schema. In addition to supplying the
 location of the file with the `--gfffile` flag, the `--organism` tag
 uses the common name (`common_name` field) from the [Chado organism
@@ -90,7 +87,7 @@ created at the time of install. For more information on using these
 classes, see [Modware](/wiki/Modware) for a
 <a href="http://search.cpan.org/perldoc?Class::DBI"
 class="external text" rel="nofollow">Class::DBI</a>-based
-[middleware/API](/wiki/Category%3AMiddleware).
+.
 
 ## Creating GFF3 from UniProt/SwissProt Files
 
@@ -116,12 +113,11 @@ Chado](/wiki/Load_RefSeq_Into_Chado).
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 Or contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 
 ## Authors
 
-- [Scott Cain](/wiki/User%3AScott)
+- [Scott Cain](/wiki/User:Scott)
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>

@@ -6,7 +6,7 @@ title: "CMap3D"
 CMap3D showing GrainGenes
 
 <a href="http://acpfg.imb.uq.edu.au/cmap3d.php" class="external text"
-rel="nofollow">CMap3D</a> is a 3D
+
 [visualisation](/wiki/Visualization) tool for
 [comparative](/wiki/Comparative_Genomics) genetic maps
 that runs on top of a [CMap](/wiki/CMap.1) database.

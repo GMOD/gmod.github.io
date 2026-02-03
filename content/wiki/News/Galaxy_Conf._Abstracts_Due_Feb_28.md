@@ -14,11 +14,11 @@ alt="Galaxy Community Conference Abstracts Due February 28" /></a>
 class="external text" rel="nofollow">Abstracts are now being
 accepted</a> for the
 <a href="http://galaxy.psu.edu/gcc2011/" class="external text"
-rel="nofollow">2011 Galaxy Community Conference</a> being held 25-26
+
 May, at the Conference Centre De Werelt in Lunteren, The Netherlands.
 This year the conference is co-organized by the
 <a href="http://www.nbic.nl/" class="external text"
-rel="nofollow">Netherlands Bioinformatics Centre (NBIC)</a>. The
+
 conference features
 <a href="http://galaxy.psu.edu/gcc2011/Programme.html"
 class="external text" rel="nofollow">two full days</a> of presentations
@@ -38,12 +38,9 @@ class="external text" rel="nofollow">Early Registration</a> Deadline |
 Please contact me if you have any questions, and hope to see you in the
 Netherlands!
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [Galaxy](../Galaxy.1) Project
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/03/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

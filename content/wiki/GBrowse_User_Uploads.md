@@ -16,9 +16,9 @@ The custom tracks system can run with no additional tools in a basic
 mode, or use a more advanced mode that requires a database but allows
 more flexible sharing. It has been tested using
 <a href="http://www.sqlite.org/" class="external text"
-rel="nofollow">SQLite</a> and
+
 <a href="http://www.mysql.com/" class="external text"
-rel="nofollow">MySQL</a> as databases, though it should be possible to
+
 use others.
 
   Display](#Display)
@@ -211,7 +211,7 @@ class="external text" rel="nofollow">Net::SMTP</a> and
 <a href="http://search.cpan.org/~nanis/Crypt-SSLeay-0.58/lib/Net/SSL.pm"
 class="external text" rel="nofollow">Net::SSL</a> modules from
 <a href="http://search.cpan.org/" class="external text"
-rel="nofollow">CPAN</a> onto the server running GBrowse. OpenID login
+
 will also need the <a
 href="http://search.cpan.org/~mart/Net-OpenID-Consumer-1.03/lib/Net/OpenID/Consumer.pm"
 class="external text" rel="nofollow">Net::OpenID::Consumer</a> module -

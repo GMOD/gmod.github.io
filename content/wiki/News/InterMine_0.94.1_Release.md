@@ -39,9 +39,6 @@ Regards,
 
 The [InterMine](../InterMine) developers
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/10/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

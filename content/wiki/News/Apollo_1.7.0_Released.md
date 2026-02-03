@@ -6,7 +6,6 @@ title: "News/Apollo 1.7.0 Released"
 Version 1.7.0 of [Apollo](../Apollo.1) has just been released.
 You can access the updated Apollo page at
 <a href="http://www.fruitfly.org/annot/apollo" class="external free"
-rel="nofollow">http://www.fruitfly.org/annot/apollo</a>
 
 Changes in this version include
 
@@ -47,9 +46,6 @@ and a half long hiatus). So please [let us
 know](../Apollo.1#Contact) if you find any bugs and they will
 be addressed and put into a new release as soon as possible.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/01/11*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

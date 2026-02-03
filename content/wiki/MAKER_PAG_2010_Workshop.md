@@ -44,7 +44,7 @@ MAKER on a local machine.
 
 ## Workshop Instructor
 
-- [Carson Holt](/wiki/User%3ACarsonholt),
+- [Carson Holt](/wiki/User:Carsonholt),
   <a href="http://www.utah.edu" class="external text"
   rel="nofollow">University of Utah</a>
 
@@ -72,8 +72,6 @@ necessary. After the workshop, the MAKER presentation and a VMware
 system image with MAKER prerequisite software already installed will be
 made available on this page. You can use this image to walk through the
 material presented at this workshop.
-
-
 
 ## Other GMOD Presentations and Meetings
 

@@ -12,7 +12,7 @@ architecture development in support of a project essential to basic
 biomedical research.
 
 The <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a> seeks an agile
+
 and adaptable software engineer with a broad skill set and an interest
 in applying it to scientific problems. You will assist the team in
 designing and implementing a scalable architecture and web interface to
@@ -70,9 +70,6 @@ Please send resumes and vitaes to **Todd Harris (todd@wormbase.org)**.
   href="https://www.recruitingsite.com/csbsites/oicr/JobDescription.asp?JobNumber=663696"
   class="external text" rel="nofollow">official job posting at OICR</a>
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/10/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

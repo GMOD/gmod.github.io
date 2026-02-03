@@ -39,16 +39,13 @@ the community at large (you!) to solicit feedback on the proposal.
 
 If you have any comments, please post them to the
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">membership requirements thread on the gmod-devel list</a>
+
 in the next two weeks. If we reach consensus and approval, we'll update
 the requirements.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/12/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

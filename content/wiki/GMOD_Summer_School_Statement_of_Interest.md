@@ -23,12 +23,10 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
 
 VMware on Mac OS X
 
@@ -39,8 +37,7 @@ Intel processor is a requirement for all the packages discussed below.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
 
-There is no free VMware player that runs _directly_ under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs _directly_ under . However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion
@@ -50,7 +47,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a> allows you to run VMware
+
 images, Windows and Linux under Mac OS. **We recommend this option for
 Mac users. There is a fully functional, 30 day free trial version of
 VMware Fusion available for download.**
@@ -63,7 +60,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="60" alt="Boot Camp" /></a>
 
 The <a href="http://www.apple.com/macosx/" class="external text"
-rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
+
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 class="external text" rel="nofollow">Boot Camp</a>, a feature that
 allows you to boot your Mac into another operating system, including
@@ -88,7 +85,7 @@ everyone who applied into the course (and we still had a full course).
 Participants were responsible for their own transportation, lodging and
 meals. Everyone who flew, came in through
 <a href="http://www.rdu.com/" class="external text"
-rel="nofollow">Raleigh-Durham International Airport (RDU)</a>, a 30
+
 minute drive from NESCent. Most participants stayed at
 <a href="http://www.millenniumhotels.com/millenniumdurham/index.html"
 class="external text" rel="nofollow">Millennium Hotel Durham</a>, which
@@ -124,7 +121,7 @@ title="Poster 2"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/SummerSchoolFlier2008.png" width="254"
 height="196" alt="Poster 2" /></a><br />
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMODSummerSchoolFlier2008.pdf"
-class="internal"
+
 title="GMODSummerSchoolFlier2008.pdf">Download</a><br />
 A flier with the schedule on it also available.</td>
 </tr>
@@ -137,7 +134,6 @@ The 2008 GMOD Summer School was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
 class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a> under
 <a href="http://biowiki.org/IanHolmes" class="external text"
-rel="nofollow">Ian Holmes</a>.
 
 \*Comments on the **2008 GMOD Summer School\***
 

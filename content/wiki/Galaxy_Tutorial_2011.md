@@ -4,7 +4,7 @@ title: "Galaxy Tutorial 2011"
 # Galaxy Tutorial 2011
 
 <a href="http://galaxyproject.org" class="external text"
-rel="nofollow">Galaxy</a> is a framework for integrating computational
+
 tools. It allows nearly any tool that can be run from the command line
 to be wrapped in a structured well defined interface.
 
@@ -113,7 +113,7 @@ include version 2.6.4 of the interpreter:
 Galaxy is distributed (and developed) using a distributed version
 control system called
 <a href="http://mercurial.selenic.com/" class="external text"
-rel="nofollow">Mercurial</a>. The Ubuntu VM image already includes
+
 mercurial version 1.3.1:
 
     gmod@ubuntu:~$ hg --version
@@ -124,7 +124,6 @@ mercurial version 1.3.1:
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
-rel="nofollow">bitbucket hosting service</a>.
 
 **DO NOT DO THIS NOW**: To create a local clone of the release
 repository run the following:
@@ -213,7 +212,6 @@ Once the database is initialized, the normal startup process proceeds,
 loading tool configurations, starting the job runner, and finally
 initializing the web interface on port. You can now access your Galaxy
 at <a href="http://localhost:8081" class="external free"
-rel="nofollow">http://localhost:8081</a>
 
 See <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/GetGalaxy"
 class="external text" rel="nofollow">GetGalaxy</a> for more information
@@ -232,7 +230,6 @@ Biology publication</a>.
 
 Load a web browser and access
 <a href="http://localhost:8081" class="external free"
-rel="nofollow">http://localhost:8081</a>.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Galaxy_FirstAnalysis_1.png" width="1049"
@@ -617,7 +614,7 @@ class="external text" rel="nofollow">tool dependencies</a>. Suppose we'd
 like to analyze some Illumina datasets. We see that the **Map with BWA**
 tool requires us to install
 <a href="http://bio-bwa.sourceforge.net/" class="external text"
-rel="nofollow">BWA</a> (surprise!). To save time, BWA is already
+
 compiled on the VM image, so let's copy it to a location on the `PATH`:
 
     $ sudo cp /home/gmod/Documents/Software/galaxy/bwa-0.5.9/bwa /usr/local/bin
@@ -644,7 +641,6 @@ and run Galaxy using `sh run.sh`
 
 Having made these changes, start Galaxy again using `run.sh` and access
 it at <a href="http://localhost:8081" class="external free"
-rel="nofollow">http://localhost:8081</a>
 
 You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new
@@ -687,11 +683,9 @@ Illumina**.
 *Change* the value of the first parameter to **Use one from the
 history** and make sure that **1:
 <a href="http://...genome.fa" class="external free"
-rel="nofollow">http://...genome.fa</a>** is **selected**.
 
 Make sure that for parameter **FASTQ file** that **2:
 <a href="http://...fastqsanger" class="external free"
-rel="nofollow">http://...fastqsanger</a>** is selected.
 
 *Click* **Execute**.
 
@@ -705,7 +699,7 @@ height="578" alt="Galaxy SecondAnalysis 3.png" />
 # Adding a new tool
 
 The <a href="http://samtools.sourceforge.net/" class="external text"
-rel="nofollow">SAM format</a> contains 12 required fields representing
+
 the read and the position it maps to, followed by a variable number of
 optional fields of the form *`CODE:TYPE:VALUE`*. Suppose we want to
 filter by these optional fields. We can whip up a quick command line

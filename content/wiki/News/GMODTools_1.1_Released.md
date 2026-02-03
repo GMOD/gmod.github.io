@@ -22,9 +22,6 @@ Version 1.1 adds these features and corrections:
 Fasta, [GFF](../GFF), DNA and other bulk genome annotation files
 from Chado databases.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2007/10/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

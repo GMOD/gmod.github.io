@@ -91,7 +91,6 @@ class="external text" rel="nofollow">notes here</a>.
 
 To get BioPerl from cvs see
 <a href="http://www.bioperl.org/wiki/Using_CVS" class="external text"
-rel="nofollow">here</a>
 
 #### GO perl
 
@@ -350,7 +349,7 @@ It's a different GraphViz. I still need GraphViz.
 
 identifies a C library dependency, graphviz. Shades of gd. Follow
 <a href="http://www.graphviz.org/" class="external free"
-rel="nofollow">http://www.graphviz.org/</a> and find that there are Mac
+
 OS X package installers, which is a good thing, since graphviz has many
 other dependencies of its own. Download 2.12 revision 1 for PPC and
 install. graphviz installs into /usr/local as /usr/local/graphviz-2.12.
@@ -386,8 +385,7 @@ on.
 ### Load the yeast sample data
 
 Per instructions: get the yeast file from <a href="/wiki/ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff"
-class="external free"
-rel="nofollow">ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff</a>.
+
 cd to my downloads directory and do
 
     gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.gff

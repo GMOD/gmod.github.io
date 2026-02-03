@@ -77,20 +77,15 @@ title: "Introduction to Chado"
 - An integrated database
 - A database that is generic enough to use for any organism
 
-
-
 ## Chado - the way of tea
 
 Why the reference to tea? According to ancient GMOD lore, legend has it
 that creators Chris Mungall and Dave Emmert were drinking tea in a tea
 house when they developed the first design that eventually became Chado.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/Chado.jpg" width="417" height="273"
 alt="Chado.jpg" />
-
-
 
 ## What Documentation Exists for chado?
 
@@ -100,8 +95,6 @@ are more useful pages in the Wiki:
 - [Getting Started](/wiki/Chado_-_Getting_Started)
 - [Chado Manual](/wiki/Chado_Manual)
 - [Best Practices](/wiki/Chado_Best_Practices)
-
-
 
 ## A Modular Schema
 
@@ -192,8 +185,6 @@ height="558" alt="So-slim-example.png" />
 - regulatory region
 - variation features: insertions, deletions, SNPs
 
-
-
 ## Feature Graphs
 
 <table data-border="2" data-cellpadding="4" data-cellspacing="0"
@@ -236,13 +227,12 @@ A dicistronic gene is a gene with a mRNA that codes for two distinct
 non-overlapping CDSs. Dicistronic genes (see for example, the
 \[Drosophila Adh and Adhr genes
 <a href="http://www.flybase.org/reports/FBgn0000056.html"
-class="external free"
-rel="nofollow">http://www.flybase.org/reports/FBgn0000056.html</a>\])
+
 have totally distinct gene products deriving from the same transcript.
 To confuse matters, the two polypeptides are commonly referred to as
 being derived from two distinct genes (e.g. Adh and Adhr). In a database
 such as \[FlyBase <a href="http://flybase.org/" class="external free"
-rel="nofollow">http://flybase.org/</a>\], there are 3 gene IDs stored in
+
 the database - one for each of the two non-overlapping genes, and one
 for the gene cassette.
 
@@ -277,7 +267,6 @@ height="376" alt="Inferred introns.png" />
 A graph can be defined as a collection of **Edges** (arcs) and
 **Vertices** (nodes).
 
-
 **Two table structure required for representing graphs**
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/54/Rel-graph.png" width="236" height="138"
@@ -289,7 +278,6 @@ alt="Rel-graph.png" />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ed/Chado-ont.png" width="363" height="138"
 alt="Chado-ont.png" />
-
 
 The relationship type is a controlled term in itself. Each
 cvrelationship can be thought of as a SUBJECT PREDICATE OBJECT statement
@@ -313,10 +301,7 @@ the principle is to keep the stable stuff modeled relationally, and the
 fluid/extensible stuff modeled in an ontology that sits in a generic
 database structure.
 
-
-
 ### Features are typed
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Chado-feat.png" width="260" height="98"
@@ -344,8 +329,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="532" alt="Transitive closure.png" />
 Solid lines represent the actual relationships. The collection of dotted
 lines is the closure of the relationships.
-
-
 
     forall x      ALWAYS TRUE:     x R* x
 
@@ -387,13 +370,10 @@ The chado relational model defines a fixed set of attributes for a
 | md5checksum | no | signature of sequence |
 | seqlen | no | length of sequence (may be present even if residues is absent) |
 | type_id | yes | <a href="http://sequenceontology.org" class="external text" |
-rel="nofollow">Sequence Ontology</a> feature type (foreign key) |
-
 
 What happens if we want to include other attributes specific to certain
 projects, or specific to certain feature types? We can use an extensible
 feature property paradigm:
-
 
 **We can attach any properties we like to feature:**
 <img
@@ -423,7 +403,6 @@ The **featureloc** table includes the following attributes:
 locations have *directional semantics* (like mathematical vectors). this
 is different from the min/max semantics used by e.g.
 <a href="http://bioperl.org" class="external text"
-rel="nofollow">Bioperl</a>, genbank
 
 ## Interbase Coordinates
 
@@ -469,7 +448,7 @@ Using the principle of minimal storage (do not store anything that does
 not increase the *information content* of the database - i.e. nothing
 redundant), we store only exon and CDS boundary localisations. In the
 <a href="http://www.fruitfly.org/" class="external text"
-rel="nofollow">Berkeley Drosophila Genome Project (BDGP)</a> data
+
 warehouse instantiation of Chado, we may choose to store locations for
 all features where known - this can vastly simplify some queries, but
 care must be taken to make sure we don't end up with inconsistent data.
@@ -541,14 +520,10 @@ subject rank.
 These are treated analagously to pairwise alignments - just add more
 locations.
 
-
-
 ## Variation features
 
 Variation features (e.g. SNPs, insertions, deletions) are treated in a
 similar fashion to pairwise alignments.
-
-
 
 ## Bioperl and chado mapping
 
@@ -581,8 +556,6 @@ multiple locations.
 
 - Mark Yandell
 - Aubrey de Grey
-
-
 
 ## About this Page
 

@@ -8,7 +8,7 @@ height="54" alt="Pagxxii.png" />](../PAG)
 
 For those of you attending
 <a href="http://intlpag.org/2014/" class="external text"
-rel="nofollow">PAG XXII</a>, we have made up
+
 <a href="../PAG" class="mw-redirect" title="PAG">a "cheatsheet" of
 GMOD-related content to check out</a>.
 
@@ -18,5 +18,4 @@ ASAP!
 
 *Posted to the [GMOD News](../GMOD_News) on 2014-01-08*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

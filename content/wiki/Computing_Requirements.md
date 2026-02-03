@@ -8,8 +8,6 @@ for implementing GMOD components at your organization. Requirements for
 specific components can be found on [each component's
 page](/wiki/GMOD_Components).
 
-
-
   Administrator</span>](#GMOD_Systems_Administrator)
   - [Qualifications and
     Hiring](#Qualifications_and_Hiring)
@@ -50,12 +48,11 @@ have. In addition, we recommend having one of your computing support
 staff interview your candidates. They are best suited to determine if a
 candidate has the technical qualifications or not.
 
-
 **Installing and Configuring Software**
 
 Most GMOD software relies on well-established programming languages and
-technologies such as [Perl](/wiki/Category%3APerl), CPAN,
-[Java](/wiki/Category%3AJava),
+technologies such as , CPAN,
+,
 [PostgreSQL](/wiki/PostgreSQL), [MySQL](/wiki/MySQL), and
 Apache. There are also a number of packages and systems that are
 specific to bioinformatics, such as [BioPerl](/wiki/BioPerl), that
@@ -63,7 +60,6 @@ are required by several GMOD tools. Most operating systems have standard
 ways of installing these packages; your sysadmin should be familiar with
 how to install software and how to diagnose and fix a failed
 installation.
-
 
 **Backups**
 
@@ -80,7 +76,6 @@ Some painfully-learned advice: if you do not have a protocol to follow,
 **document the steps involved in setting up software**, and **make a
 backup when you have the system working**.
 
-
 **Finding and Fixing Problems**
 
 Computers are complex systems and diagnosing problems is part science
@@ -89,7 +84,6 @@ not know the specifics of the technologies used by GMOD, but they will
 have had enough experience to know, for example, that many technologies
 support debuggers and logging, two things that are enormously helpful
 when investigating problems.
-
 
 **Communication**
 
@@ -118,7 +112,6 @@ tweaks had to be done to get things to work.
 A good candidate will believe in the value of documentation, and will
 write *and* maintain it.
 
-
 **Credentials and Professionalism**
 
 Does a sysadmin need a degree in Computer Science? **No.**
@@ -143,8 +136,6 @@ What does a *professional attitude* mean in this context?
   users your project may have, your organization's sys admins, and the
   larger GMOD community.
 
-
-
 ## Hardware and Software
 
 ### Hardware
@@ -167,13 +158,11 @@ and set up, the computing resources (storage space, processing power,
 input/output rates) can be adjusted as required, and much of the hassle
 and worry of maintaining expensive computer hardware is eliminated.
 <a href="http://wormbase.org" class="external text"
-rel="nofollow">Wormbase</a> serve all their web resources from the
+
 cloud, and [GMOD in the Cloud](/wiki/Cloud.1) is a great way to get
 started with GMOD software without the bother of installation.
 Cost-wise, cloud computing compares very favourably to hosting your own
 hardware, and in terms of flexibility, it cannot be beaten.
-
-
 
 ### Operating System
 
@@ -189,8 +178,6 @@ on your personal computer is less important.
 
 A discussion of the pros and cons of using different operating systems
 in GMOD follows.
-
-
 
 #### Unix, Linux, and Mac OS
 
@@ -216,13 +203,13 @@ The official
 <a href="http://en.wikipedia.org/wiki/Linux_distribution" class="extiw"
 title="wp:Linux distribution">Linux distributions</a> of GMOD are
 <a href="http://www.centos.org" class="external text"
-rel="nofollow">CentOS</a> and
+
 <a href="http://ubuntu.com" class="external text"
-rel="nofollow">Ubuntu</a>. CentOS is a Linux variant based on
+
 <a href="http://www.redhat.com/rhel/server/" class="external text"
-rel="nofollow">Red Hat Enterprise Server</a>. Ubuntu is based on
+
 <a href="http://www.debian.org" class="external text"
-rel="nofollow">Debian</a> branch of Linux. However, many other Linux
+
 variants are compatible with GMOD.
 
 If you don't already have Linux up and running then you are encouraged
@@ -232,12 +219,12 @@ running and you don't want to switch then you can probably use that
 distribution without problems.
 Mac OS
 <a href="http://www.apple.com/macosx/" class="external text"
-rel="nofollow">Mac OS</a> from
+
 <a href="http://www.apple.com" class="external text"
-rel="nofollow">Apple</a> is also a Unix based operating system. Mac OS,
+
 however, is not a Linux variant. Mac OS is built on the
 <a href="http://www.freebsd.org" class="external text"
-rel="nofollow">FreeBSD</a> version of Unix. Because of its different
+
 roots, the difference between MacOS and a typical Linux distribution is
 greater than the difference between any two Linux distributions. If you
 run GMOD on Apples, you will need to do more work to set things up then
@@ -254,11 +241,11 @@ involves more work than Linux.
 
 While Mac OS and other Unix operating systems are fairly close to Linux,
 <a href="http://microsoft.com" class="external text"
-rel="nofollow">Microsoft Windows</a> is not. Windows is based on an
+
 entirely different code base and set of principles than are Unix-based
 systems, to avoid errors - optimize
 <a href="http://www.top5optimizers.com/" class="external text"
-rel="nofollow">windows XP</a>. There are users that run GMOD components
+
 on Windows machines, but there are relatively few of them. Running GMOD
 on Windows means significantly more work up front and greatly reduces
 the part of the GMOD community that can help you if you encounter

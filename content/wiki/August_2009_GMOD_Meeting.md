@@ -30,7 +30,6 @@ height="256" alt="GMOD Europe 2009" /></a></td>
 </tbody>
 </table>
 
-
 This [GMOD Community Meeting](/wiki/Meetings) was held 6-7 August,
 2009, in Oxford UK. The meeting was a part of ***[GMOD Europe
 2009](/wiki/GMOD_Europe_2009)***, a week long event that
@@ -46,8 +45,6 @@ previous [meetings](/wiki/Meetings) were the [January
 2008](/wiki/July_2008_GMOD_Meeting) meetings. GMOD
 meetings are an excellent way to meet GMOD developers and users, and to
 learn (and affect) what's coming in the project.
-
-
 
   Schedule](#Schedule)
 - [Presentations](#Presentations)
@@ -173,24 +170,20 @@ learn (and affect) what's coming in the project.
 Heng Li
 
 <a href="http://www.sanger.ac.uk" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a>
-
-
 
 <a href="http://www.sanger.ac.uk/Users/lh3/" class="external text"
-rel="nofollow">Dr Heng Li</a> of the Sanger Institute was the special
+
 guest speaker. Heng
 [discussed](#Quest_for_Standard:_Sequence_alignment.2Fmap_format_.28SAM.29_and_SAMtools)
 his recent work on
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a>, a set of file formats and scripts for
+
 efficiently storing and accessing next generation sequence data. Heng is
 a developer on several projects focused on next generation sequencing,
 including
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a>, BWA, and
+
 <a href="http://maq.sourceforge.net" class="external text"
-rel="nofollow">MAQ</a>.
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
 data-cellspacing="0">
@@ -232,7 +225,7 @@ style="color: #aaaaff">2009 GMOD Summer School - Europe</span></a></td>
 title="User%253AScott">Scott Cain</a> - Introductions and the State of
 GMOD</td>
 <td><a href="http://prezi.com/143773/" class="external text"
-rel="nofollow">Prezi</a>, <a
+
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/Aug2009StateOfGMOD.ppt" class="internal"
 title="Aug2009StateOfGMOD.ppt">PPT</a>, <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Aug2009StateOfGMOD.pdf" class="internal"
@@ -243,5 +236,3 @@ href="#GMOD_Project_Talks">Summary</a></td>
 <td>14:30-15:00</td>
 <td style="text-align: center;"><a href="/wiki/User%253AClements"
 title="User%253AClements">Dave Clements</a>
-- [Semantic web](/wiki/Category%3ASemantic_web)
-- [JBrowse](/wiki/Category%3AJBrowse)

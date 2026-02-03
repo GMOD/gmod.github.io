@@ -18,12 +18,12 @@ title: "Biopackages HOWTO"
 
 RPM-based Linux distributions, including
 <a href="http://fedoraproject.org/wiki/" class="external text"
-rel="nofollow">Fedora Core</a> and
+
 <a href="http://www.centos.org" class="external text"
-rel="nofollow">CentOS</a>, can install GMOD software (chado databases,
+
 GBrowse, GMODWeb, etc) using the RPMs located at
 <a href="http://www.biopackages.net/" class="external free"
-rel="nofollow">http://www.biopackages.net/</a>. These can be installed
+
 using the
 <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater_Modified"
 class="external text" rel="nofollow">yum</a> installer tool. This
@@ -39,10 +39,10 @@ At the time of this writing (April 2007) complete RPMs for Fedora Core
 2, 5, and CentOS 4 are available, and supported architectures included
 32- and 64-bit Intel platforms. Check back regularly for updates at the
 <a href="http://biopackages.net" class="external text"
-rel="nofollow">Biopackages</a> website, you can view the build status
+
 for our RPMs
 <a href="http://biopackages.net/report" class="external text"
-rel="nofollow">here</a>. The platform tested for the GMOD community is
+
 CentOS 4 and we highly recommend using Biopackages on this distribution.
 
 # Preliminaries
@@ -105,9 +105,8 @@ print something similar to what is below:
 You can then install any RPM package available through Biopackages. For
 a list of RPMs please see the build status
 <a href="http://biopackages.net/report" class="external text"
-rel="nofollow">report</a>. You can also browse the repository directly
+
 <a href="http://biopackages.net/stable" class="external text"
-rel="nofollow">here</a>.
 
 There are many GMOD RPMs available including:
 
@@ -142,7 +141,6 @@ If the package you are interested in is not available or is out-of-date
 please consider becoming a Biopackages developer. More information can
 be found on our developers wiki at
 <a href="http://biopackages.wiki.sourceforge.net" class="external free"
-rel="nofollow">http://biopackages.wiki.sourceforge.net</a>.
 
 # Source vs. RPM Installs
 

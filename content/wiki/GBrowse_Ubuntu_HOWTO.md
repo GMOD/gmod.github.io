@@ -20,14 +20,10 @@ To install GBrowse on a recent Ubuntu distribution, just do this:
      sudo a2enmod cgid
      sudo service apache2 restart
 
-
 And then point your browser at
 <a href="http://localhost/gbrowse2" class="external free"
-rel="nofollow">http://localhost/gbrowse2</a>.
 
 The content below will be left in place for older distributions.
-
-
 
 - If you plan to use a MySQL database, you may need to install mysql
     sudo apt-get install mysql-server
@@ -160,8 +156,7 @@ you change your mind later, you can simply run the script again.
 When the installer is finished, you can browse the documentation and
 example database at
 <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a>.
 
 # Author
 
-[Lincoln Stein](/wiki/User%3ALstein) 12:36, 17 April 2007 (EDT)
+[Lincoln Stein](/wiki/User:Lstein) 12:36, 17 April 2007 (EDT)

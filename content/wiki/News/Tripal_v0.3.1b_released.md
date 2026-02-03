@@ -33,9 +33,6 @@ version 0.3.1b. The new release provides the following:
 
 Thanks to everyone who indicated problems and provided suggestions.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/08/29*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

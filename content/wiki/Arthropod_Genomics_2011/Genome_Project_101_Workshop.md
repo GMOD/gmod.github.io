@@ -26,15 +26,12 @@ June 9-12</p></td>
 </tbody>
 </table>
 
-
 This is the wiki page for the *Genome Project 101 Workshop* presented at
 [Arthropod Genomics
 2011](../Arthropod_Genomics_2011).
 
 This page serves as the slides for the workshop. It will be tidied up
 within a week of the end of the workshop.
-
-
 
   URL</span>](#The_One_True_URL)
 - [VMware
@@ -90,8 +87,6 @@ within a week of the end of the workshop.
 - [Remember
   ...](#Remember_...)
 
-
-
 # The One True URL
 
 Everything you need to know from this workshop can be found on this
@@ -114,7 +109,7 @@ locally on your system. See VMware for details.
 While we could install MAKER locally on this machine, it is nice to be
 able to make use of the web service provided by
 <a href="http://www.yandell-lab.org/" class="external text"
-rel="nofollow">Mark Yandell's</a> group at University of Utah. To use
+
 it, go to
 
      http://derringer.genetics.utah.edu/cgi-bin/MWAS/maker.cgi
@@ -173,22 +168,20 @@ BioMart or InterMine as time allows.
 
 We could run this analysis on the free public Galaxy server
 (<a href="http://usegalaxy.org" class="external free"
-rel="nofollow">http://usegalaxy.org</a>), or on the Galaxy that has been
+
 installed on our VMware image. Let's run it on our local install.
 
 *Note: Please don't run on the local install with me. The public server
 might be able to support 120 people doing this simultaneously. The local
 install won't.*
 <a href="http://gmodags.bx.psu.edu:8080/" class="external text"
-rel="nofollow">Galaxy</a>
 
 ### 2. What have we got?
 
 First load the GFF that MAKER produced into Galaxy
 
 **Get Data → Upload File → <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2011/AGS/3263.maker.output/3263.all.gff"
-class="external free"
-rel="nofollow">ftp://ftp.gmod.org/pub/gmod/Meetings/2011/AGS/3263.maker.output/3263.all.gff</a>
+
 → Execute**
 
 This uploads the GFF file into Galaxy. It recognizes it as a GFF3 file.
@@ -225,8 +218,6 @@ The SO type is in column 4 in BED.
 
 Repeat with CDS.
 
-
-
 ### 4. See what is in the exon set that is not in the CDS set
 
 **Operate on Genomic Intervals → Subtract**
@@ -241,7 +232,7 @@ We have one exon left. Go visualize it in GBrowse or JBrowse.
 
 This history has been run and saved on the
 <a href="http://usegalaxy.org" class="external text"
-rel="nofollow">public Galaxy instance</a>. Go to **Shared Data →
+
 Published Histories → AGS2011**. It has also been saved on the Galaxy
 instance on the VMware image under user gmodags (password same as user).
 
@@ -250,19 +241,17 @@ instance on the VMware image under user gmodags (password same as user).
 ## GBrowse
 
 We can go to <a href="http://localhost/cgi-bin/gb2/gbrowse/pythium"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/gbrowse/pythium</a> (or
+
 <a href="http://gmodags.bx.psu.edu/cgi-bin/gb2/gbrowse/pythium"
-class="external free"
-rel="nofollow">http://gmodags.bx.psu.edu/cgi-bin/gb2/gbrowse/pythium</a>
+
 during the workshop).
 
 ## [JBrowse](../JBrowse.1)
 
 Go to <a href="http://localhost/jbrowse" class="external free"
-rel="nofollow">http://localhost/jbrowse</a> (or
+
 <a href="http://gmodags.bx.psu.edu/jbrowse" class="external free"
-rel="nofollow">http://gmodags.bx.psu.edu/jbrowse</a> during the
+
 workshop).
 
 # VMware Image
@@ -467,11 +456,9 @@ BAM and FASTA files placed in /var/www/gbrowse2/databases/pythium/
 
 With all of the pieces in place, now we can go to
 <a href="http://localhost/cgi-bin/gb2/gbrowse/pythium"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/gbrowse/pythium</a> (or
+
 <a href="http://gmodags.bx.psu.edu/cgi-bin/gb2/gbrowse/pythium"
-class="external free"
-rel="nofollow">http://gmodags.bx.psu.edu/cgi-bin/gb2/gbrowse/pythium</a>
+
 during the workshop).
 
 ### JBrowse Installation
@@ -497,7 +484,7 @@ Setting up data:
 This gets the "reference sequence", that is, the contig we're working
 on. At this point, visiting the jbrowse url
 (<a href="http://gmodags.bx.psu.edu/jbrowse" class="external free"
-rel="nofollow">http://gmodags.bx.psu.edu/jbrowse</a>) would show an
+
 empty jbrowse user interface, though if you zoom all the way in, you'd
 see DNA residues.
 
@@ -510,9 +497,9 @@ predictions that were used and created in the MAKER analysis.
 
 Now that JBrowse has extracted all of the data, we can go to
 <a href="http://localhost/jbrowse" class="external free"
-rel="nofollow">http://localhost/jbrowse</a> (or
+
 <a href="http://gmodags.bx.psu.edu/jbrowse" class="external free"
-rel="nofollow">http://gmodags.bx.psu.edu/jbrowse</a> during the
+
 workshop).
 
 ### Installing Galaxy
@@ -556,7 +543,6 @@ sh run.sh
 
 And Galaxy is now installed and running. Goto
 <a href="http://localhost:8080" class="external free"
-rel="nofollow">http://localhost:8080</a>.
 
 # If time permits ...
 

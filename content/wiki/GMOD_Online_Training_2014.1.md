@@ -58,7 +58,6 @@ alt="WebApollo: browser-based annotation editor" />](/wiki/WebApollo.1)
 
 **Monday 19th May - Friday 23rd May 2014**
 
-
 GMOD Online Training offers an introduction to, and training in, the
 bioinformatics software offered by the Generic Model Organism Database
 project. Over five days, participants will learn about GMOD's free,
@@ -85,13 +84,11 @@ By the end of the course, participants will have hands-on experience of
 setting up and using core components needed for a modern genomics
 project. We will be awarding
 <a href="http://www.openbadges.org/" class="external text"
-rel="nofollow">Open Badges</a> for each session of the course that the
+
 attendees successfully complete.
 
 Applications for the course have now closed. We hope to run another
 online training course in late 2014 or early 2015.
-
-
 
 ## Details
 
@@ -102,8 +99,6 @@ Application deadline: 28th April 2014
 Venue: online only
 
 Cost and registration: \$50 (to be confirmed)
-
-
 
 ### Course Prerequisites
 

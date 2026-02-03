@@ -35,18 +35,14 @@ Conferences, Meetings, and Courses
 - BioInfoSummer 2010
 - NETTAB Workshop on Bio-wikis
 
-
 If you know of any upcoming events that are not on the calendar, please
 send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/10/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

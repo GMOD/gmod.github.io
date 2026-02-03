@@ -20,7 +20,7 @@ an individual who has, in his or her practice, promoted free and open
 access to the materials and methods used in the life sciences.
 
 This year's nominees include longtime GMOD contributor [Don
-Gilbert](../User%253ADongilbert), of Indiana University.
+Gilbert](../User:Dongilbert), of Indiana University.
 Other 2010 nominees are Alex Bateman, David J. Lipman, G.P.S. Raghava,
 and John Quakenbush. Previous winners of the BFA include
 <a href="http://www.bioinformatics.org/franklin/2003/"
@@ -37,12 +37,9 @@ your vote.* If you are not already a member you will need to
 class="external text" rel="nofollow">join</a>, but basic membership is
 free.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/04/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

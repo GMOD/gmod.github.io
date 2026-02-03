@@ -82,7 +82,6 @@ to our Redhat installation:
 
     /etc/postgresql/8.1/main
 
-
 I opted to install the CPAN modules instead of the Debian packages as
 some of the Debian packages have older versions of the modules. The
 modules are installed in
@@ -142,8 +141,6 @@ into /usr/local/bioperl/bioperl-live (as root)
     ./Build test   #some tests fail as usual
     sudo ./Build install
 
-
-
 ### Environment Variables
 
 Added this to my .bashrc so that when I login as user gmod all vars are
@@ -158,7 +155,6 @@ set
     export CHADO_DB_PASSWORD=******
     #CHADO_DB_HOST=localhost
     #CHADO_DB_PORT=5432
-
 
 === installing Chado scheme and tools
 
@@ -258,8 +254,6 @@ taken from RefSeq howto --\> does not load in the database
 
      bp_genbank2gff3.pl --summary --typesource chromosome -noCDS --filter exon -o . NC_004567.gbk
 
-
-
 #### What works
 
 taken from GenBank howto --\> does load in the database
@@ -295,8 +289,6 @@ Load into the database with:
 Note: one could use the following options for the bp_genbank2gff3.pl
 script: --typesource chromosome --typesource plasmid etc, as long as it
 is a valid SO type.
-
-
 
 ### Gbrowse configuration
 

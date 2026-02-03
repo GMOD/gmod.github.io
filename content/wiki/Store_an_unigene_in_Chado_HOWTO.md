@@ -20,7 +20,7 @@ We have an EST set. We have done a clustering and an assembly, so we
 have now a set of contigs (assemblies composed by more than one EST) and
 singletons (composed by just one EST). In the
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence ontology</a> an EST is the term <a
+
 href="http://www.sequenceontology.org/miso/current_cvs/term/SO:0000345"
 class="external text" rel="nofollow">EST</a> (SO:0000345) ('A tag
 produced from a single sequencing read from a cDNA clone or PCR product;
@@ -32,7 +32,7 @@ and EST2 are related, so they belong to the same unigene. But an unigene
 does not have any information about how these ESTs are aligned and
 assembled. In the
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence ontology</a> the unigene is named <a
+
 href="http://www.sequenceontology.org/miso/current_cvs/term/SO:0001457"
 class="external text" rel="nofollow">transcribed_cluster</a>
 (SO:0001457) ('A region defined by a set of transcribed sequences from
@@ -125,7 +125,7 @@ The feature relationships (feature graph).
 A unigene_cluster is a subtype of transcribed_cluster and represents a
 specific clustering methodology used by the NCBI to produce UniGenes
 (<a href="http://www.ncbi.nlm.nih.gov/unigene" class="external free"
-rel="nofollow">http://www.ncbi.nlm.nih.gov/unigene</a>). If the
+
 clustering algorithm used was not Unigene you would use
 transcribed_cluster.
 

@@ -8,12 +8,12 @@ height="123" alt="TopoView from FlyBase" />](https://raw.githubusercontent.com/G
 
 [TopoView](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf) is
 a [GBrowse](../GBrowse.1) glyph created by Victor Strelets at
-[FlyBase](../Category%253AFlyBase) to show large amounts
+[FlyBase](../Category:FlyBase) to show large amounts
 of quantitative data in limited screen space. TopoView does this with a
 3D plot, showing each new set of data just below and offset from the
 previous data set. It was developed to display RNA-Seq data.
 
-[Josh Goodman](../User%253AJogoodma)
+[Josh Goodman](../User:Jogoodma)
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf"
 class="internal" title="Flybase topoview.pdf">presented</a> TopoView at
 the [January 2010 GMOD
@@ -31,17 +31,14 @@ before it is ready for production.
 If you are interested in helping get this glyph production ready and in
 the released glyph set, then please
 <a href="mailto:strelets@aardwolf.bio.indiana.edu" class="external text"
-rel="nofollow">contact Victor</a>. He is looking for folks to help get
+
 this out there.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/09/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

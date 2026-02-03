@@ -4,9 +4,8 @@ title: "News/modENCODE & Gramene Openings"
 # News/modENCODE & Gramene Openings
 
 The <a href="http://www.modencode.org" class="external text"
-rel="nofollow">modENCODE</a> and
+
 <a href="http://www.gramene.org" class="external text"
-rel="nofollow">Gramene</a> projects are both hiring.
 
 <span style="font-size:120%">**modENCODE**</span>
 
@@ -16,9 +15,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="148" alt="modENCODE Project Openings" /></a>
 
 <a href="http://www.modencode.org" class="external text"
-rel="nofollow">modENCODE</a> is
+
 <a href="http://blog.modencode.org/?p=350" class="external text"
-rel="nofollow">looking for a few consultants</a>. The project's aim is
+
 to discover and explore the genomes of *C. elegans* and *D.
 melanogaster*, using new scientific strategies and new technologies for
 discovery.
@@ -34,10 +33,9 @@ collaborative environment.
 
 Please see the
 <a href="http://blog.modencode.org/?p=350" class="external text"
-rel="nofollow">complete job description</a> for details.
 
 <a href="http://www.modencode.org" class="external text"
-rel="nofollow">modENCODE</a> is a power GMOD user. The project uses
+
 [GBrowse](../GBrowse.1),
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
 [InterMine](../InterMine),
@@ -48,7 +46,6 @@ at the [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting) for
 some details on how they are used.)
 
-
 <span style="font-size: 120%">**Gramene**</span>
 
 <a href="http://news.gramene.org/" rel="nofollow"
@@ -57,9 +54,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="58" alt="Grameene Project Opening" /></a>
 
 <a href="http://www.gramene.org" class="external text"
-rel="nofollow">Gramene</a> has
+
 <a href="http://news.gramene.org/?p=392" class="external text"
-rel="nofollow">several bioinformatics openings</a> in the
+
 <a href="http://www.science.oregonstate.edu/bpp/faculty/jaiswal/"
 class="external text" rel="nofollow">Jaiswal lab</a> at Oregon State
 University.
@@ -73,11 +70,7 @@ projects. Gramene is a long-time GMOD user and is the home of the
 [CMap](../CMap.1) comparative map viewer.
 
 See <a href="http://news.gramene.org/?p=392" class="external text"
-rel="nofollow">the position announcement</a> for full details.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -62,7 +62,7 @@ GFF and is sometimes referred to as GFF2.5.
 The <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">formal specification of GFF3</a> is
 on the <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence Ontology</a> web site. It completely describes
+
 the format, including column definitions, metadata and directives. It
 also contains lengthy sections explaining how to represent different
 situations in GFF3, including:
@@ -225,8 +225,7 @@ The alignment of the feature to the target if the two are not collinear
 (e.g. contain gaps). The alignment format is taken from the CIGAR format
 described in the Exonerate documentation. <a
 href="http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=Ensembl"
-class="external free"
-rel="nofollow">http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=Ensembl</a>).
+
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
@@ -518,5 +517,3 @@ your sequences in a separate file containing only FASTA entries.
 ## GFF3 Validation
 
 You can validate reasonably large GFF3 files at the following sites:
-
-- [Tutorials](/wiki/Category%3ATutorials)

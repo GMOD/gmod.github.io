@@ -23,7 +23,7 @@ width="373" height="373" alt="GoogleSummer 2016logo.jpg" />](/wiki/GSoC)
 ## Google Summer of Code 2026 @ Open Genome Informatics
 
 **<a href="https://summerofcode.withgoogle.com/" class="external text"
-rel="nofollow">Google Summer of Code</a>** is a global program that
+
 offers students, developers, and other contributors stipends to write
 code for various open-source software projects. We work with many
 open-source, free software, and technology-related groups to identify
@@ -42,7 +42,6 @@ software development. The length of the projects is 90, 175, and
 350-hours, and there is an option to extend the program from the
 standard 12 weeks up to 22 weeks. (*Excerpt from the
 <a href="https://summerofcode.withgoogle.com/" class="external text"
-rel="nofollow">Google Summer of Code website</a>*)
 
 Since 2011, the Open Genome Informatics group has served as an "umbrella
 organization" to a variety of bioinformatics projects, including
@@ -51,15 +50,14 @@ organization" to a variety of bioinformatics projects, including
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [Galaxy](/wiki/Galaxy.1) etc.;
 <a href="http://www.informatics.jax.org/" class="external text"
-rel="nofollow">Mouse Genome Informatics</a>;
+
 <a href="https://oicr.on.ca/research-portfolio/" class="external text"
-rel="nofollow">OICR</a>;
+
 <a href="http://www.reactome.org" class="external text"
-rel="nofollow">Reactome</a>;
+
 <a href="http://www.wormbase.org" class="external text"
-rel="nofollow">WormBase</a>; and
+
 <a href="https://bioconda.github.io/" class="external text"
-rel="nofollow">Bioconda</a>.
 
 **More information about this year's participating bioinformatics groups
 can be found [here](/wiki/GSOC_Groups).**

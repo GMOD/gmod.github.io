@@ -89,23 +89,20 @@ These include the following:
 
 The primary Community Support staff is located at and managed by
 <a href="http://www.nescent.org" class="external text"
-rel="nofollow">NESCent</a>, as the result of a collaboration between
+
 GMOD and NESCent. One of NESCent's goals is to promote the adoption of
 GMOD for data management, analysis, and visualization needs for the
-genome-scale information being generated in [evolutionary
-research](/wiki/Category%3AEvolution), in particular for
+genome-scale information being generated in , in particular for
 emerging model organisms. This initiative includes extending the
 functionality of GMOD tools for evolutionary applications, particularly
 in the areas of managing and visualizing information about genotypic
-variation, [phenotypic
-variation](/wiki/Category%3APhenotypes), and
+variation, , and
 phylogenetics.
 
 ## Please share your feedback
 
 The Community Support staff needs your feedback to help guide their
 priorities. Please <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">contact the support staff</a> if:
 
 - You have a suggestion for a tutorial topic.
 - You are interested in attending a tutorial either at a conference or
@@ -122,43 +119,43 @@ rel="nofollow">contact the support staff</a> if:
 
 The GMOD Community Support began as a collaboration between GMOD and the
 <a href="http://www.nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center</a> (NESCent), and
+
 was initially managed by NESCent.
 
 <a href="http://www.bioperl.org/wiki/Brian" class="extiw"
 title="bp:Brian">Brian Osborne</a> started the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk) in 2006 and, among other things,
 created this wiki. In 2007 [Dave
-Clements](/wiki/User%3AClements) took over, who held the
+Clements](/wiki/User:Clements) took over, who held the
 position until the end of 2010 (when he moved to the
 [Galaxy](/wiki/Galaxy.1) project). [Amelia
-Ireland](/wiki/User%3AGirlwithglasses) was Community
+Ireland](/wiki/User:Girlwithglasses) was Community
 Support Specialist from July 2012 to May 2014, when grant funding ran
 out.
 
 Some community support functions are also provided by several other
 members of the GMOD community, notably [Scott
-Cain](/wiki/User%3AScott), the GMOD Project Coordinator.
+Cain](/wiki/User:Scott), the GMOD Project Coordinator.
 
 The GMOD Help Desk was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
 class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a> under
 <a href="http://biowiki.org/IanHolmes" class="external text"
-rel="nofollow">Ian Holmes</a> and <a
+
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7237890&amp;p_grant_num=5U24GM077905-02&amp;p_query=&amp;ticket=55662137&amp;p_audit_session_id=288899622&amp;p_keywords="
 class="external text" rel="nofollow">NIH grant 5U24GM077905-02</a> under
 <a href="http://hulab.tamu.edu/" class="external text"
-rel="nofollow">Jim Hu</a>. Brian's work was funded by a
+
 <a href="http://www.ars.usda.gov/" class="external text"
-rel="nofollow">USDA ARS</a> grant under
+
 <a href="http://www.ars.usda.gov/pandp/docs.htm?docid=11095"
 class="external text" rel="nofollow">Doreen Ware</a>. We thank
 <a href="http://pages.uoregon.edu/pphil/" class="external text"
-rel="nofollow">Patrick Phillips</a> and
+
 <a href="http://creskolab.uoregon.edu/" class="external text"
-rel="nofollow">Bill Cresko</a> of the
+
 <a href="http://ie2.uoregon.edu/" class="external text"
 rel="nofollow">Institute of Ecology and Evolution (IE<sup>2</sup>)</a>
 at the <a href="http://uoregon.edu" class="external text"
-rel="nofollow">University of Oregon</a> for hosting Dave Clements during
+
 his 3 years.

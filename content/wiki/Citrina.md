@@ -9,8 +9,6 @@ title: "Citrina"
 
 See [Status](#Status) below for more information.
 
-
-
   Status](#Status)
 - [Description](#Description)
 - [Requirements](#Requirements)
@@ -27,7 +25,7 @@ had hoped to get back to Citrina. However, my other priorities, namely
 family and work, have left little time for extracurricular coding. Until
 I find time to revisit this project I suggest you try BioMaj
 (<a href="http://biomaj.genouest.org/" class="external free"
-rel="nofollow">http://biomaj.genouest.org/</a>). This is a fork of
+
 Citrina 0.5.1 and it looks like they have done a nice job tweaking and
 reinventing it based on the feature list.
 
@@ -50,8 +48,6 @@ between organism sites and automatically populate the postgres database
 via Ant's SQL tasks. Ant can also execute external scripts so Citrina
 can take advantage of any existing processing tools that you have
 already developed.
-
-
 
 ## Requirements
 
@@ -80,14 +76,10 @@ Citrina has only been tested on Redhat Linux 9, Solaris 2.8, and SuSe
 been tested. It will not run on Windows due to its unique use of
 symbolic links.
 
-
-
 ## Documentation
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Citrina-userguide.pdf"
 class="internal" title="Citrina-userguide.pdf">Citrina-userguide.pdf</a>
-
-
 
 ## Downloads
 
@@ -99,17 +91,13 @@ class="external text" rel="nofollow">citrina-0.5.1.tar.gz</a>
 href="http://prdownloads.sourceforge.net/gmod/citrina-0.5.1-src.tar.gz?download"
 class="external text" rel="nofollow">citrina-0.5.1-src.tar.gz</a>
 
-
-
 ## Mailing List
 
 <a
 href="http://sourceforge.net/mailarchive/forum.php?forum=gmod-citrina"
 class="external text" rel="nofollow">Citrina discussion list</a>
 
-
-
 ## Contact
 
-[Josh Goodman](/wiki/User%3AJogoodma) (jogoodma A\*T indiana
+[Josh Goodman](/wiki/User:Jogoodma) (jogoodma A\*T indiana
 D\*O\*T edu )

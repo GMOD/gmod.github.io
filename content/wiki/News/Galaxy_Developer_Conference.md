@@ -44,12 +44,9 @@ href="http://meetings.cshl.edu/meetings/meetingsregistration_galaxy10.asp"
 class="external text" rel="nofollow">register now</a> if you are
 interested in using and extending [Galaxy](../Galaxy.1).
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/12/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

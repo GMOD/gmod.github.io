@@ -28,12 +28,9 @@ href="http://projects.eml.org/sdbv/events/BiocurationMeeting/registration.html"
 class="external text" rel="nofollow">registration</a> **ends in two
 days** (on 20 February, 2009).
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/02/18*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

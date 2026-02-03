@@ -5,7 +5,6 @@ title: "News/ISGA 1.3.2 Released"
 
 [ISGA](../ISGA) 1.3.2 is now
 <a href="https://sourceforge.net/projects/isga/" class="external text"
-rel="nofollow">available for download</a>.
 
 With this release, we have moved our development and downloads to
 SourceForge. For the time being,
@@ -36,9 +35,8 @@ ISGA available for download -
 
 Cheers,
 
-[Chris Hemmerich](../User%253AChemmeri)
+[Chris Hemmerich](../User:Chemmeri)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/06/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

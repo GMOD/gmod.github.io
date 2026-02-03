@@ -31,6 +31,4 @@ join the <a href="http://groups.google.com/group/genome-informatics"
 class="external text" rel="nofollow">Genome Informatics GSoC mailing
 list</a>.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2013/04/24*

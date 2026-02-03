@@ -8,8 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/600px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/800px-GitcLogo.png 2x"
 width="400" height="229" alt="GMOD in the Cloud" />
 
-GMOD in the Cloud is a [GMOD virtual
-server](/wiki/Category%3AGMOD_virtual_server)
+GMOD in the Cloud is a
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo
 or WebApollo**. Setting up a GMOD in the Cloud instance is quick and
@@ -19,8 +18,6 @@ provides an excellent way to assess GMOD components without having to do
 any installation; for longer-term uses, the virtual server can be kept
 running as long as required, and data can easily be moved when new
 versions of GMOD in the Cloud are released.
-
-
 
   in the Cloud</span>](#What.27s_in_GMOD_in_the_Cloud)
 - [Where to find
@@ -87,7 +84,6 @@ width="200" height="55" alt="WebApollo logo" />](/wiki/WebApollo.1)
 11/22/2013
 
 <a href="http://cloud.gmod.org" class="external text"
-rel="nofollow">Visit a GMOD in the Cloud demo server</a>
 
 ## Where to find GMOD in the Cloud
 
@@ -113,11 +109,10 @@ While GMOD in the Cloud 2.0 will run as a micro instance, it won't run
 well. Specifically, running GBrowse with FastCGI will have a hard time,
 and WebApollo won't work at all. The demo instance running at
 <a href="http://cloud.gmod.org/" class="external text"
-rel="nofollow">cloud.gmod.org</a> is a small instance.
 
 #### Build information
 
-[Scott](/wiki/User%3AScott) has fairly extensive notes on the
+[Scott](/wiki/User:Scott) has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in the
 Cloud. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
@@ -132,8 +127,6 @@ should be kept in the `data` partition to make backup and updates easy.
 
 Step-by-step instructions for starting up GMOD in the Cloud can be found
 at the [GMOD Cloud Tutorial](/wiki/GMOD_Cloud_Tutorial).
-
-
 
 ### Directory Structure
 
@@ -155,7 +148,7 @@ replaced by symlinks, so changes made to the files noted below are
 picked up as if the files were in their original locations. If you need
 other files moved to the `data` partition, please
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">email the GMOD developers list</a> so that we can
+
 incorporate the changes into future iterations of GMOD in the Cloud.
 
 |----|----|
@@ -226,8 +219,6 @@ the Chado schema before the public schema; this account should be used
 for tools that interact with Chado (e.g. GBrowse, Tripal, and any
 command line tools from GMOD).
 
-
-
 ### Drupal
 
 Version: 6.28
@@ -242,13 +233,11 @@ Web URL: ec2-##-##-##-##.compute-1.amazonaws.com/
 
 When navigating with a web browser to the Apache document root (i.e.,
 <a href="http://127.0.0.1/" class="external free"
-rel="nofollow">http://127.0.0.1/</a> or the IP address of your server),
+
 you will get the Drupal home page.
 
 New modules can be added at `/data/var/www/sites/default/modules` and
 new themes can be added at `/data/var/www/sites/default/themes`.
-
-
 
 ### Tripal
 
@@ -258,8 +247,6 @@ Source: [Tripal](/wiki/Tripal.1) svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
-
-
 ### Chado
 
 Version: 1.23
@@ -268,21 +255,16 @@ Tripal was used to install the Chado 1.23 database schema and load
 ontologies and a GFF file containing yeast genome annotations from SGD
 (source: <a
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
-class="external free"
-rel="nofollow">http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff</a>),
+
 as well as a sample GFF contig file output from [MAKER](/wiki/MAKER.1)
 for the *Pythium ultimum* (source:
 <a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
-class="external free"
-rel="nofollow">http://icebox.lbl.gov/webapollo/data/pyu_data.tgz</a>).
 
 The Chado software package is in the home directory, ~/sources/chado,
 and was used to install many utility scripts via the standard
 installation method for Perl modules
 (`perl Makefile.PL; make; sudo make install`). This checkout can be
 updated with "svn update" like the Tripal svn checkout.
-
-
 
 ### GBrowse2
 
@@ -294,7 +276,7 @@ config files for the demo data: yeast: `07.chado.conf`; *P. ultimum*:
 
 GBrowse is configured to use
 <a href="https://httpd.apache.org/mod_fcgid/" class="external text"
-rel="nofollow">fcgid</a>, a web server add-on that helps speed up
+
 GBrowse. To use it, your GBrowse URLs should look like this:
 
        ec2-##-##-##-##.compute-1.amazonaws.com/fgb2/gbrowse/yeast
@@ -304,14 +286,11 @@ GBrowse at
 
        ec2-##-##-##-##.compute-1.amazonaws.com/cgi-bin/gb2/gbrowse/yeast
 
-
-
 ### JBrowse
 
 Version: 1.10.12
 
 Source: <a href="http://jbrowse.org" class="external text"
-rel="nofollow">JBrowse website</a>
 
 Installation dir: `/var/www/jbrowse`
 
@@ -329,8 +308,6 @@ JBrowse was configured to have multiple datasets using the
 jbrowse_conf.json file as described in the [JBrowse configuration
 guide](/wiki/JBrowse_Configuration_Guide#Dataset_Selector).
 This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
-
-
 
 ### WebApollo
 

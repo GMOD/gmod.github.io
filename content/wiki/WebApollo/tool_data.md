@@ -43,21 +43,19 @@ The features of WebApollo include:
 
 The public demo can be accessed at:
 <a href="http://genomearchitect.org/WebApolloDemo" class="external free"
-rel="nofollow">http://genomearchitect.org/WebApolloDemo</a> (_Bos
+
 taurus_ genome).
 
 \| screenshot = \| public_server = \| dl = \| dl_url =
 <a href="http://genomearchitect.org/webapollo/releases/"
-class="external free"
-rel="nofollow">http://genomearchitect.org/webapollo/releases/</a> \|
+
 dl_src =
 <a href="https://github.com/berkeleybop/jbrowse" class="external text"
-rel="nofollow">JBrowse client source on github</a>
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
-- [Webapollo](../Category%253AWebapollo)
-- [Annotation](../Category%253AAnnotation)
-- [Tool data](../Category%253ATool_data)
+  Cloud](../Category:GMOD_in_the_Cloud)
+- [Webapollo](../Category:Webapollo)
+- [Annotation](../Category:Annotation)
+- [Tool data](../Category:Tool_data)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
+  Components](../Category:GMOD_Components)

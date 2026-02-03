@@ -144,8 +144,6 @@ has more info on how this works (and when it doesnt), plus you can
 download the appropriate code (javascript) to test for the plugin and
 provide appropriate alternative text/content as required).
 
-
-
 ### Demos
 
 Flash/Javascript interaction MouseOver Demos
@@ -183,8 +181,6 @@ tag and insert it on one of your own pages. You can create your own
 static annotation XML files or create a CGI/JSP script that retrieves
 the data from a database. Details of the various file formats are given
 below.
-
-
 
 ### Input Parameters
 
@@ -308,8 +304,7 @@ used to select 1000 to 5000bp on chromosome 1, the final URL will look
 like:
 <p><a
 href="http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr1:1000..5000"
-class="external free"
-rel="nofollow">http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr1:1000..5000</a></p>
+
 <p>The part in purple comes from the browserURL value, the part in bold
 is added to the end of the URL to complete the browser URL. %26 is used
 to escape the ampersand present in the UCSC URL otherwise it interferes
@@ -317,8 +312,6 @@ with the ampersands delimiting the various FlashVars parameters.</p></td>
 </tr>
 </tbody>
 </table>
-
-
 
 ### The BaseMap
 
@@ -328,8 +321,7 @@ scripts directory that takes the cytoBandIdeo files produced by UCSC and
 converts them to the GViewer baseMap XML format. If this data is
 available you can find the appropriate UCSC file by going to
 <a href="http://hgdownload.cse.ucsc.edu/downloads.html"
-class="external free"
-rel="nofollow">http://hgdownload.cse.ucsc.edu/downloads.html</a>, find
+
 your organism, find the annotation database and then see if there is a
 cytoBandIdeo.txt.gz file.
 
@@ -396,11 +388,8 @@ The baseMap XML format looks like this:
  </genome>
 ```
 
-
 The XML elements in this file are as follows, I've used @xxxx to
 indicate attributes of elements
-
-
 
 | XML Element | description |
 |----|----|
@@ -416,7 +405,6 @@ indicate attributes of elements
 | color | Flash hex representation of the band color (begins with 0x rather than a \#), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap. |
 | stain | Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below. |
 
-
 **Stain abbreviations and colors**
 
 | Stain Abbreviation | Hex Color | Swatch |
@@ -430,17 +418,13 @@ indicate attributes of elements
 
 The following base maps are provided in the standard distribution.
 
-
 **Basic Genome Maps**
 
 | Base Map File | Map Description | External Links |
 |----|----|----|
 | rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text" |
-rel="nofollow">UCSC Genome Browser</a> | rgd_rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://rgd.mcw.edu" class="external text" rel="nofollow">RGD
-Genome Browser</a> | mouse_ideo.xml | Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
-rel="nofollow">UCSC Genome Browser</a> | human_ideo.xml | Human genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
-rel="nofollow">UCSC Genome Browser</a> | celegans_ideo.xml | C. elegans genome, no bands. | No |
 
+Genome Browser</a> | mouse_ideo.xml | Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
 
 **Comparative Maps (Synteny data from RGD VCMap SEQBASD v1.0)**
 
@@ -452,8 +436,6 @@ rel="nofollow">UCSC Genome Browser</a> | celegans_ideo.xml | C. elegans genome, 
 | rat-mouse_synteny.xml | Rat genome with bands corresponding to syntenic regions in Mouse | No |
 | mouse-rat_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Rat | No |
 | mouse-human_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Human | No |
-
-
 
 ### The Annotation Data
 
@@ -487,8 +469,6 @@ The annotation XML format looks like this:
       <link>http://rgd.mcw.edu/showReport.cgi?id=12345</link>
      </feature>
     </genome>
-
-
 
 <table class="wikitable">
 <colgroup>
@@ -538,8 +518,6 @@ gene report when they click on a gene</td>
 </tr>
 </tbody>
 </table>
-
-
 
 ### Web Interface & CGI script
 
@@ -620,8 +598,6 @@ this and could be pasted into the form or uploaded as a text file:
     7 10150087 10150087 gene Abc1 http://rgd.mcw.edu/showReport.cgi?id=45678
     6 20150087 40150087 qtl Bp123 http://rgd.mcw.edu/showReport.cgi?id=12345
 
-
-
 ### Javascript - Flash Connectivity
 
 It is possible to use javascript to control basic functions in the flash
@@ -638,14 +614,11 @@ included in the GViewer distribution so no further installation is
 necessary. Currently the following functions are available for control
 via Javascript.
 
-
-
 | Flash function | Function description |
 |----|----|
 | setHighlight(featureName) | Turns on the highlight and label for the feature with the label 'featureName' |
 | unsetHighlight(featureName) | Turns off the highlight and label for the feature with the label 'featureName' |
 | getAnnotationData(format) | Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc. |
-
 
 To call these functions using Javascript, a few changes are required in
 the web page containing the flash movie:
@@ -695,8 +668,6 @@ and the user moves the mouse quickly from one to the other).
 
 Current Solution - Moving the mouse on and off the link a few times
 should make the highlight go away.
-
-
 
 ### Known Issues
 

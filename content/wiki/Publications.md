@@ -3,7 +3,6 @@ title: "Publications"
 ---
 # Publications
 
-
 The following is a partial listing of publications/references describing
 GMOD components or databases and applications built using GMOD
 components. For a list of databases see [GMOD
@@ -26,9 +25,8 @@ papers recently added to the GMOD Mendeley group.
 Sorted by PubMed ID, highest (most recent) first. This listing is
 compatible with the
 <a href="http://www.mendeley.com" class="external text"
-rel="nofollow">Mendeley web importer</a> and has embedded
+
 <a href="http://en.wikipedia.org/wiki/COinS" class="external text"
-rel="nofollow">COiNs bibliographic data</a>.
 
 - Canto: An online tool for community literature curation
   DOI:10.1093/bioinformatics/btu103
@@ -323,10 +321,6 @@ rel="nofollow">COiNs bibliographic data</a>.
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/1599-1.pdf" class="internal"
   title="1599-1.pdf">PDF</a>
 
-
-
-
-
 ## Adding Citations
 
 Enter them into the **Articles** section. References are ordered by
@@ -336,6 +330,5 @@ the appropriate place in the list.
 Example:
 
      <ref name=PMID:15752432/>
-
 
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

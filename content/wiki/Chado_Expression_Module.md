@@ -32,7 +32,7 @@ data.
 
 Here is an example of a simple case of the sort of data that
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> curates. The *dpp* transcript is expressed in
+
 embryonic stage 13-15 in the cephalic segment as reported in a
 <a href="http://flybase.bio.indiana.edu/reports/FBrf0053806.html"
 class="external text" rel="nofollow">paper by Blackman <em>et al.</em>
@@ -61,7 +61,6 @@ Note that we would change the *cvterm_type* column to *cvterm_type_id*
 and use a *cvterm_id* for a particular expression slot (i.e. stage,
 anatomy, assay, 'subcellular location' and that cvterms from different
 <a href="http://www.obofoundry.org" class="external text"
-rel="nofollow">OBO</a> ontologies can share the same *cvterm_type*.
 
 ### Mage and Expression
 
@@ -135,8 +134,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: expression
 
 The expression table is essentially a bridge table.
@@ -159,8 +156,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: expression_cvterm
 
 | F-Key | Name | Type | Description |
@@ -179,8 +174,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: expression_image
 
 | F-Key | Name | Type | Description |
@@ -193,8 +186,6 @@ expression_image Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: expression_pub
 
 | F-Key | Name | Type | Description |
@@ -206,8 +197,6 @@ expression_image Structure
 expression_pub Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: feature_expression
 

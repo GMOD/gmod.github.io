@@ -10,20 +10,17 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="70" height="94" alt="BioPerl Podcast" /></a>
 
 A <a href="http://twit.tv/floss96" class="external text"
-rel="nofollow">podcast on the BioPerl project</a> is available at
+
 <a href="http://twit.tv/FLOSS" class="external text"
-rel="nofollow">FLOSS Weekly</a>. It's about an hour long and it's a good
+
 introduction to [BioPerl](../BioPerl), a set of libraries that
 many popular [GMOD Components](../GMOD_Components) are
 built upon. The podcast is an interview with BioPerl heavy hitters
-[Chris Fields](../User%253ACjfields) and [Jason
-Stajich](../User%253AStajich).
+[Chris Fields](../User:Cjfields) and [Jason
+Stajich](../User:Stajich).
 
-[Dave Clements](../User%253AClements)
-
-
+[Dave Clements](../User:Clements)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

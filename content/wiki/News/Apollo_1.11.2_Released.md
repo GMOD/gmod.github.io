@@ -9,15 +9,11 @@ some [GFF3](../GFF3) and
 issues. As usual, you can get the most current version of Apollo at:
 
 <a href="http://apollo.berkeleybop.org/current/" class="external free"
-rel="nofollow">http://apollo.berkeleybop.org/current/</a>
 
 Cheers,
 
-[Ed Lee](../User%253AElee)
-
-
+[Ed Lee](../User:Elee)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

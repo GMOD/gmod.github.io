@@ -22,9 +22,5 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="is open source" /></a>
 
 <a href="http://opensource.org/licenses/GPL-3.0" class="external text"
-rel="nofollow">GPL 3.0</a>
 
 Resources
-
-- [GMOD Component](/wiki/Category%3AGMOD_Component)
-- [Annotation](/wiki/Category%3AAnnotation)

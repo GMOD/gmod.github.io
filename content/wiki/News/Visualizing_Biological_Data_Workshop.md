@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Visualizing Biological Data (VizBi)" /></a>
 
 The first <a href="http://www.vizbi.org/" class="external text"
-rel="nofollow">EMBO Workshop on Visualizing Biological Data (VizBi)</a>
+
 will be held 3-5 March 2010, at the
 <a href="http://www.embl.de/training/eicat/atc/index.html"
 class="external text" rel="nofollow">EMBL Advanced Training Centre</a>
@@ -30,9 +30,6 @@ slide). To apply to join the workshop, please
 an abstract and image</a> related to your work. Submissions close on 16
 November 2009.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/21*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

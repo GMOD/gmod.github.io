@@ -35,7 +35,7 @@ We collaborated with the
 <a href="http://www.linnbenton.edu/go/graphic-arts"
 class="external text" rel="nofollow">Graphic Arts Department</a> of
 <a href="http://www.linnbenton.edu/" class="external text"
-rel="nofollow">Linn-Benton Community College (LBCC)</a> in Albany,
+
 Oregon, as part of an advanced graphic design course offered in Spring
 quarter 2010.
 

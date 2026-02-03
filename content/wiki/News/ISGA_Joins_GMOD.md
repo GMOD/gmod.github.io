@@ -18,9 +18,9 @@ development.
 
 A public instance of ISGA is available at
 <a href="http://isga.cgb.indiana.edu" class="external free"
-rel="nofollow">http://isga.cgb.indiana.edu</a>. ISGA is also available
+
 <a href="http://cgb.indiana.edu/downloads/6" class="external text"
-rel="nofollow">for download</a> and has a
+
 <a href="http://sourceforge.net/mail/?group_id=295836"
 class="external text" rel="nofollow">mailing list</a> and
 <a href="http://wiki.cgb.indiana.edu/display/brp/Development+Blog"
@@ -37,11 +37,8 @@ community members interested in contributing should join the
 <a href="http://sourceforge.net/mail/?group_id=295836"
 class="external text" rel="nofollow">mailing list</a>.
 
-[Chris Hemmerich](../User%253AChemmeri)
-
-
+[Chris Hemmerich](../User:Chemmeri)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/08/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

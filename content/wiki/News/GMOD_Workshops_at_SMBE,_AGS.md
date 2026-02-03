@@ -74,18 +74,15 @@ this optional workshop, but registration is requested.</p></td>
 </tbody>
 </table>
 
-Please let [Dave](../User%253AClements) (SMBE) or
-[Scott](../User%253AScott) (AGS) know if you have any questions
+Please let [Dave](../User:Clements) (SMBE) or
+[Scott](../User:Scott) (AGS) know if you have any questions
 about the workshops.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/04/09*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

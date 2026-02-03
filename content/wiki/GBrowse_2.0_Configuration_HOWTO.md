@@ -635,8 +635,6 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-
-
     [gene:details]
     Translation = sub {
                    my $value = shift;
@@ -712,7 +710,7 @@ automated scripts to discover the species, genomic build, the name of
 the maintainer, and other descriptive information about the data source.
 The information is compatible with the
 <a href="http://www.dasregistry.org/" class="external text"
-rel="nofollow">DAS Registration server</a> and in a coming GBrowse
+
 release will allow GBrowse instances to automatically register
 themselves so that users and automated scripts can easily find and
 extract information from the browser.
@@ -772,7 +770,6 @@ This provides an example range for new users to look at.
 **-species**,**-taxid**
 These indicate the species name (in long binomial format) and the
 <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/" class="external text"
-rel="nofollow">NCBI taxon id</a>.
 
 Note that the support for automatic registration and discovery of
 GBrowse data sources is not available in the 2.00 release, but is

@@ -26,7 +26,6 @@ title="August 2009 GMOD Meeting">Community Meeting</a></span></p></td>
 </tbody>
 </table>
 
-
 The ***2009 GMOD Summer School - Europe*** was held 3-6 August in
 Oxford, UK. Like the [2008 GMOD Summer
 School](/wiki/2008_GMOD_Summer_School), this course
@@ -285,17 +284,9 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 
 | Instructor | GMOD Contribution | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](/wiki/User%3ATimCarver) | [Artemis](/wiki/Artemis) lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](/wiki/User%3ASyedHaider) | [BioMart](/wiki/BioMart) developer | <a href="http://www.ebi.ac.uk/" class="external text"
-rel="nofollow">European Bioinformatics Institute</a> | Ian Holmes | [JBrowse](/wiki/JBrowse.1) PI | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [Robin Houston](/wiki/User%3ARobinHouston) | [Artemis](/wiki/Artemis) manager | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Ed Lee](/wiki/User%3AElee) | Lead [Apollo](/wiki/Apollo.1) developer | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | Lead [GBrowse_syn](/wiki/GBrowse_syn.1) developer, [GBrowse](/wiki/GBrowse.1) developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User%3ABuggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
-rel="nofollow">Wellcome Trust Sanger Institute</a> | [Junjun Zhang](/wiki/User%3AJunjun) | [BioMart](/wiki/BioMart) developer | <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">OICR</a> |
+| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
+
+Spring Harbor Laboratory</a> | [Giles Velarde](/wiki/User:Buggy) | Developer | <a href="http://www.sanger.ac.uk/" class="external text"
 
 ## Prerequisites
 
@@ -321,7 +312,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="26" alt="VMware" /></a> *Participants are required to bring
 their own laptops, already capable of running a
 <a href="http://www.vmware.com" class="external text"
-rel="nofollow">VMware</a> system image.*
 
 The course started with getting a VMware image built specifically for
 the course up and running on your machine. We then built upon that image
@@ -337,14 +327,10 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
-
-
 
 VMware on Mac OS X
 
@@ -355,11 +341,8 @@ Intel processor is a requirement for all the packages discussed below.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
 
-There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs *directly* under . However, there are several
 other options, *all of which require an Intel Mac*:
-
-
 
 VMware Fusion
 
@@ -368,12 +351,10 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a> (~ £62 / €67) allows you to run VMware
+
 images, Windows and Linux under Mac OS. **We recommend this option for
 Mac users. There is a fully functional, 30 day free trial version of
 VMware Fusion available for download.**
-
-
 
 Mac OS 10.5 (Leopard) and Boot Camp
 
@@ -383,7 +364,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="60" alt="Boot Camp" /></a>
 
 The <a href="http://www.apple.com/macosx/" class="external text"
-rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
+
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 class="external text" rel="nofollow">Boot Camp</a>, a feature that
 allows you to boot your Mac into another operating system, including
@@ -407,11 +388,10 @@ The meeting had a separate registration cost from the summer school.
 
 The course was held at the
 <a href="http://www.mstc.ox.ac.uk/" class="external text"
-rel="nofollow">Medical Science Teaching Centre (MSTC)</a> at the
+
 <a href="http://www.ox.ac.uk/" class="external text"
-rel="nofollow">University of Oxford</a>, in
+
 <a href="http://www.oxfordcity.co.uk/" class="external text"
-rel="nofollow">Oxford, United Kingdom</a>.
 
 ## Transportation, Lodging, Meals
 
@@ -432,16 +412,13 @@ width="300" height="30" alt="CBRG" /></a>
 
 We would like to thank the
 <a href="http://www.molbiol.ox.ac.uk/" class="external text"
-rel="nofollow">Computational Biology Research Group (CBRG)</a> at the
+
 University of Oxford for hosting and financially supporting the week's
 events.
-
-
 
 ## Feedback
 
 19 of 25 students provided feedback on the course.
-
 
 **Q: Would you recommend
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
@@ -450,7 +427,6 @@ title="GMOD Summer School">GMOD Summer School</a> to others?**
 | No  | Yes, with reservations | Yes | No opinion |
 |-----|------------------------|-----|------------|
 | 0% | 16% | 84% | 0% |
-
 
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)
 to 3 (average) to 5 (very good), or N.A. if you have no opinion.**

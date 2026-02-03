@@ -13,7 +13,7 @@ alt="ZFIN is hiring" /></a>
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN, the
 zebrafish model organism database</a>, located at the
 <a href="http://uoregon.edu/" class="external text"
-rel="nofollow">University of Oregon</a> is looking for a
+
 <a href="http://hr.uoregon.edu/jobs/unclassified.php?id=3656"
 class="external text" rel="nofollow">highly qualified software
 development project manager</a>. The person who fills this position will
@@ -61,9 +61,6 @@ cultural diversity. Candidates who promote and enhance diversity are
 strongly desired. Applications received by November 10, 2011 receive
 first consideration. The position will remain open until filled.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/10/30*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

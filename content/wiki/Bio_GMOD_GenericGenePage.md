@@ -15,27 +15,22 @@ Bio%253A%253AGMOD::GenericGenePage with the data to create the XML.
 There are two example implementations included with this module.
 Bio%253A%253AGMOD::GenericGenePage::Chado is a simple implementation for a Chado
 database populated with *S. cerevisiae* data obtained from
-[SGD](/wiki/Category%3ASGD) as GFF3. Currently, the output of
+ as GFF3. Currently, the output of
 this implementation can be seen at
 
 <a href="http://gmod.org/cgi-bin/gbrowse/chado_yeast/"
-class="external free"
-rel="nofollow">http://gmod.org/cgi-bin/gbrowse/chado_yeast/</a>
 
 and by clicking on any of the genes (red arrows).
 
-The other implementation, CXGN::Phenome::GenericGenePage, is from [SGN,
-the Sol Genomics Network](/wiki/Category%3ASGN). The XML they
+The other implementation, CXGN::Phenome::GenericGenePage, is from . The XML they
 provide can be seen by clicking on the "Download GMOD XML" link on any
 of there locus pages; for example, this one:
 
 <a href="http://sgn.cornell.edu/phenome/locus_display.pl?locus_id=1238"
-class="external free"
-rel="nofollow">http://sgn.cornell.edu/phenome/locus_display.pl?locus_id=1238</a>
 
 For more information see
 <a href="/wiki/Bio_GMOD_GenericGenePage" class="external free"
-rel="nofollow">http://gmod.org/wiki/Bio_GMOD_GenericGenePage</a> or
+
 contact Scott Cain, scain@cpan.org.
 
 While there is no example CGI included in this distribution that show
@@ -46,16 +41,12 @@ distribution if there is interest in it.
 
 <a
 href="http://flybase.org/genome/Drosophila_melanogaster/current/genepage/FBgn0000490"
-class="external free"
-rel="nofollow">http://flybase.org/genome/Drosophila_melanogaster/current/genepage/FBgn0000490</a>
 
 ## EcoliWiki implementation
 
 The EcoliWiki implementation is written as a REST-like service in PHP.
 
 <a href="http://ecoliwiki.net/rest/gmod_gene.php/gene_symbol/pfkA"
-class="external free"
-rel="nofollow">http://ecoliwiki.net/rest/gmod_gene.php/gene_symbol/pfkA</a>
 
 See the discussion page for issues arising.
 
@@ -63,8 +54,6 @@ See the discussion page for issues arising.
 
 Methods below should be overridden by each GenericGenePage
 implementation.
-
-
 
      name
          Usage: my $name = $genepage->name();

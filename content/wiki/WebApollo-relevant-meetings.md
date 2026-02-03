@@ -23,14 +23,14 @@ Here are some upcoming meeting possibilities for the WebApollo team.
 <tbody>
 <tr class="odd">
 <td><a href="http://www.entsoc.org/entomology2011" class="external text"
-rel="nofollow">Entomological Society of America</a></td>
+
 <td>November 13-16, 2011</td>
 <td>Reno</td>
 <td>WebApollo demo/tutorial with honeybee annotators</td>
 </tr>
 <tr class="even">
 <td><a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">PAG (Plant and Animal Genome) conference</a></td>
+
 <td>January 14-18, 2012</td>
 <td>San Diego</td>
 <td>Some Georgetown people will be there. Probably not necessary to send
@@ -68,8 +68,7 @@ well as Gregg, Ed, and Suzi.</td>
 </tr>
 <tr class="odd">
 <td><a href="http://www.k-state.edu/agc/symp2012/" class="external text"
-rel="nofollow">i5K Community Workshop and Arthropod Genomics
-Symposium</a></td>
+
 <td>May 30 - June 2, 2012</td>
 <td>Kansas City, MO</td>
 <td>Chris E., Moni, Gregg, and Ed will be there. WebApollo
@@ -86,7 +85,7 @@ working on Drosophila data.</td>
 </tr>
 <tr class="odd">
 <td><a href="http://www.iscb.org/about-ismb" class="external text"
-rel="nofollow">BOSC and ISMB</a></td>
+
 <td>July 13-14 and 15-17, 2012</td>
 <td>Long Beach, CA (near Los Angeles)</td>
 <td>Berkeley people should plan to attend BOSC. Can meet with other
@@ -104,30 +103,28 @@ class="external text" rel="nofollow">Genome Informatics 2012</a></td>
 </tr>
 <tr class="odd">
 <td><a href="http://www.icgamericas.org/" class="external text"
-rel="nofollow">1st International Conference on Genomics in the
-Americas</a></td>
+
 <td>September 27-28, 2012</td>
 <td>Philadelphia</td>
 <td>Abstract deadline: July 15, 2012</td>
 </tr>
 <tr class="even">
 <td><a href="http://www.beyond-the-genome.com/" class="external text"
-rel="nofollow">Beyond the Genome 2012</a></td>
+
 <td>September 27-29, 2012</td>
 <td>Boston, MA</td>
 <td>Abstract deadline July 19, 2012.</td>
 </tr>
 <tr class="odd">
 <td><a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">10th Annual Rocky Mountain Bioinformatics
-Conference</a></td>
+
 <td>December 6-8, 2012</td>
 <td>Aspen, CO</td>
 <td>Sponsored by ICSB</td>
 </tr>
 <tr class="even">
 <td><a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">PAG (Plant and Animal Genome) conference</a></td>
+
 <td>January 12-16, 2013</td>
 <td>San Diego</td>
 <td>Poster submission deadline is November 9, 2012; computer demo

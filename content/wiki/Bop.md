@@ -15,6 +15,6 @@ incorporated into other Java libraries.
 JDK 1.2 or higher.
 **Contact**
 <a href="mailto:fly-dev@fruitfly.org" class="external text"
-rel="nofollow">fly-dev@fruitfly.org</a>
+
 **Downloads**
 Not available, except via anonymous cvs.

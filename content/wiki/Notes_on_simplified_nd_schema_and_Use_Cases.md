@@ -39,17 +39,11 @@ title: "Notes on simplified nd schema and Use Cases"
 
 <a
 href="https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql"
-class="external free"
-rel="nofollow">https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql</a>
-
-
 
 ## Schema Drawing
 
 <a
 href="http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010#April_2010"
-class="external free"
-rel="nofollow">http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010</a>
 
 ## Notes on the tables
 
@@ -60,9 +54,6 @@ stock
 - Stock Relationship Ontology under development in the page below
 
 <a href="/wiki/Stock_Relationship_Ontology" class="external free"
-rel="nofollow">http://gmod.org/wiki/Stock_Relationship_Ontology</a>
-
-
 
 nd_assay
 
@@ -74,7 +65,6 @@ nd_assay
   treatment), per collection date (eg. postharvest phenotype assay), per
   assay date, per type of protocol (eg. a specific molecular marker in
   case of genotype assay)
-
 
 nd_assay_phenotype
 
@@ -97,9 +87,6 @@ we can only have two rows in phenotype table - red or white. Otherwise
 we'll have 1000 rows each connected with individual assay.. I think
 ParameciumDB store distinct phenotypes and link to multiple stocks.
 <a href="http://paramecium.cgm.cnrs-gif.fr/db/Phenotype/5"
-class="external free"
-rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/db/Phenotype/5</a>
-
 
 nd_assay_genotype
 
@@ -139,12 +126,10 @@ nd_assayprop
 -\[Naama\] experimenter_id should be in a contact table (contact_id) .
 -\[Sook\] Then can we add assay_contact table?
 
-
 nd_assay_project
 
 - Links individual assays/crosses to a bigger project
 - Related tables: projectprop and project_relationship
-
 
 nd_assay_stock
 
@@ -158,7 +143,6 @@ nd_assay_stock
 - The rootstocks that are used in planting fruit trees can be recorded
   in nd_assay_stock and the type_id could represent 'root stock'.
 
-
 nd_assay_stockprop
 
 - Since nd_assay_stock is only a linking table now, not a table to store
@@ -166,24 +150,20 @@ nd_assay_stockprop
   sample of a stock can be stored in nd_assayprop
 - What could be stored here?
 
-
 nd_protocol
 
 - stores phenotyping/genotyping protocols
 - For genotyping assays, the protocol would be equivalent to molcular
   markers
 
-
 nd_protocolprop
 
 - Any property of a protocol
-
 
 nd_assay_protocol
 
 - linking table between nd_assay and nd_protocol
 - Many to one relationship between assay_id and protocol_id
-
 
 nd_reagent
 
@@ -192,25 +172,19 @@ nd_reagent
 - feature_id links reagent with DNA sequences (eg. primer) to an entry
   in feature table
 
-
 nd_reagentprop
 
 - Any property of reagents
-
 
 nd_reagent_relationship
 
 - relationship between reagents
 
-
 nd_protocol_reagent
 
 - linking table between nd_protocol and nd_reagent
 
-
 nd_geolocation
-
-
 
 nd_geolocationprop
 

@@ -3,29 +3,23 @@ title: "GBrowse NGS Tutorial"
 ---
 # GBrowse NGS Tutorial
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/375px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/500px-GBrowseLogo.png 2x"
 width="250" height="59" alt="GBrowse" />
 
 This [GBrowse Next Generation Sequencing](/wiki/GBrowse.1) tutorial
-was presented by [Dave Clements](/wiki/User%3AClements) at the
+was presented by [Dave Clements](/wiki/User:Clements) at the
 [Bioinformatics Australia 2009 (BA2009)](/wiki/BA2009), October 2009.
 The most recent GBrowse tutorial can be found at the [GBrowse
 Tutorial](/wiki/GBrowse_Tutorial) page.
 
-
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through how to configure the [GBrowse](/wiki/GBrowse.1) genome
 browser to display [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
 (NGS) data using the
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
-
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -91,8 +85,6 @@ rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
     - [Showing Paired End
       Reads](#Showing_Paired_End_Reads)
 
-
-
 ## VMware
 
 This tutorial was taught using a VMware system image
@@ -130,22 +122,20 @@ Password: gmod</p></td>
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
 over time. Newer versions of tutorials will be posted as they become
 available.
 
-
-
 ## Introduction
 
 The tutorial will show how to display [next generation
 sequence](/wiki/Next_Generation_Sequencing) (NGS)
-data in [GBrowse 2](/wiki/Category%3AGBrowse_2) using
+data in  using
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a>. We'll use the example human data that comes
+
 with SAMtools to do that. First we'll load the reference sequence and
 some gene models.
 
@@ -308,7 +298,6 @@ And the rest are optional prereqs.
 
 Test it at
 <a href="http://172.16.108.129/gbrowse2/" class="external free"
-rel="nofollow">http://172.16.108.129/gbrowse2/</a>
 
 GBrowse 2 is installed and the default datasources appear to work.
 
@@ -330,7 +319,7 @@ System Requirements
 
 SAMtools depends on the zlib library
 \<<a href="http://www.zlib.net" class="external free"
-rel="nofollow">http://www.zlib.net</a>\>. The latest version 1.2.3 is
+
 preferred and with the latest version you can compile razip and use it
 to compress a FASTA file. SAMtools' faidx is able to index a
 razip-compressed FASTA file to save diskspace. Older zlib also works
@@ -338,17 +327,15 @@ with SAMtools, but razip cannot be compiled.
 
 The text-based viewer (tview) requires the GNU ncurses library
 \<<a href="http://www.gnu.org/software/ncurses/" class="external free"
-rel="nofollow">http://www.gnu.org/software/ncurses/</a>\>, which comes
+
 with Mac OS X and most of the modern Linux/Unix distributions. If you do
 not have this library installed, you can still compile the rest of
 SAMtools by manually modifying one line in Makefile.
-
 
 Compilation
 
 Type \`make' to compile samtools. If you have zlib \>= 1.2.2.1, you can
 compile razip with \`make razip'.
-
 
 Installation
 
@@ -377,8 +364,6 @@ So, get ncurses. libncurses5 is already installed.
 Make got a few warnings, but no errors. So, it appears to have made.
 bam.h and libbam.a are both in the
 home/gmod/BA2009/SAMtools/samtools-0.1.6 directory.
-
-
 
 #### Bio::DB::Sam Adaptor
 
@@ -501,7 +486,6 @@ default GBrowse instances.
 We are going to use that data to demonstrate how GBrowse visualizes
 short read data using
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a>.
 
 ### Getting Human Data
 
@@ -530,8 +514,6 @@ At UCSC, build 36.1 is available by chromosome:
 
 According to
 <a href="http://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/"
-class="external free"
-rel="nofollow">http://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/</a>:
 
 The chr\*\_random sequences are unplaced sequence on those reference
 chromosomes.
@@ -561,7 +543,7 @@ annotation.
 
 When you are looking for GFF3 for an organism is a good place to start
 is <a href="http://gbrowse.org" class="external text"
-rel="nofollow">GBrowse.org</a>, which lists GBrowse related resources
+
 for many organisms.
 
 However, I know that the CBRG at the University of Oxford does a lot
@@ -575,7 +557,6 @@ the GFF3 for human chromosomes 2 and 3 available, and he did:
   image.
 - Now we start doing things.
 
-
 Past experience has taught that whenever you get a GFF3 file from
 elsewhere it is a darn fine idea to check that the reference sequence
 that all features are positioned on is defined at the top of the file.
@@ -587,8 +568,7 @@ Nope.
 To add reference sequence you need to know how long it is. Since I got
 the files from CBRG, I went to their GBrowse instance
 (<a href="https://gbrowse.molbiol.ox.ac.uk/cgi-bin/gbrowse/HUMAN_HG18/"
-class="external free"
-rel="nofollow">https://gbrowse.molbiol.ox.ac.uk/cgi-bin/gbrowse/HUMAN_HG18/</a>)
+
 and typed in "chr2" and then "chr20" in the search box, and let GBrowse
 tell me how big they were:
 
@@ -608,8 +588,6 @@ Edit `chr20_ens_annots.gff` and add this line, separate each item by
 tabs:
 
     chr20 Ensembl chromosome 1 62435964 . . . Name=chr20
-
-
 
 ##### Gene Definitions in these GFF3 Files
 
@@ -782,8 +760,6 @@ Lets go over some of the more important sections.
 - What region and tracks GBrowse will show when it first comes up.
 - What example regions will be displayed as hot links.
 
-
-
     [annotations:database]
     db_adaptor     = Bio::DB::SeqFeature::Store
     db_args        = -adaptor DBI::mysql
@@ -793,8 +769,6 @@ Lets go over some of the more important sections.
 - Which adaptor we are going to use
   - GBrowse has lots of adaptors; we'll use 2 in this example
 - Which DBMS (MySQL) and database ("human") to get data from.
-
-
 
     # Default glyph settings
     [TRACK DEFAULTS]
@@ -811,8 +785,6 @@ Lets go over some of the more important sections.
 - Track default values. These can be overridden in each track.
 - Glyph determine how data is shown
   - as a box, linked boxes, xyplot, ...
-
-
 
     [DNA]
     glyph          = dna
@@ -842,8 +814,6 @@ Lets go over some of the more important sections.
   - They use semantic zooming to display information in different ways
     at high zoom and low zoom.
 
-
-
     [PredictedGenes]
     feature        = mRNA
     glyph          = so_transcript
@@ -867,14 +837,12 @@ this track.
 GBrowse scans column 3 (the Sequence Ontology term) and only displays
 items with this feature type.
 
-
 Our example gene definition from the GFF3
 
     chr20 Ensembl mRNA 56701315 56724307 . + . ID=NPEPL1;Name=NPEPL1; ...
     chr20 Ensembl exon 56701315 56701513 . + . ID=ENSE00001542441;Parent=NPEPL1
     chr20 Ensembl exon 56702200 56702385 . + . ID=ENSE00001542440;Parent=NPEPL1
     ...
-
 
 The file also contains information on popups and hovering. This is
 leftover from the original yeast file. I'm not going to talk about it,
@@ -964,7 +932,6 @@ do it from a browser in your host operating system.
 From inside VMware, in Firefox type:
 
 <a href="http://localhost/gb2/gbrowse/human/" class="external free"
-rel="nofollow">http://localhost/gb2/gbrowse/human/</a>
 
 To use a browser on your host system first type this command inside the
 VMware system:
@@ -977,7 +944,6 @@ VMware system:
 Then type the inet addr into your browser. In this case:
 
 <a href="http://172.16.108.129/gb2/gbrowse/human" class="external free"
-rel="nofollow">http://172.16.108.129/gb2/gbrowse/human</a>
 
 You should see something like this:
 

@@ -3,8 +3,6 @@ title: "News/GMOD Paper Cuts, Feb 10th, 2014"
 ---
 # News/GMOD Paper Cuts, Feb 10th, 2014
 
-
-
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
 eye-catching GMOD-related work.**
@@ -19,7 +17,6 @@ For more GMOD and GMOD-related papers, and to contribute your own
 GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
-
 
 **Finding the missing honey bee genes: lessons learned from a genome
 upgrade** <sup>[\[1\]](#cite_note-DOI:10.1186.2F1471-2164-15-86-1)</sup>
@@ -57,13 +54,11 @@ upgrade** <sup>[\[1\]](#cite_note-DOI:10.1186.2F1471-2164-15-86-1)</sup>
 Interesting findings from the new assembly of the honey bee genome,
 including many more genes than were found in the initial assembly. The
 <a href="http://hymenopteragenome.org" class="external text"
-rel="nofollow">Hymenoptera Genome Database</a> uses numerous GMOD
+
 resources, including [MAKER](../MAKER.1) for automated genome
 annotation, [JBrowse](../JBrowse.1) and
 [GBrowse](../GBrowse.1) for sequence browsing, and
 [WebApollo](../WebApollo.1) for community genome annotation.
-
-
 
 **Highly Specific and Efficient CRISPR/Cas9-Catalyzed Homology-Directed
 Repair in Drosophila**
@@ -101,9 +96,6 @@ of the past couple of years. This paper reports new techniques and tools
 for using the CRISPR/Cas9 system for complex genome engineering. For
 more information, see the
 <a href="http://flycrispr.molbio.wisc.edu/" class="external text"
-rel="nofollow">flyCRISPR website</a>.
-
-
 
 **Analysis of Global Gene Expression in *Brachypodium distachyon*
 Reveals Extensive Network Plasticity in Response to Abiotic Stress**
@@ -131,11 +123,8 @@ Reveals Extensive Network Plasticity in Response to Abiotic Stress**
 
 Check out the JBrowse-powered
 <a href="http://jbrowse.brachypodium.org" class="external text"
-rel="nofollow">Brachypodium web genome browser</a> and other resources
+
 on the new <a href="http://brachypodium.org" class="external text"
-rel="nofollow">Brachypodium website</a>!
-
-
 
 **Analyses of Hypomethylated Oil Palm Gene
 Space**<sup>[\[4\]](#cite_note-DOI:10.1371.2Fjournal.pone.0086728-4)</sup>
@@ -177,8 +166,6 @@ is one of a number of genomics projects taking off in Malaysia at the
 moment. Perfect timing for a [GMOD
 workshop](../GMOD_Malaysia_2014.1)!
 
-
-
 **Production of a reference transcriptome and transcriptomic database
 (<a href="http://cnidarians.bu.edu/EdwardBase/cgi-bin/index.cgi"
 class="external text" rel="nofollow">EdwardsiellaBase</a>) for the lined
@@ -215,10 +202,7 @@ searched according to contig ID, gene ontology, protein family motif
 reads to the contigs can also be visualized via
 [JBrowse](../JBrowse.1).
 
-
 Happy reading!
-
-
 
 1.  <span id="cite_note-DOI:10.1186.2F1471-2164-15-86"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1186.2F1471-2164-15-86_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -240,7 +224,5 @@ Disclaimer: the papers included in this feature are for your
 entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2014/02/10*

@@ -14,7 +14,7 @@ href="http://careers.peopleclick.com/careerscp/client_uofc/external/gateway.do?f
 class="external text" rel="nofollow">#9339</a>) for bioinformatician /
 software developers at
 <a href="http://xenbase.org" class="external text"
-rel="nofollow">Xenbase</a>, the model organism data for the *Xenopus*
+
 research community. Required skills are Java, SQL, and object-oriented
 development. Xenbase is a GMOD user and applicants with
 [BioPerl](../BioPerl),
@@ -30,11 +30,7 @@ Please see the job postings for further details.
 
 Jeff Bowes
 <a href="http://xenbase.org" class="external text"
-rel="nofollow">Xenbase</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/01/10*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

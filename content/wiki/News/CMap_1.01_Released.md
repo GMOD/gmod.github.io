@@ -10,8 +10,6 @@ import/export which is possible with this release.
 
 You can get the new version from SourceForge, <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=55129"
-class="external free"
-rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=55129</a>
 
 Highlights of this release are:
 
@@ -37,11 +35,8 @@ No updates to the database or config files are needed.
 If you are updating from an older version, see the documentation in the
 `upgrade/` directory included in the package.
 
-[Ben](../User%253AFaga)
-
-
+[Ben](../User:Faga)
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/07/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

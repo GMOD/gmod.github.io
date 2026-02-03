@@ -58,12 +58,10 @@ issue cvs command at my home directory.
 ## install prerequisites
 
 ### install <a href="http://en.wikipedia.org/wiki/Apache_Ant" class="external text"
-rel="nofollow">Ant</a>
 
     sudo yum install ant
 
 ### install <a href="http://www.postgresql.org/" class="external text"
-rel="nofollow">postgresql</a>
 
 - install both client and server by yum
     [zha@localhost ~] sudo yum install postgresql
@@ -139,7 +137,6 @@ class="external text" rel="nofollow">DBD::Pg</a> (1.49 or better)
 you can also install it by
 
     yum install perl-DBD-Pg
-
 
 <a href="http://search.cpan.org/~gaas/Digest-MD5-2.36/MD5.pm"
 class="external text" rel="nofollow">Digest::MD5</a> (GBrowse)

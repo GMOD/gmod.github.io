@@ -108,8 +108,6 @@ coding). What happens if software tries to write a feature record as a
 gene without creating these? Presumably the gene feature has to be
 entered first in order to have an object_id for feature_relationship.
 
-
-
 #### mRNA
 
 mRNA features are entered with part_of relationships to genes. This is
@@ -151,5 +149,5 @@ Note that proteins ≠ polypeptides. Hemoglobin is a heterotetramer of two
 - [Chado -
   Getting_Started](/wiki/Chado_-_Getting_Started) -
   and documentation links from there.
-- [Category:Chado](/wiki/Category%3AChado) - the Category page
+-  - the Category page
   for all pages about Chado in this wiki

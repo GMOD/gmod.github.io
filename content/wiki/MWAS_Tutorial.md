@@ -82,7 +82,6 @@ MWAS is build on the stand alone genome annotation pipeline
 [MAKER](/wiki/MAKER.1), and users who wish to annotate datasets that
 are too large to submit to MWAS are free to
 <a href="http://www.yandell-lab.org/software/" class="external text"
-rel="nofollow">download MAKER</a> for use on their own systems.
 
 ## Understanding MWAS
 
@@ -127,10 +126,6 @@ annotate the genome. And while most researchers probably don't give
 annotations a lot of thought, they use them everyday.
 
 Examples of Annotation Databases:
-
-- [FlyBase](/wiki/Category%3AFlyBase)
-- [WormBase](/wiki/Category%3AWormBase)
-- [Mouse Genome Informatics Group](/wiki/Category%3AMGI)
 
 Every time we use techniques such as RNAi, PCR, gene expression arrays,
 targeted gene knockout, or CHIP we are basing our experiments on the

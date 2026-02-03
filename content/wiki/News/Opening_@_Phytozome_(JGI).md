@@ -14,9 +14,9 @@ width="180" height="44" alt="Opening at Phytozome" /></a>
 href="http://careers.crijob.com/lbnlcareers/detailsRedirect.asp?jid=24813&amp;p=1"
 class="external text" rel="nofollow">Phytozome has an opening for a web
 developer</a>. <a href="http://www.phytozome.net" class="external text"
-rel="nofollow">Phytozome</a> is the public portal to
+
 <a href="http://www.jgi.doe.gov/" class="external text"
-rel="nofollow">JGI's</a> extensive plant genome data and analysis. The
+
 developer in this position will be responsible for creating web
 interfaces using PHP, CSS, and advanced Javascript. Both the absolute
 quantity and diversity of plant genomic data produced and integrated by
@@ -38,9 +38,6 @@ href="http://careers.crijob.com/lbnlcareers/detailsRedirect.asp?jid=24813&amp;p=
 class="external text" rel="nofollow">job posting</a> for more
 information on this position.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/08/19*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -7,10 +7,9 @@ title: "ParameciumDB"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/60/ParameciumDBLogo.png" width="221"
 height="70" alt="ParameciumDBLogo.png" />
 
-
 ParameciumDB
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
-rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>) is a model
+
 organism database for the unicellular eukaryote *Paramecium
 tetraurelia*. ParameciumDB contains genome sequence and annotations,
 alleles and RNAi knockdowns, mutant phenotypes, and stocks all in a
@@ -34,8 +33,6 @@ uses GMOD, and what challenges they faced.
   data</a>, in the January 2007 Database Issue of
   <a href="http://nar.oxfordjournals.org/" class="external text"
   rel="nofollow"><em>Nucleic Acids Research</em></a>.
-
-
 
   Biology</span>](#Paramecium_Biology)
   - [*Paramecium tetraurelia*
@@ -67,8 +64,6 @@ uses GMOD, and what challenges they faced.
     - [Feedback](#Feedback)
 - [Related
   Reading](#Related_Reading)
-
-
 
 # Paramecium Biology
 
@@ -105,7 +100,7 @@ Paramecium is a model for studying
 
 The somatic genome has been sequenced by
 <a href="http://www.genoscope.cns.fr/" class="external text"
-rel="nofollow">Genoscope</a> using a whole genome shotgun approach. That
+
 assembly and subsequent analysis have resulted in:
 
 - 72 Mb assembly
@@ -115,12 +110,12 @@ assembly and subsequent analysis have resulted in:
 # ParameciumDB
 
 ParameciumDB is maintained by two people, [Linda
-Sperling](/wiki/User%3ASperling) and Olivier Arnaiz at the
+Sperling](/wiki/User:Sperling) and Olivier Arnaiz at the
 <a href="http://www.cgm.cnrs-gif.fr/version_gb/index_gb.html"
 class="external text" rel="nofollow">Centre de Genetique Moleculaire</a>,
 a part of the
 <a href="http://www.cnrs.fr/index.html" class="external text"
-rel="nofollow">Centre National de la Recherche Scientifique</a>.
+
 ParameciumDB is mainly implemented with [GMOD
 Components](/wiki/GMOD_Components).
 
@@ -208,7 +203,6 @@ store these ontologies:
 - Paramecium Anatomy Ontology
 - Paramecium Assay Ontology
 
-
 The last two were developed at ParameciumDB to enable phenotypes to be
 modeled using the Entity-Quality model. The quality terms are provided
 by PATO. The anatomy ontology was developed for the Entity terms, since
@@ -269,7 +263,6 @@ ParameciumDB does not have paid curators. It currently relies on the
 community for annotation of the gene models. They use
 [Apollo](/wiki/Apollo.1) as their genome annotation editor.
 
-
 **See also:**
 
 - <a
@@ -279,7 +272,7 @@ community for annotation of the gene models. They use
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User%3ASperling) presentation at the
+  Sperling's](/wiki/User:Sperling) presentation at the
   [November 2007 GMOD
   Meeting](/wiki/November_2007_GMOD_Meeting).
 
@@ -289,7 +282,7 @@ community for annotation of the gene models. They use
 
 The <a href="http://paramecium.cgm.cnrs-gif.fr/chadoapi/"
 class="external text" rel="nofollow">Bio::Chado API</a> is Perl
-[Category:middleware](/wiki/Category%3AMiddleware) module
+ module
 for working with
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases.
 It was developed specifically for the
@@ -353,7 +346,7 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/CommunityAnnotationNov2007.pdf"
   class="internal" title="CommunityAnnotationNov2007.pdf">Community
   Annotation at ParameciumDB</a> - [Linda
-  Sperling's](/wiki/User%3ASperling) presentation at the
+  Sperling's](/wiki/User:Sperling) presentation at the
   [November 2007 GMOD
   Meeting](/wiki/November_2007_GMOD_Meeting).
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"

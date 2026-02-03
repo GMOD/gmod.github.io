@@ -24,10 +24,10 @@ GBrowse_syn, as implemented at WormBase
 
 \| public_server = \| dl = \| dl_url =
 <a href="https://github.com/GMOD/GBrowse" class="external free"
-rel="nofollow">https://github.com/GMOD/GBrowse</a> \| dl_src = \|
+
 dl_src_url = \| dl_dev = \| dl_dev_url =
 <a href="https://github.com/GMOD/GBrowse" class="external free"
-rel="nofollow">https://github.com/GMOD/GBrowse</a> \|
+
 getting_started_preamble = GBrowse_syn has been part of the
 [GBrowse](../GBrowse.1) distribution since version 1.69; we
 recommend using the most up-to-date version of GBrowse 2. Please follow
@@ -74,21 +74,20 @@ to the following paper when citing GBrowse_syn:
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d4/GBrowse_syn_EBI2009.pdf"
 class="internal" title="GBrowse syn EBI2009.pdf">Challenges in
 Comparative Genome Browsing</a> - Presented by [Sheldon
-McKay](../User%253AMckays) at the
+McKay](../User:Mckays) at the
 <a href="http://www.ebi.ac.uk" class="external text"
-rel="nofollow">European Bioinformatics Institute</a>, Hinxton, UK.
 
  for notes on further GBrowse_syn development. \| contact_email
 = <a href="mailto:mckays@cshl.edu" class="external text"
-rel="nofollow">Sheldon Mckay</a> \| input = \| output = \| see_also =
+
 The focus of this documentation is the GBrowse_syn application. However,
 the generation of whole genome alignments and identification of
 orthologous regions are the subject of considerable interest, so some
 background reading is listed below:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
+  Cloud](../Category:GMOD_in_the_Cloud)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
-- [Tool data](../Category%253ATool_data)
-- [GBrowse syn](../Category%253AGBrowse_syn)
+  Components](../Category:GMOD_Components)
+- [Tool data](../Category:Tool_data)
+- [GBrowse syn](../Category:GBrowse_syn)

@@ -4,7 +4,7 @@ title: "JBrowse Tutorial PAG 2016"
 # JBrowse Tutorial PAG 2016
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the
+Cain](/wiki/User:Scott) at the
 <a href="/wiki/PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
 Meeting</a> in January 2016 using JBrowse 1.12.0.
 
@@ -393,8 +393,6 @@ inject the track configuration:
            "urlTemplate" : "../../simulated-sorted.vcf.gz",
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
-
-
 
 ### Faceted Track Selection
 

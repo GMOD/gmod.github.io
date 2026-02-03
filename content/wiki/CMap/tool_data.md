@@ -10,85 +10,40 @@ wiki page.
 dev = inactive \| support = active \| type = Genome Visualization &
 Editing \| platform = web \| logo = CMapLogo-horiz.png \| home =
 <a href="../CMap.1" class="external free"
-rel="nofollow">http://gmod.org/wiki/CMap</a> \| about = A browser-based
+
 tool for the visual comparison of various maps (sequence, genetic, etc.)
 from any number of species. The CMap package also includes tools for
 curating map data. \| screenshot = Here are some sample maps from the
 <a href="http://www.gramene.org/" class="external text"
-rel="nofollow">Gramene Project</a>. See also
+
 <a href="http://www.gramene.org/cmap/entry.html" class="external text"
-rel="nofollow">other Gramene views</a>.
 
 -
-
-
-
-
 
   <a href="../File:Cmap_sample1.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Cmap_sample1.jpg/89px-Cmap_sample1.jpg"
   width="89" height="120" alt="Cmap sample1.jpg" /></a>
 
-
-
-
-
-
-
-
-
-
-
 -
-
-
-
-
 
   <a href="../File:Cmap_sample2.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f1/Cmap_sample2.jpg/169px-Cmap_sample2.jpg"
   width="169" height="120" alt="Cmap sample2.jpg" /></a>
 
-
-
-
-
-
-
-
-
-
-
 -
-
-
-
-
 
   <a href="../File:Cmap_sample3.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/12/Cmap_sample3.jpg/131px-Cmap_sample3.jpg"
   width="131" height="120" alt="Cmap sample3.jpg" /></a>
 
-
-
-
-
-
-
-
-
-
-
 \| public_server =
 <a href="http://www.gramene.org/cmap" class="external free"
-rel="nofollow">http://www.gramene.org/cmap</a> \| dl = \| dl_url =
+
 <a href="http://sourceforge.net/projects/gmod/files/cmap/"
-class="external free"
-rel="nofollow">http://sourceforge.net/projects/gmod/files/cmap/</a> \|
+
 dl_src = \| dl_src_url =
 <a href="https://gmod.svn.sourceforge.net/svnroot/gmod/cmap"
-class="external free"
-rel="nofollow">https://gmod.svn.sourceforge.net/svnroot/gmod/cmap</a> \|
+
 dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req =
 
 - Perl 5.6.0 or higher
@@ -245,10 +200,10 @@ in the [Spring 2010 Logo
 Program](../Spring_2010_Logo_Program), while
 a design student at
 <a href="http://www.linn-benton.edu" class="external text"
-rel="nofollow">Linn-Benton Community College</a>. \| dev_ppl = Lincoln
-Stein, Doreen Ware, [Ben Faga](../User%253AFaga),
+
+Stein, Doreen Ware, [Ben Faga](../User:Faga),
 <a href="mailto:kclark@cshl.edu" class="external text"
-rel="nofollow">Ken Youens-Clark</a> \| dev_status = No development in
+
 several years. Future development at Gramene.org hopes to replace CMap
 with a lighter, Javascript version. \| contact_email = Ken Youens-Clark
 \<kclark@cshl.edu\> \| input = \| output = \| see_also =

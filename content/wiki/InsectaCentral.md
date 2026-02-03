@@ -24,7 +24,7 @@ height="75" alt="InsectaCentral" /></a>
 # Overview
 
 The <a href="http://insectacentral.org" class="external text"
-rel="nofollow">InsectaCentral</a> database is a unique insect
+
 transcriptome database built by GMOD components. The database schema is
 driven by <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 <a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
@@ -124,7 +124,6 @@ The current public release is: **beta**
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](/wiki/User%3AAlpapan) while at CSIRO, the
+Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
-rel="nofollow">http://www.csiro.au</a>).

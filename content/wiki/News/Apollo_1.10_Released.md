@@ -19,7 +19,7 @@ into the results track.
 
 We're very interested in getting
 <a href="mailto:apollo@fruitfly.org" class="external text"
-rel="nofollow">feedback from users</a> who may use the primer
+
 identification functionality. If you could provide information on how
 you'd use such a tool and possibly what kind of filtering criteria you
 might need, it would be great so that we may incorporate these changes
@@ -28,14 +28,9 @@ in future releases.
 As always, you can download the current version at:
 
 <a href="http://apollo.berkeleybop.org/current/install.html"
-class="external free"
-rel="nofollow">http://apollo.berkeleybop.org/current/install.html</a>
 
-[Ed Lee](../User%253AElee)
-
-
+[Ed Lee](../User:Elee)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/03/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

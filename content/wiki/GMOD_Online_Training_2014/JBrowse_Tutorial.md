@@ -135,8 +135,6 @@ There are four basic steps to setting up an instance of JBrowse:
 3.  Configure direct-access tracks
 4.  Index feature names
 
-
-
 ### Features from a directory of files
 
 Here, we'll use the
@@ -381,8 +379,6 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-
-
 ### Faceted Track Selection
 
 JBrowse has a very powerful faceted track selector that can be used to
@@ -462,7 +458,7 @@ from the old JBrowse directory into the new JBrowse directory.
 
 See the <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/JBrowse_gmod_summerschool_jul2013.pdf"
-class="internal"
+
 title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 (PDF)</a>
 

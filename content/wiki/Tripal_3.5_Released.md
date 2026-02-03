@@ -4,7 +4,7 @@ title: "Tripal 3.5 Released"
 # Tripal 3.5 Released
 
 This <a href="http://tripal.info" class="external text"
-rel="nofollow">Tripal</a> release includes major performance
+
 improvements including an improved and blazing fast GFF3 loader. Follow
 standard Drupal updating procedures to update. Changes in this version:
 
@@ -19,7 +19,5 @@ standard Drupal updating procedures to update. Changes in this version:
 4.  Updates to the online documentation
 5.  Bug fixes in web services
 6.  Bug fixes in the OBO loader for ontologies that won't import.
-
-
 
 *Posted to the [GMOD News](/wiki/GMOD_News) on 2021/02/08*

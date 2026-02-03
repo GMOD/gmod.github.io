@@ -44,7 +44,6 @@ feedback. Google can be harnessed to aid, but is not solely sufficient
 for, searching MOD data. Providing "server snapshots" is a useful
 mechanism for keeping older database versions available.
 
-
   Model Organism Database User Interface Caucus GMOD Meeting, January
   18, 2007, San Diego, CA,
   USA</span>](#Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA)
@@ -151,12 +150,12 @@ order.
 *UIs for bulk data handling.* Many MODs allow some sort of bulk query,
 although the allowed data types varys.
 <a href="http://www.biomart.org/" class="external text"
-rel="nofollow">BioMart</a> provides a common UI that is used at several
+
 MODs
 (<a href="http://www.wormbase.org/BioMart/martview" class="external text"
-rel="nofollow">WormBase</a>,
+
 <a href="http://www.gramene.org/Multi/martview" class="external text"
-rel="nofollow">Gramene</a>,
+
 <a href="http://www.dictybase.org/biomart/martview"
 class="external text" rel="nofollow">DictyBase</a>,
 <a href="http://insects.eugenes.org/BioMart/martview"
@@ -191,8 +190,6 @@ explored.
 
 easy exploration by novices).
 
-
-
 - Reliable results are important.
 - Fast results are good.
 - What users ask for isn't always what they really want (see the ApiDB
@@ -210,8 +207,6 @@ easy exploration by novices).
   thought that we should avoid rapid turnover in UI, but many felt that
   frequent, small changes and additions can be useful to community (if
   clearly explained)
-
-
 
 - Support for User preferences/sessions/configurations (e.g. "MyNCBI",
   FlyMine's "MyMine")
@@ -324,27 +319,26 @@ documentation provided by
 <a href="http://www.mediawiki.org/" class="external text">Wikipedia</a>.
 Members of this new generation of wikis include:
 <a href="http://gmod.org/" class="external free"
-rel="nofollow">http://gmod.org/</a> , an outcome of the GMOD meeting ,
+
 <a href="http://genomewiki.ucsc.edu/" class="external free"
-rel="nofollow">http://genomewiki.ucsc.edu/</a> ,
+
 <a href="http://www.bioperl.org/wiki/" class="external free"
-rel="nofollow">http://www.bioperl.org/wiki/</a> ,
+
 <a href="http://www.wormbase.org/wiki/" class="external free"
-rel="nofollow">http://www.wormbase.org/wiki/</a> ,
+
 <a href="http://wiki.dictybase.org/dictywiki/" class="external free"
-rel="nofollow">http://wiki.dictybase.org/dictywiki/</a> ,
+
 <a href="http://rana.lbl.gov/drosophila/wiki/" class="external free"
-rel="nofollow">http://rana.lbl.gov/drosophila/wiki/</a> ,
+
 <a href="http://www.nescent.org/wikis.php" class="external free"
-rel="nofollow">http://www.nescent.org/wikis.php</a> ,
+
 <a href="http://openwetware.org/wiki/" class="external free"
-rel="nofollow">http://openwetware.org/wiki/</a> ,
+
 <a href="http://darwin.nerc-oxford.ac.uk/gc_wiki/" class="external free"
-rel="nofollow">http://darwin.nerc-oxford.ac.uk/gc_wiki/</a> ,
+
 <a href="http://wiki2.germonline.org/wiki/" class="external free"
-rel="nofollow">http://wiki2.germonline.org/wiki/</a> ,
+
 <a href="http://www.biodirectory.com/biowiki/" class="external free"
-rel="nofollow">http://www.biodirectory.com/biowiki/</a> .
 
 This growing list of wikis offer scientists a common, well-documented
 user interface that is expected to facilitate expanded use, as
@@ -355,7 +349,7 @@ for gene annotations. Further integration of wiki methods for genome
 community annotation have been recently proposed
 <sup>[\[1\]](#cite_note-1)</sup>, <sup>[\[2\]](#cite_note-2)</sup>. Also
 at the meeting, <a href="http://sgn.cornell.edu" class="external text"
-rel="nofollow">SGN</a> presented an experimental community gene curation
+
 interface for use by authorized users of the site.
 
 ### Client-side Scripting (JavaScript)
@@ -368,7 +362,6 @@ relatively mature JavaScript implementations (IE 6+, Firefox), and by
 the high-profile success of several web applications making use of this
 increased JavaScript support (such as
 <a href="http://maps.google.com" class="external text"
-rel="nofollow">Google Maps</a>).
 
 Most web developers at MODs have a responsibility to ensure broad access
 to the MOD's data, thus they do not have unlimited freedom to introduce
@@ -414,7 +407,7 @@ of the WormBase site for each snapshot. These snapshot images can be
 accessed via the web in the same manner as the main WormBase site, or
 can be downloaded for playback on any computer that supports the free
 <a href="http://www.vmware.com" class="external text"
-rel="nofollow">VMWare</a> player. This practice greatly facilitates
+
 reproduction of results from papers that cite WormBase.
 
 ## Using Google and Other General Search Engines
@@ -447,9 +440,9 @@ acceptable level.
 A different strategy pursued by some MODs is to use generalized search
 software on their own servers, such as
 <a href="http://lucene.apache.org/" class="external text"
-rel="nofollow">Lucene</a> or
+
 <a href="http://www.gmod.org/lucegene" class="external text"
-rel="nofollow">LuceGene</a>, a Lucene variant customized for indexing
+
 many types of biological data. This approach offers more control over
 the indexing, searching, and result presentation than using an external
 search engine.
@@ -547,8 +540,6 @@ should be sure to include:
   available?
 - An XML representation of an "entry" makes a "diff" or change easy to
   assess, and reliable alerts could be constructed.
-
-
 
 # References
 

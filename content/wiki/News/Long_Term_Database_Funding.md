@@ -16,8 +16,6 @@ href="http://database.oxfordjournals.org/cgi/content/full/2009/0/bap017"
 class="external text" rel="nofollow">Models for financial sustainability
 of biological databases and resources</a>" appeared in
 *<a href="http://database.oxfordjournals.org/" class="external text"
-rel="nofollow">Database: The Journal of Biological Databases and
-Curation</a>*.
 
 All GMOD users need to give at least some thought to long term funding
 issues. A
@@ -25,9 +23,8 @@ issues. A
 class="external text" rel="nofollow">discussion thread on long term
 database funding</a> has now been started on the
 <a href="http://biocurator.org" class="external text"
-rel="nofollow">International Society for Biocuration</a>'s (ISB)
+
 <a href="http://biocurator.proboards.com/" class="external text"
-rel="nofollow">forum site</a>.
 
 <a href="http://www.arabidopsis.org/doc/about/tair_funding/410"
 rel="nofollow" title="TAIR Funding Update and Discussion Forum"><img
@@ -35,7 +32,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="TAIR Funding Update and Discussion Forum" /></a>
 
 <a href="http://www.arabidopsis.org/" class="external text"
-rel="nofollow">TAIR</a> asked people to do a couple things:
 
 1.  Cite TAIR in publications: as a reference, as a source of data in
     methods sections, and under acknowledgments.
@@ -68,11 +64,8 @@ site</a>. And, if you aren't already doing so, make it easy for your
 users to cite your database by including an easy to find "Citing this
 resource" link on your site.
 
-[Dave Clements](../User%253AClements)
-
-
+[Dave Clements](../User:Clements)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/06*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

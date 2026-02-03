@@ -5,7 +5,7 @@ title: "GBrowse DAS HOWTO"
 
 The Distributed Annotation System protocol (DAS;
 <a href="http://www.biodas.org" class="external free"
-rel="nofollow">http://www.biodas.org</a>) is a system for exchanging
+
 genomic annotations across the Internet. It works similarly to the idea
 of sharing the URLs of web-accessible GFF files, except that it is
 designed to support large data sets. When a client application needs to
@@ -19,7 +19,7 @@ To take advantage of DAS functionality, you will have to install the
 Perl Bio::Das module. This is available from CPAN (the Comprehensive
 Perl Archive Network
 (<a href="http://www.cpan.org" class="external free"
-rel="nofollow">http://www.cpan.org</a>) or from the GMOD PPM repository.
+
 Unix users can install Bio::Das with this command:
 
     % perl -MCPAN -e 'install Bio::Das'
@@ -31,7 +31,7 @@ Unix users can install Bio::Das with this command:
 
 You may need to issue the command "rep add gmod
 <a href="http://www.gmod.org/ggb/ppm" class="external free"
-rel="nofollow">http://www.gmod.org/ggb/ppm</a>" if PPM complains that it
+
 cannot find Bio::Das.
 
 ## A Tutorial
@@ -42,7 +42,7 @@ support works.
 When you installed GBrowse, the system also installed a series of
 tutorial files, the location of which you can find at
 <a href="http://localhost/gbrowse2" class="external free"
-rel="nofollow">http://localhost/gbrowse2</a>. We will use the *C.
+
 elegans core* tutorial database as the basis for creating a DAS server.
 
 To start, find the elegans_core.conf configuration file in the tutorial
@@ -69,10 +69,9 @@ genome coordinates, you should replace SELF with the URL of the DAS
 reference server that serves that genome. For example release hg16 of
 the human genome at UCSC corresponds to DAS URL
 <a href="http://genome.cse.ucsc.edu/cgi-bin/das" class="external free"
-rel="nofollow">http://genome.cse.ucsc.edu/cgi-bin/das</a>. A list of
+
 reference servers for various model organisms can be found at
 <a href="http://www.biodas.org" class="external free"
-rel="nofollow">http://www.biodas.org</a>.
 
 The next step is to go through the configured tracks and add a "das
 category" to each of them. DAS uses the idea of the "category" of a
@@ -107,7 +106,7 @@ configuration file before you try the next step.
 
 Using a web browser fetch the URL
 <a href="http://localhost/cgi-bin/gb2/das/dsn" class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/das/dsn</a>. This will
+
 return an XML document giving information about each of the data sources
 that you have configured.
 
@@ -139,8 +138,7 @@ This is showing that there is one configured DAS source, the
 working. This request returns all the feature types that the database
 knows about. Using a web browser fetch the URL
 <a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes/types"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes/types</a>.
+
 This should return another short document confirming that the "gene"
 feature type is available.
 
@@ -149,12 +147,10 @@ to the elegans_core database and to turn off all the tracks except for
 DNA/GC content. This should give you an empty details panel. Open up the
 "Upload and Share Tracks" tab, press "Import a Track URL", and type in
 <a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CGenes</a>
+
 and press "Update URLs." The page should now reload and display the gene
 models. Do this again with
 <a href="http://localhost/cgi-bin/gb2/das/elegans_core%7CAlignments"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gb2/das/elegans_core%7CAlignments</a>
+
 in order to view the alignments. These tracks are not coming directly
 from the local database, but from the database via the DAS protocol.

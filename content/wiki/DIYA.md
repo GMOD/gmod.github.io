@@ -24,6 +24,3 @@ width="40" height="39" alt=" is open source" /></a>
 class="external text" rel="nofollow">Gnu GPL</a>
 
 Resources
-
-- [GMOD Components](/wiki/Category%3AGMOD_Components)
-- [Annotation](/wiki/Category%3AAnnotation)

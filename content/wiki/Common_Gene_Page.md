@@ -73,7 +73,7 @@ gene pages in XML format.
 
 # Notes for Discussion 2008
 
-From [Dongilbert](/wiki/User%3ADongilbert) 13:15, 14 July 2008
+From [Dongilbert](/wiki/User:Dongilbert) 13:15, 14 July 2008
 (EDT) :
 
 In hopes there will be a lively discussion on this topic at the [July
@@ -110,8 +110,6 @@ project, this isn't likely to be a large effort. We were able to use
 simple web-page scraping software to convert existing MOD gene reports
 into a common format (see
 <a href="http://eugenes.org/gmod/gene-report-examples/"
-class="external free"
-rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a>)
 
 User-interface and web page design aspects can be tuned to each MOD's
 desires. The main thrust is of a common gene page is having common data
@@ -137,24 +135,20 @@ Perl abstract class.
 
 See this folder for some discussion, documents and examples for MOD gene
 pages from 2004: <a href="http://eugenes.org/gmod/gene-report-examples/"
-class="external free"
-rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a>
 
 ## More discussion and samples
 
 See this blog entry on a 2005 meeting discussion,
 <a href="http://blog.gmod.org/common_gene_pages" class="external free"
-rel="nofollow">http://blog.gmod.org/common_gene_pages</a>
 
 ## Daphnia genome database use case
 
 There is an implementation of how this can be used at
 <a href="http://wfleabase.org/" class="external text"
-rel="nofollow">Daphnia-base</a>, where the gene reports are structured
+
 XML, with a style sheet to display. For example, see this gene page,
 <a href="http://wfleabase.org/lucegene/lookup?id=NCBI_GNO_292134"
-class="external free"
-rel="nofollow">http://wfleabase.org/lucegene/lookup?id=NCBI_GNO_292134</a>
+
 (view the page source to see structured gene page XML). Or see these
 screen shots
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/Daphnia-genepage.png" class="internal"
@@ -167,8 +161,7 @@ this gene page XML, suitable for search and display, in
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/genepages"
 class="external text" rel="nofollow">GMOD genepages in SVN</a> or
 <a href="http://eugenes.org/gmod/gene-report-examples/"
-class="external free"
-rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a> for
+
 `bin/gff2ugpxml.pl`.
 
 Search and display is then provided by the GMOD
@@ -179,7 +172,7 @@ Search and display is then provided by the GMOD
 
 A new Pea aphid genome annotation at
 <a href="http://insects.eugenes.org/aphid/" class="external free"
-rel="nofollow">http://insects.eugenes.org/aphid/</a> offers rapid access
+
 to computed gene models, putative functions and database accession
 matches.
 

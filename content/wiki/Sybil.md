@@ -28,19 +28,15 @@ Sybil is a web-based system for comparative genomics visualizations. It
 is currently developed by engineers at
 <a href="http://jcvi.org" class="external text" rel="nofollow">JCVI</a>
 and at <a href="http://medschool.umaryland.edu" class="external text"
-rel="nofollow">IGS at the University of Maryland School of Medicine</a>.
 
 More information is available at the sourceforge site which is the
 primary repository for sybil code and sybil documentation.
 
 <a href="http://sybil.sourceforge.net" class="external text"
-rel="nofollow">sybil sourceforge home page</a>
 
 <a href="http://sourceforge.net/projects/sybil" class="external text"
-rel="nofollow">sybil sourceforge project site</a>
 
 <a href="http://sybil.wiki.sourceforge.net/" class="external text"
-rel="nofollow">sybil sourceforge wiki</a>
 
 Development is accelerating and is focused on usability, development of
 new views and documentation and integration of new data types (i.e.

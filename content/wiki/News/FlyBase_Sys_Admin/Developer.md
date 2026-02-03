@@ -13,7 +13,7 @@ width="200" height="49" alt="FlyBase Opening" /></a>
 The <a href="http://www.gen.cam.ac.uk/Research/flybase.htm"
 class="external text" rel="nofollow">Cambridge (UK) division</a> of
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> currently seeks a <a
+
 href="http://www.admin.cam.ac.uk/offices/hr/jobs/vacancies.cgi?job=5487"
 class="external text" rel="nofollow">Systems Administrator/Software
 Developer</a>, working either full or part-time to support its team of
@@ -37,11 +37,7 @@ details and application procedure.
 
 Informal enquiries to Steven Marygold
 (<a href="mailto:sjm41@gen.cam.ac.uk" class="external text"
-rel="nofollow">sjm41@gen.cam.ac.uk</a>).
-
-
 
 *Posted to the [GMOD News](../../GMOD_News) on 2009/07/31*
 
-
-- [News Items](../../Category%253ANews_Items)
+- [News Items](../../Category:News_Items)

@@ -121,7 +121,7 @@ The previous example partitioned subtracks on a single dimension. This
 example will show how to create individually-selectable subtracks based
 on multiple selection dimensions. As an example, we use a track based on
 the <a href="http://www.modencode.org" class="external text"
-rel="nofollow">modENCODE</a> ChIP-seq tracks. These have four different
+
 dimensions, corresponding to the antibody used to bring down
 chromatin-bound transcription factors, the organism's developmental
 stage, the temperature at which the organism was grown, and whether the

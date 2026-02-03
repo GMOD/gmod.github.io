@@ -34,8 +34,7 @@ not a problem.
 
 These database dumps are provided by Eric Rasche and the
 <a href="https://cpt.tamu.edu/" class="external text"
-rel="nofollow">Center for Phage Technology at Texas A&amp;M
-University</a>. Please
+
 <a href="https://github.com/erasche/chado-schema-builder/issues/new"
 class="external text" rel="nofollow">open an issue</a> if you are
 interested in having:

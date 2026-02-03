@@ -10,14 +10,14 @@ width="100" height="95" alt="GBrowse NGS Tutorial" />](../GBrowse_NGS_Tutorial)
 
 A tutorial on using [GBrowse 2 to visualize next generation sequencing
 (NGS) data](../GBrowse_NGS_Tutorial) is now
-available. The [tutorial](../Category%253ATutorials)
+available. The [tutorial](../Category:Tutorials)
 walks through how to configure the [GBrowse](../GBrowse.1) 2
 genome browser to display
 <a href="../Next_generation_sequencing" class="mw-redirect"
 title="Next generation sequencing">next generation sequencing</a> (NGS)
 data using the
 <a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam. This tutorial
+
 was originally taught at the [Bioinformatics Australia 2009 (BA2009)
 GMOD Workshop](../BA2009). The tutorial includes a VMware image to
 work with and step-by-step instructions for visualizing the example
@@ -29,15 +29,12 @@ read-pairs.
 
 A
 [poster](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GBrowse_nextgen_poster.pdf)
-(by [Scott Cain](../User%253AScott)) demonstrating how to use
+(by [Scott Cain](../User:Scott)) demonstrating how to use
 the adaptor with *GBrowse 1 and GBrowse 2* is also available.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

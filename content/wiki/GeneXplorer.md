@@ -4,7 +4,7 @@ title: "GeneXplorer"
 # GeneXplorer
 
 GeneXplorer is a web application that allows clustered
-[microarray](/wiki/Category%3AMicroarrays) data to be
+ data to be
 browsed interactively via the web, and can be used either for research
 purposes, or for providing web supplements to accompany microarray
 publication.
@@ -63,7 +63,6 @@ In addition, GeneXplorer requires the C-program, correlations, which is
 included in the distribution. This must be compiled with an ANSI
 compatible compiler, such as
 <a href="http://gcc.gnu.org/" class="external text"
-rel="nofollow">gcc.</a>
 
 The Clustered datafiles must be created using a clustering program that
 produces files in the
@@ -71,7 +70,7 @@ produces files in the
 class="external text" rel="nofollow">cdt format</a>. Such software
 includes Mike Eisen's
 <a href="http://rana.lbl.gov/EisenSoftware.htm" class="external text"
-rel="nofollow">Cluster</a>, or
+
 <a href="http://genetics.stanford.edu/~sherlock/cluster.html"
 class="external text" rel="nofollow">XCluster</a>.
 
@@ -82,7 +81,6 @@ See the README file at the download site (see below).
 ## Contact
 
 <a href="mailto:sherlock@genome.stanford.edu" class="external text"
-rel="nofollow">Gavin Sherlock</a>.
 
 ## Downloads
 

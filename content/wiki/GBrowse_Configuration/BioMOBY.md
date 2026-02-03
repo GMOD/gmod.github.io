@@ -178,8 +178,6 @@ HINTS
 Global_Keyword namespace. This will trigger discovery of MedLine
 searches for papers about that organism.
 
-
-
 ## BioMOBY Services
 
 A selection of services are distributed with the Gbrowse package that
@@ -211,7 +209,7 @@ required to provide a contact email address to which people can contact
 you v.v. the services you are providing. d. CGI_URL: This is simply the
 URL to the folder from which you are serving your gbrowse scripts. e.g.
 <a href="http://flybase.org/cgi-bin/gbrowse/" class="external free"
-rel="nofollow">http://flybase.org/cgi-bin/gbrowse/</a> DO NOT include
+
 the script name in this parameter! It is the folder only!! e.
 \[Namespace_Class_Mappings\]: This section is just a list of tuples
 indicating the relationship between various entities in your database

@@ -3,7 +3,7 @@ title: "Running a GBrowse2 render farm"
 ---
 # Running a GBrowse2 render farm
 
-[GBrowse 2](/wiki/Category%3AGBrowse_2) can be configured
+ can be configured
 to use one or more "render slave" daemons. A render slave is a small
 Perl process that runs in the background, processing requests to render
 GBrowse tracks. By distributing several render slaves across one or more
@@ -150,8 +150,6 @@ prerequisites are installed and working properly. The slave requires all
 the same prerequisites as the master server, including Bio::Perl, GD,
 CGI::Session, JSON, etc. However, an Apache server is **not** needed to
 run a slave.
-
-
 
 ### Running the Render Slave Daemon
 

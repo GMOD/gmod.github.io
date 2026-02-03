@@ -7,7 +7,6 @@ title: "2012 GMOD Summer School"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Summer-school-splash.jpg" width="779"
 height="395" alt="2012 Summer School splash screen" />
 
-
 The GMOD Summer School is a five day course that covers the use of
 several widely used GMOD components in the context of a organism or
 clade database. The course is taught by members of the projects'
@@ -56,7 +55,7 @@ The course covered the following topics in detail:
 <td><a href="/wiki/AWS_walkthrough" title="AWS walkthrough">Tutorial</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a><br />
+
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a></td>
@@ -67,7 +66,7 @@ title="GBrowse">GBrowse</a></td>
 title="Chado Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a><br />
+
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a></td>
@@ -78,7 +77,7 @@ title="GBrowse">GBrowse</a></td>
 title="Galaxy Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
 <td><a href="http://galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy Project</a>, <a href="http://emory.edu/"
+
 class="external text" rel="nofollow">Emory University</a><br />
 <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
 </tr>
@@ -88,7 +87,7 @@ class="external text" rel="nofollow">Emory University</a><br />
 title="GBrowse Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a><br />
+
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a></td>
@@ -99,7 +98,7 @@ title="GBrowse">GBrowse</a></td>
 title="GBrowse syn Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
 <td><a href="http://iplantcollaborative.org" class="external text"
-rel="nofollow">iPlant Collaborative</a>, <a href="http://www.cshl.edu"
+
 class="external text" rel="nofollow">CSHL</a><br />
 <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
 </tr>
@@ -109,7 +108,7 @@ class="external text" rel="nofollow">CSHL</a><br />
 title="GFF Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a><br />
+
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
 title="GBrowse">GBrowse</a></td>
@@ -121,7 +120,7 @@ title="JBrowse Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
 Buels</a></td>
 <td><a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a><br />
+
 <a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
 </tr>
 <tr class="even">
@@ -130,7 +129,7 @@ rel="nofollow">University of California, Berkeley</a><br />
 title="MAKER Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
 <td><a href="http://utah.edu" class="external text"
-rel="nofollow">University of Utah</a><br />
+
 <a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="odd">
@@ -139,7 +138,7 @@ rel="nofollow">University of Utah</a><br />
 title="SOBA Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
 <td><a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a><br />
+
 <a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="even">
@@ -149,7 +148,7 @@ title="Tripal Tutorial (v1.0)">Tutorial</a></td>
 <td><a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen
 Ficklin</a></td>
 <td><a href="http://www.wsu.edu" class="external text"
-rel="nofollow">Washington State University</a><br />
+
 <a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
 </tr>
 <tr class="odd">
@@ -158,8 +157,7 @@ rel="nofollow">Washington State University</a><br />
 title="WebApollo Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a></td>
 <td><a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects
-(BBOP)</a><br />
+
 <a href="/wiki/Apollo.1" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo.1"
 title="WebApollo">WebApollo</a></td>
 </tr>
@@ -183,7 +181,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="93" alt="NESCent" /></a>
 
 GMOD thanks the <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> for
+
 its continued support of the GMOD project and for providing the venue
 for this course. NESCent is interested in outreach to groups who are
 underrepresented in evolutionary biology and improving evolution
@@ -192,5 +190,5 @@ general public that meet these goals.
 
 GMOD thanks the generous grant from the Amazon
 <a href="http://aws.amazon.com/grants/" class="external text"
-rel="nofollow">AWS in Education program</a>, which provided free compute
+
 time on Amazon Web Services for the course tutors and participants.

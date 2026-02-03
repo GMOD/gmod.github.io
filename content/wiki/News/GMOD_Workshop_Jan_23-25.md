@@ -12,7 +12,7 @@ A <a href="http://evomics.org/workshops/advanced-topics/gmod/"
 class="external text" rel="nofollow">GMOD Workshop</a> is being held
 23-25 January in
 <a href="http://www.ckrumlov.info/php/" class="external text"
-rel="nofollow">Český Krumlov, Czech Republic</a>, as part of the
+
 <a href="http://evomics.org/workshops/advanced-topics/"
 class="external text" rel="nofollow">Advanced Topics Workshops</a>
 immediately following the <a
@@ -42,11 +42,8 @@ class="external text" rel="nofollow">Workshop on Genomics</a> features
 some [Galaxy](../Galaxy.1) content, and is still accepting
 application as well.
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/11/17*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

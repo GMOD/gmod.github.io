@@ -185,14 +185,10 @@ Purging inside your program is simple. Use a Bio%253A%253AGMOD::CMap::Admin
 object (see "Importing Data" for creating this object) to call the
 purge_cache method.
 
-
-
        $admin->purge_cache( );
 
 A cache level can be specified. See the section below on cache levels
 for more information.
-
-
 
        $admin->purge_cache( $cache_level );
 
@@ -200,8 +196,6 @@ for more information.
 
 To purge the cache on the command line use cmap/bin/cmap_admin.pl. You
 can either use the menu system or by command line:
-
-
 
      $ cmap_admin.pl [-d data_source] [--cache_level level] --action purge_query_cache
 
@@ -240,8 +234,6 @@ documentation written on this topic.
 To create data in the CMap database, a CMap admin object needs to be
 created. In the following example, \$data_source stores the data source
 name that identifies which configuration file to use.
-
-
 
        use Bio%253A%253AGMOD::CMap::Admin;
 
@@ -444,8 +436,6 @@ play around with it.
 To finish creating the correspondences in the queue, simply run the
 method again with no arguments.
 
-
-
      $admin->feature_correspondence_create();
 
 #### Parameters
@@ -475,8 +465,6 @@ is stored in the correspondence_evidence object.
 List of evidence hashes that correspond to the evidence types that this
 correspondence should have. The hashes must have a "evidence_type_acc"
 key. It can also have a "score" value.
-
-
 
        my $evidences = [
            {   evidence_type_acc => $evidence_type_acc,
@@ -592,8 +580,6 @@ To query the data, another object is needed which we will call the
 \$sql_object. The \$sql_object can be created from any CMap object. For
 the following examble, we'll use the \$cmap_admin object from the
 "Importing Data" section.
-
-
 
      my $sql_object = $cmap_admin->sql();
 
@@ -1075,7 +1061,6 @@ questions or comments.
 You can also leave a bug report for CMap at the SourceForge site for
 GMOD,
 <a href="http://sourceforge.net/projects/gmod/" class="external free"
-rel="nofollow">http://sourceforge.net/projects/gmod/</a>.
 
 ## AUTHOR
 

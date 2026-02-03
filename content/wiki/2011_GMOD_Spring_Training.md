@@ -37,7 +37,7 @@ alt="March 2011 GMOD Spring Training Participants, minus a few" />
 
 The ***2011 GMOD Spring Training*** was held March 8-12 at the
 <a href="http://www.nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina, as part of [GMOD Americas
 2011](/wiki/GMOD_Americas_2011). Like previous [GMOD
 Schools](/wiki/GMOD_Schools), this one focused on installing,
@@ -182,15 +182,7 @@ project staff:
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%3ASficklin) | [Tripal](/wiki/Tripal.1) | <a href="http://www.wsu.edu" class="external text"
-rel="nofollow">Washington State University</a> | Alex Kalderimis | [InterMine](/wiki/InterMine) | <a href="http://flymine.org" class="external text"
-rel="nofollow">FlyMine</a> | [Barry Moore](/wiki/User%3ABmoore) | [MAKER](/wiki/MAKER.1) | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%3AElee) | [Apollo](/wiki/Apollo.1) | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1), [GBrowse](/wiki/GBrowse.1) | <a href="http://iplantcollaborarive" class="external text"
-rel="nofollow">iPlant Collaborative</a> | [Mitch Skinner](/wiki/User%3AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> |
+| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
 
 # Prerequisites
 
@@ -230,21 +222,18 @@ course:
 
 |
 |----|----|----|
-| <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img |  |  |
+
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a> | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
-alt="Linux" /> | A free VMware player is available for [Microsoft Windows](/wiki/Category%3AWindows) and [Linux](/wiki/Category%3ALinux) [operating systems](/wiki/Glossary#Operating_System) from <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it. There are multiple versions. Be sure to download a version that can run on your laptop. |
-
-
+alt="Linux" /> | A free VMware player is available for  and  [operating systems](/wiki/Glossary#Operating_System) from <a href="http://vmware.com/products/player/" class="external text"
 
 ### VMware on Mac OS X
 
 |----|----|
 | <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
-alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under [Mac OS X](/wiki/Category%3AMac_OS_X). However, there are several other options, **all of which require an Intel Mac**: |
+alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under . However, there are several other options, **all of which require an Intel Mac**: |
 
 VMware Fusion
 
@@ -252,8 +241,7 @@ VMware Fusion
 | <a href="http://www.vmware.com/products/fusion/" rel="nofollow" |  |
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a> | <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a> (<a href="http://www.vmware.com/a/buylink/10" class="external text"
-rel="nofollow">$80/corporate</a>, <a href="http://www.vmware.com/vmwarestore/academicstore.html"
+
 class="external text" rel="nofollow">$40/Academic</a>) allows you to run VMware images (as well as Windows and Linux) under Mac OS. **We recommend this option for Mac users. There is a fully functional, 30 day free trial version of VMware Fusion available for download.** |
 
 VirtualBox
@@ -262,7 +250,6 @@ VirtualBox
 | <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" /> | <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
-rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel Macs (and Windows, Linux and Solaris too). It claims to be capable of running VMware images, *but we have not tested this with our images.* |
 
 # Applications
 
@@ -289,7 +276,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="93" alt="NESCent" /></a>
 
 The <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> is
+
 hosting this course and all other [GMOD Americas
 2011](/wiki/GMOD_Americas_2011) events. NESCent is
 interested in outreach to groups who are underrepresented in
@@ -325,7 +312,7 @@ Help spread the word about GMOD Spring Training and other [GMOD Americas
 distributing [this
 flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf),
 or the [event
-announcements](/wiki/GMOD_News#GMOD_Spring_Training%3A_Apply_Now) to
+announcements](/wiki/GMOD_News#GMOD_Spring_Training:_Apply_Now) to
 your communities, mailing lists, and organizations.
 
 There are many organizations out there that are struggling to cope with

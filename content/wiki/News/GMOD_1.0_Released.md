@@ -8,8 +8,6 @@ downloaded from SourceForge at:
 
 <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=19511"
-class="external free"
-rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=19511</a>
 
 This release comes at a time when both the
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> schema
@@ -21,10 +19,10 @@ In addition to the Chado schema, this release includes:
 
 - Tools for creating a new database.
 - Tools for populating it with
-  [ontology](../Category%253AOntologies) data (using
+  [ontology](../Category:Ontologies) data (using
   go-perl).
 - A fairly new tool for updating ontologies contributed by the
-  developers of [SGN](../Category%253ASGN), the Sol Genomics
+  developers of [SGN](../Category:SGN), the Sol Genomics
   Network.
 - Tools for loading sequence feature (i.e. [GFF3](../GFF3)) data.
 - GMODTools for creating bulk download files like GFF and Fasta (See
@@ -40,7 +38,7 @@ should also work well with
 With this release, there are so many people in the GMOD community that I
 would like to thank that I couldn't possibly list them all, but at a
 bare minimum, I would like to thank the developers at
-[FlyBase](../Category%253AFlyBase) and the Berkeley
+[FlyBase](../Category:FlyBase) and the Berkeley
 Drosophila Genome Project, especially Chris Mungall and Dave Emmert, as
 well as others who have contributed code to the GMOD project over the
 past several years.
@@ -48,13 +46,9 @@ past several years.
 Please direct any questions about using this release to the GMOD schema
 mailing list,
 <a href="mailto:gmod-schema@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-schema@lists.sourceforge.net</a>.
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/03/31*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

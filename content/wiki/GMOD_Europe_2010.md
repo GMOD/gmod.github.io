@@ -86,7 +86,7 @@ title="Satellite Meetings - GMOD Europe 2010">Satellite Meetings</a> and
 <a href="#15_September:_InterMine_Workshop">InterMine and BioMart
 workshops</a> over the next two days. GMOD Europe 2010 was hosted by the
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">Cambridge Computational Biology Institute</a> and the <a
+
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
 class="external text" rel="nofollow">School of Biological Sciences
 Bioinformatics Training Facility</a>, both at the University of
@@ -278,7 +278,7 @@ GMOD Europe 2010 started with the [September 2010 GMOD
 Meeting](/wiki/September_2010_GMOD_Meeting),
 held 13-14 September. The meeting was was hosted by the
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">Cambridge Computational Biology Institute</a>. [GMOD
+
 Meetings](/wiki/Meetings) are a mix of
 [user](/wiki/GMOD_Membership#Users) and
 [developer](/wiki/GMOD_Membership#Developers) presentations,
@@ -320,9 +320,9 @@ held on Wednesday, 15 September.
 biological data warehouses with a powerful web interface and query
 [API](/wiki/Glossary#API). See
 <a href="http://www.flymine.org" class="external text"
-rel="nofollow">FlyMine</a> or
+
 <a href="http://www.modmine.org" class="external text"
-rel="nofollow">ModMine</a> for examples. InterMine can integrate data
+
 from many common biological formats and is easy to extend to include
 your own data. Parsers are included to load data from
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, Ensembl,
@@ -353,9 +353,8 @@ BioMart (0.8) Java libraries that supersedes the current Perl
 infrastructure. The hands-on primarily focused on the resources
 currently available at the
 <a href="http://www.biomart.org/biomart/martview" class="external text"
-rel="nofollow">BioMart Central Portal</a> and
+
 <a href="http://www.biomart.org/" class="external text"
-rel="nofollow">other BioMart portals</a>.
 
 See the [BioMart
 Workshop](/wiki/BioMart_Workshop_-_GMOD_Europe_2010)
@@ -370,7 +369,6 @@ See the University's
 class="external text" rel="nofollow">Getting to Cambridge page</a> for
 information about arriving by train (also try
 <a href="http://www.thetrainline.com" class="external text"
-rel="nofollow">TheTrainline.com</a>), car, bus, or air.
 
 ### Lodging
 

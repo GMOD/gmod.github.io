@@ -10,13 +10,12 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="108" alt="Arthropod Genomics Consortium" /></a>
 
 The <a href="http://arthropodgenomes.org" class="external text"
-rel="nofollow">Arthropod Genomics Consortium</a> encourages
+
 collaboration and information exchange amongst arthropod researchers.
 The consortium, launched at the
 <a href="http://www.k-state.edu/agc/symp2009/" class="external text"
-rel="nofollow">2009 Arthropod Genomics Symposium</a>, has now started
+
 <a href="http://arthropodgenomes.org" class="external text"
-rel="nofollow">a wiki</a> to enable this community to self-organize:
 
 *Our goal is to provide a central location for information about
 arthropod genomics projects, bioinformatics tools, and people interested
@@ -29,18 +28,14 @@ announcements.*
 <a href="http://www.ksu.edu/biology/faculty_pages/brown.html"
 class="external text" rel="nofollow">Sue Brown</a>, Director,
 <a href="http://www.k-state.edu/agc/" class="external text"
-rel="nofollow">K-State Arthropod Genomics Center</a>
 
 If you are an arthropod researcher, please consider <a
 href="http://arthropodgenomes.org/wiki/Main_Page#tab=Adding_data_to_this_wiki#tab=Adding_data_to_this_wiki"
 class="external text" rel="nofollow">joining this growing consortium</a>.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/12/18*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -12,9 +12,9 @@ alt="Fourmidable opening" /></a>
 *The deadline for this position has now passed.*
 
 The <a href="http://www.isb-sib.ch/" class="external text"
-rel="nofollow">Swiss Institute of Bioinformatics</a> and the
+
 <a href="http://www.unil.ch/dee/page6763.html" class="external text"
-rel="nofollow">Keller lab</a> in Lausanne have an opening for a
+
 full-time bioinformatician. In brief, this position will focus on the
 assembly and annotation of genomic sequence from ants, as well as
 sharing the results with molecular myrmecologists via a GMOD database.
@@ -29,10 +29,7 @@ and application procedure
 Informal enquiries to yannick.wurm \at\\ until.ch or laurent.falquet
 \at\\ isb-sib.ch
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/08/15,
 updated 2009/09/27*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

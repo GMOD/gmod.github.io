@@ -11,7 +11,7 @@ width="170" height="101" alt="GMOD Evo Hackathon" />](../GMOD_Evo_Hackathon)
 The [GMOD Evo Hackathon](../GMOD_Evo_Hackathon) was
 held November 8-12 at
 <a href="http://www.nescent.org" class="external text"
-rel="nofollow">NESCent</a>. The
+
 <a href="https://www.nescent.org/wg_gmodevohackathon/Participants"
 class="external text" rel="nofollow">30 participants</a> self-organized
 into eight groups with at least one group addressing each of the event's
@@ -48,7 +48,7 @@ JBrowse code and architecture.
 <a href="https://www.nescent.org/wg_gmodevohackathon/PhyloBox"
 class="external text" rel="nofollow">PhyloBox</a>
 <a href="http://phylobox.appspot.com/" class="external text"
-rel="nofollow">PhyloBox</a> is a flexible and fast web based tree
+
 visualization program. At the hackathon the PhyloBox team extended
 PhyloBox in numerous ways to make it a "widget" that can interact with
 other widgets. PhyloBox documentation was also created.
@@ -86,7 +86,7 @@ class="external text" rel="nofollow">Galaxy + HyPhy</a>
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
-rel="nofollow">HyPhy</a> as the prototype application. The Galaxy and
+
 HyPhy code bases were modified to support this.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
@@ -97,12 +97,9 @@ handling of very large trees or large numbers of small trees. BioPerl
 now supports storing such trees in a lightweight database instead of in
 memory.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/12/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

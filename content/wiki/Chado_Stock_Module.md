@@ -155,8 +155,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: stock_cvterm
 
 stock_cvterm links a stock to cvterms. This is for secondary cvterms;
@@ -172,8 +170,6 @@ primary cvterms should use stock.type_id.
 stock_cvterm Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stock_dbxref
 
@@ -233,8 +229,6 @@ stock_dbxref Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: stock_genotype
 
 Simple table linking a stock to a genotype. Features with genotypes can
@@ -251,8 +245,6 @@ stock_genotype Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: stock_pub
 
 Provenance. Linking table between stocks and, for example, a stocklist
@@ -267,8 +259,6 @@ computer file.
 stock_pub Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stock_relationship
 
@@ -289,8 +279,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: stock_relationship_pub
 
 Provenance. Attach optional evidence to a stock_relationship in the form
@@ -305,8 +293,6 @@ of a publication.
 stock_relationship_pub Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stockcollection
 
@@ -381,8 +367,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: stockcollection_stock
 
 stockcollection_stock links a stock collection to the stocks which are
@@ -397,8 +381,6 @@ contained in the collection.
 stockcollection_stock Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stockcollectionprop
 
@@ -417,8 +399,6 @@ URLs.
 stockcollectionprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stockprop
 
@@ -443,8 +423,6 @@ Tables referencing this one via Foreign Key Constraints:
 - [stockprop_pub](/wiki/Chado_Tables#Table:_stockprop_pub)
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: stockprop_pub
 

@@ -168,9 +168,8 @@ pre-packaged virtual machines with all libraries, tools and other
 dependencies preinstalled. There are two standard GBrowse VMs, one for
 running on your desktop using
 <a href="http://www.virtualbox.org" class="external text"
-rel="nofollow">VirtualBox</a>, and the other for running on
+
 <a href="http://aws.amazon.com" class="external text"
-rel="nofollow">Amazon Web Services</a>.
 
 Please see [GBrowse2 VMs](/wiki/GBrowse2_VMs) for a list of the
 VMs that are available to use, plus a quick start guide to using these
@@ -260,7 +259,7 @@ GBrowse is controlled by a set of text configuration files. You will log
 into the web server machine and edit these files using a text editor.
 Alternatively you can use
 <a href="http://webgbrowse.cgb.indiana.edu" class="external text"
-rel="nofollow">WebGBrowse</a>, which is a web-based system for
+
 initializing, configuring and customizing GBrowse databases. It is an
 add-on to GBrowse and should only be installed after GBrowse is up and
 running.
@@ -499,7 +498,7 @@ These configuration options specify where
 [plugins](/wiki/GBrowse_Plugins), language translation
 files, templates and
 <a href="http://www.biomoby.org" class="external text"
-rel="nofollow">MOBY</a> configuration files are located. If relative
+
 paths are given here, they are taken relative to the **config_base**.
 The default is to place them in subdirectories of **config_base**.
 
@@ -1193,8 +1192,6 @@ default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
 
-
-
     [gene:details]
     Translation = sub {
                    my $value = shift;
@@ -1270,7 +1267,7 @@ automated scripts to discover the species, genomic build, the name of
 the maintainer, and other descriptive information about the data source.
 The information is compatible with the
 <a href="http://www.dasregistry.org/" class="external text"
-rel="nofollow">DAS Registration server</a> and in a coming GBrowse
+
 release will allow GBrowse instances to automatically register
 themselves so that users and automated scripts can easily find and
 extract information from the browser.
@@ -1330,7 +1327,6 @@ This provides an example range for new users to look at.
 **-species**,**-taxid**
 These indicate the species name (in long binomial format) and the
 <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/" class="external text"
-rel="nofollow">NCBI taxon id</a>.
 
 Note that the support for automatic registration and discovery of
 GBrowse data sources is not available in the 2.00 release, but is

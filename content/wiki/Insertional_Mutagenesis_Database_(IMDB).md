@@ -18,7 +18,7 @@ by transposons, T-DNAs and other knockout techniques. This project was
 developed from ATIDB, the Arabidopsis thaliana insertion database.
 **Demo & Screenshots**
 See <a href="http://atidb.cshl.org/" class="external text"
-rel="nofollow">http://atidb.cshl.org</a> for a database of Arabidopsis
+
 insertional mutants.
 **Requirements**
 MySQL, gbrowse and Perl.

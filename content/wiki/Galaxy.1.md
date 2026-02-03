@@ -22,13 +22,5 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 <a href="http://opensource.org/licenses/AFL-3.0" class="external text"
-rel="nofollow">Academic Free License 3.0</a>
 
 Resources
-
-- [Analysis](/wiki/Category%3AAnalysis)
-- [Annotation](/wiki/Category%3AAnnotation)
-- [Comparative
-  Genomics](/wiki/Category%3AComparative_Genomics)
-- [GMOD Components](/wiki/Category%3AGMOD_Components)
-- [Galaxy](/wiki/Category%3AGalaxy)

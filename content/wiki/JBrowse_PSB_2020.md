@@ -3,8 +3,6 @@ title: "JBrowse PSB 2020"
 ---
 # JBrowse PSB 2020
 
-
-
 ## Overview
 
 In this workshop, we present an introduction to the JBrowse genome
@@ -28,8 +26,6 @@ to a more modular architecture and a React-style model where the
 rendered DOM is a function of application state. Many new features are
 available in JBrowse 2 and this part of the workshop will introduce them
 for the first time.
-
-
 
 #### Intended Audience
 

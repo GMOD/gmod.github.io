@@ -53,8 +53,7 @@ Progress report submitted by Scott Cain, GMOD Coordinator.
 In the past nine months since the last progress report (see the 2006
 progress report at
 <a href="http://blog.gmod.org/files/GMOD_2006_update.doc"
-class="external free"
-rel="nofollow">http://blog.gmod.org/files/GMOD_2006_update.doc</a>), the
+
 GMOD project has show significant progress in several areas. There have
 been meetings, software releases and the GMOD website was revamped to
 make it more useful and intuitive to users.
@@ -65,13 +64,11 @@ Since the last progress report, there was a meeting held in conjunction
 with the Plant and Animal Genome meeting in San Diego in January of
 2007. Full reports were written and are available on the GMOD website;
 see <a href="http://www.gmod.org/wiki/index.php/MOD_Face_Summary"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/index.php/MOD_Face_Summary</a>
+
 for the summary of what was covered the first day when model organism
 database user interfaces was discussed, and
 <a href="http://www.gmod.org/wiki/index.php/GMOD_Middleware"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/index.php/GMOD_Middleware</a>
+
 for the summary of the second day of the meeting, when software
 interfaces (i.e., middleware) for Chado were discussed. The meeting was
 well attended by approximately 60 people representing more than 25
@@ -90,7 +87,7 @@ Based on a documentation requirements analysis conducted by Brian
 Osborne within the context of the GMOD documentation and helpdesk
 initiative spearheaded by NESCent
 (<a href="http://www.nescent.org/" class="external free"
-rel="nofollow">http://www.nescent.org/</a>), it became apparent at the
+
 GMOD meeting in January that the GMOD homepage and the on-line
 documentation needed to be revamped to make it more accessible to the
 user community. As one of the results, the GMOD website was moved from a
@@ -101,7 +98,7 @@ documentation. Spearheaded by Brian Osborne and NESCent, considerable
 effort was put into collecting, organizing, and where necessary,
 creating documentation for various GMOD components. The old GMOD website
 remains as <a href="http://blog.gmod.org/" class="external free"
-rel="nofollow">http://blog.gmod.org/</a>, where it is used as a weekly
+
 project update tool for several of the developers working on GMOD
 projects.
 
@@ -131,9 +128,6 @@ planaria database) and Sol Genomics Network (a Solanaceae genome
 database) and VectorBase (a database for Invertebrate Vectors of Human
 Pathogens). A list of known GMOD users is at
 <a href="/wiki/GMOD_Users"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/index.php/GMOD_Users</a>.
-
 
 Several GMOD projects submitted project reports to be included with the
 report and follow below.
@@ -309,8 +303,6 @@ Report submitted by Peter D. Karp
 Please note that the full history of updates to Pathway Tools can be
 found at URL
 <a href="http://bioinformatics.ai.sri.com/ptools/release-notes.html"
-class="external free"
-rel="nofollow">http://bioinformatics.ai.sri.com/ptools/release-notes.html</a>.
 
 Significant updates funded under this grant since the last report in
 August 2006 are as follows.
@@ -438,7 +430,7 @@ they could extend for annotating such things as the terminator of
 transcription, repeated regions, conserved regions, predicted ncRNA, and
 so forth. They used the QSOS method 1.5
 (<a href="http://www.qsos.org" class="external free"
-rel="nofollow">http://www.qsos.org</a>) for this evaluation, and based
+
 on the metrics of industrialization (documentation, quality method,
 installation, easy to use), adaptability (modularity, modification and
 extension of code) and data input/output formats allowed, Apollo was
@@ -496,15 +488,11 @@ Our new work is focused on the following specific aims:
 The work will be done in collaboration with The Arabidopsis Information
 Resource (TAIR) at the Carnegie Institution.
 
-
-
 ### Project Generated Resources
 
 This work has generated software and associated documentation that is
 freely available to other investigators. These can be accessed in from
 the GMOD web site at <a href="http://www.gmod.org/wiki/index.php/Apollo"
-class="external free"
-rel="nofollow">http://www.gmod.org/wiki/index.php/Apollo</a>.
 
 ## RGD
 
@@ -521,7 +509,7 @@ sites, for example:
   <a href="http://www.biokao.com/gviewer.html" class="external free"
   rel="nofollow">http://www.biokao.com/gviewer.html</a>
 - Boston University
-  [Phenotype](/wiki/Category%3APhenotypes) Browser
+   Browser
   <a href="http://gmed.bu.edu/" class="external free"
   rel="nofollow">http://gmed.bu.edu/</a>
 - Apropos annotation tool
@@ -545,8 +533,6 @@ for a feature or region.
 - Added community annotation site (Mediawiki page) for each gene
 - Rewrote search engine and display code for website
 
-
-
 ### Modware
 
 - First release May, 2006
@@ -567,7 +553,7 @@ updates and management efforts for wFleaBase (Daphnia), DroSpeGe
 
 The Daphnia genome database
 (<a href="http://wFleaBase.org/" class="external free"
-rel="nofollow">http://wFleaBase.org/</a>) has been updated with several
+
 new genome data components for this emerging model organism's public
 genome release in July 2007. These include gene predictions including
 NCBI's Gnomon, JGI's models, and GIL contributions, EST/cDNA assemblies
@@ -576,7 +562,7 @@ GBrowse, and Blast updates.
 
 The DroSpeGe comparative genome database of twelve Drosophila species
 (<a href="http://insects.eugenes.org/DroSpeGe/" class="external free"
-rel="nofollow">http://insects.eugenes.org/DroSpeGe/</a>) has been
+
 updated with several annotation contributions from the genome
 informatics community, and efforts from GIL for various genome
 summaries, phylogenetic identification of 1000's of new D.melanogaster
@@ -584,7 +570,7 @@ genes, analysis of gene gain/loss in GO groups,
 
 Bionet/BIOSCI news and discussion groups
 (<a href="http://www.bio.net/" class="external free"
-rel="nofollow">http://www.bio.net/</a>) provides world-wide public
+
 discussion in several areas of biosciences. These include several model
 organism communities (arabidopsis, yeast, celegans, drosophila,
 zebrafish, chlamydomonas).
@@ -601,7 +587,6 @@ databases) presented aspects of their UI that related to a common set of
 use cases. This brought to light several useful topics that that are not
 widely known, and that new and old MODs can benefit from. See
 <a href="http://www.gmod.org/MOD_Face_Summary" class="external free"
-rel="nofollow">http://www.gmod.org/MOD_Face_Summary</a>
 
 ### GMODTools updates
 
@@ -611,8 +596,6 @@ NCBI GenBank genomes. This includes contributions to GMOD and BioPerl
 shared code base. GBrowse Chado Editor: This May 2007 addition is a
 simple way to add community annotations to Chado database. See
 <a href="http://iubio.bio.indiana.edu/gmod/genbank2chado/"
-class="external free"
-rel="nofollow">http://iubio.bio.indiana.edu/gmod/genbank2chado/</a>
 
 ### Genome Data Grid Tools
 
@@ -627,8 +610,6 @@ systems, is a problem today for bioinformatics. The planned work in this
 area addresses these problems with data grid methods that partition
 large genome database sets for effective use of Grid systems.
 PRELIMINARY: <a href="http://gmod.cvs.sourceforge.net/gmod/genogrid/"
-class="external free"
-rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/genogrid/</a>
 
 ### Publications and outreach
 
@@ -654,8 +635,6 @@ rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/genogrid/</a>
   <a href="http://www.gmod.org/" class="external free"
   rel="nofollow">http://www.gmod.org/</a>
 
-
-
 ## TAIR
 
 During the past year, TAIR has begun to expand its use of GMOD tools:
@@ -668,4 +647,3 @@ collaboration with Suzi Lewis.
 
 In addition, we are in the process of deploying GBrowse on the
 <a href="http://www.arabidopsis.org" class="external text"
-rel="nofollow">TAIR site</a>.

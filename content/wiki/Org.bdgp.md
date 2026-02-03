@@ -10,20 +10,13 @@ title: "Org.bdgp"
 The org.bdgp toolkit is a library of useful Java classes shared by
 several pieces of GMOD software.
 
-
-
 ## Requirements
 
 JDK 1.2 or higher.
 
-
-
 ## Contact
 
 <a href="http://www.fruitfly.org" class="external free"
-rel="nofollow">http://www.fruitfly.org</a>
-
-
 
 ## Downloads
 

@@ -15,7 +15,7 @@ linux, os x, unix, win\|platform = linux, os x, unix, win\|platform =
 linux, os x, unix, win \| platform = web \| logo = PathwayTools.png \|
 home =
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external free"
-rel="nofollow">http://bioinformatics.ai.sri.com/ptools/</a> \| about =
+
 Pathway Tools is a comprehensive symbolic systems biology software
 system that supports several use cases in bioinformatics and systems
 biology:
@@ -60,9 +60,9 @@ Pathway Tools has four components:
 
 \| screenshot = \| public_server =
 <a href="http://biocyc.org/" class="external free"
-rel="nofollow">http://biocyc.org/</a> \| dl = \| dl_url =
+
 <a href="http://biocyc.org/download.shtml" class="external free"
-rel="nofollow">http://biocyc.org/download.shtml</a> \| dl_src = Source
+
 code is available on execution of software license. \| dl_src_url = \|
 dl_dev = \| dl_dev_url = \| getting_started_preamble = Start with an
 annotated genome in the form of a Genbank file; Pathway Tools will do
@@ -86,7 +86,7 @@ biology</a> <sup>[\[1\]](#cite_note-PMID:19955237-1)</sup> \| papers =
 \| presentations = \| tutorials =
 
 <a href="http://bioinformatics.ai.sri.com/ptools/" class="external text"
-rel="nofollow">Pathway Tools slides</a>
+
 General information about Pathway Tools, including slides from tutorials
 and user guides
 
@@ -98,26 +98,25 @@ Pathway Tools tutorials and workshops
 <a href="http://biocyc.org" class="external text" rel="nofollow">BioCyc
 website</a>, e.g. the
 <a href="http://biocyc.org/ECOLI/" class="external text"
-rel="nofollow">E. coli PGDB</a>, as well as
+
 <a href="http://biocyc.org/otherpgdbs.shtml" class="external text"
-rel="nofollow">a list of PGDBs hosted elsewhere</a>. \| mail =
 
 |                         | --------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------- |                                                     | Mailing List Link       | Description                                                                                                                             | Archive(s) | [Pathway Tools](../Pathway_Tools.1) | ptools-users@ai.sri.com | [Pathway Tools](../Pathway_Tools.1) users list. To subscribe to this list, send a request to ptools-support@ai.sri.com. | _None_     |
 
 \| logo_info = \| dev_ppl = Pathway Tools was developed by
 <a href="http://www.ai.sri.com/pkarp/" class="external text"
-rel="nofollow">Peter D. Karp</a> and coworkers at the
+
 <a href="http://bioinformatics.ai.sri.com/" class="external text"
-rel="nofollow">Bioinformatics Research Group</a> at SRI International.
+
 \| dev_status = The
 <a href="http://pathwaytools.blogspot.com/" class="external text"
-rel="nofollow">Pathway Tools Developers' Corner</a> has updates and
+
 information on current and proposed Pathway Tools developments. \|
 contact_email = <a href="mailto:pkarp@ai.sri.com" class="external text"
-rel="nofollow">Peter Karp</a> \| input = Genbank format; GFF \| output =
+
 Genbank format; SBML; BioPAX \| see_also = See the
 <a href="http://biocyc.org/samples.shtml" class="external text"
-rel="nofollow">samples section</a> of the BioCyc website for details of
+
 the types of data that are stored in a PGDB. \| demo_server = \|
 survey_link = Pathway_Tools \|release date=1999
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**

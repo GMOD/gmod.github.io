@@ -4,14 +4,14 @@ title: "JBrowse Tutorial PAG 2018"
 # JBrowse Tutorial PAG 2018
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the
+Cain](/wiki/User:Scott) at the
 <a href="http://www.intlpag.org" class="external text"
-rel="nofollow">Plant and Animal Genomes</a> meeting using JBrowse
+
 1.12.3.
 
 This tutorial assumes a
 <a href="https://www.virtualbox.org" class="external text"
-rel="nofollow">VirtualBox</a> Ubuntu 16.04 LTS instance with the
+
 tutorial bundle zip file, also available on Amazon S3: <a
 href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+PAG+2018.ova.bz2"
 class="external text" rel="nofollow">JBrowse PAG 2018.ova.bz2</a> (about
@@ -559,7 +559,7 @@ configuration file should now look something like this:
 JBrowse is built with a very flexible and powerful plugin system. There
 is a
 <a href="https://github.com/GMOD/jbrowse-registry" class="external text"
-rel="nofollow">JBrowse plugin registry website</a>, and you can look at
+
 the source code that drives the website in the <a
 href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0ahUKEwjyssGCz7fPAhUK2IMKHfcODEkQFggeMAA&amp;url=https%253A%2F%2Fgithub.com%2FGMOD%2Fjbrowse-registry&amp;usg=AFQjCNEZ9oH5eRRhbZtDcN-W78HcFuAxZw&amp;sig2=J5pff9m409Qv0eQ5Hnli8g"
 class="external text" rel="nofollow">jbrowse-registry github repo</a>,

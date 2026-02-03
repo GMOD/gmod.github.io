@@ -33,7 +33,7 @@ class="external text" rel="nofollow">Homewood Campus</a> of
 <a href="http://jhu.edu" class="external text" rel="nofollow">Johns
 Hopkins University</a>, in
 <a href="http://visitors.baltimorecity.gov/" class="external text"
-rel="nofollow">Baltimore, Maryland</a>, United States, from June 30
+
 through July 2, 2014.
 <a href="https://wiki.galaxyproject.org/Events/GCC2014"
 class="external text" rel="nofollow">GCC2014</a> starts with a
@@ -80,7 +80,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="120" height="39" alt="GigaScience Journal" /></a>
 
 The *<a href="http://www.gigasciencejournal.com/" class="external text"
-rel="nofollow">GigaScience</a>* "Galaxy: Data Intensive and Reproducible
+
 Research" series announced for the last conference has published its
 <a href="http://www.gigasciencejournal.com/series/Galaxy"
 class="external text" rel="nofollow">first papers</a>, *and is
@@ -95,7 +95,5 @@ Thanks, and hope to see you in Baltimore!
 The
 http:<a href="https://wiki.galaxyproject.org/Events/GCC2014/Organizers"
 class="external text" rel="nofollow">GCC2014 Organizing Committee</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2014/02/14*

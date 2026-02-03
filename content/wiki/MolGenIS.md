@@ -25,7 +25,7 @@ Resources
   class="external text" rel="nofollow">Mailing List</a>
 
 <a href="http://www.molgenis.org/" class="external text"
-rel="nofollow">MOLGENIS</a> is a platform for rapid prototyping of
+
 biosoftware. From easy to create models, MOLGENIS automatically
 generates flexible web platforms at the push of a button. Using this
 flexible mechanism MOLGENIS systems can accommodate all possible
@@ -52,10 +52,9 @@ version can do so quickly using Eclipse.
 
 To get in contact with other MOLGENIS developers don't hesitate to email
 <a href="mailto:molgenis-hackers@googlegroups.com" class="external text"
-rel="nofollow">molgenis-hackers@googlegroups.com</a>. Or email the
+
 current project admin, Morris Swertz
 (<a href="mailto:m.a.swertz@gmail.com" class="external text"
-rel="nofollow">m.a.swertz@gmail.com</a>)
 
 ## Resources
 

@@ -203,8 +203,6 @@ pub_dbxref Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: pub_relationship
 
 Handle relationships between publications, e.g. when one publication
@@ -222,8 +220,6 @@ pub.
 pub_relationship Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: pubauthor
 
@@ -307,8 +303,6 @@ Jr., Sr., etc</td>
 pubauthor Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: pubprop
 

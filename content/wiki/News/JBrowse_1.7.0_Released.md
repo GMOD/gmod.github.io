@@ -10,7 +10,7 @@ great many enhancements both large and small. Very exciting!
 
 It can be downloaded from
 <a href="http://jbrowse.org/jbrowse-1-7-0/" class="external text"
-rel="nofollow">the JBrowse website</a>. As always, see the updated
+
 [JBrowse Configuration
 Guide](../JBrowse_Configuration_Guide) for
 documentation on how to use the new features.
@@ -48,10 +48,7 @@ for her continued help driving progress on this and many other issues.
 
 For full details, check out the
 <a href="http://jbrowse.org/jbrowse-1-7-0/" class="external text"
-rel="nofollow">1.7.0 release information</a> on the
+
 <a href="http://jbrowse.org/" class="external text"
-rel="nofollow">JBrowse website</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2012/11/05*

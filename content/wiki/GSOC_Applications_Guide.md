@@ -5,12 +5,10 @@ title: "GSOC Applications Guide"
 
 **We would like to know who you are and how you think.**
 
-
 Here's the steps to help you get started:
 
 - Choose an organization to work with.
 - Start communicating with the developers.
-
 
 Please consider adding the following into your application:
 
@@ -31,7 +29,6 @@ Please consider adding the following into your application:
   - Identify possible hurdles and questions that will require more
     research/planning
 - What can you bring to the team?
-
 
 <a
 href="https://developers.google.com/open-source/gsoc/faq#what_are_the_eligibility_requirements_for_participation#what_are_the_eligibility_requirements_for_participation"

@@ -9,7 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="International Society for Biocuration" /></a>
 
 The <a href="http://biocurator.org/" class="external text"
-rel="nofollow">International Society for Biocuration (ISB)</a> is a
+
 professional organization about and for biocuration. GMOD and ISB have a
 strong relationship and the [April 2012 GMOD
 Meeting](../April_2012_GMOD_Meeting) will be
@@ -32,22 +32,19 @@ members and non-members.
 
 If you are interested or have questions, please contact the
 <a href="mailto:isbelection@gmail.com" class="external text"
-rel="nofollow">ISB Nominating Committee at isbelection@gmail.com</a>, or
+
 see the <a
 href="http://biocurator.org/pdf_files/Call_for_candidates_2011-final.pdf"
 class="external text" rel="nofollow">call for nominations</a>.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 
 on behalf of the ISB Nominating Committee:
 Maria Costanzo, Dave Clements, Dawn Field, Mike Livstone, and Michele
 Magrane
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/08/26*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

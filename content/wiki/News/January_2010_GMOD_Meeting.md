@@ -6,11 +6,8 @@ title: "News/January 2010 GMOD Meeting"
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/39/Jan2010MtgLogo170.png" width="170"
 height="162" alt="January 2010 GMOD Meeting" />](../January_2010_GMOD_Meeting)
 
-
-
 [Register for the January 2010 GMOD
 Meeting](../January_2010_GMOD_Meeting)
-
 
 I am pleased to announce that the [January GMOD
 meeting](../January_2010_GMOD_Meeting) will
@@ -36,15 +33,11 @@ Please direct follow up questions to the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-devel"
 class="external text" rel="nofollow">gmod-devel mailing list</a>
 (<a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-devel@lists.sourceforge.net</a>).
 
 Thanks and I look forward to seeing you in San Diego!
 
-[Scott](../User%253AScott)
-
-
+[Scott](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/13*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

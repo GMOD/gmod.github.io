@@ -12,8 +12,6 @@ to explore clustered experiments involving large sets of experiments or
 genes. Java TreeView is not specific to microarray data and has been
 used to display the results of clustering sequence motifs.
 
-
-
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
 - [Documentation](#Documentation)
@@ -27,26 +25,17 @@ class="external text" rel="nofollow">Overview</a> and
 <a href="http://jtreeview.sourceforge.net/examples/index.html"
 class="external text" rel="nofollow">examples</a>.
 
-
-
 ## Requirements
 
 - Java 1.4 or later
 
-
-
 ## Documentation
 
 <a href="http://jtreeview.sourceforge.net/" class="external text"
-rel="nofollow">Docs</a>
-
-
 
 ## Contact
 
 <a href="mailto:jtreeview-users@lists.sourceforge.net"
-class="external text"
-rel="nofollow">jtreeview-users@lists.sourceforge.net</a>
 
 ## Downloads
 

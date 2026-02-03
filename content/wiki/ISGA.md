@@ -34,7 +34,7 @@ height="143"
 alt="ISGA at the Center for Genomics and Bioinformatics" /></a>
 
 <a href="http://isga.cgb.indiana.edu/" class="external text"
-rel="nofollow">Integrated Services for Genomic Analysis (ISGA)</a> is a
+
 bioinformatics pipeline service software package based on
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>. ISGA
 can be installed locally to provide a biologist-friendly web interface
@@ -50,10 +50,9 @@ to use ISGA.
 
 ISGA (pronounced "I-S-G-A") was created at
 <a href="http://cgb.indiana.edu/" class="external text"
-rel="nofollow">Indiana University's Center for Genomics and
-Bioinformatics (CGB)</a>. CGB also hosts a
+
 <a href="http://isga.cgb.indiana.edu/" class="external text"
-rel="nofollow">publicly accessible installation of ISGA</a> that can be
+
 used for prokarytic annotation and assembly.
 
 ## Documentation
@@ -70,26 +69,24 @@ used for prokarytic annotation and assembly.
   genome annotation web server"</a> in
   *<a href="http://bioinformatics.oxfordjournals.org/"
   class="external text" rel="nofollow">Bioinformatics</a>*
-- [Presentations](/wiki/Category%3APresentations) and
-  [Posters](/wiki/Category%3APosters)
+-  and
+
   - [Automated Annotation of NGS Transcriptome Data using ISGA and
     Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf),
-    presented by [Chris Hemmerich](/wiki/User%3AChemmeri) at
+    presented by [Chris Hemmerich](/wiki/User:Chemmeri) at
     [BOSC 2010](/wiki/ISMB_2010)
   - [Integrative Services for Genomic Analysis (ISGA) - An Intuitive Web
     Server for Prokaryotic Genome Annotation and Other
     Analyses](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/ISGAISMB2010Poster.pdf),
-    poster by [Chris Hemmerich](/wiki/User%3AChemmeri), Aaron
+    poster by [Chris Hemmerich](/wiki/User:Chemmeri), Aaron
     Buechlein, Ram Podicheti, and Jeong-Hyeon Choi, presented at [ISMB
     2010](/wiki/ISMB_2010).
   - [Web-Based Bioinformatics Pipelines For Biologists: Integrative
     Services for Genomic Analysis
     (ISGA)](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf),
-    presented by [Chris Hemmerich](/wiki/User%3AChemmeri) at the
+    presented by [Chris Hemmerich](/wiki/User:Chemmeri) at the
     [January 2010 GMOD
     Meeting](/wiki/January_2010_GMOD_Meeting).
-
-
 
 ## Mailing List
 

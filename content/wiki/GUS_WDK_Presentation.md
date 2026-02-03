@@ -9,10 +9,6 @@ title: "GUS WDK Presentation"
 - [The GUS
   WDK](#The_GUS_WDK)
 
-
-
-
-
 #### Overview
 
 Genome databases typically have distinct layers
@@ -22,7 +18,7 @@ Genome databases typically have distinct layers
 - curation
 
 <a href="http://www.plasmodb.org" class="external text"
-rel="nofollow">PlasmoDB</a>, the Genome Resource for Plasmodium, the
+
 malaria parasite, is a warehouse that integrates a large number of data
 sources about Plasmodium. It does not do curation. The experience of
 PlasmoDB is that the batch data production back end and the web front

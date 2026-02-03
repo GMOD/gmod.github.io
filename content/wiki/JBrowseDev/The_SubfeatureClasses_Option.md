@@ -27,5 +27,4 @@ format is easier to use as a command line argument.
 - <a href="/wiki/General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
-
-- [JBrowse](../Category%253AJBrowse)
+- [JBrowse](../Category:JBrowse)

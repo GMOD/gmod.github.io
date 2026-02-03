@@ -10,13 +10,10 @@ title: "PubSearch"
 PubSearch is a web-based literature curation tool to allow curators to
 search and annotate genes to keywords from articles. It has a simple,
 [MySQL](/wiki/MySQL) database backend and uses a set of
-[Java](/wiki/Category%3AJava) Servlets and JSPs for querying,
+ Servlets and JSPs for querying,
 modifying, and adding gene, gene-annotation, and literature information.
 
 See the <a href="http://pubsearch.org" class="external text"
-rel="nofollow">PubSearch home page</a> for more information.
-
-
 
   Screenshots</span>](#Demo_.26_Screenshots)
 - [Requirements](#Requirements)
@@ -28,15 +25,13 @@ rel="nofollow">PubSearch home page</a> for more information.
 
 See
 <a href="http://tesuque.stanford.edu:9999/pubdemo" class="external text"
-rel="nofollow">this page</a> for a Web-based demo of the production
+
 version. The user name is *demo* and the password is *demo*.
 
 ## Requirements
 
 A Java servlet engine satisfying the Servlet 2.3 and JSP 1.2 specs -
 Tomcat 4.0 is an example of a supporting servlet engine.
-
-
 
 ## Documentation
 
@@ -45,18 +40,13 @@ Tomcat 4.0 is an example of a supporting servlet engine.
 - <a href="http://tesuque.stanford.edu/pubsearch.org/pubsearchFrame.html"
   class="external text" rel="nofollow">Online documentation</a>
 
-
-
 ## Contact
 
 <a href="mailto:dyoo@acoma.stanford.edu" class="external text"
-rel="nofollow">Danny Yoo</a>
 
 Please submit bug reports to the SourceForge: <a
 href="http://sourceforge.net/tracker/?func=add&amp;group_id=27707&amp;atid=511475"
 class="external text" rel="nofollow">bug tracker</a>
-
-
 
 ## Downloads
 

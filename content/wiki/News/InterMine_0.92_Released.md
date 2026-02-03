@@ -25,14 +25,11 @@ only issue is compatibility of the GO enrichment widget with old
 databases built before 0.91.
 
 <a href="mailto:dev@mail.intermine.org" class="external text"
-rel="nofollow">Let us know</a> if you have problems or suggestions for
+
 the next releases.
 
 The InterMine team.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

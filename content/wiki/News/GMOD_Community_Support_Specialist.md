@@ -30,7 +30,7 @@ short courses, conference sessions, GMOD meetings and other community
 building activities; survey user needs; liaise between users and
 developers on GMOD mailing lists; and oversee the community wiki and
 news feeds. The incumbent will collaborate closely with the GMOD
-Coordinator ([Scott Cain](../User%253AScott), The Ontario
+Coordinator ([Scott Cain](../User:Scott), The Ontario
 Institute for Cancer Research) and other distributed personnel. See
 [GMOD Community
 Support](../GMOD_Community_Support) for more
@@ -51,9 +51,6 @@ information for three references, to Hilmar Lapp, Assistant Director of
 Informatics, NESCent, at hlapp@nescent.org. Inquiries may be addressed
 to H. Lapp by email or by phone at 919.668.5288.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/02/23*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

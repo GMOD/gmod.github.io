@@ -9,8 +9,6 @@ See the
 [JBrowse_Configuration_Guide](/wiki/JBrowse_Configuration_Guide)
 for more details
 
-
-
   Setup](#Setup)
   - [How do I
     get started with installing
@@ -305,18 +303,16 @@ You can do this for example by
 - cd into /var/www/html/jbrowse and run the setup.sh script e.g.
   \`./setup.sh\`
 
-
 Then you should be ready to go. Note that as long as setup.sh completes
 the "Installing Perl pre-requisites" phase of setup.sh you should be
 good to go (the other steps are not strictly needed)
 
 Now open up your website e.g.
 <a href="http://localhost/jbrowse" class="external free"
-rel="nofollow">http://localhost/jbrowse</a> and you'll already see that
+
 is is "setup" and you can see
 <a href="http://localhost/jbrowse/?data=sample_data/json/volvox"
-class="external free"
-rel="nofollow">http://localhost/jbrowse/?data=sample_data/json/volvox</a>
+
 has example data
 
 Then you can simply run a small script to get your own genome loaded.
@@ -326,7 +322,7 @@ For example, while you are in /var/www/html/jbrowse folder, then run
 
 This will create a folder named "data", and then visiting
 <a href="http://localhost/jbrowse/" class="external free"
-rel="nofollow">http://localhost/jbrowse/</a> will automatically load
+
 this "data" folder and youll see your genome.
 
 Alternatively: you can try the JBrowse Docker container for a
@@ -346,14 +342,12 @@ and other files in this "data" folder to see what it generated.
 
 Then just open up
 "<a href="http://yourserver.com/jbrowse" class="external free"
-rel="nofollow">http://yourserver.com/jbrowse</a>" and it should be
+
 visible with the reference sequence as a track. By default, visiting
 "<a href="http://yourserver.com/jbrowse" class="external free"
-rel="nofollow">http://yourserver.com/jbrowse</a>" will read files from
+
 that generated "data" folder. Other configurations are possible, but
 this is the easiest one.
-
-
 
 ## How do I setup a GFF track?
 
@@ -371,8 +365,6 @@ may also experiment with adding --trackType CanvasFeatures, which is a
 newer track type that is more flexible to configure, or --type mRNA to
 only load mRNA features from the GFF, or other parameters that are
 listed in flatfile-to-json.pl --help.
-
-
 
 ## How do I set up a BAM file?
 
@@ -418,7 +410,6 @@ trackList.json file, but you use a different format, for example
     type=Alignments2
     urlTemplate=mybam.bam
 
-
 This is functionally equivalent to the trackList.json entry above
 
 ## How do I set up a BigWig file?
@@ -448,7 +439,6 @@ add this alternative track conf form into your tracks.conf file
     storeClass=JBrowse/Store/SeqFeature/BigWig
     urlTemplate=file.bw
     type=JBrowse/View/Track/Wiggle/Density
-
 
 Notes:
 
@@ -500,8 +490,6 @@ Note you could also add your track to tracks.conf
 
 Both of these configurations represent the same track.
 
-
-
 ## How do I get IndexedFasta track to work in JBrowse
 
 A short trackList.json with an IndexedFasta reference sequence track
@@ -542,13 +530,10 @@ Most established HTTP servers such as Apache or nginx can work. You can
 just unpack JBrowse into your http web directory (/var/www/html, or
 htdocs, or similar) and follow the setup instructions
 <a href="http://jbrowse.org/code/JBrowse-1.12.1/docs/tutorial/"
-class="external free"
-rel="nofollow">http://jbrowse.org/code/JBrowse-1.12.1/docs/tutorial/</a>.
 
 Other configuration about your server will depend on your needs, but
 generally no special setup is needed for the http server, and there is
 no "server side" code used by JBrowse (cgi, php, etc).
-
 
 Note: servers like "SimpleHTTPServer" from Python or "http-server" from
 NPM are generally not full featured enough to run all JBrowse features
@@ -556,9 +541,8 @@ correctly (SimpleHTTPServer does not support Range queries, and
 http-server interprets tabix files incorrectly). RangeHTTPServer does
 pass the test suite for jbrowse though, so it should work for tests
 <a href="https://github.com/danvk/RangeHTTPServer" class="external free"
-rel="nofollow">https://github.com/danvk/RangeHTTPServer</a> (but not for
-compressed json files).
 
+compressed json files).
 
 Also note: sometimes, people will download JBrowse and double click the
 html file and open up file:///c/myfolder/jbrowse/index.html in the
@@ -566,7 +550,6 @@ webbrowser, however, running JBrowse like this is not recommended. This
 may appear to work for some limited cases but will fail on many others.
 You can use JBrowse Desktop if you want to use jbrowse locally without a
 webserver.
-
 
 Since 1.12.4: The JBrowse "jb_run" script in 1.12.4 can be used to run
 JBrowse. It uses a custom express.js server tailored to serve all
@@ -579,14 +562,12 @@ version and one is a "development" version. If you are going to be
 modifying source code of JBrowse's codebase, you probably want the
 development version.
 
-
 The "release" version goes through a build step with
 <a href="https://en.wikipedia.org/wiki/Minification_(programming)"
 class="external text" rel="nofollow">minification</a> so that loading
 the page takes less bandwidth. Different parts of the code go into
 different "layers", but the main layer that includes most JBrowse source
 code and JBrowse libraries goes into src/dojo/dojo.js
-
 
 The "development" version does not go through minification, and so it is
 amenable to editing the source code. You can also use a github clone for
@@ -599,8 +580,6 @@ from a github clone
 Running code off github is fairly straightforward, and you can actually
 run it on your webserver without any build steps
 
-
-
      git clone https://github.com/gmod/jbrowse
      cd jbrowse
      ./setup.sh
@@ -610,10 +589,7 @@ go.
 
 Note: If you want to make your own custom build you can use
 
-
-
     make -f build/Makefile release
-
 
 Also also note: post 1.13.0 releases of JBrowse will automatically
 create a minified custom build when you run ./setup.sh if you have a
@@ -691,8 +667,6 @@ There are a lot of differences!
 Glyphs are a "unit" of drawing in a CanvasFeatures track. The glyph is
 just code that is responsible for drawing a feature on the screen.
 
-
-
 ## What does generate-names.pl do?
 
 Generate-names.pl will create a "search index" on, by default, the
@@ -721,8 +695,6 @@ Key is not a required attribute, but label is. The label can be
 specified by --trackLabel on command line tools. The key can be
 specified by --key.
 
-
-
 ## How do I search for a feature in JBrowse
 
 Some people don't know this, but the box that shows your current
@@ -732,7 +704,6 @@ search for things that generate-names.pl indexed here.
 Also, the search index can be used to "link" to features, for example,
 if you construct a link such as
 <a href="http://localhost/jbrowse/?loc=GENE1234" class="external free"
-rel="nofollow">http://localhost/jbrowse/?loc=GENE1234</a>
 
 Then the search index will resolve the location of that gene and jump to
 it automatically.
@@ -744,8 +715,6 @@ class="external text" rel="nofollow">jbrowse_elasticsearch</a>, it is
 still experimental but it allows this. Or, implement your own JBrowse
 REST names API. The default generate-names.pl is not built for searching
 full text descriptions.
-
-
 
 ## How do I set up multiple genomes in a single jbrowse instance?
 
@@ -759,13 +728,12 @@ Once the data directories are ready then use the URL bar to select which
 data directory to use with ?data=my_data_dir e.g.
 
 <a href="http://mysite.org/jbrowse/?data=data1" class="external free"
-rel="nofollow">http://mysite.org/jbrowse/?data=data1</a>
+
 <a href="http://mysite.org/jbrowse/?data=data2" class="external free"
-rel="nofollow">http://mysite.org/jbrowse/?data=data2</a>
 
 Note that with
 <a href="http://genomearchitect.org" class="external text"
-rel="nofollow">Apollo</a>, you can output the data directories to some
+
 given directory and add the directories via the user interface.
 
 You can also setup the "dataset selector" see [\#What is the dataset
@@ -783,10 +751,6 @@ jbrowse.conf, add a list of all your datasets with the dataset_ids that
 you listed in the genome's data directory.
 
 See <a href="/wiki/JBrowse_Configuration_Guide#Dataset_Selector"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Dataset_Selector</a>
-
-
 
 ## How do I change the name that is displayed on my features
 
@@ -842,7 +806,6 @@ of a callback
            "color": "red"
         }
 
-
 It can be dynamic too though
 
         "style": {
@@ -850,7 +813,6 @@ It can be dynamic too though
         }
 
 The color can be a name or rgb(...) or hsl(...). rgba works too
-
 
 Note: if you get a very complex function, consider putting it in a
 separate functions.conf file and include it, see config guide "Including
@@ -880,8 +842,6 @@ box, and it can also support HTML, e.g
 
 You can also use the fmtDetailMeta and fmtFieldMeta callback functions
 to change pre-existing values <a href="/wiki/JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes</a>
 
 ## How do I customize the dialog boxes for the features?
 
@@ -912,7 +872,6 @@ There are many ways to do so.
     retrieve dynamic content. The function would have the parameters
     function(track, feature)
 
-
 Those are just a couple examples
 
 More straightforwardly, basically any field that exists for the feature
@@ -925,26 +884,19 @@ then your popups will have more information.
 Typically this is done using a plugin. You can make your plugin add new
 menu items. See the RegexSequenceSearch plugin for an example <a
 href="https://github.com/GMOD/jbrowse/blob/master/plugins/RegexSequenceSearch/js/main.js#L23-L30#L23-L30"
-class="external free"
-rel="nofollow">https://github.com/GMOD/jbrowse/blob/master/plugins/RegexSequenceSearch/js/main.js#L23-L30</a>
 
 You can also create a new "menu" i.e. (default says file, view, help)
 and you can extend it to use (file, view, tools, help) or similar. The
 GMOD/Apollo codebase does this <a
 href="https://github.com/GMOD/Apollo/blob/master/client/apollo/js/main.js#L368-L379#L368-L379"
-class="external free"
-rel="nofollow">https://github.com/GMOD/Apollo/blob/master/client/apollo/js/main.js#L368-L379</a>
 
 ## How do I customize the "track menu" on a track?
 
 In general, you would want to make a new "track type", you can override
 \_trackMenuOptions on your custom track type. See <a
 href="https://github.com/cmdcolin/gccontent/blob/master/js/View/Track/GCContentXY.js"
-class="external free"
-rel="nofollow">https://github.com/cmdcolin/gccontent/blob/master/js/View/Track/GCContentXY.js</a>
+
 for example
-
-
 
 ## How do I customize the right-click menus on features
 
@@ -957,14 +909,11 @@ menuTemplate items for the View details, etc. See
 [JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus](/wiki/JBrowse_Configuration_Guide#Customizing_Right-click_Context_Menus)
 for more details.
 
-
-
 ## How do I access data about my features in my callback or plugin
 
 Each feature is based on what is called a feature Model. The
 JBrowse/Model/SimpleFeature is an example of this, and it allows you to
 call feature.get('variable_of_interest') on many different variables
-
 
 Common types of requests
 
@@ -984,7 +933,6 @@ Common types of requests
 - feature.get('seq') - to get the sequence, only works on BAM data since
   it includes sequence data in data file. In general, you must use
   getReferenceSequence over a region to get a feature's sequence
-
 
 Note that if you have multiple values for a value in column 9 (specified
 by comma separated values), then feature.get('your_value') will return
@@ -1015,8 +963,6 @@ track labels
 The easiest way to "embed jbrowse" on another page would be to use an
 iframe to link to the jbrowse instance of choice e.g.
 <a href="/wiki/JBrowse_Configuration_Guide#Embedded_mode"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Embedded_mode</a>
 
 Note that it is also possible in theory (and sometimes in practice) to
 embed JBrowse without an iframe. For example, you can take the
@@ -1029,8 +975,6 @@ The problem with embedding without iframe is typically that you can
 easily run into issues with "CSS collisions" where the CSS from your
 specific page collides with jbrowse elements, of CSS from jbrowse
 elements collides with your outside page.
-
-
 
 ## Can I change the color of bases in the Sequence/Alignments2/SNPCoverage tracks?
 
@@ -1062,16 +1006,12 @@ See css/sequence.css:
         background-color: #999;
     }
 
-
-
 If you change those, it will be reflected in your
 Sequence/Alignments2/SNPCoverage track.
 
 The .base_reference is the background grey of the SNPCoverage plot, and
 if you actually add to the list and make .base_skip you can make the
 intron grey change color SNPCoverage.
-
-
 
 ## How can I link BLAST results to JBrowse
 
@@ -1092,8 +1032,6 @@ are shortened as qend, send, sstart, and qstart
 
 We use the addFeatures URL parameter of JBrowse to make the features
 appear. For reference, see <a href="/wiki/JBrowse_Configuration_Guide#Controlling_JBrowse_with_the_URL_Query_String"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Controlling_JBrowse_with_the_URL_Query_String</a>
 
     require 'json'
     module SequenceServer
@@ -1143,22 +1081,17 @@ rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Controlling_JBro
        end
     end
 
-
 Important note: if you have multiple organisms, then you should encode
 your FASTA files to contain the organism name, e.g.
 
     >Human-chr1
     ACCGAATCAGCTATCGA...
 
-
 This is because BLAST does not tell you which database your hits come
 from.
 
-
 Then you must modify your links.rb use this information by parsing the
 "accession" variable.
-
-
 
     require 'json'
     module SequenceServer
@@ -1211,13 +1144,10 @@ Then you must modify your links.rb use this information by parsing the
        end
     end
 
-
 Another important note: you should BLAST the actual genome sequence if
 you are linking to genomic coordinates of JBrowse. If you BLAST a CDS
 database, you may need to load CDS sequences into JBrowse, or translate
 the CDS coordinates into genomic coordinates
-
-
 
 Also also note: if you are running sequenceserver through apache e.g.
 with Passenger Phusion, then you can modify the config.ru to have a
@@ -1279,13 +1209,10 @@ subfeatureClasses allows you to create a map e.g.
 
 The most reliable way to do this is to use gff3sort from
 <a href="https://github.com/billzt/gff3sort" class="external free"
-rel="nofollow">https://github.com/billzt/gff3sort</a>
 
 See <a href="http://biorxiv.org/content/early/2017/06/04/145938"
-class="external free"
-rel="nofollow">http://biorxiv.org/content/early/2017/06/04/145938</a>
-for a description of their algorithm
 
+for a description of their algorithm
 
 Note that you can try and use GNU sort (sort -k1,1 -k4,4n) or
 genometools (gt gff3 -sortlines) but these both have problems where it
@@ -1332,14 +1259,10 @@ E.g.
 That would search for myfile_chr1.bam and myfile_chr1.bam.bai when you
 open that track while browsing chr1
 
-
-
 ## Can I add a loading bar while JBrowse is starting up?
 
 Yes, you can configure one. See this section
 <a href="/wiki/JBrowse_Configuration_Guide#Configure_a_Loading_Page"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configure_a_Loading_Page</a>
 
 You could also listen for other milestone events to trigger other
 loading events (see DebugEvents plugin for details)
@@ -1390,7 +1313,6 @@ You can set the following config
 
     collapseCategories=ParentCategory1/ChildCategory,ParentCategory2/ChildCategory
 
-
 etc. to your jbrowse.conf. This is a comma separated list (don't include
 spaces around the slashes though). Remember, don't quote the values in
 the jbrowse.conf file :)
@@ -1422,8 +1344,6 @@ refseq names and their lengths
 This let's you view the genome and the features on the genome without
 loading the sequence data.
 
-
-
 # Plugins
 
 ## How do I install a plugin
@@ -1450,8 +1370,6 @@ your jbrowse.conf (or tracks.conf
 Equivalently, in jbrowse_conf.json (or trackList.json), that would mean
 just having
 
-
-
     "plugins": ["GCContent", "SashimiPlot"]
 
 Essentially, you are just giving the configuration an array of folder
@@ -1460,13 +1378,10 @@ names to look for in the plugins directory
 Alternatively, you can also add the "name" and "location" of the plugin
 too.
 
-
-
     "plugins": [{
         "name": "GCContent",
         "location": "plugins/gccontent"
     }]
-
 
 Here "plugins.GCContent" means that the "name" of your plugin is
 "GCContent". This is slightly important, because the "name" is used for
@@ -1474,7 +1389,6 @@ the purposes of the "namespace" that the plugin has i.e., when you
 specify a track with the "type": "GCContent/View/Track/GCContentXY" in
 trackList.json, then that means the "name" of the plugin should be
 GCContent, not lowercase gccontent.
-
 
 Note that the above config would be equivalent to this in the
 jbrowse.conf format
@@ -1484,7 +1398,6 @@ jbrowse.conf format
 
 Again, you don't need to use this format if the name of the directory is
 as expected e.g. plugins+=GCContent looks for a folder named GCContent
-
 
 Note: "location" is a relative URL to the jbrowse root directory.
 Normally when a plugin is successfully installed, you will get a
@@ -1522,10 +1435,6 @@ finishCallback.
 Check out the genes store class from the myvariantviewer plugin for an
 example of a simple custom adaptor <a
 href="https://github.com/cmdcolin/myvariantviewer/blob/master/js/Store/SeqFeature/Genes.js"
-class="external free"
-rel="nofollow">https://github.com/cmdcolin/myvariantviewer/blob/master/js/Store/SeqFeature/Genes.js</a>
-
-
 
 ## What is a plugin useful for?
 
@@ -1553,13 +1462,9 @@ JBrowse will load the "class" from your plugin and initialize it
 Make sure to review this link describing dojo declare, the way dojo
 declares new object types <a
 href="http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html"
-class="external free"
-rel="nofollow">http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html</a>
 
 Also review
 <a href="http://dojotoolkit.org/documentation/tutorials/1.9/modules/"
-class="external free"
-rel="nofollow">http://dojotoolkit.org/documentation/tutorials/1.9/modules/</a>
 
 Understanding "\*dojo declare\*" and \*asynchronous module definition
 (AMD)\* will help you understand the “preamble” on the top of every file
@@ -1580,7 +1485,6 @@ To do this, we can use object- oriented principles to “inherit” from
 some existing track type like CanvasFeatures and then extend its
 functionality by overriding the functions in a new track type
 
-
 We can inherit a new track type by using the “define” function to
 include the dependencies needed in a file, and they are listed in an
 array at the top of your file.
@@ -1590,8 +1494,6 @@ First initialize a new plugin using
     bin/new-plugin.pl MyPlugin
 
 Then edit a new file, say plugins/MyPlugin/js/MyTrack.js
-
-
 
     define( ["dojo/_base/declare", "JBrowse/View/Track/CanvasFeatures"],
        function(declare,CanvasFeatures) {
@@ -1617,8 +1519,6 @@ Then edit a new file, say plugins/MyPlugin/js/MyTrack.js
 Code listing 1. an example custom track type,
 plugin/MyPlugin/js/MyTrack.js, that adds an extra track menu item
 
-
-
 After this, we will have the plugin directory structure like this
 
     jbrowse/plugins/MyPlugin
@@ -1631,14 +1531,11 @@ The bin/new-plugin.pl helps create the skeleton main.js
 Then we can use our new plugin to a config file like jbrowse_conf.json
 as "plugins": \["MyPlugin"\]
 
-
 Then edit the trackList.json for an existing track and change \`"type":
 "CanvasFeatures"\` to \`"type": "MyPlugin/MyTrack"\`.
 
 That will tell jbrowse to load the MyTrack class from your plugin
 instead of the normal CanvasFeatures class.
-
-
 
 # Troubleshooting
 
@@ -1674,8 +1571,6 @@ BigWig files (no conversion step needed)
 
 You can follow these instructions for how to setup a BigWig file if
 needed <a href="/wiki/JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F</a>
 
 ## I see a message that says "Congratulations, JBrowse is on the web" but I don't see my genome
 
@@ -1684,13 +1579,9 @@ been loaded or located correctly
 
 You can continue by running
 
-
-
      bin/prepare-refseqs.pl --fasta yourfile.fa
 
-
 Then reload the page and your genome should be available.
-
 
 Note: If the red box on the "Congratulations page" shows a different
 message than just 404 on seq/refSeqs.json, then report the error to
@@ -1739,8 +1630,6 @@ isn't working. You can try a couple things to fix the error
 Note if there are continued troubles, you can try an alternative search
 engine, such as jbrowse_elasticsearch (an experimental plugin)
 <a href="https://github.com/cmdcolin/jbrowse_elasticsearch/"
-class="external free"
-rel="nofollow">https://github.com/cmdcolin/jbrowse_elasticsearch/</a>
 
 ## What is this error message "Argument isn't numeric in addition (+)" loading GFF3?
 
@@ -1750,15 +1639,11 @@ If you get an error similar to this:
 
 Make sure your GFF3 is tab delimited
 
-
-
 ## It keeps showing "too much data" on my track. How do I fix it and make my track display?
 
 Increase maxFeatureScreenDensity to a higher value. This value is by
 default 0.5 but if you allow a higher "density" of features, set it to 6
 for example and the message should disappear.
-
-
 
 ## I get the error "Too much data...chunk size xxxxx exceeds chunkSizeLimit"
 
@@ -1777,8 +1662,6 @@ Several things can happen to cause this (generally on VCF of BAM tracks)
 ## I set a value in my config file but it isn't working. Why not?
 
 Some things to check:
-
-
 
 - Don't add quotes around numerical values in your JSON config files
   e.g. trackList.json. Numbers can remain unquoted. Booleans can too.
@@ -1803,19 +1686,13 @@ forceTracks if you want to have it turn on despite cookies/URL.
 
 If you get the error such as this
 
-
-
     Too many open files opening bucket log /path/to/your/data/names/00f/6.json.log at perl5/lib/perl5/Bio/JBrowse/HashStore.pm line 197, <$fh> line 85.
 
 Then try increasing number of files available
 
-
-
     ulimit -n 1000
 
 The default can sometimes be as low as 256 (view with ulimit -a)
-
-
 
 ## How do I fix the "Not a BAM file" issue?
 
@@ -1872,8 +1749,6 @@ JBrowse-1.11.6-dev.zip as opposed to for example JBrowse-1.11.6.zip,
 because the -dev package contains "un-minified" source code and more
 readable javascript console messages
 
-
-
 ## My CanvasFeatures don't show up with subfeatures, why not?
 
 If your GFF does not follow this structure
@@ -1899,7 +1774,6 @@ difference between the exon and CDS boundaries, then you can use this on
 your track type to enable them
 
     "impliedUTRs": true
-
 
 If your GFF file has features with this structure
 
@@ -1937,7 +1811,6 @@ This track will not display the transcript and exon subfeatures, but
 instead just show a box where the gene is, so this is commonly called a
 "gene spans" track
 
-
 Note: If you would like a track that displays with the transcript
 subfeatures, you can use the CanvasFeatures type track (i.e. load with
 flatfile-to-json.pl --type gene --trackType CanvasFeatures ...)
@@ -1950,8 +1823,6 @@ they must have a Parent pointing to the Parent's ID
 
 Note that it should be spelled Parent, not PARENT
 
-
-
 ## I get the error "Building and installing legacy bam-to-json.pl support (superseded by direct BAM tracks) ... failed"
 
 If you get the error "Building and installing legacy bam-to-json.pl
@@ -1959,8 +1830,7 @@ support (superseded by direct BAM tracks) ... failed. See setup.log file
 for error messages. If you really need bam-to-json.pl (most users
 don't), try reading the Bio-SamTools troubleshooting guide at
 <a href="https://metacpan.org/source/LDS/Bio-SamTools-1.33/README"
-class="external free"
-rel="nofollow">https://metacpan.org/source/LDS/Bio-SamTools-1.33/README</a>
+
 for help getting Bio::DB::Sam installed."
 
 Then note:
@@ -2009,8 +1879,6 @@ Check that
 
 You can use code such as this
 
-
-
     <iframe id="jbrowse_iframe" src="/jbrowse/" scrolling="no" style="width:100%;height:800px;"></iframe>
     <script>
     //https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
@@ -2039,36 +1907,28 @@ You can use code such as this
     iframe.src = iframe.src + window.location.search;
     </script>
 
-
 With this setup, you can pass URL parameters from the URL of the parent
 page e.g. <a
 href="http://localhost/parent_page/?data=mydata&amp;loc=chr1:1..10000"
-class="external free"
-rel="nofollow">http://localhost/parent_page/?data=mydata&amp;loc=chr1:1..10000</a>
+
 and it will forward those URL params to the jbrowse instance (located at
 <a href="http://localhost/jbrowse" class="external free"
-rel="nofollow">http://localhost/jbrowse</a>) and the URL will be
+
 autoupdated when you change locations
 
 ## Can I use JBrowse with phantomJS?
 
 Yes! See <a href="/wiki/JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS</a>
+
 for an example
-
-
 
 ## How do I convert GTF to GFF
 
 Since flatfile-to-json.pl does not accept GTF, you can convert your GTF
 to GFF3. Tools like gffread or gtf2gff3.pl are available
 
-
 The gffread tool is packaged with cufflinks so simply install cufflinks,
 then you can run
-
-
 
     gffread -E merged.gtf -o- > merged.gff3
 
@@ -2080,10 +1940,6 @@ a .nojekyll file in the root directory.
 This bypasses the normal jekyll parser of github and allows jbrowse to
 load
 <a href="https://github.com/blog/572-bypassing-jekyll-on-github-pages"
-class="external free"
-rel="nofollow">https://github.com/blog/572-bypassing-jekyll-on-github-pages</a>
-
-
 
 ## What is the benefit of using biodb-to-json.pl?
 
@@ -2095,8 +1951,6 @@ rel="nofollow">https://github.com/blog/572-bypassing-jekyll-on-github-pages</a>
 In general, using normal commands like flatfile-to-json,
 prepare-refseqs, etc work fine though. See setup.sh for how the volvox
 sample data combines using biodb-to-json and other techniques.
-
-
 
 # Visualization tips
 
@@ -2110,8 +1964,6 @@ By default, compact divides the height of glyphs by 4, so if you make
 the height of your features smaller with style-\>height then when you
 set compact it will be ultra compact.
 
-
-
 ## Can I disable the histograms on a track?
 
 Yes! Try setting style.featureScale to a very small number like
@@ -2121,7 +1973,6 @@ Yes! Try setting style.featureScale to a very small number like
 
 Yes, try out the SashimiPlot plugin!
 <a href="https://github.com/cmdcolin/sashimiplot" class="external free"
-rel="nofollow">https://github.com/cmdcolin/sashimiplot</a>
 
 It dynamically calculates the splicing coverage of a track or uses
 junctions.bed files for junctions
@@ -2131,7 +1982,6 @@ junctions.bed files for junctions
 Yes, the GCContent plugin will calculate the GCContent from your
 sequence data automatically. See
 <a href="https://github.com/cmdcolin/gccontent" class="external free"
-rel="nofollow">https://github.com/cmdcolin/gccontent</a>
 
 It works fairly well on mid-size genomes. If you have very large
 megabase scale assemblies, then you might consider pre-calculating the
@@ -2141,7 +1991,6 @@ GCContent.
 
 Yes, the GWASViewer plugin does this.
 <a href="https://github.com/cmdcolin/gwasviewer/" class="external free"
-rel="nofollow">https://github.com/cmdcolin/gwasviewer/</a>
 
 ## What do the colors mean on the BAM files for JBrowse
 
@@ -2172,8 +2021,6 @@ the reads.
   the pair would normally be blue. Enable in config with
   useReverseTemplate: true
 
-
-
 ## Can I use long reads with JBrowse?
 
 Long reads from platforms like nanopore and pacbio pose some challenges
@@ -2186,9 +2033,6 @@ tracks. This must be enabled manually in the config at the moment.
 You can make a custom plugin to do this. The "multibigwig" plugin is an
 example of this
 <a href="https://github.com/cmdcolin/multibigwig" class="external free"
-rel="nofollow">https://github.com/cmdcolin/multibigwig</a>
-
-
 
 ## How do I get coverage for a BAM file?
 
@@ -2198,16 +2042,11 @@ rel="nofollow">https://github.com/cmdcolin/multibigwig</a>
     to convert the BAM to bedgraph, and the convert bedgraph to bigwig
     with UCSC bedGraphToBigWig)
 
-
 Also note: with the third option, you can make it so that your BAM track
 has a bigwig when zoomed out, but then shows the reads when zoomed in.
 Any CanvasFeatures track can use a bigwig for summary histograms. The
 Alignments2 volvox-sorted.bam track is an example of this. See
 <a href="/wiki/JBrowse_Configuration_Guide#Configuring_Summary_Histograms"
-class="external free"
-rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configuring_Summary_Histograms</a>
-
-
 
 ## Can I zoom even closer to the base level?
 
@@ -2221,8 +2060,6 @@ so don't depend on this for the protein translations
 
 By default, the max zoom level is 25, so setting it to 50 makes you able
 to zoom in twice as much.
-
-
 
 ## How do I change the color of bigwig dynamically
 

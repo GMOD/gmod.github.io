@@ -27,10 +27,8 @@ modules. It is a set of recommendations on how one might implement audit
 trail logging in Chado. This documentation describes an example of such
 an implementation which is in use at
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>. The SQL used at Flybase is
+
 `chado/modules/audit/audit_tables.sql`.
-
-
 
 ### Audit Policy
 
@@ -62,7 +60,6 @@ Where *transaction_type* value is one of:
 - i (insertion)
 - u (update)
 - d (deletion)
-
 
 Thus an chado db instance chado.1 containing a table *gene*, for
 example:
@@ -96,8 +93,6 @@ shadow audit table, *gene_audit*:
     );
 ```
 
-
-
 ### Transaction Use Cases
 
 #### Insertion of a New Record
@@ -120,8 +115,6 @@ When a record is to be deleted, before the delete transaction is executed
 in chado, the existing chado record is copied to the corresponding
 shadow audit table, with the corrent timestamp and *transaction_type* =
 'd'. The delete transaction is then executed in chado.
-
-
 
 ### Implementation Issues
 

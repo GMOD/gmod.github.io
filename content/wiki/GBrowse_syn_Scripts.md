@@ -68,7 +68,6 @@ Options
 | u | Username for the mysql database | p |
 | Password for the mysql database | d | Database name |
 | v | Flag for verbose progress reporting | c |
-| Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |  |  |
 
 # mercatoraln_to_synhits.pl
 
@@ -90,7 +89,6 @@ Options
 | a | output.mfa | Specifies the name of the alignment file from when mercator does the MSA (MAVID, PECAN, or other genome alignment tool) |
 | v | Print progress reports while running. Note that the script will stop after reading the first line of the file (see line 117 of the script) if this option is set. | f |
 | fasta | Specifies format of the input alignment files (multi-fasta format is the default) | d |
-| Specifies the containing directory for the genome and map files (typically this is called **alignments** in the mercator pipeline) |  |  |
 
 # aln2hit.pl
 

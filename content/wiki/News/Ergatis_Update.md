@@ -27,7 +27,7 @@ can be executed either locally or on large compute clusters.
 
 New tools available that use Ergatis include
 <a href="http://clovr.igs.umaryland.edu" class="external text"
-rel="nofollow">CloVR</a>, which enables bioinformatic pipeline execution
+
 in compute clouds and the recently-awarded <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0959894"
 class="external text" rel="nofollow">Data Intensive Academic Grid
@@ -39,11 +39,8 @@ ISGA](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/image
 which provides a customized, abstract interface to Ergatis designed for
 biologists with specific pipeline needs.
 
-[Joshua Orvis](../User%253AJorvis)
-
-
+[Joshua Orvis](../User:Jorvis)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/05/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

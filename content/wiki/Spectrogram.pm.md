@@ -4,7 +4,7 @@ title: "Spectrogram.pm"
 # Spectrogram.pm
 
 Spectrogram.pm is a [GBrowse](/wiki/GBrowse.1) plugin written by
-[Sheldon McKay](/wiki/User%3AMckays). It draws DNA spectrograms of
+[Sheldon McKay](/wiki/User:Mckays). It draws DNA spectrograms of
 DNA of digitized DNA sequences using techniques borrowed from the
 digital signal processing world. Graphical rendering is accomplished
 using the HSV color space. The color of the spot on the spectrogram
@@ -22,7 +22,6 @@ examples of which are coding DNA and repeat sequences.
   <span class="pops"><a href="http://www.hindawi.com/journals/asp/2004/790248.abs.html"
   class="external text" rel="nofollow">background reading of digital
   signal processing of DNA</a></span>
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Spec1.png" class="thumbborder" width="858"
@@ -65,7 +64,6 @@ binary indicator sequences:
             A 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 1
             T 0 0 1 0 0 1 0 1 0 0 1 1 0 0 0 0
             C 0 0 0 1 1 0 1 0 0 0 0 0 1 1 0 0
-
 
 The magnitude of the discrete fourier transform (DFT) is calculated
 separately for each of the four indicator sequences. The algorithm used

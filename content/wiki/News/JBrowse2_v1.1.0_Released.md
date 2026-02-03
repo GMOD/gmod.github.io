@@ -33,8 +33,6 @@ title: "News/JBrowse2 v1.1.0 Released"
 
 (Reposted by permission from
 <a href="https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release"
-class="external free"
-rel="nofollow">https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release</a>
 
 ### Changed callbacks language from JavaScript to Jexl
 
@@ -65,7 +63,6 @@ docs for the embeddable React Linear Genome View. The docs contain live
 examples of how the LGV component can be used, along with source-code
 examples. The site can be found
 <a href="https://jbrowse.org/storybook/lgv/v1.1.0" class="external text"
-rel="nofollow">here</a>.
 
 ### Enhanced navigation to drawer widget stack
 
@@ -167,9 +164,6 @@ core
 - Robert Buels (@rbuels)
 - Teresa Martinez (@teresam856)
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2021/03/30*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

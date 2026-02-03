@@ -23,7 +23,6 @@ Abstract:
 > instructions for configuring GBrowse to display NGS data.
 
 <a href="http://dx.doi.org/10.1093/bib/bbt001" class="external text"
-rel="nofollow">Read the whole paper online.</a>
 
 1.  <span id="cite_note-PMID:23376193"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:23376193_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs

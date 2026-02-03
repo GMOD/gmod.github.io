@@ -18,11 +18,10 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="200" alt="GMOD Evo Hackathon" /></a></td>
 <td><span style="font-size: 180%; line-height: 120%"><strong><a
 href="http://www.nescent.org/wg_gmodevohackathon/" class="external text"
-rel="nofollow">Tools for Evolutionary Biology
-Hackathon</a></strong><br />
+
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span><br />
+
 <br />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/af/EvoHackRoom2010.jpg/290px-EvoHackRoom2010.jpg"
@@ -37,10 +36,9 @@ width="149" height="100" alt="EvoHackWhiteboard2010.jpg" /></a></td>
 
 GMOD held a hackathon November 8-12, 2010, at the
 <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina. This hackathon focused on improving GMOD's
-support for [evolutionary
-biology](/wiki/Category%3AEvolution).
+support for .
 
 The [Open Call for
 Participation](/wiki/GMOD_Evo_Hackathon_Open_Call)
@@ -107,7 +105,7 @@ best to extend or integrate with already existing GMOD components.
 *Due to the closure of NESCent, the links below to the hackathon wiki
 originally hosted by NESCent no longer resolve. A
 <a href="http://dx.doi.org/10.5281/zenodo.19020" class="external text"
-rel="nofollow">permanent archive of the wiki</a> in the form of a
+
 MediaWiki export is available at Zenodo. To view the content of that
 wiki, one first needs to reinstantiate a MediaWiki instance from the
 export.*
@@ -153,7 +151,7 @@ JBrowse code and architecture.
 <a href="https://www.nescent.org/wg_gmodevohackathon/PhyloBox"
 class="external text" rel="nofollow">PhyloBox</a>
 <a href="http://phylobox.appspot.com/" class="external text"
-rel="nofollow">PhyloBox</a> is a flexible and fast web based tree
+
 visualization program. At the hackathon the PhyloBox team extended
 PhyloBox in numerous ways to make it a "widget" that can interact with
 other widgets. PhyloBox documentation was also created.
@@ -191,7 +189,7 @@ class="external text" rel="nofollow">Galaxy + HyPhy</a>
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
-rel="nofollow">HyPhy</a> as the prototype application. The Galaxy and
+
 HyPhy code bases were modified to support this.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
@@ -204,7 +202,7 @@ memory.
 
 ## PAG Poster
 
-[Robert Buels](/wiki/User%3ARobertBuels) gave a <a
+[Robert Buels](/wiki/User:RobertBuels) gave a <a
 href="http://www.nescent.org/wg/gmodevohackathon/images/3/3f/Gmod_evohack_poster.pdf"
 class="external text" rel="nofollow">poster on the hackathon</a> at [PAG
 2011](/wiki/PAG_2011).
@@ -277,7 +275,7 @@ a high priority.
 
 In particular, GBrowse_syn lacks support for the
 <a href="http://samtools.sourceforge.net/" class="external text"
-rel="nofollow">Sequence Alignment Format (SAM)</a>, its mechanism of
+
 storing genome comparisons does not scale beyond a few organisms, and
 the means for tracking the necessary alignment metadata in
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> are
@@ -297,16 +295,16 @@ alignments. GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon
 target. However, <a href="http://solgenomics.net" class="external text"
-rel="nofollow">SGN</a> has a relatively mature
+
 <a href="http://solgenomics.net/tools/align_viewer/"
 class="external text" rel="nofollow">web-based multiple alignment and
 tree browser</a> that could be extracted from SGN's codebase and
 transformed into a GMOD component, an add-on for JBrowse. Current
 Java-based tree viewers (such as
 <a href="http://www.phylosoft.org/atv/" class="external text"
-rel="nofollow">Archaeopteryx</a> or
+
 <a href="http://www.phylowidget.org" class="external text"
-rel="nofollow">PhyloWidget</a>) could be used as the basis for a
+
 JavaScript-based tree viewer (or an applet that can be controlled
 through JavaScript) that integrates with JBrowse.
 
@@ -334,7 +332,7 @@ generalized to become the data persistence interface for such data.
 
 Aside from the data model deficiencies, the
 <a href="http://aniseed-ibdm.univ-mrs.fr/" class="external text"
-rel="nofollow">ANISEED</a> project has started efforts to generalize its
+
 sophisticated atlas/image-based web interface for phenotype data, and to
 make it operate on top of Chado. The hackathon could harness this
 synergy to help this effort leap forward, which could ultimately provide
@@ -404,18 +402,13 @@ this satellite (or any other satellite). If you have an interest in
 extending GMOD and will be in the area or at GMOD Americas 2011, then
 you are strongly encouraged to participate.*
 
-
-
 | Name | Email | Particular Interest? |
 |----|----|----|
 | Duke Leto (Organizer) | jonathan at leto net | Hilmar Lapp |
 | hlapp at nescent.org | Large trees in BioPerl cleanup |  |
-|  |  | ↑ Add your name and details above |
-| # Timeline |  |  |
 
 |---:|----|
 | **June 3, 2010** | [Proposal](/wiki/GMOD_Evo_Hackathon_Proposal) submitted to <a href="http://nesscent.org/" class="external text" |
-rel="nofollow">NESCent</a> | **June 10, 2010** | Funding approved | **August 1, 2010** | [Open call for participants](/wiki/GMOD_Evo_Hackathon_Open_Call), applications open | **August 25, 2010** | [Open call application](/wiki/GMOD_Evo_Hackathon_Open_Call) deadline | **September 16, 2010** | Applicants notified | **September 24, 2010** | Deadline for participant attendance commitment | **November 8-12, 2010** | Hackathon at NESCent | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](/wiki/GMOD_Americas_2011). |
 
 # Sponsorship
 
@@ -426,7 +419,7 @@ width="120" height="111" alt="NESCent" /></a>
 
 This event is sponsored by the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">US National Evolutionary Synthesis Center (NESCent)</a>
+
 through its <a href="http://www.nescent.org/informatics/whitepapers.php"
 class="external text" rel="nofollow">Informatics Whitepapers program</a>.
 NESCent <a href="http://www.nescent.org/science/proposals.php"
@@ -439,11 +432,11 @@ boundaries.
 
 # Organizing Committee
 
-- [Nicole Washington](/wiki/User%3ANLWashington), chair
-- [Sheldon McKay](/wiki/User%3AMckays)
-- [Scott Cain](/wiki/User%3AScott)
+- [Nicole Washington](/wiki/User:NLWashington), chair
+- [Sheldon McKay](/wiki/User:Mckays)
+- [Scott Cain](/wiki/User:Scott)
 - <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
   Buels</a>
 - <a href="http://informatics.nescent.org/wiki/User%253AHlapp"
   class="external text" rel="nofollow">Hilmar Lapp</a>
-- [Dave Clements](/wiki/User%3AClements)
+- [Dave Clements](/wiki/User:Clements)

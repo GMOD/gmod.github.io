@@ -4,7 +4,7 @@ title: "News/UC Davis Courses this September"
 # News/UC Davis Courses this September
 
 The <a href="http://bioinformatics.ucdavis.edu/" class="external text"
-rel="nofollow">UC Davis Bioinformatics Core</a> is offering a number of
+
 courses this month that are of interest to GMOD:
 
 | Dates | Course | Descriptions |
@@ -20,11 +20,8 @@ class="external text" rel="nofollow">UC Davis registration site</a> and
 click on **Start Registration** for full information about each course.
 Space is limited (an NGS analysis course is already full).
 
-[Dave Clements](../User%253AClements)
-
-
+[Dave Clements](../User:Clements)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/09/09*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

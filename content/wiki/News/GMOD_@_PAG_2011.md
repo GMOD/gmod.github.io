@@ -10,7 +10,7 @@ GMOD will have a stronger presence then ever at the [Plant and Animal
 Genome Conference (PAG 2011)](../PAG_2011), being held
 January 15-19 in San Diego. This includes, for the first time, **an
 <a href="http://www.intl-pag.org/19/19-gmod.html" class="external text"
-rel="nofollow">all day GMOD Workshop</a>** on Wednesday, January 19th,
+
 featuring extended talks on
 
 - [MAKER](../MAKER.1):
@@ -71,35 +71,32 @@ class="external text" rel="nofollow">GMOD Evo Hackathon</a>.
 
 Many [GMOD users](../PAG_2011#Projects_Using_GMOD_Components)
 and GMOD developers, including [Stephen
-Ficklin](../User%253ASficklin)
+Ficklin](../User:Sficklin)
 ([Tripal](../Tripal.1)), [Carson
-Holt](../User%253ACarsonholt)
+Holt](../User:Carsonholt)
 ([MAKER](../MAKER.1)), [Barry
-Moore](../User%253ABmoore) ([SOBA](../SOBA.1),
+Moore](../User:Bmoore) ([SOBA](../SOBA.1),
 [MAKER](../MAKER.1)), [Dan
-Blankenberg](../User%253ADanB) ([Galaxy](../Galaxy.1)),
-[Mitch Skinner](../User%253AMitchSkinner)
+Blankenberg](../User:DanB) ([Galaxy](../Galaxy.1)),
+[Mitch Skinner](../User:MitchSkinner)
 ([JBrowse](../JBrowse.1)), Ken Youens-Clark
-([CMap](../CMap.1)), [Mike Caudy](../User%253AMcaudy)
+([CMap](../CMap.1)), [Mike Caudy](../User:Mcaudy)
 ([GMODviews](../GMODviews)), [Rob
-Buels](../User%253ARobertBuels)
-([Bio%253A%253AChado%253A%253ASchema](../Bio%253A%253AChado%253A%253ASchema),
+Buels](../User:RobertBuels)
+([Bio::Chado::Schema](../Bio::Chado::Schema),
 [GBrowse_syn](../GBrowse_syn.1)), and [Scott
-Cain](../User%253AScott)
+Cain](../User:Scott)
 (<a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
 [GBrowse](../GBrowse.1), ...) will be attending PAG this year.
 Please seek each other out.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [Galaxy Project](../Galaxy.1)
 
 PS: In addition, three of the GMOD developers (Dan, Mitch, Scott) are
 also [available to visit organizations in the San Diego
 area](#GMOD_Roadshow_in_San_Diego) during the meeting.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/01/08*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

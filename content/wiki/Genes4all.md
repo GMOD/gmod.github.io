@@ -14,27 +14,26 @@ title: "Genes4all"
 
 Genes4all is a visualization module for the
 <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a> CMS. It is species and data-type neutral and
+
 unlike most Drupal modules, it relies on dynamically generated content
 and does not store much information on the Drupal database (i.e. does
 not create nodes).It currently drives the
 <a href="http://insectacentral.org" class="external text"
-rel="nofollow">InsectaCentral</a> database, an insect transcriptome
+
 database with 1,578,321 gene models from 12,800,018 ESTs.
 
 It is not yet fit for public consumption but Drupal developers can get a
 taste from
 <a href="http://drupal.org/project/gmod_dbsf" class="external free"
-rel="nofollow">http://drupal.org/project/gmod_dbsf</a> and
+
 <a href="http://gmod-dbsf.googlecode.com" class="external free"
-rel="nofollow">http://gmod-dbsf.googlecode.com</a>.
 
 # Dependencies
 
 Genes4all is written for Drupal 6 and it depends on the Drupal gmod_dbsf
 module
 (<a href="http://drupal.org/project/gmod_dbsf" class="external free"
-rel="nofollow">http://drupal.org/project/gmod_dbsf</a>). It requires
+
 BioPerl.
 
 # Features
@@ -76,7 +75,6 @@ and support genomes as well as ecological and geographical characters.
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](/wiki/User%3AAlpapan) while at CSIRO, the
+Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
-rel="nofollow">http://www.csiro.au</a>).

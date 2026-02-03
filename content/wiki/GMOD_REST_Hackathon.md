@@ -33,8 +33,6 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-
-
   Committee</span>](#Organizing_Committee)
 - [Attendees](#Attendees)
 - [Topics](#Topics)
@@ -47,24 +45,22 @@ REST API</a>. It will be a very low key event with no official reserved
 location or catered goodies. We will probably congregate pool side, in a
 hotel room, or in the New England themed bar at the Seven Seas hotel.
 
-
-
 ## Organizing Committee
 
-- [Josh Goodman](/wiki/User%3AJogoodma)
+- [Josh Goodman](/wiki/User:Jogoodma)
 
 ## Attendees
 
 - *Please add your name here*
-- [Josh Goodman](/wiki/User%3AJogoodma)
-- [Richard Smith](/wiki/User%3ARsmith)
-- [Todd Harris](/wiki/User%3ATharris)
-- [Robert Buels](/wiki/User%3ARobertBuels)
-- [Michael Caudy](/wiki/User%3AMcaudy)
-- [Jim Hu](/wiki/User%3AJimHu.1)
+- [Josh Goodman](/wiki/User:Jogoodma)
+- [Richard Smith](/wiki/User:Rsmith)
+- [Todd Harris](/wiki/User:Tharris)
+- [Robert Buels](/wiki/User:RobertBuels)
+- [Michael Caudy](/wiki/User:Mcaudy)
+- [Jim Hu](/wiki/User:JimHu.1)
 
-- [Chris Childers](/wiki/User%3AChilders)
-- [Justin Reese](/wiki/User%3AJustaddcoffee)
+- [Chris Childers](/wiki/User:Childers)
+- [Justin Reese](/wiki/User:Justaddcoffee)
 
 ## Topics
 

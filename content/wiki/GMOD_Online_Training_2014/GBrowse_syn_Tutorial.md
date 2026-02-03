@@ -4,7 +4,7 @@ title: "GMOD Online Training 2014/GBrowse syn Tutorial"
 # GMOD Online Training 2014/GBrowse syn Tutorial
 
 This tutorial on [GBrowse syn](../GBrowse_syn.1) was
-taught by [Sheldon McKay](../User%253AMckays) as part of the
+taught by [Sheldon McKay](../User:Mckays) as part of the
 [GMOD_Online_Training_2014](../GMOD_Online_Training_2014.1).
 
 The starting image for this tutorial is **GMOD 2014 online school -
@@ -12,8 +12,6 @@ ami-907e97f8**. It can be run as a micro or small instance.
 
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
-
-
 
 [GBrowse_syn](../GBrowse_syn.1) is a
 [GBrowse](../GBrowse.1)-based

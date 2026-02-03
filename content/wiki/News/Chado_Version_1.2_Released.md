@@ -24,7 +24,7 @@ interest in this release:
 Please follow up with comments or problems with this release to the
 schema mailing list.
 
-Thanks, [Scott](../User%253AScott)
+Thanks, [Scott](../User:Scott)
 
 Changes in Chado 1.2:
 
@@ -53,9 +53,6 @@ Changes in Chado 1.2:
 - Removed cell_type ontology from 'make ontologies' list as it wasn't
   loading via stag_storenode.pl at release time (Scott)
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/09/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

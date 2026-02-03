@@ -4,10 +4,8 @@ title: "Annotation"
 # Annotation
 
 Supporting annotation of biological data is a central goal of GMOD.
-Annotation can be done computationally or manually using [community
-annotation](/wiki/Category%3ACommunity_Annotation)
+Annotation can be done computationally or manually using
 or by <a href="http://biocurator.org/" class="external text"
-rel="nofollow">dedicated curatorial staff</a>.
 
 This page is about *creating* annotations. GMOD also has a number of
 solutions for *[visualizing](/wiki/Visualization)*
@@ -56,8 +54,6 @@ First line of the [MAKER](/wiki/MAKER.1) paper.
 
 ## Community Annotation
 
-[Community
-annotation](/wiki/Category%3ACommunity_Annotation)
 is an area of growing interest to the GMOD community.
 
 - [Apollo](/wiki/Apollo.1) is used in several community annotation

@@ -6,9 +6,7 @@ title: "GMOD in a Box"
 (Redirected from
 [Box](/wiki/Box)
 
-
-GMOD in a Box is a [GMOD virtual
-server](/wiki/Category%3AGMOD_virtual_server)
+GMOD in a Box is a
 equipped with a suite of preconfigured GMOD components, including a
 **Chado** database, **GBrowse2**, **JBrowse**, **Tripal**, and **Apollo
 or WebApollo**. Setting up a GMOD in a Box instance is quick and easy;
@@ -18,8 +16,6 @@ excellent way to assess GMOD components without having to do any
 installation; for longer-term uses, the virtual server can be kept
 running as long as required, and data can easily be moved when new
 versions of GMOD in a Box are released.
-
-
 
   in a Box</span>](#What.27s_in_GMOD_in_a_Box)
 - [Where to find
@@ -78,13 +74,10 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="55" alt="WebApollo logo" />](/wiki/WebApollo.1)
 11/22/2013
 
-
-
 ## Where to find GMOD in a Box
 
 GMOD in a Box can be downloaded from the
 <a href="/wiki/ftp://ftp.gmod.org//pub/gmod/GMODinaBox" class="external text"
-rel="nofollow">GMOD ftp site</a>.
 
 Filename: `GMOD_in_a_Box-2.05.ova.bz2` (approx. 2.1GB).
 
@@ -104,7 +97,7 @@ section](/wiki/GMOD_in_a_Box.1#Phoning_home) below.
 
 #### Build information
 
-[Scott](/wiki/User%3AScott) has fairly extensive notes on the
+[Scott](/wiki/User:Scott) has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in a
 Box. See his <a
 href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
@@ -130,8 +123,6 @@ Networking is set up to use **bridged networking**; the virtual machine
 will try to connect to your DHCP server to get an IP address. You can
 then use that IP address to access the machine via ssh.
 
-
-
 ### Directory Structure
 
 When you first log in to the virtual machine, you will be in the
@@ -152,7 +143,7 @@ replaced by symlinks, so changes made to the files noted below are
 picked up as if the files were in their original locations. If you need
 other files moved to the `data` partition, please
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">email the GMOD developers list</a> so that we can
+
 incorporate the changes into future iterations of GMOD in a Box.
 
 |----|----|
@@ -209,8 +200,6 @@ the Chado schema before the public schema; this account should be used
 for tools that interact with Chado (e.g. GBrowse, Tripal, and any
 command line tools from GMOD).
 
-
-
 ### Drupal
 
 Version: 6.28
@@ -225,13 +214,11 @@ Web URL: http://your-ip-address/
 
 When navigating with a web browser to the Apache document root (i.e.,
 <a href="http://127.0.0.1/" class="external free"
-rel="nofollow">http://127.0.0.1/</a> or the IP address of your server),
+
 you will get the Drupal home page.
 
 New modules can be added at `/data/var/www/sites/default/modules` and
 new themes can be added at `/data/var/www/sites/default/themes`.
-
-
 
 ### Tripal
 
@@ -241,8 +228,6 @@ Source: [Tripal](/wiki/Tripal.1) svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
-
-
 ### Chado
 
 Version: 1.23
@@ -251,21 +236,16 @@ Tripal was used to install the Chado 1.23 database schema and load
 ontologies and a GFF file containing yeast genome annotations from SGD
 (source: <a
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
-class="external free"
-rel="nofollow">http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff</a>),
+
 as well as a sample GFF contig file output from [MAKER](/wiki/MAKER.1)
 for the *Pythium ultimum* (source:
 <a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
-class="external free"
-rel="nofollow">http://icebox.lbl.gov/webapollo/data/pyu_data.tgz</a>).
 
 The Chado software package is in the home directory, ~/sources/chado,
 and was used to install many utility scripts via the standard
 installation method for Perl modules
 (`perl Makefile.PL; make; sudo make install`). This checkout can be
 updated with "svn update" like the Tripal svn checkout.
-
-
 
 ### GBrowse2
 
@@ -277,7 +257,7 @@ config files for the demo data: yeast: `07.chado.conf`; *P. ultimum*:
 
 GBrowse is configured to use
 <a href="https://httpd.apache.org/mod_fcgid/" class="external text"
-rel="nofollow">fcgid</a>, a web server add-on that helps speed up
+
 GBrowse. To use it, your GBrowse URLs should look like this:
 
        http://your-ip-address/fgb2/gbrowse/yeast
@@ -287,14 +267,11 @@ GBrowse at
 
        http://your-ip-address/cgi-bin/gb2/gbrowse/yeast
 
-
-
 ### JBrowse
 
 Version: 1.10.12
 
 Source: <a href="http://jbrowse.org" class="external text"
-rel="nofollow">JBrowse website</a>
 
 Installation dir: `/var/www/jbrowse`
 
@@ -312,8 +289,6 @@ JBrowse was configured to have multiple datasets using the
 jbrowse_conf.json file as described in the [JBrowse configuration
 guide](/wiki/JBrowse_Configuration_Guide#Dataset_Selector).
 This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
-
-
 
 ### WebApollo
 

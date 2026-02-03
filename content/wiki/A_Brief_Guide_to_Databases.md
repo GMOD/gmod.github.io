@@ -6,8 +6,6 @@ title: "A Brief Guide to Databases"
 A database provides infrastructure for storing, managing, and retrieving
 information.
 
-
-
   Records, and Attributes</span>](#Tables.2C_Records.2C_and_Attributes)
   - [Example](#Example)
 - [Keys](#Keys)
@@ -44,8 +42,6 @@ publication date, and whether a Kindle version is available.
 
 book
 
-
-
 ## Keys
 
 In a database table, certain attributes (columns) are **keys**. Keys are
@@ -61,8 +57,6 @@ are **alternate keys**.
 In a relational database, tables are linked together by using the
 primary key from one table in a related table. The primary key then
 becomes a **foreign** key.
-
-
 
 ### Example
 
@@ -80,7 +74,6 @@ be a good long term strategy.
 | A Feeling for the Organism, 10th Anniversary Edition: The Life and Work of Barbara McClintock | Evelyn Fox Keller | 0898715547 | Feb 1984 | 0 |
 
 book
-
 
 If we now imagine a second table with book prices in it:
 

@@ -66,8 +66,6 @@ This glossary explains terms that
 
 This glossary does **not** define biology terms.
 
-
-
 ### AJAX
 
 AJAX is a web user interface technology used in some [GMOD
@@ -77,8 +75,6 @@ years of the web. AJAX stands for Asynchronous Javascript and
 [XML](#XML).
 
 See Also:
-
-- [Category:AJAX](/wiki/Category%3AAJAX)
 
 ### API
 
@@ -119,7 +115,7 @@ See also
 
 - <a href="http://www.w3.org/Style/CSS/" class="external text"
   rel="nofollow">CSS Home Page @ W3C</a>
-- [MediaWiki:Common.css](/wiki/MediaWiki%3ACommon.css) -
+- [MediaWiki:Common.css](/wiki/MediaWiki_Common.css) -
   Extensions to MediaWiki's default CSS that we have made on this web
   site.
 
@@ -331,14 +327,13 @@ See also:
 ### Git
 
 *<a href="http://git-scm.com/" class="external text"
-rel="nofollow">Git</a>* is a version control system, like [Subversion
+
 (SVN)](#SVN), that is used to track and coordinate updates to files,
 usually software and/or documentation. Git is a *distributed* version
 control system, in that it does not require use of a central server.
 However, in practice, most projects use a central server, either hosted
 themselves or on a public host such as
 <a href="http://github.com" class="external text"
-rel="nofollow">GitHub</a>.
 
 ### GTF
 
@@ -370,7 +365,7 @@ encountered in GMOD primarily as a language to construct user interfaces
 
 See also:
 
-- [Category:Java](/wiki/Category%3AJava) - GMOD pages tagged as
+-  - GMOD pages tagged as
   related to Java.
 
 ### JRE
@@ -399,7 +394,7 @@ See also:
 
 - [Computing
   Requirements](/wiki/Computing_Requirements)
-- [Category:Linux](/wiki/Category%3ALinux) - List of GMOD pages
+-  - List of GMOD pages
   tagged as related to Linux.
 
 ### Middleware
@@ -411,7 +406,7 @@ does not work.
 
 See also:
 
-- [Category:Middleware](/wiki/Category%3AMiddleware) -
+-  -
   List of GMOD pages tagged as related to middleware.
 
 ### Object-Relational Mapping
@@ -435,7 +430,6 @@ See also:
 An *operating system* (OS) is the software that controls a computer and
 manages the sharing of resources on that computer. Example operating
 systems are <a href="http://www.microsoft.com" class="external text"
-rel="nofollow">Microsoft Windows</a> and [Linux](#Linux).
 
 See also:
 
@@ -469,7 +463,7 @@ See also:
   Home Page</a>
 - <a href="http://cpan.perl.org/" class="external text"
   rel="nofollow">Perl's open source library repository.</a>
-- [Category:Perl](/wiki/Category%3APerl) - GMOD pages tagged as
+-  - GMOD pages tagged as
   related to Perl.
 
 ### RDBMS
@@ -508,7 +502,7 @@ data. It is a part of [SAMtools](#SAMtools).
 ### SAMtools
 
 *<a href="http://samtools.sourceforge.net" class="external text"
-rel="nofollow">SAMtools</a>* is a set of formats and programs for
+
 storing, manipulating, and accessing [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
 data.
@@ -552,8 +546,7 @@ See Also:
 
 *Unix* is a group of [operating systems](#Operating_System) that are
 descended from the original Unix operating system developed in the
-1970s. This includes Solaris, HP-UX, [Linux](#Linux), [Mac OS
-X](/wiki/Category%3AMac_OS_X), and many others.
+1970s. This includes Solaris, HP-UX, [Linux](#Linux), , and many others.
 
 ### XML
 
@@ -563,5 +556,4 @@ has a much tighter syntax than does HTML.
 
 See also:
 
-- [Category:XML](/wiki/Category%3AXML)
 - [XORT](/wiki/XORT.1)

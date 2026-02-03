@@ -267,7 +267,7 @@ genes</a>) have totally distinct gene products deriving from the same
 transcript. To confuse matters, the two polypeptides are commonly
 referred to as being derived from two distinct genes (e.g. Adh and Adhr).
 In a database such as <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>, there are 3 gene IDs stored in the
+
 database - one for each of the two non-overlapping genes, and one for
 the gene cassette.
 

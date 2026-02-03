@@ -4,12 +4,10 @@ title: "GMOD FAQ"
 # GMOD FAQ
 
 A list of **F**requently **A**sked **Q**questions about the GMOD project.
-See [FAQ](/wiki/Category%3AFAQ) for a list of FAQ pages on
+See  for a list of FAQ pages on
 specific [GMOD Components](/wiki/GMOD_Components). See the
 [Glossary](/wiki/Glossary) for definitions of commonly used terms
 in GMOD.
-
-
 
   FAQ</span>](#About_this_FAQ)
   - [What is
@@ -37,8 +35,6 @@ It is now maintained as a
 <a href="http://en.wikipedia.org/wiki/Wiki" class="extiw"
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
-
-
 
 ## About GMOD
 

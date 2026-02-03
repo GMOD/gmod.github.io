@@ -6,7 +6,7 @@ title: "Drupal"
 # Overview
 
 <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a> is a free software package that allows an
+
 individual, a community of users, or an enterprise to easily publish,
 manage and organize a wide variety of content on a website. It is a
 Content Management System (CMS). CMSs are platforms for storing,
@@ -31,8 +31,6 @@ developers as it is used by both grassroot communities, scientific
 establishments and even the United Nations, the British Broadcasting
 Corporation and the White House (see
 <a href="http://egressive.com/article/who-uses-drupal"
-class="external free"
-rel="nofollow">http://egressive.com/article/who-uses-drupal</a>).
 
 # Drupal for biosciences
 

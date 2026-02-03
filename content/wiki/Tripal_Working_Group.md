@@ -33,8 +33,6 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 </tbody>
 </table>
 
-
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
@@ -69,9 +67,4 @@ subscribe to the Tripal mailing list.
 
 | Name | Email | Affiliation | Comments |
 |----|----|----|----|
-| [Stephen Ficklin](/wiki/User%3ASficklin) | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |
-rel="nofollow">CUGI</a> | Meg Staton | mestato\<\*\>yahoo.com | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">CUGI</a> | Sook Jung | sook\<\*\>bioinfo.wsu.edu | Washington State University, <a href="http://www.bioinfo.wsu.edu/gdr/" class="external text"
-rel="nofollow">GDR</a> | [Michael Caudy](/wiki/User%3AMcaudy) | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"
-rel="nofollow">Reactome</a> | [Dave Clements](/wiki/User%3AClements) | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a>
+| [Stephen Ficklin](/wiki/User:Sficklin) | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |

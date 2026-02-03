@@ -23,8 +23,6 @@ Note: this module is all due for revision.
 A possibly problematic case is where we want to localize an object to
 the left or right of a feature (but not within it):
 
-|---------|
-| feature-to-map |
            ------------------------------------------------- map
 |------|----------|
 | features to map wrt |  |

@@ -7,10 +7,10 @@ These bioinformatics groups belong to the Genome Informatics 'umbrella'
 organization:
 
 **<a href="http://dockstore.org" class="external text"
-rel="nofollow">Dockstore</a>**
+
 An open source project to bring together bioinformatics tools
 encapsulated in <a href="https://www.docker.com/" class="external text"
-rel="nofollow">Docker</a> with machine- and human-readable descriptions
+
 in the Command Workflow Language (CWL) or the Workflow Definition
 Language (WDL). This system lets you combine the great features of
 Quay.io/Github (autobuilding of Docker containers, versioning, hosting
@@ -20,15 +20,15 @@ research community create, share, search, and automatically run Docker
 containers designed to process genomics data in a way that hopefully is
 popular with multiple projects and embraced by groups like the
 <a href="https://genomicsandhealth.org/" class="external text"
-rel="nofollow">Global Alliance for Genomics and Health</a>.
+
 **<a href="https://galaxyproject.org/" class="external text"
-rel="nofollow">Galaxy</a>**
+
 An open, web-based platform for accessible, reproducible, and
 transparent computational biomedical research.
 <a href="https://galaxyproject.org/" class="external text"
-rel="nofollow">Website</a>.
+
 **<a href="http://www.gmod.org" class="external text"
-rel="nofollow">Generic Model Organism Database (GMOD)</a>**
+
 An open source project to develop a complete set of software for
 creating and administering a model organism database. Components of this
 project include genome visualization and editing tools, literature
@@ -38,7 +38,7 @@ several database projects, including WormBase, FlyBase, Mouse Genome
 Informatics, Gramene, the Rat Genome Database, TAIR, EcoCyc, and the
 Saccharomyces Genome Database. Links:
 <a href="http://www.gmod.org" class="external text"
-rel="nofollow">Website</a>,
+
 <a href="http://blog.gmod.org" class="external text" rel="nofollow">GMOD
 Blog</a>
 **<a href="/wiki/GBrowse.1" class="external text" rel="nofollow">GBrowse</a>**
@@ -50,12 +50,12 @@ such as MySQL and the BioPerl libraries. GBrowse is implemented in Perl.
 Link:
 <a href="/wiki/GBrowse.1" class="external text" rel="nofollow">Website</a>.
 **<a href="http://jbrowse.org" class="external text"
-rel="nofollow">JBrowse</a>**
+
 JBrowse is being developed as the successor to GBrowse. It is a modern,
 fast genome browser implemented almost entirely in JavaScript, with some
 server-side formatting code in Perl. Link:
 <a href="http://jbrowse.org" class="external text"
-rel="nofollow">Website</a>.
+
 **<a href="http://oicr.on.ca/informatics-and-bio-computing"
 class="external text" rel="nofollow">Genome Sequence Informatics
 (OICR)</a>**
@@ -66,7 +66,7 @@ Genome Sequence Informatics group develops new algorithms, software,
 databases, visualization tools and other necessary components to
 interpret genome datasets.
 **<a href="http://www.reactome.org" class="external text"
-rel="nofollow">Reactome</a>**
+
 A manually curated database of core pathways and reactions in human
 biology that functions as a data mining resource and electronic
 textbook. The Reactome data model describes diverse processes in the
@@ -81,6 +81,5 @@ who are both biologists and programmers at the Ontario Institute for
 Cancer Research, New York University Langone Medical Center, Cold Spring
 Harbor Laboratory, and The European Bioinformatics Institute. Links:
 <a href="http://www.reactome.org" class="external text"
-rel="nofollow">Website</a>,
+
 <a href="http://wiki.reactome.org" class="external text"
-rel="nofollow">ReactomeWiki</a> .

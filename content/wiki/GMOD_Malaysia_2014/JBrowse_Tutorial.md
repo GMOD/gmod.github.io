@@ -4,7 +4,7 @@ title: "GMOD Malaysia 2014/JBrowse Tutorial"
 # GMOD Malaysia 2014/JBrowse Tutorial
 
 This [JBrowse](../JBrowse.1) tutorial was presented by [Scott
-Cain](../User%253AScott) at [GMOD Malaysia
+Cain](../User:Scott) at [GMOD Malaysia
 2014](../GMOD_Malaysia_2014.1), February 2014. This
 tutorial requires JBrowse version 1.11.x.
 
@@ -147,8 +147,6 @@ There are four basic steps to setting up an instance of JBrowse:
 2.  Format data for tracks
 3.  Configure direct-access tracks
 4.  Index feature names
-
-
 
 ### Features from a directory of files
 
@@ -394,8 +392,6 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-
-
 ### Faceted Track Selection
 
 JBrowse has a very powerful faceted track selector that can be used to
@@ -475,7 +471,7 @@ from the old JBrowse directory into the new JBrowse directory.
 
 See the <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/JBrowse_gmod_summerschool_jul2013.pdf"
-class="internal"
+
 title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 (PDF)</a>
 
@@ -489,7 +485,6 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
-
-- [Tutorials](../Category%253ATutorials)
-- [JBrowse](../Category%253AJBrowse)
-- [GMOD Schools](../Category%253AGMOD_Schools)
+- [Tutorials](../Category:Tutorials)
+- [JBrowse](../Category:JBrowse)
+- [GMOD Schools](../Category:GMOD_Schools)

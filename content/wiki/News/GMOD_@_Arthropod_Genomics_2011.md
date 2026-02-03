@@ -11,20 +11,20 @@ width="80" height="86" alt="Arthropod Genomics 2011" />](../Arthropod_Genomics_2
 For the fourth year in a row, there will be [GMOD related
 workshops](../Arthropod_Genomics_2011) at the
 <a href="http://www.k-state.edu/agc/symp2011" class="external text"
-rel="nofollow">2011 Arthropod Genomics Symposium</a>, June 9-12, 2011,
+
 in Kansas City, Missouri, United States.
 
 - **Genome Project 101: We’ve got an assembly! Now What?**
 
-Thursday, June 9, 4:00-6:00pm, [Scott Cain](../User%253AScott),
-[Dave Clements](../User%253AClements)
+Thursday, June 9, 4:00-6:00pm, [Scott Cain](../User:Scott),
+[Dave Clements](../User:Clements)
 
 - **Comparative genomics with the generic synteny browser
   ([GBrowse_syn](../GBrowse_syn.1)): Configuration and
   display of various co-linearity data types.**
 
 Saturday, June 11, 10:30-Noon, [Sheldon
-McKay](../User%253AMckays)
+McKay](../User:Mckays)
 
 GMOD has a strong presence in the arthropod community and many GMOD
 users will also be attendance. Watch the [Arthropod Genomics
@@ -33,13 +33,10 @@ for additional talks and posters as the conference approaches.
 
 See you in Kansas City!
 
-[Scott Cain](../User%253AScott), [Dave
-Clements](../User%253AClements), and [Sheldon
-McKay](../User%253AMckays)
-
-
+[Scott Cain](../User:Scott), [Dave
+Clements](../User:Clements), and [Sheldon
+McKay](../User:Mckays)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/06/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

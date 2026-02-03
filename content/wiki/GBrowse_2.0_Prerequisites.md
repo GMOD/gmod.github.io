@@ -183,7 +183,7 @@ follow the installation instructions for your platform.
 These instructions apply to Macintosh OSX version 10.5, using the *fink*
 binary installer. First, download and install
 <a href="http://fink.sourceforge.net" class="external text"
-rel="nofollow">Fink</a>. Next open up the terminal window and type the
+
 following commands as the root user or with *sudo* (as shown):
 
     #Utility to help components distributed in source code
@@ -213,11 +213,9 @@ If it isn't already activated, turn the Apache server on by activating
 
 First, download and install MySQL Community Server form
 <a href="http://dev.mysql.com/downloads/mysql/" class="external free"
-rel="nofollow">http://dev.mysql.com/downloads/mysql/</a>.
 
 You can download and install macports from
 <a href="http://www.macports.org/" class="external free"
-rel="nofollow">http://www.macports.org/</a>.
 
 Edit your .profile '/Users/youname/.profile'
 

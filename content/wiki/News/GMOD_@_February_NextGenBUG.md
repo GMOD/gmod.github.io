@@ -15,7 +15,7 @@ attending the
 class="external text" rel="nofollow">NextGen Sequencing Bioinformatics
 User Group (NextGenBUG) meeting</a> being held at the
 <a href="http://www.lifesci.dundee.ac.uk/visit" class="external text"
-rel="nofollow">University of Dundee</a>. The program includes two talks
+
 with GMOD related content.
 
 - **<a href="http://insectacentral.org" class="external text"
@@ -36,18 +36,15 @@ with GMOD related content.
   data.
 
 There will also be talks by [Dan
-Bolser](../User%253ADanBolser) of Dundee and Darrol Baker
+Bolser](../User:DanBolser) of Dundee and Darrol Baker
 of CLCBio. If you are interested in attending, please
 <a href="http://genepool.bio.ed.ac.uk:16080/nextgenbug/meeting/20100209"
 class="external text" rel="nofollow">add your name to the participants
 list</a>.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/29*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

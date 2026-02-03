@@ -16,7 +16,7 @@ class="external text" rel="nofollow">Download the first release now!</a>
 
 We also have a
 <a href="http://icebox.lbl.gov:8080/WebApolloDemo" class="external text"
-rel="nofollow">public demo available</a> so that you can try the
+
 software for yourself.
 
 You might want to read the user guide before playing around with the

@@ -22,12 +22,8 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 <a href="http://opensource.org/licenses/LGPL-3.0" class="external text"
-rel="nofollow">LGPL</a>,
+
 <a href="http://opensource.org/licenses/Artistic-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
 Resources
-
-- [GMOD Components](/wiki/Category%3AGMOD_Components)
-- [AJAX](/wiki/Category%3AAJAX)
-- [JBrowse](/wiki/Category%3AJBrowse)

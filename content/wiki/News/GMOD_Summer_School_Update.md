@@ -21,7 +21,7 @@ School](../2008_GMOD_Summer_School) is now
 full.** However, the waiting list is still small and if you are
 interested then you are encouraged to
 <a href="../GMOD_Summer_School_Statement_of_Interest"
-class="mw-redirect"
+
 title="GMOD Summer School Statement of Interest">submit an
 application</a>.
 
@@ -30,10 +30,7 @@ received an e-mail from the [Help
 Desk](../GMOD_Help_Desk) informing you of your
 admission status.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/04/24, last
 updated 2008/05/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -85,7 +85,6 @@ BioPerl has a write-adapter for Chado-XML,
 class="external text" rel="nofollow">Bio::SeqIO::chadoxml</a>. This
 means that any file format which
 <a href="http://bioperl.org" class="external text"
-rel="nofollow">Bioperl</a> can pass can be exported to Chado-XML.
 
 If you are not familiar with the bioperl _SeqIO_ system, you can do it
 on the command line, like this:

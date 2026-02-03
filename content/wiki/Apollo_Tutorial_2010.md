@@ -3,21 +3,17 @@ title: "Apollo Tutorial 2010"
 ---
 # Apollo Tutorial 2010
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
 width="250" height="91" alt="Apollo" />
 
 This [Apollo](/wiki/Apollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%3AElee) at the [2010 GMOD Summer School -
+Lee](/wiki/User:Elee) at the [2010 GMOD Summer School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Apollo tutorial can be found at the
 <a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo Tutorial</a> page.
-
-
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -80,7 +76,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -765,7 +761,7 @@ files to the `conf` directory.
 
 Now we're ready to build our updated Apollo jar. We'll use
 <a href="http://ant.apache.org" class="external text"
-rel="nofollow">Apache Ant</a> to do so. `Ant` is similar in many ways to
+
 `make` but has a lot of native support for Java. Like `make`, we can
 have multiple targets. We're interested in the `jar` target.
 

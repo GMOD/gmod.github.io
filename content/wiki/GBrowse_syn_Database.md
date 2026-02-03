@@ -13,8 +13,6 @@ to get syntenic data into that database.
   class="external text" rel="nofollow">GMOD FTP site</a>; the sample
   data are for two rice species (courtesy of Bonnie Hurwitz)
 
-
-
   Alignment Data</span>](#Example_Alignment_Data)
   - [Note on
     formats](#Note_on_formats)
@@ -117,8 +115,6 @@ Examples:
        c_elegans-I(+)/1..2300
        myco_bovis-chr1(-)/15000..25000
 
-
-
 # Loading the alignment database
 
 ## Create a MySQL database
@@ -128,8 +124,6 @@ already exists; if not, create one from scratch using the following
 MySQL command:
 
     mysql -uroot -ppassword -e 'create database my_database'
-
-
 
 ## Loading from multiple sequence alignments
 
@@ -149,8 +143,6 @@ simple multiple sequence alignments with clustalw.
 - See the GBrowse_syn page for more on [whole genome alignment
   approaches](/wiki/GBrowse_syn.1#See_also)
 
-
-
 ## Loading from other sources
 
 The script
@@ -166,8 +158,6 @@ Any features that have start end and strand information can be used.
 - More information on
   [load_alignment_database.pl](/wiki/GBrowse_syn_Scripts#load_alignment_database.pl)
 
-
-
 ### Data loading format
 
 A tab-delimited intermediate format that encodes the alignment
@@ -181,8 +171,6 @@ reciprocal alignment is also created during database loading.
     c_briggsae      chrI    1583997 1590364 +       .       c_remanei       Crem_Contig24   631879  634679  -       .       \
     1584000 634676  1584100 634584  (truncated...)  |     631900  1590333 632000  1590233  (truncated ...)
 
-
-
 # GBrowse_syn Database Schema
 
 - The alignment database [schema](/wiki/Glossary#Schema) is very
@@ -192,8 +180,6 @@ reciprocal alignment is also created during database loading.
   cigar-line representations and the alignment to facilitate future
   reconstruction of the alignment within
   [GBrowse_syn](/wiki/GBrowse_syn.1).
-
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GBS_Schema.png" class="thumbborder"

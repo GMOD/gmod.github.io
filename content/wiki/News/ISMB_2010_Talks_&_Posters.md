@@ -16,10 +16,10 @@ from ISMB 2010](../ISMB_2010). This includes
   Enis Afgan
 - [Automated Annotation of NGS Transcriptome Data using ISGA and
   Ergatis](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/10/NGSTranscriptomeISGAErgatis.pdf),
-  [Chris Hemmerich](../User%253AChemmeri)
+  [Chris Hemmerich](../User:Chemmeri)
 - <a href="http://prezi.com/nx4jy4etq-ug/gbrowse-20-and-jbrowse-for-ismb/"
   class="external text" rel="nofollow">GMOD Presents GBrowse 2.0 and
-  JBrowse</a>, [Scott Cain](../User%253AScott)
+  JBrowse</a>, [Scott Cain](../User:Scott)
 - [An Advanced Web Query Interface for Biological
   Databases](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/be/PathwayToolsPosterISMB2010.pdf)
   ([Pathway Tools](../Pathway_Tools.1)), Peter Karp
@@ -32,12 +32,9 @@ Plus additional talks and posters on [GBrowse](../GBrowse.1),
 Tools](../Pathway_Tools.1), and
 [Galaxy](../Galaxy.1).
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/19*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

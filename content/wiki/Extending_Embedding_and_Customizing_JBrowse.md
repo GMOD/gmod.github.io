@@ -8,8 +8,6 @@ Result of discussions at GMOD satellite meeting, March 2011
 Potential upcoming changes to JSON format:
 
 <a href="http://biowiki.org/view/JBrowse/JsonFormatStabilization"
-class="external free"
-rel="nofollow">http://biowiki.org/view/JBrowse/JsonFormatStabilization</a>
 
 TODO/wishlist for JBrowse:
 
@@ -68,7 +66,6 @@ common GBrowse glyphs not currently reproducible in JBrowse:
 - GBrowse shows different representation of break between read pairs and
   gaps within individual reads
 - Glyph/image.pm (associates images with seqfeatures)
-
 
 General JBrowse feature requests:
 

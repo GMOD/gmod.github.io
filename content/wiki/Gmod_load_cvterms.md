@@ -5,12 +5,11 @@ title: "Gmod load cvterms"
 
 gmod_load_cvterms.pl is a perl script for loading and more importantly,
 updating controlled vocabulary and
-[ontology](/wiki/Category%3AOntologies) terms in the
+ terms in the
 [cvterm table](/wiki/Chado_CV_Module#Table:_cvterm). This
 script was contributed by [Naama
-Menda](/wiki/User%3ANaamaMenda) and the developers at the
+Menda](/wiki/User:NaamaMenda) and the developers at the
 <a href="http://www.sgn.cornell.edu/" class="external text"
-rel="nofollow">Sol Genomics Network (SGN)</a> lead by Lukas Mueller.
 
   it</span>](#Where_to_find_it)
   - [gmod

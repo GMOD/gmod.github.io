@@ -41,7 +41,6 @@ list. Until that paper comes out, please cite GMOD as
 
 Generic Model Organism Database (GMOD),
 <a href="http://gmod.org" class="external free"
-rel="nofollow">http://gmod.org</a>
 
 This is an easy way to increase GMOD's visibility and will help
 enormously with grants.
@@ -75,10 +74,10 @@ Biologists](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki
 Texas A&M), general areas of GMOD (e.g., [GMOD Browser Tools and
 Exercises Workshop](/wiki/ABRF2010_Workshop) at
 <a href="http://www.abrf2010.org/" class="external text"
-rel="nofollow">ABRF 2010</a> and [GMOD for Comparative
+
 Genomics](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/ISyIPGMODforComparativeGenomics.pdf)
 at <a href="https://colloque.inra.fr/isyip" class="external text"
-rel="nofollow">ISyIP</a>), and specific [GMOD
+
 Components](/wiki/GMOD_Components) (e.g., the
 [MAKER](/wiki/MAKER_PAG_2010_Workshop) and
 [GBrowse_syn](/wiki/GBrowse_syn_PAG_2010_Workshop)
@@ -99,7 +98,7 @@ for a more complete list of recent topics.
 
 Please contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)
 (<a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>) if you are interested in arranging for
+
 a GMOD speaker to present at your institution or event.
 
 ## Presentation Material
@@ -111,27 +110,14 @@ that can help you.
 ### Graphics
 
 ![GMOD Logos](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/GMOD-three-cogs.png/300px-GMOD-three-cogs.pngGMOD-three-cogs-200.png)
-[GMOD Project Logos](/wiki/Category%3AGMOD_Project_Logos) -
+ -
 Logos related to the project as a whole.
 
-[<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/50px-CMapLogo.png"
-srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/75px-CMapLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/33/CMapLogo.png/100px-CMapLogo.png 2x"
-width="50" height="58" alt="Component Logos" />](/wiki/Category%3ALogos_and_Icons)
-[Logos and Icons](/wiki/Category%3ALogos_and_Icons) -
+ -
 Logos and icons, including [GMOD
 component](/wiki/GMOD_Components) logos.
 
-[<img
-src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/9b/InsectaCentralLogo.png/70px-InsectaCentralLogo.png"
-srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/InsectaCentralLogo.png 2x"
-width="70" height="56" alt="Member Logos" />](/wiki/Category%3AMember_Logos)
-[Member Logos](/wiki/Category%3AMember_Logos) - logos of
+ - logos of
 organizations that contribute to or use GMOD.
 
 ### Slides
-
-- [Conferences](/wiki/Category%3AConferences)
-- [Education and
-  Outreach](/wiki/Category%3AEducation_and_Outreach)
-- [Events](/wiki/Category%3AEvents)
-- [GMOD Project](/wiki/Category%3AGMOD_Project)

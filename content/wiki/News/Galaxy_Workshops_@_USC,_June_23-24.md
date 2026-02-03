@@ -52,7 +52,7 @@ difficult to use, communicating techniques and experiments is
 challenging, and reproducibility is very limited. Galaxy is one approach
 for addressing these problems.
 <a href="http://usegalaxy.org" class="external text"
-rel="nofollow">Galaxy</a> is a popular Web-based platform for performing
+
 accessible, reproducible, and transparent genomics research. Galaxy
 provides a collaborative environment for performing complex analyses
 with automatic and unobtrusive provenance tracking; these features allow
@@ -61,9 +61,6 @@ an analysis and also intent, context, and narrative. Based on
 experiences with Galaxy, Jeremy will discuss some open problems that
 might be addressed using artificial intelligence methods and techniques.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/06/17*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -12,11 +12,9 @@ height="60" alt="DictyBase" /></a>
 class="external text" rel="nofollow">open position</a> for a
 Bioinformatics Software Engineer at
 <a href="http://dictybase.org" class="external text"
-rel="nofollow">dictyBase</a>.
+
 See the <a href="http://www.dictybase.org/dictybase_jobs.html"
 class="external text" rel="nofollow">official posting</a> for full
 details.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/11/04*

@@ -15,8 +15,6 @@ GBrowse 1.X to
 use since 2002. It is recommended for applications which use a single
 database only and which must support legacy browsers.
 
-
-
   Downloads](#Downloads)
   - [GitHub](#GitHub)
   - [Net-based
@@ -30,15 +28,13 @@ database only and which must support legacy browsers.
 
 The GBrowse 1.x development branch is kept at the
 \[<a href="https://github.com/GMOD/GBrowse" class="external free"
-rel="nofollow">https://github.com/GMOD/GBrowse</a> GBrowse GitHub
+
 repository. To get the correct version, use the following commands to
 get the stable branch:
 
      git clone https://github.com/GMOD/GBrowse.git
      cd GBrowse
      git checkout -t -b stable origin/stable
-
-
 
 ### Net-based Installer Script
 
@@ -48,8 +44,6 @@ class="external text" rel="nofollow">gbrowse_netinstall.pl at the
 GBrowse GitHub repository</a> will automatically download and install
 GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 [Installation](#Installation) for details on using this script.
-
-
 
 ## Installation
 
@@ -61,13 +55,10 @@ GBrowse 1.70 (**NOT GBrowse2** and its Perl libraries for you. See
 - [Ubuntu](/wiki/GBrowse_Ubuntu_HOWTO)
 - [Windows](/wiki/GBrowse_Windows_HOWTO)
 
-
-
 ## Configuration
 
 - <a href="/wiki/GBrowse_Configuration_HOWTO" class="mw-redirect"
   title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a>
 
-
-See **[Category:GBrowse](/wiki/Category%3AGBrowse)** for more
+See **** for more
 GBrowse documentation.

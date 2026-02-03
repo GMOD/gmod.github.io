@@ -4,9 +4,9 @@ title: "Modware Presentation"
 # Modware Presentation
 
 Eric Just, Senior Bioinformatics Scientist,
-[dictyBase](/wiki/Category%3ADictyBase):
+:
 <a href="http://dictybase.org" class="external free"
-rel="nofollow">http://dictybase.org</a> Center for Genetic Medicine,
+
 Northwestern University. This is an edited version of
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Modware.pdf" class="internal"
 title="Modware.pdf">Eric's presentation</a>.
@@ -108,7 +108,7 @@ The core of <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 
 - Object-oriented Perl interface to
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-- Built on top of [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI)
+- Built on top of [Chado::AutoDBI](/wiki/Chado_AutoDBI)
 - Connection handled by GMOD
 - Database transactions supported
 - [BioPerl](/wiki/BioPerl) used to represent and manipulate sequence
@@ -138,8 +138,6 @@ The core of <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
    # Inserts chromosome into database
    $reference_feature->insert();
 ```
-
-
 
 ##### Problem 1 - Create and Insert a Gene
 
@@ -384,8 +382,6 @@ the changed record. Regenerate gene report
  }
 ```
 
-
-
 ##### Problem 4 - Search and Display Results
 
 4\) Search for all genes with symbols starting with "x-\*". With the
@@ -407,8 +403,6 @@ results produce the following simple result list (organism will vary):
      GMODWriter->Write_search_results( $results )
 ```
 
-
-
 ##### Problem 4 - Search and Display Results
 
 4\) Search for all genes with symbols starting with "x-\*". With the
@@ -417,8 +411,6 @@ results produce the following simple result list (organism will vary):
        1323    x-file  Xenopus laevis
        1324    x-men   Xenopus laevis
        1325    x-ray   Xenopus laevis
-
-
 
 ``` de1
 sub Write_search_results {
@@ -459,8 +451,6 @@ sub Write_search_results {
  GMODWriter->Write_search_results( $results )
 ```
 
-
-
 ##### Other Modware Highlights
 
 - Easy to write applications with Modware
@@ -484,7 +474,7 @@ sub Write_search_results {
 - If <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> changes
   then...
   - Manually change [Modware](/wiki/Modware) or ...
-  - [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI) will automatically
+  - [Chado::AutoDBI](/wiki/Chado_AutoDBI) will automatically
     adjust to the change, depends on the change
 - Can set multiple connections through AutoDBI's `set_connection`
 
@@ -503,8 +493,6 @@ sub Write_search_results {
   - Possible: trade-off between simplicity and functionality
 - Send us your ideas!
 
-
-
 ##### Discussion
 
 - How hard is it to extend Modware?
@@ -514,7 +502,7 @@ sub Write_search_results {
 
 - Rex Chisholm, PhD
 - Warren Kibbe, PhD
-- [Scott Cain](/wiki/User%3AScott)
+- [Scott Cain](/wiki/User:Scott)
 - Brian O’connor
 - Sohel Merchant
 - Petra Fey
@@ -522,4 +510,3 @@ sub Write_search_results {
 - Karen Pilcher
 - [BioPerl](/wiki/BioPerl)
 - GMOD
-- [SGD](/wiki/Category%3ASGD)

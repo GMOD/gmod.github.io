@@ -7,8 +7,6 @@ title: "Chado Naural Diversity Module/natdiv props call notes"
 
 June 1st 2011, 12PM EST
 
-
-
 ## participants
 
 - Maren
@@ -19,8 +17,6 @@ June 1st 2011, 12PM EST
 - Naama
 - Sook (first 30 min)
 - Lukas (first 30 min)
-
-
 
 ## Notes
 
@@ -77,8 +73,6 @@ people don't use/ask for these 2 prop tables because they don't need it,
 or they are not aware this is an option. I'm inclined to do nothing for
 now, but Yuri should send the email because there are now more Chado
 users.
-
-
 
 ------------------------------------------------------------------------
 
@@ -141,7 +135,6 @@ field. I find it very useful.
 we have here 2 fundamental issues: 1. how do we break the
 value-phenotype connection in the phenotype module 2. how do we use the
 prop tables? (and cvalue_id, is this needed?)
-
 
 --Yuri:
 

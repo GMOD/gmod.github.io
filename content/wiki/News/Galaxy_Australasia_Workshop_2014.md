@@ -24,7 +24,7 @@ scientific applications. The workshop will also include Training
 Sessions taught by Galaxy developers and master users. GAW 2014 will run
 24 and 25th March, immediately preceding
 <a href="http://wp.csiro.au/css/" class="external text"
-rel="nofollow">Computational and Simulation Sciences and eResearch</a>
+
 in Melbourne.
 
 GAW 2014 will also include poster session, keynote speakers.
@@ -77,7 +77,5 @@ Looking forward to seeing you all in Melbourne!
 href="https://wiki.galaxyproject.org/Events/GAW2014#Organising#Organising"
 class="external text" rel="nofollow">Committee GAW 2014 Organising
 Committee</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on yyyy/mm/dd*

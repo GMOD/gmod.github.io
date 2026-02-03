@@ -7,7 +7,6 @@ Meeting Report [Model Organism Database User Interface
 Caucus](/wiki/MOD_User_Interface_Caucus) January
 18, 2007 Town and Country Hotel, San Diego, CA, USA
 
-
 The user interface (UI) is the most visible aspect of a MOD, and
 arguably has the most direct impact on the satisfaction of its users. On
 the first day of the [January 2007 GMOD
@@ -116,8 +115,6 @@ Ideas for future development
 #  [Individual Presentations](/wiki/MOD_Face_Talks)
 
 Slides and text summaries of individual presentations.
-
-
 
 # Detailed Report
 
@@ -268,27 +265,27 @@ documentation provided by
 <a href="http://www.mediawiki.org/" class="external text">Wikipedia</a>.
 Members of this new generation of wikis include:
 <a href="http://wiki.gmod.org/" class="external free"
-rel="nofollow">http://wiki.gmod.org/</a> , an outcome of the GMOD
+
 meeting , <a href="http://genomewiki.ucsc.edu/" class="external free"
-rel="nofollow">http://genomewiki.ucsc.edu/</a> ,
+
 <a href="http://www.bioperl.org/wiki/" class="external free"
-rel="nofollow">http://www.bioperl.org/wiki/</a> ,
+
 <a href="http://www.wormbase.org/wiki/" class="external free"
-rel="nofollow">http://www.wormbase.org/wiki/</a> ,
+
 <a href="http://wiki.dictybase.org/dictywiki/" class="external free"
-rel="nofollow">http://wiki.dictybase.org/dictywiki/</a> ,
+
 <a href="http://rana.lbl.gov/drosophila/wiki/" class="external free"
-rel="nofollow">http://rana.lbl.gov/drosophila/wiki/</a> ,
+
 <a href="http://www.nescent.org/wikis.php" class="external free"
-rel="nofollow">http://www.nescent.org/wikis.php</a> ,
+
 <a href="http://openwetware.org/wiki/" class="external free"
-rel="nofollow">http://openwetware.org/wiki/</a> ,
+
 <a href="http://darwin.nerc-oxford.ac.uk/gc_wiki/" class="external free"
-rel="nofollow">http://darwin.nerc-oxford.ac.uk/gc_wiki/</a> ,
+
 <a href="http://wiki2.germonline.org/wiki/" class="external free"
-rel="nofollow">http://wiki2.germonline.org/wiki/</a> ,
+
 <a href="http://www.biodirectory.com/biowiki/" class="external free"
-rel="nofollow">http://www.biodirectory.com/biowiki/</a> . This growing
+
 list of wikis offer scientists a common, well-documented user interface
 that is expected to facilitate expanded use, as experience in
 participation one site carries over to others.
@@ -319,7 +316,7 @@ of the WormBase site for each snapshot. These snapshot images can be
 accessed via the web in the same manner as the main WormBase site, or
 can be downloaded for playback on any computer that supports the free
 <a href="http://www.vmware.com" class="external text"
-rel="nofollow">VMWare</a> player. This practice greatly facilitates
+
 reproduction of results from papers that cite WormBase.
 
 ## Using Google and Other General Search Engines
@@ -352,9 +349,9 @@ acceptable level.
 A different strategy pursued by some MODs is to use generalized search
 software on their own servers, such as
 <a href="http://lucene.apache.org/" class="external text"
-rel="nofollow">Lucene</a> or
+
 <a href="http://www.gmod.org/lucegene" class="external text"
-rel="nofollow">LuceGene</a>, a Lucene variant customized for indexing
+
 many types of biological data. This approach offers more control over
 the indexing, searching, and result presentation than using an external
 search engine.

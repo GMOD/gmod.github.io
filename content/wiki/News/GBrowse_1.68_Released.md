@@ -12,9 +12,6 @@ OSX](../GBrowse_MacOSX_HOWTO) and
 <a href="../GBrowse_Linux_HOWTO" class="mw-redirect"
 title="GBrowse Linux HOWTO">Linux</a> platforms.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2007/04/17*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -4,7 +4,7 @@ title: "Chado Tutorial 2013"
 # Chado Tutorial 2013
 
 This <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-tutorial was presented by [Scott Cain](/wiki/User%3AScott) as part
+tutorial was presented by [Scott Cain](/wiki/User:Scott) as part
 of the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
@@ -186,7 +186,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Extensible**
   - Write your own modules and properties
 - **Widely used**
-  - [FlyBase](/wiki/Category%3AFlyBase) - Chado started here,
+  -  - Chado started here,
     large diverse dataset and organization
   - <a href="http://xenbase.org" class="external text"
     rel="nofollow">Xenbase</a> - Smaller, but with several IT staff
@@ -342,7 +342,7 @@ Chado defines a _feature_ to be a region of a biological polymer
 regions on this polymer. A region can be an entire chromosome, or a
 junction between two bases. Features are typed according to the
 <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence Ontology (SO)</a>, they can be localized
+
 relative to other features, and they can form part-whole and other
 relationships with other features.
 
@@ -363,7 +363,6 @@ controlled vocabulary or ontology. These are stored in the cv module.
 #### CV (Controlled Vocabularies) Module
 
 <a href="http://gmod.org/Chado_CV_Module" class="external text"
-rel="nofollow">Controlled Vocabulary Module Tables</a>
 
 The CV module implements _controlled vocabularies_ and their more
 complex cousins, _ontologies_.
@@ -376,7 +375,7 @@ ones. Pull down menus are often used to present CVs to users in query or
 annotation interfaces.
 
 | --- | --- | <a href="http://zfin.org" class="external text"
-rel="nofollow">ZFIN's</a> Assay Type CV | <img
+
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/ZfinAssayTypePullDown.png" width="231"
 height="260" alt="ZFIN&#39;s Assay Type CV" /> |
 
@@ -387,16 +386,13 @@ terms plus rules and relationships between the terms. The Gene Ontology
 (GO) and Sequence Ontology (SO) are the two best known ontologies, but
 there are many more available from
 <a href="http://www.obofoundry.org/" class="external text"
-rel="nofollow">OBO</a>.
 
 Ontologies can be incredibly complex with many relationships between
 terms. Representing them and reasoning with them is non-trivial, but the
 CV module helps with both.
 
 | <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" |
-|----|
-| <img |
+
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png" width="1067"
 height="604" alt="FlyBaseCVTermViewer.png" /> |
 
@@ -1393,7 +1389,6 @@ A specific example from FlyBase:
 
 Here is an example of a simple case of the sort of data that
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> curates.
 
 The _dpp_ transcript is expressed in embryonic stage 13-15 in the
 cephalic segment as reported in a
@@ -1687,7 +1682,7 @@ animal communities as well.
 
 To address this there are several efforts currently underway. The
 <a href="http://aniseed-ibdm.univ-mrs.fr/" class="external text"
-rel="nofollow">Aniseed project</a> includes 4 dimensional anatomy,
+
 expression, and cell fate graphical atlases. Aniseed is currently in the
 process of reimplementing itself to use Chado. This work is likely to
 lead to contributions back to GMOD (both in Chado and a web interface)
@@ -1695,8 +1690,8 @@ to better support these types of atlases.
 
 Better natural diversity support will be added in the coming year.
 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a> has developed a prototype natural diversity
+
 Chado module based on the
 <a href="http://www.maizegenetics.net/gdpdm/" class="external text"
-rel="nofollow">GDPDM</a>, that will added robust support for natural
+
 diversity data.

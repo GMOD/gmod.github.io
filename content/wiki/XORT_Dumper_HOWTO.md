@@ -37,7 +37,7 @@ using XORT and what is involved to do so.
 
 ## Author
 
-- [Josh Goodman](/wiki/User%3AJogoodma)
+- [Josh Goodman](/wiki/User:Jogoodma)
 
 ## Prerequisites
 
@@ -291,8 +291,6 @@ under feature_relationship XORT knows to join the gene feature to
 feature_relationship via object_id and then follow the subject_id back
 to the feature table to fetch the CDS.
 
-
-
 ## More Information
 
 See the [XORT](/wiki/XORT.1) page.
@@ -300,6 +298,5 @@ See the [XORT](/wiki/XORT.1) page.
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 Or contact the [GMOD Help Desk](/wiki/GMOD_Help_Desk)

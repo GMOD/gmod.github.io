@@ -21,14 +21,10 @@ One critical piece of the project that is missing is feedback from the
 community. If you are interested in a Chado API, please download the
 Modware Virtual Machine found on the
 <a href="http://gmod-ware.sourceforge.net" class="external text"
-rel="nofollow">Modware home page</a> and give it a try. Email all
+
 feature requests, questions, and comments to
 <a href="mailto:gmod-ware-users@sourceforge.net" class="external text"
-rel="nofollow">gmod-ware-users@sourceforge.net</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2007/12/11*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

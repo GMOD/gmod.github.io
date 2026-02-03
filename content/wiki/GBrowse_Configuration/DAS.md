@@ -10,8 +10,6 @@ how to configure GBrowse to work with it.
 <a href="../GBrowse_Configuration" class="mw-redirect"
 title="GBrowse Configuration">GBrowse Configuration</a>.*
 
-
-
 # Using DAS (Distributed Annotation System) Databases
 
 You may insert features from a DAS source into any named track. Create a
@@ -32,7 +30,6 @@ desired data.
 You can also run GBrowse entirely off a single DAS source. To get this
 support, you must use Bio::Das version 0.90 or higher, available from
 <a href="http://www.biodas.org" class="external free"
-rel="nofollow">http://www.biodas.org</a>.
 
 A sample \[GENERAL\] configuration section looks like this:
 

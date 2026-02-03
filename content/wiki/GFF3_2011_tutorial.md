@@ -24,7 +24,6 @@ width="200" height="200" alt="GMODAmericas2011Logo.png" /></td>
 </tbody>
 </table>
 
-
 **GFF** is a standard file format for storing genomic features in a text
 file. GFF stands for *Generic Feature Format*. GFF files are plain text,
 9 column, tab-delimited files. GFF *databases*
@@ -83,7 +82,7 @@ GFF and is sometimes referred to as GFF2.5.
 The <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">formal specification of GFF3</a> is
 on the <a href="http://www.sequenceontology.org/" class="external text"
-rel="nofollow">Sequence Ontology</a> web site. It completely describes
+
 the format, including column definitions, metadata and directives. It
 also contains lengthy sections explaining how to represent different
 situations in GFF3, including:
@@ -246,8 +245,7 @@ The alignment of the feature to the target if the two are not collinear
 (e.g. contain gaps). The alignment format is taken from the CIGAR format
 described in the Exonerate documentation. <a
 href="http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=Ensembl"
-class="external free"
-rel="nofollow">http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=Ensembl</a>).
+
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
@@ -561,7 +559,6 @@ href="http://song.cvs.sourceforge.net/song/software/scripts/gtf2gff3/"
 class="external text" rel="nofollow"><code>gft2gff3</code></a> script
 does this conversion, with some caveats. See also
 <a href="http://www.nabble.com/Hi-td17810093.html" class="external text"
-rel="nofollow">this BioPerl-l posting</a>.
 
 # GFF in GMOD
 

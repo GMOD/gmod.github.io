@@ -21,7 +21,7 @@ Chado, and includes some specific use cases useful with
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>. This
 guide is based on experience at
 <a href="http://urgi.versailles.inra.fr/" class="external text"
-rel="nofollow">INRA URGI</a>, and was written by Aminah Keliet, Joëlle
+
 Amselem, Sandra Derozie, and Delphine Steinbach.
 
 If you are interested in loading your
@@ -31,12 +31,9 @@ with this guide.
 
 Thanks,
 
-[Dave C.](../User%253AClements)
+[Dave C.](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/05/27*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

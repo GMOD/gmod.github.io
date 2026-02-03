@@ -48,16 +48,11 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-
-
-
 The [Satellite
 Meetings](/wiki/January_2010_GMOD_Meeting#Satellite_Meetings)
 at the [January 2010 GMOD
 Meeting](/wiki/January_2010_GMOD_Meeting) proved
 so popular that we decided to hold them again.
-
-
 
   Topics</span>](#Satellite_Topics)
 - [Participants](#Participants)
@@ -79,28 +74,18 @@ We discussed
 
 There is a nice
 <a href="http://blog.openhelix.eu/?p=5551" class="external text"
-rel="nofollow">writeup of these summaries</a> by Mary Mangan on the
+
 <a href="http://blog.openhelix.eu/" class="external text"
-rel="nofollow">OpenHelix blog</a>.
 
 ## Participants
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
-| [Dave Clements](/wiki/User%3AClements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
-rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
-rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
-rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](/wiki/User%3AChemmeri) | <a href="http://cgb.indiana.edu" class="external free"
-rel="nofollow">http://cgb.indiana.edu</a> | Jerven Bolleman | UniProt Swiss-Prot | Oksana Riba Grognuz | Swiss Institute of Bioinformatics (SIB) Department of Ecology and Evolution, University of Lausanne | Kim Rutherford | Cambridge Systems Biology Centre | <a href="http://www.pombase.org/" class="external free"
-rel="nofollow">http://www.pombase.org/</a> | Stephen Taylor | CBRG, Oxford University | <a href="http://www.cbrg.ox.ac.uk/" class="external free"
-rel="nofollow">http://www.cbrg.ox.ac.uk/</a> | [Scott Cain](/wiki/User%3AScott) | OICR | <a href="http://gmod.org/" class="external free"
-rel="nofollow">http://gmod.org/</a> | Gerd Anders | Public research institute: Max-Delbrueck-Centrum Berlin (MDC), Researcher and database developer | <a
+| [Dave Clements](/wiki/User:Clements) | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
+
 href="http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html"
-class="external free"
-rel="nofollow">http://www.mdc-berlin.de/en/research/core_facilities/cf_massspectromety_bimsb/teammember/index.html</a> <a
+
 href="http://www.mdc-berlin.de/en/research/core_facilities/cf_bioinformatic/teammember/index.html"
-class="external free"
-rel="nofollow">http://www.mdc-berlin.de/en/research/core_facilities/cf_bioinformatic/teammember/index.html</a> |
 
 ## Sponsors
 
@@ -113,7 +98,7 @@ alt="Cambridge Computational Biology Institute" /></a>
 
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
-rel="nofollow"
+
 title="School of Biological Sciences Bioinformatics Training Facility"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/190px-CambridgeWide.gif"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/285px-CambridgeWide.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/380px-CambridgeWide.gif 2x"
@@ -122,12 +107,12 @@ alt="School of Biological Sciences Bioinformatics Training Facility" /></a>
 
 This event was sponsored by the
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">Cambridge Computational Biology Institute</a> and the <a
+
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
 class="external text" rel="nofollow">School of Biological Sciences
 Bioinformatics Training Facility</a>. The
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">CCBI</a> is set up to bring together the unique strengths
+
 of Cambridge in medicine, biology, mathematics and the physical
 sciences. Its aim is to create a centre of excellence in research and
 teaching and to promote collaborations both within the Cambridge area
@@ -143,7 +128,7 @@ and free to all who might benefit.
 CCBI provided copious organizational and logistical support for this
 event. The Bioinformatics Training Facility is generously providing all
 coffee, tea, and break snacks at no charge. Please thank Gos Micklem,
-[Richard Smith](/wiki/User%3ARsmith), Shelley Lawson, and Dave
+[Richard Smith](/wiki/User:Rsmith), Shelley Lawson, and Dave
 Judge profusely every time you see them.
 
 ## Lodging and Other Logistics

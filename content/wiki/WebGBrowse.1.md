@@ -15,6 +15,3 @@ Status
 - Support: active
 
 Resources
-
-- [GBrowse](/wiki/Category%3AGBrowse)
-- [GMOD Components](/wiki/Category%3AGMOD_Components)

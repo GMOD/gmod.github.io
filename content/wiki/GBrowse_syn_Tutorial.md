@@ -7,7 +7,7 @@ title: "GBrowse syn Tutorial 2013"
 Tutorial](/wiki/GBrowse_syn_Tutorial)
 
 This tutorial on [GBrowse syn](/wiki/GBrowse_syn.1) was taught
-by [Sheldon McKay](/wiki/User%3AMckays) as part of the [2013 GMOD
+by [Sheldon McKay](/wiki/User:Mckays) as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).
 
 The starting image for this tutorial is **2013 GMOD start day 4
@@ -15,8 +15,6 @@ The starting image for this tutorial is **2013 GMOD start day 4
 
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
-
-
 
 [GBrowse_syn](/wiki/GBrowse_syn.1) is a
 [GBrowse](/wiki/GBrowse.1)-based

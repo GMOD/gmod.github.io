@@ -44,18 +44,15 @@ releases of ActiveState Perl versions 5.12 and 5.14 because (as far as I
 know), DB_File can't be installed in those releases. It may be possible
 to install BioPerl and GBrowse using
 <a href="http://strawberryperl.com/" class="external text"
-rel="nofollow">Strawberry Perl</a>, but I haven't tried.*
 
 Go to <a href="http://www.activestate.com" class="external text"
-rel="nofollow">ActiveState.com</a>, and download the product
+
 "ActivePerl." This is a little confusing because web site tries to point
 you to the commercial product, ASPN Perl. At the current time, the full
 download URL for ActivePerl is:
 
 <a
 href="http://www.activestate.com/Products/Download/Download.plex?id=ActivePerl"
-class="external free"
-rel="nofollow">http://www.activestate.com/Products/Download/Download.plex?id=ActivePerl</a>
 
 Choose the "MSI" package for Windows for Perl version 5.8. (**Version
 5.10 does not currently work due to modules that have not yet been made
@@ -64,10 +61,9 @@ will install automatically. Unfortunately, the missing module is
 DB_File, and is still missing from all post-5.8 releases of ActiveState
 Perl. I believe it can be installed in ActiveState Perl 5.10 using the
 <a href="http://trouchelle.com/perl/ppmrepview.pl" class="external text"
-rel="nofollow">Trouchelle repo</a>. I don't know of a similar repo for
+
 ActiveState Perl 5.12 or 5.14. It might be possible to install GBrowse
 with <a href="http://strawberryperl.com/" class="external text"
-rel="nofollow">Strawberry Perl</a>, but I haven't tried.
 
 *Please accept the default location for ActiveState Perl; this will make
 it easier to install GBrowse.*
@@ -76,7 +72,7 @@ it easier to install GBrowse.*
 
 Go to
 <a href="http://httpd.apache.org/download.cgi" class="external free"
-rel="nofollow">http://httpd.apache.org/download.cgi</a>. Select the most
+
 recent version of Apache, and choose the download marked "Win32 Binary
 (MSI Installer)." Once downloaded, launch the package and it will
 install automatically.
@@ -92,7 +88,7 @@ performance.
 
 Go to
 <a href="http://dev.mysql.com/downloads/mysql" class="external free"
-rel="nofollow">http://dev.mysql.com/downloads/mysql</a>. Select and
+
 download the most recent version of the Windows package. Once the
 package is downloaded, you will need to unpack it with the WinZip
 program. Then launch the installer.
@@ -104,12 +100,12 @@ is via the ActiveState ppm utility.
 
 Download the <a
 href="https://raw.github.com/GMOD/GBrowse/master/bin/gbrowse_netinstall.pl"
-class="external text"
+
 rel="nofollow"><code>gbrowse_netinstall.pl</code></a> script. The script
 works best when <a href="http://apache.org" class="external text"
-rel="nofollow">Apache</a> and
+
 <a href="http://www.activestate.com" class="external text"
-rel="nofollow">ActiveState</a> Perl 5.8 are already installed using the
+
 default locations. Execute the command in the DOS command shell:
 
      perl gbrowse_netinstall.pl
@@ -138,5 +134,5 @@ ActiveState and/or Apache!). A few notes:
 
 ## Authors
 
-- [Lincoln Stein](/wiki/User%3ALstein)
-- [Scott Cain](/wiki/User%3AScott)
+- [Lincoln Stein](/wiki/User:Lstein)
+- [Scott Cain](/wiki/User:Scott)

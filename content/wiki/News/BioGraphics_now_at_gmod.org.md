@@ -16,9 +16,6 @@ the cpan shell. Additionally, the
 script for installing GBrowse automatically has been updated to install
 Bio::Graphics before installing GBrowse.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/01/06*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

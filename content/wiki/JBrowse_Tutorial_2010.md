@@ -9,14 +9,14 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="55" alt="JBrowse" />
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Mitch
-Skinner](/wiki/User%3AMitchSkinner) at the [2010 GMOD Summer
+Skinner](/wiki/User:MitchSkinner) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent JBrowse tutorial can be found at the
 <a href="/wiki/JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through setting up and running a [JBrowse](/wiki/JBrowse.1) server.
 
   VMware](#VMware)
@@ -64,19 +64,7 @@ and install the start image (below). See VMware for what
 software you need to use a VMware system image and for directions on how
 to get the image up and running on your machine.
 
-Download the \[<a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day1.vmwarevm.tar.gz"
-class="external text" rel="nofollow">start image</a> and the <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Courses/2010/SummerSchoolAmericas/GMODCourse2010Day2.vmwarevm.tar.gz"
-class="external text" rel="nofollow">end image</a>.
-
-**Logins**:
-
-| Purpose | Username | Password         | ------- | -------- | ---------------- | Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
-
-## Caveats
-
-**Important Note**
-
-This [tutorial](/wiki/Category%3ATutorials) describes the
+Download the \ describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -137,7 +125,7 @@ More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/GMODCourse2010-JBrowseIntro.pdf"
-class="internal"
+
 title="GMODCourse2010-JBrowseIntro.pdf">Media:GMODCourse2010-JBrowseIntro.pdf</a>
 
 ## JBrowse arch

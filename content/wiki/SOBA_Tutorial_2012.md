@@ -8,8 +8,6 @@ Summer School](/wiki/2012_GMOD_Summer_School) and
 the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
-
-
   SOBA</span>](#About_SOBA)
 - [SOBA Web
   Application](#SOBA_Web_Application)
@@ -59,7 +57,7 @@ class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
 and [AJAX](/wiki/Glossary#AJAX). Both versions of SOBA use the
 <a href="http://template-toolkit.org/" class="external text"
-rel="nofollow">Template Tooklit (TT)</a> to generate html/txt reports,
+
 graphviz for the ontology graphs, and GD for charts. Template Toolkit
 makes extensibility very easy, at least for someone who's willing to
 learn the fairly simple template language of TT as you don't need to

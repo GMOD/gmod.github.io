@@ -44,7 +44,6 @@ my $query    =
  FROM seq_region,karyotype
  WHERE seq_region.seq_region_id = karyotype.seq_region_id;';
 
-
 my $dbh = DBI->connect( "dbi:mysql:$database:$host", 'anonymous' )
     or die DBI->errstr;
 

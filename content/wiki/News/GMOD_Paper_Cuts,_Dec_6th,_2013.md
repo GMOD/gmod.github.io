@@ -3,8 +3,6 @@ title: "News/GMOD Paper Cuts, Dec 6th, 2013"
 ---
 # News/GMOD Paper Cuts, Dec 6th, 2013
 
-
-
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
 eye-catching GMOD-related work.**
@@ -19,7 +17,6 @@ For more GMOD and GMOD-related papers, and to contribute your own
 GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
-
 
 **The king cobra genome reveals dynamic gene evolution and adaptation in
 the snake venom system**
@@ -40,7 +37,6 @@ Burmese python has also been recently been sequenced
 both projects using [MAKER](../MAKER.1) for automated
 annotation.
 
-
 **PortEco: a resource for exploring bacterial biology through
 high-throughput data and analysis tools**
 <sup>[\[3\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1203-3)</sup>
@@ -54,13 +50,11 @@ high-throughput data and analysis tools**
 > sources.
 
 <a href="http://porteco.org" class="external text"
-rel="nofollow">PortEco</a> integrates *E. coli* data from numerous
+
 sources and uses a wiki-based system to enable collaborative knowledge
 management. PortEco is currently testing a
 [JBrowse](../JBrowse.1) installation with the view to
 migrating over to JBrowse from their current GBrowse sequence browser.
-
-
 
 **The Mouse Genome Database: integration of and access to knowledge
 about the laboratory mouse**
@@ -76,10 +70,8 @@ about the laboratory mouse**
 
 An update on the resources available at
 <a href="http://www.informatics.jax.org" class="external text"
-rel="nofollow">Mouse Genome Database (MGD)</a>, one of the groups
+
 involved in GMOD since the very beginning of the project.
-
-
 
 **NECTAR: a database of codon-centric missense variant annotations**
 <sup>[\[5\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1245-5)</sup>
@@ -95,8 +87,6 @@ numerous sources, including Ensembl, HGMD-PUBLIC, UniProt, COSMIC, and
 ClinVar, and includes [GBrowse](../GBrowse.1)-able disease
 variants, function annotations, and paralogue annotations and a DAS
 server. Sweet!
-
-
 
 **Identification of a 31-bp Deletion in the RELN Gene Causing
 Lissencephaly with Cerebellar Hypoplasia in Sheep**
@@ -115,12 +105,8 @@ sheep: a nice combination of classical genetics (studying families trees
 and examining phenotypes) and modern techniques, using resources
 provided at
 <a href="http://www.livestockgenomics.csiro.au/" class="external text"
-rel="nofollow">CSIRO's Livestock Genomics website</a>.
-
 
 Happy reading!
-
-
 
 1.  <span id="cite_note-DOI:10.1073.2Fpnas.1314702110"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1073.2Fpnas.1314702110_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -145,7 +131,5 @@ Disclaimer: the papers included in this feature are for your
 entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/12/06*

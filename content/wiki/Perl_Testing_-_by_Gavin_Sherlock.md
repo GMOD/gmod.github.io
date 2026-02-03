@@ -76,8 +76,7 @@ machine, and will hopefully send back reports of anything that breaks.
 `make test` will, via your generated Makefile, invoke
 ExtUtils::MakeMaker
 (<a href="http://search.cpan.org/dist/ExtUtils-MakeMaker/"
-class="external free"
-rel="nofollow">http://search.cpan.org/dist/ExtUtils-MakeMaker/</a>),
+
 which will:
 
 1.  Check for the existence of a file named test.pl in the current
@@ -111,8 +110,6 @@ with tests written for Test::Simple).
 
 For a good tutorial on testing, see
 <a href="http://search.cpan.org/dist/Test-Simple/lib/Test/Tutorial.pod"
-class="external free"
-rel="nofollow">http://search.cpan.org/dist/Test-Simple/lib/Test/Tutorial.pod</a>
 
 Test::Simple contains a single function, called ok(). The basic
 philosophy is that it allows you to determine whether you get the
@@ -178,8 +175,7 @@ functions/methods. If it's not documented, then it doesn't exist. A
 useful approach to pod documentation is to test that it exists, and that
 what does exist is error free: Test::Pod::Coverage
 (<a href="http://search.cpan.org/dist/Test-Pod-Coverage/"
-class="external free"
-rel="nofollow">http://search.cpan.org/dist/Test-Pod-Coverage/</a>)
+
 checks for pod coverage in your distribution, and is trivial to use.
 Just create a .t file with the following content:
 
@@ -198,7 +194,7 @@ for my $module (@modules) {
 This will test all of your modules for pod coverage. To test that the
 pod documentation is syntactically correct, use Test::Pod
 (<a href="http://search.cpan.org/dist/Test-Pod/" class="external free"
-rel="nofollow">http://search.cpan.org/dist/Test-Pod/</a>), which again
+
 can be easily used, with a .t file containing:
 
 ``` de1
@@ -220,7 +216,7 @@ accomplish, but help is at hand:
 
 Devel::Cover
 (<a href="http://search.cpan.org/dist/Devel-Cover/" class="external free"
-rel="nofollow">http://search.cpan.org/dist/Devel-Cover/</a>) provides
+
 code coverage metrics for Perl, and can be used in conjunction with a
 test-suite, like:
 
@@ -232,7 +228,6 @@ You can see the author's coverage analysis of a large number of modules
 from CPAN at:
 
 <a href="http://pjcj.sytes.net/cpancover/" class="external free"
-rel="nofollow">http://pjcj.sytes.net/cpancover/</a>
 
 In this way, you can design new tests for your code base, designed to
 cover as yet un-exercised code paths.
@@ -251,6 +246,5 @@ every time there is a new check-in to your code repository, you can
 track whether performance regresses beyond just noise in the
 measurements. To profile your code in Perl, you can use Devel::Profile
 (<a href="http://search.cpan.org/dist/Devel-Profile/"
-class="external free"
-rel="nofollow">http://search.cpan.org/dist/Devel-Profile/</a>), which
+
 will allow you to determine where your bottlenecks are.

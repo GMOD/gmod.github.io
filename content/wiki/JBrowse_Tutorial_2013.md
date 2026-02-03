@@ -4,7 +4,7 @@ title: "JBrowse Tutorial 2013"
 # JBrowse Tutorial 2013
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Robert
-Buels](/wiki/User%3ARobertBuels) at the [2013 GMOD Summer
+Buels](/wiki/User:RobertBuels) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School) in July 2013
 using JBrowse 1.9.8.
 
@@ -140,8 +140,6 @@ There are four basic steps to setting up an instance of JBrowse:
 2.  Format data for tracks
 3.  Configure direct-access tracks
 4.  Index feature names
-
-
 
 ### Features from a directory of files
 
@@ -387,8 +385,6 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-
-
 ### Faceted Track Selection
 
 JBrowse has a very powerful faceted track selector that can be used to
@@ -468,7 +464,7 @@ from the old JBrowse directory into the new JBrowse directory.
 
 See the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/JBrowse_gmod_summerschool_jul2013.pdf"
-class="internal"
+
 title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 (PDF)</a>
 

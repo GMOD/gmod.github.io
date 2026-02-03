@@ -23,12 +23,9 @@ staff, and a hackathon. See the
 class="external text" rel="nofollow">workshop website</a> for more
 information and registration link.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/10/19*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -1,0 +1,51 @@
+---
+title: "News/GMOD Summer School 2012: Apply Now"
+---
+# News/GMOD Summer School 2012: Apply Now
+
+[Applications are now being
+accepted](../2012_GMOD_Summer_School#Application)
+for the [2012 GMOD Summer
+School](../2012_GMOD_Summer_School) course, a
+five-day hands-on school aimed at teaching new GMOD administrators how
+to install, configure and integrate popular [GMOD
+Components](../GMOD_Components). The course will be
+held August 25-29 at the
+<a href="http://www.nescent.org" class="external text" rel="nofollow">US
+National Evolutionary Synthesis Center (NESCent)</a> in Durham, North
+Carolina.
+
+These components will be covered at the school:
+
+- [Apollo](../Apollo.1) or
+  [WebApollo](../WebApollo.1) - genome annotation editor
+- <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> -
+  biological database schema
+- [Galaxy](../Galaxy.1) - workflow system
+- [GBrowse](../GBrowse.1) - genome viewer
+- [GBrowse_syn](../GBrowse_syn.1) - synteny viewer
+- [GFF3](../GFF3) - genome annotation file format and tools
+- [InterMine](../InterMine) - biological data mining system
+- [JBrowse](../JBrowse.1) - next generation genome browser
+- [MAKER](../MAKER.1) - genome annotation pipeline
+- [Tripal](../Tripal.1) - web front end to Chado databases
+
+**The deadline for applying is the end of July 9, 2012. Admission is
+competitive and is based on the strength of the application, especially
+the statement of interest.** The [2011
+school](../2011_GMOD_Spring_Training) had
+over 70 applicants for the 25 slots. Any application received after
+deadline will be automatically placed on the waiting list.
+
+The course [requires some knowledge of
+Linux](../2012_GMOD_Summer_School#Prerequisites)
+as a prerequisite. The registration fee will be \$300 (only \$60 per
+day). There will be a limited number of scholarships available.
+
+Thanks,
+
+[Scott Cain](../User:Scott)
+
+*Posted to the [GMOD News](../GMOD_News) on 2012/6/14*
+
+- [News Items](../Category:News_Items)

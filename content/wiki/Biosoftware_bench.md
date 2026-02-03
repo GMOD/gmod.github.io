@@ -25,10 +25,9 @@ secure provision of pre-publication datasets.
 
 It is available from
 <a href="http://drupal.org/project/biosoftware_bench"
-class="external free"
-rel="nofollow">http://drupal.org/project/biosoftware_bench</a> or
+
 <a href="http://gmod-dbsf.googlecode.com" class="external free"
-rel="nofollow">http://gmod-dbsf.googlecode.com</a> with the latter being
+
 a more complete repository.
 
 # Dependencies
@@ -37,7 +36,7 @@ BSB is written for
 <a href="http://drupal.org" class="external text" rel="nofollow">Drupal
 6</a> and it depends on the Drupal gmod_dbsf module
 (<a href="http://drupal.org/project/gmod_dbsf" class="external free"
-rel="nofollow">http://drupal.org/project/gmod_dbsf</a>). The NCBI
+
 BLASTALL package and other relevant software for each plugin are
 required in order to provide the relevant facilities but administrators
 can choose which software to enable.
@@ -91,13 +90,10 @@ It has a number of attractive features:
 - A <a href="http://www.scivee.tv/node/20325" class="external text"
   rel="nofollow">screencast on how to install it</a>
 
-
-
 # License
 
 This software is GPLv2+ licensed as part of the Drupal package. It is
 currently supported by [Alexie
-Papanicolaou](/wiki/User%3AAlpapan) while at CSIRO, the
+Papanicolaou](/wiki/User:Alpapan) while at CSIRO, the
 Australian Commonwealth Scientific and Research Organization
 (<a href="http://www.csiro.au" class="external free"
-rel="nofollow">http://www.csiro.au</a>).

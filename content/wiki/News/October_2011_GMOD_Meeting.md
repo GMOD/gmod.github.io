@@ -27,11 +27,8 @@ I may need to close registration when we are full.
 
 Thanks and I look forward to seeing you in Toronto,
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/08/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -18,7 +18,7 @@ Resources
 - [Modules](/wiki/Chado_Modules)
 - <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
   class="external text" rel="nofollow">Mailing List</a>
-- [Tagged](/wiki/Category%3AChado)
+
 - <a href="../extras/2008GMODCommunitySurvey.html#Chado"
   class="external text" rel="nofollow">2008 Survey</a>
 
@@ -103,14 +103,12 @@ addition of new modules for new data types. The existing modules are:
   biological collections
 - [WWW](/wiki/Chado_WWW_Module) -
 
-
-
 ## Installation
 
 First you will need database software, or Relational Database Management
 System (RDBMS). The recommended RDBMS for Chado currently is
 <a href="http://www.postgresql.org/" class="external text"
-rel="nofollow">Postgres</a>. Postgres is free software, usually used on
+
 a Unix operating system such as Linux or Mac OS X. You can also install
 Postgres, and Chado, on Windows but most Chado installations are found
 on some version of Unix - you'll probably get the best support by
@@ -118,13 +116,9 @@ choosing Unix. (See [Databases and
 GMOD](/wiki/Databases_and_GMOD) for more discussion.)
 Once you've installed your RDBMS you can install Chado.
 
-
-
 ### Download a Stable Release of Chado
 
 See [Downloads](/wiki/Downloads)
-
-
 
 ### Chado From SVN
 
@@ -163,7 +157,7 @@ data in Chado.
 |----|----|----|----|
 |  | Mailing List Link | Description | Archive(s) |
 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
-class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado::AutoDBI](/wiki/Chado%3A%3AAutoDBI), and [Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
+class="external text" rel="nofollow">gmod-schema</a> | All issues regarding <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [Chado::AutoDBI](/wiki/Chado_AutoDBI), and [Bio::Chado::Schema](/wiki/Bio_Chado_Schema) | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema"

@@ -11,7 +11,7 @@ Browser \| status = mature \| dev = active \| support = active \| type =
 Genome Visualization & Editing \| platform = web \| logo =
 GBrowseLogo.png \| home =
 <a href="http://gbrowse.org" class="external free"
-rel="nofollow">http://gbrowse.org</a> \| about = GBrowse is a
+
 combination of database and interactive web pages for manipulating and
 displaying annotations on genomes. Features include:
 
@@ -58,19 +58,18 @@ resolution</a>
 
 \| public_server = \| dl = \| dl_url = <a
 href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/"
-class="external free"
-rel="nofollow">http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/</a>
+
 \| dl_src = \| dl_src_url = \| dl_dev = GBrowse can also be found on
 <a href="http://search.cpan.org" class="external text"
-rel="nofollow">CPAN</a> and in the Debian sid ("unstable") apt package
+
 repository and can be installed via apt-get in Ubuntu 12.04 and later.
 \| dl_dev_url =
 <a href="https://github.com/GMOD/GBrowse" class="external free"
-rel="nofollow">https://github.com/GMOD/GBrowse</a> \|
+
 getting_started_preamble = \| req = GBrowse is
 [Perl](../Glossary#Perl)-based and the GBrowse 2.x modules
 are <a href="http://search.cpan.org/dist/GBrowse/" class="external text"
-rel="nofollow">hosted on CPAN</a>. GBrowse can be installed using the
+
 standard Perl module build procedure, or automated using a network-based
 install script. In order to use the net installer, you will need to have
 Perl 5.8.6 or higher and the Apache web server installed. \| install =
@@ -84,8 +83,8 @@ Perl 5.8.6 or higher and the Apache web server installed. \| install =
 \| config =
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
-- [GBrowse 2](../Category%253AGBrowse_2)
+  Cloud](../Category:GMOD_in_the_Cloud)
+- [GBrowse 2](../Category:GBrowse_2)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
-- [Tool data](../Category%253ATool_data)
+  Components](../Category:GMOD_Components)
+- [Tool data](../Category:Tool_data)

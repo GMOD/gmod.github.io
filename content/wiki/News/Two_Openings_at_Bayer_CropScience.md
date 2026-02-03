@@ -46,15 +46,11 @@ Operating language in the company is English.
 
 **Interested in any of these positions?** You can apply
 <a href="http://www.mybayerjob.com/en" class="external text"
-rel="nofollow">here</a> or send your CV to
+
 <a href="mailto:Laurent.viau@bayercropscience.com" class="external text"
-rel="nofollow">Laurent Viau</a>
 
-[Erick Antezana](../User%253AErickAntezana)
-
-
+[Erick Antezana](../User:ErickAntezana)
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/11/06*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

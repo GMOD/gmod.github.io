@@ -24,14 +24,10 @@ See the [GMOD @ ISMB 2010](../ISMB_2010) page for a full
 listing of GMOD related content, including a [session
 listing](../ISMB_2010#Flier) you can print in advance. See
 the <a href="http://www.iscb.org/ismb2010" class="external text"
-rel="nofollow">ISMB 2010 web site</a> for more on the conference.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/02*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

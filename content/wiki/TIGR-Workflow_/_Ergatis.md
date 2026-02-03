@@ -34,7 +34,6 @@ Screenshot of the Ergatis pipeline builder
 More information is available at:
 
 <a href="http://ergatis.sourceforge.net" class="external free"
-rel="nofollow">http://ergatis.sourceforge.net</a>
 
 ## How is it a part of GMOD?
 
@@ -47,10 +46,10 @@ TIGR/JCVI, the database support was limited to Sybase, though flat-files
 could also be generated. Development is now underway to port this to
 also support [PostgreSQL](../PostgreSQL) and Oracle.
 
-[Joshua Orvis](../User%253AJorvis) is the lead developer of
+[Joshua Orvis](../User:Jorvis) is the lead developer of
 Ergatis and is currently at the
 <a href="http://www.igs.umaryland.edu/" class="external text"
-rel="nofollow">Institute for Genome Sciences</a> at the University of
+
 Maryland School of Medicine.
 
 ## Mailing Lists

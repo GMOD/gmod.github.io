@@ -64,11 +64,8 @@ probably on MacOS as well. I am considerably less sure that this would
 work out of the box on Windows, but support for that could probably be
 in a future release if the demand is there.
 
-Thanks and happy curating! [Scott Cain](../User%253AScott)
-
-
+Thanks and happy curating! [Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/07/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

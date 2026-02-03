@@ -18,7 +18,7 @@ width="300" height="158" alt="Modware" /></a>
 - [Support](#Support)
 
 <a href="http://gmod-ware.sourceforge.net/" class="external text"
-rel="nofollow">Modware</a> is an object-oriented Perl API for
+
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. It allows
 object-oriented querying and loading of a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database and
@@ -59,13 +59,13 @@ feature requests.
 Good news and update on the current status of Modware development.
 Modware is getting back on track and is currently being actively
 developed at <a href="http://dictybase.org" class="external text"
-rel="nofollow">dictyBase</a> since last few months. It is being written
+
 using
 <a href="http://search.cpan.org/perldoc?Moose" class="external text"
-rel="nofollow">Moose</a> and
+
 <a href="http://search.cpan.org/perldoc?DBIx::Class"
 class="external text" rel="nofollow">DBIx::Class</a> (more precisely
-[Bio::Chado::Schema](/wiki/Bio%3A%3AChado%3A%3ASchema) or BCS)
+[Bio::Chado::Schema](/wiki/Bio_Chado_Schema) or BCS)
 [ORM](/wiki/Glossary#ORM). This part of development is done in sync
 with dictyBase's major data migration project which includes literature
 and gene ontology annotations. So, the first release of this new version
@@ -75,13 +75,12 @@ feature module will be added after the first release gets settled down.
 Like any other standard Perl module Modware's public release will be
 available from CPAN and the bleeding edge can be grabbed from
 <a href="http://github.com/cybersiddhu/Modware" class="external text"
-rel="nofollow">github</a>.
 
 Relevant documentations and guidelines will also be added to this wiki.
 The first CPAN release is expected to be early next year.
 
 *Siddhartha Basu, Modware developer,
-[dictyBase](/wiki/Category%3ADictyBase), 2010/10/28*
+, 2010/10/28*
 
 ## Getting Started
 
@@ -92,8 +91,6 @@ The first CPAN release is expected to be early next year.
   <a href="mailto:gmod-ware-users@lists.sourceforge.net"
   class="external text"
   rel="nofollow">gmod-ware-users@lists.sourceforge.net</a>.
-
-
 
 ## Feedback Wanted
 
@@ -106,20 +103,15 @@ One critical piece of the project that is missing is feedback from the
 community. If you are interested in a Chado API, please download the
 Modware Virtual Machine found on the
 <a href="http://gmod-ware.sourceforge.net" class="external text"
-rel="nofollow">Modware home page</a> and give it a try. Email all
+
 feature requests, questions, and comments to
 <a href="mailto:gmod-ware-users@sourceforge.net" class="external text"
-rel="nofollow">gmod-ware-users@sourceforge.net</a>.
-
-
 
 ## Acknowledgments
 
 This software was developed for dictyBase at the Center for Genetic
 Medicine at Northwestern University, which is funded by NIH Grants
 GM64426 and HG0022.
-
-
 
 ## Support
 

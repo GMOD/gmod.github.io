@@ -4,7 +4,7 @@ title: "WebApollo Tutorial 2012"
 # WebApollo Tutorial 2012
 
 This [WebApollo](/wiki/WebApollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%3AElee) at the [2012 GMOD Summer
+Lee](/wiki/User:Elee) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
@@ -48,8 +48,6 @@ the tool.**
 <a
 href="https://docs.google.com/presentation/pub?id=17jkEV0jJ3gl_B-cRK5lrG8jbQPULPAnEcPo9Acu7CCU&amp;start=false&amp;loop=false&amp;delayms=3000"
 class="external text" rel="nofollow">WebApollo Presentation</a>
-
-
 
 ## Using WebApollo
 
@@ -285,7 +283,6 @@ into it.
 
     $ cd WebApollo
     $ sudo jar -xvf ~/WebApollo/war/WebApollo.war
-
 
 That’s it! We’re done installing WebApollo. Now we need to move on to
 configuring the application.
@@ -890,8 +887,6 @@ We need to symlink the `data/seq/refSeqs.json` file in `data/seq`.
     $ ln -sf seq/refSeqs.json
     $ cd ..
 
-
-
 ### Static data generation
 
 Generating data from GFF3 works best by having a separate GFF3 per
@@ -1172,7 +1167,7 @@ put the file in your virtual machine and unzip it in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/data`):
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/83/Web_apollo_2012_tutorial_track_list_json.zip"
-class="internal"
+
 title="Web apollo 2012 tutorial track list json.zip">web_apollo_track_list_json.zip</a>
 
 Alternatively, you can just copy the WebApolloDemo `trackList.json` into

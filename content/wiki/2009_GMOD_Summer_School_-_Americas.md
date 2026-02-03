@@ -22,7 +22,7 @@ width="300" height="242" alt="2009SummerSchoolAmericas300.png" />
 Summer School - Americas</strong><br />
 16-19 July, 2009<br />
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">NESCent</a><br />
+
 Durham, NC, USA</span></td>
 </tr>
 </tbody>
@@ -30,7 +30,7 @@ Durham, NC, USA</span></td>
 
 The ***2009 GMOD Summer School - Americas*** was held 16-19 July at the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina. Like the [2008 GMOD Summer
 School](/wiki/2008_GMOD_Summer_School), this course
 focused on installing, configuring and integrating popular [GMOD
@@ -122,7 +122,7 @@ image up and running on your laptop, and then finish installation of <a href="/w
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #ccffff">1:15pm</td>
@@ -137,7 +137,7 @@ basic configuration for annotating genomic sequence</td>
 <td
 style="text-align: center; background-color: #ddffff;"><strong>Social
 Hour w/ <a href="http://www.nescent.org/dir/" class="external text"
-rel="nofollow">NESCent Staff</a></strong><br />
+
 and then <strong>Dinner</strong> <a href="http://www.ninthst.com/"
 class="external text" rel="nofollow">on your own</a></td>
 </tr>
@@ -182,7 +182,7 @@ I</a></strong><br />
 <td
 style="text-align: center; background-color: #ddffdd;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #ccffdd">1:30pm</td>
@@ -203,7 +203,7 @@ and remote analyses.</td>
 <td
 style="text-align: center; background-color: #ddffdd;"><strong>Dinner</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #ccffdd">7:00pm</td>
@@ -236,7 +236,7 @@ I</a></strong><br />
 <td
 style="text-align: center; background-color: #ffffcc;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #ffffbb">1:30pm</td>
@@ -259,7 +259,7 @@ mart.</td>
 <td
 style="text-align: center; background-color: #ffffcc;"><strong>Dinner</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #ffffbb">7:30pm</td>
@@ -297,7 +297,7 @@ title="GBrowse syn Tutorial">GBrowse_syn</a></strong><br />
 <td
 style="text-align: center; background-color: #ffeedd;"><strong>Lunch</strong><br />
 <a href="http://www.ninthst.com/" class="external text"
-rel="nofollow">on your own</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #ffddcc">1:30pm</td>
@@ -306,7 +306,7 @@ title="Tripal Tutorial">Tripal</a></strong><br />
 <a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen Ficklin</a><br />
 <a href="/wiki/Tripal.1" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
 on <a href="http://www.drupal.org/" class="external text"
-rel="nofollow">Drupal</a>. This class will introduce Drupal and Tripal
+
 architecture, and then cover Tripal installation, configuration and
 administration.</td>
 </tr>
@@ -329,16 +329,9 @@ Ends</td>
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User%3AScott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text" |
-rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](/wiki/User%3AClements) | [GMOD Help Desk](/wiki/GMOD_Help_Desk) | <a href="http://nescent.org/" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](/wiki/User%3ASficklin) | [Tripal](/wiki/Tripal.1) developer | <a href="http://www.genome.clemson.edu/" class="external text"
-rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](/wiki/User%3ACarsonholt) | [MAKER](/wiki/MAKER.1) developer | <a href="http://www.utah.edu" class="external text"
-rel="nofollow">University of Utah</a> | [Ed Lee](/wiki/User%3AElee) | [Apollo](/wiki/Apollo.1) developer | <a href="http://www.berkeleybop.org/" class="external text"
-rel="nofollow">Berkeley Bioinformatics Open-source Projects (BBOP)</a> | [Sheldon McKay](/wiki/User%3AMckays) | [GBrowse_syn](/wiki/GBrowse_syn.1) developer, [GBrowse](/wiki/GBrowse.1) developer | <a href="http://cshl.edu" class="external text" rel="nofollow">Cold
-Spring Harbor Laboratory</a> | [Joshua Orvis](/wiki/User%3AJorvis) | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
-rel="nofollow">Institute for Genome Sciences</a> | [Mitch Skinner](/wiki/User%3AMitchSkinner) | [JBrowse](/wiki/JBrowse.1) developer | <a href="http://berkeley.edu" class="external text"
-rel="nofollow">University of California, Berkeley</a> | [Junjun Zhang](/wiki/User%3AJunjun) | [BioMart](/wiki/BioMart) developer | <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research</a> |
+| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text" |
+
+Spring Harbor Laboratory</a> | [Joshua Orvis](/wiki/User:Jorvis) | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> developer and power <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> user | <a href="http://www.igs.umaryland.edu/" class="external text"
 
 ## Prerequisites
 
@@ -379,14 +372,10 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
-
-
 
 VMware on Mac OS X
 
@@ -397,11 +386,8 @@ Intel processor is a requirement for all the packages discussed below.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
 
-There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs *directly* under . However, there are several
 other options, *all of which require an Intel Mac*:
-
-
 
 VMware Fusion
 
@@ -410,12 +396,10 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a> (\$80) allows you to run VMware images,
+
 Windows and Linux under Mac OS. **We recommend this option for Mac
 users. There is a fully functional, 30 day free trial version of VMware
 Fusion available for download.**
-
-
 
 Mac OS 10.5 (Leopard) and Boot Camp
 
@@ -425,7 +409,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="60" alt="Boot Camp" /></a>
 
 The <a href="http://www.apple.com/macosx/" class="external text"
-rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
+
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 class="external text" rel="nofollow">Boot Camp</a>, a feature that
 allows you to boot your Mac into another operating system, including
@@ -442,13 +426,12 @@ This course was *free* thanks to <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
 class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a> under
 <a href="http://biowiki.org/IanHolmes" class="external text"
-rel="nofollow">Ian Holmes</a>, and to the grants of the individual
+
 instructors.
 
 ## Feedback
 
 17 of 25 students provided feedback on the course.
-
 
 **Q: Would you recommend
 <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
@@ -457,7 +440,6 @@ title="GMOD Summer School">GMOD Summer School</a> to others?**
 | No  | Yes, with reservations | Yes | No opinion |
 |-----|------------------------|-----|------------|
 | 0% | 12% | 88% | 0% |
-
 
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)
 to 3 (average) to 5 (very good), or N.A. if you have no opinion.**

@@ -7,13 +7,9 @@ title: "SynBrowse"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/aa/SynBrowse_logo.png" width="460"
 height="104" alt="SynBrowse logo.png" />
 
-
-
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.
 > This page is included only for reference purposes.
-
-
 
   Status](#Status)
 - [Demo](#Demo)
@@ -45,7 +41,6 @@ other options that are still actively developed and supported.
 ## Demo
 
 Please see <a href="http://www.synbrowse.org" class="external free"
-rel="nofollow">http://www.synbrowse.org</a>.
 
 ## Requirements
 
@@ -58,7 +53,6 @@ expected to be released in early 2010.
 The source code and installation documentation of SynBrowse as well as
 the associated tools can be found at
 <a href="http://www.synbrowse.org" class="external free"
-rel="nofollow">http://www.synbrowse.org</a>.
 
 ## Citation
 
@@ -71,4 +65,3 @@ class="external text" rel="nofollow">Bioinformatics 21: 3461-3468</a>.
 
 If you have questions, comments and suggestions about SynBrowse, please
 contact <a href="mailto:xiaokangpan@gmail.com" class="external text"
-rel="nofollow">Xiaokang Pan</a>.

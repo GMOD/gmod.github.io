@@ -12,7 +12,7 @@ prerelease stage, I am happy I announce that [GBrowse
 2.00](../GBrowse_2.0_HOWTO) is now available for
 downloading from
 <a href="http://search.cpan.org/dist/GBrowse/" class="external text"
-rel="nofollow">CPAN</a>, and
+
 <a href="https://sourceforge.net/projects/gmod/files/"
 class="external text" rel="nofollow">SourceForge</a>.
 
@@ -65,11 +65,8 @@ class="external text" rel="nofollow">bug reports at SourceForge</a>.
 
 On behalf of the GMOD team,
 
-[Lincoln Stein](../User%253ALstein)
-
-
+[Lincoln Stein](../User:Lstein)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

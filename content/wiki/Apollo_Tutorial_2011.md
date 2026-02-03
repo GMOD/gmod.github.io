@@ -3,21 +3,17 @@ title: "Apollo Tutorial 2011"
 ---
 # Apollo Tutorial 2011
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/250px-ApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
 width="250" height="91" alt="Apollo" />
 
 This [Apollo](/wiki/Apollo.1) tutorial was presented by [Ed
-Lee](/wiki/User%3AElee) at the [2011 GMOD Spring
+Lee](/wiki/User:Elee) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), Spring
 2011. The most recent Apollo tutorial can be found at the
 <a href="/wiki/Apollo_Tutorial" class="mw-redirect"
 title="Apollo Tutorial">Apollo Tutorial</a> page.
-
-
 
   Introduction](#Introduction)
   - [Overview](#Overview)
@@ -154,8 +150,6 @@ based command line SVN clients for an anonymous checkout.
 
 If you're using an IDE, chances are that your IDE will have SVN support
 (or have a plugin available).
-
-
 
 ## Using Apollo
 
@@ -359,7 +353,6 @@ click, and choose `Merge exons`.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/Merge-exons-popup-menu.jpg" width="516"
 height="225" alt="Merge exons popup menu" />
-
 
 Alright, it does what we'd expect it to do.
 
@@ -759,7 +752,7 @@ files to the `conf` directory.
 
 Now we're ready to build our updated Apollo jar. We'll use
 <a href="http://ant.apache.org" class="external text"
-rel="nofollow">Apache Ant</a> to do so. `Ant` is similar in many ways to
+
 `make` but has a lot of native support for Java. Like `make`, we can
 have multiple targets. We're interested in the `jar` target.
 
@@ -886,7 +879,7 @@ you have the following line in your `/etc/mime.types` file:
 
 Now we can test out our Java Web Start instance by going to
 <a href="http://localhost/apollo/webstart" class="external free"
-rel="nofollow">http://localhost/apollo/webstart</a> and clicking on the
+
 link.
 
 ## Writing Custom Data Adapters

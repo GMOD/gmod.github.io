@@ -38,7 +38,7 @@ Editor](/wiki/Table_Editor.1)
 ## Genome community annotation with a MediaWiki wiki
 
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
-rel="nofollow">Ecoliwiki</a> is providing detailed gene reports in a
+
 community editable form. One goal for this with GMOD is to integrate
 annotations made in
 <a href="http://mediawiki.org" class="external text">MediaWiki</a> with
@@ -46,9 +46,9 @@ a <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 for better comprehensive genome data management. MediaWiki is a widely
 used wiki package and the one that backs the GMOD site,
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
-rel="nofollow">Ecoliwiki</a>, and
+
 <a href="http://wikipedia.org" class="external text"
-rel="nofollow">Wikipedia</a>). MediaWiki is also included in the
+
 [Community Annotation
 System](/wiki/Community_Annotation_System).
 
@@ -56,8 +56,7 @@ System](/wiki/Community_Annotation_System).
 
 Ecoliwiki's
  is the core for this
-gene-oriented [community
-annotation](/wiki/Category%3ACommunity_Annotation)
+gene-oriented
 database. TableEdit provides a somewhat more friendly way to edit simple
 tables in
 <a href="http://mediawiki.org" class="external text">MediaWiki</a>.
@@ -110,7 +109,7 @@ MediaWiki.
 
 In constructing the first release of
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
-rel="nofollow">EcoliWiki</a>, we built PHP scripts to load and/or update
+
 tables. This involved writing functions that find the `box_uid` of
 tables of specific types on specific pages, looking for the rows that
 needed updating, creating them if they did not already exist, and either
@@ -173,7 +172,7 @@ Making the Table Editor more useful and integrating it better with other
 GMOD tools was our goal for the wiki part of [Hackathon
 2007](/wiki/Hackathon_2007_info). See [Possible
 TableEdit/Wiki hackathon
-projects](/wiki/Talk%3AHackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects)
+projects](/wiki/Talk:Hackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects)
 for more.
 
 ### TableEdit Chado round trip
@@ -202,7 +201,7 @@ This would involve:
 
 Based on our already being able to do table insertion, row creation, row
 updates, and row deletion, this should be a relatively simple task of
-getting [middleware](/wiki/Category%3AMiddleware) to have
+getting  to have
 Chado provide data in a form that the TableEdit can use.
 
 #### TableEdit2Chado
@@ -213,7 +212,7 @@ This would involve:
   with information needed to populate/update fields in
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 - Returning the data in a format that can be transformed to something
-  Chado \[\[[middleware](/wiki/Category%3AMiddleware) can
+  Chado \ can
   use.
 
 This is a specific case of the general problem discussed at the [Jan
@@ -233,7 +232,7 @@ Some issues to discuss:
 - how should we pass these requests and send confirmation messages to
   and from remote servers (i.e can we do this as a web service?). This
   would allow interaction with non-PHP
-  [middleware](/wiki/Category%3AMiddleware) (highly
+   (highly
   desirable!).
 
 ### TableEdit IntraWiki Interaction
@@ -255,7 +254,7 @@ or fields.
 ### AJAX
 
 There are many places where the TableEdit system would benefit from the
-addition of [AJAX](/wiki/Category%3AAJAX).
+addition of .
 
 - General elimination of reloads
 - Autocomplete fields

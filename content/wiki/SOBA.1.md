@@ -3,8 +3,6 @@ title: "SOBA"
 ---
 # SOBA
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b6/SOBA_Header.jpg/400px-SOBA_Header.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b6/SOBA_Header.jpg/600px-SOBA_Header.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b6/SOBA_Header.jpg/800px-SOBA_Header.jpg 2x"
@@ -21,10 +19,6 @@ Resources
 - <a
   href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
   class="external text" rel="nofollow">Home page</a>
-
-
-
-
 
   Ontology Bioinformatics Analysis
   (SOBA)</span>](#About_Sequence_Ontology_Bioinformatics_Analysis_.28SOBA.29)
@@ -84,8 +78,6 @@ Visit the <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external text" rel="nofollow">SOBA website</a>.
 
-
-
 ## Downloads
 
 - SOBAcl is available (via
@@ -93,17 +85,13 @@ class="external text" rel="nofollow">SOBA website</a>.
   rel="nofollow">Subversion</a>) from:
      svn co svn://topaz.genetics.utah.edu/SOBA/trunk SOBA
 
-
-
-
-
 ## Using SOBA
 
 ### System Requirements
 
 SOBA is built with Perl and uses
 <a href="http://template-toolkit.org/" class="external text"
-rel="nofollow">Template Toolkit (TT)</a> to generate html or text
+
 reports, GraphViz for ontology graphs, and GD for charts. SOBAweb uses
 <a href="http://search.cpan.org/perldoc?CGI::Application"
 class="external text" rel="nofollow">CGI::Application</a> as a Perl
@@ -174,8 +162,6 @@ Tutorial</a>
 taught as part of the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School)
 
-
-
 ## Contacts and Mailing Lists
 
 SOBA is supported by the
@@ -183,23 +169,10 @@ SOBA is supported by the
 class="external text" rel="nofollow">Sequence Ontology Developers
 Mailing list</a>.
 
-
-
-
-
-
-
 ## More on SOBA
 
-See [Category:SOBA](/wiki/Category%3ASOBA)
-
-
-
-
-
+See
 
 Raw tool data at [SOBA/tool data](/wiki/SOBA/tool_data)
 
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
-class="external free"
-rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis</a>  |

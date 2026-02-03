@@ -7,8 +7,7 @@ title: "Comparative Genomics"
 [Synteny](/wiki/Synteny)
 
 GMOD includes several components for managing and visualizing
-[comparative genomics and
-synteny](/wiki/Category%3AComparative_Genomics)
+
 data.
 
   Introduction](#Introduction)
@@ -23,8 +22,6 @@ data.
 
 ## Introduction
 
-[Comparative
-genomics](/wiki/Category%3AComparative_Genomics)
 and synteny are hot topics in biology and are frequently discussed at
 GMOD [Meetings](/wiki/Meetings). GMOD offers several solutions for
 managing and [visualizing](/wiki/Visualization) comparative
@@ -46,12 +43,12 @@ genomics data.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/BoG2006.pdf" class="internal"
   title="BoG2006.pdf">An Example Comparative Genome Database for Yeasts
   Using GMOD Tools</a>** - poster by [Scott
-  Cain](/wiki/User%3AScott) showing how six GMOD tools are used to
+  Cain](/wiki/User:Scott) showing how six GMOD tools are used to
   create an example comparative genome model organism database.
 - **<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
   class="internal" title="04-Stajich NESCENT GMOD.pdf">Comparative
   Genomics With GMOD and BioPerl</a>** - a 2004 presentation by [Jason
-  Stajich](/wiki/User%3AStajich).
+  Stajich](/wiki/User:Stajich).
 
 ## GMOD Components
 
@@ -96,7 +93,7 @@ class="external text" rel="nofollow">SGN</a>.
 visualizations. It is currently developed by engineers at
 <a href="http://jcvi.org" class="external text" rel="nofollow">JCVI</a>
 and at <a href="http://medschool.umaryland.edu" class="external text"
-rel="nofollow">IGS at the University of Maryland School of Medicine</a>.
+
 Sybil supports several visualizations: Whole genome comparisons,
 regional comparisons (synteny) and orthologous gene comparisons.
 

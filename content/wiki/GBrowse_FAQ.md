@@ -86,8 +86,6 @@ It is now maintained as a
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
 
-
-
 ## General Questions
 
 ### What is GBrowse good for?
@@ -101,22 +99,16 @@ quantitative data such as microarray expression levels.
 Another good way to get an overview of the features GBrowse offers is to
 read the documentation at the [GBrowse](/wiki/GBrowse.1) Wiki page.
 
-
-
 ### What platforms does GBrowse run on?
 
 GBrowse is a web-server application that is implemented in the Perl
 programming language. It will run on any machine that runs Perl,
 including Windows, Macintosh OS X, and most versions of Linux and UNIX.
 
-
-
 ### How is GBrowse distributed?
 
 GBrowse is distributed as source code for Macintosh OS X, UNIX and Linux
 platforms, and as pre-packaged binaries for Windows machines.
-
-
 
 ### What are the terms of use for GBrowse?
 
@@ -124,8 +116,6 @@ GBrowse is distributed under the Perl Artistic License, which allows for
 unrestricted use and distribution, including commercial use and resale.
 You may modify and distribute modified versions of GBrowse provided that
 you credit the original authors for their contribution.
-
-
 
 ### I have a problem. What do I do?
 
@@ -200,8 +190,6 @@ hide the track when the display exceeds a certain size:
                 [6_frame_translation:50000]
                 hide = 1
 
-
-
 ### How to add an outgoing link to a text on the feature detail page in Gbrowse?
 
 Add a line to the appropriate \*.conf file using *link*. For example:
@@ -209,8 +197,6 @@ Add a line to the appropriate \*.conf file using *link*. For example:
 ``` de1
  link = http://www.ncbi.nih.gov/SNP/snp_ref.cgi?rs=$name
 ```
-
-
 
 ### I have a multi-segmented feature (such as a multi-exon transcript). It looks fine at low power, but when I zoom in the connecting lines between segments disappear. Help!
 
@@ -283,15 +269,12 @@ The answer is to do something like this:
 
 Note that you'll need GBrowse version 1.63 or higher for this to work.
 
-
-
 ### How do I show circular genomes?
 
 A patch is currently being developed to display circular genomes. You
 can **git clone** the branch code at
 <a href="https://github.com/GMOD/GBrowse/tree/nliles_gbrowse_circular"
-class="external free"
-rel="nofollow">https://github.com/GMOD/GBrowse/tree/nliles_gbrowse_circular</a>.
+
 The patch will display basic glyphs, but has problems showing sequences.
 To implement the patch, you must add the tag **region=circular;** to
 column 9 of the first line of the gff file.
@@ -394,7 +377,7 @@ There is no set maximum number of tracks. As of about GBrowse 2.13,
 GBrowse works with more than 1,000 tracks. From this <a
 href="http://gmod.827538.n3.nabble.com/http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-tp946842p946842.html"
 class="external text" rel="nofollow">email thread (Kai Xia, 2010/07</a>,
-[Lincoln Stein](/wiki/User%3ALstein) said:
+[Lincoln Stein](/wiki/User:Lstein) said:
 
 I think you'll find that 20,000 track definitions are going to slow
 GBrowse down to the point of unusability. I have made some fixes to

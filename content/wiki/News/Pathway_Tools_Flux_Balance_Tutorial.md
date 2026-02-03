@@ -4,7 +4,7 @@ title: "News/Pathway Tools Flux Balance Tutorial"
 # News/Pathway Tools Flux Balance Tutorial
 
 A <a href="http://ptools-fba.eventbrite.com/" class="external text"
-rel="nofollow">workshop</a> on the new [Pathway
+
 Tools](../Pathway_Tools.1) module for generating and
 refining metabolic flux models using the method of flux-balance analysis
 (FBA) will be held at SRI in Menlo Park, CA from June 21-22. FBA models
@@ -20,7 +20,6 @@ based FBA models.
 
 More details and registration are available
 <a href="http://ptools-fba.eventbrite.com/" class="external text"
-rel="nofollow">online</a>.
 
 A remote online attendance option for the tutorial is available.
 
@@ -32,9 +31,6 @@ Tomer Altman
 
 Pathway Tools Training Coordinator
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/05/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

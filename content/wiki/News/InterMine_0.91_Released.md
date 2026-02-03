@@ -15,7 +15,7 @@ fixes to some
 class="external text" rel="nofollow">QueryBuilder</a> features,
 occasional export issues and improved password security. There is a new
 <a href="http://www.treefam.org/" class="external text"
-rel="nofollow">TreeFam</a> parser and an improvement to ontology
+
 querying.
 
 This update shouldn't require any changes to Mines and sources you have
@@ -25,14 +25,11 @@ class="external text" rel="nofollow">details on upgrading</a> and the
 class="external text" rel="nofollow">release notes</a>.
 
 Please <a href="mailto:dev@intermine.org" class="external text"
-rel="nofollow">let us know</a> if you have any bug reports or feature
+
 requests.
 
 The [InterMine](../InterMine) team
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/08/27*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

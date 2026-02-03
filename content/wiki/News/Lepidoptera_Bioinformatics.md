@@ -12,15 +12,14 @@ alt="International Workshop on Molecular Biology and Genetics of Lepidoptera" />
 A session on data analysis, mining, general bioinformatics support, and
 related topics will be held on Friday, August 28th 2009, at the
 <a href="http://bio.demokritos.gr/leps/leps.htm" class="external text"
-rel="nofollow">International Workshop on Molecular Biology and Genetics
-of Lepidoptera</a> in Crete. The aim is to find solutions to common
+
 problems of annotation, curation and comparative analysis of the growing
 body of transcript and genomic sequences for lepidopteran species.
 Several databases, including
 <a href="http://insectacentral.org" class="external text"
-rel="nofollow">InsectaCentral</a> and
+
 <a href="http://www.inra.fr/lepidodb" class="external text"
-rel="nofollow">LepidoDB</a>, both of which use [GMOD
+
 Components](../GMOD_Components), will be discussed in
 the workshop.
 
@@ -39,15 +38,11 @@ the Crete workshop to contact us with your thoughts and ideas on these
 and related subjects.
 
 <a href="mailto:mki101@uri.edu" class="external text"
-rel="nofollow">Marian Goldsmith</a>,
+
 <a href="mailto:a.papanicolaou@ex.ac.uk" class="external text"
-rel="nofollow">Alexie Papanicolaou</a>, and
+
 <a href="mailto:flegeai@rennes.inra.fr" class="external text"
-rel="nofollow">Fabrice Legeai</a>.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/08/18*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

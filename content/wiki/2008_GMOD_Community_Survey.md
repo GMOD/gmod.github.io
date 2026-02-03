@@ -49,19 +49,16 @@ This survey provides the first comprehensive view of the GMOD user
 community, what it is using and happy with, as well as what needs
 improvement and what priorities for the future are.
 
-
 **Note:** See the [2009 GMOD Community
 Survey](/wiki/2009_GMOD_Community_Survey) for the
 following year's survey, which focused on genome and comparative
 genomics visualization.
 
-
-
 ## Survey Links
 
 Highlights of the survey are on this page. The
 <a href="../extras/2008GMODCommunitySurvey.html" class="external text"
-rel="nofollow">complete report</a> summarizing all multiple choice
+
 questions and free text answers is also available.
 
 To see the detailed section for any question in the survey, click on the
@@ -147,8 +144,6 @@ link in this list.
 - <a href="../extras/2008GMODCommunitySurvey.html#Final_Comments"
   class="external text" rel="nofollow">Final Comments</a>
 
-
-
 ## GMOD Components
 
 The survey asked participants which
@@ -167,8 +162,6 @@ were the most popular responses:
             class="external text" rel="nofollow">CMap</a>                   |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#GMODTools"
             class="external text" rel="nofollow">GMODTools</a>              |    10.1% | <a href="../extras/2008GMODCommunitySurvey.html#InterMine"
             class="external text" rel="nofollow">InterMine</a>              |
-
-
 
 ### Popular Combinations
 
@@ -206,10 +199,10 @@ Operating systems in use had a definite skew towards Unix based systems:
 
 | \# Responses | Operating System |
 |-------------:|---------------------------------------------------|
-| 55 | [Linux](/wiki/Category%3ALinux) |
-| 8 | [Mac OS X](/wiki/Category%3AMac_OS_X) |
+| 55 |  |
+| 8 |  |
 | 6 | Solaris |
-| 2 | [Windows](/wiki/Category%3AWindows) |
+| 2 |  |
 | 1 | Unspecified Unix |
 
 ### Current Server Sufficient?
@@ -301,8 +294,6 @@ Recurring responses were:
 | 3 | Training |
 | 3 | Improve what we already have. |
 
-
-
 ## GMOD Help Desk
 
 The survey asked
@@ -369,8 +360,6 @@ had more than one response:
 *Note: We will investigate possible locations and interest in a GMOD
 Course in Asia/Pacific during the last half of 2009 and during 2010.*
 
-
-
 ## Survey Participants and Organizations
 
 The survey a number of questions about
@@ -378,7 +367,6 @@ The survey a number of questions about
 class="external text" rel="nofollow">survey respondents</a> and
 <a href="../extras/2008GMODCommunitySurvey.html#Your_Organization"
 class="external text" rel="nofollow">their organizations</a>.
-
 
 Questions included:
 
@@ -390,8 +378,6 @@ Questions included:
   about or that you are interested in now or in the near future, and
   that you are planning or hoping to use GMOD to manage, visualize, or
   annotate. (Summarized below)
-
-
 
 ### User or Developer
 
@@ -425,10 +411,10 @@ Respondents were given a list of choices along with *Other*
 | 39 | [Next generation sequence](/wiki/Next_Generation_Sequencing) |
 | 38 | [Annotation](/wiki/Annotation) pipelines |
 | 32 | Community [annotation](/wiki/Annotation) |
-| 29 | [Microarrays](/wiki/Category%3AMicroarrays) |
-| 29 | [Ontologies](/wiki/Category%3AOntologies) |
+| 29 |  |
+| 29 |  |
 | 24 | [Mapping](/wiki/CMap.1) (genetic, physical, QTL, ...) |
-| 22 | [Phenotypes](/wiki/Category%3APhenotypes) |
+| 22 |  |
 | 20 | Pathways |
 | 19 | Literature curation |
 | 18 | Other expression (besides microarrays) |

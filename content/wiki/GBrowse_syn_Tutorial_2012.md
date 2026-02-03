@@ -7,9 +7,8 @@ If you are 2013 GMOD Summer School, you are on the wrong tutorial.
 Use
 [GBrowse_syn_Tutorial_2013](/wiki/GBrowse_syn_Tutorial_2013).
 
-
 This tutorial on [GBrowse syn](/wiki/GBrowse_syn.1) was taught
-by [Sheldon McKay](/wiki/User%3AMckays) as part of the [2013 GMOD
+by [Sheldon McKay](/wiki/User:Mckays) as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).
 
 To follow along with the tutorial, you will need to use **AMI ID:
@@ -20,8 +19,6 @@ how to get this AMI.
 
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
-
-
 
 [GBrowse_syn](/wiki/GBrowse_syn.1) is a
 [GBrowse](/wiki/GBrowse.1)-based

@@ -44,7 +44,7 @@ background in SVN.
 
 The loader currently resides in the SVN repository at
 <a href="/wiki/svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/"
-class="external free"
+
 rel="nofollow"><code>svn://tetramer.tamu.edu/wiki-extensions/trunk/TableEdit/</code></a>
 
 ## Execution Syntax/ Usage
@@ -71,7 +71,6 @@ The loader has a few options that can be set in the instantiation code.
 | `do_misc_features()` | This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function `http_build_query()`. This string then gets cut up into an array by `parse_str()`. | code |
 | `appendRow()` | This method takes care of when the incoming row gets appended to the box. | code |
 | `mergeRows()` | This method gets called when a new row is trying to be merged into an existing box. It can be <a href="http://en.wikipedia.org/wiki/Overriding" class="external text" |  |
-rel="nofollow">overridden</a> to behave differently. | code | `clearOldRows()` | This method gets called with the flag "clear" gets put in the update_type field of IFALT (col 6.) It will delete all the rows in a box. Useful for emptying tables for reloads. | code |
 
 ### Example
 
@@ -112,7 +111,6 @@ if(isset($options['w'])){
     $loader->setUser()
     $loader->printInfo();
 
-
 // load pretty much anything into tables from either an *.ifalt file.
     $loader->loadFromFile(array_pop($argv));
 
@@ -138,8 +136,6 @@ type of command:
 
     (php5 loader.sample.php > load.out) >& load.err
 
-
-
 ## I/O
 
 It takes a path to a [formatted input file](#input_types), and has a few
@@ -155,8 +151,6 @@ The loader currently will accept one type of input:
 
 On the commandline the loader will tell you what page it's working on.
 It will print any error messages to STDERR.
-
-
 
 ## Notes
 
@@ -199,7 +193,7 @@ new = a | b | c | d | e</code></pre></td>
 <tr class="even">
 <td><p>The <em>new row</em> is a <a
 href="http://en.wikipedia.org/wiki/Subset" class="external text"
-rel="nofollow">superset</a> of the <em>old row</em>.</p></td>
+
 <td><pre><code>old = a | b |   | e
 new = a | b | c | d | e</code></pre></td>
 <td><ol>
@@ -295,8 +289,6 @@ public function do_misc_features( $array ){
 }
 ```
 
-
-
 #### appendRow
 
 ``` de1
@@ -306,8 +298,6 @@ public function appendRow($new_row_obj){
     return;
 }
 ```
-
-
 
 #### mergeRows
 
@@ -337,8 +327,6 @@ public function mergeRows($new_row_obj){
     }
 }
 ```
-
-
 
 #### clearOldRows
 

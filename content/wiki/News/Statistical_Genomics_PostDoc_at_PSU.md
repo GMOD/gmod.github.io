@@ -36,7 +36,7 @@ dynamic group. We are part of the
 <a href="http://www.huck.psu.edu/center/medical-genomics"
 class="external text" rel="nofollow">Center for Medical Genomics</a> and
 of the <a href="http://www.bx.psu.edu/" class="external text"
-rel="nofollow">Center for Comparative Genomics and Bioinformatics</a>.
+
 Penn State is a vibrant scientific community with particular strengths
 in genomics, bioinformatics and molecular evolution. Our location, in
 State College, Pennsylvania, is known for excellent schools and numerous
@@ -47,12 +47,10 @@ position is funded for one year from date of hire, with good possibility
 of refunding. Interested applicants should send a pdf with a CV, a
 statement of research interests, and contact information for three
 referees to <a href="mailto:kmakova@bx.psu.edu" class="external text"
-rel="nofollow">Kateryna Makova</a>, indicating postdoc in the subject
+
 line. Employment will require successful completion of background
 check(s) in accordance with University policies. Penn State is committed
 to affirmative action, equal opportunity, and the diversity of its
 workforce.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/09/09*

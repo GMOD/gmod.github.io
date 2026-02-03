@@ -198,9 +198,9 @@ wants to describe _trans_-splicing or non-coding genes or other
 departures from the simple model that are commonly found in viral or
 bacterial genomes. The Chado schema is in use at model organism
 databases such as <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> and
+
 <a href="http://xenbase.org" class="external text"
-rel="nofollow">XenBase</a> and the close ties between the Chado
+
 developers and these model organism communities has resulted in a
 extensively tested data model, capable of handling both detail and
 departures from the _standard model_.
@@ -238,9 +238,8 @@ lists](/wiki/GMOD_Mailing_Lists). It is also notable that
 there are close ties not just between GMOD and Chado users but also
 between these two groups and the community of ontology developers (for
 example, <a href="http://obofoundry.org" class="external text"
-rel="nofollow">OBO</a>,
+
 <a href="http://www.bioontology.org/" class="external text"
-rel="nofollow">NCBO</a>).
 
 There is also Chado Documentation in this Wiki:
 

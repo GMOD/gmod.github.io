@@ -14,7 +14,7 @@ height="48" alt="Xenbase" /></a>
 **Position 1, entry level developer**
 
 <a href="http://www.xenbase.org" class="external text"
-rel="nofollow">Xenbase</a>, the *Xenopus* model organism database is
+
 looking for a strong ~~skiier/rider~~ software developer to join our
 team in Calgary. Good Java and Javascript skills are essential. Database
 and/or perl would be a plus but isn’t essential. This developer will
@@ -29,7 +29,7 @@ software development would also be fine.
 **Position 2, senior software developer**
 
 <a href="http://www.xenbase.org" class="external text"
-rel="nofollow">Xenbase</a>, the *Xenopus* model organism database is
+
 looking for an experienced ~~skiier/rider~~ senior software developer to
 join our team in Calgary. The rocky mountains are an hour from town,
 with incredible skiing, backcountry and camping. The city itself has
@@ -50,9 +50,6 @@ will help improve.
 If you would like more info on either position please get in touch with
 the database director, Jeff Bowes bowes \[at\] ucalgary.ca
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/04/09*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

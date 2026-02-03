@@ -28,7 +28,7 @@ not been tested or tried on any Windows server.
 ## Installing Cygwin
 
 <a href="http://cygwin.com" class="external text"
-rel="nofollow">Cygwin</a> is a Linux-like environment for Windows. It
+
 does not partition your drive or require a dual boot. It does however
 provide a shell and GNU tools.
 

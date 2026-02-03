@@ -15,7 +15,7 @@ A one day
 class="external text" rel="nofollow">Galaxy Developer Workshop</a> has
 been scheduled for 23 January in
 <a href="http://www.ckrumlov.info/php/" class="external text"
-rel="nofollow">Český Krumlov</a>, Czech Republic, immediately following
+
 the <a
 href="http://evomics.org/workshops/workshop-on-genomics/2012-genomics-cesky-krumlov/2012"
 class="external text" rel="nofollow">Workshop on Genomics</a>, (which
@@ -50,17 +50,14 @@ biological datasets.
 registration will certainly be accepted dependent on availability. The
 registration fee is \$200 USD (payment terms provided upon acceptance).
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 
 PS: Plans for the <a href="http://galaxyproject.org/wiki/Events/GCC2012"
 class="external text" rel="nofollow">2012 Galaxy Community
 Conference</a> are coming along nicely. Dates are July 25-27 in Chicago,
 Illinois.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/11/11,
 updated 2011/12/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

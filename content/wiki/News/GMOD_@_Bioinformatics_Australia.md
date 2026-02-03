@@ -22,19 +22,15 @@ title="Next generation sequencing">next generation sequencing</a> data.
 
 Thanks to sponsorship from
 <a href="http://www.bioplatforms.com/" class="external text"
-rel="nofollow">Bioplatforms Australia</a> admission to the workshop is
+
 included in the conference registration fee.
 
 Please see the [workshop page](../BA2009) or
 <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">contact the GMOD Help Desk</a> for more information.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

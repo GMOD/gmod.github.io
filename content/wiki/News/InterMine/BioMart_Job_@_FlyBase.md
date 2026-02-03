@@ -24,7 +24,7 @@ software engineer</a> to undertake a project to deploy the
 developer will be responsible for the web and database aspects of these
 technologies, which will be hosted at the Indiana University
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase site</a> in Bloomington, IN. This includes the
+
 initial setup and configuration of these two systems, setting up and
 automating update cycles in sync with the existing FlyBase release
 cycle, evaluating the capabilities of each, aiding in the integration of
@@ -37,9 +37,6 @@ also be required. See the
 class="external text" rel="nofollow">position announcement</a> for
 details.
 
-
-
 *Posted to the [GMOD News](../../GMOD_News) on 2010/09/03*
 
-
-- [News Items](../../Category%253ANews_Items)
+- [News Items](../../Category:News_Items)

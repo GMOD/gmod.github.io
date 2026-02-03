@@ -10,7 +10,7 @@ This page stores the data that populates the
 \| dev = inactive \| support = active \| type = Genome Visualization &
 Editing, Tool Integration \| os = web \| logo = WebGBrowseLogo.png \|
 home = <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> \| about = The
+
 [Generic Genome Browser (GBrowse)](../GBrowse.1) is one of the
 most widely used visualization tools for sequence display characterized
 by a rich set of utilities helpful in presenting a variety of genome
@@ -45,7 +45,6 @@ WebGBrowse can be
 class="external text" rel="nofollow">downloaded</a> and installed
 locally, or you can use the
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse at CGB</a>.
 
 \| screenshot =
 
@@ -55,10 +54,9 @@ _Add new track_ dialog in WebGBrowse
 
 \| public_server =
 <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu</a> \| dl = \| dl_url =
+
 <a href="http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html"
-class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu/webgbrowse/software.html</a>
+
 \| dl_src = Latest release from
 <a href="http://webgbrowse.cgb.indiana.edu/software.html"
 class="external text" rel="nofollow">CGB</a> or latest development
@@ -68,8 +66,7 @@ class="external text" rel="nofollow">SourceForge</a>. \| dl_src_url = \|
 dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req = \|
 install = \| config = \| doc = Information on
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse</a> is available in several places:
 
-- [GBrowse](../Category%253AGBrowse)
+- [GBrowse](../Category:GBrowse)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
+  Components](../Category:GMOD_Components)

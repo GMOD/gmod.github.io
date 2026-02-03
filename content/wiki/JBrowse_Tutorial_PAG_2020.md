@@ -4,14 +4,14 @@ title: "JBrowse Tutorial PAG 2020"
 # JBrowse Tutorial PAG 2020
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the
+Cain](/wiki/User:Scott) at the
 <a href="http://www.intlpag.org" class="external text"
-rel="nofollow">Plant and Animal Genomes</a> meeting using JBrowse
+
 1.16.6.
 
 This tutorial assumes a
 <a href="https://www.virtualbox.org" class="external text"
-rel="nofollow">VirtualBox</a> Ubuntu 18.04 (LTS) instance with the
+
 tutorial bundle zip file, also available on Amazon S3: <a
 href="https://s3.amazonaws.com/jbrowse-tutorials/JBrowse+PAG+2020.ova"
 class="external text" rel="nofollow">JBrowse PAG 2020.ova</a> (about

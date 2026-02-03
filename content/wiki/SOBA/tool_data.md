@@ -10,8 +10,7 @@ win\|platform = linux, os x, unix, win\|platform = linux, os x, unix,
 win\|platform = linux, os x, unix, win \| platform = web \| logo =
 SOBA_Header.jpg \| home = <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA*-_Sequence_Ontology_Bioinformatics_Analysis"
-class="external free"
-rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-\_Sequence_Ontology_Bioinformatics_Analysis</a>
+
 \| about = SOBA, Sequence Ontology Bioinformatics Analysis, is a command
 line tool and web application for analyzing [GFF3](../GFF3)
 annotations. [GFF3](../GFF3) is a standard file format for
@@ -47,14 +46,13 @@ public_server = The SOBA web interface is available at
 class="external text" rel="nofollow">the Sequence Ontology website</a>.
 \| dl = SOBAcl is available (via
 <a href="http://subversion.apache.org/" class="external text"
-rel="nofollow">Subversion</a>) from:
 
      svn co svn://topaz.genetics.utah.edu/SOBA/trunk SOBA
 
 \| dl_url = \| dl_src = \| dl_dev = \| dl_src_url = \| dl_dev_url = \|
 getting_started_preamble = \| req = SOBA is built with Perl and uses
 <a href="http://template-toolkit.org/" class="external text"
-rel="nofollow">Template Toolkit (TT)</a> to generate html or text
+
 reports, GraphViz for ontology graphs, and GD for charts. SOBAweb uses
 <a href="http://search.cpan.org/perldoc?CGI::Application"
 class="external text" rel="nofollow">CGI::Application</a> as a Perl

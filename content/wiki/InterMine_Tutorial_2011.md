@@ -142,7 +142,6 @@ title: "InterMine Tutorial 2011"
 # Introduction
 
 <a href="http://db.tt/yCxyJnx" class="external text"
-rel="nofollow">Intro Slides</a>
 
 InterMine is a project that aims to make creating, running, and
 maintaining massive data warehouses of integrated genomics data fast and
@@ -150,17 +149,16 @@ flexible. It provides a back end database solution, a front end
 web-application, and a fully capable webservice API to access the data
 you host. InterMine already powers several websites, including
 <a href="http://www.flymine.org" class="external text"
-rel="nofollow">FlyMine</a>,
+
 <a href="http://intermine.modencode.org/" class="external text"
-rel="nofollow">modMine</a>,
+
 <a href="http://ratmine.mcw.edu/" class="external text"
-rel="nofollow">RatMine</a>,
+
 <a href="http://yeastmine.yeastgenome.org" class="external text"
-rel="nofollow">YeastMine</a>, and soon
+
 <a href="http://www.metabolicmine.org/beta/begin.do"
 class="external text" rel="nofollow">metabolicMine</a> and
 <a href="http://zmine.zfin.org/zfinmine/" class="external text"
-rel="nofollow">ZFINmine</a> as well.
 
 InterMine is fundamentally data agnostic, and can host any data you
 like, but we have been funded to develop genomics tools, and you will
@@ -310,7 +308,7 @@ The next section of the MineManager handles adding sources to a project:
 A source here refers to the combination of a datasource and a parser
 that reads the data into the database. We supply a
 <a href="http://intermine.org/wiki/BioSources" class="external text"
-rel="nofollow">large number of parsers</a> with our source code for
+
 reading in data from common biological formats (including
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [GFF3](/wiki/GFF3)), and we supply the tools for writing your own
@@ -490,7 +488,6 @@ client by installing `InterMine::Item`. eg:
 First let's look at the data we will be adding to the database. In this
 tutorial we will use data from the
 <a href="http://www.genome.jp/kegg/pathway.html" class="external text"
-rel="nofollow">KEGG pathway database</a>. In their words:
 
 > "*KEGG PATHWAY mapping is the process to map molecular datasets,
 > especially large-scale datasets in genomics, transcriptomics,
@@ -522,8 +519,6 @@ We will
 3.  Read in the gene mappings file
     1.  Create a data item for each gene in the file, linked to the
         pathway items made earlier
-
-
 
 #### Adding The Source
 
@@ -784,7 +779,7 @@ with this command:
 
 Visit the Tomcat manager at
 <a href="http://localhost:8080/" class="external free"
-rel="nofollow">http://localhost:8080/</a>. The username and password
+
 required to access the manager are **manager** and **manager**
 
 ## Deploying the Webapp to Tomcat
@@ -804,7 +799,6 @@ have previously released before).
 
 Visit your newly minted mine:
 <a href="http://localhost:8080/malariamine" class="external free"
-rel="nofollow">http://localhost:8080/malariamine</a>
 
 # Accessing Your Data Through the Webapp
 
@@ -1011,7 +1005,6 @@ data (although this can be turned off at deployment). The webservice
 takes the form of a RESTful(*-ish*) set of resource paths, that accept
 either GET or POST HTTP requests (for further details see
 <a href="http://www.intermine.org/wiki/WebService" class="external text"
-rel="nofollow">here</a>).
 
 ## Raw URLs
 
@@ -1025,8 +1018,7 @@ websevice url is:
 Here the different parts are:
 
 <a href="http://preview.flymine.org/preview/service"
-class="external free"
-rel="nofollow">http://preview.flymine.org/preview/service</a>
+
 The base url for this service
 
 template/results
@@ -1066,7 +1058,7 @@ Webservice client modules are installed)
 Queries are represented in the webservice as XML strings, and rather
 than having to write them yourself (although you
 <a href="http://www.intermine.org/wiki/QueryXML" class="external text"
-rel="nofollow">can</a>), again the webservice will generate this for you
+
 if you want. Just select **Query XML** at the bottom of the page:
 
 <img
@@ -1141,8 +1133,7 @@ height="365" alt="Template-form.png" />
 
 Additional help is provided at the CPAN:
 <a href="http://search.cpan.org/perldoc?Webservice::InterMine"
-class="external free"
-rel="nofollow">http://search.cpan.org/perldoc?Webservice::InterMine</a>,
+
 or though the use of the `perldoc` command:
 
     perldoc Webservice::InterMine
@@ -1384,7 +1375,6 @@ As above, but comma separated, and double quoted
 jsonrows
 Row based json format:
 <a href="http://intermine.org/wiki/JSONRowFormat" class="external free"
-rel="nofollow">http://intermine.org/wiki/JSONRowFormat</a>
 
 xml
 Structured data format with the structure
@@ -1399,7 +1389,7 @@ We have one format (**jsonobjects**) that treats records as the unit of
 the query, returning an object with arbitrarily deep nesting of
 references and collections: see
 <a href="http://intermine.org/wiki/JSONRowFormat" class="external free"
-rel="nofollow">http://intermine.org/wiki/JSONRowFormat</a> for more. You
+
 can see an example of the results in this format below:
 
 ``` de1
@@ -1447,7 +1437,7 @@ Set the format to **count**
 
 We have a javascript client as well, called IMBedding
 (<a href="http://www.intermine.org/imbedding" class="external free"
-rel="nofollow">http://www.intermine.org/imbedding</a>) which enables
+
 queries to any Mine webservice from any browser, and display tables of
 data inline. Please look at the imbedding tutorial to see more, but an
 example is included below as a demonstration:

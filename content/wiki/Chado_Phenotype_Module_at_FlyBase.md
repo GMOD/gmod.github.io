@@ -14,7 +14,7 @@ Should be done before Jan 1, 2011
 
 The [Chado Phenotype
 module](/wiki/Chado_Phenotype_Module) was developed
-at [FlyBase](/wiki/Category%3AFlyBase).
+at .
 
 To try and understand the existing phenotype module during the [GMOD Evo
 Hackathon](/wiki/GMOD_Evo_Hackathon), participants spent
@@ -258,8 +258,6 @@ examples:
 
 There are 1473 of these (every one of them unspecified).
 
-
-
 ``` de1
 SELECT COUNT(*), c.name
   FROM phenotype p, cvterm t, cv c
@@ -280,15 +278,12 @@ SELECT COUNT(*), c.name
         1 | SO
     (6 rows)
 
-
-
 #### attr_id and assay_id
 
 attr_id is supposed to be "Phenotypic attribute (quality, property,
 attribute, character) - drawn from PATO." but is not.
 
 assay_id is supposed to be "Evidence type" but it is not.
-
 
 At FlyBase, in all rows (except the null one) both of these point to
 cvterm "unspecified"
@@ -478,8 +473,6 @@ What makes two G/E/P pairs comparable?
 |----|----|
 | **Table:** | **`phenotype_cvterm`** |
 | **Module:** | **[Phenotype](/wiki/Chado_Phenotype_Module)** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>phenotype_cvterm</code></strong>
@@ -978,8 +971,6 @@ Definition:
 | **Table:** | **`environment_cvterm`** |
 | **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
 
-
-
 <table class="wikitable chadotable">
 <caption><strong><code>environment_cvterm</code></strong>
 columns</caption>
@@ -1151,8 +1142,6 @@ Definition:
 |-------------|------------------------------------------------------------|
 | **Table:** | **`feature_genotype`** |
 | **Module:** | **[Genetic](/wiki/Chado_Genetic_Module)** |
-
-
 
 <table class="wikitable chadotable">
 <caption><strong><code>feature_genotype</code></strong>

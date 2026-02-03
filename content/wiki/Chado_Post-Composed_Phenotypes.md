@@ -35,7 +35,6 @@ pre-composed cvterms. These changes require only adding a new table,
 phenotype_clause, and a number of new rows in phenotype_cvterm. We will
 attempt to introduce these changes in Chado v1.3
 
-
 **Update, Mar 2015:** After running a trial on option 2 below, we found
 that the group table greatly increased the complexity of loading and
 querying the data, so we decided that rather than permitting an
@@ -49,8 +48,6 @@ not all statement structures currently in use.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/Chado_phenotype_proposal.clause.jpg"
 width="1101" height="806"
 alt="Chado phenotype proposal.clause.jpg" />
-
-
 
 ## New and Modified Tables in Phenotype Module
 
@@ -91,8 +88,6 @@ alt="Chado phenotype proposal.clause.jpg" />
      COMMENT ON COLUMN type_id IS "Name of this cvterm's role in a post-composed term";
      COMMENT ON COLUMN phenotypeclause_id IS "If this term is part of a clause within a statement, this field identifies the clause.";
 
-
-
 ## Recommended Deprecated Fields
 
      COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id
@@ -120,10 +115,8 @@ Secondary Entity 1 Relationship
 Secondary Entity 2
 ...
 
-
-
 ## Older proposals
 
 See
-[Talk:Chado_Post-Composed_Phenotypes](/wiki/Talk%3AChado_Post-Composed_Phenotypes)
+[Talk:Chado_Post-Composed_Phenotypes](/wiki/Talk:Chado_Post-Composed_Phenotypes)
 for the older versions of this schema proposal

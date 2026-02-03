@@ -100,8 +100,6 @@ have the latest copy.
 After restarting Galaxy, Trackster will now know about the size of all
 chromosomes for many genome builds.
 
-
-
 ## Adding a new tool
 
 **Note:** This was the "create a tool" example used in previous years.
@@ -110,7 +108,7 @@ However, this is such a nice example that I couldn't delete it
 altogether. *Dave C.*
 
 The <a href="http://samtools.sourceforge.net/" class="external text"
-rel="nofollow">SAM format</a> contains 12 required fields representing
+
 the read and the position it maps to, followed by a variable number of
 optional fields of the form *`CODE:TYPE:VALUE`*. Suppose we want to
 filter by these optional fields. We can whip up a quick command line
@@ -280,8 +278,6 @@ only reads that mapped exactly to the reference.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/97/GalaxyExtras_SamFilter_2.png" width="1059"
 height="510" alt="GalaxyExtras SamFilter 2.png" />
 
-
-
 ## Configuring Galaxy (2)
 
 ### Tool dependencies
@@ -296,7 +292,7 @@ this easier).
 Suppose we'd like to analyze some Illumina datasets. We see that the
 **Map with BWA** tool requires us to install
 <a href="http://bio-bwa.sourceforge.net/" class="external text"
-rel="nofollow">BWA</a> (surprise!). To save time, BWA is already
+
 compiled on the AMI, so let's copy it to a location on the `PATH`:
 
     $ sudo cp /home/ubuntu/Galaxy/BWA/bwa-0.6.2/bwa /usr/local/bin
@@ -324,7 +320,6 @@ and then start Galaxy
 ## A second example with NGS data
 
 Having made these changes and restarted Galaxy, access it at Template:YourUrlGalaxy.
-
 
 You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new

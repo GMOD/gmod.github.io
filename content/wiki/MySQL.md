@@ -4,7 +4,7 @@ title: "MySQL"
 # MySQL
 
 <a href="http://mysql.com" class="external text"
-rel="nofollow">MySQL</a> is a popular open source [database management
+
 system](/wiki/Glossary#Database_Management_System) (DBMS). It's
 generally considered to be the easiest of all relational database
 management systems to install (Unix or Windows). It's not always viewed
@@ -77,7 +77,7 @@ an unfriendly error message, even though the same data loaded without
 incident using the MySQL adaptor. After spending a few days looking for
 bugs in the PostgreSQL adaptor that I'd written, I started looking at
 the data. It turns out that the test data (the entire
-[WormBase](/wiki/Category%3AWormBase) [GFF](/wiki/GFF) at
+ [GFF](/wiki/GFF) at
 the time) had data in it that violated a unique constraint on the fdata
 table. That is the main data table, and the constraint was over
 (fref,fbin,fstart,fstop,ftypeid,gid). Basically, the WormBase GFF had a

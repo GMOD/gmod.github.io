@@ -135,8 +135,6 @@ title="IBatis.pdf">Jeff's presentation</a>.
  </table>
 ```
 
-
-
 ##### Abator
 
 Works as:

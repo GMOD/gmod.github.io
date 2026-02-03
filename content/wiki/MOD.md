@@ -12,7 +12,6 @@ class="external autonumber" rel="nofollow">[1]</a>. Historically, these
 model organism databases include the handful of species with extensive
 genomic research data, such as the
 <a href="http://www.nih.gov/science/models/" class="external text"
-rel="nofollow">NIH model organisms</a>.
 
 With the barriers to genome sequencing--particularly expense and
 time--rapidly coming down, collecting genetic and genomic data is no

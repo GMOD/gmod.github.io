@@ -10,10 +10,9 @@ wiki page.
 dev = active \| support = active \| type = Genome Annotation \| platform
 = linux, os x, unix \| logo = MAKERLogo.png \| home =
 <a href="http://www.yandell-lab.org/software/maker.html"
-class="external free"
-rel="nofollow">http://www.yandell-lab.org/software/maker.html</a> \|
+
 about = MAKER is a portable and easy to configure genome
-[annotation](../Category%253AAnnotation) pipeline.
+[annotation](../Category:Annotation) pipeline.
 MAKER allows smaller _eukaryotic_ genome projects and _prokaryotic_
 genome projects to annotate their genomes and to create genome
 databases. MAKER identifies repeats, aligns ESTs and proteins to a

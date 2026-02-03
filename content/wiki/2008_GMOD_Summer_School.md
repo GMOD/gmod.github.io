@@ -48,7 +48,7 @@ running with popular GMOD components such as
 [CMap](/wiki/CMap.1), and [GBrowse](/wiki/GBrowse.1). Participants
 included 25 students and 4 instructors, from 19 states and 4 countries.
 It was held at the <a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
+
 Durham, North Carolina, USA, July 11-13, 2008.
 
   Program](#Program)
@@ -116,9 +116,9 @@ an overview of how sequence data is handled.</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>Lunch
 Break</strong><br />
 <a href="http://www.ninthst.com/eat.html" class="external text"
-rel="nofollow">Places to eat</a><br />
+
 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a> is adjacent to <a
+
 href="http://www.ninthst.com/" class="external text"
 rel="nofollow">Durham's 9<sup>th</sup> Street District</a>.</td>
 </tr>
@@ -152,7 +152,7 @@ class="external text" rel="nofollow">NESCent researchers</a>.</td>
 style="text-align: center; background-color: #d6fff5;"><strong>Dinner
 Break</strong><br />
 <a href="http://www.ninthst.com/eat.html" class="external text"
-rel="nofollow">Places to eat</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #FFCCBB">7:30pm - 9:30pm</td>
@@ -181,7 +181,7 @@ and performance tuning</td>
 <td style="text-align: center; background-color: #d6fff5;"><strong>Lunch
 Break</strong><br />
 <a href="http://www.ninthst.com/eat.html" class="external text"
-rel="nofollow">Places to eat</a></td>
+
 </tr>
 <tr class="even">
 <td style="background-color: #FFE5BB">12:30pm - 4pm</td>
@@ -202,7 +202,7 @@ Overview, installation, configuration and data importation.</td>
 style="text-align: center; background-color: #d6fff5;"><strong>Dinner
 Break</strong><br />
 <a href="http://www.ninthst.com/eat.html" class="external text"
-rel="nofollow">Places to eat</a></td>
+
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5BB">6:30pm - 9pm</td>
@@ -240,10 +240,10 @@ course to a coherent close.</td>
 
 Sessions were taught by experienced GMOD personnel, including:
 
-- [Scott Cain](/wiki/User%3AScott) - GMOD Project Coordinator
-- [Dave Clements](/wiki/User%3AClements) - [GMOD Help
+- [Scott Cain](/wiki/User:Scott) - GMOD Project Coordinator
+- [Dave Clements](/wiki/User:Clements) - [GMOD Help
   Desk](/wiki/GMOD_Help_Desk)
-- [Ben Faga](/wiki/User%3AFaga) - [CMap](/wiki/CMap.1) and
+- [Ben Faga](/wiki/User:Faga) - [CMap](/wiki/CMap.1) and
   [GBrowse](/wiki/GBrowse.1) developer
 - Ed Lee - [Apollo](/wiki/Apollo.1) developer
 
@@ -262,7 +262,7 @@ people who actually implement and manage a GMOD installation on a day to
 day basis. This course was for organizations either planning to use GMOD
 components, or in the early phases of implementing GMOD.
 
-| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User%3AScott)          | CSHL                                       | [Dave Clements](/wiki/User%3AClements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User%3AFaga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
+| Participant                                        | Affiliation                                | -------------------------------------------------- | ------------------------------------------ | Feseha Abebe-Akele                                 | University of New Hampshire                | Parker Antin                                       | University of Arizona                      | Burcu Bakir-Gungor                                 | Medical College of Wisconsin, RGD          | [Scott Cain](/wiki/User:Scott)          | CSHL                                       | [Dave Clements](/wiki/User:Clements) | NESCent                                    | Matthew Conte                                      | Howard Hughes Medical Institute            | Sean Davey                                         | University of Arizona, BirdBase            | Victor de Jager                                    | Radboud University Nijmegen Medical Centre | Jason Dzurisin                                     | University of Notre Dame                   | [Ben Faga](/wiki/User:Faga)              | CSHL                                       | Bob Freeman                                        | Harvard University Medical School          | Jean-Pierre Gauthier                               | INRA                                       | Glenn Harris                                       | Virgina State University                   | Erik Hom                                           | Harvard University                         | Zhiliang Hu                                        | Iowa State University                      | Li Jin                                             | University of Delaware                     | Ed Johnson                                         | University of Georgia                      | Ed Lee                                             | BBOP                                       | Fabrice Legeai                                     | INRA                                       | Xianhua Liu                                        | NESCent                                    | Prashanti Manda                                    | Mississippi State University               | Tom McNeill                                        | Syngenta Biotechnology                     | Christos Noutsos                                   | University of Chicago                      | Jason Phillips                                     | University of North Carolina               | Joan Pontius                                       | National Cancer Institute                  | Sarah Richardson                                   | Johns Hopkins University                   | Stéphanie Sidibe-Bocs                              | CIRAD                                      | Brett Whitty                                       | Michigan State University                  | Andy Wu                                            | Washington State University                |
 
 # Prerequisites
 
@@ -290,12 +290,10 @@ height="48" alt="Windoze" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
 
 VMware on Mac OS X
 
@@ -306,8 +304,7 @@ Intel processor is a requirement for all the packages discussed below.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
 
-There is no free VMware player that runs _directly_ under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs _directly_ under . However, there are several
 other options, _all of which require an Intel Mac_:
 
 VMware Fusion
@@ -317,7 +314,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a> allows you to run VMware
+
 images, Windows and Linux under Mac OS. **We recommend this option for
 Mac users. There is a fully functional, 30 day free trial version of
 VMware Fusion available for download.**
@@ -330,7 +327,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="60" alt="Boot Camp" /></a>
 
 The <a href="http://www.apple.com/macosx/" class="external text"
-rel="nofollow">Leopard release of Mac OS (10.5)</a> includes
+
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 class="external text" rel="nofollow">Boot Camp</a>, a feature that
 allows you to boot your Mac into another operating system, including
@@ -355,7 +352,7 @@ everyone who applied into the course (and we still had a full course).
 Participants were responsible for their own transportation, lodging and
 meals. Everyone who flew, came in through
 <a href="http://www.rdu.com/" class="external text"
-rel="nofollow">Raleigh-Durham International Airport (RDU)</a>, a 30
+
 minute drive from NESCent. Most participants stayed at
 <a href="http://www.millenniumhotels.com/millenniumdurham/index.html"
 class="external text" rel="nofollow">Millennium Hotel Durham</a>, which
@@ -391,7 +388,7 @@ title="Poster 2"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/SummerSchoolFlier2008.png" width="254"
 height="196" alt="Poster 2" /></a><br />
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/GMODSummerSchoolFlier2008.pdf"
-class="internal"
+
 title="GMODSummerSchoolFlier2008.pdf">Download</a><br />
 A flier with the schedule on it also available.</td>
 </tr>
@@ -404,7 +401,6 @@ The 2008 GMOD Summer School was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
 class="external text" rel="nofollow">NIH grant 1R01HG004483-01</a> under
 <a href="http://biowiki.org/IanHolmes" class="external text"
-rel="nofollow">Ian Holmes</a>.
 
 \*Comments on the **2008 GMOD Summer School\***
 

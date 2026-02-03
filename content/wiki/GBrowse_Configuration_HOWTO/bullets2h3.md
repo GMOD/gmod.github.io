@@ -161,7 +161,7 @@ indicates that the database should be made available as a
 value of the option corresponds to the URL of the DAS reference server
 for this data source, or `SELF` if this database is its own reference
 server. (See <a href="http://www.biodas.org/" class="external text"
-rel="nofollow">the BioDAS web site</a> for an explanation of what
+
 reference servers are.)
 
 Please see DAS_HOWTO for more information on using
@@ -328,16 +328,12 @@ NOTE: The path argument is ignored if gbrowse is running under modperl,
 because modperl allows the URL to be translated into a physical
 directory programmatically.
 
-
-
 ### Plugin Options
 
 Plugins are a way for third party developers to add functionality to
 GBrowse without changing its core source code. Plugins are stored in the
 GBrowse configuration directory under the `plugins` subdirectory. See
 <a href="../Plugins" class="mw-redirect" title="Plugins">plugins</a>.
-
-
 
 - **plugins**
 
@@ -384,12 +380,11 @@ option to work, the Safe::World module must be installed from CPAN.
 
 If you would like GBrowse to be able to send data to the
 <a href="http://main.g2.bx.psu.edu/" class="external text"
-rel="nofollow">Galaxy bioinformatics analysis tool</a>, then set this
+
 option to the URL for the Galaxy server you would like to use. A good
 default is:
 
       galaxy outgoing = http://main.g2.bx.psu.edu/tool_runner?tool_id=TOOL_ID
-
 
 Without this option, GBrowse will be able to receive and process queries
 from Galaxy servers, but will not be able to initiate a connection.
@@ -828,8 +823,6 @@ Similarly, you can make a track appear in the region panel by appending
     height        = 20
     key           = SNP Density
 
-
-
 ## Semantic Zooming
 
 Sometimes you will want to change the appearance of a track when the
@@ -888,8 +881,6 @@ hide the track when the display exceeds a certain size:
 
      [6_frame_translation:50000]
      hide = 1
-
-
 
 ## Computed Options
 
@@ -1172,8 +1163,6 @@ It is entirely possible to create an invalid regular expression, in
 which case gbrowse will crash until you comment out the offending
 option.
 
-
-
 ## Controlling the gbrowse_details page
 
 If a track definition's "link" option ([see
@@ -1202,8 +1191,6 @@ that you have defined. Tags names are NOT case sensitive. You may also
 specify a feature_type of "default" to control the formatting for all
 features (more specific formatting rules will override less specific
 ones).
-
-
 
 A formatting rule can be a string with (possible) substitution values,
 or a callback. If a string, it can contain one or more of the
@@ -1239,8 +1226,6 @@ their protein translations, then you are probably unsatisified with the
 default formatting of these features. You can modify this with a
 callback that word-wraps the value into lines of at most 60 characters,
 and puts the whole thing in a \<pre\> section.
-
-
 
     [gene:details]
     Translation = sub {
@@ -1293,8 +1278,6 @@ value of the tag looks like an NCBI GI number:
            return;
          }
 
-
-
 ## Configuring Balloon Tooltips
 
 See: [GBrowse
@@ -1346,8 +1329,6 @@ all coordinates by 100. GBrowse will automatically display the scale
 using the most appropriate units, so the displayed map will typically be
 drawn using cM units.
 
-
-
 # Changing the Location of the Configuration Files
 
 If you wish to change the location of the gbrowse.conf configuration
@@ -1377,8 +1358,6 @@ For example:
       Options         +ExecCGI
       PerlSetVar      GBrowseConf /etc/gbrowse.conf
     </Directory>
-
-
 
 # Using DAS (Distributed Annotation System) Databases
 
@@ -1435,8 +1414,6 @@ on the primary_tag
                     }
      key          = RefSeq Signal Peptide
 
-
-
 # Invoking GBrowse URLs
 
 See: [GBrowse Configuration/URL
@@ -1461,17 +1438,14 @@ For further information, bug reports, etc, please consult the [GMOD
 Mailing Lists](../GMOD_Mailing_Lists). The main
 mailing list for gbrowse support is
 <a href="mailto:gmod-gbrowse@lists.sourceforge.net"
-class="external free"
-rel="nofollow">mailto:gmod-gbrowse@lists.sourceforge.net</a>. You can
+
 also get help on the GMOD
 <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat"
 class="external text" rel="nofollow">IRC</a> channel on
 <a href="http://freenode.net/" class="external text"
-rel="nofollow">Freenode</a>:
+
 <a href="/wiki/irc://irc.freenode.net/#gmod" class="external free"
-rel="nofollow">irc://irc.freenode.net/#gmod</a>
 
 Have fun!
 
 <a href="mailto:lstein@cshl.edu" class="external text"
-rel="nofollow">Lincoln Stein</a> & the GMOD development team.

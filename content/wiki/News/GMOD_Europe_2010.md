@@ -101,8 +101,8 @@ space is limited.
 
 See you in Cambridge!
 
-[Scott Cain](../User%253AScott) and [Dave
-Clements](../User%253AClements)
+[Scott Cain](../User:Scott) and [Dave
+Clements](../User:Clements)
 
 *PS: If you have topics you want to have covered (or you want to cover)
 at the [GMOD
@@ -114,13 +114,10 @@ please add them to the
 page, or to the [Satellite
 Meetings](../Satellite_Meetings_-_GMOD_Europe_2010)
 list, or <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">contact us</a>. We are also looking for [guest speaker
+
 nominations](../September_2010_GMOD_Meeting#Guest_Speaker_Nominations)
 for the meeting.*
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/08/04*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

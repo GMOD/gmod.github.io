@@ -3,21 +3,19 @@ title: "Artemis-Chado Integration Tutorial"
 ---
 # Artemis-Chado Integration Tutorial
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Artemis_logo.gif" width="250" height="159"
 alt="Artemis" />
 
 This [Artemis-Chado Integration](/wiki/Artemis) tutorial was
-presented by [Robin Houston](/wiki/User%3ARobinHouston),
-[Tim Carver](/wiki/User%3ATimCarver) and [Giles
-Velarde](/wiki/User%3ABuggy) at the 2009 GMOD Summer School -
+presented by [Robin Houston](/wiki/User:RobinHouston),
+[Tim Carver](/wiki/User:TimCarver) and [Giles
+Velarde](/wiki/User:Buggy) at the 2009 GMOD Summer School -
 Europe, August 2009. The most recent Artemis tutorial can be found at
 the <a href="/wiki/Artemis_Tutorial" class="mw-redirect"
 title="Artemis Tutorial">Artemis Tutorial</a> page.
 
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through how to use the Artemis annotation editor with a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database.
 
@@ -36,21 +34,17 @@ comparison files into this window, so it looks something like this (note
 the featureId numbers may well be different as these are the Chado
 feature_id):
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a3/ActSelection2seqs.gif" width="528"
 height="187" alt="ActSelection2seqs.gif" />
-
 
 Click on Apply to read these entries and open up ACT. You can use the
 right hand scroll bar to zoom in and out. If you zoom out you can
 identify the regions that match between these sequences.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3c/Pf10_Pk6.gif" width="900" height="700"
 alt="Pf10 Pk6.gif" />
-
 
 ACT can display multiple pairwise comparison. So the two `P.knowlesi`
 sequences can be compared to the `P.falciparum sequence`. From the ACT
@@ -58,21 +52,16 @@ launch window go to the File menu and select 'Open Database and SSH File
 Manager'. Drag in the sequences and comparison files (clicking on 'more
 files' to add the additional sequence and comparison).
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/ActSelection.gif" width="528" height="245"
 alt="ActSelection.gif" />
 
-
 Zooming out you will see that *Pfalciparum* chromosome 10 matches to
 regions in *Pknowlesi* chromosome 7 and 9.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/Pk6_Pf10_Pk8.gif" width="900" height="700"
 alt="Pk6 Pf10 Pk8.gif" />
-
-
 
 ## Writing Out Sequence Files
 

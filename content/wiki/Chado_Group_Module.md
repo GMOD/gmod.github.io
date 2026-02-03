@@ -74,4 +74,3 @@ href="http://generic-model-organism-system-database.450254.n5.nabble.com/Chado-C
 class="external text" rel="nofollow">discussion</a>
 
 <a href="http://youtu.be/Soam8O3g1jg" class="external text"
-rel="nofollow">Video</a> of original talk

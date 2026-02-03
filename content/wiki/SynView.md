@@ -7,8 +7,6 @@ title: "SynView"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/SynView_Icon.gif" width="173" height="66"
 alt="SynView Icon.gif" />
 
-
-
   Documentation](#Documentation)
   - [Publications](#Publications)
   - [Presentations](#Presentations)
@@ -19,7 +17,7 @@ very sophisticated [GBrowse](/wiki/GBrowse.1) configuration file
 that creates a simple synteny viewer inside of GBrowse, which they have
 called SynView. This viewer is in use at
 <a href="http://www.plasmodb.org" class="external text"
-rel="nofollow">PlasmoDB</a>, and creates views like <a
+
 href="http://plasmodb.org/cgi-bin/gbrowse/plasmodb/?name=Pf3D7_11:1278854..1310722;label=AnnotatedGenes-SyntenySpansVivaxMC-SyntenyGenesVivaxMC-SyntenySpansYoeliiMC-SyntenyGenesYoeliiMC-SyntenySpansChabaudiMC-SyntenyGenesChabaudiMC-SyntenySpansKnowlesiMC-SyntenyGenesKnowlesiMC-SyntenySpansBergheiMC-SyntenyGenesBergheiMC;h_feat=PF11_0344@yellow"
 class="external text" rel="nofollow">this one</a>.
 
@@ -28,13 +26,10 @@ in the gbrowse/contrib/ directory. Also included in the SynView contrib
 directory is a GUSdb adaptor for GBrowse, but that is not required for
 making SynView work.
 
-
-
 ## Documentation
 
 See
 <a href="http://www.eupathdb.org/apps/SynView/" class="external free"
-rel="nofollow">http://www.eupathdb.org/apps/SynView/</a>.
 
 ### Publications
 
@@ -80,7 +75,7 @@ file set up to use the memory adaptor.
 This of course is a very brief introduction to SynView, for more
 information, please see
 <a href="http://www.eupathdb.org/apps/SynView/" class="external free"
-rel="nofollow">http://www.eupathdb.org/apps/SynView/</a>, contact
+
 Jessica or Haiming, or see their paper in Bioinformatics:
 
 Wang, H., Su, Y., Mackey, A., Kraemer, E., and \*Kissinger, J.C.\*

@@ -30,8 +30,6 @@ See also:
   href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/htdocs/tutorial/tutorial.html"
   class="external text" rel="nofollow">Administrators Tutorial</a>.
 
-
-
 ## Configuring Balloon Tooltips
 
 GBrowse can display popup balloons when the user hovers over or clicks
@@ -41,7 +39,6 @@ feature to create multiple choice menus when the user clicks on the
 feature, to pop up images on mouse hovers, or even to create little
 embedded query forms. See
 <a href="http://mckay.cshl.edu/balloons.html" class="external free"
-rel="nofollow">http://mckay.cshl.edu/balloons.html</a> for examples.
 
 In the config file for the database you wish to modify, set "balloon
 tips" to a true value:
@@ -184,8 +181,6 @@ named as follows:
 
 Tips for creating these images can be found on [Popup
 Balloons](/wiki/Popup_Balloons).
-
-
 
 #### Delay time!
 

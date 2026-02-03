@@ -23,9 +23,6 @@ a detailed schedule, registration information, and other details.
 
 Peter Karp
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/08/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

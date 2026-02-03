@@ -39,7 +39,7 @@ Don't despair if you missed this event as the the next GMOD meeting is
 scheduled for [October,
 2011](../October_2011_GMOD_Meeting) at the
 <a href="http://oicr.on.ca/" class="external text"
-rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> in
+
 Toronto, Canada. OICR was the site of the [July 2008 GMOD
 Meeting](../July_2008_GMOD_Meeting) and is the
 home of the [BioMart](../BioMart) and
@@ -47,12 +47,9 @@ home of the [BioMart](../BioMart) and
 
 See you in October,
 
-[Scott Cain](../User%253AScott) and [Dave
-Clements](../User%253AClements)
-
-
+[Scott Cain](../User:Scott) and [Dave
+Clements](../User:Clements)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/03/17*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

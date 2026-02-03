@@ -14,7 +14,6 @@ height="141" alt="NESCent" /></a>
 
 Enabled by a generous grant from the
 <a href="http://ambassadors.nescent.org/" class="external text"
-rel="nofollow">NESCent Ambassador Program</a>
 
 **February 26-28, 2014, Kuala Lumpur, Malaysia.**
 
@@ -80,11 +79,9 @@ will include lunch and refreshments for the three days of the course.
 Discounted accommodation (including wifi and breakfast) is available at
 the Hotel Ibis; please contact the hotel manager,
 <a href="mailto:h8552-sl2@accor.com" class="external text"
-rel="nofollow">Hazwani Sharif (h8552-sl2@accor.com)</a>, to book your
+
 room and mention that you are attending the GMOD training course to
 secure the discounted rate.
-
-
 
 ## Participants
 
@@ -100,10 +97,10 @@ photo</a>.
 
 GMOD Malaysia 2014 is made possible by the extremely generous support of
 **<a href="http://nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a>**
+
 and the
 **<a href="http://ambassadors.nescent.org/" class="external text"
-rel="nofollow">NESCent Ambassador program</a>**. NESCent promotes the
+
 synthesis of information, concepts and knowledge to address significant,
 emerging, or novel questions in evolutionary science and its
 applications. NESCent supports research and education across

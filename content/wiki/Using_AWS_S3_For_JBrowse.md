@@ -19,7 +19,7 @@ title: "Using AWS S3 For JBrowse"
 ## Why use S3 for JBbrowse?
 
 <a href="https://aws.amazon.com/s3/" class="external text"
-rel="nofollow">Amazon Web Services’ S3</a> object storage service can be
+
 configured to store [JBrowse](/wiki/JBrowse.1) data or to serve a
 full [JBrowse](/wiki/JBrowse.1) instance. It’s possible, depending
 on usage patterns, that operating a JBrowse instance from an S3 store
@@ -44,7 +44,7 @@ out of hand.
 
 For the commands here to work, you must install the
 <a href="https://aws.amazon.com/cli/" class="external text"
-rel="nofollow">AWS command line interface</a> and have it properly
+
 configured with keys that will allow the movement of data into S3.
 
 ## Setting it up with management scripts

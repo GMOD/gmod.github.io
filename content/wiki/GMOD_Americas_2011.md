@@ -24,7 +24,7 @@ alt="GMOD Americas 2011, Community and Satellite Meetings, GMOD Course, March 5-
 
 ***GMOD Americas 2011*** was an 8 day event held at the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">US National Evolutionary Synthesis Center (NESCent)</a>
+
 in Durham, North Carolina. The week long event included:
 
 <table>
@@ -59,8 +59,6 @@ title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></li>
 </tr>
 </tbody>
 </table>
-
-
 
 # About GMOD
 
@@ -261,7 +259,6 @@ March 12</td>
 
 GMOD Americas 2011 was held at
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">NESCent</a> in Durham, North Carolina, United States.
 
 ## Lodging
 
@@ -274,7 +271,6 @@ the code **"NESCent GMOD"** when you book the room.
 
 Duke Tower is also within walking distance of
 <a href="http://www.historicbrightleaf.com/" class="external text"
-rel="nofollow">Brightleaf Square</a> (~10 minutes) and downtown Durham.
 
 While Duke Tower provides most things, they don't provide shampoo, so
 bring your own.
@@ -288,7 +284,7 @@ in the area.
 
 The closest airport is
 <a href="http://www.rdu.com/" class="external text"
-rel="nofollow">Raleigh-Durham International Airport (RDU)</a>, a 30
+
 minute drive from NESCent. A taxi from the airport to
 <a href="http://duketower.com" class="external text" rel="nofollow">Duke
 Tower</a> is about \$40.
@@ -347,7 +343,7 @@ width="100" height="93" alt="NESCent" /></a>
 
 **GMOD Americas 2011** is sponsored by the
 <a href="http://www.nescent.org/" class="external text"
-rel="nofollow">US National Evolutionary Synthesis Center (NESCent)</a>.
+
 NESCent <a href="http://www.nescent.org/science/proposals.php"
 class="external text" rel="nofollow">promotes the synthesis of
 information, concepts and knowledge</a> to address significant,
@@ -376,7 +372,7 @@ Help spread the word about GMOD Americas 2011 events by posting and
 distributing [this
 flier](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf),
 or the [event
-announcements](/wiki/GMOD_News#GMOD_Spring_Training%3A_Apply_Now) to
+announcements](/wiki/GMOD_News#GMOD_Spring_Training:_Apply_Now) to
 your communities, mailing lists, and organizations.
 
 There are many organizations out there that are struggling to cope with

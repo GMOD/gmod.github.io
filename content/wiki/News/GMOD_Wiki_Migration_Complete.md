@@ -20,14 +20,11 @@ fold:
 the News page](../GMOD_News#Adding_a_News_Item).
 
 I would like to sincerely thank [Dave
-Clements](../User%253AClements) for his considerable help
+Clements](../User:Clements) for his considerable help
 getting this new News page and feed set up.
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/02/03*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

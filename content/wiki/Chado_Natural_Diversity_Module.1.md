@@ -19,8 +19,6 @@ Recently, a lot of work was done on the ND module at the [GMOD Tools for
 Evolutionary Biology
 hackathon](/wiki/GMOD_Evo_Hackathon), see <a
 href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
-class="external free"
-rel="nofollow">https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup</a>.
 
   Introduction](#Introduction)
   - [Interactions with Other Chado
@@ -152,7 +150,6 @@ phenotyping and genotyping experiments. Any cvterm may be used but it
 was designed with terms such as: \[phenotype_assay, genotype_assay,
 field_collection, cross_experiment, sample_treatment\] in mind.
 
-
 For experiments of type 'phenotype_assay' or 'genotype_assay', each
 nd_experiment generally give rise to a single genotype or phenotype.
 Though there is no longer a one-to-one restriction, it is expected that
@@ -162,7 +159,6 @@ heterozygotes where the genotype of each allele is stored in a distinct
 row of genotype table. One record of phenotype and genotype can be
 linked to multiple experiments since multiple stock entries can produce
 same phenotype and/or genotype.
-
 
 Each nd_experiment of type 'phenotype_assay' or 'genotype_assay' should
 be linked to a single stock entry via nd_experiment_stock table. So when
@@ -175,8 +171,6 @@ of type 'sample_treatment'. Collections of assays that relate to each
 other can be linked via the same record in the 'project' table and/or
 same record in 'stock' table.
 
-
-
 For experiments of type 'field_collection' and 'cross_experiment', the
 appropriate stock entries that are used or generated from the experiment
 can be linked by nd_experiment_stock table. In cross experiment, the
@@ -186,7 +180,6 @@ nd_experiment_stock.type_id. The progeny of a cross and the stocks
 collected from a field collection can be stored in 'stock' table as a
 population or as an individual line/accession/strain/sample and then be
 linked to nd_experiment appropriately.
-
 
 The detailed protocols of experiments can be described via one or more
 protocols. Reagents used in protocol can be stored in nd_reagent table.
@@ -211,7 +204,7 @@ insert your data in the database.
 - [Chado Natural Diversity Module Working
   Group](/wiki/Chado_Natural_Diversity_Module_Working_Group)
   page, and the [group's discussion
-  page](/wiki/Talk%3AChado_Natural_Diversity_Module_Working_Group)
+  page](/wiki/Talk:Chado_Natural_Diversity_Module_Working_Group)
   for background on how this module was created.
 
 ### Email Threads
@@ -322,7 +315,6 @@ Comments:
 ------------------------------------------------------------------------
 
 ### Tomato/potato breeder lines and cultivars (<a href="http://solgenomics.net" class="external text"
-rel="nofollow">Sol genomics network</a>)
 
 #### Phenotyping experiment
 
@@ -343,16 +335,16 @@ accession can belong to a ‘parent’ population, and has multiple
 
 In this data-set, we have in the stock table a
 <a href="http://solgenomics.net/stock/view/id/646" class="external text"
-rel="nofollow">Tomato cultivars</a> population, and all the related
+
 accessions. The relationship between the accession stocks and the
 population stock is defined in stock_relationship (the population is the
 object in stock_relationship, and all accessions are subjects). Similar
 relationship is defined between each accession and the plants in the
 experiment's field plots. For example accession
 <a href="http://solgenomics.net/stock/view/id/676" class="external text"
-rel="nofollow">Heinz 1706</a> belongs to the
+
 <a href="http://solgenomics.net/stock/view/id/646" class="external text"
-rel="nofollow">cultivars</a> population, and has several
+
 <a href="http://solgenomics.net/stock/view/id/1517"
 class="external text" rel="nofollow">field plots</a>.
 
@@ -370,7 +362,6 @@ Each plant can be scored for a large number of phenotypic traits, and
 genotyped with an array of genetic markers (see 'SGN Genotyping
 experiment bellow).
 
-
 Each phenotyping and genotyping experiment is also tied to a geolocation
 (nd_geolocation table). Metadata of experiments, such as date,
 environmental conditions, and person recording the data, are stored as
@@ -378,7 +369,7 @@ properties (nd_experimentprop).
 
 All the scored phenotype values and attributes are stored in the
 <a href="/wiki/Chado_Phenotype_Module" class="external text"
-rel="nofollow">phenotype table</a>, and genotypes in the
+
 <a href="http://gmod.org/wiki/Chado_Genotype_Module"
 class="external text" rel="nofollow">genotype table</a>. The 2 linking
 tables, nd_experiment_phenotype and nd_experiment_genotype, provide a
@@ -468,8 +459,6 @@ public.nd_experiment_dbxref Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_experiment_genotype
 
 Linking table: experiments to the genotypes they produce. Though there
@@ -537,8 +526,6 @@ public.nd_experiment_protocol Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_experiment_pub
 
 Linking nd_experiment(s) to publication(s)
@@ -552,8 +539,6 @@ Linking nd_experiment(s) to publication(s)
 public.nd_experiment_pub Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_experiment_stock
 
@@ -618,8 +603,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_experiment_stock_dbxref
 
 Cross-reference experiment_stock to accessions, images, etc
@@ -633,8 +616,6 @@ Cross-reference experiment_stock to accessions, images, etc
 public.nd_experiment_stock_dbxref Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_experiment_stockprop
 
@@ -706,8 +687,6 @@ values.</td>
 public.nd_experiment_stockprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_experimentprop
 
@@ -814,8 +793,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_geolocationprop
 
 Property/value associations for geolocations. This table can store the
@@ -885,8 +862,6 @@ public.nd_geolocationprop Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_protocol
 
 A protocol can be anything that is done as part of the experiment.
@@ -935,8 +910,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_protocol_reagent
 
 | FK | Name | Type | Description |
@@ -949,8 +922,6 @@ Tables referencing this one via Foreign Key Constraints:
 public.nd_protocol_reagent Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_protocolprop
 
@@ -1021,8 +992,6 @@ values.</td>
 public.nd_protocolprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_reagent
 
@@ -1095,8 +1064,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: nd_reagent_relationship
 
 Relationships between reagents. Some reagents form a group. i.e., they
@@ -1167,8 +1134,6 @@ The type (or predicate) of the relationship. For example, in "linkerA
 public.nd_reagent_relationship Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: nd_reagentprop
 

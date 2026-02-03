@@ -446,8 +446,6 @@ Write custom methods for speciﬁc sub-classes
  session.getTransaction().commit();
 ```
 
-
-
 ##### What Hibernate Does Well
 
 - Hibernate can be configured to perform specialized functions

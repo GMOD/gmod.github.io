@@ -11,5 +11,4 @@ Redirect page
 Configuration Guide#Using JBrowse with Existing
 Databases](../JBrowse_Configuration_Guide#Using_JBrowse_with_Existing_Databases)</span>
 
-
-- [JBrowse](../Category%253AJBrowse)
+- [JBrowse](../Category:JBrowse)

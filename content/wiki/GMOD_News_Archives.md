@@ -208,8 +208,7 @@ class="mw-headline">We're pleased to announce a new release of JBrowse
 Web!</span></h2>
 <p>(Reposted by permission from <a
 href="https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release"
-class="external free"
-rel="nofollow">https://jbrowse.org/jb2/blog/2021/03/29/v1.1.0-release</a></p>
+
 <h3 id="changed-callbacks-language-from-javascript-to-jexl"><span
 id="Changed_callbacks_language_from_JavaScript_to_Jexl"
 class="mw-headline">Changed callbacks language from JavaScript to
@@ -677,8 +676,7 @@ software development and the GMOD helpdesk.</p>
 one is GREATLY appreciated.</p>
 <p><a
 href="https://goo.gl/forms/1bKIuAMjGKrS0hUi1"
-class="external free"
-rel="nofollow">https://goo.gl/forms/1bKIuAMjGKrS0hUi1</a></p>
+
 <p>Thanks &amp; best wishes,</p>
 <p>The JBrowse team</p>
 <p><br />
@@ -818,9 +816,6 @@ title="GMOD News">GMOD News</a> on 2016/04/04</em>
 <h3 id="please-support-ecocyc"><a href="/wiki/News/Please_Support_EcoCyc">Please Support EcoCyc</a></h3>
 
 <a href="http://ecocyc.org"
-rel="nofollow">&lt;img alt="EcoCyc website"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/BioCyc.gif" width="216"
-height="60" /&gt;</a>
 
 <p><a href="http://ecocyc.org"
 class="external text" rel="nofollow">EcoCyc, the <em>E. coli</em>
@@ -955,9 +950,6 @@ srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/image
 
 <a
 href="http://biocuration2014.events.oicr.on.ca/"
-rel="nofollow">&lt;img alt="ISBLogo.jpg"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/ISBLogo.jpg" width="240"
-height="71" /&gt;</a>
 
 <p>GMOD will be running a workshop at <a
 href="http://biocuration2014.events.oicr.on.ca/"
@@ -1053,7 +1045,7 @@ Open</a></h3>
 
 <a
 href="http://wiki.galaxyproject.org/Events/GCC2014"
-rel="nofollow"
+
 title="2014 Galaxy Community Conference (GCC2014)">&lt;img alt="2014
 Galaxy Community Conference (GCC2014)"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/GCC2014Logo.png/300px-GCC2014Logo.png"
@@ -1416,7 +1408,7 @@ title="GMOD News">GMOD News</a> on 2014/02/10</em>
 
 <a
 href="http://wiki.galaxyproject.org/Events/GAW2014"
-rel="nofollow"
+
 title="1st Galaxy Australasia Workshop 2014 (GAW 2014)">&lt;img alt="1st
 Galaxy Australasia Workshop 2014 (GAW 2014)"
 src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/16/GAW2014Logo.png/200px-GAW2014Logo.png"
@@ -2126,8 +2118,7 @@ title="WebApollo Installation">instructions on upgrading your data
 store</a>.</p>
 <p>You can try the public demo at <a
 href="http://genomearchitect.org/WebApolloDemo"
-class="external free"
-rel="nofollow">http://genomearchitect.org/WebApolloDemo</a>.</p>
+
 <p>Summary of changes:</p>
 <ul>
 <li>using JBrowse 1.10.9 release</li>
@@ -2439,8 +2430,7 @@ title="JBrowse">JBrowse</a> for sequence visualization.</p>
 <p>And finally, if you have access to the Wiley Online Library through
 your institution, you may like to check out [<a
 href="http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi0915s43/abstract"
-class="external free"
-rel="nofollow">http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi0915s43/abstract</a>
+
 Cloud Computing with iPlant Atmosphere], from Current Protocols in
 Bioinformatics, which details the resources available on the
 [www.iplantcollaborative.org/‎ iPlant website] and how to get started
@@ -2632,10 +2622,6 @@ title="GMOD News">GMOD News</a> on 2013/11/04</em>
 
 <a
 href="http://www.ncbi.nlm.nih.gov/pubmed/24163125"
-rel="nofollow">&lt;img alt="TripalLogo.png"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png"
-width="250" height="75" srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png
-1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x" /&gt;</a>
 
 <p>The <a href="/wiki/Tripal"
 title="Tripal">Tripal</a> team have put out a publication on the 1.1
@@ -2758,11 +2744,6 @@ title="GMOD News">GMOD News</a> on 2014/10/02</em>
 
 <a
 href="http://impactstory.org"
-rel="nofollow">&lt;img alt="ImpactstoryLogo.png"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7a/ImpactstoryLogo.png/250px-ImpactstoryLogo.png"
-width="250" height="46"
-srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7a/ImpactstoryLogo.png/375px-ImpactstoryLogo.png
-1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7a/ImpactstoryLogo.png 2x" /&gt;</a>
 
 The GMOD wiki now includes <a
 href="http://impactstory.org"
@@ -2836,11 +2817,6 @@ PostDoc at PSU</a></h3>
 
 <a
 href="http://www.huck.psu.edu/center/medical-genomics/"
-rel="nofollow">&lt;img alt="HuckInstitutes.png"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/35/HuckInstitutes.png/250px-HuckInstitutes.png"
-width="250" height="48"
-srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/35/HuckInstitutes.png/375px-HuckInstitutes.png
-1.5xhttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/35/HuckInstitutes.png 2x" /&gt;</a>
 
 <p>Are you interested in genomics and do you have skills in
 Bioinformatics, Computational Biology and Statistics? The Makova lab in
@@ -2974,8 +2950,7 @@ new JBrowse release with some big new features, and a *huge* number of
 smaller improvements!</p>
 <p>It can be downloaded from <a
 href="http://jbrowse.org/jbrowse-1-10-0/"
-class="external free"
-rel="nofollow">http://jbrowse.org/jbrowse-1-10-0/</a>.</p>
+
 <p>As always, see the updated</p>
 <p><a href="/wiki/JBrowse_Configuration_Guide"
 title="JBrowse Configuration Guide">JBrowse Configuration Guide</a> for
@@ -3185,13 +3160,6 @@ WebApollo Release</a></h3>
 
 <a
 href="http://genomearchitect.org/webapollo/releases"
-rel="nofollow">&lt;img alt="Download the new WebApollo release!"
-src="http://gmod.ohttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/200px-WebApolloLogo.png"
-width="200" height="55"
-srcsethttps://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png
-1.5x,
-/mediawiki/images/thumb/4/4a/WebApolloLogo.png/400px-WebApolloLogo.png
-2x" /&gt;</a>
 
 <p><em><strong>From Ed Lee on the WebApollo mailing
 list:</strong></em></p>

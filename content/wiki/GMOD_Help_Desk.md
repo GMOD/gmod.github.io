@@ -36,7 +36,6 @@ can, or redirect it to the appropriate mailing list.
 
 You can contact the Help Desk by writing to
 **<a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>**.
 
 ## Help Desk Services
 
@@ -46,7 +45,7 @@ The GMOD Help Desk provides several services to the GMOD community.
 
 The Help Desk responds to any e-mails sent to
 **<a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>**. The help desk also monitors the
+
 [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) for
 recurring issues and addresses those in the GMOD documentation.
 
@@ -71,5 +70,5 @@ Support](/wiki/GMOD_Community_Support), of which the
 Help Desk is a part, for history and funding. The Help Desk is a
 collaboration between GMOD and the
 <a href="http://www.nescent.org" class="external text"
-rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a>, and
+
 is managed by NESCent.

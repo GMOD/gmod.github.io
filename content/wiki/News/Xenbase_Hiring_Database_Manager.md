@@ -9,11 +9,10 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="Xenbase logo" /></a>
 
 **<a href="http://www.xenbase.org" class="external text"
-rel="nofollow">Xenbase</a> is looking for a new database manager.** We
+
 need an experienced software developer / designer looking for a more
 senior position or a skilled IT team leader from industry interested in
 working in an exciting, flexible, academic research environment
-
 
 This position has four principal areas of responsibility: managerial,
 technical leadership, academic and communications. You will be
@@ -30,13 +29,11 @@ opportunities to undertake exploratory research relevant to Xenbase’s
 goals. Finally, you will communicate with academic collaborators, users
 and the university community.
 
-
 Xenbase is the model organism database for Xenopus, a frog used
 extensively in biomedical research for understanding gene function in
 development and using this system for helping to understand human
 congenital disease. Xenbase integrates a wide range of biological data
 and makes it available to scientists around the world on a 24/7 basis.
-
 
 The present database integrates a number of applications and tools. The
 primary stack serving most of the content consists of an Apache
@@ -48,7 +45,6 @@ UCSC browser). There are also numerous Perl and Java based data
 pipelines that regularly exchange data with other bioinformatics
 resources including NCBI and Uniprot.
 
-
 The database manager will bring a high level of technical competency in
 software engineering, database design and administration, and/or
 bioinformatics and will have at least 5 years of experience working in
@@ -58,31 +54,22 @@ required. A strong working knowledge of molecular biology would be an
 asset. You must be currently legally eligible to work in Canada or the
 United States and have good team management skills.
 
-
 The position will be in **Zone C** of the U of C **Management and
 Professional Staff (MaPS)** portfolio. Excellent benefits; flexible work
 hours; an interesting, relaxed and diverse academic environment along
 with travel opportunities are just some of the features of this
 rewarding position. For more information see <a
 href="https://wcmprod2.ucalgary.ca/hr/staff/management_professional_staff"
-class="external free"
-rel="nofollow">https://wcmprod2.ucalgary.ca/hr/staff/management_professional_staff</a>.
 
 Please send resume/CV to the project Principal Investigator,
 <a href="mailto:pvize@ucalgary.ca" class="external text"
-rel="nofollow">Professor Peter Vize</a>.
-
 
 **Application Deadline: September 17, 2012**
-
 
 *We would like to thank all applicants in advance for submitting their
 resumes. Please note, only those candidates chosen to continue on
 through the selection process will be contacted.*
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/08/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

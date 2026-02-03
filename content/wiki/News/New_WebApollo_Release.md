@@ -17,6 +17,6 @@ We'd like to announce a new WebApollo release.
 class="external text" rel="nofollow"><strong>Get the newest
 release</strong></a> --
 <a href="http://genomearchitect.org/WebApolloDemo" class="external text"
-rel="nofollow">Public demo</a> --
+
 <a href="http://www.gmod.org/wiki/WebApollo_Installation"
 class="external text" rel="nofollow">Server setup instructions</a> -

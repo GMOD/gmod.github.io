@@ -9,13 +9,11 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="300" height="57" alt="Phenote" />
 
 <a href="http://www.phenote.org/" class="external text"
-rel="nofollow">Phenote</a> is both a complete piece of software and a
+
 software toolkit designed to facilitate the annotation of biological
 phenotypes using ontologies. It provides an interface to record
 genotype-phenotype pairs, together with the provenance for the
 annotation.
-
-
 
   Requirements](#Requirements)
 - [Documentation](#Documentation)
@@ -26,12 +24,10 @@ annotation.
 
 See
 <a href="http://www.phenote.org/download.shtml" class="external free"
-rel="nofollow">http://www.phenote.org/download.shtml</a>
 
 ## Documentation
 
 See <a href="http://www.phenote.org/help.shtml" class="external free"
-rel="nofollow">http://www.phenote.org/help.shtml</a>
 
 ## Contact
 
@@ -39,15 +35,14 @@ See
 
 - <a href="http://www.phenote.org/contact.shtml" class="external free"
   rel="nofollow">http://www.phenote.org/contact.shtml</a>
-- [Nicole Washington](/wiki/User%3ANLWashington)
+- [Nicole Washington](/wiki/User:NLWashington)
 
 ## Logo
 
 The [Phenote
 logo](/wiki/File:PhenoteLogo_Medium.png) was
 created by <a href="http://visual-mark.com" class="external text"
-rel="nofollow">Mark Meadows</a>, a participant in the [Spring 2010 Logo
+
 Program](/wiki/Spring_2010_Logo_Program), while a
 design student at
 <a href="http://www.linn-benton.edu" class="external text"
-rel="nofollow">Linn-Benton Community College</a>.

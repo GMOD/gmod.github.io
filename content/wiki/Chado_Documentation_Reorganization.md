@@ -3,8 +3,7 @@ title: "Chado Documentation Reorganization"
 ---
 # Chado Documentation Reorganization
 
-We are going to reorganize the [Chado related
-documentation](/wiki/Category%3AChado) in this web site.
+We are going to reorganize the  in this web site.
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is the
 database schema of GMOD and it has quite a bit of documentation in this
 web site. However, the doc could be better organized and integrated.
@@ -13,8 +12,6 @@ solicits feedback on) a reorganization plan.
 
 Once the work starts, this page will also describe how the work is
 going.
-
-
 
   Exists</span>](#What_Exists)
 - [Plan](#Plan)
@@ -26,8 +23,7 @@ going.
 
 This summarizes the major Chado related pages that existed when the
 reorganization began in early April 2008. It is not an exhaustive list
-of pages related to Chado. See the [Chado
-Category](/wiki/Category%3AChado) for that.
+of pages related to Chado. See the  for that.
 
 <table class="wikitable">
 <colgroup>

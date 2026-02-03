@@ -10,12 +10,9 @@ The following recipe shows how to use existing options, such as
 [GBrowse](/wiki/GBrowse.1) via the configuration file. This example
 is used for benchmarking page loading and image generation.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7a/BenchMark.png" width="946" height="503"
 alt="BenchMark.png" />
-
-
 
 - **Note:** When coding Javascript in GBrowse config files, there are a
   few caveats:

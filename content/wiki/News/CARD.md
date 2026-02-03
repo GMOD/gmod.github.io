@@ -10,7 +10,7 @@ the laboratory of Dr. Gerry Wright at McMaster University, Canada
 announces the beta release of The Comprehensive Antibiotic Resistance
 Database (CARD;
 <a href="http://arpcard.mcmaster.ca/" class="external text"
-rel="nofollow">arpcard.mcmaster.ca</a>). CARD is a bioinformatic
+
 database of antibiotic resistance genes, their products and associated
 phenotypes that uses Chado and a custom Antibiotic Resistance Ontology
 as its core organizing principle. It serves as a basis for organizing
@@ -21,5 +21,4 @@ Andrew McArthur
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/09/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

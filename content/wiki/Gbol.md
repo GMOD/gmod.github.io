@@ -6,10 +6,7 @@ title: "Gbol"
 This is a scratch page for thoughts on development of the GMOD Bio
 Object Layer (GBOL).
 
-
 **== Note: This project is no longer active. ==**
-
-
 
   Design Goals</span>](#Object_Layer_Design_Goals)
 - [Diagrams](#Diagrams)
@@ -84,7 +81,6 @@ what sorts of features to save should the object be written to a data
 store. See [Configuration Adaptor
 Thoughts](#Configuration_Adaptor_Thoughts) for more details.
 
-
 Central Dogma Model thoughts:
 
 - I think there's a significant amount of confusion (or ambiguity) in
@@ -121,8 +117,6 @@ Extended Objects and methods:
     - List\<Exon\> getExons(): Returns all gene exons ordered by
       increasing start location.
 
-
-
 - SO:0000673: Transcript
   - **Thoughts:**
     - Most of the objects involved in the CDS_region/ coding / UTR
@@ -154,8 +148,6 @@ Extended Objects and methods:
       transcript. How many people have multiple proteins associated with
       a single transcript?
 
-
-
 - SO:0000147: Exon
   - **Thoughts:**
   - **Methods:**
@@ -177,15 +169,11 @@ Extended Objects and methods:
     - 3primeUTR get3primeUTR(): Returns 3primeUTR component of an exon
       if it exists.
 
-
-
 - SO:0000188: Intron
   - **Thoughts:**
   - **Methods:**
     - transcript getTranscript(): returns transcript that intron is a
       part of.
-
-
 
 - SO:0000204: FivePrimeUTR:
   - **Thoughts:**
@@ -197,16 +185,12 @@ Extended Objects and methods:
       of.
     - exon getExon(): returns
 
-
-
 - SO:0000205: ThreePrimeUTR:
   - **Thoughts:**
     - Same as FivePrimeUTR- Need a ThreePrimeUTR_region in so?
   - **Methods:**
     - transcript getTranscript(): returns transcript that UTR is a part
       of.
-
-
 
 - SO:0000316: CDS
   - **Thoughts:**
@@ -236,8 +220,6 @@ Extended Objects and methods:
       part of.
     - exon getExon(): returns the exon that the CDSRegion is a part of.
 
-
-
 - SO:0000104: Polypeptide
   - **Thoughts:**
     - Should this even have a featureloc if the CDS feature is used to
@@ -249,7 +231,6 @@ Extended Objects and methods:
       polypeptide derives from.
     - CDS getCDS(): returns the CDS feature that the polypeptide is
       translated from.
-
 
 Others....
 

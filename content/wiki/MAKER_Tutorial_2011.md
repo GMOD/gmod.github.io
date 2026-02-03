@@ -4,7 +4,7 @@ title: "MAKER Tutorial 2011"
 # MAKER Tutorial 2011
 
 This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
-Moore](/wiki/User%3ABmoore) as part of the [2011 GMOD Spring
+Moore](/wiki/User:Bmoore) as part of the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training).
 
   Overview, Installation, and Basic Configuration for Annotating Genomic
@@ -147,7 +147,6 @@ Examples:
 - Structural Annotations: exons, introns, UTRs, splice forms
   etc.
 
-
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
 Installer's Guide). I have installed this for you. So lets set up
@@ -208,7 +207,6 @@ You should see the following.
       MPD_SECRETWORD=mr45-j9z
     into the file.  (Of course use some other secret word than mr45-j9z.)
 
-
 Follow the instructions to set this file up, and start the mpi
 environment with `mpdboot`. Then run `mpi_maker` through the MPI manager
 `mpiexec`.
@@ -250,7 +248,6 @@ annotating an entire genome you will need to install MAKER locally. But
 if you like the convenience of the MWAS user interface, you can
 optionally install the interface on top of a locally installed version
 of MAKER for use in your own lab.
-
 
 First under the `maker` directory there is a subdirectory called `MWAS`.
 `MWAS` contains all the needed files to build the MAKER web interface.
@@ -331,13 +328,11 @@ need to launch a server to monitor for new job submissions.
 And then go to
 
 <a href="http://localhost/maker" class="external free"
-rel="nofollow">http://localhost/maker</a>
 
 ## MAKER Accessory Scripts
 
 MAKER comes with a number of accessory scripts that are meant to assist
 in manipulations of the MAKER input and output files.
-
 
 Scripts:
 

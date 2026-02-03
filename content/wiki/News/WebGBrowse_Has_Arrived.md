@@ -4,7 +4,7 @@ title: "News/WebGBrowse Has Arrived"
 # News/WebGBrowse Has Arrived
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse</a> - A Web Server for
+
 [GBrowse](../GBrowse.1) Configuration Made Easy
 
 <a href="http://webgbrowse.cgb.indiana.edu/" rel="nofollow"
@@ -13,7 +13,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="WebGBrowse at the Center for Genomics and Bioinformatics" /></a>
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse</a> is a web site that guides users through
+
 the process of creating a [GBrowse](../GBrowse.1)
 configuration file and then shows them how their data renders with that
 configuration. Users can
@@ -40,23 +40,19 @@ class="external text" rel="nofollow">installed locally</a>.
 
 WebGBrowse was created by Ram Podicheti, Rajesh Gollapudi, and Qunfeng
 Dong, all of the <a href="http://cgb.indiana.edu/" class="external text"
-rel="nofollow">The Center for Genomics and Bioinformatics (CGB)</a> at
+
 <a href="http://www.indaina.edu" class="external text"
-rel="nofollow">Indiana University - Bloomington</a>. WebGBrowse was
+
 first presented by Ram Podicheti at the [January 2009 GMOD
 Meeting](../January_2009_GMOD_Meeting#WebGBrowse:_GBrowse_Configuration_Management).
 
 WebGBrowse is an excellent way to get started with GBrowse, and to learn
 what glyphs are available, and what options each glyph supports. Please
 <a href="mailto:biohelp@cgb.indiana.edu" class="external text"
-rel="nofollow">contact the CGB</a> if you have any questions.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/04/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

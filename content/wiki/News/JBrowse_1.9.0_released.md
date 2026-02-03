@@ -4,12 +4,11 @@ title: "News/JBrowse 1.9.0 released"
 # News/JBrowse 1.9.0 released
 
 <a href="http://jbrowse.org/jbrowse-1-9-0" class="external text"
-rel="nofollow">JBrowse 1.9.0</a> is out today, with some great new
+
 features, and **lots** of smaller improvements and bug fixes.
 
 It can be downloaded from
 <a href="http://jbrowse.org/jbrowse-1-9-0" class="external text"
-rel="nofollow">jbrowse.org</a>.
 
 Headline features for this release:
 
@@ -36,13 +35,10 @@ Headline features for this release:
 
 Happy browsing!
 
---[RobertBuels](../User%253ARobertBuels)
-([talk](../User_talk%253ARobertBuels)) 10:09, 17
+--[RobertBuels](../User:RobertBuels)
+([talk](../User_talk:RobertBuels)) 10:09, 17
 April 2013 (EDT)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/04/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -10,7 +10,7 @@ height="25" alt="Galaxy Community Tool Sharing" /></a>
 
 We have introduced a new
 <a href="http://usegalaxy.org/community" class="external text"
-rel="nofollow">Galaxy tool sharing community site</a>. The site
+
 currently allows you to upload an archive consisting of a single tool,
 but will soon allow you to upload an archive consisting of a suite of
 tools. To learn how to use the community site, click on **Help → How to
@@ -23,9 +23,6 @@ We'll keep you informed as the site's features evolve.
 
 Greg Von Kuster
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/08*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

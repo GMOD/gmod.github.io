@@ -26,18 +26,14 @@ And, sometime in the next month GMOD will
 - **start taking registrations for the [September 2010 GMOD
   Meeting](../September_2010_GMOD_Meeting)**
 
-
 If you know of any other events or deadlines that the GMOD community
 would be interested in, please send them to me.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

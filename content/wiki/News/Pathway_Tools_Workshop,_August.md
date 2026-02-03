@@ -4,7 +4,7 @@ title: "News/Pathway Tools Workshop, August"
 # News/Pathway Tools Workshop, August
 
 *<a href="http://brg.ai.sri.com/ptools09/reg.html" class="external text"
-rel="nofollow">Registration</a> is now open for this workshop.
+
 2009/04/24*
 
 <a href="http://brg.ai.sri.com/ptools09/" rel="nofollow"
@@ -14,7 +14,7 @@ alt="Pathway Tools Workshop" /></a>
 
 There will be a
 <a href="http://brg.ai.sri.com/ptools09/" class="external text"
-rel="nofollow">Pathway Tools Workshop</a>, August 19-28, 2009 at
+
 <a href="http://www.sri.com" class="external text" rel="nofollow">SRI
 International</a>. This two-part workshop covers [Pathway
 Tools](../Pathway_Tools.1) and the BioCyc Database
@@ -53,16 +53,11 @@ a hackathon. Suggested topics include but are not limited to:
 Should you wish to make a presentation at the meeting, please submit a
 proposed title and abstract to
 <a href="mailto:ptools-info@ai.sri.com" class="external text"
-rel="nofollow">ptools-info@ai.sri.com</a>.
 
 Please check the following
 <a href="http://brg.ai.sri.com/ptools09/" class="external text"
-rel="nofollow">website</a> for updates.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/04/07,
 updated 2009/04/24*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

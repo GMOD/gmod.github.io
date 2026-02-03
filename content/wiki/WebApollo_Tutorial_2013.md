@@ -15,8 +15,6 @@ Summer School 2013 AMI.
 For more information about using WebApollo, please see the user guide,
 located here: <a
 href="http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf"
-class="external free"
-rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pdf</a>
 
   Prerequisites](#Prerequisites)
 - [Database
@@ -122,8 +120,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
           errorReportValveClass="org.bbop.apollo.web.ErrorReportValve">
     </Host>
 
-
-
 - At this point the server should be ready for WebApollo.
 
 ## Deploy WebApollo
@@ -131,8 +127,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 - Create the location for the new instance
      sudo mkdir /var/lib/tomcat7/webapps/WebApollo2
      cd /var/lib/tomcat7/webapps/WebApollo2
-
-
 
 - Deploy servlet
      sudo jar xvf ~/dataHome/WebApollo2/WebApollo-2013-05-16/war/WebApollo.war
@@ -169,14 +163,10 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   directory
      sudo ln -s /data/dataHome/WebApollo2/pyu_data .
 
-
-
 - WebApollo uses two special tracks, one to display annotations, and one
   for sequence alterations. We need to copy those from the original
   downloaded location to the data directory
      cp /data/dataHome/WebApollo2/WebApollo-2013-05-16/json/* ./data/
-
-
 
 - Process the data in preparation for loading
      cd /var/lib/tomcat7/webapps/WebApollo2/jbrowse/pyu_data
@@ -213,8 +203,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
     --cssClass container-16px --type mRNA --trackLabel maker \
     --webApollo --renderClassName gray-center-20pct
 
-
-
 - This is a bash script to automate loading the non-Maker tracks. You
   can either paste it into the command prompt or use it to build a shell
   script.
@@ -227,8 +215,6 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
        --cssClass container-10px --trackLabel $j \
        --webApollo --renderClassName gray-center-20pct
      done
-
-
 
     ### Output
     #Processing blastn
@@ -280,35 +266,25 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
 - For this instance, we need to set it to:
     <url>jdbc:postgresql://localhost/web_apollo_users</url>
 
-
-
      <username>ENTER_USER_DATABASE_USERNAME</username>
 
 - For this instance, we need to set it to:
     <username>web_apollo_users_admin</username>
-
-
 
      <password>ENTER_USER_DATABASE_PASSWORD</password>
 
 - For this instance, we need to set it to:
     <password>web_apollo_users_admin</password>
 
-
-
      <refseqs>ENTER_PATH_TO_REFSEQS_JSON_FILE</refseqs>
 
 - For this instance, we need to set it to:
     <refseqs>/var/lib/tomcat7/webapps/WebApollo2/jbrowse/data/refSeqs.json</refseqs>
 
-
-
     <organism>ENTER_ORGANISM</organism>
 
 - For this instance, we need to set it to:
     <organism>Pythium ultimum</organism>
-
-
 
     <sequence_type>ENTER_CVTERM_FOR_SEQUENCE</sequence_type>
 
@@ -316,29 +292,21 @@ rel="nofollow">http://genomearchitect.org/webapollo/docs/webapollo_user_guide.pd
   reference assembly.
     <sequence_type>sequence:contig</sequence_type>
 
-
-
 - Edit the blat_config.xml file for this instance
     <blat_bin>ENTER_PATH_TO_BLAT_BINARY</blat_bin>
 
 - For this instance, we need to set it to:
     <blat_bin>/opt/bin/blat</blat_bin>
 
-
-
      <tmp_dir>ENTER_PATH_FOR_TEMPORARY_DATA</tmp_dir>
 
 - For this instance, we need to set it to:
     <tmp_dir>/data/dataHome/WebApollo2/Pyu/Blat/tmp</tmp_dir>
 
-
-
     <database>ENTER_PATH_TO_BLAT_DATABASE</database>
 
 - For this instance, we need to set it to:
     <database>/data/dataHome/WebApollo2/Pyu/Blat/Pyu.2bit</database>
-
-
 
     <blat_options>ENTER_ANY_BLAT_OPTIONS</blat_options>
 
@@ -383,7 +351,6 @@ load command like this:
 Becomes:
 
     --subfeatureClasses "{\"match_part\": \"springgreen-80pct\"}"
-
 
 These styles are located in the custom_track_styles.css file:
 

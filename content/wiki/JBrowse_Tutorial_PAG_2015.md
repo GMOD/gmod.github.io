@@ -4,7 +4,7 @@ title: "JBrowse Tutorial PAG 2015"
 # JBrowse Tutorial PAG 2015
 
 This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
-Cain](/wiki/User%3AScott) at the
+Cain](/wiki/User:Scott) at the
 <a href="/wiki/PAG" class="mw-redirect" title="PAG">Plant and Animal Genomes
 Meeting</a> in January 2015 using JBrowse 1.11.5.
 
@@ -133,8 +133,6 @@ Visit in web browser:
 
 <a
 href="http://localhost/jbrowse_demo/PAG_2015_JBrowse/jbrowse/index.html"
-class="external free"
-rel="nofollow">http://localhost/jbrowse_demo/PAG_2015_JBrowse/jbrowse/index.html</a>
 
 You should see a "Congratulations" page.
 
@@ -411,8 +409,6 @@ inject the track configuration:
            "type" : "HTMLVariants"
          } ' | bin/add-track-json.pl data/trackList.json
 
-
-
 ### Faceted Track Selection
 
 JBrowse has a very powerful faceted track selector that can be used to
@@ -617,7 +613,7 @@ from the old JBrowse directory into the new JBrowse directory.
 
 See the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/JBrowse_gmod_summerschool_jul2013.pdf"
-class="internal"
+
 title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 (PDF)</a>
 

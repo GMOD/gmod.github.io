@@ -6,7 +6,7 @@ title: "News/San Diego 2014 Registration Open"
 Registration is now open for the [upcoming GMOD community
 meeting](../Jan_2014_GMOD_Meeting), to be held
 at the <a href="http://www.bw7seas.com/" class="external text"
-rel="nofollow">Best Western Seven Seas, San Diego, CA</a>, on January
+
 16th and 17th 2014.
 
 **<a href="https://gmod-sandiego-2014.eventbrite.com/"
@@ -26,7 +26,5 @@ through online bookings.
 
 If you have any questions or comments, please feel free to contact the
 GMOD helpdesk on help@gmod.org!
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/10/25*

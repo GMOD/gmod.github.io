@@ -43,8 +43,6 @@ Traffic to the GMOD website, gmod.org, has been tracked since November
 2007, first through AWStats and then using Google Analytics. No data is
 available for the period between January 2011 and July 2012.
 
-
-
 ### 2012 onwards
 
 Website hits are now being measured using Google Analytics. Please note
@@ -105,7 +103,7 @@ title="2008 GMOD Summer School">2008 GMOD Summer School</a>
 first school ever offered</td>
 <td>2.5</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a></td>
+
 <td>5</td>
 <td>4</td>
 <td>29</td>
@@ -120,7 +118,7 @@ title="2009 GMOD Summer School - Americas">2009 GMOD Summer School -
 Americas</a></td>
 <td>4.0</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a></td>
+
 <td>8</td>
 <td>9</td>
 <td>52</td>
@@ -151,7 +149,7 @@ title="2010 GMOD Summer School - Americas">2010 GMOD Summer School -
 Americas</a></td>
 <td>4.0</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a></td>
+
 <td>8</td>
 <td>8</td>
 <td>62</td>
@@ -165,7 +163,7 @@ rel="nofollow">NESCent</a></td>
 title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NEScent</a></td>
+
 <td>10</td>
 <td>8</td>
 <td>55</td>
@@ -180,7 +178,7 @@ Portugal.</td>
 title="2012 GMOD Summer School">2012 GMOD Summer School</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NEScent</a></td>
+
 <td>10</td>
 <td>8</td>
 <td>28</td>
@@ -195,7 +193,7 @@ Philippines</td>
 title="2013 GMOD Summer School">2013 GMOD Summer School</a></td>
 <td>5.0</td>
 <td><a href="http://nescent.org" class="external text"
-rel="nofollow">NEScent</a></td>
+
 <td>10</td>
 <td>8</td>
 <td>42</td>
@@ -293,8 +291,6 @@ SourceForge page. See [SourceForge Download
 Statistics](/wiki/SourceForge_Download_Statistics)
 for the raw data.
 
-
-
 ### [GBrowse](/wiki/GBrowse.1)
 
 #### GBrowse 2 Registrations
@@ -312,8 +308,6 @@ higher, because people can choose not to send in registrations.
 See the
 <a href="http://galaxyproject.org/wiki/Galaxy%20Project/Statistics"
 class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
-
-
 
 ### Community Surveys
 

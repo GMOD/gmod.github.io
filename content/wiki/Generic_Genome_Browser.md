@@ -25,7 +25,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 <a href="http://opensource.org/licenses/GPL-2.0" class="external text"
-rel="nofollow">GPL 2.0</a>,
+
 <a href="http://opensource.org/licenses/artistic-license-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 

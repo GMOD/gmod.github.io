@@ -64,8 +64,6 @@ which has a featureloc on the alignment feature.
 The nested set tree implementation by way of Joe Celko; see the
 excellent introduction by Aaron Mackey at <a
 href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html"
-class="external free"
-rel="nofollow">http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html</a>.
 
 ### Open Issues
 
@@ -91,8 +89,7 @@ parent_phylonode_id reflexive closure. For all nodes in a nested set
 implementation the left and right index will be \*between\* the parents
 left and right indexes. See <a
 href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html"
-class="external free"
-rel="nofollow">http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html</a>
+
 for details on a method of assigning values to the left and right
 indices.
 

@@ -24,7 +24,7 @@ template evaluator in the form of MediaWiki itself, I just had to write a spider
 that would crawl the entire site and save the files as html (or markdown, if
 I were clever enough). Since I tend to reach for Perl first in this sort
 of situation, I spent a little time thinking about writing a bespoke spider
-to do what I wanted. I think it was [Colin Diesh](/wiki/User%3AColin_Diesh) (yes,
+to do what I wanted. I think it was [Colin Diesh](/wiki/User:Colin_Diesh) (yes,
 that user page is waaaay out of date) that suggested that I just try mirroring
 the site to my local computer with `wget`. After a few false starts trying to
 mirror it to my workhorse laptop (the big problem was that the wget process didn't always
@@ -157,6 +157,6 @@ Thanks to everybody who has ever had any involvement in the GMOD project, since
 it is because of you that there is so much content that needed my attention in
 this porting process.
 
-[Scott](/wiki/User%3AScott)
+[Scott](/wiki/User:Scott)
 
 July 29, 2024

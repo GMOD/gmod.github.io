@@ -47,7 +47,7 @@ know:
 
 A wealth of information on Postgres is available at the
 <a href="http://www.postgresql.org/" class="external text"
-rel="nofollow">Postgres web site</a>. These pages are particularly
+
 helpful:
 
 - <a href="http://www.postgresql.org/docs/manuals/" class="external text"

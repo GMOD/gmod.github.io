@@ -4,7 +4,7 @@ title: "GMOD Malaysia 2014/Galaxy Tutorial"
 # GMOD Malaysia 2014/Galaxy Tutorial
 
 This [Galaxy](../Galaxy.1) tutorial was presented by [Dave
-Clements](../User%253AClements) at [GMOD Malaysia
+Clements](../User:Clements) at [GMOD Malaysia
 2014](../GMOD_Malaysia_2014.1), February 2014.
 
 The most recent Galaxy tutorial can be found at the
@@ -15,7 +15,6 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 
 .
 
-
 This tutorial will introduce Galaxy and then walk through a hands-on NGS
 analysis example highlighting different aspects of Galaxy. We will use
 shared servers provided by the Galaxy Project for this part of the
@@ -24,7 +23,6 @@ server on the Amazon cloud.
 
 - [File:MalaysiaGalaxyTutorialSlides.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/MalaysiaGalaxyTutorialSlides.pdf)
 
-
-- [Tutorials](../Category%253ATutorials)
-- [Galaxy](../Category%253AGalaxy)
-- [GMOD Schools](../Category%253AGMOD_Schools)
+- [Tutorials](../Category:Tutorials)
+- [Galaxy](../Category:Galaxy)
+- [GMOD Schools](../Category:GMOD_Schools)

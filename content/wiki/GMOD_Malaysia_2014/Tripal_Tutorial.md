@@ -4,7 +4,7 @@ title: "GMOD Malaysia 2014/Tripal Tutorial"
 # GMOD Malaysia 2014/Tripal Tutorial
 
 This [Tripal](../Tripal.1) tutorial was presented by [Scott
-Cain](../User%253AScott) at [GMOD Malaysia
+Cain](../User:Scott) at [GMOD Malaysia
 2014](../GMOD_Malaysia_2014.1), February 2014. This
 tutorial requires Tripal version 1.1.
 
@@ -252,11 +252,10 @@ and existing sites. Features of Drupal
 - Easy to install and maintain
 
 Drupal website: <a href="http://www.drupal.org" class="external free"
-rel="nofollow">http://www.drupal.org</a> Drupal modules:
+
 <a href="http://www.drupal.org/project/modules" class="external free"
-rel="nofollow">http://www.drupal.org/project/modules</a> Drupal themes:
+
 <a href="http://www.drupal.org/project/themes" class="external free"
-rel="nofollow">http://www.drupal.org/project/themes</a>
 
 Tripal v1.0 is compatible with Drupal v6. This is the final Drupal 6
 compatible version. Later releases will be compatible with Drupal v7.
@@ -356,15 +355,12 @@ Applications:
 
 The Tripal home site where you can find everything about Tripal:
 <a href="http://tripal.info" class="external free"
-rel="nofollow">http://tripal.info</a>
 
 GMOD Tripal mailing lists:
 <a href="../GMOD_Mailing_Lists" class="external free"
-rel="nofollow">http://gmod.org/wiki/GMOD_Mailing_Lists</a>
 
 GMOD Tutorials from previous GMOD schools:
 <a href="../Tripal.1" class="external free"
-rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
 ### Contributing Organizations
 
@@ -520,7 +516,7 @@ developers or collaborators.
 
 The following instructions are for setup of Tripal on an
 <a href="http://www.ubuntu.com/" class="external text"
-rel="nofollow">Ubuntu version 12.04 server edition</a>. When possible,
+
 alternative command-line statements have been added to this tutorial as
 users of other Linux version have provided feedback. Unless specifically
 identified, all commands are for Ubuntu 12.04 linux.
@@ -547,7 +543,7 @@ Reboot your server after installation of the Ubuntu Desktop.
 Apache is the web server software. Apache should be installed. On the
 Ubuntu server, navigate to your new website using this address:
 <a href="http://localhost/" class="external free"
-rel="nofollow">http://localhost/</a>. You should see the text "It
+
 works!".
 
 <a href="../File:ItWorks.png" class="image"><img
@@ -707,7 +703,7 @@ sudo /etc/init.d/apache2 restart
 
 Now navigate to the URL
 \[<a href="http://localhost/phppgadmin" class="external free"
-rel="nofollow">http://localhost/phppgadmin</a>\] and you should see the
+
 following:
 
 <a href="../File:Phppgadmin.png" class="image"><img
@@ -779,7 +775,7 @@ In the command above we set the owner and group of the directory to be
 Tripal currently requires version 6.x of Drupal. Drupal can be freely
 downloaded from the
 <a href="http://www.drupal.org" class="external free"
-rel="nofollow">http://www.drupal.org</a> website. At the writing of this
+
 Tutorial the most recent version of Drupal 6 is version 6.28. The
 software can be downloaded manually from the Drupal website through a
 web browser or we can use the 'wget' command to retrieve it:
@@ -916,7 +912,6 @@ Locate the line `DirectoryIndex` and change it to mach the following:
 
 Navigate to the installation page of our new web site
 <a href="http://localhost/install.php" class="external free"
-rel="nofollow">http://localhost/install.php</a>
 
 <a href="../File:800px-Install1.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/800px-Install1.png" width="800"
@@ -992,7 +987,6 @@ Tripal v1.0 supports Drush. For this tutorial we will use Drush and
 therefore we want the most recent version installed. Drush can be found
 on the Drupal website at
 <a href="http://drupal.org/project/drush" class="external free"
-rel="nofollow">http://drupal.org/project/drush</a>.
 
 To install drush first retrieve the most recent version from it's Drupal
 project page. The current version at the writing of this document is
@@ -1224,9 +1218,9 @@ The path for a page can be found in the address bar for the page. In
 Drupal pages of content are generally referred to as **nodes**. So, in
 the address bar for our home page you'll see the address is
 <a href="http://localhost/node/1" class="external free"
-rel="nofollow">http://localhost/node/1</a>. Our about page should be
+
 <a href="http://localhost/node/2" class="external free"
-rel="nofollow">http://localhost/node/2</a> (i.e the first and second
+
 pages we created).
 
 The path for each of these nodes is simply `node/1` and `node/2`.
@@ -1274,13 +1268,13 @@ width="800" height="336" alt="Drupal url.png" /></a>
 
 Since this is our about page, we simply want the URL to be
 <a href="http://localhost/about" class="external free"
-rel="nofollow">http://localhost/about</a>. To do this, just add the word
+
 **about** in the text box. You will now notice that the URL for this
 page is no longer
 <a href="http://localhost/node/2" class="external free"
-rel="nofollow">http://localhost/node/2</a> but now
+
 <a href="http://localhost/about" class="external free"
-rel="nofollow">http://localhost/about</a>. Although, both links will
+
 still get you to our About page.
 
 Now, use the instructions described above to set a path of 'home' for
@@ -1342,7 +1336,7 @@ these steps:
 
 For this tutorial, we will use the Sky theme which is available from
 <a href="http://drupal.org/project/sky" class="external free"
-rel="nofollow">http://drupal.org/project/sky</a>. We can use the drush
+
 utility to download the theme
 
 ```enter
@@ -1360,7 +1354,6 @@ height="522" alt="800px-DrupalThemes3.png" /></a>
 
 The sky theme was obtained at this address:
 <a href="http://drupal.org/project/sky" class="external free"
-rel="nofollow">http://drupal.org/project/sky</a>
 
 ### Theme Configuration
 
@@ -1409,7 +1402,7 @@ these steps:
 For an example, let's install the **Views** module needed for this
 workshop. The Views module can be found here:
 <a href="http://drupal.org/project/views" class="external free"
-rel="nofollow">http://drupal.org/project/views</a>. We will download the
+
 current version as of the writing of this tutorial:
 
 ```enter
@@ -1578,7 +1571,7 @@ cd ../
 We also want to obtain several Extension modules that will be used in
 this tutorial. Those modules are available on the
 <a href="http://tripal.info/extensions" class="external text"
-rel="nofollow">Extensions Page</a> of the Tripal website. However, these
+
 extension modules are also available via a git repository so we will use
 a git commands to obtain these.
 
@@ -1950,8 +1943,6 @@ width="800" height="448" alt="TripalOrganismFruitFly2.png" /></a>
 
 For the description add the following text (taken from wikipedia:
 <a href="http://en.wikipedia.org/wiki/Drosophila_melanogaster"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Drosophila_melanogaster</a>):
 
 "The genome of D. melanogaster (sequenced in 2000, and curated at the
 FlyBase database) contains four pairs of chromosomes: an X/Y pair, and
@@ -2497,7 +2488,7 @@ width="800" height="538" alt="TripalFeatureConfiguration.png" /></a>
 First, we can alter the feature URL path which is used to construct the
 URL that visitors can bookmark or link to for each feature. The URL
 would be <a href="http://localhost/" class="external free"
-rel="nofollow">http://localhost/</a>\[identifier\] where \[identifier\]
+
 could be the name of the feature, unique name or internal ID number, or
 a combination of the organism, type and name of the feature. If we
 choose to use an internal ID, we can specify a prefix for the internal
@@ -2535,7 +2526,6 @@ You should see the following output to the terminal:
 Previously, URLs were set to use the Internal ID by default, but now the
 URLs for features are similar to:
 <a href="http://localhost/orange1.1g015632m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015632m</a>.
 
 #### Feature Browser
 
@@ -2774,7 +2764,7 @@ drush trpjob-run administrator
 The results should now be loaded. if we visit our feature page, for
 feature 'orange1.1g015615m'
 (<a href="http://localhost/orange1.1g015615m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015615m</a>) we should now see
+
 blast results by clicking the 'ExPASy SwissProt' link on the right
 sidebar:
 
@@ -2812,7 +2802,6 @@ drush trpjob-run administrator
 
 Return to the example feature page to view the newly added results:
 <a href="http://localhost/orange1.1g015615m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015615m</a>
 
 #### Loading InterProScan Results
 
@@ -2859,7 +2848,7 @@ drush trpjob-run administrator
 
 The results should now be loaded. if we visit our feature page,
 <a href="http://localhost/orange1.1g015615m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015615m</a>, we should now see
+
 interpro results by clicking on the "Interpro Report" link on the right
 sidebar.
 
@@ -2874,7 +2863,7 @@ When we setup the InterPro analysis we requested that it parse GO terms
 from the InterProScan results. As a result, we now have a new **GO
 Assignments** item in the **Resources** sidebar. For our example feature
 (<a href="http://localhost/orange1.1g015615m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015615m</a>), the results are
+
 as follows:
 
 <a href="../File:Tripal-GO-Results.png" class="image"><img
@@ -2918,7 +2907,7 @@ because we only loaded GO assignments for a single gene.
 
 Now we want to load results from a KEGG/KAAS analysis
 (<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
-rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>). The KAAS server
+
 receives as input a FASTA file of sequences and annotates those with
 KEGG terms. The tool also generates an hierarchy (heir) output file.
 This output file can be read directly by the Tripal Analysis KEGG
@@ -2965,7 +2954,7 @@ Chado", click **Save** and then re-run the job.
 
 If we navigate to our feature page
 (<a href="http://localhost/orange1.1g015615m" class="external free"
-rel="nofollow">http://localhost/orange1.1g015615m</a>) we can now see
+
 the KEGG results by clicking the **KEGG Assignments** link in the
 **Resources** sidebar.
 
@@ -3409,7 +3398,7 @@ However, when you click the save button again you will receive a page
 full of text and not the screen shot above. The publication was,
 however, saved and you can find it by using the publication search tool
 at <a href="http://localhost/find/publications" class="external free"
-rel="nofollow">http://localhost/find/publications</a>. This bug will be
+
 corrected in future updates of Tripal.
 
 Now we have a publication page, and it is informative but it doesn't
@@ -3632,7 +3621,7 @@ the month.
 #### Editing Existing Views
 
 <a href="https://drupal.org/project/views" class="external text"
-rel="nofollow">Drupal Views</a> is a powerful 3rd-party module that
+
 allows an authorized user to query database tables in novel and unique
 ways and to create custom pages and search forms. Tripal has fully
 integrated the Chado database tables with Drupal Views. The basic search
@@ -3707,7 +3696,7 @@ section appears titled **Page settings**. Notice that the page settings
 contains the URL path (e.g. `chado/features`) for the view. This is the
 URL we use on the site to search for features (e.g.
 <a href="http://localhost/chado/features" class="external free"
-rel="nofollow">http://localhost/chado/features</a>). We can customize
+
 this page by altering any of the fields. Those that are light gray and
 italic are inherited from the default view settings. We can test changes
 to the view using the **Live preview** section at the bottom of the view
@@ -3890,7 +3879,6 @@ species page so, click the **Path** setting and add the following text:
 
 This will create a page at the URL
 <a href="http://localhost/species" class="external free"
-rel="nofollow">http://localhost/species</a>
 
 Next, click the **Menu** item. And add click the **NOrmal Menu Entry**
 radio button, set the title to be **Species** and click **Update**:
@@ -3950,7 +3938,7 @@ functionality of Tripal. Anyone is welcome to develop modules for Tripal
 to suit their own needs and perhaps share them back with the community.
 The Tripal API can be found on the home page:
 <a href="http://tripal.sourceforge.net/" class="external free"
-rel="nofollow">http://tripal.sourceforge.net/</a>. Information for
+
 developing new module can be found in the [Tripal Developer's
 Handbook](../Tripal_Developer's_Handbook).
 
@@ -3962,12 +3950,10 @@ the Drupal module repository for download.
 Anyone wishing to extend Tripal should sign up for the developers
 mailing list
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel"
-class="external free"
-rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel</a>
+
 and try to attend one of the monthly developer's meetings to discuss the
 desired extensions.
 
-
-- [Tutorials](../Category%253ATutorials)
-- [Tripal](../Category%253ATripal)
-- [GMOD Schools](../Category%253AGMOD_Schools)
+- [Tutorials](../Category:Tutorials)
+- [Tripal](../Category:Tripal)
+- [GMOD Schools](../Category:GMOD_Schools)

@@ -103,8 +103,7 @@ great support from Ruby and RoR community
 To install Rails, follow the instructions for your operating system
 \[here
 <a href="http://wiki.rubyonrails.org/getting-started/installation"
-class="external free"
-rel="nofollow">http://wiki.rubyonrails.org/getting-started/installation</a>\].
+
 Rails 2.3 is recommended. CoR is currently being developed using Ruby
 1.8.7, Rubygems 1.3.7 and Rails 2.3.10, but differences in minor version
 should not matter.

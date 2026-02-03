@@ -138,7 +138,7 @@ In progress.
 ## Background
 
 This effort was started after [Josh
-Goodman](/wiki/User%3AJogoodma)'s talk at the [January 2009 GMOD
+Goodman](/wiki/User:Jogoodma)'s talk at the [January 2009 GMOD
 Meeting](/wiki/January_2009_GMOD_Meeting) meeting
 titled "[MOD Web API (A RESTful interface for
 MODs)](/wiki/January_2009_GMOD_Meeting#A_RESTful_Interface_for_MODs.3F)".
@@ -150,7 +150,7 @@ in the proposal stage and have no been implemented at any
 
 ## Members
 
-- [Josh Goodman](/wiki/User%3AJogoodma) -
+- [Josh Goodman](/wiki/User:Jogoodma) -
   <a href="http://flybase.org" class="external text"
   rel="nofollow">FlyBase</a>
 - Robert Buels -
@@ -847,8 +847,6 @@ FASTA
   Download all CDS features of the gene FBgn0097591
 - http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591/SO:0000316.fasta -
   Download all CDS features of the gene FBgn0097591
-
-
 
 ##### FASTA Result:
 

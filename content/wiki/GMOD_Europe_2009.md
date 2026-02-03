@@ -17,5 +17,5 @@ data-cellpadding="10">
 
 We would like to thank the
 <a href="http://www.molbiol.ox.ac.uk/" class="external text"
-rel="nofollow">Computational Biology Research Group (CBRG)</a> of the
+
 University of Oxford for hosting and sponsoring this event.

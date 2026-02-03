@@ -111,8 +111,6 @@ genes[0].setUniqueName("x-file");
 sequenceDao.merge(genes[0]);
 ```
 
-
-
 ``` de1
 private Feature createExon(String name, Feature gene, int min, int max, Timestamp now, int rank) {
 

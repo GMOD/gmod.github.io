@@ -48,7 +48,6 @@ Which gets all of the prereqs that aren't installed on the machine.
 # Tutorial
 
 Go to <a href="http://localhost/gbrowse2" class="external free"
-rel="nofollow">http://localhost/gbrowse2</a>
 
 # Basic <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
@@ -58,8 +57,6 @@ installed when we created the image. Sample configuration files are
 available with GBrowse, and we'll get the sample Chado file:
 
      wget http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/contrib/conf_files/07.chado.conf -O pythium.conf
-
-
 
 Some simple tweaks and additions:
 
@@ -281,7 +278,7 @@ Bio::DB::Das::Chado:
 
 This does several things (including poorly estimating how long it will
 take to finish), including creating materialized views, using a tool
-provided by [SOL Genomics Network (SGN)](/wiki/Category%3ASGN).
+provided by .
 In practice, it would be a good idea to read the documentation of
 `gmod_materialized_view_tool.pl` for information on keeping the view up
 to date.

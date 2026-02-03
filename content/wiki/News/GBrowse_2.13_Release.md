@@ -66,11 +66,8 @@ class="external text" rel="nofollow">bugs</a> or <a
 href="https://sourceforge.net/tracker/?atid=391294&amp;group_id=27707&amp;func=browse"
 class="external text" rel="nofollow">feature requests</a>.
 
-[Lincoln Stein](../User%253ALstein)
-
-
+[Lincoln Stein](../User:Lstein)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/07/13*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

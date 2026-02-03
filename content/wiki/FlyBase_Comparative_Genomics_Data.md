@@ -24,7 +24,7 @@ The data implementation standard of comparative genomics in Chado is
 described in this document. The stated data implementation has been
 formulated by the developers at FlyBase
 (<a href="http://www.flybase.org" class="external free"
-rel="nofollow">http://www.flybase.org</a>) and adopted by FlyBase for
+
 production. For the purpose of clarity, pairwise comparative genomics
 results are being employed in this document as examples to illustrate
 the points. Yet the same implementation can be readily generalized and

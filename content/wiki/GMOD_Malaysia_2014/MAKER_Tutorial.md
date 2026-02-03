@@ -4,7 +4,7 @@ title: "GMOD Malaysia 2014/MAKER Tutorial"
 # GMOD Malaysia 2014/MAKER Tutorial
 
 This [MAKER](../MAKER.1) tutorial was presented by [Michael
-Campbell](../User%253AMichael_Campbell) at [GMOD
+Campbell](../User:Michael_Campbell) at [GMOD
 Malaysia 2014](../GMOD_Malaysia_2014.1), February
 2014. This tutorial requires MAKER version 2.x.
 
@@ -18,8 +18,6 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
-
-
 
   MAKER</span>](#About_MAKER)
 - [Introduction
@@ -212,7 +210,6 @@ Examples:
 
 <a href="../File:Structural.png" class="image"></a>
 
-
 To use this feature, you must have MPICH2 installed with the the
 `--enable-sharedlibs` flag set during installation (See MPICH2
 Installer's Guide). Or openmpi and allow shared libraries by adding a
@@ -231,7 +228,6 @@ Say Yes that we want to build for MPI support
 ``` enter
  ./Build install
 ```
-
 
 Set values in maker configuration files.
 
@@ -263,7 +259,6 @@ You should see the following.
     and then use an editor to insert a line like
      MPD_SECRETWORD=mr45-j9z
     into the file. (Of course use some other secret word than mr45-j9z.)
-
 
 Follow the instructions to set this file up, and start the mpi
 environment with `mpdboot`. Then run `maker` through the MPI manager
@@ -406,7 +401,6 @@ Scripts:
   TopHat into GFF3 format for use with MAKER.
      tophat2gff3 <junctions.bed>
 
-
-- [Tutorials](../Category%253ATutorials)
-- [GMOD Schools](../Category%253AGMOD_Schools)
-- [MAKER](../Category%253AMAKER)
+- [Tutorials](../Category:Tutorials)
+- [GMOD Schools](../Category:GMOD_Schools)
+- [MAKER](../Category:MAKER)

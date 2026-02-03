@@ -27,7 +27,7 @@ organism database for zebrafish. ZFIN supports
 
 ZFIN is located at the
 <a href="http://uoregon.edu/" class="external text"
-rel="nofollow">University of Oregon</a> in Eugene, Oregon. Eugene is a
+
 green community with short commutes, a laid back environment, and a low
 cost of living. The position provides excellent benefits and stable
 funding.
@@ -38,9 +38,6 @@ class="external text" rel="nofollow">full job posting</a> for duties and
 responsibilities, minimum and preferred qualifications, and how to
 apply.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/03/14*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

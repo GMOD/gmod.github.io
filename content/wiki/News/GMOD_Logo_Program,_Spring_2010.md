@@ -6,8 +6,6 @@ title: "News/GMOD Logo Program, Spring 2010"
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9d/Gmod_cog170.png" width="170"
 height="125" alt="The GMOD Logo" />](../GMOD_Logo_Program)
 
-
-
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fe/Lbcclogo.jpg" width="180"
 height="75" alt="GMOD Logo Program" />](../GMOD_Logo_Program)
 
@@ -29,12 +27,9 @@ applications until March 1.**
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/02/03*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

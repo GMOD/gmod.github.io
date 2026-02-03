@@ -10,17 +10,16 @@ Victor Strelets, FlyBase.org
 
 It is maintained by
 <a href="mailto:sheldon.mckay@gmail.com" class="external text"
-rel="nofollow">Sheldon McKay &lt;sheldon.mckay@gmail.com&gt;</a>
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/82/Topoview_sample.png/550px-Topoview_sample.png"
-class="thumbborder"
+
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/Topoview_sample.png 2x"
 width="550" height="194" alt="Sample topoview track" />
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/550px-Topoview_sample2.png"
-class="thumbborder"
+
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/98/Topoview_sample2.png/825px-Topoview_sample2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/98/Topoview_sample2.png 2x"
 width="550" height="163" alt="Sample topoview track" />
 
@@ -75,8 +74,6 @@ using the topoview track for RNASeq data at:
 
 GBrowse 2.56 with topoview track - ami-c2d677bf
 
-
-
 ## Data format
 
 Comparing performance (retrieval of several Kbp of data profiles for
@@ -90,7 +87,6 @@ of the most simple wiggle (coverage files) formats with the addition of
 some positioning data (two-column format, without runlength
 specification, without omission of zero values). This is the only format
 which glyph is able to handle.
-
 
     # subset =BS107_all_unique chromosome =2LHet
     -200000 0
@@ -118,7 +114,6 @@ calculate the average read coverage for a user-specified window size
 WIG/BED4, which is the format used by the coverage_to_topoview.pl
 script.
 
-
     Usage: bam_coverage_windows.pl -b bamfile -n 10_000_000 -w 25 | gzip -c > bamfile.wig.gz
         -b name of bam file to read REQUIRED
         -w window size (default 25)
@@ -126,7 +121,6 @@ script.
                                      select the read number to normalize against.
                                      All counts will be adjusted by a factor of:
                                      actual read count/normalized read count
-
 
 The output of this script looks like (note the
 <a href="http://genomewiki.ucsc.edu/index.php/Coordinate_Transforms"
@@ -155,7 +149,6 @@ average read count for all BAM files being analyzed in the experiment.
 coverage_to_topoview.pl converts a list of coverage files (WIG/BED4) to
 the indexed format used by this glyph. It specifically expects the BED4
 format produced by the bam_coverage_windows.pl script
-
 
     Usage: coverage_to_topoview.pl [-o output_dir] [-h] [-l] file1.wig.gz file2.wig.gz
         -o output directory (default 'topoview')
@@ -203,7 +196,6 @@ option below.
 ## Configuration
 
 ### Example config stanza
-
 
     [TOPOVIEWLOG2]
     feature       = region
@@ -258,13 +250,11 @@ There are three ways to represent the subsets:
 Ordered subsets with no color specified. Random colors will be assigned.
 Hope you are feeling lucky.
 
-
     subset order  = SRR1810778.25
                     ...
 
 Ordered subsets with color specified (use either web colors or hex
 colors with the '#' omitted)
-
 
     subset order  = SRR1810778.25  red
                     SRR1810779.25  FF6633
@@ -273,7 +263,6 @@ colors with the '#' omitted)
 Ordered subsets with color and opacity set. Not that the global 'fill
 opacity' option affects all subsets. Specifying individual opacity is
 optional.
-
 
     subset order  = SRR1810778.25  FF9966 0.8
                     SRR1810779.25  FF6633 0.7

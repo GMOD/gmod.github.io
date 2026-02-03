@@ -7,7 +7,7 @@ title: "XORT/tool data"
 dev = maintenance \| support = active \| type = Database tools,
 Middleware \| os = linux, unix \| logo = \| home =
 <a href="../XORT.1" class="external free"
-rel="nofollow">http://gmod.org/wiki/XORT</a> \| about = XORT is a
+
 utility written in Perl that can be used to read to and write from a
 [relational](../Glossary#Relational)
 [schema](../Glossary#Schema) using
@@ -28,8 +28,7 @@ database, we denote the corresponding XML "Chado XML."
 
 \| screenshot = \| public_server = \| dl = \| dl_url =
 <a href="http://sourceforge.net/projects/gmod/files/OldFiles/"
-class="external free"
-rel="nofollow">http://sourceforge.net/projects/gmod/files/OldFiles/</a>
+
 \| dl_src = \| dl_src_url = \| dl_dev = \| dl_dev_url = \|
 getting_started_preamble = \| req =
 
@@ -61,9 +60,9 @@ XORT; please direct queries to the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 helpdesk</a> or to the XORT developer
 <a href="mailto:zhou@morgan.harvard.edu" class="external text"
-rel="nofollow">Pinglei Zhou</a>. \| logo_info = \| dev_ppl =
+
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase at Harvard</a> \| dev_status = \| contact_email =
+
 zhou@morgan.harvard.edu \| formats = \| see_also =
 
 Note that [GMODTools](../GMODTools) offers an alternative
@@ -103,7 +102,7 @@ Status: Stable
 
 The
 <a href="http://www.berkeleybop.org/ontologies/" class="external text"
-rel="nofollow">OBO repository</a> is pre-converted to Chado-XML on a
+
 nightly basis.
 
 #### BioPerl
@@ -119,7 +118,7 @@ Status: ?
 #### Bio-Chaos
 
 The <a href="http://www.fruitfly.org/chaos-xml/" class="external text"
-rel="nofollow">bio-chaos</a> library reads and writes chaos-xml, which
+
 can be converted to and from chado
 
 Status: no longer supported

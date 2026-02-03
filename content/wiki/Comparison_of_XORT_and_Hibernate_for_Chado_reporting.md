@@ -8,15 +8,14 @@ that it is no longer relevant given the technological changes that have
 occurred with the databases and ORM technologies discussed herein. It is
 left here for historical purposes.</span>
 
-
 **Comparison of [XORT](/wiki/XORT.1) and
 <a href="http://www.hibernate.org/" class="external text"
-rel="nofollow">Hibernate</a> for Chado reporting** - written by Josh
+
 Goodman, FlyBase - Indiana University
 
 **Introduction**
 At <a href="http://flybase.org/" class="external text"
-rel="nofollow">FlyBase</a> we are currently in the process of migrating
+
 all our existing data into Chado. In order to deal with data in this new
 format we are re-vamping all of our report generation tools. The
 qualities we were looking for in a new reporting framework were a good
@@ -33,7 +32,7 @@ mature and stable object to relational mapping tools available. It is
 very well documented, maintained by a large community, and can mostly be
 tweaked through its XML files rather than modifying java code.
 <a href="http://ibatis.org/" class="external text"
-rel="nofollow">iBATIS</a> was also investigated but no formal tests were
+
 done with it, more on that later.
 
 In the end XORT proved to be the better choice, but only because it

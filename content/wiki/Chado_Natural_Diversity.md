@@ -12,8 +12,6 @@ Working Group** was established with the aim of getting the Chado
 Natural Diversity Module into the production version of
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-
-
   Discussion](#Discussion)
 - [History](#History)
   - [2007](#2007)
@@ -27,14 +25,12 @@ Natural Diversity Module into the production version of
 # Discussion
 
 See the [discussion
-page](/wiki/Talk%3AChado_Natural_Diversity_Module_Working_Group)
+page](/wiki/Talk:Chado_Natural_Diversity_Module_Working_Group)
 for notes on what we've talked about and where we are heading. Once the
 discussion settle, a summary of decisions will appear here.
 
 - See <a href="http://www.ncbi.nlm.nih.gov/pubmed/22120662"
   class="external text" rel="nofollow">the publication</a>.
-
-
 
 # History
 
@@ -48,10 +44,10 @@ The <a href="http://sourceforge.net/projects/heliconiusdb/develop"
 class="external text" rel="nofollow">initial version</a> of the Natural
 Diversity Module was developed by several people associated with
 <a href="http://nescent.org" class="external text"
-rel="nofollow">NESCent</a>. The initial application was *heliconius*
+
 research. This first version was directly inspired by the
 <a href="http://www.maizegenetics.net/gdpdm/" class="external text"
-rel="nofollow">Genomic Diversity and Phenotype Data Model (GDPDM)</a>,
+
 which comes out of Cornell. The GDPDM has great documentation and is
 also described in [this
 presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/GDPDM_GMOD_presentation20060630.ppt).
@@ -62,7 +58,6 @@ presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawi
   class="external text" rel="nofollow">beta natural diversity module</a>
   is in <a href="http://sourceforge.net/projects/heliconiusdb/develop"
   class="external text" rel="nofollow">Soureforge</a>.
-
 
 # Stock Relationship Ontology
 

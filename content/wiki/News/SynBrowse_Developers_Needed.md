@@ -25,16 +25,12 @@ If you have any interest in and/or experience with multiple alignment or
 synteny visualization tools please considering contributing to the
 SynBrowse project. Xiaokang can be reached at
 <a href="mailto:xiaokangpan@gmail.com" class="external text"
-rel="nofollow">xiaokangpan@gmail.com</a>.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/03/21*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

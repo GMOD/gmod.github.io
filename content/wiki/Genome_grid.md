@@ -48,17 +48,14 @@ class="external text" rel="nofollow">Google: genome teragrid</a>
 
 # Genome analysis and annotation via Grid computing
 
-This subproject builds re-usable tools and workflows for [genome
-analyses](/wiki/Category%3AAnalysis) and
-[annotation](/wiki/Category%3AAnnotation), using shared
+This subproject builds re-usable tools and workflows for  and
+, using shared
 cyberinfrastructure (Grids or clusters). Here within are collections of
 scripts, documents and workflows for employing existing genome analysis
 tools (BLAST, homology tools, predictors, comparative and phylogenetic
 analyses) on available cyberinfrastructure. One emphasis here is on
 simplified use of grids and genome tools, to make it feasible for new
 genome projects to take advantage of these readily.
-
-
 
 # Target customer and tasks
 
@@ -141,7 +138,6 @@ See starter project in
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/genogrid"
 class="external text" rel="nofollow">SourceForge</a> or in package form
 at <a href="http://eugenes.org/gmod/genogrid/" class="external text"
-rel="nofollow">euGenes</a>.
 
 This package includes scripts for genome data partitioning, running
 parallel genome analysis jobs and collating partial results. It is being
@@ -149,7 +145,7 @@ used successfully on TeraGrid clusters for analyzing several arthropod
 genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 "as-is" on computer clusters with PBS or LoadLeveler batch queues
 (TeraGrid is not required).
-[Dongilbert](/wiki/User%3ADongilbert) 19:56, 26 June 2008
+[Dongilbert](/wiki/User:Dongilbert) 19:56, 26 June 2008
 (EDT)
 
 # References
@@ -167,7 +163,7 @@ genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 
 # Contact
 
-[Don Gilbert](/wiki/User%3ADongilbert)
+[Don Gilbert](/wiki/User:Dongilbert)
 
 Support provided by a grant from <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0640462"

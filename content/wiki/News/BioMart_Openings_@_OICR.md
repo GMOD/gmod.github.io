@@ -8,8 +8,6 @@ rel="nofollow" title="4 openings at OICR"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/OICRlogo.png" width="158" height="53"
 alt="4 openings at OICR" /></a>
 
-
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/130px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/195px-Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
@@ -38,15 +36,12 @@ openings</a>:
 
 The [BioMart](../BioMart) biological data warehouse system is
 developed at <a href="http://www.oicr.on.ca/" class="external text"
-rel="nofollow">OICR</a>. Please see the job postings for additional
+
 details.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/09/12*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

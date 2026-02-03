@@ -10,14 +10,14 @@ width="250" height="46" alt="ImpactstoryLogo.png" /></a>
 
 The GMOD wiki now includes
 <a href="http://impactstory.org" class="external text"
-rel="nofollow">ImpactStory altmetrics</a> for publications cited in the
+
 page text. See the [Publications](../Publications) page
 for an example of ImpactStory altmetrics.
 
 For those unfamiliar with the term *altmetrics,* these are measures
 beyond simple paper citations. The
 <a href="http://altmetrics.org/manifesto/" class="external text"
-rel="nofollow">Altmetrics Manifesto</a> provides the following
+
 clarification:
 
 > Altmetrics expand our view of what impact looks like, but also of
@@ -32,15 +32,11 @@ clarification:
 > - Widespread self-publishing via blogging, microblogging, and comments
 >   or annotations on existing work.
 
-
 ImpactStory collates metrics from numerous online sources to give a more
 complete picture of how an article, data set, piece of software, or
 other research product is being used and discussed. More information is
 available on the <a href="http://impactstory.org/" class="external text"
-rel="nofollow">ImpactStory</a> website.
-
 
 We hope to add impact metrics for GMOD software soon.
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

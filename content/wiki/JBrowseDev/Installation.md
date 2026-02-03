@@ -22,7 +22,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 <a href="http://opensource.org/licenses/LGPL-3.0" class="external text"
-rel="nofollow">LGPL</a>,
+
 <a href="http://opensource.org/licenses/Artistic-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
@@ -90,7 +90,6 @@ requirements for the server.
   instance.
 
 Visit the <a href="http://jbrowse.org" class="external text"
-rel="nofollow">JBrowse website</a>.
 
 ### Screenshots
 
@@ -242,12 +241,11 @@ part of the JBrowse documentation
 
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/Exploring_structural_variation_in_the_tomato_clade_using_JBrowse.pdf"
-class="internal"
+
 title="Exploring structural variation in the tomato clade using JBrowse.pdf">Exploration
 of structural variation in the tomato clade using JBrowse</a>
 Tutorial explaining how to browse structural variants from the
 <a href="http://www.tomatogenome.net" class="external text"
-rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
 
 ### Presentations
 
@@ -277,7 +275,6 @@ rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
 Please direct questions and inquiries regarding JBrowse to the mailing
 lists below._Requests for help should be directed to
 <a href="mailto:gmod-ajax@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-ajax@lists.sourceforge.net</a>._
 
 |                                                                  | -------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------- |                                                    | Mailing List Link                                                | Description                                                             | Archive(s) | **JBrowse**                                        | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ajax" | class="external text" rel="nofollow">gmod-ajax</a> | **JBrowse** help and general questions.                          | <a href="http://gmod.827538.n3.nabble.com/JBrowse-Support-f815920.html" |
 
@@ -310,16 +307,16 @@ Public installations of JBrowse:
 ### Current status
 
 The <a href="http://github.com/GMOD/jbrowse" class="external text"
-rel="nofollow">JBrowse source code repository</a> is kept on GitHub.
+
 Please feel very free to fork the code on GitHub and make modifications
 and improvements, submitting pull requests. GitHub has a very nice
 <a href="http://help.github.com/fork-a-repo/" class="external text"
-rel="nofollow">tutorial</a> on how to get started with this style of
+
 development.
 
 ## More on JBrowse
 
-See [Category%253AJBrowse](../Category%253AJBrowse)
+See [Category:JBrowse](../Category:JBrowse)
 
 1.  <span id="cite_note-PMID:19570905-1"><span class="mw-cite-backlink">[↑](#cite_ref-PMID:19570905_1-0)</span>
     <span class="reference-text">\*JBrowse: a next-generation genome
@@ -336,41 +333,38 @@ See [Category%253AJBrowse](../Category%253AJBrowse)
 
 </span>
 
-[Available on platform](../Property%253AAvailable_on_platform)
+[Available on platform](../Property:Available_on_platform)
 
 web
 
-[Has URL](../Property%253AHas_URL)
+[Has URL](../Property:Has_URL)
 
 <a href="http://jbrowse.org/install/" class="external free"
-rel="nofollow">http://jbrowse.org/install/</a>
+
 ,
 <a href="http://jbrowse.org" class="external free"
-rel="nofollow">http://jbrowse.org</a>
+
 ,
 <a href="http://twitter.com/usejbrowse" class="external free"
-rel="nofollow">http://twitter.com/usejbrowse</a>
+
 ,
 <a href="http://github.com/GMOD/jbrowse" class="external free"
-rel="nofollow">http://github.com/GMOD/jbrowse</a>
+
 ,
 <a href="http://jbrowse.org/demos" class="external free"
-rel="nofollow">http://jbrowse.org/demos</a>
+
 ,
 <a href="http://icemangenome.net/%E2%80%8E" class="external free"
-rel="nofollow">http://icemangenome.net/%E2%80%8E</a>
+
 ,
 <a href="http://genomesunzipped.org/jbrowse" class="external free"
-rel="nofollow">http://genomesunzipped.org/jbrowse</a>
+
 ,
 <a href="http://beetlebase.org" class="external free"
-rel="nofollow">http://beetlebase.org</a>
 
 and <a href="http://www.medicinalgenomics.com/the-jane-ome/"
-class="external free"
-rel="nofollow">http://www.medicinalgenomics.com/the-jane-ome/</a>
 
-[Has description](../Property%253AHas_description)
+[Has description](../Property:Has_description)
 
 JBrowse is a genome browser with a fully d<span class="smw-highlighter"
 data-type="2" state="persistent"

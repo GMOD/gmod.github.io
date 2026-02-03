@@ -9,8 +9,6 @@ Tutorial](/wiki/MAKER_Tutorial)
 <a href="http://www.cafepress.com/+maker-genome-annotation+gifts"
 class="external text" rel="nofollow">Get MAKER Bling!</a>
 
-
-
   MAKER</span>](#About_MAKER)
 - [Introduction
   to Genome Annotation](#Introduction_to_Genome_Annotation)
@@ -197,15 +195,10 @@ Examples:
 Genome project from sequencing to experimental application of
 annotations
 
-
 Genome sequence itself is not very useful. The first question that
 occurs to most of us when a genome is sequenced is, "where are the
 genes?" To identify the genes we need to annotate the genome. And while
 most researchers probably don't give annotations a lot of thought, they
 use them everyday.
 
-
 Examples of Annotation Databases:
-
-- [GMOD Schools](/wiki/Category%3AGMOD_Schools)
-- [Tutorials](/wiki/Category%3ATutorials)

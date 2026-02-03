@@ -87,7 +87,7 @@ title: "Chado Mage Module"
 The Mage module is designed to store data from microarray experiments.
 It is based on the
 <a href="http://www.cbil.upenn.edu/RAD2/" class="external text"
-rel="nofollow">RAD database</a> but has been substantially modified to
+
 contain the necessary foreign keys and satisfy the [Chado naming
 conventions](/wiki/Chado_Manual#Chado_Naming_Conventions). The
 Mage module is compatible with the
@@ -126,12 +126,9 @@ key tables.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/41/Rad-query-1.png" width="1103" height="365"
 alt="Rad-query-1.png" />
 
-
 Red is for the *mage* tables, Yellow is for *companalysis* tables, Gray
 is for *organism* tables, Blue is for *sequence* tables, and Green is
 for the *cv* tables.
-
-
 
 ### Loading
 
@@ -174,7 +171,6 @@ The researcher would load the data into the database in this order:
     **10** (*element*) and pointing back to **9** (*quantification*)
     which ultimately links back to the sample. Experimental result data
     is stored here.
-
 
 You can store a boolean for 'expressed' or 'not expressed', or you could
 store the quantitative data and have some algorithm that determines from
@@ -230,8 +226,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: acquisition_relationship
 
 Multiple monochrome images may be merged to form a multi-color image.
@@ -250,8 +244,6 @@ acquisition_relationship Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: acquisitionprop
 
 Parameters associated with image acquisition.
@@ -267,8 +259,6 @@ Parameters associated with image acquisition.
 acquisitionprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: arraydesign
 
@@ -300,8 +290,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: arraydesignprop
 
 Extra array design properties that are not accounted for in arraydesign.
@@ -317,8 +305,6 @@ Extra array design properties that are not accounted for in arraydesign.
 arraydesignprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: assay
 
@@ -349,8 +335,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: assay_biomaterial
 
 A biomaterial can be hybridized many times (technical replicates), or
@@ -369,8 +353,6 @@ assay_biomaterial Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: assay_project
 
 Link assays to projects.
@@ -384,8 +366,6 @@ Link assays to projects.
 assay_project Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: assayprop
 
@@ -402,8 +382,6 @@ Extra assay properties that are not accounted for in assay.
 assayprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: biomaterial
 
@@ -432,8 +410,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: biomaterial_dbxref
 
 | F-Key | Name | Type | Description |
@@ -445,8 +421,6 @@ Tables referencing this one via Foreign Key Constraints:
 biomaterial_dbxref Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: biomaterial_relationship
 
@@ -463,8 +437,6 @@ treatments or material splits/merges, for instance.
 biomaterial_relationship Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: biomaterial_treatment
 
@@ -483,8 +455,6 @@ biomaterial_treatment Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: biomaterialprop
 
 Extra biomaterial properties that are not accounted for in biomaterial.
@@ -500,8 +470,6 @@ Extra biomaterial properties that are not accounted for in biomaterial.
 biomaterialprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: channel
 
@@ -523,8 +491,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: control
 
 | F-Key | Name | Type | Description |
@@ -540,8 +506,6 @@ Tables referencing this one via Foreign Key Constraints:
 control Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: element
 
@@ -563,8 +527,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: element_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
@@ -583,8 +545,6 @@ measurement, for instance.
 element_relationship Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: elementresult
 
@@ -607,8 +567,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: elementresult_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
@@ -628,8 +586,6 @@ elementresult_relationship Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: magedocumentation
 
 | F-Key | Name | Type | Description |
@@ -643,8 +599,6 @@ elementresult_relationship Structure
 magedocumentation Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: mageml
 
@@ -664,8 +618,6 @@ Tables referencing this one via Foreign Key Constraints:
 - [magedocumentation](/wiki/Chado_Tables#Table:_magedocumentation)
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: protocol
 
@@ -692,8 +644,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: protocolparam
 
 Parameters related to a protocol. For example, if the protocol is a
@@ -711,8 +661,6 @@ soak, this might include attributes of bath temperature and duration.
 protocolparam Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: quantification
 
@@ -738,8 +686,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: quantification_relationship
 
 There may be multiple rounds of quantification, this allows us to keep
@@ -755,8 +701,6 @@ an audit trail of what values went where.
 quantification_relationship Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: quantificationprop
 
@@ -775,8 +719,6 @@ quantificationprop Structure
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: study
 
 | F-Key | Name | Type | Description |
@@ -794,8 +736,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: study_assay
 
 | F-Key | Name | Type | Description |
@@ -807,8 +747,6 @@ Tables referencing this one via Foreign Key Constraints:
 study_assay Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: studydesign
 
@@ -825,8 +763,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: studydesignprop
 
 | F-Key | Name | Type | Description |
@@ -840,8 +776,6 @@ Tables referencing this one via Foreign Key Constraints:
 studydesignprop Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: studyfactor
 
@@ -859,8 +793,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: studyfactorvalue
 
 | F-Key | Name | Type | Description |
@@ -874,8 +806,6 @@ Tables referencing this one via Foreign Key Constraints:
 studyfactorvalue Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: treatment
 

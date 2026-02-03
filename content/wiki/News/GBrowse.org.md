@@ -8,10 +8,9 @@ title="GBrowse.org"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e4/GBrowseOrgOrig.png/80px-GBrowseOrgOrig.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/GBrowseOrgOrig.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/GBrowseOrgOrig.png 2x"
 width="80" height="80" alt="GBrowse.org" /></a> | <span class="plainlinks"><a href="http://www.gbrowse.org" class="external text"
-rel="nofollow">GBrowse.org</a></span> |
 
 <a href="http://www.gbrowse.org" class="external text"
-rel="nofollow">GBrowse.org</a> is a resource for using and setting up
+
 [GBrowse](../GBrowse.1) genome browsers. The site provides one
 location where biologists and bioinformaticians can find:
 
@@ -24,7 +23,7 @@ location where biologists and bioinformaticians can find:
     each annotated genome that does not have its own web site.
 
 <a href="http://www.gbrowse.org" class="external text"
-rel="nofollow">GBrowse.org</a> emphasizes the
+
 [GBrowse](../GBrowse.1) genome browser in its organization,
 but also links to sites that use other browser packages such as UCSC,
 Ensembl, and [JBrowse](../JBrowse.1).
@@ -41,13 +40,9 @@ Meeting](../August_2009_GMOD_Meeting#GBrowse.org).
 
 Ciao,
 
-[Alessandra Bilardi](../User%253ABilardi)
+[Alessandra Bilardi](../User:Bilardi)
 <a href="http://genomics.cribi.unipd.it/Main_Page" class="external text"
-rel="nofollow">CRIBI Genomics, University of Padua</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/11*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

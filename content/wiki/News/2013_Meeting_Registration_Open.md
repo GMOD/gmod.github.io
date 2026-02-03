@@ -10,7 +10,6 @@ width="150" height="150" alt="Gmod-2013-mtg-alt.png" /></a>
 
 Registration for the 2013 GMOD Community Meeting is now open at
 <a href="http://gmod2013.eventbrite.com/" class="external text"
-rel="nofollow">gmod2013.eventbrite.com</a>.
 
 Standard registration costs \$85 and is available until March 21st;
 after that, the price rises to \$100. Registration covers the cost of

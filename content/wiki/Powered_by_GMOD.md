@@ -31,14 +31,11 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/84/PoweredByGMOD.png/270px-PoweredByGMOD.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/84/PoweredByGMOD.png/360px-PoweredByGMOD.png 2x"
 width="180" height="85" alt="PoweredByGMOD.png" /> | 620 x 294 (click on image for full size) | Suitable for including on printed documents, or for generating custom icon sizes. If needed, the [GMOD Help Desk](/wiki/GMOD_Help_Desk) can create this image in widths up to about 1600 pixels. | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/PoweredByGMOD.xcf" class="internal"
 title="PoweredByGMOD.xcf">PoweredByGMOD.xcf</a> | 620 x 294 | The source <a href="http://www.gimp.org/" class="external text"
-rel="nofollow">GIMP</a> file that was used to produce these images. You will need this only if you want to change the layout. | <img
+
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/PoweredByGBrowseAnimalGenome.jpg"
 width="89" height="66" alt="PoweredByGBrowseAnimalGenome.jpg" /> | 89 x 66 | _Powered by [GBrowse](/wiki/GBrowse.1)_ logos created by Zhiliang Hu for <a href="http://animalgenome.org" class="external text"
-rel="nofollow">AnimalGenome.org</a>. | <img
+
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/PoweredByGBrowseAnimalGenome2.jpg"
 width="89" height="66" alt="PoweredByGBrowseAnimalGenome2.jpg" /> | ## See also
 
 - [GMOD Promotion](/wiki/GMOD_Promotion)
-- [GMOD Project
-  Logos](/wiki/Category%3AGMOD_Project_Logos)
-- [Logos and Icons](/wiki/Category%3ALogos_and_Icons)

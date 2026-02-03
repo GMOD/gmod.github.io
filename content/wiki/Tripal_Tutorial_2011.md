@@ -9,7 +9,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="250" height="75" alt="Tripal" />
 
 This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
-Ficklin](/wiki/User%3ASficklin) at the [2011 GMOD Spring
+Ficklin](/wiki/User:Sficklin) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), March 2011. The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
@@ -213,15 +213,12 @@ and existing sites. Features of Drupal
 - Easy to install and maintain
 
 Drupal website: <a href="http://www.drupal.org" class="external free"
-rel="nofollow">http://www.drupal.org</a>
 
 Drupal modules:
 <a href="http://www.drupal.org/project/modules" class="external free"
-rel="nofollow">http://www.drupal.org/project/modules</a>
 
 Drupal themes:
 <a href="http://www.drupal.org/project/themes" class="external free"
-rel="nofollow">http://www.drupal.org/project/themes</a>
 
 ### Chado
 
@@ -317,15 +314,12 @@ Applications:
 
 The Tripal Sourceforge home site where you can find everything about
 Tripal: <a href="http://tripal.sourceforge.net" class="external free"
-rel="nofollow">http://tripal.sourceforge.net</a>
 
 GMOD Tripal mailing lists:
 <a href="/wiki/GMOD_Mailing_Lists" class="external free"
-rel="nofollow">http://gmod.org/wiki/GMOD_Mailing_Lists</a>
 
 GMOD Tutorials from previous GMOD schools:
 <a href="/wiki/Tripal.1" class="external free"
-rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
 ### Contributing Organizations
 
@@ -608,7 +602,7 @@ exit
 
 Drupal can be freely downloaded from the
 <a href="http://www.drupal.org" class="external free"
-rel="nofollow">http://www.drupal.org</a> website. However, to save time,
+
 the file has been pre-downloaded onto the VMWare image. You can find the
 compressed package file here:
 
@@ -744,7 +738,6 @@ Locate the line `DirectoryIndex` and change it to mach the following:
 
 Navigate to the installation page of our new web site
 <a href="http://localhost/install.php" class="external free"
-rel="nofollow">http://localhost/install.php</a>
 
 ![Install1](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/800px-Install1.png)
 
@@ -1069,7 +1062,6 @@ This should unpack the theme for us. Now, navigate to **Administer** →
 
 The sky theme was obtained at this address:
 <a href="http://drupal.org/project/sky" class="external free"
-rel="nofollow">http://drupal.org/project/sky</a>
 
 ##### Blocks
 
@@ -1126,9 +1118,9 @@ The path for a page can be found in the address bar for the page. In
 Drupal pages of content are generally referred to as **nodes**. So, in
 the address bar for our home page you'll see the address is
 <a href="http://localhost/node/1" class="external free"
-rel="nofollow">http://localhost/node/1</a>. Our about page should be
+
 <a href="http://localhost/node/2" class="external free"
-rel="nofollow">http://localhost/node/2</a> (i.e the first and second
+
 pages we created).
 
 The path for each of these nodes is simply `node/1` and `node/2`.
@@ -1171,13 +1163,13 @@ this section.
 
 Since this is our about page, we simply want the URL to be
 <a href="http://localhost/about" class="external free"
-rel="nofollow">http://localhost/about</a>. To do this, just add the word
+
 **about** in the text box. You will now notice that the URL for this
 page is no longer
 <a href="http://localhost/node/2" class="external free"
-rel="nofollow">http://localhost/node/2</a> but now
+
 <a href="http://localhost/about" class="external free"
-rel="nofollow">http://localhost/about</a>. Although, both links will
+
 still get you to our About page.
 
 **_Exercise \#7_**
@@ -1239,8 +1231,7 @@ alt="Drosophila.png" />
 
 This image was taken from Wikimedia Commons
 (<a href="http://commons.wikimedia.org/wiki/File:Drosophila.png"
-class="external free"
-rel="nofollow">http://commons.wikimedia.org/wiki/File:Drosophila.png</a>).
+
 Right-click on this image and download it somewhere on your machine.
 Next, return to our Drupal theme configuration page and use the Logo
 file upload interface on the page to upload this file as our logo.
@@ -1418,7 +1409,6 @@ A nice database management tool is freely available for managing a
 PostgreSQL database. It is currently installed on the VMWare image and
 is accessible at this URL:
 <a href="http://localhost/phppgadmin/" class="external free"
-rel="nofollow">http://localhost/phppgadmin/</a>
 
 Let's look at our Chado and Drupal databases using phpPgAdmin by first
 logging in with the username **gmod** and password **gmodamericas2011**.
@@ -1651,8 +1641,6 @@ are missing content: the description and the organism image
 
 For the description add the following text (taken from wikipedia:
 <a href="http://en.wikipedia.org/wiki/Drosophila_melanogaster"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Drosophila_melanogaster</a>):
 
 "The genome of D. melanogaster (sequenced in 2000, and curated at the
 FlyBase database) contains four pairs of chromosomes: an X/Y pair, and
@@ -1862,8 +1850,3 @@ peptide information as well.
 
 To do this, we will load three FASTA files which you can download from
 these links:
-
-- [2011 Spring
-  Training](/wiki/Category%3A2011_Spring_Training)
-- [Tripal](/wiki/Category%3ATripal)
-- [Needs Editing](/wiki/Category%3ANeeds_Editing)

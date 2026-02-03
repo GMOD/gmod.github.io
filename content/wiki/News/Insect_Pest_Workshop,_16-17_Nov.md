@@ -11,7 +11,6 @@ width="400" height="43"
 alt="Information Systems for Insect Pests" /></a>
 
 <a href="http://colloque.inra.fr/isyip" class="external text"
-rel="nofollow">1st International Workshop</a>
 
 16-17th November 2009
 INRIA Rennes-Bretagne-Atlantique
@@ -53,9 +52,6 @@ class="external text" rel="nofollow">this website</a> and will be
 limited to 40 participants. A statement of interest is needed. A 10
 minute presentation may be asked.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/07/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

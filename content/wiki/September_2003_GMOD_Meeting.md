@@ -50,8 +50,6 @@ text of progress reports they submitted.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e8/Turnkey_sept_2003.ppt"
   class="internal" title="Turnkey sept 2003.ppt">Turnkey_sept_2003.ppt</a>
 
-
-
 ## Progress Report
 
 ### PubSearch Status Update
@@ -98,8 +96,6 @@ Please note that the full history of updates to Pathway Tools can be
 found at URL
 
 <a href="http://bioinformatics.ai.sri.com/ptools/release-notes.html"
-class="external free"
-rel="nofollow">http://bioinformatics.ai.sri.com/ptools/release-notes.html</a>
 
 Significant updates funded under this grant since the last report are as
 follows.

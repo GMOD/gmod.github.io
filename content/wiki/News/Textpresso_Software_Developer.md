@@ -13,7 +13,7 @@ height="62" alt="Textpresso is hiring" /></a>
 
 [Textpresso](../Textpresso)
 (<a href="http://www.textpresso.org" class="external free"
-rel="nofollow">http://www.textpresso.org</a>), a search engine for
+
 biomedical literature and text mining project, and a [GMOD
 Component](../GMOD_Components), is seeking candidates
 to fill the <a
@@ -38,9 +38,6 @@ Thanks and Happy Holidays,
 
 Hans-Michael Muller
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2012/12/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

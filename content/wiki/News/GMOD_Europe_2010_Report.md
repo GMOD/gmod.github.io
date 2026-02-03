@@ -78,9 +78,8 @@ participants on two topics of interest to the GMOD community:
 
 There is also a
 <a href="http://blog.openhelix.eu/?p=5551" class="external text"
-rel="nofollow">writeup of the satellites</a> by Mary Mangan on the
+
 <a href="http://blog.openhelix.eu/" class="external text"
-rel="nofollow">OpenHelix blog</a>.
 
 The week finished with a [BioMart
 Workshop](../BioMart_Workshop_-_GMOD_Europe_2010),
@@ -90,22 +89,19 @@ that was nearly sold out as well.
 
 Finally, I'd like to thank the
 <a href="http://www.ccbi.cam.ac.uk/" class="external text"
-rel="nofollow">Cambridge Computational Biology Institute</a> and the <a
+
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
 class="external text" rel="nofollow">School of Biological Sciences
 Bioinformatics Training Facility</a> for sponsoring and hosting the
 [GMOD Europe 2010](../GMOD_Europe_2010) events. I
 would also like to heap copious gratitude on Gos Micklem, Shelley
 Lawson, Dave Judge, Xose Fernandez, Syed Haider, and [Richard
-Smith](../User%253ARsmith) for their work on making this event
+Smith](../User:Rsmith) for their work on making this event
 happen.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/10/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

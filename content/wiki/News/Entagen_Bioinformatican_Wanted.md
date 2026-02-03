@@ -8,7 +8,7 @@ title: "News/Entagen Bioinformatican Wanted"
 Email info@entagen.com with CV if interested.
 
 Entagen (<a href="http://www.entagen.com" class="external free"
-rel="nofollow">http://www.entagen.com</a>) is a leading provider of
+
 specialized software platforms and custom software development services
 to biomedical research and development (R&D) organizations.
 
@@ -46,10 +46,7 @@ color, age, religion and/or national origin.
 **Note: Please re-apply if you sent an email to the info@entagen.com
 address. This address wasn't routing correctly.**
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2011/04/22,
 updated 2011/05/03*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

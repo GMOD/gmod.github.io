@@ -25,7 +25,6 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* name + contact details of the lead mentor, name + contact
     details of backup mentor.
 
-
 Here is a list of the proposed project ideas for 2018:
 
 - **Project Idea 1: Incorporating different database searching
@@ -57,8 +56,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Mentors:* Mentors: Anurag Priyam (anurag.priyam@qmul.ac.uk),
     Yannick Wurm (y.wurm@qmul.ac.uk)
 
-
-
 - **Project Idea 2: Reactome Javascript Widget for Pathway Browser**
   - *Brief explanation:* Reactome
     (<a href="https://reactome.org" class="external free"
@@ -89,8 +86,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Mentors:* Antonio Fabregat (fabregat@ebi.ac.uk), Konstantinos
     Sidiropoulos (ksidiro@ebi.ac.uk).
 
-
-
 - **Project Idea 3: Use Galaxy to run Reactome analysis and processes on
   genomic data**
   - *Brief explanation:* Reactome is a free, open-source, curated and
@@ -112,8 +107,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Skill level:* Medium
   - *Mentor:* Robin Haw (robin.haw@oicr.on.ca) and Joel Weiser
     (joel.weiser@oicr.on.ca).
-
-
 
 - **Project Idea 4: Participating Molecules Widget (Reactome)**
   - *Brief explanation:* Reactome
@@ -145,8 +138,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Mentors:* Antonio Fabregat (fabregat@ebi.ac.uk), Konstantinos
     Sidiropoulos (ksidiro@ebi.ac.uk).
 
-
-
 - **Project Idea 5: Community-driven curation (WormBase)**
   - *Brief explanation:* \[Risky/Exploratory\] - Scientific databases
     that curate the primary literature face an enormous challenge: the
@@ -170,8 +161,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Knowledge prerequisites:* Clojure, database
   - *Skill level:* Advanced
   - *Mentors:* Adam Wright, Sibyl Gao, Matt Russell
-
-
 
 - **Project Idea 6: Revision tracking curation database and tools
   (WormBase)**
@@ -200,8 +189,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Skill level:* Medium
   - *Mentors:* Adam Wright, Sibyl Gao, Matt Russell
 
-
-
 - **Project Idea 7: Multi-container cloud deployment (WormBase)**
   - *Brief explanation:* \[Infrastructure/Automation\] - Continuously
     deploying code and data is a long term goal of WormBase. Over the
@@ -219,8 +206,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Skill level:* Medium
   - *Mentors:* Adam Wright
 
-
-
 - **Project Idea 8: Improve search result relevance (WormBase)**
   - *Brief explanation:* \[Core development\] - An effective search is a
     critical tool for any large data repository. This project seeks to
@@ -235,8 +220,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Skill level:* Medium
   - *Mentors:* Sibyl Gao
 
-
-
 - **Project Idea 9: Navigating search with facets (WormBase)**
   - *Brief explanation:* \[Core/UI development\] - Finding meaningful
     results in biological data is rarely as simple as conducting a
@@ -249,8 +232,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Knowledge prerequisites:* Elasticsearch, JavaScript, d3.js
   - *Skill level:* Medium
   - *Mentors:* Sibyl Gao, Adam Wright
-
-
 
 - **Project Idea 10: User interface re-design and implementation
   (WormBase)**
@@ -271,8 +252,6 @@ Here is a list of the proposed project ideas for 2018:
   - *Knowledge prerequisites:* HTML, CSS, JavaScript
   - *Skill level:* Medium
   - *Mentors:* Sibyl Gao, Adam Wright
-
-
 
 - **Project Idea 11: CRAM support for
   [JBrowse](/wiki/JBrowse.1)/[Apollo](/wiki/Apollo.1)**

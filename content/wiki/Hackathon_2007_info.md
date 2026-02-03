@@ -132,7 +132,7 @@ Be aware that above driving directions for South and East travel take
 you through I-90/94. This stretch of interstate is currently undergoing
 major construction and you might encounter significant delays. See
 <a href="http://www.danryanexpressway.com/" class="external free"
-rel="nofollow">http://www.danryanexpressway.com/</a> for more
+
 information and suggested alternate routes.
 
 ### Public Transportation
@@ -229,8 +229,6 @@ More specific subgoals:
 All of this should be saved in the schema cvs, in the hackathon_2007
 directory:
 <a href="http://gmod.cvs.sourceforge.net/gmod/schema/hackathon_2007/"
-class="external free"
-rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/schema/hackathon_2007/</a>
 
 ## Possible Goals considered
 
@@ -241,9 +239,9 @@ possibilities. Please feel free to add more.
   (documentation, examples, tutorials, configuration files, installation
   procedures, etc)
 
-[Justin](/wiki/User%3AJustaddcoffee): I've written
+[Justin](/wiki/User:Justaddcoffee): I've written
 [Apollo-Chado Integration at BovineBase: Bugs and
-Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase%3A_Bugs_and_Suggestions)
+Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase__Bugs_and_Suggestions)
 containing a list of bugs and suggestions from our developers and
 [Apollo](/wiki/Apollo.1) users, compiled during our construction of a
 Chado\<-\>Apollo setup for the Bovine genome annotation effort.
@@ -284,7 +282,7 @@ coming:
   probably use that.)
 - Also in the vmware instance: ~~phpmyadmin, phppgadmin,~~ mediawiki all
   configured and ready to use.
-  [Scott](/wiki/User%3AScott) 20:46, 30 July 2007 (EDT): *I don't
+  [Scott](/wiki/User:Scott) 20:46, 30 July 2007 (EDT): *I don't
   think the admin stuff needs to be a priority*
 - A printer (maybe--do people use paper anymore?)
 - A computer projector

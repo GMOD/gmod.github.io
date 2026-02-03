@@ -33,13 +33,10 @@ user, and this position will work with the
 tools.
 
 See the <a href="http://jobs.stanford.edu" class="external text"
-rel="nofollow">Stanford jobs site</a> (search for posting <a
+
 href="http://recruit.trovix.com/jobhostmaster/jobhost/ViewJobPostDetails.do?action=viewDetails&amp;accountId=de85ad313f8598db1c42b567a3df24a00497ba22&amp;jobId=36125"
 class="external text" rel="nofollow">36125</a>) for more.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/20*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

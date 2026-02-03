@@ -14,9 +14,9 @@ class="external text" rel="nofollow">FlyBase has a single opening for a
 developer</a> to join the database team at Harvard University in
 Cambridge, Mass. The position consists of roles in two model organism
 database projects, <a href="http://vectorbase.org" class="external text"
-rel="nofollow">VectorBase</a> and
+
 <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a>, in the development and maintenance of
+
 production applications involving
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
 [Apollo](../Apollo.1), Ensembl, and
@@ -26,9 +26,6 @@ class="external text" rel="nofollow">job posting</a>.
 
 Dave Emmert
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/03/09*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

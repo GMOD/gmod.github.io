@@ -5,8 +5,7 @@ title: "JBrowse Configuration Guide"
 
 **This page has been replaced with this page (<a
 href="https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide"
-class="external free"
-rel="nofollow">https://github.com/GMOD/jbrowse/wiki/JBrowse_Configuration_Guide</a>)
+
 at github. Please don't edit this page as changes will be discarded.**
 
 This page provides a comprehensive reference guide for configuring
@@ -365,7 +364,6 @@ setup.sh is failing includes these
 If you need a web server you can add apache2 to the list
 
 1\. <a href="http://jbrowse.org/install/" class="external text"
-rel="nofollow">Download JBrowse</a> onto your web server.
 
 2\. Unpack JBrowse into a directory that is served by your web browser.
 On many systems, this defaults to `/var/www` or `/var/www/html` for
@@ -384,8 +382,7 @@ root or with `sudo`.
 
 4\. Visit <a
 href="http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox"
-class="external free"
-rel="nofollow">http://your.machine.address/jbrowse/index.html?data=sample_data/json/volvox</a>.
+
 If you can see the included Volvox example data, you are ready to
 configure JBrowse to show your own data! The
 <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
@@ -585,7 +582,7 @@ The exact interpretation of "reference sequence" will depend on how you
 are using JBrowse. For a model organism genome database, each reference
 sequence would typically represent a chromosome or a
 <a href="http://en.wikipedia.org/wiki/Contig" class="external text"
-rel="nofollow">contig</a>. Before any feature or image tracks can be
+
 displayed in JBrowse, the reference sequences must be defined using the
 prepare-refseqs.pl formatting tool.
 
@@ -1141,8 +1138,6 @@ PhantomJS
 The jbrowse-rasterize tool from cpgJBrowseToolkit provides a tool for
 automating puppeteer
 <a href="https://github.com/cancerit/cgpJBrowseToolkit/"
-class="external free"
-rel="nofollow">https://github.com/cancerit/cgpJBrowseToolkit/</a>
 
 A stripped down puppeteer example is as follows
 
@@ -1173,7 +1168,7 @@ screenshot.js
 
 Then you can run "node screenshot.js
 <a href="http://localhost/jbrowse/" class="external free"
-rel="nofollow">http://localhost/jbrowse/</a>" or other URL argument as
+
 needed. The third, fourth, fifth and sixth arguments are optional a)
 output filename b) output width c) output height and d) zoom factor to
 make it higher resolution
@@ -1184,5 +1179,4 @@ make it higher resolution
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
-
-- [JBrowse](../Category%253AJBrowse)
+- [JBrowse](../Category:JBrowse)

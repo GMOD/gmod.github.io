@@ -16,9 +16,9 @@ components, including
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>,
 [GMODWeb](../GMODWeb), [Apollo](../Apollo.1), and
 [GBrowse](../GBrowse.1). Please contact [Linda
-Sperling](../User%253ASperling)
+Sperling](../User:Sperling)
 \<<a href="mailto:linda.sperling@cgm.cnrs-gif.fr" class="external text"
-rel="nofollow">linda.sperling@cgm.cnrs-gif.fr</a>\> if you have
+
 questions about GMOD at ParameciumDB.
 
 This is the first of a series of articles on how different organizations
@@ -35,12 +35,9 @@ so.
 
 Thanks,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2008/03/18*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

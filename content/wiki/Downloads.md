@@ -51,7 +51,7 @@ class="external text" rel="nofollow">Download</a></td>
 <tr class="even">
 <td><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
 <td><p><a href="http://getgalaxy.org" class="external text"
-rel="nofollow">Download</a></p></td>
+
 </tr>
 <tr class="odd">
 <td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> and <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></td>
@@ -68,7 +68,7 @@ class="external text" rel="nofollow">Download</a></p></td>
 <tr class="odd">
 <td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
 <td><p><a href="http://jbrowse.org/install/" class="external text"
-rel="nofollow">Download</a></p></td>
+
 </tr>
 <tr class="even">
 <td><a href="/wiki/LuceGene" title="LuceGene">LuceGene</a></td>
@@ -87,7 +87,7 @@ class="external text" rel="nofollow">Download</a></p></td>
 Tools</a></td>
 <td><p><br />
 <a href="http://biocyc.org/download.shtml" class="external text"
-rel="nofollow">Download</a></p></td>
+
 </tr>
 <tr class="odd">
 <td><a href="/wiki/SOBA.1" title="SOBA">SOBA</a></td>
@@ -97,7 +97,7 @@ rel="nofollow">Download</a></p></td>
 <td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
 <td><p><br />
 <a href="http://tripal.info/download" class="external text"
-rel="nofollow">Download</a></p></td>
+
 </tr>
 <tr class="odd">
 <td><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></td>

@@ -21,11 +21,11 @@ Initially PubFetch will act as the interface between PubSearch and the
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed"
 class="external text" rel="nofollow">PubMed</a>\] and
 <a href="http://www.nal.usda.gov/ag98/" class="external text"
-rel="nofollow">Agricola</a> databases used by
+
 <a href="http://rgd.mcw.edu/" class="external text"
-rel="nofollow">RGD</a> and
+
 <a href="http://www.arabidopsis.org/" class="external text"
-rel="nofollow">TAIR</a>. A standard API and data format will be created
+
 to provide database queries and return results, popular existing formats
 and protocols will be used/supported wherever possible.
 
@@ -35,12 +35,10 @@ and protocols will be used/supported wherever possible.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Pubfetch_overview.jpg" width="496"
 height="370" alt="Pubfetch overview.jpg" />
 
-
 **Figure 1 - Overview diagram of PubFetch showing how the PubFetch
 module will provide a generic literature access interface to PubMed and
 Agricola which could be expanded to other literature sources as
 desired.**
-
 
 The codebase will be developed initially in perl by adapting existing
 RGD perl modules designed to retrieve data from PubMed in a standard XML
@@ -49,15 +47,12 @@ PubFetch module and appropriate database interface modules. Figure 2
 below is a schematic diagram of the existing RGD literature download
 modules.
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/Existing_PubMed_flow.jpg" width="400"
 height="197" alt="Existing PubMed flow.jpg" />
 
-
 **Figure 2- Current RGD literature download process showing perl modules
 used to interact with PubMed, create XML data and load into RGD.**
-
 
 The fundamental actions required of PubFetch are:
 
@@ -71,14 +66,12 @@ The fundamental actions required of PubFetch are:
   <a href="http://www.ncbi.nlm.nih.gov/pubmed/12345?dopt=Abstract"
   class="external mw-magiclink-pmid" rel="nofollow">PMID 12345</a>*)
 
-
-
 ### PubFetch as a BioMOBY webservice
 
 To provide generic access to PubFetch we intend to make the core
 functionality available as a webservice, following the
 <a href="http://www.biomoby.org/" class="external text"
-rel="nofollow">BioMOBY</a> service model. The two actions described
+
 above will be implemented as two classes of Web services, the first
 taking keywords and returning PubMed IDs (or other LitDb accession) ,
 the second taking LitDb accessions and returning the text information in
@@ -86,8 +79,6 @@ a simple, standardized XML format. We will endeavour to provide the data
 in existing formats (raw data from the LitDb, a BioPerl-compatible
 format, etc) in addition to a simple XML format that is not dependent on
 other codebases
-
-
 
 ## Downloads
 

@@ -3,8 +3,6 @@ title: "GMOD Evo Hackathon Proposal Supplemental Information"
 ---
 # GMOD Evo Hackathon Proposal Supplemental Information
 
-
-
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
 data-cellpadding="10">
 <colgroup>
@@ -25,11 +23,10 @@ width="200" height="200" alt="EvoHackathonLogo.png" />
 Evolutionary Biology Hackathon</a></strong><br />
 November 8-12, 2010<br />
 <a href="http://nescent.org/" class="external text"
-rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
+
 </tr>
 </tbody>
 </table>
-
 
 On this page you will find additional information related to the [GMOD
 Evo Hackathon
@@ -95,13 +92,11 @@ modified to recognize this data.
 
 [Tripal](/wiki/Tripal.1) is a
 <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a>-based web interface to Chado databases. It
+
 supports interfaces for several popular data types, but does not
 currently support phylogenies, phenotypes, expression, or natural
 diversity data. We could extend it to evolutionary data types as part of
 the hackathon.
-
-
 
 #### Support for pangenomes and core genomes
 
@@ -133,7 +128,7 @@ addition of new genomes or revision of the orthology analysis.
 The conservation track is a staple of the UCSC browser. Evofold
 predictions form another useful track. Tools like xrate
 (<a href="http://biowiki.org/XRATE" class="external free"
-rel="nofollow">http://biowiki.org/XRATE</a>) allow automation and
+
 generalization of these kinds of phylogenetic HMM or SCFG model.
 Development would focus on linking these into existing GMOD browsers
 (e.g. JBrowse).
@@ -224,8 +219,6 @@ at different levels: anatomy, genomics, expression patterns, gene
 regulatory networks and their architecture, and phenotypes. This
 objective, with the exception of gene regulatory networks, overlaps with
 several others.
-
-
 
 ### Tree / Graph Visualization
 

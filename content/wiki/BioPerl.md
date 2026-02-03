@@ -8,8 +8,8 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="BioPerl" /></a>
 
 <a href="http://www.bioperl.org/" class="external text"
-rel="nofollow">BioPerl</a> is a set of modules that support
-bioinformatics programming in [Perl](/wiki/Category%3APerl)
+
+bioinformatics programming in
 programs. BioPerl is used extensively by several GMOD components. You
 will need to install it before you can use those components.
 
@@ -17,7 +17,6 @@ This is a one page summary of BioPerl that introduces several high level
 concepts and some points that are specifically important for GMOD. If
 you have a detailed question about BioPerl, see the
 <a href="http://www.bioperl.org/" class="external text"
-rel="nofollow">BioPerl web site</a> for more.
 
   Frequently Given Answer in
   GMOD</span>](#The_Most_Frequently_Given_Answer_in_GMOD)
@@ -65,12 +64,12 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="60" height="60" alt="FLOSS Weekly BioPerl Podcast" /></a>
 
 A <a href="http://twit.tv/floss96" class="external text"
-rel="nofollow">podcast on the BioPerl project</a> is available at
+
 <a href="http://twit.tv/FLOSS" class="external text"
-rel="nofollow">FLOSS Weekly</a>. It's about an hour long and it's a good
+
 introduction to the **BioPerl** project. The podcast is an interview
-with BioPerl heavy hitters [Chris Fields](/wiki/User%3ACjfields)
-and [Jason Stajich](/wiki/User%3AStajich).
+with BioPerl heavy hitters [Chris Fields](/wiki/User:Cjfields)
+and [Jason Stajich](/wiki/User:Stajich).
 
 ### BioPerl Packages and bioperl-live
 
@@ -94,7 +93,7 @@ title="bp:Getting BioPerl">releases</a>.
 
 | Release | Description | Use in GMOD? |
 |----|----|----|
-| **Stable (<a href="http://search.cpan.org/~cjfields/BioPerl-1.6.1/" |  |  |
+
 class="external text" rel="nofollow">1.6.1</a>)** | *Stable* releases have gone through more testing than the other types of releases. The most recent stable release was 1.6.1 in September 2009. | Yes | **Developer** | There hasn't been a developer release since the 1.6.x releases started coming out. | N/A | **BioPerl-live** | *BioPerl-live* (and its cousins) is not a release *per se*, but is rather a copy of what is in BioPerl's Git repository for the **core** module on the day you get the files. This is the most up to date version of BioPerl you can get. You may need to use *BioPerl-live* if it has functionality you need that is not in the stable release. See BioPerl's <a href="http://www.bioperl.org/wiki/Using_Git" class="extiw"
 title="bp:Using Git">Using Git</a> and <a href="http://www.bioperl.org/wiki/Getting_BioPerl" class="extiw"
 title="bp:Getting BioPerl">Getting BioPerl</a> pages for how to get the latest copy of *BioPerl-live*. | Yes<sup>[\[1\]](#cite_note-1)</sup> |

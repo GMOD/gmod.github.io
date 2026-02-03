@@ -27,7 +27,7 @@ will be the guest speaker at the [GMOD
 Meeting](../September_2010_GMOD_Meeting).
 Jason will speak on *The
 <a href="http://www.openmicroscopy.org/" class="external text"
-rel="nofollow">Open Microscopy Environment</a>: Open Informatics for
+
 Biological Imaging*, a particularly timely topic as many researchers
 move into image intensive areas such as phenotypes and gene expression,
 and as high-throughput imaging platforms become available.
@@ -42,12 +42,9 @@ and [BioMart
 Workshop](../BioMart_Workshop_-_GMOD_Europe_2010)
 are **free**.
 
-[Scott Cain](../User%253AScott) and [Dave
-Clements](../User%253AClements)
-
-
+[Scott Cain](../User:Scott) and [Dave
+Clements](../User:Clements)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/08/25*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

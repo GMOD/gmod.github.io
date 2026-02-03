@@ -6,11 +6,8 @@ title: "News/August 2009 GMOD Meeting"
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b5/GMOD2009Europe170.png" width="170"
 height="145" alt="August 2009 GMOD Meeting" />](../August_2009_GMOD_Meeting)
 
-
-
 [Register for the August 2009 GMOD
 Meeting](../August_2009_GMOD_Meeting)
-
 
 The [next GMOD
 meeting](../August_2009_GMOD_Meeting) will be
@@ -40,12 +37,9 @@ Meeting](../August_2009_GMOD_Meeting) page.
 
 Please join us in Oxford this August,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/07/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

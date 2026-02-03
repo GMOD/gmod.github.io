@@ -64,8 +64,6 @@ version.
 
 <a
 href="http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000;l=Genes%1Elandmarks:overview%1EGenes:region%1Elandmarks:region;width=400;format=GD"
-class="external free"
-rel="nofollow">http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000;l=Genes%1Elandmarks:overview%1EGenes:region%1Elandmarks:region;width=400;format=GD</a>;
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/11/Gbrowse_img_example2.png"
@@ -76,15 +74,11 @@ alt="Gbrowse img example2.png" />
 
 <a
 href="http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000;l=Genes%1EDNA%1ERegulonDBtu%1ESigma70%1Elandmarks:overview%1EGenes:region%1Elandmarks:region;width=800;id=20736090abb824610d9d3bc89c8b4256;format=GD;keystyle=between;grid=1"
-class="external free"
-rel="nofollow">http://heptamer.tamu.edu/cgi-bin/gb2/gbrowse_img/MG1655/?name=NC_000913:3923000..3951000;l=Genes%1EDNA%1ERegulonDBtu%1ESigma70%1Elandmarks:overview%1EGenes:region%1Elandmarks:region;width=800;id=20736090abb824610d9d3bc89c8b4256;format=GD;keystyle=between;grid=1</a>
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/43/Gbrowse_img_example1.png"
 class="thumbborder" width="890" height="510"
 alt="Gbrowse img example1.png" />
-
-
 
 ### Listing Sources
 
@@ -253,8 +247,6 @@ embed
 Generate image and a corresponding HTML imagemap in a form suitable for
 embedding into a frame.
 
-
-
 format
 Specify the format for the image file. Either "GD" (the default) or
 "GD::SVG" for scalable vector graphics.
@@ -331,8 +323,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 class="thumbborder" width="872" height="314"
 alt="Gbrowse img location v1.jpg" />
 
-
-
 ### Gbrowse v2.x
 
 In version 2, the link to generate images has been moved to the file
@@ -342,8 +332,6 @@ menu:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/53/Gbrowse_img_location_v2.jpg"
 class="thumbborder" width="623" height="349"
 alt="Gbrowse img location v2.jpg" />
-
-
 
 ## Known Bugs
 

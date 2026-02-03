@@ -12,9 +12,9 @@ GMODWeb is a Web application that uses
 and modular schema for representing biological data. GMODWeb is based on
 [Turnkey](/wiki/Turnkey), a generic Web framework built on
 <a href="http://apache.org" class="external text"
-rel="nofollow">Apache</a>, mod_perl, and
+
 <a href="http://sqlfairy.sourceforge.net/" class="external text"
-rel="nofollow">SQLFairy</a>. GMODWeb takes a basic Turnkey site built
+
 with the Chado schema and adds to the default templates to create a
 custom look and feel for GMOD. This GMODWeb *skin* includes code to
 display information using a variety of GMOD applications, including
@@ -34,32 +34,26 @@ developers to work on the content of a website rather than the
 underlying architectural details. For more detailed information see the
 "About Turnkey" section of the
 <a href="http://genome.ucla.edu/turnkey/" class="external text"
-rel="nofollow">Turnkey home page</a>.
-
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1b/Turnkey.png" width="552" height="335"
 alt="Turnkey.png" />
 
-
-
 ## Installation
 
 For site administrators installing GMODWeb we recommend using the
 <a href="http://biopackages.net" class="external free"
-rel="nofollow">http://biopackages.net</a> RPM packages or
+
 [CVS](/wiki/Glossary#CVS) repository located at
 <a href="http://sourceforge.net/projects/turnkey" class="external free"
-rel="nofollow">http://sourceforge.net/projects/turnkey</a>.
 
 ## Documentation
 
 <a href="http://genomebiology.com/2008/9/6/R102" class="external text"
-rel="nofollow">GMODWeb: a web framework for the generic model organism
-database</a>,
-by Brian D O'Connor, Allen Day, [Scott Cain](/wiki/User%3AScott),
-Olivier Arnaiz, [Linda Sperling](/wiki/User%3ASperling) and
-[Lincoln D Stein](/wiki/User%3ALstein), Genome Biology 2008,
+
+by Brian D O'Connor, Allen Day, [Scott Cain](/wiki/User:Scott),
+Olivier Arnaiz, [Linda Sperling](/wiki/User:Sperling) and
+[Lincoln D Stein](/wiki/User:Lstein), Genome Biology 2008,
 9:R102. The publication describing GMODWeb
 
 [GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf)

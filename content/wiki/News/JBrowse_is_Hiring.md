@@ -13,11 +13,7 @@ open position in the core team. Accordingly, we are now hiring.
 
 Full details of the position can be found here:
 <a href="http://biowiki.org/JBrowseJob" class="external free"
-rel="nofollow">http://biowiki.org/JBrowseJob</a>
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2011/04/07*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

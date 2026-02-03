@@ -8,13 +8,12 @@ manage users, so that a user may save their session for use on multiple
 computers and associate files with one specific user. Users can sign up
 using a username, password and e-mail, or they can also associate their
 <a href="http://openid.net/" class="external text"
-rel="nofollow">OpenID</a> with a username. Currently, GBrowse supports
+
 <a href="http://www.sqlite.org/" class="external text"
-rel="nofollow">SQLite</a>, <a
+
 href="http://www.oracle.com/technology/products/berkeley-db/index.html"
 class="external text" rel="nofollow">Berkeley DB</a> and
 <a href="http://www.mysql.com/" class="external text"
-rel="nofollow">MySQL</a> as backends.
 
   Setup](#Setup)
   - [To use
@@ -45,7 +44,7 @@ class="external text" rel="nofollow">Net::SMTP</a> and
 <a href="http://search.cpan.org/~nanis/Crypt-SSLeay-0.58/lib/Net/SSL.pm"
 class="external text" rel="nofollow">Net::SSL</a> modules from
 <a href="http://search.cpan.org/" class="external text"
-rel="nofollow">CPAN</a>. OpenID login will also need the <a
+
 href="http://search.cpan.org/~mart/Net-OpenID-Consumer-1.03/lib/Net/OpenID/Consumer.pm"
 class="external text" rel="nofollow">Net::OpenID::Consumer</a> module -
 OpenID is optional in GBrowse 2.20 or later.

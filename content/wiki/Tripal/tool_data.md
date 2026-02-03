@@ -12,11 +12,11 @@ unix, win\|platform = linux, os x, unix, win\|platform = linux, os x,
 unix, win\|platform = linux, os x, unix, win \| platform = web \| logo =
 TripalLogo.jpg \| home =
 <a href="http://tripal.info/" class="external free"
-rel="nofollow">http://tripal.info/</a> \| about = Tripal is a web front
+
 end for <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 databases, based on the
 <a href="http://www.drupal.org" class="external text"
-rel="nofollow">Drupal</a> content management system. Tripal leverages
+
 many of the features of Drupal--ability to search and edit content,
 detail pages for different types of content, customizable page layouts,
 and so on--to provide users with an intuitive, flexible interface to a
@@ -54,10 +54,10 @@ Features and advantages of Tripal:
 
 What is tripal capable of? Checkout out the
 <a href="http://tripal.gmod.oicr.on.ca/1.1/" class="external text"
-rel="nofollow">Demo</a> instance \| screenshot = \| public_server = \|
+
 dl = \| dl_url =
 <a href="http://tripal.info/download" class="external free"
-rel="nofollow">http://tripal.info/download</a> \| dl_src = \| dl_src_url
+
 = \| dl_dev = The latest development version of Tripal is available from
 the Drupal.org git repositories. Currently Tripal is a sandbox project
 while it goes through the module application process. For more
@@ -80,7 +80,7 @@ repository</a>.
 \| dl_dev_url = \| getting_started_preamble = Full documentation on
 installing, configuring, and using Tripal is available from the
 <a href="http://tripal.info/documentation" class="external text"
-rel="nofollow">Tripal website</a>. \| req = \| install = \| config = \|
+
 doc =
 
 ### For Developers
@@ -91,8 +91,8 @@ with Chado, Tripal, and for constructing or editing custom templates for
 a custom look-and-feel. For more information, see the following links:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
-- [Tool data](../Category%253ATool_data)
+  Cloud](../Category:GMOD_in_the_Cloud)
+- [Tool data](../Category:Tool_data)
 - [GMOD
-  Components](../Category%253AGMOD_Components)
-- [Tripal](../Category%253ATripal)
+  Components](../Category:GMOD_Components)
+- [Tripal](../Category:Tripal)

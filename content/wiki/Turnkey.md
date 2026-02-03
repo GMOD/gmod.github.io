@@ -8,8 +8,6 @@ input and transforms it into a fully-functional and customizable
 website.
 
 <a href="http://turnkey.sf.net" class="external text"
-rel="nofollow">Turnkey Home Page</a>
-
 
 The Turnkey application was used to create [GMODWeb](/wiki/GMODWeb).
 An example of a [GMODWeb](/wiki/GMODWeb) site is

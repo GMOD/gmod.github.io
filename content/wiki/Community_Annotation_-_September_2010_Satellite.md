@@ -42,8 +42,6 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
 </tbody>
 </table>
 
-
-
   Participants](#Participants)
 - [Some
   Experiences](#Some_Experiences)
@@ -93,16 +91,16 @@ proposed by Kim Rutherford.
   rel="nofollow">T1DBase</a>
 - Gerd Anders, Max-Delbrueck-Centrum Berlin (MDC)
 - Jerven Bolleman, UniProt Swiss-Prot
-- [Scott Cain](/wiki/User%3AScott), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca" class="external text"
   rel="nofollow">OICR</a>
-- [Dave Clements](/wiki/User%3AClements), [GMOD Help
+- [Dave Clements](/wiki/User:Clements), [GMOD Help
   Desk](/wiki/GMOD_Help_Desk),
   <a href="http://nescent.org" class="external text"
   rel="nofollow">NESCent</a>
 - Oskana Riba Grognuz, Swiss Institute of Bioinformatics (SIB)
   Department of Ecology and Evolution, University of Lausanne
-- [Chris Hemmerich](/wiki/User%3AChemmeri),
+- [Chris Hemmerich](/wiki/User:Chemmeri),
   <a href="http://cgb.indiana.edu" class="external text"
   rel="nofollow">CGB, Indiana University</a>
 - Joan Pontius, National Cancer Institute, SAIC
@@ -115,7 +113,7 @@ proposed by Kim Rutherford.
 ### PomBase
 
 Val Wood at <a href="http://www.pombase.org/" class="external text"
-rel="nofollow">PomBase</a> sent out a GO curation request in a Microsoft
+
 Word document to 80-90 authors of recent *S. pombe* papers. Val is well
 known in the community and asked the authors to provide GO annotation
 for their papers. PomBase got an 80% response rate. The annotations were
@@ -157,7 +155,7 @@ older publications. ZFIN has had success with teams of community experts
 assisting in the development of the zebrafish anatomical ontology. In
 recent years, ZFIN, like many MODs, has added a
 <a href="https://wiki.zfin.org/" class="external text"
-rel="nofollow">community wiki</a>. They are specifically encouraging
+
 community members to add
 <a href="https://wiki.zfin.org/display/prot/ZFIN+Protocol+Wiki"
 class="external text" rel="nofollow">protocols</a> and
@@ -176,7 +174,7 @@ any submissions with this tool to date.
 ### MGI and EMAGE
 
 Both <a href="http://www.informatics.jax.org/" class="external text"
-rel="nofollow">MGI</a>, the mouse MOD, and
+
 <a href="http://www.emouseatlas.org/emage/home.php"
 class="external text" rel="nofollow">EMAGE</a>, the Edinburgh Mouse
 Atlas of Gene Expression launched tools aimed at helping mouse
@@ -214,7 +212,7 @@ The <a href="http://ecoliwiki.net/colipedia/index.php/cacao"
 class="external text" rel="nofollow">CACAO project at Texas A&amp;M</a>
 teaches GO annotation to undergraduates and then adds the resulting
 annotations to <a href="http://ecoliwiki.net" class="external text"
-rel="nofollow">EcoliWiki</a>. This program has produced a relatively
+
 large volume of quality annotation by using several techniques to
 specifically encourage this. Students are divided into teams that
 compete with each other for points based on the quantity and quality of
@@ -240,7 +238,7 @@ submission to GenBank.
 ### EcoliWiki
 
 <a href="http://ecoliwiki.org" class="external text"
-rel="nofollow">EcoliWiki</a> is a recent effort that aggressively
+
 encourages community annotation. EcoliWiki is built on the widely used
 MediaWiki package (MediaWiki powers Wikipedia.org) and exposes all it's
 annotation to being updated and expanded by anyone with a login.
@@ -274,10 +272,10 @@ GMOD.org - All edits welcome, but you'll be watched.
 Must have a login to edit, but anyone can create a login. Edits are
 loosely watched by GMOD staff.
 <a href="http://ecoliwiki.net" class="external text"
-rel="nofollow">EcoliWiki</a> - Vampire!
+
 Logins given to trusted community members. Anyone with an existing login
 can create a login for someone else. Editors have full update access.
-[SGN](/wiki/Category%3ASGN) - Locus boss!
+ - Locus boss!
 SGN locus pages list the set of community members who can update
 information about that locus. Every locus page includes "Request editor
 privileges" link. This model allows specific people to control and "own"

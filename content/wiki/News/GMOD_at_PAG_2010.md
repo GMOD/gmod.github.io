@@ -52,12 +52,12 @@ height="107" alt="GMOD @ PAG" />](../PAG_2010)
   Online Genomic Databases</a>, Wednesday
 
 Many GMOD staff and developers ([Scott
-Cain](../User%253AScott), [Dave
-Clements](../User%253AClements), [Stephen
-Ficklin](../User%253ASficklin), [Carson
-Holt](../User%253ACarsonholt), [Sheldon
-McKay](../User%253AMckays), Anton Nekrutenko, [Mitch
-Skinner](../User%253AMitchSkinner), Ken Youens-Clark)
+Cain](../User:Scott), [Dave
+Clements](../User:Clements), [Stephen
+Ficklin](../User:Sficklin), [Carson
+Holt](../User:Carsonholt), [Sheldon
+McKay](../User:Mckays), Anton Nekrutenko, [Mitch
+Skinner](../User:MitchSkinner), Ken Youens-Clark)
 and even more GMOD users will be at PAG. If you are attending please
 keep an eye open for us.
 
@@ -72,12 +72,9 @@ GMOD Meeting.
 
 See you in San Diego,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

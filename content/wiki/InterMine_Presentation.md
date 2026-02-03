@@ -39,9 +39,8 @@ class="internal" title="InterMine middleware.pdf">Gos's presentation</a>
 #### Background
 
 <a href="http://www.intermine.org" class="external text"
-rel="nofollow">InterMine</a> was developed as the generic underpinnings
+
 of the <a href="http://www.flymine.org" class="external text"
-rel="nofollow">FlyMine Project</a>
 
 - Team of 7 FTE
   - 5 developers, one sys admin,

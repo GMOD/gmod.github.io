@@ -9,9 +9,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="WebGBrowse at the Center for Genomics and Bioinformatics" /></a>
 
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
-rel="nofollow">WebGBrowse 2.0</a> is now available at
+
 <a href="http://webgbrowse.cgb.indiana.edu" class="external free"
-rel="nofollow">http://webgbrowse.cgb.indiana.edu</a>. Here is some of
+
 *what's new* in WebGBrowse 2.0:
 
 - <a href="http://webgbrowse.cgb.indiana.edu/" class="external text"
@@ -38,9 +38,6 @@ Ram Podicheti
 rel="nofollow">Center for Genomics and Bioinformatics<br />
 Indiana University</a>
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/01/25*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

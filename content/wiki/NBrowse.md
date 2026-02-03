@@ -63,22 +63,19 @@ to store interactions in chado. N-Browse version 2 currently supports
 MySQL databases and is integrated with the modMine database web service
 \[link
 <a href="http://intermine.modencode.org/query/" class="external text"
-rel="nofollow">modMine: search, mine and download data from the
-modENCODE project (www.modencode.org)</a> \]. N-Browse 2 communicates
+
 with MySQL databases directly via direct JDBC and can also use
 <a href="http://vjdbc.sourceforge.net/" class="external text"
-rel="nofollow">vjdbc</a> to connect to databases via http.
 
 N-Browse version 2 can save/export data in a variety of formats. Please
 visit <a href="http://www.gnetbrowse.org" class="external text"
-rel="nofollow">N-Browse</a> for more information.
 
 ## Internet Resources
 
 ### N-Browse
 
 The main <a href="http://www.gnetbrowse.org" class="external text"
-rel="nofollow">N-Browse website</a>, is the where N-Browse can be
+
 accessed, along with documentation. The NYU database (accessed from the
 main web site and is the default database) currently provides access to
 heterogenous functional data in *E. coli*, *C. elegans*, *D.
@@ -86,15 +83,15 @@ melanogaster*, and *H. sapiens* (see the website for details on
 available datasets).
 
 <a href="http://www.wormbase.org" class="external text"
-rel="nofollow">WormBase</a> and
+
 <a href="http://www.arabidopsis.org/" class="external text"
-rel="nofollow">TAIR</a> currently use N-Browse as a graphical interface
+
 to molecular interaction data that they provide. Links to the N-Browse
 GUI at WormBase are available on the Gene Summary pages. TAIR's N-Browse
 search page can be accessed via the Tools menu on the TAIR home page.
 The
 <a href="http://intermine.modencode.org/query/" class="external text"
-rel="nofollow">modMine database web service</a> will be providing links
+
 to N-Browse in their next release.
 
 ### N-Browse Version 2 Launch
@@ -109,7 +106,6 @@ Or:
 
 Launch directly from the
 <a href="http://www.gnetbrowse.org" class="external text"
-rel="nofollow">N-Browse Home Page</a>
 
 ## Documentation
 
@@ -117,9 +113,8 @@ rel="nofollow">N-Browse Home Page</a>
 
 No longer available and supported from the
 <a href="http://www.gnetbrowse.org" class="external text"
-rel="nofollow">N-Browse web site</a> - source code can be found on
+
 <a href="http://sourceforge.net/projects/nbrowse/" class="external text"
-rel="nofollow">sourceforge N-Browse Version 1 repository</a>
 
 ### N-Browse Version 2
 
@@ -127,7 +122,6 @@ rel="nofollow">sourceforge N-Browse Version 1 repository</a>
 class="external text" rel="nofollow">N-Browse_tutorial</a>
 
 <a href="http://www.gnetbrowse.org/info.html" class="external text"
-rel="nofollow">N-Browse_system_requirement</a>
 
 ## Downloads
 
@@ -161,11 +155,10 @@ class="external text" rel="nofollow">N-Browse Code</a>
 
 1\. Download and install the required software
 (<a href="http://tomcat.apache.org/" class="external text"
-rel="nofollow">Tomcat</a>,
+
 <a href="http://www.perl.org" class="external text"
-rel="nofollow">Perl</a>,and
+
 <a href="http://www.mysql.com/" class="external text"
-rel="nofollow">MySQL</a>).
 
 2\. Download the N-Browse installation package from the
 <a href="http://sourceforge.net/project/showfiles.php?group_id=203428"
@@ -214,7 +207,7 @@ directory for more information.
 
 Please send questions to the
 <a href="mailto:admin@gnetbrowse.org" class="external text"
-rel="nofollow">N-Browse_admin</a>. This is the product of Kris Gunsalus'
+
 (kcg1@nyu.edu) lab at NYU. Huey-Ling Kao developed N-Browse Version 1.
 N-Browse Version 2 was initially developed by Victor Chest and by Mark
 Gibson. It is currently being developed by Monty Schulman.

@@ -11,13 +11,13 @@ width="200" height="79" alt="BioMart Ruby API" /></a>
 
 Daz Oakley of the Wellcome Trust Sanger Institute has released a
 <a href="http://github.com/dazoakley/biomart/" class="external text"
-rel="nofollow">Ruby library/API</a> for [BioMart](../BioMart).
+
 Daz says "It's quite basic for the moment and only does single dataset
 queries, but it will be quite easy to build upon the base from here."
 
 The source is
 <a href="http://github.com/dazoakley/biomart" class="external text"
-rel="nofollow">available from GitHub</a>, and the documentation is at
+
 <a href="http://rdoc.info/projects/dazoakley/biomart"
 class="external text" rel="nofollow">rdoc.info</a>.
 
@@ -25,22 +25,18 @@ The Ruby API is the latest addition to a growing list of third party
 software that supports [BioMart](../BioMart). This list
 includes [Galaxy](../Galaxy.1),
 <a href="http://www.bioclipse.net/" class="external text"
-rel="nofollow">Bioclipse</a>, <a
+
 href="http://bioconductor.org/packages/release/bioc/html/biomaRt.html"
 class="external text" rel="nofollow">biomaRt-BioConductor</a>,
 <a href="http://www.cytoscape.org/" class="external text"
-rel="nofollow">Cytoscape</a>,
+
 <a href="http://www.mygrid.org.uk/" class="external text"
-rel="nofollow">Taverna</a>, and
+
 <a href="http://weblab.cbi.pku.edu.cn/" class="external text"
-rel="nofollow">WebLab</a>
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/08*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

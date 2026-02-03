@@ -3,8 +3,6 @@ title: "News/GMOD Paper Cuts, Nov 15th, 2013"
 ---
 # News/GMOD Paper Cuts, Nov 15th, 2013
 
-
-
 **GMOD Paper Cuts is a periodic selection of choice cuts from the
 scientific literature featuring interesting, exciting, or otherwise
 eye-catching GMOD-related work.**
@@ -20,7 +18,6 @@ GMOD-related publications,
 <a href="http://mnd.ly/WwRe8F" class="external text" rel="nofollow">join
 our Mendeley group</a>.
 
-
 **The Aspergillus genome database: multispecies curation and
 incorporation of RNA-Seq data to improve structural gene annotations**
 <sup>[\[1\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1029-1)</sup>
@@ -34,7 +31,6 @@ incorporation of RNA-Seq data to improve structural gene annotations**
 A redesigned website and expanded resources for AspGD, which is now
 using [JBrowse](../JBrowse.1) as primary genome browser.
 
-
 **CottonGen: a genomics, genetics and breeding database for cotton
 research** <sup>[\[2\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1064-2)</sup>
 
@@ -45,12 +41,11 @@ research** <sup>[\[2\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1064-2)</sup>
 
 An update on the
 <a href="http://www.cottongen.org" class="external text"
-rel="nofollow">CottonGen database</a>, which uses the
+
 [Tripal](../Tripal.1) framework to make available data from a
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> database,
 and to integrate the GMOD tools [GBrowse](../GBrowse.1) and
 [CMap](../CMap.1).
-
 
 **WormBase 2014: new views of curated biology**
 <sup>[\[3\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1063-3)</sup>
@@ -64,7 +59,6 @@ only for developing and using a number of GMOD tools, including
 [GBrowse](../GBrowse.1) and
 [Textpresso](../Textpresso), but also for being hosted
 entirely in the cloud.
-
 
 **Gleaning evolutionary insights from the genome sequence of a probiotic
 yeast Saccharomyces boulardii.**
@@ -80,7 +74,6 @@ yeast Saccharomyces boulardii.**
 The newly-sequenced *Saccharomyces boulardii* genome, which was
 annotated with using [MAKER](../MAKER.1).
 
-
 **DOOR 2.0: presenting operons and their functions through dynamic and
 integrated views**
 <sup>[\[5\]](#cite_note-DOI:10.1093.2Fnar.2Fgkt1048-5)</sup>
@@ -95,24 +88,19 @@ integrated views**
 
 A bright, lively update to the
 <a href="http://csbl.bmb.uga.edu/DOOR/" class="external text"
-rel="nofollow">Database of prokaryotic operons</a>, which uses
-[JBrowse](../JBrowse.1) for sequence visualization.
 
+[JBrowse](../JBrowse.1) for sequence visualization.
 
 And finally, if you have access to the Wiley Online Library through your
 institution, you may like to check out \[<a
 href="http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi0915s43/abstract"
-class="external free"
-rel="nofollow">http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi0915s43/abstract</a>
+
 Cloud Computing with iPlant Atmosphere\], from Current Protocols in
 Bioinformatics, which details the resources available on the
 \[www.iplantcollaborative.org/‎ iPlant website\] and how to get started
 with tools such as [GBrowse](../GBrowse.1).
 
-
 Happy reading!
-
-
 
 1.  <span id="cite_note-DOI:10.1093.2Fnar.2Fgkt1029"><span class="mw-cite-backlink">[↑](#cite_ref-DOI:10.1093.2Fnar.2Fgkt1029_0)</span>
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
@@ -134,7 +122,5 @@ Disclaimer: the papers included in this feature are for your
 entertainment and edification only. Inclusion does not imply an
 endorsement of the material or any association between the authors and
 the GMOD project.
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2013/11/15*

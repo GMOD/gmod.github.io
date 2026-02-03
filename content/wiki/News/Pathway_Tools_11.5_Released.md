@@ -22,9 +22,6 @@ details.
 symbolic systems biology software package that supports several use
 cases in bioinformatics and systems biology.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2007/08/15*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

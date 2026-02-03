@@ -21,9 +21,6 @@ The Installation tutorial is still under development but should have
 enough information for complete installation of Tripal v2.0a as well as
 loading of organisms and features.
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2014/02/27*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

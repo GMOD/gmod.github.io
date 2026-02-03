@@ -19,16 +19,13 @@ create new views (e.g creating new glyphs and modifying existing glyphs
 as per user needs) is highly preferred. We have started the interview
 process. Please email your resume ASAP to Navin Elango
 (<a href="mailto:nelango@dow.com" class="external text"
-rel="nofollow">nelango@dow.com</a>). For more information about Dow
+
 AgroSciences, please visit our
 <a href="http://www.dowagro.com/homepage/index.htm"
 class="external text" rel="nofollow">website</a>
 
 Navin Elango
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2010/03/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

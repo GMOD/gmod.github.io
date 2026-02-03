@@ -9,7 +9,6 @@ a feel for the structure of the program so they can become more
 comfortable adding features to it or modifying it for their own needs.
 Help is always available via the
 <a href="/wiki/GMOD_Mailing_Lists#GMOD_Components" class="external text"
-rel="nofollow">mailing list</a>, or on other sections of the GMOD wiki.
 
   Structure</span>](#Program_Structure)
   - [The AJAX
@@ -30,7 +29,7 @@ Perl backend.
 
 The backend is built as a series of modules in the
 <a href="http://search.cpan.org/dist/GBrowse/" class="external text"
-rel="nofollow">Bio::Graphics::Browser2 package</a>, it acts as a
+
 convenient, graphical, front-end to using the
 <a href="http://search.cpan.org/dist/Bio-Graphics/"
 class="external text" rel="nofollow">Bio::Graphics</a> library.
@@ -46,7 +45,7 @@ The frontend is a set of Javascript and CSS files which determine the
 look and feel, as well as the control events, of the GUI. The main HTML
 is rendered through the Perl
 <a href="http://search.cpan.org/dist/CGI.pm/" class="external text"
-rel="nofollow">CGI</a> module and simply returned as the HTTP request;
+
 there's no formal HTML file that determines the markup. Each section of
 HTML has a subroutine in Render\HTML.pm that will generate it.
 

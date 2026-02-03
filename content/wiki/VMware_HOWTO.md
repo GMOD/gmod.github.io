@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="26" alt="VMware" /></a>
 
 <a href="http://vmware.com" class="external text"
-rel="nofollow">VMware</a> images containing GMOD software let you try
+
 GMOD software without installing it on your local machine. Instead, the
 software runs inside a virtual machine on your computer.
 
@@ -17,10 +17,8 @@ VMware images are used in several places in GMOD:
 - The [Community Annotation
   System](/wiki/Community_Annotation_System) is
   packaged as a VMware image.
-- Many GMOD [tutorials](/wiki/Category%3ATutorials) use
+- Many GMOD  use
   VMware images as starting points.
-
-
 
   Players</span>](#VMware_Players)
 - [Getting the
@@ -47,16 +45,13 @@ height="48" alt="Windoze" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
 
-A free VMware player is available for [Microsoft
-Windows](/wiki/Category%3AWindows) and
-[Linux](/wiki/Category%3ALinux) [operating
+A free VMware player is available for  and
+ [operating
 systems](/wiki/Glossary#Operating_System) from
 <a href="http://vmware.com/products/player/" class="external text"
-rel="nofollow">VMware</a>. You will need to register to download it.
+
 There are multiple versions. Be sure to download a version that can run
 on your laptop.
-
-
 
 VMware on Mac OS X
 
@@ -66,11 +61,8 @@ alt="Apple" /></a>
 
 Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
-There is no free VMware player that runs *directly* under [Mac OS
-X](/wiki/Category%3AMac_OS_X). However, there are several
+There is no free VMware player that runs *directly* under . However, there are several
 other options, **all of which require an Intel Mac**:
-
-
 
 VMware Fusion
 
@@ -79,16 +71,14 @@ title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/m
 width="48" height="48" alt="Fusion" /></a>
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
-rel="nofollow">VMware Fusion</a>
+
 (<a href="http://www.vmware.com/a/buylink/10" class="external text"
-rel="nofollow">$80/corporate</a>,
+
 <a href="http://www.vmware.com/vmwarestore/academicstore.html"
 class="external text" rel="nofollow">$40/Academic</a>) allows you to run
 VMware images (as well as Windows and Linux) under Mac OS. **We
 recommend this option for Mac users. There is a fully functional, 30 day
 free trial version of VMware Fusion available for download.**
-
-
 
 VirtualBox
 
@@ -97,7 +87,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VirtualBox" />
 
 <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
-rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel
+
 Macs (and Windows, Linux and Solaris too). It claims to be capable of
 running VMware images, *but we have not tested this with our images.*
 
@@ -156,7 +146,7 @@ machine by typing
 
 You can also go to the web server running on this server by going to
 <a href="http://172.16.244.128" class="external free"
-rel="nofollow">http://172.16.244.128</a> (for example). If you are on
+
 Windows and would like to do this, you can get <a
 href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html"
 class="external text" rel="nofollow">putty</a>, which is a free ssh
@@ -165,10 +155,9 @@ client for windows.
 # Fluxbox
 
 The images from most 2009
-[Tutorial](/wiki/Category%3ATutorials) pages include a
+ pages include a
 basic *[graphical user interface](/wiki/Glossary#GUI)* called
 *<a href="http://fluxbox.org/" class="external text"
-rel="nofollow">Fluxbox</a>*. Fluxbox is a minimal GUI.
 
 If you want to use a graphical user interface on these images, using a
 browser and terminal inside the VMware image, you can start X11/Fluxbox

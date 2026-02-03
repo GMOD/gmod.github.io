@@ -85,75 +85,52 @@ means that testing of one set of particular decisions might not have
 exercised another. Coverage tools assist one in determining how much of
 the system is actually being exercised. (Code coverage Clover \[13\]).
 
-
 **References**
 
 <a href="http://www.internetnews.com/ent-news/article.php/1450161"
-class="external free"
-rel="nofollow">http://www.internetnews.com/ent-news/article.php/1450161</a>
 
 \[2\] <a href="http://www.esa.int/esaCP/Pr_33_1996_p_EN.html"
-class="external free"
-rel="nofollow">http://www.esa.int/esaCP/Pr_33_1996_p_EN.html</a>
 
 <a href="http://en.wikipedia.org/wiki/Software_testing"
-class="external free"
-rel="nofollow">http://en.wikipedia.org/wiki/Software_testing</a>
 
 \[4\] <a href="http://www.genome.org/cgi/content/full/12/10/1599"
-class="external free"
-rel="nofollow">http://www.genome.org/cgi/content/full/12/10/1599</a>
 
 Resources Javadoc:
 <a href="http://java.sun.com/j2se/javadoc" class="external free"
-rel="nofollow">http://java.sun.com/j2se/javadoc</a> \[6\]
 
 JSwat debugger:
 <a href="http://www.bluemarsh.com/java/jswat" class="external free"
-rel="nofollow">http://www.bluemarsh.com/java/jswat</a>
 
 JUnit unit testing framework:
 <a href="http://www.junit.org/index.htm" class="external free"
-rel="nofollow">http://www.junit.org/index.htm</a> \[8\]
 
 TestNG expanded unit testing framework:
 <a href="http://www.beust.com/testng" class="external free"
-rel="nofollow">http://www.beust.com/testng</a>
 
 Java PathFinder:
 <a href="http://javapathfinder.sourceforge.net" class="external free"
-rel="nofollow">http://javapathfinder.sourceforge.net</a> \[10\]
 
 PMD (Java 'lint'):
 <a href="http://pmd.sourceforge.net" class="external free"
-rel="nofollow">http://pmd.sourceforge.net</a>
 
 FindBugs:
 <a href="http://findbugs.sourceforge.net" class="external free"
-rel="nofollow">http://findbugs.sourceforge.net</a> \[12\]
 
 Code coverage:
 <a href="http://java-source.net/open-source/code-coverage"
-class="external free"
-rel="nofollow">http://java-source.net/open-source/code-coverage</a>
 
 Clover:
 <a href="http://www.cenqua.com/clover/index.html" class="external free"
-rel="nofollow">http://www.cenqua.com/clover/index.html</a> \[14\]
 
 JML modeling:
 <a href="http://www.cs.iastate.edu/%7Eleavens/JML" class="external free"
-rel="nofollow">http://www.cs.iastate.edu/%7Eleavens/JML</a>
+
 <a href="http://www.cs.iastate.edu/~leavens/JML" class="external free"
-rel="nofollow">http://www.cs.iastate.edu/~leavens/JML</a>
 
 Profiling: <a href="http://java-source.net/open-source/profilers"
-class="external free"
-rel="nofollow">http://java-source.net/open-source/profilers</a> \[16\]
 
 Log4J:
 <a href="http://logging.apache.org/log4j/docs" class="external free"
-rel="nofollow">http://logging.apache.org/log4j/docs</a>
 
 Extras Article regarding <a
 href="http://www.stickyminds.com/sitewide.asp?sid=1&amp;sqry=%2AZ%28SM%29%2AJ%28ARTCOL%29%2AR%28createdate%29%2AK%28articlesandpapers%29%2AF%28%7E%29%2AX%28sqeorig%29%2A&amp;sidx=10&amp;sopp=10&amp;ObjectId=9860&amp;Function=DETAILBROWSE&amp;ObjectType=ART"

@@ -3,22 +3,20 @@ title: "Galaxy Tutorial 2010"
 ---
 # Galaxy Tutorial 2010
 
-
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/250px-GalaxyLogoBigger.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/375px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/500px-GalaxyLogoBigger.png 2x"
 width="250" height="89" alt="Galaxy" />
 
 This [Galaxy](/wiki/Galaxy.1) tutorial was presented by [James
-Taylor](/wiki/User%3AJamesTaylor) at the [2010 GMOD Summer
+Taylor](/wiki/User:JamesTaylor) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
 May 2010. The most recent Galaxy tutorial can be found at the
 <a href="/wiki/Galaxy_Tutorial" class="mw-redirect"
 title="Galaxy Tutorial">Galaxy Tutorial</a> page.
 
-This [tutorial](/wiki/Category%3ATutorials) walks you
+This  walks you
 through setting up and running a [Galaxy](/wiki/Galaxy.1) server.
 
   VMware](#VMware)
@@ -132,7 +130,7 @@ class="external text" rel="nofollow">end image</a>.
 
 **Important Note**
 
-This [tutorial](/wiki/Category%3ATutorials) describes the
+This  describes the
 world as it existed on the day the tutorial was given. Please be aware
 that things like CPAN modules, Java libraries, and Linux packages change
 over time, and that the instructions in the tutorial will slowly drift
@@ -142,7 +140,7 @@ available.
 ## About Galaxy
 
 <a href="http://galaxyproject.org" class="external text"
-rel="nofollow">Galaxy</a> is a framework for integrating computational
+
 tools. It allows nearly any tool that can be run from the command line
 to be wrapped in a structured well defined interface.
 
@@ -174,7 +172,7 @@ include version 2.6.4 of the interpreter:
 Galaxy is distributed (and developed) using a distributed version
 control system called
 <a href="http://mercurial.selenic.com/" class="external text"
-rel="nofollow">mercurial</a>. The Ubuntu VM image already includes
+
 mercurial version 1.3.1:
 
     gmod@ubuntu:~$ hg --version
@@ -184,7 +182,6 @@ mercurial version 1.3.1:
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
-rel="nofollow">bitbucket hosting service</a>.
 
 **DO NOT DO THIS NOW**: To create a local clone of the release
 repository run the following:
@@ -246,7 +243,6 @@ Once the database is initialized, the normal startup process proceeds,
 loading tool configurations, starting the job runner, and finally
 initializing the web interface on port. You can now access your Galaxy
 at <a href="http://localhost:8080" class="external free"
-rel="nofollow">http://localhost:8080</a>
 
 See <a href="http://bitbucket.org/galaxy/galaxy-central/wiki/GetGalaxy"
 class="external text" rel="nofollow">GetGalaxy</a> for more information
@@ -265,7 +261,6 @@ Biology publication</a>.
 
 Load a web browser and access
 <a href="http://localhost:8080" class="external free"
-rel="nofollow">http://localhost:8080</a>.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Galaxy_FirstAnalysis_1.png" width="1049"
@@ -599,7 +594,6 @@ and run Galaxy using `run.sh`
 
 Having made these changes, start Galaxy again using `run.sh` and access
 it at <a href="http://localhost:8080" class="external free"
-rel="nofollow">http://localhost:8080</a>
 
 And the ` sh ./run.sh` fails. Type this magic:
 
@@ -609,7 +603,6 @@ And the ` sh ./run.sh` fails. Type this magic:
 ```
 
 We don't know why.
-
 
 You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new
@@ -651,11 +644,9 @@ In the tools panel, select **NGS: Mapping → Map with BWA**.
 Change the value of the first parameter to **Use one from the history**
 and make sure that **1:
 <a href="http://...genome.fa" class="external free"
-rel="nofollow">http://...genome.fa</a>** is **selected**.
 
 Make sure that for parameter **FASTQ file** that **2:
 <a href="http://...fastqsanger" class="external free"
-rel="nofollow">http://...fastqsanger</a>** is selected.
 
 Click **Execute**.
 

@@ -14,7 +14,6 @@ Then please post it. You can either
     **<a href="http://bit.ly/gsoc-2019-ogi-propose" class="external text"
     rel="nofollow">online form</a>** and *we'll* post it here.
 
-
 Projects can use a broad set of skills, technologies, and domains, such
 as GUIs, database integration and algorithms.
 
@@ -25,8 +24,6 @@ to propose your own project idea: some of the best applications we see
 are by students that go this route. As long as it is relevant to one of
 our projects, we will give it serious consideration. Creativity and
 self-motivation are great traits for open source programmers.
-
-
 
   project ideas for 2019</span>](#Proposed_project_ideas_for_2019)
   - [Template](#Template)
@@ -61,8 +58,6 @@ self-motivation are great traits for open source programmers.
   - *Skill level:* Basic, Medium or Advanced.
   - *Mentors:* name + contact details of the lead mentor, name + contact
     details of 1 or 2 backup mentors.
-
-
 
 ## Automated Bioinformatics Help in Galaxy
 

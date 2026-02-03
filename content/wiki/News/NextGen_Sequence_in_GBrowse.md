@@ -14,9 +14,7 @@ title="AGA NGS 2009.pdf">talk</a> on visualizing [next generation
 sequence](../Next_Generation_Sequencing)
 data in [GBrowse](../GBrowse.1) at
 <a href="http://www.regonline.com/Nextgeneration" class="external text"
-rel="nofollow">Next Generation Genome Analysis in Non-Model
-Organisms</a>, an <a href="http://www.theaga.org" class="external text"
-rel="nofollow">American Genetic Association</a> Special Event held June
+
 11-13, 2009 at the University of Connecticut. The talk will demonstrate
 how GBrowse can visualize both individual reads and summary and derived
 data. This talk will become a wiki page after the meeting.
@@ -30,12 +28,9 @@ class="external text" rel="nofollow">SMBE</a> and the
 <a href="http://www.k-state.edu/agc/symp2009/seminar.html"
 class="external text" rel="nofollow">Arthropod Genomics Symposium</a>.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/05/19*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

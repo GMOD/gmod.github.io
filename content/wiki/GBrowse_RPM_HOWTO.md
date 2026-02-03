@@ -24,11 +24,11 @@ ignore this note.
 
 RPM-based Linux distributions, including
 <a href="http://fedoraproject.org/" class="external text"
-rel="nofollow">Fedora</a> and
+
 <a href="http://www.centos.org" class="external text"
-rel="nofollow">CentOS</a>, can install GBrowse using the RPMs located at
+
 <a href="http://www.biopackages.net/" class="external free"
-rel="nofollow">http://www.biopackages.net/</a>. These can be installed
+
 using the
 <a href="http://en.wikipedia.org/wiki/Yellow_dog_Updater_Modified"
 class="external text" rel="nofollow">yum</a> installer tool. For more
@@ -66,20 +66,17 @@ Then install gbrowse:
 You can now visit the documentation and try out the example Yeast
 database by visiting
 <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a>
 
 NOTE: One problem with the RPM install is it currently installs gbrowse
 into it's own directory (e.g. /var/www/cgi-bin/gbrowse/). This means
 that the yeast example referenced in
 <a href="http://localhost/gbrowse" class="external free"
-rel="nofollow">http://localhost/gbrowse</a> should actually point to
+
 <a href="http://localhost/cgi-bin/gbrowse/gbrowse/yeast_chr1"
-class="external free"
-rel="nofollow">http://localhost/cgi-bin/gbrowse/gbrowse/yeast_chr1</a>.
 
 # Authors
 
-[Lincoln Stein](/wiki/User%3ALstein) 12:51, 17 April 2007 (EDT)
+[Lincoln Stein](/wiki/User:Lstein) 12:51, 17 April 2007 (EDT)
 
 Some material cut and paste from www.biopackages.net, with permission
 from Allen Day.

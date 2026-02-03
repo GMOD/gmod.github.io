@@ -17,24 +17,21 @@ title="PAG 2009"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io
 width="114" height="107" alt="PAG 2009" /></a></td>
 <td data-valign="middle"><strong><a
 href="http://www.intl-pag.org/17/17-gbrowse.html" class="external text"
-rel="nofollow">The Generic Genome Browser: A Hands on Workshop for
-Installing, Configuring and Using Your Own GBrowse</a></strong><br />
+
 <br />
 January 11, 2009<br />
 <a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">Plant and Animal Genome Conference</a><br />
+
 San Diego, California, USA</td>
 </tr>
 </tbody>
 </table>
 
-
-
 This page provides additional information about the
 <a href="http://www.intl-pag.org/17/17-gbrowse.html"
 class="external text" rel="nofollow">GBrowse workshop</a> at the
 <a href="http://www.intl-pag.org/" class="external text"
-rel="nofollow">Plant and Animal Genome XVII Conference</a> ([PAG
+
 2009](/wiki/PAG_2009)) held in San Diego on January 10-14, 2009.
 This workshop was attended by over 60 people.
 
@@ -56,7 +53,6 @@ This workshop was attended by over 60 people.
 
 An installer package for Microsoft Windows can be downloaded
 <a href="http://mckay.cshl.edu/a.zip" class="external text"
-rel="nofollow">here</a>.
 
 - download the zip file and double-click to unpack
 - enter the directory 'a' and double-click the executable file
@@ -111,7 +107,7 @@ intended to help them over those hurdles.
 
 ## Workshop Instructor
 
-- [Scott Cain](/wiki/User%3AScott), GMOD Project Coordinator,
+- [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
 

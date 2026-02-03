@@ -42,7 +42,7 @@ Some highlights:
   [Perl](../August_2009_GMOD_Meeting#A_DBIx_Class_layer_for_Chado)
   and
   [Java](../August_2009_GMOD_Meeting#GMOD_Biological_Object_Layer)
-  [middleware](../Category%253AMiddleware) packages
+  [middleware](../Category:Middleware) packages
   for <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 Plus many other excellent presentations on topics ranging from
@@ -56,17 +56,13 @@ update on what's going on in the GMOD community.
 
 Finally, I'd like to thank the
 <a href="http://www.molbiol.ox.ac.uk/" class="external text"
-rel="nofollow">Computational Biology Research Group (CBRG) at the
-University of Oxford</a> for hosting and financially supporting [GMOD
+
 Europe 2009](../GMOD_Europe_2009). We could not have
 done this without you.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/08/29*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

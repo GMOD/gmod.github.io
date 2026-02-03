@@ -41,8 +41,7 @@ GMOD offers several possibilities specifically for visualizing
 
 ## Gene Expression Visualization
 
-Components for visualizing [gene
-expression](/wiki/Category%3AExpression) results;
+Components for visualizing  results;
 currently focused on microarray based experiments.
 
 - [Caryoscope](/wiki/Caryoscope)
@@ -54,7 +53,7 @@ currently focused on microarray based experiments.
 
 ## Ontology Visualization
 
-[Ontology](/wiki/Category%3AOntologies) visualization is
+ visualization is
 currently supported by:
 
 - [GO Graphic Viewer](/wiki/GO_Graphic_Viewer.1)

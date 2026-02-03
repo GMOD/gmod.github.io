@@ -366,8 +366,6 @@ This will result in a new file (actually a directory) called
 Once you have unpacked the image, open it by double clicking on it. This
 should automatically launch VMware.
 
-
-
 ## Did you move or copy the image?
 
 You Moved It!
@@ -376,8 +374,6 @@ Yes you did.
 
 VMware then asks you if you moved or copied this image. Tell it you
 **moved it**. Doing anything else is bad.
-
-
 
 ## Logging In and other useful things
 
@@ -412,7 +408,7 @@ machine by typing
 
 You can also go to the web server running on this server by going to
 <a href="http://172.16.108.130" class="external free"
-rel="nofollow">http://172.16.108.130</a> (for example). If you are on
+
 Windows and would like to do this, you can get <a
 href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html"
 class="external text" rel="nofollow">putty</a>, which is a free ssh

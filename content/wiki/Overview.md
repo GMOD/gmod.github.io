@@ -112,7 +112,6 @@ By the way, the word _we_ used here refers to the [GMOD Help
 Desk](/wiki/GMOD_Help_Desk). The Help Desk is a good resource
 for biologists who want to learn more about GMOD. Feel free to email us
 at <a href="mailto:help@gmod.org" class="external text"
-rel="nofollow">help@gmod.org</a>.
 
 ## What is a GMOD?
 
@@ -383,7 +382,6 @@ See also:
 - [A Brief Guide to
   Databases](/wiki/A_Brief_Guide_to_Databases)
 - [Databases and GMOD](/wiki/Databases_and_GMOD)
-- [Database Tools](/wiki/Category%3ADatabase_Tools)
 
 #### Chado and BioSQL
 
@@ -394,11 +392,9 @@ the <a href="http://www.databasejournal.com/sqletc/article.php/1469521"
 class="external text" rel="nofollow">relational databases</a> that are
 used in GMOD, the other being
 <a href="http://biosql.org" class="external text"
-rel="nofollow">BioSQL</a>.
 
 The differences are clear.
 <a href="http://biosql.org" class="external text"
-rel="nofollow">BioSQL</a> is quite focussed and is concerned with:
 
 - Sequence
 - Sequence annotation
@@ -407,9 +403,9 @@ rel="nofollow">BioSQL</a> is quite focussed and is concerned with:
 
 It is also a thoroughly modern schema in that it uses
 <a href="http://obofoundry.org" class="external text"
-rel="nofollow">OBO</a>-style ontologies, such as the
+
 <a href="http://geneontology.org" class="external text"
-rel="nofollow">Gene Ontology</a> (GO). This is a requirement, given the
+
 ubiquity of ontologies and their ability to describe and organize data.
 
 Chado's focus is broader. Its tables are broken down into groups called
@@ -466,16 +462,16 @@ Chado depends on ontologies. For example, in [Chado's Sequence
 module](/wiki/Chado_Sequence_Module) it is expected
 that all stored sequences are identified by one or more terms from the
 <a href="http://sequenceontology.org" class="external text"
-rel="nofollow">Sequence Ontology</a>. A quick scan of the [tables in
+
 Chado](/wiki/Chado_Tables), more than 100, shows that about
 half of the tables contain the field, foreign key, _cvterm_, referring
 to an ontology term. The ontology used as source for a term could be one
 of many but people in the field tend to rely on
 <a href="http://obofoundry.org" class="external text"
-rel="nofollow">OBO</a> ontologies. So the ontology could be a common and
+
 general one like GO, the
 <a href="http://geneontology.org" class="external text"
-rel="nofollow">Gene Ontology</a>, or something highly specific to a
+
 group of organisms like the
 <a href="http://obo.sourceforge.net/cgi-bin/detail.cgi?fly_anatomy"
 class="external text" rel="nofollow">Drosophila Anatomy ontology</a> or
@@ -536,8 +532,7 @@ rejected by an administrator before being saved. WebApollo shares
 JBrowse's fast, flexible browsing interface, and users require only a
 web browser to use it.
 
-[Apollo](/wiki/Apollo.1) is a standalone [Java
-application](/wiki/Category%3AJava) for manual sequence
+[Apollo](/wiki/Apollo.1) is a standalone  for manual sequence
 annotation, and is the predecessor of WebApollo. Apollo can read and
 write to Chado databases, but lacks the instant updates that WebApollo
 features. We recommend using [WebApollo](/wiki/WebApollo.1) as it
@@ -546,7 +541,7 @@ is under active development and has a more full feature set than Apollo.
 ### What are MAKER and DIYA?
 
 [GBrowse](/wiki/GBrowse.1) and [Apollo](/wiki/Apollo.1) both deal
-with [genome annotations](/wiki/Category%3AAnnotation),
+with ,
 but where do these annotations come from? Frequently they come from a
 _genome annotation pipeline_, a software package or series of software
 packages that take an assembly (and other things) as input and produces
@@ -572,30 +567,29 @@ viewer, as well as a large number of interactive annotation tools.
 ### What is CMap?
 
 [CMap](/wiki/CMap.1) is a popular
-[comparative](/wiki/Category%3AComparative_Genomics)
+
 map viewer. It was initially created for use at
 <a href="http://gramene.org" class="external text"
-rel="nofollow">Gramene</a> but was redesigned to be used for any
+
 organism or set of organisms. It can display genetic maps or physical
 maps and draw the relations between the two. It will also show synteny.
 It is written in
 <a href="http://en.wikipedia.org/wiki/Perl" class="extiw"
 title="wp:Perl">Perl</a> and requires an underlying RDBMS such as
 <a href="http://www.mysql.com" class="external text"
-rel="nofollow">MySQL</a>. If you need to display maps or syntenic
+
 relationships, you may need more than [GBrowse](/wiki/GBrowse.1).
 
 #### And SynView? or Sybil? or GBrowse_Syn?
 
-Yes, there are other [comparative
-genomics](/wiki/Category%3AComparative_Genomics)
+Yes, there are other
 viewers. The alternatives to [CMap](/wiki/CMap.1) are
 [GBrowse_syn](/wiki/GBrowse_syn.1), [Sybil](/wiki/Sybil), and
 [SynView](/wiki/SynView). [Sybil](/wiki/Sybil) stores its data in
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
 accommodates a variety of different analyses; go to the
 <a href="http://sybil.sourceforge.net/" class="external text"
-rel="nofollow">Sybil Web site</a> if you want to learn more.
+
 [GBrowse_syn](/wiki/GBrowse_syn.1) and
 [SynView](/wiki/SynView) build upon [GBrowse](/wiki/GBrowse.1),
 and they can be considered a bit simpler than [Sybil](/wiki/Sybil) and
@@ -609,7 +603,7 @@ provides both an attractive, slick website for accessing and
 disseminating Chado data, and an interface for local users to upload and
 edit data in the database. Tripal is based on the popular content
 management system <a href="http://drupal.org" class="external text"
-rel="nofollow">Drupal</a>, and creates a customisable website from the
+
 Chado database. Tripal includes a number of analysis modules that allow
 the incorporation of external data (for example, Gene Ontology
 annotations), and tools such as [GBrowse](/wiki/GBrowse.1),
@@ -631,13 +625,13 @@ Middleware](/wiki/GMOD_Middleware) page for technical
 details. GMOD developers have evaluated a number of Perl middleware
 packages and decided that Modware is best suited to GMOD Perl
 development. Like <a href="http://bioperl.org" class="external text"
-rel="nofollow">Bioperl</a>, Modware may be a package that you may need
+
 to install but won't need to understand in any detail.
 
 ### What is BioPerl?
 
 <a href="http://bioperl.org" class="external text"
-rel="nofollow">BioPerl</a> is a popular bioinformatics toolkit written
+
 in <a href="http://en.wikipedia.org/wiki/Perl" class="extiw"
 title="wp:Perl">Perl</a>. The reason we mention it here is because many
 of the [GMOD Components](/wiki/GMOD_Components) use parts of
@@ -658,7 +652,7 @@ difficult, but if you only have sequence and sequence annotation, you
 can set up a sequence or genome browser using BioPerl,
 [GBrowse](/wiki/GBrowse.1), and an
 <a href="http://apache.org" class="external text"
-rel="nofollow">Apache</a> web server. You can use either the
+
 <a href="http://search.cpan.org/perldoc?Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a> module from
 BioPerl or the
@@ -1022,14 +1016,12 @@ language most used by GMOD developers. It is well-suited to text and
 data processing and is also characterized by an extensive open source
 library, so it's highly functional. Many of GMOD components use
 <a href="http://bioperl.org" class="external text"
-rel="nofollow">BioPerl</a>, a bioinformatics toolkit written in Perl.
 
 Some pieces of GMOD, like [GBrowse](/wiki/GBrowse.1), _can_ be
 extended or customized using Perl but beginners' skills in Perl would be
 sufficient for this work. Just installing and using
 [GBrowse](/wiki/GBrowse.1) in a conventional way does not require
 knowledge of Perl or <a href="http://bioperl.org" class="external text"
-rel="nofollow">BioPerl</a>.
 
 ##### Java
 

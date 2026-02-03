@@ -218,16 +218,9 @@ Now you can process the wiggle file:
 
 Visit in web browser
 
-
-
-
 ## Common Problems
 
 - JSON syntax errors
-
-
-
-
 
 ## Other links
 

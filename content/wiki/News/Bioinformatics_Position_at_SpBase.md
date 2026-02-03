@@ -30,7 +30,7 @@ href="http://www2.recruitingcenter.net/clients/CalTech/publicjobs/controller.cfm
 class="external text" rel="nofollow">job posting</a> for more on the
 position. Please contact
 <a href="mailto:acameron@caltech.edu" class="external text"
-rel="nofollow">Andy Cameron</a> if you have questions about the
+
 position.
 
 SpBase uses several [GMOD
@@ -39,12 +39,9 @@ Components](../GMOD_Components), including
 [BioMart](../BioMart), and
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-[Dave C.](../User%253AClements)
+[Dave C.](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/22*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

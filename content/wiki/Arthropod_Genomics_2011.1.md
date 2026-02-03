@@ -17,7 +17,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Arthropod Genomics Symposium" /></a></td>
 <td> </td>
 <td><a href="http://www.k-state.edu/agc/symp2011" class="external text"
-rel="nofollow">Arthropod Genomics Symposium 2011</a><br />
+
 &#10;<p>Kansas City, Missouri, United States<br />
 June 9-12</p></td>
 </tr>
@@ -44,8 +44,8 @@ width="120" height="86" alt="Gmod-gears.png" />
 We’ve got an assembly! Now What?**
 
 Thursday, June 9, 4:00-6:00pm, [Scott
-Cain](/wiki/User%3AScott), [Dave
-Clements](/wiki/User%3AClements)
+Cain](/wiki/User:Scott), [Dave
+Clements](/wiki/User:Clements)
 
 This workshop will demonstrate open source bioinformatics tools from the
 GMOD project that transform unannotated genome assemblies into online
@@ -66,7 +66,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="140" height="45" alt="GBrowse syn logo.png" />](/wiki/GBrowse_syn.1)
 
 Saturday, June 11, 10:30-12:00pm, [Sheldon
-McKay](/wiki/User%3AMckays)
+McKay](/wiki/User:Mckays)
 
 How to configure and use the example multiple sequence alignment data
 set installed with [GBrowse_syn](/wiki/GBrowse_syn.1) as
@@ -80,20 +80,17 @@ optional workshop, but registration is requested.
 This lists talks that we know about. If you have an additional one,
 please add it here.
 
-| Date           | Time | Title                                                                       | Presenter                                                        | -------------- | ---- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- | Friday June 10 | 9:30 | _A community-centric bioinformatic infrastructure for new genome consortia_ | [Alexie Papanicolaou](/wiki/User%3AAlpapan) |
+| Date           | Time | Title                                                                       | Presenter                                                        | -------------- | ---- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- | Friday June 10 | 9:30 | _A community-centric bioinformatic infrastructure for new genome consortia_ | [Alexie Papanicolaou](/wiki/User:Alpapan) |
 
 ## Posters
 
 This lists posters that we know about. If you have an additional one,
 please add it here.
 
-| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER.1)                                                                                                                                        | 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools.1)                                                                                                                | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%3AAlpapan) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly), <a href="/wiki/Gmod_dbsf" class="mw-redirect" | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all) |
+| Poster \#                                                                 | Title                                                                                                                  | Presenter                                                        | Components                                                                                                                                                          | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 4                                                                         | _The_ Heliconius melpomene _genome project: the complete genomic sequencing of the long-wing passion-flower butterfly_ | James R. Walters                                                 | [MAKER](/wiki/MAKER.1)                                                                                                                                        | 31                                                                        | _ArthropodaCyc: a BioCyc database powered by CycADS to study and compare the metabolism of arthropods_                 | Stefano Colella                                                  | [Pathway Tools](/wiki/Pathway_Tools.1)                                                                                                                | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User:Alpapan) | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly), <a href="/wiki/Gmod_dbsf" class="mw-redirect" | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all) |
 
 ## Brochure
 
 Download
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf" class="internal"
 title="AGS2011Brochure.pdf">conference brochure</a>.
-
-
-- [Conferences](/wiki/Category%3AConferences)

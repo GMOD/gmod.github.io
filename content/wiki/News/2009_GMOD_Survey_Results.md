@@ -33,7 +33,6 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="100" height="100" alt="GMOD Mug" /></a> And, finally, we have our
 3 winners of
 <a href="http://www.cafepress.com/GenericMOD/" class="external text"
-rel="nofollow">GMOD Gear</a>:
 
 - James Estill of the
   <a href="http://www.genetics.uga.edu/" class="external text"
@@ -47,12 +46,9 @@ rel="nofollow">GMOD Gear</a>:
 
 Thanks to everyone who took the time to participate in the survey.
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/10/05*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

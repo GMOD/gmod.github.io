@@ -14,11 +14,11 @@ I am pleased to announce that GMOD in the Cloud 2.0 has finally been
 released to the public. This Amazon Web Services (AWS) Amazon Machine
 Image (AMI) is public and can be cloned by anybody with an AWS account.
 A <a href="http://cloud.gmod.org/" class="external text"
-rel="nofollow">demo of GMOD in the Cloud</a> is running (though it may
+
 take a day or two for DNS to update fully).
 
 This AMI has several GMOD software packages installed and configured,
 including:
 
 - [GMOD in the
-  Cloud](../Category%253AGMOD_in_the_Cloud)
+  Cloud](../Category:GMOD_in_the_Cloud)

@@ -42,13 +42,13 @@ title="Emmert 040526.pdf">Emmert_040526.pdf</a>
 ### Phenotype Annotation Tool and Ontologies at dictyBase
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/DictyBase-phenotypes.pdf"
-class="internal"
+
 title="DictyBase-phenotypes.pdf">DictyBase-phenotypes.pdf</a>
 
 ### Chado - Generic module organism database schema
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/62/ChadoCSHMay03Slides.pdf"
-class="internal"
+
 title="ChadoCSHMay03Slides.pdf">ChadoCSHMay03Slides.pdf</a>
 
 ### Chado and Interoperability
@@ -60,7 +60,7 @@ title="Chado-and-XML.pdf">Chado-and-XML.pdf</a>
 
 <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/44/2005-10_ISMB_Ontology-Building_various.pdf"
-class="internal"
+
 title="2005-10 ISMB Ontology-Building various.pdf">2005-10_ISMB_Ontology-Building_various.pdf</a>
 
 ### Chado - generic model organism database schema
@@ -76,7 +76,7 @@ title="03-NESCent intro.pdf">03-NESCent_intro.pdf</a>
 ### Chado for evolutionary science
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/02-chado-for-nescent-2006.pdf"
-class="internal"
+
 title="02-chado-for-nescent-2006.pdf">02-chado-for-nescent-2006.pdf</a>
 
 ### Flybase next-generation
@@ -87,11 +87,11 @@ title="Flybase-ng-may03.pdf">Flybase-ng-may03.pdf</a>
 ### Comparative Genomics with GMOD and Bioperl
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
-class="internal"
+
 title="04-Stajich NESCENT GMOD.pdf">04-Stajich_NESCENT_GMOD.pdf</a>
 
 ### The GMOD Project: Order from Chaos
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/01-NESC_January_2006-LINCOLN.pdf"
-class="internal"
+
 title="01-NESC January 2006-LINCOLN.pdf">01-NESC_January_2006-LINCOLN.pdf</a>

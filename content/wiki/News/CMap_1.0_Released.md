@@ -7,8 +7,6 @@ Version 1.0 of CMap has been released.
 
 You can get the new version from SourceForge, <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=55129"
-class="external free"
-rel="nofollow">http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=55129</a>
 
 Highlights of this release are:
 
@@ -22,13 +20,9 @@ Highlights of this release are:
 
 If you have any questions, please email the
 <a href="mailto:gmod-cmap@lists.sourceforge.net" class="external text"
-rel="nofollow">CMap mailing list</a>.
 
 Ben
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/03/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

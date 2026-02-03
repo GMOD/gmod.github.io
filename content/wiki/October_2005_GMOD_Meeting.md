@@ -5,8 +5,6 @@ title: "October 2005 GMOD Meeting"
 
 Generic Model Organism Database Construction Set
 
-
-
   7</span>](#Meeting_7)
 - [Agenda](#Agenda)
   - [Friday,
@@ -19,8 +17,6 @@ Generic Model Organism Database Construction Set
 ## Meeting 7
 
 Thursday, October 27, 2005 Gerry Conference Room, Marks Building, CSHL
-
-
 
 ## Agenda
 
@@ -110,7 +106,7 @@ package for release</td>
 ## Meeting Report
 
 Meeting report for October, 2005 GMOD meeting. This is an outline by
-[Scott Cain](/wiki/User%3AScott).
+[Scott Cain](/wiki/User:Scott).
 
 Topics covered:
 
@@ -130,14 +126,13 @@ Topics covered:
     data.
 - Architecture
   - Testing recommendations
-  - Volunteers to examine [Java ORMs Hibernate and
-    iBatis](/wiki/Category%3AMiddleware)
+  - Volunteers to examine
   - How to get various chado instances to conform to a standard method
     of encoding data? Documentation: Joshua (TIGR) volunteered to
     document how TIGR is using chado to encode data and make it public
     as a first step in a collaborative effort among current users of
     chado (including TIGR,
-    [FlyBase](/wiki/Category%3AFlyBase), and GMOD
+    , and GMOD
     developers).
 - [www.gmod.org](/wiki/Main_Page)
   - In the evening of the first day, Allen Day, Brian O'Connor and Scott
@@ -165,7 +160,7 @@ Topics covered:
 - demos
   - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">TIGR pipeline
     tool</a>
-  - Princeton/[SGD](/wiki/Category%3ASGD) web-based data curation
+  - Princeton/ web-based data curation
     tool (talks directly to chado)
   - [DAS2](/wiki/Distributed_Annotation_System)
     java tool for querying [chado microarray
@@ -174,7 +169,7 @@ Topics covered:
     (<a href="http://xenbase.org" class="external text"
     rel="nofollow">XenBase</a>\])
   - PuMA, java tool for pubmed query building
-  - [ApiDB](/wiki/Category%3AApiDB) [GBrowse for
+  -  [GBrowse for
     synteny](/wiki/SynView)
   - flybase gbrowse for synteny
   - flybase query builder

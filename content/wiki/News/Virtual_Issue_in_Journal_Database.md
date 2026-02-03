@@ -24,11 +24,10 @@ different emphases (for example,
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> theory,
 Chado tutorial, and Chado community papers). Please
 <a href="mailto:scott@scottcain.net" class="external text"
-rel="nofollow">contact me</a> if you'd like to discuss this further.
 
 The virtual issue approach that
 *<a href="http://database.oxfordjournals.org/" class="external text"
-rel="nofollow">Database</a>* takes is very appealing, in that the
+
 submitted papers do not need to be in by a certain cutoff date, as this
 is not going to put into a "dead tree" form :-) So, the virtual issue
 can be created at any point, either when there is just one paper, or
@@ -41,12 +40,9 @@ meeting last year</a>.
 
 I look forward to your ideas and commitments!
 
-[Scott Cain](../User%253AScott)
+[Scott Cain](../User:Scott)
 GMOD Project Coordinator
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/12/01*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -13,11 +13,11 @@ College London (KCBI)</a>.
 
 Day 1 is intended to teach users of Pathway Tools databases such as
 <a href="http://biocyc.org/" class="external text"
-rel="nofollow">BioCyc</a>,
+
 <a href="http://pathway.yeastgenome.org/biocyc/" class="external text"
-rel="nofollow">YeastCyc</a>,
+
 <a href="http://mousecyc.jax.org/" class="external text"
-rel="nofollow">MouseCyc</a>, and
+
 <a href="http://www.arabidopsis.org/biocyc/index.jsp"
 class="external text" rel="nofollow">AraCyc</a> how to make the most of
 these resources.
@@ -41,9 +41,6 @@ class="external text" rel="nofollow">tutorial page at SRI</a>.
 
 Peter Karp
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/08/28*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

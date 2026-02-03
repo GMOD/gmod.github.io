@@ -10,7 +10,6 @@ height="48" alt="Under Construction" />
 <span style="font-size: 140%">This page or section is under
 construction.</span>
 
-
 GMODviews will be presented at [PAG 2011](/wiki/PAG_2011).
 
 GMODviews is built on
@@ -22,7 +21,7 @@ integration of these with [Tripal](/wiki/Tripal.1), which does not
 yet have such integration. GMODviews also provides tools for creating
 generic *data mashups* with data from essentially any external sources,
 such as <a href="http://flybase.org/" class="external text"
-rel="nofollow">FlyBase</a>, PubMed, *etc.* User-selected data can then
+
 be stored in the local Drupal database, to thus create a
 custom-knowledge-base for further data integration and analysis. Views
 integration allows complex [SQL](/wiki/Glossary#SQL) queries to be

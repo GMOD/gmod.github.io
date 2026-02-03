@@ -17,13 +17,9 @@ basically just a text editor) have been retired.
 You can get the new release of Apollo at:
 
 <a href="http://apollo.berkeleybop.org" class="external free"
-rel="nofollow">http://apollo.berkeleybop.org</a>
 
 Ed Lee
 
-
-
 *Posted to the [GMOD News](../GMOD_News) on 2008/05/12*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

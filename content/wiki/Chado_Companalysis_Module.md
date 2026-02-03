@@ -40,8 +40,6 @@ the results from a given computational analysis.
 
 Written by Andy Schroeder, the original Wiki page is here: <a
 href="http://cedar.bio.indiana.edu/mediawiki/index.php/Aligned_computational_analyses_implementation"
-class="external free"
-rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/Aligned_computational_analyses_implementation</a>.
 
 ### Background
 
@@ -202,8 +200,6 @@ results of the following query:
      syntenic_region | tblastn
      match           | twinscan
 
-
-
 # Tables
 
 ## Table: analysis
@@ -323,8 +319,6 @@ Tables referencing this one via Foreign Key Constraints:
 
 ------------------------------------------------------------------------
 
-
-
 ## Table: analysisfeature
 
 Computational analyses generate features (e.g. Genscan generates
@@ -428,8 +422,6 @@ table.</td>
 analysisfeature Structure
 
 ------------------------------------------------------------------------
-
-
 
 ## Table: analysisprop
 

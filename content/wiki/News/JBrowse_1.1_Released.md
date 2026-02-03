@@ -10,7 +10,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="200" height="134" alt="JBrowse 1.1 Released" /></a>
 
 <a href="http://jbrowse.org/?p=56" class="external text"
-rel="nofollow">JBrowse version 1.1 is released!</a> You can
+
 <a href="http://jbrowse.org/releases/jbrowse-1.1.zip"
 class="external text" rel="nofollow">find the code here</a>.
 
@@ -36,13 +36,9 @@ older version of JBrowse, you will have to regenerate all the JSON files
 on your server.*
 
 See the <a href="http://jbrowse.org/?p=56" class="external text"
-rel="nofollow">release notes</a> for full details.
 
-[Mitch Skinner](../User%253AMitchSkinner)
-
-
+[Mitch Skinner](../User:MitchSkinner)
 
 *Posted to the [GMOD News](../GMOD_News) on 2010/09/12*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

@@ -31,8 +31,6 @@ Part of <a href="/wiki/GMOD_Europe_2010" title="GMOD Europe 2010">GMOD Europe
 </tbody>
 </table>
 
-
-
   Mining genomic data</span>](#BioMart:_Mining_genomic_data)
 - [Instructors](#Instructors)
 - [Registration](#Registration)
@@ -53,24 +51,24 @@ BioMart (0.8) Java libraries that supersedes the current Perl
 infrastructure. The hands-on primarily focused on the resources
 currently available at the
 <a href="http://www.biomart.org/biomart/martview" class="external text"
-rel="nofollow">BioMart Central Portal</a>
+
 (<a href="http://www.ensembl.org/biomart/martview" class="external text"
-rel="nofollow">Ensembl</a>,
+
 <a href="http://www.ebi.ac.uk/uniprot/biomart/martview"
 class="external text" rel="nofollow">UniProt</a>,
 <a href="http://www.ebi.ac.uk/pride/prideMart.do" class="external text"
-rel="nofollow">PRIDE</a>,
+
 *<a href="http://www.biomart.org/" class="external text"
-rel="nofollow">etc</a>.*). Furthermore, a concise introduction to some
+
 of the specialised BioMart portals such as
 <a href="http://dcc.icgc.org/" class="external text" rel="nofollow">ICGC
 (International Cancer Genome Consortium</a>) and mouse resources
 (<a href="http://biomart.informatics.jax.org/biomart/martview"
 class="external text" rel="nofollow">MGI</a>,
 <a href="http://www.emmanet.org/" class="external text"
-rel="nofollow">EMMA</a>,
+
 <a href="http://www.europhenome.org/biomart.php" class="external text"
-rel="nofollow">Europhenome</a>,
+
 <a href="http://www.biomart.org/" class="external text"
 rel="nofollow"><em>etc</em></a>.) will be presented.
 
@@ -81,14 +79,14 @@ programming techniques and familiarity with databases
 
 ## Instructors
 
-- [Syed Haider](/wiki/User%3ASyedHaider)
+- [Syed Haider](/wiki/User:SyedHaider)
   (<a href="http://oicr.on.ca" class="external text"
   rel="nofollow">OICR</a> and University of Cambridge)
 - <a href="http://www.ebi.ac.uk/~damian" class="external text"
   rel="nofollow">Damian Smedley</a>
   (<a href="http://www.ebi.ac.uk/" class="external text"
   rel="nofollow">EBI</a>)
-- [Junjun Zhang](/wiki/User%3AJunjun)
+- [Junjun Zhang](/wiki/User:Junjun)
   (<a href="http://oicr.on.ca" class="external text"
   rel="nofollow">OICR</a>)
 - Arek Kasprzyk (<a href="http://oicr.on.ca" class="external text"
@@ -119,7 +117,7 @@ G12-G13</a>, at the University of Cambridge.
 
 <a
 href="http://www.biomed.cam.ac.uk/gradschool/skills/bioinformatics.html"
-rel="nofollow"
+
 title="School of Biological Sciences Bioinformatics Training Facility"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/190px-CambridgeWide.gif"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/285px-CambridgeWide.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/380px-CambridgeWide.gif 2x"

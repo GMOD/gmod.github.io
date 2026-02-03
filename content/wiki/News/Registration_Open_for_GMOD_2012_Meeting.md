@@ -12,12 +12,11 @@ Registration for the [April 2012 GMOD
 Meeting](../April_2012_GMOD_Meeting) is now
 open. Please go to
 <a href="http://gmod2012.eventbrite.com/" class="external free"
-rel="nofollow">http://gmod2012.eventbrite.com/</a> to register. If you
+
 register before March 7, the fee is \$40; after March 7, the fee goes to
 \$50. Also, if you register before March 7 you will be entered in a
 drawing for
 <a href="http://www.cafepress.com/sk/genericmod" class="external text"
-rel="nofollow">GMOD swag</a>.
 
 I am very excited for this meeting. It is occurring right after the
 <a href="http://pir.georgetown.edu/biocuration2012/"
@@ -30,8 +29,6 @@ me or edit the [meeting
 page](../April_2012_GMOD_Meeting) directly to
 add your suggested topic.
 
-[Scott Cain](../User%253AScott)
-
-
+[Scott Cain](../User:Scott)
 
 *Posted to the [GMOD News](../GMOD_News) on 2012/02/08*

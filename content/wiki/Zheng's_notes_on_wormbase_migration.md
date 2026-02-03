@@ -56,7 +56,7 @@ both bio-chaos 0.02 and gmod_bulk_load_gff3 can theoretically work. btw,
 bio-chaos 0.01 is included in the schema cvs download, but no
 gff3-\>chaos script in it. so go to
 <a href="http://www.fruitfly.org/chaos-xml/" class="external text"
-rel="nofollow">bio-chaos 0.02</a> for prerequisite and installation.
+
 read a book <a
 href="http://www.amazon.com/Nutshell-Third-Elliotte-Rusty-Harold/dp/0596007647/ref=pd_bbs_sr_1/002-2233708-5183202?ie=UTF8&amp;s=books&amp;qid=1174502632&amp;sr=8-1"
 class="external text" rel="nofollow">XML in a nutshell</a> helps a lot
@@ -107,7 +107,6 @@ gmod-bulk-load-gff3.
     Preparing data for inserting into the zha database
     (This may take a while ...)
     Unable to find srcfeature IV in the database.
-
 
 sort it so that Parent of a feature (column 9 tag Parent) comes before
 the feature line in file. sorted it by:

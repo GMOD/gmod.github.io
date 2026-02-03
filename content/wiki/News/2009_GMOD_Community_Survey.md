@@ -23,7 +23,7 @@ are asking all GMOD users and developers to provide your feedback.
 
 **Three randomly selected survey participants will receive the
 <a href="http://www.cafepress.com/GenericMOD/" class="external text"
-rel="nofollow">GMOD T-shirt or mug</a> of their choice. Names will be
+
 drawn from the first 100 responses, so get your response in early.** The
 survey closes at the end of the day on September 25.
 
@@ -33,12 +33,9 @@ Help Desk</a> if you have any questions.
 
 Thank you,
 
-[Dave Clements](../User%253AClements)
+[Dave Clements](../User:Clements)
 [GMOD Help Desk](../GMOD_Help_Desk)
-
-
 
 *Posted to the [GMOD News](../GMOD_News) on 2009/09/16*
 
-
-- [News Items](../Category%253ANews_Items)
+- [News Items](../Category:News_Items)

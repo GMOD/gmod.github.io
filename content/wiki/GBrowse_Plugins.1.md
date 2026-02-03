@@ -7,7 +7,7 @@ Plugins extend GBrowse
 
 For details on how to configure plugins, see
 <a href="/wiki/GBrowse_Configuration_HOWTO.1#Plugin_Options"
-class="mw-redirect"
+
 title="GBrowse Configuration HOWTO">GBrowse_Configuration_HOWTO#Plugin_Options</a>.
 
 Below is an annotated list of GBrowse plugins with pointers to more

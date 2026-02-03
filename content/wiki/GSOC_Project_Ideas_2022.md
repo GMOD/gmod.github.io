@@ -22,8 +22,6 @@ are by students that go this route. As long as it is relevant to one of
 our projects, we will give it serious consideration. Creativity and
 self-motivation are great traits for open-source programmers.
 
-
-
   project ideas for 2022</span>](#Proposed_project_ideas_for_2022)
   - [JBrowse 2
     Plugins for Additional Synteny

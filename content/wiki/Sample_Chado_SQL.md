@@ -29,8 +29,6 @@ from a Chado database. Some of these are drawn from the
 GMODTools/conf/bulkfiles/chadofeatsql.xml Example output of some of
 these is shown in the tables at <a
 href="http://insects.eugenes.org/genome/Drosophila_melanogaster/current/tables/"
-class="external free"
-rel="nofollow">http://insects.eugenes.org/genome/Drosophila_melanogaster/current/tables/</a>
 
 # PostgreSQL queries
 
@@ -224,8 +222,6 @@ to execute on a large genome database.
 Usage: dev_chado_01c=# select v.\* from v_genepage2 v join feature as f
 using (feature_id) where f.name = 'PAU1';
 
-
-
      CREATE OR REPLACE VIEW v_genepage2
          (feature_id, field, value)
        AS
@@ -300,7 +296,6 @@ using (feature_id) where f.name = 'PAU1';
          WHERE  af.analysis_id = a.analysis_id
      ;
 
-
 ## simple gene_page output
 
      dev_chado_01c=# select v.* from v_genepage2 v join feature as f using (feature_id) where f.name = 'PAU1';
@@ -333,9 +328,8 @@ for a well studied gene from FlyBase chado release 5.
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
-rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 # Authors
 
-- [Dongilbert](/wiki/User%3ADongilbert) 16:05, 16 April 2007
+- [Dongilbert](/wiki/User:Dongilbert) 16:05, 16 April 2007
   (EDT)
