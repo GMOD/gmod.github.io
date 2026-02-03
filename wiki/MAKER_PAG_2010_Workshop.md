@@ -57,8 +57,8 @@ the [Apollo](Apollo.1 "Apollo") genome annotation editor.
 
 MAKER can be installed locally on your own machine, or for smaller
 datasets, you can upload your data to the online MAKER gene annotation
-web service. Examples in the workshop will focus primarilly on using the
-new MAKER web service, but will aslo touch on how to install and use
+web service. Examples in the workshop will focus primarily on using the
+new MAKER web service, but will also touch on how to install and use
 MAKER on a local machine.
 
 ## <span id="Workshop_Instructor" class="mw-headline">Workshop Instructor</span>

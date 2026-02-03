@@ -119,7 +119,7 @@ foreach my $url_to_convert (@urls) {
        die unless ($mech->success);
     };
     if($@) {
-        print "An error occured : ".$@."\n";
+        print "An error occurred : ".$@."\n";
     }
     else {
        print "converted $title\n";

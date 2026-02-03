@@ -70,7 +70,7 @@ Notably, this includes apache, postgresql and tomcat7:
      sudo /etc/init.d/postgresql stop
      sudo /etc/init.d/tomcat7 stop
 
-8\. Unmount the old data partion and mount the new one:
+8\. Unmount the old data partition and mount the new one:
 
      sudo umount /data
      sudo mount -v -t ext4 /dev/xvdg /data

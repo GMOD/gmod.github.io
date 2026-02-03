@@ -233,11 +233,11 @@ More specific subgoals:
 - A script for periodically loading uploaded XML files to Chado (this
   could use command line Apollo or XORT).
 - A set up script that will prompt the user for items specific to the
-  user/community and will make appropriate chages to *everything*,
+  user/community and will make appropriate changes to *everything*,
   including:
   - Modifying mediawiki's LocalSettings.php with names, email addresses
     and icons
-  - Inserting organism data into Chado (allowing for the possiblity of
+  - Inserting organism data into Chado (allowing for the possibility of
     multiple organisms)
   - Modifying appropriate Apollo config files that would then be
     downloadable by members of the community
@@ -247,7 +247,7 @@ More specific subgoals:
   the wiki so that the users would have the ability to edit the contents
   for their community)
 - An easy to understand guide on how to update any software when
-  necessary--mediawiki, extentions, GBrowse, Chado. More than anything,
+  necessary--mediawiki, extensions, GBrowse, Chado. More than anything,
   these should be pointers to where to get further information.
 
 **Apollo:**
@@ -354,7 +354,7 @@ coming:
 - Chinmay Patel, GeneDB
 - Sanjay Chellapilla, Kansas State University
 - Barry Wanner, Purdue University
-- Cornel Ghiban, CSHL, Dolan Center
+- Colonel Ghiban, CSHL, Dolan Center
 - David Sigfredo Angulo, DePaul University
   - <a href="http://IllinoisBioGrid.org" class="external free"
     rel="nofollow">http://IllinoisBioGrid.org</a>

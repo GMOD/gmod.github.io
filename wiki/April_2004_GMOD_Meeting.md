@@ -344,7 +344,7 @@ Scott Cain</td>
     There are several items planned for addition or improvement in the next
     two releases.  Tools to allow importing and exporting XML formatted data
     from chado will be included, which will allow the sequence annotation tool,
-    Apollo, to be used with chado. Addtionally, template based web front end for
+    Apollo, to be used with chado. Additionally, template based web front end for
     chado called turnkey will be included in an upcoming release.  This software is
     still early in the development process, but when it was presented to
     developers at the GMOD meeting in April, there was considerable interest
@@ -352,7 +352,7 @@ Scott Cain</td>
 
     Longer term goals for gmod releases are including pubsearch and pubfetch.
     The process of porting these applications has begun and is expected to be
-    complete by the end of the year.  A tool for liturature based sequence
+    complete by the end of the year.  A tool for literature based sequence
     annotation, called JavaSEAN, is expected to be included in gmod in a similar
     time frame.  Additionally, there are plans from the Apollo developers to
     create a new version of Apollo that will be able to read and write directly
@@ -486,7 +486,7 @@ Scott Cain</td>
     (Toward a generic MOD information retrieval/extraction search engine)
 
     SGD developers and curators met with Eimear Kenny for two weeks at
-    the begining of March at Stanford to build a Textpresso search engine for
+    the beginning of March at Stanford to build a Textpresso search engine for
     Yeast. During that period the Textpresso software was installed on a
     Solaris system and three builds with a test corpus of ~400 full text
     journal articles were completed. In addition, the Textpresso Ontology for
@@ -497,7 +497,7 @@ Scott Cain</td>
     Integration of Textpresso into Literature Curation Pipeline
 
     We have integrated Textpresso to the Wormbase curation pipeline
-    to expediate the extraction of genetic interaction information from the
+    to expedite the extraction of genetic interaction information from the
     literature. A prototype curation interface has been developed to enable a
     curator to extract data from sentences returned by a Textpresso query for
     genetic interaction. We find that these Textpresso sentences are enriched
@@ -637,7 +637,7 @@ Scott Cain</td>
     We've migrated our database schema over to one that should be more
     compatible with a Chado schema --- all of our table names are now prefixed
     with a 'pub_' prefix, and we've done some column renaming so that we use
-    consistant names throughout the system.
+    consistent names throughout the system.
 
     Our production server has been also upgraded from MySQL3 to MySQL4, and
     we've rewritten some parts of Pubsearch to take advantage of the
@@ -716,7 +716,7 @@ Scott Cain</td>
     1) SVG output
 
     Users can now click on a link labeled "Publication Quality Image" and
-    download a Scaleable Vector Graphics version of the current view.  SVG
+    download a Scalable Vector Graphics version of the current view.  SVG
     is an editable format that can be manipulated with popular graphics
     programs such as Adobe Illustrator, and can be reprinted by journals
     without the pixelation that plagues bitmapped images.
@@ -744,7 +744,7 @@ Scott Cain</td>
            GBrowse can now be configured to use a local or remote DAS
            database as its primary data source.  This means that one
            can point GBrowse at the UCSC or ENSEMBL databases and
-           immediately begin browing them using the GBrowse user
+           immediately begin browsing them using the GBrowse user
            interface.
 
         c) As a DAS source
@@ -864,7 +864,7 @@ Scott Cain</td>
             Inpharmatica, Ltd.
             Institute for Systems Biology, Seattle
             Institute of Molecular and Cell Biology, Singapore
-            International Rice Research Institute, Phillipines
+            International Rice Research Institute, Philippines
             John Innes Centre
             KEGG
             Kansas State University
@@ -1095,7 +1095,7 @@ Scott Cain</td>
         Methanosarcina acetivorans
     6   Joanne Luciano      BioPathways Consortium
         Prochlorococcus marinus MED4
-    7   Jasintha Maniraja   Universite Libre de Bruxelles
+    7   Jasintha Maniraja   Universities Libre de Bruxelles
         Mus musculus
     8   Linyong Mao     Pacific Northwest National Laboratory
         Shewanella oneidensis

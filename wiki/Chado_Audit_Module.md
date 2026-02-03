@@ -134,7 +134,7 @@ shadow audit table, *gene_audit*:
 
 #### <span id="Insertion_of_a_New_Record" class="mw-headline">Insertion of a New Record</span>
 
-When a record is intially inserted into an chado table, the same record
+When a record is initially inserted into an chado table, the same record
 is inserted into the corresponding shadow audit table, with the current
 timestamp and *transaction_type* = 'i'.
 
@@ -148,7 +148,7 @@ chado.
 
 #### <span id="Deletion_of_an_Existing_Record" class="mw-headline">Deletion of an Existing Record</span>
 
-When a record is to be deleted, before the delete trasaction is executed
+When a record is to be deleted, before the delete transaction is executed
 in chado, the existing chado record is copied to the corresponding
 shadow audit table, with the corrent timestamp and *transaction_type* =
 'd'. The delete transaction is then executed in chado.

@@ -20,7 +20,7 @@
 [ParameciumDB](ParameciumDB "ParameciumDB")
 (<a href="http://paramecium.cgm.cnrs-gif.fr" class="external free"
 rel="nofollow">http://paramecium.cgm.cnrs-gif.fr</a>) is maintained at
-the Centre de Génétique Moléculaire of the CNRS, Gif-sur-Yvette,
+the Centre de Génétique Moléculaire of the CNRS, Gif-sure-Yvette,
 France.  
 This new MOD includes sequence data from
 <a href="http://www.genoscope.cns.fr" class="external text"

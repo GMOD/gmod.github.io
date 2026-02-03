@@ -56,7 +56,7 @@ class="internal" title="InterMine middleware.pdf">Gos's presentation</a>
 - [<span class="tocnumber">7</span> <span class="toctext">Implications
   of Query Optimisation</span>](#Implications_of_Query_Optimisation)
 - [<span class="tocnumber">8</span>
-  <span class="toctext">Acknowlegements</span>](#Acknowlegements)
+  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
 
 
 
@@ -259,7 +259,7 @@ Within FlyMine: For one or more genes report:
 - Template queries pre-computed
   - ~40 template queries run per gene details page - renders in seconds
 
-#### <span id="Acknowlegements" class="mw-headline">Acknowlegements</span>
+#### <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
 
 - Richard Smith
 - Kim Rutherford

@@ -32,7 +32,7 @@ version of GiaB.
 
 4\. Open the settings for the instance. Choose the Storage tab.
 
-5\. Right click on the "Controler: SATA", select "Add Hard Disk", click
+5\. Right click on the "Controller: SATA", select "Add Hard Disk", click
 the "Choose existing disk" button, add the new disk file and click OK to
 save the settings.
 
@@ -55,7 +55,7 @@ partition; the new partition will be something like /dev/sdb1 or
     sudo /etc/init.d/postgresql stop
     sudo /etc/init.d/tomcat7 stop
 
-9\. Unmount the old data partion and mount the new one (assuming the
+9\. Unmount the old data partition and mount the new one (assuming the
 device name is /dev/sdc):
 
     sudo umount /data

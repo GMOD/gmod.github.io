@@ -235,7 +235,7 @@ Here is a list of the proposed project ideas for 2017:
 
   
 
-- **Project Idea 9: Prototype a new RESTFul API querying Neo4j database
+- **Project Idea 9: Prototype a new RESTFull API querying Neo4j database
   (InterMine)**
   - *Brief explanation:* InterMine is a biological data warehouse,
     currently running with a PostgreSQL database. We'd like to prototype
@@ -352,7 +352,7 @@ Here is a list of the proposed project ideas for 2017:
 
   
 
-- **Project Idea 13: Peformance and user-centric improvements to Afra's
+- **Project Idea 13: Performance and user-centric improvements to Afra's
   annotation editor**
   - *Brief explanation*: Gene prediction software often make mistakes
     (e.g., merging adjacent genes, or splitting a long gene into two).

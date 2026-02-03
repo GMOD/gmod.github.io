@@ -291,7 +291,7 @@ title="Bio GMOD GenericGenePage">Generic Gene Page XML</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/Jan2009GenericGenePage.ppt"
 class="internal" title="Jan2009GenericGenePage.ppt">PPT</a>, <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf"
-class="internal" title="Jan2009GenreicGenePage.pdf">PDF</a>, <a
+class="internal" title="Jan2009GenericGenePage.pdf">PDF</a>, <a
 href="#Generic_Gene_Page_XML">Summary</a>, <a
 href="#Data_Sharing">Discussion</a></td>
 </tr>
@@ -327,7 +327,7 @@ href="#Bovine_Genome_Database">Summary</a></td>
 <td>GNPAnnot</td>
 <td>Pierre Larmande</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/Jan2009GNPAnnotChadoMVC.ppt"
-class="internal" title="Jan2009GNPAnnotChadoMVC.ppt">ChadoControler</a>,
+class="internal" title="Jan2009GNPAnnotChadoMVC.ppt">ChadoController</a>,
 <a href="#GNPAnnot">Summary</a></td>
 </tr>
 </tbody>
@@ -365,7 +365,7 @@ SoyBase pointed out that SoyBase's map data is now available through
 SSWAP. <a href="http://renato.iannella.it/paper/rdf-idiot/"
 class="external text" rel="nofollow">RDF</a>, the
 <a href="http://bio2rdf.org/" class="external text"
-rel="nofollow">Bio2RDF</a> projct, and the
+rel="nofollow">Bio2RDF</a> project, and the
 <a href="http://swoogle.umbc.edu/" class="external text"
 rel="nofollow">Swoogle</a> semantic web search engine were also
 mentioned.

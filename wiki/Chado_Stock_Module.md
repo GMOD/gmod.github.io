@@ -65,7 +65,7 @@ conceivable relationship with a sequence feature (such as a transgene),
 and could be described by some ontology term.
 
 It may be that not all critical details about your collection are
-accomodated, if this is the case it should not be difficult to extend
+accommodated, if this is the case it should not be difficult to extend
 for your own purposes.
 
 # <span id="Tables" class="mw-headline">Tables</span>
@@ -108,7 +108,7 @@ title="Chado Tables">dbxref</a></p></td>
 <td><em></em><br />
 <br />
 The dbxref_id is an optional primary stable identifier for this stock.
-Secondary indentifiers and external dbxrefs go in table:
+Secondary identifiers and external dbxrefs go in table:
 stock_dbxref.</td>
 </tr>
 <tr class="odd tr0">

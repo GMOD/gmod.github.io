@@ -61,7 +61,7 @@ added together.
 One way to do this is as a kind
 <a href="http://teragrid.org/programs/sci_gateways/"
 class="external text" rel="nofollow">Teragrid science gateway
-project</a>, where the authenication, admin., grid resource finding are
+project</a>, where the authentication, admin., grid resource finding are
 contained in the gateway components. Parts that the user genomicist sees
 are for data and analysis tool selection. Many desired genome tools are
 available at some Teragrid sites, but methods to transparently copy and

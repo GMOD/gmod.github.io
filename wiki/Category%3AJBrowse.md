@@ -155,9 +155,9 @@ title="November 2007 GMOD Meeting">November 2007 GMOD Meeting</a></li>
 </ul>
 <h3 id="r">R</h3>
 <ul>
-<li><a href="Reproducing_gbrowse_img_functinality_with_JBrowse"
-title="Reproducing gbrowse img functinality with JBrowse">Reproducing
-gbrowse img functinality with JBrowse</a></li>
+<li><a href="Reproducing_gbrowse_img_functionality_with_JBrowse"
+title="Reproducing gbrowse img functionality with JBrowse">Reproducing
+gbrowse img functionality with JBrowse</a></li>
 <li><a href="User%253ARobertBuels"
 title="User%253ARobertBuels">User%253ARobertBuels</a></li>
 <li><a href="User%253ARSCummings"

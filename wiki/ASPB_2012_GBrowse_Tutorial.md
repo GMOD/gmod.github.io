@@ -55,7 +55,7 @@ machine) that is running Ubuntu 12.04.
 <a href="https://www.virtualbox.org/wiki/Downloads"
 class="external text" rel="nofollow">VirtualBox</a> is a free, open
 source application available for Windows, MacOS X and Linux that is
-similar to Parellels or VMware. Please download and install the version
+similar to Parallels or VMware. Please download and install the version
 appropriate for your laptop.
 
 The appliance should also be downloaded from the <a

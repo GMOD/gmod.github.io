@@ -88,7 +88,7 @@
 Progress report submitted by Scott Cain, GMOD Coordinator.
 
 In the past nine months since the last progress report (see the 2006
-progres report at
+progress report at
 <a href="http://blog.gmod.org/files/GMOD_2006_update.doc"
 class="external free"
 rel="nofollow">http://blog.gmod.org/files/GMOD_2006_update.doc</a>), the
@@ -251,7 +251,7 @@ generating public web pages as well as data for curation support.
 Report submitted by Lincoln Stein
 
 Over the past year we have begun major rearchitecture work on GBrowse to
-make it faster and more scaleable. The chief of these rearchitecture
+make it faster and more scalable. The chief of these rearchitecture
 steps has been to make it possible for individual GBrowse tracks to be
 rendered in parallel on a compute cluster. This will avoid the current
 penalty of rendering slowing down as additional tracks are added. This
@@ -468,7 +468,7 @@ and extend the capabilities of Apollo.
 
 We have assisted and interacted with a number of different groups over
 the past year. One of the most interesting examples is with the INRA,
-Unite de Biometrie et Intelligence Artificielle (Marie-Josie Cros). This
+Unite de Biometrie et Intelligence Artificielle (Marie-Josie Cross). This
 group is interested in non protein coding RNA (ncRNA) identification in
 bacteria and archaea. They were looking for an open source solution that
 they could extend for annotating such things as the terminator of

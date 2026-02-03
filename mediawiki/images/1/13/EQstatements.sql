@@ -60,7 +60,7 @@ VALUES
   ((SELECT db_id FROM db WHERE name='internal'), 'development_stage'),
   ((SELECT db_id FROM db WHERE name='internal'), 'environment'),
   
-  ((SELECT db_id FROM db WHERE name='internal'), 'phene_desciption'),
+  ((SELECT db_id FROM db WHERE name='internal'), 'phene_description'),
   ((SELECT db_id FROM db WHERE name='internal'), 'dominant_recessive_trait'),
   ((SELECT db_id FROM db WHERE name='internal'), 'loss_or_gain_of_function'),
   
@@ -104,7 +104,7 @@ VALUES
 
   ((SELECT cv_id FROM cv WHERE name='phenotype_properties'),
    'phene description', '', 
-   (SELECT dbxref_id FROM dbxref WHERE accession='phene_desciption')),
+   (SELECT dbxref_id FROM dbxref WHERE accession='phene_description')),
   ((SELECT cv_id FROM cv WHERE name='phenotype_properties'),
    'dominant recessive trait', '', 
    (SELECT dbxref_id FROM dbxref WHERE accession='dominant_recessive_trait')),

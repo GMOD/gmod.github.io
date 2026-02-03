@@ -62,7 +62,7 @@ At the most basic level, setting up JBrowse Desktop consists of:
 - Downloading a zip file script from jbrowse.org e.g. from
   <a href="http://jbrowse.org/jbrowse-1-12-1/" class="external free"
   rel="nofollow">http://jbrowse.org/jbrowse-1-12-1/</a> and OSX and a
-  Windows version exsits JBrowse-1.12.1-desktop-osx.zip and
+  Windows version exists JBrowse-1.12.1-desktop-osx.zip and
   JBrowse-1.12.1-desktop-win.zip
 - After downloading unzip the file to somewhere. There is no official
   uninstaller but you can move it to the Program files or Applications

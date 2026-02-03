@@ -235,7 +235,7 @@ strongly advised for GMOD projects:
 - For applications that interact with a relational database, it should
   be able to interact with a Chado database via a database adaptor.
 
-Finally, a page describing the appication and providing basic
+Finally, a page describing the application and providing basic
 information about the application should be provide for www.gmod.org.
 This page should contain the following information:
 

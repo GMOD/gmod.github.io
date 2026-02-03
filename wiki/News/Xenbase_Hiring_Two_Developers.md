@@ -49,7 +49,7 @@ join our team in Calgary. The rocky mountains are an hour from town,
 with incredible skiing, backcountry and camping. The city itself has
 over million people and has lots to do when you are not skiing working.
 In addition to building interfaces using Java the senior developer will
-manage, upgrade and customize a variety of perl based data pipleines and
+manage, upgrade and customize a variety of perl based data pipelines and
 also optimize and customize our genome browsing tools. Good DNA and
 protein sequence alignment skills are essential. Experience with GMOD
 tools such as Gbrowse would be sweet, as would experience with the UCSC

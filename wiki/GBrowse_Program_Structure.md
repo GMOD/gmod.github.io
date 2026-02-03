@@ -175,7 +175,7 @@ in the SVN. They are as follows:
   for using plugins.
 - **Realign** (Bio::Graphics::Browser2::Realign) - A module to perform
   Smith-Waterman alignments on sequence data.
-- **Region** (Bio::Graphics::Browser2::Region) - A module to enabe easy
+- **Region** (Bio::Graphics::Browser2::Region) - A module to enable easy
   fetching/manipulation of regions.
 - **RegionSearch** (Bio::Graphics::Browser2::RegionSearch) - A module to
   search through multiple databases for feature matches.

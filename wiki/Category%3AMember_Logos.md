@@ -735,7 +735,7 @@ The following 69 files are in this category, out of 69 total.
   
 
   [IPlant Logo Trans
-  Smal...](File:IPlant_Logo_Trans_Small.png "File:IPlant Logo Trans Small.png")  
+  Small...](File:IPlant_Logo_Trans_Small.png "File:IPlant Logo Trans Small.png")  
   12 KB  
 
   

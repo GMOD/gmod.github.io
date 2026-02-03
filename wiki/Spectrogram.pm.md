@@ -27,7 +27,7 @@ and the intensity corresponds to the strength of the signal. DNA
 spectrograms reveal non-random sequence composition, the two most common
 examples of which are coding DNA and repeat sequences.
 
-- Coding DNA has a signal due the the non-random occurence of
+- Coding DNA has a signal due the the non-random occurrence of
   nulceotides in codons and appear as a line in the spectrogram with a
   period of 3.
 - Repeats have a characteristic ladder like appearance in the
@@ -82,8 +82,8 @@ binary indicator sequences:
 
   
 The magnitude of the discrete fourier transform (DFT) is calculated
-seperately for each of the four indicator sequences. The algorithm used
-is the fast fourier transfrom (FFT; via Math::FFT), which is much faster
+separately for each of the four indicator sequences. The algorithm used
+is the fast fourier transform (FFT; via Math::FFT), which is much faster
 than the original DFT algorithm but is limited in that only base2
 numbers (128, 256, 512, etc) can be used for window sizes. This is
 necessary to make the spectrogram calculation fast enough for real-time

@@ -265,7 +265,7 @@ class="external text" rel="nofollow">Tripal issues tracker</a>.
 ### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
-Managment System (CMS) and GMOD Chado. The goal is to simplify
+Management System (CMS) and GMOD Chado. The goal is to simplify
 construction of a community genomics website to enable individual labs
 or research communities to construct a high-quality, standards-based
 website for data sharing and collaboration.
@@ -342,7 +342,7 @@ Chado has a modular structure:
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
   ontologies
-- Expression - for summaries of RNA and protein expresssion
+- Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
 - Library - for descriptions of molecular libraries
@@ -1091,7 +1091,7 @@ height="475" alt="800px-Tripal Install4.png" />
 
 ### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
 
-The last step for installing Drupal is setting up the automatted Cron
+The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
 housekeeping tasks on a regular interval. Cron is a UNIX facility for
 scheduling jobs to run at specific intervals.
@@ -1169,7 +1169,7 @@ drush:
 
 You must always run drush commands within the Drupal installation. It
 does not matter what subdirectory so long as you are in the Drupal
-directory sturcture. To see a list of available commands type the
+directory structure. To see a list of available commands type the
 following:
 
 ``` enter
@@ -1317,7 +1317,7 @@ height="522" alt="800px-DrupalThemes2.png" />
 ##### <span id="Blocks" class="mw-headline">Blocks</span>
 
 Blocks in Drupal are used to provide content in regions of a Drupal
-theme. For example, navigate to **Adminster** → **Site Building** →
+theme. For example, navigate to **Administer** → **Site Building** →
 **Blocks**.
 
 You'll see that regions of the theme have been identified. Within the
@@ -1410,7 +1410,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="800" height="613" alt="Druapl menus4.png" />
 
   
-Using the insructions above to add a second menu item for our about page
+Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
 
@@ -2205,7 +2205,7 @@ the fields with these values:
 - Abbreviation: C. sinensis
 - Common name: Sweet orange
 - Description: Sweet orange is the No.1 citrus production in the world,
-  accounting for about 70% of the total. Brazil, Flordia (USA), and
+  accounting for about 70% of the total. Brazil, Florida (USA), and
   China are the three largest sweet orange producers. Sweet orange
   fruits have very tight peel and are classified into the hard-to-peel
   group. They are often used for juice processing, rather than fresh
@@ -2367,7 +2367,7 @@ SwissProt:
 
 Now that we have our organism and whole genome analysis ready, we can
 being loading genomic data. For this tutorial only a single gene from
-sweet orange will be loaded into the databsae. This is to ensure we can
+sweet orange will be loaded into the database. This is to ensure we can
 move through the tutorial rather quickly. The following datasets will be
 used for this tutorial:
 

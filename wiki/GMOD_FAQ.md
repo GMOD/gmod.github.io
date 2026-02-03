@@ -17,7 +17,7 @@
 
 
 
-A list of **F**requently **A**sked **Q**uestions about the GMOD project.
+A list of **F**requently **A**sked **Q**questions about the GMOD project.
 See [FAQ](Category%253AFAQ "Category%253AFAQ") for a list of FAQ pages on
 specific [GMOD Components](GMOD_Components "GMOD Components"). See the
 [Glossary](Glossary "Glossary") for definitions of commonly used terms

@@ -76,7 +76,7 @@ GBrowse_syn](../GBrowse_syn_Help "GBrowse syn Help")
 #### <span id="User_interface" class="mw-headline">User interface</span>
 
 The overall look of Gbrowse_syn resembles GBrowse but has some key
-differences to accomodate the more complex comparative genome data (see
+differences to accommodate the more complex comparative genome data (see
 the screenshot
 above).
 

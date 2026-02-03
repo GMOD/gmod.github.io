@@ -79,7 +79,7 @@ backend layer.
 <!-- -->
 
 - Default transaction scope: one object graph
-  - Or, you can manually control transations
+  - Or, you can manually control transactions
 
 <!-- -->
 

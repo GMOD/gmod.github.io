@@ -447,7 +447,7 @@ height="260" alt="ZFIN&#39;s Assay Type CV" /></a> |
 ##### <span id="Ontologies" class="mw-headline">Ontologies</span>
 
 Controlled vocabularies are simple lists of terms. _Ontologies_ are
-terms plus rules and relationships betwen the terms. The Gene Ontology
+terms plus rules and relationships between the terms. The Gene Ontology
 (GO) and Sequence Ontology (SO) are the two best known ontologies, but
 there are many more available from
 <a href="http://www.obofoundry.org/" class="external text"
@@ -1132,7 +1132,7 @@ user named "gmod":
 class="external text" rel="nofollow">DBIx::DBStag</a> by hand</span>
 
 In the previous course, this was installed by hand, and then in a
-subsquent course it was pre-installed; now were back to installing it by
+subsequent course it was pre-installed; now were back to installing it by
 hand. It is moderately tricky, because it is difficult to install by
 CPAN when using `sudo cpan` but is easy to install "by hand" or using
 `cpan`.

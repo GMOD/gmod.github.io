@@ -161,7 +161,7 @@
 	  </match>
 	</interpro>
    </protein>
-   <protein id="FBgn0039958_4_ORF9" length="55" crc64="E8DBE26007291CCF" >
+   <protein id="FBgn0039958_4_ORF9" length="55" crc64="E8BE26007291CCF" >
 	<interpro id="noIPR" name="unintegrated" type="unintegrated">
 	  <match id="seg" name="seg" dbname="SEG">
 	    <location start="7" end="22" score="NA" status="?" evidence="Seg" />

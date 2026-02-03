@@ -392,7 +392,7 @@ they will be saved when you go to a new instance as well. These are:
 | /data/etc/gbrowse | The config directory for GBrowse. |
 | /data/etc/postgresql | The config directory for PostgreSQL |
 | /data/opt | A good place to install any other software you want to use |
-| /data/var/lib/gbrowse | Other GBrowse files that might be modifed on your instance, including user session data and flat file databases. |
+| /data/var/lib/gbrowse | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. |
 | /data/var/lib/postgresql | Files for the PostgreSQL database |
 | /data/var/www/.htaccess | The htaccess file for the main Drupal site |
 | /data/var/www/jbrowse/data | All of the data files needed for running JBrowse |

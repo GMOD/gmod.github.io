@@ -57,7 +57,7 @@ rel="nofollow">CPAN</a>.
 For PDF generation, you will need the perl GD and GD::SVG modules
 installed, as well as a helper application called
 <a href="http://www.inkscape.org/index.php" class="external text"
-rel="nofollow">Inkscape</a>. Inkscape provies a command-line tool that
+rel="nofollow">Inkscape</a>. Inkscape provides a command-line tool that
 will convert SVG files into PDF. To install, download and install it
 somewhere on the standard system path (e.g. /usr/bin). You will then
 need to create two subdirectories in the web user's home directory in

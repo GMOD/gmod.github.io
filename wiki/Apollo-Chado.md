@@ -33,7 +33,7 @@ September 2006 01:26:42 PM**
         to be done:
 
         Grant privileges to users to several tables (list here)
-            In the absense of a complete list of tables, you can grant access to
+            In the absence of a complete list of tables, you can grant access to
             all tables using sqlt and the perl Template::Toolkit template,
             bin/privileges.tmpl
 
@@ -70,7 +70,7 @@ September 2006 01:26:42 PM**
 
             2   If you don't give an argument with -a, the loader will look for
                 analysis.name that is equal to the GFF source and type
-                concatentated with and underscore between them, ie
+                concatenated with and underscore between them, ie
                 'source_type', eg, 'Rice_cDNA_match'.
 
             The inserts into the db table are there so that dbxref entries in
@@ -84,7 +84,7 @@ September 2006 01:26:42 PM**
 
                 $prefix . (int from uniquename_id sequence) . $suffix
 
-            For exmple, if you insert 'RICE' for the prefix and 'X' for the
+            For example, if you insert 'RICE' for the prefix and 'X' for the
             suffix, the resulting name of the first feature will be
             'RICE000001X';
 

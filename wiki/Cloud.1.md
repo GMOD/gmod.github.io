@@ -200,7 +200,7 @@ incorporate the changes into future iterations of GMOD in the Cloud.
 | /data/etc/gbrowse | The config directory for GBrowse. |
 | /data/etc/postgresql | The config directory for PostgreSQL |
 | /data/opt | A good place to install any other software you want to use |
-| /data/var/lib/gbrowse2 | Other GBrowse files that might be modifed on your instance, including user session data and flat file databases. |
+| /data/var/lib/gbrowse2 | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. |
 | /data/var/lib/postgresql | Files for the PostgreSQL database |
 | /data/var/www/.htaccess | The htaccess file for the main Drupal site |
 | /data/var/www/jbrowse/jbrowse_conf.json | Config file for JBrowse |

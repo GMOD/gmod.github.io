@@ -630,7 +630,7 @@ change the values below.
 
 <!-- -->
 
-     // width of shadow (space aroung whole balloon; px)
+     // width of shadow (space around whole balloon; px)
      // This can be zero if there is no shadow and the
      // edges of the balloon are also the edges of the image
      balloon.shadow   = 20;
@@ -682,7 +682,7 @@ change the values below.
      // A close button for sticky balloons
      balloon.closeButton   = 'close.png';
 
-- balloon font properties -- you can control the appearnace of balloon
+- balloon font properties -- you can control the appearance of balloon
   contents with embedded HTML/CSS but the following font attributes can
   be set globally for the balloon object
 
@@ -1020,7 +1020,7 @@ For example, the string above would be encoded as:
      This is some text.  It is 'very interesting'.  Well, maybe not.
      I guess it depends on your definition of "interesting".
 
-and the contents are retreived using the syntax below:
+and the contents are retrieved using the syntax below:
 
     onmouseover="balloon.showTooltip(event,"load:contents1");
 

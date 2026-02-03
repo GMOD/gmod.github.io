@@ -760,7 +760,7 @@ File:Jan2009BovineGenomeDatabase.pdf	https://raw.githubusercontent.com/GMOD/gmod
 File:Jan2009BovineGenomeDatabase.ppt	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d5/Jan2009BovineGenomeDatabase.ppt
 File:Jan2009Ficklin.JPG	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/dc/Jan2009Ficklin.JPG
 File:Jan2009GenericGenePage.ppt	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/Jan2009GenericGenePage.ppt
-File:Jan2009GenreicGenePage.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf
+File:Jan2009GenericGenePage.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf
 File:Jan2009GMODWebAndPackages.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf
 File:Jan2009GNPAnnotChadoMVC.ppt	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/Jan2009GNPAnnotChadoMVC.ppt
 File:Jan2009HelpDesk.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf
@@ -869,7 +869,7 @@ File:MAKER_GO_Screenshot.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.
 File:MAKER_Nhgri_cost_per_genome.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/de/MAKER_Nhgri_cost_per_genome.jpg
 File:MAKER_Nhgri_cost_per_megabase.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/MAKER_Nhgri_cost_per_megabase.jpg
 File:Maker_performance.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/Maker_performance.jpg
-File:MAKER_protien.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/MAKER_protien.png
+File:MAKER_protein.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/MAKER_protien.png
 File:MAKER_RIP_figure.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/MAKER_RIP_figure.png
 File:MAKER_UCSC_Genome_Browser.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/MAKER_UCSC_Genome_Browser.jpg
 File:MAKERLogo.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/MAKERLogo.png
@@ -981,7 +981,7 @@ File:PAG2010ComparativeGenomicsToolsInGMOD.ppt	https://raw.githubusercontent.com
 File:PAG2010Galaxy.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/PAG2010Galaxy.pdf
 File:PAG2010GDRinDrupal.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/PAG2010GDRinDrupal.pdf
 File:PAG2010GMODProjectUpdate.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4e/PAG2010GMODProjectUpdate.pdf
-File:PAG2010HymenopteraGenomeDatabse.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/PAG2010HymenopteraGenomeDatabse.pdf
+File:PAG2010HymenopteraGenomeDatabase.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/PAG2010HymenopteraGenomeDatabse.pdf
 File:PAG2010JBrowse.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf
 File:PAG2010MAKER.pdf	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/03/PAG2010MAKER.pdf
 File:PAG2010MAKERSession.jpg	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/PAG2010MAKERSession.jpg
@@ -1317,7 +1317,7 @@ File:Tripal_create_content.png	https://raw.githubusercontent.com/GMOD/gmod.githu
 File:Tripal_createAnalysis.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Tripal_createAnalysis.png
 File:Tripal_databases.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/Tripal_databases.png
 File:Tripal_drupal_tables.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/Tripal_drupal_tables.png
-File:Tripal_feature_borwser.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Tripal_feature_borwser.png
+File:Tripal_feature_browser.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Tripal_feature_browser.png
 File:Tripal_feature_config.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/Tripal_feature_config.png
 File:Tripal_feature_details.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b0/Tripal_feature_details.png
 File:Tripal_feature_references.png	https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Tripal_feature_references.png

@@ -293,7 +293,7 @@ non-overlapping CDSs. Dicistronic genes (see for example, the
 class="external text" rel="nofollow"><em>Drosophila</em> Adh and Adhr
 genes</a>) have totally distinct gene products deriving from the same
 transcript. To confuse matters, the two polypeptides are commonly
-refered to as being derived from two distinct genes (e.g. Adh and Adhr).
+referred to as being derived from two distinct genes (e.g. Adh and Adhr).
 In a database such as <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>, there are 3 gene IDs stored in the
 database - one for each of the two non-overlapping genes, and one for
@@ -323,7 +323,7 @@ April 2007 (EDT)</p></td>
 
 There are currently two proposals for handling dicistronic genes. The
 first is a hack and introduces redundancy, but works well with existing
-software and tools. The second is prefered from a modeling standpoint,
+software and tools. The second is preferred from a modeling standpoint,
 but introduces a lot of complexity to software.
 
 #### <span id="xxx_Operon" class="mw-headline">xxx Operon</span>
@@ -650,7 +650,7 @@ the protein level. This SNP changes an _I_ to a _V_.
        (locgroup 0)))
 
 Again, the second featureloc has no srcfeature. The mutant protein is
-implicit. The mutant protein sequence can be infered by taking the
+implicit. The mutant protein sequence can be inferred by taking the
 sequence of _dpp-P1_ and substituting the 24th residue with a _V_.
 
 To do a query for all SNPs that switch I to V or vice versa:

@@ -466,7 +466,7 @@ this version:</p>
 References.</li>
 <li>A rewritten GFF3 loader that is extremely fast, even with a fully
 populated Tripal site.</li>
-<li>A new Sequences fields that combines reference-dervied sequences
+<li>A new Sequences fields that combines reference-derived sequences
 with primary sequences, and CDS/proteins for mRNA features and sequences
 now have more informative definition lines for FASTA sequences.</li>
 <li>Updates to the online documentation</li>

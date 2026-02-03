@@ -74,7 +74,7 @@ Create the initial mysql database
 
 This will also inform you to set the root password of mysql database. If
 you have more than one version of mysql installed on your machine,
-please name it sepcifically like =dev-db/mysql-4.1.21
+please name it specifically like =dev-db/mysql-4.1.21
 
 Install Bioperl
 

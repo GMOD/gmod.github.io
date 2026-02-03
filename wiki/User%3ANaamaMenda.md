@@ -33,7 +33,7 @@ rel="nofollow">Sol Genomics Network</a>.
   rel="nofollow">SGN</a> community annotation
 - <a href="http://solgenomics.net" class="external text"
   rel="nofollow">SGN</a> Solanaceae Phenotype Ontology development and
-  inplementation
+  implementation
 
 
 

@@ -862,14 +862,14 @@ rel="nofollow">FlyBase</a>: derivable features (introns, UTRs,
 intergenic region) are not included. Feature typing is always done to
 the most specific, non-derivale level. For example, we never use types
 ”5 prime exon”, ”dicistronic gene”, ”coding exon” as these are always
-inferrable. We always use type ”gene” - the specific type of gene is
+inferable. We always use type ”gene” - the specific type of gene is
 inferred from the child type (mRNA, tRNA, snRNA, etc)..
 
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
 derivable features are not included. currently not storing any tRNAs or
 snRNAs.
 
-NOTE: whilst it is perfectly permissable to include redundant derivable
+NOTE: whilst it is perfectly permissible to include redundant derivable
 features (useful for warehouse-style querying), you should not write
 software that expects to find these if you want the software to work on
 different chado db instances.
@@ -1225,9 +1225,9 @@ Tables referencing this one via Foreign Key Constraints:
 Additional dbxrefs for an association. Rows in the feature_cvterm table
 may be backed up by dbxrefs. For example, a feature_cvterm association
 that was inferred via a protein-protein interaction may be backed by by
-refering to the dbxref for the alternate protein. Corresponds to the
+referring to the dbxref for the alternate protein. Corresponds to the
 WITH column in a GO gene association file (but can also be used for
-other analagous associations). See
+other analogous associations). See
 <a href="http://www.geneontology.org/doc/GO.annotation.shtml#file#file"
 class="external free"
 rel="nofollow">http://www.geneontology.org/doc/GO.annotation.shtml#file</a>
@@ -1550,7 +1550,7 @@ feature_relationship_pub Structure
 
 ## <span id="Table:_feature_relationshipprop" class="mw-headline">Table: feature_relationshipprop</span>
 
-Extensible properties for feature_relationships. Analagous structure to
+Extensible properties for feature_relationships. Analogous structure to
 featureprop. This table is largely optional and not used with a high
 frequency. Typical scenarios may be if one wishes to attach additional
 data to a feature_relationship - for example to say that the

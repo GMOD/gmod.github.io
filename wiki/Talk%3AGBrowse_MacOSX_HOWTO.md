@@ -29,7 +29,7 @@ first question during the script (where is libgd) rather than /usr/lib.
 *Good point; the comment about using the defaults is really referring to
 the defaults for the GBrowse install proper, as opposed to the
 prerequisites that get installed before GBrowse does (like GD.pm). I'll
-see if I can craft a clearer explaination both in the installer script
+see if I can craft a clearer explanation both in the installer script
 and the MacOSX specific page. Thanks!* [Scott](User%253AScott "User%253AScott")
 13:30, 29 August 2007 (EDT)
 

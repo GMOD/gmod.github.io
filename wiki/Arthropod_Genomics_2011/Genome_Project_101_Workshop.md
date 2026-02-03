@@ -178,9 +178,9 @@ height="296" alt="MAKER contig.png" /></a>
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/da/MAkER_est.png" width="655" height="255"
 alt="MAkER est.png" /></a>
 
-<a href="../File:MAKER_protien.png" class="image"><img
+<a href="../File:MAKER_protein.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7c/MAKER_protien.png" width="655"
-height="353" alt="MAKER protien.png" /></a>
+height="353" alt="MAKER protein.png" /></a>
 
 After uploading these, I pressed "Add to Job Queue" to get it started
 running. The job waited under an hour before starting, and then finished

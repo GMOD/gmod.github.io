@@ -402,7 +402,7 @@ analyses linked such as blastp and hmmpfam results.
 
 We don't delete any features from the database. Instead, we toggle the
 feature.is_obsolete field value to TRUE for those features that are no
-longer 'current.' The overal steps are as follows:
+longer 'current.' The overall steps are as follows:
 
 1.  Mark the features in the hsn.gene.39416.1 gene graph as obsolete
 2.  Create new features, hsn.gene.39416.2 and other graph features, each

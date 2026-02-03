@@ -499,7 +499,7 @@ height="260" alt="ZFIN&#39;s Assay Type CV" /> |
 #### <span id="Ontologies" class="mw-headline">Ontologies</span>
 
 Controlled vocabularies are simple lists of terms. _Ontologies_ are
-terms plus rules and relationships betwen the terms. The Gene Ontology
+terms plus rules and relationships between the terms. The Gene Ontology
 (GO) and Sequence Ontology (SO) are the two best known ontologies, but
 there are many more available from
 <a href="http://www.obofoundry.org/" class="external text"

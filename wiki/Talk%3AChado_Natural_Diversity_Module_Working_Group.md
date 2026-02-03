@@ -131,7 +131,7 @@ To address both these needs, [Rob
 Buells](User%253ARobertBuels "User%253ARobertBuels") proposed
 
 - multiple incremental releases,
-- with perhaps some backwards incompatability,
+- with perhaps some backwards incompatibility,
 - but always with a plan and code support for migrating from one release
   to the next.
 
@@ -483,7 +483,7 @@ stock instead of stocksample
     cvterm_id, value, rank)
   - crossexperiment_project
 
-If we need currrent crossexperiment table, we could name this new set of
+If we need current crossexperiment table, we could name this new set of
 tables using cross- instead of crossexperiment-
 
   

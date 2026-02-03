@@ -26,7 +26,7 @@ text editors.
 
 | Editor | Comments | Example |
 |----|----|----|
-| gedit | Lighweight editor, and the easiest to use. Just type. Has save and quit buttons. | `gedit `*`filename.conf`* |
+| gedit | Lightweight editor, and the easiest to use. Just type. Has save and quit buttons. | `gedit `*`filename.conf`* |
 | nano | Lightweight editor that can be run directly in the shell window. Harder to use than gedit. | `nano `*`filename.conf`* |
 | vi or vim | These editors are very powerful and very cryptic. If you don't already know vi, don't try to learn this during the course. | `vi `*`filename.conf`* |
 | emacs | Powerful editor that is less cryptic than vi. | `emacs `*`filename.conf`* |

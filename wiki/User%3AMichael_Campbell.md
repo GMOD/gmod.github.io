@@ -68,7 +68,7 @@ MC, **Campbell M**, Li J, Bowers JE, Tang H, Lyons E, Ferguson AA,
 Narzisi G, Nelson DR, Blaby-Haas CE, Gschwend AR, Jiao Y, Der JP, Zeng
 F, Han J, Min XJ, Hudson KA, Singh R, Grennan AK, Karpowicz SJ, Watling
 JR, Ito K, Robinson SA, Hudson ME, Yu Q, Mockler TC, Carroll A, Zheng Y,
-Sunkar R, Jia R, Chen N, Arro J, Wai CM, Wafula E, Spence A, Han Y, Xu
+Sunkar R, Jia R, Chen N, Arrow J, Wai CM, Wafula E, Spence A, Han Y, Xu
 L, Zhang J, Peery R, Haus MJ, Xiong W, Walsh JA, Wu J, Wang ML, Zhu YJ,
 Paull RE, Britt AB, Du C, Downie SR, Schuler MA, Michael TP, Long SP,
 Ort DR, Schopf JW, Gang DR, Jiang N, Yandell M, Depamphilis CW, Merchant

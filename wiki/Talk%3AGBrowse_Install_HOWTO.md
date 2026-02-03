@@ -132,7 +132,7 @@ Assuming:
       GBROWSE_ROOT=gbrowse \
       LIB=$HOME/perl5/lib/perl5
 
-    ## Aparently unused
+    ## Apparently unused
       BIN=$HOME/perl5/bin
 
 --[DanBolser](User%253ADanBolser "User%253ADanBolser") 13:35, 16 January 2009

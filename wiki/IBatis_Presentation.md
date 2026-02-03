@@ -123,13 +123,13 @@ title="IBatis.pdf">Jeff's presentation</a>.
     </jdbcConnection>
  
     <javaModelGenerator
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.model"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
    targetProject="gene" />
     <sqlMapGenerator
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.sql"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.sql"
    targetProject="gene" />
     <daoGenerator type="IBATIS"
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.dao"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.dao"
    targetProject="gene" />
  <abatorConfiguration>
 ```
@@ -149,13 +149,13 @@ title="IBatis.pdf">Jeff's presentation</a>.
     </jdbcConnection>
  
     <javaModelGenerator
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.model"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.model"
    targetProject="gene" />
     <sqlMapGenerator
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.sql"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.sql"
    targetProject="gene" />
     <daoGenerator type="IBATIS"
-   targetPackage="org.gmod.architecture.framwork.bakeoff.abator.dao"
+   targetPackage="org.gmod.architecture.framework.bakeoff.abator.dao"
    targetProject="gene" />
  <abatorConfiguration>
 ```
@@ -198,7 +198,7 @@ Works as:
 
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
-  "org.gmod.architecture.framwork.bakeoff.abator.model.FeatureWithBLOBs">
+  "org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs">
     insert into db2inst1.feature
             (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
              RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
@@ -221,7 +221,7 @@ Works as:
 
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
-  "org.gmod.architecture.framwork.bakeoff.abator.model.FeatureWithBLOBs">
+  "org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs">
     insert into db2inst1.feature
             (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
              RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
@@ -244,7 +244,7 @@ Works as:
 
 ``` de1
  <insert id="abatorgenerated_insert" parameterClass=
-  "org.gmod.architecture.framwork.bakeoff.abator.model.FeatureWithBLOBs">
+  "org.gmod.architecture.framework.bakeoff.abator.model.FeatureWithBLOBs">
     insert into db2inst1.feature
             (DBXREF_ID, ORGANISM_ID, NAME, UNIQUENAME,
              RESIDUES, SEQLEN, MD5CHECKSUM, TYPE_ID, IS_ANALYSIS,
@@ -356,7 +356,7 @@ Account for cycles or recursion in Master Detail Report.
 
 ``` de1
  <resultMap id="SelectGeneResults"
-   class="org.gmod.architecture.framwork.bakeoff.Gene" groupBy="id">
+   class="org.gmod.architecture.framework.bakeoff.Gene" groupBy="id">
       <result column="FEATURE_ID" property="id" jdbcType="INTEGER"/>
       <result column="GENE_NAME" property="name" jdbcType="VARCHAR" />
       <result column="DESCRIPTION" property="description“
@@ -366,7 +366,7 @@ Account for cycles or recursion in Master Detail Report.
   </resultMap>
  
  <resultMap id="SelectExonResults"
-   class="org.gmod.architecture.framwork.bakeoff.Exon">
+   class="org.gmod.architecture.framework.bakeoff.Exon">
      <result column="EXON_ID" property="id" jdbcType="INTEGER"/>
      <result column="EXON_NAME" property="name" jdbcType="VARCHAR" />
      <result column="EXON_RESIDUES" property="residues" jdbcType="CLOB" />
@@ -384,7 +384,7 @@ Account for cycles or recursion in Master Detail Report.
 
 ``` de1
  <resultMap id="SelectGeneResults"
-   class="org.gmod.architecture.framwork.bakeoff.Gene" groupBy="id">
+   class="org.gmod.architecture.framework.bakeoff.Gene" groupBy="id">
       <result column="FEATURE_ID" property="id" jdbcType="INTEGER"/>
       <result column="GENE_NAME" property="name" jdbcType="VARCHAR" />
       <result column="DESCRIPTION" property="description“
@@ -394,7 +394,7 @@ Account for cycles or recursion in Master Detail Report.
   </resultMap>
  
  <resultMap id="SelectExonResults"
-   class="org.gmod.architecture.framwork.bakeoff.Exon">
+   class="org.gmod.architecture.framework.bakeoff.Exon">
      <result column="EXON_ID" property="id" jdbcType="INTEGER"/>
      <result column="EXON_NAME" property="name" jdbcType="VARCHAR" />
      <result column="EXON_RESIDUES" property="residues" jdbcType="CLOB" />

@@ -224,7 +224,7 @@ MySQL are both open-source DBMSs with large and active user communities.
 It is possible to use a DBMS other than the default but it does involve
 more work, sometimes a lot more work.
 
-See the component descriptions to find out if they need an underlaying
+See the component descriptions to find out if they need an underlying
 database and what their default DBMS is.
 
 ### <span id="Can_I_Use_Something_Besides_the_Default_DBMS.3F" class="mw-headline">Can I Use Something Besides the Default DBMS?</span>

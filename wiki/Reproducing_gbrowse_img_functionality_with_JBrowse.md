@@ -7,7 +7,7 @@
 
 
 
-# <span dir="auto">Reproducing gbrowse img functinality with JBrowse</span>
+# <span dir="auto">Reproducing gbrowse img functionality with JBrowse</span>
 
 
 
@@ -187,14 +187,14 @@ which drives the WormBase website.
                             return heightComputed;
                         }
 
-                        function progressInit(max_num_retries, num_stablization_step) {
+                        function progressInit(max_num_retries, num_stabilization_step) {
                           var previousHeights = [0];
                           return {
                             isProgressComplete: function() {
                               return previousHeights.length > max_num_retries || (
-                                previousHeights.length > num_stablization_step &&
+                                previousHeights.length > num_stabilization_step &&
                                 previousHeights[0] !== 0 &&
-                                previousHeights.slice(1, num_stablization_step).every(
+                                previousHeights.slice(1, num_stabilization_step).every(
                                   function(prevHeight) {
                                     return prevHeight === previousHeights[0];
                                   }
@@ -317,7 +317,7 @@ the context of a full website.
 ### Tools
 
 - <span id="t-smwbrowselink"><a
-  href="Special%253ABrowse/Reproducing_gbrowse_img_functinality_with_JBrowse"
+  href="Special%253ABrowse/Reproducing_gbrowse_img_functionality_with_JBrowse"
   rel="smw-browse">Browse properties</a></span>
 
 

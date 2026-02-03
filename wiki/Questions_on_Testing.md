@@ -59,7 +59,7 @@ values, etc. I suspect the solution here is some kind of generic diffing
 algorithm based on a formal specification (relational, XML-Schema,
 UML+OCL, ontologies) of the data. I'm not sure if such a thing exists.
 If it does, it would be useful for all GMOD apps that have a middleware
-component, regardless of programming langauge.
+component, regardless of programming language.
 
 
 

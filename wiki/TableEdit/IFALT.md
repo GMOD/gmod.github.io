@@ -22,7 +22,7 @@
 
 ## <span id="specifications" class="mw-headline">specifications</span>
 
-Each field is **tab delimited**, and each new row is seperated by a
+Each field is **tab delimited**, and each new row is separated by a
 **newline.** If a field is empty, you can either skip it completely (and
 put the double pipes immediately next to each other as in the first row
 in the example below,) or insert the word **NULL** as a space-holder.

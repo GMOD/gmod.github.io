@@ -165,7 +165,7 @@ rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a>
 
 ## <span id="More_discussion_and_samples" class="mw-headline">More discussion and samples</span>
 
-See this blog entry on a 2005 meeting disccussion,
+See this blog entry on a 2005 meeting discussion,
 <a href="http://blog.gmod.org/common_gene_pages" class="external free"
 rel="nofollow">http://blog.gmod.org/common_gene_pages</a>
 

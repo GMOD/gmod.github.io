@@ -411,7 +411,7 @@ sources** from the bottom right, or when prompted.
 #### <span id="Side_Note:_Model_Additions" class="mw-headline">Side Note: Model Additions</span>
 
 The Uniprot configuration section has a second tab named *Source Model
-Additions*, which specifies the addtions to the data model that a
+Additions*, which specifies the additions to the data model that a
 particular source brings with it. The uniprot source adds the following
 classes:
 
@@ -551,7 +551,7 @@ rel="nofollow">KEGG pathway database</a>. In their words:
 > "*KEGG PATHWAY mapping is the process to map molecular datasets,
 > especially large-scale datasets in genomics, transcriptomics,
 > proteomics, and metabolomics, to the KEGG pathway maps for biological
-> interpretaion of higher-level systemic functions.*"
+> interpretation of higher-level systemic functions.*"
 
 Specifically, the data we have will provide mappings between genes and
 KEGG pathways. It takes the form of two files in

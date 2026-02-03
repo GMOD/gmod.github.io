@@ -174,7 +174,7 @@ Commonalities, good ideas, strengths and weaknesses
 2.  Gene page reports
     - Most MODs agree that users like short summaries and graphical
       presentations of data.
-    - Individiual MODs vary widely in deciding how much detail is
+    - Individual MODs vary widely in deciding how much detail is
       displayed in the default view.
     - Individual MODs struggle with how to direct users, in an obvious
       manner, toward deeper levels of information
@@ -186,7 +186,7 @@ Commonalities, good ideas, strengths and weaknesses
       others (FlyMine) provide this functionality through set operations
       on 'bags' of objects.
 4.  User choices in data reports
-    - This is an aknowledged weak aspect many MODs; most have yet to
+    - This is an acknowledged weak aspect many MODs; most have yet to
       develop systems that allow users to customize reports and instead
       expect users to parse information from current, defined formats
       (which can vary wildly between databases). Some MODs (e.g.
@@ -242,7 +242,7 @@ Commonalities, good ideas, strengths and weaknesses
   to use (e.g. the Batch Sequences tool at Wormbase). MODs generally
   thought that we should avoid rapid turnover in UI, but many felt that
   frequent, small changes and additions can be useful to community (if
-  clearly explaned)
+  clearly explained)
 
 ### <span id="Gathering_and_Analyzing_User_Feedback" class="mw-headline">Gathering and Analyzing User Feedback</span>
 
@@ -260,7 +260,7 @@ Commonalities, good ideas, strengths and weaknesses
     extremely useful (ApiDB and ZFin both have experience with these
     techniques). Using "paired" teams (matched for status/gender) allows
     you to hear people explaining, to each other, how to use your site.
-  - Log site usage, moniter it enough to recognize common "failed"
+  - Log site usage, monitor it enough to recognize common "failed"
     queries, and figure out how to address and prevent such errors
 
 <!-- -->
@@ -483,7 +483,7 @@ should be sure to include:
 
 - Easy way to direct Google/Bots to best or full content (e.g. gene
   pages) is with a site map with links to everything you want to expose.
-  - detecting user agent, query referal string, etc., in web query lets
+  - detecting user agent, query referral string, etc., in web query lets
     report software alter output (e.g. give Google all of report to
     index, highlight Google user queries)
   - Google offers indexing tips, directions to update or hide specific

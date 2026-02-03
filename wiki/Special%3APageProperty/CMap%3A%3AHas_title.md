@@ -19,7 +19,7 @@
 - BASC
 - BeeBase
 - CMap 1.01: a comparative mapping application for the Internet.
-- Comparitive Location Database
+- Comparative Location Database
 - Composite Wheat Map
 - Cotton Marker Database
 - CottonDB

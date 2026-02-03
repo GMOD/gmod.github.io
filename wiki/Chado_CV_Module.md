@@ -1264,7 +1264,7 @@ cvterm_dbxref Structure
 A relationship linking two cvterms. Each cvterm_relationship constitutes
 an edge in the graph defined by the collection of cvterms and
 cvterm_relationships. The meaning of the cvterm_relationship depends on
-the definition of the cvterm R refered to by type_id. However, in
+the definition of the cvterm R referred to by type_id. However, in
 general the definitions are such that the statement "all SUBJs REL some
 OBJ" is true. The cvterm_relationship statement is about the subject,
 not the object. For example "insect wing part_of thorax".
@@ -1487,7 +1487,7 @@ cvtermprop Structure
 ## <span id="Table:_cvtermsynonym" class="mw-headline">Table: cvtermsynonym</span>
 
 A cvterm actually represents a distinct class or concept. A concept can
-be refered to by different phrases or names. In addition to the primary
+be referred to by different phrases or names. In addition to the primary
 name (cvterm.name) there can be a number of alternative aliases or
 synonyms. For example, "T cell" as a synonym for "T lymphocyte".
 
@@ -1547,7 +1547,7 @@ cvtermsynonym Structure
 
 Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
-analagous to cvtermprop.
+analogous to cvtermprop.
 
 | F-Key                                               | Name          | Type    | Description                 |
 | --------------------------------------------------- | ------------- | ------- | --------------------------- |

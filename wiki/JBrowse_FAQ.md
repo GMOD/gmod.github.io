@@ -193,8 +193,8 @@ for more details
     why?</span>](#Setup.sh_.22Installing_perl_prerequisites.22_fails_for_me.2C_why.3F)
   - [<span class="tocnumber">9.2</span> <span class="toctext">Should I
     be worried about the error "Building and installing legacy wiggle
-    format (superceded by BigWig
-    tracks)...failed"?</span>](#Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superceded_by_BigWig_tracks.29...failed.22.3F)
+    format (superseded by BigWig
+    tracks)...failed"?</span>](#Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superseded_by_BigWig_tracks.29...failed.22.3F)
   - [<span class="tocnumber">9.3</span> <span class="toctext">I see a
     message that says "Congratulations, JBrowse is on the web" but I
     don't see my
@@ -683,7 +683,7 @@ runtime. The "order" behind loading all the config files is something
 like this:
 
 1.  The index.html initializes a global Browser object, and the
-    paramaters to the constructor are used as the start of the config
+    parameters to the constructor are used as the start of the config
 2.  The Browser class "includes"  both jbrowse_config.json and
     jbrowse.conf using defaultConfig
 3.  The jbrowse.conf by default includes both {dataRoot}/trackList.json
@@ -740,7 +740,7 @@ from BAM files or bigwigs, but it does index names from VCF files too.
 
 You can select specific tracks that you want to index with --tracks
 arguments to generate-names.pl. You can disable "autocomplete" by
-setting --completetionLimit 0 on generate-names.pl. You can "update"
+setting --completionLimit 0 on generate-names.pl. You can "update"
 your search index by using --incremental
 
 Also note: you can index additional fields of a GFF file with
@@ -1126,7 +1126,7 @@ string them together into a single feature (e.g. by taking the min and
 max of all hsps)
 
 Note: The links.rb passes us the accession and hsps variables
-implicitely. The notation for the query start/end and subject start/end
+implicitly. The notation for the query start/end and subject start/end
 are shortened as qend, send, sstart, and qstart
 
 We use the addFeatures URL parameter of JBrowse to make the features
@@ -1405,13 +1405,13 @@ subcategories.
 Example
 
         {
-         "category": "ParentCatgory / DiseaseBAM",
+         "category": "ParentCategory / DiseaseBAM",
          "label": "myTrack",
          "storeClass": "JBrowse/Store/SeqFeature/BAM",
          "type": "Alignments2";
         },
         {
-         "category": "ParentCatgory / NonDiseaseBAM",
+         "category": "ParentCategory / NonDiseaseBAM",
          "label": "myTrack2",
          "storeClass": "JBrowse/Store/SeqFeature/BAM",
          "type": "Alignments2";
@@ -1705,11 +1705,11 @@ Then re-run setup.sh
 Also make sure you use "./setup.sh" or "bash setup.sh", do not use "sh
 setup.sh"
 
-## <span id="Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superceded_by_BigWig_tracks.29...failed.22.3F" class="mw-headline">Should I be worried about the error "Building and installing legacy wiggle format (superceded by BigWig tracks)...failed"?</span>
+## <span id="Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superseded_by_BigWig_tracks.29...failed.22.3F" class="mw-headline">Should I be worried about the error "Building and installing legacy wiggle format (superseded by BigWig tracks)...failed"?</span>
 
 This error is often due to some system issues about compiling libraries
 like libpng, and for all intents and purposes can be ignored, as it is
-only used in wig-to-json.pl and this is superceded by directly reading
+only used in wig-to-json.pl and this is superseded by directly reading
 BigWig files (no conversion step needed)
 
 You can follow these instructions for how to setup a BigWig file if

@@ -26,7 +26,7 @@
 - [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
   controlled vocabularies and ontologies
 - [Expression](Chado_Expression_Module "Chado Expression Module") - for
-  summaries of RNA and protein expresssion
+  summaries of RNA and protein expression
 - [General](Chado_General_Module "Chado General Module") - for
   identifiers
 - [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic

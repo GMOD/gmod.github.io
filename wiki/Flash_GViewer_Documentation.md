@@ -103,7 +103,7 @@ Here are some of the Flash GViewer's current features:
   highlights for multiple features to better visualize their overlapping
   regions. Click again to turn each feature's highlight off.
 - Clicking on a feature can open up a new browser window with a
-  cusomizable URL, eg a gene report page.
+  customizable URL, eg a gene report page.
 - Clicking on a chromosome will expand that chromosome and enlarge and
   label the features making them easier to view. Click the chromosome
   again to return the whole genome view.
@@ -212,7 +212,7 @@ below.
 
 ### <span id="Input_Parameters" class="mw-headline">Input Parameters</span>
 
-These values are passed into the flash application (refered to as a SWF
+These values are passed into the flash application (referred to as a SWF
 or "swiff" file, as it has a .swf suffix) via the `<object>` tag used to
 place the flash SWF on an HTML page. An example tag that you might place
 on an HTML page is given below. In this hypothetical example we are
@@ -292,7 +292,7 @@ XML</td>
 </tr>
 <tr class="odd">
 <td>annotationXML</td>
-<td>An embbeded annotation XML string that defines the annotation
+<td>An embedded annotation XML string that defines the annotation
 directly in the HTML page, rather than the SWF file having to call a
 remote script or file. If the annotationXML parameter is defined it will
 take precedence over the annotation URL - ie it will use the XML
@@ -339,7 +339,7 @@ rel="nofollow">http://genome.ucsc.edu/cgi-bin/hgTracks?org=Rat%26position=Chr1:1
 <p>The part in purple comes from the browserURL value, the part in bold
 is added to the end of the URL to complete the browser URL. %26 is used
 to escape the ampersand present in the UCSC URL otherwise it interferes
-with the apersands delimiting the various FlashVars parameters.</p></td>
+with the ampersands delimiting the various FlashVars parameters.</p></td>
 </tr>
 </tbody>
 </table>
@@ -432,7 +432,7 @@ indicate attributes of elements
 
 | XML Element | description |
 |----|----|
-| chromosome | Each chromosome's data is contained within a chromsome element |
+| chromosome | Each chromosome's data is contained within a chromosome element |
 | @index | the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc). |
 | @number | the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer |
 | @length | the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML. |
@@ -555,7 +555,7 @@ The annotation XML format looks like this:
 </tr>
 <tr class="even">
 <td>type</td>
-<td>feature type, used to determin what glyph to use when rendering the
+<td>feature type, used to determine what glyph to use when rendering the
 feature - currently two types gene and qtl. Gene is displayed as a
 triangle with the point towards the chromosome at the location of the
 feature. QTL is displayed as a bar stretching from the start location to
@@ -587,11 +587,11 @@ simple web form is available that takes annotation from a text field or
 uploaded file and displays it against the base map selected by the user.
 This allows users to view their own data against a variety of different
 base maps (eg. Mouse-Human syntenic map, Mouse-Rat syntenic map).
-Availble options include:
+Available options include:
 
 Upload annotations in a simple text format, either by pasting into the
 form or uploading a file Select from one of the available base maps (or
-create your own and edit the list accordingly) Cusomize the movie's
+create your own and edit the list accordingly) Customize the movie's
 color scheme. The background color, bar color and wedge colors can be
 modified using a pop-up color selector. Select different movie sizes.
 Three size options are provided - normal, large and extra large.
@@ -621,7 +621,7 @@ basemaps are assumed to be in the GViewer/data directory.
      ...
      </select>
 
-The web page can be cusomized to fit in with an existing web site by
+The web page can be customized to fit in with an existing web site by
 modifying the .css stylesheet, changing the header graphic and the
 gradient.gif file used to create the background for the form header
 rows. The form is the only part of the page that is required so the
@@ -697,7 +697,7 @@ Import the JavaScriptFlashGateway.js javascript file.
 
      Configure the flash proxy that acts as a bridge between the javascript and GViewer flash movie. A unique ID (uid) is created that configures the connection between javascript and a particular instance of the flash movie. If
      you have more than one GViewer on the page, you should use different uids to communicate with them individually.
-     There is then a simple javascript function that takes the name of a feature and an appropriate action parameter and then calls the setHiglight or unsetHighlight methods in the flash movie.
+     There is then a simple javascript function that takes the name of a feature and an appropriate action parameter and then calls the setHighlight or unsetHighlight methods in the flash movie.
 
      <script type="text/javascript">
 
@@ -754,7 +754,7 @@ should make the highlight go away.
   an entire set of genome annotations (25,000 genes, 600,000 ESTs, etc),
   they will need to be filtered somehow. If you try a really large
   dataset, let me know how it goes!
-- If you have lots of features that overlap on the chromsome, when you
+- If you have lots of features that overlap on the chromosome, when you
   view an individual chromosome the current layout manager displays them
   all so they dont overlap - the problem being this may spread outside
   of the viewable area. You can now turn the labels off in the zoomed

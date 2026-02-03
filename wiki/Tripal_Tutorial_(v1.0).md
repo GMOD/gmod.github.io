@@ -227,7 +227,7 @@ how to get this AMI.
 ### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
-Managment System (CMS) and GMOD Chado. The goal is to simplify
+Management System (CMS) and GMOD Chado. The goal is to simplify
 construction of a community genomics website to enable individual labs
 or research communities to construct a high-quality, standards-based
 website for data sharing and collaboration.
@@ -304,7 +304,7 @@ Chado has a modular structure:
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
   ontologies
-- Expression - for summaries of RNA and protein expresssion
+- Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
 - Library - for descriptions of molecular libraries
@@ -833,7 +833,7 @@ web browser or we can use the 'wget' command to retrieve it:
    wget http://ftp.drupal.org/files/projects/drupal-6.26.tar.gz
 ```
 
-**Note:** The current version of Drupal is Drupal 7.x. Relase v1.0 of
+**Note:** The current version of Drupal is Drupal 7.x. Release v1.0 of
 Tripal is the final version that will be compatible with Drupal 6.x.
 Future major releases of Tripal will be compatible with Drupal 7.x.
 
@@ -1014,7 +1014,7 @@ height="475" alt="800px-Tripal Install4.png" />
 
 ### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
 
-The last step for installing Drupal is setting up the automatted Cron
+The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
 housekeeping tasks on a regular interval. Cron is a UNIX facility for
 scheduling jobs to run at specific intervals.
@@ -1183,7 +1183,7 @@ height="522" alt="800px-DrupalThemes2.png" />
 ##### <span id="Blocks" class="mw-headline">Blocks</span>
 
 Blocks in Drupal are used to provide content in regions of a Drupal
-theme. For example, navigate to **Adminster** → **Site Building** →
+theme. For example, navigate to **Administer** → **Site Building** →
 **Blocks**.
 
 You'll see that regions of the theme have been identified. Within the
@@ -1276,7 +1276,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="800" height="613" alt="Druapl menus4.png" />
 
   
-Using the insructions above to add a second menu item for our about page
+Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
 
@@ -1578,7 +1578,7 @@ sudo drush
 
 You must always run drush commands within the Drupal installation. It
 does not matter what subdirectory so long as you are in the Drupal
-directory sturcture. To see a list of available commands type the
+directory structure. To see a list of available commands type the
 following:
 
 ``` enter
@@ -2066,7 +2066,7 @@ the fields with these values:
 - Abbreviation: C. sinensis
 - Common name: Sweet orange
 - Description: Sweet orange is the No.1 citrus production in the world,
-  accounting for about 70% of the total. Brazil, Flordia (USA), and
+  accounting for about 70% of the total. Brazil, Florida (USA), and
   China are the three largest sweet orange producers. Sweet orange
   fruits have very tight peel and are classified into the hard-to-peel
   group. They are often used for juice processing, rather than fresh
@@ -2229,7 +2229,7 @@ SwissProt:
 
 Now that we have our organism and whole genome analysis ready, we can
 being loading genomic data. For this tutorial only a single gene from
-sweet orange will be loaded into the databsae. This is to ensure we can
+sweet orange will be loaded into the database. This is to ensure we can
 move through the tutorial rather quickly. The following datasets will be
 used for this tutorial:
 
@@ -2290,7 +2290,7 @@ performance by using the Perl-based Chado loaders to load your GFF file.
 A log file will be generated containing step-by-step output from loading
 the GFF file. The location of the log file is printed to the terminal
 window while the GFF file is loading. In the file you can look for any
-errors or problems that may have been encountred when loading your file.
+errors or problems that may have been encountered when loading your file.
 There should be no errors or warnings after loading the GFF file for
 this tutorial. A portion of the log file appears below:
 
@@ -2429,7 +2429,7 @@ therefore link this feature to Phyztome using **External Database
 Reference** section under the advanced options. We would need to provide
 the name of the database and regular expression to tell the loader where
 the accession number is found in the definition line. The database
-cross-reference is present in the GFF file and this assocation has
+cross-reference is present in the GFF file and this association has
 already been made.
 
 If the name of the gene to which this mRNA belonged was also on the
@@ -2492,7 +2492,7 @@ or **match_part** features.
 
   
 Now, we can view our gene and mRNA pages. Navigate to **Search
-Biological Data** → **Feautres**. Click the **Show** button without
+Biological Data** → **Features**. Click the **Show** button without
 adding any search criteria. The results will be all available features.
 
 <img
@@ -2600,7 +2600,7 @@ feature ID number of 283942, the feature ID would appear as 'ID283942'.
 For this tutorial, we want to set the URL for all of the features we
 loaded previously. To do this, click the option **feature name** and
 then click the 'Set Feature URLs'. This will add a job to the jobs
-subsytem. We want to execute this job manually:
+subsystem. We want to execute this job manually:
 
 ``` enter
 cd /var/www
@@ -2638,7 +2638,7 @@ default, on the organism page, Tripal will provide a list of all
 features associated with an organism and provide a pie-chart showing
 this list. You can turn this off by setting the appropriate radio
 button. You can also specify which feature types to show and can rename
-them to be more meaningful (e.g. reanme match to 'BLAST match'). Below
+them to be more meaningful (e.g. rename match to 'BLAST match'). Below
 is a screen shot of the **Date Type Summary** available for the data we
 loaded. This is accessed by clicking on the link on the right side bar
 of the **Citrus sinensis** organism page.
@@ -2660,7 +2660,7 @@ changes and have those shown in the summary.
 For this tutorial we will be loading functional data for our gene. To do
 this we will use the Blast, KEGG, and InterPro extension modules. These
 modules were installed previously. Blast, KEGG and InterPro analyses
-were completed prior to this tutorial and results files are avaialble
+were completed prior to this tutorial and results files are available
 for downloading:
 
 - <a
@@ -2709,7 +2709,7 @@ width="800" height="489" alt="Tripal-Blast-Settings.png" />
 
 This page allows you to specify a different more meaningful name for the
 database to be displayed with blast results as well as to specify
-regular expressions for parsing blast htis. We will be adding blast
+regular expressions for parsing blast this. We will be adding blast
 results for the two databases we created earlier in the tutorial: ExPASy
 SwissProt and NCBI nr. First, select ExPASy SwissProt from the drop-down
 menu.
@@ -2863,7 +2863,7 @@ for this analysis
   - InterProScan XML File/Directory:
     /var/www/sites/default/files/citrus_sinensis-orange1.1g015632m.g.iprscan.xml
   - Check the box 'Submit a job to parse the Interpro XML output'
-  - Chekc the box 'Load GO terms'
+  - Check the box 'Load GO terms'
   - Parameters: iprscan -cli -goterms -ipr -format xml
 
   
@@ -2900,7 +2900,7 @@ width="800" height="489" alt="Tripal-Interpro-Results.png" />
 
 When we setup the InterPro analysis we requested that it parse GO terms
 from the InterProScan results. As a result, we now have a new **GO
-Assigments** item in the **Resources** sidebar. For our example feature
+Assignments** item in the **Resources** sidebar. For our example feature
 (<a href="http://localhost/orange1.1g015615m" class="external free"
 rel="nofollow">http://localhost/orange1.1g015615m</a>), the results are
 as follows:
@@ -2931,7 +2931,7 @@ When complete the following report will be visible:
 The GO report provides pie charts and an expandable tree for browsing
 results. Clicking on a GO term in the true will cause a box to appear
 with details about the term and a link to download a FASTA file of all
-featurs annotated with the term.
+features annotated with the term.
 
   
 
@@ -2941,7 +2941,7 @@ Now we want to load results from a KEGG/KAAS analysis
 (<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
 rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>). The KAAS server
 receives as input a FASTA file of sequences and annotates those with
-KEGG terms. The tool also generates an heirarchy (heir) output file.
+KEGG terms. The tool also generates an hierarchy (heir) output file.
 This output file can be read directly by the Tripal Analysis KEGG
 module.
 
@@ -3000,7 +3000,7 @@ width="800" height="489" alt="Tripal-KEGG-Results.png" />
 
   
 
-Simliar to the GO report. A KEGG report is also avilable on the analysis
+Similar to the GO report. A KEGG report is also available on the analysis
 and the organism page. Navigate to the *Citrus sinensis* organism page
 and click the **KEGG Analysis Reports** in the **Resources** sidebar. A
 page with instructions is visible:
@@ -3023,7 +3023,7 @@ width="800" height="489" alt="Tripal-KEGG-Results-After.png" />
 
   
 Site visitors can browse KEGG results by expanding the trees
-correspoding to the the Brite terms.
+corresponding to the the Brite terms.
 
 ### <span id="Customizing_The_Look-and-Feel_of_Tripal" class="mw-headline">Customizing The Look-and-Feel of Tripal</span>
 
@@ -3045,7 +3045,7 @@ As mentioned previously, you can alter the look-and-feel of a Tripal
 site by customizing the templates. However, in the case of adding new
 items to the **Resources** sidebar of an organism, feature or analysis
 page, you can do this using the Content Construction Kit (CCK). The CCK
-is a 3rd-parth Drupal module that allows new fields to be added to any
+is a 3rd-path Drupal module that allows new fields to be added to any
 content. Using the CCK we will add new fields to our organism page which
 Tripal will recognize as new resources.
 
@@ -3147,7 +3147,7 @@ processing. We want to allow HTML input.
 Don't forget to exclude these two fields as well!
 
   
-In summary, we created three new fields that will appear on our organims
+In summary, we created three new fields that will appear on our organism
 page. Tripal will recognize these new field names (e.g.
 field_resource_titles, field_resources_blocks and field_resource_links)
 and will automatically put new items on the **Resources** sidebar for
@@ -3174,8 +3174,8 @@ following link to the **Resource Links** text box:
 C sinensis at Phytozome|http://www.phytozome.net/search.php?method=Org_Csinensis
 ```
 
-The title that will apear in the sidebar appears before the '\|'
-charater. The link comes after. Now we want to add our downloads page.
+The title that will appear in the sidebar appears before the '\|'
+character. The link comes after. Now we want to add our downloads page.
 In the **Resource Titles** field add the text, 'Downloads', in the first
 field. Then in the first text area under **Resource Blocks** add the
 following text:
@@ -3245,7 +3245,7 @@ Finally, we can do the same for all Tripal content types (e.g. Analysis,
 Feature, etc.) However, because we have already created the CCK fields
 we don't need to create them again. We simply reuse them on the other
 content types. For example, if we were to add these same fields to the
-**Analysis** content type, a new section appers when managing the fields
+**Analysis** content type, a new section appears when managing the fields
 called **Existing field**.
 
 <img
@@ -3283,7 +3283,7 @@ search forms under the **Search Biological Data** link in the navigation
 menu. We have used these search forms several times in this tutorial to
 find an organism, feature or analysis. If you prefer different columns
 in the search results, or would like to expose different fields for
-search criteria, you can edit the View that corresonds to each of these
+search criteria, you can edit the View that corresponds to each of these
 search forms to change how these search pages behave. YOu edit the Views
 using the Views UI web interface and no PHP, HTML or any web programming
 is required to make changes to these search pages.
@@ -3300,7 +3300,7 @@ Materialized views, Views Integration and Drupal Views, you can create
 custom pages not currently supported by Tripal.
 
   
-For infomation on working with Views see the Views project page:
+For information on working with Views see the Views project page:
 <a href="http://drupal.org/project/views" class="external free"
 rel="nofollow">http://drupal.org/project/views</a>. Rembmer that Tripal
 v1.0 runs on Drupal 6.x using Views 2 (no need to learn Views 3 on
@@ -3311,17 +3311,17 @@ Drupal 7).
 Another advanced feature not described in this tutorial is the Tripal
 Bulk Loader, which is a new feature added to version 1.0. Often, data is
 not in common formats such as GFF, FASTA, GAF, InterPro XML, etc., but
-rather in Excel spreadsheets or tab-delimited or comma-separted files.
+rather in Excel spreadsheets or tab-delimited or comma-separated files.
 The goal of the bulk loader is to enable a user to load data in these
 formats into the Chado schema. Currently, the bulk loader allows a site
 administrator to create custom loader templates that will allow a user
 to load tab-delimited files of any format.
 
   
-Using the bulk loader web-interface, the priviledged user creates a
+Using the bulk loader web-interface, the privileged user creates a
 "template" for loading a tab-delimited file. This templates specifies
 which fields in the Chado tables the values in the tab-delimited file
-will be stored. Once the template is fully defined, the priviledge user
+will be stored. Once the template is fully defined, the privilege user
 saves the template for other users to use. Another user can then load
 any tab-delimited files that matches the template. The user can upload
 as many files as desired.
@@ -3332,7 +3332,7 @@ coming in the future.
 
 #### <span id="Creating_Custom_Modules" class="mw-headline">Creating Custom Modules</span>
 
-As mentioned early in the Tutoral, Tripal is a modular software package.
+As mentioned early in the Tutorial, Tripal is a modular software package.
 A Tripal API has been developed to help others who want to extend the
 functionality of Tripal. Anyone is welcome to develop modules for Tripal
 to suit their own needs and perhaps share them back with the community.

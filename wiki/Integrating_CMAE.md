@@ -17,7 +17,7 @@
 
 
 
-Note: This document was generated from a POD formated document checked
+Note: This document was generated from a POD formatted document checked
 in at <a
 href="http://gmod.cvs.sourceforge.net/gmod/cmap/editor/Integrating_CMAE.pod?view=markup"
 class="external text" rel="nofollow">sourceforge</a>. Editing will not

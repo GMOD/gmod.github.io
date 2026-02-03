@@ -726,7 +726,7 @@ The following general steps are performed:
     for
     - Including specifying the method for retrieving auto-generated
       sequence values from inserts
-    - This file could als be easily auto-generated
+    - This file could also be easily auto-generated
 2.  Make some type adjustments for some variables
     - For example, iBatis mapped some things to Java strings that should
       have been Integers
@@ -1233,7 +1233,7 @@ worrying about the complex details of the schema on a day-to-day basis.
 - Database connectivity: Uses the
   [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI") connection from
   GMOD. No connection configuration necessary since Modware is built on
-  top of GMOD and the coonnection is configured on GMOD install.
+  top of GMOD and the connection is configured on GMOD install.
 - Transaction support: Transactions are fully supported. The database
   handle is available as a singleton through Modware::DBH. To rollback
   at any time, simply insert
@@ -1513,7 +1513,7 @@ hand-edited
 
 - Configurable coarse grained layer tailored for the presentation layer
 - Configurable in XML by non-programmers
-- Seemless integration with front-end query engine and web page
+- Seamless integration with front-end query engine and web page
   generator
 
 #### <span id="Limitations_9" class="mw-headline">Limitations</span>
@@ -1551,7 +1551,7 @@ hand-edited
 
 - slow, but improving, build times (loads and integrates ~25m objects in
   ~36 hours)
-- configuration complicated but being simplfied
+- configuration complicated but being simplified
 - deals well with overlapping features, but currently limited support
   for querying locations in DNA or protein sequences
 - export still limited to tab or comma-delimited or FASTA formats though

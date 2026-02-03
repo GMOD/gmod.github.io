@@ -289,7 +289,7 @@ Graphics format. Available from CPAN.
 
 Bio::SCF File::Temp io-lib(v1.7+)  
 Needed by the sequencing trace glyph to parse SCF files and display the
-trace graph. The io-lib library can be downlowded from <a
+trace graph. The io-lib library can be downloaded from <a
 href="https://sourceforge.net/project/showfiles.php?group_id=100316&amp;package_id=108243"
 class="external free"
 rel="nofollow">https://sourceforge.net/project/showfiles.php?group_id=100316&amp;package_id=108243</a>

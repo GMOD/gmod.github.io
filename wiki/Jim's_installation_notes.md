@@ -209,7 +209,7 @@ Forge ahead anyway.
 
      perl Makefile.PL 
     ************************************************************************
-    The following enviroment variables not detected:
+    The following environment variables not detected:
       GMOD_ROOT
       CHADO_DB_NAME
     Please read the INSTALL document and set required environment variables.
@@ -228,7 +228,7 @@ until opening a new Terminal (I think).
 Lots of output. Failed. Possible culprits:
 
     --WARNING-------------------------------------------------
-    The envirnment variable GO_ROOT is not set.
+    The environment variable GO_ROOT is not set.
     Ontology loading may not work correctly without it.
     ----------------------------------------------------------
 

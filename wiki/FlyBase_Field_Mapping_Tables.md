@@ -592,7 +592,7 @@ rel="nofollow">http://flybase.org/reports/FBgn0259750.html</a>
   FROM feature f, feature_relationship fr, feature m, feature_pub mp, pub p,
      cvterm cvt, cvterm cvt2, featureprop fp
   WHERE f.uniquename LIKE &#39;FBgn%&#39; AND f.feature_id = object_id AND
-    su\ bject_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
+    su\ object_id = m.feature_id AND m.type_id = cvt.cvterm_id AND
     cvt.name IN (&#39;aberration_junction&#39;,&#39;complex_substitution&#39;,
       &#39;deletion&#39;,&#39;enhancer&#39;,
       &#39;insertion_site&#39;,&#39;point_mutation&#39;,
@@ -5308,7 +5308,7 @@ rel="nofollow">http://flybase.org/reports/FBti0000001.html</a>
   FROM featureprop fp, feature f, cvterm cvt
   WHERE fp.feature_id=f.feature_id AND f.uniquename=&#39;FBti0000001&#39; AND
     f.is_obsolete=&#39;f&#39; AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;derived_comput_cyto_location&#39;;</code></pre>
+    cvt.name=&#39;derived_compute_cyto_location&#39;;</code></pre>
 
 </td>
 </tr>
@@ -5773,7 +5773,7 @@ rel="nofollow">http://flybase.org/reports/FBti0000001.html</a>
 <pre class="de1"><code>SELECT fp.VALUE, pub.uniquename
   FROM featureprop fp, feature f, featureprop_pub frp, cvterm cvt, pub
   WHERE fp.feature_id=f.feature_id AND fp.type_id=cvt.cvterm_id AND
-    cvt.name=&#39;availablility&#39; AND pub.pub_id=frp.pub_id AND
+    cvt.name=&#39;availability&#39; AND pub.pub_id=frp.pub_id AND
     frp.featureprop_id=fp.featureprop_id AND f.is_obsolete=&#39;f&#39; AND
     f.uniquename=&#39;FBti0000001&#39;;</code></pre>
 

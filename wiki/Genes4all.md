@@ -83,7 +83,7 @@ the users.
   - genes4all_explore - Create gene pages for sequence features directly
     from Chado
   - genes4all_curation - Provide a community curation system where web
-    users write to the Drupal database and curators can visualy 'save'
+    users write to the Drupal database and curators can visually 'save'
     accepted annotations to Chado.
 
 <!-- -->

@@ -79,7 +79,7 @@ mRNA molecules in a cell. One cDNA library has only one cloning vector.
 
 1.  Library name and uniquenames are generally from the first 2 letters
     of the the cDNA_clones, or the first 2 letters and vector name e.g.
-    _AT library_, _HL_pOT2 libary_
+    _AT library_, _HL_pOT2 library_
 2.  Library stored in _library_ table, type as _cDNA library_.
 3.  _libraryprop_ table stores the general description for each library
     as type _comment_ and the vector for each library as type _element_.

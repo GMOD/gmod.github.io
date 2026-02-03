@@ -887,8 +887,8 @@ that we have used for development of sites we manage. These include:
 - Unigene -- manages storage of features from a transcriptome unigene
   assembly.
 - KEGG -- manages storage and display of KEGG results for features as
-  well as browseable trees for analyses.
-- InterProScan -- manage storage and dispaly of InterProScan results for
+  well as browsable trees for analyses.
+- InterProScan -- manage storage and display of InterProScan results for
   features as well contribute GO terms
 - Gene Ontology (GO) -- provides trees and charts for visualization of
   GO term assignments as well as listing assigned GO terms on feature
@@ -1152,7 +1152,7 @@ can see them by navigating to **Administer → Content Management →
 Content**. However, we need a way for users to find features. There are
 two ways to do this:
 
-1.  Add a browseable list of features (good for small sites)
+1.  Add a browsable list of features (good for small sites)
 2.  Searching
 
 ### <span id="Feature_Materialized_Views" class="mw-headline">Feature Materialized Views</span>
@@ -1184,7 +1184,7 @@ as a pie chart.
 
 ### <span id="Browse_Features" class="mw-headline">Browse Features</span>
 
-Another potentially useful feature is a browseable list of features in
+Another potentially useful feature is a browsable list of features in
 the database. This also appears on the organism page, but controlled by
 the feature module.
 
@@ -1192,13 +1192,13 @@ To show the list of features, navigate to the **Administer → Tripal
 Management → Features**. Click the button **Set Browser** in the
 **Feature Browser** section.
 
-**Note**: This browseable list can cause organism pages to load slowly
+**Note**: This browsable list can cause organism pages to load slowly
 for large sites. This is a problem with the way Drupal handles paged
 lists.
 
 ### <span id="Enable_Searching_of_Features" class="mw-headline">Enable Searching of Features</span>
 
-Aside from the browseable list we cannot locate features for viewing
+Aside from the browsable list we cannot locate features for viewing
 without searching. To index features for searching, navigate to
 **Administer → Tripal Management → Features**. Click on the button
 **Reindex all feature nodes**.
@@ -1542,7 +1542,7 @@ content can be completely changed.
 
 Concepts
 
-1.  The Tripal Core provides all necessary functionality to intergate
+1.  The Tripal Core provides all necessary functionality to integrate
     with Tripal.
 2.  Drupal API provide the rest
 
@@ -1704,7 +1704,7 @@ function is particularly useful in \_install hooks of .install files.
 *function tripal_add_mview
 (\$name,\$modulename,\$mv_table,\$mv_specs,\$indexed,\$query,\$special_index)*
 
-Programatically adds a materialized view to chado. This view can then be
+Programmatically adds a materialized view to chado. This view can then be
 used behind-the-scenes by the module to help speed data queries. This
 function is particularly useful in \_install hooks of .install files. An
 explanation of the argument is as follows
@@ -1778,7 +1778,7 @@ Now execute the following SQL statements
             WHERE CV.name = 'pub_demo' AND CVT.name = 'journal'));
  
    INSERT INTO pubauthor (pub_id,rank,surname,givennames)
-   VALUES ((SELECT pub_id FROM pub WHERE uniquename = 'demo_pub'),0,'Brower-Toland','et al.');
+   VALUES ((SELECT pub_id FROM pub WHERE uniquename = 'demo_pub'),0,'Browser-Toland','et al.');
  
    INSERT INTO feature_pub (feature_id,pub_id)
    VALUES ((SELECT feature_id FROM feature WHERE uniquename = 'FBgn0040037'),
@@ -1958,7 +1958,7 @@ We'll discuss each function...
          'access arguments' => array('access chado_publication content'),
          'type' => MENU_NORMAL_ITEM
       );
-      // the administative settings menu
+      // the administrative settings menu
       $items['admin/tripal/tripal_publication'] = array(
         'title' => 'Publications',
         'description' => 'Manage integration of Chado publications including associated features',

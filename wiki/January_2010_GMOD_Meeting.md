@@ -547,7 +547,7 @@ were the most useful or interesting?**
 - The NIF keynote presentation, Bio%253A%253AChado%253A%253ASchema, StrategiesWDK,
   Status updates/help desk"
 - gnpAnnot, Ergatis pipeline, StrategiesWDK
-- Steve Fischer's query trees demo was intriuging - it's a great way for
+- Steve Fischer's query trees demo was intriguing - it's a great way for
   user to dive into the data, TopoView GBrowse glyph at FlyBase - very
   cool, The Ergatis demo was interesting, but seems too complicated to
   use elsewhere.

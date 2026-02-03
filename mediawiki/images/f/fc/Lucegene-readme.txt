@@ -259,7 +259,7 @@ These doc/obj dbs are very non-normalized, but are a close match in
 structure to the knowledge structures representing 'genes', 'proteins',
 etc.  
 
-For a simple tabular data set, RDBMS and Lucene/text retreival systems
+For a simple tabular data set, RDBMS and Lucene/text retrieval systems
 will perform similarly (biodata tests suggest lucene is a bit faster).
 As the complexity of data objects increase, the RDBMS structure needed
 to represent them in normal form require a more complex searches, while

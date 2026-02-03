@@ -41,8 +41,8 @@
   - [<span class="tocnumber">3.5</span> <span class="toctext">Structure
     of the Tripal Theme
     Directory</span>](#Structure_of_the_Tripal_Theme_Directory)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">Themeing
-    Content Types</span>](#Themeing_Content_Types)
+  - [<span class="tocnumber">3.6</span> <span class="toctext">Theming
+    Content Types</span>](#Theming_Content_Types)
   - [<span class="tocnumber">3.7</span> <span class="toctext">Where To
     Put a Template File</span>](#Where_To_Put_a_Template_File)
   - [<span class="tocnumber">3.8</span> <span class="toctext">Layout of
@@ -125,17 +125,17 @@
 Tripal provides two Application Programming Interfaces (APIs) that
 allows developers to interact and customize Tripal and Chado content:
 
-1.  **Tripal Themeing API**: allows customization of the look-and feel
+1.  **Tripal Theming API**: allows customization of the look-and feel
     of the site through API function calls and template files.
 2.  **Tripal Module Development API**: allows addition of new or custom
     functionality through module development.
 
-The Themeing API provides an interface for developers who want to change
+The Theming API provides an interface for developers who want to change
 the look-and feel of their site. These developers may not necessarily
 want to create new modules, but want to customize how their data is
 presented. The first section in this handbook describes how to use the
 API to make such changes. A knowledge of Chado and the relationships
-between tables is necessary to use the Themeing API.
+between tables is necessary to use the Theming API.
 
 The Module Development API provides an interface for module developers
 to interact with the Chado database as well as the other Tripal core
@@ -168,7 +168,7 @@ add the following to the top of the template file:
 dpm($variables['node']);
 ```
 
-To see a list of all of the variables avaialable to your template you
+To see a list of all of the variables available to your template you
 would use the following:
 
 ``` enter
@@ -290,7 +290,7 @@ Inside of the Tripal theme are the following directories:
 
   
 
-### <span id="Themeing_Content_Types" class="mw-headline">Themeing Content Types</span>
+### <span id="Theming_Content_Types" class="mw-headline">Theming Content Types</span>
 
 Each content type in Drupal has two names, a human-readable name and a
 programmatic name. When Drupal shows a content type (or node) for
@@ -328,7 +328,7 @@ available:
 Additionally, several commonly used extension modules have the following
 content type names:
 
-- chado_analyis_blast
+- chado_analysis_blast
   (<a href="http://tripal.sourceforge.net/?q=node/22" class="external text"
   rel="nofollow">Blast Analysis Extension</a>)
 - chado_analysis_interpro
@@ -336,7 +336,7 @@ content type names:
   rel="nofollow">Interpro Analysis Extension</a>)
 - chado_analysis_kegg
   (<a href="http://tripal.sourceforge.net/?q=node/25" class="external text"
-  rel="nofollow">KEGG Analysis Extesion</a>)
+  rel="nofollow">KEGG Analysis Extension</a>)
 - chado_analysis_unigene
   (<a href="http://tripal.sourceforge.net/?q=node/26" class="external text"
   rel="nofollow">Unigene Analysis Extension</a>)
@@ -1249,8 +1249,8 @@ Chado makes heavy use of vocabularies. For instance, the **feature**
 table in Chado has a **type_id** column which has a foreign key
 constraint with the **cvterm** table. The **cvterm** table is where the
 terms from controlled vocabularies and ontologies are stored. This
-**type_id** column is used to speficy the type of feature (e.g. gene,
-protien, cDNA, etc.) Examples of publicly curated ontologies include the
+**type_id** column is used to specify the type of feature (e.g. gene,
+protein, cDNA, etc.) Examples of publicly curated ontologies include the
 <a href="http://obofoundry.org/ro/" class="external text"
 rel="nofollow">Relationship</a>,
 <a href="http://www.sequenceontology.org/" class="external text"
@@ -1603,7 +1603,7 @@ function tripal_example_module_perm(){
 
    // create permission types to allow the site admin to
    // specify which users can access, create, delete or edit
-   // the content provided by nodes of this type.  Implmentation
+   // the content provided by nodes of this type.  Implementation
    // of these permissions is performed in the hook_access()
    // function below.
    $perms = array(
@@ -1863,7 +1863,7 @@ function tripal_example_module_install(){
 function tripal_example_module_schema() {
 
    // This is the function that Drupal calls to install any custom
-   // tables needed by the module.  Drupal uses an array strcture
+   // tables needed by the module.  Drupal uses an array structure
    // to define the table.  Below is an example.  See the Drupal API and
    // reference documentation for more info.
    $schema['example_node'] = array(

@@ -441,7 +441,7 @@ balloon.config.js
   // See http://gmod.org/wiki/Popup_Balloons#Customization for  //
   // details about config options                               //
   //                                                            //
-  // values can be overriden in custom config cases (see below) //
+  // values can be overridden in custom config cases (see below) //
   ////////////////////////////////////////////////////////////////
   if (!balloon.configured) {                                    //
     balloon.fontColor          = 'black';                       //
@@ -630,7 +630,7 @@ The above example passes the feature object to the tooltips function you
 added to the init_code section. More simply, you could just do:
 
 balloon hover = \[GBox\] Whatever text you want goes here.... balloon
-click = \[GBox\] Whatevr sticky text ...
+click = \[GBox\] Whatever sticky text ...
 
 [Categories](Special%253ACategories "Special%253ACategories"):
 

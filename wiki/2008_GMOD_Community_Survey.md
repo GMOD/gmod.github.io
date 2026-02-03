@@ -395,7 +395,7 @@ had more than one response:
 
 | \# Responses | Location   |
 |--------------|------------|
-| 5            | Austrailia |
+| 5            | Australia |
 | 5            | China      |
 | 3            | Japan      |
 | 3            | Singapore  |

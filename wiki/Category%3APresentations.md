@@ -1788,7 +1788,7 @@ The following 135 files are in this category, out of 135 total.
 
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
-  width="120" height="120" alt="Jan2009GenreicGenePage.pdf" />
+  width="120" height="120" alt="Jan2009GenericGenePage.pdf" />
 
   
 
@@ -1796,7 +1796,7 @@ The following 135 files are in this category, out of 135 total.
 
   
 
-  [Jan2009GenreicGenePage...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf "File:Jan2009GenreicGenePage.pdf")  
+  [Jan2009GenericGenePage...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f3/Jan2009GenreicGenePage.pdf "File:Jan2009GenericGenePage.pdf")  
   410 KB  
 
   

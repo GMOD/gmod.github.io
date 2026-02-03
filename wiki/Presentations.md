@@ -48,9 +48,9 @@ participants.
   evolutionary science</span>](#Chado_for_evolutionary_science)
 - [<span class="tocnumber">9</span> <span class="toctext">Flybase
   next-generation</span>](#Flybase_next-generation)
-- [<span class="tocnumber">10</span> <span class="toctext">Comparitive
+- [<span class="tocnumber">10</span> <span class="toctext">Comparative
   Genomics with GMOD and
-  Bioperl</span>](#Comparitive_Genomics_with_GMOD_and_Bioperl)
+  Bioperl</span>](#Comparative_Genomics_with_GMOD_and_Bioperl)
 - [<span class="tocnumber">11</span> <span class="toctext">The GMOD
   Project: Order from Chaos</span>](#The_GMOD_Project:_Order_from_Chaos)
 
@@ -106,7 +106,7 @@ title="02-chado-for-nescent-2006.pdf">02-chado-for-nescent-2006.pdf</a>
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf" class="internal"
 title="Flybase-ng-may03.pdf">Flybase-ng-may03.pdf</a>
 
-### <span id="Comparitive_Genomics_with_GMOD_and_Bioperl" class="mw-headline">Comparitive Genomics with GMOD and Bioperl</span>
+### <span id="Comparative_Genomics_with_GMOD_and_Bioperl" class="mw-headline">Comparative Genomics with GMOD and Bioperl</span>
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/04-Stajich_NESCENT_GMOD.pdf"
 class="internal"

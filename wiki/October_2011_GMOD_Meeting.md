@@ -434,7 +434,7 @@ implementation issues. This meeting is part of the InterMod project,
 which involves supporting InterMine data-warehouses for _D.
 melanogaster_, _R. norvegus_, _M. musculus_, _S. cerevisiae_, _D. rerio_
 and _C. elegans_. Groups representing other efforts to use InterMine for
-biological data-warehousing are welcome to attend (as indeed some aleady
+biological data-warehousing are welcome to attend (as indeed some already
 are) - please contact [Richard Smith](User%253ARsmith "User%253ARsmith") for
 more details.
 

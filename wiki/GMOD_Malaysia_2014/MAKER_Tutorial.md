@@ -348,7 +348,7 @@ Scripts:
   transcripts.gtf file into GFF3 format for use in MAKER via GFF3
   passthrough. By default strandless features which correspond to single
   exon cufflinks models will be ignored. This is because these features
-  can correspond to repetative elements and pseudogenes. Output is to
+  can correspond to repetitive elements and pseudogenes. Output is to
   STDOUT so you will need to redirect to a file.
 
 <!-- -->
@@ -399,12 +399,12 @@ Scripts:
 <!-- -->
 
 - *maker2eval_gtf* - This script converts MAKER GFF3 files into GTF
-  formated files for the program EVAL (an annotation
+  formatted files for the program EVAL (an annotation
   sensitivity/specificity evaluating program). The script will only
   extract features explicitly declared in the GFF3 file, and will skip
   implicit features (i.e. UTR, start codons, and stop codons). To
   extract implicit features to the GTF file, you will first need to
-  expicitly declare them in the GFF3 file. This can be done by calling
+  explicitly declare them in the GFF3 file. This can be done by calling
   the script add_utr_to_gff3 to add formal declaration lines to the GFF3
   file.
 
@@ -516,7 +516,7 @@ Scripts:
 
      map_gff_ids <map_file> <gff3_file>
 
-- *tophat2gff3* - This script converts the juctions file producted by
+- *tophat2gff3* - This script converts the juctions file produced by
   TopHat into GFF3 format for use with MAKER.
 
 <!-- -->

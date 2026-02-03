@@ -65,7 +65,7 @@ publication date, and whether a Kindle version is available.
 | Evolutionary Ecology of Social and Sexual Systems: Crustaceans As Model Organisms | J. Emmett Duffy and Martin Thiel | 0879698659 | Sep 2007 | 1 |
 | Emerging Model Organisms: A Laboratory Manual, Volume 2 | Cold Spring Harbor Laboratory Press | 0879698721 | Apr 2011 | 0 |
 | Emerging Model Organisms: A Laboratory Manual, Volume 1 | Cold Spring Harbor Laboratory Press | 0805074589 | Nov 2008 | 0 |
-| A Feeling for the Organism, 10th Aniversary Edition: The Life and Work of Barbara McClintock | Evelyn Fox Keller | 0898715547 | Feb 1984 | 0 |
+| A Feeling for the Organism, 10th Anniversary Edition: The Life and Work of Barbara McClintock | Evelyn Fox Keller | 0898715547 | Feb 1984 | 0 |
 
 book
 
@@ -102,7 +102,7 @@ be a good long term strategy.
 | Evolutionary Ecology of Social and Sexual Systems: Crustaceans As Model Organisms | J. Emmett Duffy and Martin Thiel | 0879698659 | Sep 2007 | 1 |
 | Emerging Model Organisms: A Laboratory Manual, Volume 2 | Cold Spring Harbor Laboratory Press | 0879698721 | Apr 2011 | 0 |
 | Emerging Model Organisms: A Laboratory Manual, Volume 1 | Cold Spring Harbor Laboratory Press | 0805074589 | Nov 2008 | 0 |
-| A Feeling for the Organism, 10th Aniversary Edition: The Life and Work of Barbara McClintock | Evelyn Fox Keller | 0898715547 | Feb 1984 | 0 |
+| A Feeling for the Organism, 10th Anniversary Edition: The Life and Work of Barbara McClintock | Evelyn Fox Keller | 0898715547 | Feb 1984 | 0 |
 
 book
 

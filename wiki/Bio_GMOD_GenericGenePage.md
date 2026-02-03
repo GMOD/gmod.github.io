@@ -167,7 +167,7 @@ implementation.
          Usage: my @refs = $genepage->lit_refs();
          Desc : get a list of literature references for this gene
          Args : none
-         Ret  : list of literature reference identifers, as type:id,
+         Ret  : list of literature reference identifiers, as type:id,
                 like ('PMID:0023423',...)
          Side Effects: none
 

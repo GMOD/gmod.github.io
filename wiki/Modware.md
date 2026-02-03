@@ -63,7 +63,7 @@ features directly from Chado.
 Please use our bug tracker on
 <a href="http://sourceforge.net/tracker/?group_id=94245"
 class="external text" rel="nofollow">SourceForge</a> to report bugs and
-feature reqeusts.
+feature requests.
 
 - For a wiki-ized version of a presentation done at the GMOD meeting in
   January 2007: [Modware
@@ -124,7 +124,7 @@ The first CPAN release is expected to be early next year.
 
 ## <span id="Feedback_Wanted" class="mw-headline">Feedback Wanted</span>
 
-Recently, a VMware Virutal Machine was released to make download and
+Recently, a VMware Virtual Machine was released to make download and
 testing of a fully configured and installed version of Modware
 available. Modware developers continue to add new features, including
 representation of BLAST hits (currently on CVS HEAD).

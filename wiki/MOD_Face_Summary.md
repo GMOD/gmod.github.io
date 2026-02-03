@@ -159,11 +159,11 @@ information by "type", list the types and show the first few of that
 type, allowing the user to expand/contract those lists by type, 2)
 permit the user at this point to interact to choose to either further
 limit the returned results or to page through the results. The
-threshhold at which one strategy is preferable to another needs to be
+threshold at which one strategy is preferable to another needs to be
 determined through user studies.
 
 *Gene page reports.* Most MODs agree that users like short summaries and
-graphical presentations of data. Individiual MODs vary widely in
+graphical presentations of data. Individual MODs vary widely in
 deciding how much detail is displayed in the default view. Individual
 MODs struggle with how to direct users, in an obvious manner, toward
 deeper levels of information.
@@ -194,7 +194,7 @@ rel="nofollow">Gramene</a>,
 class="external text" rel="nofollow">DictyBase</a>,
 <a href="http://insects.eugenes.org/BioMart/martview"
 class="external text" rel="nofollow">DroSpeGe</a>) for bulk data search
-and retreival, and is in development at others. Some MODs (e.g. FlyMine)
+and retrieval, and is in development at others. Some MODs (e.g. FlyMine)
 provide a more complex query UI that can operate on large lists (e.g.
 all genes), supporting pre-defined or user-defined data export formats.
 In addition intermediate results can be saved in 'bags' and these lists
@@ -242,7 +242,7 @@ easy exploration by novices).
   to use (e.g. the Batch Sequences tool at Wormbase). MODs generally
   thought that we should avoid rapid turnover in UI, but many felt that
   frequent, small changes and additions can be useful to community (if
-  clearly explaned)
+  clearly explained)
 
   
 
@@ -319,7 +319,7 @@ comprehensive record of all actions the users performed with the site.
 Additionally, the audio recording of each pair allowed investigators to
 hear how the users talked about and explained the site to each other,
 shedding some light on the way users think about their interactions with
-the site. ApiDB's presentation also pointed one disdvantage of this
+the site. ApiDB's presentation also pointed one disadvantage of this
 approach, which is the difficulty of analyzing the large amount of data
 collected during the study, since most of it is in the form of many
 hours of audio and video recordings. Despite the analysis difficulties,
@@ -580,7 +580,7 @@ should be sure to include:
 
 - Easy way to direct Google/Bots to best or full content (e.g. gene
   pages) is with a site map with links to everything you want to expose.
-  - detecting user agent, query referal string, etc., in web query lets
+  - detecting user agent, query referral string, etc., in web query lets
     report software alter output (e.g. give Google all of report to
     index, highlight Google user queries)
   - Google offers indexing tips, directions to update or hide specific

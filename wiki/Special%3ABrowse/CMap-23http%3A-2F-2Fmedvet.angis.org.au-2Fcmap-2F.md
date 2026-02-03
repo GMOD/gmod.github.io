@@ -20,7 +20,7 @@
 
 |  |  |
 |----|----|
-| [Linktitle](/wiki/Property%253ALinktitle "Property%253ALinktitle") | <span class="smwb-value">Comparitive Location Database  <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Linktitle/Comparitive-20Location-20Database "Special%253ASearchByProperty/Linktitle/Comparitive-20Location-20Database")</span></span> |
+| [Linktitle](/wiki/Property%253ALinktitle "Property%253ALinktitle") | <span class="smwb-value">Comparative Location Database  <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Linktitle/Comparitive-20Location-20Database "Special%253ASearchByProperty/Linktitle/Comparitive-20Location-20Database")</span></span> |
 | Linktopic | <span class="smwb-value">CMap  <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Linktopic/CMap "Special%253ASearchByProperty/Linktopic/CMap")</span></span> |
 | [Linktype](/wiki/Property%253ALinktype "Property%253ALinktype") | <span class="smwb-value">wild URL  <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Linktype/wild-20URL "Special%253ASearchByProperty/Linktype/wild-20URL")</span></span> |
 | Linkurl | <span class="smwb-value">http://medvet.angis.org.au/cmap/  <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Linkurl/http:-2F-2Fmedvet.angis.org.au-2Fcmap-2F "Special%253ASearchByProperty/Linkurl/http:-2F-2Fmedvet.angis.org.au-2Fcmap-2F")</span></span> |

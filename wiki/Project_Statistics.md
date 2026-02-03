@@ -220,7 +220,7 @@ rel="nofollow">NEScent</a></td>
 <td>14</td>
 <td>4</td>
 <td>from 7 states and 5 countries, including the UK, India, and the
-Phillipines</td>
+Philippines</td>
 </tr>
 <tr class="odd">
 <td><a href="2013_GMOD_Summer_School"

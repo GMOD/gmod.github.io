@@ -133,7 +133,7 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
     Support</span>](#MPI_Support)
   - [<span class="tocnumber">9.8</span> <span class="toctext">User
     Interface for Local MAKER
-    Instalation</span>](#User_Interface_for_Local_MAKER_Instalation)
+    Installation</span>](#User_Interface_for_Local_MAKER_Installation)
   - [<span class="tocnumber">9.9</span> <span class="toctext">MAKER
     Accessory Scripts</span>](#MAKER_Accessory_Scripts)
 

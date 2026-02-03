@@ -32,7 +32,7 @@ set of features** - eg. genes and QTLs associated with a specific
 [phenotype](Category%253APhenotypes "Category%253APhenotypes"), etc. rather than
 as a way to view all features on the genome. The features can hyperlink
 out to a detail page to enable to GViewer to be used as a navigation
-tool. In addition the bands on the chromosomes can link to defineable
+tool. In addition the bands on the chromosomes can link to definable
 URL and new region selection sliders can be used to select a specific
 chromosome region and then link out to a genome browser for higher
 resolution information.

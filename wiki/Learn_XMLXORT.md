@@ -26,7 +26,7 @@ rel="nofollow">acedb</a> underlines wormbase and acedb is organized into
 ace classes. the classes are
 <a href="http://wormbase.org/db/misc/database_stats"
 class="external text" rel="nofollow">here</a>. seems to me there are two
-stategies: first, for each class in ace set up a procedure to migrate
+strategies: first, for each class in ace set up a procedure to migrate
 its info into chado, this is like gff3 to chado, have to do a 'chain
 reaction' on chado tables; the good news is that we don't need to do
 'join' on the acedb side and once we are done, we know all data have
@@ -86,7 +86,7 @@ db(?).
 I started with class Paper. acedb classes are mixture of c structure and
 database description. pointers are to other class object. class paper
 points to class author, person, person_name, keyword?, address, role,
-laboratory. some are weak reference (circular, back_ref, dealed in perl
+laboratory. some are weak reference (circular, back_ref, dealt in perl
 module scalar::util, interesting it is here) obviously, a lot of *ad
 hoc* reading script needed.
 

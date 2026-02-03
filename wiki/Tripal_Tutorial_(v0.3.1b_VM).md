@@ -61,7 +61,7 @@ Drupal Administration
 
 PostgreSQL Login
 
-- Uername: tripal
+- Username: tripal
 - Password: tripaldemo
 - Database: tripal_demo
 
@@ -85,7 +85,7 @@ rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Ins
 <!-- -->
 
 Step 2  
-Peform the "Theme Configuration" section of the tutorial at this link
+Perform the "Theme Configuration" section of the tutorial at this link
 (only do this section):
 <a href="Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
 class="external free"

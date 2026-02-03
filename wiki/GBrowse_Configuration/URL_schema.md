@@ -225,7 +225,7 @@ The page that describes how to generate SVGs
 The id is a unique session ID that will store persistent configuration
 information. You do not typically need to use the id parameter except in
 the circumstance in which you wish to upload an annotation file
-programatically, in which case you should choose some large
+programmatically, in which case you should choose some large
 hard-to-guess number.
 
 **Upload, upload_annotations, id:**

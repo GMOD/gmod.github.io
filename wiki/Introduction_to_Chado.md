@@ -140,7 +140,7 @@ are more useful pages in the Wiki:
 - [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
   controlled vocabularies and ontologies
 - [Expression](Chado_Expression_Module "Chado Expression Module") - for
-  summaries of RNA and protein expresssion
+  summaries of RNA and protein expression
 - [General](Chado_General_Module "Chado General Module") - for
   identifiers
 - [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic
@@ -500,7 +500,7 @@ warehouse instantiation of Chado, we may choose to store locations for
 all features where known - this can vastly simplify some queries, but
 care must be taken to make sure we don't end up with inconsistent data.
 
-For the most part, infering the boundaries of composite features
+For the most part, inferring the boundaries of composite features
 requires fairly simple graph transformations, although care must be
 taken for the genes that break central dogma rules.
 

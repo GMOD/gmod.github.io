@@ -843,7 +843,7 @@ rel="nofollow">http://giardiadb.org</a></td>
 <td><a href="http://github.com/capsid" class="external free"
 rel="nofollow">http://github.com/capsid</a></td>
 <td>CaPSID</td>
-<td>Computational Pathogen Sequence IDentification - open source
+<td>Computational Pathogen Sequence IIdentification - open source
 platform for pathogen sequence identification</td>
 <td>JBrowse</td>
 <td>2013</td>
@@ -1100,7 +1100,7 @@ rel="nofollow">http://knowpulse2.usask.ca/portal/</a></td>
 <td><a href="http://krithgenomics.drupalgardens.com/"
 class="external free"
 rel="nofollow">http://krithgenomics.drupalgardens.com/</a></td>
-<td>K-RITH-Hopkins Genomics Web Portal</td>
+<td>K-WITH-Hopkins Genomics Web Portal</td>
 <td></td>
 <td>JBrowse</td>
 <td>2013</td>

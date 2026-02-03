@@ -28,7 +28,7 @@ curation toolset and functions as the interface between the literature
 curation tools and the online literature databases, such as PubMed. The
 aim of PubFetch is to provide a generic way of searching and retrieving
 literature data from online literature datasources so that the
-downstream applications dont have to deal with the idiosyncracies of the
+downstream applications dont have to deal with the idiosyncrasies of the
 individual literature databases.
 
 Initially PubFetch will act as the interface between PubSearch and the
@@ -59,8 +59,8 @@ desired.**
 The codebase will be developed initially in perl by adapting existing
 RGD perl modules designed to retrieve data from PubMed in a standard XML
 format. This code will be reviewed and adapted to create the main
-PubFetch module and appropriate database interace modules. Figure 2
-below is a schematic diagram of the exising RGD literature download
+PubFetch module and appropriate database interface modules. Figure 2
+below is a schematic diagram of the existing RGD literature download
 modules.
 
   
@@ -77,7 +77,7 @@ The fundamental actions required of PubFetch are:
 
 - Search LitDb for articles matching certain query criteria (eg.
   keywords, date, author, etc).
-  - This will most likely entail passing the search critieria to
+  - This will most likely entail passing the search criteria to
     PubFetch and retrieving a set of accession numbers (eg. PubMed IDs,
     PMIDs) for matching references.
 - Retrieve the text information from the LitDb corresponding to a

@@ -93,7 +93,7 @@ tells `mpiexec` to use 2 cpus/nodes when running `mpi_maker`. For a
 large cluster, this could be set to something like 100. You should now
 know how to start a MAKER job via MPI.
 
-### <span id="User_Interface_for_Local_MAKER_Instalation" class="mw-headline">User Interface for Local MAKER Instalation</span>
+### <span id="User_Interface_for_Local_MAKER_Installation" class="mw-headline">User Interface for Local MAKER Installation</span>
 
 The MWAS interface provides a very convenient method for running MAKER
 and viewing results; however, because compute resources are limited

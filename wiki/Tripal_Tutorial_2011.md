@@ -202,7 +202,7 @@ title="Tripal Tutorial">Tripal Tutorial</a> page.
 ### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
-Managment System (CMS) and GMOD Chado.
+Management System (CMS) and GMOD Chado.
 
 ![What is Tripal](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/600px-WhatisTripal.png)
 
@@ -263,7 +263,7 @@ rel="nofollow">http://www.drupal.org/project/themes</a>
 
 The session for Chado was presented yesterday
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
-for introdcutions. However, one thing to remember is that Chado has a
+for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
 - Audit - for database audits
@@ -271,7 +271,7 @@ modular structure:
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
   ontologies
-- Expression - for summaries of RNA and protein expresssion
+- Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
 - Library - for descriptions of molecular libraries
@@ -844,7 +844,7 @@ is enabled. Click the link **Your new site**:
 
 ### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
 
-The last step for installing Drupal is setting up the automatted Cron
+The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
 housekeeping tasks on a regular interval. Cron is a UNIX facility for
 scheduling jobs to run at specific intervals.
@@ -1040,7 +1040,7 @@ Check the README for additional installation instructions
 ```
 
 The installation file indicates we need to install the JQuery UI package
-before we can eanble this module. We must first get this package from
+before we can enable this module. We must first get this package from
 online.
 
 Here is a quick command for downloading this file
@@ -1140,7 +1140,7 @@ rel="nofollow">http://drupal.org/project/sky</a>
 ##### <span id="Blocks" class="mw-headline">Blocks</span>
 
 Blocks in Drupal are used to provide content in regions of a Drupal
-theme. For example, navigate to **Adminster** → **Site Building** →
+theme. For example, navigate to **Administer** → **Site Building** →
 **Blocks**.
 
 You'll see that regions of the theme have been identified. Within the
@@ -1429,7 +1429,7 @@ by users.
 Tripal provides two API function calls that allows any module to submit
 a job to the queue
 
-- A job sumbission function
+- A job submission function
 - A job status update function
 
 So, in the example above we now see a job for installing Chado. The job
@@ -1486,7 +1486,7 @@ is accessible at this URL:
 <a href="http://localhost/phppgadmin/" class="external free"
 rel="nofollow">http://localhost/phppgadmin/</a>
 
-Let's look at our Chado and Drupal databses using phpPgAdmin by first
+Let's look at our Chado and Drupal databases using phpPgAdmin by first
 logging in with the username **gmod** and password **gmodamericas2011**.
 When the tool opens you'll see several databases listed down the
 left-hand side. Click the **tripal_demo** database to open the tree.
@@ -1546,7 +1546,7 @@ will see several more administrative options available to you.**
 Tripal provides a theme for Drupal, but it is designed to be a **base
 theme**. This way the site can use any theme you want, but Tripal can
 still provide some theming support for the data components it generates.
-To enable the Tripal theme, Navigate to the **Adminster** → **Site
+To enable the Tripal theme, Navigate to the **Administer** → **Site
 Building** → **Themes** page and click the checkbox to Enable the
 **Tripal** theme. DO NOT click the **default** radio button for the
 Tripal theme. We do not want it to be default. The **Sky** theme should
@@ -1763,7 +1763,7 @@ the fields.
 
 ![TripalOrganism6](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/800px-TripalOrganism6.png)
 
-**_Excercise \#8_**
+**_Exercise \#8_**
 
      Create a new organism of your choice.   Once complete, click the
      Organism menu item at the top to see it in the list.
@@ -1821,7 +1821,7 @@ operations:
 - Inserting of synonyms (or Aliases) for features
 
 As of the SVN version it does not yet support (but will as time
-progesses):
+progresses):
 
 - loading of FASTA sequences at the bottom of the file
 - target relationships (between aligned sequences, e.g. blast)
@@ -1854,7 +1854,7 @@ Enter the following values
 - Import option: Import all and update.
 
 Click the **Import GFF3 button** when complete. You'll notice a job was
-submitted to the jobs substem. Now, to complete the process we need the
+submitted to the jobs subsystem. Now, to complete the process we need the
 job to run. We'll do this manually:
 
 ```enter

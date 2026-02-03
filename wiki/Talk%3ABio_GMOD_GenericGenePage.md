@@ -20,7 +20,7 @@
 ## <span id="Stuff_Jim_made_up_while_implementing_this_for_EcoliWiki_after_the_Jan_2009_GMOD_meeting" class="mw-headline">Stuff Jim made up while implementing this for EcoliWiki after the Jan 2009 GMOD meeting</span>
 
 In the absence of a schema to check against, I developed this by example
-from Josh's Flybase example. In the process, I made some arbitary
+from Josh's Flybase example. In the process, I made some arbitrary
 decisions that may be incompatible with what people want for the spec.
 Please suggest changes!
 

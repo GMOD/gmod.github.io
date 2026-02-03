@@ -175,7 +175,7 @@ Options
 
 | argument | default | description |
 |----|----|----|
-| f | clustalw | Specifies the alignment file format. Most common formats recongnized by BioPerl's <a href="http://doc.bioperl.org/releases/bioperl-1.0/Bio/AlignIO.html"
+| f | clustalw | Specifies the alignment file format. Most common formats recognized by BioPerl's <a href="http://doc.bioperl.org/releases/bioperl-1.0/Bio/AlignIO.html"
 class="external text" rel="nofollow">AlignIO parsers</a> are supported. Use <a href="http://www.bioperl.org/wiki/ClustalW_multiple_alignment_format"
 class="external text" rel="nofollow">clustalw</a> or <a href="http://www.bioperl.org/wiki/FASTA_multiple_alignment_format"
 class="external text" rel="nofollow">fasta</a> for best results. |

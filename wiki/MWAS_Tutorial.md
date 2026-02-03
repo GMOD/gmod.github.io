@@ -85,7 +85,7 @@
 ## <span id="Maker_Web_Annotation_Service" class="mw-headline">Maker Web Annotation Service</span>
 
 The MAKER Web Annotation Service (MWAS) is an easily configurable
-web-accesible genome annotation pipeline. It's purpose is to allow
+web-accessible genome annotation pipeline. It's purpose is to allow
 research groups with small to intermediate amounts of eukaryotic and
 prokaryotic genome sequence (i.e. BAC clones, small whole genomes,
 preliminary sequencing data, etc.) to independently annotate and analyse

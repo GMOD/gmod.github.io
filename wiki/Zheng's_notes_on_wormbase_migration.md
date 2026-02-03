@@ -164,7 +164,7 @@ I manually changed it to
 and put it at the top of the gff3 file, it is **NOT** a problem of gff3
 file, i.e., the file is valid wherever this line is or even without this
 line, but put it on top helps the bulk_load, or maybe
-gmod_gff3_prepocessor will try to do this change.
+gmod_gff3_preprocessor will try to do this change.
 
 - clone_end line
 
@@ -174,7 +174,7 @@ gmod_gff3_prepocessor will try to do this change.
     no cvterm for clone_end at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 3445, <GEN0>  line 12402.
     Issuing rollback() for database handle being DESTROY'd without explicit disconnect().
 
-this **is** a valid line, i.e, clone_end is a valid SOFA term, accroding
+this **is** a valid line, i.e, clone_end is a valid SOFA term, according
 to SOFA v2 (05-16-2005). what we loaded in chado installation is the SO
 latest minor revision version v2.1 (08-16-2006). in this version
 clone_end change to clone_insert_end.
@@ -199,7 +199,7 @@ clone_end change to clone_insert_end.
     Issuing rollback() for database handle being DESTROY'd without explicit disconnect().
 
 Noticed the above situation the cvterm is in column 3 (type), here the
-term is in column 9, a tag, such as ID, NAME, Dbxref, etc. I encoutered
+term is in column 9, a tag, such as ID, NAME, Dbxref, etc. I encountered
 a series of them, which **are good information**.
 
 |                         |
@@ -207,7 +207,7 @@ a series of them, which **are good information**.
 | confirmed_EST           |
 | confirmed_UTR           |
 | confirmed_Homology      |
-| confirmed_inconsistence |
+| confirmed_inconsistency |
 | confirmed_false         |
 | used_for_training       |
 | predicted ncrna gene    |
@@ -257,7 +257,7 @@ option is named noexon, tricky). my command becomes:
 
 this is what I think: shall have at least 3 lines for compliance with
 central dogma, a gene line, a mrna line and a cds line. the following
-warning is actually casued by lacking a gene line. this is what I
+warning is actually caused by lacking a gene line. this is what I
 observed:
 
     There is a CDS feature with no parent (ID:)  I think that is wrong!

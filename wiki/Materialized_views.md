@@ -71,7 +71,7 @@ materialized views:
            --dematerialize viewname
 
            Takes a MV and turns into a standard view.  This might be done if the
-           database administrator desides that the downsides of the MV scheme is
+           database administrator decides that the downsides of the MV scheme is
            not working for a given view, if for example, the data in the underly‐
            ing tables is changing to frequently or the MV is taking up too much
            disk space.
@@ -95,7 +95,7 @@ materialized views:
 
            -h|--help
 
-           Prints documetation and quits.
+           Prints documentation and quits.
 
 ## <span id="Creating_a_materialized_view_example" class="mw-headline">Creating a materialized view example</span>
 

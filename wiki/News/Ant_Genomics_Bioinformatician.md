@@ -44,7 +44,7 @@ href="http://www.isb-sib.ch/about-sib/jobs/details/91-sib-bioinformatician-at-si
 class="external text" rel="nofollow">official ad</a> for full details
 and application procedure
 
-Informal enquiries to yannick.wurm \at\\ unil.ch or laurent.falquet
+Informal enquiries to yannick.wurm \at\\ until.ch or laurent.falquet
 \at\\ isb-sib.ch
 
   

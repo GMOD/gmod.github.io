@@ -227,7 +227,7 @@ value on the table (2.0) will launch the minimum and maximum number of
 slaves for that load value (between 2 and 4 in this case).
 
 The reason for having a range of instance counts for each load range is
-to avoid unecessarily launching and killing slaves repeatedly when the
+to avoid unnecessarily launching and killing slaves repeatedly when the
 load fluctuates around the boundary. You may wish to tune the values in
 this table to maximize the performance of your GBrowse installation.
 
@@ -442,7 +442,7 @@ short periods of time, limiting the effect of theft.
 3.  On the Select Role Permissions screen, choose "Custom Policy". Give
     the policy a name like "GBrowseBalancer" and cut and paste into the
     Policy Document text field the permission policy listed above in the
-    instructions for creating a restriced IAM account. Be sure to remove
+    instructions for creating a restricted IAM account. Be sure to remove
     the whitespace before the beginning of the first curly brace, or the
     console will complain about an invalid policy.
 4.  You only need to do this once. After this, whenever you launch an

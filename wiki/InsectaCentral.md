@@ -92,7 +92,7 @@ driven by BioPerl's Bio::SeqFeature database.
 
 We provide deep annotation using BLAST similarity analysis to many
 databases, Electronic Inference Annotation of GO, EC and KEGG terms and
-also provide InterProScan domains. This process requires trememdous
+also provide InterProScan domains. This process requires tremendous
 computational power, so re-annotation is done sparingly. In addition, as
 there is no dedicated funding, we do not manually curate any of the
 datasets but we would do so should the opportunity arise. Likewise, as

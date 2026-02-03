@@ -302,7 +302,7 @@ larger sequence is built up from one or more smaller ones.
 Both cases are indicated by using the Target tag in the group field. For
 example, a typical similarity hit will look like this:
 
-    Chr1 BLASTX similarity 76953 77108 132 + 0 Target Protein:SW:ABL_DROME 493 544
+    Chr1 BLASTX similarity 76953 77108 132 + 0 Target Protein:SW:ABLE_DROME 493 544
 
 Here, the group field contains the Target tag, followed by an identifier
 for the biological object. The GFF format uses the notation Class:Name
@@ -314,7 +314,7 @@ on the target sequence.
 Unlike the main start and stop columns, it is possible for the target
 start to be greater than the target end. The previous example indicates
 that the the section of Chr1 from 76,953 to 77,108 aligns to the protein
-SW:ABL_DROME starting at position 493 and extending to position 544.
+SW:ABLE_DROME starting at position 493 and extending to position 544.
 
 A similar notation is used for sequence assembly information as shown in
 this example:

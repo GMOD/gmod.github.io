@@ -648,7 +648,7 @@ add
 
 to the top of `data/trackList.json`, just inside the first open curly
 brace. Reload JBrowse and turn on the Genes track if it isn't already
-and see the wonder of the psuedo-3D gene glyphs.
+and see the wonder of the pseudo-3D gene glyphs.
 
 Note that not all plugins are activated this way: typically, if the
 plugin modifies the way tracks look, it will go here. If it modifies the

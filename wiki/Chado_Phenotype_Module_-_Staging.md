@@ -227,7 +227,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## <span id="Table:_phenotype_cvterm" class="mw-headline">Table: phenotype_cvterm</span>
 
-Deprecated and superceded by phenotypeprop.
+Deprecated and superseded by phenotypeprop.
 
 | FK | Name | Type | Description |
 |----|----|----|----|

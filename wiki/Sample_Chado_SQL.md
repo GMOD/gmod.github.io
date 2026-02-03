@@ -141,7 +141,7 @@ Sample result
 
 # <span id="chromosome_summary" class="mw-headline">chromosome_summary</span>
 
-This is an extention of feature summary, to identify source features.
+This is an extension of feature summary, to identify source features.
 These are the chromosomes, scaffolds, contigs or other features on which
 other (genes, etc.) are located. It is essential for Chado software to
 know about these source features. If you are working with someone else's

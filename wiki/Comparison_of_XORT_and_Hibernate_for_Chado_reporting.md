@@ -51,7 +51,7 @@ rel="nofollow">iBATIS</a> was also investigated but no formal tests were
 done with it, more on that later.
 
 In the end XORT proved to be the better choice, but only because it
-excelled in areas that were most important to us. Other situtations may
+excelled in areas that were most important to us. Other situations may
 not be the same so please don't take this case study literally without
 carefully weighing your needs and expectations. We hope that our
 experience can prove to be useful in this respect.
@@ -95,7 +95,7 @@ code.
 
 **Setting up XORT**  
 Setting up XORT is fairly simple if you've installed perl modules
-before. The trickiest part is making sure that the ddl.properites file
+before. The trickiest part is making sure that the ddl.properties file
 that describes your schema matches the actual schema that is in the
 database. Once that is done all you need to do is write a dumpspec to
 dump the data you want.
@@ -184,7 +184,7 @@ large number of objects. Thus if you are working on applications that
 fit this model it might be a good system to evaluate. It provides so
 much functionality out of the box like advanced caching, application
 level transactions, and much more that it is worth considering.
-Hibernate's query lanaguage (HQL) does take a small amount of time to
+Hibernate's query language (HQL) does take a small amount of time to
 get used to but it is rich enough to provide almost as much flexibility
 as standard SQL. If you do find it limiting for some things it is
 possible to place SQL in the mapping files to get around the
@@ -195,7 +195,7 @@ iBATIS and Hibernate such as a caching layer to reduce the impact of
 redundant calls to tables. It also needs to have improved documentation
 so that the barrier for using it is lowered for those who may not be
 familiar with Chado and how it is structured. A tutorial with a few use
-case scenarious that describe what each line does would be immensely
+case scenarios that describe what each line does would be immensely
 helpful. Once you become familiar with Chado's structure, writing
 dumpspecs is fairly straightforward. Overall, these are minor short
 comings and we were pleased with XORT.

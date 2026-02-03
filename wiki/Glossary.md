@@ -302,7 +302,7 @@ within the DBMS.
 See also:
 
 - [Database Schema](#Database_Schema)
-- [Database Managment System](#Database_Managment_System)
+- [Database Management System](#Database_Management_System)
 - [DBMS-Database](#DBMS-Database)
 
 ### <span id="FASTA" class="mw-headline">FASTA</span>
@@ -418,7 +418,7 @@ See also:
 
 ### <span id="GUI" class="mw-headline">GUI</span>
 
-*GUI* is an acronym for ***G**raphical **U**ser **I**nterface.* GUIs are
+*GUI* is an acronym for ***G**raphical **U**set **I**nterface.* GUIs are
 interfaces to computer programs that use graphics, mice, pull down
 menus, check boxes, and other interactive elements. GUIs contrast with
 *command line interfaces,* where you interact with the program using
@@ -620,7 +620,7 @@ X](Category%253AMac_OS_X "Category%253AMac OS X"), and many others.
 
 ### <span id="XML" class="mw-headline">XML</span>
 
-*XML* is an acronym for *e**X**tensible **M**arkup **L**anguage*, a data
+*XML* is an acronym for *e**X**tensible **M**arkup **L**language*, a data
 format used primarily for sharing data. It looks similar to HTML, but
 has a much tighter syntax than does HTML.
 

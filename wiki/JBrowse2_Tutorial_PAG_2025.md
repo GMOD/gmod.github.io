@@ -829,7 +829,7 @@ of the arcs to get a set, but lets pick one region so we're all looking
 at the same thing. The authors mention a rearrangement in the unc-36
 gene, and we can filter the locations by region. To do that, click on
 hover dropdown triangle in the Location column header (that is, put your
-mouse over the Location header to get the triange to appear, then click
+mouse over the Location header to get the triangle to appear, then click
 on it) to get a menu, and select the "Create filter" option. Then paste
 in this location (the coordinates of the unc-36 gene to find overlapping
 predictions):

@@ -120,7 +120,7 @@ Contributor: Sohel Merchant
 - [Chado_Best_Practices#Copy_Number_Variations](Chado_Best_Practices#Copy_Number_Variations "Chado Best Practices")
 - [Chado_Best_Practices#Single_Nucleotide_Polymorphisms\_.28SNPs.29](Chado_Best_Practices#Single_Nucleotide_Polymorphisms_.28SNPs.29 "Chado Best Practices")
 - [Chado_Best_Practices#Extensions](Chado_Best_Practices#Extensions "Chado Best Practices")
-- [Chado_Best_Practices#Similiarities_to_Alignments](Chado_Best_Practices#Similiarities_to_Alignments "Chado Best Practices")
+- [Chado_Best_Practices#Similarities_to_Alignments](Chado_Best_Practices#Similarities_to_Alignments "Chado Best Practices")
 - [Chado_Best_Practices#GO_annotations](Chado_Best_Practices#GO_annotations "Chado Best Practices")
 
 ### <span id="Package_3" class="mw-headline">Package 3</span>

@@ -194,7 +194,7 @@ Extended Objects and methods:
       5primeUTR, false otherwise.
     - boolean contains3primeUTR(): returns true if exon contains
       3primeUTR, false otherwise.
-    - CDSRegion getCDSRegion(): Returns CDSRegion compoenent of an exon
+    - CDSRegion getCDSRegion(): Returns CDSRegion component of an exon
       if it exists.
     - 5primeUTR get5primeUTR(): Returns 5primeUTR component of an exon
       if it exists.

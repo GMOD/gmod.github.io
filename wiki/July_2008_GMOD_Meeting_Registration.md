@@ -576,7 +576,7 @@ populating the XML. This could be a Perl program with methods for
 fetching data and then passing it to another routine for placing the
 data into an XML format. Each organization would write the classes
 called by the hooks to get the data from wherever they keep it. Provides
-a framework that can be used across mutliple organizations and that will
+a framework that can be used across multiple organizations and that will
 always produce structurally identical XML, no matter how it is
 originally stored.
 
@@ -869,7 +869,7 @@ Components (in all their possible versions and combinations).
 However, if we made it easy for GMOD users to record their experiences
 installing whatever combination they are using then that might be a
 useful approximation. New users would then be able to find several
-possible workarounds when they, for eample, can't get libgd to work.
+possible workarounds when they, for example, can't get libgd to work.
 Maybe one of the workarounds will even be for there Linux distribution.
 
 We already have several such logs on the web site.

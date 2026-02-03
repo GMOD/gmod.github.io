@@ -51,7 +51,7 @@ functions:
             before Lucene indexes}
    
   
-LuceneXxxIndexer does in essense this:
+LuceneXxxIndexer does in essence this:
    load databank properties
    locate files to index (see properties)
    get Analyzer (BiodataAnalyzer or other, with field-handling)

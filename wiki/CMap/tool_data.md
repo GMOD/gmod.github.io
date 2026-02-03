@@ -104,7 +104,7 @@ rel="nofollow">https://gmod.svn.sourceforge.net/svnroot/gmod/cmap</a> \|
 dl_dev = \| dl_dev_url = \| getting_started_preamble = \| req =
 
 - Perl 5.6.0 or higher
-- A web server with CGI capabilites (e.g., Apache 1.x or 2.x)
+- A web server with CGI capabilities (e.g., Apache 1.x or 2.x)
 - A relational database, e.g.
   <a href="http://www.mysql.com" class="external text"
   rel="nofollow">MySQL (4.0+)</a>, Sybase Adaptive Server Enterprise,
@@ -228,7 +228,7 @@ class="external text" rel="nofollow">Tutorial @ Gramene</a>
   class="external text" rel="nofollow">Pristionchus pacificus Physical
   Map</a>
 - <a href="http://medvet.angis.org.au/cmap/" class="external text"
-  rel="nofollow">Comparitive Location Database</a>
+  rel="nofollow">Comparative Location Database</a>
 - <a href="http://soybeanbreederstoolbox.org/index.php"
   class="external text" rel="nofollow">Soybean Breeders Toolbox</a>
 - <a href="http://map.lab.nig.ac.jp:8080/cmap/" class="external text"

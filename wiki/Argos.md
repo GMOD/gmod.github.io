@@ -230,7 +230,7 @@ These are overviews of FlyBase's server system structures.
       -- need to find/make package distribution management utility
          -- should include logic to update infrastructure software from source sites
       -- focus on 'rsync' now as main distribution tool
-      -- evaluting of RPM, pacman, cluster-backup/mirror tools,
+      -- evaluating of RPM, pacman, cluster-backup/mirror tools,
          grid packaging tools - none quite right
       -- want CVS management of biodb structure, package info, configs
          but not main programs, data, binaries

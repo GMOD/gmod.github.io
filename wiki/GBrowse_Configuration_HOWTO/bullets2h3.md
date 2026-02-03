@@ -1201,7 +1201,7 @@ apply here as well.
 
 NOTE: The path argument is ignored if gbrowse is running under modperl,
 because modperl allows the URL to be translated into a physical
-directory programatically.
+directory programmatically.
 
   
 
@@ -1387,7 +1387,7 @@ DEFAULTS\] section or to a track stanza. The format is this:
 
           link_target = _blank
 
-The value uses the HTML targetting rules to name/create the window to
+The value uses the HTML targeting rules to name/create the window to
 receive the value of the link. The first time the link is accessed, a
 window with the specified name is created. The next time the user clicks
 on a link with the same target, that window will receive the content of

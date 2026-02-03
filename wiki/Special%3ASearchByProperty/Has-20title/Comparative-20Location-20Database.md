@@ -7,18 +7,18 @@
 
 
 
-# <span dir="auto">Linktitle Comparitive Location Database</span>
+# <span dir="auto">Has title Comparative Location Database</span>
 
 
 
 
 
 
-A list of all pages that have property
-"[Linktitle](/wiki/Property%253ALinktitle "Property%253ALinktitle")" with value
-"Comparitive Location Database"  
+A list of all pages that have property "[Has
+title](/wiki/Property%253AHas_title "Property:Has title")" with value
+"Comparative Location Database"  
 
-- [CMap#http://medvet.angis.org.au/cmap/](/wiki/CMap#http:.2F.2Fmedvet.angis.org.au.2Fcmap.2F "CMap")  <span class="smwbrowse">[+](/wiki/Special%253ABrowse/CMap-23http%253A-2F-2Fmedvet.angis.org.au-2Fcmap-2F "Special%253ABrowse/CMap-23http%253A-2F-2Fmedvet.angis.org.au-2Fcmap-2F")</span>
+- [CMap](/wiki/CMap "CMap")  <span class="smwbrowse">[+](/wiki/Special%253ABrowse/CMap "Special%253ABrowse/CMap")</span>
 
  
 
@@ -38,7 +38,7 @@ Property:     Value:
 ### Namespaces
 
 - <span id="ca-nstab-special">[Special
-  page](/wiki/Special%253ASearchByProperty/Linktitle/Comparitive-20Location-20Database "This is a special page, you cannot edit the page itself")</span>
+  page](/wiki/Special%253ASearchByProperty/Has-20title/Comparitive-20Location-20Database "This is a special page, you cannot edit the page itself")</span>
 
 
 

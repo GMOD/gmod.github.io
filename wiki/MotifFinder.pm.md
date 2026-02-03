@@ -52,8 +52,8 @@ Weight Matrix</a></span>
     Presentation</span>](#Graphical_Presentation)
 - [<span class="tocnumber">3</span> <span class="toctext">How is the
   motif predicted?</span>](#How_is_the_motif_predicted.3F)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Caculate
-    Weight Score</span>](#Caculate_Weight_Score)
+  - [<span class="tocnumber">3.1</span> <span class="toctext">Calculate
+    Weight Score</span>](#Calculate_Weight_Score)
   - [<span class="tocnumber">3.2</span>
     <span class="toctext">Algorithms</span>](#Algorithms)
 
@@ -73,8 +73,8 @@ If you want to install it on your own GBrowse, please
 class="external text" rel="nofollow">contact the author</a> for source
 code and then follow the instruction below:
 
-- save both 'motiffinder' and 'MotifFinder.pm' under GBrwose plugin
-  diretory(set the permission as executable).
+- save both 'motiffinder' and 'MotifFinder.pm' under GBrowse plugin
+  directory(set the permission as executable).
 - save 'matrices.txt'(example of the PFM tables) under GBrowse conf
   directory
 - include "MotifFinder" in your main GBrowse.conf.
@@ -106,7 +106,7 @@ width="389" height="112" alt="Select.png" />
 
 - Reasonable default options are provided for each parameter.
 - Threshold: a cutoff score between 0.8 to 1 is recommended.
-- Background Probability: should be inputed in (A C G T) order.
+- Background Probability: should be inputted in (A C G T) order.
 - Indel Size: currently only small Indels(length under 6) can be
   handled.
 
@@ -160,7 +160,7 @@ alt="Display.png" />
 The problem is to find occurrences of known patterns(represented by
 position matrix) in new sequences.
 
-## <span id="Caculate_Weight_Score" class="mw-headline">Caculate Weight Score</span>
+## <span id="Calculate_Weight_Score" class="mw-headline">Calculate Weight Score</span>
 
 Scoring function is the same as the
 <a href="http://tfbs.genereg.net/" class="external text"

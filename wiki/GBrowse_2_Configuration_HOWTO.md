@@ -555,7 +555,7 @@ temporary files.
 The **config_base** directive is overridden by the environment variable
 GBROWSE_CONF. This variable is set when Apache starts up, and can be
 found in */etc/apache2/conf.d/gbrowse2.conf*, */etc/httpd/conf.d*, or
-*/etc/apache/conf.d*, depending on how your system is layed out.
+*/etc/apache/conf.d*, depending on how your system is laid out.
 
 buttons, balloons, gbrowse_help, js  
 These four configuration options tell GBrowse where to find the images
@@ -1064,7 +1064,7 @@ genome that it is safe to display in the detail panel.
 
 Several settings in the \[GENERAL\] section allow you to insert
 fragments of HTML (including images) into the GBrowse screen. This lets
-you create banners and other cutomizations for visual integration with
+you create banners and other customizations for visual integration with
 other pages on your site.
 
 header, footer
@@ -1292,7 +1292,7 @@ can define it this way:
 
 ### <span id="Using_Pipes_in_the_GBrowse.conf_Data_Source_Name" class="mw-headline">Using Pipes in the GBrowse.conf Data Source Name</span>
 
-It is sometimes convenient to generate datasource files programatically
+It is sometimes convenient to generate datasource files programmatically
 rather than using a static file. To do this, you can give GBrowse.conf a
 "path" option that uses Perl's "piped open" syntax to read the output of
 a script. For example:

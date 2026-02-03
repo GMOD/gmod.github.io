@@ -70,7 +70,7 @@ put everything else in a directory based on the version, e.g. v1
 
 #### <span id="gmod-rpc.2Fv1.2Frpc.php" class="mw-headline">gmod-rpc/v1/rpc.php</span>
 
-All this does is parse the URL to instantiate a contoller object for the
+All this does is parse the URL to instantiate a controller object for the
 desired service and a view object. The class files live in
 
 #### <span id="gmod-rpc.2Fv1.2Fsources.2F" class="mw-headline">gmod-rpc/v1/sources/</span>

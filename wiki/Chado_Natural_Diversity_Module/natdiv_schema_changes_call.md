@@ -233,7 +233,7 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
     the concern that the property tables weren't consistent if some have
     cvalue_id and others don't.
     - The issue here is whether the prop tables are the right place for
-      this. I think we can add non-uniform colums to prop tables,
+      this. I think we can add non-uniform columns to prop tables,
       assuming it is necessary, and Chado has no better way to answer. I
       think broad usage of prop tables should be limited. Look at props
       as a place to add some unstructured metadata (dates, names of

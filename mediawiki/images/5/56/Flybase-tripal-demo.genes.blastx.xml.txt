@@ -10,7 +10,7 @@
   <BlastOutput_query-len>75</BlastOutput_query-len>
   <BlastOutput_param>
     <Parameters>
-      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_matrix>BLOSSOM62</Parameters_matrix>
       <Parameters_expect>1e-06</Parameters_expect>
       <Parameters_gap-open>11</Parameters_gap-open>
       <Parameters_gap-extend>1</Parameters_gap-extend>

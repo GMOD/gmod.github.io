@@ -554,7 +554,7 @@ The following 35 files are in this category, out of 35 total.
   <img
   src="../mediawiki/skins/common/images/icons/fileicon-pdf.png"
   width="120" height="120"
-  alt="PAG2010HymenopteraGenomeDatabse.pdf" />
+  alt="PAG2010HymenopteraGenomeDatabase.pdf" />
 
   
 
@@ -562,7 +562,7 @@ The following 35 files are in this category, out of 35 total.
 
   
 
-  [PAG2010HymenopteraGeno...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/PAG2010HymenopteraGenomeDatabse.pdf "File:PAG2010HymenopteraGenomeDatabse.pdf")  
+  [PAG2010HymenopteraGeno...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8a/PAG2010HymenopteraGenomeDatabse.pdf "File:PAG2010HymenopteraGenomeDatabase.pdf")  
   1.81 MB  
 
   

@@ -145,7 +145,7 @@ class="external text" rel="nofollow">Get MAKER Bling!</a>
     Support</span>](#MPI_Support)
   - [<span class="tocnumber">9.8</span> <span class="toctext">User
     Interface for Local MAKER
-    Instalation</span>](#User_Interface_for_Local_MAKER_Instalation)
+    Installation</span>](#User_Interface_for_Local_MAKER_Installation)
   - [<span class="tocnumber">9.9</span> <span class="toctext">MAKER
     Accessory Scripts</span>](#MAKER_Accessory_Scripts)
 
@@ -310,7 +310,7 @@ tells `mpiexec` to use 2 cpus/nodes when running `mpi_maker`. For a
 large cluster, this could be set to something like 100. You should now
 know how to start a MAKER job via MPI.
 
-## <span id="User_Interface_for_Local_MAKER_Instalation" class="mw-headline">User Interface for Local MAKER Instalation</span>
+## <span id="User_Interface_for_Local_MAKER_Installation" class="mw-headline">User Interface for Local MAKER Installation</span>
 
 
 
@@ -471,7 +471,7 @@ Scripts:
   transcripts.gtf file into GFF3 format for use in MAKER via GFF3
   passthrough. By default standless features which correspond to single
   exon cufflinks models will be ignored. This is because these features
-  can correspond to repetative elements and pseudogenes. Ouput is to
+  can correspond to repetitive elements and pseudogenes. Output is to
   STDOUT so you will need to redirect to a file.
 
 <!-- -->
@@ -530,12 +530,12 @@ Scripts:
      gff3_preds2models <gff3 file> <pred list>
 
 - *gff3_to_eval_gtf* - This script converts MAKER GFF3 files into GTF
-  formated files for the program EVAL (an annotation
+  formatted files for the program EVAL (an annotation
   sensitivity/specificity evaluating program). The script will only
   extract features explicitly declared in the GFF3 file, and will skip
   implicit features (i.e. UTR, start codons, and stop codons). To
   extract implicit features to the GTF file, you will first need to
-  expicitly declare them in the GFF3 file. This can be done by calling
+  explicitly declare them in the GFF3 file. This can be done by calling
   the script add_utr_to_gff3 to add formal declaration lines to the GFF3
   file.
 
@@ -661,7 +661,7 @@ Scripts:
 
      split_fasta [count] <input_fasta>
 
-- *tophat2gff3* - This script converts the juctions file producted by
+- *tophat2gff3* - This script converts the juctions file produced by
   TopHat into GFF3 format for use with MAKER.
 
 <!-- -->

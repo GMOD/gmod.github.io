@@ -89,13 +89,13 @@ Any thoughts on these?
 
 Thanks for your time, Scott
 
-- Ian Holmes suggested their extentions to GBrowse
+- Ian Holmes suggested their extensions to GBrowse
   ([AJAX](Category%253AAJAX "Category%253AAJAX") and wiki).
 - Eric Just suggested [Modware](Modware "Modware").
 
 ## <span id="About_.27when_released.27" class="mw-headline">About 'when released'</span>
 
-- Work is on going on Chado core compoents, notably getting a conversion
+- Work is on going on Chado core components, notably getting a conversion
   from GFF3 to [chadoxml](Chado_XML "Chado XML") which will require
   changes to XORT.
 - There have been a few fixes to the

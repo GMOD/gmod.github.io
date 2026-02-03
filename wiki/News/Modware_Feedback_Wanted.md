@@ -26,7 +26,7 @@ makes heavy use of
 title="bp:Main Page">BioPerl</a> to provide a familiar and intuitive
 interface for objects stored inside of a Chado database.
 
-Recently, a VMware Virutal Machine was released to make download and
+Recently, a VMware Virtual Machine was released to make download and
 testing of a fully configured and installed version of Modware
 available. Modware developers continue to add new features, including
 representation of BLAST hits (currently on CVS HEAD).

@@ -99,7 +99,7 @@ the focus on this topic. Some ideas I have are:
 1.  Better support for comparative genomics (mainly MSA but also other
     types) data and data visualization. For example, bringing
     GBrowse_syn up to the same standard as GBrowse, improving support
-    for the data processing and loading, useing an ontology such as the
+    for the data processing and loading, using an ontology such as the
     multiple alignment ontology for critical meta-data not captured
     bycurrent MSA formats.
 2.  Others...

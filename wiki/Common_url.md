@@ -58,7 +58,7 @@ rel="nofollow">http://wfleabase.org/genome/</a> | *Daphnia pulex* and related cr
 rel="nofollow">DroSpeGe</a> | <a href="http://insects.eugenes.org/genome/" class="external free"
 rel="nofollow">http://insects.eugenes.org/genome/</a> | Twelve *Drosophila* insect species genomes |
 
-**Genome datasets available through the GMOD commom URL**
+**Genome datasets available through the GMOD common URL**
 
   
 

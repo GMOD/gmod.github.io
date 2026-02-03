@@ -420,7 +420,7 @@ part and its connection to Gbrowse2.</td>
 </tr>
 <tr class="even">
 <td>I know about the expression of DNA (for instance I have the mRNA or
-protein sequence that is expressed) and I would like to view the strech
+protein sequence that is expressed) and I would like to view the stretch
 of DNA this maps to while aligning cDNA, EST, predictor, promoter, etc.
 information</td>
 <td><a href="Apollo.1" title="Apollo">Apollo</a></td>
@@ -1417,7 +1417,7 @@ here.
   performance element is being addressed.
 - User [GBrowse v2](Category%253AGBrowse_2 "Category%253AGBrowse 2") Tutorial?
 - part of my job takes place on an academic expression platform. I have
-  to deal with expression microarray analyzes comming from 2 colors
+  to deal with expression microarray analyzes coming from 2 colors
   arrays and also from RNA-Seq and ChIP-Seq experiments. We use to give
   our users text files (in the time of small format arrays) but now,
   with tiling arrays, our users, who are big fans of bioinformatics

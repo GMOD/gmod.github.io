@@ -782,7 +782,7 @@ This will copy yourfile.fa and yourfile.fa.fai to the data directory
 Note: the \`prepare-refseqs.pl --sizes chrom.sizes\` option is maybe
 underappreciated. You can technically run jbrowse without any sequence
 data loaded, simply a set of chromosomes and their sizes. The
-chrom.sizes file simply can contain two column tab seperated list of
+chrom.sizes file simply can contain two column tab separated list of
 chromosome names and their lengths.
 
 # <span id="Formatting_Feature_Data" class="mw-headline">Formatting Feature Data</span>
@@ -1194,7 +1194,7 @@ mouseover).
     }
 ```
 
-Example using a callback (for either HMTLFeatures or CanvasFeatures),
+Example using a callback (for either HTMLFeatures or CanvasFeatures),
 using this.feature to access the feature details
 
 ```de1

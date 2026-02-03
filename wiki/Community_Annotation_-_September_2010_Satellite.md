@@ -122,7 +122,7 @@ proposed by Kim Rutherford.
 
 ## <span id="Participants" class="mw-headline">Participants</span>
 
-- Ellen Adlem, Cambridge University Cambridge Institue of Medical
+- Ellen Adlem, Cambridge University Cambridge Institute of Medical
   Research, <a href="http://www.t1dbase.org" class="external text"
   rel="nofollow">T1DBase</a>
 - Gerd Anders, Max-Delbrueck-Centrum Berlin (MDC)
@@ -345,7 +345,7 @@ community curator.
 We also discussed problems with requiring researchers to create yet
 another online login.
 
-EcoliWiki automatically creates logins for authors of newly enterred
+EcoliWiki automatically creates logins for authors of newly entered
 papers. The login is then sent to authors when they are first contacted.
 Another option could be to send them a custom URL that allows them to
 update the resource without having to login. If they access that URL,
@@ -437,7 +437,7 @@ years ago. Everyone agreed that it was a good idea then too.
 ### <span id="Communities_Without_a_MOD" class="mw-headline">Communities Without a MOD</span>
 
 What can be done for communities that don't have a central resource for
-the gathering and itegration of data? GONUTS is a resource for GO
+the gathering and integration of data? GONUTS is a resource for GO
 annotation for any organism. Other data-type specific resources are
 available for such communities. However, does anything exist for these
 communities that is unified?

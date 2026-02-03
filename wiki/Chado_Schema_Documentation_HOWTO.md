@@ -269,7 +269,7 @@ defined in Chado. Replace this wholesale each time.
 
 ## <span id="Why_is_this_complicated.3F" class="mw-headline">Why is this complicated?</span>
 
-With any programatically generated wiki doc we've got conflicting goals:
+With any programmatically generated wiki doc we've got conflicting goals:
 
 1.  Keep the doc close to the source. In this case that means in the SQL
     table definitions

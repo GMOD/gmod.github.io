@@ -231,7 +231,7 @@ shown in this tutorial to wherever your Apache document root may reside.
 ### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
-Managment System (CMS) and GMOD Chado.
+Management System (CMS) and GMOD Chado.
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/ea/600px-WhatisTripal.png/400px-600px-WhatisTripal.png"
@@ -297,7 +297,7 @@ rel="nofollow">http://www.drupal.org/project/themes</a>
 
 The session for Chado was presented yesterday
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
-for introdcutions. However, one thing to remember is that Chado has a
+for introductions. However, one thing to remember is that Chado has a
 modular structure:
 
 
@@ -307,7 +307,7 @@ modular structure:
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
   ontologies
-- Expression - for summaries of RNA and protein expresssion
+- Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
 - Library - for descriptions of molecular libraries
@@ -928,7 +928,7 @@ height="475" alt="800px-Tripal Install4.png" />
 
 ### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
 
-The last step for installing Drupal is setting up the automatted Cron
+The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
 housekeeping tasks on a regular interval. Cron is a UNIX facility for
 scheduling jobs to run at specific intervals.
@@ -1097,7 +1097,7 @@ height="522" alt="800px-DrupalThemes2.png" />
 ##### <span id="Blocks" class="mw-headline">Blocks</span>
 
 Blocks in Drupal are used to provide content in regions of a Drupal
-theme. For example, navigate to **Adminster** → **Site Building** →
+theme. For example, navigate to **Administer** → **Site Building** →
 **Blocks**.
 
 You'll see that regions of the theme have been identified. Within the
@@ -1190,7 +1190,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="800" height="613" alt="Druapl menus4.png" />
 
   
-Using the insructions above to add a second menu item for our about page
+Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
 
@@ -1442,7 +1442,7 @@ following the same instructions above
 ```
 
 For JQuery UI the README file indicates we need to install the JQuery UI
-package before we can eanble this module. We must first get this package
+package before we can enable this module. We must first get this package
 from online.
 
 Here is a quick command for downloading this file
@@ -1810,7 +1810,7 @@ the content shown on each page when you click the
 Tripal provides a theme for Drupal, but it is designed to be a **base
 theme**. This way the site can use any theme you want, but Tripal can
 still provide some theming support for the data components it generates.
-To enable the Tripal theme, Navigate to the **Adminster** → **Site
+To enable the Tripal theme, Navigate to the **Administer** → **Site
 Building** → **Themes** page and click the checkbox to Enable the
 **Tripal** theme. DO NOT click the **default** radio button for the
 Tripal theme. We do not want it to be default. The **Sky** theme should
@@ -2229,7 +2229,7 @@ FASTA file with existing sequences in the database. Before loading FASTA
 files take special care to ensure the definition line of your FASTA file
 can uniquely identify the feature for the specific organism and sequence
 type. For example, in our GFF file the chromosome's are of type
-'chromsome_arm' and have an ID of '2LHet' and a Name of '2LHet':
+'chromosome_arm' and have an ID of '2LHet' and a Name of '2LHet':
 
 ``` enter
 2LHet   FlyBase chromosome_arm  1       368872  .       .       .       ID=2LHet;Name=2LHet;Dbxref=REFSEQ:NW_001848855,GB:CM000456
@@ -2606,7 +2606,7 @@ by 'FLY283942'. For this tutorial we will leave the ID prefix set to
 
 We want to set the URL for all of the features we loaded previously. To
 do this, click the button 'Set Feature URLs'. This will add a job to the
-jobs subsytem. We want to execute this job manually:
+jobs subsystem. We want to execute this job manually:
 
 ``` enter
   cd /var/www; php ./sites/all/modules/tripal-6.x-0.3.1b/tripal_core/tripal_launch_jobs.php administrator
@@ -2628,9 +2628,9 @@ and click the link on the right sidebar titled **Feature Browser** we
 can see the genes listed with links for each feature page.
 
 <img
-src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/19/Tripal_feature_borwser.png/800px-Tripal_feature_borwser.png"
-srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/19/Tripal_feature_borwser.png/1200px-Tripal_feature_borwser.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Tripal_feature_borwser.png 2x"
-width="800" height="599" alt="Tripal feature borwser.png" />
+src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/19/Tripal_feature_browser.png/800px-Tripal_feature_browser.png"
+srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/19/Tripal_feature_browser.png/1200px-Tripal_feature_browser.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/Tripal_feature_browser.png 2x"
+width="800" height="599" alt="Tripal feature browser.png" />
 
   
 Fourth on the configuration page is the *Feature Summary'* setting. By
@@ -2757,7 +2757,7 @@ for this analysis
   - InterProScan XML File/Directory:
     /var/www/sites/default/files/Flybase-tripal-demo.iprscan.xml.txt
   - Check the box 'Submit a job to parse the Interpro XML output'
-  - Chekc the box 'Load GO terms'
+  - Check the box 'Load GO terms'
   - Parameters: -goterms -ipr -format xml
   - Check the box 'Use Unique Name'
   - Query type: gene
@@ -2793,7 +2793,7 @@ Now we want to load results from a KEGG/KAAS analysis
 (<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
 rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>). The KAAS server
 receives as input a FASTA file of genes and annotates those with KEGG
-terms. The tool also generates an heirarchy (heir) outputfile. This
+terms. The tool also generates an hierarchy (heir) outputfile. This
 output file can be read directly by the Tripal Analysis KEGG module.
 This analysis has been performed previously. You can download the
 results here:
@@ -2820,7 +2820,7 @@ this analysis
   rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>"\><a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
   rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>\</a\>.   The
   SBH method was selected.  Results were downloaded in the heir.tar.gz
-  heirarchy file and uploaded to the website.
+  hierarchy file and uploaded to the website.
 
 \<meta content="text/html; charset=utf-8" http-equiv="content-type" /\>
 

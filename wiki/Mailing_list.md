@@ -93,7 +93,7 @@ Archive</a></span></td>
 <td>GMOD's default mailing list server is Sourceforge. Sourceforge,
 however, has a notoriously hard to use mail archive search facility.
 Therefore, we try to archive mailing lists on sites that have friendlier
-search facilites, such as <a href="http://gmod.827538.n3.nabble.com/"
+search facilities, such as <a href="http://gmod.827538.n3.nabble.com/"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://gmane.org" class="external text"
 rel="nofollow">Gmane.org</a>, and <a href="http://groups.google.com"

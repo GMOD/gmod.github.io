@@ -189,7 +189,7 @@ A list of suggested topics, raised in advance by GMOD community members.
 There was a \$25 registration fee to cover meals and other costs
 associated with the meeting. Please contact Scott Cain
 <a href="mailto:cain@cshl.edu" class="external text"
-rel="nofollow">cain@cshl.edu</a> if you need a reciept for your payment.
+rel="nofollow">cain@cshl.edu</a> if you need a receipt for your payment.
 
 ### <span id="Location" class="mw-headline">Location</span>
 
@@ -275,7 +275,7 @@ on the main CSHL campus.
 ### <span id="Discussion_Topics" class="mw-headline">Discussion Topics</span>
 
 We spent some time on our first day discussion what topics attendees
-would like to discusss. This list of topics helped shape the meeting
+would like to discuss. This list of topics helped shape the meeting
 agenda.
 
 - Community Annotation
@@ -437,7 +437,7 @@ We had several discussions about *the big picture.*
 #### <span id="GMOD.27s_Role" class="mw-headline">GMOD's Role</span>
 
 Don Gilbert pointed out that cheap short sequencers are now available.
-Lots of people have inexpensive sequnces, but there still is no way to
+Lots of people have inexpensive sequences, but there still is no way to
 do cheap annotation.
 
 Current GMOD clients are species or family centered. Want to make it
@@ -674,7 +674,7 @@ with few resources and no dedicated curators.
 Paramecium curators are a small set of people that must do their
 annotation from fixed IP addresses. Curator annotations are kept in
 addition to existing Genoscope predictions. These annotation are not
-validated when they are submitted. Annotators cannot chage annotations
+validated when they are submitted. Annotators cannot change annotations
 made by other people. There are two databases: one backing the website,
 and one where annotation goes. Once a month the new annotation is pushed
 to the web site. Validation happens prior to release.

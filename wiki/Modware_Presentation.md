@@ -80,7 +80,7 @@ title="Modware.pdf">Eric's presentation</a>.
 - [<span class="tocnumber">21</span>
   <span class="toctext">Discussion</span>](#Discussion)
 - [<span class="tocnumber">22</span>
-  <span class="toctext">Acknowlegments</span>](#Acknowlegments)
+  <span class="toctext">Acknowledgments</span>](#Acknowledgments)
 
 
 
@@ -557,7 +557,7 @@ sub Write_search_results {
 - How hard is it to extend Modware?
   - Not known absolutely, but generally thought to be not difficult
 
-##### <span id="Acknowlegments" class="mw-headline">Acknowlegments</span>
+##### <span id="Acknowledgments" class="mw-headline">Acknowledgments</span>
 
 - Rex Chisholm, PhD
 - Warren Kibbe, PhD

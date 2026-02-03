@@ -42,7 +42,7 @@ Some highlights:
   data](../January_2009_GMOD_Meeting#Data_Sharing "January 2009 GMOD Meeting")?
 - [BioMart](../January_2009_GMOD_Meeting#BioMart "January 2009 GMOD Meeting")
   integration with other GMOD Components.
-- [JBroswe](../January_2009_GMOD_Meeting#JBrowse "January 2009 GMOD Meeting")
+- [JBrowse](../January_2009_GMOD_Meeting#JBrowse "January 2009 GMOD Meeting")
   update
 - [WebGBrowse](../January_2009_GMOD_Meeting#WebGBrowse:_GBrowse_Configuration_Management "January 2009 GMOD Meeting") -
   [GBrowse](../GBrowse.1 "GBrowse") configuration on the web.

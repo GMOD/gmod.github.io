@@ -8,7 +8,7 @@
   <span class="toctext">Introduction</span>](#Introduction)
   - [<span class="tocnumber">1.1</span> <span class="toctext">The Chado
     Documentation's
-    Vocabularly</span>](#The_Chado_Documentation.27s_Vocabularly)
+    Vocabulary</span>](#The_Chado_Documentation.27s_Vocabulary)
   - [<span class="tocnumber">1.2</span>
     <span class="toctext">Modularity</span>](#Modularity)
   - [<span class="tocnumber">1.3</span>
@@ -70,7 +70,7 @@
 
 ## <span id="Introduction" class="mw-headline">Introduction</span>
 
-### <span id="The_Chado_Documentation.27s_Vocabularly" class="mw-headline">The Chado Documentation's Vocabularly</span>
+### <span id="The_Chado_Documentation.27s_Vocabulary" class="mw-headline">The Chado Documentation's Vocabulary</span>
 
 It will be useful to the reader to clarify a number of terms used
 throughout the Chado documentation. Because these terms have multiple
@@ -91,7 +91,7 @@ element](Glossary#DBMS-Database "Glossary") in a DBMS's collection of
 data. By definition, data stored within different databases cannot be
 related, by query or otherwise. This is the sense of the term _database_
 in a DBMS context, such as PostgreSQL, but the Chado document rarely
-uses _datbase_ in this sense.
+uses _database_ in this sense.
 
 A [set of organized data](Glossary#Database "Glossary") that is readable
 by a computer. This is the sense intended most often within the Chado
@@ -135,7 +135,7 @@ concerned with data underlying all other classes, these tables store
 information about databases, databases identifiers, and general
 information about Chado tables. Equal in importance in Chado is
 [_cv_](Chado_CV_Module "Chado CV Module"), the module concerned with
-**c**ontrolled **v**ocabularies or ontologies.
+**c**controlled **v**ocabularies or ontologies.
 
 All other sets of tables, or _modules_, link to these _general_ and _cv_
 tables directly or indirectly but are limited in scope to specific
@@ -285,7 +285,7 @@ their own.
 - [Controlled Vocabulary (cv)](Chado_CV_Module "Chado CV Module") - for
   controlled vocabularies and ontologies
 - [Expression](Chado_Expression_Module "Chado Expression Module") - for
-  summaries of RNA and protein expresssion
+  summaries of RNA and protein expression
 - [General](Chado_General_Module "Chado General Module") - for
   identifiers
 - [Genetic](Chado_Genetic_Module "Chado Genetic Module") - for genetic
@@ -437,12 +437,12 @@ useful for NATURAL JOIN statements.
 
 ### <span id="Constraints" class="mw-headline">Constraints</span>
 
-Constraint names are a concatentation of table name, underscore, the
+Constraint names are a concatenation of table name, underscore, the
 letter _c_, and a digit. For example: _feature_phenotype_c1_.
 
 ### <span id="Indexes" class="mw-headline">Indexes</span>
 
-Index names are a concatentation of table name, underscore, the string
+Index names are a concatenation of table name, underscore, the string
 _idx_, and a digit. For example: _feature_phenotype_idx1_.
 
 ### <span id="Views" class="mw-headline">Views</span>

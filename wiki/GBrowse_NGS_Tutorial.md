@@ -501,7 +501,7 @@ Where is SAMTOOLS?
     Files=1, Tests=93,  2 wallclock secs ( 0.01 usr  0.01 sys +  0.81 cusr  0.87 csys =  1.70 CPU)
     Result: PASS
     $ sudo ./build install
-    nstalling /usr/local/lib/perl/5.8.8/auto/Bio/DB/Sam/Sam.bs
+    installing /usr/local/lib/perl/5.8.8/auto/Bio/DB/Sam/Sam.bs
     Installing /usr/local/lib/perl/5.8.8/auto/Bio/DB/Sam/Sam.so
     Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
     Installing /usr/local/lib/perl/5.8.8/Bio/DB/Sam.pm

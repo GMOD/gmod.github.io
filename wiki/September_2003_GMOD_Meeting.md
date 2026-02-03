@@ -422,7 +422,7 @@ follows.
 
     In terms of data sets, Nathan Siemers and Donald Jackson of Bristoll
     Myers Squibb has graciously donated a GBrowse-compatible file of
-    TBLATSX annnotations comparing fly, mouse, human worm and zebrafish.
+    TBLATSX annotations comparing fly, mouse, human worm and zebrafish.
     These annotations are available for download on the Sourceforge web
     site, along with their tool for converting blast hit files into
     compatible GFF files.  Xiaokang Pan of Iowa State has donated a GFF

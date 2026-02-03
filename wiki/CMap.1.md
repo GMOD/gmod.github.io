@@ -136,7 +136,7 @@ width="131" height="120" alt="Cmap sample3.jpg" />
 ### <span id="System_Requirements" class="mw-headline">System Requirements</span>
 
 - Perl 5.6.0 or higher
-- A web server with CGI capabilites (e.g., Apache 1.x or 2.x)
+- A web server with CGI capabilities (e.g., Apache 1.x or 2.x)
 - A relational database, e.g.
   <a href="http://www.mysql.com" class="external text"
   rel="nofollow">MySQL (4.0+)</a>, Sybase Adaptive
@@ -259,7 +259,7 @@ class="external text" rel="nofollow">Sourceforge</a>
 
 gmod-cmap-commits
 
-Notification of <span class="mw-redirect" hhttp:="" gmod.org="" wiki=""
+Notification of <span class="mw-redirect" http:="" gmod.org="" wiki=""
 ref="/wiki/SVN">SVN</span> activity for **CMap**.
 
 <a
@@ -289,7 +289,7 @@ Public installations of CMap:
 - <a href="http://tropgenedb.cirad.fr" class="external text"
   rel="nofollow">TropGene</a>
 - <a href="http://medvet.angis.org.au/cmap/" class="external text"
-  rel="nofollow">Comparitive Location Database</a>
+  rel="nofollow">Comparative Location Database</a>
 - <a
   href="http://magi.plantgenomics.iastate.edu/cgi-bin/cmap/map_set_info"
   class="external text" rel="nofollow">MAGI</a>
@@ -515,7 +515,7 @@ SCRI Plant Bioinformatics Group
 <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Has-20title/SCRI-20Plant-20Bioinformatics-20Group "Special%253ASearchByProperty/Has-20title/SCRI-20Plant-20Bioinformatics-20Group")</span>,
 Pristionchus pacificus Physical Map
 <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Has-20title/Pristionchus-20pacificus-20Physical-20Map "Special%253ASearchByProperty/Has-20title/Pristionchus-20pacificus-20Physical-20Map")</span>,
-Comparitive Location Database
+Comparative Location Database
 <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Has-20title/Comparitive-20Location-20Database "Special%253ASearchByProperty/Has-20title/Comparitive-20Location-20Database")</span>,
 Soybean Breeders Toolbox
 <span class="smwsearch">[+](/wiki/Special%253ASearchByProperty/Has-20title/Soybean-20Breeders-20Toolbox "Special%253ASearchByProperty/Has-20title/Soybean-20Breeders-20Toolbox")</span>,

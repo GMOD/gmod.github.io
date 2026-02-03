@@ -16,7 +16,7 @@
 
 |  |  |
 |----|----|
-| [Reproducing gbrowse img functinality with JBrowse](/wiki/Reproducing_gbrowse_img_functinality_with_JBrowse "Reproducing gbrowse img functinality with JBrowse") |  |
+| [Reproducing gbrowse img functionality with JBrowse](/wiki/Reproducing_gbrowse_img_functinality_with_JBrowse "Reproducing gbrowse img functionality with JBrowse") |  |
 
 |  |  |
 |----|----|

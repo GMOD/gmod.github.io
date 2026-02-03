@@ -286,7 +286,7 @@ Chado:
   for phenotype assays and are given the same clone_ID (?!!)
 - Individual trees have a distinct repetition number (per individual
   tree) in addition to the clone_ID and the phenotypes of individual
-  trees are evaulated multiple times.
+  trees are evaluated multiple times.
 
 Data:
 
@@ -387,7 +387,7 @@ or a publication. project_pub / project_contact experiments needed?
     sample"?)
   - the knockdown is described by one entry in the 'nd_protocol' table
   - rearing and injection conditions are described in 'nd_protocolprop'
-    (refering to 'nd_protocol')
+    (referring to 'nd_protocol')
   - experimental dsRNA reagent(s) is(are) represented as a 'nd_reagent'
     (via nd_protocol_reagent) and are linked to a 'feature' (gene or
     location of primers?)

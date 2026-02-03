@@ -126,7 +126,7 @@ curve for new Chado users learning the system at CSHL.</td>
 <td>A collection of user installation/experience logs would be darn
 useful. Create a template for this that encourages users to list things
 like versions used. This reduces the need to keep "Installing component
-<em>X</em> on platfrom <em>Y</em>" pages up to date for every possible
+<em>X</em> on platform <em>Y</em>" pages up to date for every possible
 combination. Just have a list of user log pages that detail <em>X</em>
 and <em>Y</em>.</td>
 </tr>
@@ -153,10 +153,10 @@ class="internal" title="A Chado Case Study.pdf">A Chado Case Study
 </tr>
 <tr class="even">
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1f/Chado-manual.pdf" class="internal"
-title="Chado-manual.pdf">Chado Manaul (PDF)</a></td>
+title="Chado-manual.pdf">Chado Manual (PDF)</a></td>
 <td>A PDF Chado manual.</td>
 <td>The TOC is extensive, but many sections are empty. Much of this
-information has already been transfered to wiki pages. Sections with
+information has already been transferred to wiki pages. Sections with
 content:<br />
 1) DBMS Functions (see <a href="Chado_Manual" title="Chado Manual">Chado
 Manual</a>),<br />

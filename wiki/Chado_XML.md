@@ -295,7 +295,7 @@ Chado-XML document: Standard vs generic; with or without macros;
 transactional or static. So in principle 8 different DTDs are possible.
 
 However, the vast majority of applications will interoperate using
-Standard+Static Chado-XML (refered to as simple "Chado-XML"). Any other
+Standard+Static Chado-XML (referred to as simple "Chado-XML"). Any other
 form or variant should be fully qualified.
 
 [Categories](Special%253ACategories "Special%253ACategories"):

@@ -63,7 +63,7 @@ height="187" alt="ActSelection2seqs.gif" />
   
 Click on Apply to read these entries and open up ACT. You can use the
 right hand scroll bar to zoom in and out. If you zoom out you can
-indentify the regions that match between these sequences.
+identify the regions that match between these sequences.
 
   
 <img

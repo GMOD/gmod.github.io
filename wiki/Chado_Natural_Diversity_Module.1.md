@@ -299,7 +299,7 @@ Chado:
   for phenotype assays and are given the same clone_ID (?!!)
 - Individual trees have a distinct repetition number (per individual
   tree) in addition to the clone_ID and the phenotypes of individual
-  trees are evaulated multiple times.
+  trees are evaluated multiple times.
 
 Data:
 
@@ -782,7 +782,7 @@ public.nd_experimentprop Structure
 
 ## <span id="Table:_nd_geolocation" class="mw-headline">Table: nd_geolocation</span>
 
-The geo-referencable location of the stock. NOTE: This entity is subject
+The geo-referenceable location of the stock. NOTE: This entity is subject
 to change as a more general and possibly more OpenGIS-compliant
 geolocation module may be introduced into Chado.
 

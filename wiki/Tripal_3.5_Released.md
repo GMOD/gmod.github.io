@@ -26,7 +26,7 @@ standard Drupal updating procedures to update. Changes in this version:
     References.
 2.  A rewritten GFF3 loader that is extremely fast, even with a fully
     populated Tripal site.
-3.  A new Sequences fields that combines reference-dervied sequences
+3.  A new Sequences fields that combines reference-derived sequences
     with primary sequences, and CDS/proteins for mRNA features and
     sequences now have more informative definition lines for FASTA
     sequences.

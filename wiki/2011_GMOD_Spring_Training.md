@@ -329,7 +329,7 @@ rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel Macs (a
 
 **The application deadline was January 7, 2011.** However, late
 applications were accepted until March 1, and were automatically placed
-on the waiting list, and considered as cancellations occured. Applicants
+on the waiting list, and considered as cancellations occurred. Applicants
 were notified of admission status by January 21.
 
 **Admission to the course was competitive and was based on the strength

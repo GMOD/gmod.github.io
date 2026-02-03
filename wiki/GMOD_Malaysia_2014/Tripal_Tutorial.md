@@ -240,7 +240,7 @@ class="external text" rel="nofollow">Tripal issues tracker</a>.
 ### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
-Managment System (CMS) and GMOD Chado. The goal is to simplify
+Management System (CMS) and GMOD Chado. The goal is to simplify
 construction of a community genomics website to enable individual labs
 or research communities to construct a high-quality, standards-based
 website for data sharing and collaboration.
@@ -314,7 +314,7 @@ Chado has a modular structure:
 - Contact - for people, groups, and organizations
 - Controlled Vocabulary (cv) - for controlled vocabularies and
   ontologies
-- Expression - for summaries of RNA and protein expresssion
+- Expression - for summaries of RNA and protein expression
 - General - for identifiers
 - Genetic - for genetic data and genotypes
 - Library - for descriptions of molecular libraries
@@ -1027,7 +1027,7 @@ height="475" alt="800px-Tripal Install4.png" /></a>
 
 ### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
 
-The last step for installing Drupal is setting up the automatted Cron
+The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
 housekeeping tasks on a regular interval. Cron is a UNIX facility for
 scheduling jobs to run at specific intervals.
@@ -1099,7 +1099,7 @@ drush:
 
 You must always run drush commands within the Drupal installation. It
 does not matter what subdirectory so long as you are in the Drupal
-directory sturcture. To see a list of available commands type the
+directory structure. To see a list of available commands type the
 following:
 
 ```enter
@@ -1232,7 +1232,7 @@ height="522" alt="800px-DrupalThemes2.png" /></a>
 ##### <span id="Blocks" class="mw-headline">Blocks</span>
 
 Blocks in Drupal are used to provide content in regions of a Drupal
-theme. For example, navigate to **Adminster** → **Site Building** →
+theme. For example, navigate to **Administer** → **Site Building** →
 **Blocks**.
 
 You'll see that regions of the theme have been identified. Within the
@@ -1320,7 +1320,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/73/Druapl_menus4.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/73/Druapl_menus4.png 2x"
 width="800" height="613" alt="Druapl menus4.png" /></a>
 
-Using the insructions above to add a second menu item for our about page
+Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
 
@@ -2075,7 +2075,7 @@ the fields with these values:
 - Abbreviation: C. sinensis
 - Common name: Sweet orange
 - Description: Sweet orange is the No.1 citrus production in the world,
-  accounting for about 70% of the total. Brazil, Flordia (USA), and
+  accounting for about 70% of the total. Brazil, Florida (USA), and
   China are the three largest sweet orange producers. Sweet orange
   fruits have very tight peel and are classified into the hard-to-peel
   group. They are often used for juice processing, rather than fresh
@@ -2234,7 +2234,7 @@ SwissProt:
 
 Now that we have our organism and whole genome analysis ready, we can
 being loading genomic data. For this tutorial only a single gene from
-sweet orange will be loaded into the databsae. This is to ensure we can
+sweet orange will be loaded into the database. This is to ensure we can
 move through the tutorial rather quickly. The following datasets will be
 used for this tutorial:
 
@@ -2488,7 +2488,7 @@ several **CDS** features. These CDS features do not need their own page
 and therefore do not need to be synced..
 
 Now, we can view our gene and mRNA pages. Navigate to **Search
-Biological Data** → **Feautres**. Select **gene** and **mRNA** in the
+Biological Data** → **Features**. Select **gene** and **mRNA** in the
 **Type** select box and click the **Show** button. The list of genes and
 mRNA will be all available features.
 
@@ -2671,7 +2671,7 @@ changes and have those shown in the summary.
 For this tutorial we will be loading functional data for our gene. To do
 this we will use the Blast, KEGG, and InterPro extension modules. These
 modules were installed previously. Blast, KEGG and InterPro analyses
-were completed prior to this tutorial and results files are avaialble
+were completed prior to this tutorial and results files are available
 for downloading:
 
 - <a
@@ -2941,7 +2941,7 @@ width="800" height="489" alt="Tripal-Interpro-Results.png" /></a>
 
 When we setup the InterPro analysis we requested that it parse GO terms
 from the InterProScan results. As a result, we now have a new **GO
-Assigments** item in the **Resources** sidebar. For our example feature
+Assignments** item in the **Resources** sidebar. For our example feature
 (<a href="http://localhost/orange1.1g015615m" class="external free"
 rel="nofollow">http://localhost/orange1.1g015615m</a>), the results are
 as follows:
@@ -2989,7 +2989,7 @@ Now we want to load results from a KEGG/KAAS analysis
 (<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
 rel="nofollow">http://www.genome.ad.jp/tools/kaas/</a>). The KAAS server
 receives as input a FASTA file of sequences and annotates those with
-KEGG terms. The tool also generates an heirarchy (heir) output file.
+KEGG terms. The tool also generates an hierarchy (heir) output file.
 This output file can be read directly by the Tripal Analysis KEGG
 module.
 
@@ -3043,7 +3043,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/50/Tripal-KEGG-Results.png/1200px-Tripal-KEGG-Results.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/50/Tripal-KEGG-Results.png 2x"
 width="800" height="489" alt="Tripal-KEGG-Results.png" /></a>
 
-Simliar to the GO report. A KEGG report is also avilable on the analysis
+Similar to the GO report. A KEGG report is also available on the analysis
 and the organism page. Navigate to the _Citrus sinensis_ organism page
 and click the **KEGG Analysis Reports** in the **Resources** sidebar. A
 page with instructions is visible:
@@ -3064,7 +3064,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="800" height="489" alt="Tripal-KEGG-Results-After.png" /></a>
 
 Site visitors can browse KEGG results by expanding the trees
-correspoding to the the Brite terms.
+corresponding to the the Brite terms.
 
 ### <span id="Adding_New_Resources_To_Pages" class="mw-headline">Adding New Resources To Pages</span>
 
@@ -3073,7 +3073,7 @@ seen this for the analysis, organism and feature pages. In some cases we
 may want to add new items to the resources sidebar. In the case of our
 _Citrus sinensis_ organism we want to add a **Downloads** link to the
 organism page for relevant data. We do this using the Content
-Construction Kit (CCK). The CCK is a 3rd-parth Drupal module that allows
+Construction Kit (CCK). The CCK is a 3rd-path Drupal module that allows
 new fields to be added to any content. Using the CCK we will add new
 fields to our organism page which Tripal will recognize as new
 resources.
@@ -3998,22 +3998,22 @@ class="external text" rel="nofollow">Developers Handbook</a>.
 The Tripal Bulk Loader is a new feature added to version 1.0. Often,
 data is not in common formats such as GFF, FASTA, GAF, InterPro XML,
 etc., but rather in Excel spreadsheets or tab-delimited or
-comma-separted files. The goal of the bulk loader is to enable a user to
+comma-separated files. The goal of the bulk loader is to enable a user to
 load data in these formats into the Chado schema. Currently, the bulk
 loader allows a site administrator to create custom loader templates
 that will allow a user to load tab-delimited files of any format.
 
-Using the bulk loader web-interface, the priviledged user creates a
+Using the bulk loader web-interface, the privileged user creates a
 "template" for loading a tab-delimited file. This templates specifies
 which fields in the Chado tables the values in the tab-delimited file
-will be stored. Once the template is fully defined, the priviledge user
+will be stored. Once the template is fully defined, the privilege user
 saves the template for other users to use. Another user can then load
 any tab-delimited files that matches the template. The user can upload
 as many files as desired.
 
 #### <span id="Creating_Custom_Modules" class="mw-headline">Creating Custom Modules</span>
 
-As mentioned early in the Tutoral, Tripal is a modular software package.
+As mentioned early in the Tutorial, Tripal is a modular software package.
 A Tripal API has been developed to help others who want to extend the
 functionality of Tripal. Anyone is welcome to develop modules for Tripal
 to suit their own needs and perhaps share them back with the community.

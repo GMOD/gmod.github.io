@@ -35,7 +35,7 @@ was over 18,000 files.
 Before I tried trimming down the number of files I had, I undertook the transformation
 from html to markdown so that I could import markdown files into GitHub before
 trying to reduce the number of files. The obvious reason for this is that if I
-accidently "over deleted" I could roll back. It had the added benefit that browsing
+accidentally "over deleted" I could roll back. It had the added benefit that browsing
 the files in the GitHub web interface would give me an idea of how the generated
 markdown was being evaluated (though it appears that the GitHub web UI treats
 markdown differently than jekyll).
@@ -52,7 +52,7 @@ where imported in the gmod.github.io repo.
 Yeah, 18,000 is a lot. GMOD is a big and "old" project, but that still seems crazy.
 There were multiple sources of "extra" files:
 
-- SematicMediaWiki: the GMOD MediaWiki used this extension that provides a lot of
+- SemanticMediaWiki: the GMOD MediaWiki used this extension that provides a lot of
   really cool metadata pages but most of them didn't make sense outside of the context
   of MediaWiki. Conveniently, these files were either named in such a way that it was
   obvious what they were or were in subdirectories that I could wholesale delete.

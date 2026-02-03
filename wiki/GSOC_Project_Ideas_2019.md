@@ -196,7 +196,7 @@ self-motivation are great traits for open source programmers.
     analysis, modelling, systems biology and education. Our current
     curation and tool access statistics are static and generated on an
     ad-hoc basis.
-  - *Expected results:* Developing scripts to proocess data and a web
+  - *Expected results:* Developing scripts to process data and a web
     interface to support interactive curation and tool access statistics
     (maps, tables, charts, graphs).
   - *Project Home Page URL:*

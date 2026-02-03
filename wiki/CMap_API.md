@@ -17,7 +17,7 @@
 
 
 
-Note: This document was generated from a POD formated document checked
+Note: This document was generated from a POD formatted document checked
 in at <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/CMAP_API.pod"
 class="external text" rel="nofollow">SourceForge</a>. Editing will not
@@ -209,7 +209,7 @@ database; "Importing Data" and "Querying the CMap Database". Each type
 of interaction is performed in its own way.
 
 Importing data requires the use of a Bio%253A%253AGMOD::CMap::Admin object.
-Creating this will be descibed in the "Importing Data" section.
+Creating this will be described in the "Importing Data" section.
 
 Querying the CMap database is done through the use of an object returned
 by the sql() method, which any CMap module has access to.
@@ -419,7 +419,7 @@ for the map set id, "Getting Map Set Information".
 See "Accession IDs" for more information about accession IDs.
 
 \- map_start (Required)   
-Begining point of the map.
+Beginning point of the map.
 
 \- map_stop (Required)   
 End point of the map.
@@ -890,7 +890,7 @@ will return only features that overlap that region.
 
 \- Aliases get own rows (aliases_get_rows)   
 Value that dictates if aliases that match get there own rows. This is
-mostly usefull for feature_name searches.
+mostly useful for feature_name searches.
 
 \- Don't get aliases (ignore_aliases)   
 Value that dictates if aliases are ignored. The default is to get

@@ -137,7 +137,7 @@ In the appropriate gbrowse configuration file:
 
 This plugin displays the ratio of observed/expected for CG dimers over a user-specified
 interval (default 400 bp). The coloring of the features is based on the ratio, with red
-being the higest range and blue the lowest. The height is equal to number of CG dimers
+being the highest range and blue the lowest. The height is equal to number of CG dimers
 actually observed.
 
 =head1 BUGS

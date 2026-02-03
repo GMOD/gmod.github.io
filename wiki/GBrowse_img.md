@@ -168,7 +168,7 @@ options have one-letter aliases that can be used to reduce URL lengths.
 | flip | f | flip image left to right |
 | grid |   | turn grid on (1) or off (0) |
 | embed |   | generate full HTML for image and imagemap for use in an embedded frame |
-| format |   | format for the image (use "SVG" for scaleable vector graphics) |
+| format |   | format for the image (use "SVG" for scalable vector graphics) |
 | list |   | get certain types of configuration information |
 | source |   | database name |
 
@@ -314,7 +314,7 @@ embedding into a frame.
 
 format  
 Specify the format for the image file. Either "GD" (the default) or
-"GD::SVG" for scaleable vector graphics.
+"GD::SVG" for scalable vector graphics.
 
 <!-- -->
 

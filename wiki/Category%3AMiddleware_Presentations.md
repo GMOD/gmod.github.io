@@ -275,7 +275,7 @@ The following 13 files are in this category, out of 13 total.
   
 
   [Object Relational
-  Mapp...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Object_Relational_Mapping_Layer.pdf "File:Object Relational Mapping Layer.pdf")  
+  Map...](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/Object_Relational_Mapping_Layer.pdf "File:Object Relational Mapping Layer.pdf")  
   72 KB  
 
   

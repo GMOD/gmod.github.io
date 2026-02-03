@@ -90,7 +90,7 @@ ON DELETE RESTRICT
 
 -- table geolocation
 --
--- The geo-referencable location of the stock, experiment, or cross.
+-- The geo-referenceable location of the stock, experiment, or cross.
 CREATE TABLE geolocation (
 geolocation_id serial NOT NULL,
 PRIMARY KEY (geolocation_id),
@@ -106,7 +106,7 @@ county character varying(64),
 province character varying(64),
 country character varying(64)
 );
-COMMENT ON TABLE geolocation IS 'The geo-referencable location of the stock. NOTE: This entity is subject to change as a more general and possibly more OpenGIS-compliant geolocation module may be introduced into Chado.';
+COMMENT ON TABLE geolocation IS 'The geo-referenceable location of the stock. NOTE: This entity is subject to change as a more general and possibly more OpenGIS-compliant geolocation module may be introduced into Chado.';
 COMMENT ON COLUMN geolocation.description IS 'A textual representation of the location, if this is the original georeference. Optional if the original georeference is available in lat/long coordinates.';
 COMMENT ON COLUMN geolocation.coordinate_xml IS 'The georeference in XML format, preferably in GML.';
 COMMENT ON COLUMN geolocation.latitude IS 'The decimal latitude coordinate of the georeference, using positive and negative sign to indicate N and S, respectively.';
@@ -115,7 +115,7 @@ COMMENT ON COLUMN geolocation.geodetic_datum IS 'The geodetic system on which th
 COMMENT ON COLUMN geolocation.altitude IS 'The altitude (elevation) of the location in meters. If the altitude is only known as a range, this is the average, and altitude_dev will hold half of the width of the range.';
 COMMENT ON COLUMN geolocation.altitude_dev IS 'The possible deviation in altitude, in meters, from the average altitude for collected individuals. Will be empty (null) if the altitude is exact.';
 COMMENT ON COLUMN geolocation.postalcode IS 'The postal code, or zipcode in the US, within which the georeference falls.';
-COMMENT ON COLUMN geolocation.county IS 'The county (or equivalent local government unit) whithin which the georeference falls. This should probably rather be a foreign key to a cvterm, but there is an unresolved problem about the univocality constraint with location name ontologies, such as the Gazetteer.';
+COMMENT ON COLUMN geolocation.county IS 'The county (or equivalent local government unit) within which the georeference falls. This should probably rather be a foreign key to a cvterm, but there is an unresolved problem about the univocality constraint with location name ontologies, such as the Gazetteer.';
 COMMENT ON COLUMN geolocation.province IS 'The province, or state, within which the georeference falls. This should probably rather be a foreign key to a cvterm, but there is an unresolved problem about the univocality constraint with location name ontologies, such as the Gazetteer.';
 COMMENT ON COLUMN geolocation.country IS 'The country within which the georeference falls. This should probably rather be a foreign key to a cvterm, but there is an unresolved problem about the univocality constraint with location name ontologies, such as the Gazetteer.';
 
@@ -317,7 +317,7 @@ CONSTRAINT feature_gtassay_c1 UNIQUE (feature_id, gtassay_id)
 -- reagents used in genotyping assays too that characterize the
 -- assay. For example,
 -- rflp_enzyme,
--- aflp_adapte,
+-- aflp_adapter,
 -- aflp_adapter_enzyme,
 -- aflp_overhang_linker.
 CREATE TABLE reagent (
@@ -456,7 +456,7 @@ COMMENT ON COLUMN stocksampleprop.rank IS 'The rank of the property value, if th
 --
 -- Experiment to assign the genotype of a sample of a stock determined by a particular gtassay, collected and assayed at a certain date.
 -- For tree breeding data, a row of gtexperiment can correspond to an experiment to assign a genotype to a sample stock 
--- (a tree clone planted in a certan plot in an orchard and treated with a certain fertilizer), collected a certain date, and tested at a certain date using a certain molecular marker.
+-- (a tree clone planted in a certain plot in an orchard and treated with a certain fertilizer), collected a certain date, and tested at a certain date using a certain molecular marker.
 -- 
 
 CREATE TABLE gtexperiment (
@@ -492,7 +492,7 @@ COMMENT ON COLUMN gtexperiment.gtassay_id IS 'The genotyping assay used to deter
 COMMENT ON COLUMN gtexperiment.genotype_id IS 'The genotype determined by the experiment.';
 COMMENT ON COLUMN gtexperiment.project_id IS 'The project that the experiment is associated with';
 COMMENT ON COLUMN gtexperiment.experimenter_id IS 'Person performing the experiment';
-COMMENT ON COLUMN gtexperiment.notes IS 'Notes on the genotype assignement';
+COMMENT ON COLUMN gtexperiment.notes IS 'Notes on the genotype assignment';
 
 -- table ptassay
 --
@@ -529,7 +529,7 @@ COMMENT ON COLUMN ptassayprop.rank IS 'The rank of the property value, if the pr
 --
 -- Experiment to assign the phenotype of a sample of a stock determined by a particular ptassay assayed at a certain date.
 -- For tree breeding data, a row of gtexperiment can correspond to an experiment to assign a phenotype to a tree clone
--- from a certan orchard and a plot, collected a certain date, and tested at a certain date using a certain phenotyping assay.
+-- from a certain orchard and a plot, collected a certain date, and tested at a certain date using a certain phenotyping assay.
 -- 
 
 CREATE TABLE ptexperiment (
@@ -565,7 +565,7 @@ COMMENT ON COLUMN ptexperiment.ptassay_id IS 'The phenotyping assay used to dete
 COMMENT ON COLUMN ptexperiment.phenotype_id IS 'The phenotype determined by the experiment.';
 COMMENT ON COLUMN ptexperiment.project_id IS 'The project that the experiment is associated with';
 COMMENT ON COLUMN ptexperiment.experimenter_id IS 'Person performing the experiment';
-COMMENT ON COLUMN ptexperiment.notes IS 'Notes on the phenotype assignement';
+COMMENT ON COLUMN ptexperiment.notes IS 'Notes on the phenotype assignment';
 
 -- create table stock_image
 CREATE TABLE stock_image (

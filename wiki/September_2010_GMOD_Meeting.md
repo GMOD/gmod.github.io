@@ -630,7 +630,7 @@ GMOD is used by
 - [GBrowse](GBrowse.1 "GBrowse") based comparative genomics viewer
 - Shows a reference sequence compared to 2+ others
 - Can also show any GBrowse-based annotations
-- Syntenic blocks do not have to be colinear
+- Syntenic blocks do not have to be collinear
 - Can also show duplications
 
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>

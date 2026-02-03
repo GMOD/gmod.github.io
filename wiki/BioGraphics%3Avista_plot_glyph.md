@@ -667,7 +667,7 @@ taken to be 10% of the region under display.</td>
 <th>-sort_order</th>
 <td>&lt;'left', 'right', 'low_score', 'high_score', 'longest',
 'shortest', 'strand', 'name'&gt; [default left]</td>
-<td>Control how features are layed out so that more "important" features
+<td>Control how features are laid out so that more "important" features
 sort towards the top. See the Bio::Graphics::Glyph documentation for a
 description of how this works.</td>
 </tr>

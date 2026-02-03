@@ -73,8 +73,8 @@ track.
 Keynote speakers:
 
 - Patricia Babbitt, University of California, San Francisco
-- Alex Bateman, European Bioinformatics Insitute
-- Anna Tramontano, "La Sapienza" Universtiy, Rome.
+- Alex Bateman, European Bioinformatics Institute
+- Anna Tramontano, "La Sapienza" University, Rome.
 
 For further instructions on AFP 2013, please see
 <a href="http://BioFunctionPrediction.org" class="external text"

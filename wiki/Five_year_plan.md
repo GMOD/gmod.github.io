@@ -75,7 +75,7 @@ iteroperability hackathons:
 - galaxy
 
   
-Three developement aims, one support aim:
+Three development aims, one support aim:
 
 - one novel
 - two improvements

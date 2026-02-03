@@ -22,7 +22,7 @@ page. The live version of the CAS is running at
 <a href="http://cas.gmod.org/" class="external free"
 rel="nofollow">http://cas.gmod.org/</a>
 
-You can download a copy of the currently running annoation server from
+You can download a copy of the currently running annotation server from
 here: <a href="http://www.gmod.org/live_annotation_server.tar.bz2"
 class="external free"
 rel="nofollow">http://www.gmod.org/live_annotation_server.tar.bz2</a>

@@ -229,9 +229,9 @@ Here is a list of the proposed project ideas for 2015:
     rel="nofollow">http://www.ebi.ac.uk/biomodels-main/</a>) following a
     similar approach. The tool has two differentiated parts: (1) data
     filtering and intermediate data structure creation, (2) high
-    performance analysis tool with a RESTFul Service API to allow
+    performance analysis tool with a RESTFull Service API to allow
     programmatic access.
-  - *Expected results:* A java core package plus a Spring MVC RESTFul
+  - *Expected results:* A java core package plus a Spring MVC RESTFull
     service to be installed in BioModels live site.
   - *Knowledge prerequisites:* Java, SQL, XML, web services, Git.
   - *Skill level:* Medium/Advanced.

@@ -232,7 +232,7 @@ parameter "id", as in:
 
 From the user interface, you can obtain the current session's id by
 choosing Help-\>Show My User ID... This will also return the uploads id,
-which is used for sharing uploaded track data withing sharing the user's
+which is used for sharing uploaded track data within sharing the user's
 entire session.
 
 From within a script, you may capture the ID from the cookie as shown in
