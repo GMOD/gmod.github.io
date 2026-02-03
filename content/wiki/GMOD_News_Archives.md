@@ -2936,8 +2936,7 @@ title="Tripal Tutorial v1.1">Tripal</a></li>
 class="mw-redirect" title="WebApollo Tutorial">WebApollo</a></li>
 </ul>
 <p>The full set of GMOD tutorials, featuring all the material from this
-year's summer school and more, is available from the <a href="/wiki/Category%253ATutorials"
-title="Category%253ATutorials">Tutorials</a> section of the wiki.</p>
+year's summer school and more, is available from the  section of the wiki.</p>
 <p><br />
 </p>
 

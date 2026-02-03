@@ -107,8 +107,7 @@ Theory</strong><br />
 <a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a><br />
 Architecture and logical design of the Chado database <a href="/wiki/Glossary#Schema" title="Glossary">schema</a>: Chado's modules and
 extensibility, how IDs and database cross references are handled, the
-central role of <a href="/wiki/Category%253AOntologies"
-title="Category%253AOntologies">ontologies/controlled vocabularies</a>, and
+central role of , and
 an overview of how sequence data is handled.</td>
 </tr>
 <tr class="odd">

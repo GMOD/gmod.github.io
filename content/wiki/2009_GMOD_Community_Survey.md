@@ -331,7 +331,7 @@ interval, quantiles etc.).</td>
 sorted by length of the matching pair. I think the <a href="/wiki/Glossary#AJAX" title="Glossary">AJAX</a> code in <a
 href="http://www.sanger.ac.uk/Software/analysis/lookseq/"
 class="external text" rel="nofollow">Lookseq</a> could be integrated
-into <a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> or <a href="/wiki/Category%253AGBrowse_2" title="Category%253AGBrowse 2">Gbrowse2</a>.</td>
+into <a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> or .</td>
 <td><a href="http://www.sanger.ac.uk/Software/analysis/lookseq/"
 class="external text" rel="nofollow">Lookseq</a></td>
 </tr>

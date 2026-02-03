@@ -18,19 +18,13 @@ curating map data. \| screenshot = Here are some sample maps from the
 
 <a href="http://www.gramene.org/cmap/entry.html" class="external text"
 
--
-
   <a href="../File:Cmap_sample1.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Cmap_sample1.jpg/89px-Cmap_sample1.jpg"
   width="89" height="120" alt="Cmap sample1.jpg" /></a>
 
--
-
   <a href="../File:Cmap_sample2.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/f1/Cmap_sample2.jpg/169px-Cmap_sample2.jpg"
   width="169" height="120" alt="Cmap sample2.jpg" /></a>
-
--
 
   <a href="../File:Cmap_sample3.jpg" class="image"><img
   src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/12/Cmap_sample3.jpg/131px-Cmap_sample3.jpg"

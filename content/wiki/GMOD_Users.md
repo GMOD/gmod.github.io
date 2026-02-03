@@ -107,7 +107,7 @@ GMOD users around the world</a>!
 <tr class="even">
 <td><a href="http://www.arabidopsis.org" class="external free"
 
-<td><a href="/wiki/Category%253ATAIR" title="Category%253ATAIR">TAIR</a></td>
+<td></td>
 <td></td>
 <td></td>
 <td>2013</td>
@@ -496,8 +496,7 @@ Chandigarh.</td>
 <tr class="odd">
 <td><a href="http://www.dictybase.org" class="external free"
 
-<td><a href="/wiki/Category%253ADictyBase"
-title="Category%253ADictyBase">DictyBase</a></td>
+<td></td>
 <td></td>
 <td>Chado, GBrowse, more</td>
 <td>2013</td>
@@ -575,7 +574,7 @@ Trichomonas, Trypanosoma, and Vivraia</td>
 <tr class="even">
 <td><a href="http://www.flybase.org" class="external free"
 
-<td><a href="/wiki/Category%253AFlyBase" title="Category%253AFlyBase">FlyBase</a></td>
+<td></td>
 <td>A Database of Drosophila Genes &amp; Genomes</td>
 <td>Chado, GBrowse, more</td>
 <td>2013</td>
@@ -828,7 +827,7 @@ class="external text" rel="nofollow">Chado controller</a></td>
 <tr class="even">
 <td><a href="http://www.gramene.org" class="external free"
 
-<td><a href="/wiki/Category%253AGramene" title="Category%253AGramene">Gramene</a></td>
+<td></td>
 <td>Grain resources</td>
 <td></td>
 <td>2013</td>
@@ -1404,7 +1403,7 @@ href="http://ascobase.cgrb.oregonstate.edu/cgi-bin/gb2/gbrowse/ncrassa_public/"
 <tr class="even">
 <td><a href="http://rgd.mcw.edu" class="external free"
 
-<td><a href="/wiki/Category%253ARGD" title="Category%253ARGD">RGD</a></td>
+<td></td>
 <td>Rat Genome Database</td>
 <td></td>
 <td>2013</td>
@@ -1517,8 +1516,7 @@ href="http://seacow.helmholtz-muenchen.de/cgi-bin/gb2/gbrowse/Barley_PhysMap/"
 <tr class="even">
 <td><a href="http://solgenomics.net/" class="external free"
 
-<td><a href="/wiki/Category%253ASGN" title="Category%253ASGN">Sol Genomics
-Network</a></td>
+<td></td>
 <td></td>
 <td>Chado</td>
 <td>2013</td>
@@ -1731,8 +1729,7 @@ href="http://wheat-urgi.versailles.inra.fr/Tools/Triannot-Pipeline/"
 <tr class="odd">
 <td><a href="http://www.wormbase.org" class="external free"
 
-<td><a href="/wiki/Category%253AWormBase"
-title="Category%253AWormBase">WormBase</a></td>
+<td></td>
 <td>C. elegans</td>
 <td></td>
 <td>2013</td>
@@ -1773,7 +1770,7 @@ genealogy and anthropology</td>
 <tr class="even">
 <td><a href="http://yeastgenome.org/" class="external free"
 
-<td><a href="/wiki/Category%253ASGD" title="Category%253ASGD">SGD</a></td>
+<td></td>
 <td>S. cerevisiae resources</td>
 <td></td>
 <td>2013</td>
