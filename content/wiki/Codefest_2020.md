@@ -34,11 +34,11 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/300px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x"
 width="200" height="119" alt="GMOD Hackathon" />
 
-- [Tripal](/wiki/Tripal.1)
+- [Tripal](/wiki/Tripal)
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-- [JBrowse](/wiki/JBrowse.1) (1 and 2)
-- [Apollo](/wiki/Apollo.1)
-- [Galaxy](/wiki/Galaxy.1)
+- [JBrowse](/wiki/JBrowse) (1 and 2)
+- [Apollo](/wiki/Apollo)
+- [Galaxy](/wiki/Galaxy)
 - [InterMine](/wiki/InterMine)
 
 We already know that there will be Tripal, Chado, Apollo and JBrowse

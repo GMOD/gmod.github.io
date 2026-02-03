@@ -15,12 +15,12 @@ data-cellpadding="10">
 <td><a href="http://www.intl-pag.org/" rel="nofollow"
 title="PAG 2009">
 
-View of [MAKER](/wiki/MAKER.1) annotations in the
-[Apollo](/wiki/Apollo.1) genome annotation curation tool. Supporting
+View of [MAKER](/wiki/MAKER) annotations in the
+[Apollo](/wiki/Apollo) genome annotation curation tool. Supporting
 evidence is shown in the upper dark panel. Gene annotations are shown in
 the blue panel.
 
-[MAKER](/wiki/MAKER.1) is a portable and easily configurable genome
+[MAKER](/wiki/MAKER) is a portable and easily configurable genome
 annotation pipeline. It's purpose is to allow smaller eukaryotic and
 prokaryotic genome projects to independently annotate their genomes and
 to create genome databases. MAKER identifies repeats, aligns ESTs and
@@ -33,8 +33,8 @@ gene-models on subsequent runs. MAKER's inputs are minimal and its
 outputs can be directly loaded into a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">GMOD compatible
 database</a>. They can also be viewed in the
-[GBrowse](/wiki/GBrowse.1) genome viewer, and manually updated using
-the [Apollo](/wiki/Apollo.1) genome annotation editor.
+[GBrowse](/wiki/GBrowse) genome viewer, and manually updated using
+the [Apollo](/wiki/Apollo) genome annotation editor.
 
 MAKER can be installed locally on your own machine, or for smaller
 datasets, you can upload your data to the online MAKER gene annotation
@@ -79,14 +79,14 @@ GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
-  [GBrowse](/wiki/GBrowse.1), a genome viewer.
+  [GBrowse](/wiki/GBrowse), a genome viewer.
 - A
   [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
-  on [GBrowse_syn](/wiki/GBrowse_syn.1), a comparative genomics
-  viewer built on [GBrowse](/wiki/GBrowse.1)
+  on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
+  viewer built on [GBrowse](/wiki/GBrowse)
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
+  a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

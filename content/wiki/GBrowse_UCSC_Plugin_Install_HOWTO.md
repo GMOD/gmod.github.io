@@ -6,10 +6,10 @@ title: "GBrowse UCSC Plugin Install HOWTO"
 This page contains detailed installation instructions for setting up
 <a href="http://genome.ucsc.edu" class="external text"
 
-and [GBrowse](/wiki/GBrowse.1)
+and [GBrowse](/wiki/GBrowse)
 [plugins](/wiki/GBrowse_Install_HOWTO#Plugins) to
 display them. It assumes that you already have a working installation of
-[GBrowse](/wiki/GBrowse.1) and
+[GBrowse](/wiki/GBrowse) and
 <a href="http://www.mysql.com/" class="external text"
 
   Prerequisites](#Prerequisites)
@@ -63,7 +63,7 @@ display them. It assumes that you already have a working installation of
 
 ## Prerequisites
 
-- A working installation of [GBrowse](/wiki/GBrowse.1) (see also
+- A working installation of [GBrowse](/wiki/GBrowse) (see also
   [GBrowse_Install_HOWTO](/wiki/GBrowse_Install_HOWTO))
 - A working installation of
   <a href="http://www.mysql.com/" class="external text"

@@ -200,7 +200,7 @@ interface.
 
 Several resources, including [ParameciumDB](/wiki/ParameciumDB)
 and the Pea Aphid database, have offered training in genome annotation
-using [Apollo](/wiki/Apollo.1). Apollo is a sophisticated tool that
+using [Apollo](/wiki/Apollo). Apollo is a sophisticated tool that
 allows users to add evidence and refine gene predictions and other
 annotations. However, some efforts have hit bumps along the way with
 users who don't use the tools often enough to remember the user
@@ -247,7 +247,7 @@ CACAO and EcoliWiki make extensive use of wiki technology to make the
 technology aspects of entering annotation easy for researchers and
 students. EcoliWiki's update interface makes extensive use of the the
 locally developed, but publicly available,
-[TableEdit](/wiki/TableEdit.1) MediaWiki extension. This presents
+[TableEdit](/wiki/TableEdit) MediaWiki extension. This presents
 editors with a GUI interface to tabular data and protects them from
 MediaWiki markup.
 
@@ -429,10 +429,10 @@ non-trivial tool. This problem will occur anytime a tool does a complex
 task and thus has a complex interface. This problem will, however,
 lessen over time, as tools move from custom desktop applications to web
 based one, using the same user interface conventions as other
-sophisticated interfaces. [Apollo](/wiki/Apollo.1), for example, is
+sophisticated interfaces. [Apollo](/wiki/Apollo), for example, is
 currently being migrated from a stand-alone Java application to web
 application that shares a common platform with
-[JBrowse](/wiki/JBrowse.1). This common platform will ease
+[JBrowse](/wiki/JBrowse). This common platform will ease
 adaptation of Apollo by any user that is already familiar with JBrowse.
 
 [ParameciumDB](/wiki/ParameciumDB) and EcoliWiki's

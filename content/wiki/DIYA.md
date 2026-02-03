@@ -23,4 +23,3 @@ width="40" height="39" alt=" is open source" /></a>
 <a href="http://opensource.org/licenses/gpl-license"
 class="external text" rel="nofollow">Gnu GPL</a>
 
-Resources

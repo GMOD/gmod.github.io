@@ -219,7 +219,7 @@ The [feature](#Table:_feature) table has a Boolean valued column,
 _is_analysis_, indicating whether this is an annotation or a computed
 feature from a computational analysis. Annotations are features that are
 generated or blessed by a human curator, or in some cases by an
-integrated genome pipeline (for example, [MAKER](/wiki/MAKER.1) or
+integrated genome pipeline (for example, [MAKER](/wiki/MAKER) or
 [DIYA](/wiki/DIYA)) capable of synthesizing gene models and other
 annotations from _in silico_ analyses. They constitute the definitive
 version of a particular feature, in contrast to the features generated
@@ -246,8 +246,8 @@ features (as opposed to those that arise from purely computational
 methods) have names. The name should be a simple, concise,
 human-friendly display label (such as a gene or gene product symbol, as
 defined by the nomenclature rules of governing the organism). User
-interface software (such as [GBrowse](/wiki/GBrowse.1) and
-[Apollo](/wiki/Apollo.1)) can use the _name_ column for labelling
+interface software (such as [GBrowse](/wiki/GBrowse) and
+[Apollo](/wiki/Apollo)) can use the _name_ column for labelling
 feature glyphs in user displays. Uniqueness of name within any
 particular organism or genome project is a desirable characteristic, but
 is not enforced in the schema, since there are occasions where name
@@ -1595,7 +1595,7 @@ current -official- symbol for the linked feature.</td>
 <td><em>NOT NULL DEFAULT false</em><br />
 <br />
 Typically a synonym exists so that somebody querying the db with an
-obsolete name can find the object theyre looking for (under its current
+obsolete name can find the object they're looking for (under its current
 name. If the synonym has been used publicly and deliberately (e.g. in a
 paper), it may also be listed in reports as a synonym. If the synonym
 was not used deliberately (e.g. there was a typo which went public),

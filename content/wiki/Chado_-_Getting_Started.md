@@ -9,8 +9,6 @@ Status
 - **Active** development
 - **Active** support
 
-Resources
-
 - [Introduction](/wiki/Introduction_to_Chado)
 - [Manual](/wiki/Chado_Manual)
 - <a href="/wiki/Chado_Tutorial" class="mw-redirect"
@@ -86,7 +84,7 @@ addition of new modules for new data types. The existing modules are:
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
+  (ND)](/wiki/Chado_Natural_Diversity_Module) -
   for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data
@@ -146,9 +144,9 @@ in a number of ways:
 - [Load RefSeq into Chado
   HOWTO](/wiki/Load_RefSeq_Into_Chado)
 - [Load GFF into Chado HOWTO](/wiki/Load_GFF_Into_Chado)
-- Using [XORT](/wiki/XORT.1)
+- Using [XORT](/wiki/XORT)
 
-You can also use the application [Apollo](/wiki/Apollo.1) to curate
+You can also use the application [Apollo](/wiki/Apollo) to curate
 data in Chado.
 
 ## Mailing Lists

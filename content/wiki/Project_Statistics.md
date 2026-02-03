@@ -204,7 +204,7 @@ title="2013 GMOD Summer School">2013 GMOD Summer School</a></td>
 Switzerland</td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/GMOD_Malaysia_2014.1" title="GMOD Malaysia 2014">GMOD
+<td><a href="/wiki/GMOD_Malaysia_2014" title="GMOD Malaysia 2014">GMOD
 Malaysia 2014</a></td>
 <td>3.0</td>
 <td>Kuala Lumpur, Malaysia</td>
@@ -245,7 +245,7 @@ information.
 
 | List | 2008/02 | 2009/08 | 2010/12 | Description |
 |----|----|----|----|----|
-| gmod-ajax | 49 | 89 | 143 | javascript interfaces for GMOD centered around [JBrowse](/wiki/JBrowse.1) |
+| gmod-ajax | 49 | 89 | 143 | javascript interfaces for GMOD centered around [JBrowse](/wiki/JBrowse) |
 | gmod-announce | 126 | 152 | 174 | A moderated, low traffic list for announcements of meetings and software release |
 | gmod-architecture | 55 | 69 | 78 | mailing list for the architecture working group |
 | gmod-cmap | 57 | 72 | 80 | Discussion of the CMAP comparative map viewer |
@@ -291,7 +291,7 @@ SourceForge page. See [SourceForge Download
 Statistics](/wiki/SourceForge_Download_Statistics)
 for the raw data.
 
-### [GBrowse](/wiki/GBrowse.1)
+### [GBrowse](/wiki/GBrowse)
 
 #### GBrowse 2 Registrations
 
@@ -303,7 +303,7 @@ hosts. This comes to 203 registrations per month total, 72
 registrations/mo on unique hosts. The true number of installations is
 higher, because people can choose not to send in registrations.
 
-### [Galaxy](/wiki/Galaxy.1)
+### [Galaxy](/wiki/Galaxy)
 
 See the
 <a href="http://galaxyproject.org/wiki/Galaxy%20Project/Statistics"

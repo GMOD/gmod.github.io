@@ -9,15 +9,15 @@ CMap3D showing GrainGenes
 
 [visualisation](/wiki/Visualization) tool for
 [comparative](/wiki/Comparative_Genomics) genetic maps
-that runs on top of a [CMap](/wiki/CMap.1) database.
-[CMap](/wiki/CMap.1), a [GMOD
+that runs on top of a [CMap](/wiki/CMap) database.
+[CMap](/wiki/CMap), a [GMOD
 component](/wiki/GMOD_Components), is a common tool for the
 storage, comparison and visualisation of genetic maps. However, current
-map visualisation in [CMap](/wiki/CMap.1) is limited to the comparison
+map visualisation in [CMap](/wiki/CMap) is limited to the comparison
 of adjacent aligned maps. CMap3D overcomes this limitation. Multiple
 genetic maps can now be compared in three-dimensional space. The CMap3D
 visualisation tool is based on a client server model ensuring
-operability with current [CMap](/wiki/CMap.1) data repositories.
+operability with current [CMap](/wiki/CMap) data repositories.
 
 CMap3D can be applied to any species where genetic map information is
 available and enables rapid, direct comparison between multiple aligned

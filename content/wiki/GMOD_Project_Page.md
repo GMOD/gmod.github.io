@@ -30,7 +30,7 @@ comments and suggestions.
   [Genome grid](/wiki/Genome_grid) and
   <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
   projects.
-  - [MAKER](/wiki/MAKER.1), an annotation pipeline package for
+  - [MAKER](/wiki/MAKER), an annotation pipeline package for
     eukaryotic genomes, has been added to GMOD. *2008/05/13*
   - [DIYA](/wiki/DIYA), a pipeline infrastructure for microbial genome
     annotation (suggested for inclusion) - see the
@@ -42,15 +42,15 @@ comments and suggestions.
   ... (add to this list).
 - ****
   improvements. Projects in this area include the widely used
-  [CMap](/wiki/CMap.1), and current
+  [CMap](/wiki/CMap), and current
   <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">syntenic</a> map
   projects (see [GMOD_Components](/wiki/GMOD_Components)).
   But it should expand to include better cross-species data management
   of analyses, phylogenetic genome statistics.
 - **community annotation** improvements. This includes Wiki annotation
-  using [TableEdit](/wiki/TableEdit.1) and [Hackathon
+  using [TableEdit](/wiki/TableEdit) and [Hackathon
   wikidb](/wiki/Hackathon_wikidb), with possible additions,
-  as well as well-used [Apollo](/wiki/Apollo.1) tool.
+  as well as well-used [Apollo](/wiki/Apollo) tool.
 - **curation automation** and facilitation (literature, other). This
   includes [PubSearch](/wiki/PubSearch),
   [PubFetch](/wiki/PubFetch) (both now unsupported - 2010/10),

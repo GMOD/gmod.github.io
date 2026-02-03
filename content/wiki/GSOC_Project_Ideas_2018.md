@@ -254,8 +254,8 @@ Here is a list of the proposed project ideas for 2018:
   - *Mentors:* Sibyl Gao, Adam Wright
 
 - **Project Idea 11: CRAM support for
-  [JBrowse](/wiki/JBrowse.1)/[Apollo](/wiki/Apollo.1)**
-  - *Brief explanation:* [JBrowse](/wiki/JBrowse.1) already offers
+  [JBrowse](/wiki/JBrowse)/[Apollo](/wiki/Apollo)**
+  - *Brief explanation:* [JBrowse](/wiki/JBrowse) already offers
     support for several binary formats like BAM, BigWig and tabix
     formatted files like VCF. The
     <a href="http://www.sanger.ac.uk/science/tools/cram"

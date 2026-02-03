@@ -17,13 +17,13 @@ NOTE: the presentations listed here have been archived to conserve disk
 space. If you would like a copy of a presentation, please contact
 <a href="mailto:cain@cshl.edu" class="external text"
 
-- [GBrowse](/wiki/GBrowse.1) update
-- [CMap](/wiki/CMap.1) update
+- [GBrowse](/wiki/GBrowse) update
+- [CMap](/wiki/CMap) update
 -  update
 - Update from Gavin Sherlock's group (working with microarray data)
 - [PubFetch](/wiki/PubFetch) and PubTrack update
 - [PubSearch](/wiki/PubSearch) update
-- [Apollo](/wiki/Apollo.1) update and discussion
+- [Apollo](/wiki/Apollo) update and discussion
 - PTools update
 - GMOD website design update
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> summary

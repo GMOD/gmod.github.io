@@ -8,7 +8,7 @@ that it is no longer relevant given the technological changes that have
 occurred with the databases and ORM technologies discussed herein. It is
 left here for historical purposes.</span>
 
-**Comparison of [XORT](/wiki/XORT.1) and
+**Comparison of [XORT](/wiki/XORT) and
 <a href="http://www.hibernate.org/" class="external text"
 
 Goodman, FlyBase - Indiana University

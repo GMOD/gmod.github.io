@@ -60,7 +60,7 @@ title="MaraKim GMOD2014.pdf">Slides</a>, <a href="http://youtu.be/Soam8O3g1jg" c
 class="internal" title="AndrewSu GMOD2014.pptx">Slides</a>,<a href="https://www.youtube.com/watch?v=RVijs5ry05E"
 class="external text" rel="nofollow">YouTube</a> and <a href="https://www.youtube.com/watch?v=dGHXo-iNsyU"
 class="external text" rel="nofollow">some of the discussion
-following</a> | 12:00 | Lunch and poster session | 1:15 | [JBrowse](/wiki/JBrowse.1) and [WebApollo](/wiki/WebApollo.1) | <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
+following</a> | 12:00 | Lunch and poster session | 1:15 | [JBrowse](/wiki/JBrowse) and [WebApollo](/wiki/WebApollo) | <a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
 Buels</a> | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/37/RBuels_JBrowse_2014.pdf"
 class="internal" title="RBuels JBrowse 2014.pdf">Slides</a> | 2:00 | Migrating from GBrowse to JBrowse | [Richard Hayes](/wiki/User:Richard_Hayes) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Richard_Hayes_2014.pdf"
 class="internal" title="Richard Hayes 2014.pdf">Slides</a> | 2:30 | Crowdsourcing genomics with Ash dieback | <a href="http://www.tsl.ac.uk/profile/dan-maclean.asp"
@@ -100,7 +100,7 @@ href="http://youtu.be/9F6rskt3JRM" class="external text"
 </tr>
 <tr class="even">
 <td>09:45</td>
-<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<td><a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 <td>Lacey Sanderson</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Tripal-GMOD-2014.pptx"
 class="internal" title="Tripal-GMOD-2014.pptx">Slides</a> <a
@@ -142,7 +142,7 @@ class="external text" rel="nofollow">Video at YouTube</a></td>
 </tr>
 <tr class="even">
 <td>1:15</td>
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td>Daniel Ence</td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Daniel_Ence_2014.pptx"
 class="internal" title="Daniel Ence 2014.pptx">Slides</a></td>

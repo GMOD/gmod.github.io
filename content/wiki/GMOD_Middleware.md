@@ -386,7 +386,7 @@ resembling the following:
 
 All presenters paid attention to the assigned problems and all packages
 could perform the required operations if appropriate: the
-[GBrowse](/wiki/GBrowse.1) (DasI) Adaptor and
+[GBrowse](/wiki/GBrowse) (DasI) Adaptor and
 [InterMine](/wiki/InterMine), being read-only packages, did not
 carry out the edit/ delete tasks. Clearly one can see many differences
 between packages in how the the problems were solved, please see the
@@ -453,7 +453,7 @@ connect to the Chado schema but this should not be considered a
 significant barrier. Both packages can be used with any popular RDBMS
 (Postgres, Mysql, Oracle, etc.).
 
-[XORT](/wiki/XORT.1) is not a typical [ORM](/wiki/Glossary#ORM)
+[XORT](/wiki/XORT) is not a typical [ORM](/wiki/Glossary#ORM)
 tool like these other packages but has been included here because of its
 utility in bulk operations. This capability is one that the ORM tools
 are thought not to do very well as the serial construction and
@@ -651,7 +651,7 @@ instructions for setting up a new instance are provided at
 
 The \] approaches used only the
 Perl language (the Java packages all used Java plus XML, to some
-degree). The [XORT](/wiki/XORT.1) application is not, strictly
+degree). The [XORT](/wiki/XORT) application is not, strictly
 speaking, *middleware* but has proven to be very useful in bulk
 operations using the Chado schema and Chado XML though in principle it
 can be used with any relational schema.
@@ -734,7 +734,7 @@ BioPerl-style documentation at
 
 POD for all methods.
 
-##### [GBrowse](/wiki/GBrowse.1) (DasI)
+##### [GBrowse](/wiki/GBrowse) (DasI)
 
 ###### Abstraction
 
@@ -750,7 +750,7 @@ class="external text" rel="nofollow">Bio::DB::Das::Chado</a> performs
 relatively well since it is designed to be a
 <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
 title="GBrowse adaptors">database adaptor</a> to drive a Generic Genome
-Browser ([GBrowse](/wiki/GBrowse.1)) instance. Though it does not
+Browser ([GBrowse](/wiki/GBrowse)) instance. Though it does not
 perform as well as the
 <a href="http://bioperl.org/wiki/Module:Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a> and
@@ -933,7 +933,7 @@ $term_dbobj->delete();
 - Is Hibernate better when you're in the process of designing a schema?
   - Hibernate can assist you in making a *Hibernate-compatible* schema.
 
-### [XORT](/wiki/XORT.1)
+### [XORT](/wiki/XORT)
 
 #### Background
 
@@ -1131,7 +1131,7 @@ worrying about the complex details of the schema on a day-to-day basis.
 
 Clearly, <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> is designed
-for use with [GBrowse](/wiki/GBrowse.1).
+for use with [GBrowse](/wiki/GBrowse).
 
 #### Limitations
 

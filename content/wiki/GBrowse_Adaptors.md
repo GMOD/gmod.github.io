@@ -3,7 +3,7 @@ title: "GBrowse Adaptors"
 ---
 # GBrowse Adaptors
 
-[GBrowse](/wiki/GBrowse.1) has a flexible adaptor (yes, it is
+[GBrowse](/wiki/GBrowse) has a flexible adaptor (yes, it is
 spelled that way and is not "adapter") system for running off various
 types of databases/sources. A common question is "which adaptor should I
 be using?" This attempts to answer that question.

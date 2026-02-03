@@ -11,7 +11,7 @@ to [Chado XML](/wiki/Chado_XML) using
 <a href="http://bioperl.org/wiki/Module:Bio::SeqIO::chadoxml"
 class="external text" rel="nofollow">Bio::SeqIO::chadoxml</a>, but I was
 never completely satisfied with the result, and I was unable to load it
-with [XORT](/wiki/XORT.1) or
+with [XORT](/wiki/XORT) or
 <a href="http://search.cpan.org/perldoc?DBIx::DBStag"
 class="external text" rel="nofollow">DBIx::DBStag</a>. So, I've decided
 to work on the [GFF3](/wiki/GFF3) bulk loader `gmod_bulk_load_gff3.pl`

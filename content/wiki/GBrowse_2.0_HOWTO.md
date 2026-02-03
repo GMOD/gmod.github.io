@@ -217,7 +217,7 @@ First install prerequisites following the instructions at
 [GBrowse_2.0_Prerequisites#DEB Systems
 (apt)](/wiki/GBrowse_2.0_Prerequisites#DEB_Systems_.28apt.29).
 Then perform the last steps manually as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell).
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell).
 
 ## Installation on RedHat, CentOS and other RPM Systems
 
@@ -225,21 +225,21 @@ First install prerequisites following the instructions at
 [GBrowse_2.0_Prerequisites#RPM Systems
 (yum)](/wiki/GBrowse_2.0_Prerequisites#RPM_Systems_.28yum.29).
 Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell).
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell).
 
 ## Installation on MacOSX Systems
 
 Install the prerequisites following the instructions at
 [GBrowse_2.0_Prerequisites#MacOSX](/wiki/GBrowse_2.0_Prerequisites#MacOSX).
 Then perform the last steps using the CPAN shell as described in
-[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_via_the_CPAN_Shell)
+[GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell](/wiki/GBrowse_2.0_Install_HOWTO#Installing_via_the_CPAN_Shell)
 and
-[GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6](/wiki/GBrowse_2.0_Install_HOWTO.1#Configure_in_Mac_OS_X_10.6.6).
+[GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6](/wiki/GBrowse_2.0_Install_HOWTO#Configure_in_Mac_OS_X_10.6.6).
 
 ## Installation from Source Code
 
 Installation from source code is described in
-[GBrowse_2.0_Install_HOWTO#Installing_Manually](/wiki/GBrowse_2.0_Install_HOWTO.1#Installing_Manually).
+[GBrowse_2.0_Install_HOWTO#Installing_Manually](/wiki/GBrowse_2.0_Install_HOWTO#Installing_Manually).
 
 ## Users of GBrowse 1.X
 
@@ -1371,7 +1371,7 @@ web user's cron table, or by running it in root's cron table.
 More installation and maintenance tips, including support for next
 generation sequencing data, user accounts, and more, are given in
 [GBrowse 2.0 Install HOWTO#Advanced Installation
-Topics](/wiki/GBrowse_2.0_Install_HOWTO.1#Advanced_Installation_Topics)
+Topics](/wiki/GBrowse_2.0_Install_HOWTO#Advanced_Installation_Topics)
 
 # The GBrowse2 REST API
 

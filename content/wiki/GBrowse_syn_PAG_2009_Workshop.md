@@ -10,7 +10,7 @@ width="250" height="80" alt="GBrowse syn" />
 
 This [Comparative Genomics with GBrowse_syn: A hands on workshop for
 visualizing your syntenic data with
-GBrowse_syn](/wiki/GBrowse_syn.1) tutorial was presented by
+GBrowse_syn](/wiki/GBrowse_syn) tutorial was presented by
 [Sheldon McKay](/wiki/User:Mckays), [Scott
 Cain](/wiki/User:Scott), and [Dave
 Clements](/wiki/User:Clements) at the
@@ -47,13 +47,13 @@ This workshop was attended by almost 70 people.
 
 ## Overview
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a tool for visualizing
+[GBrowse_syn](/wiki/GBrowse_syn) is a tool for visualizing
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a> in up
 5 different genomes. This will be a hands-on tutorial on how to install,
 configure and use GBrowse_syn.
 
 GBrowse_syn is a part of the GMOD Project and is included in the latest
-release (1.69) of the popular [GBrowse](/wiki/GBrowse.1) genome
+release (1.69) of the popular [GBrowse](/wiki/GBrowse) genome
 browser. (GBrowse is the topic of a [separate
 workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
 2009](/wiki/PAG_2009).
@@ -63,7 +63,7 @@ workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
 - [Sheldon McKay](/wiki/User:Mckays),
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant Collaborative</a> (and author of
-  [GBrowse_syn](/wiki/GBrowse_syn.1)),
+  [GBrowse_syn](/wiki/GBrowse_syn)),
   <a href="http://www.cshl.edu/" class="external text" rel="nofollow">Cold
   Spring Harbor Laboratory</a>
 - [Scott Cain](/wiki/User:Scott), GMOD Project Coordinator,
@@ -79,8 +79,8 @@ workshop](/wiki/GBrowse_PAG_2009_Workshop) at [PAG
 Beginner to Intermediate. Students should be comfortable performing
 simple system Linux administration tasks like stopping and starting
 services, and installing software. No prior knowledge of
-[GBrowse](/wiki/GBrowse.1) or
-[GBrowse_syn](/wiki/GBrowse_syn.1) is required.
+[GBrowse](/wiki/GBrowse) or
+[GBrowse_syn](/wiki/GBrowse_syn) is required.
 
 The tutorial was aimed at computer-savvy biologists and computer
 scientists working with syntenic data.

@@ -5,7 +5,7 @@ title: "CMap Version 2 Design"
 
 The hopes and dreams for a new generation....
 
-Up to [CMap](/wiki/CMap.1).
+Up to [CMap](/wiki/CMap).
 
   Interface</span>](#User_Interface)
 - [Schema](#Schema)
@@ -95,6 +95,6 @@ Write loaders for:
   <a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
   class="external text" rel="nofollow">Proserver</a> to create
   <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a> server to share
-  directly from [CMap](/wiki/CMap.1); docs to explain to users how to
+  directly from [CMap](/wiki/CMap); docs to explain to users how to
   do this
 - As a DAS client to show additional features

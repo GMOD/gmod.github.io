@@ -52,20 +52,20 @@ class="external text" rel="nofollow">GBrowse_syn workshop</a> at the
 
 ## Overview
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a tool for visualizing
+[GBrowse_syn](/wiki/GBrowse_syn) is a tool for visualizing
 comparative genomic data. This workshop will introduce multiple sequence
 alignment and then demonstrate how to install, configure and use the
-[GBrowse_syn](/wiki/GBrowse_syn.1) comparative genomics viewer.
+[GBrowse_syn](/wiki/GBrowse_syn) comparative genomics viewer.
 
 GBrowse_syn is a part of the [GMOD Project](/wiki/Main_Page) and
 is included in the latest release of the popular
-[GBrowse](/wiki/GBrowse.1) genome browser
+[GBrowse](/wiki/GBrowse) genome browser
 
 ## Tutorial Level
 
 **Beginner to Intermediate:** No prior knowledge of
-[GBrowse](/wiki/GBrowse.1) or
-[GBrowse_syn](/wiki/GBrowse_syn.1) is required.
+[GBrowse](/wiki/GBrowse) or
+[GBrowse_syn](/wiki/GBrowse_syn) is required.
 
 The tutorial is aimed at computer-savvy biologists and computer
 scientists working with multiple sequence alignment data.
@@ -94,7 +94,7 @@ data, but it will not go into detail on different analysis options.
 
 This is not a hands-on workshop. However, after the workshop, links to
 workshop materials and a VMware system image
-with [GBrowse_syn](/wiki/GBrowse_syn.1) prerequisite software
+with [GBrowse_syn](/wiki/GBrowse_syn) prerequisite software
 already installed on it will be linked to from this page. You can use
 this image to walk through the material presented at this workshop.
 
@@ -109,13 +109,13 @@ GMOD will have a [strong presence](/wiki/PAG_2010) at PAG 2010,
 including
 
 - A [workshop](/wiki/GBrowse_PAG_2010_Workshop) on
-  [GBrowse](/wiki/GBrowse.1), a genome viewer that
-  [GBrowse_syn](/wiki/GBrowse_syn.1) is built on.
+  [GBrowse](/wiki/GBrowse), a genome viewer that
+  [GBrowse_syn](/wiki/GBrowse_syn) is built on.
 - A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
-  [MAKER](/wiki/MAKER.1), a genome annotation pipeline.
+  [MAKER](/wiki/MAKER), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
+  a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

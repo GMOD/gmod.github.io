@@ -231,14 +231,14 @@ agenda.
   - Moving away from Postgres
   - Missing Chado pieces (phylogenetics)
 - What Should GMOD Focus On (What's Missing)
-  - Genome Analysis ([Galaxy](/wiki/Galaxy.1),
+  - Genome Analysis ([Galaxy](/wiki/Galaxy),
     <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
     ...)
     - Lightweight annotation
       <a href="http://www.yandell-lab.org/maker/index.html"
       class="external text" rel="nofollow">MAKER pipeline</a> from Mark
       Yandell
-      (*2008/05/13: [MAKER](/wiki/MAKER.1) has since been folded in to
+      (*2008/05/13: [MAKER](/wiki/MAKER) has since been folded in to
       GMOD.*)
   - MicroArrays
   - What is the GMOD Community and how best can we serve them?
@@ -277,7 +277,7 @@ agenda.
 1:00 Standards and applications for storing comparative genome data
 
 - [Steve Fisher](/wiki/User:Stevef) -
-  [GBrowse](/wiki/GBrowse.1): [SynView](/wiki/SynView) and the
+  [GBrowse](/wiki/GBrowse): [SynView](/wiki/SynView) and the
   Generic database adaptor
 - Victor Strelets - FlyBase Orthoview (GBrowse)
 
@@ -415,7 +415,7 @@ Talks on synteny are spread throughout this document.
 
 ##### New Development
 
-Work has resumed on developing [Apollo](/wiki/Apollo.1). [Ed
+Work has resumed on developing [Apollo](/wiki/Apollo). [Ed
 Lee](/wiki/User:Elee) formerly of TIGR/JCVI started working for
 Suzi Lewis at Berkeley this fall and is working on it. Work is being
 done on
@@ -624,9 +624,9 @@ consists of:
   with DictyBase data in it.
 - An empty Chado database
 - [Modware](/wiki/Modware)
-- [Apollo](/wiki/Apollo.1) - Uses the JDBC adaptor with triggers.
+- [Apollo](/wiki/Apollo) - Uses the JDBC adaptor with triggers.
   This is a Java WebStart version.
-- [GBrowse](/wiki/GBrowse.1)
+- [GBrowse](/wiki/GBrowse)
 - MediaWiki - includes Cite, ProcessCite and TableEdit extensions.
   - Cite extensions make it easy to provide literature annotations.
     Provide PubMed ID and it finds and grabs extract from PubMed.
@@ -682,7 +682,7 @@ default. Gregg would like to see GBrowse get a DAS/2 adapter.
 ##### Roadmap
 
 [Lincoln Stein](/wiki/User:Lstein) talked about upcoming
-releases of [GBrowse](/wiki/GBrowse.1).
+releases of [GBrowse](/wiki/GBrowse).
 
 - 1.69
   - Is in pre-release state.
@@ -699,12 +699,12 @@ releases of [GBrowse](/wiki/GBrowse.1).
   - Release in early 2008
   - Major performance and scalability enhancements.
     - e.g., each track can be drawn by different server or CPU.
-- 3.0 *(subsequently renamed to [JBrowse](/wiki/JBrowse.1))*
+- 3.0 *(subsequently renamed to [JBrowse](/wiki/JBrowse))*
   - Released sometime in 2008
   - Google maps type interface.
     - e.g., zooming and panning via mouse.
 
-Version 3.0 (now called [JBrowse](/wiki/JBrowse.1)) is a fork of the
+Version 3.0 (now called [JBrowse](/wiki/JBrowse)) is a fork of the
 code and version 2 and 3 are expected to co-exist 'forever'. Some shops
 won't have the horsepower to power version 3, and Lincoln wants to keep
 it as an easy to install tool.
@@ -712,7 +712,7 @@ it as an easy to install tool.
 ##### Performance
 
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is usually
-too slow to run [GBrowse](/wiki/GBrowse.1) on top of. Consider using
+too slow to run [GBrowse](/wiki/GBrowse) on top of. Consider using
 Bio::DB:GFF instead. (Can't run GBrowse on top of
 [BioMart](/wiki/BioMart). No adapter exists because of BioMart's
 flexible schema.)
@@ -755,7 +755,7 @@ page](/wiki/Main_Page).
 title="GMOD-Nov-2007.ppt">Recent Developments in Pathway Tools</a>
 
 Suzanne Paley talked about recent developments in [Pathway
-Tools](/wiki/Pathway_Tools.1), including:
+Tools](/wiki/Pathway_Tools), including:
 
 - Advanced Query Form
 - Richer representation of regulation
@@ -845,8 +845,8 @@ every new release.
 
 The Berkeley group is actively involved in supporting and developing
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, GO, SO,
-OBO-Edit, [Phenote](/wiki/Phenote), [Apollo](/wiki/Apollo.1), and
-the new [AJAX](/wiki/Glossary#AJAX) [GBrowse](/wiki/GBrowse.1).
+OBO-Edit, [Phenote](/wiki/Phenote), [Apollo](/wiki/Apollo), and
+the new [AJAX](/wiki/Glossary#AJAX) [GBrowse](/wiki/GBrowse).
 
 #### FlyBase
 
@@ -856,15 +856,15 @@ production databases to the
 schema](/wiki/Glossary#Database_Schema). FlyBase uses:
 
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
-- GMOD [XORT](/wiki/XORT.1)
+- GMOD [XORT](/wiki/XORT)
 - [Chado XML](/wiki/Chado_XML)
-- [Apollo](/wiki/Apollo.1)
+- [Apollo](/wiki/Apollo)
 - [BioMart](/wiki/BioMart)
 
 ##### Synteny at FlyBase
 
 Victor Strelets talked about OrthoView, an extension to
-[GBrowse](/wiki/GBrowse.1) for viewing
+[GBrowse](/wiki/GBrowse) for viewing
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>.
 
 Victor also presented the genetic interactions viewer, a fast way of
@@ -881,7 +881,7 @@ Chinmay Patel spoke about a week-long annotation project at Sanger
 involving 40 people all annotating the same genome.
 
 They used the [Artemis](/wiki/Artemis) annotation editor (instead of
-[Apollo](/wiki/Apollo.1)), but Artemis was talking to a
+[Apollo](/wiki/Apollo)), but Artemis was talking to a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 using an Artemis-Chado Ibatis-based (instead of Hibernate-based)
 adapter. The adapter is not yet released. (*But it is now: see
@@ -971,8 +971,8 @@ Chado there.
 title="Gbrowse syn.pdf">Gbrowse_syn</a>, [Sheldon
 McKay](/wiki/User:Mckays)
 
-Sheldon McKay talked about [GBrowse_syn](/wiki/GBrowse_syn.1), a
-prototype extension to [GBrowse](/wiki/GBrowse.1) for viewing
+Sheldon McKay talked about [GBrowse_syn](/wiki/GBrowse_syn), a
+prototype extension to [GBrowse](/wiki/GBrowse) for viewing
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>. Goal
 is to have a *sequence* alignment viewer that can look at more than two
 species at a time. GBrowse_syn is based purely on sequence alignments.

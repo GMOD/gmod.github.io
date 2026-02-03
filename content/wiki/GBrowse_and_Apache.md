@@ -4,7 +4,7 @@ title: "GBrowse and Apache"
 # GBrowse and Apache
 
 Eventually this page document the details of running
-[GBrowse](/wiki/GBrowse.1) in the Apache web server. However, in the
+[GBrowse](/wiki/GBrowse) in the Apache web server. However, in the
 mean time, it is a pointer to useful email threads.
 
 - <a

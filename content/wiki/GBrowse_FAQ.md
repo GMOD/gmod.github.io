@@ -77,7 +77,7 @@ title: "GBrowse FAQ"
 ### What is this FAQ?
 
 It is the list of Frequently Asked Questions about
-[GBrowse](/wiki/GBrowse.1).
+[GBrowse](/wiki/GBrowse).
 
 ### How is it maintained?
 
@@ -97,7 +97,7 @@ qualitative data such as the splicing structure of a gene, and
 quantitative data such as microarray expression levels.
 
 Another good way to get an overview of the features GBrowse offers is to
-read the documentation at the [GBrowse](/wiki/GBrowse.1) Wiki page.
+read the documentation at the [GBrowse](/wiki/GBrowse) Wiki page.
 
 ### What platforms does GBrowse run on?
 

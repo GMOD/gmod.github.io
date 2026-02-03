@@ -365,7 +365,7 @@ The deprecated "boxes" subtype is a synonym for "histogram."</td>
 <tr class="odd">
 <th>-hbumppad</th>
 <td>&lt;integer&gt; [default 2]</td>
-<td>Ordinarily collison control prevents two features from overlapping
+<td>Ordinarily collision control prevents two features from overlapping
 if they come within 2 pixels of each other. This option allows you to
 change this value to give glyphs more or less breathing space on the
 left and right.</td>
@@ -420,7 +420,7 @@ suppress labeling entirely.</td>
 <td>Where to place the feature label. "top" will place the label above
 the glyph aligned with its left side. "left" will place the label to the
 left of the glyph, vertically centered with it. "alignment_left" will
-place the label to the left of the glyph in the panel pad-left positon.
+place the label to the left of the glyph in the panel pad-left position.
 The last option is used internally for drawing DNA alignments which span
 the screen.</td>
 </tr>

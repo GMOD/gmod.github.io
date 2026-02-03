@@ -33,7 +33,7 @@ primary role in GMOD is to be the DBMS for the
 schema. Chado was developed with Postgres as its target DBMS and Chado
 off the shelf will work best with Postgres.
 
-Postgres can also be used to back [Galaxy](/wiki/Galaxy.1).
+Postgres can also be used to back [Galaxy](/wiki/Galaxy).
 
 ## What Do I Need to Know About Postgres?
 

@@ -107,7 +107,7 @@ for my $exon (@exons) {
  }
 ```
 
-Or see your report in [GBrowse](/wiki/GBrowse.1)
+Or see your report in [GBrowse](/wiki/GBrowse)
 
 ##### Advantages
 
@@ -121,5 +121,5 @@ Or see your report in [GBrowse](/wiki/GBrowse.1)
 - Not suitable as a 'general'
   [middleware](/wiki/Glossary#Middleware) layer
   - May be suitable for some applications, particularly if they are
-    similar to [GBrowse](/wiki/GBrowse.1) or other uses of
+    similar to [GBrowse](/wiki/GBrowse) or other uses of
     Bio::DB::GFF

@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+This [Tripal](/wiki/Tripal) tutorial was presented by [Stephen
 Ficklin](/wiki/User:Sficklin) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
@@ -17,7 +17,7 @@ May 2010. The most recent Tripal tutorial can be found at the
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
 This  walks you
-through installing and configuring [Tripal](/wiki/Tripal.1), a web
+through installing and configuring [Tripal](/wiki/Tripal), a web
 front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>
 databases. This tutorial references (and complements) the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/TripalUsersGuideJan2010.pdf"
@@ -491,7 +491,7 @@ Finally, load the new data:
 
 This step would normally not occur at this point but it takes about 20
 minutes to prepare the database for GO terms.
-[Tripal](/wiki/Tripal.1) has an interface to do this but to save time
+[Tripal](/wiki/Tripal) has an interface to do this but to save time
 and keep the course moving we will do this manually now:
 
 ``` enter
@@ -531,7 +531,7 @@ Set permissions so we can easily work with
 ```
 
 This will undo the permission changes we did previously with
-[GBrowse](/wiki/GBrowse.1). Redo them.
+[GBrowse](/wiki/GBrowse). Redo them.
 
 ``` enter
    sudo chmod -R 777  /var/www/gbrowse2/{tmp,databases}
@@ -1404,7 +1404,7 @@ associated in chado.
 4.  Save the page.
 5.  Create a menu item
 
-This [JBrowse](/wiki/JBrowse.1) won't contain to the sequence in our
+This [JBrowse](/wiki/JBrowse) won't contain to the sequence in our
 demo database but for purposes of demonstration this is adequate.
 
 ## Example Customizing Content

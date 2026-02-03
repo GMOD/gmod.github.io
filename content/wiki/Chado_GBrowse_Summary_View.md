@@ -3,7 +3,7 @@ title: "Chado GBrowse Summary View"
 ---
 # Chado GBrowse Summary View
 
-Starting in [GBrowse](/wiki/GBrowse.1) version 2.13, administrators
+Starting in [GBrowse](/wiki/GBrowse) version 2.13, administrators
 have the option of configuring a *summary view* (feature density) for
 tracks when zoomed out too far to effectively show individual features,
 and starting with the 0.30 release of
@@ -15,7 +15,7 @@ with GBrowse.
 
 ## Prerequisites
 
-- [GBrowse](/wiki/GBrowse.1) 2.13
+- [GBrowse](/wiki/GBrowse) 2.13
 - <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
   class="external text" rel="nofollow">Bio::DB::Das::Chado</a> 0.31
 - [PostgreSQL](/wiki/PostgreSQL) 8.1 (probably--I only tested

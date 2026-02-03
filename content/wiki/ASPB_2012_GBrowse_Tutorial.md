@@ -22,7 +22,7 @@ registered attendees.
   School](/wiki/2012_GMOD_Summer_School) -
   Applications are officially closed, but if you indicate you were at
   this workshop, you might get in on "stand by".
-- [GMOD in the Cloud](/wiki/Cloud.1) - An Amazon Web Services (AWS),
+- [GMOD in the Cloud](/wiki/Cloud) - An Amazon Web Services (AWS),
   aka "the Cloud", instance with lots of GMOD software preinstalled and
   configured.
 

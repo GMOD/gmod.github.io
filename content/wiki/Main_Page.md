@@ -115,17 +115,17 @@ See the [full list of GMOD components](/wiki/GMOD_Components)
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/JBrowse.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/250px-JBrowseLogo.png" alt="JBrowse" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/JBrowse"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/250px-JBrowseLogo.png" alt="JBrowse" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>JBrowse</strong><br>Genome annotation viewer</p>
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/WebApollo.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/250px-WebApolloLogo.png" alt="Apollo" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/WebApollo"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/250px-WebApolloLogo.png" alt="Apollo" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>Apollo</strong><br>Annotation editor</p>
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/Galaxy.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/250px-GalaxyLogoBigger.png" alt="Galaxy" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/Galaxy"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/250px-GalaxyLogoBigger.png" alt="Galaxy" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>Galaxy</strong><br>Data analysis & integration</p>
 </div>
 
@@ -135,7 +135,7 @@ See the [full list of GMOD components](/wiki/GMOD_Components)
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/Tripal.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png" alt="Tripal" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/Tripal"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/06/TripalLogo.png/250px-TripalLogo.png" alt="Tripal" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>Tripal</strong><br>Chado web interface</p>
 </div>
 
@@ -145,17 +145,17 @@ See the [full list of GMOD components](/wiki/GMOD_Components)
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/MAKER.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/250px-MAKERLogo.png" alt="MAKER" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/MAKER"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/37/MAKERLogo.png/250px-MAKERLogo.png" alt="MAKER" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>MAKER</strong><br>Genome annotation pipeline</p>
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/GBrowse.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png" alt="GBrowse" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/GBrowse"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/250px-GBrowseLogo.png" alt="GBrowse" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>GBrowse</strong><br>Genome annotation viewer</p>
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/GBrowse_syn.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/250px-GBrowse_syn_logo.png" alt="GBrowse_syn" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/GBrowse_syn"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/250px-GBrowse_syn_logo.png" alt="GBrowse_syn" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>GBrowse_syn</strong><br>Synteny viewer</p>
 </div>
 
@@ -165,12 +165,12 @@ See the [full list of GMOD components](/wiki/GMOD_Components)
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/CMap.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/ec/CMapLogo-horiz.png/250px-CMapLogo-horiz.png" alt="CMap" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/CMap"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/ec/CMapLogo-horiz.png/250px-CMapLogo-horiz.png" alt="CMap" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>CMap</strong><br>Comparative map viewer</p>
 </div>
 
 <div style="text-align: center; padding: 1rem; border: 1px solid #eee; border-radius: 8px;">
-<a href="/wiki/Pathway_Tools.1"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/PathwayTools.png/250px-PathwayTools.png" alt="Pathway Tools" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
+<a href="/wiki/Pathway_Tools"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/PathwayTools.png/250px-PathwayTools.png" alt="Pathway Tools" style="max-width: 200px; height: 60px; object-fit: contain;"></a>
 <p><strong>Pathway Tools</strong><br>Metabolic & regulatory pathways</p>
 </div>
 

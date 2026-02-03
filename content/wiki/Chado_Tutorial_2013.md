@@ -273,7 +273,7 @@ modules are all widely used and cleanly designed. After that modules
 become less frequently used (Stock, Expression, Phenotype, Mage). Also
 several modules are not as cleanly separated as we would like them to
 be. Phenotypic data is spread over several modules. Organism and
-Phylogeny overlap. [CMap](/wiki/CMap.1) is all about maps, but it does
+Phylogeny overlap. [CMap](/wiki/CMap) is all about maps, but it does
 not use the Map module.
 
 From Jeff Bowes, at XenBase:
@@ -300,7 +300,7 @@ we'll take a data-centric view and imagine what we want to store in our
 database, then learn the Chado way of storing it.
 
 During this course you'll be working with genome annotation data from
-[MAKER](/wiki/MAKER.1). We'll simplify this and start by considering
+[MAKER](/wiki/MAKER). We'll simplify this and start by considering
 that we have annotation on chromosomes that we want to store in our
 database. These are the sort of things we want to store:
 
@@ -1001,7 +1001,7 @@ extremely extensible, but they do so at a cost.
 
 ### Prerequisites
 
-Using data from [MAKER](/wiki/MAKER.1).
+Using data from [MAKER](/wiki/MAKER).
 
 #### PostgreSQL
 
@@ -1287,8 +1287,8 @@ loader uses to keep track of IDs.
 
 ### Loading other data
 
-[Chado XML](/wiki/Chado_XML) and [XORT](/wiki/XORT.1), but
-really, [Tripal](/wiki/Tripal.1) bulk file loader.
+[Chado XML](/wiki/Chado_XML) and [XORT](/wiki/XORT), but
+really, [Tripal](/wiki/Tripal) bulk file loader.
 
 ## Chado for Expression, Genotype, Phenotype, and Natural Diversity
 

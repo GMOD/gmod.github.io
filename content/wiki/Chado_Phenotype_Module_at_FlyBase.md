@@ -200,7 +200,7 @@ Tables referencing **`phenotype`** via [foreign
 key](/wiki/Glossary#Foreign_Key) constraints:
 
 - [**`feature_phenotype`**](/wiki/Chado_Phenotype_Module#Table:_feature_phenotype)
-- [**`nd_experiment_phenotype`**](/wiki/Chado_Natural_Diversity_Module.1#Table:_nd_experiment_phenotype)
+- [**`nd_experiment_phenotype`**](/wiki/Chado_Natural_Diversity_Module#Table:_nd_experiment_phenotype)
 - [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
 - [**`phenotype_cvterm`**](/wiki/Chado_Phenotype_Module#Table:_phenotype_cvterm)
 - [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)
@@ -1104,7 +1104,7 @@ Tables referencing **`genotype`** via [foreign
 key](/wiki/Glossary#Foreign_Key) constraints:
 
 - [**`feature_genotype`**](/wiki/Chado_Genetic_Module#Table:_feature_genotype)
-- [**`nd_experiment_genotype`**](/wiki/Chado_Natural_Diversity_Module.1#Table:_nd_experiment_genotype)
+- [**`nd_experiment_genotype`**](/wiki/Chado_Natural_Diversity_Module#Table:_nd_experiment_genotype)
 - [**`phendesc`**](/wiki/Chado_Genetic_Module#Table:_phendesc)
 - [**`phenotype_comparison`**](/wiki/Chado_Genetic_Module#Table:_phenotype_comparison)
 - [**`phenstatement`**](/wiki/Chado_Genetic_Module#Table:_phenstatement)

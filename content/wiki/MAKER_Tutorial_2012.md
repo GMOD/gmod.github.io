@@ -3,7 +3,7 @@ title: "MAKER Tutorial 2012"
 ---
 # MAKER Tutorial 2012
 
-This [MAKER](/wiki/MAKER.1) tutorial was taught by [Barry
+This [MAKER](/wiki/MAKER) tutorial was taught by [Barry
 Moore](/wiki/User:Bmoore) as part of the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
@@ -124,10 +124,10 @@ size including use by large sequence centers. MAKER can be used for *de
 novo* annotation of newly sequenced genomes, for updating existing
 annotations to reflect new evidence, or just to combine annotations,
 evidence, and quality control statistics for use with other GMOD
-programs like [GBrowse](/wiki/GBrowse.1),
-[JBrowse](/wiki/JBrowse.1),
+programs like [GBrowse](/wiki/GBrowse),
+[JBrowse](/wiki/JBrowse),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, and
-[Apollo](/wiki/Apollo.1).
+[Apollo](/wiki/Apollo).
 
 MAKER has been used in many genome annotation projects:
 
@@ -358,7 +358,7 @@ using `sudo`.
 ```
 
 If you set `APOLLO_ROOT` in the `server.ctl` file, then you can now
-setup a special Java Web Start version of [Apollo](/wiki/Apollo.1) to
+setup a special Java Web Start version of [Apollo](/wiki/Apollo) to
 view results directly from the web interface. Web Start will be
 described in more detail in the Apollo session. This must be done as
 root or using `sudo`.

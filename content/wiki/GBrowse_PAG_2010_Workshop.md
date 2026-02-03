@@ -52,7 +52,7 @@ class="external text" rel="nofollow">GBrowse workshop</a> at the
 ## Overview
 
 This will be a hands-on tutorial on how to install and use the
-[GBrowse](/wiki/GBrowse.1) genome browser.
+[GBrowse](/wiki/GBrowse) genome browser.
 
 ## Tutorial Level
 
@@ -61,14 +61,14 @@ simple system administration tasks like stopping and starting services.
 
 ## Intended Audience
 
-[GBrowse](/wiki/GBrowse.1) is sufficiently easy to install that a
+[GBrowse](/wiki/GBrowse) is sufficiently easy to install that a
 biologist can easily set up and configure a GBrowse server after the
 initial hurdles of learning about configuration options and file formats
 are overcome. This class is intended to help them over those hurdles.
 
 ## Prerequisite Software and Conference PCs
 
-Prerequisite software for [GBrowse](/wiki/GBrowse.1) will be
+Prerequisite software for [GBrowse](/wiki/GBrowse) will be
 pre-installed on the conference PCs in the classroom area of the
 California Room. Participants using these PCs will be able to setup and
 configure GBrowse during the workshop.
@@ -109,13 +109,13 @@ including
 
 - A
   [workshop](/wiki/GBrowse_syn_PAG_2010_Workshop)
-  on [GBrowse_syn](/wiki/GBrowse_syn.1), a comparative genomics
-  viewer built on [GBrowse](/wiki/GBrowse.1)
+  on [GBrowse_syn](/wiki/GBrowse_syn), a comparative genomics
+  viewer built on [GBrowse](/wiki/GBrowse)
 - A [workshop](/wiki/MAKER_PAG_2010_Workshop) on
-  [MAKER](/wiki/MAKER.1), a genome annotation pipeline.
+  [MAKER](/wiki/MAKER), a genome annotation pipeline.
 - The <a href="http://www.intl-pag.org/18/18-gramene.html"
   class="external text" rel="nofollow">Gramene Workshop</a> will include
-  a section on the [CMap](/wiki/CMap.1) comparative map viewer.
+  a section on the [CMap](/wiki/CMap) comparative map viewer.
 
 See [PAG 2010](/wiki/PAG_2010) for a more complete list of
 GMOD-related presentations at PAG XVIII.

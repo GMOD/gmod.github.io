@@ -68,7 +68,7 @@ title="Gbrowse">guides for other operating systems</a>.
 ## Overview
 
 This was be a hands-on tutorial on how to install and use the
-[GBrowse](/wiki/GBrowse.1) genome browser.
+[GBrowse](/wiki/GBrowse) genome browser.
 
 ## Tutorial Level
 
@@ -77,7 +77,7 @@ simple system administration tasks like stopping and starting services.
 
 Students who wish to use their own computer should preinstall the
 prerequisites described in the [GBrowse installation
-notes](/wiki/GBrowse.1#Installation), including Perl, Apache, MySQL
+notes](/wiki/GBrowse#Installation), including Perl, Apache, MySQL
 and (for Unix) BioPerl.
 
 ## Intended Audience
@@ -120,7 +120,7 @@ Example datasets will be posted prior to the conference.
 GMOD will have a [strong presence](/wiki/PAG_2009) at PAG 2009,
 including a
 [workshop](/wiki/GBrowse_syn_PAG_2009_Workshop)
-on [GBrowse_syn](/wiki/GBrowse_syn.1), a synteny viewer built on
+on [GBrowse_syn](/wiki/GBrowse_syn), a synteny viewer built on
 GBrowse. See the [list of GMOD related PAG 2009
 presentations](/wiki/PAG_2009) for more. The [January 2009 GMOD
 Meeting](/wiki/January_2009_GMOD_Meeting) was held

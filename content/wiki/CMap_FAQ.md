@@ -32,7 +32,7 @@ title: "CMap FAQ"
 
 ### What is this FAQ?
 
-It is the list of  about [CMap](/wiki/CMap.1).
+It is the list of  about [CMap](/wiki/CMap).
 
 ### How is it maintained?
 

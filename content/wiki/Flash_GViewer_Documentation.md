@@ -101,7 +101,7 @@ Here are some of the Flash GViewer's current features:
 
 - Added the ability to color annotation features independently via
   addition of color tag to annotation XML format. Annotations without
-  separate color information will rever to the default color for that
+  separate color information will revert to the default color for that
   particular feature type.
 
 #### Changes in v0.4

@@ -46,9 +46,9 @@ standard 12 weeks up to 22 weeks. (*Excerpt from the
 Since 2011, the Open Genome Informatics group has served as an "umbrella
 organization" to a variety of bioinformatics projects, including
 [GMOD](/wiki/Main_Page) and its software projects --
-[JBrowse](/wiki/JBrowse.1), [Apollo](/wiki/Apollo.1),
+[JBrowse](/wiki/JBrowse), [Apollo](/wiki/Apollo),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-[Galaxy](/wiki/Galaxy.1) etc.;
+[Galaxy](/wiki/Galaxy) etc.;
 <a href="http://www.informatics.jax.org/" class="external text"
 
 <a href="https://oicr.on.ca/research-portfolio/" class="external text"

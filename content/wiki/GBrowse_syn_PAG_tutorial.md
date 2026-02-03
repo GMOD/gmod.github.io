@@ -5,7 +5,7 @@ title: "GBrowse syn PAG tutorial"
 
 This  walks you
 through how to install and configure the
-[GBrowse_syn](/wiki/GBrowse_syn.1) comparative genomics viewer.
+[GBrowse_syn](/wiki/GBrowse_syn) comparative genomics viewer.
 This tutorial was originally taught by [Sheldon
 McKay](/wiki/User:Mckays) at the 2009 [GMOD
 Schools](/wiki/GMOD_Schools) -

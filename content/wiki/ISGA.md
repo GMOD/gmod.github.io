@@ -9,8 +9,6 @@ Status
 - **Active** development
 - **Active** support
 
-Resources
-
 - <a href="http://isga.cgb.indiana.edu/" class="external text"
   rel="nofollow">Home Page</a>
 - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
@@ -41,7 +39,7 @@ can be installed locally to provide a biologist-friendly web interface
 to your computational resources. ISGA comes with prokaryotic annotation
 and prokaryotic assembly pipelines and offers an intuitive interface for
 biologists to run and customize pipelines. ISGA also integrates tools
-such as [GBrowse](/wiki/GBrowse.1) and BLAST for visualizing and
+such as [GBrowse](/wiki/GBrowse) and BLAST for visualizing and
 analyzing pipeline results. Since ISGA utilizes the
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
 workflow system to execute pipelines, ISGA pipeline can be submitted

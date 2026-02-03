@@ -5,6 +5,6 @@ title: "Region panel"
 
 Where should this page redirect? I think there should be a series of
 pages describing the various components of
-[GBrowse](/wiki/GBrowse.1).
+[GBrowse](/wiki/GBrowse).
 
 See also: the [overview panel](/wiki/Overview_panel).

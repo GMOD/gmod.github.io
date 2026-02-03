@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/375px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/500px-JBrowseLogo.png 2x"
 width="250" height="55" alt="JBrowse" />
 
-This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Mitch
+This [JBrowse](/wiki/JBrowse) tutorial was presented by [Mitch
 Skinner](/wiki/User:MitchSkinner) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
@@ -17,7 +17,7 @@ May 2010. The most recent JBrowse tutorial can be found at the
 title="JBrowse Tutorial">JBrowse Tutorial</a> page.
 
 This  walks you
-through setting up and running a [JBrowse](/wiki/JBrowse.1) server.
+through setting up and running a [JBrowse](/wiki/JBrowse) server.
 
   VMware](#VMware)
 - [Caveats](#Caveats)
@@ -118,8 +118,8 @@ Shell tricks:
 
 ## JBrowse Introduction
 
-How and why [JBrowse](/wiki/JBrowse.1) is different from most other
-web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
+How and why [JBrowse](/wiki/JBrowse) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>

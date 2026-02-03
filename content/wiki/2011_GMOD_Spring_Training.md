@@ -158,13 +158,13 @@ GMOD Spring Training</strong></strong>
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+<p><strong><a href="/wiki/Apollo" title="Apollo">Apollo</a> • <a href="/wiki/MAKER" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a> • <a href="/wiki/InterMine"
-title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
-title="Tripal">Tripal</a> • <a href="/wiki/GFF3" title="GFF3">GFF3</a> • <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> • <a href="/wiki/SOBA.1"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal"
+title="Tripal">Tripal</a> • <a href="/wiki/GFF3" title="GFF3">GFF3</a> • <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> • <a href="/wiki/SOBA"
 title="SOBA">SOBA</a></strong></p>
 </td>
 </tr>
@@ -182,7 +182,7 @@ project staff:
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
-| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1) | <a href="http://www.oicr.on.ca/" class="external text" |
+| [Scott Cain](/wiki/User:Scott) | GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse) | <a href="http://www.oicr.on.ca/" class="external text" |
 
 # Prerequisites
 
@@ -289,7 +289,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />
 
-The [Galaxy Project](/wiki/Galaxy.1) is also sponsoring this course
+The [Galaxy Project](/wiki/Galaxy) is also sponsoring this course
 and all other [GMOD Americas
 2011](/wiki/GMOD_Americas_2011) events. Galaxy is a
 analysis and data integration framework that enables biologists to both

@@ -9,8 +9,6 @@ Status
 - **Active** development
 - **Active** support
 
-Resources
-
 - <a href="http://ergatis.sourceforge.net/" class="external text"
   rel="nofollow">Home Page</a>
 - <a href="http://ergatis.sourceforge.net/download.html"

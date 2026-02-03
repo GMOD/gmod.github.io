@@ -8,14 +8,14 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+This [Tripal](/wiki/Tripal) tutorial was presented by [Stephen
 Ficklin](/wiki/User:Sficklin) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School), August 2012.
 The most recent Tripal tutorial can be found at the
 <a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal Tutorial</a> page.
 
-Welcome to the [Tripal](/wiki/Tripal.1) v1.0 Tutorial. Here you will
+Welcome to the [Tripal](/wiki/Tripal) v1.0 Tutorial. Here you will
 find instructions for installation, usage and administration of a
 Tripal-based genome website.
 
@@ -335,7 +335,7 @@ GMOD Tripal mailing lists:
 <a href="/wiki/GMOD_Mailing_Lists" class="external free"
 
 GMOD Tutorials from previous GMOD schools:
-<a href="/wiki/Tripal.1" class="external free"
+<a href="/wiki/Tripal" class="external free"
 
 ### Contributing Organizations
 

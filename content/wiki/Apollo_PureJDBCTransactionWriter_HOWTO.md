@@ -4,7 +4,7 @@ title: "Apollo PureJDBCTransactionWriter HOWTO"
 # Apollo PureJDBCTransactionWriter HOWTO
 
 This HOWTO contains instructions for using the
-[Apollo](/wiki/Apollo.1) PureJDBCTransactionWriter, a component of
+[Apollo](/wiki/Apollo) PureJDBCTransactionWriter, a component of
 the chado/JDBC adapter that allows Apollo to save changes directly to a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">chado</a> database via
 JDBC, without having to install any stored procedures or triggers in the
@@ -38,7 +38,7 @@ target database.
 
 # Background
 
-The [Apollo](/wiki/Apollo.1)
+The [Apollo](/wiki/Apollo)
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">chado</a>/JDBC data
 adapter currently supports **two** methods for saving changes made in
 Apollo to a chado database via JDBC. These two methods are implemented

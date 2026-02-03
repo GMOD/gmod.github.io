@@ -70,15 +70,15 @@ active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
-[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
-[Apollo](/wiki/Apollo.1) and [MAKER](/wiki/MAKER.1) for genome
-annotation, [GBrowse_syn](/wiki/GBrowse_syn.1) and
-[CMap](/wiki/CMap.1) for comparative genomics visualization,
+[GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse) (and
+[WebGBrowse](/wiki/WebGBrowse)) for genome browsing,
+[Apollo](/wiki/Apollo) and [MAKER](/wiki/MAKER) for genome
+annotation, [GBrowse_syn](/wiki/GBrowse_syn) and
+[CMap](/wiki/CMap) for comparative genomics visualization,
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](/wiki/Galaxy.1) and
+[Galaxy](/wiki/Galaxy) and
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](/wiki/ISGA)) for data analysis.
 
@@ -208,13 +208,13 @@ GMOD Spring Training</a></strong>
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+<p><strong><a href="/wiki/Apollo" title="Apollo">Apollo</a> • <a href="/wiki/MAKER" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a> • <a href="/wiki/InterMine"
-title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
-title="Tripal">Tripal</a> • <a href="/wiki/Galaxy.1"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal"
+title="Tripal">Tripal</a> • <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a></strong></p>
 </td>
 <td></td>
@@ -355,9 +355,9 @@ boundaries.
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
-width="130" height="45" alt="Galaxy" />](/wiki/Galaxy.1)
+width="130" height="45" alt="Galaxy" />](/wiki/Galaxy)
 
-The [Galaxy Project](/wiki/Galaxy.1) is also sponsoring **GMOD
+The [Galaxy Project](/wiki/Galaxy) is also sponsoring **GMOD
 Americas 2011** events. Galaxy is a data integration framework that
 enables biologists to both analyze their data, and to archive those
 analyses (including data sets and program parameters) for future

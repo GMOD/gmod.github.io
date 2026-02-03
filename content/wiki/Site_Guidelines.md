@@ -127,7 +127,7 @@ This means that if a user types
 "<a href="/wiki/Generic_Genome_Browser" class="mw-redirect"
 title="Generic Genome Browser">Generic Genome Browser</a>" in the
 "Go/Search" box and you have a redirect defined for
-"[GBrowse](/wiki/GBrowse.1)" then they will go directly to the
+"[GBrowse](/wiki/GBrowse)" then they will go directly to the
 GBrowse page, instead of the search results page.
 
 To create a redirect page, enter the name of the redirect page in the

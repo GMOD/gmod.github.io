@@ -29,7 +29,7 @@ allow you to set up a complete test environment see:
 
 - Install prerequisites: latest versions of
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
-  [GBrowse](/wiki/GBrowse.1)
+  [GBrowse](/wiki/GBrowse)
 - Fetch Genbank genome/chromosomes
 - Run <a
   href="http://code.open-bio.org/svnweb/index.cgi/bioperl/view/bioperl-live/trunk/scripts/Bio-DB-GFF/genbank2gff3.PLS"
@@ -37,7 +37,7 @@ allow you to set up a complete test environment see:
   script from [BioPerl](/wiki/BioPerl) (Important: use a version of
   the script created April 2007 or later)
 - Run `gmod_bulk_load_gff3.pl` script (from GMOD)
-- View genome(s) with [GBrowse](/wiki/GBrowse.1) (see an <a
+- View genome(s) with [GBrowse](/wiki/GBrowse) (see an <a
   href="http://server3.eugenes.org/cgi-bin/gmod01/gbrowse/dev_chado_ggb/"
   class="external text" rel="nofollow">example at eugenes.org</a>).
 

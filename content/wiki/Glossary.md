@@ -90,7 +90,7 @@ or *GUI*, which is a direct user interface to a resource.
 format. BAM and SAM are both part of [SAMtools](#SAMtools). BAM is
 compressed, binary, indexed format for [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
-data. [GBrowse](/wiki/GBrowse.1) 2 has an adaptor that can read BAM
+data. [GBrowse](/wiki/GBrowse) 2 has an adaptor that can read BAM
 data.
 
 ### CPAN
@@ -361,7 +361,7 @@ only the keyboard.
 *Java* is arguably the world's most popular programming language but it
 is not as popular for command-line work on Unix as [Perl](#Perl). It's
 encountered in GMOD primarily as a language to construct user interfaces
-(e.g. [Apollo](/wiki/Apollo.1)).
+(e.g. [Apollo](/wiki/Apollo)).
 
 See also:
 
@@ -377,7 +377,7 @@ Environment* or *JRE*.
 
 *JSON* is an acronym for JavaScript Object Notation, a lightweight
 data-interchange format. It is used in GMOD in
-[Galaxy](/wiki/Galaxy.1) and [JBrowse](/wiki/JBrowse.1).
+[Galaxy](/wiki/Galaxy) and [JBrowse](/wiki/JBrowse).
 
 See also:
 
@@ -453,7 +453,7 @@ extensive open source library, so it's highly functional. Many of GMOD
 components use [BioPerl](/wiki/BioPerl), a bioinformatics toolkit
 written in Perl.
 
-Some parts of GMOD, like [GBrowse](/wiki/GBrowse.1), can be extended
+Some parts of GMOD, like [GBrowse](/wiki/GBrowse), can be extended
 or customized using Perl but beginners' skills in Perl is sufficient for
 this work.
 
@@ -497,7 +497,7 @@ System](#Database_Management_System).
 [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
 data. It is a part of [SAMtools](#SAMtools).
-[GBrowse](/wiki/GBrowse.1) 2 has an adaptor that can read SAM data.
+[GBrowse](/wiki/GBrowse) 2 has an adaptor that can read SAM data.
 
 ### SAMtools
 
@@ -556,4 +556,4 @@ has a much tighter syntax than does HTML.
 
 See also:
 
-- [XORT](/wiki/XORT.1)
+- [XORT](/wiki/XORT)

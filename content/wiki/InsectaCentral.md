@@ -89,7 +89,7 @@ The current public release is: **beta**
 
 ## Wishlist
 
-- [GBrowse](/wiki/GBrowse.1) 2.x
+- [GBrowse](/wiki/GBrowse) 2.x
 - Head curator to supervise community gene models
 
 # Software

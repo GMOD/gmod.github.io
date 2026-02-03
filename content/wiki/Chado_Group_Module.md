@@ -63,8 +63,6 @@ title="ChadoGroupModule.sql">Source Code</a>
 <a href="https://github.com/autochthe/Chado-group-module.git"
 class="external text" rel="nofollow">GitHub</a>
 
-## Resources
-
 Mailing list <a
 href="http://generic-model-organism-system-database.450254.n5.nabble.com/Chado-Group-Module-td5712158.html"
 class="external text" rel="nofollow">discussion</a>

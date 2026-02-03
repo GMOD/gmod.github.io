@@ -3,7 +3,7 @@ title: "JBrowse Tutorial PAG 2020"
 ---
 # JBrowse Tutorial PAG 2020
 
-This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
+This [JBrowse](/wiki/JBrowse) tutorial was presented by [Scott
 Cain](/wiki/User:Scott) at the
 <a href="http://www.intlpag.org" class="external text"
 
@@ -113,8 +113,8 @@ but would be necessary if you wanted to add plugins (git and NodeJS):
 
 ## JBrowse Introduction
 
-How and why [JBrowse](/wiki/JBrowse.1) is different from most other
-web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
+How and why [JBrowse](/wiki/JBrowse) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>

@@ -113,7 +113,7 @@ chado.
 
 When a record is to be deleted, before the delete transaction is executed
 in chado, the existing chado record is copied to the corresponding
-shadow audit table, with the corrent timestamp and *transaction_type* =
+shadow audit table, with the current timestamp and *transaction_type* =
 'd'. The delete transaction is then executed in chado.
 
 ### Implementation Issues

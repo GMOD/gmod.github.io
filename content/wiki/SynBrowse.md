@@ -44,7 +44,7 @@ Please see <a href="http://www.synbrowse.org" class="external free"
 
 ## Requirements
 
-[GBrowse](/wiki/GBrowse.1), between 1.62 and 1.68. A new release of
+[GBrowse](/wiki/GBrowse), between 1.62 and 1.68. A new release of
 SynBrowse that works with GBrowse 1.70 is under development and is
 expected to be released in early 2010.
 

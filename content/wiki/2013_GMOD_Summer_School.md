@@ -45,12 +45,12 @@ The course covers the following topics in detail:
 <tbody>
 <tr class="odd">
 <td>Day 1, AM</td>
-<td><a href="/wiki/Cloud.1" title="Cloud">GMOD in the Cloud</a>, <a href="/wiki/AWS_walkthrough" title="AWS walkthrough">AWS walkthrough</a></td>
+<td><a href="/wiki/Cloud" title="Cloud">GMOD in the Cloud</a>, <a href="/wiki/AWS_walkthrough" title="AWS walkthrough">AWS walkthrough</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
@@ -61,7 +61,7 @@ Tutorial</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
@@ -72,16 +72,16 @@ Tutorial</a></td>
 <td><a href="http://galaxyproject.org/" class="external text"
 
 class="external text" rel="nofollow">Emory University</a><br />
-<a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
+<a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></td>
 </tr>
 <tr class="even">
 <td>Day 4, AM</td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
@@ -92,7 +92,7 @@ title="GBrowse syn Tutorial 2013">GBrowse syn Tutorial</a></td>
 <td><a href="http://iplantcollaborative.org" class="external text"
 
 class="external text" rel="nofollow">CSHL</a><br />
-<a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a>, <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Day 1, AM</td>
@@ -101,7 +101,7 @@ class="external text" rel="nofollow">CSHL</a><br />
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
@@ -112,7 +112,7 @@ title="JBrowse Tutorial 2013">JBrowse Tutorial</a></td>
 Buels</a></td>
 <td><a href="http://berkeley.edu" class="external text"
 
-<a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Day 1, PM</td>
@@ -121,7 +121,7 @@ Tutorial</a></td>
 <td>Michael Campbell and Daniel Ence</td>
 <td><a href="http://utah.edu" class="external text"
 
-<a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="odd">
 <td>Day 1, AM/PM</td>
@@ -130,7 +130,7 @@ title="SOBA Tutorial">SOBA Tutorial</a></td>
 <td>Michael Campbell and Daniel Ence</td>
 <td><a href="http://www.utah.edu" class="external text"
 
-<a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="even">
 <td>Day 2, PM</td>
@@ -140,7 +140,7 @@ Tutorial</a></td>
 Ficklin</a></td>
 <td><a href="http://www.wsu.edu" class="external text"
 
-<a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 </tr>
 <tr class="odd">
 <td>Day 3, PM</td>
@@ -150,7 +150,7 @@ title="WebApollo Tutorial 2013">WebApollo Tutorial</a></td>
 Childers</a></td>
 <td><a href="http://genomes.missouri.edu/" class="external text"
 
-<a href="/wiki/Apollo.1" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo.1"
+<a href="/wiki/Apollo" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo"
 title="WebApollo">WebApollo</a></td>
 </tr>
 </tbody>
@@ -160,7 +160,7 @@ title="WebApollo">WebApollo</a></td>
 
 The 2013 Summer School will use Amazon Web Services to host virtual GMOD
 instances containing the software and demo data used during the course.
-See [GMOD in the Cloud](/wiki/Cloud.1) for more information on the
+See [GMOD in the Cloud](/wiki/Cloud) for more information on the
 GMOD Amazon Machine Images available to the public. The tutorials used
 on the course will be available on this wiki for interested persons to
 work through.

@@ -131,7 +131,7 @@ School</a></strong><br />
 <td><strong><a href="http://wiki.galaxyproject.org/Events/GCC2013"
 class="external text" rel="nofollow">2013 Galaxy Community Conference
 (GCC2013)</a></strong><br />
-The <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> project's annual
+The <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> project's annual
 meeting.</td>
 <td>Oslo, Norway</td>
 <td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
@@ -225,7 +225,7 @@ School</a></strong></td>
 <td><strong><a href="http://wiki.g2.bx.psu.edu/Events/GCC2012"
 class="external text" rel="nofollow">2012 Galaxy Community Conference
 (GCC2012)</a></strong><br />
-The <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> project's annual
+The <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> project's annual
 meeting.</td>
 <td>Chicago, Illinois, United States</td>
 <td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
@@ -274,7 +274,7 @@ Republic</a></td>
 href="http://evomics.org/workshops/workshop-on-genomics/2012-genomics-cesky-krumlov/"
 class="external text" rel="nofollow">Workshop on
 Genomics</a></strong><br />
-Covers a plethora of topics, including <a href="/wiki/Galaxy.1"
+Covers a plethora of topics, including <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a></td>
 <td><a href="/wiki/User%253AJamesTaylor" title="User%253AJamesTaylor">James
 Taylor</a></td>
@@ -338,7 +338,7 @@ style="font-size: 180%; line-height: 140%; vertical-align: top"><br />
 <td><strong><a href="http://www.biovis.net/" class="external text"
 
 class="external text" rel="nofollow">VisWeek</a>
-The <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> Track Browser:
+The <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> Track Browser:
 Transforming the Genome Browser from Visualization Tool to Analysis
 Tool<br />
 </td>
@@ -360,7 +360,7 @@ Toronto, Canada</td>
 <td><strong><a href="/wiki/News/UC_Davis_Courses_this_September"
 title="News/UC Davis Courses this September">Genome
 Annotation</a></strong><br />
-Genome annotation using <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> and <a href="/wiki/Apollo.1" title="Apollo">Apollo</a>.</td>
+Genome annotation using <a href="/wiki/MAKER" title="MAKER">MAKER</a> and <a href="/wiki/Apollo" title="Apollo">Apollo</a>.</td>
 <td><a href="http://bioinformatics.ucdavis.edu/" class="external text"
 
 <td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
@@ -388,7 +388,7 @@ GMOD-related content.</td>
 href="http://www.molecularevolution.org/workshops/WCG#wcgna#wcgna"
 class="external text" rel="nofollow">Workshop on Comparative Genomics,
 North America</a></strong><br />
-Sessions on <a href="/wiki/BioPerl" title="BioPerl">BioPerl</a>, <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> and <a href="/wiki/GBrowse_syn.1"
+Sessions on <a href="/wiki/BioPerl" title="BioPerl">BioPerl</a>, <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> and <a href="/wiki/GBrowse_syn"
 title="GBrowse syn">GBrowse_syn</a></td>
 <td>Fort Collins, Colorado, United States</td>
 <td><a href="/wiki/User%253AStajich" title="User%253AStajich">Jason Stajich</a>, <a href="/wiki/User%253ADanB" title="User%253ADanB">Dan Blankenberg</a>, <a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
@@ -410,7 +410,7 @@ Symposium</a></strong><br />
 GMOD had a strong presence with a mixture of talks, poster, and these
 workshops:<br />
 &#10;<strong>Genome Project 101</strong>, June 9, 4:00-6:00 p.m.
-<strong>Comparative genomics with the generic synteny browser (<a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>): Configuration
+<strong>Comparative genomics with the generic synteny browser (<a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a>): Configuration
 and display of various co-linearity data types</strong>, June 11,
 10:30-Noon</td>
 <td>Kansas City, Missouri, United States</td>
@@ -421,7 +421,7 @@ and display of various co-linearity data types</strong>, June 11,
 <td><strong><a href="https://www.eshg.org/eshg2011.0.html"
 class="external text" rel="nofollow">European Human Genetics Conference
 2011</a></strong><br />
-<a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> Workshop</td>
+<a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> Workshop</td>
 <td>Amsterdam, The Netherlands</td>
 <td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
 </tr>
@@ -432,7 +432,7 @@ class="external text" rel="nofollow">2011 Galaxy Community
 Conference</a></strong>
 <a href="http://galaxy.psu.edu/gcc2011/" class="external text"
 
-extending <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> to use new tools
+extending <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> to use new tools
 and data sources, deploying Galaxy at your organization, and best
 practices for using Galaxy to further your research.</td>
 <td><a href="http://galaxy.psu.edu/gcc2011/Logistics.html"
@@ -456,7 +456,7 @@ class="external text" rel="nofollow">NBIC</a></td>
 <td><strong><a
 href="http://www.bio-itworldexpo.com/Bio-It_Expo_Content.aspx?id=101298"
 class="external text" rel="nofollow">Dynamically Scalable, Accessible
-Analysis for High-Throughput Sequence Data</a></strong> (<a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a>)</td>
+Analysis for High-Throughput Sequence Data</a></strong> (<a href="/wiki/Galaxy" title="Galaxy">Galaxy</a>)</td>
 <td><a href="http://www.bio-itworldexpo.com/" class="external text"
 
 States</td>
@@ -517,7 +517,7 @@ rel="nofollow"><em>dedicated all-day GMOD Workshop</em></a>.</td>
 <td><strong><a href="http://www.molecularevolution.org/workshops/WCG"
 class="external text" rel="nofollow">Workshop on Comparative Genomics,
 Europe</a></strong><br />
-Sessions on <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> and <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a></td>
+Sessions on <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> and <a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a></td>
 <td>Český Krumlov, Czech Republic</td>
 <td><a href="http://www.bx.psu.edu/~anton/" class="external text"
 
@@ -575,7 +575,7 @@ Tools For Evolutionary Biology Hackathon</a></strong></td>
 <tr class="even">
 <td>November 3-9</td>
 <td><strong>Computational &amp; Comparative Genomics</strong><br />
-Included material on <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a> and <a href="/wiki/BioMart" title="BioMart">BioMart</a>.</td>
+Included material on <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a> and <a href="/wiki/BioMart" title="BioMart">BioMart</a>.</td>
 <td>Cold Spring Harbor, NY, USA</td>
 <td><a href="http://people.virginia.edu/~wrp/" class="external text"
 
@@ -601,7 +601,7 @@ Galaxy of Analysis Tools</a></strong></td>
 
 href="http://openhelix.com" class="external text"
 
-title="BioMart">BioMart</a> and <a href="/wiki/Galaxy.1"
+title="BioMart">BioMart</a> and <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a>. Washington DC, United States</td>
 <td><a href="http://www.openhelix.com/cgi/contact.cgi"
 class="external text" rel="nofollow">OpenHelix</a></td>
@@ -847,7 +847,7 @@ Honolulu, Hawaii</td>
 <tr class="odd">
 <td>October 12-27</td>
 <td><strong>Programming for Biology</strong><br />
-Session on <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a>.</td>
+Session on <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a>.</td>
 <td><a href="http://www.cshl.edu" class="external text"
 
 NY, USA</td>
@@ -1063,7 +1063,7 @@ Genomics Resources for Emerging Model Organisms</a></strong></td>
 </tr>
 <tr class="odd">
 <td rowspan="3">April 10-13</td>
-<td><strong>Community Contributions to Genome Annotation (<a href="/wiki/Apollo.1" title="Apollo">Apollo</a>)</strong></td>
+<td><strong>Community Contributions to Genome Annotation (<a href="/wiki/Apollo" title="Apollo">Apollo</a>)</strong></td>
 <td rowspan="3"><a href="http://www.k-state.edu/agc/symposium.shtml"
 class="external text" rel="nofollow">Arthropod Genomics Symposium</a>,
 Kansas City, MO, USA<br />

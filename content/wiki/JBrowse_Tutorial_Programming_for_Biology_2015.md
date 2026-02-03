@@ -3,7 +3,7 @@ title: "JBrowse Tutorial Programming for Biology 2015"
 ---
 # JBrowse Tutorial Programming for Biology 2015
 
-This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Scott
+This [JBrowse](/wiki/JBrowse) tutorial was presented by [Scott
 Cain](/wiki/User:Scott) at the Programming for Biology at Cold
 Spring Harbor Laboratory in October 2015 using JBrowse 1.11.6.
 
@@ -86,8 +86,8 @@ console, click the "gear" icon (settings) and check the box labeled
 
 ## JBrowse Introduction
 
-How and why [JBrowse](/wiki/JBrowse.1) is different from most other
-web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
+How and why [JBrowse](/wiki/JBrowse) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>

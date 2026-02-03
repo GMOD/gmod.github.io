@@ -171,13 +171,13 @@ was 9 responses.
 
 | Components and Combinations |  |  | \# Responses |
 |----|----|----|----|----|----|
-|  |  | [GBrowse](/wiki/GBrowse.1) | 63 |  | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
-|  | 32 | [Apollo](/wiki/Apollo.1) |  |  | 27 |
+|  |  | [GBrowse](/wiki/GBrowse) | 63 |  | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
+|  | 32 | [Apollo](/wiki/Apollo) |  |  | 27 |
 |  | Chado | GBrowse | 25 | Apollo |  |
 | GBrowse | 22 | Apollo | Chado |  | 21 |
 |  | [BioMart](/wiki/BioMart) |  | 19 | Apollo | Chado |
 | GBrowse | 18 |  | BioMart | GBrowse | 18 |
-|  |  | [Pathway Tools](/wiki/Pathway_Tools.1) | 12 |  |  |
+|  |  | [Pathway Tools](/wiki/Pathway_Tools) | 12 |  |  |
 | GBrowse | Pathway Tools | 11 | Apollo | BioMart |  |
 | 10 | Apollo | BioMart | GBrowse | 9 |  |
 | BioMart | Chado |  | 9 |  |  |
@@ -254,12 +254,12 @@ Popular responses were:
 
 | \# Responses | Aspect / Component |
 |---:|----|
-| 23 | [GBrowse](/wiki/GBrowse.1) |
+| 23 | [GBrowse](/wiki/GBrowse) |
 | 17 | Support and active community |
 | 8 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> |
 | 8 | Software tools quality, maintenance, breadth and functionality |
 | 6 | Open Source |
-| 6 | [Apollo](/wiki/Apollo.1) |
+| 6 | [Apollo](/wiki/Apollo) |
 
 ### Least Satisfied With
 
@@ -290,7 +290,7 @@ Recurring responses were:
 | 18 | Documentation |
 | 14 | Integration |
 | 11 | GBrowse: testing, speed, Web 2.0, glyph documentation, features |
-| 5 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](/wiki/Apollo.1), functional annotation |
+| 5 | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>: Chado: PostgreSQL 8.3 support, phenotypes, integration with [Apollo](/wiki/Apollo), functional annotation |
 | 3 | Training |
 | 3 | Improve what we already have. |
 
@@ -413,7 +413,7 @@ Respondents were given a list of choices along with *Other*
 | 32 | Community [annotation](/wiki/Annotation) |
 | 29 |  |
 | 29 |  |
-| 24 | [Mapping](/wiki/CMap.1) (genetic, physical, QTL, ...) |
+| 24 | [Mapping](/wiki/CMap) (genetic, physical, QTL, ...) |
 | 22 |  |
 | 20 | Pathways |
 | 19 | Literature curation |

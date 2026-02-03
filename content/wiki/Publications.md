@@ -39,7 +39,7 @@ compatible with the
   mykiss. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F22120661">PMID:22120661</span>
   <sup>[\[3\]](#cite_note-PMID:22120661-3)</sup>
-- [Tripal](/wiki/Tripal.1): a construction toolkit for online genome
+- [Tripal](/wiki/Tripal): a construction toolkit for online genome
   databases. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F21959868">PMID:21959868</span>
   <sup>[\[4\]](#cite_note-PMID:21959868-4)</sup>
@@ -61,10 +61,10 @@ compatible with the
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20935049">PMID:20935049</span>
   <sup>[\[8\]](#cite_note-PMID:20935049-8)</sup>
 - Using the Generic Synteny Browser
-  ([GBrowse_syn](/wiki/GBrowse_syn.1)) <span class="Z3988"
+  ([GBrowse_syn](/wiki/GBrowse_syn)) <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20836076">PMID:20836076</span>
   <sup>[\[9\]](#cite_note-PMID:20836076-9)</sup>
-- [Galaxy](/wiki/Galaxy.1): a comprehensive approach for supporting
+- [Galaxy](/wiki/Galaxy): a comprehensive approach for supporting
   accessible, reproducible, and transparent computational research in
   the life sciences. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20738864">PMID:20738864</span>
@@ -82,7 +82,7 @@ compatible with the
   annotation of the pea aphid genome. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20482635">PMID:20482635</span>
   <sup>[\[12\]](#cite_note-PMID:20482635-12)</sup>
-- [Galaxy](/wiki/Galaxy.1): a web-based genome analysis tool for
+- [Galaxy](/wiki/Galaxy): a web-based genome analysis tool for
   experimentalists". <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20069535">PMID:20069535</span>
   <sup>[\[13\]](#cite_note-PMID:20069535-13)</sup>
@@ -90,7 +90,7 @@ compatible with the
   [est2assembly](/wiki/Est2assembly). <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F20034392">PMID:20034392</span>
   <sup>[\[14\]](#cite_note-PMID:20034392-14)</sup>
-- Using the Generic Genome Browser ([GBrowse](/wiki/GBrowse.1)).
+- Using the Generic Genome Browser ([GBrowse](/wiki/GBrowse)).
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19957275">PMID:19957275</span>
   <sup>[\[15\]](#cite_note-PMID:19957275-15)</sup>
@@ -102,17 +102,17 @@ compatible with the
   human genome. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19732458">PMID:19732458</span>
   <sup>[\[17\]](#cite_note-PMID:19732458-17)</sup>
-  ([GBrowse](/wiki/GBrowse.1)-related)
+  ([GBrowse](/wiki/GBrowse)-related)
 - TBrowse: an integrative genomics map of Mycobacterium tuberculosis.
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19683474">PMID:19683474</span>
   <sup>[\[18\]](#cite_note-PMID:19683474-18)</sup>
-  ([GBrowse](/wiki/GBrowse.1)-related)
-- [CMap](/wiki/CMap.1) 1.01: a comparative mapping application for the
+  ([GBrowse](/wiki/GBrowse)-related)
+- [CMap](/wiki/CMap) 1.01: a comparative mapping application for the
   Internet. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19648141">PMID:19648141</span>
   <sup>[\[19\]](#cite_note-PMID:19648141-19)</sup>
-- [Apollo](/wiki/Apollo.1): a community resource for genome
+- [Apollo](/wiki/Apollo): a community resource for genome
   annotation editing. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F19439563">PMID:19439563</span>
   <sup>[\[20\]](#cite_note-PMID:19439563-20)</sup>
@@ -134,12 +134,12 @@ compatible with the
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F18554176">PMID:18554176</span>
   <sup>[\[24\]](#cite_note-PMID:18554176-24)</sup>
-  ([GBrowse](/wiki/GBrowse.1)-related)
-- Using the Generic Genome Browser ([GBrowse](/wiki/GBrowse.1)).
+  ([GBrowse](/wiki/GBrowse)-related)
+- Using the Generic Genome Browser ([GBrowse](/wiki/GBrowse)).
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F18428797">PMID:18428797</span>
   <sup>[\[25\]](#cite_note-PMID:18428797-25)</sup>
-- [MAKER](/wiki/MAKER.1): an easy-to-use annotation pipeline designed
+- [MAKER](/wiki/MAKER): an easy-to-use annotation pipeline designed
   for emerging model organism genomes. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F18025269">PMID:18025269</span>
   <sup>[\[26\]](#cite_note-PMID:18025269-26)</sup>
@@ -236,7 +236,7 @@ compatible with the
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F17090585">PMID:17090585</span>
   <sup>[\[43\]](#cite_note-PMID:17090585-43)</sup>
 - [SynView](/wiki/SynView): a
-  [GBrowse](/wiki/GBrowse.1)-compatible approach to visualizing
+  [GBrowse](/wiki/GBrowse)-compatible approach to visualizing
   comparative genome data. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F16844709">PMID:16844709</span>
   <sup>[\[44\]](#cite_note-PMID:16844709-44)</sup>
@@ -250,7 +250,7 @@ compatible with the
   Dictyostelium discoideum. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F16381903">PMID:16381903</span>
   <sup>[\[46\]](#cite_note-PMID:16381903-46)</sup>
-- [Galaxy](/wiki/Galaxy.1): a platform for interactive large-scale
+- [Galaxy](/wiki/Galaxy): a platform for interactive large-scale
   genome analysis. <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F16169926">PMID:16169926</span>
   <sup>[\[47\]](#cite_note-PMID:16169926-47)</sup>
@@ -307,13 +307,13 @@ compatible with the
   <sup>[\[56\]](#cite_note-PMID:12582244-56)</sup>
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Gkg222.pdf" class="internal"
   title="Gkg222.pdf">PDF</a>
-- [Apollo](/wiki/Apollo.1): a sequence annotation editor.
+- [Apollo](/wiki/Apollo): a sequence annotation editor.
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F12537571">PMID:12537571</span>
   <sup>[\[57\]](#cite_note-PMID:12537571-57)</sup>
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/Gb-2002-3-12-research0082.pdf"
   class="internal" title="Gb-2002-3-12-research0082.pdf">PDF</a>
-- The [generic genome browser (GBrowse)](/wiki/GBrowse.1): a
+- The [generic genome browser (GBrowse)](/wiki/GBrowse): a
   building block for a model organism system database.
   <span class="Z3988"
   title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%253Aofi%2Ffmt%253Akev%253Amtx%253Ajournal&amp;rfr_id=info%253Asid%2Focoins.info%253Agenerator&amp;rft.genre=article&amp;rft_id=info%253Apmid%2F12368253">PMID:12368253</span>

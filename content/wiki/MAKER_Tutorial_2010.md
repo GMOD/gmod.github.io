@@ -150,7 +150,7 @@ accessible directories. This must be done as root or using `sudo`.
 ```
 
 If you set `APOLLO_ROOT` in the `server.ctl` file, then you can now
-setup a special Java Web Start version of [Apollo](/wiki/Apollo.1) to
+setup a special Java Web Start version of [Apollo](/wiki/Apollo) to
 view results directly from the web interface. Web Start will be
 described in more detail in the Apollo session. This must be done as
 root or using `sudo`.

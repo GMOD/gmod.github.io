@@ -51,7 +51,7 @@ genomics data.
 
 ### CMap
 
-[CMap](/wiki/CMap.1) is a web-based tool that allows users to view
+[CMap](/wiki/CMap) is a web-based tool that allows users to view
 comparisons of a wide variety of data including genetic maps, physical
 maps, sequence assemblies, QTL and deletion maps. Unlike the other tools
 listed here, it does not require sequence data.
@@ -62,14 +62,14 @@ these correspondences based on feature names or correspondences can be
 imported directly. CMap can display correspondences as either lines or
 ribbons.
 
-See [CMap](/wiki/CMap.1) for more.
+See [CMap](/wiki/CMap) for more.
 
 ### GBrowse_syn
 
 GBrowse_syn, as implemented at WormBase
 
-[GBrowse_syn](/wiki/GBrowse_syn.1), or the Generic Synteny
-Browser, is a [GBrowse](/wiki/GBrowse.1)-based
+[GBrowse_syn](/wiki/GBrowse_syn), or the Generic Synteny
+Browser, is a [GBrowse](/wiki/GBrowse)-based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species.  It can be used to
@@ -106,7 +106,7 @@ how Sybil represents syntenic data in
 [SynView](/wiki/SynView) displays synteny at the region and/or gene
 level. Users select a reference genome and then synteny with other
 selected genomes is displayed relative to that genome. SynView is based
-on [GBrowse](/wiki/GBrowse.1). It can be layered on top of an
+on [GBrowse](/wiki/GBrowse). It can be layered on top of an
 existing GBrowse instance and uses the full range of GBrowse's display
 and configuration options. SynView is included in the GBrowse
 distribution.

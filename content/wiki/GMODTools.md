@@ -278,7 +278,7 @@ Version 1.1 (2007 October) adds these features and corrections:
 
 # See Also
 
-- [XORT](/wiki/XORT.1) offers an alternative approach to bulk uploads
+- [XORT](/wiki/XORT) offers an alternative approach to bulk uploads
   and downloads from a Chado database.
 - [Sample Chado SQL](/wiki/Sample_Chado_SQL) gives an
   overview of the feature and other Chado table

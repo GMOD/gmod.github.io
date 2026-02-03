@@ -15,8 +15,8 @@ you some pointers on where you can start.
   list of the components in GMOD. This list can appear daunting, but it
   gives you a good idea of what sorts of things are available from GMOD.
   - If you already know the specific component you want to use (*e.g.*
-    [GBrowse](/wiki/GBrowse.1), [Apollo](/wiki/Apollo.1),
-    [CMap](/wiki/CMap.1), ...) you can type the component name in the
+    [GBrowse](/wiki/GBrowse), [Apollo](/wiki/Apollo),
+    [CMap](/wiki/CMap), ...) you can type the component name in the
     search box and go directly to the page for that component.
 - [ParameciumDB](/wiki/ParameciumDB) describes how ParameciumDB
   implemented GMOD at their web site.

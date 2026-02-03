@@ -13,7 +13,7 @@ demo installation</a>
 
 ## Note on installation
 
-- GBrowse_karyotype is not part of the [GBrowse](/wiki/GBrowse.1)
+- GBrowse_karyotype is not part of the [GBrowse](/wiki/GBrowse)
   distribution
 - It should be
   <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/GBrowse_karyotype"

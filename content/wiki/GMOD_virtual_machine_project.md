@@ -36,7 +36,7 @@ for creating virtual machines. I am excited about the potential uses for
 these virtual machines for several purposes, among them the ability to
 create a consistent platform for teaching (like giving a classroom a
 disk with the VMware player and a linux VM with
-[GBrowse](/wiki/GBrowse.1) preinstalled to give a tutorial), and for
+[GBrowse](/wiki/GBrowse) preinstalled to give a tutorial), and for
 creating virtual machines that could be used as a 'test server' that
 people interested in GMOD software could get and try out without having
 to set up a server to do it. That is what this email is about.

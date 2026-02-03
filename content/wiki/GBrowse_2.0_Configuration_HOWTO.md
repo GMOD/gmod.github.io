@@ -814,7 +814,7 @@ web user's cron table, or by running it in root's cron table.
 More installation and maintenance tips, including support for next
 generation sequencing data, user accounts, and more, are given in
 [GBrowse 2.0 Install HOWTO#Advanced Installation
-Topics](/wiki/GBrowse_2.0_Install_HOWTO.1#Advanced_Installation_Topics)
+Topics](/wiki/GBrowse_2.0_Install_HOWTO#Advanced_Installation_Topics)
 
 # The GBrowse2 REST API
 

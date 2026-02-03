@@ -79,7 +79,7 @@ prokaryotic genome sequence (i.e. BAC clones, small whole genomes,
 preliminary sequencing data, etc.) to independently annotate and analyse
 their data and produce output that can be loaded into a genome database.
 MWAS is build on the stand alone genome annotation pipeline
-[MAKER](/wiki/MAKER.1), and users who wish to annotate datasets that
+[MAKER](/wiki/MAKER), and users who wish to annotate datasets that
 are too large to submit to MWAS are free to
 <a href="http://www.yandell-lab.org/software/" class="external text"
 
@@ -87,7 +87,7 @@ are too large to submit to MWAS are free to
 
 The first half of this page gives general background to genome
 annotation as well as describes validation data for the
-[MAKER](/wiki/MAKER.1) Web Annotation Service, MWAS. The stand alone
+[MAKER](/wiki/MAKER) Web Annotation Service, MWAS. The stand alone
 annotation pipeline MAKER is at the heart of MWAS, and MWAS has been
 configured to present the user with configuration options that match
 those of the command line program MAKER as closely as possible.
@@ -182,7 +182,7 @@ MAKER.
 - Produces evidence-based quality values for downstream annotation
   management
 
-MAKER generated annotations, shown in [Apollo](/wiki/Apollo.1).
+MAKER generated annotations, shown in [Apollo](/wiki/Apollo).
 
 ### What sets MAKER and MWAS apart from other tools (_ab initio_ gene predictors etc.)?
 

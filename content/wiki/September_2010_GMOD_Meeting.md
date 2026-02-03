@@ -297,7 +297,7 @@ class="internal" title="MolGenISXGAPSept2010.pdf">PDF</a>, [Summary](#MolGenIS_a
 title="ChadoNDSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/ChadoNDSept2010.ppt" class="internal"
 title="ChadoNDSept2010.ppt">PPT</a>, <a
 href="https://docs.google.com/present/edit?id=0ASHJk7ao3qFUZGo2ODJydl8xMjNmZGh3eDVnNg&amp;hl=en"
-class="external text" rel="nofollow">gdoc</a>, [Summary](#The_GMOD_Chado_Natural_Diversity_Module) | 15:15 | Break | 15:45 | Cosmic [GBrowse](/wiki/GBrowse.1): Visualising cancer mutations in genomic context | David Beare | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf"
+class="external text" rel="nofollow">gdoc</a>, [Summary](#The_GMOD_Chado_Natural_Diversity_Module) | 15:15 | Break | 15:45 | Cosmic [GBrowse](/wiki/GBrowse): Visualising cancer mutations in genomic context | David Beare | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/CosmicGBrowseSept2010.pdf"
 class="internal" title="CosmicGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0e/CosMicGBrowseSept2010.ppt"
 class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context) | 16:15 | GMOD Projects at the Center for Genomics and Bioinformatics | [Chris Hemmerich](/wiki/User:Chemmeri) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/ISGAWebGBrowseSept2010.pdf"
 class="internal" title="ISGAWebGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/ISGAWebGBrowseSept2010.pptx"
@@ -522,7 +522,7 @@ GMOD is used by
 
 ### What's New
 
-[GBrowse](/wiki/GBrowse.1)
+[GBrowse](/wiki/GBrowse)
 
 - Releases
   - 1.70, 2.14
@@ -539,7 +539,7 @@ GMOD is used by
   - Multiple server support (2.0)
   - SQLite, SAMtools (NGS) adaptors
 
-[JBrowse](/wiki/JBrowse.1)
+[JBrowse](/wiki/JBrowse)
 
 - GMOD's 2nd Generation Genome Browser
 - It's _fast_
@@ -550,9 +550,9 @@ GMOD is used by
     href="http://bioinformatics.oxfordjournals.org/cgi/content/short/23/11/1386"
     class="external text" rel="nofollow">Nested Containment Lists</a>
 
-[GBrowse_syn](/wiki/GBrowse_syn.1)
+[GBrowse_syn](/wiki/GBrowse_syn)
 
-- [GBrowse](/wiki/GBrowse.1) based comparative genomics viewer
+- [GBrowse](/wiki/GBrowse) based comparative genomics viewer
 - Shows a reference sequence compared to 2+ others
 - Can also show any GBrowse-based annotations
 - Syntenic blocks do not have to be collinear
@@ -574,7 +574,7 @@ GMOD is used by
   class="external text" rel="nofollow">Bio::DB::Das::Chado</a> is needed
   for these functions.
 
-[Tripal](/wiki/Tripal.1)
+[Tripal](/wiki/Tripal)
 
 - New (2009) web front end for
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases
@@ -583,7 +583,7 @@ GMOD is used by
 - Easy to create new modules
 - Includes user authentication, job management, curation support
 
-[TableEdit](/wiki/TableEdit.1)
+[TableEdit](/wiki/TableEdit)
 
 - A MediaWiki extension (MediaWiki software used at Wikipedia, GMOD.org)
 - Provides graphical user interface (GUI) to wiki tables
@@ -612,11 +612,11 @@ GMOD is used by
   Workshop](/wiki/InterMine_Workshop_-_GMOD_Europe_2010)
   on Wednesday
 
-[MAKER](/wiki/MAKER.1)
+[MAKER](/wiki/MAKER)
 
 - Genome annotation pipeline for creating gene models
-- Output can be loaded into [GBrowse](/wiki/GBrowse.1),
-  [Apollo](/wiki/Apollo.1),
+- Output can be loaded into [GBrowse](/wiki/GBrowse),
+  [Apollo](/wiki/Apollo),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, …
 - Incorporates
   - SNAP, RepeatMasker, exonerate, BLAST, Augustus, FGENESH, GeneMark,
@@ -628,7 +628,7 @@ GMOD is used by
 - Integrate raw InterProScan results
 - MAKER Online in beta
 
-[Apollo](/wiki/Apollo.1)
+[Apollo](/wiki/Apollo)
 
 - Java-based GUI application for browsing and annotating genomic
   sequences

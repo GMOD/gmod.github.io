@@ -4,7 +4,7 @@ title: "GBrowse 1.x"
 # GBrowse 1.x
 
 This page contains documentation specific to GBrowse 1.x. We recommend
-all users upgrade to [GBrowse 2.x](/wiki/GBrowse.1) to take
+all users upgrade to [GBrowse 2.x](/wiki/GBrowse) to take
 advantage of all the features GBrowse offers.
 
 For users wanting to upgrade, please see the guide on [migrating from

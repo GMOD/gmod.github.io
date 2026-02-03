@@ -178,12 +178,12 @@ of this central position in GMOD it has been the focus of much software
 development, not just the design of the schema itself but in terms of
 components using it and _adaptor_ software that connect Chado to some
 other GMOD component. Thus we are able to use Chado with different
-browsers such as [GBrowse](/wiki/GBrowse.1) and
-[Apollo](/wiki/Apollo.1) (the latter being able to both read from and
+browsers such as [GBrowse](/wiki/GBrowse) and
+[Apollo](/wiki/Apollo) (the latter being able to both read from and
 write to the database). We have a variety of tools that can be used to
 load sequence data as [GFF](/wiki/GFF) into Chado and there are
 different utilities that can move complex data in and out of Chado as
-[XML](/wiki/Glossary#XML) ([XORT](/wiki/XORT.1),
+[XML](/wiki/Glossary#XML) ([XORT](/wiki/XORT),
 [GMODTools](/wiki/GMODTools)).
 
 ### Complexity and Detail
@@ -282,7 +282,7 @@ their own.
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
+  (ND)](/wiki/Chado_Natural_Diversity_Module) -
   for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data

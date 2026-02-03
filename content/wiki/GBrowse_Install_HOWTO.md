@@ -4,13 +4,13 @@ title: "GBrowse Install HOWTO"
 # GBrowse Install HOWTO
 
 This page contains detailed installation instructions for **installing
-[GBrowse 1.x](/wiki/GBrowse.1)**, suitable for use on Linux and
+[GBrowse 1.x](/wiki/GBrowse)**, suitable for use on Linux and
 other Unix-like platforms. It also contains performance and maintenance
 hints useful for all systems.
 
 Note that these instructions are specific to GBrowse 1.x versions. See
 the [installation instructions for GBrowse
-2.x](/wiki/GBrowse_2.0_Install_HOWTO.1).
+2.x](/wiki/GBrowse_2.0_Install_HOWTO).
 
 See also the following OS-specific instructions:
 

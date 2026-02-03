@@ -379,7 +379,7 @@ this meeting were:
   web search forms (older browsers simply won't see any automatic
   completion)
 - dynamically expanding or collapsing sections of large data displays
-- drag-and-drop map track reording in GMOD's GBrowse software
+- drag-and-drop map track reordering in GMOD's GBrowse software
 
 ------------------------------------------------------------------------
 

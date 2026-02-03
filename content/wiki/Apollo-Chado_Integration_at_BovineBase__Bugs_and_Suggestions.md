@@ -9,7 +9,7 @@ This was written by Justin Reese in preparation for [Hackathon
 In preparation for the Bovine Annotation effort, we set up a
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> database
 containing annotation evidence, allow annotators to connect via
-[Apollo](/wiki/Apollo.1) and do their annotations (we haven't gotten
+[Apollo](/wiki/Apollo) and do their annotations (we haven't gotten
 Apollo-\>Chado writebacks working yet, but we'd like to eventually).
 
 We thought it might help GMOD developers improve [Apollo/Chado
@@ -86,7 +86,7 @@ something isn't clear.
     searchHitPrograms are always alignments between the reference
     sequence and a second sequence. Not sure if I can suggest an
     intelligent improvement, but would it be possible to construct
-    tracks like you do in [GBrowse](/wiki/GBrowse.1) (using
+    tracks like you do in [GBrowse](/wiki/GBrowse) (using
     aggregators and the names of the things I would like to aggregate,
     like gene/trancript/CDS) or have Apollo construct them automatically
     using some SQL magic (query for a parent, query for it's children,

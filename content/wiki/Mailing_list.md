@@ -122,10 +122,10 @@ Components](/wiki/GMOD_Components).
 </thead>
 <tbody>
 <tr class="odd">
-<td rowspan="2"><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></td>
+<td rowspan="2"><a href="/wiki/Apollo" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
 <td><a href="https://lists.lbl.gov/sympa/info/apollo"
 class="external text" rel="nofollow">apollo</a></td>
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a> mailing list</td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo" title="WebApollo">WebApollo</a> mailing list</td>
 <td><a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a
 href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
@@ -135,7 +135,7 @@ class="external text" rel="nofollow">Nabble</a> (2010/05+)</td>
 <td><a
 href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"
 class="external text" rel="nofollow">gmod-apollo-cmts</a></td>
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a> code updates.</td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a> and <a href="/wiki/WebApollo" title="WebApollo">WebApollo</a> code updates.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -186,12 +186,12 @@ href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts"
 class="external text" rel="nofollow">Sourceforge</a></td>
 </tr>
 <tr class="odd">
-<td rowspan="6"><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a><br />
+<td rowspan="6"><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a><br />
 &#10;(<a href="http://galaxyproject.org/search/" class="external text"
 
 <td><a href="http://announce.list.galaxyproject.org/"
 class="external text" rel="nofollow">galaxy-announce</a></td>
-<td>Announcements of interest to the <a href="/wiki/Galaxy.1"
+<td>Announcements of interest to the <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a> community. <em>Low volume and
 moderated.</em></td>
 <td><a href="http://announce.list.galaxyproject.org/"
@@ -202,7 +202,7 @@ class="external text" rel="nofollow">Mailman</a></td>
 <tr class="even">
 <td><a href="https://help.galaxyproject.org/" class="external text"
 
-<td>General questions and discussion about using <a href="/wiki/Galaxy.1"
+<td>General questions and discussion about using <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a>. Also used for announcements relevant to the
 Galaxy user community. <em>This is not a mailing list, but an online
 forum, based on the popular <a href="https://www.discourse.org/"
@@ -214,7 +214,7 @@ volume.</td>
 <td><a href="http://dev.list.galaxyproject.org/" class="external text"
 
 <td>Discussion and questions regarding local installations and
-development of <a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a>. <em>Medium
+development of <a href="/wiki/Galaxy" title="Galaxy">Galaxy</a>. <em>Medium
 volume.</em></td>
 <td><a href="http://dev.list.galaxyproject.org/" class="external text"
 
@@ -222,10 +222,10 @@ href="https://lists.galaxyproject.org/archives/list/galaxy-dev@lists.galaxyproje
 class="external text" rel="nofollow">Mailman</a></td>
 </tr>
 <tr class="even">
-<td rowspan="2"><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> &amp; <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a></td>
+<td rowspan="2"><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> &amp; <a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a></td>
 <td><a href="https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"
 class="external text" rel="nofollow">gmod-gbrowse</a></td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> and <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a> users and
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> and <a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a> users and
 developers.</td>
 </tr>
 <tr class="odd">
@@ -242,10 +242,10 @@ class="external text" rel="nofollow">dev</a></td>
 development list.</td>
 </tr>
 <tr class="odd">
-<td rowspan="2"><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<td rowspan="2"><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 <td><a href="https://lists.sourceforge.net/lists/listinfo/gmod-ajax"
 class="external text" rel="nofollow">gmod-ajax</a></td>
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> help and general
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> help and general
 questions.</td>
 <td><a
 href="http://gmod.827538.n3.nabble.com/JBrowse-Support-f815920.html"
@@ -257,18 +257,18 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 <td><a
 href="https://calmail.berkeley.edu/manage/list/listinfo/jbrowse-dev@lists.berkeley.edu"
 class="external text" rel="nofollow">jbrowse-dev</a></td>
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> development
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> development
 discussions.</td>
 <td><a
 href="http://gmod.827538.n3.nabble.com/JBrowse-Development-f3296666.html"
 class="external text" rel="nofollow">Nabble</a> (2011/08+)</td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td><a
 href="http://box290.bluehost.com/mailman/listinfo/maker-devel_yandell-lab.org"
 class="external text" rel="nofollow">maker-devel</a></td>
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a> developers and users
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a> developers and users
 list.</td>
 <td><a href="http://groups.google.com/group/maker-devel?lnk=srg"
 class="external text" rel="nofollow">Google</a>, <a
@@ -276,10 +276,10 @@ href="http://gmod.827538.n3.nabble.com/MAKER-f815929.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+)</td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway
+<td><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway
 Tools</a></td>
 <td>ptools-users@ai.sri.com</td>
-<td><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway Tools</a>
+<td><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway Tools</a>
 users list. To subscribe to this list, send a request to
 ptools-support@ai.sri.com.</td>
 <td><em>None</em></td>
@@ -306,10 +306,10 @@ href="http://www.textpresso.org" class="external text"
 <td></td>
 </tr>
 <tr class="odd">
-<td rowspan="2"><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<td rowspan="2"><a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 <td><a href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal"
 class="external text" rel="nofollow">gmod-tripal</a></td>
-<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a>-related announcements,
+<td><a href="/wiki/Tripal" title="Tripal">Tripal</a>-related announcements,
 questions, and requests for help from developers and the community.</td>
 <td><a href="http://gmod.827538.n3.nabble.com/Tripal-User-f815950.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
@@ -320,7 +320,7 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 <td><a
 href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel"
 class="external text" rel="nofollow">gmod-tripal-devel</a></td>
-<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a> development list</td>
+<td><a href="/wiki/Tripal" title="Tripal">Tripal</a> development list</td>
 <td><a
 href="http://gmod.827538.n3.nabble.com/Tripal-Development-f2471283.html"
 class="external text" rel="nofollow">Nabble</a>, <a
@@ -361,11 +361,11 @@ href="https://lists.sourceforge.net/lists/listinfo/gmod-biographics-commits"
 class="external text" rel="nofollow">gmod-biographics-commits</a> | <a href="http://search.cpan.org/perldoc?Bio::Graphics"
 class="external text" rel="nofollow">Bio::Graphics</a> code updates. | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-biographics-commits"
-class="external text" rel="nofollow">Sourceforge</a> | [CMap](/wiki/CMap.1) | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
-class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](/wiki/CMap.1) development, installation problems, *etc.* | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html"
+class="external text" rel="nofollow">Sourceforge</a> | [CMap](/wiki/CMap) | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
+class="external text" rel="nofollow">gmod-cmap</a> | Discussion of [CMap](/wiki/CMap) development, installation problems, *etc.* | <a href="http://gmod.827538.n3.nabble.com/CMap-f815601.html"
 class="external text" rel="nofollow">Nabble (2010/05+)</a>, <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap"
 class="external text" rel="nofollow">Sourceforge</a> |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits"
-class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](/wiki/CMap.1). | <a
+class="external text" rel="nofollow">gmod-cmap-commits</a> | Notification of <a href="/wiki/SVN" class="mw-redirect" title="SVN">SVN</a> activity for [CMap](/wiki/CMap). | <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits"
 class="external text" rel="nofollow">Sourceforge</a> | [DIYA](/wiki/DIYA) | <a href="https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l"
 class="external text" rel="nofollow">diyg-pub-l</a> | [DIYA](/wiki/DIYA) general discussion and support. | <a href="http://gmod.827538.n3.nabble.com/DIYA-f835548.html"
@@ -390,8 +390,8 @@ class="external text" rel="nofollow">Nabble</a> | [Modware](/wiki/Modware) | <a 
 class="external text" rel="nofollow">gmod-ware-users</a> | [Modware](/wiki/Modware) support and developer mailing list. | <a href="http://gmod.827538.n3.nabble.com/Modware-f887754.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"
-class="external text" rel="nofollow">Sourceforge</a> | [WebGBrowse](/wiki/WebGBrowse.1) | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse"
-class="external text" rel="nofollow">gmod-webgbrowse</a> | Questions, announcements, and development postings about the [WebGBrowse](/wiki/WebGBrowse.1) front end to [GBrowse](/wiki/GBrowse.1) configuration. | <a href="http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html"
+class="external text" rel="nofollow">Sourceforge</a> | [WebGBrowse](/wiki/WebGBrowse) | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse"
+class="external text" rel="nofollow">gmod-webgbrowse</a> | Questions, announcements, and development postings about the [WebGBrowse](/wiki/WebGBrowse) front end to [GBrowse](/wiki/GBrowse) configuration. | <a href="http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse"
 class="external text" rel="nofollow">Sourceforge</a> |

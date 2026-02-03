@@ -37,7 +37,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 - An [XML](/wiki/Glossary#XML)-database mapping system for data
   exchange between DB and XML-driven application
-- [XORT](/wiki/XORT.1) can handle typical XML, it's not
+- [XORT](/wiki/XORT) can handle typical XML, it's not
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>-specific
 - Developed/Supported by Pinglei Zhou at FlyBase Harvard, 0.007 version
   now.
@@ -61,7 +61,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
   you.
 - ChadoXML assists with incremental updates, if you want to avoid
   flush-and-reload.
-- While update can be achived by other middleware (for example, perl
+- While update can be achieved by other middleware (for example, perl
   Class::DBI, Java Hibernate), ChadoXML provide additional feature as
   way to archive your transaction.
 - It provides bulk update/download which other methods lack or is
@@ -89,14 +89,14 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 There are three Flybase sites, and most curation is done at Harvard and
 Cambridge. Proforma is the curation format at Cambridge and Harvard, but
-Harvard also curates with [Apollo](/wiki/Apollo.1) and ChadoXML.
+Harvard also curates with [Apollo](/wiki/Apollo) and ChadoXML.
 
 Once in Chado, the reporting instance, there's a denormalization step in
 moving data to a read-only database. Once in the read-only database
 there are dumps, for reporting purposes, using XORT to create ChadoXML.
 Once ChadoXML is created version 2 of XSLT is used to create HTML and
 [GFF](/wiki/GFF). HTML reports are for human-readable reports,
-[GFF](/wiki/GFF) for [GBrowse](/wiki/GBrowse.1) and for various
+[GFF](/wiki/GFF) for [GBrowse](/wiki/GBrowse) and for various
 power users.
 
 1.a. Proforma (FlyBase Cambridge) is converted to ChadoXML

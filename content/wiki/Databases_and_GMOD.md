@@ -164,7 +164,7 @@ Many aspects of the web app can be configured and branded.
   object-oriented querying and loading of a Chado database and returns
   data structures that a programmer can readily use without knowing the
   details of how the object is stored in the relational schema.
-- [XORT](/wiki/XORT.1) is a utility written in Perl that can be used to
+- [XORT](/wiki/XORT) is a utility written in Perl that can be used to
   read to and write from a [relational
   schema](/wiki/Glossary#Schema) using
   [XML](/wiki/Glossary#XML) as an interchange format. In GMOD XORT
@@ -173,8 +173,8 @@ Many aspects of the web app can be configured and branded.
 
 ### GMOD Components that Require a DBMS
 
-- [CMap](/wiki/CMap.1)
-- [GBrowse_syn](/wiki/GBrowse_syn.1)
+- [CMap](/wiki/CMap)
+- [GBrowse_syn](/wiki/GBrowse_syn)
 
 ## GMOD DBMS Choices
 
@@ -211,7 +211,7 @@ use in the GMOD community.
 [Postgres](/wiki/PostgreSQL) (officially known as *PostgreSQL*)
 is the default DBMS for
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, GMOD's
-modular database schema. [Galaxy](/wiki/Galaxy.1) can also run using
+modular database schema. [Galaxy](/wiki/Galaxy) can also run using
 Postgres. Work is being done on
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> to
 also support PostgreSQL.
@@ -221,8 +221,8 @@ on Postgres.
 
 #### MySQL
 
-MySQL adapters exist for [GBrowse](/wiki/GBrowse.1) and it also used
-by [CMap](/wiki/CMap.1)
+MySQL adapters exist for [GBrowse](/wiki/GBrowse) and it also used
+by [CMap](/wiki/CMap)
 
 Using MySQL with
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is
@@ -237,12 +237,12 @@ self-contained, serverless, zero-configuration, transactional SQL
 database engine. SQLite is the most widely deployed SQL database engine
 in the world. The source code for SQLite is in the public domain.
 
-SQLite is used in a few places in GMOD. [MAKER](/wiki/MAKER.1) uses it
+SQLite is used in a few places in GMOD. [MAKER](/wiki/MAKER) uses it
 for its data store. It is the default database when installing
-[Galaxy](/wiki/Galaxy.1), but most users then upgrade to a different
+[Galaxy](/wiki/Galaxy), but most users then upgrade to a different
 [DBMS](/wiki/Glossary#DBMS), usually
 [PostgreSQL](/wiki/PostgreSQL). It can also be used with
-[GBrowse](/wiki/GBrowse.1).
+[GBrowse](/wiki/GBrowse).
 
 #### DB2
 
@@ -262,8 +262,8 @@ one of the big players in the commercial database market.
 
 #### Oracle
 
-Oracle is a supported DBMS for [CMap](/wiki/CMap.1) and
-[GBrowse](/wiki/GBrowse.1).
+Oracle is a supported DBMS for [CMap](/wiki/CMap) and
+[GBrowse](/wiki/GBrowse).
 
 <a href="http://apidb.org" class="external text"
 

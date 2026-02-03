@@ -336,7 +336,7 @@ GMOD Tripal mailing lists:
 <a href="/wiki/GMOD_Mailing_Lists" class="external free"
 
 GMOD Tutorials from previous GMOD schools:
-<a href="/wiki/Tripal.1" class="external free"
+<a href="/wiki/Tripal" class="external free"
 
 ### Contributing Organizations
 

@@ -49,7 +49,7 @@ weaknesses.
 
 These components work with DAS servers:
 
-- [GBrowse](/wiki/GBrowse.1) - See
+- [GBrowse](/wiki/GBrowse) - See
   <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
   title="GBrowse adaptors">GBrowse adaptors</a>
 

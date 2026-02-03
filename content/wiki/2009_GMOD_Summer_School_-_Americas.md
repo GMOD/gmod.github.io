@@ -129,7 +129,7 @@ style="text-align: center; background-color: #ddffff;"><strong>Lunch</strong><br
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 I</a></strong><br />
 <a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
-<a href="/wiki/MAKER.1" title="MAKER">MAKER</a> overview, installation, and
+<a href="/wiki/MAKER" title="MAKER">MAKER</a> overview, installation, and
 basic configuration for annotating genomic sequence</td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ class="external text" rel="nofollow">on your own</a></td>
 <td style="text-align: center; background-color: #ddffff;"><strong><a href="/wiki/MAKER_Tutorial" class="mw-redirect" title="MAKER Tutorial">MAKER
 II</a></strong><br />
 <a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson Holt</a><br />
-Advanced <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> configuration,
+Advanced <a href="/wiki/MAKER" title="MAKER">MAKER</a> configuration,
 re-annotation options, and improving annotation quality</td>
 </tr>
 <tr class="odd">
@@ -155,7 +155,7 @@ re-annotation options, and improving annotation quality</td>
 title="JBrowse Tutorial">JBrowse</a></strong><br />
 <a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
 Skinner</a><br />
-<a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> installation,
+<a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> installation,
 configuration and administration; converting <a href="/wiki/GFF3"
 title="GFF3">GFF3</a> to <a href="/wiki/Glossary#JSON"
 title="Glossary">JSON</a> and loading it into JBrowse.</td>
@@ -304,7 +304,7 @@ style="text-align: center; background-color: #ffeedd;"><strong>Lunch</strong><br
 <td style="text-align: center; background-color: #ffeedd;"><strong><a href="/wiki/Tripal_Tutorial" class="mw-redirect"
 title="Tripal Tutorial">Tripal</a></strong><br />
 <a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen Ficklin</a><br />
-<a href="/wiki/Tripal.1" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
+<a href="/wiki/Tripal" title="Tripal">Tripal</a> is a web front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> databases built
 on <a href="http://www.drupal.org/" class="external text"
 
 architecture, and then cover Tripal installation, configuration and

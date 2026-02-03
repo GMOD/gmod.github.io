@@ -27,26 +27,26 @@ Mailing lists about specific [GMOD Components](/wiki/GMOD_Components).
 
 | Component | Subscribe Link | Comment | Archive(s) |
 |-----------|----------------|---------|------------|
-| [Apollo](/wiki/Apollo.1) / [WebApollo](/wiki/WebApollo.1) | [apollo](https://lists.lbl.gov/sympa/info/apollo) | Apollo and WebApollo mailing list | [Gmane](http://dir.gmane.org/gmane.science.biology.gmod.apollo), [Nabble](http://gmod.827538.n3.nabble.com/Apollo-f815553.html) |
-| [Apollo](/wiki/Apollo.1) / [WebApollo](/wiki/WebApollo.1) | [gmod-apollo-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts) | Code updates | |
+| [Apollo](/wiki/Apollo) / [WebApollo](/wiki/WebApollo) | [apollo](https://lists.lbl.gov/sympa/info/apollo) | Apollo and WebApollo mailing list | [Gmane](http://dir.gmane.org/gmane.science.biology.gmod.apollo), [Nabble](http://gmod.827538.n3.nabble.com/Apollo-f815553.html) |
+| [Apollo](/wiki/Apollo) / [WebApollo](/wiki/WebApollo) | [gmod-apollo-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts) | Code updates | |
 | [BioMart](/wiki/BioMart) | [announce](https://groups.google.com/forum/#!forum/biomart-announce) | BioMart announcements | [Nabble](http://gmod.827538.n3.nabble.com/BioMart-Announcements-f815576.html) |
 | [BioMart](/wiki/BioMart) | [users](https://groups.google.com/forum/#!forum/biomart-users) | BioMart users, developers, code and installation | [Nabble](http://gmod.827538.n3.nabble.com/BioMart-User-and-Developer-Support-f815585.html) |
 | [Chado](/wiki/Chado) | [gmod-schema](https://lists.sourceforge.net/lists/listinfo/gmod-schema) | All issues regarding Chado | [Gmane](http://dir.gmane.org/gmane.science.biology.gmod.schema), [Nabble](http://gmod.827538.n3.nabble.com/Chado-f815597.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema) |
 | [Chado](/wiki/Chado) | [gmod-schema-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-schema-cmts) | Chado code updates | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts) |
-| [Galaxy](/wiki/Galaxy.1) | [galaxy-announce](http://announce.list.galaxyproject.org/) | Announcements. *Low volume and moderated.* | [Nabble](http://announce.list.galaxyproject.org/), [Mailman](https://lists.galaxyproject.org/archives/list/galaxy-announce@lists.galaxyproject.org/) |
-| [Galaxy](/wiki/Galaxy.1) | [Galaxy Help](https://help.galaxyproject.org/) | General questions (Discourse forum, not mailing list) | |
-| [Galaxy](/wiki/Galaxy.1) | [galaxy-dev](http://dev.list.galaxyproject.org/) | Local installations and development. *Medium volume.* | [Nabble](http://dev.list.galaxyproject.org/), [Mailman](https://lists.galaxyproject.org/archives/list/galaxy-dev@lists.galaxyproject.org/) |
-| [GBrowse](/wiki/GBrowse.1) / [GBrowse_syn](/wiki/GBrowse_syn.1) | [gmod-gbrowse](https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse) | GBrowse and GBrowse_syn users and developers | |
-| [GBrowse](/wiki/GBrowse.1) / [GBrowse_syn](/wiki/GBrowse_syn.1) | [gmod-gbrowse-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse-cmts) | Code updates | |
+| [Galaxy](/wiki/Galaxy) | [galaxy-announce](http://announce.list.galaxyproject.org/) | Announcements. *Low volume and moderated.* | [Nabble](http://announce.list.galaxyproject.org/), [Mailman](https://lists.galaxyproject.org/archives/list/galaxy-announce@lists.galaxyproject.org/) |
+| [Galaxy](/wiki/Galaxy) | [Galaxy Help](https://help.galaxyproject.org/) | General questions (Discourse forum, not mailing list) | |
+| [Galaxy](/wiki/Galaxy) | [galaxy-dev](http://dev.list.galaxyproject.org/) | Local installations and development. *Medium volume.* | [Nabble](http://dev.list.galaxyproject.org/), [Mailman](https://lists.galaxyproject.org/archives/list/galaxy-dev@lists.galaxyproject.org/) |
+| [GBrowse](/wiki/GBrowse) / [GBrowse_syn](/wiki/GBrowse_syn) | [gmod-gbrowse](https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse) | GBrowse and GBrowse_syn users and developers | |
+| [GBrowse](/wiki/GBrowse) / [GBrowse_syn](/wiki/GBrowse_syn) | [gmod-gbrowse-cmts](https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse-cmts) | Code updates | |
 | [InterMine](/wiki/InterMine) | [dev](https://lists.intermine.org/listinfo/dev/) | InterMine support and development list | |
-| [JBrowse](/wiki/JBrowse.1) | [gmod-ajax](https://lists.sourceforge.net/lists/listinfo/gmod-ajax) | JBrowse help and general questions | [Nabble](http://gmod.827538.n3.nabble.com/JBrowse-Support-f815920.html), [Sourceforge](https://lists.sourceforge.net/lists/listinfo/gmod-ajax) |
-| [JBrowse](/wiki/JBrowse.1) | [jbrowse-dev](https://calmail.berkeley.edu/manage/list/listinfo/jbrowse-dev@lists.berkeley.edu) | JBrowse development discussions | [Nabble](http://gmod.827538.n3.nabble.com/JBrowse-Development-f3296666.html) |
-| [MAKER](/wiki/MAKER.1) | [maker-devel](http://box290.bluehost.com/mailman/listinfo/maker-devel_yandell-lab.org) | MAKER developers and users list | [Google](http://groups.google.com/group/maker-devel?lnk=srg), [Nabble](http://gmod.827538.n3.nabble.com/MAKER-f815929.html) |
-| [Pathway Tools](/wiki/Pathway_Tools.1) | ptools-users@ai.sri.com | To subscribe, send request to ptools-support@ai.sri.com | |
+| [JBrowse](/wiki/JBrowse) | [gmod-ajax](https://lists.sourceforge.net/lists/listinfo/gmod-ajax) | JBrowse help and general questions | [Nabble](http://gmod.827538.n3.nabble.com/JBrowse-Support-f815920.html), [Sourceforge](https://lists.sourceforge.net/lists/listinfo/gmod-ajax) |
+| [JBrowse](/wiki/JBrowse) | [jbrowse-dev](https://calmail.berkeley.edu/manage/list/listinfo/jbrowse-dev@lists.berkeley.edu) | JBrowse development discussions | [Nabble](http://gmod.827538.n3.nabble.com/JBrowse-Development-f3296666.html) |
+| [MAKER](/wiki/MAKER) | [maker-devel](http://box290.bluehost.com/mailman/listinfo/maker-devel_yandell-lab.org) | MAKER developers and users list | [Google](http://groups.google.com/group/maker-devel?lnk=srg), [Nabble](http://gmod.827538.n3.nabble.com/MAKER-f815929.html) |
+| [Pathway Tools](/wiki/Pathway_Tools) | ptools-users@ai.sri.com | To subscribe, send request to ptools-support@ai.sri.com | |
 | [Sybil](/wiki/Sybil.1) | [sybil-info](https://lists.sourceforge.net/lists/listinfo/sybil-info) | Sybil mailing list | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=sybil-info) |
 | [Textpresso](/wiki/Textpresso.1) | textpresso@caltech.edu | Email for support questions | |
-| [Tripal](/wiki/Tripal.1) | [gmod-tripal](https://lists.sourceforge.net/lists/listinfo/gmod-tripal) | Tripal announcements, questions, and help | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-User-f815950.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal) |
-| [Tripal](/wiki/Tripal.1) | [gmod-tripal-devel](https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel) | Tripal development list | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-Development-f2471283.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal-devel) |
+| [Tripal](/wiki/Tripal) | [gmod-tripal](https://lists.sourceforge.net/lists/listinfo/gmod-tripal) | Tripal announcements, questions, and help | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-User-f815950.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal) |
+| [Tripal](/wiki/Tripal) | [gmod-tripal-devel](https://lists.sourceforge.net/lists/listinfo/gmod-tripal-devel) | Tripal development list | [Nabble](http://gmod.827538.n3.nabble.com/Tripal-Development-f2471283.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-tripal-devel) |
 
 ## Topic Based Lists
 
@@ -66,8 +66,8 @@ These lists have not had postings in the past 12 months (as of May 2016).
 | Component | Subscribe Link | Comment | Archive(s) |
 |-----------|----------------|---------|------------|
 | [Bio::Graphics](http://search.cpan.org/perldoc?Bio::Graphics) | [gmod-biographics-commits](https://lists.sourceforge.net/lists/listinfo/gmod-biographics-commits) | Code updates | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-biographics-commits) |
-| [CMap](/wiki/CMap.1) | [gmod-cmap](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) | Discussion of CMap development, installation, etc. | [Nabble](http://gmod.827538.n3.nabble.com/CMap-f815601.html), [Sourceforge](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) |
-| [CMap](/wiki/CMap.1) | [gmod-cmap-commits](https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits) | SVN activity notifications | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits) |
+| [CMap](/wiki/CMap) | [gmod-cmap](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) | Discussion of CMap development, installation, etc. | [Nabble](http://gmod.827538.n3.nabble.com/CMap-f815601.html), [Sourceforge](https://lists.sourceforge.net/lists/listinfo/gmod-cmap) |
+| [CMap](/wiki/CMap) | [gmod-cmap-commits](https://lists.sourceforge.net/lists/listinfo/gmod-cmap-commits) | SVN activity notifications | [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cmap-commits) |
 | [DIYA](/wiki/DIYA.1) | [diyg-pub-l](https://lists.sourceforge.net/mailman/listinfo/diyg-pub-l) | General discussion and support | [Nabble](http://gmod.827538.n3.nabble.com/DIYA-f835548.html) |
 | [DIYA](/wiki/DIYA.1) | [diyg-dev-l](https://lists.sourceforge.net/mailman/listinfo/diyg-dev-l) | Developer discussion | |
 | [Ergatis](/wiki/Ergatis) | [ergatis-users](https://lists.sourceforge.net/lists/listinfo/ergatis-users) | Users mailing list | [Nabble](http://gmod.827538.n3.nabble.com/Ergatis-Users-f815632.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-users) |
@@ -75,7 +75,7 @@ These lists have not had postings in the past 12 months (as of May 2016).
 | [Ergatis](/wiki/Ergatis) | [ergatis-devel](https://lists.sourceforge.net/lists/listinfo/ergatis-devel) | Developers | [Nabble](http://gmod.827538.n3.nabble.com/Ergatis-Development-f815854.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-devel) |
 | [ISGA](/wiki/ISGA.1) | [isga-users](https://lists.sourceforge.net/lists/listinfo/isga-users) | Support, development, and announcements | [Nabble](http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html) |
 | [Modware](/wiki/Modware.1) | [gmod-ware-users](https://lists.sourceforge.net/lists/listinfo/gmod-ware-users) | Support and developer mailing list | [Nabble](http://gmod.827538.n3.nabble.com/Modware-f887754.html), [Sourceforge](https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users) |
-| [WebGBrowse](/wiki/WebGBrowse.1) | [gmod-webgbrowse](https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse) | Questions, announcements, and development | [Nabble](http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse) |
+| [WebGBrowse](/wiki/WebGBrowse) | [gmod-webgbrowse](https://lists.sourceforge.net/lists/listinfo/gmod-webgbrowse) | Questions, announcements, and development | [Nabble](http://gmod.827538.n3.nabble.com/WebGBrowse-f947412.html), [Sourceforge](http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse) |
 
 ### As of August 2008
 

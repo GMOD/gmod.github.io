@@ -3,7 +3,7 @@ title: "GBrowse Program Structure"
 ---
 # GBrowse Program Structure
 
-This page gives a basic overview of how [GBrowse](/wiki/GBrowse.1)
+This page gives a basic overview of how [GBrowse](/wiki/GBrowse)
 has been organized and programmed, and is intended for developers to get
 a feel for the structure of the program so they can become more
 comfortable adding features to it or modifying it for their own needs.

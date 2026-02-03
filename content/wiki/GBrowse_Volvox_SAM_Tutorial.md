@@ -4,10 +4,10 @@ title: "GBrowse Volvox SAM Tutorial"
 # GBrowse Volvox SAM Tutorial
 
 This is a short tutorial intended to add on to the
-[GBrowse](/wiki/GBrowse.1) tutorial that ships with it using the
+[GBrowse](/wiki/GBrowse) tutorial that ships with it using the
 "volvox" data set. The SAM file that is linked to here was created by
 running wgsim, a read simulator to create FASTQ files and then using
-[Galaxy](/wiki/Galaxy.1) to run Bowtie and produce a SAM file. In
+[Galaxy](/wiki/Galaxy) to run Bowtie and produce a SAM file. In
 order to use this tutorial, SAMtools and Bio::DB::Sam must be installed.
 This is based on the [NGS
 tutorial](/wiki/GBrowse_NGS_Tutorial) that Dave

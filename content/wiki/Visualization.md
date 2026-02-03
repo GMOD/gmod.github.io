@@ -19,23 +19,23 @@ data.
 ## Genome Visualization
 
 These components allow you to edit and view genome annotations. The two
-most popular components are [GBrowse](/wiki/GBrowse.1), a web-based
-genome viewer, and [Apollo](/wiki/Apollo.1), a Java (desktop)
+most popular components are [GBrowse](/wiki/GBrowse), a web-based
+genome viewer, and [Apollo](/wiki/Apollo), a Java (desktop)
 application that allows you to both view and edit genome annotations.
 
-- [Apollo](/wiki/Apollo.1)
-- [BLAST Graphic Viewer](/wiki/BLAST_Graphic_Viewer.1)
+- [Apollo](/wiki/Apollo)
+- [BLAST Graphic Viewer](/wiki/BLAST_Graphic_Viewer)
 - [Flash GViewer](/wiki/Flash_GViewer)
-- [GBrowse](/wiki/GBrowse.1)
-- [JBrowse](/wiki/JBrowse.1)
+- [GBrowse](/wiki/GBrowse)
+- [JBrowse](/wiki/JBrowse)
 
 ## Comparative Genomics Visualization
 
 GMOD offers several possibilities specifically for visualizing
 [comparative genomics](/wiki/Comparative_Genomics).
 
-- [CMap](/wiki/CMap.1)
-- [GBrowse_syn](/wiki/GBrowse_syn.1)
+- [CMap](/wiki/CMap)
+- [GBrowse_syn](/wiki/GBrowse_syn)
 - [Sybil](/wiki/Sybil)
 - [SynView](/wiki/SynView)
 
@@ -49,11 +49,11 @@ currently focused on microarray based experiments.
 
 ## Pathway Visualization
 
-- [Pathway Tools](/wiki/Pathway_Tools.1)
+- [Pathway Tools](/wiki/Pathway_Tools)
 
 ## Ontology Visualization
 
  visualization is
 currently supported by:
 
-- [GO Graphic Viewer](/wiki/GO_Graphic_Viewer.1)
+- [GO Graphic Viewer](/wiki/GO_Graphic_Viewer)

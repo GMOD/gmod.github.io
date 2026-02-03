@@ -3,8 +3,8 @@ title: "GBrowse syn Database"
 ---
 # GBrowse syn Database
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
-[GBrowse](/wiki/GBrowse.1) based
+[GBrowse_syn](/wiki/GBrowse_syn) is a
+[GBrowse](/wiki/GBrowse) based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 viewer. This page describes the database that GBrowse_syn uses, and how
 to get syntenic data into that database.
@@ -141,7 +141,7 @@ simple multiple sequence alignments with clustalw.
 - More information on
   [load_alignments_msa.pl](/wiki/GBrowse_syn_Scripts#load_alignments_msa.pl)
 - See the GBrowse_syn page for more on [whole genome alignment
-  approaches](/wiki/GBrowse_syn.1#See_also)
+  approaches](/wiki/GBrowse_syn#See_also)
 
 ## Loading from other sources
 
@@ -179,7 +179,7 @@ reciprocal alignment is also created during database loading.
 - The alignments table contains coordinate information and also support
   cigar-line representations and the alignment to facilitate future
   reconstruction of the alignment within
-  [GBrowse_syn](/wiki/GBrowse_syn.1).
+  [GBrowse_syn](/wiki/GBrowse_syn).
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GBS_Schema.png" class="thumbborder"

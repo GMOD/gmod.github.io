@@ -3,9 +3,9 @@ title: "GBrowse syn Configuration"
 ---
 # GBrowse syn Configuration
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
+[GBrowse_syn](/wiki/GBrowse_syn) is a
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a> viewer
-based on [GBrowse](/wiki/GBrowse.1). This page describes how to
+based on [GBrowse](/wiki/GBrowse). This page describes how to
 configure GBrowse_syn.
 
   Configuration File</span>](#Main_Configuration_File)
@@ -141,7 +141,7 @@ configuration stanzas at the bottom of the configuration file.</li>
 <td>buttons</td>
 <td></td>
 <td></td>
-<td>The URL for stock <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a>
+<td>The URL for stock <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a>
 images, etc</td>
 </tr>
 <tr class="odd">
@@ -171,7 +171,7 @@ directive.</td>
 <td>This specifies the extension of species-specific configuration
 files.
 <ul>
-<li>If GBrowse_syn is used with stand-alone <a href="/wiki/GBrowse.1"
+<li>If GBrowse_syn is used with stand-alone <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> data sources, change this option to
 'conf'.</li>
 <li>To avoid confusing the configuration files parser, take care to

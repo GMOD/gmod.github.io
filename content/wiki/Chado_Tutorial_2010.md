@@ -328,7 +328,7 @@ modules are all widely used and cleanly designed. After that modules
 become less frequently used (Stock, Expression, Phenotype, Mage). Also
 several modules are not as cleanly separated as we would like them to
 be. Phenotypic data is spread over several modules. Organism and
-Phylogeny overlap. [CMap](/wiki/CMap.1) is all about maps, but it does
+Phylogeny overlap. [CMap](/wiki/CMap) is all about maps, but it does
 not use the Map module.
 
 From Jeff Bowes, at XenBase:
@@ -1221,7 +1221,7 @@ There is a bug in either the go-perl parser or more likely in
 `stag_storenode.pl` that shows itself when installing GO. The problem is
 that it changes the ownership of the 'part_of' relationship term from
 the relationship ontology to GO. The result is that both
-[Apollo](/wiki/Apollo.1) (I think) and the [GFF3](/wiki/GFF3) loader
+[Apollo](/wiki/Apollo) (I think) and the [GFF3](/wiki/GFF3) loader
 will fail when it can't find the part_of term. The easiest way to fix
 this is by issuing a SQL command in the `psql` shell:
 
@@ -1400,7 +1400,7 @@ Oops. Forgot to edit the GFF file
 [A word on text editors such as
 gedit](/wiki/Linux_Text_Editors).
 
-Remove the `#` line from [MAKER](/wiki/MAKER.1) that the loader can't
+Remove the `#` line from [MAKER](/wiki/MAKER) that the loader can't
 cope with. **Remove** this line
 
     ##sequence-region scf1117875582023 1 719819</tt>
@@ -1441,7 +1441,7 @@ loader uses to keep track of IDs.
 
 ## Loading other data
 
-[Chado XML](/wiki/Chado_XML) and [XORT](/wiki/XORT.1)
+[Chado XML](/wiki/Chado_XML) and [XORT](/wiki/XORT)
 
 # Chado for Expression, Genotype, Phenotype, and Natural Diversity
 

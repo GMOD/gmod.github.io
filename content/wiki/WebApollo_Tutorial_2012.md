@@ -3,7 +3,7 @@ title: "WebApollo Tutorial 2012"
 ---
 # WebApollo Tutorial 2012
 
-This [WebApollo](/wiki/WebApollo.1) tutorial was presented by [Ed
+This [WebApollo](/wiki/WebApollo) tutorial was presented by [Ed
 Lee](/wiki/User:Elee) at the [2012 GMOD Summer
 School](/wiki/2012_GMOD_Summer_School).
 
@@ -153,7 +153,7 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
     - DBD module for your specific RDBMS \[officially supported: DBD::Pg
       for PostgresSQL\]
 - Data generation pipeline (see [JBrowse
-  prerequisites](/wiki/JBrowse.1#Prerequisites) for more information
+  prerequisites](/wiki/JBrowse#Prerequisites) for more information
   on its prerequisites)
   - Perl modules
     - [BioPerl 1.6](/wiki/BioPerl)
@@ -234,7 +234,7 @@ need to generate a file of genomic sequence ids for the script. For
 convenience, there’s a script called `extract_seqids_from_fasta.pl` in
 the same directory which will go through a FASTA file and extract all
 the ids from the deflines. We’ll use the data from
-[MAKER](/wiki/MAKER.1). Let’s first create the list of genomic
+[MAKER](/wiki/MAKER). Let’s first create the list of genomic
 sequence ids. We'll store it in `~/scratch/seqids.txt`. We’ll want to
 add the prefix “Annotations-” to each identifier.
 
@@ -784,7 +784,7 @@ Blat documentation for information of all available options.
 ## Data generation
 
 The steps for generating data (in particular static data) are mostly
-similar to [JBrowse](/wiki/JBrowse.1) data generation steps, with
+similar to [JBrowse](/wiki/JBrowse) data generation steps, with
 some extra steps required. Most of the scripts for data generation
 reside in `/usr/local/tomcat/tomcat7/webapps/WebApollo/jbrowse/bin`.
 Let's go into WebApollo's JBrowse directory.

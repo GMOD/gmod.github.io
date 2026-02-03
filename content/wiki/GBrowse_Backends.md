@@ -3,7 +3,7 @@ title: "GBrowse Backends"
 ---
 # GBrowse Backends
 
-This page describes the [GBrowse](/wiki/GBrowse.1) database back
+This page describes the [GBrowse](/wiki/GBrowse) database back
 ends. It is incomplete.
 
   Bio::DB::SeqFeature::Store

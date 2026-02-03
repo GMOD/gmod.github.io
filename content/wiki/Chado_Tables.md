@@ -1908,7 +1908,7 @@ current -official- symbol for the linked feature.</td>
 <td><em>NOT NULL DEFAULT false</em><br />
 <br />
 Typically a synonym exists so that somebody querying the db with an
-obsolete name can find the object theyre looking for (under its current
+obsolete name can find the object they're looking for (under its current
 name. If the synonym has been used publicly and deliberately (e.g. in a
 paper), it may also be listed in reports as a synonym. If the synonym
 was not used deliberately (e.g. there was a typo which went public),

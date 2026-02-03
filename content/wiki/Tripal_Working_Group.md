@@ -36,13 +36,13 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
-width="200" height="60" alt="Tripal" />](/wiki/Tripal.1)
+width="200" height="60" alt="Tripal" />](/wiki/Tripal)
 
 There will be a [Satellite
 Meeting](/wiki/January_2010_GMOD_Meeting#Satellite_Meetings)
-on [Tripal](/wiki/Tripal.1) at the [January 2010 GMOD
+on [Tripal](/wiki/Tripal) at the [January 2010 GMOD
 Meeting](/wiki/January_2010_GMOD_Meeting). This
-working group will be a discussion of [Tripal](/wiki/Tripal.1) with
+working group will be a discussion of [Tripal](/wiki/Tripal) with
 an emphasis on future development plans. Anyone using Tripal, planning
 on or interested in it, or with an interest in using Drupal as a web
 front end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>

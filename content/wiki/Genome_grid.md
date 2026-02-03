@@ -129,7 +129,7 @@ genome analyses is a goal. These include in no particular order
   bioinformaticians when I saw it in 2006, but haven't evaluated it in
   detail.
 - <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
-  [Galaxy](/wiki/Galaxy.1) are GMOD related projects with genome
+  [Galaxy](/wiki/Galaxy) are GMOD related projects with genome
   analysis workflow systems that are relevant to this.
 
 # Downloads

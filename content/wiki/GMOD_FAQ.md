@@ -54,10 +54,10 @@ It is a suite of interconnected applications, middleware, and databases
 that researchers and informaticians use to store and study biological
 information. For a list of what's in GMOD see the [GMOD components
 page](/wiki/GMOD_Components). Some of the more popular
-components include the genome browser [GBrowse](/wiki/GBrowse.1),
+components include the genome browser [GBrowse](/wiki/GBrowse),
 the relational database
 [Chado](/wiki/Chado_-_Getting_Started), and the
-comparative map viewer [CMap](/wiki/CMap.1).
+comparative map viewer [CMap](/wiki/CMap).
 
 ### How do I learn more about GMOD?
 

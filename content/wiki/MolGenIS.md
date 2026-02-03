@@ -13,8 +13,6 @@ Status
 - **Active** development
 - **Active** support
 
-Resources
-
 - <a href="http://www.molgenis.org" class="external text"
   rel="nofollow">Home Page</a>
 - <a href="http://www.molgenis.org/wiki/MolgenisDownload"
@@ -55,8 +53,6 @@ To get in contact with other MOLGENIS developers don't hesitate to email
 
 current project admin, Morris Swertz
 (<a href="mailto:m.a.swertz@gmail.com" class="external text"
-
-## Resources
 
 All MOLGENIS resources are freely available under LGPLv3:
 

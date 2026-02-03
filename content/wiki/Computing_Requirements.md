@@ -159,7 +159,7 @@ input/output rates) can be adjusted as required, and much of the hassle
 and worry of maintaining expensive computer hardware is eliminated.
 <a href="http://wormbase.org" class="external text"
 
-cloud, and [GMOD in the Cloud](/wiki/Cloud.1) is a great way to get
+cloud, and [GMOD in the Cloud](/wiki/Cloud) is a great way to get
 started with GMOD software without the bother of installation.
 Cost-wise, cloud computing compares very favourably to hosting your own
 hardware, and in terms of flexibility, it cannot be beaten.

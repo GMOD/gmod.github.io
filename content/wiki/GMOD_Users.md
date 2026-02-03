@@ -5,7 +5,7 @@ title: "GMOD Users"
 
 The following is a selection of the websites (including organism
 databases, research groups, and software) using
-[GBrowse](/wiki/GBrowse.1), [JBrowse](/wiki/JBrowse.1),
+[GBrowse](/wiki/GBrowse), [JBrowse](/wiki/JBrowse),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, or some
 other popular component of GMOD. For a list of related publications see
 [Publications](/wiki/Publications).
@@ -239,7 +239,7 @@ single-cytosine-resolution DNA methylation data</td>
 <tr class="even">
 <td><a href="http://bioinformatics.ai.sri.com/ptools/"
 
-<td><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway
+<td><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway
 Tools</a></td>
 <td></td>
 <td>Home of Pathway Tools</td>

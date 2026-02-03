@@ -52,8 +52,8 @@ specific mailing lists.
 
 If your question is about how
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and another
-component like [GBrowse](/wiki/GBrowse.1) and
-[Apollo](/wiki/Apollo.1) interact, it is best to subscribe and post
+component like [GBrowse](/wiki/GBrowse) and
+[Apollo](/wiki/Apollo) interact, it is best to subscribe and post
 the question to both the Chado and the component lists.
 
 For applications that don't have a dedicated mailing list, you can post

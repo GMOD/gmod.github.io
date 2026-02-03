@@ -3,11 +3,11 @@ title: "GBrowse syn Scripts"
 ---
 # GBrowse syn Scripts
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
-[GBrowse](/wiki/GBrowse.1) based
+[GBrowse_syn](/wiki/GBrowse_syn) is a
+[GBrowse](/wiki/GBrowse) based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 viewer. This page describes helper scripts for processing alignment data
-for loading into [GBrowse_syn](/wiki/GBrowse_syn.1).
+for loading into [GBrowse_syn](/wiki/GBrowse_syn).
 
   load_alignments_msa.pl](#load_alignments_msa.pl)
 - [load_alignment_database.pl](#load_alignment_database.pl)

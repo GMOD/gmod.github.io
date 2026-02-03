@@ -38,13 +38,13 @@ provides. These are:
 |----|----|----|----|----|----|----|
 | Jan 10 (Sat) | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14951.html" |  |  |  |  |
 class="external text" rel="nofollow">Web Apollo 2.0: A Scalable,
-Distributed Sequence Annotation Editor</a> | [WebApollo](/wiki/WebApollo.1) | Nathan Dunn | California Room | <a href="http://genomearchitect.org/pag-2015" class="external text"
+Distributed Sequence Annotation Editor</a> | [WebApollo](/wiki/WebApollo) | Nathan Dunn | California Room | <a href="http://genomearchitect.org/pag-2015" class="external text"
 
-class="external text" rel="nofollow">W367</a>: [JBrowse](/wiki/JBrowse.1) Installation and Configuration | [JBrowse](/wiki/JBrowse.1) | [Scott Cain](/wiki/User:Scott) | California Room | [Tutorial page](/wiki/JBrowse_Tutorial_PAG_2015) | Jan 12 (Mon) | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14964.html"
+class="external text" rel="nofollow">W367</a>: [JBrowse](/wiki/JBrowse) Installation and Configuration | [JBrowse](/wiki/JBrowse) | [Scott Cain](/wiki/User:Scott) | California Room | [Tutorial page](/wiki/JBrowse_Tutorial_PAG_2015) | Jan 12 (Mon) | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14964.html"
 class="external text" rel="nofollow">P1154: WebApollo 2.0: A Scalable,
-Distributed Sequence Annotation Editor for Multiple Genomes</a> | [WebApollo](/wiki/WebApollo.1) | Nathan Dunn | Poster Session | <a href="http://genomearchitect.org/pag-2015" class="external text"
+Distributed Sequence Annotation Editor for Multiple Genomes</a> | [WebApollo](/wiki/WebApollo) | Nathan Dunn | Poster Session | <a href="http://genomearchitect.org/pag-2015" class="external text"
 
-class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy.1) for SNP and Variant Data Analysis | [Galaxy](/wiki/Galaxy.1) | [Dave Clements](/wiki/User:Clements) | California Room | <a
+class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | [Galaxy](/wiki/Galaxy) | [Dave Clements](/wiki/User:Clements) | California Room | <a
 href="https://wiki.galaxyproject.org/Documents/Presentations?action=AttachFile&amp;do=view&amp;target=2015_PAG_Variant.pdf"
 class="external text" rel="nofollow">Slides</a> | Jan 14 (Wed) | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | GMOD | [Scott Cain](/wiki/User:Scott) | California Room | [See below](#GMOD_Workshop) |
 
@@ -59,11 +59,11 @@ California Room.
 | Time | Topic | Presenter | Links |
 |----|----|----|----|
 | 4:00-4:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14953.html" |  |  |
-class="external text" rel="nofollow">W872</a>: [Tripal](/wiki/Tripal.1) Overview & Future Developments | Stephen Ficklin | <a
+class="external text" rel="nofollow">W872</a>: [Tripal](/wiki/Tripal) Overview & Future Developments | Stephen Ficklin | <a
 href="http://www.rosaceae.org/sites/default/files/files/Tripal_Workshop_PAG2015.pdf"
 class="external text" rel="nofollow">Slides</a> | 4:30 - 5:00 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14948.html"
-class="external text" rel="nofollow">W873</a>: Extending [Tripal](/wiki/Tripal.1) for Specialized Display and Management of Diversity and Breeding Data | Lacey-Anne Sanderson | 5:00 - 5:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14947.html"
-class="external text" rel="nofollow">W874</a>: GDR/CottonGen: Converting Legacy Sites to [Tripal](/wiki/Tripal.1) | Sook Jung | <a
+class="external text" rel="nofollow">W873</a>: Extending [Tripal](/wiki/Tripal) for Specialized Display and Management of Diversity and Breeding Data | Lacey-Anne Sanderson | 5:00 - 5:15 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14947.html"
+class="external text" rel="nofollow">W874</a>: GDR/CottonGen: Converting Legacy Sites to [Tripal](/wiki/Tripal) | Sook Jung | <a
 href="http://www.rosaceae.org/sites/default/files/files/Tripal_GDR_2015.ppsx"
 class="external text" rel="nofollow">Slides</a> | 5:15 - 5:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14955.html"
 class="external text" rel="nofollow">W875</a>: The i5k Workspace@Nal - a Tripal Based Arthropod Genome Portal | Christopher Childers | <a
@@ -89,11 +89,11 @@ January 14th will be held in the Golden West room. The schedule is:
 class="external text" rel="nofollow">W407</a> - The Future of GMOD and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/97/The_future_of_GMOD_and_Chado.pdf"
 class="internal" title="The future of GMOD and Chado.pdf">Slides</a> | 10:50 - 11:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17190.html"
 class="external text" rel="nofollow">W408</a> - KnowPulse: A Breeder-Focused Web Portal That Integrates Genetics and Genomics of Pulse Crops with Model Genomes | Lacey-Anne Sanderson | 11:10 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17187.html"
-class="external text" rel="nofollow">W409</a> - Phytozome Population Diversity Visualization in [JBrowse](/wiki/JBrowse.1): A very large Dataset Case Study | Richard Hayes | 11:30 - 11:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17189.html"
-class="external text" rel="nofollow">W410</a> - [JBrowse](/wiki/JBrowse.1) within the Arabidopsis Information Portal (AIP) Project | Vivek Krishnakumar | <a
+class="external text" rel="nofollow">W409</a> - Phytozome Population Diversity Visualization in [JBrowse](/wiki/JBrowse): A very large Dataset Case Study | Richard Hayes | 11:30 - 11:50 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17189.html"
+class="external text" rel="nofollow">W410</a> - [JBrowse](/wiki/JBrowse) within the Arabidopsis Information Portal (AIP) Project | Vivek Krishnakumar | <a
 href="http://www.slideshare.net/vivekkrish/jbrowse-within-the-arabidopsis-information-portal"
 class="external text" rel="nofollow">Slides</a> | 11:50 - 12:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper17193.html"
-class="external text" rel="nofollow">W411</a> - [Apollo](/wiki/Apollo.1) + i5K: Collaborative Curation and Interactive Analysis of Genomes | <a href="https://www.linkedin.com/in/monimunozto" class="external text"
+class="external text" rel="nofollow">W411</a> - [Apollo](/wiki/Apollo) + i5K: Collaborative Curation and Interactive Analysis of Genomes | <a href="https://www.linkedin.com/in/monimunozto" class="external text"
 
 class="external text" rel="nofollow">W412</a> - The Teosinte (*Zea mays* ssp. *parviglumis) de novo* Genome Assembly | Arun S. Seetharam | 12:30 - 1:30 | Lunch Break | 1:30 | Panel Discussion | TBD ## GMOD Consumers and Providers
 
@@ -150,7 +150,7 @@ class="external text" rel="nofollow">P1118</a>: The i5k Workspace@NAL - Enabling
 class="external text" rel="nofollow">Poster</a> | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper16440.html"
 class="external text" rel="nofollow">P1124</a>: Deploying and Maintaining Large Intermine Implementations: Phytomine at Phytozome | Joseph Carlson | Poster session | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14525.html"
 class="external text" rel="nofollow">P1132</a>: Grass Genomes in Ensembl Plants | Paul Kersey | Poster session | 10:00 - 11:30 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper14964.html"
-class="external text" rel="nofollow">P1154</a>: [WebApollo](/wiki/WebApollo.1) 2.0: A Scalable, Distributed Sequence Annotation Editor for Multiple Genomes\] | Nathan Dunn | Poster Session | <a href="http://genomearchitect.org/pag-2015" class="external text"
+class="external text" rel="nofollow">P1154</a>: [WebApollo](/wiki/WebApollo) 2.0: A Scalable, Distributed Sequence Annotation Editor for Multiple Genomes\] | Nathan Dunn | Poster Session | <a href="http://genomearchitect.org/pag-2015" class="external text"
 
 class="external text" rel="nofollow">P1168</a>: Improving Maker Gene Annotations in Grasses through the Use of GC Specific Hidden Markov Models | Kevin Childs | Poster session | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15999.html"
 class="external text" rel="nofollow">C11</a>: Methods for Collecting, Integrating, and Displaying Complex Genetic Data, Using the Legume Information System and PeanutBase | Andrew Farmer | California | 2:30-2:45 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15573.html"
@@ -191,6 +191,6 @@ href="http://de.iplantcollaborative.org/dl/d/9B849155-14AD-4B33-A339-7F6EEB496CE
 class="external text" rel="nofollow">Slides</a> | 1:50 - 2:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Paper15323.html"
 class="external text" rel="nofollow">Programmatic Interfaces to Plant
 Genomic Data</a> | Paul Kersey | California | 4:00 - 6:10 | <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2641.html"
-class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy.1) for SNP and Variant Data Analysis | [Dave Clements](/wiki/User:Clements) | California | <a
+class="external text" rel="nofollow">W354</a>: [Galaxy](/wiki/Galaxy) for SNP and Variant Data Analysis | [Dave Clements](/wiki/User:Clements) | California | <a
 href="https://wiki.galaxyproject.org/Documents/Presentations?action=AttachFile&amp;do=view&amp;target=2015_PAG_Variant.pdf"
 class="external text" rel="nofollow">Slides</a> | <span id="Wednesday">**Wednesday January 14**</span> |  | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | [Scott Cain](/wiki/User:Scott) and the GMOD Community | Golden West | [See above](#GMOD_Workshop) |

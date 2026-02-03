@@ -36,8 +36,8 @@ Items that need to be addressed soon are:
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> -\>
   Mediawiki and Mediawiki -\> Chado scripts.
 - ~~Hook up the cgi for generating GameXML from
-  [GBrowse](/wiki/GBrowse.1) (so that the click to edit with
-  [Apollo](/wiki/Apollo.1) will work).~~DONE!
+  [GBrowse](/wiki/GBrowse) (so that the click to edit with
+  [Apollo](/wiki/Apollo) will work).~~DONE!
 - Documentation, Documentation, Documentation!
 
 For more information or help, send email to the [GMOD Help

@@ -117,7 +117,7 @@ class="external text" rel="nofollow">HTML</a> | 4:00 | Using <a href="http://dru
 |----|----|----|----|
 | 9:00 | [Textpresso](/wiki/Textpresso) | Nathan Liles | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Jan2010Testpresso.ppt" |
 class="internal" title="Jan2010Testpresso.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/Jan2010Testpresso.pdf"
-class="internal" title="Jan2010Testpresso.pdf">PDF</a> | 9:30 | [TableEdit](/wiki/TableEdit.1) | [Daniel Renfro](/wiki/User:DanielRenfro), [Jim Hu](/wiki/User:JimHu.1) | <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODJanuary/Jan2010TableEdit.ppt"
+class="internal" title="Jan2010Testpresso.pdf">PDF</a> | 9:30 | [TableEdit](/wiki/TableEdit) | [Daniel Renfro](/wiki/User:DanielRenfro), [Jim Hu](/wiki/User:JimHu.1) | <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODJanuary/Jan2010TableEdit.ppt"
 class="external text" rel="nofollow">PPT</a>, [PDF](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/Jan2010TableEdit.pdf) | 10:00 | Adventures in NOSQL | Brian O'Connor, <a href="http://seqware.sf.net" class="external text"
 
 class="internal" title="20100114 GMOD Dev Meeting v2.odp">ODP</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/20100114_GMOD_Dev_Meeting_v2.pdf"
@@ -128,13 +128,13 @@ class="external text" rel="nofollow">PPT</a>, <a href="/wiki/ftp://ftp.gmod.org/
 class="external text" rel="nofollow">PDF</a>, <a href="/wiki/ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODJanuary/GMOD2.zip"
 class="external text" rel="nofollow">ZIP</a> | 11:30 | NCBO Tools and Web Services | Trish Whetzel | 12:00 | **Lunch** | 1:15 | Providing a biologist-centered interface for running and customizing <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> pipelines | [Chris Hemmerich](/wiki/User:Chemmeri) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b9/Jan2010ErgatisForBiologists.ppt"
 class="internal" title="Jan2010ErgatisForBiologists.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/Jan2010ErgatisForBiologists.pdf"
-class="internal" title="Jan2010ErgatisForBiologists.pdf">PDF</a> | 1:45 | Open Mic/Show and Tell |  | [JBrowse](/wiki/JBrowse.1) | [Mitch Skinner](/wiki/User:MitchSkinner) | [PDF](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf) |  | Openings at  | Ben Hitz | RediscoveryDB: Connecting High-Throughput Data with Testable Hypotheses | Dawei Lin | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2010RediscoveryDB.pdf"
+class="internal" title="Jan2010ErgatisForBiologists.pdf">PDF</a> | 1:45 | Open Mic/Show and Tell |  | [JBrowse](/wiki/JBrowse) | [Mitch Skinner](/wiki/User:MitchSkinner) | [PDF](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/PAG2010JBrowse.pdf) |  | Openings at  | Ben Hitz | RediscoveryDB: Connecting High-Throughput Data with Testable Hypotheses | Dawei Lin | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/63/Jan2010RediscoveryDB.pdf"
 class="internal" title="Jan2010RediscoveryDB.pdf">PDF</a> |  | PhaseolusGenes : A Genomics Information Management and Marker Discovery Toolkit For A Non-Model Organism | Dawei Lin | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bd/Jan2010PhaseolusGenes.pdf"
-class="internal" title="Jan2010PhaseolusGenes.pdf">PDF</a> |  | [Tripal](/wiki/Tripal.1) | [Stephen Ficklin](/wiki/User:Sficklin) | (<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2b/PAG2010Tripal.pdf" class="internal"
-title="PAG2010Tripal.pdf">PAG 2010 Talk</a>) |  | Use of [GBrowse](/wiki/GBrowse.1) 1.999 in the Cancer Genome Project | Keiran Raine | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Jan2010GBrowseCancerGenome.ppt"
+class="internal" title="Jan2010PhaseolusGenes.pdf">PDF</a> |  | [Tripal](/wiki/Tripal) | [Stephen Ficklin](/wiki/User:Sficklin) | (<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2b/PAG2010Tripal.pdf" class="internal"
+title="PAG2010Tripal.pdf">PAG 2010 Talk</a>) |  | Use of [GBrowse](/wiki/GBrowse) 1.999 in the Cancer Genome Project | Keiran Raine | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c3/Jan2010GBrowseCancerGenome.ppt"
 class="internal" title="Jan2010GBrowseCancerGenome.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Jan2010GBrowseCancerGenome.pdf"
 class="internal" title="Jan2010GBrowseCancerGenome.pdf">PDF</a> |  | <a href="http://flybase.org/cgi-bin/gbrowse/dmelrnaseq/"
-class="external text" rel="nofollow">TopoView</a> [GBrowse](/wiki/GBrowse.1) glyph at  | [Josh Goodman](/wiki/User:Jogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf" class="internal"
+class="external text" rel="nofollow">TopoView</a> [GBrowse](/wiki/GBrowse) glyph at  | [Josh Goodman](/wiki/User:Jogoodma) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/Flybase_topoview.pdf" class="internal"
 title="Flybase topoview.pdf">PDF</a> |  | Ceres Genome Browser | Maxim Troukhan | [InterMine](/wiki/InterMine) | [Richard Smith](/wiki/User:Rsmith) | <a href="http://www.intermine.org/wiki/GMODtalk" class="external text"
 
 title="Jan2010InterMine.pdf">PDF</a>, |  | A Couple of UI Prototypes | Jonathan Crabtree | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2010UIPrototypes.odp"
@@ -190,7 +190,7 @@ title="bp:GMOD 2010 Meeting">main BioPerl website</a>.</p></td>
 Working Group</a></th>
 <td><a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen
 Ficklin</a></td>
-<td>A discussion of <a href="/wiki/Tripal.1" title="Tripal">Tripal</a> with an
+<td>A discussion of <a href="/wiki/Tripal" title="Tripal">Tripal</a> with an
 emphasis on future development plans. Anyone using Tripal, planning on
 or interested in it, or with an interest in using Drupal as a web front
 end to <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> is
@@ -233,9 +233,9 @@ please add it below.
   Clements](/wiki/User:Clements)
 - GMOD tools in the frame of GnpAnnot projects (-- Michael Alaux --
   Joelle Amselem, on the 14th)
-  - Roundtrip [GBrowse](/wiki/GBrowse.1) ←
+  - Roundtrip [GBrowse](/wiki/GBrowse) ←
     <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> ↔
-    [Apollo](/wiki/Apollo.1) at URGI for community of annotation
+    [Apollo](/wiki/Apollo) at URGI for community of annotation
     (fungal and plant genomes)
   - The Chado Controller : a user authentication and logging addon to
     <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
@@ -251,7 +251,7 @@ please add it below.
 - StrategiesWDK: intro to a powerful MOD-compatible search UI -- [Steve
   Fischer](/wiki/User:Stevef)
 - Give [Textpresso](/wiki/Textpresso) meeting talk, Nathan Liles
-- [TableEdit](/wiki/TableEdit.1), [Daniel
+- [TableEdit](/wiki/TableEdit), [Daniel
   Renfro](/wiki/User:DanielRenfro), [Jim
   Hu](/wiki/User:JimHu.1),
   <a href="http://www.mediawiki.org/wiki/Extension:TableEdit"

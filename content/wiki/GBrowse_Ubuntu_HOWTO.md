@@ -93,7 +93,7 @@ the above apt-get command.
 
 The information below is deprecated.
 
-[GBrowse](/wiki/GBrowse.1) does not have a .deb package, but many of
+[GBrowse](/wiki/GBrowse) does not have a .deb package, but many of
 its prerequisites are distributed in this way. This document describes
 how to install GBrowse on Ubuntu and other Linux distributions that use
 the Debian packaging system.

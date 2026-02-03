@@ -85,16 +85,16 @@ active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
-[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
-[Apollo](/wiki/Apollo.1), [Canto](/wiki/Canto) and
-[MAKER](/wiki/MAKER.1) for genome annotation,
-[GBrowse_syn](/wiki/GBrowse_syn.1) and [CMap](/wiki/CMap.1) for
+[GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse) (and
+[WebGBrowse](/wiki/WebGBrowse)) for genome browsing,
+[Apollo](/wiki/Apollo), [Canto](/wiki/Canto) and
+[MAKER](/wiki/MAKER) for genome annotation,
+[GBrowse_syn](/wiki/GBrowse_syn) and [CMap](/wiki/CMap) for
 comparative genomics visualization,
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](/wiki/Galaxy.1) and
+[Galaxy](/wiki/Galaxy) and
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](/wiki/ISGA)) for data analysis.
 
@@ -118,9 +118,9 @@ class="internal" title="GMOD2016 InterMine.pdf">InterMine</a>, <a
 href="https://www.dropbox.com/s/7i39svwlegfr4rq/MAKER_GMOD_2016.pdf?dl=0"
 class="external text" rel="nofollow">MAKER</a> | 10:10 | Introduction to uMOD | [Scott Cain](/wiki/User:Scott) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/GMOD2016_uMOD.pdf" class="internal"
 title="GMOD2016 uMOD.pdf">Slides</a> | 10:35 | Coffee | 10:50 | GMOD in Action: The Legume Federation Project | Ethalinda Cannon | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/24/LegFed_GMOD2016.pdf" class="internal"
-title="LegFed GMOD2016.pdf">Slides</a> | 11:20 | [JBrowse](/wiki/JBrowse.1) Update | Eric Yao | <a
+title="LegFed GMOD2016.pdf">Slides</a> | 11:20 | [JBrowse](/wiki/JBrowse) Update | Eric Yao | <a
 href="https://drive.google.com/a/berkeley.edu/file/d/0BzJAAJpIcu9hVFloS2R6ZUxhcUE/view?usp=sharing"
-class="external text" rel="nofollow">Slides</a> | 11:50 | Lunch | 1:00 | [Apollo](/wiki/Apollo.1): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
+class="external text" rel="nofollow">Slides</a> | 11:50 | Lunch | 1:00 | [Apollo](/wiki/Apollo): Collaborative Manual Annotation in the GMOD Workflow | <a href="https://github.com/nathandunn" class="external text"
 
 href="http://arthropods.eugenes.org/EvidentialGene/about/evigenegmod1606iu.pdf"
 class="external text" rel="nofollow">Slides</a> | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](/wiki/User:Jogoodma) ### Friday, July 1
@@ -137,10 +137,10 @@ giving a talk please contact the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
 help desk</a>.
 
-- GMOD project updates, including [Tripal](/wiki/Tripal.1),
-  [Galaxy](/wiki/Galaxy.1), [JBrowse](/wiki/JBrowse.1),
+- GMOD project updates, including [Tripal](/wiki/Tripal),
+  [Galaxy](/wiki/Galaxy), [JBrowse](/wiki/JBrowse),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-  [MAKER](/wiki/MAKER.1).
+  [MAKER](/wiki/MAKER).
 - Introduction to umod ([Scott Cain](/wiki/User:Scott))
 - "Apollo: Collaborative Manual Annotation in the GMOD Workflow" (Nathan
   Dunn)
@@ -153,7 +153,7 @@ help desk</a>.
 - DictyBase on using and extending GMOD tools (Chado, JBrowse) and new
   infrastructure(docker and possibly kubernetes) (Siddhartha Basu)
 - GMOD in Action: The Legume Federation Project (Ethalinda Cannon)
-- [Tripal](/wiki/Tripal.1) Workshop (Friday afternoon)
+- [Tripal](/wiki/Tripal) Workshop (Friday afternoon)
 
 ## Logistics
 

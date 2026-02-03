@@ -5,7 +5,7 @@ title: "GBrowse MacOSX HOWTO"
 
 **NOTE:** These instructions are quite old and describe how to install
 GBrowse 1.X. Since Mac OS X is very "unix-y", once libgd installed,
-[GBrowse2](/wiki/GBrowse.1) can be installed just like it would on
+[GBrowse2](/wiki/GBrowse) can be installed just like it would on
 any other unix like system. A libgd installer for Leopard and Snow
 Leopard can be obtained from <a
 href="https://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/libgd-MacOSX/20100406/"
@@ -288,7 +288,7 @@ using "sudo":
       % perl gbrowse_netinstall.pl
 
 See the main install page for a description of command line options for
-the [netinstall script](/wiki/GBrowse.1#Installation).
+the [netinstall script](/wiki/GBrowse#Installation).
 
 This will install the correct versions of GD, BioPerl, and all
 dependencies. During the process you will be asked to respond to various

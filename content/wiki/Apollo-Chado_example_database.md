@@ -5,7 +5,7 @@ title: "Apollo-Chado example database"
 
 There is an example database with [GFF3](/wiki/GFF3) source files, a
 log of the commands used to build the database, database dumps at a few
-steps of building the database, and an [Apollo](/wiki/Apollo.1)
+steps of building the database, and an [Apollo](/wiki/Apollo)
 `chado-adaptor.xml` config file in the
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/sample_dbs"
 class="external text" rel="nofollow">schema SVN</a>.

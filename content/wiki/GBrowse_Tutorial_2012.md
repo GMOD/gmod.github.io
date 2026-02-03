@@ -3,7 +3,7 @@ title: "GBrowse Tutorial 2012"
 ---
 # GBrowse Tutorial 2012
 
-This [GBrowse](/wiki/GBrowse.1) tutorial was taught at the [2012
+This [GBrowse](/wiki/GBrowse) tutorial was taught at the [2012
 GMOD Summer School](/wiki/2012_GMOD_Summer_School)
 by [Scott Cain](/wiki/User:Scott).
 

@@ -27,7 +27,7 @@ down while I'm thinking about it.
 
 MySQL is a very good database for some things: it is very fast as a read
 only database, and so is quite good for driving data displays like
-[GBrowse](/wiki/GBrowse.1). My experience outlined below describes
+[GBrowse](/wiki/GBrowse). My experience outlined below describes
 why I learned to distrust it for 'important' data.
 
 Some things that make me wary:
@@ -67,7 +67,7 @@ Some things that make me wary:
 ### How I learned to distrust MySQL
 
 When I started working on GMOD in 2002, the first project I tackled was
-to write a port of the [GBrowse](/wiki/GBrowse.1) /
+to write a port of the [GBrowse](/wiki/GBrowse) /
 <a href="/wiki/GBrowse_adaptors" class="mw-redirect"
 title="GBrowse adaptors">Bio::DB::GFF adaptor</a> to
 [PostgreSQL](/wiki/PostgreSQL). I did a perfect job the first

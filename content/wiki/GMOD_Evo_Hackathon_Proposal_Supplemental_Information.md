@@ -90,7 +90,7 @@ modified to recognize this data.
 
 #### Web-based display of Chado Phenotype/Natural Diversity data
 
-[Tripal](/wiki/Tripal.1) is a
+[Tripal](/wiki/Tripal) is a
 <a href="http://drupal.org" class="external text"
 
 supports interfaces for several popular data types, but does not

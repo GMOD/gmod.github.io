@@ -181,8 +181,8 @@ This query should fetch a 3-deep graph rooted at "Dredd".
 
 ##### Application Support
 
-- Supported by [Apollo](/wiki/Apollo.1)
-- Supported by [GBrowse](/wiki/GBrowse.1)
+- Supported by [Apollo](/wiki/Apollo)
+- Supported by [GBrowse](/wiki/GBrowse)
 
 #### Noncoding Genes
 
@@ -197,8 +197,8 @@ model](#Canonical_Gene_Model), with the following exceptions:
 
 ##### Application Support
 
-- Supported by [Apollo](/wiki/Apollo.1)
-- Supported by [GBrowse](/wiki/GBrowse.1)
+- Supported by [Apollo](/wiki/Apollo)
+- Supported by [GBrowse](/wiki/GBrowse)
 
 #### Pseudogene
 
@@ -227,7 +227,7 @@ no-one is using Chado to do this. There are currently two practices:
 
 ##### Application Support
 
-- [Apollo](/wiki/Apollo.1): status is unclear.
+- [Apollo](/wiki/Apollo): status is unclear.
 
 Apollo by default treats pseudogenes using the first method, above. It
 may also be possible to configure it to the second, singleton, method.
@@ -249,8 +249,8 @@ not be supported by all applications)
 
 ##### Application Support
 
-- Supported by [Apollo](/wiki/Apollo.1)
-- Supported by [GBrowse](/wiki/GBrowse.1)
+- Supported by [Apollo](/wiki/Apollo)
+- Supported by [GBrowse](/wiki/GBrowse)
 
 Apollo supports singletons provided they are located relative to the
 genome (singletons located relative to other features will be ignored).
@@ -348,8 +348,8 @@ to be adopted.
 
 ##### Application Support
 
-- [Apollo](/wiki/Apollo.1): status unclear.
-- [GBrowse](/wiki/GBrowse.1): status unclear.
+- [Apollo](/wiki/Apollo): status unclear.
+- [GBrowse](/wiki/GBrowse): status unclear.
 
 #### xxx Gene with Regulatory Elements
 
@@ -406,8 +406,8 @@ by adding transcript and exon features.
 
 ##### Application Support
 
-- [GBrowse](/wiki/GBrowse.1): supported.
-- [Apollo](/wiki/Apollo.1): supported.
+- [GBrowse](/wiki/GBrowse): supported.
+- [Apollo](/wiki/Apollo): supported.
 
 GBrowse supports this scenario in that unlocalized features will be
 ignored from the genome viewer, which is appropriate.
@@ -464,8 +464,8 @@ top-level units and back.
 
 ##### Application Support
 
-- [Apollo](/wiki/Apollo.1): status unclear.
-- [GBrowse](/wiki/GBrowse.1): status unclear.
+- [Apollo](/wiki/Apollo): status unclear.
+- [GBrowse](/wiki/GBrowse): status unclear.
 
 Apollo should be happy to treat contigs just as if they were top-level
 units as chromosome arms. However, the user may have to explicitly
@@ -496,8 +496,8 @@ circumstances
 
 ##### Application Support
 
-- [GBrowse](/wiki/GBrowse.1): status unclear.
-- [GBrowse](/wiki/GBrowse.1): status partial.
+- [GBrowse](/wiki/GBrowse): status unclear.
+- [GBrowse](/wiki/GBrowse): status partial.
 
 It is not clear if GBrowse uses _locgroup_ in querying. If it constrains
 by _locgroup_, then this is essentially the same as [feature

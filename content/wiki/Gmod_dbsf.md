@@ -27,7 +27,7 @@ Application Programming Interface module for the
 <a href="http://drupal.org" class="external text"
 
 Drupal modules. This Drupal API is not a visualization module, like
-[Tripal](/wiki/Tripal.1). It is aimed for developers and seeks to
+[Tripal](/wiki/Tripal). It is aimed for developers and seeks to
 make the co-existence of Chado and Drupal seamless to the end-user and
 reduces the learning curve for the bioinformatic community. It was
 developed with the non-model species community in mind and is especially

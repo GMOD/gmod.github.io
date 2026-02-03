@@ -49,7 +49,7 @@ the following have you used?
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 <td style="text-align: right;"> 87% </td>
 <td>
 
@@ -57,7 +57,7 @@ the following have you used?
 </td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/CMap.1" title="CMap">CMap</a></td>
+<td><a href="/wiki/CMap" title="CMap">CMap</a></td>
 <td style="text-align: right;"> 31% </td>
 <td>
 
@@ -65,7 +65,7 @@ the following have you used?
 </td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 <td style="text-align: right;"> 29% </td>
 <td>
 
@@ -73,7 +73,7 @@ the following have you used?
 </td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a></td>
+<td><a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a></td>
 <td style="text-align: right;"> 29% </td>
 <td>
 
@@ -81,7 +81,7 @@ the following have you used?
 </td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a>'s synteny viewer</td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a>'s synteny viewer</td>
 <td style="text-align: right;"> 13% </td>
 <td>
 
@@ -89,7 +89,7 @@ the following have you used?
 </td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/BLAST_Graphic_Viewer.1" title="BLAST Graphic Viewer">BLAST
+<td><a href="/wiki/BLAST_Graphic_Viewer" title="BLAST Graphic Viewer">BLAST
 Graphic Viewer</a></td>
 <td style="text-align: right;"> 13% </td>
 <td>
@@ -331,7 +331,7 @@ interval, quantiles etc.).</td>
 sorted by length of the matching pair. I think the <a href="/wiki/Glossary#AJAX" title="Glossary">AJAX</a> code in <a
 href="http://www.sanger.ac.uk/Software/analysis/lookseq/"
 class="external text" rel="nofollow">Lookseq</a> could be integrated
-into <a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> or .</td>
+into <a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> or .</td>
 <td><a href="http://www.sanger.ac.uk/Software/analysis/lookseq/"
 class="external text" rel="nofollow">Lookseq</a></td>
 </tr>
@@ -339,7 +339,7 @@ class="external text" rel="nofollow">Lookseq</a></td>
 <td>Within a genome I want to be able to make it easy to visually find
 areas of the genome where two or more features overlap or coincide e.g.
 a QTL and a gene</td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Compare genomes between related species.</td>
@@ -348,7 +348,7 @@ a QTL and a gene</td>
 <tr class="odd">
 <td>I would like to be able to see SNP existing between a reference
 genome strain and other genome strains of interest.</td>
-<td>I think it could be possible using <a href="/wiki/GBrowse.1"
+<td>I think it could be possible using <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
@@ -359,7 +359,7 @@ say :
 annotation) AND holding also this kind of features (<em>ie</em> : SNP,
 QTL, ....)</li>
 </ul></td>
-<td>None, but I'm only very familiar with <a href="/wiki/GBrowse.1"
+<td>None, but I'm only very familiar with <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>.</td>
 </tr>
 <tr class="odd">
@@ -372,9 +372,9 @@ data, gene models from other sources.
 <p>in the end, the ideal would be the possibility of querying
 efficiently the browser on numerical data.</p></td>
 <td>Gbrowse2 with Bio::DB::Sam is a good start point even if the
-documentation about the connection between <a href="/wiki/GBrowse.1"
+documentation about the connection between <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> and the perl module is too short. I intend
-to install <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> for the annotation
+to install <a href="/wiki/MAKER" title="MAKER">MAKER</a> for the annotation
 part and its connection to Gbrowse2.</td>
 </tr>
 <tr class="even">
@@ -382,7 +382,7 @@ part and its connection to Gbrowse2.</td>
 protein sequence that is expressed) and I would like to view the stretch
 of DNA this maps to while aligning cDNA, EST, predictor, promoter, etc.
 information</td>
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a></td>
 </tr>
 <tr class="odd">
 <td>In bacterial genomics we often look at regions of many (&gt;20)
@@ -394,19 +394,19 @@ commercial ERGO package, <a href="http://www.cns.fr/externe/English/"
 class="external text" rel="nofollow">Genoscope</a> has these
 capabilities and the <a href="http://www.cmbi.ru.nl/MGV/"
 class="external text" rel="nofollow">Microbial Genome Viewer</a> as well
-(although MGV lacks other functionalities that make <a href="/wiki/GBrowse.1"
+(although MGV lacks other functionalities that make <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> unique)</td>
 </tr>
 <tr class="even">
-<td>How can we view repetitive regions using <a href="/wiki/GBrowse_syn.1"
+<td>How can we view repetitive regions using <a href="/wiki/GBrowse_syn"
 title="GBrowse syn">GBrowse_syn</a>?</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Ability to easily leverage data from <a href="/wiki/CMap.1"
-title="CMap">CMap</a> and <a href="/wiki/GBrowse.1"
+<td>Ability to easily leverage data from <a href="/wiki/CMap"
+title="CMap">CMap</a> and <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> for comparative genomics</td>
-<td>Gbrowse Sythn (<a href="/wiki/GBrowse_syn.1"
+<td>Gbrowse Sythn (<a href="/wiki/GBrowse_syn"
 title="GBrowse syn">GBrowse_syn</a>?)</td>
 </tr>
 <tr class="even">
@@ -418,7 +418,7 @@ well</td>
 <td>I want to find lots of annotation and context for genes of interest
 from new papers or new data discoveries.</td>
 <td><a href="http://genome.ucsc.edu/cgi-bin/hgGateway"
-class="external text" rel="nofollow">UCSC Genome Browser</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> (varies by species), <a
+class="external text" rel="nofollow">UCSC Genome Browser</a>, <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> (varies by species), <a
 href="http://www.ensembl.org/index.html" class="external text"
 
 </tr>
@@ -443,7 +443,7 @@ same order?</li>
 <tr class="odd">
 <td>What insight does the coverage of next-generation sequence data give
 regarding repetitive elements within the genome?</td>
-<td>This sort of data is quite complicated to view using <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> currently.</td>
+<td>This sort of data is quite complicated to view using <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> currently.</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -451,20 +451,20 @@ regarding repetitive elements within the genome?</td>
 <li>NGS support</li>
 <li>Comparative maps support</li>
 </ul></td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a>, <a href="/wiki/CMap.1"
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a>, <a href="/wiki/CMap"
 title="CMap">CMap</a></td>
 </tr>
 <tr class="odd">
 <td>I would like to integrate the information from physical and genetic
 maps as well as the genome sequence. Including BACs, markers, BAC-ends,
 unigenes, etc.</td>
-<td><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> and <a href="/wiki/CMap.1"
+<td><a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> and <a href="/wiki/CMap"
 title="CMap">CMap</a>.</td>
 </tr>
 <tr class="even">
 <td>Scalable view of genomes side by side, linked by markers, locations,
 or features (genes)</td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
 <td>I like to easily visualize microarray and next generation sequencing
@@ -472,7 +472,7 @@ data from chromatin IP experiments across the genome and in relation to
 genomic features. Adjusting data plot parameters, order, and graph type
 spontaneously is important.</td>
 <td>Multiple competing genome browsers are capable of this function, but
-I am most familiar with <a href="/wiki/GBrowse.1"
+I am most familiar with <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>.</td>
 </tr>
 <tr class="even">
@@ -495,7 +495,7 @@ genomes.</td>
 <td>Is the region that is transcribed according to tiling array data
 associated with published data (such as siRNAs, DNA methylation,
 chromatin modifications etc)?</td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
 <td>I'd like to map all types of information onto the genome in the
@@ -510,12 +510,12 @@ standalone tool</td>
 <td>We would like to visualize where EST contigs sequenced from a novel
 genome align to the genome of a model organism.</td>
 <td>I would assume that any genome browser should be able to do this
-relatively well. While I have used <a href="/wiki/GBrowse.1"
-title="GBrowse">GBrowse</a>, <a href="/wiki/JBrowse.1"
+relatively well. While I have used <a href="/wiki/GBrowse"
+title="GBrowse">GBrowse</a>, <a href="/wiki/JBrowse"
 title="JBrowse">JBrowse</a>, <a
 href="http://genome.ucsc.edu/cgi-bin/hgGateway" class="external text"
 
-title="Apollo">Apollo</a>, I have used only <a href="/wiki/GBrowse.1"
+title="Apollo">Apollo</a>, I have used only <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> extensively.</td>
 </tr>
 <tr class="odd">
@@ -529,7 +529,7 @@ or an individual family.</td>
 <td>With multiple genomes I want to make it easy to find regions where
 there has been some sort of rearrangement (indel or inversion or
 translocation)</td>
-<td><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a></td>
+<td><a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a></td>
 </tr>
 <tr class="odd">
 <td>I would like to be able to enter a AA sequence and then get all
@@ -548,7 +548,7 @@ class="external text" rel="nofollow">UCSC Genome Browser</a></td>
 <tr class="odd">
 <td>Ability to add arbitrary number of genome elements/features, choices
 to make them permanently or privately part of a database</td>
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td>Where are the start codons, according to the conservation in a
@@ -563,12 +563,12 @@ previous knowledge of the protein(s) analysed).</p></td>
 <td>I'd like to show members of one gene family in different genomes as
 a stack on a synteny viewer. With the functional domains (in the
 sequence) highlighted.</td>
-<td>I'm still exploring <a href="/wiki/GBrowse_syn.1"
+<td>I'm still exploring <a href="/wiki/GBrowse_syn"
 title="GBrowse syn">GBrowse_syn</a> so maybe it can be customized to do
 this.</td>
 </tr>
 <tr class="even">
-<td>Right now I am working on integrating <a href="/wiki/GBrowse.1"
+<td>Right now I am working on integrating <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> system to my gene prediction program. So
 user will be able to visualize the complete genome picture according to
 their input raw sequence.</td>
@@ -578,7 +578,7 @@ alternative.</td>
 <tr class="odd">
 <td>Would like to get guidance for the annotation of a novel sequence by
 showing similarity to a well-annotated sequence</td>
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a>?</td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a>?</td>
 </tr>
 </tbody>
 </table>
@@ -796,7 +796,7 @@ System</a>.</td>
 services</strong>
 See <a href="/wiki/August_2009_GMOD_Meeting#Metadata_Web_Services"
 title="August 2009 GMOD Meeting">this page</a> for an explanation of how
-this might be done in <a href="/wiki/GBrowse.1"
+this might be done in <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>.</td>
 <td style="text-align: right;"> 13% </td>
 <td style="text-align: right;"> 36% </td>
@@ -865,7 +865,7 @@ Support for plugins and user defined glyphs</td>
 <td><strong>Individual feature display customization</strong>
 Allow browser admin to write their own code to adjust how a feature is
 shown (height, color, border, ...), based on the feature's attributes.
-(This is done with Perl callbacks in <a href="/wiki/GBrowse.1"
+(This is done with Perl callbacks in <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>.)</td>
 <td style="text-align: right;"> 42% </td>
 <td style="text-align: right;"> 36% </td>
@@ -934,7 +934,7 @@ so on. GBrowse allows admins to control some aspects of the layout.</td>
 </tr>
 <tr class="odd">
 <td><strong>Hierarchical listing of available tracks.</strong>
-<a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> already supports
+<a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> already supports
 this.</td>
 <td style="text-align: right;"> 31% </td>
 <td style="text-align: right;"> 29% </td>
@@ -977,7 +977,7 @@ Select and then show multiple regions of the genome.</td>
 </tr>
 <tr class="odd">
 <td><strong>Comparing two or more genomes.</strong>
-<a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>, for
+<a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a>, for
 example, does this.</td>
 <td style="text-align: right;"> 49% </td>
 <td style="text-align: right;"> 24% </td>
@@ -1168,11 +1168,11 @@ quality for individual bases.</td>
 </td>
 </tr>
 <tr class="even">
-<td><strong>Display markers from <a href="/wiki/CMap.1" title="CMap">CMap</a>
+<td><strong>Display markers from <a href="/wiki/CMap" title="CMap">CMap</a>
 in the genome browser.</strong>
 <p>See <a href="/wiki/Display_CMap_Markers_in_GBrowse"
 title="Display CMap Markers in GBrowse">this page</a> for an explanation
-of how this might be done in <a href="/wiki/GBrowse.1"
+of how this might be done in <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a>.</p></td>
 <td style="text-align: right;"> 22% </td>
 <td style="text-align: right;"> 18% </td>
@@ -1356,7 +1356,7 @@ here.
 - Geolocation within genomic space would be interesting but not so
   interested in ecological applications quite yet.
 - I think basic elements like speed to load a region in
-  [GBrowse](/wiki/GBrowse.1) and documentation of track
+  [GBrowse](/wiki/GBrowse) and documentation of track
   configuration and additional data type adding are core requirements
   that could be made better. Although I haven't used  it sounds like the
   performance element is being addressed.
@@ -1368,7 +1368,7 @@ here.
   with tiling arrays, our users, who are big fans of bioinformatics
   skills, they cannot open their files with conventional text tools. we
   intend to give them [GFF3](/wiki/GFF3) files so that they can
-  visualize the data on [GBrowse](/wiki/GBrowse.1) locally or on our
+  visualize the data on [GBrowse](/wiki/GBrowse) locally or on our
   platform. The problem is that we have to ensure the confidentiality of
   their data. That's the reason I am very interested in a better User
   management.
@@ -1402,7 +1402,7 @@ not in the list above?
 - bridging interface between the different tools, (common data format?)
 - Improve the chado examples for different use cases.
 - More customization of data tracks by end user, not just by the admin.
-  For example, in [GBrowse](/wiki/GBrowse.1) (v1.69) XY data plots,
+  For example, in [GBrowse](/wiki/GBrowse) (v1.69) XY data plots,
   generic track attributes may be adjusted by the end user, but not
   specific XY plot attributes, such as min and max values, etc.
 - The previous answer also counts for this one. *The previous answer
@@ -1448,32 +1448,32 @@ you try to use any of them, but couldn't get them to work?
 - I have always enjoyed working with the GMOD tools
 - <a href="/wiki/Gbrowse.1" class="mw-redirect" title="Gbrowse">Gbrowse</a>
   has been very useful for our visualization needs.
-  [JBrowse](/wiki/JBrowse.1) looks promising too and I hope to work
+  [JBrowse](/wiki/JBrowse) looks promising too and I hope to work
   with it more.
-- Installation of [GBrowse](/wiki/GBrowse.1) was relatively easy,
+- Installation of [GBrowse](/wiki/GBrowse) was relatively easy,
   [BioPerl](/wiki/BioPerl) was not that straightforward and I
   resorted to installing one module at a time. Some errors I couldn't
   figure out but they aren't relevant to GBrowse. It would be nice if
   the BioPerl core install could be made simpler like BioRuby (I know
   GMOD doesn't produce BioPerl but they are intimately tied).
-- used [CMap](/wiki/CMap.1) in the past and found it useful. currently
-  use [GBrowse](/wiki/GBrowse.1) and find it very useful
-- [GBrowse](/wiki/GBrowse.1) is overall a useful visualization tool,
+- used [CMap](/wiki/CMap) in the past and found it useful. currently
+  use [GBrowse](/wiki/GBrowse) and find it very useful
+- [GBrowse](/wiki/GBrowse) is overall a useful visualization tool,
   although not a replacement for other tools which offer a "higher
-  resolution" view of a genomic region (as [Apollo](/wiki/Apollo.1)
+  resolution" view of a genomic region (as [Apollo](/wiki/Apollo)
   does, although it is an editor). We've found Apollo to be very useful
   and is part of our core annotation work.
-- I have used [GBrowse](/wiki/GBrowse.1) and
-  [GBrowse_syn](/wiki/GBrowse_syn.1) , they are just great , but
+- I have used [GBrowse](/wiki/GBrowse) and
+  [GBrowse_syn](/wiki/GBrowse_syn) , they are just great , but
   proper tutorial for gbrowse_syn should be there having all the minor
   details which may cause problem for beginners .
 - It's great, I only tried a couple (or three?) and I always find great
   admin documentation. I hope to be in a GMOD meeting to unlock the
   complete power of GMOD for my lab.
 - We still have problems installing and configuring the tools (*i.e.*
-  [CMap](/wiki/CMap.1) and [GBrowse](/wiki/GBrowse.1))
+  [CMap](/wiki/CMap) and [GBrowse](/wiki/GBrowse))
   documentation could be improved.
-- I would like [JBrowse](/wiki/JBrowse.1) to be better supported and
+- I would like [JBrowse](/wiki/JBrowse) to be better supported and
   developed... I think this will be the future way of browser, although
   it looks a little clunky at the moment...
 - Help desk seems to be very active. I am very happy with that. Thanks
@@ -1485,13 +1485,13 @@ If you have any additional feedback, questions, or information you would
 like to provide, please tell us here.
 
 - Please better documentation and support for additional glyphs in
-  [Apollo](/wiki/Apollo.1).
-- The [GBrowse](/wiki/GBrowse.1) mailing list has been very helpful
+  [Apollo](/wiki/Apollo).
+- The [GBrowse](/wiki/GBrowse) mailing list has been very helpful
   and questions are usually answered very quickly, thanks!
 - Well... I really wish there was better integration between
-  [BioMart](/wiki/BioMart) and [GBrowse](/wiki/GBrowse.1).
+  [BioMart](/wiki/BioMart) and [GBrowse](/wiki/GBrowse).
   1.  I'd like to use [BioMart](/wiki/BioMart) to filter a set of
-      features which are displayed in a [GBrowse](/wiki/GBrowse.1)
+      features which are displayed in a [GBrowse](/wiki/GBrowse)
       track. What I envisage is a BioMart plugin with a configuration
       button which gives the full BioMart web interface Filter page. So
       I could have a GBrowse track showing *e.g.* Affy probesets with a
@@ -1500,21 +1500,21 @@ like to provide, please tell us here.
       changed easily in the plugin configuration. Currently I store such
       things in a [GFF](/wiki/GFF) database and have a fixed cutoff for
       display which I can't (easily) change.
-  2.  I'd like to be able to jump from a [GBrowse](/wiki/GBrowse.1)
+  2.  I'd like to be able to jump from a [GBrowse](/wiki/GBrowse)
       panel to a [BioMart](/wiki/BioMart) query in which the genomic
       location has automatically been added as filters. (Actually this
       is not too hard to implement but maybe there's a neat way to do
       it)
-- [CMap](/wiki/CMap.1) installation instructions sucks.
+- [CMap](/wiki/CMap) installation instructions sucks.
 - I love the fact that GMOD cares - for end users and programmers.
   Whenever I have had problems I have experienced very helpful advice
   and quick response times. Just the fact that you \*do\* this survey
   shows that you guys care. I would love to see more funding for generic
   programming in the bioinformatics sector.
-- [GBrowse](/wiki/GBrowse.1) prerequisites should be in form of
+- [GBrowse](/wiki/GBrowse) prerequisites should be in form of
   compact package.
 - Having only recently come on board in using
-  [GBrowse](/wiki/GBrowse.1), I have found it really difficult to
+  [GBrowse](/wiki/GBrowse), I have found it really difficult to
   set up in particular, but also to use in correctly visualising data in
   [GFF3](/wiki/GFF3) format. I have found that it appears to
   misinterpret a few key aspects of the GFF3 format, specifically I have
@@ -1526,6 +1526,6 @@ like to provide, please tell us here.
   experience far easier in my opinion.
 - Most of the GMOD-based packages are not really cute (very useful, very
   easy to use, but not exactly cute), why?
-- not really, but [CMap](/wiki/CMap.1) is brilliant!
-- Thank you VERY MUCH for [GBrowse](/wiki/GBrowse.1)!!! It is a
+- not really, but [CMap](/wiki/CMap) is brilliant!
+- Thank you VERY MUCH for [GBrowse](/wiki/GBrowse)!!! It is a
   fantastic tool that helped us making important discoveries!

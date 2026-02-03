@@ -6,7 +6,7 @@ title: "GBrowse syn Tutorial 2013"
 (Redirected from [GBrowse syn
 Tutorial](/wiki/GBrowse_syn_Tutorial)
 
-This tutorial on [GBrowse syn](/wiki/GBrowse_syn.1) was taught
+This tutorial on [GBrowse syn](/wiki/GBrowse_syn) was taught
 by [Sheldon McKay](/wiki/User:Mckays) as part of the [2013 GMOD
 Summer School](/wiki/2013_GMOD_Summer_School).
 
@@ -16,8 +16,8 @@ The starting image for this tutorial is **2013 GMOD start day 4
 - If you are not using the Amazon EC2 instance, the system paths may
   vary from those described below.
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
-[GBrowse](/wiki/GBrowse.1)-based
+[GBrowse_syn](/wiki/GBrowse_syn) is a
+[GBrowse](/wiki/GBrowse)-based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species. It is included with
@@ -28,7 +28,7 @@ the standard GBrowse package (version 1.69 and later).
 ### A Note on Whole Genome Alignments
 
 The focus of the section of the course is on dealing with alignment or
-synteny data and using [GBrowse_syn](/wiki/GBrowse_syn.1).
+synteny data and using [GBrowse_syn](/wiki/GBrowse_syn).
 However, how to generate whole genome alignments, identify orthologous
 regions, etc., are the subject of considerable interest, so some
 background reading is listed below:
@@ -56,10 +56,10 @@ background reading is listed below:
 There is detailed documentation on the GMOD wiki for how to install,
 configure and use GBrowse_syn. To get started, browse these pages:
 
-- [GBrowse_syn overview](/wiki/GBrowse_syn.1)
-- [Installation](/wiki/GBrowse_syn.1#Installation)
+- [GBrowse_syn overview](/wiki/GBrowse_syn)
+- [Installation](/wiki/GBrowse_syn#Installation)
 - [Configuration](/wiki/GBrowse_syn_Configuration)
 - [Alignment Data](/wiki/GBrowse_syn_Database)
 - [The user interface](/wiki/GBrowse_syn_Help)
 - [Presentations and
-  workshops](/wiki/GBrowse_syn.1#Presentations_and_Workshops)
+  workshops](/wiki/GBrowse_syn#Presentations_and_Workshops)

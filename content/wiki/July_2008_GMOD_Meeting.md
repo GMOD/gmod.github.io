@@ -125,13 +125,13 @@ groups.
 
 ## July 16
 
-| Time                                                     | Topic                                                           | Who                                                    | Presentation                                                                                                                     | -------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 9:00                                                     | Introductions                                                   | [Scott Cain](/wiki/User:Scott)          | 9:30                                                     | The State of GMOD                                               | Scott Cain                                             | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt"               | class="internal" title="Gmod meeting 7 2008.ppt">PPT</a> | 10:10                                                    | break                                                           | 10:40                                                    | MediaWiki/[TableEdit](/wiki/TableEdit.1) Roundtripping    | [Jim Hu](/wiki/User:JimHu.1)            | 11:00                                                    | More MediaWiki enhancements                                     | [Sheldon McKay](/wiki/User:Mckays)     | [Links...](/wiki/User:Mckays#Links)                                                                              |                                                          |  Community Annotation | Lukas Mueller                                          | PDF unavailable                                                                                                                  |                                                          | WikiMods & Chado API                                            | Brad Arshinoff                                         | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/PerlChadoGMOD2008.pdf"                 | class="internal" title="PerlChadoGMOD2008.pdf">PDF</a>   | 11:30                                                    | Lunch                                                           | 1:30                                                     | [GMOD Help Desk](/wiki/GMOD_Help_Desk)               | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/HelpDeskGMOD2008.pdf" class="internal" |
+| Time                                                     | Topic                                                           | Who                                                    | Presentation                                                                                                                     | -------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | 9:00                                                     | Introductions                                                   | [Scott Cain](/wiki/User:Scott)          | 9:30                                                     | The State of GMOD                                               | Scott Cain                                             | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gmod_meeting_7_2008.ppt"               | class="internal" title="Gmod meeting 7 2008.ppt">PPT</a> | 10:10                                                    | break                                                           | 10:40                                                    | MediaWiki/[TableEdit](/wiki/TableEdit) Roundtripping    | [Jim Hu](/wiki/User:JimHu.1)            | 11:00                                                    | More MediaWiki enhancements                                     | [Sheldon McKay](/wiki/User:Mckays)     | [Links...](/wiki/User:Mckays#Links)                                                                              |                                                          |  Community Annotation | Lukas Mueller                                          | PDF unavailable                                                                                                                  |                                                          | WikiMods & Chado API                                            | Brad Arshinoff                                         | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/PerlChadoGMOD2008.pdf"                 | class="internal" title="PerlChadoGMOD2008.pdf">PDF</a>   | 11:30                                                    | Lunch                                                           | 1:30                                                     | [GMOD Help Desk](/wiki/GMOD_Help_Desk)               | [Dave Clements](/wiki/User:Clements) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/HelpDeskGMOD2008.pdf" class="internal" |
 
 title="HelpDeskGMOD2008.pdf">PDF</a> <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/HelpDeskGMOD2008.ppt" class="internal"
-title="HelpDeskGMOD2008.ppt">PPT</a> | 2:15 | Rearchitecting [Apollo](/wiki/Apollo.1) and the need for a database independent Biological API layer | Ed Lee | 2:50 | break | 3:20 | [InterMine](/wiki/InterMine) and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | Richard Smith | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/IntermineGMOD2008.pdf"
-class="internal" title="IntermineGMOD2008.pdf">PDF</a> | 3:50 | Show and Tell | "What I did with my Summer" | [CMap](/wiki/CMap.1) | [Ben Faga](/wiki/User:Faga) ## July 17
+title="HelpDeskGMOD2008.ppt">PPT</a> | 2:15 | Rearchitecting [Apollo](/wiki/Apollo) and the need for a database independent Biological API layer | Ed Lee | 2:50 | break | 3:20 | [InterMine](/wiki/InterMine) and <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> | Richard Smith | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b3/IntermineGMOD2008.pdf"
+class="internal" title="IntermineGMOD2008.pdf">PDF</a> | 3:50 | Show and Tell | "What I did with my Summer" | [CMap](/wiki/CMap) | [Ben Faga](/wiki/User:Faga) ## July 17
 
-| Time                                 | Topic                                                                                                      | Who                                                | Presentation                                                                                                                     | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | 9:00                                 | New things for [GBrowse](/wiki/GBrowse.1) 1.69                                                         | [Sheldon McKay](/wiki/User:Mckays) | GBrowse 2.0 and Roadmap                                                                                    | [Lincoln Stein](/wiki/User:Lstein) | 9:30                                 | New things for GBrowse 3.0                                                                                 | Ian Holmes                                         | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf" class="internal" | title="GBrowse3GMOD2008.pdf">PDF</a> | 10:00                                | break                                                                                                      | 10:30                                | The need for a computable common gene page ([Don Gilbert's proposal](/wiki/Common_Gene_Page)) | Scott Cain, Lincoln Stein                          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/Common_gene_page.ppt" class="internal" | title="Common gene page.ppt">PPT</a> | 11:30                                | Lunch                                                                                                      | 1:30                                 | More Show and Tell or a mini hackathon or go see Toronto                                                   |                                      | Traits at SGN                                                                                              | Lukas Mueller                                      | CellFrame                                                                                                  | Yunchen Gong                                       | Matching Gene Names to Articles at Xenbase                                                                 | Jeff Bowes                                         | [Django and Chado](/wiki/Chado_Django_HOWTO) - A user interface exploration                 | Victor de Jager                                    # Attendees
+| Time                                 | Topic                                                                                                      | Who                                                | Presentation                                                                                                                     | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | 9:00                                 | New things for [GBrowse](/wiki/GBrowse) 1.69                                                         | [Sheldon McKay](/wiki/User:Mckays) | GBrowse 2.0 and Roadmap                                                                                    | [Lincoln Stein](/wiki/User:Lstein) | 9:30                                 | New things for GBrowse 3.0                                                                                 | Ian Holmes                                         | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/GBrowse3GMOD2008.pdf" class="internal" | title="GBrowse3GMOD2008.pdf">PDF</a> | 10:00                                | break                                                                                                      | 10:30                                | The need for a computable common gene page ([Don Gilbert's proposal](/wiki/Common_Gene_Page)) | Scott Cain, Lincoln Stein                          | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/80/Common_gene_page.ppt" class="internal" | title="Common gene page.ppt">PPT</a> | 11:30                                | Lunch                                                                                                      | 1:30                                 | More Show and Tell or a mini hackathon or go see Toronto                                                   |                                      | Traits at SGN                                                                                              | Lukas Mueller                                      | CellFrame                                                                                                  | Yunchen Gong                                       | Matching Gene Names to Articles at Xenbase                                                                 | Jeff Bowes                                         | [Django and Chado](/wiki/Chado_Django_HOWTO) - A user interface exploration                 | Victor de Jager                                    # Attendees
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/GMOD2008Attendees.JPG" width="400"
@@ -181,7 +181,7 @@ height="148" alt="GMOD2008Attendees.JPG" />
     rel="nofollow">Wellcome Trust Sanger Institute</a>
 18. [Ed Lee](/wiki/User:Elee) -
     <a href="http://www.berkeleybop.org" class="external text"
-    rel="nofollow">BBOP</a> and [Apollo](/wiki/Apollo.1)
+    rel="nofollow">BBOP</a> and [Apollo](/wiki/Apollo)
 19. Suzi Lewis - BBOP
 20. Margie Manker -
     <a href="http://populargenetics.ca" class="external text"
@@ -290,7 +290,7 @@ System](/wiki/Community_Annotation_System)
 ### cas-utils 0.1
 
 cas-utils is a set of tools that tie together
-[GBrowse](/wiki/GBrowse.1), [Apollo](/wiki/Apollo.1) and
+[GBrowse](/wiki/GBrowse), [Apollo](/wiki/Apollo) and
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. This
 includes
 
@@ -310,7 +310,7 @@ class="external text" rel="nofollow">download</a>.
 ## TableEdit
 
 [Jim Hu](/wiki/User:JimHu.1) spoke about progress on
-[TableEdit](/wiki/TableEdit.1), currently at release 0.8.
+[TableEdit](/wiki/TableEdit), currently at release 0.8.
 
 - Now refuses edits until user entered HTML tags are closed, thus
   avoiding nasty side effects.
@@ -321,7 +321,7 @@ class="external text" rel="nofollow">download</a>.
 
 ## Apollo
 
-Ed Lee, lead developer for [Apollo](/wiki/Apollo.1) spoke about
+Ed Lee, lead developer for [Apollo](/wiki/Apollo) spoke about
 enhancements to Apollo that have happened since he started working on it
 last September:
 
@@ -347,7 +347,7 @@ implemented with Java references and collections.
 ## CMap
 
 [Ben Faga](/wiki/User:Faga) gave a talk on what's new in
-[CMap](/wiki/CMap.1). Some highlights:
+[CMap](/wiki/CMap). Some highlights:
 
 - CMap 1.0 came out in March 2008.
 - ribbon displays for syntenic blocks
@@ -358,7 +358,7 @@ implemented with Java references and collections.
 
 ## GBrowse
 
-Three talks gave us the [GBrowse](/wiki/GBrowse.1) roadmap. Talks
+Three talks gave us the [GBrowse](/wiki/GBrowse) roadmap. Talks
 covered the next incremental release (1.69), and the next two major
 releases (2 and 3).
 
@@ -366,7 +366,7 @@ releases (2 and 3).
 
 [Sheldon McKay](/wiki/User:Mckays) and [Lincoln
 Stein](/wiki/User:Lstein) spoke about recent enhancements to
-[GBrowse](/wiki/GBrowse.1). These features are available in the
+[GBrowse](/wiki/GBrowse). These features are available in the
 current development version ("stable") of GBrowse and will be included
 in the upcoming (some would say imminent) 1.69 release of GBrowse.
 
@@ -385,7 +385,7 @@ in the upcoming (some would say imminent) 1.69 release of GBrowse.
     server.
   - Data is transferred on the fly, as the user naviages the genome.
   - Can form chains of sharing.
-- [Galaxy](/wiki/Galaxy.1) Integration.
+- [Galaxy](/wiki/Galaxy) Integration.
   - Within Galaxy click on the get data link.
   - Lists data sources including BioMart and WormBase GBrowse.
 - Multiple Alignment Format (MAF) and conservation tracks.
@@ -413,12 +413,12 @@ existing GBrowse installations.
 
 ### GBrowse 3
 
-_GBrowse 3 was renamed [JBrowse](/wiki/JBrowse.1) after this
+_GBrowse 3 was renamed [JBrowse](/wiki/JBrowse) after this
 meeting._
 
 Ian Holmes presented his group's work on [GBrowse
-3](/wiki/JBrowse.1), a complete rewrite of
-[GBrowse](/wiki/GBrowse.1) using a Web 2.0 style interface. Mitch
+3](/wiki/JBrowse), a complete rewrite of
+[GBrowse](/wiki/GBrowse) using a Web 2.0 style interface. Mitch
 Skinner has done most of the coding work on this.
 
 Most tracks are now rendered in client using JavaScript. Tracks such as
@@ -766,14 +766,14 @@ what he is planning doing in the coming months.
     School](/wiki/2008_GMOD_Summer_School) with
     Scott, Ed, Ben, 25 students for 2 1/2 days
 - Components
-  - [MAKER](/wiki/MAKER.1) now part of GMOD.
+  - [MAKER](/wiki/MAKER) now part of GMOD.
   - [Phenote](/wiki/Phenote) is on its way.
 
 ### What's Planned
 
 #### GMOD User Directory
 
-Planning to [TableEdit](/wiki/TableEdit.1) to make parts of the
+Planning to [TableEdit](/wiki/TableEdit) to make parts of the
 GMOD web site be database driven. Plan on having the same core set of
 data and a web page for each user. The core data set will describe what
 components they use and how, and be implemented in TableEdit tables.
@@ -811,17 +811,17 @@ Dave will create a plan for
   - [Chado Documentation
     Reorganization](/wiki/Chado_Documentation_Reorganization)
     - Chado API doc
-  - [GBrowse](/wiki/GBrowse.1) doc, including cookbook and glyphs
+  - [GBrowse](/wiki/GBrowse) doc, including cookbook and glyphs
     page.
   - [Community Annotation
     System](/wiki/Community_Annotation_System)
-  - [TableEdit](/wiki/TableEdit.1)
+  - [TableEdit](/wiki/TableEdit)
   - Better document (and encourage tighter) integration between
-    [Galaxy](/wiki/Galaxy.1), [InterMine](/wiki/InterMine),
+    [Galaxy](/wiki/Galaxy), [InterMine](/wiki/InterMine),
     [BioMart](/wiki/BioMart) and the other GMOD components.
   - Tutorials - screencasts for sophisticad user interfaces, perhaps
-    [GBrowse](/wiki/GBrowse.1), [Apollo](/wiki/Apollo.1) and
-    [CMap](/wiki/CMap.1)
+    [GBrowse](/wiki/GBrowse), [Apollo](/wiki/Apollo) and
+    [CMap](/wiki/CMap)
 - Web site upgrade
   - New MediaWiki
   - TableEdit
@@ -908,12 +908,12 @@ please add it below.
   - Funding GMOD
   - GMOD and the Google Summer of Code in 2009?
   - The Chado Natural Diversity module
-  - [Galaxy](/wiki/Galaxy.1) Integration. [Galaxy](/wiki/Galaxy.1)
+  - [Galaxy](/wiki/Galaxy) Integration. [Galaxy](/wiki/Galaxy)
     already integrates with [BioMart](/wiki/BioMart), and the
     current (May 2008) development version of
-    [Galaxy](/wiki/Galaxy.1) integrates with the current (May 2008,
+    [Galaxy](/wiki/Galaxy) integrates with the current (May 2008,
     1.69 Beta, e.g. "stable") development version of
-    [GBrowse](/wiki/GBrowse.1). Once this goes to production in both
+    [GBrowse](/wiki/GBrowse). Once this goes to production in both
     Galaxy and GBrowse, should Galaxy work on integrating with other
     GMOD components such as
     <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> or

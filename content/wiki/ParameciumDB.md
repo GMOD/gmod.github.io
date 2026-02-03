@@ -253,7 +253,7 @@ style sheets to customize the ParameciumDB web interface.
 
 ### GBrowse
 
-[GBrowse](/wiki/GBrowse.1), the Generic Genome Browser, is used to
+[GBrowse](/wiki/GBrowse), the Generic Genome Browser, is used to
 display and query sequence annotation with a Bio::DB::SeqFeature::Store
 database.
 
@@ -261,7 +261,7 @@ database.
 
 ParameciumDB does not have paid curators. It currently relies on the
 community for annotation of the gene models. They use
-[Apollo](/wiki/Apollo.1) as their genome annotation editor.
+[Apollo](/wiki/Apollo) as their genome annotation editor.
 
 **See also:**
 
@@ -311,12 +311,12 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 
 ### Feedback
 
-- [GBrowse](/wiki/GBrowse.1) documentation is very good for
+- [GBrowse](/wiki/GBrowse) documentation is very good for
   Bio::DB::GFF but a little less so for Bio::DB::Das::Chado.
 - Chado's install documentation is not bad but requires investment.
 - [Turnkey](/wiki/Turnkey) is a wonderful tool and it should
   continue to be developed.
-- [Apollo](/wiki/Apollo.1) is a beautiful genome editor, though it is
+- [Apollo](/wiki/Apollo) is a beautiful genome editor, though it is
   complicated for a naive user.
 - [BioMart](/wiki/BioMart) seems to be a very powerful tool and is
   an invaluable addition to any MOD.

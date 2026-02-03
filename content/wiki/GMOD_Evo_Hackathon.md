@@ -127,13 +127,13 @@ class="external text" rel="nofollow">GMatchbox</a>
 Worked on establishing a common database backend and
 [JSON](/wiki/Glossary#JSON)-based API for comparative genomics
 data, using several visualization tools (including
-[JBrowse](/wiki/JBrowse.1) and
-[GBrowse_syn](/wiki/GBrowse_syn.1)) as targets. Will enable
+[JBrowse](/wiki/JBrowse) and
+[GBrowse_syn](/wiki/GBrowse_syn)) as targets. Will enable
 sharing of comparative data in multiple tools from multiple sources.
 <a href="https://www.nescent.org/wg_gmodevohackathon/GBrowse_syn2"
 class="external text" rel="nofollow">GBrowse_syn2</a>
-[GBrowse_syn](/wiki/GBrowse_syn.1) is built on and takes
-advantage of the [GBrowse](/wiki/GBrowse.1) genome browser code and
+[GBrowse_syn](/wiki/GBrowse_syn) is built on and takes
+advantage of the [GBrowse](/wiki/GBrowse) genome browser code and
 config files. However, it did not work well with GBrowse2, due to
 significant architectural changes. This group refactored GBrowse2 to
 naturally support GBrowse_syn. This work will also enable several other
@@ -143,7 +143,7 @@ GBrowse2 as well. Two participants also became core GBrowse_syn
 developers.
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
 class="external text" rel="nofollow">JBrowse_syn</a>
-This group set out to extend [JBrowse](/wiki/JBrowse.1) to be a
+This group set out to extend [JBrowse](/wiki/JBrowse) to be a
 comparative genomics browser. The group removed the existing "single
 genome" assumption from the code and successfully displayed several
 genomes in parallel. Several participants also became familiar with
@@ -177,7 +177,7 @@ This group focused on two outcomes, both relating to
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>. The first
 was a prototype Rails application that provided a web interface to the
 new [Natural
-Diversity](/wiki/Chado_Natural_Diversity_Module.1)
+Diversity](/wiki/Chado_Natural_Diversity_Module)
 module in Chado. This was built on top of the emerging [Chado on
 Rails](/wiki/Chado_on_Rails) project. The second was a better
 understanding, slight refactoring, and updated documentation for Chado's
@@ -185,7 +185,7 @@ phenotype module.
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Galaxy_and_HyPhy_Subgroup"
 class="external text" rel="nofollow">Galaxy + HyPhy</a>
-[Galaxy](/wiki/Galaxy.1) is both a workflow system and a means of
+[Galaxy](/wiki/Galaxy) is both a workflow system and a means of
 persisting computational pipelines and results. This group worked on
 improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
@@ -264,7 +264,7 @@ page.
 
 ## Viewing tools for comparative genomics data
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a popular GMOD component
+[GBrowse_syn](/wiki/GBrowse_syn) is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
 between genomes. It does not currently support the [next-generation
 sequencing (NGS)
@@ -289,8 +289,8 @@ base.
 
 The [GMOD toolkit](/wiki/GMOD_Components) at present does
 not include web-based alignment viewers, nor can the increasingly
-popular [JBrowse](/wiki/JBrowse.1) genome browser (the designated
-successor of [GBrowse](/wiki/GBrowse.1)) display multiple sequence
+popular [JBrowse](/wiki/JBrowse) genome browser (the designated
+successor of [GBrowse](/wiki/GBrowse)) display multiple sequence
 alignments. GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon

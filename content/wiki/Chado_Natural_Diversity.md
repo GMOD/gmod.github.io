@@ -7,7 +7,7 @@ title: "Chado Natural Diversity Module Working Group"
 Diversity](/wiki/Chado_Natural_Diversity)
 
 The **[Chado Natural Diversity
-Module](/wiki/Chado_Natural_Diversity_Module.1)
+Module](/wiki/Chado_Natural_Diversity_Module)
 Working Group** was established with the aim of getting the Chado
 Natural Diversity Module into the production version of
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.

@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/375px-GalaxyLogoBigger.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/GalaxyLogoBigger.png/500px-GalaxyLogoBigger.png 2x"
 width="250" height="89" alt="Galaxy" />
 
-This [Galaxy](/wiki/Galaxy.1) tutorial was presented by [James
+This [Galaxy](/wiki/Galaxy) tutorial was presented by [James
 Taylor](/wiki/User:JamesTaylor) at the [2010 GMOD Summer
 School -
 Americas](/wiki/2010_GMOD_Summer_School_-_Americas),
@@ -17,7 +17,7 @@ May 2010. The most recent Galaxy tutorial can be found at the
 title="Galaxy Tutorial">Galaxy Tutorial</a> page.
 
 This  walks you
-through setting up and running a [Galaxy](/wiki/Galaxy.1) server.
+through setting up and running a [Galaxy](/wiki/Galaxy) server.
 
   VMware](#VMware)
 - [Caveats](#Caveats)

@@ -3,7 +3,7 @@ title: "MotifFinder.pm"
 ---
 # MotifFinder.pm
 
-MotifFinder.pm is a [GBrowse](/wiki/GBrowse.1) plugin written by
+MotifFinder.pm is a [GBrowse](/wiki/GBrowse) plugin written by
 [Xiaoqi Shi](/wiki/User:Xshi). It finds sequence specific motifs
 using Position Weight Matrix and display results graphically as tracks
 in the genome browser.

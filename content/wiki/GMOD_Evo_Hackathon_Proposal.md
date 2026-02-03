@@ -149,7 +149,7 @@ page.
 
 ### Viewing tools for comparative genomics data
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a popular GMOD component
+[GBrowse_syn](/wiki/GBrowse_syn) is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
 between genomes. It does not currently support the next-generation
 sequencing (NGS) data increasingly available for comparative genomics
@@ -170,9 +170,9 @@ base.
 ### Visualization of phylogenetic data and trees
 
 The GMOD toolkit at present does not include web-based alignment
-viewers, nor can the increasingly popular [JBrowse](/wiki/JBrowse.1)
+viewers, nor can the increasingly popular [JBrowse](/wiki/JBrowse)
 genome browser (the designated successor of
-[GBrowse](/wiki/GBrowse.1)) display multiple sequence alignments.
+[GBrowse](/wiki/GBrowse)) display multiple sequence alignments.
 GMOD also lacks a phylogenetic tree widget.
 
 Implementing these from scratch would be far beyond a suitable hackathon
@@ -284,7 +284,7 @@ The following people comprise the organizing committee:
 - [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">The iPlant collaborative</a> and developer of
-  [GBrowse_syn](/wiki/GBrowse_syn.1))
+  [GBrowse_syn](/wiki/GBrowse_syn))
 - [Robert Buels](/wiki/User:RobertBuels) (Cornell
   University; <a href="http://solgenomics.net/" class="external text"
   rel="nofollow">Solanaceae Genomics Network (SGN)</a>)

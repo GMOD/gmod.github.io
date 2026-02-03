@@ -3,11 +3,11 @@ title: "GBrowse syn Help"
 ---
 # GBrowse syn Help
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
-[GBrowse](/wiki/GBrowse.1) based
+[GBrowse_syn](/wiki/GBrowse_syn) is a
+[GBrowse](/wiki/GBrowse) based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 viewer. This page provides help on using GBrowse_syn. See the
-[GBrowse_syn](/wiki/GBrowse_syn.1) page for other information on
+[GBrowse_syn](/wiki/GBrowse_syn) page for other information on
 GBrowse_syn.
 
   Section</span>](#Search_Section)

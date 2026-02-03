@@ -3,8 +3,8 @@ title: "GBrowse syn Tutorial 2011"
 ---
 # GBrowse syn Tutorial 2011
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) is a
-[GBrowse](/wiki/GBrowse.1)-based
+[GBrowse_syn](/wiki/GBrowse_syn) is a
+[GBrowse](/wiki/GBrowse)-based
 <a href="/wiki/Synteny" class="mw-redirect" title="Synteny">synteny</a>
 browser designed to display multiple genomes, with a central reference
 species compared to two or more additional species.  It is included with
@@ -69,7 +69,7 @@ Now point your browser to
 ## A Note on Whole Genome Alignments
 
 The focus of the section of the course is on dealing with alignment or
-synteny data and using [GBrowse_syn](/wiki/GBrowse_syn.1).
+synteny data and using [GBrowse_syn](/wiki/GBrowse_syn).
 However, how to generate whole genome alignments, identify orthologous
 regions, etc, are the subject of considerable interest, so some
 background reading is listed below:
@@ -98,12 +98,12 @@ There is detailed documentation on the GMOD wiki for how to install,
 configure and use GBrowse_syn. To get started, browse these pages:
 
 - <span class="pops">[GBrowse_syn
-  overview](/wiki/GBrowse_syn.1)</span>
-- <span class="pops">[Installation](/wiki/GBrowse_syn.1#Installation)</span>
+  overview](/wiki/GBrowse_syn)</span>
+- <span class="pops">[Installation](/wiki/GBrowse_syn#Installation)</span>
 - <span class="pops">[Configuration](/wiki/GBrowse_syn_Configuration)</span>
 - <span class="pops">[Alignment
   Data](/wiki/GBrowse_syn_Database)</span>
 - <span class="pops">[The user
   interface](/wiki/GBrowse_syn_Help)</span>
 - <span class="pops">[Presentations and
-  workshops](/wiki/GBrowse_syn.1#Presentations_and_Workshops)</span>
+  workshops](/wiki/GBrowse_syn#Presentations_and_Workshops)</span>

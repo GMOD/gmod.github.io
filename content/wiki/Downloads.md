@@ -21,12 +21,12 @@ package releases include:
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></td>
+<td><a href="/wiki/Apollo" title="Apollo">Apollo</a></td>
 <td><p><a href="http://apollo.berkeleybop.org/current/install.html"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/BLAST_Graphic_Viewer.1" title="BLAST Graphic Viewer">BLAST
+<td><a href="/wiki/BLAST_Graphic_Viewer" title="BLAST Graphic Viewer">BLAST
 Graphic Viewer</a></td>
 <td><p><a
 href="http://sourceforge.net/projects/gmod/files/blastGraphic/"
@@ -38,7 +38,7 @@ class="external text" rel="nofollow">Download</a></p></td>
 class="external text" rel="nofollow">Download</a></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/CMap.1" title="CMap">CMap</a></td>
+<td><a href="/wiki/CMap" title="CMap">CMap</a></td>
 <td><p><a href="http://sourceforge.net/projects/gmod/files/cmap/"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
@@ -49,24 +49,24 @@ href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id
 class="external text" rel="nofollow">Download</a></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
+<td><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></td>
 <td><p><a href="http://getgalaxy.org" class="external text"
 
 </tr>
 <tr class="odd">
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> and <a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> and <a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse syn</a></td>
 <td><p><a
 href="http://sourceforge.net/projects/gmod/files/Generic%20Genome%20Browser/"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/GO_Graphic_Viewer.1" title="GO Graphic Viewer">GO Graphic
+<td><a href="/wiki/GO_Graphic_Viewer" title="GO Graphic Viewer">GO Graphic
 Viewer</a></td>
 <td><p><a href="http://sourceforge.net/projects/gmod/files/GOView/"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 <td><p><a href="http://jbrowse.org/install/" class="external text"
 
 </tr>
@@ -77,35 +77,35 @@ href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id
 class="external text" rel="nofollow">Download</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td><p><a
 href="http://yandell.topaz.genetics.utah.edu/cgi-bin/maker_license.cgi"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway
+<td><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway
 Tools</a></td>
 <td><p><br />
 <a href="http://biocyc.org/download.shtml" class="external text"
 
 </tr>
 <tr class="odd">
-<td><a href="/wiki/SOBA.1" title="SOBA">SOBA</a></td>
-<td><p>See <a href="/wiki/SOBA.1" title="SOBA">SOBA</a> for details</p></td>
+<td><a href="/wiki/SOBA" title="SOBA">SOBA</a></td>
+<td><p>See <a href="/wiki/SOBA" title="SOBA">SOBA</a> for details</p></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<td><a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 <td><p><br />
 <a href="http://tripal.info/download" class="external text"
 
 </tr>
 <tr class="odd">
-<td><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></td>
+<td><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
 <td><p><a href="http://genomearchitect.org/webapollo/releases/"
 class="external text" rel="nofollow">Download</a></p></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/XORT.1" title="XORT">XORT</a></td>
+<td><a href="/wiki/XORT" title="XORT">XORT</a></td>
 <td><a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=148718"
 class="external text" rel="nofollow">Download</a></td>

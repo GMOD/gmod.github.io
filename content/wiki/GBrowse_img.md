@@ -45,7 +45,7 @@ be used as the destination of an \<img\> tag like this:
 The script can also be used to superimpose one or more external features
 onto the display, for example for the purpose of displaying BLAST hits,
 an STS or a knockout in the context of the genome. It is designed to use
-a URL-based API to draw or embed [GBrowse](/wiki/GBrowse.1) images
+a URL-based API to draw or embed [GBrowse](/wiki/GBrowse) images
 without loading the full genome browser interface. gbrowse_img can be
 used to embed Gbrowse images in other webpages or to create
 high-resolution images appropriate for publications.

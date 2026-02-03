@@ -175,13 +175,13 @@ Several people have expressed interest in tuning the Apollo ↔ Chado
 interaction. With that in mind, I would like to propose this goal: to
 produce a VMware image that has
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
-associated tools, [Apollo](/wiki/Apollo.1), and MediaWiki with
-[TableEdit](/wiki/TableEdit.1), with the point of producing a
+associated tools, [Apollo](/wiki/Apollo), and MediaWiki with
+[TableEdit](/wiki/TableEdit), with the point of producing a
 server that could be picked up and used for a nascent model organism
 database for use with community annotation.
 
 Other things that would make sense to put in the VMware image but are
-secondary to the goal are [GBrowse](/wiki/GBrowse.1) and
+secondary to the goal are [GBrowse](/wiki/GBrowse) and
 [GMODWeb](/wiki/GMODWeb). Other things that could be worked on
 during the hackathon are rebuilding rpm packages for biopackages.net,
 tuning [Modware](/wiki/Modware) for the newer Chado schema, and
@@ -221,10 +221,10 @@ More specific subgoals:
   release of Apollo (I'm betting yes)
 - A good example config that works with the dicty example database.
 
-**MediaWiki/[TableEdit](/wiki/TableEdit.1):**
+**MediaWiki/[TableEdit](/wiki/TableEdit):**
 
 - See [Table Edit at Hackathon
-  2007](/wiki/TableEdit.1#Table_Edit_at_Hackathon_2007)
+  2007](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
 
 All of this should be saved in the schema cvs, in the hackathon_2007
 directory:
@@ -243,7 +243,7 @@ possibilities. Please feel free to add more.
 [Apollo-Chado Integration at BovineBase: Bugs and
 Suggestions](/wiki/Apollo-Chado_Integration_at_BovineBase__Bugs_and_Suggestions)
 containing a list of bugs and suggestions from our developers and
-[Apollo](/wiki/Apollo.1) users, compiled during our construction of a
+[Apollo](/wiki/Apollo) users, compiled during our construction of a
 Chado\<-\>Apollo setup for the Bovine genome annotation effort.
 
 - Beginning work on Apollo-Ensembl round tripping
@@ -258,10 +258,10 @@ Chado\<-\>Apollo setup for the Bovine genome annotation effort.
 - Modify Apollo to annotate with GO terms and enable Chado round
   tripping of feature_cvterms
 - improving analysis plugins for chado via [Modware](/wiki/Modware)
-  or [GBrowse](/wiki/GBrowse.1)
+  or [GBrowse](/wiki/GBrowse)
 - performance tuning.
 - community [wiki development/wiki table editor
-  work](/wiki/TableEdit.1#Table_Edit_at_Hackathon_2007)
+  work](/wiki/TableEdit#Table_Edit_at_Hackathon_2007)
 
 # Preparation
 

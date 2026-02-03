@@ -3,7 +3,7 @@ title: "AlignTwoSequences.pm"
 ---
 # AlignTwoSequences.pm
 
-**AlignTwoSequences.pm** is a [GBrowse](/wiki/GBrowse.1)
+**AlignTwoSequences.pm** is a [GBrowse](/wiki/GBrowse)
 <a href="/wiki/Plugin" class="mw-redirect" title="Plugin">plugin</a>. The most
 extensive and up to date documentation is available from
 <a href="http://www.cpan.org/" class="external text"

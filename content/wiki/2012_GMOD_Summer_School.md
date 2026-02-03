@@ -57,7 +57,7 @@ The course covered the following topics in detail:
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
@@ -68,39 +68,39 @@ title="Chado Tutorial 2012">Tutorial</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
+<td><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></td>
 <td><a href="/wiki/Galaxy_Tutorial_2012"
 title="Galaxy Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AClements" title="User%253AClements">Dave Clements</a></td>
 <td><a href="http://galaxyproject.org/" class="external text"
 
 class="external text" rel="nofollow">Emory University</a><br />
-<a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></td>
+<a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<td><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 <td><a href="/wiki/GBrowse_Tutorial_2012"
 title="GBrowse Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse syn</a></td>
+<td><a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse syn</a></td>
 <td><a href="/wiki/GBrowse_syn_Tutorial_2012"
 title="GBrowse syn Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AMckays" title="User%253AMckays">Sheldon McKay</a></td>
 <td><a href="http://iplantcollaborative.org" class="external text"
 
 class="external text" rel="nofollow">CSHL</a><br />
-<a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a>, <a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></td>
+<a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a>, <a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="even">
 <td><a href="/wiki/GFF3" title="GFF3">GFF3</a></td>
@@ -110,55 +110,55 @@ title="GFF Tutorial 2012">Tutorial</a></td>
 <td><a href="http://oicr.on.ca/" class="external text"
 
 GMOD Project Coordinator; <a href="/wiki/Chado" class="mw-redirect"
-title="Chado">Chado</a>, <a href="/wiki/GBrowse.1"
+title="Chado">Chado</a>, <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 <td><a href="/wiki/JBrowse_Tutorial_2012" class="mw-redirect"
 title="JBrowse Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ARBuels" class="mw-redirect" title="User%253ARBuels">Robert
 Buels</a></td>
 <td><a href="http://berkeley.edu" class="external text"
 
-<a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></td>
+<a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td><a href="/wiki/MAKER_Tutorial_2012"
 title="MAKER Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
 <td><a href="http://utah.edu" class="external text"
 
-<a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/SOBA.1" title="SOBA">SOBA</a></td>
+<td><a href="/wiki/SOBA" title="SOBA">SOBA</a></td>
 <td><a href="/wiki/SOBA_Tutorial_2012"
 title="SOBA Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253ABmoore" title="User%253ABmoore">Barry Moore</a></td>
 <td><a href="http://www.utah.edu" class="external text"
 
-<a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 </tr>
 <tr class="even">
-<td><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<td><a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 <td><a href="/wiki/Tripal_Tutorial_(v1.0)"
 title="Tripal Tutorial (v1.0)">Tutorial</a></td>
 <td><a href="/wiki/User%253ASficklin" title="User%253ASficklin">Stephen
 Ficklin</a></td>
 <td><a href="http://www.wsu.edu" class="external text"
 
-<a href="/wiki/Tripal.1" title="Tripal">Tripal</a></td>
+<a href="/wiki/Tripal" title="Tripal">Tripal</a></td>
 </tr>
 <tr class="odd">
-<td><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></td>
+<td><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
 <td><a href="/wiki/WebApollo_Tutorial_2012"
 title="WebApollo Tutorial 2012">Tutorial</a></td>
 <td><a href="/wiki/User%253AElee" title="User%253AElee">Ed Lee</a></td>
 <td><a href="http://www.berkeleybop.org/" class="external text"
 
-<a href="/wiki/Apollo.1" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo.1"
+<a href="/wiki/Apollo" title="Apollo">Apollo</a>, <a href="/wiki/WebApollo"
 title="WebApollo">WebApollo</a></td>
 </tr>
 </tbody>
@@ -168,7 +168,7 @@ title="WebApollo">WebApollo</a></td>
 
 The 2012 Summer School used Amazon Web Services to host virtual GMOD
 instances containing the software and demo data used during the course.
-See [GMOD in the Cloud](/wiki/Cloud.1) for more information on the
+See [GMOD in the Cloud](/wiki/Cloud) for more information on the
 GMOD Amazon Machine Images available to the public. The tutorials used
 on the course are available on this wiki for interested persons to work
 through.

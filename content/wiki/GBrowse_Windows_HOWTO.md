@@ -28,7 +28,7 @@ suggest you try Linux (as a virtual machine if necessary) instead.
 ## Abstract
 
 This HOWTO describes a method for installing
-[GBrowse](/wiki/GBrowse.1) version 1.x (currently 1.70) on Windows;
+[GBrowse](/wiki/GBrowse) version 1.x (currently 1.70) on Windows;
 GBrowse 2.0 is not supported on Windows.
 
 ## Windows Installation
@@ -117,7 +117,7 @@ ActiveState and/or Apache!). A few notes:
 - The script requires the LWP Perl package be installed, but it comes by
   default with ActiveState Perl 5.8.
 - The script also works for Linux and MacOS as long as it is run as root
-  (e.g. with `sudo`). Please see the [GBrowse](/wiki/GBrowse.1)
+  (e.g. with `sudo`). Please see the [GBrowse](/wiki/GBrowse)
   install doc for more information on what this script is doing.
 - *This is out of date, as the bulk loader doesn't yet support pulling
   GBrowse from git.* If you want to use the `-d`, `--bioperl_dev`, or

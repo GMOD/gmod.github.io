@@ -106,19 +106,19 @@ collaborative announcement dissemination</a>**
   href="http://www.slideshare.net/josephrossetto/drupal-atemblebi-gmod-18857285"
   class="external text" rel="nofollow">Slides</a>
 
-**[JBrowse](/wiki/JBrowse.1)** ([Gregg
+**[JBrowse](/wiki/JBrowse)** ([Gregg
 Helt](/wiki/User:GreggHelt2))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/33/GMOD2013_JBrowse.pdf" class="internal"
   title="GMOD2013 JBrowse.pdf">Slides</a>
 
-**[WebApollo](/wiki/WebApollo.1)** ([Moni
+**[WebApollo](/wiki/WebApollo)** ([Moni
 Munoz-Torres](/wiki/User:Moni))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9f/GMOD2013_WebApollo.pptx"
   class="internal" title="GMOD2013 WebApollo.pptx">Slides</a>
 
-**[Galaxy](/wiki/Galaxy.1)** Project Update ([Dave
+**[Galaxy](/wiki/Galaxy)** Project Update ([Dave
 Clements](/wiki/User:Clements))
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/GMOD2013_GalaxyUpdate.pdf"
@@ -142,7 +142,7 @@ Harris](/wiki/User:Tharris))
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a7/GMOD2013_GeneOntology.pptx"
   class="internal" title="GMOD2013 GeneOntology.pptx">Slides</a>
 
-**[Tripal](/wiki/Tripal.1)** (Stephen Ficklin)
+**[Tripal](/wiki/Tripal)** (Stephen Ficklin)
 
 **<a href="http://www.arabidopsis.org/about/plain.jsp"
 class="external text" rel="nofollow">TAIR PLAIN</a>** (Bob Muller)

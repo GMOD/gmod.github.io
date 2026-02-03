@@ -7,7 +7,7 @@ title: "GBrowse Configuration/Balloons"
 Tips](/wiki/GBrowse_Balloon_Tips)
 
 This article describes **popup balloons** and how to configure them in
-[GBrowse](/wiki/GBrowse.1).
+[GBrowse](/wiki/GBrowse).
 
 For the main GBrowse configuration article, see:
 

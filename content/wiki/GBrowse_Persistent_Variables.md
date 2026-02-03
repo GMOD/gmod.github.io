@@ -3,7 +3,7 @@ title: "GBrowse Persistent Variables"
 ---
 # GBrowse Persistent Variables
 
-[GBrowse](/wiki/GBrowse.1) uses a few persistent variables to store
+[GBrowse](/wiki/GBrowse) uses a few persistent variables to store
 data for a user. The following is an explanation of the structure of the
 commonly-used ones:
 

@@ -6,7 +6,7 @@ title: "SOBA Tutorial 2012"
 (Redirected from [SOBA
 Tutorial](/wiki/SOBA_Tutorial)
 
-This [SOBA](/wiki/SOBA.1) tutorial was taught as part of the [2012 GMOD
+This [SOBA](/wiki/SOBA) tutorial was taught as part of the [2012 GMOD
 Summer School](/wiki/2012_GMOD_Summer_School) and
 the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).

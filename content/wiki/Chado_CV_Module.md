@@ -727,7 +727,7 @@ definition as above.
   </cvterm_relationship>
 ```
 
-The above assumes [XORT](/wiki/XORT.1) macro IDs defined for
+The above assumes [XORT](/wiki/XORT) macro IDs defined for
 _GO\_\_plasma_membrane_ and _CL\_\_spermatocyte_.
 
 Allow post-coordinated terms places a greater burden on applications

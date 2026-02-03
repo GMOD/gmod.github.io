@@ -8,8 +8,8 @@ title: "Bioperl Pipeline"
 > This page is included only for reference purposes.
 
 See <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
-[Galaxy](/wiki/Galaxy.1), [Genome grid](/wiki/Genome_grid),
-[DIYA](/wiki/DIYA) and [MAKER](/wiki/MAKER.1) for currently supported
+[Galaxy](/wiki/Galaxy), [Genome grid](/wiki/Genome_grid),
+[DIYA](/wiki/DIYA) and [MAKER](/wiki/MAKER) for currently supported
 workflow and analysis packages.
 
   Description](#Description)

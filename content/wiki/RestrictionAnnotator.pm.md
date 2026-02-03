@@ -3,7 +3,7 @@ title: "RestrictionAnnotator.pm"
 ---
 # RestrictionAnnotator.pm
 
-**RestrictionAnnotator.pm** is a [GBrowse](/wiki/GBrowse.1)
+**RestrictionAnnotator.pm** is a [GBrowse](/wiki/GBrowse)
 <a href="/wiki/Plugin" class="mw-redirect" title="Plugin">plugin</a>. The most
 extensive and up to date documentation is available from
 <a href="http://www.cpan.org/" class="external text"

@@ -212,7 +212,7 @@ should also support selection on a wide variety of facets in the data.
 For example, "show me regions that have these *n* characteristics from
 the *m* detected characteristics of the current region." Selection can
 be made arbitrarily complex by seamless integration with analysis tools
-such as [Galaxy](/wiki/Galaxy.1), [BioMart](/wiki/BioMart), and
+such as [Galaxy](/wiki/Galaxy), [BioMart](/wiki/BioMart), and
 [InterMine](/wiki/InterMine).
 
 #### Inspiration
@@ -222,13 +222,13 @@ learn from them. The group also discussed the UCSC Cancer Genome
 Browser, and walked through the video tutorial. There was much
 discussion on gene sets, and viewing regions that have many
 characteristics in common. (Might be able to use
-[GBrowse_syn](/wiki/GBrowse_syn.1) code to show related
+[GBrowse_syn](/wiki/GBrowse_syn) code to show related
 regions.) The UCSC cancer genome browser has a very useful option to
 sort their "wiggleplots" according to some aspect of the sample that
 each row represents, so that any trends in the heatplot for example, of
 expression or chromosome rearrangements, can be more easily seen.
 Imagine a TopoView glyph with the ability to reorder data.
-[GBrowse](/wiki/GBrowse.1) might be able to do something like that
+[GBrowse](/wiki/GBrowse) might be able to do something like that
 with subtracks.
 
 One participant suggested using a
@@ -236,7 +236,7 @@ One participant suggested using a
 
 regions. Another suggested gaining inspiration from current network
 tools such as Cytoscape or [Pathway
-Tools](/wiki/Pathway_Tools.1). Muave, a comparative genomics
+Tools](/wiki/Pathway_Tools). Muave, a comparative genomics
 browser was also mentioned; Flickr for genomes was also suggested.
 Ortholog databases such as OMA, Eggnog, ergononome, hovergen,
 inparanoid, orthodb, and phylomeDB can also provide guidance. An Amazon

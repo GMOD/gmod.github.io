@@ -35,7 +35,7 @@ Meeting](/wiki/March_2011_GMOD_Meeting).
 | Topic | Proposers and/or Organizers | Time | Comments |
 |----|----|----|----|
 | [GMOD Evo Hackathon Followup](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) | [Duke Leto](/wiki/User:Dukeleto) | TBD | [Followup meeting](/wiki/GMOD_Evo_Hackathon#March_2011_Satellite) to the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon) held at NESCent in November 2011. |
-| [Extending Embedding and Customizing JBrowse](/wiki/Extending_Embedding_and_Customizing_JBrowse) | [Mitch Skinner](/wiki/User:MitchSkinner) | TBD | [JBrowse](/wiki/JBrowse.1) has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](/wiki/Glossary#API), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. |
+| [Extending Embedding and Customizing JBrowse](/wiki/Extending_Embedding_and_Customizing_JBrowse) | [Mitch Skinner](/wiki/User:MitchSkinner) | TBD | [JBrowse](/wiki/JBrowse) has a few different extension points, but they're not (yet) well-documented or widely used. The GMOD meeting would be a good time to review those [APIs](/wiki/Glossary#API), relate them to the things that people want to do with them, discuss any potential changes or new APIs to support specific use cases, and potentially start to implement an extension. |
 | [GMOD Web services toolkit](/wiki/GMOD_RPC_API) | [Josh Goodman](/wiki/User:Jogoodma) | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](/wiki/GMOD_RPC_API).~~ |
 | [GMOD in the Sequencing Center](/wiki/GMOD_in_the_Sequencing_Center) | [Chris Hemmerich](/wiki/User:Chemmeri), [Dave Clements](/wiki/User:Clements) | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
 
@@ -73,15 +73,15 @@ active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
-[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
-[Apollo](/wiki/Apollo.1) and [MAKER](/wiki/MAKER.1) for genome
-annotation, [GBrowse_syn](/wiki/GBrowse_syn.1) and
-[CMap](/wiki/CMap.1) for comparative genomics visualization,
+[GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse) (and
+[WebGBrowse](/wiki/WebGBrowse)) for genome browsing,
+[Apollo](/wiki/Apollo) and [MAKER](/wiki/MAKER) for genome
+annotation, [GBrowse_syn](/wiki/GBrowse_syn) and
+[CMap](/wiki/CMap) for comparative genomics visualization,
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](/wiki/Galaxy.1) and
+[Galaxy](/wiki/Galaxy) and
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](/wiki/ISGA)) for data analysis.
 

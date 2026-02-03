@@ -8,14 +8,14 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/375px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/500px-GBrowseLogo.png 2x"
 width="250" height="59" alt="GBrowse" />
 
-This [GBrowse Next Generation Sequencing](/wiki/GBrowse.1) tutorial
+This [GBrowse Next Generation Sequencing](/wiki/GBrowse) tutorial
 was presented by [Dave Clements](/wiki/User:Clements) at the
 [Bioinformatics Australia 2009 (BA2009)](/wiki/BA2009), October 2009.
 The most recent GBrowse tutorial can be found at the [GBrowse
 Tutorial](/wiki/GBrowse_Tutorial) page.
 
 This  walks you
-through how to configure the [GBrowse](/wiki/GBrowse.1) genome
+through how to configure the [GBrowse](/wiki/GBrowse) genome
 browser to display [Next Generation
 Sequencing](/wiki/Next_Generation_Sequencing)
 (NGS) data using the

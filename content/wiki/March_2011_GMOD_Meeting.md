@@ -42,7 +42,7 @@ The next meeting will be held in [October
 <a href="http://oicr.on.ca/" class="external text"
 
 Toronto, Canada. OICR is the current home of both
-[GBrowse](/wiki/GBrowse.1) and [BioMart](/wiki/BioMart).
+[GBrowse](/wiki/GBrowse) and [BioMart](/wiki/BioMart).
 
   GMOD</span>](#About_GMOD)
 - [Registration](#Registration)
@@ -73,15 +73,15 @@ active community of software developers and biologists addressing common
 challenges with their data.
 
 The GMOD suite includes widely used tools such as
-[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1) (and
-[WebGBrowse](/wiki/WebGBrowse.1)) for genome browsing,
-[Apollo](/wiki/Apollo.1) and [MAKER](/wiki/MAKER.1) for genome
-annotation, [GBrowse_syn](/wiki/GBrowse_syn.1) and
-[CMap](/wiki/CMap.1) for comparative genomics visualization,
+[GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse) (and
+[WebGBrowse](/wiki/WebGBrowse)) for genome browsing,
+[Apollo](/wiki/Apollo) and [MAKER](/wiki/MAKER) for genome
+annotation, [GBrowse_syn](/wiki/GBrowse_syn) and
+[CMap](/wiki/CMap) for comparative genomics visualization,
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
 [BioMart](/wiki/BioMart) and [InterMine](/wiki/InterMine) for
 data integration, management, and querying, and
-[Galaxy](/wiki/Galaxy.1) and
+[Galaxy](/wiki/Galaxy) and
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](/wiki/ISGA)) for data analysis.
 
@@ -212,13 +212,13 @@ GMOD Spring Training</a></strong>
 A week long hands-on course on GMOD Component installation,
 configuration, and usage. The course will cover these components in
 detail:
-<p><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a> • <a href="/wiki/MAKER.1" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse.1"
+<p><strong><a href="/wiki/Apollo" title="Apollo">Apollo</a> • <a href="/wiki/MAKER" title="MAKER">MAKER</a> • <a href="/wiki/GBrowse"
 title="GBrowse">GBrowse</a> • <a href="/wiki/Chado" class="mw-redirect"
 title="Chado">Chado</a> • <a href="/wiki/InterMine"
-title="InterMine">InterMine</a> • <a href="/wiki/JBrowse.1"
-title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn.1"
-title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal.1"
-title="Tripal">Tripal</a> • <a href="/wiki/Galaxy.1"
+title="InterMine">InterMine</a> • <a href="/wiki/JBrowse"
+title="JBrowse">JBrowse</a> • <a href="/wiki/GBrowse_syn"
+title="GBrowse syn">GBrowse_syn</a> • <a href="/wiki/Tripal"
+title="Tripal">Tripal</a> • <a href="/wiki/Galaxy"
 title="Galaxy">Galaxy</a></strong></p>
 </td>
 <td></td>
@@ -288,12 +288,12 @@ please see the [confirmed speakers list](#Confirmed_Speakers).
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
-| 9:15 | [JBrowse](/wiki/JBrowse.1) Project Update | [Mitch Skinner](/wiki/User:MitchSkinner) | <a |
+| 9:15 | [JBrowse](/wiki/JBrowse) Project Update | [Mitch Skinner](/wiki/User:MitchSkinner) | <a |
 href="http://jbrowse.org/info/GMOD_Mar_2011/JBrowse_GMOD_Meeting_2011.pdf"
-class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](/wiki/Tripal.1) Project Update | Lacey Sanderson | <a
+class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](/wiki/Tripal) Project Update | Lacey Sanderson | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/LaceySanderson_Tripal_GMODAmericas2011.pptx"
 
-title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](/wiki/Galaxy.1) for high-throughput sequence data analysis | [Dave Clements](/wiki/User:Clements) | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
+title="LaceySanderson Tripal GMODAmericas2011.pptx">Slides</a> | 10:45 | Break | 11:10 | [Galaxy](/wiki/Galaxy) for high-throughput sequence data analysis | [Dave Clements](/wiki/User:Clements) | 12:00 | Lunch | 1:00 | Implementation of RNA-Seq data in <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> at FlyBase | Dave Emmert | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/52/DaveEmmert_RNAseq_Tripal_GMODAmericas2011.pdf"
 
 title="DaveEmmert RNAseq Tripal GMODAmericas2011.pdf">Slides</a> | 2:00 | Lightning talks: |  | <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | [Chris Hemmerich](/wiki/User:Chemmeri) | [ISGA](/wiki/ISGA) | [Chris Hemmerich](/wiki/User:Chemmeri) | Coffee break |  | [Modware](/wiki/Modware): Its latest development using Moose and [Bio::Chado::Schema](/wiki/Bio_Chado_Schema) | Siddhartha Basu | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/March2011Modware.ppt" class="internal"
@@ -314,7 +314,7 @@ Meetings](/wiki/Satellite_Meetings_-_GMOD_Americas_2011).
 | Siddhartha | Basu | Northwestern university |
 | [Robert](/wiki/User:RobertBuels) | [Buels](/wiki/User:RobertBuels) | <a href="http://solgenomics.net" class="external text" |
 
-University</a>, [Galaxy](/wiki/Galaxy.1) | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](/wiki/User:Chemmeri) | [Hemmerich](/wiki/User:Chemmeri) | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](/wiki/User:Alexkalderimis) | [Kalderimis](/wiki/User:Alexkalderimis) | <a href="http://www.cam.ac.uk" class="external text"
+University</a>, [Galaxy](/wiki/Galaxy) | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](/wiki/User:Chemmeri) | [Hemmerich](/wiki/User:Chemmeri) | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](/wiki/User:Alexkalderimis) | [Kalderimis](/wiki/User:Alexkalderimis) | <a href="http://www.cam.ac.uk" class="external text"
 
 # Help Get the Word Out
 

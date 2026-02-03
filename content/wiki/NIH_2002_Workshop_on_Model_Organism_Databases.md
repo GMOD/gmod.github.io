@@ -453,7 +453,7 @@ would deal with the following issues with respect to the focus domain:
 - Data format standards.
 - Transport standards.
 - The task of each workshop would be to develop a plan for
-  standardization of the focus domain, and a schedule for implementating
+  standardization of the focus domain, and a schedule for implementing
   the plan. Workshop attendees would meet again at subsequent
   domain-focused workshops in order to assess progress towards
   development of the components and to test their interoperability.

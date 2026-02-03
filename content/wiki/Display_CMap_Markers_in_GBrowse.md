@@ -12,8 +12,8 @@ Meeting](/wiki/August_2009_GMOD_Meeting) titled:
 
 From Frederic and Erick:
 
-We were thinking about having [CMap](/wiki/CMap.1) features displayed
-in [GBrowse](/wiki/GBrowse.1) in one or more dedicated tracks. Using
+We were thinking about having [CMap](/wiki/CMap) features displayed
+in [GBrowse](/wiki/GBrowse) in one or more dedicated tracks. Using
 now the fact that GBrowse can be connected to multiple datasources, the
 GBrowse config file could be for example:
 

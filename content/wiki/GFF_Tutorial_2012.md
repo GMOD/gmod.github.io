@@ -287,7 +287,7 @@ genomic coordinates. It has an ID of "mrna0001" and a human-readable
 name of "sonichedgehog" (note that the ID and the Name are **not** the
 same thing). This is followed by five exon features, each of which is
 linked to the mRNA using a Parent tag. When
-[GBrowse](/wiki/GBrowse.1) displays this transcript, it will display
+[GBrowse](/wiki/GBrowse) displays this transcript, it will display
 each of the exons linked together by a solid line. The entire set can be
 found by searching for the name "sonichedgehog."
 
@@ -386,7 +386,7 @@ named "EDEN" which has three alternatively-spliced mRNA transcripts:
 
 We start with a feature of type "gene" with the ID "EDEN". This has
 three alternative splice forms named EDEN.1, EDEN.2 and EDEN.3. To tell
-[GBrowse](/wiki/GBrowse.1) that each of these splice forms are part
+[GBrowse](/wiki/GBrowse) that each of these splice forms are part
 of the same gene, we give each one a Parent attribute of "EDEN"
 corresponding to the ID of the parent gene. Now consider mRNA EDEN.1. It
 has a five_prime_UTR feature, a three_prime_UTR feature, and four CDS
@@ -444,7 +444,7 @@ agt830.5 aligns to genomic contig ctg123 such that positions 1 through
 
 Using the \##FASTA section of the GFF3 file, you can specify the
 sequence of the ESTs as well as of the contig, and
-[GBrowse](/wiki/GBrowse.1) will display the DNA and/or protein
+[GBrowse](/wiki/GBrowse) will display the DNA and/or protein
 sequences in the appropriate contexts.
 
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
@@ -483,7 +483,7 @@ single line per experiment like this one:
     ctg123 . microarray_oligo 1 50000 . . . Name=example;wigfile=/usr/data/ctg123.Expt1.wig
 
 The .wig file is created and managed using a script called
-`wiggle2gff3.pl` that comes with [GBrowse](/wiki/GBrowse.1).
+`wiggle2gff3.pl` that comes with [GBrowse](/wiki/GBrowse).
 Instructions on how to use this script is described in the <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/docs/tutorial/tutorial.html?pathrev=stable"
 class="external text" rel="nofollow">GBrowse Administration Tutorial</a>.

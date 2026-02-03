@@ -9,8 +9,6 @@ Status
 - **Active** development
 - **Active** support
 
-Resources
-
 - <a href="http://sybil.sourceforge.net/" class="external text"
   rel="nofollow">Home Page</a>
 - <a href="http://sybil.sourceforge.net/downloads.html"

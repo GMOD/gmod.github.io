@@ -6852,13 +6852,13 @@ SELECT fp.VALUE
   WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id = 1 AND
     fp_type.name = &#39;derived_attributed_breakpoint&#39; AND f.feature_id = fp.feature_id AND
     fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND p.uniquename lik &#39;FBrf%&#39; UNION
+    fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39; UNION
 SELECT fp.VALUE, miniref AS citation
   FROM feature f, featureprop fp, cvterm fp_type , featureprop_pun fpp, pub p
   WHERE f.uniquename LIKE &#39;FBab%&#39; AND f.organism_id != 1 AND
     fp_type.name = &#39;non_Dmel_location&#39; AND f.feature_id = fp.feature_id AND
     fp.type_id = fp_type.cvterm_id AND fp.featureprop_id = fpp.featureprop_id AND
-    fpp.pub_id = p.pub_id AND p.uniquename lik &#39;FBrf%&#39;;</code></pre>
+    fpp.pub_id = p.pub_id AND p.uniquename like &#39;FBrf%&#39;;</code></pre>
 
 </td>
 </tr>

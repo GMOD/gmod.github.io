@@ -25,7 +25,7 @@ title: "XORT Dumper HOWTO"
 
 This HOWTO describes how to dump data from
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> into [Chado
-XML](/wiki/Chado_XML) using [XORT](/wiki/XORT.1). It is a fairly
+XML](/wiki/Chado_XML) using [XORT](/wiki/XORT). It is a fairly
 high level introduction to XORT dumpspecs. In this HOWTO you will be
 taken through setting up a Chado database using Ubuntu 8.04, installing
 XORT, and running some simple dumpspecs. The dumpspecs used herein start
@@ -151,7 +151,7 @@ we only want to dump what we explicitly define in the dumpspec. The
 tree in the XML is to be used to restrict the rows returned by XORT.
 Here we are using a simple exact value comparison test but you can also
 use 'like' or regular expression comparison operators. Please refer to
-the [XORT](/wiki/XORT.1) documentation for a full list of supported
+the [XORT](/wiki/XORT) documentation for a full list of supported
 search operators. The SQL version of this dumpspec looks like this:
 
 ``` de1
@@ -293,7 +293,7 @@ to the feature table to fetch the CDS.
 
 ## More Information
 
-See the [XORT](/wiki/XORT.1) page.
+See the [XORT](/wiki/XORT) page.
 
 Please send questions to the GMOD developers list:
 

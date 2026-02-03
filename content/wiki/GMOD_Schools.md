@@ -44,6 +44,6 @@ Components](/wiki/GMOD_Components).
 
 | Date | School | Location |
 |----|----|----|----|
-| 2014 | February 26-28 | [GMOD Malaysia 2014](/wiki/GMOD_Malaysia_2014.1) | Kuala Lumpur, Malaysia |
-|  | May 19-23 | [GMOD Online Training 2014](/wiki/GMOD_Online_Training_2014.1) | Online! |
+| 2014 | February 26-28 | [GMOD Malaysia 2014](/wiki/GMOD_Malaysia_2014) | Kuala Lumpur, Malaysia |
+|  | May 19-23 | [GMOD Online Training 2014](/wiki/GMOD_Online_Training_2014) | Online! |
 | 2013 | July 19-23 | [2013 GMOD Summer School](/wiki/2013_GMOD_Summer_School) | <a href="http://www.nescent.org" class="external text" |

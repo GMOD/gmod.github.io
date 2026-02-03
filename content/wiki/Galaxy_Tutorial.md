@@ -7,7 +7,7 @@ title: "Galaxy Tutorial 2013"
 Tutorial](/wiki/Galaxy_Tutorial)
 
 This walks you through setting up and running a
-[Galaxy](/wiki/Galaxy.1) server. This tutorial will be taught by
+[Galaxy](/wiki/Galaxy) server. This tutorial will be taught by
 [Dave Clements](/wiki/User:Clements) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School).
 
@@ -259,7 +259,7 @@ to this:
 
     port = 8081
 
-Galaxy, like [WebApollo](/wiki/WebApollo.1) and several other
+Galaxy, like [WebApollo](/wiki/WebApollo) and several other
 components that are also covered at the course, will listen to port 8080
 by default; to avoid stomping on that earlier work, we will configure
 Galaxy to listen to a different port.

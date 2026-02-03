@@ -72,15 +72,15 @@ The open call closed August 25.
 GMOD is an intercompatible suite of open-source software components for
 storing, managing, analyzing, and visualizing genome-scale data. GMOD
 includes many widely-used software components:
-[GBrowse](/wiki/GBrowse.1) and [JBrowse](/wiki/JBrowse.1), both
-genome viewers; [GBrowse_syn](/wiki/GBrowse_syn.1), a
+[GBrowse](/wiki/GBrowse) and [JBrowse](/wiki/JBrowse), both
+genome viewers; [GBrowse_syn](/wiki/GBrowse_syn), a
 comparative genomics viewer;
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, a generic
-and modular database schema; [CMap](/wiki/CMap.1), a comparative map
+and modular database schema; [CMap](/wiki/CMap), a comparative map
 viewer; as well as many other components including
-[Apollo](/wiki/Apollo.1), [MAKER](/wiki/MAKER.1),
+[Apollo](/wiki/Apollo), [MAKER](/wiki/MAKER),
 [BioMart](/wiki/BioMart), [InterMine](/wiki/InterMine), and
-[Galaxy](/wiki/Galaxy.1). We hope to extend the functionality of
+[Galaxy](/wiki/Galaxy). We hope to extend the functionality of
 existing GMOD components, and integrate new components as well.
 
 ## About Hackathons
@@ -113,7 +113,7 @@ Committee (and project affiliations as relevant):
   rel="nofollow">NESCent</a>, Phenoscape, Chado NatDiv)
 - [Sheldon McKay](/wiki/User:Mckays) (University of Arizona;
   <a href="http://www.iplantcollaborative.org/" class="external text"
-  rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn.1))
+  rel="nofollow">iPlant</a>, [GBrowse_syn](/wiki/GBrowse_syn))
 
 ## About the [GMOD Evo Hackathon](/wiki/GMOD_Evo_Hackathon)
 

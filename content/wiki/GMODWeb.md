@@ -18,7 +18,7 @@ and modular schema for representing biological data. GMODWeb is based on
 with the Chado schema and adds to the default templates to create a
 custom look and feel for GMOD. This GMODWeb *skin* includes code to
 display information using a variety of GMOD applications, including
-[GBrowse](/wiki/GBrowse.1). New model organism databases can use the
+[GBrowse](/wiki/GBrowse). New model organism databases can use the
 GMODWeb skin as a starting point for creating a new organism website.
 See <a
 href="http://radius.genomics.ctrl.ucla.edu/turnkey/pmwiki.php?n=Main.NewMod"

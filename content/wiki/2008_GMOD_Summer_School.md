@@ -43,9 +43,9 @@ The first annual <a href="/wiki/GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> was a 2 1/2 day
 hands-on workshop aimed at teaching new GMOD users how to get up and
 running with popular GMOD components such as
-[Apollo](/wiki/Apollo.1),
+[Apollo](/wiki/Apollo),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-[CMap](/wiki/CMap.1), and [GBrowse](/wiki/GBrowse.1). Participants
+[CMap](/wiki/CMap), and [GBrowse](/wiki/GBrowse). Participants
 included 25 students and 4 instructors, from 19 states and 4 countries.
 It was held at the <a href="http://nescent.org" class="external text"
 
@@ -69,7 +69,7 @@ Durham, North Carolina, USA, July 11-13, 2008.
 
 # Program
 
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse.1), [CMap](/wiki/CMap.1), [Apollo](/wiki/Apollo.1), and the [Community Annotation System](/wiki/Community_Annotation_System). | <img |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | The program featured two and half days of hands on training starting with an overview of GMOD and then covering installation and configuration of popular GMOD tools, include <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](/wiki/GBrowse), [CMap](/wiki/CMap), [Apollo](/wiki/Apollo), and the [Community Annotation System](/wiki/Community_Annotation_System). | <img |
 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1d/SummerSchool2008GBrowse.jpg" width="311"
 height="120" alt="SummerSchool2008GBrowse.jpg" /> |
@@ -131,7 +131,7 @@ worked example of loading example sequence data.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFCCBB">3pm - 5pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> 1</strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> 1</strong><br />
 <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
 Overview, GBrowse installation and using <a href="/wiki/GBrowse_adaptors"
 class="mw-redirect" title="GBrowse adaptors">GBrowse adaptors</a></td>
@@ -170,7 +170,7 @@ to be lively.</td>
 </tr>
 <tr class="even">
 <td style="background-color: #FFE5BB">9am - 11:30pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a> 2</strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a> 2</strong><br />
 <a href="/wiki/User%253AScott" title="User%253AScott">Scott Cain</a><br />
 GBrowse Configuration: Changing defaults and displays, adding tracks,
 and performance tuning</td>
@@ -184,14 +184,14 @@ Break</strong><br />
 </tr>
 <tr class="even">
 <td style="background-color: #FFE5BB">12:30pm - 4pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/Apollo" title="Apollo">Apollo</a></strong><br />
 Ed Lee<br />
 Overview, installation, configuration, reading/writing data, setting up
 a Java WebStart instance.</td>
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5BB">4pm - 5pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap.1" title="CMap">CMap</a> 1</strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap" title="CMap">CMap</a> 1</strong><br />
 <a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
 Overview, installation, configuration and data importation.</td>
 </tr>
@@ -205,7 +205,7 @@ Break</strong><br />
 </tr>
 <tr class="odd">
 <td style="background-color: #FFE5BB">6:30pm - 9pm</td>
-<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap.1" title="CMap">CMap</a> 2</strong><br />
+<td style="text-align: center; background-color: #d6fff5;"><strong><a href="/wiki/CMap" title="CMap">CMap</a> 2</strong><br />
 <a href="/wiki/User%253AFaga" title="User%253AFaga">Ben Faga</a><br />
 Overview, installation, configuration and data importation.</td>
 </tr>
@@ -242,9 +242,9 @@ Sessions were taught by experienced GMOD personnel, including:
 - [Scott Cain](/wiki/User:Scott) - GMOD Project Coordinator
 - [Dave Clements](/wiki/User:Clements) - [GMOD Help
   Desk](/wiki/GMOD_Help_Desk)
-- [Ben Faga](/wiki/User:Faga) - [CMap](/wiki/CMap.1) and
-  [GBrowse](/wiki/GBrowse.1) developer
-- Ed Lee - [Apollo](/wiki/Apollo.1) developer
+- [Ben Faga](/wiki/User:Faga) - [CMap](/wiki/CMap) and
+  [GBrowse](/wiki/GBrowse) developer
+- Ed Lee - [Apollo](/wiki/Apollo) developer
 
 # Who Attended?
 

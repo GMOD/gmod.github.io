@@ -9,10 +9,10 @@ title: "CMAE"
 
 Work on CMAE was started, but never completed.
 
-The [CMap](/wiki/CMap.1) Assembly Editor (CMAE) is a desktop
+The [CMap](/wiki/CMap) Assembly Editor (CMAE) is a desktop
 application that is being developed to assist in visualizing and editing
 large scale sequence assemblies for the maize sequencing project. Using
-the [CMap](/wiki/CMap.1) comparative mapping database, CMAE allows
+the [CMap](/wiki/CMap) comparative mapping database, CMAE allows
 sequence assemblies to be superimposed on top of diverse other types of
 mapping data, allowing the finisher to view assemblies in the context of
 a cascade of mapping data at a variety of resolutions. For example, the
@@ -33,7 +33,7 @@ contigs can be exported to a more specialized program. (L. Stein)
 
 ## Requirements
 
-- [CMap](/wiki/CMap.1)
+- [CMap](/wiki/CMap)
 - <a href="http://www.perltk.org/" class="external text"
   rel="nofollow">Perl/Tk</a>
 - <a href="http://www.tkzinc.org/tkzinc/index.php" class="external text"

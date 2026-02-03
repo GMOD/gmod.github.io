@@ -4,7 +4,7 @@ title: "Galaxy Tutorial 2012"
 # Galaxy Tutorial 2012
 
 This walks you through setting up and running a
-[Galaxy](/wiki/Galaxy.1) server. This tutorial was originally taught
+[Galaxy](/wiki/Galaxy) server. This tutorial was originally taught
 by [Dave Clements](/wiki/User:Clements) at the [2012 GMOD
 Summer School](/wiki/2012_GMOD_Summer_School).
 
@@ -138,7 +138,7 @@ See <a href="http://getgalaxy.org" class="external free"
 The only prerequisite to run your own Galaxy is a Python interpreter,
 version 2.5 or greater. Python 3 is a different language and is
 currently not supported. The [GMOD Amazon Machine Image
-(AMI)](/wiki/Cloud.1) used for this course includes version 2.6.5 of
+(AMI)](/wiki/Cloud) used for this course includes version 2.6.5 of
 the interpreter.
 
     $ python --version
@@ -199,7 +199,7 @@ to this:
 
     port = 8081
 
-Galaxy, like [WebApollo](/wiki/WebApollo.1) and several other
+Galaxy, like [WebApollo](/wiki/WebApollo) and several other
 components that were also covered at the course, will listen to port
 8080 by default; for simplicity, we will configure Galaxy to listen to a
 different port.

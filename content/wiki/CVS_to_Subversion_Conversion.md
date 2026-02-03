@@ -50,7 +50,7 @@ Help Desk</a>.
 | Issue Name | Description | Status |
 |----|----|----|
 | Commit Mailing Lists | Several [GMOD Mailing Lists](/wiki/GMOD_Mailing_Lists) exist that automatically sent out emails whenever a commit was made to a CVS project. Need to create new lists or modify existing ones to read from SVN instead. | Work is under way. GBrowse, Schema, and Apollo have been set up. |
-| [GBrowse](/wiki/GBrowse.1) net installer | The GBrowse net install program gets GBrowse from CVS. Needs to now get it from SVN | Fixed in the STABLE branch |
+| [GBrowse](/wiki/GBrowse) net installer | The GBrowse net install program gets GBrowse from CVS. Needs to now get it from SVN | Fixed in the STABLE branch |
 
 ## Announcement
 

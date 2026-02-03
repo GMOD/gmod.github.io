@@ -17,4 +17,3 @@ Licence
 
 Modified GPL
 
-Resources

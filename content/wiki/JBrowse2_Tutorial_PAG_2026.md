@@ -251,7 +251,7 @@ One of the easiest ways to use GFF3 with JBrowse is to use a tabix
 indexed bgzipped file. Generally, before creating the tabix index, GFF3
 files have to be sorted first by the reference sequence (ie, the
 chromosome name, in column 1) and then by the starting coordinate
-(colunn 4). Here is a magic incantation for doing that on the Linux
+(column 4). Here is a magic incantation for doing that on the Linux
 command line (sort and then pipe the result to bgzip):
 
      Don't do:

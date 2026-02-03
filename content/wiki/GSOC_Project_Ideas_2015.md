@@ -224,7 +224,7 @@ Here is a list of the proposed project ideas for 2015:
     (<a href="http://www.reactome.org/AnalysisService/" class="external free"
     rel="nofollow">http://www.reactome.org/AnalysisService/</a>) in
     order allow Basespace user to perform pathway enrichment and
-    expression analysis agains Reactome Pathways.
+    expression analysis against Reactome Pathways.
   - *Knowledge prerequisites:* JavaScript, json, web services.
   - *Skill level:* Medium.
   - *Mentors:* Antonio Fabregat, Henning Hemjakob.

@@ -116,10 +116,10 @@ size including use by large sequence centers. MAKER can be used for *de
 novo* annotation of newly sequenced genomes, for updating existing
 annotations to reflect new evidence, or just to combine annotations,
 evidence, and quality control statistics for use with other GMOD
-programs like [GBrowse](/wiki/GBrowse.1),
-[JBrowse](/wiki/JBrowse.1),
+programs like [GBrowse](/wiki/GBrowse),
+[JBrowse](/wiki/JBrowse),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, and
-[Apollo](/wiki/Apollo.1).
+[Apollo](/wiki/Apollo).
 
 MAKER has been used in many genome annotation projects:
 

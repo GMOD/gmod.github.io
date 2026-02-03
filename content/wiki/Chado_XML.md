@@ -31,7 +31,7 @@ _Draft Document - In progress._
 
 Chado-XML is a direct mapping of the Chado relational schema into XML.
 Currently the only tool for performing this mapping is
-[XORT](/wiki/XORT.1), which can dump or save Chado-XML to and from a
+[XORT](/wiki/XORT), which can dump or save Chado-XML to and from a
 chado db.
 
 ## Scope
@@ -73,7 +73,7 @@ datasources…
 
 ### Database retrieval: XORT Dumpspecs
 
-[XORT](/wiki/XORT.1) can select data from a database and generate XML.
+[XORT](/wiki/XORT) can select data from a database and generate XML.
 XORT is highly configurable, via _dumpspecs_. There are a number of
 dumpspecs for common queries (e.g. fetching a region-of-interest around
 a gene or contig) - or you can write your own.
@@ -100,7 +100,7 @@ format - this step isn't infallible!
 ## Saving Chado-XML
 
 Both _static_ and _transactional_ Chado-XML can be saved to a Chado
-database using [XORT](/wiki/XORT.1). See XORT documentation for
+database using [XORT](/wiki/XORT). See XORT documentation for
 details.
 
 ## Chado-XML forms

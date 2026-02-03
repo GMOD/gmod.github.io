@@ -348,7 +348,7 @@ suggested that you use the sample GFF2 files from the yeast,
 achieve the desired results.
 
 In addition to the standard aggregators that are distributed with
-[BioPerl](/wiki/BioPerl), [GBrowse](/wiki/GBrowse.1) distributes
+[BioPerl](/wiki/BioPerl), [GBrowse](/wiki/GBrowse) distributes
 several experimental and/or special-purpose aggregators:
 
 match_gap
@@ -368,7 +368,7 @@ of the GMOD development group. It can be used to aggregate
 "reftranscripts" from "refexons", loaded as second copy features. These
 features, in contrast to "transcripts", are usually implemented as
 features which cannot be edited and serve as starting point references
-for annotations added using [GBrowse](/wiki/GBrowse.1) for feature
+for annotations added using [GBrowse](/wiki/GBrowse) for feature
 [visualization](/wiki/Visualization). Adding features to the
 compound feature, "reftranscript", can be done by adding to the
 "part_names" call (i.e. "refCDS").

@@ -3,7 +3,7 @@ title: "Grouping GBrowse Features"
 ---
 # Grouping GBrowse Features
 
-[GBrowse](/wiki/GBrowse.1) recognizes the concept of a "group" of
+[GBrowse](/wiki/GBrowse) recognizes the concept of a "group" of
 related features that are connected by dotted lines. The canonical
 example is a pair of ESTs that are related by being from the two ends of
 the same cDNA clone. However many feature databases, including the older

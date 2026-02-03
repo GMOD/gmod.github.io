@@ -22,7 +22,7 @@ title: "Chado Modules"
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
+  (ND)](/wiki/Chado_Natural_Diversity_Module) -
   for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data

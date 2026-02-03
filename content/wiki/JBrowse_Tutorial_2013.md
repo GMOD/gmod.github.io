@@ -3,7 +3,7 @@ title: "JBrowse Tutorial 2013"
 ---
 # JBrowse Tutorial 2013
 
-This [JBrowse](/wiki/JBrowse.1) tutorial was presented by [Robert
+This [JBrowse](/wiki/JBrowse) tutorial was presented by [Robert
 Buels](/wiki/User:RobertBuels) at the [2013 GMOD Summer
 School](/wiki/2013_GMOD_Summer_School) in July 2013
 using JBrowse 1.9.8.
@@ -93,8 +93,8 @@ It's also very useful to know how to tab-complete in the shell.
 
 ## JBrowse Introduction
 
-How and why [JBrowse](/wiki/JBrowse.1) is different from most other
-web-based genome browsers, including [GBrowse](/wiki/GBrowse.1).
+How and why [JBrowse](/wiki/JBrowse) is different from most other
+web-based genome browsers, including [GBrowse](/wiki/GBrowse).
 
 More detail: <a href="http://genome.cshlp.org/content/19/9/1630.full"
 class="external text" rel="nofollow">paper</a>

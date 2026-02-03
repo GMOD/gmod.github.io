@@ -7,7 +7,7 @@ title: "PrimerDesigner.pm"
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/PrimerDesigner.png" width="406"
 height="161" alt="PrimerDesigner.png" />
 
-PrimerDesigner is a [GBrowse](/wiki/GBrowse.1) plugin, written by
+PrimerDesigner is a [GBrowse](/wiki/GBrowse) plugin, written by
 [Sheldon McKay](/wiki/User:Mckays), that uses use the
 <a href="http://primer3.sourceforge.net" class="external text"
 
@@ -283,8 +283,8 @@ are amplified by the primer pair.
 You must check the site to see if there is a genome sequence for you
 species and modify the above example accordingly
 
-## PrimerDesigner and [GBrowse](/wiki/GBrowse.1) 2
+## PrimerDesigner and [GBrowse](/wiki/GBrowse) 2
 
 The PrimerDesigner plugin does not work with
-[GBrowse](/wiki/GBrowse.1) 2.00. Work is currently underway to fix
+[GBrowse](/wiki/GBrowse) 2.00. Work is currently underway to fix
 this before the next release of GBrowse.

@@ -128,7 +128,7 @@ Desk](/wiki/GMOD_Help_Desk) in 2006 and, among other things,
 created this wiki. In 2007 [Dave
 Clements](/wiki/User:Clements) took over, who held the
 position until the end of 2010 (when he moved to the
-[Galaxy](/wiki/Galaxy.1) project). [Amelia
+[Galaxy](/wiki/Galaxy) project). [Amelia
 Ireland](/wiki/User:Girlwithglasses) was Community
 Support Specialist from July 2012 to May 2014, when grant funding ran
 out.

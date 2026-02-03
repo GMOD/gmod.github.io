@@ -70,7 +70,7 @@ class="external text" rel="nofollow">#gmod11 hashtag</a>.</span>
 The next [GMOD meeting](/wiki/Meetings) is being held in October
 12-13, 2011 at the <a href="http://oicr.on.ca/" class="external text"
 
-Toronto, Canada. OICR is the home of [GBrowse](/wiki/GBrowse.1) and
+Toronto, Canada. OICR is the home of [GBrowse](/wiki/GBrowse) and
 [BioMart](/wiki/BioMart).
 
 If you're curious to see what happens at a [GMOD
@@ -235,7 +235,7 @@ class="internal" title="Lincoln stein.ppt">PPT</a></td>
 </tr>
 <tr class="odd">
 <td>1:30</td>
-<td><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a> and <a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></td>
+<td><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a> and <a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></td>
 <td><a href="/wiki/User%253AMitchSkinner" title="User%253AMitchSkinner">Mitch
 Skinner</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e7/Mitch_skinner.pdf"
@@ -257,7 +257,7 @@ class="internal" title="Andrew oberlin.pdf">PDF</a></td>
 </tr>
 <tr class="even">
 <td>3:00</td>
-<td><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></td>
+<td><a href="/wiki/MAKER" title="MAKER">MAKER</a></td>
 <td><a href="/wiki/User%253ACarsonholt" title="User%253ACarsonholt">Carson
 Holt</a></td>
 <td><a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/1a/Carson_holt.pdf" class="internal"
@@ -292,7 +292,7 @@ title="Matahari.pdf">PDF</a></td>
 
 ### Day 2: Thursday
 
-| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy.1)                                                  | [Dan Blankenberg](/wiki/User:DanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
+| Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | 9:15                               | Keynote: The Savant Browser and MedSavant                                    | Michael Brudno                                   | PDF unavailable                                                                                                                | 10:00                              | [Galaxy](/wiki/Galaxy)                                                  | [Dan Blankenberg](/wiki/User:DanB) | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8b/2011_10_Galaxy.pdf" class="internal" | title="2011 10 Galaxy.pdf">PDF</a> | 10:30                              | [Coffee](/wiki/GMOD_Promotion#Mugs.2C_T-Shirts.2C_Buttons.2C_...) | 11:00                              | <a href="http://code.google.com/p/sadi/wiki/SADIforGMOD"                     |
 
 class="external text" rel="nofollow">SADI for GMOD: An RDF/OWL Interface
 to GMOD Data</a> | Ben Vandervalk | <a
@@ -315,7 +315,7 @@ Please feel free to add suggested talks or topics for the meeting.
   discussion)
 - [BioMart](/wiki/BioMart),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>,
-  [Galaxy](/wiki/Galaxy.1), [GBrowse](/wiki/GBrowse.1), and
+  [Galaxy](/wiki/Galaxy), [GBrowse](/wiki/GBrowse), and
   [InterMine](/wiki/InterMine) updates - since representatives of
   all those groups will be there (suggested by [Dave
   C](/wiki/User:Clements))
@@ -360,9 +360,9 @@ You can register for the BioMart, Galaxy, and MAKER Workshops on the
 the [InterMine development meeting](#InterMine_Development_Meeting),
 please let [Richard Smith](/wiki/User:Rsmith) know.
 
-### [Galaxy](/wiki/Galaxy.1) Workshop
+### [Galaxy](/wiki/Galaxy) Workshop
 
-This workshop will cover an introduction to [Galaxy](/wiki/Galaxy.1),
+This workshop will cover an introduction to [Galaxy](/wiki/Galaxy),
 including analyzing data with tools and visualizations, using Galaxy in
 the cloud, and running your own instance and adding new tools. [Dan
 Blankenberg](/wiki/User:DanB) of the
@@ -436,10 +436,10 @@ The BioMart workshop will be held on Friday, October 14, from 9-12 in
 the Ontario Institute for Cancer Research, 8th floor NorthEast
 Boardroom.
 
-### [MAKER](/wiki/MAKER.1) Workshop
+### [MAKER](/wiki/MAKER) Workshop
 
 The MAKER workshop will include a brief introduction to
-[MAKER](/wiki/MAKER.1) as well as demonstrations in using the pipeline
+[MAKER](/wiki/MAKER) as well as demonstrations in using the pipeline
 to generate gene annotations, perform downstream analysis of the gene
 models, and ingrate the output into other GMOD tools. To make
 demonstrations as hands on as possible, the web version of MAKER will be

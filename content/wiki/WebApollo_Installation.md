@@ -127,7 +127,7 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
     - DBD module for your specific RDBMS \[officially supported: DBD::Pg
       for PostgresSQL\]
 - Data generation pipeline (see [JBrowse
-  prerequisites](/wiki/JBrowse.1#Prerequisites) for more information
+  prerequisites](/wiki/JBrowse#Prerequisites) for more information
   on its prerequisites)
   - Perl modules
     - [BioPerl 1.6](/wiki/BioPerl)
@@ -1938,7 +1938,7 @@ information about `remove_temporary_files.sh`.
 ## Data generation
 
 The steps for generating data (in particular static data) are mostly
-similar to [JBrowse](/wiki/JBrowse.1) data generation steps, with
+similar to [JBrowse](/wiki/JBrowse) data generation steps, with
 some extra steps required. The scripts for data generation reside in
 `$TOMCAT_WEBAPPS_DIR/WebApollo/jbrowse/bin`. Let's go into WebApollo's
 JBrowse directory.

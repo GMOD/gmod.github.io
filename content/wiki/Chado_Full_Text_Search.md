@@ -19,7 +19,7 @@ like to thank him for contributing to the Chado GBrowse adaptor.
 
 - [PostgreSQL](/wiki/PostgreSQL) 8.4
 - <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> 1.11
-- [GBrowse](/wiki/GBrowse.1) 1.70 or 2.0
+- [GBrowse](/wiki/GBrowse) 1.70 or 2.0
 
 ## Configuration
 

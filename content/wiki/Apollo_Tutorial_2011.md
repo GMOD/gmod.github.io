@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/375px-ApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/ApolloLogo.png/500px-ApolloLogo.png 2x"
 width="250" height="91" alt="Apollo" />
 
-This [Apollo](/wiki/Apollo.1) tutorial was presented by [Ed
+This [Apollo](/wiki/Apollo) tutorial was presented by [Ed
 Lee](/wiki/User:Elee) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), Spring
 2011. The most recent Apollo tutorial can be found at the
@@ -445,14 +445,14 @@ data. We'll come back and talk about the `Sequence Aligner` if we have
 time.
 
 Unfortunately we don't have the time to go over all the sophisticated
-editing features for [Apollo](/wiki/Apollo.1), but you can get more
+editing features for [Apollo](/wiki/Apollo), but you can get more
 information on all the powerful editing features from the
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
 class="external text" rel="nofollow">Apollo user's guide</a>.
 
 ## Configuring Apollo
 
-Ok, now that we got some idea of what [Apollo](/wiki/Apollo.1) can
+Ok, now that we got some idea of what [Apollo](/wiki/Apollo) can
 do, let's talk about how to configure Apollo. First of all, be aware
 that all configuration files can live in two places:
 
@@ -725,7 +725,7 @@ ones). The XML will look something like this:
 
 ## Setting Up a Custom WebStart Instance
 
-One of the benefits of having [Apollo](/wiki/Apollo.1) as a Java
+One of the benefits of having [Apollo](/wiki/Apollo) as a Java
 application is that we can make use of
 <a href="http://en.wikipedia.org/wiki/Java_Web_Start"
 class="external text" rel="nofollow">Java WebStart</a>. This is a great

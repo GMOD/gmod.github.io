@@ -41,14 +41,14 @@ Saccharomyces Genome Database. Links:
 
 <a href="http://blog.gmod.org" class="external text" rel="nofollow">GMOD
 Blog</a>
-**<a href="/wiki/GBrowse.1" class="external text" rel="nofollow">GBrowse</a>**
+**<a href="/wiki/GBrowse" class="external text" rel="nofollow">GBrowse</a>**
 The Generic Genome Browser (GBrowse) is a web application for searching
 and displaying annotations on genomes. GBrowse was designed from the
 bottom up for portability, extensibility, and modularity. It relies on
 no proprietary software, but only readily available open source software
 such as MySQL and the BioPerl libraries. GBrowse is implemented in Perl.
 Link:
-<a href="/wiki/GBrowse.1" class="external text" rel="nofollow">Website</a>.
+<a href="/wiki/GBrowse" class="external text" rel="nofollow">Website</a>.
 **<a href="http://jbrowse.org" class="external text"
 
 JBrowse is being developed as the successor to GBrowse. It is a modern,

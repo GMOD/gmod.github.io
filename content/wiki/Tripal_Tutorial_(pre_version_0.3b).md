@@ -8,7 +8,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/TripalLogo.png 2x"
 width="250" height="75" alt="Tripal" />
 
-This [Tripal](/wiki/Tripal.1) tutorial was presented by [Stephen
+This [Tripal](/wiki/Tripal) tutorial was presented by [Stephen
 Ficklin](/wiki/User:Sficklin) at the [2011 GMOD Spring
 Training](/wiki/2011_GMOD_Spring_Training), 8-12
 March 2011. The most recent Tripal tutorial can be found at the
@@ -343,7 +343,7 @@ GMOD Tripal mailing lists:
 <a href="/wiki/GMOD_Mailing_Lists" class="external free"
 
 GMOD Tutorials from previous GMOD schools:
-<a href="/wiki/Tripal.1" class="external free"
+<a href="/wiki/Tripal" class="external free"
 
 ### Contributing Organizations
 

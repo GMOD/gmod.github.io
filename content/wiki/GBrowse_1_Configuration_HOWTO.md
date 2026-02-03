@@ -4,7 +4,7 @@ title: "GBrowse 1 Configuration HOWTO"
 # GBrowse 1 Configuration HOWTO
 
 This document provides information on configuring version 1 of the
-[Generic Genome Browser (GBrowse)](/wiki/GBrowse.1), part of the
+[Generic Genome Browser (GBrowse)](/wiki/GBrowse), part of the
 [GMOD Project](/wiki/Main_Page). For version 2, see
 <a href="/wiki/GBrowse_2_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
@@ -80,7 +80,7 @@ title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
 
 # Creating Databases From Scratch
 
-[GBrowse](/wiki/GBrowse.1) uses
+[GBrowse](/wiki/GBrowse) uses
 *[adaptors](/wiki/GBrowse_Adaptors)* to read genomic data.
 Several of those adaptors read data from [database management systems (
 *a.k.a. databases*)](/wiki/Glossary#Database_Management_System). If
@@ -1038,7 +1038,7 @@ directories to search in.
 
 Users can link to their own tracks or to tracks published by other
 GBrowse or <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>
-servers. GBrowse can also integrate with [Galaxy](/wiki/Galaxy.1).
+servers. GBrowse can also integrate with [Galaxy](/wiki/Galaxy).
 
 - **allow remote callbacks**
 

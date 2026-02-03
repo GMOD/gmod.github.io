@@ -8,7 +8,7 @@ title: "GBrowse syn Tutorial 2010"
 ### A Note on Whole Genome Alignments
 
 The focus of the section of the course is on dealing with alignment or
-synteny data and using [GBrowse_syn](/wiki/GBrowse_syn.1).
+synteny data and using [GBrowse_syn](/wiki/GBrowse_syn).
 However, how to generate whole genome alignments, identify orthologous
 regions, etc, are the subject of considerable interest, so some
 background reading is listed below:
@@ -36,10 +36,10 @@ background reading is listed below:
 There is detailed documentation on the GMOD wiki for how to install,
 configure and use GBrowse_syn. To get started, browse these pages:
 
-- [GBrowse_syn overview](/wiki/GBrowse_syn.1)
-- [Installation](/wiki/GBrowse_syn.1#Installation)
+- [GBrowse_syn overview](/wiki/GBrowse_syn)
+- [Installation](/wiki/GBrowse_syn#Installation)
 - [Configuration](/wiki/GBrowse_syn_Configuration)
 - [Alignment Data](/wiki/GBrowse_syn_Database)
 - [The user interface](/wiki/GBrowse_syn_Help)
 - [Presentations and
-  workshops](/wiki/GBrowse_syn.1#Presentations_and_Workshops)
+  workshops](/wiki/GBrowse_syn#Presentations_and_Workshops)

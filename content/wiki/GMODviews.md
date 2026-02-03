@@ -17,7 +17,7 @@ GMODviews is built on
 6</a>, and aims to provide integration with 3 major Drupal modules: CCK,
 Views, and Panels, so as to full access to advanced Drupal
 functionality. One immediate goal is to provide an intermediate
-integration of these with [Tripal](/wiki/Tripal.1), which does not
+integration of these with [Tripal](/wiki/Tripal), which does not
 yet have such integration. GMODviews also provides tools for creating
 generic *data mashups* with data from essentially any external sources,
 such as <a href="http://flybase.org/" class="external text"

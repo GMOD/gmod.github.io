@@ -27,6 +27,6 @@ Artemis is not part of the GMOD project, but Artemis does work with
 [Artemis-Chado Integration
 Tutorial](/wiki/Artemis-Chado_Integration_Tutorial)),
 and the Artemis group is working closely with
-[Apollo](/wiki/Apollo.1) developers on [Gbol](/wiki/Gbol).
-[Apollo](/wiki/Apollo.1) is GMOD's official genome
+[Apollo](/wiki/Apollo) developers on [Gbol](/wiki/Gbol).
+[Apollo](/wiki/Apollo) is GMOD's official genome
 [annotation](/wiki/Annotation) editor.

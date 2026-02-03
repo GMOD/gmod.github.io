@@ -33,7 +33,7 @@ width="180" height="85" alt="PoweredByGMOD.png" /> | 620 x 294 (click on image f
 title="PoweredByGMOD.xcf">PoweredByGMOD.xcf</a> | 620 x 294 | The source <a href="http://www.gimp.org/" class="external text"
 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/PoweredByGBrowseAnimalGenome.jpg"
-width="89" height="66" alt="PoweredByGBrowseAnimalGenome.jpg" /> | 89 x 66 | _Powered by [GBrowse](/wiki/GBrowse.1)_ logos created by Zhiliang Hu for <a href="http://animalgenome.org" class="external text"
+width="89" height="66" alt="PoweredByGBrowseAnimalGenome.jpg" /> | 89 x 66 | _Powered by [GBrowse](/wiki/GBrowse)_ logos created by Zhiliang Hu for <a href="http://animalgenome.org" class="external text"
 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/PoweredByGBrowseAnimalGenome2.jpg"
 width="89" height="66" alt="PoweredByGBrowseAnimalGenome2.jpg" /> | ## See also

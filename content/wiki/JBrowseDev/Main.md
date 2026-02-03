@@ -29,8 +29,6 @@ width="40" height="39" alt="} is open source" /></a>
 <a href="http://opensource.org/licenses/Artistic-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
-Resources
-
 - [GMOD
   Components](../Category:GMOD_Components)
 - [AJAX](../Category:AJAX)

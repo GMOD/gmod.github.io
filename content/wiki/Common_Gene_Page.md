@@ -91,9 +91,9 @@ report (or such data files) within the coming year.
 There is a history in genome informatics of everyone doing their own
 thing across projects with common genome data and common customer needs.
 Some efforts do achieve common usage and consensus: [GFF(3)](/wiki/GFF)
-format, [GBrowse](/wiki/GBrowse.1),
+format, [GBrowse](/wiki/GBrowse),
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> schema/db,
-[Apollo](/wiki/Apollo.1) annotator among others.
+[Apollo](/wiki/Apollo) annotator among others.
 
 This common gene report concept to date is to provide consumers of
 genome data with the format across projects, both for web display and

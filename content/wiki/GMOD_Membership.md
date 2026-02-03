@@ -73,7 +73,7 @@ part of GMOD through a nomination and evaluation process.
 Software can be nominated by its developers, by GMOD users, or by GMOD
 staff. New components also arise from within the community.
 [Bio::Chado::Schema](/wiki/Bio_Chado_Schema),
-[DIYA](/wiki/DIYA), and [MAKER](/wiki/MAKER.1) are all recent
+[DIYA](/wiki/DIYA), and [MAKER](/wiki/MAKER) are all recent
 examples of software becoming a part of GMOD.
 
 Please contact the
@@ -124,7 +124,7 @@ years. For example, GMOD tends to avoid *analysis* tools because this
 area of bioinformatics is constantly changing. However, the need to
 connect different analysis tools into reusable pipelines (see
 <a href="/wiki/Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
-[Galaxy](/wiki/Galaxy.1) for examples), is a common and longstanding
+[Galaxy](/wiki/Galaxy) for examples), is a common and longstanding
 need that will outlive any particular too.
 Configurable and Extensible
 GMOD tools should be usable in a wide variety of situations. Different

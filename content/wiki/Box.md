@@ -50,28 +50,28 @@ width="200" height="44" alt="Chado logo" />](/wiki/Chado) 1.23
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/200px-GBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/300px-GBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png 2x"
-width="200" height="47" alt="GBrowse logo" />](/wiki/GBrowse.1) 2.55
+width="200" height="47" alt="GBrowse logo" />](/wiki/GBrowse) 2.55
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/200px-GBrowse_syn_logo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/300px-GBrowse_syn_logo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/44/GBrowse_syn_logo.png/400px-GBrowse_syn_logo.png 2x"
-width="200" height="64" alt="GBrowse_syn logo" />](/wiki/GBrowse_syn.1)
+width="200" height="64" alt="GBrowse_syn logo" />](/wiki/GBrowse_syn)
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/200px-JBrowseLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/300px-JBrowseLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ac/JBrowseLogo.png/400px-JBrowseLogo.png 2x"
-width="200" height="44" alt="JBrowse logo" />](/wiki/JBrowse.1)
+width="200" height="44" alt="JBrowse logo" />](/wiki/JBrowse)
 1.10.12
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
-width="200" height="60" alt="Tripal logo" />](/wiki/Tripal.1) 1.1
+width="200" height="60" alt="Tripal logo" />](/wiki/Tripal) 1.1
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/200px-WebApolloLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/300px-WebApolloLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/4a/WebApolloLogo.png/400px-WebApolloLogo.png 2x"
-width="200" height="55" alt="WebApollo logo" />](/wiki/WebApollo.1)
+width="200" height="55" alt="WebApollo logo" />](/wiki/WebApollo)
 11/22/2013
 
 ## Where to find GMOD in a Box
@@ -93,7 +93,7 @@ email to the GMOD developers to let them know that someone is using a
 GMOD in a Box instance. GMOD uses this to track the popularity of
 virtual GMOD installations for grants and funding purposes. For more
 information, see [the phoning home
-section](/wiki/GMOD_in_a_Box.1#Phoning_home) below.
+section](/wiki/GMOD_in_a_Box#Phoning_home) below.
 
 #### Build information
 
@@ -224,7 +224,7 @@ new themes can be added at `/data/var/www/sites/default/themes`.
 
 Version: 1.1
 
-Source: [Tripal](/wiki/Tripal.1) svn
+Source: [Tripal](/wiki/Tripal) svn
 
 Installation dir: `/var/www/sites/all/modules/tripal`
 
@@ -237,7 +237,7 @@ ontologies and a GFF file containing yeast genome annotations from SGD
 (source: <a
 href="http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff"
 
-as well as a sample GFF contig file output from [MAKER](/wiki/MAKER.1)
+as well as a sample GFF contig file output from [MAKER](/wiki/MAKER)
 for the *Pythium ultimum* (source:
 <a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
 
@@ -295,7 +295,7 @@ This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 Version: 11/22/2013
 
 WebApollo was installed per the directions on the
-[WebApollo](/wiki/WebApollo.1) page. In addition to the admin
+[WebApollo](/wiki/WebApollo) page. In addition to the admin
 user, a second user with limited permissions was created with username:
 "guest", password: "guest".
 

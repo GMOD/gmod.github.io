@@ -87,7 +87,7 @@ the creators of GMOD are mostly not practicing biologists and the look
 and the feel of most GMOD documentation reflects this. What we will
 attempt to do is discuss GMOD from the researchers' perspective. This
 does not simply mean describe what the software does. If you look, for
-example, at a typical [GBrowse](/wiki/GBrowse.1) page (e.g.
+example, at a typical [GBrowse](/wiki/GBrowse) page (e.g.
 <a href="http://www.chr7.org/cgi-bin/gbrowse/gbrowse/chr7_v2/"
 class="external text" rel="nofollow">GBrowse view of human chromosome
 7</a>), you'll understand immediately what GBrowse is built to do, and a
@@ -247,7 +247,7 @@ are discussed below.
 
 ### What is GBrowse?
 
-[GBrowse](/wiki/GBrowse.1) is short for _Genome Browser_, or
+[GBrowse](/wiki/GBrowse) is short for _Genome Browser_, or
 _Generic Genome Browser_. GBrowse is probably GMOD's most popular
 component and almost all of the databases listed in [GMOD
 Users](/wiki/GMOD_Users) use GBrowse. It is fairly easy to
@@ -282,7 +282,7 @@ coding skill.
 
 #### JBrowse
 
-[JBrowse](/wiki/JBrowse.1) is a genome browser with a fully dynamic
+[JBrowse](/wiki/JBrowse) is a genome browser with a fully dynamic
 HTML5 user interface, being developed as the successor to GBrowse. It is
 very fast and scales well to large datasets. JBrowse is javascript-based
 and does almost all of its work directly in the user's web browser, with
@@ -430,7 +430,7 @@ _modules_; the modules are the following:
 - [Mage](/wiki/Chado_Mage_Module) - for microarray data
 - [Map](/wiki/Chado_Map_Module) - for maps without sequence
 - [Natural Diversity
-  (ND)](/wiki/Chado_Natural_Diversity_Module.1) -
+  (ND)](/wiki/Chado_Natural_Diversity_Module) -
   for multiple experiments, such as phenotyping and genotyping
 - [Organism](/wiki/Chado_Organism_Module) - for
   taxonomic data
@@ -503,7 +503,7 @@ class="external text" rel="nofollow">Human Chromosome 1 database</a>
 described above are concerned solely with sequence and annotation and
 the entire contents of such a database can be represented as GFF. For
 small installations the entire database can be just a set of GFF text
-files (in fact, you can install [GBrowse](/wiki/GBrowse.1) on your
+files (in fact, you can install [GBrowse](/wiki/GBrowse) on your
 personal computer and then browse _Saccharomyces_ and _Volvox_ genomic
 sequence, reading directly from GFF files installed along with GBrowse -
 _try it!_). But when the amount of GFF gets too large to be read into
@@ -517,12 +517,12 @@ Adaptors](/wiki/GBrowse_Adaptors).
 
 ### What are WebApollo and Apollo?
 
-Unlike [JBrowse](/wiki/JBrowse.1) and
-[GBrowse](/wiki/GBrowse.1), which only function as a sequence
-browser, [WebApollo](/wiki/WebApollo.1) and its standalone
-predecessor [Apollo](/wiki/Apollo.1), are for both viewing and
+Unlike [JBrowse](/wiki/JBrowse) and
+[GBrowse](/wiki/GBrowse), which only function as a sequence
+browser, [WebApollo](/wiki/WebApollo) and its standalone
+predecessor [Apollo](/wiki/Apollo), are for both viewing and
 manually annotating genomes. WebApollo is a plugin for
-[JBrowse](/wiki/JBrowse.1) that allows multiple users to annotate
+[JBrowse](/wiki/JBrowse) that allows multiple users to annotate
 genomes concurrently. Changes made by others are automatically and
 immediately updated in the user's browser window, ensuring that there is
 no duplication of effort, and allowing several users to annotate parts
@@ -532,15 +532,15 @@ rejected by an administrator before being saved. WebApollo shares
 JBrowse's fast, flexible browsing interface, and users require only a
 web browser to use it.
 
-[Apollo](/wiki/Apollo.1) is a standalone  for manual sequence
+[Apollo](/wiki/Apollo) is a standalone  for manual sequence
 annotation, and is the predecessor of WebApollo. Apollo can read and
 write to Chado databases, but lacks the instant updates that WebApollo
-features. We recommend using [WebApollo](/wiki/WebApollo.1) as it
+features. We recommend using [WebApollo](/wiki/WebApollo) as it
 is under active development and has a more full feature set than Apollo.
 
 ### What are MAKER and DIYA?
 
-[GBrowse](/wiki/GBrowse.1) and [Apollo](/wiki/Apollo.1) both deal
+[GBrowse](/wiki/GBrowse) and [Apollo](/wiki/Apollo) both deal
 with ,
 but where do these annotations come from? Frequently they come from a
 _genome annotation pipeline_, a software package or series of software
@@ -548,17 +548,17 @@ packages that take an assembly (and other things) as input and produces
 an annotated genome, often with gene models, ESTs, proteins, and almost
 anything else that can be tied back to a genomic sequence.
 
-[MAKER](/wiki/MAKER.1) is a genome annotation pipeline that produces
+[MAKER](/wiki/MAKER) is a genome annotation pipeline that produces
 annotated eukaryotic genomes, and [DIYA](/wiki/DIYA) is a genome
 annotation pipeline for prokaryotic genomes (and both do more than that
 too). They both produce gene models in [GFF](/wiki/GFF), a file format
-that can be directly loaded into [GBrowse](/wiki/GBrowse.1),
-[Apollo](/wiki/Apollo.1), and
+that can be directly loaded into [GBrowse](/wiki/GBrowse),
+[Apollo](/wiki/Apollo), and
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 ### What is Pathway Tools?
 
-[Pathway Tools](/wiki/Pathway_Tools.1) is a software system
+[Pathway Tools](/wiki/Pathway_Tools) is a software system
 for creating organism-specific databases. It contains extensive
 functionality that spans from genomes to pathways including a genome
 browser, metabolic pathway predictor and viewer, and regulatory network
@@ -566,7 +566,7 @@ viewer, as well as a large number of interactive annotation tools.
 
 ### What is CMap?
 
-[CMap](/wiki/CMap.1) is a popular
+[CMap](/wiki/CMap) is a popular
 
 map viewer. It was initially created for use at
 <a href="http://gramene.org" class="external text"
@@ -578,27 +578,27 @@ It is written in
 title="wp:Perl">Perl</a> and requires an underlying RDBMS such as
 <a href="http://www.mysql.com" class="external text"
 
-relationships, you may need more than [GBrowse](/wiki/GBrowse.1).
+relationships, you may need more than [GBrowse](/wiki/GBrowse).
 
 #### And SynView? or Sybil? or GBrowse_Syn?
 
 Yes, there are other
-viewers. The alternatives to [CMap](/wiki/CMap.1) are
-[GBrowse_syn](/wiki/GBrowse_syn.1), [Sybil](/wiki/Sybil), and
+viewers. The alternatives to [CMap](/wiki/CMap) are
+[GBrowse_syn](/wiki/GBrowse_syn), [Sybil](/wiki/Sybil), and
 [SynView](/wiki/SynView). [Sybil](/wiki/Sybil) stores its data in
 <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> and
 accommodates a variety of different analyses; go to the
 <a href="http://sybil.sourceforge.net/" class="external text"
 
-[GBrowse_syn](/wiki/GBrowse_syn.1) and
-[SynView](/wiki/SynView) build upon [GBrowse](/wiki/GBrowse.1),
+[GBrowse_syn](/wiki/GBrowse_syn) and
+[SynView](/wiki/SynView) build upon [GBrowse](/wiki/GBrowse),
 and they can be considered a bit simpler than [Sybil](/wiki/Sybil) and
-[CMap](/wiki/CMap.1). More information is available on their websites
+[CMap](/wiki/CMap). More information is available on their websites
 to help you determine which is most suitable for you.
 
 ### What is Tripal?
 
-[Tripal](/wiki/Tripal.1) is a web frontend for a Chado database that
+[Tripal](/wiki/Tripal) is a web frontend for a Chado database that
 provides both an attractive, slick website for accessing and
 disseminating Chado data, and an interface for local users to upload and
 edit data in the database. Tripal is based on the popular content
@@ -606,8 +606,8 @@ management system <a href="http://drupal.org" class="external text"
 
 Chado database. Tripal includes a number of analysis modules that allow
 the incorporation of external data (for example, Gene Ontology
-annotations), and tools such as [GBrowse](/wiki/GBrowse.1),
-[Galaxy](/wiki/Galaxy.1), and [CMap](/wiki/CMap.1) can be integrated
+annotations), and tools such as [GBrowse](/wiki/GBrowse),
+[Galaxy](/wiki/Galaxy), and [CMap](/wiki/CMap) can be integrated
 into the site. Tripal is very customisable and, as it is based on
 Drupal, extra website content can easily be added using the standard
 Drupal functionality. For groups looking to avoid the substantial
@@ -650,7 +650,7 @@ some free, open source [RDBMS](/wiki/Glossary#RDBMS) like
 Installing these pieces, schema plus RDBMS, is not necessarily
 difficult, but if you only have sequence and sequence annotation, you
 can set up a sequence or genome browser using BioPerl,
-[GBrowse](/wiki/GBrowse.1), and an
+[GBrowse](/wiki/GBrowse), and an
 <a href="http://apache.org" class="external text"
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::GFF"
@@ -686,16 +686,16 @@ component.
 <tbody>
 <tr class="odd">
 <td data-valign="top"><p><strong>Community Annotation</strong></p>
-<p><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></p>
-<p><a href="/wiki/BioDIG.1" title="BioDIG">BioDIG</a></p>
+<p><a href="/wiki/Apollo" title="Apollo">Apollo</a></p>
+<p><a href="/wiki/BioDIG" title="BioDIG">BioDIG</a></p>
 <p><a href="/wiki/Canto" title="Canto">Canto</a></p>
-<p><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></p>
-<p>Wiki <a href="/wiki/TableEdit.1" title="TableEdit">TableEdit</a></p>
+<p><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></p>
+<p>Wiki <a href="/wiki/TableEdit" title="TableEdit">TableEdit</a></p>
 <p><br />
 <strong>Comparative Genome Visualization</strong></p>
-<p><a href="/wiki/CMap.1" title="CMap">CMap</a></p>
-<p><a href="/wiki/GBrowse_syn.1" title="GBrowse syn">GBrowse_syn</a></p>
-<p><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway Tools</a></p>
+<p><a href="/wiki/CMap" title="CMap">CMap</a></p>
+<p><a href="/wiki/GBrowse_syn" title="GBrowse syn">GBrowse_syn</a></p>
+<p><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway Tools</a></p>
 <p><a href="/wiki/SynView" title="SynView">SynView</a></p>
 <p><a href="/wiki/Sybil" title="Sybil">Sybil</a></p>
 <p><br />
@@ -709,45 +709,45 @@ component.
 <p><a href="/wiki/GMODTools" title="GMODTools">GMODTools</a></p>
 <p><a href="/wiki/InterMine" title="InterMine">InterMine</a></p>
 <p><a href="/wiki/LuceGene" title="LuceGene">LuceGene</a></p>
-<p><a href="/wiki/XORT.1" title="XORT">XORT</a></p>
+<p><a href="/wiki/XORT" title="XORT">XORT</a></p>
 <p><br />
 </p></td>
 <td data-valign="top"><p><strong>Gene Expression
 Visualization</strong></p>
 <p><a href="/wiki/Caryoscope" title="Caryoscope">Caryoscope</a></p>
 <p><a href="/wiki/GeneXplorer" title="GeneXplorer">GeneXplorer</a></p>
-<p><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway Tools</a></p>
+<p><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway Tools</a></p>
 <p><br />
 <strong>Genome Annotation</strong></p>
-<p><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></p>
+<p><a href="/wiki/Apollo" title="Apollo">Apollo</a></p>
 <p><a href="/wiki/DIYA" title="DIYA">DIYA</a></p>
-<p><a href="/wiki/MAKER.1" title="MAKER">MAKER</a></p>
-<p><a href="/wiki/SOBA.1" title="SOBA">SOBA</a></p>
-<p><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></p>
+<p><a href="/wiki/MAKER" title="MAKER">MAKER</a></p>
+<p><a href="/wiki/SOBA" title="SOBA">SOBA</a></p>
+<p><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></p>
 <p><br />
 <strong>Genome Visualization &amp; Editing</strong></p>
-<p><a href="/wiki/Apollo.1" title="Apollo">Apollo</a></p>
+<p><a href="/wiki/Apollo" title="Apollo">Apollo</a></p>
 <p><a href="/wiki/Flash_GViewer" title="Flash GViewer">Flash GViewer</a></p>
-<p><a href="/wiki/GBrowse.1" title="GBrowse">GBrowse</a></p>
-<p><a href="/wiki/JBrowse.1" title="JBrowse">JBrowse</a></p>
-<p><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway Tools</a></p>
-<p><a href="/wiki/WebGBrowse.1" title="WebGBrowse">WebGBrowse</a></p>
-<p><a href="/wiki/WebApollo.1" title="WebApollo">WebApollo</a></p>
+<p><a href="/wiki/GBrowse" title="GBrowse">GBrowse</a></p>
+<p><a href="/wiki/JBrowse" title="JBrowse">JBrowse</a></p>
+<p><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway Tools</a></p>
+<p><a href="/wiki/WebGBrowse" title="WebGBrowse">WebGBrowse</a></p>
+<p><a href="/wiki/WebApollo" title="WebApollo">WebApollo</a></p>
 <p><br />
 <strong>Literature and Curation Tools</strong></p>
-<p><a href="/wiki/BioDIG.1" title="BioDIG">BioDIG</a></p>
+<p><a href="/wiki/BioDIG" title="BioDIG">BioDIG</a></p>
 <p><a href="/wiki/Canto" title="Canto">Canto</a></p>
 <p><a href="/wiki/Textpresso" title="Textpresso">Textpresso</a></p></td>
 <td data-valign="top"><p><strong>Molecular Pathway
 Visualization</strong></p>
-<p><a href="/wiki/Pathway_Tools.1" title="Pathway Tools">Pathway Tools</a></p>
+<p><a href="/wiki/Pathway_Tools" title="Pathway Tools">Pathway Tools</a></p>
 <p><br />
 <strong>Ontology Visualization</strong></p>
-<p><a href="/wiki/GO_Graphic_Viewer.1" title="GO Graphic Viewer">Go Graphic
+<p><a href="/wiki/GO_Graphic_Viewer" title="GO Graphic Viewer">Go Graphic
 Viewer</a></p>
 <p><br />
 <strong>Workflow Management</strong></p>
-<p><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></p>
+<p><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></p>
 <p><a href="/wiki/TIGR-Workflow_/_Ergatis"
 title="TIGR-Workflow / Ergatis">Ergatis</a></p>
 <p><a href="/wiki/DIYA" title="DIYA">DIYA</a></p>
@@ -761,14 +761,14 @@ title="Chado%253A%253AAutoDBI">Chado%253A%253AAutoDBI</a></p>
 title="Bio%253A%253AChado%253A%253ASchema">Bio%253A%253AChado%253A%253ASchema</a></p>
 <p><br />
 <strong>Tool Integration</strong></p>
-<p><a href="/wiki/Galaxy.1" title="Galaxy">Galaxy</a></p>
+<p><a href="/wiki/Galaxy" title="Galaxy">Galaxy</a></p>
 <p><br />
 <strong>Sequence Alignment</strong></p>
-<p><a href="/wiki/BLAST_Graphic_Viewer.1" title="BLAST Graphic Viewer">Blast
+<p><a href="/wiki/BLAST_Graphic_Viewer" title="BLAST Graphic Viewer">Blast
 Graphic</a></p>
 <p><br />
 <strong>Website front end for Chado DB</strong></p>
-<p><a href="/wiki/Tripal.1" title="Tripal">Tripal</a></p></td>
+<p><a href="/wiki/Tripal" title="Tripal">Tripal</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -789,14 +789,14 @@ the required work.
   combination of these or ...)
 - The goal: create a browser to query and view sequence and sequence
   annotations
-- The core software: [GBrowse](/wiki/GBrowse.1), Apache Web server,
+- The core software: [GBrowse](/wiki/GBrowse), Apache Web server,
   and <a href="http://bioperl.org" class="external text"
   rel="nofollow">Bioperl</a>
 - The hardware: a server running Unix (Linux or Mac) or Windows
 
 1.  Figure out what the annotations should be (i.e. gene coordinates,
     motif matches, oligonucleotide matches, etc. You can try using
-    annotation pipelines like [MAKER](/wiki/MAKER.1) to automatically
+    annotation pipelines like [MAKER](/wiki/MAKER) to automatically
     build these.)
 2.  Install core software
 3.  Create or gather the annotations (BLAST results or HMMER results or
@@ -820,7 +820,7 @@ or you may have to write some of the conversion code yourselves)
 
 Highly recommended. Setting this up will give you a good sense of how
 the software pieces interoperate. Not only that, but
-[GBrowse](/wiki/GBrowse.1) is fun and it comes with sample databases
+[GBrowse](/wiki/GBrowse) is fun and it comes with sample databases
 so once it's installed you have actual genome sequence to play with. You
 can even get GBrowse running nicely on a laptop.
 
@@ -830,8 +830,8 @@ can even get GBrowse running nicely on a laptop.
   of these or ...)
 - The goal: create a browser to query and view sequence and sequence
   annotations along with an editor to manually annotate the sequences
-- The core software: [GBrowse](/wiki/GBrowse.1),
-  [Apollo](/wiki/Apollo.1),
+- The core software: [GBrowse](/wiki/GBrowse),
+  [Apollo](/wiki/Apollo),
   <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a> (plus
   [relational
   database](/wiki/Glossary#Relational_Database_Management_System)),
@@ -889,7 +889,7 @@ system.
 
 1.  Install core software
 2.  Load stock collection data into the Chado database
-3.  Create a [Tripal](/wiki/Tripal.1)-based Web site
+3.  Create a [Tripal](/wiki/Tripal)-based Web site
 
 Challenges:
 
@@ -957,7 +957,7 @@ connectors are built.
 3.  Load map data.
 
 Possible challenge: Step 2, the installation. This may tricky if you
-choose one of the more fully featured packages ([CMap](/wiki/CMap.1) or
+choose one of the more fully featured packages ([CMap](/wiki/CMap) or
 [Sybil](/wiki/Sybil)).
 
 Possible challenge: Step 3, the loading. It is likely that some custom
@@ -965,7 +965,7 @@ coding would be required since map data comes in all sorts of different
 forms.
 
 Skills needed: Basic command-line competence. Some understanding of
-relational databases for [CMap](/wiki/CMap.1) or
+relational databases for [CMap](/wiki/CMap) or
 [Sybil](/wiki/Sybil). Basic programming competence to write the custom
 loading code.
 
@@ -976,7 +976,7 @@ the GMOD mailing lists
 
 Choose one. GMOD offers good choices here, it comes down to your data
 and your resources. [SynView](/wiki/SynView) is the easiest, and it
-comes with [GBrowse](/wiki/GBrowse.1).
+comes with [GBrowse](/wiki/GBrowse).
 
 ## Computing
 
@@ -1017,10 +1017,10 @@ data processing and is also characterized by an extensive open source
 library, so it's highly functional. Many of GMOD components use
 <a href="http://bioperl.org" class="external text"
 
-Some pieces of GMOD, like [GBrowse](/wiki/GBrowse.1), _can_ be
+Some pieces of GMOD, like [GBrowse](/wiki/GBrowse), _can_ be
 extended or customized using Perl but beginners' skills in Perl would be
 sufficient for this work. Just installing and using
-[GBrowse](/wiki/GBrowse.1) in a conventional way does not require
+[GBrowse](/wiki/GBrowse) in a conventional way does not require
 knowledge of Perl or <a href="http://bioperl.org" class="external text"
 
 ##### Java
@@ -1028,7 +1028,7 @@ knowledge of Perl or <a href="http://bioperl.org" class="external text"
 Java is arguably the world's most popular programming language but it is
 not as popular for command-line work on Unix as Perl. It's encountered
 in GMOD primarily as a language to construct user interfaces (e.g.
-[Apollo](/wiki/Apollo.1)).
+[Apollo](/wiki/Apollo)).
 
 #### Apache, the Web Server
 

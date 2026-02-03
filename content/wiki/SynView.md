@@ -13,7 +13,7 @@ alt="SynView Icon.gif" />
   - [README](#README)
 
 Jessica Kissinger's group at University of Georgia have contributed a
-very sophisticated [GBrowse](/wiki/GBrowse.1) configuration file
+very sophisticated [GBrowse](/wiki/GBrowse) configuration file
 that creates a simple synteny viewer inside of GBrowse, which they have
 called SynView. This viewer is in use at
 <a href="http://www.plasmodb.org" class="external text"
@@ -21,7 +21,7 @@ called SynView. This viewer is in use at
 href="http://plasmodb.org/cgi-bin/gbrowse/plasmodb/?name=Pf3D7_11:1278854..1310722;label=AnnotatedGenes-SyntenySpansVivaxMC-SyntenyGenesVivaxMC-SyntenySpansYoeliiMC-SyntenyGenesYoeliiMC-SyntenySpansChabaudiMC-SyntenyGenesChabaudiMC-SyntenySpansKnowlesiMC-SyntenyGenesKnowlesiMC-SyntenySpansBergheiMC-SyntenyGenesBergheiMC;h_feat=PF11_0344@yellow"
 class="external text" rel="nofollow">this one</a>.
 
-SynView is found within the [GBrowse](/wiki/GBrowse.1) distribution,
+SynView is found within the [GBrowse](/wiki/GBrowse) distribution,
 in the gbrowse/contrib/ directory. Also included in the SynView contrib
 directory is a GUSdb adaptor for GBrowse, but that is not required for
 making SynView work.
