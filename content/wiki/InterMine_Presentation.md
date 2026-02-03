@@ -1,23 +1,7 @@
 ---
 title: "InterMine Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">InterMine Presentation</span>
-
-
-
-
-
-
-
+# InterMine Presentation
 
 
 This Wiki page is an edited version of
@@ -25,45 +9,37 @@ This Wiki page is an edited version of
 class="internal" title="InterMine middleware.pdf">Gos's presentation</a>
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Background</span>](#Background)
-- [<span class="tocnumber">2</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview)
-- [<span class="tocnumber">3</span> <span class="toctext">Loading
-  Data</span>](#Loading_Data)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Test
-    problems</span>](#Test_problems)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Example
+  Background](#Background)
+- [Technical
+  Overview](#Technical_Overview)
+- [Loading
+  Data](#Loading_Data)
+  - [Test
+    problems](#Test_problems)
+  - [Example
     InterMine XML for Problem 1: load genes +
-    annotation</span>](#Example_InterMine_XML_for_Problem_1:_load_genes_.2B_annotation)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Resulting
-    webapp object page</span>](#Resulting_webapp_object_page)
-- [<span class="tocnumber">4</span> <span class="toctext">Code for
+    annotation](#Example_InterMine_XML_for_Problem_1:_load_genes_.2B_annotation)
+  - [Resulting
+    webapp object page](#Resulting_webapp_object_page)
+- [Code for
   Problem 2: Print gene annotation
-  report</span>](#Code_for_Problem_2:_Print_gene_annotation_report)
-- [<span class="tocnumber">5</span> <span class="toctext">Quicksearch -
+  report](#Code_for_Problem_2:_Print_gene_annotation_report)
+- [Quicksearch -
   Problem 4: find genes starting with
-  x</span>](#Quicksearch_-_Problem_4:_find_genes_starting_with_x)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Java
-    API</span>](#Java_API)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">IQL</span>](#IQL)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Perl
-    API</span>](#Perl_API)
-- [<span class="tocnumber">6</span> <span class="toctext">Larger
-  Query</span>](#Larger_Query)
-- [<span class="tocnumber">7</span> <span class="toctext">Implications
-  of Query Optimisation</span>](#Implications_of_Query_Optimisation)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
+  x](#Quicksearch_-_Problem_4:_find_genes_starting_with_x)
+  - [Java
+    API](#Java_API)
+  - [IQL](#IQL)
+  - [Perl
+    API](#Perl_API)
+- [Larger
+  Query](#Larger_Query)
+- [Implications
+  of Query Optimisation](#Implications_of_Query_Optimisation)
+- [Acknowledgements](#Acknowledgements)
 
 
-
-#### <span id="Background" class="mw-headline">Background</span>
+#### Background
 
 <a href="http://www.intermine.org" class="external text"
 rel="nofollow">InterMine</a> was developed as the generic underpinnings
@@ -80,7 +56,7 @@ rel="nofollow">FlyMine Project</a>
   funded
 - modENCODE/ Chado
 
-#### <span id="Technical_Overview" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Data model --\> Java classes, relational schema, mappings through
   automatic code generation
@@ -93,7 +69,7 @@ rel="nofollow">FlyMine Project</a>
   - Transparent query re-writing
 - Web application - Struts/JSP/Ajax
 
-#### <span id="Loading_Data" class="mw-headline">Loading Data</span>
+#### Loading Data
 
 - Read-only in production environment (therefore Problems 3 and 5
   skipped)
@@ -103,13 +79,13 @@ rel="nofollow">FlyMine Project</a>
 - Powerful integration system: coarse/fine grained data source
   priorities give load-order independence
 
-##### <span id="Test_problems" class="mw-headline">Test problems</span>
+##### Test problems
 
 - Used SOFA as core data model - similar to Chado.
 - Added Gene.description (absent from model), compiled, loaded data
   (here XML + FASTA), released webapp.
 
-##### <span id="Example_InterMine_XML_for_Problem_1:_load_genes_.2B_annotation" class="mw-headline">Example InterMine XML for Problem 1: load genes + annotation</span>
+##### Example InterMine XML for Problem 1: load genes + annotation
 
 
 ``` de1
@@ -129,13 +105,13 @@ rel="nofollow">FlyMine Project</a>
 ```
 
 
-##### <span id="Resulting_webapp_object_page" class="mw-headline">Resulting webapp object page</span>
+##### Resulting webapp object page
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/Xfile_gene.png" width="793" height="595"
 alt="xfile Gene details page" />
 
-#### <span id="Code_for_Problem_2:_Print_gene_annotation_report" class="mw-headline">Code for Problem 2: Print gene annotation report</span>
+#### Code for Problem 2: Print gene annotation report
 
 
 ``` de1
@@ -198,9 +174,9 @@ public class BakeOff {
 ```
 
 
-#### <span id="Quicksearch_-_Problem_4:_find_genes_starting_with_x" class="mw-headline">Quicksearch - Problem 4: find genes starting with x</span>
+#### Quicksearch - Problem 4: find genes starting with x
 
-##### <span id="Java_API" class="mw-headline">Java API</span>
+##### Java API
 
 
 ``` de1
@@ -216,7 +192,7 @@ public class BakeOff {
 ```
 
 
-##### <span id="IQL" class="mw-headline">IQL</span>
+##### IQL
 
 
 ``` de1
@@ -224,7 +200,7 @@ public class BakeOff {
 ```
 
 
-##### <span id="Perl_API" class="mw-headline">Perl API</span>
+##### Perl API
 
 
 ``` de1
@@ -233,20 +209,14 @@ public class BakeOff {
 ```
 
 
-#### <span id="Larger_Query" class="mw-headline">Larger Query</span>
+#### Larger Query
 
 Within FlyMine: For one or more genes report:
 
 - Gene, Transcripts, Exons, Chromosomal Locations, Lengths
-
-<!-- -->
-
 - Query joins 7 classes
   - all are on select list of query
   - many more tables than classes are joined
-
-<!-- -->
-
 - Performance:
   - One gene:
     - 2 rows in ~2 seconds
@@ -255,14 +225,14 @@ Within FlyMine: For one or more genes report:
       enhance performance)
     - ~300,000 rows in ~1 second (using pre-computation)
 
-#### <span id="Implications_of_Query_Optimisation" class="mw-headline">Implications of Query Optimisation</span>
+#### Implications of Query Optimisation
 
 - Performance optimisation not tied to schema design
 - Can adapt performance optimisation to usage of live database
 - Template queries pre-computed
   - ~40 template queries run per gene details page - renders in seconds
 
-#### <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
+#### Acknowledgements
 
 - Richard Smith
 - Kim Rutherford
@@ -288,87 +258,6 @@ awarded to M. Ashburner, G. Micklem, S. Russell, K. Lilley and K.
 Mizuguchi.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [InterMine](Category%253AInterMine "Category%253AInterMine")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/InterMine_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">62,270 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

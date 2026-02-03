@@ -1,33 +1,13 @@
 ---
 title: "GMOD Malaysia 2014"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Malaysia 2014</span>
-
-
-
-
-
-
-
-
-
+# GMOD Malaysia 2014
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/300px-GMOD-malaysia.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/450px-GMOD-malaysia.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a3/GMOD-malaysia.png/600px-GMOD-malaysia.png 2x"
 width="300" height="190" alt="GMOD-malaysia.png" />
-
-
 
 
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
@@ -72,35 +52,26 @@ class="external text" rel="nofollow">GMOD announce mailing list</a> to
 be kept apprised on updates on the summer school.
 
 
-## Contents
+  Feedback](#Feedback)
+- [Schedule](#Schedule)
+- [Details](#Details)
+- [Participants](#Participants)
+- [Course
+  Sponsor](#Course_Sponsor)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Schedule</span>](#Schedule)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Details</span>](#Details)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">5</span> <span class="toctext">Course
-  Sponsor</span>](#Course_Sponsor)
-
-
-
-## <span id="Feedback" class="mw-headline">Feedback</span>
+## Feedback
 
 Please provide <a
 href="https://docs.google.com/forms/d/1BB1PUjlEH7NGcUVIWbDC2FBfu1DGMBILARzVNJdzw_4/viewform"
 class="external text" rel="nofollow">feedback on the course</a>.
 
-## <span id="Schedule" class="mw-headline">Schedule</span>
+## Schedule
 
 [Course
 Schedule](GMOD_Malaysia_2014/Schedule "GMOD Malaysia 2014/Schedule")
 
-## <span id="Details" class="mw-headline">Details</span>
+## Details
 
 Date: 26-28 February 2014; starting 9am and finishing at 6pm each day.
 
@@ -121,7 +92,7 @@ secure the discounted rate.
 
   
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/74/GMODMalaysia2014GroupPhoto.jpg/200px-GMODMalaysia2014GroupPhoto.jpg"
@@ -131,7 +102,7 @@ width="200" height="123" alt="GMODMalaysia2014GroupPhoto.jpg" /> See
 class="internal" title="GMODMalaysia2014GroupPhoto.jpg">the group
 photo</a>.
 
-## <span id="Course_Sponsor" class="mw-headline">Course Sponsor</span>
+## Course Sponsor
 
 GMOD Malaysia 2014 is made possible by the extremely generous support of
 **<a href="http://nescent.org" class="external text"
@@ -148,87 +119,6 @@ program, and is supported by a three-year grant from the NSF. GMOD is
 very grateful to be a beneficiary of this generous program.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Malaysia_2014" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:59 on 26 March
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">118,791 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

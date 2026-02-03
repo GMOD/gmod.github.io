@@ -1,24 +1,7 @@
 ---
 title: "Modware"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Modware</span>
-
-
-
-
-
-
-
-
+# Modware
 
 
 <a href="http://gmod-ware.sourceforge.net/" rel="nofollow"
@@ -28,23 +11,13 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="300" height="158" alt="Modware" /></a>
 
 
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Status</span>](#Status)
-- [<span class="tocnumber">2</span> <span class="toctext">Getting
-  Started</span>](#Getting_Started)
-- [<span class="tocnumber">3</span> <span class="toctext">Feedback
-  Wanted</span>](#Feedback_Wanted)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Acknowledgments</span>](#Acknowledgments)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Support</span>](#Support)
+  Status](#Status)
+- [Getting
+  Started](#Getting_Started)
+- [Feedback
+  Wanted](#Feedback_Wanted)
+- [Acknowledgments](#Acknowledgments)
+- [Support](#Support)
 
 
 <a href="http://gmod-ware.sourceforge.net/" class="external text"
@@ -84,7 +57,7 @@ feature requests.
 - For a general discussion of GMOD Middleware: [GMOD
   Middleware](GMOD_Middleware "GMOD Middleware")
 
-## <span id="Status" class="mw-headline">Status</span>
+## Status
 
 Good news and update on the current status of Modware development.
 Modware is getting back on track and is currently being actively
@@ -113,7 +86,7 @@ The first CPAN release is expected to be early next year.
 *Siddhartha Basu, Modware developer,
 [dictyBase](Category%253ADictyBase "Category%253ADictyBase"), 2010/10/28*
 
-## <span id="Getting_Started" class="mw-headline">Getting Started</span>
+## Getting Started
 
 - Install [Chado](Chado_-_Getting_Started "Chado - Getting Started")
 - Install Modware, and there is an option to `make install_sample` that
@@ -125,7 +98,7 @@ The first CPAN release is expected to be early next year.
 
   
 
-## <span id="Feedback_Wanted" class="mw-headline">Feedback Wanted</span>
+## Feedback Wanted
 
 Recently, a VMware Virtual Machine was released to make download and
 testing of a fully configured and installed version of Modware
@@ -143,7 +116,7 @@ rel="nofollow">gmod-ware-users@sourceforge.net</a>.
 
   
 
-## <span id="Acknowledgments" class="mw-headline">Acknowledgments</span>
+## Acknowledgments
 
 This software was developed for dictyBase at the Center for Genetic
 Medicine at Northwestern University, which is funded by NIH Grants
@@ -151,7 +124,7 @@ GM64426 and HG0022.
 
   
 
-## <span id="Support" class="mw-headline">Support</span>
+## Support
 
 |  |  |  |  |
 |----|----|----|----|
@@ -161,91 +134,3 @@ class="external text" rel="nofollow">gmod-ware-users</a> | **Modware** support a
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"
 class="external text" rel="nofollow">Sourceforge</a> |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [DictyBase](Category%253ADictyBase "Category%253ADictyBase")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Modware](Category%253AModware "Category%253AModware")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Modware" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:01 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">112,690 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

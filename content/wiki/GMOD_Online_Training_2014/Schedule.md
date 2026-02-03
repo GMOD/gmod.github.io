@@ -1,26 +1,10 @@
 ---
 title: "GMOD Online Training 2014/Schedule"
 ---
+# GMOD Online Training 2014/Schedule
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Online Training 2014/Schedule</span>
-
-
-
-
-
-
-
-
-
-## <span id="Schedule" class="mw-headline">Schedule</span>
+## Schedule
 
 Classes start at 9am Eastern Daylight Time (UTC-4).
 
@@ -172,101 +156,9 @@ rel="nofollow">University of Cambridge, UK</a><br />
 </tbody>
 </table>
 
-## <span id="Sponsors" class="mw-headline">Sponsors</span>
+## Sponsors
 
 GMOD thanks the generous grant from the Amazon
 <a href="http://aws.amazon.com/grants/" class="external text"
 rel="nofollow">AWS in Education program</a>, which provided free compute
 time on Amazon Web Services for the course tutors and participants.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Schools](../Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_Online_Training_2014-2FSchedule"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 07:42 on 22 May
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">66,642 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

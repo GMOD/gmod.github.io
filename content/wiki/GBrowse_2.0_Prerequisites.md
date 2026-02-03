@@ -1,23 +1,7 @@
 ---
 title: "GBrowse 2.0 Prerequisites"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse 2.0 Prerequisites</span>
-
-
-
-
-
-
-
+# GBrowse 2.0 Prerequisites
 
 
 Before [installing GBrowse
@@ -28,42 +12,33 @@ line or via GUI tools. This document describes the prerequisites for
 Linux, Mac OSX, and Microsoft Windows systems.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Linux
   systems</span>](#Linux_systems)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Applications and
-    Libraries</span>](#Applications_and_Libraries)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Binary
-    Packages</span>](#Binary_Packages)
-    - [<span class="tocnumber">1.2.1</span> <span class="toctext">DEB
-      Systems (apt)</span>](#DEB_Systems_.28apt.29)
-      - [<span class="tocnumber">1.2.1.1</span>
-        <span class="toctext">Ubuntu 10.04/11.04
-        Issue</span>](#Ubuntu_10.04.2F11.04_Issue)
-    - [<span class="tocnumber">1.2.2</span> <span class="toctext">RPM
-      Systems (yum)</span>](#RPM_Systems_.28yum.29)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Installing
-    BioPerl</span>](#Installing_BioPerl)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">MacOSX</span>](#MacOSX)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Fink
-    Way</span>](#Fink_Way)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Mac Ports
-    Way</span>](#Mac_Ports_Way)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Perl
-    Modules</span>](#Perl_Modules)
+  - [Applications and
+    Libraries](#Applications_and_Libraries)
+  - [Binary
+    Packages](#Binary_Packages)
+    - [DEB
+      Systems (apt)](#DEB_Systems_.28apt.29)
+      - [Ubuntu 10.04/11.04
+        Issue](#Ubuntu_10.04.2F11.04_Issue)
+    - [RPM
+      Systems (yum)](#RPM_Systems_.28yum.29)
+  - [Installing
+    BioPerl](#Installing_BioPerl)
+- [MacOSX](#MacOSX)
+  - [Fink
+    Way](#Fink_Way)
+  - [Mac Ports
+    Way](#Mac_Ports_Way)
+  - [Perl
+    Modules](#Perl_Modules)
 
 
-
-# <span id="Linux_systems" class="mw-headline">Linux systems</span>
+# Linux systems
 
 The following prerequisites are needed to run GBrowse on Linux systems:
 
-## <span id="Applications_and_Libraries" class="mw-headline">Applications and Libraries</span>
+## Applications and Libraries
 
 - The <a href="http://httpd.apache.org" class="external text"
   rel="nofollow">Apache2 web server</a>
@@ -97,14 +72,14 @@ should install the inkscape package:
 These applications can be installed from source code or from binary
 packages using one of the binary packaging systems described below.
 
-## <span id="Binary_Packages" class="mw-headline">Binary Packages</span>
+## Binary Packages
 
 If you use a modern Linux distribution, most prerequisites are available
 as binary packages. There are two common package managers, Debian (DEB)
 and RedHat Package Manager (RPM). The next section shows you how to use
 command-line package management tools to install the prerequisites.
 
-### <span id="DEB_Systems_.28apt.29" class="mw-headline">DEB Systems (apt)</span>
+### DEB Systems (apt)
 
 Distributions on which apt is installed by default include Ubuntu (and
 its variants), Debian, and Mint. To install all prerequisites except for
@@ -148,8 +123,7 @@ source code this way:
      sudo ./Build install
 
 
-
-#### <span id="Ubuntu_10.04.2F11.04_Issue" class="mw-headline">Ubuntu 10.04/11.04 Issue</span>
+#### Ubuntu 10.04/11.04 Issue
 
 The binary version of the GD Perl module that is packaged for Ubuntu
 10.04 (Lucid Lynx) and 11.04 (Natty Narwhal) contains a bug that causes
@@ -165,8 +139,7 @@ described in [GBrowse 2.0 Install
 HOWTO](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO").
 
 
-
-### <span id="RPM_Systems_.28yum.29" class="mw-headline">RPM Systems (yum)</span>
+### RPM Systems (yum)
 
 This includes Fedora, RedHat, SuSE, Mandriva, PCLinuxOS, and CentOS.
 Most of these distributions have the command line package management
@@ -197,7 +170,7 @@ the manner shown above):
     yum install inkscape
     yum install perl-GD-SVG
 
-## <span id="Installing_BioPerl" class="mw-headline">Installing BioPerl</span>
+## Installing BioPerl
 
 You should use version 1.7.1 of BioPerl, currently available from CPAN:
 
@@ -208,9 +181,9 @@ You're done installing prerequisites! You can now go back to the
 HOWTO](GBrowse_2.0_Install_HOWTO.1 "GBrowse 2.0 Install HOWTO"), and
 follow the installation instructions for your platform.
 
-# <span id="MacOSX" class="mw-headline">MacOSX</span>
+# MacOSX
 
-## <span id="Fink_Way" class="mw-headline">Fink Way</span>
+## Fink Way
 
 These instructions apply to Macintosh OSX version 10.5, using the *fink*
 binary installer. First, download and install
@@ -241,7 +214,7 @@ following commands as the root user or with *sudo* (as shown):
 If it isn't already activated, turn the Apache server on by activating
 *Control Panel-\>Sharing-\>Web Sharing*.
 
-## <span id="Mac_Ports_Way" class="mw-headline">Mac Ports Way</span>
+## Mac Ports Way
 
 First, download and install MySQL Community Server form
 <a href="http://dev.mysql.com/downloads/mysql/" class="external free"
@@ -292,7 +265,7 @@ Install Bioperl
      ./Build test
      sudo ./Build install
 
-## <span id="Perl_Modules" class="mw-headline">Perl Modules</span>
+## Perl Modules
 
 GBrowse depends on the following standard Perl libraries:
 
@@ -329,87 +302,6 @@ In addition, the following optional Perl libraries are recommended:
     Math::BigInt and Net::OpenId::Consumer.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_2.0_Prerequisites"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:20 on 15 January
-  2017.</span>
-<!-- - <span id="footer-info-viewcount">269,705 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "Publications"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Publications</span>
-
-
-
-
-
-
-
+# Publications
 
 
   
@@ -30,7 +14,7 @@ An RSS feed is also available of <a
 href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1rYqyBTl7b-RGg0Z2VyJ3qxRyk9isw5zsgp2OSmpJNKSu0PoPh"
 class="external text" rel="nofollow">new GMOD articles on PubMed</a>.
 
-## <span id="GMOD_on_Mendeley" class="mw-headline">GMOD on Mendeley</span>
+## GMOD on Mendeley
 
 If you use Mendeley, please join the <a
 href="http://www.mendeley.com/groups/2472261/generic-model-organism-database-gmod-project/"
@@ -38,7 +22,7 @@ class="external text" rel="nofollow">GMOD group</a> and contribute GMOD
 and GMOD-related papers to the pool there. The following feed shows
 papers recently added to the GMOD Mendeley group.
 
-## <span id="Articles" class="mw-headline">Articles</span>
+## Articles
 
 Sorted by PubMed ID, highest (most recent) first. This listing is
 compatible with the
@@ -344,7 +328,7 @@ rel="nofollow">COiNs bibliographic data</a>.
 
   
 
-## <span id="Adding_Citations" class="mw-headline">Adding Citations</span>
+## Adding Citations
 
 Enter them into the **Articles** section. References are ordered by
 PMID, most recent (highest) PMID first; please enter your reference in
@@ -356,91 +340,3 @@ Example:
 
   
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [Help](Category%253AHelp "Category%253AHelp")
-- [Publications](Category%253APublications "Category%253APublications")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Publications" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:22 on 9 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">186,908 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "Jun 2016 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Jun 2016 GMOD Meeting</span>
-
-
-
-
-
-
-
+# Jun 2016 GMOD Meeting
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
@@ -81,30 +65,22 @@ the
 help desk</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About
   GMOD</span>](#About_GMOD)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">3</span> <span class="toctext">Draft
-  Agenda</span>](#Draft_Agenda)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Walnut
-    room, Thursday, June 30</span>](#Walnut_room.2C_Thursday.2C_June_30)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Friday,
-    July 1</span>](#Friday.2C_July_1)
-- [<span class="tocnumber">4</span> <span class="toctext">Agenda
-  items</span>](#Agenda_items)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Shared
-    Rides</span>](#Shared_Rides)
+- [Registration](#Registration)
+- [Draft
+  Agenda](#Draft_Agenda)
+  - [Walnut
+    room, Thursday, June 30](#Walnut_room.2C_Thursday.2C_June_30)
+  - [Friday,
+    July 1](#Friday.2C_July_1)
+- [Agenda
+  items](#Agenda_items)
+- [Logistics](#Logistics)
+  - [Shared
+    Rides](#Shared_Rides)
 
 
-
-## <span id="About_GMOD" class="mw-headline">About GMOD</span>
+## About GMOD
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
@@ -129,16 +105,16 @@ data integration, management, and querying, and
 
   
 
-## <span id="Registration" class="mw-headline">Registration</span>
+## Registration
 
 Please register online at EventBrite. Early bird registration ends May
 30th.
 
 The registration fee includes lunch on June 30th.
 
-## <span id="Draft_Agenda" class="mw-headline">Draft Agenda</span>
+## Draft Agenda
 
-### <span id="Walnut_room.2C_Thursday.2C_June_30" class="mw-headline">Walnut room, Thursday, June 30</span>
+### Walnut room, Thursday, June 30
 
 | Time | Topic | Presenter(s) | Presentation |
 |----|----|----|----|
@@ -171,7 +147,7 @@ href="http://arthropods.eugenes.org/EvidentialGene/about/evigenegmod1606iu.pdf"
 class="external text" rel="nofollow">Slides</a> |
 | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") |  |
 
-### <span id="Friday.2C_July_1" class="mw-headline">Friday, July 1</span>
+### Friday, July 1
 
 | Time | Topic | Presenter(s) | Presentation |
 |----|----|----|----|
@@ -182,7 +158,7 @@ title="GMOD Asela.pdf">Asela/LanzaTech</a> |
 | 11:30 | Lunch (on your own) |  |  |
 | 1:00 | Tripal workshop |  |  |
 
-## <span id="Agenda_items" class="mw-headline">Agenda items</span>
+## Agenda items
 
 More to be added as we confirm more speakers. If you are interested in
 giving a talk please contact the
@@ -207,7 +183,7 @@ help desk</a>.
 - GMOD in Action: The Legume Federation Project (Ethalinda Cannon)
 - [Tripal](Tripal.1 "Tripal") Workshop (Friday afternoon)
 
-## <span id="Logistics" class="mw-headline">Logistics</span>
+## Logistics
 
 If you require lodging, we have partnered with the
 <a href="https://gcc2016.iu.edu/" class="external text"
@@ -216,7 +192,7 @@ rel="nofollow">2016 Galaxy Community Conference</a>.
 You DO NOT have to register for the GCC2016 conference to utilize
 housing. Just check HOUSING ONLY when registering.
 
-### <span id="Shared_Rides" class="mw-headline">Shared Rides</span>
+### Shared Rides
 
 Please put your travel times <a
 href="https://docs.google.com/spreadsheets/d/1sBD74e9DTldNshPgZzRNQspts1f9pASjMww105-m-5s/edit#gid=0#gid=0"
@@ -237,90 +213,3 @@ rel="nofollow">SBRI</a>, and past GMOD meeting participant
 
 (Thanks to [Dave Clements](User%253AClements "User%253AClements") for the nice
 logo)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Jun_2016_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:23 on 23 August
-  2016.</span>
-<!-- - <span id="footer-info-viewcount">210,779 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Configuration/Authentication"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/Authentication</span>
-
-
-
-
-
-
-
+# GBrowse Configuration/Authentication
 
 
 This article describes **user authentication** and how to configure it
@@ -27,41 +11,30 @@ to work with GBrowse.
 HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").*
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Authentication
   & Authorization,
   Introduction</span>](#Authentication_.26_Authorization.2C_Introduction)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Authentication
-    Systems</span>](#Authentication_Systems)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">GBrowse
+  - [Authentication
+    Systems](#Authentication_Systems)
+  - [GBrowse
     Authentication via Apache's Built-in Authentication
-    Modules</span>](#GBrowse_Authentication_via_Apache.27s_Built-in_Authentication_Modules)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">GBrowse
+    Modules](#GBrowse_Authentication_via_Apache.27s_Built-in_Authentication_Modules)
+  - [GBrowse
     Authentication via its Built-in User Account
-    Database</span>](#GBrowse_Authentication_via_its_Built-in_User_Account_Database)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">Configuration</span>](#Configuration)
-      - [<span class="tocnumber">1.3.1.1</span>
-        <span class="toctext">Adding User
-        Accounts</span>](#Adding_User_Accounts)
-      - [<span class="tocnumber">1.3.1.2</span>
-        <span class="toctext">Restricting Access to Datasources with
+    Database](#GBrowse_Authentication_via_its_Built-in_User_Account_Database)
+    - [Configuration](#Configuration)
+      - [Adding User
+        Accounts](#Adding_User_Accounts)
+      - [Restricting Access to Datasources with
         GBrowse Account
-        Database</span>](#Restricting_Access_to_Datasources_with_GBrowse_Account_Database)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">GBrowse
+        Database](#Restricting_Access_to_Datasources_with_GBrowse_Account_Database)
+  - [GBrowse
     Authentication via Authentication
-    Plugins</span>](#GBrowse_Authentication_via_Authentication_Plugins)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">Group-based
-      Authorization</span>](#Group-based_Authorization)
+    Plugins](#GBrowse_Authentication_via_Authentication_Plugins)
+    - [Group-based
+      Authorization](#Group-based_Authorization)
 
 
-
-## <span id="Authentication_.26_Authorization.2C_Introduction" class="mw-headline">Authentication & Authorization, Introduction</span>
+## Authentication & Authorization, Introduction
 
 You can restrict who has access to gbrowse by IP address, host name,
 domain, username and password, by OpenID, or, via the authentication
@@ -70,7 +43,7 @@ crypto card. Restriction can apply to the database as a whole, or to
 particular annotation tracks. You can also make a datasource visible
 only to authorized users.
 
-### <span id="Authentication_Systems" class="mw-headline">Authentication Systems</span>
+### Authentication Systems
 
 As of version 2.20, GBrowse has three distinct authentication
 mechanisms:
@@ -119,7 +92,7 @@ defined in /etc/nsswitch.conf, and the LDAP authentication plugin,
 PAM module is the most flexible, so we describe it in detail later in
 this article.
 
-### <span id="GBrowse_Authentication_via_Apache.27s_Built-in_Authentication_Modules" class="mw-headline">GBrowse Authentication via Apache's Built-in Authentication Modules</span>
+### GBrowse Authentication via Apache's Built-in Authentication Modules
 
 To use Apache's standard authentication and authorization system, we
 take advantage of the fact that GBrowse uses a URL of this form to
@@ -277,7 +250,7 @@ following to the \[GENERAL\] section of yeast_simple.conf:
 This will return an unauthorized message for anyone except the four
 named users.
 
-### <span id="GBrowse_Authentication_via_its_Built-in_User_Account_Database" class="mw-headline">GBrowse Authentication via its Built-in User Account Database</span>
+### GBrowse Authentication via its Built-in User Account Database
 
 The GBrowse user account system provides users with a link in the upper
 right corner of the screen that lets them login, register, and manage
@@ -289,8 +262,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="437" height="262" alt="Gbrowse login.png" /></a>
 
 
-
-#### <span id="Configuration" class="mw-headline">Configuration</span>
+#### Configuration
 
 The GBrowse user account system is activated when the following
 requirements are met:
@@ -362,7 +334,6 @@ Here is more information on these options:
 user_account_db
 
 
-
 This is a
 <a href="http://dbi.perl.org/" class="external text" rel="nofollow">Perl
 DBI</a>-style description of the database that will hold user accounts.
@@ -393,7 +364,6 @@ For SQLite databases, the format is:
 The latter part of the description is a path to the database file.
 
 
-
 user_accounts, user_accounts_registration, user_accounts_openid  
 These options turn on and off user accounts, new users' ability to
 register themselves and OpenID support, respectively. Pass a true value
@@ -401,7 +371,6 @@ register themselves and OpenID support, respectively. Pass a true value
 comment out the option) to turn the feature off.
 
 smtp_gateway
-
 
 
 This option sets the mail gateway that GBrowse uses to register new
@@ -440,7 +409,6 @@ Replace "john.doe" and "open_sesame" with the appropriate username and
 password for the service.
 
 
-
 application_name, application_name_long, email_address  
 These options control the "From" address that users will see when they
 receive their account registration confirmations. The defaults should
@@ -472,7 +440,7 @@ above) must have SELECT, INSERT, DELETE and UPDATE privileges. The
 gbrowse_metadb_config.pl script will check and fix the permissions for
 you.
 
-##### <span id="Adding_User_Accounts" class="mw-headline">Adding User Accounts</span>
+##### Adding User Accounts
 
 You can create a new user account using **gbrowse_create_account.pl**,
 which is installed with GBrowse. If user self-registration is turned
@@ -502,7 +470,7 @@ this user, then the script will relaunch itself under
 rel="nofollow">sudo</a>. Sudo may prompt you for your login password; do
 not get your password confused with the new user's password!
 
-##### <span id="Restricting_Access_to_Datasources_with_GBrowse_Account_Database" class="mw-headline">Restricting Access to Datasources with GBrowse Account Database</span>
+##### Restricting Access to Datasources with GBrowse Account Database
 
 You can restrict access to datasources and individual tracks using
 exactly the same **restrict** syntax described in the previous section.
@@ -531,7 +499,7 @@ As in Apache-based authorization, you can shield the name of the
 datasource from view in the popup datasources menu by placing a
 "restrict" in the GBrowse.conf stanza that describes the datasource.
 
-### <span id="GBrowse_Authentication_via_Authentication_Plugins" class="mw-headline">GBrowse Authentication via Authentication Plugins</span>
+### GBrowse Authentication via Authentication Plugins
 
 GBrowse (versions 2.20 and higher) offers user authentication via a
 plug-in mechanism that lets organizations integrate the software with
@@ -599,7 +567,7 @@ username and password. See
 for more information on customizing the plugin, including how to add
 site-specific messages to the login dialog.
 
-#### <span id="Group-based_Authorization" class="mw-headline">Group-based Authorization</span>
+#### Group-based Authorization
 
 The PamAuthenticate plugin allows you to authorize users via their group
 membership. The syntax is similar to the "require user" directive
@@ -615,96 +583,3 @@ members of either the "Principal_Investigators" or "Postdocs" groups.
 be placed in a datasource configuration file's track stanza, in its
 \[GENERAL\] section, or in the stanza in GBrowse.conf that refers to the
 datasource.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](../Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](../Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_Configuration-2FAuthentication"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:08 on 4 December
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">131,924 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

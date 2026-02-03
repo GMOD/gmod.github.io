@@ -1,23 +1,7 @@
 ---
 title: "IGS Data Representation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">IGS Data Representation</span>
-
-
-
-
-
-
-
+# IGS Data Representation
 
 
 Chado is an elegant schema that can hold nearly anything from gene
@@ -34,64 +18,52 @@ Practices](Chado_Best_Practices "Chado Best Practices") page, into which
 much of this information may become merged at some point.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">What we store
   (scope)</span>](#What_we_store_.28scope.29)
-- [<span class="tocnumber">2</span> <span class="toctext">Feature naming
-  convention</span>](#Feature_naming_convention)
-- [<span class="tocnumber">3</span> <span class="toctext">Structural
-  annotation</span>](#Structural_annotation)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Gene
-    models</span>](#Gene_models)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Canonical gene
-      model</span>](#Canonical_gene_model)
-- [<span class="tocnumber">4</span> <span class="toctext">Functional
-  annotation</span>](#Functional_annotation)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Gene
-    product name</span>](#Gene_product_name)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Gene
-    symbol</span>](#Gene_symbol)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">GO
-    terms</span>](#GO_terms)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Representation of the GO
-      ontology</span>](#Representation_of_the_GO_ontology)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Assigning GO terms to
-      features</span>](#Assigning_GO_terms_to_features)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Enzyme
-    Commission (EC) number</span>](#Enzyme_Commission_.28EC.29_number)
-- [<span class="tocnumber">5</span> <span class="toctext">Storing
-  Analyses</span>](#Storing_Analyses)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">BLAST
-    data</span>](#BLAST_data)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">HMM
-    alignments</span>](#HMM_alignments)
-  - [<span class="tocnumber">5.3</span>
-    <span class="toctext">Comparative data</span>](#Comparative_data)
-- [<span class="tocnumber">6</span> <span class="toctext">Versioning of
-  features</span>](#Versioning_of_features)
-  - [<span class="tocnumber">6.1</span>
-    <span class="toctext">Background</span>](#Background)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Start site
-    edits</span>](#Start_site_edits)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Deleting a
-    gene</span>](#Deleting_a_gene)
-- [<span class="tocnumber">7</span> <span class="toctext">Data
-  de-normalization</span>](#Data_de-normalization)
-  - [<span class="tocnumber">7.1</span>
-    <span class="toctext">Materialized views (chado
-    marts)</span>](#Materialized_views_.28chado_marts.29)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Disk
-    Caching</span>](#Disk_Caching)
+- [Feature naming
+  convention](#Feature_naming_convention)
+- [Structural
+  annotation](#Structural_annotation)
+  - [Gene
+    models](#Gene_models)
+    - [Canonical gene
+      model](#Canonical_gene_model)
+- [Functional
+  annotation](#Functional_annotation)
+  - [Gene
+    product name](#Gene_product_name)
+  - [Gene
+    symbol](#Gene_symbol)
+  - [GO
+    terms](#GO_terms)
+    - [Representation of the GO
+      ontology](#Representation_of_the_GO_ontology)
+    - [Assigning GO terms to
+      features](#Assigning_GO_terms_to_features)
+  - [Enzyme
+    Commission (EC) number](#Enzyme_Commission_.28EC.29_number)
+- [Storing
+  Analyses](#Storing_Analyses)
+  - [BLAST
+    data](#BLAST_data)
+  - [HMM
+    alignments](#HMM_alignments)
+  - [Comparative data](#Comparative_data)
+- [Versioning of
+  features](#Versioning_of_features)
+  - [Background](#Background)
+  - [Start site
+    edits](#Start_site_edits)
+  - [Deleting a
+    gene](#Deleting_a_gene)
+- [Data
+  de-normalization](#Data_de-normalization)
+  - [Materialized views (chado
+    marts)](#Materialized_views_.28chado_marts.29)
+  - [Disk
+    Caching](#Disk_Caching)
 
 
-
-## <span id="What_we_store_.28scope.29" class="mw-headline">What we store (scope)</span>
+## What we store (scope)
 
 We currently use the Chado schema primarily to store genome annotation
 data, including comparative genomics. This includes both read-only
@@ -111,7 +83,7 @@ rel="nofollow">Gemina</a> and
 <a href="http://pathema.jcvi.org" class="external text"
 rel="nofollow">Pathema</a>.
 
-## <span id="Feature_naming_convention" class="mw-headline">Feature naming convention</span>
+## Feature naming convention
 
 The *de novo* features we store in Chado follow the same naming
 convention, which is db.feature_type.N.M, where 'db' is an abbreviation
@@ -121,7 +93,7 @@ scoped to that feature type, and M is the version number of that
 feature. So the second version of a gene from our *Aspergillus
 fumigatus* annotation project may have a name like: afu.gene.3320.2
 
-## <span id="Structural_annotation" class="mw-headline">Structural annotation</span>
+## Structural annotation
 
 Our structural representation differs quite a bit from the current
 recommended implementation. The canonical gene model below illustrates
@@ -130,9 +102,9 @@ beginning to be covered well on the [Chado Best
 Practices](Chado_Best_Practices "Chado Best Practices") page and instead
 focus on functional annotation, which isn't.
 
-### <span id="Gene_models" class="mw-headline">Gene models</span>
+### Gene models
 
-#### <span id="Canonical_gene_model" class="mw-headline">Canonical gene model</span>
+#### Canonical gene model
 
 The following query shows all the features in our gene graph as well as
 their relationships. The example query is for a transcript feature
@@ -159,7 +131,7 @@ their relationships. The example query is for a transcript feature
 ```
 
 
-## <span id="Functional_annotation" class="mw-headline">Functional annotation</span>
+## Functional annotation
 
 The assertions made in functional annotation differ greatly between MODs
 and annotation sources in general. Our minimal goal is to provide the
@@ -174,7 +146,7 @@ Ideally, evidence should also be stored for each of these assertions. We
 currently attach all annotation to the 'transcript' feature in each gene
 graph.
 
-### <span id="Gene_product_name" class="mw-headline">Gene product name</span>
+### Gene product name
 
 Both gene product name and their evidence are stored as feature
 properties of the transcript. To query both:
@@ -204,19 +176,19 @@ to the HMM with ID TIGR01354. Ideally, this would be a dbxref and not
 simply the value of a featureprop, but we had to do it this way because
 there is no featureprop_dbxref table.
 
-### <span id="Gene_symbol" class="mw-headline">Gene symbol</span>
+### Gene symbol
 
 Gene symbols and their evidence are stored just like the gene product
 names described above, except that the terms used are 'gene_symbol' and
 'gene_symbol_source'.
 
-### <span id="GO_terms" class="mw-headline">GO terms</span>
+### GO terms
 
 Here I'll discuss first how the collection of terms that makes up GO is
 stored in the Chado schema and then discuss how we assign these terms to
 features.
 
-#### <span id="Representation_of_the_GO_ontology" class="mw-headline">Representation of the GO ontology</span>
+#### Representation of the GO ontology
 
 The source of the data is an entry within an OBO file, such as:
 
@@ -325,7 +297,7 @@ So, reviewing, to get the basic annotation for a GO term:
 What about the xref_analog entries we saw in the OBO definition? The
 additional entries are stored using the cvterm_dxref table.
 
-#### <span id="Assigning_GO_terms_to_features" class="mw-headline">Assigning GO terms to features</span>
+#### Assigning GO terms to features
 
 A more narrative description has yet to be written, but here's a query
 to get all assigned GO terms for a given transcript, with evidence.
@@ -355,27 +327,27 @@ to get all assigned GO terms for a given transcript, with evidence.
 ```
 
 
-### <span id="Enzyme_Commission_.28EC.29_number" class="mw-headline">Enzyme Commission (EC) number</span>
+### Enzyme Commission (EC) number
 
 We convert the enzyme.dat file distributed by ExPASy to an ontology in
 OBO format and load them along with GO and SO. Further notes should go
 here.
 
-## <span id="Storing_Analyses" class="mw-headline">Storing Analyses</span>
+## Storing Analyses
 
-### <span id="BLAST_data" class="mw-headline">BLAST data</span>
+### BLAST data
 
-### <span id="HMM_alignments" class="mw-headline">HMM alignments</span>
+### HMM alignments
 
-### <span id="Comparative_data" class="mw-headline">Comparative data</span>
+### Comparative data
 
 Our mechanisms for storing comparative computes are already described in
 the page discussion [Sybil Chado Comparative Genomics
 Data](Sybil_Chado_Comparative_Genomics_Data "Sybil Chado Comparative Genomics Data")
 
-## <span id="Versioning_of_features" class="mw-headline">Versioning of features</span>
+## Versioning of features
 
-### <span id="Background" class="mw-headline">Background</span>
+### Background
 
 One important requirement for any institution doing active annotation
 with the schema is the ability to store a versioned history of genes as
@@ -394,7 +366,7 @@ analysis for a polypeptide, as an example, and then change the
 coordinates of the feature all linked BLAST alignment coordinates would
 be incorrect and misleading.
 
-### <span id="Start_site_edits" class="mw-headline">Start site edits</span>
+### Start site edits
 
 To resolve these sorts of problems we create new, versioned features any
 time the underlying sequence of a feature is edited. The most common
@@ -421,14 +393,14 @@ automatically spawn to perform them. Since the new feature versions will
 not have these links, it's easy to determine which features should be
 included in the pipeline.
 
-### <span id="Deleting_a_gene" class="mw-headline">Deleting a gene</span>
+### Deleting a gene
 
 Again, we don't actually delete any annotation features from the
 database. When a user wants a gene removed/deleted from the active set
 we simply mark the feature.is_obsolete value to TRUE for each element of
 that gene's graph.
 
-## <span id="Data_de-normalization" class="mw-headline">Data de-normalization</span>
+## Data de-normalization
 
 Chado is fantastic at flexibly storing millions of rows of varying data
 types to support your annotation projects. It's also crazy slow to query
@@ -469,7 +441,7 @@ applications. Others are very specific to a precise need. It should be
 completely acceptable, for example, to implement a cached data store for
 a single page in a web application.
 
-### <span id="Materialized_views_.28chado_marts.29" class="mw-headline">Materialized views (chado marts)</span>
+### Materialized views (chado marts)
 
 We employ a few different methodologies for de-normalization of data for
 user displays. The first is the creation of materialized views within
@@ -497,93 +469,6 @@ materialized views can be defined once and are maintained by the
 underlying database engine as their base tables are updated. For others
 they are normal tables populated at regular intervals by scripts.
 
-### <span id="Disk_Caching" class="mw-headline">Disk Caching</span>
+### Disk Caching
 
 Notes on Lucene, memcache, Storable, etc. here.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [IGS](Category%253AIGS "Category%253AIGS")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/IGS_Data_Representation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:34 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">81,613 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

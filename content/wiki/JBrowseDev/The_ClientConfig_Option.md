@@ -1,51 +1,28 @@
 ---
 title: "JBrowseDev/The ClientConfig Option"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowseDev/The ClientConfig Option</span>
-
-
-
-
-
-
-
+# JBrowseDev/The ClientConfig Option
 
 
 The `--clientConfig` option can be used to customize the appearance of a
 non-quantitative feature tracks.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Representations of Non-Quantitative Tracks in
-  JBrowse</span>](#Representations_of_Non-Quantitative_Tracks_in_JBrowse)
-- [<span class="tocnumber">2</span> <span class="toctext">Argument
-  Structure</span>](#Argument_Structure)
-- [<span class="tocnumber">3</span> <span class="toctext">Descriptions
-  of clientConfig Options</span>](#Descriptions_of_clientConfig_Options)
-- [<span class="tocnumber">4</span> <span class="toctext">Relevant CSS
+  Representations of Non-Quantitative Tracks in
+  JBrowse](#Representations_of_Non-Quantitative_Tracks_in_JBrowse)
+- [Argument
+  Structure](#Argument_Structure)
+- [Descriptions
+  of clientConfig Options](#Descriptions_of_clientConfig_Options)
+- [Relevant CSS
   Attributes to be used with featureCss and
-  histCss</span>](#Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Examples</span>](#Examples)
-- [<span class="tocnumber">6</span> <span class="toctext">See
-  also</span>](#See_also)
+  histCss](#Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss)
+- [Examples](#Examples)
+- [See
+  also](#See_also)
 
 
-
-# <span id="Representations_of_Non-Quantitative_Tracks_in_JBrowse" class="mw-headline">Representations of Non-Quantitative Tracks in JBrowse</span>
+# Representations of Non-Quantitative Tracks in JBrowse
 
 Non-quantitative tracks have two different types of representations.
 There is the traditional feature representation, where each feature is
@@ -61,7 +38,7 @@ which the transition between them occurs. In addition, it can be used to
 choose at which zoom levels the feature labels and subfeatures become
 visible.
 
-# <span id="Argument_Structure" class="mw-headline">Argument Structure</span>
+# Argument Structure
 
 The structure of the argument to clientConfig looks something like this:
 
@@ -78,7 +55,7 @@ See
 [JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks](../JBrowse_Configuration_Guide#Using_callbacks_to_customize_feature_tracks "JBrowse Configuration Guide")
 for a discussion of the featureCallback option.
 
-# <span id="Descriptions_of_clientConfig_Options" class="mw-headline">Descriptions of clientConfig Options</span>
+# Descriptions of clientConfig Options
 
 You can think of clientConfig as being "an option with sub-options." Any
 (or all) of these options can be omitted. Here is a list of them, along
@@ -92,7 +69,7 @@ with descriptions:
 | labelScale | A number that defines the zoom level at which the labels begin to be visible. Decreasing this value causes the feature label visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 50. |
 | subfeatureScale | A number that defines the zoom level at which the subfeatures begin to be visible. Decreasing this value causes the subfeature visibility transition to occur at a lower zoom level (when zoomed out further). The default value is 80. |
 
-# <span id="Relevant_CSS_Attributes_to_be_used_with_featureCss_and_histCss" class="mw-headline">Relevant CSS Attributes to be used with featureCss and histCss</span>
+# Relevant CSS Attributes to be used with featureCss and histCss
 
 With the exception of the height attribute, all of these can be used
 with both featureCss and histCss:
@@ -107,7 +84,7 @@ with both featureCss and histCss:
 | border-color | The border color of a feature or histogram bar. | A RGB hexadecimal color code (e.g. \#A4C or \#8FA366). |
 | border-width | The thickness of the border for a feature or histogram bar. | Some number of pixels (e.g., 1px). |
 
-# <span id="Examples" class="mw-headline">Examples</span>
+# Examples
 
 If you would like to follow along, please begin by switching to your
 jbrowse directory and inputting the reference sequence:
@@ -165,98 +142,12 @@ should yield a value for labelScale that is close to what we want, if
 not precisely what we want. This logic is also applicable to
 subfeatureScale and histScale.
 
-# <span id="See_also" class="mw-headline">See also</span>
+# See also
 
 - <a href="General_Usage" class="mw-redirect"
   title="JBrowseDev/General Usage">General Usage Notes</a>
 
 
-
-
 [Category](../Special%253ACategories "Special%253ACategories"):
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowseDev-2FThe_ClientConfig_Option"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:07 on 13 July
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">16,780 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

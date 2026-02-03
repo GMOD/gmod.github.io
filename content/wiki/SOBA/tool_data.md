@@ -1,21 +1,7 @@
 ---
 title: "SOBA/tool data"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">SOBA/tool data</span>
-
-
-
-
-
-
-
+# SOBA/tool data
 
 
 \| name = SOBA \| full*name = Sequence Ontology
@@ -76,12 +62,12 @@ class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
 and [AJAX](../Glossary#AJAX "Glossary").
 
-#### <span id="SOBA_web" class="mw-headline">SOBA web</span>
+#### SOBA web
 
 The web interface to SOBA should work on any modern browser that has
 Javascript enabled.
 
-#### <span id="SOBAcl" class="mw-headline">SOBAcl</span>
+#### SOBAcl
 
 SOBAcl requires a number of Perl libraries, as well as the Graphviz and
 libgd graphics library:
@@ -139,96 +125,3 @@ class="external text" rel="nofollow">Sequence Ontology Developers
 Mailing list</a>. \| logo_info = \| dev_ppl = \| dev_status = \|
 contact_email = \| input = [GFF3](../GFF3 "GFF3") \| output = \|
 see_also = \| demo_server = \|release date=2009 \| survey_link =
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [SOBA](../Category%253ASOBA "Category%253ASOBA")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/SOBA-2Ftool_data" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:35 on 24 June 2014.</span>
-<!-- - <span id="footer-info-viewcount">25,797 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

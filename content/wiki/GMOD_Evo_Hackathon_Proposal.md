@@ -1,23 +1,7 @@
 ---
 title: "GMOD Evo Hackathon Proposal"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Evo Hackathon Proposal</span>
-
-
-
-
-
-
-
+# GMOD Evo Hackathon Proposal
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -49,7 +33,6 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA</span></td>
   
 
 
-
 This proposal was submitted to, and then approved and
 [funded](GMOD_Evo_Hackathon#Sponsorship "GMOD Evo Hackathon") by
 <a href="http://nescent.org" class="external text"
@@ -58,40 +41,31 @@ the hackathon, see the [hackathon's home
 page](GMOD_Evo_Hackathon "GMOD Evo Hackathon").**
 
 
-
 The [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon") aims
 to bring together key developers of GMOD components with developers from
 the evolutionary biology community to fill critical gaps in GMOD for
 evolutionary research.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Synopsis</span>](#Synopsis)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Background</span>](#Background)
-- [<span class="tocnumber">3</span> <span class="toctext">Specific
-  objectives</span>](#Specific_objectives)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Viewing
+  Synopsis](#Synopsis)
+- [Background](#Background)
+- [Specific
+  objectives](#Specific_objectives)
+  - [Viewing
     tools for comparative genomics
-    data</span>](#Viewing_tools_for_comparative_genomics_data)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Visualization of phylogenetic data and
-    trees</span>](#Visualization_of_phylogenetic_data_and_trees)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Population
+    data](#Viewing_tools_for_comparative_genomics_data)
+  - [Visualization of phylogenetic data and
+    trees](#Visualization_of_phylogenetic_data_and_trees)
+  - [Population
     Diversity and Phenotype
-    support</span>](#Population_Diversity_and_Phenotype_support)
-- [<span class="tocnumber">4</span> <span class="toctext">Logistics and
-  Participation</span>](#Logistics_and_Participation)
-- [<span class="tocnumber">5</span> <span class="toctext">Organization
-  and Agenda</span>](#Organization_and_Agenda)
+    support](#Population_Diversity_and_Phenotype_support)
+- [Logistics and
+  Participation](#Logistics_and_Participation)
+- [Organization
+  and Agenda](#Organization_and_Agenda)
 
 
-
-## <span id="Synopsis" class="mw-headline">Synopsis</span>
+## Synopsis
 
 We propose a hackathon to fill critical gaps in the capabilities of the
 Generic Model Organism Database (GMOD) toolbox that currently limit its
@@ -114,7 +88,7 @@ in evolutionary biology that GMOD components have the potential to fill,
 and for tool developers in evolutionary biology to better understand how
 best to extend or integrate with already existing GMOD components.
 
-## <span id="Background" class="mw-headline">Background</span>
+## Background
 
 The GMOD project is a confederation of intercompatible open-source
 projects developing software tools for storing, managing, curating, and
@@ -161,7 +135,7 @@ NESCent's past experience in organizing successful hackathons, and its
 position as a neutral intellectual hub within the evolutionary biology
 make it an ideal location for holding the event.
 
-## <span id="Specific_objectives" class="mw-headline">Specific objectives</span>
+## Specific objectives
 
 Organizers have identified the following broad themes for focusing work
 at the event. These are based on the organizers' experience,
@@ -181,7 +155,7 @@ the hackathon. Further ideas and discussion topics can be found on the
 Information](GMOD_Evo_Hackathon_Proposal_Supplemental_Information "GMOD Evo Hackathon Proposal Supplemental Information")
 page.
 
-### <span id="Viewing_tools_for_comparative_genomics_data" class="mw-headline">Viewing tools for comparative genomics data</span>
+### Viewing tools for comparative genomics data
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
@@ -201,7 +175,7 @@ In addition to filling those gaps, GBrowse_syn would also particularly
 stand to benefit from the event by gaining a more sustainable developer
 base.
 
-### <span id="Visualization_of_phylogenetic_data_and_trees" class="mw-headline">Visualization of phylogenetic data and trees</span>
+### Visualization of phylogenetic data and trees
 
 The GMOD toolkit at present does not include web-based alignment
 viewers, nor can the increasingly popular [JBrowse](JBrowse.1 "JBrowse")
@@ -224,7 +198,7 @@ rel="nofollow">PhyloWidget</a>) could be used as the basis for a
 JavaScript-based tree viewer (or an applet that can be controlled
 through JavaScript) that integrates with JBrowse.
 
-### <span id="Population_Diversity_and_Phenotype_support" class="mw-headline">Population Diversity and Phenotype support</span>
+### Population Diversity and Phenotype support
 
 GMOD's capabilities in managing phenotype and natural diversity data is
 scattered across partially redundant and outdated modules, does not
@@ -254,7 +228,7 @@ make it operate on top of Chado. The hackathon could harness this
 synergy to help this effort leap forward, which could ultimately provide
 GMOD with the currently missing web-interface for such data.
 
-## <span id="Logistics_and_Participation" class="mw-headline">Logistics and Participation</span>
+## Logistics and Participation
 
 The event will tentatively be held at NESCent in Durham, North Carolina,
 from Nov 8-12, 2010.
@@ -307,7 +281,7 @@ the community under an
 class="external text" rel="nofollow">OSI-approved</a> open source
 license.
 
-## <span id="Organization_and_Agenda" class="mw-headline">Organization and Agenda</span>
+## Organization and Agenda
 
 The following people comprise the organizing committee:
 
@@ -345,92 +319,7 @@ similar as has been done in GMOD following the [GMOD
 Meetings](Meetings "Meetings").
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Evo
   Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_Evo_Hackathon_Proposal" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Evo_Hackathon_Proposal"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">270,356 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

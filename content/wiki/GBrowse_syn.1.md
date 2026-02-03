@@ -1,24 +1,7 @@
 ---
 title: "GBrowse syn"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse syn</span>
-
-
-
-
-
-
-
-
+# GBrowse syn
 
 
 <img
@@ -27,9 +10,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="128" alt="GBrowse_syn logo" />
 
 
-
 Status
-
 
 
 - Beta release
@@ -37,10 +18,7 @@ Status
 - Support: inactive
 
 
-
 Resources
-
-
 
 
 above).
@@ -49,23 +27,23 @@ GBrowse_syn uses a central "reference species" panel, with inset panels
 above and below for two or more aligned species. There is no upper limit
 to the number of species that can be displayed.
 
-## <span id="Publications.2C_Tutorials.2C_and_Presentations" class="mw-headline">Publications, Tutorials, and Presentations</span>
+## Publications, Tutorials, and Presentations
 
-### <span id="Publications_on_or_mentioning_GBrowse_syn" class="mw-headline">Publications on or mentioning GBrowse_syn</span>
+### Publications on or mentioning GBrowse_syn
 
 Please refer to the following paper when citing GBrowse_syn:
 
 - Using the Generic Synteny Browser (GBrowse_syn)
   <sup>[\[1\]](#cite_note-PMID:20836076-1)</sup>
 
-### <span id="Tutorials" class="mw-headline">Tutorials</span>
+### Tutorials
 
 <a href="GBrowse_syn_Tutorial" class="mw-redirect"
 title="GBrowse syn Tutorial">GBrowse syn Tutorial</a>  
 Installing and configuring GBrowse_syn; from the [2013 GMOD Summer
 School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 
-### <span id="Presentations" class="mw-headline">Presentations</span>
+### Presentations
 
 
 - [GMOD in the
@@ -78,8 +56,6 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 - [Comparative
   Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
 - [WormBase](Category%253AWormBase "Category%253AWormBase")
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -118,86 +94,3 @@ rel="nofollow">https://github.com/GMOD/GBrowse</a> <span class="smwsearch">[+](S
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Comparative genome visualization <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Comparative-20genome-20visualization "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Comparative-20genome-20visualization")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Perl <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Perl "Special%253ASearchByProperty/Written-20in-20language/Perl")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [GBrowse syn#https://github.com/GMOD/GBrowse](GBrowse_syn.1#https:.2F.2Fgithub.com.2FGMOD.2FGBrowse "GBrowse syn") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23https%253A-2F-2Fgithub.com-2FGMOD-2FGBrowse "Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23https%253A-2F-2Fgithub.com-2FGMOD-2FGBrowse")</span>, [GBrowse syn](GBrowse_syn.1#_3f191793107a24a15ada3afac9cf75ac "GBrowse syn") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23_3f191793107a24a15ada3afac9cf75ac "Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23 3f191793107a24a15ada3afac9cf75ac")</span>, [GBrowse syn](GBrowse_syn.1#_96d0639ca7bbe782fb4a48f637423eca "GBrowse syn") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23_96d0639ca7bbe782fb4a48f637423eca "Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23 96d0639ca7bbe782fb4a48f637423eca")</span>, [GBrowse syn](GBrowse_syn.1#_59b6f51594a7b5445e19637374761ae9 "GBrowse syn") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23_59b6f51594a7b5445e19637374761ae9 "Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23 59b6f51594a7b5445e19637374761ae9")</span> and [GBrowse syn#http://solgenomics.net/gbrowse2/bin/gbrowse_syn/sol3/](GBrowse_syn.1#http:.2F.2Fsolgenomics.net.2Fgbrowse2.2Fbin.2Fgbrowse_syn.2Fsol3.2F "GBrowse syn") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23http%253A-2F-2Fsolgenomics.net-2Fgbrowse2-2Fbin-2Fgbrowse_syn-2Fsol3-2F "Special%253ASearchByProperty/Has-20subobject/GBrowse-20syn-23http:-2F-2Fsolgenomics.net-2Fgbrowse2-2Fbin-2Fgbrowse syn-2Fsol3-2F")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_syn" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:39 on 15 October
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">642,141 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

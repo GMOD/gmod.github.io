@@ -1,23 +1,7 @@
 ---
 title: "JBrowse Tutorial Programming for Biology 2014"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse Tutorial Programming for Biology 2014</span>
-
-
-
-
-
-
-
+# JBrowse Tutorial Programming for Biology 2014
 
 
 This [JBrowse](JBrowse.1 "JBrowse") tutorial was presented by [Scott
@@ -28,72 +12,60 @@ This tutorial assumes a Mac OS X computer with apache configured to
 allow UserDir (~username).
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Things to add
   to future tutorials</span>](#Things_to_add_to_future_tutorials)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">3</span> <span class="toctext">JBrowse
-  Introduction</span>](#JBrowse_Introduction)
-- [<span class="tocnumber">4</span> <span class="toctext">Setting up
-  JBrowse</span>](#Setting_up_JBrowse)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Getting
-    JBrowse</span>](#Getting_JBrowse)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Starting
-    Point</span>](#Starting_Point)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Basic
-    Steps</span>](#Basic_Steps)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Features
+- [Prerequisites](#Prerequisites)
+- [JBrowse
+  Introduction](#JBrowse_Introduction)
+- [Setting up
+  JBrowse](#Setting_up_JBrowse)
+  - [Getting
+    JBrowse](#Getting_JBrowse)
+  - [Starting
+    Point](#Starting_Point)
+  - [Basic
+    Steps](#Basic_Steps)
+  - [Features
     from a directory of
-    files</span>](#Features_from_a_directory_of_files)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Specify reference
-      sequences</span>](#Specify_reference_sequences)
-    - [<span class="tocnumber">4.4.2</span> <span class="toctext">Load
-      Feature Data</span>](#Load_Feature_Data)
-    - [<span class="tocnumber">4.4.3</span> <span class="toctext">Index
-      feature names</span>](#Index_feature_names)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Features
-    from GFF3 or BED files</span>](#Features_from_GFF3_or_BED_files)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">BAM
-    alignments</span>](#BAM_alignments)
-  - [<span class="tocnumber">4.7</span> <span class="toctext">BAM
-    coverage</span>](#BAM_coverage)
-  - [<span class="tocnumber">4.8</span>
-    <span class="toctext">Quantitative data</span>](#Quantitative_data)
-    - [<span class="tocnumber">4.8.1</span>
-      <span class="toctext">BigWig</span>](#BigWig)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">Variation
-    Data</span>](#Variation_Data)
-    - [<span class="tocnumber">4.9.1</span> <span class="toctext">VCF
-      tracks</span>](#VCF_tracks)
-  - [<span class="tocnumber">4.10</span> <span class="toctext">Faceted
-    Track Selection</span>](#Faceted_Track_Selection)
-- [<span class="tocnumber">5</span> <span class="toctext">JBrowse
-  Features</span>](#JBrowse_Features)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Highlighting interesting
-    things</span>](#Highlighting_interesting_things)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Opening
-    local files</span>](#Opening_local_files)
-  - [<span class="tocnumber">5.3</span>
-    <span class="toctext">Combination
-    tracks</span>](#Combination_tracks)
-- [<span class="tocnumber">6</span> <span class="toctext">Upgrading an
-  Existing JBrowse</span>](#Upgrading_an_Existing_JBrowse)
-- [<span class="tocnumber">7</span> <span class="toctext">Common
-  Problems</span>](#Common_Problems)
-- [<span class="tocnumber">8</span> <span class="toctext">Future JBrowse
-  Plans</span>](#Future_JBrowse_Plans)
-- [<span class="tocnumber">9</span> <span class="toctext">Other
-  links</span>](#Other_links)
+    files](#Features_from_a_directory_of_files)
+    - [Specify reference
+      sequences](#Specify_reference_sequences)
+    - [Load
+      Feature Data](#Load_Feature_Data)
+    - [Index
+      feature names](#Index_feature_names)
+  - [Features
+    from GFF3 or BED files](#Features_from_GFF3_or_BED_files)
+  - [BAM
+    alignments](#BAM_alignments)
+  - [BAM
+    coverage](#BAM_coverage)
+  - [Quantitative data](#Quantitative_data)
+    - [BigWig](#BigWig)
+  - [Variation
+    Data](#Variation_Data)
+    - [VCF
+      tracks](#VCF_tracks)
+  - [Faceted
+    Track Selection](#Faceted_Track_Selection)
+- [JBrowse
+  Features](#JBrowse_Features)
+  - [Highlighting interesting
+    things](#Highlighting_interesting_things)
+  - [Opening
+    local files](#Opening_local_files)
+  - [Combination
+    tracks](#Combination_tracks)
+- [Upgrading an
+  Existing JBrowse](#Upgrading_an_Existing_JBrowse)
+- [Common
+  Problems](#Common_Problems)
+- [Future JBrowse
+  Plans](#Future_JBrowse_Plans)
+- [Other
+  links](#Other_links)
 
 
-
-## <span id="Things_to_add_to_future_tutorials" class="mw-headline">Things to add to future tutorials</span>
+## Things to add to future tutorials
 
 - CanvasTracks
 - Using javascript to modify CanvasTracks, based on:
@@ -102,7 +74,7 @@ allow UserDir (~username).
   - score (advanced topic)
 - WebApollo interactive demo
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 Prerequisites are installed by JBrowse automatically. A few things may
 fail to install (like legacy support for wiggle files), but that doesn't
@@ -119,7 +91,7 @@ select Developer-\>Javascript Console from the View menu. In the
 console, click the "gear" icon (settings) and check the box labeled
 "Disable Cache".
 
-## <span id="JBrowse_Introduction" class="mw-headline">JBrowse Introduction</span>
+## JBrowse Introduction
 
 How and why [JBrowse](JBrowse.1 "JBrowse") is different from most other
 web-based genome browsers, including [GBrowse](GBrowse.1 "GBrowse").
@@ -133,22 +105,16 @@ class="internal"
 title="JBrowse programming for biology 2014.pdf">JBrowse
 presentation</a>
 
-## <span id="Setting_up_JBrowse" class="mw-headline">Setting up JBrowse</span>
+## Setting up JBrowse
 
-### <span id="Getting_JBrowse" class="mw-headline">Getting JBrowse</span>
+### Getting JBrowse
 
 - prepare a directory for JBrowse
-
-<!-- -->
-
     cd ~/Sites
     mkdir jbrowse_demo
     cd jbrowse_demo
 
 - download the demo bundle from Amazon and unzip it
-
-<!-- -->
-
     curl -O https://s3.amazonaws.com/jbrowse-tutorials/Prog_for_Bio_2014_JBrowse.zip #that's a capital "O" not a zero/zed.
     unzip Prog_for_Bio_2014_JBrowse.zip
     cd Prog_for_Bio_2014_JBrowse
@@ -156,13 +122,10 @@ presentation</a>
     mv JBrowse-1.11.5 jbrowse
 
 - run `setup.sh` to configure this copy of JBrowse
-
-<!-- -->
-
     cd jbrowse
     ./setup.sh
 
-### <span id="Starting_Point" class="mw-headline">Starting Point</span>
+### Starting Point
 
 Visit in web browser:
 
@@ -170,7 +133,7 @@ http://localhost/~username/jbrowse_demo/Prog_for_Bio_2014_JBrowse/jbrowse/index.
 
 You should see a "Congratulations" page.
 
-### <span id="Basic_Steps" class="mw-headline">Basic Steps</span>
+### Basic Steps
 
 There are four basic steps to setting up an instance of JBrowse:
 
@@ -179,7 +142,7 @@ There are four basic steps to setting up an instance of JBrowse:
 3.  Configure direct-access tracks
 4.  Index feature names
 
-### <span id="Features_from_a_directory_of_files" class="mw-headline">Features from a directory of files</span>
+### Features from a directory of files
 
 Here, we'll use the
 <a href="http://search.cpan.org/perldoc?Bio::DB::SeqFeature::Store"
@@ -201,7 +164,7 @@ Config file: `pythium-1.conf`
        },
     ...
 
-#### <span id="Specify_reference_sequences" class="mw-headline">Specify reference sequences</span>
+#### Specify reference sequences
 
 The first script to run is `bin/prepare-refseqs.pl`; that script is the
 way you tell JBrowse about what your reference sequences are. Running
@@ -218,7 +181,7 @@ Refresh it in your web browser, you should new see the JBrowse UI and a
 sequence track, which will show you the DNA base pairs if you zoom in
 far enough.
 
-#### <span id="Load_Feature_Data" class="mw-headline">Load Feature Data</span>
+#### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
 database and turn it into [JSON](Glossary#JSON "Glossary") data that the
@@ -281,7 +244,7 @@ this track, and the others in the file:
 Refresh JBrowse in your web browser. You should now see a bunch of
 annotation tracks.
 
-#### <span id="Index_feature_names" class="mw-headline">Index feature names</span>
+#### Index feature names
 
 When you generate JSON for a track, if you specify `"autocomplete"` then
 a listing of all of the feature names from that track (along with
@@ -298,25 +261,19 @@ Visit in web browser, try typing a feature name, such as
 **maker-scf1117875582023-snap-gene-0.26-mRNA-1**. Notice that JBrowse
 tries to auto-complete what you type.
 
-### <span id="Features_from_GFF3_or_BED_files" class="mw-headline">Features from GFF3 or BED files</span>
+### Features from GFF3 or BED files
 
 We're going to add a couple more tracks that come from a flat file,
 `repeats.gff`. To get feature data from flat files into JBrowse, we use
 `flatfile-to-json.pl`.
 
 - We'll add a RepeatMasker track:
-
-<!-- -->
-
     bin/flatfile-to-json.pl --trackLabel repeatmasker \
         --type match:repeatmasker --key RepeatMasker \
         --className generic_parent \
         --subfeatureClasses '{"match_part" : "feature"}' --gff ../repeats.gff
 
 - And then a RepeatRunner track:
-
-<!-- -->
-
     bin/flatfile-to-json.pl --trackLabel repeatrunner \
         --type protein_match:repeatrunner \
         --key RepeatRunner --className generic_parent \
@@ -325,7 +282,7 @@ We're going to add a couple more tracks that come from a flat file,
 Visit in web browser; you should see the two new RepeatMasker and
 RepeatRunner tracks.
 
-### <span id="BAM_alignments" class="mw-headline">BAM alignments</span>
+### BAM alignments
 
 JBrowse can display alignments directly from a BAM file on your web
 server. Simply place the BAM file in a directory accessible to your web
@@ -356,7 +313,7 @@ inject the track configuration:
            "type" : "Alignments2"
          }' | bin/add-track-json.pl data/trackList.json
 
-### <span id="BAM_coverage" class="mw-headline">BAM coverage</span>
+### BAM coverage
 
 
 ``` de1
@@ -370,9 +327,9 @@ inject the track configuration:
 ```
 
 
-### <span id="Quantitative_data" class="mw-headline">Quantitative data</span>
+### Quantitative data
 
-#### <span id="BigWig" class="mw-headline">BigWig</span>
+#### BigWig
 
 JBrowse can display quantitative data directly from a BigWig file on
 your web server. Simply place the BigWig file in a directory accessible
@@ -405,9 +362,9 @@ inject the track configuration:
            "variance_band" : true
          } ' | bin/add-track-json.pl data/trackList.json
 
-### <span id="Variation_Data" class="mw-headline">Variation Data</span>
+### Variation Data
 
-#### <span id="VCF_tracks" class="mw-headline">VCF tracks</span>
+#### VCF tracks
 
 JBrowse can also display VCF variation data directly from a VCF file on
 your web server that has been compressed with Heng Li's bgzip and tabix.
@@ -441,7 +398,7 @@ inject the track configuration:
 
   
 
-### <span id="Faceted_Track_Selection" class="mw-headline">Faceted Track Selection</span>
+### Faceted Track Selection
 
 JBrowse has a very powerful faceted track selector that can be used to
 search for tracks using metadata associated with them.
@@ -475,9 +432,9 @@ conveniently contains this stanza, commented out. Uncomment it, refresh
 your browser, and you should now see the faceted track selector
 activated.
 
-## <span id="JBrowse_Features" class="mw-headline">JBrowse Features</span>
+## JBrowse Features
 
-### <span id="Highlighting_interesting_things" class="mw-headline">Highlighting interesting things</span>
+### Highlighting interesting things
 
 To highlight a region, you can either right-click on a feature and
 select 'highlight this', or you can set the highlight explicitly to a
@@ -488,14 +445,14 @@ Beginning in JBrowse 1.10.0 you can also highlight a region with the
 mouse by clicking the highlighter tool (next to the Go button) and
 clicking and dragging to highlight a region.
 
-### <span id="Opening_local_files" class="mw-headline">Opening local files</span>
+### Opening local files
 
 JBrowse can display GFF3, BAM, BigWig, and VCF+Tabix files directly from
 your local machine without the need to transfer any data to the server.
 Just use the "File -\> Open" tool from the menu bar to add tracks using
 local files.
 
-### <span id="Combination_tracks" class="mw-headline">Combination tracks</span>
+### Combination tracks
 
 Starting in version 1.10.0, users can define tracks that are
 combinations of the data in other tracks. The operations used to combine
@@ -508,17 +465,17 @@ To add a combination track, select "File-\>Add combination track" from
 the menu bar, and drag existing tracks into the new combination track to
 start combining them.
 
-## <span id="Upgrading_an_Existing_JBrowse" class="mw-headline">Upgrading an Existing JBrowse</span>
+## Upgrading an Existing JBrowse
 
 If the old JBrowse is 1.3.0 or later, simply move the data directory
 from the old JBrowse directory into the new JBrowse directory.
 
-## <span id="Common_Problems" class="mw-headline">Common Problems</span>
+## Common Problems
 
 - JSON syntax errors in configuration files (2.x series will stop this
   madness!)
 
-## <span id="Future_JBrowse_Plans" class="mw-headline">Future JBrowse Plans</span>
+## Future JBrowse Plans
 
 See the
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/90/JBrowse_gmod_summerschool_jul2013.pdf"
@@ -526,7 +483,7 @@ class="internal"
 title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
 (PDF)</a>
 
-## <span id="Other_links" class="mw-headline">Other links</span>
+## Other links
 
 - Config file ref:
   <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
@@ -537,13 +494,10 @@ title="JBrowse gmod summerschool jul2013.pdf">accompanying slides
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -554,82 +508,3 @@ Biology
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_Tutorial_Programming_for_Biology_2014"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:41 on 23 October
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">30,138 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

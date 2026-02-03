@@ -1,25 +1,7 @@
 ---
 title: "Property:Has default form"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Property:Has default form</span>
-
-
-
-
-
-
-
-
-
+# Property:Has default form
 
 
 Has default form is a predefined property (also known as <a
@@ -31,10 +13,8 @@ but can be used just like any other
 class="external text" rel="nofollow">user-defined property</a>.
 
 
-
   
 <span id="SMWResults"></span>
-
 
 
 ## Pages using the property "Has default form"
@@ -79,75 +59,5 @@ title="Special%253ASearchByProperty/Has-20default-20form/Component-20information
 </table>
 
 
-
-
 Retrieved from
-"[http://gmod.org/wiki/Property%253AHas_default_form#SMWResults](Property%253AHas_default_form#SMWResults)"
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Property%253AHas_default_form"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-
-
-<!-- -->
-
-
-
-
+"[http://gmod.org/wiki/Property%253AHas_default_form#SMWResults](/wiki/Property%253AHas_default_form#SMWResults)"

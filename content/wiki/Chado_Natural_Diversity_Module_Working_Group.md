@@ -1,23 +1,7 @@
 ---
 title: "Chado Natural Diversity Module Working Group"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Natural Diversity Module Working Group</span>
-
-
-
-
-
-
-
+# Chado Natural Diversity Module Working Group
 
 
 The **[Chado Natural Diversity
@@ -29,30 +13,18 @@ Natural Diversity Module into the production version of
   
 
 
-## Contents
+  Discussion](#Discussion)
+- [History](#History)
+  - [2007](#2007)
+    - [Links](#Links)
+  - [2009](#2009)
+  - [2010](#2010)
+- [Participation](#Participation)
+- [Stock
+  Relationship Ontology](#Stock_Relationship_Ontology)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Discussion</span>](#Discussion)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">History</span>](#History)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">2007</span>](#2007)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Links</span>](#Links)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">2009</span>](#2009)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">2010</span>](#2010)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Participation</span>](#Participation)
-- [<span class="tocnumber">4</span> <span class="toctext">Stock
-  Relationship Ontology</span>](#Stock_Relationship_Ontology)
-
-
-
-# <span id="Discussion" class="mw-headline">Discussion</span>
+# Discussion
 
 See the [discussion
 page](Talk%253AChado_Natural_Diversity_Module_Working_Group "Talk:Chado Natural Diversity Module Working Group")
@@ -64,13 +36,13 @@ discussion settle, a summary of decisions will appear here.
 
   
 
-# <span id="History" class="mw-headline">History</span>
+# History
 
 This section describes important events in the development of the
 module. Detailed discussion of functionality is a separate section
 below.
 
-## <span id="2007" class="mw-headline">2007</span>
+## 2007
 
 The <a href="http://sourceforge.net/projects/heliconiusdb/develop"
 class="external text" rel="nofollow">initial version</a> of the Natural
@@ -84,7 +56,7 @@ which comes out of Cornell. The GDPDM has great documentation and is
 also described in [this
 presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/GDPDM_GMOD_presentation20060630.ppt "File:GDPDM GMOD presentation20060630.ppt").
 
-### <span id="Links" class="mw-headline">Links</span>
+### Links
 
 - The <a href="http://sourceforge.net/projects/heliconiusdb/develop"
   class="external text" rel="nofollow">beta natural diversity module</a>
@@ -92,101 +64,7 @@ presentation](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawi
   class="external text" rel="nofollow">Soureforge</a>.
   
 
-# <span id="Stock_Relationship_Ontology" class="mw-headline">Stock Relationship Ontology</span>
+# Stock Relationship Ontology
 
 [Stock Relationship
 Ontology](Stock_Relationship_Ontology "Stock Relationship Ontology")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Natural
-  Diversity](Category%253ANatural_Diversity "Category%253ANatural Diversity")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Natural_Diversity_Module_Working_Group"
-  accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Natural_Diversity_Module_Working_Group"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:04 on 4 February
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">163,997 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

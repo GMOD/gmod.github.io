@@ -1,26 +1,10 @@
 ---
 title: "Talk%253AGBrowse MacOSX HOWTO"
 ---
+# Talk%253AGBrowse MacOSX HOWTO
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Talk%253AGBrowse MacOSX HOWTO</span>
-
-
-
-
-
-
-
-
-
-## <span id="Defaults_in_the_net_installer" class="mw-headline">Defaults in the net installer</span>
+## Defaults in the net installer
 
 The net installer claims that going with the defaults should be just
 fine, but I think a caveat should be added... especially on this page
@@ -43,7 +27,7 @@ darwin-ports) didn't come up. Its a little confusing since we use fink
 to install the other stuff. Hope this helps Nathan 7
 January 2009
 
-## <span id="LWP::Simple_on_Tiger" class="mw-headline">LWP::Simple on Tiger</span>
+## LWP::Simple on Tiger
 
 I had to install LWP::Simple on Tiger via CPAN (error message: Can't
 find LWP/Simple in @INC...):
@@ -59,86 +43,3 @@ it worked fine. Unfortunately, I don't have a Tiger install disk around
 to do testing on, so I can't modify the gbrowse installer. I will add a
 note about needing LWP::Simple to the mac install page though.*
 [Scott](User%253AScott "User%253AScott") 17:10, 19 August 2008 (UTC)
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_MacOSX_HOWTO" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:07 on 7 January
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">8,995 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

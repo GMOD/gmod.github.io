@@ -1,21 +1,7 @@
 ---
 title: "XORT/tool data"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">XORT/tool data</span>
-
-
-
-
-
-
-
+# XORT/tool data
 
 
 \| name = XORT \| full_name = \| status = mature \|
@@ -85,41 +71,30 @@ Note that [GMODTools](../GMODTools "GMODTools") offers an alternative
 approach to bulk uploads and downloads from a Chado database.
 
 
-## Contents
+  DBStag](#DBStag)
+- [Chado-XML](#Chado-XML)
+- [Tools that
+  read and write Chado-XML](#Tools_that_read_and_write_Chado-XML)
+  - [go2chadoxml](#go2chadoxml)
+  - [BioPerl](#BioPerl)
+  - [Bio-Chaos](#Bio-Chaos)
+- [Macros](#Macros)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">DBStag</span>](#DBStag)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Chado-XML</span>](#Chado-XML)
-- [<span class="tocnumber">3</span> <span class="toctext">Tools that
-  read and write Chado-XML</span>](#Tools_that_read_and_write_Chado-XML)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">go2chadoxml</span>](#go2chadoxml)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">BioPerl</span>](#BioPerl)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Bio-Chaos</span>](#Bio-Chaos)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Macros</span>](#Macros)
-
-
-
-### <span id="DBStag" class="mw-headline">DBStag</span>
+### DBStag
 
 The [DBStag](../DBStag "DBStag") XML\<-\>SQL API implements the XORT
 spec for bulkloading of data; it does not support the dump spec
 
-### <span id="Chado-XML" class="mw-headline">Chado-XML</span>
+### Chado-XML
 
 [Chado XML](../Chado_XML "Chado XML") is a direct mapping of the
 <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 relational schema into XML.
 
-### <span id="Tools_that_read_and_write_Chado-XML" class="mw-headline">Tools that read and write Chado-XML</span>
+### Tools that read and write Chado-XML
 
-#### <span id="go2chadoxml" class="mw-headline">go2chadoxml</span>
+#### go2chadoxml
 
 Distributed as part of
 <a href="http://search.cpan.org/~cmungall/go-perl/"
@@ -134,7 +109,7 @@ The
 rel="nofollow">OBO repository</a> is pre-converted to Chado-XML on a
 nightly basis.
 
-#### <span id="BioPerl" class="mw-headline">BioPerl</span>
+#### BioPerl
 
 - <a
   href="http://search.cpan.org/~cjfields/BioPerl-1.6.901/Bio/SeqIO/chadoxml.pm"
@@ -144,7 +119,7 @@ writes chadoXML
 
 Status: ?
 
-#### <span id="Bio-Chaos" class="mw-headline">Bio-Chaos</span>
+#### Bio-Chaos
 
 The <a href="http://www.fruitfly.org/chaos-xml/" class="external text"
 rel="nofollow">bio-chaos</a> library reads and writes chaos-xml, which
@@ -152,7 +127,7 @@ can be converted to and from chado
 
 Status: no longer supported
 
-### <span id="Macros" class="mw-headline">Macros</span>
+### Macros
 
 The basic chadoXMLl expansion can be extremely verbose - this is because
 chadoXML uses the unique keys from the chado db, yet it does not use
@@ -161,96 +136,3 @@ can be used to capture repeated nodes in the XML and give them XML IDs
 that are valid within a particular document.
 
 \| demo_server = \| survey_link = \|release date=2006
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [XORT](../Category%253AXORT "Category%253AXORT")
-- [XML](../Category%253AXML "Category%253AXML")
-- [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/XORT-2Ftool_data" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:48 on 10 September 2013.</span>
-<!-- - <span id="footer-info-viewcount">13,429 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

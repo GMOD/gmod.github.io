@@ -1,21 +1,7 @@
 ---
 title: "Galaxy/tool data"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">Galaxy/tool data</span>
-
-
-
-
-
-
-
+# Galaxy/tool data
 
 
 \| name = Galaxy \| full_name = \| status = mature \|
@@ -47,8 +33,7 @@ Local Galaxy servers can be set up by
 rel="nofollow">downloading the Galaxy application</a> and customizing it
 to meet particular needs.
 
-### <span id="2014_Galaxy_Community_Conference" class="mw-headline">2014 Galaxy Community Conference</span>
-
+### 2014 Galaxy Community Conference
 
 
 <a href="http://wiki.galaxyproject.org/Events/GCC2014" rel="nofollow"
@@ -112,96 +97,3 @@ velvet wig xml \| output = zillions! \| see_also = \| demo_server =
 <a href="http://usegalaxy.org/" class="external free"
 rel="nofollow">http://usegalaxy.org/</a> \| survey_link = Galaxy \|
 extras = \|release date=2005
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Galaxy](../Category%253AGalaxy "Category%253AGalaxy")
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/Galaxy-2Ftool_data" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:12 on 3 October 2013.</span>
-<!-- - <span id="footer-info-viewcount">28,014 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

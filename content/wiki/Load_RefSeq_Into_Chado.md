@@ -1,23 +1,7 @@
 ---
 title: "Load RefSeq Into Chado"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Load RefSeq Into Chado</span>
-
-
-
-
-
-
-
+# Load RefSeq Into Chado
 
 
 This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes a method for
@@ -25,26 +9,19 @@ loading the sequence data in Genbank RefSeq files into the [Chado
 database](Chado_-_Getting_Started "Chado - Getting Started").
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Download the
   Sequence Files</span>](#Download_the_Sequence_Files)
-- [<span class="tocnumber">2</span> <span class="toctext">Convert RefSeq
-  to GFF3</span>](#Convert_RefSeq_to_GFF3)
-- [<span class="tocnumber">3</span> <span class="toctext">Add an Entry
-  for Your Organism</span>](#Add_an_Entry_for_Your_Organism)
-- [<span class="tocnumber">4</span> <span class="toctext">Load the
-  GFF3</span>](#Load_the_GFF3)
-- [<span class="tocnumber">5</span> <span class="toctext">More
-  Information</span>](#More_Information)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Authors</span>](#Authors)
+- [Convert RefSeq
+  to GFF3](#Convert_RefSeq_to_GFF3)
+- [Add an Entry
+  for Your Organism](#Add_an_Entry_for_Your_Organism)
+- [Load the
+  GFF3](#Load_the_GFF3)
+- [More
+  Information](#More_Information)
+- [Authors](#Authors)
 
 
-
-## <span id="Download_the_Sequence_Files" class="mw-headline">Download the Sequence Files</span>
+## Download the Sequence Files
 
 These steps have been used to load data from genomic RefSeq files. You
 can recognize these files by their `NC_` and `NT_` prefixes. First
@@ -54,7 +31,7 @@ rel="nofollow">NCBI's FTP site</a>. This website provides some files in
 GFF3 format (suffix `.gff`). Files in the Genbank format have the suffix
 `.gbk`.
 
-## <span id="Convert_RefSeq_to_GFF3" class="mw-headline">Convert RefSeq to GFF3</span>
+## Convert RefSeq to GFF3
 
 Use the [BioPerl](BioPerl "BioPerl") script `genbank2gff3.pl`, found in
 `scripts/Bio-DB-GFF/` within the BioPerl distribution. If you've
@@ -74,7 +51,7 @@ features will be printed at the end. If you want those to be part of the
 GFF3 file, you will have to add those manually as well, fixing any
 non-SOFA feature types.
 
-## <span id="Add_an_Entry_for_Your_Organism" class="mw-headline">Add an Entry for Your Organism</span>
+## Add an Entry for Your Organism
 
 You will need to have an entry for your species in the [Chado organism
 table](Chado_Tables#Table:_organism "Chado Tables"). If you are unsure
@@ -99,7 +76,7 @@ this:
 
 Substitute in the appropriate values for your own organism.
 
-## <span id="Load_the_GFF3" class="mw-headline">Load the GFF3</span>
+## Load the GFF3
 
 Run the `load/bin/gmod_bulk_load_gff3.pl` script from the GMOD
 distribution:
@@ -123,7 +100,7 @@ to fix the incorrect term and load again. If that happens, the load will
 be stopped before the database is touched, so you won't have to worry
 about duplicate data.
 
-## <span id="More_Information" class="mw-headline">More Information</span>
+## More Information
 
 Please send questions to the GMOD developers list:
 
@@ -132,95 +109,8 @@ rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
   
 
-## <span id="Authors" class="mw-headline">Authors</span>
+## Authors
 
 - [Scott Cain](User%253AScott "User%253AScott")
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_RefSeq_Into_Chado" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:09 on 15 July
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">184,658 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

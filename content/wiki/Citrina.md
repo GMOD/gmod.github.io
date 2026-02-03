@@ -1,23 +1,7 @@
 ---
 title: "Citrina"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Citrina</span>
-
-
-
-
-
-
-
+# Citrina
 
 
 > The item described in this page is not (or is no longer) supported by
@@ -29,28 +13,17 @@ See [Status](#Status) below for more information.
   
 
 
-## Contents
+  Status](#Status)
+- [Description](#Description)
+- [Requirements](#Requirements)
+- [Documentation](#Documentation)
+- [Downloads](#Downloads)
+- [Mailing
+  List](#Mailing_List)
+- [Contact](#Contact)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Status</span>](#Status)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Description</span>](#Description)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">6</span> <span class="toctext">Mailing
-  List</span>](#Mailing_List)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Contact</span>](#Contact)
-
-
-
-## <span id="Status" class="mw-headline">Status</span>
+## Status
 
 This project is on hold indefinitely. Over the past couple of years I
 had hoped to get back to Citrina. However, my other priorities, namely
@@ -64,7 +37,7 @@ reinventing it based on the feature list.
 Cheers,  
 Josh
 
-## <span id="Description" class="mw-headline">Description</span>
+## Description
 
 Citrina (*sih-TREE-nuh*) is a database management tool that automates
 the mirroring and processing of databases that are distributed via ftp
@@ -83,7 +56,7 @@ already developed.
 
   
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 - Java 1.4.x (<a href="http://java.sun.com/j2se/" class="external free"
   rel="nofollow">http://java.sun.com/j2se/</a>)
@@ -112,14 +85,14 @@ symbolic links.
 
   
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Citrina-userguide.pdf"
 class="internal" title="Citrina-userguide.pdf">Citrina-userguide.pdf</a>
 
   
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 <a
 href="http://prdownloads.sourceforge.net/gmod/citrina-0.5.1.tar.gz?download"
@@ -131,7 +104,7 @@ class="external text" rel="nofollow">citrina-0.5.1-src.tar.gz</a>
 
   
 
-## <span id="Mailing_List" class="mw-headline">Mailing List</span>
+## Mailing List
 
 <a
 href="http://sourceforge.net/mailarchive/forum.php?forum=gmod-citrina"
@@ -139,92 +112,12 @@ class="external text" rel="nofollow">Citrina discussion list</a>
 
   
 
-## <span id="Contact" class="mw-headline">Contact</span>
+## Contact
 
 [Josh Goodman](User%253AJogoodma "User%253AJogoodma") (jogoodma A\*T indiana
 D\*O\*T edu )
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Unsupported](Category%253AUnsupported "Category%253AUnsupported")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Citrina" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:19 on 11 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">32,999 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

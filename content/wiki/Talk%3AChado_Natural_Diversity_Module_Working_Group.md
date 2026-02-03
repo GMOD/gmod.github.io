@@ -1,86 +1,51 @@
 ---
 title: "Talk:Chado Natural Diversity Module Working Group"
 ---
+# Talk:Chado Natural Diversity Module Working Group
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Talk:Chado Natural Diversity Module Working Group</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Responsibilities</span>](#Responsibilities)
-- [<span class="tocnumber">2</span> <span class="toctext">January
-  2010</span>](#January_2010)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Schema
-    Change Logistics</span>](#Schema_Change_Logistics)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Schema
+  Responsibilities](#Responsibilities)
+- [January
+  2010](#January_2010)
+  - [Schema
+    Change Logistics](#Schema_Change_Logistics)
+  - [Schema
     Design Tools /
-    Visualization</span>](#Schema_Design_Tools_.2F_Visualization)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Observational
-    Taxonomy</span>](#Observational_Taxonomy)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">Stock</span>](#Stock)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">Observational Taxonomy
-      Proposal</span>](#Observational_Taxonomy_Proposal)
-      - [<span class="tocnumber">2.3.2.1</span>
-        <span class="toctext">Observational
-        Unit</span>](#Observational_Unit)
-    - [<span class="tocnumber">2.3.3</span>
-      <span class="toctext">Observational Unit
-      Relationships</span>](#Observational_Unit_Relationships)
-    - [<span class="tocnumber">2.3.4</span>
-      <span class="toctext">Current Status</span>](#Current_Status)
-  - [<span class="tocnumber">2.4</span>
-    <span class="toctext">Project/Experiment/Study
-    Hierarchy</span>](#Project.2FExperiment.2FStudy_Hierarchy)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Phenotypes
-    and Genotypes</span>](#Phenotypes_and_Genotypes)
-    - [<span class="tocnumber">2.5.1</span>
-      <span class="toctext">Phenotypes</span>](#Phenotypes)
-      - [<span class="tocnumber">2.5.1.1</span>
-        <span class="toctext">HDB Design</span>](#HDB_Design)
-    - [<span class="tocnumber">2.5.2</span>
-      <span class="toctext">Genotypes</span>](#Genotypes)
-    - [<span class="tocnumber">2.5.3</span>
-      <span class="toctext">Functional and Sequence
-      Alleles</span>](#Functional_and_Sequence_Alleles)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Assays,
-    Images</span>](#Assays.2C_Images)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Action
-    Items</span>](#Action_Items)
-- [<span class="tocnumber">3</span> <span class="toctext">February
-  2010</span>](#February_2010)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">8 Feb 2010
-    Teleconference</span>](#8_Feb_2010_Teleconference)
-- [<span class="tocnumber">4</span> <span class="toctext">March
-  2010</span>](#March_2010)
-- [<span class="tocnumber">5</span> <span class="toctext">April
-  2010</span>](#April_2010)
-- [<span class="tocnumber">6</span> <span class="toctext">simplified
+    Visualization](#Schema_Design_Tools_.2F_Visualization)
+  - [Observational
+    Taxonomy](#Observational_Taxonomy)
+    - [Stock](#Stock)
+    - [Observational Taxonomy
+      Proposal](#Observational_Taxonomy_Proposal)
+      - [Observational
+        Unit](#Observational_Unit)
+    - [Observational Unit
+      Relationships](#Observational_Unit_Relationships)
+    - [Current Status](#Current_Status)
+  - [Project/Experiment/Study
+    Hierarchy](#Project.2FExperiment.2FStudy_Hierarchy)
+  - [Phenotypes
+    and Genotypes](#Phenotypes_and_Genotypes)
+    - [Phenotypes](#Phenotypes)
+      - [HDB Design](#HDB_Design)
+    - [Genotypes](#Genotypes)
+    - [Functional and Sequence
+      Alleles](#Functional_and_Sequence_Alleles)
+  - [Assays,
+    Images](#Assays.2C_Images)
+  - [Action
+    Items](#Action_Items)
+- [February
+  2010](#February_2010)
+  - [8 Feb 2010
+    Teleconference](#8_Feb_2010_Teleconference)
+- [March
+  2010](#March_2010)
+- [April
+  2010](#April_2010)
+- [simplified
   schema (ND tables
-  only)</span>](#simplified_schema_.28ND_tables_only.29)
+  only)](#simplified_schema_.28ND_tables_only.29)
 
 
 This is the *discussion* page for the [Chado Natural Diversity Module
@@ -99,7 +64,7 @@ changes relative to the version that was created in 2007 with
 We will also use what came up at the PAG meeting as starting point for
 the discussion. This will change over time, as things settle down.
 
-# <span id="Responsibilities" class="mw-headline">Responsibilities</span>
+# Responsibilities
 
 ***Note:** These responsibilities are flexible. They are just what we
 decided at the PAG meetings. They are wide open to discussion (or just
@@ -117,9 +82,9 @@ module, and in the rest of the Chado.
 
 **Add your name here** ...
 
-# <span id="January_2010" class="mw-headline">January 2010</span>
+# January 2010
 
-## <span id="Schema_Change_Logistics" class="mw-headline">Schema Change Logistics</span>
+## Schema Change Logistics
 
 We have conflicting goals here:
 
@@ -144,7 +109,7 @@ Chado.
 
   
 
-## <span id="Schema_Design_Tools_.2F_Visualization" class="mw-headline">Schema Design Tools / Visualization</span>
+## Schema Design Tools / Visualization
 
 Sook, who is leading this particular effort, has access to Quest Toad
 for doing database design. She will likely send out proposals and
@@ -156,7 +121,7 @@ intermediate documentation. Power\*Architect is free, which is within my
 budget. (This also makes it possible for anyone else to update the doc
 in the long term.)
 
-## <span id="Observational_Taxonomy" class="mw-headline">Observational Taxonomy</span>
+## Observational Taxonomy
 
 HDB has several different levels of biological unit, all represented
 with a different set of tables
@@ -199,7 +164,7 @@ design has several *structurally identical* tables in HDB for the
 various levels for different types of data (phenotype, images, ...).
 This particular hierarchy is also particular to butterflies.
 
-### <span id="Stock" class="mw-headline">Stock</span>
+### Stock
 
 Both the HDB version and the production Chado have a stock table. The
 [Chado Stock Module](Chado_Stock_Module "Chado Stock Module") was added
@@ -211,7 +176,7 @@ natural diversity module should interact with it.
 
   
 
-### <span id="Observational_Taxonomy_Proposal" class="mw-headline">Observational Taxonomy Proposal</span>
+### Observational Taxonomy Proposal
 
 When Sook Jung mapped the HDB version to plant biology a number of
 issues came up:
@@ -241,14 +206,12 @@ the hierarchy they have data for.
 We can't touch Organism, as it's a key table in every Chado instance out
 there. However, everything else is open to change.
 
-#### <span id="Observational_Unit" class="mw-headline">Observational Unit</span>
-
+#### Observational Unit
 
 
 The GDPDM has *observational units,* which represents whatever level of
 sample you have data for. I find that name descriptive, but awkward.
 Unfortunately, I can't think of a better name. Suggestions are welcome.
-
 
 
 Specifics:
@@ -261,7 +224,7 @@ Specifics:
     For butterflies, the possible values might be "species", "biotype",
     "stock", "individual", and possibly "specimen"
 
-### <span id="Observational_Unit_Relationships" class="mw-headline">Observational Unit Relationships</span>
+### Observational Unit Relationships
 
 We need to support arbitrary M:M relationships between different levels
 of the observational taxonomy, and within the same level as well. For
@@ -284,12 +247,12 @@ experiments an individual will be crossed with it's descendents.
 Therefore software that walks these relationships will need to detect
 cycles.
 
-### <span id="Current_Status" class="mw-headline">Current Status</span>
+### Current Status
 
 We're planning on moving ahead with merging the existing tables into a
 single table. And, no we can't yet agree on that table name.
 
-## <span id="Project.2FExperiment.2FStudy_Hierarchy" class="mw-headline">Project/Experiment/Study Hierarchy</span>
+## Project/Experiment/Study Hierarchy
 
 The current [Project
 table](Chado_General_Module#Table:_project "Chado General Module") is
@@ -302,9 +265,9 @@ The GDR group needs to the ability to more robustly define
 projects/studies, and to introduce substudies/project hierarchy, as
 well.
 
-## <span id="Phenotypes_and_Genotypes" class="mw-headline">Phenotypes and Genotypes</span>
+## Phenotypes and Genotypes
 
-### <span id="Phenotypes" class="mw-headline">Phenotypes</span>
+### Phenotypes
 
 Phenotypes are not particularly well defined in Chado.
 [Scott](User%253AScott "User%253AScott") says that there are two sets of
@@ -329,7 +292,7 @@ users, then I would like to look into
 
   
 
-#### <span id="HDB_Design" class="mw-headline">HDB Design</span>
+#### HDB Design
 
 The HDB version of the module ties into the preexisting [phenotype
 table](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module").
@@ -373,7 +336,7 @@ current design one of them has to come first.
 As mentioned above, this area needs more research, or maybe just more
 documentation.
 
-### <span id="Genotypes" class="mw-headline">Genotypes</span>
+### Genotypes
 
 Genotypes appear to be more clearly defined in the production Chado
 schema: A genotype is a collection of features.
@@ -385,7 +348,7 @@ long, while in another it is *m* bases long.
 This would go in the genotype and feature tables. However, we may not be
 clear yet on where the length would go.
 
-### <span id="Functional_and_Sequence_Alleles" class="mw-headline">Functional and Sequence Alleles</span>
+### Functional and Sequence Alleles
 
 Sook pointed out the need to represent both *functional* and *sequence*
 alleles. She explained: An apple geneticist who is working on a locus
@@ -398,7 +361,7 @@ called F-M locus found three functional alleles and 12 sequence alleles.
 We worked this out as functional alleles are stored in the phenotype
 tables, and sequence alleles in the feature and genotype tables.
 
-## <span id="Assays.2C_Images" class="mw-headline">Assays, Images</span>
+## Assays, Images
 
 HDB includes support for images and assays. We should probably have a
 general purpose solution that is usable for all images and assays, not
@@ -406,7 +369,7 @@ just those in the natural diversity module.
 
   
 
-## <span id="Action_Items" class="mw-headline">Action Items</span>
+## Action Items
 
 Sook will
 
@@ -423,7 +386,7 @@ Dave will
 
 Anything else?
 
-# <span id="February_2010" class="mw-headline">February 2010</span>
+# February 2010
 
 The first meeting in February will be held Monday February 8, at 11am
 Eastern US. Contact [Dave C](User%253AClements "User%253AClements") if you are
@@ -437,7 +400,7 @@ rel="nofollow">Doodle poll</a> to let us know when you can make it.
 Scheduling this will be tough as we have key interested parties in
 Europe and across the contiguous US.
 
-## <span id="8_Feb_2010_Teleconference" class="mw-headline">8 Feb 2010 Teleconference</span>
+## 8 Feb 2010 Teleconference
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/NaturalDiversityChado20100208.pdf"
   class="internal" title="NaturalDiversityChado20100208.pdf">Proposal from
@@ -445,7 +408,7 @@ Europe and across the contiguous US.
   (<a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/95/NaturalDiversityChado20100208.pptx"
   class="internal" title="NaturalDiversityChado20100208.pptx">PPT</a>)
 
-# <span id="March_2010" class="mw-headline">March 2010</span>
+# March 2010
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/88/ChadoDiversityMar032010.pdf"
   class="internal" title="ChadoDiversityMar032010.pdf">New Proposal from
@@ -455,23 +418,17 @@ Europe and across the contiguous US.
   href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Natural_diversity_module_Mar03_2010.txt"
   class="internal" title="Natural diversity module Mar03 2010.txt">SQL</a>
 
-# <span id="April_2010" class="mw-headline">April 2010</span>
+# April 2010
 
 Topic for Apr Teleconference Meeting
 
 - The structure of diversityexperiment table and four different
   sub-tables
-
-<!-- -->
-
 - Renaming tables
   - ptexperiment/gtexperiment to ptassay/gtassay?
   - ptassay/gtassay to ptprotocol/gtprotocol or ptassaytype/gtassaytype
     or ptmethod/gtmethod?
   - diversityexperiment?
-
-<!-- -->
-
 - Do we need crossexperiment table linked to stocksample table via
   diversityexperiment?
 
@@ -495,7 +452,7 @@ tables using cross- instead of crossexperiment-
 
   
 
-# <span id="simplified_schema_.28ND_tables_only.29" class="mw-headline">simplified schema (ND tables only)</span>
+# simplified schema (ND tables only)
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/Natdiv_simplified_SGN.png" width="1600"
@@ -503,87 +460,3 @@ height="943" alt="Natdiv simplified SGN.png" />
 
 [Notes on simplified nd schema and Use
 Cases](Notes_on_simplified_nd_schema_and_Use_Cases "Notes on simplified nd schema and Use Cases")
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Natural_Diversity_Module_Working_Group"
-  accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:18 on 27 August
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">49,809 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,26 +1,7 @@
 ---
 title: "News/Insect Pest Workshop, 16-17 Nov"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">News/Insect Pest Workshop, 16-17 Nov</span>
-
-
-
-
-
-
-
-
-
-
+# News/Insect Pest Workshop, 16-17 Nov
 
 
 <a href="http://colloque.inra.fr/isyip" rel="nofollow"
@@ -29,8 +10,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/86/InformationSystemsForInsectPests.gif/600px-InformationSystemsForInsectPests.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/86/InformationSystemsForInsectPests.gif/800px-InformationSystemsForInsectPests.gif 2x"
 width="400" height="43"
 alt="Information Systems for Insect Pests" /></a>
-
-
 
 
 <a href="http://colloque.inra.fr/isyip" class="external text"
@@ -81,98 +60,9 @@ minute presentation may be asked.
   
 
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2009/07/20*
-
-
-
-
 
 
 [Category](../Special%253ACategories "Special%253ACategories"):
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/News-2FInsect_Pest_Workshop,_16-2D17_Nov"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:43 on 3 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">6,766 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

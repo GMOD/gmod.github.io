@@ -1,31 +1,12 @@
 ---
 title: "April 2013 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">April 2013 GMOD Meeting</span>
-
-
-
-
-
-
-
-
-
+# April 2013 GMOD Meeting
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Gmod-2013-mtg-alt.png" width="240"
 height="240" alt="Gmod-2013-mtg-alt.png" />
-
 
 
 Friday 5 April, 9:00-17:00
@@ -44,26 +25,20 @@ meeting</a>
   
 
 
-## Contents
+  Agenda](#Agenda)
+  - [Friday 5th
+    April](#Friday_5th_April)
+  - [Saturday
+    April 6th](#Saturday_April_6th)
+- [Remote
+  Attendance](#Remote_Attendance)
+- [Meeting
+  Assessment](#Meeting_Assessment)
 
 
+## Agenda
 
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Friday 5th
-    April</span>](#Friday_5th_April)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Saturday
-    April 6th</span>](#Saturday_April_6th)
-- [<span class="tocnumber">2</span> <span class="toctext">Remote
-  Attendance</span>](#Remote_Attendance)
-- [<span class="tocnumber">3</span> <span class="toctext">Meeting
-  Assessment</span>](#Meeting_Assessment)
-
-
-
-## <span id="Agenda" class="mw-headline">Agenda</span>
-
-### <span id="Friday_5th_April" class="mw-headline">Friday 5th April</span>
+### Friday 5th April
 
 **State of the GMOD Project**, including GBrowse and Chado updates
 ([Scott](User%253AScott "User%253AScott"))
@@ -164,7 +139,7 @@ Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis"))
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/65/GMOD2013_InterMine.pdf"
   class="internal" title="GMOD2013 InterMine.pdf">Slides</a>
 
-### <span id="Saturday_April_6th" class="mw-headline">Saturday April 6th</span>
+### Saturday April 6th
 
 **FlyBase update** (Josh Goodman)
 
@@ -205,7 +180,7 @@ rel="nofollow">Demeter</a>: A data-harvester for biological sources**
 rel="nofollow">Galaxy CloudMan</a> Workshop** ([Dave
 Clements](User%253AClements "User%253AClements"))
 
-## <span id="Remote_Attendance" class="mw-headline">Remote Attendance</span>
+## Remote Attendance
 
 Saturday 6th April: <a
 href="https://meetings.webex.com/collabs/#/meetings/detail?uuid=IAGLKVBIA8I661U6ZAQFISZNV2-9RCJ#/meetings/detail?uuid=IAGLKVBIA8I661U6ZAQFISZNV2-9RCJ"
@@ -214,7 +189,7 @@ rel="nofollow">https://meetings.webex.com/collabs/#/meetings/detail?uuid=IAGLKVB
 
   
 
-## <span id="Meeting_Assessment" class="mw-headline">Meeting Assessment</span>
+## Meeting Assessment
 
 Please fill out
 <a href="../meeting.html" class="external text" rel="nofollow">the
@@ -222,87 +197,6 @@ meeting assessment</a> so that we know what worked well and what needs
 improvement for next time.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/April_2013_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:54 on 11 June
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">251,270 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

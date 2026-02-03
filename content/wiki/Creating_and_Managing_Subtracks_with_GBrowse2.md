@@ -1,23 +1,7 @@
 ---
 title: "Creating and Managing Subtracks with GBrowse2"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Creating and Managing Subtracks with GBrowse2</span>
-
-
-
-
-
-
-
+# Creating and Managing Subtracks with GBrowse2
 
 
 *For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
@@ -45,31 +29,24 @@ feature filters. The filters are applied to each filter in turn, sorting
 them into the appropriate subtrack.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using
   Metadata</span>](#Using_Metadata)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Full
-    Example</span>](#Full_Example)
-- [<span class="tocnumber">2</span> <span class="toctext">Using Subtrack
-  Select</span>](#Using_Subtrack_Select)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">A Basic
-    Example</span>](#A_Basic_Example)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Multidimensional
-    Subtracks</span>](#Multidimensional_Subtracks)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Adding
-    subtrack IDs to the Table</span>](#Adding_subtrack_IDs_to_the_Table)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Labeling
-    Subtracks</span>](#Labeling_Subtracks)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Hiding
-    Subtracks with no Data</span>](#Hiding_Subtracks_with_no_Data)
+  - [Full
+    Example](#Full_Example)
+- [Using Subtrack
+  Select](#Using_Subtrack_Select)
+  - [A Basic
+    Example](#A_Basic_Example)
+  - [Multidimensional
+    Subtracks](#Multidimensional_Subtracks)
+  - [Adding
+    subtrack IDs to the Table](#Adding_subtrack_IDs_to_the_Table)
+  - [Labeling
+    Subtracks](#Labeling_Subtracks)
+  - [Hiding
+    Subtracks with no Data](#Hiding_Subtracks_with_no_Data)
 
 
-
-## <span id="Using_Metadata" class="mw-headline">Using Metadata</span>
+## Using Metadata
 
 If you have just a few features and there is a one-to-one correspondence
 between feature and subtrack, then the easiest way to define subtracks
@@ -132,7 +109,7 @@ path name to the metadata file. For example:
     glyph    = vista_ploat
     metadata = /var/www/gbrowse2/databases/chip-seq/metadata.txt
 
-### <span id="Full_Example" class="mw-headline">Full Example</span>
+### Full Example
 
 Here is a full working example of a metadata-based subtrack definition
 that shows a number of ChIP-seq experiments with the attributes
@@ -140,16 +117,10 @@ that shows a number of ChIP-seq experiments with the attributes
 this generates is shown on the right.
 
 
-
-
-
-
 modENCODE ChIP-seq subtrack selector
 
 
-
-
-### <span id="Multidimensional_Subtracks" class="mw-headline">Multidimensional Subtracks</span>
+### Multidimensional Subtracks
 
 The previous example partitioned subtracks on a single dimension. This
 example will show how to create individually-selectable subtracks based
@@ -211,7 +182,7 @@ default. If no asterisks are present, all subtracks are turned on.
 The **brief comment** option serves to define a short description of the
 subtracks that will be printed in the subtrack selection dialog box.
 
-### <span id="Adding_subtrack_IDs_to_the_Table" class="mw-headline">Adding subtrack IDs to the Table</span>
+### Adding subtrack IDs to the Table
 
 If you wish to embed GBrowse in another application, you will probably
 want to assign IDs to the subtracks so that they can be turned on and
@@ -240,7 +211,7 @@ This will select the region between positions 1000 and 2000 on
 chromosome I, and turn on the ChIP-seq track, subtracks 100, 102 and
 103.
 
-### <span id="Labeling_Subtracks" class="mw-headline">Labeling Subtracks</span>
+### Labeling Subtracks
 
 Subtracks are labeled on the left side of the panel. If you are using
 "label_position=left" in your stanza, or the genes glyph with
@@ -273,97 +244,9 @@ group_label to 0 if the track consists of quantitative data (uses one of
 the wiggle, xyplot, density or whisker glyphs). Please set group_label
 to a true value in order to activate subtrack labeling.
 
-### <span id="Hiding_Subtracks_with_no_Data" class="mw-headline">Hiding Subtracks with no Data</span>
+### Hiding Subtracks with no Data
 
 By default, if a subtrack has no data in the currently displayed region,
 its label will still be printed to show that the subtrack exists. If you
 prefer, you can set **hide empty subtracks** to a true value, in which
 case the display of empty subtracks will be suppressed.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Creating_and_Managing_Subtracks_with_GBrowse2"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:42 on 17 April
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">152,090 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

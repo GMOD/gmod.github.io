@@ -1,22 +1,7 @@
 ---
 title: "JBrowse Tutorial 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">JBrowse Tutorial 2010</span>
-
-
-
-
-
-
-
-
+# JBrowse Tutorial 2010
 
 
 <img
@@ -37,58 +22,45 @@ This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through setting up and running a [JBrowse](JBrowse.1 "JBrowse") server.
 
 
-## Contents
+  VMware](#VMware)
+- [Caveats](#Caveats)
+- [Prerequisites](#Prerequisites)
+- [JBrowse
+  Introduction](#JBrowse_Introduction)
+- [JBrowse
+  arch](#JBrowse_arch)
+- [Setting up
+  JBrowse](#Setting_up_JBrowse)
+  - [Getting
+    JBrowse](#Getting_JBrowse)
+  - [Starting
+    Point](#Starting_Point)
+  - [Basic
+    Steps](#Basic_Steps)
+  - [Data from
+    a database](#Data_from_a_database)
+    - [Specify reference
+      sequences](#Specify_reference_sequences)
+    - [Load
+      Feature Data](#Load_Feature_Data)
+    - [More
+      complex track](#More_complex_track)
+    - [Collect feature
+      names](#Collect_feature_names)
+  - [Data from
+    flat files](#Data_from_flat_files)
+    - [Sequences](#Sequences)
+    - [Features](#Features)
+    - [BAM
+      data](#BAM_data)
+  - [Quantitative data](#Quantitative_data)
+- [See
+  also](#See_also)
+- [Other
+  links](#Other_links)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">VMware</span>](#VMware)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Caveats</span>](#Caveats)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">4</span> <span class="toctext">JBrowse
-  Introduction</span>](#JBrowse_Introduction)
-- [<span class="tocnumber">5</span> <span class="toctext">JBrowse
-  arch</span>](#JBrowse_arch)
-- [<span class="tocnumber">6</span> <span class="toctext">Setting up
-  JBrowse</span>](#Setting_up_JBrowse)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Getting
-    JBrowse</span>](#Getting_JBrowse)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Starting
-    Point</span>](#Starting_Point)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Basic
-    Steps</span>](#Basic_Steps)
-  - [<span class="tocnumber">6.4</span> <span class="toctext">Data from
-    a database</span>](#Data_from_a_database)
-    - [<span class="tocnumber">6.4.1</span>
-      <span class="toctext">Specify reference
-      sequences</span>](#Specify_reference_sequences)
-    - [<span class="tocnumber">6.4.2</span> <span class="toctext">Load
-      Feature Data</span>](#Load_Feature_Data)
-    - [<span class="tocnumber">6.4.3</span> <span class="toctext">More
-      complex track</span>](#More_complex_track)
-    - [<span class="tocnumber">6.4.4</span>
-      <span class="toctext">Collect feature
-      names</span>](#Collect_feature_names)
-  - [<span class="tocnumber">6.5</span> <span class="toctext">Data from
-    flat files</span>](#Data_from_flat_files)
-    - [<span class="tocnumber">6.5.1</span>
-      <span class="toctext">Sequences</span>](#Sequences)
-    - [<span class="tocnumber">6.5.2</span>
-      <span class="toctext">Features</span>](#Features)
-    - [<span class="tocnumber">6.5.3</span> <span class="toctext">BAM
-      data</span>](#BAM_data)
-  - [<span class="tocnumber">6.6</span>
-    <span class="toctext">Quantitative data</span>](#Quantitative_data)
-- [<span class="tocnumber">7</span> <span class="toctext">See
-  also</span>](#See_also)
-- [<span class="tocnumber">8</span> <span class="toctext">Other
-  links</span>](#Other_links)
-
-
-
-## <span id="VMware" class="mw-headline">VMware</span>
+## VMware
 
 This tutorial was taught using a VMware system image
 as a starting point. If you want to start with the same system, download
@@ -109,8 +81,7 @@ class="external text" rel="nofollow">end image</a>.
 | Shell   | gmod     | gmodamericas2010 |
 | MySQL   | root     | gmodamericas2010 |
 
-## <span id="Caveats" class="mw-headline">Caveats</span>
-
+## Caveats
 
 
 **Important Note**
@@ -123,8 +94,7 @@ over time. Newer versions of tutorials will be posted as they become
 available.
 
 
-
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 These have **already been set up** on the VM image.
 
@@ -148,7 +118,6 @@ Optional, for BAM files:
   class="external text" rel="nofollow">Bio::DB::SAM</a>
 
 
-
 And this is how they were installed: **(don't do this, this has already
 been done in the VM)**
 
@@ -164,7 +133,6 @@ cpan[1]> install Bio::DB::Das::Chado Bio::DB::Sam JSON JSON::XS
 ```
 
 
-
 Also: make sure you can Copy/paste from wiki.
 
 Shell tricks:
@@ -173,7 +141,7 @@ Shell tricks:
 - History
 - History search
 
-## <span id="JBrowse_Introduction" class="mw-headline">JBrowse Introduction</span>
+## JBrowse Introduction
 
 How and why [JBrowse](JBrowse.1 "JBrowse") is different from most other
 web-based genome browsers, including [GBrowse](GBrowse.1 "GBrowse").
@@ -185,17 +153,16 @@ class="external text" rel="nofollow">paper</a>
 class="internal"
 title="GMODCourse2010-JBrowseIntro.pdf">Media:GMODCourse2010-JBrowseIntro.pdf</a>
 
-## <span id="JBrowse_arch" class="mw-headline">JBrowse arch</span>
+## JBrowse arch
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d0/Jbrowse_arch.png/600px-Jbrowse_arch.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d0/Jbrowse_arch.png/900px-Jbrowse_arch.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d0/Jbrowse_arch.png 2x"
 width="600" height="776" alt="Jbrowse arch.png" />
 
-## <span id="Setting_up_JBrowse" class="mw-headline">Setting up JBrowse</span>
+## Setting up JBrowse
 
-### <span id="Getting_JBrowse" class="mw-headline">Getting JBrowse</span>
-
+### Getting JBrowse
 
 
 **This has already been done in the VMware image.**
@@ -214,8 +181,7 @@ $ git checkout lazyfeatures
 ```
 
 
-
-### <span id="Starting_Point" class="mw-headline">Starting Point</span>
+### Starting Point
 
 Visit in web browser:
 
@@ -227,7 +193,7 @@ Visit in web browser:
 
 You should see just a blank white page.
 
-### <span id="Basic_Steps" class="mw-headline">Basic Steps</span>
+### Basic Steps
 
 Setting up a JBrowse instance with feature data goes in three basic
 steps:
@@ -236,7 +202,7 @@ steps:
 2.  Load feature data
 3.  Collect feature names
 
-### <span id="Data_from_a_database" class="mw-headline">Data from a database</span>
+### Data from a database
 
 Here, we'll use the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> adapter;
@@ -257,7 +223,7 @@ Starting config file: `~/Documents/Data/jbrowse/first-config.json`
 
     ...
 
-#### <span id="Specify_reference_sequences" class="mw-headline">Specify reference sequences</span>
+#### Specify reference sequences
 
 The first script to run is `bin/prepare-refseqs.pl`; that script is the
 way you tell JBrowse about what your reference sequences are. Running
@@ -273,7 +239,7 @@ directory on the command line).
 Visit in web browser: you should new see the JBrowse UI (and if you zoom
 all the way in, some sequence)
 
-#### <span id="Load_Feature_Data" class="mw-headline">Load Feature Data</span>
+#### Load Feature Data
 
 Next, we'll use `biodb-to-json.pl` to get feature data out of the
 database and turn it into JSON data that the
@@ -330,7 +296,7 @@ this track:
 
 (visit in web browser: you should see a new gene track)
 
-#### <span id="More_complex_track" class="mw-headline">More complex track</span>
+#### More complex track
 
 Now we'll add a second track; this one will have subfeatures. This
 snippet is from: `~/Documents/Data/jbrowse/second-config.json`
@@ -359,7 +325,7 @@ snippet is from: `~/Documents/Data/jbrowse/second-config.json`
 (visit in web browser: you should see a new track, which has subfeatures
 if you're zoomed in far enough)
 
-#### <span id="Collect_feature_names" class="mw-headline">Collect feature names</span>
+#### Collect feature names
 
 When you generate JSON for a track, if you specify `"autocomplete"` then
 a listing of all of the names/IDs from that track (along with the
@@ -375,7 +341,7 @@ Visit in web browser, search for feature name: e.g.,
 
 **maker-scf1117875582023-snap-gene-0.3**
 
-### <span id="Data_from_flat_files" class="mw-headline">Data from flat files</span>
+### Data from flat files
 
 First, remove the `data` directory:
 
@@ -383,7 +349,7 @@ First, remove the `data` directory:
 
 Visit in web browser, see blank screen again
 
-#### <span id="Sequences" class="mw-headline">Sequences</span>
+#### Sequences
 
 You can also get data into JBrowse from flat files. For sequence, use
 `prepare-refseqs.pl` with the `--fasta` argument:
@@ -392,7 +358,7 @@ You can also get data into JBrowse from flat files. For sequence, use
 
 Visit in web browser; you should see a second reference sequence.
 
-#### <span id="Features" class="mw-headline">Features</span>
+#### Features
 
 To get feature data from flat files into JBrowse, use
 `flatfile-to-json.pl`. We'll use some more of the data from the
@@ -406,7 +372,7 @@ title="MAKER Tutorial">MAKER session</a>:
 
 Visit in web browser; you should see a new "GFF match" track.
 
-#### <span id="BAM_data" class="mw-headline">BAM data</span>
+#### BAM data
 
 The "lazyfeatures" branch of JBrowse can generate JSON from a BAM
 source:
@@ -415,7 +381,7 @@ source:
         --bam ~/Documents/Data/jbrowse/simulated-sorted.bam \
         --cssclass exon --tracklabel BAM_data --key "BAM Data"
 
-### <span id="Quantitative_data" class="mw-headline">Quantitative data</span>
+### Quantitative data
 
 JBrowse can also display quantitative data in the wiggle format. JBrowse
 processes wiggle files with a C++ program, which you have to compile:
@@ -429,12 +395,12 @@ Now you can process the wiggle file:
 
 Visit in web browser
 
-## <span id="See_also" class="mw-headline">See also</span>
+## See also
 
 - Documentation: <a href="JBrowseDev/Main" class="mw-redirect"
   title="JBrowseDev/Main">JBrowseDev/Main</a>
 
-## <span id="Other_links" class="mw-headline">Other links</span>
+## Other links
 
 - Config file ref:
   <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
@@ -449,13 +415,10 @@ Visit in web browser
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -465,81 +428,3 @@ Visit in web browser
 |                                                        |                                                                                                                                                                    |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/JBrowse "Special%253ASearchByProperty/Has-20topic/JBrowse")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_Tutorial_2010" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:46 on 3 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">10,893 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

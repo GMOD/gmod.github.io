@@ -1,92 +1,69 @@
 ---
 title: "Chado CV Module"
 ---
-<span id="top"></span>
+# Chado CV Module
 
-# <span dir="auto">Chado CV Module</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Similarities to the GO Database
-    schema</span>](#Similarities_to_the_GO_Database_schema)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Overview</span>](#Overview)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Associating features to
-    cvterms</span>](#Associating_features_to_cvterms)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Complex
-    annotations</span>](#Complex_annotations)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Transitive
-    Closure</span>](#Transitive_Closure)
-    - [<span class="tocnumber">1.5.1</span>
-      <span class="toctext">Transitivity of other
-      Relations</span>](#Transitivity_of_other_Relations)
-    - [<span class="tocnumber">1.5.2</span>
-      <span class="toctext">Transitivity over
-      _is_a_</span>](#Transitivity_over_is_a)
-    - [<span class="tocnumber">1.5.3</span>
-      <span class="toctext">Difference between Deductive Closure and
+  Introduction](#Introduction)
+  - [Similarities to the GO Database
+    schema](#Similarities_to_the_GO_Database_schema)
+  - [Overview](#Overview)
+  - [Associating features to
+    cvterms](#Associating_features_to_cvterms)
+  - [Complex
+    annotations](#Complex_annotations)
+  - [Transitive
+    Closure](#Transitive_Closure)
+    - [Transitivity of other
+      Relations](#Transitivity_of_other_Relations)
+    - [Transitivity over
+      _is_a_](#Transitivity_over_is_a)
+    - [Difference between Deductive Closure and
       Transitive
-      Closure</span>](#Difference_between_Deductive_Closure_and_Transitive_Closure)
-    - [<span class="tocnumber">1.5.4</span>
-      <span class="toctext">Rules</span>](#Rules)
-    - [<span class="tocnumber">1.5.5</span>
-      <span class="toctext">Populating
-      cvtermpath</span>](#Populating_cvtermpath)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Advanced
-    Usage</span>](#Advanced_Usage)
-    - [<span class="tocnumber">1.6.1</span>
-      <span class="toctext">Background</span>](#Background)
-    - [<span class="tocnumber">1.6.2</span>
-      <span class="toctext">Logical
-      definitions</span>](#Logical_definitions)
-    - [<span class="tocnumber">1.6.3</span> <span class="toctext">How
+      Closure](#Difference_between_Deductive_Closure_and_Transitive_Closure)
+    - [Rules](#Rules)
+    - [Populating
+      cvtermpath](#Populating_cvtermpath)
+  - [Advanced
+    Usage](#Advanced_Usage)
+    - [Background](#Background)
+    - [Logical
+      definitions](#Logical_definitions)
+    - [How
       Logical Definitions are Stored in
-      Chado</span>](#How_Logical_Definitions_are_Stored_in_Chado)
-    - [<span class="tocnumber">1.6.4</span>
-      <span class="toctext">Logical Definition
-      Views</span>](#Logical_Definition_Views)
-    - [<span class="tocnumber">1.6.5</span>
-      <span class="toctext">Example Use Case:
-      Phenotypes</span>](#Example_Use_Case:_Phenotypes)
-    - [<span class="tocnumber">1.6.6</span>
-      <span class="toctext">Example Use Case: Feature
-      Types</span>](#Example_Use_Case:_Feature_Types)
-      - [<span class="tocnumber">1.6.6.1</span>
-        <span class="toctext">Example use case:
-        GO</span>](#Example_use_case:_GO)
-      - [<span class="tocnumber">1.6.6.2</span>
-        <span class="toctext">Example use case: Drawing
-        DAGs</span>](#Example_use_case:_Drawing_DAGs)
-      - [<span class="tocnumber">1.6.6.3</span>
-        <span class="toctext">Loading OWL into
-        Chado</span>](#Loading_OWL_into_Chado)
-      - [<span class="tocnumber">1.6.6.4</span>
-        <span class="toctext">Post-coordinating
-        Terms</span>](#Post-coordinating_Terms)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    cv</span>](#Table:_cv)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    cvterm</span>](#Table:_cvterm)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    cvterm_dbxref</span>](#Table:_cvterm_dbxref)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    cvterm_relationship</span>](#Table:_cvterm_relationship)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    cvtermpath</span>](#Table:_cvtermpath)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    cvtermprop</span>](#Table:_cvtermprop)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Table:
-    cvtermsynonym</span>](#Table:_cvtermsynonym)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Table:
-    dbxrefprop</span>](#Table:_dbxrefprop)
+      Chado](#How_Logical_Definitions_are_Stored_in_Chado)
+    - [Logical Definition
+      Views](#Logical_Definition_Views)
+    - [Example Use Case:
+      Phenotypes](#Example_Use_Case:_Phenotypes)
+    - [Example Use Case: Feature
+      Types](#Example_Use_Case:_Feature_Types)
+      - [Example use case:
+        GO](#Example_use_case:_GO)
+      - [Example use case: Drawing
+        DAGs](#Example_use_case:_Drawing_DAGs)
+      - [Loading OWL into
+        Chado](#Loading_OWL_into_Chado)
+      - [Post-coordinating
+        Terms](#Post-coordinating_Terms)
+- [Tables](#Tables)
+  - [Table:
+    cv](#Table:_cv)
+  - [Table:
+    cvterm](#Table:_cvterm)
+  - [Table:
+    cvterm_dbxref](#Table:_cvterm_dbxref)
+  - [Table:
+    cvterm_relationship](#Table:_cvterm_relationship)
+  - [Table:
+    cvtermpath](#Table:_cvtermpath)
+  - [Table:
+    cvtermprop](#Table:_cvtermprop)
+  - [Table:
+    cvtermsynonym](#Table:_cvtermsynonym)
+  - [Table:
+    dbxrefprop](#Table:_dbxrefprop)
 
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 This module is for controlled vocabularies (CVs), semantic networks and
 ontologies, depending on which terminology you prefer.
@@ -106,7 +83,7 @@ as <a href="http://en.wikipedia.org/wiki/Web_Ontology_Language"
 class="external text" rel="nofollow">OWL (Ontology Web Language)</a>,
 but this is outside the current requirements.
 
-## <span id="Similarities_to_the_GO_Database_schema" class="mw-headline">Similarities to the GO Database schema</span>
+## Similarities to the GO Database schema
 
 The schema is similar to the
 <a href="http://geneontology.org/GO.database.shtml"
@@ -116,7 +93,7 @@ also developed by one of the Chado designers.
 There is a _bridge_ layer in the directory `modules/cv/bridges/`, which
 can make the Chado cv module look like the GO DB, and vice versa.
 
-## <span id="Overview" class="mw-headline">Overview</span>
+## Overview
 
 An ontology, or controlled vocabulary (cv) is a collection of classes
 (or concepts or terms, depending on your terminology) with definitions
@@ -150,7 +127,7 @@ think of it as a
 title="wp:Directed graph">directed graph)</a>, then you can think of the
 subject as the child node, and the object as the parent node.
 
-## <span id="Associating_features_to_cvterms" class="mw-headline">Associating features to cvterms</span>
+## Associating features to cvterms
 
 This module is used by most of the Chado modules. But it is useful to
 describe here how this module would be used in the context of the
@@ -170,7 +147,7 @@ features. We may also want to attach phenotypic terms to gene features
 (although the preferred way to do this is _via_ a genotype using the
 [genetics module](Chado_Genetic_Module "Chado Genetic Module")).
 
-## <span id="Complex_annotations" class="mw-headline">Complex annotations</span>
+## Complex annotations
 
 Note that this is something that is not handled by the current GO DB,
 but it is something we may want to allow for in future.
@@ -253,7 +230,7 @@ class="external text" rel="nofollow">SO:0000188</a> |
 
 Sequence Ontology Examples
 
-## <span id="Transitive_Closure" class="mw-headline">Transitive Closure</span>
+## Transitive Closure
 
 This section concerns relations between ontology terms and how defined
 terms and relations can be used to reason, either by humans or
@@ -281,7 +258,7 @@ The closure goes in the [cvtermpath](#Table:_cvtermpath) table - the
 closure can also be thought of as a path through the graph or semantic
 network.
 
-### <span id="Transitivity_of_other_Relations" class="mw-headline">Transitivity of other Relations</span>
+### Transitivity of other Relations
 
 Many other relations, such as _part_of_ are also transitive.
 
@@ -297,7 +274,7 @@ _develops_from_ is a transitive relation:
 
 Then it follows that glial cells develop from neurectodermal cells
 
-### <span id="Transitivity_over_is_a" class="mw-headline">Transitivity over _is_a_</span>
+### Transitivity over _is_a_
 
 It can be proved from the definition of _is_a_ (proof not shown here)
 that:
@@ -314,7 +291,7 @@ For example, if an astrocyte _is_a_ glial cell and a glial cell
 _develops_from_ a glioblast, then it follows that an astrocyte
 _develop_from_ a glioblast.
 
-### <span id="Difference_between_Deductive_Closure_and_Transitive_Closure" class="mw-headline">Difference between Deductive Closure and Transitive Closure</span>
+### Difference between Deductive Closure and Transitive Closure
 
 With a transitive closure we simply follow all links in the
 [DAG](Glossary#DAG "Glossary"), ignoring the relationship type. This
@@ -331,7 +308,7 @@ example, we may want to query for genes expressed in the larva or part
 of the larva, but not genes expressed in anatomical entities that
 develop from the larva.
 
-### <span id="Rules" class="mw-headline">Rules</span>
+### Rules
 
 The [cvtermpath](#Table:_cvtermpath) table is for calculating the
 reflexive transitive closure of a relationship, and any derived
@@ -371,7 +348,7 @@ Therefore:
 
 Here we use _T(inh)_ to represent an inherited relationship.
 
-### <span id="Populating_cvtermpath" class="mw-headline">Populating cvtermpath</span>
+### Populating cvtermpath
 
 The [cvtermpath](#Table:_cvtermpath) table stores the reflexive
 transitive closure of a relationship, taking into account subsumption or
@@ -449,7 +426,7 @@ query [cvtermpath](#Table:_cvtermpath), ignoring cvtermpath.type_id
 (these are obtained by querying
 [cvterm_relationship](#Table:_cvterm_relationship)).
 
-## <span id="Advanced_Usage" class="mw-headline">Advanced Usage</span>
+## Advanced Usage
 
 This section describes advanced usage of the cv module for use with
 OWL-DL advanced Obo format 1.2 \[REF\] features or elements from other
@@ -469,13 +446,13 @@ scheme, along the lines of the transform used in the GO Database. See:
 
 (search for intersection_of)
 
-### <span id="Background" class="mw-headline">Background</span>
+### Background
 
 See the document on
 <a href="http://www.fruitfly.org/~cjm/obol/doc/mapping-obo-to-owl.html"
 class="external text" rel="nofollow">Converting OBO to OWL</a>.
 
-### <span id="Logical_definitions" class="mw-headline">Logical definitions</span>
+### Logical definitions
 
 In a normal ontology [DAG](Glossary#DAG "Glossary") representation in
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, the
@@ -613,7 +590,7 @@ ignored).
 
     go2chadoxml ont.obo > ont.chado
 
-### <span id="How_Logical_Definitions_are_Stored_in_Chado" class="mw-headline">How Logical Definitions are Stored in Chado</span>
+### How Logical Definitions are Stored in Chado
 
 This involves no schema changes to the cv module. Each _intersection_of_
 goes in as a [DAG](Glossary#DAG "Glossary") arc of type
@@ -656,12 +633,12 @@ This uses 4 cvterm_relationships and the creation of a new **anonymous**
 term that is never shown directly to the user. The anonymous term
 represents the class of things that happen during the larval stage.
 
-### <span id="Logical_Definition_Views" class="mw-headline">Logical Definition Views</span>
+### Logical Definition Views
 
 Two views: _cvterm_genus_ and _cvterm_differentium_ views are in
 chado/modules/cv/views.
 
-### <span id="Example_Use_Case:_Phenotypes" class="mw-headline">Example Use Case: [Phenotypes](Category%253APhenotypes "Category%253APhenotypes")</span>
+### Example Use Case: [Phenotypes](Category%253APhenotypes "Category%253APhenotypes")
 
 The idea here is that queries for composed term "syndactyly" should
 automatically return the same results as a boolean query for "fusion" +
@@ -669,19 +646,19 @@ _inheres_in_ = "finger" regardless of whether the annotation is to the
 composed term or is a composed annotation (provided we put the logical
 definition of syndactyly in the database).
 
-### <span id="Example_Use_Case:_Feature_Types" class="mw-headline">Example Use Case: Feature Types</span>
+### Example Use Case: Feature Types
 
 The Sequence Ontology has some logical definitions - you will need to
 load the file <a
 href="http://song.cvs.sourceforge.net/song/ontology/so-xp.obo?view=log"
 class="external text" rel="nofollow">so-xp.obo</a>.
 
-#### <span id="Example_use_case:_GO" class="mw-headline">Example use case: GO</span>
+#### Example use case: GO
 
 See <a href="http://wiki.geneontology.org/index.php/Obol"
 class="external text" rel="nofollow">Obol</a>.
 
-#### <span id="Example_use_case:_Drawing_DAGs" class="mw-headline">Example use case: Drawing DAGs</span>
+#### Example use case: Drawing DAGs
 
 Currently the DAGs of many OBO ontologies are highly tangled; see
 <a href="http://www.fruitfly.org/~cjm/obol/doc/go-complexity.html"
@@ -694,7 +671,7 @@ draw distinct hierarchies. For example, the GO term **cysteine
 biosynthesis** could be drawn as two distinct hierarchies - one process
 and one chemical.
 
-#### <span id="Loading_OWL_into_Chado" class="mw-headline">Loading OWL into Chado</span>
+#### Loading OWL into Chado
 
 Not all OWL-DL features are supported. Only *intersection_of*s
 corresponding to genus-differentiae are loaded.
@@ -711,7 +688,7 @@ Once you have an OBO file you can run <a
 href="http://search.cpan.org/src/CMUNGALL/go-perl-0.06/scripts/go2chadoxml"
 class="external text" rel="nofollow">go2chadoxml</a>, as above.
 
-#### <span id="Post-coordinating_Terms" class="mw-headline">Post-coordinating Terms</span>
+#### Post-coordinating Terms
 
 Sometimes we want to be able to refer to a term such as "plasma membrane
 of spermatocyte", but no such term exists in the ontology. Introducing
@@ -773,9 +750,9 @@ Allow post-coordinated terms places a greater burden on applications
 that use the cv module. More documentation will be provided here on
 this.
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_cv" class="mw-headline">Table: cv</span>
+## Table: cv
 
 A controlled vocabulary or ontology. A cv is composed of cvterms (AKA
 terms, classes, types, universals - relations and properties are also
@@ -830,14 +807,11 @@ cv Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")
-
-<!-- -->
-
 - [cvtermpath](Chado_Tables#Table:_cvtermpath "Chado Tables")
 
 ---
 
-## <span id="Table:_cvterm" class="mw-headline">Table: cvterm</span>
+## Table: cvterm
 
 A term, class, universal or type within an ontology or controlled
 vocabulary. This table is also used for relations and properties.
@@ -935,262 +909,73 @@ cvterm Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition_relationship](Chado_Tables#Table:_acquisition_relationship "Chado Tables")
-
-<!-- -->
-
 - [acquisitionprop](Chado_Tables#Table:_acquisitionprop "Chado Tables")
-
-<!-- -->
-
 - [analysisprop](Chado_Tables#Table:_analysisprop "Chado Tables")
-
-<!-- -->
-
 - [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-
-<!-- -->
-
 - [arraydesignprop](Chado_Tables#Table:_arraydesignprop "Chado Tables")
-
-<!-- -->
-
 - [assayprop](Chado_Tables#Table:_assayprop "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_relationship](Chado_Tables#Table:_biomaterial_relationship "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_treatment](Chado_Tables#Table:_biomaterial_treatment "Chado Tables")
-
-<!-- -->
-
 - [biomaterialprop](Chado_Tables#Table:_biomaterialprop "Chado Tables")
-
-<!-- -->
-
 - [contact](Chado_Tables#Table:_contact "Chado Tables")
-
-<!-- -->
-
 - [contact_relationship](Chado_Tables#Table:_contact_relationship "Chado Tables")
-
-<!-- -->
-
 - [control](Chado_Tables#Table:_control "Chado Tables")
-
-<!-- -->
-
 - [cvterm_dbxref](Chado_Tables#Table:_cvterm_dbxref "Chado Tables")
-
-<!-- -->
-
 - [cvterm_relationship](Chado_Tables#Table:_cvterm_relationship "Chado Tables")
-
-<!-- -->
-
 - [cvtermpath](Chado_Tables#Table:_cvtermpath "Chado Tables")
-
-<!-- -->
-
 - [cvtermprop](Chado_Tables#Table:_cvtermprop "Chado Tables")
-
-<!-- -->
-
 - [cvtermsynonym](Chado_Tables#Table:_cvtermsynonym "Chado Tables")
-
-<!-- -->
-
 - [dbxrefprop](Chado_Tables#Table:_dbxrefprop "Chado Tables")
-
-<!-- -->
-
 - [element](Chado_Tables#Table:_element "Chado Tables")
-
-<!-- -->
-
 - [element_relationship](Chado_Tables#Table:_element_relationship "Chado Tables")
-
-<!-- -->
-
 - [elementresult_relationship](Chado_Tables#Table:_elementresult_relationship "Chado Tables")
-
-<!-- -->
-
 - [environment_cvterm](Chado_Tables#Table:_environment_cvterm "Chado Tables")
-
-<!-- -->
-
 - [feature](Chado_Tables#Table:_feature "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-
-<!-- -->
-
 - [feature_cvtermprop](Chado_Tables#Table:_feature_cvtermprop "Chado Tables")
-
-<!-- -->
-
 - [feature_genotype](Chado_Tables#Table:_feature_genotype "Chado Tables")
-
-<!-- -->
-
 - [feature_pubprop](Chado_Tables#Table:_feature_pubprop "Chado Tables")
-
-<!-- -->
-
 - [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
-
-<!-- -->
-
 - [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables")
-
-<!-- -->
-
 - [featuremap](Chado_Tables#Table:_featuremap "Chado Tables")
-
-<!-- -->
-
 - [featureprop](Chado_Tables#Table:_featureprop "Chado Tables")
-
-<!-- -->
-
 - [library](Chado_Tables#Table:_library "Chado Tables")
-
-<!-- -->
-
 - [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-
-<!-- -->
-
 - [libraryprop](Chado_Tables#Table:_libraryprop "Chado Tables")
-
-<!-- -->
-
 - [organism_relationship](Chado_Tables#Table:_organism_relationship "Chado Tables")
-
-<!-- -->
-
 - [organismpath](Chado_Tables#Table:_organismpath "Chado Tables")
-
-<!-- -->
-
 - [organismprop](Chado_Tables#Table:_organismprop "Chado Tables")
-
-<!-- -->
-
 - [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-
-<!-- -->
-
 - [phenotype](Chado_Tables#Table:_phenotype "Chado Tables")
-
-<!-- -->
-
 - [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-
-<!-- -->
-
 - [phenotype_cvterm](Chado_Tables#Table:_phenotype_cvterm "Chado Tables")
-
-<!-- -->
-
 - [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-
-<!-- -->
-
 - [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-
-<!-- -->
-
 - [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-
-<!-- -->
-
 - [phylonodeprop](Chado_Tables#Table:_phylonodeprop "Chado Tables")
-
-<!-- -->
-
 - [phylotree](Chado_Tables#Table:_phylotree "Chado Tables")
-
-<!-- -->
-
 - [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-
-<!-- -->
-
 - [protocolparam](Chado_Tables#Table:_protocolparam "Chado Tables")
-
-<!-- -->
-
 - [pub](Chado_Tables#Table:_pub "Chado Tables")
-
-<!-- -->
-
 - [pub_relationship](Chado_Tables#Table:_pub_relationship "Chado Tables")
-
-<!-- -->
-
 - [pubprop](Chado_Tables#Table:_pubprop "Chado Tables")
-
-<!-- -->
-
 - [quantification_relationship](Chado_Tables#Table:_quantification_relationship "Chado Tables")
-
-<!-- -->
-
 - [quantificationprop](Chado_Tables#Table:_quantificationprop "Chado Tables")
-
-<!-- -->
-
 - [stock](Chado_Tables#Table:_stock "Chado Tables")
-
-<!-- -->
-
 - [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-
-<!-- -->
-
 - [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables")
-
-<!-- -->
-
 - [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables")
-
-<!-- -->
-
 - [stockcollectionprop](Chado_Tables#Table:_stockcollectionprop "Chado Tables")
-
-<!-- -->
-
 - [stockprop](Chado_Tables#Table:_stockprop "Chado Tables")
-
-<!-- -->
-
 - [studydesignprop](Chado_Tables#Table:_studydesignprop "Chado Tables")
-
-<!-- -->
-
 - [studyfactor](Chado_Tables#Table:_studyfactor "Chado Tables")
-
-<!-- -->
-
 - [synonym](Chado_Tables#Table:_synonym "Chado Tables")
-
-<!-- -->
-
 - [treatment](Chado_Tables#Table:_treatment "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_cvterm](Chado_Tables#Table:_wwwuser_cvterm "Chado Tables")
 
 ---
 
-## <span id="Table:_cvterm_dbxref" class="mw-headline">Table: cvterm_dbxref</span>
+## Table: cvterm_dbxref
 
 In addition to the primary identifier (cvterm.dbxref_id) a cvterm can
 have zero or more secondary identifiers/dbxrefs, which may refer to
@@ -1262,7 +1047,7 @@ cvterm_dbxref Structure
 
 ---
 
-## <span id="Table:_cvterm_relationship" class="mw-headline">Table: cvterm_relationship</span>
+## Table: cvterm_relationship
 
 A relationship linking two cvterms. Each cvterm_relationship constitutes
 an edge in the graph defined by the collection of cvterms and
@@ -1336,7 +1121,7 @@ cvterm_relationship Structure
 
 ---
 
-## <span id="Table:_cvtermpath" class="mw-headline">Table: cvtermpath</span>
+## Table: cvtermpath
 
 The reflexive transitive closure of the cvterm_relationship relation.
 
@@ -1415,7 +1200,7 @@ cvtermpath Structure
 
 ---
 
-## <span id="Table:_cvtermprop" class="mw-headline">Table: cvtermprop</span>
+## Table: cvtermprop
 
 Additional extensible properties can be attached to a cvterm using this
 table. Corresponds to -AnnotationProperty- in W3C OWL format.
@@ -1487,7 +1272,7 @@ cvtermprop Structure
 
 ---
 
-## <span id="Table:_cvtermsynonym" class="mw-headline">Table: cvtermsynonym</span>
+## Table: cvtermsynonym
 
 A cvterm actually represents a distinct class or concept. A concept can
 be referred to by different phrases or names. In addition to the primary
@@ -1546,7 +1331,7 @@ cvtermsynonym Structure
 
 ---
 
-## <span id="Table:_dbxrefprop" class="mw-headline">Table: dbxrefprop</span>
+## Table: dbxrefprop
 
 Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
@@ -1563,52 +1348,3 @@ analogous to cvtermprop.
 dbxrefprop Structure
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Ontologies](Category%253AOntologies "Category%253AOntologies")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_CV_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:35 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">510,098 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

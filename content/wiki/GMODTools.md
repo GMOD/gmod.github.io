@@ -1,62 +1,32 @@
 ---
 title: "GMODTools"
 ---
+# GMODTools
 
 
+  Description](#Description)
+- [Outputs](#Outputs)
+- [Why Use
+  Bulkfiles?](#Why_Use_Bulkfiles.3F)
+- [Downloads](#Downloads)
+- [Configuration](#Configuration)
+  - [GMODTools/conf/bulkfiles/](#GMODTools.2Fconf.2Fbulkfiles.2F)
+- [Sample
+  Use](#Sample_Use)
+  - [Sample
+    Output Data Folder](#Sample_Output_Data_Folder)
+  - [Sample Run
+    Log](#Sample_Run_Log)
+  - [GenBank
+    genome round-trip test](#GenBank_genome_round-trip_test)
+- [Requirements](#Requirements)
+- [Updates](#Updates)
+- [See
+  Also](#See_Also)
+- [Contact](#Contact)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMODTools</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Description</span>](#Description)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Outputs</span>](#Outputs)
-- [<span class="tocnumber">3</span> <span class="toctext">Why Use
-  Bulkfiles?</span>](#Why_Use_Bulkfiles.3F)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">GMODTools/conf/bulkfiles/</span>](#GMODTools.2Fconf.2Fbulkfiles.2F)
-- [<span class="tocnumber">6</span> <span class="toctext">Sample
-  Use</span>](#Sample_Use)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Sample
-    Output Data Folder</span>](#Sample_Output_Data_Folder)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Sample Run
-    Log</span>](#Sample_Run_Log)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">GenBank
-    genome round-trip test</span>](#GenBank_genome_round-trip_test)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Updates</span>](#Updates)
-- [<span class="tocnumber">9</span> <span class="toctext">See
-  Also</span>](#See_Also)
-- [<span class="tocnumber">10</span>
-  <span class="toctext">Contact</span>](#Contact)
-
-
-
-# <span id="Description" class="mw-headline">Description</span>
+# Description
 
 Bulkfiles is a GMOD [Perl](Glossary#Perl "Glossary") package that
 generates Fasta, [GFF3](GFF3 "GFF3"), DNA and other bulk genome
@@ -69,7 +39,7 @@ configurations, it can generate public data releases on a regular basis.
 It produces all the contents needed for a GMOD [Standard
 URL](Standard_URL "Standard URL") genome data download folder.
 
-# <span id="Outputs" class="mw-headline">Outputs</span>
+# Outputs
 
 These are current primary outputs, which are configurable to suit
 project needs.
@@ -85,7 +55,7 @@ project needs.
 Additional genome outputs can be added with Perl adaptor packages from a
 Bulkfiles base adaptor object.
 
-# <span id="Why_Use_Bulkfiles.3F" class="mw-headline">Why Use Bulkfiles?</span>
+# Why Use Bulkfiles?
 
 Why use this package rather than using other [middleware
 layers](Category%253AMiddleware "Category%253AMiddleware") to Chado db - [Chado
@@ -122,7 +92,7 @@ Here are some reasons we take this approach:
   tool, with data extraction and correction methods that are separate
   and tunable is needed to adapt to such variation in genome databases.
 
-# <span id="Downloads" class="mw-headline">Downloads</span>
+# Downloads
 
 Here is a candidate release package for
 <a href="http://eugenes.org/gmod/GMODTools/" class="external text"
@@ -141,7 +111,7 @@ These commands will create a directory named `GMODTools`, with a
 directory named `GMODTools` in it. Note that you don't need to supply a
 password, and it may be very slow.
 
-# <span id="Configuration" class="mw-headline">Configuration</span>
+# Configuration
 
 Bulkfiles has extensive configurations, in a simple
 [XML](Glossary#XML "Glossary") format. This is both a strength and
@@ -160,7 +130,7 @@ public releases. A new release needs only a minor configuration update
 (release number and date), and can be generated automatically if
 desired.
 
-## <span id="GMODTools.2Fconf.2Fbulkfiles.2F" class="mw-headline">GMODTools/conf/bulkfiles/</span>
+## GMODTools/conf/bulkfiles/
 
 These are the main contents of the configuration files
 
@@ -194,7 +164,7 @@ part of the territory with genome databases.
   configurations such as path to NCBI tools that will need attention for
   proper use.
 
-# <span id="Sample_Use" class="mw-headline">Sample Use</span>
+# Sample Use
 
 Load a genome Chado db to [PostgreSQL](PostgreSQL "PostgreSQL")
 database:
@@ -213,7 +183,7 @@ result log file to the developer contact below.
 
      perl -Ilib bin/bulkfiles.pl -conf sgdbulk -make -debug >& gmodtools-debug.log
 
-## <span id="Sample_Output_Data_Folder" class="mw-headline">Sample Output Data Folder</span>
+## Sample Output Data Folder
 
 Output data folder looks like this. It is suited to linking to a public
 web server for data downloading, e.g. the GMOD
@@ -227,7 +197,7 @@ See the `tables/` folder for summary tables. The contents including web
 HEADER, README and others are configured with the `conf/bulkfiles/`
 configurations.
 
-## <span id="Sample_Run_Log" class="mw-headline">Sample Run Log</span>
+## Sample Run Log
 
     microbe%  perl -Ilib bin/bulkfiles.pl -conf sgdbulk -make
     - Setting GMOD_ROOT=/bio/argos/gmod/GMODTools
@@ -247,14 +217,14 @@ configurations.
     Bulkfiles done. result=overviews:, fff+gff=146661, fasta=19849, blast=14, tables=ok,
     Bulkfiles are located at data/genomes/Saccharomyces_cerevisiae/sgdlite_2005_08_23
 
-## <span id="GenBank_genome_round-trip_test" class="mw-headline">GenBank genome round-trip test</span>
+## GenBank genome round-trip test
 
 See also this brief [GMODTools
 TestCase](GMODTools_TestCase "GMODTools TestCase") that describes how to
 load a GenBank genome to Chado then regurgitate it via Bulkfiles as a
 GenBank submission file set.
 
-# <span id="Requirements" class="mw-headline">Requirements</span>
+# Requirements
 
 Bulkfiles is mostly a self-contained Perl package. It uses a few
 [BioPerl](BioPerl "BioPerl") parts plus
@@ -266,7 +236,7 @@ files.
   rel="nofollow">Postgres</a> and GMOD Chado database.
 - Basic Perl tool set used for other GMOD packages.
 
-# <span id="Updates" class="mw-headline">Updates</span>
+# Updates
 
 Version 1.2 (2008 May) IN PROGRESS
 
@@ -316,113 +286,16 @@ Version 1.1 (2007 October) adds these features and corrections:
 - Miscellany bugs cured and configuration updates, e.g., tables/overview
   now again active.
 
-# <span id="See_Also" class="mw-headline">See Also</span>
+# See Also
 
 - [XORT](XORT.1 "XORT") offers an alternative approach to bulk uploads
   and downloads from a Chado database.
-
-<!-- -->
-
 - [Sample Chado SQL](Sample_Chado_SQL "Sample Chado SQL") gives an
   overview of the feature and other Chado table
   [SQL](Glossary#SQL "Glossary") commands used for Bulkfiles output.
   Examples here can help you learn the contents of a database created by
   someone else, and are useful for GMODTools configuration.
 
-# <span id="Contact" class="mw-headline">Contact</span>
+# Contact
 
 [Dongilbert](User%253ADongilbert "User%253ADongilbert")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [BLAST](Category%253ABLAST "Category%253ABLAST")
-- [Chado](Category%253AChado "Category%253AChado")
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMODTools" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMODTools" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:00 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">200,455 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

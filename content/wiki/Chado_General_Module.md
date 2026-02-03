@@ -1,41 +1,35 @@
 ---
 title: "Chado General Module"
 ---
-<span id="top"></span>
+# Chado General Module
 
-# <span dir="auto">Chado General Module</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">Design
-  patterns</span>](#Design_patterns)
-- [<span class="tocnumber">3</span> <span class="toctext">About the
-  Tables</span>](#About_the_Tables)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">URLs and
-    URIs</span>](#URLs_and_URIs)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">About
-      URL</span>](#About_URL)
-    - [<span class="tocnumber">3.1.2</span> <span class="toctext">About
-      URI</span>](#About_URI)
-    - [<span class="tocnumber">3.1.3</span> <span class="toctext">To
-      Do</span>](#To_Do)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Identiﬁers
+  Introduction](#Introduction)
+- [Design
+  patterns](#Design_patterns)
+- [About the
+  Tables](#About_the_Tables)
+  - [URLs and
+    URIs](#URLs_and_URIs)
+    - [About
+      URL](#About_URL)
+    - [About
+      URI](#About_URI)
+    - [To
+      Do](#To_Do)
+  - [Identiﬁers
     and Interoperability between Chado
-    Instances</span>](#Identi.EF.AC.81ers_and_Interoperability_between_Chado_Instances)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Table:
-    db</span>](#Table:_db)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Table:
-    dbxref</span>](#Table:_dbxref)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Table:
-    project</span>](#Table:_project)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Table:
-    tableinfo</span>](#Table:_tableinfo)
+    Instances](#Identi.EF.AC.81ers_and_Interoperability_between_Chado_Instances)
+- [Tables](#Tables)
+  - [Table:
+    db](#Table:_db)
+  - [Table:
+    dbxref](#Table:_dbxref)
+  - [Table:
+    project](#Table:_project)
+  - [Table:
+    tableinfo](#Table:_tableinfo)
 
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 General purpose tables are housed in the module general. The primary
 purpose of this module is to provide a means of providing data entities
@@ -68,12 +62,12 @@ explicit notion of a data entity being external. Some dbxrefs have
 further information fully ﬂeshed out in other tables in the database,
 and others are ’dangling’ dbxrefs.
 
-# <span id="Design_patterns" class="mw-headline">Design patterns</span>
+# Design patterns
 
 - Primary identiﬁers: ENTITY.dbxref id REFERENCES dbxref(dbxref id)
 - Secondary identiﬁers: ENTITY DBXREF.dbxref id
 
-# <span id="About_the_Tables" class="mw-headline">About the Tables</span>
+# About the Tables
 
 The two main tables are [dbxref](#Table:_dbxref) (for the identiﬁer
 itself) and [db](#Table:_db) (for the name of the DB or ID- granting
@@ -104,7 +98,7 @@ will prevent duplicate dbxref rows being created if and when databases
 are merged. At the same time, uniqueness must be preserved: there must
 not be two GOs.
 
-## <span id="URLs_and_URIs" class="mw-headline">URLs and URIs</span>
+## URLs and URIs
 
 See the following for background:
 
@@ -132,7 +126,7 @@ Note that it is perfectly acceptable for the db.name column to be the
 same as the url column (provided it is a valid URI). However, it is
 encouraged that a short form is used as the db.name.
 
-### <span id="About_URL" class="mw-headline">About URL</span>
+### About URL
 
 A W3C compliant URL with the address of a website containing information
 about the DB or authority. For example,
@@ -142,7 +136,7 @@ rel="nofollow">http://www.ﬂybase.org</a>,
 rel="nofollow">http://www.geneontology.org</a>. The URL is intended for
 humans rather than software agents.
 
-### <span id="About_URI" class="mw-headline">About URI</span>
+### About URI
 
 A W3C compliant URI that contains a unique namespace for the
 DB/authority. Some ID schemes (e.g. LSID) require this. The URI is
@@ -152,7 +146,7 @@ resolvable URL that has human-readable information on the other end.
 Other DBs may provide URNs (e.g. LSID URNs) that require software agents
 to be resolved.
 
-### <span id="To_Do" class="mw-headline">To Do</span>
+### To Do
 
 **The [db table](#Table:_db) probably should have columns for both URL
 and URI.** The former is intended just to go to a website like the
@@ -163,11 +157,11 @@ example GO may be a unique identiﬁer for the Gene Ontology ID space by
 only cares about the former, it may have to interoperate with schemes
 that care about truly global uniqueness, hence URIs.
 
-## <span id="Identi.EF.AC.81ers_and_Interoperability_between_Chado_Instances" class="mw-headline">Identiﬁers and Interoperability between Chado Instances</span>
+## Identiﬁers and Interoperability between Chado Instances
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_db" class="mw-headline">Table: db</span>
+## Table: db
 
 The db table contains one row per database authority, that is, one row
 per curator/creator of bioinformatic data collections. Typical databases
@@ -194,7 +188,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ---
 
-## <span id="Table:_dbxref" class="mw-headline">Table: dbxref</span>
+## Table: dbxref
 
 The dbxref table contains one row per version per collection of
 bioinformatic data, one row per Chado "database". The table provides a
@@ -265,82 +259,28 @@ dbxref Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-
-<!-- -->
-
 - [assay](Chado_Tables#Table:_assay "Chado Tables")
-
-<!-- -->
-
 - [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_dbxref](Chado_Tables#Table:_biomaterial_dbxref "Chado Tables")
-
-<!-- -->
-
 - [cvterm](Chado_Tables#Table:_cvterm "Chado Tables")
-
-<!-- -->
-
 - [cvterm_dbxref](Chado_Tables#Table:_cvterm_dbxref "Chado Tables")
-
-<!-- -->
-
 - [dbxrefprop](Chado_Tables#Table:_dbxrefprop "Chado Tables")
-
-<!-- -->
-
 - [element](Chado_Tables#Table:_element "Chado Tables")
-
-<!-- -->
-
 - [feature](Chado_Tables#Table:_feature "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm_dbxref](Chado_Tables#Table:_feature_cvterm_dbxref "Chado Tables")
-
-<!-- -->
-
 - [feature_dbxref](Chado_Tables#Table:_feature_dbxref "Chado Tables")
-
-<!-- -->
-
 - [organism_dbxref](Chado_Tables#Table:_organism_dbxref "Chado Tables")
-
-<!-- -->
-
 - [phylonode_dbxref](Chado_Tables#Table:_phylonode_dbxref "Chado Tables")
-
-<!-- -->
-
 - [phylotree](Chado_Tables#Table:_phylotree "Chado Tables")
-
-<!-- -->
-
 - [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-
-<!-- -->
-
 - [pub_dbxref](Chado_Tables#Table:_pub_dbxref "Chado Tables")
-
-<!-- -->
-
 - [stock](Chado_Tables#Table:_stock "Chado Tables")
-
-<!-- -->
-
 - [stock_dbxref](Chado_Tables#Table:_stock_dbxref "Chado Tables")
-
-<!-- -->
-
 - [study](Chado_Tables#Table:_study "Chado Tables")
 
 ---
 
-## <span id="Table:_project" class="mw-headline">Table: project</span>
+## Table: project
 
 | F-Key | Name        | Type                   | Description       |
 | ----- | ----------- | ---------------------- | ----------------- |
@@ -353,14 +293,11 @@ project Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [assay_project](Chado_Tables#Table:_assay_project "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_project](Chado_Tables#Table:_wwwuser_project "Chado Tables")
 
 ---
 
-## <span id="Table:_tableinfo" class="mw-headline">Table: tableinfo</span>
+## Table: tableinfo
 
 | F-Key | Name                | Type                  | Description              |
 | ----- | ------------------- | --------------------- | ------------------------ |
@@ -378,57 +315,6 @@ tableinfo Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [control](Chado_Tables#Table:_control "Chado Tables")
-
-<!-- -->
-
 - [magedocumentation](Chado_Tables#Table:_magedocumentation "Chado Tables")
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_General_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:36 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">144,125 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

@@ -1,61 +1,39 @@
 ---
 title: "AWS walkthrough"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">AWS walkthrough</span>
-
-
-
-
-
-
-
+# AWS walkthrough
 
 
 This is a click-by-click walkthrough of how to get a GMOD machine image
 up and running using Amazon's cloud services.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Registering on
   Amazon</span>](#Registering_on_Amazon)
-- [<span class="tocnumber">2</span> <span class="toctext">Amazon Web
-  Services: Registration</span>](#Amazon_Web_Services:_Registration)
-- [<span class="tocnumber">3</span> <span class="toctext">Credit Where
-  Credit's Due</span>](#Credit_Where_Credit.27s_Due)
-- [<span class="tocnumber">4</span> <span class="toctext">Your First
-  Instance</span>](#Your_First_Instance)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Launch an
-    Instance</span>](#Launch_an_Instance)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Setting Up
-    Security Post-Launch</span>](#Setting_Up_Security_Post-Launch)
-- [<span class="tocnumber">5</span> <span class="toctext">Working in the
-  Cloud</span>](#Working_in_the_Cloud)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Instance
-    Access</span>](#Instance_Access)
-- [<span class="tocnumber">6</span> <span class="toctext">Leaving the
-  Cloud</span>](#Leaving_the_Cloud)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Shutting
-    Down</span>](#Shutting_Down)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Volume
-    Deletion</span>](#Volume_Deletion)
+- [Amazon Web
+  Services: Registration](#Amazon_Web_Services:_Registration)
+- [Credit Where
+  Credit's Due](#Credit_Where_Credit.27s_Due)
+- [Your First
+  Instance](#Your_First_Instance)
+  - [Launch an
+    Instance](#Launch_an_Instance)
+  - [Setting Up
+    Security Post-Launch](#Setting_Up_Security_Post-Launch)
+- [Working in the
+  Cloud](#Working_in_the_Cloud)
+  - [Instance
+    Access](#Instance_Access)
+- [Leaving the
+  Cloud](#Leaving_the_Cloud)
+  - [Shutting
+    Down](#Shutting_Down)
+  - [Volume
+    Deletion](#Volume_Deletion)
 
 
+## Registering on Amazon
 
-## <span id="Registering_on_Amazon" class="mw-headline">Registering on Amazon</span>
-
-## <span id="Amazon_Web_Services:_Registration" class="mw-headline">Amazon Web Services: Registration</span>
+## Amazon Web Services: Registration
 
 Start off at <a href="http://aws.amazon.com" class="external text"
 rel="nofollow">aws.amazon.com</a>
@@ -104,7 +82,7 @@ width="750" height="482" alt="AWS login" />
 
   
 
-## <span id="Credit_Where_Credit.27s_Due" class="mw-headline">Credit Where Credit's Due</span>
+## Credit Where Credit's Due
 
 If you have a voucher for free compute credit, you can apply it at
 <a href="http://aws.amazon.com/awscredits" class="external free"
@@ -115,9 +93,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/cc/Screen_shot_2012-08-25_at_10.58.30.png/1125px-Screen_shot_2012-08-25_at_10.58.30.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cc/Screen_shot_2012-08-25_at_10.58.30.png 2x"
 width="750" height="482" alt="AWS credit applied - woohoo!" />
 
-## <span id="Your_First_Instance" class="mw-headline">Your First Instance</span>
+## Your First Instance
 
-### <span id="Launch_an_Instance" class="mw-headline">Launch an Instance</span>
+### Launch an Instance
 
 Return to the
 <a href="http://aws.amazon.com" class="external text" rel="nofollow">AWS
@@ -287,7 +265,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Screen_shot_2012-08-25_at_11.36.25.png/1125px-Screen_shot_2012-08-25_at_11.36.25.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/Screen_shot_2012-08-25_at_11.36.25.png 2x"
 width="750" height="482" alt="Blast off!" />
 
-### <span id="Setting_Up_Security_Post-Launch" class="mw-headline">Setting Up Security Post-Launch</span>
+### Setting Up Security Post-Launch
 
 AMI also allows you to set the security and access options for your
 instances after you've launched them (security settings can be changed
@@ -323,9 +301,9 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/bb/Screen_shot_2012-08-25_at_11.39.40.png/1125px-Screen_shot_2012-08-25_at_11.39.40.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bb/Screen_shot_2012-08-25_at_11.39.40.png 2x"
 width="750" height="482" alt="Adding and saving changes" />
 
-## <span id="Working_in_the_Cloud" class="mw-headline">Working in the Cloud</span>
+## Working in the Cloud
 
-### <span id="Instance_Access" class="mw-headline">Instance Access</span>
+### Instance Access
 
 We can now test out our instance. Clicking on **Instances** shows us the
 list of all the instances we have running.
@@ -409,7 +387,7 @@ width="750" height="482" alt="Logged in!" />
 
   
 
-## <span id="Leaving_the_Cloud" class="mw-headline">Leaving the Cloud</span>
+## Leaving the Cloud
 
 Now that the instance is up and running, what can we do with it? Let's
 shut it down again! This can be achieved in a number of different ways,
@@ -430,7 +408,7 @@ you stop the machine.
 
   
 
-### <span id="Shutting_Down" class="mw-headline">Shutting Down</span>
+### Shutting Down
 
 To stop an instance from the command line, type the following:
 
@@ -459,7 +437,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/36/Screen_shot_2012-08-25_at_12.40.52.png/1125px-Screen_shot_2012-08-25_at_12.40.52.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Screen_shot_2012-08-25_at_12.40.52.png 2x"
 width="750" height="482" alt="Instance stopped" />
 
-### <span id="Volume_Deletion" class="mw-headline">Volume Deletion</span>
+### Volume Deletion
 
 Every GMOD in the Cloud instance uses two volumes (disks), one for
 applications and the other for data.
@@ -524,95 +502,3 @@ All done!
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/18/17.04.00.png/750px-17.04.00.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/18/17.04.00.png/1125px-17.04.00.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/17.04.00.png 2x"
 width="750" height="409" alt="Tabula rasa" />
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [GMOD in the
-  Cloud](Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Screenshots](Category%253AScreenshots "Category%253AScreenshots")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/AWS_walkthrough" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:14 on 30 July
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">58,306 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

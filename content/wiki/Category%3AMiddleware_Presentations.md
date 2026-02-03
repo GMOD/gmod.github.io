@@ -1,30 +1,12 @@
 ---
 title: "Category%253AMiddleware Presentations"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Category%253AMiddleware Presentations</span>
-
-
-
-
-
-
-
-
+# Category%253AMiddleware Presentations
 
 
 ## Pages in category "Middleware Presentations"
 
 The following 4 pages are in this category, out of 4 total.
-
 
 
 ### B
@@ -34,7 +16,7 @@ The following 4 pages are in this category, out of 4 total.
 ### G
 
 - [GBrowse (DasI)
-  Presentation](GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
+  Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 
 ### I
 
@@ -43,8 +25,6 @@ The following 4 pages are in this category, out of 4 total.
 ### P
 
 - [PSU Presentation](PSU_Presentation "PSU Presentation")
-
-
 
 
 ## Media in category "Middleware Presentations"
@@ -348,96 +328,4 @@ The following 13 files are in this category, out of 13 total.
   
 
   [XORT.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/XORT.pdf "File:XORT.pdf")  
-  155 KB  
-
-  
-
-  
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Presentations](Category%253APresentations "Category%253APresentations")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Category%253AMiddleware_Presentations"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 02:55 on 31 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">11,651 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+  155 KB

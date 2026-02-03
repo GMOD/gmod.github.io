@@ -1,74 +1,46 @@
 ---
 title: "JBrowse Tutorial 2011"
 ---
+# JBrowse Tutorial 2011
 
 
+  Prerequisites](#Prerequisites)
+- [JBrowse
+  Introduction](#JBrowse_Introduction)
+- [JBrowse
+  arch](#JBrowse_arch)
+- [Setting up
+  JBrowse](#Setting_up_JBrowse)
+  - [Getting
+    JBrowse](#Getting_JBrowse)
+  - [Starting
+    Point](#Starting_Point)
+  - [Basic
+    Steps](#Basic_Steps)
+  - [Data from
+    a database](#Data_from_a_database)
+    - [Specify reference
+      sequences](#Specify_reference_sequences)
+    - [Load
+      Feature Data](#Load_Feature_Data)
+    - [More
+      complex track](#More_complex_track)
+    - [Collect feature
+      names](#Collect_feature_names)
+  - [Data from
+    flat files](#Data_from_flat_files)
+    - [Sequences](#Sequences)
+    - [Features](#Features)
+    - [BAM
+      data](#BAM_data)
+  - [Quantitative data](#Quantitative_data)
+- [Common
+  Problems](#Common_Problems)
+- [Other
+  links](#Other_links)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse Tutorial 2011</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">2</span> <span class="toctext">JBrowse
-  Introduction</span>](#JBrowse_Introduction)
-- [<span class="tocnumber">3</span> <span class="toctext">JBrowse
-  arch</span>](#JBrowse_arch)
-- [<span class="tocnumber">4</span> <span class="toctext">Setting up
-  JBrowse</span>](#Setting_up_JBrowse)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Getting
-    JBrowse</span>](#Getting_JBrowse)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Starting
-    Point</span>](#Starting_Point)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Basic
-    Steps</span>](#Basic_Steps)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Data from
-    a database</span>](#Data_from_a_database)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Specify reference
-      sequences</span>](#Specify_reference_sequences)
-    - [<span class="tocnumber">4.4.2</span> <span class="toctext">Load
-      Feature Data</span>](#Load_Feature_Data)
-    - [<span class="tocnumber">4.4.3</span> <span class="toctext">More
-      complex track</span>](#More_complex_track)
-    - [<span class="tocnumber">4.4.4</span>
-      <span class="toctext">Collect feature
-      names</span>](#Collect_feature_names)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Data from
-    flat files</span>](#Data_from_flat_files)
-    - [<span class="tocnumber">4.5.1</span>
-      <span class="toctext">Sequences</span>](#Sequences)
-    - [<span class="tocnumber">4.5.2</span>
-      <span class="toctext">Features</span>](#Features)
-    - [<span class="tocnumber">4.5.3</span> <span class="toctext">BAM
-      data</span>](#BAM_data)
-  - [<span class="tocnumber">4.6</span>
-    <span class="toctext">Quantitative data</span>](#Quantitative_data)
-- [<span class="tocnumber">5</span> <span class="toctext">Common
-  Problems</span>](#Common_Problems)
-- [<span class="tocnumber">6</span> <span class="toctext">Other
-  links</span>](#Other_links)
-
-
-
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 These have **already been set up** on the VM image.
 
@@ -147,7 +119,7 @@ this track:
 
 (visit in web browser: you should see a new gene track)
 
-#### <span id="More_complex_track" class="mw-headline">More complex track</span>
+#### More complex track
 
 Now we'll add a second track; this one will have subfeatures. This
 snippet is from: `~/Documents/Data/jbrowse/second-config.json`
@@ -176,7 +148,7 @@ snippet is from: `~/Documents/Data/jbrowse/second-config.json`
 (visit in web browser: you should see a new track, which has subfeatures
 if you're zoomed in far enough)
 
-#### <span id="Collect_feature_names" class="mw-headline">Collect feature names</span>
+#### Collect feature names
 
 When you generate JSON for a track, if you specify `"autocomplete"` then
 a listing of all of the names/IDs from that track (along with the
@@ -192,7 +164,7 @@ Visit in web browser, search for feature name: e.g.,
 
 **maker-scf1117875582023-snap-gene-0.3**
 
-### <span id="Data_from_flat_files" class="mw-headline">Data from flat files</span>
+### Data from flat files
 
 We're going to recreate a JBrowse instance from a different data source:
 flat files.
@@ -204,7 +176,7 @@ First, wipe the slate clean by removing the `data` directory:
 If you visit your JBrowse instance in a web browser, you'll see a blank
 screen again
 
-#### <span id="Sequences" class="mw-headline">Sequences</span>
+#### Sequences
 
 To import sequence data from a fasta file into a JBrowse instance, use
 `prepare-refseqs.pl` with the `--fasta` argument:
@@ -213,7 +185,7 @@ To import sequence data from a fasta file into a JBrowse instance, use
 
 Visit in web browser; you should see a second reference sequence.
 
-#### <span id="Features" class="mw-headline">Features</span>
+#### Features
 
 To get feature data from flat files into JBrowse, use
 `flatfile-to-json.pl`. We'll use some more of the data from the
@@ -226,7 +198,7 @@ To get feature data from flat files into JBrowse, use
 
 Visit in web browser; you should see a new "GFF match" track.
 
-#### <span id="BAM_data" class="mw-headline">BAM data</span>
+#### BAM data
 
 To incorporate data from a BAM source:
 
@@ -234,7 +206,7 @@ To incorporate data from a BAM source:
         --bam ~/Documents/Data/jbrowse/simulated-sorted.bam \
         --tracklabel BAM_data --key "BAM Data"
 
-### <span id="Quantitative_data" class="mw-headline">Quantitative data</span>
+### Quantitative data
 
 JBrowse can also display quantitative data in the wiggle format. JBrowse
 processes wiggle files with a C++ program, which you have to compile:
@@ -251,7 +223,7 @@ Visit in web browser
   
   
 
-## <span id="Common_Problems" class="mw-headline">Common Problems</span>
+## Common Problems
 
 - JSON syntax errors
 
@@ -259,7 +231,7 @@ Visit in web browser
   
   
 
-## <span id="Other_links" class="mw-headline">Other links</span>
+## Other links
 
 - Config file ref:
   <a href="http://jbrowse.org/code/jbrowse-master/docs/config.html"
@@ -268,92 +240,3 @@ Visit in web browser
 - DIV test: <a href="http://jbrowse.org/test/boatdiv/boat.html"
   class="external free"
   rel="nofollow">http://jbrowse.org/test/boatdiv/boat.html</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_Tutorial_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:58 on 14 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">7,546 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

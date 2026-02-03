@@ -1,50 +1,23 @@
 ---
 title: "LuceGene"
 ---
+# LuceGene
 
 
+  Description](#Description)
+  - [EBI's
+    EB-eye](#EBI.27s_EB-eye)
+  - [Lucene
+    search at Uniprot](#Lucene_search_at_Uniprot)
+- [Demo &
+  Screenshots](#Demo_.26_Screenshots)
+- [Requirements](#Requirements)
+- [Documentation](#Documentation)
+- [Downloads](#Downloads)
+- [Contact](#Contact)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">LuceGene</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Description</span>](#Description)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">EBI's
-    EB-eye</span>](#EBI.27s_EB-eye)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Lucene
-    search at Uniprot</span>](#Lucene_search_at_Uniprot)
-- [<span class="tocnumber">2</span> <span class="toctext">Demo &
-  Screenshots</span>](#Demo_.26_Screenshots)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Contact</span>](#Contact)
-
-
-
-## <span id="Description" class="mw-headline">Description</span>
+## Description
 
 This is an open-source document/object search and retrieval system
 specially tuned for bioinformatics text databases and documents.
@@ -96,7 +69,7 @@ software (which works like the Mysql adaptor).
 The GMOD/Turnkey web interface now has a Lucene search to avoid slow
 ChadoDB queries.
 
-### <span id="EBI.27s_EB-eye" class="mw-headline">EBI's EB-eye</span>
+### EBI's EB-eye
 
 Please note that
 <a href="http://www.ebi.ac.uk/inc/help/search_help.html"
@@ -120,14 +93,14 @@ the EBI's data resources. The system allows the user to search globally
 across all EBI databases or individually in selected resources by using
 an Advance search.*
 
-### <span id="Lucene_search_at_Uniprot" class="mw-headline">Lucene search at Uniprot</span>
+### Lucene search at Uniprot
 
 Uniprot's new version (2007) also uses Lucene as it's
 search-all-proteins system. See it in action at
 <a href="http://www.uniprot.org/" class="external free"
 rel="nofollow">http://www.uniprot.org/</a>
 
-## <span id="Demo_.26_Screenshots" class="mw-headline">Demo & Screenshots</span>
+## Demo & Screenshots
 
 - [Demo Screenshots](LuceGene_Screenshots "LuceGene Screenshots")
 - Daphnia genome search
@@ -150,7 +123,7 @@ rel="nofollow">http://www.uniprot.org/</a>
   class="external free"
   rel="nofollow">http://chipmunk.bio.indiana.edu:7082/lucegene/</a>
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 - LuceGene requires Java versions 1.4 or later to compile and run.
 - A Java/JSP web server like
@@ -160,7 +133,7 @@ rel="nofollow">http://www.uniprot.org/</a>
 Jakarta Lucene software is included with this package, as are other
 required java libraries.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fc/Lucegene-readme.txt" class="internal"
   title="Lucegene-readme.txt">LuceGene README</a>
@@ -171,7 +144,7 @@ required java libraries.
   title="Gmod-argos-sep03.pdf">Talk slides on Argos/LuceGene, Sept
   2003</a>
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 Current distribution files are at <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=120452"
@@ -192,98 +165,7 @@ rel="nofollow">http://eugenes.org/gmod/lucegene/</a>
   requirements. Also included are the several organism genome data sets
   provided thru euGenes.org (Drosophila, Daphnia, Nasonia and others).
 
-## <span id="Contact" class="mw-headline">Contact</span>
+## Contact
 
 - email: lucegene AT eugenes.org  
   Current developers: Don Gilbert, Paul Poole, and others
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [LuceGene](Category%253ALuceGene "Category%253ALuceGene")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253ALuceGene" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/LuceGene" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:09 on 6 September
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">148,026 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

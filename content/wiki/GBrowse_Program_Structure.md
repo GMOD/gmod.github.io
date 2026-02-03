@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Program Structure"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Program Structure</span>
-
-
-
-
-
-
-
+# GBrowse Program Structure
 
 
 This page gives a basic overview of how [GBrowse](GBrowse.1 "GBrowse")
@@ -29,30 +13,20 @@ Help is always available via the
 rel="nofollow">mailing list</a>, or on other sections of the GMOD wiki.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Program
   Structure</span>](#Program_Structure)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">The AJAX
-    Pipeline</span>](#The_AJAX_Pipeline)
-- [<span class="tocnumber">2</span> <span class="toctext">Normal
-  Operations</span>](#Normal_Operations)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Modules</span>](#Modules)
-- [<span class="tocnumber">4</span> <span class="toctext">State
-  Information</span>](#State_Information)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Globals</span>](#Globals)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Session</span>](#Session)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">State</span>](#State)
+  - [The AJAX
+    Pipeline](#The_AJAX_Pipeline)
+- [Normal
+  Operations](#Normal_Operations)
+- [Modules](#Modules)
+- [State
+  Information](#State_Information)
+  - [Globals](#Globals)
+  - [Session](#Session)
+  - [State](#State)
 
 
-
-## <span id="Program_Structure" class="mw-headline">Program Structure</span>
+## Program Structure
 
 GBrowse is split into two parts, an HTML/CSS/Javascript frontend and a
 Perl backend.
@@ -79,7 +53,7 @@ rel="nofollow">CGI</a> module and simply returned as the HTTP request;
 there's no formal HTML file that determines the markup. Each section of
 HTML has a subroutine in Render\HTML.pm that will generate it.
 
-### <span id="The_AJAX_Pipeline" class="mw-headline">The AJAX Pipeline</span>
+### The AJAX Pipeline
 
 Some Javascript events require data from the database, or need to
 perform actions on the database. For the most part, they will send AJAX
@@ -91,7 +65,7 @@ be called and the corresponding sections of the HTML will be re-rendered
 and updated with update_sections() rather than send back individual
 values to be processed and inserted by Javascript.
 
-## <span id="Normal_Operations" class="mw-headline">Normal Operations</span>
+## Normal Operations
 
 Most operations go through the gbrowse script, included in the cgi-bin.
 For each request, the script creates a new Browser2.pm object, opens the
@@ -111,7 +85,7 @@ like UserDB.pm, which deals with registered users, are called through
 another script, gbrowse_login, which doesn't go through the work of
 creating a whole new Render object.
 
-## <span id="Modules" class="mw-headline">Modules</span>
+## Modules
 
 The modules which make up GBrowse are contained in the **lib** directory
 in the SVN. They are as follows:
@@ -210,12 +184,12 @@ in the SVN. They are as follows:
 - **Util** (Bio::Graphics::Browser2::Util) - A library of generally
   useful utilities.
 
-## <span id="State_Information" class="mw-headline">State Information</span>
+## State Information
 
 There are a few variables available internally which describe three
 levels of the current "state" of GBrowse. The are as follows:
 
-### <span id="Globals" class="mw-headline">Globals</span>
+### Globals
 
 Globals is a Browser2.pm object, and it loads information pertaining to
 the state of Gbrowse's setup on the computer it's running in from the
@@ -223,105 +197,17 @@ Gbrowse.conf file and stores it in easily-accessible methods. It doesn't
 change between users or page reloads. A full description of what each
 setting does can be found at \<configuration file page\>.
 
-### <span id="Session" class="mw-headline">Session</span>
+### Session
 
 Session is a Browser2::Session object, and it keeps user-specific
 information that is to be kept for every time the user logs in, such as
 the username, whether or not it's private, the plugin settings, and a
 copy of the state (as described below.)
 
-### <span id="State" class="mw-headline">State</span>
+### State
 
 The state or page settings object is the current “state” of the browser
 for the specific user – which tracks are on/off, added/removed, etc. It
 contains mainly user interface settings, things that would not heavily
 interfere with a user's experience if they couldn't be retrieved for
 whatever reason.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [GBrowse
-  Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Program_Structure"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:13 on 24 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">17,696 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

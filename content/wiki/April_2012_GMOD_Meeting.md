@@ -1,9 +1,7 @@
 ---
 title: "April 2012 GMOD Meeting"
 ---
-<span id="top"></span>
-
-# <span dir="auto">April 2012 GMOD Meeting</span>
+# April 2012 GMOD Meeting
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
@@ -33,38 +31,29 @@ Washington, DC, immediately following
 <a href="http://pir.georgetown.edu/biocuration2012/"
 class="external text" rel="nofollow">Biocuration 2012</a>.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Keynote
   Speaker</span>](#Keynote_Speaker)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Location</span>](#Location)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Thursday
-    April 5</span>](#Thursday_April_5)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Friday
-    April 6</span>](#Friday_April_6)
-- [<span class="tocnumber">4</span> <span class="toctext">Suggested
-  Agenda Items</span>](#Suggested_Agenda_Items)
-- [<span class="tocnumber">5</span> <span class="toctext">Galaxy
-  Workshop</span>](#Galaxy_Workshop)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">About the
-    meeting space</span>](#About_the_meeting_space)
-  - [<span class="tocnumber">7.2</span>
-    <span class="toctext">Hotels</span>](#Hotels)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Getting
-    There</span>](#Getting_There)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">9</span> <span class="toctext">Previous
-  Meeting</span>](#Previous_Meeting)
+- [Location](#Location)
+- [Agenda](#Agenda)
+  - [Thursday
+    April 5](#Thursday_April_5)
+  - [Friday
+    April 6](#Friday_April_6)
+- [Suggested
+  Agenda Items](#Suggested_Agenda_Items)
+- [Galaxy
+  Workshop](#Galaxy_Workshop)
+- [Registration](#Registration)
+- [Logistics](#Logistics)
+  - [About the
+    meeting space](#About_the_meeting_space)
+  - [Hotels](#Hotels)
+  - [Getting
+    There](#Getting_There)
+- [Feedback](#Feedback)
+- [Previous
+  Meeting](#Previous_Meeting)
 
-## <span id="Keynote_Speaker" class="mw-headline">Keynote Speaker</span>
+## Keynote Speaker
 
 <a href="http://about.me/dmchurch" rel="nofollow"
 title="Deanna M. Church"><img
@@ -104,19 +93,19 @@ Part 2:
 class="external free"
 rel="nofollow">http://www.slideshare.net/deanna.church/church-gmod2012-pt2</a>
 
-## <span id="Location" class="mw-headline">Location</span>
+## Location
 
 The meeting will be held in the <a
 href="http://maps.google.com/maps?q=Reiss+Science+Bldg,+Georgetown+University,+Washington,+District+of+Columbia+20007&amp;hl=en&amp;oe=utf-8&amp;client=firefox-a&amp;geocode=Ff-1UQId2_Nn-w&amp;hnear=Reiss+Science+Bldg,+Washington,+District+of+Columbia,+20007&amp;t=h&amp;z=17"
 class="external text" rel="nofollow">Reiss Science Building</a>, room
 103 (the lecture hall on the first floor) at Georgetown University.
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 Note: I am actively working on this agenda; everything about it may
 change (likely even) until this note goes away.
 
-### <span id="Thursday_April_5" class="mw-headline">Thursday April 5</span>
+### Thursday April 5
 
 | Time                                                         | Topic                                                                                                                 | Presenter(s)                                                                                                      | Presentation                                                                                                                   |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -147,7 +136,7 @@ change (likely even) until this note goes away.
 class="internal" title="April2012GalaxyCloudManWorkshop.pdf">slides</a>, <a href="http://galaxyproject.org/wiki/Admin/Cloud/Getting%20Started"
 class="external text" rel="nofollow">Hands-on</a> |
 
-### <span id="Friday_April_6" class="mw-headline">Friday April 6</span>
+### Friday April 6
 
 <table class="wikitable">
 <colgroup>
@@ -293,7 +282,7 @@ class="internal" title="April2012 CommunityBuilding.pdf">PDF</a></td>
 </tbody>
 </table>
 
-## <span id="Suggested_Agenda_Items" class="mw-headline">Suggested Agenda Items</span>
+## Suggested Agenda Items
 
 - GMOD/<a href="Chado" class="mw-redirect" title="Chado">Chado</a>/[GBrowse](GBrowse.1 "GBrowse")
   update --[Scott Cain](User%253AScott "User%253AScott")
@@ -326,7 +315,7 @@ class="internal" title="April2012 CommunityBuilding.pdf">PDF</a></td>
 - Tripal Update (New Release this Summer!) --Lacey Sanderson
 - GMOD and Google Summer of Code -- Robin Haw
 
-## <span id="Galaxy_Workshop" class="mw-headline">[Galaxy](Galaxy.1 "Galaxy") Workshop</span>
+## [Galaxy](Galaxy.1 "Galaxy") Workshop
 
 <table>
 <colgroup>
@@ -385,19 +374,19 @@ the meeting. The workshop is free, but space is limited and
 Please contact [Dave Clements](User%253AClements "User%253AClements") if you
 have any questions.
 
-## <span id="Registration" class="mw-headline">Registration</span>
+## Registration
 
 Registration is closed.
 
-## <span id="Logistics" class="mw-headline">Logistics</span>
+## Logistics
 
-### <span id="About_the_meeting_space" class="mw-headline">About the meeting space</span>
+### About the meeting space
 
 Apparently, the lecture hall where the meeting will be held is typically
 kept quite cold (60 degF) so wearing a jacket or sweater is a very good
 idea.
 
-### <span id="Hotels" class="mw-headline">Hotels</span>
+### Hotels
 
 We haven't reserved a block of rooms anywhere. Rather, I suggest you
 look at the
@@ -405,13 +394,13 @@ look at the
 class="external text" rel="nofollow">Biocurator meeting's hotel page</a>
 for places to stay.
 
-### <span id="Getting_There" class="mw-headline">Getting There</span>
+### Getting There
 
 - <a href="http://www.library.georgetown.edu/visiting/transportation"
   class="external text" rel="nofollow">Public Transportation to
   Georgetown</a>
 
-## <span id="Feedback" class="mw-headline">Feedback</span>
+## Feedback
 
 Please **<a
 href="https://docs.google.com/spreadsheet/viewform?formkey=dFFTdmExc0Z1YlhhNS1IV085YWFYUFE6MQ"
@@ -420,54 +409,7 @@ experience at this meeting.
 
 Feedback will be summarized and posted here once we have it.
 
-## <span id="Previous_Meeting" class="mw-headline">Previous Meeting</span>
+## Previous Meeting
 
 - [October 2011 GMOD
   Meeting](October_2011_GMOD_Meeting "October 2011 GMOD Meeting")
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/April_2012_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:52 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">317,894 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

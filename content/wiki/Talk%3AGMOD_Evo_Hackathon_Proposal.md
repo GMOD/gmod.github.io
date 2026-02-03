@@ -1,96 +1,58 @@
 ---
 title: "Talk:GMOD Evo Hackathon Proposal"
 ---
+# Talk:GMOD Evo Hackathon Proposal
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Talk:GMOD Evo Hackathon Proposal</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Meetings</span>](#Meetings)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">2010/02/12
+  Meetings](#Meetings)
+  - [2010/02/12
     Conference Call, February 12, 2010 2pm
-    EST</span>](#2010.2F02.2F12_Conference_Call.2C_February_12.2C_2010_2pm_EST)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Agenda</span>](#Agenda)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Attendance</span>](#Attendance)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Sheldon -
-      introduction</span>](#Sheldon_-_introduction)
-    - [<span class="tocnumber">1.1.4</span>
-      <span class="toctext">Hilmar - mechanics of putting together a
-      proposal</span>](#Hilmar_-_mechanics_of_putting_together_a_proposal)
-    - [<span class="tocnumber">1.1.5</span>
-      <span class="toctext">Discussion</span>](#Discussion)
-    - [<span class="tocnumber">1.1.6</span>
-      <span class="toctext">Personal
-      Wishlists</span>](#Personal_Wishlists)
-    - [<span class="tocnumber">1.1.7</span> <span class="toctext">Action
-      Items</span>](#Action_Items)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">2010/02/22, Second conference call, 5PM
-    EST</span>](#2010.2F02.2F22.2C_Second_conference_call.2C_5PM_EST)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Agenda</span>](#Agenda_2)
-    - [<span class="tocnumber">1.2.2</span>
-      <span class="toctext">Attendance</span>](#Attendance_2)
-    - [<span class="tocnumber">1.2.3</span>
-      <span class="toctext">Proposal ideas</span>](#Proposal_ideas)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">2010/03/17
+    EST](#2010.2F02.2F12_Conference_Call.2C_February_12.2C_2010_2pm_EST)
+    - [Agenda](#Agenda)
+    - [Attendance](#Attendance)
+    - [Sheldon -
+      introduction](#Sheldon_-_introduction)
+    - [Hilmar - mechanics of putting together a
+      proposal](#Hilmar_-_mechanics_of_putting_together_a_proposal)
+    - [Discussion](#Discussion)
+    - [Personal
+      Wishlists](#Personal_Wishlists)
+    - [Action
+      Items](#Action_Items)
+  - [2010/02/22, Second conference call, 5PM
+    EST](#2010.2F02.2F22.2C_Second_conference_call.2C_5PM_EST)
+    - [Agenda](#Agenda_2)
+    - [Attendance](#Attendance_2)
+    - [Proposal ideas](#Proposal_ideas)
+  - [2010/03/17
     Third conference call, 2PM
-    EST</span>](#2010.2F03.2F17_Third_conference_call.2C_2PM_EST)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">Agenda</span>](#Agenda_3)
-    - [<span class="tocnumber">1.3.2</span>
-      <span class="toctext">Attendance</span>](#Attendance_3)
-    - [<span class="tocnumber">1.3.3</span>
-      <span class="toctext">Discussion</span>](#Discussion_2)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">2010/05/05
+    EST](#2010.2F03.2F17_Third_conference_call.2C_2PM_EST)
+    - [Agenda](#Agenda_3)
+    - [Attendance](#Attendance_3)
+    - [Discussion](#Discussion_2)
+  - [2010/05/05
     conference call, 5PM
-    EST</span>](#2010.2F05.2F05_conference_call.2C_5PM_EST)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">Attendance</span>](#Attendance_4)
-    - [<span class="tocnumber">1.4.2</span> <span class="toctext">Last
-      Meeting's Action Items</span>](#Last_Meeting.27s_Action_Items)
-    - [<span class="tocnumber">1.4.3</span>
-      <span class="toctext">Discussion</span>](#Discussion_3)
-    - [<span class="tocnumber">1.4.4</span> <span class="toctext">Action
-      Items</span>](#Action_Items_2)
+    EST](#2010.2F05.2F05_conference_call.2C_5PM_EST)
+    - [Attendance](#Attendance_4)
+    - [Last
+      Meeting's Action Items](#Last_Meeting.27s_Action_Items)
+    - [Discussion](#Discussion_3)
+    - [Action
+      Items](#Action_Items_2)
 
 
-
-# <span id="Meetings" class="mw-headline">Meetings</span>
+# Meetings
 
 We had several meetings while creating the proposal. The agendas and/or
 minutes for some of those meetings are here.
 
-## <span id="2010.2F02.2F12_Conference_Call.2C_February_12.2C_2010_2pm_EST" class="mw-headline">2010/02/12 Conference Call, February 12, 2010 2pm EST</span>
+## 2010/02/12 Conference Call, February 12, 2010 2pm EST
 
 The minutes taken by
 [User%253ARobertBuels](User%253ARobertBuels "User%253ARobertBuels"), any
 inaccuracies or omissions are his.
 
-### <span id="Agenda" class="mw-headline">Agenda</span>
+### Agenda
 
 Purpose of the hackathon
 
@@ -123,7 +85,7 @@ the focus on this topic. Some ideas I have are:
         last two weeks of July) - see [Calendar](Calendar "Calendar")
         for what else is going on.
 
-### <span id="Attendance" class="mw-headline">Attendance</span>
+### Attendance
 
 - Sheldon McKay
 - Hilmar Lapp
@@ -131,7 +93,7 @@ the focus on this topic. Some ideas I have are:
 - Robert Buels
 - Nicole Washington (2:25pm EST)
 
-### <span id="Sheldon_-_introduction" class="mw-headline">Sheldon - introduction</span>
+### Sheldon - introduction
 
 The purpose of the hackathon is to add more support for evolutionary
 biology in GMOD tools. I think hackathons are great, and GMOD will
@@ -143,7 +105,7 @@ form working groups, and work for 5 days or however long.
 
   
 
-### <span id="Hilmar_-_mechanics_of_putting_together_a_proposal" class="mw-headline">Hilmar - mechanics of putting together a proposal</span>
+### Hilmar - mechanics of putting together a proposal
 
 It falls into Nescent's whitepaper program, on the Nescent website,
 click on 'informatics' and the 'whitepaper program'. It's relatively
@@ -173,7 +135,7 @@ want to stretch it too much.
 
   
 
-### <span id="Discussion" class="mw-headline">Discussion</span>
+### Discussion
 
 SM: For dates, I like the second week of June.
 
@@ -222,7 +184,7 @@ group mailing list
 
   
 
-### <span id="Personal_Wishlists" class="mw-headline">Personal Wishlists</span>
+### Personal Wishlists
 
 SM: I think it would be good if we each stated the personal agendas we
 have in participating in this hackathon.
@@ -242,7 +204,7 @@ best.
 
   
 
-### <span id="Action_Items" class="mw-headline">Action Items</span>
+### Action Items
 
 SM: set up google doc for the whitepaper
 
@@ -253,9 +215,9 @@ SM: send out a Doodle poll for the next conference call
 
 HL/SM: find links to past accepted proposals
 
-## <span id="2010.2F02.2F22.2C_Second_conference_call.2C_5PM_EST" class="mw-headline">2010/02/22, Second conference call, 5PM EST</span>
+## 2010/02/22, Second conference call, 5PM EST
 
-### <span id="Agenda_2" class="mw-headline">Agenda</span>
+### Agenda
 
 Please add/change items.
 
@@ -271,45 +233,27 @@ Please add/change items.
   class="external text" rel="nofollow">GMOD evo hackathon whitepaper</a></span>
 - Assign tasks to be completed before next call.
 
-### <span id="Attendance_2" class="mw-headline">Attendance</span>
+### Attendance
 
 Sheldon McKay, Hilmar Lapp, Scott Cain, Nicole Washington
 
-### <span id="Proposal_ideas" class="mw-headline">Proposal ideas</span>
+### Proposal ideas
 
 - we can craft the participants with ideas of topics, but the reciprocal
   is true. up to participants to decide. organizers are also
   participants.
-
-<!-- -->
-
 - scott - proposal is more of the "these are the things we 'might' do",
   rather than exactly what we do. its an overarching guide.
-
-<!-- -->
-
 - hilmar - trying to decide what to accomplish, and gather desires; but
   what is actually accomplished, is executed by participants. the final
   thing is usually close to what is produced; the white paper set the
   tone.
-
-<!-- -->
-
 - don't need really polished white paper. but a good outline. this could
   probably be done quickly.
-
-<!-- -->
-
 - scott - need two pronged approach: write white paper & identify
   topics/people, do this in parallel.
-
-<!-- -->
-
 - scott - we can do the white paper in the next couple of weeks, and
   then start letting people know.
-
-<!-- -->
-
 - come up with skeleton of proposal, and then dole out parts.
   sheldon/hilmar work on first draft. and then rest comment on during
   the rest of the week. hilmar wants to put it on the wiki, so long as
@@ -324,24 +268,15 @@ Action item - Sheldon/Hilmar to write skeleton of proposal.
 Action item - Sheldon/Hilmar to solicit input from Scott/Nicole/Robert
 
 - dates recommended are second week of June (7-11)
-
-<!-- -->
-
 - size ~20 persons. not more than 30.
 - may seek some extra funding for additional participants.
-
-<!-- -->
-
 - will this be open call or invite only? would be good for open call for
   people to apply...
-
-<!-- -->
-
 - next call in two weeks.
 
-## <span id="2010.2F03.2F17_Third_conference_call.2C_2PM_EST" class="mw-headline">2010/03/17 Third conference call, 2PM EST</span>
+## 2010/03/17 Third conference call, 2PM EST
 
-### <span id="Agenda_3" class="mw-headline">Agenda</span>
+### Agenda
 
 Please add/change items.
 
@@ -349,13 +284,13 @@ Please add/change items.
   - clarify metadata issues
 - Dole out responsibilities
 
-### <span id="Attendance_3" class="mw-headline">Attendance</span>
+### Attendance
 
 - NLWashington
 - ScottCain
 - RobertBuels
 
-### <span id="Discussion_2" class="mw-headline">Discussion</span>
+### Discussion
 
 - We are running out of time, we need to get this proposal submitted.
 - We should get Dave Clements to look at the proposal. TODO: Rob will
@@ -372,16 +307,16 @@ Please add/change items.
 
   
 
-## <span id="2010.2F05.2F05_conference_call.2C_5PM_EST" class="mw-headline">2010/05/05 conference call, 5PM EST</span>
+## 2010/05/05 conference call, 5PM EST
 
-### <span id="Attendance_4" class="mw-headline">Attendance</span>
+### Attendance
 
 - Dave Clements
 - Nicole Washington
 - Rob Buels
 - Hilmar Lapp
 
-### <span id="Last_Meeting.27s_Action_Items" class="mw-headline">[Last Meeting's](#2010.2F03.2F17_Third_conference_call.2C_2PM_EST) Action Items</span>
+### [Last Meeting's](#2010.2F03.2F17_Third_conference_call.2C_2PM_EST) Action Items
 
 - Nicole: add more about alignment metadata
 - Dave Clements: check on natural diversity module and its relation to
@@ -391,7 +326,7 @@ Please add/change items.
 - Hilmar: general edits
 - Rob: general edits
 
-### <span id="Discussion_3" class="mw-headline">Discussion</span>
+### Discussion
 
 Discussed possible inclusion of *atlas-based interfaces* for phenotype,
 expression, and fate map *data. This came out of a recent NESCent
@@ -428,121 +363,20 @@ that rests on top of the GBrowse 1.x platform.
 Rob suggested "soliciting gripes" as a good way to identify work items
 and then what could be done about them.
 
-### <span id="Action_Items_2" class="mw-headline">Action Items</span>
+### Action Items
 
 - Dave will do first pass on initial restructuring of proposal and then
   pass it to Nicole. -- *Done 2010/04/06, but not as polished or full as
   it could have been.*
-
-<!-- -->
-
 - Dave will create Google Docs/Google Groups pages for budget and
   participants lists. -- *Done 2010/04/05.*
-
-<!-- -->
-
 - Nicole will write up details for alignment metadata objective.
-
-<!-- -->
-
 - Nicole and Dave will jointly work on comparative phenotypes in Chado
   objective.
-
-<!-- -->
-
 - Rob will talk to Naama about her experience with the Chado Phylogeny
   module.
-
-<!-- -->
-
 - Dave will contact a key GMOD contributor to find level of interest in
   participating.
-
-<!-- -->
-
 - Dave will writeup details for GBrowse_syn in *Specific Objectives* and
   then send it to Sheldon. -- *Written up, sort of; Need to
   finish/discuss with Sheldon. 2010/04/06*
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_Evo_Hackathon_Proposal" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:24 on 20 May
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">6,236 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,60 +1,51 @@
 ---
 title: "GBrowse2 REST API"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GBrowse2 REST API</span>
+# GBrowse2 REST API
 
 This article describes the **GBrowse2 REST API**.
 
 _For the main GBrowse 2.0 HOWTO article, see: [GBrowse 2.0
 HOWTO](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO")._
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">The GBrowse2
   REST API</span>](#The_GBrowse2_REST_API)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Getting
+  - [Getting
     Information from the
-    Server</span>](#Getting_Information_from_the_Server)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Getting a List of
-      Sources</span>](#Getting_a_List_of_Sources)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Getting Tracks from a Particular
-      Datasource</span>](#Getting_Tracks_from_a_Particular_Datasource)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Getting Chromosome
-      Sizes</span>](#Getting_Chromosome_Sizes)
-    - [<span class="tocnumber">1.1.4</span>
-      <span class="toctext">Downloading a
-      Track</span>](#Downloading_a_Track)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Generating
-    Static Images</span>](#Generating_Static_Images)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Focusing
-    on a Region</span>](#Focusing_on_a_Region)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Managing
-    Sessions</span>](#Managing_Sessions)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Centering
-    on a region</span>](#Centering_on_a_region)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Selecting
-    Tracks and Subtracks</span>](#Selecting_Tracks_and_Subtracks)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Uploading
-    Datasets</span>](#Uploading_Datasets)
-  - [<span class="tocnumber">1.8</span> <span class="toctext">Linking to
-    Remote Datasets</span>](#Linking_to_Remote_Datasets)
-  - [<span class="tocnumber">1.9</span> <span class="toctext">Obtaining
-    Metadata</span>](#Obtaining_Metadata)
+    Server](#Getting_Information_from_the_Server)
+    - [Getting a List of
+      Sources](#Getting_a_List_of_Sources)
+    - [Getting Tracks from a Particular
+      Datasource](#Getting_Tracks_from_a_Particular_Datasource)
+    - [Getting Chromosome
+      Sizes](#Getting_Chromosome_Sizes)
+    - [Downloading a
+      Track](#Downloading_a_Track)
+  - [Generating
+    Static Images](#Generating_Static_Images)
+  - [Focusing
+    on a Region](#Focusing_on_a_Region)
+  - [Managing
+    Sessions](#Managing_Sessions)
+  - [Centering
+    on a region](#Centering_on_a_region)
+  - [Selecting
+    Tracks and Subtracks](#Selecting_Tracks_and_Subtracks)
+  - [Uploading
+    Datasets](#Uploading_Datasets)
+  - [Linking to
+    Remote Datasets](#Linking_to_Remote_Datasets)
+  - [Obtaining
+    Metadata](#Obtaining_Metadata)
 
-# <span id="The_GBrowse2_REST_API" class="mw-headline">The GBrowse2 REST API</span>
+# The GBrowse2 REST API
 
-## <span id="Getting_Information_from_the_Server" class="mw-headline">Getting Information from the Server</span>
+## Getting Information from the Server
 
 You can get a list of public data sources from the GBrowse server, and
 interrogate each one for a list and description of the tracks it
 supports.
 
-### <span id="Getting_a_List_of_Sources" class="mw-headline">Getting a List of Sources</span>
+### Getting a List of Sources
 
 Invoke gbrowse with "action=list":
 
@@ -104,7 +95,7 @@ These fields are derived from GBrowse.conf and the "metadata" option in
 the configuration file for the data source. Also see
 [GBrowse_2.0_HOWTO#The_GENERAL_Section](GBrowse_2.0_HOWTO#The_GENERAL_Section "GBrowse 2.0 HOWTO").
 
-### <span id="Getting_Tracks_from_a_Particular_Datasource" class="mw-headline">Getting Tracks from a Particular Datasource</span>
+### Getting Tracks from a Particular Datasource
 
 Given a datasource name returned by "action=list", you may retrieve
 information about each track that is publicly exported by the
@@ -170,7 +161,7 @@ A space-delimited list of subtrack selection names. These can be used to
 selectively turn on particular subtracks using the syntax described in
 [\#Selecting Tracks and Subtracks](#Selecting_Tracks_and_Subtracks).
 
-### <span id="Getting_Chromosome_Sizes" class="mw-headline">Getting Chromosome Sizes</span>
+### Getting Chromosome Sizes
 
 To get the list of chromosomes and their sizes from a datasource, invoke
 the gbrowse URL with "action=chrom_sizes":
@@ -193,7 +184,7 @@ The first column is the chromosome name. The second column is its size
 in bases. If the appropriate metadata was provided, the first few lines
 will contain taxon and genome build information as shown in the example.
 
-### <span id="Downloading_a_Track" class="mw-headline">Downloading a Track</span>
+### Downloading a Track
 
 To download the data from a track, invoke the gbrowse URL with
 
@@ -212,7 +203,7 @@ to 120000:
 
     $URL/?gbgff=1;l=<trackname>;q=chrXX:110000..1200000
 
-## <span id="Generating_Static_Images" class="mw-headline">Generating Static Images</span>
+## Generating Static Images
 
 To generate static images of a region in PNG, SVG or PDF format, invoke
 gbrowse_img:
@@ -222,9 +213,9 @@ gbrowse_img:
 SOURCE  
 The data source, such as
 
-## <span id="Focusing_on_a_Region" class="mw-headline">Focusing on a Region</span>
+## Focusing on a Region
 
-## <span id="Managing_Sessions" class="mw-headline">Managing Sessions</span>
+## Managing Sessions
 
 A user's state is stored in a cookie named "gbrowse_sess". The session
 ID is a 64-character hexadecimal string (numerals 0-9 and characters
@@ -251,9 +242,9 @@ This will return a plain text file with the following structure:
     Session ID: 1e7995e8ced0494dcca25af4cee37f69
     Upload ID:  efee698db7bc6ebc8a69af04072a7143
 
-## <span id="Centering_on_a_region" class="mw-headline">Centering on a region</span>
+## Centering on a region
 
-## <span id="Selecting_Tracks_and_Subtracks" class="mw-headline">Selecting Tracks and Subtracks</span>
+## Selecting Tracks and Subtracks
 
 To select subtracks within a track, use the syntax
 **l=trackname/st1+st2+st3**, where _trackname_ is the name of the track,
@@ -262,55 +253,8 @@ the "subtrack table" option. Note that subtrack names are separated by
 spaces. Use "+" or "%20" to escape the URL. The parameter name is "l",
 short for **l**abel.
 
-## <span id="Uploading_Datasets" class="mw-headline">Uploading Datasets</span>
+## Uploading Datasets
 
-## <span id="Linking_to_Remote_Datasets" class="mw-headline">Linking to Remote Datasets</span>
+## Linking to Remote Datasets
 
-## <span id="Obtaining_Metadata" class="mw-headline">Obtaining Metadata</span>
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse2_REST_API" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 15:29 on 27 August 2012.</span>
-<!-- - <span id="footer-info-viewcount">51,608 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->
+## Obtaining Metadata

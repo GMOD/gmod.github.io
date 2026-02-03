@@ -1,9 +1,7 @@
 ---
 title: "Categories"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Categories</span>
+# Categories
 
 The GMOD web site makes extensive use of _category tags_ to flag pages
 as being related to various topics. Category tags give users an
@@ -15,9 +13,9 @@ at least one category tag.
 There is also a list of [pages without any category
 tags](Special%253AUncategorizedPages "Special%253AUncategorizedPages").
 
-## <span id="Category_Tag_Cloud" class="mw-headline">Category <a href="http://en.wikipedia.org/wiki/Tag_Cloud" class="extiw"
+## Category <a href="http://en.wikipedia.org/wiki/Tag_Cloud" class="extiw"
 
-title="wp:Tag Cloud">Tag Cloud</a></span>
+title="wp:Tag Cloud">Tag Cloud</a>
 
 <a href="Category%253A!FixAfterUpgrade"
 style="font-size: 77.602409638554%; ">!FixAfterUpgrade</a> 
@@ -298,7 +296,7 @@ style="font-size: 79.409638554217%; ">WormBase</a> 
 <a href="Category%253AXML" style="font-size: 80.313253012048%; ">XML</a> 
 <a href="Category%253AXORT" style="font-size: 80.012048192771%; ">XORT</a>
 
-## <span id="Category_Tree" class="mw-headline">Category Tree</span>
+## Category Tree
 
 Categories can be nested hierarchically. For example, the [GMOD
 Components](Category%253AGMOD_Components "Category%253AGMOD Components")
@@ -318,50 +316,3 @@ subcategories of. This strikes me as too much maintenance.
 If you have any suggestions on how to display categories in a tree
 format, please send them to the [GMOD Help
 Desk](GMOD_Help_Desk "GMOD Help Desk").
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Web Site](Category%253AGMOD_Web_Site "Category%253AGMOD Web Site")
-- [Help](Category%253AHelp "Category%253AHelp")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Categories" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 00:50 on 18 November 2010.</span>
-<!-- - <span id="footer-info-viewcount">286,402 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

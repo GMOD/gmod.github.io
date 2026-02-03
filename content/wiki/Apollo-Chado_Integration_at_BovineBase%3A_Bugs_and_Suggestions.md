@@ -1,23 +1,7 @@
 ---
 title: "Apollo-Chado Integration at BovineBase: Bugs and Suggestions"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Apollo-Chado Integration at BovineBase: Bugs and Suggestions</span>
-
-
-
-
-
-
-
+# Apollo-Chado Integration at BovineBase: Bugs and Suggestions
 
 
 This was written by Justin Reese in preparation for [Hackathon
@@ -38,7 +22,7 @@ effort. I will be fleshing this out in the next 12-24 hours, hopefully
 before the hackathon starts hacking, but feel free to contact me if
 something isn't clear.
 
-## <span id="Bugs" class="mw-headline">Bugs</span>
+## Bugs
 
 - Apollo crashes when opening some genes from the opening Chado dialog
   box. These genes tend to be near scaffold edges, but not all genes
@@ -73,7 +57,7 @@ something isn't clear.
   for some reason. Is there a way we could delay this db query until the
   user asks for it?
 
-## <span id="A_few_ideas_for_future_improvements" class="mw-headline">A few ideas for future improvements</span>
+## A few ideas for future improvements
 
 1.  Move as much Apollo configuration stuff as possible out of conf
     files like `chado-adapter.xml`, and instead query the user or the
@@ -109,93 +93,3 @@ something isn't clear.
     using some SQL magic (query for a parent, query for it's children,
     query for the children's children, etc?). Just a thought, this is
     probably asking a lot.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [Chado](Category%253AChado "Category%253AChado")
-- [User
-  Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="Special%253ABrowse/Apollo-2DChado_Integration_at_BovineBase%253A_Bugs_and_Suggestions"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:04 on 25 March
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">11,499 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

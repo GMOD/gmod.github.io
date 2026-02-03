@@ -1,23 +1,7 @@
 ---
 title: "Interface test"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Interface test</span>
-
-
-
-
-
-
-
+# Interface test
 
 
 Meeting Report [Model Organism Database User Interface
@@ -39,7 +23,7 @@ concept, constructing customized reports to answer more specific
 questions, extracting data in bulk for thousands of genes, and using one
 MOD in concert with other MODs.
 
-# <span id="Executive_Summary" class="mw-headline">Executive Summary</span>
+# Executive Summary
 
 The MOD user interface session brought to light some very useful topics
 that many MODs (new and old) can benefit from discussing.
@@ -91,68 +75,56 @@ Ideas for future development
 *more here ..*
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Executive
   Summary</span>](#Executive_Summary)
-- [<span class="tocnumber">2</span> <span class="toctext">In
-  attendance</span>](#In_attendance)
-- [<span class="tocnumber">3</span> <span class="toctext">Individual
-  Presentations</span>](#Individual_Presentations)
-- [<span class="tocnumber">4</span> <span class="toctext">Detailed
-  Report</span>](#Detailed_Report)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Addressing
-    Six MOD Use Cases</span>](#Addressing_Six_MOD_Use_Cases)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">User
-    Interface Development</span>](#User_Interface_Development)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Lessons Learned from
-      Experience</span>](#Lessons_Learned_from_Experience)
-    - [<span class="tocnumber">4.2.2</span>
-      <span class="toctext">Gathering and Analyzing User
-      Feedback</span>](#Gathering_and_Analyzing_User_Feedback)
-    - [<span class="tocnumber">4.2.3</span>
-      <span class="toctext">Balancing Completeness and
-      Simplicity</span>](#Balancing_Completeness_and_Simplicity)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">New Trends
-    in MOD UIs</span>](#New_Trends_in_MOD_UIs)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Community
-      Participation</span>](#Community_Participation)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Client-side
-      Scripting</span>](#Client-side_Scripting)
-    - [<span class="tocnumber">4.3.3</span> <span class="toctext">Using
+- [In
+  attendance](#In_attendance)
+- [Individual
+  Presentations](#Individual_Presentations)
+- [Detailed
+  Report](#Detailed_Report)
+  - [Addressing
+    Six MOD Use Cases](#Addressing_Six_MOD_Use_Cases)
+  - [User
+    Interface Development](#User_Interface_Development)
+    - [Lessons Learned from
+      Experience](#Lessons_Learned_from_Experience)
+    - [Gathering and Analyzing User
+      Feedback](#Gathering_and_Analyzing_User_Feedback)
+    - [Balancing Completeness and
+      Simplicity](#Balancing_Completeness_and_Simplicity)
+  - [New Trends
+    in MOD UIs](#New_Trends_in_MOD_UIs)
+    - [Community
+      Participation](#Community_Participation)
+    - [Client-side
+      Scripting](#Client-side_Scripting)
+    - [Using
       Virtualization for MOD
-      Snapshots</span>](#Using_Virtualization_for_MOD_Snapshots)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Using
+      Snapshots](#Using_Virtualization_for_MOD_Snapshots)
+  - [Using
     Google and Other General Search
-    Engines</span>](#Using_Google_and_Other_General_Search_Engines)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">User
-    Interface Conventions</span>](#User_Interface_Conventions)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">General
-    Discussion</span>](#General_Discussion)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">Implementation
-    Techniques</span>](#Implementation_Techniques)
+    Engines](#Using_Google_and_Other_General_Search_Engines)
+  - [User
+    Interface Conventions](#User_Interface_Conventions)
+  - [General
+    Discussion](#General_Discussion)
+  - [Implementation
+    Techniques](#Implementation_Techniques)
 
 
-
-# <span id="In_attendance" class="mw-headline"> In attendance</span>
+#  In attendance
 
 \- attendance list
 
-# <span id="Individual_Presentations" class="mw-headline"> [Individual Presentations](MOD_Face_Talks "MOD Face Talks") </span>
+#  [Individual Presentations](MOD_Face_Talks "MOD Face Talks") 
 
 Slides and text summaries of individual presentations.
 
   
 
-# <span id="Detailed_Report" class="mw-headline">Detailed Report</span>
+# Detailed Report
 
-## <span id="Addressing_Six_MOD_Use_Cases" class="mw-headline">Addressing Six MOD Use Cases</span>
+## Addressing Six MOD Use Cases
 
 Commonalities, good ideas, strengths and weaknesses
 
@@ -217,18 +189,15 @@ Commonalities, good ideas, strengths and weaknesses
       imported, and the list of corresponding genes from another, more
       data rich species, to be derived and then explored.
 
-## <span id="User_Interface_Development" class="mw-headline">User Interface Development</span>
+## User Interface Development
 
-### <span id="Lessons_Learned_from_Experience" class="mw-headline">Lessons Learned from Experience</span>
+### Lessons Learned from Experience
 
 - Clear (better yet, obvious) input actions and requirements are
   important. For example, "What, exactly, are people expected to type
   into a 'quick search' box?" and "If the 'log on' box is at the top of
   the homepage, does that mean I have to register and log on to use the
   site?"
-
-<!-- -->
-
 - Reliable results are important.
 - Fast results are good.
 - What users ask for isn't always what they really want (see the ApiDB
@@ -247,7 +216,7 @@ Commonalities, good ideas, strengths and weaknesses
   frequent, small changes and additions can be useful to community (if
   clearly explained)
 
-### <span id="Gathering_and_Analyzing_User_Feedback" class="mw-headline">Gathering and Analyzing User Feedback</span>
+### Gathering and Analyzing User Feedback
 
 - User community testing, interviews, surveys, HCI principles
   - Ask users **early** about new prototypes, rather than after UI
@@ -265,9 +234,6 @@ Commonalities, good ideas, strengths and weaknesses
     you to hear people explaining, to each other, how to use your site.
   - Log site usage, monitor it enough to recognize common "failed"
     queries, and figure out how to address and prevent such errors
-
-<!-- -->
-
 - Support for User preferences/sessions/configurations (e.g. "MyNCBI",
   FlyMine's "MyMine")
   - default UI dilemma: simple/dumb for general audience, or
@@ -275,7 +241,7 @@ Commonalities, good ideas, strengths and weaknesses
   - variable (low) use of preference options?
   - needs transparency to user (avoid logins/extra effort)
 
-### <span id="Balancing_Completeness_and_Simplicity" class="mw-headline">Balancing Completeness and Simplicity</span>
+### Balancing Completeness and Simplicity
 
 Too much information and too many choices can overwhelm users, but
 restricting choices and hiding data limits the usefulness of a MOD. This
@@ -294,9 +260,9 @@ A related issue is providing adequate information on what the different
 choices available actually do, and the provenance of data: what data are
 present and where they came from.
 
-## <span id="New_Trends_in_MOD_UIs" class="mw-headline">New Trends in MOD UIs</span>
+## New Trends in MOD UIs
 
-### <span id="Community_Participation" class="mw-headline">Community Participation</span>
+### Community Participation
 
 Wikipedia provides an excellent example of the power of community
 participation in science documentation. Many new genomics and biology
@@ -330,7 +296,7 @@ list of wikis offer scientists a common, well-documented user interface
 that is expected to facilitate expanded use, as experience in
 participation one site carries over to others.
 
-### <span id="Client-side_Scripting" class="mw-headline">Client-side Scripting</span>
+### Client-side Scripting
 
 Dynamic web page content, user preferences and histories are becoming
 more widely available at MODs. These are used for showing or hiding
@@ -344,7 +310,7 @@ queries and answers, and other uses.
 - include curator/community edits/updates to contents (part of same
   reading UI) (ZFIN,SGN,)
 
-### <span id="Using_Virtualization_for_MOD_Snapshots" class="mw-headline">Using Virtualization for MOD Snapshots</span>
+### Using Virtualization for MOD Snapshots
 
 Providing stable "snapshots" of the data in a MOD is important for
 reproducing results in publications that cite the MOD. Many MODs provide
@@ -359,7 +325,7 @@ can be downloaded for playback on any computer that supports the free
 rel="nofollow">VMWare</a> player. This practice greatly facilitates
 reproduction of results from papers that cite WormBase.
 
-## <span id="Using_Google_and_Other_General_Search_Engines" class="mw-headline">Using Google and Other General Search Engines</span>
+## Using Google and Other General Search Engines
 
 A number of MODs represented at the meeting used Google to provide some
 of the search functionality on their site. It was generally agreed that
@@ -396,7 +362,7 @@ many types of biological data. This approach offers more control over
 the indexing, searching, and result presentation than using an external
 search engine.
 
-## <span id="User_Interface_Conventions" class="mw-headline">User Interface Conventions</span>
+## User Interface Conventions
 
 One subject that was raised, but was not fully discussed in the time
 available, was the idea of developing common user interface conventions
@@ -425,7 +391,7 @@ should be sure to include:
 - update history (a.k.a. changelog) of MOD
 - central credits list for MOD contributors
 
-## <span id="General_Discussion" class="mw-headline">General Discussion</span>
+## General Discussion
 
 - Steps in developing good MOD Faces
   Consensus  
@@ -438,9 +404,6 @@ should be sure to include:
   - Never create a link to a location where there's nothing to be found.
     Indicate, by some means, if there's no information or more
     information.
-
-<!-- -->
-
 - User community testing, interviews, surveys, HCI principles
   - Differing views on value of types and stages in user testing (Is
     user testing necessary? What about releasing software as a means to
@@ -451,38 +414,26 @@ should be sure to include:
       or prototypes on paper.
     - Monitoring and logging is important, you must know what occupies
       the user the most.
-
-<!-- -->
-
 - Dilemma of too much or too little information/choice
   - Consensus: complexity goes with the territory, but you have to make
     the most common things easy and the hard things possible, and have
     good user education and documentation.
   - Is it true that complexity should be concealed? How does one strike
     the balance between providing for the expert and for the novice?
-
-<!-- -->
-
 - Google is your enemy/friend ...
   - Differing views on advantage/disadavantages of Google as adjunct to
     MOD search systems (No consensus that using Google is advantageous;
     Techniques for guiding Google/Bots below)
-
-<!-- -->
-
 - Good new ideas
   - More dynamic content, graphics summaries may be good
     - Can we make more use of graphics to replace text? E.g. a generated
       image replaces expression information.
     - Word or string completion as user asks questions is useful UI
       technique (see Javascript and AJAX below)
-
-<!-- -->
-
 - Common UIs across MODs?  
   Not discussed (sigh :()
 
-## <span id="Implementation_Techniques" class="mw-headline">Implementation Techniques</span>
+## Implementation Techniques
 
 - Easy way to direct Google/Bots to best or full content (e.g. gene
   pages) is with a site map with links to everything you want to expose.
@@ -491,114 +442,13 @@ should be sure to include:
     index, highlight Google user queries)
   - Google offers indexing tips, directions to update or hide specific
     parts
-
-<!-- -->
-
 - Dynamic content (Javascript/AJAX):
   - Word or string completion using Javascript/AJAX and dedicated,
     simple databases of words to complete work well (Wormbase, EBI
     Ontology Lookup Service, others?).
   - use to hide and show sections of pages; reorder tracks in a genome
     browser;
-
-<!-- -->
-
 - RSS is probably underutilized, but would it be widely used if
   available?
-
-<!-- -->
-
 - An XML representation of an "entry" makes a "diff" or change easy to
   assess, and reliable alerts could be constructed.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AInterface_test" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Interface_test" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:34 on 31 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">13,212 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

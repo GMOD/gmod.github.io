@@ -1,23 +1,7 @@
 ---
 title: "GSOC Applications Guide"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GSOC Applications Guide</span>
-
-
-
-
-
-
-
+# GSOC Applications Guide
 
 
 **We would like to know who you are and how you think.**
@@ -69,7 +53,7 @@ class="external text" rel="nofollow">GSoC FAQ</a>:
   class="external text" rel="nofollow">Program Rules</a> for more
   information.
 
-### <span id="Resources_and_Guides" class="mw-headline">Resources and Guides</span>
+### Resources and Guides
 
 - <a href="https://developers.google.com/open-source/gsoc/"
   class="external text" rel="nofollow">GSoC Main Site</a>
@@ -82,84 +66,3 @@ class="external text" rel="nofollow">GSoC FAQ</a>:
 - <a
   href="https://developers.google.com/open-source/gsoc/help/responsibilities#student_responsibilities#student_responsibilities"
   class="external text" rel="nofollow">Student Responsibilities</a>
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GSOC_Applications_Guide" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:31 on 12 February
-  2024.</span>
-<!-- - <span id="footer-info-viewcount">14,346 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

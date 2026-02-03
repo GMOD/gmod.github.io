@@ -1,72 +1,49 @@
 ---
 title: "Chado FAQ"
 ---
+# Chado FAQ
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado FAQ</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About this
   FAQ</span>](#About_this_FAQ)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">What is
-    this FAQ?</span>](#What_is_this_FAQ.3F)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">How is it
-    maintained?</span>](#How_is_it_maintained.3F)
-- [<span class="tocnumber">2</span> <span class="toctext">Chado
-  Questions</span>](#Chado_Questions)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">How do you
-    pronounce *chado*?</span>](#How_do_you_pronounce_chado.3F)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">How does
+  - [What is
+    this FAQ?](#What_is_this_FAQ.3F)
+  - [How is it
+    maintained?](#How_is_it_maintained.3F)
+- [Chado
+  Questions](#Chado_Questions)
+  - [How do you
+    pronounce *chado*?](#How_do_you_pronounce_chado.3F)
+  - [How does
     one represent BLAST results in Chado? or alignments?
-    or...</span>](#How_does_one_represent_BLAST_results_in_Chado.3F_or_alignments.3F_or...)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Where do I
+    or...](#How_does_one_represent_BLAST_results_in_Chado.3F_or_alignments.3F_or...)
+  - [Where do I
     find a list of tables in
-    Chado?</span>](#Where_do_I_find_a_list_of_tables_in_Chado.3F)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">What are
-    the modules in Chado?</span>](#What_are_the_modules_in_Chado.3F)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Is there a
-    *Chado for Beginners*?</span>](#Is_there_a_Chado_for_Beginners.3F)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Loading
-    data into Chado</span>](#Loading_data_into_Chado)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Why is
+    Chado?](#Where_do_I_find_a_list_of_tables_in_Chado.3F)
+  - [What are
+    the modules in Chado?](#What_are_the_modules_in_Chado.3F)
+  - [Is there a
+    *Chado for Beginners*?](#Is_there_a_Chado_for_Beginners.3F)
+  - [Loading
+    data into Chado](#Loading_data_into_Chado)
+  - [Why is
     loading GFF3 data so slow and what can I do about
-    it?</span>](#Why_is_loading_GFF3_data_so_slow_and_what_can_I_do_about_it.3F)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">I get a
+    it?](#Why_is_loading_GFF3_data_so_slow_and_what_can_I_do_about_it.3F)
+  - [I get a
     weird error when loading ontologies; what do I
-    do?</span>](#I_get_a_weird_error_when_loading_ontologies.3B_what_do_I_do.3F)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Is it
+    do?](#I_get_a_weird_error_when_loading_ontologies.3B_what_do_I_do.3F)
+  - [Is it
     possible to load ontologies without the DBIx::DBStag
-    Module?</span>](#Is_it_possible_to_load_ontologies_without_the_DBIx::DBStag_Module.3F)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Loading
+    Module?](#Is_it_possible_to_load_ontologies_without_the_DBIx::DBStag_Module.3F)
+  - [Loading
     Ontologies takes forever! There has to be a better
-    way?</span>](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
-
+    way?](#Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F)
 
 
   
 
-## <span id="About_this_FAQ" class="mw-headline">About this FAQ</span>
+## About this FAQ
 
-### <span id="What_is_this_FAQ.3F" class="mw-headline">What is this FAQ?</span>
+### What is this FAQ?
 
 It is the list of Frequently Asked Questions about
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>. It
@@ -74,22 +51,22 @@ summarises the questions that have come up on the Chado
 <a href="Mailing_list" class="mw-redirect" title="Mailing list">mailing
 list</a>.
 
-### <span id="How_is_it_maintained.3F" class="mw-headline">How is it maintained?</span>
+### How is it maintained?
 
 It is now maintained as a
 <a href="http://en.wikipedia.org/wiki/Wiki" class="extiw"
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
 
-## <span id="Chado_Questions" class="mw-headline">Chado Questions</span>
+## Chado Questions
 
-### <span id="How_do_you_pronounce_chado.3F" class="mw-headline">How do you pronounce *chado*?</span>
+### How do you pronounce *chado*?
 
 *Chado* is usually pronounced
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/Chado.mp3" class="internal"
 title="Chado.mp3">like this</a>.
 
-### <span id="How_does_one_represent_BLAST_results_in_Chado.3F_or_alignments.3F_or..." class="mw-headline">How does one represent BLAST results in Chado? or alignments? or...</span>
+### How does one represent BLAST results in Chado? or alignments? or...
 
 Questions about the best ways to represent a variety of observations are
 answered at the [Chado Best
@@ -97,22 +74,22 @@ Practices](Chado_Best_Practices "Chado Best Practices") page. There is
 also a worked example for this at
 [Load_BLAST_Into_Chado](Load_BLAST_Into_Chado "Load BLAST Into Chado").
 
-### <span id="Where_do_I_find_a_list_of_tables_in_Chado.3F" class="mw-headline">Where do I find a list of tables in Chado?</span>
+### Where do I find a list of tables in Chado?
 
 The [Chado Tables](Chado_Tables "Chado Tables") page.
 
-### <span id="What_are_the_modules_in_Chado.3F" class="mw-headline">What are the modules in Chado?</span>
+### What are the modules in Chado?
 
 They are listed in the [Chado
 Manual](Chado_Manual#Modules "Chado Manual") page.
 
-### <span id="Is_there_a_Chado_for_Beginners.3F" class="mw-headline">Is there a *Chado for Beginners*?</span>
+### Is there a *Chado for Beginners*?
 
 The best place to start would be the [Chado
 Manual](Chado_Manual#Modules "Chado Manual") or
 [Overview](Overview "Overview").
 
-### <span id="Loading_data_into_Chado" class="mw-headline">Loading data into Chado</span>
+### Loading data into Chado
 
 When I try to load data into Chado using the [GFF](GFF "GFF") bulk
 loader (gmod_bulk_load_gff3.pl), I get this error:
@@ -144,7 +121,7 @@ Instead, you must run a SQL command to repair the database:
 Then, rerunning the loader with the --recreate_cache option should allow
 the database to load. Sorry for the hassle.
 
-### <span id="Why_is_loading_GFF3_data_so_slow_and_what_can_I_do_about_it.3F" class="mw-headline">Why is loading GFF3 data so slow and what can I do about it?</span>
+### Why is loading GFF3 data so slow and what can I do about it?
 
 The gmod_bulk_load_gff3.pl script has to do quite a bit of work that the
 similarly named bp_bulk_load_gff.pl does not have to do. Since Chado
@@ -171,7 +148,7 @@ haven't spent much time benchmarking them. In particular, their is an
 option to drop indexes and then recreate them after the load, as well as
 an option to not load the database in a single transaction.
 
-### <span id="I_get_a_weird_error_when_loading_ontologies.3B_what_do_I_do.3F" class="mw-headline">I get a weird error when loading ontologies; what do I do?</span>
+### I get a weird error when loading ontologies; what do I do?
 
 When I try to use \`make ontologies\` to load ontologies, I get this
 message:
@@ -198,7 +175,7 @@ I think it is fairly safe to change the version string in Pg.pm from
 could cause DBD::Pg to fail, or worse, could cause it to seem to work
 but fail in some subtle, not very noticeable, way.
 
-### <span id="Is_it_possible_to_load_ontologies_without_the_DBIx::DBStag_Module.3F" class="mw-headline">Is it possible to load ontologies without the DBIx::DBStag Module?</span>
+### Is it possible to load ontologies without the DBIx::DBStag Module?
 
 I have errors associated with loading ontologies that appear to be
 related to the DBIx::DBStag module. When attempting to load ontologies
@@ -218,96 +195,9 @@ using "force" worked for the latter, the former required installing
 related packages (ex: via aptitude) such as libxslt and libxml -
 including the \*-dev packages. (This was on Ubuntu 10.04 Lucid.)
 
-### <span id="Loading_Ontologies_takes_forever.21_There_has_to_be_a_better_way.3F" class="mw-headline">Loading Ontologies takes forever! There has to be a better way?</span>
+### Loading Ontologies takes forever! There has to be a better way?
 
 There are [Precompiled Chado
 Databases](Precompiled_Chado_Databases "Precompiled Chado Databases")
 (including all five ontologies), made available online. These are
 updated on a weekly basis.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [FAQ](Category%253AFAQ "Category%253AFAQ")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_FAQ" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:50 on 5 February
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">160,734 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

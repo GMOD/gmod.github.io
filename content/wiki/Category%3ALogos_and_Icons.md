@@ -1,23 +1,7 @@
 ---
 title: "Category%253ALogos and Icons"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Category%253ALogos and Icons</span>
-
-
-
-
-
-
-
+# Category%253ALogos and Icons
 
 
 Logos and icons for use in this web site.
@@ -26,7 +10,6 @@ Logos and icons for use in this web site.
 ## Subcategories
 
 This category has the following 2 subcategories, out of 2 total.
-
 
 
 ### G
@@ -39,12 +22,9 @@ This category has the following 2 subcategories, out of 2 total.
 - [Member Logos](Category%253AMember_Logos "Category%253AMember Logos")
 
 
-
-
 ## Pages in category "Logos and Icons"
 
 The following 3 pages are in this category, out of 3 total.
-
 
 
 ### G
@@ -56,8 +36,6 @@ The following 3 pages are in this category, out of 3 total.
 
 - [Spring 2010 Logo
   Program](Spring_2010_Logo_Program "Spring 2010 Logo Program")
-
-
 
 
 ## Media in category "Logos and Icons"
@@ -2392,90 +2370,4 @@ The following 101 files are in this category, out of 101 total.
   
 
   [Yapc2010Logo.png](File:Yapc2010Logo.png "File:Yapc2010Logo.png")  
-  9 KB  
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Category%253ALogos_and_Icons"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:11 on 13 January
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">17,094 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+  9 KB

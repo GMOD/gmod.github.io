@@ -1,48 +1,23 @@
 ---
 title: "Load GenBank into Chado"
 ---
+# Load GenBank into Chado
 
 
+  Abstract](#Abstract)
+- [Summary](#Summary)
+- [Fetch Genbank
+  Genome Files](#Fetch_Genbank_Genome_Files)
+- [Create GFF3
+  from the Genbank Files](#Create_GFF3_from_the_Genbank_Files)
+- [Load GFF3 into
+  Chado](#Load_GFF3_into_Chado)
+- [Possible
+  Errors](#Possible_Errors)
+- [Authors](#Authors)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Load GenBank into Chado</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Abstract</span>](#Abstract)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Summary</span>](#Summary)
-- [<span class="tocnumber">3</span> <span class="toctext">Fetch Genbank
-  Genome Files</span>](#Fetch_Genbank_Genome_Files)
-- [<span class="tocnumber">4</span> <span class="toctext">Create GFF3
-  from the Genbank Files</span>](#Create_GFF3_from_the_Genbank_Files)
-- [<span class="tocnumber">5</span> <span class="toctext">Load GFF3 into
-  Chado</span>](#Load_GFF3_into_Chado)
-- [<span class="tocnumber">6</span> <span class="toctext">Possible
-  Errors</span>](#Possible_Errors)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Authors</span>](#Authors)
-
-
-
-## <span id="Abstract" class="mw-headline">Abstract</span>
+## Abstract
 
 This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes how to load
 GenBank format files into
@@ -55,7 +30,7 @@ rel="nofollow">http://eugenes.org/gmod/genbank2chado/</a>
 
   
 
-## <span id="Summary" class="mw-headline">Summary</span>
+## Summary
 
 - Install prerequisites: latest versions of
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
@@ -78,7 +53,7 @@ In summary, to load *Saccharomyces* chromosome X to Chado database
      | perl bp_genbank2gff3.pl -noCDS -in stdin -out stdout \
      | perl gmod_bulk_load_gff3.pl -dbname mychado -organism fromdata
 
-## <span id="Fetch_Genbank_Genome_Files" class="mw-headline">Fetch Genbank Genome Files</span>
+## Fetch Genbank Genome Files
 
 Genbank genome data is available from NCBI genomes section,
 <a href="ftp://ftp.ncbi.nih.gov/genomes" class="external free"
@@ -104,7 +79,7 @@ Other sample genomes of interest:
 
   
 
-## <span id="Create_GFF3_from_the_Genbank_Files" class="mw-headline">Create GFF3 from the Genbank Files</span>
+## Create GFF3 from the Genbank Files
 
 The [BioPerl](BioPerl "BioPerl") script `bp_genbank2gff3.pl`
 (`scripts/Bio-DB-GFF/genbank2gff3.PLS`) will convert to
@@ -119,7 +94,7 @@ features found.
 
   
 
-## <span id="Load_GFF3_into_Chado" class="mw-headline">Load GFF3 into Chado</span>
+## Load GFF3 into Chado
 
 Use the GMOD script `gmod_bulk_load_gff3.pl` for this. Note that
 `gmod_bulk_load_gff3` will only handle **one** organism at a time. Chose
@@ -140,7 +115,7 @@ Check data:
 
   
 
-## <span id="Possible_Errors" class="mw-headline">Possible Errors</span>
+## Possible Errors
 
 It's possible that you'll run into some errors coming from the input
 data itself. Some of the errors, and their fixes, are described below.
@@ -180,95 +155,8 @@ is. This error probably means that there are 2 features sharing the same
 name or ID and feature type in the [GFF3](GFF3 "GFF3") file. Correct
 these errors by hand and reload.
 
-## <span id="Authors" class="mw-headline">Authors</span>
+## Authors
 
 - [Don Gilbert](User%253ADongilbert "User%253ADongilbert")
 - <a href="http://www.bioperl.org/wiki/Brian_Osborne" class="extiw"
   title="bp:Brian Osborne">Brian Osborne</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_GenBank_into_Chado" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:49 on 30 December
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">53,382 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

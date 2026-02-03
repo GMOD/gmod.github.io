@@ -1,89 +1,63 @@
 ---
 title: "CMap FAQ"
 ---
+# CMap FAQ
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">CMap FAQ</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About this
   FAQ</span>](#About_this_FAQ)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">What is
-    this FAQ?</span>](#What_is_this_FAQ.3F)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">How is it
-    maintained?</span>](#How_is_it_maintained.3F)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Install</span>](#Install)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">How do I
-    install CMap?</span>](#How_do_I_install_CMap.3F)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">How do I
-    configure CMap?</span>](#How_do_I_configure_CMap.3F)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">How do I
+  - [What is
+    this FAQ?](#What_is_this_FAQ.3F)
+  - [How is it
+    maintained?](#How_is_it_maintained.3F)
+- [Install](#Install)
+  - [How do I
+    install CMap?](#How_do_I_install_CMap.3F)
+- [Configuration](#Configuration)
+  - [How do I
+    configure CMap?](#How_do_I_configure_CMap.3F)
+  - [How do I
     configure CMap so that when someone does mouse over a feature, it
     shows the name, beginning position and end
-    position?</span>](#How_do_I_configure_CMap_so_that_when_someone_does_mouse_over_a_feature.2C_it_shows_the_name.2C_beginning_position_and_end_position.3F)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">How do I
+    position?](#How_do_I_configure_CMap_so_that_when_someone_does_mouse_over_a_feature.2C_it_shows_the_name.2C_beginning_position_and_end_position.3F)
+  - [How do I
     configure CMap to include an attribute value in the mouse over
     pop-up for a feature or
-    map?</span>](#How_do_I_configure_CMap_to_include_an_attribute_value_in_the_mouse_over_pop-up_for_a_feature_or_map.3F)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Administration</span>](#Administration)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">How can I
+    map?](#How_do_I_configure_CMap_to_include_an_attribute_value_in_the_mouse_over_pop-up_for_a_feature_or_map.3F)
+- [Administration](#Administration)
+  - [How can I
     password protect some data sources while leaving other data sources
     open in the same CMap
-    installation?</span>](#How_can_I_password_protect_some_data_sources_while_leaving_other_data_sources_open_in_the_same_CMap_installation.3F)
+    installation?](#How_can_I_password_protect_some_data_sources_while_leaving_other_data_sources_open_in_the_same_CMap_installation.3F)
 
 
+## About this FAQ
 
-## <span id="About_this_FAQ" class="mw-headline">About this FAQ</span>
-
-### <span id="What_is_this_FAQ.3F" class="mw-headline">What is this FAQ?</span>
+### What is this FAQ?
 
 It is the list of [Frequently Asked
 Questions](Category%253AFAQ "Category%253AFAQ") about [CMap](CMap.1 "CMap").
 
-### <span id="How_is_it_maintained.3F" class="mw-headline">How is it maintained?</span>
+### How is it maintained?
 
 It is now maintained as a
 <a href="http://en.wikipedia.org/wiki/Wiki" class="extiw"
 title="wp:Wiki">Wiki</a> on this site. You can help maintain it by
 adding questions and answers.
 
-## <span id="Install" class="mw-headline">Install</span>
+## Install
 
-### <span id="How_do_I_install_CMap.3F" class="mw-headline">How do I install CMap?</span>
+### How do I install CMap?
 
 You can download CMap from source forge :
 <a href="http://sourceforge.net/projects/gmod/files/"
 class="external free"
 rel="nofollow">http://sourceforge.net/projects/gmod/files/</a>
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
-### <span id="How_do_I_configure_CMap.3F" class="mw-headline">How do I configure CMap?</span>
+### How do I configure CMap?
 
-### <span id="How_do_I_configure_CMap_so_that_when_someone_does_mouse_over_a_feature.2C_it_shows_the_name.2C_beginning_position_and_end_position.3F" class="mw-headline">How do I configure CMap so that when someone does mouse over a feature, it shows the name, beginning position and end position?</span>
+### How do I configure CMap so that when someone does mouse over a feature, it shows the name, beginning position and end position?
 
 The "area_code" section of each feature_type (or map_type) declaration
 in the configuration file will allow you to modify the behavior of the
@@ -124,7 +98,7 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/cmap/trunk/docs/ADMINISTRATION
 class="external text" rel="nofollow">ADMINISTRATION.pod</a>
 documentation that comes with the CMap distribution.
 
-### <span id="How_do_I_configure_CMap_to_include_an_attribute_value_in_the_mouse_over_pop-up_for_a_feature_or_map.3F" class="mw-headline">How do I configure CMap to include an attribute value in the mouse over pop-up for a feature or map?</span>
+### How do I configure CMap to include an attribute value in the mouse over pop-up for a feature or map?
 
 Attributes aren't as easily accessed as other fields (for speed
 reasons). To get at them, you have to write a Perl code in the config
@@ -172,9 +146,9 @@ Here is an example of how to do this:
      EOF
      </feature_type>
 
-## <span id="Administration" class="mw-headline">Administration</span>
+## Administration
 
-### <span id="How_can_I_password_protect_some_data_sources_while_leaving_other_data_sources_open_in_the_same_CMap_installation.3F" class="mw-headline">How can I password protect some data sources while leaving other data sources open in the same CMap installation?</span>
+### How can I password protect some data sources while leaving other data sources open in the same CMap installation?
 
 The easiest way to do this is to use two different cmap cgi scripts.
 They can either be renamed (cmap and cmap_password for example) or
@@ -237,89 +211,3 @@ list. (edited for display and reprinted by permission)
 5.  At the end, remove index.html or, even better, replace it with a
     welcome page. Now, you can password protect different data sources
     independently.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [FAQ](Category%253AFAQ "Category%253AFAQ")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/CMap_FAQ" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:01 on 14 October
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">66,650 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,9 +1,7 @@
 ---
 title: "Chado Best Practices"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Chado Best Practices</span>
+# Chado Best Practices
 
 Chado is a generic [schema](Glossary#Database_Schema "Glossary"), which
 means anyone writing software to query or write to chado (either
@@ -31,123 +29,102 @@ See also:
   further discussion on these conventions and how they were implemented
   at IGS (for comparison)
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Gene
   Models</span>](#Gene_Models)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Canonical
-    Gene Model</span>](#Canonical_Gene_Model)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Querying for Canonical
-      Genes</span>](#Querying_for_Canonical_Genes)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Noncoding
-    Genes</span>](#Noncoding_Genes)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_2)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Pseudogene</span>](#Pseudogene)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_3)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Singleton
-    Feature</span>](#Singleton_Feature)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_4)
-  - [<span class="tocnumber">1.5</span>
-    <span class="toctext">Dicistronic Gene</span>](#Dicistronic_Gene)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">xxx
-    Operon</span>](#xxx_Operon)
-  - [<span class="tocnumber">1.7</span>
-    <span class="toctext">Trans-spliced
-    Gene</span>](#Trans-spliced_Gene)
-    - [<span class="tocnumber">1.7.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_5)
-  - [<span class="tocnumber">1.8</span> <span class="toctext">xxx Gene
-    with Regulatory Elements</span>](#xxx_Gene_with_Regulatory_Elements)
-  - [<span class="tocnumber">1.9</span> <span class="toctext">xxx
-    Transposons</span>](#xxx_Transposons)
-  - [<span class="tocnumber">1.10</span> <span class="toctext">Gene with
+  - [Canonical
+    Gene Model](#Canonical_Gene_Model)
+    - [Querying for Canonical
+      Genes](#Querying_for_Canonical_Genes)
+    - [Application
+      Support](#Application_Support)
+  - [Noncoding
+    Genes](#Noncoding_Genes)
+    - [Application
+      Support](#Application_Support_2)
+  - [Pseudogene](#Pseudogene)
+    - [Application
+      Support](#Application_Support_3)
+  - [Singleton
+    Feature](#Singleton_Feature)
+    - [Application
+      Support](#Application_Support_4)
+  - [Dicistronic Gene](#Dicistronic_Gene)
+  - [xxx
+    Operon](#xxx_Operon)
+  - [Trans-spliced
+    Gene](#Trans-spliced_Gene)
+    - [Application
+      Support](#Application_Support_5)
+  - [xxx Gene
+    with Regulatory Elements](#xxx_Gene_with_Regulatory_Elements)
+  - [xxx
+    Transposons](#xxx_Transposons)
+  - [Gene with
     Implicit Features
-    Manifested</span>](#Gene_with_Implicit_Features_Manifested)
-  - [<span class="tocnumber">1.11</span>
-    <span class="toctext">Unlocalized Gene</span>](#Unlocalized_Gene)
-    - [<span class="tocnumber">1.11.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_6)
-  - [<span class="tocnumber">1.12</span> <span class="toctext">Feature
-    Localization</span>](#Feature_Localization)
-  - [<span class="tocnumber">1.13</span> <span class="toctext">Feature
+    Manifested](#Gene_with_Implicit_Features_Manifested)
+  - [Unlocalized Gene](#Unlocalized_Gene)
+    - [Application
+      Support](#Application_Support_6)
+  - [Feature
+    Localization](#Feature_Localization)
+  - [Feature
     Localization to Contigs in
-    Assembly</span>](#Feature_Localization_to_Contigs_in_Assembly)
-    - [<span class="tocnumber">1.13.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_7)
-  - [<span class="tocnumber">1.14</span> <span class="toctext">Redundant
+    Assembly](#Feature_Localization_to_Contigs_in_Assembly)
+    - [Application
+      Support](#Application_Support_7)
+  - [Redundant
     Localizations to Different Assembly
-    Levels</span>](#Redundant_Localizations_to_Different_Assembly_Levels)
-    - [<span class="tocnumber">1.14.1</span>
-      <span class="toctext">Application
-      Support</span>](#Application_Support_8)
-  - [<span class="tocnumber">1.15</span> <span class="toctext">N-level
-    Assemblies</span>](#N-level_Assemblies)
-  - [<span class="tocnumber">1.16</span> <span class="toctext">Immature
-    or Primary RNA</span>](#Immature_or_Primary_RNA)
-- [<span class="tocnumber">2</span> <span class="toctext">xxx Genomic
-  Rearrangements</span>](#xxx_Genomic_Rearrangements)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Inversions</span>](#Inversions)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Translocations</span>](#Translocations)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Deletions</span>](#Deletions)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Copy
-    Number Variations</span>](#Copy_Number_Variations)
-- [<span class="tocnumber">3</span> <span class="toctext">Single
+    Levels](#Redundant_Localizations_to_Different_Assembly_Levels)
+    - [Application
+      Support](#Application_Support_8)
+  - [N-level
+    Assemblies](#N-level_Assemblies)
+  - [Immature
+    or Primary RNA](#Immature_or_Primary_RNA)
+- [xxx Genomic
+  Rearrangements](#xxx_Genomic_Rearrangements)
+  - [Inversions](#Inversions)
+  - [Translocations](#Translocations)
+  - [Deletions](#Deletions)
+  - [Copy
+    Number Variations](#Copy_Number_Variations)
+- [Single
   Nucleotide Polymorphisms
-  (SNPs)</span>](#Single_Nucleotide_Polymorphisms_.28SNPs.29)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Extensions</span>](#Extensions)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Similarities to
-    Alignments</span>](#Similarities_to_Alignments)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Redundant
+  (SNPs)](#Single_Nucleotide_Polymorphisms_.28SNPs.29)
+  - [Extensions](#Extensions)
+  - [Similarities to
+    Alignments](#Similarities_to_Alignments)
+  - [Redundant
     Storage of Coordinates on Different Assembly
-    Levels</span>](#Redundant_Storage_of_Coordinates_on_Different_Assembly_Levels)
-- [<span class="tocnumber">4</span> <span class="toctext">Sequence
-  Alignments</span>](#Sequence_Alignments)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Results
-    from BLAST</span>](#Results_from_BLAST)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">xxx
+    Levels](#Redundant_Storage_of_Coordinates_on_Different_Assembly_Levels)
+- [Sequence
+  Alignments](#Sequence_Alignments)
+  - [Results
+    from BLAST](#Results_from_BLAST)
+  - [xxx
     Multiple Sequence
-    Alignments</span>](#xxx_Multiple_Sequence_Alignments)
-- [<span class="tocnumber">5</span> <span class="toctext">xxx
+    Alignments](#xxx_Multiple_Sequence_Alignments)
+- [xxx
   Posttranslational
-  Modifications</span>](#xxx_Posttranslational_Modifications)
-- [<span class="tocnumber">6</span> <span class="toctext">xxx
-  Genotypes</span>](#xxx_Genotypes)
-- [<span class="tocnumber">7</span> <span class="toctext">xxx
-  Phenotypes</span>](#xxx_Phenotypes)
-- [<span class="tocnumber">8</span> <span class="toctext">xxx
-  Cleavage</span>](#xxx_Cleavage)
-- [<span class="tocnumber">9</span> <span class="toctext">xxx Protein
-  Complexes</span>](#xxx_Protein_Complexes)
-- [<span class="tocnumber">10</span> <span class="toctext">GO
-  annotations</span>](#GO_annotations)
-- [<span class="tocnumber">11</span> <span class="toctext">xxx Genome
-  Versions</span>](#xxx_Genome_Versions)
+  Modifications](#xxx_Posttranslational_Modifications)
+- [xxx
+  Genotypes](#xxx_Genotypes)
+- [xxx
+  Phenotypes](#xxx_Phenotypes)
+- [xxx
+  Cleavage](#xxx_Cleavage)
+- [xxx Protein
+  Complexes](#xxx_Protein_Complexes)
+- [GO
+  annotations](#GO_annotations)
+- [xxx Genome
+  Versions](#xxx_Genome_Versions)
 
-### <span id="Gene_Models" class="mw-headline">Gene Models</span>
+### Gene Models
 
 This section describes how one describes commonly encountered gene
 models in Chado.
 
-#### <span id="Canonical_Gene_Model" class="mw-headline">Canonical Gene Model</span>
+#### Canonical Gene Model
 
 The <a href="http://en.wikipedia.org/wiki/Central_dogma" class="extiw"
 title="wp:Central dogma">central dogma</a> model states that "gene makes
@@ -186,7 +163,7 @@ This scenario involves rows in the following tables:
 | feature                                                                    | exon                                                            | 1 or more                                                                                                                          | Exons are always required, even if the genome under consideration has no introns.                                                                                                                                                                                                                                                                                                  |
 | feature                                                                    | polypeptide                                                     | At least 1                                                                                                                         | A protein-coding gene always produces a polypeptide, by definition. The polypeptide is located relative to the same genomic feature as the exons, mRNAs and gene. A single featureloc is used, with _fmin_ and _fmax_ indicating the start and stop codon positions (location is inclusive of stop codon). The polypeptide sequence should be specified as an amino acid sequence. |
 
-##### <span id="Querying_for_Canonical_Genes" class="mw-headline">Querying for Canonical Genes</span>
+##### Querying for Canonical Genes
 
 Sample query: retrieve a gene, "Dredd", along with its transcripts,
 proteins and exons. Since this is a "canonical gene" we can assume that
@@ -210,12 +187,12 @@ graph](Introduction_to_Chado#Feature_Graphs "Introduction to Chado") has
 
 This query should fetch a 3-deep graph rooted at "Dredd".
 
-##### <span id="Application_Support" class="mw-headline">Application Support</span>
+##### Application Support
 
 - Supported by [Apollo](Apollo.1 "Apollo")
 - Supported by [GBrowse](GBrowse.1 "GBrowse")
 
-#### <span id="Noncoding_Genes" class="mw-headline">Noncoding Genes</span>
+#### Noncoding Genes
 
 Similar to [canonical model](#Canonical_Gene_Model), except with
 noncoding-RNA not all genes are protein-coding. Genes can code for tRNA,
@@ -226,12 +203,12 @@ model](#Canonical_Gene_Model), with the following exceptions:
 - Instead of an mRNA feature, there is a feature that is some other
   sub-type of RNA
 
-##### <span id="Application_Support_2" class="mw-headline">Application Support</span>
+##### Application Support
 
 - Supported by [Apollo](Apollo.1 "Apollo")
 - Supported by [GBrowse](GBrowse.1 "GBrowse")
 
-#### <span id="Pseudogene" class="mw-headline">Pseudogene</span>
+#### Pseudogene
 
 A pseudogene is a non-functional relic of a gene. A pseudogene may look
 like an ordinary gene, and may even have discernible parts such as
@@ -256,7 +233,7 @@ no-one is using Chado to do this. There are currently two practices:
   a later date it becomes desirable to annotated the exon structure of a
   pseudogene, it will be compatible with this.
 
-##### <span id="Application_Support_3" class="mw-headline">Application Support</span>
+##### Application Support
 
 - [Apollo](Apollo.1 "Apollo"): status is unclear.
 
@@ -265,7 +242,7 @@ may also be possible to configure it to the second, singleton, method.
 Annotating the exon structure of pseudogenes the correct way has not yet
 been attempted to our knowledge.
 
-#### <span id="Singleton_Feature" class="mw-headline">Singleton Feature</span>
+#### Singleton Feature
 
 Many types of features are singletons - that is they are not related to
 other features through the
@@ -278,7 +255,7 @@ located relative to other features (usually the genome, but once can
 have singletons that are located relative to other features - this may
 not be supported by all applications)
 
-##### <span id="Application_Support_4" class="mw-headline">Application Support</span>
+##### Application Support
 
 - Supported by [Apollo](Apollo.1 "Apollo")
 - Supported by [GBrowse](GBrowse.1 "GBrowse")
@@ -288,7 +265,7 @@ genome (singletons located relative to other features will be ignored).
 It may be necessary to configure apollo to make the feature type
 "1-level".
 
-#### <span id="Dicistronic_Gene" class="mw-headline">Dicistronic Gene</span>
+#### Dicistronic Gene
 
 A dicistronic gene is a gene with a mRNA that codes for two distinct
 non-overlapping CDSs. Dicistronic genes (see for example, the
@@ -329,7 +306,7 @@ first is a hack and introduces redundancy, but works well with existing
 software and tools. The second is preferred from a modeling standpoint,
 but introduces a lot of complexity to software.
 
-#### <span id="xxx_Operon" class="mw-headline">xxx Operon</span>
+#### xxx Operon
 
 Bacterial genes are often transcribed in groups; e.g. _lacZ_, _lacA_ and
 _lacY_ make up the
@@ -337,7 +314,7 @@ _lacY_ make up the
 title="wp:Lac operon">Lac operon</a>. There are many similarities with
 [dicistronic genes](#Dicistronic_Gene) here.
 
-#### <span id="Trans-spliced_Gene" class="mw-headline">Trans-spliced Gene</span>
+#### Trans-spliced Gene
 
 A trans-spliced gene has one or more transcripts in which that
 transcript may be spliced together from different parts of the genome.
@@ -377,17 +354,17 @@ introduces a major departure from the [canonical gene
 model](#Canonical_Gene_Model). For this reason this proposal is unlikely
 to be adopted.
 
-##### <span id="Application_Support_5" class="mw-headline">Application Support</span>
+##### Application Support
 
 - [Apollo](Apollo.1 "Apollo"): status unclear.
 - [GBrowse](GBrowse.1 "GBrowse"): status unclear.
 
-#### <span id="xxx_Gene_with_Regulatory_Elements" class="mw-headline">xxx Gene with Regulatory Elements</span>
+#### xxx Gene with Regulatory Elements
 
 Regulatory elements may be implicitly or explicitly associated with a
 gene.
 
-#### <span id="xxx_Transposons" class="mw-headline">xxx Transposons</span>
+#### xxx Transposons
 
 Transposons can be annotated as [singleton features](#Singleton_Feature)
 or as complex annotations. You would create a feature of type transposon
@@ -413,7 +390,7 @@ option would be to treat each transposon part as distinct singletons,
 but this may be unsatisfactory as one may desire to have the appropriate
 _part_of_ relations between the parts.
 
-#### <span id="Gene_with_Implicit_Features_Manifested" class="mw-headline">Gene with Implicit Features Manifested</span>
+#### Gene with Implicit Features Manifested
 
 Some feature types such as introns are not normally manifested as rows
 in chado. They are normally derived on-the-fly from the gaps between
@@ -421,7 +398,7 @@ consecutive exons. See for an example. Occasionally it may be desirable
 to store the introns as actual rows in the feature table - for example
 in a report database.
 
-#### <span id="Unlocalized_Gene" class="mw-headline">Unlocalized Gene</span>
+#### Unlocalized Gene
 
 A gene without sequence based localization.
 
@@ -435,7 +412,7 @@ valid to have gene features with no featurelocs. When the time comes to
 create genome annotations for these, we just 'fill out' the gene feature
 by adding transcript and exon features.
 
-##### <span id="Application_Support_6" class="mw-headline">Application Support</span>
+##### Application Support
 
 - [GBrowse](GBrowse.1 "GBrowse"): supported.
 - [Apollo](Apollo.1 "Apollo"): supported.
@@ -446,7 +423,7 @@ ignored from the genome viewer, which is appropriate.
 Apollo supports this scenario in that unlocalized features will be
 ignored, which is appropriate behaviour for a genome annotation tool.
 
-#### <span id="Feature_Localization" class="mw-headline">Feature Localization</span>
+#### Feature Localization
 
 All features with sequence annotation should be localized using
 [featureloc](#Table:_featureloc).
@@ -470,7 +447,7 @@ example, localizing features relative to a transcript or polypeptide or
 even exon is permitted, but unusual practices will most likely not be
 recognized by most software.
 
-#### <span id="Feature_Localization_to_Contigs_in_Assembly" class="mw-headline">Feature Localization to Contigs in Assembly</span>
+#### Feature Localization to Contigs in Assembly
 
 In an assembled genome, it is common to locate relative to the top-level
 assembly units (e.g. chromosomes). However, it is also permissible to
@@ -493,7 +470,7 @@ assembly feature. It may sometimes be desirable to have software that
 can perform location transformations, mapping features from contigs to
 top-level units and back.
 
-##### <span id="Application_Support_7" class="mw-headline">Application Support</span>
+##### Application Support
 
 - [Apollo](Apollo.1 "Apollo"): status unclear.
 - [GBrowse](GBrowse.1 "GBrowse"): status unclear.
@@ -508,7 +485,7 @@ and the features are located relative to contigs which are themselves on
 GBrowse may expect features to be located relative to top-level units
 such as chromosomes.
 
-#### <span id="Redundant_Localizations_to_Different_Assembly_Levels" class="mw-headline">Redundant Localizations to Different Assembly Levels</span>
+#### Redundant Localizations to Different Assembly Levels
 
 Features can be located relative to both contigs and top-level assembly
 units.
@@ -525,7 +502,7 @@ solutions are not part of the standard Chado software suite.
 Nevertheless, this scenario may be useful for advanced users in certain
 circumstances
 
-##### <span id="Application_Support_8" class="mw-headline">Application Support</span>
+##### Application Support
 
 - [GBrowse](GBrowse.1 "GBrowse"): status unclear.
 - [GBrowse](GBrowse.1 "GBrowse"): status partial.
@@ -541,7 +518,7 @@ to contigs in assembly](#Feature_Localization_to_Contigs_in_Assembly).
 Apollo will not preserve redundant *featureloc*s when writing back to
 the database. This could lead to the database getting out of sync.
 
-#### <span id="N-level_Assemblies" class="mw-headline">N-level Assemblies</span>
+#### N-level Assemblies
 
 In theory it is possible (but rare) to have assemblies with variable
 depths, or with depths \> 2. This scenario is rare. If required, then
@@ -552,7 +529,7 @@ relative to chromosomes. Most software that interoperates with Chado
 will not be able to deal with this, so this scenario is discouraged
 except by advanced users who have no other option.
 
-#### <span id="Immature_or_Primary_RNA" class="mw-headline">Immature or Primary RNA</span>
+#### Immature or Primary RNA
 
 Generally we do not explicitly represent primary RNA transcripts unless
 there is something useful to say about them. If one wants to instantiate
@@ -562,9 +539,9 @@ in the
 [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
 table.
 
-### <span id="xxx_Genomic_Rearrangements" class="mw-headline">xxx Genomic Rearrangements</span>
+### xxx Genomic Rearrangements
 
-#### <span id="Inversions" class="mw-headline">Inversions</span>
+#### Inversions
 
 Create a feature of type inversion with location spanning the inverted
 region with rank 0. If there is a version of the sequence containing the
@@ -580,7 +557,7 @@ B' (post-rearrangement) and locate on B' and A', respectively. How to
 capture the fact that Afrag and Bfrag and A' and B' are part of same
 rearrangement? Use feature relations?
 
-#### <span id="Translocations" class="mw-headline">Translocations</span>
+#### Translocations
 
 Create a feature of type translocation with a location spanning the
 translocated region, rank 0. Rank=1 is used for insertion locations:
@@ -593,11 +570,11 @@ about this.
 Good point; we pondered adding a CV term to featureloc (I think it's
 still useful to have rank anyway - e.g. for multiple alignments).
 
-#### <span id="Deletions" class="mw-headline">Deletions</span>
+#### Deletions
 
-#### <span id="Copy_Number_Variations" class="mw-headline">Copy Number Variations</span>
+#### Copy Number Variations
 
-### <span id="Single_Nucleotide_Polymorphisms_.28SNPs.29" class="mw-headline">Single Nucleotide Polymorphisms (SNPs)</span>
+### Single Nucleotide Polymorphisms (SNPs)
 
 This outlines one way of modeling SNPs in chado. it also illustrates use
 of the [featureloc](Chado_Tables#Table:_featureloc "Chado Tables")
@@ -797,7 +774,7 @@ WHERE
   wildloc.srcfeature = wildfeat
 ```
 
-#### <span id="Extensions" class="mw-headline">Extensions</span>
+#### Extensions
 
 The above will also work if we have a polymorphic site with a number of
 different possibilities across multiple strains. We just extend the
@@ -806,7 +783,7 @@ number of rows in the location matrix (i.e. we have rank \> 1).
 We could also instantiate multiple SNPs, one per strain, and keep the
 locations pairwise.
 
-#### <span id="Similarities_to_Alignments" class="mw-headline">Similarities to Alignments</span>
+#### Similarities to Alignments
 
 You should hopefully notice the parallels between modeling SNPs and
 modeling pairwise (e.g. BLAST) and multiple alignments. The difference
@@ -814,7 +791,7 @@ is, alignments would always have locgroup=0, with the rank
 distinguishing query from subject. Also, with an HSP feature, the
 _residue_info_ is used to store the alignment string.
 
-#### <span id="Redundant_Storage_of_Coordinates_on_Different_Assembly_Levels" class="mw-headline">Redundant Storage of Coordinates on Different Assembly Levels</span>
+#### Redundant Storage of Coordinates on Different Assembly Levels
 
 Some groups may find it advantageous to redundantly store features
 relative to both BACs and chromosomes (or to mini-contigs and
@@ -823,9 +800,9 @@ outlined above works perfectly well with this, we would simple add
 another column in the location matrix (i.e. another wild type/mutant
 pair with a distinct locgroup). All queries should work the same.
 
-### <span id="Sequence_Alignments" class="mw-headline">Sequence Alignments</span>
+### Sequence Alignments
 
-#### <span id="Results_from_BLAST" class="mw-headline">Results from BLAST</span>
+#### Results from BLAST
 
 These steps will add a BLAST analysis to a Chado database.
 [Load_BLAST_Into_Chado](Load_BLAST_Into_Chado "Load BLAST Into Chado")
@@ -868,19 +845,19 @@ bp_search2gff.pl and gmod_bulk_load_gff3.pl
   table. For BLAST searches those would correspond to bits, score,
   e-value and frac_identical.
 
-#### <span id="xxx_Multiple_Sequence_Alignments" class="mw-headline">xxx Multiple Sequence Alignments</span>
+#### xxx Multiple Sequence Alignments
 
-### <span id="xxx_Posttranslational_Modifications" class="mw-headline">xxx Posttranslational Modifications</span>
+### xxx Posttranslational Modifications
 
-### <span id="xxx_Genotypes" class="mw-headline">xxx Genotypes</span>
+### xxx Genotypes
 
-### <span id="xxx_Phenotypes" class="mw-headline">xxx Phenotypes</span>
+### xxx Phenotypes
 
-### <span id="xxx_Cleavage" class="mw-headline">xxx Cleavage</span>
+### xxx Cleavage
 
-### <span id="xxx_Protein_Complexes" class="mw-headline">xxx Protein Complexes</span>
+### xxx Protein Complexes
 
-### <span id="GO_annotations" class="mw-headline">GO annotations</span>
+### GO annotations
 
 The details on GO annotation can be foind on the
 <a href="http://www.geneontology.org/GO.annotation.shtml"
@@ -903,54 +880,4 @@ evidence code, and
 should link publications to annotations. For example evidence IEA with
 dictyBase:DDB0185051
 
-### <span id="xxx_Genome_Versions" class="mw-headline">xxx Genome Versions</span>
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Pages with problems or
-  questions](Category%253APages_with_problems_or_questions "Category%253APages with problems or questions")
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [BLAST](Category%253ABLAST "Category%253ABLAST")
-- [Chado](Category%253AChado "Category%253AChado")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Best_Practices" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 08:47 on 16 April 2013.</span>
-<!-- - <span id="footer-info-viewcount">359,762 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->
+### xxx Genome Versions

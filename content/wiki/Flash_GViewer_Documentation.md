@@ -1,64 +1,39 @@
 ---
 title: "Flash GViewer Documentation"
 ---
+# Flash GViewer Documentation
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Flash GViewer Documentation</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Flash
   GViewer</span>](#Flash_GViewer)
-- [<span class="tocnumber">2</span> <span class="toctext">Current
-  Features (v0.5)</span>](#Current_Features_.28v0.5.29)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Changes in
-    v0.5</span>](#Changes_in_v0.5)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Changes in
-    v0.4</span>](#Changes_in_v0.4)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Changes in
-    v0.3</span>](#Changes_in_v0.3)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Changes in
-    v0.2</span>](#Changes_in_v0.2)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Demos</span>](#Demos)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Installation</span>](#Installation)
-- [<span class="tocnumber">5</span> <span class="toctext">Input
-  Parameters</span>](#Input_Parameters)
-- [<span class="tocnumber">6</span> <span class="toctext">The
-  BaseMap</span>](#The_BaseMap)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">The Base
-    Maps</span>](#The_Base_Maps)
-- [<span class="tocnumber">7</span> <span class="toctext">The Annotation
-  Data</span>](#The_Annotation_Data)
-- [<span class="tocnumber">8</span> <span class="toctext">Web Interface
-  & CGI script</span>](#Web_Interface_.26_CGI_script)
-- [<span class="tocnumber">9</span> <span class="toctext">Javascript -
-  Flash Connectivity</span>](#Javascript_-_Flash_Connectivity)
-- [<span class="tocnumber">10</span> <span class="toctext">Known
-  Issues</span>](#Known_Issues)
+- [Current
+  Features (v0.5)](#Current_Features_.28v0.5.29)
+  - [Changes in
+    v0.5](#Changes_in_v0.5)
+  - [Changes in
+    v0.4](#Changes_in_v0.4)
+  - [Changes in
+    v0.3](#Changes_in_v0.3)
+  - [Changes in
+    v0.2](#Changes_in_v0.2)
+- [Demos](#Demos)
+- [Installation](#Installation)
+- [Input
+  Parameters](#Input_Parameters)
+- [The
+  BaseMap](#The_BaseMap)
+  - [The Base
+    Maps](#The_Base_Maps)
+- [The Annotation
+  Data](#The_Annotation_Data)
+- [Web Interface
+  & CGI script](#Web_Interface_.26_CGI_script)
+- [Javascript -
+  Flash Connectivity](#Javascript_-_Flash_Connectivity)
+- [Known
+  Issues](#Known_Issues)
 
 
-
-### <span id="Flash_GViewer" class="mw-headline">Flash GViewer</span>
+### Flash GViewer
 
 **A customizable web tool for visualizing genome-wide annotation**
 
@@ -79,7 +54,7 @@ the plugin <a
 href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&amp;promoid=BIOW"
 class="external text" rel="nofollow">here</a>.
 
-### <span id="Current_Features_.28v0.5.29" class="mw-headline">Current Features (v0.5)</span>
+### Current Features (v0.5)
 
 Here are some of the Flash GViewer's current features:
 
@@ -124,14 +99,14 @@ Here are some of the Flash GViewer's current features:
   region so you can then click to open up a genome browser window for
   the specified region.
 
-#### <span id="Changes_in_v0.5" class="mw-headline">Changes in v0.5</span>
+#### Changes in v0.5
 
 - Added the ability to color annotation features independently via
   addition of color tag to annotation XML format. Annotations without
   separate color information will rever to the default color for that
   particular feature type.
 
-#### <span id="Changes_in_v0.4" class="mw-headline">Changes in v0.4</span>
+#### Changes in v0.4
 
 - Improved Javascript functionality - added feedback from Flash to
   Javascript to allow Javascript to query Flash for the annotation data
@@ -143,12 +118,12 @@ Here are some of the Flash GViewer's current features:
   a genomic region. New configuration parameter to set external URL for
   browser link.
 
-#### <span id="Changes_in_v0.3" class="mw-headline">Changes in v0.3</span>
+#### Changes in v0.3
 
 - Added basic javascript to flash connectivity to allow javascript in a
   web page to control the feature highlighting in the flash movie
 
-#### <span id="Changes_in_v0.2" class="mw-headline">Changes in v0.2</span>
+#### Changes in v0.2
 
 - Bands can link out to a URL defined in the base map (to allow users to
   click to view a region in a genome browser, for example).
@@ -173,7 +148,7 @@ provide appropriate alternative text/content as required).
 
   
 
-### <span id="Demos" class="mw-headline">Demos</span>
+### Demos
 
 Flash/Javascript interaction MouseOver Demos
 
@@ -182,7 +157,7 @@ There is a real live demo at
 class="external text" rel="nofollow">flashGViewer doc page on the GMOD
 blog site</a>.
 
-### <span id="Installation" class="mw-headline">Installation</span>
+### Installation
 
 Flash GViewer is available at <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=161280"
@@ -213,7 +188,7 @@ below.
 
   
 
-### <span id="Input_Parameters" class="mw-headline">Input Parameters</span>
+### Input Parameters
 
 These values are passed into the flash application (referred to as a SWF
 or "swiff" file, as it has a .swf suffix) via the `<object>` tag used to
@@ -349,7 +324,7 @@ with the ampersands delimiting the various FlashVars parameters.</p></td>
 
   
 
-### <span id="The_BaseMap" class="mw-headline">The BaseMap</span>
+### The BaseMap
 
 The baseMap file contains the data on the chromosome(s), their length,
 name, banding pattern and colors. A perl script is provided in the
@@ -464,7 +439,7 @@ indicate attributes of elements
 
   
 
-#### <span id="The_Base_Maps" class="mw-headline">The Base Maps</span>
+#### The Base Maps
 
 The following base maps are provided in the standard distribution.
 
@@ -497,7 +472,7 @@ rel="nofollow">UCSC Genome Browser</a> |
 
   
 
-### <span id="The_Annotation_Data" class="mw-headline">The Annotation Data</span>
+### The Annotation Data
 
 Flash GViewer can read annotation data in the XML format shown below
 from a static text file or dynamically from a server-side script. The
@@ -583,7 +558,7 @@ gene report when they click on a gene</td>
 
   
 
-### <span id="Web_Interface_.26_CGI_script" class="mw-headline">Web Interface & CGI script</span>
+### Web Interface & CGI script
 
 To allow users to upload their own features for display on GViewer, a
 simple web form is available that takes annotation from a text field or
@@ -666,7 +641,7 @@ this and could be pasted into the form or uploaded as a text file:
 
   
 
-### <span id="Javascript_-_Flash_Connectivity" class="mw-headline">Javascript - Flash Connectivity</span>
+### Javascript - Flash Connectivity
 
 It is possible to use javascript to control basic functions in the flash
 movie. This allows a higher degree of interactivity between the web
@@ -742,7 +717,7 @@ should make the highlight go away.
 
   
 
-### <span id="Known_Issues" class="mw-headline">Known Issues</span>
+### Known Issues
 
 - If you load many features (hundreds), Flash is probably going to start
   running slowly - I havent done any testing on this as it is rather
@@ -771,87 +746,6 @@ should make the highlight go away.
   provided or if it has no baseFile.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [RGD](Category%253ARGD "Category%253ARGD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Flash_GViewer_Documentation"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">62,208 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

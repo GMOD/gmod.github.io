@@ -1,27 +1,11 @@
 ---
 title: "GBrowse"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse</span>
-
-
-
+# GBrowse
 
 
 (Redirected from [Generic Genome
-Browser](Generic_Genome_Browser)
-
-
-
-
+Browser](/wiki/Generic_Genome_Browser)
 
 
 <img
@@ -30,15 +14,12 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="94" alt="GBrowse logo" />
 
 
-
 Status
-
 
 
 - Mature release
 - Development: inactive
 - Support: inactive
-
 
 
 Licence
@@ -50,20 +31,13 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 
-
 <a href="http://opensource.org/licenses/GPL-2.0" class="external text"
 rel="nofollow">GPL 2.0</a>,
 <a href="http://opensource.org/licenses/artistic-license-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
 
-
 Resources
-
-
-
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -325,85 +299,3 @@ title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fhap
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:47 on 10 April
-  2023.</span>
-<!-- - <span id="footer-info-viewcount">1,682,118 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

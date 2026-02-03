@@ -1,57 +1,33 @@
 ---
 title: "GBrowse Cygwin HOWTO"
 ---
+# GBrowse Cygwin HOWTO
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Cygwin HOWTO</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Abstract</span>](#Abstract)
-- [<span class="tocnumber">2</span> <span class="toctext">Installing
-  Cygwin</span>](#Installing_Cygwin)
-- [<span class="tocnumber">3</span> <span class="toctext">Preparing the
-  environment</span>](#Preparing_the_environment)
-- [<span class="tocnumber">4</span> <span class="toctext">Installing
-  GBrowse</span>](#Installing_GBrowse)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Rebaseall</span>](#Rebaseall)
-- [<span class="tocnumber">5</span> <span class="toctext">Configuring
-  and Running Apache</span>](#Configuring_and_Running_Apache)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Setting up
+  Abstract](#Abstract)
+- [Installing
+  Cygwin](#Installing_Cygwin)
+- [Preparing the
+  environment](#Preparing_the_environment)
+- [Installing
+  GBrowse](#Installing_GBrowse)
+  - [Rebaseall](#Rebaseall)
+- [Configuring
+  and Running Apache](#Configuring_and_Running_Apache)
+  - [Setting up
     Windows environment and
-    services</span>](#Setting_up_Windows_environment_and_services)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Start
-    Apache</span>](#Start_Apache)
+    services](#Setting_up_Windows_environment_and_services)
+  - [Start
+    Apache](#Start_Apache)
 
 
-
-## <span id="Abstract" class="mw-headline">Abstract</span>
+## Abstract
 
 Installing [GBrowse](GBrowse.1 "GBrowse") on Cygwin running on Windows.
 Note that this is quite old, and does not apply to GBrowse2, which has
 not been tested or tried on any Windows server.
 
-## <span id="Installing_Cygwin" class="mw-headline">Installing Cygwin</span>
+## Installing Cygwin
 
 <a href="http://cygwin.com" class="external text"
 rel="nofollow">Cygwin</a> is a Linux-like environment for Windows. It
@@ -79,7 +55,7 @@ necessary, however, identifying exactly what is needed is somewhat
 difficult, so it is easier just to get the full install. X11 can be left
 out to save some space.)
 
-## <span id="Preparing_the_environment" class="mw-headline">Preparing the environment</span>
+## Preparing the environment
 
 Cygwin created a home directory for you using your full name associated
 with your Windows account. Unfortunately, if there are any spaces in
@@ -100,7 +76,7 @@ Then you need to rename the home directory like this:
 Then you need to quit Cygwin and restart so that the changes take
 effect.
 
-## <span id="Installing_GBrowse" class="mw-headline">Installing GBrowse</span>
+## Installing GBrowse
 
 Download the net install script:
 
@@ -113,7 +89,7 @@ and run it:
 This will set up cpan if you haven't already done that before. It is
 generally safe to accept the defaults when asked questions.
 
-### <span id="Rebaseall" class="mw-headline">Rebaseall</span>
+### Rebaseall
 
 If during the installation, you see messages like
 
@@ -138,9 +114,9 @@ and then rebaseall:
 This will take a few minutes to run. When you are done, you can exit out
 of the ash shell, restart Cygwin and rerun the GBrowse netinstaller.
 
-## <span id="Configuring_and_Running_Apache" class="mw-headline">Configuring and Running Apache</span>
+## Configuring and Running Apache
 
-### <span id="Setting_up_Windows_environment_and_services" class="mw-headline">Setting up Windows environment and services</span>
+### Setting up Windows environment and services
 
 The Windows environment needs to be set up to allow Apache to run under
 Cygwin. First, run /usr/bin/cygserver-config. Answer yes to the question
@@ -157,96 +133,8 @@ the 'New' button and enter CYGWIN in variable name and 'server' for
 variable value. Now restart Windows to make sure the the environment
 variable and Windows server are both running.
 
-### <span id="Start_Apache" class="mw-headline">Start Apache</span>
+### Start Apache
 
 Finally, you can start Apache:
 
      /usr/sbin/apachectl2 start
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Windows](Category%253AWindows "Category%253AWindows")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Cygwin_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:38 on 4 May
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">56,842 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

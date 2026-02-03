@@ -1,42 +1,36 @@
 ---
 title: "Chado WWW Module"
 ---
-<span id="top"></span>
+# Chado WWW Module
 
-# <span dir="auto">Chado WWW Module</span>
+  Introduction](#Introduction)
+- [Tables](#Tables)
+  - [Table:
+    wwwuser](#Table:_wwwuser)
+  - [Table:
+    wwwuser_cvterm](#Table:_wwwuser_cvterm)
+  - [Table:
+    wwwuser_expression](#Table:_wwwuser_expression)
+  - [Table:
+    wwwuser_feature](#Table:_wwwuser_feature)
+  - [Table:
+    wwwuser_genotype](#Table:_wwwuser_genotype)
+  - [Table:
+    wwwuser_organism](#Table:_wwwuser_organism)
+  - [Table:
+    wwwuser_phenotype](#Table:_wwwuser_phenotype)
+  - [Table:
+    wwwuser_project](#Table:_wwwuser_project)
+  - [Table:
+    wwwuser_pub](#Table:_wwwuser_pub)
+  - [Table:
+    wwwuserrelationship](#Table:_wwwuserrelationship)
 
-## Contents
+# Introduction
 
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    wwwuser</span>](#Table:_wwwuser)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    wwwuser_cvterm</span>](#Table:_wwwuser_cvterm)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    wwwuser_expression</span>](#Table:_wwwuser_expression)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    wwwuser_feature</span>](#Table:_wwwuser_feature)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    wwwuser_genotype</span>](#Table:_wwwuser_genotype)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    wwwuser_organism</span>](#Table:_wwwuser_organism)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Table:
-    wwwuser_phenotype</span>](#Table:_wwwuser_phenotype)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Table:
-    wwwuser_project</span>](#Table:_wwwuser_project)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Table:
-    wwwuser_pub</span>](#Table:_wwwuser_pub)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Table:
-    wwwuserrelationship</span>](#Table:_wwwuserrelationship)
+# Tables
 
-# <span id="Introduction" class="mw-headline">Introduction</span>
-
-# <span id="Tables" class="mw-headline">Tables</span>
-
-## <span id="Table:_wwwuser" class="mw-headline">Table: wwwuser</span>
+## Table: wwwuser
 
 Keep track of WWW users. This may also be useful in an audit module at
 some point.
@@ -54,42 +48,18 @@ wwwuser Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [wwwuser_cvterm](Chado_Tables#Table:_wwwuser_cvterm "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_expression](Chado_Tables#Table:_wwwuser_expression "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_feature](Chado_Tables#Table:_wwwuser_feature "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_genotype](Chado_Tables#Table:_wwwuser_genotype "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_organism](Chado_Tables#Table:_wwwuser_organism "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_phenotype](Chado_Tables#Table:_wwwuser_phenotype "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_project](Chado_Tables#Table:_wwwuser_project "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_pub](Chado_Tables#Table:_wwwuser_pub "Chado Tables")
-
-<!-- -->
-
 - [wwwuserrelationship](Chado_Tables#Table:_wwwuserrelationship "Chado Tables")
 
 ---
 
-## <span id="Table:_wwwuser_cvterm" class="mw-headline">Table: wwwuser_cvterm</span>
+## Table: wwwuser_cvterm
 
 Track wwwuser interest in cvterms.
 
@@ -104,7 +74,7 @@ wwwuser_cvterm Structure
 
 ---
 
-## <span id="Table:_wwwuser_expression" class="mw-headline">Table: wwwuser_expression</span>
+## Table: wwwuser_expression
 
 Track wwwuser interest in expressions.
 
@@ -119,7 +89,7 @@ wwwuser_expression Structure
 
 ---
 
-## <span id="Table:_wwwuser_feature" class="mw-headline">Table: wwwuser_feature</span>
+## Table: wwwuser_feature
 
 Track wwwuser interest in features.
 
@@ -134,7 +104,7 @@ wwwuser_feature Structure
 
 ---
 
-## <span id="Table:_wwwuser_genotype" class="mw-headline">Table: wwwuser_genotype</span>
+## Table: wwwuser_genotype
 
 Track wwwuser interest in genotypes.
 
@@ -149,7 +119,7 @@ wwwuser_genotype Structure
 
 ---
 
-## <span id="Table:_wwwuser_organism" class="mw-headline">Table: wwwuser_organism</span>
+## Table: wwwuser_organism
 
 Track wwwuser interest in organisms.
 
@@ -164,7 +134,7 @@ wwwuser_organism Structure
 
 ---
 
-## <span id="Table:_wwwuser_phenotype" class="mw-headline">Table: wwwuser_phenotype</span>
+## Table: wwwuser_phenotype
 
 Track wwwuser interest in phenotypes.
 
@@ -179,7 +149,7 @@ wwwuser_phenotype Structure
 
 ---
 
-## <span id="Table:_wwwuser_project" class="mw-headline">Table: wwwuser_project</span>
+## Table: wwwuser_project
 
 Link wwwuser accounts to projects
 
@@ -194,7 +164,7 @@ wwwuser_project Structure
 
 ---
 
-## <span id="Table:_wwwuser_pub" class="mw-headline">Table: wwwuser_pub</span>
+## Table: wwwuser_pub
 
 Track wwwuser interest in publications.
 
@@ -209,7 +179,7 @@ wwwuser_pub Structure
 
 ---
 
-## <span id="Table:_wwwuserrelationship" class="mw-headline">Table: wwwuserrelationship</span>
+## Table: wwwuserrelationship
 
 Track wwwuser interest in other wwwusers.
 
@@ -221,51 +191,3 @@ Track wwwuser interest in other wwwusers.
 |                                                       | world_read             | smallint | _NOT NULL DEFAULT 1_ |
 
 wwwuserrelationship Structure
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_WWW_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:41 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">37,909 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

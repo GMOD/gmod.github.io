@@ -1,25 +1,7 @@
 ---
 title: "GBrowse Ubuntu HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Ubuntu HOWTO</span>
-
-
-
-
-
-
-
-
-
+# GBrowse Ubuntu HOWTO
 
 
 NOTE: As of the 11.10 release of Ubuntu, there is a .deb package for
@@ -32,7 +14,6 @@ ANOTHER NOTE: the current version of GBrowse in that deb package is
 fairly old (2.38 versus the current 2.55); below I'll outline using
 apt-get to get all of the prerequisites for GBrowse but use cpan to
 install GBrowse.
-
 
 
 To install GBrowse on a recent Ubuntu distribution, just do this:
@@ -52,32 +33,21 @@ The content below will be left in place for older distributions.
   
 
 - If you plan to use a MySQL database, you may need to install mysql
-
-<!-- -->
-
     sudo apt-get install mysql-server
 
 ------------------------------------------------------------------------
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using apt-get
   just to get the
   prereqs</span>](#Using_apt-get_just_to_get_the_prereqs)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">3</span> <span class="toctext">Installing
+- [Prerequisites](#Prerequisites)
+- [Installing
   GBrowse with the Net
-  Installer</span>](#Installing_GBrowse_with_the_Net_Installer)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Author</span>](#Author)
+  Installer](#Installing_GBrowse_with_the_Net_Installer)
+- [Author](#Author)
 
 
-
-## <span id="Using_apt-get_just_to_get_the_prereqs" class="mw-headline">Using apt-get just to get the prereqs</span>
+## Using apt-get just to get the prereqs
 
 If you execute this command:
 
@@ -131,9 +101,7 @@ and quickly since most of the prerequisites will have been installed by
 the above apt-get command.
 
 
-
 The information below is deprecated.
-
 
 
 [GBrowse](GBrowse.1 "GBrowse") does not have a .deb package, but many of
@@ -141,7 +109,7 @@ its prerequisites are distributed in this way. This document describes
 how to install GBrowse on Ubuntu and other Linux distributions that use
 the Debian packaging system.
 
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+# Prerequisites
 
 Install Apache and Apache-modperl
 
@@ -178,7 +146,7 @@ Install installer prereqs
      sudo apt-get install libarchive-tar-perl
      sudo apt-get install ncftp
 
-# <span id="Installing_GBrowse_with_the_Net_Installer" class="mw-headline">Installing GBrowse with the Net Installer</span>
+# Installing GBrowse with the Net Installer
 
 Get the netinstaller script from <a
 href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/bin/gbrowse_netinstall.pl"
@@ -201,98 +169,6 @@ example database at
 <a href="http://localhost/gbrowse" class="external free"
 rel="nofollow">http://localhost/gbrowse</a>.
 
-# <span id="Author" class="mw-headline">Author</span>
+# Author
 
 [Lincoln Stein](User%253ALstein "User%253ALstein") 12:36, 17 April 2007 (EDT)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Linux](Category%253ALinux "Category%253ALinux")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_Ubuntu_HOWTO" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Ubuntu_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:37 on 8 August
-  2018.</span>
-<!-- - <span id="footer-info-viewcount">162,054 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

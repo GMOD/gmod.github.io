@@ -1,23 +1,7 @@
 ---
 title: "Satellite Meetings - GMOD Americas 2011"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Satellite Meetings - GMOD Americas 2011</span>
-
-
-
-
-
-
-
+# Satellite Meetings - GMOD Americas 2011
 
 
   
@@ -40,22 +24,16 @@ a topic of interest to them. This is the third event that will have
 satellite meetings.
 
 
-## Contents
+  Topics](#Topics)
+- [Previous
+  Topics](#Previous_Topics)
+- [About
+  GMOD](#About_GMOD)
+- [Help Get the
+  Word Out](#Help_Get_the_Word_Out)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Topics</span>](#Topics)
-- [<span class="tocnumber">2</span> <span class="toctext">Previous
-  Topics</span>](#Previous_Topics)
-- [<span class="tocnumber">3</span> <span class="toctext">About
-  GMOD</span>](#About_GMOD)
-- [<span class="tocnumber">4</span> <span class="toctext">Help Get the
-  Word Out</span>](#Help_Get_the_Word_Out)
-
-
-
-## <span id="Topics" class="mw-headline">Topics</span>
+## Topics
 
 Topics for satellites are put forward by community members and GMOD
 staff. If you have a topic you would like to suggest please add it to
@@ -70,7 +48,7 @@ Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting").
 | [GMOD Web services toolkit](GMOD_RPC_API "GMOD RPC API") | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | Cancelled | ~~Come to work on or discuss the [GMOD Web services API and the toolkit](GMOD_RPC_API "GMOD RPC API").~~ |
 | [GMOD in the Sequencing Center](GMOD_in_the_Sequencing_Center "GMOD in the Sequencing Center") | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri"), [Dave Clements](User%253AClements "User%253AClements") | TBD | Sequencing centers have tremendous bioinformatics needs that GMOD can help address. Attend this satellite to find out what other sequencing centers are doing with GMOD, and how GMOD can help you help your researchers. |
 
-## <span id="Previous_Topics" class="mw-headline">Previous Topics</span>
+## Previous Topics
 
 Previous satellite topics include:
 
@@ -94,7 +72,7 @@ Previous satellite topics include:
   at the [January 2010 GMOD
   Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting")
 
-## <span id="About_GMOD" class="mw-headline">About GMOD</span>
+## About GMOD
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
@@ -116,7 +94,7 @@ data integration, management, and querying, and
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](ISGA "ISGA")) for data analysis.
 
-## <span id="Help_Get_the_Word_Out" class="mw-headline">Help Get the Word Out</span>
+## Help Get the Word Out
 
 <table>
 <colgroup>
@@ -146,84 +124,3 @@ alt="GMODAmericas2011FlierThumb.png" /></a></td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Satellite_Meetings_-2D_GMOD_Americas_2011"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:55 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">74,047 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

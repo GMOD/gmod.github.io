@@ -1,49 +1,24 @@
 ---
 title: "Using AWS S3 For JBrowse"
 ---
+# Using AWS S3 For JBrowse
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Using AWS S3 For JBrowse</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Why use S3 for
   JBbrowse?</span>](#Why_use_S3_for_JBbrowse.3F)
-- [<span class="tocnumber">2</span> <span class="toctext">Setting it up
+- [Setting it up
   with management
-  scripts</span>](#Setting_it_up_with_management_scripts)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">upload_to_S3.pl</span>](#upload_to_S3.pl)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">upload_jbrowse_static.pl</span>](#upload_jbrowse_static.pl)
-- [<span class="tocnumber">3</span> <span class="toctext">S3 for all of
-  JBrowse</span>](#S3_for_all_of_JBrowse)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Build
-    pattern</span>](#Build_pattern)
-- [<span class="tocnumber">4</span> <span class="toctext">Storing just
-  track data on S3</span>](#Storing_just_track_data_on_S3)
+  scripts](#Setting_it_up_with_management_scripts)
+  - [upload_to_S3.pl](#upload_to_S3.pl)
+  - [upload_jbrowse_static.pl](#upload_jbrowse_static.pl)
+- [S3 for all of
+  JBrowse](#S3_for_all_of_JBrowse)
+  - [Build
+    pattern](#Build_pattern)
+- [Storing just
+  track data on S3](#Storing_just_track_data_on_S3)
 
 
-
-## <span id="Why_use_S3_for_JBbrowse.3F" class="mw-headline">Why use S3 for JBbrowse?</span>
+## Why use S3 for JBbrowse?
 
 <a href="https://aws.amazon.com/s3/" class="external text"
 rel="nofollow">Amazon Web Services’ S3</a> object storage service can be
@@ -74,7 +49,7 @@ For the commands here to work, you must install the
 rel="nofollow">AWS command line interface</a> and have it properly
 configured with keys that will allow the movement of data into S3.
 
-## <span id="Setting_it_up_with_management_scripts" class="mw-headline">Setting it up with management scripts</span>
+## Setting it up with management scripts
 
 We wrote two management scripts to make setting up JBrowse on S3 easier
 for a related project. The scripts are in <a
@@ -82,7 +57,7 @@ href="https://github.com/alliance-genome/jbrowse-config/tree/master/scripts"
 class="external text" rel="nofollow">GitHub for the Alliance of Genome
 Resources project</a>. There are two scripts:
 
-### <span id="upload_to_S3.pl" class="mw-headline">upload_to_S3.pl</span>
+### upload_to_S3.pl
 
 This script copies the data associated with tracks to S3. Specifically,
 it copies the tracks/, names/, and seq/ directories, as well as
@@ -120,7 +95,7 @@ A few notes:
     JBrowse to be served from the same bucket, this dummy file will be
     overwritten by JBrowse's index.html file.
 
-### <span id="upload_jbrowse_static.pl" class="mw-headline">upload_jbrowse_static.pl</span>
+### upload_jbrowse_static.pl
 
 Options:
 
@@ -139,7 +114,7 @@ Notes:
 2.  CORS
 3.  no-cache
 
-## <span id="S3_for_all_of_JBrowse" class="mw-headline">S3 for all of JBrowse</span>
+## S3 for all of JBrowse
 
 Since JBowse is entirely a client side application and is only serving
 static content (CSS, JavaScript, json and binary files), S3 can be
@@ -148,7 +123,7 @@ of S3 as for just storing your track data, but the GET fees are an even
 bigger consideration (because there are more GETs per view), where those
 fees will depend quite a bit on your community's usage patterns.
 
-### <span id="Build_pattern" class="mw-headline">Build pattern</span>
+### Build pattern
 
 To use S3 as the JBrowse server, you'll have to build on another machine
 and then transfer the files to S3 after everything is configured
@@ -198,7 +173,7 @@ steps that are used when just storing JBrowse data on S3 (modifying the
 urlTemplate attribute in the track configurations and setting CORS) are
 not required since JBrowse files are all coming from the same server.
 
-## <span id="Storing_just_track_data_on_S3" class="mw-headline">Storing just track data on S3</span>
+## Storing just track data on S3
 
 When data are copied to S3, it needs to be made publicly readable as
 well as setting the Content-Encoding metadata to “gzip” for compressed
@@ -274,87 +249,4 @@ After making this change to your trackList.json file, a reload of
 JBrowse will have it pulling track data from S3.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Using_AWS_S3_For_JBrowse"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:12 on 4 May
-  2017.</span>
-<!-- - <span id="footer-info-viewcount">15,846 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

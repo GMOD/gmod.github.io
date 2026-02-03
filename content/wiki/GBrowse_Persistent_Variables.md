@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Persistent Variables"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Persistent Variables</span>
-
-
-
-
-
-
-
+# GBrowse Persistent Variables
 
 
 [GBrowse](GBrowse.1 "GBrowse") uses a few persistent variables to store
@@ -25,22 +9,14 @@ data for a user. The following is an explanation of the structure of the
 commonly-used ones:
 
 
-## Contents
+  Session](#Session)
+- [State](#State)
+- [Querying the
+  State Variable](#Querying_the_State_Variable)
+- [Globals](#Globals)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Session</span>](#Session)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">State</span>](#State)
-- [<span class="tocnumber">3</span> <span class="toctext">Querying the
-  State Variable</span>](#Querying_the_State_Variable)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Globals</span>](#Globals)
-
-
-
-# <span id="Session" class="mw-headline">Session</span>
+# Session
 
 **\$session** is a blessed Browser2::Session object containing
 information regarding the current user's session. It contains the
@@ -66,7 +42,7 @@ following key-\>value pairs:
         - **page_settings** *\[hash\]* - The page settings, as stored in
           \$state
 
-# <span id="State" class="mw-headline">State</span>
+# State
 
 **\$state** is a large hash containing information regarding the current
 configured state of the browser (hence the name). It contains the
@@ -126,7 +102,7 @@ following key-\>value pairs:
     images.
   - **start** *\[number\]* - 98000'
 
-# <span id="Querying_the_State_Variable" class="mw-headline">Querying the State Variable</span>
+# Querying the State Variable
 
 To query the value of your state variables, copy and paste the [Named
 Subroutines](GBrowse_2.0_HOWTO#Named_Subroutine_References "GBrowse 2.0 HOWTO")
@@ -183,13 +159,7 @@ subroutine queryStateVariables, assigning the return value to one of the
 html variables.
 
 
-
-
-
-
 Displaying the values of the \$state variable
-
-
 
 
     #include "path/to/init_code.conf"
@@ -210,99 +180,14 @@ subroutines to do more specific things. After you are finished querying
 the contents of the state variable, you can remove the reference to the
 subroutine so that the main GBrowse page appears normally.
 
-# <span id="Globals" class="mw-headline">Globals</span>
+# Globals
 
 **\$globals** is essentially an object containing the
 <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse.conf</a> file.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse
   Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_Persistent_Variables" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Persistent_Variables"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:06 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">91,176 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

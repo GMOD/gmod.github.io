@@ -1,49 +1,22 @@
 ---
 title: "Store an unigene in Chado HOWTO"
 ---
+# Store an unigene in Chado HOWTO
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Store an unigene in Chado HOWTO</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">How to store
   an unigene in a Chado
   database</span>](#How_to_store_an_unigene_in_a_Chado_database)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Chado
-    layout</span>](#Chado_layout)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Analysis</span>](#Analysis)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">ESTs</span>](#ESTs)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Unigene</span>](#Unigene)
-      - [<span class="tocnumber">1.1.3.1</span>
-        <span class="toctext">Note</span>](#Note)
-    - [<span class="tocnumber">1.1.4</span> <span class="toctext">ESTs
-      and assembly alignments</span>](#ESTs_and_assembly_alignments)
+  - [Chado
+    layout](#Chado_layout)
+    - [Analysis](#Analysis)
+    - [ESTs](#ESTs)
+    - [Unigene](#Unigene)
+      - [Note](#Note)
+    - [ESTs
+      and assembly alignments](#ESTs_and_assembly_alignments)
 
 
-
-# <span id="How_to_store_an_unigene_in_a_Chado_database" class="mw-headline">How to store an unigene in a Chado database</span>
+# How to store an unigene in a Chado database
 
 We have an EST set. We have done a clustering and an assembly, so we
 have now a set of contigs (assemblies composed by more than one EST) and
@@ -70,7 +43,7 @@ the same gene or expressed pseudogene.').
 The sequence assembly consensus exists is represented as de residues in
 the transcribed_cluster feature.
 
-## <span id="Chado_layout" class="mw-headline">Chado layout</span>
+## Chado layout
 
 Let's store an unigene in the database:
 
@@ -91,7 +64,7 @@ We have to store several items in the chado database:
     unigene cluster)
 5.  The alignments between each EST and the consensus.
 
-### <span id="Analysis" class="mw-headline">Analysis</span>
+### Analysis
 
 The analysis is stored in the [analysis
 table](Chado_Tables#Table:_analysis "Chado Tables"):
@@ -107,7 +80,7 @@ table](Chado_Tables#Table:_analysis "Chado Tables"):
 - **programversion**:
 - **algorithm**:
 
-### <span id="ESTs" class="mw-headline">ESTs</span>
+### ESTs
 
 Each EST is stored in the [feature
 table](Chado_Tables#Table:_feature "Chado Tables").
@@ -126,7 +99,7 @@ table](Chado_Tables#Table:_feature "Chado Tables").
 | CMV:EST001 | organism id | EST001 | CMV:EST001 | SO:345 id | False       |
 | CMV:EST002 | organism id | EST002 | CMV:EST002 | SO:345 id | False       |
 
-### <span id="Unigene" class="mw-headline">Unigene</span>
+### Unigene
 
 The unigene is the set of ESTs and the consensus. It is represented by a
 feature and by a feature graph. This graph defines which ESTs and
@@ -149,7 +122,7 @@ The feature relationships (feature graph).
 | EST001 id  | UNI001 id | part_of id | 0    |
 | EST002 id  | UNI000 id | part_of id | 0    |
 
-#### <span id="Note" class="mw-headline">Note</span>
+#### Note
 
 A unigene_cluster is a subtype of transcribed_cluster and represents a
 specific clustering methodology used by the NCBI to produce UniGenes
@@ -158,7 +131,7 @@ rel="nofollow">http://www.ncbi.nlm.nih.gov/unigene</a>). If the
 clustering algorithm used was not Unigene you would use
 transcribed_cluster.
 
-### <span id="ESTs_and_assembly_alignments" class="mw-headline">ESTs and assembly alignments</span>
+### ESTs and assembly alignments
 
 The ESTs are all aligned with the assembly consensus. For each EST there
 is an alignment. For each alignment there is:
@@ -195,90 +168,3 @@ The alignment coordinates are stored in two featurelocs in the
 | CMV:UNI001_EST1 id | EST001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 |
 | CMV:UNI001_EST2 id | UNI001 id | leftmost boundary | rightmost boundary | strand | CIGAR | 0 |
 | CMV:UNI001_EST2 id | EST002 id | leftmost boundary | rightmost boundary | strand | CIGAR | 1 |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Store_an_unigene_in_Chado_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:42 on 22 May
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">13,954 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,24 +1,7 @@
 ---
 title: "2012 GMOD Summer School"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2012 GMOD Summer School</span>
-
-
-
-
-
-
-
-
+# 2012 GMOD Summer School
 
 
 <img
@@ -45,7 +28,7 @@ width="800" height="445"
 alt="Students and tutors from the 2012 GMOD Summer School" />
 
 
-## <span id="The_Course" class="mw-headline">The Course</span>
+## The Course
 
 A 5 day hands-on course on GMOD component installation, configuration,
 and usage. Most sessions were four hours (a half day), and the evenings
@@ -188,7 +171,7 @@ title="WebApollo">WebApollo</a></td>
 </tbody>
 </table>
 
-## <span id="Course_Work" class="mw-headline">Course Work</span>
+## Course Work
 
 The 2012 Summer School used Amazon Web Services to host virtual GMOD
 instances containing the software and demo data used during the course.
@@ -197,15 +180,13 @@ GMOD Amazon Machine Images available to the public. The tutorials used
 on the course are available on this wiki for interested persons to work
 through.
 
-## <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+## Sponsors
 
 
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 
 GMOD thanks the <a href="http://nescent.org" class="external text"
@@ -220,95 +201,3 @@ GMOD thanks the generous grant from the Amazon
 <a href="http://aws.amazon.com/grants/" class="external text"
 rel="nofollow">AWS in Education program</a>, which provided free compute
 time on Amazon Web Services for the course tutors and participants.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2012_GMOD_Summer_School" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:09 on 8 January
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">139,465 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

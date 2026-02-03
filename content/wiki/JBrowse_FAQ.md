@@ -1,23 +1,7 @@
 ---
 title: "JBrowse FAQ"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse FAQ</span>
-
-
-
-
-
-
-
+# JBrowse FAQ
 
 
 Some frequently asked questions, and some hypothetical ones for fun
@@ -29,296 +13,283 @@ for more details
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Setup</span>](#Setup)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">How do I
+  Setup](#Setup)
+  - [How do I
     get started with installing
-    JBrowse?</span>](#How_do_I_get_started_with_installing_JBrowse.3F)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">How do I
+    JBrowse?](#How_do_I_get_started_with_installing_JBrowse.3F)
+  - [How do I
     load my genome as a FASTA
-    file?</span>](#How_do_I_load_my_genome_as_a_FASTA_file.3F)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">How do I
-    setup a GFF track?</span>](#How_do_I_setup_a_GFF_track.3F)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">How do I
-    set up a BAM file?</span>](#How_do_I_set_up_a_BAM_file.3F)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">How do I
-    set up a BigWig file?</span>](#How_do_I_set_up_a_BigWig_file.3F)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">How do I
-    set up a VCF file?</span>](#How_do_I_set_up_a_VCF_file.3F)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">How do I
+    file?](#How_do_I_load_my_genome_as_a_FASTA_file.3F)
+  - [How do I
+    setup a GFF track?](#How_do_I_setup_a_GFF_track.3F)
+  - [How do I
+    set up a BAM file?](#How_do_I_set_up_a_BAM_file.3F)
+  - [How do I
+    set up a BigWig file?](#How_do_I_set_up_a_BigWig_file.3F)
+  - [How do I
+    set up a VCF file?](#How_do_I_set_up_a_VCF_file.3F)
+  - [How do I
     get IndexedFasta track to work in
-    JBrowse</span>](#How_do_I_get_IndexedFasta_track_to_work_in_JBrowse)
-- [<span class="tocnumber">2</span> <span class="toctext">General
-  information</span>](#General_information)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">What
+    JBrowse](#How_do_I_get_IndexedFasta_track_to_work_in_JBrowse)
+- [General
+  information](#General_information)
+  - [What
     webserver is needed for
-    JBrowse</span>](#What_webserver_is_needed_for_JBrowse)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">What is
+    JBrowse](#What_webserver_is_needed_for_JBrowse)
+  - [What is
     the difference between JBrowse-1.12.1.zip and
-    JBrowse-1.12.1-dev.zip?</span>](#What_is_the_difference_between_JBrowse-1.12.1.zip_and_JBrowse-1.12.1-dev.zip.3F)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">How do I
+    JBrowse-1.12.1-dev.zip?](#What_is_the_difference_between_JBrowse-1.12.1.zip_and_JBrowse-1.12.1-dev.zip.3F)
+  - [How do I
     run the code using the github
-    clone</span>](#How_do_I_run_the_code_using_the_github_clone)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">What are
+    clone](#How_do_I_run_the_code_using_the_github_clone)
+  - [What are
     the different config file
-    formats?</span>](#What_are_the_different_config_file_formats.3F)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">What type
+    formats?](#What_are_the_different_config_file_formats.3F)
+  - [What type
     of coordinate system does JBrowse
-    use</span>](#What_type_of_coordinate_system_does_JBrowse_use)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">What is
+    use](#What_type_of_coordinate_system_does_JBrowse_use)
+  - [What is
     the difference between CanvasFeatures and
-    HTMLFeatures?</span>](#What_is_the_difference_between_CanvasFeatures_and_HTMLFeatures.3F)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">What is a
-    glyph?</span>](#What_is_a_glyph.3F)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">What does
-    generate-names.pl do?</span>](#What_does_generate-names.pl_do.3F)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">What is
+    HTMLFeatures?](#What_is_the_difference_between_CanvasFeatures_and_HTMLFeatures.3F)
+  - [What is a
+    glyph?](#What_is_a_glyph.3F)
+  - [What does
+    generate-names.pl do?](#What_does_generate-names.pl_do.3F)
+  - [What is
     the "label" in trackList.json and what is the
-    key?</span>](#What_is_the_.22label.22_in_trackList.json_and_what_is_the_key.3F)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">How do I
+    key?](#What_is_the_.22label.22_in_trackList.json_and_what_is_the_key.3F)
+  - [How do I
     search for a feature in
-    JBrowse</span>](#How_do_I_search_for_a_feature_in_JBrowse)
-  - [<span class="tocnumber">2.11</span> <span class="toctext">How do I
+    JBrowse](#How_do_I_search_for_a_feature_in_JBrowse)
+  - [How do I
     get full text descriptions to be
-    searched?</span>](#How_do_I_get_full_text_descriptions_to_be_searched.3F)
-  - [<span class="tocnumber">2.12</span> <span class="toctext">How do I
+    searched?](#How_do_I_get_full_text_descriptions_to_be_searched.3F)
+  - [How do I
     set up multiple genomes in a single jbrowse
-    instance?</span>](#How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F)
-  - [<span class="tocnumber">2.13</span> <span class="toctext">What is
-    the dataset selector</span>](#What_is_the_dataset_selector)
-  - [<span class="tocnumber">2.14</span> <span class="toctext">How do I
+    instance?](#How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F)
+  - [What is
+    the dataset selector](#What_is_the_dataset_selector)
+  - [How do I
     change the name that is displayed on my
-    features</span>](#How_do_I_change_the_name_that_is_displayed_on_my_features)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Customization</span>](#Customization)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">How do I
+    features](#How_do_I_change_the_name_that_is_displayed_on_my_features)
+- [Customization](#Customization)
+  - [How do I
     customize feature colors (with
-    CanvasFeatures)</span>](#How_do_I_customize_feature_colors_.28with_CanvasFeatures.29)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">How do I
+    CanvasFeatures)](#How_do_I_customize_feature_colors_.28with_CanvasFeatures.29)
+  - [How do I
     add a legend to the track in the "About this track"
-    dialog?</span>](#How_do_I_add_a_legend_to_the_track_in_the_.22About_this_track.22_dialog.3F)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">How do I
+    dialog?](#How_do_I_add_a_legend_to_the_track_in_the_.22About_this_track.22_dialog.3F)
+  - [How do I
     customize the dialog boxes for the
-    features?</span>](#How_do_I_customize_the_dialog_boxes_for_the_features.3F)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">How do I
+    features?](#How_do_I_customize_the_dialog_boxes_for_the_features.3F)
+  - [How do I
     customize the main menu
-    bar</span>](#How_do_I_customize_the_main_menu_bar)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">How do I
+    bar](#How_do_I_customize_the_main_menu_bar)
+  - [How do I
     customize the "track menu" on a
-    track?</span>](#How_do_I_customize_the_.22track_menu.22_on_a_track.3F)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">How do I
+    track?](#How_do_I_customize_the_.22track_menu.22_on_a_track.3F)
+  - [How do I
     customize the right-click menus on
-    features</span>](#How_do_I_customize_the_right-click_menus_on_features)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">How do I
+    features](#How_do_I_customize_the_right-click_menus_on_features)
+  - [How do I
     access data about my features in my callback or
-    plugin</span>](#How_do_I_access_data_about_my_features_in_my_callback_or_plugin)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">How to get
+    plugin](#How_do_I_access_data_about_my_features_in_my_callback_or_plugin)
+  - [How to get
     default tracks to display every time a user opens the
-    browser?</span>](#How_to_get_default_tracks_to_display_every_time_a_user_opens_the_browser.3F)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">How can I
-    embed JBrowse on a page</span>](#How_can_I_embed_JBrowse_on_a_page)
-  - [<span class="tocnumber">3.10</span> <span class="toctext">Can I
+    browser?](#How_to_get_default_tracks_to_display_every_time_a_user_opens_the_browser.3F)
+  - [How can I
+    embed JBrowse on a page](#How_can_I_embed_JBrowse_on_a_page)
+  - [Can I
     change the color of bases in the Sequence/Alignments2/SNPCoverage
-    tracks?</span>](#Can_I_change_the_color_of_bases_in_the_Sequence.2FAlignments2.2FSNPCoverage_tracks.3F)
-  - [<span class="tocnumber">3.11</span> <span class="toctext">How can I
+    tracks?](#Can_I_change_the_color_of_bases_in_the_Sequence.2FAlignments2.2FSNPCoverage_tracks.3F)
+  - [How can I
     link BLAST results to
-    JBrowse</span>](#How_can_I_link_BLAST_results_to_JBrowse)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Other</span>](#Other)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Can I get
+    JBrowse](#How_can_I_link_BLAST_results_to_JBrowse)
+- [Other](#Other)
+  - [Can I get
     started with JBrowse without all the fuss of setup.sh and
-    what-not</span>](#Can_I_get_started_with_JBrowse_without_all_the_fuss_of_setup.sh_and_what-not)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Can I
+    what-not](#Can_I_get_started_with_JBrowse_without_all_the_fuss_of_setup.sh_and_what-not)
+  - [Can I
     install the perl packages using
-    cpanm?</span>](#Can_I_install_the_perl_packages_using_cpanm.3F)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Why does
+    cpanm?](#Can_I_install_the_perl_packages_using_cpanm.3F)
+  - [Why does
     my trackList.json contain "className" (even on
-    CanvasFeatures?)</span>](#Why_does_my_trackList.json_contain_.22className.22_.28even_on_CanvasFeatures.3F.29)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">How do I
+    CanvasFeatures?)](#Why_does_my_trackList.json_contain_.22className.22_.28even_on_CanvasFeatures.3F.29)
+  - [How do I
     create a Tabix indexed
-    GFF</span>](#How_do_I_create_a_Tabix_indexed_GFF)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">How do I
-    create a Indexed FASTA?</span>](#How_do_I_create_a_Indexed_FASTA.3F)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Optimizations</span>](#Optimizations)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Can I
+    GFF](#How_do_I_create_a_Tabix_indexed_GFF)
+  - [How do I
+    create a Indexed FASTA?](#How_do_I_create_a_Indexed_FASTA.3F)
+- [Optimizations](#Optimizations)
+  - [Can I
     speed up JBrowse load time with VCF and BAM
-    files</span>](#Can_I_speed_up_JBrowse_load_time_with_VCF_and_BAM_files)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Can I add
+    files](#Can_I_speed_up_JBrowse_load_time_with_VCF_and_BAM_files)
+  - [Can I add
     a loading bar while JBrowse is starting
-    up?</span>](#Can_I_add_a_loading_bar_while_JBrowse_is_starting_up.3F)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Can I
+    up?](#Can_I_add_a_loading_bar_while_JBrowse_is_starting_up.3F)
+  - [Can I
     speed up
-    generate-names.pl?</span>](#Can_I_speed_up_generate-names.pl.3F)
-- [<span class="tocnumber">6</span> <span class="toctext">Track selector
-  customization</span>](#Track_selector_customization)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">How do I
+    generate-names.pl?](#Can_I_speed_up_generate-names.pl.3F)
+- [Track selector
+  customization](#Track_selector_customization)
+  - [How do I
     add categories to the Hierarchical data
-    selector?</span>](#How_do_I_add_categories_to_the_Hierarchical_data_selector.3F)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">How do I
+    selector?](#How_do_I_add_categories_to_the_Hierarchical_data_selector.3F)
+  - [How do I
     collapse categories in the Hierarchical data selector by
-    default?</span>](#How_do_I_collapse_categories_in_the_Hierarchical_data_selector_by_default.3F)
-- [<span class="tocnumber">7</span> <span class="toctext">Data loading
-  tips</span>](#Data_loading_tips)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">How can I
+    default?](#How_do_I_collapse_categories_in_the_Hierarchical_data_selector_by_default.3F)
+- [Data loading
+  tips](#Data_loading_tips)
+  - [How can I
     only load a specific type of feature from my GFF
-    file?</span>](#How_can_I_only_load_a_specific_type_of_feature_from_my_GFF_file.3F)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">What if I
+    file?](#How_can_I_only_load_a_specific_type_of_feature_from_my_GFF_file.3F)
+  - [What if I
     dont want to load the sequence data for the genome, but I want to
     display the
-    features?</span>](#What_if_I_dont_want_to_load_the_sequence_data_for_the_genome.2C_but_I_want_to_display_the_features.3F)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Plugins</span>](#Plugins)
-  - [<span class="tocnumber">8.1</span> <span class="toctext">How do I
-    install a plugin</span>](#How_do_I_install_a_plugin)
-    - [<span class="tocnumber">8.1.1</span>
-      <span class="toctext">Important note</span>](#Important_note)
-    - [<span class="tocnumber">8.1.2</span>
-      <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">8.2</span> <span class="toctext">Can I
+    features?](#What_if_I_dont_want_to_load_the_sequence_data_for_the_genome.2C_but_I_want_to_display_the_features.3F)
+- [Plugins](#Plugins)
+  - [How do I
+    install a plugin](#How_do_I_install_a_plugin)
+    - [Important note](#Important_note)
+    - [Configuration](#Configuration)
+  - [Can I
     create an adaptor for an existing web
-    service?</span>](#Can_I_create_an_adaptor_for_an_existing_web_service.3F)
-  - [<span class="tocnumber">8.3</span> <span class="toctext">What is a
-    plugin useful for?</span>](#What_is_a_plugin_useful_for.3F)
-  - [<span class="tocnumber">8.4</span> <span class="toctext">What
+    service?](#Can_I_create_an_adaptor_for_an_existing_web_service.3F)
+  - [What is a
+    plugin useful for?](#What_is_a_plugin_useful_for.3F)
+  - [What
     background should I have for creating a
-    plugin</span>](#What_background_should_I_have_for_creating_a_plugin)
-  - [<span class="tocnumber">8.5</span> <span class="toctext">How do I
-    create a plugin?</span>](#How_do_I_create_a_plugin.3F)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">Troubleshooting</span>](#Troubleshooting)
-  - [<span class="tocnumber">9.1</span> <span class="toctext">Setup.sh
+    plugin](#What_background_should_I_have_for_creating_a_plugin)
+  - [How do I
+    create a plugin?](#How_do_I_create_a_plugin.3F)
+- [Troubleshooting](#Troubleshooting)
+  - [Setup.sh
     "Installing perl prerequisites" fails for me,
-    why?</span>](#Setup.sh_.22Installing_perl_prerequisites.22_fails_for_me.2C_why.3F)
-  - [<span class="tocnumber">9.2</span> <span class="toctext">Should I
+    why?](#Setup.sh_.22Installing_perl_prerequisites.22_fails_for_me.2C_why.3F)
+  - [Should I
     be worried about the error "Building and installing legacy wiggle
     format (superseded by BigWig
-    tracks)...failed"?</span>](#Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superseded_by_BigWig_tracks.29...failed.22.3F)
-  - [<span class="tocnumber">9.3</span> <span class="toctext">I see a
+    tracks)...failed"?](#Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superseded_by_BigWig_tracks.29...failed.22.3F)
+  - [I see a
     message that says "Congratulations, JBrowse is on the web" but I
     don't see my
-    genome</span>](#I_see_a_message_that_says_.22Congratulations.2C_JBrowse_is_on_the_web.22_but_I_don.27t_see_my_genome)
-  - [<span class="tocnumber">9.4</span> <span class="toctext">What is
+    genome](#I_see_a_message_that_says_.22Congratulations.2C_JBrowse_is_on_the_web.22_but_I_don.27t_see_my_genome)
+  - [What is
     this error during setup.sh "No such file or directory at
     /loader/0x13517b30/App/cpanminus/script.pm line
-    224."</span>](#What_is_this_error_during_setup.sh_.22No_such_file_or_directory_at_.2Floader.2F0x13517b30.2FApp.2Fcpanminus.2Fscript.pm_line_224..22)
-  - [<span class="tocnumber">9.5</span> <span class="toctext">What is
+    224."](#What_is_this_error_during_setup.sh_.22No_such_file_or_directory_at_.2Floader.2F0x13517b30.2FApp.2Fcpanminus.2Fscript.pm_line_224..22)
+  - [What is
     "Integer overflow
-    error"?</span>](#What_is_.22Integer_overflow_error.22.3F)
-  - [<span class="tocnumber">9.6</span> <span class="toctext">Why do I
+    error"?](#What_is_.22Integer_overflow_error.22.3F)
+  - [Why do I
     get a popup saying "Error reading from name
-    store"?</span>](#Why_do_I_get_a_popup_saying_.22Error_reading_from_name_store.22.3F)
-  - [<span class="tocnumber">9.7</span> <span class="toctext">What is
+    store"?](#Why_do_I_get_a_popup_saying_.22Error_reading_from_name_store.22.3F)
+  - [What is
     this error message "Argument isn't numeric in addition (+)" loading
-    GFF3?</span>](#What_is_this_error_message_.22Argument_isn.27t_numeric_in_addition_.28.2B.29.22_loading_GFF3.3F)
-  - [<span class="tocnumber">9.8</span> <span class="toctext">It keeps
+    GFF3?](#What_is_this_error_message_.22Argument_isn.27t_numeric_in_addition_.28.2B.29.22_loading_GFF3.3F)
+  - [It keeps
     showing "too much data" on my track. How do I fix it and make my
     track
-    display?</span>](#It_keeps_showing_.22too_much_data.22_on_my_track._How_do_I_fix_it_and_make_my_track_display.3F)
-  - [<span class="tocnumber">9.9</span> <span class="toctext">I get the
+    display?](#It_keeps_showing_.22too_much_data.22_on_my_track._How_do_I_fix_it_and_make_my_track_display.3F)
+  - [I get the
     error "Too much data...chunk size xxxxx exceeds
-    chunkSizeLimit"</span>](#I_get_the_error_.22Too_much_data...chunk_size_xxxxx_exceeds_chunkSizeLimit.22)
-  - [<span class="tocnumber">9.10</span> <span class="toctext">I set a
+    chunkSizeLimit"](#I_get_the_error_.22Too_much_data...chunk_size_xxxxx_exceeds_chunkSizeLimit.22)
+  - [I set a
     value in my config file but it isn't working. Why
-    not?</span>](#I_set_a_value_in_my_config_file_but_it_isn.27t_working._Why_not.3F)
-  - [<span class="tocnumber">9.11</span> <span class="toctext">I get the
+    not?](#I_set_a_value_in_my_config_file_but_it_isn.27t_working._Why_not.3F)
+  - [I get the
     error "Too many open files opening bucket log" with
-    generate-names.pl</span>](#I_get_the_error_.22Too_many_open_files_opening_bucket_log.22_with_generate-names.pl)
-  - [<span class="tocnumber">9.12</span> <span class="toctext">How do I
+    generate-names.pl](#I_get_the_error_.22Too_many_open_files_opening_bucket_log.22_with_generate-names.pl)
+  - [How do I
     fix the "Not a BAM file"
-    issue?</span>](#How_do_I_fix_the_.22Not_a_BAM_file.22_issue.3F)
-  - [<span class="tocnumber">9.13</span> <span class="toctext">What is
+    issue?](#How_do_I_fix_the_.22Not_a_BAM_file.22_issue.3F)
+  - [What is
     the error "invalid BGZF header" on my VCF
-    files?</span>](#What_is_the_error_.22invalid_BGZF_header.22_on_my_VCF_files.3F)
-  - [<span class="tocnumber">9.14</span> <span class="toctext">My track
+    files?](#What_is_the_error_.22invalid_BGZF_header.22_on_my_VCF_files.3F)
+  - [My track
     doesn't display the gene names, but I expected it to. Why
-    not?</span>](#My_track_doesn.27t_display_the_gene_names.2C_but_I_expected_it_to._Why_not.3F)
-  - [<span class="tocnumber">9.15</span> <span class="toctext">Why does
+    not?](#My_track_doesn.27t_display_the_gene_names.2C_but_I_expected_it_to._Why_not.3F)
+  - [Why does
     my track keep saying
-    "Loading"?</span>](#Why_does_my_track_keep_saying_.22Loading.22.3F)
-  - [<span class="tocnumber">9.16</span> <span class="toctext">My
+    "Loading"?](#Why_does_my_track_keep_saying_.22Loading.22.3F)
+  - [My
     CanvasFeatures don't show up with subfeatures, why
-    not?</span>](#My_CanvasFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F)
-  - [<span class="tocnumber">9.17</span> <span class="toctext">My
+    not?](#My_CanvasFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F)
+  - [My
     HTMLFeatures don't show up with subfeatures, why
-    not?</span>](#My_HTMLFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F)
-  - [<span class="tocnumber">9.18</span> <span class="toctext">Why are
+    not?](#My_HTMLFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F)
+  - [Why are
     my subfeatures being displayed as separate
-    features?</span>](#Why_are_my_subfeatures_being_displayed_as_separate_features.3F)
-  - [<span class="tocnumber">9.19</span> <span class="toctext">I get the
+    features?](#Why_are_my_subfeatures_being_displayed_as_separate_features.3F)
+  - [I get the
     error "Building and installing legacy bam-to-json.pl support
     (superseded by direct BAM tracks) ...
-    failed"</span>](#I_get_the_error_.22Building_and_installing_legacy_bam-to-json.pl_support_.28superseded_by_direct_BAM_tracks.29_..._failed.22)
-  - [<span class="tocnumber">9.20</span> <span class="toctext">After I
+    failed"](#I_get_the_error_.22Building_and_installing_legacy_bam-to-json.pl_support_.28superseded_by_direct_BAM_tracks.29_..._failed.22)
+  - [After I
     load my track it appears in the tracklist, but the track appears
-    empty</span>](#After_I_load_my_track_it_appears_in_the_tracklist.2C_but_the_track_appears_empty)
-  - [<span class="tocnumber">9.21</span> <span class="toctext">My BigWig
+    empty](#After_I_load_my_track_it_appears_in_the_tracklist.2C_but_the_track_appears_empty)
+  - [My BigWig
     file is producing an error related to DataView or
-    jDataView</span>](#My_BigWig_file_is_producing_an_error_related_to_DataView_or_jDataView)
-- [<span class="tocnumber">10</span> <span class="toctext">Tips and
-  tricks</span>](#Tips_and_tricks)
-  - [<span class="tocnumber">10.1</span> <span class="toctext">How can I
+    jDataView](#My_BigWig_file_is_producing_an_error_related_to_DataView_or_jDataView)
+- [Tips and
+  tricks](#Tips_and_tricks)
+  - [How can I
     get jbrowse to update the URL of a parent page when jbrowse is
     inside of an
-    iframe</span>](#How_can_I_get_jbrowse_to_update_the_URL_of_a_parent_page_when_jbrowse_is_inside_of_an_iframe)
-  - [<span class="tocnumber">10.2</span> <span class="toctext">Can I use
+    iframe](#How_can_I_get_jbrowse_to_update_the_URL_of_a_parent_page_when_jbrowse_is_inside_of_an_iframe)
+  - [Can I use
     JBrowse with
-    phantomJS?</span>](#Can_I_use_JBrowse_with_phantomJS.3F)
-  - [<span class="tocnumber">10.3</span> <span class="toctext">How do I
-    convert GTF to GFF</span>](#How_do_I_convert_GTF_to_GFF)
-  - [<span class="tocnumber">10.4</span> <span class="toctext">Can I run
+    phantomJS?](#Can_I_use_JBrowse_with_phantomJS.3F)
+  - [How do I
+    convert GTF to GFF](#How_do_I_convert_GTF_to_GFF)
+  - [Can I run
     JBrowse on GitHub
-    pages?</span>](#Can_I_run_JBrowse_on_GitHub_pages.3F)
-  - [<span class="tocnumber">10.5</span> <span class="toctext">What is
+    pages?](#Can_I_run_JBrowse_on_GitHub_pages.3F)
+  - [What is
     the benefit of using
-    biodb-to-json.pl?</span>](#What_is_the_benefit_of_using_biodb-to-json.pl.3F)
-- [<span class="tocnumber">11</span> <span class="toctext">Visualization
-  tips</span>](#Visualization_tips)
-  - [<span class="tocnumber">11.1</span> <span class="toctext">Can I
+    biodb-to-json.pl?](#What_is_the_benefit_of_using_biodb-to-json.pl.3F)
+- [Visualization
+  tips](#Visualization_tips)
+  - [Can I
     make an ultra-compact setting on my
-    features?</span>](#Can_I_make_an_ultra-compact_setting_on_my_features.3F)
-  - [<span class="tocnumber">11.2</span> <span class="toctext">Can I
+    features?](#Can_I_make_an_ultra-compact_setting_on_my_features.3F)
+  - [Can I
     disable the histograms on a
-    track?</span>](#Can_I_disable_the_histograms_on_a_track.3F)
-  - [<span class="tocnumber">11.3</span> <span class="toctext">Can I
+    track?](#Can_I_disable_the_histograms_on_a_track.3F)
+  - [Can I
     visualize junctions from RNA-seq
-    data</span>](#Can_I_visualize_junctions_from_RNA-seq_data)
-  - [<span class="tocnumber">11.4</span> <span class="toctext">Can I
+    data](#Can_I_visualize_junctions_from_RNA-seq_data)
+  - [Can I
     view GCContent on my sequence
-    data?</span>](#Can_I_view_GCContent_on_my_sequence_data.3F)
-  - [<span class="tocnumber">11.5</span> <span class="toctext">Can I
+    data?](#Can_I_view_GCContent_on_my_sequence_data.3F)
+  - [Can I
     view GWAS results in
-    JBrowse?</span>](#Can_I_view_GWAS_results_in_JBrowse.3F)
-  - [<span class="tocnumber">11.6</span> <span class="toctext">What do
+    JBrowse?](#Can_I_view_GWAS_results_in_JBrowse.3F)
+  - [What do
     the colors mean on the BAM files for
-    JBrowse</span>](#What_do_the_colors_mean_on_the_BAM_files_for_JBrowse)
-  - [<span class="tocnumber">11.7</span> <span class="toctext">Can I use
-    RNA-seq with JBrowse</span>](#Can_I_use_RNA-seq_with_JBrowse)
-  - [<span class="tocnumber">11.8</span> <span class="toctext">Can I use
+    JBrowse](#What_do_the_colors_mean_on_the_BAM_files_for_JBrowse)
+  - [Can I use
+    RNA-seq with JBrowse](#Can_I_use_RNA-seq_with_JBrowse)
+  - [Can I use
     long reads with
-    JBrowse?</span>](#Can_I_use_long_reads_with_JBrowse.3F)
-  - [<span class="tocnumber">11.9</span> <span class="toctext">Can I
+    JBrowse?](#Can_I_use_long_reads_with_JBrowse.3F)
+  - [Can I
     have subtracks in
-    JBrowse?</span>](#Can_I_have_subtracks_in_JBrowse.3F)
-  - [<span class="tocnumber">11.10</span> <span class="toctext">How do I
+    JBrowse?](#Can_I_have_subtracks_in_JBrowse.3F)
+  - [How do I
     get coverage for a BAM
-    file?</span>](#How_do_I_get_coverage_for_a_BAM_file.3F)
-  - [<span class="tocnumber">11.11</span> <span class="toctext">Can I
+    file?](#How_do_I_get_coverage_for_a_BAM_file.3F)
+  - [Can I
     zoom even closer to the base
-    level?</span>](#Can_I_zoom_even_closer_to_the_base_level.3F)
-  - [<span class="tocnumber">11.12</span> <span class="toctext">How do I
+    level?](#Can_I_zoom_even_closer_to_the_base_level.3F)
+  - [How do I
     change the color of bigwig
-    dynamically</span>](#How_do_I_change_the_color_of_bigwig_dynamically)
+    dynamically](#How_do_I_change_the_color_of_bigwig_dynamically)
 
 
+# Setup
 
-# <span id="Setup" class="mw-headline">Setup</span>
-
-## <span id="How_do_I_get_started_with_installing_JBrowse.3F" class="mw-headline">How do I get started with installing JBrowse?</span>
+## How do I get started with installing JBrowse?
 
 To setup jbrowse on your server, the basic idea is to download the zip
 file, drop the files in a folder on a web server, and run the setup.sh
@@ -365,7 +336,7 @@ Alternatively: you can try the JBrowse Docker container for a
 containerized deployment, or the JBrowse Desktop program to run without
 a web server (similar to IGV)
 
-## <span id="How_do_I_load_my_genome_as_a_FASTA_file.3F" class="mw-headline">How do I load my genome as a FASTA file?</span>
+## How do I load my genome as a FASTA file?
 
 If you have JBrowse installed to your web folder and have run setup.sh,
 then you can download a FASTA file for your genome and run
@@ -387,7 +358,7 @@ this is the easiest one.
 
   
 
-## <span id="How_do_I_setup_a_GFF_track.3F" class="mw-headline">How do I setup a GFF track?</span>
+## How do I setup a GFF track?
 
 The most common feature track to use is a GFF file
 
@@ -406,7 +377,7 @@ listed in flatfile-to-json.pl --help.
 
   
 
-## <span id="How_do_I_set_up_a_BAM_file.3F" class="mw-headline">How do I set up a BAM file?</span>
+## How do I set up a BAM file?
 
 When you set up a BAM file in jbrowse, the best way to do it is as
 follows
@@ -418,9 +389,6 @@ follows
     --bam_url mybam.bam --in data/trackList.json
 3.  This will only create a simple section of configuration in your data
     directory's trackList.json for the BAM file that will look like
-
-<!-- -->
-
          {
             "storeClass" : "JBrowse/Store/SeqFeature/BAM",
             "urlTemplate" : "mybam.bam",
@@ -456,7 +424,7 @@ trackList.json file, but you use a different format, for example
   
 This is functionally equivalent to the trackList.json entry above
 
-## <span id="How_do_I_set_up_a_BigWig_file.3F" class="mw-headline">How do I set up a BigWig file?</span>
+## How do I set up a BigWig file?
 
 When you set up a BigWig file in jbrowse, the best way to do it is as
 follows
@@ -465,9 +433,6 @@ follows
     so if you have data/file.bw, run the command \`add-bw-track.pl
     --label mybw --bam_url file.bw\`
 2.  This will update your trackList.json to have something like
-
-<!-- -->
-
         {
            "storeClass" : "JBrowse/Store/SeqFeature/BigWig",
            "urlTemplate" : "file.bw",
@@ -498,7 +463,7 @@ Notes:
   file is in your data directory, it only needs to be the filename of
   the bigwig.
 
-## <span id="How_do_I_set_up_a_VCF_file.3F" class="mw-headline">How do I set up a VCF file?</span>
+## How do I set up a VCF file?
 
 This is where the training wheels come off
 
@@ -518,9 +483,6 @@ Now that your VCF is indexed, follow these steps
 1.  Put the myfile.vcf.gz and myfile.vcf.gz.tbi in your data directory
 2.  Edit data/trackList.json
 3.  Put the following in there:
-
-<!-- -->
-
         {
            "label": "mytrack",
            "urlTemplate": "myfile.vcf.gz",
@@ -543,7 +505,7 @@ Both of these configurations represent the same track.
 
   
 
-## <span id="How_do_I_get_IndexedFasta_track_to_work_in_JBrowse" class="mw-headline">How do I get IndexedFasta track to work in JBrowse</span>
+## How do I get IndexedFasta track to work in JBrowse
 
 A short trackList.json with an IndexedFasta reference sequence track
 would look like this
@@ -575,9 +537,9 @@ FASTA file. Instead you can simply use the "samtools faidx" program to
 index your fasta file in a data directory, and set trackList.json up in
 this format.
 
-# <span id="General_information" class="mw-headline">General information</span>
+# General information
 
-## <span id="What_webserver_is_needed_for_JBrowse" class="mw-headline">What webserver is needed for JBrowse</span>
+## What webserver is needed for JBrowse
 
 Most established HTTP servers such as Apache or nginx can work. You can
 just unpack JBrowse into your http web directory (/var/www/html, or
@@ -613,7 +575,7 @@ Since 1.12.4: The JBrowse "jb_run" script in 1.12.4 can be used to run
 JBrowse. It uses a custom express.js server tailored to serve all
 content headers directly.
 
-## <span id="What_is_the_difference_between_JBrowse-1.12.1.zip_and_JBrowse-1.12.1-dev.zip.3F" class="mw-headline">What is the difference between JBrowse-1.12.1.zip and JBrowse-1.12.1-dev.zip?</span>
+## What is the difference between JBrowse-1.12.1.zip and JBrowse-1.12.1-dev.zip?
 
 Ignoring version numbers here, the difference is that one is a "release"
 version and one is a "development" version. If you are going to be
@@ -635,7 +597,7 @@ developing source code modifications. See the next section for running
 from a github clone
 [\#How_do_I_run_the_code_using_the_github_clone](#How_do_I_run_the_code_using_the_github_clone)
 
-## <span id="How_do_I_run_the_code_using_the_github_clone" class="mw-headline">How do I run the code using the github clone</span>
+## How do I run the code using the github clone
 
 Running code off github is fairly straightforward, and you can actually
 run it on your webserver without any build steps
@@ -660,7 +622,7 @@ Also also note: post 1.13.0 releases of JBrowse will automatically
 create a minified custom build when you run ./setup.sh if you have a
 -dev release or a github clone.
 
-## <span id="What_are_the_different_config_file_formats.3F" class="mw-headline">What are the different config file formats?</span>
+## What are the different config file formats?
 
 JBrowse uses both json and ".conf" files for configuration (the .conf is
 a custom format that is parsed on the client side), and both file types
@@ -695,7 +657,7 @@ like this:
 4.  The trackList.json or tracks.conf files can themselves include other
     files, such as a "functions.conf" file
 
-## <span id="What_type_of_coordinate_system_does_JBrowse_use" class="mw-headline">What type of coordinate system does JBrowse use</span>
+## What type of coordinate system does JBrowse use
 
 Internally it uses 0-based coordinates
 
@@ -704,7 +666,7 @@ position on the browser) it is 1-based.
 
 The functions like feature.get('start') would return 0-based.
 
-## <span id="What_is_the_difference_between_CanvasFeatures_and_HTMLFeatures.3F" class="mw-headline">What is the difference between CanvasFeatures and HTMLFeatures?</span>
+## What is the difference between CanvasFeatures and HTMLFeatures?
 
 There are a lot of differences!
 
@@ -727,14 +689,14 @@ There are a lot of differences!
   CanvasFeatures tracks, the mouseover it is a real tooltip that you can
   embed arbitrary HTML inside of.
 
-## <span id="What_is_a_glyph.3F" class="mw-headline">What is a glyph?</span>
+## What is a glyph?
 
 Glyphs are a "unit" of drawing in a CanvasFeatures track. The glyph is
 just code that is responsible for drawing a feature on the screen.
 
   
 
-## <span id="What_does_generate-names.pl_do.3F" class="mw-headline">What does generate-names.pl do?</span>
+## What does generate-names.pl do?
 
 Generate-names.pl will create a "search index" on, by default, the
 "names, IDs, and Alias" fields for tracks loaded with
@@ -753,7 +715,7 @@ flatfile-to-json.pl. E.g. flatfile-to-json.pl --nameAttributes
 "name,alias,id". Note that the flag is passed to flatfile-to-json.pl and
 then these values are automatically indexed by generate-names.pl later.
 
-## <span id="What_is_the_.22label.22_in_trackList.json_and_what_is_the_key.3F" class="mw-headline">What is the "label" in trackList.json and what is the key?</span>
+## What is the "label" in trackList.json and what is the key?
 
 The track "label" is more like the track "identifier", it should be
 unique! The key is actually more like the name that is displayed for the
@@ -764,7 +726,7 @@ specified by --key.
 
   
 
-## <span id="How_do_I_search_for_a_feature_in_JBrowse" class="mw-headline">How do I search for a feature in JBrowse</span>
+## How do I search for a feature in JBrowse
 
 Some people don't know this, but the box that shows your current
 location, e.g. "chr10:1..1000 (1.0 Kb)" is also a search box! You can
@@ -778,7 +740,7 @@ rel="nofollow">http://localhost/jbrowse/?loc=GENE1234</a>
 Then the search index will resolve the location of that gene and jump to
 it automatically.
 
-## <span id="How_do_I_get_full_text_descriptions_to_be_searched.3F" class="mw-headline">How do I get full text descriptions to be searched?</span>
+## How do I get full text descriptions to be searched?
 
 Try out <a href="https://github.com/cmdcolin/jbrowse_elasticsearch"
 class="external text" rel="nofollow">jbrowse_elasticsearch</a>, it is
@@ -788,7 +750,7 @@ full text descriptions.
 
   
 
-## <span id="How_do_I_set_up_multiple_genomes_in_a_single_jbrowse_instance.3F" class="mw-headline">How do I set up multiple genomes in a single jbrowse instance?</span>
+## How do I set up multiple genomes in a single jbrowse instance?
 
 By default, the scripts will output to a subdirectory called "data" in
 the jbrowse folder
@@ -813,7 +775,7 @@ You can also setup the "dataset selector" see [\#What is the dataset
 selector](#What_is_the_dataset_selector) and
 [JBrowse_Configuration_Guide#Dataset_Selector](JBrowse_Configuration_Guide#Dataset_Selector "JBrowse Configuration Guide")
 
-## <span id="What_is_the_dataset_selector" class="mw-headline">What is the dataset selector</span>
+## What is the dataset selector
 
 The dataset selector is a dropdown that can list all the genomes that
 are in your jbrowse instance
@@ -829,7 +791,7 @@ rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Dataset_Selector
 
   
 
-## <span id="How_do_I_change_the_name_that_is_displayed_on_my_features" class="mw-headline">How do I change the name that is displayed on my features</span>
+## How do I change the name that is displayed on my features
 
 If you don't like the names in the "Name" or "ID" column of your GFF,
 and you instead want to use some other field as the name to be
@@ -847,9 +809,9 @@ way
 
 `"style": {"description": "my_custom_description_field"}`
 
-# <span id="Customization" class="mw-headline">Customization</span>
+# Customization
 
-## <span id="How_do_I_customize_feature_colors_.28with_CanvasFeatures.29" class="mw-headline">How do I customize feature colors (with CanvasFeatures)</span>
+## How do I customize feature colors (with CanvasFeatures)
 
 In CanvasFeatures, this is done with the style-\>color parameter. The
 style-\>color parameter can be a function, so for example, if you have a
@@ -904,7 +866,7 @@ Also note: you cannot create the functions via the UI in "Edit config".
 You have to specify the callback functions via the config files
 themselves.
 
-## <span id="How_do_I_add_a_legend_to_the_track_in_the_.22About_this_track.22_dialog.3F" class="mw-headline">How do I add a legend to the track in the "About this track" dialog?</span>
+## How do I add a legend to the track in the "About this track" dialog?
 
 You can add custom info to the "About this track" dialog boxes by
 specifying metadata for the track in trackList.json, e.g.
@@ -925,7 +887,7 @@ href="JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Additional_customizations_to_the_pop-up_boxes</a>
 
-## <span id="How_do_I_customize_the_dialog_boxes_for_the_features.3F" class="mw-headline">How do I customize the dialog boxes for the features?</span>
+## How do I customize the dialog boxes for the features?
 
 There are many ways to do so.
 
@@ -962,7 +924,7 @@ More straightforwardly, basically any field that exists for the feature
 "View details" boxes, so it you add more details to the GFF3 column 9,
 then your popups will have more information.
 
-## <span id="How_do_I_customize_the_main_menu_bar" class="mw-headline">How do I customize the main menu bar</span>
+## How do I customize the main menu bar
 
 Typically this is done using a plugin. You can make your plugin add new
 menu items. See the RegexSequenceSearch plugin for an example <a
@@ -977,7 +939,7 @@ href="https://github.com/GMOD/Apollo/blob/master/client/apollo/js/main.js#L368-L
 class="external free"
 rel="nofollow">https://github.com/GMOD/Apollo/blob/master/client/apollo/js/main.js#L368-L379</a>
 
-## <span id="How_do_I_customize_the_.22track_menu.22_on_a_track.3F" class="mw-headline">How do I customize the "track menu" on a track?</span>
+## How do I customize the "track menu" on a track?
 
 In general, you would want to make a new "track type", you can override
 \_trackMenuOptions on your custom track type. See <a
@@ -988,7 +950,7 @@ for example
 
   
 
-## <span id="How_do_I_customize_the_right-click_menus_on_features" class="mw-headline">How do I customize the right-click menus on features</span>
+## How do I customize the right-click menus on features
 
 You can edit the menuTemplate parameters on the trackList.json.
 
@@ -1001,7 +963,7 @@ for more details.
 
   
 
-## <span id="How_do_I_access_data_about_my_features_in_my_callback_or_plugin" class="mw-headline">How do I access data about my features in my callback or plugin</span>
+## How do I access data about my features in my callback or plugin
 
 Each feature is based on what is called a feature Model. The
 JBrowse/Model/SimpleFeature is an example of this, and it allows you to
@@ -1040,7 +1002,7 @@ on-demand). BAM features also have things like feature.get('seq'), to
 get the sequence of the alignments, but normal features like genes do
 not have feature.get('seq')
 
-## <span id="How_to_get_default_tracks_to_display_every_time_a_user_opens_the_browser.3F" class="mw-headline">How to get default tracks to display every time a user opens the browser?</span>
+## How to get default tracks to display every time a user opens the browser?
 
 There are several config variables which you can define in any of your
 config files (trackList.json for example can have config items like
@@ -1052,7 +1014,7 @@ track labels
 - forceTracks: Overridden by URL bar
 - defaultTracks: Overridden by URL bar and cookies
 
-## <span id="How_can_I_embed_JBrowse_on_a_page" class="mw-headline">How can I embed JBrowse on a page</span>
+## How can I embed JBrowse on a page
 
 The easiest way to "embed jbrowse" on another page would be to use an
 iframe to link to the jbrowse instance of choice e.g.
@@ -1074,7 +1036,7 @@ elements collides with your outside page.
 
   
 
-## <span id="Can_I_change_the_color_of_bases_in_the_Sequence.2FAlignments2.2FSNPCoverage_tracks.3F" class="mw-headline">Can I change the color of bases in the Sequence/Alignments2/SNPCoverage tracks?</span>
+## Can I change the color of bases in the Sequence/Alignments2/SNPCoverage tracks?
 
 Yes. It is sort of a "hidden setting", but you can actually change
 colors on the Sequence/Alignments2/SNPCoverage track using CSS
@@ -1115,7 +1077,7 @@ intron grey change color SNPCoverage.
 
   
 
-## <span id="How_can_I_link_BLAST_results_to_JBrowse" class="mw-headline">How can I link BLAST results to JBrowse</span>
+## How can I link BLAST results to JBrowse
 
 If you use sequenceserver, you create a custom JBrowse link by creating
 a links.rb file and running
@@ -1272,9 +1234,9 @@ as config.ru e.g.
     SequenceServer.init(:config_file => ".sequenceserver.conf")
     run SequenceServer
 
-# <span id="Other" class="mw-headline">Other</span>
+# Other
 
-## <span id="Can_I_get_started_with_JBrowse_without_all_the_fuss_of_setup.sh_and_what-not" class="mw-headline">Can I get started with JBrowse without all the fuss of setup.sh and what-not</span>
+## Can I get started with JBrowse without all the fuss of setup.sh and what-not
 
 Yes! Try the jbrowse desktop versions, built with electron!
 
@@ -1284,7 +1246,7 @@ open your fasta file (ideally: indexed fasta).
 You can also open BAM tracks, BigWig, VCF.gz, GFF3, BED, BigBed, and
 more!
 
-## <span id="Can_I_install_the_perl_packages_using_cpanm.3F" class="mw-headline">Can I install the perl packages using cpanm?</span>
+## Can I install the perl packages using cpanm?
 
 Yes! The packages are not hosted on cpan, but you can install them from
 github using cpanm
@@ -1303,7 +1265,7 @@ way.
 Note: you might also use --notest option to avoid testing all
 dependencies
 
-## <span id="Why_does_my_trackList.json_contain_.22className.22_.28even_on_CanvasFeatures.3F.29" class="mw-headline">Why does my trackList.json contain "className" (even on CanvasFeatures?)</span>
+## Why does my trackList.json contain "className" (even on CanvasFeatures?)
 
 className refers to a CSS class for your features.
 
@@ -1318,7 +1280,7 @@ subfeatureClasses allows you to create a map e.g.
 
 `"subfeatureClasses": {"exon": "myCustomExonCSSClass"}`
 
-## <span id="How_do_I_create_a_Tabix_indexed_GFF" class="mw-headline">How do I create a Tabix indexed GFF</span>
+## How do I create a Tabix indexed GFF
 
 The most reliable way to do this is to use gff3sort from
 <a href="https://github.com/billzt/gff3sort" class="external free"
@@ -1338,7 +1300,7 @@ In JBrowse 1.14, the problem of child features being behind their
 parents was fixed so the full GFF3Sort algorithm from @billzt is now not
 necessary and a simple GNU sort does work.
 
-## <span id="How_do_I_create_a_Indexed_FASTA.3F" class="mw-headline">How do I create a Indexed FASTA?</span>
+## How do I create a Indexed FASTA?
 
 JBrowse 1.12+ allow opening FASTA files directly in the browser or via
 JBrowse Desktop. Indexed FASTA is however much more efficient as it does
@@ -1358,9 +1320,9 @@ Note: you can also open unindexed FASTA, but it requires parsing the
 whole FASTA up front, so this is slow and memory intensive with the
 current setup. Indexed FASTA is quite efficient though.
 
-# <span id="Optimizations" class="mw-headline">Optimizations</span>
+# Optimizations
 
-## <span id="Can_I_speed_up_JBrowse_load_time_with_VCF_and_BAM_files" class="mw-headline">Can I speed up JBrowse load time with VCF and BAM files</span>
+## Can I speed up JBrowse load time with VCF and BAM files
 
 If the BAM and VCF files you have are large, the BAM index or TABIX
 index files can become large as well. Since the indexes must be fully
@@ -1377,7 +1339,7 @@ open that track while browsing chr1
 
   
 
-## <span id="Can_I_add_a_loading_bar_while_JBrowse_is_starting_up.3F" class="mw-headline">Can I add a loading bar while JBrowse is starting up?</span>
+## Can I add a loading bar while JBrowse is starting up?
 
 Yes, you can configure one. See this section
 <a href="JBrowse_Configuration_Guide#Configure_a_Loading_Page"
@@ -1387,7 +1349,7 @@ rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configure_a_Load
 You could also listen for other milestone events to trigger other
 loading events (see DebugEvents plugin for details)
 
-## <span id="Can_I_speed_up_generate-names.pl.3F" class="mw-headline">Can I speed up generate-names.pl?</span>
+## Can I speed up generate-names.pl?
 
 Try using --completionLimit 0 with the command. It will disable
 autocompletion but still allow you to search exact matches.
@@ -1396,9 +1358,9 @@ Note that you can use generate-names with --completionLimit 20 on some
 tracks and then generate-names with both --incremental and
 --completionLimit 0 flags on very information dense tracks.
 
-# <span id="Track_selector_customization" class="mw-headline">Track selector customization</span>
+# Track selector customization
 
-## <span id="How_do_I_add_categories_to_the_Hierarchical_data_selector.3F" class="mw-headline">How do I add categories to the Hierarchical data selector?</span>
+## How do I add categories to the Hierarchical data selector?
 
 The hierarchical data selector can support multiple levels of drop down
 categories. To use this, set the "category" variable on your track, and
@@ -1427,7 +1389,7 @@ In tracks.conf form
     type=Alignments2
     storeClass=JBrowse/Store/SeqFeature/BAM
 
-## <span id="How_do_I_collapse_categories_in_the_Hierarchical_data_selector_by_default.3F" class="mw-headline">How do I collapse categories in the Hierarchical data selector by default?</span>
+## How do I collapse categories in the Hierarchical data selector by default?
 
 You can set the following config
 
@@ -1438,9 +1400,9 @@ etc. to your jbrowse.conf. This is a comma separated list (don't include
 spaces around the slashes though). Remember, don't quote the values in
 the jbrowse.conf file :)
 
-# <span id="Data_loading_tips" class="mw-headline">Data loading tips</span>
+# Data loading tips
 
-## <span id="How_can_I_only_load_a_specific_type_of_feature_from_my_GFF_file.3F" class="mw-headline">How can I only load a specific type of feature from my GFF file?</span>
+## How can I only load a specific type of feature from my GFF file?
 
 You can use the --type argument for flatfile-to-json.pl
 
@@ -1456,7 +1418,7 @@ mRNA:augustus
 The --type argument can also be a commas separated list of filters like
 this.
 
-## <span id="What_if_I_dont_want_to_load_the_sequence_data_for_the_genome.2C_but_I_want_to_display_the_features.3F" class="mw-headline">What if I dont want to load the sequence data for the genome, but I want to display the features?</span>
+## What if I dont want to load the sequence data for the genome, but I want to display the features?
 
 prepare-refseqs.pl accepts a --sizes parameter, which takes a
 "chrom.sizes" file which is just a tab separated file with two columns,
@@ -1467,11 +1429,11 @@ loading the sequence data.
 
   
 
-# <span id="Plugins" class="mw-headline">Plugins</span>
+# Plugins
 
-## <span id="How_do_I_install_a_plugin" class="mw-headline">How do I install a plugin</span>
+## How do I install a plugin
 
-### <span id="Important_note" class="mw-headline">Important note</span>
+### Important note
 
 **After version 1.13 which introduced webpack to JBrowse, then you must
 re-run "setup.sh" after adding or removing a plugin.**
@@ -1479,7 +1441,7 @@ re-run "setup.sh" after adding or removing a plugin.**
 **Also, you must use the JBrowse-1.x.x-dev.zip instead of just
 JBrowse-1.x.x.zip**
 
-### <span id="Configuration" class="mw-headline">Configuration</span>
+### Configuration
 
 To install a JBrowse plugin, generally the easiest thing to do is to put
 the code in the plugins directory (e.g. clone the repo to
@@ -1544,7 +1506,7 @@ Final note: it is best to only include plugins in one file, e.g. put all
 the includes in jbrowse.conf or all configs in tracks.conf, not mix them
 in different config files.
 
-## <span id="Can_I_create_an_adaptor_for_an_existing_web_service.3F" class="mw-headline">Can I create an adaptor for an existing web service?</span>
+## Can I create an adaptor for an existing web service?
 
 If your web service doesn't exactly match the requirements for the
 JBrowse REST API tracks, then you can create your own "store class" as a
@@ -1570,7 +1532,7 @@ rel="nofollow">https://github.com/cmdcolin/myvariantviewer/blob/master/js/Store/
 
   
 
-## <span id="What_is_a_plugin_useful_for.3F" class="mw-headline">What is a plugin useful for?</span>
+## What is a plugin useful for?
 
 A JBrowse plugin can do a wide variety of things. Some common use-cases
 would be
@@ -1591,7 +1553,7 @@ One cool thing is that when you create a plugin, you can simply
 reference it textually in your config file e.g. trackList.json, and then
 JBrowse will load the "class" from your plugin and initialize it
 
-## <span id="What_background_should_I_have_for_creating_a_plugin" class="mw-headline">What background should I have for creating a plugin</span>
+## What background should I have for creating a plugin
 
 Make sure to review this link describing dojo declare, the way dojo
 declares new object types <a
@@ -1613,7 +1575,7 @@ re-building JBrowse using webpack. This actually allows you to use ES6
 javascript and node js modules in your browser code. Therefore, you
 might want to review webpack, babel, and node js module systems
 
-## <span id="How_do_I_create_a_plugin.3F" class="mw-headline">How do I create a plugin?</span>
+## How do I create a plugin?
 
 Let's walk through a simple plugin with the goal of adding something to
 the track menu (e.g. where the "About this track" and "Save track data"
@@ -1683,9 +1645,9 @@ instead of the normal CanvasFeatures class.
 
   
 
-# <span id="Troubleshooting" class="mw-headline">Troubleshooting</span>
+# Troubleshooting
 
-## <span id="Setup.sh_.22Installing_perl_prerequisites.22_fails_for_me.2C_why.3F" class="mw-headline">Setup.sh "Installing perl prerequisites" fails for me, why?</span>
+## Setup.sh "Installing perl prerequisites" fails for me, why?
 
 Inspect your setup.log
 
@@ -1708,7 +1670,7 @@ Then re-run setup.sh
 Also make sure you use "./setup.sh" or "bash setup.sh", do not use "sh
 setup.sh"
 
-## <span id="Should_I_be_worried_about_the_error_.22Building_and_installing_legacy_wiggle_format_.28superseded_by_BigWig_tracks.29...failed.22.3F" class="mw-headline">Should I be worried about the error "Building and installing legacy wiggle format (superseded by BigWig tracks)...failed"?</span>
+## Should I be worried about the error "Building and installing legacy wiggle format (superseded by BigWig tracks)...failed"?
 
 This error is often due to some system issues about compiling libraries
 like libpng, and for all intents and purposes can be ignored, as it is
@@ -1720,7 +1682,7 @@ needed <a href="JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/JBrowse_FAQ#How_do_I_set_up_a_BigWig_file.3F</a>
 
-## <span id="I_see_a_message_that_says_.22Congratulations.2C_JBrowse_is_on_the_web.22_but_I_don.27t_see_my_genome" class="mw-headline">I see a message that says "Congratulations, JBrowse is on the web" but I don't see my genome</span>
+## I see a message that says "Congratulations, JBrowse is on the web" but I don't see my genome
 
 This message normally means that jbrowse is setup but a genome hasn't
 been loaded or located correctly
@@ -1740,7 +1702,7 @@ message than just 404 on seq/refSeqs.json, then report the error to
 github or the mailing list with as much detail about your setup as
 possible.
 
-## <span id="What_is_this_error_during_setup.sh_.22No_such_file_or_directory_at_.2Floader.2F0x13517b30.2FApp.2Fcpanminus.2Fscript.pm_line_224..22" class="mw-headline">What is this error during setup.sh "No such file or directory at /loader/0x13517b30/App/cpanminus/script.pm line 224."</span>
+## What is this error during setup.sh "No such file or directory at /loader/0x13517b30/App/cpanminus/script.pm line 224."
 
 This can normally be fixed by deleting ~/.cpanm
 
@@ -1752,7 +1714,7 @@ Generally deleting ~/.cpanm is harmless, it is a "build" directory
 it actually uses an alternate local::lib directory named extlib inside
 the jbrowse directory to ensure ease-of-install)
 
-## <span id="What_is_.22Integer_overflow_error.22.3F" class="mw-headline">What is "Integer overflow error"?</span>
+## What is "Integer overflow error"?
 
 From what we have seen, the "Integer overflow error" sometimes appears
 on BigWig tracks when your webserver is not configured correctly. It
@@ -1762,7 +1724,7 @@ forwarding the data properly.
 Therefore, it is most likely not due to corrupted bigwig files or
 jbrowse bugs, but more probably, due to your server's configuration.
 
-## <span id="Why_do_I_get_a_popup_saying_.22Error_reading_from_name_store.22.3F" class="mw-headline">Why do I get a popup saying "Error reading from name store"?</span>
+## Why do I get a popup saying "Error reading from name store"?
 
 This error basically says the "search function" from generate-names.pl
 isn't working. You can try a couple things to fix the error
@@ -1785,7 +1747,7 @@ engine, such as jbrowse_elasticsearch (an experimental plugin)
 class="external free"
 rel="nofollow">https://github.com/cmdcolin/jbrowse_elasticsearch/</a>
 
-## <span id="What_is_this_error_message_.22Argument_isn.27t_numeric_in_addition_.28.2B.29.22_loading_GFF3.3F" class="mw-headline">What is this error message "Argument isn't numeric in addition (+)" loading GFF3?</span>
+## What is this error message "Argument isn't numeric in addition (+)" loading GFF3?
 
 If you get an error similar to this:
 
@@ -1795,7 +1757,7 @@ Make sure your GFF3 is tab delimited
 
   
 
-## <span id="It_keeps_showing_.22too_much_data.22_on_my_track._How_do_I_fix_it_and_make_my_track_display.3F" class="mw-headline">It keeps showing "too much data" on my track. How do I fix it and make my track display?</span>
+## It keeps showing "too much data" on my track. How do I fix it and make my track display?
 
 Increase maxFeatureScreenDensity to a higher value. This value is by
 default 0.5 but if you allow a higher "density" of features, set it to 6
@@ -1803,7 +1765,7 @@ for example and the message should disappear.
 
   
 
-## <span id="I_get_the_error_.22Too_much_data...chunk_size_xxxxx_exceeds_chunkSizeLimit.22" class="mw-headline">I get the error "Too much data...chunk size xxxxx exceeds chunkSizeLimit"</span>
+## I get the error "Too much data...chunk size xxxxx exceeds chunkSizeLimit"
 
 Several things can happen to cause this (generally on VCF of BAM tracks)
 
@@ -1817,7 +1779,7 @@ Several things can happen to cause this (generally on VCF of BAM tracks)
     JBrowse 1.12.3 a "statsTimeout" configuration was introduced to
     avoid these doublings from consuming too much area.
 
-## <span id="I_set_a_value_in_my_config_file_but_it_isn.27t_working._Why_not.3F" class="mw-headline">I set a value in my config file but it isn't working. Why not?</span>
+## I set a value in my config file but it isn't working. Why not?
 
 Some things to check:
 
@@ -1842,7 +1804,7 @@ parameter in the URL, so to test whether defaultTracks works, clear you
 cookies and visit without &tracks in the url. Use alwaysOnTracks or
 forceTracks if you want to have it turn on despite cookies/URL.
 
-## <span id="I_get_the_error_.22Too_many_open_files_opening_bucket_log.22_with_generate-names.pl" class="mw-headline">I get the error "Too many open files opening bucket log" with generate-names.pl</span>
+## I get the error "Too many open files opening bucket log" with generate-names.pl
 
 If you get the error such as this
 
@@ -1860,7 +1822,7 @@ The default can sometimes be as low as 256 (view with ulimit -a)
 
   
 
-## <span id="How_do_I_fix_the_.22Not_a_BAM_file.22_issue.3F" class="mw-headline">How do I fix the "Not a BAM file" issue?</span>
+## How do I fix the "Not a BAM file" issue?
 
 This is normally due to a module called mime_magic being enabled on your
 Apache server. Two options for fixing this are 1. disable mime_magic or
@@ -1869,7 +1831,7 @@ configuration. See
 [JBrowse_Configuration_Guide#Apache_Configuration_Note](JBrowse_Configuration_Guide#Apache_Configuration_Note "JBrowse Configuration Guide")
 for recommended fixes.
 
-## <span id="What_is_the_error_.22invalid_BGZF_header.22_on_my_VCF_files.3F" class="mw-headline">What is the error "invalid BGZF header" on my VCF files?</span>
+## What is the error "invalid BGZF header" on my VCF files?
 
 Your server is misconfigured for VCF.GZ files, and this can be due to it
 thinking that it should set "Content-Encoding: gzip" on the your .vcf.gz
@@ -1886,7 +1848,7 @@ itself, however JBrowse does not want this to happen because VCF.gz
 files are a special type of gzip, specifically, bgzip, so it is manually
 decompressed by JBrowse javascript code.
 
-## <span id="My_track_doesn.27t_display_the_gene_names.2C_but_I_expected_it_to._Why_not.3F" class="mw-headline">My track doesn't display the gene names, but I expected it to. Why not?</span>
+## My track doesn't display the gene names, but I expected it to. Why not?
 
 If you have a very dense track with many features, JBrowse might decide
 to hide the labels to save space, but you can force them to display
@@ -1904,7 +1866,7 @@ always if you are reasonably zoomed in.
 You can also change maxHeight to a larger value to make the track taller
 and see more features.
 
-## <span id="Why_does_my_track_keep_saying_.22Loading.22.3F" class="mw-headline">Why does my track keep saying "Loading"?</span>
+## Why does my track keep saying "Loading"?
 
 This normally means some javascript code for handling the track has
 crashed. Check your javascript console for clues on how to fix it. Add a
@@ -1917,7 +1879,7 @@ readable javascript console messages
 
   
 
-## <span id="My_CanvasFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F" class="mw-headline">My CanvasFeatures don't show up with subfeatures, why not?</span>
+## My CanvasFeatures don't show up with subfeatures, why not?
 
 If your GFF does not follow this structure
 
@@ -1958,7 +1920,7 @@ structure is fine.
 
 Note: the tips above only apply for CanvasFeatures tracks
 
-## <span id="My_HTMLFeatures_don.27t_show_up_with_subfeatures.2C_why_not.3F" class="mw-headline">My HTMLFeatures don't show up with subfeatures, why not?</span>
+## My HTMLFeatures don't show up with subfeatures, why not?
 
 HTMLFeatures generally load data at the "transcript" level. This means
 that they should be loaded with something similar to --type mRNA when
@@ -1985,7 +1947,7 @@ Note: If you would like a track that displays with the transcript
 subfeatures, you can use the CanvasFeatures type track (i.e. load with
 flatfile-to-json.pl --type gene --trackType CanvasFeatures ...)
 
-## <span id="Why_are_my_subfeatures_being_displayed_as_separate_features.3F" class="mw-headline">Why are my subfeatures being displayed as separate features?</span>
+## Why are my subfeatures being displayed as separate features?
 
 Your GFF should use proper ID and Parent relations. Your subfeatures do
 not need to themselves have IDs if they have no further subfeatures, but
@@ -1995,7 +1957,7 @@ Note that it should be spelled Parent, not PARENT
 
   
 
-## <span id="I_get_the_error_.22Building_and_installing_legacy_bam-to-json.pl_support_.28superseded_by_direct_BAM_tracks.29_..._failed.22" class="mw-headline">I get the error "Building and installing legacy bam-to-json.pl support (superseded by direct BAM tracks) ... failed"</span>
+## I get the error "Building and installing legacy bam-to-json.pl support (superseded by direct BAM tracks) ... failed"
 
 If you get the error "Building and installing legacy bam-to-json.pl
 support (superseded by direct BAM tracks) ... failed. See setup.log file
@@ -2017,7 +1979,7 @@ Then note:
   files to json. It is better to use the add-bam-track.pl which simply
   can read BAM files directly from the server with no conversion.
 
-## <span id="After_I_load_my_track_it_appears_in_the_tracklist.2C_but_the_track_appears_empty" class="mw-headline">After I load my track it appears in the tracklist, but the track appears empty</span>
+## After I load my track it appears in the tracklist, but the track appears empty
 
 This can happen if the chromosome names from your track don't match the
 names from your reference genome.
@@ -2025,7 +1987,7 @@ names from your reference genome.
 Try and make sure the chromosome names from your evidence tracks match
 the chromosome names from the reference genome fasta.
 
-## <span id="My_BigWig_file_is_producing_an_error_related_to_DataView_or_jDataView" class="mw-headline">My BigWig file is producing an error related to DataView or jDataView</span>
+## My BigWig file is producing an error related to DataView or jDataView
 
 Examples of error messages
 
@@ -2046,9 +2008,9 @@ Check that
   i.e. using file:/// protocol (which will not allow accessing
   byte-range Range HTTP requests and cause this error)
 
-# <span id="Tips_and_tricks" class="mw-headline">Tips and tricks</span>
+# Tips and tricks
 
-## <span id="How_can_I_get_jbrowse_to_update_the_URL_of_a_parent_page_when_jbrowse_is_inside_of_an_iframe" class="mw-headline">How can I get jbrowse to update the URL of a parent page when jbrowse is inside of an iframe</span>
+## How can I get jbrowse to update the URL of a parent page when jbrowse is inside of an iframe
 
 You can use code such as this
 
@@ -2093,7 +2055,7 @@ and it will forward those URL params to the jbrowse instance (located at
 rel="nofollow">http://localhost/jbrowse</a>) and the URL will be
 autoupdated when you change locations
 
-## <span id="Can_I_use_JBrowse_with_phantomJS.3F" class="mw-headline">Can I use JBrowse with phantomJS?</span>
+## Can I use JBrowse with phantomJS?
 
 Yes! See <a
 href="JBrowse_Configuration_Guide#Rendering_high_resolution_screenshots_using_PhantomJS"
@@ -2103,7 +2065,7 @@ for an example
 
   
 
-## <span id="How_do_I_convert_GTF_to_GFF" class="mw-headline">How do I convert GTF to GFF</span>
+## How do I convert GTF to GFF
 
 Since flatfile-to-json.pl does not accept GTF, you can convert your GTF
 to GFF3. Tools like gffread or gtf2gff3.pl are available
@@ -2116,7 +2078,7 @@ then you can run
 
     gffread -E merged.gtf -o- > merged.gff3
 
-## <span id="Can_I_run_JBrowse_on_GitHub_pages.3F" class="mw-headline">Can I run JBrowse on GitHub pages?</span>
+## Can I run JBrowse on GitHub pages?
 
 Yes! Upload jbrowse to a gh-pages branch on a github repo, and also put
 a .nojekyll file in the root directory.
@@ -2129,7 +2091,7 @@ rel="nofollow">https://github.com/blog/572-bypassing-jekyll-on-github-pages</a>
 
   
 
-## <span id="What_is_the_benefit_of_using_biodb-to-json.pl.3F" class="mw-headline">What is the benefit of using biodb-to-json.pl?</span>
+## What is the benefit of using biodb-to-json.pl?
 
 - You can store more advanced creation in the biodb-to-json.pl conf
   file, allowing for more advanced and reproducible builds of your data
@@ -2142,9 +2104,9 @@ sample data combines using biodb-to-json and other techniques.
 
   
 
-# <span id="Visualization_tips" class="mw-headline">Visualization tips</span>
+# Visualization tips
 
-## <span id="Can_I_make_an_ultra-compact_setting_on_my_features.3F" class="mw-headline">Can I make an ultra-compact setting on my features?</span>
+## Can I make an ultra-compact setting on my features?
 
 Yes you can!
 
@@ -2156,12 +2118,12 @@ set compact it will be ultra compact.
 
   
 
-## <span id="Can_I_disable_the_histograms_on_a_track.3F" class="mw-headline">Can I disable the histograms on a track?</span>
+## Can I disable the histograms on a track?
 
 Yes! Try setting style.featureScale to a very small number like
 0.0000000001 (but greater than 0)
 
-## <span id="Can_I_visualize_junctions_from_RNA-seq_data" class="mw-headline">Can I visualize junctions from RNA-seq data</span>
+## Can I visualize junctions from RNA-seq data
 
 Yes, try out the SashimiPlot plugin!
 <a href="https://github.com/cmdcolin/sashimiplot" class="external free"
@@ -2170,7 +2132,7 @@ rel="nofollow">https://github.com/cmdcolin/sashimiplot</a>
 It dynamically calculates the splicing coverage of a track or uses
 junctions.bed files for junctions
 
-## <span id="Can_I_view_GCContent_on_my_sequence_data.3F" class="mw-headline">Can I view GCContent on my sequence data?</span>
+## Can I view GCContent on my sequence data?
 
 Yes, the GCContent plugin will calculate the GCContent from your
 sequence data automatically. See
@@ -2181,13 +2143,13 @@ It works fairly well on mid-size genomes. If you have very large
 megabase scale assemblies, then you might consider pre-calculating the
 GCContent.
 
-## <span id="Can_I_view_GWAS_results_in_JBrowse.3F" class="mw-headline">Can I view GWAS results in JBrowse?</span>
+## Can I view GWAS results in JBrowse?
 
 Yes, the GWASViewer plugin does this.
 <a href="https://github.com/cmdcolin/gwasviewer/" class="external free"
 rel="nofollow">https://github.com/cmdcolin/gwasviewer/</a>
 
-## <span id="What_do_the_colors_mean_on_the_BAM_files_for_JBrowse" class="mw-headline">What do the colors mean on the BAM files for JBrowse</span>
+## What do the colors mean on the BAM files for JBrowse
 
 - Light red is a forward read that is paired
 - Super light red is a forward read that is badly paired
@@ -2197,7 +2159,7 @@ rel="nofollow">https://github.com/cmdcolin/gwasviewer/</a>
 - Dark blue is a reverse read that is missing a pair
 - Grey/black is a read whose pair is on another chromosome
 
-## <span id="Can_I_use_RNA-seq_with_JBrowse" class="mw-headline">Can I use RNA-seq with JBrowse</span>
+## Can I use RNA-seq with JBrowse
 
 Yep! The regular alignments track types (e.g.
 JBrowse/View/Track/Alignments2) supports RNA-seq and will show spliced
@@ -2218,14 +2180,14 @@ the reads.
 
   
 
-## <span id="Can_I_use_long_reads_with_JBrowse.3F" class="mw-headline">Can I use long reads with JBrowse?</span>
+## Can I use long reads with JBrowse?
 
 Long reads from platforms like nanopore and pacbio pose some challenges
 but will work if it is in BAM format. The JBrowse 1.12.3 release also
 includes an optimization, cacheMismatches, to enhance speed on long read
 tracks. This must be enabled manually in the config at the moment.
 
-## <span id="Can_I_have_subtracks_in_JBrowse.3F" class="mw-headline">Can I have subtracks in JBrowse?</span>
+## Can I have subtracks in JBrowse?
 
 You can make a custom plugin to do this. The "multibigwig" plugin is an
 example of this
@@ -2234,7 +2196,7 @@ rel="nofollow">https://github.com/cmdcolin/multibigwig</a>
 
   
 
-## <span id="How_do_I_get_coverage_for_a_BAM_file.3F" class="mw-headline">How do I get coverage for a BAM file?</span>
+## How do I get coverage for a BAM file?
 
 1.  Use the SNPCoverage track
 2.  Use the FeatureCoverage track type
@@ -2253,7 +2215,7 @@ rel="nofollow">http://gmod.org/wiki/JBrowse_Configuration_Guide#Configuring_Summ
 
   
 
-## <span id="Can_I_zoom_even_closer_to_the_base_level.3F" class="mw-headline">Can I zoom even closer to the base level?</span>
+## Can I zoom even closer to the base level?
 
 Yes. You can set the config variable view.maxPxPerBp to a higher value.
 To increase, try setting this in jbrowse.conf
@@ -2268,89 +2230,8 @@ to zoom in twice as much.
 
   
 
-## <span id="How_do_I_change_the_color_of_bigwig_dynamically" class="mw-headline">How do I change the color of bigwig dynamically</span>
+## How do I change the color of bigwig dynamically
 
 The pos_color and neg_color config variables for BigWig tracks accept
 callback functions. The phytozome browser has good examples of this with
 the VISTA plot tool
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse_FAQ" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:23 on 16 September
-  2020.</span>
-<!-- - <span id="footer-info-viewcount">415,832 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

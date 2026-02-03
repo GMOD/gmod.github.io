@@ -1,52 +1,28 @@
 ---
 title: "Chado Expression Module"
 ---
+# Chado Expression Module
 
 
+  Introduction](#Introduction)
+  - [Mage and
+    Expression](#Mage_and_Expression)
+- [Tables](#Tables)
+  - [Table:
+    eimage](#Table:_eimage)
+  - [Table:
+    expression](#Table:_expression)
+  - [Table:
+    expression_cvterm](#Table:_expression_cvterm)
+  - [Table:
+    expression_image](#Table:_expression_image)
+  - [Table:
+    expression_pub](#Table:_expression_pub)
+  - [Table:
+    feature_expression](#Table:_feature_expression)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Expression Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Mage and
-    Expression</span>](#Mage_and_Expression)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    eimage</span>](#Table:_eimage)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    expression</span>](#Table:_expression)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    expression_cvterm</span>](#Table:_expression_cvterm)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    expression_image</span>](#Table:_expression_image)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    expression_pub</span>](#Table:_expression_pub)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    feature_expression</span>](#Table:_feature_expression)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 This module is for how curated expression data is stored in Chado. This
 module is totally dependent on the [sequence
@@ -89,7 +65,7 @@ anatomy, assay, 'subcellular location' and that cvterms from different
 <a href="http://www.obofoundry.org" class="external text"
 rel="nofollow">OBO</a> ontologies can share the same *cvterm_type*.
 
-### <span id="Mage_and_Expression" class="mw-headline">Mage and Expression</span>
+### Mage and Expression
 
 The [Mage module](Chado_Mage_Module "Chado Mage Module") and the
 Expression module can be considered overlapping but complementary. The
@@ -101,9 +77,9 @@ that the Expression module does not whereas the Expression module can be
 thought of a simpler set of tables designed to tie ontologies concerned
 with expression to sequence features.
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_eimage" class="mw-headline">Table: eimage</span>
+## Table: eimage
 
 <table data-border="1" data-cellpadding="3">
 <caption>eimage Structure</caption>
@@ -163,7 +139,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_expression" class="mw-headline">Table: expression</span>
+## Table: expression
 
 The expression table is essentially a bridge table.
 
@@ -179,32 +155,17 @@ expression Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [expression_cvterm](Chado_Tables#Table:_expression_cvterm "Chado Tables")
-
-<!-- -->
-
 - [expression_image](Chado_Tables#Table:_expression_image "Chado Tables")
-
-<!-- -->
-
 - [expression_pub](Chado_Tables#Table:_expression_pub "Chado Tables")
-
-<!-- -->
-
 - [expressionprop](Chado_Tables#Table:_expressionprop "Chado Tables")
-
-<!-- -->
-
 - [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_expression](Chado_Tables#Table:_wwwuser_expression "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_expression_cvterm" class="mw-headline">Table: expression_cvterm</span>
+## Table: expression_cvterm
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -224,7 +185,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_expression_image" class="mw-headline">Table: expression_image</span>
+## Table: expression_image
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -238,7 +199,7 @@ expression_image Structure
 
   
 
-## <span id="Table:_expression_pub" class="mw-headline">Table: expression_pub</span>
+## Table: expression_pub
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -252,7 +213,7 @@ expression_pub Structure
 
   
 
-## <span id="Table:_feature_expression" class="mw-headline">Table: feature_expression</span>
+## Table: feature_expression
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -268,91 +229,3 @@ Tables referencing this one via Foreign Key Constraints:
 - [feature_expressionprop](Chado_Tables#Table:_feature_expressionprop "Chado Tables")
 
 ------------------------------------------------------------------------
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Expression](Category%253AExpression "Category%253AExpression")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Expression_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:35 on 18 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">86,304 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

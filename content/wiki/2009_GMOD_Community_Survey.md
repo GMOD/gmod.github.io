@@ -1,52 +1,26 @@
 ---
 title: "2009 GMOD Community Survey"
 ---
+# 2009 GMOD Community Survey
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2009 GMOD Community Survey</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Which
   components have you used?</span>](#Which_components_have_you_used.3F)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">3</span> <span class="toctext">Use
-  Cases</span>](#Use_Cases)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Features</span>](#Features)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Expansion
-    / Clarification</span>](#Expansion_.2F_Clarification)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Other High
-    Priority Features</span>](#Other_High_Priority_Features)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Other
-    Medium Priority Features</span>](#Other_Medium_Priority_Features)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Other Low
-    Priority Features</span>](#Other_Low_Priority_Features)
-- [<span class="tocnumber">5</span> <span class="toctext">Other Feedback
-  on Visualization Tools</span>](#Other_Feedback_on_Visualization_Tools)
-- [<span class="tocnumber">6</span> <span class="toctext">Other
-  Feedback</span>](#Other_Feedback)
+- [Documentation](#Documentation)
+- [Use
+  Cases](#Use_Cases)
+- [Features](#Features)
+  - [Expansion
+    / Clarification](#Expansion_.2F_Clarification)
+  - [Other High
+    Priority Features](#Other_High_Priority_Features)
+  - [Other
+    Medium Priority Features](#Other_Medium_Priority_Features)
+  - [Other Low
+    Priority Features](#Other_Low_Priority_Features)
+- [Other Feedback
+  on Visualization Tools](#Other_Feedback_on_Visualization_Tools)
+- [Other
+  Feedback](#Other_Feedback)
 
 
 The 2009 GMOD Community Survey focused on genome and comparative
@@ -60,13 +34,11 @@ Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey").*
 
   
 
-## <span id="Which_components_have_you_used.3F" class="mw-headline">Which components have you used?</span>
-
+## Which components have you used?
 
 
 GMOD has a wealth of genome and comparative genomics browsers. Which of
 the following have you used?
-
 
 
 <table class="wikitable">
@@ -169,12 +141,10 @@ karyotype</a></td>
 
   
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
-
+## Documentation
 
 
 How satisfied are you with the documentation for these components?
-
 
 
 **Administration Documentation** - e.g.
@@ -339,7 +309,7 @@ Genomics](Comparative_Genomics "Comparative Genomics"),
 </tbody>
 </table>
 
-## <span id="Use_Cases" class="mw-headline">Use Cases</span>
+## Use Cases
 
 The aim of this section was to determine what types of questions people
 want to ask with visualization software.
@@ -630,16 +600,14 @@ showing similarity to a well-annotated sequence</td>
 </tbody>
 </table>
 
-## <span id="Features" class="mw-headline">Features</span>
+## Features
 
 This section asked participants to prioritize features in browsers.
-
 
 
 For each feature, please indicate that feature's importance to you.
 Please try to classify no more than 1/3 of the features as high
 importance.
-
 
 
 Features are listed in the order they appeared in the survey. *You can
@@ -1401,13 +1369,11 @@ how things like genotype and allele frequencies phenotypes, environment,
 | Key: | High | Medium | Low | Not at all | No opinion |
 |------|------|--------|-----|------------|------------|
 
-### <span id="Expansion_.2F_Clarification" class="mw-headline">Expansion / Clarification</span>
-
+### Expansion / Clarification
 
 
 If you want to explain/expand any of your answers above, please do so
 here.
-
 
 
 - Geolocation within genomic space would be interesting but not so
@@ -1444,13 +1410,11 @@ here.
   quantitative tracks) and the original reads.
 - no
 
-### <span id="Other_High_Priority_Features" class="mw-headline">Other High Priority Features</span>
-
+### Other High Priority Features
 
 
 Are there other high priority features you would like to see that are
 not in the list above?
-
 
 
 - Ability to curate features that are not genes. The majority of genomes
@@ -1478,13 +1442,11 @@ not in the list above?
     quantitative tracks) and the original reads.
 - not really
 
-### <span id="Other_Medium_Priority_Features" class="mw-headline">Other Medium Priority Features</span>
-
+### Other Medium Priority Features
 
 
 Are there other medium priority features you would like to see that are
 not in the list above?
-
 
 
 - Ability to generate heatmap color bin from a set of different
@@ -1496,27 +1458,23 @@ not in the list above?
   annotation editing capabilities.
 - not really
 
-### <span id="Other_Low_Priority_Features" class="mw-headline">Other Low Priority Features</span>
-
+### Other Low Priority Features
 
 
 Are there other Low priority features you would like to see that are not
 in the list above?
 
 
-
 - Conquer the world, but with very low priority, first science.
 - not really
 
-## <span id="Other_Feedback_on_Visualization_Tools" class="mw-headline">Other Feedback on Visualization Tools</span>
-
+## Other Feedback on Visualization Tools
 
 
 Do you have any other feedback on any of these tools?
 
 Of the tools you have used, were they useful and why (or why not)? Did
 you try to use any of them, but couldn't get them to work?
-
 
 
 - I have always enjoyed working with the GMOD tools
@@ -1553,13 +1511,11 @@ you try to use any of them, but couldn't get them to work?
 - Help desk seems to be very active. I am very happy with that. Thanks
   for your time and consideration.
 
-## <span id="Other_Feedback" class="mw-headline">Other Feedback</span>
-
+## Other Feedback
 
 
 If you have any additional feedback, questions, or information you would
 like to provide, please tell us here.
-
 
 
 - Please better documentation and support for additional glyphs in
@@ -1607,91 +1563,3 @@ like to provide, please tell us here.
 - not really, but [CMap](CMap.1 "CMap") is brilliant!
 - Thank you VERY MUCH for [GBrowse](GBrowse.1 "GBrowse")!!! It is a
   fantastic tool that helped us making important discoveries!
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2009_GMOD_Community_Survey"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:18 on 6 October
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">99,955 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

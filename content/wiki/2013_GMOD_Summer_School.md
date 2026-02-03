@@ -1,32 +1,13 @@
 ---
 title: "2013 GMOD Summer School"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2013 GMOD Summer School</span>
-
-
-
-
-
-
-
-
-
+# 2013 GMOD Summer School
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fc/2013-summer-school.png/300px-2013-summer-school.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fc/2013-summer-school.png/450px-2013-summer-school.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/f/fc/2013-summer-school.png/600px-2013-summer-school.png 2x"
 width="300" height="186" alt="2013 GMOD Summer School" />
-
 
 
 Dates: Friday July 19th - Tuesday July 23rd 2013
@@ -41,7 +22,7 @@ rel="nofollow">NESCent, North Carolina</a>
 class="external text" rel="nofollow">GMOD 2013 Summer School wiki</a>
 (contents available to course participants only)
 
-## <span id="The_Course" class="mw-headline">The Course</span>
+## The Course
 
 The summer school comprises five days of hands-on courses on GMOD
 component installation, configuration, and usage. Most sessions are four
@@ -183,7 +164,7 @@ title="WebApollo">WebApollo</a></td>
 </tbody>
 </table>
 
-## <span id="Course_Work" class="mw-headline">Course Work</span>
+## Course Work
 
 The 2013 Summer School will use Amazon Web Services to host virtual GMOD
 instances containing the software and demo data used during the course.
@@ -192,15 +173,13 @@ GMOD Amazon Machine Images available to the public. The tutorials used
 on the course will be available on this wiki for interested persons to
 work through.
 
-## <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+## Sponsors
 
 
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 
 GMOD thanks the <a href="http://nescent.org" class="external text"
@@ -215,93 +194,3 @@ GMOD thanks the generous grant from the Amazon
 <a href="http://aws.amazon.com/grants/" class="external text"
 rel="nofollow">AWS in Education program</a>, which provided free compute
 time on Amazon Web Services for the course tutors and participants.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2013_GMOD_Summer_School" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:52 on 22 January
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">144,846 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

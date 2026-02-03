@@ -1,54 +1,30 @@
 ---
 title: "Perl Testing - by Gavin Sherlock"
 ---
+# Perl Testing - by Gavin Sherlock
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Perl Testing - by Gavin Sherlock</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Guideline for
   Writing Tests for Perl
   Code</span>](#Guideline_for_Writing_Tests_for_Perl_Code)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Philosophy</span>](#Philosophy)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Unit-tests
-    vs. Integration tests</span>](#Unit-tests_vs._Integration_tests)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">How to
-    begin a test suite</span>](#How_to_begin_a_test_suite)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Writing
-    tests</span>](#Writing_tests)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Testing
-    Documentation</span>](#Testing_Documentation)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Testing
+  - [Philosophy](#Philosophy)
+  - [Unit-tests
+    vs. Integration tests](#Unit-tests_vs._Integration_tests)
+  - [How to
+    begin a test suite](#How_to_begin_a_test_suite)
+  - [Writing
+    tests](#Writing_tests)
+  - [Testing
+    Documentation](#Testing_Documentation)
+  - [Testing
     Coverage of your
-    Test-Suite</span>](#Testing_Coverage_of_your_Test-Suite)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Testing
-    Performance</span>](#Testing_Performance)
+    Test-Suite](#Testing_Coverage_of_your_Test-Suite)
+  - [Testing
+    Performance](#Testing_Performance)
 
 
+## Guideline for Writing Tests for Perl Code
 
-## <span id="Guideline_for_Writing_Tests_for_Perl_Code" class="mw-headline">Guideline for Writing Tests for Perl Code</span>
-
-### <span id="Philosophy" class="mw-headline">Philosophy</span>
+### Philosophy
 
 To build robust code, you need to incorporate the notion of testing into
 your general coding practices. This is one of the cornerstones of the
@@ -72,7 +48,7 @@ they ship, rather than afterwards. Everytime a new problem surfaces, a
 new test should be written for it, so that once fixed, that problem
 should never creep back in.
 
-### <span id="Unit-tests_vs._Integration_tests" class="mw-headline">Unit-tests vs. Integration tests</span>
+### Unit-tests vs. Integration tests
 
 The goal of unit testing is to isolate each part of the program and show
 that the individual parts are correct. If you write code to unit test
@@ -84,7 +60,7 @@ because it will enable you to later refactor code and test that it still
 works, and because it will make integration testing easier to design
 later on.
 
-### <span id="How_to_begin_a_test_suite" class="mw-headline">How to begin a test suite</span>
+### How to begin a test suite
 
 The easiest way to create and use a test suite is to take advantage of
 Perl's inbuilt mechanisms and modules. If your code comes with a
@@ -122,7 +98,7 @@ Thus, to write a test suite, you should create a t/ directory in at the
 top level of your distribution, and populate it with .t files, that will
 test the functionality of your code base.
 
-### <span id="Writing_tests" class="mw-headline">Writing tests</span>
+### Writing tests
 
 Test scripts are perl scripts, but with a .t extension. Ideally, you
 should split up your tests into small discrete chunks, such that each .t
@@ -199,7 +175,7 @@ which will now give:
 
 which makes it even easier for you to maintain your test-suite.
 
-### <span id="Testing_Documentation" class="mw-headline">Testing Documentation</span>
+### Testing Documentation
 
 Your code should always be fully documented with pod - that is, if you
 export a function, or if you have a public method, there should be pod
@@ -246,7 +222,7 @@ This test file will test that all of the pod in any files with a .pm or
 a .pl extension in the distribution have syntactically correct pod. if
 the Test::Pod modules are not installed, then the scripts are skipped.
 
-### <span id="Testing_Coverage_of_your_Test-Suite" class="mw-headline">Testing Coverage of your Test-Suite</span>
+### Testing Coverage of your Test-Suite
 
 Ideally, your test suite should full exercise your code base, covering
 all possible code paths. In practice, this is very difficult to
@@ -271,7 +247,7 @@ rel="nofollow">http://pjcj.sytes.net/cpancover/</a>
 In this way, you can design new tests for your code base, designed to
 cover as yet un-exercised code paths.
 
-### <span id="Testing_Performance" class="mw-headline">Testing Performance</span>
+### Testing Performance
 
 One of the things that you should consider testing for is performance.
 It may be that your code passes all your unit and integration tests, but
@@ -288,90 +264,3 @@ measurements. To profile your code in Perl, you can use Devel::Profile
 class="external free"
 rel="nofollow">http://search.cpan.org/dist/Devel-Profile/</a>), which
 will allow you to determine where your bottlenecks are.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-- [Perl](Category%253APerl "Category%253APerl")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Perl_Testing_-2D_by_Gavin_Sherlock"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:05 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">22,878 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

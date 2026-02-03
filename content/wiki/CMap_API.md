@@ -1,23 +1,7 @@
 ---
 title: "CMap API"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">CMap API</span>
-
-
-
-
-
-
-
+# CMap API
 
 
 Note: This document was generated from a POD formatted document checked
@@ -27,171 +11,127 @@ class="external text" rel="nofollow">SourceForge</a>. Editing will not
 result in long term changes.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">CMap
   API</span>](#CMap_API)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">VERSION</span>](#VERSION)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">5</span> <span class="toctext">Important
-  Notes</span>](#Important_Notes)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Accession
-    IDs</span>](#Accession_IDs)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Purge the
-    Cache</span>](#Purge_the_Cache)
-    - [<span class="tocnumber">5.2.1</span> <span class="toctext">Inside
-      a Program</span>](#Inside_a_Program)
-    - [<span class="tocnumber">5.2.2</span>
-      <span class="toctext">Command line</span>](#Command_line)
-    - [<span class="tocnumber">5.2.3</span> <span class="toctext">Cache
-      Level</span>](#Cache_Level)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">CMap
-    Assembly Editor Plug-ins</span>](#CMap_Assembly_Editor_Plug-ins)
-- [<span class="tocnumber">6</span> <span class="toctext">Importing
-  Data</span>](#Importing_Data)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Creating a
-    Species</span>](#Creating_a_Species)
-    - [<span class="tocnumber">6.1.1</span>
-      <span class="toctext">Returns
-      species_id</span>](#Returns_species_id)
-    - [<span class="tocnumber">6.1.2</span>
-      <span class="toctext">Parameters</span>](#Parameters)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Creating a
-    Map Set</span>](#Creating_a_Map_Set)
-    - [<span class="tocnumber">6.2.1</span>
-      <span class="toctext">Returns
-      map_set_id</span>](#Returns_map_set_id)
-    - [<span class="tocnumber">6.2.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_2)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Creating a
-    Map</span>](#Creating_a_Map)
-    - [<span class="tocnumber">6.3.1</span>
-      <span class="toctext">Returns map_id</span>](#Returns_map_id)
-    - [<span class="tocnumber">6.3.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_3)
-  - [<span class="tocnumber">6.4</span> <span class="toctext">Creating a
-    Features</span>](#Creating_a_Features)
-    - [<span class="tocnumber">6.4.1</span>
-      <span class="toctext">Returns
-      feature_id</span>](#Returns_feature_id)
-    - [<span class="tocnumber">6.4.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_4)
-  - [<span class="tocnumber">6.5</span> <span class="toctext">Creating a
-    Correspondence</span>](#Creating_a_Correspondence)
-    - [<span class="tocnumber">6.5.1</span>
-      <span class="toctext">Returns
-      feature_correspondence_id</span>](#Returns_feature_correspondence_id)
-    - [<span class="tocnumber">6.5.2</span>
-      <span class="toctext">Threshold</span>](#Threshold)
-    - [<span class="tocnumber">6.5.3</span>
-      <span class="toctext">Parameters</span>](#Parameters_5)
-  - [<span class="tocnumber">6.6</span> <span class="toctext">Creating
-    an Attribute</span>](#Creating_an_Attribute)
-    - [<span class="tocnumber">6.6.1</span>
-      <span class="toctext">Returns 1</span>](#Returns_1)
-    - [<span class="tocnumber">6.6.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_6)
-  - [<span class="tocnumber">6.7</span> <span class="toctext">Creating
-    an External Reference</span>](#Creating_an_External_Reference)
-    - [<span class="tocnumber">6.7.1</span>
-      <span class="toctext">Returns 1</span>](#Returns_1_2)
-    - [<span class="tocnumber">6.7.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_7)
-  - [<span class="tocnumber">6.8</span> <span class="toctext">Creating a
-    Map to Feature Link</span>](#Creating_a_Map_to_Feature_Link)
-    - [<span class="tocnumber">6.8.1</span>
-      <span class="toctext">Returns 1</span>](#Returns_1_3)
-    - [<span class="tocnumber">6.8.2</span>
-      <span class="toctext">Parameters</span>](#Parameters_8)
-- [<span class="tocnumber">7</span> <span class="toctext">Querying the
-  CMap Database</span>](#Querying_the_CMap_Database)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Getting
-    Species Information</span>](#Getting_Species_Information)
-    - [<span class="tocnumber">7.1.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_9)
-    - [<span class="tocnumber">7.1.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Getting
-    Map Set Information</span>](#Getting_Map_Set_Information)
-    - [<span class="tocnumber">7.2.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_10)
-    - [<span class="tocnumber">7.2.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_2)
-    - [<span class="tocnumber">7.2.3</span> <span class="toctext">See
-      also</span>](#See_also)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Getting
-    Map Information</span>](#Getting_Map_Information)
-    - [<span class="tocnumber">7.3.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_11)
-    - [<span class="tocnumber">7.3.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_3)
-    - [<span class="tocnumber">7.3.3</span> <span class="toctext">See
-      also</span>](#See_also_2)
-  - [<span class="tocnumber">7.4</span> <span class="toctext">Getting
-    Feature Information</span>](#Getting_Feature_Information)
-    - [<span class="tocnumber">7.4.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_12)
-    - [<span class="tocnumber">7.4.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_4)
-    - [<span class="tocnumber">7.4.3</span> <span class="toctext">See
-      also</span>](#See_also_3)
-  - [<span class="tocnumber">7.5</span> <span class="toctext">Getting
+- [VERSION](#VERSION)
+- [Introduction](#Introduction)
+- [Overview](#Overview)
+- [Important
+  Notes](#Important_Notes)
+  - [Accession
+    IDs](#Accession_IDs)
+  - [Purge the
+    Cache](#Purge_the_Cache)
+    - [Inside
+      a Program](#Inside_a_Program)
+    - [Command line](#Command_line)
+    - [Cache
+      Level](#Cache_Level)
+  - [CMap
+    Assembly Editor Plug-ins](#CMap_Assembly_Editor_Plug-ins)
+- [Importing
+  Data](#Importing_Data)
+  - [Creating a
+    Species](#Creating_a_Species)
+    - [Returns
+      species_id](#Returns_species_id)
+    - [Parameters](#Parameters)
+  - [Creating a
+    Map Set](#Creating_a_Map_Set)
+    - [Returns
+      map_set_id](#Returns_map_set_id)
+    - [Parameters](#Parameters_2)
+  - [Creating a
+    Map](#Creating_a_Map)
+    - [Returns map_id](#Returns_map_id)
+    - [Parameters](#Parameters_3)
+  - [Creating a
+    Features](#Creating_a_Features)
+    - [Returns
+      feature_id](#Returns_feature_id)
+    - [Parameters](#Parameters_4)
+  - [Creating a
+    Correspondence](#Creating_a_Correspondence)
+    - [Returns
+      feature_correspondence_id](#Returns_feature_correspondence_id)
+    - [Threshold](#Threshold)
+    - [Parameters](#Parameters_5)
+  - [Creating
+    an Attribute](#Creating_an_Attribute)
+    - [Returns 1](#Returns_1)
+    - [Parameters](#Parameters_6)
+  - [Creating
+    an External Reference](#Creating_an_External_Reference)
+    - [Returns 1](#Returns_1_2)
+    - [Parameters](#Parameters_7)
+  - [Creating a
+    Map to Feature Link](#Creating_a_Map_to_Feature_Link)
+    - [Returns 1](#Returns_1_3)
+    - [Parameters](#Parameters_8)
+- [Querying the
+  CMap Database](#Querying_the_CMap_Database)
+  - [Getting
+    Species Information](#Getting_Species_Information)
+    - [Parameters](#Parameters_9)
+    - [Structure
+      Returned](#Structure_Returned)
+  - [Getting
+    Map Set Information](#Getting_Map_Set_Information)
+    - [Parameters](#Parameters_10)
+    - [Structure
+      Returned](#Structure_Returned_2)
+    - [See
+      also](#See_also)
+  - [Getting
+    Map Information](#Getting_Map_Information)
+    - [Parameters](#Parameters_11)
+    - [Structure
+      Returned](#Structure_Returned_3)
+    - [See
+      also](#See_also_2)
+  - [Getting
+    Feature Information](#Getting_Feature_Information)
+    - [Parameters](#Parameters_12)
+    - [Structure
+      Returned](#Structure_Returned_4)
+    - [See
+      also](#See_also_3)
+  - [Getting
     Correspondence
-    Information</span>](#Getting_Correspondence_Information)
-    - [<span class="tocnumber">7.5.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_13)
-    - [<span class="tocnumber">7.5.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_5)
-    - [<span class="tocnumber">7.5.3</span> <span class="toctext">See
-      also</span>](#See_also_4)
-  - [<span class="tocnumber">7.6</span> <span class="toctext">Getting
-    Attribute Information</span>](#Getting_Attribute_Information)
-    - [<span class="tocnumber">7.6.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_14)
-    - [<span class="tocnumber">7.6.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_6)
-  - [<span class="tocnumber">7.7</span> <span class="toctext">Getting
+    Information](#Getting_Correspondence_Information)
+    - [Parameters](#Parameters_13)
+    - [Structure
+      Returned](#Structure_Returned_5)
+    - [See
+      also](#See_also_4)
+  - [Getting
+    Attribute Information](#Getting_Attribute_Information)
+    - [Parameters](#Parameters_14)
+    - [Structure
+      Returned](#Structure_Returned_6)
+  - [Getting
     External Reference
-    Information</span>](#Getting_External_Reference_Information)
-    - [<span class="tocnumber">7.7.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_15)
-    - [<span class="tocnumber">7.7.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_7)
-  - [<span class="tocnumber">7.8</span> <span class="toctext">Getting
+    Information](#Getting_External_Reference_Information)
+    - [Parameters](#Parameters_15)
+    - [Structure
+      Returned](#Structure_Returned_7)
+  - [Getting
     Map to Feature
-    Information</span>](#Getting_Map_to_Feature_Information)
-    - [<span class="tocnumber">7.8.1</span>
-      <span class="toctext">Parameters</span>](#Parameters_16)
-    - [<span class="tocnumber">7.8.2</span>
-      <span class="toctext">Structure
-      Returned</span>](#Structure_Returned_8)
-  - [<span class="tocnumber">7.9</span> <span class="toctext">Final
-    information</span>](#Final_information)
-- [<span class="tocnumber">8</span> <span class="toctext">Questions or
-  Comments</span>](#Questions_or_Comments)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">AUTHOR</span>](#AUTHOR)
+    Information](#Getting_Map_to_Feature_Information)
+    - [Parameters](#Parameters_16)
+    - [Structure
+      Returned](#Structure_Returned_8)
+  - [Final
+    information](#Final_information)
+- [Questions or
+  Comments](#Questions_or_Comments)
+- [AUTHOR](#AUTHOR)
 
 
-
-## <span id="CMap_API" class="mw-headline">CMap API</span>
+## CMap API
 
 CMap Application Programming Interface
 
-## <span id="VERSION" class="mw-headline">VERSION</span>
+## VERSION
 
 \$Revision: 1.1 \$
 
@@ -199,13 +139,13 @@ This document was written for the upcoming CMap 1.0 release. It
 corresponds to code that is in CVS at the time off commit. It may not be
 applicable to older versions.
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 This document is intended to help you interface with the CMap database
 using the CMap API. As CMap is written in Perl, that is the language
 used to interface with it.
 
-## <span id="Overview" class="mw-headline">Overview</span>
+## Overview
 
 There are two types of interaction between your program and the CMap
 database; "Importing Data" and "Querying the CMap Database". Each type
@@ -217,9 +157,9 @@ Creating this will be described in the "Importing Data" section.
 Querying the CMap database is done through the use of an object returned
 by the sql() method, which any CMap module has access to.
 
-## <span id="Important_Notes" class="mw-headline">Important Notes</span>
+## Important Notes
 
-### <span id="Accession_IDs" class="mw-headline">Accession IDs</span>
+### Accession IDs
 
 All the accession id columns in the CMap tables act the same. They are
 all character fields, so they will accept any combination of numbers and
@@ -234,7 +174,7 @@ been established and publicized, they should never change.
 Also, it is best to avoid strictly numeric accession ids since the
 automatic accessions are numeric and this can cause conflicts.
 
-### <span id="Purge_the_Cache" class="mw-headline">Purge the Cache</span>
+### Purge the Cache
 
 After changing information in the database (or a config file), the query
 cache needs to be purged. Not doing so, often results in a mix of old
@@ -242,7 +182,7 @@ and new information being displayed, which can be confusing.
 
 You can purge the cache inside a script or use the command line.
 
-#### <span id="Inside_a_Program" class="mw-headline">Inside a Program</span>
+#### Inside a Program
 
 Purging inside your program is simple. Use a Bio%253A%253AGMOD::CMap::Admin
 object (see "Importing Data" for creating this object) to call the
@@ -259,7 +199,7 @@ for more information.
 
        $admin->purge_cache( $cache_level );
 
-#### <span id="Command_line" class="mw-headline">Command line</span>
+#### Command line
 
 To purge the cache on the command line use cmap/bin/cmap_admin.pl. You
 can either use the menu system or by command line:
@@ -268,7 +208,7 @@ can either use the menu system or by command line:
 
      $ cmap_admin.pl [-d data_source] [--cache_level level] --action purge_query_cache
 
-#### <span id="Cache_Level" class="mw-headline">Cache Level</span>
+#### Cache Level
 
 There are four layers of the cache. This is to keep data from being
 unnecessarily purged. For instance when a correpspondence is added, no
@@ -290,7 +230,7 @@ Level 3 should be purged when feature information is changed.
 \- Cache Level 4 (purge correspondence info on down)   
 Level 4 should be purged when correspondence information is changed.
 
-### <span id="CMap_Assembly_Editor_Plug-ins" class="mw-headline">CMap Assembly Editor Plug-ins</span>
+### CMap Assembly Editor Plug-ins
 
 It is important to note that if you are writing a plug-in for
 [CMAE](CMAE "CMAE"), the methods described in this section will only
@@ -298,7 +238,7 @@ work if the data is stored locally. If the data access is remote, you
 must use the methods in `AppData.pm`. There will be further
 documentation written on this topic.
 
-## <span id="Importing_Data" class="mw-headline">Importing Data</span>
+## Importing Data
 
 To create data in the CMap database, a CMap admin object needs to be
 created. In the following example, \$data_source stores the data source
@@ -312,7 +252,7 @@ name that identifies which configuration file to use.
        my $cmap_admin
            = Bio%253A%253AGMOD::CMap::Admin->new( data_source => $data_source, );
 
-### <span id="Creating_a_Species" class="mw-headline">Creating a Species</span>
+### Creating a Species
 
        my $species_id = $admin->species_create(
            species_full_name   => $species_full_name,
@@ -321,9 +261,9 @@ name that identifies which configuration file to use.
            species_acc         => $species_acc,
        );
 
-#### <span id="Returns_species_id" class="mw-headline">Returns species_id</span>
+#### Returns species_id
 
-#### <span id="Parameters" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- species_full_name (Required)   
 Full name of the species, such as "Homo Sapiens".
@@ -338,7 +278,7 @@ displayed in species lists.
 \- species_acc   
 See "Accession IDs" for more information about accession IDs.
 
-### <span id="Creating_a_Map_Set" class="mw-headline">Creating a Map Set</span>
+### Creating a Map Set
 
        my $map_set_id = $admin->map_set_create(
            map_set_name       => $map_set_name,
@@ -354,9 +294,9 @@ See "Accession IDs" for more information about accession IDs.
            shape              => $shape,
        );
 
-#### <span id="Returns_map_set_id" class="mw-headline">Returns map_set_id</span>
+#### Returns map_set_id
 
-#### <span id="Parameters_2" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- map_set_name (Required)   
 Name of the map set being created
@@ -395,7 +335,7 @@ The color of the maps
 \- shape   
 The shape of the maps. This can be "I-beam", "box" or "dumbbell".
 
-### <span id="Creating_a_Map" class="mw-headline">Creating a Map</span>
+### Creating a Map
 
        my $map_id = $admin->map_create(
            map_name      => $map_name,
@@ -406,9 +346,9 @@ The shape of the maps. This can be "I-beam", "box" or "dumbbell".
            display_order => $display_order,
        );
 
-#### <span id="Returns_map_id" class="mw-headline">Returns map_id</span>
+#### Returns map_id
 
-#### <span id="Parameters_3" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- map_name (Required)   
 Name of the map being created
@@ -431,7 +371,7 @@ End point of the map.
 The number representing where in the order that this map will be
 displayed in map lists.
 
-### <span id="Creating_a_Features" class="mw-headline">Creating a Features</span>
+### Creating a Features
 
        my $feature_id = $admin->feature_create(
            map_id           => $map_id,
@@ -445,9 +385,9 @@ displayed in map lists.
            #gclass => $gclass, # not likely to be used
        );
 
-#### <span id="Returns_feature_id" class="mw-headline">Returns feature_id</span>
+#### Returns feature_id
 
-#### <span id="Parameters_4" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- map_id (Required)   
 The map ID that this map belongs to. This can be retrieved after
@@ -480,7 +420,7 @@ The direction the feature points in relation to the map.
 The gclass that the feature will have. This only relates to using CMap
 integrated with GBrowse and should not be used otherwise.
 
-### <span id="Creating_a_Correspondence" class="mw-headline">Creating a Correspondence</span>
+### Creating a Correspondence
 
        my $feature_correspondence_id = $admin->feature_correspondence_create(
            feature_id1                => $feature_id1,
@@ -493,9 +433,9 @@ integrated with GBrowse and should not be used otherwise.
            feature_correspondence_acc => $feature_correspondence_acc,
        );
 
-#### <span id="Returns_feature_correspondence_id" class="mw-headline">Returns feature_correspondence_id</span>
+#### Returns feature_correspondence_id
 
-#### <span id="Threshold" class="mw-headline">Threshold</span>
+#### Threshold
 
 In an effort so speed up import of correspondences, correspondences can
 be queued. When the number in the queue breaks a threshold, those
@@ -511,7 +451,7 @@ method again with no arguments.
 
      $admin->feature_correspondence_create();
 
-#### <span id="Parameters_5" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- feature_id1 (Required unless feature_acc1 is given)   
 The feature_id of the first feature in the correspondence.
@@ -553,7 +493,7 @@ See "Accession IDs" for more information about accession IDs.
 \- threshold   
 See the Threshold section above.
 
-### <span id="Creating_an_Attribute" class="mw-headline">Creating an Attribute</span>
+### Creating an Attribute
 
        $admin->attribute_create(
            object_id       => $object_id,
@@ -567,9 +507,9 @@ See the Threshold section above.
 See also \$admin-\>set_attribute() for a slightly faster (but more
 complicated) version.
 
-#### <span id="Returns_1" class="mw-headline">Returns 1</span>
+#### Returns 1
 
-#### <span id="Parameters_6" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- object_id (Required)   
 The primary key of the object.
@@ -590,7 +530,7 @@ displayed in attribute lists.
 \- is_public   
 If 1 (default), the attribute will be displayed on the CMap web page.
 
-### <span id="Creating_an_External_Reference" class="mw-headline">Creating an External Reference</span>
+### Creating an External Reference
 
        $admin->xref_create(
            object_id     => $object_id,
@@ -604,9 +544,9 @@ If 1 (default), the attribute will be displayed on the CMap web page.
 See also \$admin-\>set_xref() for a slightly faster (but more
 complicated) version.
 
-#### <span id="Returns_1_2" class="mw-headline">Returns 1</span>
+#### Returns 1
 
-#### <span id="Parameters_7" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- object_id (Required)   
 The primary key of the object.
@@ -624,7 +564,7 @@ The type of object being xrefd, such as map, feature, map_set, etc.
 The number representing where in the order that this xref will be
 displayed in xref lists.
 
-### <span id="Creating_a_Map_to_Feature_Link" class="mw-headline">Creating a Map to Feature Link</span>
+### Creating a Map to Feature Link
 
        $admin->map_to_feature_create(
            feature_id  => $feature_id,
@@ -633,9 +573,9 @@ displayed in xref lists.
            map_acc     => $map_acc,
        );
 
-#### <span id="Returns_1_3" class="mw-headline">Returns 1</span>
+#### Returns 1
 
-#### <span id="Parameters_8" class="mw-headline">Parameters</span>
+#### Parameters
 
 \- map_id (Required unless map_acc is given)   
 Identifier of the map to be linked.
@@ -649,7 +589,7 @@ Identifier of the feature to be linked.
 \- feature_acc (Required unless feature_id is given)   
 Accession of the feature to be linked.
 
-## <span id="Querying_the_CMap_Database" class="mw-headline">Querying the CMap Database</span>
+## Querying the CMap Database
 
 To query the data, another object is needed which we will call the
 \$sql_object. The \$sql_object can be created from any CMap object. For
@@ -663,11 +603,11 @@ the following examble, we'll use the \$cmap_admin object from the
 When you have the \$sql_object, you can then call any of the methods in
 Bio/GMOD/CMap/Data/Generic.pm.
 
-### <span id="Getting_Species_Information" class="mw-headline">Getting Species Information</span>
+### Getting Species Information
 
        my $species = $sql_object->get_species();
 
-#### <span id="Parameters_9" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -685,7 +625,7 @@ is this a relational map (is_relational_map) :
 \- Boolean  
 Is this enabled (is_enabled) :
 
-#### <span id="Structure_Returned" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   species_id          => $species_id,
                species_acc         => $species_acc,
@@ -695,11 +635,11 @@ Is this enabled (is_enabled) :
            },
        ]
 
-### <span id="Getting_Map_Set_Information" class="mw-headline">Getting Map Set Information</span>
+### Getting Map Set Information
 
        my $map_sets = $sql_object->get_map_sets();
 
-#### <span id="Parameters_10" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -732,7 +672,7 @@ Is this enabled (is_enabled) :
 \- Boolean count_maps (count_maps)   
 Add a map count to the return object
 
-#### <span id="Structure_Returned_2" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   map_set_id             => $map_set_id,
                map_set_acc            => $map_set_acc,
@@ -759,16 +699,16 @@ Add a map count to the return object
            },
        ]
 
-#### <span id="See_also" class="mw-headline">See also</span>
+#### See also
 
 The get_map_sets_simple by executing "perldoc
 Bio%253A%253AGMOD::CMap::Data::Generic";
 
-### <span id="Getting_Map_Information" class="mw-headline">Getting Map Information</span>
+### Getting Map Information
 
        my $maps = $sql_object->get_maps();
 
-#### <span id="Parameters_11" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -804,7 +744,7 @@ Is this enabled (is_enabled) :
 \- Boolean count_features (count_features)   
 Add a feature count to the return object
 
-#### <span id="Structure_Returned_3" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   map_id                 => $map_id,
                map_acc                => $map_acc,
@@ -838,16 +778,16 @@ Add a feature count to the return object
            },
        ]
 
-#### <span id="See_also_2" class="mw-headline">See also</span>
+#### See also
 
 The get_maps_simple by executing "perldoc
 Bio%253A%253AGMOD::CMap::Data::Generic";
 
-### <span id="Getting_Feature_Information" class="mw-headline">Getting Feature Information</span>
+### Getting Feature Information
 
        my $features = $sql_object->get_features();
 
-#### <span id="Parameters_12" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -899,7 +839,7 @@ mostly useful for feature_name searches.
 Value that dictates if aliases are ignored. The default is to get
 aliases.
 
-#### <span id="Structure_Returned_4" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   feature_id          => $feature_id,
                feature_acc         => $feature_acc,
@@ -933,16 +873,16 @@ aliases.
            },
        ]
 
-#### <span id="See_also_3" class="mw-headline">See also</span>
+#### See also
 
 The get_features_simple by executing "perldoc
 Bio%253A%253AGMOD::CMap::Data::Generic";
 
-### <span id="Getting_Correspondence_Information" class="mw-headline">Getting Correspondence Information</span>
+### Getting Correspondence Information
 
        my $correspondences = $sql_object->get_feature_correspondence_details()
 
-#### <span id="Parameters_13" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -979,7 +919,7 @@ parameter must be set to true, otherwise, no data will be returned.
 
 \- Scores for comparing to evidence types (evidence_type_score)   
 
-#### <span id="Structure_Returned_5" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   feature_name2              => $feature_name2,
                feature_id2                => $feature_id2,
@@ -1012,16 +952,16 @@ parameter must be set to true, otherwise, no data will be returned.
            },
        ]
 
-#### <span id="See_also_4" class="mw-headline">See also</span>
+#### See also
 
 The get_feature_correspondences_simple by executing "perldoc
 Bio%253A%253AGMOD::CMap::Data::Generic";
 
-### <span id="Getting_Attribute_Information" class="mw-headline">Getting Attribute Information</span>
+### Getting Attribute Information
 
        my $attributes = $sql_object->get_attributes();
 
-#### <span id="Parameters_14" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -1048,7 +988,7 @@ Boolean value. If set to 1, return all without regard to whether
 object_id is null. This will allow retrieval of attributes given
 generally to all of a type.Specifying an object_id overrides this.
 
-#### <span id="Structure_Returned_6" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   attribute_id    => $attribute_id,
                object_id       => $object_id,
@@ -1061,11 +1001,11 @@ generally to all of a type.Specifying an object_id overrides this.
            },
        ]
 
-### <span id="Getting_External_Reference_Information" class="mw-headline">Getting External Reference Information</span>
+### Getting External Reference Information
 
        my $xrefs = $sql_object->get_xrefs();
 
-#### <span id="Parameters_15" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -1085,7 +1025,7 @@ database.
 
 \- Order by clause (order_by)   
 
-#### <span id="Structure_Returned_7" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   xref_id       => $xref_id,
                object_id     => $object_id,
@@ -1096,11 +1036,11 @@ database.
            },
        ]
 
-### <span id="Getting_Map_to_Feature_Information" class="mw-headline">Getting Map to Feature Information</span>
+### Getting Map to Feature Information
 
        my $map_to_features = $sql_object->get_map_to_features()
 
-#### <span id="Parameters_16" class="mw-headline">Parameters</span>
+#### Parameters
 
 The parameters narrow down search results or provide direction for the
 results.
@@ -1116,7 +1056,7 @@ database.
 
 \- Feature Accession (feature_acc)   
 
-#### <span id="Structure_Returned_8" class="mw-headline">Structure Returned</span>
+#### Structure Returned
 
        [   {   map_id      => $map_id,
                map_acc     => $map_acc,
@@ -1125,12 +1065,12 @@ database.
            },
        ]
 
-### <span id="Final_information" class="mw-headline">Final information</span>
+### Final information
 
 For more information about the methods available, execute "perldoc
 Bio%253A%253AGMOD::CMap::Data::Generic" on the command line.
 
-## <span id="Questions_or_Comments" class="mw-headline">Questions or Comments</span>
+## Questions or Comments
 
 Contact the CMap list, gmod-cmap@lists.sourceforge.net with your
 questions or comments.
@@ -1140,93 +1080,13 @@ GMOD,
 <a href="http://sourceforge.net/projects/gmod/" class="external free"
 rel="nofollow">http://sourceforge.net/projects/gmod/</a>.
 
-## <span id="AUTHOR" class="mw-headline">AUTHOR</span>
+## AUTHOR
 
 Ben Faga, faga@cshl.edu
 
 Copyright (c) 2007 Cold Spring Harbor Laboratory
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [CMap](Category%253ACMap "Category%253ACMap")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/CMap_API" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:06 on 15 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">48,595 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

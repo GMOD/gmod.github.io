@@ -1,26 +1,11 @@
 ---
 title: "January 2010 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">January 2010 GMOD Meeting</span>
-
-
-
+# January 2010 GMOD Meeting
 
 
 (Redirected from [January 2010 GMOD Meeting
-Registration](January_2010_GMOD_Meeting_Registration)
-
-
-
+Registration](/wiki/January_2010_GMOD_Meeting_Registration)
 
 
 <table
@@ -63,32 +48,25 @@ rel="nofollow">Accelrys</a> for providing meeting equipment for us to
 use.
 
 
-## Contents
+  Agenda](#Agenda)
+  - [Thursday,
+    January 14](#Thursday.2C_January_14)
+  - [Friday,
+    January 15](#Friday.2C_January_15)
+- [Satellite
+  Meetings](#Satellite_Meetings)
+- [Meeting
+  Participants](#Meeting_Participants)
+- [Agenda
+  Proposals](#Agenda_Proposals)
+- [Venue and
+  Lodging](#Venue_and_Lodging)
+- [Feedback](#Feedback)
+- [Previous and
+  Next Meetings](#Previous_and_Next_Meetings)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Thursday,
-    January 14</span>](#Thursday.2C_January_14)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Friday,
-    January 15</span>](#Friday.2C_January_15)
-- [<span class="tocnumber">2</span> <span class="toctext">Satellite
-  Meetings</span>](#Satellite_Meetings)
-- [<span class="tocnumber">3</span> <span class="toctext">Meeting
-  Participants</span>](#Meeting_Participants)
-- [<span class="tocnumber">4</span> <span class="toctext">Agenda
-  Proposals</span>](#Agenda_Proposals)
-- [<span class="tocnumber">5</span> <span class="toctext">Venue and
-  Lodging</span>](#Venue_and_Lodging)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">7</span> <span class="toctext">Previous and
-  Next Meetings</span>](#Previous_and_Next_Meetings)
-
-
-
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 
 <a
@@ -100,7 +78,6 @@ width="140" height="120" alt="Maryann Martone" /></a>
 
 
 Guest Speaker: Dr. Maryann Martone
-
 
 
 *<a href="http://www.neuinfo.org/" class="external text"
@@ -130,8 +107,7 @@ rel="nofollow">National Center for Microscopy and Imaging Research
 and data mining tools.
 
 
-
-### <span id="Thursday.2C_January_14" class="mw-headline">Thursday, January 14</span>
+### Thursday, January 14
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
@@ -170,7 +146,7 @@ rel="nofollow">Flex</a> to Create User-Configurable Interfaces for GMOD Database
 | 4:30 | Discussion toward standard website platforms for MOD sites |  |  |
 | 5:00 | **Dinner** (on your own) |  |  |
 
-### <span id="Friday.2C_January_15" class="mw-headline">Friday, January 15</span>
+### Friday, January 15
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
@@ -224,7 +200,7 @@ class="internal" title="Jan2010UIPrototypes.odp">OpenOffice</a>, [PDF](https://r
 rel="nofollow">WebGBrowse</a> | Ram Podicheti |  |
 | 5:30 | **Finish** |  |  |
 
-## <span id="Satellite_Meetings" class="mw-headline">Satellite Meetings</span>
+## Satellite Meetings
 
 This year (for the first time I believe) there were *satellite* meetings
 in addition to the main meeting. Satellite meetings were about a
@@ -301,7 +277,7 @@ development.</td>
 </tbody>
 </table>
 
-## <span id="Meeting_Participants" class="mw-headline">Meeting Participants</span>
+## Meeting Participants
 
 | First Name(s) | Last Name | Affiliation | URL |
 |----|----|----|----|
@@ -403,7 +379,7 @@ rel="nofollow">http://www.wyomingbioinformatics.org/~achurban/</a> |
 | Eric Kenneth | Wafula | Depamphilis Lab, Penn State university | <a href="http://depcla4.bio.psu.edu/" class="external free"
 rel="nofollow">http://depcla4.bio.psu.edu/</a> |
 
-## <span id="Agenda_Proposals" class="mw-headline">Agenda Proposals</span>
+## Agenda Proposals
 
 If you have something you want to be on the agenda at this meeting
 please add it below.
@@ -455,7 +431,6 @@ please add it below.
   
 
 
-
 <a
 href="http://www.bestwesterncalifornia.com/hotels/best-western-seven-seas/"
 rel="nofollow" title="Best Western Seven Seas"><img
@@ -464,8 +439,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="160" height="120" alt="Best Western Seven Seas" /></a>
 
 
-
-## <span id="Venue_and_Lodging" class="mw-headline">Venue and Lodging</span>
+## Venue and Lodging
 
 The meeting was held at the <a
 href="http://www.bestwesterncalifornia.com/hotels/best-western-seven-seas/"
@@ -474,7 +448,7 @@ is adjacent to the
 <a href="http://www.towncountry.com" class="external text"
 rel="nofollow">Town and Country Resort</a>, where PAG is being held.
 
-## <span id="Feedback" class="mw-headline">Feedback</span>
+## Feedback
 
 Attendees were asked to provide feedback at the end of the meeting.
 
@@ -647,7 +621,7 @@ future?**
 - Good meeting, and it's great that all the slides/presentations are
   going to be available online. Thanks!
 
-## <span id="Previous_and_Next_Meetings" class="mw-headline">Previous and Next Meetings</span>
+## Previous and Next Meetings
 
 - [August 2009 GMOD
   Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting") - Part
@@ -658,91 +632,6 @@ future?**
   Cambridge UK.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AJanuary_2010_GMOD_Meeting" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/January_2010_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:17 on 4 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">568,127 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

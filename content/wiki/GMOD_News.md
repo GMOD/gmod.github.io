@@ -1,9 +1,7 @@
 ---
 title: "GMOD News"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GMOD News</span>
+# GMOD News
 
 <a href="https://twitter.com/gmodproject" class="twitter-timeline"
 data-widget-id="268391087838728192">Tweets by gmodproject</a>
@@ -16,20 +14,17 @@ to the **[GMOD News
 Archives](GMOD_News_Archives "GMOD News Archives")**. See also the [GMOD
 Calendar and Events List](Calendar "Calendar").
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Recent
   News</span>](#Recent_News)
-- [<span class="tocnumber">2</span> <span class="toctext">News
-  Archives</span>](#News_Archives)
-- [<span class="tocnumber">3</span> <span class="toctext">Adding a News
-  Item</span>](#Adding_a_News_Item)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Short
-    Instructions</span>](#Short_Instructions)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Longer
-    Instructions</span>](#Longer_Instructions)
+- [News
+  Archives](#News_Archives)
+- [Adding a News
+  Item](#Adding_a_News_Item)
+  - [Short
+    Instructions](#Short_Instructions)
+  - [Longer
+    Instructions](#Longer_Instructions)
 
-## <span id="Recent_News" class="mw-headline">Recent News</span>
+## Recent News
 
 <table class="RSSMainBody" style="background:inherit;">
 <colgroup>
@@ -91,34 +86,34 @@ href="News/JBrowse2_v1.1.0_Released">JBrowse2 v1.1.0 Released</a></h3>
 <h2 id="contents-1">Contents</h2>
 
 <ul>
-<li><span><span class="tocnumber">1</span> <span class="toctext">We're
-pleased to announce a new release of JBrowse Web!</span></span>
+<li><span>We're
+pleased to announce a new release of JBrowse Web!</span>
 <ul>
-<li><span><span class="tocnumber">1.1</span> <span
+<li><span><span
 class="toctext">Changed callbacks language from JavaScript to
 Jexl</span></span></li>
-<li><span><span class="tocnumber">1.2</span> <span class="toctext">Fetch
-intron and upstream/downstream sequences</span></span></li>
-<li><span><span class="tocnumber">1.3</span> <span
+<li><span>Fetch
+intron and upstream/downstream sequences</span></li>
+<li><span><span
 class="toctext">Interactive documentation using
 Storybook</span></span></li>
-<li><span><span class="tocnumber">1.4</span> <span
+<li><span><span
 class="toctext">Enhanced navigation to drawer widget
 stack</span></span></li>
-<li><span><span class="tocnumber">1.5</span> <span
+<li><span><span
 class="toctext">Downloads</span></span></li>
-<li><span><span class="tocnumber">1.6</span> <span class="toctext">1.1.0
-(2021-03-29)</span></span>
+<li><span>1.1.0
+(2021-03-29)</span>
 <ul>
-<li><span><span class="tocnumber">1.6.1</span> <span class="toctext">🚀
-Enhancement</span></span></li>
-<li><span><span class="tocnumber">1.6.2</span> <span class="toctext">🐛
-Bug Fix</span></span></li>
-<li><span><span class="tocnumber">1.6.3</span> <span class="toctext">📝
-Documentation</span></span></li>
-<li><span><span class="tocnumber">1.6.4</span> <span class="toctext">🏠
-Internal</span></span></li>
-<li><span><span class="tocnumber">1.6.5</span> <span
+<li><span>🚀
+Enhancement</span></li>
+<li><span>🐛
+Bug Fix</span></li>
+<li><span>📝
+Documentation</span></li>
+<li><span>🏠
+Internal</span></li>
+<li><span><span
 class="toctext">Committers: 6</span></span></li>
 </ul></li>
 </ul></li>
@@ -219,8 +214,8 @@ by default (@cmdcolin)</li>
 <li>1774 Add warning dialog in LGV before returning to import form to
 prevent accidentally losing the current view (@cmdcolin)</li>
 </ol>
-<h4 id="bug-fix"><span id=".F0.9F.90.9B_Bug_Fix" class="mw-headline">🐛
-Bug Fix</span></h4>
+<h4 id="bug-fix">🐛
+Bug Fix</h4>
 <p>core</p>
 <ol>
 <li>1811 Check for existence of window more robustly to allow in SSR or
@@ -398,7 +393,7 @@ title="InterMine">InterMine</a></li>
 </ul>
 <p>We already know that there will be Tripal, Chado, Apollo and JBrowse
 developers present.</p>
-<h2 id="agenda"><span id="Agenda" class="mw-headline">Agenda</span></h2>
+<h2 id="agenda">Agenda</h2>
 <p>Thursday:</p>
 <table class="wikitable">
 <tbody>
@@ -1422,12 +1417,12 @@ title="GMOD News">GMOD News</a> on 2014/02/10</em>
 </tbody>
 </table>
 
-## <span id="News_Archives" class="mw-headline">[News Archives](GMOD_News_Archives "GMOD News Archives")</span>
+## [News Archives](GMOD_News_Archives "GMOD News Archives")
 
 The [GMOD News Archives](GMOD_News_Archives "GMOD News Archives") lists
 all news items since autumn 2007.
 
-## <span id="Adding_a_News_Item" class="mw-headline">Adding a News Item</span>
+## Adding a News Item
 
 **Note:** If you don't want to do this yourself, please send the item to
 the
@@ -1440,7 +1435,7 @@ item will automatically add it to the RSS feed, which appears on the
 Archives](GMOD_News_Archives "GMOD News Archives") pages, and in the
 news tracker on the [home page](Main_Page "Main Page").
 
-### <span id="Short_Instructions" class="mw-headline">Short Instructions</span>
+### Short Instructions
 
 Please follow these guidelines when adding a news item.
 
@@ -1454,12 +1449,9 @@ Please follow these guidelines when adding a news item.
     item looks like you want.
 4.  Once you are happy with how the item looks, insert this line at the
     end of it:
-
-<!-- -->
-
      (don't do this--it was for the mediawiki instance)
 
-### <span id="Longer_Instructions" class="mw-headline">Longer Instructions</span>
+### Longer Instructions
 
 Please follow these guidelines when adding a news item.
 
@@ -1506,52 +1498,9 @@ Please follow these guidelines when adding a news item.
       feed. If you do need to update an item later on, you may do so,
       but please also update the NewsItem line:
 
-    <!-- -->
-
+    
         NewsItem|yyyy/mm/dd, updated yyyy/mm/dd
 
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_News" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 19:40 on 13 December 2018.</span>
-<!-- - <span id="footer-info-viewcount">2,097,518 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

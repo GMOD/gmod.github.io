@@ -1,83 +1,51 @@
 ---
 title: "Site Guidelines"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">Site Guidelines</span>
-
-
-
-
-
-
-
+# Site Guidelines
 
 
 This page discusses editorial policies and best practices to follow when
 updating or creating content in the GMOD web site.
 
 
-## Contents
+  Introduction](#Introduction)
+- [Meta-Guidelines](#Meta-Guidelines)
+  - [Ignoring](#Ignoring)
+  - [Updating](#Updating)
+  - [Enforcing](#Enforcing)
+- [Guidelines](#Guidelines)
+  - [Page
+    Names](#Page_Names)
+    - [Capitalization](#Capitalization)
+    - [Redirects](#Redirects)
+  - [Minor vs
+    Major Edits](#Minor_vs_Major_Edits)
+  - [Tags /
+    Categories](#Tags_.2F_Categories)
+    - [New
+      Categories](#New_Categories)
+  - [Uploading
+    Files](#Uploading_Files)
+    - [Destination
+      Filenames](#Destination_Filenames)
+    - [File
+      Categories](#File_Categories)
+    - [Diagrams and
+      Cartoons](#Diagrams_and_Cartoons)
+  - [Format](#Format)
+- [Embedding
+  Media](#Embedding_Media)
+  - [Flash](#Flash)
+- [Writing
+  Code](#Writing_Code)
+- [Adding
+  References](#Adding_References)
+  - [Example](#Example)
+- [Component
+  Information Pages](#Component_Information_Pages)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Meta-Guidelines</span>](#Meta-Guidelines)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Ignoring</span>](#Ignoring)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Updating</span>](#Updating)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Enforcing</span>](#Enforcing)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Guidelines</span>](#Guidelines)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Page
-    Names</span>](#Page_Names)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Capitalization</span>](#Capitalization)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">Redirects</span>](#Redirects)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Minor vs
-    Major Edits</span>](#Minor_vs_Major_Edits)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Tags /
-    Categories</span>](#Tags_.2F_Categories)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">New
-      Categories</span>](#New_Categories)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Uploading
-    Files</span>](#Uploading_Files)
-    - [<span class="tocnumber">3.4.1</span>
-      <span class="toctext">Destination
-      Filenames</span>](#Destination_Filenames)
-    - [<span class="tocnumber">3.4.2</span> <span class="toctext">File
-      Categories</span>](#File_Categories)
-    - [<span class="tocnumber">3.4.3</span>
-      <span class="toctext">Diagrams and
-      Cartoons</span>](#Diagrams_and_Cartoons)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Format</span>](#Format)
-- [<span class="tocnumber">4</span> <span class="toctext">Embedding
-  Media</span>](#Embedding_Media)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Flash</span>](#Flash)
-- [<span class="tocnumber">5</span> <span class="toctext">Writing
-  Code</span>](#Writing_Code)
-- [<span class="tocnumber">6</span> <span class="toctext">Adding
-  References</span>](#Adding_References)
-  - [<span class="tocnumber">6.1</span>
-    <span class="toctext">Example</span>](#Example)
-- [<span class="tocnumber">7</span> <span class="toctext">Component
-  Information Pages</span>](#Component_Information_Pages)
-
-
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 The GMOD web site editorial policies and best practices are defined
 here. Consistent use of these policies and practices will hopefully lead
@@ -88,21 +56,19 @@ these guidelines and cover things like how to update the guidelines, and
 when you can ignore them. These are followed by the actual guidelines,
 describing how content should be created.
 
-## <span id="Meta-Guidelines" class="mw-headline">Meta-Guidelines</span>
+## Meta-Guidelines
 
 Or, **Guidelines on Guidelines**.
 
-### <span id="Ignoring" class="mw-headline">Ignoring</span>
+### Ignoring
 
 **Q:** Can I ignore these guidelines?
 
 **A:** Yes.
 
 
-
 We would much rather have a contribution that completely ignores these
 guidelines than not have the contribution at all.
-
 
 
 This is for pragmatic and philosophical reasons. The whole goal of a
@@ -119,7 +85,7 @@ MediaWiki details and site policies at the same time.
 However, once you get comfortable with MediaWiki, please think about
 writing your content so it does conform to these standards.
 
-### <span id="Updating" class="mw-headline">Updating</span>
+### Updating
 
 These guidelines are a work in progress and you are encouraged to
 suggest additions, deletions or revisions to them. The best way to do
@@ -128,7 +94,7 @@ Desk](GMOD_Help_Desk "GMOD Help Desk"). Alternatively, you can post them
 to this page (or to this page's discussion/talk
 page).
 
-### <span id="Enforcing" class="mw-headline">Enforcing</span>
+### Enforcing
 
 **Q:** Is there any enforcement of these guidelines?
 
@@ -139,39 +105,33 @@ guidelines. This means that any non-conforming material you write won't
 be deleted, but it might be modified to follow the guidelines if and
 when somebody notices.
 
-## <span id="Guidelines" class="mw-headline">Guidelines</span>
+## Guidelines
 
 This is a list of guidelines for creating content in the GMOD web site.
 Some guidelines are accompanied by discussion that explains them.
 
 
-
 Guidelines are shown like this.
-
 
 
 Discussion is shown as regular text.
 
-### <span id="Page_Names" class="mw-headline">Page Names</span>
+### Page Names
 
-#### <span id="Capitalization" class="mw-headline">Capitalization</span>
-
+#### Capitalization
 
 
 Use _Generous Capitalization_ instead of _Parsimonious capitalization_.
-
 
 
 For example, use "Site Guidelines" instead of "Site guidelines".
 
 It looks better.
 
-#### <span id="Redirects" class="mw-headline">Redirects</span>
-
+#### Redirects
 
 
 Use of MediaWiki redirects for page name synonyms is encouraged.
-
 
 
 This means that if a user types
@@ -200,14 +160,12 @@ A slight downside of this is that the
 displays lots of pages that are only redirects to other pages. This
 turns into more of an index than a listing of all pages.
 
-### <span id="Minor_vs_Major_Edits" class="mw-headline">Minor vs Major Edits</span>
-
+### Minor vs Major Edits
 
 
 If you do not want the page you are editing to be listed in the _New &
 Revised Pages_ list on the GMOD home page, then mark your edit as
 _minor_.
-
 
 
 When you update a page in this web site you can flag it as a _minor
@@ -220,12 +178,10 @@ a reverse chronological ordering of all recent non-minor edits
 If your edit is small, such as a spelling or other typo correction, then
 mark it as a minor edit.
 
-### <span id="Tags_.2F_Categories" class="mw-headline">Tags / Categories</span>
-
+### Tags / Categories
 
 
 Tag any pages you edit with appropriate categories for that page.
-
 
 
 Be generous in your tagging. If a particular category gets too many
@@ -244,12 +200,10 @@ As of January, 2008 we are still adding category tags to pages. Once
 that work is closer to complete, categories will be prominently featured
 in site navigation.
 
-#### <span id="New_Categories" class="mw-headline">New Categories</span>
-
+#### New Categories
 
 
 If you think we need a new category then create it.
-
 
 
 You can create a new category by typing the new category name in the
@@ -271,15 +225,13 @@ When creating a new category please:
 Or, just send your new category suggestion to the [GMOD Help
 Desk](GMOD_Help_Desk "GMOD Help Desk") and we will add it.
 
-### <span id="Uploading_Files" class="mw-headline">Uploading Files</span>
+### Uploading Files
 
-#### <span id="Destination_Filenames" class="mw-headline">Destination Filenames</span>
-
+#### Destination Filenames
 
 
 When uploading a file, please give the file a meaningful **Destination
 filename**.
-
 
 
 The **Destination filename** is the name the file will have in the GMOD
@@ -296,8 +248,7 @@ category](Category%253APublications "Category%253APublications") all you see is
 "Gkl777.pdf". You have to follow the link to find out what the file is
 about.
 
-#### <span id="File_Categories" class="mw-headline">File Categories</span>
-
+#### File Categories
 
 
 When uploading a presentation or a paper, please add it to the
@@ -306,12 +257,10 @@ When uploading a presentation or a paper, please add it to the
 categories. Also add the file to any other appropriate categories.
 
 
-
 If the file is an image that is being linked to from a page then you
 don't need to categorize it.
 
-#### <span id="Diagrams_and_Cartoons" class="mw-headline">Diagrams and Cartoons</span>
-
+#### Diagrams and Cartoons
 
 
 When uploading a diagram or cartoon that was created in a drawing
@@ -320,11 +269,10 @@ source file. Load both files with the same name, but different
 extensions.
 
 
-
 This will allow others (and yourself) to modify the diagrams in the
 future rather than recreate them from scratch.
 
-### <span id="Format" class="mw-headline">Format</span>
+### Format
 
 **Please Note:**
 
@@ -549,14 +497,14 @@ Reloaded''' button.</p>
 </tbody>
 </table>
 
-## <span id="Embedding_Media" class="mw-headline">Embedding Media</span>
+## Embedding Media
 
 The GMOD wiki uses
 <a href="http://www.mediawikiwidgets.org/Widgets_Catalog"
 class="external text" rel="nofollow">Widgets</a> to embed various types
 of file.
 
-### <span id="Flash" class="mw-headline">Flash</span>
+### Flash
 
 To embed Flash into a page, use the following syntax:
 
@@ -566,7 +514,7 @@ More documentation on the
 <a href="http://www.mediawiki.org/wiki/Extension:OFlash"
 class="external text">OFlash MediaWiki page</a>.
 
-## <span id="Writing_Code" class="mw-headline">Writing Code</span>
+## Writing Code
 
 The GMOD wiki employs the extension
 <a href="http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi"
@@ -592,7 +540,7 @@ more. Full documentation can be found on the
 <a href="http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi"
 class="external text">Syntax Highlight GeSHi</a> MediaWiki page.
 
-## <span id="Adding_References" class="mw-headline">Adding References</span>
+## Adding References
 
 If you wish to reference a paper with a PubMed ID or a digital object
 identifier (DOI), the full information can be automatically retrieved
@@ -612,7 +560,7 @@ Put the tag `<references />` where you want the full references to
 appear on the page. The full details of each paper will magically appear
 in place of the `<references />` tag.
 
-### <span id="Example" class="mw-headline">Example</span>
+### Example
 
 **Wikitext**
 
@@ -637,7 +585,7 @@ transcriptome; it cites the classic Ficklin _et al._ Tripal paper
     **Cite error: Invalid `<ref>` tag; no text was provided for refs
     named `PMID:21959868`**</span>
 
-## <span id="Component_Information_Pages" class="mw-headline">Component Information Pages</span>
+## Component Information Pages
 
 The information pages about each component are generated by feeding the
 information on the `tool_data` page through a template. To edit what
@@ -664,90 +612,3 @@ The `tool_data` pages essentially act as a data store, and the page
 [Template:ToolDisplay](Template:ToolDisplay "Template:ToolDisplay")
 parses and formats the data to produce a standardized GMOD component
 page.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-
-- [GMOD Web Site](Category%253AGMOD_Web_Site "Category%253AGMOD Web Site")
-- [Help](Category%253AHelp "Category%253AHelp")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Site_Guidelines" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:18 on 8 November 2013.</span>
-<!-- - <span id="footer-info-viewcount">216,156 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

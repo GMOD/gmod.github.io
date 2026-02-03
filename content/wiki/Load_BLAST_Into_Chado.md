@@ -1,62 +1,38 @@
 ---
 title: "Load BLAST Into Chado"
 ---
+# Load BLAST Into Chado
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Load BLAST Into Chado</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Abstract</span>](#Abstract)
-- [<span class="tocnumber">2</span> <span class="toctext">Have an
+  Abstract](#Abstract)
+- [Have an
   existing Chado genome
-  database</span>](#Have_an_existing_Chado_genome_database)
-- [<span class="tocnumber">3</span> <span class="toctext">Convert BLAST
-  analysis to GFF3</span>](#Convert_BLAST_analysis_to_GFF3)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">BLAST GFF3
-    sample for Chado</span>](#BLAST_GFF3_sample_for_Chado)
-- [<span class="tocnumber">4</span> <span class="toctext">Load Query
+  database](#Have_an_existing_Chado_genome_database)
+- [Convert BLAST
+  analysis to GFF3](#Convert_BLAST_analysis_to_GFF3)
+  - [BLAST GFF3
+    sample for Chado](#BLAST_GFF3_sample_for_Chado)
+- [Load Query
   Protein sequence to Chado
-  DB</span>](#Load_Query_Protein_sequence_to_Chado_DB)
-- [<span class="tocnumber">5</span> <span class="toctext">Load BLAST
-  result GFF3 to Chado DB</span>](#Load_BLAST_result_GFF3_to_Chado_DB)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Chado
-    Tables Updated</span>](#Chado_Tables_Updated)
-- [<span class="tocnumber">6</span> <span class="toctext">See
-  also</span>](#See_also)
-- [<span class="tocnumber">7</span> <span class="toctext">More
-  Information</span>](#More_Information)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Authors</span>](#Authors)
+  DB](#Load_Query_Protein_sequence_to_Chado_DB)
+- [Load BLAST
+  result GFF3 to Chado DB](#Load_BLAST_result_GFF3_to_Chado_DB)
+  - [Chado
+    Tables Updated](#Chado_Tables_Updated)
+- [See
+  also](#See_also)
+- [More
+  Information](#More_Information)
+- [Authors](#Authors)
 
 
-
-# <span id="Abstract" class="mw-headline">Abstract</span>
+# Abstract
 
 This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes steps to add a
 [BLAST](Category%253ABLAST "Category%253ABLAST") analysis to a [Chado
 database](Chado_-_Getting_Started "Chado - Getting Started").
 
-# <span id="Have_an_existing_Chado_genome_database" class="mw-headline">Have an existing Chado genome database</span>
+# Have an existing Chado genome database
 
 See [Load RefSeq Into
 Chado](Load_RefSeq_Into_Chado "Load RefSeq Into Chado") for advice on
@@ -67,7 +43,7 @@ will need current modules from the [BioPerl](BioPerl "BioPerl") Git and
 <a href="SVN" class="mw-redirect" title="SVN">GMOD SVN repositories</a>
 to have this example work.
 
-# <span id="Convert_BLAST_analysis_to_GFF3" class="mw-headline">Convert BLAST analysis to GFF3</span>
+# Convert BLAST analysis to GFF3
 
 For example, match yeast proteins to your genome with tBLASTn, and
 reformat to [GFF3](GFF3 "GFF3").
@@ -90,7 +66,7 @@ Finally clean up the GFF3 a bit:
 
       perl -pi -e 's/Target=Sequence:/Target=/' dmel4-modsc.tblastn.gff
 
-## <span id="BLAST_GFF3_sample_for_Chado" class="mw-headline">BLAST GFF3 sample for Chado</span>
+## BLAST GFF3 sample for Chado
 
 Result should be formatted like this:
 
@@ -104,7 +80,7 @@ Result should be formatted like this:
       NC_004353 tBLASTn.MOD_Scer  match_part  160517  161407  185 + 0 Target=S000005817 455 980
          # this is a protein match with 2 HSP parts, note the identical Target=
 
-# <span id="Load_Query_Protein_sequence_to_Chado_DB" class="mw-headline">Load Query Protein sequence to Chado DB</span>
+# Load Query Protein sequence to Chado DB
 
 You want to have your query sequences used for BLAST, such as proteins,
 for reference in your
@@ -121,7 +97,7 @@ instead use the
 script that will retain more useful annotations for your Chado database.
 Then BLAST matches can be linked to many known gene/protein attributes.
 
-# <span id="Load_BLAST_result_GFF3_to_Chado_DB" class="mw-headline">Load BLAST result GFF3 to Chado DB</span>
+# Load BLAST result GFF3 to Chado DB
 
 Use the `gmod_bulk_load_gff3.pl` script for this, indicating the input
 is `--analysis`, and the Target names are unique IDs matching above
@@ -138,7 +114,7 @@ features such as the SGD:S000002445 protein, you should use
 
 to ensure that Target feature is linked with your Blast result.
 
-## <span id="Chado_Tables_Updated" class="mw-headline">Chado Tables Updated</span>
+## Chado Tables Updated
 
 Then you should see these database updates:
 
@@ -192,106 +168,18 @@ results](Chado_Best_Practices#Results_from_BLAST "Chado Best Practices")
 for clarification* [Scott](User%253AScott "User%253AScott") 19:18, 21 November
 2008 (UTC)
 
-# <span id="See_also" class="mw-headline">See also</span>
+# See also
 
 - [Chado_Best_Practices#Results_from_BLAST](Chado_Best_Practices#Results_from_BLAST "Chado Best Practices")
 
-# <span id="More_Information" class="mw-headline">More Information</span>
+# More Information
 
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
 rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
-# <span id="Authors" class="mw-headline">Authors</span>
+# Authors
 
 - [Dongilbert](User%253ADongilbert "User%253ADongilbert") 23:24, 3 April 2007
   (EDT)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [BLAST](Category%253ABLAST "Category%253ABLAST")
-- [Chado](Category%253AChado "Category%253AChado")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_BLAST_Into_Chado" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:34 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">99,887 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

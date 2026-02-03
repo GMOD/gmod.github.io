@@ -1,23 +1,7 @@
 ---
 title: "Chado%253A%253AAutoDBI Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado%253A%253AAutoDBI Presentation</span>
-
-
-
-
-
-
-
+# Chado%253A%253AAutoDBI Presentation
 
 
 This Wiki section is an edited version of
@@ -25,42 +9,36 @@ This Wiki section is an edited version of
 title="AutoDBI.pdf">Brian O'Connor's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Relation to
   Turnkey</span>](#Relation_to_Turnkey)
-- [<span class="tocnumber">2</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview)
-- [<span class="tocnumber">3</span> <span class="toctext">Project
-  Overview</span>](#Project_Overview)
-- [<span class="tocnumber">4</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_2)
-- [<span class="tocnumber">5</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_3)
-- [<span class="tocnumber">6</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_4)
-- [<span class="tocnumber">7</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_5)
-- [<span class="tocnumber">8</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_6)
-- [<span class="tocnumber">9</span> <span class="toctext">Technical
-  Overview</span>](#Technical_Overview_7)
-- [<span class="tocnumber">10</span> <span class="toctext">Problem
-  1</span>](#Problem_1)
-- [<span class="tocnumber">11</span> <span class="toctext">Problem
-  2</span>](#Problem_2)
-- [<span class="tocnumber">12</span> <span class="toctext">Problems 3,
-  4, & 5</span>](#Problems_3.2C_4.2C_.26_5)
-- [<span class="tocnumber">13</span> <span class="toctext">Things
-  Chado%253A%253AAutoDBI does well</span>](#Things_Chado%253A%253AAutoDBI_does_well)
-- [<span class="tocnumber">14</span> <span class="toctext">For More
-  Information</span>](#For_More_Information)
+- [Technical
+  Overview](#Technical_Overview)
+- [Project
+  Overview](#Project_Overview)
+- [Technical
+  Overview](#Technical_Overview_2)
+- [Technical
+  Overview](#Technical_Overview_3)
+- [Technical
+  Overview](#Technical_Overview_4)
+- [Technical
+  Overview](#Technical_Overview_5)
+- [Technical
+  Overview](#Technical_Overview_6)
+- [Technical
+  Overview](#Technical_Overview_7)
+- [Problem
+  1](#Problem_1)
+- [Problem
+  2](#Problem_2)
+- [Problems 3,
+  4, & 5](#Problems_3.2C_4.2C_.26_5)
+- [Things
+  Chado%253A%253AAutoDBI does well](#Things_Chado%253A%253AAutoDBI_does_well)
+- [For More
+  Information](#For_More_Information)
 
 
-
-##### <span id="Relation_to_Turnkey" class="mw-headline">Relation to Turnkey</span>
+##### Relation to Turnkey
 
 Turnkey is a package that auto-generates Web sites given a relational
 schema, based on SQL::Translator
@@ -68,11 +46,11 @@ schema, based on SQL::Translator
 - Turnkey authors: Allen Day, Scott Cain, Brian O'Connor
 - Turnkey and Chado%253A%253AAutoDBI objects are essentially the same
 
-##### <span id="Technical_Overview" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Code Generation
 
-##### <span id="Project_Overview" class="mw-headline">Project Overview</span>
+##### Project Overview
 
 Convert SQL Queries/Inserts/Deletes -\> Object Calls
 
@@ -96,7 +74,7 @@ To:
 ```
 
 
-##### <span id="Technical_Overview_2" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Database connection: use a base class
 - Set up base object and connect, then create a *table object* to access
@@ -117,7 +95,7 @@ Turnkey::Model::DBI->set_db('Main', $dsn, $name, $pass, {AutoCommit => 1});
 ```
 
 
-##### <span id="Technical_Overview_3" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Basic [ORM](Glossary#ORM "Glossary") Object: Feature
 
@@ -139,7 +117,7 @@ sub feature { shift->feature_id }
 
 - data field accessors by Class::Accessor
 
-##### <span id="Technical_Overview_4" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Basic ORM Object: Feature
   - has_a
@@ -176,7 +154,7 @@ sub featureprops { return shift->featureprop_feature_id; }
   - Tell base object that the *table object* has_a() or has_many() keys
     corresponding to some key in other *table object*
 
-##### <span id="Technical_Overview_5" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Basic ORM Object: Feature
   - skipping linker tables for has_many
@@ -196,7 +174,7 @@ Turnkey::Model::Feature->has_many( synonyms2 =>
 ```
 
 
-##### <span id="Technical_Overview_6" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Transactions
   - Chado%253A%253AAutoDBI supports transactions, and one can wrap the
@@ -223,7 +201,7 @@ Turnkey::Model::Feature->has_many( synonyms2 =>
 ```
 
 
-##### <span id="Technical_Overview_7" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Lazy Loading
   - One can either do automated creation of objects or explicitly
@@ -245,7 +223,7 @@ Turnkey::Model::Feature->set_up_table('feature');
 ```
 
 
-##### <span id="Problem_1" class="mw-headline">Problem 1</span>
+##### Problem 1
 
 - Create Feature & Add Description
 
@@ -270,7 +248,7 @@ my $featureprop = Turnkey::Model::Featureprop->find_or_create({
 ```
 
 
-##### <span id="Problem_2" class="mw-headline">Problem 2</span>
+##### Problem 2
 
 - Retrieve a Feature via Searching
   - Search using strings or identifiers, a search will return an
@@ -292,7 +270,7 @@ my @results = Turnkey::Model::Feature->search_like(name => 'x-%');
 ```
 
 
-##### <span id="Problems_3.2C_4.2C_.26_5" class="mw-headline">Problems 3, 4, & 5</span>
+##### Problems 3, 4, & 5
 
 - Update a Feature
 
@@ -315,7 +293,7 @@ $feature->delete();
 ```
 
 
-##### <span id="Things_Chado%253A%253AAutoDBI_does_well" class="mw-headline">Things Chado%253A%253AAutoDBI does well</span>
+##### Things Chado%253A%253AAutoDBI does well
 
 - Easy to use
 - Easy to port
@@ -332,111 +310,16 @@ wrong SQL and Chado%253A%253AAutoDBI approach will be speedier.
 
   
 
-##### <span id="For_More_Information" class="mw-headline">For More Information</span>
+##### For More Information
 
 - Class::DBI
   - <a href="http://www.class-dbi.com" class="external free"
     rel="nofollow">http://www.class-dbi.com</a>
   - <a href="http://search.cpan.org" class="external free"
     rel="nofollow">http://search.cpan.org</a>
-
-<!-- -->
-
 - Turnkey
   - <a href="http://turnkey.sf.net" class="external free"
     rel="nofollow">http://turnkey.sf.net</a>
-
-<!-- -->
-
 - Biopackages
   - <a href="http://biopackages.net" class="external free"
     rel="nofollow">http://biopackages.net</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Perl](Category%253APerl "Category%253APerl")
-- [Turnkey](Category%253ATurnkey "Category%253ATurnkey")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado%253A%253AAutoDBI_Presentation"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">20,372 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

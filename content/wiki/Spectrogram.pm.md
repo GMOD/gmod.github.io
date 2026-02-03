@@ -1,23 +1,7 @@
 ---
 title: "Spectrogram.pm"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Spectrogram.pm</span>
-
-
-
-
-
-
-
+# Spectrogram.pm
 
 
 Spectrogram.pm is a [GBrowse](GBrowse.1 "GBrowse") plugin written by
@@ -53,7 +37,7 @@ height="449" alt="Spec2.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/39/Spec3.png" class="thumbborder" width="869"
 height="538" alt="Spec3.png" />
 
-## <span id="How_is_the_DNA_spectrogram_calculated.3F" class="mw-headline">How is the DNA spectrogram calculated?</span>
+## How is the DNA spectrogram calculated?
 
 A sliding window of variable size and overlap is used to calculate the
 spectrogram, which is displayed graphically as a track in the genome
@@ -111,92 +95,3 @@ calculated in the main gbrowse display until you turn off the
 'Spectrogram' track.
 
 The plugin was written by Sheldon McKay (mckays@cshl.edu)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [GBrowse Plugins](Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")
-- [Pages with problems or
-  questions](Category%253APages_with_problems_or_questions "Category%253APages with problems or questions")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Spectrogram.pm" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 14:21 on 4 May
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">25,343 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

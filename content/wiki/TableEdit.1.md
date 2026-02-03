@@ -1,72 +1,40 @@
 ---
 title: "TableEdit"
 ---
+# TableEdit
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">TableEdit</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Genome
   community annotation with a MediaWiki
   wiki</span>](#Genome_community_annotation_with_a_MediaWiki_wiki)
-- [<span class="tocnumber">2</span> <span class="toctext">Table
-  Edit</span>](#Table_Edit)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Source
-    code</span>](#Source_code)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Object
-    classes</span>](#Object_classes)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">wikiBox</span>](#wikiBox)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">wikiBoxRow</span>](#wikiBoxRow)
-    - [<span class="tocnumber">2.2.3</span>
-      <span class="toctext">TableEdit</span>](#TableEdit)
-- [<span class="tocnumber">3</span> <span class="toctext">Table Edit at
-  EcoliWiki</span>](#Table_Edit_at_EcoliWiki)
-- [<span class="tocnumber">4</span> <span class="toctext">Table Edit at
-  Hackathon 2007</span>](#Table_Edit_at_Hackathon_2007)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">TableEdit
-    Chado round trip</span>](#TableEdit_Chado_round_trip)
-    - [<span class="tocnumber">4.1.1</span>
-      <span class="toctext">Chado2TableEdit</span>](#Chado2TableEdit)
-    - [<span class="tocnumber">4.1.2</span>
-      <span class="toctext">TableEdit2Chado</span>](#TableEdit2Chado)
-    - [<span class="tocnumber">4.1.3</span>
-      <span class="toctext">Bidirectional
-      issues</span>](#Bidirectional_issues)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">TableEdit
-    IntraWiki Interaction</span>](#TableEdit_IntraWiki_Interaction)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Restricting search to
-    Tables</span>](#Restricting_search_to_Tables)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">AJAX</span>](#AJAX)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Other
-    TableEdit enhancements</span>](#Other_TableEdit_enhancements)
+- [Table
+  Edit](#Table_Edit)
+  - [Source
+    code](#Source_code)
+  - [Object
+    classes](#Object_classes)
+    - [wikiBox](#wikiBox)
+    - [wikiBoxRow](#wikiBoxRow)
+    - [TableEdit](#TableEdit)
+- [Table Edit at
+  EcoliWiki](#Table_Edit_at_EcoliWiki)
+- [Table Edit at
+  Hackathon 2007](#Table_Edit_at_Hackathon_2007)
+  - [TableEdit
+    Chado round trip](#TableEdit_Chado_round_trip)
+    - [Chado2TableEdit](#Chado2TableEdit)
+    - [TableEdit2Chado](#TableEdit2Chado)
+    - [Bidirectional
+      issues](#Bidirectional_issues)
+  - [TableEdit
+    IntraWiki Interaction](#TableEdit_IntraWiki_Interaction)
+  - [Restricting search to
+    Tables](#Restricting_search_to_Tables)
+  - [AJAX](#AJAX)
+  - [Other
+    TableEdit enhancements](#Other_TableEdit_enhancements)
 
 
-## <span id="Genome_community_annotation_with_a_MediaWiki_wiki" class="mw-headline">Genome community annotation with a MediaWiki wiki</span>
+## Genome community annotation with a MediaWiki wiki
 
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
 rel="nofollow">Ecoliwiki</a> is providing detailed gene reports in a
@@ -83,7 +51,7 @@ rel="nofollow">Wikipedia</a>). MediaWiki is also included in the
 [Community Annotation
 System](Community_Annotation_System "Community Annotation System").
 
-## <span id="Table_Edit" class="mw-headline">Table Edit</span>
+## Table Edit
 
 Ecoliwiki's
 <a href="http://ecoliwiki.net/colipedia/index.php/Special:TableEdit"
@@ -100,7 +68,7 @@ change the style of the headings row using a GUI, rather than
 class="external text">MediaWiki's table markup</a>, which can be a
 challenge to read and update.
 
-### <span id="Source_code" class="mw-headline">Source code</span>
+### Source code
 
 The TableEdit code is at
 <a href="http://www.mediawiki.org/wiki/Extension:TableEdit"
@@ -110,9 +78,9 @@ The basic infrastructure is based on two PHP object classes, `wikiBox`
 and `TableEdit`. The `wikiBox` object class is defined by
 `class.wikiBox.php `in the TableEdit distribution.
 
-### <span id="Object_classes" class="mw-headline">Object classes</span>
+### Object classes
 
-#### <span id="wikiBox" class="mw-headline">`wikiBox`</span>
+#### `wikiBox`
 
 A `wikiBox` object consists of a series of attributes that control the
 behavior and appearance of the table and a collection of row objects
@@ -122,13 +90,13 @@ title="wp:Serialization">serialize and unserialize</a> its contents, and
 for interacting with the [MySQL](MySQL "MySQL") database that controls
 the tables.
 
-#### <span id="wikiBoxRow" class="mw-headline">`wikiBoxRow`</span>
+#### `wikiBoxRow`
 
 A `wikiBoxRow` object holds the actual data. This is also defined in
 `class.wikiBox.php`. The `wikiBoxRow` has methods for loading and saving
 etc.
 
-#### <span id="TableEdit" class="mw-headline">`TableEdit`</span>
+#### `TableEdit`
 
 class `TableEdit` is defined in `SpecialTableEdit.body.php` and is an
 extension of the
@@ -138,7 +106,7 @@ class</a>. However, it can be invoked without generating a special page
 to handle interactions between `wikiBox`es and Article objects in
 MediaWiki.
 
-## <span id="Table_Edit_at_EcoliWiki" class="mw-headline">Table Edit at EcoliWiki</span>
+## Table Edit at EcoliWiki
 
 In constructing the first release of
 <a href="http://ecoliwiki.net/colipedia/" class="external text"
@@ -203,7 +171,7 @@ foreach ($rows as $index=>$row){
 ```
 
 
-## <span id="Table_Edit_at_Hackathon_2007" class="mw-headline">Table Edit at Hackathon 2007</span>
+## Table Edit at Hackathon 2007
 
 Making the Table Editor more useful and integrating it better with other
 GMOD tools was our goal for the wiki part of [Hackathon
@@ -212,7 +180,7 @@ TableEdit/Wiki hackathon
 projects](Talk%253AHackathon_2007_info#Possible_TableEdit.2FWiki_hackathon_projects "Talk:Hackathon 2007 info")
 for more.
 
-### <span id="TableEdit_Chado_round_trip" class="mw-headline">TableEdit Chado round trip</span>
+### TableEdit Chado round trip
 
 Integration with
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> will require
@@ -222,7 +190,7 @@ Chado. In both directions there are issues about how to handle
 situations where the modifications on one end might cause loss or
 corruption of data in the other.
 
-#### <span id="Chado2TableEdit" class="mw-headline">Chado2TableEdit</span>
+#### Chado2TableEdit
 
 This would involve:
 
@@ -241,7 +209,7 @@ updates, and row deletion, this should be a relatively simple task of
 getting [middleware](Category%253AMiddleware "Category%253AMiddleware") to have
 Chado provide data in a form that the TableEdit can use.
 
-#### <span id="TableEdit2Chado" class="mw-headline">TableEdit2Chado</span>
+#### TableEdit2Chado
 
 This would involve:
 
@@ -258,7 +226,7 @@ transform data to update Chado where the structure of the incoming data
 has to be manipulated to fit the Chado
 [schema](Glossary#Schema "Glossary").
 
-#### <span id="Bidirectional_issues" class="mw-headline">Bidirectional issues</span>
+#### Bidirectional issues
 
 Some issues to discuss:
 
@@ -272,7 +240,7 @@ Some issues to discuss:
   [middleware](Category%253AMiddleware "Category%253AMiddleware") (highly
   desirable!).
 
-### <span id="TableEdit_IntraWiki_Interaction" class="mw-headline">TableEdit IntraWiki Interaction</span>
+### TableEdit IntraWiki Interaction
 
 Two or more tables in a wiki could be interconnected so that updating
 the Table in page A triggers an update of the table in page B. Use case:
@@ -281,14 +249,14 @@ of the code needed. It may then be possible to couple tables without an
 intermediate trip to
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-### <span id="Restricting_search_to_Tables" class="mw-headline">Restricting search to Tables</span>
+### Restricting search to Tables
 
 This one is relatively simple and we might have a prototype before the
 [2007 Hackathon](Hackathon_2007_info "Hackathon 2007 info") - modify the
 wiki search system to restrict searching to a particular class of tables
 or fields.
 
-### <span id="AJAX" class="mw-headline">AJAX</span>
+### AJAX
 
 There are many places where the TableEdit system would benefit from the
 addition of [AJAX](Category%253AAJAX "Category%253AAJAX").
@@ -297,7 +265,7 @@ addition of [AJAX](Category%253AAJAX "Category%253AAJAX").
 - Autocomplete fields
 - other?
 
-### <span id="Other_TableEdit_enhancements" class="mw-headline">Other TableEdit enhancements</span>
+### Other TableEdit enhancements
 
 Many of the items above do not require changes to the core TableEdit
 extension. But we can do that too during the [2007
@@ -308,94 +276,3 @@ Some possible things to add or change
 - change to store the data in the wiki page in a more compact form.
 - change how deleted rows are handled to allow restoration
 - other?
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Community
-  Annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/TableEdit" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:12 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">99,656 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

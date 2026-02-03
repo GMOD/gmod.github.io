@@ -1,243 +1,140 @@
 ---
 title: "GMOD RPC API"
 ---
+# GMOD RPC API
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD RPC API</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Document
   Status</span>](#Document_Status)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Background</span>](#Background)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Members</span>](#Members)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Goals</span>](#Goals)
-- [<span class="tocnumber">5</span> <span class="toctext">Related
-  projects</span>](#Related_projects)
-- [<span class="tocnumber">6</span> <span class="toctext">Data
-  classes</span>](#Data_classes)
-- [<span class="tocnumber">7</span> <span class="toctext">API
-  Version</span>](#API_Version)
-- [<span class="tocnumber">8</span> <span class="toctext">Data
-  version</span>](#Data_version)
-- [<span class="tocnumber">9</span> <span class="toctext">Result
-  dates</span>](#Result_dates)
-- [<span class="tocnumber">10</span> <span class="toctext">Return
-  types</span>](#Return_types)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Compression</span>](#Compression)
-- [<span class="tocnumber">12</span> <span class="toctext">Supported
-  HTTP methods</span>](#Supported_HTTP_methods)
-- [<span class="tocnumber">13</span> <span class="toctext">Querying or
-  Filtering by Organism</span>](#Querying_or_Filtering_by_Organism)
-- [<span class="tocnumber">14</span> <span class="toctext">Pretty
-  URLs</span>](#Pretty_URLs)
-- [<span class="tocnumber">15</span> <span class="toctext">Language
-  Implementation Pages</span>](#Language_Implementation_Pages)
-- [<span class="tocnumber">16</span> <span class="toctext">Error
-  handling</span>](#Error_handling)
-  - [<span class="tocnumber">16.1</span> <span class="toctext">HTTP
-    error code 400</span>](#HTTP_error_code_400)
-- [<span class="tocnumber">17</span> <span class="toctext">Use
-  Cases</span>](#Use_Cases)
-- [<span class="tocnumber">18</span>
-  <span class="toctext">Services</span>](#Services)
-  - [<span class="tocnumber">18.1</span>
-    <span class="toctext">Searches</span>](#Searches)
-    - [<span class="tocnumber">18.1.1</span>
-      <span class="toctext">Organism List</span>](#Organism_List)
-      - [<span class="tocnumber">18.1.1.1</span>
-        <span class="toctext">Service Name</span>](#Service_Name)
-      - [<span class="tocnumber">18.1.1.2</span>
-        <span class="toctext">Purpose</span>](#Purpose)
-      - [<span class="tocnumber">18.1.1.3</span>
-        <span class="toctext">URL</span>](#URL)
-      - [<span class="tocnumber">18.1.1.4</span>
-        <span class="toctext">Return types</span>](#Return_types_2)
-      - [<span class="tocnumber">18.1.1.5</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type)
-      - [<span class="tocnumber">18.1.1.6</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs)
-      - [<span class="tocnumber">18.1.1.7</span>
-        <span class="toctext">XML Result</span>](#XML_Result)
-      - [<span class="tocnumber">18.1.1.8</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result)
-    - [<span class="tocnumber">18.1.2</span> <span class="toctext">Gene
-      full text search</span>](#Gene_full_text_search)
-      - [<span class="tocnumber">18.1.2.1</span>
-        <span class="toctext">Service Name</span>](#Service_Name_2)
-      - [<span class="tocnumber">18.1.2.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_2)
-      - [<span class="tocnumber">18.1.2.3</span>
-        <span class="toctext">Description</span>](#Description)
-      - [<span class="tocnumber">18.1.2.4</span>
-        <span class="toctext">URL</span>](#URL_2)
-      - [<span class="tocnumber">18.1.2.5</span>
-        <span class="toctext">Return types</span>](#Return_types_3)
-      - [<span class="tocnumber">18.1.2.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_2)
-      - [<span class="tocnumber">18.1.2.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_2)
-      - [<span class="tocnumber">18.1.2.8</span>
-        <span class="toctext">XML Result</span>](#XML_Result_2)
-      - [<span class="tocnumber">18.1.2.9</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result_2)
-    - [<span class="tocnumber">18.1.3</span> <span class="toctext">Gene
-      location</span>](#Gene_location)
-      - [<span class="tocnumber">18.1.3.1</span>
-        <span class="toctext">Service Name</span>](#Service_Name_3)
-      - [<span class="tocnumber">18.1.3.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_3)
-      - [<span class="tocnumber">18.1.3.3</span>
-        <span class="toctext">Description</span>](#Description_2)
-      - [<span class="tocnumber">18.1.3.4</span>
-        <span class="toctext">URL</span>](#URL_3)
-      - [<span class="tocnumber">18.1.3.5</span>
-        <span class="toctext">Return types</span>](#Return_types_4)
-      - [<span class="tocnumber">18.1.3.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_3)
-      - [<span class="tocnumber">18.1.3.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_3)
-      - [<span class="tocnumber">18.1.3.8</span>
-        <span class="toctext">XML Result</span>](#XML_Result_3)
-      - [<span class="tocnumber">18.1.3.9</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result_3)
-    - [<span class="tocnumber">18.1.4</span> <span class="toctext">Gene
-      Ontology search</span>](#Gene_Ontology_search)
-      - [<span class="tocnumber">18.1.4.1</span>
-        <span class="toctext">Service Name</span>](#Service_Name_4)
-      - [<span class="tocnumber">18.1.4.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_4)
-      - [<span class="tocnumber">18.1.4.3</span>
-        <span class="toctext">Description</span>](#Description_3)
-      - [<span class="tocnumber">18.1.4.4</span>
-        <span class="toctext">URL</span>](#URL_4)
-      - [<span class="tocnumber">18.1.4.5</span>
-        <span class="toctext">Return types</span>](#Return_types_5)
-      - [<span class="tocnumber">18.1.4.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_4)
-      - [<span class="tocnumber">18.1.4.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_4)
-      - [<span class="tocnumber">18.1.4.8</span>
-        <span class="toctext">XML Result</span>](#XML_Result_4)
-      - [<span class="tocnumber">18.1.4.9</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result_4)
-    - [<span class="tocnumber">18.1.5</span> <span class="toctext">Gene
-      ortholog search</span>](#Gene_ortholog_search)
-      - [<span class="tocnumber">18.1.5.1</span>
-        <span class="toctext">Service name</span>](#Service_name_5)
-      - [<span class="tocnumber">18.1.5.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_5)
-      - [<span class="tocnumber">18.1.5.3</span>
-        <span class="toctext">Description</span>](#Description_4)
-      - [<span class="tocnumber">18.1.5.4</span>
-        <span class="toctext">URL</span>](#URL_5)
-      - [<span class="tocnumber">18.1.5.5</span>
-        <span class="toctext">Return types</span>](#Return_types_6)
-      - [<span class="tocnumber">18.1.5.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_5)
-      - [<span class="tocnumber">18.1.5.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_5)
-      - [<span class="tocnumber">18.1.5.8</span>
-        <span class="toctext">XML Result:</span>](#XML_Result:)
-      - [<span class="tocnumber">18.1.5.9</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result_5)
-    - [<span class="tocnumber">18.1.6</span>
-      <span class="toctext">Organism ortholog
-      search</span>](#Organism_ortholog_search)
-      - [<span class="tocnumber">18.1.6.1</span>
-        <span class="toctext">Service name</span>](#Service_name_6)
-      - [<span class="tocnumber">18.1.6.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_6)
-      - [<span class="tocnumber">18.1.6.3</span>
-        <span class="toctext">Description</span>](#Description_5)
-      - [<span class="tocnumber">18.1.6.4</span>
-        <span class="toctext">URL</span>](#URL_6)
-      - [<span class="tocnumber">18.1.6.5</span>
-        <span class="toctext">Return types</span>](#Return_types_7)
-      - [<span class="tocnumber">18.1.6.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_6)
-      - [<span class="tocnumber">18.1.6.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_6)
-      - [<span class="tocnumber">18.1.6.8</span>
-        <span class="toctext">XML Result:</span>](#XML_Result:_2)
-      - [<span class="tocnumber">18.1.6.9</span>
-        <span class="toctext">JSON Result</span>](#JSON_Result_6)
-  - [<span class="tocnumber">18.2</span>
-    <span class="toctext">Fetching</span>](#Fetching)
-    - [<span class="tocnumber">18.2.1</span> <span class="toctext">Gene
-      records</span>](#Gene_records)
-      - [<span class="tocnumber">18.2.1.1</span>
-        <span class="toctext">Service name</span>](#Service_name_7)
-      - [<span class="tocnumber">18.2.1.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_7)
-      - [<span class="tocnumber">18.2.1.3</span>
-        <span class="toctext">Description</span>](#Description_6)
-      - [<span class="tocnumber">18.2.1.4</span>
-        <span class="toctext">URL</span>](#URL_7)
-      - [<span class="tocnumber">18.2.1.5</span>
-        <span class="toctext">Return types</span>](#Return_types_8)
-      - [<span class="tocnumber">18.2.1.6</span>
-        <span class="toctext">Default return
-        type</span>](#Default_return_type_7)
-      - [<span class="tocnumber">18.2.1.7</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_7)
-      - [<span class="tocnumber">18.2.1.8</span>
-        <span class="toctext">XML Result</span>](#XML_Result_5)
-    - [<span class="tocnumber">18.2.2</span>
-      <span class="toctext">Sequence</span>](#Sequence)
-      - [<span class="tocnumber">18.2.2.1</span>
-        <span class="toctext">Service name</span>](#Service_name_8)
-      - [<span class="tocnumber">18.2.2.2</span>
-        <span class="toctext">Purpose</span>](#Purpose_8)
-      - [<span class="tocnumber">18.2.2.3</span>
-        <span class="toctext">Description</span>](#Description_7)
-      - [<span class="tocnumber">18.2.2.4</span>
-        <span class="toctext">URL</span>](#URL_8)
-      - [<span class="tocnumber">18.2.2.5</span>
-        <span class="toctext">Return types</span>](#Return_types_9)
-      - [<span class="tocnumber">18.2.2.6</span>
-        <span class="toctext">Example URLs</span>](#Example_URLs_8)
-      - [<span class="tocnumber">18.2.2.7</span>
-        <span class="toctext">FASTA Result:</span>](#FASTA_Result:)
-- [<span class="tocnumber">19</span>
-  <span class="toctext">TODO</span>](#TODO)
+- [Background](#Background)
+- [Members](#Members)
+- [Goals](#Goals)
+- [Related
+  projects](#Related_projects)
+- [Data
+  classes](#Data_classes)
+- [API
+  Version](#API_Version)
+- [Data
+  version](#Data_version)
+- [Result
+  dates](#Result_dates)
+- [Return
+  types](#Return_types)
+- [Compression](#Compression)
+- [Supported
+  HTTP methods](#Supported_HTTP_methods)
+- [Querying or
+  Filtering by Organism](#Querying_or_Filtering_by_Organism)
+- [Pretty
+  URLs](#Pretty_URLs)
+- [Language
+  Implementation Pages](#Language_Implementation_Pages)
+- [Error
+  handling](#Error_handling)
+  - [HTTP
+    error code 400](#HTTP_error_code_400)
+- [Use
+  Cases](#Use_Cases)
+- [Services](#Services)
+  - [Searches](#Searches)
+    - [Organism List](#Organism_List)
+      - [Service Name](#Service_Name)
+      - [Purpose](#Purpose)
+      - [URL](#URL)
+      - [Return types](#Return_types_2)
+      - [Default return
+        type](#Default_return_type)
+      - [Example URLs](#Example_URLs)
+      - [XML Result](#XML_Result)
+      - [JSON Result](#JSON_Result)
+    - [Gene
+      full text search](#Gene_full_text_search)
+      - [Service Name](#Service_Name_2)
+      - [Purpose](#Purpose_2)
+      - [Description](#Description)
+      - [URL](#URL_2)
+      - [Return types](#Return_types_3)
+      - [Default return
+        type](#Default_return_type_2)
+      - [Example URLs](#Example_URLs_2)
+      - [XML Result](#XML_Result_2)
+      - [JSON Result](#JSON_Result_2)
+    - [Gene
+      location](#Gene_location)
+      - [Service Name](#Service_Name_3)
+      - [Purpose](#Purpose_3)
+      - [Description](#Description_2)
+      - [URL](#URL_3)
+      - [Return types](#Return_types_4)
+      - [Default return
+        type](#Default_return_type_3)
+      - [Example URLs](#Example_URLs_3)
+      - [XML Result](#XML_Result_3)
+      - [JSON Result](#JSON_Result_3)
+    - [Gene
+      Ontology search](#Gene_Ontology_search)
+      - [Service Name](#Service_Name_4)
+      - [Purpose](#Purpose_4)
+      - [Description](#Description_3)
+      - [URL](#URL_4)
+      - [Return types](#Return_types_5)
+      - [Default return
+        type](#Default_return_type_4)
+      - [Example URLs](#Example_URLs_4)
+      - [XML Result](#XML_Result_4)
+      - [JSON Result](#JSON_Result_4)
+    - [Gene
+      ortholog search](#Gene_ortholog_search)
+      - [Service name](#Service_name_5)
+      - [Purpose](#Purpose_5)
+      - [Description](#Description_4)
+      - [URL](#URL_5)
+      - [Return types](#Return_types_6)
+      - [Default return
+        type](#Default_return_type_5)
+      - [Example URLs](#Example_URLs_5)
+      - [XML Result:](#XML_Result:)
+      - [JSON Result](#JSON_Result_5)
+    - [Organism ortholog
+      search](#Organism_ortholog_search)
+      - [Service name](#Service_name_6)
+      - [Purpose](#Purpose_6)
+      - [Description](#Description_5)
+      - [URL](#URL_6)
+      - [Return types](#Return_types_7)
+      - [Default return
+        type](#Default_return_type_6)
+      - [Example URLs](#Example_URLs_6)
+      - [XML Result:](#XML_Result:_2)
+      - [JSON Result](#JSON_Result_6)
+  - [Fetching](#Fetching)
+    - [Gene
+      records](#Gene_records)
+      - [Service name](#Service_name_7)
+      - [Purpose](#Purpose_7)
+      - [Description](#Description_6)
+      - [URL](#URL_7)
+      - [Return types](#Return_types_8)
+      - [Default return
+        type](#Default_return_type_7)
+      - [Example URLs](#Example_URLs_7)
+      - [XML Result](#XML_Result_5)
+    - [Sequence](#Sequence)
+      - [Service name](#Service_name_8)
+      - [Purpose](#Purpose_8)
+      - [Description](#Description_7)
+      - [URL](#URL_8)
+      - [Return types](#Return_types_9)
+      - [Example URLs](#Example_URLs_8)
+      - [FASTA Result:](#FASTA_Result:)
+- [TODO](#TODO)
 
 
-## <span id="Document_Status" class="mw-headline">Document Status</span>
+## Document Status
 
 In progress.
 
-## <span id="Background" class="mw-headline">Background</span>
+## Background
 
 This effort was started after [Josh
 Goodman](/wiki/User%253AJogoodma "User%253AJogoodma")'s talk at the [January
@@ -251,7 +148,7 @@ organism databases by creating an easy to use high level RESTful
 currently in the proposal stage and have no been implemented at any
 [MOD](/wiki/MOD "MOD").
 
-## <span id="Members" class="mw-headline">Members</span>
+## Members
 
 - [Josh Goodman](/wiki/User%253AJogoodma "User%253AJogoodma") -
   <a href="http://flybase.org" class="external text"
@@ -264,40 +161,40 @@ currently in the proposal stage and have no been implemented at any
   rel="nofollow">InterMine</a>
 - Giles Velarde 
 
-## <span id="Services" class="mw-headline">Services</span>
+## Services
 
-### <span id="Searches" class="mw-headline">Searches</span>
+### Searches
 
-#### <span id="Organism_List" class="mw-headline">Organism List</span>
+#### Organism List
 
-##### <span id="Service_Name" class="mw-headline">Service Name</span>
+##### Service Name
 
 organisms
 
-##### <span id="Purpose" class="mw-headline">Purpose</span>
+##### Purpose
 
 Provides a list of organisms that are able to be queried with the
 service provider.
 
-##### <span id="URL" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/organisms\[.xml \| .json\]
 
-##### <span id="Return_types_2" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/organisms
 - http://flybase.org/gmodrpc/v1.1/organisms.xml
 - http://flybase.org/gmodrpc/v1.1/organisms.json
 
-##### <span id="XML_Result" class="mw-headline">XML Result</span>
+##### XML Result
 
 
 ``` de1
@@ -324,7 +221,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -350,38 +247,38 @@ XML
        }
     }
 
-#### <span id="Gene_full_text_search" class="mw-headline">Gene full text search</span>
+#### Gene full text search
 
-##### <span id="Service_Name_2" class="mw-headline">Service Name</span>
+##### Service Name
 
 fulltext
 
-##### <span id="Purpose_2" class="mw-headline">Purpose</span>
+##### Purpose
 
 Performs a full text search on records and returns the IDs for matching
 records.
 
-##### <span id="Description" class="mw-headline">Description</span>
+##### Description
 
 This service returns features that contain the search term anywhere in
 the gene record. Results can be restricted to a specific organism by
 supplying the NCBI taxonomy id.
 
-##### <span id="URL_2" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/fulltext/\<search
 term\>\[.xml \| .json\]?\[type=\<SO term
 ID\>\]\[taxid=\<taxid\>\]\[genus=\<genus\>\]\[species=\<species\>\]
 
-##### <span id="Return_types_3" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type_2" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_2" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/fulltext/cotransfection?type=SO:0000704 -
   Find genes that contain the term cotransfection.
@@ -394,7 +291,7 @@ XML
   Find Drosophila simulans genes that are labeled with InterPro ID
   IPR000483.
 
-##### <span id="XML_Result_2" class="mw-headline">XML Result</span>
+##### XML Result
 
 
 ``` de1
@@ -427,7 +324,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result_2" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -459,17 +356,17 @@ XML
        }
     }
 
-#### <span id="Gene_location" class="mw-headline">Gene location</span>
+#### Gene location
 
-##### <span id="Service_Name_3" class="mw-headline">Service Name</span>
+##### Service Name
 
 location
 
-##### <span id="Purpose_3" class="mw-headline">Purpose</span>
+##### Purpose
 
 Retrieves a list of features that lie within a specific sequence range.
 
-##### <span id="Description_2" class="mw-headline">Description</span>
+##### Description
 
 This service returns features that lie within a specific sequence range.
 Arguments include the name of the largest assembled unit (i.e.
@@ -477,22 +374,22 @@ chromosome, scaffold, etc...), location start (fmin), location stop
 (fmax), and strand. Results can be restricted to a specific organism by
 supplying the NCBI taxonomy id.
 
-##### <span id="URL_3" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api
 version\>/location/chromosome/\<name\>\[.xml \| .json\]?\[type=\<SO term
 ID\>\]\[fmin=\<int\>\]\[fmax=\<int\>\]\[strand=(1 \|
 -1)\]\[taxid=\<taxid\>\]\[genus=\<genus\>\]\[species=\<species\>\]
 
-##### <span id="Return_types_4" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type_3" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_3" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/location/chromosome/X?type=SO:0000704 -
   Find all genes that are localized on the X chromosome of any
@@ -509,7 +406,7 @@ XML
   Find all genes that are localized on the plus strand of the X
   chromosome between and including 50,000 bp and 140,000 bp.
 
-##### <span id="XML_Result_3" class="mw-headline">XML Result</span>
+##### XML Result
 
 
 ``` de1
@@ -533,7 +430,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result_3" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -556,38 +453,38 @@ XML
        }
     }
 
-#### <span id="Gene_Ontology_search" class="mw-headline">Gene Ontology search</span>
+#### Gene Ontology search
 
-##### <span id="Service_Name_4" class="mw-headline">Service Name</span>
+##### Service Name
 
 ontology
 
-##### <span id="Purpose_4" class="mw-headline">Purpose</span>
+##### Purpose
 
 Search for genes that have been annotated with a particular gene
 ontology ID.
 
-##### <span id="Description_3" class="mw-headline">Description</span>
+##### Description
 
 This service returns genes that have been annotated with a particular
 ontology term. Results can be restricted to a specific organism by
 supplying the NCBI taxonomy id.
 
-##### <span id="URL_4" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/ontology/gene/\<ontology
 ID\>\[.xml \|
 .json\]?\[taxid=\<taxid\>\]\[genus=\<genus\>\]\[species=\<species\>\]
 
-##### <span id="Return_types_5" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type_4" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_4" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515 - Find all
   genes annotated with GO:0005515.
@@ -598,7 +495,7 @@ XML
 - http://flybase.org/gmodrpc/v1.1/ontology/gene/GO:0005515.json - Find
   all genes annotated with GO:0005515 and return a JSON result.
 
-##### <span id="XML_Result_4" class="mw-headline">XML Result</span>
+##### XML Result
 
 
 ``` de1
@@ -631,7 +528,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result_4" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -663,17 +560,17 @@ XML
        }
     }
 
-#### <span id="Gene_ortholog_search" class="mw-headline">Gene ortholog search</span>
+#### Gene ortholog search
 
-##### <span id="Service_name_5" class="mw-headline">Service name</span>
+##### Service name
 
 orthologs/gene
 
-##### <span id="Purpose_5" class="mw-headline">Purpose</span>
+##### Purpose
 
 Search for orthologs of the supplied gene ID.
 
-##### <span id="Description_4" class="mw-headline">Description</span>
+##### Description
 
 This service returns genes that have been determined by some means to be
 orthologous to the supplied gene ID. If the supplied gene ID is within
@@ -691,21 +588,21 @@ obtain a list of FlyBase genes that are orthologous to it.
 Results can be restricted to a specific organism by supplying the NCBI
 taxonomy ID.
 
-##### <span id="URL_5" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/orthologs/gene/\<gene
 ID\>\[.xml \|
 .json\]?\[taxid=\<taxid\>\]\[genus=\<genus\>\]\[species=\<species\>\]
 
-##### <span id="Return_types_6" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type_5" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_5" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/orthologs/gene/FBgn0004364 - Find all
   FlyBase and non FlyBase genes that are orthologous to FBgn0004364.
@@ -715,7 +612,7 @@ XML
   all FlyBase genes that are orthologous to WBGene12345 and return a
   JSON result.
 
-##### <span id="XML_Result:" class="mw-headline">XML Result:</span>
+##### XML Result:
 
 
 ``` de1
@@ -745,7 +642,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result_5" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -774,39 +671,39 @@ XML
        }
     }
 
-#### <span id="Organism_ortholog_search" class="mw-headline">Organism ortholog search</span>
+#### Organism ortholog search
 
-##### <span id="Service_name_6" class="mw-headline">Service name</span>
+##### Service name
 
 orthologs/organism
 
-##### <span id="Purpose_6" class="mw-headline">Purpose</span>
+##### Purpose
 
 Returns a list of orthologs between an organism and one or more other
 organisms.
 
-##### <span id="Description_5" class="mw-headline">Description</span>
+##### Description
 
 This service returns genes that have been determined by some means to be
 orthologous between a single organism and one or more other organisms.
 The organisms are specified by providing taxonomy IDs.
 
-##### <span id="URL_6" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api
 version\>/orthologs/organism\[/\<taxid\>\]\[/genus/\<genus\>/species/\<species\>\]\[.xml
 \|
 .json\]?\[to_taxid=\<taxid\>\]\[to_genus=\<genus\>&to_species=\<species\>\]
 
-##### <span id="Return_types_7" class="mw-headline">Return types</span>
+##### Return types
 
 XML or JSON
 
-##### <span id="Default_return_type_6" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_6" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/orthologs/organism/genus/Drosophila/species/melanogaster -
   Find all orthologs between Dmel and any other species.
@@ -815,7 +712,7 @@ XML
 - http://flybase.org/gmodrpc/v1.1/orthologs/organism/7227.json?to_taxid=7240 -
   Same as above except returned in JSON format.
 
-##### <span id="XML_Result:_2" class="mw-headline">XML Result:</span>
+##### XML Result:
 
 
 ``` de1
@@ -854,7 +751,7 @@ XML
 ```
 
 
-##### <span id="JSON_Result_6" class="mw-headline">JSON Result</span>
+##### JSON Result
 
     {
        resultset:{
@@ -893,66 +790,66 @@ XML
        }
     }
 
-### <span id="Fetching" class="mw-headline">Fetching</span>
+### Fetching
 
-#### <span id="Gene_records" class="mw-headline">Gene records</span>
+#### Gene records
 
-##### <span id="Service_name_7" class="mw-headline">Service name</span>
+##### Service name
 
 fetch/gene
 
-##### <span id="Purpose_7" class="mw-headline">Purpose</span>
+##### Purpose
 
 To fetch gene records in the Generic gene page XML format as implemented
 by [Bio GMOD
 GenericGenePage](/wiki/Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage").
 
-##### <span id="Description_6" class="mw-headline">Description</span>
+##### Description
 
-##### <span id="URL_7" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/fetch/gene/\<gene ID\>
 
-##### <span id="Return_types_8" class="mw-headline">Return types</span>
+##### Return types
 
 XML
 
-##### <span id="Default_return_type_7" class="mw-headline">Default return type</span>
+##### Default return type
 
 XML
 
-##### <span id="Example_URLs_7" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/fetch/gene/FBgn0097591
 
-##### <span id="XML_Result_5" class="mw-headline">XML Result</span>
+##### XML Result
 
 See [Bio GMOD
 GenericGenePage](/wiki/Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
 for example XML.
 
-#### <span id="Sequence" class="mw-headline">Sequence</span>
+#### Sequence
 
-##### <span id="Service_name_8" class="mw-headline">Service name</span>
+##### Service name
 
 fetch/seq
 
-##### <span id="Purpose_8" class="mw-headline">Purpose</span>
+##### Purpose
 
 Returns FASTA sequence for the specified query.
 
-##### <span id="Description_7" class="mw-headline">Description</span>
+##### Description
 
-##### <span id="URL_8" class="mw-headline">URL</span>
+##### URL
 
 http://yourmod.org/gmodrpc/v\<api version\>/fetch/seq/\<ID\>\[/\<SO term
 ID of subtype\>\]
 
-##### <span id="Return_types_9" class="mw-headline">Return types</span>
+##### Return types
 
 FASTA
 
-##### <span id="Example_URLs_8" class="mw-headline">Example URLs</span>
+##### Example URLs
 
 - http://flybase.org/gmodrpc/v1.1/fetch/seq/FBgn0097591.fasta - Fetch
   the FASTA sequence of FBgn0097591
@@ -965,99 +862,8 @@ FASTA
 
   
 
-##### <span id="FASTA_Result:" class="mw-headline">FASTA Result:</span>
+##### FASTA Result:
 
-## <span id="TODO" class="mw-headline">TODO</span>
+## TODO
 
 - WADLs for all services?
-
-
-
-
-[Categories](/wiki/Special%253ACategories "Special%253ACategories"):
-
-
-- [Web services](/wiki/Category%253AWeb_services "Category%253AWeb services")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](/wiki/Main_Page)</span>
-- <span id="n-Software">[Software](/wiki/GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](/wiki/Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](/wiki/Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](/wiki/Overview)</span>
-- <span id="n-FAQs">[FAQs](/wiki/Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](/wiki/Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](/wiki/Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](/wiki/GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](/wiki/Training_and_Outreach)</span>
-- <span id="n-Support">[Support](/wiki/Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD
-  Promotion](/wiki/GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](/wiki/Meetings)</span>
-- <span id="n-Calendar">[Calendar](/wiki/Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/GMOD_RPC_API" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:02 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">187,467 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

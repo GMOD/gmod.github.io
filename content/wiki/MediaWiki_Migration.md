@@ -24,7 +24,7 @@ template evaluator in the form of MediaWiki itself, I just had to write a spider
 that would crawl the entire site and save the files as html (or markdown, if
 I were clever enough). Since I tend to reach for Perl first in this sort
 of situation, I spent a little time thinking about writing a bespoke spider
-to do what I wanted. I think it was [Colin Diesh](User%253AColin_Diesh) (yes,
+to do what I wanted. I think it was [Colin Diesh](/wiki/User%253AColin_Diesh) (yes,
 that user page is waaaay out of date) that suggested that I just try mirroring
 the site to my local computer with `wget`. After a few false starts trying to
 mirror it to my workhorse laptop (the big problem was that the wget process didn't always
@@ -150,37 +150,13 @@ some clean up and create a pull request.
 
 Special thanks to Colin Diesh who bounced around some ideas when I was working on this
 and to Peter Cock who pointed out examples of OpenBio sites like
-[BioSQL.org](biosql.org) that had successfully made a similar transition, so I
+[BioSQL.org](/wiki/biosql.org) that had successfully made a similar transition, so I
 could use their jekyll config for a cheatsheet.
 
 Thanks to everybody who has ever had any involvement in the GMOD project, since
 it is because of you that there is so much content that needed my attention in
 this porting process.
 
-[Scott](User%253AScott)
+[Scott](/wiki/User%253AScott)
 
 July 29, 2024
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories / Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training / Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>

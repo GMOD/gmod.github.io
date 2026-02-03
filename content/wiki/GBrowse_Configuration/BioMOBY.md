@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Configuration/BioMOBY"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/BioMOBY</span>
-
-
-
-
-
-
-
+# GBrowse Configuration/BioMOBY
 
 
 This article describes **BioMOBY and Bio::MOBY Browse** and how to
@@ -27,7 +11,7 @@ configure it for use in GBrowse.
 <a href="../GBrowse_Configuration" class="mw-redirect"
 title="GBrowse Configuration">GBrowse Configuration</a>.*
 
-# <span id="The_Bio::MOBY_Browse" class="mw-headline">The Bio::MOBY Browse</span>
+# The Bio::MOBY Browse
 
 The BioMOBY \[\] project aims to design and deploy platforms that enable
 and simplify biological database interoperability.
@@ -46,9 +30,6 @@ below:
 
 SYNOPSIS  
 In 0X.organism.conf, for example:
-
-<!-- -->
-
     [ORIGIN]
     link         = http://yoursite.com/cgi-bin/gbrowse_moby?source=$source&name=$name&class=$class&method=$method&ref=$ref&description=$description
     feature      = origin:Sequence
@@ -86,9 +67,6 @@ REQUIRED LIBRARIES
 This script requires libraries from the BioMOBY project. Currently these
 are only available from the [CVS](../Glossary#CVS "Glossary"). Anonymous
 checkout of the BioMOBY project can be accomplished as follows:
-
-<!-- -->
-
      cvs -d :pserver:cvs@cvs.open-bio.org:/home/repository/moby login
 
 When prompted for a password, type "cvs".
@@ -105,9 +83,6 @@ to install the MOBY libraries into your system.
 USAGE  
 gbrowse_moby understands the following variables, some of which (\*) may
 be passed from Gbrowse through a mouse-click into the GET string:
-
-<!-- -->
-
     * $source    - converted into a MOBY namespace by parsing
                  the 'source' GFF tag against the %source2namespace
                  hash.
@@ -127,9 +102,6 @@ successful MOBY call.
 
 EXAMPLES  
 Simple GFF: If your GFF were:
-
-<!-- -->
-
          A22344  Genbank  origin  1000  2000  87  +  .
 
 You would set your configuration file as follows:
@@ -201,9 +173,6 @@ handle the Genbank GFF source as before:
 
 HINTS  
 -The full listing of valid MOBY namespaces is available at:
-
-<!-- -->
-
        http://mobycentral.cbr.nrc.ca/cgi-bin/types/Namespaces
 
 -A useful mapping to make is to put the organism name into the
@@ -212,7 +181,7 @@ searches for papers about that organism.
 
   
 
-## <span id="BioMOBY_Services" class="mw-headline">BioMOBY Services</span>
+## BioMOBY Services
 
 A selection of services are distributed with the Gbrowse package that
 will allow you to serve your underlying data using the BioMOBY Services
@@ -265,9 +234,6 @@ simply run the `register_moby_services.pl` script, located in the
 retrieved with POD or simple documentation can be printed by simply
 running the script with no command-line parameters. Generally speaking
 you need only run:
-
-<!-- -->
-
     perl register_moby_services.pl -register
 
 As services are registered they will be added to a file:
@@ -283,89 +249,3 @@ unsuccessful.
 Your services are served by the script `moby_server` in your
 `cgi-bin folder`. This is auto-configured by the register_services step
 above, so generally speaking you do not need to edit this script.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_Configuration-2FBioMOBY"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 10:45 on 9 July
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">8,743 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "Chado Natural Diversity Module/natdiv schema changes call"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Natural Diversity Module/natdiv schema changes call</span>
-
-
-
-
-
-
-
+# Chado Natural Diversity Module/natdiv schema changes call
 
 
 Conference call to resolve the latest proposed changes to [natdiv
@@ -26,40 +10,29 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   notes</span>](#Meeting_notes)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-- [<span class="tocnumber">4</span> <span class="toctext">Proposed
-  changes</span>](#Proposed_changes)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Prop table
-    in genotype module</span>](#Prop_table_in_genotype_module)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Hackathon
-    changes</span>](#Hackathon_changes)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Yuri's
-    proposals</span>](#Yuri.27s_proposals)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Bob's
-    proposals</span>](#Bob.27s_proposals)
+- [Participants](#Participants)
+- [Agenda](#Agenda)
+- [Proposed
+  changes](#Proposed_changes)
+  - [Prop table
+    in genotype module](#Prop_table_in_genotype_module)
+  - [Hackathon
+    changes](#Hackathon_changes)
+  - [Yuri's
+    proposals](#Yuri.27s_proposals)
+  - [Bob's
+    proposals](#Bob.27s_proposals)
 
 
-
-## <span id="Meeting_notes" class="mw-headline">Meeting notes</span>
+## Meeting notes
 
 - Thursday, May 26, 6pm BST / 1pm EST / 10am PST
   [Chado_Natural_Diversity_Module/natdiv_call_notes](natdiv_call_notes "Chado Natural Diversity Module/natdiv call notes")
-
-<!-- -->
-
 - Wednesday, June 1, 5pm BST / 12pm EST / 9am PST
   [Chado_Naural_Diversity_Module/natdiv_props_call_notes](../Chado_Naural_Diversity_Module/natdiv_props_call_notes "Chado Naural Diversity Module/natdiv props call notes")
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 - Seth
 - Bob [Made some notes here](../User_talk%253AMaccallr "User talk:Maccallr")
@@ -73,7 +46,7 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
 - Lacey
 - Hilmar
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 1.  Triage proposed changes into the following categories:
     - implement before paper publishing
@@ -83,9 +56,9 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
     - can someone do one after the changes have been made? Maccallr
       14:37, 26 May 2011 (UTC)
 
-## <span id="Proposed_changes" class="mw-headline">Proposed changes</span>
+## Proposed changes
 
-### <span id="Prop_table_in_genotype_module" class="mw-headline">Prop table in genotype module</span>
+### Prop table in genotype module
 
 - change: addition of (vanilla) prop table to genotype module
   \[cvterm_id, value, rank\]
@@ -97,7 +70,7 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
     cvterm_id would allow NULL? [Scott](../User%253AScott "User%253AScott")
     17:17, 26 May 2011 (UTC)
 
-### <span id="Hackathon_changes" class="mw-headline">Hackathon changes</span>
+### Hackathon changes
 
 - phenotype
 - phenotypeprop (Can somebody add the reason for adding this table?)
@@ -111,7 +84,7 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
     class="external free"
     rel="nofollow">http://gmod.svn.sourceforge.net/viewvc/gmod/schema/branches/gmodnatdiv/modules/phenotype/phenotype.sql?r1=24150&amp;r2=24140&amp;pathrev=24150</a>
 
-### <span id="Yuri.27s_proposals" class="mw-headline">Yuri's proposals</span>
+### Yuri's proposals
 
 - Wouldn't it be preferable to give at least workable solutions to the
   two significant flaws of the phenotype module before publishing the
@@ -209,9 +182,6 @@ module](../Chado_Natural_Diversity_Module.1 "Chado Natural Diversity Module").
       - I originally got this idea from nd_experiment_stockprop, so
         there's definitely precedent for this.
         --[Yuri](../User%253AYbendana "User%253AYbendana")
-
-<!-- -->
-
 - Add nd_experiment_phenotypeprop. I use this to store phenotype
   observations specific to an nd_experiment.
   - Eg: phenotype.observable_id='root length',
@@ -286,7 +256,7 @@ have descriptor_id in the phenotype table so that users who use both
     page) --[NaamaMenda](../User%253ANaamaMenda "User%253ANaamaMenda") 14:08, 1
     June 2011 (UTC)
 
-### <span id="Bob.27s_proposals" class="mw-headline">Bob's proposals</span>
+### Bob's proposals
 
 Just looking at the NatDiv prop tables, saw some inconsistencies:
 
@@ -304,103 +274,3 @@ This was already fixed. I committed the SQL a couple of weeks ago
 
 - - I just haven't rolled it into the default_schema.sql yet
     [Scott](../User%253AScott "User%253AScott") 17:10, 26 May 2011 (UTC)
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [Natural
-  Diversity](../Category%253ANatural_Diversity "Category%253ANatural Diversity")
-- [Chado Modules](../Category%253AChado_Modules "Category%253AChado Modules")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a
-  href="../Talk%253AChado_Natural_Diversity_Module/natdiv_schema_changes_call"
-  accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="../Special%253ABrowse/Chado_Natural_Diversity_Module-2Fnatdiv_schema_changes_call"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:05 on 4 February
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">110,897 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

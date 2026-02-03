@@ -1,23 +1,7 @@
 ---
 title: "GMOD Europe 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Europe 2010</span>
-
-
-
-
-
-
-
+# GMOD Europe 2010
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -133,36 +117,36 @@ free.</p></td>
 <h2 id="contents">Contents</h2>
 
 <ul>
-<li><a href="#Registration"><span class="tocnumber">1</span> <span
+<li><a href="#Registration"><span
 class="toctext">Registration</span></a></li>
-<li><a href="#Events"><span class="tocnumber">2</span> <span
+<li><a href="#Events"><span
 class="toctext">Events</span></a>
 <ul>
 <li><a href="#13-14_September:_September_2010_GMOD_Meeting"><span
-class="tocnumber">2.1</span> <span class="toctext">13-14 September:
-September 2010 GMOD Meeting</span></a></li>
+class="tocnumber">2.1</span> 13-14 September:
+September 2010 GMOD Meeting</a></li>
 <li><a href="#15_September:_Satellite_Meetings"><span
-class="tocnumber">2.2</span> <span class="toctext">15 September:
-Satellite Meetings</span></a></li>
+class="tocnumber">2.2</span> 15 September:
+Satellite Meetings</a></li>
 <li><a href="#15_September:_InterMine_Workshop"><span
-class="tocnumber">2.3</span> <span class="toctext">15 September:
-InterMine Workshop</span></a></li>
+class="tocnumber">2.3</span> 15 September:
+InterMine Workshop</a></li>
 <li><a href="#16_September:_BioMart_Workshop"><span
-class="tocnumber">2.4</span> <span class="toctext">16 September: BioMart
-Workshop</span></a></li>
+class="tocnumber">2.4</span> 16 September: BioMart
+Workshop</a></li>
 </ul></li>
-<li><a href="#Logistics"><span class="tocnumber">3</span> <span
+<li><a href="#Logistics"><span
 class="toctext">Logistics</span></a>
 <ul>
-<li><a href="#Transportation"><span class="tocnumber">3.1</span> <span
+<li><a href="#Transportation"><span
 class="toctext">Transportation</span></a></li>
-<li><a href="#Lodging"><span class="tocnumber">3.2</span> <span
+<li><a href="#Lodging"><span
 class="toctext">Lodging</span></a></li>
 </ul></li>
 <li><a href="#Things_to_do_in_Cambridge"><span
-class="tocnumber">4</span> <span class="toctext">Things to do in
-Cambridge</span></a></li>
-<li><a href="#See_Also"><span class="tocnumber">5</span> <span
+class="tocnumber">4</span> Things to do in
+Cambridge</a></li>
+<li><a href="#See_Also"><span
 class="toctext">See Also</span></a></li>
 </ul>
 
@@ -171,7 +155,7 @@ class="toctext">See Also</span></a></li>
 </tbody>
 </table>
 
-## <span id="Events" class="mw-headline">Events</span>
+## Events
 
 GMOD Europe 2010 spanned 4 days. All events were held at the Department
 of Genetics building in the centre of Cambridge.
@@ -299,15 +283,13 @@ Informatics</span></td>
 </table>
 
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Sept2010MtgLogo300.png/200px-Sept2010MtgLogo300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Sept2010MtgLogo300.png 2x"
 width="200" height="171" alt="September 2010 GMOD Meeting" />](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
 
 
-
-### <span id="13-14_September:_September_2010_GMOD_Meeting" class="mw-headline">13-14 September: [September 2010 GMOD Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")</span>
+### 13-14 September: [September 2010 GMOD Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting")
 
 GMOD Europe 2010 started with the [September 2010 GMOD
 Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting"),
@@ -322,7 +304,7 @@ what's coming up, and what others are doing. See the [January 2010 GMOD
 Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting") page for
 an idea of what happens at a GMOD meeting.
 
-### <span id="15_September:_Satellite_Meetings" class="mw-headline">15 September: [Satellite Meetings](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")</span>
+### 15 September: [Satellite Meetings](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
 
 The [Satellite
 Meetings](January_2010_GMOD_Meeting#Satellite_Meetings "January 2010 GMOD Meeting")
@@ -340,15 +322,13 @@ in the afternoon. See the [Satellite
 Meetings](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")
 page for more.
 
-### <span id="15_September:_InterMine_Workshop" class="mw-headline">15 September: [InterMine Workshop](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 2010")</span>
-
+### 15 September: [InterMine Workshop](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 2010")
 
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/200px-InterMineLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/13/InterMineLogo.png/300px-InterMineLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/13/InterMineLogo.png 2x"
 width="200" height="25" alt="InterMine Workshop" />](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop")
-
 
 
 There was a one day [InterMine
@@ -373,15 +353,13 @@ Page](InterMine_Workshop_-_GMOD_Europe_2010 "InterMine Workshop - GMOD Europe 20
 for details.
 
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a4/Biomart250.png/200px-Biomart250.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/Biomart250.png 2x"
 width="200" height="79" alt="BioMart Workshop" />](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop")
 
 
-
-### <span id="16_September:_BioMart_Workshop" class="mw-headline">16 September: [BioMart Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010")</span>
+### 16 September: [BioMart Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010")
 
 GMOD Europe finished with a one day [BioMart
 Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010")
@@ -404,9 +382,9 @@ See the [BioMart
 Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010")
 page for details.
 
-## <span id="Logistics" class="mw-headline">Logistics</span>
+## Logistics
 
-### <span id="Transportation" class="mw-headline">Transportation</span>
+### Transportation
 
 See the University's
 <a href="http://www.cam.ac.uk/visitors/gettingto.html"
@@ -415,7 +393,7 @@ information about arriving by train (also try
 <a href="http://www.thetrainline.com" class="external text"
 rel="nofollow">TheTrainline.com</a>), car, bus, or air.
 
-### <span id="Lodging" class="mw-headline">Lodging</span>
+### Lodging
 
 We recommended staying at one of the colleges at Cambridge. Rooms can be
 booked through <a
@@ -423,7 +401,7 @@ href="http://www.cambridgerooms.co.uk/book/default.aspx?locationId=3&amp;vendorI
 class="external text" rel="nofollow">CambridgeRooms.co.uk</a>. Several
 options were available.
 
-## <span id="Things_to_do_in_Cambridge" class="mw-headline">Things to do in Cambridge</span>
+## Things to do in Cambridge
 
 There are <a
 href="http://www.visitcambridge.org/VisitCambridge/WhatToSeeAndDo.aspx"
@@ -431,7 +409,7 @@ class="external text" rel="nofollow">lots of things to see and do</a> in
 this historic city. If you have time, try and check out a few famous
 colleges.
 
-## <span id="See_Also" class="mw-headline">See Also</span>
+## See Also
 
 - [GMOD Europe 2009](GMOD_Europe_2009 "GMOD Europe 2009") - The previous
   *GMOD Europe* event.
@@ -444,91 +422,3 @@ colleges.
   This event overlaps entirely (13-15 September) with GMOD Europe. It's
   being held in nearby Hinxton, at the Wellcome Trust Genome Campus. We
   were unaware of this overlap when we scheduled GMOD Europe 2010.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Europe_2010" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:04 on 2 April
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">207,765 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

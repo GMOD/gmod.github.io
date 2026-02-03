@@ -1,23 +1,7 @@
 ---
 title: "GBrowse User Database"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse User Database</span>
-
-
-
-
-
-
-
+# GBrowse User Database
 
 
 [GBrowse](GBrowse.1 "GBrowse") has the option to use a database to
@@ -34,40 +18,29 @@ class="external text" rel="nofollow">Berkeley DB</a> and
 rel="nofollow">MySQL</a> as backends.
 
 
-## Contents
+  Setup](#Setup)
+  - [To use
+    SQLite](#To_use_SQLite)
+  - [To use
+    MySQL](#To_use_MySQL)
+  - [User
+    Accounts Flag](#User_Accounts_Flag)
+- [Database
+  Schema](#Database_Schema)
+  - [Users](#Users)
+    - [OpenID
+      Users](#OpenID_Users)
+    - [Sessions](#Sessions)
+    - [DBInfo](#DBInfo)
+- [Errors](#Errors)
+  - [Access
+    Denied](#Access_Denied)
+  - [Unable to
+    Find Table](#Unable_to_Find_Table)
+- [Confirmation](#Confirmation)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Setup</span>](#Setup)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">To use
-    SQLite</span>](#To_use_SQLite)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">To use
-    MySQL</span>](#To_use_MySQL)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">User
-    Accounts Flag</span>](#User_Accounts_Flag)
-- [<span class="tocnumber">2</span> <span class="toctext">Database
-  Schema</span>](#Database_Schema)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Users</span>](#Users)
-    - [<span class="tocnumber">2.1.1</span> <span class="toctext">OpenID
-      Users</span>](#OpenID_Users)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Sessions</span>](#Sessions)
-    - [<span class="tocnumber">2.1.3</span>
-      <span class="toctext">DBInfo</span>](#DBInfo)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Errors</span>](#Errors)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Access
-    Denied</span>](#Access_Denied)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Unable to
-    Find Table</span>](#Unable_to_Find_Table)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Confirmation</span>](#Confirmation)
-
-
-
-## <span id="Setup" class="mw-headline">Setup</span>
+## Setup
 
 To use the user database, you will need to install the
 <a href="http://search.cpan.org/~gbarr/libnet-1.22/Net/SMTP.pm"
@@ -80,7 +53,7 @@ href="http://search.cpan.org/~mart/Net-OpenID-Consumer-1.03/lib/Net/OpenID/Consu
 class="external text" rel="nofollow">Net::OpenID::Consumer</a> module -
 OpenID is optional in GBrowse 2.20 or later.
 
-### <span id="To_use_SQLite" class="mw-headline">To use SQLite</span>
+### To use SQLite
 
 SQLite doesn't require much setup, you just need to decide on a location
 to store the database file.
@@ -99,7 +72,7 @@ permissions to do so.
     # privileges on it to the indicated user.
     # user_account_db        = DBI:SQLite:/path/to/your/database.sqlite
 
-### <span id="To_use_MySQL" class="mw-headline">To use MySQL</span>
+### To use MySQL
 
 For MySQL, ensure that the MySQL server is up and running, and that you
 have the administrator username and password handy. You'll also need the
@@ -114,7 +87,7 @@ Change the user and/or password fields as needed.
 
     # user_account_db        = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
 
-### <span id="User_Accounts_Flag" class="mw-headline">User Accounts Flag</span>
+### User Accounts Flag
 
 Once the configuration option has been set, the "user accounts" switch
 to enable the user database must be turned on (set from 0 to 1).
@@ -124,7 +97,7 @@ to enable the user database must be turned on (set from 0 to 1).
     # a user registration database
     user accounts          = 0
 
-## <span id="Database_Schema" class="mw-headline">Database Schema</span>
+## Database Schema
 
 The database is named "gbrowse_login" and is made up of three tables,
 **users**, **openid_users** and **sessions**. The first three are used
@@ -133,7 +106,7 @@ additional **dbinfo** table holds information regarding the version of
 the schema we are currently using. Additional tables are included in the
 database, and are part of the user uploads system.
 
-### <span id="Users" class="mw-headline">Users</span>
+### Users
 
 This table holds all the users, regardless of whether they signed up
 using their OpenID or a username. It stores the following information:
@@ -150,7 +123,7 @@ using their OpenID or a username. It stores the following information:
 | last_login | timestamp not null | Date & time of last login. |
 | created | datetime not null | Date & time created. |
 
-#### <span id="OpenID_Users" class="mw-headline">OpenID Users</span>
+#### OpenID Users
 
 This table holds all openIDs associated with users.
 
@@ -159,7 +132,7 @@ This table holds all openIDs associated with users.
 | userid     | integer not null                  | A unique user ID.      |
 | openid_url | varchar(128) not null PRIMARY key | The URL of the openID. |
 
-#### <span id="Sessions" class="mw-headline">Sessions</span>
+#### Sessions
 
 This table holds all registered sessions. In order for a user to add
 public files, have files shared with them, or upload files, they need to
@@ -172,7 +145,7 @@ be assigned a user ID and a record in this table.
 | sessionid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their session. |
 | uploadsid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their uploads folder. |
 
-#### <span id="DBInfo" class="mw-headline">DBInfo</span>
+#### DBInfo
 
 This table holds the version number of the current database schema. It's
 used in upgrading from older schemas, without losing information.
@@ -181,9 +154,9 @@ used in upgrading from older schemas, without losing information.
 |----|----|----|
 | schema_version | int(10) not null UNIQUE | The version number of the current schema. |
 
-## <span id="Errors" class="mw-headline">Errors</span>
+## Errors
 
-### <span id="Access_Denied" class="mw-headline">Access Denied</span>
+### Access Denied
 
 If you receive an "Access denied for user 'www-data'@'localhost' (using
 password: NO)" error, then the "www-data" user (or whatever user has
@@ -201,7 +174,7 @@ If you wish to use another user, simply replace "www-data" with the user
 of your choice. If you wish to use a password, enter it between the
 quotes after 'identified by ""'.
 
-### <span id="Unable_to_Find_Table" class="mw-headline">Unable to Find Table</span>
+### Unable to Find Table
 
 If you receive an error saying that the database cannot find the table
 specified, your schema is probably incorrect (or hasn't been created at
@@ -210,7 +183,7 @@ errors regarding the database (assuming the credentials are correct in
 your Gbrowse.conf file), simply run it as root (**sudo perl
 gbrowse_metadb_config.pl**) and that should fix any errors.
 
-## <span id="Confirmation" class="mw-headline">Confirmation</span>
+## Confirmation
 
 If everything has been set up properly, you will see a "Log in / create
 account" link on the top-right corner of the screen:
@@ -218,93 +191,3 @@ account" link on the top-right corner of the screen:
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/User_db_enabled.png" width="504"
 height="296" alt="User db enabled.png" />\[\[Category%253A\]\]
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [GBrowse
-  Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_User_Database" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:41 on 29 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">161,028 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

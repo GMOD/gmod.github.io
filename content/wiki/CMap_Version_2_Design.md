@@ -1,23 +1,7 @@
 ---
 title: "CMap Version 2 Design"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">CMap Version 2 Design</span>
-
-
-
-
-
-
-
+# CMap Version 2 Design
 
 
 The hopes and dreams for a new generation....
@@ -25,29 +9,20 @@ The hopes and dreams for a new generation....
 Up to [CMap](CMap.1 "CMap").
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">User
   Interface</span>](#User_Interface)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Schema</span>](#Schema)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Visualizations</span>](#Visualizations)
-- [<span class="tocnumber">4</span> <span class="toctext">Data
-  Loading</span>](#Data_Loading)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">DAS</span>](#DAS)
+- [Schema](#Schema)
+- [Visualizations](#Visualizations)
+- [Data
+  Loading](#Data_Loading)
+- [DAS](#DAS)
 
 
-
-# <span id="User_Interface" class="mw-headline">User Interface</span>
+# User Interface
 
 - The new interface will be all Web 2.0 goodness, using tons of
   JavaScript/AJAX/CSS (which I so studiously avoided in early versions)
 
-# <span id="Schema" class="mw-headline">Schema</span>
+# Schema
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b8/Cmap_2.0_schema.png/100px-Cmap_2.0_schema.png"
@@ -80,7 +55,7 @@ width="100" height="234" alt="Cmap 2.0 schema.png" />
   <a href="http://en.wikipedia.org/wiki/Sparkline" class="external text"
   rel="nofollow">sparklines</a>
 
-# <span id="Visualizations" class="mw-headline">Visualizations</span>
+# Visualizations
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/da/CMap_circos.png/100px-CMap_circos.png"
@@ -107,7 +82,7 @@ width="100" height="100" alt="CMap circos.png" />
   <a href="http://pdl.perl.org/" class="external text"
   rel="nofollow">PDL</a> for other presentations
 
-# <span id="Data_Loading" class="mw-headline">Data Loading</span>
+# Data Loading
 
 Write loaders for:
 
@@ -117,7 +92,7 @@ Write loaders for:
 - Compara
 - <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 
-# <span id="DAS" class="mw-headline">DAS</span>
+# DAS
 
 - Will write a module to plug into
   <a href="http://www.sanger.ac.uk/Software/analysis/proserver/"
@@ -126,91 +101,3 @@ Write loaders for:
   directly from [CMap](CMap.1 "CMap"); docs to explain to users how to
   do this
 - As a DAS client to show additional features
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [DAS](Category%253ADAS "Category%253ADAS")
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [Proposals](Category%253AProposals "Category%253AProposals")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/CMap_Version_2_Design" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:22 on 12 May
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">57,329 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,46 +1,23 @@
 ---
 title: "Zheng's notes on wormbase migration"
 ---
+# Zheng's notes on wormbase migration
 
 
+  description](#description)
+- [module-based
+  migration](#module-based_migration)
+- [bio-chaos and
+  gmod_bulk_load_gff3](#bio-chaos_and_gmod_bulk_load_gff3)
+- [first
+  step](#first_step)
+- [pain for
+  loading](#pain_for_loading)
+- [my experience
+  with chromosome I](#my_experience_with_chromosome_I)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Zheng's notes on wormbase migration</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">description</span>](#description)
-- [<span class="tocnumber">2</span> <span class="toctext">module-based
-  migration</span>](#module-based_migration)
-- [<span class="tocnumber">3</span> <span class="toctext">bio-chaos and
-  gmod_bulk_load_gff3</span>](#bio-chaos_and_gmod_bulk_load_gff3)
-- [<span class="tocnumber">4</span> <span class="toctext">first
-  step</span>](#first_step)
-- [<span class="tocnumber">5</span> <span class="toctext">pain for
-  loading</span>](#pain_for_loading)
-- [<span class="tocnumber">6</span> <span class="toctext">my experience
-  with chromosome I</span>](#my_experience_with_chromosome_I)
-
-
-
-## <span id="description" class="mw-headline">description</span>
+## description
 
 this page is a record of my experience for migrating wormbase onto
 chado. As far as I know, wormbase is based on the Acedb (an
@@ -50,7 +27,7 @@ long and I am moving from gff3 bulkload to xmlxort, so **I will just
 keep this one here for record but not update it. the migration will
 continue at** [learn XMLXORT](Learn_XMLXORT "Learn XMLXORT")
 
-## <span id="module-based_migration" class="mw-headline">module-based migration</span>
+## module-based migration
 
 focus on sequence module first. using gff3 files as input.
 
@@ -79,7 +56,7 @@ gff3 columns and chado table relationship
 
 feature.dbxref_id is nullable. Dbxref could be lower-case
 
-## <span id="bio-chaos_and_gmod_bulk_load_gff3" class="mw-headline">bio-chaos and gmod_bulk_load_gff3</span>
+## bio-chaos and gmod_bulk_load_gff3
 
 both bio-chaos 0.02 and gmod_bulk_load_gff3 can theoretically work. btw,
 bio-chaos 0.01 is included in the schema cvs download, but no
@@ -97,7 +74,7 @@ Now I know XMLXORT will be finally used not only for sequence-related
 data but also for other data, I have to [learn
 XMLXORT](Learn_XMLXORT "Learn XMLXORT").
 
-## <span id="first_step" class="mw-headline">first step</span>
+## first step
 
 get the current release WS171 gff3 file from wormbase. total 1.07G.
 split it by:
@@ -114,7 +91,7 @@ only two directive lines in ws171
 but adding the size of chr-based files does not (similarly) equal to the
 original size of ws171, ??? I lost something here already?
 
-## <span id="pain_for_loading" class="mw-headline">pain for loading</span>
+## pain for loading
 
 - first try load a sample gff3
 
@@ -152,12 +129,9 @@ but adding the size of them, much less than the size of chrI.gff3, I
 definitely lost a lot here, abadon this is not what I expected from the
 name of the file and perldoc.
 
-## <span id="my_experience_with_chromosome_I" class="mw-headline">my experience with chromosome I</span>
+## my experience with chromosome I
 
 - chromosome definition line
-
-<!-- -->
-
     I       Link    chromosome      1       15072419        .       +       .       Name=I
 
 I manually changed it to
@@ -170,9 +144,6 @@ line, but put it on top helps the bulk_load, or maybe
 gmod_gff3_preprocessor will try to do this change.
 
 - clone_end line
-
-<!-- -->
-
     I       .       clone_end       10038617        10038617        .       .       .       Name=C03C11
     no cvterm for clone_end at /usr/lib/perl5/site_perl/5.8.8/Bio/GMOD/DB/Adapter.pm line 3445, <GEN0>  line 12402.
     Issuing rollback() for database handle being DESTROY'd without explicit disconnect().
@@ -183,9 +154,6 @@ latest minor revision version v2.1 (08-16-2006). in this version
 clone_end change to clone_insert_end.
 
 - this is a known situation...
-
-<!-- -->
-
     Your GFF3 file uses a tag called 'confirmed_est', but this term is not
     already in the cvterm table so that it's value can be inserted
     into the featureprop table.  The easiest way to rectify this is
@@ -277,91 +245,3 @@ since the file has this two lines:
 although the warning says 'CDS feature', but it could also be lacking a
 gene line that trigger the warning. Infact, all the lines with 'history'
 in column 2 do not have a corresponding line with 'gene' in column 3.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [User
-  Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
-- [WormBase](Category%253AWormBase "Category%253AWormBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Zheng&#39;s_notes_on_wormbase_migration"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:57 on 28 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">33,027 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

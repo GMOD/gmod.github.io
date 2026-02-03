@@ -1,27 +1,20 @@
 ---
 title: "Biopackages HOWTO"
 ---
-<span id="top"></span>
+# Biopackages HOWTO
 
-# <span dir="auto">Biopackages HOWTO</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Biopackages</span>](#Biopackages)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Preliminaries</span>](#Preliminaries)
-- [<span class="tocnumber">3</span> <span class="toctext">Installing
-  Packages</span>](#Installing_Packages)
-- [<span class="tocnumber">4</span> <span class="toctext">Help! Package
+  Biopackages](#Biopackages)
+- [Preliminaries](#Preliminaries)
+- [Installing
+  Packages](#Installing_Packages)
+- [Help! Package
   Foo on Platform X Does Not Work/Is Not
-  Available</span>](#Help.21_Package_Foo_on_Platform_X_Does_Not_Work.2FIs_Not_Available)
-- [<span class="tocnumber">5</span> <span class="toctext">Source vs. RPM
-  Installs</span>](#Source_vs._RPM_Installs)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Authors</span>](#Authors)
+  Available](#Help.21_Package_Foo_on_Platform_X_Does_Not_Work.2FIs_Not_Available)
+- [Source vs. RPM
+  Installs](#Source_vs._RPM_Installs)
+- [Authors](#Authors)
 
-# <span id="Biopackages" class="mw-headline">Biopackages</span>
+# Biopackages
 
 RPM-based Linux distributions, including
 <a href="http://fedoraproject.org/wiki/" class="external text"
@@ -52,7 +45,7 @@ for our RPMs
 rel="nofollow">here</a>. The platform tested for the GMOD community is
 CentOS 4 and we highly recommend using Biopackages on this distribution.
 
-# <span id="Preliminaries" class="mw-headline">Preliminaries</span>
+# Preliminaries
 
 Biopackages.net hosts a yum repository for distribution of Linux
 packages. To configure yum to be aware of the Biopackages.net
@@ -90,7 +83,7 @@ And import the public key from
 class="external text" rel="nofollow">here</a>, saving it to
 /etc/pki/rpm-gpg.
 
-# <span id="Installing_Packages" class="mw-headline">Installing Packages</span>
+# Installing Packages
 
 First, as root, freshen your local cache of yum header files. Yum will
 print something similar to what is below:
@@ -137,7 +130,7 @@ packages:
 
     % yum install <package_name>
 
-# <span id="Help.21_Package_Foo_on_Platform_X_Does_Not_Work.2FIs_Not_Available" class="mw-headline">Help! Package Foo on Platform X Does Not Work/Is Not Available</span>
+# Help! Package Foo on Platform X Does Not Work/Is Not Available
 
 Since the biopackages project is a relatively small group of developers
 we are currently focused on Centos4. If you encounter bugs on this, or
@@ -151,7 +144,7 @@ be found on our developers wiki at
 <a href="http://biopackages.wiki.sourceforge.net" class="external free"
 rel="nofollow">http://biopackages.wiki.sourceforge.net</a>.
 
-# <span id="Source_vs._RPM_Installs" class="mw-headline">Source vs. RPM Installs</span>
+# Source vs. RPM Installs
 
 Since RPMs and source installs can silently overwrite each other
 resulting in conflicts we recommend you do not mix them. If you must
@@ -161,55 +154,7 @@ a specific development directory in you home directory or 2) a
 non-standard system folder such as /usr/local. This way your core
 operating system will be maintained as a clean, RPM-only environment.
 
-# <span id="Authors" class="mw-headline">Authors</span>
+# Authors
 
 Brian
 O'Connor
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Linux](Category%253ALinux "Category%253ALinux")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Biopackages_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 20:54 on 14 April 2010.</span>
-<!-- - <span id="footer-info-viewcount">73,001 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

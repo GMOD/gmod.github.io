@@ -1,56 +1,29 @@
 ---
 title: "XORT Dumper HOWTO"
 ---
+# XORT Dumper HOWTO
 
 
+  Introduction](#Introduction)
+- [Author](#Author)
+- [Prerequisites](#Prerequisites)
+- [System
+  Setup](#System_Setup)
+- [Chado Database
+  Setup](#Chado_Database_Setup)
+- [XORT
+  Installation](#XORT_Installation)
+- [Dumping
+  ChadoXML](#Dumping_ChadoXML)
+  - [Genes](#Genes)
+  - [Feature
+    locations](#Feature_locations)
+  - [CDS](#CDS)
+- [More
+  Information](#More_Information)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">XORT Dumper HOWTO</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Author</span>](#Author)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">4</span> <span class="toctext">System
-  Setup</span>](#System_Setup)
-- [<span class="tocnumber">5</span> <span class="toctext">Chado Database
-  Setup</span>](#Chado_Database_Setup)
-- [<span class="tocnumber">6</span> <span class="toctext">XORT
-  Installation</span>](#XORT_Installation)
-- [<span class="tocnumber">7</span> <span class="toctext">Dumping
-  ChadoXML</span>](#Dumping_ChadoXML)
-  - [<span class="tocnumber">7.1</span>
-    <span class="toctext">Genes</span>](#Genes)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Feature
-    locations</span>](#Feature_locations)
-  - [<span class="tocnumber">7.3</span>
-    <span class="toctext">CDS</span>](#CDS)
-- [<span class="tocnumber">8</span> <span class="toctext">More
-  Information</span>](#More_Information)
-
-
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 This HOWTO describes how to dump data from
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> into [Chado
@@ -64,18 +37,18 @@ information is added followed by associated CDS features. These examples
 will hopefully give you more of an idea about how to dump Chado data
 using XORT and what is involved to do so.
 
-## <span id="Author" class="mw-headline">Author</span>
+## Author
 
 - [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 The steps outlined in this HOWTO were done on a x86 Ubuntu 8.0.4 desktop
 edition machine. It is also assumed that you have some basic knowledge
 of the <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 schema.
 
-## <span id="System_Setup" class="mw-headline">System Setup</span>
+## System Setup
 
 1\. Install make, gcc, autoconf, automake, and binutils.
 
@@ -95,7 +68,7 @@ compatibility with 8.3.
     $ sudo apt-get install libxml-perl libxml-dom-perl libxml-sax-perl
     $ sudo apt-get install libdbi-perl libdbd-pg-perl
 
-## <span id="Chado_Database_Setup" class="mw-headline">Chado Database Setup</span>
+## Chado Database Setup
 
 1\. Create a PostgreSQL database superuser
 
@@ -125,7 +98,7 @@ the postgres user here. Be sure to substitute \<username\> and
     $ createdb -E SQL_ASCII yfgdb
     $ zcat yfgdb_no-privs_20080211.sql.gz | psql -d yfgdb -o yfgdb_load.log
 
-## <span id="XORT_Installation" class="mw-headline">XORT Installation</span>
+## XORT Installation
 
     $ wget http://superb-west.dl.sourceforge.net/sourceforge/gmod/XML-XORT-0.008.tar.gz
     $ tar zxf XML-XORT-0.008.tar.gz
@@ -143,9 +116,9 @@ the postgres user here. Be sure to substitute \<username\> and
     $ make
     $ sudo make install
 
-## <span id="Dumping_ChadoXML" class="mw-headline">Dumping ChadoXML</span>
+## Dumping ChadoXML
 
-### <span id="Genes" class="mw-headline">Genes</span>
+### Genes
 
 If everything has gone well thus far you should have a functioning Chado
 installation with yeast data and XORT ready to go. For the first step of
@@ -203,7 +176,7 @@ It is important to note that the --database option takes the first part
 of the database properties file name located in the XORT conf directory
 (/usr/local/xort/conf/chado.properties).
 
-### <span id="Feature_locations" class="mw-headline">Feature locations</span>
+### Feature locations
 
 In order to make our dumpspec a little more useful lets add sequence
 location information about our genes. This information is stored in the
@@ -256,7 +229,7 @@ SELECT f1.uniquename, f1.name, f1.seqlen, fl.*, f2.uniquename
 ```
 
 
-### <span id="CDS" class="mw-headline">CDS</span>
+### CDS
 
 For the last dumpspec we will add CDS information. In the YFGdb Chado
 database, CDS information is associated with gene features via the
@@ -332,7 +305,7 @@ to the feature table to fetch the CDS.
 
   
 
-## <span id="More_Information" class="mw-headline">More Information</span>
+## More Information
 
 See the [XORT](XORT.1 "XORT") page.
 
@@ -342,91 +315,3 @@ Please send questions to the GMOD developers list:
 rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
 Or contact the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [XORT](Category%253AXORT "Category%253AXORT")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/XORT_Dumper_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">45,469 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

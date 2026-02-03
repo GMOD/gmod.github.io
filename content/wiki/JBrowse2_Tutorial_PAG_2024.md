@@ -1,23 +1,7 @@
 ---
 title: "JBrowse2 Tutorial PAG 2024"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse2 Tutorial PAG 2024</span>
-
-
-
-
-
-
-
+# JBrowse2 Tutorial PAG 2024
 
 
 This tutorial will be/was presented at the Plant and Animal Genomes
@@ -26,86 +10,77 @@ Ubuntu AMI that was used for the tutorial will be available for anyone
 who would like to work through the tutorial afterwards.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Running an
   instance of the tutorial
   AMI</span>](#Running_an_instance_of_the_tutorial_AMI)
-- [<span class="tocnumber">2</span> <span class="toctext">Prerequisites
-  (already installed)</span>](#Prerequisites_.28already_installed.29)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Things
+- [Prerequisites
+  (already installed)](#Prerequisites_.28already_installed.29)
+  - [Things
     done just for this
-    tutorial</span>](#Things_done_just_for_this_tutorial)
-- [<span class="tocnumber">3</span> <span class="toctext">Initializing
-  JBrowse</span>](#Initializing_JBrowse)
-- [<span class="tocnumber">4</span> <span class="toctext">Adding a
-  reference sequence</span>](#Adding_a_reference_sequence)
-- [<span class="tocnumber">5</span> <span class="toctext">Adding a gene
+    tutorial](#Things_done_just_for_this_tutorial)
+- [Initializing
+  JBrowse](#Initializing_JBrowse)
+- [Adding a
+  reference sequence](#Adding_a_reference_sequence)
+- [Adding a gene
   track from tabix-indexed
-  GFF</span>](#Adding_a_gene_track_from_tabix-indexed_GFF)
-- [<span class="tocnumber">6</span> <span class="toctext">Adding text
-  search indexes</span>](#Adding_text_search_indexes)
-- [<span class="tocnumber">7</span> <span class="toctext">Adding a gene
+  GFF](#Adding_a_gene_track_from_tabix-indexed_GFF)
+- [Adding text
+  search indexes](#Adding_text_search_indexes)
+- [Adding a gene
   track from a JBrowse (NCList)
-  track</span>](#Adding_a_gene_track_from_a_JBrowse_.28NCList.29_track)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Side note:
-    finding JBrowse 1 data</span>](#Side_note:_finding_JBrowse_1_data)
-- [<span class="tocnumber">8</span> <span class="toctext">Adding
-  BAM/CRAM data</span>](#Adding_BAM.2FCRAM_data)
-- [<span class="tocnumber">9</span> <span class="toctext">Adding variant
+  track](#Adding_a_gene_track_from_a_JBrowse_.28NCList.29_track)
+  - [Side note:
+    finding JBrowse 1 data](#Side_note:_finding_JBrowse_1_data)
+- [Adding
+  BAM/CRAM data](#Adding_BAM.2FCRAM_data)
+- [Adding variant
   data from a tabix-indexed
-  VCF</span>](#Adding_variant_data_from_a_tabix-indexed_VCF)
-- [<span class="tocnumber">10</span> <span class="toctext">Adding
+  VCF](#Adding_variant_data_from_a_tabix-indexed_VCF)
+- [Adding
   quantitative data from a
-  BigWig</span>](#Adding_quantitative_data_from_a_BigWig)
-  - [<span class="tocnumber">10.1</span> <span class="toctext">The need
-    for alias files</span>](#The_need_for_alias_files)
-- [<span class="tocnumber">11</span> <span class="toctext">Adding a
+  BigWig](#Adding_quantitative_data_from_a_BigWig)
+  - [The need
+    for alias files](#The_need_for_alias_files)
+- [Adding a
   track with multiple
-  BigWigs</span>](#Adding_a_track_with_multiple_BigWigs)
-- [<span class="tocnumber">12</span> <span class="toctext">Working with
-  metadata and facets</span>](#Working_with_metadata_and_facets)
-- [<span class="tocnumber">13</span>
-  <span class="toctext">Synteny</span>](#Synteny)
-  - [<span class="tocnumber">13.1</span> <span class="toctext">Tabix
-    indexing of PAF file</span>](#Tabix_indexing_of_PAF_file)
-  - [<span class="tocnumber">13.2</span> <span class="toctext">Adding a
+  BigWigs](#Adding_a_track_with_multiple_BigWigs)
+- [Working with
+  metadata and facets](#Working_with_metadata_and_facets)
+- [Synteny](#Synteny)
+  - [Tabix
+    indexing of PAF file](#Tabix_indexing_of_PAF_file)
+  - [Adding a
     gene track for C.
-    briggsae</span>](#Adding_a_gene_track_for_C._briggsae)
-  - [<span class="tocnumber">13.3</span> <span class="toctext">Opening a
-    synteny display</span>](#Opening_a_synteny_display)
-  - [<span class="tocnumber">13.4</span> <span class="toctext">Using
-    dotplot and synteny views</span>](#Using_dotplot_and_synteny_views)
-- [<span class="tocnumber">14</span> <span class="toctext">Using the
+    briggsae](#Adding_a_gene_track_for_C._briggsae)
+  - [Opening a
+    synteny display](#Opening_a_synteny_display)
+  - [Using
+    dotplot and synteny views](#Using_dotplot_and_synteny_views)
+- [Using the
   Structural Variant
-  Inspector</span>](#Using_the_Structural_Variant_Inspector)
-- [<span class="tocnumber">15</span> <span class="toctext">Using JEXL to
-  modify the display</span>](#Using_JEXL_to_modify_the_display)
-  - [<span class="tocnumber">15.1</span>
-    <span class="toctext">Dynamically changing the
-    color</span>](#Dynamically_changing_the_color)
-  - [<span class="tocnumber">15.2</span>
-    <span class="toctext">Dynamically changing the mouseover
-    text</span>](#Dynamically_changing_the_mouseover_text)
-  - [<span class="tocnumber">15.3</span> <span class="toctext">Getting
-    the config</span>](#Getting_the_config)
-- [<span class="tocnumber">16</span> <span class="toctext">Using the
-  admin-server</span>](#Using_the_admin-server)
-  - [<span class="tocnumber">16.1</span> <span class="toctext">Using the
+  Inspector](#Using_the_Structural_Variant_Inspector)
+- [Using JEXL to
+  modify the display](#Using_JEXL_to_modify_the_display)
+  - [Dynamically changing the
+    color](#Dynamically_changing_the_color)
+  - [Dynamically changing the mouseover
+    text](#Dynamically_changing_the_mouseover_text)
+  - [Getting
+    the config](#Getting_the_config)
+- [Using the
+  admin-server](#Using_the_admin-server)
+  - [Using the
     admin-server to add an
-    assembly</span>](#Using_the_admin-server_to_add_an_assembly)
-  - [<span class="tocnumber">16.2</span> <span class="toctext">Using the
+    assembly](#Using_the_admin-server_to_add_an_assembly)
+  - [Using the
     admin-server to add a GFF
-    track</span>](#Using_the_admin-server_to_add_a_GFF_track)
-  - [<span class="tocnumber">16.3</span> <span class="toctext">Using the
+    track](#Using_the_admin-server_to_add_a_GFF_track)
+  - [Using the
     admin-server to add a synteny
-    track</span>](#Using_the_admin-server_to_add_a_synteny_track)
+    track](#Using_the_admin-server_to_add_a_synteny_track)
 
 
-
-### <span id="Running_an_instance_of_the_tutorial_AMI" class="mw-headline">Running an instance of the tutorial AMI</span>
+### Running an instance of the tutorial AMI
 
 To run this tutorial on your own Amazon EC2 instance, use *<a
 href="https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ImageDetails:imageId=ami-0982eea63d790bad6#ImageDetails:imageId=ami-0982eea63d790bad6"
@@ -130,7 +105,7 @@ There are several things to know about this instance:
   <a href="http://tutorialpag31.jbrowse.org/~ubuntu" class="external free"
   rel="nofollow">http://tutorialpag31.jbrowse.org/~ubuntu</a>
 
-## <span id="Prerequisites_.28already_installed.29" class="mw-headline">Prerequisites (already installed)</span>
+## Prerequisites (already installed)
 
 - NodeJS
 
@@ -146,16 +121,13 @@ class="external text" rel="nofollow">Nodejs.org</a>:
 - A web server (Apache2 in this instance, but any will do). I enabled
   the "userdir" mod so we could all use the same machine for the
   tutorial:
-
-<!-- -->
-
      
      Don't do:
      $ sudo a2enmod userdir
      $ sudo service apache2 start
      
 
-### <span id="Things_done_just_for_this_tutorial" class="mw-headline">Things done just for this tutorial</span>
+### Things done just for this tutorial
 
 - A script to create several users with `public_html` directories
 - Already installed the
@@ -174,7 +146,7 @@ class="external text" rel="nofollow">Nodejs.org</a>:
 - Created a [bash script](PAG2024_bash_script "PAG2024 bash script")
   that will do all of the commands in this tutorial "all at once".
 
-## <span id="Initializing_JBrowse" class="mw-headline">Initializing JBrowse</span>
+## Initializing JBrowse
 
 First, use ssh or putty to connect to the instance we have set up for
 this tutorial, tutorialpag31.jbrowse.org. Do this with the user name and
@@ -223,7 +195,7 @@ width="800" height="138" alt="New jbrowse page.png" />
 To make sure it really works, we can click on the *Volvox* (not really
 Volvox) data set.
 
-## <span id="Adding_a_reference_sequence" class="mw-headline">Adding a reference sequence</span>
+## Adding a reference sequence
 
 The first thing we need to do is add a reference sequence. There is a
 samtools/faidx indexed fasta file already in your public_html directory.
@@ -275,7 +247,7 @@ width="800" height="165" alt="New assembly.png" />
 
 Go ahead and open chromosome I.
 
-## <span id="Adding_a_gene_track_from_tabix-indexed_GFF" class="mw-headline">Adding a gene track from tabix-indexed GFF</span>
+## Adding a gene track from tabix-indexed GFF
 
 GFF3 is a very common file format for defining genome features. The GFF3
 file we're using today is based on the on created by WormBase for every
@@ -334,7 +306,7 @@ isn't already open, and select the "Genes" track. Note that when you
 hover your mouse over the Genes track checkbox, the description appears
 in a tooltip.
 
-## <span id="Adding_text_search_indexes" class="mw-headline">Adding text search indexes</span>
+## Adding text search indexes
 
 The `jbrowse` CLI provides tools to create text indexes of many of the
 data sources we used, like tabix indexed files. Note that it does not
@@ -364,7 +336,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/51/Gene_name_search.png/750px-Gene_name_search.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/51/Gene_name_search.png 2x"
 width="500" height="501" alt="Gene name search.png" />
 
-## <span id="Adding_a_gene_track_from_a_JBrowse_.28NCList.29_track" class="mw-headline">Adding a gene track from a JBrowse (NCList) track</span>
+## Adding a gene track from a JBrowse (NCList) track
 
 Another sort of data that can be used with JBrowse 2 is data that is
 currently being used with JBrowse 1. The most common way GFF data is
@@ -388,7 +360,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/59/Protein_coding_genes.png/1200px-Protein_coding_genes.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/59/Protein_coding_genes.png/1600px-Protein_coding_genes.png 2x"
 width="800" height="374" alt="Protein coding genes.png" />
 
-#### <span id="Side_note:_finding_JBrowse_1_data" class="mw-headline">Side note: finding JBrowse 1 data</span>
+#### Side note: finding JBrowse 1 data
 
 While JBrowse 1 instances are plentiful, there are a few tricks for
 finding those data. First, in JBrowse 1, you can always open the "Edit
@@ -417,7 +389,7 @@ JBrowse 2, since there is no such CORS limitation on the desktop
 version. That is, if you can figure out the URL of the data, you can use
 it in the desktop version no matter what.
 
-## <span id="Adding_BAM.2FCRAM_data" class="mw-headline">Adding BAM/CRAM data</span>
+## Adding BAM/CRAM data
 
 The *C. elegans* Natural Diversity Resource
 (<a href="http://elegansvariation.org/" class="external free"
@@ -455,7 +427,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/02/Per_base_qual_coloring.png/1200px-Per_base_qual_coloring.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/02/Per_base_qual_coloring.png/1600px-Per_base_qual_coloring.png 2x"
 width="800" height="347" alt="Per base qual coloring.png" />
 
-## <span id="Adding_variant_data_from_a_tabix-indexed_VCF" class="mw-headline">Adding variant data from a tabix-indexed VCF</span>
+## Adding variant data from a tabix-indexed VCF
 
 Variant data from VCF files can be added in much the same way the tabix
 index GFF and BAM files are added. Typically, the VCF files need to be
@@ -482,7 +454,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a1/Cendr_vcf_track2.png/1200px-Cendr_vcf_track2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a1/Cendr_vcf_track2.png/1600px-Cendr_vcf_track2.png 2x"
 width="800" height="172" alt="Cendr vcf track2.png" />
 
-## <span id="Adding_quantitative_data_from_a_BigWig" class="mw-headline">Adding quantitative data from a BigWig</span>
+## Adding quantitative data from a BigWig
 
 Adding other types of binary data files like BigWig and BigBed are also
 straight forward. Again, there is a set of BigWig files for *C. elegans*
@@ -505,7 +477,7 @@ width="800" height="237" alt="Frameusage bigwig.png" />
 
   
 
-### <span id="The_need_for_alias_files" class="mw-headline">The need for alias files</span>
+### The need for alias files
 
 This example is slightly different, though it doesn't look like it here.
 The problem is one of the plagues of bioinformatics: how people name
@@ -534,7 +506,7 @@ Of course, "chr" isn't the same as "Chr" either. When we added the
 reference sequence, I knew this was going to be an issue, so we added
 `--refNameAliases data/ce_aliases.txt` to the command.
 
-## <span id="Adding_a_track_with_multiple_BigWigs" class="mw-headline">Adding a track with multiple BigWigs</span>
+## Adding a track with multiple BigWigs
 
 The JBrowse command line interface makes adding many track types very
 easy, but also allows us to do more complicated things if we know what
@@ -593,7 +565,7 @@ figure out what I want it to look like in the JBrowse desktop
 application and then when it's ready, I copy and paste the track config
 into my website config.
 
-## <span id="Working_with_metadata_and_facets" class="mw-headline">Working with metadata and facets</span>
+## Working with metadata and facets
 
 All of the tracks we've added up to this point have included a
 "metadata" section. JBrowse provides a faceted browser that allows users
@@ -618,7 +590,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b3/Facet.png/1500px-Facet.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/b/b3/Facet.png/2000px-Facet.png 2x"
 width="1000" height="317" alt="Facet.png" />
 
-## <span id="Synteny" class="mw-headline">Synteny</span>
+## Synteny
 
 To compare two genomes, first we need a second genome. Fortunately,
 WormBase.org provides several assemblies for species related to *C.
@@ -651,7 +623,7 @@ match lines, which JBrowse will use to improve the display with
 insertion and deletion data. Once we have the paf file, we can create a
 tabix index and add it to JBrowse.
 
-### <span id="Tabix_indexing_of_PAF_file" class="mw-headline">Tabix indexing of PAF file</span>
+### Tabix indexing of PAF file
 
 The original design of JBrowse synteny tracks required that an entire
 comparative genome result be loaded. Since those can be quite large, we
@@ -692,7 +664,7 @@ something like this and don't get an error in JBrowse but also get an
 empty track, try the command again, switching the order of the
 assemblies in the `--assemblyNames` flag.
 
-### <span id="Adding_a_gene_track_for_C._briggsae" class="mw-headline">Adding a gene track for C. briggsae</span>
+### Adding a gene track for C. briggsae
 
 To make the synteny display a little more informative, we'll also add a
 gene track for the *C. briggsae* assembly (so we can see what's being
@@ -706,7 +678,7 @@ compared):
          --config '{ "metadata": { "source":"Curated genes track directly from the WormBase JBrowse 1 instance." } }'
      
 
-### <span id="Opening_a_synteny_display" class="mw-headline">Opening a synteny display</span>
+### Opening a synteny display
 
 When we reload JBrowse, we'll now have a track called "C. elegans/C.
 briggsae Synteny" and when we turn that on, we'll see regions in the *C.
@@ -725,7 +697,7 @@ view's synteny track indicate that the matching region is in the same
 orientation whereas a purplish-blue region indicates match regions that
 are in opposite orientations.
 
-### <span id="Using_dotplot_and_synteny_views" class="mw-headline">Using dotplot and synteny views</span>
+### Using dotplot and synteny views
 
 Another way we can visualize comparative data is via a dotplot. If we
 return to the JBrowse splash screen (via the File menu) and select
@@ -780,7 +752,7 @@ width="1200" height="468" alt="Post flip synteny.png" />
 
 Now we can more easily zoom into regions we might be interested in.
 
-## <span id="Using_the_Structural_Variant_Inspector" class="mw-headline">Using the Structural Variant Inspector</span>
+## Using the Structural Variant Inspector
 
 JBrowse's SV Inspector takes a set of structural variant predictions
 from BAM files with either long or short reads, with support for Manta,
@@ -873,7 +845,7 @@ pairs of reads that aren't where we "expect" them to be. We can limit
 the view to only inter-chromosomal read pairs by clicking on the "two
 arc sets" button in the upper left of the frame.
 
-## <span id="Using_JEXL_to_modify_the_display" class="mw-headline">Using JEXL to modify the display</span>
+## Using JEXL to modify the display
 
 JBrowse 2 has several tools available for changing the way things look
 (adding plugins, modifying the config.json manually to change things
@@ -897,7 +869,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Local_copy_track.png/750px-Local_copy_track.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/40/Local_copy_track.png/1000px-Local_copy_track.png 2x"
 width="500" height="353" alt="Local copy track.png" />
 
-### <span id="Dynamically_changing_the_color" class="mw-headline">Dynamically changing the color</span>
+### Dynamically changing the color
 
 To start editing how our "local" copy of the Genes track looks, click
 the checkbox for our local track to turn it on and again click on it's
@@ -940,7 +912,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5b/Jexl_change_glyph_color.png/900px-Jexl_change_glyph_color.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5b/Jexl_change_glyph_color.png/1200px-Jexl_change_glyph_color.png 2x"
 width="600" height="486" alt="Jexl change glyph color.png" />
 
-### <span id="Dynamically_changing_the_mouseover_text" class="mw-headline">Dynamically changing the mouseover text</span>
+### Dynamically changing the mouseover text
 
 In the section just above where we change the colors in the "Display 1"
 section, we see an item that is already in JEXL:
@@ -967,7 +939,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3b/Jexl_change_mouseover.png/900px-Jexl_change_mouseover.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Jexl_change_mouseover.png 2x"
 width="600" height="385" alt="Jexl change mouseover.png" />
 
-### <span id="Getting_the_config" class="mw-headline">Getting the config</span>
+### Getting the config
 
 One way I use for the settings editor for a copy of a track is to figure
 out how the json for a particular change would look so that I can
@@ -991,7 +963,7 @@ width="600" height="600" alt="JB2 track json.png" />
 which shows how the changes we made in the user interface gets added to
 the site configuration.
 
-# <span id="Using_the_admin-server" class="mw-headline">Using the admin-server</span>
+# Using the admin-server
 
      NOTE: This section will not be done in the live tutorial for a variety reasons, including 
      that we don't have the ports open to run the admin server. This section is here to introduce 
@@ -1025,7 +997,7 @@ rel="nofollow">http://tutorialpag31.jbrowse.org:9090?adminKey=yourkey</a>
 
   
 
-## <span id="Using_the_admin-server_to_add_an_assembly" class="mw-headline">Using the admin-server to add an assembly</span>
+## Using the admin-server to add an assembly
 
 The first thing we need to do is add a reference sequence. There is
 already one prepared and on the web server for *C. elegans* and it is at
@@ -1065,7 +1037,7 @@ Copy and paste those URLs in to the appropriate fields and then click
   server software name>" to find directions.
 ```
 
-## <span id="Using_the_admin-server_to_add_a_GFF_track" class="mw-headline">Using the admin-server to add a GFF track</span>
+## Using the admin-server to add a GFF track
 
      http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz
      http://tutorialpag31.jbrowse.org/~ubuntu/data/c_elegans.genes.sorted.gff3.gz.tbi
@@ -1082,7 +1054,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/Genes_track.png/1200px-Genes_track.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/Genes_track.png/1600px-Genes_track.png 2x"
 width="800" height="224" alt="Genes track.png" />
 
-## <span id="Using_the_admin-server_to_add_a_synteny_track" class="mw-headline">Using the admin-server to add a synteny track</span>
+## Using the admin-server to add a synteny track
 
      http://tutorialpag31.jbrowse.org/c_elegans.c_brenneri.paf
 
@@ -1094,87 +1066,4 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="800" height="460" alt="Dotplot config.png" />
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse2_Tutorial_PAG_2024"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:36 on 18 January
-  2024.</span>
-<!-- - <span id="footer-info-viewcount">5,325 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

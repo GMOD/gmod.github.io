@@ -1,23 +1,7 @@
 ---
 title: "Computing Requirements"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Computing Requirements</span>
-
-
-
-
-
-
-
+# Computing Requirements
 
 
 This page discusses high-level computing requirements and prerequisites
@@ -28,31 +12,22 @@ page](GMOD_Components "GMOD Components").
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">GMOD Systems
   Administrator</span>](#GMOD_Systems_Administrator)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Qualifications and
-    Hiring</span>](#Qualifications_and_Hiring)
-- [<span class="tocnumber">2</span> <span class="toctext">Hardware and
-  Software</span>](#Hardware_and_Software)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Hardware</span>](#Hardware)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Operating
-    System</span>](#Operating_System)
-    - [<span class="tocnumber">2.2.1</span> <span class="toctext">Unix,
-      Linux, and Mac OS</span>](#Unix.2C_Linux.2C_and_Mac_OS)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">Windows</span>](#Windows)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Other
-    Software</span>](#Other_Software)
+  - [Qualifications and
+    Hiring](#Qualifications_and_Hiring)
+- [Hardware and
+  Software](#Hardware_and_Software)
+  - [Hardware](#Hardware)
+  - [Operating
+    System](#Operating_System)
+    - [Unix,
+      Linux, and Mac OS](#Unix.2C_Linux.2C_and_Mac_OS)
+    - [Windows](#Windows)
+  - [Other
+    Software](#Other_Software)
 
 
-
-## <span id="GMOD_Systems_Administrator" class="mw-headline">GMOD Systems Administrator</span>
+## GMOD Systems Administrator
 
 The key to any successful computing infrastructure is a good systems
 administrator. System administration is primarily concerned with setting
@@ -70,7 +45,7 @@ installation to you. It may not be necessary to have a full-time
 sysadmin, but there should be someone on staff with time and expertise
 to deal with any computer-related issues that may arise.
 
-### <span id="Qualifications_and_Hiring" class="mw-headline">Qualifications and Hiring</span>
+### Qualifications and Hiring
 
 The following section lays down some of the important skills that a
 systems administrator dealing with GMOD software would be expected to
@@ -173,9 +148,9 @@ What does a *professional attitude* mean in this context?
 
   
 
-## <span id="Hardware_and_Software" class="mw-headline">Hardware and Software</span>
+## Hardware and Software
 
-### <span id="Hardware" class="mw-headline">Hardware</span>
+### Hardware
 
 This is somewhat dependent on the type of resource that you are setting
 up, and who will be using it. Most mid- to high-end computers can be
@@ -203,7 +178,7 @@ hardware, and in terms of flexibility, it cannot be beaten.
 
   
 
-### <span id="Operating_System" class="mw-headline">Operating System</span>
+### Operating System
 
 [Operating system](Glossary#Operating_System "Glossary") (OS) choice is
 the first decision you will make about your computing platform and it
@@ -220,7 +195,7 @@ in GMOD follows.
 
   
 
-#### <span id="Unix.2C_Linux.2C_and_Mac_OS" class="mw-headline">Unix, Linux, and Mac OS</span>
+#### Unix, Linux, and Mac OS
 
 The Unix operating system has been around since the 1970s. Linux is a
 variant of Unix that has become very popular in the last decade. Mac OS
@@ -239,9 +214,6 @@ GMOD implementations use Linux as their operating system. If you need
 help with something and you are running on Linux, then the majority of
 the GMOD community can potentially help you with your problem. This is
 much less true if you are running on a different operating system.
-
-<!-- -->
-
 Which Linux?   
 The official
 <a href="http://en.wikipedia.org/wiki/Linux_distribution" class="extiw"
@@ -261,9 +233,6 @@ to pick CentOS or Ubuntu, and if you are new to Linux, you will likely
 find Ubuntu easier to use. If you already have another version of Linux
 running and you don't want to switch then you can probably use that
 distribution without problems.
-
-<!-- -->
-
 Mac OS   
 <a href="http://www.apple.com/macosx/" class="external text"
 rel="nofollow">Mac OS</a> from
@@ -276,9 +245,6 @@ roots, the difference between MacOS and a typical Linux distribution is
 greater than the difference between any two Linux distributions. If you
 run GMOD on Apples, you will need to do more work to set things up then
 if you were running on Linux.
-
-<!-- -->
-
 Other Unix   
 This category covers any non-Linux, non-Mac OS version of Unix. This
 includes operating systems like Solaris, HP-UX, AIX, FreeBSD, and a
@@ -287,7 +253,7 @@ not Linux based. As such, implementing GMOD on these systems can be
 done, but it will involve additional work, in the same way that MacOS
 involves more work than Linux.
 
-#### <span id="Windows" class="mw-headline">Windows</span>
+#### Windows
 
 While Mac OS and other Unix operating systems are fairly close to Linux,
 <a href="http://microsoft.com" class="external text"
@@ -301,100 +267,10 @@ on Windows means significantly more work up front and greatly reduces
 the part of the GMOD community that can help you if you encounter
 problems.
 
-### <span id="Other_Software" class="mw-headline">Other Software</span>
+### Other Software
 
 Different GMOD components require different software to support them.
 Some require Perl or Java support, a database management system, a web
 server (such as Apache), or any number of other things. See [each
 component](GMOD_Components "GMOD Components") for their specific
 software requirements.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Linux](Category%253ALinux "Category%253ALinux")
-- [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X")
-- [Windows](Category%253AWindows "Category%253AWindows")
-- [Help](Category%253AHelp "Category%253AHelp")
-- [Computing](Category%253AComputing "Category%253AComputing")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Computing_Requirements" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:03 on 20 November
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">111,606 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

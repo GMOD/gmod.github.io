@@ -1,23 +1,7 @@
 ---
 title: "Tripal Working Group"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Tripal Working Group</span>
-
-
-
-
-
-
-
+# Tripal Working Group
 
 
 <table
@@ -53,12 +37,10 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
   
 
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/200px-TripalLogo.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5c/TripalLogo.jpg/300px-TripalLogo.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5c/TripalLogo.jpg 2x"
 width="200" height="60" alt="Tripal" />](Tripal.1 "Tripal")
-
 
 
 There will be a [Satellite
@@ -71,7 +53,7 @@ on or interested in it, or with an interest in using Drupal as a web
 front end to <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 is encouraged to attend.
 
-## <span id="Time:_4-6pm.2C_Wednedsay.2C_January_13" class="mw-headline">Time: 4-6pm, Wednedsay, January 13</span>
+## Time: 4-6pm, Wednedsay, January 13
 
 The working group will meet:
 
@@ -84,7 +66,7 @@ This is between the end of content at [PAG 2010](PAG_2010 "PAG 2010")
 and the PAG conference dinner. We may lose wireless halfway through the
 meeting.
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 If you are interested, please add your name below. You may also want to
 subscribe to the Tripal mailing list.
@@ -101,90 +83,3 @@ rel="nofollow">GDR</a> |  |
 rel="nofollow">Reactome</a> |  |
 | [Dave Clements](User%253AClements "User%253AClements") | clements\<\*\>nescent.org | GMOD, <a href="http://nescent.org/" class="external text"
 rel="nofollow">NESCent</a> |  |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tripal](Category%253ATripal "Category%253ATripal")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Tripal_Working_Group" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:43 on 3 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">24,253 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

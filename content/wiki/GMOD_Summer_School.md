@@ -1,26 +1,11 @@
 ---
 title: "GMOD Schools"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Schools</span>
-
-
-
+# GMOD Schools
 
 
 (Redirected from [GMOD Summer
-School](GMOD_Summer_School)
-
-
-
+School](/wiki/GMOD_Summer_School)
 
 
 <img
@@ -79,92 +64,3 @@ rel="nofollow">NESCent</a>, Durham, NC, United States |
 rel="nofollow">NESCent</a>, Durham, NC, United States |
 | 2008 | 11-13 July | [2008 GMOD Summer School](2008_GMOD_Summer_School "2008 GMOD Summer School") | <a href="http://www.nescent.org" class="external text"
 rel="nofollow">NESCent</a>, Durham, NC, United States |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Schools" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:22 on 16 April
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">282,347 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

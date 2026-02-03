@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Configuration/Feature frequency histograms"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/Feature frequency histograms</span>
-
-
-
-
-
-
-
+# GBrowse Configuration/Feature frequency histograms
 
 
 This article describes **feature frequency histograms** and how to
@@ -27,7 +11,7 @@ configure them in GBrowse.
 <a href="../GBrowse_Configuration" class="mw-redirect"
 title="GBrowse Configuration">GBrowse Configuration</a>.*
 
-## <span id="Generating_Feature_Frequency_Histograms" class="mw-headline">Generating Feature Frequency Histograms</span>
+## Generating Feature Frequency Histograms
 
 *Note: this applies to GFF2 databases only and needs to be rewritten
 slightly for GFF3*
@@ -147,97 +131,3 @@ represented as blue triangles pointing North. The second track
 declaration declares that when the user zooms out to over 100K base
 pairs, GBrowse should display the snp_density feature using the xyplot
 glyph.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](../Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](../Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="../Special%253ABrowse/GBrowse_Configuration-2FFeature_frequency_histograms"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 10:34 on 9 July
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">21,142 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

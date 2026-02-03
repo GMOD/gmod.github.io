@@ -1,54 +1,31 @@
 ---
 title: "GMOD Mailing Lists"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Mailing Lists</span>
-
-
-
+# GMOD Mailing Lists
 
 
 (Redirected from [Mailing
-list](Mailing_list)
+list](/wiki/Mailing_list)
 
 
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Searching
   Email Lists</span>](#Searching_Email_Lists)
-- [<span class="tocnumber">2</span> <span class="toctext">Posting to and
+- [Posting to and
   Membership in Email
-  Lists</span>](#Posting_to_and_Membership_in_Email_Lists)
-- [<span class="tocnumber">3</span> <span class="toctext">Overview
-  Lists</span>](#Overview_Lists)
-- [<span class="tocnumber">4</span> <span class="toctext">Component
-  Lists</span>](#Component_Lists)
-- [<span class="tocnumber">5</span> <span class="toctext">Topic Based
-  Lists</span>](#Topic_Based_Lists)
-- [<span class="tocnumber">6</span> <span class="toctext">Inactive
-  Lists</span>](#Inactive_Lists)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">As of May
-    2016</span>](#As_of_May_2016)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">As of
-    August 2008</span>](#As_of_August_2008)
-- [<span class="tocnumber">7</span> <span class="toctext">A Few Non GMOD
-  Lists</span>](#A_Few_Non_GMOD_Lists)
+  Lists](#Posting_to_and_Membership_in_Email_Lists)
+- [Overview
+  Lists](#Overview_Lists)
+- [Component
+  Lists](#Component_Lists)
+- [Topic Based
+  Lists](#Topic_Based_Lists)
+- [Inactive
+  Lists](#Inactive_Lists)
+  - [As of May
+    2016](#As_of_May_2016)
+  - [As of
+    August 2008](#As_of_August_2008)
+- [A Few Non GMOD
+  Lists](#A_Few_Non_GMOD_Lists)
 
 
 This page lists most of the mailing lists relevant to GMOD. The default
@@ -69,7 +46,7 @@ lists](#A_Few_Non_GMOD_Lists) that are of general interest.
 
   
 
-## <span id="Searching_Email_Lists" class="mw-headline">Searching Email Lists</span>
+## Searching Email Lists
 
 <table>
 <colgroup>
@@ -106,14 +83,14 @@ link to these archives, whenever they exist.</td>
 </tbody>
 </table>
 
-## <span id="Posting_to_and_Membership_in_Email_Lists" class="mw-headline">Posting to and Membership in Email Lists</span>
+## Posting to and Membership in Email Lists
 
 Most GMOD lists require you to be a member of the list to post to the
 list. If you aren't a member, your post will be *deferred* until one of
 that list's managers has a chance to review your posting. Therefore, *we
 strongly suggest that join a list before posting to it.*
 
-## <span id="Overview_Lists" class="mw-headline">Overview Lists</span>
+## Overview Lists
 
 | Topic | List Link | Comment | Archive(s) |
 |----|----|----|----|
@@ -130,7 +107,7 @@ class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-devel"
 class="external text" rel="nofollow">Sourceforge</a> |
 
-## <span id="Component_Lists" class="mw-headline">Component Lists</span>
+## Component Lists
 
 Mailing lists about specific [GMOD
 Components](GMOD_Components "GMOD Components").
@@ -366,7 +343,7 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 </tbody>
 </table>
 
-## <span id="Topic_Based_Lists" class="mw-headline">Topic Based Lists</span>
+## Topic Based Lists
 
 These mailing lists are about general topics of interest, rather than
 about specific software components.
@@ -384,9 +361,9 @@ class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-phendiver"
 class="external text" rel="nofollow">SourceForge</a> |
 
-## <span id="Inactive_Lists" class="mw-headline">Inactive Lists</span>
+## Inactive Lists
 
-### <span id="As_of_May_2016" class="mw-headline">As of May 2016</span>
+### As of May 2016
 
 As of May 2016, these lists have not had postings in the past 12 months.
 
@@ -443,7 +420,7 @@ class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-webgbrowse"
 class="external text" rel="nofollow">Sourceforge</a> |
 
-### <span id="As_of_August_2008" class="mw-headline">As of August 2008</span>
+### As of August 2008
 
 As of August 2008, these lists have not had postings in the past 12
 months.
@@ -478,7 +455,7 @@ class="external text" rel="nofollow">turnkey-devel</a> | [Turnkey](Turnkey "Turn
 | <a href="https://lists.sourceforge.net/lists/listinfo/turnkey-cmts"
 class="external text" rel="nofollow">turnkey-cmts</a> | [Turnkey](Turnkey "Turnkey") code updates. |
 
-## <span id="A_Few_Non_GMOD_Lists" class="mw-headline">A Few Non GMOD Lists</span>
+## A Few Non GMOD Lists
 
 There are a couple of mailing lists that, while not affiliated with
 GMOD, often have content of interest to the GMOD community.
@@ -494,95 +471,3 @@ class="external text" rel="nofollow">Bioperl-l</a> | Primary [BioPerl](BioPerl "
 | <a href="http://lists.open-bio.org/mailman/listinfo/open-bio-l"
 class="external text" rel="nofollow">OBF cross-project</a> | This list is for <a href="http://open-bio.org" class="external text" rel="nofollow">Open
 Bioinformatics Foundation (OBF)</a> projects to cross talk such as for OBDA and BioSQL issues. |  |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Help](Category%253AHelp "Category%253AHelp")
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_Mailing_Lists" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Mailing_Lists" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:02 on 16 May
-  2016.</span>
-<!-- - <span id="footer-info-viewcount">604,932 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

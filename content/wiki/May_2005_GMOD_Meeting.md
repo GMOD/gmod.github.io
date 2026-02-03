@@ -1,59 +1,31 @@
 ---
 title: "May 2005 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">May 2005 GMOD Meeting</span>
-
-
-
-
-
-
-
+# May 2005 GMOD Meeting
 
 
 Generic Model Organism Database Construction Set
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   6</span>](#Meeting_6)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Presentations</span>](#Presentations)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Tuesday,
-    May 17</span>](#Tuesday.2C_May_17)
-- [<span class="tocnumber">4</span> <span class="toctext">GMOD
-  Architecture Working Group</span>](#GMOD_Architecture_Working_Group)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Goal</span>](#Goal)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Workflow</span>](#Workflow)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Timeline of a
-      recommendation</span>](#Timeline_of_a_recommendation)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Communication</span>](#Communication)
+- [Presentations](#Presentations)
+- [Agenda](#Agenda)
+  - [Tuesday,
+    May 17](#Tuesday.2C_May_17)
+- [GMOD
+  Architecture Working Group](#GMOD_Architecture_Working_Group)
+  - [Goal](#Goal)
+  - [Workflow](#Workflow)
+    - [Timeline of a
+      recommendation](#Timeline_of_a_recommendation)
+  - [Communication](#Communication)
 
 
-
-## <span id="Meeting_6" class="mw-headline">Meeting 6</span>
+## Meeting 6
 
 May 16-17, 2005 SRI, Menlo Park, CA
 
-## <span id="Presentations" class="mw-headline">Presentations</span>
+## Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4c/Apollo.ppt" class="internal"
   title="Apollo.ppt">Apollo.ppt</a>
@@ -91,7 +63,7 @@ May 16-17, 2005 SRI, Menlo Park, CA
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/84/Zhang-050517.ppt" class="internal"
   title="Zhang-050517.ppt">Zhang-050517.ppt</a>
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 <table data-cellpadding="6" width="75%">
 <colgroup>
@@ -173,7 +145,7 @@ Scott Cain</td>
 </tbody>
 </table>
 
-#### <span id="Tuesday.2C_May_17" class="mw-headline">Tuesday, May 17</span>
+#### Tuesday, May 17
 
 <table data-cellpadding="6" width="75%">
 <colgroup>
@@ -251,9 +223,9 @@ Lincoln Stein and Scott Cain</td>
 </tbody>
 </table>
 
-## <span id="GMOD_Architecture_Working_Group" class="mw-headline">GMOD Architecture Working Group</span>
+## GMOD Architecture Working Group
 
-### <span id="Goal" class="mw-headline">Goal</span>
+### Goal
 
 The Architecture Working Group will make recommendations to the GMOD
 consortium on any cross-project policies which can lead to a more
@@ -267,7 +239,7 @@ GMOD will announce the recommendations and provide a repository for the
 recommendations on the website. Future developers will be pointed to
 these recommendations.
 
-### <span id="Workflow" class="mw-headline">Workflow</span>
+### Workflow
 
 The group will discuss which recommendations are needed and decide on an
 issue on which to make a recommendation. One or two recommendations at a
@@ -276,7 +248,7 @@ different for each recommendation – some will be short with near
 consensus early on and will just be a matter of formalizing. Others will
 be more contentious and require more work to gain consensus on.
 
-#### <span id="Timeline_of_a_recommendation" class="mw-headline">Timeline of a recommendation</span>
+#### Timeline of a recommendation
 
 Two to three weeks: Discussion of the current problem, specify exactly
 what the proposals should address. Any use cases are developed at this
@@ -292,7 +264,7 @@ consensus. At the end of this time, one person will be delegated to
 recommendation. After one last review the proposal is formally submitted
 to GMOD.
 
-### <span id="Communication" class="mw-headline">Communication</span>
+### Communication
 
 Communication will take place primarily over email on the group list.
 One conference call per month can be expected and we will work out a
@@ -301,87 +273,6 @@ call. We will try to limit conference calls to one hour per month per
 active recommendation.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/May_2005_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:07 on 14 March
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">41,069 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

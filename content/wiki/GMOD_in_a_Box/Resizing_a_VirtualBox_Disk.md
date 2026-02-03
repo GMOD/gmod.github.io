@@ -1,30 +1,14 @@
 ---
 title: "GMOD in a Box/Resizing a VirtualBox Disk"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD in a Box/Resizing a VirtualBox Disk</span>
-
-
-
-
-
-
-
+# GMOD in a Box/Resizing a VirtualBox Disk
 
 
 **Important Note: The actions below could potentially result in the data
 partition getting corrupted. Always do these activities on a copy of the
 data drive file.**
 
-## <span id="For_GMOD_in_a_Box_before_2.05" class="mw-headline">For GMOD in a Box before 2.05</span>
+## For GMOD in a Box before 2.05
 
 To resize the data disk in GiaB 2.04, we have to change the type of disk
 it is, since the one that shipped with 2.04 doesn't support resizing
@@ -37,7 +21,7 @@ on that file:
 
 This creates a VDI file that we can resize.
 
-## <span id="For_Resizing_a_VDI_file" class="mw-headline">For Resizing a VDI file</span>
+## For Resizing a VDI file
 
 To resize, run this command on the host machine on the disk that you
 want to resize:
@@ -82,89 +66,3 @@ CD iso from the ISO controller.
 Now you can restart the GMOD in a Box instance and continue with
 mounting the new data drive as described in the [GMOD in a
 Box/Updating](Updating "GMOD in a Box/Updating") page.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_in_a_Box-2FResizing_a_VirtualBox_Disk"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:31 on 12 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">7,687 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

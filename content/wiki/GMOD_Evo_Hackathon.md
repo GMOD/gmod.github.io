@@ -1,23 +1,7 @@
 ---
 title: "GMOD Evo Hackathon"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Evo Hackathon</span>
-
-
-
-
-
-
-
+# GMOD Evo Hackathon
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -66,52 +50,40 @@ went out on August 1, 2010, and remained open until August 25.
 Participants have been selected and notified of their status.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Synopsis</span>](#Synopsis)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Subgroups</span>](#Subgroups)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">PAG
-    Poster</span>](#PAG_Poster)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Background</span>](#Background)
-- [<span class="tocnumber">3</span> <span class="toctext">Specific
-  objectives</span>](#Specific_objectives)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Viewing
+  Synopsis](#Synopsis)
+  - [Subgroups](#Subgroups)
+  - [PAG
+    Poster](#PAG_Poster)
+- [Background](#Background)
+- [Specific
+  objectives](#Specific_objectives)
+  - [Viewing
     tools for comparative genomics
-    data</span>](#Viewing_tools_for_comparative_genomics_data)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Visualization of phylogenetic data and
-    trees</span>](#Visualization_of_phylogenetic_data_and_trees)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Population
+    data](#Viewing_tools_for_comparative_genomics_data)
+  - [Visualization of phylogenetic data and
+    trees](#Visualization_of_phylogenetic_data_and_trees)
+  - [Population
     Diversity and Phenotype
-    support</span>](#Population_Diversity_and_Phenotype_support)
-- [<span class="tocnumber">4</span> <span class="toctext">Hackathon
-  Structure</span>](#Hackathon_Structure)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Before the
-    Event</span>](#Before_the_Event)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">During the
-    Event</span>](#During_the_Event)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Deliverables / Event
-    Results</span>](#Deliverables_.2F_Event_Results)
-- [<span class="tocnumber">5</span> <span class="toctext">Participant
-  Funding</span>](#Participant_Funding)
-- [<span class="tocnumber">6</span> <span class="toctext">March 2011
-  Satellite</span>](#March_2011_Satellite)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Timeline</span>](#Timeline)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Sponsorship</span>](#Sponsorship)
-- [<span class="tocnumber">9</span> <span class="toctext">Organizing
-  Committee</span>](#Organizing_Committee)
+    support](#Population_Diversity_and_Phenotype_support)
+- [Hackathon
+  Structure](#Hackathon_Structure)
+  - [Before the
+    Event](#Before_the_Event)
+  - [During the
+    Event](#During_the_Event)
+  - [Deliverables / Event
+    Results](#Deliverables_.2F_Event_Results)
+- [Participant
+  Funding](#Participant_Funding)
+- [March 2011
+  Satellite](#March_2011_Satellite)
+- [Timeline](#Timeline)
+- [Sponsorship](#Sponsorship)
+- [Organizing
+  Committee](#Organizing_Committee)
 
 
-
-# <span id="Synopsis" class="mw-headline">Synopsis</span>
+# Synopsis
 
 This hackathon addressed critical gaps in the capabilities of the
 Generic Model Organism Database (GMOD) toolbox that limited its utility
@@ -134,7 +106,7 @@ evolutionary biology that GMOD components have the potential to fill,
 and for tool developers in evolutionary biology to better understand how
 best to extend or integrate with already existing GMOD components.
 
-## <span id="Subgroups" class="mw-headline">Subgroups</span>
+## Subgroups
 
 *Due to the closure of NESCent, the links below to the hackathon wiki
 originally hosted by NESCent no longer resolve. A
@@ -145,12 +117,10 @@ wiki, one first needs to reinstantiate a MediaWiki instance from the
 export.*
 
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/200px-EvoHackLaptops2010.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7f/EvoHackLaptops2010.jpg/300px-EvoHackLaptops2010.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7f/EvoHackLaptops2010.jpg 2x"
 width="200" height="119" alt="EvoHackLaptops2010.jpg" />
-
 
 
 The <a href="https://www.nescent.org/wg_gmodevohackathon/Participants"
@@ -168,9 +138,6 @@ data, using several visualization tools (including
 [JBrowse](JBrowse.1 "JBrowse") and
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn")) as targets. Will enable
 sharing of comparative data in multiple tools from multiple sources.
-
-<!-- -->
-
 <a href="https://www.nescent.org/wg_gmodevohackathon/GBrowse_syn2"
 class="external text" rel="nofollow">GBrowse_syn2</a>  
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is built on and takes
@@ -182,9 +149,6 @@ GBrowse1-only applications ([SynView](SynView "SynView"), [Primer
 Designer](PrimerDesigner.pm "PrimerDesigner.pm"), ...) to be ported to
 GBrowse2 as well. Two participants also became core GBrowse_syn
 developers.
-
-<!-- -->
-
 <a href="https://www.nescent.org/wg_gmodevohackathon/JBrowse_syn"
 class="external text" rel="nofollow">JBrowse_syn</a>  
 This group set out to extend [JBrowse](JBrowse.1 "JBrowse") to be a
@@ -192,9 +156,6 @@ comparative genomics browser. The group removed the existing "single
 genome" assumption from the code and successfully displayed several
 genomes in parallel. Several participants also became familiar with
 JBrowse code and architecture.
-
-<!-- -->
-
 <a href="https://www.nescent.org/wg_gmodevohackathon/PhyloBox"
 class="external text" rel="nofollow">PhyloBox</a>  
 <a href="http://phylobox.appspot.com/" class="external text"
@@ -202,9 +163,6 @@ rel="nofollow">PhyloBox</a> is a flexible and fast web based tree
 visualization program. At the hackathon the PhyloBox team extended
 PhyloBox in numerous ways to make it a "widget" that can interact with
 other widgets. PhyloBox documentation was also created.
-
-<!-- -->
-
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Comparative_Genomics_Visualization:Phylobox_JBrowse"
 class="external text" rel="nofollow">Integration PhyloBox JBrowse
@@ -219,9 +177,6 @@ class="external text" rel="nofollow">PhyloBox</a> and
 class="external text" rel="nofollow">GMatchbox</a> groups to enable
 integration of these three technologies. This group was very helpful at
 getting teams to work together.
-
-<!-- -->
-
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup"
 class="external text" rel="nofollow">Natural Diversity and Phenotypes in
@@ -235,9 +190,6 @@ module in Chado. This was built on top of the emerging [Chado on
 Rails](Chado_on_Rails "Chado on Rails") project. The second was a better
 understanding, slight refactoring, and updated documentation for Chado's
 phenotype module.
-
-<!-- -->
-
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/Galaxy_and_HyPhy_Subgroup"
 class="external text" rel="nofollow">Galaxy + HyPhy</a>  
@@ -247,9 +199,6 @@ improving Galaxy's ability to integrate interactive tools, using
 <a href="http://hyphy.org" class="external text"
 rel="nofollow">HyPhy</a> as the prototype application. The Galaxy and
 HyPhy code bases were modified to support this.
-
-<!-- -->
-
 <a
 href="https://www.nescent.org/wg_gmodevohackathon/BioPerl_Enhancements_Subgroup"
 class="external text" rel="nofollow">BioPerl</a>  
@@ -259,14 +208,14 @@ of very large trees or large numbers of small trees. BioPerl now
 supports storing such trees in a lightweight database instead of in
 memory.
 
-## <span id="PAG_Poster" class="mw-headline">PAG Poster</span>
+## PAG Poster
 
 [Robert Buels](User%253ARobertBuels "User%253ARobertBuels") gave a <a
 href="http://www.nescent.org/wg/gmodevohackathon/images/3/3f/Gmod_evohack_poster.pdf"
 class="external text" rel="nofollow">poster on the hackathon</a> at [PAG
 2011](PAG_2011 "PAG 2011").
 
-# <span id="Background" class="mw-headline">Background</span>
+# Background
 
 The GMOD project is a confederation of intercompatible open-source
 projects developing software tools for storing, managing, curating, and
@@ -308,7 +257,7 @@ complementary expertise, and collaborative work on tangible products
 that can form the basis of continued partnerships long beyond the end of
 the meeting.
 
-# <span id="Specific_objectives" class="mw-headline">Specific objectives</span>
+# Specific objectives
 
 Organizers identified the following broad themes for focusing work at
 the event. Before and at the hackathon, the participants refined and
@@ -321,7 +270,7 @@ the hackathon. Further ideas and discussion topics can be found on the
 Information](GMOD_Evo_Hackathon_Proposal_Supplemental_Information "GMOD Evo Hackathon Proposal Supplemental Information")
 page.
 
-## <span id="Viewing_tools_for_comparative_genomics_data" class="mw-headline">Viewing tools for comparative genomics data</span>
+## Viewing tools for comparative genomics data
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a popular GMOD component
 for viewing comparative genomics data, particularly for viewing synteny
@@ -344,7 +293,7 @@ In addition to filling those gaps, GBrowse_syn would also particularly
 stand to benefit from the event by gaining a more sustainable developer
 base.
 
-## <span id="Visualization_of_phylogenetic_data_and_trees" class="mw-headline">Visualization of phylogenetic data and trees</span>
+## Visualization of phylogenetic data and trees
 
 The [GMOD toolkit](GMOD_Components "GMOD Components") at present does
 not include web-based alignment viewers, nor can the increasingly
@@ -367,7 +316,7 @@ rel="nofollow">PhyloWidget</a>) could be used as the basis for a
 JavaScript-based tree viewer (or an applet that can be controlled
 through JavaScript) that integrates with JBrowse.
 
-## <span id="Population_Diversity_and_Phenotype_support" class="mw-headline">Population Diversity and Phenotype support</span>
+## Population Diversity and Phenotype support
 
 GMOD's capabilities in managing phenotype and natural diversity data is
 scattered across partially redundant and outdated modules, does not
@@ -397,9 +346,9 @@ make it operate on top of Chado. The hackathon could harness this
 synergy to help this effort leap forward, which could ultimately provide
 GMOD with the currently missing web-interface for such data.
 
-# <span id="Hackathon_Structure" class="mw-headline">Hackathon Structure</span>
+# Hackathon Structure
 
-## <span id="Before_the_Event" class="mw-headline">Before the Event</span>
+## Before the Event
 
 Discussion of ideas and sometimes even design actually starts well
 before the hackathon, on mailing lists, wiki pages, and conference calls
@@ -409,7 +358,7 @@ means that participants should be willing to contribute some time in
 advance of the hackathon itself to participate in this preparatory
 discussion.
 
-## <span id="During_the_Event" class="mw-headline">During the Event</span>
+## During the Event
 
 Typically, hackathon participants use the morning of the first day of
 the event to organize themselves into working groups of between 3 and 6
@@ -417,7 +366,7 @@ people, each with a focused implementation objective. Ideas and
 objectives are discussed, and attendees coalesce around the projects in
 which they have the most experience or interest.
 
-## <span id="Deliverables_.2F_Event_Results" class="mw-headline">Deliverables / Event Results</span>
+## Deliverables / Event Results
 
 The hackathon will use a
 <a href="http://www.nescent.org/wg_gmodevohackathon/Main_Page"
@@ -435,12 +384,12 @@ class="external text" rel="nofollow">OSI-approved open source
 license</a>. As contributions to existing GMOD tools, all hackathon
 products will most likely satisfy this requirement automatically.
 
-# <span id="Participant_Funding" class="mw-headline">Participant Funding</span>
+# Participant Funding
 
 NESCent is [sponsoring](#Sponsorship) this hackathon, and had made funds
 available to defray costs for qualified participants.
 
-# <span id="March_2011_Satellite" class="mw-headline">March 2011 Satellite</span>
+# March 2011 Satellite
 
 
 [<img
@@ -457,14 +406,12 @@ March at NESCent. If you are interested in participating, please add
 your name below.
 
 
-
 *You do not need to have attended the original hackathon or plan on
 attending any other [GMOD Americas
 2011](GMOD_Americas_2011 "GMOD Americas 2011") events to participate in
 this satellite (or any other satellite). If you have an interest in
 extending GMOD and will be in the area or at GMOD Americas 2011, then
 you are strongly encouraged to participate.*
-
 
 
   
@@ -478,7 +425,7 @@ you are strongly encouraged to participate.*
 |  |  |  |
 | ↑ Add your name and details above |  |  |
 
-# <span id="Timeline" class="mw-headline">Timeline</span>
+# Timeline
 
 |  |  |
 |---:|----|
@@ -492,15 +439,13 @@ rel="nofollow">NESCent</a> |
 | **November 8-12, 2010** | Hackathon at NESCent |
 | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"). |
 
-# <span id="Sponsorship" class="mw-headline">Sponsorship</span>
-
+# Sponsorship
 
 
 <a href="http://nescent.org/" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/120px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="120" height="111" alt="NESCent" /></a>
-
 
 
 This event is sponsored by the
@@ -516,7 +461,7 @@ applications. NESCent achieves this by supporting research and education
 across disciplinary, institutional, geographic, and demographic
 boundaries.
 
-# <span id="Organizing_Committee" class="mw-headline">Organizing Committee</span>
+# Organizing Committee
 
 - [Nicole Washington](User%253ANLWashington "User%253ANLWashington"), chair
 - [Sheldon McKay](User%253AMckays "User%253AMckays")
@@ -526,93 +471,3 @@ boundaries.
 - <a href="http://informatics.nescent.org/wiki/User%253AHlapp"
   class="external text" rel="nofollow">Hilmar Lapp</a>
 - [Dave Clements](User%253AClements "User%253AClements")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Evolution](Category%253AEvolution "Category%253AEvolution")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-- [GMOD Evo
-  Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")
-- [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Evo_Hackathon" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:22 on 13 November
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">288,487 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

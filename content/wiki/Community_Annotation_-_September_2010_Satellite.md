@@ -1,23 +1,7 @@
 ---
 title: "Community Annotation - September 2010 Satellite"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Community Annotation - September 2010 Satellite</span>
-
-
-
-
-
-
-
+# Community Annotation - September 2010 Satellite
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
@@ -63,52 +47,35 @@ width="200" height="171" alt="part of GMOD Europe 2010" /></a>
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">2</span> <span class="toctext">Some
-  Experiences</span>](#Some_Experiences)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">PomBase</span>](#PomBase)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">UniProt</span>](#UniProt)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">ZFIN</span>](#ZFIN)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">MGI and
-    EMAGE</span>](#MGI_and_EMAGE)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Genome
-    Annotation</span>](#Genome_Annotation)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Teaching
-    Annotation</span>](#Teaching_Annotation)
-  - [<span class="tocnumber">2.7</span>
-    <span class="toctext">EcoliWiki</span>](#EcoliWiki)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Discussion</span>](#Discussion)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Access and
-    Logins</span>](#Access_and_Logins)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Attribution and
-    Credit</span>](#Attribution_and_Credit)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Level of
-    Detail</span>](#Level_of_Detail)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Data
-    Quality and Consistency</span>](#Data_Quality_and_Consistency)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Journals</span>](#Journals)
-  - [<span class="tocnumber">3.6</span>
-    <span class="toctext">Communities Without a
-    MOD</span>](#Communities_Without_a_MOD)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Analysis</span>](#Analysis)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Lessons</span>](#Lessons)
-- [<span class="tocnumber">5</span> <span class="toctext">See
-  Also</span>](#See_Also)
+  Participants](#Participants)
+- [Some
+  Experiences](#Some_Experiences)
+  - [PomBase](#PomBase)
+  - [UniProt](#UniProt)
+  - [ZFIN](#ZFIN)
+  - [MGI and
+    EMAGE](#MGI_and_EMAGE)
+  - [Genome
+    Annotation](#Genome_Annotation)
+  - [Teaching
+    Annotation](#Teaching_Annotation)
+  - [EcoliWiki](#EcoliWiki)
+- [Discussion](#Discussion)
+  - [Access and
+    Logins](#Access_and_Logins)
+  - [Attribution and
+    Credit](#Attribution_and_Credit)
+  - [Level of
+    Detail](#Level_of_Detail)
+  - [Data
+    Quality and Consistency](#Data_Quality_and_Consistency)
+  - [Journals](#Journals)
+  - [Communities Without a
+    MOD](#Communities_Without_a_MOD)
+- [Analysis](#Analysis)
+  - [Lessons](#Lessons)
+- [See
+  Also](#See_Also)
 
 
 This [satellite
@@ -123,7 +90,7 @@ Tools](Post_Reference_Genome_Tools "Post Reference Genome Tools") and
 had many of the same participants. The topic of community annotation was
 proposed by Kim Rutherford.
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 - Ellen Adlem, Cambridge University Cambridge Institute of Medical
   Research, <a href="http://www.t1dbase.org" class="external text"
@@ -147,9 +114,9 @@ proposed by Kim Rutherford.
   <a href="http://www.pombase.org" class="external text"
   rel="nofollow">PomBase</a>
 
-## <span id="Some_Experiences" class="mw-headline">Some Experiences</span>
+## Some Experiences
 
-### <span id="PomBase" class="mw-headline">PomBase</span>
+### PomBase
 
 Val Wood at <a href="http://www.pombase.org/" class="external text"
 rel="nofollow">PomBase</a> sent out a GO curation request in a Microsoft
@@ -161,7 +128,7 @@ or very close in the GO hierarchy. Val's view is if PomBase can get the
 community to do 90% of the annotation work, then PomBase can do 10 times
 as much annotation.
 
-### <span id="UniProt" class="mw-headline">UniProt</span>
+### UniProt
 
 UniProt added a "Contribute" section at the top of their protein pages.
 It includes 2 links, "Send feedback" and "Read comments or add your
@@ -175,7 +142,7 @@ Curators at UniProt also contact authors of a paper when the paper is
 added to UniProt. This often results in the author's coming back to
 UniProt more often.
 
-### <span id="ZFIN" class="mw-headline">ZFIN</span>
+### ZFIN
 
 <a href="http://zfin.org" class="external text" rel="nofollow">ZFIN</a>,
 the zebrafish model organism database (MOD), was launched in the mid
@@ -210,7 +177,7 @@ researchers to annotate their images using terms from the ontologies
 used by ZFIN curators. There have been inquiries but there have not been
 any submissions with this tool to date.
 
-### <span id="MGI_and_EMAGE" class="mw-headline">MGI and EMAGE</span>
+### MGI and EMAGE
 
 Both <a href="http://www.informatics.jax.org/" class="external text"
 rel="nofollow">MGI</a>, the mouse MOD, and
@@ -235,7 +202,7 @@ allowed researchers to do annotation at much finer detail. However, it
 also required them to learn the ins and outs of an entirely new
 interface.
 
-### <span id="Genome_Annotation" class="mw-headline">Genome Annotation</span>
+### Genome Annotation
 
 Several resources, including [ParameciumDB](ParameciumDB "ParameciumDB")
 and the Pea Aphid database, have offered training in genome annotation
@@ -245,7 +212,7 @@ annotations. However, some efforts have hit bumps along the way with
 users who don't use the tools often enough to remember the user
 interface between annotation sessions.
 
-### <span id="Teaching_Annotation" class="mw-headline">Teaching Annotation</span>
+### Teaching Annotation
 
 The <a href="http://ecoliwiki.net/colipedia/index.php/cacao"
 class="external text" rel="nofollow">CACAO project at Texas A&amp;M</a>
@@ -274,7 +241,7 @@ The Science Education Alliance (SEA) at HHMI takes a similar approach on
 a broader scale, starting with gathering and sequencing samples through
 submission to GenBank.
 
-### <span id="EcoliWiki" class="mw-headline">EcoliWiki</span>
+### EcoliWiki
 
 <a href="http://ecoliwiki.org" class="external text"
 rel="nofollow">EcoliWiki</a> is a recent effort that aggressively
@@ -294,9 +261,9 @@ Wikis offer significant hope for making it easier for biologists to fix
 or add something than it is to be irritated by an error or the absence
 of it.
 
-## <span id="Discussion" class="mw-headline">Discussion</span>
+## Discussion
 
-### <span id="Access_and_Logins" class="mw-headline">Access and Logins</span>
+### Access and Logins
 
 What model should be used for enabling and managing community
 annotation. Who do you give access to to, what types of access do they
@@ -307,22 +274,13 @@ Anyone can edit, with or without a login. Logins are available to anyone
 who requests it. Spam is automatically removed, but differences of
 opinion are resolved by *last edit wins* in most cases, and by
 increasing levels of control when that doesn't work.
-
-<!-- -->
-
 GMOD.org - All edits welcome, but you'll be watched.  
 Must have a login to edit, but anyone can create a login. Edits are
 loosely watched by GMOD staff.
-
-<!-- -->
-
 <a href="http://ecoliwiki.net" class="external text"
 rel="nofollow">EcoliWiki</a> - Vampire!  
 Logins given to trusted community members. Anyone with an existing login
 can create a login for someone else. Editors have full update access.
-
-<!-- -->
-
 [SGN](Category%253ASGN "Category%253ASGN") - Locus boss!  
 SGN locus pages list the set of community members who can update
 information about that locus. Every locus page includes "Request editor
@@ -330,15 +288,9 @@ privileges" link. This model allows specific people to control and "own"
 particular loci data. Locus owners tend to be experts on that locus, and
 giving control to them (and listing their names) benefits both SGN and
 the locus editor.
-
-<!-- -->
-
 PomBase (so far) - Reviewed before posting.  
 Submissions are reviewed by staff at the online resource before being
 posted to the public resource.
-
-<!-- -->
-
 [ParameciumDB](ParameciumDB "ParameciumDB") - Vetting, followed by complete trust  
 ParameciumDB only give access to people who know how to annotate. These
 annotations are not reviewed before incorporation. They are incorporated
@@ -357,7 +309,7 @@ they are who they say they are.
 (Q: Is anyone out there investigating unified logins in life sciences?
 This could be done as a front end to OpenID?)
 
-### <span id="Attribution_and_Credit" class="mw-headline">Attribution and Credit</span>
+### Attribution and Credit
 
 Want all statements in your resource to be attributed. This means you
 need field level (not just page level) attribution. Who said this, where
@@ -379,7 +331,7 @@ that they had helped create. This sort of meta-publication is not
 original research but it would demonstrate that a student is able to
 read and understand academic papers.
 
-### <span id="Level_of_Detail" class="mw-headline">Level of Detail</span>
+### Level of Detail
 
 Resources need to be careful not to overwhelm their community members.
 Dedicated curators can learn sophisticated tools and doing highly
@@ -405,7 +357,7 @@ Despite the complexity issues that come with ontologies, everyone
 present agree that abandoning ontologies in favor or free text
 annotation would be a huge mistake.
 
-### <span id="Data_Quality_and_Consistency" class="mw-headline">Data Quality and Consistency</span>
+### Data Quality and Consistency
 
 Problems of consistent annotation happen even when resources have a
 dedicated staff of in-house curators. Early in the
@@ -431,13 +383,13 @@ identify incorrect data by making it trivial to report problems and easy
 to fixt hem. You can also use your community to resolve *conflicting*
 annotations.
 
-### <span id="Journals" class="mw-headline">Journals</span>
+### Journals
 
 Can we get journals to require supplemental annotation data with
 publications? This very topic was discussed at a GMOD meeting 6 or 7
 years ago. Everyone agreed that it was a good idea then too.
 
-### <span id="Communities_Without_a_MOD" class="mw-headline">Communities Without a MOD</span>
+### Communities Without a MOD
 
 What can be done for communities that don't have a central resource for
 the gathering and integration of data? GONUTS is a resource for GO
@@ -445,7 +397,7 @@ annotation for any organism. Other data-type specific resources are
 available for such communities. However, does anything exist for these
 communities that is unified?
 
-## <span id="Analysis" class="mw-headline">Analysis</span>
+## Analysis
 
 Why were some of these efforts more successful than others?
 
@@ -501,7 +453,7 @@ CACAO is also be taking advantage of a culture shift. The students are
 already used to creating online content that others will see. This was
 exceptional when ZFIN launched in the mid 1990s. Now it is commonplace.
 
-### <span id="Lessons" class="mw-headline">Lessons</span>
+### Lessons
 
 Some possible lessons from the above experience and analysis.
 
@@ -535,7 +487,7 @@ There is often a tradeoff between rich functionality and ease of use.
 This will likely get better over time as web interfaces become both more
 sophisticated and more standardised.
 
-## <span id="See_Also" class="mw-headline">See Also</span>
+## See Also
 
 - There is a
   <a href="http://blog.openhelix.eu/?p=5551" class="external text"
@@ -547,100 +499,3 @@ sophisticated and more standardised.
   Mazumder R, Natale DA, Julio JA, Yeh LS, Wu CH. *Biol Direct.* 2010
   Feb 18;5:12. The discussion under "Reviewers' comments" is also
   interesting.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Community
-  Annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253ACommunity_Annotation_-_September_2010_Satellite"
-  accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="Special%253ABrowse/Community_Annotation_-2D_September_2010_Satellite"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:52 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">38,426 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

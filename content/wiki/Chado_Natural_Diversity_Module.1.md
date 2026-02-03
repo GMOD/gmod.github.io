@@ -1,23 +1,7 @@
 ---
 title: "Chado Natural Diversity Module"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Natural Diversity Module</span>
-
-
-
-
-
-
-
+# Chado Natural Diversity Module
 
 
 The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Natural
@@ -40,98 +24,86 @@ class="external free"
 rel="nofollow">https://www.nescent.org/wg_gmodevohackathon/Natural_Diversity_and_Phenotypes_Subgroup</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Interactions with Other Chado
-    Modules</span>](#Interactions_with_Other_Chado_Modules)
-    - [<span class="tocnumber">1.1.1</span> <span class="toctext">Stock
-      Module</span>](#Stock_Module)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">General
+  Introduction](#Introduction)
+  - [Interactions with Other Chado
+    Modules](#Interactions_with_Other_Chado_Modules)
+    - [Stock
+      Module](#Stock_Module)
+  - [General
     Description of Natural Diversity
-    Module</span>](#General_Description_of_Natural_Diversity_Module)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Key
-    Ontologies</span>](#Key_Ontologies)
-    - [<span class="tocnumber">1.3.1</span> <span class="toctext">Stock
-      Relationship Ontology</span>](#Stock_Relationship_Ontology)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Loading
-    Data</span>](#Loading_Data)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Web Front
-    Ends</span>](#Web_Front_Ends)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">See
-    Also</span>](#See_Also)
-    - [<span class="tocnumber">1.6.1</span> <span class="toctext">Email
-      Threads</span>](#Email_Threads)
-- [<span class="tocnumber">2</span> <span class="toctext">Use
-  Cases</span>](#Use_Cases)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">tree fruit
-    breeding data (tfGDR)</span>](#tree_fruit_breeding_data_.28tfGDR.29)
-    - [<span class="tocnumber">2.1.1</span> <span class="toctext">Cross
-      Experiment</span>](#Cross_Experiment)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Phenotype Assay</span>](#Phenotype_Assay)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Tomato/potato breeder lines and cultivars (Sol
+    Module](#General_Description_of_Natural_Diversity_Module)
+  - [Key
+    Ontologies](#Key_Ontologies)
+    - [Stock
+      Relationship Ontology](#Stock_Relationship_Ontology)
+  - [Loading
+    Data](#Loading_Data)
+  - [Web Front
+    Ends](#Web_Front_Ends)
+  - [See
+    Also](#See_Also)
+    - [Email
+      Threads](#Email_Threads)
+- [Use
+  Cases](#Use_Cases)
+  - [tree fruit
+    breeding data (tfGDR)](#tree_fruit_breeding_data_.28tfGDR.29)
+    - [Cross
+      Experiment](#Cross_Experiment)
+    - [Phenotype Assay](#Phenotype_Assay)
+  - [Tomato/potato breeder lines and cultivars (Sol
     genomics
-    network)</span>](#Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">Phenotyping
-      experiment</span>](#Phenotyping_experiment)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">Genotyping
-      experiment</span>](#Genotyping_experiment)
-- [<span class="tocnumber">3</span> <span class="toctext">ER
-  Diagram</span>](#ER_Diagram)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Table:
-    nd_experiment</span>](#Table:_nd_experiment)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Table:
-    nd_experiment_contact</span>](#Table:_nd_experiment_contact)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Table:
-    nd_experiment_dbxref</span>](#Table:_nd_experiment_dbxref)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Table:
-    nd_experiment_genotype</span>](#Table:_nd_experiment_genotype)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Table:
-    nd_experiment_phenotype</span>](#Table:_nd_experiment_phenotype)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">Table:
-    nd_experiment_project</span>](#Table:_nd_experiment_project)
-  - [<span class="tocnumber">4.7</span> <span class="toctext">Table:
-    nd_experiment_protocol</span>](#Table:_nd_experiment_protocol)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">Table:
-    nd_experiment_pub</span>](#Table:_nd_experiment_pub)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">Table:
-    nd_experiment_stock</span>](#Table:_nd_experiment_stock)
-  - [<span class="tocnumber">4.10</span> <span class="toctext">Table:
-    nd_experiment_stock_dbxref</span>](#Table:_nd_experiment_stock_dbxref)
-  - [<span class="tocnumber">4.11</span> <span class="toctext">Table:
-    nd_experiment_stockprop</span>](#Table:_nd_experiment_stockprop)
-  - [<span class="tocnumber">4.12</span> <span class="toctext">Table:
-    nd_experimentprop</span>](#Table:_nd_experimentprop)
-  - [<span class="tocnumber">4.13</span> <span class="toctext">Table:
-    nd_geolocation</span>](#Table:_nd_geolocation)
-  - [<span class="tocnumber">4.14</span> <span class="toctext">Table:
-    nd_geolocationprop</span>](#Table:_nd_geolocationprop)
-  - [<span class="tocnumber">4.15</span> <span class="toctext">Table:
-    nd_protocol</span>](#Table:_nd_protocol)
-  - [<span class="tocnumber">4.16</span> <span class="toctext">Table:
-    nd_protocol_reagent</span>](#Table:_nd_protocol_reagent)
-  - [<span class="tocnumber">4.17</span> <span class="toctext">Table:
-    nd_protocolprop</span>](#Table:_nd_protocolprop)
-  - [<span class="tocnumber">4.18</span> <span class="toctext">Table:
-    nd_reagent</span>](#Table:_nd_reagent)
-  - [<span class="tocnumber">4.19</span> <span class="toctext">Table:
-    nd_reagent_relationship</span>](#Table:_nd_reagent_relationship)
-  - [<span class="tocnumber">4.20</span> <span class="toctext">Table:
-    nd_reagentprop</span>](#Table:_nd_reagentprop)
+    network)](#Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29)
+    - [Phenotyping
+      experiment](#Phenotyping_experiment)
+    - [Genotyping
+      experiment](#Genotyping_experiment)
+- [ER
+  Diagram](#ER_Diagram)
+- [Tables](#Tables)
+  - [Table:
+    nd_experiment](#Table:_nd_experiment)
+  - [Table:
+    nd_experiment_contact](#Table:_nd_experiment_contact)
+  - [Table:
+    nd_experiment_dbxref](#Table:_nd_experiment_dbxref)
+  - [Table:
+    nd_experiment_genotype](#Table:_nd_experiment_genotype)
+  - [Table:
+    nd_experiment_phenotype](#Table:_nd_experiment_phenotype)
+  - [Table:
+    nd_experiment_project](#Table:_nd_experiment_project)
+  - [Table:
+    nd_experiment_protocol](#Table:_nd_experiment_protocol)
+  - [Table:
+    nd_experiment_pub](#Table:_nd_experiment_pub)
+  - [Table:
+    nd_experiment_stock](#Table:_nd_experiment_stock)
+  - [Table:
+    nd_experiment_stock_dbxref](#Table:_nd_experiment_stock_dbxref)
+  - [Table:
+    nd_experiment_stockprop](#Table:_nd_experiment_stockprop)
+  - [Table:
+    nd_experimentprop](#Table:_nd_experimentprop)
+  - [Table:
+    nd_geolocation](#Table:_nd_geolocation)
+  - [Table:
+    nd_geolocationprop](#Table:_nd_geolocationprop)
+  - [Table:
+    nd_protocol](#Table:_nd_protocol)
+  - [Table:
+    nd_protocol_reagent](#Table:_nd_protocol_reagent)
+  - [Table:
+    nd_protocolprop](#Table:_nd_protocolprop)
+  - [Table:
+    nd_reagent](#Table:_nd_reagent)
+  - [Table:
+    nd_reagent_relationship](#Table:_nd_reagent_relationship)
+  - [Table:
+    nd_reagentprop](#Table:_nd_reagentprop)
 
 
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 The Natural Diversity module allows storing data from multiple
 experiments of the same accessions/lines/strains, collected, treated and
@@ -144,9 +116,9 @@ interacting modules allow storing data from experiments that generate
 new accessions/lines/strains and experimental samples, such as field
 collection, cross, and treatments.
 
-## <span id="Interactions_with_Other_Chado_Modules" class="mw-headline">Interactions with Other [Chado Modules](Chado_Modules "Chado Modules")</span>
+## Interactions with Other [Chado Modules](Chado_Modules "Chado Modules")
 
-### <span id="Stock_Module" class="mw-headline">Stock Module</span>
+### Stock Module
 
 The original stock module was designed to store information about stock
 collections in a laboratory. This original concept of ‘stock’ table has
@@ -167,7 +139,7 @@ entities, a population entity can be composed of multiple species (eg. a
 group of insects collected in a field). To accommodate this change, the
 ‘NOT NULL’ constraint for organism_id has been dropped.
 
-## <span id="General_Description_of_Natural_Diversity_Module" class="mw-headline">General Description of Natural Diversity Module</span>
+## General Description of Natural Diversity Module
 
 - This section can be removed later on from this wiki page since most of
   the content exists in the table descriptions below. But it is included
@@ -225,19 +197,19 @@ The same protocol and reagent can be linked to multiple experiments and
 protocols, respectively. Metadata of experiments, such as date and
 experimenters, can be stored as properties (nd_experimentprop).
 
-## <span id="Key_Ontologies" class="mw-headline">Key Ontologies</span>
+## Key Ontologies
 
-### <span id="Stock_Relationship_Ontology" class="mw-headline">[Stock Relationship Ontology](Stock_Relationship_Ontology "Stock Relationship Ontology")</span>
+### [Stock Relationship Ontology](Stock_Relationship_Ontology "Stock Relationship Ontology")
 
-## <span id="Loading_Data" class="mw-headline">Loading Data</span>
+## Loading Data
 
 There are, as yet, no standard flat file formats or loading scripts to
 load data into this module. Custom scripts will need to be written to
 insert your data in the database.
 
-## <span id="Web_Front_Ends" class="mw-headline">Web Front Ends</span>
+## Web Front Ends
 
-## <span id="See_Also" class="mw-headline">See Also</span>
+## See Also
 
 - [Chado Natural Diversity Module Working
   Group](Chado_Natural_Diversity_Module_Working_Group "Chado Natural Diversity Module Working Group")
@@ -245,7 +217,7 @@ insert your data in the database.
   page](Talk%253AChado_Natural_Diversity_Module_Working_Group "Talk:Chado Natural Diversity Module Working Group")
   for background on how this module was created.
 
-### <span id="Email_Threads" class="mw-headline">Email Threads</span>
+### Email Threads
 
 - <a
   href="http://gmod.827538.n3.nabble.com/Natural-diversity-module-and-phenotype-cvterm-values-td829757.html#a829757#a829757"
@@ -259,11 +231,11 @@ insert your data in the database.
   href="http://gmod.827538.n3.nabble.com/Re-nd-naming-td937709.html#a937709#a937709"
   class="external text" rel="nofollow">nd naming</a>
 
-# <span id="Use_Cases" class="mw-headline">Use Cases</span>
+# Use Cases
 
-### <span id="tree_fruit_breeding_data_.28tfGDR.29" class="mw-headline">tree fruit breeding data (tfGDR)</span>
+### tree fruit breeding data (tfGDR)
 
-#### <span id="Cross_Experiment" class="mw-headline">Cross Experiment</span>
+#### Cross Experiment
 
 Data:
 
@@ -291,7 +263,7 @@ Chado:
 - Individual crosses is linked to a larger project via
   nd_experiment_project.
 
-#### <span id="Phenotype_Assay" class="mw-headline">Phenotype Assay</span>
+#### Phenotype Assay
 
 - Multiple clones of the same fruit tree accessions are planted in
   various lots of various orchards.
@@ -352,10 +324,10 @@ Comments:
 
 ------------------------------------------------------------------------
 
-### <span id="Tomato.2Fpotato_breeder_lines_and_cultivars_.28Sol_genomics_network.29" class="mw-headline">Tomato/potato breeder lines and cultivars (<a href="http://solgenomics.net" class="external text"
-rel="nofollow">Sol genomics network</a>)</span>
+### Tomato/potato breeder lines and cultivars (<a href="http://solgenomics.net" class="external text"
+rel="nofollow">Sol genomics network</a>)
 
-#### <span id="Phenotyping_experiment" class="mw-headline">Phenotyping experiment</span>
+#### Phenotyping experiment
 
 A collection of 479 tomato accessions were used in several locations and
 years for assaying traits of breeding significance. The collection is an
@@ -415,26 +387,26 @@ class="external text" rel="nofollow">genotype table</a>. The 2 linking
 tables, nd_experiment_phenotype and nd_experiment_genotype, provide a
 1-1 or 1-many relationship between phenotype/genotype and experiments.
 
-#### <span id="Genotyping_experiment" class="mw-headline">Genotyping experiment</span>
+#### Genotyping experiment
 
 Each genotyping experiment (in this use case SNP and SSR markers were
 assayed, yielding a genotype of a SNP of number of repeats) has a unique
 nd_experiment_id, and is linked to the stock using nd_experiment_stock,
 and to the genotype using nd_experiment_genotype table.
 
-# <span id="ER_Diagram" class="mw-headline">ER Diagram</span>
+# ER Diagram
 
 A simplified schema diagram by N. Menda and R. Buels
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/Natdiv_simplified_SGN.png" width="1600"
 height="943" alt="Natdiv simplified SGN.png" />
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
 This will be populated using the process outlined in [Chado Tables to
 Wiki](Chado_Tables_to_Wiki "Chado Tables to Wiki").
 
-## <span id="Table:_nd_experiment" class="mw-headline">Table: nd_experiment</span>
+## Table: nd_experiment
 
 This is the core table for the natural diversity module, representing
 each individual assay that is undertaken (nb this is usually \*not\* an
@@ -458,42 +430,18 @@ public.nd_experiment Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [nd_experiment_contact](Chado_Tables#Table:_nd_experiment_contact "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_dbxref](Chado_Tables#Table:_nd_experiment_dbxref "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_genotype](Chado_Tables#Table:_nd_experiment_genotype "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_phenotype](Chado_Tables#Table:_nd_experiment_phenotype "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_project](Chado_Tables#Table:_nd_experiment_project "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_protocol](Chado_Tables#Table:_nd_experiment_protocol "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_pub](Chado_Tables#Table:_nd_experiment_pub "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_stock](Chado_Tables#Table:_nd_experiment_stock "Chado Tables")
-
-<!-- -->
-
 - [nd_experimentprop](Chado_Tables#Table:_nd_experimentprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_experiment_contact" class="mw-headline">Table: nd_experiment_contact</span>
+## Table: nd_experiment_contact
 
 primary contact / submitter of these nd_experiments (nd, where assays
 are not submitted separately this may be better stored in
@@ -509,7 +457,7 @@ public.nd_experiment_contact Structure
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_experiment_dbxref" class="mw-headline">Table: nd_experiment_dbxref</span>
+## Table: nd_experiment_dbxref
 
 Cross-reference experiment to accessions, images, etc
 
@@ -525,7 +473,7 @@ public.nd_experiment_dbxref Structure
 
   
 
-## <span id="Table:_nd_experiment_genotype" class="mw-headline">Table: nd_experiment_genotype</span>
+## Table: nd_experiment_genotype
 
 Linking table: experiments to the genotypes they produce. Though there
 is no longer a one-to-one restriction, it is expected that genotypes
@@ -545,7 +493,7 @@ public.nd_experiment_genotype Structure
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_experiment_phenotype" class="mw-headline">Table: nd_experiment_phenotype</span>
+## Table: nd_experiment_phenotype
 
 Linking table: experiments to the phenotypes they produce. in most cases
 this will either be a single record, or an alternative (quantitative /
@@ -563,7 +511,7 @@ public.nd_experiment_phenotype Structure
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_experiment_project" class="mw-headline">Table: nd_experiment_project</span>
+## Table: nd_experiment_project
 
 Used to group together related nd_experiment records. All nd_experiments
 should be linked to at least one project.
@@ -578,7 +526,7 @@ public.nd_experiment_project Structure
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_experiment_protocol" class="mw-headline">Table: nd_experiment_protocol</span>
+## Table: nd_experiment_protocol
 
 Linking table: experiments to the protocols they involve.
 
@@ -594,7 +542,7 @@ public.nd_experiment_protocol Structure
 
   
 
-## <span id="Table:_nd_experiment_pub" class="mw-headline">Table: nd_experiment_pub</span>
+## Table: nd_experiment_pub
 
 Linking nd_experiment(s) to publication(s)
 
@@ -610,7 +558,7 @@ public.nd_experiment_pub Structure
 
   
 
-## <span id="Table:_nd_experiment_stock" class="mw-headline">Table: nd_experiment_stock</span>
+## Table: nd_experiment_stock
 
 Part of a stock or a clone of a stock that is used in an experiment
 
@@ -669,16 +617,13 @@ public.nd_experiment_stock Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [nd_experiment_stock_dbxref](Chado_Tables#Table:_nd_experiment_stock_dbxref "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_stockprop](Chado_Tables#Table:_nd_experiment_stockprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_nd_experiment_stock_dbxref" class="mw-headline">Table: nd_experiment_stock_dbxref</span>
+## Table: nd_experiment_stock_dbxref
 
 Cross-reference experiment_stock to accessions, images, etc
 
@@ -694,7 +639,7 @@ public.nd_experiment_stock_dbxref Structure
 
   
 
-## <span id="Table:_nd_experiment_stockprop" class="mw-headline">Table: nd_experiment_stockprop</span>
+## Table: nd_experiment_stockprop
 
 Property/value associations for experiment_stocks. This table can store
 the properties such as treatment
@@ -767,7 +712,7 @@ public.nd_experiment_stockprop Structure
 
   
 
-## <span id="Table:_nd_experimentprop" class="mw-headline">Table: nd_experimentprop</span>
+## Table: nd_experimentprop
 
 Tag-value properties - follows standard chado model.
 
@@ -783,7 +728,7 @@ public.nd_experimentprop Structure
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_nd_geolocation" class="mw-headline">Table: nd_geolocation</span>
+## Table: nd_geolocation
 
 The geo-referenceable location of the stock. NOTE: This entity is subject
 to change as a more general and possibly more OpenGIS-compliant
@@ -868,16 +813,13 @@ public.nd_geolocation Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [nd_experiment](Chado_Tables#Table:_nd_experiment "Chado Tables")
-
-<!-- -->
-
 - [nd_geolocationprop](Chado_Tables#Table:_nd_geolocationprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_nd_geolocationprop" class="mw-headline">Table: nd_geolocationprop</span>
+## Table: nd_geolocationprop
 
 Property/value associations for geolocations. This table can store the
 properties such as location and environment
@@ -948,7 +890,7 @@ public.nd_geolocationprop Structure
 
   
 
-## <span id="Table:_nd_protocol" class="mw-headline">Table: nd_protocol</span>
+## Table: nd_protocol
 
 A protocol can be anything that is done as part of the experiment.
 
@@ -991,20 +933,14 @@ public.nd_protocol Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [nd_experiment_protocol](Chado_Tables#Table:_nd_experiment_protocol "Chado Tables")
-
-<!-- -->
-
 - [nd_protocol_reagent](Chado_Tables#Table:_nd_protocol_reagent "Chado Tables")
-
-<!-- -->
-
 - [nd_protocolprop](Chado_Tables#Table:_nd_protocolprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_nd_protocol_reagent" class="mw-headline">Table: nd_protocol_reagent</span>
+## Table: nd_protocol_reagent
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -1019,7 +955,7 @@ public.nd_protocol_reagent Structure
 
   
 
-## <span id="Table:_nd_protocolprop" class="mw-headline">Table: nd_protocolprop</span>
+## Table: nd_protocolprop
 
 Property/value associations for protocol.
 
@@ -1091,7 +1027,7 @@ public.nd_protocolprop Structure
 
   
 
-## <span id="Table:_nd_reagent" class="mw-headline">Table: nd_reagent</span>
+## Table: nd_reagent
 
 A reagent such as a primer, an enzyme, an adapter oligo, a linker oligo.
 Reagents are used in genotyping experiments, or in any other kind of
@@ -1157,20 +1093,14 @@ public.nd_reagent Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [nd_protocol_reagent](Chado_Tables#Table:_nd_protocol_reagent "Chado Tables")
-
-<!-- -->
-
 - [nd_reagent_relationship](Chado_Tables#Table:_nd_reagent_relationship "Chado Tables")
-
-<!-- -->
-
 - [nd_reagentprop](Chado_Tables#Table:_nd_reagentprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_nd_reagent_relationship" class="mw-headline">Table: nd_reagent_relationship</span>
+## Table: nd_reagent_relationship
 
 Relationships between reagents. Some reagents form a group. i.e., they
 are used all together or not at all. Examples are adapter/linker/enzyme
@@ -1243,7 +1173,7 @@ public.nd_reagent_relationship Structure
 
   
 
-## <span id="Table:_nd_reagentprop" class="mw-headline">Table: nd_reagentprop</span>
+## Table: nd_reagentprop
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -1256,91 +1186,3 @@ public.nd_reagent_relationship Structure
 public.nd_reagentprop Structure
 
 ------------------------------------------------------------------------
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Natural
-  Diversity](Category%253ANatural_Diversity "Category%253ANatural Diversity")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Natural_Diversity_Module"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:35 on 30 January
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">163,936 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

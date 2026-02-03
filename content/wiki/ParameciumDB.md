@@ -1,24 +1,7 @@
 ---
 title: "ParameciumDB"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">ParameciumDB</span>
-
-
-
-
-
-
-
-
+# ParameciumDB
 
 
 <img
@@ -57,65 +40,41 @@ uses GMOD, and what challenges they faced.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Paramecium
   Biology</span>](#Paramecium_Biology)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">*Paramecium tetraurelia*
-    Genome</span>](#Paramecium_tetraurelia_Genome)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">ParameciumDB</span>](#ParameciumDB)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Implementation</span>](#Implementation)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Database</span>](#Database)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">Design
-      Overview</span>](#Design_Overview)
-    - [<span class="tocnumber">3.1.2</span> <span class="toctext">Chado
-      Modules</span>](#Chado_Modules)
-      - [<span class="tocnumber">3.1.2.1</span>
-        <span class="toctext">General Module</span>](#General_Module)
-      - [<span class="tocnumber">3.1.2.2</span>
-        <span class="toctext">Pub Module</span>](#Pub_Module)
-      - [<span class="tocnumber">3.1.2.3</span>
-        <span class="toctext">Sequence Module</span>](#Sequence_Module)
-      - [<span class="tocnumber">3.1.2.4</span>
-        <span class="toctext">Controlled Vocabulary
-        Module</span>](#Controlled_Vocabulary_Module)
-      - [<span class="tocnumber">3.1.2.5</span>
-        <span class="toctext">Genetic Module</span>](#Genetic_Module)
-      - [<span class="tocnumber">3.1.2.6</span>
-        <span class="toctext">Stock Module</span>](#Stock_Module)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Web
-    Site</span>](#Web_Site)
-    - [<span class="tocnumber">3.2.1</span>
-      <span class="toctext">Turnkey /
-      GMODWeb</span>](#Turnkey_.2F_GMODWeb)
-    - [<span class="tocnumber">3.2.2</span>
-      <span class="toctext">GBrowse</span>](#GBrowse)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Annotation</span>](#Annotation)
-  - [<span class="tocnumber">3.4</span>
-    <span class="toctext">Middleware</span>](#Middleware)
-    - [<span class="tocnumber">3.4.1</span>
-      <span class="toctext">Bio::Chado API</span>](#Bio::Chado_API)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Comments</span>](#Comments)
-    - [<span class="tocnumber">3.5.1</span>
-      <span class="toctext">Issues</span>](#Issues)
-    - [<span class="tocnumber">3.5.2</span>
-      <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">4</span> <span class="toctext">Related
-  Reading</span>](#Related_Reading)
-
+  - [*Paramecium tetraurelia*
+    Genome](#Paramecium_tetraurelia_Genome)
+- [ParameciumDB](#ParameciumDB)
+- [Implementation](#Implementation)
+  - [Database](#Database)
+    - [Design
+      Overview](#Design_Overview)
+    - [Chado
+      Modules](#Chado_Modules)
+      - [General Module](#General_Module)
+      - [Pub Module](#Pub_Module)
+      - [Sequence Module](#Sequence_Module)
+      - [Controlled Vocabulary
+        Module](#Controlled_Vocabulary_Module)
+      - [Genetic Module](#Genetic_Module)
+      - [Stock Module](#Stock_Module)
+  - [Web
+    Site](#Web_Site)
+    - [Turnkey /
+      GMODWeb](#Turnkey_.2F_GMODWeb)
+    - [GBrowse](#GBrowse)
+  - [Annotation](#Annotation)
+  - [Middleware](#Middleware)
+    - [Bio::Chado API](#Bio::Chado_API)
+  - [Comments](#Comments)
+    - [Issues](#Issues)
+    - [Feedback](#Feedback)
+- [Related
+  Reading](#Related_Reading)
 
 
   
 
-# <span id="Paramecium_Biology" class="mw-headline">Paramecium Biology</span>
+# Paramecium Biology
 
 Paramecium is a unicellular eukaryote that belongs to the ciliate
 phylum. Ciliates are the only unicellular organisms that separate
@@ -139,9 +98,6 @@ Paramecium is a model for studying
   mechanisms that involve non-coding RNA
   - mating type and other characters are inherited maternally
   - cortical pattern: related to prion heredity
-
-<!-- -->
-
 - evolutionary consequences of whole genome duplication
   - at least 3 whole genome duplications and an unprecedented number of
     paralogs related by whole genome duplication
@@ -149,7 +105,7 @@ Paramecium is a model for studying
     duplication (15 sibling species of the P aurelia complex)
   - dosage constraints seem to shape the gene repertoire
 
-## <span id="Paramecium_tetraurelia_Genome" class="mw-headline">*Paramecium tetraurelia* Genome</span>
+## *Paramecium tetraurelia* Genome
 
 The somatic genome has been sequenced by
 <a href="http://www.genoscope.cns.fr/" class="external text"
@@ -160,7 +116,7 @@ assembly and subsequent analysis have resulted in:
 - 39,642 gene models, with an average of 2.3 introns per gene
 - 12,026 paralog pairs from most recent whole genome duplication
 
-# <span id="ParameciumDB" class="mw-headline">ParameciumDB</span>
+# ParameciumDB
 
 ParameciumDB is maintained by two people, [Linda
 Sperling](User%253ASperling "User%253ASperling") and Olivier Arnaiz at the
@@ -174,7 +130,7 @@ Components](GMOD_Components "GMOD Components").
 
 ParameciumDB is first came online in August 2005.
 
-# <span id="Implementation" class="mw-headline">Implementation</span>
+# Implementation
 
 This section covers some details of how ParameciumDB was implemented and
 how it is maintained. This focuses on how GMOD Components are
@@ -190,7 +146,7 @@ implemented, but also touches on toher technologies as well.
   class="external text" rel="nofollow">About ParameciumDB</a> on the
   ParameciumDB web site.
 
-## <span id="Database" class="mw-headline">Database</span>
+## Database
 
 ParameciumDB is built on the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
@@ -198,31 +154,31 @@ ParameciumDB is built on the
 [PostgreSQL](PostgreSQL "PostgreSQL") [database management
 system](Glossary#Database_Management_System "Glossary").
 
-### <span id="Design_Overview" class="mw-headline">Design Overview</span>
+### Design Overview
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fc/ParameciumDataModel.jpg" width="720"
 height="540" alt="ParameciumDataModel.jpg" />
 
-### <span id="Chado_Modules" class="mw-headline">Chado Modules</span>
+### Chado Modules
 
 ParameciumDB uses core Chado modules, plus the Genetic and Stock
 modules.
 
-#### <span id="General_Module" class="mw-headline">General Module</span>
+#### General Module
 
 ParameciumDB uses the [Chado General
 Module](Chado_General_Module "Chado General Module") to handle database
 IDs and cross-references.
 
-#### <span id="Pub_Module" class="mw-headline">Pub Module</span>
+#### Pub Module
 
 The [Chado Publication
 Module](Chado_Publication_Module "Chado Publication Module") is another
 core Chado module. ParameciumDB does not manually curate publications,
 but they do mine PubMed entries for Paramecium allele references.
 
-#### <span id="Sequence_Module" class="mw-headline">Sequence Module</span>
+#### Sequence Module
 
 The [Chado Sequence
 Module](Chado_Sequence_Module "Chado Sequence Module"), another core
@@ -239,7 +195,7 @@ represented in the sequence module using the `feature, featureloc`, and
   class="internal" title="ParameciumDB synteny.pdf">Synteny data in
   ParameciumDB</a> working document
 
-#### <span id="Controlled_Vocabulary_Module" class="mw-headline">Controlled Vocabulary Module</span>
+#### Controlled Vocabulary Module
 
 The core [Chado CV Module](Chado_CV_Module "Chado CV Module") is used to
 store these ontologies:
@@ -275,7 +231,7 @@ assay ontology in the future.
 
 To create new phenotypes, we use the [Phenote](Phenote "Phenote") tool.
 
-#### <span id="Genetic_Module" class="mw-headline">Genetic Module</span>
+#### Genetic Module
 
 This [Chado Genetic Module](Chado_Genetic_Module "Chado Genetic Module")
 is used to model information about Paramecium alleles, genetic
@@ -283,7 +239,7 @@ interactions and phenotypes.
 
 The genetic module is tightly linked to the Stock Module.
 
-#### <span id="Stock_Module" class="mw-headline">Stock Module</span>
+#### Stock Module
 
 The [Chado Stock Module](Chado_Stock_Module "Chado Stock Module"), which
 is now a standard Chado extension module, originated at ParameciumDB.
@@ -291,8 +247,7 @@ is now a standard Chado extension module, originated at ParameciumDB.
 This module was necessary to allow integration of Paramecium Stock
 Collections into ParameciumDB.
 
-## <span id="Web_Site" class="mw-headline">Web Site</span>
-
+## Web Site
 
 
 <img
@@ -300,8 +255,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="193" alt="ParameciumDBHomePage.png" />
 
 
-
-### <span id="Turnkey_.2F_GMODWeb" class="mw-headline">Turnkey / GMODWeb</span>
+### Turnkey / GMODWeb
 
 ParameciumDB uses [Turnkey](Turnkey "Turnkey"), a generic Web framework
 built on Apache, mod_perl, and SQLFairy, that takes a relational schema
@@ -309,13 +263,13 @@ of a given database as input and transforms it into a fully-functional
 and customizable web site within minutes. We use templates and cascading
 style sheets to customize the ParameciumDB web interface.
 
-### <span id="GBrowse" class="mw-headline">GBrowse</span>
+### GBrowse
 
 [GBrowse](GBrowse.1 "GBrowse"), the Generic Genome Browser, is used to
 display and query sequence annotation with a Bio::DB::SeqFeature::Store
 database.
 
-## <span id="Annotation" class="mw-headline">Annotation</span>
+## Annotation
 
 ParameciumDB does not have paid curators. It currently relies on the
 community for annotation of the gene models. They use
@@ -335,9 +289,9 @@ community for annotation of the gene models. They use
   [November 2007 GMOD
   Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
 
-## <span id="Middleware" class="mw-headline">Middleware</span>
+## Middleware
 
-### <span id="Bio::Chado_API" class="mw-headline">Bio::Chado API</span>
+### Bio::Chado API
 
 The <a href="http://paramecium.cgm.cnrs-gif.fr/chadoapi/"
 class="external text" rel="nofollow">Bio::Chado API</a> is Perl
@@ -349,9 +303,9 @@ It was developed specifically for the
 users can choose to store pipeline results in a Chado database as
 opposed to an EnsEMBL database) and for ParameciumDB.
 
-## <span id="Comments" class="mw-headline">Comments</span>
+## Comments
 
-### <span id="Issues" class="mw-headline">Issues</span>
+### Issues
 
 - Content control - moved to [CVS](Glossary#CVS "Glossary")
 - Incorporation of the custom [Chado Stock
@@ -368,7 +322,7 @@ opposed to an EnsEMBL database) and for ParameciumDB.
   compatible
 - Maintenance of data, schema and new software versions
 
-### <span id="Feedback" class="mw-headline">Feedback</span>
+### Feedback
 
 - [GBrowse](GBrowse.1 "GBrowse") documentation is very good for
   Bio::DB::GFF but a little less so for Bio::DB::Das::Chado.
@@ -383,7 +337,7 @@ opposed to an EnsEMBL database) and for ParameciumDB.
   successfully used for transcriptome data, but it is not yet visible to
   the public.
 
-# <span id="Related_Reading" class="mw-headline">Related Reading</span>
+# Related Reading
 
 - <a href="http://paramecium.cgm.cnrs-gif.fr/" class="external text"
   rel="nofollow">ParameciumDB website</a>:
@@ -411,91 +365,3 @@ opposed to an EnsEMBL database) and for ParameciumDB.
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/ParameciumDB_synteny.pdf"
   class="internal" title="ParameciumDB synteny.pdf">Synteny data in
   ParameciumDB</a> working document.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [ParameciumDB](Category%253AParameciumDB "Category%253AParameciumDB")
-- [User
-  Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/ParameciumDB" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 08:29 on 6 April
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">100,184 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

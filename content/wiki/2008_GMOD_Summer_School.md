@@ -1,21 +1,7 @@
 ---
 title: "2008 GMOD Summer School"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">2008 GMOD Summer School</span>
-
-
-
-
-
-
-
+# 2008 GMOD Summer School
 
 
 <table
@@ -67,34 +53,24 @@ rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> in
 Durham, North Carolina, USA, July 11-13, 2008.
 
 
-## Contents
+  Program](#Program)
+  - [Instructors](#Instructors)
+- [Who
+  Attended?](#Who_Attended.3F)
+- [Prerequisites](#Prerequisites)
+  - [System
+    Requirements](#System_Requirements)
+- [Cost and
+  Registration](#Cost_and_Registration)
+- [Transportation, Lodging, and
+  Meals](#Transportation.2C_Lodging.2C_and_Meals)
+- [Posters and
+  Fliers](#Posters_and_Fliers)
+- [Acknowledgments and
+  Feedback](#Acknowledgments_and_Feedback)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Program</span>](#Program)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Instructors</span>](#Instructors)
-- [<span class="tocnumber">2</span> <span class="toctext">Who
-  Attended?</span>](#Who_Attended.3F)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">System
-    Requirements</span>](#System_Requirements)
-- [<span class="tocnumber">4</span> <span class="toctext">Cost and
-  Registration</span>](#Cost_and_Registration)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Transportation, Lodging, and
-  Meals</span>](#Transportation.2C_Lodging.2C_and_Meals)
-- [<span class="tocnumber">6</span> <span class="toctext">Posters and
-  Fliers</span>](#Posters_and_Fliers)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Acknowledgments and
-  Feedback</span>](#Acknowledgments_and_Feedback)
-
-
-
-# <span id="Program" class="mw-headline">Program</span>
+# Program
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -277,7 +253,7 @@ course to a coherent close.</td>
 </tbody>
 </table>
 
-## <span id="Instructors" class="mw-headline">Instructors</span>
+## Instructors
 
 Sessions were taught by experienced GMOD personnel, including:
 
@@ -288,14 +264,12 @@ Sessions were taught by experienced GMOD personnel, including:
   [GBrowse](GBrowse.1 "GBrowse") developer
 - Ed Lee - [Apollo](Apollo.1 "Apollo") developer
 
-# <span id="Who_Attended.3F" class="mw-headline">Who Attended?</span>
-
+# Who Attended?
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/78/SummerSchool2008Class.jpg" width="411"
 height="120" alt="SummerSchool2008Class.jpg" />
-
 
 
 The GMOD Summer School was attended by people implementing GMOD at their
@@ -339,7 +313,7 @@ components, or in the early phases of implementing GMOD.
 | Brett Whitty                                       | Michigan State University                  |
 | Andy Wu                                            | Washington State University                |
 
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+# Prerequisites
 
 _The course requires a minimal level of Linux systems administration
 knowledge_ (see [Computing
@@ -353,10 +327,9 @@ GBrowse without [MySQL](MySQL "MySQL")) up and running with the example
 GBrowse data._ This also requires installing Apache, and
 [BioPerl](BioPerl "BioPerl") and all its dependencies.
 
-## <span id="System_Requirements" class="mw-headline">System Requirements</span>
+## System Requirements
 
 VMware on Windows and Linux
-
 
 
 <img
@@ -367,7 +340,6 @@ height="48" alt="Windoze" />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 
 A free VMware player is available for [Microsoft
@@ -383,11 +355,9 @@ Participants can also bring _newer Macs with Intel processors_. The
 Intel processor is a requirement for all the packages discussed below.
 
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 
 There is no free VMware player that runs _directly_ under [Mac OS
@@ -397,11 +367,9 @@ other options, _all of which require an Intel Mac_:
 VMware Fusion
 
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg" width="48"
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
-
 
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
@@ -413,12 +381,10 @@ VMware Fusion available for download.**
 Mac OS 10.5 (Leopard) and Boot Camp
 
 
-
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 rel="nofollow" title="Boot Camp"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/AppleBootCampLogo.jpg" width="48"
 height="60" alt="Boot Camp" /></a>
-
 
 
 The <a href="http://www.apple.com/macosx/" class="external text"
@@ -433,7 +399,7 @@ OS.\*
 time using Boot Camp. In practice, this appears to only work easily when
 you first get your system._
 
-# <span id="Cost_and_Registration" class="mw-headline">Cost and Registration</span>
+# Cost and Registration
 
 There was no tuition cost for the GMOD Summer School. Participants were
 responsible for their own travel, lodging and meal expenses.
@@ -442,7 +408,7 @@ The course was full with a waiting list. Due to last minute
 cancellations and the flexibility of applicants we were able to get
 everyone who applied into the course (and we still had a full course).
 
-# <span id="Transportation.2C_Lodging.2C_and_Meals" class="mw-headline">Transportation, Lodging, and Meals</span>
+# Transportation, Lodging, and Meals
 
 Participants were responsible for their own transportation, lodging and
 meals. Everyone who flew, came in through
@@ -458,7 +424,7 @@ NESCent is adjacent to
 rel="nofollow">Durham's 9<sup>th</sup> Street District</a> where
 participants ate most of their meals.
 
-# <span id="Posters_and_Fliers" class="mw-headline">Posters and Fliers</span>
+# Posters and Fliers
 
 **Note:** Both of these posters are now out of date. The PI Track has
 now been combined with the Implementation track, and the schedule
@@ -492,7 +458,7 @@ A flier with the schedule on it also available.</td>
 </tbody>
 </table>
 
-# <span id="Acknowledgments_and_Feedback" class="mw-headline">Acknowledgments and Feedback</span>
+# Acknowledgments and Feedback
 
 The 2008 GMOD Summer School was funded by <a
 href="http://crisp.cit.nih.gov/crisp/CRISP_LIB.getdoc?textkey=7234938&amp;p_grant_num=1R01HG004483-01&amp;p_query=&amp;ticket=&amp;p_audit_session_id=&amp;p_keywords="
@@ -502,7 +468,6 @@ rel="nofollow">Ian Holmes</a>.
 
 
 \*Comments on the **2008 GMOD Summer School\***
-
 
 
 <table data-cellspacing="2"
@@ -542,95 +507,3 @@ course was what I was expecting and more.”</span></td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [Help](Category%253AHelp "Category%253AHelp")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2008_GMOD_Summer_School" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:11 on 16 April 2014.</span>
-<!-- - <span id="footer-info-viewcount">314,604 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

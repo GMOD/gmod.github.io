@@ -1,30 +1,12 @@
 ---
 title: "Chado Phenotype Module - Staging"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Phenotype Module - Staging</span>
-
-
-
-
-
-
-
-
+# Chado Phenotype Module - Staging
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/WorkInProgressTools.gif" width="48"
 height="48" alt="Under Construction" />
-
 
 
 <span style="font-size: 140%">This page or section is under
@@ -37,30 +19,21 @@ table and column descriptions below. These updates will be added to the
 PostgreSQL comments before the next Chado release.
 
 
+  Introduction](#Introduction)
+  - [Phenotypes
+    at FlyBase](#Phenotypes_at_FlyBase)
+- [Tables](#Tables)
+  - [Table:
+    feature_phenotype](#Table:_feature_phenotype)
+  - [Table:
+    phenotype](#Table:_phenotype)
+  - [Table:
+    phenotype_cvterm](#Table:_phenotype_cvterm)
+  - [Table:
+    phenotypeprop](#Table:_phenotypeprop)
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Phenotypes
-    at FlyBase</span>](#Phenotypes_at_FlyBase)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    feature_phenotype</span>](#Table:_feature_phenotype)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    phenotype</span>](#Table:_phenotype)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    phenotype_cvterm</span>](#Table:_phenotype_cvterm)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    phenotypeprop</span>](#Table:_phenotypeprop)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 Chris Mungall's 2006
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6b/02-chado-for-nescent-2006.pdf"
@@ -80,7 +53,7 @@ rather to a
 [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module"),
 which is a collection of features.
 
-## <span id="Phenotypes_at_FlyBase" class="mw-headline">Phenotypes at FlyBase</span>
+## Phenotypes at FlyBase
 
 To try and understand the existing phenotype module during the [GMOD Evo
 Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon"), participants spent
@@ -89,9 +62,9 @@ exploration are on the [Chado Phenotype Module at
 FlyBase](Chado_Phenotype_Module_at_FlyBase "Chado Phenotype Module at FlyBase")
 page.
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_feature_phenotype" class="mw-headline">Table: feature_phenotype</span>
+## Table: feature_phenotype
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -105,7 +78,7 @@ public.feature_phenotype Structure
 
   
 
-## <span id="Table:_phenotype" class="mw-headline">Table: phenotype</span>
+## Table: phenotype
 
 A phenotypic statement, or a single atomic phenotypic observation, is a
 controlled sentence describing observable effects of non-wild type
@@ -203,32 +176,17 @@ public.phenotype Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_phenotype](Chado_Tables#Table:_feature_phenotype "Chado Tables")
-
-<!-- -->
-
 - [nd_experiment_phenotype](Chado_Tables#Table:_nd_experiment_phenotype "Chado Tables")
-
-<!-- -->
-
 - [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-
-<!-- -->
-
 - [phenotype_cvterm](Chado_Tables#Table:_phenotype_cvterm "Chado Tables")
-
-<!-- -->
-
 - [phenotypeprop](Chado_Tables#Table:_phenotypeprop "Chado Tables")
-
-<!-- -->
-
 - [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phenotype_cvterm" class="mw-headline">Table: phenotype_cvterm</span>
+## Table: phenotype_cvterm
 
 Deprecated and superseded by phenotypeprop.
 
@@ -245,7 +203,7 @@ public.phenotype_cvterm Structure
 
   
 
-## <span id="Table:_phenotypeprop" class="mw-headline">Table: phenotypeprop</span>
+## Table: phenotypeprop
 
 A phenotype property should either have a value defined in
 phenotypeprop.value or in phenotypeprop.cvalue_id but not in both
@@ -319,88 +277,7 @@ public.phenotypeprop Structure
 ------------------------------------------------------------------------
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Under
   Construction](Category%253AUnder_Construction "Category%253AUnder Construction")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Phenotype_Module_-2D_Staging"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:10 on 10 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">7,635 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

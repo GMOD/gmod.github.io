@@ -1,9 +1,7 @@
 ---
 title: "GMOD Promotion"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GMOD Promotion</span>
+# GMOD Promotion
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/84/PoweredByGMOD.png/310px-PoweredByGMOD.png"
@@ -21,30 +19,22 @@ the GMOD project. This serves (at least) three interrelated purposes.
 3.  Increased adoption and development help the project and the
     components get funding.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Citing
   GMOD</span>](#Citing_GMOD)
-- [<span class="tocnumber">2</span> <span class="toctext">Powered by
-  GMOD</span>](#Powered_by_GMOD)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Speakers</span>](#Speakers)
-- [<span class="tocnumber">4</span> <span class="toctext">Presentation
-  Material</span>](#Presentation_Material)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Graphics</span>](#Graphics)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Slides</span>](#Slides)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Statistics</span>](#Statistics)
-- [<span class="tocnumber">5</span> <span class="toctext">Presentation
-  and Event Promotion</span>](#Presentation_and_Event_Promotion)
-- [<span class="tocnumber">6</span> <span class="toctext">Mugs,
-  T-Shirts, Buttons, ...</span>](#Mugs.2C_T-Shirts.2C_Buttons.2C_...)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Brochures</span>](#Brochures)
+- [Powered by
+  GMOD](#Powered_by_GMOD)
+- [Speakers](#Speakers)
+- [Presentation
+  Material](#Presentation_Material)
+  - [Graphics](#Graphics)
+  - [Slides](#Slides)
+  - [Statistics](#Statistics)
+- [Presentation
+  and Event Promotion](#Presentation_and_Event_Promotion)
+- [Mugs,
+  T-Shirts, Buttons, ...](#Mugs.2C_T-Shirts.2C_Buttons.2C_...)
+- [Brochures](#Brochures)
 
-## <span id="Citing_GMOD" class="mw-headline">Citing GMOD</span>
+## Citing GMOD
 
 There is not yet a GMOD project paper. It is perpetually on our todo
 list. Until that paper comes out, please cite GMOD as
@@ -62,7 +52,7 @@ class="external text" rel="nofollow">NCBI guidelines</a> on citing
 wikis. The wiki was first 'published' in 2007, although some material
 predates that.
 
-## <span id="Powered_by_GMOD" class="mw-headline">[Powered by GMOD](Powered_by_GMOD "Powered by GMOD")</span>
+## [Powered by GMOD](Powered_by_GMOD "Powered by GMOD")
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e3/PoweredByGMOD80.png" width="80"
 height="38" alt="Powered by GMOD" />](Powered_by_GMOD "Powered by GMOD")
@@ -73,7 +63,7 @@ sites, in talks, and on posters and other printed material. This is an
 easy way to let people know just how widely used (and how widely useful)
 GMOD is.
 
-## <span id="Speakers" class="mw-headline">Speakers</span>
+## Speakers
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/38/MitchSpeaking2009.jpg" width="150"
 height="100" alt="Mitch speaking" />](Training_and_Outreach "Mitch speaking")
@@ -112,13 +102,13 @@ Please contact the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk")
 rel="nofollow">help@gmod.org</a>) if you are interested in arranging for
 a GMOD speaker to present at your institution or event.
 
-## <span id="Presentation_Material" class="mw-headline">Presentation Material</span>
+## Presentation Material
 
 If you are giving a talk or a poster that either discusses or includes
 GMOD related material, then there are a number of resources available
 that can help you.
 
-### <span id="Graphics" class="mw-headline">Graphics</span>
+### Graphics
 
 ![GMOD Logos](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d1/GMOD-three-cogs.png/300px-GMOD-three-cogs.pngGMOD-three-cogs-200.png)
 [GMOD Project Logos](Category%253AGMOD_Project_Logos "Category%253AGMOD Project Logos") -
@@ -138,57 +128,10 @@ width="70" height="56" alt="Member Logos" />](Category%253AMember_Logos "Member 
 [Member Logos](Category%253AMember_Logos "Category%253AMember Logos") - logos of
 organizations that contribute to or use GMOD.
 
-### <span id="Slides" class="mw-headline">Slides</span>
+### Slides
 
 - [Conferences](Category%253AConferences "Category%253AConferences")
 - [Education and
   Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
 - [Events](Category%253AEvents "Category%253AEvents")
 - [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-
-## Navigation menu
-
-### Namespaces
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_Promotion" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Promotion" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:14 on 8 January 2013.</span>
-<!-- - <span id="footer-info-viewcount">422,729 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

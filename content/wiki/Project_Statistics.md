@@ -1,76 +1,46 @@
 ---
 title: "Project Statistics"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Project Statistics</span>
-
-
-
-
-
-
-
+# Project Statistics
 
 
 Statistics and places to get statistics on the GMOD Project.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Web
   Site</span>](#Web_Site)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">2012
-    onwards</span>](#2012_onwards)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">2007-2010</span>](#2007-2010)
-    - [<span class="tocnumber">1.2.1</span> <span class="toctext">By
-      Month</span>](#By_Month)
-    - [<span class="tocnumber">1.2.2</span> <span class="toctext">By
-      Year</span>](#By_Year)
-    - [<span class="tocnumber">1.2.3</span> <span class="toctext">See
-      Also</span>](#See_Also)
-- [<span class="tocnumber">2</span> <span class="toctext">Sourceforge
-  Statistics Pages</span>](#Sourceforge_Statistics_Pages)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Events</span>](#Events)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Meetings</span>](#Meetings)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">GMOD
-    Schools</span>](#GMOD_Schools)
-- [<span class="tocnumber">4</span> <span class="toctext">Mailing
-  Lists</span>](#Mailing_Lists)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Mailing
-    List Subscriber Counts</span>](#Mailing_List_Subscriber_Counts)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Mailing
-    List Volume</span>](#Mailing_List_Volume)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Components</span>](#Components)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">SourceForge Download
-    Statistics</span>](#SourceForge_Download_Statistics)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">GBrowse</span>](#GBrowse)
-    - [<span class="tocnumber">5.2.1</span>
-      <span class="toctext">GBrowse 2
-      Registrations</span>](#GBrowse_2_Registrations)
-  - [<span class="tocnumber">5.3</span>
-    <span class="toctext">Galaxy</span>](#Galaxy)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">Community
-    Surveys</span>](#Community_Surveys)
+  - [2012
+    onwards](#2012_onwards)
+  - [2007-2010](#2007-2010)
+    - [By
+      Month](#By_Month)
+    - [By
+      Year](#By_Year)
+    - [See
+      Also](#See_Also)
+- [Sourceforge
+  Statistics Pages](#Sourceforge_Statistics_Pages)
+- [Events](#Events)
+  - [Meetings](#Meetings)
+  - [GMOD
+    Schools](#GMOD_Schools)
+- [Mailing
+  Lists](#Mailing_Lists)
+  - [Mailing
+    List Subscriber Counts](#Mailing_List_Subscriber_Counts)
+  - [Mailing
+    List Volume](#Mailing_List_Volume)
+- [Components](#Components)
+  - [SourceForge Download
+    Statistics](#SourceForge_Download_Statistics)
+  - [GBrowse](#GBrowse)
+    - [GBrowse 2
+      Registrations](#GBrowse_2_Registrations)
+  - [Galaxy](#Galaxy)
+  - [Community
+    Surveys](#Community_Surveys)
 
 
-
-## <span id="Web_Site" class="mw-headline">Web Site</span>
+## Web Site
 
 Traffic to the GMOD website, gmod.org, has been tracked since November
 2007, first through AWStats and then using Google Analytics. No data is
@@ -78,7 +48,7 @@ available for the period between January 2011 and July 2012.
 
   
 
-### <span id="2012_onwards" class="mw-headline">2012 onwards</span>
+### 2012 onwards
 
 Website hits are now being measured using Google Analytics. Please note
 that Google Analytics uses a different method of collecting results,
@@ -110,12 +80,11 @@ and those from Analytics.
 | 2014-03       | 8,270           | 9,739  | 13,159    | 7,766      |
 | 2014-04       | 15,724          | 18,408 | 26,331    | 15,049     |
 
-### <span id="2007-2010" class="mw-headline">2007-2010</span>
+### 2007-2010
 
 Website hits were measured using AWStats during this period.
 
-#### <span id="By_Month" class="mw-headline">By Month</span>
-
+#### By Month
 
 
 </colgroup>
@@ -256,7 +225,7 @@ Malaysia 2014</a></td>
 </tbody>
 </table>
 
-## <span id="Mailing_Lists" class="mw-headline">Mailing Lists</span>
+## Mailing Lists
 
 [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") are hosted
 all over the place. Since June of 2010, there is a single Nabble Archive
@@ -275,7 +244,7 @@ the numbers.
 
 See also [Components](#Components) below.
 
-### <span id="Mailing_List_Subscriber_Counts" class="mw-headline">[Mailing List](GMOD_Mailing_Lists "GMOD Mailing Lists") Subscriber Counts</span>
+### [Mailing List](GMOD_Mailing_Lists "GMOD Mailing Lists") Subscriber Counts
 
 Numbers are only shown for lists where we have access to this
 information.
@@ -302,14 +271,14 @@ information.
 | galaxy-user |  |  | 1681 | Support list for users of the Galaxy public server. *Note: The 2010/12 numbers are from 2011/01.* |
 | galaxy-dev |  |  | 280 | Support list for Galaxy developers and those deploying Galaxy locally. *Note: The 2010/12 numbers are from 2011/01.* |
 
-### <span id="Mailing_List_Volume" class="mw-headline">Mailing List Volume</span>
+### Mailing List Volume
 
 Postings per month is readily available for any mailing list hosted by
 Sourceforge. And, at some point, we should summarize that information
 here. Raw data is available as [GMOD Mailing List
 Statistics](GMOD_Mailing_List_Statistics "GMOD Mailing List Statistics").
 
-## <span id="Components" class="mw-headline">Components</span>
+## Components
 
 - [Components Section
   summary](2008_GMOD_Community_Survey#GMOD_Components "2008 GMOD Community Survey")
@@ -318,15 +287,12 @@ Statistics](GMOD_Mailing_List_Statistics "GMOD Mailing List Statistics").
   Community
   Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey"). This
   covers all components.
-
-<!-- -->
-
 - The [2009 GMOD Community
   Survey](2009_GMOD_Community_Survey "2009 GMOD Community Survey") has
   some numbers on components for genome and comparative genomics
   visualization.
 
-### <span id="SourceForge_Download_Statistics" class="mw-headline">SourceForge Download Statistics</span>
+### SourceForge Download Statistics
 
 Download statistics are available for projects hosted on the GMOD
 SourceForge page. See [SourceForge Download
@@ -335,9 +301,9 @@ for the raw data.
 
   
 
-### <span id="GBrowse" class="mw-headline">[GBrowse](GBrowse.1 "GBrowse")</span>
+### [GBrowse](GBrowse.1 "GBrowse")
 
-#### <span id="GBrowse_2_Registrations" class="mw-headline">GBrowse 2 Registrations</span>
+#### GBrowse 2 Registrations
 
 When users install GBrowse2, they are given the option of reporting
 their registration, resulting in an email to GMOD project staff. Since
@@ -347,7 +313,7 @@ hosts. This comes to 203 registrations per month total, 72
 registrations/mo on unique hosts. The true number of installations is
 higher, because people can choose not to send in registrations.
 
-### <span id="Galaxy" class="mw-headline">[Galaxy](Galaxy.1 "Galaxy")</span>
+### [Galaxy](Galaxy.1 "Galaxy")
 
 See the
 <a href="http://galaxyproject.org/wiki/Galaxy%20Project/Statistics"
@@ -355,7 +321,7 @@ class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
 
   
 
-### <span id="Community_Surveys" class="mw-headline">Community Surveys</span>
+### Community Surveys
 
 - <a href="../answers-1.html" class="external text" rel="nofollow">2013
   GMOD Survey</a> - Survey of the GMOD community, covering a wide range
@@ -365,90 +331,3 @@ class="external text" rel="nofollow">Galaxy Project Statistics</a> page.
 - [2008 GMOD Community
   Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey") - A
   treasure trove of information about the GMOD community in late 2008.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-- [GMOD Web Site](Category%253AGMOD_Web_Site "Category%253AGMOD Web Site")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Project_Statistics" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:39 on 2 May
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">174,234 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

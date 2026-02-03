@@ -1,28 +1,11 @@
 ---
 title: "PAG 2015"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">PAG 2015</span>
-
-
-
+# PAG 2015
 
 
 (Redirected from
-[PAG](PAG)
-
-
-
-
-
+[PAG](/wiki/PAG)
 
 
 <a href="http://www.intlpag.org/2015/" rel="nofollow"
@@ -33,7 +16,6 @@ width="150" height="150"
 alt="Plant and Animal Genomes 2015 (PAG XXIII" /></a>
 
 
-
 There is plenty of GMOD content at the
 <a href="http://www.intlpag.org/2015/" class="external text"
 rel="nofollow">Plant and Animal Genomes (PAG)</a> conference in January
@@ -42,23 +24,17 @@ posters and presentations from many GMOD users, as well as from
 developers of GMOD tools.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Core GMOD
   Content</span>](#Core_GMOD_Content)
-- [<span class="tocnumber">2</span> <span class="toctext">Tripal
+- [Tripal
   Database Network and Initiatives
-  Workshop</span>](#Tripal_Database_Network_and_Initiatives_Workshop)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD
-  Workshop</span>](#GMOD_Workshop)
-- [<span class="tocnumber">4</span> <span class="toctext">GMOD Consumers
-  and Providers</span>](#GMOD_Consumers_and_Providers)
+  Workshop](#Tripal_Database_Network_and_Initiatives_Workshop)
+- [GMOD
+  Workshop](#GMOD_Workshop)
+- [GMOD Consumers
+  and Providers](#GMOD_Consumers_and_Providers)
 
 
-
-## <span id="Core_GMOD_Content" class="mw-headline">Core GMOD Content</span>
+## Core GMOD Content
 
 There are a number of items focussed on the tools and services that GMOD
 provides. These are:
@@ -82,7 +58,7 @@ href="https://wiki.galaxyproject.org/Documents/Presentations?action=AttachFile&a
 class="external text" rel="nofollow">Slides</a> |
 | Jan 14 (Wed) | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | GMOD | [Scott Cain](User%253AScott "User%253AScott") | California Room | [See below](#GMOD_Workshop) |
 
-## <span id="Tripal_Database_Network_and_Initiatives_Workshop" class="mw-headline">Tripal Database Network and Initiatives Workshop</span>
+## Tripal Database Network and Initiatives Workshop
 
 The
 <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2851.html"
@@ -117,7 +93,7 @@ class="external text" rel="nofollow">W878</a>: The Hardwood Genomics Database: C
 href="http://www.slideshare.net/mestato/staton-pag-tripal2015?related=1"
 class="external text" rel="nofollow">Slides</a> |
 
-## <span id="GMOD_Workshop" class="mw-headline">GMOD Workshop</span>
+## GMOD Workshop
 
 <a href="https://pag.confex.com/pag/xxiii/webprogram/Session2652.html"
 class="external text" rel="nofollow">The GMOD workshop</a> on Wednesday
@@ -145,7 +121,7 @@ class="external text" rel="nofollow">W412</a> - The Teosinte (*Zea mays* ssp. *p
 | 12:30 - 1:30 | Lunch Break |  |  |
 | 1:30 | Panel Discussion | TBD |  |
 
-## <span id="GMOD_Consumers_and_Providers" class="mw-headline">GMOD Consumers and Providers</span>
+## GMOD Consumers and Providers
 
 There are also many groups who use GMOD components showing posters, and
 giving presentations and workshops; here is a small selection:
@@ -304,86 +280,6 @@ class="external text" rel="nofollow">Slides</a> |
 | 10:30 - 2:30 | [GMOD Workshop](#GMOD_Workshop) | [Scott Cain](User%253AScott "User%253AScott") and the GMOD Community | Golden West | [See above](#GMOD_Workshop) |
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Conferences](Category%253AConferences "Category%253AConferences")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/PAG_2015" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:29 on 31 March
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">159,852 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

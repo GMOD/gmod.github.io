@@ -1,28 +1,10 @@
 ---
 title: "BLAST Graphic Viewer"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">BLAST Graphic Viewer</span>
-
-
-
-
-
-
-
-
+# BLAST Graphic Viewer
 
 
 Status
-
 
 
 - Mature release
@@ -30,7 +12,6 @@ Status
 - Support: active
 
   
-
 
 
 <a href="http://opensource.org/" rel="nofollow"><img
@@ -42,12 +23,9 @@ width="40" height="39" alt=" is open source" /></a>
 Resources
 
 
-
-
 - [BLAST](Category%253ABLAST "Category%253ABLAST")
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
 - [SGD](Category%253ASGD "Category%253ASGD")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -75,82 +53,3 @@ rel="nofollow">http://www.yeastgenome.org/cgi-bin/blast-sgd.pl</a> <span class="
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Sequence Alignment <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Sequence-20Alignment "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Sequence-20Alignment")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Perl <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Perl "Special%253ASearchByProperty/Written-20in-20language/Perl")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [BLAST Graphic Viewer#http://sourceforge.net/projects/gmod/files/blastGraphic/](BLAST_Graphic_Viewer.1#http:.2F.2Fsourceforge.net.2Fprojects.2Fgmod.2Ffiles.2FblastGraphic.2F "BLAST Graphic Viewer") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BLAST-20Graphic-20Viewer-23http%253A-2F-2Fsourceforge.net-2Fprojects-2Fgmod-2Ffiles-2FblastGraphic-2F "Special%253ASearchByProperty/Has-20subobject/BLAST-20Graphic-20Viewer-23http%253A-2F-2Fsourceforge.net-2Fprojects-2Fgmod-2Ffiles-2FblastGraphic-2F")</span> and [BLAST Graphic Viewer#http://www.yeastgenome.org/cgi-bin/blast-sgd.pl](BLAST_Graphic_Viewer.1#http:.2F.2Fwww.yeastgenome.org.2Fcgi-bin.2Fblast-sgd.pl "BLAST Graphic Viewer") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BLAST-20Graphic-20Viewer-23http%253A-2F-2Fwww.yeastgenome.org-2Fcgi-2Dbin-2Fblast-2Dsgd.pl "Special%253ASearchByProperty/Has-20subobject/BLAST-20Graphic-20Viewer-23http%253A-2F-2Fwww.yeastgenome.org-2Fcgi-2Dbin-2Fblast-2Dsgd.pl")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/BLAST_Graphic_Viewer" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:59 on 4 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">109,934 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

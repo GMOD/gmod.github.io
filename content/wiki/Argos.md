@@ -1,70 +1,42 @@
 ---
 title: "Argos"
 ---
+# Argos
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Argos</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Status</span>](#Status)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Contact</span>](#Contact)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Description</span>](#Description)
-- [<span class="tocnumber">4</span> <span class="toctext">Developer
-  notes</span>](#Developer_notes)
-- [<span class="tocnumber">5</span> <span class="toctext">Demo &
-  Screenshots</span>](#Demo_.26_Screenshots)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Flybase
-    Servers</span>](#Flybase_Servers)
-    - [<span class="tocnumber">5.1.1</span> <span class="toctext">Last
-      generation</span>](#Last_generation)
-    - [<span class="tocnumber">5.1.2</span> <span class="toctext">Next
-      Generation</span>](#Next_Generation)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Summary of
+  Status](#Status)
+- [Contact](#Contact)
+- [Description](#Description)
+- [Developer
+  notes](#Developer_notes)
+- [Demo &
+  Screenshots](#Demo_.26_Screenshots)
+  - [Flybase
+    Servers](#Flybase_Servers)
+    - [Last
+      generation](#Last_generation)
+    - [Next
+      Generation](#Next_Generation)
+- [Requirements](#Requirements)
+- [Documentation](#Documentation)
+  - [Summary of
     steps to installation of an Argos server
-    system</span>](#Summary_of_steps_to_installation_of_an_Argos_server_system)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Downloads</span>](#Downloads)
+    system](#Summary_of_steps_to_installation_of_an_Argos_server_system)
+- [Downloads](#Downloads)
 
 
-
-## <span id="Status" class="mw-headline">Status</span>
+## Status
 
 Actively supported
 
 Last release: 0.7 (2005)
 
-## <span id="Contact" class="mw-headline">Contact</span>
+## Contact
 
 <a href="mailto:argos@eugenes.org" class="external text"
 rel="nofollow">argos@eugenes.org</a>
 
-## <span id="Description" class="mw-headline">Description</span>
+## Description
 
 Argos, *a.k.a.* Flybase-NG, *a.k.a.* biodb, is designed to provide
 automatic replication, installation and updates of genome and organism
@@ -122,7 +94,7 @@ program has been built.
 
   
 
-## <span id="Developer_notes" class="mw-headline">Developer notes</span>
+## Developer notes
 
 Current developers are [Don Gilbert](User%253ADongilbert "User%253ADongilbert"),
 Nihar Sheth and Victor Strelets for FlyBase-NG and euGenes uses. We hope
@@ -152,7 +124,7 @@ GMOD developers can add new package sets to the
 `argos/install/packages.conf` which point to rsync servers for the
 packages.
 
-## <span id="Demo_.26_Screenshots" class="mw-headline">Demo & Screenshots</span>
+## Demo & Screenshots
 
 A slide set outlines Argos/FlyBase-NG:
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5b/Flybase-ng-may03.pdf" class="internal"
@@ -160,11 +132,11 @@ title="Flybase-ng-may03.pdf">flybase-ng-may03.pdf</a>
 
   
 
-### <span id="Flybase_Servers" class="mw-headline">Flybase Servers</span>
+### Flybase Servers
 
 These are overviews of FlyBase's server system structures.
 
-#### <span id="Last_generation" class="mw-headline">Last generation</span>
+#### Last generation
 
     -- flybase last-generation file system structure (1996-2002)
     -- all runs via Apache web server (no separate standalone servers beyond FTP)
@@ -204,7 +176,7 @@ These are overviews of FlyBase's server system structures.
      Install*
      Readme
 
-#### <span id="Next_Generation" class="mw-headline">Next Generation</span>
+#### Next Generation
 
     -- flybase+ next-generation information system structure
      -- 2003- in progress
@@ -437,7 +409,7 @@ These are overviews of FlyBase's server system structures.
                 cvservlet:
                 fbchado:
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 A current Unix computer, with several free Gigabytes of disk space,
 depending on which system packages are to be installed. The following
@@ -471,7 +443,7 @@ packages uses ~ 200 MB of disk. Installation of a full FlyBase service
 uses ~ 2.5 GB of disk. Installation of a full euGenes service uses ~ 4
 GB of disk.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 **Quick start:**
 
@@ -482,7 +454,7 @@ instructions.
 
   
 
-#### <span id="Summary_of_steps_to_installation_of_an_Argos_server_system" class="mw-headline">Summary of steps to installation of an Argos server system</span>
+#### Summary of steps to installation of an Argos server system
 
 1.  Fetch the install script from a command line
     with`rsync rsync://flybase.net/biodb/install/installng.pl .` (or use
@@ -503,7 +475,7 @@ instructions.
 
   
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 - Argos-based servers:
   <a href="http://eugenes.org/argos/" class="external free"
@@ -514,90 +486,3 @@ instructions.
   specified in the <a
   href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gmod/argos/install/packages.conf?rev=HEAD"
   class="external text" rel="nofollow">argos/install/packages.conf</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Argos" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:41 on 16 July
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">109,254 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

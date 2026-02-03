@@ -1,24 +1,7 @@
 ---
 title: "Chado Phenotype Module at FlyBase"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Phenotype Module at FlyBase</span>
-
-
-
-
-
-
-
-
+# Chado Phenotype Module at FlyBase
 
 
 <img
@@ -26,12 +9,10 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="Under Construction" />
 
 
-
 <span style="font-size: 140%">This page or section is under
 construction.</span>  
   
 Should be done before Jan 1, 2011
-
 
 
 The [Chado Phenotype
@@ -54,113 +35,67 @@ tables.
 first two weeks on November 2010.**
 
 
-## Contents
+  Tables](#Tables)
+  - [Important
+    Linked Tables](#Important_Linked_Tables)
+  - [**phenotype**](#phenotype)
+    - [What
+      is a Phenotype?](#What_is_a_Phenotype.3F)
+      - [PATO at
+        FlyBase?](#PATO_at_FlyBase.3F)
+    - [**phenotype** @
+      Flybase](#phenotype_.40_Flybase)
+      - [uniquename and
+        observable_id](#uniquename_and_observable_id)
+      - [attr_id and
+        assay_id](#attr_id_and_assay_id)
+      - [cvalue_id](#cvalue_id)
+      - [value](#value)
+  - [**phenotype_comparison**](#phenotype_comparison)
+    - [**phenotype_comparison** @
+      Flybase](#phenotype_comparison_.40_Flybase)
+      - [environment\[12\]\_id](#environment.5B12.5D_id)
+      - [phenotype\[12\]\_id and
+        genotype\[12\]\_id](#phenotype.5B12.5D_id_and_genotype.5B12.5D_id)
+      - [type_id](#type_id)
+  - [**phenotype_cvterm**](#phenotype_cvterm)
+    - [**phenotype_cvterm** @
+      Flybase](#phenotype_cvterm_.40_Flybase)
+      - [rank](#rank)
+      - [cvterm_id](#cvterm_id)
+      - [Semantics?](#Semantics.3F)
+  - [**phenstatement**](#phenstatement)
+    - [**phenstatement** @
+      Flybase](#phenstatement_.40_Flybase)
+  - [**phendesc**](#phendesc)
+    - [**phendesc** @
+      Flybase](#phendesc_.40_Flybase)
+      - [type_id](#type_id_2)
+      - [pub_id](#pub_id)
+      - [environment_id](#environment_id)
+      - [genotype_id](#genotype_id)
+      - [Description](#Description)
+  - [**environment**](#environment)
+    - [**environment** @
+      Flybase](#environment_.40_Flybase)
+  - [**environment_cvterm**](#environment_cvterm)
+    - [**environment_cvterm** @
+      Flybase](#environment_cvterm_.40_Flybase)
+  - [**genotype**](#genotype)
+    - [**genotype** @
+      Flybase](#genotype_.40_Flybase)
+      - [uniquename](#uniquename)
+      - [name](#name)
+  - [**feature_genotype**](#feature_genotype)
+    - [**feature_genotype** @
+      Flybase](#feature_genotype_.40_Flybase)
+      - [cvterm_id](#cvterm_id_2)
+      - [cgroup](#cgroup)
+      - [chromosome_id](#chromosome_id)
+      - [rank](#rank_2)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Important
-    Linked Tables</span>](#Important_Linked_Tables)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">**phenotype**</span>](#phenotype)
-    - [<span class="tocnumber">1.2.1</span> <span class="toctext">What
-      is a Phenotype?</span>](#What_is_a_Phenotype.3F)
-      - [<span class="tocnumber">1.2.1.1</span>
-        <span class="toctext">PATO at
-        FlyBase?</span>](#PATO_at_FlyBase.3F)
-    - [<span class="tocnumber">1.2.2</span>
-      <span class="toctext">**phenotype** @
-      Flybase</span>](#phenotype_.40_Flybase)
-      - [<span class="tocnumber">1.2.2.1</span>
-        <span class="toctext">uniquename and
-        observable_id</span>](#uniquename_and_observable_id)
-      - [<span class="tocnumber">1.2.2.2</span>
-        <span class="toctext">attr_id and
-        assay_id</span>](#attr_id_and_assay_id)
-      - [<span class="tocnumber">1.2.2.3</span>
-        <span class="toctext">cvalue_id</span>](#cvalue_id)
-      - [<span class="tocnumber">1.2.2.4</span>
-        <span class="toctext">value</span>](#value)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">**phenotype_comparison**</span>](#phenotype_comparison)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">**phenotype_comparison** @
-      Flybase</span>](#phenotype_comparison_.40_Flybase)
-      - [<span class="tocnumber">1.3.1.1</span>
-        <span class="toctext">environment\[12\]\_id</span>](#environment.5B12.5D_id)
-      - [<span class="tocnumber">1.3.1.2</span>
-        <span class="toctext">phenotype\[12\]\_id and
-        genotype\[12\]\_id</span>](#phenotype.5B12.5D_id_and_genotype.5B12.5D_id)
-      - [<span class="tocnumber">1.3.1.3</span>
-        <span class="toctext">type_id</span>](#type_id)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">**phenotype_cvterm**</span>](#phenotype_cvterm)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">**phenotype_cvterm** @
-      Flybase</span>](#phenotype_cvterm_.40_Flybase)
-      - [<span class="tocnumber">1.4.1.1</span>
-        <span class="toctext">rank</span>](#rank)
-      - [<span class="tocnumber">1.4.1.2</span>
-        <span class="toctext">cvterm_id</span>](#cvterm_id)
-      - [<span class="tocnumber">1.4.1.3</span>
-        <span class="toctext">Semantics?</span>](#Semantics.3F)
-  - [<span class="tocnumber">1.5</span>
-    <span class="toctext">**phenstatement**</span>](#phenstatement)
-    - [<span class="tocnumber">1.5.1</span>
-      <span class="toctext">**phenstatement** @
-      Flybase</span>](#phenstatement_.40_Flybase)
-  - [<span class="tocnumber">1.6</span>
-    <span class="toctext">**phendesc**</span>](#phendesc)
-    - [<span class="tocnumber">1.6.1</span>
-      <span class="toctext">**phendesc** @
-      Flybase</span>](#phendesc_.40_Flybase)
-      - [<span class="tocnumber">1.6.1.1</span>
-        <span class="toctext">type_id</span>](#type_id_2)
-      - [<span class="tocnumber">1.6.1.2</span>
-        <span class="toctext">pub_id</span>](#pub_id)
-      - [<span class="tocnumber">1.6.1.3</span>
-        <span class="toctext">environment_id</span>](#environment_id)
-      - [<span class="tocnumber">1.6.1.4</span>
-        <span class="toctext">genotype_id</span>](#genotype_id)
-      - [<span class="tocnumber">1.6.1.5</span>
-        <span class="toctext">Description</span>](#Description)
-  - [<span class="tocnumber">1.7</span>
-    <span class="toctext">**environment**</span>](#environment)
-    - [<span class="tocnumber">1.7.1</span>
-      <span class="toctext">**environment** @
-      Flybase</span>](#environment_.40_Flybase)
-  - [<span class="tocnumber">1.8</span>
-    <span class="toctext">**environment_cvterm**</span>](#environment_cvterm)
-    - [<span class="tocnumber">1.8.1</span>
-      <span class="toctext">**environment_cvterm** @
-      Flybase</span>](#environment_cvterm_.40_Flybase)
-  - [<span class="tocnumber">1.9</span>
-    <span class="toctext">**genotype**</span>](#genotype)
-    - [<span class="tocnumber">1.9.1</span>
-      <span class="toctext">**genotype** @
-      Flybase</span>](#genotype_.40_Flybase)
-      - [<span class="tocnumber">1.9.1.1</span>
-        <span class="toctext">uniquename</span>](#uniquename)
-      - [<span class="tocnumber">1.9.1.2</span>
-        <span class="toctext">name</span>](#name)
-  - [<span class="tocnumber">1.10</span>
-    <span class="toctext">**feature_genotype**</span>](#feature_genotype)
-    - [<span class="tocnumber">1.10.1</span>
-      <span class="toctext">**feature_genotype** @
-      Flybase</span>](#feature_genotype_.40_Flybase)
-      - [<span class="tocnumber">1.10.1.1</span>
-        <span class="toctext">cvterm_id</span>](#cvterm_id_2)
-      - [<span class="tocnumber">1.10.1.2</span>
-        <span class="toctext">cgroup</span>](#cgroup)
-      - [<span class="tocnumber">1.10.1.3</span>
-        <span class="toctext">chromosome_id</span>](#chromosome_id)
-      - [<span class="tocnumber">1.10.1.4</span>
-        <span class="toctext">rank</span>](#rank_2)
-
-
-
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
 | Table | rows at FlyBase |
 |----|----|
@@ -173,7 +108,7 @@ first two weeks on November 2010.**
 
 And those are the only tables that have "phen" in their name.
 
-## <span id="Important_Linked_Tables" class="mw-headline">Important Linked Tables</span>
+## Important Linked Tables
 
 - [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module")
   (Doc: "The environmental component of a phenotype description.")
@@ -181,8 +116,7 @@ And those are the only tables that have "phen" in their name.
 
 And that's it?
 
-## <span id="phenotype" class="mw-headline">[**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module")</span>
-
+## [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module")
 
 
 \<protect\>
@@ -281,8 +215,7 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 \</protect\>
 
 
-
-### <span id="What_is_a_Phenotype.3F" class="mw-headline">What is a Phenotype?</span>
+### What is a Phenotype?
 
 From conversation with Jim Balhoff and Matt Yoder:
 
@@ -292,7 +225,7 @@ This means that *stage* or *time since conception* is **not** part of
 the phenotype. It is part of the experiment. (Unless you are observing
 development rate, in which case, stage would be the phenotype.)
 
-#### <span id="PATO_at_FlyBase.3F" class="mw-headline">PATO at FlyBase?</span>
+#### PATO at FlyBase?
 
 That table description in the schema sounds like the old PATO, not the
 new EQ model.
@@ -306,7 +239,7 @@ No
 - But attr_id is not used and cvalue_id points to compound terms in the
   FlyBase Miscellaneous CV.
 
-### <span id="phenotype_.40_Flybase" class="mw-headline">[**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") @ Flybase</span>
+### [**`phenotype`**](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module") @ Flybase
 
 |                       | Counts |
 |-----------------------|--------|
@@ -319,7 +252,7 @@ No
 
 All the CVterm FKs that are null have the uniquename of "unspecified"
 
-#### <span id="uniquename_and_observable_id" class="mw-headline">uniquename and observable_id</span>
+#### uniquename and observable_id
 
 Most uniquenames are observable_id -\> cvterm.name + blank or integer,
 but not when name is "unspecified", uniquename can be anything. Some
@@ -359,7 +292,7 @@ SELECT COUNT(*), c.name
 
   
 
-#### <span id="attr_id_and_assay_id" class="mw-headline">attr_id and assay_id</span>
+#### attr_id and assay_id
 
 attr_id is supposed to be "Phenotypic attribute (quality, property,
 attribute, character) - drawn from PATO." but is not.
@@ -373,7 +306,7 @@ cvterm "unspecified"
 So, this is not used for PATO at Flybase. I'm not sure why it isn't
 null.
 
-#### <span id="cvalue_id" class="mw-headline">cvalue_id</span>
+#### cvalue_id
 
 Schema doc says "Phenotype attribute value (state)."
 
@@ -389,12 +322,11 @@ There are only 118 distinct values. Some of them:
 
 All from: FlyBase miscellaneous CV
 
-#### <span id="value" class="mw-headline">value</span>
+#### value
 
 value is null in every row in FlyBase.
 
-## <span id="phenotype_comparison" class="mw-headline">[**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")</span>
-
+## [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module")
 
 
 \<protect\>
@@ -515,10 +447,9 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 \</protect\>
 
 
-
 This table is good for binary comparisons. How broadly useful is that?
 
-### <span id="phenotype_comparison_.40_Flybase" class="mw-headline">[**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") @ Flybase</span>
+### [**`phenotype_comparison`**](Chado_Genetic_Module#Table:_phenotype_comparison "Chado Genetic Module") @ Flybase
 
 |                                   | Counts  |
 |-----------------------------------|---------|
@@ -531,7 +462,7 @@ This table is good for binary comparisons. How broadly useful is that?
 Every column but phenotype2_id is not nullable, and that column has no
 nulls in it either.
 
-#### <span id="environment.5B12.5D_id" class="mw-headline">environment\[12\]\_id</span>
+#### environment\[12\]\_id
 
 The above counts imply a lot comparisons using different genotypes in
 the same environment. **No it does not.** In every one of those 99K
@@ -539,12 +470,12 @@ comparisons, environment is "unspecified".
 
 So, FlyBase has known environments for 1% of its comparisons.
 
-#### <span id="phenotype.5B12.5D_id_and_genotype.5B12.5D_id" class="mw-headline">phenotype\[12\]\_id and genotype\[12\]\_id</span>
+#### phenotype\[12\]\_id and genotype\[12\]\_id
 
 The 42K comparisons where the phenotypes are the same mean that the
 genotype did not change this phenotype.
 
-#### <span id="type_id" class="mw-headline">type_id</span>
+#### type_id
 
 type_id is a phantom column. It does not exist in current Chado or at
 FlyBase.
@@ -553,8 +484,7 @@ How do we say how they compare without this column?
 
 What makes two G/E/P pairs comparable?
 
-## <span id="phenotype_cvterm" class="mw-headline">[**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")</span>
-
+## [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module")
 
 
 \<protect\>
@@ -632,13 +562,13 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 Can imagine it just attaches a bag of terms to the phenotype. There is
 no semantics on how the terms relate to each other or to the phenotype.
 
-### <span id="phenotype_cvterm_.40_Flybase" class="mw-headline">[**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") @ Flybase</span>
+### [**`phenotype_cvterm`**](Chado_Phenotype_Module#Table:_phenotype_cvterm "Chado Phenotype Module") @ Flybase
 
 |            | Counts |
 |------------|--------|
 | Table Rows | 7714   |
 
-#### <span id="rank" class="mw-headline">rank</span>
+#### rank
 
 Flybase's table def has a rank column, which is \> 0 for about 2000
 rows. The rank column is part of standard Chado, but not listed on the
@@ -646,7 +576,7 @@ web site.
 
 There is a unique constraint on (phenotype_id, cvterm_id, rank). Why?
 
-#### <span id="cvterm_id" class="mw-headline">cvterm_id</span>
+#### cvterm_id
 
 Links to terms in 5 different CVs
 
@@ -656,7 +586,7 @@ Links to terms in 5 different CVs
 - FlyBase development CV (25%)
 - biological_process
 
-#### <span id="Semantics.3F" class="mw-headline">Semantics?</span>
+#### Semantics?
 
 Find rows that use rank in the unique constraint.
 
@@ -683,8 +613,7 @@ So, what does that mean?
 
 Rank is used for some sort of code that is not stored in the database?
 
-## <span id="phenstatement" class="mw-headline">[**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")</span>
-
+## [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module")
 
 
 \<protect\>
@@ -780,7 +709,7 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 - None.\</protect\>
 
-### <span id="phenstatement_.40_Flybase" class="mw-headline">[**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") @ Flybase</span>
+### [**`phenstatement`**](Chado_Genetic_Module#Table:_phenstatement "Chado Genetic Module") @ Flybase
 
 |            | Counts |
 |------------|--------|
@@ -804,8 +733,7 @@ Well, sort of.
 There are 72K linked genotypes. They use a custom markup language in the
 uniquename.
 
-## <span id="phendesc" class="mw-headline">[**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")</span>
-
+## [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module")
 
 
 \<protect\>
@@ -918,7 +846,7 @@ It does mean we wont link to phenstatements with the wrong
 genotype/environment, but it also means we can orphan phendesc rows that
 don't join with any phenstatements.
 
-### <span id="phendesc_.40_Flybase" class="mw-headline">[**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") @ Flybase</span>
+### [**`phendesc`**](Chado_Genetic_Module#Table:_phendesc "Chado Genetic Module") @ Flybase
 
 |                     | Counts  |
 |---------------------|---------|
@@ -931,7 +859,7 @@ environment_id, type_id, pub_id), and the PK.
 Description is not unique with "Homozygous lethal." and "homozygous
 lethal" making up ~1% of records.
 
-#### <span id="type_id_2" class="mw-headline">type_id</span>
+#### type_id
 
 
 ``` de1
@@ -954,28 +882,27 @@ SELECT COUNT(*), t.name, c.name
      1583 | xeno_interaction_pheno    | phendesc type
     (5 rows)
 
-#### <span id="pub_id" class="mw-headline">pub_id</span>
+#### pub_id
 
 11,930 rows (about 10% of rows) link to the pub with no title.
 
-#### <span id="environment_id" class="mw-headline">environment_id</span>
+#### environment_id
 
 101,746 rows (over 90%) link to "unspecified"
 
-#### <span id="genotype_id" class="mw-headline">genotype_id</span>
+#### genotype_id
 
 There is wide distribution of genotypes. The top genotype has 122
 phendesc records.
 
-#### <span id="Description" class="mw-headline">Description</span>
+#### Description
 
 Free form description of phenotype. Almost all entries are informative,
 and none are null.
 
-## <span id="environment" class="mw-headline">[**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module")</span>
+## [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module")
 
 Definition:
-
 
 
 \<protect\>
@@ -1041,8 +968,7 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 \</protect\>
 
 
-
-### <span id="environment_.40_Flybase" class="mw-headline">[**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module") @ Flybase</span>
+### [**`environment`**](Chado_Genetic_Module#Table:_environment "Chado Genetic Module") @ Flybase
 
 |            | Counts |
 |------------|--------|
@@ -1068,10 +994,9 @@ Uniquename choice are:
     conditional - heat sensitive
     conditional - cold sensitive
 
-## <span id="environment_cvterm" class="mw-headline">[**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module")</span>
+## [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module")
 
 Definition:
-
 
 
 \<protect\>
@@ -1141,16 +1066,15 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 No semantics here. My guess is associates a list of CV terms with an
 environment.
 
-### <span id="environment_cvterm_.40_Flybase" class="mw-headline">[**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module") @ Flybase</span>
+### [**`environment_cvterm`**](Chado_Genetic_Module#Table:_environment_cvterm "Chado Genetic Module") @ Flybase
 
 |            | Counts |
 |------------|--------|
 | Table Rows |  ?     |
 
-## <span id="genotype" class="mw-headline">[**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module")</span>
+## [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module")
 
 Definition:
-
 
 
 \<protect\>
@@ -1228,8 +1152,7 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 \</protect\>
 
 
-
-### <span id="genotype_.40_Flybase" class="mw-headline">[**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module") @ Flybase</span>
+### [**`genotype`**](Chado_Genetic_Module#Table:_genotype "Chado Genetic Module") @ Flybase
 
 |                               | Counts  |
 |-------------------------------|---------|
@@ -1240,20 +1163,19 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 
 There is no **`genotype_cvterm`** table.
 
-#### <span id="uniquename" class="mw-headline">uniquename</span>
+#### uniquename
 
 Uniquename is the only informative column is 2/3 of the rows. It uses a
 custom FlyBase encoding of information.
 
-#### <span id="name" class="mw-headline">name</span>
+#### name
 
 In the cases where this is not null it uses a custom FlyBase
 nomenclature that often includes one or more FlyBase IDs.
 
-## <span id="feature_genotype" class="mw-headline">[**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module")</span>
+## [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module")
 
 Definition:
-
 
 
 \<protect\>
@@ -1359,18 +1281,18 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 This is the table that connects data to features, finally. The rank and
 group have some semantics.
 
-### <span id="feature_genotype_.40_Flybase" class="mw-headline">[**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module") @ Flybase</span>
+### [**`feature_genotype`**](Chado_Genetic_Module#Table:_feature_genotype "Chado Genetic Module") @ Flybase
 
 |                       | Counts  |
 |-----------------------|---------|
 | Table Rows            | 551,551 |
 | chromosome_id is null | 0       |
 
-#### <span id="cvterm_id_2" class="mw-headline">cvterm_id</span>
+#### cvterm_id
 
 All cvterm_ids are unspecified. Every one of them. No doc on this.
 
-#### <span id="cgroup" class="mw-headline">cgroup</span>
+#### cgroup
 
 Spatially distinguishable group. group can be used for distinguishing
 the chromosomal groups, for example (RNAi products and so on can be
@@ -1383,105 +1305,12 @@ What does this mean? It's not an FK to anywhere, just an integer that
 must be unique in combination with feature_id, genotype_id, chromosome,
 rank, cgroup, and cvterm_id (every non-PK column).
 
-#### <span id="chromosome_id" class="mw-headline">chromosome_id</span>
+#### chromosome_id
 
 Every record points to the same feature_id, which has the name
 "unspecified". Is this supposed to be a denormalization optimization
 that they don't use at FlyBase?
 
-#### <span id="rank_2" class="mw-headline">rank</span>
+#### rank
 
 rank can be used for n-ploid organisms or to preserve order.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Under
-  Construction](Category%253AUnder_Construction "Category%253AUnder Construction")
-- [Phenotypes](Category%253APhenotypes "Category%253APhenotypes")
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-- [Chado](Category%253AChado "Category%253AChado")
-- [GMOD Evo
-  Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Phenotype_Module_at_FlyBase"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">49,941 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
-

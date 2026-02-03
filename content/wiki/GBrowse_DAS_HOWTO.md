@@ -1,23 +1,7 @@
 ---
 title: "GBrowse DAS HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse DAS HOWTO</span>
-
-
-
-
-
-
-
+# GBrowse DAS HOWTO
 
 
 The Distributed Annotation System protocol (DAS;
@@ -30,7 +14,7 @@ fetch just a subset of the data, such as a small piece of a chromosomal
 arm, the DAS protocol allows only the relevant annotations to be
 retrieved, rather than the whole data set.
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 To take advantage of DAS functionality, you will have to install the
 Perl Bio::Das module. This is available from CPAN (the Comprehensive
@@ -51,7 +35,7 @@ You may need to issue the command "rep add gmod
 rel="nofollow">http://www.gmod.org/ggb/ppm</a>" if PPM complains that it
 cannot find Bio::Das.
 
-## <span id="A_Tutorial" class="mw-headline">A Tutorial</span>
+## A Tutorial
 
 We start out with a short tutorial that illustrates how GBrowse DAS
 support works.
@@ -182,88 +166,7 @@ in order to view the alignments. These tracks are not coming directly
 from the local database, but from the database via the DAS protocol.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [MOD User
   Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_DAS_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:15 on 8 July
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">20,076 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

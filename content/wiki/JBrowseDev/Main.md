@@ -1,27 +1,11 @@
 ---
 title: "JBrowse"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse</span>
-
-
-
+# JBrowse
 
 
 (Redirected from
 [JBrowseDev/Main](JBrowseDev/Main)
-
-
-
-
 
 
 <a href="../File:JBrowseLogo.png" class="image"><img
@@ -30,15 +14,12 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="88" alt="JBrowse logo" /></a>
 
 
-
 Status
-
 
 
 - Mature release
 - Development: active
 - Support: active
-
 
 
 Licence
@@ -50,17 +31,13 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 
-
 <a href="http://opensource.org/licenses/LGPL-3.0" class="external text"
 rel="nofollow">LGPL</a>,
 <a href="http://opensource.org/licenses/Artistic-2.0"
 class="external text" rel="nofollow">Artistic License 2.0</a>
 
 
-
 Resources
-
-
 
 
 - [GMOD
@@ -69,12 +46,10 @@ Resources
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
 
 
-
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse">[JBrowse](../Special%253ABrowse/JBrowse "Special%253ABrowse/JBrowse")</span>"</span>
 
 [Available on platform](../Property%253AAvailable_on_platform "Property:Available on platform")
-
 
 
 web
@@ -138,85 +113,3 @@ user's web browser, with minimal requirements for the server.
    and Browse the
   genome of Ötzi the ice man
   <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20description/Browse-20the-20genome-20of-20%C3%96tzi-20the-20ice-20man "Special%253ASearchByProperty/Has-20description/Browse-20the-20genome-20of-20Ötzi-20the-20ice-20man")</span>
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowse" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:18 on 15 April
-  2016.</span>
-<!-- - <span id="footer-info-viewcount">734,540 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

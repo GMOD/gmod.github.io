@@ -1,32 +1,13 @@
 ---
 title: "News/Galaxy Development Workshop Jan 23"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">News/Galaxy Development Workshop Jan 23</span>
-
-
-
-
-
-
-
-
-
+# News/Galaxy Development Workshop Jan 23
 
 
 <a href="http://evomics.org/workshops/galaxy-developer-workshop/"
 rel="nofollow" title="Galaxy Development Workshop"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f5/CeskyKrumlov.jpg" width="170"
 height="133" alt="Galaxy Development Workshop" /></a>
-
 
 
 *Update: This workshop has been **canceled.***
@@ -51,9 +32,6 @@ enables your researchers to perform data integration and analysis, in
 house, without handholding from you. This workshop will teach you how to
 install your own instance of Galaxy, either on your local compute
 infrastructure, or on the cloud.
-
-<!-- -->
-
 Bioinformatics tool developers  
 [Galaxy](../Galaxy.1 "Galaxy") provides mechanisms for integrating your
 own tools and the tools of others into Galaxy instances. This workshop
@@ -84,99 +62,10 @@ Illinois.
   
 
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2011/11/11,
 updated 2011/12/16*
-
-
-
-
 
 
 [Category](../Special%253ACategories "Special%253ACategories"):
 
 - [News Items](../Category%253ANews_Items "Category%253ANews Items")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/News-2FGalaxy_Development_Workshop_Jan_23"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:08 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">10,834 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

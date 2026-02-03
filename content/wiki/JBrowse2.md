@@ -1,24 +1,7 @@
 ---
 title: "JBrowse2"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse2</span>
-
-
-
-
-
-
-
-
+# JBrowse2
 
 
 <img
@@ -27,15 +10,12 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="134" alt="JBrowse 2 logo" />
 
 
-
 Status
-
 
 
 - Mature release
 - Development: active
 - Support: active
-
 
 
 Licence
@@ -47,18 +27,11 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 
-
 <a href="https://opensource.org/licenses/Apache-2.0"
 class="external text" rel="nofollow">Apache 2</a>
 
 
-
 Resources
-
-
-
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -93,81 +66,3 @@ class="external text" rel="nofollow">Apache 2</a> <span class="smwsearch">[+](Sp
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Genome visualization <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20visualization "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20visualization")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Javascript <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Javascript "Special%253ASearchByProperty/Written-20in-20language/Javascript")</span>, Typescript <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Typescript "Special%253ASearchByProperty/Written-20in-20language/Typescript")</span> and React <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/React "Special%253ASearchByProperty/Written-20in-20language/React")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [JBrowse2#https://jbrowse.org/jb2/docs/quickstart_web](JBrowse2#https:.2F.2Fjbrowse.org.2Fjb2.2Fdocs.2Fquickstart_web "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23https%253A-2F-2Fjbrowse.org-2Fjb2-2Fdocs-2Fquickstart_web "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23https:-2F-2Fjbrowse.org-2Fjb2-2Fdocs-2Fquickstart web")</span>, [JBrowse2#http://jbrowse.org](JBrowse2#http:.2F.2Fjbrowse.org "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Fjbrowse.org "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Fjbrowse.org")</span>, [JBrowse2#http://twitter.com/usejbrowse](JBrowse2#http:.2F.2Ftwitter.com.2Fusejbrowse "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Ftwitter.com-2Fusejbrowse "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Ftwitter.com-2Fusejbrowse")</span>, [JBrowse2#https://github.com/GMOD/jbrowse-components/](JBrowse2#https:.2F.2Fgithub.com.2FGMOD.2Fjbrowse-components.2F "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23https%253A-2F-2Fgithub.com-2FGMOD-2Fjbrowse-2Dcomponents-2F "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23https%253A-2F-2Fgithub.com-2FGMOD-2Fjbrowse-2Dcomponents-2F")</span>, [JBrowse2#http://jbrowse.org/demos](JBrowse2#http:.2F.2Fjbrowse.org.2Fdemos "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Fjbrowse.org-2Fdemos "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23http%253A-2F-2Fjbrowse.org-2Fdemos")</span> and [JBrowse2](JBrowse2#_6174327698e1cf5a1cd7df4cdb9b25c8 "JBrowse2") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/JBrowse2-23_6174327698e1cf5a1cd7df4cdb9b25c8 "Special%253ASearchByProperty/Has-20subobject/JBrowse2-23 6174327698e1cf5a1cd7df4cdb9b25c8")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/JBrowse2" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:46 on 30 March
-  2021.</span>
-<!-- - <span id="footer-info-viewcount">9,608 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

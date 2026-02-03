@@ -1,26 +1,11 @@
 ---
 title: "Apollo Tutorial 2011"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Apollo Tutorial 2011</span>
-
-
-
+# Apollo Tutorial 2011
 
 
 (Redirected from [Apollo
-Tutorial](Apollo_Tutorial)
-
-
-
+Tutorial](/wiki/Apollo_Tutorial)
 
 
   
@@ -42,60 +27,44 @@ title="Apollo Tutorial">Apollo Tutorial</a> page.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Overview</span>](#Overview)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Architecture</span>](#Architecture)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Presentation
-      Layer</span>](#Presentation_Layer)
-    - [<span class="tocnumber">1.2.2</span> <span class="toctext">Logic
-      Layer</span>](#Logic_Layer)
-    - [<span class="tocnumber">1.2.3</span> <span class="toctext">Data
-      Layer</span>](#Data_Layer)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Pre-built
-    Installers</span>](#Pre-built_Installers)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Checking
-    Out the Code From SVN</span>](#Checking_Out_the_Code_From_SVN)
-- [<span class="tocnumber">3</span> <span class="toctext">Using
-  Apollo</span>](#Using_Apollo)
-- [<span class="tocnumber">4</span> <span class="toctext">Configuring
-  Apollo</span>](#Configuring_Apollo)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">apollo.cfg</span>](#apollo.cfg)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">data_source.style</span>](#data_source.style)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">data_source.tiers</span>](#data_source.tiers)
-- [<span class="tocnumber">5</span> <span class="toctext">Setting Up
+  Introduction](#Introduction)
+  - [Overview](#Overview)
+  - [Architecture](#Architecture)
+    - [Presentation
+      Layer](#Presentation_Layer)
+    - [Logic
+      Layer](#Logic_Layer)
+    - [Data
+      Layer](#Data_Layer)
+- [Installation](#Installation)
+  - [Pre-built
+    Installers](#Pre-built_Installers)
+  - [Checking
+    Out the Code From SVN](#Checking_Out_the_Code_From_SVN)
+- [Using
+  Apollo](#Using_Apollo)
+- [Configuring
+  Apollo](#Configuring_Apollo)
+  - [apollo.cfg](#apollo.cfg)
+  - [data_source.style](#data_source.style)
+  - [data_source.tiers](#data_source.tiers)
+- [Setting Up
   Custom Chado
-  Configurations</span>](#Setting_Up_Custom_Chado_Configurations)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">chado-adapter.xml</span>](#chado-adapter.xml)
-    - [<span class="tocnumber">5.1.1</span>
-      <span class="toctext">chadoInstance
-      Element</span>](#chadoInstance_Element)
-    - [<span class="tocnumber">5.1.2</span>
-      <span class="toctext">chadodb Element</span>](#chadodb_Element)
-- [<span class="tocnumber">6</span> <span class="toctext">Setting Up a
+  Configurations](#Setting_Up_Custom_Chado_Configurations)
+  - [chado-adapter.xml](#chado-adapter.xml)
+    - [chadoInstance
+      Element](#chadoInstance_Element)
+    - [chadodb Element](#chadodb_Element)
+- [Setting Up a
   Custom WebStart
-  Instance</span>](#Setting_Up_a_Custom_WebStart_Instance)
-- [<span class="tocnumber">7</span> <span class="toctext">Writing Custom
-  Data Adapters</span>](#Writing_Custom_Data_Adapters)
+  Instance](#Setting_Up_a_Custom_WebStart_Instance)
+- [Writing Custom
+  Data Adapters](#Writing_Custom_Data_Adapters)
 
 
+## Introduction
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
-
-### <span id="Overview" class="mw-headline">Overview</span>
+### Overview
 
 Once we have a sequence assembled, we need to annotate that sequence:
 that is, add features such as genes, pseudogenes, ncRNAs, etc. Otherwise
@@ -113,7 +82,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="196" alt="Annotation workflow" />
 
 
-### <span id="Architecture" class="mw-headline">Architecture</span>
+### Architecture
 
 Apollo is setup in a 3-tier architecture, with a presentation
 ([GUI](Glossary#GUI "Glossary")), logic and data layer. It is highly
@@ -126,20 +95,20 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Apollo architecture" />
 
 
-#### <span id="Presentation_Layer" class="mw-headline">Presentation Layer</span>
+#### Presentation Layer
 
 The presentation layer (GUI) handles displaying and gives the user an
 interface for creating and editing these annotations. Customization of
 this layer usually entails setting up how features are displayed (e.g.,
 color, shape, labels).
 
-#### <span id="Logic_Layer" class="mw-headline">Logic Layer</span>
+#### Logic Layer
 
 The logic layer handles how data is represented and the various
 operations you can perform on the data (e.g., creating, editing, adding
 information to annotations).
 
-#### <span id="Data_Layer" class="mw-headline">Data Layer</span>
+#### Data Layer
 
 The data layer takes care of interfacing with the different data
 sources. Customization of the data layer usually entails setting up
@@ -147,13 +116,13 @@ access to different databases (e.g., your own
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> instance) to
 even creating new adapters to read new data formats or schemas.
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 You can download Apollo from pre-built installer packages or getting the
 code from either [SVN](Glossary#SVN "Glossary") or tarball, both which
 require building the application.
 
-### <span id="Pre-built_Installers" class="mw-headline">Pre-built Installers</span>
+### Pre-built Installers
 
 You can download OS-specific pre-built installer packages from the
 <a href="http://apollo.berkeleybop.org/current/install.html"
@@ -186,7 +155,7 @@ that way. Open up a terminal window and type the following:
 
 We'll just install everything with the default options.
 
-### <span id="Checking_Out_the_Code_From_SVN" class="mw-headline">Checking Out the Code From SVN</span>
+### Checking Out the Code From SVN
 
 You can also checkout the code from SourceForge SVN. You'll need
 a SVN client to do so. This will guarantee that you'll get the latest
@@ -201,7 +170,7 @@ If you're using an IDE, chances are that your IDE will have SVN support
 
   
 
-## <span id="Using_Apollo" class="mw-headline">Using Apollo</span>
+## Using Apollo
 
 We'll start off with seeing some of the features that Apollo can do.
 We'll be connecting to our local
@@ -228,15 +197,12 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="406" alt="Chado adapter" />
 
 
-
-
 Tip: If you want to load the whole genomic region from
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> into Apollo,
 you can enter **0** for both **Start** and **End** coordinates. This is
 useful so that you don't need to know the exact length of the sequence
 being loaded. Keep in mind that Apollo has a large memory footprint, so
 you probably want to keep the loaded regions to less than 500kb.
-
 
 
 Once loading is complete, we'll see the main Apollo window.
@@ -553,7 +519,7 @@ information on all the powerful editing features from the
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
 class="external text" rel="nofollow">Apollo user's guide</a>.
 
-## <span id="Configuring_Apollo" class="mw-headline">Configuring Apollo</span>
+## Configuring Apollo
 
 Ok, now that we got some idea of what [Apollo](Apollo.1 "Apollo") can
 do, let's talk about how to configure Apollo. First of all, be aware
@@ -576,7 +542,7 @@ class="external text" rel="nofollow">Apollo configuration</a> section
 from the user guide for a more detailed description of the supported
 options.
 
-### <span id="apollo.cfg" class="mw-headline">`apollo.cfg`</span>
+### `apollo.cfg`
 
 This is the main Apollo configuration. Options are composed of columns
 delimited by white space, where the first column is the option parameter
@@ -590,7 +556,7 @@ You can just add any new options or ones you wish to override in your
 custom `apollo.cfg` file. The global `apollo.cfg` options will be used
 for any options absent in your custom file.
 
-### <span id="data_source.style" class="mw-headline">`data_source.style`</span>
+### `data_source.style`
 
 Each data source has a style file associated with it. The style file
 contains options that are data source specific and should be shared
@@ -624,7 +590,7 @@ allows you to add predefined comments that users can add to their
 annotations and transcripts using the `Annotation Info Editor` from a
 pull down menu.
 
-### <span id="data_source.tiers" class="mw-headline">`data_source.tiers`</span>
+### `data_source.tiers`
 
 Each data source has a tiers file associated with it. The tiers files
 contains options on how to display specific features. It has a
@@ -685,14 +651,14 @@ href="http://apollo.berkeleybop.org/current/userguide.html#Preferences#Preferenc
 class="external text" rel="nofollow">Preferences</a> section from the
 Apollo user guide.
 
-## <span id="Setting_Up_Custom_Chado_Configurations" class="mw-headline">Setting Up Custom Chado Configurations</span>
+## Setting Up Custom Chado Configurations
 
 Ok, so we connected to our local Chado instance before with an already
 existing configuration file. Now we're going to go into detail on how to
 set that up. The file that contains the Chado database configuration is
 `chado-adapter.xml`.
 
-### <span id="chado-adapter.xml" class="mw-headline">`chado-adapter.xml`</span>
+### `chado-adapter.xml`
 
 Like all other configuration files, it resides in `$APOLLO_ROOT/conf`
 for the global configuration and `~/.apollo` for the user
@@ -718,7 +684,7 @@ skeleton for the XML file will look something like this:
 ```
 
 
-#### <span id="chadoInstance_Element" class="mw-headline">chadoInstance Element</span>
+#### chadoInstance Element
 
 You'll need at least one `chadoInstance` element. It will look something
 like this:
@@ -798,7 +764,7 @@ like this:
 ```
 
 
-#### <span id="chadodb_Element" class="mw-headline">chadodb Element</span>
+#### chadodb Element
 
 You'll need at least one `<chadodb>` element. It contains information to
 connect to the database. Each `<chadodb>` element will have a
@@ -838,7 +804,7 @@ ones). The XML will look something like this:
 ```
 
 
-## <span id="Setting_Up_a_Custom_WebStart_Instance" class="mw-headline">Setting Up a Custom WebStart Instance</span>
+## Setting Up a Custom WebStart Instance
 
 One of the benefits of having [Apollo](Apollo.1 "Apollo") as a Java
 application is that we can make use of
@@ -999,7 +965,7 @@ Now we can test out our Java Web Start instance by going to
 rel="nofollow">http://localhost/apollo/webstart</a> and clicking on the
 link.
 
-## <span id="Writing_Custom_Data_Adapters" class="mw-headline">Writing Custom Data Adapters</span>
+## Writing Custom Data Adapters
 
 There's a bit of work involved with writing a custom data adapter. It
 will require you to have knowledge of Java and the data model used in
@@ -1050,15 +1016,12 @@ can also view the
 class="external text" rel="nofollow">Apollo Javadoc API</a>.
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [Apollo](Category%253AApollo "Category%253AApollo")
 - [2011 Spring
   Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -1068,82 +1031,3 @@ class="external text" rel="nofollow">Apollo Javadoc API</a>.
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Apollo "Special%253ASearchByProperty/Has-20topic/Apollo")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Apollo_Tutorial_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:21 on 14 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">31,454 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

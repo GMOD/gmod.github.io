@@ -1,66 +1,42 @@
 ---
 title: "April 2004 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">April 2004 GMOD Meeting</span>
-
-
-
-
-
-
-
+# April 2004 GMOD Meeting
 
 
 Generic Model Organism Database Construction Set
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   4</span>](#Meeting_4)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Presentations</span>](#Presentations)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">April 26,
+- [Presentations](#Presentations)
+- [Agenda](#Agenda)
+  - [April 26,
     Morning: Combined Developers and Curators
-    section</span>](#April_26.2C_Morning:_Combined_Developers_and_Curators_section)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">April 26,
+    section](#April_26.2C_Morning:_Combined_Developers_and_Curators_section)
+  - [April 26,
     Afternoon: Developer
-    section</span>](#April_26.2C_Afternoon:_Developer_section)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">April 26,
+    section](#April_26.2C_Afternoon:_Developer_section)
+  - [April 26,
     Afternoon: Curator
-    section</span>](#April_26.2C_Afternoon:_Curator_section)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">April 27,
-    Developer section</span>](#April_27.2C_Developer_section)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">April 27,
-    Curator section</span>](#April_27.2C_Curator_section)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">April 27,
-    Dinner</span>](#April_27.2C_Dinner)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">April 28,
+    section](#April_26.2C_Afternoon:_Curator_section)
+  - [April 27,
+    Developer section](#April_27.2C_Developer_section)
+  - [April 27,
+    Curator section](#April_27.2C_Curator_section)
+  - [April 27,
+    Dinner](#April_27.2C_Dinner)
+  - [April 28,
     Combined Developer and Curator
-    section</span>](#April_28.2C_Combined_Developer_and_Curator_section)
-- [<span class="tocnumber">4</span> <span class="toctext">Progress
-  reports</span>](#Progress_reports)
+    section](#April_28.2C_Combined_Developer_and_Curator_section)
+- [Progress
+  reports](#Progress_reports)
 
 
-
-## <span id="Meeting_4" class="mw-headline">Meeting 4</span>
+## Meeting 4
 
 GMOD Meeting April, 2004
 
-## <span id="Presentations" class="mw-headline">Presentations</span>
+## Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b8/Cain_040526.ppt" class="internal"
   title="Cain 040526.ppt">Cain_040526.ppt</a>
@@ -91,9 +67,9 @@ GMOD Meeting April, 2004
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/45/Worley_040526.ppt" class="internal"
   title="Worley 040526.ppt">Worley_040526.ppt</a>
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
-### <span id="April_26.2C_Morning:_Combined_Developers_and_Curators_section" class="mw-headline">April 26, Morning: Combined Developers and Curators section</span>
+### April 26, Morning: Combined Developers and Curators section
 
 Mount Vernon Room
 
@@ -134,7 +110,7 @@ Stan Letovsky (FlyBase, Harvard University)</td>
 </tbody>
 </table>
 
-### <span id="April_26.2C_Afternoon:_Developer_section" class="mw-headline">April 26, Afternoon: Developer section</span>
+### April 26, Afternoon: Developer section
 
 Mount Vernon Room
 
@@ -185,7 +161,7 @@ Scott Cain</td>
 </tbody>
 </table>
 
-### <span id="April_26.2C_Afternoon:_Curator_section" class="mw-headline">April 26, Afternoon: Curator section</span>
+### April 26, Afternoon: Curator section
 
 Terrace Room
 
@@ -205,7 +181,7 @@ Medicine)
 5:00 Group discussion  
 6:00 Dinner (on your own-see above)  
 
-### <span id="April_27.2C_Developer_section" class="mw-headline">April 27, Developer section</span>
+### April 27, Developer section
 
 Mount Vernon Room
 
@@ -219,7 +195,7 @@ certainly the case that there will also be time for "breakout" sessions
 for smaller groups to discuss a variety of topics. Suggestions will be
 accepted both before and during the meeting.
 
-### <span id="April_27.2C_Curator_section" class="mw-headline">April 27, Curator section</span>
+### April 27, Curator section
 
 Terrace Room
 
@@ -265,7 +241,7 @@ Group discussion</td>
 </tbody>
 </table>
 
-### <span id="April_27.2C_Dinner" class="mw-headline">April 27, Dinner</span>
+### April 27, Dinner
 
 <table data-cellpadding="6">
 <colgroup>
@@ -283,7 +259,7 @@ Reservation on us, food paid for by you</td>
 </tbody>
 </table>
 
-### <span id="April_28.2C_Combined_Developer_and_Curator_section" class="mw-headline">April 28, Combined Developer and Curator section</span>
+### April 28, Combined Developer and Curator section
 
 Mount Vernon Room
 
@@ -319,7 +295,7 @@ Scott Cain</td>
 </tbody>
 </table>
 
-## <span id="Progress_reports" class="mw-headline">Progress reports</span>
+## Progress reports
 
     GMOD Progect Progress Reports
     April, 2004
@@ -361,7 +337,6 @@ Scott Cain</td>
     create a new version of Apollo that will be able to read and write directly
     to the database without using an XML intermidary, which will simplify the
     process of sequence annotation considerably.
-
 
 
     Apollo Progress Report (11/2003 - 4/2004)
@@ -448,7 +423,6 @@ Scott Cain</td>
     just a rubberbanded section.  [File -> Save sequence]
 
 
-
     Synteny progress, 11/03-4/04:
 
     - Synteny now works with GAME. You can load one species and then use the
@@ -476,7 +450,6 @@ Scott Cain</td>
     type in the tiers file. This works with game, in theory could be made to
     work with other adapters that have linked data embedded in the species
     data.
-
 
 
     Textpresso: A progress report
@@ -522,7 +495,6 @@ Scott Cain</td>
     Textpresso paper ... under review
 
     A Textpresso publication is currently under revision.
-
 
 
     PubFetch/PubTrack Progress Report (April 2004)
@@ -634,7 +606,6 @@ Scott Cain</td>
     http://cvs.sourceforge.net/viewcvs.py/gmod/pubtrack/
 
 
-
     PubSearch update
 
     We've migrated our database schema over to one that should be more
@@ -655,7 +626,6 @@ Scott Cain</td>
     generation now works directly from the Java codebase, rather than from an
     external Python script.  We've continued work on a keyword term browser to
     replaced the highly munged version of AmiGO that we are running locally.
-
 
 
     GBrowse Project
@@ -958,7 +928,6 @@ Scott Cain</td>
     Matthew Hobbs: University of Sydney (Australia)
 
 
-
                               Pathway Tools Status Report
                                       Peter Karp
                                     February 5, 2004
@@ -1119,7 +1088,6 @@ Scott Cain</td>
         Pseudomonas aeruginosa
 
 
-
     GMOD Project Status     April 2004        D. Gilbert (gilbertd@indiana.edu)
 
     Project members:  Don Gilbert, Josh Goodman, Paul Poole,
@@ -1167,7 +1135,6 @@ Scott Cain</td>
     Tested, aided development, and used GMOD release 0.001, Postgres Chado,
     XORT, Chado::DBI, GBrowse, etc. tools for FlyBase and wFleaBase, where
     they now form the basis of data management.
-
 
 
     GMOD Update from the Saccharomyces Genome Database (SGD)
@@ -1238,96 +1205,3 @@ Scott Cain</td>
     and 'Localization in Time and Space' categories.  We are also currently
     working on a few other categories, such as Allele, Transgene and
     Phenotype, in order to best reflect the biology in S. cerevisiae.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Pathway Tools](Category%253APathway_Tools "Category%253APathway Tools")
-- [PubSearch](Category%253APubSearch "Category%253APubSearch")
-- [SGD](Category%253ASGD "Category%253ASGD")
-- [Textpresso](Category%253ATextpresso "Category%253ATextpresso")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/April_2004_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:37 on 30 November
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">98,991 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

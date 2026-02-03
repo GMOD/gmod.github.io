@@ -1,23 +1,7 @@
 ---
 title: "GBrowse PAG 2010 Workshop"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse PAG 2010 Workshop</span>
-
-
-
-
-
-
-
+# GBrowse PAG 2010 Workshop
 
 
 <table
@@ -56,49 +40,42 @@ rel="nofollow">Plant and Animal Genome XVIII Conference</a> ([PAG
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">2</span> <span class="toctext">Tutorial
-  Level</span>](#Tutorial_Level)
-- [<span class="tocnumber">3</span> <span class="toctext">Intended
-  Audience</span>](#Intended_Audience)
-- [<span class="tocnumber">4</span> <span class="toctext">Prerequisite
+  Overview](#Overview)
+- [Tutorial
+  Level](#Tutorial_Level)
+- [Intended
+  Audience](#Intended_Audience)
+- [Prerequisite
   Software and Conference
-  PCs</span>](#Prerequisite_Software_and_Conference_PCs)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Outline</span>](#Outline)
-- [<span class="tocnumber">6</span> <span class="toctext">Workshop
-  Instructor</span>](#Workshop_Instructor)
-- [<span class="tocnumber">7</span> <span class="toctext">Other GMOD
+  PCs](#Prerequisite_Software_and_Conference_PCs)
+- [Outline](#Outline)
+- [Workshop
+  Instructor](#Workshop_Instructor)
+- [Other GMOD
   Presentations and
-  Meetings</span>](#Other_GMOD_Presentations_and_Meetings)
-
+  Meetings](#Other_GMOD_Presentations_and_Meetings)
 
 
   
 
-## <span id="Overview" class="mw-headline">Overview</span>
+## Overview
 
 This will be a hands-on tutorial on how to install and use the
 [GBrowse](GBrowse.1 "GBrowse") genome browser.
 
-## <span id="Tutorial_Level" class="mw-headline">Tutorial Level</span>
+## Tutorial Level
 
 *Beginner to Intermediate:* Students should be comfortable performing
 simple system administration tasks like stopping and starting services.
 
-## <span id="Intended_Audience" class="mw-headline">Intended Audience</span>
+## Intended Audience
 
 [GBrowse](GBrowse.1 "GBrowse") is sufficiently easy to install that a
 biologist can easily set up and configure a GBrowse server after the
 initial hurdles of learning about configuration options and file formats
 are overcome. This class is intended to help them over those hurdles.
 
-## <span id="Prerequisite_Software_and_Conference_PCs" class="mw-headline">Prerequisite Software and Conference PCs</span>
+## Prerequisite Software and Conference PCs
 
 Prerequisite software for [GBrowse](GBrowse.1 "GBrowse") will be
 pre-installed on the conference PCs in the classroom area of the
@@ -110,7 +87,7 @@ with GBrowse prerequisite software pre-installed will be linked to
 **from this page**. You can use VMware image to walk through the
 material presented at this workshop.
 
-## <span id="Outline" class="mw-headline">Outline</span>
+## Outline
 
 - The Basics
 - The Data File
@@ -128,13 +105,13 @@ material presented at this workshop.
   tracks, and [popup
   balloons](GBrowse_Popup_Balloons "GBrowse Popup Balloons")
 
-## <span id="Workshop_Instructor" class="mw-headline">Workshop Instructor</span>
+## Workshop Instructor
 
 - [Scott Cain](User%253AScott "User%253AScott"), GMOD Project Coordinator,
   <a href="http://www.oicr.on.ca/" class="external text"
   rel="nofollow">Ontario Institute for Cancer Research</a>
 
-## <span id="Other_GMOD_Presentations_and_Meetings" class="mw-headline">Other GMOD Presentations and Meetings</span>
+## Other GMOD Presentations and Meetings
 
 GMOD will have a [strong presence](PAG_2010 "PAG 2010") at PAG 2010,
 including
@@ -151,84 +128,3 @@ including
 
 See [PAG 2010](PAG_2010 "PAG 2010") for a more complete list of
 GMOD-related presentations at PAG XVIII.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_PAG_2010_Workshop"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:52 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">25,925 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

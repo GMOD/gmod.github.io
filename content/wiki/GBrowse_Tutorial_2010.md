@@ -1,21 +1,7 @@
 ---
 title: "GBrowse Tutorial 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">GBrowse Tutorial 2010</span>
-
-
-
-
-
-
-
+# GBrowse Tutorial 2010
 
 
 TutorialHeader \| what = GBrowse \| where = [2010 GMOD Summer
@@ -25,30 +11,20 @@ Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas
 logo = GBrowseLogo.png
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">VMware</span>](#VMware)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Caveats</span>](#Caveats)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">4</span> <span class="toctext">Install
-  GBrowse</span>](#Install_GBrowse)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Tutorial</span>](#Tutorial)
-- [<span class="tocnumber">6</span> <span class="toctext">Basic Chado
+  VMware](#VMware)
+- [Caveats](#Caveats)
+- [Prerequisites](#Prerequisites)
+- [Install
+  GBrowse](#Install_GBrowse)
+- [Tutorial](#Tutorial)
+- [Basic Chado
   Configuration (if we have
-  time)</span>](#Basic_Chado_Configuration_.28if_we_have_time.29)
-  - [<span class="tocnumber">6.1</span>
-    <span class="toctext">Materialized views for
-    searching</span>](#Materialized_views_for_searching)
+  time)](#Basic_Chado_Configuration_.28if_we_have_time.29)
+  - [Materialized views for
+    searching](#Materialized_views_for_searching)
 
 
-
-## <span id="VMware" class="mw-headline">VMware</span>
+## VMware
 
 This tutorial was taught using a VMware system image
 as a starting point. If you want to start with the same system, download
@@ -69,8 +45,7 @@ class="external text" rel="nofollow">end image</a>.
 | Shell   | gmod     | gmodamericas2010 |
 | MySQL   | root     | gmodamericas2010 |
 
-## <span id="Caveats" class="mw-headline">Caveats</span>
-
+## Caveats
 
 
 **Important Note**
@@ -83,12 +58,11 @@ over time. Newer versions of tutorials will be posted as they become
 available.
 
 
-
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 Installed before using apt or cpan.
 
-## <span id="Install_GBrowse" class="mw-headline">Install GBrowse</span>
+## Install GBrowse
 
 Easily installed via the cpan shell:
 
@@ -97,12 +71,12 @@ Easily installed via the cpan shell:
 
 Which gets all of the prereqs that aren't installed on the machine.
 
-## <span id="Tutorial" class="mw-headline">Tutorial</span>
+## Tutorial
 
 Go to <a href="http://localhost/gbrowse" class="external free"
 rel="nofollow">http://localhost/gbrowse</a>
 
-## <span id="Basic_Chado_Configuration_.28if_we_have_time.29" class="mw-headline">Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)</span>
+## Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
@@ -120,7 +94,7 @@ Some simple tweaks and additions:
 - add nucleotide matches
 - strip out stuff that is in `/etc/gbrowse2/GBrowse.conf`
 
-### <span id="Materialized_views_for_searching" class="mw-headline">Materialized views for searching</span>
+### Materialized views for searching
 
 Chado comes with a tool to materialize views written by developers at
 the [SOL Genomics Network (SGN)](Category%253ASGN "Category%253ASGN"). A
@@ -166,89 +140,3 @@ obscure answers:
 
      Enter 'y' to confirm, 'n' to re-enter data:
      y
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Tutorial_2010" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:38 on 2 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">16,535 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

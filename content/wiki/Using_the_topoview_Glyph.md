@@ -1,25 +1,7 @@
 ---
 title: "Using the topoview Glyph"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Using the topoview Glyph</span>
-
-
-
-
-
-
-
-
-
+# Using the topoview Glyph
 
 
 This glyph is derived from the FlyBase
@@ -46,7 +28,6 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="550" height="163" alt="Sample topoview track" />
 
 
-
 The TopoView glyph was developed for fast 3D-like demonstration of
 RNA-seq data consisting of multiple individual subsets. The main
 purposes were to compact presentation as much as possible (in one
@@ -56,53 +37,43 @@ See the note below about normalizing the expression profiles across the
 whole experiment.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Demonstration</span>](#Demonstration)
-- [<span class="tocnumber">2</span> <span class="toctext">Data
-  format</span>](#Data_format)
-- [<span class="tocnumber">3</span> <span class="toctext">Accessory
-  scripts</span>](#Accessory_scripts)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Converting
+  Demonstration](#Demonstration)
+- [Data
+  format](#Data_format)
+- [Accessory
+  scripts](#Accessory_scripts)
+  - [Converting
     BAM alignment files to WIG coverage
-    files</span>](#Converting_BAM_alignment_files_to_WIG_coverage_files)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">NOTE:
-      Normalization</span>](#NOTE:_Normalization)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Converting
+    files](#Converting_BAM_alignment_files_to_WIG_coverage_files)
+    - [NOTE:
+      Normalization](#NOTE:_Normalization)
+  - [Converting
     coverage WIG to indexed data for
-    topoview</span>](#Converting_coverage_WIG_to_indexed_data_for_topoview)
-    - [<span class="tocnumber">3.2.1</span> <span class="toctext">Log
-      transformations</span>](#Log_transformations)
-    - [<span class="tocnumber">3.2.2</span>
-      <span class="toctext">Subsets
-      (subplots)</span>](#Subsets_.28subplots.29)
-    - [<span class="tocnumber">3.2.3</span> <span class="toctext">Output
-      directories</span>](#Output_directories)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Example
-    config stanza</span>](#Example_config_stanza)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Options</span>](#Options)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Subsets</span>](#Subsets)
-- [<span class="tocnumber">5</span> <span class="toctext">Installation
-  Troubleshooting</span>](#Installation_Troubleshooting)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Track has
-    a red error message</span>](#Track_has_a_red_error_message)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Track is
-    present but has no data</span>](#Track_is_present_but_has_no_data)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Some other
-    kind of error</span>](#Some_other_kind_of_error)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">Ask for
-    help</span>](#Ask_for_help)
+    topoview](#Converting_coverage_WIG_to_indexed_data_for_topoview)
+    - [Log
+      transformations](#Log_transformations)
+    - [Subsets
+      (subplots)](#Subsets_.28subplots.29)
+    - [Output
+      directories](#Output_directories)
+- [Configuration](#Configuration)
+  - [Example
+    config stanza](#Example_config_stanza)
+  - [Options](#Options)
+    - [Subsets](#Subsets)
+- [Installation
+  Troubleshooting](#Installation_Troubleshooting)
+  - [Track has
+    a red error message](#Track_has_a_red_error_message)
+  - [Track is
+    present but has no data](#Track_is_present_but_has_no_data)
+  - [Some other
+    kind of error](#Some_other_kind_of_error)
+  - [Ask for
+    help](#Ask_for_help)
 
 
-
-## <span id="Demonstration" class="mw-headline">Demonstration</span>
+## Demonstration
 
 Setting up this Glyph can be complicated. If you have access to Amazon
 Web Services, there is an AMI with a demonstration instance of Gbrowse
@@ -112,7 +83,7 @@ GBrowse 2.56 with topoview track - ami-c2d677bf
 
   
 
-## <span id="Data_format" class="mw-headline">Data format</span>
+## Data format
 
 Comparing performance (retrieval of several Kbp of data profiles for
 several subsets of some RNA-seq experiment) of wiggle binary method and
@@ -140,12 +111,12 @@ which glyph is able to handle.
     20035   0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     20043   1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
-## <span id="Accessory_scripts" class="mw-headline">Accessory scripts</span>
+## Accessory scripts
 
 The Bio::Graphics package has two scripts useful for processing BAM
 alignment data from programs such as tophat for use with this glyph.
 
-### <span id="Converting_BAM_alignment_files_to_WIG_coverage_files" class="mw-headline">Converting BAM alignment files to WIG coverage files</span>
+### Converting BAM alignment files to WIG coverage files
 
 bam_coverage_windows.pl accepts a sorted bam file as input and will
 calculate the average read coverage for a user-specified window size
@@ -178,14 +149,14 @@ coordinates):
     1   3775    3800    45.0246249688
     1   3800    3825    52.2413947768
 
-#### <span id="NOTE:_Normalization" class="mw-headline">NOTE: Normalization</span>
+#### NOTE: Normalization
 
 If you are comparing BAM files with different total read counts, you
 need to normalize the read counts across BAM file with the ***-n***
 option. The number used is arbitrary. Try using a number near the
 average read count for all BAM files being analyzed in the experiment.
 
-### <span id="Converting_coverage_WIG_to_indexed_data_for_topoview" class="mw-headline">Converting coverage WIG to indexed data for topoview</span>
+### Converting coverage WIG to indexed data for topoview
 
 coverage_to_topoview.pl converts a list of coverage files (WIG/BED4) to
 the indexed format used by this glyph. It specifically expects the BED4
@@ -197,7 +168,7 @@ format produced by the bam_coverage_windows.pl script
         -l use log2 for read counts (recommended)                                                                                                                                                                                                                                                                                                                                                                                                                                                
         -h this help message                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
-#### <span id="Log_transformations" class="mw-headline">Log transformations</span>
+#### Log transformations
 
 The dynamic range in read coverage can be very high and log2 conversion
 dramatically changes perception of expression profiles and helps to
@@ -205,14 +176,14 @@ illuminate coordinated behavior of different subsets. Using
 log2-transformed read counts in addition to raw read counts is
 recommended.
 
-#### <span id="Subsets_.28subplots.29" class="mw-headline">Subsets (subplots)</span>
+#### Subsets (subplots)
 
 Each WIG file corresponds to a single BAM file and will be a subset in
 the experiment. The base name of the file will be used as the subset
 name. For example, the file ***shoots-R1.wig.gz*** will generate a
 subset named ***shoots-R1*** in the topoview track.
 
-#### <span id="Output_directories" class="mw-headline">Output directories</span>
+#### Output directories
 
 If you do not specify an output directory name, the default name
 'topoview' will be used. Any existing contents will be overwritten. For
@@ -235,9 +206,9 @@ other using log2 transformed counts:
 The absolute path of these directories will be used in the ***datadir***
 option below.
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
-### <span id="Example_config_stanza" class="mw-headline">Example config stanza</span>
+### Example config stanza
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     [TOPOVIEWLOG2]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
@@ -259,7 +230,7 @@ option below.
     fill opacity  = 0.8
     edge color    = black                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-### <span id="Options" class="mw-headline">Options</span>
+### Options
 
 Glyph-specific options
 
@@ -283,7 +254,7 @@ Glyph-specific options
 - **subset order** the order and color of each subset (subplot) in the
   graph (see below)
 
-#### <span id="Subsets" class="mw-headline">Subsets</span>
+#### Subsets
 
 Setting the 'subset order' is mandatory. It specifies the subplots and
 the order in which they will be displayed.
@@ -314,9 +285,9 @@ optional.
                     SRR1810779.25  FF6633 0.7                                                                                                                                                                                                     
                     ...                                                                                                                                                                                                                           
 
-## <span id="Installation_Troubleshooting" class="mw-headline">Installation Troubleshooting</span>
+## Installation Troubleshooting
 
-### <span id="Track_has_a_red_error_message" class="mw-headline">Track has a red error message</span>
+### Track has a red error message
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/81/Bad_topoview.png" class="thumbborder"
@@ -334,7 +305,7 @@ Debian packages.
 - For redhat based systems, such as centOS, use yum to search for
   equivalent packages.
 
-### <span id="Track_is_present_but_has_no_data" class="mw-headline">Track is present but has no data</span>
+### Track is present but has no data
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/eb/Blank_topoview.png" class="thumbborder"
@@ -356,7 +327,7 @@ your topoview feature to 'region':
     III ce10    region  1   13783700    .   .   .   ID=III;Name=III
     M   ce10    region  1   13794   .   .   .   ID=M;Name=M
 
-### <span id="Some_other_kind_of_error" class="mw-headline">Some other kind of error</span>
+### Some other kind of error
 
 Make sure your software is up-to-date
 
@@ -364,97 +335,6 @@ Make sure your software is up-to-date
 - BioPerl 1.7.0 or greater
 - GBrowse 2.54 or greater
 
-### <span id="Ask_for_help" class="mw-headline">Ask for help</span>
+### Ask for help
 
 sheldon.mckay@gmail.com
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [GBrowse
-  Developer](Category%253AGBrowse_Developer "Category%253AGBrowse Developer")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [GMOD Component](Category%253AGMOD_Component "Category%253AGMOD Component")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Using_the_topoview_Glyph"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:29 on 6 April
-  2018.</span>
-<!-- - <span id="footer-info-viewcount">192,747 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

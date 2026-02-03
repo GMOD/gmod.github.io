@@ -1,23 +1,7 @@
 ---
 title: "GSOC Project Ideas 2019"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GSOC Project Ideas 2019</span>
-
-
-
-
-
-
-
+# GSOC Project Ideas 2019
 
 
 **Got an idea for [GSOC 2019](GSoC "GSoC")?**
@@ -46,34 +30,27 @@ self-motivation are great traits for open source programmers.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Proposed
   project ideas for 2019</span>](#Proposed_project_ideas_for_2019)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Template</span>](#Template)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Automated
+  - [Template](#Template)
+  - [Automated
     Bioinformatics Help in
-    Galaxy</span>](#Automated_Bioinformatics_Help_in_Galaxy)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Use Galaxy
+    Galaxy](#Automated_Bioinformatics_Help_in_Galaxy)
+  - [Use Galaxy
     to run Reactome analysis and processes on genomic data
-    (Reactome)</span>](#Use_Galaxy_to_run_Reactome_analysis_and_processes_on_genomic_data_.28Reactome.29)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Create a
+    (Reactome)](#Use_Galaxy_to_run_Reactome_analysis_and_processes_on_genomic_data_.28Reactome.29)
+  - [Create a
     software package for use in R to query Reactome’s Graph Database in
-    Neo4J</span>](#Create_a_software_package_for_use_in_R_to_query_Reactome.E2.80.99s_Graph_Database_in_Neo4J)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Revision
+    Neo4J](#Create_a_software_package_for_use_in_R_to_query_Reactome.E2.80.99s_Graph_Database_in_Neo4J)
+  - [Revision
     tracking curation and tools usage
-    (Reactome)</span>](#Revision_tracking_curation_and_tools_usage_.28Reactome.29)
+    (Reactome)](#Revision_tracking_curation_and_tools_usage_.28Reactome.29)
 
 
-
-# <span id="Proposed_project_ideas_for_2019" class="mw-headline">Proposed project ideas for 2019</span>
+# Proposed project ideas for 2019
 
 *Be the first to add a project idea.*
 
-## <span id="Template" class="mw-headline">Template</span>
+## Template
 
 - **Project Idea Name (Project Name/Lab Name)**
   - *Brief explanation:* Brief description of the idea, including any
@@ -90,7 +67,7 @@ self-motivation are great traits for open source programmers.
 
   
 
-## <span id="Automated_Bioinformatics_Help_in_Galaxy" class="mw-headline">Automated Bioinformatics Help in Galaxy</span>
+## Automated Bioinformatics Help in Galaxy
 
 - *Brief explanation:*
   - <a href="https://galaxyproject.org/" class="external text"
@@ -136,7 +113,7 @@ self-motivation are great traits for open source programmers.
 - *Skill level:* Medium.
 - *Mentors:*
 
-## <span id="Use_Galaxy_to_run_Reactome_analysis_and_processes_on_genomic_data_.28Reactome.29" class="mw-headline">Use Galaxy to run Reactome analysis and processes on genomic data (Reactome)</span>
+## Use Galaxy to run Reactome analysis and processes on genomic data (Reactome)
 
 - - *Brief explanation:* Reactome is a free, open-source, curated and
     peer-reviewed pathway database. Our goal is to provide intuitive
@@ -164,7 +141,7 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca) and Joel Weiser
     (joel.weiser\[AT\]oicr.on.ca).
 
-## <span id="Create_a_software_package_for_use_in_R_to_query_Reactome.E2.80.99s_Graph_Database_in_Neo4J" class="mw-headline">Create a software package for use in R to query Reactome’s Graph Database in Neo4J</span>
+## Create a software package for use in R to query Reactome’s Graph Database in Neo4J
 
 - **Project Idea Name (Project Name/Lab Name)**
   - *Brief explanation:* The R programming language has an
@@ -190,7 +167,7 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* Joel Weiser (joel.weiser\[AT\]oicr.on.ca) and Antonio
     Fabregat (fabregat\[AT\]ebi.ac.uk).
 
-## <span id="Revision_tracking_curation_and_tools_usage_.28Reactome.29" class="mw-headline">Revision tracking curation and tools usage (Reactome)</span>
+## Revision tracking curation and tools usage (Reactome)
 
 - - *Brief explanation:* Reactome is a free, open-source, curated and
     peer-reviewed pathway database. Our goal is to provide intuitive
@@ -210,87 +187,6 @@ self-motivation are great traits for open source programmers.
   - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca).
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GSoC](Category%253AGSoC "Category%253AGSoC")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GSOC_Project_Ideas_2019" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:52 on 19 February
-  2019.</span>
-<!-- - <span id="footer-info-viewcount">41,274 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

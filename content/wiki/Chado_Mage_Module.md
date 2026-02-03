@@ -1,116 +1,90 @@
 ---
 title: "Chado Mage Module"
 ---
+# Chado Mage Module
 
 
+  Introduction](#Introduction)
+  - [Other
+    Documentation](#Other_Documentation)
+  - [Mage and
+    Expression](#Mage_and_Expression)
+  - [Entering
+    and Querying](#Entering_and_Querying)
+    - [Loading](#Loading)
+    - [Querying](#Querying)
+- [Tables](#Tables)
+  - [Table:
+    acquisition](#Table:_acquisition)
+  - [Table:
+    acquisition_relationship](#Table:_acquisition_relationship)
+  - [Table:
+    acquisitionprop](#Table:_acquisitionprop)
+  - [Table:
+    arraydesign](#Table:_arraydesign)
+  - [Table:
+    arraydesignprop](#Table:_arraydesignprop)
+  - [Table:
+    assay](#Table:_assay)
+  - [Table:
+    assay_biomaterial](#Table:_assay_biomaterial)
+  - [Table:
+    assay_project](#Table:_assay_project)
+  - [Table:
+    assayprop](#Table:_assayprop)
+  - [Table:
+    biomaterial](#Table:_biomaterial)
+  - [Table:
+    biomaterial_dbxref](#Table:_biomaterial_dbxref)
+  - [Table:
+    biomaterial_relationship](#Table:_biomaterial_relationship)
+  - [Table:
+    biomaterial_treatment](#Table:_biomaterial_treatment)
+  - [Table:
+    biomaterialprop](#Table:_biomaterialprop)
+  - [Table:
+    channel](#Table:_channel)
+  - [Table:
+    control](#Table:_control)
+  - [Table:
+    element](#Table:_element)
+  - [Table:
+    element_relationship](#Table:_element_relationship)
+  - [Table:
+    elementresult](#Table:_elementresult)
+  - [Table:
+    elementresult_relationship](#Table:_elementresult_relationship)
+  - [Table:
+    magedocumentation](#Table:_magedocumentation)
+  - [Table:
+    mageml](#Table:_mageml)
+  - [Table:
+    protocol](#Table:_protocol)
+  - [Table:
+    protocolparam](#Table:_protocolparam)
+  - [Table:
+    quantification](#Table:_quantification)
+  - [Table:
+    quantification_relationship](#Table:_quantification_relationship)
+  - [Table:
+    quantificationprop](#Table:_quantificationprop)
+  - [Table:
+    study](#Table:_study)
+  - [Table:
+    study_assay](#Table:_study_assay)
+  - [Table:
+    studydesign](#Table:_studydesign)
+  - [Table:
+    studydesignprop](#Table:_studydesignprop)
+  - [Table:
+    studyfactor](#Table:_studyfactor)
+  - [Table:
+    studyfactorvalue](#Table:_studyfactorvalue)
+  - [Table:
+    treatment](#Table:_treatment)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Mage Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Other
-    Documentation</span>](#Other_Documentation)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Mage and
-    Expression</span>](#Mage_and_Expression)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Entering
-    and Querying</span>](#Entering_and_Querying)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">Loading</span>](#Loading)
-    - [<span class="tocnumber">1.3.2</span>
-      <span class="toctext">Querying</span>](#Querying)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    acquisition</span>](#Table:_acquisition)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    acquisition_relationship</span>](#Table:_acquisition_relationship)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    acquisitionprop</span>](#Table:_acquisitionprop)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    arraydesign</span>](#Table:_arraydesign)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    arraydesignprop</span>](#Table:_arraydesignprop)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    assay</span>](#Table:_assay)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Table:
-    assay_biomaterial</span>](#Table:_assay_biomaterial)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Table:
-    assay_project</span>](#Table:_assay_project)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Table:
-    assayprop</span>](#Table:_assayprop)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Table:
-    biomaterial</span>](#Table:_biomaterial)
-  - [<span class="tocnumber">2.11</span> <span class="toctext">Table:
-    biomaterial_dbxref</span>](#Table:_biomaterial_dbxref)
-  - [<span class="tocnumber">2.12</span> <span class="toctext">Table:
-    biomaterial_relationship</span>](#Table:_biomaterial_relationship)
-  - [<span class="tocnumber">2.13</span> <span class="toctext">Table:
-    biomaterial_treatment</span>](#Table:_biomaterial_treatment)
-  - [<span class="tocnumber">2.14</span> <span class="toctext">Table:
-    biomaterialprop</span>](#Table:_biomaterialprop)
-  - [<span class="tocnumber">2.15</span> <span class="toctext">Table:
-    channel</span>](#Table:_channel)
-  - [<span class="tocnumber">2.16</span> <span class="toctext">Table:
-    control</span>](#Table:_control)
-  - [<span class="tocnumber">2.17</span> <span class="toctext">Table:
-    element</span>](#Table:_element)
-  - [<span class="tocnumber">2.18</span> <span class="toctext">Table:
-    element_relationship</span>](#Table:_element_relationship)
-  - [<span class="tocnumber">2.19</span> <span class="toctext">Table:
-    elementresult</span>](#Table:_elementresult)
-  - [<span class="tocnumber">2.20</span> <span class="toctext">Table:
-    elementresult_relationship</span>](#Table:_elementresult_relationship)
-  - [<span class="tocnumber">2.21</span> <span class="toctext">Table:
-    magedocumentation</span>](#Table:_magedocumentation)
-  - [<span class="tocnumber">2.22</span> <span class="toctext">Table:
-    mageml</span>](#Table:_mageml)
-  - [<span class="tocnumber">2.23</span> <span class="toctext">Table:
-    protocol</span>](#Table:_protocol)
-  - [<span class="tocnumber">2.24</span> <span class="toctext">Table:
-    protocolparam</span>](#Table:_protocolparam)
-  - [<span class="tocnumber">2.25</span> <span class="toctext">Table:
-    quantification</span>](#Table:_quantification)
-  - [<span class="tocnumber">2.26</span> <span class="toctext">Table:
-    quantification_relationship</span>](#Table:_quantification_relationship)
-  - [<span class="tocnumber">2.27</span> <span class="toctext">Table:
-    quantificationprop</span>](#Table:_quantificationprop)
-  - [<span class="tocnumber">2.28</span> <span class="toctext">Table:
-    study</span>](#Table:_study)
-  - [<span class="tocnumber">2.29</span> <span class="toctext">Table:
-    study_assay</span>](#Table:_study_assay)
-  - [<span class="tocnumber">2.30</span> <span class="toctext">Table:
-    studydesign</span>](#Table:_studydesign)
-  - [<span class="tocnumber">2.31</span> <span class="toctext">Table:
-    studydesignprop</span>](#Table:_studydesignprop)
-  - [<span class="tocnumber">2.32</span> <span class="toctext">Table:
-    studyfactor</span>](#Table:_studyfactor)
-  - [<span class="tocnumber">2.33</span> <span class="toctext">Table:
-    studyfactorvalue</span>](#Table:_studyfactorvalue)
-  - [<span class="tocnumber">2.34</span> <span class="toctext">Table:
-    treatment</span>](#Table:_treatment)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 The Mage module is designed to store data from microarray experiments.
 It is based on the
@@ -122,11 +96,11 @@ Mage module is compatible with the
 <a href="http://www.mged.org/Workgroups/MAGE/mage.html"
 class="external text" rel="nofollow">MAGE standard</a>.
 
-## <span id="Other_Documentation" class="mw-headline">Other Documentation</span>
+## Other Documentation
 
 See the [Mage FAQ](Mage_FAQ "Mage FAQ").
 
-## <span id="Mage_and_Expression" class="mw-headline">Mage and Expression</span>
+## Mage and Expression
 
 The Mage module and the [Expression
 module](Chado_Expression_Module "Chado Expression Module") can be
@@ -139,7 +113,7 @@ does not whereas the Expression module can be thought of a simpler set
 of tables designed to tie ontologies concerned with expression to
 sequence features.
 
-## <span id="Entering_and_Querying" class="mw-headline">Entering and Querying</span>
+## Entering and Querying
 
 A typical case would be that the researcher had run some number of
 microarray experiments. She will need to load the resultant data into
@@ -161,7 +135,7 @@ for the *cv* tables.
 
   
 
-### <span id="Loading" class="mw-headline">Loading</span>
+### Loading
 
 The researcher would load the data into the database in this order:
 
@@ -210,7 +184,7 @@ those data what is or is not expressed. Obviously the latter is less
 lossy but is also less straightforward for the casual observer to
 interpret.
 
-### <span id="Querying" class="mw-headline">Querying</span>
+### Querying
 
 Once data has been loaded according to the general approach above the
 schema can be queryed. A typical question the researcher may ask is
@@ -236,9 +210,9 @@ WHERE elementresult.signal > 0;
 ```
 
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_acquisition" class="mw-headline">Table: acquisition</span>
+## Table: acquisition
 
 This represents the scanning of hybridized material. The output of this
 process is typically a digital image of an array.
@@ -258,20 +232,14 @@ acquisition Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition_relationship](Chado_Tables#Table:_acquisition_relationship "Chado Tables")
-
-<!-- -->
-
 - [acquisitionprop](Chado_Tables#Table:_acquisitionprop "Chado Tables")
-
-<!-- -->
-
 - [quantification](Chado_Tables#Table:_quantification "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_acquisition_relationship" class="mw-headline">Table: acquisition_relationship</span>
+## Table: acquisition_relationship
 
 Multiple monochrome images may be merged to form a multi-color image.
 Red-green images of 2-channel hybridizations are an example of this.
@@ -291,7 +259,7 @@ acquisition_relationship Structure
 
   
 
-## <span id="Table:_acquisitionprop" class="mw-headline">Table: acquisitionprop</span>
+## Table: acquisitionprop
 
 Parameters associated with image acquisition.
 
@@ -309,7 +277,7 @@ acquisitionprop Structure
 
   
 
-## <span id="Table:_arraydesign" class="mw-headline">Table: arraydesign</span>
+## Table: arraydesign
 
 General properties about an array. An array is a template used to
 generate physical slides, etc. It contains layout information, as well
@@ -342,20 +310,14 @@ arraydesign Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [arraydesignprop](Chado_Tables#Table:_arraydesignprop "Chado Tables")
-
-<!-- -->
-
 - [assay](Chado_Tables#Table:_assay "Chado Tables")
-
-<!-- -->
-
 - [element](Chado_Tables#Table:_element "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_arraydesignprop" class="mw-headline">Table: arraydesignprop</span>
+## Table: arraydesignprop
 
 Extra array design properties that are not accounted for in arraydesign.
 
@@ -373,7 +335,7 @@ arraydesignprop Structure
 
   
 
-## <span id="Table:_assay" class="mw-headline">Table: assay</span>
+## Table: assay
 
 An assay consists of a physical instance of an array, combined with the
 conditions used to create the array (protocols, technician information).
@@ -397,36 +359,18 @@ assay Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](Chado_Tables#Table:_acquisition "Chado Tables")
-
-<!-- -->
-
 - [assay_biomaterial](Chado_Tables#Table:_assay_biomaterial "Chado Tables")
-
-<!-- -->
-
 - [assay_project](Chado_Tables#Table:_assay_project "Chado Tables")
-
-<!-- -->
-
 - [assayprop](Chado_Tables#Table:_assayprop "Chado Tables")
-
-<!-- -->
-
 - [control](Chado_Tables#Table:_control "Chado Tables")
-
-<!-- -->
-
 - [study_assay](Chado_Tables#Table:_study_assay "Chado Tables")
-
-<!-- -->
-
 - [studyfactorvalue](Chado_Tables#Table:_studyfactorvalue "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_assay_biomaterial" class="mw-headline">Table: assay_biomaterial</span>
+## Table: assay_biomaterial
 
 A biomaterial can be hybridized many times (technical replicates), or
 combined with other biomaterials in a single hybridization (for
@@ -446,7 +390,7 @@ assay_biomaterial Structure
 
   
 
-## <span id="Table:_assay_project" class="mw-headline">Table: assay_project</span>
+## Table: assay_project
 
 Link assays to projects.
 
@@ -462,7 +406,7 @@ assay_project Structure
 
   
 
-## <span id="Table:_assayprop" class="mw-headline">Table: assayprop</span>
+## Table: assayprop
 
 Extra assay properties that are not accounted for in assay.
 
@@ -480,7 +424,7 @@ assayprop Structure
 
   
 
-## <span id="Table:_biomaterial" class="mw-headline">Table: biomaterial</span>
+## Table: biomaterial
 
 A biomaterial represents the MAGE concept of BioSource, BioSample, and
 LabeledExtract. It is essentially some biological material (tissue,
@@ -502,32 +446,17 @@ biomaterial Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [assay_biomaterial](Chado_Tables#Table:_assay_biomaterial "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_dbxref](Chado_Tables#Table:_biomaterial_dbxref "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_relationship](Chado_Tables#Table:_biomaterial_relationship "Chado Tables")
-
-<!-- -->
-
 - [biomaterial_treatment](Chado_Tables#Table:_biomaterial_treatment "Chado Tables")
-
-<!-- -->
-
 - [biomaterialprop](Chado_Tables#Table:_biomaterialprop "Chado Tables")
-
-<!-- -->
-
 - [treatment](Chado_Tables#Table:_treatment "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_biomaterial_dbxref" class="mw-headline">Table: biomaterial_dbxref</span>
+## Table: biomaterial_dbxref
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -541,7 +470,7 @@ biomaterial_dbxref Structure
 
   
 
-## <span id="Table:_biomaterial_relationship" class="mw-headline">Table: biomaterial_relationship</span>
+## Table: biomaterial_relationship
 
 Relate biomaterials to one another. This is a way to track a series of
 treatments or material splits/merges, for instance.
@@ -559,7 +488,7 @@ biomaterial_relationship Structure
 
   
 
-## <span id="Table:_biomaterial_treatment" class="mw-headline">Table: biomaterial_treatment</span>
+## Table: biomaterial_treatment
 
 Link biomaterials to treatments. Treatments have an order of operations
 (rank), and associated measurements (unittype_id, value).
@@ -579,7 +508,7 @@ biomaterial_treatment Structure
 
   
 
-## <span id="Table:_biomaterialprop" class="mw-headline">Table: biomaterialprop</span>
+## Table: biomaterialprop
 
 Extra biomaterial properties that are not accounted for in biomaterial.
 
@@ -597,7 +526,7 @@ biomaterialprop Structure
 
   
 
-## <span id="Table:_channel" class="mw-headline">Table: channel</span>
+## Table: channel
 
 Different array platforms can record signals from one or more channels
 (cDNA arrays typically use two CCD, but Affymetrix uses only one).
@@ -613,16 +542,13 @@ channel Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](Chado_Tables#Table:_acquisition "Chado Tables")
-
-<!-- -->
-
 - [assay_biomaterial](Chado_Tables#Table:_assay_biomaterial "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_control" class="mw-headline">Table: control</span>
+## Table: control
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -641,7 +567,7 @@ control Structure
 
   
 
-## <span id="Table:_element" class="mw-headline">Table: element</span>
+## Table: element
 
 Represents a feature of the array. This is typically a region of the
 array coated or bound to DNA.
@@ -659,16 +585,13 @@ element Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [element_relationship](Chado_Tables#Table:_element_relationship "Chado Tables")
-
-<!-- -->
-
 - [elementresult](Chado_Tables#Table:_elementresult "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_element_relationship" class="mw-headline">Table: element_relationship</span>
+## Table: element_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
@@ -689,7 +612,7 @@ element_relationship Structure
 
   
 
-## <span id="Table:_elementresult" class="mw-headline">Table: elementresult</span>
+## Table: elementresult
 
 An element on an array produces a measurement when hybridized to a
 biomaterial (traceable through quantification_id). This is the base data
@@ -712,7 +635,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_elementresult_relationship" class="mw-headline">Table: elementresult_relationship</span>
+## Table: elementresult_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
@@ -733,7 +656,7 @@ elementresult_relationship Structure
 
   
 
-## <span id="Table:_magedocumentation" class="mw-headline">Table: magedocumentation</span>
+## Table: magedocumentation
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -749,7 +672,7 @@ magedocumentation Structure
 
   
 
-## <span id="Table:_mageml" class="mw-headline">Table: mageml</span>
+## Table: mageml
 
 This table is for storing extra bits of MAGEml in a denormalized form.
 More normalization would require many more tables.
@@ -770,7 +693,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_protocol" class="mw-headline">Table: protocol</span>
+## Table: protocol
 
 Procedural notes on how data was prepared and processed.
 
@@ -791,32 +714,17 @@ protocol Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](Chado_Tables#Table:_acquisition "Chado Tables")
-
-<!-- -->
-
 - [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables")
-
-<!-- -->
-
 - [assay](Chado_Tables#Table:_assay "Chado Tables")
-
-<!-- -->
-
 - [protocolparam](Chado_Tables#Table:_protocolparam "Chado Tables")
-
-<!-- -->
-
 - [quantification](Chado_Tables#Table:_quantification "Chado Tables")
-
-<!-- -->
-
 - [treatment](Chado_Tables#Table:_treatment "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_protocolparam" class="mw-headline">Table: protocolparam</span>
+## Table: protocolparam
 
 Parameters related to a protocol. For example, if the protocol is a
 soak, this might include attributes of bath temperature and duration.
@@ -837,7 +745,7 @@ protocolparam Structure
 
   
 
-## <span id="Table:_quantification" class="mw-headline">Table: quantification</span>
+## Table: quantification
 
 Quantification is the transformation of an image acquisition to numeric
 data. This typically involves statistical procedures.
@@ -858,20 +766,14 @@ quantification Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [elementresult](Chado_Tables#Table:_elementresult "Chado Tables")
-
-<!-- -->
-
 - [quantification_relationship](Chado_Tables#Table:_quantification_relationship "Chado Tables")
-
-<!-- -->
-
 - [quantificationprop](Chado_Tables#Table:_quantificationprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_quantification_relationship" class="mw-headline">Table: quantification_relationship</span>
+## Table: quantification_relationship
 
 There may be multiple rounds of quantification, this allows us to keep
 an audit trail of what values went where.
@@ -889,7 +791,7 @@ quantification_relationship Structure
 
   
 
-## <span id="Table:_quantificationprop" class="mw-headline">Table: quantificationprop</span>
+## Table: quantificationprop
 
 Extra quantification properties that are not accounted for in
 quantification.
@@ -908,7 +810,7 @@ quantificationprop Structure
 
   
 
-## <span id="Table:_study" class="mw-headline">Table: study</span>
+## Table: study
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -924,16 +826,13 @@ study Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [study_assay](Chado_Tables#Table:_study_assay "Chado Tables")
-
-<!-- -->
-
 - [studydesign](Chado_Tables#Table:_studydesign "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_study_assay" class="mw-headline">Table: study_assay</span>
+## Table: study_assay
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -947,7 +846,7 @@ study_assay Structure
 
   
 
-## <span id="Table:_studydesign" class="mw-headline">Table: studydesign</span>
+## Table: studydesign
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -960,16 +859,13 @@ studydesign Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [studydesignprop](Chado_Tables#Table:_studydesignprop "Chado Tables")
-
-<!-- -->
-
 - [studyfactor](Chado_Tables#Table:_studyfactor "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_studydesignprop" class="mw-headline">Table: studydesignprop</span>
+## Table: studydesignprop
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -985,7 +881,7 @@ studydesignprop Structure
 
   
 
-## <span id="Table:_studyfactor" class="mw-headline">Table: studyfactor</span>
+## Table: studyfactor
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -1005,7 +901,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_studyfactorvalue" class="mw-headline">Table: studyfactorvalue</span>
+## Table: studyfactorvalue
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -1022,7 +918,7 @@ studyfactorvalue Structure
 
   
 
-## <span id="Table:_treatment" class="mw-headline">Table: treatment</span>
+## Table: treatment
 
 A biomaterial may undergo multiple treatments. Examples of treatments:
 apoxia, fluorophore and biotin labeling.
@@ -1043,91 +939,3 @@ Tables referencing this one via Foreign Key Constraints:
 - [biomaterial_treatment](Chado_Tables#Table:_biomaterial_treatment "Chado Tables")
 
 ------------------------------------------------------------------------
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Expression](Category%253AExpression "Category%253AExpression")
-- [Microarrays](Category%253AMicroarrays "Category%253AMicroarrays")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Mage_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">167,148 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

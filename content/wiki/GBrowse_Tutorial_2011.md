@@ -1,69 +1,44 @@
 ---
 title: "GBrowse Tutorial 2011"
 ---
+# GBrowse Tutorial 2011
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Tutorial 2011</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">2</span> <span class="toctext">Install
-  GBrowse</span>](#Install_GBrowse)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Tutorial</span>](#Tutorial)
-- [<span class="tocnumber">4</span> <span class="toctext">Basic Chado
+  Prerequisites](#Prerequisites)
+- [Install
+  GBrowse](#Install_GBrowse)
+- [Tutorial](#Tutorial)
+- [Basic Chado
   Configuration (if we have
-  time)</span>](#Basic_Chado_Configuration_.28if_we_have_time.29)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">DB
-    connection info</span>](#DB_connection_info)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Add a BAM
-    data source</span>](#Add_a_BAM_data_source)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Add track
-    defaults</span>](#Add_track_defaults)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Add some
-    tracks</span>](#Add_some_tracks)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Add our
+  time)](#Basic_Chado_Configuration_.28if_we_have_time.29)
+  - [DB
+    connection info](#DB_connection_info)
+  - [Add a BAM
+    data source](#Add_a_BAM_data_source)
+  - [Add track
+    defaults](#Add_track_defaults)
+  - [Add some
+    tracks](#Add_some_tracks)
+  - [Add our
     new database to the
-    GBrowse.conf</span>](#Add_our_new_database_to_the_GBrowse.conf)
-    - [<span class="tocnumber">4.5.1</span>
-      <span class="toctext">Updating
-      SAMtools</span>](#Updating_SAMtools)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">Add
+    GBrowse.conf](#Add_our_new_database_to_the_GBrowse.conf)
+    - [Updating
+      SAMtools](#Updating_SAMtools)
+  - [Add
     semantic zooming for the BAM
-    tracks</span>](#Add_semantic_zooming_for_the_BAM_tracks)
-  - [<span class="tocnumber">4.7</span> <span class="toctext">Add "show
+    tracks](#Add_semantic_zooming_for_the_BAM_tracks)
+  - [Add "show
     summary"
-    functionality</span>](#Add_.22show_summary.22_functionality)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">Enabling
-    full text searching</span>](#Enabling_full_text_searching)
+    functionality](#Add_.22show_summary.22_functionality)
+  - [Enabling
+    full text searching](#Enabling_full_text_searching)
 
 
-
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+# Prerequisites
 
 Installed before using apt or cpan.
 
-# <span id="Install_GBrowse" class="mw-headline">Install GBrowse</span>
+# Install GBrowse
 
 Easily installed via the cpan shell:
 
@@ -72,12 +47,12 @@ Easily installed via the cpan shell:
 
 Which gets all of the prereqs that aren't installed on the machine.
 
-# <span id="Tutorial" class="mw-headline">Tutorial</span>
+# Tutorial
 
 Go to <a href="http://localhost/gbrowse2" class="external free"
 rel="nofollow">http://localhost/gbrowse2</a>
 
-# <span id="Basic_Chado_Configuration_.28if_we_have_time.29" class="mw-headline">Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)</span>
+# Basic <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Configuration (if we have time)
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> was
@@ -95,7 +70,7 @@ Some simple tweaks and additions:
 - Remove or change examples (yeast examples don't help anybody)
 - Add initial landmark (`initial landmark = scf1117875582023`)
 
-## <span id="DB_connection_info" class="mw-headline">DB connection info</span>
+## DB connection info
 
     [annotation:database]
     db_adaptor    = Bio::DB::Das::Chado
@@ -105,7 +80,7 @@ Some simple tweaks and additions:
                     -srcfeatureslice 1
     search options = default
 
-## <span id="Add_a_BAM_data_source" class="mw-headline">Add a BAM data source</span>
+## Add a BAM data source
 
     [bam_sample:database]
     db_adaptor     = Bio::DB::Sam
@@ -113,7 +88,7 @@ Some simple tweaks and additions:
                      -bam   /var/www/gbrowse2/databases/pythium/simulated-sorted.bam
     search options = default
 
-## <span id="Add_track_defaults" class="mw-headline">Add track defaults</span>
+## Add track defaults
 
     [TRACK DEFAULTS]
     glyph       = generic
@@ -128,7 +103,7 @@ Note particularly the "database" entry--for most tracks we'll be using
 the annotation database, but the bam_sample data source will be
 available when we want it.
 
-## <span id="Add_some_tracks" class="mw-headline">Add some tracks</span>
+## Add some tracks
 
     [Genes]
     feature      = gene
@@ -227,7 +202,7 @@ available when we want it.
                     }
     key           = Read Pairs
 
-## <span id="Add_our_new_database_to_the_GBrowse.conf" class="mw-headline">Add our new database to the GBrowse.conf</span>
+## Add our new database to the GBrowse.conf
 
 To let GBrowse know that there is a new database available, we have to
 add a few lines to GBrowse.conf. Add this to the bottom:
@@ -236,7 +211,7 @@ add a few lines to GBrowse.conf. Add this to the bottom:
     description   = Pythium ultimum
     path          = pythium.conf
 
-### <span id="Updating_SAMtools" class="mw-headline">Updating SAMtools</span>
+### Updating SAMtools
 
 The version of SAMtools may need to be updated. Get the samtools
 release:
@@ -257,7 +232,7 @@ files:", answer:
 
      /home/gmod/Documents/Software/samtools-0.1.13
 
-## <span id="Add_semantic_zooming_for_the_BAM_tracks" class="mw-headline">Add semantic zooming for the BAM tracks</span>
+## Add semantic zooming for the BAM tracks
 
 Not doing this for very dense data (like BAM) is probably the number one
 performance killers for GBrowse; asking GBrowse to draw a track that has
@@ -275,7 +250,7 @@ informative).
     height         = 15
     bgcolor        = purple
 
-## <span id="Add_.22show_summary.22_functionality" class="mw-headline">Add "show summary" functionality</span>
+## Add "show summary" functionality
 
 For other tracks, when zoomed way out (100kb or 1MB), performance can
 similarly suffer, with a decreasing "information" content. Newer
@@ -296,7 +271,7 @@ in the track definitions):
 
      show summary = 99999
 
-## <span id="Enabling_full_text_searching" class="mw-headline">Enabling full text searching</span>
+## Enabling full text searching
 
 If we try searching for "`gene 7.92`", we'll get "Not Found" as a
 result, even though genemark-scf1117875582023-abinit-gene-7.92 does
@@ -320,92 +295,3 @@ text searching, by adding this to the Chado database stanza:
 
 Now we can search for "`gene 7.92`" and we'll find our gene (plus its
 mRNA and exons) and we can click on the gene to see it in GBrowse.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Tutorial_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:50 on 13 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">9,740 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

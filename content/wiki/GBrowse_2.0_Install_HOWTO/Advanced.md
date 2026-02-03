@@ -1,23 +1,7 @@
 ---
 title: "GBrowse 2.0 Install HOWTO/Advanced"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse 2.0 Install HOWTO/Advanced</span>
-
-
-
-
-
-
-
+# GBrowse 2.0 Install HOWTO/Advanced
 
 
 This article describes **advanced installation topics** for GBrowse 2.0,
@@ -36,42 +20,33 @@ via user authentication.
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Running
   GBrowse under FastCGI</span>](#Running_GBrowse_under_FastCGI)
-- [<span class="tocnumber">2</span> <span class="toctext">Running
-  GBrowse under modperl</span>](#Running_GBrowse_under_modperl)
-- [<span class="tocnumber">3</span> <span class="toctext">Configuring
+- [Running
+  GBrowse under modperl](#Running_GBrowse_under_modperl)
+- [Configuring
   the User Account
-  Database</span>](#Configuring_the_User_Account_Database)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Creating
+  Database](#Configuring_the_User_Account_Database)
+  - [Creating
     and configuring the user account
-    database</span>](#Creating_and_configuring_the_user_account_database)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Configuring outgoing
-    email</span>](#Configuring_outgoing_email)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">The Admin
-    Interface</span>](#The_Admin_Interface)
-    - [<span class="tocnumber">3.3.1</span>
-      <span class="toctext">WebGBrowse</span>](#WebGBrowse)
-- [<span class="tocnumber">4</span> <span class="toctext">Displaying
+    database](#Creating_and_configuring_the_user_account_database)
+  - [Configuring outgoing
+    email](#Configuring_outgoing_email)
+  - [The Admin
+    Interface](#The_Admin_Interface)
+    - [WebGBrowse](#WebGBrowse)
+- [Displaying
   Next Generation Sequencing
-  Data</span>](#Displaying_Next_Generation_Sequencing_Data)
-- [<span class="tocnumber">5</span> <span class="toctext">Configuring
+  Data](#Displaying_Next_Generation_Sequencing_Data)
+- [Configuring
   the Uploaded Track
-  Database</span>](#Configuring_the_Uploaded_Track_Database)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Using the
-    DBI::mysql backend</span>](#Using_the_DBI::mysql_backend)
-- [<span class="tocnumber">6</span> <span class="toctext">Authentication
-  and Authorization</span>](#Authentication_and_Authorization)
+  Database](#Configuring_the_Uploaded_Track_Database)
+  - [Using the
+    DBI::mysql backend](#Using_the_DBI::mysql_backend)
+- [Authentication
+  and Authorization](#Authentication_and_Authorization)
 
 
-## <span id="Running_GBrowse_under_FastCGI" class="mw-headline">Running GBrowse under FastCGI</span>
+## Running GBrowse under FastCGI
 
 <a href="http://www.fastcgi.com/drupal/" class="external text"
 rel="nofollow">FastCGI</a> is a web protocol for generating dynamic that
@@ -141,7 +116,7 @@ If things don't seem to work as advertised, please check the Apache
 server error log file, usually /var/log/apache/error_log, for clues
 about where things are going wrong.
 
-## <span id="Running_GBrowse_under_modperl" class="mw-headline">Running GBrowse under modperl</span>
+## Running GBrowse under modperl
 
 <a href="http://perl.apache.org/" class="external text"
 rel="nofollow">ModPerl</a> is an Apache extension that embeds a Perl
@@ -150,7 +125,7 @@ inconsistent among different combinations of Perl, mod_perl, and Apache,
 and **mod_perl is no longer supported by GBrowse2**. Please use FastCGI
 instead.
 
-## <span id="Configuring_the_User_Account_Database" class="mw-headline">Configuring the User Account Database</span>
+## Configuring the User Account Database
 
 GBrowse offers an optional feature that allows users to register
 themselves and establish password-protected accounts. When a user logs
@@ -188,9 +163,6 @@ For creating and storing passwords. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package or as Debian package
 libdigest-sha-perl.
-
-<!-- -->
-
 **Crypt::SSLeay**  
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
@@ -198,9 +170,6 @@ rel="nofollow">CPAN</a> or as Debian package libcrypt-ssleay-perl. This
 module in turn requires the
 <a href="http://www.openssl.org/" class="external text"
 rel="nofollow">OpenSSL package</a>, Debian package *libssl-dev*.
-
-<!-- -->
-
 **Math::BigInt::Pari** or **Math::BigInt::GMP**  
 These libraries speed up Net::OpenID::Consumer, and in particular reduce
 the time needed to run the Net::OpenID::Consumer tests. To use the Pari
@@ -210,9 +179,6 @@ rel="nofollow">http://pari.math.u-bordeaux.fr/).To</a> use GMP install
 libGMP (<a href="http://gmplib.org/" class="external free"
 rel="nofollow">http://gmplib.org/</a>). Debian users can simply install
 *libmath-bigint-gmp-perl*.
-
-<!-- -->
-
 **Net::OpenID::Consumer**  
 For OpenID authentication. Available from
 <a href="http://www.cpan.org" class="external text"
@@ -226,15 +192,12 @@ outgoing mail, then you will also need the following two modules:
 Encrypted connections to mail servers. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package *libnet-smtp-ssl-perl*.
-
-<!-- -->
-
 **Authen::SASL**  
 Handle the authentication between mail client and server. Available from
 <a href="http://www.cpan.org" class="external text"
 rel="nofollow">CPAN</a> or as Debian package *libauthen-sasl-per*l.
 
-### <span id="Creating_and_configuring_the_user_account_database" class="mw-headline">Creating and configuring the user account database</span>
+### Creating and configuring the user account database
 
 First, choose the desired Perl DBI backend for the user account
 database. Currently two DBI backends are supported: mysql and SQLite.
@@ -289,7 +252,7 @@ section:
 **user_account_db** to the DBI path specified when you created the
 database.
 
-### <span id="Configuring_outgoing_email" class="mw-headline">Configuring outgoing email</span>
+### Configuring outgoing email
 
 When a user registers an account in GBrowse, the system sends a
 confirmation message to the email address she provided during
@@ -374,7 +337,7 @@ arbitrarily change the apparent sender in order to reduce spam. In this
 case, the email address will always appear to come from the user whose
 authentication information was provided in the smtp_gateway information.
 
-### <span id="The_Admin_Interface" class="mw-headline">The Admin Interface</span>
+### The Admin Interface
 
 GBrowse recognizes a special privileged user who can upload and
 configure tracks that will be public. These tracks become part of the
@@ -414,13 +377,10 @@ shown in the illustration below.
 <a href="../File:Editing_track_config2.png" class="image"></a>
 
 
-
 editing_track_config2.png\]
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/Editing_track_config2.png"
 class="internal" title="Editing track config2.png">View at full
 resolution</a>
-
-
 
 
 The format of the track configuration files is identical to that
@@ -437,7 +397,7 @@ under the \$DATABASES directory (usually
 a directory named after it containing a config file, other support
 files, and often a SQLite database named index.SQLite.
 
-#### <span id="WebGBrowse" class="mw-headline">WebGBrowse</span>
+#### WebGBrowse
 
 [WebGBrowse](../WebGBrowse.1 "WebGBrowse") is a web-based administrative
 interface for GBrowse2 written by Ram Podicheti and colleagues at
@@ -448,7 +408,7 @@ use from
 <a href="http://webgbrowse.cgb.indiana.edu/" class="external free"
 rel="nofollow">http://webgbrowse.cgb.indiana.edu/</a>.
 
-## <span id="Displaying_Next_Generation_Sequencing_Data" class="mw-headline">Displaying Next Generation Sequencing Data</span>
+## Displaying Next Generation Sequencing Data
 
 To work with Next Generation Sequencing data in BAM or SAM format, you
 will need to install the following:
@@ -477,7 +437,7 @@ interface. See
 [GBrowse_NGS_Tutorial](../GBrowse_NGS_Tutorial "GBrowse NGS Tutorial")
 for a tutorial on configuration.
 
-## <span id="Configuring_the_Uploaded_Track_Database" class="mw-headline">Configuring the Uploaded Track Database</span>
+## Configuring the Uploaded Track Database
 
 When a user uploads or imports a custom track, GBrowse creates a
 directory containing information about this upload. This directory is
@@ -500,7 +460,7 @@ GBrowse.conf's \[GENERAL\] section. Valid options are "memory",
 only as a last resort, as it has poor performance relative to the
 others.
 
-### <span id="Using_the_DBI::mysql_backend" class="mw-headline">Using the DBI::mysql backend</span>
+### Using the DBI::mysql backend
 
 The DBI::mysql backend has excellent performance, but it requires
 additional configuration to give the GBrowse server the rights to create
@@ -525,7 +485,7 @@ Last, update GBrowse.conf with the appropriate values for
 **userdb_adaptor**, **userdb_host**, **userdb_user** and
 **userdb_pass**.
 
-## <span id="Authentication_and_Authorization" class="mw-headline">Authentication and Authorization</span>
+## Authentication and Authorization
 
 You can restrict who has access to gbrowse by IP address, host name,
 domain or username and password. Restriction can apply to the datasource
@@ -649,97 +609,3 @@ to users in the .ebi.ac.uk domain or to an authenticated user named
 
 To completely disable generation of the data sources popup menu, set
 **show sources=0** in the \[GENERAL\] section of GBrowse.conf.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](../Category%253AHOWTO "Category%253AHOWTO")
-- [GBrowse 2](../Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_2.0_Install_HOWTO-2FAdvanced"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 14:44 on 10 July
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">109,817 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,31 +1,12 @@
 ---
 title: "GBrowse syn Tutorial 2010"
 ---
+# GBrowse syn Tutorial 2010
 
 
+## Further Reading
 
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse syn Tutorial 2010</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## <span id="Further_Reading" class="mw-headline">Further Reading</span>
-
-### <span id="A_Note_on_Whole_Genome_Alignments" class="mw-headline">A Note on Whole Genome Alignments</span>
+### A Note on Whole Genome Alignments
 
 The focus of the section of the course is on dealing with alignment or
 synteny data and using [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
@@ -51,7 +32,7 @@ background reading is listed below:
   computationally intensive and we will load pre-processed data to get a
   head start.
 
-### <span id="Documentation" class="mw-headline">Documentation</span>
+### Documentation
 
 There is detailed documentation on the GMOD wiki for how to install,
 configure and use GBrowse_syn. To get started, browse these pages:
@@ -63,90 +44,3 @@ configure and use GBrowse_syn. To get started, browse these pages:
 - [The user interface](GBrowse_syn_Help "GBrowse syn Help")
 - [Presentations and
   workshops](GBrowse_syn.1#Presentations_and_Workshops "GBrowse syn")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn_Tutorial_2010"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 11:43 on 9 January
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">6,970 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

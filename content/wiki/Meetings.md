@@ -1,9 +1,7 @@
 ---
 title: "Meetings"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Meetings</span>
+# Meetings
 
 "It's tempting to see bioinformatics as a collection of potential
 problems. Being at a GMOD meeting helps us see bioinformatics as a
@@ -23,7 +21,7 @@ significantly less often now, as funding for them doesn't really exist.
 Targeted hackathons or code fests are more common and frequently happen
 around other meetings.
 
-## <span id="GMOD_Community_Meetings" class="mw-headline">GMOD Community Meetings</span>
+## GMOD Community Meetings
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e1/GMOD2016ColorsBigLetters_300px.png/100px-GMOD2016ColorsBigLetters_300px.png"
@@ -92,7 +90,7 @@ A (partial) list of GMOD meetings:
 | 2003 | [May](May_2003_GMOD_Meeting "May 2003 GMOD Meeting")                   | Cold Spring Harbor, New York, United States                                        | Before Genome Informatics                                                                                                                                                                |
 |      | [February](February_2003_GMOD_Meeting "February 2003 GMOD Meeting")    | San Diego, California, United States                                               | Coinciding with the O'Reilly Bioinformatics Technology Conference                                                                                                                        |
 
-## <span id="Other_GMOD_Meetings" class="mw-headline">Other GMOD Meetings</span>
+## Other GMOD Meetings
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/a8/EvoHackathonLogo.png/125px-EvoHackathonLogo.png"
@@ -106,49 +104,3 @@ alt="GMOD Tools for Evolutionary Biology Hackathon" />](GMOD_Evo_Hackathon "GMOD
 | 2007 | [Hackathon 2007](Hackathon_2007_info "Hackathon 2007 info")                                                                                    | Chicago, Illinois                                                                              |                                                                                                                                                                                                                                             |
 | 2005 | [GMOD Architecture Work Group](Summary_of_Fall_2005_CHSL_Meeting "Summary of Fall 2005 CHSL Meeting")                                          | Cold Spring Harbor, New York                                                                   |                                                                                                                                                                                                                                             |
 | 2002 | [NIH 2002 Workshop on Model Organism Databases](NIH_2002_Workshop_on_Model_Organism_Databases "NIH 2002 Workshop on Model Organism Databases") | NIH, Bethesda, Maryland                                                                        |                                                                                                                                                                                                                                             |
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Meetings" rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 19:49 on 24 January 2020.</span>
-<!-- - <span id="footer-info-viewcount">510,838 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

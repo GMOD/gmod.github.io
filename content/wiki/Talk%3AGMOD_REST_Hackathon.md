@@ -1,75 +1,49 @@
 ---
 title: "Talk:GMOD REST Hackathon"
 ---
+# Talk:GMOD REST Hackathon
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Talk:GMOD REST Hackathon</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Programming
   language groups</span>](#Programming_language_groups)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">PHP</span>](#PHP)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Perl</span>](#Perl)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Java</span>](#Java)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">API
-    structure</span>](#API_structure)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Misc
-    Info</span>](#Misc_Info)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Pretty
-    URLs</span>](#Pretty_URLs)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Other
+  - [PHP](#PHP)
+  - [Perl](#Perl)
+  - [Java](#Java)
+  - [API
+    structure](#API_structure)
+  - [Misc
+    Info](#Misc_Info)
+  - [Pretty
+    URLs](#Pretty_URLs)
+  - [Other
     Backend APIs to Compare/Be Inspired
-    By</span>](#Other_Backend_APIs_to_Compare.2FBe_Inspired_By)
-  - [<span class="tocnumber">1.8</span> <span class="toctext">Info from
-    Adrian</span>](#Info_from_Adrian)
+    By](#Other_Backend_APIs_to_Compare.2FBe_Inspired_By)
+  - [Info from
+    Adrian](#Info_from_Adrian)
 
 
+# Programming language groups
 
-# <span id="Programming_language_groups" class="mw-headline">Programming language groups</span>
-
-## <span id="PHP" class="mw-headline">PHP</span>
+## PHP
 
 - Jim
 
 Additional documentation/discussion at
 [GMOD_RPC_API/PHP](GMOD_RPC_API/PHP "GMOD RPC API/PHP")
 
-## <span id="Perl" class="mw-headline">Perl</span>
+## Perl
 
 - Rob
 - Josh --Coordinator
 - Jay
 - Chris
 
-## <span id="Java" class="mw-headline">Java</span>
+## Java
 
 - Brian
 - Richard --Coordinator
 - Josh
 
-## <span id="API_structure" class="mw-headline">API structure</span>
+## API structure
 
 - Controller to handle dispatching requests
 - Plugin layer for data models
@@ -77,7 +51,7 @@ Additional documentation/discussion at
 
   
 
-## <span id="Misc_Info" class="mw-headline">Misc Info</span>
+## Misc Info
 
 - POST for read operations is ok to get around URL character limits w/
   GET
@@ -86,13 +60,13 @@ Additional documentation/discussion at
 - Extend services for SO terms (exon, UTRs, etc...)
   - example gene/exon or chromosome/exon
 
-## <span id="Pretty_URLs" class="mw-headline">Pretty URLs</span>
+## Pretty URLs
 
 - Do we need mod_rewrite?
   - for php, use directory/index.php? No. appended directory/foo gives a
     404
 
-## <span id="Other_Backend_APIs_to_Compare.2FBe_Inspired_By" class="mw-headline">Other Backend APIs to Compare/Be Inspired By</span>
+## Other Backend APIs to Compare/Be Inspired By
 
 - <a href="http://www.biojava.org/wiki/Dazzle:writeplugin"
   class="external free"
@@ -107,7 +81,7 @@ Additional documentation/discussion at
   rel="nofollow">https://seqware.svn.sourceforge.net/svnroot/seqware/trunk/seqware-queryengine/webservice/</a>
   seqware-queryengine-webservice"
 
-## <span id="Info_from_Adrian" class="mw-headline">Info from Adrian</span>
+## Info from Adrian
 
 From: art@xxxx To: jogoodma@xxxxx Cc: art@xxxxxxx Subject: GMOD REST API
 feedback
@@ -191,86 +165,3 @@ different XML. Is it in scope to produce a RNC or XML schema to tie this
 down?
 
 Adrian
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_REST_Hackathon" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:11 on 15 January
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">29,863 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

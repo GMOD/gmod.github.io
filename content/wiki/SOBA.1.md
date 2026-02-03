@@ -1,23 +1,7 @@
 ---
 title: "SOBA"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">SOBA</span>
-
-
-
-
-
-
-
+# SOBA
 
 
   
@@ -29,9 +13,7 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="400" height="81" alt="SOBA logo" />
 
 
-
 Status
-
 
 
 - Mature release
@@ -39,9 +21,7 @@ Status
 - Support: active
 
 
-
 Resources
-
 
 
 - <a
@@ -53,42 +33,29 @@ Resources
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About Sequence
   Ontology Bioinformatics Analysis
   (SOBA)</span>](#About_Sequence_Ontology_Bioinformatics_Analysis_.28SOBA.29)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">3</span> <span class="toctext">Using
-  SOBA</span>](#Using_SOBA)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">System
-    Requirements</span>](#System_Requirements)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">SOBA
-      web</span>](#SOBA_web)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">SOBAcl</span>](#SOBAcl)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">4</span> <span class="toctext">Publications,
+- [Downloads](#Downloads)
+- [Using
+  SOBA](#Using_SOBA)
+  - [System
+    Requirements](#System_Requirements)
+    - [SOBA
+      web](#SOBA_web)
+    - [SOBAcl](#SOBAcl)
+  - [Installation](#Installation)
+  - [Documentation](#Documentation)
+- [Publications,
   Tutorials, and
-  Presentations</span>](#Publications.2C_Tutorials.2C_and_Presentations)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Tutorials</span>](#Tutorials)
-- [<span class="tocnumber">5</span> <span class="toctext">Contacts and
-  Mailing Lists</span>](#Contacts_and_Mailing_Lists)
-- [<span class="tocnumber">6</span> <span class="toctext">More on
-  SOBA</span>](#More_on_SOBA)
+  Presentations](#Publications.2C_Tutorials.2C_and_Presentations)
+  - [Tutorials](#Tutorials)
+- [Contacts and
+  Mailing Lists](#Contacts_and_Mailing_Lists)
+- [More on
+  SOBA](#More_on_SOBA)
 
 
-
-## <span id="About_Sequence_Ontology_Bioinformatics_Analysis_.28SOBA.29" class="mw-headline">About Sequence Ontology Bioinformatics Analysis (SOBA)</span>
+## About Sequence Ontology Bioinformatics Analysis (SOBA)
 
 SOBA, Sequence Ontology Bioinformatics Analysis, is a command line tool
 and web application for analyzing [GFF3](GFF3 "GFF3") annotations.
@@ -127,23 +94,20 @@ class="external text" rel="nofollow">SOBA website</a>.
 
   
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 - SOBAcl is available (via
   <a href="http://subversion.apache.org/" class="external text"
   rel="nofollow">Subversion</a>) from:
-
-<!-- -->
-
      svn co svn://topaz.genetics.utah.edu/SOBA/trunk SOBA
 
   
 
   
 
-## <span id="Using_SOBA" class="mw-headline">Using SOBA</span>
+## Using SOBA
 
-### <span id="System_Requirements" class="mw-headline">System Requirements</span>
+### System Requirements
 
 SOBA is built with Perl and uses
 <a href="http://template-toolkit.org/" class="external text"
@@ -154,12 +118,12 @@ class="external text" rel="nofollow">CGI::Application</a> as a Perl
 webapp framework and the JQuery JavaScript library for Web 2.0 effects
 and [AJAX](Glossary#AJAX "Glossary").
 
-#### <span id="SOBA_web" class="mw-headline">SOBA web</span>
+#### SOBA web
 
 The web interface to SOBA should work on any modern browser that has
 Javascript enabled.
 
-#### <span id="SOBAcl" class="mw-headline">SOBAcl</span>
+#### SOBAcl
 
 SOBAcl requires a number of Perl libraries, as well as the Graphviz and
 libgd graphics library:
@@ -191,11 +155,11 @@ libgd graphics library:
 - <a href="http://search.cpan.org/dist/GDGraph/" class="external text"
   rel="nofollow">GD::Graph</a>
 
-### <span id="Installation" class="mw-headline">Installation</span>
+### Installation
 
 Install documentation is included in the SOBAcl download.
 
-### <span id="Documentation" class="mw-headline">Documentation</span>
+### Documentation
 
 Documentation for the web interface to SOBA is available on the <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
@@ -209,9 +173,9 @@ usage statement with the script itself:
 
 A README and INSTALL document are also included with SOBAcl.
 
-## <span id="Publications.2C_Tutorials.2C_and_Presentations" class="mw-headline">Publications, Tutorials, and Presentations</span>
+## Publications, Tutorials, and Presentations
 
-### <span id="Tutorials" class="mw-headline">Tutorials</span>
+### Tutorials
 
 <a href="SOBA_Tutorial" class="mw-redirect" title="SOBA Tutorial">SOBA
 Tutorial</a>  
@@ -220,7 +184,7 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 
   
 
-## <span id="Contacts_and_Mailing_Lists" class="mw-headline">Contacts and Mailing Lists</span>
+## Contacts and Mailing Lists
 
 SOBA is supported by the
 <a href="https://lists.sourceforge.net/lists/listinfo/song-devel"
@@ -233,7 +197,7 @@ Mailing list</a>.
 
   
 
-## <span id="More_on_SOBA" class="mw-headline">More on SOBA</span>
+## More on SOBA
 
 See [Category%253ASOBA](Category%253ASOBA "Category%253ASOBA")
 
@@ -245,15 +209,12 @@ See [Category%253ASOBA](Category%253ASOBA "Category%253ASOBA")
 Raw tool data at [SOBA/tool data](SOBA/tool_data "SOBA/tool data")
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Component](Category%253AGMOD_Component "Category%253AGMOD Component")
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
 - [SOBA](Category%253ASOBA "Category%253ASOBA")
 - [Tool data](Category%253ATool_data "Category%253ATool data")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -265,81 +226,3 @@ Raw tool data at [SOBA/tool data](SOBA/tool_data "SOBA/tool data")
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external free"
 rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis</a> <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20website/http%253A-2F-2Fwww.sequenceontology.org-2Fwiki-2Findex.php-2FSOBA_-2D_Sequence_Ontology_Bioinformatics_Analysis "Special%253ASearchByProperty/Has-20website/http:-2F-2Fwww.sequenceontology.org-2Fwiki-2Findex.php-2FSOBA -2D Sequence Ontology Bioinformatics Analysis")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/SOBA" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:43 on 13 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">93,231 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

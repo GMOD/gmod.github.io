@@ -1,23 +1,7 @@
 ---
 title: "GBrowse syn Tutorial 2011"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse syn Tutorial 2011</span>
-
-
-
-
-
-
-
+# GBrowse syn Tutorial 2011
 
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
@@ -37,59 +21,46 @@ the standard GBrowse package (version 1.69 and later).
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Installing
   GBrowse_syn</span>](#Installing_GBrowse_syn)
-- [<span class="tocnumber">2</span> <span class="toctext">Setting up the
-  sample data</span>](#Setting_up_the_sample_data)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Setting up
-    the Alignment Database</span>](#Setting_up_the_Alignment_Database)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Setting up
-    the Configuration Files</span>](#Setting_up_the_Configuration_Files)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">Activating the Oryza Data
-      Source</span>](#Activating_the_Oryza_Data_Source)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Speeding
-    up the Browser</span>](#Speeding_up_the_Browser)
-- [<span class="tocnumber">3</span> <span class="toctext">Using
-  Non-alignment Data</span>](#Using_Non-alignment_Data)
-- [<span class="tocnumber">4</span> <span class="toctext">Further
-  Reading</span>](#Further_Reading)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">A Note on
-    Whole Genome Alignments</span>](#A_Note_on_Whole_Genome_Alignments)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Documentation</span>](#Documentation)
+- [Setting up the
+  sample data](#Setting_up_the_sample_data)
+  - [Setting up
+    the Alignment Database](#Setting_up_the_Alignment_Database)
+  - [Setting up
+    the Configuration Files](#Setting_up_the_Configuration_Files)
+    - [Activating the Oryza Data
+      Source](#Activating_the_Oryza_Data_Source)
+  - [Speeding
+    up the Browser](#Speeding_up_the_Browser)
+- [Using
+  Non-alignment Data](#Using_Non-alignment_Data)
+- [Further
+  Reading](#Further_Reading)
+  - [A Note on
+    Whole Genome Alignments](#A_Note_on_Whole_Genome_Alignments)
+  - [Documentation](#Documentation)
 
 
-
-# <span id="Installing_GBrowse_syn" class="mw-headline">Installing GBrowse_syn</span>
+# Installing GBrowse_syn
 
 GBrowse_syn is part of the GBrowse 2.0 package and was pre-installed
 when you went through the [GBrowse 2.0
 installation](GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
 
 
-
 **Update:** We will need to update the GBrowse source to include
 features and bug patches not included in the CPAN distribution:
-
 
 
 - First, update <a href="http://search.cpan.org/perldoc?Bio::Graphics"
   class="external text" rel="nofollow">Bio::Graphics</a>
 
 
-
     $ sudo cpan -i Bio::Graphics
-
 
 
 - Then check out a fresh copy of the current GBrowse 2 source code via
   <a href="SVN" class="mw-redirect" title="SVN">subversion (svn)</a>.
-
 
 
     $ cd /home/gmod/Downloads/sources
@@ -101,21 +72,16 @@ features and bug patches not included in the CPAN distribution:
 NOTE: use the default options when prompted.
 
 
-
 Now point your browser to
 <a href="http://localhost/cgi-bin/gb2/gbrowse_syn" class="external free"
 rel="nofollow">http://localhost/cgi-bin/gb2/gbrowse_syn</a>
 
 
-
-
-
-
   
 
-# <span id="Further_Reading" class="mw-headline">Further Reading</span>
+# Further Reading
 
-## <span id="A_Note_on_Whole_Genome_Alignments" class="mw-headline">A Note on Whole Genome Alignments</span>
+## A Note on Whole Genome Alignments
 
 The focus of the section of the course is on dealing with alignment or
 synteny data and using [GBrowse_syn](GBrowse_syn.1 "GBrowse syn").
@@ -141,7 +107,7 @@ background reading is listed below:
   computationally intensive and we will load pre-processed data to get a
   head start.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 There is detailed documentation on the GMOD wiki for how to install,
 configure and use GBrowse_syn. To get started, browse these pages:
@@ -156,92 +122,3 @@ configure and use GBrowse_syn. To get started, browse these pages:
   interface](GBrowse_syn_Help "GBrowse syn Help")</span>
 - <span class="pops">[Presentations and
   workshops](GBrowse_syn.1#Presentations_and_Workshops "GBrowse syn")</span>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn_Tutorial_2011"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:39 on 13 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">7,498 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

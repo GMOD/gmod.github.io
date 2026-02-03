@@ -1,103 +1,67 @@
 ---
 title: "Chado Django HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Django HOWTO</span>
-
-
-
-
-
-
-
+# Chado Django HOWTO
 
 
 --Vdejager
 11:07, 1 September 2008 (UTC)
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Chado access
   with Django HOWTO</span>](#Chado_access_with_Django_HOWTO)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Abstract</span>](#Abstract)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Why
-    Django?</span>](#Why_Django.3F)
-    - [<span class="tocnumber">1.3.1</span> <span class="toctext">High
-      Performance</span>](#High_Performance)
-    - [<span class="tocnumber">1.3.2</span>
-      <span class="toctext">Structure</span>](#Structure)
-    - [<span class="tocnumber">1.3.3</span> <span class="toctext">Our
-      Goal</span>](#Our_Goal)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">Important Django
-      Urls</span>](#Important_Django_Urls)
-  - [<span class="tocnumber">1.5</span>
-    <span class="toctext">Preparations</span>](#Preparations)
-    - [<span class="tocnumber">1.5.1</span> <span class="toctext">Create
-      a Django project</span>](#Create_a_Django_project)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">The Django
-    Model Philosophy</span>](#The_Django_Model_Philosophy)
-    - [<span class="tocnumber">1.6.1</span>
-      <span class="toctext">Creating a Django
-      App</span>](#Creating_a_Django_App)
-    - [<span class="tocnumber">1.6.2</span>
-      <span class="toctext">Creating the
-      Models</span>](#Creating_the_Models)
-    - [<span class="tocnumber">1.6.3</span>
-      <span class="toctext">Creating Model Specific
-      Functions</span>](#Creating_Model_Specific_Functions)
-    - [<span class="tocnumber">1.6.4</span>
-      <span class="toctext">Attaching the Model Method Definitions to
+  - [Abstract](#Abstract)
+  - [Introduction](#Introduction)
+  - [Why
+    Django?](#Why_Django.3F)
+    - [High
+      Performance](#High_Performance)
+    - [Structure](#Structure)
+    - [Our
+      Goal](#Our_Goal)
+  - [Prerequisites](#Prerequisites)
+    - [Important Django
+      Urls](#Important_Django_Urls)
+  - [Preparations](#Preparations)
+    - [Create
+      a Django project](#Create_a_Django_project)
+  - [The Django
+    Model Philosophy](#The_Django_Model_Philosophy)
+    - [Creating a Django
+      App](#Creating_a_Django_App)
+    - [Creating the
+      Models](#Creating_the_Models)
+    - [Creating Model Specific
+      Functions](#Creating_Model_Specific_Functions)
+    - [Attaching the Model Method Definitions to
       Specific
-      Models</span>](#Attaching_the_Model_Method_Definitions_to_Specific_Models)
-    - [<span class="tocnumber">1.6.5</span> <span class="toctext">Link
-      Everything Together</span>](#Link_Everything_Together)
-    - [<span class="tocnumber">1.6.6</span>
-      <span class="toctext">Finalizing</span>](#Finalizing)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Using
+      Models](#Attaching_the_Model_Method_Definitions_to_Specific_Models)
+    - [Link
+      Everything Together](#Link_Everything_Together)
+    - [Finalizing](#Finalizing)
+  - [Using
     Django From the Command
-    Line</span>](#Using_Django_From_the_Command_Line)
-    - [<span class="tocnumber">1.7.1</span>
-      <span class="toctext">Starting an Interactive Python
-      Shell</span>](#Starting_an_Interactive_Python_Shell)
-    - [<span class="tocnumber">1.7.2</span>
-      <span class="toctext">Querying the
-      Database</span>](#Querying_the_Database)
-    - [<span class="tocnumber">1.7.3</span>
-      <span class="toctext">Stacking Queries</span>](#Stacking_Queries)
-    - [<span class="tocnumber">1.7.4</span> <span class="toctext">Show
-      Me the Generated SQL</span>](#Show_Me_the_Generated_SQL)
-  - [<span class="tocnumber">1.8</span> <span class="toctext">Running
+    Line](#Using_Django_From_the_Command_Line)
+    - [Starting an Interactive Python
+      Shell](#Starting_an_Interactive_Python_Shell)
+    - [Querying the
+      Database](#Querying_the_Database)
+    - [Stacking Queries](#Stacking_Queries)
+    - [Show
+      Me the Generated SQL](#Show_Me_the_Generated_SQL)
+  - [Running
     commandline python scripts using Django for database
-    interaction</span>](#Running_commandline_python_scripts_using_Django_for_database_interaction)
-  - [<span class="tocnumber">1.9</span> <span class="toctext">Tips and
-    tricks</span>](#Tips_and_tricks)
-  - [<span class="tocnumber">1.10</span> <span class="toctext">BioPython
-    interaction</span>](#BioPython_interaction)
-  - [<span class="tocnumber">1.11</span> <span class="toctext">Example
-    website</span>](#Example_website)
+    interaction](#Running_commandline_python_scripts_using_Django_for_database_interaction)
+  - [Tips and
+    tricks](#Tips_and_tricks)
+  - [BioPython
+    interaction](#BioPython_interaction)
+  - [Example
+    website](#Example_website)
 
 
+# Chado access with Django HOWTO
 
-# <span id="Chado_access_with_Django_HOWTO" class="mw-headline">Chado access with Django HOWTO</span>
-
-## <span id="Abstract" class="mw-headline">Abstract</span>
+## Abstract
 
 This [HOWTO](Category%253AHOWTO "Category%253AHOWTO") describes how to use the
 <a href="http://www.djangoproject.com/" class="external text"
@@ -106,7 +70,7 @@ rel="nofollow">Django</a> (Python based) framework for accessing a
 The Django framework can be used to create web interfaces and command
 line tools using the Python language.
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 During the [first GMOD Summer
 school](2008_GMOD_Summer_School "2008 GMOD Summer School") and [July
@@ -121,13 +85,13 @@ with Chado. (Or at least if they are bug fixes, give them back to the
 community). This will break upgradability and platform independence of
 those tools.
 
-## <span id="Why_Django.3F" class="mw-headline">Why Django?</span>
+## Why Django?
 
 Some reasons why to use
 <a href="http://www.djangoproject.com/" class="external text"
 rel="nofollow">Django</a> as web framework
 
-### <span id="High_Performance" class="mw-headline">High Performance</span>
+### High Performance
 
 Django is a high-level
 <a href="http://www.python.org/" class="external text"
@@ -143,7 +107,7 @@ databases probably won't have to endure a million hits per hour they
 will be able to benefit from a lot of optimization strategies applied to
 high traffic sites like query caching and lazy querying methods.
 
-### <span id="Structure" class="mw-headline">Structure</span>
+### Structure
 
 Django lets you structure the design of a site to a high degree without
 giving up any flexibility or portability. Django certainly does not give
@@ -180,12 +144,12 @@ models can be upgraded independently without breaking the website code.
 
   
 
-### <span id="Our_Goal" class="mw-headline">Our Goal</span>
+### Our Goal
 
 We will use the Django framework as showcase for annotating and
 disclosing our microbial genome database.
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 - If you are not familiar with Django, start reading the tutorial at
   <a href="http://docs.djangoproject.com" class="external free"
@@ -216,7 +180,7 @@ disclosing our microbial genome database.
 - Try to get the Django welcome screen before continuing the project
   creation step.
 
-### <span id="Important_Django_Urls" class="mw-headline">Important Django Urls</span>
+### Important Django Urls
 
 - <a href="http://www.djangoproject.com/" class="external free"
   rel="nofollow">http://www.djangoproject.com/</a> (the projects home)
@@ -240,14 +204,14 @@ disclosing our microbial genome database.
 - <a href="http://www.python.org" class="external free"
   rel="nofollow">http://www.python.org</a> (python documentation)
 
-## <span id="Preparations" class="mw-headline">Preparations</span>
+## Preparations
 
 From this point on it is assumed you have read the
 <a href="http://www.djangoproject.com/documentation/"
 class="external text" rel="nofollow">Django introduction and
 tutorial</a> on the Django project website.
 
-### <span id="Create_a_Django_project" class="mw-headline">Create a Django project</span>
+### Create a Django project
 
 A Django project consists of a tree of files under a certain directory.
 This directory may be inside a user's home dir or inside a specific
@@ -287,7 +251,7 @@ We start by changing the `settings.py` file and filling in some options:
 
 Save the file and we are ready for the model generation part.
 
-## <span id="The_Django_Model_Philosophy" class="mw-headline">The Django Model Philosophy</span>
+## The Django Model Philosophy
 
 A model is the single, definitive source of data about your data. It
 contains the essential fields and behaviors of the data you’re storing.
@@ -299,7 +263,7 @@ predefined and works a little bit different than how Django normally
 would create it. Django also does not know how to create views and such
 although it can perfectly use them as we will notice later.
 
-### <span id="Creating_a_Django_App" class="mw-headline">Creating a Django App</span>
+### Creating a Django App
 
 First create a Django application inside you project directory. Switch
 to your project directory and create an application framework with the
@@ -313,7 +277,7 @@ command:
 This will create a directory inside your project directory named `gmod`
 and contains all file scaffolds we will need later.
 
-### <span id="Creating_the_Models" class="mw-headline">Creating the Models</span>
+### Creating the Models
 
 Now we switch back to our project directory and enter the following
 command.
@@ -387,7 +351,7 @@ representing a database table looks like this:
 ```
 
 
-### <span id="Creating_Model_Specific_Functions" class="mw-headline">Creating Model Specific Functions</span>
+### Creating Model Specific Functions
 
 In Django it is possible to specify so called *model methods*. These
 model methods describe the way a model behaves and can add certain
@@ -428,7 +392,7 @@ class="external text" rel="nofollow">package</a> in Python
 ```
 
 
-### <span id="Attaching_the_Model_Method_Definitions_to_Specific_Models" class="mw-headline">Attaching the Model Method Definitions to Specific Models</span>
+### Attaching the Model Method Definitions to Specific Models
 
 `__init__.py`:
 
@@ -450,7 +414,7 @@ class="external text" rel="nofollow">package</a> in Python
 ```
 
 
-### <span id="Link_Everything_Together" class="mw-headline">Link Everything Together</span>
+### Link Everything Together
 
 Go to your project directory to change the files below:
 
@@ -472,7 +436,7 @@ settings.
 
 Uncomment all line described as necessary for the automatic admin site.
 
-### <span id="Finalizing" class="mw-headline">Finalizing</span>
+### Finalizing
 
 Once this has been inserted we need to run one other command. From the
 command line inside your \<project\> run
@@ -491,20 +455,20 @@ and see the models described in the `@adminmodels` array in the
 rel="nofollow">http://localhost/microgear/admin/</a>* (although this url
 depends on *how* you install your Django sites.
 
-## <span id="Using_Django_From_the_Command_Line" class="mw-headline">Using Django From the Command Line</span>
+## Using Django From the Command Line
 
 (You may want to install <a
 href="http://code.google.com/p/django-command-extensions/wiki/InstallationInstructions"
 class="external text" rel="nofollow">Django commandline extensions</a>.)
 
-### <span id="Starting_an_Interactive_Python_Shell" class="mw-headline">Starting an Interactive Python Shell</span>
+### Starting an Interactive Python Shell
 
 Inside your project dir
 
        ./manage shell
        >>>from <project>.<app>.models import *
 
-### <span id="Querying_the_Database" class="mw-headline">Querying the Database</span>
+### Querying the Database
 
 See the <a href="http://www.djangoproject.com/documentation/db-api/"
 class="external text" rel="nofollow">Django database API
@@ -523,11 +487,11 @@ location:
 
        >>>Feature.featureloc_feature_set.filter(strand__exact=1).filter(fmin__gte=10000).filter(fmax__lte=20000)
 
-### <span id="Stacking_Queries" class="mw-headline">Stacking Queries</span>
+### Stacking Queries
 
 Using Q objects
 
-### <span id="Show_Me_the_Generated_SQL" class="mw-headline">Show Me the Generated SQL</span>
+### Show Me the Generated SQL
 
 It is possible to see the [SQL](Glossary#SQL "Glossary") Django
 generates using the following commands
@@ -549,102 +513,10 @@ following:
 SELECTs, etc. Each time your app hits the database, the query will be
 recorded.
 
-## <span id="Running_commandline_python_scripts_using_Django_for_database_interaction" class="mw-headline">Running commandline python scripts using Django for database interaction</span>
+## Running commandline python scripts using Django for database interaction
 
-## <span id="Tips_and_tricks" class="mw-headline">Tips and tricks</span>
+## Tips and tricks
 
-## <span id="BioPython_interaction" class="mw-headline">BioPython interaction</span>
+## BioPython interaction
 
-## <span id="Example_website" class="mw-headline">Example website</span>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Pages with problems or
-  questions](Category%253APages_with_problems_or_questions "Category%253APages with problems or questions")
-- [Needs Testing](Category%253ANeeds_Testing "Category%253ANeeds Testing")
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Django_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:11 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">98,669 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+## Example website

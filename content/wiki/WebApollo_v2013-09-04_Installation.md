@@ -1,106 +1,70 @@
 ---
 title: "WebApollo v2013-09-04 Installation"
 ---
+# WebApollo v2013-09-04 Installation
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">WebApollo v2013-09-04 Installation</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Server
-    operating system</span>](#Server_operating_system)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Tomcat
-    memory</span>](#Tomcat_memory)
-  - [<span class="tocnumber">2.4</span>
-    <span class="toctext">Conventions</span>](#Conventions)
-  - [<span class="tocnumber">2.5</span>
-    <span class="toctext">Installation</span>](#Installation_2)
-  - [<span class="tocnumber">2.6</span>
-    <span class="toctext">Authentication</span>](#Authentication)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">User
-    database</span>](#User_database)
-- [<span class="tocnumber">3</span> <span class="toctext">Deploying the
-  servlet</span>](#Deploying_the_servlet)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Main
-    configuration</span>](#Main_configuration)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Translation
-    tables</span>](#Translation_tables)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Canned
-    comments</span>](#Canned_comments)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Search
-    tools</span>](#Search_tools)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Blat</span>](#Blat)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Data
-    adapters</span>](#Data_adapters)
-    - [<span class="tocnumber">4.5.1</span>
-      <span class="toctext">GFF3</span>](#GFF3)
-    - [<span class="tocnumber">4.5.2</span>
-      <span class="toctext">Chado</span>](#Chado)
-- [<span class="tocnumber">5</span> <span class="toctext">Data
-  generation</span>](#Data_generation)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">DNA track
-    setup</span>](#DNA_track_setup)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Adding the
-    WebApollo plugin</span>](#Adding_the_WebApollo_plugin)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Static
-    data generation</span>](#Static_data_generation)
-    - [<span class="tocnumber">5.3.1</span> <span class="toctext">GFF3
+  Introduction](#Introduction)
+- [Installation](#Installation)
+  - [Server
+    operating system](#Server_operating_system)
+  - [Prerequisites](#Prerequisites)
+  - [Tomcat
+    memory](#Tomcat_memory)
+  - [Conventions](#Conventions)
+  - [Installation](#Installation_2)
+  - [Authentication](#Authentication)
+  - [User
+    database](#User_database)
+- [Deploying the
+  servlet](#Deploying_the_servlet)
+- [Configuration](#Configuration)
+  - [Main
+    configuration](#Main_configuration)
+  - [Translation
+    tables](#Translation_tables)
+  - [Canned
+    comments](#Canned_comments)
+  - [Search
+    tools](#Search_tools)
+    - [Blat](#Blat)
+  - [Data
+    adapters](#Data_adapters)
+    - [GFF3](#GFF3)
+    - [Chado](#Chado)
+- [Data
+  generation](#Data_generation)
+  - [DNA track
+    setup](#DNA_track_setup)
+  - [Adding the
+    WebApollo plugin](#Adding_the_WebApollo_plugin)
+  - [Static
+    data generation](#Static_data_generation)
+    - [GFF3
       with gene/transcript/exon/CDS/polypeptide
-      features</span>](#GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features)
-    - [<span class="tocnumber">5.3.2</span> <span class="toctext">GFF3
+      features](#GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features)
+    - [GFF3
       with match/match_part
-      features</span>](#GFF3_with_match.2Fmatch_part_features)
-    - [<span class="tocnumber">5.3.3</span>
-      <span class="toctext">Generate searchable name
-      index</span>](#Generate_searchable_name_index)
-    - [<span class="tocnumber">5.3.4</span> <span class="toctext">BAM
-      data</span>](#BAM_data)
-    - [<span class="tocnumber">5.3.5</span> <span class="toctext">BigWig
-      data</span>](#BigWig_data)
-  - [<span class="tocnumber">5.4</span>
-    <span class="toctext">Customizing
-    features</span>](#Customizing_features)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">Bulk
+      features](#GFF3_with_match.2Fmatch_part_features)
+    - [Generate searchable name
+      index](#Generate_searchable_name_index)
+    - [BAM
+      data](#BAM_data)
+    - [BigWig
+      data](#BigWig_data)
+  - [Customizing
+    features](#Customizing_features)
+  - [Bulk
     loading annotations to the user annotation
-    track</span>](#Bulk_loading_annotations_to_the_user_annotation_track)
-    - [<span class="tocnumber">5.5.1</span>
-      <span class="toctext">GFF3</span>](#GFF3_2)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">Upgrading
-    existing instances</span>](#Upgrading_existing_instances)
-- [<span class="tocnumber">6</span> <span class="toctext">Accessing your
-  WebApollo installation</span>](#Accessing_your_WebApollo_installation)
+    track](#Bulk_loading_annotations_to_the_user_annotation_track)
+    - [GFF3](#GFF3_2)
+  - [Upgrading
+    existing instances](#Upgrading_existing_instances)
+- [Accessing your
+  WebApollo installation](#Accessing_your_WebApollo_installation)
 
 
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 This guide will walk you through the server side installation for
 WebApollo. WebApollo is a web-based application, so the only client side
@@ -108,7 +72,7 @@ requirement is a web browser. Note that WebApollo has only been tested
 on Chrome, Firefox, and Safari. It has not been tested with Internet
 Explorer.
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 You can download the latest WebApollo release
 <a href="http://icebox.lbl.gov/webapollo/releases" class="external text"
@@ -119,11 +83,11 @@ the Pythium ultimum genome, provided as a
 <a href="http://icebox.lbl.gov/webapollo/data/pyu_data.tgz"
 class="external text" rel="nofollow">separate download</a>.
 
-### <span id="Server_operating_system" class="mw-headline">Server operating system</span>
+### Server operating system
 
 Any Unix like system (e.g., Unix, Linux, Mac OS X)
 
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 - Servlet container (must support servlet spec 3.0+) \[officially
   supported: Tomcat 7\]
@@ -169,7 +133,7 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
 - Sequence search (optional)
   - Blat (along with a configured search database)
 
-### <span id="Tomcat_memory" class="mw-headline">Tomcat memory</span>
+### Tomcat memory
 
 Tomcat is known to have issues with memory, in particular permgen memory
 in the JVM. The memory requirements will depend on the the size of your
@@ -186,7 +150,7 @@ recommended that you add this configuration in
 `$TOMCAT_BIN_DIR/setenv.sh` where `$TOMCAT_BIN_DIR` is where the
 directory where the Tomcat binaries reside.
 
-### <span id="Conventions" class="mw-headline">Conventions</span>
+### Conventions
 
 This guide will use the following conventions to make it more concise
 (you might want to keep these convention definitions handy so that you
@@ -225,13 +189,13 @@ The Tomcat related paths are the ones used by default in Ubuntu 12.04
 and Ubuntu's provided Tomcat7 package. Paths will likely be different in
 your system depending on how Tomcat was installed.
 
-### <span id="Installation_2" class="mw-headline">Installation</span>
+### Installation
 
 Uncompress the WebApollo.tgz tarball.
 
     $ tar -xvzf WebApollo-RELEASE_DATE.tgz
 
-### <span id="Authentication" class="mw-headline">Authentication</span>
+### Authentication
 
 Postgres can use Ident and password authentication. Because it is set up
 to use Ident by default, you might have to add a line to *pg_hba.conf*
@@ -245,7 +209,7 @@ Restart the postgres server for changes to take effect
 
     $ /etc/init.d/postgresql-8.4 restart
 
-### <span id="User_database" class="mw-headline">User database</span>
+### User database
 
 WebApollo uses a database to determine who can access and edit
 annotations for a given sequence.
@@ -332,7 +296,7 @@ mentioned above. You can get more detailed information on any given
 script (and other available options) using the “-h” or “--help” flag
 when running the script.
 
-## <span id="Deploying_the_servlet" class="mw-headline">Deploying the servlet</span>
+## Deploying the servlet
 
 Depending on how Tomcat was setup on your server, you might need to run
 the following command as root.
@@ -373,13 +337,13 @@ into it.
 That’s it! We’re done installing WebApollo. Now we need to move on to
 configuring the application.
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
 Most configuration files will reside in
 `$TOMCAT_WEBAPPS_DIR/WebApollo/config`. We’ll need to configure a number
 of things before we can get WebApollo up and running.
 
-### <span id="Main_configuration" class="mw-headline">Main configuration</span>
+### Main configuration
 
 The main configuration is stored in
 `$TOMCAT_WEBAPPS_DIR/WebApollo/config/config.xml`. Let’s take a look at
@@ -1248,7 +1212,7 @@ File that contains the configuration for the data adapter plugin chosen.
 Options to be passed to the data adapter. These are dependent on the
 data adapter.
 
-### <span id="Translation_tables" class="mw-headline">Translation tables</span>
+### Translation tables
 
 WebApollo has support for alternate translation tables. For your
 convenience, WebApollo comes packaged with the current NCBI translation
@@ -1299,7 +1263,7 @@ If you write your own customized translation table, make sure to update
 the `<translation_table>` element in your configuration to your
 customized file.
 
-### <span id="Canned_comments" class="mw-headline">Canned comments</span>
+### Canned comments
 
 You can configure a set of predefined comments that will be available
 for users when adding comments through a dropdown menu. The
@@ -1336,13 +1300,13 @@ feature of type `sequence:gene` and `sequence:transcript`:
 ```
 
 
-### <span id="Search_tools" class="mw-headline">Search tools</span>
+### Search tools
 
 As mentioned previously, WebApollo makes use of tools for sequence
 searching rather than employing its own search algorithm. The only
 currently supported tool is command line Blat.
 
-#### <span id="Blat" class="mw-headline">Blat</span>
+#### Blat
 
 You’ll need to have Blat installed and a search database with your
 genomic sequences available to make use of this feature. You can get
@@ -1425,9 +1389,9 @@ are passed verbatim to the program. In this example, we’re passing the
 `-minIdentity` parameter with a value of `60` (60% identity). See the
 Blat documentation for information of all available options.
 
-### <span id="Data_adapters" class="mw-headline">Data adapters</span>
+### Data adapters
 
-#### <span id="GFF3" class="mw-headline">GFF3</span>
+#### GFF3
 
 The GFF3 data adapter will allow exporting the current annotations as a
 GFF3 file. You can get more information about the GFF3 format at
@@ -1456,7 +1420,6 @@ look at the configuration file:
  
 </gff3_config>
 ```
-
 
 
 ``` de1
@@ -1493,7 +1456,7 @@ users to download those files). The script is in
 
     $ $WEB_APOLLO_DIR/tools/cleanup/remove_temporary_files.sh -d $TOMCAT_WEBAPPS_DIR/WebApollo/tmp -m 60
 
-#### <span id="Chado" class="mw-headline">Chado</span>
+#### Chado
 
 The Chado data adapter will allow writing the current annotations to a
 Chado database. You can get more information about the Chado at
@@ -1598,7 +1561,7 @@ privileges to the database.
 
 Password for the provided user name.
 
-## <span id="Data_generation" class="mw-headline">Data generation</span>
+## Data generation
 
 The steps for generating data (in particular static data) are mostly
 similar to [JBrowse](JBrowse.1 "JBrowse") data generation steps, with
@@ -1625,7 +1588,7 @@ WebApollo (2013-05-16 and prior), you won't need to regenerate the data,
 but you will need to run the [Adding the WebApollo
 plugin](#Adding_the_WebApollo_plugin) step.
 
-### <span id="DNA_track_setup" class="mw-headline">DNA track setup</span>
+### DNA track setup
 
 The first thing we need to do before processing our evidence is to
 generate the reference sequence data to be used by JBrowse. We'll use
@@ -1637,14 +1600,14 @@ We now have the DNA track setup. Note that you can also use a GFF3 file
 containing the genomic sequence by using the `--gff` option instead of
 `--fasta` and point it to the GFF3 file.
 
-### <span id="Adding_the_WebApollo_plugin" class="mw-headline">Adding the WebApollo plugin</span>
+### Adding the WebApollo plugin
 
 We now need to setup the data configuration to use the WebApollo plugin.
 We'll use the `add-webapollo-plugin.pl` script to do so.
 
     $ bin/add-webapollo-plugin.pl -i data/trackList.json
 
-### <span id="Static_data_generation" class="mw-headline">Static data generation</span>
+### Static data generation
 
 Generating data from GFF3 works best by having a separate GFF3 per
 source type. If your GFF3 has all source types in the same file, we need
@@ -1670,7 +1633,7 @@ an alternative approach to generating multiple static data tracks from a
 GFF3 file, which uses the biodb-to-json script and a configuration file.
 However, WebApollo is not yet compatible with that approach)
 
-#### <span id="GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features" class="mw-headline">GFF3 with gene/transcript/exon/CDS/polypeptide features</span>
+#### GFF3 with gene/transcript/exon/CDS/polypeptide features
 
 We'll start off with `maker.gff`. We need to handle that file a bit
 differently than the rest of the files since the GFF represents the
@@ -1698,7 +1661,7 @@ options for flatfile-to-json.pl, see [JBrowse data
 formatting](JBrowse_Configuration_Guide#Data_Formatting "JBrowse Configuration Guide")
 for more information.
 
-#### <span id="GFF3_with_match.2Fmatch_part_features" class="mw-headline">GFF3 with match/match_part features</span>
+#### GFF3 with match/match_part features
 
 Now we need to process the other remaining GFF3 files. The entries in
 those are stored as "match/match_part", so they can all be handled in a
@@ -1732,7 +1695,7 @@ you can always process each file manually on the command line:
 
     $ /bin/bash myscript.sh
 
-#### <span id="Generate_searchable_name_index" class="mw-headline">Generate searchable name index</span>
+#### Generate searchable name index
 
 Once data tracks have been created, you will need to generate a
 searchable index of names using the generate-names.pl script:
@@ -1749,7 +1712,7 @@ other tracks.
 The script can be also rerun after any additional tracks are generated
 if you wish feature names from that track to be added to the index.
 
-#### <span id="BAM_data" class="mw-headline">BAM data</span>
+#### BAM data
 
 Now let's look how to configure BAM support. WebApollo has native
 support for BAM, so no extra processing of the data is required.
@@ -1769,7 +1732,7 @@ Now we need to add the BAM track.
 
 You should now have a `simulated BAM` track available.
 
-#### <span id="BigWig_data" class="mw-headline">BigWig data</span>
+#### BigWig data
 
 WebApollo has native support for BigWig files (.bw), so no extra
 processing of the data is required.
@@ -1791,7 +1754,7 @@ Now we need to add the BigWig track.
 
 You should now have a `simulated BigWig` track available.
 
-### <span id="Customizing_features" class="mw-headline">Customizing features</span>
+### Customizing features
 
 The visual appearance of biological features in WebApollo (and JBrowse)
 is handled by CSS stylesheets. Every feature and subfeature is given a
@@ -1872,9 +1835,9 @@ the server to pick up all the changes (or at least restart the WebApollo
 web application). You'll also need to do this any time you change the
 configuration files (not needed when changing the data files).
 
-### <span id="Bulk_loading_annotations_to_the_user_annotation_track" class="mw-headline">Bulk loading annotations to the user annotation track</span>
+### Bulk loading annotations to the user annotation track
 
-#### <span id="GFF3_2" class="mw-headline">GFF3</span>
+#### GFF3
 
 You can use the
 `$WEB_APOLLO_DIR/tools/data/add_transcripts_from_gff3_to_annotations.pl`
@@ -1901,7 +1864,7 @@ Look at the script's help (`-h`) for all available options.
 
 Congratulations, you're done configuring WebApollo!
 
-### <span id="Upgrading_existing_instances" class="mw-headline">Upgrading existing instances</span>
+### Upgrading existing instances
 
 We suggest creating a new instance to prevent disruption to existing
 instances and to have a staging site before making the upgrade public.
@@ -1940,7 +1903,7 @@ You might also want to update `<datastore_directory>` back to
 you can continue to keep the data in the same location. It's also
 recommended that you restart Tomcat after this.
 
-# <span id="Accessing_your_WebApollo_installation" class="mw-headline">Accessing your WebApollo installation</span>
+# Accessing your WebApollo installation
 
 Let's test out our installation. Point your browser to
 ` http://SERVER_ADDRESS:8080/WebApollo `.
@@ -1969,84 +1932,3 @@ We only see one reference sequence to annotate since we're only working
 with one contig. Click on `scf1117875582023` under the `Name` column.
 
 Now have fun annotating!!!
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/WebApollo_v2013-2D09-2D04_Installation"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:35 on 14 November
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">3,276 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

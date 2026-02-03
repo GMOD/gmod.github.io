@@ -1,23 +1,7 @@
 ---
 title: "GBrowse NGS Tutorial"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse NGS Tutorial</span>
-
-
-
-
-
-
-
+# GBrowse NGS Tutorial
 
 
   
@@ -47,101 +31,74 @@ rel="nofollow">SAMtools</a> GBrowse adaptor, Bio::DB::Sam.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">VMware</span>](#VMware)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Caveats</span>](#Caveats)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">4</span> <span class="toctext">How the
+  VMware](#VMware)
+- [Caveats](#Caveats)
+- [Introduction](#Introduction)
+- [How the
   Starting Image was
-  created</span>](#How_the_Starting_Image_was_created)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Passwords</span>](#Passwords)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Fluxbox</span>](#Fluxbox)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Misc</span>](#Misc)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Bio::Graphics
-      Prerequisites</span>](#Bio::Graphics_Prerequisites)
-    - [<span class="tocnumber">4.3.3</span>
-      <span class="toctext">GBrowse 2
-      Prerequisites</span>](#GBrowse_2_Prerequisites)
-    - [<span class="tocnumber">4.3.4</span>
-      <span class="toctext">Bio::Graphics</span>](#Bio::Graphics)
-    - [<span class="tocnumber">4.3.5</span>
-      <span class="toctext">GBrowse 2</span>](#GBrowse_2)
-    - [<span class="tocnumber">4.3.6</span>
-      <span class="toctext">SAMtools</span>](#SAMtools)
-    - [<span class="tocnumber">4.3.7</span>
-      <span class="toctext">Bio::DB::Sam
-      Adaptor</span>](#Bio::DB::Sam_Adaptor)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Start</span>](#Start)
-- [<span class="tocnumber">6</span> <span class="toctext">Adding Human
-  Data</span>](#Adding_Human_Data)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Getting
-    Human Data</span>](#Getting_Human_Data)
-    - [<span class="tocnumber">6.1.1</span>
-      <span class="toctext">FASTA</span>](#FASTA)
-    - [<span class="tocnumber">6.1.2</span>
-      <span class="toctext">GFF3</span>](#GFF3)
-      - [<span class="tocnumber">6.1.2.1</span>
-        <span class="toctext">Gene Definitions in these GFF3
-        Files</span>](#Gene_Definitions_in_these_GFF3_Files)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Displaying
-    Human Data in GBrowse</span>](#Displaying_Human_Data_in_GBrowse)
-    - [<span class="tocnumber">6.2.1</span> <span class="toctext">Create
-      human.conf</span>](#Create_human.conf)
-      - [<span class="tocnumber">6.2.1.1</span>
-        <span class="toctext">What it Means</span>](#What_it_Means)
-    - [<span class="tocnumber">6.2.2</span> <span class="toctext">Create
-      the Human Database</span>](#Create_the_Human_Database)
-    - [<span class="tocnumber">6.2.3</span> <span class="toctext">Load
+  created](#How_the_Starting_Image_was_created)
+  - [Passwords](#Passwords)
+  - [Fluxbox](#Fluxbox)
+  - [Prerequisites](#Prerequisites)
+    - [Misc](#Misc)
+    - [Bio::Graphics
+      Prerequisites](#Bio::Graphics_Prerequisites)
+    - [GBrowse 2
+      Prerequisites](#GBrowse_2_Prerequisites)
+    - [Bio::Graphics](#Bio::Graphics)
+    - [GBrowse 2](#GBrowse_2)
+    - [SAMtools](#SAMtools)
+    - [Bio::DB::Sam
+      Adaptor](#Bio::DB::Sam_Adaptor)
+- [Start](#Start)
+- [Adding Human
+  Data](#Adding_Human_Data)
+  - [Getting
+    Human Data](#Getting_Human_Data)
+    - [FASTA](#FASTA)
+    - [GFF3](#GFF3)
+      - [Gene Definitions in these GFF3
+        Files](#Gene_Definitions_in_these_GFF3_Files)
+  - [Displaying
+    Human Data in GBrowse](#Displaying_Human_Data_in_GBrowse)
+    - [Create
+      human.conf](#Create_human.conf)
+      - [What it Means](#What_it_Means)
+    - [Create
+      the Human Database](#Create_the_Human_Database)
+    - [Load
       the Gene Models and
-      Sequence</span>](#Load_the_Gene_Models_and_Sequence)
-    - [<span class="tocnumber">6.2.4</span> <span class="toctext">Tell
+      Sequence](#Load_the_Gene_Models_and_Sequence)
+    - [Tell
       GBrowse About the new Human
-      Data</span>](#Tell_GBrowse_About_the_new_Human_Data)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Test
-    It</span>](#Test_It)
-- [<span class="tocnumber">7</span> <span class="toctext">Add Short Read
-  Data</span>](#Add_Short_Read_Data)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Unmunge
-    the data</span>](#Unmunge_the_data)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Convert
-    Munged SAM to a BAM</span>](#Convert_Munged_SAM_to_a_BAM)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Copy the
+      Data](#Tell_GBrowse_About_the_new_Human_Data)
+  - [Test
+    It](#Test_It)
+- [Add Short Read
+  Data](#Add_Short_Read_Data)
+  - [Unmunge
+    the data](#Unmunge_the_data)
+  - [Convert
+    Munged SAM to a BAM](#Convert_Munged_SAM_to_a_BAM)
+  - [Copy the
     BAM files to where GBrowse can see
-    them</span>](#Copy_the_BAM_files_to_where_GBrowse_can_see_them)
-  - [<span class="tocnumber">7.4</span> <span class="toctext">Tell
+    them](#Copy_the_BAM_files_to_where_GBrowse_can_see_them)
+  - [Tell
     GBrowse About the SAM
-    Files</span>](#Tell_GBrowse_About_the_SAM_Files)
-    - [<span class="tocnumber">7.4.1</span>
-      <span class="toctext">Displaying Summary
-      Data</span>](#Displaying_Summary_Data)
-    - [<span class="tocnumber">7.4.2</span>
-      <span class="toctext">Showing Individual
-      Reads</span>](#Showing_Individual_Reads)
-    - [<span class="tocnumber">7.4.3</span>
-      <span class="toctext">Showing Mapping
-      Quality</span>](#Showing_Mapping_Quality)
-    - [<span class="tocnumber">7.4.4</span>
-      <span class="toctext">Showing Paired End
-      Reads</span>](#Showing_Paired_End_Reads)
-
+    Files](#Tell_GBrowse_About_the_SAM_Files)
+    - [Displaying Summary
+      Data](#Displaying_Summary_Data)
+    - [Showing Individual
+      Reads](#Showing_Individual_Reads)
+    - [Showing Mapping
+      Quality](#Showing_Mapping_Quality)
+    - [Showing Paired End
+      Reads](#Showing_Paired_End_Reads)
 
 
   
 
-## <span id="VMware" class="mw-headline">VMware</span>
+## VMware
 
 This tutorial was taught using a VMware system image
 as a starting point. If you want to start with the same system, download
@@ -175,8 +132,7 @@ Password: gmod</p></td>
 </tbody>
 </table>
 
-## <span id="Caveats" class="mw-headline">Caveats</span>
-
+## Caveats
 
 
 **Important Note**
@@ -189,10 +145,9 @@ over time. Newer versions of tutorials will be posted as they become
 available.
 
 
-
   
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 The tutorial will show how to display [next generation
 sequence](Next_Generation_Sequencing "Next Generation Sequencing") (NGS)
@@ -202,7 +157,7 @@ rel="nofollow">SAMtools</a>. We'll use the example human data that comes
 with SAMtools to do that. First we'll load the reference sequence and
 some gene models.
 
-## <span id="How_the_Starting_Image_was_created" class="mw-headline">How the Starting Image was created</span>
+## How the Starting Image was created
 
 The starting VMware image was created by starting with the starting
 image used in the [2009 GMOD Summer School -
@@ -214,21 +169,18 @@ GBrowse 2 is already up and running on the image. This tutorial tells
 you how to add human data to the default installation, and then how to
 add NGS data to it, in the form of a Bio::DB::Sam/SAMtools database.
 
-### <span id="Passwords" class="mw-headline">Passwords</span>
+### Passwords
 
 - Login: gmod
 - Password: gmod
-
-<!-- -->
-
 - MySQL root password: none
 
-### <span id="Fluxbox" class="mw-headline">Fluxbox</span>
+### Fluxbox
 
 The VMware uses the minimal Fluxbox GUI. Some details will be explained
 here.
 
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 This sections describes what additional prerequisites were installed on
 the starting image to enable GBrowse 2 and SAMtools.
@@ -236,7 +188,7 @@ the starting image to enable GBrowse 2 and SAMtools.
 **Everything described in this section has already been installed on the
 starting image.** This section is merely provided for your information.
 
-#### <span id="Misc" class="mw-headline">Misc</span>
+#### Misc
 
 This section describes the installation Synaptic is a graphical version
 of the apt-get package manager for Debian based systems. Emacs is my
@@ -271,7 +223,7 @@ and update everything:
 And the apply step runs for ages. Once that finishes, restart the
 virtual machine.
 
-#### <span id="Bio::Graphics_Prerequisites" class="mw-headline">Bio::Graphics Prerequisites</span>
+#### Bio::Graphics Prerequisites
 
     sudo perl -MCPAN -e shell
     install Text::ParseWords
@@ -280,7 +232,7 @@ virtual machine.
 Don't install Bio::SCF. It has to do with Staden trace visualization. We
 won't be showing any.
 
-#### <span id="GBrowse_2_Prerequisites" class="mw-headline">GBrowse 2 Prerequisites</span>
+#### GBrowse 2 Prerequisites
 
 From the shell
 
@@ -289,7 +241,7 @@ From the shell
     sudo apt-get install libjson-perl libjson-any-perl
     sudo apt-get install mysql-client libmysqlclient15-dev
 
-#### <span id="Bio::Graphics" class="mw-headline">Bio::Graphics</span>
+#### Bio::Graphics
 
 Download the latest Bio::Graphics from CPAN.
 
@@ -308,7 +260,7 @@ Download the latest Bio::Graphics from CPAN.
 
 Ignoring Bio:SCF warnings. This install process takes 1-2 minutes.
 
-#### <span id="GBrowse_2" class="mw-headline">GBrowse 2</span>
+#### GBrowse 2
 
     cd ~/BA2009/
     mkdir GBrowse2
@@ -368,7 +320,7 @@ rel="nofollow">http://172.16.108.129/gbrowse2/</a>
 
 GBrowse 2 is installed and the default datasources appear to work.
 
-#### <span id="SAMtools" class="mw-headline">SAMtools</span>
+#### SAMtools
 
 Need to have `libbam.a` which means we need to a source install of
 SAMtools.
@@ -381,7 +333,6 @@ SAMtools.
     cd samtools-0.1.6/
 
 The INSTALL file says:
-
 
 
 System Requirements
@@ -415,7 +366,6 @@ location you want (e.g. a directory in your \$PATH). No further
 configurations are required.
 
 
-
 So
 
     make
@@ -440,7 +390,7 @@ home/gmod/BA2009/SAMtools/samtools-0.1.6 directory.
 
   
 
-#### <span id="Bio::DB::Sam_Adaptor" class="mw-headline">Bio::DB::Sam Adaptor</span>
+#### Bio::DB::Sam Adaptor
 
     cd ~/BA2009/
     mkdir GBrowse-Adaptors
@@ -451,7 +401,6 @@ home/gmod/BA2009/SAMtools/samtools-0.1.6 directory.
 From the README file:
 
 
-
 Then set the environment variable SAMTOOLS to point to this directory
 and run:
 
@@ -459,7 +408,6 @@ and run:
      ./Build
      ./Build test
      (sudo) ./Build install
-
 
 
 Where is SAMTOOLS?
@@ -547,7 +495,7 @@ If this is the case go back to SAM tools folder and recompile with the
     make clean
     make CXXFLAGS=-fPIC CFLAGS=-fPIC CPPFLAGS=-fPIC
 
-## <span id="Start" class="mw-headline">Start</span>
+## Start
 
 Everything above this point describes how the starting image was
 created. You can now start the tutorial.
@@ -555,7 +503,7 @@ created. You can now start the tutorial.
 If you haven't done so already, download the starting image for this
 image, unpack it, and start it.
 
-## <span id="Adding_Human_Data" class="mw-headline">Adding Human Data</span>
+## Adding Human Data
 
 SAMtools comes with some example data covering small parts of human
 chromosomes 2 and 20. This section describes how to add a GBrowse
@@ -567,7 +515,7 @@ short read data using
 <a href="http://samtools.sourceforge.net" class="external text"
 rel="nofollow">SAMtools</a>.
 
-### <span id="Getting_Human_Data" class="mw-headline">Getting Human Data</span>
+### Getting Human Data
 
 **Note:** The FASTA and GFF3 files described here have already been
 downloaded into the starting VMware image.
@@ -576,7 +524,7 @@ It would be nice to show context, such as the reference sequence and
 predicted genes, with our short reads. To do this we will need to get
 GFF3 with gene models, and FASTA for the sequence. We can do that.
 
-#### <span id="FASTA" class="mw-headline">FASTA</span>
+#### FASTA
 
 At UCSC, build 36.1 is available by chromosome:
 
@@ -618,7 +566,7 @@ This should say the names of the sequences are "chr2" and "chr20". This
 matters because the chromosome names occur in several places and serve
 to tie everything together.
 
-#### <span id="GFF3" class="mw-headline">GFF3</span>
+#### GFF3
 
 [GFF3](GFF3 "GFF3") is a widely used standard format for genomic
 annotation.
@@ -636,11 +584,9 @@ the GFF3 for human chromosomes 2 and 3 available, and he did:
     wget http://www.compbio.ox.ac.uk/data/HUMAN_HG18/ensembl/chr20_ens_annots.gff
 
 
-
 - Everything up to here has already been done in the starting VMware
   image.
 - Now we start doing things.
-
 
 
   
@@ -679,7 +625,7 @@ tabs:
 
   
 
-##### <span id="Gene_Definitions_in_these_GFF3_Files" class="mw-headline">Gene Definitions in these GFF3 Files</span>
+##### Gene Definitions in these GFF3 Files
 
 An example gene definition from the GFF3
 
@@ -703,12 +649,12 @@ Columns
 
 Genes are defined as mRNAs containing one or more exons, in this file.
 
-### <span id="Displaying_Human_Data_in_GBrowse" class="mw-headline">Displaying Human Data in GBrowse</span>
+### Displaying Human Data in GBrowse
 
 Now that we have our reference sequence and the Ensembl gene models for
 chromosomes 2 and 20, lets show them.
 
-#### <span id="Create_human.conf" class="mw-headline">Create human.conf</span>
+#### Create human.conf
 
 First we need to create a new configuration file for our human data.
 GBrowse configuration files on Debian based systems go in
@@ -831,7 +777,7 @@ initial contents of the file:
     category       = Basic features
     key            = Ensembl predicted genes
 
-##### <span id="What_it_Means" class="mw-headline">What it Means</span>
+##### What it Means
 
 Lets go over some of the more important sections.
 
@@ -925,9 +871,6 @@ Lets go over some of the more important sections.
 - The "so_transcript" is also smart and knows how to display multi-part
   features.
 - Genes are defined in the GFF as mRNAs containing one or more exons.
-
-<!-- -->
-
 - This track definition is more typical then the DNA and Translation
   tracks.
 - Of particular importance is:
@@ -952,7 +895,7 @@ The file also contains information on popups and hovering. This is
 leftover from the original yeast file. I'm not going to talk about it,
 but we'll leave it there because it is nice to have.
 
-#### <span id="Create_the_Human_Database" class="mw-headline">Create the Human Database</span>
+#### Create the Human Database
 
 In the `human.conf` file, we told GBrowse that the data would come from
 a [MySQL](MySQL "MySQL") database called "human":
@@ -973,7 +916,7 @@ We now have to create it:
 "www-data" is the Apache user on Ubuntu. When GBrowse runs, by default
 it will run as the same user as Apache.
 
-#### <span id="Load_the_Gene_Models_and_Sequence" class="mw-headline">Load the Gene Models and Sequence</span>
+#### Load the Gene Models and Sequence
 
 The database now exists, but it's empty.
 
@@ -1011,7 +954,7 @@ that uses that module to load it.
     bp_seqfeature_load.pl -c -f -d human chr2_ens_annots.gff chr2.fa 2>&1 | tee /tmp/bpsl.log1
     bp_seqfeature_load.pl -f -d human chr20_ens_annots.gff chr20.fa 2>&1 | tee /tmp/bpsl.log2
 
-#### <span id="Tell_GBrowse_About_the_new_Human_Data" class="mw-headline">Tell GBrowse About the new Human Data</span>
+#### Tell GBrowse About the new Human Data
 
 GBrowse data sources (that is, different instances of GBrowse on your
 server) are defined in
@@ -1028,7 +971,7 @@ Edit that file and add this stanza at the end:
     description  = Human Chromosomes 2 and 20
     path         = human.conf
 
-### <span id="Test_It" class="mw-headline">Test It</span>
+### Test It
 
 You can either do this from Firefox inside your VMware image, or you can
 do it from a browser in your host operating system.
@@ -1063,7 +1006,7 @@ width="600" height="553" alt="GBrowseSAMtools1.png" />
 Play around with it a little. Enable different tracks, scroll and zoom
 in and out.
 
-## <span id="Add_Short_Read_Data" class="mw-headline">Add Short Read Data</span>
+## Add Short Read Data
 
 We now have a GBrowse instance that shows human chromosomes 2 and 20. If
 we had other annotation we wanted to show, we could add it incrementally
@@ -1075,7 +1018,6 @@ be found in
     /home/gmod/BA2009/SAMtools/samtools-0.1.6/examples/
 
 The `00README.txt` says:
-
 
 
 File `ex1.fa` contains two sequences cut from the human genome build36.
@@ -1102,7 +1044,6 @@ To try samtools, you may run the following commands:
      samtools pileup -cf ex1.fa -t ex1.fa.fai ex1.sam.gz
 
 
-
 Well, **crap!**
 
 If you read that carefully, it looks like the short read data has been
@@ -1121,7 +1062,7 @@ Sure enough the RNAME column (col 3) is "seq1" when we want it to be
 "chr2" and the POS and MPOS columns (cols 4 & 8) are 1 and 0, when we
 want them to be 2043966 and 2043965 (or something like that).
 
-### <span id="Unmunge_the_data" class="mw-headline">Unmunge the data</span>
+### Unmunge the data
 
 So, we write a quick and dirty script to fix the file:
 
@@ -1197,14 +1138,12 @@ And run it:
     chmod 755 relocate.py
     ./relocate.py
 
-### <span id="Convert_Munged_SAM_to_a_BAM" class="mw-headline">Convert Munged SAM to a BAM</span>
-
+### Convert Munged SAM to a BAM
 
 
 - SAM is a human readable text format.
 - GBrowse expects to find SAM data in BAM format, a binary, indexed and
   highly compressed format.
-
 
 
 Now we invoke some SAMtools magic.
@@ -1227,7 +1166,7 @@ SAM to BAM:
     $SAMTOOLS/samtools import chr2_20.fa.fai ex1.sam ex1.bam
     [sam_header_read2] 2 sequences loaded.
 
-### <span id="Copy_the_BAM_files_to_where_GBrowse_can_see_them" class="mw-headline">Copy the BAM files to where GBrowse can see them</span>
+### Copy the BAM files to where GBrowse can see them
 
 The GBrowse SAMtools adaptor does expect to find the files in a
 particular directory. Create one in the usual place:
@@ -1238,7 +1177,7 @@ particular directory. Create one in the usual place:
     sudo cp chr2_20.fa /var/www/gbrowse2/databases/humansam/
     sudo cp ex1.bam /var/www/gbrowse2/databases/humansam/
 
-### <span id="Tell_GBrowse_About_the_SAM_Files" class="mw-headline">Tell GBrowse About the SAM Files</span>
+### Tell GBrowse About the SAM Files
 
 To do this update the config file for human at:
 
@@ -1256,7 +1195,7 @@ right below the existing one:
 This tells GBrowse that there is a second database to get things from,
 where to find it, and to use the Bio::DB::Sam adaptor to read it in.
 
-#### <span id="Displaying_Summary_Data" class="mw-headline">Displaying Summary Data</span>
+#### Displaying Summary Data
 
 Next, add in a track to show read coverage as an XY plot. At the bottom
 of the file add:
@@ -1313,7 +1252,7 @@ the end of the config file:
 Save your changes, and hit the "**\[Reset\]**" link again. You will now
 have a "Coverage (density plot)" track you can turn on. Turn it on.
 
-#### <span id="Showing_Individual_Reads" class="mw-headline">Showing Individual Reads</span>
+#### Showing Individual Reads
 
 You can also show the individual reads. Add this clause at the end of
 `/etc/gbrowse2/human.conf`:
@@ -1346,7 +1285,7 @@ width="600" height="900" alt="GBrowseSAMtoolsReads1.png" />
 Zoom in. When you get close to about 100bp resolution, you'll see the
 individual base pairs, and mismatches will be highlighted in red.
 
-#### <span id="Showing_Mapping_Quality" class="mw-headline">Showing Mapping Quality</span>
+#### Showing Mapping Quality
 
 A lot of people want to show individual base read quality. We can't do
 that yet, but we do have programmatic access to the individual reads and
@@ -1379,7 +1318,7 @@ light blue.
 
 Give it a go.
 
-#### <span id="Showing_Paired_End_Reads" class="mw-headline">Showing Paired End Reads</span>
+#### Showing Paired End Reads
 
 Finally, the example data is for paired end reads. To visualize the
 pairings add this stanza at the end of the config file:
@@ -1411,13 +1350,10 @@ pairings add this stanza at the end of the config file:
 Reset GBrowse and test this.
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -1427,86 +1363,3 @@ Tutorial](Special%253ABrowse/GBrowse-20NGS-20Tutorial "Special%253ABrowse/GBrows
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/GBrowse "Special%253ASearchByProperty/Has-20topic/GBrowse")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_NGS_Tutorial" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_NGS_Tutorial" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:11 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">193,443 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

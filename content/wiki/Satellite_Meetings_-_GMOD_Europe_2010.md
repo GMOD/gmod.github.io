@@ -1,23 +1,7 @@
 ---
 title: "Satellite Meetings - GMOD Europe 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Satellite Meetings - GMOD Europe 2010</span>
-
-
-
-
-
-
-
+# Satellite Meetings - GMOD Europe 2010
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
@@ -77,25 +61,15 @@ so popular that we decided to hold them again.
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Satellite
   Topics</span>](#Satellite_Topics)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Sponsors</span>](#Sponsors)
-- [<span class="tocnumber">4</span> <span class="toctext">Lodging and
-  Other Logistics</span>](#Lodging_and_Other_Logistics)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Registration</span>](#Registration)
+- [Participants](#Participants)
+- [Sponsors](#Sponsors)
+- [Lodging and
+  Other Logistics](#Lodging_and_Other_Logistics)
+- [Registration](#Registration)
 
 
-## <span id="Satellite_Topics" class="mw-headline">Satellite Topics</span>
+## Satellite Topics
 
 We discussed
 
@@ -112,7 +86,7 @@ rel="nofollow">writeup of these summaries</a> by Mary Mangan on the
 <a href="http://blog.openhelix.eu/" class="external text"
 rel="nofollow">OpenHelix blog</a>.
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
@@ -141,8 +115,7 @@ href="http://www.mdc-berlin.de/en/research/core_facilities/cf_bioinformatic/team
 class="external free"
 rel="nofollow">http://www.mdc-berlin.de/en/research/core_facilities/cf_bioinformatic/teammember/index.html</a> |
 
-## <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+## Sponsors
 
 
 <a href="http://www.ccbi.cam.ac.uk/" rel="nofollow"
@@ -161,7 +134,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/285px-CambridgeWide.gif 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/CambridgeWide.gif/380px-CambridgeWide.gif 2x"
 width="190" height="55"
 alt="School of Biological Sciences Bioinformatics Training Facility" /></a>
-
 
 
 This event was sponsored by the
@@ -190,98 +162,17 @@ coffee, tea, and break snacks at no charge. Please thank Gos Micklem,
 [Richard Smith](User%253ARsmith "User%253ARsmith"), Shelley Lawson, and Dave
 Judge profusely every time you see them.
 
-## <span id="Lodging_and_Other_Logistics" class="mw-headline">Lodging and Other Logistics</span>
+## Lodging and Other Logistics
 
 See the [Logistics
 section](GMOD_Europe_2010#Logistics "GMOD Europe 2010") on the GMOD
 Europe 2010 page for information.
 
-## <span id="Registration" class="mw-headline">Registration</span>
+## Registration
 
 Registration was free, but required, as space was limited.
-
-
 
 
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Satellite_Meetings_-2D_GMOD_Europe_2010"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:55 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">82,572 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "August 2009 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">August 2009 GMOD Meeting</span>
-
-
-
-
-
-
-
+# August 2009 GMOD Meeting
 
 
 <table
@@ -68,163 +52,127 @@ learn (and affect) what's coming in the project.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Schedule</span>](#Schedule)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Presentations</span>](#Presentations)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">GMOD
-    Project Talks</span>](#GMOD_Project_Talks)
-    - [<span class="tocnumber">2.1.1</span> <span class="toctext">HHMI
+  Schedule](#Schedule)
+- [Presentations](#Presentations)
+  - [GMOD
+    Project Talks](#GMOD_Project_Talks)
+    - [HHMI
       Science Education
-      Alliance</span>](#HHMI_Science_Education_Alliance)
-    - [<span class="tocnumber">2.1.2</span> <span class="toctext">What's
-      new</span>](#What.27s_new)
-    - [<span class="tocnumber">2.1.3</span> <span class="toctext">GMOD
-      Summer School</span>](#GMOD_Summer_School)
-    - [<span class="tocnumber">2.1.4</span>
-      <span class="toctext">Outreach</span>](#Outreach)
-    - [<span class="tocnumber">2.1.5</span> <span class="toctext">GMOD
-      Community Surveys</span>](#GMOD_Community_Surveys)
-    - [<span class="tocnumber">2.1.6</span>
-      <span class="toctext">Upcoming GMOD
-      Hackathon ?</span>](#Upcoming_GMOD_Hackathon_.3F)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Linked
-    Data for GMOD Databases</span>](#Linked_Data_for_GMOD_Databases)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">OpenFlyData</span>](#OpenFlyData)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">Open-BioMed</span>](#Open-BioMed)
-    - [<span class="tocnumber">2.2.3</span> <span class="toctext">RDF &
+      Alliance](#HHMI_Science_Education_Alliance)
+    - [What's
+      new](#What.27s_new)
+    - [GMOD
+      Summer School](#GMOD_Summer_School)
+    - [Outreach](#Outreach)
+    - [GMOD
+      Community Surveys](#GMOD_Community_Surveys)
+    - [Upcoming GMOD
+      Hackathon ?](#Upcoming_GMOD_Hackathon_.3F)
+  - [Linked
+    Data for GMOD Databases](#Linked_Data_for_GMOD_Databases)
+    - [OpenFlyData](#OpenFlyData)
+    - [Open-BioMed](#Open-BioMed)
+    - [RDF &
       SPARQL: Benefits &
-      Risks</span>](#RDF_.26_SPARQL:_Benefits_.26_Risks)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">GMOD in
-    the Trenches</span>](#GMOD_in_the_Trenches)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">GBrowse at CBRG</span>](#GBrowse_at_CBRG)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">Extending
-      GBrowse</span>](#Extending_GBrowse)
-    - [<span class="tocnumber">2.3.3</span> <span class="toctext">Make
+      Risks](#RDF_.26_SPARQL:_Benefits_.26_Risks)
+  - [GMOD in
+    the Trenches](#GMOD_in_the_Trenches)
+    - [GBrowse at CBRG](#GBrowse_at_CBRG)
+    - [Extending
+      GBrowse](#Extending_GBrowse)
+    - [Make
       Existing GBrowse More Useful to External
-      Developers</span>](#Make_Existing_GBrowse_More_Useful_to_External_Developers)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">A DBIx
-    Class layer for Chado</span>](#A_DBIx_Class_layer_for_Chado)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">GMOD
-    Biological Object Layer</span>](#GMOD_Biological_Object_Layer)
-    - [<span class="tocnumber">2.5.1</span> <span class="toctext">GBOL
-      Architecture</span>](#GBOL_Architecture)
-    - [<span class="tocnumber">2.5.2</span>
-      <span class="toctext">Biological Layer
-      Configuration</span>](#Biological_Layer_Configuration)
-    - [<span class="tocnumber">2.5.3</span> <span class="toctext">Future
-      Developments</span>](#Future_Developments)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">A Restful
-    interface for MODs</span>](#A_Restful_interface_for_MODs)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Quest for
+      Developers](#Make_Existing_GBrowse_More_Useful_to_External_Developers)
+  - [A DBIx
+    Class layer for Chado](#A_DBIx_Class_layer_for_Chado)
+  - [GMOD
+    Biological Object Layer](#GMOD_Biological_Object_Layer)
+    - [GBOL
+      Architecture](#GBOL_Architecture)
+    - [Biological Layer
+      Configuration](#Biological_Layer_Configuration)
+    - [Future
+      Developments](#Future_Developments)
+  - [A Restful
+    interface for MODs](#A_Restful_interface_for_MODs)
+  - [Quest for
     Standard: Sequence alignment/map format (SAM) and
-    SAMtools</span>](#Quest_for_Standard:_Sequence_alignment.2Fmap_format_.28SAM.29_and_SAMtools)
-    - [<span class="tocnumber">2.7.1</span> <span class="toctext">Quest
-      for Standards</span>](#Quest_for_Standards)
-    - [<span class="tocnumber">2.7.2</span> <span class="toctext">SAM
-      Format</span>](#SAM_Format)
-    - [<span class="tocnumber">2.7.3</span> <span class="toctext">BAM
-      Format</span>](#BAM_Format)
-    - [<span class="tocnumber">2.7.4</span> <span class="toctext">APIs,
+    SAMtools](#Quest_for_Standard:_Sequence_alignment.2Fmap_format_.28SAM.29_and_SAMtools)
+    - [Quest
+      for Standards](#Quest_for_Standards)
+    - [SAM
+      Format](#SAM_Format)
+    - [BAM
+      Format](#BAM_Format)
+    - [APIs,
       Implementations and Supported
-      Platforms</span>](#APIs.2C_Implementations_and_Supported_Platforms)
-    - [<span class="tocnumber">2.7.5</span>
-      <span class="toctext">Displaying
-      Alignments</span>](#Displaying_Alignments)
-  - [<span class="tocnumber">2.8</span>
-    <span class="toctext">Visualising NGS Data in GBrowse
-    2</span>](#Visualising_NGS_Data_in_GBrowse_2)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">GBrowse:
+      Platforms](#APIs.2C_Implementations_and_Supported_Platforms)
+    - [Displaying
+      Alignments](#Displaying_Alignments)
+  - [Visualising NGS Data in GBrowse
+    2](#Visualising_NGS_Data_in_GBrowse_2)
+  - [GBrowse:
     Lessons Learned and Statement of
-    Interest</span>](#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
-    - [<span class="tocnumber">2.9.1</span>
-      <span class="toctext">History and Current GBrowse
-      Infrastructure</span>](#History_and_Current_GBrowse_Infrastructure)
-    - [<span class="tocnumber">2.9.2</span>
-      <span class="toctext">Statement of Interest: Requirements and
-      Needs</span>](#Statement_of_Interest:_Requirements_and_Needs)
-      - [<span class="tocnumber">2.9.2.1</span>
-        <span class="toctext">GBrowse Database
-        Adaptors</span>](#GBrowse_Database_Adaptors)
-      - [<span class="tocnumber">2.9.2.2</span>
-        <span class="toctext">GBrowse User
-        Interaction</span>](#GBrowse_User_Interaction)
-      - [<span class="tocnumber">2.9.2.3</span>
-        <span class="toctext">GBrowse Configuration
-        Files</span>](#GBrowse_Configuration_Files)
-      - [<span class="tocnumber">2.9.2.4</span>
-        <span class="toctext">Metadata Web
-        Services</span>](#Metadata_Web_Services)
-    - [<span class="tocnumber">2.9.3</span>
-      <span class="toctext">Conclusion /
-      Discussion</span>](#Conclusion_.2F_Discussion)
-  - [<span class="tocnumber">2.10</span>
-    <span class="toctext">JBrowse</span>](#JBrowse)
-  - [<span class="tocnumber">2.11</span>
-    <span class="toctext">GBrowse_syn</span>](#GBrowse_syn)
-    - [<span class="tocnumber">2.11.1</span> <span class="toctext">Other
-      GMOD Synteny Viewers</span>](#Other_GMOD_Synteny_Viewers)
-    - [<span class="tocnumber">2.11.2</span>
-      <span class="toctext">GBrowse_syn</span>](#GBrowse_syn_2)
-    - [<span class="tocnumber">2.11.3</span> <span class="toctext">Where
+    Interest](#GBrowse:_Lessons_Learned_and_Statement_of_Interest)
+    - [History and Current GBrowse
+      Infrastructure](#History_and_Current_GBrowse_Infrastructure)
+    - [Statement of Interest: Requirements and
+      Needs](#Statement_of_Interest:_Requirements_and_Needs)
+      - [GBrowse Database
+        Adaptors](#GBrowse_Database_Adaptors)
+      - [GBrowse User
+        Interaction](#GBrowse_User_Interaction)
+      - [GBrowse Configuration
+        Files](#GBrowse_Configuration_Files)
+      - [Metadata Web
+        Services](#Metadata_Web_Services)
+    - [Conclusion /
+      Discussion](#Conclusion_.2F_Discussion)
+  - [JBrowse](#JBrowse)
+  - [GBrowse_syn](#GBrowse_syn)
+    - [Other
+      GMOD Synteny Viewers](#Other_GMOD_Synteny_Viewers)
+    - [GBrowse_syn](#GBrowse_syn_2)
+    - [Where
       do I get data for
-      GBrowse_syn?</span>](#Where_do_I_get_data_for_GBrowse_syn.3F)
-    - [<span class="tocnumber">2.11.4</span> <span class="toctext">Using
-      GBrowse_syn</span>](#Using_GBrowse_syn)
-    - [<span class="tocnumber">2.11.5</span>
-      <span class="toctext">Future
-      Developments</span>](#Future_Developments_2)
-  - [<span class="tocnumber">2.12</span>
-    <span class="toctext">GBrowse.org</span>](#GBrowse.org)
-  - [<span class="tocnumber">2.13</span> <span class="toctext">DAS
-    update</span>](#DAS_update)
-    - [<span class="tocnumber">2.13.1</span> <span class="toctext">DAS
-      1.6E</span>](#DAS_1.6E)
-    - [<span class="tocnumber">2.13.2</span> <span class="toctext">DAS
-      Registry</span>](#DAS_Registry)
-    - [<span class="tocnumber">2.13.3</span>
-      <span class="toctext">Current and Future
-      Work</span>](#Current_and_Future_Work)
-    - [<span class="tocnumber">2.13.4</span>
-      <span class="toctext">*Some*
-      Implementations</span>](#Some_Implementations)
-  - [<span class="tocnumber">2.14</span> <span class="toctext">InterMine
-    update</span>](#InterMine_update)
-    - [<span class="tocnumber">2.14.1</span>
-      <span class="toctext">Mines4Mods</span>](#Mines4Mods)
-  - [<span class="tocnumber">2.15</span> <span class="toctext">Show and
-    Tell, Discussion</span>](#Show_and_Tell.2C_Discussion)
-- [<span class="tocnumber">3</span> <span class="toctext">Agenda
-  Suggestions</span>](#Agenda_Suggestions)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Location</span>](#Location)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Lodging</span>](#Lodging)
-- [<span class="tocnumber">6</span> <span class="toctext">Cost and
-  Registration</span>](#Cost_and_Registration)
-- [<span class="tocnumber">7</span> <span class="toctext">Mailing
-  List</span>](#Mailing_List)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Sponsor</span>](#Sponsor)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">Attendees</span>](#Attendees)
-- [<span class="tocnumber">10</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">11</span> <span class="toctext">Next Meeting:
+      GBrowse_syn?](#Where_do_I_get_data_for_GBrowse_syn.3F)
+    - [Using
+      GBrowse_syn](#Using_GBrowse_syn)
+    - [Future
+      Developments](#Future_Developments_2)
+  - [GBrowse.org](#GBrowse.org)
+  - [DAS
+    update](#DAS_update)
+    - [DAS
+      1.6E](#DAS_1.6E)
+    - [DAS
+      Registry](#DAS_Registry)
+    - [Current and Future
+      Work](#Current_and_Future_Work)
+    - [*Some*
+      Implementations](#Some_Implementations)
+  - [InterMine
+    update](#InterMine_update)
+    - [Mines4Mods](#Mines4Mods)
+  - [Show and
+    Tell, Discussion](#Show_and_Tell.2C_Discussion)
+- [Agenda
+  Suggestions](#Agenda_Suggestions)
+- [Location](#Location)
+- [Lodging](#Lodging)
+- [Cost and
+  Registration](#Cost_and_Registration)
+- [Mailing
+  List](#Mailing_List)
+- [Sponsor](#Sponsor)
+- [Attendees](#Attendees)
+- [Feedback](#Feedback)
+- [Next Meeting:
   January 2010 in San Diego
-  California</span>](#Next_Meeting:_January_2010_in_San_Diego_California)
+  California](#Next_Meeting:_January_2010_in_San_Diego_California)
 
 
-
-# <span id="Schedule" class="mw-headline">Schedule</span>
+# Schedule
 
 
 Heng Li
@@ -232,7 +180,6 @@ Heng Li
 
 <a href="http://www.sanger.ac.uk" class="external text"
 rel="nofollow">Wellcome Trust Sanger Institute</a>
-
 
 
   
@@ -251,7 +198,6 @@ including
 rel="nofollow">SAMtools</a>, BWA, and
 <a href="http://maq.sourceforge.net" class="external text"
 rel="nofollow">MAQ</a>.
-
 
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
@@ -307,82 +253,3 @@ href="#GMOD_Project_Talks">Summary</a></td>
 title="User%253AClements">Dave Clements</a> 
 - [Semantic web](Category%253ASemantic_web "Category%253ASemantic web")
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/August_2009_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:37 on 4 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">1,004,647 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

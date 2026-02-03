@@ -1,23 +1,7 @@
 ---
 title: "Running a GBrowse2 render farm"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Running a GBrowse2 render farm</span>
-
-
-
-
-
-
-
+# Running a GBrowse2 render farm
 
 
 [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2") can be configured
@@ -31,33 +15,26 @@ addition, you may assign multiple slaves to tracks, in which case the
 load will be distributed across each slave in a round-robin fashion.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">Common
-  Configurations</span>](#Common_Configurations)
-- [<span class="tocnumber">3</span> <span class="toctext">Slave
-  Setup</span>](#Slave_Setup)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Installing
+  Introduction](#Introduction)
+- [Common
+  Configurations](#Common_Configurations)
+- [Slave
+  Setup](#Slave_Setup)
+  - [Installing
     the GBrowse Slave
-    Software</span>](#Installing_the_GBrowse_Slave_Software)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Running
-    the Render Slave Daemon</span>](#Running_the_Render_Slave_Daemon)
-- [<span class="tocnumber">4</span> <span class="toctext">Master
-  Setup</span>](#Master_Setup)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Using
-    \[TRACK DEFAULTS\]</span>](#Using_.5BTRACK_DEFAULTS.5D)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">The
-    slave_preload.conf file</span>](#The_slave_preload.conf_file)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Troubleshooting</span>](#Troubleshooting)
+    Software](#Installing_the_GBrowse_Slave_Software)
+  - [Running
+    the Render Slave Daemon](#Running_the_Render_Slave_Daemon)
+- [Master
+  Setup](#Master_Setup)
+  - [Using
+    \[TRACK DEFAULTS\]](#Using_.5BTRACK_DEFAULTS.5D)
+  - [The
+    slave_preload.conf file](#The_slave_preload.conf_file)
+- [Troubleshooting](#Troubleshooting)
 
 
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 Configuration of a render slave is minimal. All the datasource-specific
 information is stored in the central GBrowse script (known as the
@@ -76,8 +53,7 @@ common filesystem such as NFS. An additional limitation is that all
 plugins and uploaded files will be rendered on the master, and cannot be
 offloaded to render slaves.
 
-## <span id="Common_Configurations" class="mw-headline">Common Configurations</span>
-
+## Common Configurations
 
 
 <table>
@@ -90,7 +66,6 @@ offloaded to render slaves.
 <td>
 
 
-
 Figure 4:Multiple servers with private databases
 
 
@@ -98,7 +73,6 @@ Figure 4:Multiple servers with private databases
 </tr>
 </tbody>
 </table>
-
 
 
 Figures 1 through 4 illustrate common render slave configurations. In
@@ -147,14 +121,14 @@ across the Internet. However, there is no particular authentication or
 authorization mechanism built into the slaves, so it is recommended that
 they be run on a protected LAN.
 
-## <span id="Slave_Setup" class="mw-headline">Slave Setup</span>
+## Slave Setup
 
 To set up a GBrowse renderfarm, you will need to install and configure
 slaves on each physical server you plan to use, arrange for the slaves
 to launch at boot time, and configure the master server to use the
 slaves.
 
-### <span id="Installing_the_GBrowse_Slave_Software" class="mw-headline">Installing the GBrowse Slave Software</span>
+### Installing the GBrowse Slave Software
 
 The GBrowse render slave is a small perl script named *gbrowse_slave*.
 Most of its functionality is contained in various Perl modules that are
@@ -186,7 +160,7 @@ run a slave.
 
   
 
-### <span id="Running_the_Render_Slave_Daemon" class="mw-headline">Running the Render Slave Daemon</span>
+### Running the Render Slave Daemon
 
 The slave usually runs as a daemon, listening on a designated server
 port and logging its output to a log file. You may run it by hand using
@@ -269,7 +243,7 @@ commands:
 You may prefer to use your distribution's GUI for configuring startup
 services.
 
-## <span id="Master_Setup" class="mw-headline">Master Setup</span>
+## Master Setup
 
 Once the slaves are configured and running, you need to tell the master
 GBrowse server about them. There are two configuration options that
@@ -349,7 +323,7 @@ access privileges and the RDBMS hostname, username and password
 credentials indicated in the database configuration stanza must be
 appropriate for the slave.
 
-### <span id="Using_.5BTRACK_DEFAULTS.5D" class="mw-headline">Using \[TRACK DEFAULTS\]</span>
+### Using \[TRACK DEFAULTS\]
 
 In many cases you will wish to use the \[TRACK DEFAULTS\] stanza to
 assign a set of slaves to all tracks by default:
@@ -372,7 +346,7 @@ or "local" to turn off slave rendering for a particular track:
     glyph          = translation
     database       = chromosomes
 
-### <span id="The_slave_preload.conf_file" class="mw-headline">The slave_preload.conf file</span>
+### The slave_preload.conf file
 
 If you are relying on in-memory databases, you may wish to have them
 preloaded at slave startup time. This avoids the overhead of parsing and
@@ -406,7 +380,7 @@ the stanzas \[db1\], \[db2\], or whatever you like.
 You are encouraged to experiment with preloading databases or not to see
 whether performance improves on your system.
 
-## <span id="Troubleshooting" class="mw-headline">Troubleshooting</span>
+## Troubleshooting
 
 Slaves write diagnostic messages to a log file usually located in
 /var/log/gbrowse/gbrowse_slave. Error messages will be written to this
@@ -414,87 +388,6 @@ location. During troubleshooting you may wish to increase VERBOSITY
 option in the /etc/default/gbrowse-slave file to its maximum level of 3.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Running_a_GBrowse2_render_farm"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 12:08 on 12 October
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">51,512 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,36 +1,12 @@
 ---
 title: "Category%253ADatabase"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Category%253ADatabase</span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Category%253ADatabase
 
 
 ## Pages in category "Database"
 
 This category contains only the following page.
-
 
 
 ### A
@@ -39,76 +15,5 @@ This category contains only the following page.
   Databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
 
 
-
-
-
 Retrieved from
-"[http://gmod.org/wiki/Category%253ADatabase](Category%253ADatabase)"
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Category%253ADatabase" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-
-
-<!-- -->
-
-
-
-
+"[http://gmod.org/wiki/Category%253ADatabase](/wiki/Category%253ADatabase)"

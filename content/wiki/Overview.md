@@ -1,104 +1,83 @@
 ---
 title: "Overview"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Overview</span>
+# Overview
 
 _... formerly titled "GMOD for the Biologist"._
 
 This page provides an overview of the GMOD project. It does not assume
 any particular background in computing.
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">What is a
-  GMOD?</span>](#What_is_a_GMOD.3F)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Is It Just
-    for _Model_ Organisms?</span>](#Is_It_Just_for_Model_Organisms.3F)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Technologies</span>](#Technologies)
-- [<span class="tocnumber">4</span> <span class="toctext">The Components
-  of GMOD</span>](#The_Components_of_GMOD)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">What is
-    GBrowse?</span>](#What_is_GBrowse.3F)
-    - [<span class="tocnumber">4.1.1</span>
-      <span class="toctext">JBrowse</span>](#JBrowse)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Relational
-    Databases</span>](#Relational_Databases)
-    - [<span class="tocnumber">4.2.1</span> <span class="toctext">Chado
-      and BioSQL</span>](#Chado_and_BioSQL)
-    - [<span class="tocnumber">4.2.2</span> <span class="toctext">GFF
-      Databases</span>](#GFF_Databases)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">What are
-    WebApollo and Apollo?</span>](#What_are_WebApollo_and_Apollo.3F)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">What are
-    MAKER and DIYA?</span>](#What_are_MAKER_and_DIYA.3F)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">What is
-    Pathway Tools?</span>](#What_is_Pathway_Tools.3F)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">What is
-    CMap?</span>](#What_is_CMap.3F)
-    - [<span class="tocnumber">4.6.1</span> <span class="toctext">And
+  Introduction](#Introduction)
+- [What is a
+  GMOD?](#What_is_a_GMOD.3F)
+  - [Is It Just
+    for _Model_ Organisms?](#Is_It_Just_for_Model_Organisms.3F)
+- [Technologies](#Technologies)
+- [The Components
+  of GMOD](#The_Components_of_GMOD)
+  - [What is
+    GBrowse?](#What_is_GBrowse.3F)
+    - [JBrowse](#JBrowse)
+  - [Relational
+    Databases](#Relational_Databases)
+    - [Chado
+      and BioSQL](#Chado_and_BioSQL)
+    - [GFF
+      Databases](#GFF_Databases)
+  - [What are
+    WebApollo and Apollo?](#What_are_WebApollo_and_Apollo.3F)
+  - [What are
+    MAKER and DIYA?](#What_are_MAKER_and_DIYA.3F)
+  - [What is
+    Pathway Tools?](#What_is_Pathway_Tools.3F)
+  - [What is
+    CMap?](#What_is_CMap.3F)
+    - [And
       SynView? or Sybil? or
-      GBrowse_Syn?</span>](#And_SynView.3F_or_Sybil.3F_or_GBrowse_Syn.3F)
-  - [<span class="tocnumber">4.7</span> <span class="toctext">What is
-    Tripal?</span>](#What_is_Tripal.3F)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">What is
-    Modware?</span>](#What_is_Modware.3F)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">What is
-    BioPerl?</span>](#What_is_BioPerl.3F)
-  - [<span class="tocnumber">4.10</span> <span class="toctext">And What
-    Else is in GMOD?</span>](#And_What_Else_is_in_GMOD.3F)
-- [<span class="tocnumber">5</span> <span class="toctext">Case
-  Studies</span>](#Case_Studies)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">A Simple
-    Sequence Browser</span>](#A_Simple_Sequence_Browser)
-    - [<span class="tocnumber">5.1.1</span>
-      <span class="toctext">Recommendation</span>](#Recommendation)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">A Simple
+      GBrowse_Syn?](#And_SynView.3F_or_Sybil.3F_or_GBrowse_Syn.3F)
+  - [What is
+    Tripal?](#What_is_Tripal.3F)
+  - [What is
+    Modware?](#What_is_Modware.3F)
+  - [What is
+    BioPerl?](#What_is_BioPerl.3F)
+  - [And What
+    Else is in GMOD?](#And_What_Else_is_in_GMOD.3F)
+- [Case
+  Studies](#Case_Studies)
+  - [A Simple
+    Sequence Browser](#A_Simple_Sequence_Browser)
+    - [Recommendation](#Recommendation)
+  - [A Simple
     Sequence Browser plus a Sequence
-    Annotator</span>](#A_Simple_Sequence_Browser_plus_a_Sequence_Annotator)
-    - [<span class="tocnumber">5.2.1</span>
-      <span class="toctext">Recommendation</span>](#Recommendation_2)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">A Browser
-    for a Stock Collection</span>](#A_Browser_for_a_Stock_Collection)
-    - [<span class="tocnumber">5.3.1</span>
-      <span class="toctext">Recommendation</span>](#Recommendation_3)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">A Browser
-    for Microarray Data</span>](#A_Browser_for_Microarray_Data)
-    - [<span class="tocnumber">5.4.1</span>
-      <span class="toctext">Recommendation</span>](#Recommendation_4)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">A Browser
-    for Map Data</span>](#A_Browser_for_Map_Data)
-    - [<span class="tocnumber">5.5.1</span>
-      <span class="toctext">Recommendation</span>](#Recommendation_5)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Computing</span>](#Computing)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Personnel,
+    Annotator](#A_Simple_Sequence_Browser_plus_a_Sequence_Annotator)
+    - [Recommendation](#Recommendation_2)
+  - [A Browser
+    for a Stock Collection](#A_Browser_for_a_Stock_Collection)
+    - [Recommendation](#Recommendation_3)
+  - [A Browser
+    for Microarray Data](#A_Browser_for_Microarray_Data)
+    - [Recommendation](#Recommendation_4)
+  - [A Browser
+    for Map Data](#A_Browser_for_Map_Data)
+    - [Recommendation](#Recommendation_5)
+- [Computing](#Computing)
+  - [Personnel,
     Hardware and Operating
-    System</span>](#Personnel.2C_Hardware_and_Operating_System)
-  - [<span class="tocnumber">6.2</span>
-    <span class="toctext">Software</span>](#Software)
-    - [<span class="tocnumber">6.2.1</span>
-      <span class="toctext">Databases</span>](#Databases)
-    - [<span class="tocnumber">6.2.2</span>
-      <span class="toctext">Programming
-      Languages</span>](#Programming_Languages)
-      - [<span class="tocnumber">6.2.2.1</span>
-        <span class="toctext">Perl</span>](#Perl)
-      - [<span class="tocnumber">6.2.2.2</span>
-        <span class="toctext">Java</span>](#Java)
-    - [<span class="tocnumber">6.2.3</span>
-      <span class="toctext">Apache, the Web
-      Server</span>](#Apache.2C_the_Web_Server)
-  - [<span class="tocnumber">6.3</span>
-    <span class="toctext">Glossary</span>](#Glossary)
-  - [<span class="tocnumber">6.4</span>
-    <span class="toctext">Licenses</span>](#Licenses)
+    System](#Personnel.2C_Hardware_and_Operating_System)
+  - [Software](#Software)
+    - [Databases](#Databases)
+    - [Programming
+      Languages](#Programming_Languages)
+      - [Perl](#Perl)
+      - [Java](#Java)
+    - [Apache, the Web
+      Server](#Apache.2C_the_Web_Server)
+  - [Glossary](#Glossary)
+  - [Licenses](#Licenses)
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 With the amount of technical documentation available for GMOD, the
 casual observer would be forgiven if they concluded that GMOD was a
@@ -135,7 +114,7 @@ for biologists who want to learn more about GMOD. Feel free to email us
 at <a href="mailto:help@gmod.org" class="external text"
 rel="nofollow">help@gmod.org</a>.
 
-## <span id="What_is_a_GMOD.3F" class="mw-headline">What is a GMOD?</span>
+## What is a GMOD?
 
 GMOD is a collection of interconnected applications and databases that
 biologists use as repositories and as tools. That connectivity is really
@@ -185,7 +164,7 @@ may have to be created, complete with partnerships and grants. GMOD
 participants are always interested in seeing GMOD take off in new
 directions.
 
-### <span id="Is_It_Just_for_Model_Organisms.3F" class="mw-headline">Is It Just for _Model_ Organisms?</span>
+### Is It Just for _Model_ Organisms?
 
 GMOD stands for **G**eneric **M**odel **O**rganism **D**atabase; it was
 named back in the days when there were a handful of _model organisms_
@@ -217,7 +196,7 @@ of GMOD databases demonstrates that GMOD is widely used, with many
 organisms represented, and that these databases can hold sequences of
 any kind.
 
-## <span id="Technologies" class="mw-headline">Technologies</span>
+## Technologies
 
 <table data-border="0" data-cellpadding="5" data-cellspacing="0">
 <colgroup>
@@ -261,13 +240,13 @@ pay little attention to it.</p></td>
 </tbody>
 </table>
 
-## <span id="The_Components_of_GMOD" class="mw-headline">The Components of GMOD</span>
+## The Components of GMOD
 
 GMOD is made up databases, applications, and adaptor software that
 connects these components together. Some of the most popular packages
 are discussed below.
 
-### <span id="What_is_GBrowse.3F" class="mw-headline">What is GBrowse?</span>
+### What is GBrowse?
 
 [GBrowse](GBrowse.1 "GBrowse") is short for _Genome Browser_, or
 _Generic Genome Browser_. GBrowse is probably GMOD's most popular
@@ -302,7 +281,7 @@ title="wp:Perl">Perl</a>; as GBrowse is designed to be customized,
 extending its functionality with your own code should not require expert
 coding skill.
 
-#### <span id="JBrowse" class="mw-headline">JBrowse</span>
+#### JBrowse
 
 [JBrowse](JBrowse.1 "JBrowse") is a genome browser with a fully dynamic
 HTML5 user interface, being developed as the successor to GBrowse. It is
@@ -327,7 +306,7 @@ width="600" height="373" alt="JBrowse alignment and coverage" />
 
 Screenshot of JBrowse in action
 
-### <span id="Relational_Databases" class="mw-headline">Relational Databases</span>
+### Relational Databases
 
 For those unfamiliar with databases, the [brief guide to
 databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
@@ -406,7 +385,7 @@ See also:
 - [Databases and GMOD](Databases_and_GMOD "Databases and GMOD")
 - [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
 
-#### <span id="Chado_and_BioSQL" class="mw-headline">Chado and BioSQL</span>
+#### Chado and BioSQL
 
 So when you choose to use a relational schema it will all really come
 down to you and your data, not technical details.
@@ -516,7 +495,7 @@ pages on this Wiki discussing Chado (see [Getting Started with
 Chado](Chado_-_Getting_Started "Chado - Getting Started") and the [Chado
 Manual](Chado_Manual "Chado Manual")).
 
-#### <span id="GFF_Databases" class="mw-headline">GFF Databases</span>
+#### GFF Databases
 
 In addition to relational database schemas like
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> and
@@ -540,7 +519,7 @@ data in GFF format. This is accomplished by using the Bio::DB::GFF or
 Bio::DB::SeqFeature [GBrowse
 Adaptors](GBrowse_Adaptors "GBrowse Adaptors").
 
-### <span id="What_are_WebApollo_and_Apollo.3F" class="mw-headline">What are WebApollo and Apollo?</span>
+### What are WebApollo and Apollo?
 
 Unlike [JBrowse](JBrowse.1 "JBrowse") and
 [GBrowse](GBrowse.1 "GBrowse"), which only function as a sequence
@@ -564,7 +543,7 @@ write to Chado databases, but lacks the instant updates that WebApollo
 features. We recommend using [WebApollo](WebApollo.1 "WebApollo") as it
 is under active development and has a more full feature set than Apollo.
 
-### <span id="What_are_MAKER_and_DIYA.3F" class="mw-headline">What are MAKER and DIYA?</span>
+### What are MAKER and DIYA?
 
 [GBrowse](GBrowse.1 "GBrowse") and [Apollo](Apollo.1 "Apollo") both deal
 with [genome annotations](Category%253AAnnotation "Category%253AAnnotation"),
@@ -582,7 +561,7 @@ that can be directly loaded into [GBrowse](GBrowse.1 "GBrowse"),
 [Apollo](Apollo.1 "Apollo"), and
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-### <span id="What_is_Pathway_Tools.3F" class="mw-headline">What is Pathway Tools?</span>
+### What is Pathway Tools?
 
 [Pathway Tools](Pathway_Tools.1 "Pathway Tools") is a software system
 for creating organism-specific databases. It contains extensive
@@ -590,7 +569,7 @@ functionality that spans from genomes to pathways including a genome
 browser, metabolic pathway predictor and viewer, and regulatory network
 viewer, as well as a large number of interactive annotation tools.
 
-### <span id="What_is_CMap.3F" class="mw-headline">What is CMap?</span>
+### What is CMap?
 
 [CMap](CMap.1 "CMap") is a popular
 [comparative](Category%253AComparative_Genomics "Category%253AComparative Genomics")
@@ -606,7 +585,7 @@ title="wp:Perl">Perl</a> and requires an underlying RDBMS such as
 rel="nofollow">MySQL</a>. If you need to display maps or syntenic
 relationships, you may need more than [GBrowse](GBrowse.1 "GBrowse").
 
-#### <span id="And_SynView.3F_or_Sybil.3F_or_GBrowse_Syn.3F" class="mw-headline">And SynView? or Sybil? or GBrowse_Syn?</span>
+#### And SynView? or Sybil? or GBrowse_Syn?
 
 Yes, there are other [comparative
 genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
@@ -623,7 +602,7 @@ and they can be considered a bit simpler than [Sybil](Sybil "Sybil") and
 [CMap](CMap.1 "CMap"). More information is available on their websites
 to help you determine which is most suitable for you.
 
-### <span id="What_is_Tripal.3F" class="mw-headline">What is Tripal?</span>
+### What is Tripal?
 
 [Tripal](Tripal.1 "Tripal") is a web frontend for a Chado database that
 provides both an attractive, slick website for accessing and
@@ -641,7 +620,7 @@ Drupal functionality. For groups looking to avoid the substantial
 investment of time and effort involved in creating a website for data
 display and dissemination, Tripal offers a simple, stylish solution.
 
-### <span id="What_is_Modware.3F" class="mw-headline">What is Modware?</span>
+### What is Modware?
 
 [Modware](Modware "Modware") is a middleware package used in GMOD,
 written in <a href="http://en.wikipedia.org/wiki/Perl" class="extiw"
@@ -655,7 +634,7 @@ development. Like <a href="http://bioperl.org" class="external text"
 rel="nofollow">Bioperl</a>, Modware may be a package that you may need
 to install but won't need to understand in any detail.
 
-### <span id="What_is_BioPerl.3F" class="mw-headline">What is BioPerl?</span>
+### What is BioPerl?
 
 <a href="http://bioperl.org" class="external text"
 rel="nofollow">BioPerl</a> is a popular bioinformatics toolkit written
@@ -687,7 +666,7 @@ BioPerl or the
 class="external text" rel="nofollow">Bio::DB::SeqFeature</a> module. See
 [A Simple Sequence Browser](#A_Simple_Sequence_Browser) below.
 
-### <span id="And_What_Else_is_in_GMOD.3F" class="mw-headline">And What Else is in GMOD?</span>
+### And What Else is in GMOD?
 
 A number of other software packages, listed below, classified by general
 function. One might be tempted to think of this as a shopping list,
@@ -800,7 +779,7 @@ Graphic</a></p>
 </tbody>
 </table>
 
-## <span id="Case_Studies" class="mw-headline">Case Studies</span>
+## Case Studies
 
 What we are attempting to do here is anticipate some of the basic
 requirements of the scientist. The classic situation is that he or she
@@ -810,7 +789,7 @@ the scientist is not a programmer or an IT expert but that he or she is
 willing to learn the necessary skills or has a student available to do
 the required work.
 
-### <span id="A_Simple_Sequence_Browser" class="mw-headline">A Simple Sequence Browser</span>
+### A Simple Sequence Browser
 
 - The data: sequence (genomic DNA or ESTs or proteins or cDNAs or some
   combination of these or ...)
@@ -843,7 +822,7 @@ or you may have to write some of the conversion code yourselves)
   Desk](GMOD_Help_Desk "GMOD Help Desk"), the [GMOD Mailing
   Lists](GMOD_Mailing_Lists "GMOD Mailing Lists")
 
-#### <span id="Recommendation" class="mw-headline">Recommendation</span>
+#### Recommendation
 
 Highly recommended. Setting this up will give you a good sense of how
 the software pieces interoperate. Not only that, but
@@ -851,7 +830,7 @@ the software pieces interoperate. Not only that, but
 so once it's installed you have actual genome sequence to play with. You
 can even get GBrowse running nicely on a laptop.
 
-### <span id="A_Simple_Sequence_Browser_plus_a_Sequence_Annotator" class="mw-headline">A Simple Sequence Browser plus a Sequence Annotator</span>
+### A Simple Sequence Browser plus a Sequence Annotator
 
 - The data: sequence (genomic DNA or ESTs or cDNAs or some combination
   of these or ...)
@@ -895,13 +874,13 @@ Java competence for the Apollo installation.
 Resources available: documentation at www.gmod.org, the GMOD Help Desk,
 the GMOD mailing lists
 
-#### <span id="Recommendation_2" class="mw-headline">Recommendation</span>
+#### Recommendation
 
 If you're a GMOD novice, install GBrowse by itself first ([A Simple
 Sequence Browser](#A_Simple_Sequence_Browser)), then consider this
 system.
 
-### <span id="A_Browser_for_a_Stock_Collection" class="mw-headline">A Browser for a Stock Collection</span>
+### A Browser for a Stock Collection
 
 - The data: the stock collection data in some structured form (Excel or
   Word or ...)
@@ -941,12 +920,12 @@ Resources available: documentation at
 Desk](GMOD_Help_Desk "GMOD Help Desk"), the [GMOD Mailing
 Lists](GMOD_Mailing_Lists "GMOD Mailing Lists").
 
-#### <span id="Recommendation_3" class="mw-headline">Recommendation</span>
+#### Recommendation
 
 Consider whether you want to explore uncharted territory or not. Could
 be fairly straightforward for the expert, or could be challenging.
 
-### <span id="A_Browser_for_Microarray_Data" class="mw-headline">A Browser for Microarray Data</span>
+### A Browser for Microarray Data
 
 - The data: microarray data in Affymetrix format
 - The goal: create a browser to query and view your laboratory's
@@ -963,13 +942,13 @@ connect to Chado.
 Resources available: documentation at www.gmod.org, the GMOD Help Desk,
 the GMOD mailing lists
 
-#### <span id="Recommendation_4" class="mw-headline">Recommendation</span>
+#### Recommendation
 
 Either wait for the connectors to be built to some application or form a
 partnership with GMOD scientists and developers to see that the
 connectors are built.
 
-### <span id="A_Browser_for_Map_Data" class="mw-headline">A Browser for Map Data</span>
+### A Browser for Map Data
 
 - The data: map data (genetic map data or physical map data or visual
   map data or some combination of these)
@@ -999,15 +978,15 @@ loading code.
 Resources available: documentation at www.gmod.org, the GMOD Help Desk,
 the GMOD mailing lists
 
-#### <span id="Recommendation_5" class="mw-headline">Recommendation</span>
+#### Recommendation
 
 Choose one. GMOD offers good choices here, it comes down to your data
 and your resources. [SynView](SynView "SynView") is the easiest, and it
 comes with [GBrowse](GBrowse.1 "GBrowse").
 
-## <span id="Computing" class="mw-headline">Computing</span>
+## Computing
 
-### <span id="Personnel.2C_Hardware_and_Operating_System" class="mw-headline">Personnel, Hardware and Operating System</span>
+### Personnel, Hardware and Operating System
 
 [Computing
 Requirements](Computing_Requirements "Computing Requirements") discusses
@@ -1015,12 +994,12 @@ the personnel, hardware, and [operating
 system](Glossary#Operating_System "Glossary") requirements and choices
 for implementing GMOD components.
 
-### <span id="Software" class="mw-headline">Software</span>
+### Software
 
 GMOD software relies on other software to function. This section lists
 some other key open source packages that you may need.
 
-#### <span id="Databases" class="mw-headline">Databases</span>
+#### Databases
 
 The [Relational Databases](#Relational_Databases) section above
 introduced many relational database concepts. [Databases and
@@ -1028,7 +1007,7 @@ GMOD](Databases_and_GMOD "Databases and GMOD") discuses [database
 management system](Glossary#Database_Management_System "Glossary")
 choices in GMOD. It also introduces some additional terminology.
 
-#### <span id="Programming_Languages" class="mw-headline">Programming Languages</span>
+#### Programming Languages
 
 Two programming languages are popular in GMOD: Perl and Java. For most
 tasks you won't need to do any programming in either language. You will
@@ -1036,7 +1015,7 @@ just need to know how to install these languages and how to install
 programs written in these languages. See [Computing
 Requirements](Computing_Requirements "Computing Requirements") for more.
 
-##### <span id="Perl" class="mw-headline">Perl</span>
+##### Perl
 
 The programming language most used in the bioinformatics realm. Also the
 language most used by GMOD developers. It is well-suited to text and
@@ -1052,14 +1031,14 @@ sufficient for this work. Just installing and using
 knowledge of Perl or <a href="http://bioperl.org" class="external text"
 rel="nofollow">BioPerl</a>.
 
-##### <span id="Java" class="mw-headline">Java</span>
+##### Java
 
 Java is arguably the world's most popular programming language but it is
 not as popular for command-line work on Unix as Perl. It's encountered
 in GMOD primarily as a language to construct user interfaces (e.g.
 [Apollo](Apollo.1 "Apollo")).
 
-#### <span id="Apache.2C_the_Web_Server" class="mw-headline">Apache, the Web Server</span>
+#### Apache, the Web Server
 
 If you want to set up an application that displays web pages, you will
 need a web server on your computer. If you don't already have one
@@ -1068,67 +1047,13 @@ installed, you will want to use the
 Web server</a> (also known as the _Apache HTTP Server_), which is free,
 fast, secure, and reasonably simple to install on Unix or Windows.
 
-### <span id="Glossary" class="mw-headline">Glossary</span>
+### Glossary
 
 The GMOD [Glossary](Glossary "Glossary") explains many terms related to
 GMOD, bioinformatics, and the computing technologies used in GMOD.
 
-### <span id="Licenses" class="mw-headline">Licenses</span>
+### Licenses
 
 Most [GMOD Components](GMOD_Components "GMOD Components") have no
 restrictions on using them. Those few components that do impose
 restrictions will clearly state that they have restricted licenses.
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Help](Category%253AHelp "Category%253AHelp")
-- [Biology](Category%253ABiology "Category%253ABiology")
-
-## Navigation menu
-
-### Namespaces
-
-- <span id="ca-talk"><a href="Talk%253AOverview" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Overview" rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 19:56 on 7 October 2013.</span>
-<!-- - <span id="footer-info-viewcount">1,164,505 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

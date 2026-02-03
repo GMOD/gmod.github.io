@@ -1,9 +1,7 @@
 ---
 title: "Jan 2014 GMOD Meeting"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Jan 2014 GMOD Meeting</span>
+# Jan 2014 GMOD Meeting
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/e/e1/2014-gmod-san-diego.png/300px-2014-gmod-san-diego.png"
@@ -18,20 +16,15 @@ please add it to the wiki or email it to
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">the
 GMOD helpdesk</a> and we will post it for you.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Keynote
   Speaker</span>](#Keynote_Speaker)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Thursday,
-    January 16</span>](#Thursday.2C_January_16)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Friday,
-    January 17</span>](#Friday.2C_January_17)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Posters</span>](#Posters)
+- [Agenda](#Agenda)
+  - [Thursday,
+    January 16](#Thursday.2C_January_16)
+  - [Friday,
+    January 17](#Friday.2C_January_17)
+  - [Posters](#Posters)
 
-## <span id="Keynote_Speaker" class="mw-headline">Keynote Speaker</span>
+## Keynote Speaker
 
 <a href="http://sulab.org/andrew-i-su-ph-d/" rel="nofollow"
 title="Andrew Su"><img
@@ -54,9 +47,9 @@ Foundation (GNF) in San Diego, CA. He also serves as an Executive Editor
 of the journal Gene and on the Scientific Advisory Board of the Gene
 Ontology Consortium.
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
-### <span id="Thursday.2C_January_16" class="mw-headline">Thursday, January 16</span>
+### Thursday, January 16
 
 | Time  | Topic             | Presenter(s)                                  | Presentation                                                                                                      |
 | ----- | ----------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +89,7 @@ title="Bob Muller 2014.pdf">Slides</a>, <a href="http://youtu.be/KsBZxiGsOps" cl
 rel="nofollow">YouTube</a> |
 | 4:45 | Wrap up | [Scott Cain](User%253AScott "User%253AScott") | |
 
-### <span id="Friday.2C_January_17" class="mw-headline">Friday, January 17</span>
+### Friday, January 17
 
 <table class="wikitable">
 <colgroup>
@@ -199,7 +192,7 @@ title="2014-McGary.pdf">Slides</a></li>
 </tbody>
 </table>
 
-### <span id="Posters" class="mw-headline">Posters</span>
+### Posters
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fb/Gitc-giab-poster.pdf" class="internal"
 title="Gitc-giab-poster.pdf">GMOD in the Cloud and GMOD in a Box:
@@ -208,50 +201,3 @@ Instant Virtual Servers for Genomics Data</a>
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/2014_CGP_Poster.pdf" class="internal"
 title="2014 CGP Poster.pdf">Challenges in providing a genome browser for
 large-scale projects</a>
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Jan_2014_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 07:49 on 8 May 2014.</span>
-<!-- - <span id="footer-info-viewcount">153,026 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

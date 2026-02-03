@@ -1,23 +1,7 @@
 ---
 title: "BioMart"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">BioMart</span>
-
-
-
-
-
-
-
+# BioMart
 
 
 All BioMart documentation has now been moved to the
@@ -30,17 +14,12 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="BioMart" /></a>
 
 
-
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Component](Category%253AGMOD_Component "Category%253AGMOD Component")
 - [BioMart](Category%253ABioMart "Category%253ABioMart")
 - [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -72,81 +51,3 @@ rel="nofollow">LGPL</a> <span class="smwsearch">[+](Special%253ASearchByProperty
 | [Release date](Property%253ARelease_date "Property:Release date") | 1 January 2001 <span class="smwsearch">[+](Special%253ASearchByProperty/Release-20date/1-20January-202001 "Special%253ASearchByProperty/Release-20date/1-20January-202001")</span> |
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Community Annotation <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Community-20Annotation "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Community-20Annotation")</span>, Database schema <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20schema "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20schema")</span>, Database tools <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools")</span>, Genome Annotation <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Annotation "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Genome-20Annotation")</span>, Middleware <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Middleware "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Middleware")</span>, Tool Integration <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20Integration "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Tool-20Integration")</span> and Data federation software <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Data-20federation-20software "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Data-20federation-20software")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [BioMart#http://www.biomart.org/download.html](BioMart#http:.2F.2Fwww.biomart.org.2Fdownload.html "BioMart") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2Fdownload.html "Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2Fdownload.html")</span>, [BioMart#http://www.biomart.org/](BioMart#http:.2F.2Fwww.biomart.org.2F "BioMart") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2F "Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2F")</span>, [BioMart#http://www.biomart.org/community.html](BioMart#http:.2F.2Fwww.biomart.org.2Fcommunity.html "BioMart") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2Fcommunity.html "Special%253ASearchByProperty/Has-20subobject/BioMart-23http%253A-2F-2Fwww.biomart.org-2Fcommunity.html")</span> and [BioMart](BioMart#_d34fbbd8cc11ef25e99d6879f05313b1 "BioMart") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/BioMart-23_d34fbbd8cc11ef25e99d6879f05313b1 "Special%253ASearchByProperty/Has-20subobject/BioMart-23 d34fbbd8cc11ef25e99d6879f05313b1")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/BioMart" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:26 on 15 October
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">365,674 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

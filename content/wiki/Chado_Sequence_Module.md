@@ -1,124 +1,102 @@
 ---
 title: "Chado Sequence Module"
 ---
-<span id="top"></span>
+# Chado Sequence Module
 
-# <span dir="auto">Chado Sequence Module</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Features</span>](#Features)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Names of
-    Features</span>](#Names_of_Features)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Feature
-    Synonyms</span>](#Feature_Synonyms)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Feature
-    Locations</span>](#Feature_Locations)
-    - [<span class="tocnumber">2.3.1</span> <span class="toctext">The
-      Feature Location Graph</span>](#The_Feature_Location_Graph)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">Feature
-      Coordinates</span>](#Feature_Coordinates)
-      - [<span class="tocnumber">2.3.2.1</span>
-        <span class="toctext">Multiple Locations for a
-        Feature</span>](#Multiple_Locations_for_a_Feature)
-    - [<span class="tocnumber">2.3.3</span>
-      <span class="toctext">Difference Between the chado Location Model
+  Introduction](#Introduction)
+- [Features](#Features)
+  - [Names of
+    Features](#Names_of_Features)
+  - [Feature
+    Synonyms](#Feature_Synonyms)
+  - [Feature
+    Locations](#Feature_Locations)
+    - [The
+      Feature Location Graph](#The_Feature_Location_Graph)
+    - [Feature
+      Coordinates](#Feature_Coordinates)
+      - [Multiple Locations for a
+        Feature](#Multiple_Locations_for_a_Feature)
+    - [Difference Between the chado Location Model
       and Other
-      Schemas</span>](#Difference_Between_the_chado_Location_Model_and_Other_Schemas)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Feature
-    Rank</span>](#Feature_Rank)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Extensible
-    Feature Properties</span>](#Extensible_Feature_Properties)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Linking
+      Schemas](#Difference_Between_the_chado_Location_Model_and_Other_Schemas)
+  - [Feature
+    Rank](#Feature_Rank)
+  - [Extensible
+    Feature Properties](#Extensible_Feature_Properties)
+  - [Linking
     Features to External
-    Databases</span>](#Linking_Features_to_External_Databases)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Feature
-    Annotations</span>](#Feature_Annotations)
-  - [<span class="tocnumber">2.8</span>
-    <span class="toctext">Relationships Between
-    Features</span>](#Relationships_Between_Features)
-  - [<span class="tocnumber">2.9</span>
-    <span class="toctext">Compliance</span>](#Compliance)
-    - [<span class="tocnumber">2.9.1</span> <span class="toctext">Chado
-      Compliance Layers</span>](#Chado_Compliance_Layers)
-      - [<span class="tocnumber">2.9.1.1</span>
-        <span class="toctext">Level 0: Relational
-        Schema</span>](#Level_0:_Relational_Schema)
-      - [<span class="tocnumber">2.9.1.2</span>
-        <span class="toctext">Layer 1:
-        Ontologies</span>](#Layer_1:_Ontologies)
-      - [<span class="tocnumber">2.9.1.3</span>
-        <span class="toctext">Level 2: Graph</span>](#Level_2:_Graph)
-    - [<span class="tocnumber">2.9.2</span>
-      <span class="toctext">Examples: Current
-      implementations</span>](#Examples:_Current_implementations)
-      - [<span class="tocnumber">2.9.2.1</span> <span class="toctext">SO
+    Databases](#Linking_Features_to_External_Databases)
+  - [Feature
+    Annotations](#Feature_Annotations)
+  - [Relationships Between
+    Features](#Relationships_Between_Features)
+  - [Compliance](#Compliance)
+    - [Chado
+      Compliance Layers](#Chado_Compliance_Layers)
+      - [Level 0: Relational
+        Schema](#Level_0:_Relational_Schema)
+      - [Layer 1:
+        Ontologies](#Layer_1:_Ontologies)
+      - [Level 2: Graph](#Level_2:_Graph)
+    - [Examples: Current
+      implementations](#Examples:_Current_implementations)
+      - [SO
         terms used for Standard Central-dogma Gene
-        Model</span>](#SO_terms_used_for_Standard_Central-dogma_Gene_Model)
-      - [<span class="tocnumber">2.9.2.2</span> <span class="toctext">SO
+        Model](#SO_terms_used_for_Standard_Central-dogma_Gene_Model)
+      - [SO
         terms Used for Storing
-        Alignments</span>](#SO_terms_Used_for_Storing_Alignments)
-      - [<span class="tocnumber">2.9.2.3</span>
-        <span class="toctext">feature_relationship
-        Types</span>](#feature_relationship_Types)
-      - [<span class="tocnumber">2.9.2.4</span>
-        <span class="toctext">featureloc
-        Policy</span>](#featureloc_Policy)
-      - [<span class="tocnumber">2.9.2.5</span>
-        <span class="toctext">Non-central Dogma Gene
-        Models</span>](#Non-central_Dogma_Gene_Models)
-      - [<span class="tocnumber">2.9.2.6</span>
-        <span class="toctext">Other Features</span>](#Other_Features)
-      - [<span class="tocnumber">2.9.2.7</span>
-        <span class="toctext">Derivable Feature
-        Types</span>](#Derivable_Feature_Types)
-      - [<span class="tocnumber">2.9.2.8</span>
-        <span class="toctext">Sequence
-        Variants</span>](#Sequence_Variants)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Table:
-    feature</span>](#Table:_feature)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Table:
-    feature_cvterm</span>](#Table:_feature_cvterm)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Table:
-    feature_cvterm_dbxref</span>](#Table:_feature_cvterm_dbxref)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Table:
-    feature_cvterm_pub</span>](#Table:_feature_cvterm_pub)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Table:
-    feature_cvtermprop</span>](#Table:_feature_cvtermprop)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">Table:
-    feature_dbxref</span>](#Table:_feature_dbxref)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">Table:
-    feature_pub</span>](#Table:_feature_pub)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">Table:
-    feature_pubprop</span>](#Table:_feature_pubprop)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">Table:
-    feature_relationship</span>](#Table:_feature_relationship)
-  - [<span class="tocnumber">3.10</span> <span class="toctext">Table:
-    feature_relationship_pub</span>](#Table:_feature_relationship_pub)
-  - [<span class="tocnumber">3.11</span> <span class="toctext">Table:
-    feature_relationshipprop</span>](#Table:_feature_relationshipprop)
-  - [<span class="tocnumber">3.12</span> <span class="toctext">Table:
-    feature_relationshipprop_pub</span>](#Table:_feature_relationshipprop_pub)
-  - [<span class="tocnumber">3.13</span> <span class="toctext">Table:
-    feature_synonym</span>](#Table:_feature_synonym)
-  - [<span class="tocnumber">3.14</span> <span class="toctext">Table:
-    featureloc</span>](#Table:_featureloc)
-  - [<span class="tocnumber">3.15</span> <span class="toctext">Table:
-    featureloc_pub</span>](#Table:_featureloc_pub)
-  - [<span class="tocnumber">3.16</span> <span class="toctext">Table:
-    featureprop</span>](#Table:_featureprop)
-  - [<span class="tocnumber">3.17</span> <span class="toctext">Table:
-    featureprop_pub</span>](#Table:_featureprop_pub)
-  - [<span class="tocnumber">3.18</span> <span class="toctext">Table:
-    synonym</span>](#Table:_synonym)
+        Alignments](#SO_terms_Used_for_Storing_Alignments)
+      - [feature_relationship
+        Types](#feature_relationship_Types)
+      - [featureloc
+        Policy](#featureloc_Policy)
+      - [Non-central Dogma Gene
+        Models](#Non-central_Dogma_Gene_Models)
+      - [Other Features](#Other_Features)
+      - [Derivable Feature
+        Types](#Derivable_Feature_Types)
+      - [Sequence
+        Variants](#Sequence_Variants)
+- [Tables](#Tables)
+  - [Table:
+    feature](#Table:_feature)
+  - [Table:
+    feature_cvterm](#Table:_feature_cvterm)
+  - [Table:
+    feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
+  - [Table:
+    feature_cvterm_pub](#Table:_feature_cvterm_pub)
+  - [Table:
+    feature_cvtermprop](#Table:_feature_cvtermprop)
+  - [Table:
+    feature_dbxref](#Table:_feature_dbxref)
+  - [Table:
+    feature_pub](#Table:_feature_pub)
+  - [Table:
+    feature_pubprop](#Table:_feature_pubprop)
+  - [Table:
+    feature_relationship](#Table:_feature_relationship)
+  - [Table:
+    feature_relationship_pub](#Table:_feature_relationship_pub)
+  - [Table:
+    feature_relationshipprop](#Table:_feature_relationshipprop)
+  - [Table:
+    feature_relationshipprop_pub](#Table:_feature_relationshipprop_pub)
+  - [Table:
+    feature_synonym](#Table:_feature_synonym)
+  - [Table:
+    featureloc](#Table:_featureloc)
+  - [Table:
+    featureloc_pub](#Table:_featureloc_pub)
+  - [Table:
+    featureprop](#Table:_featureprop)
+  - [Table:
+    featureprop_pub](#Table:_featureprop_pub)
+  - [Table:
+    synonym](#Table:_synonym)
 
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 A central module in Chado is the sequence module. The fundamental table
 within this module is the feature table, for describing biological
@@ -140,7 +118,7 @@ You may find these related documents useful:
 - [Chado cv module](Chado_CV_Module "Chado CV Module") - the Sequence
   module makes extensive use of controlled vocabularies
 
-# <span id="Features" class="mw-headline">Features</span>
+# Features
 
 Chado does not distinguish between a sequence and a sequence feature, on
 the theory that a feature is a piece of a sequence, and a piece of a
@@ -270,7 +248,7 @@ in the [organism
 module](Chado_Organism_Module "Chado Organism Module")). This column is
 mandatory if the feature derives from a single organism.
 
-## <span id="Names_of_Features" class="mw-headline">Names of Features</span>
+## Names of Features
 
 The _name_ and _uniquename_ columns allow features to be labelled. The
 _name_ column is optional, but it is recommended that all annotated
@@ -299,7 +277,7 @@ uniqueness of the _uniquename, organism id, type id_ triple.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/Feature-tables.png" width="555"
 height="661" alt="Feature-tables.png" />
 
-## <span id="Feature_Synonyms" class="mw-headline">Feature Synonyms</span>
+## Feature Synonyms
 
 In addition to having a name or symbol, it is common for features such
 as genes to have multiple synonyms or aliases. These synonyms may exist
@@ -333,7 +311,7 @@ AND s.name = 'name of interest'
 AND fs.is_current;
 ```
 
-## <span id="Feature_Locations" class="mw-headline">Feature Locations</span>
+## Feature Locations
 
 Features can potentially be localized using a sequence coordinate
 system. A relative localization model is used, so all feature
@@ -394,7 +372,7 @@ more common). Chains may also span sequence alignments.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2d/Featureloc-example.png" width="316"
 height="148" alt="Featureloc-example.png" />
 
-### <span id="The_Feature_Location_Graph" class="mw-headline">The Feature Location Graph</span>
+### The Feature Location Graph
 
 We will now present a short formal treatment of the properties of these
 hierarchies of localization using graph theory. This treatment can be
@@ -483,7 +461,7 @@ means that no feature can have more than one featureloc with the same
 rank and locgroup. In other words, rank and locgroup uniquely identify a
 featureloc for any particular feature.
 
-### <span id="Feature_Coordinates" class="mw-headline">Feature Coordinates</span>
+### Feature Coordinates
 
 Features are located relative to other features using the
 [featureloc](#Table:_featureloc) table rows. Features can be located on
@@ -507,7 +485,7 @@ both the query and target sequences. To locate a feature, create a
   locations and can be ignored in simple cases (the details are
   discussed below).
 
-#### <span id="Multiple_Locations_for_a_Feature" class="mw-headline">Multiple Locations for a Feature</span>
+#### Multiple Locations for a Feature
 
 The ability to have multiple locations for a feature has many uses. For
 example one can locate a SNP, exon, or protein motif on the genome, on a
@@ -515,7 +493,7 @@ transcript, and on a protein. A region of similarity between two
 sequences (HSP) can be located on both of them, so if either is viewed
 the “hit” is visible.
 
-### <span id="Difference_Between_the_chado_Location_Model_and_Other_Schemas" class="mw-headline">Difference Between the chado Location Model and Other Schemas</span>
+### Difference Between the chado Location Model and Other Schemas
 
 There is a crucial difference between the Chado location model and the
 sequence location model used in other schemas, such as [GFF](GFF "GFF"),
@@ -553,14 +531,14 @@ of exons with contiguous featurelocs, and a transcript with a single
 contiguous featureloc representing the outer boundaries defined by the
 outermost exons.
 
-## <span id="Feature_Rank" class="mw-headline">Feature Rank</span>
+## Feature Rank
 
 The _rank_ field is used when a feature has more than 1 location,
 otherwise the default rank value of 0 is used. Some features have two
 locations, for example BLAST hits and HSPs: one location on the query,
 rank = 0, and one location on the subject, rank = 1.
 
-## <span id="Extensible_Feature_Properties" class="mw-headline">Extensible Feature Properties</span>
+## Extensible Feature Properties
 
 The [feature](#Table:_feature) table has a fairly limited set of columns
 for recording feature data. For example, there is no anticodon column
@@ -601,7 +579,7 @@ poorer performance. This is one of several areas in Chado where
 performance has been traded in favour of a simpler, more abstract and
 generic model.
 
-## <span id="Linking_Features_to_External_Databases" class="mw-headline">Linking Features to External Databases</span>
+## Linking Features to External Databases
 
 Public database identifiers are stored in the
 [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") table, which holds
@@ -616,7 +594,7 @@ assigned accession numbers. Some groups may wish to set up a trigger to
 automatically assign primary dbxrefs to features of types that are
 locally accessioned; a sample trigger is provided with the schema.
 
-## <span id="Feature_Annotations" class="mw-headline">Feature Annotations</span>
+## Feature Annotations
 
 Detailed annotations, such as associations to
 <a href="http://geneontology.org" class="external text"
@@ -644,7 +622,7 @@ file) is to capture terms that are likely to appear in [GFF](GFF "GFF")
 or GenBank sequence files. In theory there is no overlap between these
 ontologies and the Sequence Ontology.
 
-## <span id="Relationships_Between_Features" class="mw-headline">Relationships Between Features</span>
+## Relationships Between Features
 
 Biological features are inter-related; exons are part of transcripts,
 transcripts are part of genes, and polypeptides are derived from
@@ -697,7 +675,7 @@ common. The subset of the FG corresponding to certain kinds of
 relationship may be acyclic for example, the subset of the FG connecting
 parts with wholes via part of must be acyclic.
 
-## <span id="Compliance" class="mw-headline">Compliance</span>
+## Compliance
 
 _This section is not complete, it is in progress._
 
@@ -711,23 +689,23 @@ We require validation software and more formal or computable
 descriptions of these layers and policies - for now natural language
 descriptions will have to suffice.
 
-### <span id="Chado_Compliance_Layers" class="mw-headline">Chado Compliance Layers</span>
+### Chado Compliance Layers
 
 Proposal for levels of compliance.
 
-#### <span id="Level_0:_Relational_Schema" class="mw-headline">Level 0: Relational Schema</span>
+#### Level 0: Relational Schema
 
 Level 0 conformance basically means the schema is adhered to. Obviously,
 this is enforced by the DBMS.
 
-#### <span id="Layer_1:_Ontologies" class="mw-headline">Layer 1: Ontologies</span>
+#### Layer 1: Ontologies
 
 Level 1 conformance is minimal conformance to
 <a href="http://sequenceontology.org" class="external text"
 rel="nofollow">SO</a> - all feature.types must be SO terms, and all
 feature relationship.types must be SO relationship types.
 
-#### <span id="Level_2:_Graph" class="mw-headline">Level 2: Graph</span>
+#### Level 2: Graph
 
 Level 2 conformance is graph conformance to SO - all feature
 relationships between a feature of type X and Y must correspond to
@@ -740,7 +718,7 @@ Orthogonal to these layers are various additional policy decisions. Some
 of these are more tolerant of non-conformance than others. (there is
 also some overlaps with levels 1 and 2).
 
-### <span id="Examples:_Current_implementations" class="mw-headline">Examples: Current implementations</span>
+### Examples: Current implementations
 
 This section describes details of how different sites are using Chado.
 **This is likely outdated information.**
@@ -751,7 +729,7 @@ being used have an obvious counterpart in SO. Therefore these ”TIGR
 Ontology” terms are used in the answers to the SO-related questions that
 appear below. We plan on updating our terms with SO terms very soon.
 
-#### <span id="SO_terms_used_for_Standard_Central-dogma_Gene_Model" class="mw-headline">SO terms used for Standard Central-dogma Gene Model</span>
+#### SO terms used for Standard Central-dogma Gene Model
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: gene mRNA exon protein \[other types are
@@ -765,7 +743,7 @@ conformance\].
 NOTE: we should be using ’polypeptide’ instead of ’protein’. For now,
 software should be tolerant of both these uses.
 
-#### <span id="SO_terms_Used_for_Storing_Alignments" class="mw-headline">SO terms Used for Storing Alignments</span>
+#### SO terms Used for Storing Alignments
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: match
@@ -783,7 +761,7 @@ multiple alignments. Each member of the alignment is featureloced to the
 ’match’ feature. We’ve used this representation to store
 paralogous/orthologous gene families.
 
-#### <span id="feature_relationship_Types" class="mw-headline">feature_relationship Types</span>
+#### feature_relationship Types
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: partof (for mRNA to gene and exon to mRNA)
@@ -800,7 +778,7 @@ relationship.type anyway. Protein should be polypeptide - see note above
 NOTE: the main difference between FB and TIGR here is that TIGR
 introduce an intermediate CDS feature between mRNA and protein.
 
-#### <span id="featureloc_Policy" class="mw-headline">featureloc Policy</span>
+#### featureloc Policy
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: all constituent parts of a central dogma
@@ -837,7 +815,7 @@ generally always best to locate relative to the topmost feature (ie the
 arm/chromosome), sometimes this is not possible or desirable (eg low
 coverage, heterochromatin).
 
-#### <span id="Non-central_Dogma_Gene_Models" class="mw-headline">Non-central Dogma Gene Models</span>
+#### Non-central Dogma Gene Models
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: we store a lot of non-central dogma gene
@@ -848,7 +826,7 @@ details here\].
 not many of these stored yet, save for a few pseudogenes and the
 occasional non-coding ORF.
 
-#### <span id="Other_Features" class="mw-headline">Other Features</span>
+#### Other Features
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: the FlyBase implementation includes many
@@ -858,7 +836,7 @@ to fill in details\].
 <a href="http://tigr.org" class="external text" rel="nofollow">TIGR</a>:
 using ’SNP’ in some databases.
 
-#### <span id="Derivable_Feature_Types" class="mw-headline">Derivable Feature Types</span>
+#### Derivable Feature Types
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: derivable features (introns, UTRs,
@@ -877,7 +855,7 @@ features (useful for warehouse-style querying), you should not write
 software that expects to find these if you want the software to work on
 different chado db instances.
 
-#### <span id="Sequence_Variants" class="mw-headline">Sequence Variants</span>
+#### Sequence Variants
 
 <a href="http://flybase.org" class="external text"
 rel="nofollow">FlyBase</a>: these are included in chado, but they are
@@ -897,9 +875,9 @@ NOTE: variation features should specify the edit that makes one feature
 variant/mutant/non-reference). There were perhaps 2 proposals for this
 \[more details required...\].
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_feature" class="mw-headline">Table: feature</span>
+## Table: feature
 
 A feature is a biological sequence or a section of a biological
 sequence, or a collection of such sections. Examples include genes,
@@ -1073,74 +1051,26 @@ feature Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
-
-<!-- -->
-
 - [element](Chado_Tables#Table:_element "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-
-<!-- -->
-
 - [feature_dbxref](Chado_Tables#Table:_feature_dbxref "Chado Tables")
-
-<!-- -->
-
 - [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-
-<!-- -->
-
 - [feature_genotype](Chado_Tables#Table:_feature_genotype "Chado Tables")
-
-<!-- -->
-
 - [feature_phenotype](Chado_Tables#Table:_feature_phenotype "Chado Tables")
-
-<!-- -->
-
 - [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_relationship](Chado_Tables#Table:_feature_relationship "Chado Tables")
-
-<!-- -->
-
 - [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-
-<!-- -->
-
 - [featureloc](Chado_Tables#Table:_featureloc "Chado Tables")
-
-<!-- -->
-
 - [featurepos](Chado_Tables#Table:_featurepos "Chado Tables")
-
-<!-- -->
-
 - [featureprop](Chado_Tables#Table:_featureprop "Chado Tables")
-
-<!-- -->
-
 - [featurerange](Chado_Tables#Table:_featurerange "Chado Tables")
-
-<!-- -->
-
 - [library_feature](Chado_Tables#Table:_library_feature "Chado Tables")
-
-<!-- -->
-
 - [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_feature](Chado_Tables#Table:_wwwuser_feature "Chado Tables")
 
 ---
 
-## <span id="Table:_feature_cvterm" class="mw-headline">Table: feature_cvterm</span>
+## Table: feature_cvterm
 
 Associate a term from a cv with a feature, for example, GO annotation.
 
@@ -1212,18 +1142,12 @@ feature_cvterm Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_cvterm_dbxref](Chado_Tables#Table:_feature_cvterm_dbxref "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm_pub](Chado_Tables#Table:_feature_cvterm_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_cvtermprop](Chado_Tables#Table:_feature_cvtermprop "Chado Tables")
 
 ---
 
-## <span id="Table:_feature_cvterm_dbxref" class="mw-headline">Table: feature_cvterm_dbxref</span>
+## Table: feature_cvterm_dbxref
 
 Additional dbxrefs for an association. Rows in the feature_cvterm table
 may be backed up by dbxrefs. For example, a feature_cvterm association
@@ -1246,7 +1170,7 @@ feature_cvterm_dbxref Structure
 
 ---
 
-## <span id="Table:_feature_cvterm_pub" class="mw-headline">Table: feature_cvterm_pub</span>
+## Table: feature_cvterm_pub
 
 Secondary pubs for an association. Each feature_cvterm association is
 supported by a single primary publication. Additional secondary pubs can
@@ -1264,7 +1188,7 @@ feature_cvterm_pub Structure
 
 ---
 
-## <span id="Table:_feature_cvtermprop" class="mw-headline">Table: feature_cvtermprop</span>
+## Table: feature_cvtermprop
 
 Extensible properties for feature to cvterm associations. Examples: GO
 evidence codes; qualifiers; metadata such as the date on which the entry
@@ -1340,7 +1264,7 @@ feature_cvtermprop Structure
 
 ---
 
-## <span id="Table:_feature_dbxref" class="mw-headline">Table: feature_dbxref</span>
+## Table: feature_dbxref
 
 Links a feature to dbxrefs. This is for secondary identifiers; primary
 identifiers should use feature.dbxref_id.
@@ -1399,7 +1323,7 @@ feature_dbxref Structure
 
 ---
 
-## <span id="Table:_feature_pub" class="mw-headline">Table: feature_pub</span>
+## Table: feature_pub
 
 Provenance. Linking table between features and publications that mention
 them.
@@ -1418,7 +1342,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ---
 
-## <span id="Table:_feature_pubprop" class="mw-headline">Table: feature_pubprop</span>
+## Table: feature_pubprop
 
 Property or attribute of a feature_pub link.
 
@@ -1434,7 +1358,7 @@ feature_pubprop Structure
 
 ---
 
-## <span id="Table:_feature_relationship" class="mw-headline">Table: feature_relationship</span>
+## Table: feature_relationship
 
 Features can be arranged in graphs, e.g. "exon part_of transcript
 part_of gene"; If type is thought of as a verb, the each arc or edge
@@ -1529,14 +1453,11 @@ feature_relationship Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_relationship_pub](Chado_Tables#Table:_feature_relationship_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_relationshipprop](Chado_Tables#Table:_feature_relationshipprop "Chado Tables")
 
 ---
 
-## <span id="Table:_feature_relationship_pub" class="mw-headline">Table: feature_relationship_pub</span>
+## Table: feature_relationship_pub
 
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
@@ -1551,7 +1472,7 @@ feature_relationship_pub Structure
 
 ---
 
-## <span id="Table:_feature_relationshipprop" class="mw-headline">Table: feature_relationshipprop</span>
+## Table: feature_relationshipprop
 
 Extensible properties for feature_relationships. Analogous structure to
 featureprop. This table is largely optional and not used with a high
@@ -1632,7 +1553,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ---
 
-## <span id="Table:_feature_relationshipprop_pub" class="mw-headline">Table: feature_relationshipprop_pub</span>
+## Table: feature_relationshipprop_pub
 
 Provenance for feature_relationshipprop.
 
@@ -1646,7 +1567,7 @@ feature_relationshipprop_pub Structure
 
 ---
 
-## <span id="Table:_feature_synonym" class="mw-headline">Table: feature_synonym</span>
+## Table: feature_synonym
 
 Linking table between feature and synonym.
 
@@ -1728,7 +1649,7 @@ feature_synonym Structure
 
 ---
 
-## <span id="Table:_featureloc" class="mw-headline">Table: featureloc</span>
+## Table: featureloc
 
 The location of a feature relative to another feature. Important:
 interbase coordinates are used. This is vital as it allows us to
@@ -1936,7 +1857,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ---
 
-## <span id="Table:_featureloc_pub" class="mw-headline">Table: featureloc_pub</span>
+## Table: featureloc_pub
 
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
@@ -1951,7 +1872,7 @@ featureloc_pub Structure
 
 ---
 
-## <span id="Table:_featureprop" class="mw-headline">Table: featureprop</span>
+## Table: featureprop
 
 A feature can have any number of slot-value property tags attached to
 it. This is an alternative to hardcoding a list of columns in the
@@ -2032,7 +1953,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 ---
 
-## <span id="Table:_featureprop_pub" class="mw-headline">Table: featureprop_pub</span>
+## Table: featureprop_pub
 
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
@@ -2047,7 +1968,7 @@ featureprop_pub Structure
 
 ---
 
-## <span id="Table:_synonym" class="mw-headline">Table: synonym</span>
+## Table: synonym
 
 A synonym for a feature. One feature can have multiple synonyms, and the
 same synonym can apply to multiple features.
@@ -2110,58 +2031,6 @@ synonym Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-
-<!-- -->
-
 - [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [BLAST](Category%253ABLAST "Category%253ABLAST")
-- [Chado](Category%253AChado "Category%253AChado")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Sequence_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 22:17 on 18 December 2013.</span>
-<!-- - <span id="footer-info-viewcount">457,963 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

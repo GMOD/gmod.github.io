@@ -1,12 +1,10 @@
 ---
 title: "July 2008 GMOD Meeting"
 ---
-<span id="top"></span>
-
-# <span dir="auto">July 2008 GMOD Meeting</span>
+# July 2008 GMOD Meeting
 
 (Redirected from [July 2008 GMOD Meeting
-Registration](July_2008_GMOD_Meeting_Registration)
+Registration](/wiki/July_2008_GMOD_Meeting_Registration)
 
 <table
 style="font-size: 180%; vertical-align: middle; border: 2px solid #A6A6BC; line-height: 120%"
@@ -42,128 +40,93 @@ School](2008_GMOD_Summer_School "2008 GMOD Summer School"). The meeting
 was attended by over 30 people representing more than 20 different
 groups.
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">July
-    16</span>](#July_16)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">July
-    17</span>](#July_17)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Attendees</span>](#Attendees)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD
-  Components</span>](#GMOD_Components)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Chado</span>](#Chado)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Companalysis
-      Module</span>](#Companalysis_Module)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">Natural Diversity
-      Module</span>](#Natural_Diversity_Module)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Community
-    Annotation System</span>](#Community_Annotation_System)
-    - [<span class="tocnumber">3.2.1</span>
-      <span class="toctext">cas-utils 0.1</span>](#cas-utils_0.1)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">TableEdit</span>](#TableEdit)
-  - [<span class="tocnumber">3.4</span>
-    <span class="toctext">Apollo</span>](#Apollo)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">InterMine</span>](#InterMine)
-  - [<span class="tocnumber">3.6</span>
-    <span class="toctext">CMap</span>](#CMap)
-  - [<span class="tocnumber">3.7</span>
-    <span class="toctext">GBrowse</span>](#GBrowse)
-    - [<span class="tocnumber">3.7.1</span>
-      <span class="toctext">GBrowse 1.69</span>](#GBrowse_1.69)
-    - [<span class="tocnumber">3.7.2</span>
-      <span class="toctext">GBrowse 2</span>](#GBrowse_2)
-    - [<span class="tocnumber">3.7.3</span>
-      <span class="toctext">GBrowse 3</span>](#GBrowse_3)
-      - [<span class="tocnumber">3.7.3.1</span>
-        <span class="toctext">Genome Wiki</span>](#Genome_Wiki)
-      - [<span class="tocnumber">3.7.3.2</span>
-        <span class="toctext">Approximate
-        Schedule</span>](#Approximate_Schedule)
-    - [<span class="tocnumber">3.7.4</span>
-      <span class="toctext">GBrowse Glyphs
-      Page</span>](#GBrowse_Glyphs_Page)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">Common
-    Gene Page</span>](#Common_Gene_Page)
-    - [<span class="tocnumber">3.8.1</span> <span class="toctext">Now
-      What?</span>](#Now_What.3F)
-    - [<span class="tocnumber">3.8.2</span> <span class="toctext">Gene
-      Wiki</span>](#Gene_Wiki)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">MediaWiki
-    Enhancements</span>](#MediaWiki_Enhancements)
-    - [<span class="tocnumber">3.9.1</span>
-      <span class="toctext">FCKEditor</span>](#FCKEditor)
-    - [<span class="tocnumber">3.9.2</span> <span class="toctext">Popup
-      Balloons</span>](#Popup_Balloons)
-    - [<span class="tocnumber">3.9.3</span>
-      <span class="toctext">Collapsible Sections
-      Extension</span>](#Collapsible_Sections_Extension)
-    - [<span class="tocnumber">3.9.4</span>
-      <span class="toctext">Predefined Page Creation
-      Extensions</span>](#Predefined_Page_Creation_Extensions)
-  - [<span class="tocnumber">3.10</span>
-    <span class="toctext">APIs</span>](#APIs)
-    - [<span class="tocnumber">3.10.1</span> <span class="toctext">Perl
+  Agenda](#Agenda)
+  - [July
+    16](#July_16)
+  - [July
+    17](#July_17)
+- [Attendees](#Attendees)
+- [GMOD
+  Components](#GMOD_Components)
+  - [Chado](#Chado)
+    - [Companalysis
+      Module](#Companalysis_Module)
+    - [Natural Diversity
+      Module](#Natural_Diversity_Module)
+  - [Community
+    Annotation System](#Community_Annotation_System)
+    - [cas-utils 0.1](#cas-utils_0.1)
+  - [TableEdit](#TableEdit)
+  - [Apollo](#Apollo)
+  - [InterMine](#InterMine)
+  - [CMap](#CMap)
+  - [GBrowse](#GBrowse)
+    - [GBrowse 1.69](#GBrowse_1.69)
+    - [GBrowse 2](#GBrowse_2)
+    - [GBrowse 3](#GBrowse_3)
+      - [Genome Wiki](#Genome_Wiki)
+      - [Approximate
+        Schedule](#Approximate_Schedule)
+    - [GBrowse Glyphs
+      Page](#GBrowse_Glyphs_Page)
+  - [Common
+    Gene Page](#Common_Gene_Page)
+    - [Now
+      What?](#Now_What.3F)
+    - [Gene
+      Wiki](#Gene_Wiki)
+  - [MediaWiki
+    Enhancements](#MediaWiki_Enhancements)
+    - [FCKEditor](#FCKEditor)
+    - [Popup
+      Balloons](#Popup_Balloons)
+    - [Collapsible Sections
+      Extension](#Collapsible_Sections_Extension)
+    - [Predefined Page Creation
+      Extensions](#Predefined_Page_Creation_Extensions)
+  - [APIs](#APIs)
+    - [Perl
       based Schema Abstraction Layer for
-      Chado</span>](#Perl_based_Schema_Abstraction_Layer_for_Chado)
-      - [<span class="tocnumber">3.10.1.1</span>
-        <span class="toctext">Discussion</span>](#Discussion)
-    - [<span class="tocnumber">3.10.2</span> <span class="toctext">Chado
-      Java API</span>](#Chado_Java_API)
-- [<span class="tocnumber">4</span> <span class="toctext">GMOD User
-  Community</span>](#GMOD_User_Community)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">SGN</span>](#SGN)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">WikiMods.org</span>](#WikiMods.org)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">CellFrame</span>](#CellFrame)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Xenbase</span>](#Xenbase)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Centre for
+      Chado](#Perl_based_Schema_Abstraction_Layer_for_Chado)
+      - [Discussion](#Discussion)
+    - [Chado
+      Java API](#Chado_Java_API)
+- [GMOD User
+  Community](#GMOD_User_Community)
+  - [SGN](#SGN)
+  - [WikiMods.org](#WikiMods.org)
+  - [CellFrame](#CellFrame)
+  - [Xenbase](#Xenbase)
+  - [Centre for
     Molecular and Biomolecular
-    Informatics</span>](#Centre_for_Molecular_and_Biomolecular_Informatics)
-- [<span class="tocnumber">5</span> <span class="toctext">GMOD
-  Project</span>](#GMOD_Project)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Google
-    Summer of Code</span>](#Google_Summer_of_Code)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">Packages</span>](#Packages)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">GMOD Help
-    Desk</span>](#GMOD_Help_Desk)
-    - [<span class="tocnumber">5.3.1</span> <span class="toctext">What's
-      Been Done</span>](#What.27s_Been_Done)
-    - [<span class="tocnumber">5.3.2</span> <span class="toctext">What's
-      Planned</span>](#What.27s_Planned)
-      - [<span class="tocnumber">5.3.2.1</span>
-        <span class="toctext">GMOD User
-        Directory</span>](#GMOD_User_Directory)
-      - [<span class="tocnumber">5.3.2.2</span>
-        <span class="toctext">User Experience
-        Logs</span>](#User_Experience_Logs)
-      - [<span class="tocnumber">5.3.2.3</span>
-        <span class="toctext">Documentation</span>](#Documentation)
-      - [<span class="tocnumber">5.3.2.4</span>
-        <span class="toctext">GMOD Logo
-        Service</span>](#GMOD_Logo_Service)
-      - [<span class="tocnumber">5.3.2.5</span>
-        <span class="toctext">Education and
-        Outreach</span>](#Education_and_Outreach)
-      - [<span class="tocnumber">5.3.2.6</span>
-        <span class="toctext">Grants</span>](#Grants)
-- [<span class="tocnumber">6</span> <span class="toctext">Agenda
-  Proposals</span>](#Agenda_Proposals)
+    Informatics](#Centre_for_Molecular_and_Biomolecular_Informatics)
+- [GMOD
+  Project](#GMOD_Project)
+  - [Google
+    Summer of Code](#Google_Summer_of_Code)
+  - [Packages](#Packages)
+  - [GMOD Help
+    Desk](#GMOD_Help_Desk)
+    - [What's
+      Been Done](#What.27s_Been_Done)
+    - [What's
+      Planned](#What.27s_Planned)
+      - [GMOD User
+        Directory](#GMOD_User_Directory)
+      - [User Experience
+        Logs](#User_Experience_Logs)
+      - [Documentation](#Documentation)
+      - [GMOD Logo
+        Service](#GMOD_Logo_Service)
+      - [Education and
+        Outreach](#Education_and_Outreach)
+      - [Grants](#Grants)
+- [Agenda
+  Proposals](#Agenda_Proposals)
 
-# <span id="Agenda" class="mw-headline">Agenda</span>
+# Agenda
 
-## <span id="July_16" class="mw-headline">July 16</span>
+## July 16
 
 | Time                                                     | Topic                                                           | Who                                                    | Presentation                                                                                                                     |
 | -------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -188,7 +151,7 @@ class="internal" title="IntermineGMOD2008.pdf">PDF</a> |
 | 3:50 | Show and Tell | "What I did with my Summer" | |
 | | [CMap](CMap.1 "CMap") | [Ben Faga](User%253AFaga "User%253AFaga") | |
 
-## <span id="July_17" class="mw-headline">July 17</span>
+## July 17
 
 | Time                                 | Topic                                                                                                      | Who                                                | Presentation                                                                                                                     |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -206,7 +169,7 @@ class="internal" title="IntermineGMOD2008.pdf">PDF</a> |
 |                                      | Matching Gene Names to Articles at Xenbase                                                                 | Jeff Bowes                                         |                                                                                                                                  |
 |                                      | [Django and Chado](Chado_Django_HOWTO "Chado Django HOWTO") - A user interface exploration                 | Victor de Jager                                    |                                                                                                                                  |
 
-# <span id="Attendees" class="mw-headline">Attendees</span>
+# Attendees
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/GMOD2008Attendees.JPG" width="400"
@@ -297,21 +260,21 @@ height="148" alt="GMOD2008Attendees.JPG" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/31/GMOD2008Discussion.JPG" width="245"
 height="148" alt="GMOD2008Discussion.JPG" />
 
-# <span id="GMOD_Components" class="mw-headline">GMOD Components</span>
+# GMOD Components
 
 This section covers discussion about the [software
 components](GMOD_Components "GMOD Components") in GMOD. For a summary of
 talks and discussion on how those components are used at particular
 databases, see the [GMOD User Community](#GMOD_User_Community) section.
 
-## <span id="Chado" class="mw-headline">Chado</span>
+## Chado
 
 [Scott Cain](User%253AScott "User%253AScott") spoke on
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
 The GMOD 1.1 release is in the works. There are no schema changes yet.
 
-### <span id="Companalysis_Module" class="mw-headline">Companalysis Module</span>
+### Companalysis Module
 
 Joshua Orvis requested better typing / the use of controlled
 vocabularies in the [Chado Companalysis
@@ -335,7 +298,7 @@ general approval.
 
 - get Chris Mungall's input on these issues.
 
-### <span id="Natural_Diversity_Module" class="mw-headline">Natural Diversity Module</span>
+### Natural Diversity Module
 
 [Dave Clements](User%253AClements "User%253AClements") discussed the Chado
 Natural Diversity Module. It was developed at
@@ -351,7 +314,7 @@ pointed out there was grant money to do exactly this.
 
 - Dave will follow up with Lincoln.
 
-## <span id="Community_Annotation_System" class="mw-headline">Community Annotation System</span>
+## Community Annotation System
 
 [Scott Cain](User%253AScott "User%253AScott") also spoke about his work on the
 [Community Annotation
@@ -362,7 +325,7 @@ System](Community_Annotation_System "Community Annotation System")
 - [GMODWeb](GMODWeb "GMODWeb") will be included.
 - cas-utils 0.1
 
-### <span id="cas-utils_0.1" class="mw-headline">cas-utils 0.1</span>
+### cas-utils 0.1
 
 cas-utils is a set of tools that tie together
 [GBrowse](GBrowse.1 "GBrowse"), [Apollo](Apollo.1 "Apollo") and
@@ -382,7 +345,7 @@ cas-utils is now available for <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=284978"
 class="external text" rel="nofollow">download</a>.
 
-## <span id="TableEdit" class="mw-headline">TableEdit</span>
+## TableEdit
 
 [Jim Hu](User%253AJimHu.1 "User%253AJimHu") spoke about progress on
 [TableEdit](TableEdit.1 "TableEdit"), currently at release 0.8.
@@ -394,7 +357,7 @@ class="external text" rel="nofollow">download</a>.
   done.
   - Chado to MediaWiki is done, vice versa is not.
 
-## <span id="Apollo" class="mw-headline">Apollo</span>
+## Apollo
 
 Ed Lee, lead developer for [Apollo](Apollo.1 "Apollo") spoke about
 enhancements to Apollo that have happened since he started working on it
@@ -405,7 +368,7 @@ last September:
 - Chado adapter enhancements
 - Improved graph and GFF3 support
 
-## <span id="InterMine" class="mw-headline">InterMine</span>
+## InterMine
 
 Richard Smith spoke about [InterMine](InterMine "InterMine"), a query
 optimized data warehouse system for biological data. Has the ability to
@@ -419,7 +382,7 @@ one class per Sequence Ontology (SO) term, and use Java class
 inheritance for _is_a_ relationships. _part_of_ relationships are
 implemented with Java references and collections.
 
-## <span id="CMap" class="mw-headline">CMap</span>
+## CMap
 
 [Ben Faga](User%253AFaga "User%253AFaga") gave a talk on what's new in
 [CMap](CMap.1 "CMap"). Some highlights:
@@ -431,13 +394,13 @@ implemented with Java references and collections.
 - embeddable image generation
 - directory guessing for easier installation.
 
-## <span id="GBrowse" class="mw-headline">GBrowse</span>
+## GBrowse
 
 Three talks gave us the [GBrowse](GBrowse.1 "GBrowse") roadmap. Talks
 covered the next incremental release (1.69), and the next two major
 releases (2 and 3).
 
-### <span id="GBrowse_1.69" class="mw-headline">GBrowse 1.69</span>
+### GBrowse 1.69
 
 [Sheldon McKay](User%253AMckays "User%253AMckays") and [Lincoln
 Stein](User%253ALstein "User%253ALstein") spoke about recent enhancements to
@@ -465,7 +428,7 @@ in the upcoming (some would say imminent) 1.69 release of GBrowse.
   - Lists data sources including BioMart and WormBase GBrowse.
 - Multiple Alignment Format (MAF) and conservation tracks.
 
-### <span id="GBrowse_2" class="mw-headline">GBrowse 2</span>
+### GBrowse 2
 
 [Lincoln Stein](User%253ALstein "User%253ALstein") talked about GBrowse 2, the
 next major release of GBrowse. This release focuses on performance and
@@ -486,7 +449,7 @@ existing GBrowse installations.
 
 - Can also enable editing of feature comments.
 
-### <span id="GBrowse_3" class="mw-headline">GBrowse 3</span>
+### GBrowse 3
 
 _GBrowse 3 was renamed [JBrowse](JBrowse.1 "JBrowse") after this
 meeting._
@@ -509,7 +472,7 @@ you need large sample sizes. Small sample sizes lead to a large set of
 suggestions with very little overlap between users. Large sample sizes
 enables you to identify a core set of requests.
 
-#### <span id="Genome_Wiki" class="mw-headline">Genome Wiki</span>
+#### Genome Wiki
 
 Ian would like to move GBrowse 3 in the direction of being a _genome
 wiki_
@@ -521,7 +484,7 @@ wiki_
 Genome Wiki is about people sharing tracks, not so much about individual
 genes.
 
-#### <span id="Approximate_Schedule" class="mw-headline">Approximate Schedule</span>
+#### Approximate Schedule
 
 - 2008?: A Lightweight AJAX Genome Browser
 - 2009?: An AJAX Genome Wiki
@@ -530,7 +493,7 @@ They are not currently working on a
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> adaptor.
 They hope to do that, but probably not soon.
 
-### <span id="GBrowse_Glyphs_Page" class="mw-headline">GBrowse Glyphs Page</span>
+### GBrowse Glyphs Page
 
 At the [2008 GMOD Summer
 School](2008_GMOD_Summer_School "2008 GMOD Summer School") there were
@@ -547,7 +510,7 @@ GBrowse distribution.
 
 - Dave will investigate further.
 
-## <span id="Common_Gene_Page" class="mw-headline">Common Gene Page</span>
+## Common Gene Page
 
 [Scott Cain](User%253AScott "User%253AScott") eerily yet effectively channeled
 [Don Gilbert](User%253ADongilbert "User%253ADongilbert") on the topic of a
@@ -572,7 +535,7 @@ settled on.
 
 Uniprot [XML](Glossary#XML "Glossary") may be suitable for this.
 
-### <span id="Now_What.3F" class="mw-headline">Now What?</span>
+### Now What?
 
 Lincoln proposed a CGI script that has a set of predefined hooks for
 populating the XML. This could be a Perl program with methods for
@@ -590,7 +553,7 @@ of this program while at the meeting.
 
 - ?
 
-### <span id="Gene_Wiki" class="mw-headline">Gene Wiki</span>
+### Gene Wiki
 
 We also discussed the
 <a href="http://en.wikipedia.org/wiki/Gene_Wiki" class="extiw"
@@ -605,14 +568,14 @@ around 7,000 human gene pages in Wikipedia. Wikipedia asked
 Someone might eventually be able to create a MODGeneWiki from GMOD
 Common Web Pages.
 
-## <span id="MediaWiki_Enhancements" class="mw-headline">MediaWiki Enhancements</span>
+## MediaWiki Enhancements
 
 [Sheldon McKay](User%253AMckays "User%253AMckays") spoke about MediaWiki related
 work he's been doing for the
 <a href="http://www.modencode.org" class="external text"
 rel="nofollow">modENCODE project</a>.
 
-### <span id="FCKEditor" class="mw-headline">FCKEditor</span>
+### FCKEditor
 
 <a href="http://mediawiki.fckeditor.net/" class="external text"
 rel="nofollow">FCKEditor</a> is a WYSIWIG editor for MediaWiki, but if
@@ -626,19 +589,19 @@ Users now see "edit" "rich edit" links and tabs.
 - Dave will investigate FCKEditor and the modified version for use in
   the GMOD web site.
 
-### <span id="Popup_Balloons" class="mw-headline">Popup Balloons</span>
+### Popup Balloons
 
 Sheldon has also created an extension for creating popup balloons in a
 MediaWiki Web Site. See [Popup
 Balloons](Popup_Balloons "Popup Balloons") for details. This extension
 is installed on the GMOD web site.
 
-### <span id="Collapsible_Sections_Extension" class="mw-headline">Collapsible Sections Extension</span>
+### Collapsible Sections Extension
 
 Does what it says - enables users to collapse and expand sections on
 pages in MediaWiki.
 
-### <span id="Predefined_Page_Creation_Extensions" class="mw-headline">Predefined Page Creation Extensions</span>
+### Predefined Page Creation Extensions
 
 A set of extensions were created to
 
@@ -649,9 +612,9 @@ A set of extensions were created to
 
 These use the Yahoo autocomplettion library.
 
-## <span id="APIs" class="mw-headline">APIs</span>
+## APIs
 
-### <span id="Perl_based_Schema_Abstraction_Layer_for_Chado" class="mw-headline">Perl based Schema Abstraction Layer for Chado</span>
+### Perl based Schema Abstraction Layer for Chado
 
 Brad Arshinoff from
 <a href="http://xanthusbase.org" class="external text"
@@ -666,7 +629,7 @@ talk (slides unavailable) gave an overview of a
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> that was
 developed at XanthusBase.
 
-#### <span id="Discussion" class="mw-headline">Discussion</span>
+#### Discussion
 
 **Q:** [Modware](Modware "Modware") is a Perl-based Chado API that
 already exists. Why not use it?
@@ -694,7 +657,7 @@ to make the best informed choice about what they want to do.
   - 2008/08 - Done. Modware is actively being worked on by DictyBase
     staff.
 
-### <span id="Chado_Java_API" class="mw-headline">Chado Java API</span>
+### Chado Java API
 
 Ed Lee presented a talk on the need for a Java interface to to the Chado
 schema. He's going to be rewriting the Apollo data model to clearly
@@ -711,9 +674,9 @@ Having a cleanly designed, biological level (as opposed to DBMS table
 level) API for Java would help organizations follow best practices when
 using Chado. It also would make tool development much easier.
 
-# <span id="GMOD_User_Community" class="mw-headline">GMOD User Community</span>
+# GMOD User Community
 
-## <span id="SGN" class="mw-headline">SGN</span>
+## SGN
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d6/GMOD2008Lukas.JPG" width="120"
@@ -738,7 +701,7 @@ Module](Chado_Phenotype_Module "Chado Phenotype Module"). Suzi Lewis
 indicated that her group is working on a new phenotype module for Chado
 which will address issues with the current design.)
 
-## <span id="WikiMods.org" class="mw-headline">WikiMods.org</span>
+## WikiMods.org
 
 Brad Arshinoff from
 <a href="http://xanthusbase.org" class="external text"
@@ -759,14 +722,14 @@ It is scheduled to launch on July 30 2008 with these sites:
 They have migrated Chado from Oracle to
 [MySQL](Category%253AMySQL "Category%253AMySQL").
 
-## <span id="CellFrame" class="mw-headline">CellFrame</span>
+## CellFrame
 
 Yunchen Gong gave a talk about
 <a href="http://cellframe.bioknowledge.org/" class="external text"
 rel="nofollow">CellFrame</a>, a web site about cell biology and
 construction of cell perturbation networks
 
-## <span id="Xenbase" class="mw-headline">Xenbase</span>
+## Xenbase
 
 Jeff Bowes of <a href="http://xenbase.org" class="external text"
 rel="nofollow">Xenbase</a> talked about automatic loading, linking, and
@@ -781,7 +744,7 @@ Xenbase also scrapes images from each journal they have an agreement
 with. They use a Java class for journals, and every journal has its own
 subclass.
 
-## <span id="Centre_for_Molecular_and_Biomolecular_Informatics" class="mw-headline">Centre for Molecular and Biomolecular Informatics</span>
+## Centre for Molecular and Biomolecular Informatics
 
 Victor de Jager of the University of Nijmegen and the Centre for
 Molecular and Biomolecular Informatics, gave a talk on using the Django
@@ -790,9 +753,9 @@ HOWTO](Chado_Django_HOWTO "Chado Django HOWTO") for more). A Django
 based web site could be layered on top of the BioObjects proposed by Ed
 Lee in his talk.
 
-# <span id="GMOD_Project" class="mw-headline">GMOD Project</span>
+# GMOD Project
 
-## <span id="Google_Summer_of_Code" class="mw-headline">Google Summer of Code</span>
+## Google Summer of Code
 
 Last year a Google Summer of Code student worked with Lincoln, and
 Hilmar Lapp (at NESCent) on a Google Summer of Code project to add
@@ -805,7 +768,7 @@ work to be a mentor in the program.
 - Dave will investigate further and encourage the GMOD community to
   participate in the program during the summer of 2009.
 
-## <span id="Packages" class="mw-headline">Packages</span>
+## Packages
 
 At the end of the [GMOD Help Desk talk (see below)](#GMOD_Help_Desk),
 Dave asked for what else he should be working on. The number one
@@ -825,13 +788,13 @@ after that.
 
 - No solution or action item was settled on.
 
-## <span id="GMOD_Help_Desk" class="mw-headline">GMOD Help Desk</span>
+## GMOD Help Desk
 
 [Dave Clements](User%253AClements "User%253AClements") gave a talk on his first
 10 months at the [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk"), and
 what he is planning doing in the coming months.
 
-### <span id="What.27s_Been_Done" class="mw-headline">What's Been Done</span>
+### What's Been Done
 
 - [Web
   Site](News/Ten_Recent_Web_Site_Changes "News/Ten Recent Web Site Changes")
@@ -847,9 +810,9 @@ what he is planning doing in the coming months.
   - [MAKER](MAKER.1 "MAKER") now part of GMOD.
   - [Phenote](Phenote "Phenote") is on its way.
 
-### <span id="What.27s_Planned" class="mw-headline">What's Planned</span>
+### What's Planned
 
-#### <span id="GMOD_User_Directory" class="mw-headline">GMOD User Directory</span>
+#### GMOD User Directory
 
 Planning to [TableEdit](TableEdit.1 "TableEdit") to make parts of the
 GMOD web site be database driven. Plan on having the same core set of
@@ -862,7 +825,7 @@ This is a continuation of the _community portal_ idea that was started
 in the past 10 months. This will help new and existing users get a
 handle on who is using which components for what kind of biology.
 
-#### <span id="User_Experience_Logs" class="mw-headline">User Experience Logs</span>
+#### User Experience Logs
 
 We can't possibly describe or maintain HOWTO pagess for all possible
 combinations of operating system (in all their versions), external
@@ -883,7 +846,7 @@ Dave will create a plan for
 - making it easy to do so, and
 - encourage users to do this.
 
-#### <span id="Documentation" class="mw-headline">Documentation</span>
+#### Documentation
 
 - Components
   - [Chado Documentation
@@ -906,7 +869,7 @@ Dave will create a plan for
   - Better searching
   - New skin.
 
-#### <span id="GMOD_Logo_Service" class="mw-headline">[GMOD Logo Service](GMOD_Logo_Program "GMOD Logo Program")</span>
+#### [GMOD Logo Service](GMOD_Logo_Program "GMOD Logo Program")
 
 <a href="http://zfin.org" class="external text"
 rel="nofollow">ZFIN's</a> current logo was designed several years ago by
@@ -926,7 +889,7 @@ This was clearly the most popular idea Dave has ever had during his time
 at GMOD. I'll investigate ASAP. (_See [GMOD Logo
 Program](GMOD_Logo_Program "GMOD Logo Program")._)
 
-#### <span id="Education_and_Outreach" class="mw-headline">[Education and Outreach](Training_and_Outreach "Training and Outreach")</span>
+#### [Education and Outreach](Training_and_Outreach "Training and Outreach")
 
 - [2009 Summer
   School](2009_GMOD_Summer_School_-_Americas "2009 GMOD Summer School - Americas")
@@ -938,7 +901,7 @@ Program](GMOD_Logo_Program "GMOD Logo Program")._)
   genomics](Comparative_Genomics "Comparative Genomics") and community
   annotation.
 
-#### <span id="Grants" class="mw-headline">Grants</span>
+#### Grants
 
 The Help Desk now offers to review grant proposal prior to submission to
 help them fully state how much they can use GMOD components, and thus
@@ -949,7 +912,7 @@ components also include a limited amount of funding for GMOD in the
 grant. This could either be core project funding, funding for existing
 components or funding for new components to become part of GMOD.
 
-# <span id="Agenda_Proposals" class="mw-headline">Agenda Proposals</span>
+# Agenda Proposals
 
 If you have something you want to be on the agenda at this meeting
 please add it below.
@@ -976,9 +939,6 @@ please add it below.
   "Biological" layer [Ed](User%253AElee "User%253AElee")
 - GBrowse 1.69 show and tell [Sheldon McKay](User%253AMckays "User%253AMckays")
 - MediaWiki enhancements [Sheldon McKay](User%253AMckays "User%253AMckays")
-
-<!-- -->
-
 - [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") - [Dave
   Clements](User%253AClements "User%253AClements")
   - priorities for 2008-2009
@@ -999,62 +959,3 @@ please add it below.
     GMOD components such as
     <a href="Chado" class="mw-redirect" title="Chado">Chado</a> or
     [InterMine](InterMine "InterMine")?
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
-- [Analysis](Category%253AAnalysis "Category%253AAnalysis")
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [Java](Category%253AJava "Category%253AJava")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [InterMine](Category%253AInterMine "Category%253AInterMine")
-- [Javascript](Category%253AJavascript "Category%253AJavascript")
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [SGN](Category%253ASGN "Category%253ASGN")
-- [XML](Category%253AXML "Category%253AXML")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/July_2008_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">316,568 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

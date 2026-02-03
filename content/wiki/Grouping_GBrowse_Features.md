@@ -1,23 +1,7 @@
 ---
 title: "Grouping GBrowse Features"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Grouping GBrowse Features</span>
-
-
-
-
-
-
-
+# Grouping GBrowse Features
 
 
 [GBrowse](GBrowse.1 "GBrowse") recognizes the concept of a "group" of
@@ -28,7 +12,7 @@ Bio::DB::GFF database backends, do not allow for arbitrary hierarchical
 grouping. To work around this, you may specify a feature name-based
 regular expression that will be used to trigger grouping.
 
-## <span id="The_group_pattern_Option" class="mw-headline">The group_pattern Option</span>
+## The group_pattern Option
 
 It works like this. Say you are working with EST feature pairs and they
 follow the nomenclature 501283.5 and 501283.3, where the suffix is "5"
@@ -57,7 +41,7 @@ It is entirely possible to create an invalid regular expression, in
 which case gbrowse will crash until you comment out the offending
 option.
 
-## <span id="The_group_on_Option" class="mw-headline">The group_on Option</span>
+## The group_on Option
 
 The Bio::DB::SeqFeature::Store database backend has the opposite
 problem.It allows features to be hierarchically grouped to an unlimited
@@ -87,87 +71,6 @@ Tracks](GBrowse/Uploading_Wiggle_Tracks "GBrowse/Uploading Wiggle Tracks")
 for instructions.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Grouping_GBrowse_Features"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 06:09 on 25 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">16,470 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

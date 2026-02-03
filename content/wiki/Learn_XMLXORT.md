@@ -1,23 +1,7 @@
 ---
 title: "Learn XMLXORT"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Learn XMLXORT</span>
-
-
-
-
-
-
-
+# Learn XMLXORT
 
 
 ok, first question is why xmlxort. because many information are not in
@@ -42,49 +26,41 @@ steps: I will first try on the rudimental table, such as cv(?), biblio,
 db(?).
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">wormbase acedb
   classes</span>](#wormbase_acedb_classes)
-- [<span class="tocnumber">2</span> <span class="toctext">chado database
-  ddl</span>](#chado_database_ddl)
-- [<span class="tocnumber">3</span> <span class="toctext">chadoxml
-  dtd</span>](#chadoxml_dtd)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">chadoxml</span>](#chadoxml)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">migration</span>](#migration)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">mapping
-    wormbase info to chado</span>](#mapping_wormbase_info_to_chado)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">extract
+- [chado database
+  ddl](#chado_database_ddl)
+- [chadoxml
+  dtd](#chadoxml_dtd)
+- [chadoxml](#chadoxml)
+- [migration](#migration)
+  - [mapping
+    wormbase info to chado](#mapping_wormbase_info_to_chado)
+  - [extract
     info from wormbase using AcePerl (sample
-    code)</span>](#extract_info_from_wormbase_using_AcePerl_.28sample_code.29)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">write
-    chadoxml (sample xml)</span>](#write_chadoxml_.28sample_xml.29)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">validate
-    xml file</span>](#validate_xml_file)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">load xml
-    file</span>](#load_xml_file)
-- [<span class="tocnumber">6</span> <span class="toctext">order is
-  important for loading</span>](#order_is_important_for_loading)
-- [<span class="tocnumber">7</span> <span class="toctext">extend chado
-  schema</span>](#extend_chado_schema)
-- [<span class="tocnumber">8</span> <span class="toctext">cvterm is most
-  important for chado</span>](#cvterm_is_most_important_for_chado)
-- [<span class="tocnumber">9</span> <span class="toctext">strain from
+    code)](#extract_info_from_wormbase_using_AcePerl_.28sample_code.29)
+  - [write
+    chadoxml (sample xml)](#write_chadoxml_.28sample_xml.29)
+  - [validate
+    xml file](#validate_xml_file)
+  - [load xml
+    file](#load_xml_file)
+- [order is
+  important for loading](#order_is_important_for_loading)
+- [extend chado
+  schema](#extend_chado_schema)
+- [cvterm is most
+  important for chado](#cvterm_is_most_important_for_chado)
+- [strain from
   wormbase to stock from
-  chado</span>](#strain_from_wormbase_to_stock_from_chado)
-- [<span class="tocnumber">10</span> <span class="toctext">transgene
+  chado](#strain_from_wormbase_to_stock_from_chado)
+- [transgene
   from wormbase to feature from
-  chado</span>](#transgene_from_wormbase_to_feature_from_chado)
-- [<span class="tocnumber">11</span> <span class="toctext">variation
-  from wormbase</span>](#variation_from_wormbase)
+  chado](#transgene_from_wormbase_to_feature_from_chado)
+- [variation
+  from wormbase](#variation_from_wormbase)
 
 
-
-## <span id="wormbase_acedb_classes" class="mw-headline">wormbase acedb classes</span>
+## wormbase acedb classes
 
 I started with class Paper. acedb classes are mixture of c structure and
 database description. pointers are to other class object. class paper
@@ -93,16 +69,16 @@ laboratory. some are weak reference (circular, back_ref, dealt in perl
 module scalar::util, interesting it is here) obviously, a lot of *ad
 hoc* reading script needed.
 
-## <span id="chado_database_ddl" class="mw-headline">chado database ddl</span>
+## chado database ddl
 
 there is a file named chado.ddl in xmlxort/example/, schema/dat/. the
 grammar can be found at
 <a href="http://www.postgresql.org/docs/8.1/static/sql-createtable.html"
 class="external text" rel="nofollow">postgresql create table command</a>.
 
-## <span id="chadoxml_dtd" class="mw-headline">chadoxml dtd</span>
+## chadoxml dtd
 
-## <span id="chadoxml" class="mw-headline">chadoxml</span>
+## chadoxml
 
 - chadoxml is a direct, fixed mapping of the chado schema;
 - change to ddl will map to change to dtd by a program
@@ -110,9 +86,6 @@ class="external text" rel="nofollow">postgresql create table command</a>.
 - can delete, update(alter), new(create), etc using XML.
 - no module in xml
 - table map to element, foreign table maps to nested element
-
-<!-- -->
-
     <pub>
        <pubprop>
           ....
@@ -120,9 +93,6 @@ class="external text" rel="nofollow">postgresql create table command</a>.
     </pub> 
 
 - column map to nested element
-
-<!-- -->
-
     <pub>
        <uniquename>this paper</uniquename>
     </pub>
@@ -130,15 +100,9 @@ class="external text" rel="nofollow">postgresql create table command</a>.
 - xml attributes only a few, usually for database transaction, such as
   lookup, insert, delete, update, force. default is force, i.e,combining
   lookup/update/insert.
-
-<!-- -->
-
     <pub op='lookup'>
 
 - macro_id for save space, since XML could be quite long
-
-<!-- -->
-
     <pub id='WBPaper000001'>
       <title>....
       <miniref>....
@@ -151,7 +115,7 @@ class="external text" rel="nofollow">postgresql create table command</a>.
   pub_id. this is always true in chado for foreign key. see above
   example.
 
-## <span id="migration" class="mw-headline">migration</span>
+## migration
 
 I first wrote a read and a write part for migrating paper class object.
 after I finished write subroutine with XML::Writer, I found it just
@@ -161,7 +125,7 @@ job. So I need to read acedb (multi classes) to extract info for a table
 and represent it into a **DOM** object. this is what I think I will do
 in the next several months.
 
-### <span id="mapping_wormbase_info_to_chado" class="mw-headline">mapping wormbase info to chado</span>
+### mapping wormbase info to chado
 
 <a href="http://www.wormbase.org/db/misc/model?class=Paper"
 class="external text" rel="nofollow">here</a> is the paper class model
@@ -188,7 +152,7 @@ Wormbase to chado is as following:
 - paper-\>Type --\> pub.type_id
 - pubprop (type=paper remark)
 
-### <span id="extract_info_from_wormbase_using_AcePerl_.28sample_code.29" class="mw-headline">extract info from wormbase using AcePerl (sample code)</span>
+### extract info from wormbase using AcePerl (sample code)
 
      sub read_paper_pub {
        my $paper = shift;
@@ -204,7 +168,7 @@ Wormbase to chado is as following:
            }
        }
 
-### <span id="write_chadoxml_.28sample_xml.29" class="mw-headline">write chadoxml (sample xml)</span>
+### write chadoxml (sample xml)
 
     sub write_paper_pub {
        my $paper = shift;
@@ -254,17 +218,17 @@ Wormbase to chado is as following:
            $pub_el->appendChild($pr_el);
        }
 
-### <span id="validate_xml_file" class="mw-headline">validate xml file</span>
+### validate xml file
 
     xort_validator.pl -d wormbase_chado -f xml/paper/1.xml -v 1 -b 1
 
 this will connect database to validate the xml file
 
-### <span id="load_xml_file" class="mw-headline">load xml file</span>
+### load xml file
 
     xort_loader.pl -d wormbase_chado -f xml/paper/1.xml
 
-## <span id="order_is_important_for_loading" class="mw-headline">order is important for loading</span>
+## order is important for loading
 
 - load cvterm first, mapping wormbase paper/person type/proptype to
   chado cvterm
@@ -274,13 +238,10 @@ this will connect database to validate the xml file
   pub/contact (a relationship)will not exist in xml/db before all
   pub/contact instance get populated.
 
-## <span id="extend_chado_schema" class="mw-headline">extend chado schema</span>
+## extend chado schema
 
 - add a contactprop table rather than alter contact table (e.g, adding
   email column, etc.) this solution is fully extensible.
-
-<!-- -->
-
        1 -- ================================================
        2 -- TABLE: contactprop
        3 -- ================================================
@@ -302,112 +263,23 @@ this will connect database to validate the xml file
       19 create index contactprop_idx1 on contactprop (contactprop_id);
       20 create index contactprop_idx2 on contactprop (type_id);
 
-## <span id="cvterm_is_most_important_for_chado" class="mw-headline">cvterm is most important for chado</span>
+## cvterm is most important for chado
 
 the power of chado relies on common and controlled cvterms,
 <a href="http://www.foaf-project.org/" class="external text"
 rel="nofollow">FOAF</a> cvterms will be reused as much as possible for
 contact properties. Plus some terms from WormBase.
 
-## <span id="strain_from_wormbase_to_stock_from_chado" class="mw-headline">strain from wormbase to stock from chado</span>
+## strain from wormbase to stock from chado
 
 straight forward mapping.
 
-## <span id="transgene_from_wormbase_to_feature_from_chado" class="mw-headline">transgene from wormbase to feature from chado</span>
+## transgene from wormbase to feature from chado
 
 a transgene in wormbase will map to a feature in chado,
 type_id=synthetic construct
 
-## <span id="variation_from_wormbase" class="mw-headline">variation from wormbase</span>
+## variation from wormbase
 
 - variation type == allele will map to feature
 - variation type == delete/ will map to ?
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [XORT](Category%253AXORT "Category%253AXORT")
-- [XML](Category%253AXML "Category%253AXML")
-- [WormBase](Category%253AWormBase "Category%253AWormBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Learn_XMLXORT" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:52 on 23 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">48,767 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

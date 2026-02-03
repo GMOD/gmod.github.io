@@ -1,29 +1,12 @@
 ---
 title: "GMOD virtual machine project"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD virtual machine project</span>
-
-
-
-
-
-
-
+# GMOD virtual machine project
 
 
 > The item described in this page is not (or is no longer) supported by
 > the GMOD project.  
 > This page is included only for reference purposes.
-
 
 
 The people who created and maintained these VMware images have moved on
@@ -36,7 +19,6 @@ VMware images still exist in GMOD in several places. See:
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [Community Annotation
   System](Community_Annotation_System "Community Annotation System")
-
 
 
 Initial versions of GMOD virtual machines have been uploaded/documented
@@ -96,7 +78,7 @@ Thanks for your time, Scott
   ([AJAX](Category%253AAJAX "Category%253AAJAX") and wiki).
 - Eric Just suggested [Modware](Modware "Modware").
 
-## <span id="About_.27when_released.27" class="mw-headline">About 'when released'</span>
+## About 'when released'
 
 - Work is on going on Chado core components, notably getting a conversion
   from GFF3 to [chadoxml](Chado_XML "Chado XML") which will require
@@ -110,87 +92,6 @@ Also see [Community Annotation
 System](Community_Annotation_System "Community Annotation System").
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Unsupported](Category%253AUnsupported "Category%253AUnsupported")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_virtual_machine_project"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:21 on 24 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">31,637 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

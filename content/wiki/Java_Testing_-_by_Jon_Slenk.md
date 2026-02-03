@@ -1,26 +1,10 @@
 ---
 title: "Java Testing - by Jon Slenk"
 ---
+# Java Testing - by Jon Slenk
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Java Testing - by Jon Slenk</span>
-
-
-
-
-
-
-
-
-
-### <span id="Abstract" class="mw-headline">Abstract</span>
+### Abstract
 
 Good software cannot be written in the absence of testing. A range of
 testing methods exists, each with specific reasons for use. In this
@@ -51,7 +35,7 @@ applied when deciding if given software meets one's needs but those are
 outside the scope of this document.) Thus, we examine specific subjects
 and tools which may be used to achieve goals via testing.
 
-### <span id="Targets_of_Testing_for_GMOD" class="mw-headline">Targets of Testing for GMOD</span>
+### Targets of Testing for GMOD
 
 A simple description of the two most important questions regarding GMOD
 software is: "When will its development be completed?" and "Does it
@@ -175,90 +159,3 @@ rel="nofollow">http://logging.apache.org/log4j/docs</a>
 Extras Article regarding <a
 href="http://www.stickyminds.com/sitewide.asp?sid=1&amp;sqry=%2AZ%28SM%29%2AJ%28ARTCOL%29%2AR%28createdate%29%2AK%28articlesandpapers%29%2AF%28%7E%29%2AX%28sqeorig%29%2A&amp;sidx=10&amp;sopp=10&amp;ObjectId=9860&amp;Function=DETAILBROWSE&amp;ObjectType=ART"
 class="external text" rel="nofollow">code rot</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-- [Java](Category%253AJava "Category%253AJava")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Java_Testing_-2D_by_Jon_Slenk"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:50 on 25 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">15,632 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

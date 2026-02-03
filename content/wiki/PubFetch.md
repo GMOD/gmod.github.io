@@ -1,23 +1,7 @@
 ---
 title: "PubFetch"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">PubFetch</span>
-
-
-
-
-
-
-
+# PubFetch
 
 
 > The item described in this page is not (or is no longer) supported by
@@ -46,7 +30,7 @@ rel="nofollow">TAIR</a>. A standard API and data format will be created
 to provide database queries and return results, popular existing formats
 and protocols will be used/supported wherever possible.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4f/Pubfetch_overview.jpg" width="496"
@@ -90,7 +74,7 @@ The fundamental actions required of PubFetch are:
 
   
 
-### <span id="PubFetch_as_a_BioMOBY_webservice" class="mw-headline">PubFetch as a BioMOBY webservice</span>
+### PubFetch as a BioMOBY webservice
 
 To provide generic access to PubFetch we intend to make the core
 functionality available as a webservice, following the
@@ -106,96 +90,8 @@ other codebases
 
   
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 The source code can be downloaded from <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=126656"
 class="external text" rel="nofollow">SourceForge</a>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")
-- [RGD](Category%253ARGD "Category%253ARGD")
-- [TAIR](Category%253ATAIR "Category%253ATAIR")
-- [PubSearch](Category%253APubSearch "Category%253APubSearch")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/PubFetch" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:31 on 15 October
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">24,824 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

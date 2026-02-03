@@ -1,23 +1,7 @@
 ---
 title: "NIH 2002 Workshop on Model Organism Databases"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">NIH 2002 Workshop on Model Organism Databases</span>
-
-
-
-
-
-
-
+# NIH 2002 Workshop on Model Organism Databases
 
 
 **<a href="http://www.genome.gov/10006356" class="external text"
@@ -37,87 +21,78 @@ National Human Genome Research Institute Bethesda, Md. April 29-30, 2002
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">2</span> <span class="toctext">Executive
-  Summary</span>](#Executive_Summary)
-- [<span class="tocnumber">3</span> <span class="toctext">Detailed
-  Report</span>](#Detailed_Report)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Benefits
-    of Reuse</span>](#Benefits_of_Reuse)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Good
+  Participants](#Participants)
+- [Executive
+  Summary](#Executive_Summary)
+- [Detailed
+  Report](#Detailed_Report)
+  - [Benefits
+    of Reuse](#Benefits_of_Reuse)
+  - [Good
     Practices and Other Guidelines for New
-    MODs</span>](#Good_Practices_and_Other_Guidelines_for_New_MODs)
-    - [<span class="tocnumber">3.2.1</span> <span class="toctext">1.
+    MODs](#Good_Practices_and_Other_Guidelines_for_New_MODs)
+    - [1.
       Rely on institution practices rather than
-      people</span>](#1._Rely_on_institution_practices_rather_than_people)
-    - [<span class="tocnumber">3.2.2</span> <span class="toctext">2.
+      people](#1._Rely_on_institution_practices_rather_than_people)
+    - [2.
       Reuse software, don't reinvent
-      it</span>](#2._Reuse_software.2C_don.27t_reinvent_it)
-    - [<span class="tocnumber">3.2.3</span> <span class="toctext">3.
+      it](#2._Reuse_software.2C_don.27t_reinvent_it)
+    - [3.
       Seek "co-curation" opportunities whenever
-      possible</span>](#3._Seek_.22co-curation.22_opportunities_whenever_possible)
-    - [<span class="tocnumber">3.2.4</span> <span class="toctext">4.
+      possible](#3._Seek_.22co-curation.22_opportunities_whenever_possible)
+    - [4.
       Design software with a view to
-      interoperability</span>](#4._Design_software_with_a_view_to_interoperability)
-    - [<span class="tocnumber">3.2.5</span> <span class="toctext">5.
+      interoperability](#4._Design_software_with_a_view_to_interoperability)
+    - [5.
       Perform a thorough needs analysis. Repeat
-      regularly</span>](#5._Perform_a_thorough_needs_analysis._Repeat_regularly)
-    - [<span class="tocnumber">3.2.6</span> <span class="toctext">6.
+      regularly](#5._Perform_a_thorough_needs_analysis._Repeat_regularly)
+    - [6.
       Involve the research
-      community</span>](#6._Involve_the_research_community)
-    - [<span class="tocnumber">3.2.7</span> <span class="toctext">7.
-      Interact with other MODs</span>](#7._Interact_with_other_MODs)
-    - [<span class="tocnumber">3.2.8</span> <span class="toctext">8. Use
+      community](#6._Involve_the_research_community)
+    - [7.
+      Interact with other MODs](#7._Interact_with_other_MODs)
+    - [8. Use
       shared resources such as compute grids when
-      appropriate</span>](#8._Use_shared_resources_such_as_compute_grids_when_appropriate)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">A
+      appropriate](#8._Use_shared_resources_such_as_compute_grids_when_appropriate)
+  - [A
     Framework for Assessing Computational
-    Interoperability</span>](#A_Framework_for_Assessing_Computational_Interoperability)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">Level
+    Interoperability](#A_Framework_for_Assessing_Computational_Interoperability)
+    - [Level
       -1: Web linking, data dumps to FTP
-      site</span>](#Level_-1:_Web_linking.2C_data_dumps_to_FTP_site)
-    - [<span class="tocnumber">3.3.2</span> <span class="toctext">Level
-      0: Published API</span>](#Level_0:_Published_API)
-    - [<span class="tocnumber">3.3.3</span> <span class="toctext">Level
+      site](#Level_-1:_Web_linking.2C_data_dumps_to_FTP_site)
+    - [Level
+      0: Published API](#Level_0:_Published_API)
+    - [Level
       1: Published API with a test
-      suite</span>](#Level_1:_Published_API_with_a_test_suite)
-    - [<span class="tocnumber">3.3.4</span> <span class="toctext">Level
+      suite](#Level_1:_Published_API_with_a_test_suite)
+    - [Level
       2: Published "effectively stable" API with a test
-      suite</span>](#Level_2:_Published_.22effectively_stable.22_API_with_a_test_suite)
-    - [<span class="tocnumber">3.3.5</span> <span class="toctext">Level
-      3: Shared API</span>](#Level_3:_Shared_API)
-    - [<span class="tocnumber">3.3.6</span> <span class="toctext">Level
+      suite](#Level_2:_Published_.22effectively_stable.22_API_with_a_test_suite)
+    - [Level
+      3: Shared API](#Level_3:_Shared_API)
+    - [Level
       4: Shared API based on a standard API
-      "flavor."</span>](#Level_4:_Shared_API_based_on_a_standard_API_.22flavor..22)
-    - [<span class="tocnumber">3.3.7</span> <span class="toctext">Level
+      "flavor."](#Level_4:_Shared_API_based_on_a_standard_API_.22flavor..22)
+    - [Level
       5: Adopt an approved preexisting
-      API</span>](#Level_5:_Adopt_an_approved_preexisting_API)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Moving
+      API](#Level_5:_Adopt_an_approved_preexisting_API)
+  - [Moving
     Towards Generic
-    Components</span>](#Moving_Towards_Generic_Components)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Need for
-    Continued Funding</span>](#Need_for_Continued_Funding)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">High
-    Priority Needs</span>](#High_Priority_Needs)
-  - [<span class="tocnumber">3.7</span>
-    <span class="toctext">Intellectual Property
-    Issues</span>](#Intellectual_Property_Issues)
-    - [<span class="tocnumber">3.7.1</span>
-      <span class="toctext">Appendix A: Minority opinion on IP from Rolf
-      Apweiler</span>](#Appendix_A:_Minority_opinion_on_IP_from_Rolf_Apweiler)
-    - [<span class="tocnumber">3.7.2</span>
-      <span class="toctext">Appendix B: Minority opinion on IP from
+    Components](#Moving_Towards_Generic_Components)
+  - [Need for
+    Continued Funding](#Need_for_Continued_Funding)
+  - [High
+    Priority Needs](#High_Priority_Needs)
+  - [Intellectual Property
+    Issues](#Intellectual_Property_Issues)
+    - [Appendix A: Minority opinion on IP from Rolf
+      Apweiler](#Appendix_A:_Minority_opinion_on_IP_from_Rolf_Apweiler)
+    - [Appendix B: Minority opinion on IP from
       Peter
-      Karp</span>](#Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp)
+      Karp](#Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp)
 
 
-
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 From April 29 through April 30, representatives of the major model
 organism databases (MODs), funding agencies and other interested parties
@@ -131,7 +106,7 @@ groups, and later reassembled in a general discussion group to present
 the reports of working groups and to develop a consensus statement. This
 document represents the consensus of the workshop.
 
-## <span id="Executive_Summary" class="mw-headline">Executive Summary</span>
+## Executive Summary
 
 MODs are for more than model organisms. Although the term "Model
 Organism Database" was originally coined to describe databases devoted
@@ -188,7 +163,7 @@ keep pace with the expansion of genomic research.
 
   
 
-## <span id="Detailed_Report" class="mw-headline">Detailed Report</span>
+## Detailed Report
 
 Model organism system databases (MODs) are a vital tool for scientific
 research. They share a common set of tasks: to collect and curate data
@@ -235,7 +210,7 @@ struggle to adjust to new user interfaces, and the MODs themselves must
 devote precious resources to exchanging and relating to each other's
 information.
 
-### <span id="Benefits_of_Reuse" class="mw-headline">Benefits of Reuse</span>
+### Benefits of Reuse
 
 The best way to decrease the time and financial resources needed to
 launch a new MOD is to reuse resources already invested in existing
@@ -270,7 +245,7 @@ directly to reduced costs for the funding agencies. Rather, reuse will
 increase the quality of the MODs to the research community without a
 concomitant increase in the price tag.
 
-### <span id="Good_Practices_and_Other_Guidelines_for_New_MODs" class="mw-headline">Good Practices and Other Guidelines for New MODs</span>
+### Good Practices and Other Guidelines for New MODs
 
 The workshop attendees identified a set of "good practices" for new and
 existing MODs. We feel that following these practices will make it
@@ -281,7 +256,7 @@ be explicitly justified if departed from.
 
 For all MODs:
 
-#### <span id="1._Rely_on_institution_practices_rather_than_people" class="mw-headline">1. Rely on institution practices rather than people</span>
+#### 1. Rely on institution practices rather than people
 
 MODs should be designed to transcend the people who run them. This means
 that the MOD should strive to create an institutional memory that is
@@ -299,7 +274,7 @@ code review.
 Naturally, all software, data and documentation produced by a MOD should
 be archived at a secure offsite location in case of physical disaster.
 
-#### <span id="2._Reuse_software.2C_don.27t_reinvent_it" class="mw-headline">2. Reuse software, don't reinvent it</span>
+#### 2. Reuse software, don't reinvent it
 
 MODs should strive to reuse software whenever possible. Although it may
 seem simpler to re-implement a piece of existing software that doesn't
@@ -307,7 +282,7 @@ quite fit rather than modifying it, in practice this leads to greater
 costs down the road in the form of interoperability losses and a limited
 pool of developers who understand the software.
 
-#### <span id="3._Seek_.22co-curation.22_opportunities_whenever_possible" class="mw-headline">3. Seek "co-curation" opportunities whenever possible</span>
+#### 3. Seek "co-curation" opportunities whenever possible
 
 MODs should look for opportunities to establish co-curation
 relationships with archival databases as well as those that perform a
@@ -316,7 +291,7 @@ several MODs cited mutually beneficial arrangements with SwissProt, NCBI
 and EnsEMBL to combine the curational strengths of the MOD with the
 computational strengths of the specialist database.
 
-#### <span id="4._Design_software_with_a_view_to_interoperability" class="mw-headline">4. Design software with a view to interoperability</span>
+#### 4. Design software with a view to interoperability
 
 Software interoperability is good because it fosters reuse, increases
 the pool of developers who are comfortable with the system and allows
@@ -341,7 +316,7 @@ design the necessary formats. It is also important for MODs to make an
 explicit statement of the level of compute interoperability that they
 are striving to achieve (see below).
 
-#### <span id="5._Perform_a_thorough_needs_analysis._Repeat_regularly" class="mw-headline">5. Perform a thorough needs analysis. Repeat regularly</span>
+#### 5. Perform a thorough needs analysis. Repeat regularly
 
 Every MOD should perform a needs analysis early in its life cycle. This
 may involve meeting with representatives of the research community,
@@ -350,7 +325,7 @@ techniques to gain an understanding of what the research community needs
 from the MOD and what its priorities are. Since priorities change, this
 needs analysis should be repeated at regular intervals.
 
-#### <span id="6._Involve_the_research_community" class="mw-headline">6. Involve the research community</span>
+#### 6. Involve the research community
 
 MODs need to be integrated into their research community. Ways to
 achieve this includes presentations at research meetings, sponsorship of
@@ -359,7 +334,7 @@ community spend some time with the MOD and vice versa and collaborations
 on particular research projects. Programs that involve members of the
 research community in a curatorial role are strongly encouraged.
 
-#### <span id="7._Interact_with_other_MODs" class="mw-headline">7. Interact with other MODs</span>
+#### 7. Interact with other MODs
 
 MODs share a common set of challenges and can benefit immensely from
 exchanging viewpoints and lessons learned. The workshop strongly
@@ -367,7 +342,7 @@ endorsed activities that would build a sense of community among the MODs
 themselves. More informally, the MODs should interact with each other on
 a regular basis.
 
-#### <span id="8._Use_shared_resources_such_as_compute_grids_when_appropriate" class="mw-headline">8. Use shared resources such as compute grids when appropriate</span>
+#### 8. Use shared resources such as compute grids when appropriate
 
 By the same token that shared software strengthens MODs, sharing compute
 resources will lighten the load on new and existing MODs. When
@@ -378,7 +353,7 @@ contained within a number of MODs.
 
   
 
-### <span id="A_Framework_for_Assessing_Computational_Interoperability" class="mw-headline">A Framework for Assessing Computational Interoperability</span>
+### A Framework for Assessing Computational Interoperability
 
 During its discussion of strategies for enhancing computational
 interoperability among the MODs, workshop attendees developed a
@@ -389,7 +364,7 @@ interoperability is represented as seven levels of compliance.
 
   
 
-#### <span id="Level_-1:_Web_linking.2C_data_dumps_to_FTP_site" class="mw-headline">Level -1: Web linking, data dumps to FTP site</span>
+#### Level -1: Web linking, data dumps to FTP site
 
 This level, which is given a negative number to indicate a minimum level
 of interoperability, is the status quo. There is no true
@@ -400,7 +375,7 @@ the format of the FTP dumps can change without warning.
 
   
 
-#### <span id="Level_0:_Published_API" class="mw-headline">Level 0: Published API</span>
+#### Level 0: Published API
 
 Under level 0, the MOD has a published application programmer interface
 that allows third parties to access the MODs' information. There is no
@@ -412,14 +387,14 @@ may be shared among more than one MOD.
 
   
 
-#### <span id="Level_1:_Published_API_with_a_test_suite" class="mw-headline">Level 1: Published API with a test suite</span>
+#### Level 1: Published API with a test suite
 
 Level 1 is the same as level 0, with the added requirement that the MOD
 publish a test suite to ensure that it is compliant with its own API.
 
   
 
-#### <span id="Level_2:_Published_.22effectively_stable.22_API_with_a_test_suite" class="mw-headline">Level 2: Published "effectively stable" API with a test suite</span>
+#### Level 2: Published "effectively stable" API with a test suite
 
 Level 2 adds the requirement that the API be stable. That is, new
 features may be added to the API over time, but the changes will not
@@ -428,7 +403,7 @@ versions of the API.
 
   
 
-#### <span id="Level_3:_Shared_API" class="mw-headline">Level 3: Shared API</span>
+#### Level 3: Shared API
 
 At level 3, the API is based on a shared specification that is used by
 more than one MOD. That is, programs written against the API will work
@@ -439,7 +414,7 @@ protocols.
 
   
 
-#### <span id="Level_4:_Shared_API_based_on_a_standard_API_.22flavor..22" class="mw-headline">Level 4: Shared API based on a standard API "flavor."</span>
+#### Level 4: Shared API based on a standard API "flavor."
 
 Level 4 restricts the API to one of a number of standard "flavors" that
 have been approved by a MOD interoperability working group. A flavor
@@ -448,7 +423,7 @@ SOAP/XML.
 
   
 
-#### <span id="Level_5:_Adopt_an_approved_preexisting_API" class="mw-headline">Level 5: Adopt an approved preexisting API</span>
+#### Level 5: Adopt an approved preexisting API
 
 In level 5, the MOD adopts an API that has been approved for use by a
 MOD interoperability working group.
@@ -466,7 +441,7 @@ a group together.
 
   
 
-### <span id="Moving_Towards_Generic_Components" class="mw-headline">Moving Towards Generic Components</span>
+### Moving Towards Generic Components
 
 The workshop attendees enthusiastically endorsed the concept of generic
 components for MODs. These components, which consist of a collection of
@@ -523,7 +498,7 @@ Finally, the development work on generic components would be open to the
 wider community - anyone would be free to join under the accepted
 community practices of the open source model.
 
-### <span id="Need_for_Continued_Funding" class="mw-headline">Need for Continued Funding</span>
+### Need for Continued Funding
 
 Attendees felt that the role of the MODs in organizing genomic data,
 adding value to it, and effecting community education and outreach, was
@@ -547,7 +522,7 @@ take into account the need to maintain existing MODs and to underwrite
 the creation of new ones as they draft their strategic plans for future
 genome research.
 
-### <span id="High_Priority_Needs" class="mw-headline">High Priority Needs</span>
+### High Priority Needs
 
 During the workshop, a breakout group was assigned the task of
 prioritizing the current needs of existing and nascent MODs. The
@@ -575,7 +550,7 @@ needed. The list is prioritized from highest need to lowest:
   - Data export tools
   - Network viewers and tools (regulatory, protein-protein interaction)
 
-### <span id="Intellectual_Property_Issues" class="mw-headline">Intellectual Property Issues</span>
+### Intellectual Property Issues
 
 On the issue of MOD intellectual property issues, while there was broad
 acceptance of the principle that scientific data should be freely
@@ -615,7 +590,7 @@ The appendices to this report include brief minority opinions by Peter
 Karp and Rolf Apweiler that express their positions with respect to
 intellectual property issues.
 
-#### <span id="Appendix_A:_Minority_opinion_on_IP_from_Rolf_Apweiler" class="mw-headline">Appendix A: Minority opinion on IP from Rolf Apweiler</span>
+#### Appendix A: Minority opinion on IP from Rolf Apweiler
 
 On the issue of MOD intellectual property issues, I advocate strongly
 that both the scientific data and the software developed by MODs should
@@ -626,7 +601,7 @@ differently from academic users.
 
   
 
-#### <span id="Appendix_B:_Minority_opinion_on_IP_from_Peter_Karp" class="mw-headline">Appendix B: Minority opinion on IP from Peter Karp</span>
+#### Appendix B: Minority opinion on IP from Peter Karp
 
 Dr. Karp refers readers to the recent (21 May 2002) statement on
 Bioinformatics software \[iscb.org\], published by the International
@@ -657,91 +632,3 @@ funding agencies should require.
 
   
 *Last Reviewed: April 2006*
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Best
-  Practices](Category%253AGMOD_Best_Practices "Category%253AGMOD Best Practices")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/NIH_2002_Workshop_on_Model_Organism_Databases"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:03 on 28 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">28,150 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

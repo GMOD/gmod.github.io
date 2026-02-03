@@ -1,44 +1,22 @@
 ---
 title: "September 2003 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">September 2003 GMOD Meeting</span>
-
-
-
-
-
-
-
+# September 2003 GMOD Meeting
 
 
 Generic Model Organism Database Construction Set
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   3</span>](#Meeting_3)
-- [<span class="tocnumber">2</span> <span class="toctext">Progress
-  Report</span>](#Progress_Report)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">PubSearch
-    Status Update</span>](#PubSearch_Status_Update)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Pathway
-    Tools Status Report</span>](#Pathway_Tools_Status_Report)
+- [Progress
+  Report](#Progress_Report)
+  - [PubSearch
+    Status Update](#PubSearch_Status_Update)
+  - [Pathway
+    Tools Status Report](#Pathway_Tools_Status_Report)
 
 
-
-## <span id="Meeting_3" class="mw-headline">Meeting 3</span>
+## Meeting 3
 
 September 15-16, 2003
 
@@ -77,9 +55,9 @@ text of progress reports they submitted.
 
   
 
-## <span id="Progress_Report" class="mw-headline">Progress Report</span>
+## Progress Report
 
-### <span id="PubSearch_Status_Update" class="mw-headline">PubSearch Status Update</span>
+### PubSearch Status Update
 
 [PubSearch](PubSearch "PubSearch") status as 0f 9/05/2003)
 
@@ -114,7 +92,7 @@ Upgrades made to the PubSearch software are as follows:
 - Software Documentation
   - In progress
 
-### <span id="Pathway_Tools_Status_Report" class="mw-headline">Pathway Tools Status Report</span>
+### Pathway Tools Status Report
 
 [Pathway Tools](Pathway_Tools.1 "Pathway Tools") status report, by Peter
 Karp, September 1, 2003
@@ -181,9 +159,6 @@ follows.
   - *<a href="http://maine.ebi.ac.uk:1555" class="external text"
     rel="nofollow">Methanococcus janaschii</a>*, EBI (availability
     intermittent)
-
-<!-- -->
-
     Chado progress report
 
      * Schema development (Colin Wiel, Chris Mungall, David Emmert, Stan
@@ -237,7 +212,6 @@ follows.
          progress to make it able to handle other genome data sets.
 
 
-
     Textpresso: A progress report
 
     Eimear Kenny, Hans-Michael Mueller and Paul Sternberg
@@ -283,7 +257,6 @@ follows.
     First foray into Fact Extraction using Textpresso
     We have automatically extracted ~14,000 unique locus<->allele<->reference
     relationships from the full text of ~2000 C. elegans journal articles.
-
 
 
     Mouse Genome Informatics
@@ -402,7 +375,6 @@ follows.
     alignment viewer.
 
 
-
     GBrowse
 
     Contact: Lincoln Stein, lstein@cshl.edu
@@ -459,7 +431,6 @@ follows.
     Sheldon McKay will discuss the evolution of the MARC project, a story
     that will illustrate the difficulties we face in taking GMOD from a
     collection of useful tools to a working integrated architecture.
-
 
 
     PubFetch/PubTrack Progress Report (September 2003)
@@ -519,7 +490,6 @@ follows.
     problem of tracking information (data) within an organization (MOD). It is
     anticipated that significant progress will be made towards an initial
     prototype for PubTrack in the next quarter.
-
 
 
     GMOD project update, Sept 2003, Don Gilbert
@@ -648,97 +618,3 @@ follows.
     masters graduate) to update euGenes.org data, now a project within
     Argos, and a bioinformatics masters student as an assistant working on
     GMOD tools (Vasanth Singan, vsingan@indiana.edu, start sept 03)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [Chado](Category%253AChado "Category%253AChado")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [MGI](Category%253AMGI "Category%253AMGI")
-- [Pathway Tools](Category%253APathway_Tools "Category%253APathway Tools")
-- [PubSearch](Category%253APubSearch "Category%253APubSearch")
-- [Textpresso](Category%253ATextpresso "Category%253ATextpresso")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/September_2003_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:06 on 29 October
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">32,582 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

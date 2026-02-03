@@ -1,24 +1,7 @@
 ---
 title: "March 2011 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">March 2011 GMOD Meeting</span>
-
-
-
-
-
-
-
-
+# March 2011 GMOD Meeting
 
 
 <img
@@ -69,38 +52,27 @@ Toronto, Canada. OICR is the current home of both
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About
   GMOD</span>](#About_GMOD)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD Americas
-  Events</span>](#GMOD_Americas_Events)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Friday:
-    Introduction to GMOD</span>](#Friday:_Introduction_to_GMOD)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Saturday:
-    Day 1</span>](#Saturday:_Day_1)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Sunday:
-    Day 2</span>](#Sunday:_Day_2)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Monday:
-    Satellite Meetings</span>](#Monday:_Satellite_Meetings)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">6</span> <span class="toctext">Help Get the
-  Word Out</span>](#Help_Get_the_Word_Out)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Feedback</span>](#Feedback)
+- [Registration](#Registration)
+- [GMOD Americas
+  Events](#GMOD_Americas_Events)
+- [Agenda](#Agenda)
+  - [Friday:
+    Introduction to GMOD](#Friday:_Introduction_to_GMOD)
+  - [Saturday:
+    Day 1](#Saturday:_Day_1)
+  - [Sunday:
+    Day 2](#Sunday:_Day_2)
+  - [Monday:
+    Satellite Meetings](#Monday:_Satellite_Meetings)
+- [Participants](#Participants)
+- [Help Get the
+  Word Out](#Help_Get_the_Word_Out)
+- [Logistics](#Logistics)
+- [Feedback](#Feedback)
 
 
-
-# <span id="About_GMOD" class="mw-headline">About GMOD</span>
+# About GMOD
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
@@ -122,7 +94,7 @@ data integration, management, and querying, and
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](ISGA "ISGA")) for data analysis.
 
-# <span id="Registration" class="mw-headline">Registration</span>
+# Registration
 
 The registration fee for the **March 2011 GMOD Meeting** was
 
@@ -133,7 +105,7 @@ The [Satellite
 Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
 were free and were attended by over 20 people.
 
-# <span id="GMOD_Americas_Events" class="mw-headline">GMOD Americas Events</span>
+# GMOD Americas Events
 
 The schedule of events is below. This is subject to slight revisions.
 
@@ -270,14 +242,12 @@ title="Galaxy">Galaxy</a></strong></p>
 </tbody>
 </table>
 
-# <span id="Agenda" class="mw-headline">Agenda</span>
-
+# Agenda
 
 
 <a href="http://www4.ncsu.edu/~eastone2/" rel="nofollow"
 title="Eric Stone"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/45/EricStone.jpg"
 width="140" height="140" alt="Eric Stone" /></a>
-
 
 
 Guest Speaker:
@@ -294,7 +264,6 @@ rel="nofollow">Statistics</a>
 class="external text" rel="nofollow">Bioinformatics Research Center</a>  
 <a href="http://www.ncsu.edu/" class="external text"
 rel="nofollow">North Carolina State University</a>
-
 
 
 Our guest speaker was
@@ -315,10 +284,9 @@ users may be doing similarly large projects in the not too distant
 future.
 
 
-
   
 
-## <span id="Friday:_Introduction_to_GMOD" class="mw-headline">Friday: Introduction to GMOD</span>
+## Friday: Introduction to GMOD
 
 This session the night before the meting gave an introduction to the
 GMOD project, community, and components. It gave GMOD newcomers a
@@ -328,7 +296,7 @@ clearer picture of the project in advance of the meeting.
 |--------|--------------------------|---------------------------------------|-------|
 | 7pm-9m | **Introduction to GMOD** | [Scott Cain](User%253AScott "User%253AScott") |       |
 
-## <span id="Saturday:_Day_1" class="mw-headline">Saturday: Day 1</span>
+## Saturday: Day 1
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
@@ -351,7 +319,7 @@ href="https://github.com/leto/presentations/raw/master/2011/GMOD/pres.pdf"
 class="external text" rel="nofollow">Slides</a> |
 | 4:30 | Head out for dinner |  |  |
 
-## <span id="Sunday:_Day_2" class="mw-headline">Sunday: Day 2</span>
+## Sunday: Day 2
 
 This agenda will be finalized prior to the meeting. In the meantime,
 please see the [confirmed speakers list](#Confirmed_Speakers).
@@ -384,13 +352,13 @@ class="internal" title="March20111TomWalk.pptx">PPT</a> |
 |  | <a href="http://cas-bioinfo.cas.unt.edu/gsv" class="external text"
 rel="nofollow">Genome Synteny Viewer</a> | Kashi Ravenna | [PPT](March2011GenomeSyntenyViewer.pptx "March2011GenomeSyntenyViewer.pptx") |
 
-## <span id="Monday:_Satellite_Meetings" class="mw-headline">Monday: [Satellite Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")</span>
+## Monday: [Satellite Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011")
 
 [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011") continued
 on Monday with partial and full day [Satellite
 Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Americas 2011").
 
-# <span id="Participants" class="mw-headline">Participants</span>
+# Participants
 
 | First | Last | Affiliation |
 |----|----|----|
@@ -434,7 +402,7 @@ rel="nofollow">NESCent</a> |
 | Tom | Walk | USDA ARS |
 | Gary | xie | LANL |
 
-# <span id="Help_Get_the_Word_Out" class="mw-headline">Help Get the Word Out</span>
+# Help Get the Word Out
 
 <table>
 <colgroup>
@@ -462,13 +430,13 @@ width="131" height="170" alt="GMOD Americas 2011 Flier" /></td>
 </tbody>
 </table>
 
-# <span id="Logistics" class="mw-headline">Logistics</span>
+# Logistics
 
 See the [GMOD Americas
 2011](GMOD_Americas_2011#Logistics "GMOD Americas 2011") page for
 information on lodging, transportation and meals.
 
-# <span id="Feedback" class="mw-headline">Feedback</span>
+# Feedback
 
 Attendees were asked to provide feedback at the end of the meeting.
 
@@ -614,87 +582,6 @@ future?**
 - More veggies for snacks!
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/March_2011_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:19 on 4 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">324,727 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

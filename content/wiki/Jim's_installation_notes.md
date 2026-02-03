@@ -1,79 +1,47 @@
 ---
 title: "Jim's installation notes"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Jim's installation notes</span>
-
-
-
-
-
-
-
+# Jim's installation notes
 
 
 Back to [Chado New Users](Chado_New_Users "Chado New Users")
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Installation
   on PPC mac</span>](#Installation_on_PPC_mac)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">PostgreSQL</span>](#PostgreSQL)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Apache</span>](#Apache)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">BioPerl</span>](#BioPerl)
-    - [<span class="tocnumber">1.1.4</span> <span class="toctext">GO
-      perl</span>](#GO_perl)
-    - [<span class="tocnumber">1.1.5</span> <span class="toctext">Other
-      Perl Dependencies</span>](#Other_Perl_Dependencies)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Set up
-    default gmod location</span>](#Set_up_default_gmod_location)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Install
-    chado</span>](#Install_chado)
-    - [<span class="tocnumber">1.3.1</span> <span class="toctext">A few
-      more prereq issues</span>](#A_few_more_prereq_issues)
-    - [<span class="tocnumber">1.3.2</span>
-      <span class="toctext">Makefile.pl etc.</span>](#Makefile.pl_etc.)
-      - [<span class="tocnumber">1.3.2.1</span>
-        <span class="toctext">make ontologies</span>](#make_ontologies)
-      - [<span class="tocnumber">1.3.2.2</span>
-        <span class="toctext">make html</span>](#make_html)
-      - [<span class="tocnumber">1.3.2.3</span>
-        <span class="toctext">make images</span>](#make_images)
-      - [<span class="tocnumber">1.3.2.4</span>
-        <span class="toctext">make rm_locks and make
-        clean</span>](#make_rm_locks_and_make_clean)
-      - [<span class="tocnumber">1.3.2.5</span>
-        <span class="toctext">make
-        instructions</span>](#make_instructions)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Load the
-    yeast sample data</span>](#Load_the_yeast_sample_data)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Set up
+  - [Prerequisites](#Prerequisites)
+    - [PostgreSQL](#PostgreSQL)
+    - [Apache](#Apache)
+    - [BioPerl](#BioPerl)
+    - [GO
+      perl](#GO_perl)
+    - [Other
+      Perl Dependencies](#Other_Perl_Dependencies)
+  - [Set up
+    default gmod location](#Set_up_default_gmod_location)
+  - [Install
+    chado](#Install_chado)
+    - [A few
+      more prereq issues](#A_few_more_prereq_issues)
+    - [Makefile.pl etc.](#Makefile.pl_etc.)
+      - [make ontologies](#make_ontologies)
+      - [make html](#make_html)
+      - [make images](#make_images)
+      - [make rm_locks and make
+        clean](#make_rm_locks_and_make_clean)
+      - [make
+        instructions](#make_instructions)
+  - [Load the
+    yeast sample data](#Load_the_yeast_sample_data)
+  - [Set up
     Gbrowse to work with
-    Chado</span>](#Set_up_Gbrowse_to_work_with_Chado)
-    - [<span class="tocnumber">1.5.1</span> <span class="toctext">Set up
-      www user</span>](#Set_up_www_user)
-    - [<span class="tocnumber">1.5.2</span> <span class="toctext">Make a
-      gbrowse conf file</span>](#Make_a_gbrowse_conf_file)
+    Chado](#Set_up_Gbrowse_to_work_with_Chado)
+    - [Set up
+      www user](#Set_up_www_user)
+    - [Make a
+      gbrowse conf file](#Make_a_gbrowse_conf_file)
 
 
-
-## <span id="Installation_on_PPC_mac" class="mw-headline">Installation on PPC mac</span>
+## Installation on PPC mac
 
 - First do this on my G4 laptop. Then consider whether to install on the
   XServe.
@@ -85,9 +53,9 @@ at the directory level just above schema. Getting Started refers to <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
 class="external text" rel="nofollow">the INSTALL document</a>
 
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
-#### <span id="PostgreSQL" class="mw-headline">PostgreSQL</span>
+#### PostgreSQL
 
 - I installed PostgreSQL using the
   <a href="http://www.entropy.ch/software/macosx/postgresql/"
@@ -102,11 +70,11 @@ class="external text" rel="nofollow">the INSTALL document</a>
       <a href="http://www.phpmyadmin.net/" class="external text"
       rel="nofollow">phpmyadmin</a> for mysql
 
-#### <span id="Apache" class="mw-headline">Apache</span>
+#### Apache
 
 Comes installed on OS X
 
-#### <span id="BioPerl" class="mw-headline">BioPerl</span>
+#### BioPerl
 
 BioPerl is currently not installed on my laptop, as I ran into the
 dreaded gd installation problems. Let's try again.
@@ -128,7 +96,7 @@ To get BioPerl from cvs see
 <a href="http://www.bioperl.org/wiki/Using_CVS" class="external text"
 rel="nofollow">here</a>
 
-#### <span id="GO_perl" class="mw-headline">GO perl</span>
+#### GO perl
 
 - The url provided in the <a
   href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
@@ -176,7 +144,7 @@ Curiously, the install instructions suggest that this is all I need to
 do for go_perl. So despite downloading the tarball, all I needed was the
 CPAN installation??
 
-#### <span id="Other_Perl_Dependencies" class="mw-headline">Other Perl Dependencies</span>
+#### Other Perl Dependencies
 
 install Bundle::GMOD
 
@@ -198,7 +166,7 @@ I've already installed.
      BYRNE/SOAP-Lite-0.69.tar.gz                  : make_test NO
      MIROD/XML-DOM-XPath-0.13.tar.gz              : make_test NO
 
-### <span id="Set_up_default_gmod_location" class="mw-headline">Set up default gmod location</span>
+### Set up default gmod location
 
     mkdir /usr/local/gmod
 
@@ -206,9 +174,9 @@ Is that it? I don't feel like this is right. Since I installed bundle
 GMOD using CPAN, I'm not sure where it's gone. Probably /Library/Perl...
 Forge ahead anyway.
 
-### <span id="Install_chado" class="mw-headline">Install chado</span>
+### Install chado
 
-#### <span id="A_few_more_prereq_issues" class="mw-headline">A few more prereq issues</span>
+#### A few more prereq issues
 
      perl Makefile.PL 
     ************************************************************************
@@ -258,7 +226,7 @@ failed tests. I think these are based on failing to connect to localhost
 via apache...it may reflect something about OSX that should be set in
 the config. Try forcing it.
 
-#### <span id="Makefile.pl_etc." class="mw-headline">Makefile.pl etc.</span>
+#### Makefile.pl etc.
 
 Do the Makefile.pl again. End of output is
 
@@ -303,7 +271,7 @@ Do the Makefile.pl again. End of output is
 
 Followed steps 1-5. Chose to load all the ontologies.
 
-##### <span id="make_ontologies" class="mw-headline">make ontologies</span>
+##### make ontologies
 
 ./Build ontologies
 
@@ -350,7 +318,7 @@ seems like all loaded, but:
 
 This has been observed before and is noted in the install docs.
 
-##### <span id="make_html" class="mw-headline">make html</span>
+##### make html
 
 Failed.
 
@@ -368,7 +336,7 @@ successfully (along with yet another dependency).
 
 After that, make html works. As for using it...
 
-##### <span id="make_images" class="mw-headline">make images</span>
+##### make images
 
 Failed.
 
@@ -405,11 +373,11 @@ it:
 
 I wonder if there's a versions problem with graphviz.
 
-##### <span id="make_rm_locks_and_make_clean" class="mw-headline">make rm_locks and make clean</span>
+##### make rm_locks and make clean
 
 I think they worked.
 
-##### <span id="make_instructions" class="mw-headline">make instructions</span>
+##### make instructions
 
 Failed
 
@@ -418,7 +386,7 @@ Failed
 No idea how to deal with this one, but it shouldn't stop me from going
 on.
 
-### <span id="Load_the_yeast_sample_data" class="mw-headline">Load the yeast sample data</span>
+### Load the yeast sample data
 
 Per instructions: get the yeast file from <a
 href="ftp://ftp.yeastgenome.org/pub/yeast/data_download/chromosomal_feature/saccharomyces_cerevisiae.gff"
@@ -467,9 +435,9 @@ No BLAST reports etc. Loading sequences (if any) ...
     While this script has made an effort to optimize the database, you
     should probably also run VACUUM FULL ANALYZE on the database as well
 
-### <span id="Set_up_Gbrowse_to_work_with_Chado" class="mw-headline">Set up Gbrowse to work with Chado</span>
+### Set up Gbrowse to work with Chado
 
-#### <span id="Set_up_www_user" class="mw-headline">Set up www user</span>
+#### Set up www user
 
     psql chado_trial
 
@@ -501,7 +469,7 @@ The two GRANT statements for feature_gcontext and gcontext gave errors,
 since these tables don't exist. Additional GRANTs may be needed if
 Gbrowse is adapted to display additional views.
 
-#### <span id="Make_a_gbrowse_conf_file" class="mw-headline">Make a gbrowse conf file</span>
+#### Make a gbrowse conf file
 
 Copy the example file from gbrowse.
 
@@ -519,100 +487,13 @@ fix with:
     GRANT SELECT ON analysisfeature                  TO www;
 
 
-
-
-
-
 Features from yeast sample GFF imported to Chado
 
 
-
-
 It works!!!
-
-
 
 
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [User
   Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Jim&#39;s_installation_notes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:54 on 25 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">41,306 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

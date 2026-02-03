@@ -1,28 +1,11 @@
 ---
 title: "Next Generation Sequencing"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Next Generation Sequencing</span>
-
-
-
+# Next Generation Sequencing
 
 
 (Redirected from
-[NGS](NGS)
-
-
-
-
-
+[NGS](/wiki/NGS)
 
 
 <img
@@ -32,8 +15,7 @@ construction. Eventually it will be a hub for all information in the
 GMOD web site related to next generation sequencing.
 
 
-
-## <span id="Presentations_.26_Posters" class="mw-headline">Presentations & Posters</span>
+## Presentations & Posters
 
 | Title | Where | Content |
 |----|----|----|
@@ -55,84 +37,3 @@ genomics workshop</a> at <a href="http://ccg.biology.uiowa.edu/smbe/" class="ext
 rel="nofollow">SMBE 2009</a>*, University of Iowa, June 3-7. | An [overview](Overview "Overview") of GMOD and a detailed discussion using [GBrowse](GBrowse.1 "GBrowse") to visualize next generation sequence data using the Bio-SamTools SAMtools [GBrowse adaptor](GBrowse_Adaptors "GBrowse Adaptors"). |
 | [Visualising and Integrating Next Generation Sequence Data using GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/NGSWithGMODWorkshop.pdf "File:NGSWithGMODWorkshop.pdf") | at *Evolutionary Genetics - The impact of Next generation sequencing technologies* in Lutherstadt-Wittenberg, Germany, April 2-4, 2009. | Discusses visualizing NGS data in [GBrowse](GBrowse.1 "GBrowse"), using pre-SAMtools technologies. Has discussion on if displaying individual reads is useful. |
 | [Managing Next Generation Sequence Data with GMOD](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/PAG2009NextGenSeqPoster.pdf "File:PAG2009NextGenSeqPoster.pdf") | Poster at *[Plant and Animal Genome (PAG 2009)](PAG_2009 "PAG 2009"), San Diego, CA, January 10-14, 2009* | Using GBrowse for next generation sequence data and population genetics. |
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Next_Generation_Sequencing"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:52 on 18 November
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">67,560 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

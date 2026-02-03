@@ -1,92 +1,54 @@
 ---
 title: "June 2007 Progress Report"
 ---
+# June 2007 Progress Report
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">June 2007 Progress Report</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Overview</span>](#Overview)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Meetings</span>](#Meetings)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">New GMOD
+  Overview](#Overview)
+  - [Meetings](#Meetings)
+  - [New GMOD
     homepage and better
-    documentation</span>](#New_GMOD_homepage_and_better_documentation)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Software
-    releases</span>](#Software_releases)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">Users</span>](#Users)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Chado/FlyBase</span>](#Chado.2FFlyBase)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">GBrowse</span>](#GBrowse)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Textpresso</span>](#Textpresso)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">CMap</span>](#CMap)
-- [<span class="tocnumber">6</span> <span class="toctext">Pathway
-  Tools/BioCyc</span>](#Pathway_Tools.2FBioCyc)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Apollo</span>](#Apollo)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Specific
-    Aims</span>](#Specific_Aims)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Studies
-    and Results</span>](#Studies_and_Results)
-  - [<span class="tocnumber">7.3</span>
-    <span class="toctext">Significance</span>](#Significance)
-  - [<span class="tocnumber">7.4</span>
-    <span class="toctext">Plans</span>](#Plans)
-  - [<span class="tocnumber">7.5</span> <span class="toctext">Project
-    Generated Resources</span>](#Project_Generated_Resources)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">RGD</span>](#RGD)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">dictyBase/Modware</span>](#dictyBase.2FModware)
-  - [<span class="tocnumber">9.1</span>
-    <span class="toctext">dictyBase</span>](#dictyBase)
-  - [<span class="tocnumber">9.2</span>
-    <span class="toctext">Modware</span>](#Modware)
-- [<span class="tocnumber">10</span> <span class="toctext">Genome
+    documentation](#New_GMOD_homepage_and_better_documentation)
+  - [Software
+    releases](#Software_releases)
+  - [Users](#Users)
+- [Chado/FlyBase](#Chado.2FFlyBase)
+- [GBrowse](#GBrowse)
+- [Textpresso](#Textpresso)
+- [CMap](#CMap)
+- [Pathway
+  Tools/BioCyc](#Pathway_Tools.2FBioCyc)
+- [Apollo](#Apollo)
+  - [Specific
+    Aims](#Specific_Aims)
+  - [Studies
+    and Results](#Studies_and_Results)
+  - [Significance](#Significance)
+  - [Plans](#Plans)
+  - [Project
+    Generated Resources](#Project_Generated_Resources)
+- [RGD](#RGD)
+- [dictyBase/Modware](#dictyBase.2FModware)
+  - [dictyBase](#dictyBase)
+  - [Modware](#Modware)
+- [Genome
   Informatics Lab, Indiana
-  U.</span>](#Genome_Informatics_Lab.2C_Indiana_U.)
-  - [<span class="tocnumber">10.1</span> <span class="toctext">Model
+  U.](#Genome_Informatics_Lab.2C_Indiana_U.)
+  - [Model
     Organism/Genome Database
-    efforts</span>](#Model_Organism.2FGenome_Database_efforts)
-  - [<span class="tocnumber">10.2</span> <span class="toctext">GMOD User
-    Interface Caucus</span>](#GMOD_User_Interface_Caucus)
-  - [<span class="tocnumber">10.3</span> <span class="toctext">GMODTools
-    updates</span>](#GMODTools_updates)
-  - [<span class="tocnumber">10.4</span> <span class="toctext">Genome
-    Data Grid Tools</span>](#Genome_Data_Grid_Tools)
-  - [<span class="tocnumber">10.5</span>
-    <span class="toctext">Publications and
-    outreach</span>](#Publications_and_outreach)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">TAIR</span>](#TAIR)
+    efforts](#Model_Organism.2FGenome_Database_efforts)
+  - [GMOD User
+    Interface Caucus](#GMOD_User_Interface_Caucus)
+  - [GMODTools
+    updates](#GMODTools_updates)
+  - [Genome
+    Data Grid Tools](#Genome_Data_Grid_Tools)
+  - [Publications and
+    outreach](#Publications_and_outreach)
+- [TAIR](#TAIR)
 
 
-
-## <span id="Overview" class="mw-headline">Overview</span>
+## Overview
 
 Progress report submitted by Scott Cain, GMOD Coordinator.
 
@@ -99,7 +61,7 @@ GMOD project has show significant progress in several areas. There have
 been meetings, software releases and the GMOD website was revamped to
 make it more useful and intuitive to users.
 
-### <span id="Meetings" class="mw-headline">Meetings</span>
+### Meetings
 
 Since the last progress report, there was a meeting held in conjunction
 with the Plant and Animal Genome meeting in San Diego in January of
@@ -124,7 +86,7 @@ gather to address pressing development needs for core GMOD software
 functionality. A larger GMOD meeting will be held following the Genome
 Informatics meeting at Cold Spring Harbor Laboratory on November 5-7.
 
-### <span id="New_GMOD_homepage_and_better_documentation" class="mw-headline">New GMOD homepage and better documentation</span>
+### New GMOD homepage and better documentation
 
 Based on a documentation requirements analysis conducted by Brian
 Osborne within the context of the GMOD documentation and helpdesk
@@ -145,7 +107,7 @@ rel="nofollow">http://blog.gmod.org/</a>, where it is used as a weekly
 project update tool for several of the developers working on GMOD
 projects.
 
-### <span id="Software_releases" class="mw-headline">Software releases</span>
+### Software releases
 
 Several GMOD software packages have been released since the last
 progress report, the details of some of them are outlined in sections
@@ -161,7 +123,7 @@ the core GMOD software, comprising and updated Chado schema and tools
 for interacting with the database. The scheduled release is timed to
 correspond to the August Hackathon at DictyBase.
 
-### <span id="Users" class="mw-headline">Users</span>
+### Users
 
 While it is difficult to have an accurate accounting of how many users
 an open source prioject has, GMOD has been quite successful as far as we
@@ -178,7 +140,7 @@ rel="nofollow">http://gmod.org/wiki/index.php/GMOD_Users</a>.
 Several GMOD projects submitted project reports to be included with the
 report and follow below.
 
-## <span id="Chado.2FFlyBase" class="mw-headline">Chado/FlyBase</span>
+## Chado/FlyBase
 
 All FlyBase data is now being managed in chado. The vast majority of
 curated and bulk data is processed into chadoXML using WriteChadoMac.pm,
@@ -249,7 +211,7 @@ generating public web pages as well as data for curation support.
     functionality, pre-defined chado SQL query execution, ad hoc chado
     SQL queries execution, and simple reports of chado data.
 
-## <span id="GBrowse" class="mw-headline">GBrowse</span>
+## GBrowse
 
 Report submitted by Lincoln Stein
 
@@ -269,7 +231,7 @@ menus and query forms to a feature. We've also created glyphs
 specialized for displaying high-density data, such as DNA tiling array
 data.
 
-## <span id="Textpresso" class="mw-headline">Textpresso</span>
+## Textpresso
 
 *a text mining system for scientific literature*
 
@@ -307,7 +269,7 @@ further information such as font type to identify gene names, as many
 gene names are written in italics in literature. This has improved the
 identification significantly.
 
-## <span id="CMap" class="mw-headline">CMap</span>
+## CMap
 
 Report submitted by Ben Faga.
 
@@ -342,7 +304,7 @@ document with specific maps to view which lets a script, designed to
 look for problem sections, to create specific views for a finisher to
 examine.
 
-## <span id="Pathway_Tools.2FBioCyc" class="mw-headline">Pathway Tools/BioCyc</span>
+## Pathway Tools/BioCyc
 
 Report submitted by Peter D. Karp
 
@@ -456,18 +418,18 @@ other projects, but are available to all Pathway Tools users.
   in either the current PGDB or in MetaCyc, by searching both the names
   and chemical structure of the new compound.
 
-## <span id="Apollo" class="mw-headline">Apollo</span>
+## Apollo
 
 Report submitted by Suzanna Lewis.
 
-### <span id="Specific_Aims" class="mw-headline">Specific Aims</span>
+### Specific Aims
 
 The primary aim of the Apollo group over the past year was two-fold: To
 sustain our existing users by voluntarily contributing to documentation
 and user support; and to secure funding to buttress this minimal support
 and extend the capabilities of Apollo.
 
-### <span id="Studies_and_Results" class="mw-headline">Studies and Results</span>
+### Studies and Results
 
 We have assisted and interacted with a number of different groups over
 the past year. One of the most interesting examples is with the INRA,
@@ -503,7 +465,7 @@ We are also pleased to report that we have succeeding in our second
 goal. Through the National Institute of General Medicine, grant R01
 GM080203-01, we will begin new work on July 1, 2007.
 
-### <span id="Significance" class="mw-headline">Significance</span>
+### Significance
 
 The highest-quality annotation is obtained by combining automated
 sequence analysis results with the expert knowledge of biologists.
@@ -513,7 +475,7 @@ biologists to view many different computational analyses of a genomic
 region and use them, together with their knowledge of direct
 experimental results, to create and refine detailed annotations.
 
-### <span id="Plans" class="mw-headline">Plans</span>
+### Plans
 
 Our new work is focused on the following specific aims:
 
@@ -538,7 +500,7 @@ Resource (TAIR) at the Carnegie Institution.
 
   
 
-### <span id="Project_Generated_Resources" class="mw-headline">Project Generated Resources</span>
+### Project Generated Resources
 
 This work has generated software and associated documentation that is
 freely available to other investigators. These can be accessed in from
@@ -546,7 +508,7 @@ the GMOD web site at <a href="http://www.gmod.org/wiki/index.php/Apollo"
 class="external free"
 rel="nofollow">http://www.gmod.org/wiki/index.php/Apollo</a>.
 
-## <span id="RGD" class="mw-headline">RGD</span>
+## RGD
 
 Report submitted by Simon Twigger
 
@@ -575,9 +537,9 @@ unwieldy at larger numbers of features. We would also like to increase
 the link out options to provide access to more than one external link
 for a feature or region.
 
-## <span id="dictyBase.2FModware" class="mw-headline">dictyBase/Modware</span>
+## dictyBase/Modware
 
-### <span id="dictyBase" class="mw-headline">dictyBase</span>
+### dictyBase
 
 - Incorporated phenotype annotations
 - Wrote and deployed Ajax based phenotype curation tool
@@ -587,7 +549,7 @@ for a feature or region.
 
   
 
-### <span id="Modware" class="mw-headline">Modware</span>
+### Modware
 
 - First release May, 2006
 - Second release Jan, 2007
@@ -595,11 +557,11 @@ for a feature or region.
 - We are applying for funding expand Modware to cover more use cases and
   to train users
 
-## <span id="Genome_Informatics_Lab.2C_Indiana_U." class="mw-headline">Genome Informatics Lab, Indiana U.</span>
+## Genome Informatics Lab, Indiana U.
 
 *Progress report, 2006/July - 2007/June, Don Gilbert*
 
-### <span id="Model_Organism.2FGenome_Database_efforts" class="mw-headline">Model Organism/Genome Database efforts</span>
+### Model Organism/Genome Database efforts
 
 Significant effort during this 2006/2007 period was devoted to data
 updates and management efforts for wFleaBase (Daphnia), DroSpeGe
@@ -629,7 +591,7 @@ discussion in several areas of biosciences. These include several model
 organism communities (arabidopsis, yeast, celegans, drosophila,
 zebrafish, chlamydomonas).
 
-### <span id="GMOD_User_Interface_Caucus" class="mw-headline">GMOD User Interface Caucus</span>
+### GMOD User Interface Caucus
 
 Organization and introduction was prepared for the MOD Face caucus, Jan
 2007. The user interface (UI) arguably has the most direct impact on the
@@ -643,7 +605,7 @@ widely known, and that new and old MODs can benefit from. See
 <a href="http://www.gmod.org/MOD_Face_Summary" class="external free"
 rel="nofollow">http://www.gmod.org/MOD_Face_Summary</a>
 
-### <span id="GMODTools_updates" class="mw-headline">GMODTools updates</span>
+### GMODTools updates
 
 Genbank to Chado worked example: This package provides updates for GMOD
 and Bioperl tools, to simplify creating Chado genome databases using
@@ -654,7 +616,7 @@ simple way to add community annotations to Chado database. See
 class="external free"
 rel="nofollow">http://iubio.bio.indiana.edu/gmod/genbank2chado/</a>
 
-### <span id="Genome_Data_Grid_Tools" class="mw-headline">Genome Data Grid Tools</span>
+### Genome Data Grid Tools
 
 Software tools to fully assembly, analyze and compare these genomes are
 available, but the ability to employ them is limited to those with
@@ -670,7 +632,7 @@ PRELIMINARY: <a href="http://gmod.cvs.sourceforge.net/gmod/genogrid/"
 class="external free"
 rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/genogrid/</a>
 
-### <span id="Publications_and_outreach" class="mw-headline">Publications and outreach</span>
+### Publications and outreach
 
 - Gilbert, D.G., 2007. DroSpeGe: rapid access database for new
   Drosophila species genomes. Nucleic Acids Research, Vol. 35, Database
@@ -696,7 +658,7 @@ rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/genogrid/</a>
 
   
 
-## <span id="TAIR" class="mw-headline">TAIR</span>
+## TAIR
 
 During the past year, TAIR has begun to expand its use of GMOD tools:
 
@@ -709,100 +671,3 @@ collaboration with Suzi Lewis.
 In addition, we are in the process of deploying GBrowse on the
 <a href="http://www.arabidopsis.org" class="external text"
 rel="nofollow">TAIR site</a>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [Chado](Category%253AChado "Category%253AChado")
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [DictyBase](Category%253ADictyBase "Category%253ADictyBase")
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [Modware](Category%253AModware "Category%253AModware")
-- [Pathway Tools](Category%253APathway_Tools "Category%253APathway Tools")
-- [RGD](Category%253ARGD "Category%253ARGD")
-- [TAIR](Category%253ATAIR "Category%253ATAIR")
-- [Textpresso](Category%253ATextpresso "Category%253ATextpresso")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/June_2007_Progress_Report"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:17 on 19 August
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">85,749 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

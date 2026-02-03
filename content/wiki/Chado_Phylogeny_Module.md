@@ -1,40 +1,34 @@
 ---
 title: "Chado Phylogeny Module"
 ---
-<span id="top"></span>
+# Chado Phylogeny Module
 
-# <span dir="auto">Chado Phylogeny Module</span>
+  Introduction](#Introduction)
+  - [Annotating
+    nodes](#Annotating_nodes)
+  - [Open
+    Issues](#Open_Issues)
+- [More
+  Information](#More_Information)
+- [Tables](#Tables)
+  - [Table:
+    phylonode](#Table:_phylonode)
+  - [Table:
+    phylonode_dbxref](#Table:_phylonode_dbxref)
+  - [Table:
+    phylonode_organism](#Table:_phylonode_organism)
+  - [Table:
+    phylonode_pub](#Table:_phylonode_pub)
+  - [Table:
+    phylonode_relationship](#Table:_phylonode_relationship)
+  - [Table:
+    phylonodeprop](#Table:_phylonodeprop)
+  - [Table:
+    phylotree](#Table:_phylotree)
+  - [Table:
+    phylotree_pub](#Table:_phylotree_pub)
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Annotating
-    nodes</span>](#Annotating_nodes)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Open
-    Issues</span>](#Open_Issues)
-- [<span class="tocnumber">2</span> <span class="toctext">More
-  Information</span>](#More_Information)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Table:
-    phylonode</span>](#Table:_phylonode)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Table:
-    phylonode_dbxref</span>](#Table:_phylonode_dbxref)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Table:
-    phylonode_organism</span>](#Table:_phylonode_organism)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Table:
-    phylonode_pub</span>](#Table:_phylonode_pub)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Table:
-    phylonode_relationship</span>](#Table:_phylonode_relationship)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">Table:
-    phylonodeprop</span>](#Table:_phylonodeprop)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">Table:
-    phylotree</span>](#Table:_phylotree)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">Table:
-    phylotree_pub</span>](#Table:_phylotree_pub)
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 For representing phylogenetic trees; the trees represent the phylogeny
 of some some kind of sequence feature, protein or nucleotide, or actual
@@ -56,7 +50,7 @@ feature of type SO:match. Please refer to the [sequence module
 docs](Chado_Sequence_Module "Chado Sequence Module") for details on
 storing multiple alignments.
 
-### <span id="Annotating_nodes" class="mw-headline">Annotating nodes</span>
+### Annotating nodes
 
 Each node can have a feature attached; this 'feature' is the multiple
 alignment for non-leaf nodes. It is these features that are annotated
@@ -73,7 +67,7 @@ href="http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html"
 class="external free"
 rel="nofollow">http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html</a>.
 
-### <span id="Open_Issues" class="mw-headline">Open Issues</span>
+### Open Issues
 
 Should there be an additional table, phylonode_relationshipprop? This
 table would Increase the detail with which one can describe the edges
@@ -82,14 +76,14 @@ bootstrapping details or divergence times. The current thinking is that
 such a table should be created but input from the Chado designers would
 be useful here.
 
-# <span id="More_Information" class="mw-headline">More Information</span>
+# More Information
 
 See the page on the related [Organism
 module](Chado_Organism_Module "Chado Organism Module").
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_phylonode" class="mw-headline">Table: phylonode</span>
+## Table: phylonode
 
 This is the most pervasive element in the phylogeny module, cataloging
 the "phylonodes" of tree graphs. Edges are implied by the
@@ -195,30 +189,15 @@ phylonode Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-
-<!-- -->
-
 - [phylonode_dbxref](Chado_Tables#Table:_phylonode_dbxref "Chado Tables")
-
-<!-- -->
-
 - [phylonode_organism](Chado_Tables#Table:_phylonode_organism "Chado Tables")
-
-<!-- -->
-
 - [phylonode_pub](Chado_Tables#Table:_phylonode_pub "Chado Tables")
-
-<!-- -->
-
 - [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-
-<!-- -->
-
 - [phylonodeprop](Chado_Tables#Table:_phylonodeprop "Chado Tables")
 
 ---
 
-## <span id="Table:_phylonode_dbxref" class="mw-headline">Table: phylonode_dbxref</span>
+## Table: phylonode_dbxref
 
 For example, for orthology, paralogy group identifiers; could also be
 used for NCBI taxonomy; for sequences, refer to phylonode_feature,
@@ -234,7 +213,7 @@ phylonode_dbxref Structure
 
 ---
 
-## <span id="Table:_phylonode_organism" class="mw-headline">Table: phylonode_organism</span>
+## Table: phylonode_organism
 
 This linking table should only be used for nodes in taxonomy trees; it
 provides a mapping between the node and an organism. One node can have
@@ -288,7 +267,7 @@ phylonode_organism Structure
 
 ---
 
-## <span id="Table:_phylonode_pub" class="mw-headline">Table: phylonode_pub</span>
+## Table: phylonode_pub
 
 | FK                                                        | Name             | Type    | Description         |
 | --------------------------------------------------------- | ---------------- | ------- | ------------------- |
@@ -300,7 +279,7 @@ phylonode_pub Structure
 
 ---
 
-## <span id="Table:_phylonode_relationship" class="mw-headline">Table: phylonode_relationship</span>
+## Table: phylonode_relationship
 
 This is for relationships that are not strictly hierarchical; for
 example, horizontal gene transfer. Most phylogenetic trees are strictly
@@ -319,7 +298,7 @@ phylonode_relationship Structure
 
 ---
 
-## <span id="Table:_phylonodeprop" class="mw-headline">Table: phylonodeprop</span>
+## Table: phylonodeprop
 
 <table data-border="1" data-cellpadding="3">
 <caption>phylonodeprop Structure</caption>
@@ -381,7 +360,7 @@ phylonodeprop Structure
 
 ---
 
-## <span id="Table:_phylotree" class="mw-headline">Table: phylotree</span>
+## Table: phylotree
 
 Global anchor for phylogenetic tree.
 
@@ -452,18 +431,12 @@ phylotree Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [phylonode](Chado_Tables#Table:_phylonode "Chado Tables")
-
-<!-- -->
-
 - [phylonode_relationship](Chado_Tables#Table:_phylonode_relationship "Chado Tables")
-
-<!-- -->
-
 - [phylotree_pub](Chado_Tables#Table:_phylotree_pub "Chado Tables")
 
 ---
 
-## <span id="Table:_phylotree_pub" class="mw-headline">Table: phylotree_pub</span>
+## Table: phylotree_pub
 
 Tracks citations global to the tree e.g. multiple sequence alignment
 supporting tree construction.
@@ -477,52 +450,3 @@ supporting tree construction.
 phylotree_pub Structure
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Evolution](Category%253AEvolution "Category%253AEvolution")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Phylogeny_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:39 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">88,661 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

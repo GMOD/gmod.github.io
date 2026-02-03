@@ -1,23 +1,7 @@
 ---
 title: "Galaxy Tutorial 2012"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Galaxy Tutorial 2012</span>
-
-
-
-
-
-
-
+# Galaxy Tutorial 2012
 
 
 This walks you through setting up and running a
@@ -32,51 +16,44 @@ Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial") for information on
 how to get this AMI.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Some General
   Galaxy Resources</span>](#Some_General_Galaxy_Resources)
-- [<span class="tocnumber">2</span> <span class="toctext">Create a
-  Galaxy instance</span>](#Create_a_Galaxy_instance)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Clone the
-    Galaxy repository</span>](#Clone_the_Galaxy_repository)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Take
+- [Create a
+  Galaxy instance](#Create_a_Galaxy_instance)
+  - [Prerequisites](#Prerequisites)
+  - [Clone the
+    Galaxy repository](#Clone_the_Galaxy_repository)
+  - [Take
     Advantage of the GMOD in the Cloud Directory
-    Structure</span>](#Take_Advantage_of_the_GMOD_in_the_Cloud_Directory_Structure)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Update
-    Galaxy Configuration File</span>](#Update_Galaxy_Configuration_File)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Use a more
-    robust database</span>](#Use_a_more_robust_database)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Run,
-    Galaxy, Run!</span>](#Run.2C_Galaxy.2C_Run.21)
-- [<span class="tocnumber">3</span> <span class="toctext">Running
-  analyses with Galaxy</span>](#Running_analyses_with_Galaxy)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">1. Access
+    Structure](#Take_Advantage_of_the_GMOD_in_the_Cloud_Directory_Structure)
+  - [Update
+    Galaxy Configuration File](#Update_Galaxy_Configuration_File)
+  - [Use a more
+    robust database](#Use_a_more_robust_database)
+  - [Run,
+    Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
+- [Running
+  analyses with Galaxy](#Running_analyses_with_Galaxy)
+  - [1. Access
     your new Galaxy
-    instance</span>](#1._Access_your_new_Galaxy_instance)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">2. Create
-    a user</span>](#2._Create_a_user)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">2. Get Pig
-    Exons</span>](#2._Get_Pig_Exons)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">That's
-      odd</span>](#That.27s_odd)
-    - [<span class="tocnumber">3.3.2</span> <span class="toctext">Our
+    instance](#1._Access_your_new_Galaxy_instance)
+  - [2. Create
+    a user](#2._Create_a_user)
+  - [2. Get Pig
+    Exons](#2._Get_Pig_Exons)
+    - [That's
+      odd](#That.27s_odd)
+    - [Our
       first peek at the
-      Plumbing</span>](#Our_first_peek_at_the_Plumbing)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">3. Get Pig
-    Repeat Regions</span>](#3._Get_Pig_Repeat_Regions)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">4.
+      Plumbing](#Our_first_peek_at_the_Plumbing)
+  - [3. Get Pig
+    Repeat Regions](#3._Get_Pig_Repeat_Regions)
+  - [4.
     Identify genes and repeats that
-    overlap</span>](#4._Identify_genes_and_repeats_that_overlap)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">5. Group
-    and Count</span>](#5._Group_and_Count)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">6. Get
-    Exon Info back</span>](#6._Get_Exon_Info_back)
-
+    overlap](#4._Identify_genes_and_repeats_that_overlap)
+  - [5. Group
+    and Count](#5._Group_and_Count)
+  - [6. Get
+    Exon Info back](#6._Get_Exon_Info_back)
 
 
 <a href="http://galaxyproject.org/" class="external text"
@@ -89,7 +66,7 @@ interactive analysis that transparently tracks the details of analyses,
 a workflow system for convenient reuse, data management, sharing,
 publishing, and more.
 
-## <span id="Some_General_Galaxy_Resources" class="mw-headline">Some General Galaxy Resources</span>
+## Some General Galaxy Resources
 
 Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
@@ -97,50 +74,28 @@ useful to us along the way.
 <a href="http://galaxyproject.org" class="external free"
 rel="nofollow">http://galaxyproject.org</a>  
 The Galaxy Project home page
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/" class="external text"
 rel="nofollow">GalaxyWiki</a>  
 All things Galaxy.
-
-<!-- -->
-
 <a href="http://usegalaxy.org/" class="external free"
 rel="nofollow">http://usegalaxy.org/</a>  
 The Galaxy project's free public server.
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/" class="external text"
 rel="nofollow">Galaxy Search</a>  
 Integrated searches of all online Galaxy resources. Available searches:
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/web" class="external text"
 rel="nofollow">Pan-Galactic Web Search</a>  
 Search everything
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>  
 Search the (Nabble-powered) mailing list archives
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/usegalaxy"
 class="external text" rel="nofollow">Using Galaxy Search</a>  
 Search online resources related to *using* Galaxy
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/getgalaxy"
 class="external text" rel="nofollow">Galaxy Admin and Development
 Search</a>  
 Search online resources related to *deploying and developing* Galaxy
-
 
 
 Results from searches are often further broken down into categories
@@ -158,30 +113,20 @@ Results from searches are often further broken down into categories
 This is all implemented using Google Custom Search.
 
 
-
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
 class="external text" rel="nofollow">Public Galaxy Servers</a>  
 Current list of know publicly accessible Galaxy servers.
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/Mailing%20Lists"
 class="external text" rel="nofollow">Mailing Lists</a> and <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Mailing Lists Search</a>  
 Galaxy has several mailing lists, some of which are
 <a href="https://wiki.galaxyproject.org/Statistics"
 class="external text" rel="nofollow">very active</a>
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/Learn/Screencasts"
 class="external text" rel="nofollow">Screencasts</a>, lots of them.  
 Slides, and sometimes videos, from past
 <a href="https://wiki.galaxyproject.org/Events" class="external text"
 rel="nofollow">Galaxy-related events and presentations</a>.
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
 rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
 class="external text" rel="nofollow">@ CiteULike</a>) and <a href="http://www.mendeley.com/groups/1710745/" class="external text"
@@ -189,16 +134,14 @@ rel="nofollow">Mendeley mirror</a>
 Eight different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a>.
 
-## <span id="Create_a_Galaxy_instance" class="mw-headline">Create a Galaxy instance</span>
-
+## Create a Galaxy instance
 
 
 See <a href="http://getgalaxy.org" class="external free"
 rel="nofollow">http://getgalaxy.org</a>.
 
 
-
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 The only prerequisite to run your own Galaxy is a Python interpreter,
 version 2.5 or greater. Python 3 is a different language and is
@@ -219,12 +162,11 @@ rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
     Mercurial Distributed SCM (version 1.4.3)
     ...
 
-### <span id="Clone_the_Galaxy_repository" class="mw-headline">Clone the Galaxy repository</span>
+### Clone the Galaxy repository
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
 rel="nofollow">bitbucket hosting service</a>.
-
 
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
@@ -237,8 +179,7 @@ To create a local clone of the release repository run the following:
 ```
 
 
-
-### <span id="Take_Advantage_of_the_GMOD_in_the_Cloud_Directory_Structure" class="mw-headline">Take Advantage of the GMOD in the Cloud Directory Structure</span>
+### Take Advantage of the GMOD in the Cloud Directory Structure
 
 All of the Galaxy files are currently in the `~ubuntu` home directory
 under `Galaxy`. Let's start by moving this to the non-volatile disk, so
@@ -248,7 +189,7 @@ to speak, on the *GMOD in the Cloud*-based AWS image we are using.
     $ mv Galaxy /data/dataHome/
     $ ln -s /data/dataHome/Galaxy Galaxy
 
-### <span id="Update_Galaxy_Configuration_File" class="mw-headline">Update Galaxy Configuration File</span>
+### Update Galaxy Configuration File
 
 Often you can just fire up Galaxy at this point. However, we want a few
 things to be different from the default installation. Galaxy's main
@@ -297,14 +238,12 @@ to this:
 
     brand = My Super Cool Brand
 
-### <span id="Use_a_more_robust_database" class="mw-headline">Use a more robust database</span>
-
+### Use a more robust database
 
 
 See <a
 href="https://wiki.galaxyproject.org/Admin/Config/Performance/Production%20Server"
 class="external text" rel="nofollow">Production Server</a>
-
 
 
 Out of the box Galaxy includes the embedded SQLite database. This allows
@@ -360,7 +299,7 @@ the database that we told Galaxy to connect to:
 
     $ createdb galaxydb
 
-### <span id="Run.2C_Galaxy.2C_Run.21" class="mw-headline">Run, Galaxy, Run!</span>
+### Run, Galaxy, Run!
 
 Galaxy includes a script to run it. This script also performs the Galaxy
 initialization the first time it is run. Run it now:
@@ -396,13 +335,11 @@ loading tool configurations, starting the job runner, and finally
 initializing the web interface on the requested port. You can now access
 your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 
-## <span id="Running_analyses_with_Galaxy" class="mw-headline">Running analyses with Galaxy</span>
-
+## Running analyses with Galaxy
 
 
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>
-
 
 
 Without any additional configuration, there is already a lot we can do
@@ -411,7 +348,7 @@ analysis that is based on, but distinct from the
 <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>.
 
-#### <span id="1._Access_your_new_Galaxy_instance" class="mw-headline">1. Access your new Galaxy instance</span>
+#### 1. Access your new Galaxy instance
 
 Start a web browser and access
 http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
@@ -424,15 +361,13 @@ width="900" height="678" alt="Galaxy FirstAnalysis 1.png" />
 Now that Galaxy is up and running, let's use it to answer the question:
 
 
-
 Which coding exons have the highest number of embedded/overlapping
 repeats?
 
 
-
 We will ask this question about pig chromosome 18 in our example.
 
-#### <span id="2._Create_a_user" class="mw-headline">2. Create a user</span>
+#### 2. Create a user
 
 In the top bar, *select* **User → Register**. *Enter* your
 
@@ -446,7 +381,7 @@ and *click* **Submit**.
 Registering is not required in order to use Galaxy. However, to use all
 of it, users need to register.
 
-#### <span id="2._Get_Pig_Exons" class="mw-headline">2. Get Pig Exons</span>
+#### 2. Get Pig Exons
 
 Select **Tools → Get Data → UCSC Main**. This will display the UCSC
 Table Browser, a web interface to the databases that back the UCSC
@@ -485,7 +420,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Galaxy_ExonSetAttributes.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Galaxy_ExonSetAttributes.png 2x"
 width="900" height="700" alt="Galaxy ExonSetAttributes.png" />
 
-##### <span id="That.27s_odd" class="mw-headline">That's odd</span>
+##### That's odd
 
 - I know Galaxy can send datasets to UCSC for visualization.
 - But UCSC is not in the list of visualization options, even though we
@@ -496,7 +431,7 @@ width="900" height="700" alt="Galaxy ExonSetAttributes.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fc/Galaxy_NoLinkToUCSCForPigs.png"
 width="281" height="399" alt="Galaxy NoLinkToUCSCForPigs.png" />
 
-##### <span id="Our_first_peek_at_the_Plumbing" class="mw-headline">Our first peek at the Plumbing</span>
+##### Our first peek at the Plumbing
 
 Galaxy-dist has several important subdirectories
 
@@ -523,7 +458,7 @@ main** is now one of the options.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0f/Galaxy_LinkToUCSCForPigs.png" width="281"
 height="415" alt="Galaxy LinkToUCSCForPigs.png" />
 
-#### <span id="3._Get_Pig_Repeat_Regions" class="mw-headline">3. Get Pig Repeat Regions</span>
+#### 3. Get Pig Repeat Regions
 
 Get repeats from UCSC as well. Select **Tools → Get Data → UCSC Main**.
 
@@ -556,7 +491,7 @@ width="900" height="684" alt="Galaxy RepeatsDetails.png" />
 
 Note that the dataset is already viewable in UCSC.
 
-#### <span id="4._Identify_genes_and_repeats_that_overlap" class="mw-headline">4. Identify genes and repeats that overlap</span>
+#### 4. Identify genes and repeats that overlap
 
 Select **Tools → Operate on Genomic Intervals → Join**.
 
@@ -588,7 +523,7 @@ Take a close look at the dataset. Note that
 
 Finally, *rename* the dataset something like **Exon Rpt Pairings**
 
-#### <span id="5._Group_and_Count" class="mw-headline">5. Group and Count</span>
+#### 5. Group and Count
 
 Now we want to walk through the exon-repeat pairings and count the
 number of times each exon occurs. This number is the number of repeats
@@ -628,15 +563,13 @@ If we were to now to run **Tools → Filter and Sort → Sort** on this
 dataset, we would have the answer to our original question:
 
 
-
 Which exons have the most repeats?
-
 
 
 We have the list of exons, and the counts in them. We could use this
 dataset in further analysis, email it someone, etc..
 
-#### <span id="6._Get_Exon_Info_back" class="mw-headline">6. Get Exon Info back</span>
+#### 6. Get Exon Info back
 
 However, we can do better. We have lost some information about the exons
 (like position, strand, and so on) that we had in the original exon
@@ -674,92 +607,3 @@ Now, use the **Cut** tool to reshuffle these 8 columns into a valid 6
 column BED file with the repeat count in column 5, the score column.
 
 *Select* **Tools → Text Manipulation → Cut**. *Enter* `c3,c4,c5,c6,`
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2012 Summer
-  School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Galaxy_Tutorial_2012" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:18 on 11 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">31,872 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

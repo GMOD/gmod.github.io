@@ -1,56 +1,32 @@
 ---
 title: "Chado Publication Module"
 ---
+# Chado Publication Module
 
 
+  Introduction](#Introduction)
+- [Tables](#Tables)
+  - [Table:
+    pub](#Table:_pub)
+  - [Table:
+    pub_dbxref](#Table:_pub_dbxref)
+  - [Table:
+    pub_relationship](#Table:_pub_relationship)
+  - [Table:
+    pubauthor](#Table:_pubauthor)
+  - [Table:
+    pubprop](#Table:_pubprop)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Publication Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    pub</span>](#Table:_pub)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    pub_dbxref</span>](#Table:_pub_dbxref)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    pub_relationship</span>](#Table:_pub_relationship)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    pubauthor</span>](#Table:_pubauthor)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    pubprop</span>](#Table:_pubprop)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 The Publication module describes references to sources of knowledge.
 Usually these are published articles but can also include conferences,
 Web pages, and so on.
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_pub" class="mw-headline">Table: pub</span>
+## Table: pub
 
 A documented provenance artefact - publications, documents, personal
 communication.
@@ -181,126 +157,39 @@ pub Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [expression_pub](Chado_Tables#Table:_expression_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm](Chado_Tables#Table:_feature_cvterm "Chado Tables")
-
-<!-- -->
-
 - [feature_cvterm_pub](Chado_Tables#Table:_feature_cvterm_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_expression](Chado_Tables#Table:_feature_expression "Chado Tables")
-
-<!-- -->
-
 - [feature_pub](Chado_Tables#Table:_feature_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_relationship_pub](Chado_Tables#Table:_feature_relationship_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_relationshipprop_pub](Chado_Tables#Table:_feature_relationshipprop_pub "Chado Tables")
-
-<!-- -->
-
 - [feature_synonym](Chado_Tables#Table:_feature_synonym "Chado Tables")
-
-<!-- -->
-
 - [featureloc_pub](Chado_Tables#Table:_featureloc_pub "Chado Tables")
-
-<!-- -->
-
 - [featuremap_pub](Chado_Tables#Table:_featuremap_pub "Chado Tables")
-
-<!-- -->
-
 - [featureprop_pub](Chado_Tables#Table:_featureprop_pub "Chado Tables")
-
-<!-- -->
-
 - [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-
-<!-- -->
-
 - [library_pub](Chado_Tables#Table:_library_pub "Chado Tables")
-
-<!-- -->
-
 - [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
-
-<!-- -->
-
 - [phendesc](Chado_Tables#Table:_phendesc "Chado Tables")
-
-<!-- -->
-
 - [phenotype_comparison](Chado_Tables#Table:_phenotype_comparison "Chado Tables")
-
-<!-- -->
-
 - [phenstatement](Chado_Tables#Table:_phenstatement "Chado Tables")
-
-<!-- -->
-
 - [phylonode_pub](Chado_Tables#Table:_phylonode_pub "Chado Tables")
-
-<!-- -->
-
 - [phylotree_pub](Chado_Tables#Table:_phylotree_pub "Chado Tables")
-
-<!-- -->
-
 - [protocol](Chado_Tables#Table:_protocol "Chado Tables")
-
-<!-- -->
-
 - [pub_dbxref](Chado_Tables#Table:_pub_dbxref "Chado Tables")
-
-<!-- -->
-
 - [pub_relationship](Chado_Tables#Table:_pub_relationship "Chado Tables")
-
-<!-- -->
-
 - [pubauthor](Chado_Tables#Table:_pubauthor "Chado Tables")
-
-<!-- -->
-
 - [pubprop](Chado_Tables#Table:_pubprop "Chado Tables")
-
-<!-- -->
-
 - [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-
-<!-- -->
-
 - [stock_pub](Chado_Tables#Table:_stock_pub "Chado Tables")
-
-<!-- -->
-
 - [stock_relationship_pub](Chado_Tables#Table:_stock_relationship_pub "Chado Tables")
-
-<!-- -->
-
 - [stockprop_pub](Chado_Tables#Table:_stockprop_pub "Chado Tables")
-
-<!-- -->
-
 - [study](Chado_Tables#Table:_study "Chado Tables")
-
-<!-- -->
-
 - [wwwuser_pub](Chado_Tables#Table:_wwwuser_pub "Chado Tables")
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_pub_dbxref" class="mw-headline">Table: pub_dbxref</span>
+## Table: pub_dbxref
 
 Handle links to repositories, e.g. Pubmed, Biosis, zoorec, OCLC,
 Medline, ISSN, coden...
@@ -318,7 +207,7 @@ pub_dbxref Structure
 
   
 
-## <span id="Table:_pub_relationship" class="mw-headline">Table: pub_relationship</span>
+## Table: pub_relationship
 
 Handle relationships between publications, e.g. when one publication
 makes others obsolete, when one publication contains errata with respect
@@ -338,7 +227,7 @@ pub_relationship Structure
 
   
 
-## <span id="Table:_pubauthor" class="mw-headline">Table: pubauthor</span>
+## Table: pubauthor
 
 An author for a publication. Note the denormalisation (hence lack of \_
 in table name) - this is deliberate as it is in general too hard to
@@ -423,7 +312,7 @@ pubauthor Structure
 
   
 
-## <span id="Table:_pubprop" class="mw-headline">Table: pubprop</span>
+## Table: pubprop
 
 Property-value pairs for a pub. Follows standard chado pattern.
 
@@ -438,94 +327,3 @@ Property-value pairs for a pub. Follows standard chado pattern.
 pubprop Structure
 
 ------------------------------------------------------------------------
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Publication_Module" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Publication_Module"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:40 on 18 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">50,434 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,50 +1,28 @@
 ---
 title: "Talk:Hackathon 2007 info"
 ---
+# Talk:Hackathon 2007 info
 
 
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">Talk:Hackathon 2007 info</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Possible
   TableEdit/Wiki hackathon
   projects</span>](#Possible_TableEdit.2FWiki_hackathon_projects)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">TableEdit
-    possible goals</span>](#TableEdit_possible_goals)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Other
+  - [TableEdit
+    possible goals](#TableEdit_possible_goals)
+  - [Other
     possible wiki for gmod
-    goals</span>](#Other_possible_wiki_for_gmod_goals)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Improving Category
-      pages</span>](#Improving_Category_pages)
-    - [<span class="tocnumber">1.2.2</span> <span class="toctext">Wiki
-      for GMOD installer?</span>](#Wiki_for_GMOD_installer.3F)
+    goals](#Other_possible_wiki_for_gmod_goals)
+    - [Improving Category
+      pages](#Improving_Category_pages)
+    - [Wiki
+      for GMOD installer?](#Wiki_for_GMOD_installer.3F)
 
 
-
-## <span id="Possible_TableEdit.2FWiki_hackathon_projects" class="mw-headline">Possible [TableEdit](TableEdit.1 "TableEdit")/Wiki hackathon projects</span>
+## Possible [TableEdit](TableEdit.1 "TableEdit")/Wiki hackathon projects
 
 These are some things we are planning to work on, but could use
 hackathon help on --18:00, 26 July 2007 (EDT)
 
-### <span id="TableEdit_possible_goals" class="mw-headline">[TableEdit](TableEdit.1 "TableEdit") possible goals</span>
+### [TableEdit](TableEdit.1 "TableEdit") possible goals
 
 - [TableEdit](TableEdit.1 "TableEdit")
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a> round trip
@@ -65,9 +43,9 @@ hackathon help on --18:00, 26 July 2007 (EDT)
   particular class of tables or fields.
 - [AJAX](Category%253AAJAX "Category%253AAJAX")
 
-### <span id="Other_possible_wiki_for_gmod_goals" class="mw-headline">Other possible wiki for gmod goals</span>
+### Other possible wiki for gmod goals
 
-#### <span id="Improving_Category_pages" class="mw-headline">Improving Category pages</span>
+#### Improving Category pages
 
 - Displaying Category intersections, unions, and disjoints.
 - Displaying more levels of the Category DAG
@@ -76,7 +54,7 @@ hackathon help on --18:00, 26 July 2007 (EDT)
   <a href="http://www.mediawiki.org/wiki/Extension:CategoryTree"
   class="external text">this</a>?)
 
-#### <span id="Wiki_for_GMOD_installer.3F" class="mw-headline">Wiki for GMOD installer?</span>
+#### Wiki for GMOD installer?
 
 - Should we think about writing an installer that would install a
   standard
@@ -91,83 +69,6 @@ appliance that already has MW installed._
 - Could this include an update installer?
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [TableEdit](Category%253ATableEdit "Category%253ATableEdit")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-### Namespaces
-
-- <span id="ca-talk"><a href="Talk%253AHackathon_2007_info" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:04 on 10 December 2009.</span>
-<!-- - <span id="footer-info-viewcount">13,304 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

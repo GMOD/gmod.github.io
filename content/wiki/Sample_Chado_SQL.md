@@ -1,60 +1,29 @@
 ---
 title: "Sample Chado SQL"
 ---
+# Sample Chado SQL
 
 
+  Abstract](#Abstract)
+- [PostgreSQL
+  queries](#PostgreSQL_queries)
+- [organism_summary](#organism_summary)
+- [feature_summary](#feature_summary)
+- [chromosome_summary](#chromosome_summary)
+- [analysis_summary](#analysis_summary)
+- [sequence_ontology](#sequence_ontology)
+- [property_summary](#property_summary)
+- [gene_page](#gene_page)
+  - [simple
+    gene_page output](#simple_gene_page_output)
+  - [longer
+    gene_page output](#longer_gene_page_output)
+- [More
+  Information](#More_Information)
+- [Authors](#Authors)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Sample Chado SQL</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Abstract</span>](#Abstract)
-- [<span class="tocnumber">2</span> <span class="toctext">PostgreSQL
-  queries</span>](#PostgreSQL_queries)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">organism_summary</span>](#organism_summary)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">feature_summary</span>](#feature_summary)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">chromosome_summary</span>](#chromosome_summary)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">analysis_summary</span>](#analysis_summary)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">sequence_ontology</span>](#sequence_ontology)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">property_summary</span>](#property_summary)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">gene_page</span>](#gene_page)
-  - [<span class="tocnumber">9.1</span> <span class="toctext">simple
-    gene_page output</span>](#simple_gene_page_output)
-  - [<span class="tocnumber">9.2</span> <span class="toctext">longer
-    gene_page output</span>](#longer_gene_page_output)
-- [<span class="tocnumber">10</span> <span class="toctext">More
-  Information</span>](#More_Information)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Authors</span>](#Authors)
-
-
-
-# <span id="Abstract" class="mw-headline">Abstract</span>
+# Abstract
 
 This HOWTO provides several sample SQL queries to view basic genome data
 from a Chado database. Some of these are drawn from the
@@ -65,7 +34,7 @@ href="http://insects.eugenes.org/genome/Drosophila_melanogaster/current/tables/"
 class="external free"
 rel="nofollow">http://insects.eugenes.org/genome/Drosophila_melanogaster/current/tables/</a>
 
-# <span id="PostgreSQL_queries" class="mw-headline">PostgreSQL queries</span>
+# PostgreSQL queries
 
 The simplest way to test contents of a Chado database is with the
 **psql** command line program that is part of the
@@ -87,7 +56,7 @@ code can be used this way from a Unix or MacOSX command line.
                 3 |    10
                10 |  1605
 
-# <span id="organism_summary" class="mw-headline">organism_summary</span>
+# organism_summary
 
 This lists organisms and number of features per organism.
 
@@ -106,7 +75,7 @@ sample result
        1    Dmel    Drosophila  melanogaster    fruit fly   725035  \N
      214    Dpse    Drosophila  pseudoobscura   \N  137045  \N
 
-# <span id="feature_summary" class="mw-headline">feature_summary</span>
+# feature_summary
 
 This lists number of features and sequences by species and type.
 
@@ -142,7 +111,7 @@ Sample result
      499    polyA_site  122 \N  \N  \N  \N  \N  Drosophila_melanogaster
      1179   protein 22219   12111034    10921981    563 25  23015   Drosophila_melanogaster
 
-# <span id="chromosome_summary" class="mw-headline">chromosome_summary</span>
+# chromosome_summary
 
 This is an extension of feature summary, to identify source features.
 These are the chromosomes, scaffolds, contigs or other features on which
@@ -180,7 +149,7 @@ Note the **n_issource** count is the number of features contained in the
 chromosomes, not number of chromosomes (see above feature_summary for
 that).
 
-# <span id="analysis_summary" class="mw-headline">analysis_summary</span>
+# analysis_summary
 
 This lists analyses and number of features per analysis.
 
@@ -208,7 +177,7 @@ Sample result
      44 match:repeatmasker  23486   3922.55 \N  Computational_result
      78 match:tblastn:Dmel r3.1 12179   \N  \N  Computational_result
 
-# <span id="sequence_ontology" class="mw-headline">sequence_ontology</span>
+# sequence_ontology
 
 Specifying the sequence ontology section of the cv and cvterm tables is
 a small but essential bit of a Chado database that software needs for
@@ -220,7 +189,7 @@ Ontology Feature Annotation* is recommended.
         8  Sequence Ontology Feature Annotation
         9  Sequence Ontology
 
-# <span id="property_summary" class="mw-headline">property_summary</span>
+# property_summary
 
 This lists properties and number of features per analysis.
 
@@ -248,7 +217,7 @@ Sample result
      59951  non_canonical_splice_site   488 488 2   Drosophila_melanogaster
      59953  problem 6350    6350    12  Drosophila_melanogaster
 
-# <span id="gene_page" class="mw-headline">gene_page</span>
+# gene_page
 
 This is a sample gene page view to list most attributes for a gene
 feature. **NOTE**: this kind of multi-table join view can be very slow
@@ -335,7 +304,7 @@ using (feature_id) where f.name = 'PAU1';
      ;
      
 
-## <span id="simple_gene_page_output" class="mw-headline">simple gene_page output</span>
+## simple gene_page output
 
      dev_chado_01c=# select v.* from v_genepage2 v join feature as f using (feature_id) where f.name = 'PAU1';
       feature_id |   field    |          value           
@@ -356,107 +325,20 @@ using (feature_id) where f.name = 'PAU1';
 The above data was loaded from Yeast GenBank Genome (i.e. not very
 complex)
 
-## <span id="longer_gene_page_output" class="mw-headline">longer gene_page output</span>
+## longer gene_page output
 
 See this
 [Sample_Chado_gene_report](Sample_Chado_gene_report "Sample Chado gene report")
 for a well studied gene from FlyBase chado release 5.
 
-# <span id="More_Information" class="mw-headline">More Information</span>
+# More Information
 
 Please send questions to the GMOD developers list:
 
 <a href="mailto:gmod-devel@lists.sourceforge.net" class="external text"
 rel="nofollow">gmod-devel@lists.sourceforge.net</a>
 
-# <span id="Authors" class="mw-headline">Authors</span>
+# Authors
 
 - [Dongilbert](User%253ADongilbert "User%253ADongilbert") 16:05, 16 April 2007
   (EDT)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Sample_Chado_SQL" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:20 on 28 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">77,992 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

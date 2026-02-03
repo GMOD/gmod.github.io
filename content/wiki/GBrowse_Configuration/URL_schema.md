@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Configuration/URL schema"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/URL schema</span>
-
-
-
-
-
-
-
+# GBrowse Configuration/URL schema
 
 
 This article describes **the public CGI parameters recognized by
@@ -27,7 +11,7 @@ GBrowse**.
 <a href="../GBrowse_Configuration" class="mw-redirect"
 title="GBrowse Configuration">GBrowse Configuration</a>.*
 
-# <span id="Invoking_GBrowse_URLs" class="mw-headline">Invoking GBrowse URLs</span>
+# Invoking GBrowse URLs
 
 By setting the parameters in the URL, you can get gbrowse to do various
 useful things:
@@ -269,96 +253,3 @@ plain text, one would provide the arguments:
 
 Plugins tend not to be well documented, so you may have to read through
 the source code to figure out their arguments.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](../Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](../Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_Configuration-2FURL_schema"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:45 on 6 June
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">24,729 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

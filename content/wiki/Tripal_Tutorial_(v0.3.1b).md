@@ -1,226 +1,174 @@
 ---
 title: "Tripal Tutorial (v0.3.1b)"
 ---
+# Tripal Tutorial (v0.3.1b)
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Tripal Tutorial (v0.3.1b)</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Introduction
   to Tripal</span>](#Introduction_to_Tripal)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">What is
-    Tripal</span>](#What_is_Tripal)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Content
-    Management System</span>](#Content_Management_System)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Drupal</span>](#Drupal)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">Chado</span>](#Chado)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Goals of
-    Tripal</span>](#Goals_of_Tripal)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Structure
-    of Tripal</span>](#Structure_of_Tripal)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Sites
-    Running Tripal</span>](#Sites_Running_Tripal)
-  - [<span class="tocnumber">1.8</span>
-    <span class="toctext">Resources</span>](#Resources)
-  - [<span class="tocnumber">1.9</span>
-    <span class="toctext">Contributing
-    Organizations</span>](#Contributing_Organizations)
-  - [<span class="tocnumber">1.10</span>
-    <span class="toctext">Funding</span>](#Funding)
-  - [<span class="tocnumber">1.11</span>
-    <span class="toctext">Additional
-    Support</span>](#Additional_Support)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Pre-planning</span>](#Pre-planning)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">IT
-    Infrastructure</span>](#IT_Infrastructure)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Technical
-    Skills</span>](#Technical_Skills)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Why Use
-    Tripal</span>](#Why_Use_Tripal)
-- [<span class="tocnumber">3</span> <span class="toctext">Server
-  Setup</span>](#Server_Setup)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Install
-    the Apache Web Server</span>](#Install_the_Apache_Web_Server)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Install
-    the PostgreSQL Server</span>](#Install_the_PostgreSQL_Server)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Install &
-    Setup PHP</span>](#Install_.26_Setup_PHP)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Install
-    phpPgAdmin</span>](#Install_phpPgAdmin)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Prepare
-    Apache</span>](#Prepare_Apache)
-- [<span class="tocnumber">4</span> <span class="toctext">Database
-  Setup</span>](#Database_Setup)
-- [<span class="tocnumber">5</span> <span class="toctext">Install
-  Drupal</span>](#Install_Drupal)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Software
-    Installation</span>](#Software_Installation)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">Configuration
-    File</span>](#Configuration_File)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Final
-    directory creation</span>](#Final_directory_creation)
-  - [<span class="tocnumber">5.4</span>
-    <span class="toctext">Compatibility with other
-    tools</span>](#Compatibility_with_other_tools)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">Web-based
-    Steps</span>](#Web-based_Steps)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">Drupal
-    Cron Entry</span>](#Drupal_Cron_Entry)
-- [<span class="tocnumber">6</span> <span class="toctext">Explore
-  Drupal</span>](#Explore_Drupal)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">User
-    Account Page</span>](#User_Account_Page)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Creating
-    Content</span>](#Creating_Content)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Site
-    Administration</span>](#Site_Administration)
-    - [<span class="tocnumber">6.3.1</span>
-      <span class="toctext">Content
-      Management</span>](#Content_Management)
-    - [<span class="tocnumber">6.3.2</span> <span class="toctext">Site
-      Building</span>](#Site_Building)
-      - [<span class="tocnumber">6.3.2.1</span>
-        <span class="toctext">Modules</span>](#Modules)
-      - [<span class="tocnumber">6.3.2.2</span>
-        <span class="toctext">Themes</span>](#Themes)
-      - [<span class="tocnumber">6.3.2.3</span>
-        <span class="toctext">Blocks</span>](#Blocks)
-      - [<span class="tocnumber">6.3.2.4</span>
-        <span class="toctext">Menus</span>](#Menus)
-      - [<span class="tocnumber">6.3.2.5</span>
-        <span class="toctext">URL Path</span>](#URL_Path)
-      - [<span class="tocnumber">6.3.2.6</span>
-        <span class="toctext">Site
-        Configuration</span>](#Site_Configuration)
-  - [<span class="tocnumber">6.4</span> <span class="toctext">User
-    Accounts</span>](#User_Accounts)
-- [<span class="tocnumber">7</span> <span class="toctext">Prepare Drupal
-  for Tripal</span>](#Prepare_Drupal_for_Tripal)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Theme
-    Installation</span>](#Theme_Installation)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Theme
-    Configuration</span>](#Theme_Configuration)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Module
-    Installation</span>](#Module_Installation)
-- [<span class="tocnumber">8</span> <span class="toctext">Tripal
-  Installation</span>](#Tripal_Installation)
-  - [<span class="tocnumber">8.1</span> <span class="toctext">Main
-    Package Installation</span>](#Main_Package_Installation)
-  - [<span class="tocnumber">8.2</span> <span class="toctext">Tripal
+  - [What is
+    Tripal](#What_is_Tripal)
+  - [Content
+    Management System](#Content_Management_System)
+  - [Drupal](#Drupal)
+  - [Chado](#Chado)
+  - [Goals of
+    Tripal](#Goals_of_Tripal)
+  - [Structure
+    of Tripal](#Structure_of_Tripal)
+  - [Sites
+    Running Tripal](#Sites_Running_Tripal)
+  - [Resources](#Resources)
+  - [Contributing
+    Organizations](#Contributing_Organizations)
+  - [Funding](#Funding)
+  - [Additional
+    Support](#Additional_Support)
+- [Pre-planning](#Pre-planning)
+  - [IT
+    Infrastructure](#IT_Infrastructure)
+  - [Technical
+    Skills](#Technical_Skills)
+  - [Why Use
+    Tripal](#Why_Use_Tripal)
+- [Server
+  Setup](#Server_Setup)
+  - [Install
+    the Apache Web Server](#Install_the_Apache_Web_Server)
+  - [Install
+    the PostgreSQL Server](#Install_the_PostgreSQL_Server)
+  - [Install &
+    Setup PHP](#Install_.26_Setup_PHP)
+  - [Install
+    phpPgAdmin](#Install_phpPgAdmin)
+  - [Prepare
+    Apache](#Prepare_Apache)
+- [Database
+  Setup](#Database_Setup)
+- [Install
+  Drupal](#Install_Drupal)
+  - [Software
+    Installation](#Software_Installation)
+  - [Configuration
+    File](#Configuration_File)
+  - [Final
+    directory creation](#Final_directory_creation)
+  - [Compatibility with other
+    tools](#Compatibility_with_other_tools)
+  - [Web-based
+    Steps](#Web-based_Steps)
+  - [Drupal
+    Cron Entry](#Drupal_Cron_Entry)
+- [Explore
+  Drupal](#Explore_Drupal)
+  - [User
+    Account Page](#User_Account_Page)
+  - [Creating
+    Content](#Creating_Content)
+  - [Site
+    Administration](#Site_Administration)
+    - [Content
+      Management](#Content_Management)
+    - [Site
+      Building](#Site_Building)
+      - [Modules](#Modules)
+      - [Themes](#Themes)
+      - [Blocks](#Blocks)
+      - [Menus](#Menus)
+      - [URL Path](#URL_Path)
+      - [Site
+        Configuration](#Site_Configuration)
+  - [User
+    Accounts](#User_Accounts)
+- [Prepare Drupal
+  for Tripal](#Prepare_Drupal_for_Tripal)
+  - [Theme
+    Installation](#Theme_Installation)
+  - [Theme
+    Configuration](#Theme_Configuration)
+  - [Module
+    Installation](#Module_Installation)
+- [Tripal
+  Installation](#Tripal_Installation)
+  - [Main
+    Package Installation](#Main_Package_Installation)
+  - [Tripal
     Extension Module
-    Installation</span>](#Tripal_Extension_Module_Installation)
-- [<span class="tocnumber">9</span> <span class="toctext">Using
-  Tripal</span>](#Using_Tripal)
-  - [<span class="tocnumber">9.1</span> <span class="toctext">Installing
-    Chado</span>](#Installing_Chado)
-  - [<span class="tocnumber">9.2</span> <span class="toctext">Jobs
-    Management</span>](#Jobs_Management)
-  - [<span class="tocnumber">9.3</span> <span class="toctext">Using
+    Installation](#Tripal_Extension_Module_Installation)
+- [Using
+  Tripal](#Using_Tripal)
+  - [Installing
+    Chado](#Installing_Chado)
+  - [Jobs
+    Management](#Jobs_Management)
+  - [Using
     PhpPgAdmin to View Chado/Drupal
-    Tables</span>](#Using_PhpPgAdmin_to_View_Chado.2FDrupal_Tables)
-  - [<span class="tocnumber">9.4</span> <span class="toctext">Enable
-    Additional Tripal Modules</span>](#Enable_Additional_Tripal_Modules)
-  - [<span class="tocnumber">9.5</span> <span class="toctext">Enable the
-    Tripal Theme</span>](#Enable_the_Tripal_Theme)
-  - [<span class="tocnumber">9.6</span> <span class="toctext">Controlled
+    Tables](#Using_PhpPgAdmin_to_View_Chado.2FDrupal_Tables)
+  - [Enable
+    Additional Tripal Modules](#Enable_Additional_Tripal_Modules)
+  - [Enable the
+    Tripal Theme](#Enable_the_Tripal_Theme)
+  - [Controlled
     Vocabularies: Installing
-    CVs</span>](#Controlled_Vocabularies:_Installing_CVs)
-  - [<span class="tocnumber">9.7</span> <span class="toctext">Creating
-    Organism Pages</span>](#Creating_Organism_Pages)
-    - [<span class="tocnumber">9.7.1</span> <span class="toctext">What
+    CVs](#Controlled_Vocabularies:_Installing_CVs)
+  - [Creating
+    Organism Pages](#Creating_Organism_Pages)
+    - [What
       if Our Organism is Already in
-      Chado?</span>](#What_if_Our_Organism_is_Already_in_Chado.3F)
-    - [<span class="tocnumber">9.7.2</span> <span class="toctext">What
+      Chado?](#What_if_Our_Organism_is_Already_in_Chado.3F)
+    - [What
       if My Organism Is Not Present in
-      Chado?</span>](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
-  - [<span class="tocnumber">9.8</span> <span class="toctext">Creating
-    an Analysis</span>](#Creating_an_Analysis)
-  - [<span class="tocnumber">9.9</span> <span class="toctext">Creating a
+      Chado?](#What_if_My_Organism_Is_Not_Present_in_Chado.3F)
+  - [Creating
+    an Analysis](#Creating_an_Analysis)
+  - [Creating a
     Database Cross
-    Reference</span>](#Creating_a_Database_Cross_Reference)
-  - [<span class="tocnumber">9.10</span> <span class="toctext">Loading
-    Feature Data</span>](#Loading_Feature_Data)
-    - [<span class="tocnumber">9.10.1</span>
-      <span class="toctext">Loading a GFF3
-      File</span>](#Loading_a_GFF3_File)
-    - [<span class="tocnumber">9.10.2</span>
-      <span class="toctext">Loading FASTA
-      files</span>](#Loading_FASTA_files)
-  - [<span class="tocnumber">9.11</span> <span class="toctext">Creating
-    Feature Pages</span>](#Creating_Feature_Pages)
-  - [<span class="tocnumber">9.12</span>
-    <span class="toctext">Materialized
-    Views</span>](#Materialized_Views)
-  - [<span class="tocnumber">9.13</span> <span class="toctext">Feature
-    Page Configuration</span>](#Feature_Page_Configuration)
-  - [<span class="tocnumber">9.14</span> <span class="toctext">Loading
+    Reference](#Creating_a_Database_Cross_Reference)
+  - [Loading
+    Feature Data](#Loading_Feature_Data)
+    - [Loading a GFF3
+      File](#Loading_a_GFF3_File)
+    - [Loading FASTA
+      files](#Loading_FASTA_files)
+  - [Creating
+    Feature Pages](#Creating_Feature_Pages)
+  - [Materialized
+    Views](#Materialized_Views)
+  - [Feature
+    Page Configuration](#Feature_Page_Configuration)
+  - [Loading
     Functional Data Using Extension
-    Modules</span>](#Loading_Functional_Data_Using_Extension_Modules)
-    - [<span class="tocnumber">9.14.1</span>
-      <span class="toctext">Loading Blast
-      Results</span>](#Loading_Blast_Results)
-    - [<span class="tocnumber">9.14.2</span>
-      <span class="toctext">Loading InterProScan
-      Results</span>](#Loading_InterProScan_Results)
-    - [<span class="tocnumber">9.14.3</span>
-      <span class="toctext">Loading KEGG Analysis
-      Results</span>](#Loading_KEGG_Analysis_Results)
-  - [<span class="tocnumber">9.15</span> <span class="toctext">Creating
-    Stocks</span>](#Creating_Stocks)
-  - [<span class="tocnumber">9.16</span> <span class="toctext">Using the
+    Modules](#Loading_Functional_Data_Using_Extension_Modules)
+    - [Loading Blast
+      Results](#Loading_Blast_Results)
+    - [Loading InterProScan
+      Results](#Loading_InterProScan_Results)
+    - [Loading KEGG Analysis
+      Results](#Loading_KEGG_Analysis_Results)
+  - [Creating
+    Stocks](#Creating_Stocks)
+  - [Using the
     GBrowse Extension
-    Module</span>](#Using_the_GBrowse_Extension_Module)
-  - [<span class="tocnumber">9.17</span> <span class="toctext">Drupal
-    Taxonomy & Searching</span>](#Drupal_Taxonomy_.26_Searching)
-    - [<span class="tocnumber">9.17.1</span>
-      <span class="toctext">Drupal Taxonomy</span>](#Drupal_Taxonomy)
-    - [<span class="tocnumber">9.17.2</span>
-      <span class="toctext">Drupal Searching</span>](#Drupal_Searching)
-- [<span class="tocnumber">10</span>
-  <span class="toctext">Customizations</span>](#Customizations)
-  - [<span class="tocnumber">10.1</span> <span class="toctext">Panels &
-    Custom Layouts</span>](#Panels_.26_Custom_Layouts)
-    - [<span class="tocnumber">10.1.1</span>
-      <span class="toctext">Adding a GBrowse
-      Image</span>](#Adding_a_GBrowse_Image)
-  - [<span class="tocnumber">10.2</span> <span class="toctext">Drupal
-    Views</span>](#Drupal_Views)
-    - [<span class="tocnumber">10.2.1</span>
-      <span class="toctext">Changing Tripal Default
-      Views</span>](#Changing_Tripal_Default_Views)
-  - [<span class="tocnumber">10.3</span> <span class="toctext">Editing
-    Template Files</span>](#Editing_Template_Files)
-    - [<span class="tocnumber">10.3.1</span>
-      <span class="toctext">Adding a GBrowse
-      Image</span>](#Adding_a_GBrowse_Image_2)
+    Module](#Using_the_GBrowse_Extension_Module)
+  - [Drupal
+    Taxonomy & Searching](#Drupal_Taxonomy_.26_Searching)
+    - [Drupal Taxonomy](#Drupal_Taxonomy)
+    - [Drupal Searching](#Drupal_Searching)
+- [Customizations](#Customizations)
+  - [Panels &
+    Custom Layouts](#Panels_.26_Custom_Layouts)
+    - [Adding a GBrowse
+      Image](#Adding_a_GBrowse_Image)
+  - [Drupal
+    Views](#Drupal_Views)
+    - [Changing Tripal Default
+      Views](#Changing_Tripal_Default_Views)
+  - [Editing
+    Template Files](#Editing_Template_Files)
+    - [Adding a GBrowse
+      Image](#Adding_a_GBrowse_Image_2)
 
 
-## <span id="Introduction_to_Tripal" class="mw-headline">Introduction to Tripal</span>
+## Introduction to Tripal
 
 This tutorial is for Tripal version v0.3.1b. This tutorial is designed
 to be used with a fresh install of Ubuntu 11.04 (although may work for
@@ -231,7 +179,7 @@ shown in this tutorial to wherever your Apache document root may reside.
 
   
 
-### <span id="What_is_Tripal" class="mw-headline">What is Tripal</span>
+### What is Tripal
 
 Tripal is a suite of PHP5 modules that bridges the Drupal Content
 Management System (CMS) and GMOD Chado.
@@ -241,7 +189,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/600px-WhatisTripal.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/600px-WhatisTripal.png 2x"
 width="400" height="271" alt="600px-WhatisTripal.png" />
 
-### <span id="Content_Management_System" class="mw-headline">Content Management System</span>
+### Content Management System
 
 *Definition From Wikipedia:*
 
@@ -267,7 +215,7 @@ repository, the CMS increases the version level of new updates to an
 already existing file. Version control is one of the primary advantages
 of a CMS.
 
-### <span id="Drupal" class="mw-headline">Drupal</span>
+### Drupal
 
 Drupal is an open-source freely available CMS with thousands of users
 and existing sites. Features of Drupal
@@ -296,13 +244,12 @@ rel="nofollow">http://www.drupal.org/project/themes</a>
 
   
 
-### <span id="Chado" class="mw-headline">Chado</span>
+### Chado
 
 The session for Chado was presented yesterday
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, so no need
 for introductions. However, one thing to remember is that Chado has a
 modular structure:
-
 
 
 - Audit - for database audits
@@ -325,10 +272,9 @@ modular structure:
 - WWW -
 
 
-
 Tripal is also modular along these same designations.
 
-### <span id="Goals_of_Tripal" class="mw-headline">Goals of Tripal</span>
+### Goals of Tripal
 
 - Simplify Construction of Biological Databases
   - Reduce time of development
@@ -336,28 +282,19 @@ Tripal is also modular along these same designations.
   - Reduce technical resources (i.e. programmers, systems admins).
   - A non-technical site administrator can add content without knowing
     PHP, HTML, JavaScript.
-
-<!-- -->
-
 - Greater Flexibility of the Biological Website
   - Social Networking
   - Non-biological content
   - Outreach, tutorials, documentation, protocols, publications
-
-<!-- -->
-
 - Expandability
   - Site can be programmatically expanded in any way
   - Changes to base-code are not needed but modules are added.
   - Availability of an Application Programmer Interface (API)
-
-<!-- -->
-
 - Reusability
   - All code can be shared. Expansion modules created by one group can
     be shared with all.
 
-### <span id="Structure_of_Tripal" class="mw-headline">Structure of Tripal</span>
+### Structure of Tripal
 
 Tripal is a collection of modules that integrate with Drupal. These
 modules are divided into hierarchical categories:
@@ -398,7 +335,7 @@ Applications:
   modules and custom built modules. (e.g. Breeders Toolbox currently
   under construction).
 
-### <span id="Sites_Running_Tripal" class="mw-headline">Sites Running Tripal</span>
+### Sites Running Tripal
 
 | Site Name | URL |
 |----|----|
@@ -417,7 +354,7 @@ rel="nofollow">http://www.citrusgenomedb.org</a> |
 | Marine Genomics Project | <a href="http://www.marinegenomics.org" class="external free"
 rel="nofollow">http://www.marinegenomics.org</a> |
 
-### <span id="Resources" class="mw-headline">Resources</span>
+### Resources
 
 The Tripal Sourceforge home site where you can find everything about
 Tripal: <a href="http://tripal.sourceforge.net" class="external free"
@@ -433,7 +370,7 @@ rel="nofollow">http://gmod.org/wiki/Tripal</a>
 
   
 
-### <span id="Contributing_Organizations" class="mw-headline">Contributing Organizations</span>
+### Contributing Organizations
 
 Individuals from these organizations have provided design and coding for
 Tripal
@@ -450,7 +387,7 @@ alt="150px-WSULogo.png" />
 
   
 
-### <span id="Funding" class="mw-headline">Funding</span>
+### Funding
 
 Funding for Tripal has been provided through various grants from the
 USDA, NSF, in-house funding from the Clemson University Genomics
@@ -459,7 +396,7 @@ Integration (CITI) group.
 
   
 
-### <span id="Additional_Support" class="mw-headline">Additional Support</span>
+### Additional Support
 
 - Logistical and community interaction support and has been provided by
   GMOD!!
@@ -467,9 +404,9 @@ Integration (CITI) group.
   primarily at the NOAA Hollings Marine Lab in Charleston South Carolina
   provided input and direction for the first versions of Tripal.
 
-## <span id="Pre-planning" class="mw-headline">Pre-planning</span>
+## Pre-planning
 
-### <span id="IT_Infrastructure" class="mw-headline">IT Infrastructure</span>
+### IT Infrastructure
 
 Setup of the prerequisites for Tripal can be the most challenging part
 depending on the IT infrastructure currently available for your project.
@@ -525,7 +462,7 @@ adequate local file storage for loading of large data files. Be sure to
 check with your service provider to make sure command-line access is
 possible.
 
-### <span id="Technical_Skills" class="mw-headline">Technical Skills</span>
+### Technical Skills
 
 Depending on your needs, you may need additional Technical support....
 
@@ -546,7 +483,7 @@ been done and expand on it....?**
 
   
 
-### <span id="Why_Use_Tripal" class="mw-headline">Why Use Tripal</span>
+### Why Use Tripal
 
 Tripal does not yet fully support Chado. We are getting closer, but as
 of now, it is still lacking in many areas... ***So why use Tripal?***
@@ -562,7 +499,7 @@ of now, it is still lacking in many areas... ***So why use Tripal?***
     other.
 6.  It is all open-source and free technology!
 
-## <span id="Server_Setup" class="mw-headline">Server Setup</span>
+## Server Setup
 
 The following instructions are for setup of a
 <a href="http://www.ubuntu.com/" class="external text"
@@ -637,7 +574,7 @@ Now, restart the webserver:
 
 A password should now be required when accessing the PhpPgAdmin page.
 
-### <span id="Prepare_Apache" class="mw-headline">Prepare Apache</span>
+### Prepare Apache
 
 Enable the rewrite module for apache. This is useful so that we can use
 Clean URLs with Drupal. Clean URLs are not required but make the page
@@ -674,7 +611,7 @@ Now restart your apache again.
 sudo /etc/init.d/apache2 restart
 ```
 
-## <span id="Database_Setup" class="mw-headline">Database Setup</span>
+## Database Setup
 
 Drupal can run on a MySQL or PostgreSQL database but Chado prefers
 PostgreSQL so that is what we will use for both Drupal and Chado. We
@@ -722,9 +659,9 @@ We no longer need to be the postgres user so exit
 exit
 ```
 
-## <span id="Install_Drupal" class="mw-headline">Install Drupal</span>
+## Install Drupal
 
-### <span id="Software_Installation" class="mw-headline">Software Installation</span>
+### Software Installation
 
 We want to install Drupal into our web document root (`/var/www`). We
 want to be able to do this as our 'tripal' user. So, first, let's set
@@ -789,7 +726,7 @@ as the home page for the website. Drupal uses an `index.php` page for
 it's home page but the web server has preference for the `index.html`
 page. So, we move it out of the way.
 
-### <span id="Configuration_File" class="mw-headline">Configuration File</span>
+### Configuration File
 
 Next, we need to tell Drupal how to connect to our database. To do this
 we have to setup a configuration file. Drupal comes with an example
@@ -830,7 +767,7 @@ Find the variable \$db_url and set it to this
 Replace the text '\*\*\*\*\*\*\*\*' with your database password for the
 user 'tripal' created previously.
 
-### <span id="Final_directory_creation" class="mw-headline">Final directory creation</span>
+### Final directory creation
 
 Finally, we need to create three new directories. The first is the
 `files` directory which Drupal uses for storing uploaded files.
@@ -861,7 +798,7 @@ Now create the modules and themes directory
   mkdir themes
 ```
 
-### <span id="Compatibility_with_other_tools" class="mw-headline">Compatibility with other tools</span>
+### Compatibility with other tools
 
 We want to ensure that our Drupal installation doesn't interfere with
 other web-based tools, such as GBrowse. We need update a setting in the
@@ -881,7 +818,7 @@ Locate the line `DirectoryIndex` and change it to mach the following:
   DirectoryIndex index.php index.html
 ```
 
-### <span id="Web-based_Steps" class="mw-headline">Web-based Steps</span>
+### Web-based Steps
 
 Navigate to the installation page of our new web site
 <a href="http://localhost/install.php" class="external free"
@@ -929,7 +866,7 @@ is enabled. Click the link **Your new site**:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/800px-Tripal_Install4.png" width="800"
 height="475" alt="800px-Tripal Install4.png" />
 
-### <span id="Drupal_Cron_Entry" class="mw-headline">Drupal Cron Entry</span>
+### Drupal Cron Entry
 
 The last step for installing Drupal is setting up the automate Cron
 entry. The Drupal cron is used to automatically execute necessary
@@ -944,10 +881,8 @@ cron launch the crontab editor:
 ```
 
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 
   
@@ -962,9 +897,9 @@ Now save the changes. We have now added a UNIX cron job that will occur
 every 30 minutes that will execute the `cron.php` script and cause
 Drupal to perform housekeeping tasks.
 
-## <span id="Explore_Drupal" class="mw-headline">Explore Drupal</span>
+## Explore Drupal
 
-### <span id="User_Account_Page" class="mw-headline">User Account Page</span>
+### User Account Page
 
 All users have an account page. Currently, we are logged in as the
 administrator. The account page is simple for now. Click the **My
@@ -976,7 +911,7 @@ edit interface:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/35/800px-ExplorDrupal1.png" width="800"
 height="475" alt="800px-ExplorDrupal1.png" />
 
-### <span id="Creating_Content" class="mw-headline">Creating Content</span>
+### Creating Content
 
 Creation of content in Drupal is very easy. Click the **Create content**
 link on the left sidebar.
@@ -1011,9 +946,9 @@ For practice, try to create two new pages. A **Home** page and an
 **About** page for our site. First create the home page and second
 create the about page. Add whatever text you like for the body.
 
-### <span id="Site_Administration" class="mw-headline">Site Administration</span>
+### Site Administration
 
-#### <span id="Content_Management" class="mw-headline">Content Management</span>
+#### Content Management
 
 There are many options under the **Administer** link on the left
 sidebar. Here you can manage the site setup, monitor and control
@@ -1045,9 +980,9 @@ You'll also notice a set of drop down boxes for filtering the content.
 For sites with many different content types and pages this helps to find
 content. You can use this list to click to view each page or to edit.
 
-#### <span id="Site_Building" class="mw-headline">Site Building</span>
+#### Site Building
 
-##### <span id="Modules" class="mw-headline">Modules</span>
+##### Modules
 
 Click the **Site Building** link on the let sidebar under the
 **Administer** link. You'll see several new menu options: Blocks, Menus,
@@ -1074,7 +1009,7 @@ enables alternative naming of page URLs (we will discuss later).
 
   
 
-##### <span id="Themes" class="mw-headline">Themes</span>
+##### Themes
 
 Next, click the **Themes** link under **Administer** → **Site Building**
 on the left sidebar.
@@ -1097,7 +1032,7 @@ height="522" alt="800px-DrupalThemes2.png" />
 
   
 
-##### <span id="Blocks" class="mw-headline">Blocks</span>
+##### Blocks
 
 Blocks in Drupal are used to provide content in regions of a Drupal
 theme. For example, navigate to **Administer** → **Site Building** →
@@ -1125,7 +1060,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Drupal_blocks2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3b/Drupal_blocks2.png 2x"
 width="800" height="708" alt="Drupal blocks2.png" />
 
-##### <span id="Menus" class="mw-headline">Menus</span>
+##### Menus
 
 Drupal provides an interface for working with menus, including adding
 new menu items to an existing menu or for creating new menus. For the
@@ -1197,7 +1132,7 @@ Using the instructions above to add a second menu item for our about page
 and arrange. Use the 'weight' value so that our Home link appears first
 and the About link appears second.
 
-##### <span id="URL_Path" class="mw-headline">URL Path</span>
+##### URL Path
 
 As mentioned previously, the URL paths for our pages have `node/1` and
 `node/2` in the address. This is not very intuitive for site visitors.
@@ -1231,7 +1166,7 @@ still get you to our About page.
 Now, use the instructions described above to set a path of 'home' for
 our home page.
 
-##### <span id="Site_Configuration" class="mw-headline">Site Configuration</span>
+##### Site Configuration
 
 There are many options under the **Administer** → **Site configuration**
 page. Here we will only look at one of these at the moment--the **Site
@@ -1260,7 +1195,7 @@ our site name has changed at the top. Also, if we click the logo image
 at the top of the site and it will take you to the front page with our
 new home page appearing.
 
-### <span id="User_Accounts" class="mw-headline">User Accounts</span>
+### User Accounts
 
 For this tutorial, we will not discuss in depth the user management
 infrastructure except to point out:
@@ -1273,9 +1208,9 @@ infrastructure except to point out:
 Explore the Drupal **User Management** menu to see how users can be
 created, added to roles with specific permissions.
 
-## <span id="Prepare_Drupal_for_Tripal" class="mw-headline">Prepare Drupal for Tripal</span>
+## Prepare Drupal for Tripal
 
-### <span id="Theme_Installation" class="mw-headline">Theme Installation</span>
+### Theme Installation
 
 Drupal allows us to install new themes. Installation of themes involves
 these steps:
@@ -1310,7 +1245,7 @@ The sky theme was obtained at this address:
 <a href="http://drupal.org/project/sky" class="external free"
 rel="nofollow">http://drupal.org/project/sky</a>
 
-### <span id="Theme_Configuration" class="mw-headline">Theme Configuration</span>
+### Theme Configuration
 
 Here we return to theming. There are several configuration options that
 are available to help customize the theme for your site. These can be
@@ -1371,7 +1306,7 @@ a new logo and our slogan appears.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/47/800px-DrupalLogo.png" width="800"
 height="477" alt="800px-DrupalLogo.png" />
 
-### <span id="Module_Installation" class="mw-headline">Module Installation</span>
+### Module Installation
 
 We can install new extension modules which we will need later. For this
 workshop we have several modules that we will need to install but which
@@ -1506,9 +1441,9 @@ For reference, the modules installed above can be found here:
 - Devel: <a href="http://drupal.org/project/devel" class="external free"
   rel="nofollow">http://drupal.org/project/devel</a>
 
-## <span id="Tripal_Installation" class="mw-headline">Tripal Installation</span>
+## Tripal Installation
 
-### <span id="Main_Package_Installation" class="mw-headline">Main Package Installation</span>
+### Main Package Installation
 
 First, we need to download Tripal. Tripal can be easily downloaded from
 the website
@@ -1555,7 +1490,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c5/Tripal_management1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c5/Tripal_management1.png 2x"
 width="800" height="613" alt="Tripal management1.png" />
 
-### <span id="Tripal_Extension_Module_Installation" class="mw-headline">Tripal Extension Module Installation</span>
+### Tripal Extension Module Installation
 
 In this tutorial we will also be using several of the Tripal extension
 modules. Extension modules provide additional functionality not provided
@@ -1590,9 +1525,9 @@ them in the correct location:
 
 Do not enable these modules in Drupal just yet. We will do that later.
 
-## <span id="Using_Tripal" class="mw-headline">Using Tripal</span>
+## Using Tripal
 
-### <span id="Installing_Chado" class="mw-headline">Installing Chado</span>
+### Installing Chado
 
 The first thing we want to do is install Chado. If Chado is already
 installed in another database then Tripal can use that Chado as well.
@@ -1623,7 +1558,7 @@ width="800" height="613" alt="Tripal Jobs1.png" />
   
 We will continue our installation of Chado in the next section.
 
-### <span id="Jobs_Management" class="mw-headline">Jobs Management</span>
+### Jobs Management
 
 The jobs management subsystem allows modules to submit long-running
 jobs, on behalf of site administrators or site visitors. Often, long
@@ -1651,10 +1586,8 @@ need to add a second cron entry:
 ```
 
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 
   
@@ -1690,7 +1623,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/Tripal_Jobs2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/Tripal_Jobs2.png 2x"
 width="800" height="403" alt="Tripal Jobs2.png" />
 
-### <span id="Using_PhpPgAdmin_to_View_Chado.2FDrupal_Tables" class="mw-headline">Using PhpPgAdmin to View Chado/Drupal Tables</span>
+### Using PhpPgAdmin to View Chado/Drupal Tables
 
 PhpPgAdmin is a freely available database management tool for PostgreSQL
 databases. It was installed earlier, password protected, and is
@@ -1743,7 +1676,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/Tripal_drupal_tables.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c9/Tripal_drupal_tables.png 2x"
 width="800" height="679" alt="Tripal drupal tables.png" />
 
-### <span id="Enable_Additional_Tripal_Modules" class="mw-headline">Enable Additional Tripal Modules</span>
+### Enable Additional Tripal Modules
 
 Now that we have the core module installed and enabled and the Chado
 database installed we can enable the other Tripal modules.
@@ -1808,7 +1741,7 @@ You can use the menu administration pages of Drupal to remove these. If
 you enabled Drupal Views (as instructed previously), then you may change
 the content shown on each page when you click the
 
-### <span id="Enable_the_Tripal_Theme" class="mw-headline">Enable the Tripal Theme</span>
+### Enable the Tripal Theme
 
 Tripal provides a theme for Drupal, but it is designed to be a **base
 theme**. This way the site can use any theme you want, but Tripal can
@@ -1845,7 +1778,7 @@ If you do not wish to use the Sky theme, you simply need to find the
 corresponding .info file for your default theme and add the same line to
 the file.
 
-### <span id="Controlled_Vocabularies:_Installing_CVs" class="mw-headline">Controlled Vocabularies: Installing CVs</span>
+### Controlled Vocabularies: Installing CVs
 
 Before we can proceed with populating our Chado table with genomic data
 we must first load some controlled vocabularies (i.e. ontologies). To do
@@ -1888,14 +1821,14 @@ Now manually launch these jobs
   
 **Note:** Loading the Gene Ontology will take several hours.
 
-### <span id="Creating_Organism_Pages" class="mw-headline">Creating Organism Pages</span>
+### Creating Organism Pages
 
 There are two ways to create pages for organism. If your organism is
 already in Chado then you can sync the organism. If it is not in Chado
 you will need manually create it using the Tripal web interface. The
 following two sections describe both methods.
 
-#### <span id="What_if_Our_Organism_is_Already_in_Chado.3F" class="mw-headline">What if Our Organism is Already in Chado?</span>
+#### What if Our Organism is Already in Chado?
 
 Now that we have Chado loaded and populated we would like to create a
 home page for our species. Chado comes pre-loaded with a few species
@@ -1997,7 +1930,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/35/Tripal_organism5.png/1200px-Tripal_organism5.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/35/Tripal_organism5.png 2x"
 width="800" height="466" alt="Tripal organism5.png" />
 
-#### <span id="What_if_My_Organism_Is_Not_Present_in_Chado.3F" class="mw-headline">What if My Organism Is Not Present in Chado?</span>
+#### What if My Organism Is Not Present in Chado?
 
 If we have an organism that is not already present in Chado, we can
 easily add one using the **Create Content** page. You can find this link
@@ -2024,7 +1957,7 @@ height="485" alt="800px-TripalOrganism6.png" />
 Here you can create a new organism of your choice. Once complete, click
 the **Organism** menu item at the top to see it in the list.
 
-### <span id="Creating_an_Analysis" class="mw-headline">Creating an Analysis</span>
+### Creating an Analysis
 
 For this tutorial, we will later import a set of genes, including
 associated mRNA, CDS, exons, etc. Tripal requires that an Analysis be
@@ -2078,7 +2011,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/20/Tripal_analysis2.png/1200px-Tripal_analysis2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/Tripal_analysis2.png 2x"
 width="800" height="466" alt="Tripal analysis2.png" />
 
-### <span id="Creating_a_Database_Cross_Reference" class="mw-headline">Creating a Database Cross Reference</span>
+### Creating a Database Cross Reference
 
 For our site, we want to create gene pages with sequences and have those
 pages link back to Flybase where we obtained the genes. Therefore, we
@@ -2118,7 +2051,7 @@ Click **Add**.
 
 We now have added a new database!
 
-### <span id="Loading_Feature_Data" class="mw-headline">Loading Feature Data</span>
+### Loading Feature Data
 
 Now that we have our organism ready, we can being loading genomic data.
 For this tutorial only a few genomic features from the genome of
@@ -2130,7 +2063,7 @@ compendium of data for these genomic features. Tripal does not have
 loaders or visualization pages for all of the data types available on
 FlyBase.
 
-#### <span id="Loading_a_GFF3_File" class="mw-headline">Loading a GFF3 File</span>
+#### Loading a GFF3 File
 
 A GFF3 file containing the genes and mRNA sequences we will be using can
 be downloaded here:
@@ -2184,7 +2117,7 @@ width="800" height="489" alt="Tripal-loadGFF.png" />
 complete. If you find the loader is taking too long you can improve
 performance by using the Perl-based Chado loaders to load your GFF file.
 
-#### <span id="Loading_FASTA_files" class="mw-headline">Loading FASTA files</span>
+#### Loading FASTA files
 
 Using the Tripal GFF loader we were able to populate the database with
 the genomic features for our organism. However, those features now need
@@ -2377,7 +2310,6 @@ a database reference with these peptides. Here is an example of a
 definition line in the FASTA file:
 
 
-
 ` `
 
 \>FBpp0112427 type=protein;
@@ -2386,7 +2318,6 @@ ID=FBpp0112427; name=CG12567-PA; parent=FBgn0039958,FBtr0113704;
 dbxref=FlyBase_Annotation_IDs:CG12567-PA,FlyBase:FBpp0112427,REFSEQ:NP_001015384,GB_protein:EAA46065,FlyMine:FBpp0112427,modMine:FBpp0112427;
 MD5=246ea191b614901ccb7ba87d545d6308; length=349; release=r5.34;
 species=Dmel;
-
 
 
   
@@ -2426,7 +2357,7 @@ relationship information and database cross-reference information:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/20/800px-TripalFastaLoader2.png" width="800"
 height="478" alt="800px-TripalFastaLoader2.png" />
 
-### <span id="Creating_Feature_Pages" class="mw-headline">Creating Feature Pages</span>
+### Creating Feature Pages
 
 Now that we've loaded our feature data, we must "sync" them. Loading of
 the GFF file in the previous step has populated the feature tables of
@@ -2511,7 +2442,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/9/91/Tripal-feature_go.png/1350px-Tripal-feature_go.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/91/Tripal-feature_go.png 2x"
 width="900" height="674" alt="Tripal-feature go.png" />
 
-### <span id="Materialized_Views" class="mw-headline">Materialized Views</span>
+### Materialized Views
 
 Chado is very efficient as a data warehouse but queries can become slow
 depending on the number of table joins and amount of data. To help
@@ -2577,7 +2508,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ab/Tripal-vmiews2.png/1200px-Tripal-vmiews2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ab/Tripal-vmiews2.png 2x"
 width="800" height="514" alt="Tripal-vmiews2.png" />
 
-### <span id="Feature_Page_Configuration" class="mw-headline">Feature Page Configuration</span>
+### Feature Page Configuration
 
 Before viewing our Feature pages, we need to make a few configuration
 settings. Navigate to the **Administer** → **Tripal Management** →
@@ -2656,13 +2587,13 @@ width="800" height="599" alt="Tripal-feature type summary.png" />
 data is added, this materialized view should be updated to capture the
 changes and have those shown in the summary.
 
-### <span id="Loading_Functional_Data_Using_Extension_Modules" class="mw-headline">Loading Functional Data Using Extension Modules</span>
+### Loading Functional Data Using Extension Modules
 
 For this tutorial we will be loading functional data for our genes. To
 do this we will use several extension modules. These modules were
 previously installed with this Tutorial.
 
-#### <span id="Loading_Blast_Results" class="mw-headline">Loading Blast Results</span>
+#### Loading Blast Results
 
 Now that we have our features loaded we want to add some functional data
 as well. A blastx analysis was performed for the gene sequences against
@@ -2730,7 +2661,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/26/Tripal-blast2.png/1200px-Tripal-blast2.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/26/Tripal-blast2.png 2x"
 width="800" height="599" alt="Tripal-blast2.png" />
 
-#### <span id="Loading_InterProScan_Results" class="mw-headline">Loading InterProScan Results</span>
+#### Loading InterProScan Results
 
 Now we want to load results from an InterProScan. For this tutorial,
 these results were obtained by using a local installation of
@@ -2790,7 +2721,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/5/5a/Triapl-Interpro.png/1200px-Triapl-Interpro.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Triapl-Interpro.png 2x"
 width="800" height="484" alt="Triapl-Interpro.png" />
 
-#### <span id="Loading_KEGG_Analysis_Results" class="mw-headline">Loading KEGG Analysis Results</span>
+#### Loading KEGG Analysis Results
 
 Now we want to load results from a KEGG/KAAS analysis
 (<a href="http://www.genome.ad.jp/tools/kaas/" class="external free"
@@ -2859,13 +2790,13 @@ run the job to populate the view:
 
 You should now return to the organism page and see the KEGG report.
 
-### <span id="Creating_Stocks" class="mw-headline">Creating Stocks</span>
+### Creating Stocks
 
-### <span id="Using_the_GBrowse_Extension_Module" class="mw-headline">Using the GBrowse Extension Module</span>
+### Using the GBrowse Extension Module
 
-### <span id="Drupal_Taxonomy_.26_Searching" class="mw-headline">Drupal Taxonomy & Searching</span>
+### Drupal Taxonomy & Searching
 
-#### <span id="Drupal_Taxonomy" class="mw-headline">Drupal Taxonomy</span>
+#### Drupal Taxonomy
 
 Drupal provides a tagging mechanism that allows the site creator to tag
 pages with certain words that categorize the page. Drupal calls this
@@ -2908,7 +2839,7 @@ Now, all of our synced features are annotated with Drupal taxonomy
 (cateory) terms. These can now be used for filtering the search as
 described in the next section.
 
-#### <span id="Drupal_Searching" class="mw-headline">Drupal Searching</span>
+#### Drupal Searching
 
 Now that we have added taxonomy terms to our feature pages we want to
 enable searching using Drupal's full text searching mechanism. The first
@@ -3000,9 +2931,9 @@ limit your search results to specific organisms or feature types.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f1/800px-DrupalAdvancedSearch.png"
 width="800" height="515" alt="800px-DrupalAdvancedSearch.png" />
 
-## <span id="Customizations" class="mw-headline">Customizations</span>
+## Customizations
 
-### <span id="Panels_.26_Custom_Layouts" class="mw-headline">Panels & Custom Layouts</span>
+### Panels & Custom Layouts
 
 Suppose we do not like the way the feature page looks. Right now, all
 content is presented in the default Tripal style with a content box and
@@ -3082,7 +3013,7 @@ When finished our page now looks like this:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/75/800px-DrupalCustomPage.png" width="800"
 height="495" alt="800px-DrupalCustomPage.png" />
 
-#### <span id="Adding_a_GBrowse_Image" class="mw-headline">Adding a GBrowse Image</span>
+#### Adding a GBrowse Image
 
 We would now like to add a GBrowse image onto our gene page. Tripal does
 not support this directly, but can facilitate this. The easiest way to
@@ -3149,97 +3080,10 @@ height="495" alt="800px-TripalGBrowseImg.png" />
 
 If you are using the default Tripal view
 
-### <span id="Drupal_Views" class="mw-headline">Drupal Views</span>
+### Drupal Views
 
-#### <span id="Changing_Tripal_Default_Views" class="mw-headline">Changing Tripal Default Views</span>
+#### Changing Tripal Default Views
 
-### <span id="Editing_Template_Files" class="mw-headline">Editing Template Files</span>
+### Editing Template Files
 
-#### <span id="Adding_a_GBrowse_Image_2" class="mw-headline">Adding a GBrowse Image</span>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tripal](Category%253ATripal "Category%253ATripal")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Tripal_Tutorial_(v0.3.1b)"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:27 on 5 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">365,452 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+#### Adding a GBrowse Image

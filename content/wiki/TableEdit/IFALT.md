@@ -1,29 +1,14 @@
 ---
 title: "IFALT"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">IFALT</span>
-
-
-
+# IFALT
 
 
 (Redirected from
 [TableEdit/IFALT](TableEdit/IFALT)
 
 
-
-
-
-## <span id="specifications" class="mw-headline">specifications</span>
+## specifications
 
 Each field is **tab delimited**, and each new row is separated by a
 **newline.** If a field is empty, you can either skip it completely (and
@@ -108,7 +93,7 @@ rel="nofollow">parse_str</a> function man page.</p></td>
 
   
 
-## <span id="update_types" class="mw-headline">update types</span>
+## update types
 
 1.  append
     - force an append
@@ -120,7 +105,7 @@ rel="nofollow">parse_str</a> function man page.</p></td>
       clear_old will use that to delete any row_data from before the
       script ran.
 
-## <span id="example" class="mw-headline">example</span>
+## example
 
     lacZ:Gene  Gene    Gene_sequence_features_table    a||b||c metadata for the row    append  key=value&arr[]=foo+bar
     lacZ:Gene   Gene    Gene_sequence_features_table    1||2||3 more metadata   append  key2=value2
@@ -137,91 +122,6 @@ rel="nofollow">parse_str</a> function man page.</p></td>
 <span style="color:#ff9700">`lacZ:Gene`</span>` `<span style="color:#aaff00">`Gene`</span>` `<span style="color:#00ffe1">`Gene_sequence_features_table`</span>` `<span style="color:#1d6fff">`1||2||3`</span>` `<span style="color:#ff2022">`more metadata`</span>` `<span style="color:#da37e0">`append`</span>` key2=value2 `
 
 
-
-
 [Category](../Special%253ACategories "Special%253ACategories"):
 
 - [TableEdit](../Category%253ATableEdit "Category%253ATableEdit")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/IFALT" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 02:27 on 15 January
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">17,079 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

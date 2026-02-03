@@ -1,23 +1,7 @@
 ---
 title: "Chado Documentation Reorganization"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Documentation Reorganization</span>
-
-
-
-
-
-
-
+# Chado Documentation Reorganization
 
 
 We are going to reorganize the [Chado related
@@ -34,24 +18,14 @@ going.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">What
   Exists</span>](#What_Exists)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Plan</span>](#Plan)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Feedback</span>](#Feedback)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Comments</span>](#Comments)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Mechanics</span>](#Mechanics)
+- [Plan](#Plan)
+  - [Feedback](#Feedback)
+    - [Comments](#Comments)
+- [Mechanics](#Mechanics)
 
 
-
-## <span id="What_Exists" class="mw-headline">What Exists</span>
+## What Exists
 
 This summarizes the major Chado related pages that existed when the
 reorganization began in early April 2008. It is not an exhaustive list
@@ -202,7 +176,7 @@ detail, is the hard part.</td>
 </tbody>
 </table>
 
-## <span id="Plan" class="mw-headline">Plan</span>
+## Plan
 
 A draft plan for how the documentation will be restructured.
 
@@ -210,18 +184,12 @@ A draft plan for how the documentation will be restructured.
   - Page that shows basically this outline and has a getting started
     section or link
   - Getting Started
-
-<!-- -->
-
 - Chado Architecture and Logical Design
   - [Chado Manual](Chado_Manual "Chado Manual") - Database-theory
     centric explanation.
   - Modules -
     [Template:ChadoModules](Template:ChadoModules "Template:ChadoModules")
     and all accompanying pages.
-
-<!-- -->
-
 - Chado Database Administration
   - DBMS and OS Choice
   - Installing Chado
@@ -231,9 +199,6 @@ A draft plan for how the documentation will be restructured.
   - Accessing, Importing and Exporting Data
     - Various APIs, middleware solutions
     - Pointers to Apollo, GBrowse, etc connector pages
-
-<!-- -->
-
 - Using Chado
   - Chado Cookbook
     - Answers questions like "How do I do *X* in Chado". Pull a lot of
@@ -251,7 +216,7 @@ A draft plan for how the documentation will be restructured.
 This proposal will be refined as we get feedback and the effort
 progresses.
 
-### <span id="Feedback" class="mw-headline">Feedback</span>
+### Feedback
 
 You are encouraged to provide feedback on this effort by
 
@@ -272,11 +237,11 @@ You are encouraged to provide feedback on this effort by
 Desk](GMOD_Help_Desk "GMOD Help Desk") or to the [GMOD-Schema mailing
 list](GMOD_Mailing_Lists "GMOD Mailing Lists") may be reproduced here.
 
-#### <span id="Comments" class="mw-headline">Comments</span>
+#### Comments
 
 Provide your feedback here!
 
-## <span id="Mechanics" class="mw-headline">Mechanics</span>
+## Mechanics
 
 Each page that is being modified, created or deleted as part of this
 effort will include the [ChadoDocReorg
@@ -296,94 +261,3 @@ template](Template:ChadoDocReorg "Template:ChadoDocReorg"):
 > section of the **Chado Documentation Reorganization** page.
 
 This will be placed at the top of the page.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Proposals](Category%253AProposals "Category%253AProposals")
-- [GMOD Web Site](Category%253AGMOD_Web_Site "Category%253AGMOD Web Site")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Documentation_Reorganization" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Documentation_Reorganization"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:30 on 29 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">29,632 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

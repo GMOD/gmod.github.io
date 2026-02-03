@@ -1,63 +1,41 @@
 ---
 title: "VMware 2011 Spring Training"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">VMware 2011 Spring Training</span>
-
-
-
-
-
-
-
+# VMware 2011 Spring Training
 
 
 In this session, we'll get the VMware image up and running on your
 laptop.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Download
   Course Images</span>](#Download_Course_Images)
-- [<span class="tocnumber">2</span> <span class="toctext">System
-  Requirements</span>](#System_Requirements)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">VMware on
-    Windows and Linux</span>](#VMware_on_Windows_and_Linux)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">VMware on
-    Mac OS X</span>](#VMware_on_Mac_OS_X)
-- [<span class="tocnumber">3</span> <span class="toctext">System
-  Configuration</span>](#System_Configuration)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Additional
-    Installed Software</span>](#Additional_Installed_Software)
-- [<span class="tocnumber">4</span> <span class="toctext">Getting the
-  VMware Image</span>](#Getting_the_VMware_Image)
-- [<span class="tocnumber">5</span> <span class="toctext">Unpacking the
-  Image</span>](#Unpacking_the_Image)
-- [<span class="tocnumber">6</span> <span class="toctext">Opening the
-  Image</span>](#Opening_the_Image)
-- [<span class="tocnumber">7</span> <span class="toctext">Did you move
-  or copy the image?</span>](#Did_you_move_or_copy_the_image.3F)
-- [<span class="tocnumber">8</span> <span class="toctext">Logging In and
-  other useful things</span>](#Logging_In_and_other_useful_things)
-- [<span class="tocnumber">9</span> <span class="toctext">Resizing the
-  Display</span>](#Resizing_the_Display)
-- [<span class="tocnumber">10</span> <span class="toctext">Linux Text
-  Editors</span>](#Linux_Text_Editors)
+- [System
+  Requirements](#System_Requirements)
+  - [VMware on
+    Windows and Linux](#VMware_on_Windows_and_Linux)
+  - [VMware on
+    Mac OS X](#VMware_on_Mac_OS_X)
+- [System
+  Configuration](#System_Configuration)
+  - [Additional
+    Installed Software](#Additional_Installed_Software)
+- [Getting the
+  VMware Image](#Getting_the_VMware_Image)
+- [Unpacking the
+  Image](#Unpacking_the_Image)
+- [Opening the
+  Image](#Opening_the_Image)
+- [Did you move
+  or copy the image?](#Did_you_move_or_copy_the_image.3F)
+- [Logging In and
+  other useful things](#Logging_In_and_other_useful_things)
+- [Resizing the
+  Display](#Resizing_the_Display)
+- [Linux Text
+  Editors](#Linux_Text_Editors)
 
 
-
-## <span id="Download_Course_Images" class="mw-headline">Download Course Images</span>
+## Download Course Images
 
 We took snapshots of the VMware image immediately before the 2010
 course, and at the end of each day. These images have now been copied to
@@ -65,7 +43,7 @@ the GMOD FTP site and are available for download.
 
 ).
 
-## <span id="System_Configuration" class="mw-headline">System Configuration</span>
+## System Configuration
 
 Details on on how the system is configured.
 
@@ -115,7 +93,7 @@ Patches current as of Feb 2011</td>
 </tbody>
 </table>
 
-### <span id="Additional_Installed_Software" class="mw-headline">Additional Installed Software</span>
+### Additional Installed Software
 
 Ubuntu server comes with a lot preinstalled. Nevertheless, we wanted
 more. This lists *most* additional software that we installed, and how
@@ -372,36 +350,34 @@ loader</td>
 </tbody>
 </table>
 
-## <span id="Getting_the_VMware_Image" class="mw-headline">Getting the VMware Image</span>
+## Getting the VMware Image
 
 **To avoid swamping the GMOD FTP server (the file is almost 4GB), we
 will initially distribute the image on several flash drives and DVDs.**
 
 The image has already been installed on the loaner laptops.
 
-## <span id="Unpacking_the_Image" class="mw-headline">Unpacking the Image</span>
+## Unpacking the Image
 
 Once you have the image on your system you will need to uncompress it.
 This will result in a new file (actually a directory) called
 
 `GMODCourse2011.vmwarevm`.
 
-## <span id="Opening_the_Image" class="mw-headline">Opening the Image</span>
+## Opening the Image
 
 Once you have unpacked the image, open it by double clicking on it. This
 should automatically launch VMware.
 
   
 
-## <span id="Did_you_move_or_copy_the_image.3F" class="mw-headline">Did you move or copy the image?</span>
+## Did you move or copy the image?
 
 
 You Moved It!
 
 
-
 Yes you did.
-
 
 
 VMware then asks you if you moved or copied this image. Tell it you
@@ -409,7 +385,7 @@ VMware then asks you if you moved or copied this image. Tell it you
 
   
 
-## <span id="Logging_In_and_other_useful_things" class="mw-headline">Logging In and other useful things</span>
+## Logging In and other useful things
 
 After starting up the VMware image (which will take several seconds),
 the system will automatically log you in as user "gmod". (This behavior
@@ -461,7 +437,7 @@ you are not using a US keyboard you can type:
 Select the options for your own machine. Note that this will not affect
 the X environment or any logins via SSH or PuTTY.
 
-## <span id="Resizing_the_Display" class="mw-headline">Resizing the Display</span>
+## Resizing the Display
 
 **You should be able to resize your window just by clicking and
 dragging.**
@@ -486,7 +462,7 @@ For example,
 
 works well on my 15" MacBook Pro.
 
-## <span id="Linux_Text_Editors" class="mw-headline">Linux Text Editors</span>
+## Linux Text Editors
 
 You will need to do a lot of file editing in this course. If you are
 going to do that editing directly in the VMware image, you will need to
@@ -499,91 +475,3 @@ better off using `gedit`.** It is less powerful, but is also much more
 straightforward to use.
 
     $ gedit filename &
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/VMware_2011_Spring_Training"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:08 on 14 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">8,196 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

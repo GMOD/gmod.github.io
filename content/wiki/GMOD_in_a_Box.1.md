@@ -1,23 +1,7 @@
 ---
 title: "GMOD in a Box"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD in a Box</span>
-
-
-
-
-
-
-
+# GMOD in a Box
 
 
   
@@ -36,44 +20,31 @@ versions of GMOD in a Box are released.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">What's in GMOD
   in a Box</span>](#What.27s_in_GMOD_in_a_Box)
-- [<span class="tocnumber">2</span> <span class="toctext">Where to find
-  GMOD in a Box</span>](#Where_to_find_GMOD_in_a_Box)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Build
-    information</span>](#Build_information)
-- [<span class="tocnumber">3</span> <span class="toctext">Getting
-  Started</span>](#Getting_Started)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Directory
-    Structure</span>](#Directory_Structure)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Updating
-    from previous versions</span>](#Updating_from_previous_versions)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Phoning
-    home</span>](#Phoning_home)
-- [<span class="tocnumber">4</span> <span class="toctext">Installed GMOD
-  software</span>](#Installed_GMOD_software)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">PostgreSQL</span>](#PostgreSQL)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Drupal</span>](#Drupal)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Tripal</span>](#Tripal)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Chado</span>](#Chado)
-  - [<span class="tocnumber">4.5</span>
-    <span class="toctext">GBrowse2</span>](#GBrowse2)
-  - [<span class="tocnumber">4.6</span>
-    <span class="toctext">JBrowse</span>](#JBrowse)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">WebApollo</span>](#WebApollo)
+- [Where to find
+  GMOD in a Box](#Where_to_find_GMOD_in_a_Box)
+  - [Build
+    information](#Build_information)
+- [Getting
+  Started](#Getting_Started)
+  - [Directory
+    Structure](#Directory_Structure)
+  - [Updating
+    from previous versions](#Updating_from_previous_versions)
+  - [Phoning
+    home](#Phoning_home)
+- [Installed GMOD
+  software](#Installed_GMOD_software)
+  - [PostgreSQL](#PostgreSQL)
+  - [Drupal](#Drupal)
+  - [Tripal](#Tripal)
+  - [Chado](#Chado)
+  - [GBrowse2](#GBrowse2)
+  - [JBrowse](#JBrowse)
+  - [WebApollo](#WebApollo)
 
 
-
-## <span id="What.27s_in_GMOD_in_a_Box" class="mw-headline">What's in GMOD in a Box</span>
+## What's in GMOD in a Box
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d5/ChadoLogo.png/200px-ChadoLogo.png"
@@ -109,7 +80,7 @@ width="200" height="55" alt="WebApollo logo" />](WebApollo.1 "WebApollo")
 
   
 
-## <span id="Where_to_find_GMOD_in_a_Box" class="mw-headline">Where to find GMOD in a Box</span>
+## Where to find GMOD in a Box
 
 GMOD in a Box can be downloaded from the
 <a href="ftp://ftp.gmod.org//pub/gmod/GMODinaBox" class="external text"
@@ -131,7 +102,7 @@ virtual GMOD installations for grants and funding purposes. For more
 information, see [the phoning home
 section](GMOD_in_a_Box.1#Phoning_home "GMOD in a Box") below.
 
-#### <span id="Build_information" class="mw-headline">Build information</span>
+#### Build information
 
 [Scott](User%253AScott "User%253AScott") has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in a
@@ -140,7 +111,7 @@ href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
 class="external text" rel="nofollow">github repository</a> for more
 information.
 
-## <span id="Getting_Started" class="mw-headline">Getting Started</span>
+## Getting Started
 
 GMOD in a Box is running on Ubuntu 12.04 LTS. The virtual machine is
 split into two partitions, `root` and `data`. All user information
@@ -161,7 +132,7 @@ then use that IP address to access the machine via ssh.
 
   
 
-### <span id="Directory_Structure" class="mw-headline">Directory Structure</span>
+### Directory Structure
 
 When you first log in to the virtual machine, you will be in the
 *ubuntu* user's home directory, `/home/ubuntu`, on the `root` partition
@@ -201,14 +172,14 @@ incorporate the changes into future iterations of GMOD in a Box.
 
 Note that changes made to files in any other locations will be lost.
 
-### <span id="Updating_from_previous_versions" class="mw-headline">Updating from previous versions</span>
+### Updating from previous versions
 
 Instances of GMOD in a Box can be updated by replacing the `data`
 partition in the new instance with the `data` partition from the old
 instance. For more information, see the [updating
 guide](GMOD_in_a_Box/Updating "GMOD in a Box/Updating").
 
-### <span id="Phoning_home" class="mw-headline">Phoning home</span>
+### Phoning home
 
 When a GMOD in a Box server starts up for the first time, it sends an
 email to the GMOD developers with information about the instance. These
@@ -220,9 +191,9 @@ information about how GMOD in a Box will be used. Running the script on
 subsequent logins is suppressed unless the file
 `~/GMODintheCloud/gitc_lock` is removed.
 
-## <span id="Installed_GMOD_software" class="mw-headline">Installed GMOD software</span>
+## Installed GMOD software
 
-### <span id="PostgreSQL" class="mw-headline">PostgreSQL</span>
+### PostgreSQL
 
 Database name: `drupal`
 
@@ -241,7 +212,7 @@ command line tools from GMOD).
 
   
 
-### <span id="Drupal" class="mw-headline">Drupal</span>
+### Drupal
 
 Version: 6.28
 
@@ -263,7 +234,7 @@ new themes can be added at `/data/var/www/sites/default/themes`.
 
   
 
-### <span id="Tripal" class="mw-headline">Tripal</span>
+### Tripal
 
 Version: 1.1
 
@@ -273,7 +244,7 @@ Installation dir: `/var/www/sites/all/modules/tripal`
 
   
 
-### <span id="Chado" class="mw-headline">Chado</span>
+### Chado
 
 Version: 1.23
 
@@ -297,7 +268,7 @@ updated with "svn update" like the Tripal svn checkout.
 
   
 
-### <span id="GBrowse2" class="mw-headline">GBrowse2</span>
+### GBrowse2
 
 Version: 2.55
 
@@ -319,7 +290,7 @@ GBrowse at
 
   
 
-### <span id="JBrowse" class="mw-headline">JBrowse</span>
+### JBrowse
 
 Version: 1.10.12
 
@@ -345,7 +316,7 @@ This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 
   
 
-### <span id="WebApollo" class="mw-headline">WebApollo</span>
+### WebApollo
 
 Version: 11/22/2013
 
@@ -359,88 +330,7 @@ instructions](GMOD_in_a_Box/WebApollo "GMOD in a Box/WebApollo")
 specific to the VM for help in setting up your data.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD virtual
   server](Category%253AGMOD_virtual_server "Category%253AGMOD virtual server")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_in_a_Box" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:40 on 16 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">39,310 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

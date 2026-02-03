@@ -1,23 +1,7 @@
 ---
 title: "January 2009 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">January 2009 GMOD Meeting</span>
-
-
-
-
-
-
-
+# January 2009 GMOD Meeting
 
 
 <table
@@ -66,94 +50,74 @@ height="100" alt="Jan 2009 Meeting" />
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Thursday,
-    January 15</span>](#Thursday.2C_January_15)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Friday,
-    January 16</span>](#Friday.2C_January_16)
-- [<span class="tocnumber">2</span> <span class="toctext">Themes and
-  Discussions</span>](#Themes_and_Discussions)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Data
-    Sharing</span>](#Data_Sharing)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Presentations</span>](#Presentations)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">The State
-    of GMOD</span>](#The_State_of_GMOD)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Releases</span>](#Releases)
-    - [<span class="tocnumber">3.1.2</span> <span class="toctext">Howard
+  Agenda](#Agenda)
+  - [Thursday,
+    January 15](#Thursday.2C_January_15)
+  - [Friday,
+    January 16](#Friday.2C_January_16)
+- [Themes and
+  Discussions](#Themes_and_Discussions)
+  - [Data
+    Sharing](#Data_Sharing)
+- [Presentations](#Presentations)
+  - [The State
+    of GMOD](#The_State_of_GMOD)
+    - [Releases](#Releases)
+    - [Howard
       Hughes Medical Institute Science Education
-      Alliance</span>](#Howard_Hughes_Medical_Institute_Science_Education_Alliance)
-    - [<span class="tocnumber">3.1.3</span>
-      <span class="toctext">GBrowse Update</span>](#GBrowse_Update)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">GMOD Help
-    Desk</span>](#GMOD_Help_Desk)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">A RESTful
-    Interface for MODs?</span>](#A_RESTful_Interface_for_MODs.3F)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Data
+      Alliance](#Howard_Hughes_Medical_Institute_Science_Education_Alliance)
+    - [GBrowse Update](#GBrowse_Update)
+  - [GMOD Help
+    Desk](#GMOD_Help_Desk)
+  - [A RESTful
+    Interface for MODs?](#A_RESTful_Interface_for_MODs.3F)
+  - [Data
     Representation in Chado: Best
-    Practices</span>](#Data_Representation_in_Chado:_Best_Practices)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Generic
-    Gene Page XML</span>](#Generic_Gene_Page_XML)
-  - [<span class="tocnumber">3.6</span>
-    <span class="toctext">BioMart</span>](#BioMart)
-  - [<span class="tocnumber">3.7</span>
-    <span class="toctext">JBrowse</span>](#JBrowse)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">GMODWeb
-    and Package Management</span>](#GMODWeb_and_Package_Management)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">EcoliWiki
-    and TableEdit</span>](#EcoliWiki_and_TableEdit)
-  - [<span class="tocnumber">3.10</span>
-    <span class="toctext">WebGBrowse: GBrowse Configuration
-    Management</span>](#WebGBrowse:_GBrowse_Configuration_Management)
-  - [<span class="tocnumber">3.11</span> <span class="toctext">Drupal
-    and MarineGenomics.org</span>](#Drupal_and_MarineGenomics.org)
-    - [<span class="tocnumber">3.11.1</span>
-      <span class="toctext">Drupal</span>](#Drupal)
-    - [<span class="tocnumber">3.11.2</span>
-      <span class="toctext">Drupal and Chado</span>](#Drupal_and_Chado)
-    - [<span class="tocnumber">3.11.3</span>
-      <span class="toctext">Tripal</span>](#Tripal)
-  - [<span class="tocnumber">3.12</span> <span class="toctext">Artemis
-    and Chado at GeneDB</span>](#Artemis_and_Chado_at_GeneDB)
-  - [<span class="tocnumber">3.13</span> <span class="toctext">Chado and
-    GUS at SBRI</span>](#Chado_and_GUS_at_SBRI)
-  - [<span class="tocnumber">3.14</span>
-    <span class="toctext">modENCODE: extending Chado, BIR-TAB, & GBrowse
+    Practices](#Data_Representation_in_Chado:_Best_Practices)
+  - [Generic
+    Gene Page XML](#Generic_Gene_Page_XML)
+  - [BioMart](#BioMart)
+  - [JBrowse](#JBrowse)
+  - [GMODWeb
+    and Package Management](#GMODWeb_and_Package_Management)
+  - [EcoliWiki
+    and TableEdit](#EcoliWiki_and_TableEdit)
+  - [WebGBrowse: GBrowse Configuration
+    Management](#WebGBrowse:_GBrowse_Configuration_Management)
+  - [Drupal
+    and MarineGenomics.org](#Drupal_and_MarineGenomics.org)
+    - [Drupal](#Drupal)
+    - [Drupal and Chado](#Drupal_and_Chado)
+    - [Tripal](#Tripal)
+  - [Artemis
+    and Chado at GeneDB](#Artemis_and_Chado_at_GeneDB)
+  - [Chado and
+    GUS at SBRI](#Chado_and_GUS_at_SBRI)
+  - [modENCODE: extending Chado, BIR-TAB, & GBrowse
     for automating data validation &
-    display</span>](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display)
-  - [<span class="tocnumber">3.15</span>
-    <span class="toctext">BeeSpace</span>](#BeeSpace)
-  - [<span class="tocnumber">3.16</span> <span class="toctext">Metadata
+    display](#modENCODE:_extending_Chado.2C_BIR-TAB.2C_.26_GBrowse_for_automating_data_validation_.26_display)
+  - [BeeSpace](#BeeSpace)
+  - [Metadata
     Input and Submission Tool and GIS linked metagenomic
-    database</span>](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database)
-  - [<span class="tocnumber">3.17</span> <span class="toctext">Bovine
-    Genome Database</span>](#Bovine_Genome_Database)
-  - [<span class="tocnumber">3.18</span>
-    <span class="toctext">GNPAnnot</span>](#GNPAnnot)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">5</span> <span class="toctext">Agenda
-  Proposals</span>](#Agenda_Proposals)
-- [<span class="tocnumber">6</span> <span class="toctext">Meeting
-  Participants</span>](#Meeting_Participants)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">8</span> <span class="toctext">Next Meeting:
-  August 2009 at Oxford</span>](#Next_Meeting:_August_2009_at_Oxford)
-
+    database](#Metadata_Input_and_Submission_Tool_and_GIS_linked_metagenomic_database)
+  - [Bovine
+    Genome Database](#Bovine_Genome_Database)
+  - [GNPAnnot](#GNPAnnot)
+- [Registration](#Registration)
+- [Agenda
+  Proposals](#Agenda_Proposals)
+- [Meeting
+  Participants](#Meeting_Participants)
+- [Feedback](#Feedback)
+- [Next Meeting:
+  August 2009 at Oxford](#Next_Meeting:_August_2009_at_Oxford)
 
 
   
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
-### <span id="Thursday.2C_January_15" class="mw-headline">Thursday, January 15</span>
+### Thursday, January 15
 
 | Time | Topic | Presenter(s) | Links |
 |----|----|----|----|
@@ -184,7 +148,7 @@ title="Jan2009MIST.pdf">PDF</a>, [Summary](#Metadata_Input_and_Submission_Tool_a
 | 4:30 PM | Data Representation in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>: Best Practices | [Joshua Orvis](User%253AJorvis "User%253AJorvis") and/or Scott Cain | [Summary](#Data_Representation_in_Chado:_Best_Practices), [Discussion](#Data_Sharing) |
 | 5:00 PM | Dinner (on your own) |  |  |
 
-### <span id="Friday.2C_January_16" class="mw-headline">Friday, January 16</span>
+### Friday, January 16
 
 <table class="wikitable">
 <colgroup>
@@ -336,11 +300,11 @@ class="internal" title="Jan2009GNPAnnotChadoMVC.ppt">ChadoController</a>,
 </tbody>
 </table>
 
-## <span id="Themes_and_Discussions" class="mw-headline">Themes and Discussions</span>
+## Themes and Discussions
 
 Several themes ran throughout the meeting
 
-### <span id="Data_Sharing" class="mw-headline">Data Sharing</span>
+### Data Sharing
 
 Several presentations touched on this:
 
@@ -401,7 +365,7 @@ their data. XML gives you a tree representation, while RDF gives you a
 graph of RDF files. Graphs more often better reflect what is being
 described. Sparql is the standard query language for accessing RDF.
 
-## <span id="Presentations" class="mw-headline">Presentations</span>
+## Presentations
 
 The presentations are listed here in a very approximate order:
 
@@ -409,7 +373,7 @@ The presentations are listed here in a very approximate order:
 - GMOD Components
 - GMOD User Experiences
 
-### <span id="The_State_of_GMOD" class="mw-headline">The State of GMOD</span>
+### The State of GMOD
 
 
 - [Middleware](Category%253AMiddleware "Category%253AMiddleware")
@@ -418,82 +382,3 @@ The presentations are listed here in a very approximate order:
 - [Turnkey](Category%253ATurnkey "Category%253ATurnkey")
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
 - [TableEdit](Category%253ATableEdit "Category%253ATableEdit")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/January_2009_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">455,154 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,43 +1,33 @@
 ---
 title: "GBrowse Backends"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GBrowse Backends</span>
+# GBrowse Backends
 
 This page describes the [GBrowse](GBrowse.1 "GBrowse") database back
 ends. It is incomplete.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">The
   Bio::DB::SeqFeature::Store
   Adaptor</span>](#The_Bio::DB::SeqFeature::Store_Adaptor)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">The GFF3
-    Format</span>](#The_GFF3_Format)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Using
+  - [The GFF3
+    Format](#The_GFF3_Format)
+  - [Using
     Bio::DB::SeqFeature::Store with Flat
-    Files</span>](#Using_Bio::DB::SeqFeature::Store_with_Flat_Files)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Using
+    Files](#Using_Bio::DB::SeqFeature::Store_with_Flat_Files)
+  - [Using
     Bio::DB::SeqFeature::Store with the BerkeleyDB
-    Backend</span>](#Using_Bio::DB::SeqFeature::Store_with_the_BerkeleyDB_Backend)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Using
+    Backend](#Using_Bio::DB::SeqFeature::Store_with_the_BerkeleyDB_Backend)
+  - [Using
     Bio::DB::SeqFeature::Store with the MySQL
-    Backend</span>](#Using_Bio::DB::SeqFeature::Store_with_the_MySQL_Backend)
-- [<span class="tocnumber">2</span> <span class="toctext">The
-  Bio::DB::GFF Adaptor</span>](#The_Bio::DB::GFF_Adaptor)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Synopsis</span>](#Synopsis)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Details</span>](#Details)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Bio::DB::Das::Chado</span>](#Bio::DB::Das::Chado)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Synopsis</span>](#Synopsis_2)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Performance</span>](#Performance)
+    Backend](#Using_Bio::DB::SeqFeature::Store_with_the_MySQL_Backend)
+- [The
+  Bio::DB::GFF Adaptor](#The_Bio::DB::GFF_Adaptor)
+  - [Synopsis](#Synopsis)
+  - [Details](#Details)
+- [Bio::DB::Das::Chado](#Bio::DB::Das::Chado)
+  - [Synopsis](#Synopsis_2)
+  - [Performance](#Performance)
 
-# <span id="The_Bio::DB::SeqFeature::Store_Adaptor" class="mw-headline">The Bio::DB::SeqFeature::Store Adaptor</span>
+# The Bio::DB::SeqFeature::Store Adaptor
 
 This is a quick and easy adaptor to use. It allows you to load both
 [GFF2](GFF2 "GFF2") and [GFF3](GFF3 "GFF3") formatted files, and
@@ -45,7 +35,7 @@ provides storage via flat files, BerkeleyDB-formatted files, and
 [MySQL](MySQL "MySQL") and [PostgreSQL](PostgreSQL "PostgreSQL")
 databases.
 
-## <span id="The_GFF3_Format" class="mw-headline">The GFF3 Format</span>
+## The GFF3 Format
 
 An increasing number of model organism databases are distributing genome
 annotation in [GFF3](GFF3 "GFF3") format. An example of this format can
@@ -53,7 +43,7 @@ be found at <a
 href="ftp://genome-ftp.stanford.edu/pub/yeast/chromosomal_feature/saccharomyces_verevisiae.gff"
 class="external text" rel="nofollow">SGD</a>.
 
-## <span id="Using_Bio::DB::SeqFeature::Store_with_Flat_Files" class="mw-headline">Using Bio::DB::SeqFeature::Store with Flat Files</span>
+## Using Bio::DB::SeqFeature::Store with Flat Files
 
 Create a directory somewhere on the filesystem that is readable by the
 Apache web server. Copy into it one or more GFF3 files containing
@@ -114,7 +104,7 @@ writeable:
     sudo chgrp gbrowse /path/to/your/database/directory
     sudo chmod g+rwx /path/to/your/database/directory
 
-## <span id="Using_Bio::DB::SeqFeature::Store_with_the_BerkeleyDB_Backend" class="mw-headline">Using Bio::DB::SeqFeature::Store with the BerkeleyDB Backend</span>
+## Using Bio::DB::SeqFeature::Store with the BerkeleyDB Backend
 
 If your [GFF3](GFF3 "GFF3") files get much larger than a 1000 features
 or so, GBrowse will begin to slow down. You can increase performance by
@@ -138,7 +128,7 @@ files at any time, and the indexes will be rebuilt as necessary.
 Note that for the BerkeleyDB backend to work at all, the database
 directory **must** be writeable by the Apache user.
 
-## <span id="Using_Bio::DB::SeqFeature::Store_with_the_MySQL_Backend" class="mw-headline">Using Bio::DB::SeqFeature::Store with the [MySQL](MySQL "MySQL") Backend</span>
+## Using Bio::DB::SeqFeature::Store with the [MySQL](MySQL "MySQL") Backend
 
 More preparation is required for this backend. You will need to use the
 mysql command-line tool to create a new empty database, grant yourself
@@ -164,13 +154,13 @@ file, enter a database configuration like the following:
 
 The database should now be browsable.
 
-# <span id="The_Bio::DB::GFF_Adaptor" class="mw-headline">The Bio::DB::GFF Adaptor</span>
+# The Bio::DB::GFF Adaptor
 
 This step takes you through populating the database with the full yeast
 genome. You can skip this step if you use the in-memory database for
 small projects.
 
-## <span id="Synopsis" class="mw-headline">Synopsis</span>
+## Synopsis
 
          mysql -uroot -ppassword -e 'create database yeast'
 
@@ -180,7 +170,7 @@ small projects.
 
          bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
 
-## <span id="Details" class="mw-headline">Details</span>
+## Details
 
 _Note: This section refers to the user account under which Apache runs
 as "nobody" because that is the most common case. However, many systems
@@ -212,9 +202,6 @@ bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
 [MySQL](MySQL "MySQL") server is located on another host.
-
-<!-- -->
-
 bp_bulk_load_gff.pl  
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
@@ -222,9 +209,6 @@ the file. Only suitable for use the very first time you create a
 database, or when you want to start from scratch! The bulk loader is as
 much as 10x faster than bp_load_gff.pl, but does not work in the
 situation in which the MySQL database is running on a remote host.
-
-<!-- -->
-
 bp_fast_load_gff.pl  
 This will incrementally load a database. On UNIX systems, it will
 activate a fast loader that makes the speed almost the same as the bulk
@@ -279,11 +263,11 @@ elsewhere). Usually there will be an informative error message in the
 error log. The most common problem is [MySQL](MySQL "MySQL") password or
 permissions problems.
 
-# <span id="Bio::DB::Das::Chado" class="mw-headline">Bio::DB::Das::Chado</span>
+# Bio::DB::Das::Chado
 
 Scott needs to fill this in.
 
-## <span id="Synopsis_2" class="mw-headline">Synopsis</span>
+## Synopsis
 
      db_adaptor    = Bio::DB::Das::Chado
      db_args       = -dsn dbi:Pg:dbname=chado
@@ -293,55 +277,8 @@ Scott needs to fill this in.
                      -version 1
                      -inferCDS 1
 
-## <span id="Performance" class="mw-headline">Performance</span>
+## Performance
 
 In order to achieve the best possible performance when using this
 adaptor, please read [PostgreSQL Performance
 Tips](PostgreSQL_Performance_Tips "PostgreSQL Performance Tips").
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Backends" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 17:16 on 23 April 2013.</span>
-<!-- - <span id="footer-info-viewcount">42,536 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

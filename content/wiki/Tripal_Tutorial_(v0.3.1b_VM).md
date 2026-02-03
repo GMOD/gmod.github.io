@@ -1,23 +1,7 @@
 ---
 title: "Tripal Tutorial (v0.3.1b VM)"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Tripal Tutorial (v0.3.1b VM)</span>
-
-
-
-
-
-
-
+# Tripal Tutorial (v0.3.1b VM)
 
 
 This tutorial is intended to be used with the Virtual Machine Image that
@@ -84,108 +68,15 @@ At a minimum, please review from the point that Tripal is installed: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation#Tripal_Installation"
 class="external free"
 rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Tripal_Installation</a>
-
-<!-- -->
-
 Step 2  
 Perform the "Theme Configuration" section of the tutorial at this link
 (only do this section):
 <a href="Tripal_Tutorial_(v0.3.1b)#Theme_Configuration"
 class="external free"
 rel="nofollow">http://gmod.org/wiki/Tripal_Tutorial_(v0.3.1b)#Theme_Configuration</a>
-
-<!-- -->
-
 Step 3  
 Start using Tripal by following all remaining sections of the tutorial
 from this point: <a
 href="http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Creating_Organism_Pages#Creating_Organism_Pages"
 class="external free"
 rel="nofollow">http://www.gmod.org/wiki/Tripal_Tutorial_%28v0.3.1b%29#Creating_Organism_Pages</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tripal](Category%253ATripal "Category%253ATripal")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Tripal_Tutorial_(v0.3.1b_VM)"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:28 on 5 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">61,215 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

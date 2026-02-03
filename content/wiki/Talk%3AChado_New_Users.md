@@ -1,44 +1,18 @@
 ---
 title: "Talk:Chado New Users"
 ---
+# Talk:Chado New Users
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Talk:Chado New Users</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   Notes</span>](#Meeting_Notes)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">20070405</span>](#20070405)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">20070329</span>](#20070329)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">20070322</span>](#20070322)
+  - [20070405](#20070405)
+  - [20070329](#20070329)
+  - [20070322](#20070322)
 
 
+## Meeting Notes
 
-## <span id="Meeting_Notes" class="mw-headline">Meeting Notes</span>
-
-### <span id="20070405" class="mw-headline">20070405</span>
+### 20070405
 
 - Tried to work through some of the Central Dogma stuff in Chado Best
   Practices. Zheng ran the sample query, which hung his laptop.
@@ -46,12 +20,12 @@ title: "Talk:Chado New Users"
   [Template:Problems](Template:Problems "Template:Problems") for adding
   notes to documentation pages in the wiki.
 
-### <span id="20070329" class="mw-headline">20070329</span>
+### 20070329
 
 Jim was out of town and everyone else attended the Systems Biology
 meeting
 
-### <span id="20070322" class="mw-headline">20070322</span>
+### 20070322
 
 Lincoln was able to attend today. We looked at Chado tables using a
 combination of phpPgAdmin and command line. To do direct SQL queries in
@@ -103,86 +77,3 @@ Conclusions
   - other?
 - should get XML from a known Chado db and import via XORT or other.
   - talk to Pei Li and Eric Just
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_New_Users" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:16 on 12 April
-  2007.</span>
-<!-- - <span id="footer-info-viewcount">8,833 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

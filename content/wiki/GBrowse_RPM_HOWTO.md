@@ -1,9 +1,7 @@
 ---
 title: "GBrowse RPM HOWTO"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GBrowse RPM HOWTO</span>
+# GBrowse RPM HOWTO
 
 **Important note:** The instructions below will install a relatively old
 version of GBrowse (1.54 I think). To install a newer version, first
@@ -16,18 +14,13 @@ page](GBrowse_Install_HOWTO "GBrowse Install HOWTO") for using the net
 install script. If you don't want or need the 'bleating edge', just
 ignore this note.
 
-## Contents
+  Biopackages](#Biopackages)
+- [Preliminaries](#Preliminaries)
+- [Installing
+  Packages](#Installing_Packages)
+- [Authors](#Authors)
 
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Biopackages</span>](#Biopackages)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Preliminaries</span>](#Preliminaries)
-- [<span class="tocnumber">3</span> <span class="toctext">Installing
-  Packages</span>](#Installing_Packages)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Authors</span>](#Authors)
-
-# <span id="Biopackages" class="mw-headline">Biopackages</span>
+# Biopackages
 
 RPM-based Linux distributions, including
 <a href="http://fedoraproject.org/" class="external text"
@@ -42,12 +35,12 @@ class="external text" rel="nofollow">yum</a> installer tool. For more
 information please see the [Biopackages
 HOWTO](Biopackages_HOWTO "Biopackages HOWTO").
 
-# <span id="Preliminaries" class="mw-headline">Preliminaries</span>
+# Preliminaries
 
 See the [Biopackages HOWTO](Biopackages_HOWTO "Biopackages HOWTO") for
 the steps to setup Biopackages on your system.
 
-# <span id="Installing_Packages" class="mw-headline">Installing Packages</span>
+# Installing Packages
 
 First, as root, freshen your local cache of yum header files. Yum will
 print something similar to what is below:
@@ -84,7 +77,7 @@ rel="nofollow">http://localhost/gbrowse</a> should actually point to
 class="external free"
 rel="nofollow">http://localhost/cgi-bin/gbrowse/gbrowse/yeast_chr1</a>.
 
-# <span id="Authors" class="mw-headline">Authors</span>
+# Authors
 
 [Lincoln Stein](User%253ALstein "User%253ALstein") 12:51, 17 April 2007 (EDT)
 
@@ -101,52 +94,3 @@ Brian
 O'Connor 12:18, 05 June 2007 (PDT)
 
 Added note about install path for gbrowse.
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Linux](Category%253ALinux "Category%253ALinux")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_RPM_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 11:32 on 28 October 2008.</span>
-<!-- - <span id="footer-info-viewcount">78,137 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

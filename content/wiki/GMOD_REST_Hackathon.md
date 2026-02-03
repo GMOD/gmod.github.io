@@ -1,23 +1,7 @@
 ---
 title: "GMOD REST Hackathon"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD REST Hackathon</span>
-
-
-
-
-
-
-
+# GMOD REST Hackathon
 
 
 <table
@@ -53,22 +37,11 @@ height="97" alt="San Diego Convention and Visitors Bureau" /></a></td>
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Organizing
   Committee</span>](#Organizing_Committee)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Attendees</span>](#Attendees)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Topics</span>](#Topics)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Dates</span>](#Dates)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Schedule</span>](#Schedule)
+- [Attendees](#Attendees)
+- [Topics](#Topics)
+- [Dates](#Dates)
+- [Schedule](#Schedule)
 
 
 The goal of this hackathon is to produce a working prototype of the
@@ -79,11 +52,11 @@ hotel room, or in the New England themed bar at the Seven Seas hotel.
 
   
 
-## <span id="Organizing_Committee" class="mw-headline">Organizing Committee</span>
+## Organizing Committee
 
 - [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
 
-## <span id="Attendees" class="mw-headline">Attendees</span>
+## Attendees
 
 - *Please add your name here*
 - [Josh Goodman](User%253AJogoodma "User%253AJogoodma")
@@ -96,18 +69,18 @@ hotel room, or in the New England themed bar at the Seven Seas hotel.
 - [Chris Childers](User%253AChilders "User%253AChilders")
 - [Justin Reese](User%253AJustaddcoffee "User%253AJustaddcoffee")
 
-## <span id="Topics" class="mw-headline">Topics</span>
+## Topics
 
 - Produce a working version of the
   <a href="GMOD_REST_API" class="mw-redirect" title="GMOD REST API">REST
   API</a>
 
-## <span id="Dates" class="mw-headline">Dates</span>
+## Dates
 
 Jan 13th before the [January 2010 GMOD
 Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting").
 
-## <span id="Schedule" class="mw-headline">Schedule</span>
+## Schedule
 
 We will be starting in the hotel bar.
 
@@ -128,94 +101,3 @@ We will be starting in the hotel bar.
 6:00pm - Dinner
 
 8:00pm - More coding! (if you are still thirsty for more)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-
-- [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGMOD_REST_Hackathon" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_REST_Hackathon" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:54 on 9 June
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">57,826 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

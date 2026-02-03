@@ -1,9 +1,7 @@
 ---
 title: "Powered by GMOD"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Powered by GMOD</span>
+# Powered by GMOD
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/8/84/PoweredByGMOD.png/310px-PoweredByGMOD.png"
@@ -51,57 +49,9 @@ rel="nofollow">AnimalGenome.org</a>. |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/PoweredByGBrowseAnimalGenome2.jpg"
 width="89" height="66" alt="PoweredByGBrowseAnimalGenome2.jpg" /> | | |
 
-## <span id="See_also" class="mw-headline">See also</span>
+## See also
 
 - [GMOD Promotion](GMOD_Promotion "GMOD Promotion")
 - [GMOD Project
   Logos](Category%253AGMOD_Project_Logos "Category%253AGMOD Project Logos")
 - [Logos and Icons](Category%253ALogos_and_Icons "Category%253ALogos and Icons")
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project
-  Logos](Category%253AGMOD_Project_Logos "Category%253AGMOD Project Logos")
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Powered_by_GMOD" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:54 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">69,777 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

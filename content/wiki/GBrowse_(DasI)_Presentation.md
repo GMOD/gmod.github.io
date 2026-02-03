@@ -1,23 +1,7 @@
 ---
 title: "GBrowse (DasI) Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse (DasI) Presentation</span>
-
-
-
-
-
-
-
+# GBrowse (DasI) Presentation
 
 
 This Wiki page is an edited version of
@@ -25,30 +9,22 @@ This Wiki page is an edited version of
 title="DasI middleware.pdf">Scott's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Create the
   database</span>](#Create_the_database)
-- [<span class="tocnumber">2</span> <span class="toctext">Problem 1 -
-  Loading Data</span>](#Problem_1_-_Loading_Data)
-- [<span class="tocnumber">3</span> <span class="toctext">Adaptor
-  Components</span>](#Adaptor_Components)
-- [<span class="tocnumber">4</span> <span class="toctext">Use
-  Bio::DB::Das::Chado</span>](#Use_Bio::DB::Das::Chado)
-- [<span class="tocnumber">5</span> <span class="toctext">Problem 2 -
-  Use Some Accessors</span>](#Problem_2_-_Use_Some_Accessors)
-- [<span class="tocnumber">6</span> <span class="toctext">Bulk
-  Output</span>](#Bulk_Output)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Advantages</span>](#Advantages)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Conclusion</span>](#Conclusion)
+- [Problem 1 -
+  Loading Data](#Problem_1_-_Loading_Data)
+- [Adaptor
+  Components](#Adaptor_Components)
+- [Use
+  Bio::DB::Das::Chado](#Use_Bio::DB::Das::Chado)
+- [Problem 2 -
+  Use Some Accessors](#Problem_2_-_Use_Some_Accessors)
+- [Bulk
+  Output](#Bulk_Output)
+- [Advantages](#Advantages)
+- [Conclusion](#Conclusion)
 
 
-
-##### <span id="Create_the_database" class="mw-headline">Create the database</span>
+##### Create the database
 
     $ perl Makefile.PL
     $ make
@@ -57,7 +33,7 @@ title="DasI middleware.pdf">Scott's presentation</a>.
     $ make prepdb             # now with Xenopus!
     $ make ontologies        # load rel, SO, featureprop
 
-##### <span id="Problem_1_-_Loading_Data" class="mw-headline">Problem 1 - Loading Data</span>
+##### Problem 1 - Loading Data
 
 Create some [GFF3](GFF3 "GFF3") from the specifications:
 
@@ -74,7 +50,7 @@ Gene inserted as GFF3 using a standard bulk loader:
 
 *...lots of output...*
 
-##### <span id="Adaptor_Components" class="mw-headline">Adaptor Components</span>
+##### Adaptor Components
 
 - Bio::DB::Das::Chado
   - Database connection object
@@ -82,7 +58,7 @@ Gene inserted as GFF3 using a standard bulk loader:
   - Object for any range of DNA
 - Bio::DB::Das::Chado::Segment::Feature
 
-##### <span id="Use_Bio::DB::Das::Chado" class="mw-headline">Use Bio::DB::Das::Chado</span>
+##### Use Bio::DB::Das::Chado
 
 
 ``` de1
@@ -99,7 +75,7 @@ my ($gene_fo) = $chado->get_features_by_name($gene_name);
 ```
 
 
-##### <span id="Problem_2_-_Use_Some_Accessors" class="mw-headline">Problem 2 - Use Some Accessors</span>
+##### Problem 2 - Use Some Accessors
 
 
 ``` de1
@@ -121,7 +97,7 @@ for my $exon (@exons) {
 ```
 
 
-##### <span id="Bulk_Output" class="mw-headline">Bulk Output</span>
+##### Bulk Output
 
 
 ``` de1
@@ -142,7 +118,7 @@ for my $exon (@exons) {
 
 Or see your report in [GBrowse](GBrowse.1 "GBrowse")
 
-##### <span id="Advantages" class="mw-headline">Advantages</span>
+##### Advantages
 
 - Comes 'for free' with GBrowse
   - GBrowse will run with any DasI-compatible interface
@@ -151,100 +127,10 @@ Or see your report in [GBrowse](GBrowse.1 "GBrowse")
 
   
 
-##### <span id="Conclusion" class="mw-headline">Conclusion</span>
+##### Conclusion
 
 - Not suitable as a 'general'
   [middleware](Glossary#Middleware "Glossary") layer
   - May be suitable for some applications, particularly if they are
     similar to [GBrowse](GBrowse.1 "GBrowse") or other uses of
     Bio::DB::GFF
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [Perl](Category%253APerl "Category%253APerl")
-- [Middleware
-  Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")
-- [BioPerl](Category%253ABioPerl "Category%253ABioPerl")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_(DasI)_Presentation"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:05 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">16,851 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

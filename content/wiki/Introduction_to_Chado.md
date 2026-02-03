@@ -1,103 +1,78 @@
 ---
 title: "Introduction to Chado"
 ---
+# Introduction to Chado
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Introduction to Chado</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">What's a
   chado?</span>](#What.27s_a_chado.3F)
-- [<span class="tocnumber">2</span> <span class="toctext">Chado - the
-  way of tea</span>](#Chado_-_the_way_of_tea)
-- [<span class="tocnumber">3</span> <span class="toctext">What
+- [Chado - the
+  way of tea](#Chado_-_the_way_of_tea)
+- [What
   Documentation Exists for
-  chado?</span>](#What_Documentation_Exists_for_chado.3F)
-- [<span class="tocnumber">4</span> <span class="toctext">A Modular
-  Schema</span>](#A_Modular_Schema)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Chado
-    Module List</span>](#Chado_Module_List)
-- [<span class="tocnumber">5</span> <span class="toctext">The Sequence
-  Module and Features</span>](#The_Sequence_Module_and_Features)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Definition</span>](#Definition)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Feature
-    Types: an *Ontology*</span>](#Feature_Types:_an_Ontology)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Some other
-    feature types</span>](#Some_other_feature_types)
-- [<span class="tocnumber">6</span> <span class="toctext">Feature
-  Graphs</span>](#Feature_Graphs)
-- [<span class="tocnumber">7</span> <span class="toctext">Feature Graph
-  Transformations</span>](#Feature_Graph_Transformations)
-- [<span class="tocnumber">8</span> <span class="toctext">Representing
+  chado?](#What_Documentation_Exists_for_chado.3F)
+- [A Modular
+  Schema](#A_Modular_Schema)
+  - [Chado
+    Module List](#Chado_Module_List)
+- [The Sequence
+  Module and Features](#The_Sequence_Module_and_Features)
+  - [Definition](#Definition)
+  - [Feature
+    Types: an *Ontology*](#Feature_Types:_an_Ontology)
+  - [Some other
+    feature types](#Some_other_feature_types)
+- [Feature
+  Graphs](#Feature_Graphs)
+- [Feature Graph
+  Transformations](#Feature_Graph_Transformations)
+- [Representing
   Graphs in a Relational
-  Database</span>](#Representing_Graphs_in_a_Relational_Database)
-- [<span class="tocnumber">9</span> <span class="toctext">Representing
+  Database](#Representing_Graphs_in_a_Relational_Database)
+- [Representing
   Ontology Graphs in
-  Chado</span>](#Representing_Ontology_Graphs_in_Chado)
-- [<span class="tocnumber">10</span> <span class="toctext">Representing
-  Feature Graphs in Chado</span>](#Representing_Feature_Graphs_in_Chado)
-  - [<span class="tocnumber">10.1</span> <span class="toctext">Features
-    are typed</span>](#Features_are_typed)
-- [<span class="tocnumber">11</span> <span class="toctext">Querying
-  Graphs</span>](#Querying_Graphs)
-- [<span class="tocnumber">12</span> <span class="toctext">Using views
-  to simplify queries</span>](#Using_views_to_simplify_queries)
-- [<span class="tocnumber">13</span> <span class="toctext">Extensible
-  Attributes</span>](#Extensible_Attributes)
-- [<span class="tocnumber">14</span> <span class="toctext">Localising
+  Chado](#Representing_Ontology_Graphs_in_Chado)
+- [Representing
+  Feature Graphs in Chado](#Representing_Feature_Graphs_in_Chado)
+  - [Features
+    are typed](#Features_are_typed)
+- [Querying
+  Graphs](#Querying_Graphs)
+- [Using views
+  to simplify queries](#Using_views_to_simplify_queries)
+- [Extensible
+  Attributes](#Extensible_Attributes)
+- [Localising
   Features in Sequence
-  Coordinates</span>](#Localising_Features_in_Sequence_Coordinates)
-- [<span class="tocnumber">15</span> <span class="toctext">Interbase
-  Coordinates</span>](#Interbase_Coordinates)
-- [<span class="tocnumber">16</span> <span class="toctext">Basic
-  example - with locations</span>](#Basic_example_-_with_locations)
-- [<span class="tocnumber">17</span> <span class="toctext">Locations can
-  be nested</span>](#Locations_can_be_nested)
-- [<span class="tocnumber">18</span> <span class="toctext">Computational
-  analysis: Predictions</span>](#Computational_analysis:_Predictions)
-- [<span class="tocnumber">19</span> <span class="toctext">Computational
+  Coordinates](#Localising_Features_in_Sequence_Coordinates)
+- [Interbase
+  Coordinates](#Interbase_Coordinates)
+- [Basic
+  example - with locations](#Basic_example_-_with_locations)
+- [Locations can
+  be nested](#Locations_can_be_nested)
+- [Computational
+  analysis: Predictions](#Computational_analysis:_Predictions)
+- [Computational
   analysis: Similarity
-  results</span>](#Computational_analysis:_Similarity_results)
-- [<span class="tocnumber">20</span> <span class="toctext">Computational
+  results](#Computational_analysis:_Similarity_results)
+- [Computational
   analysis: Multiple
-  alignments</span>](#Computational_analysis:_Multiple_alignments)
-- [<span class="tocnumber">21</span> <span class="toctext">Variation
-  features</span>](#Variation_features)
-- [<span class="tocnumber">22</span> <span class="toctext">Bioperl and
-  chado mapping</span>](#Bioperl_and_chado_mapping)
-- [<span class="tocnumber">23</span>
-  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
-  - [<span class="tocnumber">23.1</span> <span class="toctext">Schema
-    design</span>](#Schema_design)
-  - [<span class="tocnumber">23.2</span> <span class="toctext">Chado
+  alignments](#Computational_analysis:_Multiple_alignments)
+- [Variation
+  features](#Variation_features)
+- [Bioperl and
+  chado mapping](#Bioperl_and_chado_mapping)
+- [Acknowledgements](#Acknowledgements)
+  - [Schema
+    design](#Schema_design)
+  - [Chado
     beta testers and other
-    feedback</span>](#Chado_beta_testers_and_other_feedback)
-- [<span class="tocnumber">24</span> <span class="toctext">About this
-  Page</span>](#About_this_Page)
+    feedback](#Chado_beta_testers_and_other_feedback)
+- [About this
+  Page](#About_this_Page)
 
 
-
-## <span id="What.27s_a_chado.3F" class="mw-headline">What's a chado?</span>
+## What's a chado?
 
 - At first, a database for FlyBase: incredibly interesting dataset
 - A database for **very** deep curation
@@ -106,7 +81,7 @@ title: "Introduction to Chado"
 
   
 
-## <span id="Chado_-_the_way_of_tea" class="mw-headline">Chado - the way of tea</span>
+## Chado - the way of tea
 
 Why the reference to tea? According to ancient GMOD lore, legend has it
 that creators Chris Mungall and Dave Emmert were drinking tea in a tea
@@ -119,7 +94,7 @@ alt="Chado.jpg" />
 
   
 
-## <span id="What_Documentation_Exists_for_chado.3F" class="mw-headline">What Documentation Exists for chado?</span>
+## What Documentation Exists for chado?
 
 This Wiki is currently the best source of documentation for Chado. Here
 are more useful pages in the Wiki:
@@ -130,9 +105,9 @@ are more useful pages in the Wiki:
 
   
 
-## <span id="A_Modular_Schema" class="mw-headline">A Modular Schema</span>
+## A Modular Schema
 
-### <span id="Chado_Module_List" class="mw-headline">Chado Module List</span>
+### Chado Module List
 
 - [Audit](Chado_Audit_Module "Chado Audit Module") - for database audit
   trails
@@ -187,15 +162,15 @@ genetics views of the world together.
 Let's look at the chado conceptualisation of the world before diving in
 to the schema design.
 
-## <span id="The_Sequence_Module_and_Features" class="mw-headline">The Sequence Module and Features</span>
+## The Sequence Module and Features
 
-### <span id="Definition" class="mw-headline">Definition</span>
+### Definition
 
 - A feature is a *thingy*
 - A feature is a *potentially localisable*
 - A feature is further defined by an ontology
 
-### <span id="Feature_Types:_an_Ontology" class="mw-headline">Feature Types: an *Ontology*</span>
+### Feature Types: an *Ontology*
 
 One way of representing ontologies is through a graph model, with nodes
 representing concepts and edges representing *relationship types*
@@ -209,7 +184,7 @@ height="558" alt="So-slim-example.png" />
 **is_a**: subtypes, specialisation/generalization  
 **part_of**: compositional
 
-### <span id="Some_other_feature_types" class="mw-headline">Some other feature types</span>
+### Some other feature types
 
 - HSP
 - protein domain
@@ -221,7 +196,7 @@ height="558" alt="So-slim-example.png" />
 
   
 
-## <span id="Feature_Graphs" class="mw-headline">Feature Graphs</span>
+## Feature Graphs
 
 <table data-border="2" data-cellpadding="4" data-cellspacing="0"
 style="margin: 1em 1em 1em 0; background: #ffaaaa; border: 2px #aaa solid; border-collapse: collapse;"
@@ -287,7 +262,7 @@ height="376" alt="Transsplicing.png" />
 Other cases of trans-splicing may involve spatially distributed primary
 transcripts.
 
-## <span id="Feature_Graph_Transformations" class="mw-headline">Feature Graph Transformations</span>
+## Feature Graph Transformations
 
 **CDS boundaries + exons IMPLIES CDS exons**  
 <img
@@ -299,7 +274,7 @@ height="376" alt="Inferred cds exons.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b7/Inferred_introns.png" width="665"
 height="376" alt="Inferred introns.png" />  
 
-## <span id="Representing_Graphs_in_a_Relational_Database" class="mw-headline">Representing Graphs in a Relational Database</span>
+## Representing Graphs in a Relational Database
 
 A graph can be defined as a collection of **Edges** (arcs) and
 **Vertices** (nodes).
@@ -310,7 +285,7 @@ A graph can be defined as a collection of **Edges** (arcs) and
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/54/Rel-graph.png" width="236" height="138"
 alt="Rel-graph.png" />  
 
-## <span id="Representing_Ontology_Graphs_in_Chado" class="mw-headline">Representing Ontology Graphs in Chado</span>
+## Representing Ontology Graphs in Chado
 
 **cvterms (controlled vocabulary terms) connected by cvrelationships**  
 <img
@@ -327,7 +302,7 @@ modern ontology languages (eg DAML, OWL) are layered on top of RDF, so
 the above structure ensures we will be able to represent all the most
 advanced ontological concepts.
 
-## <span id="Representing_Feature_Graphs_in_Chado" class="mw-headline">Representing Feature Graphs in Chado</span>
+## Representing Feature Graphs in Chado
 
 **features are the nodes - feature_relationships are the arcs**  
 
@@ -342,14 +317,14 @@ database structure.
 
   
 
-### <span id="Features_are_typed" class="mw-headline">Features are typed</span>
+### Features are typed
 
   
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3d/Chado-feat.png" width="260" height="98"
 alt="Chado-feat.png" />  
 
-## <span id="Querying_Graphs" class="mw-headline">Querying Graphs</span>
+## Querying Graphs
 
 Most implementations of SQL are *non-recursive*.
 
@@ -380,7 +355,7 @@ lines is the closure of the relationships.
 
     x R y,  y R* z    IMPLIES:     x R* z
 
-## <span id="Using_views_to_simplify_queries" class="mw-headline">Using views to simplify queries</span>
+## Using views to simplify queries
 
 The following view uses the
 [cvpath](Chado_Tables#Table:_cvpath "Chado Tables") table, which
@@ -402,7 +377,7 @@ At Flybase we will mostly be using chado in *data-mining* mode - i.e. we
 will be querying, not updating. This means we can *materialize* views
 for speed.
 
-## <span id="Extensible_Attributes" class="mw-headline">Extensible Attributes</span>
+## Extensible Attributes
 
 The chado relational model defines a fixed set of attributes for a
 [feature](Chado_Tables#Table:_feature "Chado Tables"):
@@ -429,7 +404,7 @@ feature property paradigm:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/ff/Fprop.png" width="500" height="129"
 alt="Fprop.png" />  
 
-## <span id="Localising_Features_in_Sequence_Coordinates" class="mw-headline">Localising Features in Sequence Coordinates</span>
+## Localising Features in Sequence Coordinates
 
 All sequence localisations are with respect to another feature.
 
@@ -454,7 +429,7 @@ is different from the min/max semantics used by e.g.
 <a href="http://bioperl.org" class="external text"
 rel="nofollow">Bioperl</a>, genbank
 
-## <span id="Interbase_Coordinates" class="mw-headline">Interbase Coordinates</span>
+## Interbase Coordinates
 
 **Chado uses *interbase* coordinates.**
 
@@ -488,7 +463,7 @@ directionality (strand). Even though this is surplus to requirements
 most of the time, it is required for zero-length features, and for
 circular chromosomes.
 
-## <span id="Basic_example_-_with_locations" class="mw-headline">Basic example - with locations</span>
+## Basic example - with locations
 
 **Central dogma - with exons and CDSs localised**  
 <img
@@ -507,7 +482,7 @@ For the most part, inferring the boundaries of composite features
 requires fairly simple graph transformations, although care must be
 taken for the genes that break central dogma rules.
 
-## <span id="Locations_can_be_nested" class="mw-headline">Locations can be nested</span>
+## Locations can be nested
 
 **A repeat localised to a contig, itself on a chromosome arm**  
 <img
@@ -533,7 +508,7 @@ height="323" alt="Nested-loc-redundant.png" />
 If you look at the underlying data, you will see that the featureloc
 that locates the repeat on the arm has a locgroup values of **1**.
 
-## <span id="Computational_analysis:_Predictions" class="mw-headline">Computational analysis: Predictions</span>
+## Computational analysis: Predictions
 
 All predictions are handled analagously to standard central dogma cases.
 Compute results have scores, and are attached to tuples in the analysis
@@ -549,7 +524,7 @@ this:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6c/Genscan.png" width="589" height="206"
 alt="Genscan.png" />  
 
-## <span id="Computational_analysis:_Similarity_results" class="mw-headline">Computational analysis: Similarity results</span>
+## Computational analysis: Similarity results
 
 Pairwise similarities (e.g. BLAST) and multiple alignments (e.g.
 CLUSTAL) are represented differently.
@@ -565,21 +540,21 @@ Each HSP has two featurelocs. featureloc has an attribute *rank* to
 order the locations; by convention 0 is the query rank and 1 is the
 subject rank.
 
-## <span id="Computational_analysis:_Multiple_alignments" class="mw-headline">Computational analysis: Multiple alignments</span>
+## Computational analysis: Multiple alignments
 
 These are treated analagously to pairwise alignments - just add more
 locations.
 
   
 
-## <span id="Variation_features" class="mw-headline">Variation features</span>
+## Variation features
 
 Variation features (e.g. SNPs, insertions, deletions) are treated in a
 similar fashion to pairwise alignments.
 
   
 
-## <span id="Bioperl_and_chado_mapping" class="mw-headline">Bioperl and chado mapping</span>
+## Bioperl and chado mapping
 
 There are important differences between the Bioperl and chado models.
 
@@ -595,9 +570,9 @@ Bioperl objects, you will get a feature with two properties of type
 semantics state that these variations should be represented using
 multiple locations.
 
-## <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
+## Acknowledgements
 
-### <span id="Schema_design" class="mw-headline">Schema design</span>
+### Schema design
 
 - Dave Emmert
 - Colin Wiel
@@ -606,108 +581,15 @@ multiple locations.
 - Pinglei Zhou
 - Suzanna Lewis
 
-### <span id="Chado_beta_testers_and_other_feedback" class="mw-headline">Chado beta testers and other feedback</span>
+### Chado beta testers and other feedback
 
 - Mark Yandell
 - Aubrey de Grey
 
   
 
-## <span id="About_this_Page" class="mw-headline">About this Page</span>
+## About this Page
 
 - This page is a Wikified version of a
   <a href="http://archive.is/ENOJk" class="external text"
   rel="nofollow">presentation by Chris Mungall</a>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Pages with problems or
-  questions](Category%253APages_with_problems_or_questions "Category%253APages with problems or questions")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AIntroduction_to_Chado" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Introduction_to_Chado" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:45 on 11 January
-  2019.</span>
-<!-- - <span id="footer-info-viewcount">321,200 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

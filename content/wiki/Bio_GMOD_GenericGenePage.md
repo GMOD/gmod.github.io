@@ -1,23 +1,7 @@
 ---
 title: "Bio GMOD GenericGenePage"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Bio GMOD GenericGenePage</span>
-
-
-
-
-
-
-
+# Bio GMOD GenericGenePage
 
 
 Bio%253A%253AGMOD::GenericGenePage is an abstract
@@ -59,14 +43,14 @@ While there is no example CGI included in this distribution that show
 how this module can be used, that could be included in future
 distribution if there is interest in it.
 
-## <span id="FlyBase_implementation" class="mw-headline">FlyBase implementation</span>
+## FlyBase implementation
 
 <a
 href="http://flybase.org/genome/Drosophila_melanogaster/current/genepage/FBgn0000490"
 class="external free"
 rel="nofollow">http://flybase.org/genome/Drosophila_melanogaster/current/genepage/FBgn0000490</a>
 
-## <span id="EcoliWiki_implementation" class="mw-headline">EcoliWiki implementation</span>
+## EcoliWiki implementation
 
 The EcoliWiki implementation is written as a REST-like service in PHP.
 
@@ -76,7 +60,7 @@ rel="nofollow">http://ecoliwiki.net/rest/gmod_gene.php/gene_symbol/pfkA</a>
 
 See the discussion page for issues arising.
 
-# <span id="Abstract_Classes" class="mw-headline">Abstract Classes</span>
+# Abstract Classes
 
 Methods below should be overridden by each GenericGenePage
 implementation.
@@ -191,94 +175,3 @@ implementation.
                   common        => e.g. 'Mouse-ear cress',
                 }
          Side Effects: none
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [XML](Category%253AXML "Category%253AXML")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253ABio_GMOD_GenericGenePage" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Bio_GMOD_GenericGenePage"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:16 on 19 August
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">25,824 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

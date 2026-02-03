@@ -1,46 +1,22 @@
 ---
 title: "January 2007 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">January 2007 GMOD Meeting</span>
-
-
-
-
-
-
-
+# January 2007 GMOD Meeting
 
 
 GMOD Generic Model Organism Database
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   9</span>](#Meeting_9)
-- [<span class="tocnumber">2</span> <span class="toctext">MOD User
-  Interface Caucus</span>](#MOD_User_Interface_Caucus)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD
-  Middleware</span>](#GMOD_Middleware)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Agenda</span>](#Agenda)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Attendees</span>](#Attendees)
+- [MOD User
+  Interface Caucus](#MOD_User_Interface_Caucus)
+- [GMOD
+  Middleware](#GMOD_Middleware)
+  - [Agenda](#Agenda)
+- [Attendees](#Attendees)
 
 
-
-## <span id="Meeting_9" class="mw-headline">Meeting 9</span>
+## Meeting 9
 
 January 18-19, San Diego CA.
 
@@ -48,19 +24,19 @@ The January 2007 [GMOD meeting](Meetings "Meetings") was held at the
 Town and Country Hotel in San Diego. The meeting was divided into two
 parts: a MOD user interface caucus and a Chado Middleware Bake Off.
 
-## <span id="MOD_User_Interface_Caucus" class="mw-headline">MOD User Interface Caucus</span>
+## MOD User Interface Caucus
 
 Report from the UI Caucus: [MOD Interface
 Summary](MOD_Face_Summary "MOD Face Summary")
 
-## <span id="GMOD_Middleware" class="mw-headline">GMOD Middleware</span>
+## GMOD Middleware
 
 Reports from the Middleware Meeting: [GMOD
 Middleware](GMOD_Middleware "GMOD Middleware")
 
   
 
-### <span id="Agenda" class="mw-headline">Agenda</span>
+### Agenda
 
 - 9:00 AM - 9:05 AM **Introduction, Eric Just**
 - 9:05 AM - 9:30 AM **Object/relational Mapping Principles, Sohel
@@ -81,7 +57,7 @@ Middleware](GMOD_Middleware "GMOD Middleware")
 - 3:10 PM - 4:30 PM **Wrap up (Eric Just, Scott Cain, Brian Osborne),
   discussion**
 
-## <span id="Attendees" class="mw-headline">Attendees</span>
+## Attendees
 
 The meeting was well attended, with about 60 people from a large variety
 of organizations:
@@ -151,87 +127,6 @@ rel="nofollow">ChromDB</a> |
 | [Scott Cain](User%253AScott "User%253AScott") | GMOD |
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/January_2007_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:33 on 10 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">35,226 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

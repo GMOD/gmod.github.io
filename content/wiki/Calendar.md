@@ -1,48 +1,25 @@
 ---
 title: "Calendar"
 ---
+# Calendar
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Calendar</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">GMOD and
   Galaxy Calendars</span>](#GMOD_and_Galaxy_Calendars)
-- [<span class="tocnumber">2</span> <span class="toctext">Other
-  Calendars</span>](#Other_Calendars)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD Event
-  List</span>](#GMOD_Event_List)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">2013
-    Events</span>](#2013_Events)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">2012
-    Events</span>](#2012_Events)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">2011
-    Events</span>](#2011_Events)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">2002
-    through 2010 Events</span>](#2002_through_2010_Events)
+- [Other
+  Calendars](#Other_Calendars)
+- [GMOD Event
+  List](#GMOD_Event_List)
+  - [2013
+    Events](#2013_Events)
+  - [2012
+    Events](#2012_Events)
+  - [2011
+    Events](#2011_Events)
+  - [2002
+    through 2010 Events](#2002_through_2010_Events)
 
 
-
-## <span id="GMOD_and_Galaxy_Calendars" class="mw-headline">GMOD and Galaxy Calendars</span>
+## GMOD and Galaxy Calendars
 
 Please submit new events by sending them to the
 <a href="mailto:help@gmod.org" class="external text" rel="nofollow">GMOD
@@ -68,7 +45,7 @@ available as RSS feeds:
 
   
 
-## <span id="Other_Calendars" class="mw-headline">Other Calendars</span>
+## Other Calendars
 
 <table>
 <colgroup>
@@ -98,14 +75,14 @@ calendar</a></li>
 </tbody>
 </table>
 
-## <span id="GMOD_Event_List" class="mw-headline">GMOD Event List</span>
+## GMOD Event List
 
 See the [Training and
 Outreach](Training_and_Outreach "Training and Outreach") and
 [Meetings](Meetings "Meetings") pages for lists containing only those
 types of events.
 
-### <span id="2013_Events" class="mw-headline">2013 Events</span>
+### 2013 Events
 
 <table class="wikitable">
 <colgroup>
@@ -201,7 +178,7 @@ at PAGXXI</td>
 </tbody>
 </table>
 
-### <span id="2012_Events" class="mw-headline">2012 Events</span>
+### 2012 Events
 
 <table class="wikitable">
 <colgroup>
@@ -326,7 +303,7 @@ all-day GMOD Workshop</em>.</td>
 </tbody>
 </table>
 
-### <span id="2011_Events" class="mw-headline">2011 Events</span>
+### 2011 Events
 
 <table class="wikitable">
 <colgroup>
@@ -569,7 +546,7 @@ title="User%253AMckays">Sheldon McKay</a></td>
 </tbody>
 </table>
 
-### <span id="2002_through_2010_Events" class="mw-headline">2002 through 2010 Events</span>
+### 2002 through 2010 Events
 
 <table class="wikitable">
 <colgroup>
@@ -1311,90 +1288,3 @@ The meeting where GMOD was born.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Calendar" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:09 on 11 February
-  2020.</span>
-<!-- - <span id="footer-info-viewcount">414,636 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

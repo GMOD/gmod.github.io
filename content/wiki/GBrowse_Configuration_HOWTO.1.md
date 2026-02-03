@@ -1,26 +1,11 @@
 ---
 title: "GBrowse 1 Configuration HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse 1 Configuration HOWTO</span>
-
-
-
+# GBrowse 1 Configuration HOWTO
 
 
 (Redirected from [GBrowse Configuration
 HOWTO](/mediawiki/index.php?title=GBrowse_Configuration_HOWTO&redirect=no "GBrowse Configuration HOWTO"))
-
-
-
 
 
 This document provides information on configuring version 1 of the
@@ -30,92 +15,77 @@ This document provides information on configuring version 1 of the
 title="GBrowse 2 Configuration HOWTO">GBrowse 2 Configuration HOWTO</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Creating
   Databases From Scratch</span>](#Creating_Databases_From_Scratch)
-- [<span class="tocnumber">2</span> <span class="toctext">Adding and
-  Configuring Databases</span>](#Adding_and_Configuring_Databases)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Configuration File
-    layout</span>](#Configuration_File_layout)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">The
-    \[GENERAL\] Section</span>](#The_.5BGENERAL.5D_Section)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">Adaptor Options</span>](#Adaptor_Options)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">Appearance
-      Options</span>](#Appearance_Options)
-    - [<span class="tocnumber">2.2.3</span>
-      <span class="toctext">Behavior Options</span>](#Behavior_Options)
-    - [<span class="tocnumber">2.2.4</span>
-      <span class="toctext">Directory and URL
-      Options</span>](#Directory_and_URL_Options)
-    - [<span class="tocnumber">2.2.5</span> <span class="toctext">Plugin
-      Options</span>](#Plugin_Options)
-    - [<span class="tocnumber">2.2.6</span> <span class="toctext">Track
-      Sharing Options</span>](#Track_Sharing_Options)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">The
+- [Adding and
+  Configuring Databases](#Adding_and_Configuring_Databases)
+  - [Configuration File
+    layout](#Configuration_File_layout)
+  - [The
+    \[GENERAL\] Section](#The_.5BGENERAL.5D_Section)
+    - [Adaptor Options](#Adaptor_Options)
+    - [Appearance
+      Options](#Appearance_Options)
+    - [Behavior Options](#Behavior_Options)
+    - [Directory and URL
+      Options](#Directory_and_URL_Options)
+    - [Plugin
+      Options](#Plugin_Options)
+    - [Track
+      Sharing Options](#Track_Sharing_Options)
+  - [The
     \[TRACK DEFAULTS\]
-    section</span>](#The_.5BTRACK_DEFAULTS.5D_section)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Track
-    Sections</span>](#Track_Sections)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Glyphs and
-    Glyph Options</span>](#Glyphs_and_Glyph_Options)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Adding
-    features to the overview</span>](#Adding_features_to_the_overview)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Semantic
-    Zooming</span>](#Semantic_Zooming)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Computed
-    Options</span>](#Computed_Options)
-    - [<span class="tocnumber">2.8.1</span> <span class="toctext">Named
-      Subroutine References</span>](#Named_Subroutine_References)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Declaring
-    New Aggregators</span>](#Declaring_New_Aggregators)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Grouping
-    Features</span>](#Grouping_Features)
-  - [<span class="tocnumber">2.11</span>
-    <span class="toctext">Controlling the gbrowse_details
-    page</span>](#Controlling_the_gbrowse_details_page)
-  - [<span class="tocnumber">2.12</span> <span class="toctext">Linking
-    out from gbrowse_details</span>](#Linking_out_from_gbrowse_details)
-  - [<span class="tocnumber">2.13</span>
-    <span class="toctext">Configuring Balloon
-    Tooltips</span>](#Configuring_Balloon_Tooltips)
-  - [<span class="tocnumber">2.14</span>
-    <span class="toctext">Generating Static Images: PNGs, SVGs and
-    PDFs</span>](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
-- [<span class="tocnumber">3</span> <span class="toctext">Generating
+    section](#The_.5BTRACK_DEFAULTS.5D_section)
+  - [Track
+    Sections](#Track_Sections)
+  - [Glyphs and
+    Glyph Options](#Glyphs_and_Glyph_Options)
+  - [Adding
+    features to the overview](#Adding_features_to_the_overview)
+  - [Semantic
+    Zooming](#Semantic_Zooming)
+  - [Computed
+    Options](#Computed_Options)
+    - [Named
+      Subroutine References](#Named_Subroutine_References)
+  - [Declaring
+    New Aggregators](#Declaring_New_Aggregators)
+  - [Grouping
+    Features](#Grouping_Features)
+  - [Controlling the gbrowse_details
+    page](#Controlling_the_gbrowse_details_page)
+  - [Linking
+    out from gbrowse_details](#Linking_out_from_gbrowse_details)
+  - [Configuring Balloon
+    Tooltips](#Configuring_Balloon_Tooltips)
+  - [Generating Static Images: PNGs, SVGs and
+    PDFs](#Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs)
+- [Generating
   Feature Frequency
-  Histograms</span>](#Generating_Feature_Frequency_Histograms)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Internationalization</span>](#Internationalization)
-- [<span class="tocnumber">5</span> <span class="toctext">Authentication
-  & Authorization</span>](#Authentication_.26_Authorization)
-- [<span class="tocnumber">6</span> <span class="toctext">Displaying
-  Genetic & RH Maps</span>](#Displaying_Genetic_.26_RH_Maps)
-- [<span class="tocnumber">7</span> <span class="toctext">Changing the
+  Histograms](#Generating_Feature_Frequency_Histograms)
+- [Internationalization](#Internationalization)
+- [Authentication
+  & Authorization](#Authentication_.26_Authorization)
+- [Displaying
+  Genetic & RH Maps](#Displaying_Genetic_.26_RH_Maps)
+- [Changing the
   Location of the Configuration
-  Files</span>](#Changing_the_Location_of_the_Configuration_Files)
-- [<span class="tocnumber">8</span> <span class="toctext">Using DAS
+  Files](#Changing_the_Location_of_the_Configuration_Files)
+- [Using DAS
   (Distributed Annotation System)
-  Databases</span>](#Using_DAS_.28Distributed_Annotation_System.29_Databases)
-- [<span class="tocnumber">9</span> <span class="toctext">The Bio::MOBY
-  Browse</span>](#The_Bio::MOBY_Browse)
-- [<span class="tocnumber">10</span> <span class="toctext">Filtering
-  Search Results</span>](#Filtering_Search_Results)
-- [<span class="tocnumber">11</span> <span class="toctext">Invoking
-  GBrowse URLs</span>](#Invoking_GBrowse_URLs)
-- [<span class="tocnumber">12</span> <span class="toctext">Important
-  Maintenance</span>](#Important_Maintenance)
-- [<span class="tocnumber">13</span> <span class="toctext">Further
-  Information</span>](#Further_Information)
+  Databases](#Using_DAS_.28Distributed_Annotation_System.29_Databases)
+- [The Bio::MOBY
+  Browse](#The_Bio::MOBY_Browse)
+- [Filtering
+  Search Results](#Filtering_Search_Results)
+- [Invoking
+  GBrowse URLs](#Invoking_GBrowse_URLs)
+- [Important
+  Maintenance](#Important_Maintenance)
+- [Further
+  Information](#Further_Information)
 
 
-
-# <span id="Creating_Databases_From_Scratch" class="mw-headline">Creating Databases From Scratch</span>
+# Creating Databases From Scratch
 
 [GBrowse](/wiki/GBrowse "GBrowse") uses
 *[adaptors](/wiki/GBrowse_Adaptors "GBrowse Adaptors")* to read genomic
@@ -172,7 +142,7 @@ Here is the sequence of steps for creating new GBrowse databases:
       remake the GFF file and reload the database. This was the simplest
       way I had of manipulating the files to create custom tracks.
 
-# <span id="Adding_and_Configuring_Databases" class="mw-headline">Adding and Configuring Databases</span>
+# Adding and Configuring Databases
 
 Each data source has a corresponding configuration file in the directory
 gbrowse.conf. Once you've created and loaded a new database, you should
@@ -210,7 +180,7 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/trunk/c
 class="external text" rel="nofollow">yeast configuration file</a>
 </span>) and modify it to suit your needs.
 
-## <span id="Configuration_File_layout" class="mw-headline">Configuration File layout</span>
+## Configuration File layout
 
 GBrowse configuration files are arranged into configuration *stanzas*,
 or sections in the form:
@@ -234,7 +204,7 @@ or sections in the form:
   header, so take care to keep all related options grouped together
   before the start of the next section.
 
-## <span id="The_.5BGENERAL.5D_Section" class="mw-headline">The \[GENERAL\] Section</span>
+## The \[GENERAL\] Section
 
 The \[GENERAL\] section consists of a series of name=value options. For
 example, the beginning of the yeast.conf sample configuration file looks
@@ -261,7 +231,7 @@ example:
 
 All \[GENERAL\] options are listed below, grouped together by function.
 
-### <span id="Adaptor_Options" class="mw-headline">Adaptor Options</span>
+### Adaptor Options
 
 [GBrowse Adaptors](/wiki/GBrowse_Adaptors "GBrowse Adaptors") connect
 GBrowse to a data source. A config file specifies exactly one adaptor.
@@ -275,7 +245,6 @@ options are listed on the [GBrowse
 Adaptors](/wiki/GBrowse_Adaptors "GBrowse Adaptors") page.
 
 db_args
-
 
 
 Arguments to pass to the adaptor for it to use when making a database
@@ -326,19 +295,15 @@ files, distinguished by the filename extensions `.gff` and `.fa`
 respectively.
 
 
-
 user  
 The user name for the gbrowse script to log in under if you are not
 using `nobody`. This is exactly the same as providing the `-user` option
 to `db_args`, and is deprecated.
-
-<!-- -->
-
 pass  
 The password to use if the database is password protected. This is the
 same as providing the `-pass` option to `db_args`, and is deprecated.
 
-### <span id="Appearance_Options" class="mw-headline">Appearance Options</span>
+### Appearance Options
 
 Appearance options affect what is displayed back to the user. This is
 related to, but different from the [Behavior
@@ -351,32 +316,22 @@ The description of the database. This will appear in the popup menu that
 allows users to select the data source and in the header of the page.
 Don't make it as long as the previous example! (You will want to change
 this.)
-
-<!-- -->
-
 hilite fill, hilite outline  
 These options control the color of the selection rectangles that appear
 in the overview and regionview when you are zoomed into a region. The
 hilite fill controls the color of the rectangle interior, and the hilite
 outline controls the color of the rectangle outline. Colors can be
 specified by name (e.g. "pink"), or in HTML \#RRGGBB format.
-
-<!-- -->
-
 image widths  
 The image widths option controls the set of image sizes to offer the
 user. Its value is a space-delimited list of pixel widths. The default
 is probably fine. Note that the height of the image depends on the
 number of tracks and features, and cannot be controlled.
-
-<!-- -->
-
 default width  
 The default width is the image width to start off with when the user
 invokes the browser for the first time. The default is 800.
 
 default features
-
 
 
 The default features option is a space-delimited list of tracks to turn
@@ -392,9 +347,7 @@ annotation plugin track by default, preface the plugin's name with
                            plugin:RestrictionAnnotator
 
 
-
 initial landmark
-
 
 
 This option controls what feature to show when the user first visits a
@@ -407,16 +360,12 @@ Example:
           initial landmark = Chr1
 
 
-
 truecolor  
 If this option is present and true, then GBrowse will create 24-bit
 (truecolor) images. This is mainly useful when using the "image" glyph,
 which allows you to paste arbitrary images onto the genome map. Do not
 use this option unless you need it, because it slows down drawing and
 makes the images much larger.
-
-<!-- -->
-
 units, unit_divider  
 The units option allows GBrowse to display units on an alternate scale
 (for example, (centi)Morgans), and the `unit_divider` provides the
@@ -430,12 +379,10 @@ For example if it is known that 5010 base pairs is equal to one Morgan,
 zoom levels
 
 
-
 GBrowse allows unlimited zoom levels. This option selects the width of
 each level, in bp. For example:
 
          zoom levels = 1000 2000 5000 10000 20000 40000 100000 200000
-
 
 
 region segment  
@@ -447,16 +394,13 @@ pairs. The default value is 50000.
 region sizes
 
 
-
 This contains a space-delimited list of region panel sizes to present to
 the user in a popup menu:
 
         region sizes   = 5000 10000 20000
 
 
-
 show sources
-
 
 
 A `0` (false) or `1` (true) value which controls whether or not to show
@@ -468,32 +412,21 @@ Note that all data sources will need to have this option defined in
 order for it to take effect across all databases.
 
 
-
 default varying  
 The track selection table will be sorted alphabetically, by default;
 setting this variable to true will cause the tracks to appear in the
 same order as they appear in the configuration file.
-
-<!-- -->
-
 overview units  
 This option controls the units that will be used on the scale for the
 birds-eye view display. Possible values are "bp" (base pairs), "k"
 (kilobases), "M" (megabases), and "G" (gigabases). If this option is
 omitted, the browser will guess the most appropriate unit.
-
-<!-- -->
-
 overview bgcolor  
 This is the color for the background of the birds-eye view.
-
-<!-- -->
-
 detailed bgcolor  
 This is the color for the background of the detailed view.
 
 header
-
 
 
 This is a header to print at the top of the browser page. It is any
@@ -510,9 +443,7 @@ Example:
        header = <h1>Welcome to the Volvox Sequence Page</h1>
 
 
-
 footer
-
 
 
 This is a footer to print at the bottom of the browser page. It is any
@@ -538,9 +469,7 @@ Example:
             </table>
 
 
-
 examples
-
 
 
 You can provide GBrowse with some canned examples of "interesting
@@ -550,9 +479,7 @@ provides a space-delimited list of interesting regions. For example:
           examples = II  NPY1 NAB2 Orf:YGL123W
 
 
-
 instructions, search_instructions, navigation_instructions
-
 
 
 You may override the default instructions (as defined in the
@@ -562,9 +489,7 @@ options. For example:
             instructions = "Type in the name of a contig or clone."
 
 
-
 category tables
-
 
 
 This option allows you to group the on/off checkboxes for set of tracks
@@ -601,11 +526,9 @@ class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
 more details.
 
 
-
 instructions section, search section, overview section, region section,
 details section, tracks section, display_settings section, upload_tracks
 section
-
 
 
 These options control which sections are displayed and whether they are
@@ -632,9 +555,7 @@ navigation buttons. If you want to disable searching selectively, you
 should use the "no search" option instead.
 
 
-
 html1, html2, html3, html4, html5, html6
-
 
 
 These options allow you to insert HTML into the GBrowse page at
@@ -682,9 +603,7 @@ details). The second argument is a hashref containing the user's
 settings for the current page.
 
 
-
 keystyle, empty_tracks
-
 
 
 These two general options control the appearance of the keys printed on
@@ -710,9 +629,7 @@ features in it. Possible values are:
 The default value is `key`.
 
 
-
 background, postgrid
-
 
 
 These two options can be used to place custom background images in the
@@ -747,9 +664,7 @@ href="http://plasmodb.org/cgi-bin/gbrowse/plasmodb/?name=Pf3D7_11:1278854..13107
 class="external text" rel="nofollow">PlasmoDB</a>.
 
 
-
 image_padding = 25, pad_left = 50, pad_right = 30
-
 
 
 The `image_padding` option will add the indicated amount of whitespace
@@ -762,9 +677,7 @@ You can individually adjust the left and right padding using `pad_left`
 and `pad_right`, which, if present, will supersede `image_padding`.
 
 
-
 show track categories
-
 
 
 If this option is set to a true value, then tracks that have been
@@ -776,8 +689,7 @@ displayed in a track labeled "Protein match (vertebrate)".
 The default is false.
 
 
-
-### <span id="Behavior_Options" class="mw-headline">Behavior Options</span>
+### Behavior Options
 
 Behavior options affect how GBrowse responds to the user. This is
 related to, but different from the [Appearance
@@ -787,7 +699,6 @@ Options](#Appearance_Options) sections for options that don't fall
 cleanly into one category or the other.
 
 aggregators
-
 
 
 This option is only valid when used with Bio::DB::GFF adaptors, and
@@ -810,9 +721,7 @@ class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>,
 BioSQL, or Chado [adaptors](/wiki/GBrowse_Adaptors "GBrowse Adaptors").
 
 
-
 reference class
-
 
 
 **Note:** This option is used only with the
@@ -826,9 +735,7 @@ another class, such as Contig, please indicate the class here (if you
 don't, certain features such as the keyword search will fail):
 
 
-
 drag and drop
-
 
 
 If this is set to true, then code will be activated that lets the user
@@ -840,14 +747,10 @@ activated.
 It is off by default for compatibility with older browsers.
 
 
-
 disable wildcards  
 Ordinarily a user can type in "YAL\*" to find all features with names
 beginning with "YAL". This option, if set to a true value, disables
 wildcard searching.
-
-<!-- -->
-
 merge searches  
 If this is set to true (the default), then features with the same name,
 chromosome and type will be merged into one feature during searches. If
@@ -856,7 +759,6 @@ true (1) if searches are returning many results, and to false (0) if
 searches are returning too few. (This option was added in version 1.70).
 
 max segment, min segment
-
 
 
 These options control the size of segments that will be shown in the
@@ -873,15 +775,11 @@ option, then the segment will be resized to be this size. The default is
 20 bp.
 
 
-
 default segment  
 The default segment option sets the width of the segment (bp) that will
 be displayed when the user clicks on the birds-eye view without
 previously having set a desired magnification. You may want to adjust
 this value.
-
-<!-- -->
-
 keyword search max  
 By default, GBrowse will limit the number of keyword search results to
 1,000. The order in which the 1,000 hits are returned depends on how the
@@ -891,7 +789,6 @@ keyword search results, set `keyword search max` to the desired maximum
 value.
 
 cache time
-
 
 
 The server will cache track images for a period of time in order to
@@ -904,9 +801,7 @@ call GBrowse with the CGI option `nocache=1`. There is no equivalent
 configuration option.
 
 
-
 version
-
 
 
 An optional numeric version for this configuration file. Every time
@@ -922,23 +817,18 @@ Example:
       version = 1.1
 
 
-
 request timeout  
 This is the timeout value for requests. If a user requests a large
 region and the request takes more than the indicated number of seconds,
 then the request will timeout and the user will be advised to choose a
 smaller region. The default is 60 seconds (one minute). You can make the
 timeout longer or shorter than this.
-
-<!-- -->
-
 head  
 This is content to insert into the HTML \<head\>\</head\> section. It is
 the appropriate place to stick JavaScript code, etc. It can be a code
 reference if you wish.
 
 onload
-
 
 
 This is the name of JavaScript function(s) to be called via the page
@@ -957,9 +847,7 @@ will result in
      <body onload="alert('I am about to do something');doSomething('arg1','arg2')">
 
 
-
 automatic classes
-
 
 
 When the user types in a search string that is not qualified by a class
@@ -978,7 +866,6 @@ Otherwise, the browser will proceed to a full text search of all the
 comment fields.
 
 
-
 search attributes (<a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> [adaptor](/wiki/GBrowse_Adaptors "GBrowse Adaptors") only)  
 When the browser has searched the name and alias of features without
@@ -994,13 +881,11 @@ list of attribute names to the `search attributes` option.
 no search
 
 
-
 If you don't want the "Landmark or Region" textbox to appear, set this
 to true. The user will still be able to search the database by appending
 `q=<search term>` to the URL.
 
              no search = 1
-
 
 
 no autosearch  
@@ -1010,7 +895,6 @@ Instead, the previous search will be pasted into the "Landmark or
 Region" box and the user will have to press "Search" to reexecute it.
 
 das mapmaster
-
 
 
 This option, which should appear somewhere in the `[GENERAL]` section,
@@ -1027,9 +911,7 @@ Please see DAS_HOWTO for more information on using
 GBrowse.
 
 
-
 proxy, http proxy, ftp proxy
-
 
 
 If your web server is behind a firewall and needs to use a proxy in
@@ -1045,9 +927,7 @@ proxy:
       proxy = http://myproxy.myorg.com:9000
 
 
-
 session driver, session args
-
 
 
 These options fine-tune how GBrowse manages its state-maintaining
@@ -1093,9 +973,7 @@ to work well. If you change these defaults, be sure to change them in
 moving from one data source to another.
 
 
-
 remember settings time
-
 
 
 The length of time to remember page-specific settings in the format
@@ -1113,19 +991,14 @@ The default value is 1 month.
 See the CGI manual page for more information on the time format.
 
 
-
 remember cookie time  
 This is the length of time before the user's session cookie will stay on
 disk before it expires. It should be significantly longer than
 `remember settings time`. The default is 12 months.
-
-<!-- -->
-
 remember source time  
 **Deprecated.** Use `remember cookie time` instead.
 
 msie hack
-
 
 
 GBrowse uses HTTP POST to transfer the current page settings to the web
@@ -1139,7 +1012,6 @@ issue, but will put very long URLs in the Location box. It is your
 choice which of these is more annoying to your users.
 
 
-
 suppress_menu  
 This option will cause the browser to ignore your configuration file
 when building the source menu. Your sources will still be accessible by
@@ -1147,7 +1019,7 @@ URL using the `gbrowse/yourSource` or `gbrowse?src=yourSource` syntax.
 One possible application for this feature would be to your data source
 while you are testing a new configuration.
 
-### <span id="Directory_and_URL_Options" class="mw-headline">Directory and URL Options</span>
+### Directory and URL Options
 
 These options specify where GBrowse should find or put different types
 of files.
@@ -1210,7 +1082,7 @@ directory programmatically.
 
   
 
-### <span id="Plugin_Options" class="mw-headline">Plugin Options</span>
+### Plugin Options
 
 Plugins are a way for third party developers to add functionality to
 GBrowse without changing its core source code. Plugins are stored in the
@@ -1244,7 +1116,7 @@ conf/plugins. You can store plugins in a non-standard location by
 providing this option with a space-delimited list of additional
 directories to search in.
 
-### <span id="Track_Sharing_Options" class="mw-headline">Track Sharing Options</span>
+### Track Sharing Options
 
 Users can link to their own tracks or to tracks published by other
 GBrowse or <a href="/wiki/DAS" class="mw-redirect" title="DAS">DAS</a>
@@ -1306,7 +1178,7 @@ such sources at the bottom of the main window. The format is:
          remote sources = "Menu Label 1" http://url1.host.com/etc/etc
                           "Menu Label 2" http://url2.host.com/etc/etc
 
-## <span id="The_.5BTRACK_DEFAULTS.5D_section" class="mw-headline">The \[TRACK DEFAULTS\] section</span>
+## The \[TRACK DEFAULTS\] section
 
 The track defaults section specifies default values for each track. The
 following common options are recognized:
@@ -1431,7 +1303,7 @@ including images and links.
 The landmark_padding option will add the indicated number of base pairs
 to the right and left of all landmarks that are searched for by name.
 
-## <span id="Track_Sections" class="mw-headline">Track Sections</span>
+## Track Sections
 
 Any other \[Section\] in the configuration file is treated as a
 declaration of a track. The order of track sections will become the
@@ -1464,7 +1336,6 @@ Valid options are as follows:
 feature
 
 
-
 This relates the track to one or more feature types as they appear in
 the database. Recall that each feature has a method and source. This is
 represented in the form method:source. So, for example, a feature of
@@ -1484,9 +1355,7 @@ same track and display them in a similar fashion.
 It isn't possible to use wild-cards or pattern matching.
 
 
-
 remote feature
-
 
 
 This relates the track to a remote feature track somewhere on the
@@ -1497,7 +1366,6 @@ option and most of the glyph control options described below are
 ignored, but the "citation" and "key" options are honored. Example:
 
     remote feature = http://www.wormbase.org/cgi-bin/das/wormbase?type=mRNA
-
 
 
 glyph
@@ -1621,7 +1489,6 @@ for details.
 group_on
 
 
-
 For Bio::DB::SeqFeature::Store databases *only*, the group_on field
 allows you to group features together by display_name, target or any
 other method. This is mostly useful for XY-plot data, where you may want
@@ -1633,14 +1500,12 @@ same vertical scaling. Example:
 (this feature is under refinement and may change in the future)
 
 
-
 restrict  
 This option allows you to restrict who is allowed to view the current
 track by host name, IP address or username/password. See [Authentication
 & Authorization](#Authentication_.26_Authorization) for details.
 
 category
-
 
 
 This option allows you to group tracks into different groups on the
@@ -1680,7 +1545,6 @@ class="external text" rel="nofollow">GBrowse2 Admin Tutorial</a> for
 more details.
 
 
-
 das category, das landmark, das flatten, das subparts, das superparts, das glyph, das type  
 All these options pertain to exporting the GBrowse database as a DAS
 data source. Please see DAS_HOWTO for more information.
@@ -1688,13 +1552,13 @@ data source. Please see DAS_HOWTO for more information.
 A large number of glyph-specific options are also recognized. These are
 described in the next section.
 
-## <span id="Glyphs_and_Glyph_Options" class="mw-headline">Glyphs and Glyph Options</span>
+## Glyphs and Glyph Options
 
 See the separate article [GBrowse
 Configuration/Glyphs](/wiki/GBrowse_Configuration/Glyphs "GBrowse Configuration/Glyphs")
 for this important topic.
 
-## <span id="Adding_features_to_the_overview" class="mw-headline">Adding features to the overview</span>
+## Adding features to the overview
 
 You can make any set of tracks appear in the overview by creating a
 stanza with a title of the format \[\<label\>:overview\], where
@@ -1727,7 +1591,7 @@ Similarly, you can make a track appear in the region panel by appending
 
   
 
-## <span id="Semantic_Zooming" class="mw-headline">Semantic Zooming</span>
+## Semantic Zooming
 
 Sometimes you will want to change the appearance of a track when the
 user has zoomed out or zoomed in beyond a certain level. To indicate
@@ -1788,7 +1652,7 @@ hide the track when the display exceeds a certain size:
 
   
 
-## <span id="Computed_Options" class="mw-headline">Computed Options</span>
+## Computed Options
 
 Some options can be computed at run time by using Perl subroutines as
 their values. These are known as "callbacks." Currently this works with
@@ -1886,7 +1750,7 @@ pixel width of the panel or the state of the "flip" setting:
              return $panel->flip ? "$name (flipped)" : $name;
           }
 
-### <span id="Named_Subroutine_References" class="mw-headline">Named Subroutine References</span>
+### Named Subroutine References
 
 If you use a version of BioPerl after April 15, 2003, you can also use
 references to named subroutines as option arguments. To use named
@@ -1947,7 +1811,7 @@ can define it this way:
       [EST_ALIGNMENTS]
       height = \&My::score_height
 
-## <span id="Declaring_New_Aggregators" class="mw-headline">Declaring New Aggregators</span>
+## Declaring New Aggregators
 
 The Bio::DB::GFF data model recognizes a single-level of "grouping" of
 features, but doesn't specify how to use the group information to
@@ -2032,7 +1896,7 @@ To view the documentation for any of these aggregators, run the command
 "perldoc Bio::DB::GFF::Aggregator::aggregator_name", where
 "aggregator_name" is the name of the aggregator.
 
-## <span id="Grouping_Features" class="mw-headline">Grouping Features</span>
+## Grouping Features
 
 gbrowse recognizes the concept of a "group" of related features that are
 connected by dotted lines. The canonical example is a pair of ESTs that
@@ -2071,7 +1935,7 @@ option.
 
   
 
-## <span id="Controlling_the_gbrowse_details_page" class="mw-headline">Controlling the gbrowse_details page</span>
+## Controlling the gbrowse_details page
 
 If a track definition's "link" option ([see
 above](#The_.5BTRACK_DEFAULTS.5D_section)) is set to AUTO, the
@@ -2146,7 +2010,7 @@ and puts the whole thing in a \<pre\> section.
                    "<pre>$value</pre>";
                 }
 
-## <span id="Linking_out_from_gbrowse_details" class="mw-headline">Linking out from gbrowse_details</span>
+## Linking out from gbrowse_details
 
 The formatting rule mechanism described in the previous section is the
 recommended way of creating a link out from the gbrowse_details page.
@@ -2192,32 +2056,32 @@ value of the tag looks like an NCBI GI number:
 
   
 
-## <span id="Configuring_Balloon_Tooltips" class="mw-headline">Configuring Balloon Tooltips</span>
+## Configuring Balloon Tooltips
 
 See: [GBrowse
 Configuration/Balloons](/wiki/GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons").
 
-## <span id="Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs" class="mw-headline">Generating Static Images: PNGs, SVGs and PDFs</span>
+## Generating Static Images: PNGs, SVGs and PDFs
 
 See: [GBrowse
 Configuration/Images](/wiki/GBrowse_Configuration/Images "GBrowse Configuration/Images").
 
-# <span id="Generating_Feature_Frequency_Histograms" class="mw-headline">Generating Feature Frequency Histograms</span>
+# Generating Feature Frequency Histograms
 
 See: [GBrowse Configuration/Feature frequency
 histograms](/wiki/GBrowse_Configuration/Feature_frequency_histograms "GBrowse Configuration/Feature frequency histograms")
 
-# <span id="Internationalization" class="mw-headline">Internationalization</span>
+# Internationalization
 
 See: [GBrowse
 Configuration/I18n](/wiki/GBrowse_Configuration/I18n "GBrowse Configuration/I18n").
 
-# <span id="Authentication_.26_Authorization" class="mw-headline">Authentication & Authorization</span>
+# Authentication & Authorization
 
 See: [GBrowse
 Configuration/Authentication](/wiki/GBrowse_Configuration/Authentication "GBrowse Configuration/Authentication").
 
-# <span id="Displaying_Genetic_.26_RH_Maps" class="mw-headline">Displaying Genetic & RH Maps</span>
+# Displaying Genetic & RH Maps
 
 GBrowse can be tweaked to make it more suitable for displaying genetic
 and radiation hybrid maps.
@@ -2245,7 +2109,7 @@ drawn using cM units.
 
   
 
-# <span id="Changing_the_Location_of_the_Configuration_Files" class="mw-headline">Changing the Location of the Configuration Files</span>
+# Changing the Location of the Configuration Files
 
 If you wish to change the location of the gbrowse.conf configuration
 file directory, you must manually edit the gbrowse CGI script. Open the
@@ -2277,17 +2141,17 @@ For example:
 
   
 
-# <span id="Using_DAS_.28Distributed_Annotation_System.29_Databases" class="mw-headline">Using DAS (Distributed Annotation System) Databases</span>
+# Using DAS (Distributed Annotation System) Databases
 
 See: [GBrowse
 Configuration/DAS](/wiki/GBrowse_Configuration/DAS "GBrowse Configuration/DAS").
 
-# <span id="The_Bio::MOBY_Browse" class="mw-headline">The Bio::MOBY Browse</span>
+# The Bio::MOBY Browse
 
 See: [GBrowse
 Configuration/BioMOBY](/wiki/GBrowse_Configuration/BioMOBY "GBrowse Configuration/BioMOBY").
 
-# <span id="Filtering_Search_Results" class="mw-headline">Filtering Search Results</span>
+# Filtering Search Results
 
 GBrowse provides a method to filter the contents of individual tracks
 based on information that can be obtained from feature attributes. For
@@ -2334,12 +2198,12 @@ on the primary_tag
 
   
 
-# <span id="Invoking_GBrowse_URLs" class="mw-headline">Invoking GBrowse URLs</span>
+# Invoking GBrowse URLs
 
 See: [GBrowse Configuration/URL
 schema](/wiki/GBrowse_Configuration/URL_schema "GBrowse Configuration/URL schema").
 
-# <span id="Important_Maintenance" class="mw-headline">Important Maintenance</span>
+# Important Maintenance
 
 GBrowse creates lots of cache files as it operates, and it does not
 garbage collect them automatically. To keep the cache files under
@@ -2352,7 +2216,7 @@ Be sure to replace HTDOCS with the path to your web server HTML document
 root directory, and make sure that the cron job runs under has the
 proper permissions to delete the files in this directory.
 
-# <span id="Further_Information" class="mw-headline">Further Information</span>
+# Further Information
 
 For further information, bug reports, etc, please consult the [GMOD
 Mailing Lists](/wiki/GMOD_Mailing_Lists "GMOD Mailing Lists"). The main
@@ -2372,99 +2236,3 @@ Have fun!
 
 <a href="mailto:lstein@cshl.edu" class="external text"
 rel="nofollow">Lincoln Stein</a> & the GMOD development team.
-
-
-
-
-[Categories](/wiki/Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](/wiki/Category%253AHOWTO "Category%253AHOWTO")
-- [GBrowse](/wiki/Category%253AGBrowse "Category%253AGBrowse")
-- [Documentation](/wiki/Category%253ADocumentation "Category%253ADocumentation")
-- [Needs Editing](/wiki/Category%253ANeeds_Editing "Category%253ANeeds Editing")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="/wiki/Talk%253AGBrowse_1_Configuration_HOWTO" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](/wiki/Main_Page)</span>
-- <span id="n-Software">[Software](/wiki/GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](/wiki/Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](/wiki/Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](/wiki/Overview)</span>
-- <span id="n-FAQs">[FAQs](/wiki/Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](/wiki/Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](/wiki/Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](/wiki/GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](/wiki/Training_and_Outreach)</span>
-- <span id="n-Support">[Support](/wiki/Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD
-  Promotion](/wiki/GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](/wiki/Meetings)</span>
-- <span id="n-Calendar">[Calendar](/wiki/Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/GBrowse_1_Configuration_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:45 on 15 August
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">621,121 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "XORT"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">XORT</span>
-
-
-
-
-
-
-
+# XORT
 
 
   
@@ -28,19 +12,12 @@ title: "XORT"
 Status
 
 
-
 - Mature release
 - Development: maintenance
 - Support: active
 
 
-
 Resources
-
-
-
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -70,81 +47,3 @@ rel="nofollow">http://gmod.org/wiki/XORT</a> <span class="smwsearch">[+](Special
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Database tools <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools")</span> and Middleware <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Middleware "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Middleware")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Perl <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Perl "Special%253ASearchByProperty/Written-20in-20language/Perl")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [XORT#http://sourceforge.net/projects/gmod/files/OldFiles/](XORT.1#http:.2F.2Fsourceforge.net.2Fprojects.2Fgmod.2Ffiles.2FOldFiles.2F "XORT") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/XORT-23http%253A-2F-2Fsourceforge.net-2Fprojects-2Fgmod-2Ffiles-2FOldFiles-2F "Special%253ASearchByProperty/Has-20subobject/XORT-23http%253A-2F-2Fsourceforge.net-2Fprojects-2Fgmod-2Ffiles-2FOldFiles-2F")</span> and [XORT](XORT.1#_9390aed0d94978b3988f1a1568215abb "XORT") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/XORT-23_9390aed0d94978b3988f1a1568215abb "Special%253ASearchByProperty/Has-20subobject/XORT-23 9390aed0d94978b3988f1a1568215abb")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/XORT" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:22 on 16 October
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">137,553 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "Migrating from GBrowse 1.X to 2.X"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Migrating from GBrowse 1.X to 2.X</span>
-
-
-
-
-
-
-
+# Migrating from GBrowse 1.X to 2.X
 
 
 This is a guide for existing users of the GBrowse 1.X series to help
@@ -30,23 +14,17 @@ the system easier to configure and maintain. A small amount of work is
 needed to make your existing system work with the 2.0 series.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Apache
   Environment Variables</span>](#Apache_Environment_Variables)
-- [<span class="tocnumber">2</span> <span class="toctext">GBrowse.conf
+- [GBrowse.conf
   and Data Source Config
-  Files</span>](#GBrowse.conf_and_Data_Source_Config_Files)
-- [<span class="tocnumber">3</span> <span class="toctext">Specifying
-  Databases</span>](#Specifying_Databases)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Specifying
-    Rendering Slaves</span>](#Specifying_Rendering_Slaves)
+  Files](#GBrowse.conf_and_Data_Source_Config_Files)
+- [Specifying
+  Databases](#Specifying_Databases)
+  - [Specifying
+    Rendering Slaves](#Specifying_Rendering_Slaves)
 
 
-
-# <span id="Apache_Environment_Variables" class="mw-headline">Apache Environment Variables</span>
+# Apache Environment Variables
 
 GBrowse 1.X found the location of its configuration files by consulting
 a hard-coded variable located in the CGI script itself. This made it
@@ -87,7 +65,7 @@ when you run "./Build config". You can then create a suitable fragment
 of Apache configuration file code to cut and paste into its
 configuration file by running *./Build apache_config*.
 
-# <span id="GBrowse.conf_and_Data_Source_Config_Files" class="mw-headline">GBrowse.conf and Data Source Config Files</span>
+# GBrowse.conf and Data Source Config Files
 
 In GBrowse 1.X, each data source had its own configuration file.
 However, many or most of the options in each file, such as file paths,
@@ -128,7 +106,7 @@ will work as is. Later, you may wish to consolidate redundant options
 that are shared among your config files in order to simplify
 maintenance.
 
-# <span id="Specifying_Databases" class="mw-headline">Specifying Databases</span>
+# Specifying Databases
 
 In GBrowse 1.X each data source could be attached to one and only one
 database. In GBrowse 2.0, you can declare as many databases as you like,
@@ -172,7 +150,7 @@ entirely and just place db_adaptor and db_args options directly in the
 \[GENERAL\] and/or \[*TRACK*\] stanzas. The system will do its best to
 minimize the amount of redundancy and uniqueify the databases.
 
-## <span id="Specifying_Rendering_Slaves" class="mw-headline">Specifying Rendering Slaves</span>
+## Specifying Rendering Slaves
 
 GBrowse 2.0 supports rendering slaves, which are small network-based
 servers that receive track rendering requests from the GBrowse server
@@ -198,91 +176,3 @@ The *database* and *remote renderer* options are independent of each
 other, and can be mixed and matched according to your needs. See Running
 GBrowse 2.0 Rendering Slaves for more information on setting up
 renderers.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Migrating_from_GBrowse_1.X_to_2.X"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 06:14 on 26 August
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">40,731 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

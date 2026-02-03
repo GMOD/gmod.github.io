@@ -1,9 +1,7 @@
 ---
 title: "Chado Library Module"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Chado Library Module</span>
+# Chado Library Module
 
 The library module is designed to store detailed information about
 molecular libraries. The library module uses the [sequence
@@ -13,51 +11,41 @@ module](Chado_Sequence_Module "Chado Sequence Module") can describe. It
 is expected that most of the description of a given library would come
 through the use of ontology terms.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using the
   Library module</span>](#Using_the_Library_module)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">A FlyBase
-    cDNA library</span>](#A_FlyBase_cDNA_library)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Background</span>](#Background)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Implementation</span>](#Implementation)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Relationship
-      graph</span>](#Relationship_graph)
-    - [<span class="tocnumber">1.1.4</span> <span class="toctext">Naming
-      conventions</span>](#Naming_conventions)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">A dsRNA
-    library</span>](#A_dsRNA_library)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Background</span>](#Background_2)
-    - [<span class="tocnumber">1.2.2</span>
-      <span class="toctext">Implementation</span>](#Implementation_2)
-    - [<span class="tocnumber">1.2.3</span>
-      <span class="toctext">Relationship
-      graph</span>](#Relationship_graph_2)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-- [<span class="tocnumber">3</span> <span class="toctext">Table:
-  library</span>](#Table:_library)
-- [<span class="tocnumber">4</span> <span class="toctext">Table:
-  library_cvterm</span>](#Table:_library_cvterm)
-- [<span class="tocnumber">5</span> <span class="toctext">Table:
-  library_feature</span>](#Table:_library_feature)
-- [<span class="tocnumber">6</span> <span class="toctext">Table:
-  library_pub</span>](#Table:_library_pub)
-- [<span class="tocnumber">7</span> <span class="toctext">Table:
-  library_synonym</span>](#Table:_library_synonym)
-- [<span class="tocnumber">8</span> <span class="toctext">Table:
-  libraryprop</span>](#Table:_libraryprop)
+  - [A FlyBase
+    cDNA library](#A_FlyBase_cDNA_library)
+    - [Background](#Background)
+    - [Implementation](#Implementation)
+    - [Relationship
+      graph](#Relationship_graph)
+    - [Naming
+      conventions](#Naming_conventions)
+  - [A dsRNA
+    library](#A_dsRNA_library)
+    - [Background](#Background_2)
+    - [Implementation](#Implementation_2)
+    - [Relationship
+      graph](#Relationship_graph_2)
+- [Tables](#Tables)
+- [Table:
+  library](#Table:_library)
+- [Table:
+  library_cvterm](#Table:_library_cvterm)
+- [Table:
+  library_feature](#Table:_library_feature)
+- [Table:
+  library_pub](#Table:_library_pub)
+- [Table:
+  library_synonym](#Table:_library_synonym)
+- [Table:
+  libraryprop](#Table:_libraryprop)
 
-## <span id="Using_the_Library_module" class="mw-headline">Using the Library module</span>
+## Using the Library module
 
 The following are examples showing how to use this module to describe a
 library.
 
-### <span id="A_FlyBase_cDNA_library" class="mw-headline">A FlyBase cDNA library</span>
+### A FlyBase cDNA library
 
 Written by Haiyan Zhang, April 14, 2006, the original Wiki page is here:
 <a
@@ -65,7 +53,7 @@ href="http://cedar.bio.indiana.edu/mediawiki/index.php/Library_module_implementa
 class="external free"
 rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/Library_module_implementation</a>.
 
-#### <span id="Background" class="mw-headline">Background</span>
+#### Background
 
 The cDNA library contains complementary DNA molecules synthesized from
 mRNA molecules in a cell. One cDNA library has only one cloning vector.
@@ -78,7 +66,7 @@ mRNA molecules in a cell. One cDNA library has only one cloning vector.
   from a cDNA clone or PCR product; typically a few hundred base pairs
   long.
 
-#### <span id="Implementation" class="mw-headline">Implementation</span>
+#### Implementation
 
 1.  Library name and uniquenames are generally from the first 2 letters
     of the the cDNA_clones, or the first 2 letters and vector name e.g.
@@ -96,7 +84,7 @@ mRNA molecules in a cell. One cDNA library has only one cloning vector.
     _feature_relationship_ table, as type _partof_. cDNA_clone is the
     _object_id_, cDNA/EST/vector is the _subject_id_.
 
-#### <span id="Relationship_graph" class="mw-headline">Relationship graph</span>
+#### Relationship graph
 
                                              pOTB7
                                      __________              vector/plasmid
@@ -114,7 +102,7 @@ mRNA molecules in a cell. One cDNA library has only one cloning vector.
                                          |        |       |
                          ---------------------------------------- genomic contig
 
-#### <span id="Naming_conventions" class="mw-headline">Naming conventions</span>
+#### Naming conventions
 
 Rules for chado clones and clone features:
 
@@ -125,7 +113,7 @@ Rules for chado clones and clone features:
 - EST: uniquename = accession number (if possible), name = clone id
   number.5prime,3prime,:contig etc e.g. _LD12345.5prime_
 
-### <span id="A_dsRNA_library" class="mw-headline">A dsRNA library</span>
+### A dsRNA library
 
 June 1, 2006 written by Kathleen Falls. The original Wiki page is here:
 <a
@@ -133,7 +121,7 @@ href="http://cedar.bio.indiana.edu/mediawiki/index.php/RNAi_primer_and_amplicon_
 class="external free"
 rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/RNAi_primer_and_amplicon_implementation</a>.
 
-#### <span id="Background_2" class="mw-headline">Background</span>
+#### Background
 
 The aim is to stored information about a dsRNA library and its
 bulk-loaded amplicons and primers in Chado. There are sites performing
@@ -151,7 +139,7 @@ amplicons with genes and
 - dsRNA primers: PCR primers pairs of 15-25 bp designed to amplify dsRNA
   amplicon
 
-#### <span id="Implementation_2" class="mw-headline">Implementation</span>
+#### Implementation
 
 - The dsRNA library uniquename and name is typically name or initials of
   the screening center e.g. _DRSC_ for Drosophila RNAi Screening Center.
@@ -186,7 +174,7 @@ inference by analysis).
 Each dsRNA amplicon feature record is linked to _library_ in the
 _library_feature_ table.
 
-#### <span id="Relationship_graph_2" class="mw-headline">Relationship graph</span>
+#### Relationship graph
 
      ---------------------------------------------------------------------- chromosomal arm
                          ^                                      ^
@@ -201,9 +189,9 @@ _library_feature_ table.
                                  --partof   | |
                          ---------------------------------------   dsRNA library-->library_feature
 
-## <span id="Tables" class="mw-headline">Tables</span>
+## Tables
 
-## <span id="Table:_library" class="mw-headline">Table: library</span>
+## Table: library
 
 <table data-border="1" data-cellpadding="3">
 <caption>library Structure</caption>
@@ -266,26 +254,14 @@ library Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [library_cvterm](Chado_Tables#Table:_library_cvterm "Chado Tables")
-
-<!-- -->
-
 - [library_feature](Chado_Tables#Table:_library_feature "Chado Tables")
-
-<!-- -->
-
 - [library_pub](Chado_Tables#Table:_library_pub "Chado Tables")
-
-<!-- -->
-
 - [library_synonym](Chado_Tables#Table:_library_synonym "Chado Tables")
-
-<!-- -->
-
 - [libraryprop](Chado_Tables#Table:_libraryprop "Chado Tables")
 
 ---
 
-## <span id="Table:_library_cvterm" class="mw-headline">Table: library_cvterm</span>
+## Table: library_cvterm
 
 The table library_cvterm links a library to controlled vocabularies
 which describe the library. For instance, there might be a link to the
@@ -302,7 +278,7 @@ library_cvterm Structure
 
 ---
 
-## <span id="Table:_library_feature" class="mw-headline">Table: library_feature</span>
+## Table: library_feature
 
 library_feature links a library to the clones which are contained in the
 library. Examples of such linked features might be "cDNA_clone" or
@@ -318,7 +294,7 @@ library_feature Structure
 
 ---
 
-## <span id="Table:_library_pub" class="mw-headline">Table: library_pub</span>
+## Table: library_pub
 
 | F-Key                                                 | Name           | Type    | Description         |
 | ----------------------------------------------------- | -------------- | ------- | ------------------- |
@@ -330,7 +306,7 @@ library_pub Structure
 
 ---
 
-## <span id="Table:_library_synonym" class="mw-headline">Table: library_synonym</span>
+## Table: library_synonym
 
 <table data-border="1" data-cellpadding="3">
 <caption>library_synonym Structure</caption>
@@ -410,7 +386,7 @@ library_synonym Structure
 
 ---
 
-## <span id="Table:_libraryprop" class="mw-headline">Table: libraryprop</span>
+## Table: libraryprop
 
 | F-Key                                                 | Name           | Type    | Description         |
 | ----------------------------------------------------- | -------------- | ------- | ------------------- |
@@ -423,51 +399,3 @@ library_synonym Structure
 libraryprop Structure
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Library_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:36 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">86,020 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

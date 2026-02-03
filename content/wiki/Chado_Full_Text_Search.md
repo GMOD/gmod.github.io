@@ -1,23 +1,7 @@
 ---
 title: "Chado Full Text Search"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Full Text Search</span>
-
-
-
-
-
-
-
+# Chado Full Text Search
 
 
 Starting with the 0.30 release of the
@@ -32,13 +16,13 @@ functionality is present largely due to the initial work by
 class="external text" rel="nofollow">Leighton Pritchard</a>, and we'd
 like to thank him for contributing to the Chado GBrowse adaptor.
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 - [PostgreSQL](PostgreSQL "PostgreSQL") 8.4
 - <a href="Chado" class="mw-redirect" title="Chado">Chado</a> 1.11
 - [GBrowse](GBrowse.1 "GBrowse") 1.70 or 2.0
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
 Before full text searching can be used, the database must be prepared.
 Full text searching requires that a view that is present in the standard
@@ -74,7 +58,7 @@ the configuration file. Like this example:
                    -srcfeatureslice 1
                    -fulltext 1
 
-## <span id="Maintaining_the_materialized_view" class="mw-headline">Maintaining the materialized view</span>
+## Maintaining the materialized view
 
 If the data in your
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database is
@@ -108,91 +92,3 @@ weekly (604800) or any other value desired:
 ``` de1
   UPDATE materialized_view SET refresh_time = 604800 WHERE name = 'all_feature_names';
 ```
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Full_Text_Search" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">26,787 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

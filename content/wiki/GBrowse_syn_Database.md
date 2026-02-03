@@ -1,23 +1,7 @@
 ---
 title: "GBrowse syn Database"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse syn Database</span>
-
-
-
-
-
-
-
+# GBrowse syn Database
 
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
@@ -34,33 +18,27 @@ to get syntenic data into that database.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Example
   Alignment Data</span>](#Example_Alignment_Data)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Note on
-    formats</span>](#Note_on_formats)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Note on
-    the sequence ID syntax</span>](#Note_on_the_sequence_ID_syntax)
-- [<span class="tocnumber">2</span> <span class="toctext">Loading the
-  alignment database</span>](#Loading_the_alignment_database)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Create a
-    MySQL database</span>](#Create_a_MySQL_database)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Loading
+  - [Note on
+    formats](#Note_on_formats)
+  - [Note on
+    the sequence ID syntax](#Note_on_the_sequence_ID_syntax)
+- [Loading the
+  alignment database](#Loading_the_alignment_database)
+  - [Create a
+    MySQL database](#Create_a_MySQL_database)
+  - [Loading
     from multiple sequence
-    alignments</span>](#Loading_from_multiple_sequence_alignments)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Loading
-    from other sources</span>](#Loading_from_other_sources)
-    - [<span class="tocnumber">2.3.1</span> <span class="toctext">Data
-      loading format</span>](#Data_loading_format)
-- [<span class="tocnumber">3</span> <span class="toctext">GBrowse_syn
-  Database Schema</span>](#GBrowse_syn_Database_Schema)
+    alignments](#Loading_from_multiple_sequence_alignments)
+  - [Loading
+    from other sources](#Loading_from_other_sources)
+    - [Data
+      loading format](#Data_loading_format)
+- [GBrowse_syn
+  Database Schema](#GBrowse_syn_Database_Schema)
 
 
-
-# <span id="Example_Alignment_Data" class="mw-headline">Example Alignment Data</span>
+# Example Alignment Data
 
 The sample below is in CLUSTALW format. Other formats are also supported
 (see below).
@@ -92,7 +70,7 @@ coordinate information
     c_elegans-II(+)/9706834-9708803           ACGAAGTCGGTCCCTGAAC--AATTATTT----TGA----TATA---GAAAGAAACGGTA
                                                ** ***** *****  *
 
-## <span id="Note_on_formats" class="mw-headline">Note on formats</span>
+## Note on formats
 
 These example data are in clustalw format. The scripts used to process
 these data will recognize clustalw and other commonly used formats
@@ -112,7 +90,7 @@ data***.
   genome alignment workflow</a></span> for general information on how
   whole genome alignment data can be generated.
 
-## <span id="Note_on_the_sequence_ID_syntax" class="mw-headline">Note on the sequence ID syntax</span>
+## Note on the sequence ID syntax
 
 The sequence ID is this clustal file is overloaded to contain
 information about the species, strand and coordinates. This information
@@ -147,9 +125,9 @@ Examples:
 
   
 
-# <span id="Loading_the_alignment_database" class="mw-headline">Loading the alignment database</span>
+# Loading the alignment database
 
-## <span id="Create_a_MySQL_database" class="mw-headline">Create a MySQL database</span>
+## Create a MySQL database
 
 Before you load the database, make sure that a database of that name
 already exists; if not, create one from scratch using the following
@@ -159,7 +137,7 @@ MySQL command:
 
   
 
-## <span id="Loading_from_multiple_sequence_alignments" class="mw-headline">Loading from multiple sequence alignments</span>
+## Loading from multiple sequence alignments
 
 Multiple sequence alignments can be loaded directly into the GBrowse_syn
 alignment database with the script
@@ -179,7 +157,7 @@ simple multiple sequence alignments with clustalw.
 
   
 
-## <span id="Loading_from_other_sources" class="mw-headline">Loading from other sources</span>
+## Loading from other sources
 
 The script
 [load_alignment_database.pl](GBrowse_syn_Scripts#load_alignment_database.pl "GBrowse syn Scripts")
@@ -196,7 +174,7 @@ Any features that have start end and strand information can be used.
 
   
 
-### <span id="Data_loading_format" class="mw-headline">Data loading format</span>
+### Data loading format
 
 A tab-delimited intermediate format that encodes the alignment
 coordinates plus optional 1:1 mapping of coordinates within the
@@ -211,7 +189,7 @@ reciprocal alignment is also created during database loading.
 
   
 
-# <span id="GBrowse_syn_Database_Schema" class="mw-headline">GBrowse_syn Database Schema</span>
+# GBrowse_syn Database Schema
 
 - The alignment database [schema](Glossary#Schema "Glossary") is very
   simple; it has a tables for all reciprocal 'hits,' or alignment
@@ -226,90 +204,3 @@ reciprocal alignment is also created during database loading.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GBS_Schema.png" class="thumbborder"
 width="512" height="541" alt="GBS Schema.png" />
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn_Database" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:27 on 14 August
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">149,303 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

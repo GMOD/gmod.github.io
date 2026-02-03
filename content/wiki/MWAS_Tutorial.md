@@ -1,91 +1,76 @@
 ---
 title: "MWAS Tutorial"
 ---
-<span id="top"></span>
+# MWAS Tutorial
 
-# <span dir="auto">MWAS Tutorial</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Maker Web
   Annotation Service</span>](#Maker_Web_Annotation_Service)
-- [<span class="tocnumber">2</span> <span class="toctext">Understanding
-  MWAS</span>](#Understanding_MWAS)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Introduction to Genome
-    Annotation</span>](#Introduction_to_Genome_Annotation)
-    - [<span class="tocnumber">2.1.1</span> <span class="toctext">What
-      Are Annotations?</span>](#What_Are_Annotations.3F)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Importance of Genome
-      Annotations</span>](#Importance_of_Genome_Annotations)
-    - [<span class="tocnumber">2.1.3</span> <span class="toctext">Effect
+- [Understanding
+  MWAS](#Understanding_MWAS)
+  - [Introduction to Genome
+    Annotation](#Introduction_to_Genome_Annotation)
+    - [What
+      Are Annotations?](#What_Are_Annotations.3F)
+    - [Importance of Genome
+      Annotations](#Importance_of_Genome_Annotations)
+    - [Effect
       of Next Generation Sequencing on the Annotation
-      Process</span>](#Effect_of_Next_Generation_Sequencing_on_the_Annotation_Process)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">What does
-    MWAS do?</span>](#What_does_MWAS_do.3F)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">What sets
+      Process](#Effect_of_Next_Generation_Sequencing_on_the_Annotation_Process)
+  - [What does
+    MWAS do?](#What_does_MWAS_do.3F)
+  - [What sets
     MAKER and MWAS apart from other tools (_ab initio_ gene predictors
-    etc.)?</span>](#What_sets_MAKER_and_MWAS_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">Emerging vs. Model
-      Genomes</span>](#Emerging_vs._Model_Genomes)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">Comparison of Algorithm Performance on Model
+    etc.)?](#What_sets_MAKER_and_MWAS_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F)
+    - [Emerging vs. Model
+      Genomes](#Emerging_vs._Model_Genomes)
+    - [Comparison of Algorithm Performance on Model
       vs. Emerging
-      Genomes</span>](#Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes)
-- [<span class="tocnumber">3</span> <span class="toctext">Getting
-  Started with MWAS</span>](#Getting_Started_with_MWAS)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Registration</span>](#Registration)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Running
-    MWAS with Example Data</span>](#Running_MWAS_with_Example_Data)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Details of
+      Genomes](#Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes)
+- [Getting
+  Started with MWAS](#Getting_Started_with_MWAS)
+  - [Registration](#Registration)
+  - [Running
+    MWAS with Example Data](#Running_MWAS_with_Example_Data)
+  - [Details of
     What is Going on Inside of
-    MWAS</span>](#Details_of_What_is_Going_on_Inside_of_MWAS)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">Repeat
-      Masking</span>](#Repeat_Masking)
-    - [<span class="tocnumber">3.3.2</span> <span class="toctext">_Ab
-      Initio_ Gene Prediction</span>](#Ab_Initio_Gene_Prediction)
-    - [<span class="tocnumber">3.3.3</span> <span class="toctext">EST
+    MWAS](#Details_of_What_is_Going_on_Inside_of_MWAS)
+    - [Repeat
+      Masking](#Repeat_Masking)
+    - [_Ab
+      Initio_ Gene Prediction](#Ab_Initio_Gene_Prediction)
+    - [EST
       and Protein Evidence
-      Alignment</span>](#EST_and_Protein_Evidence_Alignment)
-    - [<span class="tocnumber">3.3.4</span>
-      <span class="toctext">Polishing Evidence
-      Alignments</span>](#Polishing_Evidence_Alignments)
-    - [<span class="tocnumber">3.3.5</span>
-      <span class="toctext">Integrating Evidence to Synthesize Final
-      Annotations</span>](#Integrating_Evidence_to_Synthesize_Final_Annotations)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Running
-    MWAS with your Own Data</span>](#Running_MWAS_with_your_Own_Data)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">MWAS Job
-    Configuration</span>](#MWAS_Job_Configuration)
-    - [<span class="tocnumber">3.5.1</span> <span class="toctext">Basic
-      Input Files</span>](#Basic_Input_Files)
-    - [<span class="tocnumber">3.5.2</span> <span class="toctext">Repeat
-      Masking Options</span>](#Repeat_Masking_Options)
-    - [<span class="tocnumber">3.5.3</span> <span class="toctext">Gene
-      Prediction Options</span>](#Gene_Prediction_Options)
-    - [<span class="tocnumber">3.5.4</span> <span class="toctext">Other
-      MAKER Options</span>](#Other_MAKER_Options)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">MWAS
-    Results</span>](#MWAS_Results)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">Viewing
-    MAKER Annotations</span>](#Viewing_MAKER_Annotations)
-    - [<span class="tocnumber">3.7.1</span>
-      <span class="toctext">Apollo</span>](#Apollo)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">Training
+      Alignment](#EST_and_Protein_Evidence_Alignment)
+    - [Polishing Evidence
+      Alignments](#Polishing_Evidence_Alignments)
+    - [Integrating Evidence to Synthesize Final
+      Annotations](#Integrating_Evidence_to_Synthesize_Final_Annotations)
+  - [Running
+    MWAS with your Own Data](#Running_MWAS_with_your_Own_Data)
+  - [MWAS Job
+    Configuration](#MWAS_Job_Configuration)
+    - [Basic
+      Input Files](#Basic_Input_Files)
+    - [Repeat
+      Masking Options](#Repeat_Masking_Options)
+    - [Gene
+      Prediction Options](#Gene_Prediction_Options)
+    - [Other
+      MAKER Options](#Other_MAKER_Options)
+  - [MWAS
+    Results](#MWAS_Results)
+  - [Viewing
+    MAKER Annotations](#Viewing_MAKER_Annotations)
+    - [Apollo](#Apollo)
+  - [Training
     _ab initio_ Gene
-    Predictors</span>](#Training_ab_initio_Gene_Predictors)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">GFF3
-    Pass-through</span>](#GFF3_Pass-through)
-  - [<span class="tocnumber">3.10</span>
-    <span class="toctext">mRNAseq</span>](#mRNAseq)
-  - [<span class="tocnumber">3.11</span>
-    <span class="toctext">Merge/Resolve Legacy
-    Annotations</span>](#Merge.2FResolve_Legacy_Annotations)
+    Predictors](#Training_ab_initio_Gene_Predictors)
+  - [GFF3
+    Pass-through](#GFF3_Pass-through)
+  - [mRNAseq](#mRNAseq)
+  - [Merge/Resolve Legacy
+    Annotations](#Merge.2FResolve_Legacy_Annotations)
 
-## <span id="Maker_Web_Annotation_Service" class="mw-headline">Maker Web Annotation Service</span>
+## Maker Web Annotation Service
 
 The MAKER Web Annotation Service (MWAS) is an easily configurable
 web-accessible genome annotation pipeline. It's purpose is to allow
@@ -99,7 +84,7 @@ are too large to submit to MWAS are free to
 <a href="http://www.yandell-lab.org/software/" class="external text"
 rel="nofollow">download MAKER</a> for use on their own systems.
 
-## <span id="Understanding_MWAS" class="mw-headline">Understanding MWAS</span>
+## Understanding MWAS
 
 The first half of this page gives general background to genome
 annotation as well as describes validation data for the
@@ -108,9 +93,9 @@ annotation pipeline MAKER is at the heart of MWAS, and MWAS has been
 configured to present the user with configuration options that match
 those of the command line program MAKER as closely as possible.
 
-### <span id="Introduction_to_Genome_Annotation" class="mw-headline">Introduction to Genome Annotation</span>
+### Introduction to Genome Annotation
 
-#### <span id="What_Are_Annotations.3F" class="mw-headline">What Are Annotations?</span>
+#### What Are Annotations?
 
 Annotations are descriptions of different features of the genome, and
 they can be both structural or functional in nature.
@@ -133,7 +118,7 @@ Examples of evidence supporting a structural annotation:
 - ESTs
 - Protein homology
 
-#### <span id="Importance_of_Genome_Annotations" class="mw-headline">Importance of Genome Annotations</span>
+#### Importance of Genome Annotations
 
 Why should the average biologist care about genome annotations? Genome
 sequence itself is not very useful. The main question when any genome is
@@ -160,7 +145,7 @@ brings up a major point:
 Quality control and evidence management are therefore essential
 components to any annotation process.
 
-#### <span id="Effect_of_Next_Generation_Sequencing_on_the_Annotation_Process" class="mw-headline">Effect of [Next Generation Sequencing](Next_Generation_Sequencing "Next Generation Sequencing") on the Annotation Process</span>
+#### Effect of [Next Generation Sequencing](Next_Generation_Sequencing "Next Generation Sequencing") on the Annotation Process
 
 It’s generally accepted that within the next few years it will be
 possible to sequence even human sized genomes for as little as \$1,000
@@ -192,7 +177,7 @@ sequencing technologies into a usable resource, and for larger datasets,
 research groups can use a local installation of the annotation pipeline
 MAKER.
 
-### <span id="What_does_MWAS_do.3F" class="mw-headline">What does MWAS do?</span>
+### What does MWAS do?
 
 - Identifies and masks out repeat elements
 - Aligns ESTs to the genome
@@ -204,7 +189,7 @@ MAKER.
 
 MAKER generated annotations, shown in [Apollo](Apollo.1 "Apollo").
 
-### <span id="What_sets_MAKER_and_MWAS_apart_from_other_tools_.28ab_initio_gene_predictors_etc..29.3F" class="mw-headline">What sets MAKER and MWAS apart from other tools (_ab initio_ gene predictors etc.)?</span>
+### What sets MAKER and MWAS apart from other tools (_ab initio_ gene predictors etc.)?
 
 MAKER is an annotation pipeline, not a gene predictor. MAKER does not
 predict genes, rather MAKER leverages existing software tools (some of
@@ -225,7 +210,7 @@ a collection of gene models. However there are a few very significant
 consequences to the differences between these programs that I will
 explain shortly.
 
-#### <span id="Emerging_vs._Model_Genomes" class="mw-headline">Emerging vs. Model Genomes</span>
+#### Emerging vs. Model Genomes
 
 Emerging model organism genomes each come with there own set of issues
 that are not necessarily found in classic model genomes. These include
@@ -277,7 +262,7 @@ etc.</td>
 </tbody>
 </table>
 
-#### <span id="Comparison_of_Algorithm_Performance_on_Model_vs._Emerging_Genomes" class="mw-headline">Comparison of Algorithm Performance on Model vs. Emerging Genomes</span>
+#### Comparison of Algorithm Performance on Model vs. Emerging Genomes
 
 If you have ever looked at comparisons of gene predictor performance on
 classic model organisms such as _C. elegans_ you would conclude that _ab
@@ -365,50 +350,3 @@ MAKER will:
 - Identify legacy annotation most consistent with new data
 - Automatically revise it in light of new data
 - If no existing annotation, create new one
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/MWAS_Tutorial" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 22:03 on 3 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">119,997 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

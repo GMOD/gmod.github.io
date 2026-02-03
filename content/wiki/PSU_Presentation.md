@@ -1,23 +1,7 @@
 ---
 title: "PSU Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">PSU Presentation</span>
-
-
-
-
-
-
-
+# PSU Presentation
 
 
 This Wiki page is an edited version of
@@ -25,27 +9,21 @@ This Wiki page is an edited version of
 title="PSU.pdf">Chinmay's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Sanger
   Pathogen Sequencing Unit
   (PSU)</span>](#Sanger_Pathogen_Sequencing_Unit_.28PSU.29)
-- [<span class="tocnumber">2</span> <span class="toctext">Technical -
-  Connections</span>](#Technical_-_Connections)
-- [<span class="tocnumber">3</span> <span class="toctext">Technical -
-  Code Generation</span>](#Technical_-_Code_Generation)
-- [<span class="tocnumber">4</span> <span class="toctext">Technical -
-  Transactions</span>](#Technical_-_Transactions)
-- [<span class="tocnumber">5</span> <span class="toctext">Problems 1, 2,
-  & 3</span>](#Problems_1.2C_2.2C_.26_3)
-- [<span class="tocnumber">6</span> <span class="toctext">Demo – Sample
-  Problem</span>](#Demo_.E2.80.93_Sample_Problem)
+- [Technical -
+  Connections](#Technical_-_Connections)
+- [Technical -
+  Code Generation](#Technical_-_Code_Generation)
+- [Technical -
+  Transactions](#Technical_-_Transactions)
+- [Problems 1, 2,
+  & 3](#Problems_1.2C_2.2C_.26_3)
+- [Demo – Sample
+  Problem](#Demo_.E2.80.93_Sample_Problem)
 
 
-
-##### <span id="Sanger_Pathogen_Sequencing_Unit_.28PSU.29" class="mw-headline">Sanger Pathogen Sequencing Unit (PSU)</span>
+##### Sanger Pathogen Sequencing Unit (PSU)
 
 - GeneDB is the organism data and annotation database for the Pathogen
   Sequencing Unit (PSU) at the Sanger Institute, UK
@@ -55,7 +33,7 @@ title="PSU.pdf">Chinmay's presentation</a>.
 - We've implemented a common interface with the two leading open source
   frameworks: Hibernate and iBatis
 
-##### <span id="Technical_-_Connections" class="mw-headline">Technical - Connections</span>
+##### Technical - Connections
 
 Connections for the **Hibernate** engine are configured in the Spring
 configuration file
@@ -91,18 +69,18 @@ configuration file
 - select from scrollable list of feature with residues (organisms in
   separate Postgres schemas) what to open in Artemis
 
-##### <span id="Technical_-_Code_Generation" class="mw-headline">Technical - Code Generation</span>
+##### Technical - Code Generation
 
 - The shared interface and hibernate implementation were originally
   generated
 - There’s no explicit code generation (although the Spring and Hibernate
   runtimes may use them behinds the scenes)
 
-##### <span id="Technical_-_Transactions" class="mw-headline">Technical - Transactions</span>
+##### Technical - Transactions
 
 - Transactions are fully supported
 
-##### <span id="Problems_1.2C_2.2C_.26_3" class="mw-headline">Problems 1, 2, & 3</span>
+##### Problems 1, 2, & 3
 
 Creating a gene
 
@@ -166,7 +144,7 @@ private Feature createExon(String name, Feature gene, int min, int max, Timestam
 ```
 
 
-##### <span id="Demo_.E2.80.93_Sample_Problem" class="mw-headline">Demo – Sample Problem</span>
+##### Demo – Sample Problem
 
 Simple web page to demonstrate displaying a basic feature
 
@@ -199,89 +177,7 @@ cellpadding="4">
 ```
 
 
-
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Middleware
   Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/PSU_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">19,221 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,24 +1,10 @@
 ---
 title: "Date"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Date</span>
-
-
-
-
+# Date
 
 
 <span id="SMWResults"></span>
-
 
 
 ## Properties of type "Date"
@@ -31,83 +17,4 @@ Showing 1 property using this type.
   date](../Property%253ARelease_date "Property:Release date")
 
 
-
-
-Retrieved from "[http://gmod.org/wiki/Special%253ATypes/Date](Date)"
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-- <span id="ca-nstab-special">[Special
-  page](Date "This is a special page, you cannot edit the page itself")</span>
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-
-
-
-
-<!-- -->
-
-
-
-
+Retrieved from "[http://gmod.org/wiki/Special%253ATypes/Date](/wiki/Date)"

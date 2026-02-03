@@ -1,47 +1,22 @@
 ---
 title: "Public Chado Databases"
 ---
+# Public Chado Databases
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Public Chado Databases</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Public Chado
   Genome Database
   Releases</span>](#Public_Chado_Genome_Database_Releases)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Chado
-    PostgreSQL Dumps</span>](#Chado_PostgreSQL_Dumps)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Direct
-    Chado Access</span>](#Direct_Chado_Access)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">FlyBase</span>](#FlyBase)
-    - [<span class="tocnumber">1.2.2</span>
-      <span class="toctext">GeneDB</span>](#GeneDB)
+  - [Chado
+    PostgreSQL Dumps](#Chado_PostgreSQL_Dumps)
+  - [Direct
+    Chado Access](#Direct_Chado_Access)
+    - [FlyBase](#FlyBase)
+    - [GeneDB](#GeneDB)
 
 
+# Public <a href="Chado" class="mw-redirect" title="Chado">Chado</a> <a href="Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases
 
-# <span id="Public_Chado_Genome_Database_Releases" class="mw-headline">Public <a href="Chado" class="mw-redirect" title="Chado">Chado</a> <a href="Genome" class="mw-redirect" title="Genome">Genome</a> Database Releases</span>
-
-## <span id="Chado_PostgreSQL_Dumps" class="mw-headline">Chado [PostgreSQL](PostgreSQL "PostgreSQL") Dumps</span>
+## Chado [PostgreSQL](PostgreSQL "PostgreSQL") Dumps
 
 These projects provide
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database
@@ -71,17 +46,17 @@ consider adding an export dump file.
 
      pg_dump -f mychado.dump mychado
 
-## <span id="Direct_Chado_Access" class="mw-headline">Direct <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Access</span>
+## Direct <a href="Chado" class="mw-redirect" title="Chado">Chado</a> Access
 
-### <span id="FlyBase" class="mw-headline"><a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a></span>
+### <a href="http://flybase.org" class="external text"
+rel="nofollow">FlyBase</a>
 
 - <a
   href="https://flybase.github.io/docs/chado/index#public-database#public-database"
   class="external text" rel="nofollow">FlyBase public chado database</a>
 
-### <span id="GeneDB" class="mw-headline"><a href="http://www.genedb.org" class="external text"
-rel="nofollow">GeneDB</a></span>
+### <a href="http://www.genedb.org" class="external text"
+rel="nofollow">GeneDB</a>
 
 The following connection information is for the preliminary GeneDB Chado
 database. This database currently contains Plasmodium genomes; more
@@ -97,92 +72,3 @@ database, which may change or disappear without warning.
 e.g.
 
     psql -h db.genedb.org -U genedb_ro snapshot
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [ParameciumDB](Category%253AParameciumDB "Category%253AParameciumDB")
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-- [SGD](Category%253ASGD "Category%253ASGD")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Public_Chado_Databases" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 14:56 on 25 June
-  2019.</span>
-<!-- - <span id="footer-info-viewcount">32,469 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

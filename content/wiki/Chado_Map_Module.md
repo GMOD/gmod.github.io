@@ -1,28 +1,22 @@
 ---
 title: "Chado Map Module"
 ---
-<span id="top"></span>
+# Chado Map Module
 
-# <span dir="auto">Chado Map Module</span>
+  Introduction](#Introduction)
+  - [To
+    Do](#To_Do)
+  - [Tables](#Tables)
+  - [Table:
+    featuremap](#Table:_featuremap)
+  - [Table:
+    featuremap_pub](#Table:_featuremap_pub)
+  - [Table:
+    featurepos](#Table:_featurepos)
+  - [Table:
+    featurerange](#Table:_featurerange)
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">To
-    Do</span>](#To_Do)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Table:
-    featuremap</span>](#Table:_featuremap)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Table:
-    featuremap_pub</span>](#Table:_featuremap_pub)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Table:
-    featurepos</span>](#Table:_featurepos)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Table:
-    featurerange</span>](#Table:_featurerange)
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 Note: this module is all due for revision.
 
@@ -33,7 +27,7 @@ the left or right of a feature (but not within it):
            ------------------------------------------------- map
                    |------|         |----------|   features to map wrt
 
-### <span id="To_Do" class="mw-headline">To Do</span>
+### To Do
 
 - Determine how we would map the 3' end of the feature-to-map.
 - Get a comprehensive set of mapping use-cases.
@@ -42,9 +36,9 @@ the left or right of a feature (but not within it):
     cases where a breakpoint interrupts a gene? Would this be an example
     of the problematic case above?
 
-## <span id="Tables" class="mw-headline">Tables</span>
+## Tables
 
-## <span id="Table:_featuremap" class="mw-headline">Table: featuremap</span>
+## Table: featuremap
 
 | F-Key                                               | Name          | Type                   | Description   |
 | --------------------------------------------------- | ------------- | ---------------------- | ------------- |
@@ -58,18 +52,12 @@ featuremap Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [featuremap_pub](Chado_Tables#Table:_featuremap_pub "Chado Tables")
-
-<!-- -->
-
 - [featurepos](Chado_Tables#Table:_featurepos "Chado Tables")
-
-<!-- -->
-
 - [featurerange](Chado_Tables#Table:_featurerange "Chado Tables")
 
 ---
 
-## <span id="Table:_featuremap_pub" class="mw-headline">Table: featuremap_pub</span>
+## Table: featuremap_pub
 
 | F-Key                                                       | Name              | Type    | Description   |
 | ----------------------------------------------------------- | ----------------- | ------- | ------------- |
@@ -81,7 +69,7 @@ featuremap_pub Structure
 
 ---
 
-## <span id="Table:_featurepos" class="mw-headline">Table: featurepos</span>
+## Table: featurepos
 
 <table data-border="1" data-cellpadding="3">
 <caption>featurepos Structure</caption>
@@ -143,7 +131,7 @@ featurepos Structure
 
 ---
 
-## <span id="Table:_featurerange" class="mw-headline">Table: featurerange</span>
+## Table: featurerange
 
 In cases where the start and end of a mapped feature is a range,
 leftendf and rightstartf are populated. leftstartf_id, leftendf_id,
@@ -229,51 +217,3 @@ title="Chado Tables">feature</a></p></td>
 featurerange Structure
 
 ---
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Map_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 04:38 on 18 February 2015.</span>
-<!-- - <span id="footer-info-viewcount">52,095 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

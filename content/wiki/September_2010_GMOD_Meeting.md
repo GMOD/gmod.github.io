@@ -1,9 +1,7 @@
 ---
 title: "September 2010 GMOD Meeting"
 ---
-<span id="top"></span>
-
-# <span dir="auto">September 2010 GMOD Meeting</span>
+# September 2010 GMOD Meeting
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
@@ -71,220 +69,179 @@ what's coming up, and what others are doing. The [January 2010 GMOD
 Meeting](January_2010_GMOD_Meeting "January 2010 GMOD Meeting") was the
 previous event. The next meeting is likely to be held in spring 2011.
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Monday, 13
-    September</span>](#Monday.2C_13_September)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Tuesday,
-    14 September</span>](#Tuesday.2C_14_September)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Wednesday
+  Agenda](#Agenda)
+  - [Monday, 13
+    September](#Monday.2C_13_September)
+  - [Tuesday,
+    14 September](#Tuesday.2C_14_September)
+  - [Wednesday
     & Thursday, 15-16
-    September</span>](#Wednesday_.26_Thursday.2C_15-16_September)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Presentations</span>](#Presentations)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">By
-    Topic</span>](#By_Topic)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">The State
-    of GMOD</span>](#The_State_of_GMOD)
-    - [<span class="tocnumber">2.2.1</span> <span class="toctext">What's
-      New</span>](#What.27s_New)
-    - [<span class="tocnumber">2.2.2</span> <span class="toctext">Next
-      GMOD Meeting?</span>](#Next_GMOD_Meeting.3F)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Help Desk
-    Update</span>](#Help_Desk_Update)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">Mailing List
-      Archives</span>](#Mailing_List_Archives)
-    - [<span class="tocnumber">2.3.2</span> <span class="toctext">GMOD
-      Membership Requirements</span>](#GMOD_Membership_Requirements)
-    - [<span class="tocnumber">2.3.3</span> <span class="toctext">GMOD
-      Promotion</span>](#GMOD_Promotion)
-    - [<span class="tocnumber">2.3.4</span> <span class="toctext">GMOD
-      Logo Program</span>](#GMOD_Logo_Program)
-    - [<span class="tocnumber">2.3.5</span> <span class="toctext">2010
-      GMOD Community Survey</span>](#2010_GMOD_Community_Survey)
-    - [<span class="tocnumber">2.3.6</span>
-      <span class="toctext">Events</span>](#Events)
-    - [<span class="tocnumber">2.3.7</span>
-      <span class="toctext">JBrowse
-      Development</span>](#JBrowse_Development)
-    - [<span class="tocnumber">2.3.8</span>
-      <span class="toctext">JBrowse Grant
-      Proposal</span>](#JBrowse_Grant_Proposal)
-    - [<span class="tocnumber">2.3.9</span> <span class="toctext">New
-      Components</span>](#New_Components)
-    - [<span class="tocnumber">2.3.10</span> <span class="toctext">Some
-      Interesting Documents</span>](#Some_Interesting_Documents)
-    - [<span class="tocnumber">2.3.11</span> <span class="toctext">GMOD
-      on the Web</span>](#GMOD_on_the_Web)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">The Open
+    September](#Wednesday_.26_Thursday.2C_15-16_September)
+- [Presentations](#Presentations)
+  - [By
+    Topic](#By_Topic)
+  - [The State
+    of GMOD](#The_State_of_GMOD)
+    - [What's
+      New](#What.27s_New)
+    - [Next
+      GMOD Meeting?](#Next_GMOD_Meeting.3F)
+  - [Help Desk
+    Update](#Help_Desk_Update)
+    - [Mailing List
+      Archives](#Mailing_List_Archives)
+    - [GMOD
+      Membership Requirements](#GMOD_Membership_Requirements)
+    - [GMOD
+      Promotion](#GMOD_Promotion)
+    - [GMOD
+      Logo Program](#GMOD_Logo_Program)
+    - [2010
+      GMOD Community Survey](#2010_GMOD_Community_Survey)
+    - [Events](#Events)
+    - [JBrowse
+      Development](#JBrowse_Development)
+    - [JBrowse Grant
+      Proposal](#JBrowse_Grant_Proposal)
+    - [New
+      Components](#New_Components)
+    - [Some
+      Interesting Documents](#Some_Interesting_Documents)
+    - [GMOD
+      on the Web](#GMOD_on_the_Web)
+  - [The Open
     Microscopy Environment: Open Informatics for Biological
-    Imaging</span>](#The_Open_Microscopy_Environment:_Open_Informatics_for_Biological_Imaging)
-    - [<span class="tocnumber">2.4.1</span> <span class="toctext">Data
-      Standards and Formats</span>](#Data_Standards_and_Formats)
-    - [<span class="tocnumber">2.4.2</span>
-      <span class="toctext">Imaging Culture and
-      Sustainability</span>](#Imaging_Culture_and_Sustainability)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">PSICQUIC:
+    Imaging](#The_Open_Microscopy_Environment:_Open_Informatics_for_Biological_Imaging)
+    - [Data
+      Standards and Formats](#Data_Standards_and_Formats)
+    - [Imaging Culture and
+      Sustainability](#Imaging_Culture_and_Sustainability)
+  - [PSICQUIC:
     The PSI Common QUery
-    Interface</span>](#PSICQUIC:_The_PSI_Common_QUery_Interface)
-    - [<span class="tocnumber">2.5.1</span>
-      <span class="toctext">PSICQUIC Web
-      Services</span>](#PSICQUIC_Web_Services)
-    - [<span class="tocnumber">2.5.2</span>
-      <span class="toctext">Formats</span>](#Formats)
-    - [<span class="tocnumber">2.5.3</span>
-      <span class="toctext">MIQL</span>](#MIQL)
-    - [<span class="tocnumber">2.5.4</span>
-      <span class="toctext">Creating a PSICQUIC
-      Service</span>](#Creating_a_PSICQUIC_Service)
-    - [<span class="tocnumber">2.5.5</span>
-      <span class="toctext">PSICQUIC
-      Applications</span>](#PSICQUIC_Applications)
-    - [<span class="tocnumber">2.5.6</span>
-      <span class="toctext">PSICQUIC
-      Development</span>](#PSICQUIC_Development)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">MolGenIS
-    and XGAP</span>](#MolGenIS_and_XGAP)
-    - [<span class="tocnumber">2.6.1</span>
-      <span class="toctext">MolGenIS</span>](#MolGenIS)
-    - [<span class="tocnumber">2.6.2</span>
-      <span class="toctext">XGAP</span>](#XGAP)
-    - [<span class="tocnumber">2.6.3</span> <span class="toctext">GMOD
-      Link Ideas</span>](#GMOD_Link_Ideas)
-    - [<span class="tocnumber">2.6.4</span>
-      <span class="toctext">OntoCAT</span>](#OntoCAT)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">The GMOD
+    Interface](#PSICQUIC:_The_PSI_Common_QUery_Interface)
+    - [PSICQUIC Web
+      Services](#PSICQUIC_Web_Services)
+    - [Formats](#Formats)
+    - [MIQL](#MIQL)
+    - [Creating a PSICQUIC
+      Service](#Creating_a_PSICQUIC_Service)
+    - [PSICQUIC
+      Applications](#PSICQUIC_Applications)
+    - [PSICQUIC
+      Development](#PSICQUIC_Development)
+  - [MolGenIS
+    and XGAP](#MolGenIS_and_XGAP)
+    - [MolGenIS](#MolGenIS)
+    - [XGAP](#XGAP)
+    - [GMOD
+      Link Ideas](#GMOD_Link_Ideas)
+    - [OntoCAT](#OntoCAT)
+  - [The GMOD
     Chado Natural Diversity
-    Module</span>](#The_GMOD_Chado_Natural_Diversity_Module)
-    - [<span class="tocnumber">2.7.1</span>
-      <span class="toctext">Motivation</span>](#Motivation)
-    - [<span class="tocnumber">2.7.2</span>
-      <span class="toctext">Developmental
-      History</span>](#Developmental_History)
-    - [<span class="tocnumber">2.7.3</span>
-      <span class="toctext">Schema</span>](#Schema)
-    - [<span class="tocnumber">2.7.4</span> <span class="toctext">CV
-      Terms and APIs</span>](#CV_Terms_and_APIs)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Cosmic
+    Module](#The_GMOD_Chado_Natural_Diversity_Module)
+    - [Motivation](#Motivation)
+    - [Developmental
+      History](#Developmental_History)
+    - [Schema](#Schema)
+    - [CV
+      Terms and APIs](#CV_Terms_and_APIs)
+  - [Cosmic
     GBrowse: Visualising cancer mutations in genomic
-    context</span>](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context)
-    - [<span class="tocnumber">2.8.1</span>
-      <span class="toctext">Data</span>](#Data)
-    - [<span class="tocnumber">2.8.2</span>
-      <span class="toctext">Configuration and
-      Setup</span>](#Configuration_and_Setup)
-    - [<span class="tocnumber">2.8.3</span>
-      <span class="toctext">Display</span>](#Display)
-    - [<span class="tocnumber">2.8.4</span> <span class="toctext">Future
-      Development</span>](#Future_Development)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">GMOD
+    context](#Cosmic_GBrowse:_Visualising_cancer_mutations_in_genomic_context)
+    - [Data](#Data)
+    - [Configuration and
+      Setup](#Configuration_and_Setup)
+    - [Display](#Display)
+    - [Future
+      Development](#Future_Development)
+  - [GMOD
     Projects at the Center for Genomics and
-    Bioinformatics</span>](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics)
-    - [<span class="tocnumber">2.9.1</span> <span class="toctext">A
+    Bioinformatics](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics)
+    - [A
       Simple Web Interface for Configuring GBrowse:
-      WebGBrowse</span>](#A_Simple_Web_Interface_for_Configuring_GBrowse:_WebGBrowse)
-    - [<span class="tocnumber">2.9.2</span>
-      <span class="toctext">Web-based Bioinformatics Pipelines for
+      WebGBrowse](#A_Simple_Web_Interface_for_Configuring_GBrowse:_WebGBrowse)
+    - [Web-based Bioinformatics Pipelines for
       Biologists:
-      ISGA</span>](#Web-based_Bioinformatics_Pipelines_for_Biologists:_ISGA)
-      - [<span class="tocnumber">2.9.2.1</span>
-        <span class="toctext">Why develop ISGA as a separate
-        package?</span>](#Why_develop_ISGA_as_a_separate_package.3F)
-      - [<span class="tocnumber">2.9.2.2</span>
-        <span class="toctext">Present and
-        Future</span>](#Present_and_Future)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">GMOD RPC
+      ISGA](#Web-based_Bioinformatics_Pipelines_for_Biologists:_ISGA)
+      - [Why develop ISGA as a separate
+        package?](#Why_develop_ISGA_as_a_separate_package.3F)
+      - [Present and
+        Future](#Present_and_Future)
+  - [GMOD RPC
     API: The almost RESTful GMOD
-    API</span>](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API)
-    - [<span class="tocnumber">2.10.1</span> <span class="toctext">Perl
-      Implementation</span>](#Perl_Implementation)
-      - [<span class="tocnumber">2.10.1.1</span>
-        <span class="toctext">Goals</span>](#Goals)
-    - [<span class="tocnumber">2.10.2</span> <span class="toctext">How
-      to participate</span>](#How_to_participate)
-    - [<span class="tocnumber">2.10.3</span>
-      <span class="toctext">Discussion</span>](#Discussion)
-  - [<span class="tocnumber">2.11</span> <span class="toctext">Overview
+    API](#GMOD_RPC_API:_The_almost_RESTful_GMOD_API)
+    - [Perl
+      Implementation](#Perl_Implementation)
+      - [Goals](#Goals)
+    - [How
+      to participate](#How_to_participate)
+    - [Discussion](#Discussion)
+  - [Overview
     of current resources and update on DAS Meeting Cambridge
-    2010</span>](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010)
-    - [<span class="tocnumber">2.11.1</span> <span class="toctext">Some
-      DAS 1.5/1.6 Commands</span>](#Some_DAS_1.5.2F1.6_Commands)
-    - [<span class="tocnumber">2.11.2</span> <span class="toctext">Why
-      use DAS 1.6 over 1.5?</span>](#Why_use_DAS_1.6_over_1.5.3F)
-    - [<span class="tocnumber">2.11.3</span> <span class="toctext">Easy
-      DAS</span>](#Easy_DAS)
-    - [<span class="tocnumber">2.11.4</span> <span class="toctext">1.6E
-      Proposals</span>](#1.6E_Proposals)
-    - [<span class="tocnumber">2.11.5</span> <span class="toctext">DAS
-      Clients</span>](#DAS_Clients)
-  - [<span class="tocnumber">2.12</span>
-    <span class="toctext">InterMine: new Mines and new
-    features</span>](#InterMine:_new_Mines_and_new_features)
-    - [<span class="tocnumber">2.12.1</span> <span class="toctext">Mines
-      for MODs</span>](#Mines_for_MODs)
-    - [<span class="tocnumber">2.12.2</span>
-      <span class="toctext">metabolicMine</span>](#metabolicMine)
-    - [<span class="tocnumber">2.12.3</span>
-      <span class="toctext">InterMine 0.94
-      Release</span>](#InterMine_0.94_Release)
-  - [<span class="tocnumber">2.13</span>
-    <span class="toctext">Literature Curation in
-    GMOD</span>](#Literature_Curation_in_GMOD)
-  - [<span class="tocnumber">2.14</span> <span class="toctext">Towards a
+    2010](#Overview_of_current_resources_and_update_on_DAS_Meeting_Cambridge_2010)
+    - [Some
+      DAS 1.5/1.6 Commands](#Some_DAS_1.5.2F1.6_Commands)
+    - [Why
+      use DAS 1.6 over 1.5?](#Why_use_DAS_1.6_over_1.5.3F)
+    - [Easy
+      DAS](#Easy_DAS)
+    - [1.6E
+      Proposals](#1.6E_Proposals)
+    - [DAS
+      Clients](#DAS_Clients)
+  - [InterMine: new Mines and new
+    features](#InterMine:_new_Mines_and_new_features)
+    - [Mines
+      for MODs](#Mines_for_MODs)
+    - [metabolicMine](#metabolicMine)
+    - [InterMine 0.94
+      Release](#InterMine_0.94_Release)
+  - [Literature Curation in
+    GMOD](#Literature_Curation_in_GMOD)
+  - [Towards a
     GO Annotation Tool: Curation Accelerator
-    Software</span>](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software)
-    - [<span class="tocnumber">2.14.1</span> <span class="toctext">The
-      Challenge</span>](#The_Challenge)
-    - [<span class="tocnumber">2.14.2</span> <span class="toctext">The
-      Tool</span>](#The_Tool)
-  - [<span class="tocnumber">2.15</span>
-    <span class="toctext">BioPivot</span>](#BioPivot)
-    - [<span class="tocnumber">2.15.1</span> <span class="toctext">Deep
-      Zoom Technology</span>](#Deep_Zoom_Technology)
-  - [<span class="tocnumber">2.16</span> <span class="toctext">CRAWL
+    Software](#Towards_a_GO_Annotation_Tool:_Curation_Accelerator_Software)
+    - [The
+      Challenge](#The_Challenge)
+    - [The
+      Tool](#The_Tool)
+  - [BioPivot](#BioPivot)
+    - [Deep
+      Zoom Technology](#Deep_Zoom_Technology)
+  - [CRAWL
     (Chado RESTful Access Web-service
-    Layer)</span>](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29)
-    - [<span class="tocnumber">2.16.1</span>
-      <span class="toctext">Challenges</span>](#Challenges)
-    - [<span class="tocnumber">2.16.2</span>
-      <span class="toctext">Solutions</span>](#Solutions)
-    - [<span class="tocnumber">2.16.3</span>
-      <span class="toctext">Collaborative Interfaces and Rich Internet
-      Applications</span>](#Collaborative_Interfaces_and_Rich_Internet_Applications)
-    - [<span class="tocnumber">2.16.4</span> <span class="toctext">The
-      way of CRAWL</span>](#The_way_of_CRAWL)
-    - [<span class="tocnumber">2.16.5</span> <span class="toctext">GMOD
-      Rest</span>](#GMOD_Rest)
-  - [<span class="tocnumber">2.17</span> <span class="toctext">Lessons
+    Layer)](#CRAWL_.28Chado_RESTful_Access_Web-service_Layer.29)
+    - [Challenges](#Challenges)
+    - [Solutions](#Solutions)
+    - [Collaborative Interfaces and Rich Internet
+      Applications](#Collaborative_Interfaces_and_Rich_Internet_Applications)
+    - [The
+      way of CRAWL](#The_way_of_CRAWL)
+    - [GMOD
+      Rest](#GMOD_Rest)
+  - [Lessons
     from the Apache
-    Community</span>](#Lessons_from_the_Apache_Community)
-  - [<span class="tocnumber">2.18</span> <span class="toctext">Lightning
-    Talks</span>](#Lightning_Talks)
-    - [<span class="tocnumber">2.18.1</span>
-      <span class="toctext">GBrowse 2 and JBrowse
-      Features</span>](#GBrowse_2_and_JBrowse_Features)
-    - [<span class="tocnumber">2.18.2</span> <span class="toctext">CpG
+    Community](#Lessons_from_the_Apache_Community)
+  - [Lightning
+    Talks](#Lightning_Talks)
+    - [GBrowse 2 and JBrowse
+      Features](#GBrowse_2_and_JBrowse_Features)
+    - [CpG
       Island and STR Annotator
-      Plugins</span>](#CpG_Island_and_STR_Annotator_Plugins)
-    - [<span class="tocnumber">2.18.3</span> <span class="toctext">GMOD
+      Plugins](#CpG_Island_and_STR_Annotator_Plugins)
+    - [GMOD
       Sustainability and
-      Organization</span>](#GMOD_Sustainability_and_Organization)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-- [<span class="tocnumber">5</span> <span class="toctext">Sponsor:
+      Organization](#GMOD_Sustainability_and_Organization)
+- [Participants](#Participants)
+- [Logistics](#Logistics)
+- [Sponsor:
   Cambridge Computational Biology
-  Institute</span>](#Sponsor:_Cambridge_Computational_Biology_Institute)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-- [<span class="tocnumber">7</span> <span class="toctext">The Next
-  Meeting</span>](#The_Next_Meeting)
+  Institute](#Sponsor:_Cambridge_Computational_Biology_Institute)
+- [Feedback](#Feedback)
+- [The Next
+  Meeting](#The_Next_Meeting)
 
-# <span id="Agenda" class="mw-headline">Agenda</span>
+# Agenda
 
 <a href="http://gre.lifesci.dundee.ac.uk/staff/jason_swedlow.html"
 rel="nofollow" title="Jason Swedlow"><img
@@ -325,7 +282,7 @@ rel="nofollow">University of Dundee</a>. Jason's research focuses on
 mechanisms and regulation of chromosome segregation during mitotic cell
 division.
 
-## <span id="Monday.2C_13_September" class="mw-headline">Monday, 13 September</span>
+## Monday, 13 September
 
 | Time                                                                                       | Topic                                               | Presenter(s)                                           | Links                                                                                                                            |
 | ------------------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -361,7 +318,7 @@ class="internal" title="CosMicGBrowseSept2010.ppt">PPT</a>, [Summary](#Cosmic_GB
 class="internal" title="ISGAWebGBrowseSept2010.pdf">PDF</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3f/ISGAWebGBrowseSept2010.pptx"
 class="internal" title="ISGAWebGBrowseSept2010.pptx">PPT</a>, [Summary](#GMOD_Projects_at_the_Center_for_Genomics_and_Bioinformatics) |
 
-## <span id="Tuesday.2C_14_September" class="mw-headline">Tuesday, 14 September</span>
+## Tuesday, 14 September
 
 | Time                                                                                                           | Topic                                                                                                                    | Presenter(s)                                          | Links                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -395,7 +352,7 @@ class="external text" rel="nofollow">Apache Software Foundation</a> | | [Summary
 | | [GMOD Sustainability and Organization](#GMOD_Sustainability_and_Organization) | [Dave Clements](User%253AClements "User%253AClements") | [Summary](#GMOD_Sustainability_and_Organization) |
 | 15:15 | Break | | |
 
-## <span id="Wednesday_.26_Thursday.2C_15-16_September" class="mw-headline">Wednesday & Thursday, 15-16 September</span>
+## Wednesday & Thursday, 15-16 September
 
 [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") continued after
 the GMOD meeting, starting with the [Satellite
@@ -411,11 +368,11 @@ Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 20
 See [GMOD Europe 2010](GMOD_Europe_2010#Events "GMOD Europe 2010") for a
 complete schedule.
 
-# <span id="Presentations" class="mw-headline">Presentations</span>
+# Presentations
 
 Presentations spanned two days and covered a wide variety of topics.
 
-## <span id="By_Topic" class="mw-headline">By Topic</span>
+## By Topic
 
 The talks can be roughly categorized:
 
@@ -572,7 +529,7 @@ of current resources and update on DAS Meeting Cambridge 2010</a></li>
 </tbody>
 </table>
 
-## <span id="The_State_of_GMOD" class="mw-headline">The State of GMOD</span>
+## The State of GMOD
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c0/ScottSept2010.jpg" width="100"
 height="135" alt="Scott Cain" />](User%253AScott "Scott Cain")
@@ -598,7 +555,7 @@ GMOD is used by
 - all over the world
 - across the tree of life
 
-### <span id="What.27s_New" class="mw-headline">What's New</span>
+### What's New
 
 [GBrowse](GBrowse.1 "GBrowse")
 
@@ -715,7 +672,7 @@ GMOD is used by
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a>,
   [GFF3](GFF3 "GFF3"), GenBank, GAME XML
 
-### <span id="Next_GMOD_Meeting.3F" class="mw-headline">Next [GMOD Meeting](Meetings "Meetings")?</span>
+### Next [GMOD Meeting](Meetings "Meetings")?
 
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1b/GMODAmericas2011Logo.jpg/100px-GMODAmericas2011Logo.jpg.png"
@@ -735,7 +692,7 @@ at <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a>, in Durham, North Carolina, United States, as
 part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011").**
 
-## <span id="Help_Desk_Update" class="mw-headline">[Help Desk](GMOD_Help_Desk "GMOD Help Desk") Update</span>
+## [Help Desk](GMOD_Help_Desk "GMOD Help Desk") Update
 
 [Dave Clements](User%253AClements "User%253AClements"),
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/bf/HelpDeskSept2010.pdf" class="internal"
@@ -743,7 +700,7 @@ title="HelpDeskSept2010.pdf">PDF</a>, <a
 href="ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODSeptember/HelpDeskSept2010.ppt"
 class="external text" rel="nofollow">PPT</a>
 
-### <span id="Mailing_List_Archives" class="mw-headline">Mailing List Archives</span>
+### Mailing List Archives
 
 [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") are all
 over. Many are hosted at SourceForge, but several are elsewhere (EBI,
@@ -758,7 +715,7 @@ rel="nofollow">searchable hierarchy at Nabble</a>. Nabble has a
 functional search capability and you can now search all lists, or just a
 single list.
 
-### <span id="GMOD_Membership_Requirements" class="mw-headline">[GMOD Membership](GMOD_Membership "GMOD Membership") Requirements</span>
+### [GMOD Membership](GMOD_Membership "GMOD Membership") Requirements
 
 [GMOD's requirements for software to join
 GMOD](GMOD_Membership "GMOD Membership") were codified in February 2010,
@@ -790,7 +747,7 @@ rel="nofollow">OSI approved license</a>. However, some of those licenses
 are not compatible with each other, meaning they such components can't
 be bundled together.
 
-### <span id="GMOD_Promotion" class="mw-headline">[GMOD Promotion](GMOD_Promotion "GMOD Promotion")</span>
+### [GMOD Promotion](GMOD_Promotion "GMOD Promotion")
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c2/PoweredByGMOD150.png" width="150"
 height="71" alt="Powered by GMOD" />](Powered_by_GMOD "Powered by GMOD")
@@ -827,7 +784,7 @@ How?
 The [GMOD Promotion](GMOD_Promotion "GMOD Promotion") page launched in
 July 2010.
 
-### <span id="GMOD_Logo_Program" class="mw-headline">[GMOD Logo Program](GMOD_Logo_Program "GMOD Logo Program")</span>
+### [GMOD Logo Program](GMOD_Logo_Program "GMOD Logo Program")
 
 |     |     |     |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -870,7 +827,7 @@ selected logos.
 
 We might do this again in 2011.
 
-### <span id="2010_GMOD_Community_Survey" class="mw-headline">2010 GMOD Community Survey</span>
+### 2010 GMOD Community Survey
 
 The [2008 GMOD Community
 Survey](2008_GMOD_Community_Survey "2008 GMOD Community Survey") covered
@@ -885,7 +842,7 @@ GMOD users what the larger community is doing.
 
 Look for the 2010 survey in October.
 
-### <span id="Events" class="mw-headline">Events</span>
+### Events
 
 [Satellite
 Meetings](Satellite_Meetings_-_GMOD_Europe_2010 "Satellite Meetings - GMOD Europe 2010")!
@@ -920,45 +877,3 @@ Summer school sessions become online tutorials that include starting and
 ending VMware images, step by step instructions, and example datasets.
 
 Other [Upcoming Events of Note](Calendar "Calendar")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/September_2010_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 17:31 on 30 November 2012.</span>
-<!-- - <span id="footer-info-viewcount">645,605 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

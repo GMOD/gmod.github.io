@@ -1,129 +1,91 @@
 ---
 title: "Tripal Developer's Handbook"
 ---
+# Tripal Developer's Handbook
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Tripal Developer's Handbook</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">Using the
-  Drupal Devel Module</span>](#Using_the_Drupal_Devel_Module)
-- [<span class="tocnumber">3</span> <span class="toctext">Theming
-  API</span>](#Theming_API)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Skills
-    Required</span>](#Skills_Required)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Best
-    Practices</span>](#Best_Practices)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Brief
+  Introduction](#Introduction)
+- [Using the
+  Drupal Devel Module](#Using_the_Drupal_Devel_Module)
+- [Theming
+  API](#Theming_API)
+  - [Skills
+    Required](#Skills_Required)
+  - [Best
+    Practices](#Best_Practices)
+  - [Brief
     Introduction to Drupal
-    Theming</span>](#Brief_Introduction_to_Drupal_Theming)
-  - [<span class="tocnumber">3.4</span>
-    <span class="toctext">Introduction to the Tripal
-    Theme</span>](#Introduction_to_the_Tripal_Theme)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">Structure
+    Theming](#Brief_Introduction_to_Drupal_Theming)
+  - [Introduction to the Tripal
+    Theme](#Introduction_to_the_Tripal_Theme)
+  - [Structure
     of the Tripal Theme
-    Directory</span>](#Structure_of_the_Tripal_Theme_Directory)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">Theming
-    Content Types</span>](#Theming_Content_Types)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">Where To
-    Put a Template File</span>](#Where_To_Put_a_Template_File)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">Layout of
-    a Tripal Node Template</span>](#Layout_of_a_Tripal_Node_Template)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">Dissecting
+    Directory](#Structure_of_the_Tripal_Theme_Directory)
+  - [Theming
+    Content Types](#Theming_Content_Types)
+  - [Where To
+    Put a Template File](#Where_To_Put_a_Template_File)
+  - [Layout of
+    a Tripal Node Template](#Layout_of_a_Tripal_Node_Template)
+  - [Dissecting
     a Tripal Node Template
-    File</span>](#Dissecting_a_Tripal_Node_Template_File)
-    - [<span class="tocnumber">3.9.1</span>
-      <span class="toctext">Template Basics</span>](#Template_Basics)
-    - [<span class="tocnumber">3.9.2</span> <span class="toctext">Layout
-      Sections</span>](#Layout_Sections)
-    - [<span class="tocnumber">3.9.3</span>
-      <span class="toctext">Subtemplates</span>](#Subtemplates)
-      - [<span class="tocnumber">3.9.3.1</span>
-        <span class="toctext">Description of a
-        Subtemplate</span>](#Description_of_a_Subtemplate)
-      - [<span class="tocnumber">3.9.3.2</span>
-        <span class="toctext">Adding a New
-        Subtemplate</span>](#Adding_a_New_Subtemplate)
-    - [<span class="tocnumber">3.9.4</span>
-      <span class="toctext">Template
-      JavaScript</span>](#Template_JavaScript)
-    - [<span class="tocnumber">3.9.5</span>
-      <span class="toctext">Accessing Chado
-      Data</span>](#Accessing_Chado_Data)
-      - [<span class="tocnumber">3.9.5.1</span>
-        <span class="toctext">Accessing Large Text
-        Fields</span>](#Accessing_Large_Text_Fields)
-      - [<span class="tocnumber">3.9.5.2</span>
-        <span class="toctext">Accessing Records from One-To-Many
-        Relationships</span>](#Accessing_Records_from_One-To-Many_Relationships)
-      - [<span class="tocnumber">3.9.5.3</span>
-        <span class="toctext">Working with Large Record
-        Sets</span>](#Working_with_Large_Record_Sets)
-      - [<span class="tocnumber">3.9.5.4</span>
-        <span class="toctext">Accessing Drupal Node
-        Information</span>](#Accessing_Drupal_Node_Information)
-- [<span class="tocnumber">4</span> <span class="toctext">Module
-  Development API</span>](#Module_Development_API)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Skills
-    Required</span>](#Skills_Required_2)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Brief
+    File](#Dissecting_a_Tripal_Node_Template_File)
+    - [Template Basics](#Template_Basics)
+    - [Layout
+      Sections](#Layout_Sections)
+    - [Subtemplates](#Subtemplates)
+      - [Description of a
+        Subtemplate](#Description_of_a_Subtemplate)
+      - [Adding a New
+        Subtemplate](#Adding_a_New_Subtemplate)
+    - [Template
+      JavaScript](#Template_JavaScript)
+    - [Accessing Chado
+      Data](#Accessing_Chado_Data)
+      - [Accessing Large Text
+        Fields](#Accessing_Large_Text_Fields)
+      - [Accessing Records from One-To-Many
+        Relationships](#Accessing_Records_from_One-To-Many_Relationships)
+      - [Working with Large Record
+        Sets](#Working_with_Large_Record_Sets)
+      - [Accessing Drupal Node
+        Information](#Accessing_Drupal_Node_Information)
+- [Module
+  Development API](#Module_Development_API)
+  - [Skills
+    Required](#Skills_Required_2)
+  - [Brief
     Introduction to Drupal Module
-    Development</span>](#Brief_Introduction_to_Drupal_Module_Development)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Components
-    of the Tripal API</span>](#Components_of_the_Tripal_API)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Materialized Views
-      API</span>](#Materialized_Views_API)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Controlled Vocabularies
-      API</span>](#Controlled_Vocabularies_API)
-    - [<span class="tocnumber">4.3.3</span> <span class="toctext">Jobs
-      Management API</span>](#Jobs_Management_API)
-    - [<span class="tocnumber">4.3.4</span> <span class="toctext">Chado
-      API</span>](#Chado_API)
-    - [<span class="tocnumber">4.3.5</span> <span class="toctext">Chado
-      Schema API</span>](#Chado_Schema_API)
-    - [<span class="tocnumber">4.3.6</span>
-      <span class="toctext">Analysis API</span>](#Analysis_API)
-    - [<span class="tocnumber">4.3.7</span>
-      <span class="toctext">Modules API</span>](#Modules_API)
-    - [<span class="tocnumber">4.3.8</span> <span class="toctext">Views
-      API</span>](#Views_API)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">The
-    Anatomy of a Tripal Module</span>](#The_Anatomy_of_a_Tripal_Module)
-    - [<span class="tocnumber">4.4.1</span> <span class="toctext">The
-      Module File</span>](#The_Module_File)
-    - [<span class="tocnumber">4.4.2</span> <span class="toctext">Add a
-      New Node Type</span>](#Add_a_New_Node_Type)
-    - [<span class="tocnumber">4.4.3</span> <span class="toctext">The
-      Install File</span>](#The_Install_File)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">DOxygen
-    Documentation Style</span>](#DOxygen_Documentation_Style)
+    Development](#Brief_Introduction_to_Drupal_Module_Development)
+  - [Components
+    of the Tripal API](#Components_of_the_Tripal_API)
+    - [Materialized Views
+      API](#Materialized_Views_API)
+    - [Controlled Vocabularies
+      API](#Controlled_Vocabularies_API)
+    - [Jobs
+      Management API](#Jobs_Management_API)
+    - [Chado
+      API](#Chado_API)
+    - [Chado
+      Schema API](#Chado_Schema_API)
+    - [Analysis API](#Analysis_API)
+    - [Modules API](#Modules_API)
+    - [Views
+      API](#Views_API)
+  - [The
+    Anatomy of a Tripal Module](#The_Anatomy_of_a_Tripal_Module)
+    - [The
+      Module File](#The_Module_File)
+    - [Add a
+      New Node Type](#Add_a_New_Node_Type)
+    - [The
+      Install File](#The_Install_File)
+  - [DOxygen
+    Documentation Style](#DOxygen_Documentation_Style)
 
 
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 Tripal provides two Application Programming Interfaces (APIs) that
 allows developers to interact and customize Tripal and Chado content:
@@ -151,7 +113,7 @@ Tripal
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-tripal"
 class="external text" rel="nofollow">mailing list</a> and let us know!
 
-## <span id="Using_the_Drupal_Devel_Module" class="mw-headline">Using the Drupal Devel Module</span>
+## Using the Drupal Devel Module
 
 Before staring your development work, it is suggested that you download
 and install the
@@ -181,9 +143,9 @@ dpm($variables);
 This function can also be used for debugging variables during module
 development.
 
-## <span id="Theming_API" class="mw-headline">Theming API</span>
+## Theming API
 
-### <span id="Skills_Required" class="mw-headline">Skills Required</span>
+### Skills Required
 
 In order to use the Tripal Theming API to customize templates the
 developer should have the following skills:
@@ -194,7 +156,7 @@ developer should have the following skills:
 - Understanding of the Tripal theming API
 - Understanding of how Drupal theming works
 
-### <span id="Best_Practices" class="mw-headline">Best Practices</span>
+### Best Practices
 
 There are a few rules to follow when updating templates
 
@@ -212,7 +174,7 @@ There are a few rules to follow when updating templates
     use the templates in your default them rather than those with the
     same name in the Tripal theme.
 
-### <span id="Brief_Introduction_to_Drupal_Theming" class="mw-headline">Brief Introduction to Drupal Theming</span>
+### Brief Introduction to Drupal Theming
 
 Drupal is designed to allow for relatively easy changes to the
 look-and-feel of the website. PHP code dedicated to the user
@@ -233,7 +195,7 @@ For an in-depth overview of theming within Drupal, please see the Drupal
 <a href="http://drupal.org/documentation/theme" class="external text"
 rel="nofollow">Theming Guide</a>.
 
-### <span id="Introduction_to_the_Tripal_Theme" class="mw-headline">Introduction to the Tripal Theme</span>
+### Introduction to the Tripal Theme
 
 Tripal v0.6x-0.3.1b and later versions comes with a base theme. A base
 theme is one which is not intended to be used as the default theme for
@@ -252,7 +214,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/TripalDevHB-BaseTheme.png/1200px-TripalDevHB-BaseTheme.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c7/TripalDevHB-BaseTheme.png 2x"
 width="800" height="464" alt="TripalDevHB-BaseTheme.png" />
 
-### <span id="Structure_of_the_Tripal_Theme_Directory" class="mw-headline">Structure of the Tripal Theme Directory</span>
+### Structure of the Tripal Theme Directory
 
 In a typical Drupal installation, the Tripal theme is installed in the
 directory:
@@ -293,7 +255,7 @@ Inside of the Tripal theme are the following directories:
 
   
 
-### <span id="Theming_Content_Types" class="mw-headline">Theming Content Types</span>
+### Theming Content Types
 
 Each content type in Drupal has two names, a human-readable name and a
 programmatic name. When Drupal shows a content type (or node) for
@@ -347,7 +309,7 @@ content type names:
 For any Tripal content type, either from the base Tripal package or a
 Tripal extension a template file should be available for customization.
 
-### <span id="Where_To_Put_a_Template_File" class="mw-headline">Where To Put a Template File</span>
+### Where To Put a Template File
 
 By default, Drupal will search for a node's template file by first
 looking in the module directories. In general, Tripal avoids housing any
@@ -364,7 +326,7 @@ precedence.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. It is best to always copy any templates files out of the Tripal theme directory into your default theme for editing. This way, future upgrades to Tripal, that may change the template files will not affect customizations to your site. |
 
-### <span id="Layout_of_a_Tripal_Node_Template" class="mw-headline">Layout of a Tripal Node Template</span>
+### Layout of a Tripal Node Template
 
 Each content type provided by Tripal follows the same layout pattern.
 Below is a screen shot of an organism page (chado_organism content type)
@@ -393,9 +355,9 @@ of the node template files follow this same structure
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: If you would like to maintain this layout structure for any themes of new content types for new Tripal extensions, you will want to follow this same structure in your template files. See the next section for more details. |
 
-### <span id="Dissecting_a_Tripal_Node_Template_File" class="mw-headline">Dissecting a Tripal Node Template File</span>
+### Dissecting a Tripal Node Template File
 
-#### <span id="Template_Basics" class="mw-headline">Template Basics</span>
+#### Template Basics
 
 All of the Tripal node templates are identical in structure, although
 each one is suited for the content it serves. Therefore, to demonstrate
@@ -432,7 +394,7 @@ by foreign key constraints, and adds the results to the
 \$variables\['node'\]-\>feature array. In the example code above, this
 is simplified to a variable named \$feature.
 
-#### <span id="Layout_Sections" class="mw-headline">Layout Sections</span>
+#### Layout Sections
 
 As mentioned previously, the node template files have two major regions:
 
@@ -652,9 +614,9 @@ In Summary, each node template file has two major sections:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: A Tripal compatible template file should only have one **div** block for the details region and one block the resources side bar. |
 
-#### <span id="Subtemplates" class="mw-headline">Subtemplates</span>
+#### Subtemplates
 
-##### <span id="Description_of_a_Subtemplate" class="mw-headline">Description of a Subtemplate</span>
+##### Description of a Subtemplate
 
 In the template layout section described previously it was shown how
 subtemplates are incorporated into the principle template file. These
@@ -728,7 +690,7 @@ elements descrbibed above:
 
 ```
 
-##### <span id="Adding_a_New_Subtemplate" class="mw-headline">Adding a New Subtemplate</span>
+##### Adding a New Subtemplate
 
 To add a new subtemplate to Tripal follow these steps
 
@@ -760,7 +722,7 @@ which is managed by a Tripal module.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: You should not need to add SQL queries to the PHP subtemplates. Use the Tripal API to access all necessary data. |
 
-#### <span id="Template_JavaScript" class="mw-headline">Template JavaScript</span>
+#### Template JavaScript
 
 Not all of the subtemplates appear in the content section at one time.
 Only content from one subtemplate will be shown at a time. The Resources
@@ -833,7 +795,7 @@ the height of the Resources side-bar.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: When creating a template for a new node, the Javascript code above should be duplicated, with names of the content and sidebar div blocks changed to match your content name. |
 
-#### <span id="Accessing_Chado_Data" class="mw-headline">Accessing Chado Data</span>
+#### Accessing Chado Data
 
 As mentioned previously, Tripal automatically exports the data needed
 for each content type template. The **\$variables** variable is an
@@ -912,7 +874,7 @@ Therefore, you can access the organism fields in the following way:
    ...
 ```
 
-##### <span id="Accessing_Large_Text_Fields" class="mw-headline">Accessing Large Text Fields</span>
+##### Accessing Large Text Fields
 
 However, not all fields within a record are available by default. Large
 text fields and one-to-many foreign-key relationships are not
@@ -949,7 +911,7 @@ Using the example code above we are able to add in the residues
 information to our feature record and then use it within our template
 file.
 
-##### <span id="Accessing_Records_from_One-To-Many_Relationships" class="mw-headline">Accessing Records from One-To-Many Relationships</span>
+##### Accessing Records from One-To-Many Relationships
 
 Adding information from a one-to-many relationship is performed using
 the same function. For example, a feature may have more than one synonym
@@ -997,7 +959,7 @@ $feature = tripal_core_expand_chado_vars($feature, 'table', 'feature_synonym', $
 $synonyms = $feature->feature_synonym;
 ```
 
-##### <span id="Working_with_Large_Record_Sets" class="mw-headline">Working with Large Record Sets</span>
+##### Working with Large Record Sets
 
 When expanding tables in a one-to-many relationship it is possible to
 return hundreds or thousands (or more) records. There are two problems
@@ -1105,7 +1067,7 @@ rel="nofollow">http://tripal.gmod-dev.oicr.on.ca/1.1/node/3637?block=featurepos&
 
   
 
-##### <span id="Accessing_Drupal_Node_Information" class="mw-headline">Accessing Drupal Node Information</span>
+##### Accessing Drupal Node Information
 
 In some cases, a record may have a corresponding Drupal page (or node)
 and we would like to provide a link to that page. For example, for
@@ -1132,9 +1094,9 @@ Notice the second argument is **node** and the third argument is the
 Chado table. Using this code, the node information will be added if it
 doesn't already exists.
 
-## <span id="Module_Development_API" class="mw-headline">Module Development API</span>
+## Module Development API
 
-### <span id="Skills_Required_2" class="mw-headline">Skills Required</span>
+### Skills Required
 
 In order to use the Tripal API for module development the developer
 should have the following skills:
@@ -1150,7 +1112,7 @@ help understand the remainder of this document.
 
   
 
-### <span id="Brief_Introduction_to_Drupal_Module_Development" class="mw-headline">Brief Introduction to Drupal Module Development</span>
+### Brief Introduction to Drupal Module Development
 
 Drupal provides an API for anyone to create new modules to extend the
 functionality of Drupal. Tripal is itself a collection of modules that
@@ -1169,7 +1131,7 @@ height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Before pr
 
   
 
-### <span id="Components_of_the_Tripal_API" class="mw-headline">Components of the Tripal API</span>
+### Components of the Tripal API
 
 Tripal provides several major groups of functionality through the API.
 These include the following:
@@ -1193,7 +1155,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/index.html</a
 
   
 
-#### <span id="Materialized_Views_API" class="mw-headline">Materialized Views API</span>
+#### Materialized Views API
 
 Materialized Views (MViews) are useful when querying the Chado database
 is slow. Chado is highly normalized which makes it a great data storage
@@ -1246,7 +1208,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal
 
   
 
-#### <span id="Controlled_Vocabularies_API" class="mw-headline">Controlled Vocabularies API</span>
+#### Controlled Vocabularies API
 
 Chado makes heavy use of vocabularies. For instance, the **feature**
 table in Chado has a **type_id** column which has a foreign key
@@ -1275,7 +1237,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal
 
   
 
-#### <span id="Jobs_Management_API" class="mw-headline">Jobs Management API</span>
+#### Jobs Management API
 
 In many cases it is necessary to execute tasks on the website that may
 take a long time. Usually, data loading is such a case. Often large
@@ -1295,7 +1257,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal
 
   
 
-#### <span id="Chado_API" class="mw-headline">Chado API</span>
+#### Chado API
 
 Usually, developers of a new module will want to access and manipulate
 data within Chado. It is easy enough to use the Drupal API to process
@@ -1323,7 +1285,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal
 
   
 
-#### <span id="Chado_Schema_API" class="mw-headline">Chado Schema API</span>
+#### Chado Schema API
 
 The Chado Schema API provides functions for retrieving the table
 structure of any Chado table. This API is used by the Chado API for
@@ -1340,7 +1302,7 @@ rel="nofollow">http://tripal.sourceforge.net/docs/tripal-0.6x-0.3b/group__tripal
 
   
 
-#### <span id="Analysis_API" class="mw-headline">Analysis API</span>
+#### Analysis API
 
 There are a myriad of different types of analyses that can be performed
 on data stored in Chado, as well as a myriad of ways to present the
@@ -1361,14 +1323,14 @@ examples of useful API functions and appropriate places to use them.
 
   
 
-#### <span id="Modules_API" class="mw-headline">Modules API</span>
+#### Modules API
 
 Each Tripal module may provide a set of functions as an API. See the API
 documentation for the functions exposed by each module.
 
   
 
-#### <span id="Views_API" class="mw-headline">Views API</span>
+#### Views API
 
 Currently under development is an API that will allow integration of all
 Chado tables and MViews with Drupal
@@ -1381,7 +1343,7 @@ a page and used to create custom search pages for a site.
 
   
 
-### <span id="The_Anatomy_of_a_Tripal_Module" class="mw-headline">The Anatomy of a Tripal Module</span>
+### The Anatomy of a Tripal Module
 
 Tripal modules follow the same directory structure as all Drupal
 modules. The directory name is typically the same name as module package
@@ -1436,7 +1398,7 @@ be enabled.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. At a minimum your Tripal extension module should always set the package to be **Tripal Extensions** and should have the **tripal_core** module as a dependency. |
 
-#### <span id="The_Module_File" class="mw-headline">The Module File</span>
+#### The Module File
 
 This section provides example source code to help begin a new module.
 The code shown here provides a basic shell with the most common hooks
@@ -1560,7 +1522,7 @@ function tripal_example_module_description_page() {
 }
 ```
 
-#### <span id="Add_a_New_Node_Type" class="mw-headline">Add a New Node Type</span>
+#### Add a New Node Type
 
 In some cases we want to create a new content type. We specify a new
 content type anytime we need to create special pages to hold content.
@@ -1817,7 +1779,7 @@ function example_node_access($op, $node, $account){
 }
 ```
 
-#### <span id="The_Install_File" class="mw-headline">The Install File</span>
+#### The Install File
 
 The install file is executed only when the module is first installed. An
 example .install file is provided below. To help demonstrate the use of
@@ -1990,85 +1952,4 @@ function tripal_example_module_requirements($phase) {
 }
 ```
 
-### <span id="DOxygen_Documentation_Style" class="mw-headline">DOxygen Documentation Style</span>
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Tripal_Developer&#39;s_Handbook"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:45 on 14 October
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">176,037 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+### DOxygen Documentation Style

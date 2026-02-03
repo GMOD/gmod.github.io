@@ -1,9 +1,7 @@
 ---
 title: "GBrowse"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GBrowse</span>
+# GBrowse
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/04/GBrowseLogo.png/400px-GBrowseLogo.png"
@@ -201,53 +199,3 @@ title="Special%253ASearchByProperty/Has-20subobject/GBrowse-23http%253A-2F-2Fhap
 </tr>
 </tbody>
 </table>
-
-## Navigation menu
-
-### Namespaces
-
-- <span id="ca-talk"><a href="/wiki/Talk%253AGBrowse" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-### Navigation
-
-- <span id="n-Softwhttp://gmod.org/wiki/are">[Software](/wiki/GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](/wiki/Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](/wiki/Special:AllPages)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](/wiki/Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](/wiki/Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](/wiki/Glossary)</span>
-
-Community
-
-- <span id="n-GMOD-Newshttp://gmod.org/wiki/">[GMOD
-  News](/wiki/GMOD_News)</span>
-- <span id="n-Training-.http://gmod.org/wiki/2F-Outreach">[Training /
-  Outreach](/wiki/Training_and_Outreach)</span>
-- <span id="n-Support">[Support](/wiki/Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD
-  Promotion](/wiki/GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](/wiki/Meetings)</span>
-- <span id="n-Calendar">[Calendar](/wiki/Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/GBrowse" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 16:47 on 10 April 2023.</span>
-<!-- - <span id="footer-info-viewcount">1,682,147 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/lichttp://gmod.org/wiki/enses/fdl-1.3.html"
-  class="external" rel="nofollow">a GNU Free Documentation License</a>
-  unless otherwise noted.</span>
-
-<!-- -->
-
-<!-- -->

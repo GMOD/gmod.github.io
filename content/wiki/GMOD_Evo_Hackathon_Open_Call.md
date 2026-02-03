@@ -1,23 +1,7 @@
 ---
 title: "GMOD Evo Hackathon Open Call"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Evo Hackathon Open Call</span>
-
-
-
-
-
-
-
+# GMOD Evo Hackathon Open Call
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -49,31 +33,21 @@ rel="nofollow">NESCent</a>, Durham, North Carolina, USA<br />
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">How To
   Apply</span>](#How_To_Apply)
-- [<span class="tocnumber">2</span> <span class="toctext">About
-  GMOD</span>](#About_GMOD)
-- [<span class="tocnumber">3</span> <span class="toctext">About
-  Hackathons</span>](#About_Hackathons)
-- [<span class="tocnumber">4</span> <span class="toctext">About the GMOD
-  Evo Hackathon</span>](#About_the_GMOD_Evo_Hackathon)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Overview</span>](#Overview)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Before the
-    Event</span>](#Before_the_Event)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">During the
-    Event</span>](#During_the_Event)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Deliverables / Event
-    Results</span>](#Deliverables_.2F_Event_Results)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Links</span>](#Links)
+- [About
+  GMOD](#About_GMOD)
+- [About
+  Hackathons](#About_Hackathons)
+- [About the GMOD
+  Evo Hackathon](#About_the_GMOD_Evo_Hackathon)
+  - [Overview](#Overview)
+  - [Before the
+    Event](#Before_the_Event)
+  - [During the
+    Event](#During_the_Event)
+  - [Deliverables / Event
+    Results](#Deliverables_.2F_Event_Results)
+- [Links](#Links)
 
 
 We are seeking participants for the [GMOD Tools for Evolutionary Biology
@@ -95,11 +69,11 @@ more than just software development: if you are a GMOD power user,
 visualization guru, domain expert (comparative, phylogenetics,
 population, ...), or documentation wizard, then your skills are needed!
 
-## <span id="How_To_Apply" class="mw-headline">How To Apply</span>
+## How To Apply
 
 The open call closed August 25.
 
-## <span id="About_GMOD" class="mw-headline">About GMOD</span>
+## About GMOD
 
 GMOD is an intercompatible suite of open-source software components for
 storing, managing, analyzing, and visualizing genome-scale data. GMOD
@@ -115,7 +89,7 @@ viewer; as well as many other components including
 [Galaxy](Galaxy.1 "Galaxy"). We hope to extend the functionality of
 existing GMOD components, and integrate new components as well.
 
-## <span id="About_Hackathons" class="mw-headline">About Hackathons</span>
+## About Hackathons
 
 A hackathon is an intense event at which a group of programmers with
 different backgrounds and skills collaborate hands-on and face-to-face
@@ -148,9 +122,9 @@ Committee (and project affiliations as relevant):
   <a href="http://www.iplantcollaborative.org/" class="external text"
   rel="nofollow">iPlant</a>, [GBrowse_syn](GBrowse_syn.1 "GBrowse syn"))
 
-## <span id="About_the_GMOD_Evo_Hackathon" class="mw-headline">About the [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon")</span>
+## About the [GMOD Evo Hackathon](GMOD_Evo_Hackathon "GMOD Evo Hackathon")
 
-### <span id="Overview" class="mw-headline">Overview</span>
+### Overview
 
 We are organizing a hackathon to fill critical gaps in the capabilities
 of the Generic Model Organism Database (GMOD) toolbox that currently
@@ -172,7 +146,7 @@ biology that GMOD components have the potential to fill, and for tool
 developers in evolutionary biology to better understand how best to
 extend or integrate with already existing GMOD components.
 
-### <span id="Before_the_Event" class="mw-headline">Before the Event</span>
+### Before the Event
 
 Discussion of ideas and sometimes even design actually starts well
 before the hackathon, on mailing lists, wiki pages, and conference calls
@@ -182,7 +156,7 @@ means that participants should be willing to contribute some time in
 advance of the hackathon itself to participate in this preparatory
 discussion.
 
-### <span id="During_the_Event" class="mw-headline">During the Event</span>
+### During the Event
 
 Typically, hackathon participants use the morning of the first day of
 the event to organize themselves into working groups of between 3 and 6
@@ -190,7 +164,7 @@ people, each with a focused implementation objective. Ideas and
 objectives are discussed, and attendees coalesce around the projects in
 which they have the most experience or interest.
 
-### <span id="Deliverables_.2F_Event_Results" class="mw-headline">Deliverables / Event Results</span>
+### Deliverables / Event Results
 
 The meeting’s attendance, working groups, and outcomes will be fully
 logged and documented on the [GMOD wiki](Main_Page "Main Page"). Each
@@ -216,7 +190,7 @@ class="external text" rel="nofollow">supporting research and
 education</a> across disciplinary, institutional, geographic, and
 demographic boundaries.
 
-## <span id="Links" class="mw-headline">Links</span>
+## Links
 
 - [Main GMOD EvoHack page](GMOD_Evo_Hackathon "GMOD Evo Hackathon")
 - <a href="http://www.nescent.org" class="external text"
@@ -226,84 +200,3 @@ demographic boundaries.
   rel="nofollow">uninstall google toolbar</a>
 - <a href="http://hackathon.nescent.org/" class="external text"
   rel="nofollow">Similar past NESCent events</a>
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Evo_Hackathon_Open_Call"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">28,333 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

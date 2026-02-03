@@ -1,23 +1,7 @@
 ---
 title: "Training and Outreach"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Training and Outreach</span>
-
-
-
-
-
-
-
+# Training and Outreach
 
 
 Training and outreach is about several things. GMOD training teaches new
@@ -42,29 +26,23 @@ Please contact the
 Help Desk</a> if you have a training and outreach question or request.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Online
   Tutorials</span>](#Online_Tutorials)
-- [<span class="tocnumber">2</span> <span class="toctext">GMOD
-  Schools</span>](#GMOD_Schools)
-- [<span class="tocnumber">3</span> <span class="toctext">Events:
+- [GMOD
+  Schools](#GMOD_Schools)
+- [Events:
   Courses, Meetings, Workshops, Presentations and
-  Posters</span>](#Events:_Courses.2C_Meetings.2C_Workshops.2C_Presentations_and_Posters)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">2013
-    Events</span>](#2013_Events)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">2012
-    Events</span>](#2012_Events)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">2011
-    Events</span>](#2011_Events)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">2002
-    through 2010 Events</span>](#2002_through_2010_Events)
+  Posters](#Events:_Courses.2C_Meetings.2C_Workshops.2C_Presentations_and_Posters)
+  - [2013
+    Events](#2013_Events)
+  - [2012
+    Events](#2012_Events)
+  - [2011
+    Events](#2011_Events)
+  - [2002
+    through 2010 Events](#2002_through_2010_Events)
 
 
-
-## <span id="Online_Tutorials" class="mw-headline">Online Tutorials</span>
+## Online Tutorials
 
 In addition to in person training, there are in depth online tutorials
 on several [GMOD Components](GMOD_Components "GMOD Components"):
@@ -433,7 +411,7 @@ title="2013 GMOD Summer School">2013 GMOD Summer School</a>
 This website also has a large collection of
 [HOWTOs](Category%253AHOWTO "Category%253AHOWTO") on more specific tasks.
 
-## <span id="GMOD_Schools" class="mw-headline">GMOD Schools</span>
+## GMOD Schools
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/150px-Gmod-online-training.png"
@@ -494,7 +472,7 @@ rel="nofollow">NESCent</a>, Durham, NC, United States |
 
   
 
-## <span id="Events:_Courses.2C_Meetings.2C_Workshops.2C_Presentations_and_Posters" class="mw-headline">Events: Courses, Meetings, Workshops, Presentations and Posters</span>
+## Events: Courses, Meetings, Workshops, Presentations and Posters
 
 The items listed here are either about GMOD and its components, or are
 of specific interest to the GMOD community. **The GMOD
@@ -514,7 +492,7 @@ community meetings and other related rendezvous.
 
   
 
-### <span id="2013_Events" class="mw-headline">2013 Events</span>
+### 2013 Events
 
 <table class="wikitable">
 <colgroup>
@@ -610,7 +588,7 @@ at PAGXXI</td>
 </tbody>
 </table>
 
-### <span id="2012_Events" class="mw-headline">2012 Events</span>
+### 2012 Events
 
 <table class="wikitable">
 <colgroup>
@@ -735,7 +713,7 @@ all-day GMOD Workshop</em>.</td>
 </tbody>
 </table>
 
-### <span id="2011_Events" class="mw-headline">2011 Events</span>
+### 2011 Events
 
 <table class="wikitable">
 <colgroup>
@@ -978,7 +956,7 @@ title="User%253AMckays">Sheldon McKay</a></td>
 </tbody>
 </table>
 
-### <span id="2002_through_2010_Events" class="mw-headline">2002 through 2010 Events</span>
+### 2002 through 2010 Events
 
 <table class="wikitable">
 <colgroup>
@@ -1720,108 +1698,3 @@ The meeting where GMOD was born.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Tool data](Category%253ATool_data "Category%253ATool data")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-- [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
-- [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-- [Pathway Tools](Category%253APathway_Tools "Category%253APathway Tools")
-- [SOBA](Category%253ASOBA "Category%253ASOBA")
-- [Tripal](Category%253ATripal "Category%253ATripal")
-- [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Training_and_Outreach" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:09 on 6 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">583,599 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

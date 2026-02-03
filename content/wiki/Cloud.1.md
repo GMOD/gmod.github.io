@@ -1,32 +1,13 @@
 ---
 title: "Cloud"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Cloud</span>
-
-
-
-
-
-
-
-
-
+# Cloud
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/400px-GitcLogo.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/600px-GitcLogo.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/69/GitcLogo.png/800px-GitcLogo.png 2x"
 width="400" height="229" alt="GMOD in the Cloud" />
-
 
 
 GMOD in the Cloud is a [GMOD virtual
@@ -44,54 +25,39 @@ versions of GMOD in the Cloud are released.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">What's in GMOD
   in the Cloud</span>](#What.27s_in_GMOD_in_the_Cloud)
-- [<span class="tocnumber">2</span> <span class="toctext">Where to find
-  GMOD in the Cloud</span>](#Where_to_find_GMOD_in_the_Cloud)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">About
-    instance types</span>](#About_instance_types)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Build
-    information</span>](#Build_information)
-- [<span class="tocnumber">3</span> <span class="toctext">Getting
-  Started</span>](#Getting_Started)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Directory
-    Structure</span>](#Directory_Structure)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Updating
-    from previous versions</span>](#Updating_from_previous_versions)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Phoning
-    home</span>](#Phoning_home)
-- [<span class="tocnumber">4</span> <span class="toctext">Installed GMOD
-  software</span>](#Installed_GMOD_software)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">PostgreSQL</span>](#PostgreSQL)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Drupal</span>](#Drupal)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Tripal</span>](#Tripal)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Chado</span>](#Chado)
-  - [<span class="tocnumber">4.5</span>
-    <span class="toctext">GBrowse2</span>](#GBrowse2)
-  - [<span class="tocnumber">4.6</span>
-    <span class="toctext">JBrowse</span>](#JBrowse)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">WebApollo</span>](#WebApollo)
+- [Where to find
+  GMOD in the Cloud](#Where_to_find_GMOD_in_the_Cloud)
+  - [About
+    instance types](#About_instance_types)
+  - [Build
+    information](#Build_information)
+- [Getting
+  Started](#Getting_Started)
+  - [Directory
+    Structure](#Directory_Structure)
+  - [Updating
+    from previous versions](#Updating_from_previous_versions)
+  - [Phoning
+    home](#Phoning_home)
+- [Installed GMOD
+  software](#Installed_GMOD_software)
+  - [PostgreSQL](#PostgreSQL)
+  - [Drupal](#Drupal)
+  - [Tripal](#Tripal)
+  - [Chado](#Chado)
+  - [GBrowse2](#GBrowse2)
+  - [JBrowse](#JBrowse)
+  - [WebApollo](#WebApollo)
 
 
-
-## <span id="What.27s_in_GMOD_in_the_Cloud" class="mw-headline">What's in GMOD in the Cloud</span>
-
+## What's in GMOD in the Cloud
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/300px-Gitc-poster-alt.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/450px-Gitc-poster-alt.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/03/Gitc-poster-alt.jpg/600px-Gitc-poster-alt.jpg 2x"
 width="300" height="424" alt="GMOD in the Cloud poster" />
-
 
 
 [<img
@@ -129,7 +95,7 @@ width="200" height="55" alt="WebApollo logo" />](WebApollo.1 "WebApollo")
 <a href="http://cloud.gmod.org" class="external text"
 rel="nofollow">Visit a GMOD in the Cloud demo server</a>
 
-## <span id="Where_to_find_GMOD_in_the_Cloud" class="mw-headline">Where to find GMOD in the Cloud</span>
+## Where to find GMOD in the Cloud
 
 - Amazon AMI ID: ami-a9d7f9c0 (in the US East-Virgina zone);
 - Name: **GMOD in the Cloud 2.05**
@@ -147,7 +113,7 @@ Versions 1.1-1.3 of GMOD in the Cloud are compatible with
 [Apollo](Apollo.1 "Apollo"); version 2.0 onwards contain
 [WebApollo](WebApollo.1 "WebApollo").
 
-#### <span id="About_instance_types" class="mw-headline">About instance types</span>
+#### About instance types
 
 While GMOD in the Cloud 2.0 will run as a micro instance, it won't run
 well. Specifically, running GBrowse with FastCGI will have a hard time,
@@ -155,7 +121,7 @@ and WebApollo won't work at all. The demo instance running at
 <a href="http://cloud.gmod.org/" class="external text"
 rel="nofollow">cloud.gmod.org</a> is a small instance.
 
-#### <span id="Build_information" class="mw-headline">Build information</span>
+#### Build information
 
 [Scott](User%253AScott "User%253AScott") has fairly extensive notes on the
 configuration file edits and the commands used when building GMOD in the
@@ -164,7 +130,7 @@ href="https://github.com/scottcain/GMODintheCloud/blob/master/GitC2_build"
 class="external text" rel="nofollow">github repository</a> for more
 information.
 
-## <span id="Getting_Started" class="mw-headline">Getting Started</span>
+## Getting Started
 
 GMOD in the Cloud is running on Ubuntu 12.04 LTS. The virtual machine is
 split into two partitions, `root` and `data`. All user information
@@ -175,7 +141,7 @@ at the [GMOD Cloud Tutorial](GMOD_Cloud_Tutorial "GMOD Cloud Tutorial").
 
   
 
-### <span id="Directory_Structure" class="mw-headline">Directory Structure</span>
+### Directory Structure
 
 When you first log in to the virtual machine, you will be in the
 *ubuntu* user's home directory, `/home/ubuntu`, on the `root` partition
@@ -215,14 +181,14 @@ incorporate the changes into future iterations of GMOD in the Cloud.
 
 Note that changes made to files in any other locations will be lost.
 
-### <span id="Updating_from_previous_versions" class="mw-headline">Updating from previous versions</span>
+### Updating from previous versions
 
 Instances of GMOD in the Cloud can be updated by replacing the `data`
 partition in the new instance with the `data` partition from the old
 instance. For more information, see the [updating
 guide](Cloud/Updating "Cloud/Updating").
 
-### <span id="Phoning_home" class="mw-headline">Phoning home</span>
+### Phoning home
 
 When a GMOD in the Cloud server starts up for the first time, it sends
 an email to the GMOD developers with information about the instance.
@@ -248,9 +214,9 @@ To disable the phone home email, put the following in the user data box:
 
 `NoCallHome: 1`
 
-## <span id="Installed_GMOD_software" class="mw-headline">Installed GMOD software</span>
+## Installed GMOD software
 
-### <span id="PostgreSQL" class="mw-headline">PostgreSQL</span>
+### PostgreSQL
 
 Database name: `drupal`
 
@@ -269,7 +235,7 @@ command line tools from GMOD).
 
   
 
-### <span id="Drupal" class="mw-headline">Drupal</span>
+### Drupal
 
 Version: 6.28
 
@@ -291,7 +257,7 @@ new themes can be added at `/data/var/www/sites/default/themes`.
 
   
 
-### <span id="Tripal" class="mw-headline">Tripal</span>
+### Tripal
 
 Version: 1.1
 
@@ -301,7 +267,7 @@ Installation dir: `/var/www/sites/all/modules/tripal`
 
   
 
-### <span id="Chado" class="mw-headline">Chado</span>
+### Chado
 
 Version: 1.23
 
@@ -325,7 +291,7 @@ updated with "svn update" like the Tripal svn checkout.
 
   
 
-### <span id="GBrowse2" class="mw-headline">GBrowse2</span>
+### GBrowse2
 
 Version: 2.55
 
@@ -347,7 +313,7 @@ GBrowse at
 
   
 
-### <span id="JBrowse" class="mw-headline">JBrowse</span>
+### JBrowse
 
 Version: 1.10.12
 
@@ -373,7 +339,7 @@ This file is at `/data/var/www/jbrowse/jbrowse_conf.json`.
 
   
 
-### <span id="WebApollo" class="mw-headline">WebApollo</span>
+### WebApollo
 
 Version: 11/22/2013
 
@@ -385,91 +351,3 @@ user, a second user with limited permissions was created with username:
 Check out the [WebApollo setup
 instructions](GMOD_in_a_Box/WebApollo "GMOD in a Box/WebApollo")
 specific to the VM for help in setting up your data.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD virtual
-  server](Category%253AGMOD_virtual_server "Category%253AGMOD virtual server")
-- [GMOD in the
-  Cloud](Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Cloud" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:10 on 16 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">360,124 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

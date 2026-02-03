@@ -1,9 +1,7 @@
 ---
 title: "Arthropod Genomics 2011"
 ---
-<span id="top"></span>
-
-# <span dir="auto">Arthropod Genomics 2011</span>
+# Arthropod Genomics 2011
 
 <table style="font-size: 180%">
 <colgroup>
@@ -29,18 +27,12 @@ June 9-12</p></td>
 GMOD will have a strong presence again with a mixture of talks, poster,
 and workshops.
 
-## Contents
+  Workshops](#Workshops)
+- [Talks](#Talks)
+- [Posters](#Posters)
+- [Brochure](#Brochure)
 
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Workshops</span>](#Workshops)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Talks</span>](#Talks)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Posters</span>](#Posters)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Brochure</span>](#Brochure)
-
-## <span id="Workshops" class="mw-headline">Workshops</span>
+## Workshops
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/4/48/Gmod-gears.png/120px-Gmod-gears.png"
@@ -83,7 +75,7 @@ pipeline. Non-sequence alignment data derived from co-linear protein
 orthologs will also be presented. There is no cost to attend this
 optional workshop, but registration is requested.
 
-## <span id="Talks" class="mw-headline">Talks</span>
+## Talks
 
 This lists talks that we know about. If you have an additional one,
 please add it here.
@@ -92,7 +84,7 @@ please add it here.
 | -------------- | ---- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | Friday June 10 | 9:30 | _A community-centric bioinformatic infrastructure for new genome consortia_ | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") |
 
-## <span id="Posters" class="mw-headline">Posters</span>
+## Posters
 
 This lists posters that we know about. If you have an additional one,
 please add it here.
@@ -104,7 +96,7 @@ please add it here.
 | 37                                                                        | _A community-centric bioinformatic infrastructure for new genome consortia_                                            | [Alexie Papanicolaou](/wiki/User%253AAlpapan "User%253AAlpapan") | <a href="/wiki/Chado" class="mw-redirect" title="Chado">Chado</a>, [est2assembly](/wiki/Est2assembly "Est2assembly"), <a href="/wiki/Gmod_dbsf" class="mw-redirect" |
 | title="Gmod dbsf">gmod_dbsf</a>, [genes4all](/wiki/Genes4all "Genes4all") |
 
-## <span id="Brochure" class="mw-headline">Brochure</span>
+## Brochure
 
 Download
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/AGS2011Brochure.pdf" class="internal"
@@ -113,48 +105,3 @@ title="AGS2011Brochure.pdf">conference brochure</a>.
 [Category](/wiki/Special%253ACategories "Special%253ACategories"):
 
 - [Conferences](/wiki/Category%253AConferences "Category%253AConferences")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](/wiki/Main_Page)</span>
-- <span id="n-Software">[Software](/wiki/GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](/wiki/Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](/wiki/Special:AllPages)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](/wiki/Overview)</span>
-- <span id="n-FAQs">[FAQs](/wiki/Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](/wiki/Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](/wiki/Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](/wiki/GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](/wiki/Training_and_Outreach)</span>
-- <span id="n-Support">[Support](/wiki/Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD
-  Promotion](/wiki/GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](/wiki/Meetings)</span>
-- <span id="n-Calendar">[Calendar](/wiki/Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="/wiki/Special%253ABrowse/Arthropod_Genomics_2011"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:52 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">40,873 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

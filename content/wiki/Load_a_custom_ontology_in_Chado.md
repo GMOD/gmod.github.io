@@ -1,43 +1,20 @@
 ---
 title: "Load a custom ontology in Chado"
 ---
+# Load a custom ontology in Chado
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Load a custom ontology in Chado</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Howto load a
   custom ontology in
   Chado</span>](#Howto_load_a_custom_ontology_in_Chado)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">The
-    ontology</span>](#The_ontology)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Chado
-    xml</span>](#Chado_xml)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Loading
-    into Chado</span>](#Loading_into_Chado)
+  - [The
+    ontology](#The_ontology)
+  - [Chado
+    xml](#Chado_xml)
+  - [Loading
+    into Chado](#Loading_into_Chado)
 
 
-
-# <span id="Howto_load_a_custom_ontology_in_Chado" class="mw-headline">Howto load a custom ontology in Chado</span>
+# Howto load a custom ontology in Chado
 
 We have an ontology that we want to load into Chado. The process to
 follow is described in the INSTALL.Chado document.
@@ -63,7 +40,7 @@ follow is described in the INSTALL.Chado document.
 
 Here we explained with more detail.
 
-## <span id="The_ontology" class="mw-headline">The ontology</span>
+## The ontology
 
 We have an ontology stored in an obo file. As an example we can try to
 load the following ontology.
@@ -116,7 +93,7 @@ The name of the file should match the database that will go in the db
 table (although I'm not sure about that). I've named this file as
 internal_go_lib.
 
-## <span id="Chado_xml" class="mw-headline">Chado xml</span>
+## Chado xml
 
 To load the ontology into chado we have to create a Chado xml file.
 There are two options to do it:
@@ -131,7 +108,7 @@ Let's do it with go2chadoxml
 
 We have obtained an xml file ready to be loaded into chado.
 
-## <span id="Loading_into_Chado" class="mw-headline">Loading into Chado</span>
+## Loading into Chado
 
 Now we can load the xml file into chado with the stag-storenode.pl
 command.
@@ -141,90 +118,3 @@ command.
 Prior to that loading in the cv table I had added library_type and
 internal_go_lib in the db table. I don't know if that's required, I
 guess that stag-storenode.pl will do it for you anyway.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Load_a_custom_ontology_in_Chado"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 11:01 on 10 June
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">14,175 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

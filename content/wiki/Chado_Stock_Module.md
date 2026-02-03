@@ -1,62 +1,38 @@
 ---
 title: "Chado Stock Module"
 ---
+# Chado Stock Module
 
 
+  Introduction](#Introduction)
+- [Tables](#Tables)
+  - [Table:
+    stock](#Table:_stock)
+  - [Table:
+    stock_cvterm](#Table:_stock_cvterm)
+  - [Table:
+    stock_dbxref](#Table:_stock_dbxref)
+  - [Table:
+    stock_genotype](#Table:_stock_genotype)
+  - [Table:
+    stock_pub](#Table:_stock_pub)
+  - [Table:
+    stock_relationship](#Table:_stock_relationship)
+  - [Table:
+    stock_relationship_pub](#Table:_stock_relationship_pub)
+  - [Table:
+    stockcollection](#Table:_stockcollection)
+  - [Table:
+    stockcollection_stock](#Table:_stockcollection_stock)
+  - [Table:
+    stockcollectionprop](#Table:_stockcollectionprop)
+  - [Table:
+    stockprop](#Table:_stockprop)
+  - [Table:
+    stockprop_pub](#Table:_stockprop_pub)
 
 
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Stock Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    stock</span>](#Table:_stock)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    stock_cvterm</span>](#Table:_stock_cvterm)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    stock_dbxref</span>](#Table:_stock_dbxref)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    stock_genotype</span>](#Table:_stock_genotype)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    stock_pub</span>](#Table:_stock_pub)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    stock_relationship</span>](#Table:_stock_relationship)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Table:
-    stock_relationship_pub</span>](#Table:_stock_relationship_pub)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Table:
-    stockcollection</span>](#Table:_stockcollection)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Table:
-    stockcollection_stock</span>](#Table:_stockcollection_stock)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Table:
-    stockcollectionprop</span>](#Table:_stockcollectionprop)
-  - [<span class="tocnumber">2.11</span> <span class="toctext">Table:
-    stockprop</span>](#Table:_stockprop)
-  - [<span class="tocnumber">2.12</span> <span class="toctext">Table:
-    stockprop_pub</span>](#Table:_stockprop_pub)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 The stock module was designed to store information about stock
 collections in a laboratory. What is called a *stock* could also be
@@ -71,9 +47,9 @@ It may be that not all critical details about your collection are
 accommodated, if this is the case it should not be difficult to extend
 for your own purposes.
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_stock" class="mw-headline">Table: stock</span>
+## Table: stock
 
 Any stock can be globally identified by the combination of organism,
 uniquename and stock type. A stock is the physical entities, either
@@ -172,36 +148,18 @@ stock Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [stock_cvterm](Chado_Tables#Table:_stock_cvterm "Chado Tables")
-
-<!-- -->
-
 - [stock_dbxref](Chado_Tables#Table:_stock_dbxref "Chado Tables")
-
-<!-- -->
-
 - [stock_genotype](Chado_Tables#Table:_stock_genotype "Chado Tables")
-
-<!-- -->
-
 - [stock_pub](Chado_Tables#Table:_stock_pub "Chado Tables")
-
-<!-- -->
-
 - [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables")
-
-<!-- -->
-
 - [stockcollection_stock](Chado_Tables#Table:_stockcollection_stock "Chado Tables")
-
-<!-- -->
-
 - [stockprop](Chado_Tables#Table:_stockprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_stock_cvterm" class="mw-headline">Table: stock_cvterm</span>
+## Table: stock_cvterm
 
 stock_cvterm links a stock to cvterms. This is for secondary cvterms;
 primary cvterms should use stock.type_id.
@@ -219,7 +177,7 @@ stock_cvterm Structure
 
   
 
-## <span id="Table:_stock_dbxref" class="mw-headline">Table: stock_dbxref</span>
+## Table: stock_dbxref
 
 stock_dbxref links a stock to dbxrefs. This is for secondary
 identifiers; primary identifiers should use stock.dbxref_id.
@@ -279,7 +237,7 @@ stock_dbxref Structure
 
   
 
-## <span id="Table:_stock_genotype" class="mw-headline">Table: stock_genotype</span>
+## Table: stock_genotype
 
 Simple table linking a stock to a genotype. Features with genotypes can
 be linked to stocks thru feature_genotype -\> genotype -\>
@@ -297,7 +255,7 @@ stock_genotype Structure
 
   
 
-## <span id="Table:_stock_pub" class="mw-headline">Table: stock_pub</span>
+## Table: stock_pub
 
 Provenance. Linking table between stocks and, for example, a stocklist
 computer file.
@@ -314,7 +272,7 @@ stock_pub Structure
 
   
 
-## <span id="Table:_stock_relationship" class="mw-headline">Table: stock_relationship</span>
+## Table: stock_relationship
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -335,7 +293,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_stock_relationship_pub" class="mw-headline">Table: stock_relationship_pub</span>
+## Table: stock_relationship_pub
 
 Provenance. Attach optional evidence to a stock_relationship in the form
 of a publication.
@@ -352,7 +310,7 @@ stock_relationship_pub Structure
 
   
 
-## <span id="Table:_stockcollection" class="mw-headline">Table: stockcollection</span>
+## Table: stockcollection
 
 The lab or stock center distributing the stocks in their collection.
 
@@ -421,16 +379,13 @@ stockcollection Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [stockcollection_stock](Chado_Tables#Table:_stockcollection_stock "Chado Tables")
-
-<!-- -->
-
 - [stockcollectionprop](Chado_Tables#Table:_stockcollectionprop "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_stockcollection_stock" class="mw-headline">Table: stockcollection_stock</span>
+## Table: stockcollection_stock
 
 stockcollection_stock links a stock collection to the stocks which are
 contained in the collection.
@@ -447,7 +402,7 @@ stockcollection_stock Structure
 
   
 
-## <span id="Table:_stockcollectionprop" class="mw-headline">Table: stockcollectionprop</span>
+## Table: stockcollectionprop
 
 The table stockcollectionprop contains the value of the stock collection
 such as website/email URLs; the value of the stock collection order
@@ -467,7 +422,7 @@ stockcollectionprop Structure
 
   
 
-## <span id="Table:_stockprop" class="mw-headline">Table: stockprop</span>
+## Table: stockprop
 
 A stock can have any number of slot-value property tags attached to it.
 This is an alternative to hardcoding a list of columns in the relational
@@ -493,7 +448,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_stockprop_pub" class="mw-headline">Table: stockprop_pub</span>
+## Table: stockprop_pub
 
 Provenance. Any stockprop assignment can optionally be supported by a
 publication.
@@ -507,90 +462,3 @@ publication.
 stockprop_pub Structure
 
 ------------------------------------------------------------------------
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Stock_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:41 on 18 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">54,279 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

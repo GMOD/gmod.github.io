@@ -1,23 +1,7 @@
 ---
 title: "Apollo/tool data"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Apollo/tool data</span>
-
-
-
-
-
-
-
+# Apollo/tool data
 
 
   
@@ -121,9 +105,6 @@ Sections of particular interest are
 - <a href="http://dynamicgene.dnalc.org/resources/resources.html"
   class="external text" rel="nofollow">Resources</a> - how to download
   sample data and install Apollo on an MS Windows system.
-
-<!-- -->
-
 <a href="http://apollo.berkeleybop.org/current/userguide.html"
 class="external text" rel="nofollow">Apollo user guide</a>  
 The current user guide, which has comprehensive instructions for
@@ -160,97 +141,3 @@ web-based version of the tool.
 \| contact_email = \| input = \| output = \| see_also = \| demo_server =
 \|release date=2002 \| survey_link = Apollo   
 **Cite error: `<ref>` tags exist, but no `<references/>` tag was found**
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [Tool data](../Category%253ATool_data "Category%253ATool data")
-- [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Apollo](../Category%253AApollo "Category%253AApollo")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/Apollo-2Ftool_data" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:44 on 10 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">34,996 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

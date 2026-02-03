@@ -1,23 +1,7 @@
 ---
 title: "GMODWeb"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMODWeb</span>
-
-
-
-
-
-
-
+# GMODWeb
 
 
 > The item described in this page is not (or is no longer) supported by
@@ -42,7 +26,7 @@ href="http://radius.genomics.ctrl.ucla.edu/turnkey/pmwiki.php?n=Main.NewMod"
 class="external text" rel="nofollow">Making a New MOD</a> for more
 information about his process.
 
-## <span id="Turnkey" class="mw-headline">Turnkey</span>
+## Turnkey
 
 [Turnkey](Turnkey "Turnkey") takes a relational schema of a given
 database as input and transforms it into a fully-functional and
@@ -60,7 +44,7 @@ alt="Turnkey.png" />
 
   
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 For site administrators installing GMODWeb we recommend using the
 <a href="http://biopackages.net" class="external free"
@@ -69,7 +53,7 @@ rel="nofollow">http://biopackages.net</a> RPM packages or
 <a href="http://sourceforge.net/projects/turnkey" class="external free"
 rel="nofollow">http://sourceforge.net/projects/turnkey</a>.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 <a href="http://genomebiology.com/2008/9/6/R102" class="external text"
 rel="nofollow">GMODWeb: a web framework for the generic model organism
@@ -82,90 +66,3 @@ Olivier Arnaiz, [Linda Sperling](User%253ASperling "User%253ASperling") and
 [GMODWeb and Package Management](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a1/Jan2009GMODWebAndPackages.pdf "File:Jan2009GMODWebAndPackages.pdf")  
 presentation by Brian O'Connor at the [January 2009 GMOD
 Meeting](January_2009_GMOD_Meeting#GMODWeb_and_Package_Management "January 2009 GMOD Meeting").
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")
-- [GMODWeb](Category%253AGMODWeb "Category%253AGMODWeb")
-- [Turnkey](Category%253ATurnkey "Category%253ATurnkey")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMODWeb" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:30 on 4 April
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">59,265 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

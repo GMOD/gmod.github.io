@@ -1,23 +1,7 @@
 ---
 title: "Category%253AScreenshots"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Category%253AScreenshots</span>
-
-
-
-
-
-
-
+# Category%253AScreenshots
 
 
 Screenshots of [GMOD Components](GMOD_Components "GMOD Components"),
@@ -29,12 +13,9 @@ GMOD user web sites, and anything else.
 This category contains only the following page.
 
 
-
 ### A
 
 - [AWS walkthrough](AWS_walkthrough "AWS walkthrough")
-
-
 
 
 ## Media in category "Screenshots"
@@ -2105,90 +2086,4 @@ The following 89 files are in this category, out of 89 total.
   
 
   [JBrowse-arc-screenshot...](File:JBrowse-arc-screenshot.png.png "File:JBrowse-arc-screenshot.png.png")  
-  50 KB  
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Category%253AScreenshots" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:04 on 29 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">10,286 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+  50 KB

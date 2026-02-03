@@ -1,23 +1,7 @@
 ---
 title: "Chado Update via GFF"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Update via GFF</span>
-
-
-
-
-
-
-
+# Chado Update via GFF
 
 
 There has frequently been interest in updating a
@@ -36,24 +20,17 @@ to have it do updates and deletes as well. Accordingly, I've identified
 these cases that should be addressed:
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Updating
   properties</span>](#Updating_properties)
-- [<span class="tocnumber">2</span> <span class="toctext">Updating
-  feature locations</span>](#Updating_feature_locations)
-- [<span class="tocnumber">3</span> <span class="toctext">Updating
-  complete gene models</span>](#Updating_complete_gene_models)
-- [<span class="tocnumber">4</span> <span class="toctext">Deleting
-  features</span>](#Deleting_features)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Comments</span>](#Comments)
+- [Updating
+  feature locations](#Updating_feature_locations)
+- [Updating
+  complete gene models](#Updating_complete_gene_models)
+- [Deleting
+  features](#Deleting_features)
+- [Comments](#Comments)
 
 
-
-# <span id="Updating_properties" class="mw-headline">Updating properties</span>
+# Updating properties
 
 Perhaps the simplest case is when updating feature properties (for
 purposes of this discussion, 'feature properties' encompasses items in
@@ -73,13 +50,13 @@ instance:
   feature is the same? Is the Name enough? What about Name and type?
   Name, type and srcfeature/seq_id?
 
-# <span id="Updating_feature_locations" class="mw-headline">Updating feature locations</span>
+# Updating feature locations
 
 If name, type and srcfeature are the same, allow
 [featureloc](Chado_Sequence_Module#Table:_featureloc "Chado Sequence Module")
 updates?
 
-# <span id="Updating_complete_gene_models" class="mw-headline">Updating complete gene models</span>
+# Updating complete gene models
 
 If updating child features, what happens to the old features? Remove
 their
@@ -87,11 +64,11 @@ their
 entries and create completely new children? Only allow this for features
 of type 'gene'?
 
-# <span id="Deleting_features" class="mw-headline">Deleting features</span>
+# Deleting features
 
 Again, if name, type and srcfeature are the same, allow the delete?
 
-# <span id="Comments" class="mw-headline">Comments</span>
+# Comments
 
 - I'd say the most useful cases for many folks would be (a) add
   annotations/properties to main gene features, and (b) delete then
@@ -105,9 +82,6 @@ Again, if name, type and srcfeature are the same, allow the delete?
 - For GFF input to handle these, I'd say lines like this should be able
   to trigger updates to an existing feature, where CRUDop is your
   database Create/Replace/Update/Drop operation.
-
-<!-- -->
-
      RefChr  Source  Type  (st) (en) (sc) (st) (ph)   Attributes
      ChrX    MyDB    gene    .    .   .    .    .      ID=MyGene1;CRUDop=DROP
      ChrX    MyDB    gene    .    .   .    .    .      ID=MyGene2;CRUDop=UPDATE;Dbxref=SW:U1234
@@ -117,87 +91,6 @@ Again, if name, type and srcfeature are the same, allow the delete?
 (EDT)
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Update_via_GFF" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:23 on 30 December
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">22,192 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

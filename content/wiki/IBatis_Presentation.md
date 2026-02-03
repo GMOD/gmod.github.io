@@ -1,23 +1,7 @@
 ---
 title: "IBatis Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">IBatis Presentation</span>
-
-
-
-
-
-
-
+# IBatis Presentation
 
 
 Jeff Bowes, Xenbase, University of Calgary. This Wiki section is an
@@ -26,66 +10,49 @@ edited version of
 title="IBatis.pdf">Jeff's presentation</a>.
 
 
-## Contents
+  ibatis](#ibatis)
+- [Abator](#Abator)
+- [Abator
+  Example](#Abator_Example)
+- [Abator
+  Example](#Abator_Example_2)
+- [Abator
+  Example](#Abator_Example_3)
+- [Abator](#Abator_2)
+- [DAO
+  Methods](#DAO_Methods)
+- [Insert](#Insert)
+- [Insert](#Insert_2)
+- [Insert](#Insert_3)
+- [Insert](#Insert_4)
+- [Insert](#Insert_5)
+- [Problem 1 -
+  Insert](#Problem_1_-_Insert)
+- [Problem 1 -
+  Insert](#Problem_1_-_Insert_2)
+- [Transactions](#Transactions)
+- [Retrieval](#Retrieval)
+- [Problem 2 -
+  Master Detail Reports](#Problem_2_-_Master_Detail_Reports)
+- [Problem 2 -
+  Master Detail Report](#Problem_2_-_Master_Detail_Report)
+- [Master Detail
+  Report](#Master_Detail_Report)
+- [Dynamic
+  Queries](#Dynamic_Queries)
+- [Dynamic
+  Queries](#Dynamic_Queries_2)
+- [Dynamic
+  Queries](#Dynamic_Queries_3)
+- [Miscellaneous
+  Features](#Miscellaneous_Features)
+- [Support](#Support)
+- [What iBatis
+  Does Well](#What_iBatis_Does_Well)
+- [Acknowledgements](#Acknowledgements)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">ibatis</span>](#ibatis)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Abator</span>](#Abator)
-- [<span class="tocnumber">3</span> <span class="toctext">Abator
-  Example</span>](#Abator_Example)
-- [<span class="tocnumber">4</span> <span class="toctext">Abator
-  Example</span>](#Abator_Example_2)
-- [<span class="tocnumber">5</span> <span class="toctext">Abator
-  Example</span>](#Abator_Example_3)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Abator</span>](#Abator_2)
-- [<span class="tocnumber">7</span> <span class="toctext">DAO
-  Methods</span>](#DAO_Methods)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Insert</span>](#Insert)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">Insert</span>](#Insert_2)
-- [<span class="tocnumber">10</span>
-  <span class="toctext">Insert</span>](#Insert_3)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Insert</span>](#Insert_4)
-- [<span class="tocnumber">12</span>
-  <span class="toctext">Insert</span>](#Insert_5)
-- [<span class="tocnumber">13</span> <span class="toctext">Problem 1 -
-  Insert</span>](#Problem_1_-_Insert)
-- [<span class="tocnumber">14</span> <span class="toctext">Problem 1 -
-  Insert</span>](#Problem_1_-_Insert_2)
-- [<span class="tocnumber">15</span>
-  <span class="toctext">Transactions</span>](#Transactions)
-- [<span class="tocnumber">16</span>
-  <span class="toctext">Retrieval</span>](#Retrieval)
-- [<span class="tocnumber">17</span> <span class="toctext">Problem 2 -
-  Master Detail Reports</span>](#Problem_2_-_Master_Detail_Reports)
-- [<span class="tocnumber">18</span> <span class="toctext">Problem 2 -
-  Master Detail Report</span>](#Problem_2_-_Master_Detail_Report)
-- [<span class="tocnumber">19</span> <span class="toctext">Master Detail
-  Report</span>](#Master_Detail_Report)
-- [<span class="tocnumber">20</span> <span class="toctext">Dynamic
-  Queries</span>](#Dynamic_Queries)
-- [<span class="tocnumber">21</span> <span class="toctext">Dynamic
-  Queries</span>](#Dynamic_Queries_2)
-- [<span class="tocnumber">22</span> <span class="toctext">Dynamic
-  Queries</span>](#Dynamic_Queries_3)
-- [<span class="tocnumber">23</span> <span class="toctext">Miscellaneous
-  Features</span>](#Miscellaneous_Features)
-- [<span class="tocnumber">24</span>
-  <span class="toctext">Support</span>](#Support)
-- [<span class="tocnumber">25</span> <span class="toctext">What iBatis
-  Does Well</span>](#What_iBatis_Does_Well)
-- [<span class="tocnumber">26</span>
-  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
-
-
-
-##### <span id="ibatis" class="mw-headline">ibatis</span>
+##### ibatis
 
 - iBatis
   - Light-weight framework
@@ -102,7 +69,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 - Supports different transaction schemes
   - For example, JDBC, Java Transaction API
 
-##### <span id="Abator" class="mw-headline">Abator</span>
+##### Abator
 
 - Generates ibatis CRUD objects by introspecting database tables
 - Abator creates *SQL in XML* files (SQL Map files) and Java classes
@@ -112,7 +79,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 - In the SQL Map files you can specify how to find parent ids, such as
   feature_id.
 
-##### <span id="Abator_Example" class="mw-headline">Abator Example</span>
+##### Abator Example
 
 
 ``` de1
@@ -138,7 +105,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 ```
 
 
-##### <span id="Abator_Example_2" class="mw-headline">Abator Example</span>
+##### Abator Example
 
 
 ``` de1
@@ -164,7 +131,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 ```
 
 
-##### <span id="Abator_Example_3" class="mw-headline">Abator Example</span>
+##### Abator Example
 
 
 ``` de1
@@ -179,7 +146,7 @@ title="IBatis.pdf">Jeff's presentation</a>.
 
   
 
-##### <span id="Abator_2" class="mw-headline">Abator</span>
+##### Abator
 
 Works as:
 
@@ -187,7 +154,7 @@ Works as:
 - ANT
 - Standalone
 
-##### <span id="DAO_Methods" class="mw-headline">DAO Methods</span>
+##### DAO Methods
 
 - Insert (Feature)
 - Update (Feature)
@@ -196,7 +163,7 @@ Works as:
 - SelectbyExample (FeatureExample)
 - DeletebyExample (FeatureExample)
 
-##### <span id="Insert" class="mw-headline">Insert</span>
+##### Insert
 
 
 ``` de1
@@ -219,7 +186,7 @@ Works as:
 ```
 
 
-##### <span id="Insert_2" class="mw-headline">Insert</span>
+##### Insert
 
 
 ``` de1
@@ -242,7 +209,7 @@ Works as:
 ```
 
 
-##### <span id="Insert_3" class="mw-headline">Insert</span>
+##### Insert
 
 
 ``` de1
@@ -265,7 +232,7 @@ Works as:
 ```
 
 
-##### <span id="Insert_4" class="mw-headline">Insert</span>
+##### Insert
 
 
 ``` de1
@@ -276,7 +243,7 @@ Works as:
 ```
 
 
-##### <span id="Insert_5" class="mw-headline">Insert</span>
+##### Insert
 
 
 ``` de1
@@ -287,7 +254,7 @@ Works as:
 ```
 
 
-##### <span id="Problem_1_-_Insert" class="mw-headline">Problem 1 - Insert</span>
+##### Problem 1 - Insert
 
 
 ``` de1
@@ -309,7 +276,7 @@ Works as:
 ```
 
 
-##### <span id="Problem_1_-_Insert_2" class="mw-headline">Problem 1 - Insert</span>
+##### Problem 1 - Insert
 
 
 ``` de1
@@ -331,7 +298,7 @@ Works as:
 ```
 
 
-##### <span id="Transactions" class="mw-headline">Transactions</span>
+##### Transactions
 
 - SQLMap
 - JDBC
@@ -340,7 +307,7 @@ Works as:
 - Hibernate
 - External (Customized)
 
-##### <span id="Retrieval" class="mw-headline">Retrieval</span>
+##### Retrieval
 
     symbol: xfile
     description: A test gene for GMOD meeting
@@ -352,7 +319,7 @@ Works as:
                              strand: 1
                              srcFeature_id: Id of genomic sample
 
-##### <span id="Problem_2_-_Master_Detail_Reports" class="mw-headline">Problem 2 - Master Detail Reports</span>
+##### Problem 2 - Master Detail Reports
 
 Account for cycles or recursion in Master Detail Report.
 
@@ -382,7 +349,7 @@ Account for cycles or recursion in Master Detail Report.
 ```
 
 
-##### <span id="Problem_2_-_Master_Detail_Report" class="mw-headline">Problem 2 - Master Detail Report</span>
+##### Problem 2 - Master Detail Report
 
 
 ``` de1
@@ -410,7 +377,7 @@ Account for cycles or recursion in Master Detail Report.
 ```
 
 
-##### <span id="Master_Detail_Report" class="mw-headline">Master Detail Report</span>
+##### Master Detail Report
 
     gene_id  Symbol   Type      Fmin   Fmax
     6129482  x-files  gene      13691   13767
@@ -422,7 +389,7 @@ Becomes:
     6129482  x-files  gene      13691   13767
                                               14687   14720
 
-##### <span id="Dynamic_Queries" class="mw-headline">Dynamic Queries</span>
+##### Dynamic Queries
 
 - Gene Name (Description)
   - Feature, Featureprop
@@ -433,7 +400,7 @@ Becomes:
 - Ortholog Synonyms
   - Feature, Feature_relationship, Feature, Feature Synonyms
 
-##### <span id="Dynamic_Queries_2" class="mw-headline">Dynamic Queries</span>
+##### Dynamic Queries
 
     FROM
         CAT_X_GENE_V gc
@@ -449,7 +416,7 @@ Becomes:
         NCBI_GI n
      </isEqual>
 
-##### <span id="Dynamic_Queries_3" class="mw-headline">Dynamic Queries</span>
+##### Dynamic Queries
 
     <dynamic prepend="WHERE">
      <isEqual prepend="AND" property="searchNameOnly“
@@ -463,7 +430,7 @@ Becomes:
 
 Iterate very useful for multiple search terms
 
-##### <span id="Miscellaneous_Features" class="mw-headline">Miscellaneous Features</span>
+##### Miscellaneous Features
 
 - Supports various data sources
   - Simple JDBC
@@ -473,7 +440,7 @@ Iterate very useful for multiple search terms
 - Local caching of results
   - Lazy loading
 
-##### <span id="Support" class="mw-headline">Support</span>
+##### Support
 
 - In GMOD used by
   - Xenbase, [Artemis](Artemis "Artemis") at Sanger
@@ -483,7 +450,7 @@ Iterate very useful for multiple search terms
   - www.ibatis.apache.org
 - Active community
 
-##### <span id="What_iBatis_Does_Well" class="mw-headline">What iBatis Does Well</span>
+##### What iBatis Does Well
 
 - Does not hide SQL
   - No new query language to learn
@@ -496,7 +463,7 @@ Iterate very useful for multiple search terms
   - You can structure conditions around clauses in SQL
   - One XML statement can represent many variations on a query
 
-##### <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
+##### Acknowledgements
 
 GMOD
 
@@ -520,91 +487,3 @@ Financial Support
 - University of Calgary, Faculty of Science
 - University of Calgary Dept. of Computer Science
 - NICHD
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Java](Category%253AJava "Category%253AJava")
-- [Middleware
-  Presentations](Category%253AMiddleware_Presentations "Category%253AMiddleware Presentations")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/IBatis_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:10 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">32,339 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

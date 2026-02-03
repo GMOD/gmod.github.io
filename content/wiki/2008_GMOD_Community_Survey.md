@@ -1,69 +1,44 @@
 ---
 title: "2008 GMOD Community Survey"
 ---
+# 2008 GMOD Community Survey
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2008 GMOD Community Survey</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Survey
   Links</span>](#Survey_Links)
-- [<span class="tocnumber">2</span> <span class="toctext">GMOD
-  Components</span>](#GMOD_Components)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Popular
-    Combinations</span>](#Popular_Combinations)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD
-  Servers</span>](#GMOD_Servers)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Operating
-    System</span>](#Operating_System)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Current
-    Server Sufficient?</span>](#Current_Server_Sufficient.3F)
-- [<span class="tocnumber">4</span> <span class="toctext">GMOD
-  Meetings</span>](#GMOD_Meetings)
-- [<span class="tocnumber">5</span> <span class="toctext">GMOD
-  Project</span>](#GMOD_Project)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Most
-    Satisfied With</span>](#Most_Satisfied_With)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Least
-    Satisfied With</span>](#Least_Satisfied_With)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Next 12 to
-    18 Months</span>](#Next_12_to_18_Months)
-- [<span class="tocnumber">6</span> <span class="toctext">GMOD Help
-  Desk</span>](#GMOD_Help_Desk)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Help Desk
-    Priorities</span>](#Help_Desk_Priorities)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">GMOD
-    Course in Europe</span>](#GMOD_Course_in_Europe)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">GMOD
-    Course in Asia/Pacific</span>](#GMOD_Course_in_Asia.2FPacific)
-- [<span class="tocnumber">7</span> <span class="toctext">Survey
+- [GMOD
+  Components](#GMOD_Components)
+  - [Popular
+    Combinations](#Popular_Combinations)
+- [GMOD
+  Servers](#GMOD_Servers)
+  - [Operating
+    System](#Operating_System)
+  - [Current
+    Server Sufficient?](#Current_Server_Sufficient.3F)
+- [GMOD
+  Meetings](#GMOD_Meetings)
+- [GMOD
+  Project](#GMOD_Project)
+  - [Most
+    Satisfied With](#Most_Satisfied_With)
+  - [Least
+    Satisfied With](#Least_Satisfied_With)
+  - [Next 12 to
+    18 Months](#Next_12_to_18_Months)
+- [GMOD Help
+  Desk](#GMOD_Help_Desk)
+  - [Help Desk
+    Priorities](#Help_Desk_Priorities)
+  - [GMOD
+    Course in Europe](#GMOD_Course_in_Europe)
+  - [GMOD
+    Course in Asia/Pacific](#GMOD_Course_in_Asia.2FPacific)
+- [Survey
   Participants and
-  Organizations</span>](#Survey_Participants_and_Organizations)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">User or
-    Developer</span>](#User_or_Developer)
-  - [<span class="tocnumber">7.2</span>
-    <span class="toctext">Interests</span>](#Interests)
+  Organizations](#Survey_Participants_and_Organizations)
+  - [User or
+    Developer](#User_or_Developer)
+  - [Interests](#Interests)
 
 
 The first ever GMOD Community Survey was conducted in the last half of
@@ -84,7 +59,7 @@ genomics visualization.
 
   
 
-## <span id="Survey_Links" class="mw-headline">Survey Links</span>
+## Survey Links
 
 Highlights of the survey are on this page. The
 <a href="../extras/2008GMODCommunitySurvey.html" class="external text"
@@ -176,7 +151,7 @@ link in this list.
 
   
 
-## <span id="GMOD_Components" class="mw-headline">GMOD Components</span>
+## GMOD Components
 
 The survey asked participants which
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Components"
@@ -204,7 +179,7 @@ were the most popular responses:
 
   
 
-### <span id="Popular_Combinations" class="mw-headline">Popular Combinations</span>
+### Popular Combinations
 
 From the 89 responses we received, how often are the 5 most popular
 components used at the same site? The cutoff for inclusion in the table
@@ -227,7 +202,7 @@ was 9 responses.
 | Apollo | BioMart |  | GBrowse |  | 9 |
 |  | BioMart | Chado |  |  | 9 |
 
-## <span id="GMOD_Servers" class="mw-headline">GMOD Servers</span>
+## GMOD Servers
 
 The survey also asked several questions about the
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Servers"
@@ -238,7 +213,7 @@ See [Computing
 Requirements](Computing_Requirements "Computing Requirements") for
 recommendations.
 
-### <span id="Operating_System" class="mw-headline">Operating System</span>
+### Operating System
 
 Operating systems in use had a definite skew towards Unix based systems:
 
@@ -250,7 +225,7 @@ Operating systems in use had a definite skew towards Unix based systems:
 |            2 | [Windows](Category%253AWindows "Category%253AWindows")    |
 |            1 | Unspecified Unix                                  |
 
-### <span id="Current_Server_Sufficient.3F" class="mw-headline">Current Server Sufficient?</span>
+### Current Server Sufficient?
 
 We also asked users to describe their current server hardware (not
 summarized here, but
@@ -266,7 +241,7 @@ needs. Responses to the latter question are summarized here.
 |            8 | Faster/More CPUs/Servers      |
 |            5 | Faster/More disk              |
 
-## <span id="GMOD_Meetings" class="mw-headline">GMOD Meetings</span>
+## GMOD Meetings
 
 The survey included a
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Community_Meetings"
@@ -282,14 +257,14 @@ class="external text" rel="nofollow">section on GMOD Meetings</a>.
 See [Meetings](Meetings "Meetings") for a summary of past and upcoming
 meetings.
 
-## <span id="GMOD_Project" class="mw-headline">GMOD Project</span>
+## GMOD Project
 
 The survey asked
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Project"
 class="external text" rel="nofollow">several questions about the project
 overall</a>.
 
-### <span id="Most_Satisfied_With" class="mw-headline">Most Satisfied With</span>
+### Most Satisfied With
 
 There were 59 responses to the question:
 
@@ -306,7 +281,7 @@ Popular responses were:
 | 6 | Open Source |
 | 6 | [Apollo](Apollo.1 "Apollo") |
 
-### <span id="Least_Satisfied_With" class="mw-headline">Least Satisfied With</span>
+### Least Satisfied With
 
 There were 44 responses to the question:
 
@@ -322,7 +297,7 @@ Recurring responses were:
 |            5 | Integration and coordination                                |
 |            3 | None                                                        |
 
-### <span id="Next_12_to_18_Months" class="mw-headline">Next 12 to 18 Months</span>
+### Next 12 to 18 Months
 
 There were 47 responses to the question:
 
@@ -341,7 +316,7 @@ Recurring responses were:
 
   
 
-## <span id="GMOD_Help_Desk" class="mw-headline">GMOD Help Desk</span>
+## GMOD Help Desk
 
 The survey asked
 <a href="../extras/2008GMODCommunitySurvey.html#GMOD_Help_Desk"
@@ -362,7 +337,7 @@ Questions asked included:
   title="GMOD Summer School">GMOD Course</a> in Europe and Asia/Pacific.
   (responses summarized below).
 
-### <span id="Help_Desk_Priorities" class="mw-headline">Help Desk Priorities</span>
+### Help Desk Priorities
 
 The question:
 
@@ -376,7 +351,7 @@ resulted in this priority ranking for these 5 areas:
 4.  Education
 5.  Outreach and Community Building
 
-### <span id="GMOD_Course_in_Europe" class="mw-headline">GMOD Course in Europe</span>
+### GMOD Course in Europe
 
 - 25 respondents were definitely or probably interested in attending a
   <a href="GMOD_Summer_School" class="mw-redirect"
@@ -387,7 +362,7 @@ resulted in this priority ranking for these 5 areas:
 *Note: We are moving forward with plans to hold a GMOD Course in Oxford,
 UK in 2009. Watch the website for details.*
 
-### <span id="GMOD_Course_in_Asia.2FPacific" class="mw-headline">GMOD Course in Asia/Pacific</span>
+### GMOD Course in Asia/Pacific
 
 21 respondents were definitely or probably interested in attending a
 <a href="GMOD_Summer_School" class="mw-redirect"
@@ -409,7 +384,7 @@ Course in Asia/Pacific during the last half of 2009 and during 2010.*
 
   
 
-## <span id="Survey_Participants_and_Organizations" class="mw-headline">Survey Participants and Organizations</span>
+## Survey Participants and Organizations
 
 The survey a number of questions about
 <a href="../extras/2008GMODCommunitySurvey.html#About_You"
@@ -431,7 +406,7 @@ Questions included:
 
   
 
-### <span id="User_or_Developer" class="mw-headline">User or Developer</span>
+### User or Developer
 
 80 participants answered the question:
 
@@ -444,7 +419,7 @@ Questions included:
 | 34           | Both      |
 | 5            | Other     |
 
-### <span id="Interests" class="mw-headline">Interests</span>
+### Interests
 
 Finally, the survey asked:
 
@@ -492,90 +467,3 @@ Responses under *Other* included:
   data in order to test our systems. E. coli is our model organism and
   we extract the data from NCBI and ASAP. Once the system gets ready, we
   are envisioning the biologists to populate their own data.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Community](Category%253AGMOD_Community "Category%253AGMOD Community")
-- [GMOD Project](Category%253AGMOD_Project "Category%253AGMOD Project")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2008_GMOD_Community_Survey"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:33 on 5 October
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">56,687 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

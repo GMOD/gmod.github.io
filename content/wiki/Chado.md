@@ -1,31 +1,14 @@
 ---
 title: "Chado - Getting Started"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado - Getting Started</span>
-
-
-
+# Chado - Getting Started
 
 
 (Redirected from
-[Chado](Chado)
-
-
-
-
+[Chado](/wiki/Chado)
 
 
 Status
-
 
 
 - **Mature** release
@@ -33,9 +16,7 @@ Status
 - **Active** support
 
 
-
 Resources
-
 
 
 - [Introduction](Introduction_to_Chado "Introduction to Chado")
@@ -50,7 +31,6 @@ Resources
   class="external text" rel="nofollow">2008 Survey</a>
 
 
-
 Chado is a [relational database
 schema](Glossary#Database_Schema "Glossary") that underlies [many GMOD
 installations](GMOD_Users "GMOD Users"). It is capable of representing
@@ -63,30 +43,21 @@ molecular biology. The price of this capability is that the new user
 must spend some time becoming familiar with its fundamentals.
 
 
-## Contents
+  Documentation](#Documentation)
+- [Modules](#Modules)
+- [Installation](#Installation)
+  - [Download a
+    Stable Release of Chado](#Download_a_Stable_Release_of_Chado)
+  - [Chado From
+    SVN](#Chado_From_SVN)
+- [Loading
+  Data](#Loading_Data)
+- [Mailing
+  Lists](#Mailing_Lists)
+- [Pronunciation](#Pronunciation)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Modules</span>](#Modules)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Download a
-    Stable Release of Chado</span>](#Download_a_Stable_Release_of_Chado)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Chado From
-    SVN</span>](#Chado_From_SVN)
-- [<span class="tocnumber">4</span> <span class="toctext">Loading
-  Data</span>](#Loading_Data)
-- [<span class="tocnumber">5</span> <span class="toctext">Mailing
-  Lists</span>](#Mailing_Lists)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Pronunciation</span>](#Pronunciation)
-
-
-
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 - [Introduction to Chado](Introduction_to_Chado "Introduction to Chado")
 - <a
@@ -102,7 +73,7 @@ must spend some time becoming familiar with its fundamentals.
 - [PostgreSQL Performance
   Tips](PostgreSQL_Performance_Tips "PostgreSQL Performance Tips")
 
-## <span id="Modules" class="mw-headline">Modules</span>
+## Modules
 
 Chado is a modular schema, designed in such a way as to allow the
 addition of new modules for new data types. The existing modules are:
@@ -145,7 +116,7 @@ addition of new modules for new data types. The existing modules are:
 
   
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 First you will need database software, or Relational Database Management
 System (RDBMS). The recommended RDBMS for Chado currently is
@@ -160,13 +131,13 @@ Once you've installed your RDBMS you can install Chado.
 
   
 
-### <span id="Download_a_Stable_Release_of_Chado" class="mw-headline">Download a Stable Release of Chado</span>
+### Download a Stable Release of Chado
 
 See [Downloads](Downloads "Downloads")
 
   
 
-### <span id="Chado_From_SVN" class="mw-headline">Chado From SVN</span>
+### Chado From SVN
 
 You can get the most up-to-date, not even released yet, version of Chado
 from <a href="Subversion" class="mw-redirect"
@@ -184,7 +155,7 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/schema/trunk/chado/INSTALL.Cha
 class="external text" rel="nofollow"><code>INSTALL.Chado</code></a>
 online.
 
-## <span id="Loading_Data" class="mw-headline">Loading Data</span>
+## Loading Data
 
 After completing these steps, you can load your chado schema with data
 in a number of ways:
@@ -197,7 +168,7 @@ in a number of ways:
 You can also use the application [Apollo](Apollo.1 "Apollo") to curate
 data in Chado.
 
-## <span id="Mailing_Lists" class="mw-headline">Mailing Lists</span>
+## Mailing Lists
 
 |  |  |  |  |
 |----|----|----|----|
@@ -213,97 +184,8 @@ class="external text" rel="nofollow">gmod-schema-cmts</a> | <a href="Chado" clas
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-schema-cmts"
 class="external text" rel="nofollow">Sourceforge</a> |
 
-## <span id="Pronunciation" class="mw-headline">Pronunciation</span>
+## Pronunciation
 
 *Chado* is usually pronounced
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e4/Chado.mp3" class="internal"
 title="Chado.mp3">like this</a>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Chado](Category%253AChado "Category%253AChado")
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_-2D_Getting_Started"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:08 on 13 February
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">945,092 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

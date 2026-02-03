@@ -1,37 +1,21 @@
 ---
 title: "June 2006 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">June 2006 GMOD Meeting</span>
-
-
-
-
-
-
-
+# June 2006 GMOD Meeting
 
 
 GMOD Generic Model Organism Database
 
   
 
-## <span id="Meeting_8" class="mw-headline">Meeting 8</span>
+## Meeting 8
 
 June 29-30 <a href="http://nescent.org" class="external text"
 rel="nofollow">NESCent</a>, Durham, NC
 
   
 
-## <span id="Presentations" class="mw-headline">Presentations</span>
+## Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/99/BenFaga_GMOD_June_2006.ppt"
   class="internal"
@@ -60,7 +44,7 @@ rel="nofollow">NESCent</a>, Durham, NC
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/49/Whats_new.ppt" class="internal"
   title="Whats new.ppt">Whats_new.ppt</a>
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 **June 29**
 
@@ -141,87 +125,6 @@ avoid duplication and encourage cooperation
 1:15 (Presentations, show and tell, depends on what suggestions we get).
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/June_2006_GMOD_Meeting" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:30 on 23 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">35,082 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

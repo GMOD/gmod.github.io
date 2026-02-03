@@ -1,24 +1,7 @@
 ---
 title: "SynView"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">SynView</span>
-
-
-
-
-
-
-
-
+# SynView
 
 
 <img
@@ -29,20 +12,10 @@ alt="SynView Icon.gif" />
   
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Publications</span>](#Publications)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Presentations</span>](#Presentations)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">README</span>](#README)
+  Documentation](#Documentation)
+  - [Publications](#Publications)
+  - [Presentations](#Presentations)
+  - [README](#README)
 
 
 Jessica Kissinger's group at University of Georgia have contributed a
@@ -61,27 +34,27 @@ making SynView work.
 
   
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 See
 <a href="http://www.eupathdb.org/apps/SynView/" class="external free"
 rel="nofollow">http://www.eupathdb.org/apps/SynView/</a>.
 
-### <span id="Publications" class="mw-headline">Publications</span>
+### Publications
 
 - <a
   href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/22/18/2308"
   class="external text" rel="nofollow">SynView: a GBrowse-compatible
   approach to visualizing comparative genome data</a>
 
-### <span id="Presentations" class="mw-headline">Presentations</span>
+### Presentations
 
 - <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/19/SyntenyModeling.pdf" class="internal"
   title="SyntenyModeling.pdf">Modeling and Displaying Synteny w/
   SynView</a> from the [November 2007 GMOD
   Meeting](November_2007_GMOD_Meeting "November 2007 GMOD Meeting").
 
-### <span id="README" class="mw-headline">README</span>
+### README
 
 The files in this directory were supplied by Haiming Wang and Jessica
 Kissinger at University of Georgia's Center for Tropical & Emerging
@@ -117,91 +90,3 @@ Jessica or Haiming, or see their paper in Bioinformatics:
 Wang, H., Su, Y., Mackey, A., Kraemer, E., and \*Kissinger, J.C.\*
 (2006) SynView: A GBrowse-compatible Approach to Visualizing Comparative
 Genome Data. Bioinformatics 22(18), 2308-2309
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Comparative
-  Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/SynView" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:55 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">114,400 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

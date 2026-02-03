@@ -1,23 +1,7 @@
 ---
 title: "Databases and GMOD"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Databases and GMOD</span>
-
-
-
-
-
-
-
+# Databases and GMOD
 
 
 This introduces the broad topic of databases in GMOD. It introduces some
@@ -28,67 +12,48 @@ GMOD, and what database management system choices are available.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Database
   Terminology</span>](#Database_Terminology)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">What's a
-    Database?</span>](#What.27s_a_Database.3F)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Database</span>](#Database)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">Database Management
-      System</span>](#Database_Management_System)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Database Schema</span>](#Database_Schema)
-    - [<span class="tocnumber">1.1.4</span>
-      <span class="toctext">Database Web
-      Site</span>](#Database_Web_Site)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Relational
-    Database Terminology</span>](#Relational_Database_Terminology)
-- [<span class="tocnumber">2</span> <span class="toctext">GMOD Database
-  Components</span>](#GMOD_Database_Components)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Chado</span>](#Chado)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">BioMart</span>](#BioMart)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">InterMine</span>](#InterMine)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Database
-    Tools</span>](#Database_Tools)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">GMOD
+  - [What's a
+    Database?](#What.27s_a_Database.3F)
+    - [Database](#Database)
+    - [Database Management
+      System](#Database_Management_System)
+    - [Database Schema](#Database_Schema)
+    - [Database Web
+      Site](#Database_Web_Site)
+  - [Relational
+    Database Terminology](#Relational_Database_Terminology)
+- [GMOD Database
+  Components](#GMOD_Database_Components)
+  - [Chado](#Chado)
+  - [BioMart](#BioMart)
+  - [InterMine](#InterMine)
+  - [Database
+    Tools](#Database_Tools)
+  - [GMOD
     Components that Require a
-    DBMS</span>](#GMOD_Components_that_Require_a_DBMS)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD DBMS
-  Choices</span>](#GMOD_DBMS_Choices)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Can I Use
+    DBMS](#GMOD_Components_that_Require_a_DBMS)
+- [GMOD DBMS
+  Choices](#GMOD_DBMS_Choices)
+  - [Can I Use
     Something Besides the Default
-    DBMS?</span>](#Can_I_Use_Something_Besides_the_Default_DBMS.3F)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">DBMSs in
+    DBMS?](#Can_I_Use_Something_Besides_the_Default_DBMS.3F)
+  - [DBMSs in
     Use in the GMOD
-    Community</span>](#DBMSs_in_Use_in_the_GMOD_Community)
-    - [<span class="tocnumber">3.2.1</span>
-      <span class="toctext">PostgreSQL</span>](#PostgreSQL)
-    - [<span class="tocnumber">3.2.2</span>
-      <span class="toctext">MySQL</span>](#MySQL)
-    - [<span class="tocnumber">3.2.3</span>
-      <span class="toctext">SQLite</span>](#SQLite)
-    - [<span class="tocnumber">3.2.4</span>
-      <span class="toctext">DB2</span>](#DB2)
-    - [<span class="tocnumber">3.2.5</span>
-      <span class="toctext">Oracle</span>](#Oracle)
-    - [<span class="tocnumber">3.2.6</span>
-      <span class="toctext">Sybase</span>](#Sybase)
-- [<span class="tocnumber">4</span> <span class="toctext">See
-  Also</span>](#See_Also)
+    Community](#DBMSs_in_Use_in_the_GMOD_Community)
+    - [PostgreSQL](#PostgreSQL)
+    - [MySQL](#MySQL)
+    - [SQLite](#SQLite)
+    - [DB2](#DB2)
+    - [Oracle](#Oracle)
+    - [Sybase](#Sybase)
+- [See
+  Also](#See_Also)
 
 
+## Database Terminology
 
-## <span id="Database_Terminology" class="mw-headline">Database Terminology</span>
-
-### <span id="What.27s_a_Database.3F" class="mw-headline">What's a Database?</span>
+### What's a Database?
 
 The term *database* is mentioned in all sorts of contexts in GMOD. It is
 even part of the project's name. Despite its central role in GMOD, the
@@ -96,7 +61,7 @@ term *database* is often used to mean four different things. This
 section distinguishes its various meanings and introduces more precise
 terms that should be (but probably aren't) used throughout GMOD.
 
-#### <span id="Database" class="mw-headline">Database</span>
+#### Database
 
 A *database* is any organized set of data that is readable by a
 computer. This may or may not use a formal *database schema* and may or
@@ -114,7 +79,7 @@ system.
 
 A database can also be in regular files with a well defined format.
 
-#### <span id="Database_Management_System" class="mw-headline">Database Management System</span>
+#### Database Management System
 
 *Database management systems* (DBMSs) are software systems that can
 manage data. Oracle, MySQL, PostgreSQL, and Sybase are all examples of
@@ -122,13 +87,13 @@ DBMSs. DBMSs are *containers of databases*. That is, they are the
 systems that manage databases, which is distinct from the data that they
 manage.
 
-#### <span id="Database_Schema" class="mw-headline">Database Schema</span>
+#### Database Schema
 
 A *database schema* is the design of a particular database, independent
 of its contents. Chado is an example of a database schema. Designs (like
 Chado) can be reused across multiple databases.
 
-#### <span id="Database_Web_Site" class="mw-headline">Database Web Site</span>
+#### Database Web Site
 
 Web sites that feature a lot of database driven content, such as
 [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
@@ -142,7 +107,7 @@ databases backing the web sites, but it is also misleading. These
 websites also show information that doesn't come from their database and
 they also may not show everything in their databases.
 
-### <span id="Relational_Database_Terminology" class="mw-headline">Relational Database Terminology</span>
+### Relational Database Terminology
 
 The [brief guide to
 databases](A_Brief_Guide_to_Databases "A Brief Guide to Databases")
@@ -151,7 +116,7 @@ Databases](Overview#Relational_Databases "Overview") section in
 [Overview](Overview "Overview") explains many terms that are useful in
 understanding relational databases.
 
-## <span id="GMOD_Database_Components" class="mw-headline">GMOD Database Components</span>
+## GMOD Database Components
 
 There are three main GMOD components that are fundamentally about
 databases, and several more that help you manage databases or that use
@@ -159,7 +124,7 @@ databases, and several more that help you manage databases or that use
 
 GMOD's database related components are:
 
-### <span id="Chado" class="mw-headline">Chado</span>
+### Chado
 
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> is the
 modular [database schema](#Database_Schema) of GMOD. Chado is about
@@ -168,7 +133,7 @@ connect other GMOD components to it (either directly or via data
 exports). When someone speaks of the GMOD Schema they are speaking about
 Chado.
 
-### <span id="BioMart" class="mw-headline">BioMart</span>
+### BioMart
 
 [BioMart](BioMart "BioMart") is a data warehouse package tailored for
 biological data. It takes existing databases (for example, the
@@ -177,7 +142,7 @@ biological data. It takes existing databases (for example, the
 transforms them into a data warehouse and then provides a web interface
 for supporting arbitrary queries against the data.
 
-### <span id="InterMine" class="mw-headline">InterMine</span>
+### InterMine
 
 [InterMine](InterMine "InterMine") also integrates multiple data sources
 into a single data warehouse. It has a core data model based on the
@@ -188,7 +153,7 @@ allows creation of custom queries, includes template queries (web forms
 to run 'canned' queries) and can upload and operate on lists of data.
 Many aspects of the web app can be configured and branded.
 
-### <span id="Database_Tools" class="mw-headline">Database Tools</span>
+### Database Tools
 
 - [Argos](Argos "Argos"), a.k.a. Flybase-NG, a.k.a. biodb, is designed
   to provide automatic replication, installation and updates of genome
@@ -211,12 +176,12 @@ Many aspects of the web app can be configured and branded.
   is frequently used to transfer data to and from
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-### <span id="GMOD_Components_that_Require_a_DBMS" class="mw-headline">GMOD Components that Require a DBMS</span>
+### GMOD Components that Require a DBMS
 
 - [CMap](CMap.1 "CMap")
 - [GBrowse_syn](GBrowse_syn.1 "GBrowse syn")
 
-## <span id="GMOD_DBMS_Choices" class="mw-headline">GMOD DBMS Choices</span>
+## GMOD DBMS Choices
 
 Several [GMOD Components](GMOD_Components "GMOD Components") rely on
 databases to store their data. All such components have a default DBMS
@@ -230,7 +195,7 @@ more work, sometimes a lot more work.
 See the component descriptions to find out if they need an underlying
 database and what their default DBMS is.
 
-### <span id="Can_I_Use_Something_Besides_the_Default_DBMS.3F" class="mw-headline">Can I Use Something Besides the Default DBMS?</span>
+### Can I Use Something Besides the Default DBMS?
 
 The answer is yes, but it will mean extra work.
 
@@ -241,12 +206,12 @@ than porting the component to use your DBMS of choice. However, do keep
 in mind that one of the reasons why MySQL and Postgres are often picked
 as default DBMSs is that they are comparatively easy to administer.
 
-### <span id="DBMSs_in_Use_in_the_GMOD_Community" class="mw-headline">DBMSs in Use in the GMOD Community</span>
+### DBMSs in Use in the GMOD Community
 
 Postgres and MySQL are the most popular DBMSs, but several others are in
 use in the GMOD community.
 
-#### <span id="PostgreSQL" class="mw-headline">PostgreSQL</span>
+#### PostgreSQL
 
 [Postgres](PostgreSQL "PostgreSQL") (officially known as *PostgreSQL*)
 is the default DBMS for
@@ -259,7 +224,7 @@ also support PostgreSQL.
 See the [PostgreSQL](PostgreSQL "PostgreSQL") page from more information
 on Postgres.
 
-#### <span id="MySQL" class="mw-headline">MySQL</span>
+#### MySQL
 
 MySQL adapters exist for [GBrowse](GBrowse.1 "GBrowse") and it also used
 by [CMap](CMap.1 "CMap")
@@ -269,7 +234,7 @@ Using MySQL with
 discouraged. See [MySQL](MySQL "MySQL") for more information on MySQL in
 GMOD.
 
-#### <span id="SQLite" class="mw-headline">SQLite</span>
+#### SQLite
 
 <a href="http://sqlite.org/" class="external text"
 rel="nofollow">SQLite</a> is a software library that implements a
@@ -284,7 +249,7 @@ for its data store. It is the default database when installing
 [PostgreSQL](PostgreSQL "PostgreSQL"). It can also be used with
 [GBrowse](GBrowse.1 "GBrowse").
 
-#### <span id="DB2" class="mw-headline">DB2</span>
+#### DB2
 
 <a href="http://xenbase.org" class="external text"
 rel="nofollow">Xenbase</a> uses
@@ -300,7 +265,7 @@ href="http://www-304.ibm.com/jct09002c/university/scholars/academicinitiative/"
 class="external text" rel="nofollow">free academic licenses</a>. DB2 is
 one of the big players in the commercial database market.
 
-#### <span id="Oracle" class="mw-headline">Oracle</span>
+#### Oracle
 
 Oracle is a supported DBMS for [CMap](CMap.1 "CMap") and
 [GBrowse](GBrowse.1 "GBrowse").
@@ -322,7 +287,7 @@ Oracle is a high-end database management system from
 Corporation</a>. It is the most popular commercial database in the
 world.
 
-#### <span id="Sybase" class="mw-headline">Sybase</span>
+#### Sybase
 
 Due to its heritage at JCVI, the default database of the
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>
@@ -331,95 +296,7 @@ used with MySQL and PostgreSQL by way of the
 <a href="https://sourceforge.net/projects/coati-api/"
 class="external text" rel="nofollow">Coati</a> development framework.
 
-## <span id="See_Also" class="mw-headline">See Also</span>
+## See Also
 
 [Relational Databases](Overview#Relational_Databases "Overview") in
 [Overview](Overview "Overview").
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
-- [MySQL](Category%253AMySQL "Category%253AMySQL")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Databases_and_GMOD" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:31 on 25 March
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">220,225 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

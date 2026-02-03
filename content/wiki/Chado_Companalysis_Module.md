@@ -1,23 +1,7 @@
 ---
 title: "Chado Companalysis Module"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Companalysis Module</span>
-
-
-
-
-
-
-
+# Chado Companalysis Module
 
 
 The companalysis module is designed for the storage of computational
@@ -26,56 +10,43 @@ computational analysis can be interpreted or described as a sequence
 feature.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using the
   companalysis module</span>](#Using_the_companalysis_module)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Alignment
-    Results in Flybase</span>](#Alignment_Results_in_Flybase)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Background</span>](#Background)
-    - [<span class="tocnumber">1.1.2</span>
-      <span class="toctext">General
-      implementation</span>](#General_implementation)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Examples</span>](#Examples)
-    - [<span class="tocnumber">1.1.4</span>
-      <span class="toctext">Evidence data types in
-      chado</span>](#Evidence_data_types_in_chado)
-      - [<span class="tocnumber">1.1.4.1</span>
-        <span class="toctext">Aligned
-        features</span>](#Aligned_features)
-      - [<span class="tocnumber">1.1.4.2</span>
-        <span class="toctext">Predicted
-        features</span>](#Predicted_features)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    analysis</span>](#Table:_analysis)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    analysisfeature</span>](#Table:_analysisfeature)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    analysisprop</span>](#Table:_analysisprop)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">UML
-    diagram</span>](#UML_diagram)
+  - [Alignment
+    Results in Flybase](#Alignment_Results_in_Flybase)
+    - [Background](#Background)
+    - [General
+      implementation](#General_implementation)
+    - [Examples](#Examples)
+    - [Evidence data types in
+      chado](#Evidence_data_types_in_chado)
+      - [Aligned
+        features](#Aligned_features)
+      - [Predicted
+        features](#Predicted_features)
+- [Tables](#Tables)
+  - [Table:
+    analysis](#Table:_analysis)
+  - [Table:
+    analysisfeature](#Table:_analysisfeature)
+  - [Table:
+    analysisprop](#Table:_analysisprop)
+  - [UML
+    diagram](#UML_diagram)
 
 
-
-# <span id="Using_the_companalysis_module" class="mw-headline">Using the companalysis module</span>
+# Using the companalysis module
 
 The following are examples showing how to use this module to describe
 the results from a given computational analysis.
 
-## <span id="Alignment_Results_in_Flybase" class="mw-headline">Alignment Results in Flybase</span>
+## Alignment Results in Flybase
 
 Written by Andy Schroeder, the original Wiki page is here: <a
 href="http://cedar.bio.indiana.edu/mediawiki/index.php/Aligned_computational_analyses_implementation"
 class="external free"
 rel="nofollow">http://cedar.bio.indiana.edu/mediawiki/index.php/Aligned_computational_analyses_implementation</a>.
 
-### <span id="Background" class="mw-headline">Background</span>
+### Background
 
 Alignment of nucleic acids and conceptually back translated proteins to
 the genomic chromosomal arms provides much of the evidence for gene
@@ -90,7 +61,7 @@ associated genome localized match features (analogous to hsp matches)
 are stored. These localized match features are only localized via
 featureloc to the genome and not to a second type of feature.
 
-### <span id="General_implementation" class="mw-headline">General implementation</span>
+### General implementation
 
 **Nucleotide and protein alignments**
 
@@ -114,7 +85,7 @@ featureloc to the genome and not to a second type of feature.
                  |    | f_r  f_r |   |
                 --B----        ---C---        hsp feature type = match
 
-### <span id="Examples" class="mw-headline">Examples</span>
+### Examples
 
 See the diagrams above.
 
@@ -161,9 +132,9 @@ protein.
     blastx then the *featureloc.residue_info* should be aminoacid
     residues)
 
-### <span id="Evidence_data_types_in_chado" class="mw-headline">Evidence data types in chado</span>
+### Evidence data types in chado
 
-#### <span id="Aligned_features" class="mw-headline">Aligned features</span>
+#### Aligned features
 
 Here is a list from 'chado_dmel_r4_3_16a_reporting' of aligned feature
 types and the algorithms used to align them (not filtered by species).
@@ -209,7 +180,7 @@ types and the algorithms used to align them (not filtered by species).
      so                   | tblastxwrap_masked
     (28 rows)
 
-#### <span id="Predicted_features" class="mw-headline">Predicted features</span>
+#### Predicted features
 
 Note that this was determined by a process of elimination from the
 results of the following query:
@@ -239,9 +210,9 @@ results of the following query:
 
   
 
-# <span id="Tables" class="mw-headline">Tables</span>
+# Tables
 
-## <span id="Table:_analysis" class="mw-headline">Table: analysis</span>
+## Table: analysis
 
 An analysis is a particular type of a computational analysis; it may be
 a blast of one sequence against another, or an all by all blast, or a
@@ -353,20 +324,14 @@ analysis Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [analysisfeature](Chado_Tables#Table:_analysisfeature "Chado Tables")
-
-<!-- -->
-
 - [analysisprop](Chado_Tables#Table:_analysisprop "Chado Tables")
-
-<!-- -->
-
 - [quantification](Chado_Tables#Table:_quantification "Chado Tables")
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_analysisfeature" class="mw-headline">Table: analysisfeature</span>
+## Table: analysisfeature
 
 Computational analyses generate features (e.g. Genscan generates
 transcripts and exons; sim4 alignments generate similarity/match
@@ -472,7 +437,7 @@ analysisfeature Structure
 
   
 
-## <span id="Table:_analysisprop" class="mw-headline">Table: analysisprop</span>
+## Table: analysisprop
 
 | F-Key | Name | Type | Description |
 |----|----|----|----|
@@ -485,97 +450,9 @@ analysisprop Structure
 
 ------------------------------------------------------------------------
 
-## <span id="UML_diagram" class="mw-headline">UML diagram</span>
+## UML diagram
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1d/ChadoMod-Companalysis.png/600px-ChadoMod-Companalysis.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1d/ChadoMod-Companalysis.png/900px-ChadoMod-Companalysis.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/1d/ChadoMod-Companalysis.png/1200px-ChadoMod-Companalysis.png 2x"
 width="600" height="360" alt="ChadoMod-Companalysis.png" />
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Analysis](Category%253AAnalysis "Category%253AAnalysis")
-- [BLAST](Category%253ABLAST "Category%253ABLAST")
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Companalysis_Module"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 10:04 on 26 May
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">92,736 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Configuration/Images"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/Images</span>
-
-
-
-
-
-
-
+# GBrowse Configuration/Images
 
 
 This article describes **static images** and how to create them in
@@ -29,7 +13,7 @@ For the main GBrowse configuration article, see:
   title="GBrowse Configuration">GBrowse Configuration</a> or
 - [GBrowse 2.0 HOWTO](../GBrowse_2.0_HOWTO "GBrowse 2.0 HOWTO").
 
-## <span id="Generating_Static_Images:_PNGs.2C_SVGs_and_PDFs" class="mw-headline">Generating Static Images: PNGs, SVGs and PDFs</span>
+## Generating Static Images: PNGs, SVGs and PDFs
 
 GBrowse can create three types of static image suitable for
 incorporation into posters, publications or other web pages:
@@ -84,96 +68,3 @@ At the current time there is no known fix for this problem.
 Note that Inkscape PDF generation should work properly on all platforms,
 including Linux, Mac OSX and Windows. However, it has only been tested
 on Linux platforms at the current time.
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](../Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](../Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](../Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GBrowse_Configuration-2FImages"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 09:23 on 12 August
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">26,182 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,185 +1,131 @@
 ---
 title: "InterMine Tutorial 2011"
 ---
+# InterMine Tutorial 2011
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">InterMine Tutorial 2011</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">OOOPS!</span>](#OOOPS.21)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">4</span> <span class="toctext">Loading Data
-  Into Your Database</span>](#Loading_Data_Into_Your_Database)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">The
-    tutorial data</span>](#The_tutorial_data)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">The
+  OOOPS!](#OOOPS.21)
+- [Introduction](#Introduction)
+- [Overview](#Overview)
+- [Loading Data
+  Into Your Database](#Loading_Data_Into_Your_Database)
+  - [The
+    tutorial data](#The_tutorial_data)
+  - [The
     MineManager Graphical
-    Installer</span>](#The_MineManager_Graphical_Installer)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Running it from the command
-      line</span>](#Running_it_from_the_command_line)
-    - [<span class="tocnumber">4.2.2</span>
-      <span class="toctext">Running it from a clickable
-      launcher</span>](#Running_it_from_a_clickable_launcher)
-    - [<span class="tocnumber">4.2.3</span>
-      <span class="toctext">Welcome Screen</span>](#Welcome_Screen)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Starting a
-    new Mine</span>](#Starting_a_new_Mine)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Setting up the new Mine's
-      properties</span>](#Setting_up_the_new_Mine.27s_properties)
-    - [<span class="tocnumber">4.3.2</span> <span class="toctext">The
-      Mine project directory</span>](#The_Mine_project_directory)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Adding
-    Sources to a Project</span>](#Adding_Sources_to_a_Project)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Importing Protein Data From
-      Uniprot</span>](#Importing_Protein_Data_From_Uniprot)
-      - [<span class="tocnumber">4.4.1.1</span>
-        <span class="toctext">Side Note: Model
-        Additions</span>](#Side_Note:_Model_Additions)
-    - [<span class="tocnumber">4.4.2</span> <span class="toctext">The
-      GFF3 source</span>](#The_GFF3_source)
-    - [<span class="tocnumber">4.4.3</span> <span class="toctext">FASTA
-      files</span>](#FASTA_files)
-    - [<span class="tocnumber">4.4.4</span> <span class="toctext">Entrez
-      Organism</span>](#Entrez_Organism)
-    - [<span class="tocnumber">4.4.5</span>
-      <span class="toctext">Loading Custom Data
-      Sources</span>](#Loading_Custom_Data_Sources)
-      - [<span class="tocnumber">4.4.5.1</span>
-        <span class="toctext">Tool-chain
-        details</span>](#Tool-chain_details)
-      - [<span class="tocnumber">4.4.5.2</span>
-        <span class="toctext">Installing the Perl
-        tool-chain</span>](#Installing_the_Perl_tool-chain)
-      - [<span class="tocnumber">4.4.5.3</span>
-        <span class="toctext">Our example
-        dataset</span>](#Our_example_dataset)
-      - [<span class="tocnumber">4.4.5.4</span>
-        <span class="toctext">Our parsing
-        strategy</span>](#Our_parsing_strategy)
-      - [<span class="tocnumber">4.4.5.5</span>
-        <span class="toctext">Adding The
-        Source</span>](#Adding_The_Source)
-      - [<span class="tocnumber">4.4.5.6</span> <span class="toctext">An
+    Installer](#The_MineManager_Graphical_Installer)
+    - [Running it from the command
+      line](#Running_it_from_the_command_line)
+    - [Running it from a clickable
+      launcher](#Running_it_from_a_clickable_launcher)
+    - [Welcome Screen](#Welcome_Screen)
+  - [Starting a
+    new Mine](#Starting_a_new_Mine)
+    - [Setting up the new Mine's
+      properties](#Setting_up_the_new_Mine.27s_properties)
+    - [The
+      Mine project directory](#The_Mine_project_directory)
+  - [Adding
+    Sources to a Project](#Adding_Sources_to_a_Project)
+    - [Importing Protein Data From
+      Uniprot](#Importing_Protein_Data_From_Uniprot)
+      - [Side Note: Model
+        Additions](#Side_Note:_Model_Additions)
+    - [The
+      GFF3 source](#The_GFF3_source)
+    - [FASTA
+      files](#FASTA_files)
+    - [Entrez
+      Organism](#Entrez_Organism)
+    - [Loading Custom Data
+      Sources](#Loading_Custom_Data_Sources)
+      - [Tool-chain
+        details](#Tool-chain_details)
+      - [Installing the Perl
+        tool-chain](#Installing_the_Perl_tool-chain)
+      - [Our example
+        dataset](#Our_example_dataset)
+      - [Our parsing
+        strategy](#Our_parsing_strategy)
+      - [Adding The
+        Source](#Adding_The_Source)
+      - [An
         Example Implementation of this
-        Strategy</span>](#An_Example_Implementation_of_this_Strategy)
-      - [<span class="tocnumber">4.4.5.7</span>
-        <span class="toctext">Additions</span>](#Additions)
-        - [<span class="tocnumber">4.4.5.7.1</span>
-          <span class="toctext">Gene</span>](#Gene)
-        - [<span class="tocnumber">4.4.5.7.2</span>
-          <span class="toctext">Pathway</span>](#Pathway)
-      - [<span class="tocnumber">4.4.5.8</span>
-        <span class="toctext">Dealing With
-        Integration</span>](#Dealing_With_Integration)
-      - [<span class="tocnumber">4.4.5.9</span>
-        <span class="toctext">Generating the
-        XML</span>](#Generating_the_XML)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Running a
-    Build</span>](#Running_a_Build)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Deployment</span>](#Deployment)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">UserProfile
-    Initialisation</span>](#UserProfile_Initialisation)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Starting
-    the Tomcat Webserver</span>](#Starting_the_Tomcat_Webserver)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">Deploying
-    the Webapp to Tomcat</span>](#Deploying_the_Webapp_to_Tomcat)
-- [<span class="tocnumber">6</span> <span class="toctext">Accessing Your
+        Strategy](#An_Example_Implementation_of_this_Strategy)
+      - [Additions](#Additions)
+        - [Gene](#Gene)
+        - [Pathway](#Pathway)
+      - [Dealing With
+        Integration](#Dealing_With_Integration)
+      - [Generating the
+        XML](#Generating_the_XML)
+  - [Running a
+    Build](#Running_a_Build)
+- [Deployment](#Deployment)
+  - [Configuration](#Configuration)
+  - [UserProfile
+    Initialisation](#UserProfile_Initialisation)
+  - [Starting
+    the Tomcat Webserver](#Starting_the_Tomcat_Webserver)
+  - [Deploying
+    the Webapp to Tomcat](#Deploying_the_Webapp_to_Tomcat)
+- [Accessing Your
   Data Through the
-  Webapp</span>](#Accessing_Your_Data_Through_the_Webapp)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Single
-    Objects (Report Pages)</span>](#Single_Objects_.28Report_Pages.29)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Multiple
-    Objects (Lists)</span>](#Multiple_Objects_.28Lists.29)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Exporting
+  Webapp](#Accessing_Your_Data_Through_the_Webapp)
+  - [Single
+    Objects (Report Pages)](#Single_Objects_.28Report_Pages.29)
+  - [Multiple
+    Objects (Lists)](#Multiple_Objects_.28Lists.29)
+  - [Exporting
     Data and Summarising
-    Columns</span>](#Exporting_Data_and_Summarising_Columns)
-    - [<span class="tocnumber">6.3.1</span>
-      <span class="toctext">Exporting Data</span>](#Exporting_Data)
-    - [<span class="tocnumber">6.3.2</span>
-      <span class="toctext">Viewing Column
-      Summaries</span>](#Viewing_Column_Summaries)
-  - [<span class="tocnumber">6.4</span> <span class="toctext">Running
-    Queries</span>](#Running_Queries)
-  - [<span class="tocnumber">6.5</span> <span class="toctext">Making
-    Lists from Query Results</span>](#Making_Lists_from_Query_Results)
-  - [<span class="tocnumber">6.6</span> <span class="toctext">Running
-    Templates</span>](#Running_Templates)
-  - [<span class="tocnumber">6.7</span> <span class="toctext">Making
-    Templates</span>](#Making_Templates)
-- [<span class="tocnumber">7</span> <span class="toctext">Accessing Your
+    Columns](#Exporting_Data_and_Summarising_Columns)
+    - [Exporting Data](#Exporting_Data)
+    - [Viewing Column
+      Summaries](#Viewing_Column_Summaries)
+  - [Running
+    Queries](#Running_Queries)
+  - [Making
+    Lists from Query Results](#Making_Lists_from_Query_Results)
+  - [Running
+    Templates](#Running_Templates)
+  - [Making
+    Templates](#Making_Templates)
+- [Accessing Your
   Data through the
-  Webservice</span>](#Accessing_Your_Data_through_the_Webservice)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Raw
-    URLs</span>](#Raw_URLs)
-    - [<span class="tocnumber">7.1.1</span> <span class="toctext">Asking
+  Webservice](#Accessing_Your_Data_through_the_Webservice)
+  - [Raw
+    URLs](#Raw_URLs)
+    - [Asking
       the Webapp to generate them for
-      you</span>](#Asking_the_Webapp_to_generate_them_for_you)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">The
-    Command-Line utilities</span>](#The_Command-Line_utilities)
-    - [<span class="tocnumber">7.2.1</span>
-      <span class="toctext">Getting XML from the
-      Webapp</span>](#Getting_XML_from_the_Webapp)
-    - [<span class="tocnumber">7.2.2</span>
-      <span class="toctext">Running
-      Templates</span>](#Running_Templates_2)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Access
+      you](#Asking_the_Webapp_to_generate_them_for_you)
+  - [The
+    Command-Line utilities](#The_Command-Line_utilities)
+    - [Getting XML from the
+      Webapp](#Getting_XML_from_the_Webapp)
+    - [Running
+      Templates](#Running_Templates_2)
+  - [Access
     from Perl & Java
-    programs</span>](#Access_from_Perl_.26_Java_programs)
-    - [<span class="tocnumber">7.3.1</span>
-      <span class="toctext">Webapp/Webservice
-      Integration</span>](#Webapp.2FWebservice_Integration)
-    - [<span class="tocnumber">7.3.2</span>
-      <span class="toctext">Accessing
-      Templates</span>](#Accessing_Templates)
-    - [<span class="tocnumber">7.3.3</span>
-      <span class="toctext">Accessing
-      Queries</span>](#Accessing_Queries)
-  - [<span class="tocnumber">7.4</span> <span class="toctext">Data
-    Formats</span>](#Data_Formats)
-    - [<span class="tocnumber">7.4.1</span> <span class="toctext">Row
-      Based Formats</span>](#Row_Based_Formats)
-    - [<span class="tocnumber">7.4.2</span> <span class="toctext">Record
-      Based Formats</span>](#Record_Based_Formats)
-    - [<span class="tocnumber">7.4.3</span>
-      <span class="toctext">Getting the
-      Total</span>](#Getting_the_Total)
-  - [<span class="tocnumber">7.5</span> <span class="toctext">Access
-    From Within the Browser</span>](#Access_From_Within_the_Browser)
+    programs](#Access_from_Perl_.26_Java_programs)
+    - [Webapp/Webservice
+      Integration](#Webapp.2FWebservice_Integration)
+    - [Accessing
+      Templates](#Accessing_Templates)
+    - [Accessing
+      Queries](#Accessing_Queries)
+  - [Data
+    Formats](#Data_Formats)
+    - [Row
+      Based Formats](#Row_Based_Formats)
+    - [Record
+      Based Formats](#Record_Based_Formats)
+    - [Getting the
+      Total](#Getting_the_Total)
+  - [Access
+    From Within the Browser](#Access_From_Within_the_Browser)
 
 
-
-# <span id="OOOPS.21" class="mw-headline">OOOPS!</span>
-
+# OOOPS!
 
 
 **First things first:**
@@ -197,8 +143,7 @@ title: "InterMine Tutorial 2011"
 ```
 
 
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
+# Introduction
 
 <a href="http://db.tt/yCxyJnx" class="external text"
 rel="nofollow">Intro Slides</a>
@@ -228,7 +173,7 @@ biological sources of data easy. Dealing with the massive amount of data
 that genomics research produces is never really easy, but InterMine
 makes the straightforward simple, and the difficult possible.
 
-# <span id="Overview" class="mw-headline">Overview</span>
+# Overview
 
 We aim to demonstrate three strengths of InterMine:
 
@@ -246,7 +191,7 @@ PostgreSQL database and a Java web-app sitting on top of it. Setting up
 your InterMine involves loading data into this database, and then
 mounting the web application in a running Tomcat instance.
 
-# <span id="Loading_Data_Into_Your_Database" class="mw-headline">Loading Data Into Your Database</span>
+# Loading Data Into Your Database
 
 The database schema, and the Java classes that represent it, are
 generated from XML configuration files. To manage this each mine has an
@@ -259,7 +204,7 @@ this section is:
 2.  Configuring the data sources and the associated schema
 3.  Running the build process
 
-## <span id="The_tutorial_data" class="mw-headline">The tutorial data</span>
+## The tutorial data
 
 We will use the sample data set we distribute with our source. This is
 located at:
@@ -279,7 +224,7 @@ tutorial:
 You should now have a directory of data available at
 `/home/gmod/Documents/Data/intermine/malaria`
 
-## <span id="The_MineManager_Graphical_Installer" class="mw-headline">The MineManager Graphical Installer</span>
+## The MineManager Graphical Installer
 
 We are developing a graphical application to manage these stages, which
 we will use in this section of the workshop:
@@ -287,7 +232,7 @@ we will use in this section of the workshop:
 The MineManager is located in our source tree at
 `SVN_ROOT/intermine/MineManager`.
 
-### <span id="Running_it_from_the_command_line" class="mw-headline">Running it from the command line</span>
+### Running it from the command line
 
 To run it open a terminal and type the command:
 
@@ -295,7 +240,7 @@ To run it open a terminal and type the command:
   /home/gmod/Documents/Software/intermine/intermine/MineManager/run
 ```
 
-### <span id="Running_it_from_a_clickable_launcher" class="mw-headline">Running it from a clickable launcher</span>
+### Running it from a clickable launcher
 
 If you would prefer a point and click interface, on standard Linux
 desktops, you can run the launcher installer to obtain a runnable icon:
@@ -307,7 +252,7 @@ desktops, you can run the launcher installer to obtain a runnable icon:
 You should then find a MineManager icon on your desktop, which you can
 double click to open the installer.
 
-### <span id="Welcome_Screen" class="mw-headline">Welcome Screen</span>
+### Welcome Screen
 
 You should see a window like this:
 
@@ -319,13 +264,13 @@ This installer will guide you through the install procedure in 4 steps
 to the point of having a working database that we can use to release a
 mine on.
 
-## <span id="Starting_a_new_Mine" class="mw-headline">Starting a new Mine</span>
+## Starting a new Mine
 
 To do this enter a name in the box at the top and click on the **save**
 icon to the right of the text box. This will automatically open up the
 next stage of the mine creation process.
 
-### <span id="Setting_up_the_new_Mine.27s_properties" class="mw-headline">Setting up the new Mine's properties</span>
+### Setting up the new Mine's properties
 
 In order to proceed, we need to tell the installer where the InterMine
 source tree we are using is located. This is referred to here as
@@ -341,7 +286,7 @@ width="800" height="467" alt="MineManager-minesettings-info.png" />
 Once this form is completed and you have **applied your changes** you
 will be able to create your mine.
 
-### <span id="The_Mine_project_directory" class="mw-headline">The Mine project directory</span>
+### The Mine project directory
 
 Creating the mine runs the `make_mine` script, which sets up the Java
 project directories in the appropriate places, and then builds an
@@ -362,7 +307,7 @@ The four sub directories are each separate Java projects that manage the
 different stages of building and running a mine, pretty much in the
 order they appear.
 
-## <span id="Adding_Sources_to_a_Project" class="mw-headline">Adding Sources to a Project</span>
+## Adding Sources to a Project
 
 The next section of the MineManager handles adding sources to a project:
 
@@ -385,7 +330,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="800" height="467"
 alt="MineManager-sourcesettings-empty.png" />
 
-### <span id="Importing_Protein_Data_From_Uniprot" class="mw-headline">Importing Protein Data From Uniprot</span>
+### Importing Protein Data From Uniprot
 
 Click on **add source**, and then select **uniprot** as the source type
 from the drop-down list. (you can choose to name each source, but in
@@ -411,7 +356,7 @@ For uniprot the appropriate settings are:
 To save this configuration so it is used in the build, select **save
 sources** from the bottom right, or when prompted.
 
-#### <span id="Side_Note:_Model_Additions" class="mw-headline">Side Note: Model Additions</span>
+#### Side Note: Model Additions
 
 The Uniprot configuration section has a second tab named *Source Model
 Additions*, which specifies the additions to the data model that a
@@ -431,7 +376,7 @@ And adds fields to the following classes:
 If you select **model** → **view model** from the menu you can see how
 these classes and fields are integrated into the data model.
 
-### <span id="The_GFF3_source" class="mw-headline">The GFF3 source</span>
+### The GFF3 source
 
 InterMine includes a parser to load valid [GFF3](GFF3 "GFF3") files. The
 creation of features, sequence features (usually chromosomes), locations
@@ -461,7 +406,7 @@ The properties set for malaria-gff are:
 | gff3.dataSetTitle | PlasmoDB P. falciparum genome | a DataSet object is created as evidence for the features, it is linked to a DataSource (PlasmoDB) |
 | Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/gff | Where we unpacked the data to |
 
-### <span id="FASTA_files" class="mw-headline">FASTA files</span>
+### FASTA files
 
 FASTA is a minimal format for representing sequence data. Files comprise
 a header with some identifier information preceded by '\>' and a
@@ -494,7 +439,7 @@ The following properties should be defined for malaria-chromosome-fasta:
 | Taxon ID | 36329 | the organism id for Plasmodium falciparum |
 | Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/fasta | Where we unpacked the data to before |
 
-### <span id="Entrez_Organism" class="mw-headline">Entrez Organism</span>
+### Entrez Organism
 
 Some sources depend on other sources, usually in order to complete the
 database with fields that can be derived or fetched in some way,
@@ -502,7 +447,7 @@ database with fields that can be derived or fetched in some way,
 Entrez. Add this source to the mine - it does not need any special
 configuration.
 
-### <span id="Loading_Custom_Data_Sources" class="mw-headline">Loading Custom Data Sources</span>
+### Loading Custom Data Sources
 
 As well as the standard data loaders that ship with the InterMine source
 tree, we supply a tool-chain for building your own data loaders for any
@@ -510,7 +455,7 @@ custom data source. There are APIs for this tool-chain in Java and Perl.
 The next section will walk us through loading a custom data source by
 using the Perl data loading API.
 
-#### <span id="Tool-chain_details" class="mw-headline">Tool-chain details</span>
+#### Tool-chain details
 
 - **Java** - data loaders are written by sub-classing one of a set of
   basic data loading classes (eg.
@@ -522,7 +467,7 @@ using the Perl data loading API.
   rel="nofollow">XML format</a>, which is then loaded into the database
   using a core dataloader.
 
-#### <span id="Installing_the_Perl_tool-chain" class="mw-headline">Installing the Perl tool-chain</span>
+#### Installing the Perl tool-chain
 
 The Perl modules are located in our source tree at:
 
@@ -544,7 +489,7 @@ client by installing `InterMine::Item`. eg:
   cpan InterMine::Item
 ```
 
-#### <span id="Our_example_dataset" class="mw-headline">Our example dataset</span>
+#### Our example dataset
 
 First let's look at the data we will be adding to the database. In this
 tutorial we will use data from the
@@ -570,7 +515,7 @@ KEGG pathways. It takes the form of two files in
   - the first is a KEGG pathway identifier
   - the second the descriptive name of the pathway
 
-#### <span id="Our_parsing_strategy" class="mw-headline">Our parsing strategy</span>
+#### Our parsing strategy
 
 We will
 
@@ -584,13 +529,13 @@ We will
 
   
 
-#### <span id="Adding_The_Source" class="mw-headline">Adding The Source</span>
+#### Adding The Source
 
 There a couple of custom source types; since we will be using the Perl
 toolchain, add a new source of the type **intermine-items-xml**, and set
 the name to something sensible, such as **kegg-pathways**.
 
-#### <span id="An_Example_Implementation_of_this_Strategy" class="mw-headline">An Example Implementation of this Strategy</span>
+#### An Example Implementation of this Strategy
 
 Click on **open parser to edit** and paste in the script below:
 
@@ -678,7 +623,7 @@ exit;
 ```
 
 
-#### <span id="Additions" class="mw-headline">Additions</span>
+#### Additions
 
 Our Model currently has no class "Pathway" (as you can confirm by
 browsing the model). We need to add it, and the Gene ↔ Pathway link. We
@@ -698,13 +643,13 @@ can do this by using the **Source Model Additions** editor.
 
 You should end up with:
 
-##### <span id="Gene" class="mw-headline">Gene</span>
+##### Gene
 
 | FieldType  | Name     | Type    | Reverse-Reference |
 |------------|----------|---------|-------------------|
 | Collection | pathways | Pathway | genes             |
 
-##### <span id="Pathway" class="mw-headline">Pathway</span>
+##### Pathway
 
 | FieldType  | Name       | Type   | Reverse-Reference |
 |------------|------------|--------|-------------------|
@@ -715,7 +660,7 @@ You should end up with:
 Once these are added, if you reload the model, you should find the new
 Pathway class as part of the model
 
-#### <span id="Dealing_With_Integration" class="mw-headline">Dealing With Integration</span>
+#### Dealing With Integration
 
 As we are adding gene data from this source in addition to the other
 genes already in the database, we need to make sure they play nicely
@@ -735,7 +680,7 @@ add the following line:
 We do not need to add a key for Pathway, as we are not adding pathways
 data from any other source.
 
-#### <span id="Generating_the_XML" class="mw-headline">Generating the XML</span>
+#### Generating the XML
 
 Now we are ready to generate the XML using our parser. First we need to
 generate the model:
@@ -759,7 +704,7 @@ And then finally tell our mine where the data is by filling in the Data
 file location in the *kegg-pathways* source properties section to
 **/home/gmod/Documents/Data/intermine/malaria/kegg/pathways.xml**
 
-## <span id="Running_a_Build" class="mw-headline">Running a Build</span>
+## Running a Build
 
 The **build** section of the MineManager runs the build process (a
 front-end for our `project-build` script).
@@ -789,12 +734,12 @@ height="467" alt="MineManager-built.png" />
 The sources we have set up above should take about 650 sec (give or
 take) to integrate into the database ∴ time for a break!
 
-# <span id="Deployment" class="mw-headline">Deployment</span>
+# Deployment
 
 Once you have read access to a production database, you can build and
 release a web application against it.
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
 If you haven't already, use the MineManager to configure the tomcat
 properties (**Mine Settings** → **Web Settings**):
@@ -809,7 +754,7 @@ tomcat settings refer to a preconfigured tomcat role*</span>).
 | superuser username | **choose a name** | The name for the webapp administrator |
 | superuser password | **choose a password** | The password for the webapp administrator |
 
-## <span id="UserProfile_Initialisation" class="mw-headline">UserProfile Initialisation</span>
+## UserProfile Initialisation
 
 In addition to the ObjectStore DB which contains your data, there is a
 separate database which holds user information (accounts, saved
@@ -833,7 +778,7 @@ userprofile database.</span>
 This command creates the SuperUser account and loads the
 `default-template-queries.xml` file.
 
-## <span id="Starting_the_Tomcat_Webserver" class="mw-headline">Starting the Tomcat Webserver</span>
+## Starting the Tomcat Webserver
 
 Tomcat is the webserver we use to serve InterMine webapps. Start Tomcat
 with this command:
@@ -848,7 +793,7 @@ Visit the Tomcat manager at
 rel="nofollow">http://localhost:8080/</a>. The username and password
 required to access the manager are **manager** and **manager**
 
-## <span id="Deploying_the_Webapp_to_Tomcat" class="mw-headline">Deploying the Webapp to Tomcat</span>
+## Deploying the Webapp to Tomcat
 
 Run the following command to release your webapp:
 
@@ -867,13 +812,13 @@ Visit your newly minted mine:
 <a href="http://localhost:8080/malariamine" class="external free"
 rel="nofollow">http://localhost:8080/malariamine</a>
 
-# <span id="Accessing_Your_Data_Through_the_Webapp" class="mw-headline">Accessing Your Data Through the Webapp</span>
+# Accessing Your Data Through the Webapp
 
 In this section we will look at how you can examine, analyse and
 aggregate your data in the webapp, looking both at the webapp you have
 built, and FlyMine.
 
-## <span id="Single_Objects_.28Report_Pages.29" class="mw-headline">Single Objects (Report Pages)</span>
+## Single Objects (Report Pages)
 
 Each object in the database (each Gene, Chromosome, Exon, Protein, etc)
 will have a report page that can display:
@@ -898,7 +843,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/2a/Report-page-templates.png/1050px-Report-page-templates.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2a/Report-page-templates.png 2x"
 width="700" height="377" alt="Report-page-templates.png" />
 
-## <span id="Multiple_Objects_.28Lists.29" class="mw-headline">Multiple Objects (Lists)</span>
+## Multiple Objects (Lists)
 
 Lists of Objects of any type can be made and explored. The pages that
 display data on these lists are called "*List Report Pages*", and can
@@ -934,12 +879,12 @@ From the *view* sub-tab, select a list you think looks interesting:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/74/List-analysis-page.png" width="1258"
 height="667" alt="List-analysis-page.png" />
 
-## <span id="Exporting_Data_and_Summarising_Columns" class="mw-headline">Exporting Data and Summarising Columns</span>
+## Exporting Data and Summarising Columns
 
 When viewing lists or Query results these two actions are always
 available:
 
-### <span id="Exporting_Data" class="mw-headline">Exporting Data</span>
+### Exporting Data
 
 Data can be exported from Lists and Query results in a number of
 formats:
@@ -956,7 +901,7 @@ The export link is always in the top left of the page:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/04/Export-options.png" width="366"
 height="219" alt="Export-options.png" />
 
-### <span id="Viewing_Column_Summaries" class="mw-headline">Viewing Column Summaries</span>
+### Viewing Column Summaries
 
 Each column header also has a summary symbol (Σ) which helps you get an
 overview over the data contained in that column:
@@ -965,7 +910,7 @@ overview over the data contained in that column:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9c/Column-header.png" width="497"
 height="303" alt="Column-header.png" />
 
-## <span id="Running_Queries" class="mw-headline">Running Queries</span>
+## Running Queries
 
 Queries in the webapp are created and run using the *QueryBuilder*
 interface, which helps you build queries using the data model as a
@@ -996,7 +941,7 @@ You should see results like this:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/32/Query-results.png" width="1256"
 height="553" alt="Query-results.png" />
 
-## <span id="Making_Lists_from_Query_Results" class="mw-headline">Making Lists from Query Results</span>
+## Making Lists from Query Results
 
 The query results page provides links to the report pages of individual
 objects, and we can create lists of the objects returned. To create a
@@ -1016,7 +961,7 @@ height="108" alt="Making-a-list2.png" />
 
 And you're done.
 
-## <span id="Running_Templates" class="mw-headline">Running Templates</span>
+## Running Templates
 
 Templates are queries that have been pre-written and saved for later
 re-use, either by and for a single user, or for all the users of the
@@ -1044,7 +989,7 @@ Running this query should get us the same results (more or less) than
 the query we wrote ourselves. To see where it might differ, we can view
 the underlying query by selecting **Edit Query**.
 
-## <span id="Making_Templates" class="mw-headline">Making Templates</span>
+## Making Templates
 
 To make templates you and others can use later, you need to be logged
 in. When you are, you will be able to edit templates that belong to you,
@@ -1064,7 +1009,7 @@ editable or not), and whether they are required or optional.
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cb/Template-editing.png" width="836"
 height="635" alt="Template-editing.png" />
 
-# <span id="Accessing_Your_Data_through_the_Webservice" class="mw-headline">Accessing Your Data through the Webservice</span>
+# Accessing Your Data through the Webservice
 
 As well as the graphical webapp interface, each mine also offers a
 webservice that exposes an external, scriptable programmatic API to the
@@ -1074,7 +1019,7 @@ either GET or POST HTTP requests (for further details see
 <a href="http://www.intermine.org/wiki/WebService" class="external text"
 rel="nofollow">here</a>).
 
-## <span id="Raw_URLs" class="mw-headline">Raw URLs</span>
+## Raw URLs
 
 Anything you can do with the webservice ultimately boils down to
 requests to urls, and the clients we provide are simply ways to generate
@@ -1097,7 +1042,7 @@ The resource path (in this case, results for templates)
 The query string, a URL-encoded name-value pair set that tells the
 resource what we want to do
 
-### <span id="Asking_the_Webapp_to_generate_them_for_you" class="mw-headline">Asking the Webapp to generate them for you</span>
+### Asking the Webapp to generate them for you
 
 Obviously generating these urls is possible, but non-obvious. The
 simplest way to get a url for a query you want to run again is to ask
@@ -1112,7 +1057,7 @@ height="82" alt="Getting-query-xml.png" />
 This will get you a url you can use with *wget* or *curl*, although it
 will be difficult to edit and adjust.
 
-## <span id="The_Command-Line_utilities" class="mw-headline">The Command-Line utilities</span>
+## The Command-Line utilities
 
 For very simple applications of the webservice, we also provide command
 line utilities that can take a query as XML or a template as a name and
@@ -1122,7 +1067,7 @@ much more readable than simply using URLs.
 (The command line utilities are installed automatically when the Perl
 Webservice client modules are installed)
 
-### <span id="Getting_XML_from_the_Webapp" class="mw-headline">Getting XML from the Webapp</span>
+### Getting XML from the Webapp
 
 Queries are represented in the webservice as XML strings, and rather
 than having to write them yourself (although you
@@ -1153,7 +1098,7 @@ To run the xml you got, then use the *run-im-query* program:
 
     run-im-query --url www.flymine.org/query path/to/query.xml
 
-### <span id="Running_Templates_2" class="mw-headline">Running Templates</span>
+### Running Templates
 
 To run a template all we need is the name of the template, and the
 parameters we want to specify. This information is all included in the
@@ -1163,7 +1108,7 @@ command:
 
     run-im-template --url www.flymine.org/query --title Pathway_Genes value1="Pentose phosphate pathway" value2="Drosophila melanogaster" value3="KEGG pathways data set"
 
-## <span id="Access_from_Perl_.26_Java_programs" class="mw-headline">Access from Perl & Java programs</span>
+## Access from Perl & Java programs
 
 To simplify access to the webservice from Perl and Java programs, we
 supply client software to run queries with. This software is included in
@@ -1175,15 +1120,12 @@ our source tree:
 But the easiest way to install these clients is respectively:
 
 - **Perl**: install with a cpan client:
-
-<!-- -->
-
     cpan Webservice::InterMine
 
 - **Java**: download the client package from the appropriate webapp, by
   visiting the API tab
 
-### <span id="Webapp.2FWebservice_Integration" class="mw-headline">Webapp/Webservice Integration</span>
+### Webapp/Webservice Integration
 
 Each mine now includes an API tab that provides links and guidance on
 using the programmatic client software. To get the Java client package
@@ -1213,7 +1155,7 @@ or though the use of the `perldoc` command:
 
     perldoc Webservice::InterMine
 
-### <span id="Accessing_Templates" class="mw-headline">Accessing Templates</span>
+### Accessing Templates
 
 The following is the complete code you would get by clicking on the
 **Perl** link above:
@@ -1310,7 +1252,7 @@ public class TemplatePathwayGenes
 ```
 
 
-### <span id="Accessing_Queries" class="mw-headline">Accessing Queries</span>
+### Accessing Queries
 
 The **Perl** to access the same underlying query as that above using the
 query service would look like this:
@@ -1442,12 +1384,12 @@ public class QueryClient
 ```
 
 
-## <span id="Data_Formats" class="mw-headline">Data Formats</span>
+## Data Formats
 
 Thus far we have received all our results as tab-delimited rows of data,
 but there are other formats we can request:
 
-### <span id="Row_Based_Formats" class="mw-headline">Row Based Formats</span>
+### Row Based Formats
 
 tab  
 The default format - simple tab separated values
@@ -1469,7 +1411,7 @@ Structured data format with the structure
 ```
 
 
-### <span id="Record_Based_Formats" class="mw-headline">Record Based Formats</span>
+### Record Based Formats
 
 We have one format (**jsonobjects**) that treats records as the unit of
 the query, returning an object with arbitrarily deep nesting of
@@ -1517,11 +1459,11 @@ can see an example of the results in this format below:
 ```
 
 
-### <span id="Getting_the_Total" class="mw-headline">Getting the Total</span>
+### Getting the Total
 
 Set the format to **count**
 
-## <span id="Access_From_Within_the_Browser" class="mw-headline">Access From Within the Browser</span>
+## Access From Within the Browser
 
 We have a javascript client as well, called IMBedding
 (<a href="http://www.intermine.org/imbedding" class="external free"
@@ -1562,93 +1504,3 @@ example is included below as a demonstration:
     );
  </script>
 ```
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [InterMine](Category%253AInterMine "Category%253AInterMine")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/InterMine_Tutorial_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:56 on 14 February
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">9,364 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

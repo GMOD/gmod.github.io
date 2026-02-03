@@ -1,23 +1,7 @@
 ---
 title: "Category%253AChado"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Category%253AChado</span>
-
-
-
-
-
-
-
+# Category%253AChado
 
 
 About Chado, installing Chado, and all related Chado documentation.
@@ -28,7 +12,6 @@ About Chado, installing Chado, and all related Chado documentation.
 This category has the following 3 subcategories, out of 3 total.
 
 
-
 ### C
 
 - [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")
@@ -37,12 +20,9 @@ This category has the following 3 subcategories, out of 3 total.
   Presentations](Category%253AChado_Presentations "Category%253AChado Presentations")
 
 
-
-
 ## Pages in category "Chado"
 
 The following 77 pages are in this category, out of 77 total.
-
 
 
 <table style="width: 100%;">
@@ -271,8 +251,6 @@ HOWTO</a></li>
 </table>
 
 
-
-
 ## Media in category "Chado"
 
 The following 6 files are in this category, out of 6 total.
@@ -412,96 +390,4 @@ The following 6 files are in this category, out of 6 total.
   
 
   [Chado-XML-overview.pdf](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/05/Chado-XML-overview.pdf "File:Chado-XML-overview.pdf")  
-  19 KB  
-
-  
-
-  
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Category%253AChado" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:38 on 26 May
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">54,884 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
+  19 KB

@@ -30,66 +30,45 @@ Resources
 
 - <a href="http://jbrowse.org" class="external text" rel="nofollow">Home
   page</a>
-
-<!-- -->
-
 - <a href="http://jbrowse.org/install/" class="external text"
   rel="nofollow">Download</a>
-
-<!-- -->
-
 - <a href="http://github.com/GMOD/jbrowse" class="external text"
   rel="nofollow">Source code</a>
-
-<!-- -->
-
 - <a href="http://jbrowse.org/demos" class="external text"
   rel="nofollow">Demo server</a>
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">About
   JBrowse</span>](#About_JBrowse)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Features</span>](#Features)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Screenshots</span>](#Screenshots)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">3</span> <span class="toctext">Using
-  JBrowse</span>](#Using_JBrowse)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">System
-    Requirements</span>](#System_Requirements)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Configuration</span>](#Configuration)
-- [<span class="tocnumber">4</span> <span class="toctext">Upgrading
-  JBrowse</span>](#Upgrading_JBrowse)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">6</span> <span class="toctext">Publications,
+  - [Features](#Features)
+  - [Screenshots](#Screenshots)
+- [Downloads](#Downloads)
+- [Using
+  JBrowse](#Using_JBrowse)
+  - [System
+    Requirements](#System_Requirements)
+  - [Installation](#Installation)
+  - [Configuration](#Configuration)
+- [Upgrading
+  JBrowse](#Upgrading_JBrowse)
+- [Documentation](#Documentation)
+- [Publications,
   Tutorials, and
-  Presentations</span>](#Publications.2C_Tutorials.2C_and_Presentations)
-  - [<span class="tocnumber">6.1</span>
-    <span class="toctext">Publications on or mentioning
-    JBrowse</span>](#Publications_on_or_mentioning_JBrowse)
-  - [<span class="tocnumber">6.2</span>
-    <span class="toctext">Tutorials</span>](#Tutorials)
-  - [<span class="tocnumber">6.3</span>
-    <span class="toctext">Presentations</span>](#Presentations)
-- [<span class="tocnumber">7</span> <span class="toctext">Contacts and
-  Mailing Lists</span>](#Contacts_and_Mailing_Lists)
-- [<span class="tocnumber">8</span> <span class="toctext">JBrowse in the
-  wild</span>](#JBrowse_in_the_wild)
-- [<span class="tocnumber">9</span> <span class="toctext">JBrowse
-  Development</span>](#JBrowse_Development)
-  - [<span class="tocnumber">9.1</span> <span class="toctext">Current
-    status</span>](#Current_status)
-- [<span class="tocnumber">10</span> <span class="toctext">More on
-  JBrowse</span>](#More_on_JBrowse)
+  Presentations](#Publications.2C_Tutorials.2C_and_Presentations)
+  - [Publications on or mentioning
+    JBrowse](#Publications_on_or_mentioning_JBrowse)
+  - [Tutorials](#Tutorials)
+  - [Presentations](#Presentations)
+- [Contacts and
+  Mailing Lists](#Contacts_and_Mailing_Lists)
+- [JBrowse in the
+  wild](#JBrowse_in_the_wild)
+- [JBrowse
+  Development](#JBrowse_Development)
+  - [Current
+    status](#Current_status)
+- [More on
+  JBrowse](#More_on_JBrowse)
 
-## <span id="About_JBrowse" class="mw-headline">About JBrowse</span>
+## About JBrowse
 
 JBrowse is a genome browser with a fully dynamic AJAX interface, being
 developed as the eventual successor to GBrowse. It is very fast and
@@ -97,7 +76,7 @@ scales well to large datasets. JBrowse is javascript-based and does
 almost all of its work directly in the user's web browser, with minimal
 requirements for the server.
 
-### <span id="Features" class="mw-headline">Features</span>
+### Features
 
 - Fast, smooth scrolling and zooming. Explore your genome with
   unparalleled speed.
@@ -113,31 +92,28 @@ requirements for the server.
 Visit the <a href="http://jbrowse.org" class="external text"
 rel="nofollow">JBrowse website</a>.
 
-### <span id="Screenshots" class="mw-headline">Screenshots</span>
+### Screenshots
 
 <a href="../File:JBrowse_alignment_and_coverage.png" class="image"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/JBrowse_alignment_and_coverage.png/600px-JBrowse_alignment_and_coverage.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7e/JBrowse_alignment_and_coverage.png/900px-JBrowse_alignment_and_coverage.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7e/JBrowse_alignment_and_coverage.png 2x"
 width="600" height="373" alt="JBrowse alignment and coverage.png" /></a>
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 - <a href="http://jbrowse.org/install/" class="external text"
   rel="nofollow">Download JBrowse</a>.
-
-<!-- -->
-
 - <a href="http://github.com/GMOD/jbrowse" class="external text"
   rel="nofollow">Download the source code for JBrowse</a>.
 
-## <span id="Using_JBrowse" class="mw-headline">Using JBrowse</span>
+## Using JBrowse
 
 The <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
 class="external text" rel="nofollow">JBrowse Quick-Start Tutorial</a>
 provides a basic step-by-step recipe for quickly getting up and running
 with JBrowse.
 
-### <span id="System_Requirements" class="mw-headline">System Requirements</span>
+### System Requirements
 
 JBrowse requires libpng, Zlib, and GD development libraries, plus make
 and a C compiler. On Ubuntu, you can install these prerequisites using
@@ -148,7 +124,7 @@ the command:
 For tips on installing these baseline libraries, see [JBrowse
 Troubleshooting](../JBrowse_Troubleshooting "JBrowse Troubleshooting").
 
-### <span id="Installation" class="mw-headline">Installation</span>
+### Installation
 
 The <a href="http://jbrowse.org/code/latest-release/docs/tutorial/"
 class="external text" rel="nofollow">JBrowse Quick-Start Tutorial</a>
@@ -179,7 +155,7 @@ http://(your_machine/path_to_jbrowse)/index.html?data=sample_data/json/volvox.
 If you can see the included Volvox example data, you are ready to
 configure JBrowse to show your own data!
 
-### <span id="Configuration" class="mw-headline">Configuration</span>
+### Configuration
 
 See the [JBrowse Configuration
 Guide](../JBrowse_Configuration_Guide "JBrowse Configuration Guide") for
@@ -216,7 +192,7 @@ Additional topics:
   title="JBrowseDev/Using a Database With JBrowse">Using an Existing
   Database with JBrowse</a>
 
-## <span id="Upgrading_JBrowse" class="mw-headline">Upgrading JBrowse</span>
+## Upgrading JBrowse
 
 To upgrade an existing JBrowse (1.3.0 or later) to the latest version,
 simply move its data directory (and `jbrowse_conf.json` if you are using
@@ -230,7 +206,7 @@ directory, instead of index.html.
 If you are upgrading from a version of JBrowse older than 1.2.0, a fresh
 installation is required.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 - <a href="../JBrowse_Configuration_Guide" class="external text"
   rel="nofollow">JBrowse configuration reference</a>
@@ -239,9 +215,9 @@ installation is required.
 - <a href="../JBrowse_FAQ" class="external text" rel="nofollow">JBrowse
   setup FAQ</a>
 
-## <span id="Publications.2C_Tutorials.2C_and_Presentations" class="mw-headline">Publications, Tutorials, and Presentations</span>
+## Publications, Tutorials, and Presentations
 
-### <span id="Publications_on_or_mentioning_JBrowse" class="mw-headline">Publications on or mentioning JBrowse</span>
+### Publications on or mentioning JBrowse
 
 - JBrowse: a next-generation genome browser
   (2009)<sup>[\[1\]](#cite_note-PMID:19570905-1)</sup>
@@ -252,7 +228,7 @@ installation is required.
 - JBrowse: a dynamic web platform for genome visualization and analysis
   (2016)<sup>[\[4\]](#cite_note-PMID:_27072794-4)</sup>
 
-### <span id="Tutorials" class="mw-headline">Tutorials</span>
+### Tutorials
 
 <a href="../JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse Tutorial</a> covering installation and configuration  
@@ -273,7 +249,7 @@ Tutorial explaining how to browse structural variants from the
 <a href="http://www.tomatogenome.net" class="external text"
 rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
 
-### <span id="Presentations" class="mw-headline">Presentations</span>
+### Presentations
 
 - April 2013 - Bio-IT World, Robert Buels:
   <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0c/JBrowse_bioit_world_apr2013.pdf"
@@ -296,7 +272,7 @@ rel="nofollow">150+ tomato genome resequencing project</a> using JBrowse
   [Talk
   summary](../August_2009_GMOD_Meeting#JBrowse "August 2009 GMOD Meeting")
 
-## <span id="Contacts_and_Mailing_Lists" class="mw-headline">Contacts and Mailing Lists</span>
+## Contacts and Mailing Lists
 
 Please direct questions and inquiries regarding JBrowse to the mailing
 lists below._Requests for help should be directed to
@@ -319,7 +295,7 @@ class="external text" rel="nofollow">Nabble</a> (2011/08+) |
 
 gmod-ajax@lists.sourceforge.net
 
-## <span id="JBrowse_in_the_wild" class="mw-headline">JBrowse in the wild</span>
+## JBrowse in the wild
 
 Public installations of JBrowse:
 
@@ -334,9 +310,9 @@ Public installations of JBrowse:
   rel="nofollow">Ice Man Genome</a>
   Browse the genome of Ötzi the ice man
 
-## <span id="JBrowse_Development" class="mw-headline">JBrowse Development</span>
+## JBrowse Development
 
-### <span id="Current_status" class="mw-headline">Current status</span>
+### Current status
 
 The <a href="http://github.com/GMOD/jbrowse" class="external text"
 rel="nofollow">JBrowse source code repository</a> is kept on GitHub.
@@ -346,7 +322,7 @@ and improvements, submitting pull requests. GitHub has a very nice
 rel="nofollow">tutorial</a> on how to get started with this style of
 development.
 
-## <span id="More_on_JBrowse" class="mw-headline">More on JBrowse</span>
+## More on JBrowse
 
 See [Category%253AJBrowse](../Category%253AJBrowse "Category%253AJBrowse")
 
@@ -428,51 +404,3 @@ user's web browser, with minimal requirements for the server.
    and Browse the
   genome of Ötzi the ice man
   <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20description/Browse-20the-20genome-20of-20%C3%96tzi-20the-20ice-20man "Special%253ASearchByProperty/Has-20description/Browse-20the-20genome-20of-20Ötzi-20the-20ice-20man")</span>
-
-## Navigation menu
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowse" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 19:18 on 15 April 2016.</span>
-<!-- - <span id="footer-info-viewcount">734,541 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

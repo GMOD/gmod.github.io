@@ -1,26 +1,11 @@
 ---
 title: "Artemis-Chado Integration Tutorial"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Artemis-Chado Integration Tutorial</span>
-
-
-
+# Artemis-Chado Integration Tutorial
 
 
 (Redirected from [Artemis
-Tutorial](Artemis_Tutorial)
-
-
-
+Tutorial](/wiki/Artemis_Tutorial)
 
 
   
@@ -43,7 +28,7 @@ This [tutorial](Category%253ATutorials "Category%253ATutorials") walks you
 through how to use the Artemis annotation editor with a
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> database.
 
-## <span id="VMware" class="mw-headline">VMware</span>
+## VMware
 
 .
 
@@ -96,7 +81,7 @@ alt="Pk6 Pf10 Pk8.gif" />
 
   
 
-## <span id="Writing_Out_Sequence_Files" class="mw-headline">Writing Out Sequence Files</span>
+## Writing Out Sequence Files
 
 Artemis can write out EMBL and [GFF](GFF "GFF") files for an entry
 opened from the database. You can optionally flatten the gene model
@@ -120,13 +105,13 @@ Try running:
 
     etc/writedb_entry -Dchado="localhost:5432/chado_pathogen?gmod" NC_004314
 
-## <span id="Mailing_List" class="mw-headline">Mailing List</span>
+## Mailing List
 
 There is an Artemis mailing list:
 <a href="http://lists.sanger.ac.uk/mailman/listinfo/artemis-users"
 class="external text" rel="nofollow">artemis-user</a>.
 
-## <span id="References" class="mw-headline">References</span>
+## References
 
 - <a href="http://www.sanger.ac.uk/Software/Artemis/"
   class="external text" rel="nofollow">Artemis home page</a>
@@ -140,13 +125,10 @@ class="external text" rel="nofollow">artemis-user</a>.
   class="external text" rel="nofollow">User Practical Guide</a>
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -156,82 +138,3 @@ Tutorial](Special%253ABrowse/Artemis-2DChado-20Integration-20Tutorial "Special%2
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Artemis "Special%253ASearchByProperty/Has-20topic/Artemis")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Artemis-2DChado_Integration_Tutorial"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">54,134 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

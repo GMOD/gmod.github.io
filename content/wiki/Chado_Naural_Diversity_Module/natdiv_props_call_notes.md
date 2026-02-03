@@ -1,32 +1,16 @@
 ---
 title: "Chado Naural Diversity Module/natdiv props call notes"
 ---
+# Chado Naural Diversity Module/natdiv props call notes
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Naural Diversity Module/natdiv props call notes</span>
-
-
-
-
-
-
-
-
-
-## <span id="Date" class="mw-headline">Date</span>
+## Date
 
 June 1st 2011, 12PM EST
 
   
 
-## <span id="participants" class="mw-headline">participants</span>
+## participants
 
 - Maren
 - Seth
@@ -39,7 +23,7 @@ June 1st 2011, 12PM EST
 
   
 
-## <span id="Notes" class="mw-headline">Notes</span>
+## Notes
 
 --Seth :
 
@@ -231,9 +215,6 @@ post-composing terms. Will send the email.
   generic way (Seth)
 - Not adding the suggested prop tables, because there is no agreement,
   and we need to solve first the following major issues:
-
-<!-- -->
-
     1. decision on post-composing terms . How?
     2. revisit the phenotype module for breaking the value-phenotype ties
     3. better definition of how we use the prop tables
@@ -242,90 +223,3 @@ post-composing terms. Will send the email.
   do this)
   - Paper is good to go
   - Chado release is good to go.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="../Special%253ABrowse/Chado_Naural_Diversity_Module-2Fnatdiv_props_call_notes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:27 on 2 June
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">7,260 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

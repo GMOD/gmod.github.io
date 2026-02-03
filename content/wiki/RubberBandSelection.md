@@ -1,23 +1,7 @@
 ---
 title: "RubberBandSelection"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">RubberBandSelection</span>
-
-
-
-
-
-
-
+# RubberBandSelection
 
 
 "Rubber-band", or drag-selection is a user-interface feature of GBrowse
@@ -31,7 +15,7 @@ GBrowse 2.0
 
 \<oflash file=<File:Rubberband1.swf> width=500 height=275 /\>
 
-## <span id="User_interface" class="mw-headline">User interface</span>
+## User interface
 
 - To activate rubber-band selection, click and drag (without releasing
   the mouse button) on the ruler for the overview, regionview, or
@@ -39,7 +23,7 @@ GBrowse 2.0
 - A highlighted region, as depicted above, will appear.
 - If configured, the menu appears when the mouse button is release.
 
-## <span id="Configurable_options" class="mw-headline">Configurable options</span>
+## Configurable options
 
 <table data-border="1" data-bgcolor="lightyellow">
 <colgroup>
@@ -192,9 +176,6 @@ Configuration for submitter plugin (used in above menu).
   web services' parameters)
 - the ***url*** option is required to handle the submission
 - the ***extra_html*** option can be used to specify form elements, etc
-
-<!-- -->
-
     [Submitter:plugin]
     submitter = [UCSC_BLAT]
                 url        = http://genome.ucsc.edu/cgi-bin/hgBlat
@@ -230,93 +211,3 @@ Configuration for submitter plugin (used in above menu).
                 DATABASE  = nr
                 CLIENT    = web
                 CMD       = put
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-- [Javascript](Category%253AJavascript "Category%253AJavascript")
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/RubberBandSelection" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:05 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">101,144 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

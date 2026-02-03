@@ -1,31 +1,14 @@
 ---
 title: "TIGR-Workflow / Ergatis"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">TIGR-Workflow / Ergatis</span>
-
-
-
+# TIGR-Workflow / Ergatis
 
 
 (Redirected from
-[Ergatis](Ergatis)
-
-
-
-
+[Ergatis](/wiki/Ergatis)
 
 
 Status
-
 
 
 - **Mature** release
@@ -33,9 +16,7 @@ Status
 - **Active** support
 
 
-
 Resources
-
 
 
 - <a href="http://ergatis.sourceforge.net/" class="external text"
@@ -52,16 +33,10 @@ Resources
   rel="nofollow">CloVR</a>
 - [ISGA](ISGA "ISGA")
 
-## <span id="What_is_it.3F" class="mw-headline">What is it?</span>
-
-
-
-
+## What is it?
 
 
 Screenshot of the Ergatis pipeline builder
-
-
 
 
 More information is available at:
@@ -69,7 +44,7 @@ More information is available at:
 <a href="http://ergatis.sourceforge.net" class="external free"
 rel="nofollow">http://ergatis.sourceforge.net</a>
 
-## <span id="How_is_it_a_part_of_GMOD.3F" class="mw-headline">How is it a part of GMOD?</span>
+## How is it a part of GMOD?
 
 Currently, only loosely. As described above, Ergatis has been used at
 TIGR (now part of JCVI) for the majority of annotation and comparative
@@ -86,7 +61,7 @@ Ergatis and is currently at the
 rel="nofollow">Institute for Genome Sciences</a> at the University of
 Maryland School of Medicine.
 
-## <span id="Mailing_Lists" class="mw-headline">Mailing Lists</span>
+## Mailing Lists
 
 |  |  |  |  |
 |----|----|----|----|
@@ -108,91 +83,3 @@ href="http://gmod.827538.n3.nabble.com/Ergatis-Development-f815854.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-devel"
 class="external text" rel="nofollow">Sourceforge</a> |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Analysis](Category%253AAnalysis "Category%253AAnalysis")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Ergatis](Category%253AErgatis "Category%253AErgatis")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/TIGR-2DWorkflow_-2F_Ergatis"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:49 on 25 July
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">72,788 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-

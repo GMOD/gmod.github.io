@@ -1,23 +1,7 @@
 ---
 title: "Materialized views"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Materialized views</span>
-
-
-
-
-
-
-
+# Materialized views
 
 
 Materializing a view is the process of taking a view (which is a sort of
@@ -29,24 +13,17 @@ views in <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 running on PostgreSQL.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">gmod_materialized_view_tool.pl</span>](#gmod_materialized_view_tool.pl)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Creating a
+  gmod_materialized_view_tool.pl](#gmod_materialized_view_tool.pl)
+  - [Creating a
     materialized view
-    example</span>](#Creating_a_materialized_view_example)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Example
+    example](#Creating_a_materialized_view_example)
+  - [Example
     crontab entry to maintain materialized
-    views</span>](#Example_crontab_entry_to_maintain_materialized_views)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Authors</span>](#Authors)
+    views](#Example_crontab_entry_to_maintain_materialized_views)
+  - [Authors](#Authors)
 
 
-
-# <span id="gmod_materialized_view_tool.pl" class="mw-headline">gmod_materialized_view_tool.pl</span>
+# gmod_materialized_view_tool.pl
 
 The perl script gmod_materialized_view_tool.pl (which resides in
 schema/chado/bin, and gets installed in your path when you do
@@ -100,14 +77,13 @@ materialized views:
 
            Prints documentation and quits.
 
-## <span id="Creating_a_materialized_view_example" class="mw-headline">Creating a materialized view example</span>
+## Creating a materialized view example
 
      gmod_materialized_view_tool.pl -c
 
     ==========================================
     Viewing 'chado' database on host localhost
     ==========================================
-
 
 
     =================================
@@ -153,7 +129,7 @@ materialized views:
 And it goes on to create the table and populate it, giving real time
 estimates of completion time.
 
-## <span id="Example_crontab_entry_to_maintain_materialized_views" class="mw-headline">Example crontab entry to maintain materialized views</span>
+## Example crontab entry to maintain materialized views
 
 <a href="http://en.wikipedia.org/wiki/Crontab" class="external text"
 rel="nofollow">Cron</a> is a unix tool for executing commands on a
@@ -167,95 +143,7 @@ night at 1:16AM, you would enter this:
 Where the stars mean 'every day of the month', 'every month of the year'
 and 'every day of the week' respectively.
 
-## <span id="Authors" class="mw-headline">Authors</span>
+## Authors
 
 The script described in this page was originally written by Chris
 Carpita and modified by [Scott Cain](User%253AScott "User%253AScott")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Materialized_views" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:23 on 28 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">22,284 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

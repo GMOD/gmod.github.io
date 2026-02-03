@@ -1,69 +1,55 @@
 ---
 title: "GBrowse Popup Balloons"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GBrowse Popup Balloons</span>
+# GBrowse Popup Balloons
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/48/Balloon.png" class="thumbborder"
 width="414" height="308" alt="Balloon.png" />
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using
   Balloons</span>](#Using_Balloons)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Linking
-    back to GBrowse</span>](#Linking_back_to_GBrowse)
-- [<span class="tocnumber">2</span> <span class="toctext">Customizing
-  Balloons</span>](#Customizing_Balloons)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Using AJAX
-    and remote content</span>](#Using_AJAX_and_remote_content)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Using
+  - [Linking
+    back to GBrowse](#Linking_back_to_GBrowse)
+- [Customizing
+  Balloons](#Customizing_Balloons)
+  - [Using AJAX
+    and remote content](#Using_AJAX_and_remote_content)
+  - [Using
     GBrowse_details as an AJAX Request Handler for Popup
-    Balloons</span>](#Using_GBrowse_details_as_an_AJAX_Request_Handler_for_Popup_Balloons)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">Examples</span>](#Examples)
-    - [<span class="tocnumber">2.2.2</span>
-      <span class="toctext">Changes to
-      gbrowse_details</span>](#Changes_to_gbrowse_details)
-    - [<span class="tocnumber">2.2.3</span>
-      <span class="toctext">Changes To Configuration
-      File</span>](#Changes_To_Configuration_File)
-- [<span class="tocnumber">3</span> <span class="toctext">Popups in
-  Gbrowse 2.0</span>](#Popups_in_Gbrowse_2.0)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Tooltip
-    Styles</span>](#Tooltip_Styles)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">GBubble and
-      GFade</span>](#GBubble_and_GFade)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">GPlain</span>](#GPlain)
-    - [<span class="tocnumber">3.1.3</span>
-      <span class="toctext">GBox</span>](#GBox)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Changing
+    Balloons](#Using_GBrowse_details_as_an_AJAX_Request_Handler_for_Popup_Balloons)
+    - [Examples](#Examples)
+    - [Changes to
+      gbrowse_details](#Changes_to_gbrowse_details)
+    - [Changes To Configuration
+      File](#Changes_To_Configuration_File)
+- [Popups in
+  Gbrowse 2.0](#Popups_in_Gbrowse_2.0)
+  - [Tooltip
+    Styles](#Tooltip_Styles)
+    - [GBubble and
+      GFade](#GBubble_and_GFade)
+    - [GPlain](#GPlain)
+    - [GBox](#GBox)
+  - [Changing
     the global default balloon
-    style</span>](#Changing_the_global_default_balloon_style)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Configuring Default Tooltip
-    Styles</span>](#Configuring_Default_Tooltip_Styles)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Other
-    differences</span>](#Other_differences)
-    - [<span class="tocnumber">3.4.1</span> <span class="toctext">Cursor
-      Tracking</span>](#Cursor_Tracking)
-    - [<span class="tocnumber">3.4.2</span>
-      <span class="toctext">Overflow and
-      Scrollbars</span>](#Overflow_and_Scrollbars)
-    - [<span class="tocnumber">3.4.3</span> <span class="toctext">Both
+    style](#Changing_the_global_default_balloon_style)
+  - [Configuring Default Tooltip
+    Styles](#Configuring_Default_Tooltip_Styles)
+  - [Other
+    differences](#Other_differences)
+    - [Cursor
+      Tracking](#Cursor_Tracking)
+    - [Overflow and
+      Scrollbars](#Overflow_and_Scrollbars)
+    - [Both
       height and width can be
-      constrained</span>](#Both_height_and_width_can_be_constrained)
-    - [<span class="tocnumber">3.4.4</span>
-      <span class="toctext">Tooltips will not go
-      off-screen</span>](#Tooltips_will_not_go_off-screen)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">GBox for
-    GBrowse 1.7</span>](#GBox_for_GBrowse_1.7)
+      constrained](#Both_height_and_width_can_be_constrained)
+    - [Tooltips will not go
+      off-screen](#Tooltips_will_not_go_off-screen)
+  - [GBox for
+    GBrowse 1.7](#GBox_for_GBrowse_1.7)
 
-# <span id="Using_Balloons" class="mw-headline">Using Balloons</span>
+# Using Balloons
 
 GBrowse can display popup balloons when the user hovers over or clicks
 on a feature. The balloons can display arbitrary HTML, either provided
@@ -97,7 +83,7 @@ contain images, formatted text, and even controls. Examples:
            <a href='<a href="http://www.google.com/search?q=">http://www.google.com/search?q=</a>$name'>Search Google</a><br>
            <a href='<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=">http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=</a>$name'>Search NCBI</a><br>
 
-## <span id="Linking_back_to_GBrowse" class="mw-headline">Linking back to GBrowse</span>
+## Linking back to GBrowse
 
 It is often useful to include links in a popup balloon that change the
 view in GBrowse. Use a callback to get the desired coordinates for the
@@ -121,7 +107,7 @@ balloon hover = sub   {
 Note that `&enable=DNA` turns on the DNA track when following the link,
 while preserving other track settings.
 
-# <span id="Customizing_Balloons" class="mw-headline">Customizing Balloons</span>
+# Customizing Balloons
 
 GBrowse supports multiple balloons with different shapes, sizes,
 background images and timing properties. There is one built-in balloon,
@@ -146,7 +132,7 @@ second, named "wide_balloon" takes all the defaults for the default
 balloon, including the location of its images in the directory
 /gbrowse/images/balloons, except that it has a maximum width of 800
 pixels. The various balloon options are described well at
-[Popup Balloons](Popup_Balloons).
+[Popup Balloons](/wiki/Popup_Balloons).
 
 To use the blue balloon rather than the standard one, format the
 "balloon hover" and/or "balloon click" options like this:
@@ -165,7 +151,7 @@ The images for custom balloons reside in the default location of
 \`\`images _config option. To use custom balloon images, point "images"_
 to a a web-accessible directory in your document tree which contains the
 seven PNG images described in the
-[documentation](Popup_Balloons#Notes_on_balloon_images).
+[documentation](/wiki/Popup_Balloons#Notes_on_balloon_images).
 
 These images must be named as listed below:
 
@@ -176,7 +162,7 @@ These images must be named as listed below:
 Tips for creating these images can be found
 [here](Popup_Balloons#Customization.
 
-## <span id="Using_AJAX_and_remote_content" class="mw-headline">Using AJAX and remote content</span>
+## Using AJAX and remote content
 
 Alternatively, you can populate the balloon using data from an HTML page
 or dynamic CGI script running on the same server as GBrowse. This uses
@@ -247,12 +233,12 @@ option:
 
      balloon height = 400
 
-## <span id="Using_GBrowse_details_as_an_AJAX_Request_Handler_for_Popup_Balloons" class="mw-headline">Using GBrowse_details as an AJAX Request Handler for Popup Balloons</span>
+## Using GBrowse_details as an AJAX Request Handler for Popup Balloons
 
 **How to make low-impact changes to existing code to provide a built-in
 ajax handler for Gbrowse popup ballons (or other applications**
 
-### <span id="Examples" class="mw-headline">Examples</span>
+### Examples
 
 - A balloon hover with contents generated using an AJAX call to
   gbrowse_details and the **_params_** callback shown below
@@ -268,19 +254,13 @@ alt="Sample1b.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8d/Sample2b.png" width="454" height="364"
 alt="Sample2b.png" />
 
-### <span id="Changes_to_gbrowse_details" class="mw-headline">Changes to gbrowse_details</span>
+### Changes to gbrowse_details
 
 - A new CGI parameter to invoke the AJAX-handling behavior
-
-<!-- -->
-
     my $rmt   = param('remote');
 
 - A response is triggered after the feature(s) are defined but before
   **_PrintTop_** is called.
-
-<!-- -->
-
     if (defined $rmt) {
       print header,start_html;
       print remote_content($rmt,$features[0]);
@@ -291,9 +271,6 @@ alt="Sample2b.png" />
 - The **_remote_content_** subroutine will get the text or coderef. It
   will return the text or execute the callback with user-defined
   arguments
-
-<!-- -->
-
     # do something for popup balloons
     sub remote_content {
       my $key = shift; # the key for the text or code-ref in the gbrowse config file
@@ -313,7 +290,7 @@ alt="Sample2b.png" />
       return $contents->(\%args);
     }
 
-### <span id="Changes_To_Configuration_File" class="mw-headline">Changes To Configuration File</span>
+### Changes To Configuration File
 
 - A new section \[TOOLTIPS\] that has all the named text sections or
   callbacks you need to access through gbrowse_details
@@ -331,13 +308,13 @@ alt="Callbacks" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/30/Orf_stanza" width="749" height="267"
 alt="Orf stanza" />
 
-# <span id="Popups_in_Gbrowse_2.0" class="mw-headline">Popups in Gbrowse 2.0</span>
+# Popups in Gbrowse 2.0
 
 The upcoming release of GBrowse 2.0 will have some changes to popup
 balloons.  
 Some key differences are:
 
-### <span id="Tooltip_Styles" class="mw-headline">Tooltip Styles</span>
+### Tooltip Styles
 
 - There are four tooltip styles offered by default.
 - The way they are used in GBrowse has not been changed substantially.
@@ -347,7 +324,7 @@ eg
 
     balloon hover = [GPlain] This is my message
 
-#### <span id="GBubble_and_GFade" class="mw-headline">GBubble and GFade</span>
+#### GBubble and GFade
 
 This is the original popup balloon from GBrowse 1.69. It has a couple of
 new behaviors, including an opacity setting (the example shown has
@@ -371,7 +348,7 @@ balloon hover = [GBubble] I am 'GBubble', the <i>classic</i> GBrowse popup ballo
   than just popping up. This is accomplished by starting out transparent
   and gradually increasing the opacity over a span of 1200 msec.
 
-#### <span id="GPlain" class="mw-headline">GPlain</span>
+#### GPlain
 
 The GPlain style is a plainer style of balloon tooltip but still offers
 fully HTML formatted contents, opacity, etc. The default configuration
@@ -389,7 +366,7 @@ Example configuration
 balloon hover = [GPlain] I am 'GPlain', I am less fancy!
 ```
 
-#### <span id="GBox" class="mw-headline">GBox</span>
+#### GBox
 
 GBox is a formatted box. It can have fixed dimensions or resize
 dynamically (actually, this is true of all balloon tooltips).
@@ -418,7 +395,7 @@ Example configuration:
 balloon hover = [GBox] I am a box.
 ```
 
-### <span id="Changing_the_global_default_balloon_style" class="mw-headline">Changing the global default balloon style</span>
+### Changing the global default balloon style
 
 The balloon style used by default is 'GBubble'. This can be changed
 using the 'balloon style' option in either GBrowse.conf or in the
@@ -427,7 +404,7 @@ configuration file for individual data sources.
     # use GBubble as the default balloon style
     balloon style = GBubble
 
-### <span id="Configuring_Default_Tooltip_Styles" class="mw-headline">Configuring Default Tooltip Styles</span>
+### Configuring Default Tooltip Styles
 
 Default balloon style options are configured in the file
 balloon.config.js, which comes with the distribution. Many display
@@ -529,23 +506,17 @@ in balloon.config.js
   }
 ```
 
-### <span id="Other_differences" class="mw-headline">Other differences</span>
+### Other differences
 
-#### <span id="Cursor_Tracking" class="mw-headline">Cursor Tracking</span>
+#### Cursor Tracking
 
 - By default, the position of non-sticky balloons (or boxes) will follow
   the mouse cursor until it leaves the text or image that triggered the
   balloon tooltip.
-
-<!-- -->
-
 - This option can be disabled via balloon.config.js
-
-<!-- -->
-
      balloon.trackCursor = false;
 
-#### <span id="Overflow_and_Scrollbars" class="mw-headline">Overflow and Scrollbars</span>
+#### Overflow and Scrollbars
 
 - When the size of the balloon contents exceeds the balloon (or box)
   size, two new behaviors have been introduced:
@@ -557,19 +528,19 @@ in balloon.config.js
     as popup balloons are not mean to contain contents exceeding
     500-600px width and height in any case.
 
-#### <span id="Both_height_and_width_can_be_constrained" class="mw-headline">Both height and width can be constrained</span>
+#### Both height and width can be constrained
 
 Height and width arguments are supported. In cases where the balloon
 contents are smaller than the specified dimensions, the balloon or box
 will shrink to fit. However, oversize contents will trigger clipping for
 non-sticky balloons and scrollbars for sticky balloons
 
-#### <span id="Tooltips_will_not_go_off-screen" class="mw-headline">Tooltips will not go off-screen</span>
+#### Tooltips will not go off-screen
 
 Tooltips will automatically resize to stay inside the visible window.
 Again, reasonable limits apply.
 
-### <span id="GBox_for_GBrowse_1.7" class="mw-headline">GBox for GBrowse 1.7</span>
+### GBox for GBrowse 1.7
 
 Most of the new tooltip feayures described above are specific to GBrowse 2. The following is a recipe to add a GBox-style tooltips to Gbrowse
 1.7.
@@ -634,53 +605,3 @@ added to the init_code section. More simply, you could just do:
 
 balloon hover = \[GBox\] Whatever text you want goes here.... balloon
 click = \[GBox\] Whatever sticky text ...
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [AJAX](Category%253AAJAX "Category%253AAJAX")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [Javascript](Category%253AJavascript "Category%253AJavascript")
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Popup_Balloons" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 20:06 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">267,760 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

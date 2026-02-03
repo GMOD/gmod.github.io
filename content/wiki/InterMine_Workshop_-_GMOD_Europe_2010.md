@@ -1,23 +1,7 @@
 ---
 title: "InterMine Workshop - GMOD Europe 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">InterMine Workshop - GMOD Europe 2010</span>
-
-
-
-
-
-
-
+# InterMine Workshop - GMOD Europe 2010
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -74,7 +58,7 @@ creating simple 'canned queries', upload and operations on lists,
 graphical and statistical widgets for analysing lists of data and MyMine
 accounts for saving user data.
 
-## <span id="The_Workshop_-_15th_September_2010" class="mw-headline">The Workshop - 15th September 2010</span>
+## The Workshop - 15th September 2010
 
 The one day (9:30-17:00) workshop was a hands-on guide to setting up a
 new [InterMine](InterMine "InterMine") warehouse, integrating data using
@@ -94,99 +78,10 @@ a [BioMart
 Workshop](BioMart_Workshop_-_GMOD_Europe_2010 "BioMart Workshop - GMOD Europe 2010").
 GMOD Europe 2010 was held in Cambridge UK.
 
-## <span id="Registration" class="mw-headline">Registration</span>
+## Registration
 
 Registration is free, but required, as space is limited. Please see the
 [GMOD Europe 2010
 page](GMOD_Europe_2010#Registration "GMOD Europe 2010") for a link to
 the registration form. You may register for multiple events, or just the
 InterMine workshop.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [InterMine](Category%253AInterMine "Category%253AInterMine")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/InterMine_Workshop_-2D_GMOD_Europe_2010"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">62,994 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

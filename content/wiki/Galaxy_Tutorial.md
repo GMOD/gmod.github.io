@@ -1,26 +1,11 @@
 ---
 title: "Galaxy Tutorial 2013"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Galaxy Tutorial 2013</span>
-
-
-
+# Galaxy Tutorial 2013
 
 
 (Redirected from [Galaxy
-Tutorial](Galaxy_Tutorial)
-
-
-
+Tutorial](/wiki/Galaxy_Tutorial)
 
 
 This walks you through setting up and running a
@@ -29,67 +14,60 @@ This walks you through setting up and running a
 School](2013_GMOD_Summer_School "2013 GMOD Summer School").
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Open Ports
   20-21, 8081</span>](#Open_Ports_20-21.2C_8081)
-- [<span class="tocnumber">2</span> <span class="toctext">Starting
-  AMI</span>](#Starting_AMI)
-- [<span class="tocnumber">3</span> <span class="toctext">Galaxy
-  Project</span>](#Galaxy_Project)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Some
-    General Galaxy Resources</span>](#Some_General_Galaxy_Resources)
-- [<span class="tocnumber">4</span> <span class="toctext">Create a
-  Galaxy instance</span>](#Create_a_Galaxy_instance)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-    - [<span class="tocnumber">4.1.1</span> <span class="toctext">Galaxy
+- [Starting
+  AMI](#Starting_AMI)
+- [Galaxy
+  Project](#Galaxy_Project)
+  - [Some
+    General Galaxy Resources](#Some_General_Galaxy_Resources)
+- [Create a
+  Galaxy instance](#Create_a_Galaxy_instance)
+  - [Prerequisites](#Prerequisites)
+    - [Galaxy
       needs a newer version of
-      bedtools</span>](#Galaxy_needs_a_newer_version_of_bedtools)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Clone the
-    Galaxy repository</span>](#Clone_the_Galaxy_repository)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Update
-    Galaxy Configuration File</span>](#Update_Galaxy_Configuration_File)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Use a more
-    robust database</span>](#Use_a_more_robust_database)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">Run,
-    Galaxy, Run!</span>](#Run.2C_Galaxy.2C_Run.21)
-- [<span class="tocnumber">5</span> <span class="toctext">Running
-  analyses with Galaxy</span>](#Running_analyses_with_Galaxy)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">1. Access
+      bedtools](#Galaxy_needs_a_newer_version_of_bedtools)
+  - [Clone the
+    Galaxy repository](#Clone_the_Galaxy_repository)
+  - [Update
+    Galaxy Configuration File](#Update_Galaxy_Configuration_File)
+  - [Use a more
+    robust database](#Use_a_more_robust_database)
+  - [Run,
+    Galaxy, Run!](#Run.2C_Galaxy.2C_Run.21)
+- [Running
+  analyses with Galaxy](#Running_analyses_with_Galaxy)
+  - [1. Access
     your new Galaxy
-    instance</span>](#1._Access_your_new_Galaxy_instance)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">2. Create
-    a user</span>](#2._Create_a_user)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">3. Lets
-    answer a question</span>](#3._Lets_answer_a_question)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">4. Get the
-    data into Galaxy</span>](#4._Get_the_data_into_Galaxy)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">5.
+    instance](#1._Access_your_new_Galaxy_instance)
+  - [2. Create
+    a user](#2._Create_a_user)
+  - [3. Lets
+    answer a question](#3._Lets_answer_a_question)
+  - [4. Get the
+    data into Galaxy](#4._Get_the_data_into_Galaxy)
+  - [5.
     Identify genes and TFBSs that
-    overlap</span>](#5._Identify_genes_and_TFBSs_that_overlap)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">6. Group
-    and Count</span>](#6._Group_and_Count)
-  - [<span class="tocnumber">5.7</span> <span class="toctext">7. Get
-    Gene Info back</span>](#7._Get_Gene_Info_back)
-  - [<span class="tocnumber">5.8</span> <span class="toctext">8.
-    Visualize Your Analysis</span>](#8._Visualize_Your_Analysis)
-    - [<span class="tocnumber">5.8.1</span> <span class="toctext">Define
-      this assembly to Galaxy</span>](#Define_this_assembly_to_Galaxy)
-- [<span class="tocnumber">6</span> <span class="toctext">Administering
-  Galaxy</span>](#Administering_Galaxy)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">1. Make
-    yourself an admin</span>](#1._Make_yourself_an_admin)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">2. Enable
-    Tool Shed</span>](#2._Enable_Tool_Shed)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">3. Find
+    overlap](#5._Identify_genes_and_TFBSs_that_overlap)
+  - [6. Group
+    and Count](#6._Group_and_Count)
+  - [7. Get
+    Gene Info back](#7._Get_Gene_Info_back)
+  - [8.
+    Visualize Your Analysis](#8._Visualize_Your_Analysis)
+    - [Define
+      this assembly to Galaxy](#Define_this_assembly_to_Galaxy)
+- [Administering
+  Galaxy](#Administering_Galaxy)
+  - [1. Make
+    yourself an admin](#1._Make_yourself_an_admin)
+  - [2. Enable
+    Tool Shed](#2._Enable_Tool_Shed)
+  - [3. Find
     and install a Venn Diagram drawing
-    tool</span>](#3._Find_and_install_a_Venn_Diagram_drawing_tool)
-- [<span class="tocnumber">7</span> <span class="toctext">Running Galaxy
-  on the Cloud</span>](#Running_Galaxy_on_the_Cloud)
-
+    tool](#3._Find_and_install_a_Venn_Diagram_drawing_tool)
+- [Running Galaxy
+  on the Cloud](#Running_Galaxy_on_the_Cloud)
 
 
 <a href="http://galaxyproject.org/" class="external text"
@@ -102,7 +80,7 @@ interactive analysis that transparently tracks the details of analyses,
 a workflow system for convenient reuse, data management, sharing,
 publishing, and more.
 
-## <span id="Open_Ports_20-21.2C_8081" class="mw-headline">Open Ports 20-21, 8081</span>
+## Open Ports 20-21, 8081
 
 For this tutorial, Galaxy will use port 8081. FTP, which is not used in
 this tutorial, but is used in Galaxy to upload large files, is on ports
@@ -111,18 +89,16 @@ this tutorial, but is used in Galaxy to upload large files, is on ports
 the **Inbound** tab and then add
 
 
-
 | Create a new rule | Port range | Source    |
 |-------------------|------------|-----------|
 | Custom TCP Rule   | 8081       | 0.0.0.0/0 |
 | Custom TCP Rule   | 20-21      | 0.0.0.0/0 |
 
 
-
 *Click* **+ Add rule** after each, and then **Apply Rule Changes** after
 all have been added.
 
-## <span id="Starting_AMI" class="mw-headline">Starting AMI</span>
+## Starting AMI
 
 Get the starting image for this tutorial - **GMOD 2013 Galaxy Install
 Training Instance (ami-f1a1d998)**. It needs to be run as
@@ -130,12 +106,12 @@ Training Instance (ami-f1a1d998)**. It needs to be run as
 class="external text" rel="nofollow">at least a <strong>large</strong>
 instance</a>.
 
-## <span id="Galaxy_Project" class="mw-headline">Galaxy Project</span>
+## Galaxy Project
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6f/GMOD2013GalaxyIntro.pdf"
 class="internal" title="GMOD2013GalaxyIntro.pdf">Slides</a>
 
-### <span id="Some_General_Galaxy_Resources" class="mw-headline">Some General Galaxy Resources</span>
+### Some General Galaxy Resources
 
 Before we get started, let's highlight some Galaxy resources that may be
 useful to us along the way.
@@ -143,62 +119,34 @@ useful to us along the way.
 <a href="http://galaxyproject.org" class="external free"
 rel="nofollow">http://galaxyproject.org</a>  
 The Galaxy Project home page
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/" class="external text"
 rel="nofollow">GalaxyWiki</a>  
 All things Galaxy.
-
-<!-- -->
-
 <a href="http://getgalaxy.org/" class="external free"
 rel="nofollow">http://getgalaxy.org/</a>  
 Hub page for installing and managing your own Galaxy instance.
-
-<!-- -->
-
 <a href="http://usegalaxy.org/" class="external free"
 rel="nofollow">http://usegalaxy.org/</a>  
 The Galaxy project's free public server.
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/PublicGalaxyServers"
 class="external text" rel="nofollow">Public Galaxy Servers</a>  
 Current list of know publicly accessible Galaxy servers.
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/" class="external text"
 rel="nofollow">Galaxy Search</a>  
 Integrated searches of all online Galaxy resources. Available searches:
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/web" class="external text"
 rel="nofollow">Pan-Galactic Web Search</a>  
 Search everything
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Galaxy Mailing Lists Search</a>  
 Search the (Nabble-powered) mailing list archives
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/usegalaxy"
 class="external text" rel="nofollow">Using Galaxy Search</a>  
 Search online resources related to *using* Galaxy
-
-<!-- -->
-
 <a href="http://galaxyproject.org/search/getgalaxy"
 class="external text" rel="nofollow">Galaxy Admin and Development
 Search</a>  
 Search online resources related to *deploying and developing* Galaxy
-
 
 
 Results from searches are often further broken down into categories
@@ -216,22 +164,15 @@ Results from searches are often further broken down into categories
 This is all implemented using Google Custom Search.
 
 
-
 <a href="https://wiki.galaxyproject.org/Mailing%20Lists"
 class="external text" rel="nofollow">Mailing Lists</a> and <a href="http://galaxyproject.org/search/mailinglists"
 class="external text" rel="nofollow">Mailing Lists Search</a>  
 Galaxy has several mailing lists, some of which are
 <a href="https://wiki.galaxyproject.org/Statistics"
 class="external text" rel="nofollow">very active</a>
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/Learn" class="external text"
 rel="nofollow">Learning hub page</a>  
 Start here to learn how to use Galaxy.
-
-<!-- -->
-
 <a href="https://wiki.galaxyproject.org/CiteULike" class="external text"
 rel="nofollow">Galaxy CiteULike group</a> (<a href="http://www.citeulike.org/group/16008/order/to_read,desc,"
 class="external text" rel="nofollow">@ CiteULike</a>)  
@@ -239,16 +180,14 @@ Seventeen different <a href="http://www.citeulike.org/group/16008/tags"
 class="external text" rel="nofollow">tags/categories</a> on *1066+
 publications*
 
-## <span id="Create_a_Galaxy_instance" class="mw-headline">Create a Galaxy instance</span>
-
+## Create a Galaxy instance
 
 
 See <a href="http://getgalaxy.org" class="external free"
 rel="nofollow">http://getgalaxy.org</a>.
 
 
-
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 You need a Python interpreter, version 2.6 or greater. Python 3 is a
 different language and is currently not supported. The Amazon Machine
@@ -268,7 +207,7 @@ rel="nofollow">Mercurial</a>. The AMI already includes mercurial version
     Mercurial Distributed SCM (version 2.0.2)
     ...
 
-#### <span id="Galaxy_needs_a_newer_version_of_bedtools" class="mw-headline">Galaxy needs a newer version of bedtools</span>
+#### Galaxy needs a newer version of bedtools
 
 <a href="https://code.google.com/p/bedtools/" class="external text"
 rel="nofollow">bedtools</a> is installed on this machine, but it's an
@@ -278,7 +217,6 @@ class="external text" rel="nofollow">older version</a> without the
 bedtools package, and install
 <a href="https://code.google.com/p/bedtools/downloads/list"
 class="external text" rel="nofollow">a newer one</a>.
-
 
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
@@ -297,13 +235,11 @@ then put it where it can be found.
 ```
 
 
-
-### <span id="Clone_the_Galaxy_repository" class="mw-headline">Clone the Galaxy repository</span>
+### Clone the Galaxy repository
 
 The development and release repositories are available through the
 <a href="http://bitbucket.org" class="external text"
 rel="nofollow">bitbucket hosting service</a>.
-
 
 
 **DO NOT DO THIS NOW** as it has already been done on your image:
@@ -318,8 +254,7 @@ To create a local clone of the release repository run the following:
 ```
 
 
-
-### <span id="Update_Galaxy_Configuration_File" class="mw-headline">Update Galaxy Configuration File</span>
+### Update Galaxy Configuration File
 
 Often you can just fire up Galaxy at this point. However, we want a few
 things to be different from the default installation. Galaxy's main
@@ -370,14 +305,12 @@ to this:
 
 Actually use something shorter.
 
-### <span id="Use_a_more_robust_database" class="mw-headline">Use a more robust database</span>
-
+### Use a more robust database
 
 
 See <a
 href="https://wiki.galaxyproject.org/Admin/Config/Performance/Production%20Server"
 class="external text" rel="nofollow">Production Server</a>
-
 
 
 Out of the box Galaxy includes the embedded
@@ -410,7 +343,7 @@ the database that we told Galaxy to connect to:
 
     $ createdb galaxydb
 
-### <span id="Run.2C_Galaxy.2C_Run.21" class="mw-headline">Run, Galaxy, Run!</span>
+### Run, Galaxy, Run!
 
 Galaxy includes a script to run it. This script also performs the Galaxy
 initialization the first time it is run. Run it now:
@@ -446,13 +379,11 @@ loading tool configurations, starting the job runner, and finally
 initializing the web interface on the requested port. You can now access
 your Galaxy at http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
 
-## <span id="Running_analyses_with_Galaxy" class="mw-headline">Running analyses with Galaxy</span>
-
+## Running analyses with Galaxy
 
 
 See also <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>
-
 
 
 Without any additional configuration, there is already a lot we can do
@@ -461,7 +392,7 @@ analysis that is based on, but distinct from the
 <a href="http://usegalaxy.org/galaxy101" class="external text"
 rel="nofollow">Galaxy 101 tutorial</a>.
 
-#### <span id="1._Access_your_new_Galaxy_instance" class="mw-headline">1. Access your new Galaxy instance</span>
+#### 1. Access your new Galaxy instance
 
 Start a web browser and access
 http://ec2-##-##-##-##.compute-1.amazonaws.com:8081.
@@ -471,7 +402,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Galaxy_FirstAnalysis_1.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/5a/Galaxy_FirstAnalysis_1.png 2x"
 width="900" height="678" alt="Galaxy FirstAnalysis 1.png" />
 
-#### <span id="2._Create_a_user" class="mw-headline">2. Create a user</span>
+#### 2. Create a user
 
 In the top bar, *select* **User → Register**. *Enter* your
 
@@ -486,10 +417,9 @@ and *click* **Submit**.
 Registering is not required in order to use Galaxy. However, to use all
 of it, users need to register.
 
-#### <span id="3._Lets_answer_a_question" class="mw-headline">3. Lets answer a question</span>
+#### 3. Lets answer a question
 
 Now that Galaxy is up and running, let's use it to answer a question
-
 
 
 We scooped up an unknown beast out of the slime and sent it off to the
@@ -502,11 +432,10 @@ What we now want to know is: which exons/genes have the most overlapping
 / embedded TFBSs?
 
 
-
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/61/GMOD2013Galaxy101.pdf"
 class="internal" title="GMOD2013Galaxy101.pdf">Slides</a>
 
-#### <span id="4._Get_the_data_into_Galaxy" class="mw-headline">4. Get the data into Galaxy</span>
+#### 4. Get the data into Galaxy
 
 Select **Tools → Get Data → Upload Data**. This brings up the upload
 data form from which you can
@@ -536,7 +465,7 @@ data. For each dataset,
 - Change the history name from `unnamed history` (which is true, but not
   useful) to something more meaningful.
 
-#### <span id="5._Identify_genes_and_TFBSs_that_overlap" class="mw-headline">5. Identify genes and TFBSs that overlap</span>
+#### 5. Identify genes and TFBSs that overlap
 
 Select **Tools → Operate on Genomic Intervals → Join**.
 
@@ -556,7 +485,7 @@ Take a close look at the dataset. Note that
 
 *Make sure you understand why.*
 
-#### <span id="6._Group_and_Count" class="mw-headline">6. Group and Count</span>
+#### 6. Group and Count
 
 Now we want to walk through the pairings and count the number of times
 each gene occurs. This number is the number of TFBS that overlap with
@@ -584,15 +513,13 @@ If we were to now to run **Tools → Filter and Sort → Sort** on this
 dataset, we would have the answer to our original question:
 
 
-
 Which genes have the most overlapping TFBS?
-
 
 
 We have the list of genes, and the counts in them. We could use this
 dataset in further analysis, email it someone, etc..
 
-#### <span id="7._Get_Gene_Info_back" class="mw-headline">7. Get Gene Info back</span>
+#### 7. Get Gene Info back
 
 However, we can do better. We have lost some information about the genes
 (like position, strand, and so on) that we had in the original gene
@@ -630,20 +557,18 @@ the dataset a better name. *Click* on the datasets' **pencil icon** and
 set the dataset name to something meaningful. Then *click* on the
 **Datatype** type and select **bed** from the pulldown.
 
-#### <span id="8._Visualize_Your_Analysis" class="mw-headline">8. Visualize Your Analysis</span>
+#### 8. Visualize Your Analysis
 
 We can now visualize our results in Galaxy. Click on the **visualize
 *icon and select*** *Trackster'* from the pulldown, and then click on
 **View in new visualization**.
 
-##### <span id="Define_this_assembly_to_Galaxy" class="mw-headline">Define this assembly to Galaxy</span>
+##### Define this assembly to Galaxy
 
 You may have noticed that In the preview of each dataset it shows
 
 
-
 database: ?
-
 
 
 The *database* (also referred to as a *build*) specifies which *genome
@@ -705,9 +630,9 @@ UCSC, where you can download it and install it.
 
 *Click* **Try again**. *Voillà.*
 
-## <span id="Administering_Galaxy" class="mw-headline">Administering Galaxy</span>
+## Administering Galaxy
 
-### <span id="1._Make_yourself_an_admin" class="mw-headline">1. Make yourself an admin</span>
+### 1. Make yourself an admin
 
 On the command line, stop Galaxy by entering \<ctrl-c\>. Then edit
 `universe_wsgi.ini` file and add yourself as an administrator:
@@ -719,7 +644,7 @@ On the command line, stop Galaxy by entering \<ctrl-c\>. Then edit
     #admin_users = None            
     admin_users = your@email.adr
 
-### <span id="2._Enable_Tool_Shed" class="mw-headline">2. Enable Tool Shed</span>
+### 2. Enable Tool Shed
 
 While we are in `universe_wsgi.ini`, lets also enable this server to use
 the Galaxy Tool Shed.
@@ -746,7 +671,7 @@ Now, restart Galaxy:
 
     $ sh run.sh
 
-### <span id="3._Find_and_install_a_Venn_Diagram_drawing_tool" class="mw-headline">3. Find and install a Venn Diagram drawing tool</span>
+### 3. Find and install a Venn Diagram drawing tool
 
 Once your Galaxy has restarted, reload your web page. You should now see
 an **Admin** link in the top menu bar. Click on it, and then **Tool
@@ -754,12 +679,10 @@ sheds → Search and browse tool sheds → Galaxy Main Tool Shed**. Search
 for "venn".
 
 
-
 An error occurred with this dataset: Traceback (most recent call last):
 File
 "/home/ubuntu/Galaxy/shed_tools/toolshed.g2.bx.psu.edu/repos/peterjc/venn_list/c96bef0643dc/venn_list/tools/plotting/venn_list.py",
 line 13, in import rpy ImportError: No module named rpy
-
 
 
 Do a web search for rpy debian package
@@ -777,97 +700,10 @@ and biology.
 
 Success.
 
-## <span id="Running_Galaxy_on_the_Cloud" class="mw-headline">Running Galaxy on the Cloud</span>
+## Running Galaxy on the Cloud
 
 Go to <a href="http://usegalaxy.org/cloudlaunch" class="external text"
 rel="nofollow">CloudLaunch</a>
 
 <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2b/GMOD2013GalaxyCloud.pdf"
 class="internal" title="GMOD2013GalaxyCloud.pdf">Slides</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Galaxy_Tutorial_2013" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:33 on 10 June
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">245,330 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

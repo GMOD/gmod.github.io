@@ -1,73 +1,43 @@
 ---
 title: "Notes on simplified nd schema and Use Cases"
 ---
+# Notes on simplified nd schema and Use Cases
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Notes on simplified nd schema and Use Cases</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">SQL</span>](#SQL)
-- [<span class="tocnumber">2</span> <span class="toctext">Schema
-  Drawing</span>](#Schema_Drawing)
-- [<span class="tocnumber">3</span> <span class="toctext">Notes on the
-  tables</span>](#Notes_on_the_tables)
-- [<span class="tocnumber">4</span> <span class="toctext">Use
-  Cases</span>](#Use_Cases)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">tree fruit
-    breeding data (tfGDR)</span>](#tree_fruit_breeding_data_.28tfGDR.29)
-    - [<span class="tocnumber">4.1.1</span> <span class="toctext">Cross
-      Experiment</span>](#Cross_Experiment)
-    - [<span class="tocnumber">4.1.2</span>
-      <span class="toctext">Phenotype Assay</span>](#Phenotype_Assay)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">mosquito
-    field collections</span>](#mosquito_field_collections)
-    - [<span class="tocnumber">4.2.1</span> <span class="toctext">Field
+  SQL](#SQL)
+- [Schema
+  Drawing](#Schema_Drawing)
+- [Notes on the
+  tables](#Notes_on_the_tables)
+- [Use
+  Cases](#Use_Cases)
+  - [tree fruit
+    breeding data (tfGDR)](#tree_fruit_breeding_data_.28tfGDR.29)
+    - [Cross
+      Experiment](#Cross_Experiment)
+    - [Phenotype Assay](#Phenotype_Assay)
+  - [mosquito
+    field collections](#mosquito_field_collections)
+    - [Field
       Collections +
-      karyotyping</span>](#Field_Collections_.2B_karyotyping)
-      - [<span class="tocnumber">4.2.1.1</span>
-        <span class="toctext">Collection</span>](#Collection)
-      - [<span class="tocnumber">4.2.1.2</span>
-        <span class="toctext">Karyotyping</span>](#Karyotyping)
-    - [<span class="tocnumber">4.2.2</span>
-      <span class="toctext">Questions:</span>](#Questions:)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">mosquito
-    phenotype data</span>](#mosquito_phenotype_data)
-    - [<span class="tocnumber">4.3.1</span> <span class="toctext">RNAi
-      knockdown experiments</span>](#RNAi_knockdown_experiments)
-    - [<span class="tocnumber">4.3.2</span> <span class="toctext">stocks
-      selected for phenotype</span>](#stocks_selected_for_phenotype)
-      - [<span class="tocnumber">4.3.2.1</span>
-        <span class="toctext">stock selection</span>](#stock_selection)
-      - [<span class="tocnumber">4.3.2.2</span>
-        <span class="toctext">genotyping
-        performed</span>](#genotyping_performed)
-    - [<span class="tocnumber">4.3.3</span>
-      <span class="toctext">Insecticide Resistance
-      Assay</span>](#Insecticide_Resistance_Assay)
+      karyotyping](#Field_Collections_.2B_karyotyping)
+      - [Collection](#Collection)
+      - [Karyotyping](#Karyotyping)
+    - [Questions:](#Questions:)
+  - [mosquito
+    phenotype data](#mosquito_phenotype_data)
+    - [RNAi
+      knockdown experiments](#RNAi_knockdown_experiments)
+    - [stocks
+      selected for phenotype](#stocks_selected_for_phenotype)
+      - [stock selection](#stock_selection)
+      - [genotyping
+        performed](#genotyping_performed)
+    - [Insecticide Resistance
+      Assay](#Insecticide_Resistance_Assay)
 
 
-
-## <span id="SQL" class="mw-headline">SQL</span>
+## SQL
 
 <a
 href="https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/integrate_natdiv/chado/modules/natural_diversity/natural_diversity.sql"
@@ -76,14 +46,14 @@ rel="nofollow">https://gmod.svn.sourceforge.net/svnroot/gmod/schema/branches/int
 
   
 
-## <span id="Schema_Drawing" class="mw-headline">Schema Drawing</span>
+## Schema Drawing
 
 <a
 href="http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010#April_2010"
 class="external free"
 rel="nofollow">http://gmod.org/w/index.php?title=Talk%253AChado_Natural_Diversity_Module_Working_Group#April_2010</a>
 
-## <span id="Notes_on_the_tables" class="mw-headline">Notes on the tables</span>
+## Notes on the tables
 
 stock
 
@@ -246,11 +216,11 @@ nd_geolocation
 
 nd_geolocationprop
 
-## <span id="Use_Cases" class="mw-headline">Use Cases</span>
+## Use Cases
 
-### <span id="tree_fruit_breeding_data_.28tfGDR.29" class="mw-headline">tree fruit breeding data (tfGDR)</span>
+### tree fruit breeding data (tfGDR)
 
-#### <span id="Cross_Experiment" class="mw-headline">Cross Experiment</span>
+#### Cross Experiment
 
 Data:
 
@@ -278,7 +248,7 @@ Chado:
 - Individual crosses is linked to a larger project via
   nd_experiment_project.
 
-#### <span id="Phenotype_Assay" class="mw-headline">Phenotype Assay</span>
+#### Phenotype Assay
 
 - Multiple clones of the same fruit tree accessions are planted in
   various lots of various orchards.
@@ -337,11 +307,11 @@ Chado:
 
 Comments:
 
-### <span id="mosquito_field_collections" class="mw-headline">mosquito field collections</span>
+### mosquito field collections
 
-#### <span id="Field_Collections_.2B_karyotyping" class="mw-headline">Field Collections + karyotyping</span>
+#### Field Collections + karyotyping
 
-##### <span id="Collection" class="mw-headline">Collection</span>
+##### Collection
 
 - Data:
   - Collection site, catch method, time, project
@@ -356,7 +326,7 @@ Comments:
     whether a date/time range or cv term)
   - Project -\> Project
 
-##### <span id="Karyotyping" class="mw-headline">Karyotyping</span>
+##### Karyotyping
 
 - Data:
   - Karyotyping method, karyotype, project
@@ -366,21 +336,18 @@ Comments:
   - Karyotype -\> genotype/feature (relies on karyotypes being clearly
     defined in feature module)
 
-#### <span id="Questions:" class="mw-headline">Questions:</span>
+#### Questions:
 
 No obvious way to link a project to either a contact (i.e. experimenter)
 or a publication. project_pub / project_contact experiments needed?
 
-### <span id="mosquito_phenotype_data" class="mw-headline">mosquito phenotype data</span>
+### mosquito phenotype data
 
-#### <span id="RNAi_knockdown_experiments" class="mw-headline">RNAi knockdown experiments</span>
+#### RNAi knockdown experiments
 
 - Data:
   - original lab strain, experimental and control dsRNA reagents,
     observed phenotype
-
-<!-- -->
-
 - ND Module **Approach 1** (graph version: <a
   href="http://wiki.vectorbase.org/index.php/Popgen_development/Use_case_diagrams#Approach_1#Approach_1"
   class="external autonumber" rel="nofollow">[1]</a>)
@@ -444,9 +411,9 @@ stock_assay.type = "control" + stock_assayprop = "dsGFP knockdown") I
 don't see a problem with linking the g3 stock directly to the control
 assay.*
 
-#### <span id="stocks_selected_for_phenotype" class="mw-headline">stocks selected for phenotype</span>
+#### stocks selected for phenotype
 
-##### <span id="stock_selection" class="mw-headline">stock selection</span>
+##### stock selection
 
 - data
   - G3 mosquitos grown, midguts dissected and mosquitos split into 3
@@ -460,7 +427,7 @@ assay.*
   - 3 assays each linked to a NEW stock
     - via assay_stock table, type = "mosquito midgut"
 
-##### <span id="genotyping_performed" class="mw-headline">genotyping performed</span>
+##### genotyping performed
 
 - data
   - DNA extracted from bodies of above and used in genotyping assays
@@ -473,7 +440,7 @@ see diagram on <a
 href="http://wiki.vectorbase.org/index.php/GMOD_Natural_Diversity_Use_Cases#stocks_selected_for_phenotype#stocks_selected_for_phenotype"
 class="external text" rel="nofollow">VB wiki</a>
 
-#### <span id="Insecticide_Resistance_Assay" class="mw-headline">Insecticide Resistance Assay</span>
+#### Insecticide Resistance Assay
 
 - Insecticide Resistance assay
 - Sample developmental stage -\> ontology ID in nd_assay_stockprop
@@ -489,88 +456,7 @@ class="external text" rel="nofollow">VB wiki</a>
 - Genotype -\> nd_assay_genotype, genotype module
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Natural
   Diversity](Category%253ANatural_Diversity "Category%253ANatural Diversity")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Notes_on_simplified_nd_schema_and_Use_Cases"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:18 on 5 January
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">68,334 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

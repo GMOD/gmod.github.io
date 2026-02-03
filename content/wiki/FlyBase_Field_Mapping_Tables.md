@@ -1,63 +1,40 @@
 ---
 title: "FlyBase Field Mapping Tables"
 ---
+# FlyBase Field Mapping Tables
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">FlyBase Field Mapping Tables</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">FlyBase Gene
-  Report</span>](#FlyBase_Gene_Report)
-- [<span class="tocnumber">3</span> <span class="toctext">FlyBase Allele
-  Report</span>](#FlyBase_Allele_Report)
-- [<span class="tocnumber">4</span> <span class="toctext">FlyBase Gene
-  Expression Report</span>](#FlyBase_Gene_Expression_Report)
-- [<span class="tocnumber">5</span> <span class="toctext">FlyBase
-  Transcript Report</span>](#FlyBase_Transcript_Report)
-- [<span class="tocnumber">6</span> <span class="toctext">FlyBase
-  Polypeptide Report</span>](#FlyBase_Polypeptide_Report)
-- [<span class="tocnumber">7</span> <span class="toctext">FlyBase
-  Insertion Report</span>](#FlyBase_Insertion_Report)
-- [<span class="tocnumber">8</span> <span class="toctext">FlyBase Clone
-  Report</span>](#FlyBase_Clone_Report)
-- [<span class="tocnumber">9</span> <span class="toctext">FlyBase Stock
-  Report</span>](#FlyBase_Stock_Report)
-- [<span class="tocnumber">10</span> <span class="toctext">FlyBase
-  Aberration Report</span>](#FlyBase_Aberration_Report)
-- [<span class="tocnumber">11</span> <span class="toctext">FlyBase
-  Balancer Report</span>](#FlyBase_Balancer_Report)
-- [<span class="tocnumber">12</span> <span class="toctext">FlyBase
-  Reference Report</span>](#FlyBase_Reference_Report)
-- [<span class="tocnumber">13</span> <span class="toctext">FlyBase
+  Introduction](#Introduction)
+- [FlyBase Gene
+  Report](#FlyBase_Gene_Report)
+- [FlyBase Allele
+  Report](#FlyBase_Allele_Report)
+- [FlyBase Gene
+  Expression Report](#FlyBase_Gene_Expression_Report)
+- [FlyBase
+  Transcript Report](#FlyBase_Transcript_Report)
+- [FlyBase
+  Polypeptide Report](#FlyBase_Polypeptide_Report)
+- [FlyBase
+  Insertion Report](#FlyBase_Insertion_Report)
+- [FlyBase Clone
+  Report](#FlyBase_Clone_Report)
+- [FlyBase Stock
+  Report](#FlyBase_Stock_Report)
+- [FlyBase
+  Aberration Report](#FlyBase_Aberration_Report)
+- [FlyBase
+  Balancer Report](#FlyBase_Balancer_Report)
+- [FlyBase
+  Reference Report](#FlyBase_Reference_Report)
+- [FlyBase
   Transgenic Construct
-  Report</span>](#FlyBase_Transgenic_Construct_Report)
-- [<span class="tocnumber">14</span> <span class="toctext">FlyBase
-  Natural Transposon Report</span>](#FlyBase_Natural_Transposon_Report)
+  Report](#FlyBase_Transgenic_Construct_Report)
+- [FlyBase
+  Natural Transposon Report](#FlyBase_Natural_Transposon_Report)
 
 
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 The FlyBase field mapping tables map fields in the FlyBase data class
 reports (genes, alleles, insertions, etc...) to locations in Chado. They
@@ -65,7 +42,7 @@ contain simple tables with the first column containing the field name
 and the second column containing the SQL required to find data for that
 field.
 
-## <span id="FlyBase_Gene_Report" class="mw-headline">FlyBase Gene Report</span>
+## FlyBase Gene Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBgn0259750.html"
@@ -2523,7 +2500,7 @@ Component</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Allele_Report" class="mw-headline">FlyBase Allele Report</span>
+## FlyBase Allele Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBal0000067.html"
@@ -3768,7 +3745,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Gene_Expression_Report" class="mw-headline">FlyBase Gene Expression Report</span>
+## FlyBase Gene Expression Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBgn0259750_exp.html"
@@ -4137,7 +4114,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Transcript_Report" class="mw-headline">FlyBase Transcript Report</span>
+## FlyBase Transcript Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBtr0087703.html"
@@ -4680,7 +4657,7 @@ gene</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Polypeptide_Report" class="mw-headline">FlyBase Polypeptide Report</span>
+## FlyBase Polypeptide Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBpp0086822.html"
@@ -5063,7 +5040,7 @@ rel="nofollow">http://flybase.org/reports/FBpp0086822.html</a>
 </tbody>
 </table>
 
-## <span id="FlyBase_Insertion_Report" class="mw-headline">FlyBase Insertion Report</span>
+## FlyBase Insertion Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBti0000001.html"
@@ -5889,7 +5866,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Clone_Report" class="mw-headline">FlyBase Clone Report</span>
+## FlyBase Clone Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBcl0000001.html"
@@ -6534,7 +6511,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Stock_Report" class="mw-headline">FlyBase Stock Report</span>
+## FlyBase Stock Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBst0000001.html"
@@ -6675,7 +6652,7 @@ rel="nofollow">http://flybase.org/reports/FBst0000001.html</a>
 </tbody>
 </table>
 
-## <span id="FlyBase_Aberration_Report" class="mw-headline">FlyBase Aberration Report</span>
+## FlyBase Aberration Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBab0000001.html"
@@ -7214,7 +7191,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Balancer_Report" class="mw-headline">FlyBase Balancer Report</span>
+## FlyBase Balancer Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBba0000005.html"
@@ -7651,7 +7628,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Reference_Report" class="mw-headline">FlyBase Reference Report</span>
+## FlyBase Reference Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBrf0126983.html"
@@ -8332,7 +8309,7 @@ SELECT pa.surname || &#39;, &#39; || pa.givennames
 </tbody>
 </table>
 
-## <span id="FlyBase_Transgenic_Construct_Report" class="mw-headline">FlyBase Transgenic Construct Report</span>
+## FlyBase Transgenic Construct Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBtp0000001.html"
@@ -9071,7 +9048,7 @@ material</td>
 </tbody>
 </table>
 
-## <span id="FlyBase_Natural_Transposon_Report" class="mw-headline">FlyBase Natural Transposon Report</span>
+## FlyBase Natural Transposon Report
 
 **Example report:**
 <a href="http://flybase.org/reports/FBte0000001.html"
@@ -9581,87 +9558,6 @@ SELECT fo.name, pub.uniquename
 </table>
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Chado FlyBase](Category%253AChado_FlyBase "Category%253AChado FlyBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/FlyBase_Field_Mapping_Tables"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:46 on 15 November
-  2017.</span>
-<!-- - <span id="footer-info-viewcount">52,232 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,26 +1,11 @@
 ---
 title: "JBrowse Configuration Guide"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">JBrowse Configuration Guide</span>
-
-
-
+# JBrowse Configuration Guide
 
 
 (Redirected from [JBrowseDev/General
 Usage](JBrowseDev/General_Usage)
-
-
-
 
 
 **This page has been replaced with this page (<a
@@ -54,392 +39,309 @@ rel="nofollow">http://gmod.org/wiki/JBrowse_Desktop</a>
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Making a
-    New JBrowse</span>](#Making_a_New_JBrowse)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Upgrading
-    an Existing JBrowse</span>](#Upgrading_an_Existing_JBrowse)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Configuration Loading, Files, and
-    Formats</span>](#Configuration_Loading.2C_Files.2C_and_Formats)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">JavaScript Object Notation (JSON)
+  Installation](#Installation)
+  - [Making a
+    New JBrowse](#Making_a_New_JBrowse)
+  - [Upgrading
+    an Existing JBrowse](#Upgrading_an_Existing_JBrowse)
+  - [Configuration Loading, Files, and
+    Formats](#Configuration_Loading.2C_Files.2C_and_Formats)
+    - [JavaScript Object Notation (JSON)
       Configuration Format
-      (.json)</span>](#JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29)
-      - [<span class="tocnumber">1.3.1.1</span>
-        <span class="toctext">Considerations for the JSON
-        format</span>](#Considerations_for_the_JSON_format)
-    - [<span class="tocnumber">1.3.2</span> <span class="toctext">Text
+      (.json)](#JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29)
+      - [Considerations for the JSON
+        format](#Considerations_for_the_JSON_format)
+    - [Text
       Configuration Format
-      (.conf)</span>](#Text_Configuration_Format_.28.conf.29)
-      - [<span class="tocnumber">1.3.2.1</span>
-        <span class="toctext">Considerations for the text-based .conf
-        format</span>](#Considerations_for_the_text-based_.conf_format)
-      - [<span class="tocnumber">1.3.2.2</span>
-        <span class="toctext">Callback-function specific considerations
+      (.conf)](#Text_Configuration_Format_.28.conf.29)
+      - [Considerations for the text-based .conf
+        format](#Considerations_for_the_text-based_.conf_format)
+      - [Callback-function specific considerations
         for the text-based .conf
-        format</span>](#Callback-function_specific_considerations_for_the_text-based_.conf_format)
-    - [<span class="tocnumber">1.3.3</span>
-      <span class="toctext">Configuration loading
-      details</span>](#Configuration_loading_details)
-- [<span class="tocnumber">2</span> <span class="toctext">Reference
-  Sequences</span>](#Reference_Sequences)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Reference
+        format](#Callback-function_specific_considerations_for_the_text-based_.conf_format)
+    - [Configuration loading
+      details](#Configuration_loading_details)
+- [Reference
+  Sequences](#Reference_Sequences)
+  - [Reference
     Sequence Selector
-    Configuration</span>](#Reference_Sequence_Selector_Configuration)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Reference Sequence Display
-      Order</span>](#Reference_Sequence_Display_Order)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Explicitly Specifying a Reference Sequence
-      List</span>](#Explicitly_Specifying_a_Reference_Sequence_List)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">prepare-refseqs.pl</span>](#prepare-refseqs.pl)
-- [<span class="tocnumber">3</span> <span class="toctext">Formatting
-  Feature Data</span>](#Formatting_Feature_Data)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">flatfile-to-json.pl</span>](#flatfile-to-json.pl)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">biodb-to-json.pl</span>](#biodb-to-json.pl)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">ucsc-to-json.pl</span>](#ucsc-to-json.pl)
-- [<span class="tocnumber">4</span> <span class="toctext">Feature Tracks
+    Configuration](#Reference_Sequence_Selector_Configuration)
+    - [Reference Sequence Display
+      Order](#Reference_Sequence_Display_Order)
+    - [Explicitly Specifying a Reference Sequence
+      List](#Explicitly_Specifying_a_Reference_Sequence_List)
+  - [prepare-refseqs.pl](#prepare-refseqs.pl)
+- [Formatting
+  Feature Data](#Formatting_Feature_Data)
+  - [flatfile-to-json.pl](#flatfile-to-json.pl)
+  - [biodb-to-json.pl](#biodb-to-json.pl)
+  - [ucsc-to-json.pl](#ucsc-to-json.pl)
+- [Feature Tracks
   (HTMLFeatures and
-  CanvasFeatures)</span>](#Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">HTMLFeatures Configuration
-    Options</span>](#HTMLFeatures_Configuration_Options)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">CanvasFeatures Configuration
-    Options</span>](#CanvasFeatures_Configuration_Options)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Customizing CanvasFeatures tracks with
-      callbacks</span>](#Customizing_CanvasFeatures_tracks_with_callbacks)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Generic
+  CanvasFeatures)](#Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29)
+  - [HTMLFeatures Configuration
+    Options](#HTMLFeatures_Configuration_Options)
+  - [CanvasFeatures Configuration
+    Options](#CanvasFeatures_Configuration_Options)
+    - [Customizing CanvasFeatures tracks with
+      callbacks](#Customizing_CanvasFeatures_tracks_with_callbacks)
+  - [Generic
     Track Configuration
-    Options</span>](#Generic_Track_Configuration_Options)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Customizing parts of the 'View details'
+    Options](#Generic_Track_Configuration_Options)
+  - [Customizing parts of the 'View details'
     Pop-ups with
-    callbacks</span>](#Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Additional customizations to the pop-up
-      boxes</span>](#Additional_customizations_to_the_pop-up_boxes)
-  - [<span class="tocnumber">4.5</span>
-    <span class="toctext">Customizing Left-click
-    Behavior</span>](#Customizing_Left-click_Behavior)
-  - [<span class="tocnumber">4.6</span>
-    <span class="toctext">Customizing Mouse-over
-    behavior</span>](#Customizing_Mouse-over_behavior)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">Configuring Summary
-    Histograms</span>](#Configuring_Summary_Histograms)
-  - [<span class="tocnumber">4.8</span>
-    <span class="toctext">Customizing Right-click Context
-    Menus</span>](#Customizing_Right-click_Context_Menus)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">Click
-    Configuration Options</span>](#Click_Configuration_Options)
-  - [<span class="tocnumber">4.10</span> <span class="toctext">Using
+    callbacks](#Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks)
+    - [Additional customizations to the pop-up
+      boxes](#Additional_customizations_to_the_pop-up_boxes)
+  - [Customizing Left-click
+    Behavior](#Customizing_Left-click_Behavior)
+  - [Customizing Mouse-over
+    behavior](#Customizing_Mouse-over_behavior)
+  - [Configuring Summary
+    Histograms](#Configuring_Summary_Histograms)
+  - [Customizing Right-click Context
+    Menus](#Customizing_Right-click_Context_Menus)
+  - [Click
+    Configuration Options](#Click_Configuration_Options)
+  - [Using
     callbacks to customize feature
-    tracks</span>](#Using_callbacks_to_customize_feature_tracks)
-- [<span class="tocnumber">5</span> <span class="toctext">Alignment
-  Tracks (BAM)</span>](#Alignment_Tracks_.28BAM.29)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Alignments2</span>](#Alignments2)
-    - [<span class="tocnumber">5.1.1</span>
-      <span class="toctext">Alignments2 coloring
-      schemes</span>](#Alignments2_coloring_schemes)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">SNPCoverage</span>](#SNPCoverage)
-    - [<span class="tocnumber">5.2.1</span>
-      <span class="toctext">Example SNPCoverage
-      Configuration</span>](#Example_SNPCoverage_Configuration)
-  - [<span class="tocnumber">5.3</span>
-    <span class="toctext">Alignments</span>](#Alignments)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">BAM Data
-    Configuration Options</span>](#BAM_Data_Configuration_Options)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">Example
+    tracks](#Using_callbacks_to_customize_feature_tracks)
+- [Alignment
+  Tracks (BAM)](#Alignment_Tracks_.28BAM.29)
+  - [Alignments2](#Alignments2)
+    - [Alignments2 coloring
+      schemes](#Alignments2_coloring_schemes)
+  - [SNPCoverage](#SNPCoverage)
+    - [Example SNPCoverage
+      Configuration](#Example_SNPCoverage_Configuration)
+  - [Alignments](#Alignments)
+  - [BAM Data
+    Configuration Options](#BAM_Data_Configuration_Options)
+  - [Example
     BAM Alignments2 track
-    configuration</span>](#Example_BAM_Alignments2_track_configuration)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">Apache
-    Configuration Note</span>](#Apache_Configuration_Note)
-- [<span class="tocnumber">6</span> <span class="toctext">Wiggle/BigWig
+    configuration](#Example_BAM_Alignments2_track_configuration)
+  - [Apache
+    Configuration Note](#Apache_Configuration_Note)
+- [Wiggle/BigWig
   Tracks (XYPlot,
-  Density)</span>](#Wiggle.2FBigWig_Tracks_.28XYPlot.2C_Density.29)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Example
+  Density)](#Wiggle.2FBigWig_Tracks_.28XYPlot.2C_Density.29)
+  - [Example
     BigWig-based Wiggle XY-Plot Track
-    Configuration</span>](#Example_BigWig-based_Wiggle_XY-Plot_Track_Configuration)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Example
+    Configuration](#Example_BigWig-based_Wiggle_XY-Plot_Track_Configuration)
+  - [Example
     BigWig-based Wiggle Color Density Track
-    Configuration</span>](#Example_BigWig-based_Wiggle_Color_Density_Track_Configuration)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Wiggle
+    Configuration](#Example_BigWig-based_Wiggle_Color_Density_Track_Configuration)
+  - [Wiggle
     track configuration
-    options</span>](#Wiggle_track_configuration_options)
-  - [<span class="tocnumber">6.4</span> <span class="toctext">BigWig
-    File Compatibility</span>](#BigWig_File_Compatibility)
-- [<span class="tocnumber">7</span> <span class="toctext">Variant Tracks
-  (VCF)</span>](#Variant_Tracks_.28VCF.29)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Example
+    options](#Wiggle_track_configuration_options)
+  - [BigWig
+    File Compatibility](#BigWig_File_Compatibility)
+- [Variant Tracks
+  (VCF)](#Variant_Tracks_.28VCF.29)
+  - [Example
     VCF-based Variant Track
-    Configuration</span>](#Example_VCF-based_Variant_Track_Configuration)
-    - [<span class="tocnumber">7.1.1</span> <span class="toctext">Using
+    Configuration](#Example_VCF-based_Variant_Track_Configuration)
+    - [Using
       VCF Filters in
-      configuration</span>](#Using_VCF_Filters_in_configuration)
-- [<span class="tocnumber">8</span> <span class="toctext">Feature
-  Coverage Tracks</span>](#Feature_Coverage_Tracks)
-  - [<span class="tocnumber">8.1</span> <span class="toctext">Example
+      configuration](#Using_VCF_Filters_in_configuration)
+- [Feature
+  Coverage Tracks](#Feature_Coverage_Tracks)
+  - [Example
     Feature Coverage Track Configuration for a BAM
-    file</span>](#Example_Feature_Coverage_Track_Configuration_for_a_BAM_file)
-- [<span class="tocnumber">9</span> <span class="toctext">Sequence
-  track</span>](#Sequence_track)
-- [<span class="tocnumber">10</span> <span class="toctext">Pre-rendered
-  Image Tracks</span>](#Pre-rendered_Image_Tracks)
-  - [<span class="tocnumber">10.1</span>
-    <span class="toctext">wig-to-json.pl</span>](#wig-to-json.pl)
-    - [<span class="tocnumber">10.1.1</span> <span class="toctext">Basic
-      usage</span>](#Basic_usage)
-    - [<span class="tocnumber">10.1.2</span>
-      <span class="toctext">System-specific tips for building
-      wig2png</span>](#System-specific_tips_for_building_wig2png)
-      - [<span class="tocnumber">10.1.2.1</span>
-        <span class="toctext">Apple OS X</span>](#Apple_OS_X)
-      - [<span class="tocnumber">10.1.2.2</span>
-        <span class="toctext">Ubuntu / Debian
-        Linux</span>](#Ubuntu_.2F_Debian_Linux)
-      - [<span class="tocnumber">10.1.2.3</span>
-        <span class="toctext">Red Hat/CentOS/Fedora
-        Linux</span>](#Red_Hat.2FCentOS.2FFedora_Linux)
-  - [<span class="tocnumber">10.2</span>
-    <span class="toctext">draw-basepair-track.pl</span>](#draw-basepair-track.pl)
-    - [<span class="tocnumber">10.2.1</span> <span class="toctext">Basic
-      usage</span>](#Basic_usage_2)
-- [<span class="tocnumber">11</span> <span class="toctext">Name
+    file](#Example_Feature_Coverage_Track_Configuration_for_a_BAM_file)
+- [Sequence
+  track](#Sequence_track)
+- [Pre-rendered
+  Image Tracks](#Pre-rendered_Image_Tracks)
+  - [wig-to-json.pl](#wig-to-json.pl)
+    - [Basic
+      usage](#Basic_usage)
+    - [System-specific tips for building
+      wig2png](#System-specific_tips_for_building_wig2png)
+      - [Apple OS X](#Apple_OS_X)
+      - [Ubuntu / Debian
+        Linux](#Ubuntu_.2F_Debian_Linux)
+      - [Red Hat/CentOS/Fedora
+        Linux](#Red_Hat.2FCentOS.2FFedora_Linux)
+  - [draw-basepair-track.pl](#draw-basepair-track.pl)
+    - [Basic
+      usage](#Basic_usage_2)
+- [Name
   Searching and
-  Autocompletion</span>](#Name_Searching_and_Autocompletion)
-  - [<span class="tocnumber">11.1</span>
-    <span class="toctext">Autocompletion
-    Configuration</span>](#Autocompletion_Configuration)
-  - [<span class="tocnumber">11.2</span>
-    <span class="toctext">generate-names.pl</span>](#generate-names.pl)
-- [<span class="tocnumber">12</span> <span class="toctext">Removing
-  Tracks</span>](#Removing_Tracks)
-- [<span class="tocnumber">13</span>
-  <span class="toctext">Authentication and Access
-  Control</span>](#Authentication_and_Access_Control)
-  - [<span class="tocnumber">13.1</span> <span class="toctext">HTTP
-    Basic LDAP under Nginx</span>](#HTTP_Basic_LDAP_under_Nginx)
-- [<span class="tocnumber">14</span> <span class="toctext">Cross-origin
+  Autocompletion](#Name_Searching_and_Autocompletion)
+  - [Autocompletion
+    Configuration](#Autocompletion_Configuration)
+  - [generate-names.pl](#generate-names.pl)
+- [Removing
+  Tracks](#Removing_Tracks)
+- [Authentication and Access
+  Control](#Authentication_and_Access_Control)
+  - [HTTP
+    Basic LDAP under Nginx](#HTTP_Basic_LDAP_under_Nginx)
+- [Cross-origin
   resource sharing (CORS): showing data on multiple
-  servers</span>](#Cross-origin_resource_sharing_.28CORS.29:_showing_data_on_multiple_servers)
-- [<span class="tocnumber">15</span> <span class="toctext">Compressing
-  data on the server</span>](#Compressing_data_on_the_server)
-- [<span class="tocnumber">16</span> <span class="toctext">Controlling
+  servers](#Cross-origin_resource_sharing_.28CORS.29:_showing_data_on_multiple_servers)
+- [Compressing
+  data on the server](#Compressing_data_on_the_server)
+- [Controlling
   JBrowse with the URL Query
-  String</span>](#Controlling_JBrowse_with_the_URL_Query_String)
-  - [<span class="tocnumber">16.1</span> <span class="toctext">Overview
+  String](#Controlling_JBrowse_with_the_URL_Query_String)
+  - [Overview
     of URL Query String
-    params</span>](#Overview_of_URL_Query_String_params)
-  - [<span class="tocnumber">16.2</span>
-    <span class="toctext">data</span>](#data)
-  - [<span class="tocnumber">16.3</span>
-    <span class="toctext">loc</span>](#loc)
-  - [<span class="tocnumber">16.4</span>
-    <span class="toctext">tracks</span>](#tracks)
-  - [<span class="tocnumber">16.5</span>
-    <span class="toctext">highlight</span>](#highlight)
-  - [<span class="tocnumber">16.6</span>
-    <span class="toctext">addFeatures</span>](#addFeatures)
-  - [<span class="tocnumber">16.7</span>
-    <span class="toctext">addTracks</span>](#addTracks)
-  - [<span class="tocnumber">16.8</span>
-    <span class="toctext">addStores</span>](#addStores)
-  - [<span class="tocnumber">16.9</span>
-    <span class="toctext">addBookmarks</span>](#addBookmarks)
-  - [<span class="tocnumber">16.10</span> <span class="toctext">Embedded
-    mode</span>](#Embedded_mode)
-- [<span class="tocnumber">17</span> <span class="toctext">Data
-  Export</span>](#Data_Export)
-  - [<span class="tocnumber">17.1</span> <span class="toctext">Data
-    Formats</span>](#Data_Formats)
-  - [<span class="tocnumber">17.2</span> <span class="toctext">Export
-    Configuration</span>](#Export_Configuration)
-- [<span class="tocnumber">18</span> <span class="toctext">Data from a
-  SPARQL Endpoint</span>](#Data_from_a_SPARQL_Endpoint)
-  - [<span class="tocnumber">18.1</span> <span class="toctext">Example
-    SPARQL Configuration</span>](#Example_SPARQL_Configuration)
-  - [<span class="tocnumber">18.2</span> <span class="toctext">Variable
-    Interpolation</span>](#Variable_Interpolation)
-- [<span class="tocnumber">19</span> <span class="toctext">Track
-  Metadata</span>](#Track_Metadata)
-  - [<span class="tocnumber">19.1</span> <span class="toctext">Embedding
+    params](#Overview_of_URL_Query_String_params)
+  - [data](#data)
+  - [loc](#loc)
+  - [tracks](#tracks)
+  - [highlight](#highlight)
+  - [addFeatures](#addFeatures)
+  - [addTracks](#addTracks)
+  - [addStores](#addStores)
+  - [addBookmarks](#addBookmarks)
+  - [Embedded
+    mode](#Embedded_mode)
+- [Data
+  Export](#Data_Export)
+  - [Data
+    Formats](#Data_Formats)
+  - [Export
+    Configuration](#Export_Configuration)
+- [Data from a
+  SPARQL Endpoint](#Data_from_a_SPARQL_Endpoint)
+  - [Example
+    SPARQL Configuration](#Example_SPARQL_Configuration)
+  - [Variable
+    Interpolation](#Variable_Interpolation)
+- [Track
+  Metadata](#Track_Metadata)
+  - [Embedding
     Track Metadata in JBrowse
-    Configuration</span>](#Embedding_Track_Metadata_in_JBrowse_Configuration)
-  - [<span class="tocnumber">19.2</span> <span class="toctext">Loading
+    Configuration](#Embedding_Track_Metadata_in_JBrowse_Configuration)
+  - [Loading
     Track Metadata from
-    Files</span>](#Loading_Track_Metadata_from_Files)
-    - [<span class="tocnumber">19.2.1</span>
-      <span class="toctext">Example</span>](#Example)
-    - [<span class="tocnumber">19.2.2</span> <span class="toctext">Track
-      metadata options</span>](#Track_metadata_options)
-- [<span class="tocnumber">20</span> <span class="toctext">Faceted Track
-  Selector</span>](#Faceted_Track_Selector)
-  - [<span class="tocnumber">20.1</span> <span class="toctext">Example
+    Files](#Loading_Track_Metadata_from_Files)
+    - [Example](#Example)
+    - [Track
+      metadata options](#Track_metadata_options)
+- [Faceted Track
+  Selector](#Faceted_Track_Selector)
+  - [Example
     Faceted Track Selector
-    Configuration</span>](#Example_Faceted_Track_Selector_Configuration)
-- [<span class="tocnumber">21</span> <span class="toctext">Hierarchical
-  Track Selector</span>](#Hierarchical_Track_Selector)
-- [<span class="tocnumber">22</span> <span class="toctext">General
-  configuration options</span>](#General_configuration_options)
-  - [<span class="tocnumber">22.1</span> <span class="toctext">General
+    Configuration](#Example_Faceted_Track_Selector_Configuration)
+- [Hierarchical
+  Track Selector](#Hierarchical_Track_Selector)
+- [General
+  configuration options](#General_configuration_options)
+  - [General
     track configuration
-    options</span>](#General_track_configuration_options)
-- [<span class="tocnumber">23</span> <span class="toctext">Dataset
-  Selector</span>](#Dataset_Selector)
-  - [<span class="tocnumber">23.1</span> <span class="toctext">Example
+    options](#General_track_configuration_options)
+- [Dataset
+  Selector](#Dataset_Selector)
+  - [Example
     Dataset Switching
-    Configuration</span>](#Example_Dataset_Switching_Configuration)
-- [<span class="tocnumber">24</span> <span class="toctext">Anonymous
-  Usage Statistics</span>](#Anonymous_Usage_Statistics)
-- [<span class="tocnumber">25</span>
-  <span class="toctext">Plugins</span>](#Plugins)
-  - [<span class="tocnumber">25.1</span>
-    <span class="toctext">Installing
-    Plugins</span>](#Installing_Plugins)
-  - [<span class="tocnumber">25.2</span>
-    <span class="toctext">Activating
-    Plugins</span>](#Activating_Plugins)
-- [<span class="tocnumber">26</span> <span class="toctext">Advanced
-  Topics</span>](#Advanced_Topics)
-  - [<span class="tocnumber">26.1</span> <span class="toctext">Using
+    Configuration](#Example_Dataset_Switching_Configuration)
+- [Anonymous
+  Usage Statistics](#Anonymous_Usage_Statistics)
+- [Plugins](#Plugins)
+  - [Installing
+    Plugins](#Installing_Plugins)
+  - [Activating
+    Plugins](#Activating_Plugins)
+- [Advanced
+  Topics](#Advanced_Topics)
+  - [Using
     JBrowse with Existing
-    Databases</span>](#Using_JBrowse_with_Existing_Databases)
-    - [<span class="tocnumber">26.1.1</span>
-      <span class="toctext">Extract data and
-      reformat</span>](#Extract_data_and_reformat)
-      - [<span class="tocnumber">26.1.1.1</span>
-        <span class="toctext">Example
-        Configuration</span>](#Example_Configuration)
-  - [<span class="tocnumber">26.2</span> <span class="toctext">Configure
-    a Loading Page</span>](#Configure_a_Loading_Page)
-  - [<span class="tocnumber">26.3</span> <span class="toctext">Milestone
-    functions</span>](#Milestone_functions)
-  - [<span class="tocnumber">26.4</span>
-    <span class="toctext">Configuring track locations with
-    Apache</span>](#Configuring_track_locations_with_Apache)
-  - [<span class="tocnumber">26.5</span> <span class="toctext">Feature
+    Databases](#Using_JBrowse_with_Existing_Databases)
+    - [Extract data and
+      reformat](#Extract_data_and_reformat)
+      - [Example
+        Configuration](#Example_Configuration)
+  - [Configure
+    a Loading Page](#Configure_a_Loading_Page)
+  - [Milestone
+    functions](#Milestone_functions)
+  - [Configuring track locations with
+    Apache](#Configuring_track_locations_with_Apache)
+  - [Feature
     API and Feature Store
-    API</span>](#Feature_API_and_Feature_Store_API)
-    - [<span class="tocnumber">26.5.1</span> <span class="toctext">Other
-      useful classes</span>](#Other_useful_classes)
-  - [<span class="tocnumber">26.6</span> <span class="toctext">Using
+    API](#Feature_API_and_Feature_Store_API)
+    - [Other
+      useful classes](#Other_useful_classes)
+  - [Using
     JBrowse with Existing Web
-    Services</span>](#Using_JBrowse_with_Existing_Web_Services)
-    - [<span class="tocnumber">26.6.1</span>
-      <span class="toctext">Example custom JBrowse store
-      class</span>](#Example_custom_JBrowse_store_class)
-  - [<span class="tocnumber">26.7</span> <span class="toctext">Writing
+    Services](#Using_JBrowse_with_Existing_Web_Services)
+    - [Example custom JBrowse store
+      class](#Example_custom_JBrowse_store_class)
+  - [Writing
     JBrowse-compatible Web
-    Services</span>](#Writing_JBrowse-compatible_Web_Services)
-    - [<span class="tocnumber">26.7.1</span>
-      <span class="toctext">JBrowse REST Feature Store
-      API</span>](#JBrowse_REST_Feature_Store_API)
-      - [<span class="tocnumber">26.7.1.1</span>
-        <span class="toctext">GET
-        (base)/stats/global</span>](#GET_.28base.29.2Fstats.2Fglobal)
-      - [<span class="tocnumber">26.7.1.2</span>
-        <span class="toctext">GET
-        (base)/stats/region/(refseq_name)?start=123&end=456</span>](#GET_.28base.29.2Fstats.2Fregion.2F.28refseq_name.29.3Fstart.3D123.26end.3D456)
-      - [<span class="tocnumber">26.7.1.3</span>
-        <span class="toctext">GET
-        (base)/stats/regionFeatureDensities/(refseq_name)?start=123&end=456&basesPerBin=20000</span>](#GET_.28base.29.2Fstats.2FregionFeatureDensities.2F.28refseq_name.29.3Fstart.3D123.26end.3D456.26basesPerBin.3D20000)
-      - [<span class="tocnumber">26.7.1.4</span>
-        <span class="toctext">GET
-        (base)/features/(refseq_name)?start=234&end=5678</span>](#GET_.28base.29.2Ffeatures.2F.28refseq_name.29.3Fstart.3D234.26end.3D5678)
-    - [<span class="tocnumber">26.7.2</span>
-      <span class="toctext">Configuring Tracks to Use a REST Feature
-      Store</span>](#Configuring_Tracks_to_Use_a_REST_Feature_Store)
-    - [<span class="tocnumber">26.7.3</span> <span class="toctext">Other
+    Services](#Writing_JBrowse-compatible_Web_Services)
+    - [JBrowse REST Feature Store
+      API](#JBrowse_REST_Feature_Store_API)
+      - [GET
+        (base)/stats/global](#GET_.28base.29.2Fstats.2Fglobal)
+      - [GET
+        (base)/stats/region/(refseq_name)?start=123&end=456](#GET_.28base.29.2Fstats.2Fregion.2F.28refseq_name.29.3Fstart.3D123.26end.3D456)
+      - [GET
+        (base)/stats/regionFeatureDensities/(refseq_name)?start=123&end=456&basesPerBin=20000](#GET_.28base.29.2Fstats.2FregionFeatureDensities.2F.28refseq_name.29.3Fstart.3D123.26end.3D456.26basesPerBin.3D20000)
+      - [GET
+        (base)/features/(refseq_name)?start=234&end=5678](#GET_.28base.29.2Ffeatures.2F.28refseq_name.29.3Fstart.3D234.26end.3D5678)
+    - [Configuring Tracks to Use a REST Feature
+      Store](#Configuring_Tracks_to_Use_a_REST_Feature_Store)
+    - [Other
       Dynamically-Servable
-      Formats</span>](#Other_Dynamically-Servable_Formats)
-      - [<span class="tocnumber">26.7.3.1</span>
-        <span class="toctext">trackList.json
-        format</span>](#trackList.json_format)
-      - [<span class="tocnumber">26.7.3.2</span>
-        <span class="toctext">refSeqs.json
-        format</span>](#refSeqs.json_format)
-      - [<span class="tocnumber">26.7.3.3</span>
-        <span class="toctext">Sequence data
-        format</span>](#Sequence_data_format)
-    - [<span class="tocnumber">26.7.4</span>
-      <span class="toctext">JBrowse REST Names
-      API</span>](#JBrowse_REST_Names_API)
-      - [<span class="tocnumber">26.7.4.1</span>
-        <span class="toctext">GET
-        (url)?equals=Apple1</span>](#GET_.28url.29.3Fequals.3DApple1)
-      - [<span class="tocnumber">26.7.4.2</span>
-        <span class="toctext">GET
-        (url)?startswith=Ap</span>](#GET_.28url.29.3Fstartswith.3DAp)
-    - [<span class="tocnumber">26.7.5</span>
-      <span class="toctext">Configuring JBrowse to Use REST Name
-      Lookup</span>](#Configuring_JBrowse_to_Use_REST_Name_Lookup)
-  - [<span class="tocnumber">26.8</span>
-    <span class="toctext">Publishing and Subscribing to JBrowse
-    Events</span>](#Publishing_and_Subscribing_to_JBrowse_Events)
-  - [<span class="tocnumber">26.9</span> <span class="toctext">Writing
-    JBrowse Plugins</span>](#Writing_JBrowse_Plugins)
-    - [<span class="tocnumber">26.9.1</span>
-      <span class="toctext">Plugin
-      Components</span>](#Plugin_Components)
-      - [<span class="tocnumber">26.9.1.1</span>
-        <span class="toctext">Example main.js</span>](#Example_main.js)
-      - [<span class="tocnumber">26.9.1.2</span>
-        <span class="toctext">Example plugin directory
-        contents</span>](#Example_plugin_directory_contents)
-      - [<span class="tocnumber">26.9.1.3</span>
-        <span class="toctext">Distributing a plugin via
-        npm</span>](#Distributing_a_plugin_via_npm)
-    - [<span class="tocnumber">26.9.2</span>
-      <span class="toctext">Plugin build
-      notes</span>](#Plugin_build_notes)
-  - [<span class="tocnumber">26.10</span> <span class="toctext">Data
+      Formats](#Other_Dynamically-Servable_Formats)
+      - [trackList.json
+        format](#trackList.json_format)
+      - [refSeqs.json
+        format](#refSeqs.json_format)
+      - [Sequence data
+        format](#Sequence_data_format)
+    - [JBrowse REST Names
+      API](#JBrowse_REST_Names_API)
+      - [GET
+        (url)?equals=Apple1](#GET_.28url.29.3Fequals.3DApple1)
+      - [GET
+        (url)?startswith=Ap](#GET_.28url.29.3Fstartswith.3DAp)
+    - [Configuring JBrowse to Use REST Name
+      Lookup](#Configuring_JBrowse_to_Use_REST_Name_Lookup)
+  - [Publishing and Subscribing to JBrowse
+    Events](#Publishing_and_Subscribing_to_JBrowse_Events)
+  - [Writing
+    JBrowse Plugins](#Writing_JBrowse_Plugins)
+    - [Plugin
+      Components](#Plugin_Components)
+      - [Example main.js](#Example_main.js)
+      - [Example plugin directory
+        contents](#Example_plugin_directory_contents)
+      - [Distributing a plugin via
+        npm](#Distributing_a_plugin_via_npm)
+    - [Plugin build
+      notes](#Plugin_build_notes)
+  - [Data
     Format Specification: JSON LazyNCList Feature
-    Store</span>](#Data_Format_Specification:_JSON_LazyNCList_Feature_Store)
-    - [<span class="tocnumber">26.10.1</span>
-      <span class="toctext">Array Representation
-      (ArrayRepr)</span>](#Array_Representation_.28ArrayRepr.29)
-    - [<span class="tocnumber">26.10.2</span> <span class="toctext">Lazy
+    Store](#Data_Format_Specification:_JSON_LazyNCList_Feature_Store)
+    - [Array Representation
+      (ArrayRepr)](#Array_Representation_.28ArrayRepr.29)
+    - [Lazy
       Nested-Containment Lists
-      (LazyNCList)</span>](#Lazy_Nested-Containment_Lists_.28LazyNCList.29)
-  - [<span class="tocnumber">26.11</span> <span class="toctext">Data
+      (LazyNCList)](#Lazy_Nested-Containment_Lists_.28LazyNCList.29)
+  - [Data
     Format Specification: Fixed-Resolution Tiled Image
-    Store</span>](#Data_Format_Specification:_Fixed-Resolution_Tiled_Image_Store)
-  - [<span class="tocnumber">26.12</span>
-    <span class="toctext">Including external files and functions in
-    trackList.json</span>](#Including_external_files_and_functions_in_trackList.json)
-  - [<span class="tocnumber">26.13</span>
-    <span class="toctext">Rendering high resolution screenshots using
-    PhantomJS</span>](#Rendering_high_resolution_screenshots_using_PhantomJS)
-    - [<span class="tocnumber">26.13.1</span>
-      <span class="toctext">Export as SVG</span>](#Export_as_SVG)
-    - [<span class="tocnumber">26.13.2</span>
-      <span class="toctext">Using pageres wrapper for PNG
-      output</span>](#Using_pageres_wrapper_for_PNG_output)
-    - [<span class="tocnumber">26.13.3</span>
-      <span class="toctext">Other links</span>](#Other_links)
-  - [<span class="tocnumber">26.14</span>
-    <span class="toctext">Rendering high resolution screenshots using
-    Puppeteer</span>](#Rendering_high_resolution_screenshots_using_Puppeteer)
-- [<span class="tocnumber">27</span> <span class="toctext">External
-  Links</span>](#External_Links)
+    Store](#Data_Format_Specification:_Fixed-Resolution_Tiled_Image_Store)
+  - [Including external files and functions in
+    trackList.json](#Including_external_files_and_functions_in_trackList.json)
+  - [Rendering high resolution screenshots using
+    PhantomJS](#Rendering_high_resolution_screenshots_using_PhantomJS)
+    - [Export as SVG](#Export_as_SVG)
+    - [Using pageres wrapper for PNG
+      output](#Using_pageres_wrapper_for_PNG_output)
+    - [Other links](#Other_links)
+  - [Rendering high resolution screenshots using
+    Puppeteer](#Rendering_high_resolution_screenshots_using_Puppeteer)
+- [External
+  Links](#External_Links)
 
 
-
-# <span id="Installation" class="mw-headline">Installation</span>
+# Installation
 
 At the most basic level, setting up JBrowse consists of:
 
@@ -461,7 +363,7 @@ Reference sequence data should be added first (using
 annotation data has been added, use `generate-names.pl` to make the
 feature names searchable.
 
-## <span id="Making_a_New_JBrowse" class="mw-headline">Making a New JBrowse</span>
+## Making a New JBrowse
 
 0\. Install build prerequisites, plus make and a C compiler. On Ubuntu,
 you could do this with:
@@ -517,7 +419,7 @@ personal cpanm folder in the first place. Otherwise, you can use your
 system's cpanm to install jbrowse pre-requisites with "cpanm ." inside
 the jbrowse directory.
 
-## <span id="Upgrading_an_Existing_JBrowse" class="mw-headline">Upgrading an Existing JBrowse</span>
+## Upgrading an Existing JBrowse
 
 To upgrade an existing JBrowse (1.3.0 or later) to the latest version,
 simply move its data directory (and `jbrowse_conf.json` if you are using
@@ -532,7 +434,7 @@ overwrite index.html with compat_121.html.
 If you are upgrading from a version of JBrowse older than 1.2.0, a fresh
 installation is required.
 
-## <span id="Configuration_Loading.2C_Files.2C_and_Formats" class="mw-headline">Configuration Loading, Files, and Formats</span>
+## Configuration Loading, Files, and Formats
 
 JBrowse supports **two configuration formats**, a JSON-based format and
 a GBrowse-like textual format that is easier to edit and maintain by
@@ -543,7 +445,7 @@ data directory for dataset-specific configuration in JSON, and
 tracks.conf in the data directory for dataset-specific configuration in
 .conf format.
 
-### <span id="JavaScript_Object_Notation_.28JSON.29_Configuration_Format_.28.json.29" class="mw-headline">JavaScript Object Notation (JSON) Configuration Format (.json)</span>
+### JavaScript Object Notation (JSON) Configuration Format (.json)
 
 The JSON configuration format was the first format supported by JBrowse,
 and is easy for software programs to read and modify. Before version
@@ -574,7 +476,7 @@ that includes some parameters like the urlTemplate to refer to the
 location of the BAM file on the server relative to the data directory,
 the color of the features, etc.
 
-#### <span id="Considerations_for_the_JSON_format" class="mw-headline">Considerations for the JSON format</span>
+#### Considerations for the JSON format
 
 - Nested objects are specified using typical JSON format, using curly
   brackets
@@ -587,7 +489,7 @@ the color of the features, etc.
   trackList.json (or conf files) i.e. the trackList.json does not only
   have to contain tracks, can contain other config entries
 
-### <span id="Text_Configuration_Format_.28.conf.29" class="mw-headline">Text Configuration Format (.conf)</span>
+### Text Configuration Format (.conf)
 
 JBrowse 1.11.0 introduced support for a new text-based configuration
 format that users of GBrowse will find very familiar, since its design
@@ -619,7 +521,7 @@ multi-line callbacks. Example:
        return 'red';
      }
 
-#### <span id="Considerations_for_the_text-based_.conf_format" class="mw-headline">Considerations for the text-based .conf format</span>
+#### Considerations for the text-based .conf format
 
 - Comments should start with \#
 - The section labels, e.g. \[tracks.testtrack\] defines an identifier
@@ -639,15 +541,12 @@ multi-line callbacks. Example:
 - An array of values can be built up over multiple lines. NOTE: A quirk
   of the format is that there cannot be more than 4 spaces before the +
   sign in each item. Example:
-
-<!-- -->
-
         [trackMetadata]
         sources =
            + data/mymeta.csv
            + data/more_meta.csv
 
-#### <span id="Callback-function_specific_considerations_for_the_text-based_.conf_format" class="mw-headline">Callback-function specific considerations for the text-based .conf format</span>
+#### Callback-function specific considerations for the text-based .conf format
 
 - Comments inside callbacks can use the /\* \*/ format but not the //
   format
@@ -659,7 +558,7 @@ multi-line callbacks. Example:
   [\[5\]](#Including_external_files_and_functions_in_trackList.json) for
   more info on multi-line functions
 
-### <span id="Configuration_loading_details" class="mw-headline">Configuration loading details</span>
+### Configuration loading details
 
 When your web browser loads a page containing JBrowse, and JBrowse
 starts, the following steps are done
@@ -692,7 +591,7 @@ format and .json config files can co-exist. That is because anything
 that can be written as a .conf file can also be written as a .json, they
 are both parsed on the client side into config objects.
 
-# <span id="Reference_Sequences" class="mw-headline">Reference Sequences</span>
+# Reference Sequences
 
 The reference sequences on which the browser will display annotations,
 and which provide a common coordinate system for all tracks. At a close
@@ -707,7 +606,7 @@ rel="nofollow">contig</a>. Before any feature or image tracks can be
 displayed in JBrowse, the reference sequences must be defined using the
 prepare-refseqs.pl formatting tool.
 
-## <span id="Reference_Sequence_Selector_Configuration" class="mw-headline">Reference Sequence Selector Configuration</span>
+## Reference Sequence Selector Configuration
 
 JBrowse displays a dropdown selector for changing reference sequences.
 
@@ -729,7 +628,7 @@ by the `refSeqSelectorMaxSize` configuration variable, and defaults to
 
   
 
-### <span id="Reference_Sequence_Display_Order" class="mw-headline">Reference Sequence Display Order</span>
+### Reference Sequence Display Order
 
 The ordering of reference sequences in the selector is configurable
 using the `refSeqOrder` configuration variable.
@@ -750,7 +649,7 @@ display the N biggest contigs in the assembly in the reference sequence
 selector dropdown, one can set `refSeqOrder` to 'length descending', and
 set `refSeqSelectorMaxSize` to N.
 
-### <span id="Explicitly_Specifying_a_Reference_Sequence_List" class="mw-headline">Explicitly Specifying a Reference Sequence List</span>
+### Explicitly Specifying a Reference Sequence List
 
 If you set `refSeqOrder` to `by_list`, you can then set
 `refSeqOrderList` to set the exact order of the reference sequence list.
@@ -766,7 +665,7 @@ Example (in data/tracks.conf)
       + bethsCrazyBananasContig
       + ctgAZed
 
-## <span id="prepare-refseqs.pl" class="mw-headline">prepare-refseqs.pl</span>
+## prepare-refseqs.pl
 
 This script is used to format sequence data for use by JBrowse, and must
 be run before adding other tracks. In addition to formatting the
@@ -828,7 +727,7 @@ data loaded, simply a set of chromosomes and their sizes. The
 chrom.sizes file simply can contain two column tab separated list of
 chromosome names and their lengths.
 
-# <span id="Formatting_Feature_Data" class="mw-headline">Formatting Feature Data</span>
+# Formatting Feature Data
 
 JBrowse has several different tools that can be used to convert
 range-based annotation data (genes, transcripts, etc) to range-indexed
@@ -844,7 +743,7 @@ of these tools also adds a track configuration stanza to the
 - [ucsc-to-json.pl](#ucsc-to-json.pl) - import UCSC database dumps (.sql
   and .txt.gz)
 
-### <span id="flatfile-to-json.pl" class="mw-headline">flatfile-to-json.pl</span>
+### flatfile-to-json.pl
 
 Each run of this script formats a single track for JBrowse. A *flat
 file* is a data set that exists entirely in a single file. For this
@@ -897,7 +796,7 @@ Using --trackType CanvasFeatures is generally useful since
 CanvasFeatures are newer than the default HTMLFeatures (aka
 FeatureTrack)
 
-### <span id="biodb-to-json.pl" class="mw-headline">biodb-to-json.pl</span>
+### biodb-to-json.pl
 
 This script uses a
 <a href="Current/Usage/ConfigFiles" class="mw-redirect"
@@ -918,7 +817,7 @@ with the --help option, like:
 
        bin/biodb-to-json.pl --help
 
-### <span id="ucsc-to-json.pl" class="mw-headline">ucsc-to-json.pl</span>
+### ucsc-to-json.pl
 
 This script uses data from a local dump of the UCSC genome annotation
 MySQL database. To reach this data, go to
@@ -955,12 +854,12 @@ the --help option, like:
 
        bin/ucsc-to-json.pl --help
 
-# <span id="Feature_Tracks_.28HTMLFeatures_and_CanvasFeatures.29" class="mw-headline">Feature Tracks (HTMLFeatures and CanvasFeatures)</span>
+# Feature Tracks (HTMLFeatures and CanvasFeatures)
 
 Feature tracks can be used to visualize localized annotations on a
 sequence, such as gene models, transcript alignments, SNPs and so forth.
 
-## <span id="HTMLFeatures_Configuration_Options" class="mw-headline">HTMLFeatures Configuration Options</span>
+## HTMLFeatures Configuration Options
 
 JBrowse HTMLFeatures tracks, the default legacy track type for
 range-based features, have many available options for customization, not
@@ -996,7 +895,7 @@ tracks. HTMLFeatures tracks are also referred to as trackType:
 
 `HTMLFeatures` track configuration options
 
-## <span id="CanvasFeatures_Configuration_Options" class="mw-headline">CanvasFeatures Configuration Options</span>
+## CanvasFeatures Configuration Options
 
 Introduced in JBrowse 1.10.0, the new JBrowse CanvasFeatures tracks are
 faster and easier to configure than HTMLFeatures tracks.
@@ -1061,7 +960,7 @@ you can create "ultra compact" visualizations.
 
   
 
-### <span id="Customizing_CanvasFeatures_tracks_with_callbacks" class="mw-headline">Customizing CanvasFeatures tracks with callbacks</span>
+### Customizing CanvasFeatures tracks with callbacks
 
 Unlike HTML-based feature tracks, canvas-based feature tracks don't use
 modify and create hooks. Instead, the `glyph` variable, and all of the
@@ -1101,7 +1000,7 @@ See [Text Configuration Format
 (.conf)](#Text_Configuration_Format_.28.conf.29) for more considerations
 about this format.
 
-## <span id="Generic_Track_Configuration_Options" class="mw-headline">Generic Track Configuration Options</span>
+## Generic Track Configuration Options
 
 | Option | Description |
 |----|----|
@@ -1111,7 +1010,7 @@ about this format.
 
   
 
-## <span id="Customizing_parts_of_the_.27View_details.27_Pop-ups_with_callbacks" class="mw-headline">Customizing parts of the 'View details' Pop-ups with callbacks</span>
+## Customizing parts of the 'View details' Pop-ups with callbacks
 
 Starting in JBrowse version 1.11.3, the ability to customize parts of
 the 'View details' Pop-ups was added. This lets you specify functions
@@ -1155,7 +1054,7 @@ This shows that you could, in essence, pre-process the array if you
 wanted, but the same callback is then called on the individual elements,
 so you handle both these cases.
 
-### <span id="Additional_customizations_to_the_pop-up_boxes" class="mw-headline">Additional customizations to the pop-up boxes</span>
+### Additional customizations to the pop-up boxes
 
 In JBrowse 1.11.5, some additional customizations to the pop-up boxes
 were added.
@@ -1181,7 +1080,7 @@ fmtMetaDescription\_\*
 this by returning null from a fmtDetailField\_\* and fmtMetaField\_\*
 callback;
 
-## <span id="Customizing_Left-click_Behavior" class="mw-headline">Customizing Left-click Behavior</span>
+## Customizing Left-click Behavior
 
 Beginning with JBrowse 1.5.0, the left-clicking behavior of feature
 tracks (both HTMLFeatures and CanvasFeatures) is highly configurable. To
@@ -1217,7 +1116,7 @@ Configuration Options](#Click_Configuration_Options).
 Note: the style→linkTemplate variable can also be used to specify a URL
 for left-click on features, but this is a legacy option.
 
-## <span id="Customizing_Mouse-over_behavior" class="mw-headline">Customizing Mouse-over behavior</span>
+## Customizing Mouse-over behavior
 
 The onClick-\>label attribute from the [previous
 section](#Customizing_Left-click_Behavior) is used as the mouse-over
@@ -1285,7 +1184,7 @@ different title.
 Also also note: Your mouseover will crash if your features do not have
 an ID or name, even if you coded the mouseover to not use ID or name.
 
-## <span id="Configuring_Summary_Histograms" class="mw-headline">Configuring Summary Histograms</span>
+## Configuring Summary Histograms
 
 Canvas-based feature tracks (CanvasFeatures) support an optional
 `histograms` configuration subsection that can contain a definition for
@@ -1306,7 +1205,7 @@ Example track
     urlTemplate = file.bam
     type = Alignments2
 
-## <span id="Customizing_Right-click_Context_Menus" class="mw-headline">Customizing Right-click Context Menus</span>
+## Customizing Right-click Context Menus
 
 Feature tracks can be configured to display a context menu of options
 when a user right-clicks a feature item. Here is an example of a track
@@ -1391,11 +1290,9 @@ below. For details on what each of the options supported by menu items
 does, see [\#Click Configuration Options](#Click_Configuration_Options).
 
 
-
-
 <a href="../File:Jbrowse_rightclick.png" class="image"></a>
 
-## <span id="Rendering_high_resolution_screenshots_using_Puppeteer" class="mw-headline">Rendering high resolution screenshots using Puppeteer</span>
+## Rendering high resolution screenshots using Puppeteer
 
 The Google Chrome headless browser "Puppeteer" is an alternative to
 PhantomJS
@@ -1442,99 +1339,13 @@ make it higher resolution
 
   
 
-# <span id="External_Links" class="mw-headline">External Links</span>
+# External Links
 
 - <a href="http://genome.cshlp.org/content/19/9/1630.full"
   class="external text" rel="nofollow">JBrowse: A Next Generation Genome
   Browser</a> paper
 
 
-
-
 [Category](../Special%253ACategories "Special%253ACategories"):
 
 - [JBrowse](../Category%253AJBrowse "Category%253AJBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/JBrowse_Configuration_Guide"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 02:48 on 30 September
-  2020.</span>
-<!-- - <span id="footer-info-viewcount">1,674,399 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

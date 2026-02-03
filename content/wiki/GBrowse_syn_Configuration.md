@@ -1,23 +1,7 @@
 ---
 title: "GBrowse syn Configuration"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse syn Configuration</span>
-
-
-
-
-
-
-
+# GBrowse syn Configuration
 
 
 [GBrowse_syn](GBrowse_syn.1 "GBrowse syn") is a
@@ -26,29 +10,20 @@ based on [GBrowse](GBrowse.1 "GBrowse"). This page describes how to
 configure GBrowse_syn.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Main
   Configuration File</span>](#Main_Configuration_File)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Purpose</span>](#Purpose)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Example config
-      file</span>](#Example_config_file)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Configuration
-    settings</span>](#Configuration_settings)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">The
+  - [Purpose](#Purpose)
+    - [Example config
+      file](#Example_config_file)
+  - [Configuration
+    settings](#Configuration_settings)
+  - [The
     species' configuration
-    stanzas</span>](#The_species.27_configuration_stanzas)
+    stanzas](#The_species.27_configuration_stanzas)
 
 
+# Main Configuration File
 
-# <span id="Main_Configuration_File" class="mw-headline">Main Configuration File</span>
-
-## <span id="Purpose" class="mw-headline">Purpose</span>
+## Purpose
 
 The main configuration file specifies the alignment database, the
 species to be included and their corresponding configuration files and
@@ -56,7 +31,7 @@ display options.
 
 - The file ends with the extension ".synconf".
 
-### <span id="Example_config_file" class="mw-headline">Example config file</span>
+### Example config file
 
 This example contains information about the alignment (joining) database
 and the individual database for of the species in the browser. For
@@ -114,7 +89,7 @@ details of each setting, see below.
   class="mw-redirect"
   title="GBrowse syn Tutorial">GBrowse_syn_Tutorial</a></span>
 
-## <span id="Configuration_settings" class="mw-headline">Configuration settings</span>
+## Configuration settings
 
 See above for examples.
 
@@ -291,7 +266,7 @@ web colors or RGB hex codes (eg: '#FFFFFF').</td>
 </tbody>
 </table>
 
-## <span id="The_species.27_configuration_stanzas" class="mw-headline">The species' configuration stanzas</span>
+## The species' configuration stanzas
 
 - Each individual species (or equivalent) that has a configuration file
   specified in the source map should also have a config stanza
@@ -299,9 +274,6 @@ web colors or RGB hex codes (eg: '#FFFFFF').</td>
   species.
 - Note that the label of each stanza must match one of those in the
   second column of the source_map.
-
-<!-- -->
-
     [elegans_synteny]
     tracks    = CG
     color     = blue
@@ -315,87 +287,6 @@ web colors or RGB hex codes (eg: '#FFFFFF').</td>
     color     = black
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse syn](Category%253AGBrowse_syn "Category%253AGBrowse syn")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_syn_Configuration"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:51 on 18 October
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">102,179 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,44 +1,21 @@
 ---
 title: "GUS WDK Presentation"
 ---
+# GUS WDK Presentation
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GUS WDK Presentation</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">2</span> <span class="toctext">The GUS Perl
-  Object Layer</span>](#The_GUS_Perl_Object_Layer)
-- [<span class="tocnumber">3</span> <span class="toctext">The GUS
-  WDK</span>](#The_GUS_WDK)
-
+  Overview](#Overview)
+- [The GUS Perl
+  Object Layer](#The_GUS_Perl_Object_Layer)
+- [The GUS
+  WDK](#The_GUS_WDK)
 
 
   
 
   
 
-#### <span id="Overview" class="mw-headline">Overview</span>
+#### Overview
 
 Genome databases typically have distinct layers
 
@@ -58,7 +35,7 @@ The PlasmoDB uses
 - backend: the GUS Perl Object Layer
 - frontend: the GUS Web Development Kit
 
-#### <span id="The_GUS_Perl_Object_Layer" class="mw-headline">The GUS Perl Object Layer</span>
+#### The GUS Perl Object Layer
 
 The GUS Perl Object Layer is an in-house developed O-R layer specific to
 GUS databases. It was presented at the caucus only briefly as an example
@@ -66,41 +43,23 @@ backend layer.
 
 - Written eight years ago (Mark Gibson/Brian Brunk)
   - There were no Perl O-R tools available
-
-<!-- -->
-
 - One table \<-\> one object (including linking tables)
   - Columns become accessors: getScore(), setScore()
   - Relationships modeled with get/setChild() and get/setParent()
   - Conscious of “one-level” subclassing (GUS style)
-
-<!-- -->
-
 - Cascading retrieve, update, delete
   - Cascade can also follow parent links
-
-<!-- -->
-
 - Default transaction scope: one object graph
   - Or, you can manually control transactions
-
-<!-- -->
-
 - Simple object retrieval “language”
   - Equal in power to a single table select
   - Can also retrieve by navigation
-
-<!-- -->
-
 - Code generator
-
-<!-- -->
-
 - Recently evaluated Class::DBI
   - Would have worked nicely, but we didn’t transition
   - Nice subclassing model
 
-#### <span id="The_GUS_WDK" class="mw-headline">The GUS WDK</span>
+#### The GUS WDK
 
 The GUS WDK is a presentation layer toolkit (for any relational schema).
 It uses a M-V-C design. The focus of this caucus is O-R middleware,
@@ -262,87 +221,6 @@ Here is a sample specification of an ArrayElement entity:
 \</syntaxhighlight\>
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [ApiDB](Category%253AApiDB "Category%253AApiDB")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GUS_WDK_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">16,698 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

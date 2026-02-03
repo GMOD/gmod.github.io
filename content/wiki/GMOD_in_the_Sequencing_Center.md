@@ -1,9 +1,7 @@
 ---
 title: "GMOD in the Sequencing Center"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GMOD in the Sequencing Center</span>
+# GMOD in the Sequencing Center
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c3/2011SequencingCenterSatelliteLogo.png/600px-2011SequencingCenterSatelliteLogo.png"
@@ -17,7 +15,7 @@ Meeting](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Amer
 to find out what other sequencing centers are doing with GMOD, and how
 GMOD can help you help your researchers.
 
-## <span id="Organizers" class="mw-headline">Organizers</span>
+## Organizers
 
 - [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") - Biological Database
   Unit Leader, and Project Lead for [ISGA](ISGA "ISGA") at the
@@ -28,7 +26,7 @@ GMOD can help you help your researchers.
 - [Dave Clements](User%253AClements "User%253AClements") -
   [Galaxy](Galaxy.1 "Galaxy") project, Emory University.
 
-## <span id="Topics" class="mw-headline">Topics</span>
+## Topics
 
 Discussion topics will be determined by [Satellite
 Participants](#Participants). Suggestions are listed here. If you have
@@ -51,7 +49,7 @@ Suggested Topics
   [Apollo](Apollo.1 "Apollo").
 - ???
 
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 Add your name below if you are interested in attending the satellite.
 This satellite, like all [Satellite
@@ -77,45 +75,3 @@ free and open to anyone.
 | | |
 
 Template:ThisIsATET
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_in_the_Sequencing_Center"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:53 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">25,319 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

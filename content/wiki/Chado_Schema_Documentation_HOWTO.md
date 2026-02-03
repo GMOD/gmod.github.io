@@ -1,21 +1,7 @@
 ---
 title: "Chado Schema Documentation HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">Chado Schema Documentation HOWTO</span>
-
-
-
-
-
-
-
+# Chado Schema Documentation HOWTO
 
 
 The <a href="Chado" class="mw-redirect" title="Chado">Chado</a> schema
@@ -35,59 +21,51 @@ comments, come from the [PostgreSQL](PostgreSQL "PostgreSQL") data
 dictionary.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Using Module
   and Table Documentation</span>](#Using_Module_and_Table_Documentation)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Showing a
-    Table Description</span>](#Showing_a_Table_Description)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Linking to
-    Module Documentation</span>](#Linking_to_Module_Documentation)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Linking to
-    Table Documentation</span>](#Linking_to_Table_Documentation)
-- [<span class="tocnumber">2</span> <span class="toctext">Updating Table
-  Documentation Part I</span>](#Updating_Table_Documentation_Part_I)
-- [<span class="tocnumber">3</span> <span class="toctext">Updating
+  - [Showing a
+    Table Description](#Showing_a_Table_Description)
+  - [Linking to
+    Module Documentation](#Linking_to_Module_Documentation)
+  - [Linking to
+    Table Documentation](#Linking_to_Table_Documentation)
+- [Updating Table
+  Documentation Part I](#Updating_Table_Documentation_Part_I)
+- [Updating
   Module and Table Documentation Part
-  II</span>](#Updating_Module_and_Table_Documentation_Part_II)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Integrate
+  II](#Updating_Module_and_Table_Documentation_Part_II)
+  - [Integrate
     New Comments Into SQL
-    DDL</span>](#Integrate_New_Comments_Into_SQL_DDL)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Regenerate
-    Wiki Content</span>](#Regenerate_Wiki_Content)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Push
+    DDL](#Integrate_New_Comments_Into_SQL_DDL)
+  - [Regenerate
+    Wiki Content](#Regenerate_Wiki_Content)
+  - [Push
     Regenerated Wiki Text to
-    GMOD.org</span>](#Push_Regenerated_Wiki_Text_to_GMOD.org)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">Update
-      Table Templates</span>](#Update_Table_Templates)
-    - [<span class="tocnumber">3.3.2</span> <span class="toctext">Update
-      Module Pages</span>](#Update_Module_Pages)
-    - [<span class="tocnumber">3.3.3</span> <span class="toctext">Update
-      Chado Tables Page</span>](#Update_Chado_Tables_Page)
-- [<span class="tocnumber">4</span> <span class="toctext">Why is this
-  complicated?</span>](#Why_is_this_complicated.3F)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Internals</span>](#Internals)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">wiki.tmpl</span>](#wiki.tmpl)
+    GMOD.org](#Push_Regenerated_Wiki_Text_to_GMOD.org)
+    - [Update
+      Table Templates](#Update_Table_Templates)
+    - [Update
+      Module Pages](#Update_Module_Pages)
+    - [Update
+      Chado Tables Page](#Update_Chado_Tables_Page)
+- [Why is this
+  complicated?](#Why_is_this_complicated.3F)
+- [Internals](#Internals)
+  - [wiki.tmpl](#wiki.tmpl)
 
 
-
-## <span id="Using_Module_and_Table_Documentation" class="mw-headline">Using Module and Table Documentation</span>
+## Using Module and Table Documentation
 
 Add to this documentation that makes sense for markdown pages.
 
-### <span id="Linking_to_Module_Documentation" class="mw-headline">Linking to Module Documentation</span>
+### Linking to Module Documentation
 
 Add to this documentation that makes sense for markdown pages.
 
-### <span id="Linking_to_Table_Documentation" class="mw-headline">Linking to Table Documentation</span>
+### Linking to Table Documentation
 
 Add to this documentation that makes sense for markdown pages.
 
-## <span id="Updating_Table_Documentation_Part_I" class="mw-headline">Updating Table Documentation Part I</span>
+## Updating Table Documentation Part I
 
 This vvv is what used to be done in mediawiki. I'm leaving it here for historical purposes.
 
@@ -122,7 +100,7 @@ See [Updating Table Documentation Part
 II](#Updating_Table_Documentation_Part_II) for more on how step \#2 is
 done.
 
-## <span id="Updating_Module_and_Table_Documentation_Part_II" class="mw-headline">Updating Module and Table Documentation Part II</span>
+## Updating Module and Table Documentation Part II
 
 Table Templates are themselves a nest of smaller MediaWiki templates.
 This means it's hard to figure out how the wiki decides what to show.
@@ -144,7 +122,7 @@ This step is itself a multistep process:
 2.  Regenerate the wiki content
 3.  Push new wiki content to GMOD.org.
 
-### <span id="Integrate_New_Comments_Into_SQL_DDL" class="mw-headline">Integrate New Comments Into SQL DDL</span>
+### Integrate New Comments Into SQL DDL
 
 This step involves walking through all the [Chado Module
 pages](Template:ChadoModules "Template:ChadoModules"), looking at any
@@ -153,7 +131,7 @@ and then integrating them with the comments in the SQL DDL definitions
 of the tables. Integrated comments should then be removed from the
 module pages.
 
-### <span id="Regenerate_Wiki_Content" class="mw-headline">Regenerate Wiki Content</span>
+### Regenerate Wiki Content
 
 Next regenerate the wiki content after you have created a Chado instance
 using the newly updated SQL. This is done with scripts in the Chado
@@ -188,7 +166,6 @@ This script places generated wiki content in the `WIKI_DIR` directory,
 which by default is `/tmp/ChadoWikiFiles/`:
 
 
-
 |                        |                                                                                                                                             |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/tmp/ChadoWikiFiles/` | Determined by what `WIKI_DIR` is set to.                                                                                                    |
@@ -197,8 +174,7 @@ which by default is `/tmp/ChadoWikiFiles/`:
 | ` allTables.wiki`      | List of all tables; will become the module/table list on [Chado Tables](Chado_Tables "Chado Tables").                                       |
 
 
-
-### <span id="Push_Regenerated_Wiki_Text_to_GMOD.org" class="mw-headline">Push Regenerated Wiki Text to GMOD.org</span>
+### Push Regenerated Wiki Text to GMOD.org
 
 Now we need to update the wiki itself. First tar/compress the directory
 containing all the generated wiki files. Then copy it to the GMOD web
@@ -209,7 +185,7 @@ do this. Then update the three types of pages:
 - Module Pages
 - [Chado Tables](Chado_Tables "Chado Tables") page
 
-#### <span id="Update_Table_Templates" class="mw-headline">Update Table Templates</span>
+#### Update Table Templates
 
 On the GMOD web server create this script:
 
@@ -250,7 +226,7 @@ This script uses the Mediawiki maintenance script
 class="external text"><code>ImportTextFile.php</code></a> to upload the
 Table Templates.
 
-#### <span id="Update_Module_Pages" class="mw-headline">Update Module Pages</span>
+#### Update Module Pages
 
 We don't yet have an automated way to synchronize the [module
 pages](Template:ChadoModules "Template:ChadoModules") with the update.
@@ -265,12 +241,12 @@ On subsequent updates, you will only need to touch the module pages if a
 table was dropped or added. The Table Templates will take care of the
 rest.
 
-#### <span id="Update_Chado_Tables_Page" class="mw-headline">Update [Chado Tables](Chado_Tables "Chado Tables") Page</span>
+#### Update [Chado Tables](Chado_Tables "Chado Tables") Page
 
 The [Chado Tables](Chado_Tables "Chado Tables") page lists every table
 defined in Chado. Replace this wholesale each time.
 
-## <span id="Why_is_this_complicated.3F" class="mw-headline">Why is this complicated?</span>
+## Why is this complicated?
 
 With any programmatically generated wiki doc we've got conflicting goals:
 
@@ -295,90 +271,3 @@ We've tackled this for Chado with MediaWiki Templates:
     update, prior to regenerating the templates.
 5.  The Chado Table templates are regenerated and reloaded for every
     Chado release.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Chado](Category%253AChado "Category%253AChado")
-- [Wiki Tools](Category%253AWiki_Tools "Category%253AWiki Tools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Schema_Documentation_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:28 on 29 January 2013.</span>
-<!-- - <span id="footer-info-viewcount">64,827 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

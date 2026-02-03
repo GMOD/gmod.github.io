@@ -1,23 +1,7 @@
 ---
 title: "Tripal Tutorial 2010"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Tripal Tutorial 2010</span>
-
-
-
-
-
-
-
+# Tripal Tutorial 2010
 
 
   
@@ -46,142 +30,121 @@ class="internal" title="TripalUsersGuideJan2010.pdf">Tripal User's
 Guide, January 2010 edition</a>.
 
 
-## Contents
+  VMware](#VMware)
+- [Caveats](#Caveats)
+- [Important
+  Information](#Important_Information)
+- [Pre-Course
+  Setup](#Pre-Course_Setup)
+- [Software
+  Used](#Software_Used)
+  - [Web
+    Prep](#Web_Prep)
+    - [Install & Setup
+      PHP](#Install_.26_Setup_PHP)
+    - [Install
+      phpPgAdmin](#Install_phpPgAdmin)
+  - [Prepare
+    Postgres](#Prepare_Postgres)
+  - [Install
+    Prereqs](#Install_Prereqs)
+  - [Chado
+    Installation](#Chado_Installation)
+  - [Load DMel
+    Data](#Load_DMel_Data)
+  - [Prepare
+    Apache](#Prepare_Apache)
+- [Pre-Start
+  Tasks](#Pre-Start_Tasks)
+  - [Reload Fly
+    Data](#Reload_Fly_Data)
+  - [Prepare
+    for GO Terms](#Prepare_for_GO_Terms)
+- [Install
+  Drupal](#Install_Drupal)
+- [Re-enable
+  GBrowse, JBrowse, ...](#Re-enable_GBrowse.2C_JBrowse.2C_...)
+- [Review the
+  features of Drupal](#Review_the_features_of_Drupal)
+- [Setup Drupal
+  Cron](#Setup_Drupal_Cron)
+- [Theming](#Theming)
+- [Tripal
+  Resources](#Tripal_Resources)
+- [Tripal
+  Overview](#Tripal_Overview)
+  - [Tripal
+    Core Module](#Tripal_Core_Module)
+  - [Chado-centric
+    Modules](#Chado-centric_Modules)
+  - [Analysis
+    Modules](#Analysis_Modules)
+- [Setup
+  Tripal](#Setup_Tripal)
+  - [Install
+    Tripal](#Install_Tripal)
+  - [Enable
+    the Tripal Modules](#Enable_the_Tripal_Modules)
+  - [Setup
+    Tripal Cron](#Setup_Tripal_Cron)
+- [Organisms](#Organisms)
+  - [Sync the
+    Organism](#Sync_the_Organism)
+    - [Edit
+      the Organism](#Edit_the_Organism)
+  - [Setup the
+    Tripal Theme](#Setup_the_Tripal_Theme)
+    - [Enable the Base
+      Theme](#Enable_the_Base_Theme)
+    - [Organize the
+      Blocks](#Organize_the_Blocks)
+- [Features](#Features)
+  - [Sync the
+    Features](#Sync_the_Features)
+  - [Feature
+    Materialized Views](#Feature_Materialized_Views)
+  - [Browse
+    Features](#Browse_Features)
+  - [Enable
+    Searching of Features](#Enable_Searching_of_Features)
+  - [Feature
+    References](#Feature_References)
+  - [Review
+    Permissions](#Review_Permissions)
+- [Analysis
+  Modules](#Analysis_Modules_2)
+- [GO
+  Module](#GO_Module)
+- [Blast
+  Module](#Blast_Module)
+- [InterPro
+  Analysis](#InterPro_Analysis)
+- [Searching](#Searching)
+  - [Advanced
+    Searching](#Advanced_Searching)
+- [Libraries &
+  other Analysis](#Libraries_.26_other_Analysis)
+- [Incorporate
+  JBrowse](#Incorporate_JBrowse)
+- [Example
+  Customizing Content](#Example_Customizing_Content)
+- [Writing your
+  own Module](#Writing_your_own_Module)
+  - [Drupal
+    API](#Drupal_API)
+  - [Tripal
+    API](#Tripal_API)
+  - [Exercise](#Exercise)
+    - [Setup](#Setup)
+    - [Create tripal_pubs.info
+      file](#Create_tripal_pubs.info_file)
+    - [Create tripal_pubs.install
+      file](#Create_tripal_pubs.install_file)
+    - [Create the tripal_pubs.module
+      file](#Create_the_tripal_pubs.module_file)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">VMware</span>](#VMware)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Caveats</span>](#Caveats)
-- [<span class="tocnumber">3</span> <span class="toctext">Important
-  Information</span>](#Important_Information)
-- [<span class="tocnumber">4</span> <span class="toctext">Pre-Course
-  Setup</span>](#Pre-Course_Setup)
-- [<span class="tocnumber">5</span> <span class="toctext">Software
-  Used</span>](#Software_Used)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Web
-    Prep</span>](#Web_Prep)
-    - [<span class="tocnumber">5.1.1</span>
-      <span class="toctext">Install & Setup
-      PHP</span>](#Install_.26_Setup_PHP)
-    - [<span class="tocnumber">5.1.2</span>
-      <span class="toctext">Install
-      phpPgAdmin</span>](#Install_phpPgAdmin)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Prepare
-    Postgres</span>](#Prepare_Postgres)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Install
-    Prereqs</span>](#Install_Prereqs)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">Chado
-    Installation</span>](#Chado_Installation)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">Load DMel
-    Data</span>](#Load_DMel_Data)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">Prepare
-    Apache</span>](#Prepare_Apache)
-- [<span class="tocnumber">6</span> <span class="toctext">Pre-Start
-  Tasks</span>](#Pre-Start_Tasks)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Reload Fly
-    Data</span>](#Reload_Fly_Data)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Prepare
-    for GO Terms</span>](#Prepare_for_GO_Terms)
-- [<span class="tocnumber">7</span> <span class="toctext">Install
-  Drupal</span>](#Install_Drupal)
-- [<span class="tocnumber">8</span> <span class="toctext">Re-enable
-  GBrowse, JBrowse, ...</span>](#Re-enable_GBrowse.2C_JBrowse.2C_...)
-- [<span class="tocnumber">9</span> <span class="toctext">Review the
-  features of Drupal</span>](#Review_the_features_of_Drupal)
-- [<span class="tocnumber">10</span> <span class="toctext">Setup Drupal
-  Cron</span>](#Setup_Drupal_Cron)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Theming</span>](#Theming)
-- [<span class="tocnumber">12</span> <span class="toctext">Tripal
-  Resources</span>](#Tripal_Resources)
-- [<span class="tocnumber">13</span> <span class="toctext">Tripal
-  Overview</span>](#Tripal_Overview)
-  - [<span class="tocnumber">13.1</span> <span class="toctext">Tripal
-    Core Module</span>](#Tripal_Core_Module)
-  - [<span class="tocnumber">13.2</span>
-    <span class="toctext">Chado-centric
-    Modules</span>](#Chado-centric_Modules)
-  - [<span class="tocnumber">13.3</span> <span class="toctext">Analysis
-    Modules</span>](#Analysis_Modules)
-- [<span class="tocnumber">14</span> <span class="toctext">Setup
-  Tripal</span>](#Setup_Tripal)
-  - [<span class="tocnumber">14.1</span> <span class="toctext">Install
-    Tripal</span>](#Install_Tripal)
-  - [<span class="tocnumber">14.2</span> <span class="toctext">Enable
-    the Tripal Modules</span>](#Enable_the_Tripal_Modules)
-  - [<span class="tocnumber">14.3</span> <span class="toctext">Setup
-    Tripal Cron</span>](#Setup_Tripal_Cron)
-- [<span class="tocnumber">15</span>
-  <span class="toctext">Organisms</span>](#Organisms)
-  - [<span class="tocnumber">15.1</span> <span class="toctext">Sync the
-    Organism</span>](#Sync_the_Organism)
-    - [<span class="tocnumber">15.1.1</span> <span class="toctext">Edit
-      the Organism</span>](#Edit_the_Organism)
-  - [<span class="tocnumber">15.2</span> <span class="toctext">Setup the
-    Tripal Theme</span>](#Setup_the_Tripal_Theme)
-    - [<span class="tocnumber">15.2.1</span>
-      <span class="toctext">Enable the Base
-      Theme</span>](#Enable_the_Base_Theme)
-    - [<span class="tocnumber">15.2.2</span>
-      <span class="toctext">Organize the
-      Blocks</span>](#Organize_the_Blocks)
-- [<span class="tocnumber">16</span>
-  <span class="toctext">Features</span>](#Features)
-  - [<span class="tocnumber">16.1</span> <span class="toctext">Sync the
-    Features</span>](#Sync_the_Features)
-  - [<span class="tocnumber">16.2</span> <span class="toctext">Feature
-    Materialized Views</span>](#Feature_Materialized_Views)
-  - [<span class="tocnumber">16.3</span> <span class="toctext">Browse
-    Features</span>](#Browse_Features)
-  - [<span class="tocnumber">16.4</span> <span class="toctext">Enable
-    Searching of Features</span>](#Enable_Searching_of_Features)
-  - [<span class="tocnumber">16.5</span> <span class="toctext">Feature
-    References</span>](#Feature_References)
-  - [<span class="tocnumber">16.6</span> <span class="toctext">Review
-    Permissions</span>](#Review_Permissions)
-- [<span class="tocnumber">17</span> <span class="toctext">Analysis
-  Modules</span>](#Analysis_Modules_2)
-- [<span class="tocnumber">18</span> <span class="toctext">GO
-  Module</span>](#GO_Module)
-- [<span class="tocnumber">19</span> <span class="toctext">Blast
-  Module</span>](#Blast_Module)
-- [<span class="tocnumber">20</span> <span class="toctext">InterPro
-  Analysis</span>](#InterPro_Analysis)
-- [<span class="tocnumber">21</span>
-  <span class="toctext">Searching</span>](#Searching)
-  - [<span class="tocnumber">21.1</span> <span class="toctext">Advanced
-    Searching</span>](#Advanced_Searching)
-- [<span class="tocnumber">22</span> <span class="toctext">Libraries &
-  other Analysis</span>](#Libraries_.26_other_Analysis)
-- [<span class="tocnumber">23</span> <span class="toctext">Incorporate
-  JBrowse</span>](#Incorporate_JBrowse)
-- [<span class="tocnumber">24</span> <span class="toctext">Example
-  Customizing Content</span>](#Example_Customizing_Content)
-- [<span class="tocnumber">25</span> <span class="toctext">Writing your
-  own Module</span>](#Writing_your_own_Module)
-  - [<span class="tocnumber">25.1</span> <span class="toctext">Drupal
-    API</span>](#Drupal_API)
-  - [<span class="tocnumber">25.2</span> <span class="toctext">Tripal
-    API</span>](#Tripal_API)
-  - [<span class="tocnumber">25.3</span>
-    <span class="toctext">Exercise</span>](#Exercise)
-    - [<span class="tocnumber">25.3.1</span>
-      <span class="toctext">Setup</span>](#Setup)
-    - [<span class="tocnumber">25.3.2</span>
-      <span class="toctext">Create tripal_pubs.info
-      file</span>](#Create_tripal_pubs.info_file)
-    - [<span class="tocnumber">25.3.3</span>
-      <span class="toctext">Create tripal_pubs.install
-      file</span>](#Create_tripal_pubs.install_file)
-    - [<span class="tocnumber">25.3.4</span>
-      <span class="toctext">Create the tripal_pubs.module
-      file</span>](#Create_the_tripal_pubs.module_file)
-
-
-
-## <span id="VMware" class="mw-headline">VMware</span>
+## VMware
 
 This tutorial was taught using a VMware system image
 as a starting point. If you want to start with the same system, download
@@ -202,8 +165,7 @@ class="external text" rel="nofollow">end image</a>.
 | Shell   | gmod     | gmodamericas2010 |
 | MySQL   | root     | gmodamericas2010 |
 
-## <span id="Caveats" class="mw-headline">Caveats</span>
-
+## Caveats
 
 
 **Important Note**
@@ -216,10 +178,9 @@ over time. Newer versions of tutorials will be posted as they become
 available.
 
 
-
   
 
-## <span id="Important_Information" class="mw-headline">Important Information</span>
+## Important Information
 
 1.  Tripal is open source and currently at version 0.2 (second release).
 2.  The documentation is complete enough to allow for setup of a site.
@@ -232,13 +193,13 @@ available.
     rel="nofollow">FlyBase website</a>
 6.  It's new software. There are still bugs...
 
-## <span id="Pre-Course_Setup" class="mw-headline">Pre-Course Setup</span>
+## Pre-Course Setup
 
 By way of information the following steps were performed prior to the
 course. These steps will not be needed during the class but are here for
 reference.
 
-## <span id="Software_Used" class="mw-headline">Software Used</span>
+## Software Used
 
 - <a href="http://apache.org" class="external text"
   rel="nofollow">Apache</a> Web server
@@ -252,9 +213,9 @@ reference.
   rel="nofollow">Drupal</a>
 - Tripal
 
-### <span id="Web_Prep" class="mw-headline">Web Prep</span>
+### Web Prep
 
-#### <span id="Install_.26_Setup_PHP" class="mw-headline">Install & Setup PHP</span>
+#### Install & Setup PHP
 
 ``` enter
    sudo apt-get install php5
@@ -290,7 +251,7 @@ Set the memory limit:
 
       memory_limit = 2048M;
 
-#### <span id="Install_phpPgAdmin" class="mw-headline">Install phpPgAdmin</span>
+#### Install phpPgAdmin
 
 phpPgAdmin is a nice web-based utility for easy administration of a
 [PostgreSQL](PostgreSQL "PostgreSQL") database. It is not required for
@@ -324,7 +285,7 @@ Set permission for the web user:
    sudo chgrp -Rh www-data phpPgAdmin-4.2.3/
 ```
 
-### <span id="Prepare_Postgres" class="mw-headline">Prepare Postgres</span>
+### Prepare Postgres
 
 We need to create two Postgres databases, one for the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> tables and
@@ -346,7 +307,7 @@ Create the `chado` and `drupal` databases:
       postgres@gmod:~$ createdb chado_dmel -O fly_admin
       postgres@gmod:~$ createdb drupal_dmel -O fly_admin
 
-### <span id="Install_Prereqs" class="mw-headline">Install Prereqs</span>
+### Install Prereqs
 
 XSLT
 
@@ -407,7 +368,7 @@ Install the go-perl modules:
    sudo make install
 ```
 
-### <span id="Chado_Installation" class="mw-headline">Chado Installation</span>
+### Chado Installation
 
 Download and extract the gmod package:
 
@@ -441,7 +402,7 @@ Now install the gmod package and pre-populate the database:
   make ontologies
 ```
 
-### <span id="Load_DMel_Data" class="mw-headline">Load DMel Data</span>
+### Load DMel Data
 
 Download the [GFF](GFF "GFF") file available (originally) from the fly
 genome website. For the sake of simplicity we will only be using
@@ -471,7 +432,7 @@ A filtered version of the downloaded GFF file was preloaded into the
 database for the course. However, the data was not loaded how we wanted.
 See the section below for removing these features and reloading.
 
-### <span id="Prepare_Apache" class="mw-headline">Prepare Apache</span>
+### Prepare Apache
 
 Enable the rewrite module for apache. This is useful so that we can use
 Clean URLs with Drupal. Clean URLs are not required but make the page
@@ -482,9 +443,9 @@ URLs easier to use:
    sudo ln -s ../mods-available/rewrite.load
 ```
 
-## <span id="Pre-Start_Tasks" class="mw-headline">Pre-Start Tasks</span>
+## Pre-Start Tasks
 
-### <span id="Reload_Fly_Data" class="mw-headline">Reload Fly Data</span>
+### Reload Fly Data
 
 We need to reload the fly data that was loaded previous to class. The
 GFF file was not quite compatible with how we want to display the data.
@@ -539,7 +500,7 @@ Finally, load the new data:
      --no_target_syn
 ```
 
-### <span id="Prepare_for_GO_Terms" class="mw-headline">Prepare for GO Terms</span>
+### Prepare for GO Terms
 
 This step would normally not occur at this point but it takes about 20
 minutes to prepare the database for GO terms.
@@ -560,7 +521,7 @@ check to make sure these are running:
 
 Now open a new terminal and leave this alone.
 
-## <span id="Install_Drupal" class="mw-headline">Install Drupal</span>
+## Install Drupal
 
 ``` enter
    cd /var/www
@@ -655,7 +616,7 @@ were
 - Username: fly_admin
 - Password: flydemo2010
 
-## <span id="Re-enable_GBrowse.2C_JBrowse.2C_..." class="mw-headline">Re-enable GBrowse, JBrowse, ...</span>
+## Re-enable GBrowse, JBrowse, ...
 
 At this point, the GBrowse, JBrowse, and other web pages that were set
 up earlier, no longer work. Drupal broke them. Fix them.
@@ -674,7 +635,7 @@ to
      # Set the default handler.
      DirectoryIndex index.php index.html
 
-## <span id="Review_the_features_of_Drupal" class="mw-headline">Review the features of Drupal</span>
+## Review the features of Drupal
 
 User Accounts
 
@@ -702,18 +663,12 @@ Administration - Site Building
 - Site Building → Menu
   - Add a 'Home' link
   - Add an 'About' link
-
-<!-- -->
-
 - Site Building → Modules
   - Tripal requires the Path and Search modules. Enable those.
   - Return to the About link and add an alias.
   - Return to the Menu and update the about link.
   - Navigate to Drupal.org and click on 'Modules'. Review the wealth of
     public modules.
-
-<!-- -->
-
 - Site Building → Themes
   - Change the theme to Pushbutton.
   - Configure the theme and remove the search box.
@@ -727,20 +682,11 @@ Administration - User Management
 - User Management → Roles
   - Create role 'webmaster'
   - Create role 'editor'
-
-<!-- -->
-
 - User Management → Users
   - Add a user for yourself and set as webmaster.
-
-<!-- -->
-
 - User Management → Permissions
   - Turn on everything for webmaster
   - Set 'Access Content' for editor (and whatever else)
-
-<!-- -->
-
 - User Management → User Settings
 
 Administration - Site Configuration
@@ -753,7 +699,7 @@ Administration - Reports
 - Reports → Status reports
   - Run cron manually
 
-## <span id="Setup_Drupal_Cron" class="mw-headline">Setup Drupal Cron</span>
+## Setup Drupal Cron
 
 The Drupal cron is used to automatically execute necessary housekeeping
 tasks on a regular interval.
@@ -765,10 +711,8 @@ Drupal requires an entry in the crontab to function:
 ```
 
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 
 Add this line to the crontab
@@ -779,7 +723,7 @@ Add this line to the crontab
 
 The cron will launch this job every 30 minutes.
 
-## <span id="Theming" class="mw-headline">Theming</span>
+## Theming
 
 Drupal allows for customization for the look-and-feel of the website.
 This is done through use of themes. A list of publicly available themes
@@ -822,7 +766,7 @@ Download this image and upload as the logo:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/Dmel.png" width="100" height="78"
 alt="Dmel.png" />
 
-## <span id="Tripal_Resources" class="mw-headline">Tripal Resources</span>
+## Tripal Resources
 
 Availability
 
@@ -848,7 +792,7 @@ Made available through GMOD:
 class="external free"
 rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-tripal</a>
 
-## <span id="Tripal_Overview" class="mw-headline">Tripal Overview</span>
+## Tripal Overview
 
 Module Overview
 
@@ -862,7 +806,7 @@ modules and analysis modules
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8c/Tripal_Modules.jpg" width="800"
 height="554" alt="Tripal Modules.jpg" />
 
-### <span id="Tripal_Core_Module" class="mw-headline">Tripal Core Module</span>
+### Tripal Core Module
 
 The core module provides the following functionality:
 
@@ -872,7 +816,7 @@ The core module provides the following functionality:
 - Materialized Views -- for speedy
 - API for new modules -- for expandability
 
-### <span id="Chado-centric_Modules" class="mw-headline">Chado-centric Modules</span>
+### Chado-centric Modules
 
 Chado-centric modules provide "wrappers" for chado modules:
 
@@ -880,7 +824,7 @@ Chado-centric modules provide "wrappers" for chado modules:
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/cf/ChadoModules.png" width="519" height="408"
 alt="ChadoModules.png" />
 
-### <span id="Analysis_Modules" class="mw-headline">Analysis Modules</span>
+### Analysis Modules
 
 Analysis modules are intended to be the most diverse and customized for
 each site's needs. Currently, CUGI has written several analysis modules
@@ -901,9 +845,9 @@ We highly encourage others to alter these as needed or write their own
 for custom analyses. Custom developed modules can be shared with the
 community.
 
-## <span id="Setup_Tripal" class="mw-headline">Setup Tripal</span>
+## Setup Tripal
 
-### <span id="Install_Tripal" class="mw-headline">Install Tripal</span>
+### Install Tripal
 
 Create the necessary directory structure
 
@@ -940,7 +884,7 @@ to the `themes` directory created earlier:
 
 We will enable the Tripal theming a bit later.
 
-### <span id="Enable_the_Tripal_Modules" class="mw-headline">Enable the Tripal Modules</span>
+### Enable the Tripal Modules
 
 Navigate to the **Modules Administration Page** (**Administer → Site
 Building → Modules**) and click the checkboxes for each of the Tripal
@@ -964,7 +908,7 @@ Group 3:
       Tripal Chado Library
       Tripal Chado Analysis
 
-### <span id="Setup_Tripal_Cron" class="mw-headline">Setup Tripal Cron</span>
+### Setup Tripal Cron
 
 Tripal also require an entry in the crontab to function:
 
@@ -973,10 +917,8 @@ Tripal also require an entry in the crontab to function:
 ```
 
 
-
 [A word on text editors such as
 nano](Linux_Text_Editors "Linux Text Editors").
-
 
 
 Add this line to the crontab
@@ -1007,9 +949,9 @@ that a job was executed.
 *Note:* It is important the the final parameter be set to the name of
 the administrator account for Drupal. In our case '`fly_admin`'
 
-## <span id="Organisms" class="mw-headline">Organisms</span>
+## Organisms
 
-### <span id="Sync_the_Organism" class="mw-headline">Sync the Organism</span>
+### Sync the Organism
 
 What is syncing? Syncing is needed to create pages in Drupal that
 correspond to data (e.g. organisms and features) in
@@ -1029,7 +971,7 @@ we'll manually perform that now:
 
 Refresh the jobs page and notice the stats.
 
-#### <span id="Edit_the_Organism" class="mw-headline">Edit the Organism</span>
+#### Edit the Organism
 
 Now, the organism has a Drupal page! We can view it, but notice it has
 no useful content.. we need to add some. Click the **Edit** tab at the
@@ -1062,9 +1004,9 @@ Now, save the organism.
 But, our additional information did not show up! We need to install the
 Tripal theme.
 
-### <span id="Setup_the_Tripal_Theme" class="mw-headline">Setup the Tripal Theme</span>
+### Setup the Tripal Theme
 
-#### <span id="Enable_the_Base_Theme" class="mw-headline">Enable the Base Theme</span>
+#### Enable the Base Theme
 
 The Tripal theme is a base theme which adds functionality for Chado data
 to the selected theme. To enable the Tripal theme we must edit the
@@ -1087,7 +1029,7 @@ and enable the Tripal theme but do not set as default.
   
 Return to the organism page and refresh. Now the content is available.
 
-#### <span id="Organize_the_Blocks" class="mw-headline">Organize the Blocks</span>
+#### Organize the Blocks
 
 The next step is to place the blocks in their proper place. Open a new
 tab in the browser and navigate to the **Administer → Site Building →
@@ -1095,7 +1037,6 @@ Blocks** page. The theme has now changed to the admire-gray theme, but
 with Tripal "extensions".
 
 Alter the blocks accordingly:
-
 
 
 Powered by Drupal → \<none\>
@@ -1107,7 +1048,6 @@ Organisms → Sidebar left
 Search form → Sidebar left
 
 
-
 Now, move the **Search form *and the*** *Organism'* block to the top of
 the list of the **Sidebar left** group by clicking and dragging the
 crossbars. This will ensure our organism block shows up on the top of
@@ -1116,9 +1056,9 @@ the list.
 Click **Save blocks**. Now we have some blocks along the left-hand side
 of the site for easy access to Chado data.
 
-## <span id="Features" class="mw-headline">Features</span>
+## Features
 
-### <span id="Sync_the_Features" class="mw-headline">Sync the Features</span>
+### Sync the Features
 
 - Navigate to the **Administer → Tripal Management → Features**. Before
   syncing any features we must first set the accession prefix and the
@@ -1126,17 +1066,11 @@ of the site for easy access to Chado data.
   number. Essentially this is the feature_id of the feature in the chado
   table. The prefix is added to the beginning of the feature_id to form
   the unique accession. The default is 'ID'. Let's change this to DMEL.
-
-<!-- -->
-
 - Next, the site will only create drupal content for those features
   types listed in the **Feature Types** text box. Replace the contents
   of this box with `gene` and `psuedogene`. Then click the **Sync
   Features** button further down the page. Click on the link to go to
   the jobs page and view the job that has been submitted.
-
-<!-- -->
-
 - Finally, we need to sync the features, click the **Sync all Features**
   button. Rather than wait on the job cron we'll launch this job
   manually:
@@ -1158,7 +1092,7 @@ two ways to do this:
 1.  Add a browsable list of features (good for small sites)
 2.  Searching
 
-### <span id="Feature_Materialized_Views" class="mw-headline">Feature Materialized Views</span>
+### Feature Materialized Views
 
 The feature module is capable of showing the type and number of features
 for this organism. This display is added to the organism page. Even
@@ -1185,7 +1119,7 @@ Return to the **organism page** and notice that a new box appeared with
 a listing of the types and number of features for the organism as well
 as a pie chart.
 
-### <span id="Browse_Features" class="mw-headline">Browse Features</span>
+### Browse Features
 
 Another potentially useful feature is a browsable list of features in
 the database. This also appears on the organism page, but controlled by
@@ -1199,7 +1133,7 @@ Management → Features**. Click the button **Set Browser** in the
 for large sites. This is a problem with the way Drupal handles paged
 lists.
 
-### <span id="Enable_Searching_of_Features" class="mw-headline">Enable Searching of Features</span>
+### Enable Searching of Features
 
 Aside from the browsable list we cannot locate features for viewing
 without searching. To index features for searching, navigate to
@@ -1218,7 +1152,7 @@ Now, search for the feature 'FBgn0040037'.
 If desired, features can be edited. Useful for small fixes, but not good
 for bulk data changes.
 
-### <span id="Feature_References" class="mw-headline">Feature References</span>
+### Feature References
 
 Notice on the bottom of the page a **References** box exists. We would
 like for this to have a link to the external FlyBase database. To do
@@ -1234,16 +1168,16 @@ Now return to the feature page and the reference should be clickable
 
   
 
-### <span id="Review_Permissions" class="mw-headline">Review Permissions</span>
+### Review Permissions
 
 Now that we have data in the site we can control who has access to do
 certain things. Navigate to **Administer → User Management →
 Permissions**. Review the available permissions for anonymous users,
 webmaster and editor.
 
-## <span id="Analysis_Modules_2" class="mw-headline">Analysis Modules</span>
+## Analysis Modules
 
-## <span id="GO_Module" class="mw-headline">GO Module</span>
+## GO Module
 
 The GO module provides charts and trees for browsing GO assignments. It
 also lists GO assignments on the feature pages.
@@ -1261,7 +1195,7 @@ module.
 Now go to the feature page and see the list of GO terms associated to
 that feature.
 
-## <span id="Blast_Module" class="mw-headline">Blast Module</span>
+## Blast Module
 
 First, enable the Blast module navigate to **Administer → Site Building
 → Modules** and enable the **Tripal Blast module**.
@@ -1334,7 +1268,7 @@ next to **Uniprot/SwissProt** and add the following:
 Now return to the feature page and view the blast results. The match
 names now link to the external database.
 
-## <span id="InterPro_Analysis" class="mw-headline">InterPro Analysis</span>
+## InterPro Analysis
 
 First, enable the Interpro module navigate to **Admminister → Site
 Building → Modules** and enable the **Tripal Interpro** module.
@@ -1403,7 +1337,7 @@ from menu** link.
 Finally, click on the **Analysis** link at the top of the page. The
 analysis now appears with details.
 
-## <span id="Searching" class="mw-headline">Searching</span>
+## Searching
 
 We have a search box at the top of the page but we would like to add a
 menu item for searching. Navigate to the **Administer → Site building →
@@ -1451,7 +1385,7 @@ We should now be able to search for 'catalytic activity'.
 Anytime major changes are made to the content on feature pages the
 feature should be re-indexed.
 
-### <span id="Advanced_Searching" class="mw-headline">Advanced Searching</span>
+### Advanced Searching
 
 Drupal uses "Taxonomy" to provide filtering of search results. In the
 case of this demo this level of advanced searching wouldn't make sense
@@ -1464,9 +1398,6 @@ rel="nofollow">http://www.fagaceae.org/search</a>
 
 - First, navigate to the Search page and open the advanced options. It
   provides some default filtering mechanisms.
-
-<!-- -->
-
 - Navigate to **Administer → Tripal Management → Features**. Scroll down
   to the **Set Taxonomy** section and check the boxes **Organism Name**
   and **Feature Type** and click the button **Set/Reset Taxonomy for all
@@ -1476,9 +1407,6 @@ rel="nofollow">http://www.fagaceae.org/search</a>
   ``` enter
   cd /var/www; php ./sites/all/modules/tripal_core/tripal_launch_jobs.php yeast_admin
   ```
-
-<!-- -->
-
 - Check the status of the job on the Tripal Jobs page. When 100%
   complete return to the Search page and refresh. You'll notice now a
   box for filtering search results by organism and by feature type.
@@ -1486,13 +1414,10 @@ rel="nofollow">http://www.fagaceae.org/search</a>
   the bottom of the page. You'll notice some "tags" have been added to
   the page. These are the Drupal taxonomy tags that have been assigned
   to the feature page.
-
-<!-- -->
-
 - Navigate to **Administer → Content Management → Taxonomy**. You'll see
   the new vocabularies and terms.
 
-## <span id="Libraries_.26_other_Analysis" class="mw-headline">Libraries & other Analysis</span>
+## Libraries & other Analysis
 
 We do not have libraries for this example but they function in much the
 same way.
@@ -1501,7 +1426,7 @@ Subsets of features can be synced on the analysis and library
 administration pages when those modules are installed and features are
 associated in chado.
 
-## <span id="Incorporate_JBrowse" class="mw-headline">Incorporate JBrowse</span>
+## Incorporate JBrowse
 
 **Exercise:**
 
@@ -1515,7 +1440,7 @@ associated in chado.
 This [JBrowse](JBrowse.1 "JBrowse") won't contain to the sequence in our
 demo database but for purposes of demonstration this is adequate.
 
-## <span id="Example_Customizing_Content" class="mw-headline">Example Customizing Content</span>
+## Example Customizing Content
 
 In the case of the organism template, the organism abbreviation is not
 present. This can easily be added by editing the
@@ -1537,11 +1462,11 @@ Add this table row to the code:
 With PHP, CSS and JavaScript abilities the look-and-feel of chado
 content can be completely changed.
 
-## <span id="Writing_your_own_Module" class="mw-headline">Writing your own Module</span>
+## Writing your own Module
 
 **Not yet in the User's Guide**
 
-### <span id="Drupal_API" class="mw-headline">Drupal API</span>
+### Drupal API
 
 Concepts
 
@@ -1565,9 +1490,6 @@ Anatomy of a Drupal module
 
 Example `.info` file  
 `tripal_feature.info`
-
-<!-- -->
-
     ; $Id: tripal_feature.info,v 1.4 2009/10/01 17:52:24 ccheng Exp $
     name = Tripal Chado Feature
     description = A module for interfacing the GMOD chado database with Drupal, providing viewing, inserting and editing of chado features.
@@ -1637,7 +1559,7 @@ The important node-centric functions:
 - function *chado_feature_view (\$node, \$teaser = FALSE, \$page =
   FALSE)*: set's in-module theming.
 
-### <span id="Tripal_API" class="mw-headline">Tripal API</span>
+### Tripal API
 
 Tripal provides the following functions for integrating with Tripal:
 
@@ -1736,13 +1658,12 @@ Not yet fully defined, however, the tripal_analysis module will provide
 a set of "core" functions for all analysis modules. Documentation and
 finalized analysis API coming soon.
 
-### <span id="Exercise" class="mw-headline">Exercise</span>
+### Exercise
 
-#### <span id="Setup" class="mw-headline">Setup</span>
+#### Setup
 
 Step 1  
 Add a publication to Chado
-
 
 
 Let's create a very simple module that will place publications on a
@@ -1797,10 +1718,8 @@ These statements do the following:
 3.  Associates the publication with the feature YAL061W.
 
 
-
 Step 2  
 create the module directory
-
 
 
 Change directories to our Drupal install directory where we installed
@@ -1819,8 +1738,7 @@ identical to our module name.
 ```
 
 
-
-#### <span id="Create_tripal_pubs.info_file" class="mw-headline">Create tripal_pubs.info file</span>
+#### Create tripal_pubs.info file
 
 The first step to creating a module is to define our .info file that
 provides information to Drupal about our module.
@@ -1845,7 +1763,7 @@ dependencies[] = tripal_core
 dependencies[] = tripal_feature
 ```
 
-#### <span id="Create_tripal_pubs.install_file" class="mw-headline">Create tripal_pubs.install file</span>
+#### Create tripal_pubs.install file
 
 We do not have any functionality that needs to be performed when the
 module is installed, but we'll create a shell with proper drupal hooks
@@ -1879,7 +1797,7 @@ so that in the future if we do want to add code to these modules we can.
 ```
 
 
-#### <span id="Create_the_tripal_pubs.module_file" class="mw-headline">Create the tripal_pubs.module file</span>
+#### Create the tripal_pubs.module file
 
 Our module will be simple. It will add content to a feature page if
 there are publications associated with the feature. However, we'll add
@@ -2169,13 +2087,10 @@ above and remove the spaces. Mediawiki was giving problems with these so
 they should be fixed.
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [Tripal](Category%253ATripal "Category%253ATripal")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -2185,82 +2100,3 @@ they should be fixed.
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/Tripal "Special%253ASearchByProperty/Has-20topic/Tripal")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Tripal_Tutorial_2010" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:12 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">39,159 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

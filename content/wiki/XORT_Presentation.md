@@ -1,23 +1,7 @@
 ---
 title: "XORT Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">XORT Presentation</span>
-
-
-
-
-
-
-
+# XORT Presentation
 
 
 This Wiki section is an edited version of
@@ -25,43 +9,34 @@ This Wiki section is an edited version of
 title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">Chado
-  XML</span>](#Chado_XML)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Components</span>](#Components)
-- [<span class="tocnumber">4</span> <span class="toctext">Highlights of
+  Introduction](#Introduction)
+- [Chado
+  XML](#Chado_XML)
+- [Components](#Components)
+- [Highlights of
   Chado XML
-  Specification</span>](#Highlights_of_Chado_XML_Specification)
-- [<span class="tocnumber">5</span> <span class="toctext">Putting it
+  Specification](#Highlights_of_Chado_XML_Specification)
+- [Putting it
   together: New FlyBase dataflow Part
-  1</span>](#Putting_it_together:_New_FlyBase_dataflow_Part_1)
-- [<span class="tocnumber">6</span> <span class="toctext">Putting it
+  1](#Putting_it_together:_New_FlyBase_dataflow_Part_1)
+- [Putting it
   together: New FlyBase dataflow Part
-  2</span>](#Putting_it_together:_New_FlyBase_dataflow_Part_2)
-- [<span class="tocnumber">7</span> <span class="toctext">Data & Report
-  Generation</span>](#Data_.26_Report_Generation)
-- [<span class="tocnumber">8</span> <span class="toctext">Hibernate &
-  XORT</span>](#Hibernate_.26_XORT)
-- [<span class="tocnumber">9</span> <span class="toctext">Support for
+  2](#Putting_it_together:_New_FlyBase_dataflow_Part_2)
+- [Data & Report
+  Generation](#Data_.26_Report_Generation)
+- [Hibernate &
+  XORT](#Hibernate_.26_XORT)
+- [Support for
   complex transactions using
-  XORT</span>](#Support_for_complex_transactions_using_XORT)
-- [<span class="tocnumber">10</span> <span class="toctext">CHIA (Chado
+  XORT](#Support_for_complex_transactions_using_XORT)
+- [CHIA (Chado
   Interface
-  Application)</span>](#CHIA_.28Chado_Interface_Application.29)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">12</span>
-  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
+  Application)](#CHIA_.28Chado_Interface_Application.29)
+- [Documentation](#Documentation)
+- [Acknowledgements](#Acknowledgements)
 
 
-
-##### <span id="Introduction" class="mw-headline">Introduction</span>
+##### Introduction
 
 - An [XML](Glossary#XML "Glossary")-database mapping system for data
   exchange between DB and XML-driven application
@@ -83,7 +58,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
   - <a href="http://search.cpan.org/perldoc?DBI" class="external text"
     rel="nofollow">DBI</a>
 
-##### <span id="Chado_XML" class="mw-headline">Chado XML</span>
+##### Chado XML
 
 - Is [Chado XML](Chado_XML "Chado XML") necessary? No, but it may help
   you.
@@ -95,7 +70,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 - It provides bulk update/download which other methods lack or is
   inefficient
 
-##### <span id="Components" class="mw-headline">Components</span>
+##### Components
 
 - Database & Schema
 - ChadoXML Specification
@@ -105,7 +80,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
   - It's fairly easy for those who know the schema to read these files
     and understand what the operation is
 
-##### <span id="Highlights_of_Chado_XML_Specification" class="mw-headline">Highlights of Chado XML Specification</span>
+##### Highlights of Chado XML Specification
 
 - Unique represent of specific database schema
 - Get away with those internal primary key value
@@ -113,7 +88,7 @@ title="XORT.pdf">Josh Goodman and Pinglei Zhou's presentation</a>.
 - Encoding for non-ASCII characters
 - Macro mechanism (object reference)
 
-##### <span id="Putting_it_together:_New_FlyBase_dataflow_Part_1" class="mw-headline">Putting it together: New FlyBase dataflow Part 1</span>
+##### Putting it together: New FlyBase dataflow Part 1
 
 There are three Flybase sites, and most curation is done at Harvard and
 Cambridge. Proforma is the curation format at Cambridge and Harvard, but
@@ -135,7 +110,7 @@ power users.
 
 2\. All ChadoXML is loaded into Chado by XORT
 
-##### <span id="Putting_it_together:_New_FlyBase_dataflow_Part_2" class="mw-headline">Putting it together: New FlyBase dataflow Part 2</span>
+##### Putting it together: New FlyBase dataflow Part 2
 
 3\. Chado (Harvard) is denormalized and loaded into Chado (Indiana)
 
@@ -145,7 +120,7 @@ power users.
 
 5.b. HTML is created from Chado XML
 
-##### <span id="Data_.26_Report_Generation" class="mw-headline">Data & Report Generation</span>
+##### Data & Report Generation
 
 - Content of all output files is controlled by XML dumpspecs.
   - Dumpspecs are language independent.
@@ -159,7 +134,7 @@ power users.
   - Extremely fast. We can process all data for ~60,000 Drosophila genes
     in under 30 minutes.
 
-##### <span id="Hibernate_.26_XORT" class="mw-headline">Hibernate & XORT</span>
+##### Hibernate & XORT
 
 - Hibernate didn't scale well when dealing with 5,000+ features in bulk.
   - The test was simply calling `print()` statements
@@ -169,7 +144,7 @@ power users.
   minor performance problems.
 - XORT is much more language independent.
 
-##### <span id="Support_for_complex_transactions_using_XORT" class="mw-headline">Support for complex transactions using XORT</span>
+##### Support for complex transactions using XORT
 
 For example:
 
@@ -194,7 +169,7 @@ if necessary
 Step 3. Edit the output xml, change uniquename x to y, then load the
 edited file back to DB
 
-##### <span id="CHIA_.28Chado_Interface_Application.29" class="mw-headline">CHIA (Chado Interface Application)</span>
+##### CHIA (Chado Interface Application)
 
 A Java application that organizes SQL and XORT functionality for
 internal users, e.g.:
@@ -209,7 +184,7 @@ needed.
 
   
 
-##### <span id="Documentation" class="mw-headline">Documentation</span>
+##### Documentation
 
 - *Using Chado to Store Genome Annotation Data"*
   - Current Protocols in Bioinformatics (Baxevanis, A.D., and Davison,
@@ -221,7 +196,7 @@ needed.
     <a href="http://www.gmod.org" class="external free"
     rel="nofollow">http://www.gmod.org</a>
 
-##### <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
+##### Acknowledgements
 
 - Willian Gelbart
 - Chris Mungall
@@ -244,90 +219,3 @@ needed.
 - Victor Strelets
 - Robert Wilson
 - Paul Leyland
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [FlyBase](Category%253AFlyBase "Category%253AFlyBase")
-- [XORT](Category%253AXORT "Category%253AXORT")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/XORT_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:54 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">16,595 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "GBrowse User Uploads"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse User Uploads</span>
-
-
-
-
-
-
-
+# GBrowse User Uploads
 
 
 [GBrowse](GBrowse.1 "GBrowse") allows users to supplement the database
@@ -39,54 +23,37 @@ rel="nofollow">MySQL</a> as databases, though it should be possible to
 use others.
 
 
-## Contents
+  Display](#Display)
+- [Basic Custom
+  Tracks](#Basic_Custom_Tracks)
+  - [Adding
+    Custom Tracks](#Adding_Custom_Tracks)
+    - [Uploaded Tracks](#Uploaded_Tracks)
+    - [Remote
+      Tracks/URLs](#Remote_Tracks.2FURLs)
+    - [Created Tracks](#Created_Tracks)
+- [Advanced
+  Custom Tracks](#Advanced_Custom_Tracks)
+  - [Permissions](#Permissions)
+    - [Private](#Private)
+    - [Casual](#Casual)
+    - [Group](#Group)
+    - [Public/Community](#Public.2FCommunity)
+- [Setup](#Setup)
+  - [To use
+    SQLite](#To_use_SQLite)
+  - [To use
+    MySQL](#To_use_MySQL)
+  - [User
+    Accounts Flag](#User_Accounts_Flag)
+- [Database
+  Schema](#Database_Schema)
+  - [Uploads](#Uploads)
+  - [Sharing](#Sharing)
+  - [DBInfo](#DBInfo)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Display</span>](#Display)
-- [<span class="tocnumber">2</span> <span class="toctext">Basic Custom
-  Tracks</span>](#Basic_Custom_Tracks)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Adding
-    Custom Tracks</span>](#Adding_Custom_Tracks)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Uploaded Tracks</span>](#Uploaded_Tracks)
-    - [<span class="tocnumber">2.1.2</span> <span class="toctext">Remote
-      Tracks/URLs</span>](#Remote_Tracks.2FURLs)
-    - [<span class="tocnumber">2.1.3</span>
-      <span class="toctext">Created Tracks</span>](#Created_Tracks)
-- [<span class="tocnumber">3</span> <span class="toctext">Advanced
-  Custom Tracks</span>](#Advanced_Custom_Tracks)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Permissions</span>](#Permissions)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Private</span>](#Private)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">Casual</span>](#Casual)
-    - [<span class="tocnumber">3.1.3</span>
-      <span class="toctext">Group</span>](#Group)
-    - [<span class="tocnumber">3.1.4</span>
-      <span class="toctext">Public/Community</span>](#Public.2FCommunity)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Setup</span>](#Setup)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">To use
-    SQLite</span>](#To_use_SQLite)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">To use
-    MySQL</span>](#To_use_MySQL)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">User
-    Accounts Flag</span>](#User_Accounts_Flag)
-- [<span class="tocnumber">5</span> <span class="toctext">Database
-  Schema</span>](#Database_Schema)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Uploads</span>](#Uploads)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">Sharing</span>](#Sharing)
-  - [<span class="tocnumber">5.3</span>
-    <span class="toctext">DBInfo</span>](#DBInfo)
-
-
-
-## <span id="Display" class="mw-headline">Display</span>
+## Display
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/58/Custom_track.png" width="1471" height="96"
@@ -115,14 +82,14 @@ allow more flexible sharing). It shows the current permissions, current
 users of the file, and gives you options to control the sharing
 further - adding/removing users, and the sharing link.
 
-## <span id="Basic_Custom_Tracks" class="mw-headline">Basic Custom Tracks</span>
+## Basic Custom Tracks
 
 Upon first installation, GBrowse is configured to allow a simple custom
 track system, allowing users to upload and view their own custom tracks
 which are stored on the server running GBrowse. It does not require an
 additional tools or programs.
 
-### <span id="Adding_Custom_Tracks" class="mw-headline">Adding Custom Tracks</span>
+### Adding Custom Tracks
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/f6/Custom_tracks.png" width="453"
@@ -138,7 +105,7 @@ All tracks can be edited manually in the browser by clicking the
 text box will drop down where you can make your changes, then click
 "Submit" to save your changes (or cancel to discard them).
 
-#### <span id="Uploaded_Tracks" class="mw-headline">Uploaded Tracks</span>
+#### Uploaded Tracks
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/28/Upload.png" width="378" height="70"
@@ -153,7 +120,7 @@ conflict. However, if you wish to overwrite the file you already have,
 just check off the box beside "If this file exists, overwrite it" and
 the old file will be overwritten.
 
-#### <span id="Remote_Tracks.2FURLs" class="mw-headline">Remote Tracks/URLs</span>
+#### Remote Tracks/URLs
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ee/Import.png" width="373" height="53"
@@ -168,7 +135,7 @@ you upload the same URL twice, if you have an existing custom track from
 that URL it will be overwritten (since this would happen on a reload
 anyways).
 
-#### <span id="Created_Tracks" class="mw-headline">Created Tracks</span>
+#### Created Tracks
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9e/Create.png" width="509" height="200"
@@ -182,7 +149,7 @@ created and load it.
 To delete a custom track, just click the trash-can icon beside it and it
 will be deleted and removed from your session.
 
-## <span id="Advanced_Custom_Tracks" class="mw-headline">Advanced Custom Tracks</span>
+## Advanced Custom Tracks
 
 By specifying a database, GBrowse administrators can give users the
 option to share files between users, as well as have add their tracks to
@@ -190,7 +157,7 @@ a community tracks repository which is available to all users. More
 information for admins about adding this capability can be found in the
 Setup section below.
 
-### <span id="Permissions" class="mw-headline">Permissions</span>
+### Permissions
 
 Sharing works on the basis that every file now has a *permissions*
 setting, a kind of sharing policy that specifies exactly who can access
@@ -198,12 +165,12 @@ this file. There are four main policies which you can choose to set your
 custom tracks to, so that other users may be allowed to add them to
 their sessions.
 
-#### <span id="Private" class="mw-headline">Private</span>
+#### Private
 
 Private sharing is the most basic setting, it only allows the owner to
 use that track.
 
-#### <span id="Casual" class="mw-headline">Casual</span>
+#### Casual
 
 Casual sharing is a simple way to share your tracks with other users, by
 providing you with a sharing link that you can send to other users. If a
@@ -214,7 +181,7 @@ who is currently using their track in the sharing section of their
 track's listing under the Custom Tracks tab, and remove any users who
 may have obtained the link accidentally.
 
-#### <span id="Group" class="mw-headline">Group</span>
+#### Group
 
 Group sharing is a secure way for an owner to share a track with a
 specific user. Under the track's sharing section in the Custom Tracks
@@ -225,7 +192,7 @@ owner can see who is part of the group of users the track is shared to,
 and can remove a user at any time. Users can also remove the track from
 their session by pressing the **\[X\]** link.
 
-#### <span id="Public.2FCommunity" class="mw-headline">Public/Community</span>
+#### Public/Community
 
 Public or community tracks are kept in a separate section of the site,
 under the Community Tracks tab. There you can search for a file by name,
@@ -235,7 +202,7 @@ your session, you can click the **\[Add\]** link to add it. Community
 tracks may also be shared via a sharing link, which can be obtained by
 clicking the sharing icon on the track in the main browser tab.
 
-## <span id="Setup" class="mw-headline">Setup</span>
+## Setup
 
 This section outlines the process required for administrators to
 configure GBrowse to allow custom tracks. For basic user uploads are all
@@ -257,7 +224,7 @@ The custom tracks system is linked to the user accounts system, it uses
 the same configuration settings and database - turning on one will turn
 on the other.
 
-### <span id="To_use_SQLite" class="mw-headline">To use SQLite</span>
+### To use SQLite
 
 SQLite doesn't require much setup, you just need to decide on a location
 to store the database file.
@@ -276,7 +243,7 @@ permissions to do so.
     # privileges on it to the indicated user.
     # user_account_db        = DBI:SQLite:/path/to/your/database.sqlite
 
-### <span id="To_use_MySQL" class="mw-headline">To use MySQL</span>
+### To use MySQL
 
 For MySQL, ensure that the MySQL server is up and running, and that you
 have the administrator username and password handy. You'll also need the
@@ -291,7 +258,7 @@ Change the user and/or password fields as needed.
 
     # user_account_db        = DBI:mysql:gbrowse_login;user=gbrowse;password=gbrowse
 
-### <span id="User_Accounts_Flag" class="mw-headline">User Accounts Flag</span>
+### User Accounts Flag
 
 Once the configuration option has been set, the "user accounts" switch
 to enable the user database must be turned on (set from 0 to 1).
@@ -301,13 +268,13 @@ to enable the user database must be turned on (set from 0 to 1).
     # a user registration database
     user accounts          = 0
 
-## <span id="Database_Schema" class="mw-headline">Database Schema</span>
+## Database Schema
 
 In versions of GBrowse equal to or above 2.20 that are set up for
 advanced sharing, the relationships between the files are stored in a
 database. Its schema is as follows:
 
-### <span id="Uploads" class="mw-headline">Uploads</span>
+### Uploads
 
 This table holds all the metadata for every custom or community track.
 
@@ -325,7 +292,7 @@ This table holds all the metadata for every custom or community track.
 | public_count | int | The number of public users. |
 | data_source | text | The GBrowse data source that the track belongs to. |
 
-### <span id="Sharing" class="mw-headline">Sharing</span>
+### Sharing
 
 This table holds all sharing relationships between files and users other
 then their owners. Each time a user shares a file with a user, or adds a
@@ -339,7 +306,7 @@ are kept separate, to avoid contamination between the two share types.
 | userid  | integer not null     | The unique ID of the user to be shared to. |
 | public  | boolean              | Whether the relationship is                |
 
-### <span id="DBInfo" class="mw-headline">DBInfo</span>
+### DBInfo
 
 In addition to the uploads tables, this table stores the version number
 of the current schema. It is used for upgrading and keeping track of the
@@ -350,87 +317,6 @@ schema version.
 | schema_version | int(10) not null UNIQUE | The version number of the current database schema. |
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_User_Uploads" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:35 on 29 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">53,249 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

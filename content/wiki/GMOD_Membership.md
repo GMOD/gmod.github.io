@@ -1,54 +1,25 @@
 ---
 title: "GMOD Membership"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Membership</span>
-
-
-
-
-
-
-
+# GMOD Membership
 
 
 This page describes how [users](#Users), [developers](#Developers), and
 [software](#Software) become a part of GMOD.
 
 
+  Users](#Users)
+- [Developers](#Developers)
+- [Software](#Software)
+  - [Nomination](#Nomination)
+  - [Evaluation](#Evaluation)
+  - [Requirements](#Requirements)
+  - [Non-GMOD
+    Software](#Non-GMOD_Software)
+  - [Versions](#Versions)
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Users</span>](#Users)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Developers</span>](#Developers)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Software</span>](#Software)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Nomination</span>](#Nomination)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Evaluation</span>](#Evaluation)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Requirements</span>](#Requirements)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Non-GMOD
-    Software</span>](#Non-GMOD_Software)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Versions</span>](#Versions)
-
-
-## <span id="Users" class="mw-headline">Users</span>
+## Users
 
 To become a GMOD *user*, just download, install, and start using one or
 more [GMOD Components](GMOD_Components "GMOD Components"). That's it.
@@ -63,7 +34,7 @@ the components that you use. You can also subscribe to the [GMOD News
 RSS feed](GMOD_News "GMOD News"). These will help keep you up to date on
 both the project and the components you use.
 
-## <span id="Developers" class="mw-headline">Developers</span>
+## Developers
 
 *Developers* are [users](#Users) who also contribute code back to the
 project. In the early days of GMOD every user was also a developer. This
@@ -95,12 +66,12 @@ class="external text" rel="nofollow">GMOD Developer mailing list</a>
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture"
 class="external text" rel="nofollow">GMOD Architecture</a> as well).
 
-## <span id="Software" class="mw-headline">Software</span>
+## Software
 
 New [software components](GMOD_Components "GMOD Components") become a
 part of GMOD through a nomination and evaluation process.
 
-### <span id="Nomination" class="mw-headline">Nomination</span>
+### Nomination
 
 Software can be nominated by its developers, by GMOD users, or by GMOD
 staff. New components also arise from within the community.
@@ -115,7 +86,7 @@ also nominate a component by posting to the [GMOD Mailing
 Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") that are most relevant
 to the tool.
 
-### <span id="Evaluation" class="mw-headline">Evaluation</span>
+### Evaluation
 
 Nominated software is first evaluated by GMOD staff (currently the [GMOD
 Project Coordinator](User%253AScott "User%253AScott") and the [GMOD Help
@@ -135,7 +106,7 @@ responses from the developers. The decision may be to include the
 software, to not include the software, or to include the software after
 additional development or documentation is done.
 
-### <span id="Requirements" class="mw-headline">Requirements</span>
+### Requirements
 
 To become a part of the [GMOD suite](GMOD_Components "GMOD Components"),
 software has to meet several requirements:
@@ -151,9 +122,6 @@ expression](Category%253AExpression "Category%253AExpression"),
 [phenotypes](Category%253APhenotypes "Category%253APhenotypes"), or [comparative
 genomics](Comparative_Genomics "Comparative Genomics") are good examples
 of broadly applicable tools.
-
-<!-- -->
-
 Useful Over Time  
 GMOD Components should be applicable and useful for at least several
 years. For example, GMOD tends to avoid *analysis* tools because this
@@ -162,9 +130,6 @@ connect different analysis tools into reusable pipelines (see
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
 [Galaxy](Galaxy.1 "Galaxy") for examples), is a common and longstanding
 need that will outlive any particular too.
-
-<!-- -->
-
 Configurable and Extensible  
 GMOD tools should be usable in a wide variety of situations. Different
 user environments will require different configurations of the software.
@@ -174,9 +139,6 @@ source code itself to get what they want. Another (complementary) way to
 achieve this is to have an extensible architecture where computer-savvy
 users can write plugins/extensions for tasks such as input/output using
 custom/local data sources and formats.
-
-<!-- -->
-
 Open Source License for All Users  
 New GMOD software must have an
 <a href="http://www.opensource.org/licenses" class="external text"
@@ -184,17 +146,11 @@ rel="nofollow">Open Source Initiative (OSI) approved license</a>, and
 that license must be free to all users. The GMOD project is committed to
 <a href="http://www.opensource.org/docs/osd" class="external text"
 rel="nofollow">open source principles</a>.
-
-<!-- -->
-
 Interoperable With Other [GMOD Components](GMOD_Components "GMOD Components")  
 New GMOD software must be interoperable with other [GMOD
 Components](GMOD_Components "GMOD Components"). Usually this means that
 the software can export and/or import [GFF](GFF "GFF"), or that it can
 connect to <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
-
-<!-- -->
-
 Commitment of Support  
 The developers of the software must be willing to make a good faith
 commitment to support the new component for at least 2 years after
@@ -211,16 +167,13 @@ Users and Support Mailing List(s)
 Newly added software components must have user/support [mailing
 list(s)](GMOD_Mailing_Lists "GMOD Mailing Lists") and those lists must
 be publicly archived.
-
-<!-- -->
-
 Public repository  
 The software component, including code, documentation and other
 supporting files need to be stored in a publicly accessible code
 repository. This repository must also enable the addition of new
 developers over the life of the project.
 
-### <span id="Non-GMOD_Software" class="mw-headline">Non-GMOD Software</span>
+### Non-GMOD Software
 
 Being officially part of GMOD has several advantages:
 
@@ -242,7 +195,7 @@ GMOD is particularly interested in tools (such as
 You don't even have to apply for GMOD membership to have an "external"
 page.
 
-### <span id="Versions" class="mw-headline">Versions</span>
+### Versions
 
 These [Software Membership Requirements](#Software) change over time.
 
@@ -253,84 +206,3 @@ These [Software Membership Requirements](#Software) change over time.
 href="http://gmod.org/w/index.php?title=GMOD_Membership&amp;oldid=15465"
 class="external text" rel="nofollow">1.0</a> | February 2010 | December 2010 | Formalized the nomination process and the previously informal membership requirements. |
 | Informal | Conception | February 2010 | The list of requirements evolved and grew over time, eventually resulting in Version 1. |
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Membership" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:59 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">219,253 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

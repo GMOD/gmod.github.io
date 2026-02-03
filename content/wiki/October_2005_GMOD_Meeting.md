@@ -1,23 +1,7 @@
 ---
 title: "October 2005 GMOD Meeting"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">October 2005 GMOD Meeting</span>
-
-
-
-
-
-
-
+# October 2005 GMOD Meeting
 
 
 Generic Model Organism Database Construction Set
@@ -25,34 +9,25 @@ Generic Model Organism Database Construction Set
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting
   7</span>](#Meeting_7)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Friday,
+- [Agenda](#Agenda)
+  - [Friday,
     October 28, 2005 DIFFERENT ROOM: Plimpton Conference Room, Beckman
     Building,
-    CSHL</span>](#Friday.2C_October_28.2C_2005.0ADIFFERENT_ROOM:_Plimpton_Conference_Room.2C_Beckman_Building.2C_CSHL)
-- [<span class="tocnumber">3</span> <span class="toctext">Meeting
-  Report</span>](#Meeting_Report)
+    CSHL](#Friday.2C_October_28.2C_2005.0ADIFFERENT_ROOM:_Plimpton_Conference_Room.2C_Beckman_Building.2C_CSHL)
+- [Meeting
+  Report](#Meeting_Report)
 
 
-
-## <span id="Meeting_7" class="mw-headline">Meeting 7</span>
+## Meeting 7
 
 Thursday, October 27, 2005 Gerry Conference Room, Marks Building, CSHL
 
   
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 9:10am
-
-
 
 
 Introductions  
@@ -103,7 +78,7 @@ Java O/R recommendation
 
 Discussion: other topics, either architecture or other software issues
 
-##### <span id="Friday.2C_October_28.2C_2005.0ADIFFERENT_ROOM:_Plimpton_Conference_Room.2C_Beckman_Building.2C_CSHL" class="mw-headline">Friday, October 28, 2005 DIFFERENT ROOM: Plimpton Conference Room, Beckman Building, CSHL</span>
+##### Friday, October 28, 2005 DIFFERENT ROOM: Plimpton Conference Room, Beckman Building, CSHL
 
 <table data-cellpadding="6" width="75%">
 <colgroup>
@@ -136,7 +111,7 @@ package for release</td>
 </tbody>
 </table>
 
-## <span id="Meeting_Report" class="mw-headline">Meeting Report</span>
+## Meeting Report
 
 Meeting report for October, 2005 GMOD meeting. This is an outline by
 [Scott Cain](User%253AScott "User%253AScott").
@@ -207,90 +182,3 @@ Topics covered:
     synteny](SynView "SynView")
   - flybase gbrowse for synteny
   - flybase query builder
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [DictyBase](Category%253ADictyBase "Category%253ADictyBase")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/October_2005_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:15 on 28 July
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">28,309 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

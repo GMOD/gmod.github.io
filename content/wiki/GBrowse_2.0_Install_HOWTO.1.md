@@ -1,23 +1,7 @@
 ---
 title: "GBrowse 2.0 Install HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse 2.0 Install HOWTO</span>
-
-
-
-
-
-
-
+# GBrowse 2.0 Install HOWTO
 
 
 This article describes **how to install GBrowse 2.0** on either Linux or
@@ -47,42 +31,35 @@ how that process works.
   HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO").*
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Installing via
   the CPAN Shell</span>](#Installing_via_the_CPAN_Shell)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Ubuntu
-    11.04 Issue</span>](#Ubuntu_11.04_Issue)
-- [<span class="tocnumber">2</span> <span class="toctext">Installing
-  Manually</span>](#Installing_Manually)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Running
-    the Build.PL Script</span>](#Running_the_Build.PL_Script)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Running
-    the Build Script</span>](#Running_the_Build_Script)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Selecting
+  - [Ubuntu
+    11.04 Issue](#Ubuntu_11.04_Issue)
+- [Installing
+  Manually](#Installing_Manually)
+  - [Running
+    the Build.PL Script](#Running_the_Build.PL_Script)
+  - [Running
+    the Build Script](#Running_the_Build_Script)
+  - [Selecting
     Installation
-    Directories</span>](#Selecting_Installation_Directories)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Configure
-    in Mac OS X 10.6.6</span>](#Configure_in_Mac_OS_X_10.6.6)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Running
+    Directories](#Selecting_Installation_Directories)
+  - [Configure
+    in Mac OS X 10.6.6](#Configure_in_Mac_OS_X_10.6.6)
+  - [Running
     the GBrowse Demo
-    (optional)</span>](#Running_the_GBrowse_Demo_.28optional.29)
-  - [<span class="tocnumber">2.6</span>
-    <span class="toctext">Registering GBrowse
-    (optional)</span>](#Registering_GBrowse_.28optional.29)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Final
-    Installation</span>](#Final_Installation)
-- [<span class="tocnumber">3</span> <span class="toctext">Debugging and
+    (optional)](#Running_the_GBrowse_Demo_.28optional.29)
+  - [Registering GBrowse
+    (optional)](#Registering_GBrowse_.28optional.29)
+  - [Final
+    Installation](#Final_Installation)
+- [Debugging and
   Customizing the
-  Installation</span>](#Debugging_and_Customizing_the_Installation)
-- [<span class="tocnumber">4</span> <span class="toctext">Advanced
-  Installation Topics</span>](#Advanced_Installation_Topics)
+  Installation](#Debugging_and_Customizing_the_Installation)
+- [Advanced
+  Installation Topics](#Advanced_Installation_Topics)
 
 
-
-## <span id="Installing_via_the_CPAN_Shell" class="mw-headline">Installing via the CPAN Shell</span>
+## Installing via the CPAN Shell
 
 For a smooth experience, please install all [GBrowse 2.0
 Prerequisites](GBrowse_2.0_Prerequisites "GBrowse 2.0 Prerequisites")
@@ -106,8 +83,7 @@ If any perl modules are missing from the prerequisites, the CPAN shell
 will install them for you.
 
 
-
-### <span id="Ubuntu_11.04_Issue" class="mw-headline">Ubuntu 11.04 Issue</span>
+### Ubuntu 11.04 Issue
 
 The binary version of the GD Perl module that is packaged for Ubuntu
 11.04 (Natty Narwhal) contains a bug that causes BioPerl to fail several
@@ -120,8 +96,7 @@ of its tests, blocking GBrowse installation. To fix:
 Then proceed to install Bio::Graphics::Browser2 as described above.
 
 
-
-## <span id="Installing_Manually" class="mw-headline">Installing Manually</span>
+## Installing Manually
 
 Alternatively, you can download and install the bleeding edge version
 via GIT. For a smooth
@@ -135,7 +110,7 @@ The command to issue is:
 
 This will create a directory named *Generic-Genome-Browser*:
 
-### <span id="Running_the_Build.PL_Script" class="mw-headline">Running the Build.PL Script</span>
+### Running the Build.PL Script
 
 Next, enter the newly-created directory and run the `Build.PL` script:
 
@@ -173,7 +148,7 @@ automatically, you may run:
 After running, Build.PL will create a script named `Build` in the
 current directory.
 
-### <span id="Running_the_Build_Script" class="mw-headline">Running the Build Script</span>
+### Running the Build Script
 
 You will now use Build to test, configure and install GBrowse. First you
 will confirm that GBrowse's libraries are completely functional by
@@ -198,7 +173,7 @@ inquiry to the
 <a href="https://lists.sourceforge.net/lists/listinfo/gmod-gbrowse"
 class="external text" rel="nofollow">GBrowse mailing list</a>.
 
-### <span id="Selecting_Installation_Directories" class="mw-headline">Selecting Installation Directories</span>
+### Selecting Installation Directories
 
 After passings its tests, you should configure GBrowse by running
 **./Build config**:
@@ -313,7 +288,7 @@ Note that we still need to tweak \$HOME/httpd/conf/gbrowse2/GBrowse.conf
 to set the 'url_base' from '/gbrowse2' to '/potato/gbrowse2' in this
 case.
 
-### <span id="Configure_in_Mac_OS_X_10.6.6" class="mw-headline">Configure in Mac OS X 10.6.6</span>
+### Configure in Mac OS X 10.6.6
 
 If you install apache2 using Mac Ports
 (<a href="http://www.macports.org/" class="external free"
@@ -393,7 +368,7 @@ Copy configure information to the end of
 
   
 
-### <span id="Running_the_GBrowse_Demo_.28optional.29" class="mw-headline">Running the GBrowse Demo (optional)</span>
+### Running the GBrowse Demo (optional)
 
 Before you install GBrowse, you may wish to run its demo. This will
 attempt to launch a correctly configured instance of Apache running
@@ -410,7 +385,7 @@ specifies), and interact with the GBrowse web site, browse sample
 genomes and otherwise test the waters. When you are done, run *./Build
 demostop* to stop Apache and clean up.
 
-### <span id="Registering_GBrowse_.28optional.29" class="mw-headline">Registering GBrowse (optional)</span>
+### Registering GBrowse (optional)
 
 You may register GBrowse by running **./Build register**. This is an
 optional step, but allows the GBrowse development group to track who is
@@ -418,7 +393,7 @@ using GBrowse. This information is useful when writing grant
 renewals :-). The information is only used internally by the GMOD
 project and is not shared with any other parties.
 
-### <span id="Final_Installation" class="mw-headline">Final Installation</span>
+### Final Installation
 
 To install GBrowse and its support files permanently, run **./Build
 install** as the superuser. This will copy GBrowse's library and support
@@ -432,7 +407,7 @@ autogenerated page that describes the install configurations you chose,
 points to an example database to run, and gives pointers to
 documentation, tutorials and other useful information.
 
-## <span id="Debugging_and_Customizing_the_Installation" class="mw-headline">Debugging and Customizing the Installation</span>
+## Debugging and Customizing the Installation
 
 If you are having trouble with the installation, see [Common Problems
 with GBrowse2
@@ -443,7 +418,7 @@ GBrowse2 in your Home
 Directory](Installing_GBrowse2_in_your_Home_Directory "Installing GBrowse2 in your Home Directory").
 (These pages aren't written yet)!
 
-# <span id="Advanced_Installation_Topics" class="mw-headline">Advanced Installation Topics</span>
+# Advanced Installation Topics
 
 For advanced topics, such as accelerating GBrowse performance by running
 it under a persistent environment, configuring the user login and custom
@@ -452,92 +427,3 @@ tracks via user authentication, see:
 
 - [GBrowse 2.0 Install
   HOWTO/Advanced](GBrowse_2.0_Install_HOWTO/Advanced "GBrowse 2.0 Install HOWTO/Advanced")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [GBrowse 2](Category%253AGBrowse_2 "Category%253AGBrowse 2")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_2.0_Install_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:00 on 22 February
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">168,464 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

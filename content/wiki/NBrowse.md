@@ -1,72 +1,44 @@
 ---
 title: "NBrowse"
 ---
+# NBrowse
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">NBrowse</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Description</span>](#Description)
-- [<span class="tocnumber">2</span> <span class="toctext">Internet
-  Resources</span>](#Internet_Resources)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">N-Browse</span>](#N-Browse)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">N-Browse
-    Version 2 Launch</span>](#N-Browse_Version_2_Launch)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">N-Browse
-    Version 1</span>](#N-Browse_Version_1)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">N-Browse
-    Version 2</span>](#N-Browse_Version_2)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">N-Browse
+  Description](#Description)
+- [Internet
+  Resources](#Internet_Resources)
+  - [N-Browse](#N-Browse)
+  - [N-Browse
+    Version 2 Launch](#N-Browse_Version_2_Launch)
+- [Documentation](#Documentation)
+  - [N-Browse
+    Version 1](#N-Browse_Version_1)
+  - [N-Browse
+    Version 2](#N-Browse_Version_2)
+- [Downloads](#Downloads)
+  - [N-Browse
     Version 1 Source Code Download (tar.gz
-    file)</span>](#N-Browse_Version_1_Source_Code_Download_.28tar.gz_file.29)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">N-Browse
+    file)](#N-Browse_Version_1_Source_Code_Download_.28tar.gz_file.29)
+  - [N-Browse
     Version 2 Source Code
-    Download</span>](#N-Browse_Version_2_Source_Code_Download)
-    - [<span class="tocnumber">4.2.1</span> <span class="toctext">SVN
-      N-Browse Version 2</span>](#SVN_N-Browse_Version_2)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Installing
+    Download](#N-Browse_Version_2_Source_Code_Download)
+    - [SVN
+      N-Browse Version 2](#SVN_N-Browse_Version_2)
+- [Installation](#Installation)
+  - [Installing
     and configuring the N-Browse client-server package for N-Browse
     Version
-    1</span>](#Installing_and_configuring_the_N-Browse_client-server_package_for_N-Browse_Version_1)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Installing
+    1](#Installing_and_configuring_the_N-Browse_client-server_package_for_N-Browse_Version_1)
+  - [Installing
     and configuring N-Browse N-Browse Version
-    2</span>](#Installing_and_configuring_N-Browse_N-Browse_Version_2)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Installing
+    2](#Installing_and_configuring_N-Browse_N-Browse_Version_2)
+  - [Installing
     and populating the N-Browse generic
-    database</span>](#Installing_and_populating_the_N-Browse_generic_database)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Contacts</span>](#Contacts)
+    database](#Installing_and_populating_the_N-Browse_generic_database)
+- [Contacts](#Contacts)
 
 
-
-## <span id="Description" class="mw-headline">Description</span>
+## Description
 
 N-Browse is a graphical network browser for the visualization and
 navigation of heterogeneous molecular interaction data. The latest
@@ -103,9 +75,9 @@ N-Browse version 2 can save/export data in a variety of formats. Please
 visit <a href="http://www.gnetbrowse.org" class="external text"
 rel="nofollow">N-Browse</a> for more information.
 
-## <span id="Internet_Resources" class="mw-headline">Internet Resources</span>
+## Internet Resources
 
-### <span id="N-Browse" class="mw-headline">N-Browse</span>
+### N-Browse
 
 The main <a href="http://www.gnetbrowse.org" class="external text"
 rel="nofollow">N-Browse website</a>, is the where N-Browse can be
@@ -127,7 +99,7 @@ The
 rel="nofollow">modMine database web service</a> will be providing links
 to N-Browse in their next release.
 
-### <span id="N-Browse_Version_2_Launch" class="mw-headline">N-Browse Version 2 Launch</span>
+### N-Browse Version 2 Launch
 
 Launch <a href="http://aquila.bio.nyu.edu/NBrowse2/nbrowse.jnlp"
 class="external text" rel="nofollow">N-Browse beta version 2
@@ -141,9 +113,9 @@ Launch directly from the
 <a href="http://www.gnetbrowse.org" class="external text"
 rel="nofollow">N-Browse Home Page</a>
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
-### <span id="N-Browse_Version_1" class="mw-headline">N-Browse Version 1</span>
+### N-Browse Version 1
 
 No longer available and supported from the
 <a href="http://www.gnetbrowse.org" class="external text"
@@ -151,7 +123,7 @@ rel="nofollow">N-Browse web site</a> - source code can be found on
 <a href="http://sourceforge.net/projects/nbrowse/" class="external text"
 rel="nofollow">sourceforge N-Browse Version 1 repository</a>
 
-### <span id="N-Browse_Version_2" class="mw-headline">N-Browse Version 2</span>
+### N-Browse Version 2
 
 <a href="http://www.gnetbrowse.org/N-Browse_tutorial.html"
 class="external text" rel="nofollow">N-Browse_tutorial</a>
@@ -159,22 +131,22 @@ class="external text" rel="nofollow">N-Browse_tutorial</a>
 <a href="http://www.gnetbrowse.org/info.html" class="external text"
 rel="nofollow">N-Browse_system_requirement</a>
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
-### <span id="N-Browse_Version_1_Source_Code_Download_.28tar.gz_file.29" class="mw-headline">N-Browse Version 1 Source Code Download (tar.gz file)</span>
+### N-Browse Version 1 Source Code Download (tar.gz file)
 
 Download the source from the
 <a href="http://sourceforge.net/project/showfiles.php?group_id=203428"
 class="external text" rel="nofollow">SourceForge download page</a>.
 
-### <span id="N-Browse_Version_2_Source_Code_Download" class="mw-headline">N-Browse Version 2 Source Code Download</span>
+### N-Browse Version 2 Source Code Download
 
 Download the source from the
 <a href="http://sourceforge.net/scm/?type=svn&amp;group_id=27707"
 class="external text" rel="nofollow">SourceForge download page</a> under
 the trunk directory.
 
-#### <span id="SVN_N-Browse_Version_2" class="mw-headline">SVN N-Browse Version 2</span>
+#### SVN N-Browse Version 2
 
 N-Browse Version 2 source code is available using
 <a href="Subversion" class="mw-redirect"
@@ -185,9 +157,9 @@ You can browse the source code directly here:
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/nbrowse/trunk"
 class="external text" rel="nofollow">N-Browse Code</a>
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
-### <span id="Installing_and_configuring_the_N-Browse_client-server_package_for_N-Browse_Version_1" class="mw-headline">Installing and configuring the N-Browse client-server package for N-Browse Version 1</span>
+### Installing and configuring the N-Browse client-server package for N-Browse Version 1
 
 1\. Download and install the required software
 (<a href="http://tomcat.apache.org/" class="external text"
@@ -211,7 +183,7 @@ directory:
 
 \$ perl install.pl
 
-### <span id="Installing_and_configuring_N-Browse_N-Browse_Version_2" class="mw-headline">Installing and configuring N-Browse N-Browse Version 2</span>
+### Installing and configuring N-Browse N-Browse Version 2
 
 No installation/configuration is needed for running the N-Browse Version
 2 application itself. Please view system requirements
@@ -221,7 +193,7 @@ Requirements</a>. If you wish to host your own copy of N-Browse, or
 create your own database, etc., please refer the to the
 **DeveloperDoc.txt** file in the source code's **doc** directory.
 
-### <span id="Installing_and_populating_the_N-Browse_generic_database" class="mw-headline">Installing and populating the N-Browse generic database</span>
+### Installing and populating the N-Browse generic database
 
 Note the following instructions are common to both N-Browse 1 and 2. The
 Perl dataloader scripts and README file are located in the
@@ -240,7 +212,7 @@ Please refer to sections **Data Loaders** and **Creating your own
 database** in the source code's **DeveloperDoc.txt** file in the **doc**
 directory for more information.
 
-## <span id="Contacts" class="mw-headline">Contacts</span>
+## Contacts
 
 Please send questions to the
 <a href="mailto:admin@gnetbrowse.org" class="external text"
@@ -250,86 +222,6 @@ N-Browse Version 2 was initially developed by Victor Chest and by Mark
 Gibson. It is currently being developed by Monty Schulman.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [External](Category%253AExternal "Category%253AExternal")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/NBrowse" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:57 on 30 September
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">98,297 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

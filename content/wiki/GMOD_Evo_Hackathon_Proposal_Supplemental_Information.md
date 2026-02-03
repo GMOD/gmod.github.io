@@ -1,23 +1,7 @@
 ---
 title: "GMOD Evo Hackathon Proposal Supplemental Information"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Evo Hackathon Proposal Supplemental Information</span>
-
-
-
-
-
-
-
+# GMOD Evo Hackathon Proposal Supplemental Information
 
 
   
@@ -54,49 +38,40 @@ Evo Hackathon
 Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal").
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Other topics
   of Secondary Importance</span>](#Other_topics_of_Secondary_Importance)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Natural
+  - [Natural
     Diversity / Population Genetics / Multidimensional Data
     Visualization in a Genomic
-    Context</span>](#Natural_Diversity_.2F_Population_Genetics_.2F_Multidimensional_Data_Visualization_in_a_Genomic_Context)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Web-based
+    Context](#Natural_Diversity_.2F_Population_Genetics_.2F_Multidimensional_Data_Visualization_in_a_Genomic_Context)
+  - [Web-based
     display of Chado Phenotype/Natural Diversity
-    data</span>](#Web-based_display_of_Chado_Phenotype.2FNatural_Diversity_data)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Support
+    data](#Web-based_display_of_Chado_Phenotype.2FNatural_Diversity_data)
+  - [Support
     for pangenomes and core
-    genomes</span>](#Support_for_pangenomes_and_core_genomes)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Support
+    genomes](#Support_for_pangenomes_and_core_genomes)
+  - [Support
     for annotation tools based on phylogenetic analysis, such as
-    PAINT</span>](#Support_for_annotation_tools_based_on_phylogenetic_analysis.2C_such_as_PAINT)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Linking
+    PAINT](#Support_for_annotation_tools_based_on_phylogenetic_analysis.2C_such_as_PAINT)
+  - [Linking
     xrate (and other phylo-aware annotation tools) to
-    jbrowse</span>](#Linking_xrate_.28and_other_phylo-aware_annotation_tools.29_to_jbrowse)
-- [<span class="tocnumber">2</span> <span class="toctext">Discussion /
-  Development Topics</span>](#Discussion_.2F_Development_Topics)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Post-Reference Genome
-    Tools</span>](#Post-Reference_Genome_Tools)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">High-throughput Imaging /
-    Phenotyping</span>](#High-throughput_Imaging_.2F_Phenotyping)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Third-generation
-    Sequencing</span>](#Third-generation_Sequencing)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Evo-Devo
-    Support</span>](#Evo-Devo_Support)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Tree /
-    Graph Visualization</span>](#Tree_.2F_Graph_Visualization)
+    jbrowse](#Linking_xrate_.28and_other_phylo-aware_annotation_tools.29_to_jbrowse)
+- [Discussion /
+  Development Topics](#Discussion_.2F_Development_Topics)
+  - [Post-Reference Genome
+    Tools](#Post-Reference_Genome_Tools)
+  - [High-throughput Imaging /
+    Phenotyping](#High-throughput_Imaging_.2F_Phenotyping)
+  - [Third-generation
+    Sequencing](#Third-generation_Sequencing)
+  - [Evo-Devo
+    Support](#Evo-Devo_Support)
+  - [Tree /
+    Graph Visualization](#Tree_.2F_Graph_Visualization)
 
 
+### Other topics of Secondary Importance
 
-### <span id="Other_topics_of_Secondary_Importance" class="mw-headline">Other topics of Secondary Importance</span>
-
-#### <span id="Natural_Diversity_.2F_Population_Genetics_.2F_Multidimensional_Data_Visualization_in_a_Genomic_Context" class="mw-headline">Natural Diversity / Population Genetics / Multidimensional Data Visualization in a Genomic Context</span>
+#### Natural Diversity / Population Genetics / Multidimensional Data Visualization in a Genomic Context
 
 The Barley1K project (Eyal Fridman group, The Hebrew University) is an
 example dataset that should be supportable by GMOD. They gathered a
@@ -120,7 +95,7 @@ There is also work currently under way to extend [GFF3](GFF3 "GFF3") to
 handle variant information. Several existing GMOD tools will need to be
 modified to recognize this data.
 
-#### <span id="Web-based_display_of_Chado_Phenotype.2FNatural_Diversity_data" class="mw-headline">Web-based display of Chado Phenotype/Natural Diversity data</span>
+#### Web-based display of Chado Phenotype/Natural Diversity data
 
 [Tripal](Tripal.1 "Tripal") is a
 <a href="http://drupal.org" class="external text"
@@ -132,7 +107,7 @@ the hackathon.
 
   
 
-#### <span id="Support_for_pangenomes_and_core_genomes" class="mw-headline">Support for pangenomes and core genomes</span>
+#### Support for pangenomes and core genomes
 
 The concept of the pangenome and core genomes is becoming common in the
 analysis of bacterial genomes, but is more broadly applicable. The
@@ -144,7 +119,7 @@ ancestor, does not have a physical location, but it may have one or more
 contextual locations in a syntenic block of sequence found in some or
 all of the strains.
 
-#### <span id="Support_for_annotation_tools_based_on_phylogenetic_analysis.2C_such_as_PAINT" class="mw-headline">Support for annotation tools based on phylogenetic analysis, such as PAINT</span>
+#### Support for annotation tools based on phylogenetic analysis, such as PAINT
 
 The RefGenome project of the GO consortium is working on
 <a href="http://wiki.geneontology.org/index.php/PAINT"
@@ -157,7 +132,7 @@ versioning to deal with changes in the analysis as annotations to
 descendants and the addition/placement of descendants changes with the
 addition of new genomes or revision of the orthology analysis.
 
-#### <span id="Linking_xrate_.28and_other_phylo-aware_annotation_tools.29_to_jbrowse" class="mw-headline">Linking xrate (and other phylo-aware annotation tools) to jbrowse</span>
+#### Linking xrate (and other phylo-aware annotation tools) to jbrowse
 
 The conservation track is a staple of the UCSC browser. Evofold
 predictions form another useful track. Tools like xrate
@@ -167,13 +142,13 @@ generalization of these kinds of phylogenetic HMM or SCFG model.
 Development would focus on linking these into existing GMOD browsers
 (e.g. JBrowse).
 
-## <span id="Discussion_.2F_Development_Topics" class="mw-headline">Discussion / Development Topics</span>
+## Discussion / Development Topics
 
 This section contains early-stage ideas that merit discussion and
 serious consideration by the attendees of the hackathon, but are not yet
 developed enough for specific implementation objectives.
 
-### <span id="Post-Reference_Genome_Tools" class="mw-headline">Post-Reference Genome Tools</span>
+### Post-Reference Genome Tools
 
 This is a great example of how evolutionary biology can help lead the
 rest of the GMOD community.
@@ -212,13 +187,13 @@ thousands of full genomes. In such an environment, does the concept of a
 reference genome still remain relevant? How should GMOD tools change,
 grow, and adapt?
 
-### <span id="High-throughput_Imaging_.2F_Phenotyping" class="mw-headline">High-throughput Imaging / Phenotyping</span>
+### High-throughput Imaging / Phenotyping
 
 Adoption of high-throughput imaging and phenotyping technologies is
 increasing. What software exists for working with this type of data, and
 how should the GMOD community participate?
 
-### <span id="Third-generation_Sequencing" class="mw-headline">Third-generation Sequencing</span>
+### Third-generation Sequencing
 
 What challenges will the GMOD community face in handling
 third-generation (single-molecule) sequencing data, and how can we
@@ -246,7 +221,7 @@ Areas of discussion include:
 - graphical visualization
 - online display and searching
 
-### <span id="Evo-Devo_Support" class="mw-headline">Evo-Devo Support</span>
+### Evo-Devo Support
 
 Add the ability to compare the developmental programs between organisms
 at different levels: anatomy, genomics, expression patterns, gene
@@ -256,7 +231,7 @@ several others.
 
   
 
-### <span id="Tree_.2F_Graph_Visualization" class="mw-headline">Tree / Graph Visualization</span>
+### Tree / Graph Visualization
 
 GMOD's Chado database schema already includes strong support for storing
 trees and graphs. This capability has been in Chado since its beginning.
@@ -268,89 +243,7 @@ integrate one of those solutions, or an outside solution, for
 visualization.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Evo
   Hackathon](Category%253AGMOD_Evo_Hackathon "Category%253AGMOD Evo Hackathon")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="Special%253ABrowse/GMOD_Evo_Hackathon_Proposal_Supplemental_Information"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:44 on 7 July
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">12,487 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

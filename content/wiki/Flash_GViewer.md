@@ -1,24 +1,7 @@
 ---
 title: "Flash GViewer"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Flash GViewer</span>
-
-
-
-
-
-
-
-
+# Flash GViewer
 
 
 <img
@@ -41,24 +24,14 @@ chromosome region and then link out to a genome browser for higher
 resolution information.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Demo &
   Screenshots</span>](#Demo_.26_Screenshots)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Documentation</span>](#Documentation)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Contact</span>](#Contact)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Downloads</span>](#Downloads)
+- [Requirements](#Requirements)
+- [Documentation](#Documentation)
+- [Contact](#Contact)
+- [Downloads](#Downloads)
 
 
-
-## <span id="Demo_.26_Screenshots" class="mw-headline">Demo & Screenshots</span>
+## Demo & Screenshots
 
 Check out the
 <a href="http://blog.gmod.org/nondrupal/FlashGViewer_forWeb/index.html"
@@ -115,7 +88,7 @@ height="404" alt="Gviewer example hs.jpg" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/9/9b/Gviewer_example_hs-01.jpg" width="64"
 height="54" alt="Gviewer example hs-01.jpg" />
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 - Macromedia Flash Plugin version 7, it can be downloaded from
   Macromedia <a
@@ -126,107 +99,20 @@ height="54" alt="Gviewer example hs-01.jpg" />
   modified versions of the `.swf` requires Macromedia Flash Professional
   v7.
 
-## <span id="Documentation" class="mw-headline">Documentation</span>
+## Documentation
 
 Installation instructions, explanations of the Flash HTML tags, the XML
 file formats for the base map and the annotations are discussed in the
 [Flash GViewer
 documentation](Flash_GViewer_Documentation "Flash GViewer Documentation").
 
-## <span id="Contact" class="mw-headline">Contact</span>
+## Contact
 
 <a href="mailto:simont@mcw.edu" class="external text"
 rel="nofollow">Simon Twigger</a>
 
-## <span id="Downloads" class="mw-headline">Downloads</span>
+## Downloads
 
 <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=161280"
 class="external text" rel="nofollow">Via the web from sourceforge</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [RGD](Category%253ARGD "Category%253ARGD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Flash_GViewer" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:41 on 26 February
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">118,862 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

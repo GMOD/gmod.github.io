@@ -1,70 +1,45 @@
 ---
 title: "GBrowse Windows HOWTO"
 ---
+# GBrowse Windows HOWTO
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Windows HOWTO</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">WARNING</span>](#WARNING)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Abstract</span>](#Abstract)
-- [<span class="tocnumber">3</span> <span class="toctext">Windows
-  Installation</span>](#Windows_Installation)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Install
-    ActiveState Perl</span>](#Install_ActiveState_Perl)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Install
-    the Apache web server</span>](#Install_the_Apache_web_server)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Install
+  WARNING](#WARNING)
+- [Abstract](#Abstract)
+- [Windows
+  Installation](#Windows_Installation)
+  - [Install
+    ActiveState Perl](#Install_ActiveState_Perl)
+  - [Install
+    the Apache web server](#Install_the_Apache_web_server)
+  - [Install
     the MySQL database
-    (optional)</span>](#Install_the_MySQL_database_.28optional.29)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Install
+    (optional)](#Install_the_MySQL_database_.28optional.29)
+  - [Install
     GBrowse and its Perl
-    Dependencies</span>](#Install_GBrowse_and_its_Perl_Dependencies)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Authors</span>](#Authors)
+    Dependencies](#Install_GBrowse_and_its_Perl_Dependencies)
+- [Authors](#Authors)
 
 
-
-## <span id="WARNING" class="mw-headline">WARNING</span>
+## WARNING
 
 This document has serious issues and installing GBrowse 1.70 on Windows
 is not easy as a result. Unless you absolutely must use Windows, I
 suggest you try Linux (as a virtual machine if necessary) instead.
 
-## <span id="Abstract" class="mw-headline">Abstract</span>
+## Abstract
 
 This HOWTO describes a method for installing
 [GBrowse](GBrowse.1 "GBrowse") version 1.x (currently 1.70) on Windows;
 GBrowse 2.0 is not supported on Windows.
 
-## <span id="Windows_Installation" class="mw-headline">Windows Installation</span>
+## Windows Installation
 
 Before installing on Windows systems, you will need to install
 ActiveState Perl and the Apache web server. You may also wish to install
 a database management system such as MySQL.
 
-### <span id="Install_ActiveState_Perl" class="mw-headline">Install ActiveState Perl</span>
+### Install ActiveState Perl
 
 *This may be a show stopper: BioPerl can't be installed in the current
 releases of ActiveState Perl versions 5.12 and 5.14 because (as far as I
@@ -99,7 +74,7 @@ rel="nofollow">Strawberry Perl</a>, but I haven't tried.
 *Please accept the default location for ActiveState Perl; this will make
 it easier to install GBrowse.*
 
-### <span id="Install_the_Apache_web_server" class="mw-headline">Install the Apache web server</span>
+### Install the Apache web server
 
 Go to
 <a href="http://httpd.apache.org/download.cgi" class="external free"
@@ -110,7 +85,7 @@ install automatically.
 
 *Please accept the default location for Apache.*
 
-### <span id="Install_the_MySQL_database_.28optional.29" class="mw-headline">Install the MySQL database (optional)</span>
+### Install the MySQL database (optional)
 
 Do this only if you want to run the [MySQL](MySQL "MySQL") backend to
 GBrowse. You might want to wait until after you've played with the
@@ -127,7 +102,7 @@ program. Then launch the installer.
 After installing MySQL, install DBD::mysql; the easiest way to do that
 is via the ActiveState ppm utility.
 
-### <span id="Install_GBrowse_and_its_Perl_Dependencies" class="mw-headline">Install GBrowse and its Perl Dependencies</span>
+### Install GBrowse and its Perl Dependencies
 
 Download the <a
 href="https://raw.github.com/GMOD/GBrowse/master/bin/gbrowse_netinstall.pl"
@@ -163,95 +138,7 @@ ActiveState and/or Apache!). A few notes:
   <a href="http://www.xptweaks.net/" class="external text"
   rel="nofollow">xp tweaks</a>
 
-## <span id="Authors" class="mw-headline">Authors</span>
+## Authors
 
 - [Lincoln Stein](User%253ALstein "User%253ALstein")
 - [Scott Cain](User%253AScott "User%253AScott")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Windows](Category%253AWindows "Category%253AWindows")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Windows_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 15:07 on 27 July
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">111,780 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

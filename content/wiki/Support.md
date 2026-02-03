@@ -1,42 +1,18 @@
 ---
 title: "Support"
 ---
+# Support
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Support</span>
-
-
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">GMOD Web
   Site</span>](#GMOD_Web_Site)
-- [<span class="tocnumber">2</span> <span class="toctext">GMOD Mailing
-  Lists</span>](#GMOD_Mailing_Lists)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Which
-    List?</span>](#Which_List.3F)
-- [<span class="tocnumber">3</span> <span class="toctext">GMOD Help
-  Desk</span>](#GMOD_Help_Desk)
-- [<span class="tocnumber">4</span> <span class="toctext">Meetings and
-  Training and Outreach</span>](#Meetings_and_Training_and_Outreach)
+- [GMOD Mailing
+  Lists](#GMOD_Mailing_Lists)
+  - [Which
+    List?](#Which_List.3F)
+- [GMOD Help
+  Desk](#GMOD_Help_Desk)
+- [Meetings and
+  Training and Outreach](#Meetings_and_Training_and_Outreach)
 
 
 Because GMOD is a large and diverse collection of projects, it can be
@@ -45,7 +21,7 @@ available from several different sources. This page introduces each
 support option and offers guidance on which one is the most appropriate
 for your question.
 
-## <span id="GMOD_Web_Site" class="mw-headline">GMOD Web Site</span>
+## GMOD Web Site
 
 Many questions about GMOD can be answered by [searching this
 website](Special:Search "Special:Search") or exploring it through
@@ -60,7 +36,7 @@ particularly useful places to start for support questions:
 - [Glossary](Glossary "Glossary") - List of commonly used terms in GMOD.
 - [HOWTOs](Category%253AHOWTO "Category%253AHOWTO") - List of HOWTO pages
 
-## <span id="GMOD_Mailing_Lists" class="mw-headline">[GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists")</span>
+## [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists")
 
 The GMOD project has many [mailing
 lists](GMOD_Mailing_Lists "GMOD Mailing Lists") and if one exists on
@@ -75,7 +51,7 @@ links to and descriptions of most of the GMOD mailing lists that are
 geared towards GMOD users. This includes both project wide and component
 specific mailing lists.
 
-### <span id="Which_List.3F" class="mw-headline">Which List?</span>
+### Which List?
 
 If your question is about how
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a> and another
@@ -97,7 +73,7 @@ class="external text" rel="nofollow">SourceForge</a>.
 If it is not clear where to send your question you can send it to the
 [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk").
 
-## <span id="GMOD_Help_Desk" class="mw-headline">GMOD Help Desk</span>
+## GMOD Help Desk
 
 The [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") is also available
 to answer your support questions (or at least refer you to the people
@@ -105,7 +81,7 @@ who can). In addition to e-mail support the help desk also offers other
 services such as onsite support and user training. See [GMOD Help
 Desk](GMOD_Help_Desk "GMOD Help Desk") for more.
 
-## <span id="Meetings_and_Training_and_Outreach" class="mw-headline">[Meetings](Meetings "Meetings") and [Training and Outreach](Training_and_Outreach "Training and Outreach")</span>
+## [Meetings](Meetings "Meetings") and [Training and Outreach](Training_and_Outreach "Training and Outreach")
 
 You can also get (and give) support at [GMOD
 meetings](Meetings "Meetings") and at [GMOD sponsored and related
@@ -120,86 +96,6 @@ and offer hands-on training on installing, configuring and integrating
 GMOD components.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Help](Category%253AHelp "Category%253AHelp")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Support" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:38 on 5 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">311,714 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

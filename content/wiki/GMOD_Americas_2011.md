@@ -1,24 +1,7 @@
 ---
 title: "GMOD Americas 2011"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Americas 2011</span>
-
-
-
-
-
-
-
-
+# GMOD Americas 2011
 
 
 <img
@@ -28,35 +11,18 @@ width="600" height="239"
 alt="GMOD Americas 2011, Community and Satellite Meetings, GMOD Course, March 5-12" />
 
 
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About
   GMOD</span>](#About_GMOD)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Events</span>](#Events)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Lodging</span>](#Lodging)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">Transportation</span>](#Transportation)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Meals</span>](#Meals)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Sponsors</span>](#Sponsors)
-- [<span class="tocnumber">6</span> <span class="toctext">Help Get the
-  Word Out</span>](#Help_Get_the_Word_Out)
-- [<span class="tocnumber">7</span> <span class="toctext">See
-  Also</span>](#See_Also)
-
-
+- [Registration](#Registration)
+- [Events](#Events)
+- [Logistics](#Logistics)
+  - [Lodging](#Lodging)
+  - [Transportation](#Transportation)
+  - [Meals](#Meals)
+- [Sponsors](#Sponsors)
+- [Help Get the
+  Word Out](#Help_Get_the_Word_Out)
+- [See
+  Also](#See_Also)
 
 
 ***GMOD Americas 2011*** was an 8 day event held at the
@@ -99,10 +65,9 @@ title="2011 GMOD Spring Training">2011 GMOD Spring Training</a></li>
 </table>
 
 
-
   
 
-# <span id="About_GMOD" class="mw-headline">About GMOD</span>
+# About GMOD
 
 **GMOD** is the Generic Model Organism Database project, a collection of
 interoperable open-source [software
@@ -124,7 +89,7 @@ data integration, management, and querying, and
 <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> (and
 [ISGA](ISGA "ISGA")) for data analysis.
 
-# <span id="Registration" class="mw-headline">Registration</span>
+# Registration
 
 There were separate registration fees for the [Community
 Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") and the
@@ -139,7 +104,7 @@ Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") was
 - \$80 on or before February 18
 - \$95 after February 18
 
-# <span id="Events" class="mw-headline">Events</span>
+# Events
 
 The schedule of events is below. This is subject to slight revisions.
 
@@ -302,13 +267,13 @@ March 12</td>
 </tbody>
 </table>
 
-# <span id="Logistics" class="mw-headline">Logistics</span>
+# Logistics
 
 GMOD Americas 2011 was held at
 <a href="http://www.nescent.org/" class="external text"
 rel="nofollow">NESCent</a> in Durham, North Carolina, United States.
 
-## <span id="Lodging" class="mw-headline">Lodging</span>
+## Lodging
 
 We recommend staying at
 <a href="http://duketower.com" class="external text" rel="nofollow">Duke
@@ -329,7 +294,7 @@ href="http://www.hotels.com/search/searchmap.html?viewType=MAP&amp;resolvedLocat
 class="external text" rel="nofollow">several other lodging options</a>
 in the area.
 
-## <span id="Transportation" class="mw-headline">Transportation</span>
+## Transportation
 
 The closest airport is
 <a href="http://www.rdu.com/" class="external text"
@@ -369,7 +334,7 @@ advance.
 
 The shuttle operates 24 hours a day and can be reached at 919-323-1745.
 
-## <span id="Meals" class="mw-headline">Meals</span>
+## Meals
 
 Lunch will be provided on both days of the [March 2011 GMOD
 Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting"), but at the
@@ -383,15 +348,13 @@ is a corner store and a <a
 href="http://www.wholefoodsmarket.com/stores/StoreLocations.php?storeabbr=DRH"
 class="external text" rel="nofollow">Whole Foods</a> nearby.
 
-# <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+# Sponsors
 
 
 <a href="http://nescent.org/" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 
 **GMOD Americas 2011** is sponsored by the
@@ -406,12 +369,10 @@ across disciplinary, institutional, geographic, and demographic
 boundaries.
 
 
-
 [<img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />](Galaxy.1 "Galaxy")
-
 
 
 The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring **GMOD
@@ -420,13 +381,11 @@ enables biologists to both analyze their data, and to archive those
 analyses (including data sets and program parameters) for future
 reference. Galaxy is developed at Penn State and Emory University.
 
-# <span id="Help_Get_the_Word_Out" class="mw-headline">Help Get the Word Out</span>
-
+# Help Get the Word Out
 
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
 width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
-
 
 
 Help spread the word about GMOD Americas 2011 events by posting and
@@ -441,7 +400,7 @@ the volume of data that have and will continue to get in the future.
 GMOD is an excellent option for helping these groups get a grip on and
 exploit their data.
 
-# <span id="See_Also" class="mw-headline">See Also</span>
+# See Also
 
 - [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") - The previous
   GMOD event.
@@ -455,87 +414,6 @@ exploit their data.
   next [GMOD meeting](Meetings "Meetings")
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Americas_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 00:41 on 15 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">182,172 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

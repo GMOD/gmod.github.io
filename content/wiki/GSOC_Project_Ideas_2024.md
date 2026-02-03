@@ -1,23 +1,7 @@
 ---
 title: "GSOC Project Ideas 2024"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GSOC Project Ideas 2024</span>
-
-
-
-
-
-
-
+# GSOC Project Ideas 2024
 
 
 *Got an idea for [GSOC 2024](GSoC "GSoC")?'*
@@ -42,29 +26,23 @@ self-motivation are great traits for open-source programmers.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Proposed
   project ideas for 2024</span>](#Proposed_project_ideas_for_2024)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">MP-BioPath
+  - [MP-BioPath
     Perturation Analysis / Stein
-    Lab</span>](#MP-BioPath_Perturation_Analysis_.2F_Stein_Lab)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Pathway
+    Lab](#MP-BioPath_Perturation_Analysis_.2F_Stein_Lab)
+  - [Pathway
     Reasoning with LLM / Stein
-    Lab</span>](#Pathway_Reasoning_with_LLM_.2F_Stein_Lab)
-- [<span class="tocnumber">2</span> <span class="toctext">Project
-  template</span>](#Project_template)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Template:
+    Lab](#Pathway_Reasoning_with_LLM_.2F_Stein_Lab)
+- [Project
+  template](#Project_template)
+  - [Template:
     Project Idea Name (Project Name/Lab
-    Name)</span>](#Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29)
+    Name)](#Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29)
 
 
+# Proposed project ideas for 2024
 
-# <span id="Proposed_project_ideas_for_2024" class="mw-headline">Proposed project ideas for 2024</span>
-
-## <span id="MP-BioPath_Perturation_Analysis_.2F_Stein_Lab" class="mw-headline">MP-BioPath Perturation Analysis / Stein Lab</span>
+## MP-BioPath Perturation Analysis / Stein Lab
 
 - *Brief explanation:* MP-BioPath is a computational tool designed to
   predict the effects of perturbations on biological pathways. Utilizing
@@ -89,7 +67,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175-hour approximately 8 weeks
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>
 
-## <span id="Pathway_Reasoning_with_LLM_.2F_Stein_Lab" class="mw-headline">Pathway Reasoning with LLM / Stein Lab</span>
+## Pathway Reasoning with LLM / Stein Lab
 
 - *Brief explanation:* Reactome houses a meticulously curated repository
   of human biological pathways. Our current initiative focuses on
@@ -114,9 +92,9 @@ self-motivation are great traits for open-source programmers.
 - *Mentors:* Adam Wright \<adam.wright@oicr.on.ca\>, Wei Jiao
   \<wei.jiao@oicr.on.ca\>
 
-# <span id="Project_template" class="mw-headline">Project template</span>
+# Project template
 
-## <span id="Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29" class="mw-headline">Template: Project Idea Name (Project Name/Lab Name)</span>
+## Template: Project Idea Name (Project Name/Lab Name)
 
 - *Brief explanation:* Brief description of the idea, including any
   relevant links, etc.
@@ -131,84 +109,3 @@ self-motivation are great traits for open-source programmers.
   weeks long and no longer than 12 weeks.
 - *Mentors:* name + contact details of the lead mentor, name + contact
   details of 1 or 2 backup mentors.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GSOC_Project_Ideas_2024" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:41 on 12 February
-  2024.</span>
-<!-- - <span id="footer-info-viewcount">850 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

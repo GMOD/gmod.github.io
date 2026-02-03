@@ -1,23 +1,7 @@
 ---
 title: "Bioperl Pipeline"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Bioperl Pipeline</span>
-
-
-
-
-
-
-
+# Bioperl Pipeline
 
 
 > The item described in this page is not (or is no longer) supported by
@@ -30,24 +14,17 @@ See <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a>,
 workflow and analysis packages.
 
 
-## Contents
+  Description](#Description)
+- [Requirements](#Requirements)
+- [Getting the
+  Software](#Getting_the_Software)
+- [Mailing
+  List](#Mailing_List)
+- [Affiliated
+  projects](#Affiliated_projects)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Description</span>](#Description)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Requirements</span>](#Requirements)
-- [<span class="tocnumber">3</span> <span class="toctext">Getting the
-  Software</span>](#Getting_the_Software)
-- [<span class="tocnumber">4</span> <span class="toctext">Mailing
-  List</span>](#Mailing_List)
-- [<span class="tocnumber">5</span> <span class="toctext">Affiliated
-  projects</span>](#Affiliated_projects)
-
-
-
-## <span id="Description" class="mw-headline">Description</span>
+## Description
 
 The <a href="http://www.genome.org/cgi/content/full/13/8/1904"
 class="external text" rel="nofollow">Bioperl pipeline framework</a> is a
@@ -71,7 +48,7 @@ the EnsEMBL Pipeline system.
   system we have develop to ameliorate some of the complexities involve
   in setting up.
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 - <a href="http://www.perl.com/" class="external text" rel="nofollow">Perl
   5.6 or later</a>
@@ -83,7 +60,7 @@ the EnsEMBL Pipeline system.
   - bioperl-live
   - bioperl-run
 
-## <span id="Getting_the_Software" class="mw-headline">Getting the Software</span>
+## Getting the Software
 
 You can download the CVS version of bioperl-pipeline from
 <a href="http://code.open-bio.org/cgi/viewcvs.cgi/"
@@ -93,14 +70,14 @@ class="external text" rel="nofollow">Bioperl CVS</a>
 
   
 
-## <span id="Mailing_List" class="mw-headline">Mailing List</span>
+## Mailing List
 
 <a href="http://bioperl.org/mailman/listinfo/bioperl-pipeline"
 class="external text" rel="nofollow">Mailing list</a>
 
   
 
-## <span id="Affiliated_projects" class="mw-headline">Affiliated projects</span>
+## Affiliated projects
 
 <a href="http://www.maizegdb.org/" class="external text"
 rel="nofollow">Maize annotation project</a>
@@ -109,90 +86,3 @@ rel="nofollow">Maize annotation project</a>
 rel="nofollow">system registry cleaner</a>
 
 [ParameciumDB](ParameciumDB "ParameciumDB")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Unsupported](Category%253AUnsupported "Category%253AUnsupported")
-- [BioPerl](Category%253ABioPerl "Category%253ABioPerl")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Bioperl_Pipeline" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 12:53 on 29 December
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">31,395 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

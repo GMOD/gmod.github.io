@@ -1,24 +1,7 @@
 ---
 title: "InterMine"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">InterMine</span>
-
-
-
-
-
-
-
-
+# InterMine
 
 
 <img
@@ -26,15 +9,12 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="InterMine logo" />
 
 
-
 Status
-
 
 
 - Mature release
 - Development: active
 - Support: active
-
 
 
 Licence
@@ -46,18 +26,11 @@ srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/ima
 width="40" height="39" alt="} is open source" /></a>
 
 
-
 <a href="http://opensource.org/licenses/LGPL-3.0" class="external text"
 rel="nofollow">LGPL</a>
 
 
-
 Resources
-
-
-
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -96,82 +69,3 @@ rel="nofollow">LGPL</a> <span class="smwsearch">[+](Special%253ASearchByProperty
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Database tools <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Database-20tools")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Java <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Java "Special%253ASearchByProperty/Written-20in-20language/Java")</span>, Python <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Python "Special%253ASearchByProperty/Written-20in-20language/Python")</span> and JavaScript <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/JavaScript "Special%253ASearchByProperty/Written-20in-20language/JavaScript")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [InterMine#https://github.com/intermine/intermine.git](InterMine#https:.2F.2Fgithub.com.2Fintermine.2Fintermine.git "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23https%253A-2F-2Fgithub.com-2Fintermine-2Fintermine.git "Special%253ASearchByProperty/Has-20subobject/InterMine-23https%253A-2F-2Fgithub.com-2Fintermine-2Fintermine.git")</span>, [InterMine#http://www.intermine.org](InterMine#http:.2F.2Fwww.intermine.org "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.intermine.org "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.intermine.org")</span>, [InterMine#http://www.flymine.org](InterMine#http:.2F.2Fwww.flymine.org "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.flymine.org "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.flymine.org")</span>, [InterMine#http://yeastmine.yeastgenome.org/](InterMine#http:.2F.2Fyeastmine.yeastgenome.org.2F "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fyeastmine.yeastgenome.org-2F "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fyeastmine.yeastgenome.org-2F")</span>, [InterMine#http://www.mousemine.org/](InterMine#http:.2F.2Fwww.mousemine.org.2F "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.mousemine.org-2F "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.mousemine.org-2F")</span>, [InterMine#http://ratmine.mcw.edu/](InterMine#http:.2F.2Fratmine.mcw.edu.2F "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fratmine.mcw.edu-2F "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fratmine.mcw.edu-2F")</span>, [InterMine#http://zmine.zfin.org/](InterMine#http:.2F.2Fzmine.zfin.org.2F "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fzmine.zfin.org-2F "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fzmine.zfin.org-2F")</span>, [InterMine#http://www.wormbase.org/tools/wormmine](InterMine#http:.2F.2Fwww.wormbase.org.2Ftools.2Fwormmine "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.wormbase.org-2Ftools-2Fwormmine "Special%253ASearchByProperty/Has-20subobject/InterMine-23http%253A-2F-2Fwww.wormbase.org-2Ftools-2Fwormmine")</span>, [InterMine](InterMine#_35f0a4dfb21d901063f9534114909319 "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23_35f0a4dfb21d901063f9534114909319 "Special%253ASearchByProperty/Has-20subobject/InterMine-23 35f0a4dfb21d901063f9534114909319")</span>, [InterMine](InterMine#_44c0411f669b0bc7ee3599b3e40bf478 "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23_44c0411f669b0bc7ee3599b3e40bf478 "Special%253ASearchByProperty/Has-20subobject/InterMine-23 44c0411f669b0bc7ee3599b3e40bf478")</span>, [InterMine](InterMine#_23c1d6f8e2fcb6320697d1877b352a27 "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23_23c1d6f8e2fcb6320697d1877b352a27 "Special%253ASearchByProperty/Has-20subobject/InterMine-23 23c1d6f8e2fcb6320697d1877b352a27")</span>, [InterMine](InterMine#_19ca3e5527b4a7801df22e02220506b6 "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23_19ca3e5527b4a7801df22e02220506b6 "Special%253ASearchByProperty/Has-20subobject/InterMine-23 19ca3e5527b4a7801df22e02220506b6")</span> and [InterMine](InterMine#_1974840c5524f47e32e34fbc09fa67f4 "InterMine") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20subobject/InterMine-23_1974840c5524f47e32e34fbc09fa67f4 "Special%253ASearchByProperty/Has-20subobject/InterMine-23 1974840c5524f47e32e34fbc09fa67f4")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/InterMine" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:36 on 6 November
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">294,004 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

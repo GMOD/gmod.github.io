@@ -1,9 +1,7 @@
 ---
 title: "GMOD Malaysia 2014/Chado Tutorial"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GMOD Malaysia 2014/Chado Tutorial</span>
+# GMOD Malaysia 2014/Chado Tutorial
 
 This <a href="../Chado" class="mw-redirect" title="Chado">Chado</a>
 tutorial was presented by [Scott Cain](../User%253AScott "User%253AScott") at
@@ -24,180 +22,131 @@ concepts, and then provides an overview of Chado's design and
 architecture, and then goes into detail about how to use a Chado
 database.
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Theory</span>](#Theory)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Introduction</span>](#Introduction)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">Database
-      Terminology</span>](#Database_Terminology)
-      - [<span class="tocnumber">1.1.1.1</span>
-        <span class="toctext">What's a
-        database?</span>](#What.27s_a_database.3F)
-      - [<span class="tocnumber">1.1.1.2</span>
-        <span class="toctext">SQL</span>](#SQL)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Why
-    Chado?</span>](#Why_Chado.3F)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Chado
-    Architecture: Modules</span>](#Chado_Architecture:_Modules)
-    - [<span class="tocnumber">1.3.1</span>
-      <span class="toctext">Extensible</span>](#Extensible)
-    - [<span class="tocnumber">1.3.2</span>
-      <span class="toctext">Plus</span>](#Plus)
-    - [<span class="tocnumber">1.3.3</span> <span class="toctext">Module
-      Caveats</span>](#Module_Caveats)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Exploring
-    the schema</span>](#Exploring_the_schema)
-    - [<span class="tocnumber">1.4.1</span>
-      <span class="toctext">Sequence Module</span>](#Sequence_Module)
-      - [<span class="tocnumber">1.4.1.1</span>
-        <span class="toctext">Features</span>](#Features)
-    - [<span class="tocnumber">1.4.2</span> <span class="toctext">CV
+  Theory](#Theory)
+  - [Introduction](#Introduction)
+    - [Database
+      Terminology](#Database_Terminology)
+      - [What's a
+        database?](#What.27s_a_database.3F)
+      - [SQL](#SQL)
+  - [Why
+    Chado?](#Why_Chado.3F)
+  - [Chado
+    Architecture: Modules](#Chado_Architecture:_Modules)
+    - [Extensible](#Extensible)
+    - [Plus](#Plus)
+    - [Module
+      Caveats](#Module_Caveats)
+  - [Exploring
+    the schema](#Exploring_the_schema)
+    - [Sequence Module](#Sequence_Module)
+      - [Features](#Features)
+    - [CV
       (Controlled Vocabularies)
-      Module</span>](#CV_.28Controlled_Vocabularies.29_Module)
-      - [<span class="tocnumber">1.4.2.1</span>
-        <span class="toctext">Controlled
-        Vocabularies</span>](#Controlled_Vocabularies)
-      - [<span class="tocnumber">1.4.2.2</span>
-        <span class="toctext">Ontologies</span>](#Ontologies)
-      - [<span class="tocnumber">1.4.2.3</span>
-        <span class="toctext">CVs and Ontologies in
-        Chado</span>](#CVs_and_Ontologies_in_Chado)
-        - [<span class="tocnumber">1.4.2.3.1</span>
-          <span class="toctext">Data Integrity</span>](#Data_Integrity)
-        - [<span class="tocnumber">1.4.2.3.2</span>
-          <span class="toctext">Data Portability and
-          Standardization</span>](#Data_Portability_and_Standardization)
-        - [<span class="tocnumber">1.4.2.3.3</span>
-          <span class="toctext">Complexity</span>](#Complexity)
-    - [<span class="tocnumber">1.4.3</span>
-      <span class="toctext">Opening our sample
-      database</span>](#Opening_our_sample_database)
-    - [<span class="tocnumber">1.4.4</span> <span class="toctext">Our
-      first example query</span>](#Our_first_example_query)
-    - [<span class="tocnumber">1.4.5</span>
-      <span class="toctext">General Module</span>](#General_Module)
-      - [<span class="tocnumber">1.4.5.1</span>
-        <span class="toctext">IDs</span>](#IDs)
-        - [<span class="tocnumber">1.4.5.1.1</span>
-          <span class="toctext">Public IDs</span>](#Public_IDs)
-        - [<span class="tocnumber">1.4.5.1.2</span>
-          <span class="toctext">Private IDs</span>](#Private_IDs)
-      - [<span class="tocnumber">1.4.5.2</span>
-        <span class="toctext">IDs in Chado</span>](#IDs_in_Chado)
-    - [<span class="tocnumber">1.4.6</span>
-      <span class="toctext">Properties</span>](#Properties)
-      - [<span class="tocnumber">1.4.6.1</span>
-        <span class="toctext">Relationships</span>](#Relationships)
-      - [<span class="tocnumber">1.4.6.2</span>
-        <span class="toctext">Locations</span>](#Locations)
-        - [<span class="tocnumber">1.4.6.2.1</span>
-          <span class="toctext">Interbase
-          Coordinates</span>](#Interbase_Coordinates)
-        - [<span class="tocnumber">1.4.6.2.2</span>
-          <span class="toctext">Location
-          Chains</span>](#Location_Chains)
-        - [<span class="tocnumber">1.4.6.2.3</span>
-          <span class="toctext">featureloc
-          Table</span>](#featureloc_Table)
-      - [<span class="tocnumber">1.4.6.3</span>
-        <span class="toctext">Example: Gene</span>](#Example:_Gene)
-      - [<span class="tocnumber">1.4.6.4</span>
-        <span class="toctext">Example: Computational
-        Analysis</span>](#Example:_Computational_Analysis)
-      - [<span class="tocnumber">1.4.6.5</span>
-        <span class="toctext">Other Feature
-        Annotations</span>](#Other_Feature_Annotations)
-      - [<span class="tocnumber">1.4.6.6</span>
-        <span class="toctext">Extending Chado: Properties tables and new
-        modules</span>](#Extending_Chado:_Properties_tables_and_new_modules)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Practice</span>](#Practice)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">PostgreSQL</span>](#PostgreSQL)
-      - [<span class="tocnumber">2.1.1.1</span>
-        <span class="toctext">Edit config
-        files</span>](#Edit_config_files)
-      - [<span class="tocnumber">2.1.1.2</span>
-        <span class="toctext">Create a gmod
-        user</span>](#Create_a_gmod_user)
-      - [<span class="tocnumber">2.1.1.3</span>
-        <span class="toctext">Installing DBIx::DBStag by
-        hand</span>](#Installing_DBIx::DBStag_by_hand)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">BioPerl</span>](#BioPerl)
-    - [<span class="tocnumber">2.1.3</span> <span class="toctext">Let's
-      Go!</span>](#Let.27s_Go.21)
-    - [<span class="tocnumber">2.1.4</span>
-      <span class="toctext">Environment
-      Variables</span>](#Environment_Variables)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Installing
-    Chado</span>](#Installing_Chado)
-    - [<span class="tocnumber">2.2.1</span> <span class="toctext">Saving
+      Module](#CV_.28Controlled_Vocabularies.29_Module)
+      - [Controlled
+        Vocabularies](#Controlled_Vocabularies)
+      - [Ontologies](#Ontologies)
+      - [CVs and Ontologies in
+        Chado](#CVs_and_Ontologies_in_Chado)
+        - [Data Integrity](#Data_Integrity)
+        - [Data Portability and
+          Standardization](#Data_Portability_and_Standardization)
+        - [Complexity](#Complexity)
+    - [Opening our sample
+      database](#Opening_our_sample_database)
+    - [Our
+      first example query](#Our_first_example_query)
+    - [General Module](#General_Module)
+      - [IDs](#IDs)
+        - [Public IDs](#Public_IDs)
+        - [Private IDs](#Private_IDs)
+      - [IDs in Chado](#IDs_in_Chado)
+    - [Properties](#Properties)
+      - [Relationships](#Relationships)
+      - [Locations](#Locations)
+        - [Interbase
+          Coordinates](#Interbase_Coordinates)
+        - [Location
+          Chains](#Location_Chains)
+        - [featureloc
+          Table](#featureloc_Table)
+      - [Example: Gene](#Example:_Gene)
+      - [Example: Computational
+        Analysis](#Example:_Computational_Analysis)
+      - [Other Feature
+        Annotations](#Other_Feature_Annotations)
+      - [Extending Chado: Properties tables and new
+        modules](#Extending_Chado:_Properties_tables_and_new_modules)
+- [Practice](#Practice)
+  - [Prerequisites](#Prerequisites)
+    - [PostgreSQL](#PostgreSQL)
+      - [Edit config
+        files](#Edit_config_files)
+      - [Create a gmod
+        user](#Create_a_gmod_user)
+      - [Installing DBIx::DBStag by
+        hand](#Installing_DBIx::DBStag_by_hand)
+    - [BioPerl](#BioPerl)
+    - [Let's
+      Go!](#Let.27s_Go.21)
+    - [Environment
+      Variables](#Environment_Variables)
+  - [Installing
+    Chado](#Installing_Chado)
+    - [Saving
       your progress to this
-      point</span>](#Saving_your_progress_to_this_point)
-    - [<span class="tocnumber">2.2.2</span> <span class="toctext">A Note
-      about Redos</span>](#A_Note_about_Redos)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Preparing
-    GFF data for loading</span>](#Preparing_GFF_data_for_loading)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">Working with Large GFF
-      files</span>](#Working_with_Large_GFF_files)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">Loading GFF3</span>](#Loading_GFF3)
-    - [<span class="tocnumber">2.3.3</span>
-      <span class="toctext">Capturing the output to check for
-      problems</span>](#Capturing_the_output_to_check_for_problems)
-    - [<span class="tocnumber">2.3.4</span> <span class="toctext">Really
-      loading data</span>](#Really_loading_data)
-      - [<span class="tocnumber">2.3.4.1</span>
-        <span class="toctext">Try again</span>](#Try_again)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Loading
-    other data</span>](#Loading_other_data)
-- [<span class="tocnumber">3</span> <span class="toctext">Chado for
+      point](#Saving_your_progress_to_this_point)
+    - [A Note
+      about Redos](#A_Note_about_Redos)
+  - [Preparing
+    GFF data for loading](#Preparing_GFF_data_for_loading)
+    - [Working with Large GFF
+      files](#Working_with_Large_GFF_files)
+    - [Loading GFF3](#Loading_GFF3)
+    - [Capturing the output to check for
+      problems](#Capturing_the_output_to_check_for_problems)
+    - [Really
+      loading data](#Really_loading_data)
+      - [Try again](#Try_again)
+  - [Loading
+    other data](#Loading_other_data)
+- [Chado for
   Expression, Genotype, Phenotype, and Natural
-  Diversity</span>](#Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Expression</span>](#Expression)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">What
+  Diversity](#Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity)
+  - [Expression](#Expression)
+    - [What
       defines an expression
-      pattern?</span>](#What_defines_an_expression_pattern.3F)
-    - [<span class="tocnumber">3.1.2</span> <span class="toctext">How
+      pattern?](#What_defines_an_expression_pattern.3F)
+    - [How
       does Chado deal with this
-      variety?</span>](#How_does_Chado_deal_with_this_variety.3F)
-    - [<span class="tocnumber">3.1.3</span>
-      <span class="toctext">FlyBase Example</span>](#FlyBase_Example)
-    - [<span class="tocnumber">3.1.4</span> <span class="toctext">Chado
-      Allows</span>](#Chado_Allows)
-    - [<span class="tocnumber">3.1.5</span> <span class="toctext">Table:
-      expression</span>](#Table:_expression)
-    - [<span class="tocnumber">3.1.6</span> <span class="toctext">Table:
-      expression_cvterm</span>](#Table:_expression_cvterm)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Genotype</span>](#Genotype)
-    - [<span class="tocnumber">3.2.1</span> <span class="toctext">Table:
-      genotype</span>](#Table:_genotype)
-    - [<span class="tocnumber">3.2.2</span> <span class="toctext">Table:
-      feature_genotype</span>](#Table:_feature_genotype)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Environment</span>](#Environment)
-    - [<span class="tocnumber">3.3.1</span> <span class="toctext">Table:
-      environment</span>](#Table:_environment)
-    - [<span class="tocnumber">3.3.2</span> <span class="toctext">Table:
-      environment_cvterm</span>](#Table:_environment_cvterm)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Phenotype,
+      variety?](#How_does_Chado_deal_with_this_variety.3F)
+    - [FlyBase Example](#FlyBase_Example)
+    - [Chado
+      Allows](#Chado_Allows)
+    - [Table:
+      expression](#Table:_expression)
+    - [Table:
+      expression_cvterm](#Table:_expression_cvterm)
+  - [Genotype](#Genotype)
+    - [Table:
+      genotype](#Table:_genotype)
+    - [Table:
+      feature_genotype](#Table:_feature_genotype)
+  - [Environment](#Environment)
+    - [Table:
+      environment](#Table:_environment)
+    - [Table:
+      environment_cvterm](#Table:_environment_cvterm)
+  - [Phenotype,
     Natural Diversity and Atlas
-    Support</span>](#Phenotype.2C_Natural_Diversity_and_Atlas_Support)
+    Support](#Phenotype.2C_Natural_Diversity_and_Atlas_Support)
 
-## <span id="Theory" class="mw-headline">Theory</span>
+## Theory
 
-### <span id="Introduction" class="mw-headline">Introduction</span>
+### Introduction
 
-#### <span id="Database_Terminology" class="mw-headline">Database Terminology</span>
+#### Database Terminology
 
 Or six years of school in 15 minutes or less.
 
@@ -205,7 +154,7 @@ Or six years of school in 15 minutes or less.
   Databases](../A_Brief_Guide_to_Databases "A Brief Guide to Databases")
 - [Chado Tables](../Chado_Tables "Chado Tables")
 
-##### <span id="What.27s_a_database.3F" class="mw-headline">What's a [database](../Databases_and_GMOD "Databases and GMOD")?</span>
+##### What's a [database](../Databases_and_GMOD "Databases and GMOD")?
 
 - Chado is a [schema](../Glossary#Schema "Glossary"), a database
   design - a blueprint for a database containing genomic data
@@ -220,7 +169,7 @@ Or six years of school in 15 minutes or less.
     - A web site with database driven content, e.g., FlyBase
     - Schema + DBMS + Data
 
-##### <span id="SQL" class="mw-headline">SQL</span>
+##### SQL
 
 SQL is a standardized query language for defining and manipulating
 databases. Chado uses it. SQL is supported by all major DBMSs.
@@ -239,7 +188,7 @@ You _can_ do basics with Chado without knowing SQL. Many common tasks
 already have scripts written for them. However, as you get more into
 using Chado, you will find that a working knowledge of SQL is necessary.
 
-### <span id="Why_Chado.3F" class="mw-headline">Why Chado?</span>
+### Why Chado?
 
 - **Integration**
   - Supports many types of data, integrates with many tools
@@ -261,7 +210,7 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 - **Great Community of Support**
   - [Mailing List](../GMOD_Mailing_Lists "GMOD Mailing Lists")
 
-### <span id="Chado_Architecture:_Modules" class="mw-headline">Chado Architecture: Modules</span>
+### Chado Architecture: Modules
 
 The Chado schema is built with a set of _modules_. A Chado module is a
 set of database tables and relationships that stores information about a
@@ -300,7 +249,7 @@ more _foreign keys_ linking modules.
   the results of a computational analysis can be interpreted or
   described as a sequence feature.
 
-#### <span id="Extensible" class="mw-headline">Extensible</span>
+#### Extensible
 
 These modules have been contributed to Chado by users who developed
 them.
@@ -313,7 +262,7 @@ them.
   geolocation, phenotype, genotype
 - Plus property tables in many modules.
 
-#### <span id="Plus" class="mw-headline">Plus</span>
+#### Plus
 
 - [Audit](../Chado_Audit_Module "Chado Audit Module") - Database audit
   trail
@@ -326,7 +275,7 @@ them.
 - [Phylogeny](../Chado_Phylogeny_Module "Chado Phylogeny Module") -
   Organisms and phylogenetic trees
 
-#### <span id="Module_Caveats" class="mw-headline">Module Caveats</span>
+#### Module Caveats
 
 All modules are _blessed_, but some modules are _more blessed_ than
 others.
@@ -357,7 +306,7 @@ uneven. See the
 class="external text" rel="nofollow">2008 GMOD Community survey</a> for
 what gets used.
 
-### <span id="Exploring_the_schema" class="mw-headline">Exploring the schema</span>
+### Exploring the schema
 
 Rather than simply listing out the modules and what is stored in them,
 we'll take a data-centric view and imagine what we want to store in our
@@ -390,13 +339,13 @@ types. In the Chado world these are known as 'features'.
 This brings us to the Sequence Module, which contains the central
 feature table.
 
-#### <span id="Sequence_Module" class="mw-headline">Sequence Module</span>
+#### Sequence Module
 
 [Sequence Module](../Chado_Sequence_Module "Chado Sequence Module")
 
 The sequence module is used to manage genomic features.
 
-##### <span id="Features" class="mw-headline">Features</span>
+##### Features
 
 Chado defines a _feature_ to be a region of a biological polymer
 (typically a DNA, RNA, or a polypeptide molecule) or an aggregate of
@@ -423,7 +372,7 @@ disagreement of the definition of some of these terms.
 So solve this, all features are linked to a specific type in a
 controlled vocabulary or ontology. These are stored in the cv module.
 
-#### <span id="CV_.28Controlled_Vocabularies.29_Module" class="mw-headline">CV (Controlled Vocabularies) Module</span>
+#### CV (Controlled Vocabularies) Module
 
 <a href="http://gmod.org/Chado_CV_Module" class="external text"
 rel="nofollow">Controlled Vocabulary Module Tables</a>
@@ -431,7 +380,7 @@ rel="nofollow">Controlled Vocabulary Module Tables</a>
 The CV module implements _controlled vocabularies_ and their more
 complex cousins, _ontologies_.
 
-##### <span id="Controlled_Vocabularies" class="mw-headline">Controlled Vocabularies</span>
+##### Controlled Vocabularies
 
 A _controlled vocabulary_ (CV) is a list of terms from which a value
 must come. CVs are widely used in all databases, not just biological
@@ -447,7 +396,7 @@ title="ZFIN&#39;s Assay Type CV"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6d/ZfinAssayTypePullDown.png" width="231"
 height="260" alt="ZFIN&#39;s Assay Type CV" /></a> |
 
-##### <span id="Ontologies" class="mw-headline">Ontologies</span>
+##### Ontologies
 
 Controlled vocabularies are simple lists of terms. _Ontologies_ are
 terms plus rules and relationships between the terms. The Gene Ontology
@@ -467,7 +416,7 @@ rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" 
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png" width="1067"
 height="604" alt="FlyBaseCVTermViewer.png" /></a> |
 
-##### <span id="CVs_and_Ontologies_in_Chado" class="mw-headline">CVs and Ontologies in Chado</span>
+##### CVs and Ontologies in Chado
 
 [Chado CV Module](../Chado_CV_Module "Chado CV Module")
 
@@ -483,7 +432,7 @@ list.)
 Every other module depends on on the CV module. CVs and ontologies are
 central to Chado's design philosophy. Why?
 
-###### <span id="Data_Integrity" class="mw-headline">Data Integrity</span>
+###### Data Integrity
 
 Using CVs (and enforcing their use as Chado does) ensures that your data
 stays consistent. For example, in the most simple case it prevents your
@@ -491,7 +440,7 @@ database from using several different values all to mean the same thing
 (e.g., "unknown", "unspecified", "missing", "other", " ",...), and it
 prevents misspellings ("sagital" instead of "sagittal") and typos.
 
-###### <span id="Data_Portability_and_Standardization" class="mw-headline">Data Portability and Standardization</span>
+###### Data Portability and Standardization
 
 If you are studying developmental processes and you use the Gene
 Ontology's _biological process_ terms then your data can be easily
@@ -504,7 +453,7 @@ Using an established ontology when one exists usually involves some
 compromises, but it greatly increases the usability of your data to
 others (and to yourself).
 
-###### <span id="Complexity" class="mw-headline">Complexity</span>
+###### Complexity
 
 Controlled vocabularies are not particularly complex - they are just
 lists of terms. Ontologies, however, can be very complex, as shown by
@@ -539,11 +488,11 @@ the description of these 3 tables:
 
 We won't go into any more detail on it here.
 
-#### <span id="Opening_our_sample_database" class="mw-headline">Opening our sample database</span>
+#### Opening our sample database
 
     $ psql chado
 
-#### <span id="Our_first_example_query" class="mw-headline">Our first example query</span>
+#### Our first example query
 
 Up to this point we've seen how to store features using the feature
 table as well as rigidly define what types of things they are using the
@@ -582,20 +531,20 @@ one column per ID type in feature would be a bad idea, since any given
 feature could have dozens of different identifiers from different data
 sources. The General Module helps resolve this.
 
-#### <span id="General_Module" class="mw-headline">General Module</span>
+#### General Module
 
 The General module is about identifying things within this DB to the
 outside world, and identifying things from the outside world (i.e.,
 other databases) within this database.
 
-##### <span id="IDs" class="mw-headline">IDs</span>
+##### IDs
 
 [General module tables](../Chado_General_Module "Chado General Module")
 
 Biological databases have _public_ and _private_ IDs and they are
 usually different things.
 
-###### <span id="Public_IDs" class="mw-headline">Public IDs</span>
+###### Public IDs
 
 These are shown on web pages and in publications. These are also known
 as _accession numbers_.
@@ -608,7 +557,7 @@ as _accession numbers_.
 Public IDs tend to be _alternate keys_ inside the database: they do
 uniquely identify objects in the database.
 
-###### <span id="Private_IDs" class="mw-headline">Private IDs</span>
+###### Private IDs
 
 These are used inside the database and are not meant to be shown or
 published. Tend to be long integers. There are many more private IDs
@@ -618,7 +567,7 @@ Private IDs are used for _primary keys_ and _foreign keys_.
 
 Most DBMSs have built-in mechanisms for generating private IDs.
 
-##### <span id="IDs_in_Chado" class="mw-headline">IDs in Chado</span>
+##### IDs in Chado
 
 The [General module](../Chado_General_Module "Chado General Module")
 defines _public_ IDs of
@@ -634,7 +583,7 @@ class="external text" rel="nofollow">dbxref table</a>.
 
 In Chado every table (in every module) defines its own private IDs.
 
-#### <span id="Properties" class="mw-headline">Properties</span>
+#### Properties
 
 So far we've only seen very basic information for each feature stored.
 Because the feature table was designed to be very generic and store all
@@ -664,7 +613,7 @@ many of the features we're storing have some sort of relationship to one
 another (such as genes and their polypeptide end-products), our schema
 needs to accommodate this.
 
-##### <span id="Relationships" class="mw-headline">Relationships</span>
+##### Relationships
 
 Relationships between features are stored in the <a
 href="Chado_Sequence_Module#Table:_feature_relationship"
@@ -693,7 +642,7 @@ there's a better way to handle locatable features, since a relationship
 entry alone wouldn't actually say WHERE the feature was located, only
 that it was.
 
-##### <span id="Locations" class="mw-headline">Locations</span>
+##### Locations
 
 Location describes where a feature is/comes from relative to another
 feature. Some features such as chromosomes are not localized in sequence
@@ -717,7 +666,7 @@ href="Chado_Sequence_Module#Feature_Locations"
 class="external text" rel="nofollow">Feature Locations</a>. This
 explanation is excerpted from that.)
 
-###### <span id="Interbase_Coordinates" class="mw-headline">Interbase Coordinates</span>
+###### Interbase Coordinates
 
 This is covered in more detail on the [GMOD web
 site](../Introduction_to_Chado#Interbase_Coordinates "Introduction to Chado").
@@ -735,7 +684,7 @@ Interbase coordinates were chosen over the base-oriented coordinate
 system because the math is easier, and it cleanly supports zero-length
 features such as splice sites and insertion points.
 
-###### <span id="Location_Chains" class="mw-headline">Location Chains</span>
+###### Location Chains
 
 Chado supports _location chains_. For example, locating an exon relative
 to a contig that is itself localized relative to a chromosome. The
@@ -753,7 +702,7 @@ domains may be localized relative to polypeptide features, themselves
 localized to a transcript (or to the genome, as is more common). Chains
 may also span sequence alignments.
 
-###### <span id="featureloc_Table" class="mw-headline">featureloc Table</span>
+###### featureloc Table
 
 Feature location information is stored in the <a
 href="Chado_Sequence_Module#Table:_featureloc"
@@ -763,7 +712,7 @@ class="external text" rel="nofollow">featureloc table</a>.
 | ----------------- | ---------- | ------------- | ---- | ---- | --- |
 | featureloc_id     | feature_id | srcfeature_id | fmin | rank | ... |
 
-##### <span id="Example:_Gene" class="mw-headline">Example: Gene</span>
+##### Example: Gene
 
 **Note:** This example and some of the figures are extracted from
 _<a href="Image:A_Chado_Case_Study.pdf"
@@ -1026,7 +975,7 @@ relationships between them?
 </tbody>
 </table>
 
-##### <span id="Example:_Computational_Analysis" class="mw-headline">Example: Computational Analysis</span>
+##### Example: Computational Analysis
 
 **Note:** This is example is based on an example by Scott Cain from an
 earlier <a
@@ -1049,7 +998,7 @@ height="322" alt="CompAnalysisFeature.png" /></a>
 Every horizontal line becomes a record in the feature table, and every
 vertical line becomes a record in the feature_relationship table.
 
-##### <span id="Other_Feature_Annotations" class="mw-headline">Other Feature Annotations</span>
+##### Other Feature Annotations
 
 Link to any feature via <a
 href="Chado_Sequence_Module#Table:_feature"
@@ -1068,7 +1017,7 @@ class="external text" rel="nofollow">feature_id</a>:
   href="Chado_Sequence_Module#Table:_feature_pub"
   class="external text" rel="nofollow">feature_pub</a>
 
-##### <span id="Extending_Chado:_Properties_tables_and_new_modules" class="mw-headline">Extending Chado: Properties tables and new modules</span>
+##### Extending Chado: Properties tables and new modules
 
 Chado was built to be easily extensible. New functionality can be added
 by adding new modules. Both the Mage and the Stock modules were added
@@ -1089,17 +1038,17 @@ extremely extensible, but they do so at a cost.
 - It is more work to enforce constraints on data in properties tables
   then in regular columns.
 
-## <span id="Practice" class="mw-headline">Practice</span>
+## Practice
 
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 Using data from [MAKER](../MAKER.1 "MAKER").
 
-#### <span id="PostgreSQL" class="mw-headline">PostgreSQL</span>
+#### PostgreSQL
 
 Already installed PostgreSQL 8.4 via apt-get.
 
-##### <span id="Edit_config_files" class="mw-headline">Edit config files</span>
+##### Edit config files
 
 ```enter
   sudo su
@@ -1121,7 +1070,7 @@ database server:
   exit # to get out of su
 ```
 
-##### <span id="Create_a_gmod_user" class="mw-headline">Create a gmod user</span>
+##### Create a gmod user
 
 Normally, we'd have to switch to the postgres user to create a new
 database user, but the ubuntu user is already a superuser. Create a new
@@ -1130,9 +1079,9 @@ user named "gmod":
       createuser gmod
         Shall the new role be a superuser? (y/n) y
 
-##### <span id="Installing_DBIx::DBStag_by_hand" class="mw-headline">Installing <a href="http://search.cpan.org/perldoc?DBIx::DBStag"
+##### Installing <a href="http://search.cpan.org/perldoc?DBIx::DBStag"
 
-class="external text" rel="nofollow">DBIx::DBStag</a> by hand</span>
+class="external text" rel="nofollow">DBIx::DBStag</a> by hand
 
 In the previous course, this was installed by hand, and then in a
 subsequent course it was pre-installed; now were back to installing it by
@@ -1144,13 +1093,13 @@ CPAN when using `sudo cpan` but is easy to install "by hand" or using
      cpan
      cpan> force install DBIx::DBStag
 
-#### <span id="BioPerl" class="mw-headline">[BioPerl](../BioPerl "BioPerl")</span>
+#### [BioPerl](../BioPerl "BioPerl")
 
 Version 1.6 already installed.
 
-#### <span id="Let.27s_Go.21" class="mw-headline">Let's Go!</span>
+#### Let's Go!
 
-#### <span id="Environment_Variables" class="mw-headline">Environment Variables</span>
+#### Environment Variables
 
 in `~/.bashrc` add:
 
@@ -1165,7 +1114,7 @@ and source the profile:
   source ~/.bashrc
 ```
 
-### <span id="Installing_Chado" class="mw-headline">Installing Chado</span>
+### Installing Chado
 
 ```enter
   cd ~/sources/chado/chado/
@@ -1195,9 +1144,6 @@ ready. Among other things it:
   isn't now (they are prebuilt for the default schema)
 - All the 'normal' stuff that would happen when running `Makefile.PL`,
   like copying `lib` and `bin` files to be ready for installation
-
-<!-- -->
-
      make
      sudo make install
      make load_schema
@@ -1235,7 +1181,7 @@ You can pick any ontologies you want, but GO will take over an hour to
 install, and it doesn't matter to much what you pick, because we are
 going to be blowing this database away soon anyway.
 
-#### <span id="Saving_your_progress_to_this_point" class="mw-headline">Saving your progress to this point</span>
+#### Saving your progress to this point
 
 It is generally a good idea to save your progress when you are done
 loading ontologies before you've attempted to load any other data. That
@@ -1254,7 +1200,7 @@ then uncompress the dump into it, like this:
   bzip2 -dc db_w_ontologies.bz2 | psql chado
 ```
 
-#### <span id="A_Note_about_Redos" class="mw-headline">A Note about Redos</span>
+#### A Note about Redos
 
 If at some point you feel like you want to rebuild your database from
 scratch, you need to get rid of the temporary directory where ontology
@@ -1263,7 +1209,7 @@ careful about that `./` in front of `tmp`)** or with a make target that
 was designed for this: `make rm_locks`, which only gets rid of the lock
 files but leaves the ontology files in place.
 
-### <span id="Preparing_GFF_data_for_loading" class="mw-headline">Preparing [GFF](../GFF "GFF") data for loading</span>
+### Preparing [GFF](../GFF "GFF") data for loading
 
 Issues:
 
@@ -1272,7 +1218,7 @@ Issues:
 - fasta → gff
 - utility scripts for various preparation activities
 
-#### <span id="Working_with_Large_GFF_files" class="mw-headline">Working with Large [GFF](../GFF "GFF") files</span>
+#### Working with Large [GFF](../GFF "GFF") files
 
 Large files (more than 3-500,000 rows) can cause headaches for the
 [GFF3](../GFF3 "GFF3") bulk loader, but genome annotation GFF3 files can
@@ -1295,7 +1241,7 @@ sorting is good for two reasons:
     features in the GFF file. Chado doesn't care about that but you
     might.
 
-#### <span id="Loading_GFF3" class="mw-headline">Loading [GFF3](../GFF3 "GFF3")</span>
+#### Loading [GFF3](../GFF3 "GFF3")
 
 Working with the large number of files that come out of the preprocessor
 can be a bit of a headache, so I've 'developed' a few tricks. Basically,
@@ -1331,7 +1277,7 @@ needed) and run
 and it loads all of the files sequentially. I have done this with 60-70
 files at a time, letting the loader run for a few days(!)
 
-#### <span id="Capturing_the_output_to_check_for_problems" class="mw-headline">Capturing the output to check for problems</span>
+#### Capturing the output to check for problems
 
 If you are going to let a load run a very long time, you probably should
 capture the output to check for problems. There are two ways to do this:
@@ -1355,7 +1301,7 @@ When you run the load command, you can use redirection to collect the
 
      bash load.sh >& load.output
 
-#### <span id="Really_loading_data" class="mw-headline">Really loading data</span>
+#### Really loading data
 
 OK, let's put the data into chado:
 
@@ -1365,7 +1311,7 @@ OK, let's put the data into chado:
 
 This should not work (yet!)
 
-##### <span id="Try_again" class="mw-headline">Try again</span>
+##### Try again
 
 Doh! The loader is trying to tell us that this looks like analysis data
 (that is, data produced by computer rather than humans).
@@ -1394,16 +1340,16 @@ Success! (Probably.) If this failed, when rerun, we may need the
 `--recreate_cache` option, which recreates a "temporary" table that the
 loader uses to keep track of IDs.
 
-### <span id="Loading_other_data" class="mw-headline">Loading other data</span>
+### Loading other data
 
 [Chado XML](../Chado_XML "Chado XML") and [XORT](../XORT.1 "XORT"), but
 really, [Tripal](../Tripal.1 "Tripal") bulk file loader.
 
-## <span id="Chado_for_Expression.2C_Genotype.2C_Phenotype.2C_and_Natural_Diversity" class="mw-headline">Chado for Expression, Genotype, Phenotype, and Natural Diversity</span>
+## Chado for Expression, Genotype, Phenotype, and Natural Diversity
 
 This section is about some of the lesser used Chado Modules.
 
-### <span id="Expression" class="mw-headline">Expression</span>
+### Expression
 
 From an organism database point of view, expression is about turning
 this:
@@ -1449,7 +1395,7 @@ href="http://zfin.org/cgi-bin/webdriver?MIval=aa-fxfigureview.apg&amp;OID=ZDB-FI
 class="external text" rel="nofollow">ZFIN: Figure: <em>Lai et al.</em>,
 2008, Fig. S5</a> | | | | |
 
-#### <span id="What_defines_an_expression_pattern.3F" class="mw-headline">What defines an expression pattern?</span>
+#### What defines an expression pattern?
 
 Expression could include a lot of different things, and what it includes
 depends on the community:
@@ -1492,7 +1438,7 @@ Is an image required or optional?
 Strength  
 What do strengths mean across different experiments?
 
-#### <span id="How_does_Chado_deal_with_this_variety.3F" class="mw-headline">How does Chado deal with this variety?</span>
+#### How does Chado deal with this variety?
 
 _Post-composition_, which is a very Chadoish way of doing things.
 
@@ -1503,7 +1449,7 @@ _Post-composition_, which is a very Chadoish way of doing things.
   this may be a good idea
 - Details are then hung off that.
 
-#### <span id="FlyBase_Example" class="mw-headline">FlyBase Example</span>
+#### FlyBase Example
 
 A specific example from FlyBase:
 
@@ -1551,7 +1497,7 @@ And
   class="external text" rel="nofollow">Blackman <em>et al.</em> in
   1991</a>.
 
-#### <span id="Chado_Allows" class="mw-headline">Chado Allows</span>
+#### Chado Allows
 
 The Expression module table design allows each expression pattern to
 have
@@ -1585,7 +1531,7 @@ If you require an expression pattern to have
 
 then you will have to write a script to check that.
 
-#### <span id="Table:_expression" class="mw-headline">Table: expression</span>
+#### Table: expression
 
 | F-Key | Name          | Type          | Description       |
 | ----- | ------------- | ------------- | ----------------- |
@@ -1605,7 +1551,7 @@ Tables referencing this one via Foreign Key Constraints:
   [feature_expression](../Chado_Tables#Table:_feature_expression "Chado Tables"),
   [wwwuser_expression](../Chado_Tables#Table:_wwwuser_expression "Chado Tables")
 
-#### <span id="Table:_expression_cvterm" class="mw-headline">Table: expression_cvterm</span>
+#### Table: expression_cvterm
 
 | F-Key                                                  | Name                 | Type    | Description         |
 | ------------------------------------------------------ | -------------------- | ------- | ------------------- |
@@ -1621,7 +1567,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 - [expression_cvtermprop](../Chado_Tables#Table:_expression_cvtermprop "Chado Tables")
 
-### <span id="Genotype" class="mw-headline">Genotype</span>
+### Genotype
 
 Defined in the [Chado Genetic
 Module](../Chado_Genetic_Module "Chado Genetic Module").
@@ -1636,7 +1582,7 @@ Not sure how strains have been handled
 In the era of high-throughput sequencing, this may be much more
 detailed.
 
-#### <span id="Table:_genotype" class="mw-headline">Table: genotype</span>
+#### Table: genotype
 
 Genetic context. A genotype is defined by a collection of features,
 mutations, balancers, deficiencies, haplotype blocks, or engineered
@@ -1702,7 +1648,7 @@ Tables referencing this one via Foreign Key Constraints:
   [stock_genotype](../Chado_Tables#Table:_stock_genotype "Chado Tables"),
   [wwwuser_genotype](../Chado_Tables#Table:_wwwuser_genotype "Chado Tables")
 
-#### <span id="Table:_feature_genotype" class="mw-headline">Table: feature_genotype</span>
+#### Table: feature_genotype
 
 <table class="wikitable">
 <caption>feature_genotype Structure</caption>
@@ -1780,12 +1726,12 @@ title="Chado Tables">cvterm</a></p></td>
 
 feature_genotype Structure
 
-### <span id="Environment" class="mw-headline">Environment</span>
+### Environment
 
 Also defined in the [Chado Genetic
 Module](../Chado_Genetic_Module "Chado Genetic Module").
 
-#### <span id="Table:_environment" class="mw-headline">Table: environment</span>
+#### Table: environment
 
 The environmental component of a phenotype description.
 
@@ -1804,7 +1750,7 @@ Tables referencing this one via Foreign Key Constraints:
   [phenotype_comparison](../Chado_Tables#Table:_phenotype_comparison "Chado Tables"),
   [phenstatement](../Chado_Tables#Table:_phenstatement "Chado Tables")
 
-#### <span id="Table:_environment_cvterm" class="mw-headline">Table: environment_cvterm</span>
+#### Table: environment_cvterm
 
 | F-Key                                                  | Name                  | Type    | Description         |
 | ------------------------------------------------------ | --------------------- | ------- | ------------------- |
@@ -1814,7 +1760,7 @@ Tables referencing this one via Foreign Key Constraints:
 
 environment_cvterm Structure
 
-### <span id="Phenotype.2C_Natural_Diversity_and_Atlas_Support" class="mw-headline">Phenotype, Natural Diversity and Atlas Support</span>
+### Phenotype, Natural Diversity and Atlas Support
 
 Phenotypes, natural diversity, and atlas support are all areas of future
 work in Chado. Chado does have a phenotype module, but it has not aged
@@ -1853,51 +1799,3 @@ Tutorial](../Special%253ABrowse/GMOD-20Malaysia-202014-2FChado-20Tutorial "Speci
 |                                                             |                                                                                                                                                                                                       |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Has topic](../Property%253AHas_topic "Property:Has topic") | <a href="../Chado" class="mw-redirect" title="Chado">Chado</a> <span class="smwsearch">[+](../Special%253ASearchByProperty/Has-20topic/Chado "Special%253ASearchByProperty/Has-20topic/Chado")</span> |
-
-## Navigation menu
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_Malaysia_2014-2FChado_Tutorial"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 00:19 on 20 February 2014.</span>
-<!-- - <span id="footer-info-viewcount">8,719 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

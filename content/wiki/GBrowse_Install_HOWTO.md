@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Install HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Install HOWTO</span>
-
-
-
-
-
-
-
+# GBrowse Install HOWTO
 
 
 This page contains detailed installation instructions for **installing
@@ -44,75 +28,58 @@ See also the following OS-specific instructions:
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">The
   NetInstaller</span>](#The_NetInstaller)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Apache</span>](#Apache)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">MySQL
-    (recommended)</span>](#MySQL_.28recommended.29)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Perl</span>](#Perl)
-    - [<span class="tocnumber">2.3.1</span>
-      <span class="toctext">Standard Perl
-      modules</span>](#Standard_Perl_modules)
-    - [<span class="tocnumber">2.3.2</span>
-      <span class="toctext">BioPerl</span>](#BioPerl)
-    - [<span class="tocnumber">2.3.3</span>
-      <span class="toctext">Bio::Graphics and
-      Bio::DB::Das::Chado</span>](#Bio::Graphics_and_Bio::DB::Das::Chado)
-    - [<span class="tocnumber">2.3.4</span>
-      <span class="toctext">Optional Perl
-      modules</span>](#Optional_Perl_modules)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Important
+- [Prerequisites](#Prerequisites)
+  - [Apache](#Apache)
+  - [MySQL
+    (recommended)](#MySQL_.28recommended.29)
+  - [Perl](#Perl)
+    - [Standard Perl
+      modules](#Standard_Perl_modules)
+    - [BioPerl](#BioPerl)
+    - [Bio::Graphics and
+      Bio::DB::Das::Chado](#Bio::Graphics_and_Bio::DB::Das::Chado)
+    - [Optional Perl
+      modules](#Optional_Perl_modules)
+  - [Important
     Note for Macintosh
-    Systems</span>](#Important_Note_for_Macintosh_Systems)
-- [<span class="tocnumber">3</span> <span class="toctext">Basic
-  Installation</span>](#Basic_Installation)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Details</span>](#Details)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Installing
+    Systems](#Important_Note_for_Macintosh_Systems)
+- [Basic
+  Installation](#Basic_Installation)
+  - [Details](#Details)
+  - [Installing
     into your Home
-    Directory</span>](#Installing_into_your_Home_Directory)
-- [<span class="tocnumber">4</span> <span class="toctext">Try the
-  Browser Out</span>](#Try_the_Browser_Out)
-- [<span class="tocnumber">5</span> <span class="toctext">Populating the
-  Database (MySQL)</span>](#Populating_the_Database_.28MySQL.29)
-  - [<span class="tocnumber">5.1</span>
-    <span class="toctext">Synopsis</span>](#Synopsis)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">Details</span>](#Details_2)
-    - [<span class="tocnumber">5.2.1</span> <span class="toctext">GFF3
-      Loading</span>](#GFF3_Loading)
-- [<span class="tocnumber">6</span> <span class="toctext">Loading Other
-  Data Sets</span>](#Loading_Other_Data_Sets)
-- [<span class="tocnumber">7</span> <span class="toctext">Loading
-  DNA</span>](#Loading_DNA)
-- [<span class="tocnumber">8</span> <span class="toctext">Creating your
-  own Genome Database</span>](#Creating_your_own_Genome_Database)
-- [<span class="tocnumber">9</span> <span class="toctext">Making the
-  Browser Run Faster</span>](#Making_the_Browser_Run_Faster)
-- [<span class="tocnumber">10</span> <span class="toctext">Making the
-  Server Run Safer</span>](#Making_the_Server_Run_Safer)
-- [<span class="tocnumber">11</span> <span class="toctext">The
-  gbrowse_img Script</span>](#The_gbrowse_img_Script)
-- [<span class="tocnumber">12</span>
-  <span class="toctext">Plugins</span>](#Plugins)
-- [<span class="tocnumber">13</span> <span class="toctext">The
-  Genbank/EMBL Proxy</span>](#The_Genbank.2FEMBL_Proxy)
-- [<span class="tocnumber">14</span> <span class="toctext">Removing
-  Out-of-Date Image Files</span>](#Removing_Out-of-Date_Image_Files)
-- [<span class="tocnumber">15</span> <span class="toctext">Bug Reports
-  and Support Requests</span>](#Bug_Reports_and_Support_Requests)
+    Directory](#Installing_into_your_Home_Directory)
+- [Try the
+  Browser Out](#Try_the_Browser_Out)
+- [Populating the
+  Database (MySQL)](#Populating_the_Database_.28MySQL.29)
+  - [Synopsis](#Synopsis)
+  - [Details](#Details_2)
+    - [GFF3
+      Loading](#GFF3_Loading)
+- [Loading Other
+  Data Sets](#Loading_Other_Data_Sets)
+- [Loading
+  DNA](#Loading_DNA)
+- [Creating your
+  own Genome Database](#Creating_your_own_Genome_Database)
+- [Making the
+  Browser Run Faster](#Making_the_Browser_Run_Faster)
+- [Making the
+  Server Run Safer](#Making_the_Server_Run_Safer)
+- [The
+  gbrowse_img Script](#The_gbrowse_img_Script)
+- [Plugins](#Plugins)
+- [The
+  Genbank/EMBL Proxy](#The_Genbank.2FEMBL_Proxy)
+- [Removing
+  Out-of-Date Image Files](#Removing_Out-of-Date_Image_Files)
+- [Bug Reports
+  and Support Requests](#Bug_Reports_and_Support_Requests)
 
 
-
-# <span id="The_NetInstaller" class="mw-headline">The NetInstaller</span>
+# The NetInstaller
 
 One of the easiest ways to install GBrowse is with the network installer
 script, <a
@@ -163,7 +130,7 @@ This option is useful for getting new options just added to GBrowse (for
 example, the Balloon pop up windows added before the release of GBrowse
 1.69) or for getting a new BioPerl that has recent bugs fixed.
 
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+# Prerequisites
 
 GBrowse runs on top of several software packages. These must be
 installed and configured before you can run GBrowse. Most preconfigured
@@ -171,14 +138,14 @@ Linux systems will have some of these packages installed already.
 
   
 
-## <span id="Apache" class="mw-headline">Apache</span>
+## Apache
 
 The Apache web server
 <a href="http://www.apache.org" class="external autonumber"
 rel="nofollow">[1]</a> is the industry standard open source web server
 for Unix and Windows systems.
 
-## <span id="MySQL_.28recommended.29" class="mw-headline">MySQL (recommended)</span>
+## MySQL (recommended)
 
 The [MySQL](MySQL "MySQL") database
 <a href="http://www.mysql.com" class="external autonumber"
@@ -188,14 +155,14 @@ genome annotation projects. For small projects (a few thousands of
 annotated features), you can skip installing MySQL and use an in-memory
 database instead.
 
-## <span id="Perl" class="mw-headline">Perl</span>
+## Perl
 
 The Perl language
 <a href="http://www.cpan.org" class="external autonumber"
 rel="nofollow">[3]</a> is widely used for web applications. You will
 need version 5.8.6 or higher.
 
-### <span id="Standard_Perl_modules" class="mw-headline">Standard Perl modules</span>
+### Standard Perl modules
 
 The following Perl modules must be installed for GBrowse to work. They
 can be found on the Comprehensive Perl Archive Network (CPAN)
@@ -211,7 +178,7 @@ rel="nofollow">[4]</a>:
 - Text::Shellwords (any version)
 - Class::Base (any version)
 
-### <span id="BioPerl" class="mw-headline">BioPerl</span>
+### BioPerl
 
 The [BioPerl](BioPerl "BioPerl") project
 <a href="http://www.bioperl.org" class="external autonumber"
@@ -240,14 +207,14 @@ Array::Compare \| Convert::Binary::C \| Algorithm::Munkres \|
 Set::Scalar \| Spreadsheet::WriteExcel \| XML::SAX::Writer \| Clone \|
 XML::DOM::XPath \| PostScript::TextBlock
 
-### <span id="Bio::Graphics_and_Bio::DB::Das::Chado" class="mw-headline">Bio::Graphics and Bio::DB::Das::Chado</span>
+### Bio::Graphics and Bio::DB::Das::Chado
 
 Previously, Bio::Graphics and Bio::DB::Das::Chado were a part of BioPerl
 but since version 1.6.0, they have been split out into a separate
 package. They can be installed from the CPAN shell like any other Perl
 module.
 
-### <span id="Optional_Perl_modules" class="mw-headline">Optional Perl modules</span>
+### Optional Perl modules
 
 The following Perl modules are not needed for a functional GBrowse
 install. We recommend that you install them as needed to obtain
@@ -256,14 +223,8 @@ additional features.
 XML::Parser, XML::Writer, XML::Twig, XML::DOM  
 If these modules are present, the "Sequence Dumper" plugin will be able
 to produce GAME and BSML output. They can be downloaded from CPAN.
-
-<!-- -->
-
 LWP  
 To load remote 3d party annotations. Available from CPAN.
-
-<!-- -->
-
 Bio::Das  
 To display remote annotations using the [Distributed Annotation
 System](Distributed_Annotation_System "Distributed Annotation System").
@@ -271,9 +232,6 @@ The current version is available at CPAN:
 <a href="http://search.cpan.org/~lds/Bio-Das/" class="external free"
 rel="nofollow">http://search.cpan.org/~lds/Bio-Das/</a> and can be
 installed from the cpan shell.
-
-<!-- -->
-
 BioMOBY  
 Needed by gbrowse_moby to fetch and display data from BioMOBY providers.
 Available from biomoby.org; obtain via anonymous cvs until it is
@@ -281,15 +239,9 @@ released. Directions are at
 <a href="http://www.biomoby.org/GettingTheCode.html"
 class="external free"
 rel="nofollow">http://www.biomoby.org/GettingTheCode.html</a>.
-
-<!-- -->
-
 GD::SVG  
 To save images as publication-quality editable images in Scalar Vector
 Graphics format. Available from CPAN.
-
-<!-- -->
-
 Bio::SCF File::Temp io-lib(v1.7+)  
 Needed by the sequencing trace glyph to parse SCF files and display the
 trace graph. The io-lib library can be downloaded from <a
@@ -299,15 +251,9 @@ rel="nofollow">https://sourceforge.net/project/showfiles.php?group_id=100316&amp
 which is part of the Staden Package
 <a href="https://sourceforge.net/projects/staden/" class="external free"
 rel="nofollow">https://sourceforge.net/projects/staden/</a>.
-
-<!-- -->
-
 Math::FFT Statistics::Descriptive  
 Needed by the Spectrogram plugin to calculate Fast Fourier Transforms.
 This module is available from CPAN.
-
-<!-- -->
-
 Bio::PrimerDesigner, Math::Round, primer3  
 Needed by the PrimerDesigner plugin. The perl modules are available from
 CPAN. The linux primer3 binary is packaged with the Bio::PrimerDesigner
@@ -318,13 +264,10 @@ rel="nofollow">http://frodo.wi.mit.edu/primer3/primer3_code.html</a>. If
 you are using this plugin, the primer3 binary must be installed in
 /usr/local/bin and named 'primer3'. If it is installed in another path,
 edit the following section in the PrimerDesigner plugin:
-
-<!-- -->
-
              use constant BINARY            => 'primer3';
              use constant BINPATH           => '/usr/local/bin';
 
-## <span id="Important_Note_for_Macintosh_Systems" class="mw-headline">Important Note for Macintosh Systems</span>
+## Important Note for Macintosh Systems
 
 For Intel-based Macintoshes, you may need to be a bit careful about the
 DBD libraries you install. Joan Pontius reports that you must use the
@@ -336,7 +279,7 @@ class="external text" rel="nofollow">CPAN</a>.
 
   
 
-# <span id="Basic_Installation" class="mw-headline">Basic Installation</span>
+# Basic Installation
 
 Once the prerequisites are installed, download the most recent version
 of the Generic-Genome-Browser source code from:
@@ -370,7 +313,7 @@ class="external text" rel="nofollow">BIOSQL_ADAPTER_HOWTO.pod</a>. *Note
 that these are in Perl "POD" format. To get rid of the formatting
 instructions, save to disk and run "perldoc CONFIGURE_HOWTO.pod"*
 
-## <span id="Details" class="mw-headline">Details</span>
+## Details
 
 The browser consists of a CGI script named "gbrowse", a Perl module that
 handles some of the gory details, a small number of static image files,
@@ -462,7 +405,7 @@ The first time you run Makefile.PL, a file named GGB.def will be created
 your file path settings. When Makefile.PL is run again, it will ask you
 whether you wish to reuse the settings stored in the file.
 
-## <span id="Installing_into_your_Home_Directory" class="mw-headline">Installing into your Home Directory</span>
+## Installing into your Home Directory
 
 Read this section only if you are on a Unix system and do not have root
 privileges. You will need to configure Apache to run out of your home
@@ -566,7 +509,7 @@ rel="nofollow">http://localhost/gbrowse</a>, use
 <a href="http://localhost:8000/gbrowse" class="external free"
 rel="nofollow">http://localhost:8000/gbrowse</a> instead.
 
-# <span id="Try_the_Browser_Out" class="mw-headline">Try the Browser Out</span>
+# Try the Browser Out
 
 The installation procedure will create a small in-memory database of
 yeast chromosome 1 and 2 for you to play with. To try the browser out,
@@ -588,13 +531,13 @@ More configuration information and a short tutorial are located at:
 
           http://localhost/gbrowse
 
-# <span id="Populating_the_Database_.28MySQL.29" class="mw-headline">Populating the Database (MySQL)</span>
+# Populating the Database (MySQL)
 
 This step takes you through populating the database with the full yeast
 genome. You can skip this step if you use the in-memory database for
 small projects.
 
-## <span id="Synopsis" class="mw-headline">Synopsis</span>
+## Synopsis
 
          mysql -uroot -ppassword -e 'create database yeast'
 
@@ -604,7 +547,7 @@ small projects.
 
          bp_bulk_load_gff.pl -d yeast sample_data/yeast_data.gff
 
-## <span id="Details_2" class="mw-headline">Details</span>
+## Details
 
 *Note: This section refers to the user account under which Apache runs
 as "nobody" because that is the most common case. However, many systems
@@ -636,9 +579,6 @@ bp_load_gff.pl
 This will incrementally load a database, optionally initializing it if
 it does not already exist. This script will work correctly even if the
 [MySQL](MySQL "MySQL") server is located on another host.
-
-<!-- -->
-
 bp_bulk_load_gff.pl  
 This Perl script will initialize a new Bio::DB::GFF database with a
 fresh schema, deleting anything that was there before. It will then load
@@ -646,9 +586,6 @@ the file. Only suitable for use the very first time you create a
 database, or when you want to start from scratch! The bulk loader is as
 much as 10x faster than bp_load_gff.pl, but does not work in the
 situation in which the MySQL database is running on a remote host.
-
-<!-- -->
-
 bp_fast_load_gff.pl  
 This will incrementally load a database. On UNIX systems, it will
 activate a fast loader that makes the speed almost the same as the bulk
@@ -703,7 +640,7 @@ elsewhere). Usually there will be an informative error message in the
 error log. The most common problem is [MySQL](MySQL "MySQL") password or
 permissions problems.
 
-### <span id="GFF3_Loading" class="mw-headline">GFF3 Loading</span>
+### GFF3 Loading
 
 An increasing number of model organism databases are distributing genome
 annotation in [GFF3](GFF3 "GFF3") format. An example of this format can
@@ -738,7 +675,7 @@ following:
 The database should now be browsable. For more details, see
 [GFF3](GFF3 "GFF3").
 
-# <span id="Loading_Other_Data_Sets" class="mw-headline">Loading Other Data Sets</span>
+# Loading Other Data Sets
 
 Go to the individual model organism database's web sites to find the
 [GFF3](GFF3 "GFF3") (or [GFF2](GFF2 "GFF2")) format files you need. A
@@ -775,7 +712,7 @@ files in GenBank format from NCBI. The sample configuration file
 `08.genbank.conf` (located in `contrib/conf_files`) is appropriate for
 data loaded with `load_genbank.pl`.
 
-# <span id="Loading_DNA" class="mw-headline">Loading DNA</span>
+# Loading DNA
 
 To display the DNA sequence and to run sequence-dependent glyphs such as
 the three-frame translation, you will need to load the DNA as well as
@@ -802,7 +739,7 @@ the file, following the sequence annotations. If you are loading one of
 these GFF files, the DNA will be recognized automatically and loaded by
 any of the loaders.
 
-# <span id="Creating_your_own_Genome_Database" class="mw-headline">Creating your own Genome Database</span>
+# Creating your own Genome Database
 
 See the <a href="GBrowse_Configuration_HOWTO" class="mw-redirect"
 title="GBrowse Configuration HOWTO">GBrowse Configuration HOWTO</a> for
@@ -810,7 +747,7 @@ information on how to create new databases from scratch, add new browser
 tracks, and how to get the browser to dump the DNA from the region
 currently under display.
 
-# <span id="Making_the_Browser_Run_Faster" class="mw-headline">Making the Browser Run Faster</span>
+# Making the Browser Run Faster
 
 Three factors are major contributors to the length of time it takes to
 load a gbrowse page:
@@ -855,7 +792,7 @@ zooming (see CONFIGURE_HOWTO). Otherwise, there's not much that can be
 done about this short of buying a faster machine. The GMOD team is
 working hard to reduce this performance hit.
 
-# <span id="Making_the_Server_Run_Safer" class="mw-headline">Making the Server Run Safer</span>
+# Making the Server Run Safer
 
 Whenever you are running a server-side Web script using information
 provided by a web client, there is a risk that maliciously-formatted
@@ -882,7 +819,7 @@ httpd.conf configuration file:
 
 This will affect all mod_perl scripts globally.
 
-# <span id="The_gbrowse_img_Script" class="mw-headline">The gbrowse_img Script</span>
+# The gbrowse_img Script
 
 The gbrowse_img CGI script is a stripped-down version of gbrowse which
 just generates images. It is suitable for incorporating into \<img\>
@@ -903,7 +840,7 @@ instructions. Select
 rel="nofollow">http://your.host/cgi-bin/gbrowse_img</a> to see this
 internal documentation.
 
-# <span id="Plugins" class="mw-headline">Plugins</span>
+# Plugins
 
 Gbrowse has a plugin architecture which makes it easy for third-party
 developers to expand its functionality. The plugins are Perl .pm files
@@ -920,7 +857,7 @@ plugins using the plugin_path setting:
 This setting should be somewhere in the \[GENERAL\] section of the
 relevant gbrowse configuration file.
 
-# <span id="The_Genbank.2FEMBL_Proxy" class="mw-headline">The Genbank/EMBL Proxy</span>
+# The Genbank/EMBL Proxy
 
 Sample configuration number 5 ("05.embl.conf") corresponds to a
 pass-through proxy for Genbank. At least in theory, if you enter a
@@ -936,9 +873,6 @@ recipe for giving it a try:
 2.  Set up permissions for this database so that "nobody@localhost" has
     SELECT, INSERT, UPDATE and DELETE privileges
 3.  Initialize the database for use with this command:
-
-<!-- -->
-
      % bp_load_gff.pl -c -d embl
 
 4.  If you need to use a proxy to access remote web sites, uncomment the
@@ -949,7 +883,7 @@ recipe for giving it a try:
     rel="nofollow">http://localhost/cgi-bin/gbrowse/embl</a>. Search for
     a Genbank or embl accession number, such as CEF58D5
 
-# <span id="Removing_Out-of-Date_Image_Files" class="mw-headline">Removing Out-of-Date Image Files</span>
+# Removing Out-of-Date Image Files
 
 As GBrowse runs, it creates temporary image files in the gbrowse tmp
 directory (typically *HTDOCS*/gbrowse/tmp). These image files are
@@ -967,7 +901,7 @@ You might want to run this command under cron, but be sure that the user
 that the cron job runs under has the proper permissions. You may need to
 install it in root's cron script.
 
-# <span id="Bug_Reports_and_Support_Requests" class="mw-headline">Bug Reports and Support Requests</span>
+# Bug Reports and Support Requests
 
 Please report bugs to the
 <a href="http://sourceforge.net/tracker/?group_id=27707&amp;atid=391291"
@@ -980,95 +914,3 @@ rel="nofollow">gmod-gbrowse@lists.sourceforge.net</a>.
 Have fun!
 
 Lincoln Stein & the GMOD team
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Linux](Category%253ALinux "Category%253ALinux")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_Install_HOWTO" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Install_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:39 on 8 August
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">327,091 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

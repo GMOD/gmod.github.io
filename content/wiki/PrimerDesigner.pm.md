@@ -1,31 +1,12 @@
 ---
 title: "PrimerDesigner.pm"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">PrimerDesigner.pm</span>
-
-
-
-
-
-
-
-
-
+# PrimerDesigner.pm
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e1/PrimerDesigner.png" width="406"
 height="161" alt="PrimerDesigner.png" />
-
 
 
 PrimerDesigner is a [GBrowse](GBrowse.1 "GBrowse") plugin, written by
@@ -43,56 +24,42 @@ The video below demonstrates designing PCR primers using the
 PrimerDesigner plugin.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">How to use the
   PrimerDesigner plugin</span>](#How_to_use_the_PrimerDesigner_plugin)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Accessing
-    the plugin</span>](#Accessing_the_plugin)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Selecting
+  - [Accessing
+    the plugin](#Accessing_the_plugin)
+  - [Selecting
     the target for the PCR
-    primers</span>](#Selecting_the_target_for_the_PCR_primers)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">PCR primer
-    design parameters</span>](#PCR_primer_design_parameters)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Predicted
-    PCR Primer Results</span>](#Predicted_PCR_Primer_Results)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Note On
-    Quality Scores</span>](#Note_On_Quality_Scores)
-- [<span class="tocnumber">2</span> <span class="toctext">How to install
+    primers](#Selecting_the_target_for_the_PCR_primers)
+  - [PCR primer
+    design parameters](#PCR_primer_design_parameters)
+  - [Predicted
+    PCR Primer Results](#Predicted_PCR_Primer_Results)
+  - [Note On
+    Quality Scores](#Note_On_Quality_Scores)
+- [How to install
   the PrimerDesigner
-  plugin</span>](#How_to_install_the_PrimerDesigner_plugin)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Dependencies</span>](#Dependencies)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Primer3</span>](#Primer3)
-      - [<span class="tocnumber">2.1.1.1</span>
-        <span class="toctext">Installing
-        Primer3</span>](#Installing_Primer3)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Bio::PrimerDesigner</span>](#Bio::PrimerDesigner)
-      - [<span class="tocnumber">2.1.2.1</span>
-        <span class="toctext">Installing
-        Bio::PrimerDesigner</span>](#Installing_Bio::PrimerDesigner)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Configuration</span>](#Configuration)
-    - [<span class="tocnumber">2.2.1</span> <span class="toctext">The
-      Configuration File</span>](#The_Configuration_File)
-      - [<span class="tocnumber">2.2.1.1</span>
-        <span class="toctext">Activating the
-        Plugin</span>](#Activating_the_Plugin)
-      - [<span class="tocnumber">2.2.1.2</span>
-        <span class="toctext">Configurable
-        Options</span>](#Configurable_Options)
-- [<span class="tocnumber">3</span> <span class="toctext">PrimerDesigner
-  and GBrowse 2</span>](#PrimerDesigner_and_GBrowse_2)
+  plugin](#How_to_install_the_PrimerDesigner_plugin)
+  - [Dependencies](#Dependencies)
+    - [Primer3](#Primer3)
+      - [Installing
+        Primer3](#Installing_Primer3)
+    - [Bio::PrimerDesigner](#Bio::PrimerDesigner)
+      - [Installing
+        Bio::PrimerDesigner](#Installing_Bio::PrimerDesigner)
+  - [Configuration](#Configuration)
+    - [The
+      Configuration File](#The_Configuration_File)
+      - [Activating the
+        Plugin](#Activating_the_Plugin)
+      - [Configurable
+        Options](#Configurable_Options)
+- [PrimerDesigner
+  and GBrowse 2](#PrimerDesigner_and_GBrowse_2)
 
 
+## How to use the PrimerDesigner plugin
 
-## <span id="How_to_use_the_PrimerDesigner_plugin" class="mw-headline">How to use the PrimerDesigner plugin</span>
-
-### <span id="Accessing_the_plugin" class="mw-headline">Accessing the plugin</span>
+### Accessing the plugin
 
 - From GBrowse main page, the PrimerDesigner plugin, as well as other
   installed plugins, can be accessed via the 'Reports and Analysis'
@@ -120,7 +87,7 @@ alt="PrimerDesigner Front.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/40/Zoom_pan.png" class="thumbborder"
 width="271" height="52" alt="Zoom pan.png" />
 
-### <span id="Selecting_the_target_for_the_PCR_primers" class="mw-headline">Selecting the target for the PCR primers</span>
+### Selecting the target for the PCR primers
 
 - If no target region is specified, primers will be designed to amplify
   the center of the displayed sequence, indicated by a vertical red
@@ -146,7 +113,7 @@ width="851" height="288" alt="Target Highlight.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/76/Target_Selected.png" class="thumbborder"
 width="858" height="272" alt="Target Selected.png" />
 
-### <span id="PCR_primer_design_parameters" class="mw-headline">PCR primer design parameters</span>
+### PCR primer design parameters
 
 - Design parameters, such as primer length, GC content, etc can be
   configured at the bottom of the page.
@@ -160,7 +127,7 @@ width="858" height="272" alt="Target Selected.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/8e/PCR_Params.png" class="thumbborder"
 width="850" height="148" alt="PCR Params.png" />
 
-### <span id="Predicted_PCR_Primer_Results" class="mw-headline">Predicted PCR Primer Results</span>
+### Predicted PCR Primer Results
 
 - Once you have clicked 'Design Primers', you will see a results page
   similar to the example below.
@@ -174,7 +141,7 @@ width="850" height="148" alt="PCR Params.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/42/PCR_Results.png" class="thumbborder"
 width="883" height="811" alt="PCR Results.png" />
 
-### <span id="Note_On_Quality_Scores" class="mw-headline">Note On Quality Scores</span>
+### Note On Quality Scores
 
 - Occasionally you will see quality scores flagged in red.
 - Optimal primer scores should be less than 1
@@ -191,7 +158,7 @@ width="883" height="811" alt="PCR Results.png" />
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/e6/Uh_oh.png" class="thumbborder" width="862"
 height="198" alt="Uh oh.png" />
 
-## <span id="How_to_install_the_PrimerDesigner_plugin" class="mw-headline">How to install the PrimerDesigner plugin</span>
+## How to install the PrimerDesigner plugin
 
 First of all, you will need to
 <a href="Gbrowse.1#Installation" class="mw-redirect"
@@ -200,9 +167,9 @@ as <a href="Bioperl#BioPerl_Background" class="mw-redirect"
 title="Bioperl">BioPerl</a> and
 [Bio::Graphics](News/BioGraphics_now_at_gmod.org "News/BioGraphics now at gmod.org")
 
-### <span id="Dependencies" class="mw-headline">Dependencies</span>
+### Dependencies
 
-#### <span id="Primer3" class="mw-headline">Primer3</span>
+#### Primer3
 
 - Follow <a href="http://primer3.sourceforge.net" class="external text"
   rel="nofollow">this link</a> to go the primer website at Sourceforge.
@@ -212,7 +179,7 @@ title="Bioperl">BioPerl</a> and
 - The plugin passes the DNA sequence and primer design parameters to
   this program and then parses the results
 
-##### <span id="Installing_Primer3" class="mw-headline">Installing Primer3</span>
+##### Installing Primer3
 
 - <a
   href="http://sourceforge.net/project/showfiles.php?group_id=112461&amp;package_id=211061&amp;release_id=595603"
@@ -224,7 +191,7 @@ title="Bioperl">BioPerl</a> and
   installed it elsewhere, be sure to the the 'binpath' option (see
   below) in your configuration file.
 
-#### <span id="Bio::PrimerDesigner" class="mw-headline">Bio::PrimerDesigner</span>
+#### Bio::PrimerDesigner
 
 - Follow <a href="http://search.cpan.org/dist/Bio-PrimerDesigner"
   class="external text" rel="nofollow">this link</a> for information
@@ -236,7 +203,7 @@ title="Bioperl">BioPerl</a> and
   will have to install this package for the Primerdesigner plugin to
   work.
 
-##### <span id="Installing_Bio::PrimerDesigner" class="mw-headline">Installing Bio::PrimerDesigner</span>
+##### Installing Bio::PrimerDesigner
 
 - Bio::PrimerDesigner is on CPAN (the **C**omprehensive **P**erl
   **A**rchive **N**etwork).
@@ -244,11 +211,11 @@ title="Bioperl">BioPerl</a> and
   <a href="http://www.troubleshooters.com/codecorn/littperl/perlcpan.htm"
   class="external text" rel="nofollow">CPAN shell</a>.
 
-### <span id="Configuration" class="mw-headline">Configuration</span>
+### Configuration
 
-#### <span id="The_Configuration_File" class="mw-headline">The Configuration File</span>
+#### The Configuration File
 
-##### <span id="Activating_the_Plugin" class="mw-headline">Activating the Plugin</span>
+##### Activating the Plugin
 
 To activate the Primer Designer plugin, simple add its name to the list
 of available plugins in the configuration file for you data source.
@@ -263,7 +230,7 @@ For example:
 dependencies (described above) are that the GBrowse database has DNA
 sequence.
 
-##### <span id="Configurable_Options" class="mw-headline">Configurable Options</span>
+##### Configurable Options
 
 To configure the plugin, add a stanza like this at the end of your
 \[GENERAL\] section:
@@ -321,97 +288,8 @@ are amplified by the primer pair.
 You must check the site to see if there is a genome sequence for you
 species and modify the above example accordingly
 
-## <span id="PrimerDesigner_and_GBrowse_2" class="mw-headline">PrimerDesigner and [GBrowse](GBrowse.1 "GBrowse") 2</span>
+## PrimerDesigner and [GBrowse](GBrowse.1 "GBrowse") 2
 
 The PrimerDesigner plugin does not work with
 [GBrowse](GBrowse.1 "GBrowse") 2.00. Work is currently underway to fix
 this before the next release of GBrowse.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse Plugins](Category%253AGBrowse_Plugins "Category%253AGBrowse Plugins")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Help](Category%253AHelp "Category%253AHelp")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/PrimerDesigner.pm" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 11:19 on 22 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">228,182 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

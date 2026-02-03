@@ -1,23 +1,7 @@
 ---
 title: "A Brief Guide to Databases"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">A Brief Guide to Databases</span>
-
-
-
-
-
-
-
+# A Brief Guide to Databases
 
 
 A database provides infrastructure for storing, managing, and retrieving
@@ -26,22 +10,13 @@ information.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Tables,
   Records, and Attributes</span>](#Tables.2C_Records.2C_and_Attributes)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Example</span>](#Example)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Keys</span>](#Keys)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Example</span>](#Example_2)
+  - [Example](#Example)
+- [Keys](#Keys)
+  - [Example](#Example_2)
 
 
-
-## <span id="Tables.2C_Records.2C_and_Attributes" class="mw-headline">Tables, Records, and Attributes</span>
+## Tables, Records, and Attributes
 
 Databases store information in **tables**. A database usually has
 multiple tables containing data on different types of things.
@@ -55,7 +30,7 @@ described in the table.
 Columns, or **attributes**, are the aspects of the item that we are
 collecting information on.
 
-### <span id="Example" class="mw-headline">Example</span>
+### Example
 
 Here's an example of a table in a database containing information about
 some books. Each record represents a book, and the attributes that we
@@ -74,7 +49,7 @@ book
 
   
 
-## <span id="Keys" class="mw-headline">Keys</span>
+## Keys
 
 In a database table, certain attributes (columns) are **keys**. Keys are
 used to identify records (rows) and link records together.
@@ -92,7 +67,7 @@ becomes a **foreign** key.
 
   
 
-### <span id="Example_2" class="mw-headline">Example</span>
+### Example
 
 Looking at our previous example of the book database, the ISBN is the
 primary key in this database table. The title could be used as an
@@ -152,91 +127,3 @@ book
 | price  | 189.00     |
 
 price
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Documentation](Category%253ADocumentation "Category%253ADocumentation")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/A_Brief_Guide_to_Databases"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:18 on 7 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">19,185 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

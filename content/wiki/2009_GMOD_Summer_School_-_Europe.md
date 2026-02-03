@@ -1,23 +1,7 @@
 ---
 title: "2009 GMOD Summer School - Europe"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2009 GMOD Summer School - Europe</span>
-
-
-
-
-
-
-
+# 2009 GMOD Summer School - Europe
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -61,39 +45,25 @@ title="GMOD Summer School">GMOD Summer School</a> was offered in
 2009](2009_GMOD_Summer_School_-_Americas "2009 GMOD Summer School - Americas").
 
 
-## Contents
+  Program](#Program)
+- [Instructors](#Instructors)
+- [Prerequisites](#Prerequisites)
+  - [System
+    Requirements](#System_Requirements)
+- [Cost](#Cost)
+- [Location](#Location)
+- [Transportation, Lodging,
+  Meals](#Transportation.2C_Lodging.2C_Meals)
+- [Sponsors](#Sponsors)
+- [Feedback](#Feedback)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Program</span>](#Program)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Instructors</span>](#Instructors)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">System
-    Requirements</span>](#System_Requirements)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Cost</span>](#Cost)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Location</span>](#Location)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Transportation, Lodging,
-  Meals</span>](#Transportation.2C_Lodging.2C_Meals)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Sponsors</span>](#Sponsors)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-
-
-
-## <span id="Program" class="mw-headline">Program</span>
+## Program
 
 The program featured 3 ½ days of hands-on training starting with an
 overview of GMOD, and then covering the installation, configuration, and
 administration of several popular [GMOD
 Components](GMOD_Components "GMOD Components").
-
 
 
 The summer school GMOD component sessions are available as [online
@@ -110,7 +80,6 @@ title="Apollo Tutorial">Apollo</a>, [Artemis-Chado
 Integration](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial"),
 and <a href="JBrowse_Tutorial" class="mw-redirect"
 title="JBrowse Tutorial">JBrowse</a>.
-
 
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
@@ -337,7 +306,7 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 </tbody>
 </table>
 
-## <span id="Instructors" class="mw-headline">Instructors</span>
+## Instructors
 
 | Instructor | GMOD Contribution | Affiliation |
 |----|----|----|
@@ -362,7 +331,7 @@ rel="nofollow">Wellcome Trust Sanger Institute</a> |
 | [Junjun Zhang](User%253AJunjun "User%253AJunjun") | [BioMart](BioMart "BioMart") developer | <a href="http://www.oicr.on.ca/" class="external text"
 rel="nofollow">OICR</a> |
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 *The course requires a minimal level of Linux systems administration
 knowledge* (see [Computing
@@ -379,7 +348,7 @@ GBrowse data.* This also requires installing Apache, and
 **Getting a basic GBrowse up and running on your system will be assigned
 as homework to be done prior to the course's start.**
 
-### <span id="System_Requirements" class="mw-headline">System Requirements</span>
+### System Requirements
 
 <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
@@ -395,7 +364,6 @@ in each succeeding session.
 VMware on Windows and Linux
 
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windoze" />
@@ -404,7 +372,6 @@ height="48" alt="Windoze" />
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 
 A free VMware player is available for [Microsoft
@@ -422,11 +389,9 @@ Participants can also bring *newer Macs with Intel processors*. The
 Intel processor is a requirement for all the packages discussed below.
 
 
-
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 
 There is no free VMware player that runs *directly* under [Mac OS
@@ -438,11 +403,9 @@ other options, *all of which require an Intel Mac*:
 VMware Fusion
 
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg" width="48"
 height="48" alt="VMWareFusionsLogo.jpg" /></a>
-
 
 
 <a href="http://www.vmware.com/products/fusion/" class="external text"
@@ -456,12 +419,10 @@ VMware Fusion available for download.**
 Mac OS 10.5 (Leopard) and Boot Camp
 
 
-
 <a href="http://www.apple.com/macosx/features/bootcamp.html"
 rel="nofollow" title="Boot Camp"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/09/AppleBootCampLogo.jpg" width="48"
 height="60" alt="Boot Camp" /></a>
-
 
 
 The <a href="http://www.apple.com/macosx/" class="external text"
@@ -476,7 +437,7 @@ OS.\*
 time using Boot Camp. In practice, this appears to only work easily when
 you first get your system.*
 
-## <span id="Cost" class="mw-headline">Cost</span>
+## Cost
 
 Tuition for the course was £95. Participants were responsible for their
 own travel and living expenses.
@@ -485,7 +446,7 @@ Tuition for this course did not include registration for the [August
 2009 GMOD Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting").
 The meeting had a separate registration cost from the summer school.
 
-## <span id="Location" class="mw-headline">Location</span>
+## Location
 
 The course was held at the
 <a href="http://www.mstc.ox.ac.uk/" class="external text"
@@ -495,7 +456,7 @@ rel="nofollow">University of Oxford</a>, in
 <a href="http://www.oxfordcity.co.uk/" class="external text"
 rel="nofollow">Oxford, United Kingdom</a>.
 
-## <span id="Transportation.2C_Lodging.2C_Meals" class="mw-headline">Transportation, Lodging, Meals</span>
+## Transportation, Lodging, Meals
 
 See the
 [Transportation](GMOD_Europe_2009#Transportation "GMOD Europe 2009") and
@@ -505,15 +466,13 @@ information on transport and lodging for both the summer school and
 [August 2009 GMOD
 Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting").
 
-## <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+## Sponsors
 
 
 <a href="http://www.molbiol.ox.ac.uk/" rel="nofollow" title="CBRG"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ad/Cbrg.jpg/300px-Cbrg.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/a/ad/Cbrg.jpg/450px-Cbrg.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ad/Cbrg.jpg 2x"
 width="300" height="30" alt="CBRG" /></a>
-
 
 
 We would like to thank the
@@ -524,7 +483,7 @@ events.
 
   
 
-## <span id="Feedback" class="mw-headline">Feedback</span>
+## Feedback
 
 19 of 25 students provided feedback on the course.
 
@@ -576,93 +535,3 @@ to 3 (average) to 5 (very good), or N.A. if you have no opinion.**
 </tr>
 </tbody>
 </table>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2009_GMOD_Summer_School_-2D_Europe"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:13 on 16 April
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">303,624 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

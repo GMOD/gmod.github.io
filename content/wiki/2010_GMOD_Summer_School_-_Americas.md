@@ -1,23 +1,7 @@
 ---
 title: "2010 GMOD Summer School - Americas"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2010 GMOD Summer School - Americas</span>
-
-
-
-
-
-
-
+# 2010 GMOD Summer School - Americas
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC"
@@ -75,40 +59,28 @@ Tutorials](Training_and_Outreach#Online_Tutorials "Training and Outreach").**
   
 
 
-## Contents
+  Applications](#Applications)
+- [Program](#Program)
+- [Instructors](#Instructors)
+- [Prerequisites](#Prerequisites)
+- [System
+  Requirements](#System_Requirements)
+  - [VMware on
+    Windows and Linux](#VMware_on_Windows_and_Linux)
+  - [VMware on
+    Mac OS X](#VMware_on_Mac_OS_X)
+- [Costs](#Costs)
+- [Sponsor](#Sponsor)
+- [Travel,
+  Lodging and Food](#Travel.2C_Lodging_and_Food)
+- [Feedback](#Feedback)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Applications</span>](#Applications)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Program</span>](#Program)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Instructors</span>](#Instructors)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">5</span> <span class="toctext">System
-  Requirements</span>](#System_Requirements)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">VMware on
-    Windows and Linux</span>](#VMware_on_Windows_and_Linux)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">VMware on
-    Mac OS X</span>](#VMware_on_Mac_OS_X)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Costs</span>](#Costs)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Sponsor</span>](#Sponsor)
-- [<span class="tocnumber">8</span> <span class="toctext">Travel,
-  Lodging and Food</span>](#Travel.2C_Lodging_and_Food)
-- [<span class="tocnumber">9</span>
-  <span class="toctext">Feedback</span>](#Feedback)
-
-
-
-## <span id="Applications" class="mw-headline">Applications</span>
+## Applications
 
 **The deadline for applying to the summer school has now passed.**
 
-## <span id="Program" class="mw-headline">Program</span>
+## Program
 
 The program featured 4 full days of hands-on training starting with an
 overview of GMOD, and then covering the installation, configuration, and
@@ -348,7 +320,7 @@ Ends</td>
 </tbody>
 </table>
 
-## <span id="Instructors" class="mw-headline">Instructors</span>
+## Instructors
 
 | Instructor | GMOD Affiliation | Affiliation |
 |----|----|----|
@@ -369,8 +341,7 @@ rel="nofollow">University of California, Berkeley</a> |
 | [James Taylor](User%253AJamesTaylor "User%253AJamesTaylor") | [Galaxy](Galaxy.1 "Galaxy") | <a href="http://www.emory.edu" class="external text"
 rel="nofollow">Emory University</a> |
 
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
-
+## Prerequisites
 
 
 *The course requires a minimal level of Linux systems administration
@@ -390,15 +361,12 @@ GBrowse data.* This also requires installing Apache, and
 [BioPerl](BioPerl "BioPerl") and all its dependencies.
 
 
-
-## <span id="System_Requirements" class="mw-headline">System Requirements</span>
-
+## System Requirements
 
 
 <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a>
-
 
 
 <span style="font-size: 110%">**Participants are required to bring their
@@ -409,8 +377,7 @@ The course starts with getting a VMware image (built specifically for
 the course) up and running on your machine. We then build upon that
 image in each succeeding session.
 
-### <span id="VMware_on_Windows_and_Linux" class="mw-headline">VMware on Windows and Linux</span>
-
+### VMware on Windows and Linux
 
 
 <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img
@@ -421,7 +388,6 @@ height="48" alt="Windows" /></a>
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
 alt="Linux" />
-
 
 
 A free VMware player is available for [Microsoft
@@ -435,14 +401,12 @@ on your laptop.
 
   
 
-### <span id="VMware_on_Mac_OS_X" class="mw-headline">VMware on Mac OS X</span>
-
+### VMware on Mac OS X
 
 
 <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a>
-
 
 
 Participants can also bring *newer Macs with Intel processors*. The
@@ -452,11 +416,9 @@ X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several
 other options, **all of which require an Intel Mac**:
 
 
-
 <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a>
-
 
 
 VMware Fusion
@@ -472,11 +434,9 @@ recommend this option for Mac users. There is a fully functional, 30 day
 free trial version of VMware Fusion available for download.**
 
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" />
-
 
 
 VirtualBox
@@ -486,7 +446,7 @@ rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel
 Macs (and Windows, Linux and Solaris too). It claims to be capable of
 running VMware images, *but we have not tested this with our images.*
 
-## <span id="Costs" class="mw-headline">Costs</span>
+## Costs
 
 This course is *free* thanks to
 
@@ -500,15 +460,13 @@ This course is *free* thanks to
   rel="nofollow">NESCent</a>
 - The grants of the individual instructors
 
-## <span id="Sponsor" class="mw-headline">Sponsor</span>
-
+## Sponsor
 
 
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/140px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="140" height="130" alt="NESCent" /></a>
-
 
 
 We would like to thank the
@@ -526,7 +484,7 @@ are underrepresented in evolutionary biology and improving evolution
 education, and offers resources for scientists, educators, and the
 general public that meet these goals.
 
-## <span id="Travel.2C_Lodging_and_Food" class="mw-headline">Travel, Lodging and Food</span>
+## Travel, Lodging and Food
 
 The course was held at the
 <a href="http://www.nescent.org/" class="external text"
@@ -539,7 +497,7 @@ minute drive from NESCent.
 Participants are responsible for their own travel, lodging and some meal
 costs.
 
-## <span id="Feedback" class="mw-headline">Feedback</span>
+## Feedback
 
 22 of 25 participants filled out the post-course feedback form.
 
@@ -661,7 +619,6 @@ overall.</strong></td>
 *Comments on the 2010 GMOD Summer School - Americas*
 
 
-
 <table data-cellspacing="2"
 style="text-align: center; line-height: 130%">
 <colgroup>
@@ -717,94 +674,3 @@ and the idea of building up a community. You are doing a great job!”
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [Events](Category%253AEvents "Category%253AEvents")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2010_GMOD_Summer_School_-2D_Americas"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:14 on 16 April
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">304,908 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,45 +1,21 @@
 ---
 title: "GBrowse Gentoo HOWTO"
 ---
+# GBrowse Gentoo HOWTO
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Gentoo HOWTO</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">2</span> <span class="toctext">Installing
+  Prerequisites](#Prerequisites)
+- [Installing
   GBrowse using net
-  installer</span>](#Installing_GBrowse_using_net_installer)
-- [<span class="tocnumber">3</span> <span class="toctext">Installing
-  GBrowse with Source File</span>](#Installing_GBrowse_with_Source_File)
-- [<span class="tocnumber">4</span> <span class="toctext">Starting
-  GBrowse</span>](#Starting_GBrowse)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">AUTHORS</span>](#AUTHORS)
+  installer](#Installing_GBrowse_using_net_installer)
+- [Installing
+  GBrowse with Source File](#Installing_GBrowse_with_Source_File)
+- [Starting
+  GBrowse](#Starting_GBrowse)
+- [AUTHORS](#AUTHORS)
 
 
-
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+# Prerequisites
 
 Install Apache
 
@@ -129,7 +105,7 @@ Cite from
 class="external free"
 rel="nofollow">http://www.bioperl.org/wiki/Installing_Bioperl_for_Unix</a>.
 
-# <span id="Installing_GBrowse_using_net_installer" class="mw-headline">Installing GBrowse using net installer</span>
+# Installing GBrowse using net installer
 
 Now we have a very convenient way to have Gbrowse and all its
 prerequisites, like latest leased version of bioperl, GD, which were
@@ -166,12 +142,9 @@ you should change them to
 You may go to the main page of Gbrowse to see more detailed instructions
 about netinstaller.
 
-# <span id="Installing_GBrowse_with_Source_File" class="mw-headline">Installing GBrowse with Source File</span>
+# Installing GBrowse with Source File
 
 Download GBrowse Source from  
-
-<!-- -->
-
      http://prdownloads.sourceforge.net/gmod
 
 You should be uncompressed and unpacked the source files.
@@ -187,7 +160,7 @@ Following these command:
      make
      make install
 
-# <span id="Starting_GBrowse" class="mw-headline">Starting GBrowse</span>
+# Starting GBrowse
 
 Start mysql and apache
 
@@ -198,94 +171,6 @@ Now browse the documentation and example database at
 <a href="http://localhost/gbrowse" class="external free"
 rel="nofollow">http://localhost/gbrowse</a>.
 
-# <span id="AUTHORS" class="mw-headline">AUTHORS</span>
+# AUTHORS
 
 Tao Zhang \<forrest_zhang@163.com\>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Linux](Category%253ALinux "Category%253ALinux")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Gentoo_HOWTO" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:00 on 23 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">62,187 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

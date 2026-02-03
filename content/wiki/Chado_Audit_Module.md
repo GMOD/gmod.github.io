@@ -1,55 +1,28 @@
 ---
 title: "Chado Audit Module"
 ---
+# Chado Audit Module
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Audit Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Audit
-    Policy</span>](#Audit_Policy)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Transaction Use
-    Cases</span>](#Transaction_Use_Cases)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">Insertion of a New
-      Record</span>](#Insertion_of_a_New_Record)
-    - [<span class="tocnumber">1.2.2</span> <span class="toctext">Update
-      of an Existing Record</span>](#Update_of_an_Existing_Record)
-    - [<span class="tocnumber">1.2.3</span>
-      <span class="toctext">Deletion of an Existing
-      Record</span>](#Deletion_of_an_Existing_Record)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Implementation
-    Issues</span>](#Implementation_Issues)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Listing of
+  Introduction](#Introduction)
+  - [Audit
+    Policy](#Audit_Policy)
+  - [Transaction Use
+    Cases](#Transaction_Use_Cases)
+    - [Insertion of a New
+      Record](#Insertion_of_a_New_Record)
+    - [Update
+      of an Existing Record](#Update_of_an_Existing_Record)
+    - [Deletion of an Existing
+      Record](#Deletion_of_an_Existing_Record)
+  - [Implementation
+    Issues](#Implementation_Issues)
+  - [Listing of
     MODs' Implemented Audit Tracking
-    Systems</span>](#Listing_of_MODs.27_Implemented_Audit_Tracking_Systems)
+    Systems](#Listing_of_MODs.27_Implemented_Audit_Tracking_Systems)
 
 
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 The Audit module is not a module in the same sense as the other Chado
 modules. It is a set of recommendations on how one might implement audit
@@ -61,7 +34,7 @@ rel="nofollow">FlyBase</a>. The SQL used at Flybase is
 
   
 
-### <span id="Audit_Policy" class="mw-headline">Audit Policy</span>
+### Audit Policy
 
 We consider the implementation of auditing policy as a database
 administration issue and subject to the local requirements of specific
@@ -133,15 +106,15 @@ shadow audit table, *gene_audit*:
 
   
 
-### <span id="Transaction_Use_Cases" class="mw-headline">Transaction Use Cases</span>
+### Transaction Use Cases
 
-#### <span id="Insertion_of_a_New_Record" class="mw-headline">Insertion of a New Record</span>
+#### Insertion of a New Record
 
 When a record is initially inserted into an chado table, the same record
 is inserted into the corresponding shadow audit table, with the current
 timestamp and *transaction_type* = 'i'.
 
-#### <span id="Update_of_an_Existing_Record" class="mw-headline">Update of an Existing Record</span>
+#### Update of an Existing Record
 
 When a record is to be updated, before the update transaction is
 executed in chado, the existing chado record is copied to the
@@ -149,7 +122,7 @@ corresponding shadow audit table, with the current timestamp and
 *transaction_type* = 'u'. The update transaction is then executed in
 chado.
 
-#### <span id="Deletion_of_an_Existing_Record" class="mw-headline">Deletion of an Existing Record</span>
+#### Deletion of an Existing Record
 
 When a record is to be deleted, before the delete transaction is executed
 in chado, the existing chado record is copied to the corresponding
@@ -158,7 +131,7 @@ shadow audit table, with the corrent timestamp and *transaction_type* =
 
   
 
-### <span id="Implementation_Issues" class="mw-headline">Implementation Issues</span>
+### Implementation Issues
 
 The benefit of this system is that it allows a certain amount of "time
 travel", or the ability to reconstruct the database to its state at a
@@ -178,95 +151,8 @@ entered and date last updated of gene records) - it is not know whether
 implementing this will be too expensive using this shadow audit db
 method
 
-### <span id="Listing_of_MODs.27_Implemented_Audit_Tracking_Systems" class="mw-headline">Listing of MODs' Implemented Audit Tracking Systems</span>
+### Listing of MODs' Implemented Audit Tracking Systems
 
 A listing of instances of audit tracking systems implemented by
 different MODs is provided
 [here](Audit_tracking_by_mods "Audit tracking by mods").
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Audit_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:31 on 18 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">63,616 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

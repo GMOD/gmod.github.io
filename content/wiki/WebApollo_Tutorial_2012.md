@@ -1,23 +1,7 @@
 ---
 title: "WebApollo Tutorial 2012"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">WebApollo Tutorial 2012</span>
-
-
-
-
-
-
-
+# WebApollo Tutorial 2012
 
 
 This [WebApollo](WebApollo.1 "WebApollo") tutorial was presented by [Ed
@@ -35,44 +19,34 @@ session was taught, and this tutorial was run using a beta version of
 the tool.**
 
 
-## Contents
+  Introduction](#Introduction)
+- [Using
+  WebApollo](#Using_WebApollo)
+- [Installing
+  WebApollo](#Installing_WebApollo)
+  - [Server
+    operating system](#Server_operating_system)
+  - [Prerequisites](#Prerequisites)
+- [Installation](#Installation)
+  - [User
+    database](#User_database)
+- [Deploy
+  servlet](#Deploy_servlet)
+- [Configuration](#Configuration)
+  - [Main
+    configuration](#Main_configuration)
+  - [Canned
+    comments](#Canned_comments)
+  - [Search
+    tools](#Search_tools)
+    - [Blat](#Blat)
+- [Data
+  generation](#Data_generation)
+  - [Static
+    data generation](#Static_data_generation)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span> <span class="toctext">Using
-  WebApollo</span>](#Using_WebApollo)
-- [<span class="tocnumber">3</span> <span class="toctext">Installing
-  WebApollo</span>](#Installing_WebApollo)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Server
-    operating system</span>](#Server_operating_system)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Installation</span>](#Installation)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">User
-    database</span>](#User_database)
-- [<span class="tocnumber">5</span> <span class="toctext">Deploy
-  servlet</span>](#Deploy_servlet)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Main
-    configuration</span>](#Main_configuration)
-  - [<span class="tocnumber">6.2</span> <span class="toctext">Canned
-    comments</span>](#Canned_comments)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Search
-    tools</span>](#Search_tools)
-    - [<span class="tocnumber">6.3.1</span>
-      <span class="toctext">Blat</span>](#Blat)
-- [<span class="tocnumber">7</span> <span class="toctext">Data
-  generation</span>](#Data_generation)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Static
-    data generation</span>](#Static_data_generation)
-
-
-
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
 <a
 href="https://docs.google.com/presentation/pub?id=17jkEV0jJ3gl_B-cRK5lrG8jbQPULPAnEcPo9Acu7CCU&amp;start=false&amp;loop=false&amp;delayms=3000"
@@ -80,7 +54,7 @@ class="external text" rel="nofollow">WebApollo Presentation</a>
 
   
 
-## <span id="Using_WebApollo" class="mw-headline">Using WebApollo</span>
+## Using WebApollo
 
 WebApollo is a web-based application, so the only requirement to use it
 is a web browser. It has been tested with Chrome, Firefox, and Safari.
@@ -165,32 +139,20 @@ We only have one contig to work with. Click on the `Edit` button.
 - Make intron
 - Duplicate
 - Set translation start
-
-<!-- -->
-
 - Realtime client updating
-
-<!-- -->
-
 - Undo / Redo
-
-<!-- -->
-
 - Comments
 - DBXrefs
 - Get sequence
-
-<!-- -->
-
 - Sequence searching
 
-## <span id="Installing_WebApollo" class="mw-headline">Installing WebApollo</span>
+## Installing WebApollo
 
-### <span id="Server_operating_system" class="mw-headline">Server operating system</span>
+### Server operating system
 
 Any Unix like system (e.g., Unix, Linux, Mac OS X)
 
-### <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+### Prerequisites
 
 - Servlet container (must support servlet spec 3.0+) \[officially
   supported: Tomcat 7\]
@@ -229,7 +191,7 @@ Any Unix like system (e.g., Unix, Linux, Mac OS X)
 Note: All prerequisites have already been installed on the course's
 machine
 
-## <span id="Installation" class="mw-headline">Installation</span>
+## Installation
 
 The installation steps will be done in the command line. SSH into your
 AWS machine.
@@ -239,7 +201,7 @@ Uncompress the WebApollo.tgz tarball.
     $ cd
     $ tar -xvzf WebApollo.tgz
 
-### <span id="User_database" class="mw-headline">User database</span>
+### User database
 
 First we’ll need to create a database that will contain user permission
 information. WebApollo uses this database to determine who can access
@@ -313,7 +275,7 @@ mentioned above. You can get more detailed information on any given
 script (and other available options) using the “-h” or “--help” flag
 when running the script.
 
-## <span id="Deploy_servlet" class="mw-headline">Deploy servlet</span>
+## Deploy servlet
 
 We need to deploy the WAR file in the war directory from the unpacked
 tarball. We need to go into the `webapps` directory in our Tomcat
@@ -337,13 +299,13 @@ into it.
 That’s it! We’re done installing WebApollo. Now we need to move on to
 configuring the application.
 
-## <span id="Configuration" class="mw-headline">Configuration</span>
+## Configuration
 
 Most configuration files will reside in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/config`. We’ll need to
 configure a number of things before we can get WebApollo up and running.
 
-### <span id="Main_configuration" class="mw-headline">Main configuration</span>
+### Main configuration
 
 The main configuration is stored in
 `/usr/local/tomcat/tomcat7/webapps/WebApollo/config/config.xml`. Let’s
@@ -765,7 +727,7 @@ plugin, you’ll want to point this to the right configuration file (which
 will be dependent on your plugin). See the [Blat](#Blat) section for
 details on configuring WebApollo to use Blat.
 
-### <span id="Canned_comments" class="mw-headline">Canned comments</span>
+### Canned comments
 
 You can configure a set of predefined comments that will be available
 for users when adding comments through a dropdown menu. The
@@ -802,13 +764,13 @@ feature of type `sequence:gene` and `sequence:transcript`:
 ```
 
 
-### <span id="Search_tools" class="mw-headline">Search tools</span>
+### Search tools
 
 As mentioned previously, WebApollo makes use of tools for sequence
 searching rather than employing its own search algorithm. The only
 currently supported tool is command line Blat.
 
-#### <span id="Blat" class="mw-headline">Blat</span>
+#### Blat
 
 You’ll need to have Blat installed and a search database with your
 genomic sequences available to make use of this feature. The
@@ -889,7 +851,7 @@ are passed verbatim to the program. In this example, we’re passing the
 `-minIdentity` parameter with a value of `60` (60% identity). See the
 Blat documentation for information of all available options.
 
-## <span id="Data_generation" class="mw-headline">Data generation</span>
+## Data generation
 
 The steps for generating data (in particular static data) are mostly
 similar to [JBrowse](JBrowse.1 "JBrowse") data generation steps, with
@@ -997,7 +959,7 @@ We need to symlink the `data/seq/refSeqs.json` file in `data/seq`.
 
   
 
-### <span id="Static_data_generation" class="mw-headline">Static data generation</span>
+### Static data generation
 
 Generating data from GFF3 works best by having a separate GFF3 per
 source type. The output from Maker puts all sources in the same GFF3. We
@@ -1325,15 +1287,12 @@ with one contig. Click on the `Edit` button.
 Now have fun annotating!!!
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [2012 Summer
   School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
 - [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -1343,82 +1302,3 @@ Now have fun annotating!!!
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/WebApollo "Special%253ASearchByProperty/Has-20topic/WebApollo")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/WebApollo_Tutorial_2012" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:52 on 27 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">30,902 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

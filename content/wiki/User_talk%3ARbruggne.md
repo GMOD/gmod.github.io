@@ -1,57 +1,33 @@
 ---
 title: "User talk:Rbruggne"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">User talk:Rbruggne</span>
-
-
-
-
-
-
-
+# User talk:Rbruggne
 
 
 This is a scratch page for thoughts on development of the GMOD Bio
 Object Layer (GBOL).
 
 
-## Contents
+  Random](#Random)
+- [Object Layer
+  Design Goals](#Object_Layer_Design_Goals)
+- [Diagrams](#Diagrams)
+- [Simple Object
+  Layer](#Simple_Object_Layer)
+- [Bio Object
+  Layer](#Bio_Object_Layer)
+- [Configuration
+  Adaptor Thoughts](#Configuration_Adaptor_Thoughts)
+- [Analyses](#Analyses)
+- [Annotation
+  Properties](#Annotation_Properties)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Random</span>](#Random)
-- [<span class="tocnumber">2</span> <span class="toctext">Object Layer
-  Design Goals</span>](#Object_Layer_Design_Goals)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Diagrams</span>](#Diagrams)
-- [<span class="tocnumber">4</span> <span class="toctext">Simple Object
-  Layer</span>](#Simple_Object_Layer)
-- [<span class="tocnumber">5</span> <span class="toctext">Bio Object
-  Layer</span>](#Bio_Object_Layer)
-- [<span class="tocnumber">6</span> <span class="toctext">Configuration
-  Adaptor Thoughts</span>](#Configuration_Adaptor_Thoughts)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Analyses</span>](#Analyses)
-- [<span class="tocnumber">8</span> <span class="toctext">Annotation
-  Properties</span>](#Annotation_Properties)
-
-
-
-## <span id="Random" class="mw-headline">Random</span>
+## Random
 
 First things first. Can we pronounce GBOL gobble?
 
-## <span id="Object_Layer_Design_Goals" class="mw-headline">Object Layer Design Goals</span>
+## Object Layer Design Goals
 
 - Provide a simple object layer for manipulating generic genomic
   features, their locations, annotation properties, and supporting
@@ -69,7 +45,7 @@ First things first. Can we pronounce GBOL gobble?
   practices in how it represents the data. We need to start
   standardizing use.
 
-## <span id="Diagrams" class="mw-headline">Diagrams</span>
+## Diagrams
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6a/Gbol_architecture.png" width="489"
@@ -87,7 +63,7 @@ height="406" alt="Primitive Architecture Diagram" />
   saving simple objects to and from data stores. Initially, I'd like to
   implement that against chado & chado xml.
 
-## <span id="Simple_Object_Layer" class="mw-headline">Simple Object Layer</span>
+## Simple Object Layer
 
 As stated above, the simple object layer is essentially the chado schema
 in java object form.
@@ -102,7 +78,7 @@ in java object form.
   - Definitely want to go for the schema-driven class generation
     approach if the tools are good enough.
 
-## <span id="Bio_Object_Layer" class="mw-headline">Bio Object Layer</span>
+## Bio Object Layer
 
 These BioObjects will be extensions of the simple object class Feature.
 We've discussed the idea of having some sort of "configuration adaptor"
@@ -249,9 +225,6 @@ Extended Objects and methods:
       subsequence of.
     - String translate(): returns the translated peptide sequence of the
       CDS.
-
-<!-- -->
-
 - SO:0000851: CDSRegion
   - **Thoughts:**
     - First, I don't really see the utility of CDS_region features -
@@ -289,11 +262,11 @@ Others....
 - SO:0000105: ChromosomeArm
 - SO:0000148: Supercontig
 
-## <span id="Configuration_Adaptor_Thoughts" class="mw-headline">Configuration Adaptor Thoughts</span>
+## Configuration Adaptor Thoughts
 
 Hmmm....
 
-## <span id="Analyses" class="mw-headline">Analyses</span>
+## Analyses
 
 I'd like a bioperl set of objects that allow you to traverse sequence
 alignments, hits, & HSPs. Certainly, people are always asking how to get
@@ -301,92 +274,9 @@ analyses in and out of Chado. I think this will involve an extension of
 the Feature class like the bio object layer. Err... It probably should
 be part of the bio object layer.
 
-## <span id="Annotation_Properties" class="mw-headline">Annotation Properties</span>
+## Annotation Properties
 
 Is there a controlled vocabulary for annotation properties? We need to
 specify conventions for things like, storing feature comments and
 comment properties. How about annotation evidence structure and
 confidence codes from GO?
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-- <span id="ca-nstab-user">User page</span>
-- <span id="ca-talk"><a href="User_talk%253ARbruggne" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:23 on 14 July
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">3,368 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

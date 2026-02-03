@@ -1,79 +1,64 @@
 ---
 title: "Chado Manual"
 ---
-<span id="top"></span>
+# Chado Manual
 
-# <span dir="auto">Chado Manual</span>
-
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">The Chado
+  Introduction](#Introduction)
+  - [The Chado
     Documentation's
-    Vocabulary</span>](#The_Chado_Documentation.27s_Vocabulary)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Modularity</span>](#Modularity)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">Ontologies</span>](#Ontologies)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">Associated
-    Software</span>](#Associated_Software)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Complexity
-    and Detail</span>](#Complexity_and_Detail)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Data
-    Integration</span>](#Data_Integration)
-  - [<span class="tocnumber">1.7</span>
-    <span class="toctext">Support</span>](#Support)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Modules</span>](#Modules)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Module
-    Dependencies</span>](#Module_Dependencies)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Inter-module Linking
-    Tables</span>](#Inter-module_Linking_Tables)
-- [<span class="tocnumber">3</span> <span class="toctext">Chado Naming
-  Conventions</span>](#Chado_Naming_Conventions)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Case
-    sensitivity</span>](#Case_sensitivity)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Table
-    names</span>](#Table_names)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Column
-    names</span>](#Column_names)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">Primary
-    and foreign key names</span>](#Primary_and_foreign_key_names)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Constraints</span>](#Constraints)
-  - [<span class="tocnumber">3.6</span>
-    <span class="toctext">Indexes</span>](#Indexes)
-  - [<span class="tocnumber">3.7</span>
-    <span class="toctext">Views</span>](#Views)
-- [<span class="tocnumber">4</span> <span class="toctext">Design
-  Patterns</span>](#Design_Patterns)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Module
-    System</span>](#Module_System)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Module
-    Metadata</span>](#Module_Metadata)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">View
-    Layers</span>](#View_Layers)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Inter-schema
-    Bridges</span>](#Inter-schema_Bridges)
-    - [<span class="tocnumber">4.4.1</span> <span class="toctext">GODB
-      Bridge</span>](#GODB_Bridge)
-    - [<span class="tocnumber">4.4.2</span> <span class="toctext">BioSQL
-      Bridge</span>](#BioSQL_Bridge)
-- [<span class="tocnumber">5</span> <span class="toctext">DBMS
-  Functions</span>](#DBMS_Functions)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Function
-    Interface Definitions</span>](#Function_Interface_Definitions)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Function
-    Implementations</span>](#Function_Implementations)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Glossary</span>](#Glossary)
+    Vocabulary](#The_Chado_Documentation.27s_Vocabulary)
+  - [Modularity](#Modularity)
+  - [Ontologies](#Ontologies)
+  - [Associated
+    Software](#Associated_Software)
+  - [Complexity
+    and Detail](#Complexity_and_Detail)
+  - [Data
+    Integration](#Data_Integration)
+  - [Support](#Support)
+- [Modules](#Modules)
+  - [Module
+    Dependencies](#Module_Dependencies)
+  - [Inter-module Linking
+    Tables](#Inter-module_Linking_Tables)
+- [Chado Naming
+  Conventions](#Chado_Naming_Conventions)
+  - [Case
+    sensitivity](#Case_sensitivity)
+  - [Table
+    names](#Table_names)
+  - [Column
+    names](#Column_names)
+  - [Primary
+    and foreign key names](#Primary_and_foreign_key_names)
+  - [Constraints](#Constraints)
+  - [Indexes](#Indexes)
+  - [Views](#Views)
+- [Design
+  Patterns](#Design_Patterns)
+  - [Module
+    System](#Module_System)
+  - [Module
+    Metadata](#Module_Metadata)
+  - [View
+    Layers](#View_Layers)
+  - [Inter-schema
+    Bridges](#Inter-schema_Bridges)
+    - [GODB
+      Bridge](#GODB_Bridge)
+    - [BioSQL
+      Bridge](#BioSQL_Bridge)
+- [DBMS
+  Functions](#DBMS_Functions)
+  - [Function
+    Interface Definitions](#Function_Interface_Definitions)
+  - [Function
+    Implementations](#Function_Implementations)
+- [Glossary](#Glossary)
 
-## <span id="Introduction" class="mw-headline">Introduction</span>
+## Introduction
 
-### <span id="The_Chado_Documentation.27s_Vocabulary" class="mw-headline">The Chado Documentation's Vocabulary</span>
+### The Chado Documentation's Vocabulary
 
 It will be useful to the reader to clarify a number of terms used
 throughout the Chado documentation. Because these terms have multiple
@@ -128,7 +113,7 @@ As an example the phrase _loading the schema_ might be used in this
 document to refer to creating within a DBMS the tables and other
 database structural elements that make up Chado.
 
-### <span id="Modularity" class="mw-headline">Modularity</span>
+### Modularity
 
 The Chado schema has been designed with modularity and
 compartmentalization of function in mind. Groups of tables concerned
@@ -165,7 +150,7 @@ domains of knowledge. The fact that new modules have been introduced
 into Chado since its initial release (e.g. _phylogeny_, _mage_, _stock_)
 confirms that the authors' design concepts were correct.
 
-### <span id="Ontologies" class="mw-headline">Ontologies</span>
+### Ontologies
 
 One of the more profound, recent changes in the nature of biology has to
 do with the adoption of ontologies, or controlled vocabularies, as a way
@@ -179,7 +164,7 @@ feature makes it extremely expressive. The acceptance of ontologies as
 general standards, and Chado’s use of these ontologies, make Chado an
 excellent platform for annotation of biological data.
 
-### <span id="Associated_Software" class="mw-headline">Associated Software</span>
+### Associated Software
 
 Chado is considered to be one of the key components in the GMOD suite.
 It should not be considered **the** database of GMOD, there are other
@@ -201,7 +186,7 @@ different utilities that can move complex data in and out of Chado as
 [XML](Glossary#XML "Glossary") ([XORT](XORT.1 "XORT"),
 [GMODTools](GMODTools "GMODTools")).
 
-### <span id="Complexity_and_Detail" class="mw-headline">Complexity and Detail</span>
+### Complexity and Detail
 
 Part of the impetus for the creation of Chado was the need for a
 database that could describe **all** the detail that arises from
@@ -220,7 +205,7 @@ developers and these model organism communities has resulted in a
 extensively tested data model, capable of handling both detail and
 departures from the _standard model_.
 
-### <span id="Data_Integration" class="mw-headline">Data Integration</span>
+### Data Integration
 
 One characteristic of biology over the past decades has been the major
 impact of methods or technologies. With each new adopted approach
@@ -242,7 +227,7 @@ module](Chado_Companalysis_Module "Chado Companalysis Module")). This is
 not to suggest that such an effort is easy, rather that with a schema
 like Chado such a proposition is actually _possible_.
 
-### <span id="Support" class="mw-headline">Support</span>
+### Support
 
 The community using Chado, and GMOD, is extensive and growing. Chado is
 in use at a number of sites worldwide (see [GMOD
@@ -266,7 +251,7 @@ There is also Chado Documentation in this Wiki:
 - [Chado Tables](Chado_Tables "Chado Tables")
 - [Chado Best Practices](Chado_Best_Practices "Chado Best Practices")
 
-## <span id="Modules" class="mw-headline">Modules</span>
+## Modules
 
 We organised the tables into distinct modular components with tightly
 defined dependencies. This is recognised as good software engineering
@@ -315,7 +300,7 @@ their own.
   biological collections
 - [WWW](Chado_WWW_Module "Chado WWW Module") -
 
-### <span id="Module_Dependencies" class="mw-headline">Module Dependencies</span>
+### Module Dependencies
 
 There is one module,
 [general](Chado_General_Module "Chado General Module"), that does not
@@ -344,7 +329,7 @@ module](Chado_CV_Module "Chado CV Module"), or both.
 | stock        | cv pub general organism genetic                               |
 | www          | sequence cv pub phenotype organism expression general genetic |
 
-### <span id="Inter-module_Linking_Tables" class="mw-headline">Inter-module Linking Tables</span>
+### Inter-module Linking Tables
 
 These can be thought of as floating outside of the respective modules
 they bridge, although they are generally bundled with one or the other
@@ -400,15 +385,15 @@ module.
 | wwwuser_project              | www       | general    |
 | wwwuser_pub                  | www       | pub        |
 
-## <span id="Chado_Naming_Conventions" class="mw-headline">Chado Naming Conventions</span>
+## Chado Naming Conventions
 
-### <span id="Case_sensitivity" class="mw-headline">Case sensitivity</span>
+### Case sensitivity
 
 We use lowercase in all tables and column names - DBMSs differ in how
 they treat case sensitivity. For example, Oracle will automatically
 capitalize everything. So it's best to be neutral and use lowercase.
 
-### <span id="Table_names" class="mw-headline">Table names</span>
+### Table names
 
 In table names, we use underscores for linking tables; e.g.
 _feature_dbxref_ is a linking table between _feature_ and _dbxref_.
@@ -420,7 +405,7 @@ harder to read, but it does allow consistent usage of underscores as
 above. FeatureProp could be used where it is known the DBMS is case
 insensitive.
 
-### <span id="Column_names" class="mw-headline">Column names</span>
+### Column names
 
 In column names, we also use concatenated noun phrases, except in the
 case of primary or foreign keys, e.g. _dbxref_id_.
@@ -433,22 +418,22 @@ the feature table. By consistently using abbreviated forms we stop
 column names getting too big (many DBMSs will complain about long column
 names).
 
-### <span id="Primary_and_foreign_key_names" class="mw-headline">Primary and foreign key names</span>
+### Primary and foreign key names
 
 We use the same column name for primary and foreign key columns - very
 useful for NATURAL JOIN statements.
 
-### <span id="Constraints" class="mw-headline">Constraints</span>
+### Constraints
 
 Constraint names are a concatenation of table name, underscore, the
 letter _c_, and a digit. For example: _feature_phenotype_c1_.
 
-### <span id="Indexes" class="mw-headline">Indexes</span>
+### Indexes
 
 Index names are a concatenation of table name, underscore, the string
 _idx_, and a digit. For example: _feature_phenotype_idx1_.
 
-### <span id="Views" class="mw-headline">Views</span>
+### Views
 
 The names of views are lowercase. Where a table name is a noun phrase
 rather than a single noun, we concatenate the words together using the
@@ -456,13 +441,13 @@ _underscore_. For example the view used to query for nucleotide motifs
 is called _nucleotide_motif_ and the view used to find exons from
 pseudogenes is called _pseudogenic_exon_.
 
-## <span id="Design_Patterns" class="mw-headline">Design Patterns</span>
+## Design Patterns
 
-### <span id="Module_System" class="mw-headline">Module System</span>
+### Module System
 
-### <span id="Module_Metadata" class="mw-headline">Module Metadata</span>
+### Module Metadata
 
-### <span id="View_Layers" class="mw-headline">View Layers</span>
+### View Layers
 
 Views can be thought of as virtual tables. They provide a powerful
 abstraction layer over the database. All views should be portable across
@@ -478,13 +463,13 @@ chado/modules/MODULE-NAME/views/MODULE-NAME-report.sql
 Collections of view deﬁnitions are bundled into packages, each package
 is a .sql ﬁle.
 
-### <span id="Inter-schema_Bridges" class="mw-headline">Inter-schema Bridges</span>
+### Inter-schema Bridges
 
-#### <span id="GODB_Bridge" class="mw-headline">GODB Bridge</span>
+#### GODB Bridge
 
-#### <span id="BioSQL_Bridge" class="mw-headline">BioSQL Bridge</span>
+#### BioSQL Bridge
 
-## <span id="DBMS_Functions" class="mw-headline">DBMS Functions</span>
+## DBMS Functions
 
 DBMS Functions in Chado are entirely optional.
 
@@ -495,7 +480,7 @@ Collections of function definitions are bundled into packages. Each
 package comes with an **interface descriptions** and one or more
 **implementations**.
 
-### <span id="Function_Interface_Definitions" class="mw-headline">Function Interface Definitions</span>
+### Function Interface Definitions
 
 The interface descriptions are stored in a \*.sqlapi file. The syntax
 used is a variant of SQL and is intended primarily as a consistent way
@@ -533,62 +518,14 @@ complementing if strand = -1. The sequence can be DNA or AA. Strand
 must always by >0 for AA sequences';
 ```
 
-### <span id="Function_Implementations" class="mw-headline">Function Implementations</span>
+### Function Implementations
 
 The goal is to provide implementations for different dialects of
 procedural [SQL](Glossary#SQL "Glossary"). Currently only
 [PostgreSQL](PostgreSQL "PostgreSQL") dialect is supported. The psql
 implementations are stored in \*.plpgsql files.
 
-## <span id="Glossary" class="mw-headline">Glossary</span>
+## Glossary
 
 This document has a [glossary](Glossary "Glossary") of technical,
 non-biological, terms.
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [Chado](Category%253AChado "Category%253AChado")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Manual" rel="smw-browse">Browse
-  properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 13:43 on 14 March 2014.</span>
-<!-- - <span id="footer-info-viewcount">306,381 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

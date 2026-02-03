@@ -1,32 +1,16 @@
 ---
 title: "MOD Face Summary"
 ---
+# MOD Face Summary
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">MOD Face Summary</span>
-
-
-
-
-
-
-
-
-
-### <span id="Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA" class="mw-headline">Meeting Report </span>
+### Meeting Report 
 
 Model Organism Database User Interface Caucus  
 
 GMOD Meeting, January 18, 2007, San Diego, CA, USA
 
-# <span id="Executive_Summary" class="mw-headline">Executive Summary</span>
+# Executive Summary
 
 The user interface (UI) is the most visible aspect of a model organism
 database (MOD), and arguably has the most direct impact on the
@@ -63,69 +47,52 @@ mechanism for keeping older database versions available.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Meeting Report
   Model Organism Database User Interface Caucus GMOD Meeting, January
   18, 2007, San Diego, CA,
   USA</span>](#Meeting_Report_.0AModel_Organism_Database_User_Interface_Caucus.0AGMOD_Meeting.2C_January_18.2C_2007.2C_San_Diego.2C_CA.2C_USA)
-- [<span class="tocnumber">2</span> <span class="toctext">Executive
-  Summary</span>](#Executive_Summary)
-- [<span class="tocnumber">3</span> <span class="toctext">Participants
-  and Presentations</span>](#Participants_and_Presentations)
-- [<span class="tocnumber">4</span> <span class="toctext">Detailed
-  Report</span>](#Detailed_Report)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Addressing
-    Six MOD Use Cases</span>](#Addressing_Six_MOD_Use_Cases)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">User
-    Interface Development</span>](#User_Interface_Development)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Lessons Learned from
-      Experience</span>](#Lessons_Learned_from_Experience)
-    - [<span class="tocnumber">4.2.2</span>
-      <span class="toctext">Gathering and Analyzing User
-      Feedback</span>](#Gathering_and_Analyzing_User_Feedback)
-      - [<span class="tocnumber">4.2.2.1</span>
-        <span class="toctext">Using User Feedback to Guide UI
-        Design</span>](#Using_User_Feedback_to_Guide_UI_Design)
-      - [<span class="tocnumber">4.2.2.2</span>
-        <span class="toctext">Site Logging</span>](#Site_Logging)
-      - [<span class="tocnumber">4.2.2.3</span>
-        <span class="toctext">Card Sorting</span>](#Card_Sorting)
-      - [<span class="tocnumber">4.2.2.4</span>
-        <span class="toctext">Watching Users</span>](#Watching_Users)
-    - [<span class="tocnumber">4.2.3</span>
-      <span class="toctext">Balancing Completeness and
-      Simplicity</span>](#Balancing_Completeness_and_Simplicity)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">New Trends
-    in MOD UIs</span>](#New_Trends_in_MOD_UIs)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Community
-      Participation</span>](#Community_Participation)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Client-side Scripting
-      (JavaScript)</span>](#Client-side_Scripting_.28JavaScript.29)
-    - [<span class="tocnumber">4.3.3</span> <span class="toctext">Using
+- [Executive
+  Summary](#Executive_Summary)
+- [Participants
+  and Presentations](#Participants_and_Presentations)
+- [Detailed
+  Report](#Detailed_Report)
+  - [Addressing
+    Six MOD Use Cases](#Addressing_Six_MOD_Use_Cases)
+  - [User
+    Interface Development](#User_Interface_Development)
+    - [Lessons Learned from
+      Experience](#Lessons_Learned_from_Experience)
+    - [Gathering and Analyzing User
+      Feedback](#Gathering_and_Analyzing_User_Feedback)
+      - [Using User Feedback to Guide UI
+        Design](#Using_User_Feedback_to_Guide_UI_Design)
+      - [Site Logging](#Site_Logging)
+      - [Card Sorting](#Card_Sorting)
+      - [Watching Users](#Watching_Users)
+    - [Balancing Completeness and
+      Simplicity](#Balancing_Completeness_and_Simplicity)
+  - [New Trends
+    in MOD UIs](#New_Trends_in_MOD_UIs)
+    - [Community
+      Participation](#Community_Participation)
+    - [Client-side Scripting
+      (JavaScript)](#Client-side_Scripting_.28JavaScript.29)
+    - [Using
       Virtualization for MOD
-      Snapshots</span>](#Using_Virtualization_for_MOD_Snapshots)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Using
+      Snapshots](#Using_Virtualization_for_MOD_Snapshots)
+  - [Using
     Google and Other General Search
-    Engines</span>](#Using_Google_and_Other_General_Search_Engines)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">User
-    Interface Conventions</span>](#User_Interface_Conventions)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">General
-    Discussion</span>](#General_Discussion)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">Implementation
-    Techniques</span>](#Implementation_Techniques)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">References</span>](#References)
+    Engines](#Using_Google_and_Other_General_Search_Engines)
+  - [User
+    Interface Conventions](#User_Interface_Conventions)
+  - [General
+    Discussion](#General_Discussion)
+  - [Implementation
+    Techniques](#Implementation_Techniques)
+- [References](#References)
 
 
-
-# <span id="Participants_and_Presentations" class="mw-headline">Participants and [Presentations](MOD_Face_Talks "MOD Face Talks")</span>
+# Participants and [Presentations](MOD_Face_Talks "MOD Face Talks")
 
 This meeting drew together some 60 biologists, bioinformaticians and
 other interested people, representing more than 25 database projects and
@@ -135,9 +102,9 @@ presentations, and a round table discussion at the end. Slides and text
 summaries of individual presentations are provided at the [MOD Face
 Talks](MOD_Face_Talks "MOD Face Talks") page.
 
-# <span id="Detailed_Report" class="mw-headline">Detailed Report</span>
+# Detailed Report
 
-## <span id="Addressing_Six_MOD_Use_Cases" class="mw-headline">Addressing Six MOD Use Cases</span>
+## Addressing Six MOD Use Cases
 
 *Many simple/quick/global searches.* Most MODs have some variation of a
 "search everything" option that is the primary search entry. Simple
@@ -213,9 +180,9 @@ of genes from one species to be imported, and the list of corresponding
 genes from another, more data rich species, to be derived and then
 explored.
 
-## <span id="User_Interface_Development" class="mw-headline">User Interface Development</span>
+## User Interface Development
 
-### <span id="Lessons_Learned_from_Experience" class="mw-headline">Lessons Learned from Experience</span>
+### Lessons Learned from Experience
 
 - Clear (better yet, obvious) input actions and requirements are
   important. For example, "What, exactly, are people expected to type
@@ -256,9 +223,9 @@ easy exploration by novices).
   - variable (low) use of preference options?
   - needs transparency to user (avoid logins/extra effort)
 
-### <span id="Gathering_and_Analyzing_User_Feedback" class="mw-headline">Gathering and Analyzing User Feedback</span>
+### Gathering and Analyzing User Feedback
 
-#### <span id="Using_User_Feedback_to_Guide_UI_Design" class="mw-headline">Using User Feedback to Guide UI Design</span>
+#### Using User Feedback to Guide UI Design
 
 *Start early.* There was broad agreement that usability studies for a
 user interface should be conducted as early as possible in its
@@ -276,7 +243,7 @@ developers. Neither party alone should drive the development, but the
 two should work closely together. In practice, users often have too
 little opportunity to participate in the UI design process.
 
-#### <span id="Site_Logging" class="mw-headline">Site Logging</span>
+#### Site Logging
 
 A MOD site's server logs can be useful for gathering indirect user
 feedback. This user feedback mechanism is often overlooked, yet it is
@@ -294,7 +261,7 @@ been developed by ApiDB personnel and are available through sourceforge.
 Further work with these tools to cluster and characterize user behavior
 is underway.
 
-#### <span id="Card_Sorting" class="mw-headline">Card Sorting</span>
+#### Card Sorting
 
 "Card sorting" is an easy to implement and powerful method of
 discovering how users naturally group items of data. An investigator
@@ -309,7 +276,7 @@ At least one MOD in the meeting reported successfully using this method
 to design easy-to-navigate groupings of menu choices for their site's
 UI.
 
-#### <span id="Watching_Users" class="mw-headline">Watching Users</span>
+#### Watching Users
 
 Watching users interact with a MOD's user interface can tell an
 investigator more than user opinions and surveys. ApiDB recounted some
@@ -330,7 +297,7 @@ ApiDB reported that they had found the data to be quite useful. After
 the ApiDB presentation, Ceri Van Slyke from ZFIN remarked that ZFIN had
 conducted similar usability studies, with similar experiences.
 
-### <span id="Balancing_Completeness_and_Simplicity" class="mw-headline">Balancing Completeness and Simplicity</span>
+### Balancing Completeness and Simplicity
 
 Too much information and too many choices can overwhelm users, but
 restricting choices and hiding data limits the usefulness of a MOD. This
@@ -349,9 +316,9 @@ A related issue is providing adequate information on what the different
 choices available actually do, and the provenance of data: what data are
 present and where they came from.
 
-## <span id="New_Trends_in_MOD_UIs" class="mw-headline">New Trends in MOD UIs</span>
+## New Trends in MOD UIs
 
-### <span id="Community_Participation" class="mw-headline">Community Participation</span>
+### Community Participation
 
 Wikipedia provides an excellent example of the power of community
 participation in science documentation. Many new genomics and biology
@@ -394,7 +361,7 @@ at the meeting, <a href="http://sgn.cornell.edu" class="external text"
 rel="nofollow">SGN</a> presented an experimental community gene curation
 interface for use by authorized users of the site.
 
-### <span id="Client-side_Scripting_.28JavaScript.29" class="mw-headline">Client-side Scripting (JavaScript)</span>
+### Client-side Scripting (JavaScript)
 
 In recent years, general web development practices have been trending
 toward increased use of client-side scripts written in JavaScript to
@@ -438,7 +405,7 @@ queries and answers, and other uses.
 - include curator/community edits/updates to contents (part of same
   reading UI) (ZFIN,SGN,)
 
-### <span id="Using_Virtualization_for_MOD_Snapshots" class="mw-headline">Using Virtualization for MOD Snapshots</span>
+### Using Virtualization for MOD Snapshots
 
 Providing stable "snapshots" of the data in a MOD is important for
 reproducing results in publications that cite the MOD. Many MODs provide
@@ -453,7 +420,7 @@ can be downloaded for playback on any computer that supports the free
 rel="nofollow">VMWare</a> player. This practice greatly facilitates
 reproduction of results from papers that cite WormBase.
 
-## <span id="Using_Google_and_Other_General_Search_Engines" class="mw-headline">Using Google and Other General Search Engines</span>
+## Using Google and Other General Search Engines
 
 A number of MODs represented at the meeting used Google to provide some
 of the search functionality on their site. It was generally agreed that
@@ -490,7 +457,7 @@ many types of biological data. This approach offers more control over
 the indexing, searching, and result presentation than using an external
 search engine.
 
-## <span id="User_Interface_Conventions" class="mw-headline">User Interface Conventions</span>
+## User Interface Conventions
 
 One subject that was raised, but was not fully discussed in the time
 available, was the idea of developing common user interface conventions
@@ -522,7 +489,7 @@ should be sure to include:
 - update history (a.k.a. changelog) of MOD
 - central credits list for MOD contributors
 
-## <span id="General_Discussion" class="mw-headline">General Discussion</span>
+## General Discussion
 
 - Steps in developing good MOD Faces
   Consensus  
@@ -535,9 +502,6 @@ should be sure to include:
   - Never create a link to a location where there's nothing to be found.
     Indicate, by some means, if there's no information or more
     information.
-
-<!-- -->
-
 - User community testing, interviews, surveys, HCI principles
   - Differing views on value of types and stages in user testing (Is
     user testing necessary? What about releasing software as a means to
@@ -548,38 +512,26 @@ should be sure to include:
       or prototypes on paper.
     - Monitoring and logging is important, you must know what occupies
       the user the most.
-
-<!-- -->
-
 - Dilemma of too much or too little information/choice
   - Consensus: complexity goes with the territory, but you have to make
     the most common things easy and the hard things possible, and have
     good user education and documentation.
   - Is it true that complexity should be concealed? How does one strike
     the balance between providing for the expert and for the novice?
-
-<!-- -->
-
 - Google is your enemy/friend ...
   - Differing views on advantage/disadavantages of Google as adjunct to
     MOD search systems (No consensus that using Google is advantageous;
     Techniques for guiding Google/Bots below)
-
-<!-- -->
-
 - Good new ideas
   - More dynamic content, graphics summaries may be good
     - Can we make more use of graphics to replace text? E.g. a generated
       image replaces expression information.
     - Word or string completion as user asks questions is useful UI
       technique (see Javascript and AJAX below)
-
-<!-- -->
-
 - Common UIs across MODs?  
   Not discussed (sigh :()
 
-## <span id="Implementation_Techniques" class="mw-headline">Implementation Techniques</span>
+## Implementation Techniques
 
 - Easy way to direct Google/Bots to best or full content (e.g. gene
   pages) is with a site map with links to everything you want to expose.
@@ -588,29 +540,20 @@ should be sure to include:
     index, highlight Google user queries)
   - Google offers indexing tips, directions to update or hide specific
     parts
-
-<!-- -->
-
 - Dynamic content (Javascript/AJAX):
   - Word or string completion using Javascript/AJAX and dedicated,
     simple databases of words to complete work well (Wormbase, EBI
     Ontology Lookup Service, others?).
   - use to hide and show sections of pages; reorder tracks in a genome
     browser;
-
-<!-- -->
-
 - RSS is probably underutilized, but would it be widely used if
   available?
-
-<!-- -->
-
 - An XML representation of an "entry" makes a "diff" or change easy to
   assess, and reliable alerts could be constructed.
 
   
 
-# <span id="References" class="mw-headline">References</span>
+# References
 
 1.  <span id="cite_note-1"><span class="mw-cite-backlink">[↑](#cite_ref-1)</span>
     <span class="reference-text">Salzberg SL. Genome re-annotation: a
@@ -622,93 +565,3 @@ should be sure to include:
     and Roy D. Welch. Xanthusbase: adapting wikipedia principles to a
     model organism database. Nucl. Acids Res. 2007 35: D422-D426;
     doi:10.1093/nar/gkl881 </span></span>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [GMOD Best
-  Practices](Category%253AGMOD_Best_Practices "Category%253AGMOD Best Practices")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/MOD_Face_Summary" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:54 on 11 August
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">28,799 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

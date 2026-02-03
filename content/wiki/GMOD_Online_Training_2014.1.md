@@ -1,33 +1,13 @@
 ---
 title: "GMOD Online Training 2014"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Online Training 2014</span>
-
-
-
-
-
-
-
-
-
+# GMOD Online Training 2014
 
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/300px-Gmod-online-training.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/6/6f/Gmod-online-training.png/450px-Gmod-online-training.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6f/Gmod-online-training.png 2x"
 width="300" height="235" alt="Gmod-online-training.png" />
-
-
 
 
 [<img
@@ -124,7 +104,7 @@ online training course in late 2014 or early 2015.
 
   
 
-## <span id="Details" class="mw-headline">Details</span>
+## Details
 
 Date: Monday 19th May - Friday 23rd May 2014; 9am - 6pm US Eastern time
 
@@ -136,7 +116,7 @@ Cost and registration: \$50 (to be confirmed)
 
   
 
-### <span id="Course_Prerequisites" class="mw-headline">Course Prerequisites</span>
+### Course Prerequisites
 
 The course is taught using virtual servers based in the Amazon Compute
 Cloud, and participants will require an internet connection, a modern
@@ -149,87 +129,6 @@ Attendees do not require any previous programming experience to attend
 the course.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Online_Training_2014"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:12 on 29 April
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">55,625 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

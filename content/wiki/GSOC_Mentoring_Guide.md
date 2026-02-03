@@ -1,23 +1,7 @@
 ---
 title: "GSOC Mentoring Guide"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GSOC Mentoring Guide</span>
-
-
-
-
-
-
-
+# GSOC Mentoring Guide
 
 
 For potential mentors: students work remotely and will typically
@@ -38,22 +22,16 @@ Include any instructions or information about communicating, e.g. your
 time zone.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Resources and
   Guides</span>](#Resources_and_Guides)
-- [<span class="tocnumber">2</span> <span class="toctext">What makes a
-  good GSoC Project?</span>](#What_makes_a_good_GSoC_Project.3F)
-- [<span class="tocnumber">3</span> <span class="toctext">Project idea
-  format</span>](#Project_idea_format)
-- [<span class="tocnumber">4</span> <span class="toctext">Name of the
-  Project</span>](#Name_of_the_Project)
+- [What makes a
+  good GSoC Project?](#What_makes_a_good_GSoC_Project.3F)
+- [Project idea
+  format](#Project_idea_format)
+- [Name of the
+  Project](#Name_of_the_Project)
 
 
-
-### <span id="Resources_and_Guides" class="mw-headline">Resources and Guides</span>
+### Resources and Guides
 
 - <a
   href="https://developers.google.com/open-source/gsoc/resources/manual"
@@ -62,7 +40,7 @@ time zone.
   href="https://developers.google.com/open-source/gsoc/help/responsibilities#student_responsibilities#student_responsibilities"
   class="external text" rel="nofollow">Mentor Responsibilities</a>
 
-### <span id="What_makes_a_good_GSoC_Project.3F" class="mw-headline">What makes a good GSoC Project?</span>
+### What makes a good GSoC Project?
 
 The following information comes from the
 <a href="http://en.flossmanuals.net/GSoCMentoring/defining-a-project/"
@@ -101,9 +79,9 @@ class="external text" rel="nofollow">GSoC manual</a>*
 Prospective students are interested in "new" technologies and languages,
 such as iOS and Android apps, and fancy, flashy, web-based projects.
 
-### <span id="Project_idea_format" class="mw-headline">Project idea format</span>
+### Project idea format
 
-## <span id="Name_of_the_Project" class="mw-headline">Name of the Project</span>
+## Name of the Project
 
 - Research Group
 - Goal of the idea: describe the outcome of the project idea
@@ -112,84 +90,3 @@ such as iOS and Android apps, and fancy, flashy, web-based projects.
   other particular computer science skills needed
 - Mentors: *name + contact details of the lead mentor*, *name + contact
   details of backup mentor*
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GSOC_Mentoring_Guide" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:07 on 25 January
-  2023.</span>
-<!-- - <span id="footer-info-viewcount">17,701 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

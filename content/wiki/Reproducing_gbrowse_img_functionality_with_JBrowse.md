@@ -1,23 +1,7 @@
 ---
 title: "Reproducing gbrowse img functionality with JBrowse"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Reproducing gbrowse img functionality with JBrowse</span>
-
-
-
-
-
-
-
+# Reproducing gbrowse img functionality with JBrowse
 
 
 That is, "Reproducing gbrowse_img functionality with JBrowse"
@@ -29,29 +13,22 @@ class="external text" rel="nofollow">etr-1 gene</a>, which has quite a
 few transcripts and so needs a "tall" JBrowse image.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Why this is
   needed</span>](#Why_this_is_needed)
-- [<span class="tocnumber">2</span> <span class="toctext">What this
-  solution does</span>](#What_this_solution_does)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Fetch
-    JBrowse into a div</span>](#Fetch_JBrowse_into_a_div)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">CSS
-    tricks</span>](#CSS_tricks)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Monitor
-    JBrowse loading</span>](#Monitor_JBrowse_loading)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">"Div
+- [What this
+  solution does](#What_this_solution_does)
+  - [Fetch
+    JBrowse into a div](#Fetch_JBrowse_into_a_div)
+  - [CSS
+    tricks](#CSS_tricks)
+  - [Monitor
+    JBrowse loading](#Monitor_JBrowse_loading)
+  - ["Div
     overlay" to allow
-    clicking</span>](#.22Div_overlay.22_to_allow_clicking)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Acknowledgments</span>](#Acknowledgments)
+    clicking](#.22Div_overlay.22_to_allow_clicking)
+- [Acknowledgments](#Acknowledgments)
 
 
-
-## <span id="Why_this_is_needed" class="mw-headline">Why this is needed</span>
+## Why this is needed
 
 While [JBrowse](JBrowse.1 "JBrowse") is a terrific tool for browsing
 genomes, there is one piece of functionality that is missing from this
@@ -86,7 +63,7 @@ iframe. This approach has a few down sides:
   location originally defined for the page.
 - iframes are ugly.
 
-## <span id="What_this_solution_does" class="mw-headline">What this solution does</span>
+## What this solution does
 
 - Puts the JBrowse content in a div with a JavaScript function
 - Uses CSS to prevent mouse interactions (like scrolling) in the JBrowse
@@ -100,7 +77,7 @@ The example code below uses JQuery but could easily be reimplemented in
 another framework (or vanilla JavaScript, which is how it was originally
 written--putting it into JQuery made it much cleaner).
 
-### <span id="Fetch_JBrowse_into_a_div" class="mw-headline">Fetch JBrowse into a div</span>
+### Fetch JBrowse into a div
 
 The first thing to do is to fetch JBrowse into a div using an html
 object tag with the URL that you need to fetch in the "data" attribute
@@ -126,7 +103,7 @@ page is loaded, using some simple JavaScript like this:
 Note that the class of the div is "jbrowse-view-iframe" but of course,
 it's really a div, not an iframe.
 
-### <span id="CSS_tricks" class="mw-headline">CSS tricks</span>
+### CSS tricks
 
 Now for a few comments about the styling of the JBrowse div. There are
 few neat tricks that are going on here that are important to making this
@@ -152,7 +129,7 @@ work. Here they are laid out in full:
   course, the scrollbar wouldn't work anyway because of the
   pointer-events setting.
 
-### <span id="Monitor_JBrowse_loading" class="mw-headline">Monitor JBrowse loading</span>
+### Monitor JBrowse loading
 
 Below is the script used at WormBase for checking the height required
 for JBrowse while it's loading. It checks every 2 seconds if the height
@@ -234,7 +211,7 @@ which drives the WormBase website.
                 })();
                 </script>
 
-### <span id=".22Div_overlay.22_to_allow_clicking" class="mw-headline">"Div overlay" to allow clicking</span>
+### "Div overlay" to allow clicking
 
 The last piece that is required to make this really work well is for the
 page to open a full JBrowse instance when the image is clicked on. In
@@ -250,95 +227,13 @@ sits "on top of" the JBrowse image but isn't subject to the
 pointer-events restriction that we placed in the first section of this
 outline.
 
-## <span id="Acknowledgments" class="mw-headline">Acknowledgments</span>
+## Acknowledgments
 
 Special thanks to Sibyl Gao at WormBase for taking the prototype I
 created and turning it into something that would actually work well in
 the context of a full website.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [JBrowse](Category%253AJBrowse "Category%253AJBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="Special%253ABrowse/Reproducing_gbrowse_img_functionality_with_JBrowse"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:14 on 10 April
-  2018.</span>
-<!-- - <span id="footer-info-viewcount">27,668 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

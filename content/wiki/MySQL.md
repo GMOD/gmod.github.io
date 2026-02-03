@@ -1,23 +1,7 @@
 ---
 title: "MySQL"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">MySQL</span>
-
-
-
-
-
-
-
+# MySQL
 
 
 <a href="http://mysql.com" class="external text"
@@ -37,7 +21,7 @@ See also:
 - [PostgreSQL](PostgreSQL "PostgreSQL") - The DBMS used with
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a>.
 
-## <span id="Scott_Cain.27s_thoughts_on_why_you_shouldn.27t_use_MySQL_for_Chado" class="mw-headline">Scott Cain's thoughts on why you shouldn't use MySQL for Chado</span>
+## Scott Cain's thoughts on why you shouldn't use MySQL for Chado
 
 Note: I plan on fleshing this out more, but I wanted to get my thoughts
 down while I'm thinking about it.
@@ -81,7 +65,7 @@ Some things that make me wary:
   PostgreSQL. I don't have the time to devote to porting, especially
   since PostgreSQL is an excellent RDBMS.
 
-### <span id="How_I_learned_to_distrust_MySQL" class="mw-headline">How I learned to distrust MySQL</span>
+### How I learned to distrust MySQL
 
 When I started working on GMOD in 2002, the first project I tackled was
 to write a port of the [GBrowse](GBrowse.1 "GBrowse") /
@@ -113,89 +97,3 @@ line. I should mention that, although the WormBase GFF had lines that
 violated the unique constraint, the lines that violated it were not 100%
 identical: some data in the ninth column were unique, so that data just
 disappeared from GBrowse. Nice.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [MySQL](Category%253AMySQL "Category%253AMySQL")
-- [External](Category%253AExternal "Category%253AExternal")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/MySQL" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:28 on 4 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">80,819 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

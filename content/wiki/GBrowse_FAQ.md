@@ -1,111 +1,87 @@
 ---
 title: "GBrowse FAQ"
 ---
+# GBrowse FAQ
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse FAQ</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About this
   FAQ</span>](#About_this_FAQ)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">What is
-    this FAQ?</span>](#What_is_this_FAQ.3F)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">How is it
-    maintained?</span>](#How_is_it_maintained.3F)
-- [<span class="tocnumber">2</span> <span class="toctext">General
-  Questions</span>](#General_Questions)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">What is
-    GBrowse good for?</span>](#What_is_GBrowse_good_for.3F)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">What
+  - [What is
+    this FAQ?](#What_is_this_FAQ.3F)
+  - [How is it
+    maintained?](#How_is_it_maintained.3F)
+- [General
+  Questions](#General_Questions)
+  - [What is
+    GBrowse good for?](#What_is_GBrowse_good_for.3F)
+  - [What
     platforms does GBrowse run
-    on?</span>](#What_platforms_does_GBrowse_run_on.3F)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">How is
-    GBrowse distributed?</span>](#How_is_GBrowse_distributed.3F)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">What are
+    on?](#What_platforms_does_GBrowse_run_on.3F)
+  - [How is
+    GBrowse distributed?](#How_is_GBrowse_distributed.3F)
+  - [What are
     the terms of use for
-    GBrowse?</span>](#What_are_the_terms_of_use_for_GBrowse.3F)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">I have a
-    problem. What do I do?</span>](#I_have_a_problem._What_do_I_do.3F)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Problem-solving</span>](#Problem-solving)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Where do I
-    download GBrowse?</span>](#Where_do_I_download_GBrowse.3F)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">How do I
-    install GBrowse?</span>](#How_do_I_install_GBrowse.3F)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Where do I
+    GBrowse?](#What_are_the_terms_of_use_for_GBrowse.3F)
+  - [I have a
+    problem. What do I do?](#I_have_a_problem._What_do_I_do.3F)
+- [Problem-solving](#Problem-solving)
+  - [Where do I
+    download GBrowse?](#Where_do_I_download_GBrowse.3F)
+  - [How do I
+    install GBrowse?](#How_do_I_install_GBrowse.3F)
+  - [Where do I
     find a list of all available
-    glyphs?</span>](#Where_do_I_find_a_list_of_all_available_glyphs.3F)
-  - [<span class="tocnumber">3.4</span> <span class="toctext">When I
+    glyphs?](#Where_do_I_find_a_list_of_all_available_glyphs.3F)
+  - [When I
     search, why doesn't GBrowse find my 3-letter gene
-    name?</span>](#When_I_search.2C_why_doesn.27t_GBrowse_find_my_3-letter_gene_name.3F)
-  - [<span class="tocnumber">3.5</span> <span class="toctext">How do I
+    name?](#When_I_search.2C_why_doesn.27t_GBrowse_find_my_3-letter_gene_name.3F)
+  - [How do I
     use semantic zooming to hide a track
-    completely?</span>](#How_do_I_use_semantic_zooming_to_hide_a_track_completely.3F)
-  - [<span class="tocnumber">3.6</span> <span class="toctext">How to add
+    completely?](#How_do_I_use_semantic_zooming_to_hide_a_track_completely.3F)
+  - [How to add
     an outgoing link to a text on the feature detail page in
-    Gbrowse?</span>](#How_to_add_an_outgoing_link_to_a_text_on_the_feature_detail_page_in_Gbrowse.3F)
-  - [<span class="tocnumber">3.7</span> <span class="toctext">I have a
+    Gbrowse?](#How_to_add_an_outgoing_link_to_a_text_on_the_feature_detail_page_in_Gbrowse.3F)
+  - [I have a
     multi-segmented feature (such as a multi-exon transcript). It looks
     fine at low power, but when I zoom in the connecting lines between
     segments disappear.
-    Help!</span>](#I_have_a_multi-segmented_feature_.28such_as_a_multi-exon_transcript.29._It_looks_fine_at_low_power.2C_but_when_I_zoom_in_the_connecting_lines_between_segments_disappear._Help.21)
-  - [<span class="tocnumber">3.8</span> <span class="toctext">I'm using
+    Help!](#I_have_a_multi-segmented_feature_.28such_as_a_multi-exon_transcript.29._It_looks_fine_at_low_power.2C_but_when_I_zoom_in_the_connecting_lines_between_segments_disappear._Help.21)
+  - [I'm using
     the GFF database adaptor. Is it better to load it using GFF2 or
-    GFF3?</span>](#I.27m_using_the_GFF_database_adaptor._Is_it_better_to_load_it_using_GFF2_or_GFF3.3F)
-  - [<span class="tocnumber">3.9</span> <span class="toctext">How do I
+    GFF3?](#I.27m_using_the_GFF_database_adaptor._Is_it_better_to_load_it_using_GFF2_or_GFF3.3F)
+  - [How do I
     pass parameters into functions of
-    init_code?</span>](#How_do_I_pass_parameters_into_functions_of_init_code.3F)
-  - [<span class="tocnumber">3.10</span> <span class="toctext">How do I
-    show circular genomes?</span>](#How_do_I_show_circular_genomes.3F)
-  - [<span class="tocnumber">3.11</span> <span class="toctext">There's a
+    init_code?](#How_do_I_pass_parameters_into_functions_of_init_code.3F)
+  - [How do I
+    show circular genomes?](#How_do_I_show_circular_genomes.3F)
+  - [There's a
     problem with my overview and detail images - they're the same
-    scale</span>](#There.27s_a_problem_with_my_overview_and_detail_images_-_they.27re_the_same_scale)
-  - [<span class="tocnumber">3.12</span> <span class="toctext">Can I add
+    scale](#There.27s_a_problem_with_my_overview_and_detail_images_-_they.27re_the_same_scale)
+  - [Can I add
     Popup Balloon Tips to
-    GBrowse?</span>](#Can_I_add_Popup_Balloon_Tips_to_GBrowse.3F)
-  - [<span class="tocnumber">3.13</span> <span class="toctext">Why is
+    GBrowse?](#Can_I_add_Popup_Balloon_Tips_to_GBrowse.3F)
+  - [Why is
     GBrowse on Chado so
-    slow?</span>](#Why_is_GBrowse_on_Chado_so_slow.3F)
-  - [<span class="tocnumber">3.14</span> <span class="toctext">The
+    slow?](#Why_is_GBrowse_on_Chado_so_slow.3F)
+  - [The
     "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line
     587"
-    Error</span>](#The_.22Bio::Graphics::BrowserConfig.3DHASH_..._Bio.2FGraphics.2FBrowser.pm_line_587.22_Error)
-  - [<span class="tocnumber">3.15</span> <span class="toctext">Can I
+    Error](#The_.22Bio::Graphics::BrowserConfig.3DHASH_..._Bio.2FGraphics.2FBrowser.pm_line_587.22_Error)
+  - [Can I
     show more than one glyph in the same
-    track?</span>](#Can_I_show_more_than_one_glyph_in_the_same_track.3F)
-  - [<span class="tocnumber">3.16</span> <span class="toctext">How many
+    track?](#Can_I_show_more_than_one_glyph_in_the_same_track.3F)
+  - [How many
     tracks can be displayed in
-    GBrowse?</span>](#How_many_tracks_can_be_displayed_in_GBrowse.3F)
+    GBrowse?](#How_many_tracks_can_be_displayed_in_GBrowse.3F)
 
 
+## About this FAQ
 
-## <span id="About_this_FAQ" class="mw-headline">About this FAQ</span>
-
-### <span id="What_is_this_FAQ.3F" class="mw-headline">What is this FAQ?</span>
+### What is this FAQ?
 
 It is the list of Frequently Asked Questions about
 [GBrowse](GBrowse.1 "GBrowse").
 
-### <span id="How_is_it_maintained.3F" class="mw-headline">How is it maintained?</span>
+### How is it maintained?
 
 It is now maintained as a
 <a href="http://en.wikipedia.org/wiki/Wiki" class="extiw"
@@ -114,9 +90,9 @@ adding questions and answers.
 
   
 
-## <span id="General_Questions" class="mw-headline">General Questions</span>
+## General Questions
 
-### <span id="What_is_GBrowse_good_for.3F" class="mw-headline">What is GBrowse good for?</span>
+### What is GBrowse good for?
 
 GBrowse was designed to view genomes. It displays a graphical
 representation of a section of a genome, and shows the positions of
@@ -129,7 +105,7 @@ read the documentation at the [GBrowse](GBrowse.1 "GBrowse") Wiki page.
 
   
 
-### <span id="What_platforms_does_GBrowse_run_on.3F" class="mw-headline">What platforms does GBrowse run on?</span>
+### What platforms does GBrowse run on?
 
 GBrowse is a web-server application that is implemented in the Perl
 programming language. It will run on any machine that runs Perl,
@@ -137,14 +113,14 @@ including Windows, Macintosh OS X, and most versions of Linux and UNIX.
 
   
 
-### <span id="How_is_GBrowse_distributed.3F" class="mw-headline">How is GBrowse distributed?</span>
+### How is GBrowse distributed?
 
 GBrowse is distributed as source code for Macintosh OS X, UNIX and Linux
 platforms, and as pre-packaged binaries for Windows machines.
 
   
 
-### <span id="What_are_the_terms_of_use_for_GBrowse.3F" class="mw-headline">What are the terms of use for GBrowse?</span>
+### What are the terms of use for GBrowse?
 
 GBrowse is distributed under the Perl Artistic License, which allows for
 unrestricted use and distribution, including commercial use and resale.
@@ -153,7 +129,7 @@ you credit the original authors for their contribution.
 
   
 
-### <span id="I_have_a_problem._What_do_I_do.3F" class="mw-headline">I have a problem. What do I do?</span>
+### I have a problem. What do I do?
 
 First consult the
 <a href="http://old.nabble.com/gmod-gbrowse-f3500.html"
@@ -166,9 +142,9 @@ href="http://sourceforge.net/tracker/?func=add&amp;group_id=27707&amp;atid=39129
 class="external text" rel="nofollow">bug report tracking system</a> (set
 the category to "GBrowse").
 
-## <span id="Problem-solving" class="mw-headline">Problem-solving</span>
+## Problem-solving
 
-### <span id="Where_do_I_download_GBrowse.3F" class="mw-headline">Where do I download GBrowse?</span>
+### Where do I download GBrowse?
 
 From
 <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
@@ -178,12 +154,12 @@ GBrowse. Instructions for accessing the development version of GBrowse
 can be found at <a href="Subversion" class="mw-redirect"
 title="Subversion">Subversion</a>.
 
-### <span id="How_do_I_install_GBrowse.3F" class="mw-headline">How do I install GBrowse?</span>
+### How do I install GBrowse?
 
 After you unpack GBrowse, detailed installation instructions will be
 found in the top level directory, in the file INSTALL.
 
-### <span id="Where_do_I_find_a_list_of_all_available_glyphs.3F" class="mw-headline">Where do I find a list of all available glyphs?</span>
+### Where do I find a list of all available glyphs?
 
 There is a list of glyphs at the end of the documentation for
 <a href="http://search.cpan.org/perldoc?Bio::Graphics::Glyph"
@@ -194,7 +170,7 @@ can also see by executing
 
 from the command line.
 
-### <span id="When_I_search.2C_why_doesn.27t_GBrowse_find_my_3-letter_gene_name.3F" class="mw-headline">When I search, why doesn't GBrowse find my 3-letter gene name?</span>
+### When I search, why doesn't GBrowse find my 3-letter gene name?
 
 If you are using the [MySQL](MySQL "MySQL") [GFF](GFF "GFF")
 [adaptor](GBrowse_Adaptors "GBrowse Adaptors") and are storing gene
@@ -211,20 +187,14 @@ The latter solution is a multi-step process:
 
 - Open /etc/my.cnf and add the following configuration line to the
   \[mysqld\] section:
-
-<!-- -->
-
         ft_min_word_len=3
 
 - Restart the mysql server.
 - Connect to your database using the mysql command-line client and run
   the command:
-
-<!-- -->
-
        mysql> repair table fattribute_to_feature quick;
 
-### <span id="How_do_I_use_semantic_zooming_to_hide_a_track_completely.3F" class="mw-headline">How do I use semantic zooming to hide a track completely?</span>
+### How do I use semantic zooming to hide a track completely?
 
 If you wish to turn off a track entirely, you can use the "hide" flag to
 hide the track when the display exceeds a certain size:
@@ -234,7 +204,7 @@ hide the track when the display exceeds a certain size:
 
   
 
-### <span id="How_to_add_an_outgoing_link_to_a_text_on_the_feature_detail_page_in_Gbrowse.3F" class="mw-headline">How to add an outgoing link to a text on the feature detail page in Gbrowse?</span>
+### How to add an outgoing link to a text on the feature detail page in Gbrowse?
 
 Add a line to the appropriate \*.conf file using *link*. For example:
 
@@ -246,7 +216,7 @@ Add a line to the appropriate \*.conf file using *link*. For example:
 
   
 
-### <span id="I_have_a_multi-segmented_feature_.28such_as_a_multi-exon_transcript.29._It_looks_fine_at_low_power.2C_but_when_I_zoom_in_the_connecting_lines_between_segments_disappear._Help.21" class="mw-headline">I have a multi-segmented feature (such as a multi-exon transcript). It looks fine at low power, but when I zoom in the connecting lines between segments disappear. Help!</span>
+### I have a multi-segmented feature (such as a multi-exon transcript). It looks fine at low power, but when I zoom in the connecting lines between segments disappear. Help!
 
 You need to structure the feature in such a way that it has a single
 parent part that spans the whole feature from end to end. When using
@@ -280,7 +250,7 @@ For transcripts, use the "processed_transcript" aggregator and create
 features with a main part of "mRNA" and subparts of "CDS", "exon",
 and/or various types of UTRs.
 
-### <span id="I.27m_using_the_GFF_database_adaptor._Is_it_better_to_load_it_using_GFF2_or_GFF3.3F" class="mw-headline">I'm using the GFF database adaptor. Is it better to load it using GFF2 or GFF3?</span>
+### I'm using the GFF database adaptor. Is it better to load it using GFF2 or GFF3?
 
 [GFF3](GFF3 "GFF3").
 
@@ -295,7 +265,7 @@ spliced transcripts, and the exons inside the transcripts.
 [GFF3](GFF3 "GFF3") corrects this problem as well as a number of other
 deficiencies.
 
-### <span id="How_do_I_pass_parameters_into_functions_of_init_code.3F" class="mw-headline">How do I pass parameters into functions of init_code?</span>
+### How do I pass parameters into functions of init_code?
 
 You want to define a function in the init_code section which will then
 be called within callbacks.
@@ -319,7 +289,7 @@ Note that you'll need GBrowse version 1.63 or higher for this to work.
 
   
 
-### <span id="How_do_I_show_circular_genomes.3F" class="mw-headline">How do I show circular genomes?</span>
+### How do I show circular genomes?
 
 A patch is currently being developed to display circular genomes. You
 can **git clone** the branch code at
@@ -330,7 +300,7 @@ The patch will display basic glyphs, but has problems showing sequences.
 To implement the patch, you must add the tag **region=circular;** to
 column 9 of the first line of the gff file.
 
-### <span id="There.27s_a_problem_with_my_overview_and_detail_images_-_they.27re_the_same_scale" class="mw-headline">There's a problem with my overview and detail images - they're the same scale</span>
+### There's a problem with my overview and detail images - they're the same scale
 
 That usually is a problem with your reference sequences. Either you
 haven't set you reference class correctly in your config file (if you
@@ -339,7 +309,7 @@ or you don't have reference sequences in your [GFF](GFF "GFF")
 file/database. That is, you don't have the lines in your GFF file that
 correspond to the chromosomes.
 
-### <span id="Can_I_add_Popup_Balloon_Tips_to_GBrowse.3F" class="mw-headline">Can I add Popup Balloon Tips to GBrowse?</span>
+### Can I add Popup Balloon Tips to GBrowse?
 
 Yes! As of version 1.69, you can populate popup balloons similar to the
 ones used by Google Maps. The balloons can contain arbitrary HTML
@@ -348,7 +318,7 @@ feature or left clicks on it. See [GBrowse
 Configuration/Balloons](GBrowse_Configuration/Balloons "GBrowse Configuration/Balloons")
 for details.
 
-### <span id="Why_is_GBrowse_on_Chado_so_slow.3F" class="mw-headline">Why is GBrowse on Chado so slow?</span>
+### Why is GBrowse on Chado so slow?
 
 While it is convenient to run GBrowse on top of a Chado database that is
 being actively edited (so that users can see "live" edits), the Chado
@@ -371,7 +341,7 @@ class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a>
 database. [GMODTools](GMODTools "GMODTools") is a good tool for setting
 up periodic dumps of your Chado database to GFF3.
 
-### <span id="The_.22Bio::Graphics::BrowserConfig.3DHASH_..._Bio.2FGraphics.2FBrowser.pm_line_587.22_Error" class="mw-headline">The "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line 587" Error</span>
+### The "Bio::Graphics::BrowserConfig=HASH ... Bio/Graphics/Browser.pm line 587" Error
 
 Users of GBrowse 1.69 will see this message in their Apache error logs:
 
@@ -383,7 +353,7 @@ install the latest version of GBrowse from
 <a href="Subversion" class="mw-redirect"
 title="Subversion">Subversion</a>.
 
-### <span id="Can_I_show_more_than_one_glyph_in_the_same_track.3F" class="mw-headline">Can I show more than one glyph in the same track?</span>
+### Can I show more than one glyph in the same track?
 
 Yes. To show multiple glyphs in the same track set the glyph with a Perl
 *callback*. For example:
@@ -422,14 +392,13 @@ From email threads:
   class="external text" rel="nofollow">Callbacks on Glyphs</a>, Andreas
   Redl, July 2010.
 
-### <span id="How_many_tracks_can_be_displayed_in_GBrowse.3F" class="mw-headline">How many tracks can be displayed in GBrowse?</span>
+### How many tracks can be displayed in GBrowse?
 
 There is no set maximum number of tracks. As of about GBrowse 2.13,
 GBrowse works with more than 1,000 tracks. From this <a
 href="http://gmod.827538.n3.nabble.com/http://gmod.827538.n3.nabble.com/Turn-some-Wiggle-tracks-off-when-no-value-in-selected-region-tp946842p946842.html"
 class="external text" rel="nofollow">email thread (Kai Xia, 2010/07</a>,
 [Lincoln Stein](User%253ALstein "User%253ALstein") said:
-
 
 
 I think you'll find that 20,000 track definitions are going to slow
@@ -444,92 +413,3 @@ this metadata (see [Creating and Managing Subtracks with
 GBrowse2](Creating_and_Managing_Subtracks_with_GBrowse2 "Creating and Managing Subtracks with GBrowse2")).
 I've also just now added an option that lets you hide subtracks that
 have no data currently showing.
-
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [FAQ](Category%253AFAQ "Category%253AFAQ")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_FAQ" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 14:48 on 18 May
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">214,272 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

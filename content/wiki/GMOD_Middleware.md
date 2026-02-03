@@ -1,30 +1,14 @@
 ---
 title: "GMOD Middleware"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Middleware</span>
-
-
-
-
-
-
-
+# GMOD Middleware
 
 
 This is a summary and detailed notes from the *Chado Middleware Bake
 Off* held at the [January 2007 GMOD
 Meeting](January_2007_GMOD_Meeting "January 2007 GMOD Meeting").
 
-## <span id="Executive_Summary" class="mw-headline">Executive Summary</span>
+## Executive Summary
 
 Although GMOD uses the
 <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
@@ -62,276 +46,168 @@ Modwares.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Executive
   Summary</span>](#Executive_Summary)
-- [<span class="tocnumber">2</span> <span class="toctext">Middleware for
-  Chado databases</span>](#Middleware_for_Chado_databases)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Participants</span>](#Participants)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Introduction</span>](#Introduction)
-    - [<span class="tocnumber">2.2.1</span>
-      <span class="toctext">General Evaluation
-      Criteria</span>](#General_Evaluation_Criteria)
-      - [<span class="tocnumber">2.2.1.1</span>
-        <span class="toctext">Problem 1</span>](#Problem_1)
-      - [<span class="tocnumber">2.2.1.2</span>
-        <span class="toctext">Problem 2</span>](#Problem_2)
-      - [<span class="tocnumber">2.2.1.3</span>
-        <span class="toctext">Problem 3</span>](#Problem_3)
-      - [<span class="tocnumber">2.2.1.4</span>
-        <span class="toctext">Problem 4</span>](#Problem_4)
-      - [<span class="tocnumber">2.2.1.5</span>
-        <span class="toctext">Problem 5</span>](#Problem_5)
-      - [<span class="tocnumber">2.2.1.6</span>
-        <span class="toctext">Problem Results</span>](#Problem_Results)
-- [<span class="tocnumber">3</span> <span class="toctext">The Middleware
-  Packages</span>](#The_Middleware_Packages)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Java
-    Middleware</span>](#Java_Middleware)
-    - [<span class="tocnumber">3.1.1</span>
-      <span class="toctext">Hibernate</span>](#Hibernate)
-      - [<span class="tocnumber">3.1.1.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction)
-      - [<span class="tocnumber">3.1.1.2</span>
-        <span class="toctext">Performance</span>](#Performance)
-      - [<span class="tocnumber">3.1.1.3</span>
-        <span class="toctext">Configuration</span>](#Configuration)
-      - [<span class="tocnumber">3.1.1.4</span>
-        <span class="toctext">Documentation</span>](#Documentation)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">iBatis</span>](#iBatis)
-      - [<span class="tocnumber">3.1.2.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction_2)
-      - [<span class="tocnumber">3.1.2.2</span>
-        <span class="toctext">Performance</span>](#Performance_2)
-      - [<span class="tocnumber">3.1.2.3</span>
-        <span class="toctext">Configuration</span>](#Configuration_2)
-      - [<span class="tocnumber">3.1.2.4</span>
-        <span class="toctext">Documentation</span>](#Documentation_2)
-    - [<span class="tocnumber">3.1.3</span>
-      <span class="toctext">InterMine</span>](#InterMine)
-      - [<span class="tocnumber">3.1.3.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction_3)
-      - [<span class="tocnumber">3.1.3.2</span>
-        <span class="toctext">Performance</span>](#Performance_3)
-      - [<span class="tocnumber">3.1.3.3</span>
-        <span class="toctext">Configuration</span>](#Configuration_3)
-      - [<span class="tocnumber">3.1.3.4</span>
-        <span class="toctext">Documentation</span>](#Documentation_3)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Perl
-    Middleware</span>](#Perl_Middleware)
-    - [<span class="tocnumber">3.2.1</span>
-      <span class="toctext">Chado%253A%253AAutoDBI</span>](#Chado%253A%253AAutoDBI)
-      - [<span class="tocnumber">3.2.1.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction_4)
-      - [<span class="tocnumber">3.2.1.2</span>
-        <span class="toctext">Performance</span>](#Performance_4)
-      - [<span class="tocnumber">3.2.1.3</span>
-        <span class="toctext">Configuration</span>](#Configuration_4)
-      - [<span class="tocnumber">3.2.1.4</span>
-        <span class="toctext">Documentation</span>](#Documentation_4)
-    - [<span class="tocnumber">3.2.2</span>
-      <span class="toctext">Modware</span>](#Modware)
-      - [<span class="tocnumber">3.2.2.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction_5)
-      - [<span class="tocnumber">3.2.2.2</span>
-        <span class="toctext">Performance</span>](#Performance_5)
-      - [<span class="tocnumber">3.2.2.3</span>
-        <span class="toctext">Configuration</span>](#Configuration_5)
-      - [<span class="tocnumber">3.2.2.4</span>
-        <span class="toctext">Documentation</span>](#Documentation_5)
-    - [<span class="tocnumber">3.2.3</span>
-      <span class="toctext">GBrowse (DasI)</span>](#GBrowse_.28DasI.29)
-      - [<span class="tocnumber">3.2.3.1</span>
-        <span class="toctext">Abstraction</span>](#Abstraction_6)
-      - [<span class="tocnumber">3.2.3.2</span>
-        <span class="toctext">Performance</span>](#Performance_6)
-      - [<span class="tocnumber">3.2.3.3</span>
-        <span class="toctext">Configuration</span>](#Configuration_6)
-      - [<span class="tocnumber">3.2.3.4</span>
-        <span class="toctext">Documentation</span>](#Documentation_6)
-    - [<span class="tocnumber">3.2.4</span> <span class="toctext">The
-      Bio::Chado API</span>](#The_Bio::Chado_API)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Getting
-    More Information</span>](#Getting_More_Information)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Object-Relational Mapping
-  Principles</span>](#Object-Relational_Mapping_Principles)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Presentation by Sohel
-    Merchant</span>](#Presentation_by_Sohel_Merchant)
-    - [<span class="tocnumber">4.1.1</span>
-      <span class="toctext">Outline</span>](#Outline)
-    - [<span class="tocnumber">4.1.2</span> <span class="toctext">The
-      Problem</span>](#The_Problem)
-    - [<span class="tocnumber">4.1.3</span>
-      <span class="toctext">Solutions</span>](#Solutions)
-    - [<span class="tocnumber">4.1.4</span>
-      <span class="toctext">ORM</span>](#ORM)
-    - [<span class="tocnumber">4.1.5</span> <span class="toctext">Perl -
-      Class::DBI</span>](#Perl_-_Class::DBI)
-    - [<span class="tocnumber">4.1.6</span>
-      <span class="toctext">Class::DBI</span>](#Class::DBI)
-    - [<span class="tocnumber">4.1.7</span>
-      <span class="toctext">Class::DBI -
-      CRUD</span>](#Class::DBI_-_CRUD)
-    - [<span class="tocnumber">4.1.8</span> <span class="toctext">Java -
-      Hibernate</span>](#Java_-_Hibernate)
-    - [<span class="tocnumber">4.1.9</span> <span class="toctext">Java -
-      iBatis</span>](#Java_-_iBatis)
-    - [<span class="tocnumber">4.1.10</span>
-      <span class="toctext">Summary</span>](#Summary)
-  - [<span class="tocnumber">4.2</span>
-    <span class="toctext">XORT</span>](#XORT)
-    - [<span class="tocnumber">4.2.1</span>
-      <span class="toctext">Background</span>](#Background)
-    - [<span class="tocnumber">4.2.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview)
-    - [<span class="tocnumber">4.2.3</span>
-      <span class="toctext">Special topics</span>](#Special_topics)
-      - [<span class="tocnumber">4.2.3.1</span>
-        <span class="toctext">Comparing Hibernate &
-        XORT</span>](#Comparing_Hibernate_.26_XORT)
-    - [<span class="tocnumber">4.2.4</span>
-      <span class="toctext">Limitations</span>](#Limitations)
-    - [<span class="tocnumber">4.2.5</span>
-      <span class="toctext">Presentation by Pinglei Zhou and Josh
-      Goodman</span>](#Presentation_by_Pinglei_Zhou_and_Josh_Goodman)
-  - [<span class="tocnumber">4.3</span>
-    <span class="toctext">Chado%253A%253AAutoDBI</span>](#Chado%253A%253AAutoDBI_2)
-    - [<span class="tocnumber">4.3.1</span>
-      <span class="toctext">Background</span>](#Background_2)
-    - [<span class="tocnumber">4.3.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_2)
-    - [<span class="tocnumber">4.3.3</span>
-      <span class="toctext">Special topics</span>](#Special_topics_2)
-    - [<span class="tocnumber">4.3.4</span>
-      <span class="toctext">Limitations</span>](#Limitations_2)
-    - [<span class="tocnumber">4.3.5</span>
-      <span class="toctext">Presentation by Brian
-      O'Connor</span>](#Presentation_by_Brian_O.27Connor)
-  - [<span class="tocnumber">4.4</span>
-    <span class="toctext">Modware</span>](#Modware_2)
-    - [<span class="tocnumber">4.4.1</span>
-      <span class="toctext">Background</span>](#Background_3)
-    - [<span class="tocnumber">4.4.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_3)
-    - [<span class="tocnumber">4.4.3</span>
-      <span class="toctext">Special topics</span>](#Special_topics_3)
-    - [<span class="tocnumber">4.4.4</span>
-      <span class="toctext">Limitations</span>](#Limitations_3)
-    - [<span class="tocnumber">4.4.5</span>
-      <span class="toctext">Presentation by Eric
-      Just</span>](#Presentation_by_Eric_Just)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">GBrowse
-    (DasI) Adaptor</span>](#GBrowse_.28DasI.29_Adaptor)
-    - [<span class="tocnumber">4.5.1</span>
-      <span class="toctext">Background</span>](#Background_4)
-    - [<span class="tocnumber">4.5.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_4)
-    - [<span class="tocnumber">4.5.3</span>
-      <span class="toctext">Special topics</span>](#Special_topics_4)
-    - [<span class="tocnumber">4.5.4</span>
-      <span class="toctext">Limitations</span>](#Limitations_4)
-    - [<span class="tocnumber">4.5.5</span>
-      <span class="toctext">Presentation by Scott
-      Cain</span>](#Presentation_by_Scott_Cain)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">iBatis and
-    Abator</span>](#iBatis_and_Abator)
-    - [<span class="tocnumber">4.6.1</span>
-      <span class="toctext">Background</span>](#Background_5)
-    - [<span class="tocnumber">4.6.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_5)
-    - [<span class="tocnumber">4.6.3</span>
-      <span class="toctext">Special topics</span>](#Special_topics_5)
-    - [<span class="tocnumber">4.6.4</span>
-      <span class="toctext">Limitations</span>](#Limitations_5)
-    - [<span class="tocnumber">4.6.5</span>
-      <span class="toctext">Presentation by Jeff
-      Bowes</span>](#Presentation_by_Jeff_Bowes)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">Hibernate</span>](#Hibernate_2)
-    - [<span class="tocnumber">4.7.1</span>
-      <span class="toctext">Background</span>](#Background_6)
-    - [<span class="tocnumber">4.7.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_6)
-    - [<span class="tocnumber">4.7.3</span>
-      <span class="toctext">Limitations</span>](#Limitations_6)
-    - [<span class="tocnumber">4.7.4</span>
-      <span class="toctext">Presentation by Robert
-      Bruggner</span>](#Presentation_by_Robert_Bruggner)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">PSU Chado
-    Interface</span>](#PSU_Chado_Interface)
-    - [<span class="tocnumber">4.8.1</span>
-      <span class="toctext">Background</span>](#Background_7)
-    - [<span class="tocnumber">4.8.2</span>
-      <span class="toctext">Overview</span>](#Overview)
-    - [<span class="tocnumber">4.8.3</span>
-      <span class="toctext">iBatis</span>](#iBatis_2)
-      - [<span class="tocnumber">4.8.3.1</span>
-        <span class="toctext">Technical
-        Overview</span>](#Technical_Overview_7)
-      - [<span class="tocnumber">4.8.3.2</span>
-        <span class="toctext">Advantages</span>](#Advantages)
-      - [<span class="tocnumber">4.8.3.3</span>
-        <span class="toctext">Limitations</span>](#Limitations_7)
-    - [<span class="tocnumber">4.8.4</span>
-      <span class="toctext">Hibernate</span>](#Hibernate_3)
-      - [<span class="tocnumber">4.8.4.1</span>
-        <span class="toctext">Technical
-        Overview</span>](#Technical_Overview_8)
-      - [<span class="tocnumber">4.8.4.2</span>
-        <span class="toctext">Advantages</span>](#Advantages_2)
-      - [<span class="tocnumber">4.8.4.3</span>
-        <span class="toctext">Limitations</span>](#Limitations_8)
-    - [<span class="tocnumber">4.8.5</span>
-      <span class="toctext">Presentation by Chinmay
-      Patel</span>](#Presentation_by_Chinmay_Patel)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">GUS Web
-    Development Kit (WDK)</span>](#GUS_Web_Development_Kit_.28WDK.29)
-    - [<span class="tocnumber">4.9.1</span>
-      <span class="toctext">Background</span>](#Background_8)
-    - [<span class="tocnumber">4.9.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_9)
-    - [<span class="tocnumber">4.9.3</span>
-      <span class="toctext">Advantages</span>](#Advantages_3)
-    - [<span class="tocnumber">4.9.4</span>
-      <span class="toctext">Limitations</span>](#Limitations_9)
-    - [<span class="tocnumber">4.9.5</span>
-      <span class="toctext">Presentation by Steve
-      Fischer</span>](#Presentation_by_Steve_Fischer)
-  - [<span class="tocnumber">4.10</span>
-    <span class="toctext">InterMine</span>](#InterMine_2)
-    - [<span class="tocnumber">4.10.1</span>
-      <span class="toctext">Background</span>](#Background_9)
-    - [<span class="tocnumber">4.10.2</span>
-      <span class="toctext">Technical
-      Overview</span>](#Technical_Overview_10)
-    - [<span class="tocnumber">4.10.3</span>
-      <span class="toctext">Limitations</span>](#Limitations_10)
-    - [<span class="tocnumber">4.10.4</span>
-      <span class="toctext">Presentation by Gos
-      Micklem</span>](#Presentation_by_Gos_Micklem)
-- [<span class="tocnumber">5</span> <span class="toctext">Wiki
-  Authors</span>](#Wiki_Authors)
+- [Middleware for
+  Chado databases](#Middleware_for_Chado_databases)
+  - [Participants](#Participants)
+  - [Introduction](#Introduction)
+    - [General Evaluation
+      Criteria](#General_Evaluation_Criteria)
+      - [Problem 1](#Problem_1)
+      - [Problem 2](#Problem_2)
+      - [Problem 3](#Problem_3)
+      - [Problem 4](#Problem_4)
+      - [Problem 5](#Problem_5)
+      - [Problem Results](#Problem_Results)
+- [The Middleware
+  Packages](#The_Middleware_Packages)
+  - [Java
+    Middleware](#Java_Middleware)
+    - [Hibernate](#Hibernate)
+      - [Abstraction](#Abstraction)
+      - [Performance](#Performance)
+      - [Configuration](#Configuration)
+      - [Documentation](#Documentation)
+    - [iBatis](#iBatis)
+      - [Abstraction](#Abstraction_2)
+      - [Performance](#Performance_2)
+      - [Configuration](#Configuration_2)
+      - [Documentation](#Documentation_2)
+    - [InterMine](#InterMine)
+      - [Abstraction](#Abstraction_3)
+      - [Performance](#Performance_3)
+      - [Configuration](#Configuration_3)
+      - [Documentation](#Documentation_3)
+  - [Perl
+    Middleware](#Perl_Middleware)
+    - [Chado%253A%253AAutoDBI](#Chado%253A%253AAutoDBI)
+      - [Abstraction](#Abstraction_4)
+      - [Performance](#Performance_4)
+      - [Configuration](#Configuration_4)
+      - [Documentation](#Documentation_4)
+    - [Modware](#Modware)
+      - [Abstraction](#Abstraction_5)
+      - [Performance](#Performance_5)
+      - [Configuration](#Configuration_5)
+      - [Documentation](#Documentation_5)
+    - [GBrowse (DasI)](#GBrowse_.28DasI.29)
+      - [Abstraction](#Abstraction_6)
+      - [Performance](#Performance_6)
+      - [Configuration](#Configuration_6)
+      - [Documentation](#Documentation_6)
+    - [The
+      Bio::Chado API](#The_Bio::Chado_API)
+  - [Getting
+    More Information](#Getting_More_Information)
+- [Object-Relational Mapping
+  Principles](#Object-Relational_Mapping_Principles)
+  - [Presentation by Sohel
+    Merchant](#Presentation_by_Sohel_Merchant)
+    - [Outline](#Outline)
+    - [The
+      Problem](#The_Problem)
+    - [Solutions](#Solutions)
+    - [ORM](#ORM)
+    - [Perl -
+      Class::DBI](#Perl_-_Class::DBI)
+    - [Class::DBI](#Class::DBI)
+    - [Class::DBI -
+      CRUD](#Class::DBI_-_CRUD)
+    - [Java -
+      Hibernate](#Java_-_Hibernate)
+    - [Java -
+      iBatis](#Java_-_iBatis)
+    - [Summary](#Summary)
+  - [XORT](#XORT)
+    - [Background](#Background)
+    - [Technical
+      Overview](#Technical_Overview)
+    - [Special topics](#Special_topics)
+      - [Comparing Hibernate &
+        XORT](#Comparing_Hibernate_.26_XORT)
+    - [Limitations](#Limitations)
+    - [Presentation by Pinglei Zhou and Josh
+      Goodman](#Presentation_by_Pinglei_Zhou_and_Josh_Goodman)
+  - [Chado%253A%253AAutoDBI](#Chado%253A%253AAutoDBI_2)
+    - [Background](#Background_2)
+    - [Technical
+      Overview](#Technical_Overview_2)
+    - [Special topics](#Special_topics_2)
+    - [Limitations](#Limitations_2)
+    - [Presentation by Brian
+      O'Connor](#Presentation_by_Brian_O.27Connor)
+  - [Modware](#Modware_2)
+    - [Background](#Background_3)
+    - [Technical
+      Overview](#Technical_Overview_3)
+    - [Special topics](#Special_topics_3)
+    - [Limitations](#Limitations_3)
+    - [Presentation by Eric
+      Just](#Presentation_by_Eric_Just)
+  - [GBrowse
+    (DasI) Adaptor](#GBrowse_.28DasI.29_Adaptor)
+    - [Background](#Background_4)
+    - [Technical
+      Overview](#Technical_Overview_4)
+    - [Special topics](#Special_topics_4)
+    - [Limitations](#Limitations_4)
+    - [Presentation by Scott
+      Cain](#Presentation_by_Scott_Cain)
+  - [iBatis and
+    Abator](#iBatis_and_Abator)
+    - [Background](#Background_5)
+    - [Technical
+      Overview](#Technical_Overview_5)
+    - [Special topics](#Special_topics_5)
+    - [Limitations](#Limitations_5)
+    - [Presentation by Jeff
+      Bowes](#Presentation_by_Jeff_Bowes)
+  - [Hibernate](#Hibernate_2)
+    - [Background](#Background_6)
+    - [Technical
+      Overview](#Technical_Overview_6)
+    - [Limitations](#Limitations_6)
+    - [Presentation by Robert
+      Bruggner](#Presentation_by_Robert_Bruggner)
+  - [PSU Chado
+    Interface](#PSU_Chado_Interface)
+    - [Background](#Background_7)
+    - [Overview](#Overview)
+    - [iBatis](#iBatis_2)
+      - [Technical
+        Overview](#Technical_Overview_7)
+      - [Advantages](#Advantages)
+      - [Limitations](#Limitations_7)
+    - [Hibernate](#Hibernate_3)
+      - [Technical
+        Overview](#Technical_Overview_8)
+      - [Advantages](#Advantages_2)
+      - [Limitations](#Limitations_8)
+    - [Presentation by Chinmay
+      Patel](#Presentation_by_Chinmay_Patel)
+  - [GUS Web
+    Development Kit (WDK)](#GUS_Web_Development_Kit_.28WDK.29)
+    - [Background](#Background_8)
+    - [Technical
+      Overview](#Technical_Overview_9)
+    - [Advantages](#Advantages_3)
+    - [Limitations](#Limitations_9)
+    - [Presentation by Steve
+      Fischer](#Presentation_by_Steve_Fischer)
+  - [InterMine](#InterMine_2)
+    - [Background](#Background_9)
+    - [Technical
+      Overview](#Technical_Overview_10)
+    - [Limitations](#Limitations_10)
+    - [Presentation by Gos
+      Micklem](#Presentation_by_Gos_Micklem)
+- [Wiki
+  Authors](#Wiki_Authors)
 
 
+## Middleware for Chado databases
 
-## <span id="Middleware_for_Chado_databases" class="mw-headline">Middleware for Chado databases</span>
-
-### <span id="Participants" class="mw-headline">Participants</span>
+### Participants
 
 On January 19 2007, representatives of the major model organism
 databases (MODs) and other interested parties met to discuss and compare
@@ -351,7 +227,7 @@ individual presentations.
 
   
 
-### <span id="Introduction" class="mw-headline">Introduction</span>
+### Introduction
 
 A group of some 50 GMOD developers gathered at the annual meeting to
 discuss middleware. This one day meeting had the following general
@@ -400,7 +276,7 @@ that can be used by GMOD developers when considering middleware.
 
   
 
-#### <span id="General_Evaluation_Criteria" class="mw-headline">General Evaluation Criteria</span>
+#### General Evaluation Criteria
 
 The GMOD developers proposed that each presenter provide some basic
 information about each middleware package, both general and technical.
@@ -413,7 +289,7 @@ demonstration was not intended to be *live*.
 
   
 
-##### <span id="Problem_1" class="mw-headline">Problem 1</span>
+##### Problem 1
 
 Enter the information about the following three novel genes, including
 the associated mRNA structures, into your database. Print the assigned
@@ -463,7 +339,7 @@ Gene descriptions:
            strand: 1
            srcFeature_id: Id of genomic sample
 
-##### <span id="Problem_2" class="mw-headline">Problem 2</span>
+##### Problem 2
 
 Retrieve and print the following report for gene **xfile** (the coding
 sequence and exon coordinates are derived from the associated mRNA
@@ -481,7 +357,7 @@ feature). The results should resemble the following:
     ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
     GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
 
-##### <span id="Problem_3" class="mw-headline">Problem 3</span>
+##### Problem 3
 
 Update the gene **xfile**: change the name symbol to **x-file** and
 retrieve the changed record. Regenerate the report from Problem 1. The
@@ -499,7 +375,7 @@ results should resemble the following:
     ATGGCGTTAGTATTCATGGTTACTGGTTTCGCTACTGATATCACCCAGCGTGTAGGCTGT
     GGAATCGAACACTGGTATTGTATAAATGTTTGTGAATACACTGAGAAATAA
 
-##### <span id="Problem_4" class="mw-headline">Problem 4</span>
+##### Problem 4
 
 Search for all genes with symbols starting with *x-*. With the results
 produce the following simple result list (organism will vary):
@@ -508,7 +384,7 @@ produce the following simple result list (organism will vary):
     1324    x-men   Xenopus laevis
     1325    x-ray     Xenopus laevis
 
-##### <span id="Problem_5" class="mw-headline">Problem 5</span>
+##### Problem 5
 
 Delete the gene **x-ray** using the `geneId`. Run the search and report
 in Problem 4 again to show the delete has taken place, with a result
@@ -519,7 +395,7 @@ resembling the following:
 
   
 
-##### <span id="Problem_Results" class="mw-headline">Problem Results</span>
+##### Problem Results
 
 All presenters paid attention to the assigned problems and all packages
 could perform the required operations if appropriate: the
@@ -531,7 +407,7 @@ presentations themselves for these details.
 
   
 
-## <span id="The_Middleware_Packages" class="mw-headline">The Middleware Packages</span>
+## The Middleware Packages
 
 The one day meeting heard presentations from developers using both
 [Perl](Category%253APerl "Category%253APerl") and
@@ -620,7 +496,7 @@ Perl APIs, a variant of OQL, IQL, is provided.
 
   
 
-#### <span id="Java_Middleware" class="mw-headline">Java Middleware</span>
+#### Java Middleware
 
 The Java packages all used Java plus XML, to some degree. In addition
 iBatis exposes SQL to the developer and it was argued that this could be
@@ -640,7 +516,7 @@ property. This mostly has to do with the circular nature of the schema.
 
   
 
-##### <span id="Hibernate" class="mw-headline">Hibernate</span>
+##### Hibernate
 
 From the <a href="http://www.hibernate.org" class="external text"
 rel="nofollow">Hibernate Web site</a>:
@@ -657,7 +533,7 @@ is as valid as always.*
 Hibernate is thought to work best when used in conjunction with a schema
 that's been designed with objects in mind, an *object-oriented schema*.
 
-###### <span id="Abstraction" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 Hibernate is the more abstracted of the 2 Java packages, it allows you
 to work with the relational database with the least exposure to SQL if
@@ -665,11 +541,11 @@ you choose to do this. It is probably considered the more flexible of
 the 2 with respect to language since one can program in Java or HBL
 (Hibernate Query Language), a hybrid between SQL and Java.
 
-###### <span id="Performance" class="mw-headline">Performance</span>
+###### Performance
 
 No pairwise comparisons between Hibernate and iBatis were made.
 
-###### <span id="Configuration" class="mw-headline">Configuration</span>
+###### Configuration
 
 Hibernate has the ability to read a database schema and generate Java
 Code representing the database objects or tables. In this exercise the
@@ -685,14 +561,14 @@ functions for each object based on the table unique constraints. After
 doing that, Hibernate takes care of all the
 Create-Retrieve-Update-Delete (CRUD) and transaction functionality.
 
-###### <span id="Documentation" class="mw-headline">Documentation</span>
+###### Documentation
 
 Hibernate is a popular and well-supported tool with extensive
 documentation.
 
   
 
-##### <span id="iBatis" class="mw-headline">iBatis</span>
+##### iBatis
 
 From the <a href="http://ibatis.apache.org" class="external text"
 rel="nofollow">iBatis Web site</a>:
@@ -711,17 +587,17 @@ any database to any object model and is very tolerant of legacy designs,
 or even bad designs. This is all achieved without special database
 tables, peer objects or code generation.*
 
-###### <span id="Abstraction_2" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 iBatis does not attempt to achieve abstraction in the way that other
 Java [ORM](Glossary#ORM "Glossary") tools do and assumes that viewing
 SQL is an advantage, not a disadvantage.
 
-###### <span id="Performance_2" class="mw-headline">Performance</span>
+###### Performance
 
 No pairwise comparisons made between iBatis and Hibernate.
 
-###### <span id="Configuration_2" class="mw-headline">Configuration</span>
+###### Configuration
 
 The following general steps are performed:
 
@@ -734,14 +610,14 @@ The following general steps are performed:
     - For example, iBatis mapped some things to Java strings that should
       have been Integers
 
-###### <span id="Documentation_2" class="mw-headline">Documentation</span>
+###### Documentation
 
 iBatis is a popular and well-supported tool with extensive
 documentation.
 
   
 
-##### <span id="InterMine" class="mw-headline">InterMine</span>
+##### InterMine
 
 From the <a href="http://www.intermine.org" class="external text"
 rel="nofollow">InterMine Web site</a>:
@@ -763,14 +639,14 @@ configuring the particular organisms and data files required. A
 framework is provided for adding new sources to load custom data, and
 each new source can easily extend the data model.
 
-###### <span id="Abstraction_3" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 An InterMine data model is defined at the object level and a database
 schema is automatically generated. The database schema is entirely
 hidden, queries are performed on the object model by a Java API, an
 OQL-like query language (IQL), or a pilot Perl API.
 
-###### <span id="Performance_3" class="mw-headline">Performance</span>
+###### Performance
 
 Following build, InterMine-based systems are read-only. In contrast to
 transactional systems this makes it easier to focus on query
@@ -782,7 +658,7 @@ added at any time, allowing performance tuning of the live database.
 Performance is also enhanced through the use of a large object cache in
 the web application.
 
-###### <span id="Configuration_3" class="mw-headline">Configuration</span>
+###### Configuration
 
 An InterMine object model is defined as an XML file, Java business
 objects and a relational schema are automatically generated from it. The
@@ -792,7 +668,7 @@ also automatic. InterMine cannot access an existing database schema but
 could import data from one by defining an object model and importing the
 data.
 
-###### <span id="Documentation_3" class="mw-headline">Documentation</span>
+###### Documentation
 
 Documentation on [InterMine](InterMine "InterMine")'s functionality and
 instructions for setting up a new instance are provided at
@@ -801,7 +677,7 @@ rel="nofollow">http://trac.flymine.org</a>
 
   
 
-#### <span id="Perl_Middleware" class="mw-headline">Perl Middleware</span>
+#### Perl Middleware
 
 The [Perl](Category%253APerl "Category%253APerl")\] approaches used only the
 Perl language (the Java packages all used Java plus XML, to some
@@ -812,7 +688,7 @@ can be used with any relational schema.
 
   
 
-##### <span id="Chado%253A%253AAutoDBI" class="mw-headline">Chado%253A%253AAutoDBI</span>
+##### Chado%253A%253AAutoDBI
 
 The [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI") tool is based on
 <a href="http://search.cpan.org/perldoc?Class::DBI"
@@ -827,28 +703,28 @@ changes are made. This code autogeneration process was adapted from the
 [Turnkey](Turnkey "Turnkey") project which is a generic ORM/website code
 generation tool.
 
-###### <span id="Abstraction_4" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 Chado%253A%253AAutoDBI objects map directly to the Chado tables so it could be
 said that Chado%253A%253AAutoDBI is as abstract as Chado itself. Therefore one
 needs to become somewhat familiar with Chado itself in order to use
 Chado%253A%253AAutoDBI.
 
-###### <span id="Performance_4" class="mw-headline">Performance</span>
+###### Performance
 
 No pairwise comparisons of performance were done using Perl middleware.
 All packages were deemed to give adequate performance when used to
 connect UIs to underlying databases. On the other hand the presenters
 were reluctant to recommend their packages for *bulk* operations.
 
-###### <span id="Configuration_4" class="mw-headline">Configuration</span>
+###### Configuration
 
 Chado%253A%253AAutoDBI requires no configuration, it is designed to interact
 with the Chado schema out-of-the-box. If the schema changes then
 Chado%253A%253AAutoDBI can be quickly autogenerated again to adjust to the
 change.
 
-###### <span id="Documentation_4" class="mw-headline">Documentation</span>
+###### Documentation
 
 For more information see the <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/README.AutoDBI"
@@ -857,9 +733,9 @@ the [Wiki page](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI"), and the
 [Chado%253A%253AAutoDBI
 Presentation](Chado%253A%253AAutoDBI_Presentation "Chado%253A%253AAutoDBI Presentation").
 
-##### <span id="Modware" class="mw-headline">Modware</span>
+##### Modware
 
-###### <span id="Abstraction_5" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 [Modware](Modware "Modware") has higher level of abstraction than that
 provided by [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI"). The
@@ -869,13 +745,13 @@ representations of features directly from
 either be highly suitable or not at all appropriate for a given
 environment.
 
-###### <span id="Performance_5" class="mw-headline">Performance</span>
+###### Performance
 
 No pairwise comparisons of performance were done using Perl middleware.
 All packages were deemed to give adequate performance when used to
 connect UIs to underlying databases.
 
-###### <span id="Configuration_5" class="mw-headline">Configuration</span>
+###### Configuration
 
 Modware requires minimal configuration, it is designed to interact with
 the Chado schema out-of-the-box. If the schema changes then the
@@ -883,7 +759,7 @@ underlying [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoD
 able to adjust to the change. Some convenience views are created when
 installing Modware (i.e. V_MRNA_FEATURES).
 
-###### <span id="Documentation_5" class="mw-headline">Documentation</span>
+###### Documentation
 
 BioPerl-style documentation at
 <a href="http://gmod-ware.sourceforge.net/doc/" class="external free"
@@ -892,16 +768,16 @@ POD for all methods.
 
   
 
-##### <span id="GBrowse_.28DasI.29" class="mw-headline">[GBrowse](GBrowse.1 "GBrowse") (DasI)</span>
+##### [GBrowse](GBrowse.1 "GBrowse") (DasI)
 
-###### <span id="Abstraction_6" class="mw-headline">Abstraction</span>
+###### Abstraction
 
 Since it implements the
 <a href="http://search.cpan.org/perldoc?Bio::DasI" class="external text"
 rel="nofollow">Bio::DasI</a> interface, the abstraction is similar to
 what one would see with [BioPerl](BioPerl "BioPerl")/BioDas features.
 
-###### <span id="Performance_6" class="mw-headline">Performance</span>
+###### Performance
 
 <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> performs
@@ -921,18 +797,18 @@ as a complete data warehouse. The main way to get better performance for
 the Chado GBrowse adaptor is to implement materialized views of the GFF
 or SeqFeature schema inside Chado.
 
-###### <span id="Configuration_6" class="mw-headline">Configuration</span>
+###### Configuration
 
 This package needs no configuration, it is pre-configured for Chado.
 
-###### <span id="Documentation_6" class="mw-headline">Documentation</span>
+###### Documentation
 
 The DasI interface is well-documented, about a dozen methods and three
 classes, all documented.
 
   
 
-##### <span id="The_Bio::Chado_API" class="mw-headline">The Bio::Chado API</span>
+##### The Bio::Chado API
 
 The [ParameciumDB](ParameciumDB "ParameciumDB") group has created an API
 for Chado based on the
@@ -945,7 +821,7 @@ here:
   class="external free"
   rel="nofollow">http://paramecium.cgm.cnrs-gif.fr/chadoapi/</a>
 
-### <span id="Getting_More_Information" class="mw-headline">Getting More Information</span>
+### Getting More Information
 
 The issues around using and developing middleware are of general
 interest in GMOD. If you have questions about middleware we suggest that
@@ -956,9 +832,9 @@ developers. You can sign up for the list here:
 class="external free"
 rel="nofollow">https://lists.sourceforge.net/lists/listinfo/gmod-devel</a>
 
-## <span id="Object-Relational_Mapping_Principles" class="mw-headline">Object-Relational Mapping Principles</span>
+## Object-Relational Mapping Principles
 
-#### <span id="Presentation_by_Sohel_Merchant" class="mw-headline">Presentation by Sohel Merchant</span>
+#### Presentation by Sohel Merchant
 
 Sohel Merchant, Bioinformatics Software Engineer at dictyBase, Center
 for Genetic Medicine, Northwestern University, Chicago. This Wiki
@@ -973,7 +849,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 
   
 
-##### <span id="Outline" class="mw-headline">Outline</span>
+##### Outline
 
 - The Problem
 - Solutions
@@ -981,7 +857,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 - Perl – Class::DBI
 - Summary
 
-##### <span id="The_Problem" class="mw-headline">The Problem</span>
+##### The Problem
 
 - Developers need to perform Create, Retrieve, Update, Delete (aka CRUD)
   operations on data inside an application.
@@ -992,7 +868,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 - RDBMS have fixed types, but OO can have more complicated user defined
   types.
 
-##### <span id="Solutions" class="mw-headline">Solutions</span>
+##### Solutions
 
 - Data Access Object (DAO)
 - Developer writes a class which contains one attribute for each field
@@ -1007,7 +883,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 - Less amount of manual coding
 - CRUD methods are automatically generated by the ORM layer
 
-##### <span id="ORM" class="mw-headline">ORM</span>
+##### ORM
 
 [ORM](Glossary#ORM "Glossary") solutions
 
@@ -1019,7 +895,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
   - JDO
   - iBatis
 
-##### <span id="Perl_-_Class::DBI" class="mw-headline">Perl - Class::DBI</span>
+##### Perl - Class::DBI
 
 - Provides a simple interfaces for wrapping Perl classes around a
   database tables
@@ -1027,7 +903,7 @@ class="external text" rel="nofollow">ORM (Wikipedia)</a>.
 - The table column name are mapped to the get/set methods
 - Can be used with transactions
 
-##### <span id="Class::DBI" class="mw-headline">Class::DBI</span>
+##### Class::DBI
 
 Defining a class in <a href="http://search.cpan.org/perldoc?Class::DBI"
 class="external text" rel="nofollow">Class::DBI</a> to represent a
@@ -1050,7 +926,7 @@ Chado::Cvterm->set_up_table('Cvterm');
 ```
 
 
-##### <span id="Class::DBI_-_CRUD" class="mw-headline">Class::DBI - CRUD</span>
+##### Class::DBI - CRUD
 
 
 ``` de1
@@ -1072,13 +948,13 @@ $term_dbobj->delete();
 ```
 
 
-##### <span id="Java_-_Hibernate" class="mw-headline">Java - Hibernate</span>
+##### Java - Hibernate
 
 - Hibernate maps Java Objects directly to database tables
 - Scalable
 - Works well for controlled Data model
 
-##### <span id="Java_-_iBatis" class="mw-headline">Java - iBatis</span>
+##### Java - iBatis
 
 - iBATIS maps Java Objects to the results of SQL Queries
 - XML definitions for queries
@@ -1086,7 +962,7 @@ $term_dbobj->delete();
 - Transactions
 - Good fit for existing database schema
 
-##### <span id="Summary" class="mw-headline">Summary</span>
+##### Summary
 
 - [ORM](Glossary#ORM "Glossary") provides painless roundtrip of data
   between the application and database.
@@ -1101,9 +977,9 @@ $term_dbobj->delete();
 - Is Hibernate better when you're in the process of designing a schema?
   - Hibernate can assist you in making a *Hibernate-compatible* schema.
 
-### <span id="XORT" class="mw-headline">[XORT](XORT.1 "XORT")</span>
+### [XORT](XORT.1 "XORT")
 
-#### <span id="Background" class="mw-headline">Background</span>
+#### Background
 
 - Source:
   <a href="http://sourceforge.net/project/showfiles.php?group_id=27707"
@@ -1123,15 +999,15 @@ $term_dbobj->delete();
   <a href="http://search.cpan.org/perldoc?DBI" class="external text"
   rel="nofollow">DBI</a> from Perl (CPAN)
 
-#### <span id="Technical_Overview" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity:
 - Transaction support:
 - Code generation:
 
-#### <span id="Special_topics" class="mw-headline">Special topics</span>
+#### Special topics
 
-##### <span id="Comparing_Hibernate_.26_XORT" class="mw-headline">Comparing Hibernate & XORT</span>
+##### Comparing Hibernate & XORT
 
 Flybase tried Hibernate, but just creating simple print() statements in
 the course of doing bulk operations they encountered performance issues.
@@ -1144,7 +1020,7 @@ users will encounter this issue routinely.
 Also see [Comparison of XORT and Hibernate for Chado
 Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of XORT and Hibernate for Chado reporting").
 
-#### <span id="Limitations" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Database schemas need to follow certain rules
   - All must have internal int primary key
@@ -1154,15 +1030,15 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
     feature_relationship
 - Structure not stored in memory, you flush out data as it goes
 
-#### <span id="Presentation_by_Pinglei_Zhou_and_Josh_Goodman" class="mw-headline">Presentation by Pinglei Zhou and Josh Goodman</span>
+#### Presentation by Pinglei Zhou and Josh Goodman
 
 [XORT Presentation](XORT_Presentation "XORT Presentation")
 
   
 
-### <span id="Chado%253A%253AAutoDBI_2" class="mw-headline">[Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI")</span>
+### [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI")
 
-#### <span id="Background_2" class="mw-headline">Background</span>
+#### Background
 
 - Source:
   <a href="http://sourceforge.net/projects/gmod/" class="external free"
@@ -1173,17 +1049,17 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 - Support:
 - Third party code: Based on Class::DBI by Michael Schwern & Tony Bowden
 
-#### <span id="Technical_Overview_2" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity:
 - Transaction support:
 - Code generation:
 
-#### <span id="Special_topics_2" class="mw-headline">Special topics</span>
+#### Special topics
 
 - Demonstrations of what your software does well
 
-#### <span id="Limitations_2" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Performance
   - Can one read thousands of objects into memory? You could do this but
@@ -1205,20 +1081,20 @@ __PACKAGE__->set_sql(xfiles => qq{
 ```
 
 
-#### <span id="Presentation_by_Brian_O.27Connor" class="mw-headline">Presentation by Brian O'Connor</span>
+#### Presentation by Brian O'Connor
 
 [Chado%253A%253AAutoDBI
 Presentation](Chado%253A%253AAutoDBI_Presentation "Chado%253A%253AAutoDBI Presentation")
 
   
 
-### <span id="Modware_2" class="mw-headline">Modware</span>
+### Modware
 
 [Modware](Modware "Modware") seeks to provide an object-oriented perl
 interface to Chado to allow for rapid application development without
 worrying about the complex details of the schema on a day-to-day basis.
 
-#### <span id="Background_3" class="mw-headline">Background</span>
+#### Background
 
 - Source:
   <a href="http://gmod-ware.sourceforge.net" class="external free"
@@ -1231,7 +1107,7 @@ worrying about the complex details of the schema on a day-to-day basis.
   reports, mailing lists)
 - Third party code: GMOD, BioPerl
 
-#### <span id="Technical_Overview_3" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity: Uses the
   [Chado%253A%253AAutoDBI](Chado%253A%253AAutoDBI "Chado%253A%253AAutoDBI") connection from
@@ -1255,7 +1131,7 @@ worrying about the complex details of the schema on a day-to-day basis.
   into script.
 - Code generation: No automatic code generation.
 
-#### <span id="Special_topics_3" class="mw-headline">Special topics</span>
+#### Special topics
 
 - Features in Modware map to familiar Bioperl
   (<a href="http://search.cpan.org/perldoc?Bio::Seq" class="external text"
@@ -1273,7 +1149,7 @@ worrying about the complex details of the schema on a day-to-day basis.
   <a href="http://gmod-ware.sourceforge.net" class="external free"
   rel="nofollow">http://gmod-ware.sourceforge.net</a>
 
-#### <span id="Limitations_3" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Currently Alpha release (hoping for user feedback to create Beta)
 - Does not *cover* all of Chado
@@ -1281,13 +1157,13 @@ worrying about the complex details of the schema on a day-to-day basis.
 - Performance is slower by object-oriented nature
 - Language dependent
 
-#### <span id="Presentation_by_Eric_Just" class="mw-headline">Presentation by Eric Just</span>
+#### Presentation by Eric Just
 
 [Modware Presentation](Modware_Presentation "Modware Presentation")
 
-### <span id="GBrowse_.28DasI.29_Adaptor" class="mw-headline">GBrowse (DasI) Adaptor</span>
+### GBrowse (DasI) Adaptor
 
-#### <span id="Background_4" class="mw-headline">Background</span>
+#### Background
 
 - Source: <a
   href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=34513&amp;release_id=433523"
@@ -1302,19 +1178,19 @@ worrying about the complex details of the schema on a day-to-day basis.
   class="external text" rel="nofollow">GBrowse mailing list</a>
 - Third party code: None.
 
-#### <span id="Technical_Overview_4" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity: Connects *via* Perl's DBI
 - Transaction support: N/A (read only adapter)
 - Code generation: N/A
 
-#### <span id="Special_topics_4" class="mw-headline">Special topics</span>
+#### Special topics
 
 Clearly, <a href="http://search.cpan.org/perldoc?Bio::DB::Das::Chado"
 class="external text" rel="nofollow">Bio::DB::Das::Chado</a> is designed
 for use with [GBrowse](GBrowse.1 "GBrowse").
 
-#### <span id="Limitations_4" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Read-only
 - Not generic middleware but if you use Chado and GBrowse may be useful
@@ -1322,16 +1198,16 @@ for use with [GBrowse](GBrowse.1 "GBrowse").
   work
 - Also, despite the name, has never been tested with a Das server.
 
-#### <span id="Presentation_by_Scott_Cain" class="mw-headline">Presentation by Scott Cain</span>
+#### Presentation by Scott Cain
 
 [GBrowse (DasI) Adaptor
-Presentation](GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
+Presentation](/wiki/GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 
   
 
-### <span id="iBatis_and_Abator" class="mw-headline">iBatis and Abator</span>
+### iBatis and Abator
 
-#### <span id="Background_5" class="mw-headline">Background</span>
+#### Background
 
 - Source: <a href="http://ibatis.apache.org/" class="external free"
   rel="nofollow">http://ibatis.apache.org/</a>
@@ -1341,32 +1217,32 @@ Presentation](GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 - Support:
 - Third party code:
 
-#### <span id="Technical_Overview_5" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity:
 - Transaction support:
 - Code generation:
 
-#### <span id="Special_topics_5" class="mw-headline">Special topics</span>
+#### Special topics
 
 - Demonstrations of what your software does well
 
-#### <span id="Limitations_5" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Does not hide SQL
 - Does not create a whole object model of the database in memory
 - Not as widely used as Hibernate
 - No Perl version
 
-#### <span id="Presentation_by_Jeff_Bowes" class="mw-headline">Presentation by Jeff Bowes</span>
+#### Presentation by Jeff Bowes
 
 [iBatis Presentation](IBatis_Presentation "IBatis Presentation")
 
   
 
-### <span id="Hibernate_2" class="mw-headline">Hibernate</span>
+### Hibernate
 
-#### <span id="Background_6" class="mw-headline">Background</span>
+#### Background
 
 - Source: <a href="http://www.hibernate.org" class="external free"
   rel="nofollow">http://www.hibernate.org</a>
@@ -1376,27 +1252,26 @@ Presentation](GBrowse_(DasI)_Presentation "GBrowse (DasI) Presentation")
 - Support: JBoss group
 - Third party code:
 
-#### <span id="Technical_Overview_6" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity:
 - Transaction support:
 - Code generation:
 
-#### <span id="Limitations_6" class="mw-headline">Limitations</span>
+#### Limitations
 
 - Issue around Completeness
 - Exception Handling
 - Performance Tuning
 
-#### <span id="Presentation_by_Robert_Bruggner" class="mw-headline">Presentation by Robert Bruggner</span>
+#### Presentation by Robert Bruggner
 
 [Hibernate
 Presentation](Hibernate_Presentation "Hibernate Presentation")
 
   
 
-### <span id="PSU_Chado_Interface" class="mw-headline">PSU Chado Interface</span>
-
+### PSU Chado Interface
 
 
 *I think this eventually became what is described in the [Artemis-Chado
@@ -1405,8 +1280,7 @@ Tutorial](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial
 [Dave C.](User%253AClements "User%253AClements")*
 
 
-
-#### <span id="Background_7" class="mw-headline">Background</span>
+#### Background
 
 - Source:
   <a href="http://www.sanger.ac.uk/pathogens" class="external text"
@@ -1421,7 +1295,7 @@ Tutorial](Artemis-Chado_Integration_Tutorial "Artemis-Chado Integration Tutorial
 - Support: In development
 - Third party code: iBatis and Spring/Hibernate
 
-#### <span id="Overview" class="mw-headline">Overview</span>
+#### Overview
 
 We're using a common interface with two different implementations: an
 iBatis and a Hibernate one. This gives us the ability to choose either
@@ -1429,11 +1303,11 @@ implementation depending upon the requirements of the application.
 
   
 
-#### <span id="iBatis_2" class="mw-headline">iBatis</span>
+#### iBatis
 
 See also [iBatis and Abator](#iBatis_and_Abator)
 
-##### <span id="Technical_Overview_7" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Database connectivity:
 
@@ -1448,20 +1322,20 @@ Yes
 Using common interface which was originally automatically generated, but
 mappings hand-generated
 
-##### <span id="Advantages" class="mw-headline">Advantages</span>
+##### Advantages
 
 - Direct access to SQL
 
-##### <span id="Limitations_7" class="mw-headline">Limitations</span>
+##### Limitations
 
 - Not completely pluggable between both engines
 - Lazy loading is either on or off
 
-#### <span id="Hibernate_3" class="mw-headline">Hibernate</span>
+#### Hibernate
 
 See also [Hibernate](#Hibernate_2)
 
-##### <span id="Technical_Overview_8" class="mw-headline">Technical Overview</span>
+##### Technical Overview
 
 - Database connectivity:
 
@@ -1476,24 +1350,24 @@ Yes
 Interface and Hibernate implementation originally auto-generated, then
 hand-edited
 
-##### <span id="Advantages_2" class="mw-headline">Advantages</span>
+##### Advantages
 
 - Complete coverage of core schema (except [Phenotype
   module](Chado_Phenotype_Module "Chado Phenotype Module"))
 - Choice of writing in either object-level query language or SQL
 
-##### <span id="Limitations_8" class="mw-headline">Limitations</span>
+##### Limitations
 
 - Not completely pluggable between both engines
 - Not currently using subclassing eg just a Feature, not Gene, Exon etc
 
-#### <span id="Presentation_by_Chinmay_Patel" class="mw-headline">Presentation by Chinmay Patel</span>
+#### Presentation by Chinmay Patel
 
 [PSU Presentation](PSU_Presentation "PSU Presentation")
 
-### <span id="GUS_Web_Development_Kit_.28WDK.29" class="mw-headline">GUS Web Development Kit (WDK)</span>
+### GUS Web Development Kit (WDK)
 
-#### <span id="Background_8" class="mw-headline">Background</span>
+#### Background
 
 - Source: <a href="http://www.gusdb.org/WDK" class="external free"
   rel="nofollow">http://www.gusdb.org/WDK</a>
@@ -1505,35 +1379,35 @@ hand-edited
 - Platform requirements: any Oracle, PostgreSQL or MySQL database;
   Linux; Tomcat
 
-#### <span id="Technical_Overview_9" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity: JDBC
 - Transaction support: read-only presentation layer object model
 - Code generation: java classes generated from detailed object
   specification in XML
 
-#### <span id="Advantages_3" class="mw-headline">Advantages</span>
+#### Advantages
 
 - Configurable coarse grained layer tailored for the presentation layer
 - Configurable in XML by non-programmers
 - Seamless integration with front-end query engine and web page
   generator
 
-#### <span id="Limitations_9" class="mw-headline">Limitations</span>
+#### Limitations
 
 - read-only
 - not designed as a general purpose ORT
 - configuration is complicated
 
-#### <span id="Presentation_by_Steve_Fischer" class="mw-headline">Presentation by Steve Fischer</span>
+#### Presentation by Steve Fischer
 
 [GUS WDK Presentation](GUS_WDK_Presentation "GUS WDK Presentation")
 
   
 
-### <span id="InterMine_2" class="mw-headline">InterMine</span>
+### InterMine
 
-#### <span id="Background_9" class="mw-headline">Background</span>
+#### Background
 
 - Source: <a href="http://www.intermine.org" class="external free"
   rel="nofollow">http://www.intermine.org</a>
@@ -1543,14 +1417,14 @@ hand-edited
 - Support: FlyMine/InterMine development team
 - Third party code: Struts/JSP/Ajax
 
-#### <span id="Technical_Overview_10" class="mw-headline">Technical Overview</span>
+#### Technical Overview
 
 - Database connectivity: JDBC
 - Transaction support: basic during build (doesn't support concurrent
   writes) as database is optimised for high read-only query performance
 - Code generation: extensive use of automatic code generation
 
-#### <span id="Limitations_10" class="mw-headline">Limitations</span>
+#### Limitations
 
 - slow, but improving, build times (loads and integrates ~25m objects in
   ~36 hours)
@@ -1566,14 +1440,14 @@ hand-edited
   - e.g. find the genes with only 1 transcript
 - doesn't yet support left outer join behaviour (under development)
 
-#### <span id="Presentation_by_Gos_Micklem" class="mw-headline">Presentation by Gos Micklem</span>
+#### Presentation by Gos Micklem
 
 [InterMine
 Presentation](InterMine_Presentation "InterMine Presentation")
 
   
 
-## <span id="Wiki_Authors" class="mw-headline">Wiki Authors</span>
+## Wiki Authors
 
 - Jeff Bowes, XenBase
 - Robert Bruggner, VectorBase
@@ -1588,97 +1462,3 @@ Presentation](InterMine_Presentation "InterMine Presentation")
 - Chinmay Patel, GeneDB
 - Pinglei Zhou, FlyBase
 - Gos Micklem, FlyMine/InterMine
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [InterMine](Category%253AInterMine "Category%253AInterMine")
-- [Java](Category%253AJava "Category%253AJava")
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Modware](Category%253AModware "Category%253AModware")
-- [Perl](Category%253APerl "Category%253APerl")
-- [XORT](Category%253AXORT "Category%253AXORT")
-- [BioPerl](Category%253ABioPerl "Category%253ABioPerl")
-- [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Middleware" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:27 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">684,710 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "GMOD in a Box/WebApollo"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD in a Box/WebApollo</span>
-
-
-
-
-
-
-
+# GMOD in a Box/WebApollo
 
 
 GMOD in a Box has WebApollo and all its prerequisites installed and
@@ -28,54 +12,46 @@ For this guide, we'll be using the included sample data located in:
 ~/sample_data/pyu_data
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">User
   management</span>](#User_management)
-- [<span class="tocnumber">2</span> <span class="toctext">Data
-  processing</span>](#Data_processing)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Experimental</span>](#Experimental)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Setting up
-    the user database</span>](#Setting_up_the_user_database)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Configuration</span>](#Configuration)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Main
-    configuration</span>](#Main_configuration)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Alternate
-    translation tables</span>](#Alternate_translation_tables)
-  - [<span class="tocnumber">3.3</span> <span class="toctext">Canned
-    comments</span>](#Canned_comments)
-- [<span class="tocnumber">4</span> <span class="toctext">Data
-  generation</span>](#Data_generation)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">DNA track
-    setup</span>](#DNA_track_setup)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">WebApollo
-    plugin</span>](#WebApollo_plugin)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Static
-    data generation</span>](#Static_data_generation)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">GFF3 with
+- [Data
+  processing](#Data_processing)
+  - [Experimental](#Experimental)
+  - [Setting up
+    the user database](#Setting_up_the_user_database)
+- [Configuration](#Configuration)
+  - [Main
+    configuration](#Main_configuration)
+  - [Alternate
+    translation tables](#Alternate_translation_tables)
+  - [Canned
+    comments](#Canned_comments)
+- [Data
+  generation](#Data_generation)
+  - [DNA track
+    setup](#DNA_track_setup)
+  - [WebApollo
+    plugin](#WebApollo_plugin)
+  - [Static
+    data generation](#Static_data_generation)
+  - [GFF3 with
     gene/transcript/exon/CDS/polypeptide
-    features</span>](#GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">GFF3 with
+    features](#GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features)
+  - [GFF3 with
     match/match_part
-    features</span>](#GFF3_with_match.2Fmatch_part_features)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">Generate
-    searchable name index</span>](#Generate_searchable_name_index)
-  - [<span class="tocnumber">4.7</span> <span class="toctext">BAM
-    data</span>](#BAM_data)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">BigWig
-    data</span>](#BigWig_data)
-  - [<span class="tocnumber">4.9</span> <span class="toctext">Sequence
-    searching</span>](#Sequence_searching)
-- [<span class="tocnumber">5</span> <span class="toctext">Accessing
-  WebApollo</span>](#Accessing_WebApollo)
+    features](#GFF3_with_match.2Fmatch_part_features)
+  - [Generate
+    searchable name index](#Generate_searchable_name_index)
+  - [BAM
+    data](#BAM_data)
+  - [BigWig
+    data](#BigWig_data)
+  - [Sequence
+    searching](#Sequence_searching)
+- [Accessing
+  WebApollo](#Accessing_WebApollo)
 
 
-
-# <span id="User_management" class="mw-headline">User management</span>
+# User management
 
 There are two accounts preconfigured for WebApollo. 'web_apollo_admin'
 with 'web_apollo_admin' as the password and 'guest' with 'guest' as the
@@ -92,9 +68,9 @@ You can add, delete, and change permissions for users from
 screen after processing your data. Note that you'll need to be logged in
 as 'web_apollo_admin' to see this option.
 
-# <span id="Data_processing" class="mw-headline">Data processing</span>
+# Data processing
 
-## <span id="Experimental" class="mw-headline">Experimental</span>
+## Experimental
 
 We have an experimental script to help in setting up your WebApollo
 instance. The script is interactive and will setup the configuration,
@@ -166,7 +142,7 @@ installation, since this script is experimental and if something goes
 wrong during the setup process, you'll need to handle the failed steps
 manually.
 
-## <span id="Setting_up_the_user_database" class="mw-headline">Setting up the user database</span>
+## Setting up the user database
 
 The following steps will be using the included sample First we'll need
 to setup the user database. It stores users who will have access to
@@ -218,7 +194,7 @@ when running the script.
 We're all done setting up the user database. Now we need to move on to
 configuring the application.
 
-# <span id="Configuration" class="mw-headline">Configuration</span>
+# Configuration
 
 Note about text editors: We'll have to edit some of the configuration
 files before we're up and running. Since there's no desktop environment
@@ -227,7 +203,7 @@ machine provides two options: 'nano' (easier to use) and 'vim' (super
 powerful but a lot harder to use). Unless you're already familiar with
 'vim', you're probably better off using 'nano'.
 
-## <span id="Main_configuration" class="mw-headline">Main configuration</span>
+## Main configuration
 
 Most of main configuration, located in
 '/data/var/lib/tomcat7/webapps/WebApollo/config/config.xml' has been set
@@ -248,7 +224,7 @@ class="external text" rel="nofollow">configuration section</a> in the
 server installation documentation to get details about further
 customizing your WebApollo instance.
 
-## <span id="Alternate_translation_tables" class="mw-headline">Alternate translation tables</span>
+## Alternate translation tables
 
 By default, WebApollo is configured to use NCBI's translation table 1.
 If your organism uses an alternate translation table, you'll want to
@@ -258,7 +234,7 @@ file. Check the contents of the
 directory to see which translation tables are available and update the
 entry accordingly.
 
-## <span id="Canned_comments" class="mw-headline">Canned comments</span>
+## Canned comments
 
 You can configure a set of predefined comments that will be available
 for users when adding comments through a dropdown menu. The
@@ -282,7 +258,7 @@ feature of type 'sequence:gene' and 'sequence:mRNA':
 
 We're now done configuring WebApollo. Onto data generation.
 
-# <span id="Data_generation" class="mw-headline">Data generation</span>
+# Data generation
 
 The steps for generating data (in particular static data) are mostly
 similar to JBrowse data generation steps, with some extra steps
@@ -297,7 +273,7 @@ step).
 
     $ sudo -s
 
-## <span id="DNA_track_setup" class="mw-headline">DNA track setup</span>
+## DNA track setup
 
 The first thing we need to do before processing our evidence is to
 generate the reference sequence data to be used by JBrowse. We'll use
@@ -307,14 +283,14 @@ the 'prepare-refseqs.pl' script.
 
 We now have the DNA track setup.
 
-## <span id="WebApollo_plugin" class="mw-headline">WebApollo plugin</span>
+## WebApollo plugin
 
 We now need to setup the data configuration to use the WebApollo plugin.
 We'll use the 'add-webapollo-plugin.pl' script to do so.
 
     $ bin/add-webapollo-plugin.pl -i data/trackList.json
 
-## <span id="Static_data_generation" class="mw-headline">Static data generation</span>
+## Static data generation
 
 Generating data from GFF3 works best by having a separate GFF3 per
 source type. If your GFF3 has all source types in the same file, we need
@@ -333,7 +309,7 @@ the following files:
 
 We need to process each file and create the appropriate tracks.
 
-## <span id="GFF3_with_gene.2Ftranscript.2Fexon.2FCDS.2Fpolypeptide_features" class="mw-headline">GFF3 with gene/transcript/exon/CDS/polypeptide features</span>
+## GFF3 with gene/transcript/exon/CDS/polypeptide features
 
 We'll start off with 'maker.gff'. We need to handle that file a bit
 differently than the rest of the files since the GFF represents the
@@ -356,7 +332,7 @@ href="http://www.gmod.org/wiki/WebApollo_Installation#Customizing_features#Custo
 class="external text" rel="nofollow">Customizing features</a> section in
 the WebApollo installation guide for more information on CSS styles.
 
-## <span id="GFF3_with_match.2Fmatch_part_features" class="mw-headline">GFF3 with match/match_part features</span>
+## GFF3 with match/match_part features
 
 Now we need to process the other remaining GFF3 files. The entries in
 those are stored as 'match/match_part', so they can all be handled in a
@@ -379,7 +355,7 @@ doesn't make sense, you can always process each file manually.
 
     $ for i in $(ls ~/scratch/split_gff/*.gff | grep -v maker); do j=$(basename $i); j=${j/.gff/}; echo "Processing $j"; bin/flatfile-to-json.pl --gff $i --arrowheadClass webapollo-arrowhead --getSubfeatures --subfeatureClasses "{\"match_part\": \"darkblue-80pct\"}" --cssClass container-10px --trackLabel $j; done
 
-## <span id="Generate_searchable_name_index" class="mw-headline">Generate searchable name index</span>
+## Generate searchable name index
 
 Once data tracks have been created, you will need to generate a
 searchable index of names using the generate-names.pl script:
@@ -396,7 +372,7 @@ other tracks.
 The script can be also rerun after any additional tracks are generated
 if you wish feature names from that track to be added to the index.
 
-## <span id="BAM_data" class="mw-headline">BAM data</span>
+## BAM data
 
 Now let's look how to configure BAM support. WebApollo has native
 support for BAM, so no extra processing of the data is required.
@@ -413,7 +389,7 @@ Now we need to add the BAM track.
 
 You should now have a simulated BAM track available.
 
-## <span id="BigWig_data" class="mw-headline">BigWig data</span>
+## BigWig data
 
 WebApollo has native support for BigWig files (.bw), so no extra
 processing of the data is required.
@@ -433,7 +409,7 @@ Now we need to add the BigWig track.
 
 You should now have a simulated BigWig track available.
 
-## <span id="Sequence_searching" class="mw-headline">Sequence searching</span>
+## Sequence searching
 
 To allow sequence searching, we'll need to create a sequence database
 for BLAT to use. We'll use the 'faToTwoBit' tool to convert the sample
@@ -443,7 +419,7 @@ update the 'blat.xml' configuration to point to the right file).
 
     $ faToTwoBit ~/sample_data/pyu_data/scf1117875582023.fa /data/webapollo/blat/db/genomic.2bit
 
-# <span id="Accessing_WebApollo" class="mw-headline">Accessing WebApollo</span>
+# Accessing WebApollo
 
 You'll need to restart Tomcat for the changes to take affect.
 
@@ -455,89 +431,3 @@ http://\<virtual_machine_ip_address\>/WebApollo
 
 Enter 'web_apollo_admin' for the 'User name' and whatever password you
 changed it to for 'Password' (default is 'web_apollo_admin').
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/GMOD_in_a_Box-2FWebApollo"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:09 on 17 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">16,582 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

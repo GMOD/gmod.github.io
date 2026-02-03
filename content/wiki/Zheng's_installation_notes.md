@@ -1,60 +1,38 @@
 ---
 title: "Zheng's installation notes"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Zheng's installation notes</span>
-
-
-
-
-
-
-
+# Zheng's installation notes
 
 
 Back to [Chado New Users](Chado_New_Users "Chado New Users")
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">general
   information</span>](#general_information)
-- [<span class="tocnumber">2</span> <span class="toctext">before you
-  start</span>](#before_you_start)
-- [<span class="tocnumber">3</span> <span class="toctext">get chado
-  schema from cvs</span>](#get_chado_schema_from_cvs)
-- [<span class="tocnumber">4</span> <span class="toctext">install
-  prerequisites</span>](#install_prerequisites)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">install
-    Ant</span>](#install_Ant)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">install
-    postgresql</span>](#install_postgresql)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">install
+- [before you
+  start](#before_you_start)
+- [get chado
+  schema from cvs](#get_chado_schema_from_cvs)
+- [install
+  prerequisites](#install_prerequisites)
+  - [install
+    Ant](#install_Ant)
+  - [install
+    postgresql](#install_postgresql)
+  - [install
     several general perl
-    modules</span>](#install_several_general_perl_modules)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">install
-    bioperl live</span>](#install_bioperl_live)
-  - [<span class="tocnumber">4.5</span> <span class="toctext">install
-    go-dev</span>](#install_go-dev)
-- [<span class="tocnumber">5</span> <span class="toctext">install
-  chado</span>](#install_chado)
-- [<span class="tocnumber">6</span> <span class="toctext">install
+    modules](#install_several_general_perl_modules)
+  - [install
+    bioperl live](#install_bioperl_live)
+  - [install
+    go-dev](#install_go-dev)
+- [install
+  chado](#install_chado)
+- [install
   gbrowse to work with
-  chado</span>](#install_gbrowse_to_work_with_chado)
+  chado](#install_gbrowse_to_work_with_chado)
 
 
-
-## <span id="general_information" class="mw-headline">general information</span>
+## general information
 
 There suppose to be an easy way and a hard way to install Chado database
 on Fedora:
@@ -67,42 +45,36 @@ on Fedora:
   class="external text" rel="nofollow">yum</a> makes it easier. The
   following is my note on installation of Chado on Fedora 6.
 
-## <span id="before_you_start" class="mw-headline">before you start</span>
+## before you start
 
 - you can be a superuser or you can sudo to install packages;
 - you have read <a
   href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/schema/chado/INSTALL"
   class="external text" rel="nofollow">the chado INSTALL document</a>
 
-## <span id="get_chado_schema_from_cvs" class="mw-headline">get chado schema from cvs</span>
+## get chado schema from cvs
 
 see [Chado From
 CVS](Chado_-_Getting_Started#Chado_From_CVS "Chado - Getting Started"),
 issue cvs command at my home directory.
 
-## <span id="install_prerequisites" class="mw-headline">install prerequisites</span>
+## install prerequisites
 
-### <span id="install_Ant" class="mw-headline">install <a href="http://en.wikipedia.org/wiki/Apache_Ant" class="external text"
-rel="nofollow">Ant</a></span>
+### install <a href="http://en.wikipedia.org/wiki/Apache_Ant" class="external text"
+rel="nofollow">Ant</a>
 
     sudo yum install ant
 
-### <span id="install_postgresql" class="mw-headline">install <a href="http://www.postgresql.org/" class="external text"
-rel="nofollow">postgresql</a></span>
+### install <a href="http://www.postgresql.org/" class="external text"
+rel="nofollow">postgresql</a>
 
 - install both client and server by yum
-
-<!-- -->
-
     [zha@localhost ~] sudo yum install postgresql
     [zha@localhost ~] sudo yum install postgresql-server
 
 right now the version is 8.1.8 (in yum package pool)
 
 - make server run
-
-<!-- -->
-
     [zha@localhost ~] sudo /sbin/service postgres start
 
 to make it run at boot
@@ -110,9 +82,6 @@ to make it run at boot
     [zha@localhost ~] sudo /sbin/chkconfig postgres on
 
 - in .bash_profile add line
-
-<!-- -->
-
     export PGDATA="/var/lib/pgsql/data/"
 
 But I still can't get rid of the -D /var/lib/pgsql/data/ **why???**
@@ -125,9 +94,6 @@ But I still can't get rid of the -D /var/lib/pgsql/data/ **why???**
     HINT:  Is another postmaster (PID 2785) running in data directory "/var/lib/pgsql/data"?
 
 - create PL language, template, several roles
-
-<!-- -->
-
     [zha@localhost ~] sudo -u postgres creatlang plpgsql template1
     [zha@localhost ~] sudo -u postgres createuser zha
 
@@ -156,7 +122,7 @@ to chown to postgres.
 
 haven't done yet.
 
-### <span id="install_several_general_perl_modules" class="mw-headline">install several general perl modules</span>
+### install several general perl modules
 
 use sudo cpan to do it. install
 
@@ -235,8 +201,8 @@ href="http://search.cpan.org/~fluffy/Term-ProgressBar-2.09/lib/Term/ProgressBar.
 class="external text" rel="nofollow">Term::ProgressBar</a> (2.06 or
 better) (chado)
 
-### <span id="install_bioperl_live" class="mw-headline">install <a href="http://search.cpan.org/~sendu/bioperl-1.5.2_102/"
-class="external text" rel="nofollow">bioperl live</a></span>
+### install <a href="http://search.cpan.org/~sendu/bioperl-1.5.2_102/"
+class="external text" rel="nofollow">bioperl live</a>
 
     [zha@localhost ~]$ sudo cpan
     Password:
@@ -244,41 +210,29 @@ class="external text" rel="nofollow">bioperl live</a></span>
 
 this is the live bioperl right now
 
-### <span id="install_go-dev" class="mw-headline">install <a href="http://sourceforge.net/projects/geneontology"
-class="external text" rel="nofollow">go-dev</a></span>
+### install <a href="http://sourceforge.net/projects/geneontology"
+class="external text" rel="nofollow">go-dev</a>
 
 download and unpack the go-dev package since need to set the GO_ROOT
 environment variable. Although right now only a perl parser module for
 GO is needed.
 
 - in .bash_profile add line
-
-<!-- -->
-
     export GO_ROOT="$HOME/go-dev"
 
 - install GO::Parser
-
-<!-- -->
-
     [zha@localhost ~]$ sudo cpan
     Password:
     cpan[1]> install GO::Parser
 
-## <span id="install_chado" class="mw-headline">install chado</span>
+## install chado
 
 - in .bash_profile add lines
-
-<!-- -->
-
     export GMOD_ROOT="/usr/local/gmod"
     export CHADO_DB_NAME="yeast_chado"
     export CHADO_DB_USERNAME="zha"
 
 - standard perl package install
-
-<!-- -->
-
     perl Makefile.PL
     make
     sudo make install
@@ -290,9 +244,6 @@ and then:
     make ontologies
 
 - backup ontologies
-
-<!-- -->
-
     pg_dump wormbase_chado > onto_only.sql
 
 - load sample yeast genome data
@@ -301,7 +252,7 @@ download yeast genome gff3 file. load by bulk load
 
     gmod_bulk_load_gff3.pl --organism yeast --gfffile saccharomyces_cerevisiae.gff
 
-## <span id="install_gbrowse_to_work_with_chado" class="mw-headline">install gbrowse to work with chado</span>
+## install gbrowse to work with chado
 
 - install gbrowse
 
@@ -344,88 +295,7 @@ it is a little bit surprise to me that I need
 since no analysisfeature exists in dataset (?)
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [User
   Experiences](Category%253AUser_Experiences "Category%253AUser Experiences")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Zheng&#39;s_installation_notes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 05:56 on 28 January
-  2008.</span>
-<!-- - <span id="footer-info-viewcount">87,740 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

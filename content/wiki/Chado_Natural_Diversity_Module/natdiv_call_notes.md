@@ -1,26 +1,10 @@
 ---
 title: "Chado Natural Diversity Module/natdiv call notes"
 ---
+# Chado Natural Diversity Module/natdiv call notes
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Natural Diversity Module/natdiv call notes</span>
-
-
-
-
-
-
-
-
-
-## <span id="Notes_from_the_Chado_Natural_Diversity_Module.2Fnatdiv_schema_changes_call_.28May_26th_2011.29" class="mw-headline">Notes from the [Chado_Natural_Diversity_Module/natdiv_schema_changes_call](natdiv_schema_changes_call "Chado Natural Diversity Module/natdiv schema changes call") (May 26th 2011)</span>
+## Notes from the [Chado_Natural_Diversity_Module/natdiv_schema_changes_call](natdiv_schema_changes_call "Chado Natural Diversity Module/natdiv schema changes call") (May 26th 2011)
 
 **ND paper** Sook and Naama will send a note when the working draft is
 ready for review. All the authors can view the google doc. Let Naama
@@ -138,90 +122,3 @@ the phenotype moule (Naama will add this to the paper)
   need to consider another linking table specific for phenotypes.
 
 ------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a
-  href="../Special%253ABrowse/Chado_Natural_Diversity_Module-2Fnatdiv_call_notes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:02 on 1 June
-  2011.</span>
-<!-- - <span id="footer-info-viewcount">5,218 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

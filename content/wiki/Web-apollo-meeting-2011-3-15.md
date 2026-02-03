@@ -1,58 +1,33 @@
 ---
 title: "Web-apollo-meeting-2011-3-15"
 ---
+# Web-apollo-meeting-2011-3-15
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Web-apollo-meeting-2011-3-15</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">3/15/2011:
   Suzi, Gregg, Ed, and
   Nomi</span>](#3.2F15.2F2011:_Suzi.2C_Gregg.2C_Ed.2C_and_Nomi)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Progress
-    Report</span>](#Progress_Report)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Hardware</span>](#Hardware)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">JBrowse
-    issues</span>](#JBrowse_issues)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">What does
+  - [Progress
+    Report](#Progress_Report)
+  - [Hardware](#Hardware)
+  - [JBrowse
+    issues](#JBrowse_issues)
+  - [What does
     WebApollo need to
-    provide?</span>](#What_does_WebApollo_need_to_provide.3F)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Discussed
+    provide?](#What_does_WebApollo_need_to_provide.3F)
+  - [Discussed
     commonality between editing
-    operations</span>](#Discussed_commonality_between_editing_operations)
-  - [<span class="tocnumber">1.6</span>
-    <span class="toctext">Undo/Redo</span>](#Undo.2FRedo)
+    operations](#Discussed_commonality_between_editing_operations)
+  - [Undo/Redo](#Undo.2FRedo)
 
 
+## 3/15/2011: Suzi, Gregg, Ed, and Nomi
 
-## <span id="3.2F15.2F2011:_Suzi.2C_Gregg.2C_Ed.2C_and_Nomi" class="mw-headline">3/15/2011: Suzi, Gregg, Ed, and Nomi</span>
-
-### <span id="Progress_Report" class="mw-headline">Progress Report</span>
+### Progress Report
 
 - WebApollo year 1 progress report submitted. Thanks to all who
   contributed to it.
 
-### <span id="Hardware" class="mw-headline">Hardware</span>
+### Hardware
 
 - What hardware do we need for a WebApollo server?
   - One server (Linux or OSX). (Budget?)
@@ -92,7 +67,7 @@ title: "Web-apollo-meeting-2011-3-15"
     future expansion we should go ahead with a 4U 16 slot box."
   - I believe the server has now been ordered?
 
-### <span id="JBrowse_issues" class="mw-headline">JBrowse issues</span>
+### JBrowse issues
 
 - JBrowse currently only supports two-level feature hierarchy.
   - Mitch wants to do a JSON approach that allows arbitrary levels of
@@ -103,7 +78,7 @@ title: "Web-apollo-meeting-2011-3-15"
     - Mitch may be able to implement this in the next several months
     - If Mitch doesn't get to it before we need it, Gregg can implement
 
-### <span id="What_does_WebApollo_need_to_provide.3F" class="mw-headline">What does WebApollo need to provide?</span>
+### What does WebApollo need to provide?
 
 - We looked at old Apollo to see what it has so we could decide what
   WebApollo needs.
@@ -153,7 +128,7 @@ title: "Web-apollo-meeting-2011-3-15"
   - Split
   - ...
 
-### <span id="Discussed_commonality_between_editing_operations" class="mw-headline">Discussed commonality between editing operations</span>
+### Discussed commonality between editing operations
 
 - Interval algebra
   - Add exon, extend exon, merge exons, create transcript, merge
@@ -165,7 +140,7 @@ title: "Web-apollo-meeting-2011-3-15"
   - Not exactly sure what this implies for user interface, but hopefully
     thinking about this will help simplify the GUI
 
-### <span id="Undo.2FRedo" class="mw-headline">Undo/Redo</span>
+### Undo/Redo
 
 - Discussed global undo vs. per-annotation undo
 - Implementing undo/redo as ancestor/descendant traversal
@@ -174,87 +149,6 @@ title: "Web-apollo-meeting-2011-3-15"
 - UI for undo/redo -- back/forward, select from version list, or both
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Webapollo](Category%253AWebapollo "Category%253AWebapollo")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Web-2Dapollo-2Dmeeting-2D2011-2D3-2D15"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:53 on 21 February
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">14,146 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

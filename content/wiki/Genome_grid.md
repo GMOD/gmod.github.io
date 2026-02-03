@@ -1,49 +1,23 @@
 ---
 title: "Genome grid"
 ---
+# Genome grid
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Genome grid</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Genome Grid
   Aims</span>](#Genome_Grid_Aims)
-- [<span class="tocnumber">2</span> <span class="toctext">Genome
+- [Genome
   analysis and annotation via Grid
-  computing</span>](#Genome_analysis_and_annotation_via_Grid_computing)
-- [<span class="tocnumber">3</span> <span class="toctext">Target
-  customer and tasks</span>](#Target_customer_and_tasks)
-- [<span class="tocnumber">4</span> <span class="toctext">Genome Grid
-  components</span>](#Genome_Grid_components)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Downloads</span>](#Downloads)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">References</span>](#References)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Contact</span>](#Contact)
+  computing](#Genome_analysis_and_annotation_via_Grid_computing)
+- [Target
+  customer and tasks](#Target_customer_and_tasks)
+- [Genome Grid
+  components](#Genome_Grid_components)
+- [Downloads](#Downloads)
+- [References](#References)
+- [Contact](#Contact)
 
 
-
-# <span id="Genome_Grid_Aims" class="mw-headline">Genome Grid Aims</span>
+# Genome Grid Aims
 
 This project aims to create a usable package of genome data analysis
 with cyberinfrastructure: methods, protocols, documentation, suited for
@@ -74,7 +48,7 @@ Find more background in the References, or
 <a href="http://www.google.com/search?q=genome+teragrid"
 class="external text" rel="nofollow">Google: genome teragrid</a>
 
-# <span id="Genome_analysis_and_annotation_via_Grid_computing" class="mw-headline">Genome analysis and annotation via Grid computing</span>
+# Genome analysis and annotation via Grid computing
 
 This subproject builds re-usable tools and workflows for [genome
 analyses](Category%253AAnalysis "Category%253AAnalysis") and
@@ -88,7 +62,7 @@ genome projects to take advantage of these readily.
 
   
 
-# <span id="Target_customer_and_tasks" class="mw-headline">Target customer and tasks</span>
+# Target customer and tasks
 
 The customers for this project are small to medium genome database
 projects, and individual bioscience research labs. We expect some
@@ -117,7 +91,7 @@ are an option, but often the user data resides on unix systems along
 with data parsing and application tools that we would like to integrate
 with remote grid access.
 
-# <span id="Genome_Grid_components" class="mw-headline">Genome Grid components</span>
+# Genome Grid components
 
 Most of the potential parts of this package are available, and need to
 be assessed and combined. Our goal is not to develop new components, but
@@ -159,14 +133,11 @@ genome analyses is a goal. These include in no particular order
   like an interesting and practical package for a grid gateway suited to
   bioinformaticians when I saw it in 2006, but haven't evaluated it in
   detail.
-
-<!-- -->
-
 - <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> and
   [Galaxy](Galaxy.1 "Galaxy") are GMOD related projects with genome
   analysis workflow systems that are relevant to this.
 
-# <span id="Downloads" class="mw-headline">Downloads</span>
+# Downloads
 
 See starter project in
 <a href="http://gmod.svn.sourceforge.net/viewvc/gmod/genogrid"
@@ -183,7 +154,7 @@ genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
 [Dongilbert](User%253ADongilbert "User%253ADongilbert") 19:56, 26 June 2008
 (EDT)
 
-# <span id="References" class="mw-headline">References</span>
+# References
 
 - Gilbert, D. 2008. <a
   href="http://insects.eugenes.org/species/about/genome-grid-ismb08-poster.pdf"
@@ -196,99 +167,10 @@ genomes (Daphnia, Pea aphid, 12 Drosophila, and others). It should work
   class="external text" rel="nofollow">Using TeraGrid for Genome Assembly,
   Annotation and Analysis</a>, Poster, Indy Bioinformatics Conference.
 
-# <span id="Contact" class="mw-headline">Contact</span>
+# Contact
 
 [Don Gilbert](User%253ADongilbert "User%253ADongilbert")
 
 Support provided by a grant from <a
 href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0640462"
 class="external text" rel="nofollow">NSF BIO Database Activities</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Analysis](Category%253AAnalysis "Category%253AAnalysis")
-- [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Genome_grid" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 22:42 on 15 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">99,196 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

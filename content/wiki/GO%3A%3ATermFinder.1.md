@@ -1,28 +1,10 @@
 ---
 title: "GO::TermFinder"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GO::TermFinder</span>
-
-
-
-
-
-
-
-
+# GO::TermFinder
 
 
 Status
-
 
 
 - Mature release
@@ -30,7 +12,6 @@ Status
 - Support: active
 
   
-
 
 
 <a href="http://opensource.org/" rel="nofollow"><img
@@ -42,10 +23,7 @@ width="40" height="39" alt="} is open source" /></a>
 Resources
 
 
-
-
 - [GMOD Components](Category%253AGMOD_Components "Category%253AGMOD Components")
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -73,82 +51,3 @@ rel="nofollow">Gene Ontology project</a>. In particular, the GO TermFinder objec
 | [Tool functionality or classification](Property%253ATool_functionality_or_classification "Property:Tool functionality or classification") | Ontology Visualization <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Ontology-20Visualization "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Ontology-20Visualization")</span> and Gene list analysis <span class="smwsearch">[+](Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Gene-20list-20analysis "Special%253ASearchByProperty/Tool-20functionality-20or-20classification/Gene-20list-20analysis")</span> |
 | [Written in language](Property%253AWritten_in_language "Property:Written in language") | Perl <span class="smwsearch">[+](Special%253ASearchByProperty/Written-20in-20language/Perl "Special%253ASearchByProperty/Written-20in-20language/Perl")</span> |
 | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has subobject](Property%253AHas_subobject "Property:Has subobject")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | [GO::TermFinder#http://search.cpan.org/dist/GO-TermFinder/](GO%253A%253ATermFinder.1#http:.2F.2Fsearch.cpan.org.2Fdist.2FGO-TermFinder.2F "GO::TermFinder") <span class="smwsearch">+</span> and [GO::TermFinder#http://go.princeton.edu/cgi-bin/GOTermFinder/GOTermFinder](GO%253A%253ATermFinder.1#http:.2F.2Fgo.princeton.edu.2Fcgi-bin.2FGOTermFinder.2FGOTermFinder "GO::TermFinder") <span class="smwsearch">+</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GO%253A%253ATermFinder" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 02:20 on 4 December
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">16,010 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

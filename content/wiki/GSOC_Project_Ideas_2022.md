@@ -1,23 +1,7 @@
 ---
 title: "GSOC Project Ideas 2022"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GSOC Project Ideas 2022</span>
-
-
-
-
-
-
-
+# GSOC Project Ideas 2022
 
 
 **Got an idea for [GSOC 2022](GSoC "GSoC")?**
@@ -42,53 +26,45 @@ self-motivation are great traits for open-source programmers.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Proposed
   project ideas for 2022</span>](#Proposed_project_ideas_for_2022)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">JBrowse 2
+  - [JBrowse 2
     Plugins for Additional Synteny
-    Formats</span>](#JBrowse_2_Plugins_for_Additional_Synteny_Formats)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">JBrowse 2
+    Formats](#JBrowse_2_Plugins_for_Additional_Synteny_Formats)
+  - [JBrowse 2
     Multi-way synteny
-    visualization</span>](#JBrowse_2_Multi-way_synteny_visualization)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Use Galaxy
+    visualization](#JBrowse_2_Multi-way_synteny_visualization)
+  - [Use Galaxy
     to run Reactome analysis and processes on proteomics data
-    (Reactome)</span>](#Use_Galaxy_to_run_Reactome_analysis_and_processes_on_proteomics_data_.28Reactome.29)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">Centralized dashboard or metrics system
-    (Reactome)</span>](#Centralized_dashboard_or_metrics_system_.28Reactome.29)
-  - [<span class="tocnumber">1.5</span> <span class="toctext">Community
+    (Reactome)](#Use_Galaxy_to_run_Reactome_analysis_and_processes_on_proteomics_data_.28Reactome.29)
+  - [Centralized dashboard or metrics system
+    (Reactome)](#Centralized_dashboard_or_metrics_system_.28Reactome.29)
+  - [Community
     access portal to Reactome Archive
-    (Reactome)</span>](#Community_access_portal_to_Reactome_Archive_.28Reactome.29)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Datatypes
+    (Reactome)](#Community_access_portal_to_Reactome_Archive_.28Reactome.29)
+  - [Datatypes
     Help in Galaxy
-    (Galaxy)</span>](#Datatypes_Help_in_Galaxy_.28Galaxy.29)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Provide
+    (Galaxy)](#Datatypes_Help_in_Galaxy_.28Galaxy.29)
+  - [Provide
     users with better quota information
-    (Galaxy)</span>](#Provide_users_with_better_quota_information_.28Galaxy.29)
-  - [<span class="tocnumber">1.8</span> <span class="toctext">Creating
+    (Galaxy)](#Provide_users_with_better_quota_information_.28Galaxy.29)
+  - [Creating
     learning paths within the Galaxy Training
-    Network</span>](#Creating_learning_paths_within_the_Galaxy_Training_Network)
-  - [<span class="tocnumber">1.9</span> <span class="toctext">Integrate
+    Network](#Creating_learning_paths_within_the_Galaxy_Training_Network)
+  - [Integrate
     MP-BioPath into Reactome FI-Viz Cytoscape
-    plugin</span>](#Integrate_MP-BioPath_into_Reactome_FI-Viz_Cytoscape_plugin)
-  - [<span class="tocnumber">1.10</span>
-    <span class="toctext">Converting Release Jenkins Pipeline to
+    plugin](#Integrate_MP-BioPath_into_Reactome_FI-Viz_Cytoscape_plugin)
+  - [Converting Release Jenkins Pipeline to
     incorporate Continuous Integration / Continuous Deployment (CI/CD)
     principles and AWS services where
-    useful</span>](#Converting_Release_Jenkins_Pipeline_to_incorporate_Continuous_Integration_.2F_Continuous_Deployment_.28CI.2FCD.29_principles_and_AWS_services_where_useful)
-  - [<span class="tocnumber">1.11</span> <span class="toctext">Template:
+    useful](#Converting_Release_Jenkins_Pipeline_to_incorporate_Continuous_Integration_.2F_Continuous_Deployment_.28CI.2FCD.29_principles_and_AWS_services_where_useful)
+  - [Template:
     Project Idea Name (Project Name/Lab
-    Name)</span>](#Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29)
+    Name)](#Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29)
 
 
+# Proposed project ideas for 2022
 
-# <span id="Proposed_project_ideas_for_2022" class="mw-headline">Proposed project ideas for 2022</span>
-
-## <span id="JBrowse_2_Plugins_for_Additional_Synteny_Formats" class="mw-headline">JBrowse 2 Plugins for Additional Synteny Formats</span>
+## JBrowse 2 Plugins for Additional Synteny Formats
 
 - *Brief explanation:* Write a new JBrowse 2 plugin to support <a
   href="https://sanger-pathogens.github.io/Artemis/ACT/act-manual.html#_Toc532220687#_Toc532220687"
@@ -107,7 +83,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175 hours
 - *Mentors:* JBrowse development team
 
-## <span id="JBrowse_2_Multi-way_synteny_visualization" class="mw-headline">JBrowse 2 Multi-way synteny visualization</span>
+## JBrowse 2 Multi-way synteny visualization
 
 - *Brief explanation:* JBrowse 2 can currently compare two genomes at a
   time, but comparing more than two genomes is common! Write new JBrowse
@@ -126,7 +102,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 350 hours
 - *Mentors:* JBrowse development team
 
-## <span id="Use_Galaxy_to_run_Reactome_analysis_and_processes_on_proteomics_data_.28Reactome.29" class="mw-headline">Use Galaxy to run Reactome analysis and processes on proteomics data (Reactome)</span>
+## Use Galaxy to run Reactome analysis and processes on proteomics data (Reactome)
 
 - *Brief explanation:* Reactome is a free, open-source, curated and
   peer-reviewed pathway database. Our goal is to provide intuitive
@@ -155,7 +131,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 350 hours
 - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca)
 
-## <span id="Centralized_dashboard_or_metrics_system_.28Reactome.29" class="mw-headline">Centralized dashboard or metrics system (Reactome)</span>
+## Centralized dashboard or metrics system (Reactome)
 
 - *Brief explanation:* Reactome has both manual and automated
   statistical tracking of its quarterly release data. This project would
@@ -178,7 +154,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175 hours
 - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca)
 
-## <span id="Community_access_portal_to_Reactome_Archive_.28Reactome.29" class="mw-headline">Community access portal to Reactome Archive (Reactome)</span>
+## Community access portal to Reactome Archive (Reactome)
 
 - *Brief explanation:* Reactome generates new pathway and other
   annotation data on a quarterly basis. With each new release, the
@@ -197,7 +173,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175 hours
 - *Mentors:* Robin Haw (robin.haw\[AT\]oicr.on.ca)
 
-## <span id="Datatypes_Help_in_Galaxy_.28Galaxy.29" class="mw-headline">Datatypes Help in Galaxy (Galaxy)</span>
+## Datatypes Help in Galaxy (Galaxy)
 
 - *Brief explanation:* Create infrastructure for providing datatype help
   in Galaxy. Includes expanding datatype definitions and updating Galaxy
@@ -224,7 +200,7 @@ self-motivation are great traits for open-source programmers.
   (bjoern.gruening\[at\]gmail.com); Galaxy Support Working Group,
   global.
 
-## <span id="Provide_users_with_better_quota_information_.28Galaxy.29" class="mw-headline">Provide users with better quota information (Galaxy)</span>
+## Provide users with better quota information (Galaxy)
 
 - *Brief explanation:* Publish each server's quotas in a standard way;
   provide users with more information about what analyses and datasets
@@ -251,7 +227,7 @@ self-motivation are great traits for open-source programmers.
   (bjoern.gruening\[at\]gmail.com); Galaxy Support Working Group,
   global.
 
-## <span id="Creating_learning_paths_within_the_Galaxy_Training_Network" class="mw-headline">Creating learning paths within the Galaxy Training Network</span>
+## Creating learning paths within the Galaxy Training Network
 
 - *Brief explanation:* Implement and display learning paths in the
   Galaxy Training Material infrastructure to show learners, especially
@@ -273,9 +249,6 @@ self-motivation are great traits for open-source programmers.
   <a href="https://doi.org/10.1016/j.cels.2018.05.012"
   class="external free"
   rel="nofollow">https://doi.org/10.1016/j.cels.2018.05.012</a>
-
-<!-- -->
-
 - *Knowledge prerequisites:* Ruby, JavaScript (some Python).
 - *Skill level:* Medium
 - *Project Time:* 175 hours
@@ -283,7 +256,7 @@ self-motivation are great traits for open-source programmers.
   batut\[at\] gmail.com). Galaxy Outreach & Training Working Group,
   global.
 
-## <span id="Integrate_MP-BioPath_into_Reactome_FI-Viz_Cytoscape_plugin" class="mw-headline">Integrate MP-BioPath into Reactome FI-Viz Cytoscape plugin</span>
+## Integrate MP-BioPath into Reactome FI-Viz Cytoscape plugin
 
 - *Brief explanation:* MP-BioPath is a similar algorithm to the options
   available within the Reactome FI Viz Cytoscape plugin
@@ -306,7 +279,7 @@ self-motivation are great traits for open-source programmers.
 - *Project Time:* 175 hours
 - *Mentors:* Adam Wright (adam.wright@oicr.on.ca)
 
-## <span id="Converting_Release_Jenkins_Pipeline_to_incorporate_Continuous_Integration_.2F_Continuous_Deployment_.28CI.2FCD.29_principles_and_AWS_services_where_useful" class="mw-headline">Converting Release Jenkins Pipeline to incorporate Continuous Integration / Continuous Deployment (CI/CD) principles and AWS services where useful</span>
+## Converting Release Jenkins Pipeline to incorporate Continuous Integration / Continuous Deployment (CI/CD) principles and AWS services where useful
 
 - *Brief explanation:* In order to display the rich displays within the
   Reactome portal an Extract Transform Load (ETL) - mainly Java -
@@ -330,7 +303,7 @@ s have passed.
 - *Mentors:* Adam Wright (adam.wright@oicr.on.ca), Joel Weiser
   (joel.weiser@oicr.on.ca)
 
-## <span id="Template:_Project_Idea_Name_.28Project_Name.2FLab_Name.29" class="mw-headline">Template: Project Idea Name (Project Name/Lab Name)</span>
+## Template: Project Idea Name (Project Name/Lab Name)
 
 - *Brief explanation:* Brief description of the idea, including any
   relevant links, etc.
@@ -344,84 +317,3 @@ s have passed.
 - *Project Time:* 175 hours or 350 hours
 - *Mentors:* name + contact details of the lead mentor, name + contact
   details of 1 or 2 backup mentors.
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GSOC_Project_Ideas_2022" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:33 on 25 March
-  2022.</span>
-<!-- - <span id="footer-info-viewcount">9,758 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

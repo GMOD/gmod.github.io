@@ -1,11 +1,9 @@
 ---
 title: "Installing Chado on Ubuntu HOWTO"
 ---
-<span id="top"></span>
+# Installing Chado on Ubuntu HOWTO
 
-# <span dir="auto">Installing Chado on Ubuntu HOWTO</span>
-
-## <span id="Ubuntu_version" class="mw-headline">Ubuntu version</span>
+## Ubuntu version
 
 This method has been tested on Ubuntu 8.4 with PostgreSQL 8.1 and on
 Ubuntu 11.10 and 12.04 with PostgreSQL 9.1. Note also that starting with
@@ -14,7 +12,7 @@ Debian package for Chado (libchado-perl) was added to the official
 repository making installation a real snap. That package is available
 for Debian installations as well.
 
-## <span id="Notes" class="mw-headline">Notes</span>
+## Notes
 
 Installing prereqs with Synaptic:
 
@@ -31,9 +29,6 @@ Installing prereqs with Synaptic:
 - libparse-recdescent-perl \# needed by DBIx::DBStag
 - xsltproc
 - bioperl
-
-<!-- -->
-
     sudo apt-get install postgresql postgresql-client postgresql-contrib postgresql-plperl libpq-dev libdbd-pg-perl libtemplate-perl libxml-simple-perl liblog-log4perl-perl ant libparse-recdescent-perl xsltproc bioperl
 
 Create a db user for yourself - your Ubuntu username:
@@ -116,52 +111,3 @@ Get and load yeast [GFF3](GFF3 "GFF3") file:
   reason--it is not a prerequisite for any GMOD software, but must be an
   undeclared prereq for something that GMOD software depends on.
   Hopefully this will be fixed by the author soon.
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Chado](Category%253AChado "Category%253AChado")
-- [Linux](Category%253ALinux "Category%253ALinux")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Installing_Chado_on_Ubuntu_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 16:37 on 12 July 2013.</span>
-<!-- - <span id="footer-info-viewcount">76,188 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

@@ -1,25 +1,7 @@
 ---
 title: "Galaxy Tutorial 2012 Extras"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Galaxy Tutorial 2012 Extras</span>
-
-
-
-
-
-
-
-
-
+# Galaxy Tutorial 2012 Extras
 
 
 Items shown on this page were part of earlier drafts of the [2012 Summer
@@ -29,61 +11,51 @@ longer fit well with other content. However, these sections are still
 informative.
 
 
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Defining
   Genomes to Trackster</span>](#Defining_Genomes_to_Trackster)
-- [<span class="tocnumber">2</span> <span class="toctext">Adding a new
-  tool</span>](#Adding_a_new_tool)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">The tool
-    command (script)</span>](#The_tool_command_.28script.29)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">The tool
-    wrapper</span>](#The_tool_wrapper)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Running
-    the new tool</span>](#Running_the_new_tool)
-- [<span class="tocnumber">3</span> <span class="toctext">Configuring
-  Galaxy (2)</span>](#Configuring_Galaxy_.282.29)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Tool
-    dependencies</span>](#Tool_dependencies)
-- [<span class="tocnumber">4</span> <span class="toctext">A second
-  example with NGS data</span>](#A_second_example_with_NGS_data)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">1. Upload
-    datasets</span>](#1._Upload_datasets)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">2. Run BWA
-    to map reads</span>](#2._Run_BWA_to_map_reads)
-- [<span class="tocnumber">5</span> <span class="toctext">Making genome
+- [Adding a new
+  tool](#Adding_a_new_tool)
+  - [The tool
+    command (script)](#The_tool_command_.28script.29)
+  - [The tool
+    wrapper](#The_tool_wrapper)
+  - [Running
+    the new tool](#Running_the_new_tool)
+- [Configuring
+  Galaxy (2)](#Configuring_Galaxy_.282.29)
+  - [Tool
+    dependencies](#Tool_dependencies)
+- [A second
+  example with NGS data](#A_second_example_with_NGS_data)
+  - [1. Upload
+    datasets](#1._Upload_datasets)
+  - [2. Run BWA
+    to map reads](#2._Run_BWA_to_map_reads)
+- [Making genome
   / alignment data available to
-  Galaxy</span>](#Making_genome_.2F_alignment_data_available_to_Galaxy)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Python
-    package management tools</span>](#Python_package_management_tools)
-  - [<span class="tocnumber">5.2</span>
-    <span class="toctext">bx-python</span>](#bx-python)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Get
-    datasets for our genome</span>](#Get_datasets_for_our_genome)
-  - [<span class="tocnumber">5.4</span> <span class="toctext">Edit
-    configuration files</span>](#Edit_configuration_files)
-  - [<span class="tocnumber">5.5</span> <span class="toctext">Create
+  Galaxy](#Making_genome_.2F_alignment_data_available_to_Galaxy)
+  - [Python
+    package management tools](#Python_package_management_tools)
+  - [bx-python](#bx-python)
+  - [Get
+    datasets for our genome](#Get_datasets_for_our_genome)
+  - [Edit
+    configuration files](#Edit_configuration_files)
+  - [Create
     dataset using new genome
-    build</span>](#Create_dataset_using_new_genome_build)
-  - [<span class="tocnumber">5.6</span> <span class="toctext">Extract
+    build](#Create_dataset_using_new_genome_build)
+  - [Extract
     sequence corresponding to these
-    intervals</span>](#Extract_sequence_corresponding_to_these_intervals)
-  - [<span class="tocnumber">5.7</span> <span class="toctext">Extract
+    intervals](#Extract_sequence_corresponding_to_these_intervals)
+  - [Extract
     multiple alignments corresponding to these
-    intervals</span>](#Extract_multiple_alignments_corresponding_to_these_intervals)
+    intervals](#Extract_multiple_alignments_corresponding_to_these_intervals)
 
 
-
-## <span id="Defining_Genomes_to_Trackster" class="mw-headline">Defining Genomes to Trackster</span>
+## Defining Genomes to Trackster
 
 From the <a
 href="https://wiki.galaxyproject.org/Learn/Visualization#Setup_for_Local_Instances#Setup_for_Local_Instances"
 class="external text" rel="nofollow">Learn/Visualization wiki page</a>
-
 
 
 Trackster needs chrom/contig length information for builds to be able to
@@ -130,7 +102,6 @@ changes to `datatypes_conf.xml`, then simply copy everything from
 have the latest copy.
 
 
-
 **Note:** the above script will run for almost an hour
 
 After restarting Galaxy, Trackster will now know about the size of all
@@ -138,15 +109,13 @@ chromosomes for many genome builds.
 
   
 
-## <span id="Adding_a_new_tool" class="mw-headline">Adding a new tool</span>
-
+## Adding a new tool
 
 
 **Note:** This was the "create a tool" example used in previous years.
 This year I switched the time to cover the Galaxy Tool Shed instead.
 However, this is such a nice example that I couldn't delete it
 altogether. *Dave C.*
-
 
 
 The <a href="http://samtools.sourceforge.net/" class="external text"
@@ -160,7 +129,7 @@ Let's first create a directory for our new tool:
 
     $ mkdir tools/gmod_2012
 
-### <span id="The_tool_command_.28script.29" class="mw-headline">The tool command (script)</span>
+### The tool command (script)
 
 And then using a [text editor](Linux_Text_Editors "Linux Text Editors"),
 create `tools/gmod_2012/sam_filter.py` containing:
@@ -192,7 +161,7 @@ for line in open( sys.argv[1] ):
 ```
 
 
-### <span id="The_tool_wrapper" class="mw-headline">The tool wrapper</span>
+### The tool wrapper
 
 Next, we need to create the tool configuration. Edit the file
 `tools/gmod_2012/sam_filter.xml` and start with the following skeleton:
@@ -309,7 +278,7 @@ and run Galaxy using
 
     $ sh run.sh --reload
 
-### <span id="Running_the_new_tool" class="mw-headline">Running the new tool</span>
+### Running the new tool
 
 Return to the Galaxy web interface and from the **Tools** panel and
 *select* **GMOD 2012 Course Tools → SAM Filter**.
@@ -334,9 +303,9 @@ height="510" alt="GalaxyExtras SamFilter 2.png" />
 
   
 
-## <span id="Configuring_Galaxy_.282.29" class="mw-headline">Configuring Galaxy (2)</span>
+## Configuring Galaxy (2)
 
-### <span id="Tool_dependencies" class="mw-headline">Tool dependencies</span>
+### Tool dependencies
 
 In the example above, we added a new tool to the default Galaxy
 installation. This included, adding the new tool to the Tools panel.
@@ -373,7 +342,7 @@ and then start Galaxy
 
     $ sh run.sh --reload
 
-## <span id="A_second_example_with_NGS_data" class="mw-headline">A second example with NGS data</span>
+## A second example with NGS data
 
 Having made these changes and restarted Galaxy, access it at Template:YourUrlGalaxy.
 
@@ -382,7 +351,7 @@ You will notice that your history has been lost. This is the result of
 moving to Postgres. On startup, Galaxy will again have created a new
 database from scratch.
 
-#### <span id="1._Upload_datasets" class="mw-headline">1. Upload datasets</span>
+#### 1. Upload datasets
 
 We will again use the **Get Data → Upload File** tool to upload data
 into Galaxy. You can enter multiple URLs into the **URL / Text** box.
@@ -411,7 +380,7 @@ ill-defined, and Galaxy needs to know how the quality scores are scaled.
 from **fastq** to **fastqsanger** (be careful, there are many similar
 choices here). Finally, *click* **Save**.
 
-### <span id="2._Run_BWA_to_map_reads" class="mw-headline">2. Run BWA to map reads</span>
+### 2. Run BWA to map reads
 
 In the **Tools** panel, *select* **NGS: Mapping → Map with BWA for
 Illumina**.
@@ -437,7 +406,7 @@ format](Glossary#SAM "Glossary").
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b2/GalaxyExtras_SecondAnalysis_3.png"
 width="1059" height="660" alt="GalaxyExtras SecondAnalysis 3.png" />
 
-## <span id="Making_genome_.2F_alignment_data_available_to_Galaxy" class="mw-headline">Making genome / alignment data available to Galaxy</span>
+## Making genome / alignment data available to Galaxy
 
 **Note:** We probably won't do this section during class, due to time
 constraints. The process for loading genome builds into Galaxy will also
@@ -452,7 +421,7 @@ Every genome in Galaxy needs to have a unique identifier (called the
 *build identifier* or *dbkey*). For our example, the identifier will be
 `a_example_1`.
 
-### <span id="Python_package_management_tools" class="mw-headline">Python package management tools</span>
+### Python package management tools
 
 **DO NOT DO THIS NOW**: This has already been done on the AMI.
 
@@ -461,7 +430,7 @@ the terminal, enter:
 
 `  $ `<span class="enter">`sudo apt-get install python-dev python-setuptools python-pip`</span>
 
-### <span id="bx-python" class="mw-headline">bx-python</span>
+### bx-python
 
 **Do not do this now either.** This has already been done on your image.
 
@@ -472,7 +441,7 @@ This *would* install some support files needed by Python. Next type
 This would install the `bx-python` package, a collection of scripts and
 Python libraries for working with genomic and comparative genomic data.
 
-### <span id="Get_datasets_for_our_genome" class="mw-headline">Get datasets for our genome</span>
+### Get datasets for our genome
 
 Now, we will download the datasets for our example genome:
 
@@ -482,10 +451,8 @@ Now, we will download the datasets for our example genome:
     $ wget ftp://ftp.gmod.org/pub/gmod/Courses/2012/SummerSchool/Galaxy/a_example_1.2bit
 
 
-
 Note: These files are also available on the image in
 `/home/ubuntu/Galaxy/Data/`.
-
 
 
 Next, we will use the script `maf_build_index.py` (put in
@@ -497,7 +464,7 @@ index that allows fast selection of alignments from a MAF file:
     a_example_1.2bit  a_example_1.maf  a_example_1.maf.index
     $ cd ~/Galaxy/galaxy-dist
 
-### <span id="Edit_configuration_files" class="mw-headline">Edit configuration files</span>
+### Edit configuration files
 
 We now need to edit several configuration files to inform Galaxy of the
 existence of our genome, and of these associated datasets.
@@ -531,7 +498,7 @@ Now, stop and start your running Galaxy with
     <Control-C>
     $ sh run.sh --reload
 
-### <span id="Create_dataset_using_new_genome_build" class="mw-headline">Create dataset using new genome build</span>
+### Create dataset using new genome build
 
 Now let's see if our new data is available in Galaxy. Click **Get Data →
 Upload File**.
@@ -545,7 +512,7 @@ Set the **File Format** to **bed**, make sure **Convert spaces to tabs**
 is **selected**, and click in the **Genome:** box. You should be able to
 find your genome by typing **example**.
 
-### <span id="Extract_sequence_corresponding_to_these_intervals" class="mw-headline">Extract sequence corresponding to these intervals</span>
+### Extract sequence corresponding to these intervals
 
 In the **Tools** menu, *click* **Fetch Sequences → Extract Genomic
 DNA**.
@@ -564,7 +531,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 width="1067" height="447"
 alt="GalaxyExtras Fetch ExtractedDNA.png" />
 
-### <span id="Extract_multiple_alignments_corresponding_to_these_intervals" class="mw-headline">Extract multiple alignments corresponding to these intervals</span>
+### Extract multiple alignments corresponding to these intervals
 
 In the **Tools** menu, click **Fetch Alignments → Extract MAF Blocks**.
 
@@ -580,90 +547,3 @@ containing alignments corresponding to your intervals of interest.
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/22/GalaxyExtras_Fetch_3.png" width="1067"
 height="580" alt="GalaxyExtras Fetch 3.png" />
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Galaxy_Tutorial_2012_Extras"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">15,958 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

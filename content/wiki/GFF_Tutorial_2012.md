@@ -1,23 +1,7 @@
 ---
 title: "GFF Tutorial 2012"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GFF Tutorial 2012</span>
-
-
-
-
-
-
-
+# GFF Tutorial 2012
 
 
 This tutorial on [GFF](GFF "GFF") was given by [Scott
@@ -33,56 +17,38 @@ data. GFF is [frequently used in GMOD](#GFF_in_GMOD) for data exchange
 and representation of genomic data.
 
 
-## Contents
+  Versions](#Versions)
+- [GFF3](#GFF3)
+- [GFF3
+  Annotation Section](#GFF3_Annotation_Section)
+  - [GFF3
+    Format](#GFF3_Format)
+  - [Nesting
+    Features](#Nesting_Features)
+  - [Discontinuous
+    Features](#Discontinuous_Features)
+  - [Protein-Coding
+    Genes](#Protein-Coding_Genes)
+  - [Alignments](#Alignments)
+  - [Quantitative Data](#Quantitative_Data)
+- [GFF3 Sequence
+  Section](#GFF3_Sequence_Section)
+- [GFF3
+  Validation](#GFF3_Validation)
+- [GFF2](#GFF2)
+- [GTF](#GTF)
+- [GFF in
+  GMOD](#GFF_in_GMOD)
+  - [Apollo](#Apollo)
+  - [Chado](#Chado)
+  - [CMap](#CMap)
+  - [GBrowse](#GBrowse)
+  - [JBrowse](#JBrowse)
+- [See
+  Also](#See_Also)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Versions</span>](#Versions)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">GFF3</span>](#GFF3)
-- [<span class="tocnumber">3</span> <span class="toctext">GFF3
-  Annotation Section</span>](#GFF3_Annotation_Section)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">GFF3
-    Format</span>](#GFF3_Format)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Nesting
-    Features</span>](#Nesting_Features)
-  - [<span class="tocnumber">3.3</span>
-    <span class="toctext">Discontinuous
-    Features</span>](#Discontinuous_Features)
-  - [<span class="tocnumber">3.4</span>
-    <span class="toctext">Protein-Coding
-    Genes</span>](#Protein-Coding_Genes)
-  - [<span class="tocnumber">3.5</span>
-    <span class="toctext">Alignments</span>](#Alignments)
-  - [<span class="tocnumber">3.6</span>
-    <span class="toctext">Quantitative Data</span>](#Quantitative_Data)
-- [<span class="tocnumber">4</span> <span class="toctext">GFF3 Sequence
-  Section</span>](#GFF3_Sequence_Section)
-- [<span class="tocnumber">5</span> <span class="toctext">GFF3
-  Validation</span>](#GFF3_Validation)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">GFF2</span>](#GFF2)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">GTF</span>](#GTF)
-- [<span class="tocnumber">8</span> <span class="toctext">GFF in
-  GMOD</span>](#GFF_in_GMOD)
-  - [<span class="tocnumber">8.1</span>
-    <span class="toctext">Apollo</span>](#Apollo)
-  - [<span class="tocnumber">8.2</span>
-    <span class="toctext">Chado</span>](#Chado)
-  - [<span class="tocnumber">8.3</span>
-    <span class="toctext">CMap</span>](#CMap)
-  - [<span class="tocnumber">8.4</span>
-    <span class="toctext">GBrowse</span>](#GBrowse)
-  - [<span class="tocnumber">8.5</span>
-    <span class="toctext">JBrowse</span>](#JBrowse)
-- [<span class="tocnumber">9</span> <span class="toctext">See
-  Also</span>](#See_Also)
-
-
-
-## <span id="Versions" class="mw-headline">Versions</span>
+## Versions
 
 GFF has several versions, the most recent of which is [GFF3](#GFF3).
 GFF3 addresses several shortcomings in its predecessor, [GFF2](#GFF2).
@@ -99,7 +65,7 @@ will always specify which version it is referring to.
 Finally, [GTF](#GTF) is another file format that is very similar to GFF
 and is sometimes referred to as GFF2.5.
 
-## <span id="GFF3" class="mw-headline">GFF3</span>
+## GFF3
 
 The <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">formal specification of GFF3</a> is
@@ -125,13 +91,13 @@ full and definitive explanation of GFF3, see
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">the standard</a>.
 
-## <span id="GFF3_Annotation_Section" class="mw-headline">GFF3 Annotation Section</span>
+## GFF3 Annotation Section
 
 This first describes the format of the annotation section, and then
 provides explanations of how to represent several different types of
 data.
 
-### <span id="GFF3_Format" class="mw-headline">GFF3 Format</span>
+### GFF3 Format
 
 GFF3 format is a flat tab-delimited file. The first line of the file is
 a comment that identifies the file format and version. This is followed
@@ -236,7 +202,6 @@ in this field, but tabs must be replaced with the %09 URL escape. This
 field is not required.
 
 
-
 **Column 9 Tags**
 
 Column 9 tags have predefined meanings:
@@ -244,41 +209,26 @@ Column 9 tags have predefined meanings:
 ID  
 Indicates the unique identifier of the feature. IDs must be unique
 within the scope of the GFF file.
-
-<!-- -->
-
 Name  
 Display name for the feature. This is the name to be displayed to the
 user. Unlike IDs, there is no requirement that the Name be unique within
 the file.
-
-<!-- -->
-
 Alias  
 A secondary name for the feature. It is suggested that this tag be used
 whenever a secondary identifier for the feature is needed, such as locus
 names and accession numbers. Unlike ID, there is no requirement that
 Alias be unique within the file.
-
-<!-- -->
-
 Parent  
 Indicates the parent of the feature. A parent ID can be used to group
 exons into transcripts, transcripts into genes, and so forth. A feature
 may have multiple parents. Parent can \*only\* be used to indicate a
 partof relationship.
-
-<!-- -->
-
 Target  
 Indicates the target of a nucleotide-to-nucleotide or
 protein-to-nucleotide alignment. The format of the value is "target_id
 start end \[strand\]", where strand is optional and may be "+" or "-".
 If the target_id contains spaces, they must be escaped as hex
 escape %20.
-
-<!-- -->
-
 Gap  
 The alignment of the feature to the target if the two are not collinear
 (e.g. contain gaps). The alignment format is taken from the CIGAR format
@@ -289,9 +239,6 @@ rel="nofollow">http://cvsweb.sanger.ac.uk/cgi-bin/cvsweb.cgi/exonerate?cvsroot=E
 See the <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-
-<!-- -->
-
 Derives_from  
 Used to disambiguate the relationship between one feature and another
 when the relationship is a temporal one rather than a purely structural
@@ -299,22 +246,13 @@ when the relationship is a temporal one rather than a purely structural
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-
-<!-- -->
-
 Note  
 A free text note.
-
-<!-- -->
-
 Dbxref  
 A database cross reference. See the
 <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for more
 information.
-
-<!-- -->
-
 Ontology_term  
 A cross reference to an ontology term. See the
 <a href="http://www.sequenceontology.org/gff3.shtml"
@@ -335,8 +273,7 @@ freely by applications. You can stash any semi-structured data into the
 database by using one or more unreserved (lowercase) tags.
 
 
-
-### <span id="Nesting_Features" class="mw-headline">Nesting Features</span>
+### Nesting Features
 
 Many genomic features are discontinuous and have multiple subparts. GFF3
 represents such features by linking the parts together with the Parent
@@ -387,7 +324,7 @@ operon, then we can add another level of nesting:
     ctg123 . exon           10000 12000  .  +  .  Parent=mrna0002
     ctg123 . exon           14000 15000  .  +  .  Parent=mrna0002
 
-### <span id="Discontinuous_Features" class="mw-headline">Discontinuous Features</span>
+### Discontinuous Features
 
 In addition to nested features, another common type of genomic
 annotation is the *discontinuous feature* in which a single feature
@@ -414,7 +351,7 @@ feature has the same ID. There is no parent.
 currently supported by the GMOD Chado bulk GFF3 loader. Parent-child
 grouping is required.*
 
-### <span id="Protein-Coding_Genes" class="mw-headline">Protein-Coding Genes</span>
+### Protein-Coding Genes
 
 We'll now look at how to represent several common cases, starting with
 protein-coding genes.
@@ -483,7 +420,7 @@ href="http://gmod.svn.sourceforge.net/viewvc/gmod/Generic-Genome-Browser/branche
 class="external text" rel="nofollow">The GBrowse Administration
 Tutorial</a> for more information.
 
-### <span id="Alignments" class="mw-headline">Alignments</span>
+### Alignments
 
 Nucleotide to genome, and protein to genome alignments are a little
 tricky because they involve two coordinate systems, the coordinates of
@@ -520,7 +457,7 @@ See the <a href="http://www.sequenceontology.org/gff3.shtml"
 class="external text" rel="nofollow">GFF3 specification</a> for
 instructions on how to represent gapped alignments.
 
-### <span id="Quantitative_Data" class="mw-headline">Quantitative Data</span>
+### Quantitative Data
 
 GBrowse can plot quantitative data such as alignment scores, confidence
 scores from gene prediction programs, and microarray intensity data.
@@ -557,7 +494,7 @@ Instructions on how to use this script is described in the <a
 href="http://gmod.cvs.sourceforge.net/*checkout*/gmod/Generic-Genome-Browser/docs/tutorial/tutorial.html?pathrev=stable"
 class="external text" rel="nofollow">GBrowse Administration Tutorial</a>.
 
-## <span id="GFF3_Sequence_Section" class="mw-headline">GFF3 Sequence Section</span>
+## GFF3 Sequence Section
 
 [GFF3](GFF3 "GFF3") files can also include sequence in FASTA format at
 the end of the file. The FASTA sequences are preceded by a `##FASTA`
@@ -588,92 +525,12 @@ of the file.
 You don't have to store the FASTA in the GFF file. You can also store
 your sequences in a separate file containing only FASTA entries.
 
-## <span id="GFF3_Validation" class="mw-headline">GFF3 Validation</span>
+## GFF3 Validation
 
 You can validate reasonably large GFF3 files at the following sites:
-
 
 
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 
 - [2012 Summer
   School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GFF_Tutorial_2012" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:54 on 11 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">16,065 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

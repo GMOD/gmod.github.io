@@ -1,23 +1,7 @@
 ---
 title: "GBrowse Adaptors"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Adaptors</span>
-
-
-
-
-
-
-
+# GBrowse Adaptors
 
 
 [GBrowse](GBrowse.1 "GBrowse") has a flexible adaptor (yes, it is
@@ -50,106 +34,10 @@ class="external text" rel="nofollow">Bio::DB::Das::BioSQL</a> (available from CP
 | Memory (ie, flat file database using either Bio::DB::GFF or SeqFeature::Store) | None | For real servers, none | Easy for rapid development and testing | Very slow for more than a few thousand features |
 | [LuceGene](LuceGene "LuceGene") | Lucene (searches indexed flat files) | Relatively few |  |  |
 
-## <span id="Email_Threads" class="mw-headline">Email Threads</span>
+## Email Threads
 
 There have been some useful email threads on adaptor choices and
 tradeoffs.
 
 - <a href="http://gmod.827538.n3.nabble.com/Memory-Database-td862590.html"
   class="external text" rel="nofollow">Memory Database</a>, 2010/06
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [DAS](Category%253ADAS "Category%253ADAS")
-- [BioPerl](Category%253ABioPerl "Category%253ABioPerl")
-- [Chado](Category%253AChado "Category%253AChado")
-- [LuceGene](Category%253ALuceGene "Category%253ALuceGene")
-- [MySQL](Category%253AMySQL "Category%253AMySQL")
-- [PostgreSQL](Category%253APostgreSQL "Category%253APostgreSQL")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_Adaptors" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Adaptors" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:22 on 7 August
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">111,387 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

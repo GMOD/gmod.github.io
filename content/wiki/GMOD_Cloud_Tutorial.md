@@ -1,23 +1,7 @@
 ---
 title: "GMOD Cloud Tutorial"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Cloud Tutorial</span>
-
-
-
-
-
-
-
+# GMOD Cloud Tutorial
 
 
 See also the [AWS walkthrough](AWS_walkthrough "AWS walkthrough"), a
@@ -28,56 +12,48 @@ down.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Amazon Web
   Services</span>](#Amazon_Web_Services)
-- [<span class="tocnumber">2</span> <span class="toctext">Amazon Web
-  Services: Registration</span>](#Amazon_Web_Services:_Registration)
-- [<span class="tocnumber">3</span> <span class="toctext">Credit Where
-  Credit's Due</span>](#Credit_Where_Credit.27s_Due)
-- [<span class="tocnumber">4</span> <span class="toctext">Finding and
+- [Amazon Web
+  Services: Registration](#Amazon_Web_Services:_Registration)
+- [Credit Where
+  Credit's Due](#Credit_Where_Credit.27s_Due)
+- [Finding and
   Starting a GMOD Cloud
-  AMI</span>](#Finding_and_Starting_a_GMOD_Cloud_AMI)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Launch an
-    Instance</span>](#Launch_an_Instance)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Directory
-    Structure</span>](#Directory_Structure)
-- [<span class="tocnumber">5</span> <span class="toctext">Interacting
-  with the Server</span>](#Interacting_with_the_Server)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">Logging
-    in</span>](#Logging_in)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">Instance
-    Access</span>](#Instance_Access)
-  - [<span class="tocnumber">5.3</span> <span class="toctext">Resizing
-    your data partition</span>](#Resizing_your_data_partition)
-- [<span class="tocnumber">6</span> <span class="toctext">Working with
+  AMI](#Finding_and_Starting_a_GMOD_Cloud_AMI)
+  - [Launch an
+    Instance](#Launch_an_Instance)
+  - [Directory
+    Structure](#Directory_Structure)
+- [Interacting
+  with the Server](#Interacting_with_the_Server)
+  - [Logging
+    in](#Logging_in)
+  - [Instance
+    Access](#Instance_Access)
+  - [Resizing
+    your data partition](#Resizing_your_data_partition)
+- [Working with
   the GMOD Software on the
-  Server</span>](#Working_with_the_GMOD_Software_on_the_Server)
-  - [<span class="tocnumber">6.1</span> <span class="toctext">Loading
-    Data into Chado</span>](#Loading_Data_into_Chado)
-  - [<span class="tocnumber">6.2</span>
-    <span class="toctext">Configuring
-    GBrowse</span>](#Configuring_GBrowse)
-  - [<span class="tocnumber">6.3</span> <span class="toctext">Getting
-    Data into JBrowse</span>](#Getting_Data_into_JBrowse)
-  - [<span class="tocnumber">6.4</span>
-    <span class="toctext">Configuring
-    Tripal</span>](#Configuring_Tripal)
-- [<span class="tocnumber">7</span> <span class="toctext">Leaving the
-  Cloud</span>](#Leaving_the_Cloud)
-  - [<span class="tocnumber">7.1</span> <span class="toctext">Shutting
-    Down</span>](#Shutting_Down)
-  - [<span class="tocnumber">7.2</span> <span class="toctext">Getting
-    your data off the Cloud</span>](#Getting_your_data_off_the_Cloud)
-  - [<span class="tocnumber">7.3</span> <span class="toctext">Volume
-    Deletion</span>](#Volume_Deletion)
+  Server](#Working_with_the_GMOD_Software_on_the_Server)
+  - [Loading
+    Data into Chado](#Loading_Data_into_Chado)
+  - [Configuring
+    GBrowse](#Configuring_GBrowse)
+  - [Getting
+    Data into JBrowse](#Getting_Data_into_JBrowse)
+  - [Configuring
+    Tripal](#Configuring_Tripal)
+- [Leaving the
+  Cloud](#Leaving_the_Cloud)
+  - [Shutting
+    Down](#Shutting_Down)
+  - [Getting
+    your data off the Cloud](#Getting_your_data_off_the_Cloud)
+  - [Volume
+    Deletion](#Volume_Deletion)
 
 
-
-## <span id="Amazon_Web_Services" class="mw-headline">Amazon Web Services</span>
+## Amazon Web Services
 
 Amazon has a set of guides for
 <a href="http://aws.amazon.com/documentation/gettingstarted/"
@@ -95,7 +71,7 @@ through the registration process step by step.
 
 [Skip down to the next section](#Finding_and_Starting_a_GMOD_Cloud_AMI)
 
-## <span id="Amazon_Web_Services:_Registration" class="mw-headline">Amazon Web Services: Registration</span>
+## Amazon Web Services: Registration
 
 Start off at <a href="http://aws.amazon.com" class="external text"
 rel="nofollow">aws.amazon.com</a>
@@ -144,7 +120,7 @@ width="750" height="482" alt="AWS login" />
 
   
 
-## <span id="Credit_Where_Credit.27s_Due" class="mw-headline">Credit Where Credit's Due</span>
+## Credit Where Credit's Due
 
 If you have a voucher for free compute credit, you can apply it at
 <a href="http://aws.amazon.com/awscredits" class="external free"
@@ -157,7 +133,7 @@ width="750" height="482" alt="AWS credit applied - woohoo!" />
 
   
 
-## <span id="Finding_and_Starting_a_GMOD_Cloud_AMI" class="mw-headline">Finding and Starting a GMOD Cloud AMI</span>
+## Finding and Starting a GMOD Cloud AMI
 
 The next job is to find and launch a GMOD in the Cloud instance. The
 current GMOD in the Cloud instance is as follows:
@@ -202,7 +178,7 @@ select **SSH** and **HTTP** from the drop down list, clicking "add rule"
 for each. Give it a useful name like "default". Press continue and close
 until your instance gets created.
 
-### <span id="Launch_an_Instance" class="mw-headline">Launch an Instance</span>
+### Launch an Instance
 
 Return to the
 <a href="http://aws.amazon.com" class="external text" rel="nofollow">AWS
@@ -372,7 +348,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/2/23/Screen_shot_2012-08-25_at_11.36.25.png/1125px-Screen_shot_2012-08-25_at_11.36.25.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/23/Screen_shot_2012-08-25_at_11.36.25.png 2x"
 width="750" height="482" alt="Blast off!" />
 
-### <span id="Directory_Structure" class="mw-headline">Directory Structure</span>
+### Directory Structure
 
 When you log into your GMOD Cloud instance, you will be in the ubuntu
 user's home directory, /home/ubuntu, which is part of the root partition
@@ -408,9 +384,9 @@ find that you must have other files or directories saved, please send an
 email to gmod-devel@lists.sourceforge.net to request that symlinks be
 added to future releases.
 
-## <span id="Interacting_with_the_Server" class="mw-headline">Interacting with the Server</span>
+## Interacting with the Server
 
-### <span id="Logging_in" class="mw-headline">Logging in</span>
+### Logging in
 
 Amazon provides a web-based command line client for interacting with
 your instance, but you may prefer to use a client on your own computer.
@@ -428,7 +404,7 @@ The following screenshots walk you through logging into an AMI using a
 command line tool. [Skip to the next
 section](#Resizing_your_data_partition)
 
-### <span id="Instance_Access" class="mw-headline">Instance Access</span>
+### Instance Access
 
 We can now test out our instance. Clicking on **Instances** shows us the
 list of all the instances we have running.
@@ -510,7 +486,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/0/07/Screen_shot_2012-08-25_at_11.48.56.png/1125px-Screen_shot_2012-08-25_at_11.48.56.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/07/Screen_shot_2012-08-25_at_11.48.56.png 2x"
 width="750" height="482" alt="Logged in!" />
 
-### <span id="Resizing_your_data_partition" class="mw-headline">Resizing your data partition</span>
+### Resizing your data partition
 
 For the moment,
 <a href="http://tomotvos.ca/cloud/how-to-resize-an-aws-volume/"
@@ -521,17 +497,17 @@ to resizing EBS partitions on EC2 machines.
 
   
 
-## <span id="Working_with_the_GMOD_Software_on_the_Server" class="mw-headline">Working with the GMOD Software on the Server</span>
+## Working with the GMOD Software on the Server
 
-### <span id="Loading_Data_into_Chado" class="mw-headline">Loading Data into Chado</span>
+### Loading Data into Chado
 
-### <span id="Configuring_GBrowse" class="mw-headline">Configuring GBrowse</span>
+### Configuring GBrowse
 
-### <span id="Getting_Data_into_JBrowse" class="mw-headline">Getting Data into JBrowse</span>
+### Getting Data into JBrowse
 
-### <span id="Configuring_Tripal" class="mw-headline">Configuring Tripal</span>
+### Configuring Tripal
 
-## <span id="Leaving_the_Cloud" class="mw-headline">Leaving the Cloud</span>
+## Leaving the Cloud
 
 Once you have finished working on your GMOD in the Cloud instance, you
 should remove your data and shut it down (instances can be left running,
@@ -554,7 +530,7 @@ you stop the machine.
 
   
 
-### <span id="Shutting_Down" class="mw-headline">Shutting Down</span>
+### Shutting Down
 
 To stop an instance from the command line, type the following:
 
@@ -583,7 +559,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/36/Screen_shot_2012-08-25_at_12.40.52.png/1125px-Screen_shot_2012-08-25_at_12.40.52.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/36/Screen_shot_2012-08-25_at_12.40.52.png 2x"
 width="750" height="482" alt="Instance stopped" />
 
-### <span id="Getting_your_data_off_the_Cloud" class="mw-headline">Getting your data off the Cloud</span>
+### Getting your data off the Cloud
 
 To archive, compress, and securely transfer directory DIR to remote host
 HOST without writing the archive to your localhost:
@@ -610,7 +586,7 @@ blowfish-cbc or arcfour256) may speed up the transfer:
 
   
 
-### <span id="Volume_Deletion" class="mw-headline">Volume Deletion</span>
+### Volume Deletion
 
 Every GMOD in the Cloud instance uses two volumes (disks), one for
 applications and the other for data.
@@ -675,91 +651,3 @@ All done!
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/18/17.04.00.png/750px-17.04.00.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/1/18/17.04.00.png/1125px-17.04.00.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/18/17.04.00.png 2x"
 width="750" height="409" alt="Tabula rasa" />
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD in the
-  Cloud](Category%253AGMOD_in_the_Cloud "Category%253AGMOD in the Cloud")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Cloud_Tutorial" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:26 on 13 September
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">45,179 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

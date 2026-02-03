@@ -1,70 +1,34 @@
 ---
 title: "Hackathon 2007 info"
 ---
+# Hackathon 2007 info
 
 
+  Accomplishments](#Accomplishments)
+  - [Apollo](#Apollo)
+  - [Core](#Core)
+  - [MediaWiki](#MediaWiki)
+- [Location
+  info](#Location_info)
+  - [Dates](#Dates)
+  - [Agenda](#Agenda)
+  - [Location](#Location)
+  - [Transportation](#Transportation)
+    - [Airports](#Airports)
+    - [Driving](#Driving)
+    - [Public
+      Transportation](#Public_Transportation)
+  - [Lodging](#Lodging)
+- [Goal](#Goal)
+  - [Possible
+    Goals considered](#Possible_Goals_considered)
+- [Preparation](#Preparation)
+- [Attendees](#Attendees)
 
 
-<span id="top"></span>
+# Accomplishments
 
-
-
-
-# <span dir="auto">Hackathon 2007 info</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Accomplishments</span>](#Accomplishments)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Apollo</span>](#Apollo)
-  - [<span class="tocnumber">1.2</span>
-    <span class="toctext">Core</span>](#Core)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">MediaWiki</span>](#MediaWiki)
-- [<span class="tocnumber">2</span> <span class="toctext">Location
-  info</span>](#Location_info)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Dates</span>](#Dates)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Location</span>](#Location)
-  - [<span class="tocnumber">2.4</span>
-    <span class="toctext">Transportation</span>](#Transportation)
-    - [<span class="tocnumber">2.4.1</span>
-      <span class="toctext">Airports</span>](#Airports)
-    - [<span class="tocnumber">2.4.2</span>
-      <span class="toctext">Driving</span>](#Driving)
-    - [<span class="tocnumber">2.4.3</span> <span class="toctext">Public
-      Transportation</span>](#Public_Transportation)
-  - [<span class="tocnumber">2.5</span>
-    <span class="toctext">Lodging</span>](#Lodging)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Goal</span>](#Goal)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Possible
-    Goals considered</span>](#Possible_Goals_considered)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Preparation</span>](#Preparation)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">Attendees</span>](#Attendees)
-
-
-
-# <span id="Accomplishments" class="mw-headline">Accomplishments</span>
-
-## <span id="Apollo" class="mw-headline">Apollo</span>
+## Apollo
 
 - Created an example organism-specific webstart build of Apollo and an
   accompanying ant build file for repeating the build.
@@ -77,7 +41,7 @@ Needs to be done still:
 
 - Document the process for creating an organism specific release
 
-## <span id="Core" class="mw-headline">Core</span>
+## Core
 
 - Created a webpage outlining the various configuration parameters that
   need to be adjusted to make it organism-specific.
@@ -88,7 +52,7 @@ Needs to be done still:
 
 Needs to be done still:
 
-## <span id="MediaWiki" class="mw-headline">MediaWiki</span>
+## MediaWiki
 
 See [Hackathon_wikidb](Hackathon_wikidb "Hackathon wikidb")
 
@@ -100,13 +64,13 @@ See [Hackathon_wikidb](Hackathon_wikidb "Hackathon wikidb")
   - Wiki2Chado via Chado XML and XORT - close but not completed before
     we left
 
-# <span id="Location_info" class="mw-headline">Location info</span>
+# Location info
 
-## <span id="Dates" class="mw-headline">Dates</span>
+## Dates
 
 August 23-24
 
-## <span id="Agenda" class="mw-headline">Agenda</span>
+## Agenda
 
 Thursday 8:40 Meet in the lobby of the hotel to walk over to NU
 
@@ -124,7 +88,7 @@ Thursday 8:40 Meet in the lobby of the hotel to walk over to NU
 
 10:30 Hack!
 
-## <span id="Location" class="mw-headline">Location</span>
+## Location
 
 Center For Genetic Medicine Northwestern University Chicago Campus  
 in **Downtown Chicago**, IL  
@@ -141,9 +105,9 @@ have to sign in and mention that you are with the GMOD hackathon.
 This is on the **Northwestern University Medical School Campus in
 DOWNTOWN CHICAGO**, not to be confused with the main campus in Evanston
 
-## <span id="Transportation" class="mw-headline">Transportation</span>
+## Transportation
 
-### <span id="Airports" class="mw-headline">Airports</span>
+### Airports
 
 There are two major airports in Chicago: Midway and O'Hare. Both are
 about equally convenient to Northwestern's Chicago Campus
@@ -155,7 +119,7 @@ about equally convenient to Northwestern's Chicago Campus
   href="http://www.northwestern.edu/visiting/chicago/transportation/midway/"
   class="external text" rel="nofollow">Directions from Midway</a>
 
-### <span id="Driving" class="mw-headline">Driving</span>
+### Driving
 
 - <a href="http://www.northwestern.edu/visiting/chicago/north/"
   class="external text" rel="nofollow">Driving from the North</a>
@@ -173,7 +137,7 @@ major construction and you might encounter significant delays. See
 rel="nofollow">http://www.danryanexpressway.com/</a> for more
 information and suggested alternate routes.
 
-### <span id="Public_Transportation" class="mw-headline">Public Transportation</span>
+### Public Transportation
 
 If you are taking the Chicago CTA (a.k.a the 'El') the closest stop is
 Chicago Ave. on the RED LINE. <a
@@ -181,7 +145,7 @@ href="http://maps.google.com/maps?saddr=Chicago%2FState+Station+%4041.896671,-87
 class="external text" rel="nofollow">Google map of route from Red line
 to Hackathon Location</a>
 
-## <span id="Lodging" class="mw-headline">Lodging</span>
+## Lodging
 
 There is a room block **at the <a
 href="http://www.redroof.com/reservations/inn_details.asp?innNumber=281"
@@ -207,7 +171,7 @@ conveniently located hotels:
 Lastly, because of Chicago's public transportation system, anywhere that
 is relatively near an 'El' stop is convenient!
 
-# <span id="Goal" class="mw-headline">Goal</span>
+# Goal
 
 Several people have expressed interest in tuning the Apollo ↔ Chado
 interaction. With that in mind, I would like to propose this goal: to
@@ -270,7 +234,7 @@ directory:
 class="external free"
 rel="nofollow">http://gmod.cvs.sourceforge.net/gmod/schema/hackathon_2007/</a>
 
-## <span id="Possible_Goals_considered" class="mw-headline">Possible Goals considered</span>
+## Possible Goals considered
 
 While definitive goals have not been established yet, here are some
 possibilities. Please feel free to add more.
@@ -303,7 +267,7 @@ Chado\<-\>Apollo setup for the Bovine genome annotation effort.
 - community [wiki development/wiki table editor
   work](TableEdit.1#Table_Edit_at_Hackathon_2007 "TableEdit")
 
-# <span id="Preparation" class="mw-headline">Preparation</span>
+# Preparation
 
 Things we'll need provided either by Eric (the host) or various people
 coming:
@@ -340,7 +304,7 @@ coming:
   and try to build it. See apollo/doc/README.developers for pointers on
   running/building Apollo.
 
-# <span id="Attendees" class="mw-headline">Attendees</span>
+# Attendees
 
 - Scott Cain, CSHL
 - Eric Just, DictyBase, Northwestern
@@ -375,97 +339,3 @@ Possible:
 - Dave Emmert, FlyBase, Harvard
 - Jonathan Crabtree, Apollo, The institute that was TIGR
 - Justin Reese, Georgetown U. (via Skype)
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Community
-  Annotation](Category%253ACommunity_Annotation "Category%253ACommunity Annotation")
-- [Apollo](Category%253AApollo "Category%253AApollo")
-- [TableEdit](Category%253ATableEdit "Category%253ATableEdit")
-- [Events](Category%253AEvents "Category%253AEvents")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AHackathon_2007_info" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Hackathon_2007_info" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:54 on 9 June
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">262,546 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

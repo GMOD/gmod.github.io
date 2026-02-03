@@ -1,23 +1,7 @@
 ---
 title: "News/Pathway Tools 17.0 Released"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">News/Pathway Tools 17.0 Released</span>
-
-
-
-
-
-
-
+# News/Pathway Tools 17.0 Released
 
 
 Version 17.0 of [Pathway Tools](../Pathway_Tools.1 "Pathway Tools") has
@@ -31,39 +15,29 @@ Tools](../Pathway_Tools.1 "Pathway Tools") software/database bundle.
 Version 17.0 of BioCyc contains 2,920 Pathway/Genome Databases.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">General
   Changes</span>](#General_Changes)
-- [<span class="tocnumber">2</span> <span class="toctext">Navigator --
-  Web</span>](#Navigator_--_Web)
-- [<span class="tocnumber">3</span> <span class="toctext">Navigator --
-  Desktop</span>](#Navigator_--_Desktop)
-- [<span class="tocnumber">4</span> <span class="toctext">RouteSearch --
-  Metabolic Route Search</span>](#RouteSearch_--_Metabolic_Route_Search)
-- [<span class="tocnumber">5</span>
-  <span class="toctext">PathoLogic</span>](#PathoLogic)
+- [Navigator --
+  Web](#Navigator_--_Web)
+- [Navigator --
+  Desktop](#Navigator_--_Desktop)
+- [RouteSearch --
+  Metabolic Route Search](#RouteSearch_--_Metabolic_Route_Search)
+- [PathoLogic](#PathoLogic)
 
 
-
-### <span id="General_Changes" class="mw-headline">General Changes</span>
+### General Changes
 
 Groups Enhancements  
 A number of enhancements have been made to both Web Groups and Desktop
 Groups including re-organization of Web Groups menus and addition of new
 transformations.
-
-<!-- -->
-
 Rate-Limiting Reactions  
 A reaction can now be designated as rate limiting with respect to a
 given metabolic pathway, using the pathway editor. Rate-limiting
 reactions are identified as such in pathway diagrams using an hourglass
 icon.
 
-### <span id="Navigator_--_Web" class="mw-headline">Navigator -- Web</span>
+### Navigator -- Web
 
 Web Omics Pop-ups  
 When using the Cellular Omics Viewer you can view a graph of omics data
@@ -73,7 +47,7 @@ reaction (or metabolite) of interest. Click "Omics" in the menu of the
 resulting pop-up window, which will graph the omics data for that
 reaction.
 
-### <span id="Navigator_--_Desktop" class="mw-headline">Navigator -- Desktop</span>
+### Navigator -- Desktop
 
 PGDB Registry Speedups  
 The PGDB registry is a facility whereby Pathway Tools users can share
@@ -82,7 +56,7 @@ registry grew, the speed of the registry became far too slow; the
 registry interface has been re-designed so that finding PGDBs within the
 registry is much faster.
 
-### <span id="RouteSearch_--_Metabolic_Route_Search" class="mw-headline">RouteSearch -- Metabolic Route Search</span>
+### RouteSearch -- Metabolic Route Search
 
 The new Web-based RouteSearch tool, accessible from command Tools -\>
 Metabolic Route Search, supports two types of searches in metabolic
@@ -102,7 +76,7 @@ available within public Pathway Tools web servers but may be accessed by
 installing Pathway Tools locally and running a web server accessible on
 an intranet.
 
-### <span id="PathoLogic" class="mw-headline">PathoLogic</span>
+### PathoLogic
 
 Pathway Abundance Scores for Metagenome Data  
 PathoLogic can now compute abundance scores for pathways based on gene
@@ -120,101 +94,4 @@ class="external text" rel="nofollow">Pathway Tools release notes</a>.
   
 
 
-
 *Posted to the [GMOD News](../GMOD_News "GMOD News") on 2013/04/03*
-
-
-
-
-
-
-[Categories](../Special%253ACategories "Special%253ACategories"):
-
-- [News Items](../Category%253ANews_Items "Category%253ANews Items")
-- [GMOD
-  Components](../Category%253AGMOD_Components "Category%253AGMOD Components")
-- [Pathway Tools](../Category%253APathway_Tools "Category%253APathway Tools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-<a href="../Main_Page"
-style="background-image: url(../../images/GMOD-cogs.png);"
-title="Visit the main page"></a>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](../Main_Page)</span>
-- <span id="n-Software">[Software](../GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](../Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](../Special:AllPages)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](../Overview)</span>
-- <span id="n-FAQs">[FAQs](../Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](../Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](../Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](../GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](../Training_and_Outreach)</span>
-- <span id="n-Support">[Support](../Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](../GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](../Meetings)</span>
-- <span id="n-Calendar">[Calendar](../Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="../Special%253ABrowse/News-2FPathway_Tools_17.0_Released"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:37 on 15 April
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">12,281 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

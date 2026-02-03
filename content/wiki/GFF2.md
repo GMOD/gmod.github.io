@@ -1,23 +1,7 @@
 ---
 title: "GFF2"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GFF2</span>
-
-
-
-
-
-
-
+# GFF2
 
 
 <a href="http://www.sanger.ac.uk/Software/formats/GFF/GFF_Spec.shtml"
@@ -33,61 +17,52 @@ led to quality control and data exchange problems.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">GFF2 is
   Deprecated!</span>](#GFF2_is_Deprecated.21)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Why GFF2
+  - [Why GFF2
     is harmful to your
-    health</span>](#Why_GFF2_is_harmful_to_your_health)
-- [<span class="tocnumber">2</span> <span class="toctext">The GFF2 File
-  Format</span>](#The_GFF2_File_Format)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Creating a
-    GFF2 table</span>](#Creating_a_GFF2_table)
-    - [<span class="tocnumber">2.1.1</span> <span class="toctext">Using
+    health](#Why_GFF2_is_harmful_to_your_health)
+- [The GFF2 File
+  Format](#The_GFF2_File_Format)
+  - [Creating a
+    GFF2 table](#Creating_a_GFF2_table)
+    - [Using
       the Group field for simple
-      features</span>](#Using_the_Group_field_for_simple_features)
-    - [<span class="tocnumber">2.1.2</span> <span class="toctext">Using
+      features](#Using_the_Group_field_for_simple_features)
+    - [Using
       the Group field to group features that belong
-      together</span>](#Using_the_Group_field_to_group_features_that_belong_together)
-    - [<span class="tocnumber">2.1.3</span> <span class="toctext">Using
+      together](#Using_the_Group_field_to_group_features_that_belong_together)
+    - [Using
       the Group field to add a
-      note</span>](#Using_the_Group_field_to_add_a_note)
-    - [<span class="tocnumber">2.1.4</span> <span class="toctext">Using
+      note](#Using_the_Group_field_to_add_a_note)
+    - [Using
       the Group field to add an alternative
-      name</span>](#Using_the_Group_field_to_add_an_alternative_name)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Identifying the reference
-    sequence</span>](#Identifying_the_reference_sequence)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Sequence
-    alignments</span>](#Sequence_alignments)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Dense
-    quantitative data</span>](#Dense_quantitative_data)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Loading
+      name](#Using_the_Group_field_to_add_an_alternative_name)
+  - [Identifying the reference
+    sequence](#Identifying_the_reference_sequence)
+  - [Sequence
+    alignments](#Sequence_alignments)
+  - [Dense
+    quantitative data](#Dense_quantitative_data)
+  - [Loading
     the GFF file into the
-    database</span>](#Loading_the_GFF_file_into_the_database)
-  - [<span class="tocnumber">2.6</span>
-    <span class="toctext">Aggregators</span>](#Aggregators)
-- [<span class="tocnumber">3</span> <span class="toctext">Converting
-  GFF2 to GFF3</span>](#Converting_GFF2_to_GFF3)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Column 3:
-    Feature Type</span>](#Column_3:_Feature_Type)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Column 9:
-    Group / Attributes</span>](#Column_9:_Group_.2F_Attributes)
+    database](#Loading_the_GFF_file_into_the_database)
+  - [Aggregators](#Aggregators)
+- [Converting
+  GFF2 to GFF3](#Converting_GFF2_to_GFF3)
+  - [Column 3:
+    Feature Type](#Column_3:_Feature_Type)
+  - [Column 9:
+    Group / Attributes](#Column_9:_Group_.2F_Attributes)
 
 
-
-## <span id="GFF2_is_Deprecated.21" class="mw-headline">GFF2 is Deprecated!</span>
+## GFF2 is Deprecated!
 
 The GFF file format stands for "Gene Finding Format" or or "General
 Feature Format" and was invented at the Sanger Centre. It is easy to
 use, but it suffers from two main limitations (see the box).
 
 
-
-### <span id="Why_GFF2_is_harmful_to_your_health" class="mw-headline">Why GFF2 is harmful to your health</span>
+### Why GFF2 is harmful to your health
 
 One of GFF2's problems is that it is only able to represent one level of
 nesting of features. This is mainly a problem when dealing with genes
@@ -104,10 +79,9 @@ neck. For this reason, GFF2 format has been deprecated in favor of
 [GFF3](GFF3 "GFF3") format databases.
 
 
-
 See [GFF3](GFF3 "GFF3") for more on the current version of GFF.
 
-## <span id="The_GFF2_File_Format" class="mw-headline">The GFF2 File Format</span>
+## The GFF2 File Format
 
 The GFF format is a flat tab-delimited file, each line of which
 corresponds to an annotation, or feature. Each line has nine columns and
@@ -184,7 +158,7 @@ a class of Clone.
 You should use double-quotes around the group name or class if it
 contains white space.
 
-### <span id="Creating_a_GFF2_table" class="mw-headline">Creating a GFF2 table</span>
+### Creating a GFF2 table
 
 The first 8 fields of the GFF2 format are easy to understand. The group
 field is a challenge. It is used in several distinct ways:
@@ -195,7 +169,7 @@ field is a challenge. It is used in several distinct ways:
 - to add one or more notes to the annotation.
 - to add an alternative name
 
-#### <span id="Using_the_Group_field_for_simple_features" class="mw-headline">Using the Group field for simple features</span>
+#### Using the Group field for simple features
 
 For a simple feature that spans a single continuous range, choose a name
 and class for the object and give it a line in the GFF2 file that refers
@@ -203,7 +177,7 @@ to its start and stop positions.
 
     Chr3   giemsa heterochromatin  4500000 6000000 . . .   Band 3q12.1
 
-#### <span id="Using_the_Group_field_to_group_features_that_belong_together" class="mw-headline">Using the Group field to group features that belong together</span>
+#### Using the Group field to group features that belong together
 
 For a group of features that belong together, such as the exons in a
 transcript, choose a name and class for the object. Give each segment a
@@ -247,7 +221,7 @@ Some annotations do not need to be individually named. For example, it
 is probably not useful to assign a unique name to each ALU repeat in a
 vertebrate genome. For these, just leave the Group field empty.
 
-#### <span id="Using_the_Group_field_to_add_a_note" class="mw-headline">Using the Group field to add a note</span>
+#### Using the Group field to add a note
 
 The group field can be used to add one or more notes to an annotation.
 To do this, place a semicolon after the group name and add a Note field:
@@ -260,7 +234,7 @@ You can add multiple Notes. Just separate them by semicolons:
 
 The Note should come AFTER the group type and name.
 
-#### <span id="Using_the_Group_field_to_add_an_alternative_name" class="mw-headline">Using the Group field to add an alternative name</span>
+#### Using the Group field to add an alternative name
 
 If you want the feature to be quickly searchable by an alternative name,
 you can add one or more Alias tags. A feature can have multiple aliases,
@@ -272,7 +246,7 @@ Searches for aliases will be both faster and more reliable than searches
 for keywords in notes, since the latter relies on whole-text search
 methods that vary somewhat from DBMS to DBMS.
 
-### <span id="Identifying_the_reference_sequence" class="mw-headline">Identifying the reference sequence</span>
+### Identifying the reference sequence
 
 Each reference sequence in the GFF table must itself have an entry. This
 is necessary so that the length of the reference sequence is known.
@@ -294,7 +268,7 @@ a different class name, then be sure to indicate that fact with the
 
   
 
-### <span id="Sequence_alignments" class="mw-headline">Sequence alignments</span>
+### Sequence alignments
 
 There are several cases in which an annotation indicates the
 relationship between two sequences. One common one is a similarity hit,
@@ -332,7 +306,7 @@ to 31742 of cosmid F49B2.
 
   
 
-### <span id="Dense_quantitative_data" class="mw-headline">Dense quantitative data</span>
+### Dense quantitative data
 
 If you have dense quantitative data, such as tiling array data,
 microarray expression data, ChIP-chip or ChIP-seq chromatin
@@ -342,7 +316,7 @@ format in external files. Use the `wiggle2gff3.pl` script, included in
 this distribution, to format and load this data. Run `wiggle2gff3.pl -h`
 for instructions.
 
-### <span id="Loading_the_GFF_file_into_the_database" class="mw-headline">Loading the GFF file into the database</span>
+### Loading the GFF file into the database
 
 Use the [BioPerl](BioPerl "BioPerl") script utilities
 `bp_bulk_load_gff.pl`, `bp_load_gff.pl` or (if you are brave)
@@ -357,8 +331,7 @@ To update existing databases, use either `bp_load_gff.pl` or
 `bp_fast_load_gff.pl`. The latter is somewhat experimental, so use with
 care.
 
-### <span id="Aggregators" class="mw-headline">Aggregators</span>
-
+### Aggregators
 
 
 It is not necessary to use aggregators with the
@@ -366,7 +339,6 @@ It is not necessary to use aggregators with the
 [BioSQL](BioSQL "BioSQL"), or Bio::DB::SeqFeature::Store [GBrowse
 Adaptors](GBrowse_Adaptors "GBrowse Adaptors"), or any other adaptor
 that is based on [GFF3](GFF3 "GFF3").
-
 
 
 The Bio::DB::GFF adaptor (and only Bio::DB::GFF!) has a feature known as
@@ -423,9 +395,6 @@ type of "waba_alignment":
 - nucleotide_match:waba_weak
 - nucleotide_match:waba_strong
 - nucleotide_match:waba_coding
-
-<!-- -->
-
 wormbase_gene  
 This aggregator was written to be compatible with the *C. elegans* GFF2
 files distributed by the Sanger Institute. It aggregates raw "CDS",
@@ -443,7 +412,7 @@ href="ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/
 class="external free"
 rel="nofollow">ftp://ftp.wormbase.org/pub/wormbase/genomes/elegans/genome_feature_tables/GFF3</a>
 
-## <span id="Converting_GFF2_to_GFF3" class="mw-headline">Converting GFF2 to GFF3</span>
+## Converting GFF2 to GFF3
 
 Converting a file from GFF2 to [GFF3](GFF3 "GFF3") format is problematic
 for several reasons. However, there are several GFF2 to GFF3 converters
@@ -455,13 +424,13 @@ with GFF2.
 
 Some areas that need to be addressed by any GFF2 to GFF3 converter:
 
-### <span id="Column_3:_Feature_Type" class="mw-headline">Column 3: Feature Type</span>
+### Column 3: Feature Type
 
 If the GFF2 file does not use Sequence Ontology terms in column 3 then
 some sort of translation will need to be done on the types in the GFF2
 to convert them to be SO terms.
 
-### <span id="Column_9:_Group_.2F_Attributes" class="mw-headline">Column 9: Group / Attributes</span>
+### Column 9: Group / Attributes
 
 Column 9 has a slightly different format and is much more tightly
 defined in GFF3 than GFF2. Both require attention. GFF2 does not have
@@ -473,91 +442,3 @@ nesting. While you can certainly reproduce this minimal nesting in GFF3,
 it would be better to also convert your feature representations to be
 multi-level at the time you migrate the data to GFF3. This is
 non-trivial.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Annotation](Category%253AAnnotation "Category%253AAnnotation")
-- [Computing](Category%253AComputing "Category%253AComputing")
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GFF2" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:27 on 21 April
-  2017.</span>
-<!-- - <span id="footer-info-viewcount">296,749 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

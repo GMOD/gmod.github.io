@@ -1,302 +1,280 @@
 ---
 title: "Chado Tables"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Tables</span>
-
-
-
-
-
-
-
+# Chado Tables
 
 
 **Chado Schema Version 1.11**
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Table:
   db</span>](#Table:_db)
-- [<span class="tocnumber">2</span> <span class="toctext">Table:
-  dbxref</span>](#Table:_dbxref)
-- [<span class="tocnumber">3</span> <span class="toctext">Table:
-  project</span>](#Table:_project)
-- [<span class="tocnumber">4</span> <span class="toctext">Table:
-  tableinfo</span>](#Table:_tableinfo)
-- [<span class="tocnumber">5</span> <span class="toctext">Table:
-  cv</span>](#Table:_cv)
-- [<span class="tocnumber">6</span> <span class="toctext">Table:
-  cvterm</span>](#Table:_cvterm)
-- [<span class="tocnumber">7</span> <span class="toctext">Table:
-  cvterm_dbxref</span>](#Table:_cvterm_dbxref)
-- [<span class="tocnumber">8</span> <span class="toctext">Table:
-  cvterm_relationship</span>](#Table:_cvterm_relationship)
-- [<span class="tocnumber">9</span> <span class="toctext">Table:
-  cvtermpath</span>](#Table:_cvtermpath)
-- [<span class="tocnumber">10</span> <span class="toctext">Table:
-  cvtermprop</span>](#Table:_cvtermprop)
-- [<span class="tocnumber">11</span> <span class="toctext">Table:
-  cvtermsynonym</span>](#Table:_cvtermsynonym)
-- [<span class="tocnumber">12</span> <span class="toctext">Table:
-  dbxrefprop</span>](#Table:_dbxrefprop)
-- [<span class="tocnumber">13</span> <span class="toctext">Table:
-  wwwuser</span>](#Table:_wwwuser)
-- [<span class="tocnumber">14</span> <span class="toctext">Table:
-  wwwuser_cvterm</span>](#Table:_wwwuser_cvterm)
-- [<span class="tocnumber">15</span> <span class="toctext">Table:
-  wwwuser_expression</span>](#Table:_wwwuser_expression)
-- [<span class="tocnumber">16</span> <span class="toctext">Table:
-  wwwuser_feature</span>](#Table:_wwwuser_feature)
-- [<span class="tocnumber">17</span> <span class="toctext">Table:
-  wwwuser_genotype</span>](#Table:_wwwuser_genotype)
-- [<span class="tocnumber">18</span> <span class="toctext">Table:
-  wwwuser_organism</span>](#Table:_wwwuser_organism)
-- [<span class="tocnumber">19</span> <span class="toctext">Table:
-  wwwuser_phenotype</span>](#Table:_wwwuser_phenotype)
-- [<span class="tocnumber">20</span> <span class="toctext">Table:
-  wwwuser_project</span>](#Table:_wwwuser_project)
-- [<span class="tocnumber">21</span> <span class="toctext">Table:
-  wwwuser_pub</span>](#Table:_wwwuser_pub)
-- [<span class="tocnumber">22</span> <span class="toctext">Table:
-  wwwuserrelationship</span>](#Table:_wwwuserrelationship)
-- [<span class="tocnumber">23</span> <span class="toctext">Table:
-  feature</span>](#Table:_feature)
-- [<span class="tocnumber">24</span> <span class="toctext">Table:
-  feature_cvterm</span>](#Table:_feature_cvterm)
-- [<span class="tocnumber">25</span> <span class="toctext">Table:
-  feature_cvterm_dbxref</span>](#Table:_feature_cvterm_dbxref)
-- [<span class="tocnumber">26</span> <span class="toctext">Table:
-  feature_cvterm_pub</span>](#Table:_feature_cvterm_pub)
-- [<span class="tocnumber">27</span> <span class="toctext">Table:
-  feature_cvtermprop</span>](#Table:_feature_cvtermprop)
-- [<span class="tocnumber">28</span> <span class="toctext">Table:
-  feature_dbxref</span>](#Table:_feature_dbxref)
-- [<span class="tocnumber">29</span> <span class="toctext">Table:
-  feature_pub</span>](#Table:_feature_pub)
-- [<span class="tocnumber">30</span> <span class="toctext">Table:
-  feature_pubprop</span>](#Table:_feature_pubprop)
-- [<span class="tocnumber">31</span> <span class="toctext">Table:
-  feature_relationship</span>](#Table:_feature_relationship)
-- [<span class="tocnumber">32</span> <span class="toctext">Table:
-  feature_relationship_pub</span>](#Table:_feature_relationship_pub)
-- [<span class="tocnumber">33</span> <span class="toctext">Table:
-  feature_relationshipprop</span>](#Table:_feature_relationshipprop)
-- [<span class="tocnumber">34</span> <span class="toctext">Table:
-  feature_relationshipprop_pub</span>](#Table:_feature_relationshipprop_pub)
-- [<span class="tocnumber">35</span> <span class="toctext">Table:
-  feature_synonym</span>](#Table:_feature_synonym)
-- [<span class="tocnumber">36</span> <span class="toctext">Table:
-  featureloc</span>](#Table:_featureloc)
-- [<span class="tocnumber">37</span> <span class="toctext">Table:
-  featureloc_pub</span>](#Table:_featureloc_pub)
-- [<span class="tocnumber">38</span> <span class="toctext">Table:
-  featureprop</span>](#Table:_featureprop)
-- [<span class="tocnumber">39</span> <span class="toctext">Table:
-  featureprop_pub</span>](#Table:_featureprop_pub)
-- [<span class="tocnumber">40</span> <span class="toctext">Table:
-  synonym</span>](#Table:_synonym)
-- [<span class="tocnumber">41</span> <span class="toctext">Table:
-  phylonode</span>](#Table:_phylonode)
-- [<span class="tocnumber">42</span> <span class="toctext">Table:
-  phylonode_dbxref</span>](#Table:_phylonode_dbxref)
-- [<span class="tocnumber">43</span> <span class="toctext">Table:
-  phylonode_organism</span>](#Table:_phylonode_organism)
-- [<span class="tocnumber">44</span> <span class="toctext">Table:
-  phylonode_pub</span>](#Table:_phylonode_pub)
-- [<span class="tocnumber">45</span> <span class="toctext">Table:
-  phylonode_relationship</span>](#Table:_phylonode_relationship)
-- [<span class="tocnumber">46</span> <span class="toctext">Table:
-  phylonodeprop</span>](#Table:_phylonodeprop)
-- [<span class="tocnumber">47</span> <span class="toctext">Table:
-  phylotree</span>](#Table:_phylotree)
-- [<span class="tocnumber">48</span> <span class="toctext">Table:
-  phylotree_pub</span>](#Table:_phylotree_pub)
-- [<span class="tocnumber">49</span> <span class="toctext">Table:
-  library</span>](#Table:_library)
-- [<span class="tocnumber">50</span> <span class="toctext">Table:
-  library_cvterm</span>](#Table:_library_cvterm)
-- [<span class="tocnumber">51</span> <span class="toctext">Table:
-  library_feature</span>](#Table:_library_feature)
-- [<span class="tocnumber">52</span> <span class="toctext">Table:
-  library_pub</span>](#Table:_library_pub)
-- [<span class="tocnumber">53</span> <span class="toctext">Table:
-  library_synonym</span>](#Table:_library_synonym)
-- [<span class="tocnumber">54</span> <span class="toctext">Table:
-  libraryprop</span>](#Table:_libraryprop)
-- [<span class="tocnumber">55</span> <span class="toctext">Table:
-  contact</span>](#Table:_contact)
-- [<span class="tocnumber">56</span> <span class="toctext">Table:
-  contact_relationship</span>](#Table:_contact_relationship)
-- [<span class="tocnumber">57</span> <span class="toctext">Table:
-  stock</span>](#Table:_stock)
-- [<span class="tocnumber">58</span> <span class="toctext">Table:
-  stock_cvterm</span>](#Table:_stock_cvterm)
-- [<span class="tocnumber">59</span> <span class="toctext">Table:
-  stock_dbxref</span>](#Table:_stock_dbxref)
-- [<span class="tocnumber">60</span> <span class="toctext">Table:
-  stock_genotype</span>](#Table:_stock_genotype)
-- [<span class="tocnumber">61</span> <span class="toctext">Table:
-  stock_pub</span>](#Table:_stock_pub)
-- [<span class="tocnumber">62</span> <span class="toctext">Table:
-  stock_relationship</span>](#Table:_stock_relationship)
-- [<span class="tocnumber">63</span> <span class="toctext">Table:
-  stock_relationship_pub</span>](#Table:_stock_relationship_pub)
-- [<span class="tocnumber">64</span> <span class="toctext">Table:
-  stockcollection</span>](#Table:_stockcollection)
-- [<span class="tocnumber">65</span> <span class="toctext">Table:
-  stockcollection_stock</span>](#Table:_stockcollection_stock)
-- [<span class="tocnumber">66</span> <span class="toctext">Table:
-  stockcollectionprop</span>](#Table:_stockcollectionprop)
-- [<span class="tocnumber">67</span> <span class="toctext">Table:
-  stockprop</span>](#Table:_stockprop)
-- [<span class="tocnumber">68</span> <span class="toctext">Table:
-  stockprop_pub</span>](#Table:_stockprop_pub)
-- [<span class="tocnumber">69</span> <span class="toctext">Table:
-  environment</span>](#Table:_environment)
-- [<span class="tocnumber">70</span> <span class="toctext">Table:
-  environment_cvterm</span>](#Table:_environment_cvterm)
-- [<span class="tocnumber">71</span> <span class="toctext">Table:
-  feature_genotype</span>](#Table:_feature_genotype)
-- [<span class="tocnumber">72</span> <span class="toctext">Table:
-  genotype</span>](#Table:_genotype)
-- [<span class="tocnumber">73</span> <span class="toctext">Table:
-  phendesc</span>](#Table:_phendesc)
-- [<span class="tocnumber">74</span> <span class="toctext">Table:
-  phenotype_comparison</span>](#Table:_phenotype_comparison)
-- [<span class="tocnumber">75</span> <span class="toctext">Table:
-  phenstatement</span>](#Table:_phenstatement)
-- [<span class="tocnumber">76</span> <span class="toctext">Table:
-  acquisition</span>](#Table:_acquisition)
-- [<span class="tocnumber">77</span> <span class="toctext">Table:
-  acquisition_relationship</span>](#Table:_acquisition_relationship)
-- [<span class="tocnumber">78</span> <span class="toctext">Table:
-  acquisitionprop</span>](#Table:_acquisitionprop)
-- [<span class="tocnumber">79</span> <span class="toctext">Table:
-  arraydesign</span>](#Table:_arraydesign)
-- [<span class="tocnumber">80</span> <span class="toctext">Table:
-  arraydesignprop</span>](#Table:_arraydesignprop)
-- [<span class="tocnumber">81</span> <span class="toctext">Table:
-  assay</span>](#Table:_assay)
-- [<span class="tocnumber">82</span> <span class="toctext">Table:
-  assay_biomaterial</span>](#Table:_assay_biomaterial)
-- [<span class="tocnumber">83</span> <span class="toctext">Table:
-  assay_project</span>](#Table:_assay_project)
-- [<span class="tocnumber">84</span> <span class="toctext">Table:
-  assayprop</span>](#Table:_assayprop)
-- [<span class="tocnumber">85</span> <span class="toctext">Table:
-  biomaterial</span>](#Table:_biomaterial)
-- [<span class="tocnumber">86</span> <span class="toctext">Table:
-  biomaterial_dbxref</span>](#Table:_biomaterial_dbxref)
-- [<span class="tocnumber">87</span> <span class="toctext">Table:
-  biomaterial_relationship</span>](#Table:_biomaterial_relationship)
-- [<span class="tocnumber">88</span> <span class="toctext">Table:
-  biomaterial_treatment</span>](#Table:_biomaterial_treatment)
-- [<span class="tocnumber">89</span> <span class="toctext">Table:
-  biomaterialprop</span>](#Table:_biomaterialprop)
-- [<span class="tocnumber">90</span> <span class="toctext">Table:
-  channel</span>](#Table:_channel)
-- [<span class="tocnumber">91</span> <span class="toctext">Table:
-  control</span>](#Table:_control)
-- [<span class="tocnumber">92</span> <span class="toctext">Table:
-  element</span>](#Table:_element)
-- [<span class="tocnumber">93</span> <span class="toctext">Table:
-  element_relationship</span>](#Table:_element_relationship)
-- [<span class="tocnumber">94</span> <span class="toctext">Table:
-  elementresult</span>](#Table:_elementresult)
-- [<span class="tocnumber">95</span> <span class="toctext">Table:
-  elementresult_relationship</span>](#Table:_elementresult_relationship)
-- [<span class="tocnumber">96</span> <span class="toctext">Table:
-  magedocumentation</span>](#Table:_magedocumentation)
-- [<span class="tocnumber">97</span> <span class="toctext">Table:
-  mageml</span>](#Table:_mageml)
-- [<span class="tocnumber">98</span> <span class="toctext">Table:
-  protocol</span>](#Table:_protocol)
-- [<span class="tocnumber">99</span> <span class="toctext">Table:
-  protocolparam</span>](#Table:_protocolparam)
-- [<span class="tocnumber">100</span> <span class="toctext">Table:
-  quantification</span>](#Table:_quantification)
-- [<span class="tocnumber">101</span> <span class="toctext">Table:
-  quantification_relationship</span>](#Table:_quantification_relationship)
-- [<span class="tocnumber">102</span> <span class="toctext">Table:
-  quantificationprop</span>](#Table:_quantificationprop)
-- [<span class="tocnumber">103</span> <span class="toctext">Table:
-  study</span>](#Table:_study)
-- [<span class="tocnumber">104</span> <span class="toctext">Table:
-  study_assay</span>](#Table:_study_assay)
-- [<span class="tocnumber">105</span> <span class="toctext">Table:
-  studydesign</span>](#Table:_studydesign)
-- [<span class="tocnumber">106</span> <span class="toctext">Table:
-  studydesignprop</span>](#Table:_studydesignprop)
-- [<span class="tocnumber">107</span> <span class="toctext">Table:
-  studyfactor</span>](#Table:_studyfactor)
-- [<span class="tocnumber">108</span> <span class="toctext">Table:
-  studyfactorvalue</span>](#Table:_studyfactorvalue)
-- [<span class="tocnumber">109</span> <span class="toctext">Table:
-  treatment</span>](#Table:_treatment)
-- [<span class="tocnumber">110</span> <span class="toctext">Table:
-  featuremap</span>](#Table:_featuremap)
-- [<span class="tocnumber">111</span> <span class="toctext">Table:
-  featuremap_pub</span>](#Table:_featuremap_pub)
-- [<span class="tocnumber">112</span> <span class="toctext">Table:
-  featurepos</span>](#Table:_featurepos)
-- [<span class="tocnumber">113</span> <span class="toctext">Table:
-  featurerange</span>](#Table:_featurerange)
-- [<span class="tocnumber">114</span> <span class="toctext">Table:
-  analysis</span>](#Table:_analysis)
-- [<span class="tocnumber">115</span> <span class="toctext">Table:
-  analysisfeature</span>](#Table:_analysisfeature)
-- [<span class="tocnumber">116</span> <span class="toctext">Table:
-  analysisprop</span>](#Table:_analysisprop)
-- [<span class="tocnumber">117</span> <span class="toctext">Table:
-  eimage</span>](#Table:_eimage)
-- [<span class="tocnumber">118</span> <span class="toctext">Table:
-  expression</span>](#Table:_expression)
-- [<span class="tocnumber">119</span> <span class="toctext">Table:
-  expression_cvterm</span>](#Table:_expression_cvterm)
-- [<span class="tocnumber">120</span> <span class="toctext">Table:
-  expression_image</span>](#Table:_expression_image)
-- [<span class="tocnumber">121</span> <span class="toctext">Table:
-  expression_pub</span>](#Table:_expression_pub)
-- [<span class="tocnumber">122</span> <span class="toctext">Table:
-  feature_expression</span>](#Table:_feature_expression)
-- [<span class="tocnumber">123</span> <span class="toctext">Table:
-  feature_phenotype</span>](#Table:_feature_phenotype)
-- [<span class="tocnumber">124</span> <span class="toctext">Table:
-  phenotype</span>](#Table:_phenotype)
-- [<span class="tocnumber">125</span> <span class="toctext">Table:
-  phenotype_cvterm</span>](#Table:_phenotype_cvterm)
-- [<span class="tocnumber">126</span> <span class="toctext">Table:
-  pub</span>](#Table:_pub)
-- [<span class="tocnumber">127</span> <span class="toctext">Table:
-  pub_dbxref</span>](#Table:_pub_dbxref)
-- [<span class="tocnumber">128</span> <span class="toctext">Table:
-  pub_relationship</span>](#Table:_pub_relationship)
-- [<span class="tocnumber">129</span> <span class="toctext">Table:
-  pubauthor</span>](#Table:_pubauthor)
-- [<span class="tocnumber">130</span> <span class="toctext">Table:
-  pubprop</span>](#Table:_pubprop)
-- [<span class="tocnumber">131</span> <span class="toctext">Table:
-  organism</span>](#Table:_organism)
-- [<span class="tocnumber">132</span> <span class="toctext">Table:
-  organism_dbxref</span>](#Table:_organism_dbxref)
-- [<span class="tocnumber">133</span> <span class="toctext">Table:
-  organismprop</span>](#Table:_organismprop)
+- [Table:
+  dbxref](#Table:_dbxref)
+- [Table:
+  project](#Table:_project)
+- [Table:
+  tableinfo](#Table:_tableinfo)
+- [Table:
+  cv](#Table:_cv)
+- [Table:
+  cvterm](#Table:_cvterm)
+- [Table:
+  cvterm_dbxref](#Table:_cvterm_dbxref)
+- [Table:
+  cvterm_relationship](#Table:_cvterm_relationship)
+- [Table:
+  cvtermpath](#Table:_cvtermpath)
+- [Table:
+  cvtermprop](#Table:_cvtermprop)
+- [Table:
+  cvtermsynonym](#Table:_cvtermsynonym)
+- [Table:
+  dbxrefprop](#Table:_dbxrefprop)
+- [Table:
+  wwwuser](#Table:_wwwuser)
+- [Table:
+  wwwuser_cvterm](#Table:_wwwuser_cvterm)
+- [Table:
+  wwwuser_expression](#Table:_wwwuser_expression)
+- [Table:
+  wwwuser_feature](#Table:_wwwuser_feature)
+- [Table:
+  wwwuser_genotype](#Table:_wwwuser_genotype)
+- [Table:
+  wwwuser_organism](#Table:_wwwuser_organism)
+- [Table:
+  wwwuser_phenotype](#Table:_wwwuser_phenotype)
+- [Table:
+  wwwuser_project](#Table:_wwwuser_project)
+- [Table:
+  wwwuser_pub](#Table:_wwwuser_pub)
+- [Table:
+  wwwuserrelationship](#Table:_wwwuserrelationship)
+- [Table:
+  feature](#Table:_feature)
+- [Table:
+  feature_cvterm](#Table:_feature_cvterm)
+- [Table:
+  feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
+- [Table:
+  feature_cvterm_pub](#Table:_feature_cvterm_pub)
+- [Table:
+  feature_cvtermprop](#Table:_feature_cvtermprop)
+- [Table:
+  feature_dbxref](#Table:_feature_dbxref)
+- [Table:
+  feature_pub](#Table:_feature_pub)
+- [Table:
+  feature_pubprop](#Table:_feature_pubprop)
+- [Table:
+  feature_relationship](#Table:_feature_relationship)
+- [Table:
+  feature_relationship_pub](#Table:_feature_relationship_pub)
+- [Table:
+  feature_relationshipprop](#Table:_feature_relationshipprop)
+- [Table:
+  feature_relationshipprop_pub](#Table:_feature_relationshipprop_pub)
+- [Table:
+  feature_synonym](#Table:_feature_synonym)
+- [Table:
+  featureloc](#Table:_featureloc)
+- [Table:
+  featureloc_pub](#Table:_featureloc_pub)
+- [Table:
+  featureprop](#Table:_featureprop)
+- [Table:
+  featureprop_pub](#Table:_featureprop_pub)
+- [Table:
+  synonym](#Table:_synonym)
+- [Table:
+  phylonode](#Table:_phylonode)
+- [Table:
+  phylonode_dbxref](#Table:_phylonode_dbxref)
+- [Table:
+  phylonode_organism](#Table:_phylonode_organism)
+- [Table:
+  phylonode_pub](#Table:_phylonode_pub)
+- [Table:
+  phylonode_relationship](#Table:_phylonode_relationship)
+- [Table:
+  phylonodeprop](#Table:_phylonodeprop)
+- [Table:
+  phylotree](#Table:_phylotree)
+- [Table:
+  phylotree_pub](#Table:_phylotree_pub)
+- [Table:
+  library](#Table:_library)
+- [Table:
+  library_cvterm](#Table:_library_cvterm)
+- [Table:
+  library_feature](#Table:_library_feature)
+- [Table:
+  library_pub](#Table:_library_pub)
+- [Table:
+  library_synonym](#Table:_library_synonym)
+- [Table:
+  libraryprop](#Table:_libraryprop)
+- [Table:
+  contact](#Table:_contact)
+- [Table:
+  contact_relationship](#Table:_contact_relationship)
+- [Table:
+  stock](#Table:_stock)
+- [Table:
+  stock_cvterm](#Table:_stock_cvterm)
+- [Table:
+  stock_dbxref](#Table:_stock_dbxref)
+- [Table:
+  stock_genotype](#Table:_stock_genotype)
+- [Table:
+  stock_pub](#Table:_stock_pub)
+- [Table:
+  stock_relationship](#Table:_stock_relationship)
+- [Table:
+  stock_relationship_pub](#Table:_stock_relationship_pub)
+- [Table:
+  stockcollection](#Table:_stockcollection)
+- [Table:
+  stockcollection_stock](#Table:_stockcollection_stock)
+- [Table:
+  stockcollectionprop](#Table:_stockcollectionprop)
+- [Table:
+  stockprop](#Table:_stockprop)
+- [Table:
+  stockprop_pub](#Table:_stockprop_pub)
+- [Table:
+  environment](#Table:_environment)
+- [Table:
+  environment_cvterm](#Table:_environment_cvterm)
+- [Table:
+  feature_genotype](#Table:_feature_genotype)
+- [Table:
+  genotype](#Table:_genotype)
+- [Table:
+  phendesc](#Table:_phendesc)
+- [Table:
+  phenotype_comparison](#Table:_phenotype_comparison)
+- [Table:
+  phenstatement](#Table:_phenstatement)
+- [Table:
+  acquisition](#Table:_acquisition)
+- [Table:
+  acquisition_relationship](#Table:_acquisition_relationship)
+- [Table:
+  acquisitionprop](#Table:_acquisitionprop)
+- [Table:
+  arraydesign](#Table:_arraydesign)
+- [Table:
+  arraydesignprop](#Table:_arraydesignprop)
+- [Table:
+  assay](#Table:_assay)
+- [Table:
+  assay_biomaterial](#Table:_assay_biomaterial)
+- [Table:
+  assay_project](#Table:_assay_project)
+- [Table:
+  assayprop](#Table:_assayprop)
+- [Table:
+  biomaterial](#Table:_biomaterial)
+- [Table:
+  biomaterial_dbxref](#Table:_biomaterial_dbxref)
+- [Table:
+  biomaterial_relationship](#Table:_biomaterial_relationship)
+- [Table:
+  biomaterial_treatment](#Table:_biomaterial_treatment)
+- [Table:
+  biomaterialprop](#Table:_biomaterialprop)
+- [Table:
+  channel](#Table:_channel)
+- [Table:
+  control](#Table:_control)
+- [Table:
+  element](#Table:_element)
+- [Table:
+  element_relationship](#Table:_element_relationship)
+- [Table:
+  elementresult](#Table:_elementresult)
+- [Table:
+  elementresult_relationship](#Table:_elementresult_relationship)
+- [Table:
+  magedocumentation](#Table:_magedocumentation)
+- [Table:
+  mageml](#Table:_mageml)
+- [Table:
+  protocol](#Table:_protocol)
+- [Table:
+  protocolparam](#Table:_protocolparam)
+- [Table:
+  quantification](#Table:_quantification)
+- [Table:
+  quantification_relationship](#Table:_quantification_relationship)
+- [Table:
+  quantificationprop](#Table:_quantificationprop)
+- [Table:
+  study](#Table:_study)
+- [Table:
+  study_assay](#Table:_study_assay)
+- [Table:
+  studydesign](#Table:_studydesign)
+- [Table:
+  studydesignprop](#Table:_studydesignprop)
+- [Table:
+  studyfactor](#Table:_studyfactor)
+- [Table:
+  studyfactorvalue](#Table:_studyfactorvalue)
+- [Table:
+  treatment](#Table:_treatment)
+- [Table:
+  featuremap](#Table:_featuremap)
+- [Table:
+  featuremap_pub](#Table:_featuremap_pub)
+- [Table:
+  featurepos](#Table:_featurepos)
+- [Table:
+  featurerange](#Table:_featurerange)
+- [Table:
+  analysis](#Table:_analysis)
+- [Table:
+  analysisfeature](#Table:_analysisfeature)
+- [Table:
+  analysisprop](#Table:_analysisprop)
+- [Table:
+  eimage](#Table:_eimage)
+- [Table:
+  expression](#Table:_expression)
+- [Table:
+  expression_cvterm](#Table:_expression_cvterm)
+- [Table:
+  expression_image](#Table:_expression_image)
+- [Table:
+  expression_pub](#Table:_expression_pub)
+- [Table:
+  feature_expression](#Table:_feature_expression)
+- [Table:
+  feature_phenotype](#Table:_feature_phenotype)
+- [Table:
+  phenotype](#Table:_phenotype)
+- [Table:
+  phenotype_cvterm](#Table:_phenotype_cvterm)
+- [Table:
+  pub](#Table:_pub)
+- [Table:
+  pub_dbxref](#Table:_pub_dbxref)
+- [Table:
+  pub_relationship](#Table:_pub_relationship)
+- [Table:
+  pubauthor](#Table:_pubauthor)
+- [Table:
+  pubprop](#Table:_pubprop)
+- [Table:
+  organism](#Table:_organism)
+- [Table:
+  organism_dbxref](#Table:_organism_dbxref)
+- [Table:
+  organismprop](#Table:_organismprop)
 
 
-
-## <span id="Table:_db" class="mw-headline">Table: db</span>
+## Table: db
 
 A database authority. Typical databases in bioinformatics are FlyBase,
 GO, UniProt, NCBI, MGI, etc. The authority is generally known by this
@@ -323,7 +301,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_dbxref" class="mw-headline">Table: dbxref</span>
+## Table: dbxref
 
 A unique, global, public, stable identifier. Not necessarily an external
 reference - can reference data items inside the particular chado
@@ -391,84 +369,30 @@ dbxref Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [arraydesign](#Table:_arraydesign)
-
-<!-- -->
-
 - [assay](#Table:_assay)
-
-<!-- -->
-
 - [biomaterial](#Table:_biomaterial)
-
-<!-- -->
-
 - [biomaterial_dbxref](#Table:_biomaterial_dbxref)
-
-<!-- -->
-
 - [cvterm](#Table:_cvterm)
-
-<!-- -->
-
 - [cvterm_dbxref](#Table:_cvterm_dbxref)
-
-<!-- -->
-
 - [dbxrefprop](#Table:_dbxrefprop)
-
-<!-- -->
-
 - [element](#Table:_element)
-
-<!-- -->
-
 - [feature](#Table:_feature)
-
-<!-- -->
-
 - [feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
-
-<!-- -->
-
 - [feature_dbxref](#Table:_feature_dbxref)
-
-<!-- -->
-
 - [organism_dbxref](#Table:_organism_dbxref)
-
-<!-- -->
-
 - [phylonode_dbxref](#Table:_phylonode_dbxref)
-
-<!-- -->
-
 - [phylotree](#Table:_phylotree)
-
-<!-- -->
-
 - [protocol](#Table:_protocol)
-
-<!-- -->
-
 - [pub_dbxref](#Table:_pub_dbxref)
-
-<!-- -->
-
 - [stock](#Table:_stock)
-
-<!-- -->
-
 - [stock_dbxref](#Table:_stock_dbxref)
-
-<!-- -->
-
 - [study](#Table:_study)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_project" class="mw-headline">Table: project</span>
+## Table: project
 
 | FK  | Name        | Type                   | Description       |
 |-----|-------------|------------------------|-------------------|
@@ -481,16 +405,13 @@ project Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [assay_project](#Table:_assay_project)
-
-<!-- -->
-
 - [wwwuser_project](#Table:_wwwuser_project)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_tableinfo" class="mw-headline">Table: tableinfo</span>
+## Table: tableinfo
 
 | FK  | Name                | Type                  | Description              |
 |-----|---------------------|-----------------------|--------------------------|
@@ -508,16 +429,13 @@ tableinfo Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [control](#Table:_control)
-
-<!-- -->
-
 - [magedocumentation](#Table:_magedocumentation)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_cv" class="mw-headline">Table: cv</span>
+## Table: cv
 
 A controlled vocabulary or ontology. A cv is composed of cvterms (AKA
 terms, classes, types, universals - relations and properties are also
@@ -572,16 +490,13 @@ cv Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [cvterm](#Table:_cvterm)
-
-<!-- -->
-
 - [cvtermpath](#Table:_cvtermpath)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_cvterm" class="mw-headline">Table: cvterm</span>
+## Table: cvterm
 
 A term, class, universal or type within an ontology or controlled
 vocabulary. This table is also used for relations and properties.
@@ -679,270 +594,75 @@ cvterm Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition_relationship](#Table:_acquisition_relationship)
-
-<!-- -->
-
 - [acquisitionprop](#Table:_acquisitionprop)
-
-<!-- -->
-
 - [analysisprop](#Table:_analysisprop)
-
-<!-- -->
-
 - [arraydesign](#Table:_arraydesign)
-
-<!-- -->
-
 - [arraydesignprop](#Table:_arraydesignprop)
-
-<!-- -->
-
 - [assayprop](#Table:_assayprop)
-
-<!-- -->
-
 - [biomaterial_relationship](#Table:_biomaterial_relationship)
-
-<!-- -->
-
 - [biomaterial_treatment](#Table:_biomaterial_treatment)
-
-<!-- -->
-
 - [biomaterialprop](#Table:_biomaterialprop)
-
-<!-- -->
-
 - [contact](#Table:_contact)
-
-<!-- -->
-
 - [contact_relationship](#Table:_contact_relationship)
-
-<!-- -->
-
 - [control](#Table:_control)
-
-<!-- -->
-
 - [cvterm_dbxref](#Table:_cvterm_dbxref)
-
-<!-- -->
-
 - [cvterm_relationship](#Table:_cvterm_relationship)
-
-<!-- -->
-
 - [cvtermpath](#Table:_cvtermpath)
-
-<!-- -->
-
 - [cvtermprop](#Table:_cvtermprop)
-
-<!-- -->
-
 - [cvtermsynonym](#Table:_cvtermsynonym)
-
-<!-- -->
-
 - [dbxrefprop](#Table:_dbxrefprop)
-
-<!-- -->
-
 - [element](#Table:_element)
-
-<!-- -->
-
 - [element_relationship](#Table:_element_relationship)
-
-<!-- -->
-
 - [elementresult_relationship](#Table:_elementresult_relationship)
-
-<!-- -->
-
 - [environment_cvterm](#Table:_environment_cvterm)
-
-<!-- -->
-
 - [expression_cvterm](#Table:_expression_cvterm)
-
-<!-- -->
-
 - [expression_cvtermprop](#Table:_expression_cvtermprop)
-
-<!-- -->
-
 - [expressionprop](#Table:_expressionprop)
-
-<!-- -->
-
 - [feature](#Table:_feature)
-
-<!-- -->
-
 - [feature_cvterm](#Table:_feature_cvterm)
-
-<!-- -->
-
 - [feature_cvtermprop](#Table:_feature_cvtermprop)
-
-<!-- -->
-
 - [feature_expressionprop](#Table:_feature_expressionprop)
-
-<!-- -->
-
 - [feature_genotype](#Table:_feature_genotype)
-
-<!-- -->
-
 - [feature_pubprop](#Table:_feature_pubprop)
-
-<!-- -->
-
 - [feature_relationship](#Table:_feature_relationship)
-
-<!-- -->
-
 - [feature_relationshipprop](#Table:_feature_relationshipprop)
-
-<!-- -->
-
 - [featuremap](#Table:_featuremap)
-
-<!-- -->
-
 - [featureprop](#Table:_featureprop)
-
-<!-- -->
-
 - [library](#Table:_library)
-
-<!-- -->
-
 - [library_cvterm](#Table:_library_cvterm)
-
-<!-- -->
-
 - [libraryprop](#Table:_libraryprop)
-
-<!-- -->
-
 - [organismprop](#Table:_organismprop)
-
-<!-- -->
-
 - [phendesc](#Table:_phendesc)
-
-<!-- -->
-
 - [phenotype](#Table:_phenotype)
-
-<!-- -->
-
 - [phenotype_comparison](#Table:_phenotype_comparison)
-
-<!-- -->
-
 - [phenotype_cvterm](#Table:_phenotype_cvterm)
-
-<!-- -->
-
 - [phenstatement](#Table:_phenstatement)
-
-<!-- -->
-
 - [phylonode](#Table:_phylonode)
-
-<!-- -->
-
 - [phylonode_relationship](#Table:_phylonode_relationship)
-
-<!-- -->
-
 - [phylonodeprop](#Table:_phylonodeprop)
-
-<!-- -->
-
 - [phylotree](#Table:_phylotree)
-
-<!-- -->
-
 - [protocol](#Table:_protocol)
-
-<!-- -->
-
 - [protocolparam](#Table:_protocolparam)
-
-<!-- -->
-
 - [pub](#Table:_pub)
-
-<!-- -->
-
 - [pub_relationship](#Table:_pub_relationship)
-
-<!-- -->
-
 - [pubprop](#Table:_pubprop)
-
-<!-- -->
-
 - [quantification_relationship](#Table:_quantification_relationship)
-
-<!-- -->
-
 - [quantificationprop](#Table:_quantificationprop)
-
-<!-- -->
-
 - [stock](#Table:_stock)
-
-<!-- -->
-
 - [stock_cvterm](#Table:_stock_cvterm)
-
-<!-- -->
-
 - [stock_relationship](#Table:_stock_relationship)
-
-<!-- -->
-
 - [stockcollection](#Table:_stockcollection)
-
-<!-- -->
-
 - [stockcollectionprop](#Table:_stockcollectionprop)
-
-<!-- -->
-
 - [stockprop](#Table:_stockprop)
-
-<!-- -->
-
 - [studydesignprop](#Table:_studydesignprop)
-
-<!-- -->
-
 - [studyfactor](#Table:_studyfactor)
-
-<!-- -->
-
 - [synonym](#Table:_synonym)
-
-<!-- -->
-
 - [treatment](#Table:_treatment)
-
-<!-- -->
-
 - [wwwuser_cvterm](#Table:_wwwuser_cvterm)
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_cvterm_dbxref" class="mw-headline">Table: cvterm_dbxref</span>
+## Table: cvterm_dbxref
 
 In addition to the primary identifier (cvterm.dbxref_id) a cvterm can
 have zero or more secondary identifiers/dbxrefs, which may refer to
@@ -1014,7 +734,7 @@ cvterm_dbxref Structure
 
   
 
-## <span id="Table:_cvterm_relationship" class="mw-headline">Table: cvterm_relationship</span>
+## Table: cvterm_relationship
 
 A relationship linking two cvterms. Each cvterm_relationship constitutes
 an edge in the graph defined by the collection of cvterms and
@@ -1087,7 +807,7 @@ cvterm_relationship Structure
 
   
 
-## <span id="Table:_cvtermpath" class="mw-headline">Table: cvtermpath</span>
+## Table: cvtermpath
 
 The reflexive transitive closure of the cvterm_relationship relation.
 
@@ -1164,7 +884,7 @@ cvtermpath Structure
 
   
 
-## <span id="Table:_cvtermprop" class="mw-headline">Table: cvtermprop</span>
+## Table: cvtermprop
 
 Additional extensible properties can be attached to a cvterm using this
 table. Corresponds to -AnnotationProperty- in W3C OWL format.
@@ -1236,7 +956,7 @@ cvtermprop Structure
 
   
 
-## <span id="Table:_cvtermsynonym" class="mw-headline">Table: cvtermsynonym</span>
+## Table: cvtermsynonym
 
 A cvterm actually represents a distinct class or concept. A concept can
 be referred to by different phrases or names. In addition to the primary
@@ -1295,7 +1015,7 @@ cvtermsynonym Structure
 
   
 
-## <span id="Table:_dbxrefprop" class="mw-headline">Table: dbxrefprop</span>
+## Table: dbxrefprop
 
 Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
@@ -1315,7 +1035,7 @@ dbxrefprop Structure
 
   
 
-## <span id="Table:_wwwuser" class="mw-headline">Table: wwwuser</span>
+## Table: wwwuser
 
 Keep track of WWW users. This may also be useful in an audit module at
 some point.
@@ -1333,44 +1053,20 @@ wwwuser Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [wwwuser_cvterm](#Table:_wwwuser_cvterm)
-
-<!-- -->
-
 - [wwwuser_expression](#Table:_wwwuser_expression)
-
-<!-- -->
-
 - [wwwuser_feature](#Table:_wwwuser_feature)
-
-<!-- -->
-
 - [wwwuser_genotype](#Table:_wwwuser_genotype)
-
-<!-- -->
-
 - [wwwuser_organism](#Table:_wwwuser_organism)
-
-<!-- -->
-
 - [wwwuser_phenotype](#Table:_wwwuser_phenotype)
-
-<!-- -->
-
 - [wwwuser_project](#Table:_wwwuser_project)
-
-<!-- -->
-
 - [wwwuser_pub](#Table:_wwwuser_pub)
-
-<!-- -->
-
 - [wwwuserrelationship](#Table:_wwwuserrelationship)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_wwwuser_cvterm" class="mw-headline">Table: wwwuser_cvterm</span>
+## Table: wwwuser_cvterm
 
 Track wwwuser interest in cvterms.
 
@@ -1387,7 +1083,7 @@ wwwuser_cvterm Structure
 
   
 
-## <span id="Table:_wwwuser_expression" class="mw-headline">Table: wwwuser_expression</span>
+## Table: wwwuser_expression
 
 Track wwwuser interest in expressions.
 
@@ -1404,7 +1100,7 @@ wwwuser_expression Structure
 
   
 
-## <span id="Table:_wwwuser_feature" class="mw-headline">Table: wwwuser_feature</span>
+## Table: wwwuser_feature
 
 Track wwwuser interest in features.
 
@@ -1421,7 +1117,7 @@ wwwuser_feature Structure
 
   
 
-## <span id="Table:_wwwuser_genotype" class="mw-headline">Table: wwwuser_genotype</span>
+## Table: wwwuser_genotype
 
 Track wwwuser interest in genotypes.
 
@@ -1438,7 +1134,7 @@ wwwuser_genotype Structure
 
   
 
-## <span id="Table:_wwwuser_organism" class="mw-headline">Table: wwwuser_organism</span>
+## Table: wwwuser_organism
 
 Track wwwuser interest in organisms.
 
@@ -1455,7 +1151,7 @@ wwwuser_organism Structure
 
   
 
-## <span id="Table:_wwwuser_phenotype" class="mw-headline">Table: wwwuser_phenotype</span>
+## Table: wwwuser_phenotype
 
 Track wwwuser interest in phenotypes.
 
@@ -1472,7 +1168,7 @@ wwwuser_phenotype Structure
 
   
 
-## <span id="Table:_wwwuser_project" class="mw-headline">Table: wwwuser_project</span>
+## Table: wwwuser_project
 
 Link wwwuser accounts to projects
 
@@ -1489,7 +1185,7 @@ wwwuser_project Structure
 
   
 
-## <span id="Table:_wwwuser_pub" class="mw-headline">Table: wwwuser_pub</span>
+## Table: wwwuser_pub
 
 Track wwwuser interest in publications.
 
@@ -1506,7 +1202,7 @@ wwwuser_pub Structure
 
   
 
-## <span id="Table:_wwwuserrelationship" class="mw-headline">Table: wwwuserrelationship</span>
+## Table: wwwuserrelationship
 
 Track wwwuser interest in other wwwusers.
 
@@ -1525,7 +1221,7 @@ rel="nofollow">PostgreSQL Autodoc</a>
 <a href="http://validator.w3.org/check/referer" class="external text"
 rel="nofollow">W3C HTML 4.01 Strict</a>
 
-## <span id="Table:_feature" class="mw-headline">Table: feature</span>
+## Table: feature
 
 A feature is a biological sequence or a section of a biological
 sequence, or a collection of such sections. Examples include genes,
@@ -1696,76 +1392,28 @@ feature Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [analysisfeature](#Table:_analysisfeature)
-
-<!-- -->
-
 - [element](#Table:_element)
-
-<!-- -->
-
 - [feature_cvterm](#Table:_feature_cvterm)
-
-<!-- -->
-
 - [feature_dbxref](#Table:_feature_dbxref)
-
-<!-- -->
-
 - [feature_expression](#Table:_feature_expression)
-
-<!-- -->
-
 - [feature_genotype](#Table:_feature_genotype)
-
-<!-- -->
-
 - [feature_phenotype](#Table:_feature_phenotype)
-
-<!-- -->
-
 - [feature_pub](#Table:_feature_pub)
-
-<!-- -->
-
 - [feature_relationship](#Table:_feature_relationship)
-
-<!-- -->
-
 - [feature_synonym](#Table:_feature_synonym)
-
-<!-- -->
-
 - [featureloc](#Table:_featureloc)
-
-<!-- -->
-
 - [featurepos](#Table:_featurepos)
-
-<!-- -->
-
 - [featureprop](#Table:_featureprop)
-
-<!-- -->
-
 - [featurerange](#Table:_featurerange)
-
-<!-- -->
-
 - [library_feature](#Table:_library_feature)
-
-<!-- -->
-
 - [phylonode](#Table:_phylonode)
-
-<!-- -->
-
 - [wwwuser_feature](#Table:_wwwuser_feature)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_feature_cvterm" class="mw-headline">Table: feature_cvterm</span>
+## Table: feature_cvterm
 
 Associate a term from a cv with a feature, for example, GO annotation.
 
@@ -1834,20 +1482,14 @@ feature_cvterm Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_cvterm_dbxref](#Table:_feature_cvterm_dbxref)
-
-<!-- -->
-
 - [feature_cvterm_pub](#Table:_feature_cvterm_pub)
-
-<!-- -->
-
 - [feature_cvtermprop](#Table:_feature_cvtermprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_feature_cvterm_dbxref" class="mw-headline">Table: feature_cvterm_dbxref</span>
+## Table: feature_cvterm_dbxref
 
 Additional dbxrefs for an association. Rows in the feature_cvterm table
 may be backed up by dbxrefs. For example, a feature_cvterm association
@@ -1872,7 +1514,7 @@ feature_cvterm_dbxref Structure
 
   
 
-## <span id="Table:_feature_cvterm_pub" class="mw-headline">Table: feature_cvterm_pub</span>
+## Table: feature_cvterm_pub
 
 Secondary pubs for an association. Each feature_cvterm association is
 supported by a single primary publication. Additional secondary pubs can
@@ -1892,7 +1534,7 @@ feature_cvterm_pub Structure
 
   
 
-## <span id="Table:_feature_cvtermprop" class="mw-headline">Table: feature_cvtermprop</span>
+## Table: feature_cvtermprop
 
 Extensible properties for feature to cvterm associations. Examples: GO
 evidence codes; qualifiers; metadata such as the date on which the entry
@@ -1968,7 +1610,7 @@ feature_cvtermprop Structure
 
   
 
-## <span id="Table:_feature_dbxref" class="mw-headline">Table: feature_dbxref</span>
+## Table: feature_dbxref
 
 Links a feature to dbxrefs. This is for secondary identifiers; primary
 identifiers should use feature.dbxref_id.
@@ -2026,7 +1668,7 @@ feature_dbxref Structure
 
   
 
-## <span id="Table:_feature_pub" class="mw-headline">Table: feature_pub</span>
+## Table: feature_pub
 
 Provenance. Linking table between features and publications that mention
 them.
@@ -2047,7 +1689,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_feature_pubprop" class="mw-headline">Table: feature_pubprop</span>
+## Table: feature_pubprop
 
 Property or attribute of a feature_pub link.
 
@@ -2065,7 +1707,7 @@ feature_pubprop Structure
 
   
 
-## <span id="Table:_feature_relationship" class="mw-headline">Table: feature_relationship</span>
+## Table: feature_relationship
 
 Features can be arranged in graphs, e.g. "exon part_of transcript
 part_of gene"; If type is thought of as a verb, the each arc or edge
@@ -2157,16 +1799,13 @@ feature_relationship Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_relationship_pub](#Table:_feature_relationship_pub)
-
-<!-- -->
-
 - [feature_relationshipprop](#Table:_feature_relationshipprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_feature_relationship_pub" class="mw-headline">Table: feature_relationship_pub</span>
+## Table: feature_relationship_pub
 
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
@@ -2183,7 +1822,7 @@ feature_relationship_pub Structure
 
   
 
-## <span id="Table:_feature_relationshipprop" class="mw-headline">Table: feature_relationshipprop</span>
+## Table: feature_relationshipprop
 
 Extensible properties for feature_relationships. Analogous structure to
 featureprop. This table is largely optional and not used with a high
@@ -2265,7 +1904,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_feature_relationshipprop_pub" class="mw-headline">Table: feature_relationshipprop_pub</span>
+## Table: feature_relationshipprop_pub
 
 Provenance for feature_relationshipprop.
 
@@ -2281,7 +1920,7 @@ feature_relationshipprop_pub Structure
 
   
 
-## <span id="Table:_feature_synonym" class="mw-headline">Table: feature_synonym</span>
+## Table: feature_synonym
 
 Linking table between feature and synonym.
 
@@ -2362,7 +2001,7 @@ feature_synonym Structure
 
   
 
-## <span id="Table:_featureloc" class="mw-headline">Table: featureloc</span>
+## Table: featureloc
 
 The location of a feature relative to another feature. Important:
 interbase coordinates are used. This is vital as it allows us to
@@ -2570,7 +2209,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_featureloc_pub" class="mw-headline">Table: featureloc_pub</span>
+## Table: featureloc_pub
 
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
@@ -2587,7 +2226,7 @@ featureloc_pub Structure
 
   
 
-## <span id="Table:_featureprop" class="mw-headline">Table: featureprop</span>
+## Table: featureprop
 
 A feature can have any number of slot-value property tags attached to
 it. This is an alternative to hardcoding a list of columns in the
@@ -2668,7 +2307,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_featureprop_pub" class="mw-headline">Table: featureprop_pub</span>
+## Table: featureprop_pub
 
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
@@ -2685,7 +2324,7 @@ featureprop_pub Structure
 
   
 
-## <span id="Table:_synonym" class="mw-headline">Table: synonym</span>
+## Table: synonym
 
 A synonym for a feature. One feature can have multiple synonyms, and the
 same synonym can apply to multiple features.
@@ -2747,16 +2386,13 @@ synonym Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_synonym](#Table:_feature_synonym)
-
-<!-- -->
-
 - [library_synonym](#Table:_library_synonym)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phylonode" class="mw-headline">Table: phylonode</span>
+## Table: phylonode
 
 This is the most pervasive element in the phylogeny module, cataloging
 the "phylonodes" of tree graphs. Edges are implied by the
@@ -2853,32 +2489,17 @@ phylonode Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [phylonode](#Table:_phylonode)
-
-<!-- -->
-
 - [phylonode_dbxref](#Table:_phylonode_dbxref)
-
-<!-- -->
-
 - [phylonode_organism](#Table:_phylonode_organism)
-
-<!-- -->
-
 - [phylonode_pub](#Table:_phylonode_pub)
-
-<!-- -->
-
 - [phylonode_relationship](#Table:_phylonode_relationship)
-
-<!-- -->
-
 - [phylonodeprop](#Table:_phylonodeprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phylonode_dbxref" class="mw-headline">Table: phylonode_dbxref</span>
+## Table: phylonode_dbxref
 
 For example, for orthology, paralogy group identifiers; could also be
 used for NCBI taxonomy; for sequences, refer to phylonode_feature,
@@ -2896,7 +2517,7 @@ phylonode_dbxref Structure
 
   
 
-## <span id="Table:_phylonode_organism" class="mw-headline">Table: phylonode_organism</span>
+## Table: phylonode_organism
 
 This linking table should only be used for nodes in taxonomy trees; it
 provides a mapping between the node and an organism. One node can have
@@ -2950,7 +2571,7 @@ phylonode_organism Structure
 
   
 
-## <span id="Table:_phylonode_pub" class="mw-headline">Table: phylonode_pub</span>
+## Table: phylonode_pub
 
 | FK                             | Name             | Type    | Description         |
 |--------------------------------|------------------|---------|---------------------|
@@ -2964,7 +2585,7 @@ phylonode_pub Structure
 
   
 
-## <span id="Table:_phylonode_relationship" class="mw-headline">Table: phylonode_relationship</span>
+## Table: phylonode_relationship
 
 This is for relationships that are not strictly hierarchical; for
 example, horizontal gene transfer. Most phylogenetic trees are strictly
@@ -2985,7 +2606,7 @@ phylonode_relationship Structure
 
   
 
-## <span id="Table:_phylonodeprop" class="mw-headline">Table: phylonodeprop</span>
+## Table: phylonodeprop
 
 <table data-border="1" data-cellpadding="3">
 <caption>phylonodeprop Structure</caption>
@@ -3047,7 +2668,7 @@ phylonodeprop Structure
 
   
 
-## <span id="Table:_phylotree" class="mw-headline">Table: phylotree</span>
+## Table: phylotree
 
 Global anchor for phylogenetic tree.
 
@@ -3115,20 +2736,14 @@ phylotree Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [phylonode](#Table:_phylonode)
-
-<!-- -->
-
 - [phylonode_relationship](#Table:_phylonode_relationship)
-
-<!-- -->
-
 - [phylotree_pub](#Table:_phylotree_pub)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phylotree_pub" class="mw-headline">Table: phylotree_pub</span>
+## Table: phylotree_pub
 
 Tracks citations global to the tree e.g. multiple sequence alignment
 supporting tree construction.
@@ -3145,7 +2760,7 @@ phylotree_pub Structure
 
   
 
-## <span id="Table:_library" class="mw-headline">Table: library</span>
+## Table: library
 
 <table data-border="1" data-cellpadding="3">
 <caption>library Structure</caption>
@@ -3206,28 +2821,16 @@ library Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [library_cvterm](#Table:_library_cvterm)
-
-<!-- -->
-
 - [library_feature](#Table:_library_feature)
-
-<!-- -->
-
 - [library_pub](#Table:_library_pub)
-
-<!-- -->
-
 - [library_synonym](#Table:_library_synonym)
-
-<!-- -->
-
 - [libraryprop](#Table:_libraryprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_library_cvterm" class="mw-headline">Table: library_cvterm</span>
+## Table: library_cvterm
 
 The table library_cvterm links a library to controlled vocabularies
 which describe the library. For instance, there might be a link to the
@@ -3246,7 +2849,7 @@ library_cvterm Structure
 
   
 
-## <span id="Table:_library_feature" class="mw-headline">Table: library_feature</span>
+## Table: library_feature
 
 library_feature links a library to the clones which are contained in the
 library. Examples of such linked features might be "cDNA_clone" or
@@ -3264,7 +2867,7 @@ library_feature Structure
 
   
 
-## <span id="Table:_library_pub" class="mw-headline">Table: library_pub</span>
+## Table: library_pub
 
 | FK                         | Name           | Type    | Description         |
 |----------------------------|----------------|---------|---------------------|
@@ -3278,7 +2881,7 @@ library_pub Structure
 
   
 
-## <span id="Table:_library_synonym" class="mw-headline">Table: library_synonym</span>
+## Table: library_synonym
 
 <table data-border="1" data-cellpadding="3">
 <caption>library_synonym Structure</caption>
@@ -3357,7 +2960,7 @@ library_synonym Structure
 
   
 
-## <span id="Table:_libraryprop" class="mw-headline">Table: libraryprop</span>
+## Table: libraryprop
 
 | FK                         | Name           | Type    | Description         |
 |----------------------------|----------------|---------|---------------------|
@@ -3373,7 +2976,7 @@ libraryprop Structure
 
   
 
-## <span id="Table:_contact" class="mw-headline">Table: contact</span>
+## Table: contact
 
 Model persons, institutes, groups, organizations, etc.
 
@@ -3428,36 +3031,18 @@ contact Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [arraydesign](#Table:_arraydesign)
-
-<!-- -->
-
 - [assay](#Table:_assay)
-
-<!-- -->
-
 - [biomaterial](#Table:_biomaterial)
-
-<!-- -->
-
 - [contact_relationship](#Table:_contact_relationship)
-
-<!-- -->
-
 - [quantification](#Table:_quantification)
-
-<!-- -->
-
 - [stockcollection](#Table:_stockcollection)
-
-<!-- -->
-
 - [study](#Table:_study)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_contact_relationship" class="mw-headline">Table: contact_relationship</span>
+## Table: contact_relationship
 
 Model relationships between contacts
 
@@ -3521,7 +3106,7 @@ contact_relationship Structure
 
   
 
-## <span id="Table:_stock" class="mw-headline">Table: stock</span>
+## Table: stock
 
 Any stock can be globally identified by the combination of organism,
 uniquename and stock type. A stock is the physical entities, either
@@ -3617,36 +3202,18 @@ stock Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [stock_cvterm](#Table:_stock_cvterm)
-
-<!-- -->
-
 - [stock_dbxref](#Table:_stock_dbxref)
-
-<!-- -->
-
 - [stock_genotype](#Table:_stock_genotype)
-
-<!-- -->
-
 - [stock_pub](#Table:_stock_pub)
-
-<!-- -->
-
 - [stock_relationship](#Table:_stock_relationship)
-
-<!-- -->
-
 - [stockcollection_stock](#Table:_stockcollection_stock)
-
-<!-- -->
-
 - [stockprop](#Table:_stockprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_stock_cvterm" class="mw-headline">Table: stock_cvterm</span>
+## Table: stock_cvterm
 
 stock_cvterm links a stock to cvterms. This is for secondary cvterms;
 primary cvterms should use stock.type_id.
@@ -3664,7 +3231,7 @@ stock_cvterm Structure
 
   
 
-## <span id="Table:_stock_dbxref" class="mw-headline">Table: stock_dbxref</span>
+## Table: stock_dbxref
 
 stock_dbxref links a stock to dbxrefs. This is for secondary
 identifiers; primary identifiers should use stock.dbxref_id.
@@ -3722,7 +3289,7 @@ stock_dbxref Structure
 
   
 
-## <span id="Table:_stock_genotype" class="mw-headline">Table: stock_genotype</span>
+## Table: stock_genotype
 
 Simple table linking a stock to a genotype. Features with genotypes can
 be linked to stocks thru feature_genotype -\> genotype -\>
@@ -3740,7 +3307,7 @@ stock_genotype Structure
 
   
 
-## <span id="Table:_stock_pub" class="mw-headline">Table: stock_pub</span>
+## Table: stock_pub
 
 Provenance. Linking table between stocks and, for example, a stocklist
 computer file.
@@ -3757,7 +3324,7 @@ stock_pub Structure
 
   
 
-## <span id="Table:_stock_relationship" class="mw-headline">Table: stock_relationship</span>
+## Table: stock_relationship
 
 <table data-border="1" data-cellpadding="3">
 <caption>stock_relationship Structure</caption>
@@ -3841,7 +3408,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_stock_relationship_pub" class="mw-headline">Table: stock_relationship_pub</span>
+## Table: stock_relationship_pub
 
 Provenance. Attach optional evidence to a stock_relationship in the form
 of a publication.
@@ -3858,7 +3425,7 @@ stock_relationship_pub Structure
 
   
 
-## <span id="Table:_stockcollection" class="mw-headline">Table: stockcollection</span>
+## Table: stockcollection
 
 The lab or stock center distributing the stocks in their collection.
 
@@ -3925,16 +3492,13 @@ stockcollection Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [stockcollection_stock](#Table:_stockcollection_stock)
-
-<!-- -->
-
 - [stockcollectionprop](#Table:_stockcollectionprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_stockcollection_stock" class="mw-headline">Table: stockcollection_stock</span>
+## Table: stockcollection_stock
 
 stockcollection_stock links a stock collection to the stocks which are
 contained in the collection.
@@ -3951,7 +3515,7 @@ stockcollection_stock Structure
 
   
 
-## <span id="Table:_stockcollectionprop" class="mw-headline">Table: stockcollectionprop</span>
+## Table: stockcollectionprop
 
 The table stockcollectionprop contains the value of the stock collection
 such as website/email URLs; the value of the stock collection order
@@ -4015,7 +3579,7 @@ stockcollectionprop Structure
 
   
 
-## <span id="Table:_stockprop" class="mw-headline">Table: stockprop</span>
+## Table: stockprop
 
 A stock can have any number of slot-value property tags attached to it.
 This is an alternative to hardcoding a list of columns in the relational
@@ -4041,7 +3605,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_stockprop_pub" class="mw-headline">Table: stockprop_pub</span>
+## Table: stockprop_pub
 
 Provenance. Any stockprop assignment can optionally be supported by a
 publication.
@@ -4058,7 +3622,7 @@ stockprop_pub Structure
 
   
 
-## <span id="Table:_environment" class="mw-headline">Table: environment</span>
+## Table: environment
 
 The environmental component of a phenotype description.
 
@@ -4073,24 +3637,15 @@ environment Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [environment_cvterm](#Table:_environment_cvterm)
-
-<!-- -->
-
 - [phendesc](#Table:_phendesc)
-
-<!-- -->
-
 - [phenotype_comparison](#Table:_phenotype_comparison)
-
-<!-- -->
-
 - [phenstatement](#Table:_phenstatement)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_environment_cvterm" class="mw-headline">Table: environment_cvterm</span>
+## Table: environment_cvterm
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -4104,7 +3659,7 @@ environment_cvterm Structure
 
   
 
-## <span id="Table:_feature_genotype" class="mw-headline">Table: feature_genotype</span>
+## Table: feature_genotype
 
 <table data-border="1" data-cellpadding="3">
 <caption>feature_genotype Structure</caption>
@@ -4183,7 +3738,7 @@ feature_genotype Structure
 
   
 
-## <span id="Table:_genotype" class="mw-headline">Table: genotype</span>
+## Table: genotype
 
 Genetic context. A genotype is defined by a collection of features,
 mutations, balancers, deficiencies, haplotype blocks, or engineered
@@ -4243,32 +3798,17 @@ genotype Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_genotype](#Table:_feature_genotype)
-
-<!-- -->
-
 - [phendesc](#Table:_phendesc)
-
-<!-- -->
-
 - [phenotype_comparison](#Table:_phenotype_comparison)
-
-<!-- -->
-
 - [phenstatement](#Table:_phenstatement)
-
-<!-- -->
-
 - [stock_genotype](#Table:_stock_genotype)
-
-<!-- -->
-
 - [wwwuser_genotype](#Table:_wwwuser_genotype)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phendesc" class="mw-headline">Table: phendesc</span>
+## Table: phendesc
 
 A summary of a \_set\_ of phenotypic statements for any one gcontext
 made in any one publication.
@@ -4288,7 +3828,7 @@ phendesc Structure
 
   
 
-## <span id="Table:_phenotype_comparison" class="mw-headline">Table: phenotype_comparison</span>
+## Table: phenotype_comparison
 
 Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 "non-suppressible" with respect to genotype2/environment2/phenotype2.
@@ -4311,7 +3851,7 @@ phenotype_comparison Structure
 
   
 
-## <span id="Table:_phenstatement" class="mw-headline">Table: phenstatement</span>
+## Table: phenstatement
 
 Phenotypes are things like "larval lethal". Phenstatements are things
 like "dpp-1 is recessive larval lethal". So essentially phenstatement is
@@ -4333,7 +3873,7 @@ phenstatement Structure
 
   
 
-## <span id="Table:_acquisition" class="mw-headline">Table: acquisition</span>
+## Table: acquisition
 
 This represents the scanning of hybridized material. The output of this
 process is typically a digital image of an array.
@@ -4353,20 +3893,14 @@ acquisition Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition_relationship](#Table:_acquisition_relationship)
-
-<!-- -->
-
 - [acquisitionprop](#Table:_acquisitionprop)
-
-<!-- -->
-
 - [quantification](#Table:_quantification)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_acquisition_relationship" class="mw-headline">Table: acquisition_relationship</span>
+## Table: acquisition_relationship
 
 Multiple monochrome images may be merged to form a multi-color image.
 Red-green images of 2-channel hybridizations are an example of this.
@@ -4386,7 +3920,7 @@ acquisition_relationship Structure
 
   
 
-## <span id="Table:_acquisitionprop" class="mw-headline">Table: acquisitionprop</span>
+## Table: acquisitionprop
 
 Parameters associated with image acquisition.
 
@@ -4404,7 +3938,7 @@ acquisitionprop Structure
 
   
 
-## <span id="Table:_arraydesign" class="mw-headline">Table: arraydesign</span>
+## Table: arraydesign
 
 General properties about an array. An array is a template used to
 generate physical slides, etc. It contains layout information, as well
@@ -4437,20 +3971,14 @@ arraydesign Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [arraydesignprop](#Table:_arraydesignprop)
-
-<!-- -->
-
 - [assay](#Table:_assay)
-
-<!-- -->
-
 - [element](#Table:_element)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_arraydesignprop" class="mw-headline">Table: arraydesignprop</span>
+## Table: arraydesignprop
 
 Extra array design properties that are not accounted for in arraydesign.
 
@@ -4468,7 +3996,7 @@ arraydesignprop Structure
 
   
 
-## <span id="Table:_assay" class="mw-headline">Table: assay</span>
+## Table: assay
 
 An assay consists of a physical instance of an array, combined with the
 conditions used to create the array (protocols, technician information).
@@ -4492,36 +4020,18 @@ assay Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](#Table:_acquisition)
-
-<!-- -->
-
 - [assay_biomaterial](#Table:_assay_biomaterial)
-
-<!-- -->
-
 - [assay_project](#Table:_assay_project)
-
-<!-- -->
-
 - [assayprop](#Table:_assayprop)
-
-<!-- -->
-
 - [control](#Table:_control)
-
-<!-- -->
-
 - [study_assay](#Table:_study_assay)
-
-<!-- -->
-
 - [studyfactorvalue](#Table:_studyfactorvalue)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_assay_biomaterial" class="mw-headline">Table: assay_biomaterial</span>
+## Table: assay_biomaterial
 
 A biomaterial can be hybridized many times (technical replicates), or
 combined with other biomaterials in a single hybridization (for
@@ -4541,7 +4051,7 @@ assay_biomaterial Structure
 
   
 
-## <span id="Table:_assay_project" class="mw-headline">Table: assay_project</span>
+## Table: assay_project
 
 Link assays to projects.
 
@@ -4557,7 +4067,7 @@ assay_project Structure
 
   
 
-## <span id="Table:_assayprop" class="mw-headline">Table: assayprop</span>
+## Table: assayprop
 
 Extra assay properties that are not accounted for in assay.
 
@@ -4575,7 +4085,7 @@ assayprop Structure
 
   
 
-## <span id="Table:_biomaterial" class="mw-headline">Table: biomaterial</span>
+## Table: biomaterial
 
 A biomaterial represents the MAGE concept of BioSource, BioSample, and
 LabeledExtract. It is essentially some biological material (tissue,
@@ -4597,32 +4107,17 @@ biomaterial Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [assay_biomaterial](#Table:_assay_biomaterial)
-
-<!-- -->
-
 - [biomaterial_dbxref](#Table:_biomaterial_dbxref)
-
-<!-- -->
-
 - [biomaterial_relationship](#Table:_biomaterial_relationship)
-
-<!-- -->
-
 - [biomaterial_treatment](#Table:_biomaterial_treatment)
-
-<!-- -->
-
 - [biomaterialprop](#Table:_biomaterialprop)
-
-<!-- -->
-
 - [treatment](#Table:_treatment)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_biomaterial_dbxref" class="mw-headline">Table: biomaterial_dbxref</span>
+## Table: biomaterial_dbxref
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -4636,7 +4131,7 @@ biomaterial_dbxref Structure
 
   
 
-## <span id="Table:_biomaterial_relationship" class="mw-headline">Table: biomaterial_relationship</span>
+## Table: biomaterial_relationship
 
 Relate biomaterials to one another. This is a way to track a series of
 treatments or material splits/merges, for instance.
@@ -4654,7 +4149,7 @@ biomaterial_relationship Structure
 
   
 
-## <span id="Table:_biomaterial_treatment" class="mw-headline">Table: biomaterial_treatment</span>
+## Table: biomaterial_treatment
 
 Link biomaterials to treatments. Treatments have an order of operations
 (rank), and associated measurements (unittype_id, value).
@@ -4674,7 +4169,7 @@ biomaterial_treatment Structure
 
   
 
-## <span id="Table:_biomaterialprop" class="mw-headline">Table: biomaterialprop</span>
+## Table: biomaterialprop
 
 Extra biomaterial properties that are not accounted for in biomaterial.
 
@@ -4692,7 +4187,7 @@ biomaterialprop Structure
 
   
 
-## <span id="Table:_channel" class="mw-headline">Table: channel</span>
+## Table: channel
 
 Different array platforms can record signals from one or more channels
 (cDNA arrays typically use two CCD, but Affymetrix uses only one).
@@ -4708,16 +4203,13 @@ channel Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](#Table:_acquisition)
-
-<!-- -->
-
 - [assay_biomaterial](#Table:_assay_biomaterial)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_control" class="mw-headline">Table: control</span>
+## Table: control
 
 | FK                             | Name         | Type    | Description   |
 |--------------------------------|--------------|---------|---------------|
@@ -4736,7 +4228,7 @@ control Structure
 
   
 
-## <span id="Table:_element" class="mw-headline">Table: element</span>
+## Table: element
 
 Represents a feature of the array. This is typically a region of the
 array coated or bound to DNA.
@@ -4754,16 +4246,13 @@ element Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [element_relationship](#Table:_element_relationship)
-
-<!-- -->
-
 - [elementresult](#Table:_elementresult)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_element_relationship" class="mw-headline">Table: element_relationship</span>
+## Table: element_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
@@ -4784,7 +4273,7 @@ element_relationship Structure
 
   
 
-## <span id="Table:_elementresult" class="mw-headline">Table: elementresult</span>
+## Table: elementresult
 
 An element on an array produces a measurement when hybridized to a
 biomaterial (traceable through quantification_id). This is the base data
@@ -4807,7 +4296,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_elementresult_relationship" class="mw-headline">Table: elementresult_relationship</span>
+## Table: elementresult_relationship
 
 Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
@@ -4828,7 +4317,7 @@ elementresult_relationship Structure
 
   
 
-## <span id="Table:_magedocumentation" class="mw-headline">Table: magedocumentation</span>
+## Table: magedocumentation
 
 | FK                             | Name                 | Type    | Description   |
 |--------------------------------|----------------------|---------|---------------|
@@ -4844,7 +4333,7 @@ magedocumentation Structure
 
   
 
-## <span id="Table:_mageml" class="mw-headline">Table: mageml</span>
+## Table: mageml
 
 This table is for storing extra bits of MAGEml in a denormalized form.
 More normalization would require many more tables.
@@ -4865,7 +4354,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_protocol" class="mw-headline">Table: protocol</span>
+## Table: protocol
 
 Procedural notes on how data was prepared and processed.
 
@@ -4886,32 +4375,17 @@ protocol Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [acquisition](#Table:_acquisition)
-
-<!-- -->
-
 - [arraydesign](#Table:_arraydesign)
-
-<!-- -->
-
 - [assay](#Table:_assay)
-
-<!-- -->
-
 - [protocolparam](#Table:_protocolparam)
-
-<!-- -->
-
 - [quantification](#Table:_quantification)
-
-<!-- -->
-
 - [treatment](#Table:_treatment)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_protocolparam" class="mw-headline">Table: protocolparam</span>
+## Table: protocolparam
 
 Parameters related to a protocol. For example, if the protocol is a
 soak, this might include attributes of bath temperature and duration.
@@ -4932,7 +4406,7 @@ protocolparam Structure
 
   
 
-## <span id="Table:_quantification" class="mw-headline">Table: quantification</span>
+## Table: quantification
 
 Quantification is the transformation of an image acquisition to numeric
 data. This typically involves statistical procedures.
@@ -4953,20 +4427,14 @@ quantification Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [elementresult](#Table:_elementresult)
-
-<!-- -->
-
 - [quantification_relationship](#Table:_quantification_relationship)
-
-<!-- -->
-
 - [quantificationprop](#Table:_quantificationprop)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_quantification_relationship" class="mw-headline">Table: quantification_relationship</span>
+## Table: quantification_relationship
 
 There may be multiple rounds of quantification, this allows us to keep
 an audit trail of what values went where.
@@ -4984,7 +4452,7 @@ quantification_relationship Structure
 
   
 
-## <span id="Table:_quantificationprop" class="mw-headline">Table: quantificationprop</span>
+## Table: quantificationprop
 
 Extra quantification properties that are not accounted for in
 quantification.
@@ -5003,7 +4471,7 @@ quantificationprop Structure
 
   
 
-## <span id="Table:_study" class="mw-headline">Table: study</span>
+## Table: study
 
 Study represents an experiment, published or otherwise, that produced
 microarray data
@@ -5022,14 +4490,11 @@ study Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [study_assay](#Table:_study_assay)
-
-<!-- -->
-
 - [studydesign](#Table:_studydesign)
 
 ------------------------------------------------------------------------
 
-## <span id="Table:_study_assay" class="mw-headline">Table: study_assay</span>
+## Table: study_assay
 
 | FK                     | Name           | Type    | Description         |
 |------------------------|----------------|---------|---------------------|
@@ -5043,7 +4508,7 @@ study_assay Structure
 
   
 
-## <span id="Table:_studydesign" class="mw-headline">Table: studydesign</span>
+## Table: studydesign
 
 | FK                     | Name           | Type    | Description   |
 |------------------------|----------------|---------|---------------|
@@ -5056,16 +4521,13 @@ studydesign Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [studydesignprop](#Table:_studydesignprop)
-
-<!-- -->
-
 - [studyfactor](#Table:_studyfactor)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_studydesignprop" class="mw-headline">Table: studydesignprop</span>
+## Table: studydesignprop
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5081,7 +4543,7 @@ studydesignprop Structure
 
   
 
-## <span id="Table:_studyfactor" class="mw-headline">Table: studyfactor</span>
+## Table: studyfactor
 
 | FK                                 | Name           | Type    | Description   |
 |------------------------------------|----------------|---------|---------------|
@@ -5101,7 +4563,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_studyfactorvalue" class="mw-headline">Table: studyfactorvalue</span>
+## Table: studyfactorvalue
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5118,7 +4580,7 @@ studyfactorvalue Structure
 
   
 
-## <span id="Table:_treatment" class="mw-headline">Table: treatment</span>
+## Table: treatment
 
 A biomaterial may undergo multiple treatments. Examples of treatments:
 apoxia, fluorophore and biotin labeling.
@@ -5142,7 +4604,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_featuremap" class="mw-headline">Table: featuremap</span>
+## Table: featuremap
 
 | FK                       | Name          | Type                   | Description   |
 |--------------------------|---------------|------------------------|---------------|
@@ -5156,20 +4618,14 @@ featuremap Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [featuremap_pub](#Table:_featuremap_pub)
-
-<!-- -->
-
 - [featurepos](#Table:_featurepos)
-
-<!-- -->
-
 - [featurerange](#Table:_featurerange)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_featuremap_pub" class="mw-headline">Table: featuremap_pub</span>
+## Table: featuremap_pub
 
 | FK                               | Name              | Type    | Description   |
 |----------------------------------|-------------------|---------|---------------|
@@ -5183,7 +4639,7 @@ featuremap_pub Structure
 
   
 
-## <span id="Table:_featurepos" class="mw-headline">Table: featurepos</span>
+## Table: featurepos
 
 <table data-border="1" data-cellpadding="3">
 <caption>featurepos Structure</caption>
@@ -5244,7 +4700,7 @@ featurepos Structure
 
   
 
-## <span id="Table:_featurerange" class="mw-headline">Table: featurerange</span>
+## Table: featurerange
 
 In cases where the start and end of a mapped feature is a range,
 leftendf and rightstartf are populated. leftstartf_id, leftendf_id,
@@ -5327,7 +4783,7 @@ featurerange Structure
 
   
 
-## <span id="Table:_analysis" class="mw-headline">Table: analysis</span>
+## Table: analysis
 
 An analysis is a particular type of a computational analysis; it may be
 a blast of one sequence against another, or an all by all blast, or a
@@ -5439,24 +4895,15 @@ analysis Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [analysisfeature](#Table:_analysisfeature)
-
-<!-- -->
-
 - [analysisprop](#Table:_analysisprop)
-
-<!-- -->
-
 - [phylotree](#Table:_phylotree)
-
-<!-- -->
-
 - [quantification](#Table:_quantification)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_analysisfeature" class="mw-headline">Table: analysisfeature</span>
+## Table: analysisfeature
 
 Computational analyses generate features (e.g. Genscan generates
 transcripts and exons; sim4 alignments generate similarity/match
@@ -5560,7 +5007,7 @@ analysisfeature Structure
 
   
 
-## <span id="Table:_analysisprop" class="mw-headline">Table: analysisprop</span>
+## Table: analysisprop
 
 | FK                           | Name            | Type    | Description         |
 |------------------------------|-----------------|---------|---------------------|
@@ -5575,7 +5022,7 @@ analysisprop Structure
 
   
 
-## <span id="Table:_eimage" class="mw-headline">Table: eimage</span>
+## Table: eimage
 
 <table data-border="1" data-cellpadding="3">
 <caption>eimage Structure</caption>
@@ -5635,7 +5082,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_expression" class="mw-headline">Table: expression</span>
+## Table: expression
 
 The expression table is essentially a bridge table.
 
@@ -5651,32 +5098,17 @@ expression Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [expression_cvterm](#Table:_expression_cvterm)
-
-<!-- -->
-
 - [expression_image](#Table:_expression_image)
-
-<!-- -->
-
 - [expression_pub](#Table:_expression_pub)
-
-<!-- -->
-
 - [expressionprop](#Table:_expressionprop)
-
-<!-- -->
-
 - [feature_expression](#Table:_feature_expression)
-
-<!-- -->
-
 - [wwwuser_expression](#Table:_wwwuser_expression)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_expression_cvterm" class="mw-headline">Table: expression_cvterm</span>
+## Table: expression_cvterm
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5696,7 +5128,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_expression_image" class="mw-headline">Table: expression_image</span>
+## Table: expression_image
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5710,7 +5142,7 @@ expression_image Structure
 
   
 
-## <span id="Table:_expression_pub" class="mw-headline">Table: expression_pub</span>
+## Table: expression_pub
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5724,7 +5156,7 @@ expression_pub Structure
 
   
 
-## <span id="Table:_feature_expression" class="mw-headline">Table: feature_expression</span>
+## Table: feature_expression
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5743,7 +5175,7 @@ Tables referencing this one via Foreign Key Constraints:
 
   
 
-## <span id="Table:_feature_phenotype" class="mw-headline">Table: feature_phenotype</span>
+## Table: feature_phenotype
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5757,7 +5189,7 @@ feature_phenotype Structure
 
   
 
-## <span id="Table:_phenotype" class="mw-headline">Table: phenotype</span>
+## Table: phenotype
 
 A phenotypic statement, or a single atomic phenotypic observation, is a
 controlled sentence describing observable effects of non-wild type
@@ -5842,28 +5274,16 @@ phenotype Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [feature_phenotype](#Table:_feature_phenotype)
-
-<!-- -->
-
 - [phenotype_comparison](#Table:_phenotype_comparison)
-
-<!-- -->
-
 - [phenotype_cvterm](#Table:_phenotype_cvterm)
-
-<!-- -->
-
 - [phenstatement](#Table:_phenstatement)
-
-<!-- -->
-
 - [wwwuser_phenotype](#Table:_wwwuser_phenotype)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_phenotype_cvterm" class="mw-headline">Table: phenotype_cvterm</span>
+## Table: phenotype_cvterm
 
 | FK | Name | Type | Description |
 |----|----|----|----|
@@ -5877,7 +5297,7 @@ phenotype_cvterm Structure
 
   
 
-## <span id="Table:_pub" class="mw-headline">Table: pub</span>
+## Table: pub
 
 A documented provenance artefact - publications, documents, personal
 communication.
@@ -6002,128 +5422,41 @@ pub Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [expression_pub](#Table:_expression_pub)
-
-<!-- -->
-
 - [feature_cvterm](#Table:_feature_cvterm)
-
-<!-- -->
-
 - [feature_cvterm_pub](#Table:_feature_cvterm_pub)
-
-<!-- -->
-
 - [feature_expression](#Table:_feature_expression)
-
-<!-- -->
-
 - [feature_pub](#Table:_feature_pub)
-
-<!-- -->
-
 - [feature_relationship_pub](#Table:_feature_relationship_pub)
-
-<!-- -->
-
 - [feature_relationshipprop_pub](#Table:_feature_relationshipprop_pub)
-
-<!-- -->
-
 - [feature_synonym](#Table:_feature_synonym)
-
-<!-- -->
-
 - [featureloc_pub](#Table:_featureloc_pub)
-
-<!-- -->
-
 - [featuremap_pub](#Table:_featuremap_pub)
-
-<!-- -->
-
 - [featureprop_pub](#Table:_featureprop_pub)
-
-<!-- -->
-
 - [library_cvterm](#Table:_library_cvterm)
-
-<!-- -->
-
 - [library_pub](#Table:_library_pub)
-
-<!-- -->
-
 - [library_synonym](#Table:_library_synonym)
-
-<!-- -->
-
 - [phendesc](#Table:_phendesc)
-
-<!-- -->
-
 - [phenotype_comparison](#Table:_phenotype_comparison)
-
-<!-- -->
-
 - [phenstatement](#Table:_phenstatement)
-
-<!-- -->
-
 - [phylonode_pub](#Table:_phylonode_pub)
-
-<!-- -->
-
 - [phylotree_pub](#Table:_phylotree_pub)
-
-<!-- -->
-
 - [protocol](#Table:_protocol)
-
-<!-- -->
-
 - [pub_dbxref](#Table:_pub_dbxref)
-
-<!-- -->
-
 - [pub_relationship](#Table:_pub_relationship)
-
-<!-- -->
-
 - [pubauthor](#Table:_pubauthor)
-
-<!-- -->
-
 - [pubprop](#Table:_pubprop)
-
-<!-- -->
-
 - [stock_cvterm](#Table:_stock_cvterm)
-
-<!-- -->
-
 - [stock_pub](#Table:_stock_pub)
-
-<!-- -->
-
 - [stock_relationship_pub](#Table:_stock_relationship_pub)
-
-<!-- -->
-
 - [stockprop_pub](#Table:_stockprop_pub)
-
-<!-- -->
-
 - [study](#Table:_study)
-
-<!-- -->
-
 - [wwwuser_pub](#Table:_wwwuser_pub)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_pub_dbxref" class="mw-headline">Table: pub_dbxref</span>
+## Table: pub_dbxref
 
 Handle links to repositories, e.g. Pubmed, Biosis, zoorec, OCLC,
 Medline, ISSN, coden...
@@ -6141,7 +5474,7 @@ pub_dbxref Structure
 
   
 
-## <span id="Table:_pub_relationship" class="mw-headline">Table: pub_relationship</span>
+## Table: pub_relationship
 
 Handle relationships between publications, e.g. when one publication
 makes others obsolete, when one publication contains errata with respect
@@ -6161,7 +5494,7 @@ pub_relationship Structure
 
   
 
-## <span id="Table:_pubauthor" class="mw-headline">Table: pubauthor</span>
+## Table: pubauthor
 
 An author for a publication. Note the denormalisation (hence lack of \_
 in table name) - this is deliberate as it is in general too hard to
@@ -6245,7 +5578,7 @@ pubauthor Structure
 
   
 
-## <span id="Table:_pubprop" class="mw-headline">Table: pubprop</span>
+## Table: pubprop
 
 Property-value pairs for a pub. Follows standard chado pattern.
 
@@ -6263,7 +5596,7 @@ pubprop Structure
 
   
 
-## <span id="Table:_organism" class="mw-headline">Table: organism</span>
+## Table: organism
 
 The organismal taxonomic classification. Note that phylogenies are
 represented using the phylogeny module, and taxonomies can be
@@ -6337,40 +5670,19 @@ organism Structure
 Tables referencing this one via Foreign Key Constraints:
 
 - [biomaterial](#Table:_biomaterial)
-
-<!-- -->
-
 - [feature](#Table:_feature)
-
-<!-- -->
-
 - [library](#Table:_library)
-
-<!-- -->
-
 - [organism_dbxref](#Table:_organism_dbxref)
-
-<!-- -->
-
 - [organismprop](#Table:_organismprop)
-
-<!-- -->
-
 - [phylonode_organism](#Table:_phylonode_organism)
-
-<!-- -->
-
 - [stock](#Table:_stock)
-
-<!-- -->
-
 - [wwwuser_organism](#Table:_wwwuser_organism)
 
 ------------------------------------------------------------------------
 
   
 
-## <span id="Table:_organism_dbxref" class="mw-headline">Table: organism_dbxref</span>
+## Table: organism_dbxref
 
 | FK                           | Name               | Type    | Description         |
 |------------------------------|--------------------|---------|---------------------|
@@ -6384,7 +5696,7 @@ organism_dbxref Structure
 
   
 
-## <span id="Table:_organismprop" class="mw-headline">Table: organismprop</span>
+## Table: organismprop
 
 Tag-value properties - follows standard chado model.
 
@@ -6401,91 +5713,6 @@ organismprop Structure
 ------------------------------------------------------------------------
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Chado](Category%253AChado "Category%253AChado")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Tables" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Tables" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:13 on 2 November
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">124,001 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

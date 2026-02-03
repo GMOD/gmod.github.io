@@ -1,58 +1,31 @@
 ---
 title: "Debian Stable Installation Notes"
 ---
+# Debian Stable Installation Notes
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Debian Stable Installation Notes</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Debian Stable
   (Etch 4.0) installation
   notes</span>](#Debian_Stable_.28Etch_4.0.29_installation_notes)
-  - [<span class="tocnumber">1.1</span>
-    <span class="toctext">Apache</span>](#Apache)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">location
-    for GMOD</span>](#location_for_GMOD)
-  - [<span class="tocnumber">1.3</span>
-    <span class="toctext">download</span>](#download)
-    - [<span class="tocnumber">1.3.1</span> <span class="toctext">CPAN
-      packages</span>](#CPAN_packages)
-  - [<span class="tocnumber">1.4</span>
-    <span class="toctext">BioPerl</span>](#BioPerl)
-  - [<span class="tocnumber">1.5</span>
-    <span class="toctext">Environment
-    Variables</span>](#Environment_Variables)
-  - [<span class="tocnumber">1.6</span> <span class="toctext">Data
-    loading</span>](#Data_loading)
-    - [<span class="tocnumber">1.6.1</span> <span class="toctext">what
-      doesn't work</span>](#what_doesn.27t_work)
-    - [<span class="tocnumber">1.6.2</span> <span class="toctext">What
-      works</span>](#What_works)
-  - [<span class="tocnumber">1.7</span> <span class="toctext">Gbrowse
-    configuration</span>](#Gbrowse_configuration)
+  - [Apache](#Apache)
+  - [location
+    for GMOD](#location_for_GMOD)
+  - [download](#download)
+    - [CPAN
+      packages](#CPAN_packages)
+  - [BioPerl](#BioPerl)
+  - [Environment
+    Variables](#Environment_Variables)
+  - [Data
+    loading](#Data_loading)
+    - [what
+      doesn't work](#what_doesn.27t_work)
+    - [What
+      works](#What_works)
+  - [Gbrowse
+    configuration](#Gbrowse_configuration)
 
 
-
-## <span id="Debian_Stable_.28Etch_4.0.29_installation_notes" class="mw-headline">Debian Stable (Etch 4.0) installation notes</span>
+## Debian Stable (Etch 4.0) installation notes
 
 Installing Chado/GMOD old office machine with a fresh Debian stable
 installation. Goal: test the Chado scheme for annotation of bacterial
@@ -66,18 +39,18 @@ I borrowed a lot of stuff from the
 [Installing_Chado_on_Ubuntu_HOWTO](Installing_Chado_on_Ubuntu_HOWTO "Installing Chado on Ubuntu HOWTO")
 page as Debian and Ubuntu are much alike.
 
-### <span id="Apache" class="mw-headline">Apache</span>
+### Apache
 
 Apache 2.2 is installed by default during the installation of Debian
 stable (web package).
 
-### <span id="location_for_GMOD" class="mw-headline">location for GMOD</span>
+### location for GMOD
 
     mkdir /usr/local/gmod
 
 note: this is NOT the home of my gmod user.
 
-### <span id="download" class="mw-headline">download</span>
+### download
 
 got the source from <a
 href="http://sourceforge.net/project/showfiles.php?group_id=27707&amp;package_id=19511"
@@ -134,7 +107,7 @@ after the install is finished:
 
 su postgres dropuser root
 
-#### <span id="CPAN_packages" class="mw-headline">CPAN packages</span>
+#### CPAN packages
 
     CGI
     GD
@@ -157,7 +130,7 @@ su postgres dropuser root
     Log::Log4perl
     GO::Parser
 
-### <span id="BioPerl" class="mw-headline">BioPerl</span>
+### BioPerl
 
 I installed <a href="http://www.bioperl.org/wiki/Using_Subversion"
 class="external text" rel="nofollow">BioPerl-live</a> using subversion
@@ -173,7 +146,7 @@ into /usr/local/bioperl/bioperl-live (as root)
 
   
 
-### <span id="Environment_Variables" class="mw-headline">Environment Variables</span>
+### Environment Variables
 
 Added this to my .bashrc so that when I login as user gmod all vars are
 set
@@ -216,7 +189,7 @@ a quick look at the database user phpPgAdmin: the database looks fine.
 This take a while. i'm getting the notorious duplicate key violates
 unique constraint "cvterm_c1" error as well.
 
-### <span id="Data_loading" class="mw-headline">Data loading</span>
+### Data loading
 
 We have a local mirror of
 <a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria"
@@ -231,7 +204,7 @@ the database, our pet organism of course:
 id. In our case that would be 220668. Should we use this ID or just let
 postgresql add an ID for us?
 
-#### <span id="what_doesn.27t_work" class="mw-headline">what doesn't work</span>
+#### what doesn't work
 
 **NCBI gff3 files (does not work!)**
 
@@ -289,7 +262,7 @@ taken from RefSeq howto --\> does not load in the database
 
   
 
-#### <span id="What_works" class="mw-headline">What works</span>
+#### What works
 
 taken from GenBank howto --\> does load in the database
 
@@ -327,7 +300,7 @@ is a valid SO type.
 
   
 
-### <span id="Gbrowse_configuration" class="mw-headline">Gbrowse configuration</span>
+### Gbrowse configuration
 
 completely standard as described in the manual. Configuration file goes
 in /etc/apache2/
@@ -337,91 +310,6 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="Gbrowse.png" />
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Linux](Category%253ALinux "Category%253ALinux")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253ADebian_Stable_Installation_Notes" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Debian_Stable_Installation_Notes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 06:14 on 25 September
-  2009.</span>
-<!-- - <span id="footer-info-viewcount">17,485 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

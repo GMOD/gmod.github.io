@@ -1,47 +1,23 @@
 ---
 title: "Chado Post-Composed Phenotypes"
 ---
+# Chado Post-Composed Phenotypes
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Chado Post-Composed Phenotypes</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Proposal</span>](#Proposal)
-- [<span class="tocnumber">3</span> <span class="toctext">New and
+  Overview](#Overview)
+- [Proposal](#Proposal)
+- [New and
   Modified Tables in Phenotype
-  Module</span>](#New_and_Modified_Tables_in_Phenotype_Module)
-- [<span class="tocnumber">4</span> <span class="toctext">Recommended
-  Deprecated Fields</span>](#Recommended_Deprecated_Fields)
-- [<span class="tocnumber">5</span> <span class="toctext">Controlled
-  Vocabularies</span>](#Controlled_Vocabularies)
-- [<span class="tocnumber">6</span> <span class="toctext">Older
-  proposals</span>](#Older_proposals)
+  Module](#New_and_Modified_Tables_in_Phenotype_Module)
+- [Recommended
+  Deprecated Fields](#Recommended_Deprecated_Fields)
+- [Controlled
+  Vocabularies](#Controlled_Vocabularies)
+- [Older
+  proposals](#Older_proposals)
 
 
-
-## <span id="Overview" class="mw-headline">Overview</span>
+## Overview
 
 Increasingly phenotypes are rarely indicated with single, pre-composed
 term. A particular phenotype (or phene) can be described with an EAV
@@ -69,7 +45,7 @@ arbitrary level of statement structure hierarchy to force a maximum of 1
 level of term grouping. This is expected to be sufficient for most if
 not all statement structures currently in use.
 
-## <span id="Proposal" class="mw-headline">Proposal</span>
+## Proposal
 
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d1/Chado_phenotype_proposal.clause.jpg"
@@ -78,7 +54,7 @@ alt="Chado phenotype proposal.clause.jpg" />
 
   
 
-## <span id="New_and_Modified_Tables_in_Phenotype_Module" class="mw-headline">New and Modified Tables in Phenotype Module</span>
+## New and Modified Tables in Phenotype Module
 
      - Add phenotypeprop table.
      - Add phenotype_clause table, used for grouping phenotype_cvterm records into clauses within a statement.
@@ -119,7 +95,7 @@ alt="Chado phenotype proposal.clause.jpg" />
 
   
 
-## <span id="Recommended_Deprecated_Fields" class="mw-headline">Recommended Deprecated Fields</span>
+## Recommended Deprecated Fields
 
      COMMENT ON TABLE phenotype IS 'Columns observable_id, assay_id 
      are deprecated to break the connection between the phenotype value and the
@@ -127,7 +103,7 @@ alt="Chado phenotype proposal.clause.jpg" />
      phenotype value. Use tables phenotype_cvterm to store the trait(s) associated 
      with the phenotype.';
 
-## <span id="Controlled_Vocabularies" class="mw-headline">Controlled Vocabularies</span>
+## Controlled Vocabularies
 
 The parts of a post-composed statement will need to be described in a
 cv. This could go into a new cv for each type of statement, or go into a
@@ -148,93 +124,8 @@ Secondary Entity 2
 
   
 
-## <span id="Older_proposals" class="mw-headline">Older proposals</span>
+## Older proposals
 
 See
 [Talk%253AChado_Post-Composed_Phenotypes](Talk%253AChado_Post-Composed_Phenotypes "Talk:Chado Post-Composed Phenotypes")
 for the older versions of this schema proposal
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AChado_Post-Composed_Phenotypes" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Post-2DComposed_Phenotypes"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:12 on 19 August
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">28,975 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,24 +1,11 @@
 ---
 title: "Talk%253AGBrowse 1 Configuration HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-# <span dir="auto">Talk%253AGBrowse 1 Configuration HOWTO</span>
-
-
-
+# Talk%253AGBrowse 1 Configuration HOWTO
 
 
 (Redirected from [Talk%253AGBrowse Configuration
-HOWTO](Talk%253AGBrowse_Configuration_HOWTO)
-
-
-
+HOWTO](/wiki/Talk%253AGBrowse_Configuration_HOWTO)
 
 
 Hello Reg. GFF file format: I was wondering if the group/region field
@@ -49,7 +36,7 @@ class="external text" rel="nofollow">GFF3 spec</a>.
 So I assumed that it was GBrowse that did not follow the spec.
 [Alpapan](User%253AAlpapan "User%253AAlpapan")
 
-## <span id=".2A_-.3E_h3_for_track_properties.2C_etc.2C_easier_on_the_eyes.3F" class="mw-headline">\* -\> h3 for track properties, etc, easier on the eyes?</span>
+## \* -\> h3 for track properties, etc, easier on the eyes?
 
 I ran a snippet of code...
 
@@ -63,7 +50,7 @@ bulleted - stand out a bit more, making them easier to find. (check the
 General \[SECTION\] for an example.)
 --[Stewarta](User%253AStewarta "User%253AStewarta") 13:43, 14 March 2008 (EDT)
 
-## <span id="Declaring_New_Aggregators" class="mw-headline">Declaring New Aggregators</span>
+## Declaring New Aggregators
 
 i think it should be
 
@@ -79,7 +66,7 @@ wrong. [Alpapan](User%253AAlpapan "User%253AAlpapan")
 _Agreed and fixed. Thanks. [Scott](User%253AScott "User%253AScott") 23:13, 11
 June 2008 (EDT)_
 
-## <span id="Renaming_proposal.3F" class="mw-headline">Renaming proposal?</span>
+## Renaming proposal?
 
 Hi, I propose that this article is renamed 'Configuring
 GBrowse', and that we start to split it up into sub documents by
@@ -99,80 +86,3 @@ that page. Note the use of the 'noinclude' tags in the above page allows
 text (a header) in the individual pages that is not transcluded into the
 calling page. --[DanBolser](User%253ADanBolser "User%253ADanBolser") 01:13, 10
 July 2010 (UTC)
-
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-### Namespaces
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_1_Configuration_HOWTO" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-
-
-
-- <span id="footer-info-lastmod">Last updated at 16:44 on 15 August 2011.</span>
-<!-- - <span id="footer-info-viewcount">24,377 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-

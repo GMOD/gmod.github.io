@@ -1,28 +1,12 @@
 ---
 title: "GBrowse karyotype ideogram.pl"
 ---
+# GBrowse karyotype ideogram.pl
 
 
+# How to get cytoband data for the ideogram glyph of [GBrowse_karyotype](GBrowse_karyotype "GBrowse karyotype")
 
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse karyotype ideogram.pl</span>
-
-
-
-
-
-
-
-
-
-# <span id="How_to_get_cytoband_data_for_the_ideogram_glyph_of_GBrowse_karyotype" class="mw-headline">How to get cytoband data for the ideogram glyph of [GBrowse_karyotype](GBrowse_karyotype "GBrowse karyotype")</span>
-
-## <span id="perl_script" class="mw-headline">perl script</span>
+## perl script
 
 - Cytoband data for the human genome and also for other species is in
   the ensembl database.
@@ -132,100 +116,9 @@ print $segments,$chroms,$gff;
 ```
 
 
-## <span id="Other_information" class="mw-headline">Other information</span>
+## Other information
 
 - Currently ideograms for human, rat and mouse are available
 - To see the current database list, try the command:
-
-<!-- -->
-
     mysql -uanonymous -hensembldb.ensembl.org -e 'show databases' \
     | grep core | grep 'sapiens\|rattus\|mus' | grep -v 'expression'
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_karyotype_ideogram.pl"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:06 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">38,107 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

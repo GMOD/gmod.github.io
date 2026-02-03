@@ -1,49 +1,25 @@
 ---
 title: "GMOD Community Support"
 ---
+# GMOD Community Support
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GMOD Community Support</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Roles of
   GMOD's Community Support</span>](#Roles_of_GMOD.27s_Community_Support)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Help
-    Desk</span>](#Help_Desk)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Grant
-    Review Service</span>](#Grant_Review_Service)
-  - [<span class="tocnumber">1.3</span> <span class="toctext">Training
-    and Outreach</span>](#Training_and_Outreach)
-  - [<span class="tocnumber">1.4</span> <span class="toctext">GMOD for
-    Evolutionary Biology</span>](#GMOD_for_Evolutionary_Biology)
-- [<span class="tocnumber">2</span> <span class="toctext">Please share
-  your feedback</span>](#Please_share_your_feedback)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Acknowledgements and
-  History</span>](#Acknowledgements_and_History)
+  - [Help
+    Desk](#Help_Desk)
+  - [Grant
+    Review Service](#Grant_Review_Service)
+  - [Training
+    and Outreach](#Training_and_Outreach)
+  - [GMOD for
+    Evolutionary Biology](#GMOD_for_Evolutionary_Biology)
+- [Please share
+  your feedback](#Please_share_your_feedback)
+- [Acknowledgements and
+  History](#Acknowledgements_and_History)
 
 
-
-## <span id="Roles_of_GMOD.27s_Community_Support" class="mw-headline">Roles of GMOD's Community Support</span>
+## Roles of GMOD's Community Support
 
 GMOD comprises not only of a collection of intercompatible software
 components, but equally importantly a large, globally distributed, and
@@ -61,7 +37,7 @@ distributed community of users and developers; to provide training in
 using, extending, and deploying GMOD software; and to promote GMOD to
 new communities and research applications.
 
-### <span id="Help_Desk" class="mw-headline">Help Desk</span>
+### Help Desk
 
 The community support includes the [GMOD Help
 Desk](GMOD_Help_Desk "GMOD Help Desk"), which liaises between users and
@@ -72,7 +48,7 @@ to more experienced users, the Help Desk maintains the community's
 website (this wiki), as well as a large body of documentation on GMOD
 components and best practices for extending GMOD.
 
-### <span id="Grant_Review_Service" class="mw-headline">Grant Review Service</span>
+### Grant Review Service
 
 As part of the aim to promote GMOD adoption, Community Support staff can
 aid investigators with grant proposals that include using and/or
@@ -83,8 +59,7 @@ extending GMOD components. Consultancy on grant proposals focuses on
 - Finding opportunities to fund support and extension of the GMOD
   project as a part of grants that use GMOD.
 
-### <span id="Training_and_Outreach" class="mw-headline">Training and Outreach</span>
-
+### Training and Outreach
 
 
 [<img
@@ -97,7 +72,6 @@ width="150" height="109" alt="2010 GMOD Summer School - Americas" />](http://gmo
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/140px-GMOD2010Europe300.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/210px-GMOD2010Europe300.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/d/d6/GMOD2010Europe300.png/280px-GMOD2010Europe300.png 2x"
 width="140" height="119" alt="GMOD Europe 2010" />](GMOD_Europe_2010 "GMOD Europe 2010")
-
 
 
 The Community Support organizes and provides GMOD [training events and
@@ -115,7 +89,7 @@ These include the following:
   conferences](Training_and_Outreach#Outreach:_Posters_and_Presentations "Training and Outreach")
   to increase awareness of GMOD and its capabilities.
 
-### <span id="GMOD_for_Evolutionary_Biology" class="mw-headline">GMOD for Evolutionary Biology</span>
+### GMOD for Evolutionary Biology
 
 The primary Community Support staff is located at and managed by
 <a href="http://www.nescent.org" class="external text"
@@ -131,7 +105,7 @@ variation, [phenotypic
 variation](Category%253APhenotypes "Category%253APhenotypes"), and
 phylogenetics.
 
-## <span id="Please_share_your_feedback" class="mw-headline">Please share your feedback</span>
+## Please share your feedback
 
 The Community Support staff needs your feedback to help guide their
 priorities. Please <a href="mailto:help@gmod.org" class="external text"
@@ -148,7 +122,7 @@ rel="nofollow">contact the support staff</a> if:
   help with training, setup, or debugging. (Note that the host needs to
   pay travel expenses.)
 
-## <span id="Acknowledgements_and_History" class="mw-headline">Acknowledgements and History</span>
+## Acknowledgements and History
 
 The GMOD Community Support began as a collaboration between GMOD and the
 <a href="http://www.nescent.org" class="external text"
@@ -194,87 +168,6 @@ rel="nofollow">University of Oregon</a> for hosting Dave Clements during
 his 3 years.
 
 
-
-
 [Category](Special%253ACategories "Special%253ACategories"):
 
 - [Help](Category%253AHelp "Category%253AHelp")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Community_Support" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 17:51 on 18 June
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">54,488 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

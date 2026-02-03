@@ -1,26 +1,11 @@
 ---
 title: "GBrowse Configuration/Balloons"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse Configuration/Balloons</span>
-
-
-
+# GBrowse Configuration/Balloons
 
 
 (Redirected from [GBrowse Balloon
-Tips](GBrowse_Balloon_Tips)
-
-
-
+Tips](/wiki/GBrowse_Balloon_Tips)
 
 
 This article describes **popup balloons** and how to configure them in
@@ -49,7 +34,7 @@ See also:
 
   
 
-## <span id="Configuring_Balloon_Tooltips" class="mw-headline">Configuring Balloon Tooltips</span>
+## Configuring Balloon Tooltips
 
 GBrowse can display popup balloons when the user hovers over or clicks
 on a feature. The balloons can display arbitrary HTML, either provided
@@ -148,7 +133,7 @@ not like the height of the balloon, you can adjust the height with the
 
      balloon height = 400
 
-### <span id="Customizing_Balloons" class="mw-headline">Customizing Balloons</span>
+### Customizing Balloons
 
 GBrowse supports multiple balloons with different shapes, sizes,
 background images and timing properties. There is one built-in balloon,
@@ -204,7 +189,7 @@ Balloons](Popup_Balloons "Popup Balloons").
 
   
 
-#### <span id="Delay_time.21" class="mw-headline">Delay time!</span>
+#### Delay time!
 
 It looks like displayTime is the variable you're after, and you should
 be able to set it from the GBrowse config and not muck around with js
@@ -212,95 +197,3 @@ files.
 
 So simply adding the line displayTime = 10000 as a line in the config
 should help!
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [Configuration](Category%253AConfiguration "Category%253AConfiguration")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-### Namespaces
-
-
-- <span id="ca-talk"><a href="Talk%253AGBrowse_Configuration/Balloons" accesskey="t"
-  title="Discussion about the content page [t]">Discussion</a></span>
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_Configuration-2FBalloons"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 13:06 on 29 September
-  2010.</span>
-<!-- - <span id="footer-info-viewcount">63,610 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

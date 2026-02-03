@@ -1,23 +1,7 @@
 ---
 title: "SOBA Tutorial 2011"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">SOBA Tutorial 2011</span>
-
-
-
-
-
-
-
+# SOBA Tutorial 2011
 
 
 **<a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
@@ -65,26 +49,15 @@ learn the fairly simple template language of TT (you don't need to know
 Perl or any other programming to use TT).
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">SOBA Web
   Application</span>](#SOBA_Web_Application)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">SOBAcl</span>](#SOBAcl)
-  - [<span class="tocnumber">2.1</span>
-    <span class="toctext">Help</span>](#Help)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.3</span>
-    <span class="toctext">Charts</span>](#Charts)
-  - [<span class="tocnumber">2.4</span>
-    <span class="toctext">Reports</span>](#Reports)
+- [SOBAcl](#SOBAcl)
+  - [Help](#Help)
+  - [Tables](#Tables)
+  - [Charts](#Charts)
+  - [Reports](#Reports)
 
 
-
-# <span id="SOBA_Web_Application" class="mw-headline">SOBA Web Application</span>
+# SOBA Web Application
 
 Documentation for the web interface to SOBA is available on the <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
@@ -106,7 +79,6 @@ modern browser that has JavaScript enabled.
 <td>
 
 
-
 <strong>Figure:8</strong> SOBA feature lengths by chromosome
 
 
@@ -122,7 +94,7 @@ We can constrain the features reported in other ways as well.
 SOBAcl --columns seqid --rows type --data length --data_type mean --layout table --format text --select 'start => [">=", "1000"], end => ["<=", "1000000"]' hsap_hg18_demo.gff3
 ```
 
-## <span id="Reports" class="mw-headline">Reports</span>
+## Reports
 
 SOBAcl has support for more complex reports.
 
@@ -145,92 +117,3 @@ SOBAcl --columns file   --rows type --data length --data_type mean  --layout tab
     mRNA             1085   70187.8202764977
     ncRNA            72 24089.3611111111
     three_prime_UTR  1385   569.969675090253
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [Tutorials](Category%253ATutorials "Category%253ATutorials")
-- [SOBA](Category%253ASOBA "Category%253ASOBA")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/SOBA_Tutorial_2011" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 03:36 on 24 June
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">7,924 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

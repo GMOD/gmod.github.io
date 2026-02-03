@@ -1,23 +1,7 @@
 ---
 title: "Display CMap Markers in GBrowse"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Display CMap Markers in GBrowse</span>
-
-
-
-
-
-
-
+# Display CMap Markers in GBrowse
 
 
 This proposal came out of a presentation by Erick Antezana and Frederic
@@ -29,7 +13,6 @@ Meeting](August_2009_GMOD_Meeting "August 2009 GMOD Meeting") titled:
 
   
 From Frederic and Erick:
-
 
 
 We were thinking about having [CMap](CMap.1 "CMap") features displayed
@@ -111,93 +94,3 @@ ballon.
 
 This configuration should be very convenient to integrate CMap/GBrowse
 without requiring a lot a maintenance and administration.
-
-
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Proposals](Category%253AProposals "Category%253AProposals")
-- [CMap](Category%253ACMap "Category%253ACMap")
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Display_CMap_Markers_in_GBrowse"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:05 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">11,444 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

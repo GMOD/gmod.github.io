@@ -1,55 +1,31 @@
 ---
 title: "Common Gene Page"
 ---
+# Common Gene Page
 
 
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Common Gene Page</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Common Gene
   Page Rationale</span>](#Common_Gene_Page_Rationale)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Gene Page
-    Sections</span>](#Gene_Page_Sections)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Implementation</span>](#Implementation)
-- [<span class="tocnumber">3</span> <span class="toctext">Notes for
-  Discussion 2008</span>](#Notes_for_Discussion_2008)
-  - [<span class="tocnumber">3.1</span> <span class="toctext">Notes from
+  - [Gene Page
+    Sections](#Gene_Page_Sections)
+- [Implementation](#Implementation)
+- [Notes for
+  Discussion 2008](#Notes_for_Discussion_2008)
+  - [Notes from
     the July 2008 GMOD
-    Meeting</span>](#Notes_from_the_July_2008_GMOD_Meeting)
-- [<span class="tocnumber">4</span> <span class="toctext">Example
-  uses</span>](#Example_uses)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Early
-    documents and samples</span>](#Early_documents_and_samples)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">More
-    discussion and samples</span>](#More_discussion_and_samples)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Daphnia
-    genome database use case</span>](#Daphnia_genome_database_use_case)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Pea aphid
-    genome annotation case</span>](#Pea_aphid_genome_annotation_case)
+    Meeting](#Notes_from_the_July_2008_GMOD_Meeting)
+- [Example
+  uses](#Example_uses)
+  - [Early
+    documents and samples](#Early_documents_and_samples)
+  - [More
+    discussion and samples](#More_discussion_and_samples)
+  - [Daphnia
+    genome database use case](#Daphnia_genome_database_use_case)
+  - [Pea aphid
+    genome annotation case](#Pea_aphid_genome_annotation_case)
 
 
-
-# <span id="Common_Gene_Page_Rationale" class="mw-headline">Common Gene Page Rationale</span>
+# Common Gene Page Rationale
 
 Model organism/genome databases (MODs) produce gene pages of similar
 gene data, and may benefit from looking at unifying these to common
@@ -62,7 +38,7 @@ Alleles and Transcripts; Proteins, Structure and Domains; Expression and
 Mutant Phenotypes; Gene Interactions; Literature references; and Summary
 Text
 
-## <span id="Gene_Page_Sections" class="mw-headline">Gene Page Sections</span>
+## Gene Page Sections
 
 One outline for these attributes is to have main sections as:
 
@@ -87,7 +63,7 @@ One outline for these attributes is to have main sections as:
 - SUMMARY: a human-readable text summary of gene information
 - ADDITIONAL_INFORMATION: unstructured, suited for project additions
 
-# <span id="Implementation" class="mw-headline">Implementation</span>
+# Implementation
 
 [Discussion](July_2008_GMOD_Meeting#Common_Gene_Page "July 2008 GMOD Meeting")
 at the [July 2008 GMOD
@@ -97,7 +73,7 @@ the
 Perl abstract class that can be used by organizations to generate common
 gene pages in XML format.
 
-# <span id="Notes_for_Discussion_2008" class="mw-headline">Notes for Discussion 2008</span>
+# Notes for Discussion 2008
 
 From [Dongilbert](User%253ADongilbert "User%253ADongilbert") 13:15, 14 July 2008
 (EDT) :
@@ -147,7 +123,7 @@ work on this with any group of MODs who agree to deploy a common gene
 report. Prior software and example UGP-XML cases can be adapted to help
 with this.
 
-## <span id="Notes_from_the_July_2008_GMOD_Meeting" class="mw-headline">Notes from the July 2008 GMOD Meeting</span>
+## Notes from the July 2008 GMOD Meeting
 
 See the [Common Gene
 Page](July_2008_GMOD_Meeting#Common_Gene_Page "July 2008 GMOD Meeting")
@@ -157,22 +133,22 @@ discussion resulted in implementation of the
 [Bio%253A%253AGMOD::GenericGenePage](Bio_GMOD_GenericGenePage "Bio GMOD GenericGenePage")
 Perl abstract class.
 
-# <span id="Example_uses" class="mw-headline">Example uses</span>
+# Example uses
 
-## <span id="Early_documents_and_samples" class="mw-headline">Early documents and samples</span>
+## Early documents and samples
 
 See this folder for some discussion, documents and examples for MOD gene
 pages from 2004: <a href="http://eugenes.org/gmod/gene-report-examples/"
 class="external free"
 rel="nofollow">http://eugenes.org/gmod/gene-report-examples/</a>
 
-## <span id="More_discussion_and_samples" class="mw-headline">More discussion and samples</span>
+## More discussion and samples
 
 See this blog entry on a 2005 meeting discussion,
 <a href="http://blog.gmod.org/common_gene_pages" class="external free"
 rel="nofollow">http://blog.gmod.org/common_gene_pages</a>
 
-## <span id="Daphnia_genome_database_use_case" class="mw-headline">Daphnia genome database use case</span>
+## Daphnia genome database use case
 
 There is an implementation of how this can be used at
 <a href="http://wfleabase.org/" class="external text"
@@ -201,7 +177,7 @@ Search and display is then provided by the GMOD
 [LuceGene](LuceGene "LuceGene") tool, detailed at
 [LuceGene_for_Daphnia_genome](LuceGene_for_Daphnia_genome "LuceGene for Daphnia genome").
 
-## <span id="Pea_aphid_genome_annotation_case" class="mw-headline">Pea aphid genome annotation case</span>
+## Pea aphid genome annotation case
 
 A new Pea aphid genome annotation at
 <a href="http://insects.eugenes.org/aphid/" class="external free"
@@ -226,94 +202,3 @@ framework the various sequence accessions, gene model evidence, protein
 function annotations, and such can be stored and presented for searching
 and reports. Biological discovery can proceed using such draft
 annotations.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Presentations](Category%253APresentations "Category%253APresentations")
-- [WFleaBase](Category%253AWFleaBase "Category%253AWFleaBase")
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [MOD User
-  Interfaces](Category%253AMOD_User_Interfaces "Category%253AMOD User Interfaces")
-
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Common_Gene_Page" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:24 on 4 September
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">63,583 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

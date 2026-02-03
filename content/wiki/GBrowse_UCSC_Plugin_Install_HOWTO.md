@@ -1,23 +1,7 @@
 ---
 title: "GBrowse UCSC Plugin Install HOWTO"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">GBrowse UCSC Plugin Install HOWTO</span>
-
-
-
-
-
-
-
+# GBrowse UCSC Plugin Install HOWTO
 
 
 This page contains detailed installation instructions for setting up
@@ -33,67 +17,57 @@ rel="nofollow">MySQL</a>.
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">2</span> <span class="toctext">UCSC naming
+  Prerequisites](#Prerequisites)
+- [UCSC naming
   conventions and other relevant
-  subtleties</span>](#UCSC_naming_conventions_and_other_relevant_subtleties)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">UCSC
-    database names</span>](#UCSC_database_names)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Chromosome
-    naming</span>](#Chromosome_naming)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Naming of
+  subtleties](#UCSC_naming_conventions_and_other_relevant_subtleties)
+  - [UCSC
+    database names](#UCSC_database_names)
+  - [Chromosome
+    naming](#Chromosome_naming)
+  - [Naming of
     database tables for comparative genomics
-    tracks</span>](#Naming_of_database_tables_for_comparative_genomics_tracks)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Assembly
-    and track meta-info</span>](#Assembly_and_track_meta-info)
-- [<span class="tocnumber">3</span> <span class="toctext">Installation
-  Overview</span>](#Installation_Overview)
-- [<span class="tocnumber">4</span> <span class="toctext">Installation
-  Details</span>](#Installation_Details)
-  - [<span class="tocnumber">4.1</span> <span class="toctext">Which UCSC
-    database?</span>](#Which_UCSC_database.3F)
-  - [<span class="tocnumber">4.2</span> <span class="toctext">Which
+    tracks](#Naming_of_database_tables_for_comparative_genomics_tracks)
+  - [Assembly
+    and track meta-info](#Assembly_and_track_meta-info)
+- [Installation
+  Overview](#Installation_Overview)
+- [Installation
+  Details](#Installation_Details)
+  - [Which UCSC
+    database?](#Which_UCSC_database.3F)
+  - [Which
     tables for my track(s) of
-    interest?</span>](#Which_tables_for_my_track.28s.29_of_interest.3F)
-  - [<span class="tocnumber">4.3</span> <span class="toctext">Download
+    interest?](#Which_tables_for_my_track.28s.29_of_interest.3F)
+  - [Download
     mysql dump files from
-    UCSC</span>](#Download_mysql_dump_files_from_UCSC)
-  - [<span class="tocnumber">4.4</span> <span class="toctext">Create and
-    load the MySQL database</span>](#Create_and_load_the_MySQL_database)
-  - [<span class="tocnumber">4.5</span>
-    <span class="toctext">Conservation track only: download external
-    files</span>](#Conservation_track_only:_download_external_files)
-  - [<span class="tocnumber">4.6</span> <span class="toctext">Download
+    UCSC](#Download_mysql_dump_files_from_UCSC)
+  - [Create and
+    load the MySQL database](#Create_and_load_the_MySQL_database)
+  - [Conservation track only: download external
+    files](#Conservation_track_only:_download_external_files)
+  - [Download
     and install the GBrowse
-    plugin(s)</span>](#Download_and_install_the_GBrowse_plugin.28s.29)
-  - [<span class="tocnumber">4.7</span>
-    <span class="toctext">Conservation track only: C extension
-    required</span>](#Conservation_track_only:_C_extension_required)
-  - [<span class="tocnumber">4.8</span> <span class="toctext">Configure
-    plugins in GBrowse</span>](#Configure_plugins_in_GBrowse)
-  - [<span class="tocnumber">4.9</span>
-    <span class="toctext">Conservation track only:
+    plugin(s)](#Download_and_install_the_GBrowse_plugin.28s.29)
+  - [Conservation track only: C extension
+    required](#Conservation_track_only:_C_extension_required)
+  - [Configure
+    plugins in GBrowse](#Configure_plugins_in_GBrowse)
+  - [Conservation track only:
     conf/UcscTrackImage.cfg
-    file</span>](#Conservation_track_only:_conf.2FUcscTrackImage.cfg_file)
-  - [<span class="tocnumber">4.10</span> <span class="toctext">Test
-    GBrowse</span>](#Test_GBrowse)
-- [<span class="tocnumber">5</span> <span class="toctext">Performance
-  tweaks</span>](#Performance_tweaks)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">rsync
-    mysql table binary files</span>](#rsync_mysql_table_binary_files)
-- [<span class="tocnumber">6</span> <span class="toctext">Bug Reports
-  and Support Requests</span>](#Bug_Reports_and_Support_Requests)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">AUTHORS</span>](#AUTHORS)
+    file](#Conservation_track_only:_conf.2FUcscTrackImage.cfg_file)
+  - [Test
+    GBrowse](#Test_GBrowse)
+- [Performance
+  tweaks](#Performance_tweaks)
+  - [rsync
+    mysql table binary files](#rsync_mysql_table_binary_files)
+- [Bug Reports
+  and Support Requests](#Bug_Reports_and_Support_Requests)
+- [AUTHORS](#AUTHORS)
 
 
-
-## <span id="Prerequisites" class="mw-headline">Prerequisites</span>
+## Prerequisites
 
 - A working installation of [GBrowse](GBrowse.1 "GBrowse") (see also
   [GBrowse_Install_HOWTO](GBrowse_Install_HOWTO "GBrowse Install HOWTO"))
@@ -126,12 +100,12 @@ and one Conservation track):
 | Human-Mammal Net | 510M | 400M | n/a |
 | Human 28-way Conservation | 2,530M | 2,000M | 79,300M |
 
-## <span id="UCSC_naming_conventions_and_other_relevant_subtleties" class="mw-headline">UCSC naming conventions and other relevant subtleties</span>
+## UCSC naming conventions and other relevant subtleties
 
 An understanding of UCSC conventions is not really a prerequisite, but
 will be quite helpful for understanding the installation process.
 
-### <span id="UCSC_database_names" class="mw-headline">UCSC database names</span>
+### UCSC database names
 
 UCSC builds a separate MySQL database of annotations for each genome
 assembly. Each database contains at least one table for each "track"
@@ -155,7 +129,7 @@ the browser, we use the first three letters of the genus in lowercase,
 and first three letters of the species with the first letter capitalized
 (e.g. "bosTau" for *Bos taurus*).
 
-### <span id="Chromosome_naming" class="mw-headline">Chromosome naming</span>
+### Chromosome naming
 
 Most genome assemblies use sequence names for chromosomes that match
 chromosome designations in the literature -- for example, 1, 2, 3 for
@@ -164,7 +138,7 @@ human, and I, II, III for worm. UCSC prefixes those sequence names with
 sequence names. UCSC's annotations for human refer to chr1, chr2, chr3
 etc., and for worm, chrI, chrII, chrIII etc.
 
-### <span id="Naming_of_database_tables_for_comparative_genomics_tracks" class="mw-headline">Naming of database tables for comparative genomics tracks</span>
+### Naming of database tables for comparative genomics tracks
 
 For assemblies that consist of a reasonably small number of sequences
 (e.g. a few dozen chromosomes or mapping groups, possibly with
@@ -215,7 +189,7 @@ format; those files are indexed in the multiz*N*way database table. The
 maf table refers to numeric IDs of the files; those numeric IDs and the
 actual file paths are stored in the extFile table.
 
-### <span id="Assembly_and_track_meta-info" class="mw-headline">Assembly and track meta-info</span>
+### Assembly and track meta-info
 
 UCSC's names for databases and track tables are rather opaque by
 themselves, so we store information about them in separate tables.
@@ -225,7 +199,7 @@ that describes all tracks in that database.
 
   
 
-## <span id="Installation_Overview" class="mw-headline">Installation Overview</span>
+## Installation Overview
 
 1.  Download MySQL table data from UCSC.
 2.  Create mysql database and load tables.
@@ -238,9 +212,9 @@ that describes all tracks in that database.
 
   
 
-## <span id="Installation_Details" class="mw-headline">Installation Details</span>
+## Installation Details
 
-### <span id="Which_UCSC_database.3F" class="mw-headline">Which UCSC database?</span>
+### Which UCSC database?
 
 First, identify the UCSC database name that corresponds to the assembly
 version on which your GBrowse installation is built. For example,
@@ -254,7 +228,7 @@ about the correspondence, ask
 <a href="mailto:genome@soe.ucsc.edu" class="external free"
 rel="nofollow">mailto:genome@soe.ucsc.edu</a> for assistance.
 
-### <span id="Which_tables_for_my_track.28s.29_of_interest.3F" class="mw-headline">Which tables for my track(s) of interest?</span>
+### Which tables for my track(s) of interest?
 
 These are the database tables required for each type of track:
 
@@ -294,7 +268,7 @@ multiz<em>N</em>waySummary, phastCons<em>N</em>way*</td>
 
   
 
-### <span id="Download_mysql_dump_files_from_UCSC" class="mw-headline">Download mysql dump files from UCSC</span>
+### Download mysql dump files from UCSC
 
 All UCSC Genome Browser data can be downloaded from
 <a href="http://hgdownload.cse.ucsc.edu/" class="external text"
@@ -337,7 +311,7 @@ rel="nofollow">mailto:genome-mirror@soe.ucsc.edu</a> . Please include
 which database and file(s), which version of downloading tool you were
 using, error messages if any, and any other relevant info.
 
-### <span id="Create_and_load_the_MySQL_database" class="mw-headline">Create and load the MySQL database</span>
+### Create and load the MySQL database
 
 Having downloaded the necessary data files, create a local MySQL
 database hgcentral and a database for each assembly version for which
@@ -356,7 +330,7 @@ most likely write a script that loops on \$TABLE and possibly on \$DB:
     mysql $DB -u root -pPassword < $TABLE.sql
     mysql $DB -u root -pPassword -e "load data local infile '$TMPDIR/$DB/$TABLE.txt' into table $TABLE"
 
-### <span id="Conservation_track_only:_download_external_files" class="mw-headline">Conservation track only: download external files</span>
+### Conservation track only: download external files
 
 The Conservation track combines multiple alignments and per-base scores
 for multiple species. This is a very large amount of data, and in order
@@ -384,7 +358,7 @@ as referenced by the sql tables. If that is not possible, replace the
 pathnames in the sql tables with your local paths to the corresponding
 files.
 
-### <span id="Download_and_install_the_GBrowse_plugin.28s.29" class="mw-headline">Download and install the GBrowse plugin(s)</span>
+### Download and install the GBrowse plugin(s)
 
 The plugin and glyph modules are available by anonymous
 [Git](Glossary#Git "Glossary"):
@@ -439,7 +413,7 @@ Generic_Genome_Browser/conf/plugins/UcscConservation.pm</td>
 </tbody>
 </table>
 
-### <span id="Conservation_track_only:_C_extension_required" class="mw-headline">Conservation track only: C extension required</span>
+### Conservation track only: C extension required
 
 While UcscChain and UcscNet have pure-Perl implementations,
 UcscConservation requires a compiled C extension,
@@ -449,7 +423,7 @@ install" in Generic-Genome-Browser will descend into libucsc and build
 the extension if Makefile.PL and MANIFEST have been appropriately
 updated and if Makefile.PL was configured with DO_XS enabled.
 
-### <span id="Configure_plugins_in_GBrowse" class="mw-headline">Configure plugins in GBrowse</span>
+### Configure plugins in GBrowse
 
 Add the plugin names (UcscChain, UcscNet, and/or UcscConservation to the
 plugins setting in the appropriate .conf file(s): for GBrowse 1.52,
@@ -500,7 +474,7 @@ This setting is only for actual track plugins (e.g.
 |----|----|----|
 | <span style="font-family: Courier New;">default_enable</span> | **should be** | A whitespace-separated list of chain or net tracks to display by default. E.g., <span style="font-family: Courier New;">chain*OtherDb1* chain*OtherDb2*</span> in the UcscChain:plugin section, <span style="font-family: Courier New;">net*OtherDb1* net*OtherDb2*</span> in the UcscNet:plugin section. If not specified, all tracks will be displayed by default which could overwhelm the display. |
 
-### <span id="Conservation_track_only:_conf.2FUcscTrackImage.cfg_file" class="mw-headline">Conservation track only: conf/UcscTrackImage.cfg file</span>
+### Conservation track only: conf/UcscTrackImage.cfg file
 
 The Conservation plugin's C extension
 (Bio::Graphics::Browser::UcscTrackImage) requires a file named
@@ -521,7 +495,7 @@ common with the GBrowse .conf settings above:
 Note that the central.user account, unlike the db.user, needs to have
 write access -- but only to hgcentral.
 
-### <span id="Test_GBrowse" class="mw-headline">Test GBrowse</span>
+### Test GBrowse
 
 Reinstall GBrowse by running 'make install' in Generic_Genome_Browser/,
 watch for errors at the end of the GBrowse web server's error log file,
@@ -539,9 +513,9 @@ missing.
 
   
 
-## <span id="Performance_tweaks" class="mw-headline">Performance tweaks</span>
+## Performance tweaks
 
-### <span id="rsync_mysql_table_binary_files" class="mw-headline">rsync mysql table binary files</span>
+### rsync mysql table binary files
 
 If you have permissions to modify MySQL's binary files, and are
 investing significant effort into developing an automated regular update
@@ -554,7 +528,7 @@ and loading into MySQL.
 
   
 
-## <span id="Bug_Reports_and_Support_Requests" class="mw-headline">Bug Reports and Support Requests</span>
+## Bug Reports and Support Requests
 
 Please send general questions and/or bug reports to
 <a href="mailto:genome@soe.ucsc.edu" class="external free"
@@ -565,96 +539,8 @@ rel="nofollow">mailto:genome_mirror@soe.ucsc.edu</a>.
 
   
 
-## <span id="AUTHORS" class="mw-headline">AUTHORS</span>
+## AUTHORS
 
 Angie Hinrichs <a href="mailto:angiehinrichs@users.sourceforge.net"
 class="external free"
 rel="nofollow">mailto:angiehinrichs@users.sourceforge.net</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GBrowse](Category%253AGBrowse "Category%253AGBrowse")
-- [HOWTO](Category%253AHOWTO "Category%253AHOWTO")
-- [MySQL](Category%253AMySQL "Category%253AMySQL")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GBrowse_UCSC_Plugin_Install_HOWTO"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 19:45 on 15 January
-  2014.</span>
-<!-- - <span id="footer-info-viewcount">68,130 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

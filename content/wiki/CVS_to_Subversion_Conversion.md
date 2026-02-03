@@ -1,23 +1,7 @@
 ---
 title: "CVS to Subversion Conversion"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">CVS to Subversion Conversion</span>
-
-
-
-
-
-
-
+# CVS to Subversion Conversion
 
 
 <table>
@@ -55,7 +39,7 @@ We spent the rest of the day locking down CVS access (it is still there,
 but is read-only), and updating this website to refer to
 <a href="SVN" class="mw-redirect" title="SVN">SVN</a> instead of CVS.
 
-## <span id="Outstanding_Issues" class="mw-headline">Outstanding Issues</span>
+## Outstanding Issues
 
 We do have a few unfinished items, and we expect a few bumps to pop up
 over the coming weeks. We'll keep track of those problems here. Thus far
@@ -69,7 +53,7 @@ Help Desk</a>.
 | Commit Mailing Lists | Several [GMOD Mailing Lists](GMOD_Mailing_Lists "GMOD Mailing Lists") exist that automatically sent out emails whenever a commit was made to a CVS project. Need to create new lists or modify existing ones to read from SVN instead. | Work is under way. GBrowse, Schema, and Apollo have been set up. |
 | [GBrowse](GBrowse.1 "GBrowse") net installer | The GBrowse net install program gets GBrowse from CVS. Needs to now get it from SVN | Fixed in the STABLE branch |
 
-## <span id="Announcement" class="mw-headline">Announcement</span>
+## Announcement
 
 GMOD's CVS source code repository will be converted to Subversion (SVN)
 on September 15, 2009. [Rob Buels](User%253ARobertBuels "User%253ARobertBuels")
@@ -84,10 +68,8 @@ SVN checkouts instead of CVS checkouts. The doc on this web site will be
 updated to describe how to do this.
 
 
-
 **If you are a GMOD developer and your project is in GMOD's CVS
 repository then this move will significantly affect you.**
-
 
 
 See
@@ -118,7 +100,7 @@ Thanks,
 [Dave Clements](User%253AClements "User%253AClements") and [Rob
 Buels](User%253ARobertBuels "User%253ARobertBuels")
 
-## <span id="Projects" class="mw-headline">Projects</span>
+## Projects
 
 All projects will be moved, but some will be taken out of the active
 repository and put in an `attic, archive,` or `frozen_projects`
@@ -172,90 +154,3 @@ projects are still active.
 | SynBrowse | 19469 | 4 years | anonymous | This commit was manufactured by cvs2svn to create tag 'initial_import'. |  |  | Keep |
 | tripal | 695 | 11 days | scottcain | initial import of tripal |  |  | Keep |
 | XML-XORT | 19544 | 2 years | briano | Minor edits, correct POD |  |  | Keep |
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-- [Computing](Category%253AComputing "Category%253AComputing")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/CVS_to_Subversion_Conversion"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:12 on 3 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">120,210 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

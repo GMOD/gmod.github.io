@@ -1,23 +1,7 @@
 ---
 title: "Hibernate Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Hibernate Presentation</span>
-
-
-
-
-
-
-
+# Hibernate Presentation
 
 
 Chado API via Java & Hibernate, Robert Bruggner, VectorBase.org. This
@@ -26,47 +10,37 @@ Wiki page is an edited version of
 class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Overview</span>](#Overview)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Background</span>](#Background)
-- [<span class="tocnumber">3</span> <span class="toctext">Hibernate
-  Background</span>](#Hibernate_Background)
-- [<span class="tocnumber">4</span> <span class="toctext">Hibernate
-  Database Connectivity</span>](#Hibernate_Database_Connectivity)
-- [<span class="tocnumber">5</span> <span class="toctext">POJO and HBM
-  Example ﬁle - CV</span>](#POJO_and_HBM_Example_.EF.AC.81le_-_CV)
-- [<span class="tocnumber">6</span> <span class="toctext">HBM Example
-  CVTerm</span>](#HBM_Example_CVTerm)
-- [<span class="tocnumber">7</span> <span class="toctext">Hibernate
-  Object Retrieve</span>](#Hibernate_Object_Retrieve)
-- [<span class="tocnumber">8</span> <span class="toctext">Hibernate
-  Object Update</span>](#Hibernate_Object_Update)
-- [<span class="tocnumber">9</span> <span class="toctext">Hibernate
-  Save</span>](#Hibernate_Save)
-- [<span class="tocnumber">10</span>
-  <span class="toctext">Inheritance</span>](#Inheritance)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">ChadoAPI</span>](#ChadoAPI)
-- [<span class="tocnumber">12</span> <span class="toctext">Problem 1 -
-  GMOD Example</span>](#Problem_1_-_GMOD_Example)
-- [<span class="tocnumber">13</span> <span class="toctext">Problem 2 -
-  GMOD Example</span>](#Problem_2_-_GMOD_Example)
-- [<span class="tocnumber">14</span> <span class="toctext">Problems 3,
+  Overview](#Overview)
+- [Background](#Background)
+- [Hibernate
+  Background](#Hibernate_Background)
+- [Hibernate
+  Database Connectivity](#Hibernate_Database_Connectivity)
+- [POJO and HBM
+  Example ﬁle - CV](#POJO_and_HBM_Example_.EF.AC.81le_-_CV)
+- [HBM Example
+  CVTerm](#HBM_Example_CVTerm)
+- [Hibernate
+  Object Retrieve](#Hibernate_Object_Retrieve)
+- [Hibernate
+  Object Update](#Hibernate_Object_Update)
+- [Hibernate
+  Save](#Hibernate_Save)
+- [Inheritance](#Inheritance)
+- [ChadoAPI](#ChadoAPI)
+- [Problem 1 -
+  GMOD Example](#Problem_1_-_GMOD_Example)
+- [Problem 2 -
+  GMOD Example](#Problem_2_-_GMOD_Example)
+- [Problems 3,
   4, & 5 - GMOD Update &
-  Delete</span>](#Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete)
-- [<span class="tocnumber">15</span> <span class="toctext">What
-  Hibernate Does Well</span>](#What_Hibernate_Does_Well)
-- [<span class="tocnumber">16</span>
-  <span class="toctext">Acknowledgements</span>](#Acknowledgements)
+  Delete](#Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete)
+- [What
+  Hibernate Does Well](#What_Hibernate_Does_Well)
+- [Acknowledgements](#Acknowledgements)
 
 
-
-##### <span id="Overview" class="mw-headline">Overview</span>
+##### Overview
 
 - Background
 - Quick Hibernate Overview
@@ -76,7 +50,7 @@ class="internal" title="HibernateChadoAPI.pdf">Robert's presentation</a>.
 Also see [Comparison of XORT and Hibernate for Chado
 Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of XORT and Hibernate for Chado reporting").
 
-##### <span id="Background" class="mw-headline">Background</span>
+##### Background
 
 - VectorBase
   - A bioinformatic resource center for invertebrate vectors of human
@@ -94,7 +68,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
   - Export data via ChadoXML and GFF3
 - Need API for Database I/O
 
-##### <span id="Hibernate_Background" class="mw-headline">Hibernate Background</span>
+##### Hibernate Background
 
 - They say: “A powerful, high performance object/relational persistence
   and query service.”
@@ -111,7 +85,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
   - Cascadable Save / Update / Delete for complex objects.
 - Everything's done within the scope of a transaction.
 
-##### <span id="Hibernate_Database_Connectivity" class="mw-headline">Hibernate Database Connectivity</span>
+##### Hibernate Database Connectivity
 
 - Conﬁgure Hibernate in hibernate.cfg.xml
 - Deﬁne a Data Source
@@ -126,7 +100,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 - Create a new Hibernate Session based on the conﬁguration
 - Begin a transaction to start performing work
 
-##### <span id="POJO_and_HBM_Example_.EF.AC.81le_-_CV" class="mw-headline">POJO and HBM Example ﬁle - CV</span>
+##### POJO and HBM Example ﬁle - CV
 
 
 ``` de1
@@ -148,7 +122,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
     }
  }
 ```
-
 
 
 ``` de1
@@ -175,7 +148,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 ```
 
 
-##### <span id="HBM_Example_CVTerm" class="mw-headline">HBM Example CVTerm</span>
+##### HBM Example CVTerm
 
 
 ``` de1
@@ -199,7 +172,6 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
  
 }
 ```
-
 
 
 ``` de1
@@ -235,7 +207,7 @@ Reporting](Comparison_of_XORT_and_Hibernate_for_Chado_reporting "Comparison of X
 ```
 
 
-##### <span id="Hibernate_Object_Retrieve" class="mw-headline">Hibernate Object Retrieve</span>
+##### Hibernate Object Retrieve
 
 One can use Java, Hibernate Query Language, or SQL, this example uses
 HQL
@@ -272,7 +244,7 @@ HQL
 ```
 
 
-##### <span id="Hibernate_Object_Update" class="mw-headline">Hibernate Object Update</span>
+##### Hibernate Object Update
 
 
 ``` de1
@@ -302,7 +274,7 @@ HQL
 ```
 
 
-##### <span id="Hibernate_Save" class="mw-headline">Hibernate Save</span>
+##### Hibernate Save
 
 
 ``` de1
@@ -338,7 +310,7 @@ HQL
 ```
 
 
-##### <span id="Inheritance" class="mw-headline">Inheritance</span>
+##### Inheritance
 
 
 ``` de1
@@ -380,7 +352,7 @@ HQL
 
 Write custom methods for speciﬁc sub-classes
 
-##### <span id="ChadoAPI" class="mw-headline">ChadoAPI</span>
+##### ChadoAPI
 
 - POJO Mappings
   - CV, CVTerm, DB, DBXref, Feature, FeatureCVTerm, FeatureDBXref,
@@ -393,7 +365,7 @@ Write custom methods for speciﬁc sub-classes
 - Special
   - ChadoAdapter
 
-##### <span id="Problem_1_-_GMOD_Example" class="mw-headline">Problem 1 - GMOD Example</span>
+##### Problem 1 - GMOD Example
 
 
 ``` de1
@@ -429,7 +401,7 @@ Write custom methods for speciﬁc sub-classes
 ```
 
 
-##### <span id="Problem_2_-_GMOD_Example" class="mw-headline">Problem 2 - GMOD Example</span>
+##### Problem 2 - GMOD Example
 
 
 ``` de1
@@ -468,7 +440,7 @@ Write custom methods for speciﬁc sub-classes
 ```
 
 
-##### <span id="Problems_3.2C_4.2C_.26_5_-_GMOD_Update_.26_Delete" class="mw-headline">Problems 3, 4, & 5 - GMOD Update & Delete</span>
+##### Problems 3, 4, & 5 - GMOD Update & Delete
 
 
 ``` de1
@@ -499,7 +471,7 @@ Write custom methods for speciﬁc sub-classes
 
   
 
-##### <span id="What_Hibernate_Does_Well" class="mw-headline">What Hibernate Does Well</span>
+##### What Hibernate Does Well
 
 - Hibernate can be configured to perform specialized functions
   - For example, it has its own notion of a cascade
@@ -507,97 +479,9 @@ Write custom methods for speciﬁc sub-classes
   - Java, Hibernate Query Language, or SQL
 - Any JDBC driver
 
-##### <span id="Acknowledgements" class="mw-headline">Acknowledgements</span>
+##### Acknowledgements
 
 - VectorBase People
   - Frank Collins, EO Stinson, Ryan Butler
 - GMOD
 - NIAID
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado](Category%253AChado "Category%253AChado")
-- [Middleware](Category%253AMiddleware "Category%253AMiddleware")
-- [Java](Category%253AJava "Category%253AJava")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Hibernate_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:16 on 9 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">25,451 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

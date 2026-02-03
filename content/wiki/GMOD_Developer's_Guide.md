@@ -1,50 +1,36 @@
 ---
 title: "GMOD Developer's Guide"
 ---
-<span id="top"></span>
-
-# <span dir="auto">GMOD Developer's Guide</span>
+# GMOD Developer's Guide
 
 This is the GMOD Developer's Guide.
 
-## Contents
-
-- [<span class="tocnumber">1</span> <span class="toctext">Favored
   Platforms</span>](#Favored_Platforms)
-  - [<span class="tocnumber">1.1</span> <span class="toctext">Server
-    Side</span>](#Server_Side)
-    - [<span class="tocnumber">1.1.1</span>
-      <span class="toctext">OS</span>](#OS)
-    - [<span class="tocnumber">1.1.2</span> <span class="toctext">Web
-      Server</span>](#Web_Server)
-    - [<span class="tocnumber">1.1.3</span>
-      <span class="toctext">Languages</span>](#Languages)
-    - [<span class="tocnumber">1.1.4</span>
-      <span class="toctext">DBMS</span>](#DBMS)
-    - [<span class="tocnumber">1.1.5</span>
-      <span class="toctext">Compilers</span>](#Compilers)
-    - [<span class="tocnumber">1.1.6</span>
-      <span class="toctext">Libraries</span>](#Libraries)
-    - [<span class="tocnumber">1.1.7</span>
-      <span class="toctext">Hardware</span>](#Hardware)
-  - [<span class="tocnumber">1.2</span> <span class="toctext">Client
-    Side</span>](#Client_Side)
-    - [<span class="tocnumber">1.2.1</span>
-      <span class="toctext">OS</span>](#OS_2)
-    - [<span class="tocnumber">1.2.2</span>
-      <span class="toctext">Browser</span>](#Browser)
-- [<span class="tocnumber">2</span> <span class="toctext">Server Side
-  Directory Structure</span>](#Server_Side_Directory_Structure)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Interoperation</span>](#Interoperation)
-- [<span class="tocnumber">4</span> <span class="toctext">A First GMOD
-  Release would Contain</span>](#A_First_GMOD_Release_would_Contain)
-- [<span class="tocnumber">5</span> <span class="toctext">Creating a
-  software release</span>](#Creating_a_software_release)
+  - [Server
+    Side](#Server_Side)
+    - [OS](#OS)
+    - [Web
+      Server](#Web_Server)
+    - [Languages](#Languages)
+    - [DBMS](#DBMS)
+    - [Compilers](#Compilers)
+    - [Libraries](#Libraries)
+    - [Hardware](#Hardware)
+  - [Client
+    Side](#Client_Side)
+    - [OS](#OS_2)
+    - [Browser](#Browser)
+- [Server Side
+  Directory Structure](#Server_Side_Directory_Structure)
+- [Interoperation](#Interoperation)
+- [A First GMOD
+  Release would Contain](#A_First_GMOD_Release_would_Contain)
+- [Creating a
+  software release](#Creating_a_software_release)
 
-## <span id="Favored_Platforms" class="mw-headline">Favored Platforms</span>
+## Favored Platforms
 
-### <span id="Server_Side" class="mw-headline">Server Side</span>
+### Server Side
 
 The following environment variables should be set:
 
@@ -55,12 +41,12 @@ The following environment variables should be set:
 - CHADO_DB_HOST
 - CHADO_DB_PORT
 
-#### <span id="OS" class="mw-headline">OS</span>
+#### OS
 
 Any of Linux/BSD, Solaris, OSX. Windows: optional as cost/benefit less
 favorable.
 
-#### <span id="Web_Server" class="mw-headline">Web Server</span>
+#### Web Server
 
 All of:
 
@@ -71,44 +57,44 @@ All of:
     ModPerl 2.0 or CGI.
 - TomCat 4.1 (auxiliary Web server to support server-side Java/JSP)
 
-#### <span id="Languages" class="mw-headline">Languages</span>
+#### Languages
 
 All of:
 
 - Perl 5.6.1 or higher
 - Java 1.4
 
-#### <span id="DBMS" class="mw-headline">DBMS</span>
+#### DBMS
 
 [PostgreSQL](PostgreSQL "PostgreSQL") 7.3 or 8.0
 
-#### <span id="Compilers" class="mw-headline">Compilers</span>
+#### Compilers
 
 gcc (on Solaris as well).
 
-#### <span id="Libraries" class="mw-headline">Libraries</span>
+#### Libraries
 
 Perl bundle; requires some C libraries
 
-#### <span id="Hardware" class="mw-headline">Hardware</span>
+#### Hardware
 
 Recommendations based on current MODs to be determined. Minimum: 20GB
 disk, 512 MB ram, 1.8 GHz Pentium or equiv. Client or server.
 
-### <span id="Client_Side" class="mw-headline">Client Side</span>
+### Client Side
 
-#### <span id="OS_2" class="mw-headline">OS</span>
+#### OS
 
 Linux, Windows, Mac OSX.
 
-#### <span id="Browser" class="mw-headline">Browser</span>
+#### Browser
 
 - Any of Mac IE, Win IE, Netscape. Which versions within these?
 - Fly and worm will analyze server logs to determine largest market
   segments.
 - How to test?
 
-## <span id="Server_Side_Directory_Structure" class="mw-headline">Server Side Directory Structure</span>
+## Server Side Directory Structure
 
 - \$GMOD_HOME=**/usr/local/gmod/** (default -- set before installing)
   - **bin/** -- all scripts
@@ -149,7 +135,7 @@ Prefix all executables with 2-3 letter app prefix
   - Release testing: alpha, beta
   - Installer side
 
-## <span id="Interoperation" class="mw-headline">Interoperation</span>
+## Interoperation
 
 - Support chado schema for genome features
 - Establish clear naming conventions for Chado extension to avoid
@@ -191,7 +177,7 @@ Prefix all executables with 2-3 letter app prefix
   - GAME2chadx, chadx2game
   - BSML2chado loader @ TIGR
 
-## <span id="A_First_GMOD_Release_would_Contain" class="mw-headline">A First GMOD Release would Contain</span>
+## A First GMOD Release would Contain
 
 - Sample data
   - Fasta files
@@ -205,7 +191,7 @@ Prefix all executables with 2-3 letter app prefix
 - Other support tools (chadx dumpers and loaders,xxx2chadx translators)
 - DOCUMENTATION (README, INSTALL, CONFIGURATION-HOWTO)
 
-## <span id="Creating_a_software_release" class="mw-headline">Creating a software release</span>
+## Creating a software release
 
 All software releases for GMOD should conform to a bare minimum
 standard. First, the package should be easily 'installable.' That is, it
@@ -247,50 +233,3 @@ This page should contain the following information:
 - Links to installation documentation
 - Links to downloads
 - Author contact information
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Needs Editing](Category%253ANeeds_Editing "Category%253ANeeds Editing")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/GMOD_Developer&#39;s_Guide"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 05:18 on 28 January 2008.</span>
-<!-- - <span id="footer-info-viewcount">44,982 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

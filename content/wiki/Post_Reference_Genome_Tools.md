@@ -1,23 +1,7 @@
 ---
 title: "Post Reference Genome Tools"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Post Reference Genome Tools</span>
-
-
-
-
-
-
-
+# Post Reference Genome Tools
 
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
@@ -66,14 +50,12 @@ width="200" height="171" alt="Part of GMOD Europe 2010" /></a>
   
 
 
-
 How are we going to visualize and exploit (or even cope with) the world
 three years from now, when small labs may be able to fully sequence 500
 individuals or species (or more) in a month? How can we visualize and
 link together 500, 1000, or 10,000 genomes? Many existing tools assume a
 reference genome. Will a reference make sense in the future, or will it
 hold us back?
-
 
 
 This was a [Satellite
@@ -85,33 +67,22 @@ See [GMOD Europe 2010](GMOD_Europe_2010 "GMOD Europe 2010") for
 information on other events.
 
 
-## Contents
+  Participants](#Participants)
+- [Summary](#Summary)
+- [Discussion](#Discussion)
+  - [Conceptual](#Conceptual)
+    - [Non
+      Linear Thinking](#Non_Linear_Thinking)
+    - [Dynamic
+      Reference](#Dynamic_Reference)
+  - [Towards
+    Solutions](#Towards_Solutions)
+    - [Inspiration](#Inspiration)
+- [See
+  Also](#See_Also)
 
 
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Participants</span>](#Participants)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Summary</span>](#Summary)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Discussion</span>](#Discussion)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Conceptual</span>](#Conceptual)
-    - [<span class="tocnumber">3.1.1</span> <span class="toctext">Non
-      Linear Thinking</span>](#Non_Linear_Thinking)
-    - [<span class="tocnumber">3.1.2</span>
-      <span class="toctext">Dynamic
-      Reference</span>](#Dynamic_Reference)
-  - [<span class="tocnumber">3.2</span> <span class="toctext">Towards
-    Solutions</span>](#Towards_Solutions)
-    - [<span class="tocnumber">3.2.1</span>
-      <span class="toctext">Inspiration</span>](#Inspiration)
-- [<span class="tocnumber">4</span> <span class="toctext">See
-  Also</span>](#See_Also)
-
-
-
-## <span id="Participants" class="mw-headline">Participants</span>
+## Participants
 
 | Participant | Affilliation(s) | URL |
 |----|----|----|
@@ -138,7 +109,7 @@ rel="nofollow">http://lgd.abcc.ncifcrf.gov/cgi-bin/gbrowse/cat/</a> |
 | [Don Gilbert](User%253ADongilbert "User%253ADongilbert") | Indiana University (Don participated in a key pre-meeting discussion) | <a href="http://arthropods.eugenes.org/" class="external free"
 rel="nofollow">http://arthropods.eugenes.org/</a> |
 
-## <span id="Summary" class="mw-headline">Summary</span>
+## Summary
 
 The world is shifting away from the concept of a single reference genome
 in a number of ways:
@@ -160,7 +131,7 @@ in a number of ways:
     datasets are simply getting too big and too varied to not have
     sophisticated tools for narrowing and analyzing them.
 
-## <span id="Discussion" class="mw-headline">Discussion</span>
+## Discussion
 
 The discussion went on for over three hours. It is divided into two
 sections here:
@@ -172,11 +143,11 @@ world.
 [Towards Solutions](#Towards_Solutions)  
 Some ideas on how we might tackle this new world with software.
 
-### <span id="Conceptual" class="mw-headline">Conceptual</span>
+### Conceptual
 
 How does our conceptual model change in this new world?
 
-#### <span id="Non_Linear_Thinking" class="mw-headline">Non Linear Thinking</span>
+#### Non Linear Thinking
 
 In the current model, the reference chromosome is the dominant frame of
 reference. Many projects may have ESTs or contigs, but the hope is
@@ -220,7 +191,7 @@ enough data. However, there is a danger in this type of amalgamation of
 making conclusions about abstract genomes that would never actually
 exist in nature.
 
-#### <span id="Dynamic_Reference" class="mw-headline">Dynamic Reference</span>
+#### Dynamic Reference
 
 Another option is not to abandon the concept of a reference, but rather
 make it dynamic: Users can specify "this is my genome of interest; show
@@ -230,7 +201,7 @@ With this approach, reference-based tools that exist now could be used
 Subject to computational tractability), but with quite different
 preprocessing.
 
-### <span id="Towards_Solutions" class="mw-headline">Towards Solutions</span>
+### Towards Solutions
 
 How do these new concepts affect how we will visualize information?
 
@@ -272,7 +243,7 @@ be made arbitrarily complex by seamless integration with analysis tools
 such as [Galaxy](Galaxy.1 "Galaxy"), [BioMart](BioMart "BioMart"), and
 [InterMine](InterMine "InterMine").
 
-#### <span id="Inspiration" class="mw-headline">Inspiration</span>
+#### Inspiration
 
 Future visualizations are not constrained by current ones, but we can
 learn from them. The group also discussed the UCSC Cancer Genome
@@ -306,7 +277,6 @@ Clade databases can also provide some insights here. An excerpt from and
 email from [Don Gilbert](User%253ADongilbert "User%253ADongilbert"):
 
 
-
 Part of the answer likely involves clade genomics, i.e. don't peg your
 new genome to one reference, but to a consensus of several related. We
 do that to some effect w/ the insects / arthropods.
@@ -332,100 +302,10 @@ databases to work in sync. Gramene and other plant databases may be good
 examples for post-reference genome informatics.
 
 
-
-## <span id="See_Also" class="mw-headline">See Also</span>
+## See Also
 
 There is a nice
 <a href="http://blog.openhelix.eu/?p=5551" class="external text"
 rel="nofollow">writeup of this summary</a> by Mary Mangan on the
 <a href="http://blog.openhelix.eu/" class="external text"
 rel="nofollow">OpenHelix blog</a>.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [Comparative
-  Genomics](Category%253AComparative_Genomics "Category%253AComparative Genomics")
-- [GMOD Developers](Category%253AGMOD_Developers "Category%253AGMOD Developers")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Post_Reference_Genome_Tools"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 18:54 on 8 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">46,919 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

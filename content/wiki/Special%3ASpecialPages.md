@@ -1,11 +1,9 @@
 ---
 title: "Special pages"
 ---
-<span id="top"></span>
+# Special pages
 
-# <span dir="auto">Special pages</span>
-
-## <span id="Maintenance_reports" class="mw-headline">Maintenance reports</span>
+## Maintenance reports
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -75,7 +73,7 @@ title="Special:WantedTemplates">Wanted templates</a></li>
 </tbody>
 </table>
 
-## <span id="Lists_of_pages" class="mw-headline">Lists of pages</span>
+## Lists of pages
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -118,7 +116,7 @@ title="Special:TrackingCategories">Tracking categories</a></li>
 </tbody>
 </table>
 
-## <span id="Login_.2F_create_account" class="mw-headline">Login / create account</span>
+## Login / create account
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -140,7 +138,7 @@ title="Special%253ARequestAccount">Request account</a></li>
 </tbody>
 </table>
 
-## <span id="Users_and_rights" class="mw-headline">Users and rights</span>
+## Users and rights
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -181,7 +179,7 @@ list</a></li>
 </tbody>
 </table>
 
-## <span id="Recent_changes_and_logs" class="mw-headline">Recent changes and logs</span>
+## Recent changes and logs
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -215,7 +213,7 @@ title="Special:Watchlist">Watchlist</a></li>
 </tbody>
 </table>
 
-## <span id="Media_reports_and_uploads" class="mw-headline">Media reports and uploads</span>
+## Media reports and uploads
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -245,7 +243,7 @@ title="Special:FileDuplicateSearch">Search for duplicate files</a></li>
 </tbody>
 </table>
 
-## <span id="Data_and_tools" class="mw-headline">Data and tools</span>
+## Data and tools
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -280,7 +278,7 @@ title="Special:Version">Version</a></li>
 </tbody>
 </table>
 
-## <span id="Redirecting_special_pages" class="mw-headline">Redirecting special pages</span>
+## Redirecting special pages
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -311,7 +309,7 @@ by file, user, page or revision ID</a></li>
 </tbody>
 </table>
 
-## <span id="High_use_pages" class="mw-headline">High use pages</span>
+## High use pages
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -346,7 +344,7 @@ title="Special:MostRevisions">Pages with the most revisions</a></li>
 </tbody>
 </table>
 
-## <span id="Page_tools" class="mw-headline">Page tools</span>
+## Page tools
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -375,7 +373,7 @@ title="Special:WhatLinksHere">What links here</a></li>
 </tbody>
 </table>
 
-## <span id="Semantic_Forms" class="mw-headline">Semantic Forms</span>
+## Semantic Forms
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -410,7 +408,7 @@ form</a></li>
 </tbody>
 </table>
 
-## <span id="Semantic_Drilldown" class="mw-headline">Semantic Drilldown</span>
+## Semantic Drilldown
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -428,7 +426,7 @@ data</a></li>
 </tbody>
 </table>
 
-## <span id="Semantic_MediaWiki" class="mw-headline">Semantic MediaWiki</span>
+## Semantic MediaWiki
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -456,7 +454,7 @@ search</a></li>
 </tbody>
 </table>
 
-## <span id="Other_special_pages" class="mw-headline">Other special pages</span>
+## Other special pages
 
 <table class="mw-specialpages-table" style="width:100%;">
 <colgroup>
@@ -475,41 +473,3 @@ title="Special:TableEdit">TableEdit</a></li>
 </tr>
 </tbody>
 </table>
-
-## Navigation menu
-
-### Namespaces
-
-- <span id="ca-nstab-special">[Special
-  page](/wiki/Special%253ASpecialPages "This is a special page, you cannot edit the page itself")</span>
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](/wiki/Main_Page)</span>
-- <span id="n-Software">[Software](/wiki/GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](/wiki/Categories)</span>
-- <span id="n-View-all-pages">[View all
-  pages](/wiki/Special:AllPages)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](/wiki/Overview)</span>
-- <span id="n-FAQs">[FAQs](/wiki/Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](/wiki/Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](/wiki/Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](/wiki/GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](/wiki/Training_and_Outreach)</span>
-- <span id="n-Support">[Support](/wiki/Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD
-  Promotion](/wiki/GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](/wiki/Meetings)</span>
-- <span id="n-Calendar">[Calendar](/wiki/Calendar)</span>
-
-### Tools
-
-<!-- -->

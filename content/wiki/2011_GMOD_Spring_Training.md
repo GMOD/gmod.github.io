@@ -1,24 +1,7 @@
 ---
 title: "2011 GMOD Spring Training"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">2011 GMOD Spring Training</span>
-
-
-
-
-
-
-
-
+# 2011 GMOD Spring Training
 
 
 <img
@@ -28,7 +11,6 @@ width="600" height="238"
 alt="2011 GMOD Spring Training March 8-12, 2011" />
 
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/600px-2011GMODSpringTraining.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/900px-2011GMODSpringTraining.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/c/c7/2011GMODSpringTraining.jpg/1200px-2011GMODSpringTraining.jpg 2x"
@@ -36,40 +18,25 @@ width="600" height="177"
 alt="March 2011 GMOD Spring Training Participants, minus a few" />
 
 
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Course
   Sessions → Online
   Tutorials</span>](#Course_Sessions_.E2.86.92_Online_Tutorials)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Schedule</span>](#Schedule)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Instructors</span>](#Instructors)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Prerequisites</span>](#Prerequisites)
-- [<span class="tocnumber">5</span> <span class="toctext">System
-  Requirements</span>](#System_Requirements)
-  - [<span class="tocnumber">5.1</span> <span class="toctext">VMware on
-    Windows and Linux</span>](#VMware_on_Windows_and_Linux)
-  - [<span class="tocnumber">5.2</span> <span class="toctext">VMware on
-    Mac OS X</span>](#VMware_on_Mac_OS_X)
-- [<span class="tocnumber">6</span>
-  <span class="toctext">Applications</span>](#Applications)
-- [<span class="tocnumber">7</span>
-  <span class="toctext">Costs</span>](#Costs)
-- [<span class="tocnumber">8</span>
-  <span class="toctext">Sponsors</span>](#Sponsors)
-- [<span class="tocnumber">9</span> <span class="toctext">Get the Word
-  Out!</span>](#Get_the_Word_Out.21)
-- [<span class="tocnumber">10</span> <span class="toctext">Travel,
-  Lodging and Meals</span>](#Travel.2C_Lodging_and_Meals)
-- [<span class="tocnumber">11</span>
-  <span class="toctext">Feedback</span>](#Feedback)
+- [Schedule](#Schedule)
+- [Instructors](#Instructors)
+- [Prerequisites](#Prerequisites)
+- [System
+  Requirements](#System_Requirements)
+  - [VMware on
+    Windows and Linux](#VMware_on_Windows_and_Linux)
+  - [VMware on
+    Mac OS X](#VMware_on_Mac_OS_X)
+- [Applications](#Applications)
+- [Costs](#Costs)
+- [Sponsors](#Sponsors)
+- [Get the Word
+  Out!](#Get_the_Word_Out.21)
+- [Travel,
+  Lodging and Meals](#Travel.2C_Lodging_and_Meals)
+- [Feedback](#Feedback)
 
 
 The ***2011 GMOD Spring Training*** was held March 8-12 at the
@@ -83,11 +50,10 @@ Components](GMOD_Components "GMOD Components"). Sessions were taught by
 GMOD Component developers and GMOD staff. There was space for 25
 participants and admission was competitive.
 
-# <span id="Course_Sessions_.E2.86.92_Online_Tutorials" class="mw-headline">Course Sessions → Online Tutorials</span>
+# Course Sessions → Online Tutorials
 
 The course sessions will become online tutorials on this wiki following
 the course.
-
 
 
 <table>
@@ -130,8 +96,7 @@ Tutorial</a></li>
 </table>
 
 
-
-# <span id="Schedule" class="mw-headline">Schedule</span>
+# Schedule
 
 <table class="wikitable" data-border="1" data-cellpadding="5"
 data-cellspacing="0">
@@ -221,7 +186,7 @@ Most sessions lasted half a day. We tried something new this year: Each
 night the instructors for that day's topics were available to answer
 questions and help participants use the tools with their data.
 
-# <span id="Instructors" class="mw-headline">Instructors</span>
+# Instructors
 
 Sessions were taught by experienced component developers and GMOD
 project staff:
@@ -245,8 +210,7 @@ rel="nofollow">iPlant Collaborative</a> |
 | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | [JBrowse](JBrowse.1 "JBrowse") | <a href="http://berkeley.edu" class="external text"
 rel="nofollow">University of California, Berkeley</a> |
 
-# <span id="Prerequisites" class="mw-headline">Prerequisites</span>
-
+# Prerequisites
 
 
 *The course requires a minimal level of Linux systems administration
@@ -266,15 +230,12 @@ GBrowse data.* This also requires installing Apache, and
 [BioPerl](BioPerl "BioPerl") and all its dependencies.
 
 
-
-# <span id="System_Requirements" class="mw-headline">System Requirements</span>
-
+# System Requirements
 
 
 <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a>
-
 
 
 <span style="font-size: 110%">**Participants are required to bring their
@@ -287,7 +248,7 @@ build upon that image in each succeeding session. We will probably use
 VMware for the
 course:
 
-### <span id="VMware_on_Windows_and_Linux" class="mw-headline">VMware on Windows and Linux</span>
+### VMware on Windows and Linux
 
 |  |  |  |
 |----|----|----|
@@ -300,7 +261,7 @@ rel="nofollow">VMware</a>. You will need to register to download it. There are m
 
   
 
-### <span id="VMware_on_Mac_OS_X" class="mw-headline">VMware on Mac OS X</span>
+### VMware on Mac OS X
 
 |  |  |
 |----|----|
@@ -328,7 +289,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 height="48" alt="VirtualBox-logo.png" /> | <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
 rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel Macs (and Windows, Linux and Solaris too). It claims to be capable of running VMware images, *but we have not tested this with our images.* |
 
-# <span id="Applications" class="mw-headline">Applications</span>
+# Applications
 
 **The application deadline was January 7, 2011.** However, late
 applications were accepted until March 1, and were automatically placed
@@ -340,20 +301,18 @@ of the application (especially the statement of interest).** In
 [2010](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas")
 there were over 60 applicants for 25 slots.
 
-# <span id="Costs" class="mw-headline">Costs</span>
+# Costs
 
 The tuition is \$265 for the course (less than \$55 per day) to pay
 instructor costs and incidentals.
 
-# <span id="Sponsors" class="mw-headline">Sponsors</span>
-
+# Sponsors
 
 
 <a href="http://nescent.org" rel="nofollow" title="NESCent"><img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/100px-NESCentLogo152.jpg"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/3/3a/NESCentLogo152.jpg/150px-NESCentLogo152.jpg 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3a/NESCentLogo152.jpg 2x"
 width="100" height="93" alt="NESCent" /></a>
-
 
 
 The <a href="http://nescent.org" class="external text"
@@ -366,12 +325,10 @@ resources for scientists, educators, and the general public that meet
 these goals.
 
 
-
 <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/thumb/7/7d/GalaxyLogoBoxed.png/130px-GalaxyLogoBoxed.png"
 srcset="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 1.5x, https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/7/7d/GalaxyLogoBoxed.png 2x"
 width="130" height="45" alt="Galaxy" />
-
 
 
 The [Galaxy Project](Galaxy.1 "Galaxy") is also sponsoring this course
@@ -387,13 +344,11 @@ support of the [instructor's](#Instructors) projects and institutions.
 Please thank them and their projects profusely for sponsoring their
 participation in this event.
 
-# <span id="Get_the_Word_Out.21" class="mw-headline">Get the Word Out!</span>
-
+# Get the Word Out!
 
 
 [<img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a4/GMODAmericas2011FlierThumb.png"
 width="131" height="170" alt="GMOD Americas 2011 Flier" />](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/ac/GMODAmericas2011Flier.pdf "GMOD Americas 2011 Flier")
-
 
 
 Help spread the word about GMOD Spring Training and other [GMOD Americas
@@ -409,13 +364,13 @@ the volume of data that have and will continue to get in the future.
 GMOD is an excellent option for helping these groups get a grip on and
 exploit their data.
 
-# <span id="Travel.2C_Lodging_and_Meals" class="mw-headline">Travel, Lodging and Meals</span>
+# Travel, Lodging and Meals
 
 See the [GMOD Americas
 2011](GMOD_Americas_2011#Logistics "GMOD Americas 2011") page for
 details.
 
-# <span id="Feedback" class="mw-headline">Feedback</span>
+# Feedback
 
 <table>
 <colgroup>
@@ -545,94 +500,3 @@ The "Yes, with reservations" responses were:
   Conversely, an IT person with no biology background might also get a
   bit overwhelmed...
 - I feel some sessions need more time.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Events](Category%253AEvents "Category%253AEvents")
-- [Education and
-  Outreach](Category%253AEducation_and_Outreach "Category%253AEducation and Outreach")
-- [2011 Spring
-  Training](Category%253A2011_Spring_Training "Category%253A2011 Spring Training")
-- [GMOD Schools](Category%253AGMOD_Schools "Category%253AGMOD Schools")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/2011_GMOD_Spring_Training"
-  rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 23:28 on 11 February
-  2020.</span>
-<!-- - <span id="footer-info-viewcount">295,403 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

@@ -1,23 +1,7 @@
 ---
 title: "Modware Presentation"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">Modware Presentation</span>
-
-
-
-
-
-
-
+# Modware Presentation
 
 
 Eric Just, Senior Bioinformatics Scientist,
@@ -29,65 +13,57 @@ Northwestern University. This is an edited version of
 title="Modware.pdf">Eric's presentation</a>.
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">Why Modware
   Was Developed</span>](#Why_Modware_Was_Developed)
-- [<span class="tocnumber">2</span> <span class="toctext">What is in the
-  Feature Table?</span>](#What_is_in_the_Feature_Table.3F)
-- [<span class="tocnumber">3</span> <span class="toctext">Modware
-  Features</span>](#Modware_Features)
-- [<span class="tocnumber">4</span> <span class="toctext">Architectural
-  Overview</span>](#Architectural_Overview)
-- [<span class="tocnumber">5</span> <span class="toctext">Create and
-  Insert Chromosome</span>](#Create_and_Insert_Chromosome)
-- [<span class="tocnumber">6</span> <span class="toctext">Problem 1 -
+- [What is in the
+  Feature Table?](#What_is_in_the_Feature_Table.3F)
+- [Modware
+  Features](#Modware_Features)
+- [Architectural
+  Overview](#Architectural_Overview)
+- [Create and
+  Insert Chromosome](#Create_and_Insert_Chromosome)
+- [Problem 1 -
   Create and Insert a
-  Gene</span>](#Problem_1_-_Create_and_Insert_a_Gene)
-- [<span class="tocnumber">7</span> <span class="toctext">Problem 1 -
+  Gene](#Problem_1_-_Create_and_Insert_a_Gene)
+- [Problem 1 -
   Create and Insert a
-  Gene</span>](#Problem_1_-_Create_and_Insert_a_Gene_2)
-- [<span class="tocnumber">8</span> <span class="toctext">Problem 1 -
+  Gene](#Problem_1_-_Create_and_Insert_a_Gene_2)
+- [Problem 1 -
   Create and Insert a
-  Gene</span>](#Problem_1_-_Create_and_Insert_a_Gene_3)
-- [<span class="tocnumber">9</span> <span class="toctext">Problem 1 -
+  Gene](#Problem_1_-_Create_and_Insert_a_Gene_3)
+- [Problem 1 -
   Create and Insert a
-  Gene</span>](#Problem_1_-_Create_and_Insert_a_Gene_4)
-- [<span class="tocnumber">10</span> <span class="toctext">Problem 1 -
+  Gene](#Problem_1_-_Create_and_Insert_a_Gene_4)
+- [Problem 1 -
   Create mRNA BioPerl
-  Object</span>](#Problem_1_-_Create_mRNA_BioPerl_Object)
-- [<span class="tocnumber">11</span> <span class="toctext">Problem 1 -
-  Create and Insert mRNA</span>](#Problem_1_-_Create_and_Insert_mRNA)
-- [<span class="tocnumber">12</span> <span class="toctext">Problem 2 -
-  Writing the Report</span>](#Problem_2_-_Writing_the_Report)
-- [<span class="tocnumber">13</span> <span class="toctext">Problem 2 -
-  Writing the Report</span>](#Problem_2_-_Writing_the_Report_2)
-- [<span class="tocnumber">14</span> <span class="toctext">Problem 3 -
-  Updating a Gene Name</span>](#Problem_3_-_Updating_a_Gene_Name)
-- [<span class="tocnumber">15</span> <span class="toctext">Problem 4 -
+  Object](#Problem_1_-_Create_mRNA_BioPerl_Object)
+- [Problem 1 -
+  Create and Insert mRNA](#Problem_1_-_Create_and_Insert_mRNA)
+- [Problem 2 -
+  Writing the Report](#Problem_2_-_Writing_the_Report)
+- [Problem 2 -
+  Writing the Report](#Problem_2_-_Writing_the_Report_2)
+- [Problem 3 -
+  Updating a Gene Name](#Problem_3_-_Updating_a_Gene_Name)
+- [Problem 4 -
   Search and Display
-  Results</span>](#Problem_4_-_Search_and_Display_Results)
-- [<span class="tocnumber">16</span> <span class="toctext">Problem 4 -
+  Results](#Problem_4_-_Search_and_Display_Results)
+- [Problem 4 -
   Search and Display
-  Results</span>](#Problem_4_-_Search_and_Display_Results_2)
-- [<span class="tocnumber">17</span> <span class="toctext">Problem 5 -
-  Delete a Gene</span>](#Problem_5_-_Delete_a_Gene)
-- [<span class="tocnumber">18</span> <span class="toctext">Other Modware
-  Highlights</span>](#Other_Modware_Highlights)
-- [<span class="tocnumber">19</span> <span class="toctext">Other Nice
-  Things About Modware</span>](#Other_Nice_Things_About_Modware)
-- [<span class="tocnumber">20</span> <span class="toctext">Coming
-  Attractions</span>](#Coming_Attractions)
-- [<span class="tocnumber">21</span>
-  <span class="toctext">Discussion</span>](#Discussion)
-- [<span class="tocnumber">22</span>
-  <span class="toctext">Acknowledgments</span>](#Acknowledgments)
+  Results](#Problem_4_-_Search_and_Display_Results_2)
+- [Problem 5 -
+  Delete a Gene](#Problem_5_-_Delete_a_Gene)
+- [Other Modware
+  Highlights](#Other_Modware_Highlights)
+- [Other Nice
+  Things About Modware](#Other_Nice_Things_About_Modware)
+- [Coming
+  Attractions](#Coming_Attractions)
+- [Discussion](#Discussion)
+- [Acknowledgments](#Acknowledgments)
 
 
-
-##### <span id="Why_Modware_Was_Developed" class="mw-headline">Why Modware Was Developed</span>
+##### Why Modware Was Developed
 
 - Each feature type requires different behavior
 - Want to leave schema semantics out of application
@@ -97,7 +73,7 @@ title="Modware.pdf">Eric's presentation</a>.
   - Modware uses this code, but strips out all non-standard GMOD code
 - Provides nice interface over stock GMOD installation
 
-##### <span id="What_is_in_the_Feature_Table.3F" class="mw-headline">What is in the Feature Table?</span>
+##### What is in the Feature Table?
 
 The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 
@@ -108,7 +84,7 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 - Exon
 - Lots of other things - See Sequence Ontology!
 
-##### <span id="Modware_Features" class="mw-headline">Modware Features</span>
+##### Modware Features
 
 - Multiple Feature classes
   - CHROMOSOME, GENE, MRNA, CONTIG
@@ -131,7 +107,7 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
   - Has a start/stop coordinate on a genomic sequence feature (no
     structure like a transcript with exons)
 
-##### <span id="Architectural_Overview" class="mw-headline">Architectural Overview</span>
+##### Architectural Overview
 
 - Object-oriented Perl interface to
   <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
@@ -142,7 +118,7 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
   and feature structure
 - ‘Lazy’ evaluation
 
-##### <span id="Create_and_Insert_Chromosome" class="mw-headline">Create and Insert Chromosome</span>
+##### Create and Insert Chromosome
 
 
 ``` de1
@@ -170,7 +146,7 @@ The core of <a href="Chado" class="mw-redirect" title="Chado">Chado</a>
 
   
 
-##### <span id="Problem_1_-_Create_and_Insert_a_Gene" class="mw-headline">Problem 1 - Create and Insert a Gene</span>
+##### Problem 1 - Create and Insert a Gene
 
 1\) Enter the information about the following three novel genes,
 including the associated mRNA structures, into your database. Print the
@@ -186,7 +162,7 @@ assigned feature_id for each inserted gene.
                                         strand: 1
                                         srcFeature_id: Id of genomic sample
 
-##### <span id="Problem_1_-_Create_and_Insert_a_Gene_2" class="mw-headline">Problem 1 - Create and Insert a Gene</span>
+##### Problem 1 - Create and Insert a Gene
 
 1\) Enter the information about the following three novel genes,
 including the associated mRNA structures, into your database. Print the
@@ -203,7 +179,7 @@ assigned feature_id for each inserted gene.
                                        srcFeature_id:
                                            Id of genomic sample
 
-##### <span id="Problem_1_-_Create_and_Insert_a_Gene_3" class="mw-headline">Problem 1 - Create and Insert a Gene</span>
+##### Problem 1 - Create and Insert a Gene
 
 1\) Enter the information about the following three novel genes,
 including the associated mRNA structures, into your database. Print the
@@ -225,7 +201,7 @@ assigned feature_id for each inserted gene.
                                       strand: 1
                                       srcFeature_id: Id of genomic sample
 
-##### <span id="Problem_1_-_Create_and_Insert_a_Gene_4" class="mw-headline">Problem 1 - Create and Insert a Gene</span>
+##### Problem 1 - Create and Insert a Gene
 
           symbol: xfile
                  synonyms: mulder, scully
@@ -250,7 +226,7 @@ print 'Inserted gene with feature_id:'.$gene_feature->feature_id()."\n";
 ```
 
 
-##### <span id="Problem_1_-_Create_mRNA_BioPerl_Object" class="mw-headline">Problem 1 - Create mRNA BioPerl Object</span>
+##### Problem 1 - Create mRNA BioPerl Object
 
               exon_1:
               start: 13691
@@ -290,7 +266,7 @@ $bioperl_mrna->add_exon( $exon_2 );
 ```
 
 
-##### <span id="Problem_1_-_Create_and_Insert_mRNA" class="mw-headline">Problem 1 - Create and Insert mRNA</span>
+##### Problem 1 - Create and Insert mRNA
 
 The BioPerl object holds the location information, but now we want to
 create a Modware object and link it to the gene as well as locate it on
@@ -314,7 +290,7 @@ the chromosome.
 ```
 
 
-##### <span id="Problem_2_-_Writing_the_Report" class="mw-headline">Problem 2 - Writing the Report</span>
+##### Problem 2 - Writing the Report
 
 2\) Retrieve and print the following report for gene xfile
 
@@ -346,7 +322,7 @@ GMODWriter->Write_gene_report( $xfile_gene );
 - What's the difference between Modware::Gene and Modware::Feature? Gene
   is-a Feature.
 
-##### <span id="Problem_2_-_Writing_the_Report_2" class="mw-headline">Problem 2 - Writing the Report</span>
+##### Problem 2 - Writing the Report
 
 2\) Retrieve and print the following report for gene xfile
 
@@ -390,7 +366,7 @@ foreach my $exon (@exons ) {
 ```
 
 
-##### <span id="Problem_3_-_Updating_a_Gene_Name" class="mw-headline">Problem 3 - Updating a Gene Name</span>
+##### Problem 3 - Updating a Gene Name
 
 3\) Update the gene xfile: change the name symbol to x-file and retrieve
 the changed record. Regenerate gene report
@@ -427,7 +403,7 @@ the changed record. Regenerate gene report
 
   
 
-##### <span id="Problem_4_-_Search_and_Display_Results" class="mw-headline">Problem 4 - Search and Display Results</span>
+##### Problem 4 - Search and Display Results
 
 4\) Search for all genes with symbols starting with "x-\*". With the
 results produce the following simple result list (organism will vary):
@@ -452,7 +428,7 @@ results produce the following simple result list (organism will vary):
 
   
 
-##### <span id="Problem_4_-_Search_and_Display_Results_2" class="mw-headline">Problem 4 - Search and Display Results</span>
+##### Problem 4 - Search and Display Results
 
 4\) Search for all genes with symbols starting with "x-\*". With the
 results produce the following simple result list (organism will vary):
@@ -477,7 +453,7 @@ sub Write_search_results {
 ```
 
 
-##### <span id="Problem_5_-_Delete_a_Gene" class="mw-headline">Problem 5 - Delete a Gene</span>
+##### Problem 5 - Delete a Gene
 
 5\) Delete the gene x-ray. Run the search and report again.
 
@@ -508,7 +484,7 @@ sub Write_search_results {
 
   
 
-##### <span id="Other_Modware_Highlights" class="mw-headline">Other Modware Highlights</span>
+##### Other Modware Highlights
 
 - Easy to write applications with Modware
 - Extensible
@@ -522,7 +498,7 @@ sub Write_search_results {
 - Sample script demoed here are available
   - sample_scripts directory
 
-##### <span id="Other_Nice_Things_About_Modware" class="mw-headline">Other Nice Things About Modware</span>
+##### Other Nice Things About Modware
 
 - Bioperl-style documentation
   - <a href="http://gmod-ware.sourceforge.net/doc/" class="external free"
@@ -535,7 +511,7 @@ sub Write_search_results {
     adjust to the change, depends on the change
 - Can set multiple connections through AutoDBI's `set_connection`
 
-##### <span id="Coming_Attractions" class="mw-headline">Coming Attractions</span>
+##### Coming Attractions
 
 - Support for changing genomic sequence
 - ncRNAs
@@ -548,19 +524,16 @@ sub Write_search_results {
 - Pass an argument *type* to the Gene's feature() method
 - Type the kind of synonym is being inserted?
   - Possible: trade-off between simplicity and functionality
-
-<!-- -->
-
 - Send us your ideas!
 
   
 
-##### <span id="Discussion" class="mw-headline">Discussion</span>
+##### Discussion
 
 - How hard is it to extend Modware?
   - Not known absolutely, but generally thought to be not difficult
 
-##### <span id="Acknowledgments" class="mw-headline">Acknowledgments</span>
+##### Acknowledgments
 
 - Rex Chisholm, PhD
 - Warren Kibbe, PhD
@@ -570,96 +543,6 @@ sub Write_search_results {
 - Petra Fey
 - Pascale Gaudet,
 - Karen Pilcher
-
-<!-- -->
-
 - [BioPerl](BioPerl "BioPerl")
 - GMOD
 - [SGD](Category%253ASGD "Category%253ASGD")
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Modware](Category%253AModware "Category%253AModware")
-- [BioPerl](Category%253ABioPerl "Category%253ABioPerl")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Modware_Presentation" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 21:24 on 15 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">25,045 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

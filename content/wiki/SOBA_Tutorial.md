@@ -1,26 +1,11 @@
 ---
 title: "SOBA Tutorial 2012"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">SOBA Tutorial 2012</span>
-
-
-
+# SOBA Tutorial 2012
 
 
 (Redirected from [SOBA
-Tutorial](SOBA_Tutorial)
-
-
-
+Tutorial](/wiki/SOBA_Tutorial)
 
 
 This [SOBA](SOBA.1 "SOBA") tutorial was taught as part of the [2012 GMOD
@@ -31,28 +16,17 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School").
   
 
 
-## Contents
-
-
-
-- [<span class="tocnumber">1</span> <span class="toctext">About
   SOBA</span>](#About_SOBA)
-- [<span class="tocnumber">2</span> <span class="toctext">SOBA Web
-  Application</span>](#SOBA_Web_Application)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">SOBAcl</span>](#SOBAcl)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Help</span>](#Help)
-  - [<span class="tocnumber">3.2</span>
-    <span class="toctext">Tables</span>](#Tables)
-- [<span class="tocnumber">4</span>
-  <span class="toctext">Charts</span>](#Charts)
-  - [<span class="tocnumber">4.1</span>
-    <span class="toctext">Reports</span>](#Reports)
+- [SOBA Web
+  Application](#SOBA_Web_Application)
+- [SOBAcl](#SOBAcl)
+  - [Help](#Help)
+  - [Tables](#Tables)
+- [Charts](#Charts)
+  - [Reports](#Reports)
 
 
-
-## <span id="About_SOBA" class="mw-headline">About SOBA</span>
+## About SOBA
 
 **<a href="http://www.sequenceontology.org/cgi-bin/soba.cgi"
 class="external text" rel="nofollow">SOBA</a>** is a command line tool
@@ -98,7 +72,7 @@ makes extensibility very easy, at least for someone who's willing to
 learn the fairly simple template language of TT as you don't need to
 know Perl or any other programming to use TT.
 
-## <span id="SOBA_Web_Application" class="mw-headline">SOBA Web Application</span>
+## SOBA Web Application
 
 Documentation for the web interface to SOBA is available on the <a
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
@@ -111,13 +85,7 @@ class="external text" rel="nofollow">SOBA Web Application</a> with any
 modern browser that has JavaScript enabled.
 
 
-
-
-
-
 SOBA feature lengths by chromosome
-
-
 
 
 We can constrain the features reported in other ways as well.
@@ -128,7 +96,7 @@ SOBAcl --columns seqid --rows type --data length --data_type mean \
   end => ["<=", "1000000"]' hsap_hg18_demo.gff3
 ```
 
-### <span id="Reports" class="mw-headline">Reports</span>
+### Reports
 
 SOBAcl has support for more complex reports.
 
@@ -155,16 +123,12 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
     three_prime_UTR  1385   569.969675090253
 
 
-
-
 [Categories](Special%253ACategories "Special%253ACategories"):
 
 - [SOBA](Category%253ASOBA "Category%253ASOBA")
 - [Tutorials](Category%253ATutorials "Category%253ATutorials")
 - [2012 Summer
   School](Category%253A2012_Summer_School "Category%253A2012 Summer School")
-
-
 
 
 <span class="smwfactboxhead">Facts about
@@ -174,82 +138,3 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
 |  |  |
 |----|----|
 | [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA") <span class="smwsearch">[+](Special%253ASearchByProperty/Has-20topic/SOBA "Special%253ASearchByProperty/Has-20topic/SOBA")</span> |
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/SOBA_Tutorial_2012" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 20:52 on 27 August
-  2013.</span>
-<!-- - <span id="footer-info-viewcount">27,466 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

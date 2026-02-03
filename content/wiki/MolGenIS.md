@@ -1,24 +1,7 @@
 ---
 title: "MolGenIS"
 ---
-
-
-
-
-<span id="top"></span>
-
-
-
-
-# <span dir="auto">MolGenIS</span>
-
-
-
-
-
-
-
-
+# MolGenIS
 
 
 <a href="http://www.molgenis.org/" rel="nofollow" title="MOLGENIS"><img
@@ -26,9 +9,7 @@ src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images
 alt="MOLGENIS" /></a>
 
 
-
 Status
-
 
 
 - **Mature** release
@@ -36,9 +17,7 @@ Status
 - **Active** support
 
 
-
 Resources
-
 
 
 - <a href="http://www.molgenis.org" class="external text"
@@ -49,7 +28,6 @@ Resources
   class="external text" rel="nofollow">Documentation</a>
 - <a href="http://groups.google.com/group/molgenis-hackers"
   class="external text" rel="nofollow">Mailing List</a>
-
 
 
 <a href="http://www.molgenis.org/" class="external text"
@@ -68,7 +46,7 @@ standards, including
 Pheno-OM and so on. And the fact that each is generated in a standard
 way greatly helps to make sure software still works together.
 
-## <span id="Requirements" class="mw-headline">Requirements</span>
+## Requirements
 
 MOLGENIS is implemented using Java, Freemarker and R. Each MOLGENIS
 instance will happily run on Windows, Linux and Mac boxes with Tomcat or
@@ -76,7 +54,7 @@ Glassfish as web server and MySQL or PostgreSQL as database server.
 Developers wanting to use the generator to create their own MOLGENIS
 version can do so quickly using Eclipse.
 
-## <span id="Contact" class="mw-headline">Contact</span>
+## Contact
 
 To get in contact with other MOLGENIS developers don't hesitate to email
 <a href="mailto:molgenis-hackers@googlegroups.com" class="external text"
@@ -85,7 +63,7 @@ current project admin, Morris Swertz
 (<a href="mailto:m.a.swertz@gmail.com" class="external text"
 rel="nofollow">m.a.swertz@gmail.com</a>)
 
-## <span id="Resources" class="mw-headline">Resources</span>
+## Resources
 
 All MOLGENIS resources are freely available under LGPLv3:
 
@@ -115,89 +93,3 @@ Read more at
 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15059831"
   class="external text" rel="nofollow">the first MOLGENIS (now technically
   completely revamped). In <em>Bioinformatics</em>, 2004</a>
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Database Tools](Category%253ADatabase_Tools "Category%253ADatabase Tools")
-- [External](Category%253AExternal "Category%253AExternal")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/MolGenIS" rel="smw-browse">Browse properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 01:36 on 3 October
-  2012.</span>
-<!-- - <span id="footer-info-viewcount">17,195 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-

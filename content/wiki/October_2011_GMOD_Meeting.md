@@ -1,9 +1,7 @@
 ---
 title: "October 2011 GMOD Meeting"
 ---
-<span id="top"></span>
-
-# <span dir="auto">October 2011 GMOD Meeting</span>
+# October 2011 GMOD Meeting
 
 <table style="vertical-align: middle; border: 2px solid #A6A6BC;"
 data-cellpadding="10">
@@ -41,45 +39,34 @@ Tweet?_ Please use the
 <a href="https://twitter.com/#!/search?q=%23gmod11#!/search?q=#gmod11"
 class="external text" rel="nofollow">#gmod11 hashtag</a>.</span>
 
-## Contents
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Registration</span>](#Registration)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Agenda</span>](#Agenda)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Keynote
-    speakers</span>](#Keynote_speakers)
-    - [<span class="tocnumber">2.1.1</span>
-      <span class="toctext">Gary D. Bader</span>](#Gary_D._Bader)
-    - [<span class="tocnumber">2.1.2</span>
-      <span class="toctext">Michael Brudno</span>](#Michael_Brudno)
-  - [<span class="tocnumber">2.2</span>
-    <span class="toctext">Agenda</span>](#Agenda_2)
-    - [<span class="tocnumber">2.2.1</span> <span class="toctext">Day 1:
-      Wednesday</span>](#Day_1:_Wednesday)
-    - [<span class="tocnumber">2.2.2</span> <span class="toctext">Day 2:
-      Thursday</span>](#Day_2:_Thursday)
-    - [<span class="tocnumber">2.2.3</span> <span class="toctext">Day 3:
-      Friday</span>](#Day_3:_Friday)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Suggested
-    agenda items</span>](#Suggested_agenda_items)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Scheduled
-    Satellite Meetings</span>](#Scheduled_Satellite_Meetings)
-    - [<span class="tocnumber">2.4.1</span> <span class="toctext">Galaxy
-      Workshop</span>](#Galaxy_Workshop)
-    - [<span class="tocnumber">2.4.2</span>
-      <span class="toctext">InterMine Development
-      Meeting</span>](#InterMine_Development_Meeting)
-    - [<span class="tocnumber">2.4.3</span>
-      <span class="toctext">BioMart Workshop</span>](#BioMart_Workshop)
-    - [<span class="tocnumber">2.4.4</span> <span class="toctext">MAKER
-      Workshop</span>](#MAKER_Workshop)
-- [<span class="tocnumber">3</span>
-  <span class="toctext">Logistics</span>](#Logistics)
-  - [<span class="tocnumber">3.1</span>
-    <span class="toctext">Hotel</span>](#Hotel)
-- [<span class="tocnumber">4</span> <span class="toctext">Next
-  Meeting</span>](#Next_Meeting)
+  Registration](#Registration)
+- [Agenda](#Agenda)
+  - [Keynote
+    speakers](#Keynote_speakers)
+    - [Gary D. Bader](#Gary_D._Bader)
+    - [Michael Brudno](#Michael_Brudno)
+  - [Agenda](#Agenda_2)
+    - [Day 1:
+      Wednesday](#Day_1:_Wednesday)
+    - [Day 2:
+      Thursday](#Day_2:_Thursday)
+    - [Day 3:
+      Friday](#Day_3:_Friday)
+  - [Suggested
+    agenda items](#Suggested_agenda_items)
+  - [Scheduled
+    Satellite Meetings](#Scheduled_Satellite_Meetings)
+    - [Galaxy
+      Workshop](#Galaxy_Workshop)
+    - [InterMine Development
+      Meeting](#InterMine_Development_Meeting)
+    - [BioMart Workshop](#BioMart_Workshop)
+    - [MAKER
+      Workshop](#MAKER_Workshop)
+- [Logistics](#Logistics)
+  - [Hotel](#Hotel)
+- [Next
+  Meeting](#Next_Meeting)
 
 The next [GMOD meeting](Meetings "Meetings") is being held in October
 12-13, 2011 at the <a href="http://oicr.on.ca/" class="external text"
@@ -94,15 +81,15 @@ Meeting](September_2010_GMOD_Meeting "September 2010 GMOD Meeting"), or
 the [March 2011 GMOD
 Meeting](March_2011_GMOD_Meeting "March 2011 GMOD Meeting") page.
 
-# <span id="Registration" class="mw-headline">Registration</span>
+# Registration
 
 Registration is now closed.
 
-# <span id="Agenda" class="mw-headline">Agenda</span>
+# Agenda
 
-## <span id="Keynote_speakers" class="mw-headline">Keynote speakers</span>
+## Keynote speakers
 
-### <span id="Gary_D._Bader" class="mw-headline">Gary D. Bader</span>
+### Gary D. Bader
 
 <table>
 <colgroup>
@@ -132,7 +119,7 @@ information on Gary.</td>
 </tbody>
 </table>
 
-### <span id="Michael_Brudno" class="mw-headline">Michael Brudno</span>
+### Michael Brudno
 
 <table>
 <colgroup>
@@ -169,7 +156,7 @@ information on Mike.</p></td>
 </tbody>
 </table>
 
-## <span id="Agenda_2" class="mw-headline">Agenda</span>
+## Agenda
 
 The Main meeting (Days 1 and 2) will take place at HL31 in the <a
 href="http://maps.google.com/maps?q=101+College+Street,+Toronto+ON+M5G+1L7&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=48.106236,85.341797&amp;vpsrc=6&amp;hnear=101+College+St,+Toronto,+Ontario+M5G+1L7,+Canada&amp;t=h&amp;z=16"
@@ -190,7 +177,7 @@ Directions to the HL31 are as follows:
   “Stair 16, Upper Concourse”
 - The corridor to HL31 boardroom is immediately on your left
 
-### <span id="Day_1:_Wednesday" class="mw-headline">Day 1: Wednesday</span>
+### Day 1: Wednesday
 
 <table class="wikitable">
 <colgroup>
@@ -305,7 +292,7 @@ title="Matahari.pdf">PDF</a></td>
 </tbody>
 </table>
 
-### <span id="Day_2:_Thursday" class="mw-headline">Day 2: Thursday</span>
+### Day 2: Thursday
 
 | Time                               | Topic                                                                        | Presenter(s)                                     | Links                                                                                                                          |
 | ---------------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -326,7 +313,7 @@ title="Andrew mcarthur.ppt">PPT</a> |
 | 12:00 | Lunch | | |
 | 1:30 | Lightning talks <span class="small">(Please feel free to give a 5-10 minute talk on whatever; if you are interested enough to put together a talk, others will likely be interested in the content! :-)</span> | | |
 
-### <span id="Day_3:_Friday" class="mw-headline">Day 3: Friday</span>
+### Day 3: Friday
 
 | Time | Workshop                     | Location                  |
 | ---- | ---------------------------- | ------------------------- |
@@ -334,7 +321,7 @@ title="Andrew mcarthur.ppt">PPT</a> |
 | 9:00 | [Galaxy](#Galaxy_Workshop)   | OICR room HL-31           |
 | 2:30 | [MAKER](#MAKER_Workshop)     | OICR, 8th floor Boardroom |
 
-## <span id="Suggested_agenda_items" class="mw-headline">Suggested agenda items</span>
+## Suggested agenda items
 
 Please feel free to add suggested talks or topics for the meeting.
 
@@ -359,7 +346,7 @@ Please feel free to add suggested talks or topics for the meeting.
 - web application integration, the Ambikon integration server (Rob
   Buels)
 
-## <span id="Scheduled_Satellite_Meetings" class="mw-headline">Scheduled Satellite Meetings</span>
+## Scheduled Satellite Meetings
 
 |     |     |     |     |
 | --- | --- | --- | --- |
@@ -393,7 +380,7 @@ rel="nofollow">meeting registration site</a>. If you are interested in
 the [InterMine development meeting](#InterMine_Development_Meeting),
 please let [Richard Smith](User%253ARsmith "User%253ARsmith") know.
 
-### <span id="Galaxy_Workshop" class="mw-headline">[Galaxy](Galaxy.1 "Galaxy") Workshop</span>
+### [Galaxy](Galaxy.1 "Galaxy") Workshop
 
 This workshop will cover an introduction to [Galaxy](Galaxy.1 "Galaxy"),
 including analyzing data with tools and visualizations, using Galaxy in
@@ -428,7 +415,7 @@ rel="nofollow">register</a> and arrive early.
 | [Running and Enhancing your own Galaxy](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/57/GalaxyWorkshop2_2011_10.pdf "File:GalaxyWorkshop2 2011 10.pdf")                                        |
 | [Second Half: Running Your Own Instance](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b6/GalaxyWorkshop3_2011_10.pdf "File:GalaxyWorkshop3 2011 10.pdf")                                       |
 
-### <span id="InterMine_Development_Meeting" class="mw-headline">[InterMine](InterMine "InterMine") Development Meeting</span>
+### [InterMine](InterMine "InterMine") Development Meeting
 
 This meeting is intended for organisations that have an
 [InterMine](InterMine "InterMine"), or are thinking of setting one up,
@@ -441,7 +428,7 @@ biological data-warehousing are welcome to attend (as indeed some already
 are) - please contact [Richard Smith](User%253ARsmith "User%253ARsmith") for
 more details.
 
-### <span id="BioMart_Workshop" class="mw-headline">[BioMart](BioMart "BioMart") Workshop</span>
+### [BioMart](BioMart "BioMart") Workshop
 
 This workshop will include an introduction to the
 [BioMart](BioMart "BioMart") system, followed by a brief demonstration
@@ -477,7 +464,7 @@ The BioMart workshop will be held on Friday, October 14, from 9-12 in
 the Ontario Institute for Cancer Research, 8th floor NorthEast
 Boardroom.
 
-### <span id="MAKER_Workshop" class="mw-headline">[MAKER](MAKER.1 "MAKER") Workshop</span>
+### [MAKER](MAKER.1 "MAKER") Workshop
 
 The MAKER workshop will include a brief introduction to
 [MAKER](MAKER.1 "MAKER") as well as demonstrations in using the pipeline
@@ -499,9 +486,9 @@ The MAKER workshop will be held on Friday, October 14, from 2:30-5:00 in
 the Ontario Institute for Cancer Research, 8th floor NorthEast
 Boardroom.
 
-# <span id="Logistics" class="mw-headline">Logistics</span>
+# Logistics
 
-## <span id="Hotel" class="mw-headline">Hotel</span>
+## Hotel
 
 We don't have a block of rooms reserved due to unfavorable contracts
 offered. We're suggesting staying at
@@ -509,57 +496,7 @@ offered. We're suggesting staying at
 class="external text" rel="nofollow">Delta Chelsea hotel</a>, as it is
 convenient to OICR.
 
-# <span id="Next_Meeting" class="mw-headline">Next Meeting</span>
+# Next Meeting
 
 [April 2012 GMOD
 Meeting](April_2012_GMOD_Meeting "April 2012 GMOD Meeting")
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Meetings](Category%253AMeetings "Category%253AMeetings")
-- [MAKER](Category%253AMAKER "Category%253AMAKER")
-- [Galaxy](Category%253AGalaxy "Category%253AGalaxy")
-- [BioMart](Category%253ABioMart "Category%253ABioMart")
-- [InterMine](Category%253AInterMine "Category%253AInterMine")
-
-## Navigation menu
-
-### Navigation
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-### Documentation
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-### Community
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/October_2011_GMOD_Meeting"
-  rel="smw-browse">Browse properties</a></span>
-
-- <span id="footer-info-lastmod">Last updated at 18:54 on 8 October 2012.</span>
-<!-- - <span id="footer-info-viewcount">328,404 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-<!-- -->

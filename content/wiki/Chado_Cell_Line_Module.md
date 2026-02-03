@@ -1,64 +1,40 @@
 ---
 title: "Chado Cell Line Module"
 ---
+# Chado Cell Line Module
 
 
+  Introduction](#Introduction)
+- [Tables](#Tables)
+  - [Table:
+    **cell_line**](#Table:_cell_line)
+  - [Table:
+    **cell_line_relationship**](#Table:_cell_line_relationship)
+  - [Table:
+    **cell_line_synonym**](#Table:_cell_line_synonym)
+  - [Table:
+    **cell_line_cvterm**](#Table:_cell_line_cvterm)
+  - [Table:
+    **cell_line_dbxref**](#Table:_cell_line_dbxref)
+  - [Table:
+    **cell_lineprop**](#Table:_cell_lineprop)
+  - [Table:
+    **cell_lineprop_pub**](#Table:_cell_lineprop_pub)
+  - [Table:
+    **cell_line_feature**](#Table:_cell_line_feature)
+  - [Table:
+    **cell_line_cvtermprop**](#Table:_cell_line_cvtermprop)
+  - [Table:
+    **cell_line_pub**](#Table:_cell_line_pub)
+  - [Table:
+    **cell_line_library**](#Table:_cell_line_library)
 
 
-<span id="top"></span>
+# Introduction
 
+# Tables
 
-
-
-# <span dir="auto">Chado Cell Line Module</span>
-
-
-
-
-
-
-
-
-
-
-## Contents
-
-
-
-- [<span class="tocnumber">1</span>
-  <span class="toctext">Introduction</span>](#Introduction)
-- [<span class="tocnumber">2</span>
-  <span class="toctext">Tables</span>](#Tables)
-  - [<span class="tocnumber">2.1</span> <span class="toctext">Table:
-    **cell_line**</span>](#Table:_cell_line)
-  - [<span class="tocnumber">2.2</span> <span class="toctext">Table:
-    **cell_line_relationship**</span>](#Table:_cell_line_relationship)
-  - [<span class="tocnumber">2.3</span> <span class="toctext">Table:
-    **cell_line_synonym**</span>](#Table:_cell_line_synonym)
-  - [<span class="tocnumber">2.4</span> <span class="toctext">Table:
-    **cell_line_cvterm**</span>](#Table:_cell_line_cvterm)
-  - [<span class="tocnumber">2.5</span> <span class="toctext">Table:
-    **cell_line_dbxref**</span>](#Table:_cell_line_dbxref)
-  - [<span class="tocnumber">2.6</span> <span class="toctext">Table:
-    **cell_lineprop**</span>](#Table:_cell_lineprop)
-  - [<span class="tocnumber">2.7</span> <span class="toctext">Table:
-    **cell_lineprop_pub**</span>](#Table:_cell_lineprop_pub)
-  - [<span class="tocnumber">2.8</span> <span class="toctext">Table:
-    **cell_line_feature**</span>](#Table:_cell_line_feature)
-  - [<span class="tocnumber">2.9</span> <span class="toctext">Table:
-    **cell_line_cvtermprop**</span>](#Table:_cell_line_cvtermprop)
-  - [<span class="tocnumber">2.10</span> <span class="toctext">Table:
-    **cell_line_pub**</span>](#Table:_cell_line_pub)
-  - [<span class="tocnumber">2.11</span> <span class="toctext">Table:
-    **cell_line_library**</span>](#Table:_cell_line_library)
-
-
-
-# <span id="Introduction" class="mw-headline">Introduction</span>
-
-# <span id="Tables" class="mw-headline">Tables</span>
-
-## <span id="Table:_cell_line" class="mw-headline">Table: **`cell_line`**</span>
+## Table: **`cell_line`**
 
 \<protect\>
 
@@ -159,7 +135,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_relationship" class="mw-headline">Table: **`cell_line_relationship`**</span>
+## Table: **`cell_line_relationship`**
 
 \<protect\>
 
@@ -240,7 +216,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_synonym" class="mw-headline">Table: **`cell_line_synonym`**</span>
+## Table: **`cell_line_synonym`**
 
 \<protect\>
 
@@ -337,7 +313,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_cvterm" class="mw-headline">Table: **`cell_line_cvterm`**</span>
+## Table: **`cell_line_cvterm`**
 
 \<protect\>
 
@@ -428,7 +404,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_dbxref" class="mw-headline">Table: **`cell_line_dbxref`**</span>
+## Table: **`cell_line_dbxref`**
 
 \<protect\>
 
@@ -508,7 +484,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_lineprop" class="mw-headline">Table: **`cell_lineprop`**</span>
+## Table: **`cell_lineprop`**
 
 \<protect\>
 
@@ -595,7 +571,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_lineprop_pub" class="mw-headline">Table: **`cell_lineprop_pub`**</span>
+## Table: **`cell_lineprop_pub`**
 
 \<protect\>
 
@@ -667,7 +643,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_feature" class="mw-headline">Table: **`cell_line_feature`**</span>
+## Table: **`cell_line_feature`**
 
 \<protect\>
 
@@ -748,7 +724,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_cvtermprop" class="mw-headline">Table: **`cell_line_cvtermprop`**</span>
+## Table: **`cell_line_cvtermprop`**
 
 \<protect\>
 
@@ -834,7 +810,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_pub" class="mw-headline">Table: **`cell_line_pub`**</span>
+## Table: **`cell_line_pub`**
 
 \<protect\>
 
@@ -905,7 +881,7 @@ Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
 
-## <span id="Table:_cell_line_library" class="mw-headline">Table: **`cell_line_library`**</span>
+## Table: **`cell_line_library`**
 
 \<protect\>
 
@@ -985,90 +961,3 @@ key](Glossary#Foreign_Key "Glossary") constraints:
 Add your comments here and they will be integrated into the [schema
 documentation](Chado_Schema_Documentation_HOWTO "Chado Schema Documentation HOWTO")
 as part of the next Chado release.
-
-
-
-
-[Categories](Special%253ACategories "Special%253ACategories"):
-
-- [Chado Modules](Category%253AChado_Modules "Category%253AChado Modules")
-- [!Lacking ERD](Category%253A!Lacking_ERD "Category%253A!Lacking ERD")
-
-
-
-
-
-
-## Navigation menu
-
-
-
-
-
-
-
-
-
-### Navigation
-
-
-
-- <span id="n-GMOD-Home">[GMOD Home](Main_Page)</span>
-- <span id="n-Software">[Software](GMOD_Components)</span>
-- <span id="n-Categories-.2F-Tags">[Categories /
-  Tags](Categories)</span>
-
-
-
-
-### Documentation
-
-
-
-- <span id="n-Overview">[Overview](Overview)</span>
-- <span id="n-FAQs">[FAQs](Category%253AFAQ)</span>
-- <span id="n-HOWTOs">[HOWTOs](Category%253AHOWTO)</span>
-- <span id="n-Glossary">[Glossary](Glossary)</span>
-
-
-
-
-### Community
-
-
-
-- <span id="n-GMOD-News">[GMOD News](GMOD_News)</span>
-- <span id="n-Training-.2F-Outreach">[Training /
-  Outreach](Training_and_Outreach)</span>
-- <span id="n-Support">[Support](Support)</span>
-- <span id="n-GMOD-Promotion">[GMOD Promotion](GMOD_Promotion)</span>
-- <span id="n-Meetings">[Meetings](Meetings)</span>
-- <span id="n-Calendar">[Calendar](Calendar)</span>
-
-
-
-
-### Tools
-
-- <span id="t-smwbrowselink"><a href="Special%253ABrowse/Chado_Cell_Line_Module" rel="smw-browse">Browse
-  properties</a></span>
-
-
-
-- <span id="footer-info-lastmod">Last updated at 04:32 on 18 February
-  2015.</span>
-<!-- - <span id="footer-info-viewcount">9,743 page views.</span> -->
-- <span id="footer-info-copyright">Content is available under
-  <a href="http://www.gnu.org/licenses/fdl-1.3.html" class="external"
-  rel="nofollow">a GNU Free Documentation License</a> unless otherwise
-  noted.</span>
-
-<!-- -->
-
-
-
-<!-- -->
-
-
-
-
