@@ -93,6 +93,9 @@ used for prokarytic annotation and assembly.
 
 ## Mailing List
 
-|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users"
+|
+|----|----|----|----|
+|  | Mailing List Link | Description | Archive(s) |
+| **ISGA** | <a href="https://lists.sourceforge.net/lists/listinfo/isga-users" |  |  |
 class="external text" rel="nofollow">isga-users</a> | **ISGA** support, development, and announcements mailing list | <a href="http://gmod.827538.n3.nabble.com/ISGA-Users-f1031703.html"
 class="external text" rel="nofollow">Nabble</a> |

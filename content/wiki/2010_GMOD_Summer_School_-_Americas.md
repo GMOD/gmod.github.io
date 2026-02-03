@@ -317,7 +317,9 @@ Ends</td>
 
 ## Instructors
 
-| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |
+|----|----|----|
+| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text" |
 rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") | <a href="http://www.utah.edu" class="external text"

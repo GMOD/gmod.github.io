@@ -323,4 +323,5 @@ mRNA and exons) and we can click on the gene to see it in GBrowse.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [GBrowse](GBrowse.1 "GBrowse") |

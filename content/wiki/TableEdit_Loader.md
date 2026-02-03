@@ -57,11 +57,20 @@ The loader has a few options that can be set in the instantiation code.
 
 #### Options
 
-| option | input value | explanation |----|----|----| *setVerbose()* | none | Will force the loader to tell you more about what is going on behind the scenes. It's not very pretty output because it is activating print statements throughout the code, but it *will* tell you more than normal. | *setUser()* | A valid Username from the wiki | This will use the given user's id as the owner of the loaded rows. It defaults to the `WikiEntryBot` user (which makes the rows public). | *debug()* | none | Tells the loader to go through all the steps of loading, but not actually do anything permanent. This has the effect of making things run much faster because the wiki isn't accessing the database to do writes. | *printInfo()* | true/false | Will print a few lines at the beginning of execution to tell you about what wiki and what user you're working with. |
+| option | input value | explanation |
+|----|----|----|
+| *setVerbose()* | none | Will force the loader to tell you more about what is going on behind the scenes. It's not very pretty output because it is activating print statements throughout the code, but it *will* tell you more than normal. |
+| *setUser()* | A valid Username from the wiki | This will use the given user's id as the owner of the loaded rows. It defaults to the `WikiEntryBot` user (which makes the rows public). |
+| *debug()* | none | Tells the loader to go through all the steps of loading, but not actually do anything permanent. This has the effect of making things run much faster because the wiki isn't accessing the database to do writes. |
+| *printInfo()* | true/false | Will print a few lines at the beginning of execution to tell you about what wiki and what user you're working with. |
 
 #### Public Methods/Properties
 
-| Name | Info | Code / Usage Ex. |----|----|----| `do_misc_features()` | This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function `http_build_query()`. This string then gets cut up into an array by `parse_str()`. | code | `appendRow()` | This method takes care of when the incoming row gets appended to the box. | code | `mergeRows()` | This method gets called when a new row is trying to be merged into an existing box. It can be <a href="http://en.wikipedia.org/wiki/Overriding" class="external text"
+| Name | Info | Code / Usage Ex. |
+|----|----|----|
+| `do_misc_features()` | This is where you put code to interpret things in the 7th column. To make a string that goes in that column use the PHP function `http_build_query()`. This string then gets cut up into an array by `parse_str()`. | code |
+| `appendRow()` | This method takes care of when the incoming row gets appended to the box. | code |
+| `mergeRows()` | This method gets called when a new row is trying to be merged into an existing box. It can be <a href="http://en.wikipedia.org/wiki/Overriding" class="external text" |  |
 rel="nofollow">overridden</a> to behave differently. | code | `clearOldRows()` | This method gets called with the flag "clear" gets put in the update_type field of IFALT (col 6.) It will delete all the rows in a box. Useful for emptying tables for reloads. | code |
 
 ### Example

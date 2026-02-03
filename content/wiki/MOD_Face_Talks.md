@@ -10,7 +10,9 @@ rel="nofollow">GMOD Meeting, January 2007</a>
 
   
 
-| Time | Slides | Talk |----|----|----| 8:30am | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/Mod-face-07jan-Intro-scain.pdf"
+| Time | Slides | Talk |
+|----|----|----|
+| 8:30am | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/5/56/Mod-face-07jan-Intro-scain.pdf" |  |
 class="internal" title="Mod-face-07jan-Intro-scain.pdf">PDF</a> | Welcome, Introductions, GMOD chat: Scott Cain | 8:50 | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/6e/Mod-face-07jan-Intro-dgg.pdf"
 class="internal" title="Mod-face-07jan-Intro-dgg.pdf">PDF</a> | Intro to MOD Faces: Don Gilbert | 9:00 | <a
 href="http://marmot.bio.indiana.edu/gmod/slides07jan/mod-face-07jan-SGD.pdf"

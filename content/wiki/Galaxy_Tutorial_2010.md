@@ -125,7 +125,10 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password |
+|---------|----------|------------------|
+| Shell | gmod | gmodamericas2010 |
+| MySQL | root | gmodamericas2010 |
 
 ## Caveats
 
@@ -1049,4 +1052,5 @@ are some pointers for learning more:
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Galaxy](Galaxy.1 "Galaxy")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Galaxy](Galaxy.1 "Galaxy") |

@@ -52,11 +52,20 @@ developers present.
 
 Thursday:
 
-|-------------|---------------------------------------------| 9:00-10:00  | Introduction and working group organization | 10:00-12:00 | Working groups                              | 12:00-1:30  | Lunch (on your own)                         | 1:30-4:00   | Working groups                              | 4:00-5:00   | Report on progress                          |
+|-------------|---------------------------------------------|
+| 9:00-10:00 | Introduction and working group organization |
+| 10:00-12:00 | Working groups |
+| 12:00-1:30 | Lunch (on your own) |
+| 1:30-4:00 | Working groups |
+| 4:00-5:00 | Report on progress |
 
 Friday:
 
-|------------|---------------------| 9:00-12:00 | Working groups      | 12:00-1:30 | Lunch (on your own) | 1:30-3:00  | Working groups      | 3:00-3:45  | Report on progress  |
+|------------|---------------------|
+| 9:00-12:00 | Working groups |
+| 12:00-1:30 | Lunch (on your own) |
+| 1:30-3:00 | Working groups |
+| 3:00-3:45 | Report on progress |
 
 - Note: the Tripal steering committee will meet on Friday from 12:00 -
   3:00 pm at the Postcard Bistro in the Handlery.

@@ -111,7 +111,10 @@ installation and usage of Apollo.
 
 \| wild_urls = \| mail =
 
-|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text"
+|
+|----|----|----|----|
+|  | Mailing List Link | Description | Archive(s) |
+| [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") | <a href="https://lists.lbl.gov/sympa/info/apollo" class="external text" |  |  |
 rel="nofollow">apollo</a> | [Apollo](../Apollo.1 "Apollo") and [WebApollo](../WebApollo.1 "WebApollo") mailing list | <a href="http://dir.gmane.org/gmane.science.biology.gmod.apollo"
 class="external text" rel="nofollow">Gmane</a> (2008/04-2010/10), <a href="http://gmod.827538.n3.nabble.com/Apollo-f815553.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+) |  | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-apollo-cmts"

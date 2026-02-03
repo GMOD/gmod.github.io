@@ -378,7 +378,15 @@ for speed.
 The chado relational model defines a fixed set of attributes for a
 [feature](Chado_Tables#Table:_feature "Chado Tables"):
 
-| Field | Required | Description |----|----|----| dbxref_id | no | namespaced identifier (foreign key) | name | no | A not-guaranteed-unique identifier that is useful to a human | uniquename | yes | name or identifier that is unique in the database | residues | no | DNA, RNA or protein sequence | md5checksum | no | signature of sequence | seqlen | no | length of sequence (may be present even if residues is absent) | type_id | yes | <a href="http://sequenceontology.org" class="external text"
+| Field | Required | Description |
+|----|----|----|
+| dbxref_id | no | namespaced identifier (foreign key) |
+| name | no | A not-guaranteed-unique identifier that is useful to a human |
+| uniquename | yes | name or identifier that is unique in the database |
+| residues | no | DNA, RNA or protein sequence |
+| md5checksum | no | signature of sequence |
+| seqlen | no | length of sequence (may be present even if residues is absent) |
+| type_id | yes | <a href="http://sequenceontology.org" class="external text" |
 rel="nofollow">Sequence Ontology</a> feature type (foreign key) |
 
   

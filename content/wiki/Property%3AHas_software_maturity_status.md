@@ -185,4 +185,6 @@ class="smwbrowse"></span></td>
 
 </span>
 
-|----|----| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Allows value](Property%253AAllows_value "Property:Allows value")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | pre-alpha , alpha release , beta release , release candidate  and mature  | <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span>
+|----|----|
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Allows value](Property%253AAllows_value "Property:Allows value")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> | pre-alpha , alpha release , beta release , release candidate  and mature |
+| <span class="smw-highlighter" data-type="1" state="inline" data-title="Property"><span class="smwbuiltin">[Has type](Property%253AHas_type "Property:Has type")</span><span class="smwttcontent">This property is a special property in this wiki.</span></span> |  |

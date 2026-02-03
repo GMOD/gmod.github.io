@@ -146,7 +146,14 @@ with a different set of tables
 
 And there are a bevy of relationships between these tables.
 
-|     |-----------------|-----|-----------------|--------------------------------| Organism        | M:M | Biotype         | Biotype         | 1:M | Stock           | there are 3 different 1:M rels | Stock           | 1:M | Individual      | Crossexperiment | 1:M | Individual      | Individual      | 1:M | Crossexperiemnt | Individual      | 1:M | Specimen        | Biotype         | M:M | Individual      All of this tables describe some unit/group of biology/life, ranging
+|
+|-----------------|-----|-----------------|--------------------------------|
+| Organism | M:M | Biotype | Biotype |
+| 1:M | Stock | there are 3 different 1:M rels | Stock |
+| 1:M | Individual | Crossexperiment | 1:M |
+| Individual | Individual | 1:M | Crossexperiemnt |
+| Individual | 1:M | Specimen | Biotype |
+| M:M | Individual      All of this tables describe some unit/group of biology/life, ranging |  |  |
 from species (organism) down to tissue in hand (specimen). The HDB
 design has several *structurally identical* tables in HDB for the
 various levels for different types of data (phenotype, images, ...).
@@ -285,7 +292,11 @@ table](Chado_Phenotype_Module#Table:_phenotype "Chado Phenotype Module").
 The phenotype table has 4 foreign keys pointing to the [cvterm
 table](Chado_CV_Module#Table:_cvterm "Chado CV Module"):
 
-|----|----| observable_id | The entity: e.g. anatomy_part, biological_process. | attr_id | Phenotypic attribute (quality, property, attribute, character) - drawn from PATO. | cvalue_id | Phenotype attribute value (state). *There is also a* value *text column which can hold unconstrained text. In any given record, exactly one of cvalue and value should have a non-null value.* | assay_id | Evidence type |
+|----|----|
+| observable_id | The entity: e.g. anatomy_part, biological_process. |
+| attr_id | Phenotypic attribute (quality, property, attribute, character) - drawn from PATO. |
+| cvalue_id | Phenotype attribute value (state). *There is also a* value *text column which can hold unconstrained text. In any given record, exactly one of cvalue and value should have a non-null value.* |
+| assay_id | Evidence type |
 
 Any of these 4 columns can be null.
 

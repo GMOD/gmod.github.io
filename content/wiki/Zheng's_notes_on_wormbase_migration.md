@@ -29,7 +29,24 @@ continue at** [learn XMLXORT](Learn_XMLXORT "Learn XMLXORT")
 
 focus on sequence module first. using gff3 files as input.
 
-| gff3 | chado table |----|----| seqid | featureloc.srcfeature_id, featureloc.rank=0 | source | feature_dbxref.dbxref_id, dbxref.db_id(db.name='GFF source')/accession/version | type | feature.type_id, cvterm.cvterm_id/dbxref_id, cv.cv_id, cvterm_dbxref.cvterm_id | start | featureloc.fmin | end | featureloc.fmax | score | strand | featureloc.strand | phase | featureloc.phase | attribute ID | feature.name, feature.uniquename if ID is unique otherwise 'auto'+feature.feature_id | attribute Name | feature.name | attribute Alias | feature_synonym.synonym_id, synonym.name/synonym_sgml type_id(cvterm.cvterm_id for syn) | attribute Dbxref | feature_dbxref, another dbxref, see column3(type) | attribute Gap | attribute Note | featureprop | custom tag(lower case) | db.name=null, cv.name=local, dbxref.accession='autocreated:xxx' | Ontology_term | feature_cvterm.cvterm_id, feature_cvterm_dbxref.feature_cvterm_id, feature_cvterm_pub, feature_cvtermprop | Parent | Target gff3 columns and chado table relationship
+| gff3 | chado table |
+|----|----|
+| seqid | featureloc.srcfeature_id, featureloc.rank=0 |
+| source | feature_dbxref.dbxref_id, dbxref.db_id(db.name='GFF source')/accession/version |
+| type | feature.type_id, cvterm.cvterm_id/dbxref_id, cv.cv_id, cvterm_dbxref.cvterm_id |
+| start | featureloc.fmin |
+| end | featureloc.fmax |
+| score | strand |
+| featureloc.strand | phase |
+| featureloc.phase | attribute ID |
+| feature.name, feature.uniquename if ID is unique otherwise 'auto'+feature.feature_id | attribute Name |
+| feature.name | attribute Alias |
+| feature_synonym.synonym_id, synonym.name/synonym_sgml type_id(cvterm.cvterm_id for syn) | attribute Dbxref |
+| feature_dbxref, another dbxref, see column3(type) | attribute Gap |
+| attribute Note | featureprop |
+| custom tag(lower case) | db.name=null, cv.name=local, dbxref.accession='autocreated:xxx' |
+| Ontology_term | feature_cvterm.cvterm_id, feature_cvterm_dbxref.feature_cvterm_id, feature_cvterm_pub, feature_cvtermprop |
+| Parent | Target gff3 columns and chado table relationship |
 
 feature.dbxref_id is nullable. Dbxref could be lower-case
 

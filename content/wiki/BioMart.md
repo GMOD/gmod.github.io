@@ -14,7 +14,9 @@ alt="BioMart" /></a>
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | linux , unix , os x , windows  and web  | [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://www.biomart.org/download.html" class="external free"
+|----|----|
+| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | linux , unix , os x , windows  and web |
+| [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://www.biomart.org/download.html" class="external free" |
 rel="nofollow">http://www.biomart.org/download.html</a> , <a href="http://www.biomart.org/" class="external free"
 rel="nofollow">http://www.biomart.org/</a>  and <a href="http://www.biomart.org/community.html" class="external free"
 rel="nofollow">http://www.biomart.org/community.html</a>  | [Has description](Property%253AHas_description "Property:Has description") | BioMart is a freely available, open source<span class="smw-highlighter" data-type="2" state="persistent" data-title="Information"><span class="smwtext"> … </span><span class="smwttcontent">BioMart is a freely available, open source, federated database system that provides unified access to disparate, geographically distributed data sources. It is designed to be data agnostic and platform independent, such that existing databases can easily be incorporated into the BioMart framework.</span></span>e incorporated into the BioMart framework.  and Links to BioMart installations in the wild  | [Has development status](Property%253AHas_development_status "Property:Has development status") | active  | [Has input format](Property%253AHas_input_format "Property:Has input format") | Any data that can be stored in the relational database  | [Has licence](Property%253AHas_licence "Property:Has licence") | <a href="http://opensource.org/licenses/LGPL-3.0" class="external text"

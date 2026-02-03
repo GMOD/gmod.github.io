@@ -363,7 +363,15 @@ like to make to your shell environment, you can add those changes here.
 There are several other directories that are on the /data partition so
 they will be saved when you go to a new instance as well. These are:
 
-|----|----| /data/etc/gbrowse | The config directory for GBrowse. | /data/etc/postgresql | The config directory for PostgreSQL | /data/opt | A good place to install any other software you want to use | /data/var/lib/gbrowse | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. | /data/var/lib/postgresql | Files for the PostgreSQL database | /data/var/www/.htaccess | The htaccess file for the main Drupal site | /data/var/www/jbrowse/data | All of the data files needed for running JBrowse | /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) |
+|----|----|
+| /data/etc/gbrowse | The config directory for GBrowse. |
+| /data/etc/postgresql | The config directory for PostgreSQL |
+| /data/opt | A good place to install any other software you want to use |
+| /data/var/lib/gbrowse | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. |
+| /data/var/lib/postgresql | Files for the PostgreSQL database |
+| /data/var/www/.htaccess | The htaccess file for the main Drupal site |
+| /data/var/www/jbrowse/data | All of the data files needed for running JBrowse |
+| /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) |
 
 In all instances, the original files and directories where moved to the
 /data partition and replaced with symlinks to their new locations. Note

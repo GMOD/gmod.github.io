@@ -162,7 +162,12 @@ Tables referencing this one via Foreign Key Constraints:
 stock_cvterm links a stock to cvterms. This is for secondary cvterms;
 primary cvterms should use stock.type_id.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stock_cvterm_id | serial | *PRIMARY KEY* | [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stock_cvterm_id | serial | *PRIMARY KEY* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_cvterm Structure
 
@@ -236,7 +241,11 @@ Simple table linking a stock to a genotype. Features with genotypes can
 be linked to stocks thru feature_genotype -\> genotype -\>
 stock_genotype -\> stock.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stock_genotype_id | serial | *PRIMARY KEY* | [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* | [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stock_genotype_id | serial | *PRIMARY KEY* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](Chado_Tables#Table:_genotype "Chado Tables") | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_genotype Structure
 
@@ -249,7 +258,11 @@ stock_genotype Structure
 Provenance. Linking table between stocks and, for example, a stocklist
 computer file.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stock_pub_id | serial | *PRIMARY KEY* | [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stock_pub_id | serial | *PRIMARY KEY* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_pub Structure
 
@@ -259,7 +272,14 @@ stock_pub Structure
 
 ## Table: stock_relationship
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stock_relationship_id | serial | *PRIMARY KEY* | [stock](Chado_Tables#Table:_stock "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [stock](Chado_Tables#Table:_stock "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stock_relationship_id | serial | *PRIMARY KEY* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 stock_relationship Structure
 
@@ -276,7 +296,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a stock_relationship in the form
 of a publication.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stock_relationship_pub_id | serial | *PRIMARY KEY* | [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables") | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stock_relationship_pub_id | serial | *PRIMARY KEY* |
+| [stock_relationship](Chado_Tables#Table:_stock_relationship "Chado Tables") | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_relationship_pub Structure
 
@@ -364,7 +388,11 @@ Tables referencing this one via Foreign Key Constraints:
 stockcollection_stock links a stock collection to the stocks which are
 contained in the collection.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stockcollection_stock_id | serial | *PRIMARY KEY* | [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* | [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stockcollection_stock_id | serial | *PRIMARY KEY* |
+| [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockcollection_stock Structure
 
@@ -378,7 +406,13 @@ The table stockcollectionprop contains the value of the stock collection
 such as website/email URLs; the value of the stock collection order
 URLs.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stockcollectionprop_id | serial | *PRIMARY KEY* | [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stockcollectionprop_id | serial | *PRIMARY KEY* |
+| [stockcollection](Chado_Tables#Table:_stockcollection "Chado Tables") | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 stockcollectionprop Structure
 
@@ -394,7 +428,13 @@ schema, and is completely extensible. There is a unique constraint,
 stockprop_c1, for the combination of stock_id, rank, and type_id.
 Multivalued property-value pairs must be differentiated by rank.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stockprop_id | serial | *PRIMARY KEY* | [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stockprop_id | serial | *PRIMARY KEY* |
+| [stock](Chado_Tables#Table:_stock "Chado Tables") | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 stockprop Structure
 
@@ -411,7 +451,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any stockprop assignment can optionally be supported by a
 publication.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | stockprop_pub_id | serial | *PRIMARY KEY* | [stockprop](Chado_Tables#Table:_stockprop "Chado Tables") | stockprop_id | integer | *UNIQUE#1 NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | stockprop_pub_id | serial | *PRIMARY KEY* |
+| [stockprop](Chado_Tables#Table:_stockprop "Chado Tables") | stockprop_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockprop_pub Structure
 

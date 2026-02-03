@@ -1216,4 +1216,5 @@ Now have fun annotating!!!
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [WebApollo](WebApollo.1 "WebApollo") |

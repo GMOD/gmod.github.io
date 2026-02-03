@@ -213,7 +213,14 @@ WHERE elementresult.signal > 0;
 This represents the scanning of hybridized material. The output of this
 process is typically a digital image of an array.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | acquisition_id | serial | *PRIMARY KEY* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | [channel](Chado_Tables#Table:_channel "Chado Tables") | channel_id | integer | acquisitiondate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text | *UNIQUE* |  | uri | text acquisition Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | acquisition_id | serial | *PRIMARY KEY* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* |
+| [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | [channel](Chado_Tables#Table:_channel "Chado Tables") |
+| channel_id | integer | acquisitiondate | timestamp without time zone |
+| *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text |
+| *UNIQUE* |  | uri | text acquisition Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -230,7 +237,14 @@ Tables referencing this one via Foreign Key Constraints:
 Multiple monochrome images may be merged to form a multi-color image.
 Red-green images of 2-channel hybridizations are an example of this.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | acquisition_relationship_id | serial | *PRIMARY KEY* | [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* | [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | acquisition_relationship_id | serial | *PRIMARY KEY* |
+| [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 acquisition_relationship Structure
 
@@ -242,7 +256,13 @@ acquisition_relationship Structure
 
 Parameters associated with image acquisition.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | acquisitionprop_id | serial | *PRIMARY KEY* | [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | acquisition_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | acquisitionprop_id | serial | *PRIMARY KEY* |
+| [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | acquisition_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 acquisitionprop Structure
 
@@ -257,7 +277,20 @@ generate physical slides, etc. It contains layout information, as well
 as global array properties, such as material (glass, nylon) and spot
 dimensions (in rows/columns).
 
-| F-Key | Name | Type | Description |----|----|----|----|  | arraydesign_id | serial | *PRIMARY KEY* | [contact](Chado_Tables#Table:_contact "Chado Tables") | manufacturer_id | integer | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | platformtype_id | integer | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | substratetype_id | integer | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | name | text | *UNIQUE NOT NULL* |  | version | text | description | text | array_dimensions | text | element_dimensions | text | num_of_elements | integer | num_array_columns | integer | num_array_rows | integer | num_grid_columns | integer | num_grid_rows | integer | num_sub_columns | integer | num_sub_rows | integer arraydesign Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | arraydesign_id | serial | *PRIMARY KEY* |
+| [contact](Chado_Tables#Table:_contact "Chado Tables") | manufacturer_id | integer | *NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | platformtype_id | integer | *NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | substratetype_id | integer | [protocol](Chado_Tables#Table:_protocol "Chado Tables") |
+| protocol_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id |
+| integer | name | text | *UNIQUE NOT NULL* |
+|  | version | text | description |
+| text | array_dimensions | text | element_dimensions |
+| text | num_of_elements | integer | num_array_columns |
+| integer | num_array_rows | integer | num_grid_columns |
+| integer | num_grid_rows | integer | num_sub_columns |
+| integer | num_sub_rows | integer arraydesign Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -273,7 +306,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 Extra array design properties that are not accounted for in arraydesign.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | arraydesignprop_id | serial | *PRIMARY KEY* | [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | arraydesignprop_id | serial | *PRIMARY KEY* |
+| [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 arraydesignprop Structure
 
@@ -287,7 +326,16 @@ An assay consists of a physical instance of an array, combined with the
 conditions used to create the array (protocols, technician information).
 The assay can be thought of as a hybridization.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | assay_id | serial | *PRIMARY KEY* | [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *NOT NULL* | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | assaydate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | arrayidentifier | text | arraybatchidentifier | text | [contact](Chado_Tables#Table:_contact "Chado Tables") | operator_id | integer | *NOT NULL* | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | name | text | *UNIQUE* |  | description | text assay Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | assay_id | serial | *PRIMARY KEY* |
+| [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *NOT NULL* |
+| [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | assaydate |
+| timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | arrayidentifier |
+| text | arraybatchidentifier | text | [contact](Chado_Tables#Table:_contact "Chado Tables") |
+| operator_id | integer | *NOT NULL* | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") |
+| dbxref_id | integer | name | text |
+| *UNIQUE* |  | description | text assay Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -309,7 +357,13 @@ A biomaterial can be hybridized many times (technical replicates), or
 combined with other biomaterials in a single hybridization (for
 two-channel arrays).
 
-| F-Key | Name | Type | Description |----|----|----|----|  | assay_biomaterial_id | serial | *PRIMARY KEY* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [channel](Chado_Tables#Table:_channel "Chado Tables") | channel_id | integer | *UNIQUE#1* |  | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | assay_biomaterial_id | serial | *PRIMARY KEY* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [channel](Chado_Tables#Table:_channel "Chado Tables") | channel_id | integer | *UNIQUE#1* |
+|  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 assay_biomaterial Structure
 
@@ -321,7 +375,11 @@ assay_biomaterial Structure
 
 Link assays to projects.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | assay_project_id | serial | *PRIMARY KEY* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* | [project](Chado_Tables#Table:_project "Chado Tables") | project_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | assay_project_id | serial | *PRIMARY KEY* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [project](Chado_Tables#Table:_project "Chado Tables") | project_id | integer | *UNIQUE#1 NOT NULL* |
 
 assay_project Structure
 
@@ -333,7 +391,13 @@ assay_project Structure
 
 Extra assay properties that are not accounted for in assay.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | assayprop_id | serial | *PRIMARY KEY* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | assayprop_id | serial | *PRIMARY KEY* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 assayprop Structure
 
@@ -349,7 +413,13 @@ cells, serum) that may have been processed. Processed biomaterials
 should be traceable back to raw biomaterials via the
 biomaterialrelationship table.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | biomaterial_id | serial | *PRIMARY KEY* | [organism](Chado_Tables#Table:_organism "Chado Tables") | taxon_id | integer | [contact](Chado_Tables#Table:_contact "Chado Tables") | biosourceprovider_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | name | text | *UNIQUE* |  | description | text biomaterial Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_id | serial | *PRIMARY KEY* |
+| [organism](Chado_Tables#Table:_organism "Chado Tables") | taxon_id | integer | [contact](Chado_Tables#Table:_contact "Chado Tables") |
+| biosourceprovider_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id |
+| integer | name | text | *UNIQUE* |
+|  | description | text biomaterial Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -366,7 +436,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: biomaterial_dbxref
 
-| F-Key | Name | Type | Description |----|----|----|----|  | biomaterial_dbxref_id | serial | *PRIMARY KEY* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_dbxref_id | serial | *PRIMARY KEY* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 biomaterial_dbxref Structure
 
@@ -379,7 +453,12 @@ biomaterial_dbxref Structure
 Relate biomaterials to one another. This is a way to track a series of
 treatments or material splits/merges, for instance.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | biomaterial_relationship_id | serial | *PRIMARY KEY* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_relationship_id | serial | *PRIMARY KEY* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
 
 biomaterial_relationship Structure
 
@@ -392,7 +471,13 @@ biomaterial_relationship Structure
 Link biomaterials to treatments. Treatments have an order of operations
 (rank), and associated measurements (unittype_id, value).
 
-| F-Key | Name | Type | Description |----|----|----|----|  | biomaterial_treatment_id | serial | *PRIMARY KEY* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [treatment](Chado_Tables#Table:_treatment "Chado Tables") | treatment_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id | integer | value | real | rank | integer | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_treatment_id | serial | *PRIMARY KEY* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [treatment](Chado_Tables#Table:_treatment "Chado Tables") | treatment_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id | integer | value |
+| real | rank | integer | *NOT NULL* |
 
 biomaterial_treatment Structure
 
@@ -404,7 +489,13 @@ biomaterial_treatment Structure
 
 Extra biomaterial properties that are not accounted for in biomaterial.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | biomaterialprop_id | serial | *PRIMARY KEY* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterialprop_id | serial | *PRIMARY KEY* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 biomaterialprop Structure
 
@@ -417,7 +508,11 @@ biomaterialprop Structure
 Different array platforms can record signals from one or more channels
 (cDNA arrays typically use two CCD, but Affymetrix uses only one).
 
-| F-Key | Name       | Type   | Description       |-------|------------|--------|-------------------|       | channel_id | serial | *PRIMARY KEY*     |       | name       | text   | *UNIQUE NOT NULL* |       | definition | text   | *NOT NULL*        |
+| F-Key | Name       | Type   | Description |
+|-------|------------|--------|-------------------|
+|  | channel_id | serial | *PRIMARY KEY* |
+|  | name | text | *UNIQUE NOT NULL* |
+|  | definition | text | *NOT NULL* |
 
 channel Structure
 
@@ -432,7 +527,15 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: control
 
-| F-Key | Name | Type | Description |----|----|----|----|  | control_id | serial | *PRIMARY KEY* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* | [tableinfo](Chado_Tables#Table:_tableinfo "Chado Tables") | tableinfo_id | integer | *NOT NULL* |  | row_id | integer | *NOT NULL* |  | name | text | value | text | rank | integer | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | control_id | serial | *PRIMARY KEY* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* |
+| [tableinfo](Chado_Tables#Table:_tableinfo "Chado Tables") | tableinfo_id | integer | *NOT NULL* |
+|  | row_id | integer | *NOT NULL* |
+|  | name | text | value |
+| text | rank | integer | *NOT NULL* |
 
 control Structure
 
@@ -445,7 +548,13 @@ control Structure
 Represents a feature of the array. This is typically a region of the
 array coated or bound to DNA.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | element_id | serial | *PRIMARY KEY* | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1* | [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer element Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | element_id | serial | *PRIMARY KEY* |
+| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1* |
+| [arraydesign](Chado_Tables#Table:_arraydesign "Chado Tables") | arraydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") |
+| dbxref_id | integer element Structure |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -462,7 +571,14 @@ Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
 measurement, for instance.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | element_relationship_id | serial | *PRIMARY KEY* | [element](Chado_Tables#Table:_element "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* | [element](Chado_Tables#Table:_element "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | element_relationship_id | serial | *PRIMARY KEY* |
+| [element](Chado_Tables#Table:_element "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [element](Chado_Tables#Table:_element "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 element_relationship Structure
 
@@ -476,7 +592,12 @@ An element on an array produces a measurement when hybridized to a
 biomaterial (traceable through quantification_id). This is the base data
 from which tables that actually contain data inherit.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | elementresult_id | serial | *PRIMARY KEY* | [element](Chado_Tables#Table:_element "Chado Tables") | element_id | integer | *UNIQUE#1 NOT NULL* | [quantification](Chado_Tables#Table:_quantification "Chado Tables") | quantification_id | integer | *UNIQUE#1 NOT NULL* |  | signal | double precision | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | elementresult_id | serial | *PRIMARY KEY* |
+| [element](Chado_Tables#Table:_element "Chado Tables") | element_id | integer | *UNIQUE#1 NOT NULL* |
+| [quantification](Chado_Tables#Table:_quantification "Chado Tables") | quantification_id | integer | *UNIQUE#1 NOT NULL* |
+|  | signal | double precision | *NOT NULL* |
 
 elementresult Structure
 
@@ -494,7 +615,14 @@ Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
 measurement, for instance.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | elementresult_relationship_id | serial | *PRIMARY KEY* | [elementresult](Chado_Tables#Table:_elementresult "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* | [elementresult](Chado_Tables#Table:_elementresult "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | elementresult_relationship_id | serial | *PRIMARY KEY* |
+| [elementresult](Chado_Tables#Table:_elementresult "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [elementresult](Chado_Tables#Table:_elementresult "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 elementresult_relationship Structure
 
@@ -504,7 +632,13 @@ elementresult_relationship Structure
 
 ## Table: magedocumentation
 
-| F-Key | Name | Type | Description |----|----|----|----|  | magedocumentation_id | serial | *PRIMARY KEY* | [mageml](Chado_Tables#Table:_mageml "Chado Tables") | mageml_id | integer | *NOT NULL* | [tableinfo](Chado_Tables#Table:_tableinfo "Chado Tables") | tableinfo_id | integer | *NOT NULL* |  | row_id | integer | *NOT NULL* |  | mageidentifier | text | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | magedocumentation_id | serial | *PRIMARY KEY* |
+| [mageml](Chado_Tables#Table:_mageml "Chado Tables") | mageml_id | integer | *NOT NULL* |
+| [tableinfo](Chado_Tables#Table:_tableinfo "Chado Tables") | tableinfo_id | integer | *NOT NULL* |
+|  | row_id | integer | *NOT NULL* |
+|  | mageidentifier | text | *NOT NULL* |
 
 magedocumentation Structure
 
@@ -517,7 +651,11 @@ magedocumentation Structure
 This table is for storing extra bits of MAGEml in a denormalized form.
 More normalization would require many more tables.
 
-| F-Key | Name         | Type   | Description   |-------|--------------|--------|---------------|       | mageml_id    | serial | *PRIMARY KEY* |       | mage_package | text   | *NOT NULL*    |       | mage_ml      | text   | *NOT NULL*    |
+| F-Key | Name         | Type   | Description |
+|-------|--------------|--------|---------------|
+|  | mageml_id | serial | *PRIMARY KEY* |
+|  | mage_package | text | *NOT NULL* |
+|  | mage_ml | text | *NOT NULL* |
 
 mageml Structure
 
@@ -533,7 +671,15 @@ Tables referencing this one via Foreign Key Constraints:
 
 Procedural notes on how data was prepared and processed.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | protocol_id | serial | *PRIMARY KEY* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | name | text | *UNIQUE NOT NULL* |  | uri | text | protocoldescription | text | hardwaredescription | text | softwaredescription | text protocol Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | protocol_id | serial | *PRIMARY KEY* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") |
+| dbxref_id | integer | name | text |
+| *UNIQUE NOT NULL* |  | uri | text |
+| protocoldescription | text | hardwaredescription | text |
+| softwaredescription | text protocol Structure |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -553,7 +699,14 @@ Tables referencing this one via Foreign Key Constraints:
 Parameters related to a protocol. For example, if the protocol is a
 soak, this might include attributes of bath temperature and duration.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | protocolparam_id | serial | *PRIMARY KEY* | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | *NOT NULL* |  | name | text | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | datatype_id | integer | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | unittype_id | integer | value | text | rank | integer | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | protocolparam_id | serial | *PRIMARY KEY* |
+| [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | *NOT NULL* |
+|  | name | text | *NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | datatype_id | integer | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") |
+| unittype_id | integer | value | text |
+| rank | integer | *NOT NULL* |  |
 
 protocolparam Structure
 
@@ -566,7 +719,16 @@ protocolparam Structure
 Quantification is the transformation of an image acquisition to numeric
 data. This typically involves statistical procedures.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | quantification_id | serial | *PRIMARY KEY* | [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | acquisition_id | integer | *NOT NULL* | [contact](Chado_Tables#Table:_contact "Chado Tables") | operator_id | integer | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* |  | quantificationdate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text | *UNIQUE#1* |  | uri | text quantification Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | quantification_id | serial | *PRIMARY KEY* |
+| [acquisition](Chado_Tables#Table:_acquisition "Chado Tables") | acquisition_id | integer | *NOT NULL* |
+| [contact](Chado_Tables#Table:_contact "Chado Tables") | operator_id | integer | [protocol](Chado_Tables#Table:_protocol "Chado Tables") |
+| protocol_id | integer | [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id |
+| integer | *UNIQUE#1 NOT NULL* |  | quantificationdate |
+| timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name |
+| text | *UNIQUE#1* |  | uri |
+| text quantification Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -583,7 +745,12 @@ Tables referencing this one via Foreign Key Constraints:
 There may be multiple rounds of quantification, this allows us to keep
 an audit trail of what values went where.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | quantification_relationship_id | serial | *PRIMARY KEY* | [quantification](Chado_Tables#Table:_quantification "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* | [quantification](Chado_Tables#Table:_quantification "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | quantification_relationship_id | serial | *PRIMARY KEY* |
+| [quantification](Chado_Tables#Table:_quantification "Chado Tables") | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [quantification](Chado_Tables#Table:_quantification "Chado Tables") | object_id | integer | *UNIQUE#1 NOT NULL* |
 
 quantification_relationship Structure
 
@@ -596,7 +763,13 @@ quantification_relationship Structure
 Extra quantification properties that are not accounted for in
 quantification.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | quantificationprop_id | serial | *PRIMARY KEY* | [quantification](Chado_Tables#Table:_quantification "Chado Tables") | quantification_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | quantificationprop_id | serial | *PRIMARY KEY* |
+| [quantification](Chado_Tables#Table:_quantification "Chado Tables") | quantification_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 quantificationprop Structure
 
@@ -606,7 +779,13 @@ quantificationprop Structure
 
 ## Table: study
 
-| F-Key | Name | Type | Description |----|----|----|----|  | study_id | serial | *PRIMARY KEY* | [contact](Chado_Tables#Table:_contact "Chado Tables") | contact_id | integer | *NOT NULL* | [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") | dbxref_id | integer | name | text | *UNIQUE NOT NULL* |  | description | text study Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | study_id | serial | *PRIMARY KEY* |
+| [contact](Chado_Tables#Table:_contact "Chado Tables") | contact_id | integer | *NOT NULL* |
+| [pub](Chado_Tables#Table:_pub "Chado Tables") | pub_id | integer | [dbxref](Chado_Tables#Table:_dbxref "Chado Tables") |
+| dbxref_id | integer | name | text |
+| *UNIQUE NOT NULL* |  | description | text study Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -619,7 +798,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: study_assay
 
-| F-Key | Name | Type | Description |----|----|----|----|  | study_assay_id | serial | *PRIMARY KEY* | [study](Chado_Tables#Table:_study "Chado Tables") | study_id | integer | *UNIQUE#1 NOT NULL* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | study_assay_id | serial | *PRIMARY KEY* |
+| [study](Chado_Tables#Table:_study "Chado Tables") | study_id | integer | *UNIQUE#1 NOT NULL* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *UNIQUE#1 NOT NULL* |
 
 study_assay Structure
 
@@ -629,7 +812,11 @@ study_assay Structure
 
 ## Table: studydesign
 
-| F-Key | Name | Type | Description |----|----|----|----|  | studydesign_id | serial | *PRIMARY KEY* | [study](Chado_Tables#Table:_study "Chado Tables") | study_id | integer | *NOT NULL* |  | description | text studydesign Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | studydesign_id | serial | *PRIMARY KEY* |
+| [study](Chado_Tables#Table:_study "Chado Tables") | study_id | integer | *NOT NULL* |
+|  | description | text studydesign Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -642,7 +829,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: studydesignprop
 
-| F-Key | Name | Type | Description |----|----|----|----|  | studydesignprop_id | serial | *PRIMARY KEY* | [studydesign](Chado_Tables#Table:_studydesign "Chado Tables") | studydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | studydesignprop_id | serial | *PRIMARY KEY* |
+| [studydesign](Chado_Tables#Table:_studydesign "Chado Tables") | studydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 studydesignprop Structure
 
@@ -652,7 +845,13 @@ studydesignprop Structure
 
 ## Table: studyfactor
 
-| F-Key | Name | Type | Description |----|----|----|----|  | studyfactor_id | serial | *PRIMARY KEY* | [studydesign](Chado_Tables#Table:_studydesign "Chado Tables") | studydesign_id | integer | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | name | text | *NOT NULL* |  | description | text studyfactor Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | studyfactor_id | serial | *PRIMARY KEY* |
+| [studydesign](Chado_Tables#Table:_studydesign "Chado Tables") | studydesign_id | integer | *NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | name |
+| text | *NOT NULL* |  | description |
+| text studyfactor Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -664,7 +863,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: studyfactorvalue
 
-| F-Key | Name | Type | Description |----|----|----|----|  | studyfactorvalue_id | serial | *PRIMARY KEY* | [studyfactor](Chado_Tables#Table:_studyfactor "Chado Tables") | studyfactor_id | integer | *NOT NULL* | [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* |  | factorvalue | text | name | text | rank | integer | *NOT NULL* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | studyfactorvalue_id | serial | *PRIMARY KEY* |
+| [studyfactor](Chado_Tables#Table:_studyfactor "Chado Tables") | studyfactor_id | integer | *NOT NULL* |
+| [assay](Chado_Tables#Table:_assay "Chado Tables") | assay_id | integer | *NOT NULL* |
+|  | factorvalue | text | name |
+| text | rank | integer | *NOT NULL* |
 
 studyfactorvalue Structure
 
@@ -677,7 +882,14 @@ studyfactorvalue Structure
 A biomaterial may undergo multiple treatments. Examples of treatments:
 apoxia, fluorophore and biotin labeling.
 
-| F-Key | Name | Type | Description |----|----|----|----|  | treatment_id | serial | *PRIMARY KEY* |  | rank | integer | *NOT NULL* | [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* | [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | name | text treatment Structure
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | treatment_id | serial | *PRIMARY KEY* |
+|  | rank | integer | *NOT NULL* |
+| [biomaterial](Chado_Tables#Table:_biomaterial "Chado Tables") | biomaterial_id | integer | *NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *NOT NULL* |
+| [protocol](Chado_Tables#Table:_protocol "Chado Tables") | protocol_id | integer | name |
+| text treatment Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 

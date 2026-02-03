@@ -119,4 +119,19 @@ Friday, 19 January
 <a href="http://www.gmod.org/middleware-bake-off" class="external text"
 rel="nofollow">Middleware for Chado databases</a>
 
-|-------|------------------------------------------------------------| 9:00  | Introduction, Eric Just                                    | 9:05  | Object/relational Mapping Principles, Sohel Merchant       | 9:30  | XORT, Pinglei Zhou                                         | 9:55  | Chado%253A%253AAutoDBI, Brian O'Connor                             | 10:20 | Coffee Break                                               | 10:35 | Modware, Eric Just                                         | 11:00 | GBrowse (DasI) Adaptor, Scott Cain                         | 11:20 | iBatis, Jeff Bowes                                         | 11:45 | LUNCH                                                      | 1:15  | Hibernate, Robert Bruggner                                 | 1:40  | PSU Chado Interface, Chinmay Patel                         | 2:05  | PM Coffee Break                                            | 2:20  | GUS Web Development Kit (not GUS-specific), Steve Fischer  | 2:45  | InterMine/FlyMine data warehousing, Gos Micklem            | 3:10  | Wrap up (Eric Just, Scott Cain, Brian Osborne), discussion |
+|-------|------------------------------------------------------------|
+| 9:00 | Introduction, Eric Just |
+| 9:05 | Object/relational Mapping Principles, Sohel Merchant |
+| 9:30 | XORT, Pinglei Zhou |
+| 9:55 | Chado%253A%253AAutoDBI, Brian O'Connor |
+| 10:20 | Coffee Break |
+| 10:35 | Modware, Eric Just |
+| 11:00 | GBrowse (DasI) Adaptor, Scott Cain |
+| 11:20 | iBatis, Jeff Bowes |
+| 11:45 | LUNCH |
+| 1:15 | Hibernate, Robert Bruggner |
+| 1:40 | PSU Chado Interface, Chinmay Patel |
+| 2:05 | PM Coffee Break |
+| 2:20 | GUS Web Development Kit (not GUS-specific), Steve Fischer |
+| 2:45 | InterMine/FlyMine data warehousing, Gos Micklem |
+| 3:10 | Wrap up (Eric Just, Scott Cain, Brian Osborne), discussion |

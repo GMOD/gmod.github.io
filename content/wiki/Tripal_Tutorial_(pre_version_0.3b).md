@@ -340,7 +340,9 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL | Tripal Version |----|----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+| Site Name | URL | Tripal Version |
+|----|----|----|
+| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free" |  |
 rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | SVN version | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
 rel="nofollow">http://www.vaccinium.org</a> | v0.2 | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
 rel="nofollow">http://www.gabcsfl.org</a> | v0.2 | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"
@@ -574,7 +576,12 @@ sudo /etc/init.d/apache2 restart
 For reference, these are the file system directories where important
 components of this tutorial are located
 
-|-------------------------|-------------------------------------| Web configuration files | /etc/apache2                        | PHP configuration files | /etc/php5/apache2 and /etc/php5/cli | Web document root       | /var/www                            | Home directory          | /home/gmod                          | Tutorial files          | /home/gmod/Tripal                   |
+|-------------------------|-------------------------------------|
+| Web configuration files | /etc/apache2 |
+| PHP configuration files | /etc/php5/apache2 and /etc/php5/cli |
+| Web document root | /var/www |
+| Home directory | /home/gmod |
+| Tutorial files | /home/gmod/Tripal |
 
   
 
@@ -2831,4 +2838,5 @@ height="495" alt="800px-TripalGBrowseImg.png" />
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(pre-20version-200.3b)")</span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |

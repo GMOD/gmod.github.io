@@ -318,7 +318,8 @@ appropriate template will use it. However, if a template of the same
 name exists in the current default theme that template file takes
 precedence.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. It is best to always copy any templates files out of the Tripal theme directory into your default theme for editing. This way, future upgrades to Tripal, that may change the template files will not affect customizations to your site. |
 
@@ -345,7 +346,8 @@ this example, the node-chado_organism.tpl.php template). A more in depth
 description of the code in this template file will be provided next. All
 of the node template files follow this same structure
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: If you would like to maintain this layout structure for any themes of new content types for new Tripal extensions, you will want to follow this same structure in your template files. See the next section for more details. |
 
@@ -602,7 +604,8 @@ In Summary, each node template file has two major sections:
     2.  a list section for the resources sidebar defined by a **block**
         with a class of **tripal_tocl_list**
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: A Tripal compatible template file should only have one **div** block for the details region and one block the resources side bar. |
 
@@ -647,7 +650,8 @@ the resources side bar. These links are added automatically for all
 subtemplates to the sidebar using Javascript described in the next
 section.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: By convention, the default subtemplate (the one listed first) should have the word **base** in the template name. This is to easily identify it as a type of "home page" for the content type. |
 
@@ -706,7 +710,8 @@ subtemplate file rather than use a **print theme** statement as with
 other subtemplates. This is because we are adding a single template
 which is managed by a Tripal module.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: You should not need to add SQL queries to the PHP subtemplates. Use the Tripal API to access all necessary data. |
 
@@ -777,7 +782,8 @@ Resources side-bar, adds a javascript function to each link to make it
 visible when clicked, sets the first subtemplate as visible and adjusts
 the height of the Resources side-bar.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practices**: When creating a template for a new node, the Javascript code above should be duplicated, with names of the content and sidebar div blocks changed to match your content name. |
 
@@ -1109,7 +1115,8 @@ learned through
 <a href="http://drupal.org/node/300614%7C" class="external text"
 rel="nofollow">one of the Drupal books for sale</a>.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Before proceeding with Tripal module development, it is recommended to have a general understanding of the Drupal API. It is possible to add functionality to Drupal without strictly using the API. However, inappropriate use of the API can cause problems in the future when integrating with other modules or for upgrading. It is important to become familiar with the coding standards suggested by Drupal to ensure readable, re-usable code. |
 
@@ -1255,7 +1262,8 @@ selects of Chado data. These functions ensure that integrity constraints
 are met before inserts and updates and provide results from queries in a
 consistent manner.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. Even though it is possible to query Chado without the Tripal API function calls, it is best to use them as it provides a consistent interface with Chado, reduces the amount of coding and makes the code more legible by all Tripal developers. |
 
@@ -1374,7 +1382,8 @@ that the modules **tripal_core**, **tripal_feature**, and
 **tripal_analysis** must be installed and enabled before this module can
 be enabled.
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/27/Have-a-nice-day-icon.png" width="48"
 height="48" alt="Have-a-nice-day-icon.png" /> | **Best Practice Tip**. At a minimum your Tripal extension module should always set the package to be **Tripal Extensions** and should have the **tripal_core** module as a dependency. |
 

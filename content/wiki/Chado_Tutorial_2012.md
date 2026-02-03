@@ -204,4 +204,5 @@ using Chado, you will find that a working knowledge of SQL is necessary.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | <a href="Chado" class="mw-redirect" title="Chado">Chado</a>  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | <a href="Chado" class="mw-redirect" title="Chado">Chado</a> |

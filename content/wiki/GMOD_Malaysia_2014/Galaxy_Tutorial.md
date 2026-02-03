@@ -33,4 +33,5 @@ server on the Amazon cloud.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [Galaxy](../Galaxy.1 "Galaxy")  |
+|----|----|
+| [Has topic](../Property%253AHas_topic "Property:Has topic") | [Galaxy](../Galaxy.1 "Galaxy") |

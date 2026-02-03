@@ -98,7 +98,9 @@ and data mining tools.
 
 ### Thursday, January 14
 
-| Time | Topic | Presenter(s) | Links |----|----|----|----| 10:00 | Introductions and the State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/Jan2010StateOfGMOD.pdf"
+| Time | Topic | Presenter(s) | Links |
+|----|----|----|----|
+| 10:00 | Introductions and the State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/2e/Jan2010StateOfGMOD.pdf" |
 class="internal" title="Jan2010StateOfGMOD.pdf">PDF</a> | 11:00 | Report from the [Help Desk](GMOD_Help_Desk "GMOD Help Desk") | [Dave Clements](User%253AClements "User%253AClements") | <a
 href="ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODJanuary/Jan2010HelpDesk.ppt"
 class="external text" rel="nofollow">PPT</a>, [PDF](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ea/Jan2010HelpDesk.pdf "File:Jan2010HelpDesk.pdf") | 11:30 | Brief status updates: [Satellite Meetings](#Satellite_Meetings) |  | [GMOD REST Hackathon](GMOD_REST_Hackathon "GMOD REST Hackathon") | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") | [GMOD RPC API](GMOD_RPC_API "GMOD RPC API") |  | <a href="http://www.bioperl.org/wiki/GMOD_2010_Meeting" class="extiw"
@@ -120,7 +122,9 @@ class="external text" rel="nofollow">HTML</a> | 4:00 | Using <a href="http://dru
 rel="nofollow">Drupal</a> and <a href="http://www.adobe.com/products/flex/" class="external text"
 rel="nofollow">Flex</a> to Create User-Configurable Interfaces for GMOD Databases for Use in Transcriptional Genomics Research | [Michael Caudy](User%253AMcaudy "User%253AMcaudy") | 4:30 | Discussion toward standard website platforms for MOD sites | 5:00 | **Dinner** (on your own) |  ### Friday, January 15
 
-| Time | Topic | Presenter(s) | Links |----|----|----|----| 9:00 | [Textpresso](Textpresso "Textpresso") | Nathan Liles | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Jan2010Testpresso.ppt"
+| Time | Topic | Presenter(s) | Links |
+|----|----|----|----|
+| 9:00 | [Textpresso](Textpresso "Textpresso") | Nathan Liles | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/Jan2010Testpresso.ppt" |
 class="internal" title="Jan2010Testpresso.ppt">PPT</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/06/Jan2010Testpresso.pdf"
 class="internal" title="Jan2010Testpresso.pdf">PDF</a> | 9:30 | [TableEdit](TableEdit.1 "TableEdit") | [Daniel Renfro](User%253ADanielRenfro "User%253ADanielRenfro"), [Jim Hu](User%253AJimHu.1 "User%253AJimHu") | <a
 href="ftp://ftp.gmod.org/pub/gmod/Meetings/2010/GMODJanuary/Jan2010TableEdit.ppt"
@@ -227,7 +231,9 @@ development.</td>
 
 ## Meeting Participants
 
-| First Name(s) | Last Name | Affiliation | URL |----|----|----|----| Michael | Alaux | INRA, France | <a href="http://urgi.versailles.inra.fr/" class="external free"
+| First Name(s) | Last Name | Affiliation | URL |
+|----|----|----|----|
+| Michael | Alaux | INRA, France | <a href="http://urgi.versailles.inra.fr/" class="external free" |
 rel="nofollow">http://urgi.versailles.inra.fr/</a> | Joelle | Amselem | INRA-URGI | <a href="http://urgi.versailles.inra.fr/" class="external free"
 rel="nofollow">http://urgi.versailles.inra.fr/</a> | David | Arcoleo | Institute for Genomic Biology, University of Illinois, Urbana-Champaign | <a href="http://beespace.uiuc.edu" class="external free"
 rel="nofollow">http://beespace.uiuc.edu</a> | Yuri | Bendana | USC BISC-MCB | Aaron | Buechlein | The Center for Genomics and Bioinformatics | [Robert](User%253ARobertBuels "User%253ARobertBuels") | [Buels](User%253ARobertBuels "User%253ARobertBuels") | [SGN](Category%253ASGN "Category%253ASGN") | <a href="http://solgenomics.net" class="external free"
@@ -354,7 +360,9 @@ Attendees were asked to provide feedback at the end of the meeting.
 **Q: Would you recommend [GMOD meetings](Meetings "Meetings") to
 others**
 
-| Yes | Maybe | No  |-----|-------|-----| 95% | 5%    | 0%  |
+| Yes | Maybe | No |
+|-----|-------|-----|
+| 95% | 5% | 0% |
 
 The *maybe* response was:
 
@@ -364,7 +372,10 @@ very technical so only to the right audience
 **Q: Please rate the meeting(s) using the following scale: 1 (not at
 all) to 3 (reasonably) to 5 (exceptionally).**
 
-| 1   | 2   | 3   | 4   | 5   |-----------------------------------------|-----|-----|-----|-----|-----| How useful was the meeting?             | 5%  | 0%  | 19% | 38% | 38% | Was the meeting well run and organized? | 5%  | 0%  | 0%  | 47% | 47% |
+| 1   | 2   | 3   | 4   | 5 |
+|-----------------------------------------|-----|-----|-----|-----|-----|
+| How useful was the meeting? | 5% | 0% | 19% | 38% | 38% |
+| Was the meeting well run and organized? | 5% | 0% | 0% | 47% | 47% |
 
 The "1" rating for both these questions came from the same person.
 However, that person was absolutely positive on all other questions. So,
@@ -374,7 +385,9 @@ good.
   
 **Q: Was the meeting what you expected?**
 
-| No. | Yes. | Other |-----|------|-------| 5%  | 90%  | 5%    |
+| No. | Yes. | Other |
+|-----|------|-------|
+| 5% | 90% | 5% |
 
 Longer responses:
 

@@ -34,7 +34,9 @@ Health Science Campus, 1450 Biggy Street
 class="external text" rel="nofollow">Registration is free, but
 required.</a>
 
-|----|----| 9:15am-Noon | *Introduction to Galaxy including 30 min. Q&A Session* | 2:00pm-5:00pm | *High‐throughput sequencing data analysis including 45 min. Q&A Session* |
+|----|----|
+| 9:15am-Noon | *Introduction to Galaxy including 30 min. Q&A Session* |
+| 2:00pm-5:00pm | *High‐throughput sequencing data analysis including 45 min. Q&A Session* |
 
 **Progress and Challenges in Developing a Web-based Platform for
 Computational Biomedical Research, Friday, June 24, 2011**

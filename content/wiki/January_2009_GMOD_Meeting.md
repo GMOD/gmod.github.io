@@ -114,7 +114,11 @@ height="100" alt="Jan 2009 Meeting" />
 
 ### Thursday, January 15
 
-| Time | Topic | Presenter(s) | Links |----|----|----|----| 10:00 AM | Registration | 10:30 AM | Introductions | [Scott Cain](User%253AScott "User%253AScott") | 11:00 AM | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt"
+| Time | Topic | Presenter(s) | Links |
+|----|----|----|----|
+| 10:00 AM | Registration | 10:30 AM | Introductions |
+| [Scott Cain](User%253AScott "User%253AScott") | 11:00 AM | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") |
+| <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/2/21/Jan2009StateOfGMOD.ppt" |  |  |  |
 class="internal" title="Jan2009StateOfGMOD.ppt">PPT</a>, [Summary](#The_State_of_GMOD) | 11:30 AM | A variety of [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") stuff | [Dave Clements](User%253AClements "User%253AClements") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/4/4d/Jan2009HelpDesk.pdf" class="internal"
 title="Jan2009HelpDesk.pdf">PDF</a>, [Summary](#GMOD_Help_Desk) | 12:00 PM | Lunch | *one hour 30 minutes* | 1:30 PM | <a href="http://drupal.org" class="external text"
 rel="nofollow">Drupal</a> and <a href="http://www.marinegenomics.org" class="external text"

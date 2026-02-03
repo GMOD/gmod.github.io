@@ -84,7 +84,10 @@ this tutorial, but is used in Galaxy to upload large files, is on ports
 **Security Groups**, *select* the group you are using, and then *click*
 the **Inbound** tab and then add
 
-| Create a new rule | Port range | Source    |-------------------|------------|-----------| Custom TCP Rule   | 8081       | 0.0.0.0/0 | Custom TCP Rule   | 20-21      | 0.0.0.0/0 |
+| Create a new rule | Port range | Source |
+|-------------------|------------|-----------|
+| Custom TCP Rule | 8081 | 0.0.0.0/0 |
+| Custom TCP Rule | 20-21 | 0.0.0.0/0 |
 
 *Click* **+ Add rule** after each, and then **Apply Rule Changes** after
 all have been added.

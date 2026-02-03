@@ -54,7 +54,9 @@ School](2013_GMOD_Summer_School "2013 GMOD Summer School")
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web  | [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="https://github.com/GMOD/GBrowse" class="external free"
+|----|----|
+| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web |
+| [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="https://github.com/GMOD/GBrowse" class="external free" |
 rel="nofollow">https://github.com/GMOD/GBrowse</a> , <a
 href="http://mckay.cshl.edu/cgi-bin/gbrowse_syn/mercator/?search_src=Cbri%3Bname=chrX:620000..670000"
 class="external free"

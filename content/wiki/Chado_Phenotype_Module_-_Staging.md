@@ -62,7 +62,11 @@ page.
 
 ## Table: feature_phenotype
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_phenotype_id | serial | *PRIMARY KEY* | [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_phenotype_id | serial | *PRIMARY KEY* |
+| [feature](Chado_Tables#Table:_feature "Chado Tables") | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 public.feature_phenotype Structure
 
@@ -182,7 +186,12 @@ Tables referencing this one via Foreign Key Constraints:
 
 Deprecated and superseded by phenotypeprop.
 
-| FK | Name | Type | Description |----|----|----|----|  | phenotype_cvterm_id | serial | *PRIMARY KEY* | [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |  | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phenotype_cvterm_id | serial | *PRIMARY KEY* |
+| [phenotype](Chado_Tables#Table:_phenotype "Chado Tables") | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+|  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 public.phenotype_cvterm Structure
 

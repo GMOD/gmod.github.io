@@ -73,7 +73,10 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password |
+|---------|----------|------------------|
+| Shell | gmod | gmodamericas2010 |
+| MySQL | root | gmodamericas2010 |
 
 ## Caveats
 
@@ -149,7 +152,13 @@ You can download OS-specific pre-built installer packages from the
 class="external text" rel="nofollow">Apollo installer page</a>. We
 provide the following installers:
 
-| Platform | Optionally bundled [JRE](Glossary#JRE "Glossary") |----------|---------------------------------------------------| Windows  | Yes                                               | Mac OS X | No                                                | Linux    | Yes                                               | Solaris  | Yes (x86 version)                                 | Unix     | No                                                |
+| Platform | Optionally bundled [JRE](Glossary#JRE "Glossary") |
+|----------|---------------------------------------------------|
+| Windows | Yes |
+| Mac OS X | No |
+| Linux | Yes |
+| Solaris | Yes (x86 version) |
+| Unix | No |
 
 Since we're installing it on our Linux virtual machine, we'll use the
 Linux version. Java has already been setup in these machines, so we'll
@@ -938,4 +947,5 @@ class="external text" rel="nofollow">Apollo Javadoc API</a>.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Apollo](Apollo.1 "Apollo") |

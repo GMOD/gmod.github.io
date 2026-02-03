@@ -85,7 +85,9 @@ rel="nofollow">OpenHelix blog</a>.
 
 ## Participants
 
-| Participant | Affilliation(s) | URL |----|----|----| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free"
+| Participant | Affilliation(s) | URL |
+|----|----|----|
+| [Dave Clements](User%253AClements "User%253AClements") | NESCent, GMOD | <a href="http://nescent.org" class="external free" |
 rel="nofollow">http://nescent.org</a> <a href="http://gmod.org" class="external free"
 rel="nofollow">http://gmod.org</a> | Fengyuan Hu | Department of Genetics, University of Cambridge | Ellen Adlem | Cambridge University Cambridge Institute of Medical Research | <a href="http://www.t1dbase.org" class="external free"
 rel="nofollow">http://www.t1dbase.org</a> | seth redmond | Imperial College / Vectorbase | [Chris Hemmerich](User%253AChemmeri "User%253AChemmeri") | <a href="http://cgb.indiana.edu" class="external free"

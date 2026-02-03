@@ -182,7 +182,8 @@ Medicine)
 
 Mount Vernon Room
 
-|------|-----------------------------| 9:00 | GMOD Alpha release, Part II |
+|------|-----------------------------|
+| 9:00 | GMOD Alpha release, Part II |
 
 The goal here is to try to get the gmod alpha installed on computers to
 test the installation and working issues with the release. It is almost

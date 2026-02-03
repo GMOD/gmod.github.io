@@ -664,4 +664,5 @@ This leaves two command in the home directory: `jb_setup.sh` and
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [JBrowse](JBrowse.1 "JBrowse") |

@@ -320,12 +320,25 @@ directory and static files depend on how Apache was installed on your
 system, which varies from operating system to operating system, and are
 controlled by the following installation options:
 
-| Setting | Default | Description |----|----|----| CONF | The system wide Apache configuration directory (e.g. /etc/httpd/ in Centos 5.2). | CONF is the directory in which you will place the gbrowse configuration files. A directory called gbrowse.conf will be created under this location to contain the GBrowse configuration files. | HTDOCS | The system wide Apache document root (e.g. /var/www/html/ in Centos 5.2). | The document root in which the HTML files for your web server reside. The **static** GBrowse HTML files will be created in a subdirectory under this location. | GBROWSE_ROOT | gbrowse | The location under HTDOCS in which you would like GBrowse's static files (stylesheets, images, documentation, etc.) to be stored. For example, if you specify "HTDOCS=/var/www/html" and "GBROWSE_ROOT=genomes/gbrowse" then the static files will be stored at "/var/www/html/genomes/gbrowse". | CGIBIN | The system wide Apache cgi-bin (e.g. /var/www/cgi-bin/ in Centos 5.2). | The Perl scripts responsible for generating the **dynamic** content will be created in a subdirectory under this location. | APACHE | none | A convenience option that defines CONF, HTDOCS and CGIBIN as APACHE/conf, APACHE/htdocs and APACHE/cgi-bin respectively. | LIB | The system wide Perl library path | The Perl modules that are part of GBrowse are created under this location. This location will be added to Perl's INC path, telling GBrowse where to look for these Perl modules. **Note**, if you see errors like "Can't locate Bio/Graphics.pm in @INC (@INC contains: ...", you probably need to set the servers \$PERL5LIB to match the one you used at install time. | BIN |  ? | Perl executable scripts directory - but I don't know what that means! |
+| Setting | Default | Description |
+|----|----|----|
+| CONF | The system wide Apache configuration directory (e.g. /etc/httpd/ in Centos 5.2). | CONF is the directory in which you will place the gbrowse configuration files. A directory called gbrowse.conf will be created under this location to contain the GBrowse configuration files. |
+| HTDOCS | The system wide Apache document root (e.g. /var/www/html/ in Centos 5.2). | The document root in which the HTML files for your web server reside. The **static** GBrowse HTML files will be created in a subdirectory under this location. |
+| GBROWSE_ROOT | gbrowse | The location under HTDOCS in which you would like GBrowse's static files (stylesheets, images, documentation, etc.) to be stored. For example, if you specify "HTDOCS=/var/www/html" and "GBROWSE_ROOT=genomes/gbrowse" then the static files will be stored at "/var/www/html/genomes/gbrowse". |
+| CGIBIN | The system wide Apache cgi-bin (e.g. /var/www/cgi-bin/ in Centos 5.2). | The Perl scripts responsible for generating the **dynamic** content will be created in a subdirectory under this location. |
+| APACHE | none | A convenience option that defines CONF, HTDOCS and CGIBIN as APACHE/conf, APACHE/htdocs and APACHE/cgi-bin respectively. |
+| LIB | The system wide Perl library path | The Perl modules that are part of GBrowse are created under this location. This location will be added to Perl's INC path, telling GBrowse where to look for these Perl modules. **Note**, if you see errors like "Can't locate Bio/Graphics.pm in @INC (@INC contains: ...", you probably need to set the servers \$PERL5LIB to match the one you used at install time. |
+| BIN | ? | Perl executable scripts directory - but I don't know what that means! |
 
   
 Some additional configuration settings include:
 
-| Setting | Default | Description |----|----|----| YES | 0 | Don't talk, do. Accept the defaults for all settings (in addition to those provided). | NONROOT | 0 | If set to a non-zero value (e.g. NONROOT=1) then install gbrowse in a way that does not require root access (in theory). | DO_XS | 1 | Compile fast alignment algorithm (XS C extension). If you have a C compiler and wish to compile the XS extensions, set DO_XS=1. Currently all this does is to speed up the multiple alignment plugin. | SELINUX | 0 | Avoid the message to warn you about SELinux that appears when SELinux could be a problem. |
+| Setting | Default | Description |
+|----|----|----|
+| YES | 0 | Don't talk, do. Accept the defaults for all settings (in addition to those provided). |
+| NONROOT | 0 | If set to a non-zero value (e.g. NONROOT=1) then install gbrowse in a way that does not require root access (in theory). |
+| DO_XS | 1 | Compile fast alignment algorithm (XS C extension). If you have a C compiler and wish to compile the XS extensions, set DO_XS=1. Currently all this does is to speed up the multiple alignment plugin. |
+| SELINUX | 0 | Avoid the message to warn you about SELinux that appears when SELinux could be a problem. |
 
   
 You can manually set these locations by passing Makefile.PL one or more

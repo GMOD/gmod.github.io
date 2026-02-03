@@ -120,4 +120,5 @@ class="external text" rel="nofollow">artemis-user</a>.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Artemis](Artemis "Artemis") |

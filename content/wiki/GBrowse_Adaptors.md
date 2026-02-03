@@ -8,7 +8,9 @@ spelled that way and is not "adapter") system for running off various
 types of databases/sources. A common question is "which adaptor should I
 be using?" This attempts to answer that question.
 
-| Adaptor | Other required software | Roughly how many users | Pros | Cons |----|----|----|----|----| <a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store"
+| Adaptor | Other required software | Roughly how many users | Pros | Cons |
+|----|----|----|----|----|
+| <a href="http://bioperl.org/wiki/Module:Bio::DB::SeqFeature::Store" |  |  |  |  |
 class="external text" rel="nofollow">Bio::DB::SeqFeature::Store</a> (use bp_seqfeature_load.pl) | [MySQL](MySQL "MySQL"), [PostgreSQL](PostgreSQL "PostgreSQL"), SQLite, BerkeleyDB | Many and growing fast. | Roughly 4X faster than Bio::DB::GFF for the same data; designed to work with [GFF3](GFF3 "GFF3") | Developed for use with [GFF3](GFF3 "GFF3"); about 2X slower than Bio::DB::GFF to load a database | <a href="http://bioperl.org/wiki/Module:Bio::DB::GFF"
 class="external text" rel="nofollow">Bio::DB::GFF</a> (use bp_load_gff.pl, bp_bulk_load_gff.pl, bp_fast_load_gff.pl) | A [relational database server](Glossary#Database_Management_System "Glossary"): [MySQL](MySQL "MySQL"), [PostgreSQL](PostgreSQL "PostgreSQL"), Oracle, or BerkeleyDB | Lots! (Especially [MySQL](MySQL "MySQL")) | Quite fast; large user base; Have to use this if your data is in the (now deprecated) [GFF2](GFF2 "GFF2") format. | Does not work well with [GFF3](GFF3 "GFF3") formatted data | <a href="http://search.cpan.org/perldoc?Bio::DB::Sam"
 class="external text" rel="nofollow">Bio::DB::Sam</a> (available from CPAN) | <a href="http://samtools.sourceforge.net/" class="external text"

@@ -24,4 +24,5 @@ This tutorial uses the AWS AMI ' ***named '*** in the '
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [GFF3](../GFF3 "GFF3")  |
+|----|----|
+| [Has topic](../Property%253AHas_topic "Property:Has topic") | [GFF3](../GFF3 "GFF3") |

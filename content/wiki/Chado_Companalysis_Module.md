@@ -433,7 +433,12 @@ analysisfeature Structure
 
 ## Table: analysisprop
 
-| F-Key | Name | Type | Description |----|----|----|----|  | analysisprop_id | serial | *PRIMARY KEY* | [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | *UNIQUE#1* |
+| F-Key | Name | Type | Description |
+|----|----|----|----|
+|  | analysisprop_id | serial | *PRIMARY KEY* |
+| [analysis](Chado_Tables#Table:_analysis "Chado Tables") | analysis_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](Chado_Tables#Table:_cvterm "Chado Tables") | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | *UNIQUE#1* |
 
 analysisprop Structure
 

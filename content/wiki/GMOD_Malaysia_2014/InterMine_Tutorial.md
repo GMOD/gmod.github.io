@@ -19,4 +19,5 @@ This tutorial uses the AWS AMI **ID** named **NAME** in the AWS REGION.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](../Property%253AHas_topic "Property:Has topic") | [InterMine](../InterMine "InterMine")  |
+|----|----|
+| [Has topic](../Property%253AHas_topic "Property:Has topic") | [InterMine](../InterMine "InterMine") |

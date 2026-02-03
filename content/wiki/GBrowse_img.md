@@ -128,7 +128,22 @@ either as GET or POST argument=value pairs. Argument pairs must be
 separated by semicolons (preferred) or by ampersands. Many of the
 options have one-letter aliases that can be used to reduce URL lengths.
 
-| Argument | Alias | Description |----|----|----| name | q | genomic landmark or range | dbid | database ID for disambiguating names | type | t | tracks to include in image | width | w | desired width of image | options | o | list of track options (compact, labeled, etc) | abs | b | display position in absolute coordinates | add | a | added feature(s) to superimpose on the image | style | s | stylesheet for additional features | keystyle | k | where to place the image key | overview | force an overview-style display | flip | f | flip image left to right | grid | turn grid on (1) or off (0) | embed | generate full HTML for image and imagemap for use in an embedded frame | format | format for the image (use "SVG" for scalable vector graphics) | list | get certain types of configuration information | source | database name |
+| Argument | Alias | Description |
+|----|----|----|
+| name | q | genomic landmark or range |
+| dbid | database ID for disambiguating names | type |
+| t | tracks to include in image | width |
+| w | desired width of image | options |
+| o | list of track options (compact, labeled, etc) | abs |
+| b | display position in absolute coordinates | add |
+| a | added feature(s) to superimpose on the image | style |
+| s | stylesheet for additional features | keystyle |
+| k | where to place the image key | overview |
+| force an overview-style display | flip | f |
+| flip image left to right | grid | turn grid on (1) or off (0) |
+| embed | generate full HTML for image and imagemap for use in an embedded frame | format |
+| format for the image (use "SVG" for scalable vector graphics) | list | get certain types of configuration information |
+| source | database name |  |
 
 The arguments are explained in more detail here:
 

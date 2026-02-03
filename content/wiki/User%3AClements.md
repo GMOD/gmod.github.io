@@ -38,7 +38,8 @@ also at Oregon.
 
 ## Contact Details
 
-|--------|-------------------------------------------------------------------| E-mail | <a href="mailto:clements@galaxyproject.org" class="external text" 
+|--------|-------------------------------------------------------------------|
+| E-mail | <a href="mailto:clements@galaxyproject.org" class="external text" |
           rel="nofollow">clements@galaxyprojet.org</a>                       | URL    | <a href="https://galaxyproject.org/people/dave-clements/"         
           class="external text" rel="nofollow">My home page</a>              |
 

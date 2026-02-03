@@ -329,7 +329,9 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL | Tripal Version |----|----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+| Site Name | URL | Tripal Version |
+|----|----|----|
+| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free" |  |
 rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | development version | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
 rel="nofollow">http://www.vaccinium.org</a> | v0.3.1b | Genome Database for Rosacaee | <a href="http://www.rosaceae.org" class="external free"
 rel="nofollow">http://www.rosaceae.org</a> | v1.0 (under construction) | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
@@ -3277,4 +3279,5 @@ desired extensions.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse">"Special%253ABrowse/Tripal-20Tutorial-20(v1.0)")</span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |

@@ -113,7 +113,10 @@ The registration fee includes lunch on June 30th.
 
 ### Walnut room, Thursday, June 30
 
-| Time | Topic | Presenter(s) | Presentation |----|----|----|----| 08:50 | Pre-meeting continental breakfast | 09:15 | Introductions | 09:40 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal"
+| Time | Topic | Presenter(s) | Presentation |
+|----|----|----|----|
+| 08:50 | Pre-meeting continental breakfast | 09:15 | Introductions |
+| 09:40 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/3e/GMOD2016_GMOD.pdf" class="internal" |
 title="GMOD2016 GMOD.pdf">Intro</a>, <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/3/34/GMOD2016_InterMine.pdf"
 class="internal" title="GMOD2016 InterMine.pdf">InterMine</a>, <a
 href="https://www.dropbox.com/s/7i39svwlegfr4rq/MAKER_GMOD_2016.pdf?dl=0"
@@ -129,7 +132,11 @@ rel="nofollow">http://eugenes.org/EvidentialGene/</a> | Don Gilbert | <a
 href="http://arthropods.eugenes.org/EvidentialGene/about/evigenegmod1606iu.pdf"
 class="external text" rel="nofollow">Slides</a> | 3:45 | FlyBase Update and Chado discussion | [Josh Goodman](User%253AJogoodma "User%253AJogoodma") ### Friday, July 1
 
-| Time | Topic | Presenter(s) | Presentation |----|----|----|----| 08:50 | Pre-meeting continental breakfast | 09:15 | Tripal Expression module and search | Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf "File:GMOD Staton.pdf") | 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/GMOD_Asela.pdf" class="internal"
+| Time | Topic | Presenter(s) | Presentation |
+|----|----|----|----|
+| 08:50 | Pre-meeting continental breakfast | 09:15 | Tripal Expression module and search |
+| Meg Staton | [Slides](https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/0b/GMOD_Staton.pdf "File:GMOD Staton.pdf") | 09:45 | Lightning talks, including Asela Dassanayake, Eric Rasche and Thoba Lose |
+| <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/1/15/GMOD_Asela.pdf" class="internal" |  |  |  |
 title="GMOD Asela.pdf">Asela/LanzaTech</a> | 11:30 | Lunch (on your own) | 1:00 | Tripal workshop |  ## Agenda items
 
 More to be added as we confirm more speakers. If you are interested in

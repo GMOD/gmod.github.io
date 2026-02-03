@@ -420,7 +420,13 @@ width="281" height="399" alt="Galaxy NoLinkToUCSCForPigs.png" />
 
 Galaxy-dist has several important subdirectories
 
-| Path | Description |----|----| `tools/` | Defines tools in Galaxy. | `tool-data/` | Home of `.loc` files for sets of tools. `.loc` files tell where reference genomes, indexes, and the like can be found for particular tools. | ` • shared/` | Contains subdirectories for `ensembl, `**`gbrowse`**`, genetrack, igv, jars, ncbi, rviewer, `**`ucsc`** | ` • • ucsc/` | ` • • • ucsc_build_sites.txt` | Defines which genomes can be viewed at the various UCSC sites. |
+| Path | Description |
+|----|----|
+| `tools/` | Defines tools in Galaxy. |
+| `tool-data/` | Home of `.loc` files for sets of tools. `.loc` files tell where reference genomes, indexes, and the like can be found for particular tools. |
+| ` • shared/` | Contains subdirectories for `ensembl, `**`gbrowse`**`, genetrack, igv, jars, ncbi, rviewer, `**`ucsc`** |
+| ` • • ucsc/` | ` • • • ucsc_build_sites.txt` |
+| Defines which genomes can be viewed at the various UCSC sites. |  |
 
 `susScr2` is not in the list for the main UCSC site. *Edit*
 `tool-data/shared/ucsc/ucsc_build_sites.txt` and *add it*.

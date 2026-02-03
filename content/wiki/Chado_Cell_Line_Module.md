@@ -36,7 +36,9 @@ title: "Chado Cell Line Module"
 
 \<protect\>
 
-|-------------|-------------------| **Table:**  | **`cell_line`**   | **Module:** | ****Cell Line**** |
+|-------------|-------------------|
+| **Table:** | **`cell_line`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -134,7 +136,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|------------------------------| **Table:**  | **`cell_line_relationship`** | **Module:** | ****Cell Line****            |
+|-------------|------------------------------|
+| **Table:** | **`cell_line_relationship`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -212,7 +216,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|-------------------------| **Table:**  | **`cell_line_synonym`** | **Module:** | ****Cell Line****       |
+|-------------|-------------------------|
+| **Table:** | **`cell_line_synonym`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -306,7 +312,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|------------------------| **Table:**  | **`cell_line_cvterm`** | **Module:** | ****Cell Line****      |
+|-------------|------------------------|
+| **Table:** | **`cell_line_cvterm`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -394,7 +402,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|------------------------| **Table:**  | **`cell_line_dbxref`** | **Module:** | ****Cell Line****      |
+|-------------|------------------------|
+| **Table:** | **`cell_line_dbxref`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -471,7 +481,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|---------------------| **Table:**  | **`cell_lineprop`** | **Module:** | ****Cell Line****   |
+|-------------|---------------------|
+| **Table:** | **`cell_lineprop`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -555,7 +567,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|-------------------------| **Table:**  | **`cell_lineprop_pub`** | **Module:** | ****Cell Line****       |
+|-------------|-------------------------|
+| **Table:** | **`cell_lineprop_pub`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -624,7 +638,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|-------------------------| **Table:**  | **`cell_line_feature`** | **Module:** | ****Cell Line****       |
+|-------------|-------------------------|
+| **Table:** | **`cell_line_feature`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -702,7 +718,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|----------------------------| **Table:**  | **`cell_line_cvtermprop`** | **Module:** | ****Cell Line****          |
+|-------------|----------------------------|
+| **Table:** | **`cell_line_cvtermprop`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -785,7 +803,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|---------------------| **Table:**  | **`cell_line_pub`** | **Module:** | ****Cell Line****   |
+|-------------|---------------------|
+| **Table:** | **`cell_line_pub`** |
+| **Module:** | ****Cell Line**** |
 
   
 
@@ -853,7 +873,9 @@ as part of the next Chado release.
 
 \<protect\>
 
-|-------------|-------------------------| **Table:**  | **`cell_line_library`** | **Module:** | ****Cell Line****       |
+|-------------|-------------------------|
+| **Table:** | **`cell_line_library`** |
+| **Module:** | ****Cell Line**** |
 
   
 

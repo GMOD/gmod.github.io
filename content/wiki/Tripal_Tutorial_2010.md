@@ -155,7 +155,10 @@ class="external text" rel="nofollow">end image</a>.
 
 **Logins**:
 
-| Purpose | Username | Password         |---------|----------|------------------| Shell   | gmod     | gmodamericas2010 | MySQL   | root     | gmodamericas2010 |
+| Purpose | Username | Password |
+|---------|----------|------------------|
+| Shell | gmod | gmodamericas2010 |
+| MySQL | root | gmodamericas2010 |
 
 ## Caveats
 
@@ -1230,7 +1233,11 @@ Scroll down to the **Blast Parser Settings**.
 Select the **Uniprot/SwissProt** database and then set the regular
 expressions accordingly:
 
-|------------------|----------------------| Title:           | `ExPASy Swissprot`   | Hit Name:        | .\*?\\(.\*?)\s.\*?\$ | Hit Description: | .\*?\\.\*?\s(.\*)\$  | Hit Accession:   | (.\*?)\\.\*?\s.\*?\$ |
+|------------------|----------------------|
+| Title: | `ExPASy Swissprot` |
+| Hit Name: | .\*?\\(.\*?)\s.\*?\$ |
+| Hit Description: | .\*?\\.\*?\s(.\*)\$ |
+| Hit Accession: | (.\*?)\\.\*?\s.\*?\$ |
 
 Now return to the feature page and view the blast results. They look
 better. But we want to make the results link out. Navigate to
@@ -2058,4 +2065,5 @@ they should be fixed.
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |

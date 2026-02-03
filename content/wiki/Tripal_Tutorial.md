@@ -360,7 +360,9 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL |----|----| Banana Genome Hub | <a href="http://banana-genome.cirad.fr/" class="external free"
+| Site Name | URL |
+|----|----|
+| Banana Genome Hub | <a href="http://banana-genome.cirad.fr/" class="external free" |
 rel="nofollow">http://banana-genome.cirad.fr/</a> | Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
 rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
 rel="nofollow">http://www.vaccinium.org</a> | Genome Database for Rosacaee | <a href="http://www.rosaceae.org" class="external free"
@@ -2283,4 +2285,5 @@ used for this tutorial:
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [Tripal](Tripal.1 "Tripal") |

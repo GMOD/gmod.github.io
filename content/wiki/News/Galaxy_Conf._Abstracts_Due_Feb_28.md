@@ -30,7 +30,8 @@ encouraged to attend.
 
 Deadlines
 
-|----|----| February 28 | <a href="http://galaxy.psu.edu/gcc2011/Abstracts.html"
+|----|----|
+| February 28 | <a href="http://galaxy.psu.edu/gcc2011/Abstracts.html" |
 class="external text" rel="nofollow">Abstract Submission</a> Deadline | April 24 | <a href="http://galaxy.psu.edu/gcc2011/Register.html"
 class="external text" rel="nofollow">Early Registration</a> Deadline |
 

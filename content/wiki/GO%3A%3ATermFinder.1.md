@@ -24,7 +24,9 @@ Resources
 "<span class="swmfactboxheadbrowse">TermFinder</span>"</span><span class="smwrdflink"><span class="rdflink">RDF
 feed</span></span>
 
-|----|----| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | linux , os x , unix  and web  | [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://search.cpan.org/dist/GO-TermFinder/"
+|----|----|
+| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | linux , os x , unix  and web |
+| [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://search.cpan.org/dist/GO-TermFinder/" |
 class="external free"
 rel="nofollow">http://search.cpan.org/dist/GO-TermFinder/</a>  and <a href="http://go.princeton.edu/cgi-bin/GOTermFinder/GOTermFinder"
 class="external free"

@@ -283,9 +283,14 @@ This session the night before the meting gave an introduction to the
 GMOD project, community, and components. It gave GMOD newcomers a
 clearer picture of the project in advance of the meeting.
 
-| Time   | Topic                    | Presenter(s)                          | Links |--------|--------------------------|---------------------------------------|-------| 7pm-9m | **Introduction to GMOD** | [Scott Cain](User%253AScott "User%253AScott") ## Saturday: Day 1
+| Time   | Topic                    | Presenter(s)                          | Links |
+|--------|--------------------------|---------------------------------------|-------|
+| 7pm-9m | **Introduction to GMOD** | [Scott Cain](User%253AScott "User%253AScott") ## Saturday: Day 1 |  |
 
-| Time | Topic | Presenter(s) | Links |----|----|----|----| 9:15 | Introductions | [Scott Cain](User%253AScott "User%253AScott") | 9:35 | Welcome to NESCent, & opportunities at the center | [Todd Vision](User%253ATjvision "User%253ATjvision") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal"
+| Time | Topic | Presenter(s) | Links |
+|----|----|----|----|
+| 9:15 | Introductions | [Scott Cain](User%253AScott "User%253AScott") | 9:35 |
+| Welcome to NESCent, & opportunities at the center | [Todd Vision](User%253ATjvision "User%253ATjvision") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/c/c8/Tjv.gmod11.pdf" class="internal" |  |
 title="Tjv.gmod11.pdf">slides</a> | 9:50 | The State of GMOD | [Scott Cain](User%253AScott "User%253AScott") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/State_of_gmod.ppt" class="internal"
 title="State of gmod.ppt">PPT</a> | 10:35 | Coffee | 10:50 | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") Update | [Dave Clements](User%253AClements "User%253AClements") | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/6/69/March2011GMODHelpDesk.ppt"
 class="internal" title="March2011GMODHelpDesk.ppt">PPT</a> | 11:55 | Lunch | 1:15 | *Drosophila* Genetic Reference Panel (DGRP) | Eric Stone | 2:00 | GSA and GMOD | Elizabeth Ruedi | <a href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fd/March2011GSAandGMOD.pptx"
@@ -296,7 +301,9 @@ class="external text" rel="nofollow">Slides</a> | 4:30 | Head out for dinner |  
 This agenda will be finalized prior to the meeting. In the meantime,
 please see the [confirmed speakers list](#Confirmed_Speakers).
 
-| Time | Topic | Presenter(s) | Links |----|----|----|----| 9:15 | [JBrowse](JBrowse.1 "JBrowse") Project Update | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | <a
+| Time | Topic | Presenter(s) | Links |
+|----|----|----|----|
+| 9:15 | [JBrowse](JBrowse.1 "JBrowse") Project Update | [Mitch Skinner](User%253AMitchSkinner "User%253AMitchSkinner") | <a |
 href="http://jbrowse.org/info/GMOD_Mar_2011/JBrowse_GMOD_Meeting_2011.pdf"
 class="external text" rel="nofollow">Slides</a> | 10:00 | [Tripal](Tripal.1 "Tripal") Project Update | Lacey Sanderson | <a
 href="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ef/LaceySanderson_Tripal_GMODAmericas2011.pptx"
@@ -318,7 +325,10 @@ Meetings](Satellite_Meetings_-_GMOD_Americas_2011 "Satellite Meetings - GMOD Ame
 
 # Participants
 
-| First | Last | Affiliation |----|----|----| Siddhartha | Basu | Northwestern university | [Robert](User%253ARobertBuels "User%253ARobertBuels") | [Buels](User%253ARobertBuels "User%253ARobertBuels") | <a href="http://solgenomics.net" class="external text"
+| First | Last | Affiliation |
+|----|----|----|
+| Siddhartha | Basu | Northwestern university |
+| [Robert](User%253ARobertBuels "User%253ARobertBuels") | [Buels](User%253ARobertBuels "User%253ARobertBuels") | <a href="http://solgenomics.net" class="external text" |
 rel="nofollow">Sol Genomics Network</a> - Boyce Thompson Institute | [Scott](User%253AScott "User%253AScott") | [Cain](User%253AScott "User%253AScott") | Ontario Institute for Cancer Research (OICR), GMOD | [Dave](User%253AClements "User%253AClements") | [Clements](User%253AClements "User%253AClements") | <a href="http://emory.edu" class="external text" rel="nofollow">Emory
 University</a>, [Galaxy](Galaxy.1 "Galaxy") | James | Collett | Pacific Northwest National Laboratory | David | Emmert | FlyBase - Harvard University | Madhavan | Ganesh | University of California, Berkeley | Eric | Ganko | Syngenta Biotech | Steve | Graham | Syngenta | [Christopher](User%253AChemmeri "User%253AChemmeri") | [Hemmerich](User%253AChemmeri "User%253AChemmeri") | Center for Genomics and Bioinformatics | Joe | Horton | GSK | [Alex](User%253AAlexkalderimis "User%253AAlexkalderimis") | [Kalderimis](User%253AAlexkalderimis "User%253AAlexkalderimis") | <a href="http://www.cam.ac.uk" class="external text"
 rel="nofollow">University of Cambridge</a>, <a href="http://flymine.org" class="external text"
@@ -369,7 +379,9 @@ Attendees were asked to provide feedback at the end of the meeting.
 **Q: Would you recommend [GMOD meetings](Meetings "Meetings") to
 others**
 
-| Yes | Maybe | No  |-----|-------|-----| 95% | 5%    | 0%  |
+| Yes | Maybe | No |
+|-----|-------|-----|
+| 95% | 5% | 0% |
 
 "Maybe" Response:
 
@@ -380,12 +392,17 @@ others**
 **Q: Please rate the meeting(s) using the following scale: 1 (not at
 all) to 3 (reasonably) to 5 (exceptionally).**
 
-| 1   | 2   | 3   | 4   | 5   |-----------------------------------------|-----|-----|-----|-----|-----| How useful was the meeting?             | 0%  | 0%  | 5%  | 33% | 62% | Was the meeting well run and organized? | 0%  | 0%  | 14% | 38% | 48% |
+| 1   | 2   | 3   | 4   | 5 |
+|-----------------------------------------|-----|-----|-----|-----|-----|
+| How useful was the meeting? | 0% | 0% | 5% | 33% | 62% |
+| Was the meeting well run and organized? | 0% | 0% | 14% | 38% | 48% |
 
   
 **Q: Was the meeting what you expected?**
 
-| No  | Somewhat | Yes | Other |-----|----------|-----|-------| 5%  | 9%       | 86% | 0%    |
+| No  | Somewhat | Yes | Other |
+|-----|----------|-----|-------|
+| 5% | 9% | 86% | 0% |
 
 Longer responses:
 

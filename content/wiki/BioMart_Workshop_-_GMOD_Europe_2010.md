@@ -105,7 +105,15 @@ href="http://www.cam.ac.uk/map/v4/drawmap.cgi?mp=down;xx=183;yy=216;mt=c"
 class="external text" rel="nofollow">Department of Genetics, room
 G12-G13</a>, at the University of Cambridge.
 
-|----|----| 9:00 - 9:20 | Coffee/Tea | 9:20 - 9:45 | Introduction to [BioMart](BioMart "BioMart") and status update (by Arek Kasprzyk) | 9:45 - 12:30 | Hands-on training (Perl and Java) | 12:30 - 13:30 | Lunch break (on your own) | 13:30 - 15:00 | Hands-on training (Perl and Java) | 15:00 - 15:15 | Coffee/Tea break | 15:15 - 15:30 | Mouse informatics resources in BioMart (by Damian Smedley) | 15:30 - 17:00 | Hands-on training and open session for user feedback. |
+|----|----|
+| 9:00 - 9:20 | Coffee/Tea |
+| 9:20 - 9:45 | Introduction to [BioMart](BioMart "BioMart") and status update (by Arek Kasprzyk) |
+| 9:45 - 12:30 | Hands-on training (Perl and Java) |
+| 12:30 - 13:30 | Lunch break (on your own) |
+| 13:30 - 15:00 | Hands-on training (Perl and Java) |
+| 15:00 - 15:15 | Coffee/Tea break |
+| 15:15 - 15:30 | Mouse informatics resources in BioMart (by Damian Smedley) |
+| 15:30 - 17:00 | Hands-on training and open session for user feedback. |
 
 ## Sponsor
 

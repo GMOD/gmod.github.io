@@ -32,7 +32,9 @@ distribution, but a few are distributed directly with GBrowse.
 
 Predefined glyphs are:
 
-| Glyph | Description |----|----| <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph"
+| Glyph | Description |
+|----|----|
+| <a href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph" |  |
 class="extiw" title="bp:Module:Bio::Graphics::Glyph">Glyph</a> | Common options for all glyphs. (*Glyph* is the parent class of all the glyphs). | <a
 href="http://www.bioperl.org/wiki/Module:Bio::Graphics::Glyph::allele_tower"
 class="extiw"

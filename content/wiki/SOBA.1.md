@@ -203,7 +203,8 @@ Raw tool data at [SOBA/tool data](SOBA/tool_data "SOBA/tool data")
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has website](Property%253AHas_website "Property:Has website") | <a
+|----|----|
+| [Has website](Property%253AHas_website "Property:Has website") | <a |
 href="http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis"
 class="external free"
 rel="nofollow">http://www.sequenceontology.org/wiki/index.php/SOBA_-_Sequence_Ontology_Bioinformatics_Analysis</a>  |

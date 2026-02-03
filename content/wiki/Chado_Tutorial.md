@@ -397,7 +397,9 @@ terms. Representing them and reasoning with them is non-trivial, but the
 CV module helps with both.
 
 | <a href="http://flybase.org" class="external text"
-rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" |----| <img
+rel="nofollow">FlyBase</a> CV Term Viewer showing GO term "tissue regeneration" |
+|----|
+| <img |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/d/d3/FlyBaseCVTermViewer.png" width="1067"
 height="604" alt="FlyBaseCVTermViewer.png" /> |
 

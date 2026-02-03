@@ -116,4 +116,5 @@ SOBAcl --columns file   --rows type --data length --data_type mean \
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [SOBA](SOBA.1 "SOBA") |

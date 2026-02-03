@@ -353,7 +353,9 @@ Ends</td>
 
 ## Instructors
 
-| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |
+|----|----|----|
+| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a> develoepr | <a href="http://www.oicr.on.ca/" class="external text" |
 rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") developer | <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">Clemson University Genomics Institute</a> | [Carson Holt](User%253ACarsonholt "User%253ACarsonholt") | [MAKER](MAKER.1 "MAKER") developer | <a href="http://www.utah.edu" class="external text"
@@ -383,7 +385,8 @@ as homework to be done prior to the course's start.**
 
 ### System Requirements
 
-|----|----| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img
+|----|----|
+| <a href="http://www.vmware.com" rel="nofollow" title="VMware"><img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/e/ec/VmwareLogoSmall.jpg" width="100"
 height="26" alt="VMware" /></a> | *Participants are required to bring their own laptops, already capable of running a VMware system image.* |
 
@@ -478,7 +481,9 @@ instructors.
 <a href="GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
-| No  | Yes, with reservations | Yes | No opinion |-----|------------------------|-----|------------| 0%  | 12%                    | 88% | 0%         |
+| No  | Yes, with reservations | Yes | No opinion |
+|-----|------------------------|-----|------------|
+| 0% | 12% | 88% | 0% |
 
   
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)

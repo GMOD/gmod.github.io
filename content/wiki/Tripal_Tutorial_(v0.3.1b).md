@@ -333,7 +333,9 @@ Applications:
 
 ### Sites Running Tripal
 
-| Site Name | URL |----|----| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free"
+| Site Name | URL |
+|----|----|
+| Pulse Crops Genomics & Breeding | <a href="http://knowpulse2.usask.ca/portal/" class="external free" |
 rel="nofollow">http://knowpulse2.usask.ca/portal/</a> | Genome Database for Vaccinium | <a href="http://www.vaccinium.org" class="external free"
 rel="nofollow">http://www.vaccinium.org</a> | Cool Season Food Legume Database | <a href="http://www.gabcsfl.org" class="external free"
 rel="nofollow">http://www.gabcsfl.org</a> | Cacao Genome Database | <a href="http://www.cacaogenomedb.org" class="external free"

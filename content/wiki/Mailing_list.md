@@ -88,7 +88,9 @@ strongly suggest that join a list before posting to it.*
 
 ## Overview Lists
 
-| Topic | List Link | Comment | Archive(s) |----|----|----|----| Announcements | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-announce"
+| Topic | List Link | Comment | Archive(s) |
+|----|----|----|----|
+| Announcements | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-announce" |  |  |
 class="external text" rel="nofollow">gmod-announce</a> | Low volume GMOD announcements. Moderated. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.announce"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://gmod.827538.n3.nabble.com/Announcements-f815515.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
@@ -341,7 +343,9 @@ class="external text" rel="nofollow">Sourceforge</a></td>
 These mailing lists are about general topics of interest, rather than
 about specific software components.
 
-| Name | List Link | Topics | Archive(s) |----|----|----|----| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy"
+| Name | List Link | Topics | Archive(s) |
+|----|----|----|----|
+| CoGePhy | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cogephy" |  |  |
 class="external text" rel="nofollow">gmod-cogephy</a> | Discussion of **co**mparative **ge**nomics, **phy**logeny, and related topics. | <a href="http://gmod.827538.n3.nabble.com/CoGePhy-f2036734.html"
 class="external text" rel="nofollow">Nabble</a>, <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=gmod-cogephy"
@@ -357,7 +361,9 @@ class="external text" rel="nofollow">SourceForge</a> |
 
 As of May 2016, these lists have not had postings in the past 12 months.
 
-| Component | Subscribe Link | Comment | Archive(s) |----|----|----|----| <a href="http://search.cpan.org/perldoc?Bio::Graphics"
+| Component | Subscribe Link | Comment | Archive(s) |
+|----|----|----|----|
+| <a href="http://search.cpan.org/perldoc?Bio::Graphics" |  |  |  |
 class="external text" rel="nofollow">Bio::Graphics</a> | <a
 href="https://lists.sourceforge.net/lists/listinfo/gmod-biographics-commits"
 class="external text" rel="nofollow">gmod-biographics-commits</a> | <a href="http://search.cpan.org/perldoc?Bio::Graphics"
@@ -403,7 +409,9 @@ class="external text" rel="nofollow">Sourceforge</a> |
 As of August 2008, these lists have not had postings in the past 12
 months.
 
-| List | Comment |----|----| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture"
+| List | Comment |
+|----|----|
+| <a href="https://lists.sourceforge.net/lists/listinfo/gmod-architecture" |  |
 class="external text" rel="nofollow">gmod-architecture</a> | GMOD architecture working group list. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-chado-seq-ad"
 class="external text" rel="nofollow">gmod-chado-seq-ad</a> | Last post November 2006. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-citrina"
 class="external text" rel="nofollow">gmod-citrina</a> | [Citrina](Citrina "Citrina") mailing list. Last post June 2006. Citrina is [no longer supported](Category%253AUnsupported "Category%253AUnsupported") by GMOD. | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-cmae"
@@ -424,7 +432,9 @@ class="external text" rel="nofollow">turnkey-cmts</a> | [Turnkey](Turnkey "Turnk
 There are a couple of mailing lists that, while not affiliated with
 GMOD, often have content of interest to the GMOD community.
 
-| List Link(s) | Comment | Archive(s) |----|----|----| <a href="http://www.biocurator.org/emaillist.shtml"
+| List Link(s) | Comment | Archive(s) |
+|----|----|----|
+| <a href="http://www.biocurator.org/emaillist.shtml" |  |  |
 class="external text" rel="nofollow">ISB</a> (formerly <a href="http://mailman.tairgroup.org/mailman/listinfo/biocurator"
 class="external text" rel="nofollow">Biocurator</a>) | List for biological data curators and informatics people who support them. If you are interested in how biological databases are created, maintained and used, then subscribe to this list. | <a href="http://mailman.tairgroup.org/pipermail/biocurator/"
 class="external text" rel="nofollow">TAIR</a> (2009/12-) | <a href="http://lists.open-bio.org/mailman/listinfo/bioperl-l"

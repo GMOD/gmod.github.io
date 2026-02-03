@@ -42,4 +42,8 @@ a preview of the JBrowse 2 application.
 
 ### Workshop Schedule
 
-| Time | Presenter | Topic |----|----|----| 10 minutes | Ian Holmes | Welcome, JBrowse and JBrowse 2 overview | 60 minutes | Colin Diesh and Garrett Stevens | JBrowse 2 architecture, SV inspector, and detailed overview of JBrowse 2 | 20 minutes | Ian Holmes | Coverage of the JBrowse ecosystem, including plugins, JBrowse Connect, Apollo, and the future. |
+| Time | Presenter | Topic |
+|----|----|----|
+| 10 minutes | Ian Holmes | Welcome, JBrowse and JBrowse 2 overview |
+| 60 minutes | Colin Diesh and Garrett Stevens | JBrowse 2 architecture, SV inspector, and detailed overview of JBrowse 2 |
+| 20 minutes | Ian Holmes | Coverage of the JBrowse ecosystem, including plugins, JBrowse Connect, Apollo, and the future. |

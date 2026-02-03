@@ -155,7 +155,19 @@ other files moved to the `data` partition, please
 rel="nofollow">email the GMOD developers list</a> so that we can
 incorporate the changes into future iterations of GMOD in a Box.
 
-|----|----| /data/etc/gbrowse | The config directory for GBrowse. | /data/etc/postgresql | The config directory for PostgreSQL | /data/opt | A good place to install any other software you want to use | /data/var/lib/gbrowse2 | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. | /data/var/lib/postgresql | Files for the PostgreSQL database | /data/var/www/.htaccess | The htaccess file for the main Drupal site | /data/var/www/jbrowse/jbrowse_conf.json | Config file for JBrowse | /data/var/www/jbrowse/data | All of the data files needed for running JBrowse | /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) | /data/webapollo | WebApollo data | /data/var/lib/tomcat7/webapps/WebApollo/config | Config options for WebApollo | /data/usr/share/tomcat7/bin | setenv.sh for tomcat; used to increase allocated memory for tomcat |
+|----|----|
+| /data/etc/gbrowse | The config directory for GBrowse. |
+| /data/etc/postgresql | The config directory for PostgreSQL |
+| /data/opt | A good place to install any other software you want to use |
+| /data/var/lib/gbrowse2 | Other GBrowse files that might be modified on your instance, including user session data and flat file databases. |
+| /data/var/lib/postgresql | Files for the PostgreSQL database |
+| /data/var/www/.htaccess | The htaccess file for the main Drupal site |
+| /data/var/www/jbrowse/jbrowse_conf.json | Config file for JBrowse |
+| /data/var/www/jbrowse/data | All of the data files needed for running JBrowse |
+| /data/var/www/sites/default | Site-specific files and directories for Drupal; modules and themes go here (though Tripal is in /var/www/sites/all) |
+| /data/webapollo | WebApollo data |
+| /data/var/lib/tomcat7/webapps/WebApollo/config | Config options for WebApollo |
+| /data/usr/share/tomcat7/bin | setenv.sh for tomcat; used to increase allocated memory for tomcat |
 
 Note that changes made to files in any other locations will be lost.
 

@@ -5,7 +5,10 @@ title: "MOD Participants"
 
 Participants attending the MOD Faces Caucus
 
-| Participant | Organization | Address |----|----|----| Allen Day | allenday (via) ucla edu | Anand Venkatraman | anandv (via) tamu edu | Arek Kasprzyk | <a href="http://www.biomart.org/" class="external text"
+| Participant | Organization | Address |
+|----|----|----|
+| Allen Day | allenday (via) ucla edu | Anand Venkatraman |
+| anandv (via) tamu edu | Arek Kasprzyk | <a href="http://www.biomart.org/" class="external text" |
 rel="nofollow">BioMart, EBI</a> | arek (via) ebi ac uk | Bob Muller | bmuller (via) stanford edu | Brian O'Connor | boconnor (via) ucla edu | Vivien Bonazzi | NHGRI | bonazziv (via) mail nih gov | Brian Osborne | bosborne (via) alum mit edu | Jeff Bowes | <a href="http://xenbase.org" class="external text"
 rel="nofollow">XenBase</a> | bowes (via) ucalgary ca | Susan Bridges | bridges (via) cse msstate edu | Christine Elsik | c-elsik (via) tamu edu | Scott Cain | <a href="http://www.gmod.org/" class="external text"
 rel="nofollow">GMOD</a> | cain.cshl (via) gmail com | Chinmay Patel | cp2 (via) sanger ac uk | Lynn Crosby | <a href="http://flybase.org" class="external text"

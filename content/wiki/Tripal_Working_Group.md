@@ -54,7 +54,9 @@ is encouraged to attend.
 
 The working group will meet:
 
-|--------|-----------------------------------------------------| Time:  | **4-6pm, Wednesday, January 13.**                   | Venue: | **Lobby of the Town and Country Convention Center** |
+|--------|-----------------------------------------------------|
+| Time: | **4-6pm, Wednesday, January 13.** |
+| Venue: | **Lobby of the Town and Country Convention Center** |
 
 This is between the end of content at [PAG 2010](PAG_2010 "PAG 2010")
 and the PAG conference dinner. We may lose wireless halfway through the
@@ -65,7 +67,9 @@ meeting.
 If you are interested, please add your name below. You may also want to
 subscribe to the Tripal mailing list.
 
-| Name | Email | Affiliation | Comments |----|----|----|----| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text"
+| Name | Email | Affiliation | Comments |
+|----|----|----|----|
+| [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | ficklin\<\*\>clemson.edu | <a href="http://www.genome.clemson.edu/" class="external text" |  |
 rel="nofollow">CUGI</a> | Meg Staton | mestato\<\*\>yahoo.com | <a href="http://www.genome.clemson.edu/" class="external text"
 rel="nofollow">CUGI</a> | Sook Jung | sook\<\*\>bioinfo.wsu.edu | Washington State University, <a href="http://www.bioinfo.wsu.edu/gdr/" class="external text"
 rel="nofollow">GDR</a> | [Michael Caudy](User%253AMcaudy "User%253AMcaudy") | mcaudy\<\*\>gmail.com | <a href="http://www.reactome.org" class="external text"

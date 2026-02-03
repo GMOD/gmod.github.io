@@ -407,9 +407,15 @@ you are strongly encouraged to participate.*
 
   
 
-| Name | Email | Particular Interest? |----|----|----| Duke Leto (Organizer) | jonathan at leto net | Hilmar Lapp | hlapp at nescent.org | Large trees in BioPerl cleanup |  |  |  | ↑ Add your name and details above |  # Timeline
+| Name | Email | Particular Interest? |
+|----|----|----|
+| Duke Leto (Organizer) | jonathan at leto net | Hilmar Lapp |
+| hlapp at nescent.org | Large trees in BioPerl cleanup |  |
+|  |  | ↑ Add your name and details above |
+| # Timeline |  |  |
 
-|---:|----| **June 3, 2010** | [Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal") submitted to <a href="http://nesscent.org/" class="external text"
+|---:|----|
+| **June 3, 2010** | [Proposal](GMOD_Evo_Hackathon_Proposal "GMOD Evo Hackathon Proposal") submitted to <a href="http://nesscent.org/" class="external text" |
 rel="nofollow">NESCent</a> | **June 10, 2010** | Funding approved | **August 1, 2010** | [Open call for participants](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call"), applications open | **August 25, 2010** | [Open call application](GMOD_Evo_Hackathon_Open_Call "GMOD Evo Hackathon Open Call") deadline | **September 16, 2010** | Applicants notified | **September 24, 2010** | Deadline for participant attendance commitment | **November 8-12, 2010** | Hackathon at NESCent | **March 7 (+ ?), 2011** | [Hackathon followup gathering](#March_2011_Satellite) at NESCent as part of [GMOD Americas 2011](GMOD_Americas_2011 "GMOD Americas 2011"). |
 
 # Sponsorship

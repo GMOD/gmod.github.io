@@ -27,7 +27,9 @@ Resources
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web  | [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://textpresso.org" class="external free"
+|----|----|
+| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web |
+| [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://textpresso.org" class="external free" |
 rel="nofollow">http://textpresso.org</a> , <a href="http://textpresso.org/downloads.html" class="external free"
 rel="nofollow">http://textpresso.org/downloads.html</a> , <a href="http://textpresso-www.caltech.edu/cgi-bin/celegans/user_guide"
 class="external free"

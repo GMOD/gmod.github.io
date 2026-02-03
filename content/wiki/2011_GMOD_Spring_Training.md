@@ -185,7 +185,9 @@ questions and help participants use the tools with their data.
 Sessions were taught by experienced component developers and GMOD
 project staff:
 
-| Instructor | GMOD Affiliation | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text"
+| Instructor | GMOD Affiliation | Affiliation |
+|----|----|----|
+| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator; <a href="Chado" class="mw-redirect" title="Chado">Chado</a>, [GBrowse](GBrowse.1 "GBrowse") | <a href="http://www.oicr.on.ca/" class="external text" |
 rel="nofollow">Ontario Institute for Cancer Research</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Stephen Ficklin](User%253ASficklin "User%253ASficklin") | [Tripal](Tripal.1 "Tripal") | <a href="http://www.wsu.edu" class="external text"
 rel="nofollow">Washington State University</a> | Alex Kalderimis | [InterMine](InterMine "InterMine") | <a href="http://flymine.org" class="external text"
@@ -231,7 +233,9 @@ course:
 
 ### VMware on Windows and Linux
 
-|  |----|----|----| <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img
+|
+|----|----|----|
+| <a href="http://www.microsoft.com/" rel="nofollow" title="Windows"><img |  |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/a/a5/WindowsLogoSmall.jpg" width="49"
 height="48" alt="Windows" /></a> | <img
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/b/b1/LinuxLogoSmall.jpg" width="45" height="50"
@@ -242,13 +246,15 @@ rel="nofollow">VMware</a>. You will need to register to download it. There are m
 
 ### VMware on Mac OS X
 
-|----|----| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img
+|----|----|
+| <a href="http://www.apple.com/macosx/" rel="nofollow" title="Apple"><img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/8/82/AppleSmall.gif" width="48" height="48"
 alt="Apple" /></a> | Participants can also bring *newer Macs with Intel processors*. The Intel processor is a requirement for all the packages discussed below. There is no free VMware player that runs *directly* under [Mac OS X](Category%253AMac_OS_X "Category%253AMac OS X"). However, there are several other options, **all of which require an Intel Mac**: |
 
 VMware Fusion
 
-|----|----| <a href="http://www.vmware.com/products/fusion/" rel="nofollow"
+|----|----|
+| <a href="http://www.vmware.com/products/fusion/" rel="nofollow" |  |
 title="Fusion"><img src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/0/02/VMWareFusionsLogo.jpg"
 width="48" height="48" alt="Fusion" /></a> | <a href="http://www.vmware.com/products/fusion/" class="external text"
 rel="nofollow">VMware Fusion</a> (<a href="http://www.vmware.com/a/buylink/10" class="external text"
@@ -257,7 +263,8 @@ class="external text" rel="nofollow">$40/Academic</a>) allows you to run VMware 
 
 VirtualBox
 
-|----|----| <img
+|----|----|
+| <img |  |
 src="https://raw.githubusercontent.com/GMOD/gmod.github.io/main/mediawiki/images/f/fa/VirtualBox-logo.png" width="48"
 height="48" alt="VirtualBox-logo.png" /> | <a href="http://www.virtualbox.org/wiki/Downloads" class="external text"
 rel="nofollow">VirtualBox</a> is free and open source, and runs on Intel Macs (and Windows, Linux and Solaris too). It claims to be capable of running VMware images, *but we have not tested this with our images.* |

@@ -56,7 +56,10 @@ Maryland School of Medicine.
 
 ## Mailing Lists
 
-|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-users"
+|
+|----|----|----|----|
+|  | Mailing List Link | Description | Archive(s) |
+| <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> | <a href="https://lists.sourceforge.net/lists/listinfo/ergatis-users" |  |  |
 class="external text" rel="nofollow">ergatis-users</a> | <a href="Ergatis" class="mw-redirect" title="Ergatis">Ergatis</a> users mailing list. | <a href="http://gmod.827538.n3.nabble.com/Ergatis-Users-f815632.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="http://sourceforge.net/mailarchive/forum.php?forum_name=ergatis-users"

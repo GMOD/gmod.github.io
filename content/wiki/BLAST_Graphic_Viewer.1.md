@@ -25,7 +25,9 @@ Resources
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web  | [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://sourceforge.net/projects/gmod/files/blastGraphic/"
+|----|----|
+| [Available on platform](Property%253AAvailable_on_platform "Property:Available on platform") | web |
+| [Has URL](Property%253AHas_URL "Property:Has URL") | <a href="http://sourceforge.net/projects/gmod/files/blastGraphic/" |
 class="external free"
 rel="nofollow">http://sourceforge.net/projects/gmod/files/blastGraphic/</a>  and <a href="http://www.yeastgenome.org/cgi-bin/blast-sgd.pl"
 class="external free"

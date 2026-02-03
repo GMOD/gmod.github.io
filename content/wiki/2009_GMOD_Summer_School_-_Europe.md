@@ -303,7 +303,9 @@ style="color: #aaaaff">August 2009 GMOD Meeting</span></a></td>
 
 ## Instructors
 
-| Instructor | GMOD Contribution | Affiliation |----|----|----| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text"
+| Instructor | GMOD Contribution | Affiliation |
+|----|----|----|
+| [Scott Cain](User%253AScott "User%253AScott") | GMOD Project Coordinator | <a href="http://www.oicr.on.ca/" class="external text" |
 rel="nofollow">Ontario Institute for Cancer Research (OICR)</a> | [Tim Carver](User%253ATimCarver "User%253ATimCarver") | [Artemis](Artemis "Artemis") lead developer | <a href="http://www.sanger.ac.uk/" class="external text"
 rel="nofollow">Wellcome Trust Sanger Institute</a> | [Dave Clements](User%253AClements "User%253AClements") | [GMOD Help Desk](GMOD_Help_Desk "GMOD Help Desk") | <a href="http://nescent.org/" class="external text"
 rel="nofollow">National Evolutionary Synthesis Center (NESCent)</a> | [Syed Haider](User%253ASyedHaider "User%253ASyedHaider") | [BioMart](BioMart "BioMart") developer | <a href="http://www.ebi.ac.uk/" class="external text"
@@ -465,7 +467,9 @@ events.
 <a href="GMOD_Summer_School" class="mw-redirect"
 title="GMOD Summer School">GMOD Summer School</a> to others?**
 
-| No  | Yes, with reservations | Yes | No opinion |-----|------------------------|-----|------------| 0%  | 16%                    | 84% | 0%         |
+| No  | Yes, with reservations | Yes | No opinion |
+|-----|------------------------|-----|------------|
+| 0% | 16% | 84% | 0% |
 
   
 **Q: Please rate the quality of the sessions overall, from 1 (very poor)

@@ -293,4 +293,5 @@ Scripts:
 <span class="smwfactboxhead">Facts about
 "<span class="swmfactboxheadbrowse"></span>"</span>
 
-|----|----| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER")  |
+|----|----|
+| [Has topic](Property%253AHas_topic "Property:Has topic") | [MAKER](MAKER.1 "MAKER") |

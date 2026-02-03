@@ -73,7 +73,8 @@ Thanks,
 [Dave Clements](../User%253AClements "User%253AClements")  
 [GMOD Help Desk](../GMOD_Help_Desk "GMOD Help Desk")
 
-|----|----| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") and the [GMOD News](../GMOD_News "GMOD News") for updates. |
+|----|----|
+| PS: | We are also investigating holding a GMOD course in the Asia/Pacific region, sometime this fall. Watch the [GMOD Mailing Lists](../GMOD_Mailing_Lists "GMOD Mailing Lists") and the [GMOD News](../GMOD_News "GMOD News") for updates. |
 
   
 

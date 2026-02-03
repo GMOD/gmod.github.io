@@ -37,7 +37,14 @@ Example
 
 Options  
 
-| argument | default | description |----|----|----| f | clustalw | Format on the multiple sequence alignment files | u | Username for the mysql database | p | Password for the mysql database | d | Database name | m | 100 | Resolution of the base-pair map uses to guide the alignment [grid-lines in GBrowse_syn](GBrowse_syn_Help#Grid_Lines "GBrowse syn Help") | n | Flag to skip grid-line mapping (faster but you will lose all of the insertion/deletion data) | v | Flag for verbose progress reporting | c | Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |
+| argument | default | description |
+|----|----|----|
+| f | clustalw | Format on the multiple sequence alignment files |
+| u | Username for the mysql database | p |
+| Password for the mysql database | d | Database name |
+| m | 100 | Resolution of the base-pair map uses to guide the alignment [grid-lines in GBrowse_syn](GBrowse_syn_Help#Grid_Lines "GBrowse syn Help") |
+| n | Flag to skip grid-line mapping (faster but you will lose all of the insertion/deletion data) | v |
+| Flag for verbose progress reporting | c | Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |
 
 # load_alignment_database.pl
 
@@ -56,7 +63,12 @@ Example
 
 Options  
 
-| argument | default | description |----|----|----| u | Username for the mysql database | p | Password for the mysql database | d | Database name | v | Flag for verbose progress reporting | c | Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |
+| argument | default | description |
+|----|----|----|
+| u | Username for the mysql database | p |
+| Password for the mysql database | d | Database name |
+| v | Flag for verbose progress reporting | c |
+| Flag to create a new database and load the schema as well as the data. Note, using this flag will erase all existing data prior to loading in new data. Failing to use this option for a new database will cause a fatal error. |  |  |
 
 # mercatoraln_to_synhits.pl
 
@@ -73,7 +85,12 @@ Example
 
 Options  
 
-| argument | default | description |----|----|----| a | output.mfa | Specifies the name of the alignment file from when mercator does the MSA (MAVID, PECAN, or other genome alignment tool) | v | Print progress reports while running. Note that the script will stop after reading the first line of the file (see line 117 of the script) if this option is set. | f | fasta | Specifies format of the input alignment files (multi-fasta format is the default) | d | Specifies the containing directory for the genome and map files (typically this is called **alignments** in the mercator pipeline) |
+| argument | default | description |
+|----|----|----|
+| a | output.mfa | Specifies the name of the alignment file from when mercator does the MSA (MAVID, PECAN, or other genome alignment tool) |
+| v | Print progress reports while running. Note that the script will stop after reading the first line of the file (see line 117 of the script) if this option is set. | f |
+| fasta | Specifies format of the input alignment files (multi-fasta format is the default) | d |
+| Specifies the containing directory for the genome and map files (typically this is called **alignments** in the mercator pipeline) |  |  |
 
 # aln2hit.pl
 
@@ -97,7 +114,9 @@ Example
 
 Options  
 
-| argument | default | description |----|----|----| f | clustalw | Specifies the alignment file format. Most common formats recognized by BioPerl's <a href="http://doc.bioperl.org/releases/bioperl-1.0/Bio/AlignIO.html"
+| argument | default | description |
+|----|----|----|
+| f | clustalw | Specifies the alignment file format. Most common formats recognized by BioPerl's <a href="http://doc.bioperl.org/releases/bioperl-1.0/Bio/AlignIO.html" |
 class="external text" rel="nofollow">AlignIO parsers</a> are supported. Use <a href="http://www.bioperl.org/wiki/ClustalW_multiple_alignment_format"
 class="external text" rel="nofollow">clustalw</a> or <a href="http://www.bioperl.org/wiki/FASTA_multiple_alignment_format"
 class="external text" rel="nofollow">fasta</a> for best results. | i | Specifies the name of the input alignment file |

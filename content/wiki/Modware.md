@@ -123,7 +123,10 @@ GM64426 and HG0022.
 
 ## Support
 
-|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users"
+|
+|----|----|----|----|
+|  | Mailing List Link | Description | Archive(s) |
+| **Modware** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-ware-users" |  |  |
 class="external text" rel="nofollow">gmod-ware-users</a> | **Modware** support and developer mailing list. | <a href="http://gmod.827538.n3.nabble.com/Modware-f887754.html"
 class="external text" rel="nofollow">Nabble</a> (2010/05+), <a
 href="https://sourceforge.net/mailarchive/forum.php?forum_name=gmod-ware-users"

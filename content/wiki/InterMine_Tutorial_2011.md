@@ -342,7 +342,12 @@ alt="MineManager-sourcesettings-uniprot.png" />
 
 For uniprot the appropriate settings are:
 
-| Field                      | Value                                     |----------------------------|-------------------------------------------| List of Organisms          | 36329                                     | Create protein domains     | TICKED                                    | Create GO terms            | UNTICKED                                  | Location of data directory | /home/gmod/Documents/Data/malaria/uniprot |
+| Field                      | Value |
+|----------------------------|-------------------------------------------|
+| List of Organisms | 36329 |
+| Create protein domains | TICKED |
+| Create GO terms | UNTICKED |
+| Location of data directory | /home/gmod/Documents/Data/malaria/uniprot |
 
 To save this configuration so it is used in the build, select **save
 sources** from the bottom right, or when prompted.
@@ -388,7 +393,14 @@ To add the GFF3 source to your MalariaMine:
 
 The properties set for malaria-gff are:
 
-| Field | Value | Notes |----|----|----| gff3.seqClsName | Chromosome | the ids in the first column represent Chromosome objects, e.g. MAL1 | gff3.taxonId | 36329 | taxon id of malaria | gff3.dataSourceName | PlasmoDB | the data source for features and their identifiers, this is used for the DataSet (evidence) and synonyms. | gff3.seqDataSourceName | PlasmoDB | the source of the seqids (chromosomes) is sometimes different to the features described | gff3.dataSetTitle | PlasmoDB P. falciparum genome | a DataSet object is created as evidence for the features, it is linked to a DataSource (PlasmoDB) | Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/gff | Where we unpacked the data to |
+| Field | Value | Notes |
+|----|----|----|
+| gff3.seqClsName | Chromosome | the ids in the first column represent Chromosome objects, e.g. MAL1 |
+| gff3.taxonId | 36329 | taxon id of malaria |
+| gff3.dataSourceName | PlasmoDB | the data source for features and their identifiers, this is used for the DataSet (evidence) and synonyms. |
+| gff3.seqDataSourceName | PlasmoDB | the source of the seqids (chromosomes) is sometimes different to the features described |
+| gff3.dataSetTitle | PlasmoDB P. falciparum genome | a DataSet object is created as evidence for the features, it is linked to a DataSource (PlasmoDB) |
+| Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/gff | Where we unpacked the data to |
 
 ### FASTA files
 
@@ -415,7 +427,13 @@ Add a fasta source to your Mine by following these steps:
 
 The following properties should be defined for malaria-chromosome-fasta:
 
-| Field | Value | Notes |----|----|----| FASTA Class Name | org.intermine.model.bio.Chromosome | the type of feature that each sequence is for | fasta.dataSourceName | PlasmoDB | the source of identifiers to be created | Dataset Name | PlasmoDB chromosome sequence | a DataSet object is created as evidence | Taxon ID | 36329 | the organism id for Plasmodium falciparum | Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/fasta | Where we unpacked the data to before |
+| Field | Value | Notes |
+|----|----|----|
+| FASTA Class Name | org.intermine.model.bio.Chromosome | the type of feature that each sequence is for |
+| fasta.dataSourceName | PlasmoDB | the source of identifiers to be created |
+| Dataset Name | PlasmoDB chromosome sequence | a DataSet object is created as evidence |
+| Taxon ID | 36329 | the organism id for Plasmodium falciparum |
+| Location of Data Directory | /home/gmod/Documents/Data/intermine/malaria/genome/fasta | Where we unpacked the data to before |
 
 ### Entrez Organism
 
@@ -621,11 +639,17 @@ You should end up with:
 
 ##### Gene
 
-| FieldType  | Name     | Type    | Reverse-Reference |------------|----------|---------|-------------------| Collection | pathways | Pathway | genes             |
+| FieldType  | Name     | Type    | Reverse-Reference |
+|------------|----------|---------|-------------------|
+| Collection | pathways | Pathway | genes |
 
 ##### Pathway
 
-| FieldType  | Name       | Type   | Reverse-Reference |------------|------------|--------|-------------------| Attribute  | name       | String | \-                | Attribute  | identifier | String | \-                | Collection | genes      | Gene   | pathways          |
+| FieldType  | Name       | Type   | Reverse-Reference |
+|------------|------------|--------|-------------------|
+| Attribute | name | String | \- |
+| Attribute | identifier | String | \- |
+| Collection | genes | Gene | pathways |
 
 Once these are added, if you reload the model, you should find the new
 Pathway class as part of the model
@@ -717,7 +741,12 @@ properties (**Mine Settings** → **Web Settings**):
 Uses these settings for the tutorial (<span style="color:grey">*the
 tomcat settings refer to a preconfigured tomcat role*</span>).
 
-| Field | Value | Notes |----|----|----| tomcat username | manager | The name of a tomcat administrator | tomcat password | manager | the password for the tomcat administrator | superuser username | **choose a name** | The name for the webapp administrator | superuser password | **choose a password** | The password for the webapp administrator |
+| Field | Value | Notes |
+|----|----|----|
+| tomcat username | manager | The name of a tomcat administrator |
+| tomcat password | manager | the password for the tomcat administrator |
+| superuser username | **choose a name** | The name for the webapp administrator |
+| superuser password | **choose a password** | The password for the webapp administrator |
 
 ## UserProfile Initialisation
 

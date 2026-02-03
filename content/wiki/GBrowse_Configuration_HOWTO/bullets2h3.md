@@ -506,7 +506,10 @@ section
 These options control which sections are displayed and whether they are
 initially open or collapsed. Their values are one of:
 
-|--------|--------------------------------------| open   | Show the section initially open      | closed | Show the section initially collapsed | off    | Do not show the section at all       |
+|--------|--------------------------------------|
+| open | Show the section initially open |
+| closed | Show the section initially collapsed |
+| off | Do not show the section at all |
 
 For example
 
@@ -528,7 +531,16 @@ These options allow you to insert HTML into the GBrowse page at
 strategic places. Eventually this will be replaced with an HTML template
 system, but for now, this is the best we have.
 
-| Option | Where it goes                                     |--------|---------------------------------------------------| header | between the top and the instructions              | html1  | between the instructions and the navigation bar   | html2  | between the navigation bar and the overview       | html3  | between the overview and the detail view          | html4  | between the detail view and the data source panel | html5  | between the data source panel and the track list  | html6  | between the track list and the annotation upload  | footer | between the annotation upload and the bottom      |
+| Option | Where it goes |
+|--------|---------------------------------------------------|
+| header | between the top and the instructions |
+| html1 | between the instructions and the navigation bar |
+| html2 | between the navigation bar and the overview |
+| html3 | between the overview and the detail view |
+| html4 | between the detail view and the data source panel |
+| html5 | between the data source panel and the track list |
+| html6 | between the track list and the annotation upload |
+| footer | between the annotation upload and the bottom |
 
 These can be code references. One useful thing to do is to use the
 language translator to insert language-specific HTML. Here's an example
@@ -566,12 +578,18 @@ the detailed view.
 
 `keystyle` takes one of two values:
 
-|-----------|------------------------------------------------------------| `between` | Print the track labels between the tracks themselves.      | `beneath` | Print the track labels at the bottom of the detailed view. |
+|-----------|------------------------------------------------------------|
+| `between` | Print the track labels between the tracks themselves. |
+| `beneath` | Print the track labels at the bottom of the detailed view. |
 
 The `empty_tracks` option controls what to do when a track has no
 features in it. Possible values are:
 
-|------------|---------------------------------------| `key`      | Print just the key (the track label). | `suppress` | Suppress the track completely.        | `line`     | Draw a solid line across the track.   | `dashed`   | Draw a dashed line across the track.  |
+|------------|---------------------------------------|
+| `key` | Print just the key (the track label). |
+| `suppress` | Suppress the track completely. |
+| `line` | Draw a solid line across the track. |
+| `dashed` | Draw a dashed line across the track. |
 
 The default value is `key`.
 

@@ -79,7 +79,14 @@ category" to each of them. DAS uses the idea of the "category" of a
 feature in order to filter sets of features by their purpose. Categories
 include:
 
-|----|----| transcription | features that have to do with RNA transcription | translation | features that have to do with protein translation and function | variation | mutations, deletions, polymorphisms | structural | contigs, clones, reads, PCR primers | repeat | repetitive elements | experimental | a catch-all for experimental data | miscellaneous | anything that doesn't fit in one fo the other categories |
+|----|----|
+| transcription | features that have to do with RNA transcription |
+| translation | features that have to do with protein translation and function |
+| variation | mutations, deletions, polymorphisms |
+| structural | contigs, clones, reads, PCR primers |
+| repeat | repetitive elements |
+| experimental | a catch-all for experimental data |
+| miscellaneous | anything that doesn't fit in one fo the other categories |
 
 Find the \[Genes\] stanza and modify it to to have a das category of
 "transcription" as shown here:

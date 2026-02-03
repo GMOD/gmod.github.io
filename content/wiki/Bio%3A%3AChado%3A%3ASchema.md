@@ -72,7 +72,10 @@ is often sufficient.
 
 ## Support
 
-|  |----|----|----|----|  | Mailing List Link | Description | Archive(s) | **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema"
+|
+|----|----|----|----|
+|  | Mailing List Link | Description | Archive(s) |
+| **Bio%253A%253AChado%253A%253ASchema** | <a href="https://lists.sourceforge.net/lists/listinfo/gmod-schema" |  |  |
 class="external text" rel="nofollow">gmod-schema</a> | Use the <a href="Chado" class="mw-redirect" title="Chado">Chado</a> list (gmod-schema) for all **Bio%253A%253AChado%253A%253ASchema** questions. | <a href="http://dir.gmane.org/gmane.science.biology.gmod.schema"
 class="external text" rel="nofollow">Gmane</a>, <a href="http://old.nabble.com/gmod-schema-f3506.html"
 class="external text" rel="nofollow">Nabble (old)</a>, <a href="http://gmod.827538.n3.nabble.com/Chado-f815597.html"
@@ -84,4 +87,6 @@ class="external text" rel="nofollow">Sourceforge</a> |
 "<span class="swmfactboxheadbrowse">Schema</span>"</span><span class="smwrdflink"><span class="rdflink">RDF
 feed</span></span>
 
-|----|----| Chado | Schema  | Talk:Bio | Schema  |
+|----|----|
+| Chado | Schema |
+| Talk:Bio | Schema |

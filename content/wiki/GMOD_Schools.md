@@ -42,7 +42,11 @@ participants to GMOD and focus on installation, configuration and
 integration of popular [GMOD
 Components](GMOD_Components "GMOD Components").
 
-| Date | School | Location |----|----|----|----| 2014 | February 26-28 | [GMOD Malaysia 2014](GMOD_Malaysia_2014.1 "GMOD Malaysia 2014") | Kuala Lumpur, Malaysia |  | May 19-23 | [GMOD Online Training 2014](GMOD_Online_Training_2014.1 "GMOD Online Training 2014") | Online! | 2013 | July 19-23 | [2013 GMOD Summer School](2013_GMOD_Summer_School "2013 GMOD Summer School") | <a href="http://www.nescent.org" class="external text"
+| Date | School | Location |
+|----|----|----|----|
+| 2014 | February 26-28 | [GMOD Malaysia 2014](GMOD_Malaysia_2014.1 "GMOD Malaysia 2014") | Kuala Lumpur, Malaysia |
+|  | May 19-23 | [GMOD Online Training 2014](GMOD_Online_Training_2014.1 "GMOD Online Training 2014") | Online! |
+| 2013 | July 19-23 | [2013 GMOD Summer School](2013_GMOD_Summer_School "2013 GMOD Summer School") | <a href="http://www.nescent.org" class="external text" |
 rel="nofollow">NESCent</a>, Durham, NC, United States | 2012 | August 24-29 | [2012 GMOD Summer School](2012_GMOD_Summer_School "2012 GMOD Summer School") | <a href="http://www.nescent.org" class="external text"
 rel="nofollow">NESCent</a>, Durham, NC, United States | 2011 | March 8-12 | [2011 GMOD Spring Training](2011_GMOD_Spring_Training "2011 GMOD Spring Training") | <a href="http://www.nescent.org" class="external text"
 rel="nofollow">NESCent</a>, Durham, NC, United States | 2010 | May 6-9 | [2010 GMOD Summer School - Americas](2010_GMOD_Summer_School_-_Americas "2010 GMOD Summer School - Americas") | <a href="http://www.nescent.org" class="external text"

@@ -108,13 +108,26 @@ database, and are part of the user uploads system.
 This table holds all the users, regardless of whether they signed up
 using their OpenID or a username. It stores the following information:
 
-| Field | Type | Description |----|----|----| userid | integer not null PRIMARY KEY auto_increment | A unique user ID. | email | varchar(64) not null UNIQUE | An e-mail for confirmation & notification. | pass | varchar(32) not null | An encrypted password (not stored as plain text). | remember | boolean not null | Whether to remember the user at this location or not. | openid_only | boolean not null | Was registered with an OpenID or no? | confirmed | boolean not null | Has been confirmed? | cnfm_code | varchar(32) not null | Confirmation code. | last_login | timestamp not null | Date & time of last login. | created | datetime not null | Date & time created. |
+| Field | Type | Description |
+|----|----|----|
+| userid | integer not null PRIMARY KEY auto_increment | A unique user ID. |
+| email | varchar(64) not null UNIQUE | An e-mail for confirmation & notification. |
+| pass | varchar(32) not null | An encrypted password (not stored as plain text). |
+| remember | boolean not null | Whether to remember the user at this location or not. |
+| openid_only | boolean not null | Was registered with an OpenID or no? |
+| confirmed | boolean not null | Has been confirmed? |
+| cnfm_code | varchar(32) not null | Confirmation code. |
+| last_login | timestamp not null | Date & time of last login. |
+| created | datetime not null | Date & time created. |
 
 #### OpenID Users
 
 This table holds all openIDs associated with users.
 
-| Field      | Type                              | Description            |------------|-----------------------------------|------------------------| userid     | integer not null                  | A unique user ID.      | openid_url | varchar(128) not null PRIMARY key | The URL of the openID. |
+| Field      | Type                              | Description |
+|------------|-----------------------------------|------------------------|
+| userid | integer not null | A unique user ID. |
+| openid_url | varchar(128) not null PRIMARY key | The URL of the openID. |
 
 #### Sessions
 
@@ -122,14 +135,21 @@ This table holds all registered sessions. In order for a user to add
 public files, have files shared with them, or upload files, they need to
 be assigned a user ID and a record in this table.
 
-| Field | Type | Description |----|----|----| userid | integer not null PRIMARY KEY auto increment | A unique user ID. | username | varchar(32) | A username, assigned on registration so the user can login. Anonymous users have "an anonymous user" as their username. | sessionid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their session. | uploadsid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their uploads folder. |
+| Field | Type | Description |
+|----|----|----|
+| userid | integer not null PRIMARY KEY auto increment | A unique user ID. |
+| username | varchar(32) | A username, assigned on registration so the user can login. Anonymous users have "an anonymous user" as their username. |
+| sessionid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their session. |
+| uploadsid | char(32) not null UNIQUE | The 32-bit hexadecimal ID corresponding to their uploads folder. |
 
 #### DBInfo
 
 This table holds the version number of the current database schema. It's
 used in upgrading from older schemas, without losing information.
 
-| Field | Type | Description |----|----|----| schema_version | int(10) not null UNIQUE | The version number of the current schema. |
+| Field | Type | Description |
+|----|----|----|
+| schema_version | int(10) not null UNIQUE | The version number of the current schema. |
 
 ## Errors
 

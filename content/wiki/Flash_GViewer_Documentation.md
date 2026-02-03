@@ -402,19 +402,40 @@ indicate attributes of elements
 
   
 
-| XML Element | description |----|----| chromosome | Each chromosome's data is contained within a chromosome element | @index | the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc). | @number | the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer | @length | the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML. | band | each band's data on the chromosome is contained within a band element | @index | index number for the band, used to sort the bands in an appropriate order | @name | name of band, eg q11, p12. Currently not used but could be used to display the band info when the mouse was placed over it | start | band start location in appropriate Units (probably basepairs) | end | band end location in appropriate Units (probably basepairs) | color | Flash hex representation of the band color (begins with 0x rather than a \#), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap. | stain | Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below. |
+| XML Element | description |
+|----|----|
+| chromosome | Each chromosome's data is contained within a chromosome element |
+| @index | the chromosome index - an integer value used solely to sort the chromsomes to get correct order on the image (otherwise Flash sorts them 1, 10, 11, 2, 3, 4, X, Y,etc). |
+| @number | the actual chromosome number, eg.1, X, Y, used to label the chromosome on the Flash GViewer |
+| @length | the length of the chromosome in appropriate units (probably basepairs). I dont think there would be a problem using other units (cR, cM) as long as you were consistent throughout the baseMap file and annotation XML. |
+| band | each band's data on the chromosome is contained within a band element |
+| @index | index number for the band, used to sort the bands in an appropriate order |
+| @name | name of band, eg q11, p12. Currently not used but could be used to display the band info when the mouse was placed over it |
+| start | band start location in appropriate Units (probably basepairs) |
+| end | band end location in appropriate Units (probably basepairs) |
+| color | Flash hex representation of the band color (begins with 0x rather than a \#), eg. 0xFF0000 would give a red band. Can be used to create a customized color scheme for the baseMap. |
+| stain | Giemsa stain abbreviation, obtained from the UCSC cytogenetic banding files. This is used to color the bands appropriately. This value is overruled by the value in a color element (see below). Currently recognized stain abbreviations and the corresponding colors are shown below. |
 
   
 **Stain abbreviations and colors**
 
-| Stain Abbreviation | Hex Color | Swatch |--------------------|-----------|--------| gpos & gpos100     | \#000000  | gpos75             | \#444444  | gpos66             | \#666666  | gpos50             | \#888888  | gpos33             | \#AAAAAA  | gpos25             | \#CCCCCC  | gneg               | \#FFFFFF  | gvar               | \#CCCCCC  | \[default\]        | \#CCCCCC  #### The Base Maps
+| Stain Abbreviation | Hex Color | Swatch |
+|--------------------|-----------|--------|
+| gpos & gpos100 | \#000000 | gpos75 |
+| \#444444 | gpos66 | \#666666 |
+| gpos50 | \#888888 | gpos33 |
+| \#AAAAAA | gpos25 | \#CCCCCC |
+| gneg | \#FFFFFF | gvar |
+| \#CCCCCC | \[default\] | \#CCCCCC  #### The Base Maps |
 
 The following base maps are provided in the standard distribution.
 
   
 **Basic Genome Maps**
 
-| Base Map File | Map Description | External Links |----|----|----| rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
+| Base Map File | Map Description | External Links |
+|----|----|----|
+| rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text" |
 rel="nofollow">UCSC Genome Browser</a> | rgd_rat_ideo.xml | Rat genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://rgd.mcw.edu" class="external text" rel="nofollow">RGD
 Genome Browser</a> | mouse_ideo.xml | Mouse genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
 rel="nofollow">UCSC Genome Browser</a> | human_ideo.xml | Human genome with cytogenetic bands, created from UCSC cytoBandIdeo file | Yes - <a href="http://genome.ucsc.edu/" class="external text"
@@ -423,7 +444,14 @@ rel="nofollow">UCSC Genome Browser</a> | celegans_ideo.xml | C. elegans genome, 
   
 **Comparative Maps (Synteny data from RGD VCMap SEQBASD v1.0)**
 
-| Base Map File | Map Description | External Links |----|----|----| human-rat_synteny.xml | Human genome with bands corresponding to syntenic regions in Rat | No | human-mouse_synteny.xml | Human genome with bands corresponding to syntenic regions in Mouse | No | rat-human_synteny.xml | Rat genome with bands corresponding to syntenic regions in Human | No | rat-mouse_synteny.xml | Rat genome with bands corresponding to syntenic regions in Mouse | No | mouse-rat_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Rat | No | mouse-human_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Human | No |
+| Base Map File | Map Description | External Links |
+|----|----|----|
+| human-rat_synteny.xml | Human genome with bands corresponding to syntenic regions in Rat | No |
+| human-mouse_synteny.xml | Human genome with bands corresponding to syntenic regions in Mouse | No |
+| rat-human_synteny.xml | Rat genome with bands corresponding to syntenic regions in Human | No |
+| rat-mouse_synteny.xml | Rat genome with bands corresponding to syntenic regions in Mouse | No |
+| mouse-rat_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Rat | No |
+| mouse-human_synteny.xml | Mouse genome with bands corresponding to syntenic regions in Human | No |
 
   
 
@@ -612,7 +640,11 @@ via Javascript.
 
   
 
-| Flash function | Function description |----|----| setHighlight(featureName) | Turns on the highlight and label for the feature with the label 'featureName' | unsetHighlight(featureName) | Turns off the highlight and label for the feature with the label 'featureName' | getAnnotationData(format) | Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc. |
+| Flash function | Function description |
+|----|----|
+| setHighlight(featureName) | Turns on the highlight and label for the feature with the label 'featureName' |
+| unsetHighlight(featureName) | Turns off the highlight and label for the feature with the label 'featureName' |
+| getAnnotationData(format) | Can be used to get the raw annotation data from the Flash Movie in various formats (text and html). Data is passed back to a javascript function displayAnnotationData(String) as a string object containing tab-delimited (text) or table (html). The function can then do something with the data such as display it in a new window, etc. |
 
   
 To call these functions using Javascript, a few changes are required in

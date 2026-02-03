@@ -280,7 +280,12 @@ realm. To Do - add support for URIs, URNs (e.g. LSIDs). We can do this
 by treating the URL as a URI - however, some applications may expect
 this to be resolvable - to be decided.
 
-| FK  | Name        | Type                   | Description       |-----|-------------|------------------------|-------------------|     | db_id       | serial                 | *PRIMARY KEY*     |     | name        | character varying(255) | *UNIQUE NOT NULL* |     | description | character varying(255) | urlprefix   | character varying(255) | url         | character varying(255) db Structure
+| FK  | Name        | Type                   | Description |
+|-----|-------------|------------------------|-------------------|
+|  | db_id | serial | *PRIMARY KEY* |
+|  | name | character varying(255) | *UNIQUE NOT NULL* |
+|  | description | character varying(255) | urlprefix |
+| character varying(255) | url | character varying(255) db Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -383,7 +388,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: project
 
-| FK  | Name        | Type                   | Description       |-----|-------------|------------------------|-------------------|     | project_id  | serial                 | *PRIMARY KEY*     |     | name        | character varying(255) | *UNIQUE NOT NULL* |     | description | character varying(255) | *NOT NULL*        |
+| FK  | Name        | Type                   | Description |
+|-----|-------------|------------------------|-------------------|
+|  | project_id | serial | *PRIMARY KEY* |
+|  | name | character varying(255) | *UNIQUE NOT NULL* |
+|  | description | character varying(255) | *NOT NULL* |
 
 project Structure
 
@@ -398,7 +407,15 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: tableinfo
 
-| FK  | Name                | Type                  | Description              |-----|---------------------|-----------------------|--------------------------|     | tableinfo_id        | serial                | *PRIMARY KEY*            |     | name                | character varying(30) | *UNIQUE NOT NULL*        |     | primary_key_column  | character varying(30) | is_view             | integer               | *NOT NULL*               |     | view_on_table_id    | integer               | superclass_table_id | integer               | is_updateable       | integer               | *NOT NULL DEFAULT 1*     |     | modification_date   | date                  | *NOT NULL DEFAULT now()* |
+| FK  | Name                | Type                  | Description |
+|-----|---------------------|-----------------------|--------------------------|
+|  | tableinfo_id | serial | *PRIMARY KEY* |
+|  | name | character varying(30) | *UNIQUE NOT NULL* |
+|  | primary_key_column | character varying(30) | is_view |
+| integer | *NOT NULL* |  | view_on_table_id |
+| integer | superclass_table_id | integer | is_updateable |
+| integer | *NOT NULL DEFAULT 1* |  | modification_date |
+| date | *NOT NULL DEFAULT now()* |  |  |
 
 tableinfo Structure
 
@@ -997,7 +1014,13 @@ Metadata about a dbxref. Note that this is not defined in the dbxref
 module, as it depends on the cvterm table. This table has a structure
 analogous to cvtermprop.
 
-| FK                       | Name          | Type    | Description                 |--------------------------|---------------|---------|-----------------------------|                          | dbxrefprop_id | serial  | *PRIMARY KEY*               | [dbxref](#Table:_dbxref) | dbxref_id     | integer | *UNIQUE#1 NOT NULL*         | [cvterm](#Table:_cvterm) | type_id       | integer | *UNIQUE#1 NOT NULL*         |                          | value         | text    | *NOT NULL DEFAULT ''::text* |                          | rank          | integer | *UNIQUE#1 NOT NULL*         |
+| FK                       | Name          | Type    | Description |
+|--------------------------|---------------|---------|-----------------------------|
+|  | dbxrefprop_id | serial | *PRIMARY KEY* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | *NOT NULL DEFAULT ''::text* |
+|  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 dbxrefprop Structure
 
@@ -1010,7 +1033,13 @@ dbxrefprop Structure
 Keep track of WWW users. This may also be useful in an audit module at
 some point.
 
-| FK  | Name       | Type                   | Description       |-----|------------|------------------------|-------------------|     | wwwuser_id | serial                 | *PRIMARY KEY*     |     | username   | character varying(32)  | *UNIQUE NOT NULL* |     | password   | character varying(32)  | *NOT NULL*        |     | email      | character varying(128) | *NOT NULL*        |     | profile    | text                   wwwuser Structure
+| FK  | Name       | Type                   | Description |
+|-----|------------|------------------------|-------------------|
+|  | wwwuser_id | serial | *PRIMARY KEY* |
+|  | username | character varying(32) | *UNIQUE NOT NULL* |
+|  | password | character varying(32) | *NOT NULL* |
+|  | email | character varying(128) | *NOT NULL* |
+|  | profile | text                   wwwuser Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -1032,7 +1061,12 @@ Tables referencing this one via Foreign Key Constraints:
 
 Track wwwuser interest in cvterms.
 
-| FK                         | Name              | Type     | Description          |----------------------------|-------------------|----------|----------------------|                            | wwwuser_cvterm_id | serial   | *PRIMARY KEY*        | [wwwuser](#Table:_wwwuser) | wwwuser_id        | integer  | *UNIQUE#1 NOT NULL*  | [cvterm](#Table:_cvterm)   | cvterm_id         | integer  | *UNIQUE#1 NOT NULL*  |                            | world_read        | smallint | *NOT NULL DEFAULT 1* |
+| FK                         | Name              | Type     | Description |
+|----------------------------|-------------------|----------|----------------------|
+|  | wwwuser_cvterm_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_cvterm Structure
 
@@ -1044,7 +1078,12 @@ wwwuser_cvterm Structure
 
 Track wwwuser interest in expressions.
 
-| FK | Name | Type | Description |----|----|----|----|  | wwwuser_expression_id | serial | *PRIMARY KEY* | [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* | [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |  | world_read | smallint | *NOT NULL DEFAULT 1* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | wwwuser_expression_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_expression Structure
 
@@ -1056,7 +1095,12 @@ wwwuser_expression Structure
 
 Track wwwuser interest in features.
 
-| FK                         | Name               | Type     | Description          |----------------------------|--------------------|----------|----------------------|                            | wwwuser_feature_id | serial   | *PRIMARY KEY*        | [wwwuser](#Table:_wwwuser) | wwwuser_id         | integer  | *UNIQUE#1 NOT NULL*  | [feature](#Table:_feature) | feature_id         | integer  | *UNIQUE#1 NOT NULL*  |                            | world_read         | smallint | *NOT NULL DEFAULT 1* |
+| FK                         | Name               | Type     | Description |
+|----------------------------|--------------------|----------|----------------------|
+|  | wwwuser_feature_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_feature Structure
 
@@ -1068,7 +1112,12 @@ wwwuser_feature Structure
 
 Track wwwuser interest in genotypes.
 
-| FK | Name | Type | Description |----|----|----|----|  | wwwuser_genotype_id | serial | *PRIMARY KEY* | [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* | [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |  | world_read | smallint | *NOT NULL DEFAULT 1* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | wwwuser_genotype_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_genotype Structure
 
@@ -1080,7 +1129,12 @@ wwwuser_genotype Structure
 
 Track wwwuser interest in organisms.
 
-| FK | Name | Type | Description |----|----|----|----|  | wwwuser_organism_id | serial | *PRIMARY KEY* | [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* | [organism](#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |  | world_read | smallint | *NOT NULL DEFAULT 1* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | wwwuser_organism_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [organism](#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_organism Structure
 
@@ -1092,7 +1146,12 @@ wwwuser_organism Structure
 
 Track wwwuser interest in phenotypes.
 
-| FK | Name | Type | Description |----|----|----|----|  | wwwuser_phenotype_id | serial | *PRIMARY KEY* | [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |  | world_read | smallint | *NOT NULL DEFAULT 1* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | wwwuser_phenotype_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_phenotype Structure
 
@@ -1104,7 +1163,12 @@ wwwuser_phenotype Structure
 
 Link wwwuser accounts to projects
 
-| FK                         | Name               | Type     | Description          |----------------------------|--------------------|----------|----------------------|                            | wwwuser_project_id | serial   | *PRIMARY KEY*        | [wwwuser](#Table:_wwwuser) | wwwuser_id         | integer  | *UNIQUE#1 NOT NULL*  | [project](#Table:_project) | project_id         | integer  | *UNIQUE#1 NOT NULL*  |                            | world_read         | smallint | *NOT NULL DEFAULT 1* |
+| FK                         | Name               | Type     | Description |
+|----------------------------|--------------------|----------|----------------------|
+|  | wwwuser_project_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [project](#Table:_project) | project_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_project Structure
 
@@ -1116,7 +1180,12 @@ wwwuser_project Structure
 
 Track wwwuser interest in publications.
 
-| FK                         | Name           | Type     | Description          |----------------------------|----------------|----------|----------------------|                            | wwwuser_pub_id | serial   | *PRIMARY KEY*        | [wwwuser](#Table:_wwwuser) | wwwuser_id     | integer  | *UNIQUE#1 NOT NULL*  | [pub](#Table:_pub)         | pub_id         | integer  | *UNIQUE#1 NOT NULL*  |                            | world_read     | smallint | *NOT NULL DEFAULT 1* |
+| FK                         | Name           | Type     | Description |
+|----------------------------|----------------|----------|----------------------|
+|  | wwwuser_pub_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | wwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuser_pub Structure
 
@@ -1128,7 +1197,12 @@ wwwuser_pub Structure
 
 Track wwwuser interest in other wwwusers.
 
-| FK | Name | Type | Description |----|----|----|----|  | wwwuserrelationship_id | serial | *PRIMARY KEY* | [wwwuser](#Table:_wwwuser) | objwwwuser_id | integer | *UNIQUE#1 NOT NULL* | [wwwuser](#Table:_wwwuser) | subjwwwuser_id | integer | *UNIQUE#1 NOT NULL* |  | world_read | smallint | *NOT NULL DEFAULT 1* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | wwwuserrelationship_id | serial | *PRIMARY KEY* |
+| [wwwuser](#Table:_wwwuser) | objwwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+| [wwwuser](#Table:_wwwuser) | subjwwwuser_id | integer | *UNIQUE#1 NOT NULL* |
+|  | world_read | smallint | *NOT NULL DEFAULT 1* |
 
 wwwuserrelationship Structure
 
@@ -1419,7 +1493,11 @@ class="external free"
 rel="nofollow">http://www.geneontology.org/doc/GO.annotation.shtml#file</a>
 for more details.
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_cvterm_dbxref_id | serial | *PRIMARY KEY* | [feature_cvterm](#Table:_feature_cvterm) | feature_cvterm_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_cvterm_dbxref_id | serial | *PRIMARY KEY* |
+| [feature_cvterm](#Table:_feature_cvterm) | feature_cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_cvterm_dbxref Structure
 
@@ -1435,7 +1513,11 @@ be added using this linking table (in a GO gene association file, these
 corresponding to any IDs after the pipe symbol in the publications
 column.
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_cvterm_pub_id | serial | *PRIMARY KEY* | [feature_cvterm](#Table:_feature_cvterm) | feature_cvterm_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_cvterm_pub_id | serial | *PRIMARY KEY* |
+| [feature_cvterm](#Table:_feature_cvterm) | feature_cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_cvterm_pub Structure
 
@@ -1582,7 +1664,11 @@ feature_dbxref Structure
 Provenance. Linking table between features and publications that mention
 them.
 
-| FK                         | Name           | Type    | Description         |----------------------------|----------------|---------|---------------------|                            | feature_pub_id | serial  | *PRIMARY KEY*       | [feature](#Table:_feature) | feature_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)         | pub_id         | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name           | Type    | Description |
+|----------------------------|----------------|---------|---------------------|
+|  | feature_pub_id | serial | *PRIMARY KEY* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_pub Structure
 
@@ -1598,7 +1684,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 Property or attribute of a feature_pub link.
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_pubprop_id | serial | *PRIMARY KEY* | [feature_pub](#Table:_feature_pub) | feature_pub_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_pubprop_id | serial | *PRIMARY KEY* |
+| [feature_pub](#Table:_feature_pub) | feature_pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 feature_pubprop Structure
 
@@ -1709,7 +1801,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a feature_relationship in the
 form of a publication.
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_relationship_pub_id | serial | *PRIMARY KEY* | [feature_relationship](#Table:_feature_relationship) | feature_relationship_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_relationship_pub_id | serial | *PRIMARY KEY* |
+| [feature_relationship](#Table:_feature_relationship) | feature_relationship_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_relationship_pub Structure
 
@@ -1803,7 +1899,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 Provenance for feature_relationshipprop.
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_relationshipprop_pub_id | serial | *PRIMARY KEY* | [feature_relationshipprop](#Table:_feature_relationshipprop) | feature_relationshipprop_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_relationshipprop_pub_id | serial | *PRIMARY KEY* |
+| [feature_relationshipprop](#Table:_feature_relationshipprop) | feature_relationshipprop_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_relationshipprop_pub Structure
 
@@ -2086,7 +2186,9 @@ compared) feature.</td>
 
 featureloc Structure
 
-| Name          | Constraint              |---------------|-------------------------| featureloc_c2 | CHECK ((fmin \<= fmax)) |
+| Name          | Constraint |
+|---------------|-------------------------|
+| featureloc_c2 | CHECK ((fmin \<= fmax)) |
 
 featureloc Constraints
 
@@ -2103,7 +2205,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance of featureloc. Linking table between featurelocs and
 publications that mention them.
 
-| FK | Name | Type | Description |----|----|----|----|  | featureloc_pub_id | serial | *PRIMARY KEY* | [featureloc](#Table:_featureloc) | featureloc_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | featureloc_pub_id | serial | *PRIMARY KEY* |
+| [featureloc](#Table:_featureloc) | featureloc_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 featureloc_pub Structure
 
@@ -2197,7 +2303,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any featureprop assignment can optionally be supported by a
 publication.
 
-| FK | Name | Type | Description |----|----|----|----|  | featureprop_pub_id | serial | *PRIMARY KEY* | [featureprop](#Table:_featureprop) | featureprop_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | featureprop_pub_id | serial | *PRIMARY KEY* |
+| [featureprop](#Table:_featureprop) | featureprop_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 featureprop_pub Structure
 
@@ -2386,7 +2496,11 @@ For example, for orthology, paralogy group identifiers; could also be
 used for NCBI taxonomy; for sequences, refer to phylonode_feature,
 feature associated dbxrefs.
 
-| FK | Name | Type | Description |----|----|----|----|  | phylonode_dbxref_id | serial | *PRIMARY KEY* | [phylonode](#Table:_phylonode) | phylonode_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phylonode_dbxref_id | serial | *PRIMARY KEY* |
+| [phylonode](#Table:_phylonode) | phylonode_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 phylonode_dbxref Structure
 
@@ -2450,7 +2564,11 @@ phylonode_organism Structure
 
 ## Table: phylonode_pub
 
-| FK                             | Name             | Type    | Description         |--------------------------------|------------------|---------|---------------------|                                | phylonode_pub_id | serial  | *PRIMARY KEY*       | [phylonode](#Table:_phylonode) | phylonode_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)             | pub_id           | integer | *UNIQUE#1 NOT NULL* |
+| FK                             | Name             | Type    | Description |
+|--------------------------------|------------------|---------|---------------------|
+|  | phylonode_pub_id | serial | *PRIMARY KEY* |
+| [phylonode](#Table:_phylonode) | phylonode_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 phylonode_pub Structure
 
@@ -2464,7 +2582,14 @@ This is for relationships that are not strictly hierarchical; for
 example, horizontal gene transfer. Most phylogenetic trees are strictly
 hierarchical, nevertheless it is here for completeness.
 
-| FK | Name | Type | Description |----|----|----|----|  | phylonode_relationship_id | serial | *PRIMARY KEY* | [phylonode](#Table:_phylonode) | subject_id | integer | *UNIQUE#1 NOT NULL* | [phylonode](#Table:_phylonode) | object_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | rank | integer | [phylotree](#Table:_phylotree) | phylotree_id | integer | *NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phylonode_relationship_id | serial | *PRIMARY KEY* |
+| [phylonode](#Table:_phylonode) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [phylonode](#Table:_phylonode) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | rank | integer | [phylotree](#Table:_phylotree) |
+| phylotree_id | integer | *NOT NULL* |  |
 
 phylonode_relationship Structure
 
@@ -2614,7 +2739,11 @@ Tables referencing this one via Foreign Key Constraints:
 Tracks citations global to the tree e.g. multiple sequence alignment
 supporting tree construction.
 
-| FK                             | Name             | Type    | Description         |--------------------------------|------------------|---------|---------------------|                                | phylotree_pub_id | serial  | *PRIMARY KEY*       | [phylotree](#Table:_phylotree) | phylotree_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)             | pub_id           | integer | *UNIQUE#1 NOT NULL* |
+| FK                             | Name             | Type    | Description |
+|--------------------------------|------------------|---------|---------------------|
+|  | phylotree_pub_id | serial | *PRIMARY KEY* |
+| [phylotree](#Table:_phylotree) | phylotree_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 phylotree_pub Structure
 
@@ -2698,7 +2827,12 @@ The table library_cvterm links a library to controlled vocabularies
 which describe the library. For instance, there might be a link to the
 anatomy cv for "head" or "testes" for a head or testes library.
 
-| FK                         | Name              | Type    | Description         |----------------------------|-------------------|---------|---------------------|                            | library_cvterm_id | serial  | *PRIMARY KEY*       | [library](#Table:_library) | library_id        | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm)   | cvterm_id         | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)         | pub_id            | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name              | Type    | Description |
+|----------------------------|-------------------|---------|---------------------|
+|  | library_cvterm_id | serial | *PRIMARY KEY* |
+| [library](#Table:_library) | library_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 library_cvterm Structure
 
@@ -2712,7 +2846,11 @@ library_feature links a library to the clones which are contained in the
 library. Examples of such linked features might be "cDNA_clone" or
 "genomic_clone".
 
-| FK                         | Name               | Type    | Description         |----------------------------|--------------------|---------|---------------------|                            | library_feature_id | serial  | *PRIMARY KEY*       | [library](#Table:_library) | library_id         | integer | *UNIQUE#1 NOT NULL* | [feature](#Table:_feature) | feature_id         | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name               | Type    | Description |
+|----------------------------|--------------------|---------|---------------------|
+|  | library_feature_id | serial | *PRIMARY KEY* |
+| [library](#Table:_library) | library_id | integer | *UNIQUE#1 NOT NULL* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
 
 library_feature Structure
 
@@ -2722,7 +2860,11 @@ library_feature Structure
 
 ## Table: library_pub
 
-| FK                         | Name           | Type    | Description         |----------------------------|----------------|---------|---------------------|                            | library_pub_id | serial  | *PRIMARY KEY*       | [library](#Table:_library) | library_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)         | pub_id         | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name           | Type    | Description |
+|----------------------------|----------------|---------|---------------------|
+|  | library_pub_id | serial | *PRIMARY KEY* |
+| [library](#Table:_library) | library_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 library_pub Structure
 
@@ -2811,7 +2953,13 @@ library_synonym Structure
 
 ## Table: libraryprop
 
-| FK                         | Name           | Type    | Description         |----------------------------|----------------|---------|---------------------|                            | libraryprop_id | serial  | *PRIMARY KEY*       | [library](#Table:_library) | library_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm)   | type_id        | integer | *UNIQUE#1 NOT NULL* |                            | value          | text    | rank           | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name           | Type    | Description |
+|----------------------------|----------------|---------|---------------------|
+|  | libraryprop_id | serial | *PRIMARY KEY* |
+| [library](#Table:_library) | library_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 libraryprop Structure
 
@@ -3061,7 +3209,12 @@ Tables referencing this one via Foreign Key Constraints:
 stock_cvterm links a stock to cvterms. This is for secondary cvterms;
 primary cvterms should use stock.type_id.
 
-| FK                       | Name            | Type    | Description         |--------------------------|-----------------|---------|---------------------|                          | stock_cvterm_id | serial  | *PRIMARY KEY*       | [stock](#Table:_stock)   | stock_id        | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | cvterm_id       | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)       | pub_id          | integer | *UNIQUE#1 NOT NULL* |
+| FK                       | Name            | Type    | Description |
+|--------------------------|-----------------|---------|---------------------|
+|  | stock_cvterm_id | serial | *PRIMARY KEY* |
+| [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_cvterm Structure
 
@@ -3133,7 +3286,11 @@ Simple table linking a stock to a genotype. Features with genotypes can
 be linked to stocks thru feature_genotype -\> genotype -\>
 stock_genotype -\> stock.
 
-| FK                           | Name              | Type    | Description         |------------------------------|-------------------|---------|---------------------|                              | stock_genotype_id | serial  | *PRIMARY KEY*       | [stock](#Table:_stock)       | stock_id          | integer | *UNIQUE#1 NOT NULL* | [genotype](#Table:_genotype) | genotype_id       | integer | *UNIQUE#1 NOT NULL* |
+| FK                           | Name              | Type    | Description |
+|------------------------------|-------------------|---------|---------------------|
+|  | stock_genotype_id | serial | *PRIMARY KEY* |
+| [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_genotype Structure
 
@@ -3146,7 +3303,11 @@ stock_genotype Structure
 Provenance. Linking table between stocks and, for example, a stocklist
 computer file.
 
-| FK                     | Name         | Type    | Description         |------------------------|--------------|---------|---------------------|                        | stock_pub_id | serial  | *PRIMARY KEY*       | [stock](#Table:_stock) | stock_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)     | pub_id       | integer | *UNIQUE#1 NOT NULL* |
+| FK                     | Name         | Type    | Description |
+|------------------------|--------------|---------|---------------------|
+|  | stock_pub_id | serial | *PRIMARY KEY* |
+| [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_pub Structure
 
@@ -3243,7 +3404,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Attach optional evidence to a stock_relationship in the form
 of a publication.
 
-| FK | Name | Type | Description |----|----|----|----|  | stock_relationship_pub_id | serial | *PRIMARY KEY* | [stock_relationship](#Table:_stock_relationship) | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | stock_relationship_pub_id | serial | *PRIMARY KEY* |
+| [stock_relationship](#Table:_stock_relationship) | stock_relationship_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stock_relationship_pub Structure
 
@@ -3329,7 +3494,11 @@ Tables referencing this one via Foreign Key Constraints:
 stockcollection_stock links a stock collection to the stocks which are
 contained in the collection.
 
-| FK | Name | Type | Description |----|----|----|----|  | stockcollection_stock_id | serial | *PRIMARY KEY* | [stockcollection](#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* | [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | stockcollection_stock_id | serial | *PRIMARY KEY* |
+| [stockcollection](#Table:_stockcollection) | stockcollection_id | integer | *UNIQUE#1 NOT NULL* |
+| [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockcollection_stock Structure
 
@@ -3409,7 +3578,13 @@ schema, and is completely extensible. There is a unique constraint,
 stockprop_c1, for the combination of stock_id, rank, and type_id.
 Multivalued property-value pairs must be differentiated by rank.
 
-| FK                       | Name         | Type    | Description         |--------------------------|--------------|---------|---------------------|                          | stockprop_id | serial  | *PRIMARY KEY*       | [stock](#Table:_stock)   | stock_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id      | integer | *UNIQUE#1 NOT NULL* |                          | value        | text    | rank         | integer | *UNIQUE#1 NOT NULL* |
+| FK                       | Name         | Type    | Description |
+|--------------------------|--------------|---------|---------------------|
+|  | stockprop_id | serial | *PRIMARY KEY* |
+| [stock](#Table:_stock) | stock_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 stockprop Structure
 
@@ -3426,7 +3601,11 @@ Tables referencing this one via Foreign Key Constraints:
 Provenance. Any stockprop assignment can optionally be supported by a
 publication.
 
-| FK                             | Name             | Type    | Description         |--------------------------------|------------------|---------|---------------------|                                | stockprop_pub_id | serial  | *PRIMARY KEY*       | [stockprop](#Table:_stockprop) | stockprop_id     | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)             | pub_id           | integer | *UNIQUE#1 NOT NULL* |
+| FK                             | Name             | Type    | Description |
+|--------------------------------|------------------|---------|---------------------|
+|  | stockprop_pub_id | serial | *PRIMARY KEY* |
+| [stockprop](#Table:_stockprop) | stockprop_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 stockprop_pub Structure
 
@@ -3438,7 +3617,11 @@ stockprop_pub Structure
 
 The environmental component of a phenotype description.
 
-| FK  | Name           | Type   | Description       |-----|----------------|--------|-------------------|     | environment_id | serial | *PRIMARY KEY*     |     | uniquename     | text   | *UNIQUE NOT NULL* |     | description    | text   environment Structure
+| FK  | Name           | Type   | Description |
+|-----|----------------|--------|-------------------|
+|  | environment_id | serial | *PRIMARY KEY* |
+|  | uniquename | text | *UNIQUE NOT NULL* |
+|  | description | text   environment Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3453,7 +3636,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: environment_cvterm
 
-| FK | Name | Type | Description |----|----|----|----|  | environment_cvterm_id | serial | *PRIMARY KEY* | [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | environment_cvterm_id | serial | *PRIMARY KEY* |
+| [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 
 environment_cvterm Structure
 
@@ -3615,7 +3802,14 @@ Tables referencing this one via Foreign Key Constraints:
 A summary of a \_set\_ of phenotypic statements for any one gcontext
 made in any one publication.
 
-| FK | Name | Type | Description |----|----|----|----|  | phendesc_id | serial | *PRIMARY KEY* | [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* | [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |  | description | text | *NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phendesc_id | serial | *PRIMARY KEY* |
+| [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
+|  | description | text | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 phendesc Structure
 
@@ -3628,7 +3822,17 @@ phendesc Structure
 Comparison of phenotypes e.g., genotype1/environment1/phenotype1
 "non-suppressible" with respect to genotype2/environment2/phenotype2.
 
-| FK | Name | Type | Description |----|----|----|----|  | phenotype_comparison_id | serial | *PRIMARY KEY* | [genotype](#Table:_genotype) | genotype1_id | integer | *UNIQUE#1 NOT NULL* | [environment](#Table:_environment) | environment1_id | integer | *UNIQUE#1 NOT NULL* | [genotype](#Table:_genotype) | genotype2_id | integer | *UNIQUE#1 NOT NULL* | [environment](#Table:_environment) | environment2_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](#Table:_phenotype) | phenotype1_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](#Table:_phenotype) | phenotype2_id | integer | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phenotype_comparison_id | serial | *PRIMARY KEY* |
+| [genotype](#Table:_genotype) | genotype1_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](#Table:_environment) | environment1_id | integer | *UNIQUE#1 NOT NULL* |
+| [genotype](#Table:_genotype) | genotype2_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](#Table:_environment) | environment2_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](#Table:_phenotype) | phenotype1_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](#Table:_phenotype) | phenotype2_id | integer | [cvterm](#Table:_cvterm) |
+| type_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) |
+| pub_id | integer | *UNIQUE#1 NOT NULL* |  |
 
 phenotype_comparison Structure
 
@@ -3643,7 +3847,14 @@ like "dpp-1 is recessive larval lethal". So essentially phenstatement is
 a linking table expressing the relationship between genotype,
 environment, and phenotype.
 
-| FK | Name | Type | Description |----|----|----|----|  | phenstatement_id | serial | *PRIMARY KEY* | [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* | [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phenstatement_id | serial | *PRIMARY KEY* |
+| [genotype](#Table:_genotype) | genotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [environment](#Table:_environment) | environment_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 phenstatement Structure
 
@@ -3656,7 +3867,14 @@ phenstatement Structure
 This represents the scanning of hybridized material. The output of this
 process is typically a digital image of an array.
 
-| FK | Name | Type | Description |----|----|----|----|  | acquisition_id | serial | *PRIMARY KEY* | [assay](#Table:_assay) | assay_id | integer | *NOT NULL* | [protocol](#Table:_protocol) | protocol_id | integer | [channel](#Table:_channel) | channel_id | integer | acquisitiondate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text | *UNIQUE* |  | uri | text acquisition Structure
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | acquisition_id | serial | *PRIMARY KEY* |
+| [assay](#Table:_assay) | assay_id | integer | *NOT NULL* |
+| [protocol](#Table:_protocol) | protocol_id | integer | [channel](#Table:_channel) |
+| channel_id | integer | acquisitiondate | timestamp without time zone |
+| *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text |
+| *UNIQUE* |  | uri | text acquisition Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3673,7 +3891,14 @@ Tables referencing this one via Foreign Key Constraints:
 Multiple monochrome images may be merged to form a multi-color image.
 Red-green images of 2-channel hybridizations are an example of this.
 
-| FK | Name | Type | Description |----|----|----|----|  | acquisition_relationship_id | serial | *PRIMARY KEY* | [acquisition](#Table:_acquisition) | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [acquisition](#Table:_acquisition) | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | acquisition_relationship_id | serial | *PRIMARY KEY* |
+| [acquisition](#Table:_acquisition) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [acquisition](#Table:_acquisition) | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 acquisition_relationship Structure
 
@@ -3685,7 +3910,13 @@ acquisition_relationship Structure
 
 Parameters associated with image acquisition.
 
-| FK | Name | Type | Description |----|----|----|----|  | acquisitionprop_id | serial | *PRIMARY KEY* | [acquisition](#Table:_acquisition) | acquisition_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | acquisitionprop_id | serial | *PRIMARY KEY* |
+| [acquisition](#Table:_acquisition) | acquisition_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 acquisitionprop Structure
 
@@ -3700,7 +3931,20 @@ generate physical slides, etc. It contains layout information, as well
 as global array properties, such as material (glass, nylon) and spot
 dimensions (in rows/columns).
 
-| FK                           | Name               | Type    | Description       |------------------------------|--------------------|---------|-------------------|                              | arraydesign_id     | serial  | *PRIMARY KEY*     | [contact](#Table:_contact)   | manufacturer_id    | integer | *NOT NULL*        | [cvterm](#Table:_cvterm)     | platformtype_id    | integer | *NOT NULL*        | [cvterm](#Table:_cvterm)     | substratetype_id   | integer | [protocol](#Table:_protocol) | protocol_id        | integer | [dbxref](#Table:_dbxref)     | dbxref_id          | integer | name               | text    | *UNIQUE NOT NULL* |                              | version            | text    | description        | text    | array_dimensions   | text    | element_dimensions | text    | num_of_elements    | integer | num_array_columns  | integer | num_array_rows     | integer | num_grid_columns   | integer | num_grid_rows      | integer | num_sub_columns    | integer | num_sub_rows       | integer arraydesign Structure
+| FK                           | Name               | Type    | Description |
+|------------------------------|--------------------|---------|-------------------|
+|  | arraydesign_id | serial | *PRIMARY KEY* |
+| [contact](#Table:_contact) | manufacturer_id | integer | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | platformtype_id | integer | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | substratetype_id | integer | [protocol](#Table:_protocol) |
+| protocol_id | integer | [dbxref](#Table:_dbxref) | dbxref_id |
+| integer | name | text | *UNIQUE NOT NULL* |
+|  | version | text | description |
+| text | array_dimensions | text | element_dimensions |
+| text | num_of_elements | integer | num_array_columns |
+| integer | num_array_rows | integer | num_grid_columns |
+| integer | num_grid_rows | integer | num_sub_columns |
+| integer | num_sub_rows | integer arraydesign Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3716,7 +3960,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 Extra array design properties that are not accounted for in arraydesign.
 
-| FK | Name | Type | Description |----|----|----|----|  | arraydesignprop_id | serial | *PRIMARY KEY* | [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | arraydesignprop_id | serial | *PRIMARY KEY* |
+| [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 arraydesignprop Structure
 
@@ -3730,7 +3980,16 @@ An assay consists of a physical instance of an array, combined with the
 conditions used to create the array (protocols, technician information).
 The assay can be thought of as a hybridization.
 
-| FK | Name | Type | Description |----|----|----|----|  | assay_id | serial | *PRIMARY KEY* | [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *NOT NULL* | [protocol](#Table:_protocol) | protocol_id | integer | assaydate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | arrayidentifier | text | arraybatchidentifier | text | [contact](#Table:_contact) | operator_id | integer | *NOT NULL* | [dbxref](#Table:_dbxref) | dbxref_id | integer | name | text | *UNIQUE* |  | description | text assay Structure
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | assay_id | serial | *PRIMARY KEY* |
+| [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *NOT NULL* |
+| [protocol](#Table:_protocol) | protocol_id | integer | assaydate |
+| timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | arrayidentifier |
+| text | arraybatchidentifier | text | [contact](#Table:_contact) |
+| operator_id | integer | *NOT NULL* | [dbxref](#Table:_dbxref) |
+| dbxref_id | integer | name | text |
+| *UNIQUE* |  | description | text assay Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3752,7 +4011,13 @@ A biomaterial can be hybridized many times (technical replicates), or
 combined with other biomaterials in a single hybridization (for
 two-channel arrays).
 
-| FK | Name | Type | Description |----|----|----|----|  | assay_biomaterial_id | serial | *PRIMARY KEY* | [assay](#Table:_assay) | assay_id | integer | *UNIQUE#1 NOT NULL* | [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [channel](#Table:_channel) | channel_id | integer | *UNIQUE#1* |  | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | assay_biomaterial_id | serial | *PRIMARY KEY* |
+| [assay](#Table:_assay) | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [channel](#Table:_channel) | channel_id | integer | *UNIQUE#1* |
+|  | rank | integer | *UNIQUE#1 NOT NULL* |
 
 assay_biomaterial Structure
 
@@ -3764,7 +4029,11 @@ assay_biomaterial Structure
 
 Link assays to projects.
 
-| FK                         | Name             | Type    | Description         |----------------------------|------------------|---------|---------------------|                            | assay_project_id | serial  | *PRIMARY KEY*       | [assay](#Table:_assay)     | assay_id         | integer | *UNIQUE#1 NOT NULL* | [project](#Table:_project) | project_id       | integer | *UNIQUE#1 NOT NULL* |
+| FK                         | Name             | Type    | Description |
+|----------------------------|------------------|---------|---------------------|
+|  | assay_project_id | serial | *PRIMARY KEY* |
+| [assay](#Table:_assay) | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [project](#Table:_project) | project_id | integer | *UNIQUE#1 NOT NULL* |
 
 assay_project Structure
 
@@ -3776,7 +4045,13 @@ assay_project Structure
 
 Extra assay properties that are not accounted for in assay.
 
-| FK                       | Name         | Type    | Description         |--------------------------|--------------|---------|---------------------|                          | assayprop_id | serial  | *PRIMARY KEY*       | [assay](#Table:_assay)   | assay_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id      | integer | *UNIQUE#1 NOT NULL* |                          | value        | text    | rank         | integer | *UNIQUE#1 NOT NULL* |
+| FK                       | Name         | Type    | Description |
+|--------------------------|--------------|---------|---------------------|
+|  | assayprop_id | serial | *PRIMARY KEY* |
+| [assay](#Table:_assay) | assay_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 assayprop Structure
 
@@ -3792,7 +4067,13 @@ cells, serum) that may have been processed. Processed biomaterials
 should be traceable back to raw biomaterials via the
 biomaterialrelationship table.
 
-| FK                           | Name                 | Type    | Description   |------------------------------|----------------------|---------|---------------|                              | biomaterial_id       | serial  | *PRIMARY KEY* | [organism](#Table:_organism) | taxon_id             | integer | [contact](#Table:_contact)   | biosourceprovider_id | integer | [dbxref](#Table:_dbxref)     | dbxref_id            | integer | name                 | text    | *UNIQUE*      |                              | description          | text    biomaterial Structure
+| FK                           | Name                 | Type    | Description |
+|------------------------------|----------------------|---------|---------------|
+|  | biomaterial_id | serial | *PRIMARY KEY* |
+| [organism](#Table:_organism) | taxon_id | integer | [contact](#Table:_contact) |
+| biosourceprovider_id | integer | [dbxref](#Table:_dbxref) | dbxref_id |
+| integer | name | text | *UNIQUE* |
+|  | description | text    biomaterial Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3809,7 +4090,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: biomaterial_dbxref
 
-| FK | Name | Type | Description |----|----|----|----|  | biomaterial_dbxref_id | serial | *PRIMARY KEY* | [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_dbxref_id | serial | *PRIMARY KEY* |
+| [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 biomaterial_dbxref Structure
 
@@ -3822,7 +4107,12 @@ biomaterial_dbxref Structure
 Relate biomaterials to one another. This is a way to track a series of
 treatments or material splits/merges, for instance.
 
-| FK | Name | Type | Description |----|----|----|----|  | biomaterial_relationship_id | serial | *PRIMARY KEY* | [biomaterial](#Table:_biomaterial) | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [biomaterial](#Table:_biomaterial) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_relationship_id | serial | *PRIMARY KEY* |
+| [biomaterial](#Table:_biomaterial) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [biomaterial](#Table:_biomaterial) | object_id | integer | *UNIQUE#1 NOT NULL* |
 
 biomaterial_relationship Structure
 
@@ -3835,7 +4125,13 @@ biomaterial_relationship Structure
 Link biomaterials to treatments. Treatments have an order of operations
 (rank), and associated measurements (unittype_id, value).
 
-| FK | Name | Type | Description |----|----|----|----|  | biomaterial_treatment_id | serial | *PRIMARY KEY* | [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [treatment](#Table:_treatment) | treatment_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | unittype_id | integer | value | real | rank | integer | *NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterial_treatment_id | serial | *PRIMARY KEY* |
+| [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [treatment](#Table:_treatment) | treatment_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | unittype_id | integer | value |
+| real | rank | integer | *NOT NULL* |
 
 biomaterial_treatment Structure
 
@@ -3847,7 +4143,13 @@ biomaterial_treatment Structure
 
 Extra biomaterial properties that are not accounted for in biomaterial.
 
-| FK | Name | Type | Description |----|----|----|----|  | biomaterialprop_id | serial | *PRIMARY KEY* | [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | biomaterialprop_id | serial | *PRIMARY KEY* |
+| [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 biomaterialprop Structure
 
@@ -3860,7 +4162,11 @@ biomaterialprop Structure
 Different array platforms can record signals from one or more channels
 (cDNA arrays typically use two CCD, but Affymetrix uses only one).
 
-| FK  | Name       | Type   | Description       |-----|------------|--------|-------------------|     | channel_id | serial | *PRIMARY KEY*     |     | name       | text   | *UNIQUE NOT NULL* |     | definition | text   | *NOT NULL*        |
+| FK  | Name       | Type   | Description |
+|-----|------------|--------|-------------------|
+|  | channel_id | serial | *PRIMARY KEY* |
+|  | name | text | *UNIQUE NOT NULL* |
+|  | definition | text | *NOT NULL* |
 
 channel Structure
 
@@ -3875,7 +4181,15 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: control
 
-| FK                             | Name         | Type    | Description   |--------------------------------|--------------|---------|---------------|                                | control_id   | serial  | *PRIMARY KEY* | [cvterm](#Table:_cvterm)       | type_id      | integer | *NOT NULL*    | [assay](#Table:_assay)         | assay_id     | integer | *NOT NULL*    | [tableinfo](#Table:_tableinfo) | tableinfo_id | integer | *NOT NULL*    |                                | row_id       | integer | *NOT NULL*    |                                | name         | text    | value        | text    | rank         | integer | *NOT NULL*    |
+| FK                             | Name         | Type    | Description |
+|--------------------------------|--------------|---------|---------------|
+|  | control_id | serial | *PRIMARY KEY* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *NOT NULL* |
+| [assay](#Table:_assay) | assay_id | integer | *NOT NULL* |
+| [tableinfo](#Table:_tableinfo) | tableinfo_id | integer | *NOT NULL* |
+|  | row_id | integer | *NOT NULL* |
+|  | name | text | value |
+| text | rank | integer | *NOT NULL* |
 
 control Structure
 
@@ -3888,7 +4202,13 @@ control Structure
 Represents a feature of the array. This is typically a region of the
 array coated or bound to DNA.
 
-| FK | Name | Type | Description |----|----|----|----|  | element_id | serial | *PRIMARY KEY* | [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1* | [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | [dbxref](#Table:_dbxref) | dbxref_id | integer element Structure
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | element_id | serial | *PRIMARY KEY* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1* |
+| [arraydesign](#Table:_arraydesign) | arraydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | [dbxref](#Table:_dbxref) |
+| dbxref_id | integer element Structure |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3905,7 +4225,14 @@ Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
 measurement, for instance.
 
-| FK | Name | Type | Description |----|----|----|----|  | element_relationship_id | serial | *PRIMARY KEY* | [element](#Table:_element) | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [element](#Table:_element) | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | element_relationship_id | serial | *PRIMARY KEY* |
+| [element](#Table:_element) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [element](#Table:_element) | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 element_relationship Structure
 
@@ -3919,7 +4246,12 @@ An element on an array produces a measurement when hybridized to a
 biomaterial (traceable through quantification_id). This is the base data
 from which tables that actually contain data inherit.
 
-| FK | Name | Type | Description |----|----|----|----|  | elementresult_id | serial | *PRIMARY KEY* | [element](#Table:_element) | element_id | integer | *UNIQUE#1 NOT NULL* | [quantification](#Table:_quantification) | quantification_id | integer | *UNIQUE#1 NOT NULL* |  | signal | double precision | *NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | elementresult_id | serial | *PRIMARY KEY* |
+| [element](#Table:_element) | element_id | integer | *UNIQUE#1 NOT NULL* |
+| [quantification](#Table:_quantification) | quantification_id | integer | *UNIQUE#1 NOT NULL* |
+|  | signal | double precision | *NOT NULL* |
 
 elementresult Structure
 
@@ -3937,7 +4269,14 @@ Sometimes we want to combine measurements from multiple elements to get
 a composite value. Affymetrix combines many probes to form a probeset
 measurement, for instance.
 
-| FK | Name | Type | Description |----|----|----|----|  | elementresult_relationship_id | serial | *PRIMARY KEY* | [elementresult](#Table:_elementresult) | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [elementresult](#Table:_elementresult) | object_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | elementresult_relationship_id | serial | *PRIMARY KEY* |
+| [elementresult](#Table:_elementresult) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [elementresult](#Table:_elementresult) | object_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 elementresult_relationship Structure
 
@@ -3947,7 +4286,13 @@ elementresult_relationship Structure
 
 ## Table: magedocumentation
 
-| FK                             | Name                 | Type    | Description   |--------------------------------|----------------------|---------|---------------|                                | magedocumentation_id | serial  | *PRIMARY KEY* | [mageml](#Table:_mageml)       | mageml_id            | integer | *NOT NULL*    | [tableinfo](#Table:_tableinfo) | tableinfo_id         | integer | *NOT NULL*    |                                | row_id               | integer | *NOT NULL*    |                                | mageidentifier       | text    | *NOT NULL*    |
+| FK                             | Name                 | Type    | Description |
+|--------------------------------|----------------------|---------|---------------|
+|  | magedocumentation_id | serial | *PRIMARY KEY* |
+| [mageml](#Table:_mageml) | mageml_id | integer | *NOT NULL* |
+| [tableinfo](#Table:_tableinfo) | tableinfo_id | integer | *NOT NULL* |
+|  | row_id | integer | *NOT NULL* |
+|  | mageidentifier | text | *NOT NULL* |
 
 magedocumentation Structure
 
@@ -3960,7 +4305,11 @@ magedocumentation Structure
 This table is for storing extra bits of MAGEml in a denormalized form.
 More normalization would require many more tables.
 
-| FK  | Name         | Type   | Description   |-----|--------------|--------|---------------|     | mageml_id    | serial | *PRIMARY KEY* |     | mage_package | text   | *NOT NULL*    |     | mage_ml      | text   | *NOT NULL*    |
+| FK  | Name         | Type   | Description |
+|-----|--------------|--------|---------------|
+|  | mageml_id | serial | *PRIMARY KEY* |
+|  | mage_package | text | *NOT NULL* |
+|  | mage_ml | text | *NOT NULL* |
 
 mageml Structure
 
@@ -3976,7 +4325,15 @@ Tables referencing this one via Foreign Key Constraints:
 
 Procedural notes on how data was prepared and processed.
 
-| FK                       | Name                | Type    | Description       |--------------------------|---------------------|---------|-------------------|                          | protocol_id         | serial  | *PRIMARY KEY*     | [cvterm](#Table:_cvterm) | type_id             | integer | *NOT NULL*        | [pub](#Table:_pub)       | pub_id              | integer | [dbxref](#Table:_dbxref) | dbxref_id           | integer | name                | text    | *UNIQUE NOT NULL* |                          | uri                 | text    | protocoldescription | text    | hardwaredescription | text    | softwaredescription | text    protocol Structure
+| FK                       | Name                | Type    | Description |
+|--------------------------|---------------------|---------|-------------------|
+|  | protocol_id | serial | *PRIMARY KEY* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | [dbxref](#Table:_dbxref) |
+| dbxref_id | integer | name | text |
+| *UNIQUE NOT NULL* |  | uri | text |
+| protocoldescription | text | hardwaredescription | text |
+| softwaredescription | text    protocol Structure |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -3996,7 +4353,14 @@ Tables referencing this one via Foreign Key Constraints:
 Parameters related to a protocol. For example, if the protocol is a
 soak, this might include attributes of bath temperature and duration.
 
-| FK                           | Name             | Type    | Description   |------------------------------|------------------|---------|---------------|                              | protocolparam_id | serial  | *PRIMARY KEY* | [protocol](#Table:_protocol) | protocol_id      | integer | *NOT NULL*    |                              | name             | text    | *NOT NULL*    | [cvterm](#Table:_cvterm)     | datatype_id      | integer | [cvterm](#Table:_cvterm)     | unittype_id      | integer | value            | text    | rank             | integer | *NOT NULL*    |
+| FK                           | Name             | Type    | Description |
+|------------------------------|------------------|---------|---------------|
+|  | protocolparam_id | serial | *PRIMARY KEY* |
+| [protocol](#Table:_protocol) | protocol_id | integer | *NOT NULL* |
+|  | name | text | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | datatype_id | integer | [cvterm](#Table:_cvterm) |
+| unittype_id | integer | value | text |
+| rank | integer | *NOT NULL* |  |
 
 protocolparam Structure
 
@@ -4009,7 +4373,16 @@ protocolparam Structure
 Quantification is the transformation of an image acquisition to numeric
 data. This typically involves statistical procedures.
 
-| FK | Name | Type | Description |----|----|----|----|  | quantification_id | serial | *PRIMARY KEY* | [acquisition](#Table:_acquisition) | acquisition_id | integer | *NOT NULL* | [contact](#Table:_contact) | operator_id | integer | [protocol](#Table:_protocol) | protocol_id | integer | [analysis](#Table:_analysis) | analysis_id | integer | *UNIQUE#1 NOT NULL* |  | quantificationdate | timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name | text | *UNIQUE#1* |  | uri | text quantification Structure
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | quantification_id | serial | *PRIMARY KEY* |
+| [acquisition](#Table:_acquisition) | acquisition_id | integer | *NOT NULL* |
+| [contact](#Table:_contact) | operator_id | integer | [protocol](#Table:_protocol) |
+| protocol_id | integer | [analysis](#Table:_analysis) | analysis_id |
+| integer | *UNIQUE#1 NOT NULL* |  | quantificationdate |
+| timestamp without time zone | *DEFAULT ('now'::text)::timestamp(6) with time zone* |  | name |
+| text | *UNIQUE#1* |  | uri |
+| text quantification Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4026,7 +4399,12 @@ Tables referencing this one via Foreign Key Constraints:
 There may be multiple rounds of quantification, this allows us to keep
 an audit trail of what values went where.
 
-| FK | Name | Type | Description |----|----|----|----|  | quantification_relationship_id | serial | *PRIMARY KEY* | [quantification](#Table:_quantification) | subject_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* | [quantification](#Table:_quantification) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | quantification_relationship_id | serial | *PRIMARY KEY* |
+| [quantification](#Table:_quantification) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+| [quantification](#Table:_quantification) | object_id | integer | *UNIQUE#1 NOT NULL* |
 
 quantification_relationship Structure
 
@@ -4039,7 +4417,13 @@ quantification_relationship Structure
 Extra quantification properties that are not accounted for in
 quantification.
 
-| FK | Name | Type | Description |----|----|----|----|  | quantificationprop_id | serial | *PRIMARY KEY* | [quantification](#Table:_quantification) | quantification_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | quantificationprop_id | serial | *PRIMARY KEY* |
+| [quantification](#Table:_quantification) | quantification_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 quantificationprop Structure
 
@@ -4052,7 +4436,13 @@ quantificationprop Structure
 Study represents an experiment, published or otherwise, that produced
 microarray data
 
-| FK                         | Name        | Type    | Description       |----------------------------|-------------|---------|-------------------|                            | study_id    | serial  | *PRIMARY KEY*     | [contact](#Table:_contact) | contact_id  | integer | *NOT NULL*        | [pub](#Table:_pub)         | pub_id      | integer | [dbxref](#Table:_dbxref)   | dbxref_id   | integer | name        | text    | *UNIQUE NOT NULL* |                            | description | text    study Structure
+| FK                         | Name        | Type    | Description |
+|----------------------------|-------------|---------|-------------------|
+|  | study_id | serial | *PRIMARY KEY* |
+| [contact](#Table:_contact) | contact_id | integer | *NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | [dbxref](#Table:_dbxref) |
+| dbxref_id | integer | name | text |
+| *UNIQUE NOT NULL* |  | description | text    study Structure |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4063,7 +4453,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: study_assay
 
-| FK                     | Name           | Type    | Description         |------------------------|----------------|---------|---------------------|                        | study_assay_id | serial  | *PRIMARY KEY*       | [study](#Table:_study) | study_id       | integer | *UNIQUE#1 NOT NULL* | [assay](#Table:_assay) | assay_id       | integer | *UNIQUE#1 NOT NULL* |
+| FK                     | Name           | Type    | Description |
+|------------------------|----------------|---------|---------------------|
+|  | study_assay_id | serial | *PRIMARY KEY* |
+| [study](#Table:_study) | study_id | integer | *UNIQUE#1 NOT NULL* |
+| [assay](#Table:_assay) | assay_id | integer | *UNIQUE#1 NOT NULL* |
 
 study_assay Structure
 
@@ -4073,7 +4467,11 @@ study_assay Structure
 
 ## Table: studydesign
 
-| FK                     | Name           | Type    | Description   |------------------------|----------------|---------|---------------|                        | studydesign_id | serial  | *PRIMARY KEY* | [study](#Table:_study) | study_id       | integer | *NOT NULL*    |                        | description    | text    studydesign Structure
+| FK                     | Name           | Type    | Description |
+|------------------------|----------------|---------|---------------|
+|  | studydesign_id | serial | *PRIMARY KEY* |
+| [study](#Table:_study) | study_id | integer | *NOT NULL* |
+|  | description | text    studydesign Structure |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4086,7 +4484,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: studydesignprop
 
-| FK | Name | Type | Description |----|----|----|----|  | studydesignprop_id | serial | *PRIMARY KEY* | [studydesign](#Table:_studydesign) | studydesign_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |  | value | text | rank | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | studydesignprop_id | serial | *PRIMARY KEY* |
+| [studydesign](#Table:_studydesign) | studydesign_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 studydesignprop Structure
 
@@ -4096,7 +4500,13 @@ studydesignprop Structure
 
 ## Table: studyfactor
 
-| FK                                 | Name           | Type    | Description   |------------------------------------|----------------|---------|---------------|                                    | studyfactor_id | serial  | *PRIMARY KEY* | [studydesign](#Table:_studydesign) | studydesign_id | integer | *NOT NULL*    | [cvterm](#Table:_cvterm)           | type_id        | integer | name           | text    | *NOT NULL*    |                                    | description    | text    studyfactor Structure
+| FK                                 | Name           | Type    | Description |
+|------------------------------------|----------------|---------|---------------|
+|  | studyfactor_id | serial | *PRIMARY KEY* |
+| [studydesign](#Table:_studydesign) | studydesign_id | integer | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | name |
+| text | *NOT NULL* |  | description |
+| text    studyfactor Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4108,7 +4518,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: studyfactorvalue
 
-| FK | Name | Type | Description |----|----|----|----|  | studyfactorvalue_id | serial | *PRIMARY KEY* | [studyfactor](#Table:_studyfactor) | studyfactor_id | integer | *NOT NULL* | [assay](#Table:_assay) | assay_id | integer | *NOT NULL* |  | factorvalue | text | name | text | rank | integer | *NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | studyfactorvalue_id | serial | *PRIMARY KEY* |
+| [studyfactor](#Table:_studyfactor) | studyfactor_id | integer | *NOT NULL* |
+| [assay](#Table:_assay) | assay_id | integer | *NOT NULL* |
+|  | factorvalue | text | name |
+| text | rank | integer | *NOT NULL* |
 
 studyfactorvalue Structure
 
@@ -4121,7 +4537,14 @@ studyfactorvalue Structure
 A biomaterial may undergo multiple treatments. Examples of treatments:
 apoxia, fluorophore and biotin labeling.
 
-| FK                                 | Name           | Type    | Description   |------------------------------------|----------------|---------|---------------|                                    | treatment_id   | serial  | *PRIMARY KEY* |                                    | rank           | integer | *NOT NULL*    | [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *NOT NULL*    | [cvterm](#Table:_cvterm)           | type_id        | integer | *NOT NULL*    | [protocol](#Table:_protocol)       | protocol_id    | integer | name           | text    treatment Structure
+| FK                                 | Name           | Type    | Description |
+|------------------------------------|----------------|---------|---------------|
+|  | treatment_id | serial | *PRIMARY KEY* |
+|  | rank | integer | *NOT NULL* |
+| [biomaterial](#Table:_biomaterial) | biomaterial_id | integer | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *NOT NULL* |
+| [protocol](#Table:_protocol) | protocol_id | integer | name |
+| text    treatment Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4133,7 +4556,12 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: featuremap
 
-| FK                       | Name          | Type                   | Description   |--------------------------|---------------|------------------------|---------------|                          | featuremap_id | serial                 | *PRIMARY KEY* |                          | name          | character varying(255) | *UNIQUE*      |                          | description   | text                   | [cvterm](#Table:_cvterm) | unittype_id   | integer                featuremap Structure
+| FK                       | Name          | Type                   | Description |
+|--------------------------|---------------|------------------------|---------------|
+|  | featuremap_id | serial | *PRIMARY KEY* |
+|  | name | character varying(255) | *UNIQUE* |
+|  | description | text | [cvterm](#Table:_cvterm) |
+| unittype_id | integer                featuremap Structure |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4147,7 +4575,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: featuremap_pub
 
-| FK                               | Name              | Type    | Description   |----------------------------------|-------------------|---------|---------------|                                  | featuremap_pub_id | serial  | *PRIMARY KEY* | [featuremap](#Table:_featuremap) | featuremap_id     | integer | *NOT NULL*    | [pub](#Table:_pub)               | pub_id            | integer | *NOT NULL*    |
+| FK                               | Name              | Type    | Description |
+|----------------------------------|-------------------|---------|---------------|
+|  | featuremap_pub_id | serial | *PRIMARY KEY* |
+| [featuremap](#Table:_featuremap) | featuremap_id | integer | *NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *NOT NULL* |
 
 featuremap_pub Structure
 
@@ -4525,7 +4957,12 @@ analysisfeature Structure
 
 ## Table: analysisprop
 
-| FK                           | Name            | Type    | Description         |------------------------------|-----------------|---------|---------------------|                              | analysisprop_id | serial  | *PRIMARY KEY*       | [analysis](#Table:_analysis) | analysis_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm)     | type_id         | integer | *UNIQUE#1 NOT NULL* |                              | value           | text    | *UNIQUE#1*          |
+| FK                           | Name            | Type    | Description |
+|------------------------------|-----------------|---------|---------------------|
+|  | analysisprop_id | serial | *PRIMARY KEY* |
+| [analysis](#Table:_analysis) | analysis_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | *UNIQUE#1* |
 
 analysisprop Structure
 
@@ -4597,7 +5034,12 @@ Tables referencing this one via Foreign Key Constraints:
 
 The expression table is essentially a bridge table.
 
-| FK  | Name          | Type          | Description       |-----|---------------|---------------|-------------------|     | expression_id | serial        | *PRIMARY KEY*     |     | uniquename    | text          | *UNIQUE NOT NULL* |     | md5checksum   | character(32) | description   | text          expression Structure
+| FK  | Name          | Type          | Description |
+|-----|---------------|---------------|-------------------|
+|  | expression_id | serial | *PRIMARY KEY* |
+|  | uniquename | text | *UNIQUE NOT NULL* |
+|  | md5checksum | character(32) | description |
+| text          expression Structure |  |  |  |
 
 Tables referencing this one via Foreign Key Constraints:
 
@@ -4614,7 +5056,13 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: expression_cvterm
 
-| FK | Name | Type | Description |----|----|----|----|  | expression_cvterm_id | serial | *PRIMARY KEY* | [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |  | rank | integer | *NOT NULL* | [cvterm](#Table:_cvterm) | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | expression_cvterm_id | serial | *PRIMARY KEY* |
+| [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+|  | rank | integer | *NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_type_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_cvterm Structure
 
@@ -4628,7 +5076,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: expression_image
 
-| FK | Name | Type | Description |----|----|----|----|  | expression_image_id | serial | *PRIMARY KEY* | [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* | [eimage](#Table:_eimage) | eimage_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | expression_image_id | serial | *PRIMARY KEY* |
+| [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [eimage](#Table:_eimage) | eimage_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_image Structure
 
@@ -4638,7 +5090,11 @@ expression_image Structure
 
 ## Table: expression_pub
 
-| FK | Name | Type | Description |----|----|----|----|  | expression_pub_id | serial | *PRIMARY KEY* | [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | expression_pub_id | serial | *PRIMARY KEY* |
+| [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 expression_pub Structure
 
@@ -4648,7 +5104,12 @@ expression_pub Structure
 
 ## Table: feature_expression
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_expression_id | serial | *PRIMARY KEY* | [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* | [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_expression_id | serial | *PRIMARY KEY* |
+| [expression](#Table:_expression) | expression_id | integer | *UNIQUE#1 NOT NULL* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_expression Structure
 
@@ -4662,7 +5123,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: feature_phenotype
 
-| FK | Name | Type | Description |----|----|----|----|  | feature_phenotype_id | serial | *PRIMARY KEY* | [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* | [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | feature_phenotype_id | serial | *PRIMARY KEY* |
+| [feature](#Table:_feature) | feature_id | integer | *UNIQUE#1 NOT NULL* |
+| [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
 
 feature_phenotype Structure
 
@@ -4766,7 +5231,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: phenotype_cvterm
 
-| FK | Name | Type | Description |----|----|----|----|  | phenotype_cvterm_id | serial | *PRIMARY KEY* | [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
+| FK | Name | Type | Description |
+|----|----|----|----|
+|  | phenotype_cvterm_id | serial | *PRIMARY KEY* |
+| [phenotype](#Table:_phenotype) | phenotype_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | cvterm_id | integer | *UNIQUE#1 NOT NULL* |
 
 phenotype_cvterm Structure
 
@@ -4938,7 +5407,12 @@ Tables referencing this one via Foreign Key Constraints:
 Handle links to repositories, e.g. Pubmed, Biosis, zoorec, OCLC,
 Medline, ISSN, coden...
 
-| FK                       | Name          | Type    | Description             |--------------------------|---------------|---------|-------------------------|                          | pub_dbxref_id | serial  | *PRIMARY KEY*           | [pub](#Table:_pub)       | pub_id        | integer | *UNIQUE#1 NOT NULL*     | [dbxref](#Table:_dbxref) | dbxref_id     | integer | *UNIQUE#1 NOT NULL*     |                          | is_current    | boolean | *NOT NULL DEFAULT true* |
+| FK                       | Name          | Type    | Description |
+|--------------------------|---------------|---------|-------------------------|
+|  | pub_dbxref_id | serial | *PRIMARY KEY* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
+|  | is_current | boolean | *NOT NULL DEFAULT true* |
 
 pub_dbxref Structure
 
@@ -4953,7 +5427,12 @@ makes others obsolete, when one publication contains errata with respect
 to other publication(s), or when one publication also appears in another
 pub.
 
-| FK                       | Name                | Type    | Description         |--------------------------|---------------------|---------|---------------------|                          | pub_relationship_id | serial  | *PRIMARY KEY*       | [pub](#Table:_pub)       | subject_id          | integer | *UNIQUE#1 NOT NULL* | [pub](#Table:_pub)       | object_id           | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id             | integer | *UNIQUE#1 NOT NULL* |
+| FK                       | Name                | Type    | Description |
+|--------------------------|---------------------|---------|---------------------|
+|  | pub_relationship_id | serial | *PRIMARY KEY* |
+| [pub](#Table:_pub) | subject_id | integer | *UNIQUE#1 NOT NULL* |
+| [pub](#Table:_pub) | object_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
 
 pub_relationship Structure
 
@@ -5049,7 +5528,13 @@ pubauthor Structure
 
 Property-value pairs for a pub. Follows standard chado pattern.
 
-| FK                       | Name       | Type    | Description         |--------------------------|------------|---------|---------------------|                          | pubprop_id | serial  | *PRIMARY KEY*       | [pub](#Table:_pub)       | pub_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm) | type_id    | integer | *UNIQUE#1 NOT NULL* |                          | value      | text    | *NOT NULL*          |                          | rank       | integer | *UNIQUE#1*          |
+| FK                       | Name       | Type    | Description |
+|--------------------------|------------|---------|---------------------|
+|  | pubprop_id | serial | *PRIMARY KEY* |
+| [pub](#Table:_pub) | pub_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | *NOT NULL* |
+|  | rank | integer | *UNIQUE#1* |
 
 pubprop Structure
 
@@ -5145,7 +5630,11 @@ Tables referencing this one via Foreign Key Constraints:
 
 ## Table: organism_dbxref
 
-| FK                           | Name               | Type    | Description         |------------------------------|--------------------|---------|---------------------|                              | organism_dbxref_id | serial  | *PRIMARY KEY*       | [organism](#Table:_organism) | organism_id        | integer | *UNIQUE#1 NOT NULL* | [dbxref](#Table:_dbxref)     | dbxref_id          | integer | *UNIQUE#1 NOT NULL* |
+| FK                           | Name               | Type    | Description |
+|------------------------------|--------------------|---------|---------------------|
+|  | organism_dbxref_id | serial | *PRIMARY KEY* |
+| [organism](#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |
+| [dbxref](#Table:_dbxref) | dbxref_id | integer | *UNIQUE#1 NOT NULL* |
 
 organism_dbxref Structure
 
@@ -5157,7 +5646,13 @@ organism_dbxref Structure
 
 Tag-value properties - follows standard chado model.
 
-| FK                           | Name            | Type    | Description         |------------------------------|-----------------|---------|---------------------|                              | organismprop_id | serial  | *PRIMARY KEY*       | [organism](#Table:_organism) | organism_id     | integer | *UNIQUE#1 NOT NULL* | [cvterm](#Table:_cvterm)     | type_id         | integer | *UNIQUE#1 NOT NULL* |                              | value           | text    | rank            | integer | *UNIQUE#1 NOT NULL* |
+| FK                           | Name            | Type    | Description |
+|------------------------------|-----------------|---------|---------------------|
+|  | organismprop_id | serial | *PRIMARY KEY* |
+| [organism](#Table:_organism) | organism_id | integer | *UNIQUE#1 NOT NULL* |
+| [cvterm](#Table:_cvterm) | type_id | integer | *UNIQUE#1 NOT NULL* |
+|  | value | text | rank |
+| integer | *UNIQUE#1 NOT NULL* |  |  |
 
 organismprop Structure
 

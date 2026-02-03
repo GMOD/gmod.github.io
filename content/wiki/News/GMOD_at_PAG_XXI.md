@@ -13,7 +13,10 @@ GMOD will have a strong presence at the
 rel="nofollow">Plant and Animal Genomes (PAG)</a> conference later this
 month. GMOD content includes:
 
-|  |----|----|----|----| Date | Time | Session, ID | Type | Sun. Jan. 13 | 1:30 pm - 3:40 pm | <a
+|
+|----|----|----|----|
+| Date | Time | Session, ID | Type |
+| Sun. Jan. 13 | 1:30 pm - 3:40 pm | <a |  |
 href="http://pag13.mapyourshow.com/5_0/sessions/sessiondetails.cfm?ScheduledSessionID=1CAA"
 class="external text" rel="nofollow">Generic Genome Browser</a> (1530) | Workshop | Mon. Jan. 14 | 10:00 am - 11:30 am | <a
 href="http://pag13.mapyourshow.com/5_0/sessions/sessiondetails.cfm?ScheduledSessionID=18ABCDC3"
